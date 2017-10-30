@@ -37,7 +37,7 @@
 | Category                                                                |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Subcategory                                                             |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Specialization / Track                                                  |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
-| Prerequisite_Knowledge                                                  |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
+| Prerequisite_Knowledge                                                  |                    | :heavy_check_mark: | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
 | Prerequisite_Category                                                   |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Slug  (like a URL or id)                                                |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
 | NumberOfLectures                                                        |                    | :heavy_check_mark: |                    |                    |                    |                    |
