@@ -7,7 +7,7 @@
 | Organization / Affiliates (University / Company)                        | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |         :x:        |
 | Language*                                                               | :heavy_check_mark: | :heavy_check_mark: |         :x:        |                    | :heavy_check_mark: |         :x:        |
 | Keywords*                                                               |                    |                    |                    |                    |                    | :heavy_check_mark: |
-| URL                                                                     |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| URL*                                                                    |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Start (course)                                                          | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |         :x:        |
 | End (course)                                                            | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |         :x:        |
 | Price                                                                   | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |
@@ -22,7 +22,6 @@
 | Size*                                                                   |                    |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Duration (resource)*                                                    |                    | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |
-| Location*                                                               |                    |                    |                    |                    |                    |                    |
 | Views                                                                   |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | Downloadable_size                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | Downloadable_urls                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |
