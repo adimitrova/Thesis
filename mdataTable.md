@@ -11,7 +11,7 @@
 | Start (course)                                                          | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |         :x:        |
 | End (course)                                                            | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |         :x:        |
 | Price                                                                   | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |
-| Status                                                                  |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |                    |
+| Status                                                                  |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |         :x:        |
 | TargetAudience                                                          |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |         :x:        |
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |
 | ID / Key                                                                | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
@@ -37,10 +37,12 @@
 | Category                                                                |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Subcategory                                                             |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Specialization / Track                                                  |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
-| PrerequisiteKnowledge                                                   |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
+| Prerequisite_Knowledge                                                  |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
+| Prerequisite_Category                                                   |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Slug  (like a URL or id)                                                |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
 | NumberOfLectures                                                        |                    | :heavy_check_mark: |                    |                    |                    |                    |
-| NumberOfQuizzes                                                         |                    | :heavy_check_mark: |                    |                    |                    |                    |
+| NumberOfQuizzes                                                         |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |
+| NumberOfReadings                                                        |                    |                    |                    |                    | :heavy_check_mark: |                    |
 |                  **User & User Interactivity Metadata**                 |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Kind /userData, UserExercise/                                           |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | IsCoachRecommended                                                      |                    |                    |                    |                    |                    | :heavy_check_mark: |
