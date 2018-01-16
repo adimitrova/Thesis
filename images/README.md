@@ -1,4 +1,4 @@
-[![N|SOLID](images/pat1.png)]
+!["Pattern1"](images/pat1.png)
 [![N|SOLID](images/pat2.png)]
 [![N|SOLID](images/pat3.png)]
 [![N|SOLID](images/pat4.png)]
