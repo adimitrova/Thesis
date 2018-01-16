@@ -1,6 +1,6 @@
 !["Pattern1"](pat1.png)
-[![N|SOLID](images/pat2.png)]
-[![N|SOLID](images/pat3.png)]
-[![N|SOLID](images/pat4.png)]
-[![N|SOLID](images/pat5.png)]
-[![N|SOLID](images/pat6.png)]
+!["Pattern2"](pat2.png)
+!["Pattern3"](pat3.png)
+!["Pattern4"](pat4.png)
+!["Pattern5"](pat5.png)
+!["Pattern6"](pat6.png)
