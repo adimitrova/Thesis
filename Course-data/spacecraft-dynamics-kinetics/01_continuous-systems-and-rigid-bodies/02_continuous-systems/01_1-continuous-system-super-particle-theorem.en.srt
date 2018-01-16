@@ -1,0 +1,1152 @@
+1
+00:00:05,477 --> 00:00:09,370
+Continuous system, basically jello,
+blobs of jello, right?
+
+2
+00:00:09,370 --> 00:00:11,770
+This is kind of what
+we're starting out with.
+
+3
+00:00:11,770 --> 00:00:16,672
+So we have a dynamical system, that's this
+and our every self-respecting dynamics
+
+4
+00:00:16,672 --> 00:00:20,200
+class has to have these
+amorphous flying potatoes right.
+
+5
+00:00:20,200 --> 00:00:26,970
+It's just a general thing and we want to
+now compute certain properties of it.
+
+6
+00:00:26,970 --> 00:00:32,240
+Newton's Law is simply F = MA,
+written in this form.
+
+7
+00:00:33,345 --> 00:00:34,265
+You can see.
+
+8
+00:00:34,265 --> 00:00:38,055
+And now, because I have a continuum, it's
+kind of hard to do it for the full thing,
+
+9
+00:00:38,055 --> 00:00:39,165
+a blob of Jello, right?
+
+10
+00:00:39,165 --> 00:00:42,102
+Different things will have
+different forces acting on it.
+
+11
+00:00:42,102 --> 00:00:46,336
+So what we want to do is track
+infinitesimal little elements here, and
+
+12
+00:00:46,336 --> 00:00:49,845
+that's my little box that's
+DM infinitesimal object.
+
+13
+00:00:49,845 --> 00:00:54,375
+Just like classic calculus that you've
+seen many many times before hopefully.
+
+14
+00:00:54,375 --> 00:01:00,737
+So df is the force that's acting
+on the differential element, dm.
+
+15
+00:01:00,737 --> 00:01:06,710
+R is my inertial position vector, so
+big R is the inertial position vector.
+
+16
+00:01:06,710 --> 00:01:13,039
+Little r is my position vector relative
+to the system's center of mass.
+
+17
+00:01:13,039 --> 00:01:16,557
+So whatever this bulb is you have
+an infinity of little DM's that all add up
+
+18
+00:01:16,557 --> 00:01:17,307
+to this thing.
+
+19
+00:01:17,307 --> 00:01:21,038
+They have in common at this instant
+that's where the center of mass is so
+
+20
+00:01:21,038 --> 00:01:22,610
+that's a classic location.
+
+21
+00:01:22,610 --> 00:01:25,946
+We'll be writing all our equations
+about that point so that's it.
+
+22
+00:01:25,946 --> 00:01:28,884
+That's basically F = MA times that.
+
+23
+00:01:28,884 --> 00:01:32,547
+So but for F = MA it was important
+that we have an inertia derivative so
+
+24
+00:01:32,547 --> 00:01:35,643
+these dots are derivatives as
+seen by the inertial frame,
+
+25
+00:01:35,643 --> 00:01:39,800
+and you have to write your position
+relative to the inertial origin.
+
+26
+00:01:39,800 --> 00:01:43,861
+That's why you wouldn't do little r double
+dot, you have to do big R double dot,
+
+27
+00:01:43,861 --> 00:01:45,912
+relative to the inertial frame then dF.
+
+28
+00:01:45,912 --> 00:01:49,280
+Now these forces,
+we can categorize them generally.
+
+29
+00:01:49,280 --> 00:01:52,620
+There's external stuff and internal stuff.
+
+30
+00:01:52,620 --> 00:01:55,641
+Who can give me an example of an external
+force that might be acting on
+
+31
+00:01:55,641 --> 00:01:56,336
+a spacecraft?
+
+32
+00:01:58,808 --> 00:01:59,370
+>> Drag.
+
+33
+00:01:59,370 --> 00:02:03,480
+>> Drag, right, atmospheric
+drag is one of them definitely.
+
+34
+00:02:03,480 --> 00:02:06,130
+Gravity could be an external
+force acting on it.
+
+35
+00:02:06,130 --> 00:02:09,300
+You could have solar radiation pressure.
+
+36
+00:02:09,300 --> 00:02:10,600
+You may have your thrusters.
+
+37
+00:02:10,600 --> 00:02:12,890
+This is a man made object,
+maybe you have some way to control it.
+
+38
+00:02:12,890 --> 00:02:14,480
+Now you have to do some stuff.
+
+39
+00:02:14,480 --> 00:02:16,794
+That's all the external things, so
+
+40
+00:02:16,794 --> 00:02:20,982
+what are examples of internal forces
+acting on this blob of jello?
+
+41
+00:02:24,970 --> 00:02:27,811
+>> Torquers?
+
+42
+00:02:27,811 --> 00:02:28,930
+>> Actually, good question.
+
+43
+00:02:28,930 --> 00:02:34,023
+So magnet torquers are actually objects
+that push off the external magnetic field.
+
+44
+00:02:34,023 --> 00:02:39,130
+I would see them as external [INAUDIBLE]
+influences acting on these elements.
+
+45
+00:02:39,130 --> 00:02:44,175
+The element might be inside the craft, but
+it's still pushing off an external field.
+
+46
+00:02:44,175 --> 00:02:47,020
+So what would be an internal
+force then that you might have?
+
+47
+00:02:47,020 --> 00:02:47,990
+>> Reactions.
+
+48
+00:02:47,990 --> 00:02:49,800
+>> Reactions is a good example.
+
+49
+00:02:49,800 --> 00:02:51,810
+because you have these
+fly disks that we put in,
+
+50
+00:02:51,810 --> 00:02:54,190
+sometimes called flywheels or
+reaction wheels or
+
+51
+00:02:54,190 --> 00:02:57,670
+control movement gyros that are all
+spinning objects inside our spacecraft,
+
+52
+00:02:57,670 --> 00:03:01,390
+and then they have motors attached that
+will spin them up or spin them down.
+
+53
+00:03:01,390 --> 00:03:05,780
+That motor is taking the wheel and
+it's pushing off the space craft.
+
+54
+00:03:05,780 --> 00:03:09,380
+So as a dynamical system it basically
+means some part of jello is pushing
+
+55
+00:03:09,380 --> 00:03:12,750
+off the other part of the jello and
+that's what cause the spinning.
+
+56
+00:03:12,750 --> 00:03:16,354
+This would be an internal force for
+the system all right?
+
+57
+00:03:16,354 --> 00:03:20,212
+If you do a free body diagram of just the
+reaction wheel then maybe we can treat it
+
+58
+00:03:20,212 --> 00:03:21,920
+as an external one on that system.
+
+59
+00:03:21,920 --> 00:03:27,101
+But here we have space craft jello
+could be fuel and all this stuff.
+
+60
+00:03:27,101 --> 00:03:28,305
+Fuel's another one.
+
+61
+00:03:28,305 --> 00:03:30,105
+Fuel slash backing back and forth.
+
+62
+00:03:30,105 --> 00:03:32,135
+Those are all internal forces.
+
+63
+00:03:32,135 --> 00:03:35,085
+And that will be key because we'll
+be talking about internal forces,
+
+64
+00:03:35,085 --> 00:03:38,530
+external forces, and
+how do things impact momentum and energy.
+
+65
+00:03:38,530 --> 00:03:42,247
+And there are some good high level things
+that are really useful as a spacecraft
+
+66
+00:03:42,247 --> 00:03:42,818
+analysts.
+
+67
+00:03:42,818 --> 00:03:45,350
+So we're going to break
+it off in two ways.
+
+68
+00:03:45,350 --> 00:03:48,520
+Now if I need a total
+force acting on jello,
+
+69
+00:03:48,520 --> 00:03:52,900
+I have it gazillion dm's,
+I have to integrate over them.
+
+70
+00:03:52,900 --> 00:03:55,840
+So if you look at chapter 2 we do
+a summation because we have a gazillion
+
+71
+00:03:55,840 --> 00:03:56,580
+of them.
+
+72
+00:03:56,580 --> 00:03:59,750
+And if you have a continuum you
+simply replace the summation
+
+73
+00:03:59,750 --> 00:04:00,890
+with an integral sign.
+
+74
+00:04:00,890 --> 00:04:03,860
+That's really, if you go back and look
+at calculus and how you did integrals,
+
+75
+00:04:03,860 --> 00:04:05,750
+you kind of broke it up into
+little bitty chunks and
+
+76
+00:04:05,750 --> 00:04:08,260
+then made those chunks
+infinitesimally small.
+
+77
+00:04:08,260 --> 00:04:09,865
+It's basically this big summation.
+
+78
+00:04:09,865 --> 00:04:14,117
+So if you're summing up over this,
+the claim here is the total force
+
+79
+00:04:14,117 --> 00:04:18,909
+acting on this blob is the sum of all
+the forces acting on the individual DMs.
+
+80
+00:04:18,909 --> 00:04:22,250
+Which is simply going to be
+the sum of the external forces.
+
+81
+00:04:22,250 --> 00:04:23,904
+What happens to the internal forces?
+
+82
+00:04:27,455 --> 00:04:29,440
+>> It blots it, it cancels out.
+
+83
+00:04:29,440 --> 00:04:31,862
+>> Yeah, which law is that?
+
+84
+00:04:31,862 --> 00:04:32,646
+>> Newton's third law.
+
+85
+00:04:32,646 --> 00:04:34,650
+>> Yeah, it's one of Newton's laws, right?
+
+86
+00:04:34,650 --> 00:04:38,260
+So if you take a wall, and push against
+the wall, the wall is actually going to
+
+87
+00:04:38,260 --> 00:04:41,330
+push back with you exactly the same
+amount but in opposite directions.
+
+88
+00:04:41,330 --> 00:04:44,870
+So as I'm torquing on a spacecraft,
+applying forces to the wheel,
+
+89
+00:04:44,870 --> 00:04:48,210
+you're getting equal and
+opposite forces applied to the spacecraft.
+
+90
+00:04:48,210 --> 00:04:51,280
+When you sum them up all those
+things have to mutually cancel.
+
+91
+00:04:51,280 --> 00:04:55,890
+So internal forces never contribute
+to a net force on the system,
+
+92
+00:04:55,890 --> 00:04:57,950
+only the external ones do that.
+
+93
+00:04:59,180 --> 00:05:01,480
+So I'm sure you've seen that before.
+
+94
+00:05:01,480 --> 00:05:06,061
+Now some basic properties of jello is
+any continuum, any dynamical system is
+
+95
+00:05:06,061 --> 00:05:10,584
+whatever the mass distribution is,
+it will have a center of mass location.
+
+96
+00:05:10,584 --> 00:05:12,960
+And there's many ways to define it.
+
+97
+00:05:12,960 --> 00:05:15,150
+I'm going to show you
+it's at least two here.
+
+98
+00:05:15,150 --> 00:05:20,959
+One of them is the center of mass is
+essentially your mass averaged location.
+
+99
+00:05:20,959 --> 00:05:24,290
+So Rc is the center of mass of this blob.
+
+100
+00:05:24,290 --> 00:05:26,400
+If you look at R times dm.
+
+101
+00:05:26,400 --> 00:05:29,370
+You really, you think of it you got
+one kilogram, half a meter out.
+
+102
+00:05:29,370 --> 00:05:31,810
+Two kilograms, a full meter out.
+
+103
+00:05:31,810 --> 00:05:35,270
+And five kilograms,
+a half a meter to the left, right?
+
+104
+00:05:35,270 --> 00:05:39,050
+You would add them up with
+a distances divide by a total mass.
+
+105
+00:05:39,050 --> 00:05:41,156
+That's going to be
+the center of mass location,
+
+106
+00:05:41,156 --> 00:05:43,320
+if you have this mass
+distribution on a system.
+
+107
+00:05:43,320 --> 00:05:47,986
+If it's continuum, instead of
+summing you do integrals of mass,
+
+108
+00:05:47,986 --> 00:05:51,750
+you know,
+the mass of the object times its location.
+
+109
+00:05:51,750 --> 00:05:53,990
+And then we divide by
+the total mass to get Rc.
+
+110
+00:05:53,990 --> 00:05:57,969
+So that's a classic
+definition of center of mass,
+
+111
+00:05:57,969 --> 00:06:01,772
+this works for
+any continuum dynamical system.
+
+112
+00:06:01,772 --> 00:06:06,400
+Now we can break this up because these
+are vectors, the inertial position vector.
+
+113
+00:06:06,400 --> 00:06:11,540
+So we can say R here has
+to be RC pass the r.
+
+114
+00:06:12,780 --> 00:06:14,640
+Again, this is done in
+a purely vectorial way.
+
+115
+00:06:14,640 --> 00:06:19,490
+I'm not saying r has to be expressed in
+the body frame or in the inertial frame.
+
+116
+00:06:19,490 --> 00:06:21,220
+That's a book keeping
+element we keep to later.
+
+117
+00:06:21,220 --> 00:06:22,690
+Right now we're just adding vectors.
+
+118
+00:06:22,690 --> 00:06:25,150
+Vectors plus vectors and doing with that.
+
+119
+00:06:25,150 --> 00:06:30,510
+So if you do this you can see
+this will actually break up and
+
+120
+00:06:30,510 --> 00:06:33,870
+let's do that one quickly here.
+
+121
+00:06:33,870 --> 00:06:35,510
+We had that.
+
+122
+00:06:37,885 --> 00:06:40,157
+Rc + r.
+
+123
+00:06:41,513 --> 00:06:43,560
+Dm that's the sum of two vectors.
+
+124
+00:06:43,560 --> 00:06:45,120
+So I'm going to do this, and say okay.
+
+125
+00:06:45,120 --> 00:06:52,012
+That's going to be Rc dm + rdm.
+
+126
+00:06:52,012 --> 00:06:57,510
+And my little subscript b that notation
+is actually a triple integral.
+
+127
+00:06:57,510 --> 00:06:59,570
+I have to integrate over the entire body.
+
+128
+00:06:59,570 --> 00:07:02,950
+But instead of writing triple integrals
+with all the limits, this is a short kind.
+
+129
+00:07:02,950 --> 00:07:07,369
+I just do one integral with b that mean
+it understood to be integrating over
+
+130
+00:07:07,369 --> 00:07:10,237
+an entire, whenever this body is,
+all right?
+
+131
+00:07:10,237 --> 00:07:12,290
+So we can break these things up.
+
+132
+00:07:12,290 --> 00:07:13,290
+That's nice.
+
+133
+00:07:13,290 --> 00:07:14,980
+That should be a vector.
+
+134
+00:07:14,980 --> 00:07:19,161
+Then there's some simplifications
+that are going to happen.
+
+135
+00:07:19,161 --> 00:07:24,450
+We knew earlier, by definition,
+this was M times Rc right?
+
+136
+00:07:24,450 --> 00:07:27,711
+This term can somebody say how
+this is going to be refined?
+
+137
+00:07:32,911 --> 00:07:34,137
+All right?
+
+138
+00:07:34,137 --> 00:07:35,460
+Kevin.
+
+139
+00:07:35,460 --> 00:07:37,908
+>> You'll get RC out of the interval
+>> Okay.
+
+140
+00:07:40,575 --> 00:07:44,120
+>> We get big M times R.
+
+141
+00:07:44,120 --> 00:07:47,140
+>> Yeah this is nothing but the sum of all
+the mass elements which is the total mass.
+
+142
+00:07:47,140 --> 00:07:47,940
+You can get there.
+
+143
+00:07:47,940 --> 00:07:52,870
+So now Kevin can you explain
+to me why it's okay to take
+
+144
+00:07:52,870 --> 00:07:54,790
+Rc varies with time and everything.
+
+145
+00:07:54,790 --> 00:07:58,245
+Why is it okay to take
+it outside the integral?
+
+146
+00:07:58,245 --> 00:07:59,080
+>> because we're only
+intergrating the phase.
+
+147
+00:07:59,080 --> 00:08:00,940
+>> Right.
+>> We're integrating over the body.
+
+148
+00:08:00,940 --> 00:08:04,280
+So when you see these B integrals,
+think of that, over this body,
+
+149
+00:08:06,550 --> 00:08:11,414
+let's say my center of mass was right
+here by the microphone just easy right?
+
+150
+00:08:11,414 --> 00:08:13,430
+Stop I'm looking at this and
+going at this instant,
+
+151
+00:08:13,430 --> 00:08:18,070
+whatever the mass distribution is,
+my left hand is part of the system
+
+152
+00:08:18,070 --> 00:08:22,050
+the center of mass for the left hand is
+still down here, right, for the system.
+
+153
+00:08:22,050 --> 00:08:24,660
+That Rc location for
+the right hand is also going to be here.
+
+154
+00:08:24,660 --> 00:08:27,520
+Every element of my body,
+because it's a continuum,
+
+155
+00:08:27,520 --> 00:08:30,690
+it shares the same
+center of mass location.
+
+156
+00:08:30,690 --> 00:08:36,128
+So as far as the body integral goes,
+it's just a constant.
+
+157
+00:08:36,128 --> 00:08:38,450
+Just like integral of 3 times x.
+
+158
+00:08:38,450 --> 00:08:41,070
+You pick the 3 outside the integral and
+just do integral of x right?
+
+159
+00:08:41,070 --> 00:08:43,050
+And continue, that's how we can treat it.
+
+160
+00:08:43,050 --> 00:08:44,920
+So this is just a spatial integral.
+
+161
+00:08:44,920 --> 00:08:46,520
+Yes rt varies with time but
+
+162
+00:08:46,520 --> 00:08:50,810
+we're doing a spatial integration
+over the body volume right?
+
+163
+00:08:50,810 --> 00:08:54,830
+And that location is a fixed it doesn't
+change depending on if you're looking at
+
+164
+00:08:54,830 --> 00:08:57,230
+the nose of the spacecraft or
+the tail of the spacecraft.
+
+165
+00:08:57,230 --> 00:09:01,171
+It's one system and that system
+has one center of mass location.
+
+166
+00:09:01,171 --> 00:09:04,841
+So yes that's the reason, and
+we'll use this trick several times today.
+
+167
+00:09:04,841 --> 00:09:08,410
+So if it didn't quite make sense now
+hopefully it will sink in more and more.
+
+168
+00:09:08,410 --> 00:09:10,240
+So you can do all of this.
+
+169
+00:09:10,240 --> 00:09:14,965
+That gives me MRc Plus
+
+170
+00:09:14,965 --> 00:09:19,170
+little rdm = MRc.
+
+171
+00:09:19,170 --> 00:09:27,458
+These cancel and
+you will have little r times dm = 0.
+
+172
+00:09:27,458 --> 00:09:28,980
+This is the other way.
+
+173
+00:09:28,980 --> 00:09:32,490
+If you do your classic sophomore
+level center of mass stuff,
+
+174
+00:09:32,490 --> 00:09:36,270
+you have 5 kilograms here,
+2 kilograms there, you add them up.
+
+175
+00:09:36,270 --> 00:09:39,940
+If all your positions are taken
+relative to the center of mass.
+
+176
+00:09:39,940 --> 00:09:42,730
+All these mass times positions
+have to sum up to be 0.
+
+177
+00:09:42,730 --> 00:09:44,950
+That means you've balanced it perfectly.
+
+178
+00:09:44,950 --> 00:09:47,170
+And that's what it looks like for
+generally speaking.
+
+179
+00:09:47,170 --> 00:09:50,810
+We have the little r dm's body
+integrals have to be equal to 0.
+
+180
+00:09:50,810 --> 00:09:55,477
+That's just a complete 3D version
+that works for any jello.
+
+181
+00:09:55,477 --> 00:09:57,508
+So good.
+
+182
+00:09:57,508 --> 00:10:01,370
+So that, from here,
+a few steps you can prove this.
+
+183
+00:10:01,370 --> 00:10:02,230
+These are the kind of things
+
+184
+00:10:02,230 --> 00:10:05,100
+I would definitely expect you to be able
+to do easily and quickly in an exam.
+
+185
+00:10:06,190 --> 00:10:08,604
+So if you haven't done much of this,
+practice.
+
+186
+00:10:08,604 --> 00:10:12,480
+Now, what we're going to do next is
+we're going to differentiate this.
+
+187
+00:10:12,480 --> 00:10:15,869
+So we're going to take that
+definition that we just had,
+
+188
+00:10:15,869 --> 00:10:19,037
+the center of mass location,
+all this is good, and
+
+189
+00:10:19,037 --> 00:10:22,072
+I'm going to take two
+inertial time derivatives.
+
+190
+00:10:22,072 --> 00:10:24,960
+So that means on the left hand side,
+mass is constant.
+
+191
+00:10:24,960 --> 00:10:28,050
+I'm not losing or
+gaining mass in this dynamical system.
+
+192
+00:10:28,050 --> 00:10:31,010
+And RC, I just have to put two
+dots over it and I'm done.
+
+193
+00:10:31,010 --> 00:10:33,837
+This is kind of like homework 3.6
+that you guys did that had inertial
+
+194
+00:10:33,837 --> 00:10:35,120
+derivatives and stuff.
+
+195
+00:10:35,120 --> 00:10:38,580
+In vectorial form this is dead simple,
+two dots and you're done.
+
+196
+00:10:38,580 --> 00:10:42,030
+The right hand side dm I guess
+doesn't change, we're not losing or
+
+197
+00:10:42,030 --> 00:10:43,530
+gaining mass with the system.
+
+198
+00:10:43,530 --> 00:10:46,530
+This is a body integral,
+as Kevin was saying.
+
+199
+00:10:46,530 --> 00:10:48,530
+And so the only thing that varies is r.
+
+200
+00:10:48,530 --> 00:10:52,510
+So we get big R and
+it has two dots over it.
+
+201
+00:10:52,510 --> 00:10:57,487
+But then you go back and look at Newton's
+equation that mass times inertial
+
+202
+00:10:57,487 --> 00:11:00,573
+acceleration is the force
+acting on that one.
+
+203
+00:11:00,573 --> 00:11:03,520
+And so
+this can be replaced with also the force.
+
+204
+00:11:03,520 --> 00:11:06,730
+The integral over the DF force and
+
+205
+00:11:06,730 --> 00:11:10,860
+we show that the integral of the DF force
+is nothing but the net external force.
+
+206
+00:11:10,860 --> 00:11:13,240
+You can ignore all the internal forces.
+
+207
+00:11:13,240 --> 00:11:16,150
+So you end up with an equation that
+should look pretty darn familiar.
+
+208
+00:11:17,560 --> 00:11:20,500
+Mass acceleration equal to force.
+
+209
+00:11:20,500 --> 00:11:24,140
+But you've used it primarily
+I'm assuming on particles.
+
+210
+00:11:24,140 --> 00:11:25,900
+This is the particle, here's the mass,
+
+211
+00:11:25,900 --> 00:11:28,090
+here's the force this is
+where it's going to go.
+
+212
+00:11:28,090 --> 00:11:30,770
+This actually also works on a continuum.
+
+213
+00:11:30,770 --> 00:11:31,720
+Blobs in space.
+
+214
+00:11:33,060 --> 00:11:34,953
+Anybody seen the Muppet Show?
+
+215
+00:11:34,953 --> 00:11:37,520
+There was pigs in space, you know,
+a lot of jiggling going on.
+
+216
+00:11:37,520 --> 00:11:38,480
+That's that kind of stuff.
+
+217
+00:11:38,480 --> 00:11:40,200
+This works for anything, even muppets.
+
+218
+00:11:40,200 --> 00:11:42,930
+Okay, so this is the key thing.
+
+219
+00:11:42,930 --> 00:11:44,580
+We call this the superparticle theorem.
+
+220
+00:11:44,580 --> 00:11:45,660
+What this basically says,
+
+221
+00:11:45,660 --> 00:11:50,110
+no matter what the dynamical system is,
+this complete closed system,
+
+222
+00:11:50,110 --> 00:11:55,110
+you can treat the center of mass of that
+system will act just like a particle.
+
+223
+00:11:56,380 --> 00:11:59,860
+If I know there is two forces
+acting on it from a megatometer and
+
+224
+00:11:59,860 --> 00:12:04,210
+maybe from the atmospheric drag force
+that Daniel was talking about, that's it.
+
+225
+00:12:04,210 --> 00:12:08,860
+Then those are the only two forces I have
+to consider acting on the center of mass
+
+226
+00:12:08,860 --> 00:12:12,254
+and I will predict
+the translational motion perfectly.
+
+227
+00:12:12,254 --> 00:12:14,280
+Now that blob may pull apart.
+
+228
+00:12:14,280 --> 00:12:16,650
+It may do all kinds of weird stuff.
+
+229
+00:12:16,650 --> 00:12:21,910
+So if your external force depends on
+the shape, then it gets more complicated.
+
+230
+00:12:21,910 --> 00:12:25,430
+So if this blob would be pulling apart,
+then with gravity gradients the part's
+
+231
+00:12:25,430 --> 00:12:28,491
+closer to the planets would have
+different force than the parts top.
+
+232
+00:12:28,491 --> 00:12:31,120
+The net forces change
+because of the shape.
+
+233
+00:12:31,120 --> 00:12:32,760
+That makes it more complicated.
+
+234
+00:12:32,760 --> 00:12:34,010
+But we didn't have gravity.
+
+235
+00:12:34,010 --> 00:12:37,123
+We have just net thrusters
+you've got blobs in space.
+
+236
+00:12:37,123 --> 00:12:39,810
+Somebody fires a thruster.
+
+237
+00:12:39,810 --> 00:12:41,660
+And this thing is going to take off and
+go.
+
+238
+00:12:41,660 --> 00:12:43,030
+Just by looking at the force and
+
+239
+00:12:43,030 --> 00:12:45,980
+knowing the mass, I can predict what's
+going to happen to the center of mass.
+
+240
+00:12:45,980 --> 00:12:48,680
+I don't know what happens
+to the shape yet, but
+
+241
+00:12:48,680 --> 00:12:51,380
+I do know what happens to
+the center of mass of that system.
+
+242
+00:12:51,380 --> 00:12:53,277
+Which is a very powerful argument.
+
+243
+00:12:53,277 --> 00:12:55,480
+So that's what's called
+the super particle theorem.
+
+244
+00:12:55,480 --> 00:12:57,250
+Any blob in space.
+
+245
+00:12:57,250 --> 00:12:59,040
+If you just are concerned
+with the center of mass,
+
+246
+00:12:59,040 --> 00:13:01,190
+the center of mass will
+act like a particular.
+
+247
+00:13:01,190 --> 00:13:04,466
+F = Ma holds but
+F has to be the net external force.
+
+248
+00:13:04,466 --> 00:13:10,620
+M is the total mass and Rc double dots has
+to be the inertial second time derivative.

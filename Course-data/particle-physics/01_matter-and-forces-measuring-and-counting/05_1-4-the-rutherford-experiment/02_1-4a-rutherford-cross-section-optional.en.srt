@@ -1,0 +1,176 @@
+1
+00:00:00,000 --> 00:00:10,947
+[MUSIC]
+
+2
+00:00:10,947 --> 00:00:16,252
+We will calculate with classical arguments 
+à la Rutherford the cross section of a small
+
+3
+00:00:16,252 --> 00:00:21,044
+nucleus of charge z scattering
+of a heavy nucleus of charge Z.
+
+4
+00:00:22,130 --> 00:00:25,865
+The basis of this calculation, is
+the relationship between the differential
+
+5
+00:00:25,865 --> 00:00:35,170
+cross-section and the dependence of the
+impact parameter b on the scattering angle theta.
+
+6
+00:00:35,170 --> 00:00:38,619
+First we use the fact that
+the kinetic energy is conserved, and
+
+7
+00:00:38,619 --> 00:00:41,678
+that, as there is no recoil of the target,
+the initial and
+
+8
+00:00:41,678 --> 00:00:44,298
+the final projectile
+velocities are the same.
+
+9
+00:00:48,147 --> 00:00:51,536
+In the same way,
+the angular momentum will be conserved,
+
+10
+00:00:51,536 --> 00:00:54,580
+which tells us that mvb is a constant.
+
+11
+00:00:54,580 --> 00:00:57,874
+This means that dgamma/dt can be
+expressed in terms of the initial
+
+12
+00:00:57,874 --> 00:01:00,741
+velocity of the projecile,
+the impact parameter and
+
+13
+00:01:00,741 --> 00:01:03,611
+the distance squared between
+projectile and target.
+
+14
+00:01:06,199 --> 00:01:08,203
+This serves to express the Coulomb force,
+
+15
+00:01:08,203 --> 00:01:11,486
+which is just the product of the two
+charges divided by 4 pi r^2,
+
+16
+00:01:11,486 --> 00:01:15,260
+times the unit vector which connects
+the projectile and the target,
+
+17
+00:01:15,260 --> 00:01:18,535
+in terms of what we know that is to say,
+the projectile velocity and
+
+18
+00:01:18,535 --> 00:01:19,323
+the impact parameter.
+
+19
+00:01:27,126 --> 00:01:31,749
+When we integrate this relationship
+between gamma = 0 and gamma = pi-theta,
+
+20
+00:01:31,749 --> 00:01:36,457
+one side is the vector difference between
+the final and initial velocities.
+
+21
+00:01:36,457 --> 00:01:40,731
+The other side is the integral over
+the relationship we just obtained.
+
+22
+00:01:46,083 --> 00:01:50,345
+With a little trigonometry, we get – rather
+painfully – the value of this integral.
+
+23
+00:02:00,779 --> 00:02:06,473
+In particular, we obtain that the integral
+of the unit vector between the initial and
+
+24
+00:02:06,473 --> 00:02:09,332
+final states, is = 2 cos(theta/2).
+
+25
+00:02:16,739 --> 00:02:21,684
+On the other hand,
+simple trigonometry gives us
+
+26
+00:02:21,684 --> 00:02:27,966
+a relationship between the length
+of the vector difference
+
+27
+00:02:27,966 --> 00:02:30,639
+between final and initial velocity and
+
+28
+00:02:30,639 --> 00:02:34,861
+the scattering angle,
+which turns out to be 2 v sin/theta/2).
+
+29
+00:02:34,861 --> 00:02:38,640
+The two relationships together
+finally give us the relationship
+
+30
+00:02:38,640 --> 00:02:42,911
+between impact parameter and
+the scattering angle we have been looking for.
+
+31
+00:02:51,281 --> 00:02:54,053
+We then insert this result
+into our formula for
+
+32
+00:02:54,053 --> 00:02:56,121
+the differential cross section.
+
+33
+00:03:03,096 --> 00:03:07,164
+After some simplification,
+we finally obtain the Rutherford formula for
+
+34
+00:03:07,164 --> 00:03:09,950
+the differential cross
+section of the process.
+
+35
+00:03:09,950 --> 00:03:13,768
+It tells us that there is
+a very steep angular dependent,
+
+36
+00:03:13,768 --> 00:03:17,782
+inversely proportional to
+sin^4(theta/2).
+
+37
+00:03:17,782 --> 00:03:22,409
+[SOUND]

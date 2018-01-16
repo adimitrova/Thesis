@@ -1,0 +1,446 @@
+[SOUND]. Okay. 
+So as you know, we were just talking to Martin, and he was telling us a bit about 
+RJDJ. We've heard from Marko. 
+Marko's been telling us about how to use sliders. 
+and we've also done some stuff last week on sliders and building them and stuff. 
+And, you know, Matt's been doing this stuff with you about, playing back sounds 
+in rhythm to a sequence. So, what I'm doing is I'm going to show 
+you an application that we developed, I just briefly touched upon with Martin. 
+I'm just going to I'm going to set it running again for you. 
+But I want you to just kind of pay attention to the little things I do. 
+As I'm doing them, I'm going to briefly explain what they are, then I'm going to 
+go through the whole application in detail. 
+Explain how it works. Then we're going to discuss it with me 
+and Marco and Matt at the end just so that we can make sure we've got 
+everything covered. This is like a fully fledged music 
+application. It's sonically quite advanced. 
+It's just bare minimum on the user interface, it just has the interaction, 
+so you could use quite a lot of the techniques that are in this to make your 
+own thing. But let's just see what it sounds like 
+again and see where we, we are with it. [MUSIC] Okay, here we are. 
+So you can hear we've got a drum machine. Let's just turn the two synths down, so 
+we can hear these these, these drums here. 
+We've got a bass drum, we got a snare drum and you can see, I'm pointing at a 
+snare drum hit. [MUSIC] That one and that one. 
+And there's a blue line that tracks across telling us where in a drum beat we 
+are. The second line in the drum, in the drum 
+machine is this. You hear that? 
+That's the [INAUDIBLE] the clap. 
+So the claps going on the in between beats in between the base and the snares. 
+You got a classic techno feel. And as Matt was saying all of the sounds 
+we're using come straight from your standard kind of 808 or 909 drum machine 
+and thereof [MUSIC] So, what else can it do? 
+Well, we've got two synthesizers. We can play these [INAUDIBLE] 
+synthesizers individually, and we can vary a whole range of parameters for 
+them. They're fully fledged synthesizers. 
+We can write waveforms for them. If you're interested in synthesis and you 
+know a little about it I think you'll find this one interesting. 
+But if you don't, it's still really usable and I need you to get your head 
+around it. We can write waveforms, we can add a 
+filter, we can change the quality of the filter. 
+Now let's just have a listen to the filters, I'm want to turn one of them up. 
+[MUSIC] So here's one of the synths. I'm going to change the filter. 
+[MUSIC] [MUSIC] I've also got this resonance. 
+And this filter out. We could also change the release and the 
+attack. So we're giving it an envelope. 
+And it creates that kind of acid techno feel. 
+If I change the attack actually with something like this. 
+[MUSIC] Just makes it quieter. We can transpose any of the channels. 
+So I'll change the key of the entire sequence. 
+And then again. And then if I want [MUSIC]. 
+You just go back to where you were, more or less. 
+and also, I can add some delay. [MUSIC] And I've got a second one here as 
+well. Now, the beat that I'm altering at the 
+moment is the actual [MUSIC] [INAUDIBLE] sequence of notes that it plays. 
+Now, I can select a sequence of high notes, like this, or a sequence of low 
+notes. And just like in the example that Matt 
+was showing you [INAUDIBLE] [MUSIC] Drum machine. 
+There's 16 steps, so I can change two of the notes. 
+There you go. I've got the fill trap as well and I'll 
+do this stuff. [MUSIC]. 
+That's quite pleasant. We have resonance. 
+[MUSIC] That's distorting quite a lot. I don't really mind. 
+I can add some more delay. [MUSIC] Add a few claps. 
+[MUSIC] And some more snares. Maybe a cymbal. [MUSIC] You gotta take, 
+So that's a basic music machine. [MUSIC] It's a common thing that you can 
+easily sell on the upstart for, I don't know, actually music apps. 
+Let's talk about this for a minute. Music apps go for quite a lot more money 
+than other kind of apps. You can sell an app like this for much 
+more than three quid on the [INAUDIBLE] on the IOS app store. 
+You can probably sell it for five to six pounds or more. 
+Or if you're in America, that would be dollars. 
+I imagine that like $8 or $9 out of [INAUDIBLE], what is, what are pounds and 
+dollars anyway? Who cares? 
+Anyway, they're much more expensive and they're much more specialist but they're 
+still they're still really useful. And I think something like this, I mean 
+as something really famous, well, there's a really famous [UNKNOWN] app which is 
+built on, based on a and old-fashioned TV R3 synthesizer and a nice [INAUDIBLE] 
+drum machine in which still sells in it's droves. 
+And all the people do is complain about how unusable it is. 
+So I'm not that worried that ours is knocked out quite quickly. 
+It is knocked out quite quickly, but it is powerful, and you can build on it to 
+do more interesting things. And you could use some of the other stuff 
+we've done to play some loops. By there are some complexities to this 
+and I want to show that you know, what they are, so I'm going to quit this 
+temporarily and just go back to the basic version before I continue with that. 
+Just see you can see in the most simple possible way what it is that we're doing. 
+So you go all this stuff for free as I was describing before. 
+as I've said every week, you know, you can just go to your lessons. 
+but this time we're in week six. Week six has got a bunch of small tests 
+in it. It's got a small drum machine, and t's 
+got this thing called synth test. So, we're going to have a quick look at 
+this synth test. Just because it's a easier code to, to 
+look at. It's got the gooey code in it. 
+it doesn't have the drum machine it just has one synthesizer. 
+and yeah. There you go. 
+It's just one of the synths. [MUSIC] [MUSIC] Now, [COUGH] so you can 
+see here it's the same, and it basically allows me to set the pitch, change the 
+filter, change the resonance. Same old same old. 
+Let's have a look at it. So we start off as we normally start off 
+by declaring a maxim context. If I can just make this a little bigger 
+so you can see. so this is what's happening on the audio. 
+Behind it, as, you know when Martin was here we were talking about the web audio 
+api. So, behind this is all web audio. 
+And the maxim js, the maxim js file, which is here has got all of this stuff 
+in the background. Now, if you're interested in this sort of 
+stuff, and you want to learn more about how we built Max and JS. 
+You can always post questions on the forums. 
+And the TAs will manage those and any really important questions where we feel 
+we've got some material we can really help you with we can point you towards a 
+good answer. And also there are lots of other places 
+like musicdsp.com and other sites like that can help you understand what it is 
+that's gone into building this. But you don't really need to if you just 
+want to get started. We just have to have a context, and Maxim 
+provides the context. Also, we've got an audio file player. 
+Actually, we're not using that here, so that's not going to matter. 
+Instead of using the audio file player, which is what we've been using most of 
+the time, we're using a synth. So, Maxim can have a synth and I've 
+called this Synth waveform. Now, the thing about a synth that makes 
+it different to an audio file player is you can write in an array of values 
+between minus 1 and 1. And that will define the texture of the 
+sound which you're creating. Now, most synthesizers have a number of 
+different wave forms. And there's lot of different approaches 
+to creating wave forms. Um, [COUGH] and in one of the other 
+examples that we've got in this folder there's a really easy way of gyrating 
+wave forms but essentially, you're just writing numbers between minus 1 and 1 
+into an array which is of a particular length. 
+So we'll be talking about how to do that in a moment. 
+So we have our synth. It's called waveform, and we're writing a 
+waveform into it, which is what makes the sound. 
+we've got a play head. Now, the play head, as Matt was 
+describing, is, it's literally the thing which tells us how many, how many frames 
+there have been. And we use that to work out whether we 
+should trigger a new beat. Okay. 
+So we've also got, this array called notes, which is an integer array. 
+And it holds MIDI notes. If you know about music, then you'll know 
+what MIDI is. If you don't really know about music and 
+music technology, you've probably never heard of it. 
+It's called Musical Instrument Digital Interface. 
+It's a specification. For a numbering system that relates to 
+musical notes and musical information. So these MIDI notes normally what they 
+represent are all the keys on the keyboard. 
+they're 7-bit numbers, which means that they go for a range of 0 to 127. 
+There's 128 independent values, the lower, the number, the lower, The note. 
+So, I'm right down the bottom end of the piano, as you can see. 
+With all these numbers, zero, zero, zero. 12, 12, 12, whatever. 
+okay. So, then we've got some float variables. 
+Fc, which is filter cutoff, resonance, attack, and release. 
+And these are variables which I'm using to control the filter cutoff resonance, 
+attack and release of my synth. This is my wave table. 
+Excuse me. This is my wave table. 
+Its an array and of float variables. Like I said its going to be between minus 
+one and one and its got four five hundred and fourteen elements. 
+Now the reason its got 514 elements its kind of complicated but its because of 
+something called interpolate. Very briefly what we need to do when we 
+create that way-, when we create a waveform, is we need to make sure that 
+that waveform can playback at various different frequencies. 
+So it's sound is made up of lots and lots of different frequencies and we measure 
+those frequencies in repetitions per second. 
+Or cycles per second, and the measurement value we use for that is Hertz. 
+So for example, if I take a sound, a very small snippet of sound and I repeat it 
+more than 20 times a second we actually hear it as a pitched note, because it's 
+repeating so fast. And that's what we think of, we think of 
+music. Most people just think about pitched 
+notes. So, in order to be able to have a, a wav 
+form which can be played back at 20 hertz, or at the oth- -- at the other end 
+of the scale 20,000 hertz, which is about the highest, frequency that we can hear; 
+in fact, I can't hear 20,000 hertz. What -- who'm I tryin' to kid? 
+As you get older, you can't really hear up there. 
+I probably can hear about 18,000 hertz or, if I'm on a good day, with a good 
+wind. So, in order to be able to do that, to go 
+between a very low frequency sound and a very high frequency sound, we need to 
+interpolate. To make the interpolation work, i.e. 
+to make up the numbers that we need. because that's what interpolation means. 
+It means we're making up numbers that aren't there. 
+What, because we changed the playback rate or the waveform, to make up those 
+numbers, we need some spare numbers on the end. 
+So it's, normally you have a 512 point buffer, it's called a 512 point buffer 
+because it's, it's, that's the number of points that you run through to make the 
+sound. But where you've got a couple of extra 
+points on the end, and we're using those for interpolation. 
+So that's the reason why it's 514. Okay, so there are out setup options 
+sorry, they're not our setup options, they, they are basically our 
+declarations. We are declaring all the objects that we 
+need in order to make this program work. and then what I'm doing is I'm going into 
+the setup function. I'm just declaring a size. 
+I'm creating a, I'm calling new on my maxim object, and that means I'm setting 
+up my context. and then I've gone [COUGH] done, done the 
+same thing to my wave form objects. I'm, I'm creating new synth. 
+So the synth is got a, a waveform in it, which is waiting to be populated with 
+something with numbers. And it's also got all the other stuff 
+that we need delays, filters and that kind of malarkey. 
+Then we're setting up my sliders. This is the same as the way Marko showed 
+you to do his. I've got this, which is delayed time 
+that's dt, dg, which is delayed amount or delayed game. 
+A, which is attack. R, which is released. 
+F, which is the filter cut off. And q, which is the filter q, which is 
+the resonance, which is what makes it sound, sort of acidy. 
+so, there are the sliders that we need. And then I have another multi-slider, 
+which I'm using to enter the notes. So you can see here, Mark has explained 
+to you how the multi-slider works. SEQ is also, that's a sequence. 
+It's a, basically it takes an array. It takes the array notes. 
+And then it, it fills that array whenever I interact with the multislider. 
+Okay. So I then, I'm loading a file which I'm 
+not using. So actually [SOUND] we don't need that. 
+Frame rate is 30. the frame rate is roughly the speed of 
+the tick rate. Just like Matt explained. 
+But instead of running through those ticks, and using them to trigger drum 
+sounds, although we do that in the more advanced example. 
+In this example, we're just going to use it to select A note from our note array 
+and use it to set a frequency for our waveform generator. 
+Okay. So, before we do any of that, we're still 
+in Setup. And you see the section here that I'm 
+highlighting? This is me generating a waveform. 
+So we know that our buffer is 414 points long so. 
+We want to fill the array, which is 414 elements long with a bunch of numbers 
+between minus one and one. [COUGH] Now, I'm going for a sorptive 
+wave here so, I actually want the waveform to be 512 points, as I've 
+explained, but with a couple of extra points for good measure. 
+So, what I'm doing is I'm taking the value, I, and I'm dividing it by 512 to 
+make a value between zero and one. And then I'm subtracting 0.5 to make a 
+value between negative 0.5 and 0.5. Now what actually happens when I do that 
+is I, I make a ramp, you know, it's as if, if you imagine that's my array, the 
+ramp goes up like this, so it's kind of an inverted sawtooth wave. 
+And as it repeats, it drops down, goes back to the beginning, goes up again, and 
+this produces a nice harmonic spectrum that we can filter. 
+It's a very simple waveform, but it creates all these harmonics And, it 
+pretty much creates every harmonic that we need. 
+And then, we filter those harmonics out, and add the resonance for that acid 
+sound. but the values, the actual amplitude is 
+only for minus, naught .5 to 5. That's absolutely fine. 
+It's, it's absolutely fine. We could double it, but then we'd get 
+more distortion. And you can hear that You know I'd have 
+to do more work balancing this out so it's just to keep the sound within a 
+reaonable range. So then I make the, the waveform and then 
+I add it to my synth which is called ironically enough or confusingly enough 
+waveform. So I can set the wave table size I could 
+set it to any amount I like that we've already discussed it's going to be 514. 
+And then I load my wave table. In. 
+Wave form load wave table wave table. And then it's wave form dot play. 
+So, that means I've initialized my synthesiser. 
+I've loaded a wave form. I can change that at any time, any way 
+that I like. So you could have 10 different wave 
+forms. You could have really long wave forms. 
+You could take a picture of your face, analyze all the pixels, and then use that 
+as a The waveform it's entirely up to you it's just an array of numbers. 
+So you know be creative and then I'm pressing play what that really means is 
+it's on. So ready to rock. 
+In the door method we're doing the same stuff that Marco explained. 
+We are [COUGH] setting up our sliders Then we get our slider information in the 
+draw method. So, if f get, basically if we get 
+something from the frequency slider, we set the filter that belongs to the wave 
+form object. and if we get delay time, then we set the 
+delay time. Yes unless I'm munging I'm dividing it by 
+fifty just to get it into a decent range. The same thing to delay gang get and to 
+the huge get. A get and R get. 
+Lot's of good gets. Because we are in the draw method that's 
+a good place to set the display. So we display everything. 
+And then we do the business end, which is ticking through the array, which has the 
+notes in, and using that to set the frequencies. 
+So, playhead ++, every time we enter the draw loop, we iterate the playhead. 
+So the tick rate is different to the rate of actual playback. 
+The tick rate Is quite fast, it's 30 frames a second. 
+We could have 60 or 120. it can be quite fast. 
+And a tick rate's normally much much higher than the rate of the rhythm. 
+So what I've done is I've just said, okay. 
+Well, every four ticks. We'll say that's a semi quaver, which is 
+a. Small chunk of a beat, it's a quarter of 
+a beat, so f play had modular four equals equals zero just the same way Matthews 
+already showed you. Wave form.ramp, we ramped a [COUGH] 
+knot.5 which is going to be our volume given the attack time... 
+Yet. And what that does is it means that, if 
+the attack time's long, it'll be a slow ramp. 
+And if the attack time, attack time is fast, it will be a short ramp. 
+And then, following a ramp, we set the frequency. 
+Wave form set frequency. Now, we're using this thing, m2f. 
+Now what this does is it takes midi notes and turns it into frequency information. 
+And this is just looking up an array, which is a maxim j s here. 
+So it's saying okay, if I get a, a number zero, that's going to be a midi note of 
+zero. if I get a number one, a midi note of 
+one, that's going to be a frequency of 8.661957, which we'll never hear. 
+But I generated this with an algorithm. And I just pasted it in, because it saves 
+you having to worry about it. Okay? 
+Then we access notes. We get the play head modulo 4. 
+Sorry, play head divided by 4, modulo 16. That's basically saying, okay. 
+We've had ticks, that's fine. But this is the note we actually want. 
+And then we're adding 30, which is a constant, which is just, so if it was 
+zero, then it would actually be 30. So finally what we do is the next ti, 
+tick we release. So immediately we release before we then 
+Retriever. So if player head module [INAUDIBLE] 
+equals equals one we trigger the release, and then we're off. 
+There are better ways of doing this, but not using processing. 
+Okay, so as you can see, we've triggered our sound, we've set the note for this 
+particular tick and we've released it. For the following notes, the following 
+tig. So the next thing to do is to sort out 
+the interaction. When mouse pressed, what we do is, we 
+just get the user interface stuff, and that handles all our mouse pressed GUI. 
+Dt mouse pressed, dt mouse pressed, blah. Same thing in mouse drags so that's 
+useful for mouse devices. And in mouse release we we just check one 
+thing. We check to see if the notes have changed 
+in the array that holds all the notes. And if they have, then we just populate 
+the sequence sorry, we populate the notes array with the new sequence that's in our 
+sequence similty slider. And that's what this does, so notes I, 
+which is the current note from 0 to 15, so there's 16 different steps, we flaw 
+this value basically. So we get the sequencing value. 
+And then there's a bit of [UNKNOWN] to make sure that it's the right value and 
+we stick it in there, make, we basically convert it from the slider value to a 
+mini value. We could have used the map function to do 
+that, which would have been easier to read. 
+But instead of using map, I'm just doing it with standard mathematical operators. 
+Right. Now that actually is that, is that first 
+test. So let's just go back and have a look. 
+[MUSIC]. Yeah, that's nice. 
+And here's the delay time again. [MUSIC]. 
+[SOUND] I wanted to just talk briefly about the filter because the filter is 
+quite is, I don't know, it's nice to think about what the filter actually 
+does. I've already explained that we have a 
+wave form and it goes at a certain rate. It give us lots of harmonics. 
+And then we use the filter to block them. But how that process occurs is kind of 
+interesting. Basically what the filter does [SOUND] is 
+it, it lets everything through [SOUND]. Let's just get a single note [SOUND]. 
+It lets everything through when it's wide open. 
+[MUSIC] And as we drop it, what it's actually doing [MUSIC] Is this preventing 
+the weight form from moving very quickly? The filter basically is averaging 
+smoothing out the weight form/g. The weight form remember is like that. 
+And it's going really really fast. Lets say it's going a thousand times a 
+second. And it's producing all of these harmonics 
+which are. Two thousand, three thousand, four 
+thousand, five thousand, six thousand, seven thousand, eight thousand, et 
+cetera, times per second, with an altitude drop-off. 
+And that's making a very bright sound. That's making that buzz, that nice, 
+buzzing sound that we, we like. Well, I'm assuming you like that. 
+If you don't like that [MUSIC]. That then tough, 'cuz that's the sound it 
+makes. but the thing is that when we repeat it 
+over and over and over again., we're, actually, when we get to the end of the 
+route, and we drop down again. That's actually quite a fast move. 
+And that's what creates all the harmonics. 
+If we smooth that, it prevents the harmonics from being generated, and it 
+smoothes Filters out that sound, so what we're actually doing is we're averaging 
+the signal as it goes up, kind of. and that's fine because it's a slow 
+increase, but then when we get that sudden drop, we smooth it in the same way 
+we might blur an image. And that's more or less how we turn high 
+frequencies down. So, it's really simple and if you're 
+interested in that process. There's a number of filters that come 
+bundled with the course air package that we've put together for you. 
+and they run nicely on Android as well, so you want to have a look at those, 
+they're in the Android package and there's 4 or 5 of them. 
+And you can actually see the algorithms if you're interested, you can have a look 
+at them. Alright, so that's how the synthesiser 
+works. Now, finally, what I want to do is go 
+back to our, A more complex example that combines all 
+the bits together and just talk about how that tinal thing wor, works. 
+Just a few little things that make it a bit more useable. 
+so I'm going to go back to our music machine example which is here and I'm 
+going to run it and what's going to happen is. 
+[MUSIC] It started up straight away [COUGH] and it's distorting beautifully 
+really not bad. There's very little I have to do now all 
+of it [MUSIC] Make music. Let's have some bass drums. 
+I do like a bit of bass drum, can you hear the bass drum? 
+You can just about, let me knock this one out. 
+Okay, that's good. It's quite hard to use that. 
+You could have a nicer keyboard setting or something like that. 
+[MUSIC] So let's have a look at what we've done to put the main application 
+together. So, we've got two synthesizers. 
+now there's a clever way to do this and there's a stupid way of doing this and 
+just to make your life easier, I've done it the stupid way. 
+instead of creating an object or a class which is a synth although I've already 
+done that behind the scenes anyway. But instead of doing that, just so it's 
+clear and you can see how it's done, I've just duplicated all of the codes. 
+There was actually two sets. A brighter, cleverer, more engineering 
+savvy method is to make another class that encapsulates all of the sliders. 
+And then just to create one of those objects and to say where you want Where 
+to put it, so that's something we should have a look at. 
+There's a good example in all of the current examples that we've given you, 
+there are good examples of classes, and you should have a look at that those. 
+But I didn't want to do that and find that no-, that some of you didn't really 
+understand that whole process. So I've just gone through and I've 
+duplicated all of that code. So basic stuff is I thought well I want 
+it to look slightly better than it currently looks so I've created a brushed 
+metal background. I've positioned all the sliders on the 
+screen and then I've created this brushed metal background and you see that this is 
+a good tip. If you can avoid havong to draw 
+Non-animated information. via algorithmic methods, i.e. 
+if you can avoid having to apply the interface graphics, do avoid it. 
+Make a Photoshop image that has your interface. 
+So I've got a slightly embossed area here and here which these are the panels that 
+hold the information and if I spent more time on that I can make them look really 
+nice and I've fake knobs and switches that I copied and pasted of the Internet. 
+Or I could photograph my something from my set connection and then put those on 
+them instead. but I guess what I'm trying to say is you 
+can do an awful lot by preparing your images in Photoshop just like we did last 
+week with the instaspan for the overlay. It's the same sort of thing. 
+put the effort in there if it's not going to animate. 
+Put the effort in in Photoshop, make it look sweet, and then draw it. 
+I must admit I've not really put the effort in here, but there's a back, 
+there's a basic starting point. You can see where the panels are; they're 
+sort of lined up. Another thing you can do is you can put 
+your interactive graphic elements Onto your screen so that you do that 
+problematically then you screenshot it the right size and move that into your 
+Photoshop application and then you can draw on top of it. 
+I guess it's what I'm saying is do the work in Photoshop is you're not going to 
+have to animate it make it look nice there. 
+We did exactly did the same thing with angry droids as well we just Do a bit of 
+support work there. So that's the basic idea, and you can get 
+away with a lot there. also it's nice to add custom graphics to 
+your sliders, and you can do that too. So, we've done that. 
+And then we've loaded it in here. And then we've done the same thing, exact 
+same thing that Matt did for the drum track. 
+We created four Boolean arrays. Track, 1, 2, 3, and 4. 
+These are for our four drum sounds that were in our drum machine, which is a 
+kick, a snare, a handclap, and a cymbal. Ideally, I'd have a hi hat. 
+There is a hi hat knocking around in one of the, folders on the Coursera pack that 
+you've got. And you can see here, exactly as I said, 
+I just duplicated everything. So there's the floats that you've already 
+seen. Except we've added another function, 
+filter attack, which is what gives it that sort of TB 303 baseline sound. 
+[LAUGH] allegedly. And then we've got, some transpose 
+functions as well, which allows us to move it around. 
+We've got a second wave table for the second object. 
+You can see we've got two syns waveform and waveform two. 
+And now these are all basically everything that has a two after it is for 
+the second waveform. We create a bunch of secondary slide and 
+sliders and multi-sliders to hold all the separate information and then we load in 
+some samples. And then we set up a sliders, so we have 
+twice as many sliders. But they have slightly different numbers 
+in to re, to represent the fact that they're going to be drawn somewhere else. 
+Now as I said, you would draw them, screen shot it, import it into Photoshop, 
+do your background, and then just load the background. 
+Now so we load the background where do I load the background. 
+Into the bottom of this. that's the wavetable, exactly the same 
+way as I described in the first example. Okay the background is loaded, there it 
+is, brushed metal, that's my brushed metal background. 
+and then here, what I do is I set up the drum tracks in the same way that Matt's 
+already explained. I just create these boolean arrays, 
+they're either true or false. And I set them all to false, so they're 
+all off. Okay, and then we get all the information 
+in exactly the same way, as we did before. 
+And then we use the same playHead information to get the frequency content 
+for both synthesizers. And then we use another variable, current 
+b, so we could use playHead if we're using current b too. 
+It doesn't really matter, it's the same. To find out whether it's if it's true 
+basically, then what we do is [COUGH] we play that drum sound back. 
+the mass press stuff is exactly the same, if you click there it sets it And, you've 
+set it to play. in both mouse press and mouse drags. 
+And other than that, it's exactly the same as the two examples you've seen. 
+The basic synth example, and the drum example. 
+And that's how you end up with this. [MUSIC]. [MUSIC]

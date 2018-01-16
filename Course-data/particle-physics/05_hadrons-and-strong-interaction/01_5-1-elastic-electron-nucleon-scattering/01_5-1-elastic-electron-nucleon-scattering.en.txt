@@ -1,0 +1,113 @@
+[MUSIC] Hello, and welcome to this fifth module of our
+introductory course to subatomic physics. In this module,
+we'll discuss the structure of hadrons and strong interactions. In this first video, we discussed the elastic electromagnetic
+scattering between electrons and nucleons, which is one of the ways used to
+study the structure of hadrons. After following this video, you will know the main properties of
+elastic scattering between fermions, and the meaning of the different terms
+that enter into the cross section. The form factor concept you will know, and its interpretation,
+in terms of the size of the nucleon. And you will get to know the historic experiments at the Stanford
+Linear Accelerator Center in this area. When the structure of an interaction is
+known, it can be used as a tool to better understand the particles
+that are involved. Within this video, how elastic
+electron nucleon scattering is used to determine the internal
+structure of nucleons. We take advantage of the fact that
+the electron as far as we know, is a point like particle in that we know
+electromagnetic interactions very well. We can thus elucidate a single,
+but important unknown, which is the distribution and the dynamics
+of quarks inside the proton and neutron, represented by the big blue
+dot in the right diagram. We’ll see in video 5.3, also, how meson resonances are formed by
+an incident photon, for example. These can be used to better understand
+the strong force that binds quarks and anti-quarks together. The prototype process for the scattering between point like
+fermions is electron muon scattering. It is very similar to e+ e- annihilation, with the Feynman diagram
+rotated by 90 degrees. We will approach this process in steps. The first step is already shown here,
+since we have encountered it in the past. It is to consider scattering
+of a very heavy type target, which is without structure and
+without spin. Also, ignoring the spin of the incoming
+electron, and neglecting its mass, we obtain the formula shown here,
+the Rutherford cross section, which we already encountered in video 1.4. As usual, the factor alpha squared comes
+from the two electromagnetic vertices. The denominator contains the square
+of the characteristic energy. It results from the propagator of the
+virtual photon, one over q^2, and you can easily verify this in
+the approximation that the mass of the electron is negligible, as I did here. The angular distribution
+is extremely steep for the scattering of point like particles,
+and it peaks at small angles. This remains valid when including
+the effect of the target recoil, and the spin of the particles. The additional term in red,
+shown here with M the mass of the target, takes
+into account the recoil. It is the ratio between the incident and the outgoing electron
+energy E’/E. This ratio is 1 for an infinitely
+heavy target, but less than 1 for an important recoil. This formula still neglects the magnetic
+component of the interaction. For a point like fermion target with a
+magnetic moment, µ = e/(2m). One finds the complete Mott formula
+given on the bottom of the page, quoted here in the laboratory frame, and
+for relativistic electron projectiles. The last term in red is
+of a magnetic nature. It becomes important at high
+momentum transfers q^2, much larger than the mass
+of the target squared The angular distribution, still roughly
+follows the form of the Rutherford formula, the third term contains sub-terms
+proportional to cosine squared theta, and to sine squared theta, which reduce a little the steepness
+of the angular distribution. The historic experiments on elastic
+scattering between electrons and protons have been conducted at the Stanford Linear
+Accelerator Center in the 1960s and 1970s. The experiment consisted
+of a liquid hydrogen target bombarded by electrons
+of a few hundred MeV. In the final state,
+only the electron is observed, in two spectrometers positioned
+at variable scattering angles. The kinematics of the hadronic
+final state is then deduced from energy-momentum conservation,
+assuming a target at rest. Here are some results on the cross section
+as a function of the scattering angle on the left, and as a function of
+the incident electron energy on the right. The measurements confirm the calculations
+at these modest energies, already below one GeV. One observes a steep angular
+distribution in the left plot, and a strong reduction of the cross section
+with energy in the right plot, as we expected from the formulae. Let us now consider what happens if
+the target is not a point-like particle. Let us first take the model of a static
+charge distribution rho(x), normalized such that the charge
+of the target remains elementary, which means that the integral over
+rho(x) must be equal to 1. The cross section then will be
+reduced with respect to a point-like target by a factor of F^2,
+a so-called form factor. We have already used this concept in video
+2.2, when we discussed the size of nuclei. In the static case, F is simply the Fourier transform
+of the spatial charged distribution. For small momentum transfers, one can develop the form vectors
+in powers of q times x. If the distribution possess
+spherical symmetry, that is rho(x) is only a function of r,
+and not of the spatial directions separately,
+terms with odd exponent will not conribute. Thus, the form factor measures the mean
+square radius of the charge distribution, <r^2>, which represents
+the size of the distribution. Take, for example, an exponential
+distribution as a function of distance. It leads to the so-called dipolar
+form factor that is shown in the last formula on the right. It is clear that in the case of
+a non-static charge distribution, things get more complicated. First, magnetic interactions come in,
+since the target is moving. Second, the charge distribution
+itself changes during the time represented by the time-like component
+of the four-momentum transfer q_0. By the action of the moving charges
+inside the distribution, electric and magnetic terms will be modified, and
+their functions will in fact be mixed up. We then find the cross section
+given here with the parameter tau, which is the ratio between the momentum
+transfer and the target mass squared, the ratio of the two quantities,
+which characterize this process. We call G_E and G_M the electric and
+magnetic form factors, although the distinction between the two
+obviously depends on the reference frame. In the same sense, one can attribute
+G_E and G_M to the Fourier transforms of the charge and magnetic moment
+distribution of the target particle, even though this interpretation is,
+strictly speaking, only valid in a very
+special reference frame. The form factors G_E and
+G_M of the proton are measured by analyzing the differential cross sections for
+the reaction e- p -> e- p, and separating the terms proportional
+to cosine squared theta and sine squared theta of
+the angular distribution. We observe that G_E and G_M follow
+the dipolar shape, predicted for exponential charge distributions. The parameter Lambda then characterizes
+the size of the distribution, and we find Lambda equal to 0.84 GeV,
+in both cases. The size of the distribution is thus 
+of order 1 fm and the same for electric and
+magnetic form factors. Finding the same distribution for
+both form factors is not a miracle. The quarks inside the nucleon are
+at the origin of both charge and magnetic moment distributions,
+such that we find the same distribution because they're
+caused by the same ingredient. The figure shows representative
+results obtained by Hoffstetter and collaborators at SLAC in the 1960s. The form factors G_E, shown on the left,
+and G_M, shown on the right, for the proton are measured as a function
+of the momentum transfer squared, and extracted from the cross section for
+the elastic electron proton cross section. One finds the dipolar shape,
+G equals one over one plus q^2 over Lambda squared, both squared, with the same
+size perimeter Lambda equal to 0.84 GeV. In the next video, we will see what
+happens when we increase q^2, such that the exchanged photon can excite,
+or even break the nucleon. [MUSIC]

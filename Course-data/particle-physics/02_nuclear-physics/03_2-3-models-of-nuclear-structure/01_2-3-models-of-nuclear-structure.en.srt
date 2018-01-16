@@ -1,0 +1,761 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:11,195 --> 00:00:14,667
+During the second module,
+we are discussing nuclear physics and
+
+3
+00:00:14,667 --> 00:00:15,683
+its application.
+
+4
+00:00:16,800 --> 00:00:20,030
+And in this third video we will introduce
+simple models which allow to better
+
+5
+00:00:20,030 --> 00:00:24,130
+understand the structure of nuclei and
+their properties.
+
+6
+00:00:24,130 --> 00:00:27,230
+After watching this video you
+should be able to describe
+
+7
+00:00:27,230 --> 00:00:29,230
+these models of nuclear structure.
+
+8
+00:00:29,230 --> 00:00:33,774
+Distinguish which features each model
+describes and where it's limits are and
+
+9
+00:00:33,774 --> 00:00:38,339
+in particular know the so-called magic
+nuclei and their special properties.
+
+10
+00:00:40,209 --> 00:00:43,452
+For reasons discussed in the previous
+videos we know quite well
+
+11
+00:00:43,452 --> 00:00:47,610
+the strong force acting between quarks
+inside the protons and neutrons,
+
+12
+00:00:47,610 --> 00:00:50,420
+thanks to quantum chromodynamics.
+
+13
+00:00:50,420 --> 00:00:54,020
+A complete theory of the nuclear
+force between these based on first
+
+14
+00:00:54,020 --> 00:00:56,420
+principles of QCD however does not exist.
+
+15
+00:00:57,600 --> 00:01:00,595
+Since we do not know how to calculate
+the properties of the nuclear force
+
+16
+00:01:00,595 --> 00:01:04,890
+ab initio it is difficult to apprehend
+nuclear structure theoretically.
+
+17
+00:01:06,060 --> 00:01:09,650
+Consequently the models of nuclear
+structure are rather qualitative.
+
+18
+00:01:09,650 --> 00:01:12,502
+Most precede QCD itself,
+
+19
+00:01:12,502 --> 00:01:17,344
+the models of nuclear structure
+are rather qualitative.
+
+20
+00:01:17,344 --> 00:01:21,860
+However, one can of course base model
+building on experimental facts and
+
+21
+00:01:21,860 --> 00:01:23,590
+on physical intuition.
+
+22
+00:01:23,590 --> 00:01:27,470
+Each of these models presented in the
+following will concentrate on a particular
+
+23
+00:01:27,470 --> 00:01:30,710
+aspect of nuclear structure and
+nuclear properties.
+
+24
+00:01:30,710 --> 00:01:34,230
+So let us start with the most simple one
+which is called the liquid drop model.
+
+25
+00:01:35,320 --> 00:01:41,670
+In this model, which has been the first phenomenological
+model to describe the binding energy and
+
+26
+00:01:41,670 --> 00:01:46,500
+size of nuclei, the quantum properties
+of nucleons are largely ignored or
+
+27
+00:01:46,500 --> 00:01:48,480
+taken into account in an ad hoc way.
+
+28
+00:01:49,810 --> 00:01:52,590
+The model describes the nucleus
+as a compact packing of
+
+29
+00:01:52,590 --> 00:01:53,920
+incompressible nucleons.
+
+30
+00:01:54,990 --> 00:01:59,010
+This gives a total nuclear volume
+proportional to the number of nuclei,
+
+31
+00:01:59,010 --> 00:02:00,270
+as we have observed.
+
+32
+00:02:01,370 --> 00:02:04,600
+The mass density of nuclei is
+approximately independent of A.
+
+33
+00:02:06,830 --> 00:02:09,680
+This considerations lead to
+imagine the nucleus like
+
+34
+00:02:09,680 --> 00:02:11,730
+an incompressible drop of liquid.
+
+35
+00:02:11,730 --> 00:02:14,180
+The molecules of
+the liquid are the nuclei.
+
+36
+00:02:14,180 --> 00:02:19,870
+The Van der Waals force is replaced by nuclear force.
+
+37
+00:02:19,870 --> 00:02:24,800
+The binding energy ∆M or
+BE on this slide is equal to
+
+38
+00:02:24,800 --> 00:02:29,690
+the mass difference between the nucleus
+and the sum of it's nucleons.
+
+39
+00:02:29,690 --> 00:02:33,120
+It is the energy won by the bound
+system and thus negative for
+
+40
+00:02:33,120 --> 00:02:34,200
+stable nuclear states.
+
+41
+00:02:35,320 --> 00:02:39,460
+It is principally proportional to A,
+i.e. to the number of nuclei or
+
+42
+00:02:39,460 --> 00:02:40,740
+the nuclear volume.
+
+43
+00:02:42,010 --> 00:02:44,920
+This is due to the fact that each nucleon
+
+44
+00:02:44,920 --> 00:02:48,480
+mostly interacts with
+it's nearest neighbors.
+
+45
+00:02:48,480 --> 00:02:53,680
+But the nucleons on the outer boundary have
+less neighbors and are less tightly bound.
+
+46
+00:02:53,680 --> 00:02:56,040
+This is taken into account by a term
+
+47
+00:02:57,440 --> 00:03:01,344
+proportional to the nuclear
+surface A to power two-thirds.
+
+48
+00:03:02,410 --> 00:03:05,660
+It's always analogous to the surface
+tension of a liquid drop.
+
+49
+00:03:05,660 --> 00:03:07,690
+It reduce the binding energy, per nucleon,
+
+50
+00:03:07,690 --> 00:03:10,780
+and it makes the binding
+energy somewhat less negative.
+
+51
+00:03:12,090 --> 00:03:13,530
+Hence it has a positive sign.
+
+52
+00:03:14,550 --> 00:03:17,160
+This surface term is more important for
+heavy than for
+
+53
+00:03:17,160 --> 00:03:20,220
+light nuclei,
+which explains their less tight binding.
+
+54
+00:03:21,470 --> 00:03:26,010
+The third term takes into account
+the energy of Coulomb repulsion
+
+55
+00:03:26,010 --> 00:03:27,290
+between protons.
+
+56
+00:03:27,290 --> 00:03:30,740
+This term also decreases the absolute
+value of the binding energy and
+
+57
+00:03:30,740 --> 00:03:32,354
+thus has are positive side.
+
+58
+00:03:35,073 --> 00:03:38,793
+Up to now the considerations
+are purely classical but
+
+59
+00:03:38,793 --> 00:03:42,850
+corrections inspired by
+quantum effects are important.
+
+60
+00:03:43,900 --> 00:03:46,390
+Like nuclei with a equal
+number of protons and
+
+61
+00:03:46,390 --> 00:03:50,260
+neutrons, that is to say Z=N,
+are particularly stable.
+
+62
+00:03:50,260 --> 00:03:52,190
+They have a more negative binding energy.
+
+63
+00:03:53,330 --> 00:03:59,000
+Also there are more stable even-even
+nuclei and few stable odd-odd nuclei.
+
+64
+00:03:59,000 --> 00:04:01,807
+Odd and even refers to the number
+of protons and neutrons.
+
+65
+00:04:01,807 --> 00:04:05,950
+One thus adds two
+empirical terms to obtain
+
+66
+00:04:05,950 --> 00:04:08,080
+what is called
+the Bethe-Weizsacker formula.
+
+67
+00:04:09,250 --> 00:04:13,630
+The asymmetry terms reduces the binding
+energy for N not equal to Z and
+
+68
+00:04:13,630 --> 00:04:19,280
+the pairing term has a positive sign for
+odd-odd nuclei which are less stable.
+
+69
+00:04:19,280 --> 00:04:23,160
+For even-even nuclei the sign is negative and
+the nuclei more stable.
+
+70
+00:04:24,400 --> 00:04:28,560
+For all other combinations, i.e. for
+odd A, the last term is zero.
+
+71
+00:04:30,740 --> 00:04:33,710
+Once the coefficients of
+the terms a_1 through a_4
+
+72
+00:04:33,710 --> 00:04:36,530
+are adjusted to match nuclear masses,
+
+73
+00:04:36,530 --> 00:04:42,340
+the formula describes rather accurately the binding
+of sufficiently heavy nuclei.
+
+74
+00:04:42,340 --> 00:04:45,060
+It is less accurate for light nuclei,
+
+75
+00:04:45,060 --> 00:04:50,300
+and it fails especially to match
+the exceptionally large binding energy
+
+76
+00:04:50,300 --> 00:04:52,410
+of the very stable He-4 nucleus.
+
+77
+00:04:53,870 --> 00:04:58,060
+However, we will use it extensively
+to qualitatively understand
+
+78
+00:04:58,060 --> 00:05:00,469
+the phenomena of fusion and fission.
+
+79
+00:05:04,208 --> 00:05:09,125
+An approach more compatible with
+the quantum nature of subatomic particles
+
+80
+00:05:09,125 --> 00:05:11,510
+is the Fermi gas model.
+
+81
+00:05:11,510 --> 00:05:14,940
+In this model, the nucleus is
+described as a gas of free protons and
+
+82
+00:05:14,940 --> 00:05:20,440
+neutrons, confined to the nuclear volume
+by a potential of unspecified origin.
+
+83
+00:05:20,440 --> 00:05:23,780
+The nuclei then occupy
+quantized energy levels,
+
+84
+00:05:23,780 --> 00:05:26,470
+the potential is modelled
+as a spherical well.
+
+85
+00:05:26,470 --> 00:05:28,740
+It's size represents
+the size of the nucleus.
+
+86
+00:05:28,740 --> 00:05:31,950
+It's depth is adjusted to obtain
+the right binding energy.
+
+87
+00:05:33,170 --> 00:05:35,490
+The difference between
+the ground states of protons and
+
+88
+00:05:35,490 --> 00:05:39,430
+neutrons is due to the Coulomb potential
+which is only present for protons and
+
+89
+00:05:39,430 --> 00:05:41,455
+decreases the depth of a potential well.
+
+90
+00:05:41,455 --> 00:05:48,880
+Since n and p are fermions there can be only two per
+energy level with opposite spin.
+
+91
+00:05:50,230 --> 00:05:53,540
+The last filled energy
+level defines the energy
+
+92
+00:05:53,540 --> 00:05:56,000
+which refers to the least
+tightly bound nucleons.
+
+93
+00:05:58,070 --> 00:06:00,900
+So how many nucleons can
+we store in a given volume?
+
+94
+00:06:00,900 --> 00:06:03,120
+It's the Schrödinger equation
+that gives us the answer.
+
+95
+00:06:04,180 --> 00:06:07,680
+We consider the nucleons to be
+confined to a square box with side a.
+
+96
+00:06:09,030 --> 00:06:12,550
+The solution can then be factorized with n_x, n_y,
+
+97
+00:06:12,550 --> 00:06:16,990
+and n_z positive integer numbers and
+a normalization factor a.
+
+98
+00:06:16,990 --> 00:06:18,930
+The phase space is thus quantified.
+
+99
+00:06:20,520 --> 00:06:23,740
+Setting E equal to p^2/2m
+
+100
+00:06:23,740 --> 00:06:27,710
+one sees that k_i are the wave
+numbers equal to the momentum
+
+101
+00:06:27,710 --> 00:06:29,690
+along each axis in natural units.
+
+102
+00:06:32,160 --> 00:06:36,740
+So now we can count states,
+let us consider momentum space.
+
+103
+00:06:36,740 --> 00:06:41,470
+Due to the boundary conditions, for
+each elementary cube of side pi/a
+
+104
+00:06:41,470 --> 00:06:46,420
+there is a single point which is compatible
+with the Schrödinger equation.
+
+105
+00:06:46,420 --> 00:06:49,880
+The number of viable solutions
+with the wave number between k and
+
+106
+00:06:49,880 --> 00:06:55,410
+k + dk is thus the ratio of
+the corresponding spherical shell and
+
+107
+00:06:55,410 --> 00:06:59,020
+the volume element, (pi/a)^3rd.
+
+108
+00:06:59,020 --> 00:07:01,740
+The volume of the box is a cube but
+
+109
+00:07:01,740 --> 00:07:05,260
+we only consider 1/8,
+since all k_i must be positive.
+
+110
+00:07:06,690 --> 00:07:11,430
+In the grand state all levels up to
+the maximum momentum are filled.
+
+111
+00:07:11,430 --> 00:07:16,860
+Integrating up to the Fermi mo,entum one does obtains the
+number of states which can fill the volume.
+
+112
+00:07:16,860 --> 00:07:19,740
+One must of course take into
+account the factor of two for
+
+113
+00:07:19,740 --> 00:07:23,290
+the two spin orientations,
+as well as the nuclear volume,
+
+114
+00:07:23,290 --> 00:07:27,950
+which is 4 (pi/3) r_0^3 A.
+
+115
+00:07:29,970 --> 00:07:33,020
+The energy corresponding
+to the maximum momentum is,
+
+116
+00:07:33,020 --> 00:07:34,700
+what is called a Fermi energy, E_F.
+
+117
+00:07:34,700 --> 00:07:38,300
+It is approximately 33 MeV independent of A.
+
+118
+00:07:40,560 --> 00:07:44,870
+The result is in fact also independent of
+the shape of the confinement volume.
+
+119
+00:07:46,410 --> 00:07:49,370
+The value of the Fermi energy
+means that the nucleons
+
+120
+00:07:49,370 --> 00:07:51,410
+are non relativistic
+inside the nucleus but
+
+121
+00:07:51,410 --> 00:07:56,560
+still move at a considerable
+velocity, ß equal to roughly 0.4.
+
+122
+00:07:56,560 --> 00:07:59,980
+The nucleus is thus a very
+dynamic environment indeed.
+
+123
+00:08:01,460 --> 00:08:04,350
+The model also explains
+in a rather natural way
+
+124
+00:08:04,350 --> 00:08:07,980
+the asymmetry term of the Bethe-Weizsäcker equation.
+
+125
+00:08:07,980 --> 00:08:12,662
+Given E_F the Fermi energy and
+the binding energy of the last nucleon of
+
+126
+00:08:12,662 --> 00:08:17,694
+roughly 8 MeV we obtain a potential
+depth V_0 of about 40 MeV.
+
+127
+00:08:21,790 --> 00:08:24,814
+In analogy with the atomic shell model,
+a shell model for
+
+128
+00:08:24,814 --> 00:08:26,580
+the nucleus can be constructed.
+
+129
+00:08:28,010 --> 00:08:33,230
+The orbital quantum number n describes
+the energy level of the nuclei.
+
+130
+00:08:33,230 --> 00:08:38,475
+For each n, there are n levels of
+orbital angular momentum l and
+
+131
+00:08:38,475 --> 00:08:44,400
+2l+1 subshells of the projection
+of l on an arbitrary axis.
+
+132
+00:08:44,400 --> 00:08:47,040
+These subshells are degenerate in energy
+
+133
+00:08:47,040 --> 00:08:49,530
+because of the rotational symmetry
+of the Coulomb potential.
+
+134
+00:08:49,530 --> 00:08:57,317
+There are two spin states per subshell
+with m_s equal to ±1/2.
+
+135
+00:08:57,317 --> 00:09:06,010
+A state can thus be described by four
+quantum numbers, n, l, m_l, and m_s.
+
+136
+00:09:06,010 --> 00:09:09,730
+The nuclei with completely filled
+shells are particularly stable,
+
+137
+00:09:09,730 --> 00:09:15,460
+which explains the notion of
+magic numbers, which are Z or
+
+138
+00:09:15,460 --> 00:09:19,459
+N equal to 2, 8, 20, 28,
+50, 82, 126, and so forth.
+
+139
+00:09:20,880 --> 00:09:25,310
+Isotopes with shells of both protons and
+neutrons completely filled,
+
+140
+00:09:25,310 --> 00:09:30,860
+i.e. with Z and N equal to a magic
+number are even more stable.
+
+141
+00:09:30,860 --> 00:09:36,568
+Example of these doubly
+magic nuclei are He-4,
+
+142
+00:09:36,568 --> 00:09:41,184
+O-16, Ca-40, Ca-48,
+
+143
+00:09:41,184 --> 00:09:45,441
+Ni-48, Ni-56 and PB-208.
+
+144
+00:09:45,441 --> 00:09:50,840
+One of the strong points of the shell
+model is its prediction of nuclear spins.
+
+145
+00:09:50,840 --> 00:09:52,390
+According to the model p and
+
+146
+00:09:52,390 --> 00:09:57,940
+n fill up the levels independently, two in
+each subshell due to the Pauli principle.
+
+147
+00:09:57,940 --> 00:10:01,490
+In this way, the last or valence nucleon,
+
+148
+00:10:01,490 --> 00:10:05,040
+which does not have a pair, will
+determine the nuclei spin.
+
+149
+00:10:05,040 --> 00:10:09,990
+The immediate consequence is that
+even-even nuclei should have spin 0 in
+
+150
+00:10:09,990 --> 00:10:11,530
+agreement with observation.
+
+151
+00:10:12,670 --> 00:10:17,160
+However the share model fails to
+predict the spin of odd-odd nuclei
+
+152
+00:10:17,160 --> 00:10:20,260
+since it does not include interactions
+between protons and neutrons.
+
+153
+00:10:21,980 --> 00:10:23,830
+When the correct spin is predicted,
+
+154
+00:10:23,830 --> 00:10:27,130
+the model also gets the nuclear
+magnetic moments right,
+
+155
+00:10:27,130 --> 00:10:32,200
+which is important for nuclear magnetic
+resonance phenomena for example.
+
+156
+00:10:32,200 --> 00:10:35,480
+We will talk about that when we treat
+applications of nuclear physics.
+
+157
+00:10:36,790 --> 00:10:40,780
+It is obvious that more sophisticated
+nuclear models than those
+
+158
+00:10:40,780 --> 00:10:43,630
+we have treated here can be constructed.
+
+159
+00:10:43,630 --> 00:10:47,060
+But that goes beyond the scope
+of this introductory course.
+
+160
+00:10:47,060 --> 00:10:51,059
+In the next video, we will rather go over
+the properties of unstable nuclei and
+
+161
+00:10:51,059 --> 00:10:52,520
+their radioactive decays.
+
+162
+00:10:52,520 --> 00:10:59,029
+[MUSIC]

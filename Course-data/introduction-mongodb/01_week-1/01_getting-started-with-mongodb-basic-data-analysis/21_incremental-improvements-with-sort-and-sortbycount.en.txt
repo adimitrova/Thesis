@@ -1,0 +1,17 @@
+You can get a clearer picture of
+this data if we sort the results. Sort is just another pipeline stage. As with group we identify
+the stage by its name $sort. The expression used to define
+the sort is a dictionary. This document specify the field or
+fields we want to sort on. Use 1 to indicate you want
+to sort in ascending order. Use minus 1 for descending. In this pipeline,
+the dollar group stage emits documents that contain just two fields,
+_id and count. We are sorting on the count field. Let's run this. Now in scanning through these results,
+we can get a sense for the variety and relative frequency of
+language combinations used. So, what we've done here is
+grouped in order to count and then sorted on the count. This is a very common
+sequence of operations. So common that the aggregation
+framework actually includes a single stage
+that supports this idiom. It's called "sort by count". So, we can simplify this
+pipeline to just this. The thing I love about this is that we're
+able to perform an important operation with very little effort. There are a number of examples
+with this type of power throughout the aggregation framework.

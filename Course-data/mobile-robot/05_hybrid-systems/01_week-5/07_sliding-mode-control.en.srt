@@ -1,0 +1,394 @@
+1
+00:00:00,012 --> 00:00:04,028
+Last time we saw that not only we have to 
+worry about Zeno. 
+
+2
+00:00:04,028 --> 00:00:09,111
+This zeno problem or the zeno phenomenon 
+comes in two different flavors. 
+
+3
+00:00:09,111 --> 00:00:14,737
+And one thing that I stated was that type 
+1 zeno which is infinitely many switches 
+
+4
+00:00:14,737 --> 00:00:20,082
+in zero time or in one timing sense here 
+represented by this system where. 
+
+5
+00:00:20,082 --> 00:00:26,036
+Again, if I have x here, and time here, 
+and I start positive, then x is going to 
+
+6
+00:00:26,036 --> 00:00:29,515
+be -1 until x becomes, just, just 
+negative. 
+
+7
+00:00:29,515 --> 00:00:35,091
+And then, we're going to get this 
+infinitely many switches going on right 
+
+8
+00:00:35,091 --> 00:00:37,160
+there. 
+that's type 1. 
+
+9
+00:00:37,160 --> 00:00:41,872
+Well, it turns out, that we can actually 
+remedy this. 
+
+10
+00:00:41,872 --> 00:00:47,339
+And the reason for it is, you know what 
+is very, very clear what should happen. 
+
+11
+00:00:47,339 --> 00:00:52,784
+The system shouldn't grind to a halt. 
+It should just nicely keep continuing on 
+
+12
+00:00:52,784 --> 00:00:55,182
+like this 
+Like x is equal to 0. 
+
+13
+00:00:55,182 --> 00:01:01,151
+So how do I take this intuitive notion of 
+that x should just keep saying and be 
+
+14
+00:01:01,151 --> 00:01:05,122
+equal to 0 and make that mathematically 
+sound. 
+
+15
+00:01:05,122 --> 00:01:10,928
+What, what's the topic of today's 
+lecture, and this construction by which 
+
+16
+00:01:10,928 --> 00:01:17,136
+we can continue beyond the zeno point in 
+the type 1 zeno system, using something 
+
+17
+00:01:17,136 --> 00:01:20,088
+that's known as. 
+Sliding mode control. 
+
+18
+00:01:20,088 --> 00:01:25,250
+So, let's be a little bit general here. 
+Let's say that I have one system, x dot 
+
+19
+00:01:25,250 --> 00:01:29,030
+is f1(x) and then I have a switching 
+surface, g(x). 
+
+20
+00:01:29,030 --> 00:01:33,772
+And when g is negative, I switch to f 
+two, and when it becomes positive I 
+
+21
+00:01:33,772 --> 00:01:37,963
+switch back to f1. 
+So here it is, here's my switching 
+
+22
+00:01:37,963 --> 00:01:41,455
+surface, g(x) = 0, that's where the 
+action is. 
+
+23
+00:01:41,455 --> 00:01:47,254
+Now on this side I'm going to be using 
+f1, and da, da, da, da, da, da, da, when 
+
+24
+00:01:47,254 --> 00:01:51,924
+I hit this point, well let's say that f1 
+is pointing inwards. 
+
+25
+00:01:51,924 --> 00:01:56,012
+Well on this part of the world I am going 
+to be using f2. 
+
+26
+00:01:56,012 --> 00:01:59,644
+Well, let's say that f2 here points 
+outwards. 
+
+27
+00:01:59,644 --> 00:02:04,380
+This means that when I hit this point 
+again, I grind to a halt. 
+
+28
+00:02:04,380 --> 00:02:10,615
+so this is really what's going on is that 
+both of the vector fields both f1 and f2 
+
+29
+00:02:10,615 --> 00:02:16,029
+point in the wrong direction. 
+So f1 points over in to the f2 territory. 
+
+30
+00:02:16,029 --> 00:02:21,302
+f2 points over in the f1 territory, but 
+again it's clear what should really 
+
+31
+00:02:21,302 --> 00:02:24,267
+happen. 
+We should somehow slide along the 
+
+32
+00:02:24,267 --> 00:02:28,255
+switching surface here. 
+That's clear because f1 and f2 are 
+
+33
+00:02:28,255 --> 00:02:34,056
+pulling in different directions and this 
+is why it's known as sliding mode control 
+
+34
+00:02:34,056 --> 00:02:38,502
+because what we do is we slide along the 
+switching surface. 
+
+35
+00:02:38,502 --> 00:02:42,602
+So let's see how to actually make this 
+sliding happen. 
+
+36
+00:02:42,602 --> 00:02:48,687
+Again, I have g positive on this side, g 
+negative on this side, and the switching 
+
+37
+00:02:48,687 --> 00:02:52,887
+surface is g = 0. 
+f2 wants to drive me in this direction, 
+
+38
+00:02:52,887 --> 00:02:56,112
+and f1 wants to drive me in this 
+direction. 
+
+39
+00:02:56,112 --> 00:03:01,402
+I want to slide along the surface. 
+That should be the right solution. 
+
+40
+00:03:01,402 --> 00:03:05,977
+Well first of all what are the conditions 
+under which I'm going to slide. 
+
+41
+00:03:05,977 --> 00:03:10,557
+Well f2 needs to point in the positive 
+direction of g because on this side g is 
+
+42
+00:03:10,557 --> 00:03:13,257
+positive. 
+So what I'm going to do is I'm going to 
+
+43
+00:03:13,257 --> 00:03:18,487
+find this thing, the vector that's normal 
+to the switching surface and it turns out 
+
+44
+00:03:18,487 --> 00:03:23,871
+that luckily for us this is the gradient. 
+The partial derivative of g with respect 
+
+45
+00:03:23,871 --> 00:03:27,616
+to x, transpose. 
+And now I take what's called the inner 
+
+46
+00:03:27,616 --> 00:03:30,703
+product, so, with this thing and this 
+thing. 
+
+47
+00:03:30,703 --> 00:03:33,892
+So the inner product is just a 
+multiplication. 
+
+48
+00:03:33,892 --> 00:03:39,282
+and if this inner product is positive, it 
+means that this one and this one are 
+
+49
+00:03:39,282 --> 00:03:42,039
+pointing. 
+in the same direction. 
+
+50
+00:03:42,039 --> 00:03:48,046
+I also take the inter-product with this 
+and that, and if the inter-product is 
+
+51
+00:03:48,046 --> 00:03:54,920
+negative, it means that they're pointing 
+in, in different directions. So what this 
+
+52
+00:03:54,920 --> 00:03:58,778
+means is I actually have a condition for 
+sliding. 
+
+53
+00:03:58,778 --> 00:04:03,113
+I need dg the x, where this is actually 
+dg, dx1, blah, blah, blah, blah, blah, 
+
+54
+00:04:03,113 --> 00:04:11,568
+dg, the xn a roll vector like this times 
+f1, well f11 to f1n, 'cause these are all 
+
+55
+00:04:11,568 --> 00:04:16,365
+vectors. 
+If this is negative, that is code for 
+
+56
+00:04:16,365 --> 00:04:22,967
+having this arrow and this arrow pointing 
+in different directions. 
+
+57
+00:04:22,967 --> 00:04:29,542
+So, f1 points into negative g territory. 
+f2 points into positive g territory. 
+
+58
+00:04:29,542 --> 00:04:35,237
+if this happens at the switching surface, 
+then we have sliding. 
+
+59
+00:04:35,237 --> 00:04:41,697
+And, one way we can think about this 
+object here, it's the derivative of g, in 
+
+60
+00:04:41,697 --> 00:04:46,067
+the direction f1. 
+And this is the derivative of g in the 
+
+61
+00:04:46,067 --> 00:04:50,255
+direction f2, and there's actually a 
+fancy term for this. 
+
+62
+00:04:50,255 --> 00:04:55,677
+it's called the Lie derivative. 
+So the derivative of G in the direction 
+
+63
+00:04:55,677 --> 00:05:00,675
+f, we're going to write this Lfg which is 
+simply code for dg/dx * f. 
+
+64
+00:05:00,675 --> 00:05:08,160
+So when I write Lfg, this is what I mean. 
+It's the lead derivative of g in the 
+
+65
+00:05:08,160 --> 00:05:13,887
+direction of f. 
+So, using our slightly fancier notation 
+
+66
+00:05:13,887 --> 00:05:18,867
+we know that sliding occurs. 
+Meaning we should slide if the 
+
+67
+00:05:18,867 --> 00:05:24,142
+derivative, g, in the f1 direction is 
+negative, which, again, means this and 
+
+68
+00:05:24,142 --> 00:05:29,417
+this have different directions, and the 
+derivative of g in the f2 direction is 
+
+69
+00:05:29,417 --> 00:05:35,930
+positive, which means this and this have 
+the same signs meaning they point in the 
+
+70
+00:05:35,930 --> 00:05:41,409
+same, in the same directions. 
+So this actually tells us whether or not 
+
+71
+00:05:41,409 --> 00:05:47,290
+we have sliding and wallah, we actually 
+have a test for type 1 zeno that says 
+
+72
+00:05:47,290 --> 00:05:53,152
+that sliding occurs. 
+If Lf1g is negative and Lf2g is positive, 
+
+73
+00:05:53,152 --> 00:06:01,107
+and this is at g(x) = 0 so this is along 
+the switching surface when we're inside 
+
+74
+00:06:01,107 --> 00:06:06,070
+the different mode regime. 
+We don't have to worry about this. 
+
+75
+00:06:06,070 --> 00:06:10,141
+But on the switching surface, 
+this our zeno type 1 probe that we have 
+
+76
+00:06:10,141 --> 00:06:14,724
+to use to see whether or not we slide. 
+And this nice because this is something 
+
+77
+00:06:14,724 --> 00:06:18,893
+that's easily implemented. 
+We still don't know what actually happens 
+
+78
+00:06:18,893 --> 00:06:21,833
+beyond the zeno point, meaning, how do we 
+slide. 
+
+79
+00:06:21,833 --> 00:06:23,906
+And that is going to be the topic of next 
+lecture. 

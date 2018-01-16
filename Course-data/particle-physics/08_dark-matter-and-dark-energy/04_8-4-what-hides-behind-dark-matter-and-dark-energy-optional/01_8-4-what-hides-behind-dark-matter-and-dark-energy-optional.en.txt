@@ -1,0 +1,136 @@
+[MUSIC]
+>> Here we are with the last video of the last module of our
+introductory course on particle physics. And in this last video, we will 
+go into some more depth on the preceding discussion of
+dark energy and dark matter. To do that, we have invited ourselves 
+to a colleague from the theoretical physics department 
+of University of Geneva. Let me present to you Ruth Durrer,
+professor of theoretical physics who is a specialist on cosmology, the physics subject which remains most concerned with these two phenomena,
+thus far inaccessible to experimentation at 
+existing accelerators. So, at the end of this video, 
+you will understand a bit better how dark matter and dark energy act on 
+the universe that surrounds us. So, Ruth, I think there is little doubt on
+the existence of dark matter, is there? Or am I mistaken, are there
+still people who believe that dark matter does not exist? >> Yes, there are such people. Dark matter, as you have already heard 
+in the preceding videos, has been confirmed by only one
+interaction, which is gravity, and by no other, so they ask 
+the question: should our theory of gravitation – to discover
+dark matter, one only needs Newtonian gravitation – should it be
+modified at large distance scales. There are people who have tried that,
+and who were able to explain, for example, the fact that the rotational curve of 
+galaxies does not descend like one would expect, if
+gravitation obeys Kepler’s law. But even if one can modify gravitation such that one obtains
+flat rotational curves also, there is still a lot more
+confirmation for the existence of dark matter. >> Like gravitational lenses…
+>> Exactly. >> …the motion of galaxies, and their interactions, like the 
+Bullet Cluster for example… >> Exactly. And if you want to explain all that by
+modifying the theory of gravitation, you can for example do this
+with what is called TeVeS, but it is a horribly complicated theory and
+one makes hypotheses which are much more complex and non-minimal, 
+than to just add a particle. So, I would say that 99% of the scientists are 
+convinced that dark matter is what it takes and not a 
+modified theory of gravity. >> And in that case, there should be
+a particle which constitutes dark matter, and one should be able to see
+its interactions, either among themselves, as we try with AMS, or with normal matter
+as out colleagues try in Zurich, for example, 
+in their underground experiments, or by the artificial creation of this matter,
+at the LHC for example. So, up to now, we have not
+succeeded to do so, but it is never too late to try. So, if such a particle existed, what would be the implication 
+for the Standard Model of the existence of an additional particle,
+which we need to explain this, don’t we? >> Of course, such a particle is beyond the 
+Standard Model of particle physics but there are plenty of hypotheses 
+on the existence of such a particle. For example, in supersymmetry. one expects that there be a
+stable supersymmetric particle. Or one can add a heavy neutrino,
+to explain, for example, the generation of quarks and
+leptons in the universe and this could, at the same time, 
+also play the role of dark matter. A low mass neutrino does not work,
+because it has too large velocities to be confined in galaxies, etc. So, we need a particle
+with a minimal mass of at least some kiloelectronvolts. Standard candidates rather have
+some hundred GeV of mass. But what is the interaction of 
+this particle with normal matter? Of course, we do not know. If it is comparable to weak interactions,
+in the coming years one should discover it either at LHC,
+or with direct or indirect interactions. But if the interaction
+is much weaker, if we had, for example 
+a gravitino, which interacts via the gravitational force, we will not discover it
+by these experiments. >> But we are still in good hope
+that during our own active lifetime we will know of what is consists. >> Yes, I do hope so. It is one of these problems, which are
+with us since 70-80 years. >> Since Zwicky, yes. >> Yeah. 
+>> So, on the contrary, I have much less hope as far as
+dark energy is concerned, no? So, can you share with us your 
+vision of dark matter. First of all, according to you, what is it? >> I don’t know. This is the honest answer, we must 
+leave somethings to do for young people, to explain to us. I don’t know what dark energy is. So, I can tell you that current
+data are in good agreement with the assumption, that dark energy is
+just a cosmological constant. But I will talk a little about how one has discovered the existence 
+of this dark energy. One has seen that the universe is 
+currently in an accelerated expansion, and not as one had thought, that due to gravitation
+the expansion would slow down more and more. In fact, one has found that,
+since a while, this slowing down has reversed
+and has become an acceleration. And this acceleration, one can explain it, if there is a component
+practically with negative gravity. So, we need, for example, something which has a very strong pressure, a 
+negative pressure. Negative energy density is not
+possible according to the Friedmann equations which are a consequence of the 
+Einstein equations… >> Well, we have scratched the surface
+of these equations a little bit earlier in the course, so, if you are no more familiar with this, please watch again the previous video, which 
+talks just about the Friedmann equation. So, if the famous lambda
+is the only thing which exists, this would be a property of our universe, which was 
+created together with our universe, wouldn’t it? So, by chance, well,
+it has the value it has, and we must live with it, no? >> It is more complicated than that. The problem is that this lambda,
+this cosmological constant, must have changed, for example, if the interactions of the universe
+passed through a phase transition. >> Yes. Like inflation, to just name one. >> For example, during inflation. And during that transition,
+the cosmological constant has changed its value, which was 10 to the power 120 greater that the value 
+we measure today. So, this value requires an
+enormous fine tuning. >> I.e. of the initial conditions
+to get there. >> And most of all this
+is not what we call a « natural » fine tuning in the sense that in 
+field theory this constant is not 
+protected from corrections. If one modifies the theory a litle bit,
+this constant changes enormously, etc. So, from the point of view of
+a quantum field theory, such a constant is very, very 
+unnatural, unexpected, bizarre. >> So, all of this requires effectively that his field is a quantum field, no? Is it really necessary 
+that this be so, or could it not simply be
+a classical field, which does not have a quantum representation,
+which does not exist in a theory at small scales,
+does not exist or is not necessary? >> Well, the cosmological constant 
+itself is not a field, but it is an effective constant, which comes from
+the quantisation of all other fields. And that the electron is well
+represented by a quantum field, or the quarks, I believe that you
+have discussed that in your course. So you cannot say that at very small scales,
+this is not the case. I would even say that usually
+all fields, even effective ones, even non-fundamental ones, can be
+described by quantum fields, that they exhibit a quantum nature
+if one talks about very small excitations. >> Like phonons in a solid,
+for example. >> Exactly, like phonons
+in crystals. But here, we have two explanations, which are a little bit more satisfactory, but more
+complicated and also not very attractive. One is, one adds a scalar field, which is not constant but nearly constant. And with that, if the field
+is sufficiently constant, one can explain dark energy. But the difference to a cosmological
+constant becomes more and more diffuse there. Another one is that one changes the
+theory of gravitation at large scales. You see, one has tested Einstein’s
+gravitation for distances beyond a tenth of a millimetre, a hundredth of a millimetre, 
+up to the size of galaxies, and maybe at the distance scale of the universe
+one must add modifications. This can be done, there are modifications,
+for example concerning the graviton, which can have a very small mass. This mass must also 
+be fine tuned. But at least the quantum corrections,
+if one develops a quantum theory of gravitation, are small,
+they are logarithmic corrections, which do not blow up everything, when one describes the facts by a quantum theory,
+like the cosmological constant does. >> I believe that it is, however, correct to
+say that this form of energy is not easily amenable to human experimentation, is it? This is a phenomenon, which really only exists 
+at a cosmological scale, and which stays confined to this domain. >> If it is a cosmological constant, it is accessible only by
+gravitational forces. All other forces are not 
+sensitive to a constant difference in energy. But, if it is not a 
+cosmological constant, but if it is a modification,
+lets say, take this example, a modification of gravity,
+one should be able to also see it on other scales,
+with very high precision experiments, etc. Or, if, for example, the 
+graviton had a mass, this would mean that the graviton 
+has five helicities and not only two. Ans maybe with certain experiments,
+still gravitational ones, one would be able to excite these other 
+helicities of the graviton. So, there would be this other
+possibility of see that. >> Experimental possibility. >> Yes. But I would say also, however, that a cosmological experiment is
+a human experiment. So, this is not to scale,
+but the scale tested at LHC is as far from the
+human scale as the cosmological scale. >> There, I admit, that is true. >> You agree, Martin. >> OK. So, thank you very much for this interview. I think that it is very important also to indicate like an open window
+towards the future of our profession. Because the course does not stop here. It invites you to stay interested
+in the forthcoming experimental as well as 
+theoretical progress in the field. So, I invite you to have eyes and ears
+open, for what will happen, and for what
+will probably again revolutionise our field in the coming decades. Thank you for your attention. [MUSIC]

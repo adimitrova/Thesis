@@ -1,0 +1,225 @@
+1
+00:00:00,000 --> 00:00:06,286
+[MUSIC]
+
+2
+00:00:06,286 --> 00:00:09,360
+We have just covered a lot
+of benefits of sharing data.
+
+3
+00:00:09,360 --> 00:00:13,460
+But there are also multiple challenges,
+or obstacles
+
+4
+00:00:13,460 --> 00:00:18,340
+that can effect researchers ability or
+willingness to share their data.
+
+5
+00:00:18,340 --> 00:00:22,640
+Let's now go over the top five of several
+known challenges to data sharing.
+
+6
+00:00:23,930 --> 00:00:28,605
+Number one, it takes time and
+effort to make data shareable.
+
+7
+00:00:29,690 --> 00:00:34,000
+Making data publicly available
+can be a labor intensive and
+
+8
+00:00:34,000 --> 00:00:35,360
+time consuming process.
+
+9
+00:00:36,680 --> 00:00:43,053
+In a 2011 survey of researchers,
+over 50% sited insufficient time.
+
+10
+00:00:43,053 --> 00:00:48,830
+And 40% sited lack of funding, as their
+reasons for not making data available.
+
+11
+00:00:50,980 --> 00:00:56,120
+Number 2, perceived risks from
+loss of control of the data.
+
+12
+00:00:57,120 --> 00:00:58,330
+By sharing data,
+
+13
+00:00:58,330 --> 00:01:03,290
+researchers may believe they're
+relinquishing control over their data.
+
+14
+00:01:03,290 --> 00:01:06,830
+This can raise concerns
+that they may be scooped or
+
+15
+00:01:06,830 --> 00:01:10,060
+another researcher could
+discover errors in their data,
+
+16
+00:01:10,060 --> 00:01:14,640
+could reach contradictory conclusions
+using the data, or misuse the data.
+
+17
+00:01:15,730 --> 00:01:19,900
+Number 3, data contained confidential or
+sensitive information.
+
+18
+00:01:20,950 --> 00:01:26,130
+Data collected from human subjects may
+contain protected health information,
+
+19
+00:01:26,130 --> 00:01:30,870
+or personally identifiable information,
+and researchers are responsible for
+
+20
+00:01:30,870 --> 00:01:33,350
+protecting this sensitive data.
+
+21
+00:01:33,350 --> 00:01:37,830
+In some cases,
+de-identifying data may be an option, but
+
+22
+00:01:37,830 --> 00:01:41,350
+this can also be a labor
+intensive process.
+
+23
+00:01:41,350 --> 00:01:45,930
+In other cases,
+removing certain identifiable information
+
+24
+00:01:45,930 --> 00:01:50,130
+could negatively effect the usability
+of the data for secondary analysis.
+
+25
+00:01:51,370 --> 00:01:56,880
+Number four, the ownership of the data
+may be unclear or problematic.
+
+26
+00:01:56,880 --> 00:02:01,980
+Researchers must also consider if they
+even have the right to share the data.
+
+27
+00:02:01,980 --> 00:02:04,330
+In the case of collaborative projects,
+
+28
+00:02:04,330 --> 00:02:07,650
+they will want to discuss
+the data with their partners.
+
+29
+00:02:07,650 --> 00:02:12,110
+In some cases, for instance,
+if the data were proprietary or
+
+30
+00:02:12,110 --> 00:02:16,600
+funded by private entities, researchers
+may not even be permitted to share
+
+31
+00:02:16,600 --> 00:02:20,150
+the data due to intellectual property or
+copyright concerns.
+
+32
+00:02:21,790 --> 00:02:26,220
+Number five, a lack of incentives for
+sharing data.
+
+33
+00:02:26,220 --> 00:02:30,870
+And last but not least, in many ways
+the current academic culture lacks
+
+34
+00:02:30,870 --> 00:02:35,830
+the incentive structure to properly
+reward researchers who share their data.
+
+35
+00:02:36,970 --> 00:02:41,290
+Researchers gain career advancement
+through publishing articles in books
+
+36
+00:02:41,290 --> 00:02:43,110
+often based on data.
+
+37
+00:02:43,110 --> 00:02:46,970
+However, there's currently not
+a similar reward system for
+
+38
+00:02:46,970 --> 00:02:49,550
+publishing the data themselves.
+
+39
+00:02:49,550 --> 00:02:53,910
+There are no easy answers to overcome
+these challenges as Christine Borgman
+
+40
+00:02:53,910 --> 00:03:00,370
+states, "Sharing research data is
+an intricate and difficult problem.
+
+41
+00:03:00,370 --> 00:03:05,164
+In other words, a conundrum." However,
+one other challenge to
+
+42
+00:03:05,164 --> 00:03:10,048
+sharing data that researchers have
+cited is a lack of experience and
+
+43
+00:03:10,048 --> 00:03:12,377
+knowledge of data management.
+
+44
+00:03:12,377 --> 00:03:17,918
+By applying the data management practices
+taught in this MOOC, researchers and
+
+45
+00:03:17,918 --> 00:03:23,051
+other information professionals will
+have more tools in their toolbox for
+
+46
+00:03:23,051 --> 00:03:28,360
+successfully preparing data to share
+in an efficient and effective manner.
+
+47
+00:03:28,360 --> 00:03:37,359
+[MUSIC]

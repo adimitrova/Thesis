@@ -1,0 +1,164 @@
+1
+00:00:00,000 --> 00:00:05,583
+[MUSIC]
+
+2
+00:00:05,583 --> 00:00:08,038
+I define data very broadly.
+
+3
+00:00:08,038 --> 00:00:13,047
+I think it's from a digital
+preservation perspective,
+
+4
+00:00:13,047 --> 00:00:17,219
+data can mean digital
+information of any kind,
+
+5
+00:00:17,219 --> 00:00:21,910
+including very specific
+outcomes of research.
+
+6
+00:00:21,910 --> 00:00:25,890
+So structured data, research experiments,
+and things like that.
+
+7
+00:00:25,890 --> 00:00:30,950
+>> Data are those observable
+bits of information that
+
+8
+00:00:32,090 --> 00:00:35,540
+help us understand a political process,
+
+9
+00:00:35,540 --> 00:00:40,230
+a social process, an economic behavior,
+whatever it is that people are doing.
+
+10
+00:00:40,230 --> 00:00:44,180
+The data is that observable bit of
+information that we can record and
+
+11
+00:00:44,180 --> 00:00:48,360
+later analyze to help
+understand those processes.
+
+12
+00:00:48,360 --> 00:00:54,050
+>> Data is evidence used for research and
+
+13
+00:00:54,050 --> 00:00:58,620
+scholarly academic research of any kind.
+
+14
+00:00:58,620 --> 00:01:01,990
+So when you make a statement
+about the world or
+
+15
+00:01:01,990 --> 00:01:07,140
+about anything in it, you're relying
+on some evidence for that statement.
+
+16
+00:01:07,140 --> 00:01:12,390
+If you say Proust has a wonderful passage,
+
+17
+00:01:12,390 --> 00:01:17,120
+you're probably referring to
+a particular piece of text somewhere.
+
+18
+00:01:17,120 --> 00:01:23,048
+If you say 95% of the people in
+the United States like vanilla ice cream,
+
+19
+00:01:23,048 --> 00:01:27,990
+then there's probably some
+evidence underlying that.
+
+20
+00:01:27,990 --> 00:01:32,320
+They're both, they both can be
+data if they're used as evidence.
+
+21
+00:01:32,320 --> 00:01:38,799
+[MUSIC]
+
+22
+00:01:38,799 --> 00:01:45,770
+>> Typically, there are multiple types
+of data that are being collected.
+
+23
+00:01:45,770 --> 00:01:51,110
+The data are almost entirely
+numeric that I deal with.
+
+24
+00:01:51,110 --> 00:01:55,826
+I don't really deal with
+
+25
+00:01:55,826 --> 00:02:00,322
+images or maps or text.
+
+26
+00:02:00,322 --> 00:02:06,313
+And it's all strange, collected for
+the purpose primarily of research,
+
+27
+00:02:06,313 --> 00:02:12,179
+not collected, say for health claims or
+for other secondary purposes.
+
+28
+00:02:12,179 --> 00:02:16,210
+>> My data in my research,
+some of it is simulated data,
+
+29
+00:02:16,210 --> 00:02:21,890
+some of it is survey data, some of it is
+data produced by government agencies.
+
+30
+00:02:23,720 --> 00:02:26,890
+It's really all kinds,
+sometimes experimental data,
+
+31
+00:02:26,890 --> 00:02:30,990
+most of it is observational data,
+data that comes from the world as
+
+32
+00:02:30,990 --> 00:02:34,970
+it occurs rather than in
+a controlled laboratory.
+
+33
+00:02:36,630 --> 00:02:39,740
+But really, all different types of
+data are part of what I look at.
+
+34
+00:02:39,740 --> 00:02:43,620
+I'm more interested in the question
+that I'm trying to answer,
+
+35
+00:02:43,620 --> 00:02:45,300
+then I go find the data that I need.

@@ -1,0 +1,300 @@
+1
+00:00:00,000 --> 00:00:10,988
+[MUSIC]
+
+2
+00:00:10,988 --> 00:00:15,530
+In this video we will give you a few hints
+on how to construct a Feynman diagram
+
+3
+00:00:15,530 --> 00:00:18,055
+for the two-body process a+b -> c+d. 
+
+4
+00:00:18,055 --> 00:00:22,233
+We first have to decide wether this can be 
+
+5
+00:00:22,233 --> 00:00:26,640
+an annihilation process in which the two initial state particles
+annihilate into a gauge boson. 
+
+6
+00:00:26,640 --> 00:00:29,220
+In that case the momentum transfer will be equal 
+
+7
+00:00:29,220 --> 00:00:31,669
+to the total energy-momentum. 
+
+8
+00:00:32,990 --> 00:00:35,350
+If they cannot annihilate, they have to 
+
+9
+00:00:35,350 --> 00:00:41,153
+exchange a gauge boson in a scattering process. 
+
+10
+00:00:41,153 --> 00:00:44,720
+In this case the q^2 is equal to the difference between 
+
+11
+00:00:44,720 --> 00:00:48,710
+the final particle momentum and the initial particle momentum.
+Now we must decide, which gauge boson can be exchanged.
+
+12
+00:00:48,710 --> 00:00:53,950
+First of all we have to remember that at each vertex
+quantum numbers are strictly conserved. 
+
+13
+00:00:55,190 --> 00:00:59,040
+First of all baryon and lepton numbers must be conserved,
+
+14
+00:00:59,040 --> 00:01:00,530
+and, if we are not talking about weak interactions, 
+
+15
+00:01:00,530 --> 00:01:04,100
+also the particle flavor.  
+
+16
+00:01:04,100 --> 00:01:07,930
+Then we must consider the charge at each vertex.
+
+17
+00:01:10,730 --> 00:01:13,860
+If the electric charge is not 0 and it does not change at the vertex,
+we can exchange a photon. 
+
+18
+00:01:13,860 --> 00:01:18,450
+If the particle’s weak isospin is not 0 and the charge does not change,
+
+19
+00:01:18,450 --> 00:01:22,099
+we can exchange a Z. If the charge does change
+
+20
+00:01:23,220 --> 00:01:26,876
+by ±1 unit, we can exchange a W±.
+
+21
+00:01:26,876 --> 00:01:31,810
+Finally, if the color is not 0 and it changes at the vertex,
+we can exchange a gluon. 
+
+22
+00:01:33,250 --> 00:01:35,790
+So here is a first example,
+
+23
+00:01:35,790 --> 00:01:40,790
+the process e+e- -> u ubar. 
+
+24
+00:01:40,790 --> 00:01:42,410
+We clearly cannot couple the electron directly to a u quark
+
+25
+00:01:42,410 --> 00:01:45,840
+so this is an annihilation process in which the 
+
+26
+00:01:45,840 --> 00:01:49,930
+e+ e- annihilate into a u bar pair. 
+
+27
+00:01:49,930 --> 00:01:53,390
+This can proceed via the exchange of a photon
+
+28
+00:01:53,390 --> 00:01:54,320
+or a Z, since both the electron 
+
+29
+00:01:55,400 --> 00:01:58,030
+and the u quark carry both electric 
+
+30
+00:01:58,030 --> 00:02:01,908
+and weak isospin charge. 
+
+31
+00:02:01,908 --> 00:02:03,064
+It cannot go via the exchange of a gluon or a W
+
+32
+00:02:03,064 --> 00:02:07,783
+because the e+ e- does not carry color
+
+33
+00:02:07,783 --> 00:02:10,517
+and the charge does not change
+
+34
+00:02:10,517 --> 00:02:12,665
+at the vertex. 
+
+35
+00:02:12,665 --> 00:02:14,996
+A second example is the process e+ e- -> nu unbar.
+
+36
+00:02:14,996 --> 00:02:20,940
+Unless the neutrinos are electron-type neutrinos, 
+
+37
+00:02:20,940 --> 00:02:24,410
+this is again an annihilation process. 
+
+38
+00:02:24,410 --> 00:02:26,890
+It proceeds via the exchange of a Z boson. 
+
+39
+00:02:26,890 --> 00:02:30,479
+It cannot proceed via photon exchange, because
+
+40
+00:02:30,479 --> 00:02:33,390
+the neutrino does not carry electric charge.
+
+41
+00:02:33,390 --> 00:02:37,610
+Neither the electron nor the neutrino are colored, 
+
+42
+00:02:37,610 --> 00:02:41,710
+so gluons cannot be exchanged. 
+
+43
+00:02:43,170 --> 00:02:46,100
+The electric charge is not changing at the vertex, so 
+
+44
+00:02:46,100 --> 00:02:51,000
+W± exchange is also excluded. The third
+
+45
+00:02:51,000 --> 00:02:55,070
+example is the process e- u -> nu_e d.
+
+46
+00:02:56,440 --> 00:03:00,070
+In this case it must be a scattering process,
+since the e- cannot directly couple to the u quark. 
+
+47
+00:03:00,070 --> 00:03:02,810
+They must in fact exchange a W boson 
+
+48
+00:03:02,810 --> 00:03:06,370
+since the charge changes by 1 unit at each vertex. 
+
+49
+00:03:07,710 --> 00:03:10,200
+This is possible because both the e- and the u quark
+
+50
+00:03:10,200 --> 00:03:13,210
+carry weak isospin. 
+
+51
+00:03:13,210 --> 00:03:17,430
+They cannot exchange a photon since the charge changes
+
+52
+00:03:17,430 --> 00:03:22,298
+neither can they exchange a Z. And since the e- and the nu do not
+
+53
+00:03:22,298 --> 00:03:25,000
+carry color, they cannot exchange a gluon either.  
+
+54
+00:03:25,000 --> 00:03:28,630
+The next example is the decay of a d quark into a u 
+
+55
+00:03:30,220 --> 00:03:35,520
+e- and an electron-antineutrino. To conserve baryon and lepton 
+
+56
+00:03:36,970 --> 00:03:40,890
+number we must connect the d quark to the u quark and the 
+electron to the antineutrino. 
+
+57
+00:03:40,890 --> 00:03:46,000
+This means that at each vertex, the charge changes by 1 unit
+
+58
+00:03:46,000 --> 00:03:51,960
+and we can exchange a W boson. We cannot exchange a photon
+
+59
+00:03:53,120 --> 00:03:54,890
+because the charge changes, likewise we cannot exchange a Z. 
+
+60
+00:03:54,890 --> 00:03:57,180
+And since the e- and the nu don’t carry color
+
+61
+00:03:57,180 --> 00:04:01,460
+we cannot exchange a gluon. 
+
+62
+00:04:01,460 --> 00:04:05,254
+The last example is a red d quark scattering off a blue d quark,
+
+63
+00:04:07,815 --> 00:04:12,040
+giving a blue u quark and a red d quark. 
+This is clearly a strong process since it involves color exchange. 
+
+64
+00:04:12,040 --> 00:04:12,570
+Since strong interactions conserve flavor, 
+
+65
+00:04:12,570 --> 00:04:17,410
+we must connect the two u quarks and also the two d quarks. 
+
+66
+00:04:17,410 --> 00:04:21,400
+That means that the two 
+
+67
+00:04:21,400 --> 00:04:22,870
+vertices are connected by a gluon 
+
+68
+00:04:24,030 --> 00:04:27,030
+of red-antiblue color
+
+69
+00:04:27,030 --> 00:04:29,540
+such that the color is conserved at each vertex. 
+
+70
+00:04:29,540 --> 00:04:32,050
+We cannot exchange a photon since
+
+71
+00:04:32,050 --> 00:04:35,270
+the color changes, neither a Z or a W bosons
+
+72
+00:04:36,460 --> 00:04:43,691
+since all of these cannot change the color of a particle. 
+
+73
+00:04:43,691 --> 00:04:45,000
+[MUSIC]

@@ -1,0 +1,138 @@
+So in the previous lecture, we saw that 
+switches show up very naturally, especially in robotics where we're going 
+to switch between different modes of operation. 
+And what I want to do today is talk a little bit about the models that we're 
+going to use to describe these phenomena. And the models that we're going to use 
+are called Hybrid Automata. And these are models that contain both 
+the continuous dynamics. Meaning to x dot part and the discrete 
+switching logic that says oh, if you see an obstacle you should switch to an 
+obstacle avoidance behavior, or something like that. 
+Now, what this means is that the discrete logic will be modeled as a finite state 
+machine that moves between different discrete states, so that's the discrete 
+logic. But just a finite state machine on static 
+steroids in the sense that inside each state we have a continuous dynamics 
+loraking so. Having said that, what we need first of 
+all is the notion of a state. So x, as before, is the continuous state 
+of the system. This is the physical state typically of 
+what a robot is doing. But then what we're going to do is we're 
+going to add a discrete state that I'm going to call q. 
+And q is going to tell me which different continuous mode I am in. 
+So my dynamics now can be encoded not As xdot=f(x,u) but xdot=fsubq(x,u). 
+Where this q now tells me which mode am I actually in. 
+And what we're going to do is transition between different discrete modes in a 
+state machine where here I'm having mode q. 
+So really, xdot inside that mode. Is going to, be fsubq and xdot inside 
+this mode is going to be xdot is, fsubq prime. 
+Now, these are called transitions right, so when you jump in between different 
+discrete modes you're making transitions between different states in the finite 
+state machine. Now what we need to understand is, when 
+do we actually make these Jumps, well for that we need something called a guard and 
+the guard is something that checks whether or not you should jump. 
+And then we're also, [COUGH], excuse me, also going to add something else which is 
+called a reset which is going to tell you not when you jump but where you end up 
+after you made the transition. So the guard condition is a condition 
+that tells you when it is time to jump. So let's say that I am in mode q and I 
+want to jump to mode q prime. Well, what I have, is I have a guard that 
+says, if. x belongs to this guard, let's say that 
+this is, I'm going to switch from one gear to another gear if my rpm is above 
+3,000 then I'm going to switch. This is a guard condition that encodes 
+when it is time to jump. Now, when I'm jumping I may actually 
+reset the value of my state. For instance, if I'm dropping a ball, 
+whoop, onto this desk, and it bounces up, it loses energy in, in the bounce so what 
+we're doing is we're subtracting a piece away from the state. 
+At each bounce. This way of messing with the state at the 
+moment the transitions occur is called a reset. 
+So, if I am going, I'm here in mode q. [SOUND]. 
+And then my guard is true, so I am moving to q prime. 
+Well, what's happening here is that x changes for instance, x is now lets say, 
+the old x/5. That would be a guard that says, oh I'm 
+getting only a fifth of the energy somehow after this jump. 
+So, what we need are dynamics, individual dynamics which are called modes. 
+We need transitions which tell us, tells us which discrete states are we moving in 
+between. We need guards which tell us When we're 
+going to make these jumps and we're, need resets to tell us how these jumps end up 
+effecting the state. So if we put all of this together, we get 
+a rather arguably messy looking thing. But it's very rich. 
+This is the hybrid automaton. Singular, or hybrid automata, plural 
+model. And the way this works is, let's see here, we start with x equal to x not, 
+we end up in this mode, which is q=1, where we are evolving according to this 
+differential equation. Right? Okay, if in this case, x belongs 
+to G12, then x, we're going to move, over into this mode. And on our way. 
+We're going to reset the state. Now the state is here. 
+This is my dynamics. I'm in q2 mode. 
+Well if, G21 becomes true, I jump this way. 
+But if G23 becomes true, I jump that way. So let's say G23 became true, I jump this 
+way. I change my state, possibly according to 
+this reset map. I have a third dynamics, q=3. 
+And then when x enters G31 guard, it jumps back into q=1, with a new possible 
+reset. So this is the general model that we're 
+going to work with. Now, it looks a little bit messy, but 
+it's actually really not. In most cases, these models are going to 
+look rather, innocent. So, here's for example, a very very 
+simple Hybrid system. it's a thermostat, or it's my idea of a 
+thermostat. Typically, the way a thermostat works, at 
+least cheap ones, is you set some temperature you would like. 
+The thermostat is on the heater is on until you reach that temperature, or 
+typically, go a little bit above it. And then, it turns off, and then you cool 
+down, and then, when you're too low, you turn it on again. 
+And you've heard this all. In buildings with, with heaters, or that 
+turn on and off. So, what we're doing is, we're heating it 
+up until we're comfortable and warm. And in fact, this is my desired 
+temperature and you typically want to add a little slack that says that I'm going 
+to, shut this thing off when I'm at, whatever I want to be 70 degrees. 
+Plus a little slack, let's say. By the way, this is 70 degrees 
+Fahrenheit. For you Celsius people out there, let's 
+say it's 20. so now, we're above 20 Celsius, and now 
+we're going to cool it down. And then we're cooling it down until 
+we're,in this case, below, well, 20 degrees Celsius, or whatever it is in 
+Fahrenheit, - epsilon. And the reason why we need this epsilon 
+is. If we didn't have it, then this guard is 
+true. And this is guard is immediately true. 
+'Cuz if t is = to t desired, we're just going to start spinning around 
+indefinitely here. So, the little epsilons are important. 
+So, this would be 1 way. In which we will model a thermostat. 
+There are no resets here just current conditions because we're not magically 
+making the temperature jump just because we're changing the heaters from, from on 
+to off. Well, here's a gear shifter, right Well, 
+we have some dynamics. v is the velocity of the car. 
+We're now in first gear. This is our dynamics. 
+u is our smashing the break of the gas pedal down. 
+So this is how we are driving. When we have the RPM above some threshold 
+then we change gears. We switch up to second gear which is 
+here, right. So now we are having the second gear. 
+If we keep pressing the gas. So that the RPM goes up beyond, beyond 
+some c2, then we switch to third gear. Apparently this car only has three gears. 
+but, we go to the third gear, and the same thing here with a downshift. 
+And note this here that I have c2 prime and c1 prime. 
+And c1 and c2 here. This is again, because you want to build 
+in a little bit of slack. This is my way of hiding an epsilon 
+inside there so we don't immediately transition between, between gears. 
+So this would be a hybrid atomaton gear shifter. 
+And I'm not writing out these dynamics. Because the particulars aren't that 
+important right now. The important thing is, the switching 
+logic and the way the guards operate. Well finally, let's look at the 
+behavior-based robotics system. What I'm doing is I'm running the robot. 
+So let's say at x is the position of the robot. 
+According to a go to goal behavior. So f go to goal of x. 
+This is me having to assign that. When the distance between where I am and 
+where the closest obstacle is when that's less than some sum d, meaning I'm too 
+close to an obstacle, then I'm going to switch to another mode or another 
+behavior which is Avoid obstacles. So now I have decide my avoid obstacle 
+behavior and it's safely taking me away from the obstacle and then when the 
+position of the robot is greater than some other distance, the prime away from 
+the obstacle then I switched to goal to goal again. 
+And the way this would look is, let's say here's the obstacle. 
+Here's the goal. Here's my robot. 
+[SOUND]. My robot is doing fine. 
+Here's the ball of radius d. Once I get in here, I'm going to switch 
+to a goal to goal behavior. That's going to take me away from the 
+robot. Let's say here is a larger circle of 
+radius d prime and when I'm here, I'm going to be safe and I'm going to switch 
+to goal to goal behavior. So this is what would happen in practice 
+if you ran this hybrid atomaton as a behavior based robotic system. 
+Now, unfortunately, things aren't all rosy in the hybrid world. 
+And what we'll see in the next lecture is that things may actually go wrong even 
+the we are meaning very well when we start building our systems. 
+So the next lecture is a Danger:Beware sign that we need to put up whenever we 
+are designing hybrid systems, as opposed to standard standalone linear time and 
+variant systems.

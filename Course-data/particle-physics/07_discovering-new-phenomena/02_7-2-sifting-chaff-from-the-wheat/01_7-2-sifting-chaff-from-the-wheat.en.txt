@@ -1,0 +1,111 @@
+[MUSIC] In this module, we discuss searches for new phenomena beyond the known ones
+described by the Standard Model. In this video, we will talk about
+the life cycle of a collision event. From the time the event is produced
+in the heart of a detector, until it gets ready to be
+processed in a physics analysis. After watching this video, you will know why we trigger on physics
+events in the collider experiments. How we translate the analog and digital signals of the detectors
+to physical objects that we associate with
+Standard Model particles for the events we have triggered on. And how we deal with the large amounts of
+data that are produced in the collider experiments. All that in connection to what we
+need to search for new physics. As you already learned in module 3, proton bunches each containing hundreds
+of billions of protons collide at the LHC in collision points where
+experiments are installed. This is one of the general purpose
+detectors of the LHC, the ATLAS detector. We have already gone through its elements
+and their functions in video 3.10a. If you take a look at the transverse
+view of the detector you will see that it has an onion structure. It is made up of various layers
+of different detectors. An inner detector inside a solenoid
+used for tracking charged particles. Calorimeters for electromagnetic and
+hadronic shower measurements. And a muon spectrometer in
+toroidal magnetic field, for muon momentum measurements. Proton-proton collisions result
+in many particles which decay to the lightest elementary particles
+compatible with their quantum numbers. These leave their signatures in the
+detector as digital and analogue signals, which reconstruct as objects that we
+associate with elementary particles. So the particles we reconstruct in the
+detector are electrons, and photons, and muons and quarks, and
+gluons as particle jets. Details about the detector
+response to various particle types are given in video 3.10a. Events that contain sufficiently
+interesting features to be further analyzed are triggered on and
+stored for further processing. These events go through
+event reconstruction. To ensure an accurate measurement of the
+properties of the reconstructed objects, a calibration procedure is applied. Calibrated objects are now ready for
+analysis. In our analysis, we need to compare our
+data to theoretical calculations. To achieve this, event simulations called
+Monte Carlo simulations are performed, which create artificial events based
+on a specific theoretical assumption. With these components in place,
+reconstructed and calibrated data on one hand, and data simulated according to
+theoretical predictions on the other hand, we are ready to search for
+new physics in our data. But let's first understand
+these components better. And let's start from the trigger. What does this actually do? The LHC is colliding proton bunches
+with a maximum rate of 40 MHz. Each event recorded by the
+experiment, containing all digital and analog information from the detector, has a data size of about one megabyte. So saving all events would lead to
+about 40 terabytes of data per second. This is a huge amount of data to store,
+but also to process. Furthermore, most of these events
+only contain known physics, so we need to select which of them to keep. This is where the trigger system comes in. The trigger system of the large
+multi-purpose experiments consists of two main components, a hardware based one and
+a software based one. The trigger system is built
+to be extremely robust and fast as it needs to take a reliable
+decision in a very short time. The trigger helps the selection
+of interesting events, but also applies upper limits in
+the number of events we select after each of its steps. Triggering on events that contain new
+phenomena is an extremely big challenge. We don't know a priori how
+these events would look like. We therefore have to build our trigger
+selections generic enough to ensure we don't lose anything interesting, as events we don't trigger on
+are are simply lost forever. For events that were triggered
+the detector tells us about the elementary particles that were created
+in the collision process as well as their properties. Typically most of these particles are
+relevant in the searches for new physics. And we will see why in the following
+videos of this module. An overview is given in video 3.10a. Here, we summarize the detector response
+to the main types of particles. Electrons and muons both leave
+tracks in the inner detector. The electrons are reconstructed
+by matching the track with the electromagnetic shower. For the muon, the inner detector track is matched to
+a muon track in the muon spectrometer. Photons, being neutral,
+leave no track in the inner detector. And are therefore associated to
+an electromagnetic shower with no track pointing to it. Quarks and gluons are much more
+complicated objects to reconstruct. They can't live by themselves. They have to exist in bound states,
+as was already explained in module 5. They hadronize and are therefore reconstructed in
+the calorimeter as a hadronic shower. Algorithms scan the calorimeter
+data in order to identify the most significant energy depositions,
+corresponding to quarks or gluons. The resulting objects are the jets. It's worth pointing out that
+the dominant process resulting from a proton-proton interaction is
+the production of quarks and gluons. Therefore jets dominate
+the detected final states. Neutrinos do not interact with a detector
+and therefore escape undetected. However, we can get
+information about neutrinos using the knowledge that
+in the transverse plane, because of conservation of momentum, the vector sum of the momenta of
+all the objects has to be zero. So neutrinos are associated with a
+missing momentum in the transverse plane Any neutral and
+weakly interacting particle, such as dark matter candidates,
+will in fact behave just like neutrinos. And will be identified as missing
+transverse momentum in the detector. Missing transverse momentum is extremely
+important in our searches for new physics. W, Z, Higgs bosons, top quarks, and tau leptons decay immediately
+to elementary matter particles. And we reconstruct them
+through their decay products. In a detector, we can therefore
+observe various event topologies. And based on their characteristics
+we can classify the events. This is in fact what we are doing
+already at trigger level. We are running algorithms that
+perform simplified reconstruction. And based on the characteristics of
+the events, we accept or discard them. For example, events with high momentum
+objects, or large multiplicity of objects. are accepted by the trigger for
+further processing. Events with only low energy particles
+are not generally accepted, as these are of no general interest
+since they correspond to low q^2 processes. It would also be impossible to store and process those as they
+are the most common ones. Despite the fact that we are finding ways
+to reduce the amount of data we need to process, we are still generating
+incredibly large amounts of data. Such large amounts are needed to ensure
+that the rarest processes will be produced and saved in our data. Such would be processes
+coming from new physics. This data gets reconstructed and
+calibrated as we said. It is the products of this
+process we are eventually using without ever discarding the original data, since we often need to reprocess them to,
+for example, improve reconstruction or calibration. In order to make the best use
+of the large amount of data, we use sophisticated methodologies, such as machine learning techniques or other statistical methods
+which are often CPU intensive. This adds to the computing
+needs of the LHC experiments. It is not only data and simulation storage
+we need, but also processing power. This is a combination that
+creates a great challenge. This challenge is being addressed
+using major innovations in computing, such as the computing grid. Numerous computing centers in universities
+all over the world are interconnected, forming a computing grid. They receive copies of the data. And give the capability to
+scientists to run their analyses processes on this grid in an automatic and
+transparent way. Research and development in the computing
+domain is in active progress. And the task is always
+extremely challenging and rewarding at the same time. This concludes this lecture. In the next video we will talk
+about a specific type of searches. The so called bump searches. [MUSIC]

@@ -1,0 +1,833 @@
+1
+00:00:00,000 --> 00:00:05,937
+[MUSIC]
+
+2
+00:00:05,937 --> 00:00:10,050
+Welcome to the final lesson on
+the basics of TCP IP suite.
+
+3
+00:00:11,150 --> 00:00:15,720
+So far we have looked into protocols that
+help applications understand each other
+
+4
+00:00:16,760 --> 00:00:19,980
+and protocols that help applications
+build a communication link.
+
+5
+00:00:21,255 --> 00:00:24,630
+Tn this video lecture,
+we will look at the TCP IP layers and
+
+6
+00:00:24,630 --> 00:00:29,400
+protocols that helps devices or
+machines connect and exchange package.
+
+7
+00:00:30,460 --> 00:00:34,800
+We will look at how you get the data
+that applications have generated and
+
+8
+00:00:34,800 --> 00:00:40,590
+take it out of the local machine and carry
+it over the network to another device.
+
+9
+00:00:40,590 --> 00:00:44,400
+This is where the Internet, or
+network layer and link layer come in.
+
+10
+00:00:46,280 --> 00:00:47,940
+First, the Internet layer.
+
+11
+00:00:49,350 --> 00:00:54,370
+This layer is responsible for
+addressing, routing,
+
+12
+00:00:54,370 --> 00:00:59,140
+error handling, and of course, managing
+data flow to the layer beneath it.
+
+13
+00:01:01,200 --> 00:01:09,690
+The IP part in TCP/IP means the Internet
+Protocol which operates on this layer.
+
+14
+00:01:11,232 --> 00:01:13,640
+We will look in to
+the Internet Protocol and
+
+15
+00:01:13,640 --> 00:01:19,010
+see how it offers the functions that
+the internet layer is supposed to provide.
+
+16
+00:01:21,930 --> 00:01:26,390
+So, IP stands for the Internet Protocol.
+
+17
+00:01:26,390 --> 00:01:30,688
+And it's the protocol that
+everyone in the TCP IP suite
+
+18
+00:01:30,688 --> 00:01:34,900
+relies on to transmit data
+packets over the network.
+
+19
+00:01:36,980 --> 00:01:41,490
+No matter what transport layer
+protocol you use, whether TCP or
+
+20
+00:01:41,490 --> 00:01:45,140
+UDP The data eventually is handled by IP.
+
+21
+00:01:46,740 --> 00:01:50,830
+Like UDP,
+it is a connection-less protocol meaning
+
+22
+00:01:50,830 --> 00:01:56,190
+each data packet is considered unique and
+there is no context maintained.
+
+23
+00:01:56,190 --> 00:02:00,800
+Sending the current packet has no
+relation to the previous or next packet.
+
+24
+00:02:02,210 --> 00:02:04,560
+It's not a reliable transport mechanism.
+
+25
+00:02:04,560 --> 00:02:08,980
+There is no guarantee that the packet
+will be successfully delivered.
+
+26
+00:02:10,460 --> 00:02:16,440
+As there is no link establishment
+in advance and no assured delivery,
+
+27
+00:02:16,440 --> 00:02:20,499
+the packet can take any path over
+the network to reach a destination.
+
+28
+00:02:22,000 --> 00:02:24,090
+This helps against link failures.
+
+29
+00:02:25,840 --> 00:02:29,026
+If a router or a physical link goes down,
+
+30
+00:02:29,026 --> 00:02:32,599
+the back end just takes
+an alternative path.
+
+31
+00:02:36,397 --> 00:02:40,850
+The Internet Protocol is
+available in two versions.
+
+32
+00:02:40,850 --> 00:02:43,460
+IPV version 4 or IPv4.
+
+33
+00:02:44,690 --> 00:02:47,570
+And IP version 6 or IPv6.
+
+34
+00:02:49,350 --> 00:02:53,600
+Both offer the same service, but
+in a slightly different way.
+
+35
+00:02:55,120 --> 00:02:58,410
+The very basic difference
+between them is addressing.
+
+36
+00:02:59,750 --> 00:03:01,260
+We will look into this later on.
+
+37
+00:03:04,070 --> 00:03:08,530
+IP is also responsible for routing,
+meaning finding a path for
+
+38
+00:03:08,530 --> 00:03:12,790
+a packet to move around the networks
+until it reaches the destination.
+
+39
+00:03:14,030 --> 00:03:20,450
+If the receiving node is on the same
+network, the packet is delivered directly.
+
+40
+00:03:20,450 --> 00:03:23,140
+This is called local delivery.
+
+41
+00:03:25,100 --> 00:03:27,670
+If the receiver is on another network,
+
+42
+00:03:27,670 --> 00:03:31,520
+then the protocol delivers the message
+to a device called a router.
+
+43
+00:03:33,340 --> 00:03:38,720
+If the receiver is connected to
+the router the message is passed to it.
+
+44
+00:03:38,720 --> 00:03:42,930
+Otherwise, it is sent to the next
+router and then to the next and so on.
+
+45
+00:03:44,300 --> 00:03:47,240
+A jump from one router to
+another is called a hop.
+
+46
+00:03:49,190 --> 00:03:55,540
+It is theorized that you can reach
+anywhere on the internet with a maximum
+
+47
+00:03:55,540 --> 00:04:01,559
+of 64 hops, and reach more than
+99% of the internet using 32 hops.
+
+48
+00:04:03,440 --> 00:04:06,300
+Some protocols might have
+their own limitations.
+
+49
+00:04:06,300 --> 00:04:13,790
+For example, the routing information
+protocol, or RIP, has a limit of 15 hops.
+
+50
+00:04:15,380 --> 00:04:19,656
+Other routing protocols are, for example,
+
+51
+00:04:19,656 --> 00:04:26,416
+open shortest path first, or OSPF and
+Border Gateway Protocol or BGP.
+
+52
+00:04:30,404 --> 00:04:35,072
+The Internet Control Message Protocol,
+or ICMP, is used for
+
+53
+00:04:35,072 --> 00:04:38,770
+reporting errors in
+the delivery of IP packets.
+
+54
+00:04:39,850 --> 00:04:41,620
+It is part of the IP Suite.
+
+55
+00:04:43,660 --> 00:04:48,850
+Think of it running in parallel
+with the normal IP functions.
+
+56
+00:04:48,850 --> 00:04:52,240
+Imagine running two network
+cables between the nodes A and
+
+57
+00:04:52,240 --> 00:04:56,730
+B, the first one carries data from A to B.
+
+58
+00:04:56,730 --> 00:05:02,400
+The second one carries
+an error message from B to A.
+
+59
+00:05:02,400 --> 00:05:07,200
+Only if the path between A and
+B is blocked or unreachable.
+
+60
+00:05:08,290 --> 00:05:15,420
+In this example, the network cable between
+A and B represents standard IP packets
+
+61
+00:05:15,420 --> 00:05:20,450
+and the network cable between B and
+A carrying error messages represents ICMP.
+
+62
+00:05:22,990 --> 00:05:27,790
+Whenever an IP packet can't be delivered,
+the router on that
+
+63
+00:05:27,790 --> 00:05:32,670
+point generates an ICMP packet,
+and forwards it to the sender.
+
+64
+00:05:34,180 --> 00:05:39,278
+IP doesn't act on the error message, but
+sends it to the transport layer protocol,
+
+65
+00:05:39,278 --> 00:05:43,430
+TCP or UDP.
+
+66
+00:05:43,430 --> 00:05:47,770
+And they can then decide whether to
+retransmit the lost data or not.
+
+67
+00:05:51,010 --> 00:05:54,980
+Another important protocol
+of the IP suite is IPSec.
+
+68
+00:05:56,480 --> 00:06:02,259
+IP Security is a set of protocols for
+securing communication between devices.
+
+69
+00:06:03,610 --> 00:06:10,310
+Unlike, TOS and DTLS mentioned earlier,
+this one operates in the internet layer.
+
+70
+00:06:11,680 --> 00:06:14,770
+It will be discussed further
+later on in the course.
+
+71
+00:06:15,860 --> 00:06:19,350
+A little bit about the IP version 4.
+
+72
+00:06:19,350 --> 00:06:23,430
+This is the most common version
+of the internet protocol.
+
+73
+00:06:24,430 --> 00:06:26,440
+The one you will most likely encounter.
+
+74
+00:06:28,550 --> 00:06:31,480
+It has a 32 bit address space and
+
+75
+00:06:31,480 --> 00:06:37,000
+can have 4.29 billion unique addresses.
+
+76
+00:06:37,000 --> 00:06:42,120
+IPv4 address space is divided
+into different portions,
+
+77
+00:06:42,120 --> 00:06:45,019
+each portion is reserved for
+a special purpose.
+
+78
+00:06:46,610 --> 00:06:52,920
+Have you ever wondered why the default
+IP address of every broadband router
+
+79
+00:06:52,920 --> 00:06:58,213
+that you buy is 1.92.168.01?
+
+80
+00:06:58,213 --> 00:07:04,150
+That's because the range is reserved for
+private use.
+
+81
+00:07:04,150 --> 00:07:06,460
+To build your own home network for
+example.
+
+82
+00:07:08,360 --> 00:07:13,004
+IPv4 addresses have a dotted
+decimal notation and
+
+83
+00:07:13,004 --> 00:07:15,816
+example at risk is shown here.
+
+84
+00:07:19,593 --> 00:07:25,003
+IPv version 6 is the new version
+of the internet protocol suite.
+
+85
+00:07:27,136 --> 00:07:31,938
+The basic attributes and
+functionalities are the same as in IPv4.
+
+86
+00:07:31,938 --> 00:07:37,230
+But IPv6 has
+
+87
+00:07:37,230 --> 00:07:42,610
+a 128 bit address space instead of 32,
+and twice the header size.
+
+88
+00:07:44,970 --> 00:07:47,050
+It's designed to replace IPv4.
+
+89
+00:07:49,320 --> 00:07:54,460
+One particular problem with IPv4
+is that there are more devices
+
+90
+00:07:54,460 --> 00:07:59,240
+connected to the Internet then there are
+available at vertices that you can assign.
+
+91
+00:08:00,370 --> 00:08:03,000
+With IPv4, that unit is 4.29 billion.
+
+92
+00:08:06,530 --> 00:08:12,643
+With IPv6, it is, well, try to count
+the number of zeros on the screen.
+
+93
+00:08:14,692 --> 00:08:19,295
+With more and more smart devices
+connected to the Internet,
+
+94
+00:08:19,295 --> 00:08:24,940
+reaching 50 billion by 2020
+according to estimations.
+
+95
+00:08:24,940 --> 00:08:26,530
+You need a large address pool.
+
+96
+00:08:28,020 --> 00:08:32,090
+IPv6 provides you
+the needed address space.
+
+97
+00:08:33,850 --> 00:08:36,850
+Here's an example of an IPv6 address.
+
+98
+00:08:39,260 --> 00:08:46,409
+Clearly it's not readable for human eyes
+in the same way as the IPv4 address.
+
+99
+00:08:48,230 --> 00:08:52,910
+Here you see the difference
+between the IPv4 and IPv6 headers.
+
+100
+00:08:54,440 --> 00:08:58,920
+The large address field of the IPv6
+header is instantly noticeable.
+
+101
+00:09:00,320 --> 00:09:05,310
+On the other hand the overall structure
+of the IPv6 header is simpler.
+
+102
+00:09:06,720 --> 00:09:10,980
+In the IPv4 header,
+the fields with great text,
+
+103
+00:09:10,980 --> 00:09:14,630
+the IPv4 attributes that
+were not carried to IPv6.
+
+104
+00:09:16,380 --> 00:09:20,690
+Remember, IPv6 is
+designed to replace IPv4.
+
+105
+00:09:20,690 --> 00:09:22,980
+They are not interoperable.
+
+106
+00:09:25,910 --> 00:09:29,120
+This ends our discussion
+on the internet layer.
+
+107
+00:09:30,430 --> 00:09:36,050
+Now, we will have a quick layer of
+the TCP-IP model, the link layer.
+
+108
+00:09:37,360 --> 00:09:42,470
+So far, we have seen how data moves
+across programs and networks.
+
+109
+00:09:42,470 --> 00:09:47,040
+And now, we will look into how it goes
+from one local network point to another.
+
+110
+00:09:50,660 --> 00:09:54,650
+The link layer is the lowest
+layer in the TCPIP model.
+
+111
+00:09:56,290 --> 00:09:59,320
+It's responsible for
+transmitting information from
+
+112
+00:09:59,320 --> 00:10:03,060
+one point in the local network to
+another point in the same network.
+
+113
+00:10:04,530 --> 00:10:07,710
+So, in theory,
+with the presence of this layer,
+
+114
+00:10:07,710 --> 00:10:10,550
+you would be able to create
+a local area network.
+
+115
+00:10:11,650 --> 00:10:16,240
+Or be able to communicate locally even if
+you don't implement the internet layer.
+
+116
+00:10:18,420 --> 00:10:23,328
+The link layer acts as an interface
+between the lower physical hardware
+
+117
+00:10:23,328 --> 00:10:27,580
+implementation of the network and
+the upper, more logical,
+
+118
+00:10:27,580 --> 00:10:31,278
+software-focused implementation
+of the network.
+
+119
+00:10:33,489 --> 00:10:36,202
+The link layer has several functions.
+
+120
+00:10:38,937 --> 00:10:42,030
+First, it provides local addressing.
+
+121
+00:10:43,380 --> 00:10:44,390
+Let's look at ethernet,
+
+122
+00:10:44,390 --> 00:10:48,579
+a system of connecting computers
+in a local area network.
+
+123
+00:10:50,220 --> 00:10:53,040
+Each ethernet adapter has a specific,
+
+124
+00:10:53,040 --> 00:10:58,860
+unique address assigned by
+the manufacturer called a MAC Address.
+
+125
+00:11:00,070 --> 00:11:05,040
+A MAC Address is how a network adapter
+knows who is who on the network.
+
+126
+00:11:06,930 --> 00:11:11,360
+The difference between a MAC address and
+an IP address is that
+
+127
+00:11:11,360 --> 00:11:15,650
+MAC address are used for
+identifying devices on the local network.
+
+128
+00:11:16,700 --> 00:11:21,880
+And IP address are used to identify
+devices across networks even globally.
+
+129
+00:11:24,008 --> 00:11:27,360
+You can change your IP
+address several times but
+
+130
+00:11:27,360 --> 00:11:33,140
+still the data packet intended for
+your device reaches you, how?
+
+131
+00:11:34,360 --> 00:11:37,190
+Well, that's because of the MAC address.
+
+132
+00:11:38,570 --> 00:11:43,920
+A link layer protocol called ARP or
+address resolution protocol,
+
+133
+00:11:43,920 --> 00:11:49,619
+has the job of identifying which IP
+address corresponds to which MAC address.
+
+134
+00:11:50,910 --> 00:11:56,910
+So when you change your IP address,
+ARP updates the local table and
+
+135
+00:11:56,910 --> 00:11:59,890
+puts the new address
+against your MAC address.
+
+136
+00:12:03,000 --> 00:12:06,470
+The link layer also provides
+local error detection
+
+137
+00:12:06,470 --> 00:12:10,889
+of errors that could have been caused
+by noise on the network channels.
+
+138
+00:12:12,240 --> 00:12:18,203
+The most common method is adding
+cyclic redundancy check or CRC Codes.
+
+139
+00:12:20,897 --> 00:12:25,617
+When you take the data from
+the upper layers add the local
+
+140
+00:12:25,617 --> 00:12:30,537
+MAC addresses of the destination
+on yours add CRC codes for
+
+141
+00:12:30,537 --> 00:12:37,710
+error detection and any other fields
+required by the local lead protocol.
+
+142
+00:12:37,710 --> 00:12:40,480
+This new packet of data is called a frame.
+
+143
+00:12:41,790 --> 00:12:44,820
+Frames are what you then send
+over the physical medium.
+
+144
+00:12:46,820 --> 00:12:49,380
+Now, concerning the physical medium,
+
+145
+00:12:50,530 --> 00:12:54,410
+there needs to be a way to handle
+communication on the local network.
+
+146
+00:12:55,500 --> 00:12:59,680
+To decide who has the right to use
+the network cable for instance.
+
+147
+00:12:59,680 --> 00:13:02,240
+Who can talk and for how long.
+
+148
+00:13:02,240 --> 00:13:05,100
+And to assure there are no
+collisions of signals.
+
+149
+00:13:07,350 --> 00:13:13,019
+All of this is called media
+access control, or MAC.
+
+150
+00:13:13,019 --> 00:13:16,590
+Yes, this is where the name
+MAC at risk comes from.
+
+151
+00:13:18,130 --> 00:13:22,767
+Media Access Control includes
+different methods to ensure successful
+
+152
+00:13:22,767 --> 00:13:27,411
+communication, but these methods
+are out of the scope of this lesson.
+
+153
+00:13:29,207 --> 00:13:34,141
+The actual transmission of the data
+bits over the network takes
+
+154
+00:13:34,141 --> 00:13:37,460
+place in the form of signals.
+
+155
+00:13:37,460 --> 00:13:41,670
+Electrical signals in
+the case of ethernet and
+
+156
+00:13:41,670 --> 00:13:44,480
+electromagnetic signals
+in the case of WiFi.
+
+157
+00:13:45,660 --> 00:13:50,385
+This is not actually regulated or
+described in the TCP/IP model.
+
+158
+00:13:50,385 --> 00:13:55,310
+The TCP/IP model doesn't care
+about the physical characteristics
+
+159
+00:13:55,310 --> 00:13:56,480
+of the network technology.
+
+160
+00:13:57,770 --> 00:14:00,280
+This however does present
+an interesting problem.
+
+161
+00:14:01,920 --> 00:14:06,800
+What about standards like WiFi that
+define both a physical layer and
+
+162
+00:14:06,800 --> 00:14:08,090
+media access control.
+
+163
+00:14:09,160 --> 00:14:13,070
+Where would you put WiFi
+in the TCPIP model?
+
+164
+00:14:13,070 --> 00:14:17,120
+Well As already stated in
+another video lecture, for
+
+165
+00:14:17,120 --> 00:14:21,980
+the sake of simplicity we will put
+all the machine to machine, or
+
+166
+00:14:21,980 --> 00:14:26,390
+M to M connectivity protocols like WiFi,
+Bluetooth, and
+
+167
+00:14:26,390 --> 00:14:29,823
+ZigBee under the umbrella
+of the link layer.
+
+168
+00:14:31,623 --> 00:14:35,520
+Here is an overview of what
+we studied in this module.
+
+169
+00:14:36,750 --> 00:14:41,820
+To your left is the TCP/IP Layered model,
+and
+
+170
+00:14:41,820 --> 00:14:46,740
+to the right are some of the associated
+protocols at rest in the lectures.
+
+171
+00:14:48,910 --> 00:14:54,400
+I hope you have now a better understanding
+of all these layers and an idea of
+
+172
+00:14:54,400 --> 00:14:59,230
+what the basic properties of a protocol
+are when it belongs to a specific layer.
+
+173
+00:15:00,760 --> 00:15:05,517
+In the next module, we will have
+a closer look at the protocols that we
+
+174
+00:15:05,517 --> 00:15:08,401
+sign on the application and link layers.
+
+175
+00:15:08,401 --> 00:15:12,379
+[MUSIC]

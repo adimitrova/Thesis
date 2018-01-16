@@ -1,0 +1,79 @@
+In this video I'm going
+to look at five things. But don't worry,
+it's not going to take me too long. First of all, I'm just going to have
+a quick chat about what is a function. Then we're going to look
+at the setup function and the draw function in processing. We're going to find out how we can make
+animation by looking at mouse interaction. Then we're going to look at how we can
+use mouse interaction in another way, using the mouseDragged function. So, first of all, what is a function? Well a function is simply a way of creating a block of code which
+we're going to run later in time. Okay, so instead of just something
+like this, where we call background. Actually, background is a function, right? And we're calling background, but
+we're not defining what background is, we're just telling it how to run. And so what we're going to do in this
+video is actually define some functions. And the functions we're going to
+define are called setup and draw, and they are special
+functions in processing. Because they are run automatically. Okay, so whereas,
+think about that background function. It wasn't being run automatically. It was being run because we told it to,
+by writing background. But setup is actually going
+to be run automatically. The only difference is we have to tell
+it what to do in that setup function. So the normal thing you would do in
+that setup function is set the size of the window. So remember size,
+you've got the width, height. Just to remind me that that's
+the width and that's the height. And then what you typically do in
+the draw function is do your drawing, hence the name. So you set things up in the setup function
+and you draw things in the draw function. So before we do any drawing
+I'm just going to sort of just really illustrate what's
+going on with these functions. Hello from setup, okay, and
+here I'm going to say, this is, if you like the simplest way
+to illustrate what's going on. So, all it's going to do is
+set the size of the window and then print that and then draw is just
+going to print out hello from draw. So let's play it and see what happens. So this area down here is called
+the console and whenever you call print things go out into there and
+it's really useful for debugging. So if you want to test what a value is or
+something like that. So let's just whiz up to the top
+of what's come out in the console. And you've probably noticed
+already that draw is just being obviously run lots of times. Whereas set up, you see it's only
+calling the setup code once. So, setup gets called once at
+the beginning when the sketch runs. Draw is being automatically
+called repeatedly. And that's the trick to doing animations. So, if you think about animation, it's basically a series of frames
+with different stuff in and that's exactly what draw allows us
+to do each time draw gets called. We can draw a different
+frame of our animation, or update the picture that's on the screen. Okay, so let's try that. And what I'm going to do is bring in that
+other idea, the idea of mouse movement. And I'm going to use the mouse
+to actually draw something. So we've seen before this rect function. So remember x, y, width and height. Those are the four variables, the four numbers that we
+parse into the rect function. So if I put it at 0,0,
+it goes to the top left of the screen. And let's say I want a width and
+height of 25, 25. So let's just run that. That's not very interesting, but what
+you can imagine it's doing is basically redrawing the rectangle on top of
+itself again and again and again. Little bit boring. But what happens if instead of
+setting x and y to just always be 0, what if we set x and
+y to be the mouse position? mouseX and mouseY? So these two special variables here give us access to the position
+of the mouse currently. And as you imagine, if you move
+the mouse around, they'll change. So if draw gets called again,
+it'll update. So let's try that. So if I move my mouse around, you can see the rectangle appears
+to be following it and because because draw just draws on top of
+the previous canvas that was there, it doesn't wipe it each time, you can
+see that whatever it's drawn before is being kept which makes for
+a nice kind of drawing effect here. Now of course, if we did want to wipe it, we could just call
+the background functions. Now remember, background fills the entire
+background in a certain color, so I'm going to fill it with the color black,
+which is a quick way of doing it is zero. That means every time draw gets
+called the first thing it does, it wipes everything over
+with a black background. Then we hit play. And you can see that now,
+the square is just following the mouse, and it's wiping out that
+trail of other squares. I kind of preferred
+the previous one to be honest. Okay.
+Now, the final thing I wanted to show you is the mouse track function. So this is another function
+that gets called automatically. By processing. But this one doesn't just called again and
+again like draw does. It actually gets called when
+the mouse is being dragged. So the mouse is being dragged when
+you basically click in the sketch and move the mouse around. So let's just illustrate that. So there's the whole sketch there. There's not much to it. I've got rid of the code
+from the draw function and I'm just doing my drawing
+inside mouseDragged now. So let's see what this one does. You'll notice right now
+it's not doing any drawing. If I click on the Window and start
+moving my mouse, then I can draw a line. Then I can draw another one. So it's a bit like a kind of
+paint program with this nice, almost fake,
+3-D effect on the lines there. Okay, so what have we done? We've just found out about the setup
+function which gets called once every time your sketch runs. The draw function,
+which gets called repeatedly and how to use mouse interaction
+to do animation in draw. And how to use mouse interaction
+basically responding to the user clicking into the window and
+dragging the mouse around. [BLANK AUDIO]

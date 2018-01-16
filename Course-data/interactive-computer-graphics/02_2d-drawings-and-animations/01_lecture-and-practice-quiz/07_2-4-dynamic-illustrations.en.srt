@@ -1,0 +1,624 @@
+1
+00:00:01,480 --> 00:00:04,600
+Our next topic is Dynamic Illustrations.
+
+2
+00:00:04,600 --> 00:00:06,830
+And the work we introduce here, is
+
+3
+00:00:06,830 --> 00:00:10,560
+called sketch based dynamic illustration
+of fluid systems.
+
+4
+00:00:12,540 --> 00:00:14,720
+And the program we want to address here,
+
+5
+00:00:14,720 --> 00:00:18,790
+is that it is tedious to illustrate fluid
+flow.
+
+6
+00:00:18,790 --> 00:00:22,660
+Suppose you have a engineering system or
+architecture.
+
+7
+00:00:22,660 --> 00:00:27,480
+Or organic shapes or a liver system.
+
+8
+00:00:27,480 --> 00:00:30,940
+There is a lot of fluid systems, and you
+may want
+
+9
+00:00:30,940 --> 00:00:35,410
+to describe how the fluid flow in these
+kind of systems.
+
+10
+00:00:35,410 --> 00:00:37,700
+And then you want to get these kinds of
+results.
+
+11
+00:00:37,700 --> 00:00:40,210
+And it's very tedious to draw them
+manually.
+
+12
+00:00:40,210 --> 00:00:45,130
+So, our idea is to use automatic flow
+simulation
+
+13
+00:00:45,130 --> 00:00:49,950
+to automatically synthesize this kind of
+data for illustrations.
+
+14
+00:00:49,950 --> 00:00:53,870
+So here, the simulation is not used for
+prediction,
+
+15
+00:00:53,870 --> 00:00:56,857
+but this is used for a niche [UNKNOWN]
+illustration.
+
+16
+00:00:58,510 --> 00:01:00,177
+So let me show you a video
+
+17
+00:01:00,177 --> 00:01:08,950
+[BLANK_AUDIO]
+
+18
+00:01:08,950 --> 00:01:10,411
+So this is basically a drawing system.
+
+19
+00:01:10,411 --> 00:01:12,603
+You draw something, and the system
+
+20
+00:01:12,603 --> 00:01:16,440
+continuously runs fluid simulation behind
+the scenes.
+
+21
+00:01:16,440 --> 00:01:19,920
+And they add fluid flow visualizations
+automatically.
+
+22
+00:01:19,920 --> 00:01:21,620
+So you draw something, a region.
+
+23
+00:01:24,820 --> 00:01:26,830
+And then you draw pipes.
+
+24
+00:01:26,830 --> 00:01:30,120
+And then as soon as you finish drawing
+
+25
+00:01:30,120 --> 00:01:34,450
+a system, system starts flow simulation
+behind the scene.
+
+26
+00:01:34,450 --> 00:01:39,632
+So it visualize a, a detail flow, and also
+shows the result of fluid mixtures.
+
+27
+00:01:39,632 --> 00:01:46,067
+[BLANK_AUDIO]
+
+28
+00:01:46,067 --> 00:01:49,650
+So this tool is very useful for explaining
+fluid phenomenons.
+
+29
+00:01:49,650 --> 00:01:59,650
+[BLANK_AUDIO]
+
+30
+00:02:12,126 --> 00:02:15,425
+So you can interactively edit the shape by
+deformation tools.
+
+31
+00:02:15,425 --> 00:02:25,425
+[BLANK_AUDIO]
+
+32
+00:02:29,308 --> 00:02:30,366
+Okay.
+
+33
+00:02:30,366 --> 00:02:33,076
+So an, our [UNKNOWN] example is here
+
+34
+00:02:33,076 --> 00:02:38,518
+[BLANK_AUDIO]
+
+35
+00:02:38,518 --> 00:02:43,544
+So here we use these two for explaining
+surgical operations for a defected heart.
+
+36
+00:02:43,544 --> 00:02:45,910
+So here is an example.
+
+37
+00:02:47,840 --> 00:02:51,820
+So here this heart has very specific
+configuration.
+
+38
+00:02:51,820 --> 00:02:53,580
+And not very ideal.
+
+39
+00:02:53,580 --> 00:02:59,036
+And here ideally blue blood come from the
+body, should directly
+
+40
+00:02:59,036 --> 00:03:03,260
+go to the lung, and then from the lung,
+fresh blood, red
+
+41
+00:03:03,260 --> 00:03:08,628
+blood comes into the heart, and then red
+one should go through the body,
+
+42
+00:03:08,628 --> 00:03:13,763
+however here blue blood is mixed together
+with red one.
+
+43
+00:03:13,763 --> 00:03:17,300
+And then purple one go to the body.
+
+44
+00:03:17,300 --> 00:03:20,484
+So, doctors will perform a surgical
+operation to fix this.
+
+45
+00:03:20,484 --> 00:03:23,625
+However, before they that, they need to
+explain what
+
+46
+00:03:23,625 --> 00:03:26,989
+they do to their patients, or their
+patients' parents.
+
+47
+00:03:26,989 --> 00:03:29,727
+However, it's very difficult to do that
+with
+
+48
+00:03:29,727 --> 00:03:33,389
+standard tools, currently, they use
+standard pen and ink.
+
+49
+00:03:33,389 --> 00:03:36,136
+Black and white illustration to describe
+them,
+
+50
+00:03:36,136 --> 00:03:39,020
+however, it's very difficult to understand
+it.
+
+51
+00:03:40,074 --> 00:03:43,917
+But preparing this kind of beautiful
+illustration using computer
+
+52
+00:03:43,917 --> 00:03:47,758
+system, is too time consuming, and more
+importantly, this kind
+
+53
+00:03:47,758 --> 00:03:51,534
+of heart disease has different
+configuration for each patient,
+
+54
+00:03:51,534 --> 00:03:55,330
+so it's not possible to prepare a template
+before hand.
+
+55
+00:03:55,330 --> 00:03:57,870
+So, this kind of tool can be very useful.
+
+56
+00:03:57,870 --> 00:04:02,420
+To explain and understand complicated flow
+phenomenon.
+
+57
+00:04:02,420 --> 00:04:05,270
+And then let me show you how it works.
+
+58
+00:04:05,270 --> 00:04:05,840
+So first, the
+
+59
+00:04:10,130 --> 00:04:14,860
+operation start with connecting the
+locations, and
+
+60
+00:04:14,860 --> 00:04:17,769
+then they will change the configuration
+here.
+
+61
+00:04:19,110 --> 00:04:21,530
+So doctor cuts here and then connect them.
+
+62
+00:04:21,530 --> 00:04:23,991
+So, as soon as the configuration changes,
+
+63
+00:04:23,991 --> 00:04:27,056
+the fluid simulation changes the flow,
+prediction.
+
+64
+00:04:27,056 --> 00:04:35,674
+[BLANK_AUDIO]
+
+65
+00:04:35,674 --> 00:04:37,081
+So next one is the most important one.
+
+66
+00:04:37,081 --> 00:04:40,380
+The doctor stops here, cut here, and then
+connect here.
+
+67
+00:04:40,380 --> 00:04:44,819
+And therefore, blood suddenly changes.
+
+68
+00:04:44,819 --> 00:04:50,705
+[BLANK_AUDIO]
+
+69
+00:04:50,705 --> 00:04:54,341
+And finally, in closing this hole and then
+
+70
+00:04:54,341 --> 00:04:58,287
+let blood directly go to the body, being
+red.
+
+71
+00:04:58,287 --> 00:05:04,369
+[BLANK_AUDIO]
+
+72
+00:05:04,369 --> 00:05:08,048
+And this kind of technique can be very
+useful for various
+
+73
+00:05:08,048 --> 00:05:12,989
+fluid phenomena inside of your body, like
+blood circulation and others.
+
+74
+00:05:12,989 --> 00:05:22,989
+[BLANK_AUDIO]
+
+75
+00:05:25,349 --> 00:05:27,957
+And also this technique is, can be used
+for engineering systems.
+
+76
+00:05:27,957 --> 00:05:29,426
+Like this one.
+
+77
+00:05:29,426 --> 00:05:34,387
+[BLANK_AUDIO]
+
+78
+00:05:34,387 --> 00:05:38,286
+And this is another example in [UNKNOWN]
+so you can see
+
+79
+00:05:38,286 --> 00:05:42,473
+how cold air and le warm air mix together
+and flow.
+
+80
+00:05:42,473 --> 00:05:46,563
+And you can test many different
+configurations.
+
+81
+00:05:46,563 --> 00:05:53,067
+[BLANK_AUDIO]
+
+82
+00:05:53,067 --> 00:05:54,791
+And this tool can be also used for,
+
+83
+00:05:54,791 --> 00:05:57,530
+for explanation of pollution of rivers,
+and so.
+
+84
+00:06:02,700 --> 00:06:07,520
+And so now let me describe the other
+region briefly.
+
+85
+00:06:07,520 --> 00:06:11,880
+So what we use is a hybrid fluid
+simulation system.
+
+86
+00:06:11,880 --> 00:06:16,870
+So user draws global network with local
+regions.
+
+87
+00:06:16,870 --> 00:06:21,500
+And we apply different simulation
+[UNKNOWN] for different scale.
+
+88
+00:06:21,500 --> 00:06:24,910
+Because single scale simulation can be
+very slow.
+
+89
+00:06:26,240 --> 00:06:31,570
+So, for a global network simulation, we
+use simple hydraulic simulation.
+
+90
+00:06:31,570 --> 00:06:35,950
+And therefore, individual local region, we
+use hydrodynamic simulations.
+
+91
+00:06:37,350 --> 00:06:41,246
+And so, to use a [UNKNOWN] node inflow,
+and there forms
+
+92
+00:06:41,246 --> 00:06:46,528
+a global network structure, hydraulics
+compute it's pipe flow and the
+
+93
+00:06:46,528 --> 00:06:53,021
+node pressure, and then from this node
+pipe flow and node pressure, hydrodynamics
+
+94
+00:06:53,021 --> 00:06:58,330
+computes a detailed, computes detailed
+flow, inside of this region.
+
+95
+00:07:00,710 --> 00:07:05,110
+So this is a little bit in too involved,
+but let me describe the way.
+
+96
+00:07:05,110 --> 00:07:10,300
+The first line is hydraulics simulation
+for a global network.
+
+97
+00:07:10,300 --> 00:07:16,160
+Here, input is node inflow Qn, so how much
+flow comes in from the node.
+
+98
+00:07:16,160 --> 00:07:20,230
+And then what we compute is pipe flow from
+node inflow.
+
+99
+00:07:20,230 --> 00:07:25,190
+And hydraulics is a simplified
+computational method directly computed
+
+100
+00:07:25,190 --> 00:07:30,760
+from compute from node inflow, and to get
+a pipe flow.
+
+101
+00:07:30,760 --> 00:07:36,890
+And after pipe flow, we can compute a
+pressure, pressure drop at this pipe.
+
+102
+00:07:36,890 --> 00:07:39,850
+And then from pipe pressure drop, we can
+
+103
+00:07:39,850 --> 00:07:43,810
+compute the node pressure inside of each
+node.
+
+104
+00:07:43,810 --> 00:07:48,770
+And you can get these all information by
+solving a linear global system once.
+
+105
+00:07:48,770 --> 00:07:51,440
+It's very fast and it's very efficient.
+
+106
+00:07:51,440 --> 00:07:55,905
+And after computing pressure node, and
+[UNKNOWN] pipe flow, we
+
+107
+00:07:55,905 --> 00:08:00,750
+now switch to our regional [INAUDIBLE] so
+for each local region.
+
+108
+00:08:00,750 --> 00:08:04,950
+We compute we divide into a lots of grid
+cells
+
+109
+00:08:04,950 --> 00:08:09,150
+like this one, and for each grade cell, we
+compute pressure
+
+110
+00:08:09,150 --> 00:08:15,080
+and velocity, and in order the compute
+individual pressure and velocity, we
+
+111
+00:08:15,080 --> 00:08:20,770
+use a very standard established fluid
+equation called Navier-Stokes Equation.
+
+112
+00:08:20,770 --> 00:08:24,040
+So this one is a little bit complicated,
+but
+
+113
+00:08:24,040 --> 00:08:28,998
+essentially this just explains the
+relationship with fluid velocity
+
+114
+00:08:28,998 --> 00:08:31,400
+and fluid pressure, you know, if there's a
+huge
+
+115
+00:08:31,400 --> 00:08:35,496
+difference in fluid pressure, and it
+causes velocity, and so.
+
+116
+00:08:35,496 --> 00:08:41,890
+And this step basically just solved this
+equation times
+
+117
+00:08:41,890 --> 00:08:46,780
+step, each time step on this grid cells
+inside each region, to get an animation.
+
+118
+00:08:48,840 --> 00:08:51,840
+So so original paper was published as
+
+119
+00:08:51,840 --> 00:08:56,370
+sketch based dynamic illus, illustration
+of fluid systems.
+
+120
+00:08:56,370 --> 00:08:58,850
+And if you want to learn more about fluid
+
+121
+00:08:58,850 --> 00:09:01,980
+animation, I recommend you to read some
+text books.
+
+122
+00:09:01,980 --> 00:09:07,137
+One example is Fluid Simulation for
+Computer Graphics by Bridson.
+
+123
+00:09:07,137 --> 00:09:08,810
+And this work is an example
+
+124
+00:09:08,810 --> 00:09:13,450
+of illustrative animation for facilitating
+understanding.
+
+125
+00:09:13,450 --> 00:09:15,370
+And interesting early dated work
+
+126
+00:09:15,370 --> 00:09:18,770
+is, MathPad, which takes mathematical
+[INAUDIBLE]
+
+127
+00:09:18,770 --> 00:09:21,550
+expression, and they automatically
+generates
+
+128
+00:09:21,550 --> 00:09:24,040
+animation, based on the mathematical
+expression.
+
+129
+00:09:26,690 --> 00:09:29,160
+So that's, this is the end of our
+
+130
+00:09:29,160 --> 00:09:33,450
+second week of this Interactive Computer
+Graphics course.
+
+131
+00:09:33,450 --> 00:09:36,856
+We described dia, diagram beautification.
+
+132
+00:09:36,856 --> 00:09:40,958
+And [INAUDIBLE] shape manipulation, and
+also
+
+133
+00:09:40,958 --> 00:09:44,970
+dynamic illustration with a fluid
+simulation.
+
+134
+00:09:44,970 --> 00:09:46,270
+Thank you.

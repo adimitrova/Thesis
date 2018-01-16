@@ -1,0 +1,132 @@
+The punchline with the previous lecture 
+was the POS, meaning position and heading, is central in a lot of different 
+situations. and we made the claim that, other POS-based models, like cars or 
+underwater gliders, or other kinds of autonomous vehicles, can be made to look 
+like a unicycle. Today, I want to make this observation 
+precise and concrete by looking at the car-like robots. 
+So, for instance, there's a picture of our autonomous car out of Georgia Tech. 
+And the question is, how do we make this thing look like a 
+unicycle? Well, the first thing we need is a model. 
+And the standard car kinematics is to add another state to the system, which is the 
+steering handle. So here is the picture that we have in 
+mind. The, the rear wheel wheels are just 
+pointing in whatever direction the car is going which it or the car is facing, 
+which is the orientation phi. The position of the car, well, we're 
+going to take this point which is in the middle in between the front wheels. 
+And this distance here is going to be l. So, the rear wheels are l away from the 
+front wheels. And then, we have this angle which we're 
+going to call psi. So, what we're actually going to end up 
+doing is moving the car in this direction. 
+And the direction then is psi+phi. So, if we make this observation into a 
+model, we first see that the states are x, y, 
+phi, and psi steering angle. The inputs now that we're going to have 
+are, as before, the speed. 
+How quickly is the car going? And, how fast are we turning the steering wheel? 
+I'm going to call this sigma. Angular steering velocity, or steering 
+angle velocity. The model then becomes, 
+well, x-dot and v-dot is as before v cosin and then the direction we're going 
+in. But the direction we're going in is now 
+psi+phi. Then, we have an equation that relates 
+the steering angle and the velocity to the heading of the car. 
+And then, the last component is that we can immediately influence the velocity of 
+the steering angle, so how quickly are we turning the, the wheel. 
+Okay, good. Now, what we're going to do is pick sigma 
+and v in a clever enough way to make this thing become a unicycle. 
+Well, let's start then with the unicycle itself. 
+So, this is our car model. Well, let's start with our unicycle model and do 
+something called curvature control. So, what this means is that if I want to 
+drive along a particular circular arc, let's say that the radius of the arc is 
+raw. And here's the car, it's going, sorry, 
+the unicycle it's going, do, do, do, do, do, right? This is the direction in which 
+it's going so the orientation in the unicycle, this angle is just phi. 
+Well, here's alpha and simple geometry tells me that alpha is just phi minus pi 
+over 2. Okay. 
+If I'm describing how this thing is evolving along a circular arc, 
+then I get, for instance, that the x position is simply, 
+let's say that the center of the circle is x0, y0. 
+Then, x is simply x0 + rho cosine alpha. But because alpha is phi minus pi over 2, 
+I can write this is x dot plus rho sine alpha, 
+thanls to one of my favorite trigonometric identities. 
+Well, if I take the derivative of this with respect to time, I get that, well, 
+this thing the derivative of that is zero. 
+The time derivative of this, phi dot is equal to omega. 
+So, my x dot becomes omega rho cosine phi. 
+But, wait a second. I know what x dot is, 
+it's v cosine phi because it's a unicycle. 
+So now, these two expressions have to be the same. 
+Which means that the radius of the circle is v over omega. 
+Now, a lot of times, we care about what's called curvature. 
+And curvature is 1 over the radius. So, the curvature is simply 1 over rho. 
+Which means that the curvature I would get if I have omega and v, 
+well, it's omega over v. So, the bigger the omega is, the tighter 
+the circle, meaning the higher the curvature. 
+If omega is zero, I'm going at a, in a straight line and the curvature is zero. 
+So, this is the curvature of a unicycle. Okay. Let's figure what the curvature is 
+when we have a car. The only difference now is that the you, 
+the car is actually pointing in this direction but it's going in this 
+direction because of the fact we have a steering angle. 
+So, as before, alpha, this angle where we wanted to say where the car is, is, 
+well, it's phi plus psi minus pi over 2. So, we're doing exactly what we did 
+before. x is x0 plus rho where rho is the radius 
+of the circle, sine phi plus psi. 
+Taking the derivative, we get x dot is rho phi plus psi cosine phi plus psi. 
+Now, let's assume that we're driving on a circle. 
+This means that we're going to hold the steering wheel fixed. 
+Which means that this term is going to be equal to zero because we're not changing 
+the steering angel, right? So, we know that psi dot is zero. 
+Well, we also have the equation for phi dot, it looks like v/l sine phi, sorry, 
+psi, v/l sine psi. And, we also know that x dot should be 
+equal to this expression. So, what do we do? 
+Well, we simply now line up v here and rho phi dot there to get the curvature. 
+Sorry, to get the radius of the circle. 
+So, this becomes l divided by sine psi. And now, we invert this to get the 
+curvature. So, the curvature becomes sine psi over l 
+where psi is this fixed steering angle we're driving. 
+Okay. Then, we have curvature for the unicycle, 
+this thing. Curvature for the car, 
+that thing. Well, we just put them equal, right? Why 
+not? If we put them equal, then we immediately get that sine psi should be 
+equal to omega l/v. So this is the steering angle we, if I 
+have a unicycle that's driving at omega and v, then this is what the steering 
+angle should be to get the same behavior out. Which also means that my psi then 
+should be arcsin of, well, omega l/v. Well, I can't set psi directly. 
+So, what I need to do is say that this is my desired steering angle. 
+And then, I somehow need to make my actual steering angle become close to my 
+desired steering angle. That's the name of the game here, 
+right? So when we get these arcsin, or arcsine 
+sorry. psi d is arc sinus of omega l/v. 
+Okay. Now, arcsin is a little bit of an 
+annoying thing to have to do. So instead, we're not going to do that. 
+So, let's say that I have this thing and I would like d to be close to it. 
+Well, one thing I can do is a simple P-Regulator, which is something you've 
+seen. But 
+this thing involves this arcsin and one thing to note is what happen if actually 
+keep sinus in there while we would get something kind of cleaner, 
+right? So, let's get rid of it and simply say 
+that instead of psi here, I'm going to do sine of psi. 
+And instead of omega d then, I'm going to do sine omega d. 
+So, I keep saying omega, I mean psi, sin psi d, which we know is omega l over v, 
+which goes in there, right? 
+So, we keep the sinuses in there instead of taking arcsin. 
+And the reason for that is that for small enough angles this is, this is roughly 
+equal to the angle itself. So, sinus is, is not a bad thing to do. 
+well, let's see if this works. So over on the left there, you see the 
+unicycle, and over on the right you see the car. 
+And the unicycle has some omega and v, and the car is running the sinus version 
+of P-Regulator. And, as you can see, they're pretty 
+close, which means that we can basically do the same kind of curvature control on 
+the car as we can do on the unicycle. So, the moral of the story with this is, 
+you know what? We're planning. We're getting some direction we want to 
+move in. Here is my direction I want to move in. 
+Well, we know the clever trick. The trick, right? The trick gives us v and 
+omega, which is what are the speeds and angular velocities we would like. 
+We now also know that the curvature is omega over v. So, if you give me v and 
+omega, I can tell you what the curvature is going to look like. 
+Well, let's use this curvature idea to make the car track the unicycle which 
+gives us v and sigma. And, of course, this v is the same as 
+that v. So, we don't have to do anything about 
+it. The only thing we have to do, is to add 
+what sigma should actually be. And this, ladies and gentlemen, allows us 
+to make the car act like a unicycle simply by using this curvature idea. 
+And this generalizes to other types of unicycle like systems where POS, again, 
+is really important.

@@ -1,0 +1,1234 @@
+1
+00:00:17,774 --> 00:00:18,926
+[SOUND]. 
+This week, I'm going to talk about images 
+
+2
+00:00:18,926 --> 00:00:22,205
+and how to display them in processing. 
+in later weeks, I'm going to go into a 
+
+3
+00:00:22,205 --> 00:00:25,544
+lot more detail about how images are 
+represented, but for today it's mostly 
+
+4
+00:00:25,544 --> 00:00:29,042
+about laying images out and then we'll 
+look at how to create animations with 
+
+5
+00:00:29,042 --> 00:00:34,489
+sequence of images. 
+So if you look on my slides here, we've 
+
+6
+00:00:34,489 --> 00:00:39,861
+got an image taken from a sequence that 
+Mick has prepared for his DJ App, DJ App, 
+
+7
+00:00:39,861 --> 00:00:48,262
+and I'm going to show you how you would 
+display this kind of image in processing. 
+
+8
+00:00:48,262 --> 00:00:53,842
+So, Matthew, last week, talked you 
+through loading up sound files and 
+
+9
+00:00:53,842 --> 00:00:58,309
+playing them. 
+In many ways, loading up images is very 
+
+10
+00:00:58,309 --> 00:01:02,042
+similar. 
+You have something called a PImage object 
+
+11
+00:01:02,042 --> 00:01:06,350
+uh,which represents the image and you 
+load that into file. 
+
+12
+00:01:06,350 --> 00:01:16,400
+So what you do is you create a variable 
+of type PImage and you Load that in based 
+
+13
+00:01:16,400 --> 00:01:21,460
+on the file name of that image. 
+And as Matthew noted last week, that 
+
+14
+00:01:21,460 --> 00:01:24,020
+should go in the data folder of your 
+processing sketch. 
+
+15
+00:01:24,020 --> 00:01:27,930
+just as like, just like the audio files 
+that Matthew talked about. 
+
+16
+00:01:27,930 --> 00:01:32,440
+So once you've got the PImage there, then 
+displaying it is very simple, you use the 
+
+17
+00:01:32,440 --> 00:01:36,040
+image command. 
+So the image command, what that does is 
+
+18
+00:01:36,040 --> 00:01:39,930
+it draws the image that you've loaded in, 
+and you can call that in your draw 
+
+19
+00:01:39,930 --> 00:01:44,440
+method. 
+You normally load the file in your setup. 
+
+20
+00:01:44,440 --> 00:01:48,010
+So the main parameter the image command 
+takes is obviously the image you're 
+
+21
+00:01:48,010 --> 00:01:51,080
+going to display. 
+But you can see here that it takes two 
+
+22
+00:01:51,080 --> 00:01:53,630
+other images. 
+to other parameters. 
+
+23
+00:01:53,630 --> 00:01:57,220
+Those are two numbers that give the 
+position at which you want to draw the 
+
+24
+00:01:57,220 --> 00:02:02,400
+image. 
+In fact you can pass yet another two 
+
+25
+00:02:02,400 --> 00:02:07,340
+numbers, which is the size of the image. 
+By default it draws the image as its 
+
+26
+00:02:07,340 --> 00:02:11,870
+actual size in pixels. 
+But you can adjust that to any size you 
+
+27
+00:02:11,870 --> 00:02:18,120
+want by passing in a width and a height. 
+So, I've just said that you can give the 
+
+28
+00:02:18,120 --> 00:02:21,940
+position of an image, but what does that 
+actually mean, because an image is a big 
+
+29
+00:02:21,940 --> 00:02:26,370
+thing what does it mean for an image to 
+be asked to take a pick. 
+
+30
+00:02:26,370 --> 00:02:31,566
+And it turns out you can actually define 
+what that means in a number of ways... 
+
+31
+00:02:31,566 --> 00:02:35,920
+The default, is an image mode called 
+corner. 
+
+32
+00:02:35,920 --> 00:02:40,660
+So, here I'm showing you the command, 
+image mode, which specifies how you draw 
+
+33
+00:02:40,660 --> 00:02:43,920
+an image. 
+And by default that's set to corner. 
+
+34
+00:02:43,920 --> 00:02:48,970
+And what that means is that the position 
+of the image is the top left. 
+
+35
+00:02:48,970 --> 00:02:50,540
+Off the image. 
+Sign on the red dot here. 
+
+36
+00:02:50,540 --> 00:02:57,102
+So if I were to call a image with 
+position 0 0 the top left of the image 
+
+37
+00:02:57,102 --> 00:03:03,769
+will be at the point 0 0 on the screen. 
+You can also use imagemode center. 
+
+38
+00:03:03,769 --> 00:03:08,500
+Which means that You must position the 
+image based on the middle of the image, 
+
+39
+00:03:08,500 --> 00:03:12,010
+and often that's more convenient. 
+It's often more intuitive to think of it, 
+
+40
+00:03:12,010 --> 00:03:18,750
+the center of the image as its position, 
+so in this case, if I were to now call 
+
+41
+00:03:18,750 --> 00:03:22,910
+image zero zero the center of the image 
+would be at zero, zero, which is the top 
+
+42
+00:03:22,910 --> 00:03:25,340
+left of the screen. 
+Which is probably not even what you want. 
+
+43
+00:03:25,340 --> 00:03:31,300
+but if you would set, to set the position 
+to something else you could get an you 
+
+44
+00:03:31,300 --> 00:03:33,740
+could position it well. 
+So I'm going to talk a little bit more 
+
+45
+00:03:33,740 --> 00:03:38,025
+about positioning images. 
+but first let's have a look at an example 
+
+46
+00:03:38,025 --> 00:03:45,670
+of this working in practice. 
+So this is a very simple processing 
+
+47
+00:03:45,670 --> 00:03:49,140
+sketch that involves loading and 
+displaying an image. 
+
+48
+00:03:49,140 --> 00:03:53,470
+I'm creating at the top of the sketch 
+here a p image variable. 
+
+49
+00:03:53,470 --> 00:03:59,120
+I'm loading that in from file. 
+I'm here, I'm doing something clever, I'm 
+
+50
+00:03:59,120 --> 00:04:02,950
+setting the size of the screen to be 
+exactly the same as the size of the 
+
+51
+00:04:02,950 --> 00:04:04,968
+image. 
+So I'm using the image width and the 
+
+52
+00:04:04,968 --> 00:04:09,460
+imadge dot height, to find the width and 
+height of the screen and down here I'm 
+
+53
+00:04:09,460 --> 00:04:16,510
+just drawing the image at position 0,0. 
+And there we are with displaying an 
+
+54
+00:04:16,510 --> 00:04:21,400
+image. 
+I can move the image about by changing 
+
+55
+00:04:21,400 --> 00:04:32,260
+the positions I'm parsing in. 
+I can change its size and I'm going to 
+
+56
+00:04:32,260 --> 00:04:35,040
+show you here that you have to be a 
+little bit careful because if I set its 
+
+57
+00:04:35,040 --> 00:04:40,420
+size to 100 and 100, I'm not maintaining 
+the aspect ratio. 
+
+58
+00:04:40,420 --> 00:04:45,490
+Of the image, so I'm squishing it down. 
+So the, you've gotta be careful to make 
+
+59
+00:04:45,490 --> 00:04:49,080
+sure you're always keeping the same ratio 
+of the width and the height, otherwise 
+
+60
+00:04:49,080 --> 00:04:51,280
+you're going to get a squished or 
+stretched image. 
+
+61
+00:04:51,280 --> 00:05:32,170
+one nice way of doing that is, is this, 
+I'm [NOISE] So here I'm, so here I'm 
+
+62
+00:05:32,170 --> 00:05:36,520
+calculating a height. 
+Of the image that maintains the aspect 
+
+63
+00:05:36,520 --> 00:05:38,510
+ratio based on the width. 
+I'm setting the width to 100. 
+
+64
+00:05:38,510 --> 00:05:43,940
+And what I'm doing is, I'm taking that 
+width of 100 and multiplying it by the 
+
+65
+00:05:43,940 --> 00:05:48,080
+height, and dividing the height of the 
+image and dividing by the width of the 
+
+66
+00:05:48,080 --> 00:05:50,920
+image. 
+Doing that multiply by height and divide 
+
+67
+00:05:50,920 --> 00:05:55,670
+by width Maintains the ratio between the 
+width and the heights of the image. 
+
+68
+00:05:55,670 --> 00:06:02,360
+So this image height is the right height. 
+So that's the image is of width 100. 
+
+69
+00:06:02,360 --> 00:06:06,760
+And it isn't washed or stretched. 
+Okay the last thing I showed you was 
+
+70
+00:06:06,760 --> 00:06:14,559
+image mode 
+So I can set imageMode corner. 
+
+71
+00:06:14,559 --> 00:06:23,680
+ImageMode corner doesn't change anything. 
+So if I do it there, it's exactly the 
+
+72
+00:06:23,680 --> 00:06:25,670
+same. 
+I am going to leave it down a little bit 
+
+73
+00:06:25,670 --> 00:06:32,102
+to make it clear what I am doing. 
+But if I move image mode sensor it would 
+
+74
+00:06:32,102 --> 00:06:37,898
+be different. 
+Actually let's, let's draw it at the 
+
+75
+00:06:37,898 --> 00:06:44,730
+mouse position, and it will be very clear 
+what's happening. 
+
+76
+00:06:44,730 --> 00:06:48,160
+So I'm now drawing the image at the 
+position of the mouse, and the center of 
+
+77
+00:06:48,160 --> 00:06:51,455
+the image is at the mouse position. 
+If I do it at the corner. 
+
+78
+00:06:51,455 --> 00:07:01,120
+The top left of the image is at the mouse 
+position. 
+
+79
+00:07:01,120 --> 00:07:08,730
+Okay, let's have a look a little bit more 
+about how to lay images out nicely, and 
+
+80
+00:07:08,730 --> 00:07:13,148
+how to use these commands to get the 
+right sort of layout feeling, which is. 
+
+81
+00:07:13,148 --> 00:07:23,070
+So getting a correct layout for your, for 
+your screen is really an important part 
+
+82
+00:07:23,070 --> 00:07:27,735
+of getting your app to look nice. 
+So you need to think about it a little 
+
+83
+00:07:27,735 --> 00:07:30,060
+bit. 
+And maybe we'll talk about this a little 
+
+84
+00:07:30,060 --> 00:07:32,984
+more. 
+In his lesson today. 
+
+85
+00:07:32,984 --> 00:07:39,230
+But let's look about how to do this. 
+So, this is an example. 
+
+86
+00:07:39,230 --> 00:07:44,270
+So, If we look at this big rectangle is 
+the processing window, we can draw an 
+
+87
+00:07:44,270 --> 00:07:48,760
+image at the point of our box. 
+Now, one of the most basic things you 
+
+88
+00:07:48,760 --> 00:07:52,320
+might want to do. 
+Is sent to your image in screen either 
+
+89
+00:07:52,320 --> 00:07:58,865
+right in the middle or it's centered in 
+1,1 dimension often sent to it 
+
+90
+00:07:58,865 --> 00:08:02,030
+horizontally. 
+And that's what we're doing here. 
+
+91
+00:08:02,030 --> 00:08:08,320
+So I'm using image mode center, and I'm 
+drawing the position at. 
+
+92
+00:08:08,320 --> 00:08:12,740
+Of the box at width divided by two. 
+Width divided by two is half the width of 
+
+93
+00:08:12,740 --> 00:08:15,540
+the screen. 
+So, it's halfway across the screen. 
+
+94
+00:08:15,540 --> 00:08:20,060
+So, I'm going to send to it horizontally 
+but I want it near the top vertically, 
+
+95
+00:08:20,060 --> 00:08:22,330
+but not at the top. 
+So, I don't want it at zero. 
+
+96
+00:08:22,330 --> 00:08:25,945
+I'm going to add a little margin. 
+So, margin is two of that small value, 
+
+97
+00:08:25,945 --> 00:08:29,780
+1020 pixels. 
+That moves it down to, adds a little edge 
+
+98
+00:08:29,780 --> 00:08:33,120
+between the top of the screen and the 
+window. 
+
+99
+00:08:33,120 --> 00:08:36,800
+How about some other examples? 
+So what if I want to lay things out in 
+
+100
+00:08:36,800 --> 00:08:41,040
+columns? 
+Well, here we're still relative to the 
+
+101
+00:08:41,040 --> 00:08:45,340
+middle of the screen. 
+so we want to position it relative to the 
+
+102
+00:08:45,340 --> 00:08:49,270
+middle of the screen, but we want to put 
+it One side of the the middle of the 
+
+103
+00:08:49,270 --> 00:08:54,830
+screen. 
+So, we want it moved from the middle of 
+
+104
+00:08:54,830 --> 00:08:58,600
+the screen in by a certain margin. 
+Again we add a little margin. 
+
+105
+00:08:58,600 --> 00:09:03,090
+And then by the mid, in, the width of the 
+image divided by 2. 
+
+106
+00:09:03,090 --> 00:09:06,660
+So the width of the image divided by 2 is 
+half the width of the image. 
+
+107
+00:09:06,660 --> 00:09:13,470
+That's half the center of the image. 
+And we're essentially moving the image in 
+
+108
+00:09:13,470 --> 00:09:18,390
+from the center by first the margin and 
+then half it's width. 
+
+109
+00:09:18,390 --> 00:09:27,630
+So it's now half way into, so it's the, 
+it's In from the center by amount given 
+
+110
+00:09:27,630 --> 00:09:31,670
+by the margin. 
+And we can do exactly the same thing 
+
+111
+00:09:31,670 --> 00:09:34,320
+vertically. 
+We can move it down by half the height, 
+
+112
+00:09:34,320 --> 00:09:40,547
+so it's half way down the screen, add a 
+margin, and again add image.height 
+
+113
+00:09:40,547 --> 00:09:45,010
+divided by 2 to move it down by half the 
+height. 
+
+114
+00:09:45,010 --> 00:09:49,690
+If we were, that image.height by two is 
+only there because we're doing image mid 
+
+115
+00:09:49,690 --> 00:09:52,780
+comma, so we're specifying where the 
+center of the image is. 
+
+116
+00:09:52,780 --> 00:09:56,270
+So, that's the kind of thing you might 
+want to do, when you're looking at 
+
+117
+00:09:56,270 --> 00:10:00,780
+positioning images, you need to think 
+relative to points on the screen, like 
+
+118
+00:10:00,780 --> 00:10:05,560
+the halfway point on the screen, width 
+divided by two, height divided by two. 
+
+119
+00:10:05,560 --> 00:10:09,420
+You want to add a little bit of a margin 
+just to sort of give a bit of space to 
+
+120
+00:10:09,420 --> 00:10:15,050
+your layout, and then you may want to 
+shift it around by the size of the image, 
+
+121
+00:10:15,050 --> 00:10:17,740
+or half the size of the image. 
+And Mick will show you a number of 
+
+122
+00:10:17,740 --> 00:10:21,920
+examples of that. 
+So now we're going to look about, at how 
+
+123
+00:10:21,920 --> 00:10:24,429
+to create animations for the sequence of 
+images. 
+
+124
+00:10:25,610 --> 00:10:30,700
+So what is an animation? 
+An animation is essentially something 
+
+125
+00:10:30,700 --> 00:10:34,280
+that moves over time. 
+But when we're looking at film or 
+
+126
+00:10:34,280 --> 00:10:40,280
+computer animation, we're really talking 
+about a sequence of frames over time. 
+
+127
+00:10:40,280 --> 00:10:45,510
+So it's not true movement, it's just a, a 
+sequence of individual images that 
+
+128
+00:10:45,510 --> 00:10:50,010
+present one after another. 
+And this goes back to the glory days of 
+
+129
+00:10:50,010 --> 00:10:54,809
+Disney animation. 
+And form then until now animation has 
+
+130
+00:10:54,809 --> 00:10:57,950
+always been placed as a number of images 
+along a timeline. 
+
+131
+00:10:57,950 --> 00:11:02,870
+and so we can always think of this as 
+image 1. 
+
+132
+00:11:02,870 --> 00:11:06,189
+This is image 2, this is image 3, and 
+each of those has a moment in time. 
+
+133
+00:11:07,750 --> 00:11:11,590
+when we're talking about real images, it 
+looks something like this. 
+
+134
+00:11:11,590 --> 00:11:15,750
+We have a sequence of images. 
+in real animation we have many more of 
+
+135
+00:11:15,750 --> 00:11:19,460
+these to make sure we have smooth 
+movements, but I'm showing this as an 
+
+136
+00:11:19,460 --> 00:11:24,090
+example. 
+And we lay these out in order so we have, 
+
+137
+00:11:24,090 --> 00:11:26,989
+and then we play them sequentially one 
+after the other. 
+
+138
+00:11:28,810 --> 00:11:33,120
+And if we play them fast enough, that 
+gives us the illusion of movement. 
+
+139
+00:11:33,120 --> 00:11:37,000
+So at a technical level in processing, 
+what we need to do is to be able to 
+
+140
+00:11:37,000 --> 00:11:40,940
+collect together a large number of images 
+and then play them one after the other 
+
+141
+00:11:40,940 --> 00:11:45,590
+very quickly. 
+Now,that's doing something a little bit 
+
+142
+00:11:45,590 --> 00:11:49,100
+different from what we were doing last 
+week, so last week, we created a program 
+
+143
+00:11:49,100 --> 00:11:53,720
+where we sort of set it running. 
+And then we interacted with it, we we did 
+
+144
+00:11:53,720 --> 00:11:58,610
+mouse drag, mouse movements, and those 
+most mouse movements resulted in changes 
+
+145
+00:12:00,030 --> 00:12:04,560
+to the state of the program, changes to 
+what was drawn, that we could then see. 
+
+146
+00:12:04,560 --> 00:12:08,750
+But when we're playing in animation, we 
+want stuff to happen independently of 
+
+147
+00:12:08,750 --> 00:12:13,290
+whether we're drawing stuff or not. 
+We want it to just play along. 
+
+148
+00:12:13,290 --> 00:12:17,520
+So, we're not responding to mouse drag or 
+mouse pressed events. 
+
+149
+00:12:17,520 --> 00:12:21,590
+We need the program to do its own thing 
+independently. 
+
+150
+00:12:21,590 --> 00:12:25,070
+And, what we use is a method called draw, 
+and this is a really fundamental part of 
+
+151
+00:12:25,070 --> 00:12:30,790
+processing, this is, a method that is 
+called every frame up to 60 times a 
+
+152
+00:12:30,790 --> 00:12:36,690
+second. 
+And is used to draw a new image time 
+
+153
+00:12:36,690 --> 00:12:40,440
+after time after time. 
+And as we're changing those images 
+
+154
+00:12:40,440 --> 00:12:44,380
+slightly each time we get the illusion of 
+animation. 
+
+155
+00:12:44,380 --> 00:12:49,030
+So in the draw method, we're going to 
+draw our image, and then we're then the 
+
+156
+00:12:49,030 --> 00:12:52,640
+draw method automatically repeats and 
+repeats and repeats. 
+
+157
+00:12:52,640 --> 00:12:54,615
+so that we get that illusion of 
+animation. 
+
+158
+00:12:54,615 --> 00:12:59,810
+But we can't obviously be drawing the 
+same image every time. 
+
+159
+00:12:59,810 --> 00:13:04,250
+We need a lot of images. 
+To represent a large number of images, we 
+
+160
+00:13:04,250 --> 00:13:08,080
+use a data structure called an array. 
+Now, if you're already familiar with 
+
+161
+00:13:08,080 --> 00:13:11,080
+programming, you're probably familiar 
+with arrays. 
+
+162
+00:13:11,080 --> 00:13:14,120
+But if you're not familiar with them, 
+please look at the additional lecture 
+
+163
+00:13:14,120 --> 00:13:19,170
+I've put about arrays. 
+Okay, we create an array and an array is 
+
+164
+00:13:19,170 --> 00:13:22,780
+a large block of memory that has a 
+numbered sequence of elements. 
+
+165
+00:13:22,780 --> 00:13:28,380
+So we've got an array of images. 
+So we've got a bunch of images Each of 
+
+166
+00:13:28,380 --> 00:13:33,130
+which has it's number in the order and 
+[SOUND] because of the way arrays work we 
+
+167
+00:13:33,130 --> 00:13:34,848
+start at 0. 
+So you have 0s. 
+
+168
+00:13:34,848 --> 00:13:39,560
+Image 0, image 1, image 2, image 3. 
+The other thing we need is to be able to 
+
+169
+00:13:39,560 --> 00:13:42,730
+keep track of where we are in the image 
+sequence. 
+
+170
+00:13:42,730 --> 00:13:48,480
+Which, which image we can't reclaim. 
+And to do that, we keep in variable which 
+
+171
+00:13:48,480 --> 00:13:52,830
+is the number of the current image. 
+It's an int because it has be a whole 
+
+172
+00:13:52,830 --> 00:13:57,000
+number to be that, that image sequence. 
+So we got this variable current image 
+
+173
+00:13:57,000 --> 00:14:03,860
+which is keeping track of where we are, 
+and then when we, we draw a frame. 
+
+174
+00:14:03,860 --> 00:14:08,400
+So when we, in our draw method. 
+We just draw the current image. 
+
+175
+00:14:08,400 --> 00:14:12,060
+We use the image command, anim 
+currentimage, and hold the position in 
+
+176
+00:14:12,060 --> 00:14:15,360
+there that we've put a position in there. 
+And that will draw the image we are 
+
+177
+00:14:15,360 --> 00:14:16,296
+currently playing. 
+So, that's doing the basics of what we 
+
+178
+00:14:16,296 --> 00:14:19,938
+need to do. 
+The only thing now is that we're not 
+
+179
+00:14:19,938 --> 00:14:25,990
+actually animating because nothing is 
+changing. 
+
+180
+00:14:25,990 --> 00:14:30,530
+So the core to animation is that every 
+frame when we do something, something has 
+
+181
+00:14:30,530 --> 00:14:32,960
+to change. 
+So that we get a new image. 
+
+182
+00:14:32,960 --> 00:14:37,535
+And in this case it's very simple. 
+All we need to do is move on to the next 
+
+183
+00:14:37,535 --> 00:14:40,760
+image. 
+And how we do that is simply add one to 
+
+184
+00:14:40,760 --> 00:14:45,880
+our current image available. 
+So that our image steps onto the next 
+
+185
+00:14:45,880 --> 00:14:48,510
+one. 
+You'll note I'm going to use this syntax 
+
+186
+00:14:48,510 --> 00:14:53,210
+current image plus equals 1 that just 
+means adding 1 if you're not familiar 
+
+187
+00:14:53,210 --> 00:14:59,140
+with price signal Java syntax. 
+So, each time draw is called, so every 
+
+188
+00:14:59,140 --> 00:15:03,110
+frame, up 60 times a second, we're adding 
+one to our current image. 
+
+189
+00:15:03,110 --> 00:15:06,500
+So I'm moving on to the next image, and 
+displaying that one. 
+
+190
+00:15:06,500 --> 00:15:09,610
+Moving on to the next image, displaying 
+that one, and the next one. 
+
+191
+00:15:09,610 --> 00:15:15,310
+And carry on. 
+To large number of images in our examples 
+
+192
+00:15:15,310 --> 00:15:18,031
+we'll be looking at, sort of, over a 
+hundred images. 
+
+193
+00:15:18,031 --> 00:15:24,405
+So, this is an example of what our 
+program would look like in setup. 
+
+194
+00:15:24,405 --> 00:15:29,740
+We, we create our, our our array of 
+images, and we start our current image at 
+
+195
+00:15:29,740 --> 00:15:34,279
+zero. 
+In draw, we draw the current image.That 
+
+196
+00:15:34,279 --> 00:15:37,839
+gives us the currentimage. 
+And then we add 1 to it. 
+
+197
+00:15:37,839 --> 00:15:43,713
+And then we can still use things, like 
+mousePressed and mouseDragged to control 
+
+198
+00:15:43,713 --> 00:15:47,451
+the playback. 
+For example, when we press the mouse we 
+
+199
+00:15:47,451 --> 00:15:51,795
+could set current image to zero. 
+Which would reset playing from the very 
+
+200
+00:15:51,795 --> 00:15:56,880
+beginning. 
+Before I show you and example, I want to 
+
+201
+00:15:56,880 --> 00:16:03,350
+go over one last thin, which is looping. 
+so it's fine adding one to the current 
+
+202
+00:16:03,350 --> 00:16:05,880
+position. 
+But what happens when we get to the end 
+
+203
+00:16:05,880 --> 00:16:07,700
+of our array? 
+When we run out of images. 
+
+204
+00:16:08,970 --> 00:16:11,870
+If we try to access an image that's not 
+in your way. 
+
+205
+00:16:11,870 --> 00:16:15,590
+So that's, so we're getting a current 
+position which is more than the number of 
+
+206
+00:16:15,590 --> 00:16:18,190
+images we've got. 
+We'll get an error, your program will 
+
+207
+00:16:18,190 --> 00:16:21,500
+crash. 
+So we need to do something about that. 
+
+208
+00:16:21,500 --> 00:16:25,880
+We could just stop the animation, but a 
+common thing we might want to do is loop. 
+
+209
+00:16:25,880 --> 00:16:28,740
+So, this is just an example of some 
+codes. 
+
+210
+00:16:28,740 --> 00:16:36,130
+If we just check if the current Position 
+is more than the length of the image and 
+
+211
+00:16:36,130 --> 00:16:41,950
+if it is, we set the current Position 
+back to zero so we reset it back to zero. 
+
+212
+00:16:41,950 --> 00:16:48,300
+So, let's have a look at that in practice 
+so here is our animation sketch, I have 
+
+213
+00:16:48,300 --> 00:16:53,140
+written a little example. 
+Function that loads images. 
+
+214
+00:16:53,140 --> 00:16:57,740
+you can have that in your example pack. 
+You don't have to rewrite that. 
+
+215
+00:16:57,740 --> 00:17:01,510
+We load the images, passing in an im, 
+image format. 
+
+216
+00:17:01,510 --> 00:17:06,110
+So this is the name will look like this, 
+movie then the number then JPG, and this 
+
+217
+00:17:06,110 --> 00:17:13,420
+is the number of images. 
+Then we Each frame will display and 
+
+218
+00:17:13,420 --> 00:17:17,450
+image. 
+We add one to it, and we go back to the 
+
+219
+00:17:17,450 --> 00:17:30,760
+beginning and leave. 
+And mouse press will just reset to 0. 
+
+220
+00:17:30,760 --> 00:17:34,180
+So, and the mouse press function, where 
+we set it to 0, when the mouse gets 
+
+221
+00:17:34,180 --> 00:17:39,565
+first. 
+So I can restart it when the mouse 
+
+222
+00:17:39,565 --> 00:17:42,520
+button's pressed but otherwise it will 
+play in a loop, the animation. 
+
+223
+00:17:44,150 --> 00:17:47,160
+There's one last thing I'd like to cover, 
+which is playing and pausing an 
+
+224
+00:17:47,160 --> 00:17:49,550
+animation. 
+So sometimes you want to stop the 
+
+225
+00:17:49,550 --> 00:17:55,260
+animation temporarilty and restart it. 
+And to do that, we use what's called a 
+
+226
+00:17:55,260 --> 00:18:00,200
+boolean variable So that's a variable 
+that can only take two values, true and 
+
+227
+00:18:00,200 --> 00:18:04,030
+false. 
+And it acts like an on-off switch, so, 
+
+228
+00:18:04,030 --> 00:18:06,890
+when playing is true, it means it's on. 
+We are playing. 
+
+229
+00:18:06,890 --> 00:18:10,430
+When playing is false, it means we're not 
+playing. 
+
+230
+00:18:10,430 --> 00:18:15,050
+we can use this boolean variable as the 
+input as an if statement like this. 
+
+231
+00:18:15,050 --> 00:18:18,680
+We can use, if playing. 
+And that just means if playing is true 
+
+232
+00:18:19,820 --> 00:18:25,000
+then we move on the currentImage. 
+If playing is not true, then we're doing 
+
+233
+00:18:25,000 --> 00:18:28,860
+nothing. 
+So this is what is controlling playing. 
+
+234
+00:18:28,860 --> 00:18:34,720
+and then we can turn playing on and off 
+in mousePressed, and I am using some 
+
+235
+00:18:34,720 --> 00:18:39,740
+clever here, it's called the not operator 
+And that, what that does is it takes a 
+
+236
+00:18:39,740 --> 00:18:43,680
+Boolean variable, and it does the 
+opposite of it. 
+
+237
+00:18:43,680 --> 00:18:49,190
+So it switches, we're taking playing here 
+and we're switching it, accessing it to 
+
+238
+00:18:49,190 --> 00:18:52,760
+the opposite of playing. 
+So if playing is false, it will become 
+
+239
+00:18:52,760 --> 00:18:55,935
+true. 
+If playing is true, it will become false. 
+
+240
+00:18:55,935 --> 00:19:03,520
+And I will show you How that works in 
+practice, here. 
+
+241
+00:19:03,520 --> 00:19:10,460
+So we've got a, a processing sketch which 
+again, loads images, but we have a 
+
+242
+00:19:10,460 --> 00:19:19,390
+Boolean variable here, and we've wrapped 
+our playing code in an in an if statement 
+
+243
+00:19:19,390 --> 00:19:24,345
+and in [UNKNOWN] we're just toggling so 
+we're turning playing from true to flase 
+
+244
+00:19:24,345 --> 00:19:29,075
+or flase to true. 
+And I can just click it to turn it on and 
+
+245
+00:19:29,075 --> 00:19:33,760
+off like this. 
+Okay, so Matthew's going to tell you a 
+
+246
+00:19:33,760 --> 00:19:38,760
+little bit about Doing some work in audio 
+that we need today's lesson and then 
+
+247
+00:19:38,760 --> 00:19:53,378
+we'll, Mick will show you an example how 
+to use all this to create a VJR [MUSIC] 

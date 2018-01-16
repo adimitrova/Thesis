@@ -1,0 +1,599 @@
+1
+00:00:00,012 --> 00:00:04,969
+The outcome of the last handful of 
+lectures was that we can really use a 
+
+2
+00:00:04,969 --> 00:00:09,693
+layered architecture to make our robots 
+act like a simpler system. 
+
+3
+00:00:09,693 --> 00:00:14,118
+Like x dot = u, in our case. 
+And they key idea was to plan using the 
+
+4
+00:00:14,118 --> 00:00:17,661
+simple dynamics. 
+And then track using some clever 
+
+5
+00:00:17,661 --> 00:00:21,443
+controller. 
+And what we saw last time was we could 
+
+6
+00:00:21,443 --> 00:00:27,894
+use a PID regulator, for instance for, 
+controlling the heading of the robot, and 
+
+7
+00:00:27,894 --> 00:00:33,664
+then simply set the velocity of the robot 
+equal to the magnitude of the planned 
+
+8
+00:00:33,664 --> 00:00:37,558
+velocity, u. 
+Well, today, I want to discuss another 
+
+9
+00:00:37,558 --> 00:00:42,172
+twist to this theme. 
+In fact, I want to be even more clever. 
+
+10
+00:00:42,172 --> 00:00:47,974
+And there is a particularly eloquent and 
+cute way you can think about unicycles. 
+
+11
+00:00:47,974 --> 00:00:53,284
+And in general I'm not a big fan of 
+clever tricks for the sake of clever 
+
+12
+00:00:53,284 --> 00:00:58,362
+tricks, but because differential drive 
+mobile robots are so common. 
+
+13
+00:00:58,362 --> 00:01:04,241
+And we know that unicycles model them 
+well, then this trick becomes more than 
+
+14
+00:01:04,241 --> 00:01:10,156
+just a piece of mathematical curiosity, 
+becomes an effective way of thinking 
+
+15
+00:01:10,156 --> 00:01:14,492
+about a large, a large and rich class of 
+mobile robots. 
+
+16
+00:01:14,492 --> 00:01:20,650
+So, instead of doing tracking, we're 
+going to transform the unicycle dynamics. 
+
+17
+00:01:20,650 --> 00:01:26,757
+So recall that we have the position xy, 
+we have the heading phi, and we have the 
+
+18
+00:01:26,757 --> 00:01:31,683
+dynamics as seen here. 
+Well, typically, what we've seen so far 
+
+19
+00:01:31,683 --> 00:01:37,539
+is, we want the robot not to slam into 
+things, we want the robot to end up on 
+
+20
+00:01:37,539 --> 00:01:40,821
+top of goal points we want the robot to 
+folow walls. 
+
+21
+00:01:40,821 --> 00:01:45,715
+We don't particularly care which way it's 
+pointing, so the first thing we're going 
+
+22
+00:01:45,715 --> 00:01:50,446
+to do is say, you know what let's just 
+pretend that we don't worry about 
+
+23
+00:01:50,446 --> 00:01:54,412
+orientation whatsoever. 
+Well, we still have a rather awkward 
+
+24
+00:01:54,412 --> 00:01:59,077
+looking nonlinear differential equation 
+but let, now, pick another point. 
+
+25
+00:01:59,077 --> 00:02:03,362
+Let's not pick x, y, which as you 
+remember, was really the point right in 
+
+26
+00:02:03,362 --> 00:02:06,902
+between the wheels of the 
+differential-drive mobile robot. 
+
+27
+00:02:06,902 --> 00:02:11,000
+What if we picked another point, instead? 
+Let's pick this point. 
+
+28
+00:02:11,000 --> 00:02:15,558
+The red point here. 
+And let's say, that the distance between, 
+
+29
+00:02:15,558 --> 00:02:20,680
+the red point and the black point. 
+That's, that's some distance l, where l 
+
+30
+00:02:20,680 --> 00:02:24,778
+is some small number. 
+What would happen if we looked at this 
+
+31
+00:02:24,778 --> 00:02:30,520
+new point, instead? Well, let's place the 
+new point at x tilde y tilde The next 
+
+32
+00:02:30,520 --> 00:02:34,674
+tilde is simply x + l cosine phi. 
+Simple geometry. 
+
+33
+00:02:34,674 --> 00:02:40,413
+And y tilde is y + l sine phi. 
+Where, again, l is the distance removing 
+
+34
+00:02:40,413 --> 00:02:44,166
+our point along the heading of, of the 
+robot. 
+
+35
+00:02:44,166 --> 00:02:48,672
+Well, let's see what the dynamics of this 
+new point. 
+
+36
+00:02:48,672 --> 00:02:54,665
+The tilde point actually looks like. 
+Well, this is our old dynamics this how X 
+
+37
+00:02:54,665 --> 00:03:00,136
+and Y and phata actually behaves. 
+This is our new point and now, what we 
+
+38
+00:03:00,136 --> 00:03:03,662
+need to do is put dots over the tildes to 
+see. 
+
+39
+00:03:03,662 --> 00:03:10,025
+What do the time derivatives actually 
+look like? Well, it's not so complicated. 
+
+40
+00:03:10,025 --> 00:03:16,068
+X till the dot, well, it's x dot + the 
+time derivative of this thing, and, the 
+
+41
+00:03:16,068 --> 00:03:21,655
+time derivative of cosine phi, and 
+remember phi is a function of t, if I 
+
+42
+00:03:21,655 --> 00:03:27,117
+take ddt of this thing, then. 
+What I get, is, I get - phi dot * sin 
+
+43
+00:03:27,117 --> 00:03:31,017
+phi. 
+Well, that's what we have here, x tilde 
+
+44
+00:03:31,017 --> 00:03:36,617
+dot, is x dot - l phi dot sin phi, and 
+similarly for y, tilde dot. 
+
+45
+00:03:36,617 --> 00:03:44,042
+Alright, this still doesn't seem all that 
+helpful, to be completely honest, so lets 
+
+46
+00:03:44,042 --> 00:03:49,303
+simplify this a little bit. 
+Well, first of all, I know what x dot is. 
+
+47
+00:03:49,303 --> 00:03:54,279
+It's this thing here, so instead of that, 
+I'm just plugging in v cosine phi. 
+
+48
+00:03:54,279 --> 00:03:57,305
+I also know what phi dot is. 
+It's, it's omega. 
+
+49
+00:03:57,305 --> 00:04:01,597
+So, now I end up with a slightly, less 
+scary-looking expression. 
+
+50
+00:04:01,597 --> 00:04:04,512
+And, then we do the same thing for y 
+tilde dot. 
+
+51
+00:04:04,512 --> 00:04:10,491
+Well okay, where does this lead us? Well, 
+let's assume for a second that we can 
+
+52
+00:04:10,491 --> 00:04:16,112
+control this new point directly. 
+That this new point is indeed, the point 
+
+53
+00:04:16,112 --> 00:04:21,303
+that we before have called x dot = to u, 
+as a way of generating reference 
+
+54
+00:04:21,303 --> 00:04:24,857
+velocities. 
+Let's assume that we can actually 
+
+55
+00:04:24,857 --> 00:04:30,515
+immediately control this new point. 
+What would that tell us? Well, x tilde 
+
+56
+00:04:30,515 --> 00:04:36,042
+dot as you recall, was given by this 
+mouthful of an expression. 
+
+57
+00:04:36,042 --> 00:04:42,405
+Well, let's set this equal to u1 which is 
+our desired velocity in the x direction. 
+
+58
+00:04:42,405 --> 00:04:48,680
+And similarly, we set y tilde dot = u2. 
+Now, all we need to do at least, well I 
+
+59
+00:04:48,680 --> 00:04:52,507
+can say all we need to do, I don't know 
+if we can do it. 
+
+60
+00:04:52,507 --> 00:04:58,303
+But, all we would like to do is actually 
+solve this equation with respect to V and 
+
+61
+00:04:58,303 --> 00:05:01,762
+omega. 
+Because, if we did that, we would relate 
+
+62
+00:05:01,762 --> 00:05:07,838
+the actual velocities of the unicycle to 
+these u1 and u2 velocities, which are The 
+
+63
+00:05:07,838 --> 00:05:12,212
+planned velocities. 
+So let's see if we can do that. 
+
+64
+00:05:12,212 --> 00:05:18,166
+Well the first thing we do is we pull out 
+the cosine and the sine terms. 
+
+65
+00:05:18,166 --> 00:05:24,339
+So we get that cosine * v - sine * l 
+omega well that's that thing, that's 
+
+66
+00:05:24,339 --> 00:05:28,102
+equal to u1. 
+And similarly for the y tilde dot, or the 
+
+67
+00:05:28,102 --> 00:05:34,902
+u2 dot, sorry, the u2 equation. 
+I don't know, this equation still looks a 
+
+68
+00:05:34,902 --> 00:05:41,047
+little hairy but, as you hopefully 
+recall, this matrix right here is a 
+
+69
+00:05:41,047 --> 00:05:45,876
+rather nice matrix. 
+It is, in fact, a rotation matrix. 
+
+70
+00:05:45,876 --> 00:05:51,685
+All it's doing is it's taking a vector 
+and rotating it theta degrees. 
+
+71
+00:05:51,685 --> 00:05:58,496
+Actually, it's rotating it phi degrees, 
+but it is a very well behaved and well 
+
+72
+00:05:58,496 --> 00:06:00,767
+understood matrix, 
+okay? 
+
+73
+00:06:00,767 --> 00:06:05,749
+I don't particularly like l there, 
+because l is not part of what I would 
+
+74
+00:06:05,749 --> 00:06:08,602
+like. 
+I would like v and omega and, no l. 
+
+75
+00:06:08,602 --> 00:06:14,129
+So, what I can do, is I can rewrite this 
+thing as, a matrix, a diagonal matrix, 
+
+76
+00:06:14,129 --> 00:06:19,818
+with one on the first diagonal, and l on 
+the second diagonal, simply times v, and 
+
+77
+00:06:19,818 --> 00:06:21,662
+omega. 
+And if I do that, 
+
+78
+00:06:21,662 --> 00:06:27,816
+I get the following expression. 
+Rotation matrix phi, sorry, yeah, phi, * 
+
+79
+00:06:27,816 --> 00:06:32,281
+this matrix, v omega. 
+Well, these are all invertable. 
+
+80
+00:06:32,281 --> 00:06:38,636
+What is the inverse of the rotation 
+matrix? Well, the rotation matrix rotates 
+
+81
+00:06:38,636 --> 00:06:43,545
+something phi degrees. 
+Well, the inverse would be to rotate it 
+
+82
+00:06:43,545 --> 00:06:47,264
+back, right? Then you're back where you 
+started. 
+
+83
+00:06:47,264 --> 00:06:51,394
+That's -5. 
+So, R inverse phi always exists and it 
+
+84
+00:06:51,394 --> 00:06:54,870
+corresponds to rotating it back five 
+degrees. 
+
+85
+00:06:54,870 --> 00:07:00,721
+So, we can invert this matrix easily. 
+Well, this is a diagonal matrix, and the 
+
+86
+00:07:00,721 --> 00:07:07,448
+inverse of this thing is simply the 
+inverse of the diagonal, 1 / 1 00 1 / l. 
+
+87
+00:07:07,448 --> 00:07:11,472
+So the inverse of this thing is also 
+trivial. 
+
+88
+00:07:11,472 --> 00:07:18,094
+That means that I can actually solve 
+directly for V and omega, no problem. 
+
+89
+00:07:18,094 --> 00:07:25,048
+No questions asked, no tracking, no 
+approximation, just bam, I get the right 
+
+90
+00:07:25,048 --> 00:07:29,764
+velocities out. 
+So if I have my low level plan producing 
+
+91
+00:07:29,764 --> 00:07:35,035
+U1 and U2, then I can transform that into 
+V and omega directly. 
+
+92
+00:07:35,035 --> 00:07:40,982
+And this seems almost too good to be 
+true, and it is too good to be true, 
+
+93
+00:07:40,982 --> 00:07:47,528
+because remember We're actually not 
+making x y behave perfectly, we're making 
+
+94
+00:07:47,528 --> 00:07:52,701
+this new point that we call x tilde y 
+tilde, we're making that point behave 
+
+95
+00:07:52,701 --> 00:07:56,848
+perfectly. 
+And then we have l, that tells us how far 
+
+96
+00:07:56,848 --> 00:08:02,652
+away we are, and by making l small, we're 
+getting closer to x and y, so you 
+
+97
+00:08:02,652 --> 00:08:06,167
+practice. 
+You pick l tiny and then you go to work. 
+
+98
+00:08:06,167 --> 00:08:11,812
+So what does this mean, it means that 
+before we had a planner we used our 
+
+99
+00:08:11,812 --> 00:08:18,242
+complicated navigation algorithm to spid 
+out u1 and u2 all right and then we had a 
+
+100
+00:08:18,242 --> 00:08:24,965
+tracker and in our case we use the PID 
+tracker for the heading and simply set 
+
+101
+00:08:24,965 --> 00:08:31,123
+the velocity equal to the magnitude of u 
+and from that we got v and omega out. 
+
+102
+00:08:31,123 --> 00:08:34,856
+Well now, we don't have to deal with 
+trackers. 
+
+103
+00:08:34,856 --> 00:08:41,344
+We've actually replaced second part with 
+a transformation of the unicycle where 
+
+104
+00:08:41,344 --> 00:08:47,403
+we're simply saying that V and omega, or 
+these 2 matrices * u1, u2. 
+
+105
+00:08:47,403 --> 00:08:54,473
+And again, these matrices are, not 
+particularly complicated to compute. 
+
+106
+00:08:54,473 --> 00:09:00,452
+This, is simply the rotation matrix and 
+phi of course we have. 
+
+107
+00:09:00,452 --> 00:09:03,704
+This is one, easy to compute, it's just 
+one. 
+
+108
+00:09:03,704 --> 00:09:09,206
+And ;; is something that we decide, so 
+what we put here, this is 1 / l, l should 
+
+109
+00:09:09,206 --> 00:09:14,742
+be small so 1 / l should be some large 
+number, right? And the larger this number 
+
+110
+00:09:14,742 --> 00:09:19,678
+becomes the closer the tilde the point 
+and the actual point approach each other. 
+
+111
+00:09:19,678 --> 00:09:24,198
+I should put out a little warning though 
+that if you make this number too large, 
+
+112
+00:09:24,198 --> 00:09:28,756
+then you get a behavior where the robot 
+starts turning quite a bit, because this 
+
+113
+00:09:28,756 --> 00:09:33,034
+going to hit omega directly. 
+Okay but, this gives us a direct 
+
+114
+00:09:33,034 --> 00:09:37,832
+transformation, instead of a tracker, to 
+produce the desired velocities. 
+
+115
+00:09:37,832 --> 00:09:43,039
+And the reason why I like this trick, and 
+why this trick shouldn't be thought of as 
+
+116
+00:09:43,039 --> 00:09:48,921
+simply, an interesting little curiosity 
+because it is kind of interesting is that 
+
+117
+00:09:48,921 --> 00:09:55,385
+so many robots are differential drive 
+robots, and this transformation applies 
+
+118
+00:09:55,385 --> 00:10:01,606
+to all of them, because all of them can 
+be mapped onto the unicycle dynamics. 
+
+119
+00:10:01,606 --> 00:10:07,182
+So, that takes care of, how do we 
+actually go from low-level plans. 
+
+120
+00:10:07,182 --> 00:10:15,542
+To executable, desired velocities for 
+differential drive mobile robots. 

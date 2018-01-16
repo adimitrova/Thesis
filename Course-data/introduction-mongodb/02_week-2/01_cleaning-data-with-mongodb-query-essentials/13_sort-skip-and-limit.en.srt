@@ -1,0 +1,481 @@
+1
+00:00:00,250 --> 00:00:03,000
+In this lesson, I want to talk
+about how mflix queries MongoDB
+
+2
+00:00:03,000 --> 00:00:05,470
+to generate its homepage.
+
+3
+00:00:05,470 --> 00:00:10,350
+By examining how the mflix page is
+generated, we'll actually get to
+
+4
+00:00:10,350 --> 00:00:15,350
+learn about the following cursor methods,
+sort, skip, and limits.
+
+5
+00:00:15,350 --> 00:00:16,110
+So let's take a closer look at this page.
+
+6
+00:00:16,110 --> 00:00:19,810
+I want to point out a few
+interesting characteristics.
+
+7
+00:00:19,810 --> 00:00:25,620
+First, you'll notice that there
+are 46,000 movies in mflix,
+
+8
+00:00:25,620 --> 00:00:28,940
+but this homepage is only
+displaying the first 20.
+
+9
+00:00:28,940 --> 00:00:32,320
+Moreover, you'll notice that
+the 20 that we're displaying
+
+10
+00:00:32,320 --> 00:00:35,700
+are all very well known
+films here in the US.
+
+11
+00:00:35,700 --> 00:00:40,062
+And the last thing I want to point out,
+is if we go ahead and scroll down and
+
+12
+00:00:40,062 --> 00:00:44,937
+click Next Page, you'll see that the next
+page displays the next 20 movies,
+
+13
+00:00:44,937 --> 00:00:46,640
+movies 21 through 40.
+
+14
+00:00:46,640 --> 00:00:52,064
+So let's go ahead and look at the code of
+mflix to see a little bit how this works.
+
+15
+00:00:52,064 --> 00:00:54,875
+So let's go ahead and
+take a look at mflix.py,
+
+16
+00:00:54,875 --> 00:00:58,430
+this is where our function
+exist to generate the homepage.
+
+17
+00:00:58,430 --> 00:00:59,633
+And this is the function,
+
+18
+00:00:59,633 --> 00:01:02,868
+and we know this is the right function
+because of app.route being /.
+
+19
+00:01:02,868 --> 00:01:05,930
+So whenever you go to the route,
+part of the website,
+
+20
+00:01:05,930 --> 00:01:09,930
+the homepage,
+this is the method that will get called.
+
+21
+00:01:09,930 --> 00:01:12,210
+In the first 25 lines or so
+
+22
+00:01:12,210 --> 00:01:16,700
+here are just about making sure that
+we understand what page we're on.
+
+23
+00:01:16,700 --> 00:01:19,210
+Seeing if a certain genre was selected or
+
+24
+00:01:19,210 --> 00:01:22,960
+seeing if a query was
+made about a text search.
+
+25
+00:01:22,960 --> 00:01:25,230
+But we're going to ignore all of that for
+the most part.
+
+26
+00:01:25,230 --> 00:01:28,920
+Really all we care about here
+is this call to get movies.
+
+27
+00:01:28,920 --> 00:01:31,525
+And this is where we actually
+make the call to the database.
+
+28
+00:01:31,525 --> 00:01:32,410
+So as you can see here,
+
+29
+00:01:32,410 --> 00:01:36,670
+we pass in three parameters,
+pass in our filters as we set them up.
+
+30
+00:01:36,670 --> 00:01:38,952
+We pass in the page that
+we're currently on, and
+
+31
+00:01:38,952 --> 00:01:41,020
+we pass how many movies
+we want on each page.
+
+32
+00:01:41,020 --> 00:01:44,089
+And that's going to return
+to us a list of movies,
+
+33
+00:01:44,089 --> 00:01:48,170
+as well as the total number of
+all the movies in the collection.
+
+34
+00:01:49,240 --> 00:01:51,880
+So let's go ahead and look at get movies.
+
+35
+00:01:51,880 --> 00:01:57,340
+This is in db.py, and
+here you can see the get movies function.
+
+36
+00:01:57,340 --> 00:02:01,120
+Now let's go ahead and copy this and
+put it in our Jupyter Notebook so
+
+37
+00:02:01,120 --> 00:02:03,930
+you can actually play around
+with the function a little bit.
+
+38
+00:02:03,930 --> 00:02:07,520
+So the first things I'm going to do here
+is define the parameters that we go ahead
+
+39
+00:02:07,520 --> 00:02:09,460
+and pass in to get movies.
+
+40
+00:02:09,460 --> 00:02:12,430
+So this is a very simple example,
+we're not making a text search or
+
+41
+00:02:12,430 --> 00:02:14,110
+searching by genre.
+
+42
+00:02:14,110 --> 00:02:16,130
+So our filter's just going to
+be an empty dictionary.
+
+43
+00:02:16,130 --> 00:02:17,756
+And, we want this query to be for
+the homepage.
+
+44
+00:02:17,756 --> 00:02:20,430
+So we're going to say page is = to 0.
+
+45
+00:02:20,430 --> 00:02:24,100
+And just like on the homepage,
+we're going to render 20 movies per page.
+
+46
+00:02:24,100 --> 00:02:28,300
+Now I've gone ahead and simplified the get
+movies function a little bit, by removing
+
+47
+00:02:28,300 --> 00:02:31,040
+the function and kind of splitting
+up the code across multiple cells,
+
+48
+00:02:31,040 --> 00:02:33,620
+so that we can more easily
+see what's happening.
+
+49
+00:02:33,620 --> 00:02:37,975
+And in this first cell, this is
+where we ensure that the homepage is
+
+50
+00:02:37,975 --> 00:02:40,985
+filled with movies familiar to our users.
+
+51
+00:02:40,985 --> 00:02:43,266
+So by default, when we query MongoDB,
+
+52
+00:02:43,266 --> 00:02:46,735
+the documents are returned
+without any particular order.
+
+53
+00:02:46,735 --> 00:02:50,152
+But to make sure that these
+movies are relevant to our users,
+
+54
+00:02:50,152 --> 00:02:54,405
+here we're going to sort them by
+the number of reviews they have.
+
+55
+00:02:54,405 --> 00:02:57,565
+Now obviously, there are many different
+ways that we could implement this but
+
+56
+00:02:57,565 --> 00:03:01,780
+this naive approach works pretty well for
+this example application.
+
+57
+00:03:01,780 --> 00:03:04,641
+And as you can see,
+our sort key uses dot notation.
+
+58
+00:03:04,641 --> 00:03:07,996
+And that's because we're
+sorting on a value that is
+
+59
+00:03:07,996 --> 00:03:11,480
+nested through a series
+of nested documents.
+
+60
+00:03:11,480 --> 00:03:16,840
+And this is the exact same dot notation
+that we use when we're filtering for
+
+61
+00:03:16,840 --> 00:03:18,230
+embedded documents.
+
+62
+00:03:18,230 --> 00:03:20,598
+In this case,
+we're now using it for sorting.
+
+63
+00:03:20,598 --> 00:03:23,263
+So very simply,
+we just pass in our filters to find, and
+
+64
+00:03:23,263 --> 00:03:25,886
+then we append the sort method,
+passing our sort key.
+
+65
+00:03:25,886 --> 00:03:29,286
+And then, of course, similar to
+how we do sorting in aggregation,
+
+66
+00:03:29,286 --> 00:03:31,530
+we also have to pass a direction.
+
+67
+00:03:31,530 --> 00:03:35,980
+So we want to sort things so
+that the most reviews are at the front, so
+
+68
+00:03:35,980 --> 00:03:38,290
+we're going to sort this descending.
+
+69
+00:03:38,290 --> 00:03:42,020
+And then second thing we want to do is
+go ahead and get the total movie count.
+
+70
+00:03:42,020 --> 00:03:46,760
+So this query is going to currently
+return all of the movies, and so
+
+71
+00:03:46,760 --> 00:03:50,930
+when we run count you can see that,
+indeed, it does return all of them.
+
+72
+00:03:50,930 --> 00:03:53,080
+And so the first thing this
+query does is go ahead and
+
+73
+00:03:53,080 --> 00:03:55,030
+counts how many documents
+are on this cursor.
+
+74
+00:03:55,030 --> 00:03:59,740
+And we go ahead and store that in this
+variable called total num movies.
+
+75
+00:03:59,740 --> 00:04:02,300
+And this is one of the return
+values of the get movies function.
+
+76
+00:04:03,320 --> 00:04:07,330
+Now, would it be very cool to send
+all 46,000 movies to our user?
+
+77
+00:04:07,330 --> 00:04:11,690
+They certainly don't have time to look at
+all of them, but moreover, it would take
+
+78
+00:04:11,690 --> 00:04:15,010
+a long time to send them over the network
+and to render them on the page.
+
+79
+00:04:15,010 --> 00:04:18,230
+And that's why we limit the number
+of movies that we're sending.
+
+80
+00:04:18,230 --> 00:04:21,370
+Or specifically we're limiting
+our results to 20 per page.
+
+81
+00:04:21,370 --> 00:04:23,700
+When users aren't on the homepage,
+we're going to need to go ahead and
+
+82
+00:04:23,700 --> 00:04:27,550
+skip over the entries that precede
+the pages that they're currently on,
+
+83
+00:04:27,550 --> 00:04:30,340
+and that's what skip will let us achieve.
+
+84
+00:04:30,340 --> 00:04:34,755
+In this case, since page is 0, moves page
+are still 20, this is going to evaluate to
+
+85
+00:04:34,755 --> 00:04:37,820
+0, so we're not going to be
+skipping any for the homepage.
+
+86
+00:04:37,820 --> 00:04:41,159
+And then when we go ahead and
+turn this cursor into a list, and
+
+87
+00:04:41,159 --> 00:04:45,100
+look at its length,
+you see that we're getting 20 movies.
+
+88
+00:04:45,100 --> 00:04:49,180
+And if we look at the first movie,
+if we look at tomatoes and look at viewer,
+
+89
+00:04:49,180 --> 00:04:53,410
+and look at the number of reviews, you can
+see that there are quite a few reviews.
+
+90
+00:04:53,410 --> 00:04:57,740
+And that's why Titanic is the first
+movie that we see on mflix.
+
+91
+00:04:57,740 --> 00:05:02,290
+Now we can go ahead and simulate going to
+the next page by setting page equal to 1.
+
+92
+00:05:02,290 --> 00:05:06,500
+And then running the same query
+again where have no filters.
+
+93
+00:05:06,500 --> 00:05:10,598
+We're sorting on the number of reviews,
+and then this time we're skipping,
+
+94
+00:05:10,598 --> 00:05:12,033
+hopefully, 20 movies.
+
+95
+00:05:12,033 --> 00:05:16,613
+And as you can see, we are now
+returning 20 less movies than what
+
+96
+00:05:16,613 --> 00:05:21,330
+would have been returned if we
+returned all of the movies.
+
+97
+00:05:21,330 --> 00:05:22,720
+Let's recap what we
+discussed in this lesson.
+
+98
+00:05:22,720 --> 00:05:26,910
+We looked at these three
+common cursor methods.
+
+99
+00:05:26,910 --> 00:05:31,100
+But moreover, we saw how, together,
+they can be used to generate our movie
+
+100
+00:05:31,100 --> 00:05:36,449
+homepage, as well as through the use
+of skip and limits support pagination.

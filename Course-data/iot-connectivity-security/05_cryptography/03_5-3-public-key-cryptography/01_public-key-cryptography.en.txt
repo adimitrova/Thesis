@@ -1,0 +1,93 @@
+[MUSIC] Hi, welcome back. Previously, we introduced
+cryptography as a tool for security solutions in
+cyber physical systems. We also presented how symmetry key ciphers
+are used for securing wireless networks. In this video lecture, we will learn
+how public key cryptography works, we will have a close look at
+the well-known RSA algorithm. Public key cryptography
+comprises a set of algorithms that are designed based on
+some mathematical problems. As we discussed earlier,
+unlike in symmetric cryptography, in public key cryptography the decryption
+key is not the same as the encryption key. And for this reason it is also
+known as asymmetric cryptography. A pair of key is called a public key and
+a private key are used in such a system. The public key,
+as it is clear from its name, is publicly known by everybody and
+is used for encryption, while the private key is
+kept secret and used for decryption. So anybody can encrypt the message
+with the recipient's public key, but only the recipient can decrypt
+it using his or her own private key. This eliminates the need for a secure channel to exchange
+the key between two parties. In a public key cryptography, the key
+pairs are mathematically related, but it is computationally infeasible to get the
+decryption key from the encryption key. Let's have a brief look
+at some important and popular public key encryption algorithms. The Rivest-Shamir-Adlerman or
+RSA algorithm is one of the most practical and
+secure public key algorithms, which is widely used for
+secure communication. RSA, which is named after its three
+inventors was published in 1977. It provides three main functionalities, key generation, encryption,
+and decryption. Diffie-Hellman, or DH protocol, provides an efficient and secure way
+of exchanging an encryption key often symmetric cipher through a public channel
+without any need for a secure channel. Diffie-Hellman is one of
+the earliest applications of public key encryption,
+published in 1976. This protocol is still
+used in many applications. Elliptic Curve Cryptography or ECC provides an alternative mechanism for
+public key encryption. It was introduced in 1985. ECC is based on algebraic elliptic
+curves over finite fields. And offer smaller keys with
+a reasonable level of security compared to other public
+key encryption algorithms. It is therefore known as
+a lightweight encryption method. ECC is widely use in embedded
+resource constraint devices and provides many applications of
+public encryption such as, encryption and decryption, digital
+signatures, and digital certificates. To demonstrate how a public key
+system mathematically works, we will first have a bit closer look
+into the popular RSA algorithm. In another lecture, we will also have
+a look at the Diffie-Hellman algorithm. We use these classic algorithms as
+examples, because they are well known and relatively easy to present
+in a short lecture. If you are interested in details of ECC,
+I encourage you to search for related online documentation. There is a lot of information on
+ECC in a reader friendly forum. The complex mathematics behind ECC
+is out of the scope of this course. So, let's look at RSA. We start with generation of the public and
+private keys. The first step is to choose two
+relatively large prime numbers p and q. Typically, 1,024 bits or more in length. The next step is to calculate
+product of n of p and q, and product phi(n) of (p-1) and (q-1). N later becomes the modulus
+of the public and private keys, which we will see shortly. Now, the encryption key e is chosen in
+such a way that it needs two properties. First, e has to be
+relatively prime to phi(n). Second, e has to be greater than 1 and
+less than phi(n). Two integers are relatively prime if
+they share no common positive factors or divisors except 1. In other words, the greatest common
+divisor of e and phi(n) must be 1. We use a tuple notation for the greatest
+common divisor as shown on the screen. Now our public key is the pair of e and n. Let's see how the private
+key is calculated. If e and phi n are prime,
+then there is some integer d for decryption, such that e times
+d equals one modular phi(n). Our private key is then defined
+as the pair of d and n. Notice that without knowing p and q it is
+practically impossible to determine d. Security of RSA relies
+on this observation. Now that we have generated the keys,
+we can encrypt and decrypt a message. In RSA, a full message is
+presented as a sequence of positive integers between 0 and n-1. Each taking a fix number of bits
+depending on the value of the modulus n. The same applies to
+the produced cipher text. For simplicity,
+let's consider a message m, which is composed of a single
+integer between 0 and n- 1. For encryption, we take the message m and compute the ciphertext c as m
+to the power of e modular n. For decryption we take
+the cypher text c and compute the message m as c
+to the power of d modulo n. Now let's try an example. Suppose our two primes, p and
+q, are 5 and 11 respectively. Then n is equal to 55,
+and phi(n) is equal to 40. Now we should select
+the encryption exponent, e. Divisors of phi(n) are 1,
+2, 4, 5, 8, 10, 20, and 40. So, it could be any number less than 40, which has no common divisor with 40. Of the candidates, well, let's pick seven. We should now select
+the decryption exponent d, such that d times e equals 1 mod 40. Let's pick 23,
+which satisfies the given condition, because 23 times 7 equals 161, which equals 4 times 40 plus 1. Determining d is computationally
+a non-trivial task. The best way is to use
+the extended Euclidean algorithm. We don't study this algorithm here though. So, here it is,
+our public key is the pair 7, 55, and
+our private key is the pair 23, 55. Now, let's check how encryption and
+decryption work. First, our message m could be
+any integer between 0 and 54. Let's randomly pick the number 8. For encryption to get the ciphertext c,
+we calculate 8 to the power of 7 modulo 55,
+which equals 2. So our ciphertext c is 2. Let's then decrypt the cypher text and see if we get our original message or
+plain text in or not. We calculate 2 to the power of 23,
+modulo 55, which, amazingly, equals 8. So it worked, we managed to
+retrieve the original message m. In this lesson, we learned about
+basics of public key cryptography. Moreover, we saw how we can
+protect confidentiality of data by RSA public key encryption. In the next video lecture, we will learn how public key
+encryption is used for establishing a shared secret between two parties
+that don't know each other previously. [SOUND]

@@ -1,0 +1,126 @@
+1
+00:00:04,980 --> 00:00:09,796
+If this check list seems overwhelming,
+don't worry.
+
+2
+00:00:09,796 --> 00:00:15,770
+There are multiple data management plan
+tools available to use online for free.
+
+3
+00:00:17,640 --> 00:00:23,578
+Two of these are the DMPTool produced
+by the University of California,
+
+4
+00:00:23,578 --> 00:00:27,420
+Curation Center of
+the California Digital Library
+
+5
+00:00:28,680 --> 00:00:33,860
+and DMPOnline developed by
+the Digital Curation Centre.
+
+6
+00:00:35,530 --> 00:00:40,598
+The DMPTool allows researchers to
+create customized data management plans
+
+7
+00:00:40,598 --> 00:00:47,000
+via a step-by-step wizard based on
+each funding agency's requirements.
+
+8
+00:00:47,000 --> 00:00:53,610
+This wizard office resources,
+help text and suggested answers
+
+9
+00:00:53,610 --> 00:00:58,590
+based on templates developed and
+reviewed by information professionals
+
+10
+00:00:58,590 --> 00:01:03,020
+from the researches institution in
+the California Digital Library.
+
+11
+00:01:03,020 --> 00:01:09,320
+When funding agency policies change,
+the DMPTool is updated.
+
+12
+00:01:09,320 --> 00:01:13,583
+This ensures that the information
+is up to date and
+
+13
+00:01:13,583 --> 00:01:18,670
+all new requirements are listed
+in the DMPTool templates.
+
+14
+00:01:18,670 --> 00:01:26,930
+DMPOnline like the DMPTool is the DCC's
+data management planning tool.
+
+15
+00:01:26,930 --> 00:01:32,922
+It offers guidance for researchers writing
+DMPs and includes templates specific
+
+16
+00:01:32,922 --> 00:01:38,837
+to the requirements of UK funding agencies
+and funding agencies outside the UK.
+
+17
+00:01:38,837 --> 00:01:43,570
+Institutions can also customize
+templates via DMPOnline.
+
+18
+00:01:44,740 --> 00:01:49,430
+For more information, check out the videos
+for these tools on the resources page.
+
+19
+00:01:50,520 --> 00:01:55,350
+Writing a data management plan gets you
+to think through data management issues
+
+20
+00:01:55,350 --> 00:01:58,070
+early on in the research life cycle.
+
+21
+00:01:58,070 --> 00:02:00,477
+By considering all of these issues,
+
+22
+00:02:00,477 --> 00:02:05,134
+you will not only be in compliance
+with data management requirements,
+
+23
+00:02:05,134 --> 00:02:10,120
+you will also be better prepared to
+implement data management strategies.
+
+24
+00:02:10,120 --> 00:02:15,175
+Even if you aren't required to
+write a data management plan,
+
+25
+00:02:15,175 --> 00:02:19,171
+this is a helpful process
+to do better research.
+
+26
+00:02:19,171 --> 00:02:25,009
+[MUSIC]

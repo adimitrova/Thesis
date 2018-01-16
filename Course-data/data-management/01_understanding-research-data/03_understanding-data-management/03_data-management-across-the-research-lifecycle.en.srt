@@ -1,0 +1,527 @@
+1
+00:00:00,000 --> 00:00:06,254
+[MUSIC]
+
+2
+00:00:06,254 --> 00:00:10,582
+Now that we know what data management is,
+and who the people involved are,
+
+3
+00:00:10,582 --> 00:00:14,844
+we will now show you where specific
+data management practices fall within
+
+4
+00:00:14,844 --> 00:00:16,410
+the research lifecycle.
+
+5
+00:00:16,410 --> 00:00:20,480
+To do this, we're going to use
+the research lifecycle from
+
+6
+00:00:20,480 --> 00:00:22,900
+the Data Documentation Initiative, or DDI.
+
+7
+00:00:24,600 --> 00:00:29,300
+During the initial phase of the research
+lifecycle, that is the discovery and
+
+8
+00:00:29,300 --> 00:00:33,920
+planning phase, researchers will
+need to determine what type and
+
+9
+00:00:33,920 --> 00:00:36,310
+format of data they are going to collect.
+
+10
+00:00:37,470 --> 00:00:40,470
+This may involve collecting new data,
+
+11
+00:00:40,470 --> 00:00:44,980
+combining existing data sets or
+analyzing existing data.
+
+12
+00:00:46,520 --> 00:00:50,670
+If the project involves human subjects,
+the researches will need to consider
+
+13
+00:00:50,670 --> 00:00:54,910
+privacy, confidentiality,
+and other ethical issues.
+
+14
+00:00:54,910 --> 00:00:59,630
+In addition, researchers should consider
+what types of documentation they will
+
+15
+00:00:59,630 --> 00:01:04,040
+create and the metadata standards
+they will use to describe their data.
+
+16
+00:01:04,040 --> 00:01:09,130
+These are some of the details that should
+be included in the data management plan.
+
+17
+00:01:09,130 --> 00:01:15,030
+Further, researchers will need to identify
+the potential reusers of the project data.
+
+18
+00:01:15,030 --> 00:01:16,750
+Who will use this data?
+
+19
+00:01:16,750 --> 00:01:18,480
+What might they use it for?
+
+20
+00:01:18,480 --> 00:01:22,310
+Will the data, once stripped of any
+potentially identifying information,
+
+21
+00:01:22,310 --> 00:01:25,240
+be useful for secondary reuse?
+
+22
+00:01:25,240 --> 00:01:29,360
+What access restrictions
+will be placed on the data?
+
+23
+00:01:29,360 --> 00:01:32,770
+These are all questions that
+the researchers need to answer
+
+24
+00:01:32,770 --> 00:01:35,190
+before the project even begins.
+
+25
+00:01:35,190 --> 00:01:39,550
+Contacting an information professional
+early in the research life cycle can
+
+26
+00:01:39,550 --> 00:01:42,850
+assist researchers in
+answering these questions.
+
+27
+00:01:42,850 --> 00:01:48,900
+As well as identifying appropriate data
+repository, to archive their data.
+
+28
+00:01:48,900 --> 00:01:51,880
+Finally, during this phase,
+it is important for
+
+29
+00:01:51,880 --> 00:01:56,700
+researchers to determine the possible
+costs surrounding data management.
+
+30
+00:01:56,700 --> 00:02:00,911
+This will involve documenting the data,
+formatting them,
+
+31
+00:02:00,911 --> 00:02:07,290
+storing them, cleaning and anonymizing
+them, and finally archiving them.
+
+32
+00:02:07,290 --> 00:02:12,100
+During the data collection phase,
+primary researchers make certain that
+
+33
+00:02:12,100 --> 00:02:16,220
+the research team follows data
+management best practices.
+
+34
+00:02:16,220 --> 00:02:21,540
+At this point, this can include
+file organization, backup and
+
+35
+00:02:21,540 --> 00:02:26,060
+storage strategies,
+as well as quality assurance protocols.
+
+36
+00:02:26,060 --> 00:02:31,190
+Deciding on file organization schemes
+including naming conventions and
+
+37
+00:02:31,190 --> 00:02:34,340
+file versioning policies
+at the very beginning
+
+38
+00:02:34,340 --> 00:02:37,910
+will help make the data
+collection process run smoothly.
+
+39
+00:02:37,910 --> 00:02:40,785
+This will decrease
+the likelihood of duplicate or
+
+40
+00:02:40,785 --> 00:02:42,770
+out-of-sync versions of the data.
+
+41
+00:02:43,900 --> 00:02:48,020
+You will also make locating
+specific documents and files
+
+42
+00:02:48,020 --> 00:02:52,910
+at the end of the project much easier and
+decrease the risk of losing content.
+
+43
+00:02:53,920 --> 00:02:54,440
+Backup and
+
+44
+00:02:54,440 --> 00:02:59,440
+storage strategies will be implemented
+through the data collection process.
+
+45
+00:02:59,440 --> 00:03:05,010
+As we know,
+technology is not always a 100% reliable.
+
+46
+00:03:05,010 --> 00:03:09,560
+If a researcher has appropriate backup and
+storage strategies in place,
+
+47
+00:03:09,560 --> 00:03:14,160
+this will help protect against data
+loss from the beginning of the project.
+
+48
+00:03:14,160 --> 00:03:17,520
+It is best to discuss options for
+secure backup and
+
+49
+00:03:17,520 --> 00:03:21,190
+storage with the institution's
+IT department.
+
+50
+00:03:21,190 --> 00:03:26,540
+Quality assurance protocols outline and
+document the steps and processes
+
+51
+00:03:26,540 --> 00:03:32,410
+necessary for checking and reviewing
+the data during and after it is collected.
+
+52
+00:03:32,410 --> 00:03:35,660
+These protocols vary
+across disciplines and
+
+53
+00:03:35,660 --> 00:03:39,350
+it is the responsibility of
+the primary researcher and
+
+54
+00:03:39,350 --> 00:03:45,050
+the project team to implement these
+protocols based on disciplinary standards.
+
+55
+00:03:45,050 --> 00:03:49,240
+It is also a good idea to
+consider access controls and
+
+56
+00:03:49,240 --> 00:03:51,840
+data security during this
+phase of the lifecycle.
+
+57
+00:03:52,980 --> 00:03:55,670
+While working with the IT department,
+
+58
+00:03:55,670 --> 00:03:59,430
+make sure to inform them of any
+security concerns or needs.
+
+59
+00:04:00,440 --> 00:04:05,250
+If the data is sensitive then the
+appropriate steps will need to be taken to
+
+60
+00:04:05,250 --> 00:04:10,800
+ensure that they are safely stored and
+only accessible to authorized individuals.
+
+61
+00:04:10,800 --> 00:04:14,570
+Next is the preparation and
+data analysis phase.
+
+62
+00:04:14,570 --> 00:04:19,850
+After collecting data, it may not be
+in a form that can be readily analyzed.
+
+63
+00:04:19,850 --> 00:04:25,020
+Researchers may need to clean,
+manipulate or process the raw data.
+
+64
+00:04:25,020 --> 00:04:29,320
+What is important at this point is
+documenting the changes to the raw data
+
+65
+00:04:29,320 --> 00:04:35,150
+and creating a master version to be
+analyzed and eventually archived.
+
+66
+00:04:35,150 --> 00:04:41,590
+A common tip here is to make the final
+version of the data read-only.
+
+67
+00:04:41,590 --> 00:04:44,650
+So it can't be inadvertently altered.
+
+68
+00:04:44,650 --> 00:04:50,700
+Once the master version of the data has
+been prepared, data analysis can begin.
+
+69
+00:04:50,700 --> 00:04:54,790
+Data analysis can take many
+forms across disciplines.
+
+70
+00:04:54,790 --> 00:05:00,340
+The most important thing to consider in
+this phase is making sure to document
+
+71
+00:05:00,340 --> 00:05:06,350
+analysis procedures such as additional
+modifications to the data, the model used,
+
+72
+00:05:06,350 --> 00:05:12,000
+the code used to run the analysis, and
+hardware and software specifications.
+
+73
+00:05:12,000 --> 00:05:17,340
+Having this detailed information will
+help researchers write a better paper and
+
+74
+00:05:17,340 --> 00:05:18,880
+do better science.
+
+75
+00:05:18,880 --> 00:05:23,580
+During the publication and sharing phase,
+a researcher will prepare their data
+
+76
+00:05:23,580 --> 00:05:28,250
+files and other research materials
+necessary to interpret and
+
+77
+00:05:28,250 --> 00:05:30,130
+reuse the data in the future.
+
+78
+00:05:31,530 --> 00:05:36,180
+Data management best practices
+dictate that data be stored and
+
+79
+00:05:36,180 --> 00:05:40,250
+made available to share in
+a trustworthy data repository.
+
+80
+00:05:40,250 --> 00:05:44,600
+This phase is an opportunity to consult
+with information professionals or
+
+81
+00:05:44,600 --> 00:05:46,690
+data repository staff.
+
+82
+00:05:46,690 --> 00:05:50,440
+Who can provide guidance as
+you prepare data for sharing.
+
+83
+00:05:50,440 --> 00:05:55,870
+Researchers should make sure that their
+data management meets all of the needs and
+
+84
+00:05:55,870 --> 00:05:57,600
+requirements of the repository.
+
+85
+00:05:58,720 --> 00:06:01,910
+This means that the data should be
+in the appropriate file format,
+
+86
+00:06:02,910 --> 00:06:06,830
+should be cleaned to the specifications
+of the repository, and
+
+87
+00:06:06,830 --> 00:06:10,880
+to comply with applicable privacy laws and
+requirements.
+
+88
+00:06:11,930 --> 00:06:15,620
+Additionally, all documentation
+should be reviewed
+
+89
+00:06:15,620 --> 00:06:20,350
+to ensure that the data can be reused and
+standard metadata should be applied.
+
+90
+00:06:21,760 --> 00:06:24,210
+By working with a data repository,
+
+91
+00:06:24,210 --> 00:06:28,440
+researchers can ensure that data
+will be properly preserved.
+
+92
+00:06:28,440 --> 00:06:30,730
+Discoverable, and usable in the future.
+
+93
+00:06:32,070 --> 00:06:36,910
+The end of the project can seem like
+a bit of a blur and a time crunch.
+
+94
+00:06:37,960 --> 00:06:41,960
+But by following data management best
+practices throughout the research life
+
+95
+00:06:41,960 --> 00:06:47,590
+cycle, you can rest assured that your
+data will be available for the long term.
+
+96
+00:06:47,590 --> 00:06:52,130
+At this point your data are safely
+stored in a data repository.
+
+97
+00:06:52,130 --> 00:06:55,400
+And you can begin planning for
+your next project.
+
+98
+00:06:55,400 --> 00:07:00,230
+Some key repository functions got
+ensure the long term management of data
+
+99
+00:07:00,230 --> 00:07:03,200
+include ensuring
+the integrity of the data.
+
+100
+00:07:03,200 --> 00:07:05,900
+Protecting against data loss.
+
+101
+00:07:05,900 --> 00:07:08,530
+And providing access to data.
+
+102
+00:07:08,530 --> 00:07:12,550
+These and other functions
+performed by trusted repositories
+
+103
+00:07:12,550 --> 00:07:16,360
+will be discussed in more
+depth later in this course.
+
+104
+00:07:16,360 --> 00:07:20,150
+We covered a lot of data management
+topics in this module, but
+
+105
+00:07:20,150 --> 00:07:24,360
+what is most important to take away
+is that effective data management
+
+106
+00:07:24,360 --> 00:07:28,400
+takes places in all phases
+of the research lifecycle.
+
+107
+00:07:28,400 --> 00:07:32,808
+From planning a project,
+to collecting your data, to comparing and
+
+108
+00:07:32,808 --> 00:07:37,596
+analyzing your data, and then finally
+publishing and sharing your data in
+
+109
+00:07:37,596 --> 00:07:42,628
+a repository that will see to their
+long-term management and preservation.
+
+110
+00:07:42,628 --> 00:07:43,128
+[MUSIC]

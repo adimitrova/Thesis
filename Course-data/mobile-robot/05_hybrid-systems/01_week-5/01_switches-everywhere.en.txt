@@ -1,0 +1,91 @@
+So welcome to Module 5 of the course, 
+Control of Mobile Robots. So far the first 2 modules were kind of 
+introductions to the topic and the previous 2 modules they went rather 
+deeply into the issue of, control the sign for linear time in variant systems. 
+And we ended the last module on a high note. 
+Which showed that we could do rather remarkable things, like make a humanoid 
+robot wave in, exciting ways. Using, control of linear time in variant 
+systems. Now, unfortunately, the world isn't that 
+easy. And especially, the robotic world is not 
+that easy. So this entire module is devoted to how 
+do we take Module 4. And make it cope with the realities of 
+the world in which robots are embedded. Then in Module 6, we're actually going to 
+go full force robotics, 100%. And this module can be thought of as the 
+glue module between linear systems and actual robotics. 
+And in fact, the title of this lecture is, Switches Everywhere, because so far 
+the modules, or models have been the same all the time, and in fact, because the 
+models are the same, we design a size fits all type of controller. 
+the way we've kind of messed with the controllers, is by changing the, the, 
+reference values to some desired angles for the.... 
+this humanoid robot, or desired velocities and angular velocities for the 
+segue robot. But, it's certainly not always true that 
+the models never change in the real world. 
+And, this is never true in robotics, unfortunately. 
+In fact, if you recall, what we talked about in module 2. 
+We talked about something called behavior based control. 
+Where the robot switches between different modes of operation, or 
+behaviors, in response to what the world throws at you. 
+You see an obstacle, you switch to avoid that obstacle. 
+If you, need to go recharge you switch to a, let's look for outlets behavior. 
+So what we need to do is somehow come to grips, or terms with this reality. 
+And that is how we're going to start this module. 
+The first thing to note is that in the world there are switches everywhere. 
+So here, over on our left, is a bipedal walking robot. 
+Well, bipedal walking robots have a leg that's swinging, has one dynamics, and 
+then bam, the ro, the leg is on the ground, now the dynamics changed. 
+So because of the fact that the dynamics changes. 
+Depending on whether or not you're in the swing face, or the stance face. 
+The dynamics is different. Here, I drew a cartoon of a bouncing 
+ball. Well, it has 2 modes. 
+It's in the air, [SOUND]. And then it bounces. 
+Something new happens. The b-, the ball gets squished, and then 
+it releases again. So, there. 
+We have switches. I actually included this wonderful 
+picture of locusts because I have actually worked on locusts. 
+These locusts don't bother anyone during what's called a solitary mode. 
+And then something happens and they switch to a gregarious mode where they 
+lump together and devastate harvests everywhere. 
+and this is a transition that occurs because of a lack of food, for instance. 
+But in the, all of these cases, these are naturally occurring switches that our 
+models have to take into account. Now, from a robotics point of view, it 
+may be slightly more relevant to look at switches by design instead of doing it by 
+necessity. So here is a gear box to a car. 
+We're switching between different gears because we want the car to run more 
+smoothly at different RPM's. so we're switching the dynamics not 
+because we have to but because it's better. 
+Here, this is a, a cockpit. It's supposed to be representing an 
+autopilot on an aircraft where you're switching between cruise climb turn land 
+takeoff modes. So, instead of designing 1 controller 
+that takes me from Atlanta, Georgia to Stockholm, Sweden. 
+You have a bunch of different controllers that you're switching through in order to 
+do this. And at the bottom here, we have a sensor 
+network. Where, in order to preserve power, you're 
+turning sensors on and off on purpose. So, you're switching by design, rather by 
+necessity. And, in robotics. 
+Everywhere it switches by design. This is our south driving Georgia Tech 
+car that switches between different behaviors depending on what's happening 
+in the world. Here's a mobile robot that switches 
+between behaviors depending or not, whether or not there are obstacles, I 
+wish we worked on snake robotics. We're switching between different modes, 
+depending on what is going on in the environment. 
+This is a friend in now, this is the sensor network, and this is the aerial 
+robot that we've seen, and we're going to see more of. 
+In all of these cases, we're going to have to switch in order to respond to 
+what the world throw's our way. Now, there are some issues that we need 
+to deal with. Issue number one is really how do we 
+model these switches? How do we model systems that aren't staying the same all 
+the time. Well, the other question then, of course, 
+is if these models change, what about stability? What about the performance? 
+Can we go with our old methods to try to understand this? Well, this all boils 
+down to the fact, that T does not go to infinity, within a single mode. 
+Meaning you are not staying in 1 mode forever, and stability is defined what 
+happens when T goes to infinity, but T does not go to infinity in the in, 
+individual mode. So, we somewhat need to understand that. 
+We also have issues of compositionality. This is fancy speak for saying, if I have 
+multiple modes and multiple controllers, how do I put them together? What is the 
+way in which they fit together like Lego pieces in a big Lego drawing. 
+And, most importantly, are there traps? Are there issues that arise because of 
+these switches that we don't fully know how to deal with. 
+Now, this module will deal with all of this, and more. 
+And in the next lecture, we're going to start with the first question which is, 
+how do we really model hybrid or switched systems in a systematic and coherent way?

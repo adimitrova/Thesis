@@ -1,0 +1,45 @@
+[MUSIC] In this sixth module,
+we are discussing weak interactions. In this fifth video, we'll talk about
+the properties of the W bosons, which transmit the charged weak force and
+are responsible for weak decays. After following this video, you will know
+the W couplings to matter and forces. The mass of the W bosons and
+the various ways to measure it. In video 6.3, we already defined
+the couplings of the W to matter. And in video 6.4, we have reviewed
+the method to measure the Fermi constant, which applies to processes with
+q^2 much smaller than the square of the mass of W, and thus defines the intensity of
+weak interactions at low energy. So now the question is how to
+measure the mass of the W boson? This is done using two different methods 
+which are of comparable accuracy. The first method determines the mass by measuring the energy threshold for the production 
+of W pairs in e+e- annihilation. We already noted that
+the vector bosons W and Z themselves carry electro-weak charges. W± have an electric charge. And both W± and Z have a nonzero 
+weak isospin. There is thus an interaction
+vertex among electroweak bosons with
+the couplings indicated here. These vertices fix the values of
+electroweak couplings in a unique manner, and at the same time for interaction
+between bosons and between fermions and bosons. Charged bosons can then be produced
+in pairs by e+ e- annihilation. The position of the threshold for
+W pair production and the shape of the cross section at threshold determine the mass
+of the W Boson with good precision as done by the L3 experiment at the Large
+Electron Positron collider. A second method for
+the mass determination is to measure the four-momenta of the decay products and
+form the invariant mass. Since the mass is
+a relativistic invariant, we do not need to produce the W at rest. For two-body decays at high energy,
+this means measuring energy and direction of the particles. The example shows here an event of
+a W+ decaying into a positron and an electron-neutrino, seen by the ATLAS
+experiment at the Large Hadron Collider. The high energy positron is
+shown by the yellow track in the central detector. And the corresponding energy, the position
+in the calorimeter also shown in yellow. The neutrino, the second decay product of the W+ 
+leaves no trace in the detector but manifests itself as a missing energy and
+momentum. Momentum balance is indeed only guaranteed
+in the plane transverse to the beam, because gluons and
+quarks carry a variable fraction x_Bj of the incident proton momentum,
+as we discussed in module 5. However, analyzing the kinematics in
+the transverse plane alone allows for a good precision
+measurement of the W mass. The results of the two methods
+are in good agreement and can be averaged because
+they are independent. The precision reached with threshold and
+invariant mass methods is ten times smaller than what can
+obtained measuring a mass by a resonance, as it is done for the Z mass measurement,
+which we will see in the next video. In fact, in the next video,
+Martin will talk about the properties of the Z bosons,
+which transmit the weak neutral interaction. [MUSIC]

@@ -1,0 +1,454 @@
+1
+00:00:00,000 --> 00:00:10,839
+[MUSIC]
+
+2
+00:00:10,839 --> 00:00:14,109
+In this module, we are in the process
+of discussing the internal structure of
+
+3
+00:00:14,109 --> 00:00:15,635
+hadrons and strong interactions.
+
+4
+00:00:17,025 --> 00:00:19,145
+In this video, we discuss mesons,
+
+5
+00:00:19,145 --> 00:00:22,585
+which are bound states between quarks and
+antiquarks.
+
+6
+00:00:22,585 --> 00:00:26,705
+After following this video, you will know
+the basic mechanisms that bind quarks and
+
+7
+00:00:26,705 --> 00:00:31,330
+antiquarks to form mesons, and
+their excited states and their spectra,
+
+8
+00:00:31,330 --> 00:00:35,520
+which provide information about the nature
+and behavior of the binding force.
+
+9
+00:00:37,600 --> 00:00:40,040
+In addition to the baryons and
+their resonances,
+
+10
+00:00:40,040 --> 00:00:42,260
+which we have already treated
+in the previous video,
+
+11
+00:00:42,260 --> 00:00:45,560
+there are bound states between quarks and
+antiquarks which we call mesons.
+
+12
+00:00:47,150 --> 00:00:50,640
+If their quantum numbers are right,
+they can be produced in vacuo
+
+13
+00:00:50,640 --> 00:00:54,830
+by a virtual photon,
+as shown in this Feynman diagram.
+
+14
+00:00:55,850 --> 00:00:58,978
+For light quarks,
+their mass is dominated by binding energy.
+
+15
+00:00:58,978 --> 00:01:03,435
+For heavy quarks, their mass is slightly
+lower than the sum of the masses of
+
+16
+00:01:03,435 --> 00:01:05,380
+the corresponding quark pair.
+
+17
+00:01:05,380 --> 00:01:07,730
+An example is the production
+of rho mesons,
+
+18
+00:01:07,730 --> 00:01:11,870
+a bound state between light quarks,
+which is shown in this Feynman diagram.
+
+19
+00:01:13,305 --> 00:01:17,455
+Resonances can also appear as intermediate
+states in hadronic reactions.
+
+20
+00:01:17,455 --> 00:01:22,105
+In this case, there's obviously more
+freedom regarding their quantum numbers.
+
+21
+00:01:22,105 --> 00:01:24,150
+In general,
+bound states between quarks and
+
+22
+00:01:24,150 --> 00:01:28,435
+antiquarks have a rather short lifetime,
+especially if heavy quarks are involved.
+
+23
+00:01:28,435 --> 00:01:32,305
+This is due to the substantial phase
+space available for their decay.
+
+24
+00:01:34,420 --> 00:01:38,300
+The energy dependence of
+the electron-positron cross section around
+
+25
+00:01:38,300 --> 00:01:41,440
+a resonance generally follows
+a Breit-Wigner function,
+
+26
+00:01:41,440 --> 00:01:44,180
+which is shown in this equation.
+
+27
+00:01:45,400 --> 00:01:47,570
+M is the mass and
+Gamma is the width of the resonance.
+
+28
+00:01:47,570 --> 00:01:51,190
+The cross section is reduced
+to half of its maximum value,
+
+29
+00:01:51,190 --> 00:01:56,020
+sigma_max, for square root of s equal
+to M ± Gamma/2.
+
+30
+00:01:57,330 --> 00:02:02,395
+The lifetime of the resonance is
+the inverse value of the width,
+
+31
+00:02:02,395 --> 00:02:04,440
+tau is equal to one over gamma.
+
+32
+00:02:06,300 --> 00:02:09,850
+The form of the Breit-Wigner function
+resembles the squared amplitude
+
+33
+00:02:09,850 --> 00:02:12,210
+of a classical damped oscillator.
+
+34
+00:02:12,210 --> 00:02:17,350
+Square root of s corresponds to the
+frequency of the external periodic force,
+
+35
+00:02:17,350 --> 00:02:21,548
+M to the resonance frequency and
+Gamma to the damping factor.
+
+36
+00:02:21,548 --> 00:02:25,310
+The cross section in this analogy
+appears as the squared amplitude
+
+37
+00:02:25,310 --> 00:02:27,930
+of the oscillation,
+as shown in the graph on the left.
+
+38
+00:02:30,367 --> 00:02:33,734
+For resonances between light quarks,
+such as rho and omega,
+
+39
+00:02:33,734 --> 00:02:38,657
+one observes widths from a few MeV to 150
+MeV, corresponding to lifetimes between 
+
+40
+00:02:38,657 --> 00:02:41,528
+10^-22 and 10^-24 seconds.
+
+41
+00:02:41,528 --> 00:02:46,622
+They are produced in a resonant manner
+by the intermediate photon when the mass
+
+42
+00:02:46,622 --> 00:02:51,040
+of the virtual photon is sufficiently
+close to that of the meson.
+
+43
+00:02:51,040 --> 00:02:55,410
+When produced this way they must
+obviously have spin one and charge zero,
+
+44
+00:02:55,410 --> 00:02:57,390
+just as the photon does.
+
+45
+00:02:57,390 --> 00:02:58,620
+They decay into pions.
+
+46
+00:03:00,620 --> 00:03:04,295
+Around a mass of about one GeV,
+one can produce the Phi resonance,
+
+47
+00:03:04,295 --> 00:03:08,310
+which is an s-sbar bound state,
+which decays into strange particles.
+
+48
+00:03:09,360 --> 00:03:13,066
+It's width is narrow,
+of the order of 4.4 MeV.
+
+49
+00:03:15,247 --> 00:03:19,897
+Around 3 GeV, we find the J/Psi
+resonance, the lowest lying
+
+50
+00:03:19,897 --> 00:03:24,560
+c-cbar bound state, as well as its
+excited states, the Psi mesons.
+
+51
+00:03:25,690 --> 00:03:31,155
+Their width are small,
+about 90 keV for the J/Psi, itself.
+
+52
+00:03:31,155 --> 00:03:35,580
+Their lifetime is thus long, and the 
+e+e- -> hadron cross section
+
+53
+00:03:35,580 --> 00:03:39,840
+is significantly enhanced around the
+resonance energy, as shown in this plot.
+
+54
+00:03:42,150 --> 00:03:46,446
+Close to 10 GeV, the Upsilon resonances
+are produced, made of b-bbar pairs.
+
+55
+00:03:47,800 --> 00:03:51,516
+We see on the right the 
+e+e- -> hadrons cross section
+
+56
+00:03:51,516 --> 00:03:55,542
+around the Upsilon_1s resonance,
+and its excited states,
+
+57
+00:03:55,542 --> 00:03:59,970
+Upsilon_2s and Upsilon_3s,
+all mesons formed by b-bbar states.
+
+58
+00:03:59,970 --> 00:04:04,207
+The states are distinguished by
+the relative angular momentum of the two
+
+59
+00:04:04,207 --> 00:04:04,769
+quarks.
+
+60
+00:04:04,769 --> 00:04:08,047
+The spins are always parallel
+to produce a vector meson.
+
+61
+00:04:09,968 --> 00:04:14,984
+The study of resonance states, especially
+those of heavy quarks, allow us to
+
+62
+00:04:14,984 --> 00:04:20,380
+better understand the potential generated
+by the strong force that binds quarks and
+
+63
+00:04:20,380 --> 00:04:25,580
+antiquarks into mesons, as well as also
+the decay mechanisms for heavy quarks.
+
+64
+00:04:25,580 --> 00:04:30,075
+As an example, the figure shows the mass
+spectrum and decay scheme of c-cbar and
+
+65
+00:04:30,075 --> 00:04:32,180
+b-bbar resonances.
+
+66
+00:04:32,180 --> 00:04:35,270
+The energy levels indicate that
+the potential between two quarks
+
+67
+00:04:35,270 --> 00:04:36,870
+has two terms.
+
+68
+00:04:36,870 --> 00:04:40,550
+The parameter alpha_s, of order of 0.2,
+
+69
+00:04:40,550 --> 00:04:46,030
+is the strong interaction analog of the
+electromagnetic fine-structure constant.
+
+70
+00:04:46,030 --> 00:04:48,890
+The first term diminishes with distance.
+
+71
+00:04:48,890 --> 00:04:52,600
+The second term, on the contrary,
+grows with distance and
+
+72
+00:04:52,600 --> 00:04:54,475
+keeps the two quarks from being separated.
+
+73
+00:04:55,590 --> 00:05:01,145
+The constant in this confining term
+is of the order of 1 GeV/fm.
+
+74
+00:05:01,145 --> 00:05:05,689
+In video 5.4, we will discuss in more
+detail the properties of the strong
+
+75
+00:05:05,689 --> 00:05:08,680
+interactions which provide
+this binding force.
+
+76
+00:05:11,173 --> 00:05:15,395
+The peaks of the cross section around
+resonances invites to build storage rings
+
+77
+00:05:15,395 --> 00:05:18,310
+for the mass production of
+the corresponding states.
+
+78
+00:05:18,310 --> 00:05:23,169
+The collider DAFNE in Frascati,
+Italy is one such factory
+
+79
+00:05:23,169 --> 00:05:27,249
+dedicated to the production
+of Phi resonances.
+
+80
+00:05:27,249 --> 00:05:32,460
+The Beijing e+e- storage ring, BEPC,
+produces J/Psi and Psi mesons.
+
+81
+00:05:33,680 --> 00:05:37,100
+The PEP-II collider in
+the United States and
+
+82
+00:05:37,100 --> 00:05:42,520
+KEKB in Japan are factories for
+the Upsilon and other b-bbar mesons.
+
+83
+00:05:42,520 --> 00:05:47,300
+The systematic decrease of
+the width with the mass of
+
+84
+00:05:47,300 --> 00:05:52,370
+the resonance could make you believe that
+a t-tbar resonance would be very narrow,
+
+85
+00:05:52,370 --> 00:05:56,130
+and thus have a long lifetime and
+a significant cross section.
+
+86
+00:05:56,130 --> 00:05:57,810
+This, however, is not at all the case.
+
+87
+00:05:58,830 --> 00:06:03,750
+The top quark is so heavy, on the order
+of 175 GeV, that the phase space for
+
+88
+00:06:03,750 --> 00:06:06,110
+its decay becomes enormous.
+
+89
+00:06:06,110 --> 00:06:08,710
+The t-quark lifetime is
+thus extremely short.
+
+90
+00:06:08,710 --> 00:06:11,090
+It decays before it can
+even form a bound state.
+
+91
+00:06:12,100 --> 00:06:15,810
+Consequently, there will be hardly
+an increase in e+e- cross section
+
+92
+00:06:15,810 --> 00:06:19,485
+at the threshold for
+the production of pairs of top quarks.
+
+93
+00:06:20,660 --> 00:06:24,235
+In the next video, Mercedes will
+discuss what all of this means for
+
+94
+00:06:24,235 --> 00:06:26,376
+the properties of strong interaction.
+
+95
+00:06:26,376 --> 00:06:32,189
+[MUSIC]

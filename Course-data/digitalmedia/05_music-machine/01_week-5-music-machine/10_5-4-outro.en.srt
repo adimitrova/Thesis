@@ -1,0 +1,365 @@
+1
+00:00:00,444 --> 00:00:04,955
+[BLANK AUDIO]. 
+
+2
+00:00:04,955 --> 00:00:22,574
+[SOUND]. 
+
+3
+00:00:22,574 --> 00:00:26,640
+I have to say that sounds really good. 
+I'm the one here who isn't a musician, so 
+
+4
+00:00:26,640 --> 00:00:30,544
+I can't say much about it, but Matt what 
+is it about that synth that makes it 
+
+5
+00:00:30,544 --> 00:00:33,565
+sound well? 
+ >> He doesn't care. 
+
+6
+00:00:33,565 --> 00:00:35,638
+ >> He doesn't care. 
+ >> He doesn't care, he's playing. 
+
+7
+00:00:35,638 --> 00:00:37,282
+I'm not going to, you know, I'm not 
+going to say anything. 
+
+8
+00:00:37,282 --> 00:00:38,926
+ >> I just love this mate, I think it's 
+amazing. 
+
+9
+00:00:38,926 --> 00:00:41,248
+ >> Cool. 
+ >> so we've given you something great 
+
+10
+00:00:41,248 --> 00:00:43,481
+here. 
+You, you really need to, to, to work on 
+
+11
+00:00:43,481 --> 00:00:46,592
+this, and, and make it into something 
+individual to put your own sounds in 
+
+12
+00:00:46,592 --> 00:00:49,532
+there. 
+To, to see if you can experiment with, 
+
+13
+00:00:49,532 --> 00:00:52,158
+with the length of the sequences. 
+ >> Yeah. 
+
+14
+00:00:52,158 --> 00:00:54,611
+And you can stick your own waveforms in. 
+You can change all the sequence lengths. 
+
+15
+00:00:54,611 --> 00:00:57,509
+You could do a proper GUI rather than 
+that bleak affair. 
+
+16
+00:00:57,509 --> 00:01:02,110
+I quite like it bleak. 
+It's all post-nuclear TV 303. 
+
+17
+00:01:02,110 --> 00:01:06,118
+ >> You might, you might try and make it 
+like like a vintage drum machine. 
+
+18
+00:01:06,118 --> 00:01:08,998
+You could get, get an image of a vintage 
+drum machine as you saw in my slides and 
+
+19
+00:01:08,998 --> 00:01:12,301
+you could put that behind it, put the 
+buttons on top. 
+
+20
+00:01:12,301 --> 00:01:14,471
+There's all kinds of stuff you can do, 
+you know, you can really get creative 
+
+21
+00:01:14,471 --> 00:01:16,834
+with this. 
+ >> Remember you can use images for the 
+
+22
+00:01:16,834 --> 00:01:20,828
+buttons, so that's an easy thing to do. 
+ >> Yeah, the I quite like the filter, 
+
+23
+00:01:20,828 --> 00:01:25,325
+the thing about the web audio equalizer, 
+it has a really, really nice filter. 
+
+24
+00:01:25,325 --> 00:01:27,999
+And I want us to get in. 
+ >> Okay, come on then. 
+
+25
+00:01:27,999 --> 00:01:30,671
+So, this is really taking me back. 
+I mean it's, you know. 
+
+26
+00:01:30,671 --> 00:01:33,149
+ >> [LAUGH]. 
+It's that kind of where's it gone? 
+
+27
+00:01:33,149 --> 00:01:34,976
+Where's the sound gone? 
+ >> It's right here. 
+
+28
+00:01:34,976 --> 00:01:37,285
+It's right here. 
+ >> Oh, there we go. 
+
+29
+00:01:37,285 --> 00:01:40,343
+Yeah. 
+[SOUND]. 
+
+30
+00:01:40,343 --> 00:01:45,804
+It's just that filter cut off thing, and 
+with the envelope. 
+
+31
+00:01:45,804 --> 00:01:47,832
+Well, that's neat. 
+ >> We can really, we can really dig 
+
+32
+00:01:47,832 --> 00:01:50,457
+around and get into that kind of 
+[UNKOWN]. 
+
+33
+00:01:50,457 --> 00:01:55,249
+ >> So, that's it for Digital Media and 
+Mobile Applications. 
+
+34
+00:01:55,249 --> 00:01:58,047
+And we've been teaching you how to do 
+creative programming. 
+
+35
+00:01:58,047 --> 00:02:01,923
+We've tried to make it as easy for you to 
+get started as possible, regardless of 
+
+36
+00:02:01,923 --> 00:02:05,831
+your background. 
+And give you lots of opportunities to 
+
+37
+00:02:05,831 --> 00:02:09,807
+develop your skills both creatively and 
+also technically. 
+
+38
+00:02:09,807 --> 00:02:14,807
+You know, we've created a bunch of 
+programming, languages and libraries. 
+
+39
+00:02:14,807 --> 00:02:17,064
+Well, not languages as such, just 
+libraries that make it easier for you to 
+
+40
+00:02:17,064 --> 00:02:20,947
+do the things that you want to do. 
+and I think that's been quite good. 
+
+41
+00:02:20,947 --> 00:02:23,379
+It's been successful. 
+They've got a physics engine, they've got 
+
+42
+00:02:23,379 --> 00:02:25,756
+a music engine, they've got, what else 
+have they got? 
+
+43
+00:02:25,756 --> 00:02:28,094
+They've got Facebook stuff. 
+All this different stuff. 
+
+44
+00:02:28,094 --> 00:02:31,181
+And you can just go away. 
+And if you're interested in following 
+
+45
+00:02:31,181 --> 00:02:34,496
+this up and doing some more, but you feel 
+like you want to do some if you, well, 
+
+46
+00:02:34,496 --> 00:02:38,367
+let's say you want to be more creative, 
+at [UNKNOWN]. 
+
+47
+00:02:38,367 --> 00:02:42,147
+We run a digital loss computing program 
+which is a combination with the arts 
+
+48
+00:02:42,147 --> 00:02:45,750
+department. 
+that's [UNKNOWN] art department so that 
+
+49
+00:02:45,750 --> 00:02:49,502
+program is kicking off right now and you 
+apply for that more or less in the next 
+
+50
+00:02:49,502 --> 00:02:53,181
+couple of months. 
+ >> we also have a Master's program in 
+
+51
+00:02:53,181 --> 00:02:55,785
+Computational Arts, and a Master's in 
+Fine Art and Computational Arts, if 
+
+52
+00:02:55,785 --> 00:02:59,407
+you're more creative. 
+We also have a BSC in Creative Computing 
+
+53
+00:02:59,407 --> 00:03:01,861
+as well, don't we, Marco? 
+ >> Yeah. 
+
+54
+00:03:01,861 --> 00:03:03,907
+That's running in London, but it's also 
+running internationally as part of the 
+
+55
+00:03:03,907 --> 00:03:05,775
+University of London International 
+Programs. 
+
+56
+00:03:05,775 --> 00:03:07,681
+ >> Yes. 
+ >> So, wherever you are, you can 
+
+57
+00:03:07,681 --> 00:03:10,364
+actually take that program. 
+ >> Yeah, and this is a good starting 
+
+58
+00:03:10,364 --> 00:03:11,788
+off point plan. 
+ >> Yeah. 
+
+59
+00:03:11,788 --> 00:03:13,574
+ >> Yeah, yeah. 
+ >> And that's really what it's been 
+
+60
+00:03:13,574 --> 00:03:16,206
+about. 
+Thank you very much for still being here 
+
+61
+00:03:16,206 --> 00:03:20,391
+through all of the coding help. 
+And but, actually, you know what? 
+
+62
+00:03:20,391 --> 00:03:22,979
+It's exciting when it works and that's 
+what makes it worthwhile. 
+
+63
+00:03:22,979 --> 00:03:25,299
+ >> Yeah, and this is so much great 
+stuff, just combine together all of the 
+
+64
+00:03:25,299 --> 00:03:27,739
+stuff we have shown you like mix it up, 
+figure out what new things you can do 
+
+65
+00:03:27,739 --> 00:03:31,432
+with all the taught we have given you. 
+ >> And then, send it to us, because we 
+
+66
+00:03:31,432 --> 00:03:32,784
+want to see. 
+ >> Yeah. 
+
+67
+00:03:32,784 --> 00:03:33,613
+ >> We really want to see what you're 
+doing. 
+
+68
+00:03:33,613 --> 00:03:36,652
+ >> We'd love to see what you're doing. 
+And we want to hear some more music. 
+
+69
+00:03:36,652 --> 00:03:38,824
+Matt, do you got anything. 
+ >> Yeah, music. 
+
+70
+00:03:38,824 --> 00:03:41,769
+[MUSIC]. 
+
+71
+00:03:41,769 --> 00:03:45,812
+Matt's actually very, very good at synth 
+stuff. 
+
+72
+00:03:45,812 --> 00:03:50,560
+I built this for you, it's true. 
+ >> I just love this, it's brilliant, 
+
+73
+00:03:50,560 --> 00:03:52,961
+brilliant work. 
+Have fun. 
+
+74
+00:03:52,961 --> 00:04:03,164
+[MUSIC]. 

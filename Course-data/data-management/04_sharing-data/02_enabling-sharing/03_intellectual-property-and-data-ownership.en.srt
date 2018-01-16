@@ -1,0 +1,222 @@
+1
+00:00:00,032 --> 00:00:07,094
+[MUSIC]
+
+2
+00:00:07,094 --> 00:00:11,592
+One of the other areas that may be
+problematic when a researcher wishes to
+
+3
+00:00:11,592 --> 00:00:15,942
+share his or her data, is resolving and
+clarifying data ownership and
+
+4
+00:00:15,942 --> 00:00:18,470
+intellectual property rights issues.
+
+5
+00:00:18,470 --> 00:00:23,456
+Intellectual property rights can be
+defined as rights acquired over any work
+
+6
+00:00:23,456 --> 00:00:28,530
+created or invented with the intellectual
+effort of an individual or entity.
+
+7
+00:00:28,530 --> 00:00:32,720
+The question of how
+intellectual property rights
+
+8
+00:00:32,720 --> 00:00:36,600
+relate to data in particular
+can complicate this issue.
+
+9
+00:00:38,140 --> 00:00:43,040
+As we have discussed, research data
+can come in many different forms
+
+10
+00:00:43,040 --> 00:00:47,200
+which can affect whether data are subject
+to intellectual property rights,
+
+11
+00:00:47,200 --> 00:00:50,200
+different legal jurisdictions
+may also apply.
+
+12
+00:00:50,200 --> 00:00:55,060
+They have particular standards for
+creative works, to data differently.
+
+13
+00:00:56,490 --> 00:01:00,800
+Because of these complexities,
+in order to effectively share data,
+
+14
+00:01:00,800 --> 00:01:04,420
+researchers should first resolve
+any data ownership issues.
+
+15
+00:01:05,590 --> 00:01:08,390
+Resolving data ownership issues early,
+
+16
+00:01:08,390 --> 00:01:14,190
+is particularly important because
+the person who has ownership over the data
+
+17
+00:01:14,190 --> 00:01:18,770
+ultimately controls its dissemination,
+preservation, and destruction.
+
+18
+00:01:20,270 --> 00:01:26,490
+Ownership issues can become even more
+problematic and confusing because
+
+19
+00:01:26,490 --> 00:01:31,120
+of the various stakeholders involved
+in collecting and generating data.
+
+20
+00:01:32,640 --> 00:01:38,650
+Today, collaborative projects, especially
+cross institutional collaborations or
+
+21
+00:01:38,650 --> 00:01:43,040
+international collaborations
+can complicate data ownership.
+
+22
+00:01:43,040 --> 00:01:45,260
+For this reason, it is important for
+
+23
+00:01:45,260 --> 00:01:50,650
+researchers to come to an agreement
+at the beginning of a project.
+
+24
+00:01:50,650 --> 00:01:55,650
+Concerning how, when, and
+by whom the data will be used
+
+25
+00:01:55,650 --> 00:01:59,530
+as the basis of publications as
+well as shared in the future.
+
+26
+00:02:00,620 --> 00:02:05,240
+Institutional policies can
+also influence data ownership.
+
+27
+00:02:05,240 --> 00:02:08,070
+In some cases,
+if a researcher is working for
+
+28
+00:02:08,070 --> 00:02:13,010
+a university, then the data may
+technically be owned by the institution.
+
+29
+00:02:14,260 --> 00:02:18,710
+Researchers should be cognizant of
+institutional data management and
+
+30
+00:02:18,710 --> 00:02:22,540
+copyright policies when
+considering data sharing.
+
+31
+00:02:23,700 --> 00:02:27,610
+It is important that researchers
+contact their institution
+
+32
+00:02:27,610 --> 00:02:30,709
+if they are unsure about their
+intellectual property rights.
+
+33
+00:02:32,410 --> 00:02:37,600
+Funders may have policies related to
+ownership rights of data that stipulate
+
+34
+00:02:37,600 --> 00:02:41,320
+where and how a researcher
+should share their data or
+
+35
+00:02:41,320 --> 00:02:44,570
+impose restrictions on data dissemination.
+
+36
+00:02:44,570 --> 00:02:48,590
+So being aware of funder
+policies is also essential.
+
+37
+00:02:48,590 --> 00:02:51,870
+In the case of using
+extant proprietary data,
+
+38
+00:02:51,870 --> 00:02:56,570
+researchers are often required to gain
+permission from the producer of the data
+
+39
+00:02:56,570 --> 00:03:00,770
+in order to legally share the original or
+derived data.
+
+40
+00:03:00,770 --> 00:03:02,960
+Because of the many stakeholders and
+
+41
+00:03:02,960 --> 00:03:08,475
+policies that can affect data ownership,
+researchers may be confused
+
+42
+00:03:08,475 --> 00:03:13,185
+over who actually owns the data which may
+make them reticent to share the data.
+
+43
+00:03:13,185 --> 00:03:17,134
+We encourage researchers
+to contact information and
+
+44
+00:03:17,134 --> 00:03:21,609
+legal professionals early in
+the research data lifecycle,
+
+45
+00:03:21,609 --> 00:03:26,886
+to assist them in determining what
+polices may affect data ownership.
+
+46
+00:03:26,886 --> 00:03:36,549
+[MUSIC]

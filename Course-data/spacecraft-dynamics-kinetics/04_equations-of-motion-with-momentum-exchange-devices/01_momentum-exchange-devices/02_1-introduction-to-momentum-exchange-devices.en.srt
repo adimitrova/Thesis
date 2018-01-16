@@ -1,0 +1,263 @@
+1
+00:00:06,368 --> 00:00:10,040
+We're going to be talking about
+momentum exchange devices.
+
+2
+00:00:11,900 --> 00:00:14,780
+This still belongs to the category of
+
+3
+00:00:14,780 --> 00:00:18,250
+kinetics in the sense that we're
+trying to find equations of motion.
+
+4
+00:00:18,250 --> 00:00:21,572
+We have found equations of motion and
+you started that with blobs,
+
+5
+00:00:21,572 --> 00:00:23,660
+let me frozen so
+we have a nice rigid body.
+
+6
+00:00:23,660 --> 00:00:27,480
+Then we found them for a single rigid
+body, studied equilibrium, stability,
+
+7
+00:00:27,480 --> 00:00:29,210
+all the uncontrolled things.
+
+8
+00:00:29,210 --> 00:00:32,946
+Then we had systems of rigid bodies
+where we had maybe a dual spinner, so
+
+9
+00:00:32,946 --> 00:00:34,393
+it was a craft in one wheel.
+
+10
+00:00:34,393 --> 00:00:37,800
+Now we're going to go a little bit crazy
+here, not just do craft in one wheel but
+
+11
+00:00:37,800 --> 00:00:39,260
+craft in n wheels.
+
+12
+00:00:39,260 --> 00:00:43,170
+And not just body fixed wheels but
+even ones that can spin and
+
+13
+00:00:43,170 --> 00:00:44,710
+twist relative to the body.
+
+14
+00:00:44,710 --> 00:00:46,990
+Those things are called
+controlled mono gyroscopes.
+
+15
+00:00:46,990 --> 00:00:50,560
+So with all these extra things
+there's benefits but also challenges.
+
+16
+00:00:50,560 --> 00:00:53,280
+The mathematics gets a lot more complex.
+
+17
+00:00:53,280 --> 00:00:57,530
+So in your last homework actually you
+derived these in via CNG equations,
+
+18
+00:00:57,530 --> 00:00:58,740
+the path is all in the book.
+
+19
+00:00:58,740 --> 00:01:01,060
+We're covering everything in class, so
+
+20
+00:01:01,060 --> 00:01:04,160
+as we go through these I'm
+going to show you some highlights.
+
+21
+00:01:04,160 --> 00:01:05,610
+Maybe go through some of these equations.
+
+22
+00:01:05,610 --> 00:01:07,380
+Show you how you can get
+from this step to this step.
+
+23
+00:01:07,380 --> 00:01:09,770
+But I'm not going to do every
+single mathematical detail.
+
+24
+00:01:09,770 --> 00:01:12,763
+You do that actually at the end when you
+put it back yourself in the homework.
+
+25
+00:01:12,763 --> 00:01:14,150
+But then you see all the sub steps.
+
+26
+00:01:14,150 --> 00:01:15,880
+You can see yep this is
+what I should be getting.
+
+27
+00:01:15,880 --> 00:01:16,720
+Great I'm on track.
+
+28
+00:01:16,720 --> 00:01:20,570
+If you're stuck with a sub step you can
+use the next sub step and move on, right?
+
+29
+00:01:20,570 --> 00:01:22,830
+And then come back to that
+one later if you have to.
+
+30
+00:01:22,830 --> 00:01:23,960
+So everything's there.
+
+31
+00:01:23,960 --> 00:01:26,590
+So the way I'm teaching
+this is more of a overview.
+
+32
+00:01:26,590 --> 00:01:32,380
+We want to cover the topics and
+concepts and how this comes together.
+
+33
+00:01:32,380 --> 00:01:35,660
+So we'll talk about
+momentum control devices.
+
+34
+00:01:35,660 --> 00:01:38,970
+There's some pictures and
+just conceptually why do people like this?
+
+35
+00:01:38,970 --> 00:01:40,074
+It's kind of an icing.
+
+36
+00:01:40,074 --> 00:01:42,663
+And then we can get into
+the math equations of motion and
+
+37
+00:01:42,663 --> 00:01:45,190
+we're going to derive it
+in the most general way.
+
+38
+00:01:45,190 --> 00:01:48,302
+There's something called verbal
+speed control moment gyroscope.
+
+39
+00:01:48,302 --> 00:01:52,697
+Typically there's just CMG's
+within a single axis or dual axis,
+
+40
+00:01:52,697 --> 00:01:54,582
+double gamble CNG devices.
+
+41
+00:01:54,582 --> 00:01:58,642
+But there are also some that have been
+researched that have been variable speed
+
+42
+00:01:58,642 --> 00:02:00,250
+and you'll see the benefits.
+
+43
+00:02:00,250 --> 00:02:03,500
+If we do a variable speed
+control moment job scope upfront
+
+44
+00:02:03,500 --> 00:02:05,825
+we're doing the most complex version.
+
+45
+00:02:05,825 --> 00:02:08,701
+And then at the end we can go well,
+what if it is just a reaction mill?
+
+46
+00:02:08,701 --> 00:02:10,245
+What if it is a CMG?
+
+47
+00:02:10,245 --> 00:02:14,000
+So we can free certain modes in the
+mathematics and certain terms go to zero.
+
+48
+00:02:14,000 --> 00:02:18,998
+And you regain the classic reactional
+solution or CMG solution or the hybrid,
+
+49
+00:02:18,998 --> 00:02:19,837
+right?
+
+50
+00:02:19,837 --> 00:02:23,017
+So instead of doing this two, three times,
+we'll do it once in the most general and
+
+51
+00:02:23,017 --> 00:02:24,247
+then specialize.
+
+52
+00:02:24,247 --> 00:02:26,137
+That's the approach that we're doing.
+
+53
+00:02:26,137 --> 00:02:30,847
+So we'll go through a single VSCMG first,
+talk about the motor torque calculations.
+
+54
+00:02:30,847 --> 00:02:33,857
+Clusters often too,
+that's we have multiple devices.
+
+55
+00:02:33,857 --> 00:02:35,256
+Basically comes to summation,
+
+56
+00:02:35,256 --> 00:02:37,905
+once you know how to do one doing
+the others is kind of a ditto.
+
+57
+00:02:37,905 --> 00:02:41,288
+It's more of a bookkeeping step so
+it doesn't take long to do that.

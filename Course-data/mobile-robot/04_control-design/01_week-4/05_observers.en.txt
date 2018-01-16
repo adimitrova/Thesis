@@ -1,0 +1,124 @@
+So with the last lecture, we are actually 
+declaring success in terms of designing controllers. 
+The useful placement, which add controllability, and off we go. 
+the big problem, though, is well, we don't have x. 
+And we have to, when we do. u=-Kx. 
+Well, x is there, but we don't have it. So, what about y. 
+Ultimately, we don't have x. We have y coming out of the system. 
+And somehow, this Y has to translate into a u. 
+It's not enough to say x translates into u because we actually don't have, y. 
+Well here is the, cool idea. I'm going to put a little magic block 
+here. And the output of that block, somehow 
+should become x meaning I would like to be able to take y push it through a magic 
+block. And get the state out. 
+Now I'm not going to get x exactly, in fact I'm going to put a little hat on top 
+of it. This is my estimate of a state. 
+Meaning I'm taking my sensor measurments, y and based on those measurements I'm 
+going to estimate what x is. And I'm going to call that x hat, in fact 
+the magic block. The thing that allows to get x from y is 
+called an observer. So in today's lecture I'm going to be 
+talking about these observers and how do we actually be design them. 
+Well, it turns out the general idea behind the observer design can be 
+summarized in the predictor-corrector. Under the predictor corrector banner. 
+So, let's say that we have, a x is ax. Forget about u for now, that doesn't 
+matter. And y is cx. 
+Well, here is the idea. The first thing we're going to do, is 
+we're going to make a copy of this system. 
+And our estimator is going to be this copy. 
+So I'm going to have x. is =. 
+Sorry. xhat. 
+is = to Ax hat, so my estimate is going to evolve, according to the same 
+dynamics as my actual state. And this is known as the predictor, which 
+allows me to predict what my estimate should be doing. 
+But that's not enough, what I'm going to do now is I'm going to add some kind of 
+notion of a wrong, or right the estimate is to the model. 
+And one, one thing to note is the actually output is Y, the output I would 
+have had if the state was, was exact is c*x hat * exact. 
+So I'm going to compare y. To c*x hat. 
+And, in fact, what I do, is, I add the piece to my predictor. 
+So, x. is ax or hat, + this difference. 
+y-cx hat. which tells me how wrong I am. 
+And then I add some game matrix here, l. And this. 
+Gives me a predictor and a corrector. So, this part here is the predictor, and 
+this part here is the corrector. And this kind of structure is known as a 
+Luenberger observer named after David Luenberger, but the point is that, when 
+you have this predictor correct repair, you have some way of hopefully figuring 
+out the state, or at least a good estimate of the state, from the 
+measurements, y, that show up here. So the only question now. 
+Well, one question is, does it work? The other question is, what is this L? So the 
+first thing we should ask is, how do I actually pick a reasonable L? Well the 
+first thing we'll do. Is, let's define an estimation error, e, 
+as the actual state - my estimated state. And I should point out that we don't know 
+e. Beacuse we don't know x .but we can still 
+write down e as x-x hat. Well, I would like E to go to 0, right. 
+'Cuz, if I can make e go to 0, the x hat goes to x. 
+Which means that x hat is a good estimate of x. 
+So what I would like to do is actually stabilize e. 
+Make e asymptotically stable. So, what we need to do first, is, write 
+down the dynamics for my error equation. So e dot well that's x dot-x hat dot. 
+Well x dot is just Ax and x hat dot. Well, we have this format the Ax hath+ 
+L(y-Cxhath) and then we get the minus signs in front of everything. 
+so this is my estimation. Now y Is equal to c*x, right? 
+So what I actually have here is e dot being A(x-xhat)-LC(x-xhat). 
+But x-xhat is e so e dot is (A-LC)e. This is the dynamics of the estimation 
+error. We don't know e but we know that this is 
+the dynamics. So what we need to do now, of course. 
+Is pick L in such a way that the eigenvalues to this matrix, A-LC, have 
+negative real parts. Because if we've done that, we've 
+stabilized the estimation error. And I wonder, I wonder how we should go 
+about doing that. Actually, I don't wonder, we know how to 
+do it, pole-placement. We know how to do control design this 
+looks just like control design but it's actually observier design. 
+well, we wanted to import the values from (A-LC) to be 
+the negative. So, let's just pole place away. 
+Okay. So here's an example. 
+x dot equal to this, y is equal to that. Fine. 
+Now, I want my error dynamics to be asymptotically stable, so if I write down 
+A-LC. And I should point out that in this case 
+C is a 1x2, that means that L has to be a 2x1 because these things have to cancel 
+out. And I get a 2x2 left so L is actually a 
+2x1 matrix in this case. So, if I write down what A-LC is, it 
+becomes this semi-annoying matrix but at least we know what this matrix is. 
+What do we do now? Well, we compute the characteristic equation to A-LC. 
+And if we do that, we compute the determinant of lambda i. 
+So this is the determinant of lambda i. Minus A-LC. 
+Right, if we compute that, we get the following expression. 
+Well, now we do what we always do in these situations. 
+We pick our favorite eigenvalues. And it seems like I am very, very fond of 
+lambda equal to negative 1. If I do that, I get this as the desired. 
+Characteristic equation. Well, what do we do now? Well, we line up 
+coefficients, of course. These coefficients have to be the same, 
+and these coefficients have to be the same. 
+And if you actually solve this, I'm not going to go through the algebra. 
+I encourage you to do it on your own. You get that L 1 = -2/3. 
+And L2 is a third. And if fact, the way this would look my 
+observer gain is well, L1 was -2/3, there is L1. 
+And L2 was the third which is there. So my observer dynamics is x dot. 
+Well, x hat dot is Ax hat plus this is L*Y-CL. 
+So this is my observer dynamics. What I'm showing here in the plot in 
+blue, this is x1, the actual x1 and how it's evolving and in red you see my 
+xhat1. and you see that after a while, they end 
+up on top of each other very nicely. Similarly, in the right figure, in blue, 
+you have x 2, and in red, you have x hat 2. 
+And as we can see, the state, the estimated state, x hat, thus, indeed 
+converge 2. The actual set. 
+So here is what's going on right now. I have x as Ax, y is Cx out of this thing 
+I can suck y right? Because that's what I'm seeing, these are the measurements. 
+What I'm doing now is I'm feeding this y into my server That has a predictor part, 
+which is the dynamics, plus a corrector part, which looks at the difference 
+between the actual output and what the output would have been if x hat was my 
+state. And then out of this comes x hat. 
+Which means that we have some way of figuring out what the state of the system 
+is. Now, obvious questions are. 
+Well, well. There's only 1 question, actually. 
+Does this work? And the answer is, no. It doesn't always work. 
+Just like pole placement doesn't always work when you're doing control design. 
+For the same reason pole placement doesn't always work when we do observer 
+design. And, what we need is we need something 
+that's related to controllability. So, controllability tells us. 
+Do we have enough control authority, are actuater is good enough. 
+Well, for observer design, the concept is known as observability, which means do i 
+have a rich enough y, meaning rich enough sensor suite so that I'm able to figure 
+out what the system is doing. Meaning estimate, estimate x from y. 
+And the topic of the next lecture is exactly this observability. 
+When can we indeed figure out x from y.

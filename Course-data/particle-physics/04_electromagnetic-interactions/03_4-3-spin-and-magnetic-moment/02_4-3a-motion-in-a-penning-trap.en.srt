@@ -1,0 +1,146 @@
+1
+00:00:00,089 --> 00:00:11,010
+[MUSIC]
+
+2
+00:00:11,010 --> 00:00:14,666
+We will calculate the motion of
+electrons in a Penning trap like
+
+3
+00:00:14,666 --> 00:00:16,565
+the one shown in this small sketch.
+
+4
+00:00:17,705 --> 00:00:20,355
+For the moment we will neglect
+the influence of the slight
+
+5
+00:00:20,355 --> 00:00:24,915
+inhomogeneity of the magnetic field
+caused by the nickel ring, and
+
+6
+00:00:24,915 --> 00:00:27,115
+the electric field of the cap electodes.
+
+7
+00:00:29,195 --> 00:00:33,165
+If B points in the z direction it
+follows from a vector potential equal to
+
+8
+00:00:33,165 --> 00:00:33,805
+(-By,0,0).
+
+9
+00:00:36,590 --> 00:00:40,590
+So the Hamiltonian of such a system
+using minimal substitution
+
+10
+00:00:40,590 --> 00:00:43,640
+is 1/(2m) (p - eA)^2.
+
+11
+00:00:45,350 --> 00:00:50,330
+So with a bit of trivial mathematics,
+we find 1/(2m)(p + 
+
+12
+00:00:50,330 --> 00:00:55,350
+2m omega y p_x + m^2 omega^2 y^2).
+
+13
+00:00:56,860 --> 00:01:00,980
+If you write this in terms of
+Cartesian components of the momentum,
+
+14
+00:01:00,980 --> 00:01:05,240
+we find that all the terms proportional
+to p_x can be joined together and
+
+15
+00:01:05,240 --> 00:01:11,160
+the remaining term is p_z^2/(2m),
+which corresponds to a uniform motion
+
+16
+00:01:11,160 --> 00:01:15,290
+in this z direction, which in reality,
+will be limited by the cap electrodes.
+
+17
+00:01:16,590 --> 00:01:20,530
+The other two terms correspond to a
+harmonic oscillation in the x-y plane.
+
+18
+00:01:20,530 --> 00:01:25,548
+The energy levels for
+this oscillation are equal to 
+
+19
+00:01:25,548 --> 00:01:31,030
+omega(n+1/2) with n a whole number, 0,
+1, 2, and so on.
+
+20
+00:01:34,290 --> 00:01:36,572
+We now take into account
+a spin of the electron.
+
+21
+00:01:36,572 --> 00:01:41,368
+The Hamiltonian acquires a term
+µ_s B where µ_s is
+
+22
+00:01:41,368 --> 00:01:45,180
+the magnetic moment of the electron and
+B is the magnetic field vector.
+
+23
+00:01:46,400 --> 00:01:51,680
+So this gives an additional splitting
+by plus or minus g_e (eB)/(4m).
+
+24
+00:01:53,020 --> 00:01:58,370
+This last term is g/4 times the same
+frequency which we had found earlier.
+
+25
+00:01:59,970 --> 00:02:03,030
+The energies corresponding
+to these two spin directions
+
+26
+00:02:03,030 --> 00:02:07,490
+differ from E_n by plus or
+minus g_e/4 times omega.
+
+27
+00:02:08,720 --> 00:02:14,690
+This results in a level spacing due to
+spin of g_e/2 times omega compared
+
+28
+00:02:14,690 --> 00:02:19,630
+to one level spacing by the cyclotron
+motion which is ∆E_n = omega.
+
+29
+00:02:20,860 --> 00:02:22,990
+The difference between
+these two level spacings
+
+30
+00:02:24,190 --> 00:02:27,664
+directly measures (g_e - 2)/2.
+
+31
+00:02:33,002 --> 00:02:38,919
+[MUSIC]

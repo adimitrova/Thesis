@@ -1,0 +1,98 @@
+[MUSIC] Hello, I am glad to see you back for
+this lesson. In previous lessons,
+we explored Contiki's kernel architecture. Now we will look into the details of
+Contiki's services and libraries. By the end of the lesson,
+you should understand the benefits and challenges of using and developing
+services and libraries in Contiki. First of all,
+I will go directly to a question. What is a service in Contiki? As we mentioned before,
+services are implemented as modules. So when a particular service is required
+the corresponding module is loaded thus making Contiki run efficiently. From a certain point of view, a service is
+different from other application programs since a service can be used by
+several application programs In other words,
+a service is a type of shared library. One of the benefits of Contiki Services is that they can be
+dynamically replaced at random. As mentioned before, with this strategy Contiki minimizes the number of modules
+to be loaded during booting time. As a result, memory researches
+can be used more efficiently. As an example, some popular and
+hag intensive use services in Kentucky are communication stacks and
+sensor device drivers. These kind of services will be
+discussed in depth in coming videos. After this short introduction, I assume that you already have
+a basic idea of Contiki Services. Now, we are going to take a look under
+the skin of Contiki Services and other components related to Services. In every operating system, each service
+should have a unique identifier, defined by the system or users. The format of the identifier
+can write depending on a particular operating system. In Contiki, a service identifier is a textual string that describes
+the functionality of the service Identifiers are used when application
+programs invoke a service. When a service is requested, the service
+layer uses ordinary string matching for querying the installed services. You may now be wondering,
+what is a service layer? The surface layer is a component located
+between the kernel and services. When a process wants to call a service,
+it posts an event to the colonial, which in turn sends a command and information related to their requested
+service to the service leader. This layer uses this data for
+querying a matching services. Instead of searching
+services in the kernel, the searching job will be
+doing by the service layer. Everything we have discussed so far does not unveiled the actual
+structure of a service in Contiki. Therefore, now we are going to
+explore the structure of a service. A service includes a service interface and
+a process. A service interface
+provides an entry point that an application uses to access
+the functionality exposed by the service. The service interface
+includes a version number and a list of functions with pointers to the
+functions that implement the interface. Services and application programs
+use a stub library to communicate. How does a stub library work? A stub library that has been linked
+with an application utilizes the service layer for the purpose of
+finding the corresponding service process. After a service has been located,
+the service is stopped, gets the process identifier,
+which will be used for later requests. By using a stub library an application
+does not need to know the exact location in memory of the service, or
+the implementation details of the service. When a service is called for
+the first time the stub library queries the service layer for searching for
+the necessary service. As a result, if there is an instance
+of the service in the system, the service layer will return
+a pointer to the service interface. After this, the version number
+in the service interface will be compared to the stub
+interface's number. If they are identical, the implementation of the requested
+service will be delivered. Next, I am going to explain
+about service replacement. What is service replacement in Contiki? As we know, services in Contiki can
+be dynamically loaded and replaced. However, it would become unmanageable if
+the process identifier would be changed. Therefore, in order to avoid this issue, the service identifier must remain
+the same even if the process is replaced. A reasonable question would be,
+why is the process replaced but the process identifier is still kept? To answer this question, we are going to explore the mechanism
+that performs this task in Contiki. When a service is about to be replaced,
+a special event is sent from the kernel to the service process to inform the running
+version of the service about the changes. Accordingly, the service is
+automatically removed from the system. However, there are some
+cases that many services have internal stage that may need to
+be transferred to the new process. In order to deal with those cases,
+a pointer and a stage description are used for
+passing to the new service process. In short, this stage description,
+which is stored as a shared memory, is a tag with the motion
+number of the service. The reason for this is to avoid that an incorrect
+version of this same service is loaded. Now let's talk about libraries in Contiki. As we know, the kernel in Contiki
+is minimal and only performs vital functions such as event handling
+features and CPU multipliers. The rest of the system
+is build as a library. When the program needs to use
+a function provided by a library It can link with a library that
+implements the required function. There are three types of linking
+between an application and a library. The first one is a static link
+between an application and libraries which are part of the core. The second one Is a static link
+between an application and libraries which are part
+of loadable program. The last one is the application can call the service that
+implements a specific library. As a result of the last method, the library implemented as services
+can be replaced at random. What is the difference
+between these linking types? Libraries are part of the core. This means that when the system
+is booted or rebooted, these libraries are always automatically
+loaded along with the system. Other type of libraries are loadable
+program libraries, these libraries are only loaded when a program
+application requires their functions. These libraries are rarely used, or
+are very application-specific libraries. The last term is runtime libraries,
+which are implemented as services. This runtime libraries can be replaced
+when the system is running and these libraries are frequently used. To give you a more
+comprehensive understanding of different types of libraries,
+I will discuss some examples. Let's discuss two functions commonly used
+in Contiki applications memcpy and atoi. The memcpy function is used for
+copying data between two memory regions, while atoi function is used for
+converting strings into integers. Memcpy is frequently used in Contiki, therefor it is considered
+as a part of the core. Whereas atoi is less frequently used, and therefore it is not included
+in the system core. It is implemented in
+loadable program libraries. This is all for
+the lesson about Contiki service, service replacement, and libraries. I hope by now you have a good idea
+about how these Contiki features work. Thanks for watching. [MUSIC]

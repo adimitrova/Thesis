@@ -1,0 +1,236 @@
+Hello and welcome to the seventh and final
+programming and simulation lecture. This week, the programming assignment
+comes to its grand finale, and we will have an ro, quickbot navigate to the
+most complicated environment yet. And what makes this different From our
+navigation, from from week five, is that we need to
+answer three new questions this week. And the first one is, we need to keep track of the progress that the robot is
+making. Last in week five, I talked about this
+problem that the robot can get trapped inside of
+an obstacle. And if it does, it doesn't, it doesn't
+know that it's not making progress. It's just going to try to keep going to
+the, to the goal, and then it'll avoid the obstacle, try to get back to the
+goal, and it'll go on and on. It'll never make any progress to the, towards the goal. So this week, we'll actually think about,
+is the robot making any progress? And If robot is not making any progress,
+maybe we should, you know, use the controller
+from week six. And follow the wall either to the right or
+to the left. So we're all have to make a decision not
+only, do we now start following the wall but in which
+direction, right or, or to the left? And finally. We also need to again revisit our final
+[INAUDIBLE] finite state machine from week five because that one will no longer cut
+it for, for this week's obstacle course. We're going to have to, to really think
+about if we're in a certain state and certain event
+becomes true. To which other states should we switch in
+order to have the rogo, robot progress towards its ultimate goal,
+which is to reach the goal location. And of course, don't collide with any
+obstacles, because that would be bad for our
+quickbot. So, all of the implementation this week
+will happen in the supervisor, so we're only going to be
+worrying about one file this week. And that's mainly because for the past
+seven weeks or six weeks we've written all of the necessary controllers that,
+that we need to, to solve this problem. And unlike the previous weeks I'm actually going to start off with the demo this
+week. To show you what it looks like when it
+works. So Let's see it in action. I'm going to go ahead and launch the
+simulator and hit Play.
+And we're going to click on the robot and try to get it, oop, there we go.
+And what you see here is first of all the robot has Is
+navigating out of this obstacle that it's trapped inside of and it's following the
+wall nicely, or the boundary of the obstacle
+nicely, and it's going to stick to the wall until
+it decides, hey, I'm going to peel off and go towards the goal location, because
+the goal location is somewhere up around this
+area. And you'll see the robot has made it. And eh, in the next couple slides, I'll go
+over exactly what decisions have made to get to this point and what all of these
+beautiful colored lines actually mean. And one more thing, here in the map land
+command window, you can see that I have a few f, f statements
+and these are. The robot switching between a state, so I
+can actually see that I was in ao and go to goal, and then I switched to avoid
+obstacles, and then back ao to ao and go to goal, and then to avoid obstacles, and eventually, there's also a follow wall
+in here. And so on and so forth. But let's get back to the slides. So.
+I talked about progression. And we need progression because if we were
+just to use the controller from week five I said
+we were going to get stuck and that's for the, the, the
+reason for that is that the robot is first of all trying to
+go to the goal. So. Right here I have the goal to goal vector. And that was ugtg and that's pointing me
+towards this goal. So you can just imagine this extends to
+here. So is our goal to goal vector we're
+already familiar with that one. And I also have the obstacle avoidance vector. And perhaps I'm either going truly, go to goal, or perhaps I'm doing something in
+between. So, but the point is that I'm trying, that
+the robot is really trying to drive itself in this
+direction, or in this general direction. So it's wants to go to this, to this goal
+but it's a blocked off by, by, by this obstacle and it has to
+somehow navigate around it. Now, [BLANK_AUDIO] With respect to progression, what I
+want to do is I want to keep track of how close the robot gets
+to the goal. So, first, in the previous slide the robot
+was at this location, and now in this slide has
+progressed to this location. And it's actually gotten closer to the
+goal. And. Because the reason it's gotten closer to
+goes goal, because this distance to the goal is larger than this distance to the goal.
+And the way that we update our progress is by calling the function,
+set_progress_point right here. So this function we'll call and we'll
+make, we'll say, well, you know, the robot has made
+some progress, and we're going to save its progress but
+we're always going to store the closest it's ever gotten to the
+goal location. And the reason that we do this is because
+we want to check a certain event, and this event is
+called progress made. And progress made to checks whether the
+current location the current distance of the robot to the goal location is shorter
+than the last set_progress point. And if so, it returns true otherwise it
+returns false and we're going to use this to check
+whether you know our robot has made progress towards
+the goal or not. So, what we saw in the what we saw in the simulation, was that the robots started
+somewhere over here, and then it drove in this direction and it started avoiding goals and now it's gotten
+to this point. So it's kind of follow this general
+trajectory, because it's gone here, it's probably
+going. Go to goal, and then here, it's doing
+avoid obstacle, and then here, it gets to the point where it
+says well, no progress made. So, the robot's not made any, not made any
+more progress. So, time to make a decision. And, the decision that the robot makes is
+that when it's no longer progressing, it's going to try to
+switch into the Follow Wall behavior. But an important question is, what should
+the direction should be? Should we follow the obstacle at our left
+or the obstacle on our right side? And we're going to make this decision
+based on three vectors. And we're going to make this decision
+based on the goal to goal vector which points
+towards the goal. So this is pointing me towards the goal
+location. The obstacle avoidance vector, which is pointing the robot away from the
+obstacles. And we're going to inspect both the follow
+wall vector. That we computed last week. In the, on the right side and on the left
+side of the robots. So we're going to look at these four
+vectors and make our decision whether we need, we should follow an
+obstacle to the left or to the right. And that's, and that's how we determine
+the follow wall direction of the robot. And the way we're going to do this is
+we're going to ask the questions, is this vector, right
+here, follow wall, and this is L again denotes that it's, it's
+with respect to the left, is this between the vector's
+obstacle of ordnance and [INAUDIBLE]. We're going to ask that question. And we're also, at the same time we're
+going to ask. Is this vector.
+U Follow Wall comma R. Between U _ao and ugtg.
+And of course you can argue in this picture, well they're both, right?
+Because this is one, this is between [BLANK_AUDIO] This one right here is, this vector is
+between the two vectors on this side of things, whereas this
+vector right here is between these two.
+On these thought-side of things. And really, the requirement is going to be
+for, is it between these two vectors? If the A is, we're going to look at the side where the angle between U go
+to goal and U A O, so this angle between them is
+less than Pi. So less than 180 degrees, so when we say
+is a vector between these two vectors. It has to be between them on the side
+where it's less than, probably where these two are
+less than pi apart. [BLANK_AUDIO] And the reason I'm setting it up in this
+way is because that allows us to just do a little bit of
+linear algebra. And the little bit of linear algebra that we're going to do is, is this following
+equation. So what I have here is I have the go to
+goal vector. I have the obstacle avoidance vector.
+I have some scalar parameters. Sigma one and sigma two. And on this side I have the follow wall
+vector that I care about. In this case, I pick the left side, but
+this might as well be the right side. And the condition is that we're going to solve this linear equation for these two
+parameters. So. [BLANK_AUDIO] What is this vector equal to and oh, I'm
+so sorry. What is this scalar equal to? And what does this second scaler do? And we can compute this we're you know, you just have to rearrange this a little
+bit. And What we're going to do is, say, the,
+the condition that we're going to come up with
+is, as follows. If sigma1 is greater than 0, and. Sigma 2 is greater than 0.
+So if they're both positive, that implies that if we have the two vectors, ugtg and uao, then.
+This vector ufw,of L is between those two.
+So it's not on the other side. It's, it's on this side between the two,
+because this, because this angle right here is less than Pi, that's going to be
+our condition. And I have posted 2 PDF's online, and in and announcement that go over why this exactly
+works. Why this linear algebra works, and why it
+makes sense. And I'll have and, and then, those notes,
+I have some more diagrams and a lot more
+detailed math, and you'll be able to follow along
+exactly what this little piece of linear algebra
+does for you. Now, at some point the robot is, the robot you
+know follows the, follows the, the wall, the obstacle, so
+Originally it was over here. Over here and then it drove around and
+drove around. And this was the, this was the best
+progress we had made at any point, so right here. And it follows it around, follows it
+around all the way until it gets to this point right here. And at this point, it says look This
+distance here, from here to the goal, is less than the
+distance from here to here to the goal. And if that's the case, and I no longer
+need to slide, and sliding refers to that condition that I just talked about in the previous slide and we have one for either
+sliding left or one for sliding right, but in this
+case, it's sliding left. And so if this condition is no longer
+true, which it isn't because the, because as you can
+see right here these vectors are no longer between
+the [INAUDIBLE] goal and the obstacle points vector, and
+progress has been made. If those two conditions hold.
+Then we can go switch back to go to goal and our robot can go
+ahead and make its way to the goal location and it doesn't, it
+no, no longer has to follow this obstacle right here.
+Now, like I said, the. State machine, the finite state machine
+from week five is no longer sufficient for this particular problem so you're
+going to have to design a new one. And the design is up to you, but here are
+a few pointers of what you should probably think about in your finite state machine.
+The first is, as usual. If the robot is at the goal, then you
+stop. And it's useful for that as the first
+thing that you check in the finite state machine, because you don't want to execute anything else once you're at the
+goal. Once you're at the goal the robot is done
+with its task and it's just going to stay in
+the stopped state. Also, if the robot get into an unsafe
+distance to the obstacle, we immediately want to
+switch to avoid obstacles, because avoid obstacles really is our last
+ditch effort to make sure that a robot doesn't crash with,
+with obstacle. So it's usually a good idea to have that in there, to make sure that there are no
+collisions. Then Also, you want to have the condition that
+if are you going to goal or maybe you're doing obstacle [INAUDIBLE] and
+[INAUDIBLE] goal together, but both of these goal seeking
+behaviors. And you're no longer making progress then
+you want to switch to either to follow wall
+and you want to do that based on the condition
+whether you're sliding, you're suppose to slide left or
+slide right. And I talked about it in the previous slides but make sure you have that in
+there. And the fourth one is if you do get around the obstacle there will be a point where
+you're going to start making progress again toward the
+goal location and you Will probably no lee, no longer need
+to slide along the wall in order to make progress,
+so if those both tho, both of those conditions
+are, end up being true, then you can go ahead and
+switch back to your goal-seeking behavior, so which is
+either go to goal, or what I usually like do to is if, if I'm close to an obstacle, which I typically am
+because of the follow all behavior I first switch into
+avoid obstacles and go to goal before I switch into pure go to
+goal behavior. Now, my tips for week seven are.
+Again, read the manual. It has more details. And also read the handouts, the, the
+additional handouts that I'm going to be posting that explains the
+Linear Algebra. And do that. And then really the more, even more
+important one is when you design this finite state machine,
+it's fairly complicated. And what I like to do is I like to get out a piece of paper and a pen and I like to draw the finite state
+machine. Really think about... What are all the states that the robot can
+be in, and what are the events that can take it from state to state, and then
+construct it on paper before you even start coding
+it. Because then you, what you can do is you
+can take your piece of paper, and you can pretend you're the robot and you can go
+step through and, and see if you can make it. All the way around the obstacle to the
+goal location. And then after that, you can implement it and you
+can test it. And then you'll always, always have this
+piece of paper to go back and forth and make sure, hey is the robot actually doing what I designed
+the funded state machine What I'd de, how I'd design the
+finite state machine. Is it doing that, is it not, and that really makes debugging this week's
+programming assignment much easier. And usually I would end the video lecture
+here, but I have one extra special slide for you
+this week. And that's the What's Next? Well, it is the last one, but the
+simulator and it's documentation will be available outside of
+this course at the following URL. So the project continues to lives on after
+this course, and at any time if you want to get new updates
+to the simulator. If you want to check in. Have their new robots been added to the
+simulator has there, have there, are there new sensors, if there's
+now maybe a camera sensors, or, whatever it may be, you go to this URL,
+and you'll be sent to a webpage where there'll
+be updates. And there also will be links to a GitHub
+repository. And the point of this GitHub repository is for everybody to have access to share
+improvement. And using improvements can be either, hey,
+this is a way better way of for example, limiting the error between
+minus pi and pi. I want to add that to the simulator. You can go ahead and do that there. You can also add new robots, so if you wanted to have, for example, a robot
+that's more like a car you can add that to the simulator and then have that become part of the
+official project. And the same thing with sensors and
+anything else that you think of, so I would really like to encourage
+you to consider if you're making any improvements or adding
+anything to the simulator, contribute back to the project because
+it'll just make everything better. And future students and future users of
+the simulator will really, really benefit from
+your improvements. And the last thing is just, thank you very
+much for your hard work and your participation
+in programming assignments. I've seen some really exciting discussions
+on the forums, it makes me really, really happy And privileged to
+witness everybody grow into seasoned robotics experts during the
+course of this of these seven weeks. And with that, thank you very much and
+goodbye. [BLANK_AUDIO]

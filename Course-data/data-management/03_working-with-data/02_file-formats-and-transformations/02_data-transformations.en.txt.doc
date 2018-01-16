@@ -1,0 +1,21 @@
+It's also a good idea to
+consider data transformations. There are a number of reasons,
+why you may wish to transform your data, either during your project, or afterwards. Unlike the earlier discussion about
+migrating files from one format to the other, data transformations
+involve changing the actual data. For example via anonymization. For example in survey data collected
+from questionnaires, multiple choice and other kinds of responses are usually coded
+as numbers instead of character strings. This simple type of transformation has
+the advantage of easing data entry if you're typing in paper responses, and it also avoids inconsistencies
+such as typos in data values. Qualitative data such as interview
+transcripts, can be transformed into quantitative data by applying textual
+coding and categorization techniques. Another reason for data transformation may
+be to visualize the data more effectively. A simple example is converting data where
+there's a numerator and a denominator from ratios to percentages, so you can
+display it on a bar chart or pie graph. A number of methods may be used
+to transform confidential or sensitive data, so
+they can be shared with other researchers. These include aggregation,
+and anonymization. You've now completed this module. Take a look at the further reading, where
+you'll find additional resources to learn more about file formats, compression,
+normalization, and data transformations. You may wish to move on to the next module
+and return to these references later. We recommend that you move on to
+the module about documentation and data citation.

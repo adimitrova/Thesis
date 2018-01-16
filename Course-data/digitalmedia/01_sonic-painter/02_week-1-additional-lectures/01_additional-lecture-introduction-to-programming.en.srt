@@ -1,0 +1,793 @@
+1
+00:00:00,450 --> 00:00:04,041
+This is the first of our lectures for 
+people who are doing this course but are 
+
+2
+00:00:04,041 --> 00:00:07,936
+new to programming. 
+If you've got no programming experience 
+
+3
+00:00:07,936 --> 00:00:11,880
+you're probably going to have to work a 
+little bit harder in this course. 
+
+4
+00:00:11,880 --> 00:00:16,560
+It will be a little bit more challenging 
+though we will guide you through it, and 
+
+5
+00:00:16,560 --> 00:00:21,640
+this, these lectures will explain the 
+major concepts. 
+
+6
+00:00:21,640 --> 00:00:27,803
+And we're also going to put up a bunch of 
+other materials that can support you. 
+
+7
+00:00:27,803 --> 00:00:32,155
+before we talk about programming we need 
+to think a little bit about what a 
+
+8
+00:00:32,155 --> 00:00:36,800
+computer is, in order to understand how 
+to program. 
+
+9
+00:00:36,800 --> 00:00:43,520
+this is a computer, the inside of a PC, 
+I, I just got off flickr. 
+
+10
+00:00:43,520 --> 00:00:48,405
+and you can see it's messy. 
+There's lots of microchips, there's sort 
+
+11
+00:00:48,405 --> 00:00:53,885
+of motherboards, wires everywhere. 
+But actually we don't really, to program, 
+
+12
+00:00:53,885 --> 00:00:58,860
+we don't need to know what a computer is 
+in all it's complexity. 
+
+13
+00:00:58,860 --> 00:01:03,532
+Actually all we need to know is some very 
+simple things, and And really we just 
+
+14
+00:01:03,532 --> 00:01:08,220
+need to know two things that make up a 
+computer. 
+
+15
+00:01:08,220 --> 00:01:12,371
+This is the processor. 
+It's not actually a processor, it's a 
+
+16
+00:01:12,371 --> 00:01:14,622
+fan, but underneath that fan is the 
+processor. 
+
+17
+00:01:14,622 --> 00:01:18,930
+The processor is the thing that does 
+calculations. 
+
+18
+00:01:18,930 --> 00:01:22,490
+It does actions. 
+It really is the core computer. 
+
+19
+00:01:22,490 --> 00:01:25,210
+And the other main that we need to know 
+about is memory. 
+
+20
+00:01:25,210 --> 00:01:29,867
+This is where we store data. 
+And anything that is, you know, any form 
+
+21
+00:01:29,867 --> 00:01:36,915
+of data that we are processing in the 
+computer must go through memory. 
+
+22
+00:01:36,915 --> 00:01:43,275
+And really what a computer does and what 
+a computer program does is. 
+
+23
+00:01:43,275 --> 00:01:49,291
+The processor does actions on memory, 
+memory is composed of very very simple 
+
+24
+00:01:49,291 --> 00:01:56,960
+output, so it's, what we call bits. 
+Each bit can, is like a switch. 
+
+25
+00:01:56,960 --> 00:02:00,962
+It can be on or off. 
+And we normally represent that as a zero 
+
+26
+00:02:00,962 --> 00:02:04,988
+and a one. 
+So, really memory is along Series. 
+
+27
+00:02:04,988 --> 00:02:11,480
+And the processor, what that does is very 
+simple operations on memory. 
+
+28
+00:02:11,480 --> 00:02:15,567
+It can add two elements of memory 
+together, multiply those mathematical 
+
+29
+00:02:15,567 --> 00:02:21,030
+operations, very simple ones, and it can 
+move things around in memory. 
+
+30
+00:02:21,030 --> 00:02:24,800
+And that's It's a little bit more compelx 
+than that, but really not much at all, 
+
+31
+00:02:24,800 --> 00:02:29,100
+it's, you know, what, it's only these 
+very simple things. 
+
+32
+00:02:29,100 --> 00:02:33,585
+So, why are computers so powerful, if all 
+they can do is, is, move around and add 
+
+33
+00:02:33,585 --> 00:02:39,068
+together zeroes and ones. 
+Well, the reason is, because memory is 
+
+34
+00:02:39,068 --> 00:02:43,388
+very, very big. 
+So it's measured in gigabytes, that's 
+
+35
+00:02:43,388 --> 00:02:49,315
+billions, American billions of, of bytes. 
+A byte is eight of these bits. 
+
+36
+00:02:49,315 --> 00:02:55,208
+So there's a lot similarly processes 
+summations in gigahurtz which essentially 
+
+37
+00:02:55,208 --> 00:03:00,714
+billions of these very simple 
+instructions per second. 
+
+38
+00:03:00,714 --> 00:03:08,490
+so a computer program is really about 
+doing a simple things. 
+
+39
+00:03:08,490 --> 00:03:15,066
+But very, very fast and lots. 
+Luckily we don't have to think in terms 
+
+40
+00:03:15,066 --> 00:03:18,836
+of the very, very simple operations that 
+can, that processors we can do when we 
+
+41
+00:03:18,836 --> 00:03:24,016
+want the computer to programs. 
+We turn them into what we call high level 
+
+42
+00:03:24,016 --> 00:03:27,798
+languages, that have, that combine lot's 
+and lot's of these, very simple 
+
+43
+00:03:27,798 --> 00:03:33,022
+operations into bigger ones. 
+this still may not look very readable to 
+
+44
+00:03:33,022 --> 00:03:37,666
+someone that's new in programming. 
+But you can see that, at least we've got 
+
+45
+00:03:37,666 --> 00:03:41,814
+much higher level concepts like 
+Backgrounds, in the background color of 
+
+46
+00:03:41,814 --> 00:03:46,234
+the screen, rotating things around, 
+drawing images, stuff that's, that's at 
+
+47
+00:03:46,234 --> 00:03:53,590
+least a bit more in the, the realm of 
+what we think about as humans. 
+
+48
+00:03:53,590 --> 00:03:58,079
+Similarly those, those ones and zeroes in 
+memory, we can interpret them in many, 
+
+49
+00:03:58,079 --> 00:04:02,230
+many ways to create many complex forms of 
+data. 
+
+50
+00:04:03,690 --> 00:04:07,053
+A single bit can't tell us much, but it 
+can tell us if something is true or 
+
+51
+00:04:07,053 --> 00:04:11,890
+false. 
+It can be this kind of binary division. 
+
+52
+00:04:11,890 --> 00:04:15,982
+But normally you would combine bits 
+together into more complex things, the 
+
+53
+00:04:15,982 --> 00:04:21,453
+basic level with calculating numbers. 
+Whole numbers or fractional numbers, we 
+
+54
+00:04:21,453 --> 00:04:26,690
+actually leaps rather differently I'll 
+come back to that in a later lecture. 
+
+55
+00:04:26,690 --> 00:04:32,590
+Text, and then much more complicated 
+things like images or sound waves. 
+
+56
+00:04:32,590 --> 00:04:36,982
+All of these things are essentially 
+longer and longer strings of ones and 
+
+57
+00:04:36,982 --> 00:04:41,878
+zeros and this course will cover a little 
+bit about how the last two represent when 
+
+58
+00:04:41,878 --> 00:04:47,243
+the main merges. 
+Okay so let's try writing a simple 
+
+59
+00:04:47,243 --> 00:04:49,075
+program. 
+This is processing. 
+
+60
+00:04:49,075 --> 00:04:52,370
+it's a piece of software. 
+it's a program language and also it's a 
+
+61
+00:04:52,370 --> 00:04:57,280
+piece of software for writing programs in 
+that language. 
+
+62
+00:04:57,280 --> 00:05:00,504
+We have this area here where we can type 
+the text of our program. 
+
+63
+00:05:00,504 --> 00:05:05,605
+But let's start by playing with, pressing 
+the Play button to run our program. 
+
+64
+00:05:05,605 --> 00:05:08,341
+And here we are. 
+We've got a program, it's a very small 
+
+65
+00:05:08,341 --> 00:05:12,832
+window, it doesn't do very much, but 
+that's not really surprising. 
+
+66
+00:05:12,832 --> 00:05:15,679
+We haven't actually written any program 
+text. 
+
+67
+00:05:15,679 --> 00:05:19,290
+At least even with writing nothing there, 
+we do get a program. 
+
+68
+00:05:19,290 --> 00:05:22,975
+Now I can close my program in the normal 
+way with the close button, or I can also 
+
+69
+00:05:22,975 --> 00:05:28,370
+press stop to stop it running, and then 
+we can actually try writing something. 
+
+70
+00:05:28,370 --> 00:05:33,050
+Okay. 
+I'm going to first write this command 
+
+71
+00:05:33,050 --> 00:05:37,940
+size 640x480. 
+And let's see what that does. 
+
+72
+00:05:42,590 --> 00:05:44,880
+There we go, we've got a much bigger 
+window. 
+
+73
+00:05:44,880 --> 00:05:50,968
+and I've, what has happened here. 
+Well I've called a command size and that, 
+
+74
+00:05:50,968 --> 00:05:56,380
+what that does, size is the named 
+command. 
+
+75
+00:05:57,610 --> 00:06:01,748
+And it changes the size of the screen. 
+And you need two numbers in order to 
+
+76
+00:06:01,748 --> 00:06:09,277
+change the size of the screen. 
+And one of these numbers is the width, 
+
+77
+00:06:09,277 --> 00:06:17,150
+640, the other is the height, 480. 
+And These numbers are put in brackets, so 
+
+78
+00:06:17,150 --> 00:06:21,670
+every time you're calling command you 
+need brackets. 
+
+79
+00:06:21,670 --> 00:06:26,300
+There are commands which don't need, any, 
+numbers. 
+
+80
+00:06:26,300 --> 00:06:30,570
+What we call parameters, parsed in. 
+But we still need brackets. 
+
+81
+00:06:30,570 --> 00:06:33,850
+Empty ones, which show that we're not 
+parsing anything in. 
+
+82
+00:06:33,850 --> 00:06:38,440
+The commands are separated by commas. 
+And at the end of everything we have a 
+
+83
+00:06:38,440 --> 00:06:42,402
+semicolon. 
+Now the first thing to really notice when 
+
+84
+00:06:42,402 --> 00:06:47,992
+we're writing new programs when you're 
+new to programming is that grammar and 
+
+85
+00:06:47,992 --> 00:06:55,189
+punctuation are vital, what we call the 
+syntax of the program. 
+
+86
+00:06:55,189 --> 00:07:00,521
+So computers, in many ways, are very, 
+very stupid so they don't understand 
+
+87
+00:07:00,521 --> 00:07:06,369
+things very well, unless you've got very, 
+very precise punctuations to tell them 
+
+88
+00:07:06,369 --> 00:07:11,990
+what to do. 
+It needs these brackets, so that it knows 
+
+89
+00:07:11,990 --> 00:07:16,470
+we're calling a command, and it knows 
+where all the values we're passing into 
+
+90
+00:07:16,470 --> 00:07:20,950
+the command, what we call parameters are 
+know, needs those, the begin and end 
+
+91
+00:07:20,950 --> 00:07:26,670
+brackets to know when these parameters 
+stop. 
+
+92
+00:07:27,780 --> 00:07:33,230
+It needs a comma to know when, parameter 
+has ended and the next one has started. 
+
+93
+00:07:33,230 --> 00:07:37,820
+It needs a semi-colon to know when one, 
+when each command has stopped. 
+
+94
+00:07:37,820 --> 00:07:40,020
+Don't have those things it will get you 
+[INAUDIBLE] out/g. 
+
+95
+00:07:40,020 --> 00:07:45,415
+For example, if I leave off the setting 
+[UNKNOWN] it gives me unexpected token 
+
+96
+00:07:45,415 --> 00:07:49,008
+null. 
+It doesn't, it's something it hasn't 
+
+97
+00:07:49,008 --> 00:07:51,898
+understood. 
+And often these errors can be quite hard 
+
+98
+00:07:51,898 --> 00:07:57,249
+to understand. 
+so it's important to be quite careful. 
+
+99
+00:07:58,950 --> 00:08:13,440
+Okay, let's try doing another thing with 
+background 255, 0, 0, and there we have 
+
+100
+00:08:13,440 --> 00:08:24,639
+arrange background. 
+I will do, while it's slightly not the 
+
+101
+00:08:24,639 --> 00:08:32,076
+program that draws a pointed screen, I 
+will show this in more detail in me main 
+
+102
+00:08:32,076 --> 00:08:39,291
+lecture, might want to take a look at but 
+I can do that to set position and give it 
+
+103
+00:08:39,291 --> 00:08:48,020
+a certain width. 
+Otherwise we're not going to be able to 
+
+104
+00:08:48,020 --> 00:08:52,440
+see it very effectively. 
+And if you do that some [INAUDIBLE] 
+
+105
+00:08:52,440 --> 00:08:56,958
+stroke weight length. 
+so this is a typical thing, I did it 
+
+106
+00:08:56,958 --> 00:09:02,290
+accidentally, but I've written the name 
+of the command wrong. 
+
+107
+00:09:02,290 --> 00:09:05,495
+It didn't understand it. 
+The function stroke width does not exist. 
+
+108
+00:09:05,495 --> 00:09:08,360
+I made an error, it told me that it 
+wouldn't work. 
+
+109
+00:09:08,360 --> 00:09:14,068
+Very common easy mistake to make um,. 
+It was completely accidental in my 
+
+110
+00:09:14,068 --> 00:09:16,988
+[INAUDIBLE], in my case but I'm going to 
+leave this in the video because it helps 
+
+111
+00:09:16,988 --> 00:09:19,886
+you see exactly the kind of areas you 
+get, and what happens when you get that, 
+
+112
+00:09:19,886 --> 00:09:25,042
+you get this little red bar coming out 
+and you know something is wrong. 
+
+113
+00:09:25,042 --> 00:09:29,129
+And it gives you some information which 
+can be used for the function strokewidth 
+
+114
+00:09:29,129 --> 00:09:33,024
+does not exists. 
+[INAUDIBLE] What's one of them, stroke 
+
+115
+00:09:33,024 --> 00:09:36,874
+width and then [INAUDIBLE] points. 
+I'll go over these commands in the main 
+
+116
+00:09:36,874 --> 00:09:44,214
+page. 
+And there we are, we've got a dot on the 
+
+117
+00:09:44,214 --> 00:09:48,231
+screen. 
+There are two other things that I want to 
+
+118
+00:09:48,231 --> 00:09:52,130
+show you that can be useful. 
+Firstly we sometimes want to write notes 
+
+119
+00:09:52,130 --> 00:09:53,220
+in our programs, if we want to sort of 
+explain them. 
+
+120
+00:09:53,220 --> 00:10:10,464
+So maybe I want to explain them so even. 
+Explain it to somebody else using your 
+
+121
+00:10:10,464 --> 00:10:13,236
+program or simply if you're going back to 
+your program later it's useful to have 
+
+122
+00:10:13,236 --> 00:10:18,573
+notes to remind yourself what's going on. 
+We call these comments and we create a 
+
+123
+00:10:18,573 --> 00:10:23,099
+comment by putting these 2 slashes in 
+front of the line and anything else on 
+
+124
+00:10:23,099 --> 00:10:28,556
+that line is ignored. 
+I could do it at the end of a line a 
+
+125
+00:10:28,556 --> 00:10:33,994
+well. 
+[SOUND] And sometimes if I want to get 
+
+126
+00:10:33,994 --> 00:10:37,450
+rid of a line of code temporarily as I'm 
+testing what I'm doing I can comment it 
+
+127
+00:10:37,450 --> 00:10:40,744
+out like this, so I can put a comment, 
+turn it into a comment and all of these 
+
+128
+00:10:40,744 --> 00:10:47,680
+comments are going to get ignored. 
+And as we'll see now, the stroke weight 
+
+129
+00:10:47,680 --> 00:10:53,035
+is no longer being called and my dot is 
+very tiny you may not even be able to see 
+
+130
+00:10:53,035 --> 00:10:57,440
+it. 
+The other thing I'd like to do, show you, 
+
+131
+00:10:57,440 --> 00:11:01,136
+is another very useful thing when you 
+can, you're, when you're programming, is 
+
+132
+00:11:01,136 --> 00:11:06,726
+that you can also print stuff out. 
+If you do print ln, that stands for print 
+
+133
+00:11:06,726 --> 00:11:11,508
+line, and some text. 
+Like that, it will print it out. 
+
+134
+00:11:11,508 --> 00:11:17,500
+Note that I'm putting all the text values 
+in these double quotes. 
+
+135
+00:11:17,500 --> 00:11:21,748
+You need double quotes so that the 
+program knows this isn't the name of a 
+
+136
+00:11:21,748 --> 00:11:27,010
+function or anything, this is actual text 
+you want to use. 
+
+137
+00:11:27,010 --> 00:11:28,085
+So you need to have that in double 
+quotes. 
+
+138
+00:11:28,085 --> 00:11:34,357
+And when I'm on my program, it will print 
+heavily down here at the bottom of the 
+
+139
+00:11:34,357 --> 00:11:38,886
+screen. 
+That's useful for you, we'll see in the 
+
+140
+00:11:38,886 --> 00:11:43,442
+future, as a way of getting information 
+about the program when it's running, and 
+
+141
+00:11:43,442 --> 00:11:48,331
+some debugging. 
+Okay, so let's recap that a little bit. 
+
+142
+00:11:48,331 --> 00:11:52,390
+The core of writing a program is the 
+number of commans. 
+
+143
+00:11:52,390 --> 00:11:55,822
+Each command has a name. 
+It has parameters, these are values that 
+
+144
+00:11:55,822 --> 00:11:58,410
+we pass to the command to change how it 
+works. 
+
+145
+00:11:58,410 --> 00:12:00,940
+For example, the size command takes a 
+width and a height. 
+
+146
+00:12:02,550 --> 00:12:09,072
+These parameters are inside brackets and 
+we need commas to separate them. 
+
+147
+00:12:09,072 --> 00:12:12,750
+And then we need a semicolon on the end 
+of the line. 
+
+148
+00:12:12,750 --> 00:12:17,850
+All this punctuation is very important, 
+and you mustn't forget. 
+
+149
+00:12:17,850 --> 00:12:20,825
+We can use comments to get the computer 
+to ignore certain bits. 
+
+150
+00:12:20,825 --> 00:12:27,692
+Okay, so the last thing is, I showed you, 
+is this println command, and its for 
+
+151
+00:12:27,692 --> 00:12:34,612
+using to print things out. 
+Print out text, you can also print out 
+
+152
+00:12:34,612 --> 00:12:38,860
+different values like numbers and 
+variables which we'll come to in the 
+
+153
+00:12:38,860 --> 00:12:42,890
+future. 
+And you can use the plus to combine 
+
+154
+00:12:42,890 --> 00:12:47,642
+together text and values, so that'll be 
+quite useful in a number of ways later on 
+
+155
+00:12:47,642 --> 00:12:52,800
+That way, we keep blocking our programs. 
+Okay. 
+
+156
+00:12:52,800 --> 00:12:57,344
+So that's a very brief introduction to 
+the basics of programming and I'll do a 
+
+157
+00:12:57,344 --> 00:13:01,746
+couple of extra lectures this week on 
+specific topics and will be covering 
+
+158
+00:13:01,746 --> 00:13:06,574
+various topics next, next couple of weeks 
+to explain some of the concepts we use in 
+
+159
+00:13:06,574 --> 00:13:11,226
+the main languages. 

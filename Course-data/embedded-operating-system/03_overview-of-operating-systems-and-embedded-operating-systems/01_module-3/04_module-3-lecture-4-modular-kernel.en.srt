@@ -1,0 +1,325 @@
+1
+00:00:00,192 --> 00:00:05,620
+[MUSIC]
+
+2
+00:00:05,620 --> 00:00:09,700
+Hello, it is good to see you back for
+this lesson.
+
+3
+00:00:09,700 --> 00:00:13,954
+Previously, we explored with
+an eagle's eye what Linux kernel is and
+
+4
+00:00:13,954 --> 00:00:16,200
+why it is important.
+
+5
+00:00:16,200 --> 00:00:18,970
+Now, we will look into
+another type of kernel
+
+6
+00:00:18,970 --> 00:00:23,090
+to discover it's detailed
+characteristics and advantages.
+
+7
+00:00:23,090 --> 00:00:26,570
+At the end of the lesson, you should
+understand the differences between
+
+8
+00:00:26,570 --> 00:00:29,910
+all three types of kernel and
+their features.
+
+9
+00:00:29,910 --> 00:00:33,780
+As a result, you will be able to
+utilize a specific kernel type for
+
+10
+00:00:33,780 --> 00:00:35,820
+a particular application requirements.
+
+11
+00:00:37,210 --> 00:00:39,890
+Let's begin describing what
+the modular kernel is.
+
+12
+00:00:40,990 --> 00:00:45,756
+A modular kernel It's a sort of hybrid
+between a monolithic kernel and
+
+13
+00:00:45,756 --> 00:00:46,900
+a microkernel.
+
+14
+00:00:48,120 --> 00:00:52,510
+it aims to get the best features
+of both types of architectures.
+
+15
+00:00:53,560 --> 00:00:58,670
+So in concrete,
+a modular kernel can perform tasks as good
+
+16
+00:00:58,670 --> 00:01:05,220
+as a monolithic kernel while the stability
+is similar as a microkernel.
+
+17
+00:01:05,220 --> 00:01:10,670
+As a result, we obtain a kernel with
+very efficient memory utilization and
+
+18
+00:01:10,670 --> 00:01:13,160
+good overall performance at the same time.
+
+19
+00:01:15,070 --> 00:01:19,400
+A modular kernel comprises
+a multitude of modules,
+
+20
+00:01:19,400 --> 00:01:22,540
+each one dedicated to
+a specific system task.
+
+21
+00:01:23,970 --> 00:01:28,660
+A key feature of these systems
+is that modules are loaded only
+
+22
+00:01:28,660 --> 00:01:30,250
+when the functionality is needed.
+
+23
+00:01:31,710 --> 00:01:35,910
+For example,
+a particular device driver is loaded only
+
+24
+00:01:35,910 --> 00:01:39,360
+if there is a process that
+needs access to that device.
+
+25
+00:01:40,970 --> 00:01:44,420
+Loading a module does not
+take a large amount of time.
+
+26
+00:01:44,420 --> 00:01:48,650
+However, this strategy could
+generate a severe overhead
+
+27
+00:01:48,650 --> 00:01:51,970
+if multiple modules are constantly
+loaded and unloaded.
+
+28
+00:01:53,270 --> 00:01:57,340
+The system would have spent most
+of the time managing the modules
+
+29
+00:01:57,340 --> 00:02:01,880
+instead of executing actual work, and
+thus yielding very poor performance.
+
+30
+00:02:03,100 --> 00:02:04,850
+To address this issue,
+
+31
+00:02:04,850 --> 00:02:09,990
+once a module is loaded it will remain in
+the kernel until it is explicitly removed.
+
+32
+00:02:11,310 --> 00:02:16,850
+In most cases, a module is required
+by only one particular process.
+
+33
+00:02:16,850 --> 00:02:22,250
+However, it is possible that several
+processes require the same module.
+
+34
+00:02:22,250 --> 00:02:25,610
+In which case,
+the colonel creates multiple copies of it.
+
+35
+00:02:26,980 --> 00:02:31,090
+The main reason for
+doing this is to prevent the overhead
+
+36
+00:02:31,090 --> 00:02:34,260
+cost by constantly loading and
+unloading modules.
+
+37
+00:02:36,480 --> 00:02:41,080
+In other kernel architectures
+when new functionality is added,
+
+38
+00:02:41,080 --> 00:02:42,670
+the kernel must be revealed.
+
+39
+00:02:43,900 --> 00:02:47,550
+However, this is not the case for
+modular kernels,
+
+40
+00:02:47,550 --> 00:02:52,970
+where new models can be easily added
+without recompiling thus saving time.
+
+41
+00:02:54,710 --> 00:03:00,460
+Filing and fixing bugs in a monolithic
+kernel is a very hard task.
+
+42
+00:03:00,460 --> 00:03:03,650
+It is time consuming and
+demands a lot of effort.
+
+43
+00:03:04,800 --> 00:03:09,910
+For example, a bug in a device
+driver which is bound to the kernel
+
+44
+00:03:09,910 --> 00:03:11,900
+may prevent the system from booting.
+
+45
+00:03:13,200 --> 00:03:18,300
+In this situation, it is hard to say what
+part of the kernel is causing the problem?
+
+46
+00:03:19,880 --> 00:03:25,606
+This situation can easily be avoided when
+a device driver is a loadable module.
+
+47
+00:03:25,606 --> 00:03:30,538
+Since the kernel must boot
+before loading any module.
+
+48
+00:03:30,538 --> 00:03:34,751
+In case the system does not
+perform correctly after the kernel
+
+49
+00:03:34,751 --> 00:03:39,220
+is successfully booted,
+it's simple to find the fault module.
+
+50
+00:03:40,990 --> 00:03:45,640
+As we discussed before, the kernel
+loads modules only when necessary.
+
+51
+00:03:46,920 --> 00:03:50,540
+Therefore, the system's memory
+can be efficiently managed.
+
+52
+00:03:51,750 --> 00:03:55,200
+Due to these advantages
+of modular kernels,
+
+53
+00:03:55,200 --> 00:03:58,320
+we can conclude that
+with the modular kernel,
+
+54
+00:03:58,320 --> 00:04:03,530
+the overall system performance increases
+and the kernel size is not large.
+
+55
+00:04:05,860 --> 00:04:10,520
+Although a modular system provides
+a multitude of advantages,
+
+56
+00:04:10,520 --> 00:04:12,360
+it still has some drawbacks.
+
+57
+00:04:13,450 --> 00:04:20,490
+As mentioned before, the modular kernel
+inherits stability from microkernel.
+
+58
+00:04:20,490 --> 00:04:25,822
+However, this stability cannot be
+warranted in cases of fragmentation.
+
+59
+00:04:25,822 --> 00:04:30,012
+Another disadvantage is that
+security may be vulnerable when many
+
+60
+00:04:30,012 --> 00:04:32,190
+interspaces are passed through.
+
+61
+00:04:33,870 --> 00:04:37,750
+Finally, it is not easy to
+maintain a large number of modules
+
+62
+00:04:37,750 --> 00:04:40,409
+when they are created by
+several third parties.
+
+63
+00:04:41,440 --> 00:04:43,140
+This is the end of our lesson today.
+
+64
+00:04:44,150 --> 00:04:48,790
+Hopefully by now, you have a better
+idea of what a modular kernel is,
+
+65
+00:04:48,790 --> 00:04:52,410
+what makes it different from other
+kernels and what it's advantages are.
+
+66
+00:04:53,520 --> 00:04:58,378
+In the next video, we will discuss
+how a modular kernel is implemented.
+
+67
+00:04:58,378 --> 00:05:00,961
+Thank you for watching and see you again.
+
+68
+00:05:00,961 --> 00:05:01,461
+[MUSIC]

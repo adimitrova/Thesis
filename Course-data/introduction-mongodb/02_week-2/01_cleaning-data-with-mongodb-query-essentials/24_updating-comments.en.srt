@@ -1,0 +1,379 @@
+1
+00:00:00,000 --> 00:00:01,950
+Within our MFlix application,
+
+2
+00:00:01,950 --> 00:00:04,860
+users can post comments on movies.
+
+3
+00:00:04,860 --> 00:00:08,175
+Now, different users, or even the same user,
+
+4
+00:00:08,175 --> 00:00:12,950
+may post different comments on a particular given movie.
+
+5
+00:00:12,950 --> 00:00:15,585
+So for example, I can come over here and say,
+
+6
+00:00:15,585 --> 00:00:18,685
+"This movie is great."
+
+7
+00:00:18,685 --> 00:00:20,639
+Which it actually is, it's pretty good.
+
+8
+00:00:20,639 --> 00:00:26,100
+Awesome. So, I can see here that my post has been correctly posted and submitted.
+
+9
+00:00:26,100 --> 00:00:30,555
+In this lesson, we will look into the update mechanism that MongoDB offers
+
+10
+00:00:30,555 --> 00:00:35,740
+so we can implement such a functionality like putting comments into movies.
+
+11
+00:00:35,740 --> 00:00:40,770
+Not only we are going to be looking to adding comments to a particular existing movie,
+
+12
+00:00:40,770 --> 00:00:43,845
+but also how to increment a counter within
+
+13
+00:00:43,845 --> 00:00:48,595
+those movies documents in method add comment to movie,
+
+14
+00:00:48,595 --> 00:00:54,330
+we implement the feature that enables the user to add comments to a given movie.
+
+15
+00:00:54,330 --> 00:00:58,155
+We got the movie and by updating an embedded array called,
+
+16
+00:00:58,155 --> 00:01:01,680
+comments we implement this functionality.
+
+17
+00:01:01,680 --> 00:01:07,320
+Now we are applying here what is a common MongoDB pattern called subsets,
+
+18
+00:01:07,320 --> 00:01:11,295
+where we keep a subset of the data sets.
+
+19
+00:01:11,295 --> 00:01:16,155
+In this case corresponding to comments within the movie's document.
+
+20
+00:01:16,155 --> 00:01:18,150
+Using this subset paradigm,
+
+21
+00:01:18,150 --> 00:01:23,405
+we will be storing the information of a given comment in two different places.
+
+22
+00:01:23,405 --> 00:01:28,545
+You can find more information on why you would want to do this and learn about
+
+23
+00:01:28,545 --> 00:01:34,110
+other schema design patterns in this lecture notes auxiliary content.
+
+24
+00:01:34,110 --> 00:01:38,830
+Within this implementation, we are about to do two different things.
+
+25
+00:01:38,830 --> 00:01:44,025
+First, we update comments field in the movies document and then we
+
+26
+00:01:44,025 --> 00:01:49,911
+add to a collection that contains all comments in the application,
+
+27
+00:01:49,911 --> 00:01:55,600
+the same comments as the one that is now currently added to that comments in that array.
+
+28
+00:01:55,600 --> 00:01:57,580
+In the movies collection,
+
+29
+00:01:57,580 --> 00:02:03,415
+we are using the push operator to push a comment to the comments array field.
+
+30
+00:02:03,415 --> 00:02:07,095
+Now, if we wouldn't be using an update operator,
+
+31
+00:02:07,095 --> 00:02:11,700
+we would be replacing the document sending back and forth the full amount of
+
+32
+00:02:11,700 --> 00:02:14,440
+comments alongside with a full amount of
+
+33
+00:02:14,440 --> 00:02:18,300
+the information that characterizes a movie back and forth.
+
+34
+00:02:18,300 --> 00:02:20,250
+So this operation here,
+
+35
+00:02:20,250 --> 00:02:23,850
+allows us to save a lot of bandwidth by not sending
+
+36
+00:02:23,850 --> 00:02:28,780
+the full amount and making our operations way much smarter and faster.
+
+37
+00:02:28,780 --> 00:02:33,450
+And that's the main reason why we have these update operators.
+
+38
+00:02:33,450 --> 00:02:38,265
+We are also keeping a movie comment cache limits,
+
+39
+00:02:38,265 --> 00:02:41,205
+a set number of movies,
+
+40
+00:02:41,205 --> 00:02:47,220
+a limit to the amount of movies we are keeping within our movie documents.
+
+41
+00:02:47,220 --> 00:02:49,605
+Now we do this for two main reasons.
+
+42
+00:02:49,605 --> 00:02:54,100
+First and most important one is to avoid unbounded rates.
+
+43
+00:02:54,100 --> 00:02:59,430
+If we keep on growing comments without bound therefore an unbounded array,
+
+44
+00:02:59,430 --> 00:03:03,870
+we will certainly reach problems in terms of documents being
+
+45
+00:03:03,870 --> 00:03:10,860
+too large or even completely uneven document sizes across our collection.
+
+46
+00:03:10,860 --> 00:03:14,940
+The second is to optimize the reads from the movie's collection.
+
+47
+00:03:14,940 --> 00:03:17,720
+We don't need all the comments all at once.
+
+48
+00:03:17,720 --> 00:03:20,400
+We just need to fetch the latest ones and that's
+
+49
+00:03:20,400 --> 00:03:24,600
+exactly what we are doing here by specifying not only the limits,
+
+50
+00:03:24,600 --> 00:03:26,760
+but also how we sort them.
+
+51
+00:03:26,760 --> 00:03:29,550
+That way, we only have a first view of
+
+52
+00:03:29,550 --> 00:03:33,540
+the comments of a movie but if we want to get them all we
+
+53
+00:03:33,540 --> 00:03:36,510
+just need to go back to our database look for
+
+54
+00:03:36,510 --> 00:03:40,410
+it on the comments and get the full amount. Smart right?
+
+55
+00:03:40,410 --> 00:03:47,580
+With slice, sort and each which are MongoDB update operated modifiers,
+
+56
+00:03:47,580 --> 00:03:51,585
+combined with the array operator in this case push,
+
+57
+00:03:51,585 --> 00:03:57,255
+it allows us to express conditions on how the update operator handles the field values.
+
+58
+00:03:57,255 --> 00:03:58,980
+In this particular case,
+
+59
+00:03:58,980 --> 00:04:02,640
+we are implementing a cache array by defining
+
+60
+00:04:02,640 --> 00:04:08,040
+a specific set of a slice or a number or limit for our slides.
+
+61
+00:04:08,040 --> 00:04:13,525
+We are defining that our array of comments will be kept to that value.
+
+62
+00:04:13,525 --> 00:04:16,505
+But we are not over with update operators here.
+
+63
+00:04:16,505 --> 00:04:23,540
+We also keep the effective number of comments made on a movie by incrementing $Inc.
+
+64
+00:04:23,540 --> 00:04:28,695
+Operator, a field that keeps track of those same comments.
+
+65
+00:04:28,695 --> 00:04:30,930
+After we're done with the update,
+
+66
+00:04:30,930 --> 00:04:35,865
+the next step would be to just add the incoming comments to our comments
+
+67
+00:04:35,865 --> 00:04:41,690
+collection by inserting one and passing along that same comment document.
+
+68
+00:04:41,690 --> 00:04:45,890
+In terms of update operators there are two kinds.
+
+69
+00:04:45,890 --> 00:04:47,875
+We have array update operators,
+
+70
+00:04:47,875 --> 00:04:49,500
+where we have $addToSet,
+
+71
+00:04:49,500 --> 00:04:54,085
+$push, $pop, $pull, $pullAll and even $ position operator,
+
+72
+00:04:54,085 --> 00:04:57,345
+but you also have field update operators,
+
+73
+00:04:57,345 --> 00:04:59,070
+where you can $set, $unset,
+
+74
+00:04:59,070 --> 00:05:01,435
+$inc, $currentDate, $min, $max, $mul,
+
+75
+00:05:01,435 --> 00:05:04,360
+$rename and $setOnInsert and a bunch of
+
+76
+00:05:04,360 --> 00:05:10,000
+other new operators that will certainly be adding on to this update functionality.
+
+77
+00:05:10,000 --> 00:05:14,050
+The important thing to realize here is that the operators enable us to make
+
+78
+00:05:14,050 --> 00:05:19,420
+changes on existing documents in MongoDB without the need for application side logic.
+
+79
+00:05:19,420 --> 00:05:23,795
+For example, we don't need to keep track of the counter ourselves.
+
+80
+00:05:23,795 --> 00:05:29,200
+We can just ask the database to increment or if we would need to get the mean or
+
+81
+00:05:29,200 --> 00:05:31,480
+the max value or even multiply
+
+82
+00:05:31,480 --> 00:05:35,205
+the value that exists in the document without even reading it,
+
+83
+00:05:35,205 --> 00:05:39,630
+we could just do that by setting an update operator.
+
+84
+00:05:39,630 --> 00:05:41,573
+So basically we leave it to the server,
+
+85
+00:05:41,573 --> 00:05:43,675
+the functionality of updating
+
+86
+00:05:43,675 --> 00:05:48,560
+certain conditions given the state of the document without actually needing to read it.
+
+87
+00:05:48,560 --> 00:05:52,420
+To recap, we've used the update operators to avoid
+
+88
+00:05:52,420 --> 00:05:56,515
+replacing the full extent of documents on every single update.
+
+89
+00:05:56,515 --> 00:05:58,850
+$inc, allows us to keep incrementing
+
+90
+00:05:58,850 --> 00:06:02,340
+the number of comments without even reading the actual number.
+
+91
+00:06:02,340 --> 00:06:05,157
+It leaves it to the database to actually do that work.
+
+92
+00:06:05,157 --> 00:06:08,980
+$push appends the elements to the comments array fields.
+
+93
+00:06:08,980 --> 00:06:11,770
+Using the update operator modifiers,
+
+94
+00:06:11,770 --> 00:06:17,695
+we can set a capped array to avoid unbounded arrays and the usage of the subset pattern,
+
+95
+00:06:17,695 --> 00:06:21,550
+allows us to optimize the access patterns to comments.

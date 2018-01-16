@@ -1,0 +1,153 @@
+In this lecture, we're going to, dig a
+little bit deeper into the original non linear models. And see, how do we produce
+linear models from them? And in fact, I have a wonderful quote here. That says,
+classifying systems as linear and non linear is like classifying objects in the
+universe. As bananas and non-bananas. What this means is that if you're walking
+around in the universe, let's say your'e on Jupiter and you pick up something,
+chances are it ain't going to be a banana. Similarly, if you walk around and you pick
+up a system or a robot, chances are it ain't going to be linear. What that means
+is that linear systems are really, really rare. Yet, here I am, two lectures ago,
+bragging about how useful they are. So something's gotta give here. And what it
+is, is that the non linear systems that are everywhere. They act very much linear,
+at least around operating points. So the linearization is a way of producing linear
+models from non linear models. Or producing bananas from non-bananas, if you
+want. So what we're going to do in this lecture is. Produce Linearizations or
+linear models from the non-linear models that we start with. So, here is a general
+non-linear model . So, x dot is now not a x plus bu with some general function f of
+x and u, and similarly y is not a simple plus in cx, it's a non-linear function h
+of x. Okay. So now, what we would like to do, is we
+would like to find some kind of local description of what this system is doing.
+And this local description needs to be linear, and what I mean by local, is that
+we have to pick an operating point. In the pendulum we said, let's assume that the
+pendulum is hanging very close to straight down, so straight down is the operating
+point and then what we do is we are going to have to define a new variable. So,
+let's say that this is my operating point. This in the pendulum case would be, the
+angle is zero, and I have no control input. Well then, my actual state is going
+to be the operating point, plus some small deviation in this state. Similarly my
+control input is going to be, well the nominal operating Input point plus a small
+deviation. And, what we would like to do somehow is describe these small
+variations. And in fact, the new equations of motion that we care about well, we're
+going to care about how Delta x. This deviation from the operating point
+behaves. Well, delta x is x minus x operating point. Right? So delta x dot is
+x dot minus xl dot. Well, this thing is equal to zero, because it's a constant,
+right? So this is just zero. So, here's my zero. So, delta x dot is the same. As x
+dot. Well, I know what x dot is, it's this. So, now delta x dot becomes this.
+Okay, let's see if we somehow can simplify this. So this is my model, now luckily for
+me there's is something known as a tail or expansion that's allows me to write this
+On a simpler form. So this thing can be written as f evaluated at the operating
+point, times this partial derivative of f with respect to x, also evaluated at the
+operating point, this is known as . And then, you have the same partial
+derivative, but now with respect to u, evaluated at the operating points. And, we
+multiply this with Delta u here, and delta x here. And then I have something that I
+call HOT, which stands for higher order terms. So this is where, we're saying that
+the higher order terms. Where, when delta x and delta u become large, these matter.
+But for small delta x and delta u, they really don't matter. Well why is this
+useful? Well, first of all lets assume that we have picked operating points, so
+that f of x0, u0 is zero which that we're holding the state steady, x dot is zero at
+this point which means that this thing goes away. Now.
+Let's call these guys A and B. Why is that? Well, these are just matrices
+because I'm plugging in some constant value here. Similarly then I'm plugging in
+a constant value. So, these partial derivatives are just matrices. Well, let's
+call them A and B. And now let's do the same thing with Y. Y was the output. We
+want to kn ow what it looks like around this operating point. Well, we have the
+same thing here, plus this term, plus high order terms. So, let's assume that thing
+is zero, so let's assume that we pick an operating point that kills the output at
+that operating point. So, the output is zero at that point. Well, then, let's call
+this thing c. Right? Now I have a, b, and c. And in fact, let's summarize what we
+just did. If I have this non-liner model, and I pick an operating point, so that
+these two assumptions are satisfied. And then I look at small deviations from the
+operating point. Then I can write delta x dot. That's a delta x plus b delta u.
+Which is linear. And y is c delta x, where these a, b, and c matrices are given by
+these partial derivatives, also known as Jacobians. So this, ladies and gentlemen,
+is how you obtain linear models from non linear systems. Well, let's actually do
+some computations here, just to know what's going on. So let's assume that x is
+in Rm. u is an Rm, y is an Rp and we have f and a being given by these things, but
+really what we have is f1 over x or is actually a function of x1 to xn of u1 to
+up right, no sorry Alright. So when I just write f1, that's what's a
+really mean. Okay. Then, df, dx. This Jacobian that we talked
+about. The first one we need. Well, it has this form. First component is the
+derivative of f1, with respect to x1. Then it's f1 with respect to x2, and so forth.
+And the reason why I'm writing this is not because I enjoy producing complicated
+PowerPoint slides. It's just, we need to know what the different entries are. And
+it's important to do this right because otherwise your dimensions don't line up
+when you produce your A, B, and C matrices. So that's df dx or, as we now
+know it, A. This is my A matrix. Well, similarly, B is df du, right? And again,
+the first component is df1 du1. This component is the f1, the Here, we have the
+f and the u1. All the way to the f and the So this is a n by m matrix, which is what
+we needed. And, in fact , this is the b matrix, then. So it has the right
+dimension. And not surprisingly, we do the same thing for our c matrix. and the
+reason again I wanted to show this is, this is where the Jacobians come from. So
+if I write dhdx, this is what I mean. Good.
+Let's do some examples. So let's start with what's known as the inverted
+pendulum, which is a slightly more complicated pendulum where what I have is,
+I have a moving base, my elbow in this case. And then I have a pendulum pointing
+straight up. Or with some angle, and by moving the base, the pendulum is going to
+swing, and in fact, it's going to fall if I don't do anything very clever. But the
+dynamics of this can be written like this, where theta double dot is g over l sin
+theta plus u cos theta. Okay. Let's linearize this thing. the first
+thing we do is we pick our stakes. In this case it's going to be theta and theta dot.
+And the reason I know that I have a 2-dimensional system is I have two dot's
+up here. So, I have a 2-dimensional system, x1 is theta and x2 is theta dot.
+Let's say they're measuring the angles, so y is x1. Well, then I get my f to be this
+two vector. And I get my h of x to be x1. Okay, fine.
+Let's pick the operating point where the pendulum is pointing straight up, and I'm
+doing nothing. And in that case, well, what is my a matrix? My a matrix becomes
+df1, dx1. So now I have to take the derivative of this thing here, with
+respect to x1. There is no x1 there, so. The first component is zero. Then I have
+to take the derivative of this thing with respect to x2, which is 1. So this
+component is 1. Similarly, I have to take the derivative of f2, with respect to x1.
+So now, I have to take derivative of this guy here with respect to x1. Well, the
+derivative of this with respect to x1 is. g over l times sine. The derivative of
+that is going to be g over l times cosine x1. While the derivative of this, with
+respect to x1 is actually going to be negative u, sine x1. But I didn't actually
+write this here, even though I should have. Arguably.
+Because what I'm going to do is I'm going to evaluate this at the operating point.
+And you know what? U is zero. And in fact, x1 is zero. So this term actually goes
+away. So all I'm left with is this term, evaluated at zero, zero. And cosine zero
+is 1. So after all these pushups, I end up with g over l here, as the known zero
+term. Now, that's how you get the A matrix. Again, I would encourage you to go
+home, and thus your already home when you are watching this and actually perform
+these computations so you know where they come from. Similarly B, you have to do the
+same computation and in this case you have no U up here, so you don't get a U in the
+first component. Here you have U cosine x1. Take a derivative of that with respect
+to U. We get cosine x1. We plug in the operating point, zero, zero. And wind up
+with this elegant b vec-, b vector here. C is particularly simple, right? Because h
+of x is x1. Which means that c is simply 1, 0. So.
+That was how we would go about getting these a, b, and c matrices. Okay, lets go
+to the unicycle the differental drive robot that we have looked at that we saw
+in the previous lecture that we had a little bit of an issue with. first of all
+lets figure out the state. Let's say that x1 x now I'm having in the slight abuse of
+n notation right because x is also the full statement. But this is the x
+component, x2 is y and x3 is theta and then lets say that we're actually
+measuring everything. So y is this. Okay We can control the translational velocity,
+or the speed and the angular velocity, right? So my inputs would be u1 is v, and
+u2 is omega. Okay. Let's compute, now, the linearization
+around x, operating point to zero. U, operating point is zero. Okay.
+If you do that, what you actually end up with, and I'm not going to show the
+different steps, you should do it yourself, is first of all, an A matrix
+that's 0, a B matrix that looks like this, and a C matrix that's dead end to the
+matrix, which is not surprising since we' re measuring both the x y position and the
+orientation of, of the robot. Now, this is a little bit weird. Because if I write
+down the, the dynamics for x2. Well, x2 dot it's going to be given by the second
+row of everything. Well, first of all, it's zero, right? Because my a matrix is
+zero. Then I get zero, zero times u. So I get plus zero, zero. I mean, times u, if
+you want. But this means that x2. is actually eqaul to zero. Well x2 was the y
+direction, what this means is if I'm pointing my robot straight in the x
+direction, then apparently I cannot actually make the car drive in the y
+direction. That seems a little bit fishy actually. what is going on here is that
+the linearization That we performed didn't quite capture all the nitty gritty
+exciting things that were going on with the non linear model. And this is an
+example where the non-linearities are so severe, that the linearization as applied
+directly, doesn't entirely apply. Because we lost control over the y direction. Even
+though. >> If I have a car, I can clearly turn it.
+I can drive it and turn, and drive in the Y directions. So, here's an example where
+the linearization actually doesn't give us just what we wanted. And, the punch line
+here is that sometimes linearizations give reasonable models, with inverted pendulum,
+for instance. And, sometimes they do not, with the unicycle. and with a unicycle we
+have to be a little bit more care, careful, but the fact that I want to point
+out though is that when they work. When the linear stations work they are
+remarkably useful. Even though we're finding them around the operating points
+they seem to work Better than what we really theoretically have reason to
+believe, which is why we do a lot of analysis of the linearizations rather than
+the non-linear models. And then take what we learned from the linearizations and
+apply it to the, the non-linear models. Thank you.

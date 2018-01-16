@@ -1,0 +1,134 @@
+1
+00:00:00,000 --> 00:00:06,162
+[MUSIC]
+
+2
+00:00:06,162 --> 00:00:11,787
+When thinking about and doing data
+management, it is critical to understand
+
+3
+00:00:11,787 --> 00:00:17,700
+data in terms of their lifecycle and
+the research project’s lifecycle.
+
+4
+00:00:17,700 --> 00:00:21,180
+For project planning to archiving,
+
+5
+00:00:21,180 --> 00:00:25,430
+proper data management happens
+throughout the research lifecycle.
+
+6
+00:00:26,650 --> 00:00:31,050
+Each stage of the lifecycle
+produces specific data products and
+
+7
+00:00:31,050 --> 00:00:35,780
+requires a variety of considerations,
+responsibilities, and activities.
+
+8
+00:00:37,900 --> 00:00:42,260
+There are numerous lifecycle
+models from simple to complex.
+
+9
+00:00:42,260 --> 00:00:43,100
+Let's look at a few.
+
+10
+00:00:44,500 --> 00:00:48,160
+Here is the research lifecycle
+model from the UK Data Archive.
+
+11
+00:00:49,320 --> 00:00:53,540
+Once data are created, which is
+represented in the circle at 12 o'clock,
+
+12
+00:00:53,540 --> 00:00:58,400
+the data undergo subsequent stages,
+processing, analyzing,
+
+13
+00:00:58,400 --> 00:01:02,850
+preserving, providing access to,
+and re-using the data.
+
+14
+00:01:02,850 --> 00:01:08,330
+The University of Virginia library created
+this research data life cycle model,
+
+15
+00:01:08,330 --> 00:01:11,540
+which I think directly aligns
+to common research practice.
+
+16
+00:01:13,000 --> 00:01:15,150
+Here is the more complex and
+
+17
+00:01:15,150 --> 00:01:20,060
+comprehensive data lifecycle model
+developed by the Digital Curation Center.
+
+18
+00:01:21,250 --> 00:01:25,710
+With data at the center of the graphic,
+you can see the various data
+
+19
+00:01:25,710 --> 00:01:30,890
+curation activities as you
+move to the outer rings.
+
+20
+00:01:30,890 --> 00:01:36,210
+This model brings together data,
+researchers and curators.
+
+21
+00:01:36,210 --> 00:01:38,240
+Now that you have been
+introduced to data and
+
+22
+00:01:38,240 --> 00:01:43,610
+understand that data management refers to
+activities throughout the data lifecycle,
+
+23
+00:01:43,610 --> 00:01:48,350
+please take a moment to introduce yourself
+on the forums and tell us about your
+
+24
+00:01:48,350 --> 00:01:54,250
+data experiences, or maybe even questions
+you have about data or the course.
+
+25
+00:01:54,250 --> 00:01:56,908
+We have also provided some
+additional readings for
+
+26
+00:01:56,908 --> 00:01:59,829
+you to explore if you're
+interested in learning more.
+
+27
+00:01:59,829 --> 00:02:03,994
+And make sure you check out
+the resources for this module.
+
+28
+00:02:03,994 --> 00:02:10,589
+[MUSIC]

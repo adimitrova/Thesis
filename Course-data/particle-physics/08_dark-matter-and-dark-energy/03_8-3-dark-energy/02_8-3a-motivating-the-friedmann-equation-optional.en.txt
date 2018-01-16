@@ -1,0 +1,21 @@
+[MUSIC] To motivate the Friedmann equation, we are going to consider
+the movement of mass m at a cosmological
+distance R from us. At cosmological scales,
+the Universe is isotopic and homogenous, such that the test mass will be attracted
+by a mass M, which is 4π/3 r^3 times the average mass
+density rho of the Universe. Newton's Law gives us that
+m times the acceleration of the test mass is equal
+to minus Newton's constant times the test mass times
+the mass M divided by R^2. We can reorder this equation to have
+all terms on the left of the equal sign. Let me integrate this second equation. We get that 1/2 n times the test mass velocity
+squared minus Newton's constant times the product of the two masses
+divided by R is a constant of motion. This is equivalent to saying that the
+kinetic energy plus the potential energy is a constant of motion. You can easily verify that this is correct
+by taking the time derivative of this result. Now, if you set the constant of
+integration equal to -1/2 k and introduce our result for M,
+then we get this equation. If we now multiply both sides by 2/R^2,
+we get that (R-dot/R)^2, which is in fact the Hubble constant
+squared, is equal to 8π Newton's constant divided by 3,
+minus k/R^2. Now we can still add to this a
+cosmological constant as Einstein did and obtain thus the complete
+Friedmann equation. [MUSIC]

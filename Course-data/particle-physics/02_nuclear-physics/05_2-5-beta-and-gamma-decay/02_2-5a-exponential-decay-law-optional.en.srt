@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:11,043 --> 00:00:14,993
+In this second module, we deal with
+nuclear physics and its applications and
+
+3
+00:00:14,993 --> 00:00:16,888
+we're discussing radioactivity.
+
+4
+00:00:16,888 --> 00:00:21,086
+In this video, we calculate how many
+decays per second can be observed
+
+5
+00:00:21,086 --> 00:00:25,731
+from an initial sample of nuclei,
+that is to say, we discuss the decay law.
+
+6
+00:00:28,096 --> 00:00:31,310
+Radioactive decay is
+a statistical process.
+
+7
+00:00:31,310 --> 00:00:34,120
+Every nucleus has the same
+probability lambda
+
+8
+00:00:34,120 --> 00:00:36,090
+to decay in a given interval of time.
+
+9
+00:00:37,140 --> 00:00:41,075
+This means that a constant percentage
+of the nuclear existing at the time t,
+
+10
+00:00:41,075 --> 00:00:46,180
+N(t), will decay in
+an infinitesimal elapsed time, dt.
+
+11
+00:00:47,630 --> 00:00:52,280
+The number of remaining nuclei then
+diminishes in an exponential manner.
+
+12
+00:00:53,350 --> 00:00:56,160
+The inverse of the decay
+probability lambda
+
+13
+00:00:56,160 --> 00:01:01,660
+is what is called the lifetime tau = 1/lambda
+of the nucleus.
+
+14
+00:01:01,660 --> 00:01:07,489
+When one lifetime has passed, a fraction
+e of the initial sample will remain.
+
+15
+00:01:07,489 --> 00:01:10,186
+One also defines the half life,T_1/2,
+
+16
+00:01:10,186 --> 00:01:14,520
+which is the time interval leaving
+half of the initial sample.
+
+17
+00:01:14,520 --> 00:01:18,350
+And the activity of a sample,
+which is a number of decays per second.
+
+18
+00:01:18,350 --> 00:01:20,700
+It obviously depends on
+the decay constant, and
+
+19
+00:01:20,700 --> 00:01:23,359
+the sample size which
+diminishes exponentially.
+
+20
+00:01:24,790 --> 00:01:28,570
+The natural activity of Ra-226 is
+
+21
+00:01:28,570 --> 00:01:32,510
+used as the unit of radioactivity and
+it's called the Curie.
+
+22
+00:01:33,730 --> 00:01:38,722
+A more practical unit is the Becquerel
+which corresponds to one decay per second.
+
+23
+00:01:38,722 --> 00:01:44,789
+[MUSIC]

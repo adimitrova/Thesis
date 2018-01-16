@@ -1,0 +1,684 @@
+[
+    [
+        "introduction-to-embedded-hardware",
+        [
+            [
+                "module-1-introduction-to-embedded-hardware",
+                [
+                    [
+                        "introduction",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/biMCnf9REeWwsA4t7LQqYw.processed/full/540p/index.mp4?Expires=1516233600&Signature=XhDjz-ZEPlCH~zO0Nq370Ti75gNHkNiKHJd5bcP8sQAIKrsT~UDqibxeubDFpRf9qrMvqMJ4l~tjnoClq0v2U-qWDKH6sBulNf~qP1LR2wWXOCrXR2lLSWDmQgiXZtarco4NTtcK8L6q6BQMlnrTyMeFs6lzHIqHtK8ParbmFHQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/dEOTXfAYRU6Dk13wGEVOIg?expiry=1516233600000&hmac=tb8G5ckOZ7oiGwjy_dTfZh_fdjOyFr1dqB7LEP7dpcw&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/dEOTXfAYRU6Dk13wGEVOIg?expiry=1516233600000&hmac=svolbhC6aT7SzP0-yyMjKr594EaR28IBdAhX06vJVSo&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-1-lecture-1-introduction-to-embedded-system",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/apF0n_8dEeWP-RIrCgA1zw.processed/full/540p/index.mp4?Expires=1516233600&Signature=Q-~N~VwuB16U71nMlDQTZk0HPB7CKbyQtUejHTrjw2RprMgK9TPryc9PtBdnSBPWUwZgZZM8aivABFhJ8s76MNkWpUIHExOHQ0chW8QK8YjPMEpRF2UifcxAWLmiLRFpOEBzl3D31l3cVNEsuL17nGIikfzwlyRw3j3vaqnlK9M_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/vO9wRhU1QH2vcEYVNWB9bw?expiry=1516233600000&hmac=YC2-5L_a9-bfSYQqtV4PA06ZFklkXNa5wz0nwlEjboA&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/vO9wRhU1QH2vcEYVNWB9bw?expiry=1516233600000&hmac=aikNeElvrbc9SV98zmXOLSkCMqEQA75d8_unDWcmVGY&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-1-lecture-2-design-characteristics-and-challenges",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/XvKkm_8eEeWwsA4t7LQqYw.processed/full/540p/index.mp4?Expires=1516233600&Signature=jp7RTtECwWPUhUeu0v3o16FgiZe5eAU9BllOKnIvxvbeSC5GYN6dPaij0sr~6NE3xmfiKr4D4ET5itaUcXlYfc7aIAUt15tNvY6bIZJjx0bE1u1x14ZOk7E9HuumS8lhsjZVsoG2fTpC5nYoAIYio6jdxd19osbt8YdN846ldKY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/7i1b6RyrQomtW-kcq-KJ6A?expiry=1516233600000&hmac=ePyXBVIbliz8K5ISfIwCAkPRg9zW3UYWAC0R1fdCxew&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/7i1b6RyrQomtW-kcq-KJ6A?expiry=1516233600000&hmac=rf1U3sPDPIWICHH5G8OiBozZ5h0D6XIdf2ksxrldyhs&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-1-lecture-3-input-output-devices",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/SFOrk_8fEeWVehKIc31qNw.processed/full/540p/index.mp4?Expires=1516233600&Signature=lYVmIA70~X8-KFIZa~H0Bv6Bvz73Z6~TcZHsB2D6RUw2a7Vc31mgFcgOKWRRTmViQZ1rGT3VD2mH7uTrhC9hCuaTcEDhmneCAAWyXAuBFjEUJb3CxNstFt6Lou3FX7TLWp0R0TMX3qOKbXaA85mG3vuv1NQdLFBOUTd6Yaiyk84_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/YNVE_INOShaVRPyDTkoWxA?expiry=1516233600000&hmac=h5pbp2Mj1DKncOseY1C7Ama6U3KgwtTZ96GwgIU8ycw&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/YNVE_INOShaVRPyDTkoWxA?expiry=1516233600000&hmac=4MxZKQkcO3Wy_7nFn7lRhu9DK59gC_aeq5j951t-heA&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-1-lecture-4-wire-communication-adc-dac",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/DhpZz3ZeEeamDApmnD43Fw.processed/full/540p/index.mp4?Expires=1516233600&Signature=EXonXxryBdBwVAx9ciGwLSA02yrXSQlBywK7URwta0lxRKh8LjxBt00AnjL~zSZzCT6YT4xFP9zl13F5KB9JQFISXPr7~3cEQB84jGABGv2aMTNqnL8MKbQTOFxEVMax-AcYLPTieO3ztZ24FBPJQZ5kGCHXJogVqd73eXszg3Q_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/MkdPRW6hSDOHT0VuoRgz6A?expiry=1516233600000&hmac=PbO2Q3TR4pNk7fmhmIfQdbKpZNIzq2UVSMYhAPCFFa8&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/MkdPRW6hSDOHT0VuoRgz6A?expiry=1516233600000&hmac=oiGL2VZC3hphOtVVCBC9jYwtmTA0_JeNmCzg7d03au8&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-1-lecture-5-sensors-actuators-interrupt-vs-polling",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/om4d2v8gEeWr1hJ0XnxKyQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=fRTHaQE~W8o3b0WU7Nz-CZJi99apHHLlRsp3dCVYZHdldzVtT02KG3ziCcUqAtPifEnCMyj~o7CbSOLZRwj3KsR3e2To9rZ2Xc0t8781pkrnRJB7kY41ehBjWoaSdu6RjQrIlgh34gSpyMjzuoODahuyWAQwMQS3rvZRKUtiVQQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/xXeoJQGORmG3qCUBjsZhlA?expiry=1516233600000&hmac=JTss921fzRONxfTZIhLBH0D2iNHOTHxjEuGgz9nFsvo&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/xXeoJQGORmG3qCUBjsZhlA?expiry=1516233600000&hmac=9wVR860uCu3chuvxBd2YmYIiW_aiuA3O3CBCp6yXimQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "introduction-to-embedded-hw-graded-quiz",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<h3>\n Question 1\n</h3>\n<co-content>\n <p>\n  Which features must apply for a system to be defined as \"dependable\" (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Reliable\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Secure\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Safe\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Maintainable\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 2\n</h3>\n<co-content>\n <p>\n  Choose a more reliable way of reading an input between these methods below\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Software initiated\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Interrupt-based\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 3\n</h3>\n<co-content>\n <p>\n  Which of the following items are unique in the USB network\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Hub\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Host\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Device\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 4\n</h3>\n<co-content>\n <p>\n  Assume that the least significant bit of an ADC corresponds to the voltage change equal to 100 mV. Which input voltage change will cause the highest quantization error?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    33.3 mV\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    50 mV\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    99 mV\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    100 mV\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 5\n</h3>\n<co-content>\n <p>\n  When a processor \"wants to catch\" a non-critical event, which method is more preferable?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    polling based approach\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    interrupt based approach\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "exam"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "processing-elements-of-an-embedded-system",
+        [
+            [
+                "module-2",
+                [
+                    [
+                        "module-2-lecture-1-embedded-processor-and-fpga",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/bR49M_8hEeWwsA4t7LQqYw.processed/full/540p/index.mp4?Expires=1516233600&Signature=jcgEYbcIuDFmrUrSnqcDq4Tp-0ZHpE9iZIzossBnWom3CMSUcBoBdWDSAI4QdTN0Q~BGLY5oGQcFSCg4DnNwQjWRYnhYE9UqlEIWes56eaRVztVI574g8b1dLmjRJziLSnudXuWuQnkrBnQlws9VThmggETpBuff1HzegZbO~Qk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/obbrKHLdRNW26yhy3RTVYg?expiry=1516233600000&hmac=cfXrW-nVieDwa-j8WH7tX3qO3CyhpVGBYh3DtJDFfww&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/obbrKHLdRNW26yhy3RTVYg?expiry=1516233600000&hmac=vI48SCdb_cPvQ0_MDgrYPdFZFCtstkJeaum0TCHnbLo&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-2-lecture-2-main-features-of-embedded-processor",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/TpP1f8hEeWr1hJ0XnxKyQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=Htzf5zACFB9mSWSdwV70JMVyS6KwQ~eGhgXY5yLcbEgXu~RNaqGR6qSCWZqldcyfePqz9D6iOcyqFb4Xyi8yPkoO8ZyYlxizfxnzVcdzKeC16irkoLBgqG0lZmHgjPKADsvu1hwiwhF4DM1NMBetPRWb01IOr8pgCVPKXbcUPow_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/1MWGAC9qSa-FhgAvakmvCQ?expiry=1516233600000&hmac=_QwY0q_fOsZv3f-cxCOzyZwKGzHo0O9WzZ3i3Hi0rww&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/1MWGAC9qSa-FhgAvakmvCQ?expiry=1516233600000&hmac=5RzPbx0IKBuM8iqfhjbFx7TpLPPvOLZNCNuERI23Lr8&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-2-lecture-3-use-cases-of-micro-controllers-platforms",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/ia7xS_8jEeWY7A7plzbYtQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=hgBSQdoQXucefY2PBhzr7MNX6nHtQTQ7HUA1U8W5SCH7Hz0TnKV-A1wqetrHb~gLeOgICM~YUkyNsdMxs0nCKztiz-hxrAzlCUGakL-OyChiAHL8FTqsvNiLtudFJupeOKJvIaSqSkJfo06r74O-PUd9WlR9taCx2NocHdgD4ZA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/5rbQSbChTG620EmwoYxuvg?expiry=1516233600000&hmac=lYo_eTRL9o6gOT0JsSSSoIMWf_b_PcO_OHo11aOunkQ&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/5rbQSbChTG620EmwoYxuvg?expiry=1516233600000&hmac=uqwVf4J1XFCOrHJjGjlUh2D_Fd5wh2PToyhp06xzvYk&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-2-lecture-4-reconfigurable-platform-fpga-s-platform",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/AbAdl_8lEeW7IApjxInDBw.processed/full/540p/index.mp4?Expires=1516233600&Signature=hxTYuDFVNiTpnt~KyQYFqbdixWGJOLEsojWhQIC-uiAB-KqQOg6H3ATPaCe-MG3U1OuH0x5ebQqQfstKcP8UcApzJmPRKQuiPlLyQArY9t8hcp0OnCWxfXmZW3tcEU96VVlelCm-FXSaG4BIH1Io1IZ9Zw7cUJSz6tqohw1Zudo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/dHzBn3yLRby8wZ98i1W8JA?expiry=1516233600000&hmac=th8UDx2lZCZv8uHjLq0Mp0SNDvpQAlN047R_fWT0-eo&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/dHzBn3yLRby8wZ98i1W8JA?expiry=1516233600000&hmac=2y1TZPquqlvgDH-bIFfPg6CzBICHMVAUc6QrLPdduqE&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-2-lecture-5-embedded-processor-vs-fpga",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/exrEPv8mEeW2ugrFi49p_Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=bShp-F8UL89wNYZFqPCGOPzZPEXo~xXyvvxYs7rCgVGUUcb8QjIFTxYtBF4GiiER8Ux~OogaiRt29xhRsQqomUSJ3ULm0bAFR4WvdgSw504l1rX5LwwHQUmLOnaH7DYx0kGTO0N8h~79~7YR-dRBj-zZCbvLB2YcufMks5kqRMA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/2MDraxJpRbuA62sSacW79A?expiry=1516233600000&hmac=pY6jMysfhdrv3i0TwP96VVCpHiASSzJEZ-ng-e8ir2A&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/2MDraxJpRbuA62sSacW79A?expiry=1516233600000&hmac=AgneiObw7EgkV6jSEqxzIxldZr12gM8RS5wOqY6_aIo&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "processing-elements-graded-quiz",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<h3>\n Question 1\n</h3>\n<co-content>\n <p>\n  What benefits do specialized processors bring ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Performance\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Cost\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Energy consumption\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Versatility\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 2\n</h3>\n<co-content>\n <p>\n  What does influence the frequency of instruction execution\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Clock frequency\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Instruction complexity\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Free program memory available\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Registers size\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 3\n</h3>\n<co-content>\n <p>\n  Which of the following can be applied to microcontroller development platforms\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Cheaper than standalone microncontrollers\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Suitable for fast prototyping\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Extendable\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Suitable for exploration\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 4\n</h3>\n<co-content>\n <p>\n  What is a basic unit of an FPGA\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Flip-flops\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Configurable switch matrix\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Logic Unit\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Selection circuitry\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 5\n</h3>\n<co-content>\n <p>\n  What of the following are benefits of FPGA over a processor\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Flexibility in terms of the number of application which can be executed\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Higher energy efficiency for a specific application\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Faster solution for a specific application\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "exam"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "overview-of-operating-systems-and-embedded-operating-systems",
+        [
+            [
+                "module-3",
+                [
+                    [
+                        "module-3-lecture1-embedded-operating-system",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/2_EncP8nEeWr1hJ0XnxKyQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=RB8ZHaYLENFd4i7hv63TGM4WVgjJHm770BaC0ZYqEawJkRVhW7HDiF3WXzYNC4hRQ1~9MqknKKETkdcN2~AjOprr6tJ6Ax4AMIn63u9MgSRjiYGr5JxX~LPmn0HJ~XphJvKXK-SgCg09rlvIHJsZ9uXGMdMPObvDUZ~iPDpgSQ0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/xhdDrE9gSbSXQ6xPYAm03g?expiry=1516233600000&hmac=Luu23ves_EpJII65G8qNOv24Sq13Hb4-SErmnwp7zPg&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/xhdDrE9gSbSXQ6xPYAm03g?expiry=1516233600000&hmac=0IE6xCBWgjHEOh_mNAeTiTo0zjm69dMbQcV08Tz76xE&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-3-lecture-2-linux-kernel-functions-and-advantages",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/d-wIE_8oEeW7IApjxInDBw.processed/full/540p/index.mp4?Expires=1516233600&Signature=IATQ8r1GqWsvH5hckbrwbVb~Iy4UOxeb7sfGxRjsxEWgzX1-7QOx9N5CUrG3GUEBGdvxLox5K6ILTt~Q0JLfSrBI8LGxIVBJKbT4u0-6q8WM739mXMPf7laXlFRLkpobbPSqaG5rs81WGx86rOLZiSBriV2-JKVp3TSFT2qjNRg_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/lyPbnz-lQ8Cj258_pfPAYQ?expiry=1516233600000&hmac=UK3U89HekuqqVOfoAQ9c5pKm-33aNrdFjok1SkgPLnI&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/lyPbnz-lQ8Cj258_pfPAYQ?expiry=1516233600000&hmac=VnM44gt1UabFmWghu4t_699q8Ux2-Arg0JkshTFaN9E&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-3-lecture-3-microkernel",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/7tX3wP8pEeWr1hJ0XnxKyQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=BNXHDDE-ea-4CFNegKgY2MrRjjVzqkBR0Z8s3~kxj1QYaH7T3gln3f1bLMKOgvA2pYLl2BiA3t0Ev1yudRS0gyg1SKZJPyJgIVdk6mDU7rWQJlidwY-DVvHoQW2w30OeBxTT4DV~qngf03fCU7J1XiMNO6N5r8wrC6fq0IjIGbE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/3ZsVaSB7TXWbFWkge811AQ?expiry=1516233600000&hmac=HUYoYomZ_MFudD_epdIgC_Ovz9b0jSF1IKO-0UkCnnk&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/3ZsVaSB7TXWbFWkge811AQ?expiry=1516233600000&hmac=un6CRuujVBhoTLynBLRtR3L_RK8WVAeuHBcdbMcx3VM&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-3-lecture-4-modular-kernel",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/_M-8u_8qEeWwsA4t7LQqYw.processed/full/540p/index.mp4?Expires=1516233600&Signature=cEsynymD5p8fYNGIF9cU6Y19fnTPIJ5xRurYYjXlIINO7lCyGs-TEFxkj1Zw0GRugKnF3t-ikj-glPNLeFV6leg2Ug9CIyuwQaPcUWllMhX0dMQRvc2MwFgNl-Rk~di6Td6B0~1DoDa~wSy2l36qoBKGzdBU2dVO~Ie6rCi8h-Y_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Y9NfuHSMRBeTX7h0jBQXcQ?expiry=1516233600000&hmac=yZc1d_0zt9Wrwh56BxOQQAPZ2UID-sYJ_5KvcnFu8Ac&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Y9NfuHSMRBeTX7h0jBQXcQ?expiry=1516233600000&hmac=UxiCYVABXVnBmcw9EP4m1ATUE4RhBAW4B2aSmZIdAxg&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-3-lecture-5-introduction-to-contiki",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/kMT5bP8sEeW2ugrFi49p_Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=H0sYIXb60GkyBh9sW3x7l0L0VpciUylv29qNM-FPHMah52JIohhjylAagHLVZ~yLQTF~sEmj4SS-myECHW2xvr1uVfcwZRoXuERIpqjECsNfp0lEhmgwlGbmaPtdayyN~basecchEOajHNUwGEC9Sw7vlZc6RwT~gEoQ0nAUnAU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/VSz-LTM7Sfms_i0zO1n5zQ?expiry=1516233600000&hmac=mldRe2HWUiSGG969_D_FGQtTC2C19ItLZ-diPybO7BU&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/VSz-LTM7Sfms_i0zO1n5zQ?expiry=1516233600000&hmac=Y2YAHS0BRyFJOg1I9A2RGoOCMF1Dzu5BNs8byNvDr-0&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-3-lecture-6-introduction-to-tinyos",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/5MXWNv8tEeWuKwohUq_ZeQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=emhvcSGzCTtPYlHa6NmHZK-fwvyiGn3Wg-eztu-Ok5WTxq0lTw1TJq6~XwqOwcn-wFBhW8SliALVFyjJszPhSGCXqSoJp7gYgsMyRLTxTJfItiijUuVXfKc8YG2wKrApYgXMut8blNwRvAIRVENQtW7WyLUVjWM~atTC0wIZTYE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/fJLmRfBIRzWS5kXwSJc1yw?expiry=1516233600000&hmac=9DIDyQI-U6hYQsJ3xsJSizD3b4MBeH8rYLm_RTHEgBk&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/fJLmRfBIRzWS5kXwSJc1yw?expiry=1516233600000&hmac=1TRVlVaqjA-_kZzkhUJUjHM0bJTDaoQvmONzEdwtNYA&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-3-lecture-7-introduction-to-riot-os",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/xMQPfP8uEeWVehKIc31qNw.processed/full/540p/index.mp4?Expires=1516233600&Signature=SEogdsWRvkBIfWiq1A6iy~MYpf3k-h1RSwtU8pNg8AZBq7tgl51Fw6KmKBPvPp99JYu7pGNYq~I0oZfA0e7gJ0Xf7ph9bN~tyeB2eJCXqULzGq-tFJGvYhiX6k5U6oYSu1lq0NJuFQj9kokZXOpYlj34aegFI4T4cyO90Il7exc_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/J_3eseMqT_a93rHjKo_2SQ?expiry=1516233600000&hmac=yQMNVmcx7NwLVBDoklJyBCgZkHKheA6VkldnQOM_RoU&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/J_3eseMqT_a93rHjKo_2SQ?expiry=1516233600000&hmac=Y4eBVVhO8T6zHF6V-h9o1Xe08W_U9MetnJuSLrCe26c&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "embedded-operating-systems-graded-quiz",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<h3>\n Question 1\n</h3>\n<co-content>\n <p>\n  Which functions are included in the Linux kernel ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Device management\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Memory management\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Scheduling\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Process management\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Interrupt handling\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 2\n</h3>\n<co-content>\n <p>\n  What are advantages of Microkernel ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Fast hardware reaction\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Extendsibility\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Scalability\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    All functionalities implemented in the kernel\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 3\n</h3>\n<co-content>\n <p>\n  What are features of Contiki ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Low memory allocation\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Full TCP/IP networking supporting\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Supporting low power IPv6 protocols\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Power awareness\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 4\n</h3>\n<co-content>\n <p>\n  What are main features of Tiny OS ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    It is built based on a modular kernel\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    It is open source OS\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    It is written in nesC\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Tiny OS uses a minimal kernel\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 5\n</h3>\n<co-content>\n <p>\n  What are features of Riot OS ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Supporting C\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Having a tickless scheduler\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Supporting synchronous and asynchronous IPC messages\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Having a complex interrupt handler\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "exam"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "contiki-os-and-cooja-simulation",
+        [
+            [
+                "module-4",
+                [
+                    [
+                        "module-4-lecture-1-contiki-and-cooja-simulation",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/r_Rk2P_eEeWY7A7plzbYtQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=TNVd4aX2hZ-BsfMXxrrVQDgylUXvQG8S4cjFgf~sz4euWl1bS3EZyM4-mOW2xGt7rPtksQmp5GB5QOTuz80rnkLjxtsTSclEVljNhbytHMbXMLgxbST0mWYPJlNhR6xT0OLxeA2jRVHiL~LKqUl3qxj3qeLkhHdL766LQu~EFIs_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/zg6lH0ZnS9mOpR9GZ_vZTg?expiry=1516233600000&hmac=F2-iwV6CfxOTgZd9e469E_LRISRYdXOwcu5TQ409N10&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/zg6lH0ZnS9mOpR9GZ_vZTg?expiry=1516233600000&hmac=DVvRgn-V1SZW6SgtxRBvXIa1P-h4rsReBIayT1YmKKQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-4-lecture-2-contikis-system",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/UIsVLP_fEeWr1hJ0XnxKyQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=eVf1lg3PKusgGv4JG7y9plxRcDvw0Pxvx6k64METRMBJrDFY17EH9WZsIw9H5Y0WN04C~uuhNRsHPd2zvMTgjG0Q6RRY4pWFVhFwjzN-Lmv0zJF0wftyNHJ32UGkp~N9eNqIiy2xr38g9Ge-z-oGF9H0lSaUY9wbAjvpSU-2Qhk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/I5Sxt0eDTciUsbdHg53IuA?expiry=1516233600000&hmac=9SV8KFaYLLPPzrWaOBWNQB7ggBc2XECAEPeuR5qpo9M&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/I5Sxt0eDTciUsbdHg53IuA?expiry=1516233600000&hmac=URGDJFm8Bfwm45ZTE5JOAqRvUtzcDLMIOvOEvAu0wB8&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-4-lecture-3-contikis-kernel-architecture",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/jahgbP_fEeW7IApjxInDBw.processed/full/540p/index.mp4?Expires=1516233600&Signature=eGGGWqNDzCwnWEl6eZDBdufL~je-65p0fraztGQSvkziH5KH-v7Ie3~R-UAHi4wNk8oQjb8i8ij87Vsj-k28IeUKav6L-262c1vBMNkP~y~uqv8h4sdJlJC~bnHtTrHJOAg4PKBnhuD9OvmKX7ZzCp6nmEOkp-BoYpLu9x0xg98_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/L0NrOWHYQOODazlh2ADjxA?expiry=1516233600000&hmac=nWd-YXFFUXjLcjgaPS5aiTZQrUlI6wTp0bdn0smTQ0I&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/L0NrOWHYQOODazlh2ADjxA?expiry=1516233600000&hmac=i7ijBh9I3ioIr2JQza5eaPdpkXXGz332djYTmV49K1s&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-4-lecture-4-contiki-services-and-libraries",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/9CKBlf_fEeW2ugrFi49p_Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=jQLCehnndaSj4R9w5V23dDVJhVX4U9P7UIbwaAvEBCEkpeJZzWXKFTMZmt3ALwXxuebeFyGpoQAXo47IST-QNG65jRxYkVKSzaL0WnOPl5gGz0ghaxgvlyn~5a38ZBqj~kxgtvgD3Qw~Vby3~PCK5ugMM3q0e5V1OWY9mP0x0~I_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/1yksOOucTCKpLDjrnIwiVw?expiry=1516233600000&hmac=y6D73U9gSfbLyxAEtYIxfUBNEMQasIxfkneTv0UIQ34&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/1yksOOucTCKpLDjrnIwiVw?expiry=1516233600000&hmac=auu_UpML8GFg-jPiMaqUVxppODA52xV0LRMPs3_fwVc&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-4-lecture-5-communication-in-contiki",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/UyRBK__gEeWwsA4t7LQqYw.processed/full/540p/index.mp4?Expires=1516233600&Signature=kSOItKKGkMZ03m9hLX6Y9qkfCGUV-Nnnoz9TYCtyFu3XC~R2D-I~~6jehKZQT~b6iLORkt6ZD-mENFeVv-C24PnBzNEYtqUoxC4YLpnVO7xD5mY0oxHVNnxG6J~no6HONXSZ0cp-kuH2z4Ckqlsxs7d3vPqgPI7g0DlfM661EOI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/lJeYISy1SueXmCEstbrnvw?expiry=1516233600000&hmac=DBKA_ArdB_TvGVqMyvgWxedKvqz1GQ902ZO1qrFaY_0&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/lJeYISy1SueXmCEstbrnvw?expiry=1516233600000&hmac=mCJJAUirgkLQ_1xlzZ3z5IrGZhNZ5wZ60MOgmLDHm_0&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-4-lecture-6-communication-in-contiki-con-t",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/cleUUQJ1Eea8MA4ynun-pw.processed/full/540p/index.mp4?Expires=1516233600&Signature=aO3DSF1h8EURv~C8U9vUYjdynCUVUlPphAj1aax0vM841G15NVzhaQsV44XfaEv-Qvl4mHN6oZIlgM5cO3Ma-aJdxald6EbQQhmupDpz0Fj3OMw4MI6cbLXmXjBVHNZqeA68mfjXAj49ui5Ntlva1aCEN98gr4VxyjrVDHT9Auw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/ianOjx4yRlepzo8eMnZXGQ?expiry=1516233600000&hmac=_xx4Sxf0oFvJzq6jLHfgv28lIl-vO_jqhymCif2H4Jc&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/ianOjx4yRlepzo8eMnZXGQ?expiry=1516233600000&hmac=FYIj_RPLPfUEE-BhTqW1_APE652j-7Fzpel4yAUoJG4&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-4-lecture-7-protothread-multithreading-and-code-sizes",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/g5rd9f_gEeWr1hJ0XnxKyQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=iH~E35f1L61i7t9y1PvJpTVocVtWsoPkXzNnZ20kP-GJddp52AyuyrfBBtRSmgiD~MUS08Wicc3YPdUFuMI9gbAH7UF3gR8jwIH4yw07p6axeb82IEQa3~6zulgT3Tk1FP6CicVhmjNVjuIdru0BygyyM993q0ZUd-nB9yEO5xE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/v_d2_Hv9Tq63dvx7_a6ulg?expiry=1516233600000&hmac=udQ8V-dEDHnX4JbINCUxhi6y0ue9qBxtgKhsHJuC7II&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/v_d2_Hv9Tq63dvx7_a6ulg?expiry=1516233600000&hmac=v9ibovmQBe7ZpDO4f6LRcmS8-c4O0oiJPuFVCLA-e9I&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "module-4-lecture-8-cooja-simulation",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/yA8hG__gEeW7MQ5EjMceEQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=hNjxGM8qXphVCdYAjBEqQcUnB~4EqGYfFbUKjV66Qjjk7PAzUfe0HEjrdBLBvwf9yfHHA8hTISMFsNlxwJwSCzQlCRcP1bnGeMmChncygAJ3gUEAuUXBE-XnWxRWEm1f7mAAx5XhibNacPpFVBdOBnPRK3zxSOAfO1iCyPr6ojc_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/cACsAeeqR7WArAHnqje1JQ?expiry=1516233600000&hmac=DziUVNKehbvm4aqWnC8gcJuJtIZJRG1lYfdBYG6bdzw&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/cACsAeeqR7WArAHnqje1JQ?expiry=1516233600000&hmac=uB89XVa4zaFLD9_hLwZwyxVMCuPYKsfR3c_nJkpHXSQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "contiki-and-cooja-graded-quiz",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<h3>\n Question 1\n</h3>\n<co-content>\n <p>\n  What is/are main feature(s) of Contiki ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Contiki uses a hardware abstraction layer\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Contiki supports multi-threading\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Contiki services communicate via events\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Contiki is based on Event-driven kernel\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 2\n</h3>\n<co-content>\n <p>\n  What is true for a process in the Contiki system ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    The process control block is internally used by the kernel\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    The process control block is directly used by the process\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Two modes of running process : cooperative and preemptive\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Processes communicate each other via the kernel\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 3\n</h3>\n<co-content>\n <p>\n  What is a service in Contiki ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    A service is a process\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    A service is dynamically replaced at run-time\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    A service is statically replaced at run-time\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 4\n</h3>\n<co-content>\n <p>\n  What is multi-threading and how it is managed/implemented in Contiki ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    The library supporting multi-threading is linked with applications by default\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Preemption in multi-threading library is implemented by a timer interrupt\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Multi-threading is implemented as a library on top of the event-based kernel\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    The library supporting multi-threading is divided into a platform independent part and a specific part\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 5\n</h3>\n<co-content>\n <p>\n  What does an uIP communication stack in Contiki have ? (Check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    It has private buffers\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    It has the main control loop for checking arriving packets\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    It has the main control loop for checking a periodic timeout\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    It has dynamic table for holding connection state\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "exam"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ]
+]

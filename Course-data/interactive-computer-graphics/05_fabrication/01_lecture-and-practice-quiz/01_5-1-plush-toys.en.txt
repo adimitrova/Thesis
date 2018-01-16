@@ -1,0 +1,123 @@
+hello, this is week 5 of
+interactive computer graphics. A topic we discuss here is fabrication. So, so far, we have been working on,
+introduced, discussed computer graphics. So display imagery on the screen. Everything was on the computer
+screen inside of a computer. So this week, we discussed trying to
+going out of the computer screen and then try to work on the physical object we can
+touch and manipulate in the real world. And the background motivation is here,
+so you know there are so many possible publication machines
+getting available, getting cheaper. So if you have a 3D model inside
+a computer, you can easily directly print. 3D models are the physical objects. For example, if you have a 3D printer,
+you can get a 3D model. Similarly, milling machines
+automatically mills, material and then you get the 3D model. And so you have, 3D dimensional patterns. You can easily send it to the laser
+cutter, our cutting machine and you will get nice three,
+two dimensional shapes out of the box. So, here's the list of
+topics we discussed here. We discussed design with plush toys and design with beadworks and chairs and
+also discussed soft folding or crossing materials, and
+also interactive packing, packing method. So first one is a plush toy design. So this one is called Plushie. So the program is address is that it
+is very difficult for non experts, for us to design 2D pattern who
+are stuck [INAUDIBLE] appropriately. You know? You want to get a three-dimensional
+stuffed animal, you need to design
+two-dimensional clothes patterns. For experts, it may be easy to
+understand the relationship, but for novice users or no-experience people, it's very difficult to go back on course
+between 2D to 3D and then 3D to 2D. So, for the sketch-based 3D modeling and
+automatic close pattern generation. So this is extension of
+teddy system we introduced. So you just sketch desired shape, and the system generates a three dimensional,
+geometry. But at the same time, system also generates
+a corresponding 2D cloth pattern. So if the user print them, cut them,
+stitch together, and it's ready. And then you'll get the 3D,
+physical 3D shape. So that's the idea. Let me show you a video. So here's the overview. The user input is three-dimensional
+sketching input on computer screen. And then, giving the user input system
+automatically generate a 3D shape and then corresponding 2D equals patterns. And then after having closing patterns,
+the user sew together and then you get the physical stuffed animal. There are operational. The user interface is very similar
+to the original Teddy system. User just get his outline,
+and the system But at the same time you get
+a two-dimensional cross pattern, and what's happening here inside is that we
+learn a simple physical simulation inside. So the system predicts what happens
+if you stitch them together and it. And the system shows
+a predicted 3D geometry here. And after having some geometry,
+you can interact and edit it. Like like any system, you can cut object
+and the system automatically gets 3D shape and as well has
+a two-dimensional close pattern. So user continuously edits the shape, and the system continuously presents
+a two-dimensional shape. This is a operation. So here we generate two
+possible operations. So one is like this one. So last base are these holes and also, we also support [INAUDIBLE] this
+is useful for making an ear. We also implemented a cover of editing
+operations such as pulling the shape. So here the system concurrently edits, modifies the 3D shape and
+also two-dimensional patterns. Now this is in, in, interesting so
+you can actively add or erase a seams on top of a colored pattern. So this is interesting I think. So, now you have, we have three pieces and
+a single 3D object. But if,
+here the user tries to erase the seam, which means that these two
+parties will be merged together. So you will end up having two parties. Our system outlines this
+computation in real time. So as user erases a patch boundary, the
+system merges the two patches together, and then you will have now a two,
+patches, and the system also applies the physical
+simulation to the result. So user can also operate
+directly on the 2D pattern, and then you will get a modified 3D shape. So you can easily directly
+working on 3D shape, or you can work,
+directly working on 2D pattern. So this two way agent
+can be very flexible. And this is an example
+of modeling sequence. So use a fast generator base shape, and then you operate cut operation
+to get more control. So basically by repeating
+simple sketching, editing operations, you can generate
+reasonably complicated shape. Here we, we did not show in this video,
+but in the actual printout, system also gives, hints or information, which,
+which edge to be connected with which end. So, the construction is also guided by
+the computer generated annotations. So after having this 3D model,
+the user print this pattern into paper or cloth and then you will manually
+create 3D stuff animal. So this is 3D model, and then this is
+a generated real physical stuffed animal. So you take four or
+five hours to get this. Yeah, you can also create a big
+one by using, you know, inflation. So this is a big balloon,
+like two meter size, a big balloon. So traditionally this kind of balloon is
+designed by professional designers, and it requires many testing and
+trials and the prototyping. But here, the computer can take care
+of the prototyping or simulation. So even any inexperienced people can
+design it, so, his or her own balloons. So we learned our simple study. So, we asked kids to design
+their own stuffed animal. So traditionally,
+these people can buy existing pattern and they create, the stuffed animal. It was almost impossible to design new
+original character, stuffed animal. But here, you know, even students,
+kids can design their own stuffed animal. And after finishing the design, you know
+print then cut and then stitch together, and then you will get a final 3D model,
+oh no, no, final press toy. So, you can design their
+own original model. Yep. So, let me briefly,
+describe the algorithm. For the inflation algorithm, for
+the inflation simulation, we use a very, very simple, basic mass-spring method. So, close 3D model mesh vertices
+move outward over the time by air pressure or cotton pressure. So it tries to inflate. But at the same time the system
+tries to pull them back, depending on the edge length. If edge length is too long
+then it will pull back. And then we repeat these two processes,
+and then at the end you will
+get a stable result. We must say that this simulation is not
+accurate simulation of real physics. There will be more other bonds physical
+simulation methods, but you can get more accurate result by using more accurate
+methods but it is also interesting to see that you can get basic result
+with basic simple simulation method. And another interesting issue is that
+adjustment to the sha, to the patterns. So, so, algorithm first takes user inputs,
+this red one and then direct to the,
+use it as a 2D pattern. However, if you start with 2D pattern and
+inflate it, you know,
+inflated you inflate in Z direction but if you pull in D direction then X Y
+frame become's get's smaller right? So in order to prevent it, the system tries to adjust the shape
+to compensate this difference. So after, after the initial configuration, system tries to gradually
+inflate the 2D pattern so that the resulting 3D inflation result
+matches exactly to the 2D input sketch. So that's, you know,
+inflation algorithm you saw in the video. So this shape adjustment
+is very important. You know, if user draw let,
+box, as a input, and if you dive to use this
+box as a 2D cross pattern, then if you generate a 3D shape or
+2D shape, you will get shape. So resulting shape is not
+exactly match this rectangle. But if we apply the shape
+adjustment maths algorithm, then system automatically
+inflates the input to the shape. Then physical result will,
+publication result matches, more closer to the rectangle. So, yeah, this is interesting. So if you want to have a rectangular,
+pillow, you should start with this kind
+of pattern, not start from here. So, to learn more,
+original paper was published as Plushie, an Interactive Design System for
+Plush Toys. And this work, it was strongly inspired
+by previous work on paper craft model. So this work making the paper
+craft toys from meshes using strip based approximate for unfolding. So this one starts from giving 3D model, and then automatically generates
+a 2D paper craft pattern. So you can generate interesting,
+3D shapes just by using a paper craft. We use a surface flattening method
+to generate moving from 3D to 2D. And surface flattening is also a very
+popular topic in computer graphics. It's been used to compute a texture map
+co-ordinates, and if you learn more, one starting point would be this
+mesh parameterization method and the applications. So that's [INAUDIBLE] this week and
+this video.

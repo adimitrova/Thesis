@@ -1,0 +1,433 @@
+1
+00:00:00,012 --> 00:00:05,807
+We are now extremely close to the end of 
+this entire course and I'm actually done, 
+
+2
+00:00:05,807 --> 00:00:08,793
+believe it or not, with the technical 
+part. 
+
+3
+00:00:08,793 --> 00:00:13,754
+The grand finale was really this idea 
+that we could even make complicated 
+
+4
+00:00:13,754 --> 00:00:19,221
+systems like cars act like unicycles that 
+we now know how to control and navigate 
+
+5
+00:00:19,221 --> 00:00:24,804
+around in complex environments as we've 
+seen both in theory In simulation, and 
+
+6
+00:00:24,804 --> 00:00:29,330
+actually in real experiments. 
+What I want to do in this sub-lecture is 
+
+7
+00:00:29,330 --> 00:00:33,615
+basically probe further. 
+There are lot's of things, believe it or 
+
+8
+00:00:33,615 --> 00:00:38,213
+not, that are actually not in this 
+course, pretaining to other control 
+
+9
+00:00:38,213 --> 00:00:40,382
+robots. 
+Here I have a picture of a praying mantis 
+
+10
+00:00:41,512 --> 00:00:46,411
+and the reason for that is that, we have 
+not covered praying mantises. 
+
+11
+00:00:46,411 --> 00:00:51,775
+So I'm going to let this be a proxy for 
+all the things we haven't talked about. 
+
+12
+00:00:51,775 --> 00:00:57,142
+Well one thing that we haven't talked 
+about is, what happens when your system 
+
+13
+00:00:57,142 --> 00:01:00,203
+is generally non-linear instead of 
+linear. 
+
+14
+00:01:00,203 --> 00:01:05,501
+So we are now really, really good at 
+dealing with linear control system. 
+
+15
+00:01:05,501 --> 00:01:09,862
+Well, what if it is linear, non-linear? 
+Well we have dealt with some, we've dealt 
+
+16
+00:01:09,862 --> 00:01:13,991
+with the unicycle quite a bit, but there 
+we were kind of lucky that we had a lot 
+
+17
+00:01:13,991 --> 00:01:16,926
+of intuition. 
+What if this is not the unicycle? What if 
+
+18
+00:01:16,926 --> 00:01:20,756
+this is massively non-linear, and 
+strange, and complicated? What do we 
+
+19
+00:01:20,756 --> 00:01:26,197
+actually do? Well, that's called nominal 
+control and it's not in this course but I 
+
+20
+00:01:26,197 --> 00:01:31,622
+encourage you to keep educating yourself 
+and probing further along these lines. 
+
+21
+00:01:31,622 --> 00:01:36,822
+another thing that we didn't deal with is 
+what is called optimal control. 
+
+22
+00:01:36,822 --> 00:01:39,932
+So for us, the name of the game was 
+stability. 
+
+23
+00:01:39,932 --> 00:01:46,342
+Stability, it was performance in the 
+sense of tracking, right, so we want it 
+
+24
+00:01:46,342 --> 00:01:53,132
+to track reference signals, and then we 
+had robustness, but what we didn't have, 
+
+25
+00:01:53,132 --> 00:01:58,688
+explicitly, were things like this. 
+So this is a general, type of cost, where 
+
+26
+00:01:58,688 --> 00:02:02,748
+we're saying, well we want to minimize 
+some cost involving x and u. 
+
+27
+00:02:02,748 --> 00:02:07,017
+This could be, you know, the fuel 
+consumed, or the time it takes to get 
+
+28
+00:02:07,017 --> 00:02:10,558
+there, plus possibly some cost on the 
+final point as well. 
+
+29
+00:02:10,558 --> 00:02:14,869
+This is known as optimal control, and 
+this was also not, in the course. 
+
+30
+00:02:14,869 --> 00:02:17,772
+So this was one grasshopper that we 
+didn't see. 
+
+31
+00:02:17,772 --> 00:02:22,769
+There is another branch of decision 
+theory known as Machine Learning that we 
+
+32
+00:02:22,769 --> 00:02:26,379
+didn't touch upon. 
+The reason why I am putting this as a 
+
+33
+00:02:26,379 --> 00:02:31,182
+another thing that you might want to 
+probe further along is it's useful in 
+
+34
+00:02:31,182 --> 00:02:36,252
+robotics and it's highly related to 
+control in general and optimal control in 
+
+35
+00:02:36,252 --> 00:02:38,542
+particular. 
+So the idea is that. 
+
+36
+00:02:38,542 --> 00:02:44,032
+I'm going to have some costs V and I'm 
+going to have some policy pie which says 
+
+37
+00:02:44,032 --> 00:02:47,741
+what are you going to do when you're at 
+the certain state? 
+
+38
+00:02:47,741 --> 00:02:52,561
+And the cost is just going to be a cost 
+of the different, where I am at time k 
+
+39
+00:02:52,561 --> 00:02:57,021
+and what I'm doing at time k. 
+So this is really U sub k, right? And now 
+
+40
+00:02:57,021 --> 00:03:01,872
+I'm going to sum up this entire cost and 
+if you do that you can write down. 
+
+41
+00:03:01,872 --> 00:03:07,000
+Something known as Bellman's Optimality 
+Equation or Bellman's equation, that 
+
+42
+00:03:07,000 --> 00:03:11,869
+basically characterizes what is the 
+smallest you can make this cost while it 
+
+43
+00:03:11,869 --> 00:03:15,051
+satisfies this kind of weird looking 
+expression. 
+
+44
+00:03:15,051 --> 00:03:20,070
+And the point here is not the math, the 
+point is that we have this equation, and 
+
+45
+00:03:20,070 --> 00:03:24,362
+machine learning is all about finding 
+this V* by exploring. 
+
+46
+00:03:24,362 --> 00:03:29,996
+If I'm at this position, let's try doing 
+u4. if I'm in another position, let's try 
+
+47
+00:03:29,996 --> 00:03:33,505
+doing u9. 
+And while doing this, you're building up 
+
+48
+00:03:33,505 --> 00:03:38,600
+this a, this V* cost function. 
+And when you're done building it up, you 
+
+49
+00:03:38,600 --> 00:03:43,342
+all of the sudden have a complete map or 
+guide to what should you do. 
+
+50
+00:03:43,342 --> 00:03:48,176
+If you encounter a certain state, and 
+that's in a nutshell what machine 
+
+51
+00:03:48,176 --> 00:03:52,276
+learning is about. 
+Another thing that we didn't do much with 
+
+52
+00:03:52,276 --> 00:03:56,579
+is perception and mapping. 
+We had infrared or ultrasonic range 
+
+53
+00:03:56,579 --> 00:03:59,550
+sensors, but a lot of times. 
+We have those. 
+
+54
+00:03:59,550 --> 00:04:02,121
+We have laser scanners. 
+We have cameras. 
+
+55
+00:04:02,121 --> 00:04:07,213
+We did not deal with complicated sensing 
+modalities and we did also not deal with, 
+
+56
+00:04:07,213 --> 00:04:10,041
+okay what do we do with all these sensor 
+data. 
+
+57
+00:04:10,041 --> 00:04:14,794
+How do we actually produce maps of the 
+world? Our world was, here is the, the 
+
+58
+00:04:14,794 --> 00:04:16,556
+robot. 
+Here is an obstacle. 
+
+59
+00:04:16,556 --> 00:04:18,713
+It's a point. 
+Let's just avoid it. 
+
+60
+00:04:18,713 --> 00:04:22,036
+But you know what. 
+This obstacle may not be a point it may 
+
+61
+00:04:22,036 --> 00:04:26,219
+be part of, I don't know, a corridor, and 
+we would like to go in the corridor. 
+
+62
+00:04:26,219 --> 00:04:29,848
+Well then it's good to actually describe 
+what the world looks like. 
+
+63
+00:04:29,848 --> 00:04:33,443
+This is known as mapping. 
+And again, this is a perfect opportunity 
+
+64
+00:04:33,443 --> 00:04:36,684
+for you to probe further, trying to build 
+maps of the world. 
+
+65
+00:04:36,684 --> 00:04:39,512
+There are lots of different methods for 
+doing it. 
+
+66
+00:04:39,512 --> 00:04:43,905
+And finally, the thing that we didn't do 
+at all either is really talk about the 
+
+67
+00:04:43,905 --> 00:04:48,099
+high level artificial intelligence. 
+So, how do you actually decide in the 
+
+68
+00:04:48,099 --> 00:04:52,567
+first place where you should be going. 
+We said, given a goal point, how do we go 
+
+69
+00:04:52,567 --> 00:04:57,382
+there? But where did the goal coin, point 
+come from? Somehow, somewhere, someone is 
+
+70
+00:04:57,382 --> 00:05:01,576
+going to have to make decisions about 
+what at the very high-level the robot 
+
+71
+00:05:01,576 --> 00:05:05,262
+should be doing. 
+And this falls Squarely under the domain 
+
+72
+00:05:05,262 --> 00:05:09,912
+of artificial intelligence. 
+Not covered in this course, I encourage 
+
+73
+00:05:09,912 --> 00:05:14,187
+you to probe further. 
+So, to conclude, there are things that we 
+
+74
+00:05:14,187 --> 00:05:18,712
+haven't done in this class. 
+There are lots of praying mantises that 
+
+75
+00:05:18,712 --> 00:05:21,892
+we didn't cover. 
+And those are good things for you to 
+
+76
+00:05:21,892 --> 00:05:24,182
+probe further. 
+And learn more about. 
+
+77
+00:05:24,182 --> 00:05:27,617
+If you know all of it, you can build an 
+awesome robotic system. 
+
+78
+00:05:27,617 --> 00:05:31,052
+But, beyond that, there are also lots of 
+things we don't know. 
+
+79
+00:05:31,052 --> 00:05:34,557
+So here, Not only praying mantises, but 
+other green creatures. 
+
+80
+00:05:34,557 --> 00:05:38,547
+We have no idea what they look like. 
+We don't know if they exist, we don't 
+
+81
+00:05:38,547 --> 00:05:41,672
+know what they are. 
+It's the same with robotics. 
+
+82
+00:05:41,672 --> 00:05:46,557
+There's a lot of stuff going on that we 
+as a community don't know how to do yet. 
+
+83
+00:05:46,557 --> 00:05:51,252
+So the last thing I want to do is give 
+you the impression that this is a closed 
+
+84
+00:05:51,252 --> 00:05:54,722
+and complete case. 
+We know everything about robotics. 
+
+85
+00:05:54,722 --> 00:05:57,587
+We don't. 
+So, not only in this course are there 
+
+86
+00:05:57,587 --> 00:06:02,557
+praying mantises, but outside of the 
+course there are potential aliens that we 
+
+87
+00:06:02,557 --> 00:06:04,185
+still have not discovered. 

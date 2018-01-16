@@ -1,0 +1,378 @@
+1
+00:00:00,012 --> 00:00:05,273
+So, last time, we saw that it was 
+possible to destabilize a hybrid system 
+
+2
+00:00:05,273 --> 00:00:11,136
+by switching between different modes even 
+if the different subsystems or modes were 
+
+3
+00:00:11,136 --> 00:00:14,322
+stable or asymptotically stable 
+themselves. 
+
+4
+00:00:14,322 --> 00:00:18,765
+in this lecture I want to harp on this 
+theme a little more and, in fact, I've 
+
+5
+00:00:18,765 --> 00:00:22,471
+called it Danger, Beware! 
+because this is actually something that 
+
+6
+00:00:22,471 --> 00:00:26,825
+we need to be aware of and it is not 
+always so easy to ensure that the overall 
+
+7
+00:00:26,825 --> 00:00:30,657
+hybrid system is stable even if the 
+subsystems are unstable. 
+
+8
+00:00:30,657 --> 00:00:35,332
+In fact, like I saw, we looked at a 
+counter example that allowed us to 
+
+9
+00:00:35,332 --> 00:00:40,482
+actually destabilize, which means drive 
+the state off to infinity, by being 
+
+10
+00:00:40,482 --> 00:00:45,157
+unlucky or unclever in how we 
+transitioned in and out of the different 
+
+11
+00:00:45,157 --> 00:00:48,032
+modes. 
+So, if we ignore the resets, meaning 
+
+12
+00:00:48,032 --> 00:00:52,282
+there are no reset maps, the state 
+doesn't jump when you're making 
+
+13
+00:00:52,282 --> 00:00:58,092
+transitions, we get something called a 
+switch system where you have x dot if is 
+
+14
+00:00:58,092 --> 00:01:04,661
+f(x,u) but now I have this a little sigma 
+index here and sigma is what's known as 
+
+15
+00:01:04,661 --> 00:01:09,281
+the switch signal. 
+So, sigma is going to tell me which mode 
+
+16
+00:01:09,281 --> 00:01:13,112
+the system is in. 
+So, if sigma is 1 I am in mode 1. 
+
+17
+00:01:13,112 --> 00:01:17,192
+If sigma is 10, it's in mode 10 or if 
+it's p it's in mode p. 
+
+18
+00:01:17,192 --> 00:01:22,402
+So, all I'm doing is I'm switching 
+between different modes and this switch 
+
+19
+00:01:22,402 --> 00:01:26,749
+signal can be, be rather different. 
+It can be just random. 
+
+20
+00:01:26,749 --> 00:01:30,972
+It can be driven by time. 
+It can be driven by things happening in 
+
+21
+00:01:30,972 --> 00:01:34,429
+the state. 
+But it's a very general way of describing 
+
+22
+00:01:34,429 --> 00:01:38,844
+a switch system. 
+Now, if you have that, we can actually 
+
+23
+00:01:38,844 --> 00:01:44,276
+talk about different kinds of stability. 
+And I just wanted to point out that these 
+
+24
+00:01:44,276 --> 00:01:48,178
+things actually exist and we should be 
+aware of them. 
+
+25
+00:01:48,178 --> 00:01:53,708
+The first is what's known as universal 
+asymptotic stability. And universal means 
+
+26
+00:01:53,708 --> 00:01:57,486
+that there is nothing I can do to 
+destabilize the system. 
+
+27
+00:01:57,486 --> 00:02:02,505
+No matter what, this upside-down A means 
+for all sigma, so x will go to 0 no 
+
+28
+00:02:02,505 --> 00:02:06,499
+matter how I switch. 
+That's called universal stability. 
+
+29
+00:02:06,499 --> 00:02:12,412
+The other notion is existential 
+stability, which means there exists the 
+
+30
+00:02:12,412 --> 00:02:15,551
+flipped E it's called an existential 
+quantifier. 
+
+31
+00:02:15,551 --> 00:02:20,312
+It means, there exists a switch signal 
+that makes the system stable. 
+
+32
+00:02:20,312 --> 00:02:24,942
+So, not all of them, but at least there 
+is one that makes it go down to zero. 
+
+33
+00:02:24,942 --> 00:02:29,987
+And these are the two main ways in which 
+people want to deal with switch systems. 
+
+34
+00:02:29,987 --> 00:02:35,177
+In our case, we don't have, there exists 
+a switch signal typically, or for all, we 
+
+35
+00:02:35,177 --> 00:02:40,531
+have what's called hybrid stability and 
+that we actually have a hybrid system 
+
+36
+00:02:40,531 --> 00:02:45,859
+that is itself generating the, the switch 
+signal and this is known as hybrid 
+
+37
+00:02:45,859 --> 00:02:49,341
+stability. 
+So, x goes to zero, not for any all sigma 
+
+38
+00:02:49,341 --> 00:02:54,896
+or for all sigma, but for the one that 
+happens to be the one that we have in our 
+
+39
+00:02:54,896 --> 00:02:58,188
+hybrid system. 
+So, here are some results. 
+
+40
+00:02:58,188 --> 00:03:04,602
+Let's say that I have a hybrid system 
+where all the individual modes are 
+
+41
+00:03:04,602 --> 00:03:10,068
+asymptotically stable. 
+Well, then, can we guarantee that it is 
+
+42
+00:03:10,068 --> 00:03:14,644
+at least existentially stable? Well, 
+clearly, we can, right? 
+
+43
+00:03:14,644 --> 00:03:19,907
+Because what we do is we don't switch. 
+If I design a switch signal that just 
+
+44
+00:03:19,907 --> 00:03:25,095
+picks one mode and then stays with that 
+forever and ever and ever, well, we're 
+
+45
+00:03:25,095 --> 00:03:30,309
+never switching but all the individual 
+modes are asymptotically stable so if all 
+
+46
+00:03:30,309 --> 00:03:34,434
+the modes are asymptotically stable, we 
+never switch and voila, 
+
+47
+00:03:34,434 --> 00:03:37,732
+we do have an existentially stable 
+system. 
+
+48
+00:03:37,732 --> 00:03:42,742
+But, as we will have, as we have seen, 
+they're not always universally 
+
+49
+00:03:42,742 --> 00:03:47,196
+asymptotically stable. 
+And the reason for this is well, this 
+
+50
+00:03:47,196 --> 00:03:50,714
+counter example. 
+The reason is that we can actually 
+
+51
+00:03:50,714 --> 00:03:55,827
+destabilize the system by an unfortunate 
+switching between the modes. 
+
+52
+00:03:55,827 --> 00:04:01,047
+So, what do we do about this? Well, there 
+is something in nonlinear control known 
+
+53
+00:04:01,047 --> 00:04:05,192
+as a common Lyapunov function. 
+I'm not going to talk about this in this 
+
+54
+00:04:05,192 --> 00:04:07,772
+course, 
+mainly because the common Lyapunov 
+
+55
+00:04:07,772 --> 00:04:11,322
+function is an elusive beast that you can 
+almost never find. 
+
+56
+00:04:11,322 --> 00:04:15,157
+But theoretically, that's what you're 
+going to have to hunt for. 
+
+57
+00:04:15,157 --> 00:04:19,161
+Practically speaking though, what you 
+need to do is the following. 
+
+58
+00:04:19,161 --> 00:04:24,690
+First, never design unstable controllers 
+because then you're going to be in 
+
+59
+00:04:24,690 --> 00:04:28,849
+trouble probably, right? 
+So, design stabilizing controllers for 
+
+60
+00:04:28,849 --> 00:04:32,917
+the subsystems. 
+And then, we design the switching logic, 
+
+61
+00:04:32,917 --> 00:04:38,413
+meaning how are we going to switch 
+between the different modes and if we're 
+
+62
+00:04:38,413 --> 00:04:43,567
+lucky or we have a lot amount of free 
+time on our hands, we can go find, or try 
+
+63
+00:04:43,567 --> 00:04:49,012
+to find these common Lyapunov functions. 
+Now, like I said, finding that is really 
+
+64
+00:04:49,012 --> 00:04:53,777
+more art than science in the sense that 
+it's very hard in general to find it. 
+
+65
+00:04:53,777 --> 00:04:58,402
+So, the most important thing here is 
+really, we need to be aware of the fact 
+
+66
+00:04:58,402 --> 00:05:03,363
+that stable subsystems do not ensure 
+asymptotic stability of the hybrid 
+
+67
+00:05:03,363 --> 00:05:06,585
+systems. 
+So, we need to be aware of it and test, 
+
+68
+00:05:06,585 --> 00:05:10,245
+test, test, test, test. 
+In the sense that, run it, see what 
+
+69
+00:05:10,245 --> 00:05:15,513
+happens, do we get instabilities induced? 
+And if we do, we need to start messing 
+
+70
+00:05:15,513 --> 00:05:19,709
+with our switching logic. 
+But this is really key and I cannot 
+
+71
+00:05:19,709 --> 00:05:23,310
+underemphasize the testing aspect of the 
+hybrid system. 
+
+72
+00:05:23,310 --> 00:05:28,040
+In fact, when people design avionics 
+software, for instance, the majority of 
+
+73
+00:05:28,040 --> 00:05:33,255
+the time is spent not on test, on, on the 
+development of the controllers, but on 
+
+74
+00:05:33,255 --> 00:05:38,069
+testing that the switching logic in 
+combination with the controllers does not 
+
+75
+00:05:38,069 --> 00:05:43,975
+induce instability. 
+So, that's what we need to keep an eye 
+
+76
+00:05:43,975 --> 00:05:43,975
+out for. 

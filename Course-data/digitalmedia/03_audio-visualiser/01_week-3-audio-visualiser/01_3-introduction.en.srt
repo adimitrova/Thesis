@@ -1,0 +1,126 @@
+1
+00:00:04,860 --> 00:00:18,711
+[SOUND]. 
+
+2
+00:00:18,711 --> 00:00:22,664
+Hello and welcome to week 3 of creative 
+programming for digital media and mobile 
+
+3
+00:00:22,664 --> 00:00:25,539
+apps. 
+This week we're going to be looking at 
+
+4
+00:00:25,539 --> 00:00:29,122
+audio visualization. 
+So that means algorithmic drawing in 
+
+5
+00:00:29,122 --> 00:00:32,480
+comptuer graphics. 
+So ways of making abstract shapes. 
+
+6
+00:00:32,480 --> 00:00:37,024
+More complex shapes with translations and 
+rotations and different kinds of 
+
+7
+00:00:37,024 --> 00:00:41,600
+geometry. 
+And audio analysis. 
+
+8
+00:00:41,600 --> 00:00:44,467
+So, what that really means is, 
+understanding what's being played back in 
+
+9
+00:00:44,467 --> 00:00:47,475
+a sound and turning it into numbers which 
+are useful for changing the way that 
+
+10
+00:00:47,475 --> 00:00:52,494
+something's drawn. 
+So, there's quite a big chunk of graphics 
+
+11
+00:00:52,494 --> 00:00:56,896
+to do with translation, and rotation, and 
+transformations, and there's a nice chunk 
+
+12
+00:00:56,896 --> 00:01:00,658
+of analysis. 
+If you're interested in audio, and you 
+
+13
+00:01:00,658 --> 00:01:02,596
+have a background in audio, I think 
+there's a lot of good stuff for you 
+
+14
+00:01:02,596 --> 00:01:06,184
+there. 
+but then I'll be doing a kind of putting 
+
+15
+00:01:06,184 --> 00:01:08,960
+it together bit at the end. 
+Stuff I always do. 
+
+16
+00:01:08,960 --> 00:01:13,440
+just literally showing you how we combine 
+analysis and combine graphics to make 
+
+17
+00:01:13,440 --> 00:01:17,792
+something which you might find alongside 
+something like, I don't know, iTunes or 
+
+18
+00:01:17,792 --> 00:01:23,230
+the Xbox audio player. 
+So, there's a market for visualizers but 
+
+19
+00:01:23,230 --> 00:01:25,930
+there's a market for the techniques of 
+visualization. 
+
+20
+00:01:25,930 --> 00:01:28,966
+It's not just about making something that 
+works with I tunes although there's a lot 
+
+21
+00:01:28,966 --> 00:01:33,220
+of money to be made in that market. 
+It's also about how to how to analyze 
+
+22
+00:01:33,220 --> 00:01:36,739
+audio and there's an increasing amount of 
+applications that really need to do that 
+
+23
+00:01:36,739 --> 00:01:41,340
+including stuff like shazam which is a 
+really useful application. 
+
+24
+00:01:41,340 --> 00:01:43,696
+So, we're going to start to be thinking 
+about all these things and how to put 
+
+25
+00:01:43,696 --> 00:01:44,892
+them together. 
+
+26
+00:01:44,892 --> 00:01:54,334
+[MUSIC] 

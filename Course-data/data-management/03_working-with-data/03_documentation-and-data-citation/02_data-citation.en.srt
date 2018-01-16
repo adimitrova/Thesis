@@ -1,0 +1,240 @@
+1
+00:00:11,996 --> 00:00:12,968
+In 2014,
+
+2
+00:00:12,968 --> 00:00:19,440
+a group called Force11 issued the Joint
+Declaration on Data Citation Principles.
+
+3
+00:00:19,440 --> 00:00:22,250
+This has been endorsed by
+a number of scientific bodies and
+
+4
+00:00:22,250 --> 00:00:25,350
+publishers, as well as individuals.
+
+5
+00:00:25,350 --> 00:00:26,690
+So why cite data?
+
+6
+00:00:27,890 --> 00:00:30,050
+By providing a citation for your data,
+
+7
+00:00:30,050 --> 00:00:34,260
+you make it easier for other users
+to identify and acknowledge it.
+
+8
+00:00:35,750 --> 00:00:40,760
+Data citation helps promote
+the reproduce-ability of research results,
+
+9
+00:00:40,760 --> 00:00:44,620
+it allows us to track the usage and
+impact of data and
+
+10
+00:00:44,620 --> 00:00:49,790
+it provides a structure by which we can
+recognize and reward data creators.
+
+11
+00:00:49,790 --> 00:00:52,480
+So whats the best practice
+in citing a data set?
+
+12
+00:00:53,620 --> 00:00:58,500
+As a general rule of thumb you want to
+make sure you include enough information
+
+13
+00:00:58,500 --> 00:01:01,577
+for another use to be able
+to locate the data set or
+
+14
+00:01:01,577 --> 00:01:04,899
+the part of the database
+that you're referring to.
+
+15
+00:01:04,899 --> 00:01:09,020
+DataCite, an international
+standards body founded in 2009,
+
+16
+00:01:09,020 --> 00:01:13,670
+recommends the following five
+minimum citation elements.
+
+17
+00:01:13,670 --> 00:01:19,360
+A creator, a year of publication,
+a title, publisher, and identifier.
+
+18
+00:01:20,630 --> 00:01:26,670
+Here, identifier refers to any persistent
+ID which uniquely identifies the object,
+
+19
+00:01:26,670 --> 00:01:31,690
+including a DOI or even a URL,
+though this may be less persistent.
+
+20
+00:01:32,810 --> 00:01:37,990
+Two additional properties which may be
+added are Version and ResourceType.
+
+21
+00:01:37,990 --> 00:01:42,150
+ResourceType refers to the class
+of object that is being citied,
+
+22
+00:01:42,150 --> 00:01:47,230
+such as a dataset, database,
+map, sound file or website.
+
+23
+00:01:47,230 --> 00:01:52,540
+The UK data service recommends using
+a title that indicates the subject matter,
+
+24
+00:01:52,540 --> 00:01:56,080
+geography and
+time period that the data covers.
+
+25
+00:01:56,080 --> 00:01:58,000
+Let's take a look at an example.
+
+26
+00:01:58,000 --> 00:02:02,330
+When citing data it makes sense to try and
+adopt the same style and
+
+27
+00:02:02,330 --> 00:02:04,820
+order of references as your other works.
+
+28
+00:02:06,340 --> 00:02:10,600
+Bibliographic style guides and
+reference management software may help.
+
+29
+00:02:10,600 --> 00:02:13,020
+But inevitably,
+some judgment may be called for.
+
+30
+00:02:14,370 --> 00:02:17,010
+If so, err on the side of caution, and
+
+31
+00:02:17,010 --> 00:02:22,120
+always provide more information than
+less to help the users find the data.
+
+32
+00:02:22,120 --> 00:02:25,700
+In the case of a dynamic database,
+that is continually updated,
+
+33
+00:02:25,700 --> 00:02:31,050
+it may be near impossible to refer back
+to the exact version that you used.
+
+34
+00:02:31,050 --> 00:02:34,800
+In such circumstances always
+include a date of download.
+
+35
+00:02:34,800 --> 00:02:38,880
+In the life sciences it's common
+to include an accession number
+
+36
+00:02:38,880 --> 00:02:42,090
+with the database name when
+you're referencing sequence data.
+
+37
+00:02:42,090 --> 00:02:45,910
+You can see this in
+the examples on screen.
+
+38
+00:02:45,910 --> 00:02:48,490
+So what if you're using
+an unpublished data source?
+
+39
+00:02:49,830 --> 00:02:52,810
+Informal data sharing
+is relatively common.
+
+40
+00:02:52,810 --> 00:02:57,024
+But even if the data are unpublished,
+the citation principles still applies.
+
+41
+00:02:57,024 --> 00:03:00,800
+If somebody shared data with you,
+for example,
+
+42
+00:03:00,800 --> 00:03:06,100
+via an email attachment, you can reference
+this as a private communication.
+
+43
+00:03:06,100 --> 00:03:07,470
+Let's take a look at an example.
+
+44
+00:03:13,050 --> 00:03:17,625
+Last but not least, good practice in
+data documentation and citation can
+
+45
+00:03:17,625 --> 00:03:23,230
+contribute to reaching a better standard
+of reproducibility of research.
+
+46
+00:03:23,230 --> 00:03:27,510
+Reproducibility is a fundamental
+principle of the scientific method.
+
+47
+00:03:27,510 --> 00:03:30,080
+So you've now completed this module.
+
+48
+00:03:30,080 --> 00:03:34,360
+If you take a look in the further reading
+section you'll find additional references
+
+49
+00:03:34,360 --> 00:03:37,180
+to get more information on
+documentation and citation.
+
+50
+00:03:38,870 --> 00:03:42,980
+You can also move onto the next module,
+which is on storage and security.

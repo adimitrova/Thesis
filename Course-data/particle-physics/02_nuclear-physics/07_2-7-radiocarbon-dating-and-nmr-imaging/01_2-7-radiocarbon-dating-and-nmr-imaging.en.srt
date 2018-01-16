@@ -1,0 +1,542 @@
+1
+00:00:00,000 --> 00:00:10,642
+[MUSIC]
+
+2
+00:00:10,642 --> 00:00:15,589
+In this second module, we are in the
+process of discussing nuclear physics, and
+
+3
+00:00:15,589 --> 00:00:19,620
+we now turn to a few examples
+of its applications.
+
+4
+00:00:19,620 --> 00:00:25,223
+In this seventh video,
+We will briefly discuss two applications,
+
+5
+00:00:25,223 --> 00:00:29,360
+which are radiocarbon dating and
+imaging by nuclear magnetic resonance.
+
+6
+00:00:30,430 --> 00:00:34,920
+After watching this video you will be able
+to describe how one determines the age of
+
+7
+00:00:34,920 --> 00:00:39,570
+organic substances based on
+their contents of C-14.
+
+8
+00:00:39,570 --> 00:00:45,747
+And to describe the principles of imaging
+using nuclear magnetic resonance.
+
+9
+00:00:47,967 --> 00:00:52,733
+One of the important applications of
+natural radioactivity is the dating of
+
+10
+00:00:52,733 --> 00:00:56,390
+organic materials by what is
+called radiocarbon method.
+
+11
+00:00:58,050 --> 00:01:02,170
+This works up to several thousand years
+and with relatively good accuracy.
+
+12
+00:01:03,350 --> 00:01:07,860
+An example is the very controversial
+dating of the Turin linen,
+
+13
+00:01:07,860 --> 00:01:11,970
+which some believe to show an imprint
+of the body of Jesus after his death and
+
+14
+00:01:11,970 --> 00:01:15,040
+it is shown in this image behind me.
+
+15
+00:01:16,320 --> 00:01:21,100
+Now, let us examine how this
+method dates organic materials.
+
+16
+00:01:21,100 --> 00:01:24,923
+Our atmosphere contains a lot
+stable N-14 and C-12,
+
+17
+00:01:24,923 --> 00:01:28,650
+which play an important role
+play in organic processes.
+
+18
+00:01:28,650 --> 00:01:33,720
+The atmosphere is constantly hit by cosmic
+rays and very high energy, they consist
+
+19
+00:01:33,720 --> 00:01:37,240
+mainly of protons and helium nuclei, but
+also electrons, photons and neutrons.
+
+20
+00:01:38,360 --> 00:01:41,390
+Cosmic rays interact
+with atmospheric nuclei.
+
+21
+00:01:41,390 --> 00:01:44,176
+The slow neutrons they produce,
+among many other particles,
+
+22
+00:01:44,176 --> 00:01:48,980
+can interact with N-14 to
+produce the radioactive carbon
+
+23
+00:01:48,980 --> 00:01:53,300
+isotope C-14 in
+a charge exchange reaction.
+
+24
+00:01:54,935 --> 00:02:00,590
+Carbon-14 is a beta emitter with a
+lifetime of a bit more than 8,000 years,
+
+25
+00:02:00,590 --> 00:02:05,250
+so well suited to date materials
+that are several thousand years old.
+
+26
+00:02:07,160 --> 00:02:12,070
+At any moment, our atmosphere thus
+contains a majority of C-12 and
+
+27
+00:02:12,070 --> 00:02:15,000
+a small quantity of C-14 nuclei.
+
+28
+00:02:15,000 --> 00:02:19,540
+Both of them can form CO2 molecules, since
+their chemical properties are the same.
+
+29
+00:02:20,760 --> 00:02:24,850
+Living organisms, like plants,
+consume carbon dioxide for
+
+30
+00:02:24,850 --> 00:02:28,970
+their photosynthesis, and
+will integrate both carbon isotopes alike.
+
+31
+00:02:30,020 --> 00:02:34,440
+When the organism dies,
+the CO2 ingestion stops.
+
+32
+00:02:34,440 --> 00:02:38,350
+From then on,
+the C-14 component slowly decays, but
+
+33
+00:02:38,350 --> 00:02:41,170
+the level of C-12 will stay constant.
+
+34
+00:02:41,170 --> 00:02:45,873
+One thus uses the relative concentration
+of the two isotopes to estimate
+
+35
+00:02:45,873 --> 00:02:47,194
+the age of fossils.
+
+36
+00:02:49,282 --> 00:02:50,214
+But of course,
+
+37
+00:02:50,214 --> 00:02:55,320
+the concentration of C-14 in the
+atmosphere is not necessarily constant.
+
+38
+00:02:55,320 --> 00:02:58,943
+It depends on the flux of
+cosmic rays at a given time and
+
+39
+00:02:58,943 --> 00:03:02,150
+this dating method thus
+needs a calibration.
+
+40
+00:03:03,820 --> 00:03:08,578
+This curve shown here gives an example
+of the deviation from linearity of
+
+41
+00:03:08,578 --> 00:03:09,439
+the method.
+
+42
+00:03:11,366 --> 00:03:17,160
+Let us now turn to a noninvasive medical
+imaging technique that uses nuclear spin.
+
+43
+00:03:18,470 --> 00:03:22,755
+Imaging by nuclear magnetic resonance,
+NMR, is based on the absorption and
+
+44
+00:03:22,755 --> 00:03:27,270
+re-emission of electromagnetic radiation
+via the nuclear magnetic moment.
+
+45
+00:03:28,530 --> 00:03:32,250
+The sample is immersed in
+magnetic field B_0 to establish
+
+46
+00:03:32,250 --> 00:03:34,910
+an external quantization axis.
+
+47
+00:03:34,910 --> 00:03:39,160
+The component of the nuclear
+magnetic moment along this axis
+
+48
+00:03:39,160 --> 00:03:43,090
+will be proportional to the quantum
+number m_s, which is equal to plus or
+
+49
+00:03:43,090 --> 00:03:46,060
+minus one-half,
+depending on the spin orientation.
+
+50
+00:03:47,090 --> 00:03:51,070
+The associated energy is
+proportional to both m_s and B_0.
+
+51
+00:03:52,100 --> 00:03:57,189
+The transition energy between the two
+orientations of the spin, parallel and
+
+52
+00:03:57,189 --> 00:04:01,985
+anti-parallel to the magnetic axis,
+is ∆E = hbar gamma B_0,
+
+53
+00:04:01,985 --> 00:04:06,421
+where the proportionality
+factor gamma is equal to
+
+54
+00:04:06,421 --> 00:04:10,760
+the gyromagnetic constant
+times e divided by 2M.
+
+55
+00:04:12,270 --> 00:04:17,054
+The spin vector rotates around
+the magnetic axis with a Larmor
+
+56
+00:04:17,054 --> 00:04:21,839
+frequency nu_0, which is equal
+to gamma B_0/(2 pi).
+
+57
+00:04:21,839 --> 00:04:27,555
+A photon can thus be absorbed by
+the nucleus if its frequency corresponds
+
+58
+00:04:27,555 --> 00:04:33,310
+to this resonance in the range of radio
+frequencies if B_0 is a few tesla.
+
+59
+00:04:33,310 --> 00:04:38,070
+This resonance can then be use to do
+what is called nuclear spectroscopy.
+
+60
+00:04:38,070 --> 00:04:42,640
+And you see a nuclear spectroscopy
+apparatus in the image on the right.
+
+61
+00:04:45,218 --> 00:04:51,302
+But let us now discuss how one
+uses this to locate molecules and
+
+62
+00:04:51,302 --> 00:04:54,830
+nuclei inside your body.
+
+63
+00:04:54,830 --> 00:04:59,560
+By varying the magnetic field
+around B_0 with gradients in all
+
+64
+00:04:59,560 --> 00:05:03,940
+three spatial directions,
+one can correlate the resonance frequency
+
+65
+00:05:03,940 --> 00:05:05,920
+with the position of
+a certain type of nucleus.
+
+66
+00:05:06,930 --> 00:05:09,580
+The intensity of the signal
+is then proportional
+
+67
+00:05:09,580 --> 00:05:12,550
+to the local density of the element.
+
+68
+00:05:12,550 --> 00:05:16,110
+This is the principle of nuclear
+magnetic resonance imaging, NMR.
+
+69
+00:05:17,495 --> 00:05:22,363
+One uses the resonance frequencies of,
+for example, hydrogen, Na-23,
+
+70
+00:05:22,363 --> 00:05:28,000
+or P-31 to obtain an image of
+the internal structure of the body.
+
+71
+00:05:28,000 --> 00:05:29,000
+Most often,
+
+72
+00:05:29,000 --> 00:05:33,820
+hydrogen is indeed used to obtain access
+to the density distribution of liquids and
+
+73
+00:05:33,820 --> 00:05:37,760
+soft tissues, which are difficult
+to render by classical tomography.
+
+74
+00:05:39,140 --> 00:05:43,198
+The patient is introduced
+into a solenoid or
+
+75
+00:05:43,198 --> 00:05:49,170
+between two Helmholtz coils,
+as in these two examples.
+
+76
+00:05:49,170 --> 00:05:53,080
+They provide the field B_0
+of typically a few tesla.
+
+77
+00:05:53,080 --> 00:05:56,490
+Additional coils adapted to
+the body region under examination
+
+78
+00:05:56,490 --> 00:05:58,230
+provide the magnetic field gradient.
+
+79
+00:05:59,790 --> 00:06:02,480
+A pulsed radio frequency
+signal is then applied, and
+
+80
+00:06:02,480 --> 00:06:06,990
+its absorption by the tissue is
+analyzed by Fourier analysis.
+
+81
+00:06:06,990 --> 00:06:10,030
+The height of the Fourier peak
+at the resonance frequency
+
+82
+00:06:10,030 --> 00:06:12,860
+measures the local density
+of the chosen nucleus.
+
+83
+00:06:14,610 --> 00:06:18,420
+After a characteristic relaxation
+time between milliseconds and
+
+84
+00:06:18,420 --> 00:06:21,480
+seconds, the RF signal is restored.
+
+85
+00:06:21,480 --> 00:06:24,700
+The time delay can reveal
+additional tissue properties.
+
+86
+00:06:26,450 --> 00:06:30,880
+One then obtains an image with a typical
+resolution of order millimeters, and
+
+87
+00:06:30,880 --> 00:06:35,280
+a very good contrast, as you can see
+in this NMR picture of the knee.
+
+88
+00:06:36,470 --> 00:06:39,114
+In addition,
+the image shows also the soft tissue,
+
+89
+00:06:39,114 --> 00:06:42,072
+difficult to visualize by
+classical x-ray tomography.
+
+90
+00:06:46,470 --> 00:06:49,822
+The mechanism of nuclear magnetic
+resonance even allows for
+
+91
+00:06:49,822 --> 00:06:51,730
+a functional imaging of organs.
+
+92
+00:06:51,730 --> 00:06:54,780
+This is due to the magnetic
+properties of hemoglobin,
+
+93
+00:06:54,780 --> 00:06:57,530
+which transport the oxygen in our blood.
+
+94
+00:06:57,530 --> 00:06:59,910
+Hemoglobin is found in
+two different forms.
+
+95
+00:06:59,910 --> 00:07:04,250
+The red blood cells,
+which are oxygenized by the lungs,
+
+96
+00:07:04,250 --> 00:07:08,800
+contain oxyhemoglobin,
+a molecule which is inactive in NMR.
+
+97
+00:07:09,830 --> 00:07:13,180
+The red blood cells, which have
+delivered the oxygen to the tissue,
+
+98
+00:07:13,180 --> 00:07:17,620
+contain deoxyhemoglobin,
+which is a paramagnetic molecule.
+
+99
+00:07:17,620 --> 00:07:22,830
+This means that under the influence
+of the external magnetic field,
+
+100
+00:07:22,830 --> 00:07:26,400
+it will acquire a magnetization,
+which is detectable by NMR.
+
+101
+00:07:27,520 --> 00:07:28,580
+Brain activity, for
+
+102
+00:07:28,580 --> 00:07:34,006
+example, causes characteristic dynamics
+of blood flow and composition.
+
+103
+00:07:34,006 --> 00:07:39,235
+In active brain regions, where
+the neurons are stimulated, one observes
+
+104
+00:07:39,235 --> 00:07:44,547
+simultaneously a higher oxygen consumption
+and a higher local blood flow.
+
+105
+00:07:44,547 --> 00:07:48,745
+In healthy tissue,
+the increase in blood flow is more
+
+106
+00:07:48,745 --> 00:07:53,540
+important than the local
+consumption of oxygen.
+
+107
+00:07:53,540 --> 00:07:57,260
+This corresponds to a relative
+decrease in deoxyhemoglobin,
+
+108
+00:07:57,260 --> 00:07:59,907
+which can be used to
+localize brain activity.
+
+109
+00:08:02,150 --> 00:08:05,961
+In the next video, we'll represent
+another important application,
+
+110
+00:08:05,961 --> 00:08:09,328
+the physical principle of energy
+release in nuclear fission,
+
+111
+00:08:09,328 --> 00:08:13,596
+which is currently furnishing about
+10% of the global energy consumption.
+
+112
+00:08:13,596 --> 00:08:19,719
+[MUSIC]

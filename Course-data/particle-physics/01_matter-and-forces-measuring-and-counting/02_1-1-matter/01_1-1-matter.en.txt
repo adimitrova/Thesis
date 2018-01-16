@@ -1,0 +1,129 @@
+[MUSIC] Hello, and welcome to our introductory
+course on subatomic physics brought to you by University of Geneva. During this first module, we will give an
+overview of the objects that are treated by particle physics, namely matter,
+forces and space-time. We will also discuss how one goes
+about to characterize the strength of a reaction between particles with
+the concept of the cross section. Which is a central issue of our subject. At the end of the module, we will visit the laboratory of the
+nuclear physics course at University of Geneva to see a small example of
+how all of this works in practice. In this first video, we will take a quick tour of the elements
+of matter at the subatomic level. After having watched this video, you
+should know quarks and leptons by name and a few of their fundamental properties. You should be able to assign these
+constituents to families and generations. And you should know the quantum numbers
+which are conserved in interactions among these particles. We are interested in this course in
+the subatomic structure of matter. Here is a schematic picture
+of the components of an atom. Of course it is not to scale otherwise,
+the nucleus would be completely invisible. The atom consists of a positively charged
+nucleus of small size of the order of ten to the minus fourteen meters in the
+surrounding electron cloud which is about ten thousand times larger that is to say,
+ten to the minus ten meters in radius and negatively charged. For all we know, the electron is
+an elementary particle, without internal structure and probably without size.
+It belongs to the family of leptons. Electrons and the nucleus are bound
+together by the electromagnetic force. The nucleus on the other hand,
+is not elementary. It contains protons and neutrons
+bound together by the nuclear force. We will talk about the physics of
+the atomic nucleus in the next module. Protons and
+neutrons are not elementary either. They contain quarks bound
+together by the strong force. As far as we can tell today, quarks are equally elementary in
+the same sense as electrons are. But be careful, all of this
+describes just 5% of the universe, the rest is dark matter and dark energy,
+and we will introduce you to these two forms of matter and
+energy in module number eight. One can assign quarks and leptons to
+families according to their properties, and to generations according to
+their mass as shown in this table. The lepton families are shown on the left. All charged leptons have similar
+properties as the electron, which is the most well-known
+member of this family. The electric charge is minus one
+elementary charge. The neutral leptons, the neutrinos,
+are produced in radioactive decays. They have zero electric charge and
+they're very small mass. The quarks families are shown
+on the right of this table. These are the constituents of proton and
+neutron and of all particles which we call hadrons. There are also two types. The up-type quarks have an electric
+charge of 2/3 of the elementary charge, the down-type quarks
+have a charge of -1/3e. Every family has three generations, almost
+identical copies of the first one, but a lot heavier than the first one. In the first generation,
+we find the familiar electron, the light neutrino nu_L,
+the quarks up and down u and d, these are the constituents of
+the ordinary matter around us today. The second generation, has the muon µ,
+the medium mass neutrino nu_M, the charm quark and
+the strange quark, c and s. And finally, in the third
+generation we find the tau lepton, the heavy neutrino nu_H,
+the top and bottom quarks, t and b. There is a quantum number
+which is called flavor which distinguishes between
+the generations inside each family. It is conserved by all interactions
+except the weak interactions. The range of masses in this table is very,
+very large. Neutrinos are the lightest matter particles. Their masses are found
+experimentally to be below two electron volts but they are probably rather in
+the range of milli electron volts meV. We will talk about them in Module 6,
+which covers weak interactions. The top quark has a mass
+as large as a Hafnium nucleus. The Hafnium nucleus has
+an atomic number 178 and 72 positive electric charges. But as far as we know the top quark
+is a point-like particle like all the others in this table. With these constituents we can
+implement an order scheme, a descriptive nomenclature,
+à la Liné. We call hadrons
+all particles which contain quarks. They are sensitive to strong and
+nuclear reactions, leptons are not. Baryons are bound states
+formed by three quarks. Mesons contain a quark and an anti-quark. And the two together form
+what we call hadrons. The nucleons p and n are the lightest baryons. They form the atomic
+nuclei we find around us. And particles like the pion are the
+lightest mesons formed by quarks and anti-quarks. There are no hadrons including a top
+quark because of it's short lifetime. This quark decays before it can ever
+form a bound state with any others. Leptons on the right of this
+table are elementary in the sense that they are not composed of
+other particles for all we know. Observations are compatible with them
+having no size, they are thus point-like and so are the quarks. But not the hadrons. We will often see the neutrinos, nu_e,
+nu_mu and nu_tau in tables of this sort. I don't adhere to this. These particles, nu_e, nu_mu and nu_tau
+are mixtures of the true particles with a specific mass which we denote by nu_L,
+nu_M and nu_H in this course. Ww thus respect their mass hierarchy and
+assign them to their respective generations according to that property
+like we do for all other particles. The enormous strength of
+the strong force binds together, quarks to form very stable bound states. To be sensitive to the strong force, particles need to have the necessary
+charge, which is called color charge. Quarks do have color charge,
+leptons do not. This leads to a whole zoology of
+hadrons as shown in this summary table. The Particle Data Group is responsible
+to collect all the data concerning their properties, an exhaustive list of states as well as a summary of the known
+properties is available on the site of the Particle Data Group quoted in
+red on the bottom of the slide. On the left you see a list of
+baryons containing three quarks. Like the proton which
+is a uud bound state. And the neutron which
+is a dud bound state. On the right is a list of meson formed
+by quarks, quark anti-quark pairs, like the positive pion
+which is a u-dbar bound state. Leptons are not sensitive to the strong
+force because they do not carry the necessary color charge. They 
+intreact only, via the electromagnetic and weak forces and do not form long lasting
+bound states among themselves. Here's a table summarizing some important
+properties of elementary particles. In the upper half of the table you
+find the constituents of matter. Leptons and quarks are of
+spin one half as you can see. In the lower half you find
+particles that transmit forces. These are bosons of integer spin. The charges are indicated in units of
+an elementary charge for each one of them, like the one of the electron in
+the case of the electric charge. Here we say that its charge
+is -1 which means that it is -1 times the elementary charge, e. The weak charge is called weak isospin and
+it has two components in contrast to the electromagnetic
+charge which has only one component. We denote them by T and T3, the total length of the weak isospin and
+its third component. This charge depends on the orientation of
+the spin of the particle with respect to its direction of motion, which means
+it depends on the helicity of the particle. The strong charge has three components. It's called color, and we use the
+abbreviation r for red, g for green, and b for blue to denote them. Color is a property of quarks and of gluons where the latter even carry
+a color and an anti-color simultaneously. For every particle, there's an
+anti-particle which has the same mass but all charges opposite,
+as indicated in this red table. Charges are additive quantum numbers. For a system of particles
+the total charge is the sum of the charges of its constituents. But there are other quantum
+numbers that are conserved. The first one quoted here is
+the total number of baryons, i.e. the number of baryons minus
+the number of anti baryons in a system. This number is conserved, this applies in particular to quarks
+which have a baryon number of 1/3, and anti-quarks which have
+a baryon number of minus 1/3. The total lepton number, the number
+of leptons minus the number of antileptons is also constant
+in a closed system. To a certain extent this is even
+true generation by generation but the neutrinos which show up here,
+nu_e, nu_mu and nu_tau are mixtures of the true particles,
+nu_L, nu_M and nu_H. So, there's some mixture between
+generations in weak interactions. But more important than that, the charges of all types are rigorously
+conserved as far we know. This evidently concerns the electric
+charge Q that you are familiar with but also the weak isospin T and T3, and the color charges R, G, and B. The flavor which distinguishes
+between generations is a special case. It is conserved by the strong and
+electromagnetic interactions but can be altered by the weak one. We will define what it exactly
+means to conserve a quantum number when we discuss Feynman diagrams,
+in Part 1.5, first of this module, and
+then later in Video 4.1a. In the next video Mercedes
+will introduce in more detail the forces which interact
+between matter particles. [MUSIC]

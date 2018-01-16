@@ -1,0 +1,435 @@
+1
+00:00:00,000 --> 00:00:10,918
+[MUSIC]
+
+2
+00:00:10,918 --> 00:00:15,508
+In this module we are treating
+the basics of particle acceleration and
+
+3
+00:00:15,508 --> 00:00:17,125
+detection methods.
+
+4
+00:00:17,790 --> 00:00:20,480
+In this second video,
+we treat the acceleration and
+
+5
+00:00:20,480 --> 00:00:23,740
+focusing mechanisms inside accelerators.
+
+6
+00:00:23,740 --> 00:00:28,360
+After watching this video, you will be
+able to answer the following questions.
+
+7
+00:00:28,360 --> 00:00:33,270
+What are the main components of
+an accelerator and how do they work?
+
+8
+00:00:33,270 --> 00:00:37,840
+And how does a complex of accelerators
+like that at CERN work together
+
+9
+00:00:37,840 --> 00:00:42,250
+to achieve the highest energies and
+highest intensities?
+
+10
+00:00:42,250 --> 00:00:46,800
+Inside an accelerator,
+particles move in an evacuated tube.
+
+11
+00:00:46,800 --> 00:00:51,120
+And this is to prevent them from
+interacting with air molecules and
+
+12
+00:00:51,120 --> 00:00:54,270
+lose energy, or be transformed.
+
+13
+00:00:54,270 --> 00:00:58,310
+Even if they don't, we still have to  
+supply radio frequency acceleration,
+
+14
+00:00:58,310 --> 00:01:03,610
+even in the storage ring if we want
+to keep the beam energy constant.
+
+15
+00:01:03,610 --> 00:01:06,450
+This is because an accelerated
+charged particle
+
+16
+00:01:06,450 --> 00:01:12,370
+loses some fraction of its energy in
+the form of radiation by emitting photons.
+
+17
+00:01:12,730 --> 00:01:15,270
+This process is called bremsstrahlung,
+
+18
+00:01:15,270 --> 00:01:19,110
+the same process that produces
+photons in an X-ray tube.
+
+19
+00:01:19,110 --> 00:01:20,740
+In such a tube,
+
+20
+00:01:20,740 --> 00:01:25,120
+the electron cathode ray beam is stopped
+by an inclined water-cooled target.
+
+21
+00:01:25,120 --> 00:01:29,566
+The energy of the electron is
+typically ten kiloelectron volts.
+
+22
+00:01:29,566 --> 00:01:33,140
+They thus yield X-ray photons of
+a comparable energy.
+
+23
+00:01:33,640 --> 00:01:41,013
+But also lateral acceleration creates 
+bremsstrahlung, namely synchrotron radiation.
+
+24
+00:01:41,013 --> 00:01:43,890
+For relativistic particles,
+
+25
+00:01:43,890 --> 00:01:47,820
+the lost power per turn P is
+proportional to the fourth power
+
+26
+00:01:47,820 --> 00:01:50,021
+of the relativistic factor gamma,
+
+27
+00:01:50,021 --> 00:01:54,637
+and the inversely proportional
+to the radius of curvature rho.
+
+28
+00:01:54,637 --> 00:01:58,136
+It is large for light particles
+circulating in small orbits.
+
+29
+00:01:58,136 --> 00:02:02,817
+This loss must be replaced
+constantly to get a stable beam
+
+30
+00:02:02,817 --> 00:02:05,472
+in an orbit of constant radius.
+
+31
+00:02:05,472 --> 00:02:10,120
+But synchrotron radiation is more than a nuisance.
+
+32
+00:02:10,120 --> 00:02:12,955
+One uses it to produce
+monochromatic photons.
+
+33
+00:02:12,955 --> 00:02:19,153
+The Swiss Light Source at the Paul-Scherrer-Institute
+in Villigen is a source of high brightness
+
+34
+00:02:19,153 --> 00:02:26,370
+brightness light based on an electron synchrotron 
+of 2.4 giga electron volts.
+
+35
+00:02:26,370 --> 00:02:31,510
+Is beam lines are used researching
+material science, biology, and chemistry.
+
+36
+00:02:33,580 --> 00:02:39,660
+The accelerating electric field is generated
+by a vacuum tube amplifier, the klystron.
+
+37
+00:02:39,660 --> 00:02:45,645
+An intense electron beam is accelerated,
+then bunched in a resonant cavity.
+
+38
+00:02:45,645 --> 00:02:49,235
+In a second resonant cavity
+the electron kinetic energy is
+
+39
+00:02:49,235 --> 00:02:52,743
+extracted in the form of
+a radio frequency wave.
+
+40
+00:02:52,743 --> 00:02:59,040
+Modern klystrons have normally several
+such amplification stages.
+
+41
+00:02:59,040 --> 00:03:03,710
+The beam is held on a circular
+path by dipole magnets.
+
+42
+00:03:03,710 --> 00:03:09,180
+The transverse focusing of the beam is
+done by quadruple magnetic fields.
+
+43
+00:03:09,180 --> 00:03:13,525
+A low quadruple component is normally
+present even in a dipole magnet.
+
+44
+00:03:13,525 --> 00:03:18,917
+The focalizing forces come from a slight
+horizontal component of the magnetic
+
+45
+00:03:18,917 --> 00:03:23,920
+field, which changes sign as one passe from
+below to above the orbital plane.
+
+46
+00:03:23,920 --> 00:03:25,227
+By alternating
+
+47
+00:03:25,227 --> 00:03:30,900
+this quadruple configuration with
+one which is rotated 90 degrees,
+
+48
+00:03:30,900 --> 00:03:34,060
+the focalization is obtained
+in both horizontal and
+
+49
+00:03:34,060 --> 00:03:36,430
+vertical directions transverse to the beam.
+
+50
+00:03:37,660 --> 00:03:43,830
+Magnets with dipolar and quadruple fields
+thus the complany in the accelerator ring.
+
+51
+00:03:43,830 --> 00:03:49,734
+Two coils have create a dipole field,
+four create a quadruple field as shown.
+
+52
+00:03:49,734 --> 00:03:54,316
+Today these coils are normally
+superconducting to minimize
+
+53
+00:03:54,316 --> 00:03:55,670
+resistive loss.
+
+54
+00:03:57,600 --> 00:04:02,020
+But focalization is also
+needed in the longitudinal direction.
+
+55
+00:04:02,020 --> 00:04:06,680
+The reason is that the particles
+must arrive synchronously
+
+56
+00:04:06,680 --> 00:04:08,840
+to acceleration points.
+
+57
+00:04:08,840 --> 00:04:13,770
+Thus, they are injected in short packets.
+If they arrive at radio frequency
+
+58
+00:04:13,770 --> 00:04:20,090
+resonators on the increasing slope of the
+electric field, their phase remains stable.
+
+59
+00:04:20,090 --> 00:04:25,380
+A particle arriving with a slight
+delay compared to the ideal phase
+
+60
+00:04:25,380 --> 00:04:28,750
+will see a field that is
+stronger than the average field.
+
+61
+00:04:28,750 --> 00:04:34,900
+A particle with a slight advance will on
+the contrary see less accelerating field.
+
+62
+00:04:34,900 --> 00:04:35,621
+In this way,
+
+63
+00:04:35,621 --> 00:04:39,499
+the particles will automatically
+oscillate around the ideal phase.
+
+64
+00:04:43,328 --> 00:04:48,795
+We can lower energy losses from synchrotron
+radiation by increasing the radius or curvature rho,
+
+65
+00:04:48,795 --> 00:04:52,620
+weakening at the same time the dipole field.
+
+66
+00:04:52,620 --> 00:04:56,940
+Asymptotically, we can
+let rho tend to infinity,
+
+67
+00:04:56,940 --> 00:04:59,300
+resulting in a linear accelerator.
+
+68
+00:04:59,300 --> 00:05:03,010
+Almost every accelerator complex
+begins with such a device.
+
+69
+00:05:04,050 --> 00:05:08,660
+Much of the vacuum tube which contains
+the beam itself is a resonant
+
+70
+00:05:08,660 --> 00:05:12,409
+structure of radio frequency with
+a traveling electromagnetic wave.
+
+71
+00:05:13,480 --> 00:05:18,240
+Between the resonant cavities,
+there are spacers made of conductive tubes.
+
+72
+00:05:18,240 --> 00:05:22,860
+Their length must follow the velocity
+of the accelerated particles, i.e.
+
+73
+00:05:22,860 --> 00:05:28,880
+they should be equal to the velocity times
+half the period of the radio frequency.
+
+74
+00:05:28,880 --> 00:05:34,235
+It is also necessary that when
+passing in a unshielded portion of the cavity,
+
+75
+00:05:34,235 --> 00:05:38,206
+the electric field has
+the desired sign and value.
+
+76
+00:05:38,206 --> 00:05:43,830
+Once the velocity of the particle is
+sufficiently close to the speed of light,
+
+77
+00:05:43,830 --> 00:05:45,730
+the spacing becomes constant.
+
+78
+00:05:47,390 --> 00:05:52,250
+Today's powerful accelerators
+are mainly working in synchrotron mode.
+
+79
+00:05:53,580 --> 00:05:54,590
+The most powerful,
+
+80
+00:05:54,590 --> 00:05:59,250
+the Large Hadron Collider,
+has been in operation since 2008.
+
+81
+00:05:59,250 --> 00:06:04,840
+It is part of a complex of accelerators
+to obtain maximum energy and luminosity.
+
+82
+00:06:06,160 --> 00:06:13,100
+In 2011 and 12, the energy of the
+proton beam was 3.5 TeV.
+
+83
+00:06:13,100 --> 00:06:17,040
+In 2012, it was raised to 4 TeV.
+
+84
+00:06:17,040 --> 00:06:21,890
+And after a technical interruption,
+that started in February 2013,
+
+85
+00:06:21,890 --> 00:06:29,360
+the operation resumed in 2015 with
+7 TeV per beam.
+
+86
+00:06:29,360 --> 00:06:34,550
+This corresponds to the impressive
+energy of 1.12 µJ.
+
+87
+00:06:34,550 --> 00:06:38,100
+The path of particles through
+the complex is shown in
+
+88
+00:06:38,100 --> 00:06:41,200
+the short CERN video 3.2a.
+
+89
+00:06:41,200 --> 00:06:46,893
+In the next video we
+will visit CERN
+
+90
+00:06:46,893 --> 00:06:51,916
+to discuss the key components of the LHC
+
+91
+00:06:51,916 --> 00:06:57,113
+with Prof. Tobias Golling of University of Geneva.
+
+92
+00:06:57,916 --> 00:07:00,113
+[MUSIC] 

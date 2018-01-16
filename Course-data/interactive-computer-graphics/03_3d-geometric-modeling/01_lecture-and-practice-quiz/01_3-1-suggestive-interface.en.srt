@@ -1,0 +1,623 @@
+1
+00:00:00,025 --> 00:00:05,750
+[SOUND] Hi, this is Interactive
+
+2
+00:00:05,750 --> 00:00:12,141
+Computer Graphics, week three.
+
+3
+00:00:12,141 --> 00:00:17,016
+The topic we discuss here is 3D geometric
+modeling.
+
+4
+00:00:17,016 --> 00:00:24,080
+So the challenge behind this is user
+interface is still mostly two-dimensional.
+
+5
+00:00:24,080 --> 00:00:27,620
+So, the question is how to compliment in
+missing information?
+
+6
+00:00:27,620 --> 00:00:29,040
+So, mainly depths here.
+
+7
+00:00:29,040 --> 00:00:32,210
+So use [UNKNOWN] 2D and how to get 3D from
+2D.
+
+8
+00:00:32,210 --> 00:00:34,810
+There's lots of problem with our progress
+here.
+
+9
+00:00:35,840 --> 00:00:38,110
+Our solution, in general, is a user
+
+10
+00:00:38,110 --> 00:00:43,800
+interface, an automatic inference
+leveraging domain specific knowledge.
+
+11
+00:00:43,800 --> 00:00:48,650
+So if you do not know what you do, it's
+almost impossible to infer dips, but if
+
+12
+00:00:48,650 --> 00:00:51,130
+you know what you want to do, if you
+
+13
+00:00:51,130 --> 00:00:54,150
+limit the domain and you can get
+reasonable results.
+
+14
+00:00:54,150 --> 00:00:58,630
+That's the basic idea behind the works I
+will introduce here.
+
+15
+00:00:59,740 --> 00:01:02,630
+And here are the topics that we will
+discuss in this week.
+
+16
+00:01:02,630 --> 00:01:07,670
+So first one is suggestive user interface
+for modeling of architectural models.
+
+17
+00:01:07,670 --> 00:01:12,780
+And then there's sketch-based modeling of
+larger and stuffed things.
+
+18
+00:01:12,780 --> 00:01:16,070
+And then we discuss shape control by
+curves,
+
+19
+00:01:16,070 --> 00:01:19,839
+and then flower modeling, and then
+volumetric texture synthesis.
+
+20
+00:01:21,000 --> 00:01:23,260
+The first one is suggestive interface.
+
+21
+00:01:24,850 --> 00:01:29,600
+So, the work was published as Chateau, a
+suggestive interface for 3D modeling.
+
+22
+00:01:31,030 --> 00:01:32,972
+The motivation is here.
+
+23
+00:01:32,972 --> 00:01:36,800
+So current graphical user interface is
+dominated through
+
+24
+00:01:36,800 --> 00:01:41,080
+these many buttons, menus, and even more,
+nested menus.
+
+25
+00:01:41,080 --> 00:01:49,965
+It's very hard to find design command
+[UNKNOWN].
+
+26
+00:01:49,965 --> 00:01:54,968
+[UNKNOWN]
+About
+
+27
+00:01:54,968 --> 00:02:00,598
+the operation on what
+
+28
+00:02:00,598 --> 00:02:06,540
+you want to do on the main screen, the
+main field.
+
+29
+00:02:06,540 --> 00:02:12,550
+So if we were working on 3D modeling and
+if you want to do related to these three
+
+30
+00:02:12,550 --> 00:02:15,560
+elements in the scene you can just
+highlight these
+
+31
+00:02:15,560 --> 00:02:22,000
+three, which hints the computer to infer
+the request.
+
+32
+00:02:22,000 --> 00:02:24,310
+And then computer looks at the hints,
+
+33
+00:02:24,310 --> 00:02:28,440
+and then provides proposal, for the data
+operations.
+
+34
+00:02:28,440 --> 00:02:33,960
+In this case, the system proposes a box,
+and those are our two possibilities.
+
+35
+00:02:33,960 --> 00:02:37,600
+So, in other words, review the first given
+arguments
+
+36
+00:02:37,600 --> 00:02:41,760
+for the command, and then system
+automatically infer the command.
+
+37
+00:02:41,760 --> 00:02:43,030
+So let me show you a demo.
+
+38
+00:02:45,450 --> 00:02:48,740
+So here is a three-dimensional modeling
+system with a 3D
+
+39
+00:02:48,740 --> 00:02:53,730
+space inside, and then you can sketch
+lines in this way.
+
+40
+00:02:55,990 --> 00:03:00,050
+But here, instead of using many commands
+on the menu.
+
+41
+00:03:00,050 --> 00:03:04,490
+We simply allow the user to highlight
+lines.
+
+42
+00:03:04,490 --> 00:03:11,000
+And then, for these highlights or hints,
+system pro, pro presents some suggestions.
+
+43
+00:03:11,000 --> 00:03:13,720
+Well, why is drawing a plane and another
+is
+
+44
+00:03:13,720 --> 00:03:17,730
+drawing triangle, the other is drawing a
+left angle.
+
+45
+00:03:17,730 --> 00:03:20,970
+And you can also ignore them and then
+create more.
+
+46
+00:03:20,970 --> 00:03:24,580
+And then given the in-sweep of [UNKNOWN]
+lines, system
+
+47
+00:03:24,580 --> 00:03:27,960
+predicts, or suggests to make a rectangle,
+a box.
+
+48
+00:03:29,020 --> 00:03:31,990
+And then, again, if you do a line here,
+
+49
+00:03:31,990 --> 00:03:37,360
+then given this hint, system suggests to
+cut a box.
+
+50
+00:03:37,360 --> 00:03:41,540
+You can also go back and then add more
+lines.
+
+51
+00:03:41,540 --> 00:03:45,670
+And then given this hint, system suggests
+to cut a corner.
+
+52
+00:03:45,670 --> 00:03:48,440
+So in this way, user provides the hints
+
+53
+00:03:48,440 --> 00:03:52,590
+to the system and then the system presents
+suggestions.
+
+54
+00:03:52,590 --> 00:03:56,650
+So, this way, user does not really quiet
+the space [UNKNOWN] one, in the
+
+55
+00:03:56,650 --> 00:04:01,069
+huge command [UNKNOWN], And then you can
+forecast the visual content of the task.
+
+56
+00:04:02,970 --> 00:04:06,440
+And if you highlight this, then the system
+predicts, or suggests
+
+57
+00:04:06,440 --> 00:04:11,820
+drawing plane, and the user draws for
+example rectangle, triangle here.
+
+58
+00:04:11,820 --> 00:04:15,800
+And if you highlight these three, system
+suggests to make a face inside.
+
+59
+00:04:18,970 --> 00:04:23,520
+And then if you highlight one more, the
+system suggests extrusion.
+
+60
+00:04:23,520 --> 00:04:26,290
+And one interesting operation is like this
+one.
+
+61
+00:04:26,290 --> 00:04:31,630
+If you highlight these two and also one
+line here, about a third.
+
+62
+00:04:31,630 --> 00:04:35,370
+And this is, it was exactly dividing to
+the three.
+
+63
+00:04:35,370 --> 00:04:41,380
+We use again also the line somewhere here,
+and this is [UNKNOWN] divided into four.
+
+64
+00:04:41,380 --> 00:04:43,702
+So in this way a user can generate
+
+65
+00:04:43,702 --> 00:04:48,007
+this kind of diagram just by, computing
+operations.
+
+66
+00:04:48,007 --> 00:04:57,644
+[BLANK_AUDIO]
+
+67
+00:04:57,644 --> 00:05:00,828
+And after some time operations, you can
+get these kinds of results.
+
+68
+00:05:00,828 --> 00:05:04,602
+And this kind of operation is very useful
+for
+
+69
+00:05:04,602 --> 00:05:09,910
+repetitions, and also some symmetric
+structures and so on.
+
+70
+00:05:09,910 --> 00:05:15,160
+Now, let me describe, briefly describe,
+the implementation behind the, system.
+
+71
+00:05:15,160 --> 00:05:17,060
+So, this is the input scene.
+
+72
+00:05:17,060 --> 00:05:20,660
+So highlighted elements and then no
+highlighted elements.
+
+73
+00:05:20,660 --> 00:05:23,990
+So, taking this example input scene then
+
+74
+00:05:23,990 --> 00:05:28,020
+system is equipped with multiple
+suggestion engines,
+
+75
+00:05:28,020 --> 00:05:32,390
+they kind of parallel engines working
+independently
+
+76
+00:05:32,390 --> 00:05:35,600
+and then each engine consists of two
+parts.
+
+77
+00:05:35,600 --> 00:05:39,310
+One is examination part and one other is
+generator.
+
+78
+00:05:39,310 --> 00:05:42,860
+And the examiner examines the scene, and
+then
+
+79
+00:05:42,860 --> 00:05:46,860
+tests whether the scene matches with
+expected rule.
+
+80
+00:05:46,860 --> 00:05:49,950
+And then if it passes examination, and
+
+81
+00:05:49,950 --> 00:05:53,270
+then the generator generates the resulting
+scene.
+
+82
+00:05:53,270 --> 00:05:59,790
+So this is a very hardcoded program,
+program module provided the programmer.
+
+83
+00:05:59,790 --> 00:06:01,770
+But they all works in parallel.
+
+84
+00:06:01,770 --> 00:06:06,950
+And then specific engine and the act of
+specific input configuration.
+
+85
+00:06:09,410 --> 00:06:11,300
+And here's our list of suggestion engines.
+
+86
+00:06:11,300 --> 00:06:13,960
+We input method in this application.
+
+87
+00:06:13,960 --> 00:06:16,910
+One is [UNKNOWN] given a hint.
+
+88
+00:06:16,910 --> 00:06:20,730
+System generator [UNKNOWN] passing through
+the hint.
+
+89
+00:06:20,730 --> 00:06:26,922
+And also if you highlight closed roof, it
+suggest polygon, perpendicular two lines
+
+90
+00:06:26,922 --> 00:06:30,534
+suggest rectangle, [UNKNOWN] suggest a
+box,
+
+91
+00:06:30,534 --> 00:06:34,150
+and system suggest extrusion and pyramid
+shape.
+
+92
+00:06:35,760 --> 00:06:41,556
+Now these are resizing and bridges,
+connecting two,
+
+93
+00:06:41,556 --> 00:06:47,352
+two polygons and the extrusion and this is
+a cutting out
+
+94
+00:06:47,352 --> 00:06:53,400
+and also corner cutting and trimming and
+intersection,
+
+95
+00:06:53,400 --> 00:06:59,080
+duplication, repetition, mirror image and
+so on.
+
+96
+00:06:59,080 --> 00:07:03,070
+And the philosophy or concept is defined
+as this.
+
+97
+00:07:03,070 --> 00:07:04,990
+Standard user interface is like this.
+
+98
+00:07:04,990 --> 00:07:08,230
+So the user provides very explicit command
+
+99
+00:07:08,230 --> 00:07:11,350
+or very explicit instruction to the
+computer.
+
+100
+00:07:11,350 --> 00:07:16,380
+And then the computer just blindly, simply
+follows the instruction.
+
+101
+00:07:16,380 --> 00:07:21,560
+However, what we provide is more friendly,
+human to human like interactions.
+
+102
+00:07:21,560 --> 00:07:26,994
+So the user is working on the visual task
+directly, and then computer
+
+103
+00:07:26,994 --> 00:07:31,961
+implicitly observes the action and then
+provides help and
+
+104
+00:07:31,961 --> 00:07:37,770
+solution, and I think this kind of walking
+style can be useful.
+
+105
+00:07:37,770 --> 00:07:41,330
+One possible application is like this, so
+in your
+
+106
+00:07:41,330 --> 00:07:46,772
+PowerPoint or in any presentation, you
+have alignment show.
+
+107
+00:07:46,772 --> 00:07:50,880
+Alignment to is hidden somewhere in the
+menu, and it's not easy to find.
+
+108
+00:07:50,880 --> 00:07:54,850
+For example, in this PowerPoint, you can
+get there from some way around.
+
+109
+00:07:54,850 --> 00:08:01,760
+Home, and somewhere, I don't know [LAUGH]
+height, alignment, and somewhere.
+
+110
+00:08:01,760 --> 00:08:03,240
+But it's not easy to find.
+
+111
+00:08:04,280 --> 00:08:09,500
+However, if you highlight these four
+almost aligned
+
+112
+00:08:09,500 --> 00:08:13,190
+element, I think it's pretty reasonable,
+and also useful
+
+113
+00:08:13,190 --> 00:08:16,520
+for the system suggest particular
+alignment, in align
+
+114
+00:08:16,520 --> 00:08:19,920
+left or align center, and suggest to the
+user.
+
+115
+00:08:19,920 --> 00:08:23,970
+And if the user likes it, then it just
+create it, and it gets the result.
+
+116
+00:08:23,970 --> 00:08:27,330
+And this can be a very powerful help for
+the user.
+
+117
+00:08:29,180 --> 00:08:33,120
+So that's it and the original paper was
+published in 2001.
+
+118
+00:08:33,120 --> 00:08:37,670
+And this work, our work is strongly
+inspired
+
+119
+00:08:37,670 --> 00:08:41,270
+by a previous system called the SKETCH
+system.
+
+120
+00:08:41,270 --> 00:08:45,090
+So this SKETCH system takes two
+dimensional gestures and the
+
+121
+00:08:45,090 --> 00:08:49,330
+system will automatically generate this
+kind of three dimensional scene.
+
+122
+00:08:49,330 --> 00:08:50,940
+So what they do is very interesting.
+
+123
+00:08:50,940 --> 00:08:55,420
+So you input this 2D and you need to infer
+3D position.
+
+124
+00:08:55,420 --> 00:08:58,700
+To do it the system uses a [UNKNOWN] of
+every
+
+125
+00:08:58,700 --> 00:09:03,160
+object that has to be put on top of every
+object.
+
+126
+00:09:03,160 --> 00:09:08,840
+In this way, the computer computes 3D
+depths and measures.
+
+127
+00:09:10,390 --> 00:09:15,850
+Showing multiple candidates for values to
+choose is also presented before,
+
+128
+00:09:15,850 --> 00:09:20,760
+the presented work is called Design
+Galleries and published in 1997.
+
+129
+00:09:20,760 --> 00:09:24,640
+I also recommend you to take a look at
+this work.
+
+130
+00:09:24,640 --> 00:09:24,880
+Thank you.

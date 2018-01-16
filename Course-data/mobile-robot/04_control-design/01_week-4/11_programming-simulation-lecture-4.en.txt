@@ -1,0 +1,246 @@
+Welcome back.
+This is week four. So we're halfway through the programming
+and simulation lectures as well as the
+assignments. So congratulations on making it this far. Last week I talked about goal to goal
+controllers which allowed our robots to drive from their current location to some location in the
+environment. And this week I'm going to talk about. How to create an obstacle avoidance
+controller. And this obstacle avoidance controller,
+the point of it is that we want to be able to drive around the environment without colliding with any of the
+obstacles. So if you're driving a robot in your
+living room you don't want it to drive into your sofa and
+get destroyed. So this week we're going to take care of
+that. And there are actually many ways of doing
+obstacle avoidance. And I've picked out one particular way of
+doing obstacle avoidance. And this is how we do it. First, we're going to interpret the IR distance as a point in the coordinate
+frame of the sensor and transform this point into the
+coordinate frame of the robot. Then we're going to take this point that's in the robots coordinate frame, and
+transform it once again into the world coordinate frame, so
+that we know where each obstacle is in the
+world. What we will do then is compute a vector
+from these points to the robot, and we will use that as an, and
+sum them together as an obstacle avoidance vector. And then what we will do is the same thing
+as last week is we're going to use this vector And use a PID controller
+to steer the robot towards the orientation of
+the vector. And effectively what will happen is that
+the robot will drive in the direction that points away from any
+obstacles that are nearby. And thus will avoid collisions.
+So I've mentioned coordinate frame at least four or five times on this slide.
+What do I mean by that? We use coordinate frames to give meaning
+to points in some sort of space. So when I tell you that the robot is
+located at xy theta, you need to know which
+coordinate frame I'm talking about. So, in most cases I'm talking about the
+world frame. And this world frame is centered at the
+origin, which I'm going to denote as just zero,
+zero. So I pick this, where this is in the
+simulator. And with respect to this world frame, the
+location of the robot is given by X and Y. And of course, also with respect to this
+world frame, we have an orientation of theta, of
+it. So, the, the robot, right here has an
+orientation given by theta, and it's important that this theta is defined with,
+with respect to the X axis of this world frame. Now, the next coordinate frame that we
+have is the robot's coordinate frame, and this coordinate
+frame is located right at the robot. So wherever the robot is, at the center of
+this robot, there's a cornered frame and it's, this, this we
+call the robot frame. So, with respect to the robot, this
+direction right here going out in front of the robot, which aligns with the
+robot's orientation is, would be theta, what it's maybe called theta prime is
+equal to zero, in that robot's frame. But, theta prime in the world frame, so
+maybe I'll call this theta prime w f, would be equal to the actual
+theta of the robot. Now, the reason that we care about the robot's
+frame of reference, is because we only know the location of the sensors and
+the orientation of the sensors; with respect to the robot, robot frame.
+So the robot knows for example, that it has one particular sensor, mounted right
+here which is, sensor number one. And this sensor, it knows is, is located
+at, at this point with respect to its own robot's coordinate
+frame, and its orientation along in this direction.
+And this orientation, with respect to the robot, is 90 degrees.
+But in the world frame, this orientation would be also a function
+of the actual orientation of the robot. So, let's call this maybe theta S prime. So we said that was 90 degrees, which is
+the same thing as pi over 2.
+And what we want to do is, to figure out where the sensor
+is, so theta prime S, in the world frame this would be not,
+nothing more than, pi divided by 2 plus the orientation of the
+robot. So this would give you the angle of this
+sensor in the world frame. Now, the way that I've denoted this in, in
+the manual is, using. Sorry, I'm going to color this out.
+Is using, X sub S four. So this is the x position of sensor four
+in the robot's frame. The y position of sensor four in the, in
+the robot's frame and the orientation of sensor four in the, in the robot's frame,
+so in this case, theta s four is actually, so this is equivalent to minus 45 degrees. because that's the orientation of the
+sensor with respect to the robot. Now, we can go even one step further than
+this. What we can define is, a coordinate frame,
+with respect to the sensor itself. So each sensor has its own coordinate
+frame. So we're getting fairly deep in here, but, the point of that is
+that when we defy it for example here this sensor i's frame and in this case it's sensor you know, it's actually
+sensor four. And again the origin of this coordinate frame is located where the sensor is
+located. And the x axis of that coordinate frame aligns with the orientation of that
+sensor. And this is important because what we're going to do, is we're going to
+figure out that the distance that we're measuring is actually nothing
+more than a point in this coordinate system. So, here, what I've done is, the robot measures a distance of, so this distance
+right here is D 4 and all I've done is I said well in
+this, particular coordinate frame, this point
+right here is equal to this vector right here. So D 4 0 so because we're going a distance
+of D 4, the X direction the distance is 0 and the Y direction in that particular
+coordinate frame. Now, what we really care about in this,
+in, in, in the controller is, well if I have this
+point in this sensor's coordinate frame, what does
+this point correspond to in the world frame. Because, as you can imagine, if I for
+example have a, a point up here that is on an obstacle, I can say
+that the obstacle is at this location in the world, and I know
+where the robot is and from that we can make an informed decision
+about how to move the robot. And that's exactly what we'll do. So, in order for you to be able to
+calculate the transformation between the different coordinate frames, you're
+going to need to know how to rotate and translate in 2D. And what I mean by that is that if we have
+a coordinate frame, so say, this is my coordinate frame right
+here, and I have this point. Right here, so I have a point right here,
+lets call that 1,0. Now this I can also, I can pretend that
+this point is a vector going from the origin to this point
+and suppose what I wanted to do, is rotate this vector
+and then translate it. And let's say that I want to rotate it and
+I'm going to use this notation: r, and I'm going to
+say, translated by one unit in the x direction, two units in the y direction and pi over four is the
+translation. So what does this R actually mean? Well, the R is given by this
+transformation matrix. And what this transformation matrix is,
+does, is exactly what I just described. It's going to take a vector and, when you
+pre-multiply this vector by R you're going to get the,
+the, the vector transformed in space by x and y, translated by x and y and then
+rotated by this theta prime right here. So we're actually translating by x prime y
+prime according to my notation here. So going back to my example. What, what really, what's really going on
+is that first, we're going to rotate the
+vector by, Pi over 4, which means that it's now located at, squared of 2
+over 2, squared 2 over 2. And then we're going add a translation in the x direction and then a translation in
+the y direction of one unit and two units. Which means that, the vector that I get, corresponds to 1 plus squared of 2 over 2
+and 2 plus squared of 2 over 2. So what I've effectively done here is I've
+taken this point, 1,0 and I have translate, rotated and translated
+it to this point up here, which is 1, 1 plus square root of 2 over 2.
+2 plus square root of 2 over 2. And that's how the rotation and
+translation works, and so, so whether it's a point or vector doesn't
+really matter. The point really is that I've gone through
+this, this transformation, I've gotten a, a
+translation and a rotation. And to be a little bit more specific, what
+I've really done is so, on this side I would have so,
+so here this, this should have been R,1 comma 2
+comma pi over 4. And, what I'm multiplying, the vector that
+I'm multiplying with, what you'll notice is that this is first of all a 3 by
+3 matrix, so we want to make sure that this
+is going to be a 3 by 1 matrix for this to be a valid
+multiplication. And what we're going to do is we're going to put the point that we're
+translating, so let's call this xy, so this is x, which would've been, which was equal
+to 1, y equal to 0. And then we're always going to place to
+make, going to place a 1 right here. So, this stays a 1 independent of what x
+and y are. So, why am I telling you about this? Well, you need this tool, you need this
+transformation matrix in order to do our transformation
+from the point in the centers, reference framed all
+the way back to the world, uh,to the world
+coordinate frame. And this is the entire calculation that
+you're going to be doing. As you can see here what I've done is I
+have, the point d sub i 0. So this is the distance that was measured
+by sensor i. Then, I'm doing the transformation from
+the sensor frame to the robot frame and my input into the
+rotation and translation matrix is the position of the,
+and position and orientation of the sensor on the robot, in
+the robot's frame. So now this entire thing gives us this point in the robot's reference frame, instead of the sensor's reference
+frame. So, we have to do another rotation
+rotation and translation. And we do that by using the robot's
+location location and orientation in the in the, in
+the world frame. When we do that, this entire thing, right
+here will, point, give us the point, this original
+point right here, in the world frame. And this is exactly what this is. So these are the world frame coordinates
+of this, of this point detected by this particular
+infrared sensor i, now, let's get to the code.
+Now that we're armed with this tool. First of all, we're going to create, or we've already created a new file for this
+controller. It's going to be it's own file, so it's it's own controller, it's going to be
+called AvoidObstacles.m. And like this comment says, AvoidObstacles
+is really for steering the robot away from any
+nearby obstacles. And really, the way to think about it, is we're going to steer it towards
+free space. And, first of all, all these
+transformations are going to happen inside of this function
+called apply_sensor_geometry. We're going to do all three parts in there
+before we even get to the PID part of the, of the
+controller. And the first part is to apply the
+transformation, from the sensor, sensor's, coordinate
+frame to the robot frame. And really, what I'm doing here is I'm em, already giving you the location of the
+sensor, of each sensor eye in the robot's
+coordinate frame. And that what I, what I what i want you to do is first properly implement the get
+transformation matrix. According to the equation that I gave on,
+on previous slide, previous slides. And once you've done that properly, of
+course, you're going to have to input these here. And then you have to figure out the proper
+multiplication and again, you should look back at what
+I've done before. But remember, we're only doing one step,
+so really what you should be doing is, R, xs, ys, theta S multiplied by di, 0, and 1.
+So this is what I expect you to implement, right
+here. Then, we're going to do the next part,
+which is transforming from the, the point from the robot's coordinate
+frame over to the world coordinate frame. So, this follows a si, the, a similar pattern as what we did in the previous
+slide. Again, what you want to make sure is that
+this becomes the input for this. You've already implemented get
+transformation matrix so it's spits out the appropriate R, and then you're going to
+again have to do the calculation. So you pick the previous vector, so I'm
+just going to represent that by scribbles and multiply that by r,
+x, y, theta. And that should give me all of the IR
+distances, all, all the points that correspond to the IR
+sensors in the world frame. And now we know where, where obstacles are
+in the world or free space in the world, depending on whether you're
+picking up an obstacle or you're not picking up an
+obstacle. Now, so like I said, we've computed the world frame coordinates of all of these
+points. So each one of these points right here in green, we know where they're located in
+the world, right. So, what we can do, is we can compute vectors from the robots to each one of
+these points. And then what we can do, is since they're
+all vectors we can just sum them up. And we can sum them up and we get this
+large vector that's point, that is going to end up
+pointing away from any obstacles. And the reason for that is that these
+sensors so for example. This sensor right here, that is detecting
+no obstacles or the distance is really great, is going to contribute much
+more than this sensor which is picking up an obstacle close by. So when you sum up all these sensors, the
+main contribution is going to be along a direction which is,
+away from the obstacle. And then once we've done that, we can use
+the orientation of this vector and use PID control much like we did in the doog,
+google controller to steer the robot in to the direction of the free space.
+So here is the code, in the main execute function of the avoid
+obstacles controller. One thing I would like for you to pay attention to is that I have created this
+sensor gains, and I ask you in the manual to think about how do you want to structure these
+sensor gains. Do you want all of the sensors to count
+equally, do we contribute with equally, do you may
+be care about a particular sensor more? So for example do you care about the one that's in the front and that's the third
+sensor. So maybe this should be 3, so that you pay
+more attention more to the obstacles that are
+in front of you. Do you or do you want to pay more
+attention to obstacles that are on the side in that case you would maybe increase these two,
+so sensor one and five, that go to the left and to the, to the right of the robot. So, play around with that and you should
+get some interesting results. And again, here I'm going to, here I'm
+asking you to properly calculate each of the UIs, so each one of
+the vectors. And then, we're just going to sum them
+together and then you're going to have to figure out the angle of this
+vector, so you get theta ao. And then, just like last weekend, the goal
+to goal controllers, so you're already
+familiar with that, you need to compute the error between, this angle
+that you want to steer to, and the actual angle of the
+robot. Now, to test this we're just going to
+implement this controller and run it on the robot so let's see what
+happens. I mean, obviously we're, we hope that the
+robot's not going to collide with any of the walls or any of the obstacles
+that I've added to the environment. But let's make sure this actually happens. I've already implemented the controller,
+so I'm going to head eh, go ahead and launch the
+simulator. I'm going to hit Play, and we're going to
+follow this robot and see. So I clicked on it to follow it, and we're
+going to see what, what it does. It's already turned away from the, from
+the obstacle. Now there is a wall and phew, we made it and here's another wall and yet
+again, the robot turns away. And since I've implemented this controller
+correctly, the robot should just drive around aimlessly
+around this environment. We haven't told him where he needs to go,
+we just have told him that he needs to avoid
+any obstacles. And, in fact, next week, we'll talk about
+how to combine goal to goal controllers and
+avoid obstacle controllers. My tips for this week are again to refer
+to the section for Week 4 in the manual for
+more details. And I have always provided very detailed
+instructions that should help you get through these
+assignments. And also keep in mind that, even though this seems like a really difficult
+approach and really tedious, and you could probably think of,
+of a way easier ways of doing obstacle
+avoidance with robots. The reason that I've done it in a way
+where we end up with a vector is that it'll make
+it a lot easier next week, when we combine the goal to goal controllers and the obstacle one
+controllers. Because then it's a matter of just
+blending two vectors together, we know definitely know how to
+sum vectors together so. Stick with it and I'll see you next week.

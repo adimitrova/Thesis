@@ -1,0 +1,843 @@
+1
+00:00:01,380 --> 00:00:04,787
+Hello, our topic here is voice
+interaction, and
+
+2
+00:00:04,787 --> 00:00:08,200
+the work we introduce here is voice and
+sound.
+
+3
+00:00:08,200 --> 00:00:08,700
+So
+
+4
+00:00:10,540 --> 00:00:15,945
+here the background motivation, we see
+there are two aspects in our voice.
+
+5
+00:00:15,945 --> 00:00:18,270
+So one is verbal information.
+
+6
+00:00:18,270 --> 00:00:20,960
+And the other is non-verbal information.
+
+7
+00:00:20,960 --> 00:00:25,865
+And typical speech interactions use verbal
+information such as they
+
+8
+00:00:25,865 --> 00:00:31,410
+convert your speech into recognizable
+command and then do something.
+
+9
+00:00:31,410 --> 00:00:34,940
+But however, on the other hand, our voice
+also contains
+
+10
+00:00:34,940 --> 00:00:39,640
+non verbal information such as pitch,
+volume, speed, and so on.
+
+11
+00:00:39,640 --> 00:00:42,150
+So these are non-verbal information has
+
+12
+00:00:42,150 --> 00:00:46,128
+been ignored in traditional speech
+recognition.
+
+13
+00:00:46,128 --> 00:00:48,317
+But here, what we want to do is
+
+14
+00:00:48,317 --> 00:00:52,710
+leverage, leverage these non-verbal
+information in your voice.
+
+15
+00:00:54,870 --> 00:00:57,098
+And here is a kind of concept.
+
+16
+00:00:57,098 --> 00:01:00,520
+So, interaction turn-around is very long
+
+17
+00:01:00,520 --> 00:01:03,430
+in traditional voice or speech
+recognition.
+
+18
+00:01:03,430 --> 00:01:07,340
+So you say something, and then computer
+tries to understand it,
+
+19
+00:01:07,340 --> 00:01:11,770
+and then you say something, and the system
+tries to do something.
+
+20
+00:01:11,770 --> 00:01:14,540
+And this is, this is very, very, very
+time-consuming.
+
+21
+00:01:14,540 --> 00:01:16,890
+And it's very discontinuous.
+
+22
+00:01:16,890 --> 00:01:18,590
+On the other hand.
+
+23
+00:01:18,590 --> 00:01:23,750
+For example if you are working on a,
+mouse, if you grab an
+
+24
+00:01:23,750 --> 00:01:27,100
+object, you continuously move your mouse
+cursor
+
+25
+00:01:27,100 --> 00:01:30,070
+and then the system continuously provides
+feedback.
+
+26
+00:01:30,070 --> 00:01:32,913
+So this kind of direct manipulation
+experience is
+
+27
+00:01:32,913 --> 00:01:35,950
+what we want to achieve, as in computer.
+
+28
+00:01:35,950 --> 00:01:40,890
+So we, in our technique, the user
+continuously produce makes your
+
+29
+00:01:40,890 --> 00:01:45,980
+voice, and then system continuously
+provides feedback to your vocal input.
+
+30
+00:01:47,210 --> 00:01:48,520
+So let me show you a video.
+
+31
+00:01:49,580 --> 00:01:52,450
+So, here, we introduce three techniques.
+
+32
+00:01:52,450 --> 00:01:55,066
+The first one is more simple.
+
+33
+00:01:55,066 --> 00:01:58,660
+On/off button.
+
+34
+00:01:58,660 --> 00:02:02,150
+So here, your voice works as on/off
+button.
+
+35
+00:02:02,150 --> 00:02:03,930
+So if you say nothing, it's off.
+
+36
+00:02:03,930 --> 00:02:07,790
+So if you say something continuously it
+means you press button.
+
+37
+00:02:09,130 --> 00:02:10,540
+Here's an example.
+
+38
+00:02:10,540 --> 00:02:13,930
+So here, typical approach is voice
+recognition.
+
+39
+00:02:13,930 --> 00:02:17,530
+So if you want to move this node, say,
+
+40
+00:02:17,530 --> 00:02:21,240
+maybe you say 30 degree, and you get
+result here.
+
+41
+00:02:21,240 --> 00:02:25,450
+And so, 90 degree, you get result here.
+
+42
+00:02:25,450 --> 00:02:30,360
+But again if you use voice recognition,
+interaction can be very discontinuous.
+
+43
+00:02:30,360 --> 00:02:34,810
+Here your voice is a switch, so if you
+make voice this one
+
+44
+00:02:34,810 --> 00:02:40,420
+starts moving, as you, as soon as you stop
+speeching, speaking it will stop.
+
+45
+00:02:40,420 --> 00:02:49,089
+So you can continuously see the visual
+feedback [SOUND].
+
+46
+00:02:49,089 --> 00:02:54,322
+So as you see, you can continuously get
+feedback, so if you get a satisfact
+
+47
+00:02:54,322 --> 00:02:59,850
+result, satisfactory result, you just stop
+speech and you get a result.
+
+48
+00:02:59,850 --> 00:03:03,340
+And if the voice is very annoying or
+difficult to produce
+
+49
+00:03:03,340 --> 00:03:06,360
+you can make any noise, so you can use a
+breath.
+
+50
+00:03:08,280 --> 00:03:09,675
+To control a system.
+
+51
+00:03:09,675 --> 00:03:13,720
+>> Down.
+
+52
+00:03:13,720 --> 00:03:16,660
+>> And if you combine this with
+traditional
+
+53
+00:03:16,660 --> 00:03:19,370
+speed recognition, you can do something
+like this.
+
+54
+00:03:19,370 --> 00:03:24,828
+[SOUND] Again, traditional approach
+
+55
+00:03:24,828 --> 00:03:29,762
+is to say, like, 100 meter.
+
+56
+00:03:29,762 --> 00:03:33,280
+Away, or one kilometer away, and so on.
+
+57
+00:03:33,280 --> 00:03:36,230
+But it's kind of difficult to understand
+what's going on.
+
+58
+00:03:36,230 --> 00:03:39,380
+But here, you just speech, and then stop
+speaking.
+
+59
+00:03:39,380 --> 00:03:41,690
+And this especially useful for zooming.
+
+60
+00:03:41,690 --> 00:03:45,630
+You know, zooming 1.2 is very difficult to
+imagine.
+
+61
+00:03:45,630 --> 00:03:47,430
+But here, you just see it.
+
+62
+00:03:47,430 --> 00:03:47,930
+>> Bike.
+
+63
+00:03:49,245 --> 00:03:54,149
+Zoom out.
+
+64
+00:03:54,149 --> 00:03:56,251
+Out.
+
+65
+00:03:56,251 --> 00:03:57,654
+Up.
+
+66
+00:03:57,654 --> 00:03:59,060
+Up.
+
+67
+00:03:59,060 --> 00:04:02,760
+>> Okay so that was a fast technique and
+here is the second one.
+
+68
+00:04:02,760 --> 00:04:07,684
+Second one is addition to on and off, you
+control, control a parameter
+
+69
+00:04:07,684 --> 00:04:12,025
+using a voice, using a pitch of your
+voice, so you let me see.
+
+70
+00:04:12,025 --> 00:04:21,473
+[NOISE] So you control a slider with the
+pitch of your voice.
+
+71
+00:04:21,473 --> 00:04:30,448
+[NOISE] It's very, very st, stable, that's
+a most important part [NOISE].
+
+72
+00:04:30,448 --> 00:04:34,664
+>> Up.
+
+73
+00:04:34,664 --> 00:04:36,899
+Down.
+
+74
+00:04:36,899 --> 00:04:37,570
+Down.
+
+75
+00:04:37,570 --> 00:04:40,560
+>> So, here, in addition to controlling
+the distance,
+
+76
+00:04:40,560 --> 00:04:43,148
+you can also control a speed of the
+scrolling.
+
+77
+00:04:43,148 --> 00:04:45,659
+>> Up.
+
+78
+00:04:45,659 --> 00:04:51,926
+Right.
+
+79
+00:04:51,926 --> 00:04:54,490
+Up.
+
+80
+00:04:54,490 --> 00:04:59,144
+>> [NOISE] Again, higher the
+
+81
+00:04:59,144 --> 00:05:04,689
+voice, the faster you move.
+
+82
+00:05:04,689 --> 00:05:10,050
+So, so far, I showed very continuous
+control parameters, but
+
+83
+00:05:10,050 --> 00:05:15,822
+here, the last one is discontinuous
+Discrete Control by Tonguing.
+
+84
+00:05:15,822 --> 00:05:21,469
+So suppose you want to change TV channel,
+or something like that.
+
+85
+00:05:21,469 --> 00:05:22,414
+>> [SOUND] down.
+
+86
+00:05:22,414 --> 00:05:25,261
+[UNKNOWN] Left.
+
+87
+00:05:25,261 --> 00:05:27,181
+[UNKNOWN] up.
+
+88
+00:05:27,181 --> 00:05:29,005
+[UNKNOWN] right.
+
+89
+00:05:29,005 --> 00:05:33,865
+[UNKNOWN] down [UNKNOWN].
+
+90
+00:05:33,865 --> 00:05:38,141
+>> So here we use very, very basic signal
+processing, so you can
+
+91
+00:05:38,141 --> 00:05:42,266
+do any noise, so you can also clap your
+hands to control it.
+
+92
+00:05:42,266 --> 00:05:43,621
+>> Down.
+
+93
+00:05:43,621 --> 00:05:46,796
+[SOUND] Right.
+
+94
+00:05:46,796 --> 00:05:47,644
+Right.
+
+95
+00:05:47,644 --> 00:05:49,989
+[SOUND].
+
+96
+00:05:49,989 --> 00:05:53,476
+[BLANK_AUDIO].
+
+97
+00:05:53,476 --> 00:05:56,750
+So those three techniques we introduced.
+
+98
+00:05:56,750 --> 00:05:59,100
+And then next we, I will show
+
+99
+00:05:59,100 --> 00:06:02,510
+you a couple entertainment applications of
+these techniques.
+
+100
+00:06:02,510 --> 00:06:03,370
+The first, okay,
+
+101
+00:06:06,620 --> 00:06:09,140
+the first one is jumping game using your
+voice.
+
+102
+00:06:10,186 --> 00:06:12,612
+Up, up, up, up, up, up, up, down.
+
+103
+00:06:12,612 --> 00:06:19,884
+>> So next
+
+104
+00:06:19,884 --> 00:06:24,030
+one is
+
+105
+00:06:24,030 --> 00:06:28,410
+using pitch control to control the
+vertical position of this fish.
+
+106
+00:06:29,425 --> 00:06:35,380
+[INAUDIBLE]
+
+107
+00:06:35,380 --> 00:06:38,715
+So last one is, like punching game using
+your voice.
+
+108
+00:06:38,715 --> 00:06:47,145
+[UNKNOWN].
+
+109
+00:06:47,145 --> 00:06:55,758
+[SOUND] So that, that's it and let me go
+back to the slide.
+
+110
+00:06:55,758 --> 00:07:00,790
+So let me briefly describe the
+implementation of this kind of system.
+
+111
+00:07:00,790 --> 00:07:03,610
+First, where we use a signal processing
+techniques.
+
+112
+00:07:03,610 --> 00:07:06,175
+And we use existing.
+
+113
+00:07:06,175 --> 00:07:08,143
+A fourier transform library.
+
+114
+00:07:08,143 --> 00:07:13,360
+So it transforms input voice signal data
+into frequency domain.
+
+115
+00:07:13,360 --> 00:07:17,140
+And then application is control's
+implemented in Java.
+
+116
+00:07:17,140 --> 00:07:21,390
+And the first technique, on and off
+control is very, very nice.
+
+117
+00:07:21,390 --> 00:07:22,670
+Implement this and we use.
+
+118
+00:07:22,670 --> 00:07:26,210
+It just checks total volume, total power.
+
+119
+00:07:26,210 --> 00:07:27,790
+Or was the input signal.
+
+120
+00:07:27,790 --> 00:07:30,470
+And if it's, we check whether the total
+
+121
+00:07:30,470 --> 00:07:33,810
+volume is larger than the threshold or
+not.
+
+122
+00:07:33,810 --> 00:07:36,680
+One implementation detail is that we
+ignore
+
+123
+00:07:36,680 --> 00:07:41,725
+low frequency part to subtract, separate
+background noise.
+
+124
+00:07:41,725 --> 00:07:45,958
+An important part is pitch detection, so.
+
+125
+00:07:45,958 --> 00:07:49,380
+We con, we use voice pitch to control
+parameter up
+
+126
+00:07:49,380 --> 00:07:52,030
+and down but this needs to be very, very
+stable.
+
+127
+00:07:53,880 --> 00:08:00,000
+A naive approach is to use identify
+absolute pitch for each voice.
+
+128
+00:08:00,000 --> 00:08:04,850
+So here's an input signal and then try to
+identify the dominant pitch.
+
+129
+00:08:04,850 --> 00:08:06,610
+However this is very very difficult.
+
+130
+00:08:06,610 --> 00:08:09,844
+It's very ambiguous, noisy, and unstable.
+
+131
+00:08:09,844 --> 00:08:14,580
+Please imagine that at this kind of
+frequency signal, is changing all
+
+132
+00:08:14,580 --> 00:08:19,260
+the time and then it is very difficult to
+identify a peak.
+
+133
+00:08:19,260 --> 00:08:22,120
+So some t, at some point this is the
+highest.
+
+134
+00:08:22,120 --> 00:08:26,470
+But at nex,next moment this one gets
+highest, so it's very unstable.
+
+135
+00:08:26,470 --> 00:08:29,630
+So this naive approach is not works very
+well.
+
+136
+00:08:29,630 --> 00:08:33,200
+So our approach is to just all checks
+
+137
+00:08:33,200 --> 00:08:36,760
+slightly up or slightly down of each
+frame.
+
+138
+00:08:36,760 --> 00:08:39,780
+So in this way the result is very stable.
+
+139
+00:08:39,780 --> 00:08:44,110
+So we only check whether the pitch is
+getting high or lower, a little bit.
+
+140
+00:08:46,990 --> 00:08:49,140
+So here's a detailed algorithm.
+
+141
+00:08:49,140 --> 00:08:53,620
+Suppose you have this kind of spectrum of
+time t0.
+
+142
+00:08:53,620 --> 00:08:58,780
+So the vertical, horizontal axis is
+frequency, low frequency
+
+143
+00:08:58,780 --> 00:09:03,650
+to high frequency, and for each frequency
+you get amplitude.
+
+144
+00:09:03,650 --> 00:09:07,940
+And then you get another thing now of t0
+plus dt.
+
+145
+00:09:07,940 --> 00:09:11,290
+And then your task is to detect whether
+
+146
+00:09:11,290 --> 00:09:16,240
+this frequency signal is shifting
+downwards or upwards.
+
+147
+00:09:16,240 --> 00:09:18,460
+So in order to do it, we get this
+
+148
+00:09:20,530 --> 00:09:25,850
+we aggregate this signal into a vector,
+and then in the next time.
+
+149
+00:09:25,850 --> 00:09:29,750
+For the next fray, we get a vector for the
+
+150
+00:09:29,750 --> 00:09:34,850
+shifted upwards and also shifted
+downwards, so you have three vectors.
+
+151
+00:09:34,850 --> 00:09:38,240
+And then we just compute dot products
+between them.
+
+152
+00:09:38,240 --> 00:09:42,480
+So this one is dot product between v and v
+minus.
+
+153
+00:09:42,480 --> 00:09:46,208
+And then you compute also v and v plus.
+
+154
+00:09:46,208 --> 00:09:50,790
+So if v minus is higher, then v minus is
+more
+
+155
+00:09:50,790 --> 00:09:55,490
+closer to v, so which means that the pitch
+is shifted over.
+
+156
+00:09:55,490 --> 00:10:00,940
+And then if this thought product of v plus
+is higher than v minus, which means
+
+157
+00:10:00,940 --> 00:10:06,650
+that v plus is closer to v, which means
+the spectrum is, gets higher.
+
+158
+00:10:06,650 --> 00:10:09,850
+So this very, very simple implementation.
+
+159
+00:10:09,850 --> 00:10:11,490
+Returns a very, very stable result.
+
+160
+00:10:13,860 --> 00:10:15,130
+So here's a summary.
+
+161
+00:10:15,130 --> 00:10:19,416
+So we discussed problem of controlling
+object
+
+162
+00:10:19,416 --> 00:10:24,760
+continuously, using your voice, using
+non-verbal features.
+
+163
+00:10:24,760 --> 00:10:28,500
+And then our approach is to use a
+non-verbal aspect of your voice.
+
+164
+00:10:30,440 --> 00:10:32,740
+And the original paper was published as
+Voice
+
+165
+00:10:32,740 --> 00:10:37,460
+as Sound, Non-verbal Voice Input for
+Interactive Control.
+
+166
+00:10:37,460 --> 00:10:42,680
+And multi-modal interface using gesture
+and voice is also a very popular topic in
+
+167
+00:10:42,680 --> 00:10:47,780
+your field, and very original paper was
+called Put, Put That
+
+168
+00:10:47,780 --> 00:10:53,790
+There so you say, put and then say that,
+showing some object.
+
+169
+00:10:53,790 --> 00:10:55,620
+And then again say there.
+
+170
+00:10:55,620 --> 00:11:00,400
+And they're showing another object using
+your gesture.
+
+171
+00:11:00,400 --> 00:11:02,030
+And then you get the task.
+
+172
+00:11:02,030 --> 00:11:04,040
+And the video is available on the YouTube.
+
+173
+00:11:04,040 --> 00:11:06,880
+So I recommend you to take a look at it.
+
+174
+00:11:06,880 --> 00:11:10,480
+And also there are a couple of interesting
+voice based interaction techniques.
+
+175
+00:11:10,480 --> 00:11:15,270
+And one recommendation for you is speech
+completion.
+
+176
+00:11:15,270 --> 00:11:17,300
+And this one tries to complete.
+
+177
+00:11:17,300 --> 00:11:18,638
+Your speech in the middle.
+
+178
+00:11:18,638 --> 00:11:23,020
+And also video is available, so I
+recommend you too take a look at it.
+
+179
+00:11:24,090 --> 00:11:25,980
+Thank you.
+
+180
+00:11:25,980 --> 00:11:28,130
+So this is the end of week one.
+
+181
+00:11:28,130 --> 00:11:32,870
+Some topic we discuss in this week was
+graphical user interfaces.
+
+182
+00:11:32,870 --> 00:11:38,170
+And then we discuss scrolling interfaces,
+the manageable desktop icons.
+
+183
+00:11:38,170 --> 00:11:40,520
+Pointing techniques on the large screen.
+
+184
+00:11:40,520 --> 00:11:41,990
+And management of digital ink.
+
+185
+00:11:41,990 --> 00:11:44,218
+And then finally, we discuss voice
+interaction.
+
+186
+00:11:44,218 --> 00:11:49,229
+Thank you.

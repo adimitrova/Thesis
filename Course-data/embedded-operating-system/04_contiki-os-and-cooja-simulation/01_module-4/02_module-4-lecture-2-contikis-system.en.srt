@@ -1,0 +1,599 @@
+1
+00:00:00,114 --> 00:00:05,974
+[MUSIC]
+
+2
+00:00:05,974 --> 00:00:06,969
+Welcome.
+
+3
+00:00:06,969 --> 00:00:09,750
+It is good to see you back for
+this lesson.
+
+4
+00:00:09,750 --> 00:00:13,550
+Previously, we explored
+Contiki as a hybrid system.
+
+5
+00:00:13,550 --> 00:00:17,590
+Now we will look into more
+details of the operating system
+
+6
+00:00:17,590 --> 00:00:20,500
+to discover other
+characteristics in depth.
+
+7
+00:00:20,500 --> 00:00:24,410
+At the end of this lesson, you will be
+able to understand what benefits and
+
+8
+00:00:24,410 --> 00:00:28,270
+challenges Contiki presents when
+developing iOT applications.
+
+9
+00:00:29,770 --> 00:00:33,430
+First of all, let's discuss
+the main components of Contiki.
+
+10
+00:00:34,800 --> 00:00:39,760
+A Contiki system includes the kernel,
+libraries and applications or
+
+11
+00:00:39,760 --> 00:00:44,700
+services, of which applications and
+services are implemented as modules.
+
+12
+00:00:45,790 --> 00:00:48,720
+They are only loaded when
+an application requires them.
+
+13
+00:00:50,110 --> 00:00:54,900
+As discussed before, this is one of the
+main positive characteristics of Contiki.
+
+14
+00:00:56,150 --> 00:01:01,290
+If you do not remember details about this,
+I recommend you go back to other videos,
+
+15
+00:01:01,290 --> 00:01:04,270
+we let it to modular kernel design and
+Contiki.
+
+16
+00:01:05,890 --> 00:01:11,139
+In Contiki, it is possible to dynamically
+replace all processes at run-time,
+
+17
+00:01:11,139 --> 00:01:13,040
+thus helping to save resources.
+
+18
+00:01:14,060 --> 00:01:18,779
+Processes in this case can be either
+services or application programs.
+
+19
+00:01:19,880 --> 00:01:24,410
+So far in our discussion,
+we haven't addressed what applications and
+
+20
+00:01:24,410 --> 00:01:27,020
+services are and their differences.
+
+21
+00:01:28,280 --> 00:01:29,740
+From the point of view of Contiki,
+
+22
+00:01:29,740 --> 00:01:33,220
+they are all modules which
+are loaded when needed.
+
+23
+00:01:34,260 --> 00:01:38,960
+However, from the point of view of
+a programmer, a service is implemented to
+
+24
+00:01:38,960 --> 00:01:44,460
+provide a functionality which is used work
+for one or more application processes.
+
+25
+00:01:45,660 --> 00:01:49,090
+All communication between processes
+are done through the kernel.
+
+26
+00:01:50,300 --> 00:01:52,870
+We mentioned in the previous lesson that
+
+27
+00:01:52,870 --> 00:01:55,500
+there is no hardware
+obstruction layer in Contiki.
+
+28
+00:01:56,570 --> 00:01:59,230
+As a result of this, device drivers and
+
+29
+00:01:59,230 --> 00:02:02,220
+applications communicate
+directly with the hardware.
+
+30
+00:02:03,420 --> 00:02:04,390
+If you don't know or
+
+31
+00:02:04,390 --> 00:02:08,850
+remember why Contiki does not provide
+a hardware abstraction layer,
+
+32
+00:02:08,850 --> 00:02:13,740
+I suggest you to go back to the previews
+lesson titled Contiki, a hybrid system.
+
+33
+00:02:15,620 --> 00:02:18,620
+All processes share the same address and
+space and
+
+34
+00:02:18,620 --> 00:02:21,380
+all run in the same protection domain.
+
+35
+00:02:21,380 --> 00:02:24,780
+This enables Contiki to run in
+memory constrained devices.
+
+36
+00:02:26,130 --> 00:02:29,280
+In order to give you a deeper
+understanding of this idea,
+
+37
+00:02:29,280 --> 00:02:32,674
+we will have a lesson threads and
+multi-threading.
+
+38
+00:02:33,840 --> 00:02:38,820
+In that lesson, you will get an idea
+of why and how Contiki achieves it.
+
+39
+00:02:40,410 --> 00:02:44,620
+But let's now examine how a process
+is created and treated in Contiki.
+
+40
+00:02:45,670 --> 00:02:50,410
+A process is a piece of program code
+which is executed by Contiki's system.
+
+41
+00:02:51,610 --> 00:02:54,630
+A process is started in two ways.
+
+42
+00:02:54,630 --> 00:02:59,330
+The first is when Contiki starts, and
+the second when the module loaded.
+
+43
+00:03:00,960 --> 00:03:04,980
+A process runs when an event
+related to the process occurs,
+
+44
+00:03:04,980 --> 00:03:07,590
+such as a timer event or an external one.
+
+45
+00:03:08,880 --> 00:03:10,350
+For example,
+
+46
+00:03:10,350 --> 00:03:14,500
+consider an application that prints hello
+world to the terminal every second.
+
+47
+00:03:15,610 --> 00:03:20,910
+This application process runs whenever a
+timer event is triggered at every second.
+
+48
+00:03:22,100 --> 00:03:26,950
+It means that a counter of the timer
+will count down every second, and
+
+49
+00:03:26,950 --> 00:03:29,580
+when it reaches zero,
+the event is triggered.
+
+50
+00:03:30,950 --> 00:03:35,409
+Countdown frequency is based on
+the particular type of timer event used.
+
+51
+00:03:36,720 --> 00:03:40,180
+In order to have a closer
+view of a timer event,
+
+52
+00:03:40,180 --> 00:03:42,970
+I recommend that you stay with me for
+the upcoming videos.
+
+53
+00:03:44,360 --> 00:03:47,750
+In those videos,
+different types of time or events, and
+
+54
+00:03:47,750 --> 00:03:50,470
+other types of events
+will be deeply discussed.
+
+55
+00:03:52,010 --> 00:03:55,380
+There are two types of
+execution modes in Contiki.
+
+56
+00:03:55,380 --> 00:03:59,230
+These are cooperative and
+preemptive modes.
+
+57
+00:03:59,230 --> 00:04:03,380
+Cooperative process code runs
+sequentially in a queue.
+
+58
+00:04:03,380 --> 00:04:07,570
+This means that the first process
+has the right to use the CPU,
+
+59
+00:04:07,570 --> 00:04:10,840
+while other processors wait for
+their right to access the CPU.
+
+60
+00:04:12,230 --> 00:04:15,850
+After the process which
+occupied the CPU is finished,
+
+61
+00:04:15,850 --> 00:04:20,160
+then the next waiting process in
+the queue gets the right to use the CPU.
+
+62
+00:04:21,400 --> 00:04:25,750
+In contrast, preemptive mode
+handles process differently.
+
+63
+00:04:25,750 --> 00:04:30,500
+In the preemptive context, a running
+process can be stopped by an interrupt,
+
+64
+00:04:30,500 --> 00:04:34,870
+and the higher priority test immediately
+takes over the right to use the CPU.
+
+65
+00:04:36,190 --> 00:04:37,840
+After finishing its job,
+
+66
+00:04:37,840 --> 00:04:42,300
+it returns the right to access
+the CPU to the interrupted process.
+
+67
+00:04:43,920 --> 00:04:47,530
+A process is defined by
+an event handler function and
+
+68
+00:04:47,530 --> 00:04:49,389
+an optional poll handler function.
+
+69
+00:04:50,650 --> 00:04:56,000
+In order to give you a better view of
+a process, and how it is defining Contiki,
+
+70
+00:04:56,000 --> 00:04:59,380
+we're going to look at the internal
+structure of a Contiki process.
+
+71
+00:05:00,820 --> 00:05:04,840
+The Contiki process is a combination
+of two different parts.
+
+72
+00:05:04,840 --> 00:05:08,170
+These are process control block and
+the process threat.
+
+73
+00:05:09,300 --> 00:05:14,920
+In this lesson, we only focus on
+Contiki System and Contiki Processes.
+
+74
+00:05:14,920 --> 00:05:18,430
+Therefore a process thread will
+be discussed in following videos.
+
+75
+00:05:20,120 --> 00:05:25,840
+The process control blog is composed of
+information about each process such as
+
+76
+00:05:25,840 --> 00:05:31,720
+the state of the process, the pointer to
+the next process, name of the process,
+
+77
+00:05:31,720 --> 00:05:37,140
+a pointer to a process thread, the state
+of the proto thread and internal flags.
+
+78
+00:05:39,510 --> 00:05:42,510
+The slide shows a structure
+of a process in Contiki.
+
+79
+00:05:43,740 --> 00:05:46,795
+The structure is written
+in a standard C language.
+
+80
+00:05:48,505 --> 00:05:52,480
+The process, Control Block,
+is only used by the kernel.
+
+81
+00:05:52,480 --> 00:05:56,970
+Therefore, users do not have any right
+to access the Control Block directly.
+
+82
+00:05:58,230 --> 00:06:01,110
+This helps the system
+protect the process and
+
+83
+00:06:01,110 --> 00:06:04,910
+avoid unexpected mistakes or
+bugs caused by programmers.
+
+84
+00:06:06,420 --> 00:06:10,760
+Actually, the kernel only keeps
+a pointer to the process of state
+
+85
+00:06:10,760 --> 00:06:14,240
+which is health in
+the process' private memory.
+
+86
+00:06:14,240 --> 00:06:18,090
+This means that every process
+has its own state, and
+
+87
+00:06:18,090 --> 00:06:21,230
+the state cannot be accessed
+by other processes.
+
+88
+00:06:23,170 --> 00:06:29,000
+As you can see in this slide, the Process
+Control Block's structure is quite simple,
+
+89
+00:06:29,000 --> 00:06:31,159
+and it does not contain
+complex information.
+
+90
+00:06:32,230 --> 00:06:36,520
+Therefore, it is lightweight, and
+it just occupies a few bytes of memory.
+
+91
+00:06:37,830 --> 00:06:42,730
+In Contiki, a Process Control Block
+cannot be declared or defined directly.
+
+92
+00:06:44,020 --> 00:06:46,540
+The block is defined
+via the process macro.
+
+93
+00:06:47,800 --> 00:06:50,410
+In order to give you
+a better view of this macro,
+
+94
+00:06:50,410 --> 00:06:54,380
+I am going to take an example
+of hello world processing.
+
+95
+00:06:54,380 --> 00:06:58,530
+As you can see,
+the process macro has two parameters,
+
+96
+00:06:58,530 --> 00:07:01,930
+the name of the Process Control Block and
+the textural description.
+
+97
+00:07:03,170 --> 00:07:08,270
+The variable name of the Process Control
+Block is used for accessing the process,
+
+98
+00:07:08,270 --> 00:07:13,100
+while the description text of the process
+is used by programmers for debugging.
+
+99
+00:07:15,100 --> 00:07:19,080
+As mentioned in previous videos,
+Contiki uses posting events for
+
+100
+00:07:19,080 --> 00:07:21,370
+interprocess communication.
+
+101
+00:07:21,370 --> 00:07:24,110
+This mechanism is also similar
+
+102
+00:07:24,110 --> 00:07:27,705
+to the messaging mechanism in
+Microkernel described before.
+
+103
+00:07:27,705 --> 00:07:33,390
+Contiki's system is
+partitioned in two parts.
+
+104
+00:07:33,390 --> 00:07:37,910
+The first part is the core, and
+the second is the loaded program section.
+
+105
+00:07:39,440 --> 00:07:42,580
+The partitioning is made at compiled time,
+and
+
+106
+00:07:42,580 --> 00:07:46,300
+it's specific to the deployment
+in which Contiki is used.
+
+107
+00:07:47,390 --> 00:07:52,830
+Typically, the core consists of
+Contiki kernel, the program loader,
+
+108
+00:07:52,830 --> 00:07:57,680
+most commonly used parts of the language
+run-time, support libraries, and
+
+109
+00:07:57,680 --> 00:08:01,750
+a communication stack with device
+drivers for the communication hardware.
+
+110
+00:08:03,010 --> 00:08:06,260
+The core is compiled into
+a single binary image
+
+111
+00:08:06,260 --> 00:08:08,400
+that is stored in the deploy devices.
+
+112
+00:08:09,510 --> 00:08:12,530
+It is generally not
+modified after deployment.
+
+113
+00:08:12,530 --> 00:08:17,390
+Although it is possible to overwrite or
+patch the core by a special boot loader.
+
+114
+00:08:18,900 --> 00:08:22,330
+Programs are loaded into
+the system by the program loader.
+
+115
+00:08:23,370 --> 00:08:28,200
+Which gets the program binaries by
+using directly attached storage, or
+
+116
+00:08:28,200 --> 00:08:29,570
+using the communications tech.
+
+117
+00:08:30,880 --> 00:08:34,030
+Typically, programs to be
+loaded into the system
+
+118
+00:08:34,030 --> 00:08:38,600
+are first stored in the EEPROM before
+they are moved into the code memory.
+
+119
+00:08:40,310 --> 00:08:45,210
+This is all for this lesson on
+Contiki System and Contiki processes.
+
+120
+00:08:45,210 --> 00:08:48,600
+I hope that you have now a better
+understanding of Contiki System's
+
+121
+00:08:48,600 --> 00:08:51,070
+structure and how it works.
+
+122
+00:08:51,070 --> 00:08:55,130
+I hope to see you in the next videos,
+which will explain many other advanced
+
+123
+00:08:55,130 --> 00:08:59,665
+features of Contiki, such as Contiki's
+kernel architecture and threats.
+
+124
+00:08:59,665 --> 00:09:04,454
+[SOUND]

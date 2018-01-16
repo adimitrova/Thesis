@@ -1,0 +1,337 @@
+1
+00:00:00,820 --> 00:00:04,950
+Now that we've explored the data set
+a bit, at least for one field, let's take
+
+2
+00:00:04,950 --> 00:00:10,860
+a look at how to filter to get just those
+movies that match a particular criterion.
+
+3
+00:00:10,860 --> 00:00:12,930
+There are several ways we can do this.
+
+4
+00:00:12,930 --> 00:00:16,035
+Compass supports
+the MongoDB query language,
+
+5
+00:00:16,035 --> 00:00:20,030
+there is a $match stage in
+the aggregation framework for
+
+6
+00:00:20,030 --> 00:00:24,920
+filtering, and
+there's a collection method called find.
+
+7
+00:00:24,920 --> 00:00:26,990
+Which we can use from
+a Python application.
+
+8
+00:00:28,130 --> 00:00:32,060
+All of these support the same
+filter syntax and set of operators.
+
+9
+00:00:32,060 --> 00:00:33,590
+The one exception is Compass,
+
+10
+00:00:33,590 --> 00:00:37,390
+which at this time supports only
+a subset of the MongoDB query language.
+
+11
+00:00:37,390 --> 00:00:39,910
+Though, it is a very large subset.
+
+12
+00:00:39,910 --> 00:00:43,040
+Let's do some simple queries in
+the aggregation framework first.
+
+13
+00:00:43,040 --> 00:00:48,940
+The syntax for writing filters in
+MongoDB is based on documents.
+
+14
+00:00:48,940 --> 00:00:53,860
+You specify one or more keys on which
+you would like to filter and then for
+
+15
+00:00:53,860 --> 00:00:58,150
+each key provide an expression
+that defines the criteria
+
+16
+00:00:58,150 --> 00:01:01,710
+that matching documents must meet for
+that field.
+
+17
+00:01:02,940 --> 00:01:08,170
+As a simple example, lets search for
+movies that use both Korean and English.
+
+18
+00:01:09,750 --> 00:01:12,880
+To do that,
+we'll use a $match aggregation stage.
+
+19
+00:01:13,930 --> 00:01:19,760
+Have a look at the syntax here, there is
+an equality match on the language key.
+
+20
+00:01:20,900 --> 00:01:23,940
+If you're building a Python
+application such as a web app,
+
+21
+00:01:23,940 --> 00:01:28,100
+it's more likely that you'll use a query
+language method to filter documents.
+
+22
+00:01:29,210 --> 00:01:34,080
+For filtering you will most commonly
+use the find collection method.
+
+23
+00:01:34,080 --> 00:01:35,470
+Let's take a look at an example.
+
+24
+00:01:36,620 --> 00:01:39,610
+Here we define a filter,
+
+25
+00:01:39,610 --> 00:01:43,990
+note that it's just the filter portion
+of the match stage we just looked at.
+
+26
+00:01:43,990 --> 00:01:48,060
+Both the MongoDB query language, and
+the aggregation framework use exactly
+
+27
+00:01:48,060 --> 00:01:52,910
+the same syntax and
+operators for expressing queries.
+
+28
+00:01:52,910 --> 00:01:58,480
+To apply this filter,
+we simply pass it to the find method.
+
+29
+00:01:58,480 --> 00:02:02,100
+Remember that find is a method
+on the collection class.
+
+30
+00:02:02,100 --> 00:02:07,000
+So here, we're calling find on
+our movies_initial collection
+
+31
+00:02:07,000 --> 00:02:08,450
+that we been working with all along.
+
+32
+00:02:08,450 --> 00:02:14,080
+find returns a cursor that enables
+us to iterate the results.
+
+33
+00:02:14,080 --> 00:02:18,455
+A cursor is simply a pointer to where
+we are in a list of query results.
+
+34
+00:02:18,455 --> 00:02:26,850
+Calling list here causes Python to iterate
+through the cursor and create a list.
+
+35
+00:02:26,850 --> 00:02:30,785
+pprint prints the output that
+we'll see when we run this script.
+
+36
+00:02:30,785 --> 00:02:35,209
+And we can see here that what
+we get is in fact a list or
+
+37
+00:02:35,209 --> 00:02:40,010
+array, and
+that everyone of the results in this list
+
+38
+00:02:40,010 --> 00:02:45,270
+does express a combination of Korean and
+English for the language field.
+
+39
+00:02:45,270 --> 00:02:52,240
+We can do this same thing in Compass, and
+it uses the same syntax, or very nearly.
+
+40
+00:02:52,240 --> 00:02:57,381
+The only difference is that Compass likes
+double quotes rather than single quotes.
+
+41
+00:02:57,381 --> 00:03:03,514
+And applying that filter, we can see that
+the result set is reduced to 27 documents.
+
+42
+00:03:03,514 --> 00:03:07,540
+And again, if we scroll through these
+results, we see that the combination of
+
+43
+00:03:07,540 --> 00:03:12,030
+Korean and English is what's used
+throughout for the language filed.
+
+44
+00:03:12,030 --> 00:03:15,560
+This type of query is
+called an equality filter,
+
+45
+00:03:15,560 --> 00:03:19,000
+because we're matching on exact values for
+a key.
+
+46
+00:03:19,000 --> 00:03:23,276
+As I mentioned earlier,
+we can filter on multiple fields.
+
+47
+00:03:23,276 --> 00:03:26,505
+So to provide an example
+of that lets go ahead and
+
+48
+00:03:26,505 --> 00:03:29,507
+add an additional selector to this filter.
+
+49
+00:03:29,507 --> 00:03:35,552
+And applying that filter we can see
+that our result set is reduced from 27,
+
+50
+00:03:35,552 --> 00:03:36,500
+to just 2.
+
+51
+00:03:36,500 --> 00:03:42,030
+Because now we're requiring that all
+documents returned in our result set have
+
+52
+00:03:42,030 --> 00:03:49,230
+a combination of Korean and English as
+their language, and a rating of unrated.
+
+53
+00:03:49,230 --> 00:03:52,020
+Now, one last thing I'll point out
+about the MongoDB query language,
+
+54
+00:03:52,020 --> 00:03:57,440
+as expressed in Compass, is that for
+keys, it is not necessary to use quotes.
+
+55
+00:03:57,440 --> 00:04:00,650
+Compass will correctly
+interpret these as keys.
+
+56
+00:04:00,650 --> 00:04:04,630
+And we get a slightly cleaner
+looking filter as a result.
+
+57
+00:04:04,630 --> 00:04:06,410
+Of course in Python,
+
+58
+00:04:06,410 --> 00:04:09,710
+when constructing filters it is
+necessary that you use quotes.
+
+59
+00:04:09,710 --> 00:04:12,760
+Because you're really just
+building a dictionary
+
+60
+00:04:12,760 --> 00:04:15,490
+that is passed to find as a filter.
+
+61
+00:04:15,490 --> 00:04:17,740
+Now, I'd love to go further and
+
+62
+00:04:17,740 --> 00:04:21,930
+show you how to do range queries
+on fields like runtime, and
+
+63
+00:04:21,930 --> 00:04:27,330
+maybe even look at interesting
+combinations of genre, for example.
+
+64
+00:04:27,330 --> 00:04:30,081
+But the fact is,
+that this data set is a bit of a mess.
+
+65
+00:04:30,081 --> 00:04:34,921
+Values like runtime should be integers and
+languages, genre and
+
+66
+00:04:34,921 --> 00:04:37,922
+several other fields should be arrays.
+
+67
+00:04:37,922 --> 00:04:42,060
+So that we have maximum flexibility with
+respect to filtering this collection.
+
+68
+00:04:42,060 --> 00:04:44,660
+For the types of analysis,
+we need to run and for
+
+69
+00:04:44,660 --> 00:04:47,410
+when we build a map,
+a little later in this course.
+
+70
+00:04:48,810 --> 00:04:52,450
+So let's take a look at
+cleaning up this dataset.

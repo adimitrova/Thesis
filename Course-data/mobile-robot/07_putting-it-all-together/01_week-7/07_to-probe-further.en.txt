@@ -1,0 +1,87 @@
+We are now extremely close to the end of 
+this entire course and I'm actually done, believe it or not, with the technical 
+part. The grand finale was really this idea 
+that we could even make complicated systems like cars act like unicycles that 
+we now know how to control and navigate around in complex environments as we've 
+seen both in theory In simulation, and actually in real experiments. 
+What I want to do in this sub-lecture is basically probe further. 
+There are lot's of things, believe it or not, that are actually not in this 
+course, pretaining to other control robots. 
+Here I have a picture of a praying mantis and the reason for that is that, we have 
+not covered praying mantises. So I'm going to let this be a proxy for 
+all the things we haven't talked about. Well one thing that we haven't talked 
+about is, what happens when your system is generally non-linear instead of 
+linear. So we are now really, really good at 
+dealing with linear control system. Well, what if it is linear, non-linear? 
+Well we have dealt with some, we've dealt with the unicycle quite a bit, but there 
+we were kind of lucky that we had a lot of intuition. 
+What if this is not the unicycle? What if this is massively non-linear, and 
+strange, and complicated? What do we actually do? Well, that's called nominal 
+control and it's not in this course but I encourage you to keep educating yourself 
+and probing further along these lines. another thing that we didn't deal with is 
+what is called optimal control. So for us, the name of the game was 
+stability. Stability, it was performance in the 
+sense of tracking, right, so we want it to track reference signals, and then we 
+had robustness, but what we didn't have, explicitly, were things like this. 
+So this is a general, type of cost, where we're saying, well we want to minimize 
+some cost involving x and u. This could be, you know, the fuel 
+consumed, or the time it takes to get there, plus possibly some cost on the 
+final point as well. This is known as optimal control, and 
+this was also not, in the course. So this was one grasshopper that we 
+didn't see. There is another branch of decision 
+theory known as Machine Learning that we didn't touch upon. 
+The reason why I am putting this as a another thing that you might want to 
+probe further along is it's useful in robotics and it's highly related to 
+control in general and optimal control in particular. 
+So the idea is that. I'm going to have some costs V and I'm 
+going to have some policy pie which says what are you going to do when you're at 
+the certain state? And the cost is just going to be a cost 
+of the different, where I am at time k and what I'm doing at time k. 
+So this is really U sub k, right? And now I'm going to sum up this entire cost and 
+if you do that you can write down. Something known as Bellman's Optimality 
+Equation or Bellman's equation, that basically characterizes what is the 
+smallest you can make this cost while it satisfies this kind of weird looking 
+expression. And the point here is not the math, the 
+point is that we have this equation, and machine learning is all about finding 
+this V* by exploring. If I'm at this position, let's try doing 
+u4. if I'm in another position, let's try doing u9. 
+And while doing this, you're building up this a, this V* cost function. 
+And when you're done building it up, you all of the sudden have a complete map or 
+guide to what should you do. If you encounter a certain state, and 
+that's in a nutshell what machine learning is about. 
+Another thing that we didn't do much with is perception and mapping. 
+We had infrared or ultrasonic range sensors, but a lot of times. 
+We have those. We have laser scanners. 
+We have cameras. We did not deal with complicated sensing 
+modalities and we did also not deal with, okay what do we do with all these sensor 
+data. How do we actually produce maps of the 
+world? Our world was, here is the, the robot. 
+Here is an obstacle. It's a point. 
+Let's just avoid it. But you know what. 
+This obstacle may not be a point it may be part of, I don't know, a corridor, and 
+we would like to go in the corridor. Well then it's good to actually describe 
+what the world looks like. This is known as mapping. 
+And again, this is a perfect opportunity for you to probe further, trying to build 
+maps of the world. There are lots of different methods for 
+doing it. And finally, the thing that we didn't do 
+at all either is really talk about the high level artificial intelligence. 
+So, how do you actually decide in the first place where you should be going. 
+We said, given a goal point, how do we go there? But where did the goal coin, point 
+come from? Somehow, somewhere, someone is going to have to make decisions about 
+what at the very high-level the robot should be doing. 
+And this falls Squarely under the domain of artificial intelligence. 
+Not covered in this course, I encourage you to probe further. 
+So, to conclude, there are things that we haven't done in this class. 
+There are lots of praying mantises that we didn't cover. 
+And those are good things for you to probe further. 
+And learn more about. If you know all of it, you can build an 
+awesome robotic system. But, beyond that, there are also lots of 
+things we don't know. So here, Not only praying mantises, but 
+other green creatures. We have no idea what they look like. 
+We don't know if they exist, we don't know what they are. 
+It's the same with robotics. There's a lot of stuff going on that we 
+as a community don't know how to do yet. So the last thing I want to do is give 
+you the impression that this is a closed and complete case. 
+We know everything about robotics. We don't. 
+So, not only in this course are there praying mantises, but outside of the 
+course there are potential aliens that we still have not discovered.

@@ -1,0 +1,431 @@
+1
+00:00:00,000 --> 00:00:03,325
+Viewing the new collection we've created here in compass,
+
+2
+00:00:03,325 --> 00:00:06,400
+let's search for movies that use the Korean language.
+
+3
+00:00:06,400 --> 00:00:09,225
+Note that we need to use the key languages.
+
+4
+00:00:09,225 --> 00:00:13,750
+With this filter applied we have 542 matching documents.
+
+5
+00:00:13,750 --> 00:00:17,160
+Let's take a look at some of the matching documents.
+
+6
+00:00:17,160 --> 00:00:19,710
+The first has both English and Korean listed for
+
+7
+00:00:19,710 --> 00:00:23,240
+languages and if we scroll down
+
+8
+00:00:23,240 --> 00:00:28,135
+a bit we can find a movie that has just Korean listed as the language.
+
+9
+00:00:28,135 --> 00:00:35,010
+And if we scroll down even further this movie lists five languages including Latin.
+
+10
+00:00:35,010 --> 00:00:38,210
+So let's stop and think about what's happening here a little bit.
+
+11
+00:00:38,210 --> 00:00:42,080
+First, we've simply filtered on the movie's collection using
+
+12
+00:00:42,080 --> 00:00:47,040
+exactly the same syntax as we would if languages were a scalar field,
+
+13
+00:00:47,040 --> 00:00:52,230
+for example, a field containing string values rather than array values.
+
+14
+00:00:52,230 --> 00:00:54,990
+The difference is that now we're not
+
+15
+00:00:54,990 --> 00:00:58,470
+relying on a string representation of a list of languages.
+
+16
+00:00:58,470 --> 00:01:03,405
+We can take full advantage of MongoDB support for array valued fields.
+
+17
+00:01:03,405 --> 00:01:05,775
+If searching for all movies that list
+
+18
+00:01:05,775 --> 00:01:09,690
+a single language regardless of what other languages are listed,
+
+19
+00:01:09,690 --> 00:01:13,030
+we can use the syntax that we've employed here.
+
+20
+00:01:13,030 --> 00:01:16,470
+If we'd like to filter for movies that use both Korean and say
+
+21
+00:01:16,470 --> 00:01:21,160
+English we can do that using the dollar all operator.
+
+22
+00:01:21,160 --> 00:01:26,420
+When applied this filter will limit results to those movies that
+
+23
+00:01:26,420 --> 00:01:32,820
+list both Korean and English among their languages as we see here.
+
+24
+00:01:32,820 --> 00:01:35,690
+The all operator filters for documents with
+
+25
+00:01:35,690 --> 00:01:38,750
+an array as the value for the key specified that
+
+26
+00:01:38,750 --> 00:01:46,075
+contain all of the elements listed as the value for the all operator itself.
+
+27
+00:01:46,075 --> 00:01:47,900
+So the semantics of this are,
+
+28
+00:01:47,900 --> 00:01:51,920
+find me all documents where for the languages key,
+
+29
+00:01:51,920 --> 00:01:58,125
+there is an array containing all of the elements listed here in this array.
+
+30
+00:01:58,125 --> 00:02:01,550
+These elements can occur in any position or
+
+31
+00:02:01,550 --> 00:02:06,845
+order in the array field but they must each be present.
+
+32
+00:02:06,845 --> 00:02:08,630
+The Pymongo driver supports
+
+33
+00:02:08,630 --> 00:02:14,170
+the entire MongoDB query language so we can do exactly the same thing in Python.
+
+34
+00:02:14,170 --> 00:02:15,430
+Here's an example.
+
+35
+00:02:15,430 --> 00:02:18,665
+Note that here we're specifying a filter with
+
+36
+00:02:18,665 --> 00:02:24,626
+this dictionary and then passing this dictionary to the find method.
+
+37
+00:02:24,626 --> 00:02:27,770
+And this should actually be find called on
+
+38
+00:02:27,770 --> 00:02:30,380
+the movie scratch collection
+
+39
+00:02:30,380 --> 00:02:34,395
+because that's the collection we've been looking at here in compass.
+
+40
+00:02:34,395 --> 00:02:37,640
+And if we run this we see that the results are now
+
+41
+00:02:37,640 --> 00:02:41,750
+limited to only those movies using the languages we've specified.
+
+42
+00:02:41,750 --> 00:02:45,410
+Movies that also use other languages will be included but every movie
+
+43
+00:02:45,410 --> 00:02:50,310
+returned uses both Korean and English.
+
+44
+00:02:50,310 --> 00:02:54,830
+The semantics of the language is listed in this data set are such that the languages are
+
+45
+00:02:54,830 --> 00:03:00,520
+listed in decreasing order based on the frequency with which they are used in each movie.
+
+46
+00:03:00,520 --> 00:03:05,105
+If we want to do an exact match on movies that use Korean and English,
+
+47
+00:03:05,105 --> 00:03:07,790
+with Korean being the language more heavily used,
+
+48
+00:03:07,790 --> 00:03:12,464
+we can do an exact match on the array containing these two elements,
+
+49
+00:03:12,464 --> 00:03:15,625
+Korean first followed by English.
+
+50
+00:03:15,625 --> 00:03:18,925
+Note that we're not using the dollar all operator here.
+
+51
+00:03:18,925 --> 00:03:24,455
+What this filter means is find the all documents where for the languages key,
+
+52
+00:03:24,455 --> 00:03:27,750
+the value is precisely this array,
+
+53
+00:03:27,750 --> 00:03:30,440
+Korean listed first as
+
+54
+00:03:30,440 --> 00:03:36,300
+the zeroth element and English listed second as the element at index one.
+
+55
+00:03:36,300 --> 00:03:39,440
+Applying this filter in compass we can see that there are
+
+56
+00:03:39,440 --> 00:03:43,835
+27 matching documents and that in fact for each of them,
+
+57
+00:03:43,835 --> 00:03:46,820
+the value for languages is an array with Korean as
+
+58
+00:03:46,820 --> 00:03:51,020
+the element at index zero and English as the element at index one.
+
+59
+00:03:51,020 --> 00:03:55,370
+If we flip this and look instead for movies where English is
+
+60
+00:03:55,370 --> 00:04:00,310
+listed first and Korean second for the languages field,
+
+61
+00:04:00,310 --> 00:04:02,635
+we find 23 documents.
+
+62
+00:04:02,635 --> 00:04:08,350
+For these types of queries MongoDB is looking for an exact match against
+
+63
+00:04:08,350 --> 00:04:14,545
+the key in question for the array we've specified as the value in the filter.
+
+64
+00:04:14,545 --> 00:04:16,175
+With respect to array field,
+
+65
+00:04:16,175 --> 00:04:20,065
+one last thing you might be interested in doing is filtering for documents that have
+
+66
+00:04:20,065 --> 00:04:24,695
+a specific value in a particular slot within an array.
+
+67
+00:04:24,695 --> 00:04:28,765
+For example, we might like to filter for all documents that list Korean
+
+68
+00:04:28,765 --> 00:04:33,590
+as the primary language for the film regardless of what other languages are listed.
+
+69
+00:04:33,590 --> 00:04:39,070
+We can do that specifying the array index we want to match against using dot notation.
+
+70
+00:04:39,070 --> 00:04:42,500
+In compass this looks like this.
+
+71
+00:04:42,500 --> 00:04:44,635
+As we scroll through the results,
+
+72
+00:04:44,635 --> 00:04:47,965
+we see that every movie lists Korean first.
+
+73
+00:04:47,965 --> 00:04:51,670
+We can do the same thing in Python though we'll need to wrap
+
+74
+00:04:51,670 --> 00:04:57,140
+the key four or filter in quotes so that it's a valid dictionary.
+
+75
+00:04:57,140 --> 00:05:00,660
+Now it's a little hard to read this to find just the languages field so let's
+
+76
+00:05:00,660 --> 00:05:05,520
+limit the results to just provide the languages field.
+
+77
+00:05:05,520 --> 00:05:11,490
+We can do that using a projection and pass that to the find method.
+
+78
+00:05:11,490 --> 00:05:14,415
+As with most MongoDB query language syntax,
+
+79
+00:05:14,415 --> 00:05:18,365
+we define a projection as a document.
+
+80
+00:05:18,365 --> 00:05:23,010
+The semantics of this projection are that only the languages field for
+
+81
+00:05:23,010 --> 00:05:25,260
+any matching document should be
+
+82
+00:05:25,260 --> 00:05:28,780
+returned together with the title to provide a little context.
+
+83
+00:05:28,780 --> 00:05:31,830
+Find will accept the dictionary as
+
+84
+00:05:31,830 --> 00:05:38,190
+its second argument and interprets this as a projection specification.
+
+85
+00:05:38,190 --> 00:05:43,290
+In projections we want to use one for all fields to
+
+86
+00:05:43,290 --> 00:05:49,830
+explicitly include and zero for any fields you want to explicitly exclude.
+
+87
+00:05:49,830 --> 00:05:53,550
+If we only explicitly include fields as we've done here,
+
+88
+00:05:53,550 --> 00:05:57,615
+MongoDB assumes we want to exclude all others.
+
+89
+00:05:57,615 --> 00:06:03,835
+Running this we see now that our search results are much more readable.
+
+90
+00:06:03,835 --> 00:06:05,970
+However, I wasn't being precise when I said
+
+91
+00:06:05,970 --> 00:06:09,780
+that project would return only the languages and title fields.
+
+92
+00:06:09,780 --> 00:06:12,735
+The underscore ID field is special because
+
+93
+00:06:12,735 --> 00:06:15,960
+it is the unique identifier for all documents in a collection.
+
+94
+00:06:15,960 --> 00:06:18,345
+To eliminate the underscore ID field from a projection,
+
+95
+00:06:18,345 --> 00:06:20,385
+we must explicitly exclude it.
+
+96
+00:06:20,385 --> 00:06:22,845
+Let's do this and then run again.
+
+97
+00:06:22,845 --> 00:06:28,685
+There. Now we have just the title and languages field for each result document.
+
+98
+00:06:28,685 --> 00:06:31,840
+In addition to making results much more human readable,
+
+99
+00:06:31,840 --> 00:06:36,995
+projecting fields means that the other fields are not even returned from the server.
+
+100
+00:06:36,995 --> 00:06:39,505
+Each document here represents
+
+101
+00:06:39,505 --> 00:06:45,370
+an entire document matched by our filter but because of the projection we've
+
+102
+00:06:45,370 --> 00:06:49,530
+specified the server will only return the title and languages
+
+103
+00:06:49,530 --> 00:06:54,655
+fields rather than all of the data for each matching document.
+
+104
+00:06:54,655 --> 00:06:57,850
+So we can use projection to significantly reduce the amount of
+
+105
+00:06:57,850 --> 00:07:01,595
+data that gets transmitted between our client and the database server.
+
+106
+00:07:01,595 --> 00:07:04,310
+That's a pretty good overview of how to filter on array fields in
+
+107
+00:07:04,310 --> 00:07:07,530
+MongoDB and a brief introduction to projections.
+
+108
+00:07:07,530 --> 00:07:13,000
+We'll do a lot more work with both topics in this course in other lessons.

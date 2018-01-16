@@ -1,0 +1,669 @@
+1
+00:00:00,950 --> 00:00:06,242
+[SOUND] Hello this is week
+
+2
+00:00:06,242 --> 00:00:12,679
+six of Interactive Computer Graphics.
+
+3
+00:00:12,679 --> 00:00:17,160
+And the topic we'll discuss
+here is Computer-aided Design.
+
+4
+00:00:18,834 --> 00:00:24,000
+So, computer-aided design is a process
+of designing products using computers.
+
+5
+00:00:24,000 --> 00:00:27,630
+And today, almost all products
+are designed using computers.
+
+6
+00:00:27,630 --> 00:00:33,410
+Starting from home electronics or
+garments, or cars, and houses.
+
+7
+00:00:33,410 --> 00:00:36,650
+Everything is designed using a computer.
+
+8
+00:00:36,650 --> 00:00:40,120
+And physics,
+plays an important role in here, and
+
+9
+00:00:40,120 --> 00:00:43,840
+physics simulation is already
+heavily used in the design.
+
+10
+00:00:43,840 --> 00:00:50,550
+However, in most cases currently,
+physics analysis is done after modeling.
+
+11
+00:00:50,550 --> 00:00:56,930
+So a user or designers design a model and
+the modelers calibrate model.
+
+12
+00:00:56,930 --> 00:01:02,440
+And only after that, the model is
+transported into the physical simulation
+
+13
+00:01:02,440 --> 00:01:07,980
+system, and then, so people will analyze
+the property like collision, friction,
+
+14
+00:01:07,980 --> 00:01:10,460
+material property, gravity and so on.
+
+15
+00:01:10,460 --> 00:01:13,600
+And if there's a problem,
+go back to the design.
+
+16
+00:01:13,600 --> 00:01:17,650
+So, but this is useful for
+testing the validity afterwards, but
+
+17
+00:01:17,650 --> 00:01:22,830
+this is not very good for actively
+use physics into the design process.
+
+18
+00:01:24,550 --> 00:01:30,520
+So what we try to do here, is to integrate
+real-time physics into modeling.
+
+19
+00:01:30,520 --> 00:01:33,680
+So, so currently 3D model ignore physics.
+
+20
+00:01:33,680 --> 00:01:36,080
+Just specify x, y, z coordinates and
+
+21
+00:01:36,080 --> 00:01:40,120
+shapes, but
+here in the system we introduce here.
+
+22
+00:01:40,120 --> 00:01:44,830
+Are all integrates, 3D of physical
+assimilation into the modeling process, so
+
+23
+00:01:44,830 --> 00:01:49,471
+as user generates a model, of physical
+assimilation automatically checks
+
+24
+00:01:49,471 --> 00:01:51,806
+validity and then provides feedbacks.
+
+25
+00:01:51,806 --> 00:01:53,110
+So that's the basic idea.
+
+26
+00:01:53,110 --> 00:01:56,420
+And then we will show a couple
+of example systems here.
+
+27
+00:01:56,420 --> 00:01:59,630
+So, this is a list of topics
+we're discussing this week.
+
+28
+00:01:59,630 --> 00:02:02,890
+So one is cantilever design for
+architecture.
+
+29
+00:02:02,890 --> 00:02:06,650
+And design with music [INAUDIBLE]
+noble musical instruments and
+
+30
+00:02:06,650 --> 00:02:11,740
+garment design, furniture design and
+finally hobby glider design.
+
+31
+00:02:13,710 --> 00:02:15,970
+So the first one is cantilever design.
+
+32
+00:02:17,320 --> 00:02:21,360
+So this one is called responsive FEM,
+Finite Element Method, for
+
+33
+00:02:21,360 --> 00:02:25,530
+aiding interactive geometric modeling.
+
+34
+00:02:25,530 --> 00:02:26,750
+So the program we want today,
+
+35
+00:02:26,750 --> 00:02:32,800
+discuss here is design of a,
+physical with physical constraint.
+
+36
+00:02:32,800 --> 00:02:35,430
+Here, as an example is
+a cantilever design.
+
+37
+00:02:35,430 --> 00:02:38,380
+Suppose you have a vertical wall here.
+
+38
+00:02:38,380 --> 00:02:43,080
+And they have a horizontal
+steel bar attached to the wall.
+
+39
+00:02:44,160 --> 00:02:48,180
+So originally,
+the steel bar is connected vertically com,
+
+40
+00:02:48,180 --> 00:02:51,150
+completely horizontally,
+perpendicular to the wall.
+
+41
+00:02:51,150 --> 00:02:54,809
+But after construction,
+if you release your hand,
+
+42
+00:02:54,809 --> 00:02:59,270
+support material,
+gravity pulls the steel downwards.
+
+43
+00:02:59,270 --> 00:03:01,060
+So, this is of course exaggerated.
+
+44
+00:03:01,060 --> 00:03:03,910
+But in reality,
+there's always a deformation.
+
+45
+00:03:03,910 --> 00:03:08,390
+So the goal is to find the shape that di,
+
+46
+00:03:08,390 --> 00:03:13,670
+ended in a completely flat horizontal
+shape, after applying gravity.
+
+47
+00:03:13,670 --> 00:03:15,910
+So this is kind of
+difficult inverse problem.
+
+48
+00:03:18,040 --> 00:03:21,604
+A traditional approach is to run
+physical simulation after modeling.
+
+49
+00:03:21,604 --> 00:03:23,361
+So, use a space for the rest shape and
+
+50
+00:03:23,361 --> 00:03:26,150
+then physical simulation
+predicts what happens.
+
+51
+00:03:26,150 --> 00:03:29,334
+Looking at the result, user go back to the
+design phrase, and adjusts the shape and
+
+52
+00:03:29,334 --> 00:03:30,570
+they go to a simulation.
+
+53
+00:03:30,570 --> 00:03:35,790
+Now this kind of back and
+forth interaction is not very efficient.
+
+54
+00:03:36,800 --> 00:03:42,440
+So what we propose is to run physical
+simulation during modeling, specifically,
+
+55
+00:03:42,440 --> 00:03:46,710
+while the user is dragging one by one.
+
+56
+00:03:46,710 --> 00:03:49,270
+System should continuously
+provides feedback.
+
+57
+00:03:49,270 --> 00:03:54,500
+This way, you can just know
+when to release dragging.
+
+58
+00:03:54,500 --> 00:03:56,072
+So let me show you a demonstration.
+
+59
+00:04:04,950 --> 00:04:07,380
+So here is a demonstration.
+
+60
+00:04:07,380 --> 00:04:10,840
+So left side is original rest shape.
+
+61
+00:04:10,840 --> 00:04:16,170
+Then right side is after the gravity,
+is applied.
+
+62
+00:04:16,170 --> 00:04:19,130
+And here, the simulation is continuous,
+as a user.
+
+63
+00:04:19,130 --> 00:04:24,150
+So this is so natural, so smooth, it's
+very hard to see, but hard to appreciate.
+
+64
+00:04:24,150 --> 00:04:29,076
+But, as a user drags a system continuously
+physical simulation and continuously
+
+65
+00:04:29,076 --> 00:04:34,680
+presenting the deformed shape, after
+physical simulation, it's very, very fast.
+
+66
+00:04:34,680 --> 00:04:38,680
+So as a user change, the position
+system continuously updates lines many,
+
+67
+00:04:38,680 --> 00:04:40,090
+many simulations.
+
+68
+00:04:40,090 --> 00:04:42,770
+And the it shows a simulation result.
+
+69
+00:04:42,770 --> 00:04:43,440
+So it's so fast and
+
+70
+00:04:43,440 --> 00:04:48,930
+so smooth, so user actually looking at
+this simulation result, while dragging.
+
+71
+00:04:48,930 --> 00:04:52,694
+So simulation result is satisfactory,
+these are just stop dragging, and
+
+72
+00:04:52,694 --> 00:04:54,375
+you'll get the desired result.
+
+73
+00:05:02,365 --> 00:05:04,547
+So, that's the result, and
+
+74
+00:05:04,547 --> 00:05:10,640
+the other one that we use here is
+a standard finite element simulation.
+
+75
+00:05:10,640 --> 00:05:16,480
+So finite element simulation is to divide
+the domain, shape into small regions.
+
+76
+00:05:16,480 --> 00:05:18,610
+In this case triangle regions.
+
+77
+00:05:18,610 --> 00:05:26,520
+And then compute physical equations
+on this matrix on these systems.
+
+78
+00:05:26,520 --> 00:05:28,900
+On the internally, this is a kind of many,
+
+79
+00:05:28,900 --> 00:05:33,665
+many it's internally
+essentially it solves.
+
+80
+00:05:33,665 --> 00:05:37,436
+Huge linear equations, and
+actually handling matrices.
+
+81
+00:05:37,436 --> 00:05:41,860
+And in order to accelerate this
+computation in this kind of
+
+82
+00:05:41,860 --> 00:05:47,390
+direct manipulation editing,
+what we use, what we use is here.
+
+83
+00:05:47,390 --> 00:05:50,530
+Reusing of intermediate
+computation results.
+
+84
+00:05:50,530 --> 00:05:53,231
+So, traditionally it's too slow to hm,
+
+85
+00:05:53,231 --> 00:05:58,300
+run this kind of physi,
+simulation from scratch each, each frame.
+
+86
+00:05:58,300 --> 00:06:01,450
+But in this example,
+in this modeling task, you know,
+
+87
+00:06:01,450 --> 00:06:04,640
+you have the previous step for
+simulation result.
+
+88
+00:06:04,640 --> 00:06:09,142
+And compared to the previous simulation
+result, [INAUDIBLE] only a slight change,
+
+89
+00:06:09,142 --> 00:06:10,170
+you know?
+
+90
+00:06:10,170 --> 00:06:13,190
+Dragging single bar this,
+the change is very small.
+
+91
+00:06:13,190 --> 00:06:15,790
+So you can reuse most of
+the previous computation.
+
+92
+00:06:15,790 --> 00:06:19,910
+So that's a topic trick we use, we use.
+
+93
+00:06:19,910 --> 00:06:22,080
+Now, this is a little bit more details.
+
+94
+00:06:22,080 --> 00:06:25,110
+So, of course it's not possible
+to explain everything,
+
+95
+00:06:25,110 --> 00:06:28,230
+because we skipped the exponential
+finite element measure.
+
+96
+00:06:28,230 --> 00:06:29,940
+It's a little bit complicated.
+
+97
+00:06:29,940 --> 00:06:32,585
+But still, you can get the general idea.
+
+98
+00:06:32,585 --> 00:06:38,030
+So left hand side uses a coefficient
+matrix a, reconditioned matrix x.
+
+99
+00:06:38,030 --> 00:06:41,260
+So, we do not describe
+details about these other ma,
+
+100
+00:06:41,260 --> 00:06:45,570
+matrix structure we use in
+the computation of this simulation.
+
+101
+00:06:45,570 --> 00:06:49,990
+And also, matrix has a value list and
+their structure, and the body list,
+
+102
+00:06:49,990 --> 00:06:50,740
+and structure.
+
+103
+00:06:50,740 --> 00:06:54,190
+So these information
+are heavily used in the system.
+
+104
+00:06:54,190 --> 00:06:58,370
+And construction,
+of this information is time consuming.
+
+105
+00:06:58,370 --> 00:07:03,230
+So in the idle time, nothing happened, so
+we can reuse old intermediate structure.
+
+106
+00:07:04,540 --> 00:07:10,330
+And in the during dragging, we divided
+the dragging depending with the distance.
+
+107
+00:07:10,330 --> 00:07:14,360
+When the dragging operation is very small,
+very small relocation,
+
+108
+00:07:14,360 --> 00:07:18,760
+then what's the system is do just
+updates the mash-mish vertices.
+
+109
+00:07:18,760 --> 00:07:21,220
+And almost all information will be used.
+
+110
+00:07:21,220 --> 00:07:26,408
+As a user drags more and more, then,
+simple vertex relocation doesn't work, so
+
+111
+00:07:26,408 --> 00:07:29,807
+system tries the update,
+while it finds a topology.
+
+112
+00:07:29,807 --> 00:07:34,774
+But after a while, if the deformation
+still rise, then simple relocation and
+
+113
+00:07:34,774 --> 00:07:38,310
+simple topology changes nothing there,
+so system re,
+
+114
+00:07:38,310 --> 00:07:44,830
+reconstructs So this is what is happening,
+behind the scene, in this example.
+
+115
+00:07:44,830 --> 00:07:48,390
+And internally,
+if the relocation is very small.
+
+116
+00:07:48,390 --> 00:07:53,390
+Then only, system only,
+recomputes a value list of its matrix A.
+
+117
+00:07:53,390 --> 00:07:57,370
+And if you change the topology,
+you have to refresh all the coe,
+
+118
+00:07:57,370 --> 00:07:59,750
+coef, coefficient matrix A.
+
+119
+00:07:59,750 --> 00:08:03,570
+But you can reuse
+the pre-condition matrix B.
+
+120
+00:08:03,570 --> 00:08:06,570
+But after the reconstruction
+everything is re-computed.
+
+121
+00:08:06,570 --> 00:08:10,374
+So this is equivalent to [INAUDIBLE]
+simulation from scratch.
+
+122
+00:08:10,374 --> 00:08:14,820
+But this happens very rarely.
+
+123
+00:08:14,820 --> 00:08:17,100
+So this is a very short section, but
+
+124
+00:08:17,100 --> 00:08:22,100
+summary is to introduce cantilever design
+with concurrent physical simulation.
+
+125
+00:08:22,100 --> 00:08:25,793
+So you can change the shape while
+watching a simulation result.
+
+126
+00:08:25,793 --> 00:08:30,509
+And internally, most important point
+is that we apply multi-level reuse,
+
+127
+00:08:30,509 --> 00:08:33,630
+of intermediate computation result.
+
+128
+00:08:33,630 --> 00:08:37,850
+More specifically internal large matrixes,
+matrices.
+
+129
+00:08:37,850 --> 00:08:39,090
+For efficient computation.
+
+130
+00:08:40,350 --> 00:08:43,301
+So original paper is available
+as Responsive FEM for
+
+131
+00:08:43,301 --> 00:08:46,530
+Aiding Interactive Geometric Modeling.
+
+132
+00:08:46,530 --> 00:08:49,145
+We discussed many other
+examples too there.
+
+133
+00:08:49,145 --> 00:08:51,650
+And finite element method is an est,
+established method and
+
+134
+00:08:51,650 --> 00:08:52,787
+there are many textbooks.
+
+135
+00:08:52,787 --> 00:08:56,632
+One example is this one,
+the finite element method.
+
+136
+00:08:56,632 --> 00:08:57,230
+It's basis on the fundamentals.
+
+137
+00:08:59,830 --> 00:09:04,010
+And structural optimization is often
+discussed in computer graphics.
+
+138
+00:09:04,010 --> 00:09:05,710
+One example is this one.
+
+139
+00:09:05,710 --> 00:09:09,680
+A procedure modeling of structurally
+sound masonry buildings.
+
+140
+00:09:09,680 --> 00:09:13,870
+So this one is the kind of
+physics aware 3D modeling.
+
+141
+00:09:13,870 --> 00:09:17,650
+However, there is also just
+automatic optimization, and
+
+142
+00:09:17,650 --> 00:09:22,670
+did not discuss interme not bring
+the feedback to end user manipulation.
+
+143
+00:09:22,670 --> 00:09:23,430
+Thank you.

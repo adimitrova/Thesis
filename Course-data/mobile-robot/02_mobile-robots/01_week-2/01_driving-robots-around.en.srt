@@ -1,0 +1,358 @@
+1
+00:00:00,012 --> 00:00:05,470
+So, welcome to Module 2 of the course,
+Control of Mobile Robots. In Module 1, we
+
+2
+00:00:05,482 --> 00:00:10,435
+introduced control theory as a way of
+dealing with the systems in general. And
+
+3
+00:00:10,447 --> 00:00:14,782
+in this module, we're going to introduce
+mobile robots as the key target
+
+4
+00:00:14,794 --> 00:00:21,743
+application of the course. And what we're
+going to do is start with a very simple
+
+5
+00:00:21,755 --> 00:00:29,150
+question. How do I drive a robot from
+point A to point B, or in this case from a
+
+6
+00:00:29,162 --> 00:00:35,056
+blue ball to a yellow sun? And the first
+question we need to understand before we
+
+7
+00:00:35,068 --> 00:00:38,922
+can even answer how to drive it is what do
+we need? Well obviously, we need to
+
+8
+00:00:38,934 --> 00:00:43,205
+measure where the sun is or the goal point
+is, and somehow turn this into the control
+
+9
+00:00:43,217 --> 00:00:47,357
+actions. So, we've taken the information
+from the sun and we're feeding it into the
+
+10
+00:00:47,369 --> 00:00:51,534
+controller. So, one of the things we need
+is to design the controller which we kind
+
+11
+00:00:51,546 --> 00:00:56,630
+of know a little bit about already. We
+also need to understand what information
+
+12
+00:00:56,642 --> 00:01:02,030
+the robot actually has. So, we're going to
+have to discuss a little bit about how do
+
+13
+00:01:02,042 --> 00:01:07,730
+robots actually gain information about the
+world. And, of course, for that, we need
+
+14
+00:01:07,742 --> 00:01:12,713
+sensors. So, we need to discuss sensor
+models at the sufficient level of
+
+15
+00:01:12,725 --> 00:01:16,973
+abstraction so that we can reason about
+them, but they need to be rich enough so
+
+16
+00:01:16,985 --> 00:01:20,947
+that we can trust that the information
+that our controller is based on, is
+
+17
+00:01:20,959 --> 00:01:25,679
+actually something that the robot has. And
+then finally, in order for the controllers
+
+18
+00:01:25,691 --> 00:01:29,619
+to be useful, we need to be able to
+basically predict how they're going to
+
+19
+00:01:29,631 --> 00:01:34,325
+influence the robot. So, we're going to
+need models. So, what I'm going to do in
+
+20
+00:01:34,337 --> 00:01:39,507
+this module is to discuss robot models
+and, in particular, we're going to look at
+
+21
+00:01:39,519 --> 00:01:45,232
+differential drive robot mobile robots and
+we're going to discuss sensors. And we're
+
+22
+00:01:45,244 --> 00:01:50,794
+going to look at sensors that allow us to
+gain information about the world around us
+
+23
+00:01:50,806 --> 00:01:56,105
+and sensors that allow us to know
+something about our internal state. For
+
+24
+00:01:56,117 --> 00:02:01,933
+instance, where is the robot? what we will
+not do is any advanced perception. We're
+
+25
+00:02:01,945 --> 00:02:06,921
+just going to look at the abstracted
+sensor models that give us the type of, of
+
+26
+00:02:06,921 --> 00:02:12,223
+infor mation that we want. But before we
+even do that, whenever you try to design
+
+27
+00:02:12,235 --> 00:02:17,729
+controllers for robots that drive around
+in the world, there are two facts that you
+
+28
+00:02:17,741 --> 00:02:23,062
+really have to embrace. And the first is
+that the world is fundamentally unknown.
+
+29
+00:02:23,173 --> 00:02:28,106
+You're not going to know where every chair
+in the building is. You're not going to
+
+30
+00:02:28,118 --> 00:02:32,496
+know where every tree in the forest is
+when you're out driving in the forest. So,
+
+31
+00:02:32,594 --> 00:02:36,800
+there's no way you can plan in advance
+exactly what the robot should be doing.
+
+32
+00:02:36,898 --> 00:02:41,496
+The second is, people move chairs. People
+move around. The wind makes trees blow ,
+
+33
+00:02:41,496 --> 00:02:45,254
+or sway.
+So, the world is actually changing and
+
+34
+00:02:45,266 --> 00:02:51,206
+dynamic. And for that reason, it's also a
+bad idea to try to produce, in advance, a
+
+35
+00:02:51,218 --> 00:02:57,388
+very complicated monolithic controller for
+doing everything. So instead, what we do
+
+36
+00:02:57,400 --> 00:03:02,734
+in robotics, a lot of times, is we divide
+the control task into chunks and then
+
+37
+00:03:02,746 --> 00:03:07,053
+we'll design controllers for those
+individual chunks. So, for instance, if
+
+38
+00:03:07,065 --> 00:03:11,900
+I'm a robot trying to get to a goal, I may
+have some kind of controller that's taking
+
+39
+00:03:11,912 --> 00:03:16,357
+me to the goal and then when something
+shows up in the environment, I switch to
+
+40
+00:03:16,369 --> 00:03:21,041
+another controller that allows me to avoid
+that thing in the environment. And, in
+
+41
+00:03:21,053 --> 00:03:25,864
+fact these primitive building blocks that
+from our point of view are different
+
+42
+00:03:25,876 --> 00:03:30,362
+controllers, in robotics, they're called
+behaviors. So, behaviors are going to be
+
+43
+00:03:30,374 --> 00:03:34,716
+key concepts in this course and we're
+going to design quite a few of them. And I
+
+44
+00:03:34,728 --> 00:03:38,970
+just want to mention a handful of very
+standard behaviors that we will indeed
+
+45
+00:03:38,982 --> 00:03:43,299
+see. Go-to-goal is the most basic one,
+which means drive to a, a waypoint or
+
+46
+00:03:43,311 --> 00:03:47,478
+target location. Avoid-obstacles is
+absolutely crucial meaning, don't slam
+
+47
+00:03:47,490 --> 00:03:51,527
+into things on the way over there. Then if
+you're in, you know, an office
+
+48
+00:03:51,539 --> 00:03:55,806
+environment, you know that the world is
+typically straight lines, walls, so
+
+49
+00:03:55,818 --> 00:04:00,210
+follow-wall is not a bad type of behavior
+to have. If the goal is moving, you may
+
+50
+00:04:00,222 --> 00:04:04,442
+want to track it instead of going to just
+static goal, and so forth, and so forth.
+
+51
+00:04:04,540 --> 00:04:07,721
+We'll see quite a few of these different
+beha viors.
+
+52
+00:04:07,738 --> 00:04:12,020
+And I would like to start with a video
+here of a robot that I was developing or
+
+53
+00:04:12,032 --> 00:04:16,661
+working on, that used camera information
+to build up a map of what the world looked
+
+54
+00:04:16,673 --> 00:04:21,203
+like and here is what the robot is doing
+when it's based on a planner. Here's, it's
+
+55
+00:04:21,215 --> 00:04:25,782
+seeing something and it's kind of putting
+it in the map and then it's thinking up a
+
+56
+00:04:25,794 --> 00:04:30,262
+new long plan to, for the robot to take.
+So basically, you saw the robot spending
+
+57
+00:04:30,274 --> 00:04:35,522
+a, a large amount of time dealing with new
+information because it had to re-plan. So
+
+58
+00:04:35,534 --> 00:04:40,253
+now, we're running to exact same thing
+with behaviors. So, we're following a plan
+
+59
+00:04:40,265 --> 00:04:44,827
+or just, in fact, follow plan behavior and
+then when something pops up, we're
+
+60
+00:04:44,839 --> 00:04:49,385
+switching to an avoid-obstacle behavior.
+So now, the same things which is up in
+
+61
+00:04:49,397 --> 00:04:53,841
+the, or shows up to the robot. Instead of
+the robot sitting around thinking for a
+
+62
+00:04:53,853 --> 00:04:58,086
+long time, it just avoids it. And once
+it's clear, it goes back to following the,
+
+63
+00:04:58,181 --> 00:05:01,875
+the, the plan. So, this would be an
+example of why behaviors are really
+
+64
+00:05:01,887 --> 00:05:06,244
+useful. Here is another example. This is
+actually a segway robot, so the dynamics
+
+65
+00:05:06,256 --> 00:05:11,137
+is very complicated. And never mind the,
+the moving graphs in the lower, lower part
+
+66
+00:05:11,149 --> 00:05:15,707
+of the picture. What I want you to see is
+that this robot is actually, in this case,
+
+67
+00:05:15,719 --> 00:05:20,316
+switching between different arc behaviors.
+So, there are different arcs that the
+
+68
+00:05:20,328 --> 00:05:24,987
+robot can take and the behaviors, in this
+case, are follow various arcs. So now, you
+
+69
+00:05:24,999 --> 00:05:29,381
+can put behaviors that are not as simple
+as just go-to-goal and instead, the
+
+70
+00:05:29,393 --> 00:05:34,893
+behaviors would be arcs of various sizes
+and shapes. And we will become quite good
+
+71
+00:05:34,905 --> 00:05:40,416
+at understanding how to design these
+individual behaviors, and as well, how to
+
+72
+00:05:40,428 --> 00:05:41,324
+combine them.

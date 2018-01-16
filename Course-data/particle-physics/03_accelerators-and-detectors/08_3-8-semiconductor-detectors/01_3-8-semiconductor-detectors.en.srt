@@ -1,0 +1,439 @@
+1
+00:00:00,000 --> 00:00:10,930
+[MUSIC]
+
+2
+00:00:10,930 --> 00:00:14,766
+In this module, we touch the basics
+of particle acceleration and
+
+3
+00:00:14,766 --> 00:00:16,690
+detection methods.
+
+4
+00:00:16,690 --> 00:00:20,670
+In this video, we will continue our
+discussion on particle detection
+
+5
+00:00:20,670 --> 00:00:24,956
+techniques with semiconductor devices.
+
+6
+00:00:24,956 --> 00:00:29,580
+After having watched this video, you will
+know how semiconductor detectors detect
+
+7
+00:00:29,580 --> 00:00:34,210
+the ionization caused by
+traversing charged particles.
+
+8
+00:00:34,210 --> 00:00:37,790
+And how this is used to
+identify charged particles and
+
+9
+00:00:37,790 --> 00:00:39,930
+to measure their trajectories.
+
+10
+00:00:41,070 --> 00:00:45,640
+This particular type of ionization
+detectors uses the properties of
+
+11
+00:00:45,640 --> 00:00:51,410
+semiconductors to detect and measure
+dE/dx of charged particles.
+
+12
+00:00:51,410 --> 00:00:54,100
+When a charged particle
+traverses a semiconductor,
+
+13
+00:00:54,100 --> 00:00:58,110
+it will create an electron-hole pair.
+
+14
+00:00:58,110 --> 00:01:01,270
+Since the conduction band is
+close to the valence band,
+
+15
+00:01:01,270 --> 00:01:05,820
+it takes only 3 eV of dE/dx to create a pair
+
+16
+00:01:05,820 --> 00:01:11,230
+compared to the 30 eV to ionize a gas atom.
+
+17
+00:01:11,230 --> 00:01:15,140
+The charges can be detected by
+applying an electric field.
+
+18
+00:01:15,140 --> 00:01:18,535
+Semiconductor detectors have
+very good energy resolution.
+
+19
+00:01:18,535 --> 00:01:21,630
+They are compact since
+they are made of a solid.
+
+20
+00:01:21,630 --> 00:01:26,730
+They are thin with a required thickness
+much smaller than their additional length.
+
+21
+00:01:26,730 --> 00:01:31,407
+The special resolution is in
+the order of micrometers, ideal for
+
+22
+00:01:31,407 --> 00:01:33,200
+a tracking detectors.
+
+23
+00:01:33,200 --> 00:01:37,790
+And also they produce fast signals,
+however they are expensive.
+
+24
+00:01:37,790 --> 00:01:43,041
+They are fragile to make mechanical,
+chemical and electrical impacts,
+
+25
+00:01:43,041 --> 00:01:47,480
+and their performance is
+degraded by irradiation.
+
+26
+00:01:47,480 --> 00:01:52,423
+The basis of a semi-conductor detector
+is a p-n junction with reverse bias.
+
+27
+00:01:52,423 --> 00:01:56,818
+When two different semi conductor types,
+n and p, are in contact,
+
+28
+00:01:56,818 --> 00:02:02,240
+diffusion creates a zone free of charge
+carriers around the contact surface.
+
+29
+00:02:02,240 --> 00:02:06,750
+A depletion zone forms at the junction,
+creating a potential barrier,
+
+30
+00:02:06,750 --> 00:02:10,780
+which prevents conduction
+between the two semiconductors.
+
+31
+00:02:10,780 --> 00:02:16,170
+The application of a reverse bias
+voltage widens the depletion zone,
+
+32
+00:02:16,170 --> 00:02:19,180
+and this is how semiconductor diodes work.
+
+33
+00:02:19,180 --> 00:02:23,103
+The passage of ionizing particles
+liberates electron-hole pairs in
+
+34
+00:02:23,103 --> 00:02:25,060
+the depletion zone.
+
+35
+00:02:25,060 --> 00:02:27,560
+Charge are collected to both ends, and
+
+36
+00:02:27,560 --> 00:02:31,700
+the diode conducts a small current for
+a short time.
+
+37
+00:02:31,700 --> 00:02:36,860
+Semiconductor detectors have a good
+efficiency since only 3 eV
+
+38
+00:02:36,860 --> 00:02:39,930
+are necessary to create
+a single electron-hole pair.
+
+39
+00:02:41,290 --> 00:02:46,462
+So, these detectors are ten
+times more sensitive than a gas,
+
+40
+00:02:46,462 --> 00:02:49,450
+and a hundred times more
+sensitive than a scintillator.
+
+41
+00:02:50,490 --> 00:02:54,650
+It, therefore, has a lower detection
+threshold and a better energy resolution
+
+42
+00:02:54,650 --> 00:02:59,270
+since more primary ionization
+means less signal fluctuations.
+
+43
+00:03:00,510 --> 00:03:05,146
+The threshold for dE/dx is
+very low, so that is a good linearity.
+
+44
+00:03:05,146 --> 00:03:08,762
+However, to measure
+highly ionizing particles
+
+45
+00:03:08,762 --> 00:03:13,363
+requires a large dynamic range of
+readout electronics since dE/dx
+
+46
+00:03:13,363 --> 00:03:18,840
+is proportional to the square
+of the charge of the particle.
+
+47
+00:03:18,840 --> 00:03:21,900
+Even if the junction is in reverse bias,
+
+48
+00:03:21,900 --> 00:03:27,100
+there is still a small current of the
+order of nA through the junction.
+
+49
+00:03:27,100 --> 00:03:31,560
+This is called leakage current and
+it is due to the motion
+
+50
+00:03:31,560 --> 00:03:36,480
+of minority careers, effects
+of impurities and surface effects.
+
+51
+00:03:37,810 --> 00:03:41,630
+The time of the electrical signal
+is of the order of nano seconds.
+
+52
+00:03:41,630 --> 00:03:46,007
+So semi conductor detectors are as fast as
+
+53
+00:03:46,007 --> 00:03:51,520
+scintillators which we will
+discuss in the next video.
+
+54
+00:03:51,520 --> 00:03:55,420
+The energy deposition by
+the dE/dx is very local.
+
+55
+00:03:55,420 --> 00:03:58,329
+Therefore, the electrodes
+can be structured in one or
+
+56
+00:03:58,329 --> 00:04:01,290
+both sides to locate
+the passage of particles.
+
+57
+00:04:01,290 --> 00:04:03,420
+The distance of metalized structures,
+
+58
+00:04:03,420 --> 00:04:09,420
+called strips, is typically of
+the order of 50 µm.
+
+59
+00:04:09,420 --> 00:04:14,947
+And in this picture, you see an example
+of silicone microstrip sensor
+
+60
+00:04:14,947 --> 00:04:20,460
+of the AMS detector which is operating
+on the International Space Station and
+
+61
+00:04:20,460 --> 00:04:24,670
+of the ALICE detector operating
+at the Large Hadron Collider.
+
+62
+00:04:24,670 --> 00:04:29,402
+Each channel of the metallic structure
+must be connected to the readout
+
+63
+00:04:29,402 --> 00:04:32,367
+electronics through micro bonding.
+
+64
+00:04:34,721 --> 00:04:41,960
+Applications of a semiconductor detector
+in particle physics include the following.
+
+65
+00:04:41,960 --> 00:04:47,540
+They are used arranged in layers to measure
+the trajectory of charged particles.
+
+66
+00:04:47,540 --> 00:04:52,610
+And this profits from the development in
+micro electronic technology to fabricate
+
+67
+00:04:52,610 --> 00:04:58,020
+precise structures on silicon and
+other semiconductor materials.
+
+68
+00:04:58,020 --> 00:05:01,862
+Example are microstrip detectors
+used in the ATLAS
+
+69
+00:05:01,862 --> 00:05:05,170
+at the Large Hadron Collider and in AMS.
+
+70
+00:05:05,170 --> 00:05:10,230
+Pixel detectors which are being used for
+the first time at LHC.
+
+71
+00:05:10,230 --> 00:05:16,660
+Charged coupled devices, CCD, used in
+digital cameras, and many others.
+
+72
+00:05:16,660 --> 00:05:20,560
+Semi conductor detectors also
+measure the deposited element.
+
+73
+00:05:20,560 --> 00:05:24,800
+Their excellent resolution allows
+the identification of the charge of
+
+74
+00:05:24,800 --> 00:05:27,420
+the penetrating particle
+in a tracking device.
+
+75
+00:05:28,450 --> 00:05:31,390
+They can also be sensitive
+elements in a calorimeter.
+
+76
+00:05:32,690 --> 00:05:38,823
+This application is only limited
+by the thickness of the depletion
+
+77
+00:05:38,823 --> 00:05:45,180
+zone which goes from 50 micrometers
+up to order of millimeters and
+
+78
+00:05:45,180 --> 00:05:51,217
+the maximum chip size that can be produced
+which is about 50 centimeters squared.
+
+79
+00:05:51,217 --> 00:05:56,004
+Here is an example of a silicon wafer,
+
+80
+00:05:56,004 --> 00:06:00,417
+so the big rectangle at the center.
+And the sides,
+
+81
+00:06:00,417 --> 00:06:05,583
+they are testing circuits which
+allow to test the quality
+
+82
+00:06:05,583 --> 00:06:11,950
+of the sensor before using
+it to assemble a detecting unit.
+
+83
+00:06:13,590 --> 00:06:16,310
+Before using it,
+one must cut the sensor.
+
+84
+00:06:16,310 --> 00:06:20,450
+And this is an example of a cut sensor.
+
+85
+00:06:22,710 --> 00:06:27,620
+And usually, one connects several
+sensors together to build
+
+86
+00:06:27,620 --> 00:06:32,450
+the detection unit like this
+one where there are two
+
+87
+00:06:32,450 --> 00:06:37,240
+silicon sensors connected at
+the middle by micro bonding and
+
+88
+00:06:37,240 --> 00:06:43,650
+at the one end micro bonding connects
+them to the readout electronics.
+
+89
+00:06:46,680 --> 00:06:51,504
+More example of applications
+using semi-conductor
+
+90
+00:06:51,504 --> 00:06:54,857
+sensors will be shown in video 3.10.
+
+91
+00:06:54,857 --> 00:07:00,963
+In the next video, we'll first talk about
+the scintillators and Cherenkov detectors.
+
+92
+00:07:00,963 --> 00:07:06,989
+[MUSIC]

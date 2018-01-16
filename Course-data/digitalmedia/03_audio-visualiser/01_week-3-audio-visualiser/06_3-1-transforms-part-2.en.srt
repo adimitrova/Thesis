@@ -1,0 +1,336 @@
+1
+00:00:04,386 --> 00:00:18,803
+[SOUND]. 
+
+2
+00:00:18,803 --> 00:00:23,111
+So transforms are great because. 
+And in fact everything if we do a 
+
+3
+00:00:23,111 --> 00:00:27,272
+transloate it will move everything we 
+draw after but what if we do one 
+
+4
+00:00:27,272 --> 00:00:33,486
+translate after another like this. 
+Well the most obvious thing that happens 
+
+5
+00:00:33,486 --> 00:00:39,959
+is that we move and move again. 
+But what exactly is happening there. 
+
+6
+00:00:41,820 --> 00:00:46,095
+When we call the translate command. 
+Everything after the call back command is 
+
+7
+00:00:46,095 --> 00:00:50,605
+affected by the translate including any 
+other translates we do. 
+
+8
+00:00:50,605 --> 00:00:57,919
+So, if we look at the second the second 
+translate that's a movement of any object 
+
+9
+00:00:57,919 --> 00:01:04,500
+that have. 
+But that is also affected by the first 
+
+10
+00:01:04,500 --> 00:01:09,190
+translate, the first translate and its, 
+and its mean to the first translate will 
+
+11
+00:01:09,190 --> 00:01:13,460
+happen to the second translate and the 
+starting point is 0 by 0 point of the 
+
+12
+00:01:13,460 --> 00:01:20,630
+second translate will be affected that of 
+the first translate. 
+
+13
+00:01:20,630 --> 00:01:24,012
+So. 
+What happens is that you, the effect of 
+
+14
+00:01:24,012 --> 00:01:28,440
+the fir, of the first translator is 
+applied to the second translator. 
+
+15
+00:01:28,440 --> 00:01:33,948
+Which, kind of feels more naturally like 
+saying that well The second translate is 
+
+16
+00:01:33,948 --> 00:01:38,991
+actually happening first. 
+Instead of happening to the object, and 
+
+17
+00:01:38,991 --> 00:01:43,630
+then it's going to be translated by the, 
+by the [UNKNOWN] first translate. 
+
+18
+00:01:43,630 --> 00:01:47,020
+We often think of translates, transforms 
+happening in the opposite order. 
+
+19
+00:01:47,020 --> 00:01:49,420
+So what happens if we do a translate 
+followed by a rotate? 
+
+20
+00:01:51,640 --> 00:01:55,480
+Well, the rotate spins around, that's 
+fine. 
+
+21
+00:01:55,480 --> 00:01:58,860
+But if we've got a translate happening 
+before that rotates. 
+
+22
+00:01:58,860 --> 00:02:03,842
+Then we're going to have a movement 
+applies to the 0, o point of our rotate. 
+
+23
+00:02:03,842 --> 00:02:07,825
+So the 0-0 point of the rotate is 
+going to be moved. 
+
+24
+00:02:07,825 --> 00:02:11,830
+in much the same way as we just saw with 
+the 2 translates. 
+
+25
+00:02:11,830 --> 00:02:14,804
+They're applying one after the other. 
+And it's kind of like they're playing 
+
+26
+00:02:14,804 --> 00:02:18,476
+backwards. 
+But what if we do it the other way 
+
+27
+00:02:18,476 --> 00:02:23,620
+around? 
+Well, we put a translate and movement. 
+
+28
+00:02:24,660 --> 00:02:29,640
+And then put a rotate applies to the zero 
+zero point of that translate. 
+
+29
+00:02:32,780 --> 00:02:37,540
+What happens is that the zero zero of the 
+translate. 
+
+30
+00:02:37,540 --> 00:02:41,525
+Is rotated relatively to the 0 0 point of 
+the screen. 
+
+31
+00:02:41,525 --> 00:02:47,570
+So actually we're it's like, I'm taking 
+an object arms length and translate it 
+
+32
+00:02:47,570 --> 00:02:54,626
+and then I spin it around. 
+So it's spinning from the starting point 
+
+33
+00:02:54,626 --> 00:02:59,320
+of the translate. 
+Not through the center of the object. 
+
+34
+00:02:59,320 --> 00:03:02,015
+So doing those two transforms in 
+different orders has a radically 
+
+35
+00:03:02,015 --> 00:03:06,754
+different effect. 
+If I or for example this bottle of water, 
+
+36
+00:03:06,754 --> 00:03:11,746
+if I apply the translate first rotate 
+second which basically means the other 
+
+37
+00:03:11,746 --> 00:03:16,165
+way around. 
+I would take and I would translate Well, 
+
+38
+00:03:16,165 --> 00:03:19,060
+I would take something and then I 
+translate. 
+
+39
+00:03:19,060 --> 00:03:23,694
+I move out. 
+But if I do it the other way around, then 
+
+40
+00:03:23,694 --> 00:03:29,632
+I translate first and then I rotate. 
+And I'm making, the rotate isn't just a 
+
+41
+00:03:29,632 --> 00:03:32,730
+simply spinning around the center of the 
+object. 
+
+42
+00:03:32,730 --> 00:03:39,178
+It's actually a big movement in space. 
+So the first thing to remember is that 
+
+43
+00:03:39,178 --> 00:03:43,190
+you kind of think of them in the opposite 
+order if you have to think about 
+
+44
+00:03:43,190 --> 00:03:47,882
+transforms it makes more sense to think 
+they're happening backwards but the other 
+
+45
+00:03:47,882 --> 00:03:55,870
+thing to think about is is well, what if 
+I want to move 2 objects. 
+
+46
+00:03:55,870 --> 00:03:59,200
+Well, if you want to move them together, 
+that's easy, we can translate. 
+
+47
+00:03:59,200 --> 00:04:00,880
+But what if you got to move them 
+separately. 
+
+48
+00:04:02,120 --> 00:04:05,846
+very often you'll have two objects, the 
+same two cars, two crates, whatever and 
+
+49
+00:04:05,846 --> 00:04:09,950
+you just want, want to move one [UNKNOWN] 
+to move the other. 
+
+50
+00:04:09,950 --> 00:04:14,810
+If I'm applying a translate. 
+Then, everything that happens after that 
+
+51
+00:04:14,810 --> 00:04:16,550
+translation is going to be affected by 
+it. 
+
+52
+00:04:16,550 --> 00:04:20,519
+So I translate the first object the 
+circle here then the square is also going 
+
+53
+00:04:20,519 --> 00:04:24,950
+to get affect but if I want to move it 
+independeantly. 
+
+54
+00:04:24,950 --> 00:04:31,720
+Well we use a command a called push 
+matrix and pop matrix 
+
+55
+00:04:31,720 --> 00:04:36,344
+I won't go into the mathematical details, 
+but transforms are implemented using a 
+
+56
+00:04:36,344 --> 00:04:40,968
+bit of maths called a matrix And when it 
+call upon the pushMatrix, we're basically 
+
+57
+00:04:40,968 --> 00:04:47,560
+creating a new matrix that we're adding 
+all our new transforms to. 
+
+58
+00:04:47,560 --> 00:04:51,336
+When we call popMatrix, any transforms 
+that we've added since we added push, 
+
+59
+00:04:51,336 --> 00:04:54,506
+pushMatrix. 
+[INAUDIBLE] will get canceled, because 
+
+60
+00:04:54,506 --> 00:04:57,965
+we're removing that matrix. 
+So push matrix and pop matrix are a way 
+
+61
+00:04:57,965 --> 00:05:03,714
+of limiting the effect of transforms. 
+Any, in fact, transforms that happen 
+
+62
+00:05:03,714 --> 00:05:09,720
+after push matrix will automatically be 
+removed, once you call pop matrix. 
+
+63
+00:05:09,720 --> 00:05:13,990
+that [INAUDIBLE] gives you a nice way. 
+Of independently moving objects. 
+
+64
+00:05:15,640 --> 00:05:18,629
+You pushmatrix, you do whatever 
+transforms you like, you draw the object 
+
+65
+00:05:18,629 --> 00:05:23,800
+and then you pop matrix. 
+Then the next object, you do exactly the 
+
+66
+00:05:23,800 --> 00:05:31,213
+same thing, pushmatrix, transform it, 
+draw it and then pop matrix. 
+
+67
+00:05:31,213 --> 00:05:34,038
+[MUSIC] 
+
+68
+00:05:34,038 --> 00:05:36,865
+[MUSIC] 

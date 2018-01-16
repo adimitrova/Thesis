@@ -1,0 +1,613 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:11,039 --> 00:00:15,008
+In this fifth module we are discussing
+the structure of hadrons and
+
+3
+00:00:15,008 --> 00:00:16,461
+strong interactions.
+
+4
+00:00:16,461 --> 00:00:21,502
+In this second video we discuss
+inelastic scattering between electrons and
+
+5
+00:00:21,502 --> 00:00:25,210
+nucleons and what one can learn from that.
+
+6
+00:00:25,210 --> 00:00:26,580
+After following this video,
+
+7
+00:00:26,580 --> 00:00:30,960
+you will know about resonances
+as excited states of nucleons.
+
+8
+00:00:31,970 --> 00:00:36,370
+Dee inelastic scattering and
+nucleon structure functions.
+
+9
+00:00:36,370 --> 00:00:39,850
+And the so.called scaling
+hypothesis as evidence for
+
+10
+00:00:39,850 --> 00:00:42,870
+substructures inside the nucleon,
+
+11
+00:00:42,870 --> 00:00:46,670
+as well as the role and
+distribution of quarks in the nucleon.
+
+12
+00:00:48,380 --> 00:00:54,372
+Form factors decrease rapidly with
+q^2 like we showed in video 5.1.
+
+13
+00:00:54,372 --> 00:00:57,460
+Consequently, the probability
+
+14
+00:00:57,460 --> 00:01:02,800
+to observe an elastic scattering
+becomes low at high energy-momentum transfer.
+
+15
+00:01:02,800 --> 00:01:04,240
+This is not surprising.
+
+16
+00:01:04,240 --> 00:01:08,090
+Large q^2 corresponds to
+a short photon wavelength,
+
+17
+00:01:08,090 --> 00:01:09,260
+which is then more and
+
+18
+00:01:09,260 --> 00:01:13,310
+more able to resolve the internal
+structure of the target particle.
+
+19
+00:01:14,400 --> 00:01:18,000
+This structure will then not be
+insensitive to the energy-momentum
+
+20
+00:01:18,000 --> 00:01:19,140
+transfer.
+
+21
+00:01:19,140 --> 00:01:22,850
+The target will be excited or
+even destroyed.
+
+22
+00:01:22,850 --> 00:01:25,670
+In other words,
+inelastic processes take over.
+
+23
+00:01:27,910 --> 00:01:32,350
+At the moderate q^2, inelastic
+processes produce excited states of
+
+24
+00:01:32,350 --> 00:01:37,770
+the nucleon, also called
+resonances, such as ∆+,
+
+25
+00:01:37,770 --> 00:01:41,802
+which have the same quantum
+numbers as the proton.
+
+26
+00:01:41,802 --> 00:01:45,220
+These resonances an extremely
+short lifetime and
+
+27
+00:01:45,220 --> 00:01:48,600
+therefore a broad mass distribution.
+
+28
+00:01:48,600 --> 00:01:53,400
+The figure show the result of an
+electron-proton scattering experiment at
+
+29
+00:01:53,400 --> 00:01:58,823
+an energy of about 3 GeV and
+at fixed scattering angle.
+
+30
+00:01:58,823 --> 00:02:03,210
+The elasticity of the reaction
+is first visible in
+
+31
+00:02:03,210 --> 00:02:06,930
+the energy distribution of
+the outgoing electron on the left,
+
+32
+00:02:06,930 --> 00:02:10,068
+which is no longer fixed
+as in elastic case.
+
+33
+00:02:10,068 --> 00:02:14,940
+Broader secondary maxima are formed
+which corresponded to the excited states
+
+34
+00:02:14,940 --> 00:02:15,967
+of the nucleon,
+
+35
+00:02:15,967 --> 00:02:20,588
+also clearly visible in the invariant
+mass distribution of the outgoing
+
+36
+00:02:20,588 --> 00:02:22,690
+hadronic state on the right.
+
+37
+00:02:23,830 --> 00:02:29,225
+Is kinematic is completely
+determined by measuring the outgoing
+
+38
+00:02:29,225 --> 00:02:33,638
+electron as in the case
+of elastic scattering.
+
+39
+00:02:33,638 --> 00:02:41,066
+The position and the inverse width of
+the large maximum indicate the mass and
+
+40
+00:02:41,066 --> 00:02:46,702
+the life time of the resonance
+∆+(1236).
+
+41
+00:02:46,702 --> 00:02:49,380
+At higher q^2, beyond the resonance region we
+enter into the region
+
+42
+00:02:49,380 --> 00:02:52,540
+of the so-called
+deep elastic scattering.
+
+43
+00:02:52,540 --> 00:02:58,040
+The final state consists of multiple
+hadrons with at least one baryon to
+
+44
+00:02:58,040 --> 00:03:00,160
+to conserve quantum numbers.
+
+45
+00:03:00,160 --> 00:03:03,140
+This is the region where
+the photon interacts
+
+46
+00:03:03,140 --> 00:03:06,880
+individually with the charged
+constituents of the nucleon.
+
+47
+00:03:06,880 --> 00:03:11,480
+The cross section can be parametrized
+with 2 terms as before, but
+
+48
+00:03:11,480 --> 00:03:16,890
+with 2 unknown structure function W_1 and
+W_2 replacing the form factors.
+
+49
+00:03:17,930 --> 00:03:20,400
+They parametrize the distribution and
+
+50
+00:03:20,400 --> 00:03:25,130
+dynamics of the nucleon constituents.
+They depend on the tranfered
+
+51
+00:03:25,130 --> 00:03:31,292
+energy nu which is the energy of the
+photon and its invariant mass squared.
+
+52
+00:03:31,292 --> 00:03:36,370
+The kinematics now requires a second
+additional kinematic parameter
+
+53
+00:03:36,370 --> 00:03:40,390
+because the mass of the hadronic
+system is no longer fixed,
+
+54
+00:03:40,390 --> 00:03:44,170
+as was the case with a proton or
+resonance in the final state.
+
+55
+00:03:45,260 --> 00:03:49,350
+In addition to the scattering we can
+thus choose a second variable.
+
+56
+00:03:49,350 --> 00:03:55,370
+Here it is the energy E’
+of the outgoing electron.
+
+57
+00:03:55,370 --> 00:04:00,260
+The structure functions are measured
+experimentally, analyzing the dependence
+
+58
+00:04:00,260 --> 00:04:05,680
+of the cross section on the scattering
+angle, like in the elastic case.
+
+59
+00:04:07,030 --> 00:04:12,380
+The big discovery at SLAC in the late
+60s was that the structure functions
+
+60
+00:04:12,380 --> 00:04:18,110
+do not depend on nu and
+q^2 separately but on their ratio x_Bj,
+
+61
+00:04:18,110 --> 00:04:25,295
+which is equal to q^2 over twice
+the mass of the proton times nu.
+
+62
+00:04:25,295 --> 00:04:30,030
+The variable is named after
+its inventor James D. Bjorken.
+
+63
+00:04:30,030 --> 00:04:34,670
+The phenomenon was called scaling at that
+time because of the very general observation
+
+64
+00:04:34,670 --> 00:04:41,260
+that the dimensionless variable x_Bj does
+not depend on any energy nor mass scale.
+
+65
+00:04:41,260 --> 00:04:45,904
+Structure functions follow in fact
+scaling if inside the nucleon there exist
+
+66
+00:04:45,904 --> 00:04:50,910
+sub-structures with which
+the photon interacts elastically.
+
+67
+00:04:50,910 --> 00:04:54,585
+This interpretation of scaling is
+best demonstrated in the limit of
+
+68
+00:04:54,585 --> 00:04:56,230
+large equal square,
+
+69
+00:04:56,230 --> 00:05:00,770
+where the interaction between quarks
+is negligible compared to the force
+
+70
+00:05:00,770 --> 00:05:02,050
+transmitted by the photon.
+
+71
+00:05:03,160 --> 00:05:05,735
+Quarks then act as quasi free particles
+
+72
+00:05:05,735 --> 00:05:10,390
+with which the photon interacts
+in an incoherent manner.
+
+73
+00:05:11,450 --> 00:05:16,060
+To respect the kinematic
+constraint in such an elastic
+
+74
+00:05:16,060 --> 00:05:20,680
+electron-quark scattering,
+the photon can only interact with
+
+75
+00:05:20,680 --> 00:05:25,680
+a quark which carries a fraction
+x_Bj of the nucleon momentum.
+
+76
+00:05:26,940 --> 00:05:30,470
+Consequently, the cross section is
+proportional to the probability
+
+77
+00:05:30,470 --> 00:05:32,638
+to find such a quark in the nucleon.
+
+78
+00:05:32,638 --> 00:05:36,317
+In the limit of square going to infinity,
+
+79
+00:05:36,317 --> 00:05:41,782
+the structure functions W_i
+tend toward the function F_i(x)
+
+80
+00:05:41,782 --> 00:05:46,722
+which are directly
+related to the distribution of
+
+81
+00:05:46,722 --> 00:05:51,906
+the fractional momentum x_i
+carried by quarks of type i.
+
+82
+00:05:51,906 --> 00:06:00,580
+The experiment at SLAC have in fact shown that the 
+phenomenon already occurs at the moderate squared.
+
+83
+00:06:00,580 --> 00:06:06,178
+The structure function W_2,
+as a function of the kinematical
+
+84
+00:06:06,178 --> 00:06:12,060
+variable omega,
+which is about equal to 1/x_Bj,
+
+85
+00:06:12,060 --> 00:06:15,510
+smoothens with increasing the q^2
+beyond the resonance region,
+
+86
+00:06:15,510 --> 00:06:21,805
+and then follows a universal function
+of x_Bj independent of q^2.
+
+87
+00:06:21,805 --> 00:06:26,530
+The kinematic constraint imposed
+by elastic scattering of
+
+88
+00:06:26,530 --> 00:06:30,610
+point-like particles inside
+the proton is indeed respected.
+
+89
+00:06:33,030 --> 00:06:37,200
+However, the scaling of
+structure functions is not exact.
+
+90
+00:06:37,200 --> 00:06:41,560
+This figure show modern measurements
+that come from experiments at
+
+91
+00:06:41,560 --> 00:06:43,953
+the electron proton collider HERA.
+
+92
+00:06:43,953 --> 00:06:48,460
+The curves and data for different x
+are expressed by a constant
+
+93
+00:06:48,460 --> 00:06:50,790
+in order to be all visible
+in the same graph.
+
+94
+00:06:52,240 --> 00:06:54,060
+At small x,
+
+95
+00:06:54,060 --> 00:06:56,320
+so at small quark momenta,
+
+96
+00:06:56,320 --> 00:07:00,270
+the structure function varies
+strongly with q^2 because of
+
+97
+00:07:00,270 --> 00:07:05,540
+the contributions from virtual gluons
+enriching the quark contents.
+
+98
+00:07:05,540 --> 00:07:09,950
+The smaller deviation at
+large x are more subtle.
+
+99
+00:07:09,950 --> 00:07:12,460
+The coupling constant
+of strong interactions
+
+100
+00:07:12,460 --> 00:07:14,630
+depends on the momentum transfer.
+
+101
+00:07:14,630 --> 00:07:17,665
+It is not really a constant.
+
+102
+00:07:17,665 --> 00:07:23,790
+We will come back to this
+astonishing fact in video 5.4.
+
+103
+00:07:25,250 --> 00:07:29,330
+Structure functions can thus be used to
+measure the momentum distribution of
+
+104
+00:07:29,330 --> 00:07:31,846
+quarks inside nucleons.
+
+105
+00:07:31,846 --> 00:07:40,040
+We qualitatively demonstrate the behavior of 
+the structure function F_2(x) based on 
+
+106
+00:07:40,040 --> 00:07:43,210
+successively refined
+hypotheses on the dynamics of quarks.
+
+107
+00:07:44,530 --> 00:07:49,720
+If the nucleon consisted of three
+quarks without interaction,
+
+108
+00:07:49,720 --> 00:07:53,430
+x will be fixed to 1/3 for each quark, and
+
+109
+00:07:53,430 --> 00:07:57,690
+F_2 will be a delta function at this value.
+
+110
+00:07:57,690 --> 00:08:02,920
+If it were a state where
+quarks are bound together
+
+111
+00:08:02,920 --> 00:08:07,530
+via gluons,
+the average value of x would still be 1/3,
+
+112
+00:08:07,530 --> 00:08:11,230
+but with a wider distribution
+around this value.
+
+113
+00:08:12,230 --> 00:08:16,320
+If we finally take into
+account that quarks can emit
+
+114
+00:08:16,320 --> 00:08:21,220
+virtual gluons which can split
+into a quark-antiquark pair at low energy,
+
+115
+00:08:21,220 --> 00:08:28,046
+we expect that the quark distribution
+tends to fill up at x -> 0.
+
+116
+00:08:28,046 --> 00:08:33,980
+The experimental data indeed to
+follow this qualitative picture.
+
+117
+00:08:33,980 --> 00:08:38,180
+First of all for the valence quarks,
+that is the two up quarks and
+
+118
+00:08:38,180 --> 00:08:40,210
+one down quark for the proton,
+
+119
+00:08:40,210 --> 00:08:45,427
+the structure function varies around
+1/3 with a strong enhancement
+
+120
+00:08:45,427 --> 00:08:50,748
+at small x by additional quark-antiquark 
+pairs produced by gluons.
+
+121
+00:08:50,748 --> 00:08:54,544
+The integral of the distribution
+is twice as large for
+
+122
+00:08:54,544 --> 00:08:58,260
+the up quark than for
+the down quark, as it should be.
+
+123
+00:08:59,330 --> 00:09:04,332
+The contribution gluons of is indeed
+seen in the contribution of s and
+
+124
+00:09:04,332 --> 00:09:08,930
+sbar quarks which would not be
+present in the nucleon otherwise.
+
+125
+00:09:10,020 --> 00:09:14,330
+When integrating this distribution we
+see that only about 1/2 of
+
+126
+00:09:14,330 --> 00:09:17,756
+the proton momentum is carried by quarks.
+
+127
+00:09:17,756 --> 00:09:20,590
+The rest is carried by gluons.
+
+128
+00:09:20,590 --> 00:09:26,513
+In the next video, we discuss mesons,
+bound states between quarks and antiquarks.
+
+129
+00:09:26,513 --> 00:09:32,789
+[MUSIC]

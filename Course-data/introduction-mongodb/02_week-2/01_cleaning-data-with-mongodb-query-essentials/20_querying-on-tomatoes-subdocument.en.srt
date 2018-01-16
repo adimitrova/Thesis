@@ -1,0 +1,466 @@
+1
+00:00:00,160 --> 00:00:05,860
+MongoDB allows you to define rich data
+types, multi-dimensional data structures
+
+2
+00:00:05,860 --> 00:00:10,110
+that are very similar to object-oriented
+programming language objects.
+
+3
+00:00:10,110 --> 00:00:14,316
+That means that we can define
+complex objects like arrays with
+
+4
+00:00:14,316 --> 00:00:19,040
+subdocuments embedded or
+even fields with just subdocuments.
+
+5
+00:00:19,040 --> 00:00:22,570
+Which in turn, can have complex
+data structures with them.
+
+6
+00:00:22,570 --> 00:00:27,160
+In this particular lesson, we are going to
+be looking to how to querying on a field
+
+7
+00:00:27,160 --> 00:00:30,840
+of our movies collection, called tomatoes,
+
+8
+00:00:30,840 --> 00:00:35,200
+which corresponds to
+Rotten Tomatoes' viewer reviews.
+
+9
+00:00:35,200 --> 00:00:39,710
+And how to use the magic of
+the dot notation to explore and
+
+10
+00:00:39,710 --> 00:00:44,300
+express really complex
+queries within MongoDB.
+
+11
+00:00:44,300 --> 00:00:49,160
+All right, so we have these documents
+with subdocuments in them, but what's so
+
+12
+00:00:49,160 --> 00:00:52,020
+special and what's so great about them?
+
+13
+00:00:52,020 --> 00:00:56,800
+Most relational systems can also
+define columns of data type XML or
+
+14
+00:00:56,800 --> 00:01:02,430
+even BLOB, where we can just throw
+into it, very complex data structures.
+
+15
+00:01:02,430 --> 00:01:06,660
+The reasoning behind MongoDB
+is the ability to actually
+
+16
+00:01:06,660 --> 00:01:11,160
+query within those data structures
+without just having a dump
+
+17
+00:01:11,160 --> 00:01:15,330
+of that data in a particular
+column in a relational world.
+
+18
+00:01:15,330 --> 00:01:19,250
+Therefore, you can model your data in
+such a way that it doesn't restrict
+
+19
+00:01:19,250 --> 00:01:22,320
+the queryability of your application.
+
+20
+00:01:22,320 --> 00:01:26,960
+Now let's see how to use this in action,
+using our mflix application.
+
+21
+00:01:26,960 --> 00:01:28,500
+In this Jupyter notebook,
+
+22
+00:01:28,500 --> 00:01:31,560
+that you have accessed through
+the handouts of this lesson,
+
+23
+00:01:31,560 --> 00:01:37,690
+you will have a way of expressing those
+same queries against our mflix database.
+
+24
+00:01:37,690 --> 00:01:42,622
+Now, first step would be to just
+import the necessary modules.
+
+25
+00:01:42,622 --> 00:01:45,990
+In this case,
+I'm going to use pymongo and pprint.
+
+26
+00:01:45,990 --> 00:01:48,930
+Second step would be to express
+our connection string and
+
+27
+00:01:48,930 --> 00:01:52,270
+the way to connect using
+pymongo.MongoClient.
+
+28
+00:01:52,270 --> 00:01:56,364
+Now, don't forget to get
+this particular URI.
+
+29
+00:01:56,364 --> 00:02:00,170
+You can just go to your Atlas cluster,
+go to Connect.
+
+30
+00:02:00,170 --> 00:02:03,670
+Say that you want to connect
+from your application, and
+
+31
+00:02:03,670 --> 00:02:07,950
+basically copy the URI in place and
+replace the placeholder for
+
+32
+00:02:07,950 --> 00:02:14,670
+your password by the password of our user
+that in our case is analytics-password.
+
+33
+00:02:14,670 --> 00:02:20,550
+I've done that due diligence myself,
+and I can just pure and simply connect.
+
+34
+00:02:20,550 --> 00:02:23,490
+No errors, everything seems to be good.
+
+35
+00:02:23,490 --> 00:02:27,920
+Now to get started in analyzing
+exactly how the substructures
+
+36
+00:02:27,920 --> 00:02:31,750
+of our documents work,
+let's have a look to the Titanic movie.
+
+37
+00:02:31,750 --> 00:02:35,770
+Now I know there's some duplicates here,
+and we'll take care of this later.
+
+38
+00:02:35,770 --> 00:02:40,930
+So therefore, I'm going to just find
+one where the title is Titanic.
+
+39
+00:02:40,930 --> 00:02:45,740
+As we can see here, we have very,
+very complex data structures and
+
+40
+00:02:45,740 --> 00:02:49,710
+lots of embed fields in the arrays and
+all sorts of different
+
+41
+00:02:49,710 --> 00:02:54,140
+Data types here that we might want
+to treat in a particular fashion.
+
+42
+00:02:54,140 --> 00:02:58,430
+Or even just query on those fields
+as we would query our normal,
+
+43
+00:02:58,430 --> 00:03:02,590
+let's say, single field root level fields.
+
+44
+00:03:02,590 --> 00:03:07,020
+But what's interesting about this is that
+we can isolate it a little bit in python.
+
+45
+00:03:07,020 --> 00:03:09,630
+So let's look into tomatoes.
+
+46
+00:03:09,630 --> 00:03:12,680
+Now again tomatoes is basically a field
+
+47
+00:03:12,680 --> 00:03:16,470
+that condenses the information of rotten
+tomatoes for this particular movie and
+
+48
+00:03:16,470 --> 00:03:21,240
+as we can see here we have a very
+very rich internal data structure.
+
+49
+00:03:21,240 --> 00:03:24,480
+So tomatoes itself is an field,
+
+50
+00:03:24,480 --> 00:03:29,530
+it has other fields in it which
+we can use to express queries.
+
+51
+00:03:29,530 --> 00:03:30,820
+Those in that field themselves.
+
+52
+00:03:30,820 --> 00:03:36,770
+Some of them are from to daytimes,
+to strings and so forth.
+
+53
+00:03:36,770 --> 00:03:42,450
+So can use this data structure to
+do some very interesting queries.
+
+54
+00:03:42,450 --> 00:03:47,560
+Going a little bit deeper, I can see that
+tomatoes.viewer has a couple of other
+
+55
+00:03:47,560 --> 00:03:52,060
+embedded fields themselves,
+meter, numReviews, and rating.
+
+56
+00:03:52,060 --> 00:03:57,450
+Now if I would like to get all the movies
+that have the same rating as this
+
+57
+00:03:57,450 --> 00:04:04,070
+particular Titanic movie, I can just use
+the Titanic tomatoes.viewer.rating field,
+
+58
+00:04:04,070 --> 00:04:07,280
+put its value into variable
+that I'm going to call rating,
+
+59
+00:04:07,280 --> 00:04:09,980
+which in this case is 3.6.
+
+60
+00:04:09,980 --> 00:04:13,295
+And use that value here to
+express a different query.
+
+61
+00:04:13,295 --> 00:04:16,477
+Now, I'm going to look
+into all the different
+
+62
+00:04:16,477 --> 00:04:20,080
+movies that have the field
+tomatoes viewer rating.
+
+63
+00:04:20,080 --> 00:04:22,799
+Again, a subfield inside of another
+
+64
+00:04:22,799 --> 00:04:26,950
+subfield with the same
+value from previous movie.
+
+65
+00:04:26,950 --> 00:04:29,160
+And I'm going to print only the title, so
+
+66
+00:04:29,160 --> 00:04:32,320
+it doesn't mess up with
+my view screen here.
+
+67
+00:04:33,810 --> 00:04:37,070
+Let's pause just for a second and
+look into this dot notation.
+
+68
+00:04:37,070 --> 00:04:38,312
+What is this anyway?
+
+69
+00:04:38,312 --> 00:04:42,740
+The moment we use the dot notation to
+access elements of a complex object,
+
+70
+00:04:42,740 --> 00:04:45,790
+arrays or sub documents or
+embedded documents.
+
+71
+00:04:45,790 --> 00:04:48,840
+They are embedded within
+the documents of a collection.
+
+72
+00:04:48,840 --> 00:04:54,500
+For example here, movies, we have that for
+accessing a field within tomatoes.
+
+73
+00:04:54,500 --> 00:04:58,840
+And within viewer we would need
+to use this dot connecting
+
+74
+00:04:58,840 --> 00:05:00,450
+those different fields.
+
+75
+00:05:00,450 --> 00:05:05,450
+If we look back into the structure
+of this particular document,
+
+76
+00:05:05,450 --> 00:05:10,470
+we see that we have several different data
+types or fields in this case that could
+
+77
+00:05:10,470 --> 00:05:16,580
+use the same dot notation for us to
+access the embed information within it.
+
+78
+00:05:16,580 --> 00:05:19,220
+Tomatoes is one of the most complex ones.
+
+79
+00:05:19,220 --> 00:05:24,290
+You could have writers, which has an array
+and we can access the elements or
+
+80
+00:05:24,290 --> 00:05:27,420
+indexes of those arrays to
+express queries as well.
+
+81
+00:05:27,420 --> 00:05:29,730
+You always using the dot notation.
+
+82
+00:05:29,730 --> 00:05:33,330
+So every time we want or
+need to access fields,
+
+83
+00:05:33,330 --> 00:05:39,270
+within sub documents or within arrays,
+we will be using the dot notation.
+
+84
+00:05:39,270 --> 00:05:42,460
+Now the dot notation is not only used for
+
+85
+00:05:42,460 --> 00:05:47,120
+the find query or for
+the filter that we express in our queries.
+
+86
+00:05:47,120 --> 00:05:50,120
+Can also be used for
+our sorts, meaning that,
+
+87
+00:05:50,120 --> 00:05:54,460
+we can sort on any embed
+field that we wish.
+
+88
+00:05:54,460 --> 00:05:58,870
+In this particular case, we are going
+to be using tomatoes.lastupdated.
+
+89
+00:05:58,870 --> 00:06:04,640
+We are going to be sorting the results
+by the ASCENDING last update.
+
+90
+00:06:04,640 --> 00:06:08,920
+Once we do that,
+we can see that we have our title,
+
+91
+00:06:08,920 --> 00:06:12,850
+rampage that has been
+last updated on 2012.
+
+92
+00:06:12,850 --> 00:06:17,360
+Then the following is The Suspect,
+in 2014, and so forth.
+
+93
+00:06:17,360 --> 00:06:22,700
+These capability shows us that
+no matter how deep our field is,
+
+94
+00:06:22,700 --> 00:06:26,800
+if we need to express a query or
+even a sort condition for
+
+95
+00:06:26,800 --> 00:06:32,240
+our Queriability of our application, Mongo
+DB allows us to do that using the dot
+
+96
+00:06:32,240 --> 00:06:39,110
+notation explicitly to get the type of
+queryability that our application demands,
+
+97
+00:06:39,110 --> 00:06:43,190
+and this is how you can express
+queries using embedded fields.

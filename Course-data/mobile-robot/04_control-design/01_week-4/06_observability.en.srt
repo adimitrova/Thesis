@@ -1,0 +1,363 @@
+1
+00:00:00,012 --> 00:00:05,628
+So, in the last lecture, we saw that it 
+was possible to recover the state from 
+
+2
+00:00:05,628 --> 00:00:08,837
+the outputs using this observer 
+structure. 
+
+3
+00:00:08,837 --> 00:00:14,093
+And the key there was to build an 
+estimate, or a copy of the state, x hat. 
+
+4
+00:00:14,093 --> 00:00:19,545
+And to let the dynamics be given by the 
+predictor part, which is x hat dot this 
+
+5
+00:00:19,545 --> 00:00:23,182
+ax hat which is a copy of the original 
+dynamics. 
+
+6
+00:00:23,182 --> 00:00:29,652
+Plus the corrector part, that basically 
+compares the outputs to what the outputs 
+
+7
+00:00:29,652 --> 00:00:35,862
+would have been if x hat was indeed the 
+state, and that output would have been C 
+
+8
+00:00:35,862 --> 00:00:39,707
+times X hat. 
+Now, what we have here, is this gain L. 
+
+9
+00:00:39,707 --> 00:00:45,604
+And we saw that designing this L, was 
+just like designing A K, when you're 
+
+10
+00:00:45,604 --> 00:00:51,218
+doing control design and, what we really 
+need to do then was just pull placement 
+
+11
+00:00:51,218 --> 00:00:56,695
+on the aerodymamics, so if the error, we 
+had e dot now being equal to A minus LC 
+
+12
+00:00:56,695 --> 00:01:00,552
+times E, and we just needed to stabilize 
+that system. 
+
+13
+00:01:00,552 --> 00:01:05,986
+But just with to control the sign 
+observer the sign doesn't always work and 
+
+14
+00:01:05,986 --> 00:01:11,937
+we saw that we needed some kind of notion 
+related to controlability that works for 
+
+15
+00:01:11,937 --> 00:01:17,592
+obsever the sign and that notion is 
+observability So observability is really 
+
+16
+00:01:17,592 --> 00:01:22,764
+the topic of today's lecture. 
+And just ask for controllability, 
+
+17
+00:01:22,764 --> 00:01:28,930
+it's easiest to approach this with a 
+rather modest and simple example. 
+
+18
+00:01:28,930 --> 00:01:35,716
+So we're going to deal with a discrete 
+time system where xk + 1 is Axk and the 
+
+19
+00:01:35,716 --> 00:01:40,967
+output, yk is Cxk. 
+And we start somewhere, we have some X0, 
+
+20
+00:01:40,967 --> 00:01:47,108
+and the question is, by collecting N 
+different outputs, can we recover the 
+
+21
+00:01:47,108 --> 00:01:53,857
+initial condition? Meaning can we figure 
+out where we started from? Well, at time 
+
+22
+00:01:53,857 --> 00:02:00,080
+0 the output is simply C times X0, right? 
+At time 1, the output is C times X1. 
+
+23
+00:02:00,080 --> 00:02:04,682
+Well, X1 is A times X0, so the output at 
+time 1 is CAx0. 
+
+24
+00:02:04,682 --> 00:02:10,082
+And so forth. 
+So at time, n - 1, the output is CA^n - 1 
+
+25
+00:02:10,082 --> 00:02:14,334
+times X0. 
+So now I've gathered this little n 
+
+26
+00:02:14,334 --> 00:02:20,285
+different measurements, or y's. 
+And the relationship that we have is 
+
+27
+00:02:20,285 --> 00:02:23,287
+this. 
+It looks very similar to what we had in 
+
+28
+00:02:23,287 --> 00:02:27,392
+the controllability case. 
+And in fact, this matrix here is going to 
+
+29
+00:02:27,392 --> 00:02:30,792
+be the new main character in the 
+observability drama. 
+
+30
+00:02:30,792 --> 00:02:35,092
+In fact, this is an important matrix that 
+we're going to call omega. 
+
+31
+00:02:35,092 --> 00:02:41,167
+In fact omega will be called the, 
+observability matrix, as opposed to 
+
+32
+00:02:41,167 --> 00:02:45,002
+gamma, which was the controllability 
+matrix. 
+
+33
+00:02:45,002 --> 00:02:51,272
+Now, just as we had in the control 
+problem, we have a similar kind of setup, 
+
+34
+00:02:51,272 --> 00:02:57,192
+where we want to be able to basically 
+invert omega to recover Xo from this 
+
+35
+00:02:57,192 --> 00:03:01,908
+stack of outputs. 
+And just as in the controlability case, 
+
+36
+00:03:01,908 --> 00:03:07,962
+this is possible when this omega, the 
+observability matrix has full rank. 
+
+37
+00:03:07,962 --> 00:03:14,200
+Meaning that the number of linearly 
+independent rows or columns is the same, 
+
+38
+00:03:14,200 --> 00:03:18,071
+is equal to little, little m. 
+And luckily, for us, 
+
+39
+00:03:18,071 --> 00:03:23,964
+just as for controllability, this result 
+generalizes to the case that we're 
+
+40
+00:03:23,964 --> 00:03:29,149
+actually interested in. 
+Which is, the continuous time x is ax, y 
+
+41
+00:03:29,149 --> 00:03:32,622
+is Cx. 
+So, observability, in general. 
+
+42
+00:03:32,622 --> 00:03:36,998
+Means that the system is completely 
+observable, which I'm going to call CO, 
+
+43
+00:03:36,998 --> 00:03:40,755
+if it is possible to recover the initial 
+state from the output. 
+
+44
+00:03:40,755 --> 00:03:45,131
+That's basically what it means. 
+I collect enough outputs, and from there 
+
+45
+00:03:45,131 --> 00:03:47,889
+I'm able to tell you where the system 
+started. 
+
+46
+00:03:47,889 --> 00:03:51,497
+And just like for controllability, we 
+have a matrix. 
+
+47
+00:03:51,497 --> 00:03:56,658
+This case it's omega which is the 
+observability matrix and theorem number 1 
+
+48
+00:03:56,658 --> 00:04:02,181
+mirrors exactly theorem number 1 in the 
+controllability case its as, so this is 
+
+49
+00:04:02,181 --> 00:04:06,372
+controllability complete observability 
+theorem number 1. 
+
+50
+00:04:06,372 --> 00:04:11,396
+It says the system is completely 
+observable if and only if the rank of 
+
+51
+00:04:11,396 --> 00:04:16,912
+omega is equal to little n meaning this 
+observability matrix has full rank. 
+
+52
+00:04:16,912 --> 00:04:22,510
+Now as before, the rank is simply the 
+number of linearly independent number of 
+
+53
+00:04:22,510 --> 00:04:26,531
+rows or columns of the matrix only in 
+this case. 
+
+54
+00:04:26,531 --> 00:04:32,428
+Now, we have the second theorem, it 
+follows directly in the same way as it 
+
+55
+00:04:32,428 --> 00:04:37,290
+did for control ability. 
+So, if I have this as my observer 
+
+56
+00:04:37,290 --> 00:04:43,034
+dynamics, and then I find the error 
+dynamics where e simply is the actual 
+
+57
+00:04:43,034 --> 00:04:48,070
+state minus my state estimate. 
+Well, what I wanted to do of course, is 
+
+58
+00:04:48,070 --> 00:04:54,026
+drive e to 0, that's what I would like. 
+Well, theorem number two tells me that 
+
+59
+00:04:54,026 --> 00:04:58,072
+this is possible, 
+if and only if, using pole-placements to 
+
+60
+00:04:58,072 --> 00:05:02,192
+arbitrary eigenvalues. 
+If and only if, the system is completely 
+
+61
+00:05:02,192 --> 00:05:04,719
+observable. 
+So, we have an exact dual to 
+
+62
+00:05:04,719 --> 00:05:07,767
+controlability when we're designing 
+observers. 
+
+63
+00:05:07,767 --> 00:05:12,652
+And in fact, designing observers, or 
+estimating the state, is really the same 
+
+64
+00:05:12,652 --> 00:05:17,023
+thing as doing control design. 
+It just happens that we're stabilizing 
+
+65
+00:05:17,023 --> 00:05:20,358
+aerodynamics instead of stabilizing the 
+state. 
+
+66
+00:05:20,358 --> 00:05:26,022
+So this is good news, right, because now 
+we can actually figure out what the state 
+
+67
+00:05:26,022 --> 00:05:29,008
+is. 
+So we are very, very close now to being 
+
+68
+00:05:29,008 --> 00:05:31,944
+able to design controllers as if we had 
+x, 
+
+69
+00:05:31,944 --> 00:05:36,789
+which we don't, we have y, but we use y 
+to figure out an estimate on x. 
+
+70
+00:05:36,789 --> 00:05:42,391
+So what we're going to do in the next 
+lecture is simply put what we've done on 
+
+71
+00:05:42,391 --> 00:05:48,078
+the control design side, and on the 
+observant design side together, in order 
+
+72
+00:05:48,078 --> 00:05:53,765
+to be able to actually control liner 
+systems where we don't have the state but 
+
+73
+00:05:53,765 --> 00:05:55,505
+all we do have is the out 

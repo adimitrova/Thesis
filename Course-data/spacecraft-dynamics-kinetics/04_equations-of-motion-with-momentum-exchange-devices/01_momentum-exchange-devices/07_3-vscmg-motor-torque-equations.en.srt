@@ -1,0 +1,691 @@
+1
+00:00:04,480 --> 00:00:10,214
+So what we want to do next is actually look at motor torque equations.
+
+2
+00:00:10,214 --> 00:00:13,919
+If we go and look at this differential equations,
+
+3
+00:00:13,919 --> 00:00:15,494
+this is in a vectorial form,
+
+4
+00:00:15,494 --> 00:00:17,629
+but really if you think of it in the scalar components,
+
+5
+00:00:17,629 --> 00:00:20,687
+how many differential equations does this line,
+
+6
+00:00:20,687 --> 00:00:22,190
+this boxed line give me?
+
+7
+00:00:22,190 --> 00:00:24,880
+Three.
+
+8
+00:00:24,880 --> 00:00:26,495
+Three.
+
+9
+00:00:26,495 --> 00:00:28,530
+How many states does this system have?
+
+10
+00:00:28,530 --> 00:00:30,425
+Three?
+
+11
+00:00:30,425 --> 00:00:34,795
+Well, you have omegas. There's attitude,
+
+12
+00:00:34,795 --> 00:00:37,565
+but for attitude, we have the differential kinematic equations, right?
+
+13
+00:00:37,565 --> 00:00:38,710
+So attitude is always covered,
+
+14
+00:00:38,710 --> 00:00:40,549
+so let's just ignore the attitude part.
+
+15
+00:00:40,549 --> 00:00:41,859
+But this differential equation,
+
+16
+00:00:41,859 --> 00:00:43,575
+you could solve for omega_dot.
+
+17
+00:00:43,575 --> 00:00:46,765
+Great. But what is Omega_dot?
+
+18
+00:00:46,765 --> 00:00:50,795
+Right? Per wheel, you don't know what that angular acceleration is gonna be.
+
+19
+00:00:50,795 --> 00:00:52,859
+What is gamma_double_dot?
+
+20
+00:00:52,859 --> 00:00:54,369
+We don't know that either.
+
+21
+00:00:54,369 --> 00:00:57,130
+So there's two extra degrees of freedom in this system.
+
+22
+00:00:57,130 --> 00:01:01,000
+Each mechanical device provided one additional degree of freedom because we have
+
+23
+00:01:01,000 --> 00:01:05,045
+a single-axis rotation going from body to gimbal, gimbal to wheel.
+
+24
+00:01:05,045 --> 00:01:07,924
+So this only gives you three differential equations.
+
+25
+00:01:07,924 --> 00:01:10,840
+We need five, and that's because we have one device.
+
+26
+00:01:10,840 --> 00:01:12,325
+If we have five of these devices,
+
+27
+00:01:12,325 --> 00:01:15,329
+I need way more, but then this kind of becomes repetitive.
+
+28
+00:01:15,329 --> 00:01:18,369
+So we have let's say we have four VSCMGs,
+
+29
+00:01:18,369 --> 00:01:20,560
+this is still the equation you would use.
+
+30
+00:01:20,560 --> 00:01:23,469
+You would need this with summations over all the devices
+
+31
+00:01:23,469 --> 00:01:24,769
+and I'll show you how to do that.
+
+32
+00:01:24,769 --> 00:01:28,119
+But then we still need what's called the motor torque equations per device.
+
+33
+00:01:28,119 --> 00:01:30,430
+Because,ultimately, what you would simulate is, hey,
+
+34
+00:01:30,430 --> 00:01:33,459
+I'm putting in one newton-meter on that spin axis for
+
+35
+00:01:33,459 --> 00:01:36,730
+the reaction wheel and half a newton-meter on the gimbal axis.
+
+36
+00:01:36,730 --> 00:01:39,415
+What's the dynamic response gonna be? All right.
+
+37
+00:01:39,415 --> 00:01:42,674
+So we need these extra equations which we don't have yet.
+
+38
+00:01:42,674 --> 00:01:44,129
+So that's what we're gonna look at next.
+
+39
+00:01:44,129 --> 00:01:46,204
+How do we find these motor torque equations?
+
+40
+00:01:46,204 --> 00:01:48,609
+And essentially, we go back to the board and say, look,
+
+41
+00:01:48,609 --> 00:01:53,989
+we're looking at H_dot equal to L. If you think of it
+
+42
+00:01:53,989 --> 00:01:59,403
+as a free-body diagram – let me just draw that out.
+
+43
+00:01:59,403 --> 00:02:02,840
+If we think of this as a – you've got your wheel.
+
+44
+00:02:02,840 --> 00:02:05,594
+Right. And here's the spin axis,
+
+45
+00:02:05,594 --> 00:02:10,525
+and the wheel is free to rotate about g_s.
+
+46
+00:02:10,525 --> 00:02:12,430
+There's your rotation.
+
+47
+00:02:12,430 --> 00:02:14,097
+Now Omega.
+
+48
+00:02:14,097 --> 00:02:16,909
+So this axis is a motor – I know there's
+
+49
+00:02:16,909 --> 00:02:20,134
+a motor torque that makes it accelerate about this axis.
+
+50
+00:02:20,134 --> 00:02:22,534
+If you have zero voltage with the motor broke,
+
+51
+00:02:22,534 --> 00:02:24,784
+it would be a free-spinning wheel as,
+
+52
+00:02:24,784 --> 00:02:26,775
+you know, it would spin up, spin down.
+
+53
+00:02:26,775 --> 00:02:28,659
+There's no motor torque applied.
+
+54
+00:02:28,659 --> 00:02:31,159
+This is very similar to that [inaudible] problem you did with
+
+55
+00:02:31,159 --> 00:02:33,784
+the cylinder and that rotisserie grill architecture.
+
+56
+00:02:33,784 --> 00:02:36,865
+Right? And it was the b-b_prime axis.
+
+57
+00:02:36,865 --> 00:02:38,814
+That was the axis where it was free to spin.
+
+58
+00:02:38,814 --> 00:02:39,889
+So if we had no motor torque,
+
+59
+00:02:39,889 --> 00:02:41,164
+this would be a free-spin axis.
+
+60
+00:02:41,164 --> 00:02:45,104
+With the motor torque, you get to control what torque is applied. All right.
+
+61
+00:02:45,104 --> 00:02:47,525
+So we know this is where our motor torque acts,
+
+62
+00:02:47,525 --> 00:02:50,365
+but this is just one axis.
+
+63
+00:02:50,365 --> 00:02:56,194
+You will have two other axes that are orthogonal to this.
+
+64
+00:02:56,194 --> 00:02:59,479
+And as the spacecraft is tumbling and moving – remember,
+
+65
+00:02:59,479 --> 00:03:02,000
+this axis has a particular orientation in
+
+66
+00:03:02,000 --> 00:03:06,925
+the craft – the structure has to actually produce these other two torques.
+
+67
+00:03:06,925 --> 00:03:10,680
+So, we can do H_dot equal to L,
+
+68
+00:03:10,680 --> 00:03:13,585
+about the center of mass of this wheel now,
+
+69
+00:03:13,585 --> 00:03:16,294
+which is what we kind of derived earlier already,
+
+70
+00:03:16,294 --> 00:03:22,270
+and we can then use that to relate and come up with a scalar equation that we need.
+
+71
+00:03:22,270 --> 00:03:25,080
+So that's what I'm showing you here.
+
+72
+00:03:25,080 --> 00:03:27,340
+So if you do this, H_dot equal to L –
+
+73
+00:03:27,340 --> 00:03:30,629
+the dynamical system is just the wheel – the only thing that
+
+74
+00:03:30,629 --> 00:03:33,030
+interfaces with the wheel is the motor torque in
+
+75
+00:03:33,030 --> 00:03:36,604
+one axis and then the structural torques along the other two.
+
+76
+00:03:36,604 --> 00:03:38,430
+That's what makes sure this wheel doesn't just flip
+
+77
+00:03:38,430 --> 00:03:40,474
+sideways relative to the gimbal frame, right?
+
+78
+00:03:40,474 --> 00:03:44,969
+As you gimbal it, you're specifying two of the three dimensions of the wheel.
+
+79
+00:03:44,969 --> 00:03:46,884
+It's the spin that's actually free.
+
+80
+00:03:46,884 --> 00:03:49,981
+So we can do this, and you've derived this already,
+
+81
+00:03:49,981 --> 00:03:53,849
+we had this result earlier when we derived the full equations of motion,
+
+82
+00:03:53,849 --> 00:03:55,645
+so I get to rewrite it again.
+
+83
+00:03:55,645 --> 00:04:00,750
+And the trick now is we have to recognize here that H_dot equal to L,
+
+84
+00:04:00,750 --> 00:04:03,810
+that torque that's acting on just the wheel,
+
+85
+00:04:03,810 --> 00:04:08,129
+the torque that's along the g_s axis must be what I call u_s.
+
+86
+00:04:08,129 --> 00:04:10,930
+That's the spin-axis motor torque.
+
+87
+00:04:10,930 --> 00:04:12,835
+The other two I'm calling tau.
+
+88
+00:04:12,835 --> 00:04:18,855
+Those are the structural torques that keep this wheel aligned relative to that.
+
+89
+00:04:18,855 --> 00:04:21,600
+If you needed to know what the structural torques were,
+
+90
+00:04:21,600 --> 00:04:25,800
+you're worried about breaking those hinges and bearings and stuff,
+
+91
+00:04:25,800 --> 00:04:29,160
+you can actually go back here and then do your simulation and then,
+
+92
+00:04:29,160 --> 00:04:32,144
+postprocessing, plug in all these states.
+
+93
+00:04:32,144 --> 00:04:34,560
+And all these g_t's and
+
+94
+00:04:34,560 --> 00:04:40,185
+g_g's are gonna be the structural torques that are acting on the system.
+
+95
+00:04:40,185 --> 00:04:43,050
+So this approach actually gives you the internal torques, if you want.
+
+96
+00:04:43,050 --> 00:04:45,209
+Now the equations of motion, I don't need them.
+
+97
+00:04:45,209 --> 00:04:48,589
+So what we do need to do is what is along the g_s axis,
+
+98
+00:04:48,589 --> 00:04:50,279
+that must be equal.
+
+99
+00:04:50,279 --> 00:04:53,300
+So here, you can see we've got only this part.
+
+100
+00:04:53,300 --> 00:04:56,430
+This part must be equal to the motor torque,
+
+101
+00:04:56,430 --> 00:04:59,615
+and that's where I find my motor torque equation here.
+
+102
+00:04:59,615 --> 00:05:03,285
+It's essentially the motor torque is the wheel inertia times
+
+103
+00:05:03,285 --> 00:05:07,430
+the angular acceleration plus these two other terms.
+
+104
+00:05:07,430 --> 00:05:10,104
+If we ignore gimbaling,
+
+105
+00:05:10,104 --> 00:05:13,939
+how big is your spacecraft acceleration compared to
+
+106
+00:05:13,939 --> 00:05:17,934
+wheel acceleration? What do you think?
+
+107
+00:05:17,934 --> 00:05:20,024
+About the same size?
+
+108
+00:05:20,024 --> 00:05:21,419
+An order of magnitude difference?
+
+109
+00:05:21,419 --> 00:05:24,109
+Two, three orders of magnitude difference?
+
+110
+00:05:24,109 --> 00:05:26,735
+How fast the spacecraft rotate, you think?
+
+111
+00:05:26,735 --> 00:05:30,094
+What's a fast speed with before they declare emergencies?
+
+112
+00:05:30,094 --> 00:05:30,989
+Three degrees a second?
+
+113
+00:05:30,989 --> 00:05:32,509
+Two degrees, three degrees,
+
+114
+00:05:32,509 --> 00:05:35,709
+just a couple of degrees per second, doesn't take much.
+
+115
+00:05:35,709 --> 00:05:37,454
+You know, how fast does the wheel go?
+
+116
+00:05:37,454 --> 00:05:40,779
+Maximum speed, 5-6,000 RPM, way faster.
+
+117
+00:05:40,779 --> 00:05:43,605
+So it's accelerations are gonna well exceed what the spacecraft.
+
+118
+00:05:43,605 --> 00:05:44,810
+So some people actually just go,
+
+119
+00:05:44,810 --> 00:05:46,730
+you know what, this is my motor torque equation,
+
+120
+00:05:46,730 --> 00:05:49,910
+which really makes your life simpler because it decouples this equation
+
+121
+00:05:49,910 --> 00:05:53,564
+completely from the attitude states and the gimbal states. But it's not the true thing.
+
+122
+00:05:53,564 --> 00:05:55,795
+Momentum won't be preserved if you do that.
+
+123
+00:05:55,795 --> 00:05:57,814
+This is the full answer that you have.
+
+124
+00:05:57,814 --> 00:06:00,019
+And in fact, if you're gimbaling at the same time,
+
+125
+00:06:00,019 --> 00:06:02,825
+the gimbal rate does cross-couple back into this torque.
+
+126
+00:06:02,825 --> 00:06:05,634
+There's a gyroscopic torque that you have to account for.
+
+127
+00:06:05,634 --> 00:06:08,970
+And so this is the full motor torque equation that you have.
+
+128
+00:06:08,970 --> 00:06:11,824
+Right? So now we have this extra differential equation we needed.
+
+129
+00:06:11,824 --> 00:06:14,194
+We had earlier one for omega_dot.
+
+130
+00:06:14,194 --> 00:06:15,980
+With this one, if I throw it in,
+
+131
+00:06:15,980 --> 00:06:17,339
+I can solve for this one.
+
+132
+00:06:17,339 --> 00:06:19,300
+But you can see it's also coupled to this one.
+
+133
+00:06:19,300 --> 00:06:23,300
+So you get linear systems of equations you have to solve simultaneously.
+
+134
+00:06:23,300 --> 00:06:25,455
+Or you could take this – I'll show you in a moment –
+
+135
+00:06:25,455 --> 00:06:27,805
+we can take this and back-substitute it in,
+
+136
+00:06:27,805 --> 00:06:29,060
+and this will give us
+
+137
+00:06:29,060 --> 00:06:32,920
+the reaction where only creations of motion that I'll show you – the classic results.
+
+138
+00:06:32,920 --> 00:06:34,694
+So, different ways you can formulate it.
+
+139
+00:06:34,694 --> 00:06:36,610
+So that's one extra differential equation.
+
+140
+00:06:36,610 --> 00:06:39,514
+We also need it for the gamma_double_dot.
+
+141
+00:06:39,514 --> 00:06:41,495
+That needs the motor torque u_g.
+
+142
+00:06:41,495 --> 00:06:42,700
+What's that torque there?
+
+143
+00:06:42,700 --> 00:06:44,569
+There, the dynamical system I'm using,
+
+144
+00:06:44,569 --> 00:06:45,875
+it's not just the gimbal frame,
+
+145
+00:06:45,875 --> 00:06:48,105
+but inside the gimbal frame is a wheel.
+
+146
+00:06:48,105 --> 00:06:51,305
+And the torques I'm worrying about is outside of the gimbal frame,
+
+147
+00:06:51,305 --> 00:06:53,810
+so the gimbal frame to body is where the motor torque is
+
+148
+00:06:53,810 --> 00:06:56,805
+attached between gimbal and body.
+
+149
+00:06:56,805 --> 00:06:59,495
+So, inside of it, the dynamical system is actually both
+
+150
+00:06:59,495 --> 00:07:04,819
+the wheel with the gyroscopics and the frame with its gyroscopics.
+
+151
+00:07:04,819 --> 00:07:07,745
+So we computed these h_dot's earlier.
+
+152
+00:07:07,745 --> 00:07:10,139
+If you sum them up, this is what you get.
+
+153
+00:07:10,139 --> 00:07:16,389
+And now, this stuff about the gimbal axis actually has to be equal to the motor torque.
+
+154
+00:07:16,389 --> 00:07:19,689
+The other two are the structural torques being produced.
+
+155
+00:07:19,689 --> 00:07:21,645
+So it's the same kind of a process, right?
+
+156
+00:07:21,645 --> 00:07:22,670
+Two structural.
+
+157
+00:07:22,670 --> 00:07:24,860
+This is the motor torque here that's really spinning
+
+158
+00:07:24,860 --> 00:07:28,180
+this combined – as you rotate the frame,
+
+159
+00:07:28,180 --> 00:07:29,245
+you're also rotating the wheel.
+
+160
+00:07:29,245 --> 00:07:30,515
+It's a combined system.
+
+161
+00:07:30,515 --> 00:07:33,025
+And you can come up, you can solve for this in the end
+
+162
+00:07:33,025 --> 00:07:34,605
+and then that's what you get.
+
+163
+00:07:34,605 --> 00:07:36,709
+So if you drop this and ignore other terms,
+
+164
+00:07:36,709 --> 00:07:40,259
+you could roughly say that torque is equal to inertia times angular acceleration,
+
+165
+00:07:40,259 --> 00:07:42,110
+but it's a pretty crude approximation.
+
+166
+00:07:42,110 --> 00:07:43,814
+This gives you the full coupling.
+
+167
+00:07:43,814 --> 00:07:45,514
+And you can see, if you have a torque,
+
+168
+00:07:45,514 --> 00:07:47,975
+you can get your angular acceleration for the gimbal,
+
+169
+00:07:47,975 --> 00:07:51,019
+but also you get the spacecraft angular acceleration coupling into it.
+
+170
+00:07:51,019 --> 00:07:55,285
+So, either you back-substitute or you solve it as a linear system of equations.
+
+171
+00:07:55,285 --> 00:07:57,694
+But now we actually have five differential equations
+
+172
+00:07:57,694 --> 00:07:59,420
+and given torques acting on the system,
+
+173
+00:07:59,420 --> 00:08:01,560
+we can solve for everything.

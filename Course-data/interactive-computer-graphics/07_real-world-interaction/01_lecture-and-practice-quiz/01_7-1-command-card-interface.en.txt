@@ -1,0 +1,146 @@
+[NOISE] Hello, this is week seven of Interactive computer graphics course. The topic we discuss here
+is Real World Interaction. [COUGH]
+So real world interaction, we mean a user interface for computing
+systems, working in the real world. So, so far, we have discussed user
+interface between computer and the user. So user do something, and then computer do
+something, and there's interaction here. So through here,
+we extend this into the real world. So some computers can be connected to real
+world objects like a robot or appliances, home appliances so we discuss here
+the interaction between this kind of computing systems working in the real
+world robots or home appliances and so on. So here's original topics
+we discussed this week. So we discussed command card interface for
+home robots. And Style-By Demonstration for
+teaching robot's behavior, and the Actuated Puppet Device, for posing a steady characters and the Robotic
+Light systems and the Fur Display. So first topic, we discuss is
+Command Card Interface, where this one is, this work was published as Magic Cards. And question here is, how to command
+a robot, walking robot in your home. Now, typical approach is
+I think is two extremes. One, it's very simplified, easy to
+use control with speech or gesture. It's very abstract control. However, in some cases,
+this is too abrupt, too simple. You know, you cannot specify details with
+very simple command like create here, or do it, or go there. It's too abstract. And also,
+these kind of commands are volatile. You know, as soon as you say
+something it disappears. It's kind of a difficult to confirm
+whether you actually gave a command or the source. And also you need to remember what command
+is available when you speak or gesture. The other extreme is direct control,
+using joystick or gampad or somthing. So you continuously provide command
+the system continuously follows a command. So you can do everything with
+this control details, however. In some cases,
+this is too little control, and it's very tedious to control continuously. So what we try to do here is to hit some
+middle ground between these two extremes. So this is a method we propose here. We propose paper card interface for
+giving command. So in the, inter-environment the user
+leaves a command card giving instruction to the robot, such as clean here, or
+deliver this object here, and so on. And when she goes out, everything happens, and the robot
+does its task when she is going out. So the user puts the instruction
+card in the environment, and the robot does the job
+while the user is out. So that's the idea. Let me show you a video. So, first part of this
+video is a futuristic view. So this is a concept video,
+not to be implemented. But I hope you get the idea
+from this sequence. So suppose you have a house, messy room, messy kitchen,
+throw all trash bins is full. So we need,
+I want robot system to take care of it. So, she pulls out a command card set. So this one is a combinatory list, of possible operations you
+can give to the robot system. Only you pick up appropriate command
+card and leaves it in the environment, like wash this kitchen, and
+deliver this to the garbage or bin, take out this garbage,
+make bed, so, clean here. So a good thing about this kind
+of paper card couple things. So, first you can see a list of available
+commands just by looking is the cards set so you do not need to
+remember possible commands. And also leaving a card is
+a very clear instruction and if you want to cancel
+you just pick up a card. And also a card is a very appropriate for
+space time physical location. Like clean here, deliver here and
+here is very ambiguous, but color location exactly
+space wise location. So that's a benefit. And after she goes out a robot
+appears to do the task. And again this is a concept video
+not real implementations so again this case our robot appears and
+it does the job. So, here what we try to do
+is mimic interaction with human human interaction you know a human
+can give a message card to another human. And then they can do the job. So we try to do the same
+as computer system. So that's it. And in the evening the user comes back and
+everything is done. So this is the kind of
+envisioned futuristic view. And now let me show you
+actual implementation. So, Current Implementation, not too fancy,
+but there is a basic saying. We built a system using Roomba robots. So we have a couple of
+robots working together. And also, we put it in the environment, where everything is observed
+by the ceiling mounted camera. And the system continues to
+track the command card and also the lowered locations. So yeah here's the system in the view in
+what, is it actually walking system so user give instruction like deliver
+this box from here to there. This location. And the vacuum clean this spot. And, also, remembers the task. And then the user goes out and
+the system starts walking. And see it in camera captures
+all of the command cards. First, system picks up the command cards. He is in this card pickup. And after that,
+the system start to do the job. First request was to deliver here,
+this to here. So, pushing robot starts to walking and
+it push it over to the target location. And next, using a grid system
+to vacuum clean this spot. So vacuum cleaner appears and
+then clean it. So, that's system and also, another interesting aspect
+is that reporting errors. So, user gives instructions to robot,
+as a paper card. And, but sometimes system also
+provided feedback to the user. For example, system makes an error, then system should present
+error report to the user. An interesting point about
+the system is that error report is also given as a paper card
+left in the environment. Let's see it. So if the robot fails,
+like the power is out. And the small printer,
+mobile printer robot appears and then they have a printed message to
+the user, such as, I'm sorry, I failed. So this may disclose a loop, you know,
+user provides command on paper card and the system provides
+feedback as a paper card. In this way, user can interact with
+the robotic system without touching any computer, just using paper card. So yeah, as again the environments like
+this we have ceiling mounted cameras and central computers and
+then remotely controlled robots. And we use visual tab using 2-dimensional
+augmented reality visual code. And backside you see instruction for
+the user. So that's a system. And here let me briefly describe pushing
+algorithm developed for this system. So this is a pushing algorithm for a non
+pre, prehensile, which means no grabbing. So yeah, so naive approach is
+two binary state approach. So first half your robot should
+go behind the object, and after reaching the behind object the robot going
+to the pushing state and initialize push. But in the middle then robot's mo, may object may move sideways, and
+in that case robot go back to the behind. And after reaching the behind
+goes the pushing state. So in reality the robot
+needs to go back and. Force between these two states. And this is not very desirable. So, this is unstable. So, robot can, into an unstable status,
+between just go back and force between these states. And also this requires very
+careful parameter setting. You know, you need some threshold
+distinguish these two states. And this parameter can be very sensitive. So, what we propose it to avoid this. We propose to use a dipole field
+to achieve pushing behavior. So suppose you have object here, and you want to move this object to the,
+this direction. So, given this object position and orientation, we compute
+a dipole field at the center. And that the object and
+the oriented tower's target direction. And after that, simply we close the lower,
+according to this dipole field. There are a couple benefits. First, there's no clear mode switching,
+going behind and pushing it smoothly emerge so there's
+no sudden change between the two modes. Another thing is that scale invariance. So, as you see dipole field it doesn't
+change, even if you scale up or scale down. Always the same shape depend,
+regardless of it's scale. So which means you can
+apply the same allowances, the same parameters to the object
+with different scales. So here's a little bit more details. So you have object and pushing direction,
+desired pushing direction, direction and you first compute
+local coordinate plane defined by the object position and orientation. And then you compute the position. Of the robot, relative to this
+object in this coordinate frame. So, you get cos sin theta and
+sin theta, is a distance r. After having this theta angle,
+the other one is very simple. What you have to do is,
+just compute sin2 theta, sin2 theta. It gives you the direction. Where is it robot should look? This is just a the finishing with
+right field, dipole field, and you can implement this kind of here. Very, very few lines of cords. So, let me show you a brief video. So, yeah this is the basic idea. And the system consists of
+a seating camera and robots. And then, this is a computed Dipole Field. And then robot flows along the,
+flow field. So in this examples,
+the robot pushes a very small cup. And then the movement is very small. There is no distinct two modes. It's molds together. And here the robot tries to push the large
+dish exactly using the same dipole field. And you can apply the same
+algorithm to the Roomba box, to push things on the floor. By the way, this robot is very
+easy to control, from computer. So, if you want to try robotic system,
+I recommend to try this system. Another interesting thing is here,
+Cooperative pushing. If the object is too heavy for
+one once to push, two robots should cooperate together. Traditional approach is the power pushing,
+you know? There's always that other two, always
+act side by side, robot push together. But here,
+we tested Single-line serial pushing. So the other one was very simple,
+just apply two dipole fields. Here, this robot tries to push this
+box this way, but it's too heavy. Then this robot pushes this second,
+the fast robot. The second robot pushes the fast robot,
+again, using a dipole field. So by combining two [INAUDIBLE] then,
+you know, robots can push relatively heavy object. And again motion is going to be smooth. So that's it. So, yeah, so we introduce command car based interaction
+and pushing outer wards in to achieve it. And original paper was called Magic Cards,
+paper tag interface for implicit robot control. And the paper ID we used is a popular one. They are visual two dimensional
+bar code to measure a dipoles, frequently used in
+augmented reality systems. Original paper was published in
+1998 by has metrics real time object identification and
+registration method for augmented reality. And if you want to use it and then there's
+a popular toolkit called AR toolkit, and I recommend you to try it, if you want. And for the pushing algorithm, we
+published a paper on the Dipole Field for Object Delivery by Pushing
+on a Flat Surface. So if you want to look at the pushing
+algorithm please take a look at this paper. Thank you.

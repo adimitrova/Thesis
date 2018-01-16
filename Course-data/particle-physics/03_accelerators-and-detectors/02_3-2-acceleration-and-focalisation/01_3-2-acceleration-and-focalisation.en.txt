@@ -1,0 +1,69 @@
+[MUSIC] In this module we are treating
+the basics of particle acceleration and detection methods. In this second video,
+we treat the acceleration and focusing mechanisms inside accelerators. After watching this video, you will be
+able to answer the following questions. What are the main components of
+an accelerator and how do they work? And how does a complex of accelerators
+like that at CERN work together to achieve the highest energies and
+highest intensities? Inside an accelerator,
+particles move in an evacuated tube. And this is to prevent them from
+interacting with air molecules and lose energy, or be transformed. Even if they don't, we still have to  
+supply radio frequency acceleration, even in the storage ring if we want
+to keep the beam energy constant. This is because an accelerated
+charged particle loses some fraction of its energy in
+the form of radiation by emitting photons. This process is called bremsstrahlung, the same process that produces
+photons in an X-ray tube. In such a tube, the electron cathode ray beam is stopped
+by an inclined water-cooled target. The energy of the electron is
+typically ten kiloelectron volts. They thus yield X-ray photons of
+a comparable energy. But also lateral acceleration creates 
+bremsstrahlung, namely synchrotron radiation. For relativistic particles, the lost power per turn P is
+proportional to the fourth power of the relativistic factor gamma, and the inversely proportional
+to the radius of curvature rho. It is large for light particles
+circulating in small orbits. This loss must be replaced
+constantly to get a stable beam in an orbit of constant radius. But synchrotron radiation is more than a nuisance. One uses it to produce
+monochromatic photons. The Swiss Light Source at the Paul-Scherrer-Institute
+in Villigen is a source of high brightness brightness light based on an electron synchrotron 
+of 2.4 giga electron volts. Is beam lines are used researching
+material science, biology, and chemistry. The accelerating electric field is generated
+by a vacuum tube amplifier, the klystron. An intense electron beam is accelerated,
+then bunched in a resonant cavity. In a second resonant cavity
+the electron kinetic energy is extracted in the form of
+a radio frequency wave. Modern klystrons have normally several
+such amplification stages. The beam is held on a circular
+path by dipole magnets. The transverse focusing of the beam is
+done by quadruple magnetic fields. A low quadruple component is normally
+present even in a dipole magnet. The focalizing forces come from a slight
+horizontal component of the magnetic field, which changes sign as one passe from
+below to above the orbital plane. By alternating this quadruple configuration with
+one which is rotated 90 degrees, the focalization is obtained
+in both horizontal and vertical directions transverse to the beam. Magnets with dipolar and quadruple fields
+thus the complany in the accelerator ring. Two coils have create a dipole field,
+four create a quadruple field as shown. Today these coils are normally
+superconducting to minimize resistive loss. But focalization is also
+needed in the longitudinal direction. The reason is that the particles
+must arrive synchronously to acceleration points. Thus, they are injected in short packets.
+If they arrive at radio frequency resonators on the increasing slope of the
+electric field, their phase remains stable. A particle arriving with a slight
+delay compared to the ideal phase will see a field that is
+stronger than the average field. A particle with a slight advance will on
+the contrary see less accelerating field. In this way, the particles will automatically
+oscillate around the ideal phase. We can lower energy losses from synchrotron
+radiation by increasing the radius or curvature rho, weakening at the same time the dipole field. Asymptotically, we can
+let rho tend to infinity, resulting in a linear accelerator. Almost every accelerator complex
+begins with such a device. Much of the vacuum tube which contains
+the beam itself is a resonant structure of radio frequency with
+a traveling electromagnetic wave. Between the resonant cavities,
+there are spacers made of conductive tubes. Their length must follow the velocity
+of the accelerated particles, i.e. they should be equal to the velocity times
+half the period of the radio frequency. It is also necessary that when
+passing in a unshielded portion of the cavity, the electric field has
+the desired sign and value. Once the velocity of the particle is
+sufficiently close to the speed of light, the spacing becomes constant. Today's powerful accelerators
+are mainly working in synchrotron mode. The most powerful, the Large Hadron Collider,
+has been in operation since 2008. It is part of a complex of accelerators
+to obtain maximum energy and luminosity. In 2011 and 12, the energy of the
+proton beam was 3.5 TeV. In 2012, it was raised to 4 TeV. And after a technical interruption,
+that started in February 2013, the operation resumed in 2015 with
+7 TeV per beam. This corresponds to the impressive
+energy of 1.12 µJ. The path of particles through
+the complex is shown in the short CERN video 3.2a. In the next video we
+will visit CERN to discuss the key components of the LHC with Prof. Tobias Golling of University of Geneva. [MUSIC]

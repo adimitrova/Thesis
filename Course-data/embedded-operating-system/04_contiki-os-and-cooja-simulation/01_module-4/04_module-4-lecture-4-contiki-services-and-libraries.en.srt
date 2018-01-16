@@ -1,0 +1,608 @@
+1
+00:00:00,000 --> 00:00:05,276
+[MUSIC]
+
+2
+00:00:05,276 --> 00:00:08,320
+Hello, I am glad to see you back for
+this lesson.
+
+3
+00:00:09,450 --> 00:00:13,610
+In previous lessons,
+we explored Contiki's kernel architecture.
+
+4
+00:00:13,610 --> 00:00:18,520
+Now we will look into the details of
+Contiki's services and libraries.
+
+5
+00:00:18,520 --> 00:00:21,620
+By the end of the lesson,
+you should understand the benefits and
+
+6
+00:00:21,620 --> 00:00:25,850
+challenges of using and developing
+services and libraries in Contiki.
+
+7
+00:00:27,640 --> 00:00:31,130
+First of all,
+I will go directly to a question.
+
+8
+00:00:31,130 --> 00:00:32,810
+What is a service in Contiki?
+
+9
+00:00:34,010 --> 00:00:37,910
+As we mentioned before,
+services are implemented as modules.
+
+10
+00:00:39,090 --> 00:00:44,560
+So when a particular service is required
+the corresponding module is loaded
+
+11
+00:00:44,560 --> 00:00:48,130
+thus making Contiki run efficiently.
+
+12
+00:00:48,130 --> 00:00:53,300
+From a certain point of view, a service is
+different from other application programs
+
+13
+00:00:53,300 --> 00:00:56,650
+since a service can be used by
+several application programs
+
+14
+00:00:58,420 --> 00:01:02,110
+In other words,
+a service is a type of shared library.
+
+15
+00:01:03,820 --> 00:01:06,560
+One of the benefits of Contiki Services
+
+16
+00:01:06,560 --> 00:01:09,360
+is that they can be
+dynamically replaced at random.
+
+17
+00:01:10,670 --> 00:01:13,390
+As mentioned before, with this strategy
+
+18
+00:01:13,390 --> 00:01:17,520
+Contiki minimizes the number of modules
+to be loaded during booting time.
+
+19
+00:01:18,700 --> 00:01:22,280
+As a result, memory researches
+can be used more efficiently.
+
+20
+00:01:23,600 --> 00:01:28,390
+As an example, some popular and
+hag intensive use services in Kentucky
+
+21
+00:01:28,390 --> 00:01:31,610
+are communication stacks and
+sensor device drivers.
+
+22
+00:01:32,830 --> 00:01:36,909
+These kind of services will be
+discussed in depth in coming videos.
+
+23
+00:01:38,780 --> 00:01:40,960
+After this short introduction,
+
+24
+00:01:40,960 --> 00:01:45,940
+I assume that you already have
+a basic idea of Contiki Services.
+
+25
+00:01:45,940 --> 00:01:50,370
+Now, we are going to take a look under
+the skin of Contiki Services and
+
+26
+00:01:50,370 --> 00:01:52,400
+other components related to Services.
+
+27
+00:01:54,000 --> 00:01:59,140
+In every operating system, each service
+should have a unique identifier,
+
+28
+00:01:59,140 --> 00:02:01,350
+defined by the system or users.
+
+29
+00:02:02,720 --> 00:02:05,820
+The format of the identifier
+can write depending
+
+30
+00:02:05,820 --> 00:02:07,390
+on a particular operating system.
+
+31
+00:02:08,700 --> 00:02:11,390
+In Contiki, a service identifier
+
+32
+00:02:11,390 --> 00:02:15,219
+is a textual string that describes
+the functionality of the service
+
+33
+00:02:16,730 --> 00:02:21,020
+Identifiers are used when application
+programs invoke a service.
+
+34
+00:02:22,380 --> 00:02:27,900
+When a service is requested, the service
+layer uses ordinary string matching for
+
+35
+00:02:27,900 --> 00:02:29,530
+querying the installed services.
+
+36
+00:02:31,160 --> 00:02:34,350
+You may now be wondering,
+what is a service layer?
+
+37
+00:02:35,480 --> 00:02:41,490
+The surface layer is a component located
+between the kernel and services.
+
+38
+00:02:41,490 --> 00:02:46,410
+When a process wants to call a service,
+it posts an event to the colonial,
+
+39
+00:02:46,410 --> 00:02:48,870
+which in turn sends a command and
+
+40
+00:02:48,870 --> 00:02:52,650
+information related to their requested
+service to the service leader.
+
+41
+00:02:54,160 --> 00:02:58,420
+This layer uses this data for
+querying a matching services.
+
+42
+00:02:59,580 --> 00:03:02,310
+Instead of searching
+services in the kernel,
+
+43
+00:03:02,310 --> 00:03:04,930
+the searching job will be
+doing by the service layer.
+
+44
+00:03:07,010 --> 00:03:09,044
+Everything we have discussed so
+
+45
+00:03:09,044 --> 00:03:13,348
+far does not unveiled the actual
+structure of a service in Contiki.
+
+46
+00:03:13,348 --> 00:03:17,350
+Therefore, now we are going to
+explore the structure of a service.
+
+47
+00:03:18,830 --> 00:03:22,240
+A service includes a service interface and
+a process.
+
+48
+00:03:23,450 --> 00:03:26,510
+A service interface
+provides an entry point
+
+49
+00:03:26,510 --> 00:03:31,299
+that an application uses to access
+the functionality exposed by the service.
+
+50
+00:03:32,560 --> 00:03:36,060
+The service interface
+includes a version number and
+
+51
+00:03:36,060 --> 00:03:42,130
+a list of functions with pointers to the
+functions that implement the interface.
+
+52
+00:03:42,130 --> 00:03:46,630
+Services and application programs
+use a stub library to communicate.
+
+53
+00:03:47,690 --> 00:03:49,319
+How does a stub library work?
+
+54
+00:03:50,370 --> 00:03:55,110
+A stub library that has been linked
+with an application utilizes
+
+55
+00:03:55,110 --> 00:03:59,570
+the service layer for the purpose of
+finding the corresponding service process.
+
+56
+00:04:00,890 --> 00:04:04,580
+After a service has been located,
+the service is stopped,
+
+57
+00:04:04,580 --> 00:04:08,919
+gets the process identifier,
+which will be used for later requests.
+
+58
+00:04:10,010 --> 00:04:14,740
+By using a stub library an application
+does not need to know the exact
+
+59
+00:04:14,740 --> 00:04:19,870
+location in memory of the service, or
+the implementation details of the service.
+
+60
+00:04:21,010 --> 00:04:25,354
+When a service is called for
+the first time the stub library queries
+
+61
+00:04:25,354 --> 00:04:29,323
+the service layer for searching for
+the necessary service.
+
+62
+00:04:29,323 --> 00:04:33,613
+As a result, if there is an instance
+of the service in the system,
+
+63
+00:04:33,613 --> 00:04:37,990
+the service layer will return
+a pointer to the service interface.
+
+64
+00:04:39,270 --> 00:04:42,860
+After this, the version number
+in the service interface
+
+65
+00:04:42,860 --> 00:04:46,390
+will be compared to the stub
+interface's number.
+
+66
+00:04:46,390 --> 00:04:47,870
+If they are identical,
+
+67
+00:04:47,870 --> 00:04:51,170
+the implementation of the requested
+service will be delivered.
+
+68
+00:04:52,680 --> 00:04:55,950
+Next, I am going to explain
+about service replacement.
+
+69
+00:04:57,130 --> 00:04:59,100
+What is service replacement in Contiki?
+
+70
+00:05:00,200 --> 00:05:05,030
+As we know, services in Contiki can
+be dynamically loaded and replaced.
+
+71
+00:05:06,760 --> 00:05:11,699
+However, it would become unmanageable if
+the process identifier would be changed.
+
+72
+00:05:12,830 --> 00:05:16,040
+Therefore, in order to avoid this issue,
+
+73
+00:05:16,040 --> 00:05:20,870
+the service identifier must remain
+the same even if the process is replaced.
+
+74
+00:05:22,040 --> 00:05:26,150
+A reasonable question would be,
+why is the process replaced but
+
+75
+00:05:26,150 --> 00:05:28,309
+the process identifier is still kept?
+
+76
+00:05:29,370 --> 00:05:30,910
+To answer this question,
+
+77
+00:05:30,910 --> 00:05:35,190
+we are going to explore the mechanism
+that performs this task in Contiki.
+
+78
+00:05:36,760 --> 00:05:42,410
+When a service is about to be replaced,
+a special event is sent from the kernel to
+
+79
+00:05:42,410 --> 00:05:47,299
+the service process to inform the running
+version of the service about the changes.
+
+80
+00:05:48,320 --> 00:05:52,090
+Accordingly, the service is
+automatically removed from the system.
+
+81
+00:05:53,270 --> 00:05:57,070
+However, there are some
+cases that many services
+
+82
+00:05:57,070 --> 00:06:01,680
+have internal stage that may need to
+be transferred to the new process.
+
+83
+00:06:02,990 --> 00:06:06,420
+In order to deal with those cases,
+a pointer and
+
+84
+00:06:06,420 --> 00:06:10,620
+a stage description are used for
+passing to the new service process.
+
+85
+00:06:12,270 --> 00:06:17,220
+In short, this stage description,
+which is stored as a shared memory,
+
+86
+00:06:17,220 --> 00:06:20,090
+is a tag with the motion
+number of the service.
+
+87
+00:06:21,620 --> 00:06:22,250
+The reason for
+
+88
+00:06:22,250 --> 00:06:27,010
+this is to avoid that an incorrect
+version of this same service is loaded.
+
+89
+00:06:28,850 --> 00:06:31,710
+Now let's talk about libraries in Contiki.
+
+90
+00:06:31,710 --> 00:06:36,180
+As we know, the kernel in Contiki
+is minimal and only performs
+
+91
+00:06:36,180 --> 00:06:40,690
+vital functions such as event handling
+features and CPU multipliers.
+
+92
+00:06:41,750 --> 00:06:44,320
+The rest of the system
+is build as a library.
+
+93
+00:06:45,690 --> 00:06:49,750
+When the program needs to use
+a function provided by a library
+
+94
+00:06:49,750 --> 00:06:53,820
+It can link with a library that
+implements the required function.
+
+95
+00:06:55,090 --> 00:06:59,200
+There are three types of linking
+between an application and a library.
+
+96
+00:07:00,360 --> 00:07:04,300
+The first one is a static link
+between an application and
+
+97
+00:07:04,300 --> 00:07:06,800
+libraries which are part of the core.
+
+98
+00:07:07,920 --> 00:07:12,260
+The second one Is a static link
+between an application and
+
+99
+00:07:12,260 --> 00:07:15,160
+libraries which are part
+of loadable program.
+
+100
+00:07:16,500 --> 00:07:19,600
+The last one is the application can
+
+101
+00:07:19,600 --> 00:07:23,120
+call the service that
+implements a specific library.
+
+102
+00:07:24,720 --> 00:07:27,010
+As a result of the last method,
+
+103
+00:07:27,010 --> 00:07:31,140
+the library implemented as services
+can be replaced at random.
+
+104
+00:07:32,570 --> 00:07:36,410
+What is the difference
+between these linking types?
+
+105
+00:07:36,410 --> 00:07:38,850
+Libraries are part of the core.
+
+106
+00:07:38,850 --> 00:07:42,560
+This means that when the system
+is booted or rebooted,
+
+107
+00:07:42,560 --> 00:07:46,330
+these libraries are always automatically
+loaded along with the system.
+
+108
+00:07:47,840 --> 00:07:52,700
+Other type of libraries are loadable
+program libraries, these
+
+109
+00:07:52,700 --> 00:07:57,660
+libraries are only loaded when a program
+application requires their functions.
+
+110
+00:07:58,780 --> 00:08:03,490
+These libraries are rarely used, or
+are very application-specific libraries.
+
+111
+00:08:04,850 --> 00:08:10,720
+The last term is runtime libraries,
+which are implemented as services.
+
+112
+00:08:10,720 --> 00:08:15,130
+This runtime libraries can be replaced
+when the system is running and
+
+113
+00:08:15,130 --> 00:08:16,970
+these libraries are frequently used.
+
+114
+00:08:18,950 --> 00:08:22,050
+To give you a more
+comprehensive understanding
+
+115
+00:08:22,050 --> 00:08:25,930
+of different types of libraries,
+I will discuss some examples.
+
+116
+00:08:27,520 --> 00:08:34,270
+Let's discuss two functions commonly used
+in Contiki applications memcpy and atoi.
+
+117
+00:08:35,760 --> 00:08:41,090
+The memcpy function is used for
+copying data between two memory regions,
+
+118
+00:08:41,090 --> 00:08:45,780
+while atoi function is used for
+converting strings into integers.
+
+119
+00:08:46,950 --> 00:08:50,230
+Memcpy is frequently used in Contiki,
+
+120
+00:08:50,230 --> 00:08:53,209
+therefor it is considered
+as a part of the core.
+
+121
+00:08:54,400 --> 00:08:57,680
+Whereas atoi is less frequently used, and
+
+122
+00:08:57,680 --> 00:09:00,680
+therefore it is not included
+in the system core.
+
+123
+00:09:00,680 --> 00:09:03,610
+It is implemented in
+loadable program libraries.
+
+124
+00:09:04,860 --> 00:09:07,763
+This is all for
+the lesson about Contiki service,
+
+125
+00:09:07,763 --> 00:09:10,125
+service replacement, and libraries.
+
+126
+00:09:10,125 --> 00:09:15,034
+I hope by now you have a good idea
+about how these Contiki features work.
+
+127
+00:09:15,034 --> 00:09:16,693
+Thanks for watching.
+
+128
+00:09:16,693 --> 00:09:21,479
+[MUSIC]

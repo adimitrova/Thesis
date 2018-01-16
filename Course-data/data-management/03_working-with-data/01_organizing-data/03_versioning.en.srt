@@ -1,0 +1,138 @@
+1
+00:00:11,724 --> 00:00:16,077
+It's also important to distinguish between
+the different versions of your data
+
+2
+00:00:16,077 --> 00:00:18,230
+files consistently.
+
+3
+00:00:18,230 --> 00:00:22,967
+This ensures that there's a clear audit
+trail so you can track the development of
+
+4
+00:00:22,967 --> 00:00:26,393
+your data files and
+return to earlier versions if needed.
+
+5
+00:00:26,393 --> 00:00:29,765
+You should pick a method of versioning
+that makes sense to you and
+
+6
+00:00:29,765 --> 00:00:33,340
+makes it clear to differentiate
+between the different data files.
+
+7
+00:00:35,845 --> 00:00:40,886
+A common form for expressing data file
+versions is to use ordinal numbers such as
+
+8
+00:00:40,886 --> 00:00:46,940
+1, 2, and 3 for major version changes and
+decimals for minor changes.
+
+9
+00:00:46,940 --> 00:00:49,269
+For example, version 1.1.
+
+10
+00:00:53,020 --> 00:00:57,795
+You should avoid using confusing
+labels such as revision, final,
+
+11
+00:00:57,795 --> 00:01:00,066
+final2, or definitive copy.
+
+12
+00:01:00,066 --> 00:01:02,312
+You may find that these accumulate and
+
+13
+00:01:02,312 --> 00:01:06,323
+it becomes difficult to understand
+which version proceeds which.
+
+14
+00:01:06,323 --> 00:01:10,389
+You should always record changes to
+your data no matter how small or
+
+15
+00:01:10,389 --> 00:01:12,720
+insignificant they seem at the time.
+
+16
+00:01:13,950 --> 00:01:16,500
+You can use an auto backup facility for
+this,
+
+17
+00:01:16,500 --> 00:01:21,850
+if one's available, rather than saving and
+archiving multiple versions.
+
+18
+00:01:21,850 --> 00:01:27,335
+You can also use a tracking facility on
+software such as Google Docs or on Wiki's.
+
+19
+00:01:28,860 --> 00:01:33,180
+There are a number of version control
+softwares, such as Subversion and
+
+20
+00:01:33,180 --> 00:01:36,320
+TortoiseSVN which are commonly used for
+software code.
+
+21
+00:01:37,902 --> 00:01:42,740
+Remember that you can also delete or
+discard obsolete versions of your data.
+
+22
+00:01:42,740 --> 00:01:46,310
+Just always be sure to retain
+the original rule copy.
+
+23
+00:01:46,310 --> 00:01:50,650
+So, you've now completed this module where
+we've introduced you to the concepts of
+
+24
+00:01:50,650 --> 00:01:55,680
+good research data organization, including
+file naming conventions and versioning.
+
+25
+00:01:57,040 --> 00:02:00,310
+You can take a look at the further
+resources, where you'll find additional
+
+26
+00:02:00,310 --> 00:02:03,660
+references and links that you can
+follow up for more information.
+
+27
+00:02:04,910 --> 00:02:07,140
+You may decide to come back
+to these later on, and
+
+28
+00:02:07,140 --> 00:02:09,760
+start another module in the meantime.
+
+29
+00:02:09,760 --> 00:02:13,687
+If you do so, we recommend you move
+on to the data file formats module.

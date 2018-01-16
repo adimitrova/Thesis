@@ -1,0 +1,463 @@
+1
+00:00:12,214 --> 00:00:16,502
+In this module, you'll be introduced
+to the concepts of file formats,
+
+2
+00:00:16,502 --> 00:00:20,179
+compression, data normalization,
+and transformations.
+
+3
+00:00:21,490 --> 00:00:24,791
+By the end of the module,
+you'll understand why these are important.
+
+4
+00:00:24,791 --> 00:00:28,170
+And you'll be able to make decisions
+about which approach to use when.
+
+5
+00:00:29,490 --> 00:00:32,690
+You'll also be able to use
+the content featured in the module
+
+6
+00:00:32,690 --> 00:00:35,740
+to help improve your research
+data management practice.
+
+7
+00:00:35,740 --> 00:00:37,850
+So what is a file format?
+
+8
+00:00:37,850 --> 00:00:42,595
+A file format is a way of encoding
+information within a computer file.
+
+9
+00:00:42,595 --> 00:00:46,342
+A program or an application
+needs to recognize that file
+
+10
+00:00:46,342 --> 00:00:50,660
+format in order to be able to
+access the content within the file.
+
+11
+00:00:51,870 --> 00:00:56,692
+A web browser, for example,
+will recognize HTML, things in hypertext
+
+12
+00:00:56,692 --> 00:01:01,829
+markup language, and will be able to open
+these files and display them as webpages.
+
+13
+00:01:02,940 --> 00:01:07,440
+If a browser comes across a different type
+of file it might call on a special kind of
+
+14
+00:01:07,440 --> 00:01:11,470
+plugin to be able to open and
+display those files.
+
+15
+00:01:11,470 --> 00:01:15,240
+Otherwise, if it doesn't recognize
+the file type, it may offer the option to
+
+16
+00:01:15,240 --> 00:01:18,510
+download the file so
+you can open it with the relevant program.
+
+17
+00:01:19,600 --> 00:01:24,490
+The file format is often indicated as
+part of the file name in an extension or
+
+18
+00:01:24,490 --> 00:01:26,130
+suffix.
+
+19
+00:01:26,130 --> 00:01:30,630
+Conventionally, the extension follows
+a full stop in the file name, and
+
+20
+00:01:30,630 --> 00:01:35,660
+has three or four letters that
+identify the format such as jpg for
+
+21
+00:01:35,660 --> 00:01:39,090
+JPEGs, or docx for a Word document.
+
+22
+00:01:39,090 --> 00:01:43,220
+Files in proprietary formats usually
+have to be opened by the specific
+
+23
+00:01:43,220 --> 00:01:45,770
+software in which they've been created.
+
+24
+00:01:45,770 --> 00:01:48,010
+So this means that somebody
+without a license for
+
+25
+00:01:48,010 --> 00:01:51,790
+that software can't
+always open those files.
+
+26
+00:01:51,790 --> 00:01:56,460
+In contrast, open formats are ones
+in which the software company or
+
+27
+00:01:56,460 --> 00:02:01,140
+the collective that's created that
+software, has made it openly available.
+
+28
+00:02:01,140 --> 00:02:05,452
+And this usually means that a number of
+applications have been developed which
+
+29
+00:02:05,452 --> 00:02:07,160
+can open those types of files.
+
+30
+00:02:08,605 --> 00:02:11,520
+Adobe PDF is good example
+of an open format.
+
+31
+00:02:12,690 --> 00:02:17,250
+It can be opened by a number of
+applications, not just Adobe products.
+
+32
+00:02:17,250 --> 00:02:20,510
+File types are based on either text or
+binary encoding.
+
+33
+00:02:22,050 --> 00:02:26,670
+Text files are machine readable
+through character encoding standards,
+
+34
+00:02:26,670 --> 00:02:28,880
+such as ASCII and Uni-Code,
+
+35
+00:02:28,880 --> 00:02:34,630
+whereas binary files are run by applicable
+software and may be proprietary.
+
+36
+00:02:36,050 --> 00:02:38,230
+Only binary formats can be executed.
+
+37
+00:02:39,710 --> 00:02:44,710
+Some file types include both binary and
+text, such as the rich text format.
+
+38
+00:02:45,950 --> 00:02:50,990
+A big advantage of creating or
+saving your research data in a text format
+
+39
+00:02:50,990 --> 00:02:54,748
+is that the file can be read in a plain
+text editor, like Windows Notepad,
+
+40
+00:02:54,748 --> 00:02:57,700
+and is human-readable.
+
+41
+00:02:57,700 --> 00:03:02,600
+They can be opened in any operating system
+and by a wide range of applications.
+
+42
+00:03:02,600 --> 00:03:07,428
+Some of the well-known file extensions
+of plain text files are .txt,
+
+43
+00:03:07,428 --> 00:03:12,004
+.csv, .asc, .html, and .xml.
+
+44
+00:03:13,590 --> 00:03:17,870
+Most software packages allow export and
+exchange formats, so
+
+45
+00:03:17,870 --> 00:03:22,490
+you can create a text file for
+import into another program.
+
+46
+00:03:22,490 --> 00:03:28,310
+For example, in Microsoft Excel, you can
+save your spreadsheet as a CSV file.
+
+47
+00:03:28,310 --> 00:03:31,319
+File formats that are open,
+non-proprietary and
+
+48
+00:03:31,319 --> 00:03:35,980
+in widespread use, stand the best chance
+of being readable well into the future.
+
+49
+00:03:37,100 --> 00:03:42,740
+In contrast, proprietary formats,
+especially those that are non-standard,
+
+50
+00:03:42,740 --> 00:03:45,290
+that require specific
+software applications or
+
+51
+00:03:45,290 --> 00:03:50,640
+particular versions of that software,
+are likely to pose issues for future use.
+
+52
+00:03:50,640 --> 00:03:53,400
+Rapid changes in technology in the market
+
+53
+00:03:53,400 --> 00:03:55,920
+mean that file formats can
+very quickly become obsolete.
+
+54
+00:03:57,020 --> 00:04:02,000
+This obviously has negative connotations
+for long-term preservation and reuse.
+
+55
+00:04:02,000 --> 00:04:04,690
+If you want your data
+to be accessible later,
+
+56
+00:04:04,690 --> 00:04:07,270
+you're best to convert
+it to open standards.
+
+57
+00:04:07,270 --> 00:04:10,910
+Data formats that conform to
+agreed international standards
+
+58
+00:04:10,910 --> 00:04:13,570
+are less likely to become obsolete,
+
+59
+00:04:13,570 --> 00:04:16,610
+as there should be a range of software
+applications that can read them.
+
+60
+00:04:17,730 --> 00:04:21,580
+There may well be trade-offs in terms
+of software functionality though,
+
+61
+00:04:21,580 --> 00:04:24,480
+such as a loss of formatting or macros.
+
+62
+00:04:24,480 --> 00:04:27,980
+Sometimes there is a de
+facto standard that's used.
+
+63
+00:04:27,980 --> 00:04:32,070
+PDF for example has become the de facto
+standard for publishing documents
+
+64
+00:04:32,070 --> 00:04:36,920
+on the web in a way that retains
+the original layout, fonts, and text.
+
+65
+00:04:36,920 --> 00:04:40,460
+At some point during your research,
+you may need to convert or
+
+66
+00:04:40,460 --> 00:04:44,850
+migrate your data files
+from one format to another.
+
+67
+00:04:44,850 --> 00:04:49,800
+This could be because you've upgraded
+your PC, you've got new software, you're
+
+68
+00:04:49,800 --> 00:04:54,670
+sharing data with a collaborator who uses
+different software, you're using a shared
+
+69
+00:04:54,670 --> 00:04:59,820
+platform, or simply because you want your
+data files to be readable in the future.
+
+70
+00:04:59,820 --> 00:05:04,370
+A checksum algorithm tool can be
+used to compare the bits of a file
+
+71
+00:05:04,370 --> 00:05:06,750
+when it's been moved from
+one medium to another.
+
+72
+00:05:08,210 --> 00:05:10,880
+Checksums are typically
+run by repositories
+
+73
+00:05:10,880 --> 00:05:12,620
+to perform data integrity checks.
+
+74
+00:05:13,940 --> 00:05:17,490
+These won't work however,
+if the file format has changed or
+
+75
+00:05:17,490 --> 00:05:21,620
+if you're comparing files across
+different computing platforms.
+
+76
+00:05:21,620 --> 00:05:26,240
+At some point during your research you
+may choose to compress your files.
+
+77
+00:05:26,240 --> 00:05:29,870
+This could be to fit them onto
+a particular storage device or for
+
+78
+00:05:29,870 --> 00:05:31,660
+transmission or transportation.
+
+79
+00:05:32,830 --> 00:05:36,220
+Compression is also known
+as bit-rate reduction.
+
+80
+00:05:36,220 --> 00:05:39,660
+It involves encoding
+the information in fewer bits
+
+81
+00:05:39,660 --> 00:05:41,450
+than the original representation.
+
+82
+00:05:42,530 --> 00:05:46,575
+Zip is a de facto standard compression
+format that's used on Windows,
+
+83
+00:05:46,575 --> 00:05:50,085
+Macs, Linux, and Unix platforms.
+
+84
+00:05:50,085 --> 00:05:52,685
+Zip is a lossless type of compression,
+
+85
+00:05:52,685 --> 00:05:57,675
+which means the file should be identical
+to the original once you unzip it.
+
+86
+00:05:57,675 --> 00:06:02,231
+There are also lossy types of compression
+associated with some multimedia file
+
+87
+00:06:02,231 --> 00:06:02,844
+formats.
+
+88
+00:06:02,844 --> 00:06:05,732
+These may result in some
+kind of distortion or
+
+89
+00:06:05,732 --> 00:06:08,247
+loss of quality fidelity when played.
+
+90
+00:06:09,397 --> 00:06:13,887
+Tar, tape archive files,
+are commonly used in Unix or
+
+91
+00:06:13,887 --> 00:06:17,257
+Linux to bundle a set of files into one.
+
+92
+00:06:17,257 --> 00:06:21,560
+Tar files may also be zipped
+to reduce the file size.
+
+93
+00:06:21,560 --> 00:06:23,990
+Lossiness can be one
+trade off of compression.
+
+94
+00:06:25,680 --> 00:06:30,032
+Another is the amount of processing
+time it takes to compress and
+
+95
+00:06:30,032 --> 00:06:33,023
+decompress the files before or during use.
+
+96
+00:06:33,023 --> 00:06:36,979
+The amount of computing resource
+needed can also be an issue,
+
+97
+00:06:36,979 --> 00:06:41,100
+particularly in the case of very
+large files or shared servers.

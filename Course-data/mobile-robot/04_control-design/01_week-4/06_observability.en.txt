@@ -1,0 +1,73 @@
+So, in the last lecture, we saw that it 
+was possible to recover the state from the outputs using this observer 
+structure. And the key there was to build an 
+estimate, or a copy of the state, x hat. And to let the dynamics be given by the 
+predictor part, which is x hat dot this ax hat which is a copy of the original 
+dynamics. Plus the corrector part, that basically 
+compares the outputs to what the outputs would have been if x hat was indeed the 
+state, and that output would have been C times X hat. 
+Now, what we have here, is this gain L. And we saw that designing this L, was 
+just like designing A K, when you're doing control design and, what we really 
+need to do then was just pull placement on the aerodymamics, so if the error, we 
+had e dot now being equal to A minus LC times E, and we just needed to stabilize 
+that system. But just with to control the sign 
+observer the sign doesn't always work and we saw that we needed some kind of notion 
+related to controlability that works for obsever the sign and that notion is 
+observability So observability is really the topic of today's lecture. 
+And just ask for controllability, it's easiest to approach this with a 
+rather modest and simple example. So we're going to deal with a discrete 
+time system where xk + 1 is Axk and the output, yk is Cxk. 
+And we start somewhere, we have some X0, and the question is, by collecting N 
+different outputs, can we recover the initial condition? Meaning can we figure 
+out where we started from? Well, at time 0 the output is simply C times X0, right? 
+At time 1, the output is C times X1. Well, X1 is A times X0, so the output at 
+time 1 is CAx0. And so forth. 
+So at time, n - 1, the output is CA^n - 1 times X0. 
+So now I've gathered this little n different measurements, or y's. 
+And the relationship that we have is this. 
+It looks very similar to what we had in the controllability case. 
+And in fact, this matrix here is going to be the new main character in the 
+observability drama. In fact, this is an important matrix that 
+we're going to call omega. In fact omega will be called the, 
+observability matrix, as opposed to gamma, which was the controllability 
+matrix. Now, just as we had in the control 
+problem, we have a similar kind of setup, where we want to be able to basically 
+invert omega to recover Xo from this stack of outputs. 
+And just as in the controlability case, this is possible when this omega, the 
+observability matrix has full rank. Meaning that the number of linearly 
+independent rows or columns is the same, is equal to little, little m. 
+And luckily, for us, just as for controllability, this result 
+generalizes to the case that we're actually interested in. 
+Which is, the continuous time x is ax, y is Cx. 
+So, observability, in general. Means that the system is completely 
+observable, which I'm going to call CO, if it is possible to recover the initial 
+state from the output. That's basically what it means. 
+I collect enough outputs, and from there I'm able to tell you where the system 
+started. And just like for controllability, we 
+have a matrix. This case it's omega which is the 
+observability matrix and theorem number 1 mirrors exactly theorem number 1 in the 
+controllability case its as, so this is controllability complete observability 
+theorem number 1. It says the system is completely 
+observable if and only if the rank of omega is equal to little n meaning this 
+observability matrix has full rank. Now as before, the rank is simply the 
+number of linearly independent number of rows or columns of the matrix only in 
+this case. Now, we have the second theorem, it 
+follows directly in the same way as it did for control ability. 
+So, if I have this as my observer dynamics, and then I find the error 
+dynamics where e simply is the actual state minus my state estimate. 
+Well, what I wanted to do of course, is drive e to 0, that's what I would like. 
+Well, theorem number two tells me that this is possible, 
+if and only if, using pole-placements to arbitrary eigenvalues. 
+If and only if, the system is completely observable. 
+So, we have an exact dual to controlability when we're designing 
+observers. And in fact, designing observers, or 
+estimating the state, is really the same thing as doing control design. 
+It just happens that we're stabilizing aerodynamics instead of stabilizing the 
+state. So this is good news, right, because now 
+we can actually figure out what the state is. 
+So we are very, very close now to being able to design controllers as if we had 
+x, which we don't, we have y, but we use y 
+to figure out an estimate on x. So what we're going to do in the next 
+lecture is simply put what we've done on the control design side, and on the 
+observant design side together, in order to be able to actually control liner 
+systems where we don't have the state but all we do have is the out

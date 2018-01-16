@@ -1,0 +1,364 @@
+1
+00:00:19,486 --> 00:00:21,534
+[SOUND]. 
+Okay, so one of the first things we have 
+
+2
+00:00:21,534 --> 00:00:25,992
+to learn how to do is to run applications 
+on mobile devices. 
+
+3
+00:00:25,992 --> 00:00:29,392
+now Matt will have already shown you how 
+to run stuff on Android, and Marco will 
+
+4
+00:00:29,392 --> 00:00:32,770
+have shown you how to run stuff off the 
+desktop. 
+
+5
+00:00:32,770 --> 00:00:36,056
+I'm going to show you how you can run the 
+same application, using our code that 
+
+6
+00:00:36,056 --> 00:00:39,183
+we've prepared for you, in the download 
+pack which is off, which is from 
+
+7
+00:00:39,183 --> 00:00:43,380
+Coursera. 
+So that you can do exactly the same code, 
+
+8
+00:00:43,380 --> 00:00:47,140
+write the same code, and have it run on 
+all three devices, specifically on, on 
+
+9
+00:00:47,140 --> 00:00:50,871
+iOS device. 
+Now, crucially, the way we're doing this 
+
+10
+00:00:50,871 --> 00:00:57,168
+as part of this program, is we're running 
+all of the iOS-specific code as 
+
+11
+00:00:57,168 --> 00:00:59,840
+JavaScript. 
+So, when you finish making your 
+
+12
+00:00:59,840 --> 00:01:07,410
+application, you press Go and it builds a 
+webpage specifically for our iOS mobile 
+
+13
+00:01:07,410 --> 00:01:10,500
+device. 
+There's a couple of little tricky things 
+
+14
+00:01:10,500 --> 00:01:12,960
+that we need to get right the first time 
+we do it, and I'm going to talk you 
+
+15
+00:01:12,960 --> 00:01:17,450
+through those right now. 
+But firstly, we start with a 
+
+16
+00:01:17,450 --> 00:01:20,990
+straightforward sketch. 
+Now, I'm going to use a sketch that 
+
+17
+00:01:20,990 --> 00:01:26,410
+we're, we're going to talk about later on 
+in lesson one, called Sonic Painter. 
+
+18
+00:01:26,410 --> 00:01:31,570
+And this is just a basic I'll sketch. 
+It also runs on the desktop, and it also 
+
+19
+00:01:31,570 --> 00:01:39,430
+runs on Android in exactly the same way. 
+So, I'm going to start by creating a 
+
+20
+00:01:39,430 --> 00:01:42,130
+running version on my desktop, so you can 
+see. 
+
+21
+00:01:42,130 --> 00:01:44,270
+Just to give you a, a reminder of how 
+that works. 
+
+22
+00:01:44,270 --> 00:01:49,260
+But we're using JavaScript. 
+So, I'm just hovering over with the 
+
+23
+00:01:49,260 --> 00:01:51,588
+mouse, over the little bit that says 
+JavaScript. 
+
+24
+00:01:51,588 --> 00:01:56,360
+When you click in the top right, 
+right-hand corner of the processing IDE, 
+
+25
+00:01:56,360 --> 00:02:01,580
+you can see it says Java, Andriod, 
+Javascript, Experimental. 
+
+26
+00:02:01,580 --> 00:02:03,920
+I don't really know what Experimental 
+means. 
+
+27
+00:02:03,920 --> 00:02:06,850
+We're not going to try it out today. 
+But we're going to try the JavaScript 
+
+28
+00:02:06,850 --> 00:02:10,180
+version. 
+When you run it, when you press this Play 
+
+29
+00:02:10,180 --> 00:02:15,250
+icon as Mark already shown you, it 
+launches your web browser. 
+
+30
+00:02:15,250 --> 00:02:19,463
+And I think we're recommending you use 
+Google Chrome for this. 
+
+31
+00:02:19,463 --> 00:02:30,510
+Now, you should be able to hear, [SOUND]. 
+And see the app. 
+
+32
+00:02:30,510 --> 00:02:33,740
+And that's the app we're going to look at 
+later on in more detail. 
+
+33
+00:02:33,740 --> 00:02:37,360
+But crucially, what we need to know is 
+what the web address is. 
+
+34
+00:02:37,360 --> 00:02:42,430
+Now, before you start, you need to make 
+sure that you're on the same wireless 
+
+35
+00:02:42,430 --> 00:02:46,400
+network as your desktop on your iOS 
+device. 
+
+36
+00:02:46,400 --> 00:02:49,830
+Most people do this all the time. 
+When you're in your house, you've got one 
+
+37
+00:02:49,830 --> 00:02:52,490
+wireless network. 
+And you connect your computer to that 
+
+38
+00:02:52,490 --> 00:02:56,230
+wireless network and you also connect all 
+your devices to the same network. 
+
+39
+00:02:56,230 --> 00:03:00,070
+But you really need to do that, because 
+if you don't do that, development can be 
+
+40
+00:03:00,070 --> 00:03:03,210
+a bit tricky to get started with. 
+Okay? 
+
+41
+00:03:03,210 --> 00:03:06,880
+So, I recommend you do that first. 
+If you haven't done that, do it now. 
+
+42
+00:03:06,880 --> 00:03:13,311
+So, the next thing we need to know is, 
+what the IP address of this desktop is, 
+
+43
+00:03:13,311 --> 00:03:18,470
+because the desktop is actually serving 
+the app at the moment. 
+
+44
+00:03:18,470 --> 00:03:23,350
+Later on in the course, you'll be serving 
+the app from a web server, and even 
+
+45
+00:03:23,350 --> 00:03:26,898
+storing it locally on your device. 
+I'll show you how to do that in a moment, 
+
+46
+00:03:26,898 --> 00:03:30,110
+but for now, we really need to know the 
+IP address. 
+
+47
+00:03:30,110 --> 00:03:36,190
+Now, on a Windows machine you can do this 
+by going to the command line terminal and 
+
+48
+00:03:36,190 --> 00:03:39,720
+typing IP config, and it will give you 
+the IP address of your advice. 
+
+49
+00:03:40,770 --> 00:03:43,505
+On a Macintosh device, we can do the same 
+thing. 
+
+50
+00:03:43,505 --> 00:03:52,720
+We can go to a terminal. 
+If I type ifconfig, it gives me a list, 
+
+51
+00:03:52,720 --> 00:03:55,550
+and you should be able to see that now, 
+it gives me a list of what looks like 
+
+52
+00:03:55,550 --> 00:03:58,674
+ridiculous numbers. 
+But there's a number here, inet 
+
+53
+00:03:58,674 --> 00:04:04,820
+192.168.0.108, that's the IP address of 
+this machine on this network. 
+
+54
+00:04:04,820 --> 00:04:08,360
+I've got an iPad here. 
+I'm going to launch Safari. 
+
+55
+00:04:08,360 --> 00:04:27,280
+And I'm going to go to the IP address. 
+Http://192.168.0.108. 
+
+56
+00:04:27,280 --> 00:04:32,204
+Now, that's not enough, we also need a 
+colon, and the port number. 
+
+57
+00:04:32,204 --> 00:04:41,100
+The port number here is 55523, I know 
+this all seems like crazy garbage, but 
+
+58
+00:04:41,100 --> 00:04:47,290
+it, I promise you, is nearly over. 
+Here you go, and it's gone straight to 
+
+59
+00:04:47,290 --> 00:04:52,223
+the Solid Painter app. 
+And once it's loaded in, [SOUND], there 
+
+60
+00:04:52,223 --> 00:04:56,131
+you go. 
+It's running on my iOS device. 
+
+61
+00:04:56,131 --> 00:05:01,079
+Simple as that. 
+It's running over the network. 
+
+62
+00:05:01,079 --> 00:05:05,220
+Really simple. 
+And now, I can continue to edit that app 
+
+63
+00:05:05,220 --> 00:05:11,010
+live and just refresh this page. 
+So, I can change an aspect of it, go back 
+
+64
+00:05:11,010 --> 00:05:15,030
+to the code type something else in, and 
+then refresh the page and it will then 
+
+65
+00:05:15,030 --> 00:05:18,390
+come up. 
+One final thing though which is useful to 
+
+66
+00:05:18,390 --> 00:05:24,392
+know, if you want to embed this on your 
+home screen whilest you're developing, 
+
+67
+00:05:24,392 --> 00:05:28,392
+you can hit this little sharing icon and 
+choose add to home screen. 
+
+68
+00:05:28,392 --> 00:05:31,965
+And if you do that, it'll actually make 
+it a proper bundled app. 
+
+69
+00:05:31,965 --> 00:05:35,282
+We'll be talking more about that later on 
+towards the end of the course. 
+
+70
+00:05:35,282 --> 00:05:39,140
+But that, more or less, is how you get it 
+running on your iOS device. 
+
+71
+00:05:39,140 --> 00:05:43,241
+And I just want to point out that our 
+template, which we've prepared for you, 
+
+72
+00:05:43,241 --> 00:05:48,870
+is downloadable from the Coursera site. 
+And that should look identical on a iOS 
+
+73
+00:05:48,870 --> 00:06:00,866
+device whether it's an iPad, an iPhone 5 
+or an iPhone 4. 

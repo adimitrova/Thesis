@@ -1,0 +1,57 @@
+One advantage of using MongoDB for data
+science is that it is trivial to get data into MongoDB, and easy to change your
+data model as needed to support analysis. With our data in MongoDB,
+we can take advantage of indexes, the MongoDB query language, and the aggregation framework to manipulate
+and explore data efficiently, as we work to better understand and
+refine our requirements. MongoDB provides a free tier option
+in Atlas, which is perfect for getting started. Atlas is a MongoDB hosting service
+provided by the people who built MongoDB. It's easy to migrate data from the free
+tier to production scale databases when you're ready. To get started, please sign up for MongoDB Atlas, visiting the link provided
+in the lecture notes for this lesson. We'll be loading some initial data
+sets that we will clean up and begin analyzing as soon as we're
+done creating an Atlas cluster. Please create an account and
+save your credentials somewhere. Once you've submitted
+an account creation form, you'll be prompted to create a group. Atlas uses groups to enable you to
+control who has access to your data. As is often the case, you can grant
+full read write access to some users such as the data scientists on your
+team and read only access to others. Please enter analytics as the group name. Throughout this course, we'll give you
+pretty specific instructions on set up tasks such as this so that if you have
+trouble, it's easy to diagnose the issue. Once you've created a group,
+you'll be taken to a screen like this. Please note that as with all websites,
+Atlas is actively developed. The user interface you see may look
+a little different from what we see here. Note also, that Atlas uses Intercom, and you might see a welcome message
+when you first create an account. Now, don't be nervous about the fact
+that you see a cost here under pricing. Just select M0 here, under instance size,
+and you'll see the price go to zero. Also, let's name this cluster mflix. This is the name of the app we'll be
+building as we move through this course. Once you've named the cluster and
+selected M0 as the instance size, please scroll to the bottom of this modal. And create an administrative user
+with the username analytics, and the password, analytics-password. We'll use these credentials to connect to
+this MongoDB cluster from Python scripts and applications later in this course. Now, if the term cluster is
+unfamiliar to you, don't worry. All you need to know at this point is
+that a cluster provides redundancy. The cluster we are creating is actually
+three MongoDB database servers. This a safeguard to make sure your
+data is always available to you. While the probability is small on
+something going wrong on any given day, computers crash, network connections
+break, and other problems emerge. Having a cluster rather than
+just a stand alone instance ensures that you'll be
+able to access your data even if something bad happens to
+one of the servers in our cluster. The client libraries we will use from
+Python will automatically switch to one of the other servers if for
+some reason it could no longer communicate with the one
+it was reading from and writing to. This is called automatic failover. All nodes in the cluster
+maintain copies of your data, so it really doesn't matter which
+one your application uses. All this is handled for you automatically. You probably won't even
+notice of a failover happens. Okay, with that little bit of
+context about what a cluster is, click Confirm & Deploy to
+initiate the creation process. You might see a captcha pop up. Simply do what it asks you to do, verify. It will take a minute or two for
+your clusters to be created. While we wait,
+let's ensure we can access our cluster once we begin to write
+a little Python code. Click the Security tab,
+then click the IP-Whitelist tab. Click the Add IP Address button And then
+the Allow Access from Anywhere button. And finally, Confirm. Atlas allows us to restrict access to a
+cluster to specific IP address ranges to, for example, ensure only computers
+in a specific corporate network can connect to the cluster. Allowing access from anywhere
+will make it easy for you to access MongoDB from wherever you
+are and simplifies access for this course. You will still need to supply a username
+and password to access the cluster. Now, click the Clusters tab and wait for
+your cluster to finish initializing.

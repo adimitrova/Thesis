@@ -1,0 +1,612 @@
+1
+00:00:00,000 --> 00:00:10,900
+[MUSIC]
+
+2
+00:00:10,900 --> 00:00:17,345
+Hello, welcome to the second module of our
+introductory course on Subatomic Physics.
+
+3
+00:00:17,345 --> 00:00:22,310
+During this module, we'll deal with
+nuclear physics and its applications.
+
+4
+00:00:22,310 --> 00:00:23,642
+At the end of the module,
+
+5
+00:00:23,642 --> 00:00:27,718
+we will visit the Tokamak of the Swiss
+Institute of Technology in Lausanne.
+
+6
+00:00:27,718 --> 00:00:34,055
+And the Beznau Nuclear Power Plant which
+is the oldest one still in operation.
+
+7
+00:00:34,055 --> 00:00:36,543
+This is pretty much
+a self-contained module,
+
+8
+00:00:36,543 --> 00:00:40,225
+if your main interest is nuclear physics,
+you will be well-served.
+
+9
+00:00:40,225 --> 00:00:44,979
+You will also notice that it is
+somewhat longer than other modules, so
+
+10
+00:00:44,979 --> 00:00:49,180
+just take your time to digest
+the contents without pressure.
+
+11
+00:00:50,680 --> 00:00:55,040
+In this first video, we will review
+what is known about the mass of nuclei.
+
+12
+00:00:55,040 --> 00:00:57,040
+The goals for you are the following.
+
+13
+00:00:57,040 --> 00:01:01,345
+To know the nomenclature of atomic
+nuclei and their periodic system.
+
+14
+00:01:01,345 --> 00:01:06,710
+And to be able to qualitatively describe
+the mass and binding energy of nuclei.
+
+15
+00:01:09,690 --> 00:01:13,860
+Experiments of the Rutherford type
+demonstrate the existence of a positively
+
+16
+00:01:13,860 --> 00:01:16,290
+charged nucleus,
+
+17
+00:01:16,290 --> 00:01:20,190
+which is four orders of magnitude
+smaller than the size of the atom.
+
+18
+00:01:20,190 --> 00:01:23,130
+These experiments only require
+to understand electromagnetic
+
+19
+00:01:23,130 --> 00:01:25,440
+interactions between the project and
+the target.
+
+20
+00:01:26,505 --> 00:01:30,650
+Scattering experiments can also yield
+information about nuclear properties.
+
+21
+00:01:30,650 --> 00:01:34,550
+And thus establish a catalog of
+the properties of the nuclear interaction
+
+22
+00:01:34,550 --> 00:01:38,430
+that holds together protons and
+neutrons inside the nucleus.
+
+23
+00:01:39,520 --> 00:01:43,390
+One must not confuse this nuclear force
+with the strong force introduced in
+
+24
+00:01:43,390 --> 00:01:48,890
+the first module and more extensively
+discussed in module number five.
+
+25
+00:01:48,890 --> 00:01:53,960
+The strong force binds together quarks
+inside hadrons by gluon exchange.
+
+26
+00:01:53,960 --> 00:01:56,750
+It does not permit quarks
+to leave the hadrons.
+
+27
+00:01:56,750 --> 00:01:57,960
+So hadrons in general and
+
+28
+00:01:57,960 --> 00:02:01,540
+nucleons in particular,
+do not carry a net color charge.
+
+29
+00:02:02,610 --> 00:02:06,330
+Thus gluons cannot bind protons and
+neutrons to form a nucleus.
+
+30
+00:02:07,910 --> 00:02:12,830
+The nuclear force is more like a long
+distance residue of the strong force
+
+31
+00:02:12,830 --> 00:02:15,970
+in that it resembles the well-known
+Van der Waals force,
+
+32
+00:02:15,970 --> 00:02:20,050
+which is a residue of the electromagnetic
+interaction which acts between
+
+33
+00:02:21,470 --> 00:02:22,980
+electrically neutral molecules.
+
+34
+00:02:24,860 --> 00:02:29,010
+Let us compare some basic properties of
+atoms, and the electromagnetic force on
+
+35
+00:02:29,010 --> 00:02:32,090
+one side, to nuclei, and
+the nuclear force on the other side.
+
+36
+00:02:33,120 --> 00:02:37,750
+The electromagnetic force is
+responsible for holding atoms together.
+
+37
+00:02:37,750 --> 00:02:40,470
+Its properties are well known,
+classically, and
+
+38
+00:02:40,470 --> 00:02:44,120
+rather easy to extrapolate
+to quantum distances.
+
+39
+00:02:45,180 --> 00:02:48,342
+The study of atomic spectra indeed
+gave rise to quantum mechanics,
+
+40
+00:02:48,342 --> 00:02:49,723
+which qualitatively and
+
+41
+00:02:49,723 --> 00:02:53,740
+quantitatively explains many phenomena
+of condensed matter physics.
+
+42
+00:02:55,280 --> 00:02:56,980
+The fine structure constant,
+
+43
+00:02:56,980 --> 00:03:00,210
+the electromagnetic coupling
+constant, is a small number.
+
+44
+00:03:01,500 --> 00:03:07,340
+Alpha is about 1/137, which makes
+perturbative calculations feasible.
+
+45
+00:03:08,580 --> 00:03:11,190
+The nuclear force, on the other hand,
+must be much stronger,
+
+46
+00:03:11,190 --> 00:03:14,300
+since it wins over the Coulomb repulsion
+between tightly-packed protons.
+
+47
+00:03:15,330 --> 00:03:16,350
+It must be of short range,
+
+48
+00:03:16,350 --> 00:03:20,240
+since it doesn't make itself
+felt outside the nuclear volume.
+
+49
+00:03:21,590 --> 00:03:23,300
+It has no classical analog.
+
+50
+00:03:23,300 --> 00:03:26,300
+Only experimental results can help
+to understand its properties.
+
+51
+00:03:27,490 --> 00:03:31,130
+One thus uses experiments as
+a guide towards empirical models
+
+52
+00:03:31,130 --> 00:03:33,640
+of the nucleus and of the nuclear force.
+
+53
+00:03:33,640 --> 00:03:38,030
+We will come back to the relation between
+experiments and models as we go along.
+
+54
+00:03:41,834 --> 00:03:46,110
+Let us first summarize how we identify and
+denote nuclei.
+
+55
+00:03:46,110 --> 00:03:48,330
+We denote by Z, the nuclear charge,
+
+56
+00:03:48,330 --> 00:03:51,340
+which is equal to the atomic
+number in the periodic table.
+
+57
+00:03:51,340 --> 00:03:53,825
+Itis given by the number
+of protons in the nucleus.
+
+58
+00:03:55,080 --> 00:03:58,212
+A is the number of nucleons,
+the sum of protons and neutrons,
+
+59
+00:03:58,212 --> 00:03:59,970
+it is also called the mass number.
+
+60
+00:04:01,350 --> 00:04:04,760
+Nuclei are thus completely identified
+by their electric charge and
+
+61
+00:04:04,760 --> 00:04:05,860
+the number of nucleons.
+
+62
+00:04:07,250 --> 00:04:13,235
+The name we give them identifies Z and
+usually is supplemented by A.
+
+63
+00:04:13,235 --> 00:04:15,107
+When we say carbon 14,
+
+64
+00:04:15,107 --> 00:04:19,664
+that means a nucleus with Z=6 and A=14.
+
+65
+00:04:20,930 --> 00:04:26,030
+Evidently, the number of neutrons is then
+the difference between the mass number and
+
+66
+00:04:26,030 --> 00:04:28,360
+the atomic number, and is denoted by N.
+
+67
+00:04:29,730 --> 00:04:32,800
+The chemical properties of the elements
+are determined by the electron
+
+68
+00:04:32,800 --> 00:04:34,540
+cloud surrounding the nucleus.
+
+69
+00:04:34,540 --> 00:04:37,499
+The periodic table is thus
+organized according to Z.
+
+70
+00:04:39,235 --> 00:04:41,160
+Nuclei with the same number of protons,
+but
+
+71
+00:04:41,160 --> 00:04:44,900
+with a different number of neutrons,
+are called isotopes.
+
+72
+00:04:45,930 --> 00:04:48,580
+They have very similar
+chemical properties but
+
+73
+00:04:48,580 --> 00:04:51,110
+not necessarily similar
+nuclear properties.
+
+74
+00:04:51,110 --> 00:04:57,670
+Examples are uranium 235 and
+uranium 238, which have both 92 protons,
+
+75
+00:04:57,670 --> 00:05:01,110
+but a different number of neutrons and
+thus different stability properties.
+
+76
+00:05:02,180 --> 00:05:05,030
+Another example is hydrogen,
+deuterium, and
+
+77
+00:05:05,030 --> 00:05:10,310
+tritium which all have one proton and
+zero, one, or two neutrons.
+
+78
+00:05:11,820 --> 00:05:16,080
+Nuclei can also be
+excited to higher states,
+
+79
+00:05:16,080 --> 00:05:18,590
+keeping the number of protons and
+neutrons constant.
+
+80
+00:05:18,590 --> 00:05:21,874
+These are called resonances or isomers.
+
+81
+00:05:21,874 --> 00:05:24,455
+Nuclei with the same
+number of nucleons but
+
+82
+00:05:24,455 --> 00:05:27,607
+the different number of
+protons are called isobars.
+
+83
+00:05:27,607 --> 00:05:31,850
+They have roughly the same nuclear mass.
+
+84
+00:05:31,850 --> 00:05:36,680
+Examples are carbon 12 and boron 12,
+with both have 12 nucleons.
+
+85
+00:05:40,018 --> 00:05:44,610
+Naively one might assume that the mass
+of nuclei is simply given by the sum of
+
+86
+00:05:44,610 --> 00:05:48,500
+the masses of protons and
+neutrons they contain.
+
+87
+00:05:48,500 --> 00:05:50,630
+But in reality, this mass is,
+
+88
+00:05:50,630 --> 00:05:54,050
+of course, diminished by the binding
+energy between the nucleons.
+
+89
+00:05:55,370 --> 00:05:58,950
+The mass deficit ∆M
+must always be negative so
+
+90
+00:05:58,950 --> 00:06:01,330
+that the nucleus is in a bound state.
+
+91
+00:06:01,330 --> 00:06:03,400
+We call it the binding energy.
+
+92
+00:06:03,400 --> 00:06:05,390
+It has been measured for
+practically all nuclei.
+
+93
+00:06:07,030 --> 00:06:10,610
+The absolute value of the binding energy
+is the energy required to decompose
+
+94
+00:06:10,610 --> 00:06:12,130
+the nucleus into separate nucleons.
+
+95
+00:06:13,390 --> 00:06:16,730
+The binding energy per nucleon,
+∆M/A,
+
+96
+00:06:16,730 --> 00:06:21,040
+is the energy required to separate
+the average nucleon from its nucleus.
+
+97
+00:06:21,040 --> 00:06:24,832
+It is much smaller than
+the mass of a nucleon p and n.
+
+98
+00:06:24,832 --> 00:06:29,010
+The mass of the nucleus is thus indeed
+dominated by the mass of its constituents.
+
+99
+00:06:30,500 --> 00:06:33,791
+For the nucleons themselves
+the situation is very different.
+
+100
+00:06:33,791 --> 00:06:37,750
+The total mass of the quarks inside
+the nucleon is only around 1% of
+
+101
+00:06:37,750 --> 00:06:38,867
+the nucleon mass.
+
+102
+00:06:38,867 --> 00:06:41,910
+It is their binding energy which
+dominates the nucleon mass.
+
+103
+00:06:46,070 --> 00:06:51,100
+When one analyzes the dependance of
+the binding energy, ∆M per nucleon A,
+
+104
+00:06:52,350 --> 00:06:55,560
+on the mass number A one
+notices the following.
+
+105
+00:06:56,700 --> 00:07:00,660
+For A less than 20 on
+the left side of this graph,
+
+106
+00:07:00,660 --> 00:07:04,360
+∆M/A oscillates but
+rises rapidly with increasing A.
+
+107
+00:07:06,150 --> 00:07:10,920
+For A between 20 and 60, ∆M/A saturates.
+
+108
+00:07:10,920 --> 00:07:13,820
+For A about 60, it has a broad maximum.
+
+109
+00:07:13,820 --> 00:07:17,400
+That is, the iron group formed by nickel,
+iron, and
+
+110
+00:07:17,400 --> 00:07:23,400
+cobalt with about 9 MeV
+per nucleon of binding energy.
+
+111
+00:07:23,400 --> 00:07:28,410
+And then for A larger than 60, the binding
+energy per nucleon decreases slowly.
+
+112
+00:07:29,760 --> 00:07:33,830
+The general mean is about 8 MeV per nucleon.
+
+113
+00:07:33,830 --> 00:07:38,210
+The kinetic energy of nucleons inside
+the nucleus must thus be relatively small.
+
+114
+00:07:38,210 --> 00:07:40,400
+Otherwise, they would not stay bound.
+
+115
+00:07:41,410 --> 00:07:44,504
+The velocities of bound nucleons
+are thus non-relativistic.
+
+116
+00:07:50,010 --> 00:07:55,130
+The binding energy corresponds indeed to a
+wavelength of nucleons inside the nucleus.
+
+117
+00:07:55,130 --> 00:08:01,298
+This wavelength is less than two Fermi of
+the order of the nucleus' size itself.
+
+118
+00:08:01,298 --> 00:08:05,350
+It is thus plausible that the nucleus can
+contain nucleons with the maximum kinetic
+
+119
+00:08:05,350 --> 00:08:07,870
+energy of about 8 MeV.
+
+120
+00:08:07,870 --> 00:08:11,290
+Or a maximum momentum of about 120 Me.
+
+121
+00:08:11,290 --> 00:08:15,000
+If, on the other hand,
+the nucleus would contain electrons,
+
+122
+00:08:15,000 --> 00:08:20,365
+they would be relativistic and
+their wavelength would be
+
+123
+00:08:20,365 --> 00:08:24,780
+2.5 x 10^-12 centimeters,
+much bigger than the nucleus size.
+
+124
+00:08:24,780 --> 00:08:28,130
+The nucleus can thus not
+contain bound electrons.
+
+125
+00:08:28,130 --> 00:08:30,310
+They need a much larger
+volume to be contained.
+
+126
+00:08:31,940 --> 00:08:35,190
+This is obviously in agreement with
+the findings of Geiger and Marsden,
+
+127
+00:08:35,190 --> 00:08:38,870
+that we have discussed
+in the previous module.
+
+128
+00:08:39,950 --> 00:08:44,063
+In the next video, we will talk about
+the size and the spin of nuclei.
+
+129
+00:08:44,063 --> 00:08:50,269
+[MUSIC]

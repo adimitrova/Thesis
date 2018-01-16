@@ -1,0 +1,1175 @@
+1
+00:00:06,048 --> 00:00:07,580
+If we make it rigid.
+
+2
+00:00:09,460 --> 00:00:11,130
+We've already jumped ahead
+a little bit which is good.
+
+3
+00:00:11,130 --> 00:00:14,310
+Sometimes just rearranging your order
+helps things sink in more, right?
+
+4
+00:00:14,310 --> 00:00:16,980
+If it's rigid,
+what is the key differentiation?
+
+5
+00:00:16,980 --> 00:00:21,350
+So Sheila was on the right track earlier
+that it's all about these derivatives,
+
+6
+00:00:21,350 --> 00:00:23,290
+especially this little r dot.
+
+7
+00:00:23,290 --> 00:00:27,170
+And if it's rigid, then the derivative of
+
+8
+00:00:27,170 --> 00:00:32,190
+this vector as seen by
+the body frame has to be 0.
+
+9
+00:00:32,190 --> 00:00:34,960
+So you just end up with omega cross r,
+right?
+
+10
+00:00:34,960 --> 00:00:39,130
+If it's not rigid, then this little mass
+particle is maybe deploying, it's moving,
+
+11
+00:00:39,130 --> 00:00:40,900
+it's wobbling, it's doing something.
+
+12
+00:00:40,900 --> 00:00:42,170
+And you have extra turns.
+
+13
+00:00:42,170 --> 00:00:44,570
+That's, in fact,
+what you'd have to include.
+
+14
+00:00:44,570 --> 00:00:47,820
+Now you plug this in, and
+we only focus about this one.
+
+15
+00:00:47,820 --> 00:00:52,140
+You can separate this also for rigid body,
+like this plus this other term.
+
+16
+00:00:52,140 --> 00:00:54,250
+I'm not going to do that here.
+
+17
+00:00:54,250 --> 00:00:59,273
+But in the end, the angle momentum about
+
+18
+00:00:59,273 --> 00:01:03,853
+the center of mass ended up being this
+
+19
+00:01:03,853 --> 00:01:09,050
+minus r tilde, r tilde, dm times omega.
+
+20
+00:01:09,050 --> 00:01:14,408
+What did we call this
+big bracketed term here?
+
+21
+00:01:14,408 --> 00:01:15,021
+>> Is that the inertia tensor?
+
+22
+00:01:15,021 --> 00:01:16,780
+>> That's the inertia tensor.
+
+23
+00:01:16,780 --> 00:01:20,890
+And I like using the word tensor versus
+matrix, because there's a difference.
+
+24
+00:01:20,890 --> 00:01:22,515
+We have a position vector but
+
+25
+00:01:22,515 --> 00:01:27,065
+then we use a matrix to define the vector
+components with respect to some frame.
+
+26
+00:01:27,065 --> 00:01:31,762
+So the matrix represents a vector but
+the vectors you can fundamentally just add
+
+27
+00:01:31,762 --> 00:01:35,670
+vectors and add arrows and
+you don't have to assign frames.
+
+28
+00:01:35,670 --> 00:01:36,596
+Same thing here.
+
+29
+00:01:36,596 --> 00:01:41,275
+Now in this tilde notation, this is
+basically the cross product operator
+
+30
+00:01:41,275 --> 00:01:44,710
+which will be the vector equivalent of it,
+right?
+
+31
+00:01:44,710 --> 00:01:47,440
+You have to make sure that r tilde.
+
+32
+00:01:47,440 --> 00:01:52,165
+You have to take this vector, r,
+with respect to some frame, the B frame,
+
+33
+00:01:52,165 --> 00:01:53,150
+as an example.
+
+34
+00:01:53,150 --> 00:01:55,350
+This would be in the B frame,
+that's what you measure.
+
+35
+00:01:55,350 --> 00:01:58,300
+Now it's apples and apples and
+you can do all your matrix math.
+
+36
+00:01:58,300 --> 00:02:00,991
+You wouldn't have this in the C frame and
+this in the B frame.
+
+37
+00:02:00,991 --> 00:02:04,188
+And then you'd be mixing frames and
+it just wouldn't work out well, all right?
+
+38
+00:02:04,188 --> 00:02:09,920
+So we have to do the integration by
+picking a body frame and then we get this.
+
+39
+00:02:09,920 --> 00:02:14,990
+And also little r is defined relative
+to this body's center of mass.
+
+40
+00:02:14,990 --> 00:02:16,890
+That's how we defined little r.
+
+41
+00:02:16,890 --> 00:02:18,470
+What if we have a different point?
+
+42
+00:02:18,470 --> 00:02:21,420
+Maybe this thing isn't spinning
+about its center of mass, but
+
+43
+00:02:21,420 --> 00:02:25,010
+it's pivoted to an end of an arm,
+and it's pivoting like this.
+
+44
+00:02:25,010 --> 00:02:25,610
+All of a sudden,
+
+45
+00:02:25,610 --> 00:02:30,480
+I need the inertia about this endpoint,
+not about the center point, right?
+
+46
+00:02:30,480 --> 00:02:33,360
+Do we have to redo this
+integration over and over again?
+
+47
+00:02:34,700 --> 00:02:35,652
+No, right?
+
+48
+00:02:35,652 --> 00:02:37,600
+So there's formulas on how to do this.
+
+49
+00:02:37,600 --> 00:02:41,740
+This, in essence,
+is my inertia tensor times omega.
+
+50
+00:02:41,740 --> 00:02:42,700
+So written like this,
+
+51
+00:02:42,700 --> 00:02:46,050
+treat this as a completely
+coordinate-independent formulation.
+
+52
+00:02:46,050 --> 00:02:49,636
+When you're actually numerically evaluated
+in some program like MATLAB or C or
+
+53
+00:02:49,636 --> 00:02:50,690
+something.
+
+54
+00:02:50,690 --> 00:02:52,150
+You have to make sure
+it's the same frames.
+
+55
+00:02:52,150 --> 00:02:53,440
+But when we derive controls,
+
+56
+00:02:53,440 --> 00:02:57,360
+we'll just write it this way and
+not assign frames yet.
+
+57
+00:02:57,360 --> 00:03:00,065
+That's the bookkeeping
+you do at the very end.
+
+58
+00:03:00,065 --> 00:03:02,590
+So good, that was the inertia tensor.
+
+59
+00:03:02,590 --> 00:03:05,980
+So let's wrap up some final things.
+
+60
+00:03:05,980 --> 00:03:09,880
+What if we have a,
+let's just flip the order.
+
+61
+00:03:09,880 --> 00:03:11,910
+Let's do attitudes first,
+just to mix it up.
+
+62
+00:03:11,910 --> 00:03:14,320
+What if we have a different orientation?
+
+63
+00:03:14,320 --> 00:03:21,238
+You have the inertia tensor
+given to you in B frames but
+
+64
+00:03:21,238 --> 00:03:27,404
+I want the inertia tensor
+in frame components.
+
+65
+00:03:27,404 --> 00:03:30,983
+I don't have to redo all
+those body intervals again.
+
+66
+00:03:30,983 --> 00:03:32,841
+Once you have them, you're good.
+
+67
+00:03:32,841 --> 00:03:37,240
+>> Do you have to left multiply and
+right multiply?
+
+68
+00:03:37,240 --> 00:03:39,715
+>> Okay, so
+give me the two letters of each DCM.
+
+69
+00:03:39,715 --> 00:03:45,729
+>> [INAUDIBLE]
+>> So it would be BE,
+
+70
+00:03:45,729 --> 00:03:52,515
+right, or no EB, sorry, backwards.
+
+71
+00:03:52,515 --> 00:03:54,980
+>> Won't let me erase.
+
+72
+00:03:54,980 --> 00:03:56,649
+Okay, EB, and the next one is?
+
+73
+00:03:56,649 --> 00:03:59,647
+>> [INAUDIBLE]
+>> Or B.
+
+74
+00:03:59,647 --> 00:04:01,905
+I like to remember it this way actually.
+
+75
+00:04:01,905 --> 00:04:06,130
+because this way if I know BE, great,
+then have to transpose this one.
+
+76
+00:04:06,130 --> 00:04:09,200
+If I know EB, fine,
+you have to transpose that one, right?
+
+77
+00:04:09,200 --> 00:04:13,350
+But it's basically if this is in the B
+frame, then it's a two-dimensional.
+
+78
+00:04:13,350 --> 00:04:15,540
+Think of tensors like
+two-dimensional vectors.
+
+79
+00:04:15,540 --> 00:04:18,850
+So instead of using the DCM once,
+it's a 2D thing, you have to use it twice.
+
+80
+00:04:18,850 --> 00:04:21,810
+And you're absolutely correct,
+it's a left and a right multiplication.
+
+81
+00:04:21,810 --> 00:04:24,740
+And when you bump them up like that
+the letters B should match up.
+
+82
+00:04:24,740 --> 00:04:25,750
+This is all on the B frame.
+
+83
+00:04:25,750 --> 00:04:29,080
+And then what's on the outside
+everything's being mapped to the E frame
+
+84
+00:04:29,080 --> 00:04:31,520
+and you get a inertia
+tensor in the E frame.
+
+85
+00:04:31,520 --> 00:04:34,910
+So a different rule of mnemonics trick
+that you can help to remember this stuff.
+
+86
+00:04:34,910 --> 00:04:36,230
+Definitely use it twice.
+
+87
+00:04:36,230 --> 00:04:42,150
+Good, so that's how we avoid, once we
+have this in some body fixed frame,
+
+88
+00:04:42,150 --> 00:04:44,860
+we can easily map it to any
+other body fixed frame.
+
+89
+00:04:44,860 --> 00:04:47,590
+I will use this trick several times,
+especially when deriving variable speed,
+
+90
+00:04:47,590 --> 00:04:50,370
+c and g equations of motion, and so forth.
+
+91
+00:04:50,370 --> 00:04:57,320
+So what do I mean by
+a principal coordinate frame?
+
+92
+00:04:57,320 --> 00:04:58,260
+Is it Tosh?
+
+93
+00:04:59,590 --> 00:05:00,300
+What does that mean?
+
+94
+00:05:01,514 --> 00:05:05,106
+>> The [INAUDIBLE]?
+
+95
+00:05:05,106 --> 00:05:10,188
+>> Mm-hm, so let's say F is principal.
+
+96
+00:05:17,983 --> 00:05:19,450
+So what about the diagonals?
+
+97
+00:05:23,020 --> 00:05:27,030
+>> Of the principal.
+
+98
+00:05:27,030 --> 00:05:30,840
+>> Let's just call this I1, I2, I3.
+
+99
+00:05:30,840 --> 00:05:31,984
+What about the off diagonals?
+
+100
+00:05:36,835 --> 00:05:38,246
+>> They're 0.
+
+101
+00:05:38,246 --> 00:05:39,910
+>> So, they're 0.
+
+102
+00:05:39,910 --> 00:05:42,530
+If this is a principal frame,
+
+103
+00:05:42,530 --> 00:05:46,940
+you have a coordinate frame such
+that you get a nice diagonal form.
+
+104
+00:05:46,940 --> 00:05:48,710
+Chuck, can we always do this?
+
+105
+00:05:48,710 --> 00:05:51,710
+Or are there assumptions on
+the shape that allow us to do this?
+
+106
+00:05:51,710 --> 00:05:53,240
+It's a rigid system.
+
+107
+00:05:53,240 --> 00:05:54,160
+>> Yes, you can always do it.
+
+108
+00:05:54,160 --> 00:05:55,490
+>> You can always do this.
+
+109
+00:05:55,490 --> 00:05:59,130
+That's why for analysis very often
+you see papers or even our own stuff.
+
+110
+00:05:59,130 --> 00:06:01,440
+We need to start out with
+assuming it's a principal frame.
+
+111
+00:06:01,440 --> 00:06:03,506
+because instead of having
+nine elements to track and
+
+112
+00:06:03,506 --> 00:06:06,800
+now with symmetry it's actually six, but
+still it's about I can go down to three.
+
+113
+00:06:06,800 --> 00:06:10,210
+Three principal inertias fully define
+the mass distribution of a system.
+
+114
+00:06:10,210 --> 00:06:13,010
+Without loss of generality
+we can always do this.
+
+115
+00:06:13,010 --> 00:06:15,350
+In the code, though, we typically solve,
+
+116
+00:06:15,350 --> 00:06:17,862
+actually we do control problems
+that include the full tensor.
+
+117
+00:06:17,862 --> 00:06:20,960
+Because in real life they will
+never give you the mass balance.
+
+118
+00:06:20,960 --> 00:06:23,470
+You may start out with a frame that's
+perfect, and at the very last minute
+
+119
+00:06:23,470 --> 00:06:26,937
+astronaut A and B switch places, and
+next thing you know your CG's offset.
+
+120
+00:06:26,937 --> 00:06:31,410
+Crap, my inertia tensor's now
+fully populated, darn astronauts!
+
+121
+00:06:31,410 --> 00:06:32,920
+So there's always something.
+
+122
+00:06:32,920 --> 00:06:35,610
+So in the code,
+we want to have formulations and
+
+123
+00:06:35,610 --> 00:06:38,047
+controls that handle any inertia tensor.
+
+124
+00:06:38,047 --> 00:06:40,115
+But we want to also realize for
+analysis and
+
+125
+00:06:40,115 --> 00:06:43,170
+we design it typically they're diagonal or
+nearly diagonal.
+
+126
+00:06:43,170 --> 00:06:45,600
+The off diagonal terms
+might be very small.
+
+127
+00:06:45,600 --> 00:06:47,870
+We want to have solutions that work for
+everything.
+
+128
+00:06:47,870 --> 00:06:53,505
+So good, this is symmetric
+matrix from the definition.
+
+129
+00:06:53,505 --> 00:06:58,720
+Could you have inertias, I1 = 800,
+
+130
+00:06:58,720 --> 00:07:02,452
+I2 = 20, and I3 = 50.
+
+131
+00:07:02,452 --> 00:07:06,760
+I'm just using generic units.
+
+132
+00:07:06,760 --> 00:07:09,510
+I'm not throwing in anything particular,
+they're just consistent numbers.
+
+133
+00:07:11,090 --> 00:07:11,910
+Is that possible?
+
+134
+00:07:14,939 --> 00:07:17,500
+So we didn't discuss, I'm just curious.
+
+135
+00:07:19,280 --> 00:07:21,040
+Everybody here has seen
+inertia tensors before.
+
+136
+00:07:22,720 --> 00:07:25,440
+Are there constraints in
+the principal inertia values?
+
+137
+00:07:27,050 --> 00:07:29,000
+You find lots of publications
+that they publish stuff,
+
+138
+00:07:29,000 --> 00:07:31,290
+where they throw in inertias like this.
+
+139
+00:07:31,290 --> 00:07:34,110
+And as an editor I can go,
+hey, wait a minute.
+
+140
+00:07:34,110 --> 00:07:36,330
+This is a non-physical system.
+
+141
+00:07:36,330 --> 00:07:39,050
+There are limits to how
+different your inertias can be.
+
+142
+00:07:40,190 --> 00:07:44,791
+In fact there's an inequality
+constraint that says, the I,
+
+143
+00:07:44,791 --> 00:07:50,186
+principal inertia + the J of principal
+inertia have to be greater than or
+
+144
+00:07:50,186 --> 00:07:53,430
+equal to the kth principal inertia.
+
+145
+00:07:53,430 --> 00:07:57,140
+So if you sum any two of them,
+you have to be bigger than the third,
+
+146
+00:07:57,140 --> 00:07:58,230
+whatever the third is.
+
+147
+00:07:59,810 --> 00:08:02,250
+And if you go, and
+let's just look at that.
+
+148
+00:08:07,383 --> 00:08:08,950
+Here we go.
+
+149
+00:08:08,950 --> 00:08:11,984
+If you look in this,
+this is the I1, I2, I3.
+
+150
+00:08:11,984 --> 00:08:14,510
+These off diagonals are all 0, right?
+
+151
+00:08:14,510 --> 00:08:17,160
+So I1 i r2 squared and 3 squared.
+
+152
+00:08:17,160 --> 00:08:19,790
+This one is r1 squared and 3 squared.
+
+153
+00:08:19,790 --> 00:08:25,200
+So summed up, I get r1 squared
+2 squared and 2r3 squared.
+
+154
+00:08:25,200 --> 00:08:29,990
+Compared to the third, it's just r1
+squared and 2 squared plus an r3 squared.
+
+155
+00:08:29,990 --> 00:08:33,530
+That squared term can at best be 0,
+which means they're equal.
+
+156
+00:08:35,280 --> 00:08:39,150
+But if anything else, it's going to have
+to have something bigger, all right?
+
+157
+00:08:39,150 --> 00:08:42,430
+So when you set up inertias, be careful
+that you actually use a realistic example
+
+158
+00:08:42,430 --> 00:08:46,130
+where the sum of 82 principal
+inertias has to be bigger than or
+
+159
+00:08:46,130 --> 00:08:50,520
+equal in a limiting case to the third one.
+
+160
+00:08:50,520 --> 00:08:53,150
+So there's different kind of
+properties that you can pick up here.
+
+161
+00:08:53,150 --> 00:08:55,050
+So good, we have that.
+
+162
+00:08:55,050 --> 00:08:58,550
+Now we know how to do this.
+
+163
+00:08:58,550 --> 00:09:01,160
+How do we go from,
+what's the relationship?
+
+164
+00:09:01,160 --> 00:09:03,601
+If you have a regular 3x3 matrix and
+
+165
+00:09:03,601 --> 00:09:06,843
+you're trying to find
+the principal inertias.
+
+166
+00:09:06,843 --> 00:09:11,675
+How do you go from the 3x3 tensor matrix
+representation to the three principals?
+
+167
+00:09:14,800 --> 00:09:17,410
+What was back row scratching your head.
+
+168
+00:09:17,410 --> 00:09:18,310
+What's your name?
+
+169
+00:09:18,310 --> 00:09:19,662
+>> Mark.
+>> Mark, thank you.
+
+170
+00:09:19,662 --> 00:09:20,750
+>> Can you repeat the question please?
+
+171
+00:09:20,750 --> 00:09:23,370
+>> Sorry?
+>> Can you repeat the question please?
+
+172
+00:09:23,370 --> 00:09:27,300
+>> How do I go from a 3x3 inertia
+tensor representation to a diagonal?
+
+173
+00:09:27,300 --> 00:09:30,683
+How do I find the principal values of-
+>> You have to find the eigenvalues and
+
+174
+00:09:30,683 --> 00:09:31,670
+the eigenvectors.
+
+175
+00:09:31,670 --> 00:09:32,920
+>> Exactly, right?
+
+176
+00:09:32,920 --> 00:09:36,120
+So you have to find eigenvalues,
+eigenvectors of the system.
+
+177
+00:09:36,120 --> 00:09:40,851
+And the eigenvalues,of the 3x3,
+they are all of the principal inertias,
+
+178
+00:09:40,851 --> 00:09:42,070
+that's cool.
+
+179
+00:09:42,070 --> 00:09:47,470
+And then the associated eigenvectors
+are the axes of that principal inertia.
+
+180
+00:09:47,470 --> 00:09:49,350
+And are relative to the body,
+it turns out.
+
+181
+00:09:49,350 --> 00:09:50,654
+This is a principal axis, and
+
+182
+00:09:50,654 --> 00:09:53,920
+this is a principal axis,
+then you'd have a third one, right?
+
+183
+00:09:53,920 --> 00:09:57,010
+Now are these eigenvectors
+always going to be unique?
+
+184
+00:09:58,720 --> 00:10:00,680
+Jordan, think of a cylinder.
+
+185
+00:10:00,680 --> 00:10:01,460
+If you get this math,
+
+186
+00:10:01,460 --> 00:10:05,890
+I can give you a nice 3x3 matrix of
+a cylinder with some weird skewed frame.
+
+187
+00:10:05,890 --> 00:10:07,120
+You find principal inertias.
+
+188
+00:10:07,120 --> 00:10:10,280
+If it's a cylinder, what should
+you expect now, all of a sudden?
+
+189
+00:10:10,280 --> 00:10:13,670
+>> Expect one to be up the axis and
+two to be in that, in any plane.
+
+190
+00:10:13,670 --> 00:10:14,930
+>> Right.
+>> Anywhere in that plane.
+
+191
+00:10:14,930 --> 00:10:20,230
+>> So you will have a repeated eigenvalues
+set orthoganol to the symmetry axis.
+
+192
+00:10:20,230 --> 00:10:24,930
+The inertia of a cylinder about this axis
+or this axis is just going to be the same.
+
+193
+00:10:24,930 --> 00:10:26,540
+So you get a repeated eigenvalue.
+
+194
+00:10:26,540 --> 00:10:29,750
+And the plane is unique in that case,
+but not necessarily the values, right?
+
+195
+00:10:29,750 --> 00:10:31,750
+So this is how these
+things all relate again.
+
+196
+00:10:31,750 --> 00:10:35,323
+And these matrices are symmetric,
+turns out they're also symmetric
+
+197
+00:10:35,323 --> 00:10:38,206
+definite because the principal
+inertias have to be positive.
+
+198
+00:10:38,206 --> 00:10:40,370
+You would never have
+a negative principal inertia.
+
+199
+00:10:40,370 --> 00:10:41,660
+It just doesn't make physical sense.
+
+200
+00:10:43,420 --> 00:10:45,930
+So, okay, so good properties there, good!
+
+201
+00:10:47,370 --> 00:10:51,580
+Now, the last thing we want to review is,
+what if we have a different point?
+
+202
+00:10:51,580 --> 00:10:53,710
+We have the inertia tensor about c,
+
+203
+00:10:55,150 --> 00:11:01,170
+I want the inertia tensor about a point q.
+
+204
+00:11:01,170 --> 00:11:06,205
+How do I go from this to this, without
+redoing all the math, all the integration?
+
+205
+00:11:08,782 --> 00:11:10,262
+Kevin.
+
+206
+00:11:10,262 --> 00:11:18,010
+>> You need add,
+The mass of the whole body times,
+
+207
+00:11:23,351 --> 00:11:25,690
+Just like the vector
+between the two points?
+
+208
+00:11:25,690 --> 00:11:31,234
+>> Yeah, so let me just say
+
+209
+00:11:31,234 --> 00:11:36,223
+that c relative to q,
+
+210
+00:11:36,223 --> 00:11:40,389
+they're close.
+
+211
+00:11:40,389 --> 00:11:42,650
+It's usually a parallel axis there, right?
+
+212
+00:11:42,650 --> 00:11:45,010
+If you do it for
+1d rotation it was always easy,
+
+213
+00:11:45,010 --> 00:11:48,610
+it was something the inertia about
+the center of mass plus the distance.
+
+214
+00:11:48,610 --> 00:11:50,852
+So if I have the inertia
+about the center of mass,
+
+215
+00:11:50,852 --> 00:11:52,724
+I want the inertia about this endpoint.
+
+216
+00:11:52,724 --> 00:11:59,530
+I do mass times distance squared,
+it's squared I think, that I get there.
+
+217
+00:11:59,530 --> 00:12:01,570
+This is essentially mass
+times distance squared,
+
+218
+00:12:01,570 --> 00:12:05,010
+and this is the distance between
+those two points that you'd have.
+
+219
+00:12:05,010 --> 00:12:06,220
+It doesn't have to be an inertia point,
+
+220
+00:12:06,220 --> 00:12:09,375
+it could be another point as well,
+like base point.
+
+221
+00:12:09,375 --> 00:12:11,451
+Now what are some the trickeries in here?
+
+222
+00:12:11,451 --> 00:12:13,640
+This is typically given to you in the Q.
+
+223
+00:12:13,640 --> 00:12:16,440
+Let's say this is your spacecraft queue,
+Star Trek, right?
+
+224
+00:12:16,440 --> 00:12:16,956
+Anybody remember Q?
+
+225
+00:12:16,956 --> 00:12:18,750
+That was one of the characters in there.
+
+226
+00:12:18,750 --> 00:12:22,510
+So in his spacecraft,
+Q lives in a very Q-centric world.
+
+227
+00:12:22,510 --> 00:12:28,469
+So this Rc relative to Q is
+usually given to you in a Q frame.
+
+228
+00:12:28,469 --> 00:12:36,100
+This stuff is probably given
+to you in the body frame.
+
+229
+00:12:36,100 --> 00:12:39,390
+Now before I actually can do this math,
+
+230
+00:12:39,390 --> 00:12:42,200
+what do you have to do
+with these quantities?
+
+231
+00:12:44,565 --> 00:12:47,450
+>> You have to change them.
+
+232
+00:12:48,540 --> 00:12:50,270
+Body frame to Q frame.
+
+233
+00:12:50,270 --> 00:12:51,550
+I'm sure, but body frame to Q frame.
+
+234
+00:12:51,550 --> 00:12:55,330
+>> So you have to map this to the Q,
+is that the only way to do this math?
+
+235
+00:12:55,330 --> 00:12:57,708
+Warda, or is there another option?
+
+236
+00:13:00,941 --> 00:13:05,561
+You could, because this isn't the Q,
+everything is kind of in the Q space,
+
+237
+00:13:05,561 --> 00:13:07,800
+you'd have to make this into Q.
+
+238
+00:13:07,800 --> 00:13:08,600
+What else could we do?
+
+239
+00:13:12,654 --> 00:13:13,300
+This isn't a B.
+
+240
+00:13:14,570 --> 00:13:16,430
+Is there any way you can
+make this in the B frame?
+
+241
+00:13:18,630 --> 00:13:20,430
+Tony, what would you do?
+
+242
+00:13:20,430 --> 00:13:22,358
+>> Do a rotation matrix on the R.
+
+243
+00:13:22,358 --> 00:13:26,867
+>> You can also just say, well,
+so I know this in the Q frame or
+
+244
+00:13:26,867 --> 00:13:30,910
+I can also find c relative
+to q in the B frame.
+
+245
+00:13:30,910 --> 00:13:36,747
+Which is BC times R C relative
+to Q in the Q frame, right?
+
+246
+00:13:36,747 --> 00:13:39,810
+If you did this now you plug
+these in here, and then this.
+
+247
+00:13:39,810 --> 00:13:41,670
+Just make sure it's consistent.
+
+248
+00:13:41,670 --> 00:13:46,292
+I didn't say we have to have
+the answer in B or Q components.
+
+249
+00:13:46,292 --> 00:13:47,300
+You can do either.
+
+250
+00:13:47,300 --> 00:13:50,200
+Well, you can do one and then map
+the answer back into the frame you want.
+
+251
+00:13:50,200 --> 00:13:53,427
+That works as well, if it's a third
+frame that's not either C or Q or B.
+
+252
+00:13:53,427 --> 00:13:57,250
+So you can see lots of
+different ways this goes.
+
+253
+00:13:57,250 --> 00:14:01,040
+This is the general math but
+if this is the coordinate independent way,
+
+254
+00:14:01,040 --> 00:14:03,760
+a coordinate frame
+independent way to write it.
+
+255
+00:14:03,760 --> 00:14:08,520
+When you evaluate it, still make
+sure you have all the right stuff.
+
+256
+00:14:08,520 --> 00:14:09,287
+Otherwise, nothing works.
+
+257
+00:14:09,287 --> 00:14:09,963
+Okay, good.

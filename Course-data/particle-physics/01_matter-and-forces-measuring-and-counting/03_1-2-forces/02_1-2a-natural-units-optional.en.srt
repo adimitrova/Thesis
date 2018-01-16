@@ -1,0 +1,129 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:11,232 --> 00:00:15,584
+For those unfamiliar with
+the notion of natural units,
+
+3
+00:00:15,584 --> 00:00:19,482
+we will briefly introduce
+it in this short video.
+
+4
+00:00:22,253 --> 00:00:27,150
+High energy physics
+deals with relativistic quantum processes.
+
+5
+00:00:27,150 --> 00:00:31,990
+The scale of the action is
+the Planck constant hbar and
+
+6
+00:00:31,990 --> 00:00:35,750
+the scale of velocity is given
+by the speed of light, c.
+
+7
+00:00:35,750 --> 00:00:40,920
+In the system of natural
+units we set hbar = c = 1.
+
+8
+00:00:40,920 --> 00:00:44,860
+This means that we define 
+hbar as the unit of action and
+
+9
+00:00:44,860 --> 00:00:47,100
+c as the unit of velocity.
+
+10
+00:00:47,100 --> 00:00:54,430
+In such a system 1 second is equal to
+approximately 3 x 10^8 meters.
+
+11
+00:00:54,430 --> 00:00:57,909
+As an added value the electric
+charge is now dimensionless.
+
+12
+00:00:58,990 --> 00:01:03,670
+It often shows up as the fine
+structure constant alpha,
+
+13
+00:01:03,670 --> 00:01:08,990
+which is the electrostatic potential
+energy of two electrons at unit distance,
+
+14
+00:01:08,990 --> 00:01:11,770
+divided by the mass of the electron.
+
+15
+00:01:11,770 --> 00:01:17,510
+This constant is equal to 1/137 
+to a good approximation.
+
+16
+00:01:18,760 --> 00:01:23,008
+The system of natural units is of
+great practical value since it
+
+17
+00:01:23,008 --> 00:01:26,110
+eliminates a lot of
+constants from equations.
+
+18
+00:01:27,250 --> 00:01:31,810
+It does make them less heavy and
+more easy to understand.
+
+19
+00:01:31,810 --> 00:01:36,719
+The basic unit, the electronvolt,
+is defined as the gain in energy of
+
+20
+00:01:36,719 --> 00:01:41,795
+an electron when it traverses
+the potential difference of 1V.
+
+21
+00:01:42,900 --> 00:01:44,610
+In the system on natural units,
+
+22
+00:01:44,610 --> 00:01:50,790
+the electronvolt is the common
+unit of energy, momentum and mass.
+
+23
+00:01:50,790 --> 00:01:55,300
+A billion of these units correspond
+roughly to the mass of the proton,
+
+24
+00:01:55,300 --> 00:01:59,210
+and thus sets the natural
+scale of energy physics.
+
+25
+00:01:59,210 --> 00:02:05,038
+Whenever you want to convert a result
+to units of the international systems,
+
+26
+00:02:05,038 --> 00:02:10,202
+you need to multiply by a combination
+of hbar and c as shown in this table.
+
+27
+00:02:10,202 --> 00:02:16,024
+[MUSIC]

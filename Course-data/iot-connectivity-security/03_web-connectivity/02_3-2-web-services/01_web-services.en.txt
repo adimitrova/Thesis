@@ -1,0 +1,65 @@
+[SOUND] Welcome back. In this video lecture, we will look
+into the technologies that allow you to interact with the different web services. The benefit of web connectivity
+is that you can utilize and interact with different web services. Services developed and
+perfected by other vendors. For example, if you want to build user
+authentication into your product, you can just use Authy. Authy is a web service that
+provides two factor authentication. In another video, we discussed
+a temperature sensor with a web server. If you want that temperature sensor
+to send you a tweet for every alert, you can just call Twitter's API or
+Application Programming Interface service. Are you running out of on-board storage? Call the Amazon Web Services API and off load all the data to
+Amazon's data centers. All of this is possible because we have standard ways to connect
+to these web services. In this lesson, we will look into two of the major classes
+of such technologies, REST and soap. But before we get into that, we will look
+into the data formats that they use. Let's start with JSON. JSON is a text-based data
+serialization format. It stands for JavaScript Object Notation. JSON is made of two structures,
+objects and arrays. Objects start and end with curly brackets. Arrays start and end with square brackets. The data is in name value pairs and
+one set or pair of data is separated
+from another with a comma. And this is pretty much
+the basics of JSON. On the screen you see
+an example JSON object Plants. The data is in name value pairs, the pairs
+are separated from each other with commas. We also have an array
+with three objects in it. In JSON, everything can be nested. As you can see here that we have an array
+of objects that itself is a part of a larger object, Plants. If we want to represent that same
+data in XML, it will look like this. XML stands for Extensible Markup Language. It is another data encoding format. And like JSON it is also text-based. The chat protocol XMPP uses XML based
+objects to send and receive messages. The example that you see on
+the screen is pretty simple. But XML is relatively complex. Old Microsoft Office Word files
+had an extension of doc or d-o-c and
+the newer ones have docx or d-o-c-x. That last x in docx stands for XML. This is because the whole structure of the
+newer Word documents is formatted in XML. And because XML is an open standard,
+other applications besides Microsoft Office can also accurately
+read and format docx files. Now back to our web services. We just describe two
+data exchange formats. And now we will describe two of
+the common specifications for implementing a web service. REST stands for representation or
+state transfer and lays out some ground rules on
+how to design web services. REST is not a protocol but
+a style of designing services. It is also protocol independent,
+but is generally paired with HTTP. Some salient features of REST
+are shown on the screen. We will discuss it in much
+more detail in a later video. As this style of designing web
+services can be easily translated into embedded systems. In short, for every service,
+we have a URL and we interact with that service via HTTP and
+its methods. Some of the basic principles of REST are, Keep your design limited to
+HTTP methods like get and put. Each request should be independent
+of the previous or next one. For each service you should
+have a separate URI. The data exchange format can be JSON,
+XML or both. Generally, it is JSON. SOAP stands for
+simple object access protocol and is another method for
+interacting with web services. It relies on XML and like REST,
+it is protocol and platform independent. The protocol has three
+main characteristics. Extensibility, meaning it
+supports expansion and there are several extensions available
+that you can use with that SOAP. Neutrality in this case means
+is it protocol neutral. Independence from the platform and
+programming language. The developers can use any
+programming model they see fit, whether it is object-oriented or
+agent-oriented or dataflow-based. So, which one should you use? Sometimes you don't really have a choice. If you are interacting with a web service, you will have to use the technology
+that they have used. If you're building you're own web service,
+then you do have a choice. The basic difference is between our
+two candidates are outlined here. REST is lighter than SOAP in
+terms of network resources. REST is more power efficient than
+SOAP in small embedded systems. It is also simpler. On the other hand,
+SOAP offers better security. It has many extensions and it is inherently protocol independent. Also REST is protocol independent in
+principle, but is generally bound to HTTP. In this lesson,
+we looked at the technologies and data formats that allow us to
+interact with web services. In the next video lecture, we will learn
+about RESTful web services in detail. [SOUND]

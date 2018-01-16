@@ -1,0 +1,36 @@
+[NOISE]. What did we do this week Mick? 
+What do we do? We built some audio visualizers. 
+So yeah we did some [UNKNOWN] graphics and we did some sound analysis. 
+So how did that go? >> : Well I mean the sound analysis 
+basically you're just trying to get some numbers out of some other numbers. 
+ >> [LAUGH] :That's the most annoying thing in the world. 
+Its quite a kind of dark art, isn't it? It's a dark art and understanding what 
+those numbers mean is what it's all about. 
+ >> Yeah. >> So I don't really emphasize that 
+some numbers tell you about the different aspects of the sounds so is it bassy, is 
+it trebly and it's really important once you've got an understanding of those 
+numbers to try and put those in to the rest of your applications so that's where 
+Marco came in trying to explain. The parameterization of graphics. 
+ >> Actually yeah, there's a thing about that Marco we used a really basic 
+visualization technique this week but there's lot different types of approaches 
+you can take. What's a good way for people to go and 
+find out better methods for drawing stuff. 
+ >> We'll got you know there's Pricing's a really powerful tool set you'll 
+expanding your knowledge of Pricing/g, so there's a lot to play with. 
+But I would say the best place to go for ideas is the open processing website. 
+It's where people go to post their work they've done in processing really created 
+people or doing exciting work and it's a fantastic source of idea and you can get 
+the code there. Some of it might be a little advanced for 
+you at the moment but you can also get a lot ideas not only what people can do, 
+but how they did it. Yeah and it's good as well because those 
+sorts of techniques they show you a lot you can learn really fast by looking at 
+other peoples code and it's nice vital community. 
+But speaking of communities, you should check the forums out if you have any 
+questions and you know you should be at the stage now where you should be able to 
+help each other. And but ask students is there students in 
+more courses and if you've got anymore questions you can always ask. 
+ >> That's it for this week. We'll see you next week where we're going 
+to be doing a game. Aren't we? 
+ >> Yes. [CROSSTALK] That's right. 
+ >> We are. So, we'll see you for week four next 
+week.  [SOUND]

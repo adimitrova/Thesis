@@ -1,0 +1,76 @@
+So, last time, we saw that it was 
+possible to destabilize a hybrid system by switching between different modes even 
+if the different subsystems or modes were stable or asymptotically stable 
+themselves. in this lecture I want to harp on this 
+theme a little more and, in fact, I've called it Danger, Beware! 
+because this is actually something that we need to be aware of and it is not 
+always so easy to ensure that the overall hybrid system is stable even if the 
+subsystems are unstable. In fact, like I saw, we looked at a 
+counter example that allowed us to actually destabilize, which means drive 
+the state off to infinity, by being unlucky or unclever in how we 
+transitioned in and out of the different modes. 
+So, if we ignore the resets, meaning there are no reset maps, the state 
+doesn't jump when you're making transitions, we get something called a 
+switch system where you have x dot if is f(x,u) but now I have this a little sigma 
+index here and sigma is what's known as the switch signal. 
+So, sigma is going to tell me which mode the system is in. 
+So, if sigma is 1 I am in mode 1. If sigma is 10, it's in mode 10 or if 
+it's p it's in mode p. So, all I'm doing is I'm switching 
+between different modes and this switch signal can be, be rather different. 
+It can be just random. It can be driven by time. 
+It can be driven by things happening in the state. 
+But it's a very general way of describing a switch system. 
+Now, if you have that, we can actually talk about different kinds of stability. 
+And I just wanted to point out that these things actually exist and we should be 
+aware of them. The first is what's known as universal 
+asymptotic stability. And universal means that there is nothing I can do to 
+destabilize the system. No matter what, this upside-down A means 
+for all sigma, so x will go to 0 no matter how I switch. 
+That's called universal stability. The other notion is existential 
+stability, which means there exists the flipped E it's called an existential 
+quantifier. It means, there exists a switch signal 
+that makes the system stable. So, not all of them, but at least there 
+is one that makes it go down to zero. And these are the two main ways in which 
+people want to deal with switch systems. In our case, we don't have, there exists 
+a switch signal typically, or for all, we have what's called hybrid stability and 
+that we actually have a hybrid system that is itself generating the, the switch 
+signal and this is known as hybrid stability. 
+So, x goes to zero, not for any all sigma or for all sigma, but for the one that 
+happens to be the one that we have in our hybrid system. 
+So, here are some results. Let's say that I have a hybrid system 
+where all the individual modes are asymptotically stable. 
+Well, then, can we guarantee that it is at least existentially stable? Well, 
+clearly, we can, right? Because what we do is we don't switch. 
+If I design a switch signal that just picks one mode and then stays with that 
+forever and ever and ever, well, we're never switching but all the individual 
+modes are asymptotically stable so if all the modes are asymptotically stable, we 
+never switch and voila, we do have an existentially stable 
+system. But, as we will have, as we have seen, 
+they're not always universally asymptotically stable. 
+And the reason for this is well, this counter example. 
+The reason is that we can actually destabilize the system by an unfortunate 
+switching between the modes. So, what do we do about this? Well, there 
+is something in nonlinear control known as a common Lyapunov function. 
+I'm not going to talk about this in this course, 
+mainly because the common Lyapunov function is an elusive beast that you can 
+almost never find. But theoretically, that's what you're 
+going to have to hunt for. Practically speaking though, what you 
+need to do is the following. First, never design unstable controllers 
+because then you're going to be in trouble probably, right? 
+So, design stabilizing controllers for the subsystems. 
+And then, we design the switching logic, meaning how are we going to switch 
+between the different modes and if we're lucky or we have a lot amount of free 
+time on our hands, we can go find, or try to find these common Lyapunov functions. 
+Now, like I said, finding that is really more art than science in the sense that 
+it's very hard in general to find it. So, the most important thing here is 
+really, we need to be aware of the fact that stable subsystems do not ensure 
+asymptotic stability of the hybrid systems. 
+So, we need to be aware of it and test, test, test, test, test. 
+In the sense that, run it, see what happens, do we get instabilities induced? 
+And if we do, we need to start messing with our switching logic. 
+But this is really key and I cannot underemphasize the testing aspect of the 
+hybrid system. In fact, when people design avionics 
+software, for instance, the majority of the time is spent not on test, on, on the 
+development of the controllers, but on testing that the switching logic in 
+combination with the controllers does not induce instability. 
+So, that's what we need to keep an eye out for.

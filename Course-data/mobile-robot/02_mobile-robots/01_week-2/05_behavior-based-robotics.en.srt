@@ -1,0 +1,464 @@
+1
+00:00:00,012 --> 00:00:04,795
+As I've already said, the world is
+fundementally dynamic and changing and
+
+2
+00:00:04,807 --> 00:00:09,708
+unknown to the robot, so it does not make
+sense to overplan and think very hardly
+
+3
+00:00:09,720 --> 00:00:14,682
+about how do you act optimally given these
+assumptions about what the world looks
+
+4
+00:00:14,694 --> 00:00:19,223
+like. That may make sense if your
+designing controllers for an industrial
+
+5
+00:00:19,235 --> 00:00:24,209
+robot at a manufacturing plant where the
+robot is going to repeat the same. Motion
+
+6
+00:00:24,221 --> 00:00:28,628
+over and over and over again. You're going
+to do spot welding, and you're going to
+
+7
+00:00:28,973 --> 00:00:33,649
+produce the same motion 10,000 times in a
+single day. Then you'll overplan. Then
+
+8
+00:00:33,661 --> 00:00:38,426
+you'll make sure that you're optimal. But
+if a robot is out exploring an area where
+
+9
+00:00:38,438 --> 00:00:42,641
+it doesn't know exactly what's going on,
+you don't want to spend all your
+
+10
+00:00:42,653 --> 00:00:47,602
+computational money on Finding the best
+possible way to move. Because, it's not
+
+11
+00:00:47,614 --> 00:00:52,119
+actually going to be best. Because the
+world is not what you thought it was. So
+
+12
+00:00:52,131 --> 00:00:57,205
+the key idea to overcome this that's quite
+standard in robotics, is to simply develop
+
+13
+00:00:57,217 --> 00:01:02,175
+a library of useful controllers. So these
+are controllers that do different things.
+
+14
+00:01:02,362 --> 00:01:06,941
+Like going to landmarks, avoiding
+obstacles. We saw one that tried to make
+
+15
+00:01:06,953 --> 00:01:12,101
+robots drive through center of gravity of
+their neighbors. Basically, we can have a
+
+16
+00:01:12,113 --> 00:01:17,057
+library of these useful controllers,
+behaviors if you will, and then we switch
+
+17
+00:01:17,069 --> 00:01:22,106
+among these behaviors in response to what
+the environment throws at us. If all of a
+
+18
+00:01:22,118 --> 00:01:27,812
+sudden an obstacle appears, then we avoid
+it. Then if we see a power outlet and
+
+19
+00:01:27,824 --> 00:01:34,075
+we're low on battery then we go and
+recharge. So we're switching to different
+
+20
+00:01:34,087 --> 00:01:40,622
+controllers in response to what is going
+on. So what I would like to do is to start
+
+21
+00:01:40,634 --> 00:01:46,089
+designing some Behaviors just to see how
+what we learned in module one, a little
+
+22
+00:01:46,101 --> 00:01:50,990
+bit about control design can be used to
+build some behaviors. So let's assume we
+
+23
+00:01:51,002 --> 00:01:56,304
+have our differential-drive mobile robot.
+And to make matters a little easier up
+
+24
+00:01:56,316 --> 00:02:01,345
+front, we're going to assume that the
+velocity. The speed is, is constant. So v
+
+25
+00:02:01,357 --> 00:02:05,681
+not. We're not going to change how quickly
+the robot is moving. So what we can change
+
+26
+00:02:05,693 --> 00:02:09,337
+i s how we're steering. So you're
+basically sitting in a car on cruise
+
+27
+00:02:09,349 --> 00:02:13,308
+control, where the velocities are
+changing, and you steer it. That's your
+
+28
+00:02:13,320 --> 00:02:18,765
+job. And the question is, how should you
+actually. >> Steer the robot around. So,
+
+29
+00:02:18,880 --> 00:02:24,001
+this is the equation then, that's
+governing how the input Omega, it's the
+
+30
+00:02:24,013 --> 00:02:29,340
+state that we're interested in, in this
+case pi, which is the heading of the
+
+31
+00:02:29,352 --> 00:02:35,682
+robot. So, pi dot is equal to Omega. Okay,
+so, let's say that we have our. >> Yellow
+
+32
+00:02:35,694 --> 00:02:40,681
+triangle robot, it's a unicycle or
+differential-drive robot. It's headed in
+
+33
+00:02:40,693 --> 00:02:45,576
+direction five, so this is the direction
+it's in. And, for some reason, we have
+
+34
+00:02:45,588 --> 00:02:50,403
+figured out that we want to go in this
+direction, five desired or 5 sum D. Maybe
+
+35
+00:02:50,415 --> 00:02:55,878
+there is something interesting over here,
+that were interested in. So, we want to
+
+36
+00:02:55,890 --> 00:03:02,412
+drive in this direction. Well, how should
+we actually do this? Well, pi dot is equal
+
+37
+00:03:02,424 --> 00:03:08,473
+to Omega. So, our job clearly is that of
+figuring out what Omega is equal to, which
+
+38
+00:03:08,485 --> 00:03:14,661
+is the control input. Alright, so, how do
+we do that? Well, you know what? We have a
+
+39
+00:03:14,673 --> 00:03:20,192
+reference, pi desired. Well, in module
+one. we called references r. Right? We
+
+40
+00:03:20,204 --> 00:03:26,226
+have an error, meaning, that compares the
+reference pi desired to what the system is
+
+41
+00:03:26,238 --> 00:03:32,306
+doing. In this case, pi. So it's comparing
+the headings. So we have an error, we have
+
+42
+00:03:32,318 --> 00:03:37,388
+a reference. You know what? We have a
+dynamics. pi dot is equal to Omega. So we
+
+43
+00:03:37,400 --> 00:03:43,110
+have everything we had towards the end of
+module one. So we even know how to design
+
+44
+00:03:43,122 --> 00:03:48,296
+controllers for that. How should we do
+that? Well, we saw PID, right? That's the
+
+45
+00:03:48,308 --> 00:03:53,407
+only controller we've actually seen. So,
+why don't we try a PID regulator? That
+
+46
+00:03:53,419 --> 00:03:58,707
+seems like a perfectly useful way of
+building a controller. So, you know what,
+
+47
+00:03:58,827 --> 00:04:04,718
+Omega is Kp times e, where Kp was the
+proportional gain. So this response to
+
+48
+00:04:04,730 --> 00:04:10,870
+what the error is right now. You make Kp
+large it responds quicker but you may
+
+49
+00:04:10,110 --> 00:04:16,036
+induce oscillations, then you have the
+integral of the error. So you take the e
+
+50
+00:04:16,048 --> 00:04:20,782
+of tau, the tau times k sub i, which is
+the integral gain. And this thing, this
+
+51
+00:04:20,794 --> 00:04:25,554
+integral, has the nice property that it's
+integrating up all these tiny little
+
+52
+00:04:25,566 --> 00:04:30,351
+tracking errors that we may have, and
+after a while this integral becomes large
+
+53
+00:04:30,363 --> 00:04:35,160
+enough that it pushes the system Up to no
+tracking errors, that's a very good
+
+54
+00:04:35,172 --> 00:04:40,445
+feature of the, the interval. Even though
+as we saw we need to be aware of the fact
+
+55
+00:04:40,457 --> 00:04:45,255
+that a big KI can actually also induce
+oscillations and then we could have a d
+
+56
+00:04:45,267 --> 00:04:50,470
+terms. A KD times e dot and that where KD
+is the, the gain for derivative part. This
+
+57
+00:04:50,482 --> 00:04:57,602
+makes the system. Very responsive but can
+become a little bit oversensitive to
+
+58
+00:04:57,614 --> 00:05:05,208
+noise. So will this work? No it won't. And
+I will now tell you why. In this case
+
+59
+00:05:05,220 --> 00:05:12,816
+we're dealing with angles. And angles are.
+Rather peculiar beasts. Let's say that phi
+
+60
+00:05:12,828 --> 00:05:18,770
+desired a 0 radiance. And my actual
+heading now, phi is 100 radiance. Then the
+
+61
+00:05:18,782 --> 00:05:24,674
+error is minus 100 radiance. Which means
+that this is a really, really large error.
+
+62
+00:05:24,797 --> 00:05:31,064
+So Omega is going to be ginormous. But,
+that doesn't seem right. Because 100 pi
+
+63
+00:05:31,076 --> 00:05:36,528
+radius is the same as zero radius, right?
+So, the error should actually be zero, so
+
+64
+00:05:36,540 --> 00:05:41,406
+we should not be niave when we're dealing
+with angles. And, in fact this is
+
+65
+00:05:41,687 --> 00:05:47,218
+something we should be aware of. Is angles
+are rather peculiar beasts. And we need to
+
+66
+00:05:47,230 --> 00:05:51,906
+be, be dealing with them. And there are
+famous robotic crashes that have been
+
+67
+00:05:51,918 --> 00:05:56,368
+caused by this. When the robot starts
+spinning like crazy. Even though it
+
+68
+00:05:56,380 --> 00:06:01,056
+shouldn't. But it's doing it because it
+thinks it's 200 pi off instead of zero
+
+69
+00:06:01,068 --> 00:06:06,238
+radius off. So what do we do about it?
+Well the solution is to ensure that the
+
+70
+00:06:06,250 --> 00:06:10,983
+error is always between minus pi and pi.
+So minus 100 pi, well that's the same
+
+71
+00:06:10,995 --> 00:06:16,202
+thing as zero. So we need to ensure that
+whatever we're doing is we're staying
+
+72
+00:06:16,214 --> 00:06:21,338
+within minus pi and pi. And there is a
+really easy way of doing that. We can use
+
+73
+00:06:21,350 --> 00:06:28,060
+a function, arc tangents two. Any language
+there is a library with and it operates in
+
+74
+00:06:28,072 --> 00:06:32,607
+the same way. It's a way of producing
+angles between minus pi and pi. C plus,
+
+75
+00:06:32,607 --> 00:06:38,276
+plus has it, Java has it, MATLAB has it,
+whatever you, Python has it. So you c an
+
+76
+00:06:38,277 --> 00:06:43,330
+always do this and how do you do that?
+Well you take the angle that's now
+
+77
+00:06:43,342 --> 00:06:50,672
+1,000,000 pi right and You take sine of it
+comma cosine of it. So this is the same as
+
+78
+00:06:50,684 --> 00:06:58,225
+saying that we're really doing arc tan. So
+I'm going to write this as tan inverse
+
+79
+00:06:58,237 --> 00:07:05,335
+sine e over cosine e. But arc tan or tan
+inverse. Doesn't, it's not clear what that
+
+80
+00:07:05,347 --> 00:07:10,135
+always returns but arc tan 2, where you
+have a coma in it, you always get
+
+81
+00:07:10,147 --> 00:07:15,510
+something that's within minus Pi and Pi.
+So here's what you need to do, whenever
+
+82
+00:07:15,522 --> 00:07:20,560
+you're dealing with angles and you're
+acting on them, it's not a bad idea to
+
+83
+00:07:20,572 --> 00:07:25,877
+wrap one of these arc tan two lines around
+it to ensure That you are indeed having
+
+84
+00:07:25,889 --> 00:07:31,218
+values that aren't crazy. So, with a
+little caveate that we're going to use e
+
+85
+00:07:31,230 --> 00:07:36,983
+prime instead of e, the PID regulator will
+work like a charm. Okay, so here is an
+
+86
+00:07:36,995 --> 00:07:43,159
+example problem. We've already seen this
+picture. this is the problem of driving
+
+87
+00:07:43,171 --> 00:07:48,607
+the robot, which is the little blue ball,
+to. The goal, which is the sun,
+
+88
+00:07:48,726 --> 00:07:55,446
+apparently, and lets see if we can use
+this PID control design on Omega to design
+
+89
+00:07:55,458 --> 00:08:01,604
+controllers that take us to the sun, or to
+the goal. and since we're dealing with
+
+90
+00:08:01,616 --> 00:08:07,341
+obstacles and we're dealing with goal
+locations, and we're also talking about
+
+91
+00:08:07,353 --> 00:08:13,630
+behaviors. at the minmum we really need
+two behaviors. Goal to goal, and avoid
+
+92
+00:08:13,642 --> 00:08:19,415
+obstacles. So what we're going to do over
+the next couple of lectures, is develop
+
+93
+00:08:19,427 --> 00:08:25,065
+these behaviors, and then deploy them on a
+robot and see if there any good or not.

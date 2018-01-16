@@ -1,0 +1,35 @@
+[MUSIC] Hello, welcome to this online
+course on web connectivity and security in cyber physical systems. I'll be your lecturer
+in this online course. My name is Juha Plosila and I teach embedded systems engineering
+at the University of Turku. Turku is a beautiful city at
+the southwest coast of Finland. A city next to 20,000 islands, and one that 35,000 higher education
+students call their second home. [MUSIC] So, lets talk about
+cyber physical systems. [MUSIC] Cyber physical systems,
+are embedded devices that interact and control the real world. You might not notice them,
+but they are everywhere. Ever wondered how the stationary escalator
+starts moving when you get near them? There are sensors that detect movement and a small computer that then controls
+the motors that run the escalators. In other words,
+it's a combination of sensors and actuators that control the escalator,
+a physical entity. It is a system where computation and control come together to improve
+efficiency of the real world. And that is the philosophy
+behind cyber physical systems. From controlling traffic to energy
+transmission to running factories. Cyber physical systems help improve
+real world efficiency and productivity. Modern cars and airplanes are examples
+of cyber physical systems. Where electronic control units monitor and handle the different aspects
+of these physical devices. But these isolated systems, cyber physical
+systems generally do not work isolated. Their impact is much higher
+when they are connected. Take the example of a nationwide
+network of cyber physical systems managing the electric grid. Improving efficiency,
+providing configurability and reactiveness in cases of great failures or
+excessive loads. But what if we could connect our cyber
+physical system to another already existing worldwide network? The World Wide Web or WWW for short, that
+is what we will talk about in this course. Connecting cyber physical
+systems to the World Wide Web. The course is divided into five modules. In the first three modules, we'll talk about connectivity
+in cyber physical systems. And go all the way to the advanced
+topics of cloud and fog computing. In the last two modules, we will teach you how to secure
+these systems against cyber threats. If you want to build your understanding of
+the web, web connected embedded systems or Internet of Things, and their security,
+but don't know where to begin. This is the course for you. We will take you on a journey from the
+fundamentals of the internet to web and cloud connectivity. And then towards building your
+understanding of security in connected systems. Join me on this journey as I
+strengthen your foundations toward web connected cyber physical systems. [MUSIC]

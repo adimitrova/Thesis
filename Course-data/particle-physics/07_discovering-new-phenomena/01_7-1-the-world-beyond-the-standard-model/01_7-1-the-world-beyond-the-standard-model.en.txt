@@ -1,0 +1,85 @@
+[MUSIC], In this seventh module, we'll discuss
+searches for new phenomena beyond the known ones described by the Standard
+Model, and covered in previous modules. We're going to remind you
+why we need new physics. We will explain how we render hadron
+collider data usable for searches and we will discuss examples, split in two categories,
+based on the general characteristics of how new phenomena would
+manifest themselves. In this video, we will describe the
+theoretical limitations of the standard model and talk about new theories that
+have been proposed to overcome them. After watching this video, you will know which are the open questions
+the Standard Model leaves unanswered, how the theories are attempting to
+answer them using a particular theory as an example and where we stand in our
+searches, using the hadron colliders. The Standard Model is our starting point. It describes the world as we know it
+today introducing matter particles and force carrier particles, the gauge bosons. Matter and forces have been
+introduced in module 1 and detailed in modules 4 to 6. All these particles have been
+observed experimentally, the last one being the Higgs
+boson a few years ago. This was explained in module 6. The precision with which the Standard
+Model describes our world is really astonishing. For example, here you can see
+a representation of the cross sections with which various processes occur at LHC, 
+measured by the Atlas experiment for various center of mass energies
+of the colliding protons. More importantly, note how this compares
+to the Standard Model theoretical prediction represented by the solid lines. For a huge range of production rates, the theory agrees surprisingly well with
+the measurements on our collision data. Despite it's great success, the Standard
+Model remains a piece in a bigger puzzle. It leaves, in fact,
+many questions unanswered. The Standard Model does not explain
+why the Higgs boson is measured to be so light. Quantum corrections to its
+propagator like the ones shown here, ought to push its mass
+to much higher values. The Standard Model does not explain
+also the observation that the stars in the outskirts of the galaxies rotate
+much faster compared to theoretical predictions, which indicates the existence
+of a new form of matter, the dark matter. The dark matter will be
+explained in video 8.2. Experiments show that the strong and
+weak forces become weaker and that the electromagnetic force becomes
+stronger as the energy increases. We have introduced this
+phenomenon in video 5.4. This is a good indication that
+at incredibly high energies the strength of
+the electromagnetic, weak and the strong forces is probably the same. The Standard Model, however, does not provide a unification of
+these forces at very high energies. What is really happening there? A lot of thought has
+been given to this and other problems the Standard
+Model comes with and ways to mitigate them have been attempted
+by theorists all over the world. Theorists have come up with many
+theories or models, in many variants, trying to address one or more problems
+of the Standard Model at a time. In some of them, they introduce extra
+space-time dimensions as a way to explain why gravity is a much weaker force
+than the other fundamental forces. In such theories, hypothetical force
+carrier particles called gravitons could be disappearing into extra
+dimensions after having been created for example at the proton-proton
+collision of the LHC. There are many other theories and
+models that introduce new particles or interactions. Common in many of his theories is
+the presence of new heavy bosons, similar to the W and Z bosons,
+denoted as W' and Z'. How we search for
+a Z' boson will be explained in video 7.3. A large theoretical framework of
+beyond-the-Standard-Model physics that has been developed in the last decades is
+supersymmetry, also know as SUSY. Supersymmetry is one of
+the most discussed and studied extensions of the Standard Model. It imposes a symmetry between
+the spins of forces and matter, which does not exist
+in the Standard Model. The Standard Model only has
+fermionic matter and bosonic forces. The symmetry requires that there
+be a supersymmetric partner to all particles in our periodic system. They are so-called superpartners. However, we already know that
+symmetry is a badly broken symmetry. The superpartners,
+if they exist at all, must have very different masses to the known
+particles in our periodic table. Supersymmetry is supposed to be solving all
+of the Standard Model problems, at once. Let's take the first open question we
+talked about, the Higgs mass problem. The calculation of the Higgs mass
+within supersymmetry has extra loop terms coming from
+the extra particles it introduces. These terms could cancel the large
+terms in the calculation, leading to a Higgs mass that is
+compatible to the experimental result. The lightest superpartner can be neutral,
+stable, and weakly interacting with matter, becoming
+a perfect dark matter candidate. And if supersymmetric particles were
+included in the Standard Model, the strengths of its three forces
+could have the same exact strength at high energies,
+as in the early Universe. Supersymmetric particles
+have been searched for at lepton and hadron colliders for
+many decades now, but they remain elusive. We show here limits for the mass the gluino, the superpartner
+of the gluon, obtained in a specific supersymmetric model at the latest
+three generations of hadron colliders. The available parameter space for supersymmetry becomes increasingly
+constrained by the experimental findings. The case is similar for
+many new theories and models. Despite the fact that
+there are no hints for new physics in the collider
+experiments today, the urge to find new
+physics is always present. And it is the reason why
+high-energy physicists keep on seeking an anomaly in the data. This concludes the first
+video of this seventh module. In the next video, we will describe the
+tools physicists are using to make sense of the data collected at hadron colliders
+in order to produce physics results and search for new phenomena. [MUSIC]

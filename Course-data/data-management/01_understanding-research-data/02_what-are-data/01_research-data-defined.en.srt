@@ -1,0 +1,278 @@
+1
+00:00:00,000 --> 00:00:05,624
+[MUSIC]
+
+2
+00:00:05,624 --> 00:00:10,100
+To begin this course,
+we need to first discuss some basics.
+
+3
+00:00:10,100 --> 00:00:13,350
+The most fundamental question for
+us is what are data?
+
+4
+00:00:14,490 --> 00:00:16,920
+While this may seem like
+a straightforward question,
+
+5
+00:00:18,000 --> 00:00:23,660
+numerous organizations have tackled it
+resulting in a range of definitions.
+
+6
+00:00:23,660 --> 00:00:28,380
+It's important to note that data
+are different for various disciplines and
+
+7
+00:00:28,380 --> 00:00:29,380
+different context.
+
+8
+00:00:30,470 --> 00:00:32,040
+By the end of this lesson,
+
+9
+00:00:32,040 --> 00:00:36,780
+you will be introduced to multiple
+types of data in an array of contexts.
+
+10
+00:00:36,780 --> 00:00:39,850
+Data come in many forms from numeric and
+
+11
+00:00:39,850 --> 00:00:44,887
+textual data to biological samples and
+physical collections.
+
+12
+00:00:44,887 --> 00:00:49,826
+You will also be able to make
+the distinction between research data and
+
+13
+00:00:49,826 --> 00:00:53,250
+other associated researcher materials.
+
+14
+00:00:53,250 --> 00:00:56,900
+Some of which may be
+required alongside the data
+
+15
+00:00:56,900 --> 00:00:59,610
+to understand the data themselves.
+
+16
+00:00:59,610 --> 00:01:01,550
+And finally, and
+
+17
+00:01:01,550 --> 00:01:06,020
+this is probably one of the most
+important concepts in the entire course.
+
+18
+00:01:06,020 --> 00:01:10,360
+You will understand data in the context
+of the research data life cycle.
+
+19
+00:01:11,570 --> 00:01:18,330
+To understand data management, is to
+understand data in all of its constructs.
+
+20
+00:01:18,330 --> 00:01:23,830
+From project planning, through the
+collection of data to archiving that data
+
+21
+00:01:23,830 --> 00:01:28,150
+as a research output after
+the project period has ended.
+
+22
+00:01:28,150 --> 00:01:31,310
+First, let's take a look at
+how others have defined data.
+
+23
+00:01:32,350 --> 00:01:39,430
+The National Institutes of Health, or NIH,
+define data as “recorded factual material
+
+24
+00:01:39,430 --> 00:01:42,560
+commonly accepted in
+the scientific community
+
+25
+00:01:42,560 --> 00:01:45,060
+as necessary to validate
+research findings.”
+
+26
+00:01:46,550 --> 00:01:49,760
+Key concepts here include recorded and
+
+27
+00:01:49,760 --> 00:01:54,880
+accessible data that others may look
+at to validate a studies findings.
+
+28
+00:01:54,880 --> 00:02:00,075
+The National Science Foundation or
+NSF considers data to be something,
+
+29
+00:02:00,075 --> 00:02:05,695
+determined by the community of interest
+through the process of peer review and
+
+30
+00:02:05,695 --> 00:02:07,330
+project management.
+
+31
+00:02:07,330 --> 00:02:13,025
+NSF’s definition points out the data are
+essential to the research community and
+
+32
+00:02:13,025 --> 00:02:17,026
+not just to individual researchers or
+research teams.
+
+33
+00:02:17,026 --> 00:02:20,560
+NSF also offers some examples of data
+
+34
+00:02:20,560 --> 00:02:24,730
+that make the rather abstract
+definition easier to understand.
+
+35
+00:02:24,730 --> 00:02:27,750
+As we know, examples are always useful.
+
+36
+00:02:27,750 --> 00:02:32,560
+The NSF list includes data, publications,
+
+37
+00:02:32,560 --> 00:02:37,370
+samples, physical collections,
+software, and models.
+
+38
+00:02:37,370 --> 00:02:43,940
+It's interesting that NSF includes
+data as an example of data,
+
+39
+00:02:43,940 --> 00:02:50,250
+but the point here is there are many types
+of data beyond quantitative datasets.
+
+40
+00:02:50,250 --> 00:02:54,100
+The National Endowment for
+the Humanities, or NEH,
+
+41
+00:02:54,100 --> 00:03:00,570
+also offers examples of data that
+includes citations, software code,
+
+42
+00:03:00,570 --> 00:03:06,870
+algorithms, digital tools,
+documentation, databases,
+
+43
+00:03:06,870 --> 00:03:11,660
+geospatial coordinates,
+reports and articles.
+
+44
+00:03:11,660 --> 00:03:16,540
+It is interesting to note that NEH
+includes a wider array of data types
+
+45
+00:03:16,540 --> 00:03:18,590
+than we see from NSF or NIH.
+
+46
+00:03:19,720 --> 00:03:24,520
+Any of these data types NEH
+defines as humanities data, or
+
+47
+00:03:24,520 --> 00:03:29,140
+“materials generated or collected during
+the course of conducting research.”
+
+48
+00:03:30,280 --> 00:03:33,670
+So what are some key concepts
+in these definitions?
+
+49
+00:03:33,670 --> 00:03:38,810
+For NIH and NSF, the research
+community establishes definitions
+
+50
+00:03:38,810 --> 00:03:44,370
+of data that involve validity and
+presume data sharing among the community.
+
+51
+00:03:44,370 --> 00:03:48,900
+When you look at the examples provided
+by any of these organizations,
+
+52
+00:03:48,900 --> 00:03:54,070
+you can see that data come in
+quite a significant variety of forms,
+
+53
+00:03:54,070 --> 00:03:56,860
+almost to the point of being nebulous.
+
+54
+00:03:56,860 --> 00:03:59,320
+What is important to understand here
+
+55
+00:03:59,320 --> 00:04:04,560
+is that data are products of research
+that are heterogeneous across and
+
+56
+00:04:04,560 --> 00:04:07,780
+contextualized within
+the academic disciplines.
+
+57
+00:04:09,250 --> 00:04:13,828
+So to reiterate,
+data should be valid, shared, and
+
+58
+00:04:13,828 --> 00:04:20,163
+are heterogeneous, and contextualized
+within research communities.
+
+59
+00:04:20,163 --> 00:04:28,169
+[MUSIC]

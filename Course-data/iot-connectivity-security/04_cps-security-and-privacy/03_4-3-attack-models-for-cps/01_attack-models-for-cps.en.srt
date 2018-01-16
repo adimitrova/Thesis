@@ -1,0 +1,584 @@
+1
+00:00:00,025 --> 00:00:08,150
+[SOUND]
+>> Hello, welcome back.
+
+2
+00:00:08,150 --> 00:00:11,510
+In this lesson, we will learn
+about the common attack models for
+
+3
+00:00:11,510 --> 00:00:17,050
+cyber physical systems and
+the mechanisms to mitigate these attacks.
+
+4
+00:00:17,050 --> 00:00:22,900
+Attacks on cyber physical systems are
+divided into passive and active attacks.
+
+5
+00:00:24,380 --> 00:00:29,340
+In an active Attack, the attacker
+manipulates the system resources and
+
+6
+00:00:29,340 --> 00:00:31,320
+affects the operation of the system.
+
+7
+00:00:33,150 --> 00:00:36,350
+Active attacks are carried out
+within a short period of time.
+
+8
+00:00:38,680 --> 00:00:42,225
+In a passive Attack, the attackers
+makes use of the information in
+
+9
+00:00:42,225 --> 00:00:45,023
+the system without
+interrupting it's operation.
+
+10
+00:00:45,023 --> 00:00:49,857
+The passive attacks are done
+over a longer period of time and
+
+11
+00:00:49,857 --> 00:00:52,380
+are more difficult to detect.
+
+12
+00:00:54,510 --> 00:00:57,770
+Let's explore different
+attacks models in more detail.
+
+13
+00:01:02,070 --> 00:01:06,610
+Eavesdropping, or
+Sniffing is a Passive attack
+
+14
+00:01:06,610 --> 00:01:10,890
+in which the attacker captures
+information transmitted in a system.
+
+15
+00:01:12,450 --> 00:01:16,050
+The attacker aims to obtain
+sensitive information, such as,
+
+16
+00:01:16,050 --> 00:01:20,780
+passwords, session tokens, or
+any kind of confidential information.
+
+17
+00:01:22,930 --> 00:01:27,210
+Eavesdropping, therefore,
+violates the privacy of users,
+
+18
+00:01:28,520 --> 00:01:31,500
+but it does not effect
+the operation of the system.
+
+19
+00:01:33,280 --> 00:01:36,371
+Let's have a closer look at potential
+
+20
+00:01:36,371 --> 00:01:41,112
+Eavesdropping attacks against
+cyber physical systems.
+
+21
+00:01:41,112 --> 00:01:43,486
+In a wireless communication,
+
+22
+00:01:43,486 --> 00:01:48,150
+an attacker can capture network
+packets with the receiver.
+
+23
+00:01:49,590 --> 00:01:52,270
+If the communication is encrypted,
+
+24
+00:01:52,270 --> 00:01:56,180
+the attacker then try to break
+the encryption to gain the information.
+
+25
+00:01:58,680 --> 00:02:01,430
+In physical or wired links,
+
+26
+00:02:01,430 --> 00:02:06,490
+Eavesdropping could be done by analyzing
+the Electromagnetic fields of the wires.
+
+27
+00:02:08,050 --> 00:02:10,020
+In addition to wires,
+
+28
+00:02:10,020 --> 00:02:15,510
+other devices such as displays also
+have Electromagnetic emissions.
+
+29
+00:02:15,510 --> 00:02:17,200
+That could be analyzed
+to get some information.
+
+30
+00:02:18,791 --> 00:02:23,041
+Power analysis is some
+other way of Eavesdropping,
+
+31
+00:02:23,041 --> 00:02:27,871
+in which the attacker attempts
+to capture some information
+
+32
+00:02:27,871 --> 00:02:32,036
+by analyzing the electrical
+power usage of a system
+
+33
+00:02:35,820 --> 00:02:40,370
+Now, that we got familiar with
+different types of Eavesdropping.
+
+34
+00:02:40,370 --> 00:02:42,930
+Let's see how we can mitigate this attack.
+
+35
+00:02:45,110 --> 00:02:50,140
+Eavesdropping can be prevented
+by using strong encryption.
+
+36
+00:02:50,140 --> 00:02:53,279
+This is very important,
+especially in wireless communications.
+
+37
+00:02:55,310 --> 00:03:00,721
+Using smart antennas to limit the coverage
+area of wireless access points and
+
+38
+00:03:00,721 --> 00:03:04,135
+using minimal power for
+wireless transmissions
+
+39
+00:03:04,135 --> 00:03:08,561
+are other ways of mitigating
+this attack in wireless network.
+
+40
+00:03:10,806 --> 00:03:15,318
+Physical protection of cyber
+physical systems is also very
+
+41
+00:03:15,318 --> 00:03:19,560
+important to mitigate
+eavesdropping attacks.
+
+42
+00:03:19,560 --> 00:03:25,023
+For example, using shielded wires for
+physical links and using special racks or
+
+43
+00:03:25,023 --> 00:03:29,774
+rooms for critical devices are some
+methods of physical protection.
+
+44
+00:03:31,815 --> 00:03:38,940
+Denial of Service, or (DoS),
+is another common attack model.
+
+45
+00:03:40,800 --> 00:03:44,840
+A DoS attack is an Active attack in which
+
+46
+00:03:44,840 --> 00:03:50,300
+the attacker Targets the availability
+of the service or system.
+
+47
+00:03:50,300 --> 00:03:52,320
+Temporarily or indefinitely.
+
+48
+00:03:54,070 --> 00:03:57,594
+A DoS attack can have
+a devastating effect on the system.
+
+49
+00:03:59,709 --> 00:04:03,340
+DoS attacks are carried out
+by exhausting the systems
+
+50
+00:04:03,340 --> 00:04:07,100
+resources with a lot of valid processes.
+
+51
+00:04:07,100 --> 00:04:12,340
+In other words,
+DoS attacks take advantage of valid
+
+52
+00:04:12,340 --> 00:04:17,410
+actions in a system by repeating those
+actions a huge number of times in a row.
+
+53
+00:04:18,770 --> 00:04:24,192
+For example, in ICMP or internet
+control message protocol flood attack.
+
+54
+00:04:24,192 --> 00:04:30,158
+The attacker floods the server
+with several ICMP echo requests or
+
+55
+00:04:30,158 --> 00:04:31,570
+ping packets.
+
+56
+00:04:33,020 --> 00:04:37,783
+In this case, the server will be
+busy to respond to ping requests and
+
+57
+00:04:37,783 --> 00:04:42,798
+this will result in a significant
+decrease in its ability to process and
+
+58
+00:04:42,798 --> 00:04:44,991
+respond to its main services.
+
+59
+00:04:48,019 --> 00:04:53,820
+The main objectives of
+Denial-of Service-attacks are,
+
+60
+00:04:53,820 --> 00:04:59,272
+Congesting network resources,
+Draining CPU memory,
+
+61
+00:04:59,272 --> 00:05:04,492
+Reducing computing power,
+Exploiting TCP timers Or
+
+62
+00:05:04,492 --> 00:05:08,330
+Poisoning domain name translations.
+
+63
+00:05:10,060 --> 00:05:13,480
+To make a DoS attack even more efficient,
+
+64
+00:05:13,480 --> 00:05:17,880
+multiple computers can attack on a single
+device or server simultaneously.
+
+65
+00:05:19,190 --> 00:05:24,539
+This mechanism is called a Distributed
+Denial of Service attack or DDoS.
+
+66
+00:05:26,070 --> 00:05:30,123
+DDoS is a multi person,
+multi device attack that is launched
+
+67
+00:05:30,123 --> 00:05:34,340
+from multiple sources that
+are distributed over the network.
+
+68
+00:05:36,330 --> 00:05:40,955
+DDoS attacks, the most dangerous attacks,
+and are difficult to track and prevent.
+
+69
+00:05:42,646 --> 00:05:46,970
+SYN flood attack is
+an example of a DDoS attack.
+
+70
+00:05:48,770 --> 00:05:52,410
+In a SYN flood attack,
+a device or servers attacked
+
+71
+00:05:52,410 --> 00:05:56,900
+with a flat of TCPC synchronization
+packets from multiple sources.
+
+72
+00:05:58,250 --> 00:06:02,312
+In most cases, to make it difficult
+to detect the source of attack,
+
+73
+00:06:02,312 --> 00:06:06,110
+the attackers use full source
+Acronises in the scene pockets.
+
+74
+00:06:08,203 --> 00:06:14,680
+Low-rate TCP targeted attack
+is another mechanism for DoS.
+
+75
+00:06:14,680 --> 00:06:18,940
+It exploits the properties
+of TCP timers and
+
+76
+00:06:18,940 --> 00:06:23,090
+results in degrading the throughput
+of a system close to zero.
+
+77
+00:06:25,320 --> 00:06:29,660
+In order to make a Denial-of Service
+attack more difficult to trace,
+
+78
+00:06:29,660 --> 00:06:32,760
+an intermediate host can be used for
+launching the attack.
+
+79
+00:06:33,840 --> 00:06:36,480
+This approach is called
+Reflective DoS attack.
+
+80
+00:06:37,490 --> 00:06:42,010
+A Botnet attack is an example
+of a Reflective Dos attack.
+
+81
+00:06:45,230 --> 00:06:50,439
+A compromised-key Attack is another
+attack model for cyber physical systems.
+
+82
+00:06:51,710 --> 00:06:56,380
+A compromised-key refers to a secret
+code obtained by an attacker
+
+83
+00:06:56,380 --> 00:06:58,490
+to interpret secure information.
+
+84
+00:07:00,290 --> 00:07:04,010
+The key could be a password for
+logging into a system or
+
+85
+00:07:04,010 --> 00:07:07,560
+a session key for
+communication between two devices.
+
+86
+00:07:09,380 --> 00:07:14,095
+If a key is obtained by an attacker,
+it is considered a Compromised-key.
+
+87
+00:07:16,400 --> 00:07:21,281
+In this attack, the sender and receiver
+usually are not aware of the attack.
+
+88
+00:07:21,281 --> 00:07:24,262
+Hence, it is considered a passive attack.
+
+89
+00:07:26,796 --> 00:07:32,167
+So why are cyber physical systems
+vulnerable to Compromised-key Attacks?
+
+90
+00:07:35,207 --> 00:07:40,213
+The vulnerability of cyber physical
+systems to Compromise-key Attacks
+
+91
+00:07:40,213 --> 00:07:44,297
+is based on the special
+characteristics of these systems.
+
+92
+00:07:44,297 --> 00:07:49,590
+Cyber physical systems
+are Physically accessible,
+
+93
+00:07:49,590 --> 00:07:52,340
+and therefore easier to compromise.
+
+94
+00:07:52,340 --> 00:07:56,620
+For example, an attacker could
+Physically access a device and
+
+95
+00:07:56,620 --> 00:07:58,870
+obtain a password or a secret key.
+
+96
+00:08:00,880 --> 00:08:05,800
+Another reason is that due to the Resource
+constrained devices used in a cyber
+
+97
+00:08:05,800 --> 00:08:11,010
+physical system,
+weaker security measures are implemented.
+
+98
+00:08:11,010 --> 00:08:12,870
+For devices and communication.
+
+99
+00:08:14,490 --> 00:08:16,319
+Weak measures are easier to Compromise.
+
+100
+00:08:19,751 --> 00:08:25,190
+A Compromised-key Attack can
+be mitigated in several ways.
+
+101
+00:08:25,190 --> 00:08:29,470
+First, the system should be
+protected from Physical attacks,
+
+102
+00:08:30,970 --> 00:08:35,430
+unauthorized access to the devices,
+and Physical links should be limited.
+
+103
+00:08:36,720 --> 00:08:41,210
+Tamper proof hardware can be use
+in critical devices to prevent
+
+104
+00:08:41,210 --> 00:08:46,149
+an attacker from compromising them in
+case he gains Physical access to them.
+
+105
+00:08:47,950 --> 00:08:50,302
+Also, Encryption of the keys and
+
+106
+00:08:50,302 --> 00:08:54,676
+Key life cycle management
+are necessary to protect the keys.
+
+107
+00:08:57,051 --> 00:09:02,980
+Man-in-the-Middle is another common
+Attack model cyber physical systems.
+
+108
+00:09:04,060 --> 00:09:05,295
+In this type of Attack,
+
+109
+00:09:05,295 --> 00:09:10,120
+an adversary intercepts
+communication between two parties,
+
+110
+00:09:10,120 --> 00:09:15,040
+captures original messages, and passes
+altered messages between the parties.
+
+111
+00:09:16,860 --> 00:09:21,470
+The attacker impersonates both parties and
+controls communication.
+
+112
+00:09:22,670 --> 00:09:28,980
+He can, for example, get an original
+message, change some parameters,
+
+113
+00:09:28,980 --> 00:09:32,340
+and then send the manipulated
+message to the receiver.
+
+114
+00:09:33,710 --> 00:09:38,095
+This is an active attack type because
+it affects the behavior of the system.
+
+115
+00:09:40,101 --> 00:09:44,655
+To mitigate the Man-in-the-Middle Attacks,
+secure communication protocols
+
+116
+00:09:44,655 --> 00:09:49,805
+should be used to prevent the attacker
+from tampering the messages.
+
+117
+00:09:49,805 --> 00:09:53,889
+We will look into subscript of graphic
+solutions in later video lectures.
+
+118
+00:09:55,040 --> 00:09:58,640
+In this lesson, we learned about
+different attack models for
+
+119
+00:09:58,640 --> 00:10:03,330
+cyber physical systems and also
+discussed how to mitigate these attacks.
+
+120
+00:10:04,370 --> 00:10:07,502
+In the next video lecture,
+we will look into security issues for
+
+121
+00:10:07,502 --> 00:10:09,247
+real world cyber physical system.
+
+122
+00:10:09,247 --> 00:10:09,747
+[MUSIC]

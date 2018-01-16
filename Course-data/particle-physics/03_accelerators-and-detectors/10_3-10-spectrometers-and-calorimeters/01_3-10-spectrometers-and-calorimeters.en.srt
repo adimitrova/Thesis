@@ -1,0 +1,568 @@
+1
+00:00:00,000 --> 00:00:10,823
+[MUSIC]
+
+2
+00:00:10,823 --> 00:00:14,587
+In this module, we are discussing
+the basics of particle acceleration and
+
+3
+00:00:14,587 --> 00:00:16,285
+detection methods.
+
+4
+00:00:16,285 --> 00:00:21,595
+In this video, you will see how different
+technologies are combined to build
+
+5
+00:00:21,595 --> 00:00:27,155
+the two basic types of particle detectors,
+spectrometers, and calorimeters.
+
+6
+00:00:27,155 --> 00:00:31,595
+At the end of this video, you will be able
+to describe how a spectrometer measures
+
+7
+00:00:31,595 --> 00:00:36,590
+the direction and momentum of a charged
+particle in a nondestructive manner.
+
+8
+00:00:36,590 --> 00:00:40,835
+And to describe how a calorimeter measures
+the direction and energy of a particle by
+
+9
+00:00:40,835 --> 00:00:41,890
+total absorption.
+
+10
+00:00:43,160 --> 00:00:46,390
+You will also be able to identify
+the strength of these two basic
+
+11
+00:00:46,390 --> 00:00:47,320
+methods and their synergy.
+
+12
+00:00:50,008 --> 00:00:52,790
+A magnetic spectrometer is used
+to measure the direction and
+
+13
+00:00:52,790 --> 00:00:55,840
+momentum of a particle
+with minimal interaction.
+
+14
+00:00:55,840 --> 00:00:58,300
+It is a nondestructive method
+to measure these properties.
+
+15
+00:00:59,410 --> 00:01:03,130
+The particle trajectory is measured
+in a known magnetic field.
+
+16
+00:01:03,130 --> 00:01:07,990
+For a homogeneous field, the trajectory is
+a spiral, a circle in the plane orthogonal
+
+17
+00:01:07,990 --> 00:01:11,810
+to the field, and a straight line
+in the direction of the field.
+
+18
+00:01:11,810 --> 00:01:16,968
+The radius of curvature is proportional to
+what is called the magnetic rigidity R,
+
+19
+00:01:16,968 --> 00:01:20,743
+which is the ratio between the momentum p,
+and the charge Z.
+
+20
+00:01:20,743 --> 00:01:25,424
+R = p/Z, and can be
+measured by the product of the radius
+
+21
+00:01:25,424 --> 00:01:29,030
+of curvature and the magnetic field.
+
+22
+00:01:29,030 --> 00:01:33,682
+The magnetic field itself is provided by
+a permanent magnet or an electromagnet.
+
+23
+00:01:33,682 --> 00:01:37,405
+Measurements of the path are performed
+by an ionization detector,
+
+24
+00:01:37,405 --> 00:01:41,860
+a gas filled wire chamber, for example,
+or layers of semiconductor detectors.
+
+25
+00:01:42,910 --> 00:01:46,490
+The tangent to the trajectory
+at the entry of the magnet
+
+26
+00:01:46,490 --> 00:01:48,829
+gives the direction of
+the incident particle.
+
+27
+00:01:50,530 --> 00:01:54,430
+As an example, here's, again, a photo of
+the drift chamber from the L3
+
+28
+00:01:54,430 --> 00:01:58,600
+experiment at the Large Electron-
+Positron collider at CERN as well as a picture
+
+29
+00:01:58,600 --> 00:02:03,400
+of an e+e- annihilation
+into hedrons on the right side.
+
+30
+00:02:03,400 --> 00:02:06,969
+The reaction takes place in
+the middle of the device,
+
+31
+00:02:06,969 --> 00:02:09,441
+the center of the image on the right.
+
+32
+00:02:09,441 --> 00:02:13,757
+In the central part, you see the tracks of
+charged particles in yellow reconstructed
+
+33
+00:02:13,757 --> 00:02:18,390
+from the measured coordinates
+indicated by the small green crosses.
+
+34
+00:02:18,390 --> 00:02:19,959
+The curvature is barely visible but
+
+35
+00:02:19,959 --> 00:02:22,525
+well-measured by the high
+resolution drift chamber.
+
+36
+00:02:25,483 --> 00:02:27,454
+In this photograph on the left,
+
+37
+00:02:27,454 --> 00:02:31,435
+you see a central detector
+made out of silicone sensors,
+
+38
+00:02:31,435 --> 00:02:34,455
+the one that is used by
+the ATLAS experiment.
+
+39
+00:02:34,455 --> 00:02:38,205
+The right image is a reconstruction of a
+reaction between protons in the middle of
+
+40
+00:02:38,205 --> 00:02:39,435
+the device.
+
+41
+00:02:39,435 --> 00:02:42,075
+The charged particles, which are produced,
+
+42
+00:02:42,075 --> 00:02:45,615
+leave tracks forming circles
+orthogonal to the magnetic field.
+
+43
+00:02:48,080 --> 00:02:51,280
+The purpose of a calorimeter
+is to measure the energy and
+
+44
+00:02:51,280 --> 00:02:53,390
+direction of particles by absorbing them.
+
+45
+00:02:54,670 --> 00:02:57,570
+The principle of operation
+is the following.
+
+46
+00:02:57,570 --> 00:03:01,700
+The incident particle initiates
+a shower of particles in the detector,
+
+47
+00:03:01,700 --> 00:03:04,840
+an electromagnetic shower,
+or a hadronic shower.
+
+48
+00:03:05,860 --> 00:03:10,250
+The shape, size, and composition of the
+shower depends on the incident particle.
+
+49
+00:03:10,250 --> 00:03:12,520
+But also on the detector material,
+namely,
+
+50
+00:03:12,520 --> 00:03:16,120
+its radiation length,
+its nuclear interaction length.
+
+51
+00:03:17,610 --> 00:03:21,390
+The energy is deposited in the form of
+heat, which is not very useful, but
+
+52
+00:03:21,390 --> 00:03:25,570
+also produces detectable signals,
+like ionization and excitation
+
+53
+00:03:25,570 --> 00:03:31,350
+by dE/dx, scintillation light,
+Cherenkov radiation, etc.
+
+54
+00:03:31,350 --> 00:03:33,280
+This energy is detected by sensors.
+
+55
+00:03:34,310 --> 00:03:38,120
+The resulting signal is proportional to
+the total energy deposited by the particle
+
+56
+00:03:38,120 --> 00:03:40,770
+of the shower in the active
+medium of the detector.
+
+57
+00:03:42,100 --> 00:03:46,820
+There are two kinds of calorimeters,
+homogenous ones with only one material to
+
+58
+00:03:46,820 --> 00:03:51,330
+absorb and detect the shower particles and
+layered calorimeters,
+
+59
+00:03:51,330 --> 00:03:54,545
+which use different materials for
+interaction, absorption and detection.
+
+60
+00:03:57,760 --> 00:04:02,026
+Here's an example of a layered calorimeter.
+
+61
+00:04:02,026 --> 00:04:05,800
+In such a calorimeter, layers alternate.
+
+62
+00:04:05,800 --> 00:04:10,184
+There are absorption layers made of heavy
+materials like copper, lead, or
+
+63
+00:04:10,184 --> 00:04:13,245
+uranium with the short
+radiation in direction.
+
+64
+00:04:13,245 --> 00:04:16,190
+Here, particles interact and
+form a shower.
+
+65
+00:04:16,190 --> 00:04:20,260
+In the sensitive layers,
+the energy lost by dE/dx is recorded.
+
+66
+00:04:20,260 --> 00:04:22,670
+These layers may be
+equipped with a gaseous or
+
+67
+00:04:22,670 --> 00:04:27,450
+noble liquid, a proportional chamber,
+a semiconductor sensor, or a scintillator.
+
+68
+00:04:28,740 --> 00:04:32,470
+You see here, the electromagnetic
+calorimeter of ATLAS which contains absorption
+
+69
+00:04:32,470 --> 00:04:38,020
+layers of lead and steel alternating with
+sensitive layers filled with liquid argon.
+
+70
+00:04:38,020 --> 00:04:40,230
+The whole has a shape
+resembling an accordion.
+
+71
+00:04:43,050 --> 00:04:47,100
+In a homogenous calorimeter on the other
+hand, the two functions are combined.
+
+72
+00:04:47,100 --> 00:04:52,190
+The same material is used as an absorber
+and as a detector for deposited energy.
+
+73
+00:04:52,190 --> 00:04:54,650
+Scintillators made of heavy
+materials can be used,
+
+74
+00:04:54,650 --> 00:04:58,340
+like bismuth germanate,
+BGO, or lead tungstate.
+
+75
+00:04:59,580 --> 00:05:03,230
+Because of the short radiation length and
+the transparency of these materials,
+
+76
+00:05:03,230 --> 00:05:06,450
+they are often used to detect
+electromagnetic showers.
+
+77
+00:05:06,450 --> 00:05:10,858
+The scintillation light,
+emitted by the electrons of the shower,
+
+78
+00:05:10,858 --> 00:05:15,808
+is detected by photomultipliers or
+by semiconductor photodiodes,
+
+79
+00:05:15,808 --> 00:05:17,121
+as in this example,
+
+80
+00:05:17,121 --> 00:05:22,252
+which shows you the lead tungstate
+calorimeter of the CMS experiment at LHC.
+
+81
+00:05:29,784 --> 00:05:33,608
+Calorimeters are also one of the main
+applications of plastic scintillators.
+
+82
+00:05:33,608 --> 00:05:38,910
+The large calorimeter for hadron showers of
+the ATLAS experiment is an example.
+
+83
+00:05:38,910 --> 00:05:41,650
+Here, you see a small animation
+showing the structure of
+
+84
+00:05:41,650 --> 00:05:43,760
+one of its wedge-shaped slices.
+
+85
+00:05:43,760 --> 00:05:47,540
+It uses scintillated tiles
+inserted between steel absorbers
+
+86
+00:05:47,540 --> 00:05:48,860
+to measure the energy of hadrons.
+
+87
+00:05:50,220 --> 00:05:52,530
+The shower develops mainly
+in the metal layers.
+
+88
+00:05:52,530 --> 00:05:56,574
+The charged particles it generates produce
+scintillation light in the sensitive
+
+89
+00:05:56,574 --> 00:05:58,240
+layers.
+
+90
+00:05:58,240 --> 00:06:02,275
+The scintillation light is
+collected by optical fibers and
+
+91
+00:06:02,275 --> 00:06:04,219
+guided to photo detectors.
+
+92
+00:06:06,260 --> 00:06:10,073
+In this way, a three-dimensional
+image of the shower is measured,
+
+93
+00:06:10,073 --> 00:06:13,573
+which allows to reconstruct direction and
+energy of hadrons.
+
+94
+00:06:23,933 --> 00:06:28,000
+But also the Cherenkov effect allows
+to build complete detectors.
+
+95
+00:06:28,000 --> 00:06:34,003
+The Super-Kamiokande Detector in Japan
+consists of a huge cylindrical tank,
+
+96
+00:06:34,003 --> 00:06:38,223
+which contains 50,000
+tons of ultra pure water.
+
+97
+00:06:38,223 --> 00:06:42,601
+When a charged particle passes through
+the water at the speed beyond that of
+
+98
+00:06:42,601 --> 00:06:47,392
+the speed of light in water, which is
+about 75% of the speed of light in vacuum,
+
+99
+00:06:47,392 --> 00:06:49,505
+a cone of light is emitted.
+
+100
+00:06:49,505 --> 00:06:53,280
+This cone is intercepted by an array
+of photomultipliers distributed
+
+101
+00:06:53,280 --> 00:06:53,790
+on the walls.
+
+102
+00:06:54,810 --> 00:06:59,140
+They detect an ellipse of photons, which
+allows to reconstruct the direction and
+
+103
+00:06:59,140 --> 00:07:00,640
+velocity of the particle.
+
+104
+00:07:03,570 --> 00:07:08,360
+Lateral and longitudinal segmentation
+allows to distinguish between hadrons and
+
+105
+00:07:08,360 --> 00:07:11,950
+particles, which interact only via the
+electromagnetic force, like electrons and
+
+106
+00:07:11,950 --> 00:07:13,380
+photons, or muons.
+
+107
+00:07:14,750 --> 00:07:15,510
+As a general rule,
+
+108
+00:07:15,510 --> 00:07:20,050
+one can say that electromagnetic
+showers are short, slim and regular.
+
+109
+00:07:20,050 --> 00:07:22,809
+Hadronic showers are penetrating,
+wide, and irregular.
+
+110
+00:07:23,830 --> 00:07:27,560
+Because of the different characteristics
+of electromagnetic and hadronic showers,
+
+111
+00:07:27,560 --> 00:07:31,630
+they are often two calorimeters,
+a fine grain electromagnetic one and
+
+112
+00:07:31,630 --> 00:07:33,070
+a coarser hadron calorimeter.
+
+113
+00:07:35,320 --> 00:07:38,800
+But it is the synergy between
+different detector types that
+
+114
+00:07:38,800 --> 00:07:43,090
+allows to both identify particles and
+measure their direction and energy.
+
+115
+00:07:43,090 --> 00:07:46,987
+This is further explained
+in optional video 3.10a,
+
+116
+00:07:46,987 --> 00:07:50,442
+which shows how the ATLAS
+detector at LHC works.
+
+117
+00:07:50,442 --> 00:07:54,819
+In the next video, we will show which
+types of particle detectors are developed
+
+118
+00:07:54,819 --> 00:07:58,298
+and produced in our laboratories
+at the University of Geneva.
+
+119
+00:07:58,298 --> 00:08:04,279
+[MUSIC]

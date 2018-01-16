@@ -1,0 +1,73 @@
+[MUSIC] In this module, we touch the basics
+of particle acceleration and detection methods. In this video, we will continue our
+discussion on particle detection techniques with semiconductor devices. After having watched this video, you will
+know how semiconductor detectors detect the ionization caused by
+traversing charged particles. And how this is used to
+identify charged particles and to measure their trajectories. This particular type of ionization
+detectors uses the properties of semiconductors to detect and measure
+dE/dx of charged particles. When a charged particle
+traverses a semiconductor, it will create an electron-hole pair. Since the conduction band is
+close to the valence band, it takes only 3 eV of dE/dx to create a pair compared to the 30 eV to ionize a gas atom. The charges can be detected by
+applying an electric field. Semiconductor detectors have
+very good energy resolution. They are compact since
+they are made of a solid. They are thin with a required thickness
+much smaller than their additional length. The special resolution is in
+the order of micrometers, ideal for a tracking detectors. And also they produce fast signals,
+however they are expensive. They are fragile to make mechanical,
+chemical and electrical impacts, and their performance is
+degraded by irradiation. The basis of a semi-conductor detector
+is a p-n junction with reverse bias. When two different semi conductor types,
+n and p, are in contact, diffusion creates a zone free of charge
+carriers around the contact surface. A depletion zone forms at the junction,
+creating a potential barrier, which prevents conduction
+between the two semiconductors. The application of a reverse bias
+voltage widens the depletion zone, and this is how semiconductor diodes work. The passage of ionizing particles
+liberates electron-hole pairs in the depletion zone. Charge are collected to both ends, and the diode conducts a small current for
+a short time. Semiconductor detectors have a good
+efficiency since only 3 eV are necessary to create
+a single electron-hole pair. So, these detectors are ten
+times more sensitive than a gas, and a hundred times more
+sensitive than a scintillator. It, therefore, has a lower detection
+threshold and a better energy resolution since more primary ionization
+means less signal fluctuations. The threshold for dE/dx is
+very low, so that is a good linearity. However, to measure
+highly ionizing particles requires a large dynamic range of
+readout electronics since dE/dx is proportional to the square
+of the charge of the particle. Even if the junction is in reverse bias, there is still a small current of the
+order of nA through the junction. This is called leakage current and
+it is due to the motion of minority careers, effects
+of impurities and surface effects. The time of the electrical signal
+is of the order of nano seconds. So semi conductor detectors are as fast as scintillators which we will
+discuss in the next video. The energy deposition by
+the dE/dx is very local. Therefore, the electrodes
+can be structured in one or both sides to locate
+the passage of particles. The distance of metalized structures, called strips, is typically of
+the order of 50 µm. And in this picture, you see an example
+of silicone microstrip sensor of the AMS detector which is operating
+on the International Space Station and of the ALICE detector operating
+at the Large Hadron Collider. Each channel of the metallic structure
+must be connected to the readout electronics through micro bonding. Applications of a semiconductor detector
+in particle physics include the following. They are used arranged in layers to measure
+the trajectory of charged particles. And this profits from the development in
+micro electronic technology to fabricate precise structures on silicon and
+other semiconductor materials. Example are microstrip detectors
+used in the ATLAS at the Large Hadron Collider and in AMS. Pixel detectors which are being used for
+the first time at LHC. Charged coupled devices, CCD, used in
+digital cameras, and many others. Semi conductor detectors also
+measure the deposited element. Their excellent resolution allows
+the identification of the charge of the penetrating particle
+in a tracking device. They can also be sensitive
+elements in a calorimeter. This application is only limited
+by the thickness of the depletion zone which goes from 50 micrometers
+up to order of millimeters and the maximum chip size that can be produced
+which is about 50 centimeters squared. Here is an example of a silicon wafer, so the big rectangle at the center.
+And the sides, they are testing circuits which
+allow to test the quality of the sensor before using
+it to assemble a detecting unit. Before using it,
+one must cut the sensor. And this is an example of a cut sensor. And usually, one connects several
+sensors together to build the detection unit like this
+one where there are two silicon sensors connected at
+the middle by micro bonding and at the one end micro bonding connects
+them to the readout electronics. More example of applications
+using semi-conductor sensors will be shown in video 3.10. In the next video, we'll first talk about
+the scintillators and Cherenkov detectors. [MUSIC]

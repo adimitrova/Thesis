@@ -1,0 +1,1627 @@
+1
+00:00:04,769 --> 00:00:11,080
+So now we found equilibrius, the next step is stability about this equilibrius.
+
+2
+00:00:11,080 --> 00:00:13,000
+And like with the dual-spinner, at this stage,
+
+3
+00:00:13,000 --> 00:00:15,330
+we're just going to use linear stability analysis.
+
+4
+00:00:15,330 --> 00:00:16,885
+So, we're going to come up with these equations,
+
+5
+00:00:16,885 --> 00:00:20,440
+linearize and make small, and small departure approximations.
+
+6
+00:00:20,440 --> 00:00:27,339
+And we're doing it in one way and in your homework you actually duplicate this,
+
+7
+00:00:27,339 --> 00:00:30,074
+but do it with MRPs instead of all our angles basically.
+
+8
+00:00:30,074 --> 00:00:31,690
+But it falls very much the same steps,
+
+9
+00:00:31,690 --> 00:00:34,159
+so that's why I'm going through this part a little bit quicker.
+
+10
+00:00:34,159 --> 00:00:37,369
+This is much more about the high level thing, make sure the concepts make sense.
+
+11
+00:00:37,369 --> 00:00:40,439
+The mathematical details, you will do it in your homework anyway.
+
+12
+00:00:40,439 --> 00:00:41,905
+That's where you do that.
+
+13
+00:00:41,905 --> 00:00:46,539
+So, now we're looking at how can we use gravity gradients.
+
+14
+00:00:46,539 --> 00:00:48,264
+These are just equilibrius, right?
+
+15
+00:00:48,264 --> 00:00:52,329
+And we know that this is an equilibria, and this is an equilibria.
+
+16
+00:00:52,329 --> 00:00:54,799
+But this equilibria is stable cause,
+
+17
+00:00:54,799 --> 00:00:57,439
+if you have a small departure, it's visually very easy to see.
+
+18
+00:00:57,439 --> 00:00:58,939
+This part weighs more than this one,
+
+19
+00:00:58,939 --> 00:01:02,340
+so it can have a restoring force that gets you back to the equilibrium point,
+
+20
+00:01:02,340 --> 00:01:03,560
+or at least towards it.
+
+21
+00:01:03,560 --> 00:01:05,750
+It won't be asymptotic, it'll just oscillate.
+
+22
+00:01:05,750 --> 00:01:07,750
+But this is also an equilibria.
+
+23
+00:01:07,750 --> 00:01:10,370
+And if you perturb it, you're going to be driven away from
+
+24
+00:01:10,370 --> 00:01:12,120
+that equilibria towards the other one.
+
+25
+00:01:12,120 --> 00:01:16,305
+And so, that local motion is not going to stay linearly stable.
+
+26
+00:01:16,305 --> 00:01:18,980
+So, how can we identify this for all three axes,
+
+27
+00:01:18,980 --> 00:01:22,569
+and make this completely stable if we wish?
+
+28
+00:01:22,569 --> 00:01:27,680
+So, we used the same O frame again, RC, everything is there.
+
+29
+00:01:27,680 --> 00:01:31,685
+This is from different notes for some- instead of having N, I have a big Omega.
+
+30
+00:01:31,685 --> 00:01:35,224
+That's in the orbit rate but it's the same thing, just different label.
+
+31
+00:01:35,224 --> 00:01:38,900
+So, that's your orbital speed that you would have,
+
+32
+00:01:38,900 --> 00:01:42,465
+it's basically nu over your rate, circular orbit radius cubed.
+
+33
+00:01:42,465 --> 00:01:45,659
+That gives you, in radians per second, your orbital speed.
+
+34
+00:01:45,659 --> 00:01:51,019
+And we're going to now look at, we're assuming the principle chorded frame.
+
+35
+00:01:51,019 --> 00:01:54,399
+That's a key assumption, so inertia tensor in the body frame is there.
+
+36
+00:01:54,399 --> 00:01:59,614
+And the motion, now we do allow non-zero angular motion, right?
+
+37
+00:01:59,614 --> 00:02:04,364
+If this is my equilibrium, I want to bump it and see what happens with small motions.
+
+38
+00:02:04,364 --> 00:02:08,449
+So now I have to account for some Omega BO's in this development, right?
+
+39
+00:02:08,449 --> 00:02:12,444
+That's how you get your equations of motion about this state.
+
+40
+00:02:12,444 --> 00:02:14,060
+So, how do we describe that here?
+
+41
+00:02:14,060 --> 00:02:17,569
+I'm going to use all the angles three, two, one, yard pitch roll sequence.
+
+42
+00:02:17,569 --> 00:02:20,234
+And you've seen this differential equations before.
+
+43
+00:02:20,234 --> 00:02:22,504
+This is how I can relate my Omega BO.
+
+44
+00:02:22,504 --> 00:02:27,210
+But these angles now are B body relative to orbit.
+
+45
+00:02:27,210 --> 00:02:30,819
+They're not body relative to inertial.
+
+46
+00:02:30,819 --> 00:02:34,715
+If we needed body relative to inertial, you know how to do that, right?
+
+47
+00:02:34,715 --> 00:02:37,125
+We know how to add, three, two, one, all of our angles.
+
+48
+00:02:37,125 --> 00:02:38,919
+You can map into the DCMs.
+
+49
+00:02:38,919 --> 00:02:40,095
+That's one approach, right?
+
+50
+00:02:40,095 --> 00:02:43,284
+Then multiply amount and pull them out again, if you have to.
+
+51
+00:02:43,284 --> 00:02:46,919
+So, this is what's going to go into here.
+
+52
+00:02:46,919 --> 00:02:55,375
+This is the constant orbit rate, but it's about 02, not about a body axis.
+
+53
+00:02:55,375 --> 00:03:00,324
+So, I need the DCM to go from the orbit to the body frame,
+
+54
+00:03:00,324 --> 00:03:01,910
+and I'm using the same three, two, one angles.
+
+55
+00:03:01,910 --> 00:03:04,060
+So, that's this classic one you've derived,
+
+56
+00:03:04,060 --> 00:03:06,935
+this is the one we've seen in the first part of the class.
+
+57
+00:03:06,935 --> 00:03:12,454
+So, if I need to map my orbit motion, which is basically zero, big Omega, zero,
+
+58
+00:03:12,454 --> 00:03:16,370
+that's the orbit rate in the orbit frame into a vector,
+
+59
+00:03:16,370 --> 00:03:18,884
+into the body frame, you multiply times here.
+
+60
+00:03:18,884 --> 00:03:23,359
+So, this is going to pull out the second column at zero, big Omega,
+
+61
+00:03:23,359 --> 00:03:28,125
+zero times a three by three gives you that big Omega, times the second column.
+
+62
+00:03:28,125 --> 00:03:29,590
+That's what you end up with.
+
+63
+00:03:29,590 --> 00:03:33,014
+If you want to choose different attitude parameterizations you can do it.
+
+64
+00:03:33,014 --> 00:03:37,460
+It's just going to have MRPs here, or CERP, or quaternions, or whatever you want to use.
+
+65
+00:03:37,460 --> 00:03:39,395
+You can write this motion using whatever angles,
+
+66
+00:03:39,395 --> 00:03:41,955
+you guys are very good now with kinematics.
+
+67
+00:03:41,955 --> 00:03:42,680
+So, good.
+
+68
+00:03:42,680 --> 00:03:44,790
+Now we have, we'll make a B...
+
+69
+00:03:44,790 --> 00:03:49,574
+Both Omegas are now written in the B frame, which is nice.
+
+70
+00:03:49,574 --> 00:03:51,500
+So, we can add them up.
+
+71
+00:03:51,500 --> 00:03:55,789
+I add up both matrix representations of it, and so this is the math that you get.
+
+72
+00:03:55,789 --> 00:03:59,060
+So you can see the yaw pitch and roll rates, again,
+
+73
+00:03:59,060 --> 00:04:01,925
+are the motions of the body relative to the orbit frame,
+
+74
+00:04:01,925 --> 00:04:04,699
+and the big Omega accounts for that the frame itself
+
+75
+00:04:04,699 --> 00:04:07,664
+is in a constant rotational state, right?
+
+76
+00:04:07,664 --> 00:04:09,675
+So, all these terms add up there.
+
+77
+00:04:09,675 --> 00:04:14,210
+But that's now my Omega BN parameterized this way.
+
+78
+00:04:14,210 --> 00:04:18,350
+This is good for anything, there's no approximation in these kinematics.
+
+79
+00:04:18,350 --> 00:04:22,634
+We did assume that the spacecraft is on a circular orbit but that was about it.
+
+80
+00:04:22,634 --> 00:04:27,219
+So, now if we want approximate small departures,
+
+81
+00:04:27,219 --> 00:04:31,444
+we can actually linearize this expression for small motions.
+
+82
+00:04:31,444 --> 00:04:36,245
+Big Omega's not a small term, but we can assume now my yaw pitch, roll angles,
+
+83
+00:04:36,245 --> 00:04:39,062
+and the associated yaw pitch roll rates.
+
+84
+00:04:39,062 --> 00:04:44,040
+These are all going to be small oscillations, slow oscillations.
+
+85
+00:04:44,040 --> 00:04:44,899
+What happens there?
+
+86
+00:04:44,899 --> 00:04:50,754
+So, they're all treated as small variables, and we're linearizing them all about zero.
+
+87
+00:04:50,754 --> 00:04:52,990
+And then that's the result you get.
+
+88
+00:04:52,990 --> 00:04:54,310
+Let's look at the first line.
+
+89
+00:04:54,310 --> 00:04:57,235
+That's already linear, that's just your roll rate.
+
+90
+00:04:57,235 --> 00:05:00,004
+Here we have sign of pitch times yaw rate.
+
+91
+00:05:00,004 --> 00:05:02,269
+Well sign of pitch linearizes to pitch right?
+
+92
+00:05:02,269 --> 00:05:05,815
+Sign of X becomes approximately X for small departures.
+
+93
+00:05:05,815 --> 00:05:08,620
+So, that's small times small, it's small quadratic.
+
+94
+00:05:08,620 --> 00:05:09,749
+We drop it, right?
+
+95
+00:05:09,749 --> 00:05:13,045
+Here we have a cosine of small, linearizes to one,
+
+96
+00:05:13,045 --> 00:05:15,875
+times sine of small, linearizes to the small.
+
+97
+00:05:15,875 --> 00:05:17,324
+So, that's the first order term.
+
+98
+00:05:17,324 --> 00:05:20,134
+And that's what you see in the first line here.
+
+99
+00:05:20,134 --> 00:05:22,899
+So, that's what we end up with only these two terms.
+
+100
+00:05:22,899 --> 00:05:25,819
+That's our first order approximation.
+
+101
+00:05:25,819 --> 00:05:28,774
+You can do the same steps for the other two axes.
+
+102
+00:05:28,774 --> 00:05:32,235
+And in fact, I encourage you to do it on your own, I don't need to do this for you.
+
+103
+00:05:32,235 --> 00:05:33,730
+And in the homework, you do it with MRPs.
+
+104
+00:05:33,730 --> 00:05:35,560
+So, good.
+
+105
+00:05:35,560 --> 00:05:40,029
+Now, this isn't the body frame, we need, in the end, Omega dot.
+
+106
+00:05:40,029 --> 00:05:44,170
+But we can use our handy dandy identity that Omega is Omega BN,
+
+107
+00:05:44,170 --> 00:05:48,435
+so the N framed derivative, and the B framed derivatives are the same.
+
+108
+00:05:48,435 --> 00:05:49,285
+Right?
+
+109
+00:05:49,285 --> 00:05:53,230
+So, I don't have to do any cross-product stuff all I have to do is,
+
+110
+00:05:53,230 --> 00:05:54,519
+this term is going to vanish,
+
+111
+00:05:54,519 --> 00:05:59,120
+and all I have to do is take a derivative of these three matrix components,
+
+112
+00:05:59,120 --> 00:06:03,404
+and that is the inertial derivative of this particular Omega BN vector.
+
+113
+00:06:03,404 --> 00:06:04,179
+Right?
+
+114
+00:06:04,179 --> 00:06:05,225
+So, this is still rigorous.
+
+115
+00:06:05,225 --> 00:06:06,399
+No approximations.
+
+116
+00:06:06,399 --> 00:06:10,026
+It just means here, big Omega is constant - I'm on a circular orbit -
+
+117
+00:06:10,026 --> 00:06:11,490
+so there's no bigger make a dot.
+
+118
+00:06:11,490 --> 00:06:15,125
+Everything else receives an extra dot over it.
+
+119
+00:06:15,125 --> 00:06:17,973
+Now, I have a first order approximation for Omega dot,
+
+120
+00:06:17,973 --> 00:06:21,240
+first order approximation for Omega, and we can start.
+
+121
+00:06:21,240 --> 00:06:23,810
+Well, we're almost ready to start applying it to here.
+
+122
+00:06:23,810 --> 00:06:27,660
+We can linearize this term with that, this term will still be make it times Omega.
+
+123
+00:06:27,660 --> 00:06:29,290
+There's an extra step we have to do.
+
+124
+00:06:29,290 --> 00:06:31,910
+What we're still missing is the gravity gradient torque.
+
+125
+00:06:31,910 --> 00:06:33,535
+We have a general expression,
+
+126
+00:06:33,535 --> 00:06:35,319
+we need to now get an approximation
+
+127
+00:06:35,319 --> 00:06:38,829
+of the gravity gradient torque around one of these equilibrius.
+
+128
+00:06:38,829 --> 00:06:45,250
+How is that torque vary if I pitch, roll, yaw slightly, you know, around it.
+
+129
+00:06:45,250 --> 00:06:47,709
+So, let's look at that.
+
+130
+00:06:47,709 --> 00:06:51,300
+We did this math already earlier, this is how we get to this stuff.
+
+131
+00:06:51,300 --> 00:06:56,004
+Now, we have a very particular BO matrix in terms of yaw, pitch and roll,
+
+132
+00:06:56,004 --> 00:06:58,060
+times zero, zero something.
+
+133
+00:06:58,060 --> 00:07:01,269
+So, we're going to pull out the third column of this Bo matrix,
+
+134
+00:07:01,269 --> 00:07:05,564
+which is nothing but these sines and cosines, times RC.
+
+135
+00:07:05,564 --> 00:07:10,675
+So, this is now my RC one, two, and three, the B frame vector components of
+
+136
+00:07:10,675 --> 00:07:14,069
+the position vector is written this way.
+
+137
+00:07:14,069 --> 00:07:16,735
+And there's no approximation here yet.
+
+138
+00:07:16,735 --> 00:07:23,000
+And you can substitute this expression into this earlier expression we derived,
+
+139
+00:07:23,000 --> 00:07:29,829
+where we have products of RC ones, twos, and threes, and this gives you this answer now.
+
+140
+00:07:29,829 --> 00:07:31,889
+So, this is still...
+
+141
+00:07:31,889 --> 00:07:36,150
+We haven't made any small angle approximations yet in this expression.
+
+142
+00:07:36,150 --> 00:07:37,495
+This is still perfectly valid.
+
+143
+00:07:37,495 --> 00:07:41,339
+You can now describe your gravity gradient torques as a function of yaw, pitch,
+
+144
+00:07:41,339 --> 00:07:45,074
+and roll angles of the body relative to this orbit frame.
+
+145
+00:07:45,074 --> 00:07:47,000
+That's what this yaw, pitch, and roll means.
+
+146
+00:07:47,000 --> 00:07:50,842
+And, again, you can make inertial tensors specific to make it go to zero,
+
+147
+00:07:50,842 --> 00:07:52,509
+but we're not doing that here.
+
+148
+00:07:52,509 --> 00:07:56,035
+So, we're looking at small departure motions.
+
+149
+00:07:56,035 --> 00:08:00,899
+One thing that stands out is the same one.
+
+150
+00:08:00,899 --> 00:08:03,660
+If you look at this, because it's the third column with the DCM there,
+
+151
+00:08:03,660 --> 00:08:10,370
+there is no yaw angle in here, which actually makes somewhat physical sense.
+
+152
+00:08:10,370 --> 00:08:14,569
+Right?' We line things up, we know that if this is lined up, it's a zero gravity gradient.
+
+153
+00:08:14,569 --> 00:08:19,600
+That's true, that answer is true regardless of how I rotate about that axis.
+
+154
+00:08:19,600 --> 00:08:22,334
+And in this system we call that axis three,
+
+155
+00:08:22,334 --> 00:08:25,615
+and for a yaw, pitch, roll, that's a three to one rotation.
+
+156
+00:08:25,615 --> 00:08:30,500
+So, any three rotation doesn't really affect that gravity gradient torque.
+
+157
+00:08:30,500 --> 00:08:34,399
+That's what you find duplicated here by having used these all the angles in this sequence,
+
+158
+00:08:34,399 --> 00:08:36,065
+which is kind of nice.
+
+159
+00:08:36,065 --> 00:08:38,690
+So, this is a general expression.
+
+160
+00:08:38,690 --> 00:08:41,740
+Now we want to linearize this cause we're looking at linear results.
+
+161
+00:08:41,740 --> 00:08:46,554
+What if we have not just general big motions, but I'm just having a little wiggles, right?
+
+162
+00:08:46,554 --> 00:08:52,730
+These angles are going to be small cosines become one, sine of two axis, just two X again.
+
+163
+00:08:52,730 --> 00:08:55,460
+So that comes in there and another cosine to one.
+
+164
+00:08:55,460 --> 00:09:00,440
+Here you have a two- Theta becomes, sign of two Theta becomes two Theta.
+
+165
+00:09:00,440 --> 00:09:04,070
+But here you have a sine times a sine, so that small times small,
+
+166
+00:09:04,070 --> 00:09:06,325
+that's going to be higher order and drops out.
+
+167
+00:09:06,325 --> 00:09:14,490
+So, generally, while yaw doesn't appear, you do get a torque about the third body axis.
+
+168
+00:09:14,490 --> 00:09:14,990
+Right?
+
+169
+00:09:14,990 --> 00:09:18,835
+Nominally, the lining up B one, two, and three with 0, one, two, and three.
+
+170
+00:09:18,835 --> 00:09:21,590
+You do get a torque but it's actually really small.
+
+171
+00:09:21,590 --> 00:09:26,179
+That's the one that kind of helps you, though, restore yawing motion if needed.
+
+172
+00:09:26,179 --> 00:09:26,519
+Right?
+
+173
+00:09:26,519 --> 00:09:27,659
+That's what we need there.
+
+174
+00:09:27,659 --> 00:09:31,549
+But if you linearize, it's small enough to where you can drop it,
+
+175
+00:09:31,549 --> 00:09:36,139
+and it doesn't appear there, so that becomes a second order term that you would have.
+
+176
+00:09:36,139 --> 00:09:37,429
+So, good.
+
+177
+00:09:37,429 --> 00:09:40,180
+Now, we have R. With a little bit of math,
+
+178
+00:09:40,180 --> 00:09:41,660
+we've got a linearized version
+
+179
+00:09:41,660 --> 00:09:46,769
+of gravity gradient in terms of three, two, one, order angles relative to the orbit frame.
+
+180
+00:09:46,769 --> 00:09:49,269
+That's how we define all this stuff.
+
+181
+00:09:49,269 --> 00:09:52,639
+So, at this stage we're ready to start to put this together.
+
+182
+00:09:52,639 --> 00:09:55,565
+This is still our fundamental equations of motion of a rigid body,
+
+183
+00:09:55,565 --> 00:09:59,594
+s single rigid body, not a dual-spinner or something but close enough, right?
+
+184
+00:09:59,594 --> 00:10:00,950
+So, we've got this linear,
+
+185
+00:10:00,950 --> 00:10:05,360
+and we're plugging in those conditions including that the inertia tensor is diagonal.
+
+186
+00:10:05,360 --> 00:10:08,990
+This one, we've seen before, it gives you these terms, these differences,
+
+187
+00:10:08,990 --> 00:10:14,059
+with Omega twos and threes, Omega ones and threes and all the products of Omega's.
+
+188
+00:10:14,059 --> 00:10:16,700
+Plugging in these Omegas that's what you get.
+
+189
+00:10:16,700 --> 00:10:20,059
+And then the gravity gradient torque, it only had first and second components,
+
+190
+00:10:20,059 --> 00:10:22,950
+the third one dropped out completely in the linearization that we have.
+
+191
+00:10:22,950 --> 00:10:27,349
+So, the last step you have, because this is Omega till the I Omega,
+
+192
+00:10:27,349 --> 00:10:28,850
+this is still Omega squared.
+
+193
+00:10:28,850 --> 00:10:31,460
+Linearizing Omega wasn't quite enough, you still have to,
+
+194
+00:10:31,460 --> 00:10:34,039
+at this point, drop second order terms.
+
+195
+00:10:34,039 --> 00:10:36,674
+So, we can look at that.
+
+196
+00:10:36,674 --> 00:10:41,639
+And the pitch equation, the faded one is actually a nice example.
+
+197
+00:10:41,639 --> 00:10:45,320
+You've got pitch acceleration here, you've got pitch angles here,
+
+198
+00:10:45,320 --> 00:10:49,039
+and in between things cross coupled with yaw and roll.
+
+199
+00:10:49,039 --> 00:10:52,620
+But if you look at these terms, it's yaw rates times roll rate.
+
+200
+00:10:52,620 --> 00:10:58,090
+That small time small, drops out, yaw rates times yaw angle, again, small times small.
+
+201
+00:10:58,090 --> 00:10:59,514
+It's going to be second order.
+
+202
+00:10:59,514 --> 00:11:08,149
+Roll times roll rate, second order, and roll times yaw angle, also again small time small.
+
+203
+00:11:08,149 --> 00:11:12,924
+So, the second equation, once you linearize and drop the second order gyroscopic terms,
+
+204
+00:11:12,924 --> 00:11:18,365
+all you're going to be left with is this term, and this term.
+
+205
+00:11:18,365 --> 00:11:20,634
+That's what I've written here.
+
+206
+00:11:20,634 --> 00:11:22,844
+That's the pitch equation, right?
+
+207
+00:11:22,844 --> 00:11:26,331
+So, if we had- I'm flying along this way this is my one axis,
+
+208
+00:11:26,331 --> 00:11:29,190
+two axis, three, positive pitch.
+
+209
+00:11:29,190 --> 00:11:31,889
+That's basically, that's this motion.
+
+210
+00:11:31,889 --> 00:11:36,669
+If you're flying along like this, how does this motion, how is it going to be stable?
+
+211
+00:11:36,669 --> 00:11:38,789
+So now, let's look at that result.
+
+212
+00:11:38,789 --> 00:11:42,719
+When you linearize, these things always look at spring mass damper systems, right?
+
+213
+00:11:42,719 --> 00:11:46,460
+And there's no damping in this system, it's gravity, it's a conservative force.
+
+214
+00:11:46,460 --> 00:11:50,330
+It's like, it just adding a springiness to the system, that's all you get out of it.
+
+215
+00:11:50,330 --> 00:11:54,029
+So, there is never asymptotic convergence with gravity gradient stabilization,
+
+216
+00:11:54,029 --> 00:11:56,909
+it's just a marginal stability like a spring and a mass.
+
+217
+00:11:56,909 --> 00:12:00,934
+And if it's deflected, it's going to oscillate but it shouldn't get bigger or smaller,
+
+218
+00:12:00,934 --> 00:12:03,625
+at least not within the linear stuff that you're doing.
+
+219
+00:12:03,625 --> 00:12:06,644
+So, this is our stiffness that we have to look at,
+
+220
+00:12:06,644 --> 00:12:10,320
+and to make this pitch motion stable, we need this to be positive.
+
+221
+00:12:10,320 --> 00:12:14,365
+Three is positive, a real number squared guaranteed positive.
+
+222
+00:12:14,365 --> 00:12:18,995
+I2, principle inertias, they're all positive - you never have negative principle inertias.
+
+223
+00:12:18,995 --> 00:12:21,220
+I haven't seen anybody build such a structure.
+
+224
+00:12:21,220 --> 00:12:28,644
+So, the only way to make this positive negative is through the relative size of I1 and I3.
+
+225
+00:12:28,644 --> 00:12:35,269
+So, the way this is written I1 actually has to be bigger than I3
+
+226
+00:12:35,269 --> 00:12:39,580
+for the pitch motion to be stable.
+
+227
+00:12:39,580 --> 00:12:41,284
+Now, again, what I1 and 3 mean?
+
+228
+00:12:41,284 --> 00:12:45,115
+These are the principle inertias we've linearized about the O frame.
+
+229
+00:12:45,115 --> 00:12:51,615
+So I1 is the inertia of the craft nominally aligned with the 01 axis,
+
+230
+00:12:51,615 --> 00:12:58,429
+and the I3 is the inertia of the craft nominally about the 03 axis to orbit radial axis.
+
+231
+00:12:58,429 --> 00:13:00,740
+So, if you look at the spacecraft, pretty distinct inertias,
+
+232
+00:13:00,740 --> 00:13:06,399
+this would be gravity gradient stable for pitch motion.
+
+233
+00:13:06,399 --> 00:13:13,980
+I'm flying this way, so the inertia about this axis, this inertia is I1.
+
+234
+00:13:13,980 --> 00:13:18,575
+It's definitely much bigger than the inertia about the gravity axis three, right?
+
+235
+00:13:18,575 --> 00:13:22,434
+This is much skinnier than this, and that would be stable.
+
+236
+00:13:22,434 --> 00:13:25,549
+So, the pitch motions actually would be stable.
+
+237
+00:13:25,549 --> 00:13:27,875
+If you reverse that, well, now all of the sudden,
+
+238
+00:13:27,875 --> 00:13:30,664
+you have a negative stiffness, and that's how it appears mathematically.
+
+239
+00:13:30,664 --> 00:13:31,804
+This would deviate.
+
+240
+00:13:31,804 --> 00:13:34,125
+But there's other ways you can do this as well.
+
+241
+00:13:34,125 --> 00:13:36,164
+There's other shapes.
+
+242
+00:13:36,164 --> 00:13:40,340
+I1 had to be bigger so you could fly.
+
+243
+00:13:40,340 --> 00:13:43,980
+Then this, so this way you could fly it as well.
+
+244
+00:13:43,980 --> 00:13:45,990
+And let's see.
+
+245
+00:13:45,990 --> 00:13:49,475
+No, that wouldn't work, I3 is now this.
+
+246
+00:13:49,475 --> 00:13:52,882
+This is I2, if I do it.
+
+247
+00:13:52,882 --> 00:13:53,490
+How do I have to do this then?
+
+248
+00:13:53,490 --> 00:14:01,440
+So, if I want this to be larger, I fly it there, and this to not to be the skinniest one
+
+249
+00:14:01,440 --> 00:14:04,575
+- but I could fly, I could fly this way basically.
+
+250
+00:14:04,575 --> 00:14:08,639
+And then the pitch motion, which kind of makes geometric sense, this would also be stable,
+
+251
+00:14:08,639 --> 00:14:09,370
+right?
+
+252
+00:14:09,370 --> 00:14:10,039
+So, it's different.
+
+253
+00:14:10,039 --> 00:14:11,094
+That's what comes out of it.
+
+254
+00:14:11,094 --> 00:14:12,720
+If you want to pitch motion to be stable,
+
+255
+00:14:12,720 --> 00:14:16,809
+you have to line up your spacecraft such that O1 axis inertia
+
+256
+00:14:16,809 --> 00:14:19,284
+is bigger than the 03 axis inertia.
+
+257
+00:14:19,284 --> 00:14:22,740
+Now, that just stabilizes one of the angles.
+
+258
+00:14:22,740 --> 00:14:27,924
+It doesn't guarantee that yaw and roll are going to be stable, in this case.
+
+259
+00:14:27,924 --> 00:14:31,029
+So we have to look at the other two differential equations.
+
+260
+00:14:31,029 --> 00:14:34,603
+Now, the fate of one actually- let me look at that one again -
+
+261
+00:14:34,603 --> 00:14:41,970
+here, there were some faded dots that appeared but then multiply times here and here,
+
+262
+00:14:41,970 --> 00:14:43,169
+they're all small.
+
+263
+00:14:43,169 --> 00:14:47,169
+The only one that's first order is going to be this product.
+
+264
+00:14:47,169 --> 00:14:50,059
+And the same thing down here, there's a [inaudible] times this.
+
+265
+00:14:50,059 --> 00:14:52,580
+Everything else is going to be dropping out a second order.
+
+266
+00:14:52,580 --> 00:14:57,299
+So, the theta dots drop out of the roll and pitch at the roll and yaw equations,
+
+267
+00:14:57,299 --> 00:15:00,965
+and the pitch are perfectly decoupled from the other two.
+
+268
+00:15:00,965 --> 00:15:03,399
+So, pitch this is what we need.
+
+269
+00:15:03,399 --> 00:15:07,740
+Now we're focusing on roll and yaw motion, which to first order decouple.
+
+270
+00:15:07,740 --> 00:15:11,820
+This form of writing it, takes a little bit of algebra - quickly a few steps.
+
+271
+00:15:11,820 --> 00:15:14,129
+This is just a classic form you find in a lot of textbooks
+
+272
+00:15:14,129 --> 00:15:16,355
+and papers that deal with this topic.
+
+273
+00:15:16,355 --> 00:15:19,799
+People come up with these KR and Ky ratios which are differences,
+
+274
+00:15:19,799 --> 00:15:24,975
+inertia, two minus the other, two minus the other, divided by the third basically.
+
+275
+00:15:24,975 --> 00:15:25,970
+That's what they've done.
+
+276
+00:15:25,970 --> 00:15:28,315
+And there's probably historical reasons for that.
+
+277
+00:15:28,315 --> 00:15:30,009
+But this is how they rewrite it.
+
+278
+00:15:30,009 --> 00:15:34,884
+So, now we ended up with second order coupled differential equations.
+
+279
+00:15:34,884 --> 00:15:37,740
+And we have to look at the stability of this.
+
+280
+00:15:37,740 --> 00:15:41,840
+The way you do this in linear controls, a linear analysis, dynamic analysis class.
+
+281
+00:15:41,840 --> 00:15:43,930
+We look at the characteristic equation, right?
+
+282
+00:15:43,930 --> 00:15:48,600
+You write this stuff up into first order form, get the determinant of the,
+
+283
+00:15:48,600 --> 00:15:52,004
+you know, one minus, that matrix sends s, get the determinant.
+
+284
+00:15:52,004 --> 00:15:55,830
+This in the first order form - because the second or differential equation
+
+285
+00:15:55,830 --> 00:15:58,419
+- would give me a four dimensional state.
+
+286
+00:15:58,419 --> 00:16:01,930
+Roll, pitch, sorry, yaw, roll, yaw-rate, roll-rate.
+
+287
+00:16:01,930 --> 00:16:06,134
+So, you end up with a fourth order polynomial.
+
+288
+00:16:06,134 --> 00:16:10,585
+What has to be true of the roots of this characteristic equation?
+
+289
+00:16:10,585 --> 00:16:14,289
+Well, they can't have any positive real parts.
+
+290
+00:16:14,289 --> 00:16:17,254
+These roots can be real, they can be imaginary, that's fine too.
+
+291
+00:16:17,254 --> 00:16:19,590
+Imaginary tipping implies oscillatory motions,
+
+292
+00:16:19,590 --> 00:16:25,995
+real roots implies asymptotic convergence or divergence depending on where they are.
+
+293
+00:16:25,995 --> 00:16:28,924
+And we just need real parts of it, right?
+
+294
+00:16:28,924 --> 00:16:31,409
+So, all four roots we have to make sure they're either on,
+
+295
+00:16:31,409 --> 00:16:34,980
+basically, not on the positive plain but on the negative,
+
+296
+00:16:34,980 --> 00:16:39,534
+or the imaginary axis, to guarantee some form of stability.
+
+297
+00:16:39,534 --> 00:16:41,125
+Now there's different criteria.
+
+298
+00:16:41,125 --> 00:16:42,659
+Some of you have taken classes on this,
+
+299
+00:16:42,659 --> 00:16:45,315
+you might have recognized this Routh Hurwitz criteria
+
+300
+00:16:45,315 --> 00:16:47,324
+that you can use, and I'll apply that here in a moment.
+
+301
+00:16:47,324 --> 00:16:49,394
+I'm not going into the details, it's really not important.
+
+302
+00:16:49,394 --> 00:16:52,139
+If you haven't seen this, there's whole courses you can take on this.
+
+303
+00:16:52,139 --> 00:16:54,809
+This is more about the results for the level of this class,
+
+304
+00:16:54,809 --> 00:16:57,464
+you are not hand-deriving these conditions.
+
+305
+00:16:57,464 --> 00:17:00,730
+But, in essence, we've got a quartic term,
+
+306
+00:17:00,730 --> 00:17:04,744
+we've got a quadratic term and then a zeroth order term.
+
+307
+00:17:04,744 --> 00:17:06,890
+And that's something we can take heavy advantage of.
+
+308
+00:17:06,890 --> 00:17:08,849
+It's easier to get roots because you could read,
+
+309
+00:17:08,849 --> 00:17:12,134
+instead of solving for Lambda, you basically solved it for Lambda squared,
+
+310
+00:17:12,134 --> 00:17:14,079
+which is the quadratic form.
+
+311
+00:17:14,079 --> 00:17:17,220
+And then the square root of that gives you the actual roots.
+
+312
+00:17:17,220 --> 00:17:19,259
+That's how you find all four possible routes cause
+
+313
+00:17:19,259 --> 00:17:21,805
+it's always plus minuses and how does that work.
+
+314
+00:17:21,805 --> 00:17:24,000
+So, that's what we're going to use.
+
+315
+00:17:24,000 --> 00:17:29,759
+Now, skipping a bunch of derivations, this is what you find on these kinds of topics.
+
+316
+00:17:29,759 --> 00:17:31,615
+These are the conditions in terms of those betas.
+
+317
+00:17:31,615 --> 00:17:33,329
+This is how those terms are defined,
+
+318
+00:17:33,329 --> 00:17:36,744
+and this is the inertia ratios, how you have to highlight this.
+
+319
+00:17:36,744 --> 00:17:40,274
+This is what would guarantee that all the roots are not positive.
+
+320
+00:17:40,274 --> 00:17:46,249
+In the KR-KY space, which has these ratios, how do you size stuff?
+
+321
+00:17:46,249 --> 00:17:49,420
+That's the equivalent kind of condition.
+
+322
+00:17:49,420 --> 00:17:51,285
+This one I added.
+
+323
+00:17:51,285 --> 00:17:53,180
+This came from the pitch conditions,
+
+324
+00:17:53,180 --> 00:17:58,464
+and the pitch conditions written in KR-KY just mean KY has to be bigger than KR.
+
+325
+00:17:58,464 --> 00:17:59,670
+So, if you think of that condition,
+
+326
+00:17:59,670 --> 00:18:03,299
+it gives you one half of the whole KR-KY space
+
+327
+00:18:03,299 --> 00:18:06,154
+that drops out because you have to be on the plus side.
+
+328
+00:18:06,154 --> 00:18:11,089
+This one, too, actually, KR, X times Y has to be positive.
+
+329
+00:18:11,089 --> 00:18:16,349
+Well, that means that your X and Y are either positive or X and Y are both negative.
+
+330
+00:18:16,349 --> 00:18:16,839
+Right?
+
+331
+00:18:16,839 --> 00:18:18,720
+Then the product is going to be positive.
+
+332
+00:18:18,720 --> 00:18:21,869
+So that means your answers have to be either in the quadrant.
+
+333
+00:18:21,869 --> 00:18:25,364
+So if you're looking at it- Now, we'll see the quatrains in a moment.
+
+334
+00:18:25,364 --> 00:18:27,974
+But that restricts it to two quadrants.
+
+335
+00:18:27,974 --> 00:18:32,819
+Just instead of using X, KR-KY written in terms of inertia,
+
+336
+00:18:32,819 --> 00:18:34,500
+looking at how they are defined.
+
+337
+00:18:34,500 --> 00:18:40,184
+This really boils down to this second inertia has to either be the largest -
+
+338
+00:18:40,184 --> 00:18:44,315
+so that's the inertia about the 02, that's the inertia about the orbit normal axis,
+
+339
+00:18:44,315 --> 00:18:50,950
+it's all equivalent - it has to either be the largest inertia or the least inertia.
+
+340
+00:18:50,950 --> 00:18:55,279
+And these four conditions you're seeing here.
+
+341
+00:18:55,279 --> 00:18:56,819
+If we plug those visually,
+
+342
+00:18:56,819 --> 00:19:00,900
+and you can get discovered Matlab, mathematica, and plot these things out.
+
+343
+00:19:00,900 --> 00:19:03,200
+This is what you end up with.
+
+344
+00:19:03,200 --> 00:19:07,700
+So, we have these conditions that we had to be, one had to be bigger than the other.
+
+345
+00:19:07,700 --> 00:19:11,954
+The product had to be positive which put this in this quadrant or this quadrant.
+
+346
+00:19:11,954 --> 00:19:15,680
+And the other ones that inequality gave us this region that were stable,
+
+347
+00:19:15,680 --> 00:19:17,210
+or this slither here.
+
+348
+00:19:17,210 --> 00:19:20,930
+The slither is because of this other constraint that we had from this equation,
+
+349
+00:19:20,930 --> 00:19:22,789
+which gets a little bit more complicated to visualize,
+
+350
+00:19:22,789 --> 00:19:24,660
+but that's what happens mathematically.
+
+351
+00:19:24,660 --> 00:19:28,430
+This is what guarantees that we have stability.
+
+352
+00:19:28,430 --> 00:19:30,115
+So, what does this mean?
+
+353
+00:19:30,115 --> 00:19:34,049
+This means, in these regions, if I have my -
+
+354
+00:19:34,049 --> 00:19:38,100
+and this one has basically, it boils down to I2 so the largest inertia
+
+355
+00:19:38,100 --> 00:19:40,994
+- in this region here, just little white region,
+
+356
+00:19:40,994 --> 00:19:43,954
+you have a condition where I2 is the least inertia.
+
+357
+00:19:43,954 --> 00:19:49,744
+In both of them, if I have small departures, not just in pitch but in yaw,
+
+358
+00:19:49,744 --> 00:19:56,630
+or in roll as well, that these motions would stay stable.
+
+359
+00:19:56,630 --> 00:19:59,250
+It won't just start to tumble about other axes
+
+360
+00:19:59,250 --> 00:20:03,119
+cause you could be stable this way but then unstable about this axis,
+
+361
+00:20:03,119 --> 00:20:04,499
+and that wouldn't be good for the space station;
+
+362
+00:20:04,499 --> 00:20:07,040
+they don't like to flip upside down, right?
+
+363
+00:20:07,040 --> 00:20:10,049
+So, those are the two possible regions.
+
+364
+00:20:10,049 --> 00:20:13,234
+We typically fly this kind of a scenario.
+
+365
+00:20:13,234 --> 00:20:16,795
+That means I2 is the largest inertia.
+
+366
+00:20:16,795 --> 00:20:19,589
+I'm sure many of you have seen the images of the space shuttle,
+
+367
+00:20:19,589 --> 00:20:23,609
+it's flying, its happy, its nose is typically pointing up.
+
+368
+00:20:23,609 --> 00:20:26,869
+For the space shuttle the nose is actually the axis of least inertia.
+
+369
+00:20:26,869 --> 00:20:28,864
+So, it's kind of like the skinny side, right?
+
+370
+00:20:28,864 --> 00:20:30,494
+With the wings going out,
+
+371
+00:20:30,494 --> 00:20:34,095
+and everything, that's the axis of maximum inertia like this flat plate.
+
+372
+00:20:34,095 --> 00:20:37,008
+And then the axis along from wingtip to wingtip.
+
+373
+00:20:37,008 --> 00:20:40,305
+If you look at a side profile, it's more than looking at the nose,
+
+374
+00:20:40,305 --> 00:20:42,000
+but it's not as much as looking at the broad side.
+
+375
+00:20:42,000 --> 00:20:46,025
+So that's the axis of the two axes, it's the axis of intermediate inertia.
+
+376
+00:20:46,025 --> 00:20:50,505
+What this says is, you have to pick your maximum inertia,
+
+377
+00:20:50,505 --> 00:20:53,819
+which is basically looking straight out from the cargo bay from the shuttle, you know.
+
+378
+00:20:53,819 --> 00:20:56,694
+Wings are sticking out, noses up.
+
+379
+00:20:56,694 --> 00:21:00,290
+You want that to line up with your orbit normal.
+
+380
+00:21:00,290 --> 00:21:04,140
+So if you're flying along this way - this is my local gravity direction -
+
+381
+00:21:04,140 --> 00:21:07,724
+my axis of flight direction, and then my normal axis is this way.
+
+382
+00:21:07,724 --> 00:21:11,009
+I have to line up my cargo bay with the orbit normal, essentially.
+
+383
+00:21:11,009 --> 00:21:12,900
+That's what I have to do.
+
+384
+00:21:12,900 --> 00:21:17,849
+Then I still need, I want bigger than I3, so the inertia about my long track axis,
+
+385
+00:21:17,849 --> 00:21:23,579
+which is this axis, has to be bigger than the inertia about my orbit radius axis,
+
+386
+00:21:23,579 --> 00:21:25,130
+which is my local vertical.
+
+387
+00:21:25,130 --> 00:21:28,134
+That's why the space shuttle tends to fly this sidestepping motion.
+
+388
+00:21:28,134 --> 00:21:29,130
+Well, it used to fly.
+
+389
+00:21:29,130 --> 00:21:32,439
+That was its gravity gradient stabilized orientation.
+
+390
+00:21:32,439 --> 00:21:36,690
+It didn't take any fuel, any thrust, little astronauts wake up bump the wall.
+
+391
+00:21:36,690 --> 00:21:40,359
+That was enough to just kind of stay close, and it didn't go crazy, you know.
+
+392
+00:21:40,359 --> 00:21:43,055
+But that's where these inertia ratios come from.
+
+393
+00:21:43,055 --> 00:21:47,890
+If you're going to fly one here, it's trickier.
+
+394
+00:21:47,890 --> 00:21:50,100
+This is a first order analysis.
+
+395
+00:21:50,100 --> 00:21:52,525
+Higher order terms are ignored.
+
+396
+00:21:52,525 --> 00:21:56,250
+In particular flexing has been ignored.
+
+397
+00:21:56,250 --> 00:21:58,605
+So, if we have it's not rigid but things could move,
+
+398
+00:21:58,605 --> 00:22:04,315
+this quickly can become unstable as well, which you have to be really careful, ok?
+
+399
+00:22:04,315 --> 00:22:08,279
+So, historically, People like this one but, again, first order analysis is nice.
+
+400
+00:22:08,279 --> 00:22:11,919
+Life isn't first order, life isn't linear, it's non-linear and messy,
+
+401
+00:22:11,919 --> 00:22:16,005
+and these higher order terms might have, actually, a strong impact,
+
+402
+00:22:16,005 --> 00:22:20,005
+especially the flexing part, you know, the small attitude.
+
+403
+00:22:20,005 --> 00:22:23,109
+If it were rigid, this is all rigorous and right.
+
+404
+00:22:23,109 --> 00:22:26,234
+But if you have flexing happening all of a sudden with the motions,
+
+405
+00:22:26,234 --> 00:22:29,355
+does that give you gyroscopic stack and, you know,
+
+406
+00:22:29,355 --> 00:22:32,279
+the stability you have is this big and the gyroscopic is this big,
+
+407
+00:22:32,279 --> 00:22:36,599
+the gyroscopic is going to overrule and take you all over the place.

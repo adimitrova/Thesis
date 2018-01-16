@@ -1,0 +1,455 @@
+1
+00:00:00,000 --> 00:00:09,794
+[MUSIC]
+
+2
+00:00:09,794 --> 00:00:13,017
+In this sixth module,
+we are discussing weak interactions.
+
+3
+00:00:13,017 --> 00:00:16,939
+And in this nineth video, we talk about
+neutrinos which are the only particles
+
+4
+00:00:16,939 --> 00:00:19,550
+that interact exclusively
+by weak interactions.
+
+5
+00:00:20,550 --> 00:00:24,140
+After following this video, you will know
+the basic properties of neutrinos and
+
+6
+00:00:24,140 --> 00:00:26,535
+their fabulously small
+cross-section with mater.
+
+7
+00:00:30,067 --> 00:00:33,938
+The processes involving neutrinos are only
+due to weak interactions because neutrinos
+
+8
+00:00:33,938 --> 00:00:37,020
+carry neither electric nor
+color charge.
+
+9
+00:00:37,020 --> 00:00:40,790
+The process through which weak neutral
+interactions have been discovered
+
+10
+00:00:40,790 --> 00:00:45,090
+is the elastic scattering
+of neutrinos off electrons,
+
+11
+00:00:45,090 --> 00:00:47,370
+namely nu_µ e- -> nu_µ e-. 
+
+12
+00:00:48,750 --> 00:00:51,730
+This picture taken with
+a Gargamelle bubble chamber at CERN
+
+13
+00:00:51,730 --> 00:00:55,210
+the 1973 documents the first
+observation of this reaction type.
+
+14
+00:00:55,210 --> 00:00:58,730
+It is in fact the very first observation
+of a weak neutrino current event.
+
+15
+00:01:00,620 --> 00:01:02,380
+The neutrino enters from the left and
+
+16
+00:01:02,380 --> 00:01:05,450
+interacts with an atomic
+electron of the liquid.
+
+17
+00:01:06,700 --> 00:01:10,170
+A single visible track leaves
+from the interaction vertex.
+
+18
+00:01:11,350 --> 00:01:15,130
+It is due to a minimum ionizing particle
+as shown by the low bubble density.
+
+19
+00:01:16,320 --> 00:01:19,190
+The particle also causes bremsstrahlung.
+
+20
+00:01:19,190 --> 00:01:21,280
+It is therefore clearly an electron.
+
+21
+00:01:21,280 --> 00:01:26,380
+The bremsstrahlung photon is then
+converted into an e+ e- pair.
+
+22
+00:01:26,380 --> 00:01:28,637
+Since the observation of this reaction,
+
+23
+00:01:28,637 --> 00:01:32,762
+the neutrino has become a precious tool
+for the study of weak interactions,
+
+24
+00:01:32,762 --> 00:01:35,936
+particularly the interactions of the Z and
+W with matter.
+
+25
+00:01:37,947 --> 00:01:40,572
+For energies much lower
+than the Z boson mass,
+
+26
+00:01:40,572 --> 00:01:45,840
+the cross-section depends on the coupling
+constants g_V and g_A of the electron.
+
+27
+00:01:45,840 --> 00:01:49,930
+Those of the neutrino we
+have fixed to one-half.
+
+28
+00:01:49,930 --> 00:01:55,497
+These coupling constants have already
+been discussed and defined in video 6.6.
+
+29
+00:01:55,497 --> 00:01:59,110
+The cross-section is valid for
+neutrinos of the second and
+
+30
+00:01:59,110 --> 00:02:03,000
+of the third generation,
+that is to say nu_µ and nu_tau.
+
+31
+00:02:03,000 --> 00:02:07,219
+For the anti-neutrino, the cross-section
+is indicated by the lower equation.
+
+32
+00:02:08,390 --> 00:02:12,520
+It differs from the neutrino cross-section
+in the sign of the interference term
+
+33
+00:02:12,520 --> 00:02:14,670
+between the vector and
+axialvector contributions.
+
+34
+00:02:16,010 --> 00:02:19,360
+Neutrino electron cross-sections
+are extremely small.
+
+35
+00:02:19,360 --> 00:02:22,510
+The proportionality to
+E_nu comes from
+
+36
+00:02:22,510 --> 00:02:27,740
+the total energy available in the initial
+state s, which is (p+k)^2,
+
+37
+00:02:27,740 --> 00:02:30,980
+or in the approximation
+of zero neutrino mass,
+
+38
+00:02:30,980 --> 00:02:34,170
+it is two times energy of the neutrino
+times the mass of the electron.
+
+39
+00:02:35,770 --> 00:02:39,720
+This proportionality is regularized
+at high energy by the Z propagator
+
+40
+00:02:39,720 --> 00:02:41,270
+hidden in the Fermi constant, G_F.
+
+41
+00:02:42,690 --> 00:02:45,813
+At 1 GeV, the cross-sections are 
+of order attobarn.
+
+42
+00:02:45,813 --> 00:02:47,890
+The rates are thus desperately low.
+
+43
+00:02:49,536 --> 00:02:53,944
+Obviously, the neutrino can also
+interact with quarks through
+
+44
+00:02:53,944 --> 00:02:55,855
+the exchange of a Z boson.
+
+45
+00:02:55,855 --> 00:02:58,895
+This image was taken with the same
+Gargamelle bubble chamber
+
+46
+00:02:58,895 --> 00:03:00,325
+in the CERN neutrino beam.
+
+47
+00:03:00,325 --> 00:03:02,585
+Here we show the original
+negative picture.
+
+48
+00:03:03,635 --> 00:03:05,905
+The neutrino again
+enters from the left and
+
+49
+00:03:05,905 --> 00:03:09,110
+interacts this time with
+a proton of the liquid.
+
+50
+00:03:09,110 --> 00:03:11,680
+There are three hadrons
+coming out of the vertex,
+
+51
+00:03:11,680 --> 00:03:13,100
+two positively charged and
+
+52
+00:03:13,100 --> 00:03:17,140
+one negative, as shown by the curvature
+of the tracks in the magnetic field.
+
+53
+00:03:17,140 --> 00:03:20,960
+The proton in the middle interacts
+with a nucleus of the liquid,
+
+54
+00:03:20,960 --> 00:03:26,680
+both pions are slowed down
+by dE/dx and absorbed.
+
+55
+00:03:26,680 --> 00:03:28,860
+The neutrino escapes
+without leaving a track.
+
+56
+00:03:31,010 --> 00:03:35,989
+Neutrinos also interact via W exchange
+in charged weak interactions, like
+
+57
+00:03:35,989 --> 00:03:37,200
+in this example.
+
+58
+00:03:38,480 --> 00:03:41,100
+The neutrino once again
+enters from the left and
+
+59
+00:03:41,100 --> 00:03:43,570
+interacts this time with a neutron.
+
+60
+00:03:43,570 --> 00:03:47,010
+A µ- leaves the chamber
+with minimal ionization.
+
+61
+00:03:48,120 --> 00:03:51,450
+A highly ionizing proton
+is visible at the vertex.
+
+62
+00:03:53,460 --> 00:03:56,820
+A π0 decays into two photons
+which in turn are converted
+
+63
+00:03:56,820 --> 00:03:57,960
+into e+ e- pairs.
+
+64
+00:03:59,520 --> 00:04:04,120
+The two charged pions interact with
+the liquid by the strong force and
+
+65
+00:04:04,120 --> 00:04:05,250
+produce other hadrons.
+
+66
+00:04:06,830 --> 00:04:10,070
+You see by these examples that bubble
+chamber images contain a lot of
+
+67
+00:04:10,070 --> 00:04:12,500
+information and are very graphical.
+
+68
+00:04:12,500 --> 00:04:17,681
+They are easily interpreted to
+identify the reaction and the final state.
+
+69
+00:04:17,681 --> 00:04:22,091
+In fact, photos of this type which
+awakened my fascination with
+
+70
+00:04:22,091 --> 00:04:24,570
+particle physics in the 1970s.
+
+71
+00:04:24,570 --> 00:04:28,500
+But this analog technology is
+of course no longer used today.
+
+72
+00:04:31,511 --> 00:04:34,102
+We had seen that for
+neutrino-electron interactions,
+
+73
+00:04:34,102 --> 00:04:37,770
+the cross-section is proportional
+to the neutrino energy.
+
+74
+00:04:37,770 --> 00:04:42,780
+This is true in general to both for purely
+leptonic and for interactions between
+
+75
+00:04:42,780 --> 00:04:47,530
+neutrinos and quarks. And for charged, as
+well as for neutral current interactions.
+
+76
+00:04:48,620 --> 00:04:52,350
+Here you see the compilation of
+the particle data group of neutrino and
+
+77
+00:04:52,350 --> 00:04:54,780
+antineutrino charged
+current cross-sections,
+
+78
+00:04:54,780 --> 00:04:58,680
+divided by the neutrino energy to
+better appreciate the proportionality.
+
+79
+00:05:00,805 --> 00:05:04,995
+You may wonder if at some point,
+a cross-section
+
+80
+00:05:04,995 --> 00:05:08,275
+that increases with energy will
+not violate the unitarity limit.
+
+81
+00:05:09,285 --> 00:05:13,355
+Indeed, the neutrino cross-sections are
+regularized by the propagator of the W and
+
+82
+00:05:13,355 --> 00:05:15,475
+Z boson and very high q^2.
+
+83
+00:05:17,210 --> 00:05:21,920
+But to see this effect of the propagator,
+we need fabulously high energies beyond 
+
+84
+00:05:21,920 --> 00:05:26,290
+10^15 eV in the laboratory
+frame, that is to say 1,000 TeV.
+
+85
+00:05:27,340 --> 00:05:31,590
+This graph shows a calculation of
+the cross-section at very high energy.
+
+86
+00:05:31,590 --> 00:05:33,450
+The Z resonance is clearly visible for
+
+87
+00:05:33,450 --> 00:05:36,860
+reactions which involve an
+s-channel Z exchange.
+
+88
+00:05:36,860 --> 00:05:40,810
+Beyond the resonance, the propagator
+regularizes the cross sections such that it
+
+89
+00:05:40,810 --> 00:05:42,500
+will eventually tend to 0 as it should.
+
+90
+00:05:43,880 --> 00:05:48,290
+For reactions involving W
+exchange in the t-channel,
+
+91
+00:05:48,290 --> 00:05:51,270
+regularization takes much higher energy,
+
+92
+00:05:51,270 --> 00:05:53,900
+since only a small fraction
+of the neutrino energy
+
+93
+00:05:53,900 --> 00:05:55,520
+is transmitted to the target.
+
+94
+00:05:58,140 --> 00:05:59,182
+In the next video,
+
+95
+00:05:59,182 --> 00:06:02,974
+we will discuss oscillations
+between different neutrino species.
+
+96
+00:06:02,974 --> 00:06:07,647
+[MUSIC]

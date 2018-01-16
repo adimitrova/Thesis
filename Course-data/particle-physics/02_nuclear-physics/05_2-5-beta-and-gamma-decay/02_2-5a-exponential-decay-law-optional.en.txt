@@ -1,0 +1,18 @@
+[MUSIC] In this second module, we deal with
+nuclear physics and its applications and we're discussing radioactivity. In this video, we calculate how many
+decays per second can be observed from an initial sample of nuclei,
+that is to say, we discuss the decay law. Radioactive decay is
+a statistical process. Every nucleus has the same
+probability lambda to decay in a given interval of time. This means that a constant percentage
+of the nuclear existing at the time t, N(t), will decay in
+an infinitesimal elapsed time, dt. The number of remaining nuclei then
+diminishes in an exponential manner. The inverse of the decay
+probability lambda is what is called the lifetime tau = 1/lambda
+of the nucleus. When one lifetime has passed, a fraction
+e of the initial sample will remain. One also defines the half life,T_1/2, which is the time interval leaving
+half of the initial sample. And the activity of a sample,
+which is a number of decays per second. It obviously depends on
+the decay constant, and the sample size which
+diminishes exponentially. The natural activity of Ra-226 is used as the unit of radioactivity and
+it's called the Curie. A more practical unit is the Becquerel
+which corresponds to one decay per second. [MUSIC]

@@ -1,0 +1,458 @@
+1
+00:00:08,090 --> 00:00:16,029
+To start with, I was wondering if you
+could give me an overview of your project.
+
+2
+00:00:17,080 --> 00:00:21,530
+And sort of the aims of the project,
+just in a couple sentences.
+
+3
+00:00:21,530 --> 00:00:24,750
+>> Yeah, sure.
+So the Comparative Agendas Project, or
+
+4
+00:00:24,750 --> 00:00:28,820
+CAP for short,
+is actually a bit of a misnomer.
+
+5
+00:00:28,820 --> 00:00:32,820
+In reality,
+the CAP is a network of more than
+
+6
+00:00:32,820 --> 00:00:37,060
+two dozen international projects on
+the national and sub-national level.
+
+7
+00:00:38,070 --> 00:00:42,080
+All interested in measuring policy
+attention through public and
+
+8
+00:00:42,080 --> 00:00:43,590
+governmental agendas.
+
+9
+00:00:43,590 --> 00:00:48,400
+>> Can you briefly describe
+how you organize your data,
+
+10
+00:00:48,400 --> 00:00:52,920
+in relation to perhaps
+file naming conventions,
+
+11
+00:00:52,920 --> 00:00:58,918
+versioning Documentation,
+which obviously features quite heavily.
+
+12
+00:00:58,918 --> 00:01:00,380
+Metadata, etc.
+
+13
+00:01:00,380 --> 00:01:03,980
+>> In terms of the overall project, in
+terms of bringing everything together and
+
+14
+00:01:03,980 --> 00:01:08,650
+actually making it comparative,
+documentation plays a very important role.
+
+15
+00:01:08,650 --> 00:01:11,580
+These include the sort of master
+code book that I talked about.
+
+16
+00:01:11,580 --> 00:01:16,160
+Sort of documents all the of
+the inter-relations between the projects.
+
+17
+00:01:16,160 --> 00:01:20,730
+As in, if these are the things that
+are included in health care in Mexico,
+
+18
+00:01:20,730 --> 00:01:21,720
+for instance.
+
+19
+00:01:21,720 --> 00:01:24,450
+What are the things that are included
+in health care in Denmark,
+
+20
+00:01:24,450 --> 00:01:28,820
+in terms of that there are some things,
+in terms of that's the broad policy area.
+
+21
+00:01:28,820 --> 00:01:31,860
+But there are some issue that might
+only be covered in one country,
+
+22
+00:01:31,860 --> 00:01:34,587
+some issues that might only be
+covered in another country.
+
+23
+00:01:34,587 --> 00:01:39,453
+Also includes the complete documentation
+which I have already mentioned in
+
+24
+00:01:39,453 --> 00:01:44,243
+terms of the adnotated code books for
+each individual langauge that allows
+
+25
+00:01:44,243 --> 00:01:48,424
+different language users not only
+to trace the entire process but
+
+26
+00:01:48,424 --> 00:01:53,215
+they understand the data regardless
+of what language they are approaching
+
+27
+00:01:53,215 --> 00:01:57,548
+things from and the sort of other
+just broad documents talking about
+
+28
+00:01:57,548 --> 00:02:01,530
+the process of creating
+the master code book itself.
+
+29
+00:02:01,530 --> 00:02:02,920
+And also, the process for
+
+30
+00:02:02,920 --> 00:02:06,290
+any new projects that might be interested
+in joining the community as we're very
+
+31
+00:02:06,290 --> 00:02:11,600
+sort of open community interested in other
+researchers that are looking to sort of
+
+32
+00:02:11,600 --> 00:02:13,930
+expand what we're doing and
+whatever in a particular way.
+
+33
+00:02:15,290 --> 00:02:17,910
+Just as important as sort of
+those documentation materials is
+
+34
+00:02:17,910 --> 00:02:19,250
+detailed metadata.
+
+35
+00:02:19,250 --> 00:02:23,820
+For so many data sets, so many different
+languages, it's very important to keep
+
+36
+00:02:23,820 --> 00:02:28,090
+track of what each individual data
+set measures in a particular way.
+
+37
+00:02:28,090 --> 00:02:31,720
+Oftentimes including more complete write
+up than you would traditionally think of
+
+38
+00:02:31,720 --> 00:02:32,790
+with metadata.
+
+39
+00:02:32,790 --> 00:02:36,480
+Explaining, say, what is a law in the UK?
+
+40
+00:02:36,480 --> 00:02:38,280
+What is a law in the United States?
+
+41
+00:02:38,280 --> 00:02:39,760
+What is a law in another country?
+
+42
+00:02:39,760 --> 00:02:47,740
+>> And one final question, I guess it's in
+relation to new researches coming onboard.
+
+43
+00:02:47,740 --> 00:02:51,820
+Do you have any advice in
+relation to organizing?
+
+44
+00:02:51,820 --> 00:02:56,763
+Documenting or storing data that
+will keep the new researcher on
+
+45
+00:02:56,763 --> 00:03:02,050
+track in relation tp managing that
+content for their own purpose.
+
+46
+00:03:02,050 --> 00:03:03,430
+>> Yeah, absolutely.
+
+47
+00:03:03,430 --> 00:03:07,900
+So as a researcher who, so I deal with
+
+48
+00:03:07,900 --> 00:03:11,610
+quite a lot of different types of data
+sets, quite a lot of different data sets.
+
+49
+00:03:11,610 --> 00:03:17,650
+In general with different data structures,
+partially because
+
+50
+00:03:17,650 --> 00:03:22,140
+the data structures relate to different
+tools, different methods that I might
+
+51
+00:03:22,140 --> 00:03:26,340
+use which means that while a data
+set might all be based off laws.
+
+52
+00:03:26,340 --> 00:03:30,350
+There might be many different data
+structures of laws that I will look at.
+
+53
+00:03:30,350 --> 00:03:34,080
+In relation to the particular
+statistical method that I used.
+
+54
+00:03:34,080 --> 00:03:38,450
+In that sort of sense, both because
+what you might want to do with data and
+
+55
+00:03:38,450 --> 00:03:43,240
+the fact that oftentimes with large data
+sets, the type of large data sets that
+
+56
+00:03:43,240 --> 00:03:48,070
+a lot people are gathering now, you
+might envision a particular use for it.
+
+57
+00:03:48,070 --> 00:03:50,770
+That particular use might be for example,
+
+58
+00:03:50,770 --> 00:03:54,670
+you want to look at law
+production on a yearly level.
+
+59
+00:03:54,670 --> 00:03:58,290
+I cross many different countries,
+and you decide to
+
+60
+00:03:58,290 --> 00:04:02,210
+potentially just make a yearly data set,
+maybe throw away some sort of data,
+
+61
+00:04:02,210 --> 00:04:06,280
+because it just becomes excessive in terms
+of when that individual law might have
+
+62
+00:04:06,280 --> 00:04:08,870
+been actually put on the books
+in a particular way.
+
+63
+00:04:08,870 --> 00:04:13,240
+I would advise researchers away from
+doing that, and advise them to keep.
+
+64
+00:04:13,240 --> 00:04:16,140
+The sort of raw data,
+every bit of information that they did or
+
+65
+00:04:16,140 --> 00:04:19,560
+were able to gather whenever they're
+building their data set, keep that,
+
+66
+00:04:19,560 --> 00:04:21,930
+store that and be able to access that.
+
+67
+00:04:21,930 --> 00:04:24,650
+You never know whenever you might
+want to actually sort of change that
+
+68
+00:04:24,650 --> 00:04:27,650
+to a quarterly analysis or
+a monthly analysis.
+
+69
+00:04:27,650 --> 00:04:31,510
+Or you might want to look at there's a
+particular anomaly in some sort of way and
+
+70
+00:04:31,510 --> 00:04:33,560
+you need to investigate
+that in more detail.
+
+71
+00:04:33,560 --> 00:04:38,600
+So, I find it's generally best when you're
+working with data to work with the raw
+
+72
+00:04:38,600 --> 00:04:43,220
+dataset and to transform that dataset into
+what you need for that particular project.
+
+73
+00:04:43,220 --> 00:04:45,570
+Oftentimes documenting some sort of way,
+
+74
+00:04:45,570 --> 00:04:49,940
+whether that'd be documenting by hand
+using sort of the documentation for
+
+75
+00:04:49,940 --> 00:04:53,180
+the statistical software that
+you're using to transform the data.
+
+76
+00:04:53,180 --> 00:04:57,285
+Such as R, MathLab or Stata or other sort
+of software in whatever particular way.
+
+77
+00:04:57,285 --> 00:05:00,860
+Using their log files, using their new
+files or other things to be able to
+
+78
+00:05:00,860 --> 00:05:05,770
+document everything that you did so they
+can easily go back and change things, but
+
+79
+00:05:05,770 --> 00:05:11,340
+also so that you can easily debug any
+sort of issues that you might have.
+
+80
+00:05:11,340 --> 00:05:15,470
+Especially in very large data sets you
+might not notice that there was something
+
+81
+00:05:15,470 --> 00:05:19,210
+wrong with a calculation or
+a transposition of the data.
+
+82
+00:05:19,210 --> 00:05:21,440
+>> Yeah.
+>> Without changing into a wide data set
+
+83
+00:05:21,440 --> 00:05:25,530
+format or a long data set format if you're
+working on panel data for instance.
+
+84
+00:05:25,530 --> 00:05:29,910
+So keep all that archived,
+keeping all that tracked so
+
+85
+00:05:29,910 --> 00:05:32,850
+that you can fix things
+whenever you see errors.
+
+86
+00:05:32,850 --> 00:05:37,710
+So, you can easily change your data set
+to answer knew or different questions.
+
+87
+00:05:37,710 --> 00:05:41,760
+It's very good for you and it's very good
+for the people who might be interested in
+
+88
+00:05:41,760 --> 00:05:46,100
+using your data for other purposes
+that you haven't envisioned and
+
+89
+00:05:46,100 --> 00:05:51,000
+while we all sort of want the outputs from
+our own data in whatever sort of way,
+
+90
+00:05:51,000 --> 00:05:52,940
+we want the research outputs and
+we want other things.
+
+91
+00:05:52,940 --> 00:05:53,990
+We want the impact.
+
+92
+00:05:53,990 --> 00:05:58,030
+Getting people to use the data is a very
+big part of that impact, very big part of
+
+93
+00:05:58,030 --> 00:06:01,725
+getting people to cite, to care about
+the work that you're doing as well.
+
+94
+00:06:01,725 --> 00:06:05,968
+>> [INAUDIBLE]
+Sean, many thanks.
+
+95
+00:06:05,968 --> 00:06:08,006
+>> Thank you.

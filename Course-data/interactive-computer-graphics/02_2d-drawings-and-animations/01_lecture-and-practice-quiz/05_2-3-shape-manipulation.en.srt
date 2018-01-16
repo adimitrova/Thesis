@@ -1,0 +1,960 @@
+1
+00:00:00,580 --> 00:00:02,610
+So next topic is shape manipulation.
+
+2
+00:00:03,660 --> 00:00:04,959
+And the method we introduce
+
+3
+00:00:04,959 --> 00:00:08,130
+here is called, As-Rigid-As-Possible Shape
+Manipulation.
+
+4
+00:00:08,130 --> 00:00:14,195
+The goal of this work is to move and
+deform 2D shapes
+
+5
+00:00:14,195 --> 00:00:19,930
+on the screen, as if manipulating real
+object.
+
+6
+00:00:19,930 --> 00:00:23,707
+So in the real world, you can pick up an
+object, with your
+
+7
+00:00:23,707 --> 00:00:26,384
+both hands, and you can manipulate it,
+
+8
+00:00:26,384 --> 00:00:30,280
+moving around, rotate, and pull, or
+squash.
+
+9
+00:00:30,280 --> 00:00:34,375
+And also you can, you know, shake his head
+or wave his hand and so on.
+
+10
+00:00:34,375 --> 00:00:38,750
+So you can do many things to interact with
+it, using your hands on the real world.
+
+11
+00:00:38,750 --> 00:00:40,580
+That's what we do, on a computer.
+
+12
+00:00:42,580 --> 00:00:44,372
+And there are a couple of previous works
+
+13
+00:00:44,372 --> 00:00:48,980
+shape, manipulation shape deformation, but
+they have couple problems.
+
+14
+00:00:48,980 --> 00:00:54,220
+The most popular approach is space walk,
+using a simple function you can can deform
+
+15
+00:00:54,220 --> 00:01:00,620
+the space, and then you can deform the
+images in, in embedded in the space.
+
+16
+00:01:00,620 --> 00:01:03,930
+So this is very efficient for compute.
+
+17
+00:01:03,930 --> 00:01:07,290
+However, the resulting deformation is like
+swapping
+
+18
+00:01:07,290 --> 00:01:11,100
+space and the result is not very
+realistic.
+
+19
+00:01:11,100 --> 00:01:13,390
+And the other possibility is use physics,
+
+20
+00:01:13,390 --> 00:01:16,730
+or simply meant mass spring water and
+others.
+
+21
+00:01:16,730 --> 00:01:21,310
+And this is a kind of simulation with real
+world, so can be very realistic.
+
+22
+00:01:21,310 --> 00:01:23,760
+While this is very slow to converge and
+can
+
+23
+00:01:23,760 --> 00:01:28,670
+be very unstable, and also cannot handle
+contradictory configuration.
+
+24
+00:01:28,670 --> 00:01:29,170
+So,
+
+25
+00:01:31,000 --> 00:01:32,240
+let me show you what we do.
+
+26
+00:01:36,240 --> 00:01:40,220
+So, again let me fast describe of the
+current state of the art.
+
+27
+00:01:40,220 --> 00:01:43,150
+So, this is typical drawing generator.
+
+28
+00:01:43,150 --> 00:01:44,730
+So you can, do the basic things.
+
+29
+00:01:44,730 --> 00:01:46,680
+You can, draw something
+
+30
+00:01:48,800 --> 00:01:50,470
+and then you can select an object.
+
+31
+00:01:51,710 --> 00:01:52,610
+And then move it around.
+
+32
+00:01:52,610 --> 00:01:54,030
+So, you can do it.
+
+33
+00:01:54,030 --> 00:01:57,670
+And you can rotate, and you can also scale
+them.
+
+34
+00:01:57,670 --> 00:02:03,180
+However, [UNKNOWN] if you want to, like,
+shake his head or swing
+
+35
+00:02:03,180 --> 00:02:05,410
+his arm, it's suddenly become very
+
+36
+00:02:05,410 --> 00:02:07,590
+difficult and you have to redraw
+everything,
+
+37
+00:02:10,040 --> 00:02:10,490
+basically.
+
+38
+00:02:10,490 --> 00:02:12,890
+And, here is a system we implemented.
+
+39
+00:02:12,890 --> 00:02:19,350
+So basically the same, you draw three
+dimensional illustration,
+
+40
+00:02:19,350 --> 00:02:23,940
+however, after you finish drawing you can
+use push pin tool, so you
+
+41
+00:02:23,940 --> 00:02:28,500
+put pin here, and then you can manipulate
+them, by using these pins.
+
+42
+00:02:28,500 --> 00:02:32,120
+So, if you pull this, you can pull his,
+his ears.
+
+43
+00:02:32,120 --> 00:02:36,940
+Or you can you can, you know, shake his
+head, or make him run this way.
+
+44
+00:02:36,940 --> 00:02:41,040
+So you can, deform the illustration very
+[UNKNOWN].
+
+45
+00:02:41,040 --> 00:02:44,987
+And this is very useful for making
+animation.
+
+46
+00:02:44,987 --> 00:02:48,340
+Example if you draw this kind of
+character.
+
+47
+00:02:51,110 --> 00:02:55,380
+And then again, this is just two
+dimensional nothing special drawing.
+
+48
+00:02:55,380 --> 00:02:58,880
+But as soon as I put push pin, then you,
+you
+
+49
+00:02:58,880 --> 00:03:03,260
+can make them deform, as if this is a
+physical object.
+
+50
+00:03:03,260 --> 00:03:07,937
+And then, you can also press leg hold,
+[SOUND] to make motion.
+
+51
+00:03:07,937 --> 00:03:12,977
+And then, in this way.
+
+52
+00:03:12,977 --> 00:03:15,530
+So you can easily make him run.
+
+53
+00:03:15,530 --> 00:03:20,000
+And also you can drag him around, and
+
+54
+00:03:20,000 --> 00:03:23,150
+you can get an interesting animation very
+quickly.
+
+55
+00:03:23,150 --> 00:03:25,610
+Traditionally, if you want to make this
+kind
+
+56
+00:03:25,610 --> 00:03:30,270
+of animation, you have to draw many, many
+drawings.
+
+57
+00:03:30,270 --> 00:03:32,546
+But here you can just draw something, and
+
+58
+00:03:32,546 --> 00:03:35,683
+they're moving around, and you will get an
+animation.
+
+59
+00:03:35,683 --> 00:03:42,221
+And here's an example.
+
+60
+00:03:42,221 --> 00:03:43,365
+Again, nothing special.
+
+61
+00:03:43,365 --> 00:03:44,488
+Just 2D drawing.
+
+62
+00:03:44,488 --> 00:03:46,961
+But we can press push pin, and press
+record,
+
+63
+00:03:46,961 --> 00:03:49,380
+and then you can get this kind of
+animation.
+
+64
+00:03:49,380 --> 00:03:52,040
+A kick, a kick.
+
+65
+00:03:52,040 --> 00:03:59,433
+And then you can draw something else here,
+[SOUND] and press record.
+
+66
+00:03:59,433 --> 00:04:02,585
+And you can get this kind of animation.
+
+67
+00:04:02,585 --> 00:04:06,873
+So of course, this is not designed for
+professional animations, but
+
+68
+00:04:06,873 --> 00:04:11,738
+we can quickly generate interesting
+stories with this kind of technique.
+
+69
+00:04:11,738 --> 00:04:13,683
+Let me show you one more example.
+
+70
+00:04:13,683 --> 00:04:19,369
+So, suppose you have a is here, have a
+worm here.
+
+71
+00:04:19,369 --> 00:04:23,230
+And then that's a frog fill.
+
+72
+00:04:23,230 --> 00:04:26,824
+And then let's and then let's put push
+pins,
+
+73
+00:04:26,824 --> 00:04:29,927
+and then for a select code, and one and
+two.
+
+74
+00:04:29,927 --> 00:04:36,857
+[SOUND] So in this way you can make
+
+75
+00:04:36,857 --> 00:04:42,641
+a crawling worm very easily.
+
+76
+00:04:42,641 --> 00:04:45,895
+And then of course, it's a computer so you
+can multiply
+
+77
+00:04:45,895 --> 00:04:49,230
+the main very quickly, and you can make an
+army of worms.
+
+78
+00:04:53,310 --> 00:04:57,845
+And so far, I only used hand drawings.
+
+79
+00:04:57,845 --> 00:05:02,180
+But [UNKNOWN] is basically just a shape to
+formation.
+
+80
+00:05:02,180 --> 00:05:04,640
+And you can apply the same technique for
+images,
+
+81
+00:05:04,640 --> 00:05:08,100
+so this is again just a two dimensional
+image, photograph.
+
+82
+00:05:09,120 --> 00:05:13,750
+But if you put push pins, then it starts
+to move as if there is a physical 3D
+
+83
+00:05:13,750 --> 00:05:19,166
+object here, and then you're going to
+generate interesting animations.
+
+84
+00:05:19,166 --> 00:05:24,465
+[SOUND] And so far, I have been showing
+just mouse
+
+85
+00:05:24,465 --> 00:05:30,257
+operations, but if you have two hands, you
+can do more.
+
+86
+00:05:30,257 --> 00:05:33,406
+For example here, you have two handed
+mouse,
+
+87
+00:05:33,406 --> 00:05:36,230
+and then, two handed mice, so, then you
+
+88
+00:05:36,230 --> 00:05:38,814
+can grab screen with your two hands and
+
+89
+00:05:38,814 --> 00:05:41,820
+then moving around a little bit and
+deform.
+
+90
+00:05:44,200 --> 00:05:47,930
+And if you have a multi touch device, here
+we use Sony
+
+91
+00:05:47,930 --> 00:05:51,460
+computer science research laboratories
+smartskin system,
+
+92
+00:05:51,460 --> 00:05:54,070
+and it can detect your fingertips.
+
+93
+00:05:54,070 --> 00:05:56,930
+And you can directly grab object on the
+screen,
+
+94
+00:05:56,930 --> 00:05:59,790
+and manipulating them as if you have a,
+physical object.
+
+95
+00:06:00,960 --> 00:06:06,275
+So, this is very new way of making an
+deformable object animations.
+
+96
+00:06:06,275 --> 00:06:16,275
+[BLANK_AUDIO]
+
+97
+00:06:22,886 --> 00:06:24,295
+So you can use both hands.
+
+98
+00:06:24,295 --> 00:06:28,253
+Also, two people can work together.
+
+99
+00:06:28,253 --> 00:06:34,874
+[SOUND] And a little bit more.
+
+100
+00:06:34,874 --> 00:06:39,035
+So, so far, I showed the deformation of a
+lesion but shape but
+
+101
+00:06:39,035 --> 00:06:43,720
+you can also apply the same technique for
+the deformation of a car.
+
+102
+00:06:43,720 --> 00:06:46,788
+So suppose, you have a cob this way and
+you
+
+103
+00:06:46,788 --> 00:06:49,869
+can grab a cob and then deform it this
+way.
+
+104
+00:06:49,869 --> 00:06:54,404
+And if you pull more and more, and you get
+a larger region will be deformed.
+
+105
+00:06:54,404 --> 00:06:57,559
+And then you pull more, and you can deform
+the entire shape.
+
+106
+00:06:57,559 --> 00:07:00,476
+[SOUND] And finally, this is not very
+
+107
+00:07:00,476 --> 00:07:05,489
+essential, but we, another convenient
+operation is.
+
+108
+00:07:05,489 --> 00:07:06,423
+smoothing.
+
+109
+00:07:06,423 --> 00:07:10,421
+So this smoothing will remove small noise,
+and then after
+
+110
+00:07:10,421 --> 00:07:15,088
+you rubbing, then you will eventually get
+a very beautiful shape.
+
+111
+00:07:15,088 --> 00:07:19,381
+So by combining this pulling and
+smoothing, you will get a very
+
+112
+00:07:19,381 --> 00:07:25,144
+professional looking smooth illustration,
+just by starting from a rough sketch.
+
+113
+00:07:25,144 --> 00:07:31,563
+[SOUND] So okay.
+
+114
+00:07:31,563 --> 00:07:35,758
+So now, let me briefly describe the
+algorithm behind this technique.
+
+115
+00:07:35,758 --> 00:07:38,310
+So here this is our input.
+
+116
+00:07:38,310 --> 00:07:40,070
+And then this is output.
+
+117
+00:07:40,070 --> 00:07:44,110
+A traditional approach is as I said is
+physical stimulation.
+
+118
+00:07:44,110 --> 00:07:47,160
+So, moving the handles, when it tries to
+deform.
+
+119
+00:07:48,360 --> 00:07:51,370
+Say a little bit by little, by converting
+fours.
+
+120
+00:07:51,370 --> 00:07:52,040
+In acceleration.
+
+121
+00:07:52,040 --> 00:07:57,450
+And so, for this kind of a step by step
+computation and it can be very slow.
+
+122
+00:07:57,450 --> 00:08:01,120
+Here what we propose is a kind of instant
+computation.
+
+123
+00:08:01,120 --> 00:08:03,960
+Or final results from this kind of input
+information.
+
+124
+00:08:03,960 --> 00:08:07,930
+So input information is initial lets the
+shape.
+
+125
+00:08:07,930 --> 00:08:09,285
+And handle positions.
+
+126
+00:08:09,285 --> 00:08:12,622
+[SOUND] And then target locations of
+handles.
+
+127
+00:08:12,622 --> 00:08:14,989
+And then we compute the final result.
+
+128
+00:08:14,989 --> 00:08:20,450
+And what we do is minimize shape
+distortion, satisfying constraints.
+
+129
+00:08:20,450 --> 00:08:23,250
+So let me describe a little bit more.
+
+130
+00:08:23,250 --> 00:08:28,710
+So again, input is coordinates of handles
+and new handle positions.
+
+131
+00:08:28,710 --> 00:08:33,120
+And they output this coordinated mesh
+vertices or free vertices.
+
+132
+00:08:33,120 --> 00:08:38,310
+So these as I input on the system copies
+all these other vertices.
+
+133
+00:08:38,310 --> 00:08:41,640
+And what we do is we minimize the
+distortion of triangles.
+
+134
+00:08:41,640 --> 00:08:45,940
+So there are many possible mesh particle
+positions.
+
+135
+00:08:45,940 --> 00:08:50,756
+But one particular shape, minimize
+distortion of individual triangle.
+
+136
+00:08:50,756 --> 00:08:54,150
+Here, in this blue, blue triangle,
+corresponds to
+
+137
+00:08:54,150 --> 00:08:57,260
+this triangle, and then we try to find the
+
+138
+00:08:57,260 --> 00:09:01,965
+shapes that minimize the deformation or
+distortion of these
+
+139
+00:09:01,965 --> 00:09:05,390
+triangles, so that's a problem we want to
+solve.
+
+140
+00:09:07,190 --> 00:09:10,100
+And mathematically, this is defined like
+this.
+
+141
+00:09:10,100 --> 00:09:15,846
+So what rate is to minimize, this
+function, so this function
+
+142
+00:09:15,846 --> 00:09:20,930
+is what is triangle t, we compute the
+formation.
+
+143
+00:09:20,930 --> 00:09:26,670
+For distortion, depending on the given by
+a products position.
+
+144
+00:09:26,670 --> 00:09:29,950
+And then we aggregate [UNKNOWN]
+distortions.
+
+145
+00:09:29,950 --> 00:09:37,090
+And then, we try to find mesh [UNKNOWN]
+positions that minimize this energy.
+
+146
+00:09:38,390 --> 00:09:42,290
+And what we want is energy function.
+
+147
+00:09:42,290 --> 00:09:47,550
+Specific definition of it that holds no
+cost.
+
+148
+00:09:47,550 --> 00:09:49,460
+For translation and rotation.
+
+149
+00:09:49,460 --> 00:09:54,070
+Translation means moving around, and
+rotation is rotation.
+
+150
+00:09:54,070 --> 00:09:57,430
+So these are called alleged deformation
+because
+
+151
+00:09:57,430 --> 00:10:00,040
+there is no deformation to this guy.
+
+152
+00:10:00,040 --> 00:10:05,500
+And in this kind of alleged deformation,
+there should be no energy.
+
+153
+00:10:05,500 --> 00:10:09,060
+However, if you scale, make bigger or
+smaller.
+
+154
+00:10:09,060 --> 00:10:12,700
+Or stretch or press here, if you cause
+this kind
+
+155
+00:10:12,700 --> 00:10:17,080
+deformation to triangle, it should be a
+cause of energy.
+
+156
+00:10:17,080 --> 00:10:21,580
+So we need very particular energy or cost
+
+157
+00:10:21,580 --> 00:10:26,480
+function or distortion [UNKNOWN] that
+satisfies this [UNKNOWN].
+
+158
+00:10:26,480 --> 00:10:29,740
+Another important requirement is that E.
+
+159
+00:10:29,740 --> 00:10:34,160
+Energy, or cost, should be quadra,
+quadratic in you.
+
+160
+00:10:34,160 --> 00:10:38,540
+Which means if u, if this energy is
+
+161
+00:10:38,540 --> 00:10:42,920
+a quadratic to u, then its derivative is
+linear.
+
+162
+00:10:42,920 --> 00:10:48,960
+So you can solve instantly by solving si,
+simultaneous linear equations.
+
+163
+00:10:48,960 --> 00:10:49,990
+So that's what we want.
+
+164
+00:10:51,440 --> 00:10:58,210
+So okay, ideally we want the [UNKNOWN]
+functional, and that causes zero energy
+
+165
+00:10:58,210 --> 00:11:04,140
+for translation or rotation, but [UNKNOWN]
+energy for scale, stretch or shear.
+
+166
+00:11:04,140 --> 00:11:06,830
+Unfortunately, we don't [UNKNOWN].
+
+167
+00:11:06,830 --> 00:11:11,720
+So there's no such energy in this world
+for quadratic energy.
+
+168
+00:11:11,720 --> 00:11:19,100
+So we therefore combine two complementary
+sub-optimal energies.
+
+169
+00:11:19,100 --> 00:11:20,090
+So here's a description.
+
+170
+00:11:20,090 --> 00:11:22,400
+So ideally, we want to have this.
+
+171
+00:11:22,400 --> 00:11:25,189
+But in this world, what we have is only.
+
+172
+00:11:27,160 --> 00:11:28,700
+Two kinds, so E1 and E2.
+
+173
+00:11:28,700 --> 00:11:32,600
+So E1 is basically, similarity transform.
+
+174
+00:11:32,600 --> 00:11:37,710
+It supports translation and rotation, but
+also scales and then
+
+175
+00:11:37,710 --> 00:11:44,100
+causes no energy but it can detect stretch
+and shear, so this is kind of lose energy.
+
+176
+00:11:44,100 --> 00:11:46,590
+And another E2 is more strict energy.
+
+177
+00:11:46,590 --> 00:11:53,130
+It only allows translations, no rotation,
+no scaling, no stretch, no shear.
+
+178
+00:11:53,130 --> 00:11:56,370
+And then we can have quadratic function.
+
+179
+00:11:56,370 --> 00:11:59,210
+So E1 is a little bit too relaxed.
+
+180
+00:11:59,210 --> 00:12:01,080
+E2 is to a little bit strict.
+
+181
+00:12:01,080 --> 00:12:02,980
+So we combine these two.
+
+182
+00:12:02,980 --> 00:12:05,980
+So what we do is fast apply E1.
+
+183
+00:12:05,980 --> 00:12:11,560
+And their scale is wrong and they're
+waiting www E2 to fix the scale.
+
+184
+00:12:11,560 --> 00:12:13,460
+So, here's what we want.
+
+185
+00:12:13,460 --> 00:12:16,380
+So as far as the input positions, we fast
+
+186
+00:12:16,380 --> 00:12:20,520
+obtain intermediate result, like this one,
+by using another E1.
+
+187
+00:12:21,530 --> 00:12:23,610
+And, in this case E1.
+
+188
+00:12:23,610 --> 00:12:28,297
+Appropriate handles minimize the, shearing
+and scaling and
+
+189
+00:12:28,297 --> 00:12:32,510
+scaling [ and stretching, but scaling is
+allowed.
+
+190
+00:12:32,510 --> 00:12:37,300
+So you get this kind of inflation in this,
+you know left arm.
+
+191
+00:12:38,510 --> 00:12:40,800
+And then after step 1, we.
+
+192
+00:12:41,860 --> 00:12:44,873
+Correct size or individual triangle and
+then we
+
+193
+00:12:44,873 --> 00:12:47,670
+use energy two, to get the correct answer.
+
+194
+00:12:47,670 --> 00:12:54,365
+So that's the algorithm and, refer to the
+paper for the details of these energies.
+
+195
+00:12:54,365 --> 00:12:57,900
+[SOUND] So original paper is published
+
+196
+00:12:57,900 --> 00:13:03,665
+is As-Rigid-As-Possible Shape
+Manipulation, [UNKNOWN] file.
+
+197
+00:13:03,665 --> 00:13:09,020
+And they [UNKNOWN] serious paper to see
+the details of the energy definition.
+
+198
+00:13:09,020 --> 00:13:13,880
+And as I said, previous existing technique
+is popular [UNKNOWN] space walk.
+
+199
+00:13:13,880 --> 00:13:19,090
+And representative work is called feature
+based image metamorphosis.
+
+200
+00:13:19,090 --> 00:13:22,020
+Published was published in 1992.
+
+201
+00:13:22,020 --> 00:13:27,020
+And our technique is using segregation of
+triangular elements.
+
+202
+00:13:27,020 --> 00:13:29,255
+And this work is inspired by
+
+203
+00:13:29,255 --> 00:13:33,960
+As-Rigids-Possible Shape interpolation
+technique published in 2000.
+
+204
+00:13:33,960 --> 00:13:39,780
+And also, our work is related to recent
+works on shape deformation.
+
+205
+00:13:39,780 --> 00:13:41,760
+And I recommend that you to take a look at
+
+206
+00:13:41,760 --> 00:13:47,460
+this [UNKNOWN] paper called on linear
+variational surface deformation methods.
+
+207
+00:13:47,460 --> 00:13:49,566
+Published in, 2008.
+
+208
+00:13:49,566 --> 00:13:51,610
+[INAUDIBLE]

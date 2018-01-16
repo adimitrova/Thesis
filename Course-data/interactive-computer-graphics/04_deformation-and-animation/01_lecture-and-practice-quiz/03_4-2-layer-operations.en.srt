@@ -1,0 +1,892 @@
+1
+00:00:00,580 --> 00:00:03,070
+The next topic is Layer Operations.
+
+2
+00:00:04,790 --> 00:00:07,230
+So this work is titled, Apparent Layer
+
+3
+00:00:07,230 --> 00:00:10,405
+Operations for the Manipulation of
+Deformable Objects.
+
+4
+00:00:10,405 --> 00:00:13,972
+The problem we discussed discussed here is
+
+5
+00:00:13,972 --> 00:00:18,709
+that interaction with deformable objects
+is very difficult.
+
+6
+00:00:19,800 --> 00:00:24,350
+And by deformed object we may hear, this
+kind of
+
+7
+00:00:24,350 --> 00:00:30,520
+interrelated stacked closed and also lobs,
+and so on.
+
+8
+00:00:30,520 --> 00:00:34,330
+Now typical approach is to round,
+continuously, physical assimilation.
+
+9
+00:00:34,330 --> 00:00:38,610
+And then user moves one vortex and then
+rely on physics.
+
+10
+00:00:38,610 --> 00:00:41,060
+This is always physically possibly.
+
+11
+00:00:41,060 --> 00:00:43,910
+But this is kind of a little bit
+inflexible.
+
+12
+00:00:43,910 --> 00:00:47,650
+You know, you can not penetrate pass an
+object and so on.
+
+13
+00:00:47,650 --> 00:00:50,720
+So it's always needs to be physically
+bodied.
+
+14
+00:00:50,720 --> 00:00:54,452
+And this can be inflexible in some
+situations for modeling purposes.
+
+15
+00:00:54,452 --> 00:00:57,129
+And besides a possibility, it's the
+directory
+
+16
+00:00:57,129 --> 00:00:59,620
+control all the vertices one by one.
+
+17
+00:00:59,620 --> 00:01:02,020
+In this way you can do what ever you want.
+
+18
+00:01:02,020 --> 00:01:04,760
+However, it can be very, very, tedious,
+right?
+
+19
+00:01:04,760 --> 00:01:09,170
+And you have too many, many control of
+vertices.
+
+20
+00:01:09,170 --> 00:01:14,530
+So what we introduce here is one example
+of semantic-level operations.
+
+21
+00:01:14,530 --> 00:01:17,330
+By semantics like, layers and so on.
+
+22
+00:01:17,330 --> 00:01:19,780
+So if you look at the physical
+
+23
+00:01:19,780 --> 00:01:23,120
+configuration, here's some want to do sum
+operations.
+
+24
+00:01:23,120 --> 00:01:26,892
+But these some operations in some meaning
+for operation for
+
+25
+00:01:26,892 --> 00:01:31,150
+the user; like changes order or layers of
+this comment.
+
+26
+00:01:31,150 --> 00:01:33,910
+However, from computer to, point of view,
+
+27
+00:01:33,910 --> 00:01:36,870
+this is just a collection of vortex
+coordinates.
+
+28
+00:01:36,870 --> 00:01:39,766
+So many, many, numerical values.
+
+29
+00:01:39,766 --> 00:01:44,560
+So additionally we're asked to control
+these numerical valued directory.
+
+30
+00:01:44,560 --> 00:01:50,540
+But here we tried to allow the user to
+work on this 3D model with semantic-level.
+
+31
+00:01:52,320 --> 00:01:56,643
+Now specifically we want to, we introduce
+here is layer a operations
+
+32
+00:01:56,643 --> 00:02:00,900
+for 3D modeling, and I think you know the
+three layer operations.
+
+33
+00:02:00,900 --> 00:02:05,480
+So in 2D drawing systems you can always
+have a layer ordering.
+
+34
+00:02:05,480 --> 00:02:09,622
+So you can say, go to front or go to back
+and so.
+
+35
+00:02:09,622 --> 00:02:13,200
+For example in PowerPoint you can say you
+can say
+
+36
+00:02:13,200 --> 00:02:16,219
+go to back and then you will get this
+result.
+
+37
+00:02:16,219 --> 00:02:20,130
+And then, go to front and then you will
+get this result.
+
+38
+00:02:20,130 --> 00:02:24,070
+So we want to get this kind of operation
+for the comments,
+
+39
+00:02:24,070 --> 00:02:27,650
+for the cloth to go front, or front to
+back and so on.
+
+40
+00:02:27,650 --> 00:02:28,150
+So
+
+41
+00:02:30,230 --> 00:02:33,490
+so we specifically we introduced two new
+techniques here.
+
+42
+00:02:33,490 --> 00:02:34,830
+One is layer swap.
+
+43
+00:02:34,830 --> 00:02:38,880
+So you just click here and then the system
+changes the layer ordering.
+
+44
+00:02:38,880 --> 00:02:42,700
+And then the other is, you drag one piece,
+and then
+
+45
+00:02:42,700 --> 00:02:45,790
+you can go up, and down, depending on the
+user control.
+
+46
+00:02:45,790 --> 00:02:48,800
+So let me show you a demonstration.
+
+47
+00:02:50,770 --> 00:02:56,040
+So you have a three dimensional cloth
+placed on the floor, like this one.
+
+48
+00:02:56,040 --> 00:03:00,330
+And then, you can deform it just by
+pulling, and pushing, and so on.
+
+49
+00:03:00,330 --> 00:03:04,460
+And here this is just a standard physics
+based dragging.
+
+50
+00:03:04,460 --> 00:03:06,780
+So it's always physically bodied.
+
+51
+00:03:06,780 --> 00:03:11,830
+However, for example, if you want to try
+to change the layer
+
+52
+00:03:11,830 --> 00:03:16,870
+ordering of this part and this part, it
+can be, it suddenly becomes very tedious.
+
+53
+00:03:16,870 --> 00:03:19,140
+You have to move it away.
+
+54
+00:03:19,140 --> 00:03:22,020
+And then move it here, and it comes back.
+
+55
+00:03:22,020 --> 00:03:27,710
+But this takes a lot of steps and then
+global configuration changes.
+
+56
+00:03:27,710 --> 00:03:33,600
+And so if you want to swap this blue and
+this green, now it's almost impossible.
+
+57
+00:03:33,600 --> 00:03:37,610
+But here what we propose is just a single
+click operation to do it.
+
+58
+00:03:37,610 --> 00:03:40,923
+So if you want to swap this layer just,
+
+59
+00:03:40,923 --> 00:03:44,820
+just, click here and the system will
+automatically swaps.
+
+60
+00:03:44,820 --> 00:03:48,930
+So it's very subtle but internally the
+system do a lot of things.
+
+61
+00:03:48,930 --> 00:03:53,790
+And if you click here, just swap, and
+there you will get this instantly.
+
+62
+00:03:53,790 --> 00:03:56,400
+And this operation can be very, very
+tedious, if
+
+63
+00:03:56,400 --> 00:04:00,940
+you use standard rigging operation or
+robotics space control.
+
+64
+00:04:00,940 --> 00:04:03,500
+Let me show you a couple more examples.
+
+65
+00:04:03,500 --> 00:04:08,240
+So here's an example, so you have green,
+purple and blue here.
+
+66
+00:04:08,240 --> 00:04:13,750
+And for example if you
+
+67
+00:04:13,750 --> 00:04:18,310
+try to swap green and purple blue
+
+68
+00:04:19,690 --> 00:04:24,070
+if you click here user want the system to
+swap green and blue.
+
+69
+00:04:24,070 --> 00:04:27,430
+But if you, the system do it naively, then
+there
+
+70
+00:04:27,430 --> 00:04:32,080
+can be a penetration or intersection
+between part one blue.
+
+71
+00:04:32,080 --> 00:04:34,880
+So system automatically analyze it the
+same
+
+72
+00:04:34,880 --> 00:04:37,620
+and then try to abort invalid
+configurations.
+
+73
+00:04:37,620 --> 00:04:43,790
+So if you click here instead of putting
+blue somewhere the
+
+74
+00:04:43,790 --> 00:04:47,560
+system decided to bring the green to the
+front to abort intersection.
+
+75
+00:04:50,290 --> 00:04:53,840
+again, the same thing, so if you click
+blue,
+
+76
+00:04:53,840 --> 00:04:56,840
+if you want to swap blue and purple, if
+
+77
+00:04:56,840 --> 00:04:59,410
+you just do it, if the purple is on
+
+78
+00:04:59,410 --> 00:05:03,780
+top of green, there'll be a intersection
+here, right?
+
+79
+00:05:03,780 --> 00:05:09,540
+So in, in order to prevent an
+intersection, or penetration when the user
+
+80
+00:05:09,540 --> 00:05:15,440
+clicks here, the system should push the
+purple one all the way to the bottom.
+
+81
+00:05:15,440 --> 00:05:17,240
+And that's what we do here.
+
+82
+00:05:17,240 --> 00:05:19,910
+If you click here, the system
+automatically
+
+83
+00:05:19,910 --> 00:05:21,920
+pushes the purple one all the way back.
+
+84
+00:05:25,130 --> 00:05:28,010
+And here is a folded pocket handkerchief.
+
+85
+00:05:28,010 --> 00:05:33,238
+If you click here you still do, you know,
+outward penetration and the
+
+86
+00:05:33,238 --> 00:05:38,940
+system will automatically decide to move
+the top layer all the way to the bottom.
+
+87
+00:05:38,940 --> 00:05:40,390
+Then you will get this shape.
+
+88
+00:05:44,030 --> 00:05:49,520
+And if you click here the direction of a
+spiral completely swaps.
+
+89
+00:05:49,520 --> 00:05:56,630
+And also if you have this one for example
+you can do something like
+
+90
+00:05:56,630 --> 00:06:02,090
+this very quickly, just by a successive
+breaking, and then you will get the same.
+
+91
+00:06:02,090 --> 00:06:04,610
+So this way of changing the way of making
+a
+
+92
+00:06:04,610 --> 00:06:08,220
+knot can be very difficult due to our
+traditional approaches.
+
+93
+00:06:08,220 --> 00:06:08,720
+And
+
+94
+00:06:12,810 --> 00:06:16,470
+this is our most complicated case, a
+necktie.
+
+95
+00:06:16,470 --> 00:06:19,729
+So we created this shape by many, many
+clicks here.
+
+96
+00:06:22,150 --> 00:06:24,900
+And the same operation can be applicable
+for a knot or ropes.
+
+97
+00:06:24,900 --> 00:06:28,010
+So if you click here you can swap the
+layers
+
+98
+00:06:28,010 --> 00:06:31,710
+and you can quickly change the
+configuration of a knot.
+
+99
+00:06:31,710 --> 00:06:36,906
+And then here the same thing you can
+change the whole direction of a
+
+100
+00:06:36,906 --> 00:06:42,213
+twist or you can change the configuration
+of a net, like this one.
+
+101
+00:06:42,213 --> 00:06:46,845
+[BLANK_AUDIO]
+
+102
+00:06:46,845 --> 00:06:48,810
+Okay, so that's how layer's work.
+
+103
+00:06:48,810 --> 00:06:53,040
+And next operation I will show is layer
+hardware dragging.
+
+104
+00:06:53,040 --> 00:06:56,030
+So, in standard dragging, you know, it's a
+
+105
+00:06:56,030 --> 00:06:59,410
+dragged object always on top of existing
+one.
+
+106
+00:06:59,410 --> 00:07:02,500
+However, if you press shift key down,
+during
+
+107
+00:07:02,500 --> 00:07:07,110
+dragging it will automatically goes below
+the colliding clothing.
+
+108
+00:07:08,510 --> 00:07:15,492
+So by combining shift up and shift down,
+you go up and then go down and so on.
+
+109
+00:07:15,492 --> 00:07:21,332
+So this is very useful for making a knot
+here, so you go up without shift
+
+110
+00:07:21,332 --> 00:07:26,920
+and shift down, and then shift up, and
+then shift down, and shift up.
+
+111
+00:07:26,920 --> 00:07:29,010
+So in this way, you can generate a
+
+112
+00:07:29,010 --> 00:07:31,990
+three dimensional knot just by two
+dimensional dragging.
+
+113
+00:07:31,990 --> 00:07:32,490
+Okay.
+
+114
+00:07:38,440 --> 00:07:40,640
+So that's a demonstration and let
+
+115
+00:07:40,640 --> 00:07:43,610
+me briefly describe the algorithm behind
+this.
+
+116
+00:07:45,090 --> 00:07:46,510
+So layer swap.
+
+117
+00:07:46,510 --> 00:07:50,780
+So, this is a before the layer swap and
+then the after the layer swap.
+
+118
+00:07:50,780 --> 00:07:52,640
+Suppose I use a click somewhere here.
+
+119
+00:07:52,640 --> 00:07:56,330
+I use to try to swap yellow with blue.
+
+120
+00:07:56,330 --> 00:08:00,900
+And in order to do the system will
+actually do a lot of same inside the box.
+
+121
+00:08:00,900 --> 00:08:06,840
+So first, the system project, 3D
+configuration onto the screen space.
+
+122
+00:08:06,840 --> 00:08:09,120
+And then analyze the configuration, and
+then,
+
+123
+00:08:10,270 --> 00:08:12,810
+generate a structure for the list graph.
+
+124
+00:08:12,810 --> 00:08:17,910
+List graph is, each subregion represents a
+layered
+
+125
+00:08:17,910 --> 00:08:24,140
+structure and then system maintains
+adjacency graph of the, regions.
+
+126
+00:08:24,140 --> 00:08:28,160
+And then, depending, starting from this
+current configuration.
+
+127
+00:08:28,160 --> 00:08:33,910
+Depending on the user input, system swaps
+layers, in this 2.5D representation.
+
+128
+00:08:33,910 --> 00:08:36,538
+The layer is a list graph representation.
+
+129
+00:08:36,538 --> 00:08:40,085
+And then after that, system takes this two
+dimensional
+
+130
+00:08:40,085 --> 00:08:45,150
+input configuration, and then
+automatically synthesize it, a 3D shape.
+
+131
+00:08:45,150 --> 00:08:49,890
+And then offer a physical acquisition to
+get the final, solid shape.
+
+132
+00:08:49,890 --> 00:08:51,740
+So that's what we do.
+
+133
+00:08:51,740 --> 00:08:54,900
+The first step is the project, projection,
+and analysis.
+
+134
+00:08:56,160 --> 00:09:00,768
+So projection is from 3D, to 2D vector
+representation
+
+135
+00:09:00,768 --> 00:09:06,800
+and the similar technique was presented by
+Eisemann is 2009.
+
+136
+00:09:06,800 --> 00:09:10,165
+And then after getting to the
+two-dimensional vector,
+
+137
+00:09:10,165 --> 00:09:14,700
+2.5D representation, we construct a list
+graph presentation.
+
+138
+00:09:14,700 --> 00:09:20,480
+And this technique was inspired by a local
+layering technique proposed in 2009 here.
+
+139
+00:09:22,280 --> 00:09:24,985
+So in this one call, represents local
+
+140
+00:09:24,985 --> 00:09:28,300
+layering structure and then also adjacency
+graph.
+
+141
+00:09:31,670 --> 00:09:35,915
+Okay, so given this list graph you know,
+
+142
+00:09:35,915 --> 00:09:39,460
+2.5D layer structure, the system updates
+the list graph.
+
+143
+00:09:39,460 --> 00:09:44,618
+So this, this is before configuration and
+then gets a new configuration.
+
+144
+00:09:44,618 --> 00:09:50,280
+So what it actually do is to change the
+ordering of this local layers.
+
+145
+00:09:50,280 --> 00:09:56,630
+However, the important thing is to, to
+avoid invalid configurations.
+
+146
+00:09:56,630 --> 00:09:59,506
+So here's an example of invalid
+configuration.
+
+147
+00:09:59,506 --> 00:10:03,240
+So type one, invalid configuration is like
+this one.
+
+148
+00:10:03,240 --> 00:10:06,280
+So you see the two sub-regions here and
+here.
+
+149
+00:10:07,950 --> 00:10:12,660
+And then in the top region about this
+region here, blue is
+
+150
+00:10:12,660 --> 00:10:16,550
+on top of purple, and here purple is on
+top of blue.
+
+151
+00:10:16,550 --> 00:10:19,230
+So if this kind of configuration happens
+then there
+
+152
+00:10:19,230 --> 00:10:22,931
+will be an intersection of penetration
+here which means
+
+153
+00:10:22,931 --> 00:10:26,037
+undefinable, so this is type 1 error or
+type
+
+154
+00:10:26,037 --> 00:10:30,560
+one invalid configuration, so another
+invalid configuration is like this.
+
+155
+00:10:30,560 --> 00:10:35,380
+So this is not so obvious but suppose this
+is folded, you know, this is dark blue
+
+156
+00:10:35,380 --> 00:10:38,520
+and the light blue is folded and
+connected, and
+
+157
+00:10:38,520 --> 00:10:43,790
+then, and then it's connected layer should
+be adjacent.
+
+158
+00:10:43,790 --> 00:10:46,980
+Otherwise, you know, there will be a
+penetration, so that's a problem.
+
+159
+00:10:50,960 --> 00:10:57,200
+So what we do is to consider all possible
+permutations of layer orders
+
+160
+00:10:57,200 --> 00:11:02,970
+in each region and then tries to find
+valid configuration.
+
+161
+00:11:02,970 --> 00:11:05,830
+And to do this we actually do kind of
+
+162
+00:11:05,830 --> 00:11:09,890
+an exhaustive search of all the
+combinations in this space.
+
+163
+00:11:13,290 --> 00:11:16,755
+And then after it gets having the updated
+list graph,
+
+164
+00:11:16,755 --> 00:11:20,070
+what we do is reconstruct the 3D geometry
+from it.
+
+165
+00:11:21,480 --> 00:11:23,810
+And this is two step operation.
+
+166
+00:11:23,810 --> 00:11:27,030
+So first operation is to get geometric
+
+167
+00:11:27,030 --> 00:11:29,932
+reconstruction, so there is no gravity,
+there's no
+
+168
+00:11:29,932 --> 00:11:32,350
+physics, just reconstruct
+three-dimensional
+
+169
+00:11:32,350 --> 00:11:33,860
+layered structure, just tied
+
+170
+00:11:33,860 --> 00:11:36,910
+up to the computer depths from 2D layer.
+
+171
+00:11:36,910 --> 00:11:39,090
+And then after that, we apply physics you
+
+172
+00:11:39,090 --> 00:11:43,020
+know, apply gravity to get the final
+deducted shape.
+
+173
+00:11:45,130 --> 00:11:50,550
+So, in summary, we introduced the layer
+operations for cloth and ropes.
+
+174
+00:11:50,550 --> 00:11:52,340
+And them specifically we need to do today
+
+175
+00:11:52,340 --> 00:11:55,380
+a swap single group and change layer
+ordering and
+
+176
+00:11:55,380 --> 00:12:01,261
+then change the layer dragging, you can go
+above and then go down using a shift key.
+
+177
+00:12:01,261 --> 00:12:04,370
+Then the algorithm for what we do
+
+178
+00:12:04,370 --> 00:12:09,120
+is projection 2.5D representation called
+the list graph.
+
+179
+00:12:09,120 --> 00:12:14,004
+So project the order and synthesize go
+back to 3D.
+
+180
+00:12:14,004 --> 00:12:17,060
+To learn more, the original paper was
+
+181
+00:12:17,060 --> 00:12:19,430
+published as Apparent Layer Operations for
+the
+
+182
+00:12:19,430 --> 00:12:23,400
+Manipulation of Deformable Objects, and 2D
+layer
+
+183
+00:12:23,400 --> 00:12:27,230
+operations was introduced as Local
+Layering in 2009.
+
+184
+00:12:27,230 --> 00:12:30,870
+So our work is inspired by this work.
+
+185
+00:12:30,870 --> 00:12:35,640
+And also if you want to more about 3D to
+2D projection, I recommend you
+
+186
+00:12:35,640 --> 00:12:38,880
+take a look at this Visibility algorithm
+for
+
+187
+00:12:38,880 --> 00:12:42,790
+converting 3D meshes into editable 2d
+vector graphics.
+
+188
+00:12:42,790 --> 00:12:48,519
+So this one enables to combine from 3D
+graphics to 2D vector installations.
+
+189
+00:12:48,519 --> 00:12:50,429
+Thank you.

@@ -1,0 +1,496 @@
+1
+00:00:00,025 --> 00:00:06,124
+[MUSIC]
+
+2
+00:00:06,124 --> 00:00:07,113
+Welcome.
+
+3
+00:00:07,113 --> 00:00:09,900
+It is good to see you back for
+this lesson.
+
+4
+00:00:09,900 --> 00:00:14,000
+In the previous module,
+we explored the Contiki operating system.
+
+5
+00:00:14,000 --> 00:00:17,650
+Now, we will take a look at
+Contiki's kernel architecture and
+
+6
+00:00:17,650 --> 00:00:19,949
+explore the details of
+its characteristics.
+
+7
+00:00:20,960 --> 00:00:23,830
+By the end of the lesson,
+you should understand the benefits and
+
+8
+00:00:23,830 --> 00:00:26,975
+challenges faced when developing
+applications in Contiki.
+
+9
+00:00:28,990 --> 00:00:31,670
+Let's start with Contiki's
+kernel architecture.
+
+10
+00:00:32,730 --> 00:00:38,020
+As we know from previous videos, Contiki
+is based on a modular kernel architecture.
+
+11
+00:00:38,020 --> 00:00:40,120
+Therefore, the kernel is minimal.
+
+12
+00:00:41,420 --> 00:00:42,700
+Due to this reason,
+
+13
+00:00:42,700 --> 00:00:48,460
+the kernel comprises only a few lines
+of code that perform vital functions.
+
+14
+00:00:48,460 --> 00:00:52,630
+For example,
+the kernel consists of an event scheduler,
+
+15
+00:00:52,630 --> 00:00:55,060
+which is light in terms of code size.
+
+16
+00:00:56,290 --> 00:00:59,780
+In Contiki,
+all program execution is triggered
+
+17
+00:00:59,780 --> 00:01:04,440
+either through the polling mechanism or
+by events which are sent by the kernel.
+
+18
+00:01:06,030 --> 00:01:12,100
+In Contiki, the kernel supports two types
+of events, synchronous and asynchronous.
+
+19
+00:01:13,130 --> 00:01:17,040
+Asynchronous events are not
+delivered to the receiving process
+
+20
+00:01:17,040 --> 00:01:18,916
+immediately after being posted.
+
+21
+00:01:18,916 --> 00:01:22,540
+Instead, they are stored
+in an event queue.
+
+22
+00:01:23,810 --> 00:01:27,880
+The events in the queue are delivered
+to the receiving process by the kernel.
+
+23
+00:01:29,500 --> 00:01:34,170
+The kernel delivers an event from
+the event queue by looping through it.
+
+24
+00:01:35,810 --> 00:01:41,130
+The receiver of an asynchronous event
+can be either a specific process or
+
+25
+00:01:41,130 --> 00:01:42,289
+all running processes.
+
+26
+00:01:43,620 --> 00:01:46,100
+When the receiver is a specific process,
+
+27
+00:01:46,100 --> 00:01:49,590
+the kernel invokes this
+process to deliver the event.
+
+28
+00:01:50,920 --> 00:01:56,200
+When the receiver of an event is
+set to be processes in the system,
+
+29
+00:01:56,200 --> 00:02:01,070
+the kernel delivers the same event
+to all processes sequentially.
+
+30
+00:02:01,070 --> 00:02:02,818
+This is one after another.
+
+31
+00:02:02,818 --> 00:02:09,000
+The process post function is used for
+posting an asynchronous event.
+
+32
+00:02:10,300 --> 00:02:13,020
+Actually this function is very simple.
+
+33
+00:02:13,020 --> 00:02:17,680
+First, the size of the event queue is
+evaluated and if there is room for
+
+34
+00:02:17,680 --> 00:02:21,730
+the new event,
+then the event is added to the queue.
+
+35
+00:02:21,730 --> 00:02:23,830
+Otherwise, the function will return zero.
+
+36
+00:02:25,280 --> 00:02:29,460
+Synchronous events work differently
+from asynchronous events.
+
+37
+00:02:29,460 --> 00:02:33,520
+In the sense that when
+a synchronous event is dispatched,
+
+38
+00:02:33,520 --> 00:02:36,080
+it is delivered to the receiving
+process immediately.
+
+39
+00:02:37,720 --> 00:02:40,500
+Another difference
+between asynchronous and
+
+40
+00:02:40,500 --> 00:02:43,112
+synchronous events is
+the type of receiver.
+
+41
+00:02:43,112 --> 00:02:50,060
+While asynchronous events can be received
+either by a specific process or all
+
+42
+00:02:50,060 --> 00:02:56,740
+running processes, a synchronous event can
+only be received by a specific process.
+
+43
+00:02:56,740 --> 00:03:01,510
+The mechanism for invoking a synchronous
+receiver is similar to calling a function.
+
+44
+00:03:02,752 --> 00:03:06,710
+A synchronous receiver is called,
+so it performs it's task,
+
+45
+00:03:06,710 --> 00:03:10,140
+after which it returns control
+to the posting process.
+
+46
+00:03:11,640 --> 00:03:15,210
+Besides events,
+the kernel supports a polling mechanism.
+
+47
+00:03:16,350 --> 00:03:21,350
+In short, the polling mechanism
+behaves as high priority events
+
+48
+00:03:21,350 --> 00:03:24,499
+that are scheduled between
+asynchronous events.
+
+49
+00:03:26,120 --> 00:03:31,360
+Typically, processes operating close
+to the hardware level use polling for
+
+50
+00:03:31,360 --> 00:03:33,010
+evaluating hardware status.
+
+51
+00:03:34,290 --> 00:03:39,250
+When a poll is scheduled, all processes
+that implement a poll handler
+
+52
+00:03:39,250 --> 00:03:42,270
+are called sequentially
+according to their priority.
+
+53
+00:03:43,850 --> 00:03:46,965
+In a similar way to
+event posting functions,
+
+54
+00:03:46,965 --> 00:03:51,740
+Contiki also provides a process
+poll function for posting a poll.
+
+55
+00:03:53,180 --> 00:03:56,170
+Posting a poll has a similar
+effect as an interrupt.
+
+56
+00:03:57,310 --> 00:04:01,325
+It causes the receiving process to
+be scheduled as soon as possible.
+
+57
+00:04:01,325 --> 00:04:08,230
+Contiki's kernel uses a single shared
+stack for all process execution.
+
+58
+00:04:09,450 --> 00:04:13,420
+The use of asynchronous
+events reduce a stack's space
+
+59
+00:04:13,420 --> 00:04:18,420
+requirements as the stack is rewound
+between each invocation of event handlers.
+
+60
+00:04:20,010 --> 00:04:21,060
+At this point,
+
+61
+00:04:21,060 --> 00:04:26,320
+you may have questions regarding
+events such as is an event unique?
+
+62
+00:04:26,320 --> 00:04:28,150
+Or how are we best identify it?
+
+63
+00:04:29,500 --> 00:04:33,710
+To answer these questions,
+let's talk about event identifiers.
+
+64
+00:04:35,040 --> 00:04:41,250
+An event identifier is an 8-bit number
+used as a unique identifier for an event.
+
+65
+00:04:42,490 --> 00:04:44,840
+When a process receives an event
+
+66
+00:04:44,840 --> 00:04:49,000
+It uses the event identifier to
+determine the actions to perform.
+
+67
+00:04:50,230 --> 00:04:54,320
+There are several event identifiers
+reserved by the Contiki kernel
+
+68
+00:04:54,320 --> 00:04:59,270
+to handle process control, inter-process
+communication, and peripheral access.
+
+69
+00:05:00,528 --> 00:05:04,410
+To get better acquainted with
+the available identifiers,
+
+70
+00:05:04,410 --> 00:05:06,660
+I suggest you go through
+the suggested materials.
+
+71
+00:05:08,280 --> 00:05:12,060
+Now, let's take a look at the way
+Contiki implements the scheduling.
+
+72
+00:05:13,350 --> 00:05:18,430
+Contiki schedules all events using
+a single level hierarchy, and
+
+73
+00:05:18,430 --> 00:05:21,320
+events cannot be preempted
+by other events.
+
+74
+00:05:22,580 --> 00:05:26,490
+The only way to preempt
+an event is using interrupts.
+
+75
+00:05:27,720 --> 00:05:31,400
+It is important to notice
+the interrupt must be supported
+
+76
+00:05:31,400 --> 00:05:33,940
+by an underlying real-time executive.
+
+77
+00:05:35,140 --> 00:05:39,200
+Correspondingly, interrupt
+handlers cannot post any event.
+
+78
+00:05:40,430 --> 00:05:45,210
+The reason behind this policy is
+to avoid possible race conditions
+
+79
+00:05:45,210 --> 00:05:46,210
+in the event handler.
+
+80
+00:05:47,400 --> 00:05:51,950
+Instead, a polling flag is
+used to request a poll event.
+
+81
+00:05:53,310 --> 00:05:58,380
+This flag provides interrupt handlers
+with a way to request immediate polling.
+
+82
+00:06:00,160 --> 00:06:04,265
+Next, we are going to discuss about
+loadable programs in Contiki.
+
+83
+00:06:06,000 --> 00:06:11,230
+To implement loadable programs,
+Contiki uses a binary format that includes
+
+84
+00:06:11,230 --> 00:06:16,110
+relocation information and
+a run-time relocation function.
+
+85
+00:06:16,110 --> 00:06:18,840
+But, how does a loadable program work?
+
+86
+00:06:20,140 --> 00:06:25,220
+When a program is loaded,
+the loader uses the relocation information
+
+87
+00:06:25,220 --> 00:06:28,270
+provided by the binary
+format to allocate memory.
+
+88
+00:06:29,390 --> 00:06:33,255
+In case that there is not enough memory,
+the loading is aborted.
+
+89
+00:06:34,870 --> 00:06:37,730
+In case of successful loading,
+the function for
+
+90
+00:06:37,730 --> 00:06:42,180
+initialization is called for
+starting or replacing other processes.
+
+91
+00:06:43,820 --> 00:06:47,319
+Finally, we're going to look
+at power saving in Contiki.
+
+92
+00:06:48,610 --> 00:06:53,190
+In general, power can be saved by
+putting inactive nodes to sleep.
+
+93
+00:06:54,390 --> 00:06:55,710
+In some cases,
+
+94
+00:06:55,710 --> 00:06:59,930
+choosing appropriate level protocols
+may also reduce power consumption.
+
+95
+00:07:01,380 --> 00:07:03,770
+Contiki also provides a mechanism for
+
+96
+00:07:03,770 --> 00:07:07,989
+reducing power consumption even though
+there is no explicit abstraction for it.
+
+97
+00:07:09,230 --> 00:07:13,150
+The mechanism works by checking
+the size of the systems event queue.
+
+98
+00:07:14,380 --> 00:07:16,560
+If the event queue is empty,
+
+99
+00:07:16,560 --> 00:07:22,000
+the micro-controller goes into a sleep
+mode until it's woken up by an interrupt.
+
+100
+00:07:22,000 --> 00:07:26,250
+This is all for the lesson about
+Contiki kernel architecture.
+
+101
+00:07:26,250 --> 00:07:30,570
+I hope now you have a better insight on
+how Contiki's kernel is structured and
+
+102
+00:07:30,570 --> 00:07:31,960
+how it works.
+
+103
+00:07:31,960 --> 00:07:35,008
+Thanks for watching and
+see you in the next video.
+
+104
+00:07:35,008 --> 00:07:39,039
+[MUSIC]

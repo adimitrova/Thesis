@@ -1,0 +1,83 @@
+In this lesson, I want to talk
+about how mflix queries MongoDB to generate its homepage. By examining how the mflix page is
+generated, we'll actually get to learn about the following cursor methods,
+sort, skip, and limits. So let's take a closer look at this page. I want to point out a few
+interesting characteristics. First, you'll notice that there
+are 46,000 movies in mflix, but this homepage is only
+displaying the first 20. Moreover, you'll notice that
+the 20 that we're displaying are all very well known
+films here in the US. And the last thing I want to point out,
+is if we go ahead and scroll down and click Next Page, you'll see that the next
+page displays the next 20 movies, movies 21 through 40. So let's go ahead and look at the code of
+mflix to see a little bit how this works. So let's go ahead and
+take a look at mflix.py, this is where our function
+exist to generate the homepage. And this is the function, and we know this is the right function
+because of app.route being /. So whenever you go to the route,
+part of the website, the homepage,
+this is the method that will get called. In the first 25 lines or so here are just about making sure that
+we understand what page we're on. Seeing if a certain genre was selected or seeing if a query was
+made about a text search. But we're going to ignore all of that for
+the most part. Really all we care about here
+is this call to get movies. And this is where we actually
+make the call to the database. So as you can see here, we pass in three parameters,
+pass in our filters as we set them up. We pass in the page that
+we're currently on, and we pass how many movies
+we want on each page. And that's going to return
+to us a list of movies, as well as the total number of
+all the movies in the collection. So let's go ahead and look at get movies. This is in db.py, and
+here you can see the get movies function. Now let's go ahead and copy this and
+put it in our Jupyter Notebook so you can actually play around
+with the function a little bit. So the first things I'm going to do here
+is define the parameters that we go ahead and pass in to get movies. So this is a very simple example,
+we're not making a text search or searching by genre. So our filter's just going to
+be an empty dictionary. And, we want this query to be for
+the homepage. So we're going to say page is = to 0. And just like on the homepage,
+we're going to render 20 movies per page. Now I've gone ahead and simplified the get
+movies function a little bit, by removing the function and kind of splitting
+up the code across multiple cells, so that we can more easily
+see what's happening. And in this first cell, this is
+where we ensure that the homepage is filled with movies familiar to our users. So by default, when we query MongoDB, the documents are returned
+without any particular order. But to make sure that these
+movies are relevant to our users, here we're going to sort them by
+the number of reviews they have. Now obviously, there are many different
+ways that we could implement this but this naive approach works pretty well for
+this example application. And as you can see,
+our sort key uses dot notation. And that's because we're
+sorting on a value that is nested through a series
+of nested documents. And this is the exact same dot notation
+that we use when we're filtering for embedded documents. In this case,
+we're now using it for sorting. So very simply,
+we just pass in our filters to find, and then we append the sort method,
+passing our sort key. And then, of course, similar to
+how we do sorting in aggregation, we also have to pass a direction. So we want to sort things so
+that the most reviews are at the front, so we're going to sort this descending. And then second thing we want to do is
+go ahead and get the total movie count. So this query is going to currently
+return all of the movies, and so when we run count you can see that,
+indeed, it does return all of them. And so the first thing this
+query does is go ahead and counts how many documents
+are on this cursor. And we go ahead and store that in this
+variable called total num movies. And this is one of the return
+values of the get movies function. Now, would it be very cool to send
+all 46,000 movies to our user? They certainly don't have time to look at
+all of them, but moreover, it would take a long time to send them over the network
+and to render them on the page. And that's why we limit the number
+of movies that we're sending. Or specifically we're limiting
+our results to 20 per page. When users aren't on the homepage,
+we're going to need to go ahead and skip over the entries that precede
+the pages that they're currently on, and that's what skip will let us achieve. In this case, since page is 0, moves page
+are still 20, this is going to evaluate to 0, so we're not going to be
+skipping any for the homepage. And then when we go ahead and
+turn this cursor into a list, and look at its length,
+you see that we're getting 20 movies. And if we look at the first movie,
+if we look at tomatoes and look at viewer, and look at the number of reviews, you can
+see that there are quite a few reviews. And that's why Titanic is the first
+movie that we see on mflix. Now we can go ahead and simulate going to
+the next page by setting page equal to 1. And then running the same query
+again where have no filters. We're sorting on the number of reviews,
+and then this time we're skipping, hopefully, 20 movies. And as you can see, we are now
+returning 20 less movies than what would have been returned if we
+returned all of the movies. Let's recap what we
+discussed in this lesson. We looked at these three
+common cursor methods. But moreover, we saw how, together,
+they can be used to generate our movie homepage, as well as through the use
+of skip and limits support pagination.

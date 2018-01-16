@@ -1,0 +1,667 @@
+1
+00:00:00,000 --> 00:00:05,794
+[MUSIC]
+
+2
+00:00:05,794 --> 00:00:12,170
+Hello, welcome to the lesson on Machine to
+Machine or M2M communication protocols.
+
+3
+00:00:12,170 --> 00:00:16,650
+What are they, and
+what are their basic characteristics, and
+
+4
+00:00:16,650 --> 00:00:18,609
+which ones are the dominant ones?
+
+5
+00:00:20,000 --> 00:00:25,298
+M2M Communication Protocols
+are application layer protocols
+
+6
+00:00:25,298 --> 00:00:30,604
+that facilitate the transfer of
+messages between two devices.
+
+7
+00:00:30,604 --> 00:00:36,521
+An important distinction between
+connectivity and communication protocols
+
+8
+00:00:36,521 --> 00:00:42,256
+is that M2M connectivity protocols
+facilitated linking of the devices and
+
+9
+00:00:42,256 --> 00:00:47,902
+reside on the link layer, while M2M
+communication protocols facilitate
+
+10
+00:00:47,902 --> 00:00:52,849
+messaging between devices and
+reside on the application layer.
+
+11
+00:00:56,143 --> 00:01:00,910
+These protocols allow devices
+to interoperate with each other.
+
+12
+00:01:02,600 --> 00:01:07,455
+They do this by standardizing the key
+aspects of naming, messaging,
+
+13
+00:01:07,455 --> 00:01:08,535
+and controls.
+
+14
+00:01:11,549 --> 00:01:17,432
+Standardized naming means defining
+how each device will be referred,
+
+15
+00:01:17,432 --> 00:01:19,500
+recognized, or found.
+
+16
+00:01:21,540 --> 00:01:26,810
+Standard messaging determines how
+each message is formatted, so
+
+17
+00:01:26,810 --> 00:01:33,480
+that all the devices can understand it.
+
+18
+00:01:33,480 --> 00:01:39,210
+Standard controls enable the devices
+to control the flow of communication or
+
+19
+00:01:39,210 --> 00:01:43,890
+quality of service, or
+to define the type of a message.
+
+20
+00:01:46,690 --> 00:01:53,020
+Let's have a look at some of the basic
+features of M2M communication protocols.
+
+21
+00:01:53,020 --> 00:01:56,704
+These features allow us to
+differentiate the protocols,
+
+22
+00:01:56,704 --> 00:01:58,668
+and to define their use cases.
+
+23
+00:02:02,535 --> 00:02:06,899
+Communication pattern refers
+to the communication model or
+
+24
+00:02:06,899 --> 00:02:09,300
+paradigm the protocol follows.
+
+25
+00:02:11,000 --> 00:02:16,460
+An example of a communication pattern
+is the request-response model.
+
+26
+00:02:17,760 --> 00:02:21,760
+In this model,
+the client node sends a request
+
+27
+00:02:21,760 --> 00:02:26,100
+to the central server node to
+initiate a connection, and
+
+28
+00:02:26,100 --> 00:02:30,620
+the server responds in a predefined
+pattern depending on the protocol.
+
+29
+00:02:33,030 --> 00:02:37,835
+Another communication pattern
+is the publish-subscribe model,
+
+30
+00:02:37,835 --> 00:02:39,711
+or pub-sub in short.
+
+31
+00:02:41,190 --> 00:02:47,840
+In this paradigm, all the clients during
+or after connection establishment define
+
+32
+00:02:47,840 --> 00:02:53,570
+what type of messages they are interested
+in, generally called topics or classes.
+
+33
+00:02:54,910 --> 00:03:00,090
+Whenever a client,
+a publisher sends a message
+
+34
+00:03:00,090 --> 00:03:05,580
+of a specific topic, the message is
+forwarded to all those clients or
+
+35
+00:03:05,580 --> 00:03:09,930
+subscribers who have expressed
+interest in the topic in question.
+
+36
+00:03:14,090 --> 00:03:18,500
+All application layer protocols
+in the scope of this course
+
+37
+00:03:18,500 --> 00:03:21,730
+assume an underlying transport
+protocol to be present.
+
+38
+00:03:23,260 --> 00:03:29,550
+The choice of a transport protocol is
+important, as it effects the performance,
+
+39
+00:03:29,550 --> 00:03:34,570
+bandwidth, and reliability of
+the M2M communication protocol.
+
+40
+00:03:36,030 --> 00:03:39,610
+The main contenders at TCP and UDP.
+
+41
+00:03:41,750 --> 00:03:46,556
+TCP is used in cases where
+reliability is of key importance.
+
+42
+00:03:46,556 --> 00:03:53,039
+UDP being very simple and taking only
+a few steps to form a connection
+
+43
+00:03:53,039 --> 00:03:58,056
+is preferred if speed is
+the most important factor.
+
+44
+00:04:02,050 --> 00:04:06,100
+Does the protocol offer
+any assurance of delivery?
+
+45
+00:04:07,460 --> 00:04:11,520
+Does it have mechanisms to ensure
+the transmission of messages
+
+46
+00:04:11,520 --> 00:04:17,070
+in uncertain circumstances or
+during unreliable connections?
+
+47
+00:04:17,070 --> 00:04:21,660
+What mechanisms would the protocol
+would rely on to achieve this?
+
+48
+00:04:21,660 --> 00:04:25,965
+The answers to these questions
+define the level of dependability or
+
+49
+00:04:25,965 --> 00:04:27,936
+reliability of the protocol.
+
+50
+00:04:31,200 --> 00:04:35,669
+A web connected cyber physical
+system inherits the problems
+
+51
+00:04:35,669 --> 00:04:39,875
+of the current internet and
+most likely amplifies them,
+
+52
+00:04:39,875 --> 00:04:43,920
+because of it's direct
+connection to the real world.
+
+53
+00:04:45,490 --> 00:04:48,730
+Two of these issues are security and
+privacy.
+
+54
+00:04:50,140 --> 00:04:56,040
+Security is an important differentiating
+factor in the choice of a protocol.
+
+55
+00:04:57,520 --> 00:05:02,314
+Security aspects of systems are discussed
+in detail in later video lectures.
+
+56
+00:05:06,448 --> 00:05:11,447
+Distributed operations means
+that there is no central node to
+
+57
+00:05:11,447 --> 00:05:16,169
+control operation and
+communication of the other nodes.
+
+58
+00:05:17,330 --> 00:05:19,950
+Instead, communication is one to one,
+
+59
+00:05:21,040 --> 00:05:25,140
+where the communicating
+nodes are on equal grounds.
+
+60
+00:05:26,940 --> 00:05:32,376
+Some protocols might request that
+the data goes first to a central point,
+
+61
+00:05:32,376 --> 00:05:38,440
+a server or broker, from which it is then
+distributed to the intended recipient.
+
+62
+00:05:41,814 --> 00:05:45,813
+Being able to know who and
+what is on the network is as
+
+63
+00:05:45,813 --> 00:05:49,907
+important as the ability
+to communicate with them.
+
+64
+00:05:49,907 --> 00:05:54,626
+The protocol may offer means by which
+machines can recognize peers or
+
+65
+00:05:54,626 --> 00:05:57,565
+associated group members in the network.
+
+66
+00:06:01,164 --> 00:06:06,590
+Messages and payload support can be
+a decisive factor in selecting a protocol.
+
+67
+00:06:08,070 --> 00:06:12,490
+Knowing which protocol will easily
+integrate with the current systems
+
+68
+00:06:12,490 --> 00:06:16,610
+is valuable and
+knowing the payload helps in this regard.
+
+69
+00:06:17,910 --> 00:06:22,303
+Current web services and
+technologies benefit from
+
+70
+00:06:22,303 --> 00:06:27,093
+a protocol that offer support for
+typical web payloads,
+
+71
+00:06:27,093 --> 00:06:31,906
+such as HTML, plain text,
+UDF8 and coded text and XML.
+
+72
+00:06:35,137 --> 00:06:40,220
+Based on the features we defined, let's
+look at the dominant protocols today.
+
+73
+00:06:43,870 --> 00:06:46,310
+The constraint application protocol or
+
+74
+00:06:46,310 --> 00:06:50,480
+COAP is a standardized
+request response protocol.
+
+75
+00:06:51,810 --> 00:06:56,780
+It's creators redesign functions from HTTP
+
+76
+00:06:56,780 --> 00:07:02,170
+taking into consideration,
+the target device's CoAP will be used on.
+
+77
+00:07:02,170 --> 00:07:09,140
+That is embedded devices with limited
+processing power, storage, and bandwidth.
+
+78
+00:07:10,700 --> 00:07:16,760
+It also supports publish-subscribe style
+communication and resource discovery.
+
+79
+00:07:18,730 --> 00:07:24,940
+CoAP uses UDP as the transport protocol
+and has a dual layered structure.
+
+80
+00:07:26,850 --> 00:07:31,810
+The transactional layer takes care of
+message handling between nodes, and
+
+81
+00:07:31,810 --> 00:07:37,320
+the request response layer manages
+resources and transmits messages.
+
+82
+00:07:37,320 --> 00:07:41,517
+This enables efficient congestion
+control and reliability over
+
+83
+00:07:41,517 --> 00:07:48,220
+UDP Here you see a short
+overview of the protocol.
+
+84
+00:07:53,963 --> 00:08:00,450
+Hypertext Transport Protocol, HTTP,
+is the backbone of modern world wide web.
+
+85
+00:08:01,950 --> 00:08:07,570
+It is the defacto protocol for exchanging
+information between Internet connected
+
+86
+00:08:07,570 --> 00:08:14,530
+nodes that communicate via hypertext, for
+example, your browser and web server.
+
+87
+00:08:16,030 --> 00:08:21,950
+HTTP sets up the regulations on how
+nodes are going to communicate,
+
+88
+00:08:21,950 --> 00:08:23,670
+and also specifies the content.
+
+89
+00:08:25,210 --> 00:08:30,661
+HTTP relies on TCP as the transport
+protocol for packet transmission.
+
+90
+00:08:33,246 --> 00:08:36,006
+Here, you see a short
+overview of the protocol.
+
+91
+00:08:40,982 --> 00:08:47,389
+The Message Queuing Telemetry Transport,
+or MQTT, was invented by IBM and
+
+92
+00:08:47,389 --> 00:08:52,911
+RCom to collect data from remote
+devices to back up it's server.
+
+93
+00:08:54,700 --> 00:08:57,560
+It was introduced in 1999 by IBM,
+
+94
+00:08:57,560 --> 00:09:02,850
+and it was standardized in 2014.
+
+95
+00:09:02,850 --> 00:09:07,010
+MQTT is meant for lightweight devices,
+
+96
+00:09:07,010 --> 00:09:11,610
+which are constrained by both
+processing power and memory.
+
+97
+00:09:12,730 --> 00:09:17,700
+Besides this, the protocol can
+transmit data over low bandwidth and
+
+98
+00:09:17,700 --> 00:09:18,830
+reliable connection.
+
+99
+00:09:20,110 --> 00:09:25,040
+The static header size
+of MQTT is just 2 bytes.
+
+100
+00:09:26,250 --> 00:09:29,210
+It is an open-source free
+to use standard protocol.
+
+101
+00:09:30,480 --> 00:09:34,030
+MQTT relies on TCP as
+the transport protocol.
+
+102
+00:09:36,230 --> 00:09:40,600
+MQTT is inherently a published
+subscribe protocol.
+
+103
+00:09:40,600 --> 00:09:42,940
+Clients connect to a server to send and
+
+104
+00:09:42,940 --> 00:09:46,888
+receive messages on
+the channels of their interest.
+
+105
+00:09:46,888 --> 00:09:53,070
+The server is called a broker, senders are
+publishers, and receivers are subscribers.
+
+106
+00:09:55,330 --> 00:09:57,634
+Here you see a short
+overview of the protocol.
+
+107
+00:10:02,912 --> 00:10:07,076
+The extensible messaging and
+presence protocol or
+
+108
+00:10:07,076 --> 00:10:11,821
+XMPP was originally a text-based
+messaging protocol for
+
+109
+00:10:11,821 --> 00:10:18,820
+messaging between devices over a network
+using the XML document format.
+
+110
+00:10:18,820 --> 00:10:23,581
+XMPP is being explored for
+Internet of Things by the XMPP
+
+111
+00:10:23,581 --> 00:10:28,764
+standards foundations for
+access control and censor data.
+
+112
+00:10:28,764 --> 00:10:35,100
+It's strong point is it's very familiar
+device at server naming approach.
+
+113
+00:10:36,140 --> 00:10:41,350
+Besides this, it provides end
+to end security, provisioning,
+
+114
+00:10:41,350 --> 00:10:43,960
+and publish subscribe style communication.
+
+115
+00:10:45,200 --> 00:10:50,780
+It is slow, but secure and
+uses TCP as the transport protocol.
+
+116
+00:10:53,420 --> 00:10:55,870
+Here you can see a short
+overview of the protocol.
+
+117
+00:11:01,845 --> 00:11:06,730
+The Data Distribution Service,
+or DDS, is a standardized,
+
+118
+00:11:06,730 --> 00:11:14,215
+publish-subscribe protocol that enables
+devices to communicate in near real-time.
+
+119
+00:11:14,215 --> 00:11:17,759
+DDS has its own interoperability
+protocol called Wire,
+
+120
+00:11:18,790 --> 00:11:24,150
+which enables different implementations
+of DDS to communicate and interoperate.
+
+121
+00:11:25,700 --> 00:11:30,770
+In a DDS environment, anyone can be
+a publisher, subscriber or both.
+
+122
+00:11:32,250 --> 00:11:37,950
+It also offers an extensive quality of
+service support allowing efficient and
+
+123
+00:11:37,950 --> 00:11:43,270
+versatile implementations of
+quality of service policies.
+
+124
+00:11:43,270 --> 00:11:47,530
+It can use either TCP or
+UDP as a transport protocol.
+
+125
+00:11:50,110 --> 00:11:52,399
+Here you see a short
+overview of the protocol.
+
+126
+00:11:57,675 --> 00:12:01,293
+The Advanced Message Queueing Protocol or
+
+127
+00:12:01,293 --> 00:12:05,220
+AMQP has its roots in
+the financial industry.
+
+128
+00:12:06,260 --> 00:12:09,920
+It relies on queues between senders and
+receivers for
+
+129
+00:12:09,920 --> 00:12:13,099
+reliability and in delivery of messages.
+
+130
+00:12:14,300 --> 00:12:18,840
+AMQP uses TCP as the transport protocol.
+
+131
+00:12:18,840 --> 00:12:22,440
+It allows a server to initiate
+a connection with the client.
+
+132
+00:12:23,530 --> 00:12:30,080
+Unlike HTTP in which the connection
+has to be initiated by a client.
+
+133
+00:12:30,080 --> 00:12:32,951
+ANQP is flexible.
+
+134
+00:12:32,951 --> 00:12:38,458
+It offers peer-to-peer, client-to-broker
+and broker-to-broker communication.
+
+135
+00:12:42,290 --> 00:12:44,570
+Here is a short overview of the protocol.
+
+136
+00:12:46,380 --> 00:12:51,450
+In this lesson, we learned the basic
+features of M2M communication protocols
+
+137
+00:12:51,450 --> 00:12:55,500
+and studied briefly a set of popular
+real world protocols in this category.
+
+138
+00:12:55,500 --> 00:13:01,555
+In the next lesson, we will learn about
+the use cases for connectivity protocols.
+
+139
+00:13:01,555 --> 00:13:06,314
+[SOUND]

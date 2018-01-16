@@ -1,0 +1,96 @@
+[MUSIC] During this second module, we deal
+with nuclear physics and its application. We'll now discuss radioactivity. In this fourth video, we'll talk
+about nuclear decay in general, and the alpha decay in particular. After watching this video, you will be able to describe the valley
+of stability and its surroundings. To know how to locate and characterize
+the nuclei with respect to this valley, and characterize alpha decays and
+their properties. An unstable nucleus can transform
+itself in a more stable one through radioactive decay. We distinguish three types, historically
+labelled as alpha, beta, and gamma decays. Alpha decay is the spontaneous fission of
+a heavy nucleus into a less heavy one and the nucleus of He-4,
+also called alpha particle. The beta decays are transformation
+between a nuclear neutron into a proton, or vice versa,
+by respectively emitting an electron and its antineutrino or
+a positron and its neutrino. This way, both baryon number and
+lepton number are conserved. This decay is often leave the daughter
+the nucleus in an excited state, and a gamma decays allows it to return
+it to its ground state by emitting one or more photons. Decays are a spontaneous processes. The happen if they tighten
+the binding of a nucleus. Thus very heavy nuclei
+can reduce their mass and increase their binding energy by emitting
+a tightly-bound He-4 nucleus. Nuclei which are rich in neutrons can gain
+a more symmetric state by transforming one of them into a proton
+via a ß- decay. Nuclei, which are rich in protons, can
+correct this asymmetry by a ß+ decay. And excited daughter nuclei can reach
+their ground state by meeting one or more photons. All these reactions take the nucleus
+closer to the valley of stability. This table shows
+the distribution of nuclei with the stable isotopes
+over the periodic system. About 60 radioactive nuclei
+are naturally present on Earth, compared to about 1,000
+radioactive isotopes so far produced in the laboratory. When our planet was formed, we can assume that all these nuclei
+were roughly equally abundant. The absences of certain
+radioactive nuclei today can give us an idea of
+the age of the solar system. This estimate give us an age of
+roughly 10 billion years for the Sun. All nuclei with a shorter lifetime
+have completely disappeared. The naturally present radioactive
+nuclei have a nuclear charge, Z, between 81 and 92. They are characterized by
+an excess of neutrons. Since they are heavy,
+they first undergo an alpha decay, leading to an even larger
+relative excess of neutrons. This then can be fixed by
+subsequent beta decay. The grand daughters are often
+themselves unstable and undergo alpha decay and so on. This results in a chain of alpha and
+beta decays which will continue until the valley of stability in the N-Z
+plane is reached. All of this results in four
+series of alpha emitters where the daughters progressively differ
+by a multiple of four nucleons. We have the Thorium series with
+a mass number which is 4N, the Neptunian series with mass
+number A equal to 4N + 1, the Uranium-Radium series with A equal to 4N + 2,
+and the Uranium-Actinium series
+with A equal to 4N + 3. One of the important applications
+of radioactivity is the dating of organic materials, which can
+work up to several thousand years. We will see this in more
+detail when we speak about radioisotope dating in video 2.7. Let us now discuss the physics
+of alpha decay in more detail. A parent nucleus, P, decays into a daughter
+nucleus D via emission of a He-4 nucleus. This corresponds to a spontaneous fission
+into daughter nuclei of vary asymmetric mass, since the nucleus D is much
+heavier than the He-4. For more details on other fission processes,
+we refer you to the video 2.8. If we consider the parent
+nucleus to be at rest, energy conservation gives us a relation
+between the masses and energies. Since the number of electrons
+is unchanged in the reaction, you can directly use atomic mass for
+this calculation. T_alpha and T_D are the kinetic
+energies of the alpha particle and the daughter nucleus. The gain in binding energy that drives
+the decay is called the Q value. And it is converted into the kinetic
+energy of the decay products. An example of the calculation of
+T_alpha and T_D is given in video 2.4a. Because of the asymmetry in
+the masses the alpha particle takes most of the kinetic energy. The spectra of alpha particles
+coming from the decay of the same isotope can reveal
+intermediate metastable states. One the observes alpha particles
+with slightly different but, of course, quantized energies.
+One also observes gamma ray emission which comes from the decay
+cascade towards the ground state. The parent nucleus can of course also
+directly decay to the ground state without passing by intermediate states. This direct decay results in
+the most energetic alpha particle. An example is shown here for
+the decay chain of Am-241, which is a radioactive source
+often used in the laboratory. The kinetic energy of an alpha
+particle from nuclear decay is typically of the order of 5 MeV. When such a low energy particle
+approaches a heavy nucleus from outside, it cannot penetrate the Coulomb barrier. For a nucleus of mass number about 200,
+it has a typical height of 20 to 25 MeV. So why does the process work
+in the opposite direction? How can an alpha particle traverse
+the Coulomb barrier from the inside? The answer is given by
+the quantum process of tunneling. The probability that
+an alpha particle traverses the Coulomb barrier is of
+the order of 10^-40. But this is the probability of
+traversing on a single trial. This is why a low energy alpha particle from the outside cannot
+penetrate the barrier. The velocity of an alpha particle,
+bound to a nucleus with kinetic energy of about 44 MeV, is not
+relativistic but still impressive. It has a velocity of about
+0.15 speed of light. Confined to a region with a radius of
+about 10^-12 centimeters, the particle bounces off the barrier
+with a frequency of about 4.5 10^21 times per second. The probability of penetration per second is thus
+0.5 10^-18 per second. This quantity is called
+the decay constant lambda, which is the inverse of the lifetime tau. For a typical nucleus we find a 
+lifetime of 10^10 years, which is representative for
+nuclei with alpha decay. The number of nuclei N(t)
+remaining after elapsed time t from an initial sample of N_0 nuclei diminishes
+exponentially according to the decay law. We will give more detail on this
+law in the optional video 2.5a. In the next video, we will talk about
+the other two types of radioactivity, namely beta and gamma decays. [MUSIC]

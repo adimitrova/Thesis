@@ -1,0 +1,113 @@
+[MUSIC] Hello, welcome to the lesson on Machine to
+Machine or M2M communication protocols. What are they, and
+what are their basic characteristics, and which ones are the dominant ones? M2M Communication Protocols
+are application layer protocols that facilitate the transfer of
+messages between two devices. An important distinction between
+connectivity and communication protocols is that M2M connectivity protocols
+facilitated linking of the devices and reside on the link layer, while M2M
+communication protocols facilitate messaging between devices and
+reside on the application layer. These protocols allow devices
+to interoperate with each other. They do this by standardizing the key
+aspects of naming, messaging, and controls. Standardized naming means defining
+how each device will be referred, recognized, or found. Standard messaging determines how
+each message is formatted, so that all the devices can understand it. Standard controls enable the devices
+to control the flow of communication or quality of service, or
+to define the type of a message. Let's have a look at some of the basic
+features of M2M communication protocols. These features allow us to
+differentiate the protocols, and to define their use cases. Communication pattern refers
+to the communication model or paradigm the protocol follows. An example of a communication pattern
+is the request-response model. In this model,
+the client node sends a request to the central server node to
+initiate a connection, and the server responds in a predefined
+pattern depending on the protocol. Another communication pattern
+is the publish-subscribe model, or pub-sub in short. In this paradigm, all the clients during
+or after connection establishment define what type of messages they are interested
+in, generally called topics or classes. Whenever a client,
+a publisher sends a message of a specific topic, the message is
+forwarded to all those clients or subscribers who have expressed
+interest in the topic in question. All application layer protocols
+in the scope of this course assume an underlying transport
+protocol to be present. The choice of a transport protocol is
+important, as it effects the performance, bandwidth, and reliability of
+the M2M communication protocol. The main contenders at TCP and UDP. TCP is used in cases where
+reliability is of key importance. UDP being very simple and taking only
+a few steps to form a connection is preferred if speed is
+the most important factor. Does the protocol offer
+any assurance of delivery? Does it have mechanisms to ensure
+the transmission of messages in uncertain circumstances or
+during unreliable connections? What mechanisms would the protocol
+would rely on to achieve this? The answers to these questions
+define the level of dependability or reliability of the protocol. A web connected cyber physical
+system inherits the problems of the current internet and
+most likely amplifies them, because of it's direct
+connection to the real world. Two of these issues are security and
+privacy. Security is an important differentiating
+factor in the choice of a protocol. Security aspects of systems are discussed
+in detail in later video lectures. Distributed operations means
+that there is no central node to control operation and
+communication of the other nodes. Instead, communication is one to one, where the communicating
+nodes are on equal grounds. Some protocols might request that
+the data goes first to a central point, a server or broker, from which it is then
+distributed to the intended recipient. Being able to know who and
+what is on the network is as important as the ability
+to communicate with them. The protocol may offer means by which
+machines can recognize peers or associated group members in the network. Messages and payload support can be
+a decisive factor in selecting a protocol. Knowing which protocol will easily
+integrate with the current systems is valuable and
+knowing the payload helps in this regard. Current web services and
+technologies benefit from a protocol that offer support for
+typical web payloads, such as HTML, plain text,
+UDF8 and coded text and XML. Based on the features we defined, let's
+look at the dominant protocols today. The constraint application protocol or COAP is a standardized
+request response protocol. It's creators redesign functions from HTTP taking into consideration,
+the target device's CoAP will be used on. That is embedded devices with limited
+processing power, storage, and bandwidth. It also supports publish-subscribe style
+communication and resource discovery. CoAP uses UDP as the transport protocol
+and has a dual layered structure. The transactional layer takes care of
+message handling between nodes, and the request response layer manages
+resources and transmits messages. This enables efficient congestion
+control and reliability over UDP Here you see a short
+overview of the protocol. Hypertext Transport Protocol, HTTP,
+is the backbone of modern world wide web. It is the defacto protocol for exchanging
+information between Internet connected nodes that communicate via hypertext, for
+example, your browser and web server. HTTP sets up the regulations on how
+nodes are going to communicate, and also specifies the content. HTTP relies on TCP as the transport
+protocol for packet transmission. Here, you see a short
+overview of the protocol. The Message Queuing Telemetry Transport,
+or MQTT, was invented by IBM and RCom to collect data from remote
+devices to back up it's server. It was introduced in 1999 by IBM, and it was standardized in 2014. MQTT is meant for lightweight devices, which are constrained by both
+processing power and memory. Besides this, the protocol can
+transmit data over low bandwidth and reliable connection. The static header size
+of MQTT is just 2 bytes. It is an open-source free
+to use standard protocol. MQTT relies on TCP as
+the transport protocol. MQTT is inherently a published
+subscribe protocol. Clients connect to a server to send and receive messages on
+the channels of their interest. The server is called a broker, senders are
+publishers, and receivers are subscribers. Here you see a short
+overview of the protocol. The extensible messaging and
+presence protocol or XMPP was originally a text-based
+messaging protocol for messaging between devices over a network
+using the XML document format. XMPP is being explored for
+Internet of Things by the XMPP standards foundations for
+access control and censor data. It's strong point is it's very familiar
+device at server naming approach. Besides this, it provides end
+to end security, provisioning, and publish subscribe style communication. It is slow, but secure and
+uses TCP as the transport protocol. Here you can see a short
+overview of the protocol. The Data Distribution Service,
+or DDS, is a standardized, publish-subscribe protocol that enables
+devices to communicate in near real-time. DDS has its own interoperability
+protocol called Wire, which enables different implementations
+of DDS to communicate and interoperate. In a DDS environment, anyone can be
+a publisher, subscriber or both. It also offers an extensive quality of
+service support allowing efficient and versatile implementations of
+quality of service policies. It can use either TCP or
+UDP as a transport protocol. Here you see a short
+overview of the protocol. The Advanced Message Queueing Protocol or AMQP has its roots in
+the financial industry. It relies on queues between senders and
+receivers for reliability and in delivery of messages. AMQP uses TCP as the transport protocol. It allows a server to initiate
+a connection with the client. Unlike HTTP in which the connection
+has to be initiated by a client. ANQP is flexible. It offers peer-to-peer, client-to-broker
+and broker-to-broker communication. Here is a short overview of the protocol. In this lesson, we learned the basic
+features of M2M communication protocols and studied briefly a set of popular
+real world protocols in this category. In the next lesson, we will learn about
+the use cases for connectivity protocols. [SOUND]

@@ -1,0 +1,223 @@
+Hi, I'm Smriti Chopra. I am a graduate student at Dr. Egerstedt's
+lab, and I will be your instructor for the Glue Lectures, for the duration of this
+course, which is Control of Mobile Robots. And just a quick idea: what are these Glue
+Lectures? Basically, they're going to kind of
+connect, you know what you learn with Dr. Egerstedt to the quizzes we are
+going to give you. And give you helpful hints about the
+quizzes. Clarify, repeat certain concepts. By that I really mean we, you know, work
+out a few examples, understand the math that goes
+behind some of the lectures, etc. Just to help you guys move along the
+course. And the format is going to be one Glue
+Lecture every week. And the course is seven weeks, so seven
+Glue Lectures. And on a side note Amy LaViers is a former grad student in our lab, and she was last
+year's instructor for the Glue Lectures. So we will be reusing some of her
+lectures. And so in the coming weeks, you know she
+and I are going to share. Between the two of us, we're going to
+teach you guys, out of the seven lectures. But whatever questions, etc, you have, you
+direct them to me, because well she's not here, and I'll be answering those
+questions for you on the forums, etc. And with that, let's get into the
+lectures. The first one is Dynamical Models. This week with Dr. Egerstedt, you guys
+kind of, you know, went through this introductory
+notion of what a model is. And he tells you that really, a model is
+basically, you know, something that describes how your
+system changes or evolves with time. And your system could be a robot, for example, and a model is just going to
+describe, let's say, how the positions change with
+time, or how the angle, angles change with time,
+etc. And the whole idea behind controls is that we're going to kind of try and
+influence this change to make our system do something we
+want to do. And we're going to do this by injecting
+controls. But let's go really down to the basics.
+What really is a model? And before we do that, let's do a little
+exercise in derivatives. So here we have, let's say, position x,
+with the respect to time, is given by this
+exponential function. Now this is in its general form. I'm saying that let's say me, for example,
+my position is x of t, and I wake up at time t equal to 0. I'm at position 10. So and I'm saying that my position evolves
+with time with respect to this function here, and it's
+given by this graph here. That's okay. That's simple. And now I can take the derivative of this
+position with respect to time, right? And I get what, what is the velocity. And you'll see this is actually 2x of t,
+really. And then you can do this further on, and
+you can take more derivatives, and now we have the
+acceleration, which is 4x of t. One thing I want to point, point out
+really quick here is that x dot of t equal to 2x of t, for
+example. Now what is this? This is really nothing but a differential
+equation. Basically something that relates a
+variable x to its derivatives, second, third whatever. So in this case, x dot equal to 2x of t is
+a differential equation. Something he mentioned in class, right? Okay. So this was just an exercise in
+derivatives. You guys should be able to take
+exponentials and their derivatives, etc. No problem. We saw the graphs related to these, as
+well. But in action, what does it really mean? So I'm telling you that my position with
+respect to chi, time changes like this: 10e to the power
+2t. What it really means is, let's say that's
+me, or that's a pink ball, whatever. And now I draw this line, which is the x
+axis. And I start at 10, which is where I wake
+up, because you guys see, if we're here in this equation, if you put x at time 0,
+you'll get 10, e to the power 0, which is 10. So at time 0, when I wake up, I'm at 10.
+Right? And now, the whole point is that let's say
+at time t equal to 0, like I said, we wake
+up. Now I say start, right? And then I start moving. And as my time increases, my position is
+going to keep changing with respect to this
+function here. And because it's exponential, let's say at
+time point 1, I'm here. And then I jump really high at point 2, and then even
+further. because exponentially my position is
+changing. So, so from graphs, all of a sudden we see how it maps onto, these equations map onto
+actual motion. That's all I wanted to really show in
+this. But now, instead, I tell you that, you
+know what, I'm not going to tell you how x changes with
+respect to time. I'm instead going to give you this set of equations, which is a
+differential equation, and then an initial condition where I wake
+up. And now I want to find what my x of t is
+going to be, given this, which is x dot of t and
+x of 0. So in this case what do you do? Well, what you do is, and this is what you
+did in your lectures as well, just to see how
+you evolve with res, with time, you discretize the
+world. And real quick, let's say this is your
+time axis. And I'm going to divide up this time axis
+into, you know, delta t chunks, where each chunk is
+0.5 seconds, or whatever. So it's very simple. I just divide up the axis. And now, I'm going to say that my t is
+actually given by this k delta t. This is how you discretize, right? And k becomes a counter.
+Why? Because when k is equal to 0, my time is
+0. And when k is 1, it's 0.5.
+When k is 2, I'm at one, etc. So k becomes kind of like a counter,
+right? All right.
+Now let's see how the ball is moving. So we know that we discretized time. What we want to see is now, as I move k
+from 0, 1, 2, 3, how does my ball move? And sort of extract x of t from it.
+Right? Okay. So again, this is our equation in
+continuous time. So remember I told you I have given you
+only two things. These are the two things that I've given
+you. Okay, so I know this guy here, that at
+time 0, I'm here. And now I have the equation, the
+differential equation. Well, you can discretize this differential equation through something called
+Taylor's, Taylor extension, which you guys did with Dr. Egerstedt, which basically is
+given by this equation here. And a quick note. What it really is doing is, it's kind of
+saying, x k plus 1 is nothing but x times k plus 1 times delta
+t. Right?
+And xk is nothing but x at time k delta t. So it's, by incrementing k, what we are
+doing is we are finding out at the next time instant, discrete dimension
+where should I be, depending on my previous time
+instant. That's all this equation is really doing. A good thing to note here, though, is that
+we will be using just the first two terms of the Taylor expansion, which
+is what you guys did in the lectures as well. This expansion is really an approximation, because you
+see these dot dot dot here it just goes on and on. You keep taking derivatives, and you keep
+going on, so obviously the more terms you use, the better your
+approximation of x of t will be. But as of now, we're just going to use the
+first two terms of the expansion. So let's see. Here we have x of t is 2x, delta t is 0.5,
+we know this, t is k delta t, and now let's put this entire
+thing into this equation of ours, the discrete
+time equation. And we get this guy here, x k plus 1 is
+equal to 2xk. You guys should do this yourselves.
+It's really simple. But just, you know, plug in values.
+You get this one equation. And this is now our discrete time update
+equation. And how do we use this? Well, we are simply going to say okay, so
+at k is equal to 0, x of 0 is 0, and now xk plus 1, which is x1, will be 2 times x
+of 0, which is actually 20, right? So we saw that at k is equal to 1, which is actually time point 0.5, I jumped from
+here to here. Okay?
+And now I keep incrementing k. So now I take k is equal to 1, and I
+calculate my x2, which is now 40. And then I take k is equal to 2, and I
+increment, and I get x3, which is 80. For all you guys, you guys can kind of see that this is really a linear
+approximation. It's not changing exponentially, and like
+we thought it should, because we know that it should change
+exponentially, but it's not. And this is because, like I said, the more
+terms you take in the Taylor series for your approximation, the better the
+approximation. So here, since we took just two terms,
+it's a kind of linear approximation. If I take more terms and added, you know, acceleration, etc, then your approximation
+would have been better. And so, what we actually just found out,
+was nothing more than a dynamical model, and how you kind of
+solve it to see how your system is evolving. So your differential equation and an
+initial condition, or just a condition, basically telling you this is where I am
+at a certain time. These two things are more than enough to
+find out how your system is evolving with respect to time, and what
+is your x of t. And in general, general form, this is, how
+you say, is your dynamical model. Basically, it's an equation x star of t. That is a function of its, you know, state
+or time. And later on, this is where you put in
+your control input, you as well, when you guys go later
+into the course. So you kind of, like I said, influencing
+the change x dot of t, to make x of t do whatever you
+want. Right now we're not dealing with control,
+so it's just simply x dot of t is given by
+something. And you have an equation here x t star is
+x star, which is basically saying that at some
+time, I'm going to tell you where you should be in
+space. And with just this information, you should
+be able to evolve x of t, and see how your state is changing
+with time. So that was pretty simple. Punchline. This is the following dynamical model,
+which we've been solving all this while. We know how x evolves. But we know how x evolves numerically,
+right? We discretize the world.
+And we saw how x should evolve as we move the
+counter from 1, 2, 3, 4, etc. But we didn't really get the equation out. You know, the mathematical expression for
+x of t, which we know is the exponential 2t,
+10. We know that this was the actual solution,
+but we really didn't get this equation, pretty
+equation out. What we got was a list of basically times, and where x
+should land up, numerical solutions. So if you had to, let's say, get the
+equation out, what do you do? Well, you integrate. And again, like I said, we know already
+the solutions. That's our hint.
+All we are given is this. For all of those, this is not important
+for the course, but for all those people who want to see how
+you integrate and get, you know, x of t, we can go over it really
+quick here. It's really nothing but, of course, an
+integration. Let's say dx by dt is 2x. You kind of separate the variables real
+quick. So you say over x is equal to 2dt.
+Integrate both sides. This is actually your logx is equal to two
+t plus c, c is your constant. And now this is an equation you've got in which you're going to plug
+in your initial condition. So log10 is equal to c. And from here you say, okay, so let me put
+all this back into my main equation. Logx becomes two t plus log10.
+And now you kind of, you know, shift terms here and there, and you get x is
+equal to 10e to the power 2t, x of t. So now you guys even saw that, you know, if you don't want to do the
+whole discretizing the world and kind of simulating where you
+should be, instead you can integrate. And a word of caution here, that you cannot always integrate and find the
+solution. Sometimes you have to rely on numerical
+methods, because analytical solutions may not even
+exist, you know? You may not get pretty equations for
+dynamical models, etc. But here, just to kind of show you that,
+you know, you can do it. Just integrate, and you'll get the answer. Again, it's not important for the course,
+but woo, we got it. But what is important for the course is that even
+though maybe, okay, we won't ask you to integrate, what we'll do instead is
+we'll say, okay, here is your model. And I'm going to give you what I call a
+candidate solution, x of t should be 10e to the
+power 2t. And now what you need to do is figure out, is this indeed a solution to the model or
+not. And for that, there are just two simple
+steps that you do. First is called the initial condition
+check. What does that mean? It basically means that I'm given this candidate solution, and
+then within the solution, I'm going to kind of
+put in my initial condition x of 0 and see if
+I actually get 10 or not. And here I do get 10, so it satisfies this
+equation, my x of t. And then the second check is the
+differential equation check. And what is that? That is really nothing but okay, again I
+have my candidate solution, but I'm going to now take the
+derivative of that candidate solution. And 2e to the power of 2t, which is really my 2 times x, and see if it satisfies this
+equation. And it does. So this is another technique. So in case, you know, given a model, you
+don't want to find out through integration or numerical
+methods what your x of t should be, but instead I'm telling you what it
+should be, this is how you check or confirm that it is indeed
+a solution or not. Okay. So the take home message of this entire lecture is really first,
+dynamical models. What are dynamical models? I hope I've kind of given you guys an
+idea, and made you sort of comfortable with the idea
+of, you know, models. And for example, you have something like
+this, right? Okay, then how do we solve them? We solve, one we can do by numerical
+solving, which is numerically discretize the world
+and solve it. And then, another is analytically, through
+integration, right? And then the third thing, which is very
+important, is that I give you the model and then I say okay, this is
+the candidate solution. You check the solution through two checks,
+the first being initial condition, second
+being differential equations. And sort of try and verify that this candidate solution is indeed
+satisfying the model. And this is a homework assignment for you guys. For this model, see if you can
+numerically, analytically, and this whole checking
+thing, whether, you know, you can kind of solve it and see if
+you get this equation or not. And before we wrap up this lecture,
+there's just one concept more, which is the equilibrium
+point concept, which I want to introduce. Which is really nothing but basically this
+concept that if my state x wakes up here at this point, or at this position, or at this value, it stays
+there. As simple as that. So it's really not anything more than
+saying that my x dot of t is going to be 0. So to find an equilibrium point, you do
+simply x dot of t equal to 0, and find the value of x. And like I said, now if, if I was to wake
+up here, or if at, let's say, time t is equal to 0 I or 3, or whenever I wake
+up, I am at this equilibrium point. Because my x dot of t is 0 and there's no
+change, my change is basically 0. I will stay there.
+So it's really simple. So in our case, in the dynamical model case, x is equal to negative 1 by 3
+is your equilibrium point. So if you're asked, you know, find an
+equilibrium point, simply just put x dot equal to 0, or whatever
+function you have here equal to 0, and find the values
+of your state, x in this case, and that will be
+your equilibrium point. And also, with that check the forums. Good luck with Quiz One.
+And bye bye.

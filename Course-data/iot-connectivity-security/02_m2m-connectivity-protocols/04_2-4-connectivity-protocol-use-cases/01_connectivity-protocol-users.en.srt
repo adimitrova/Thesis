@@ -1,0 +1,556 @@
+1
+00:00:00,000 --> 00:00:05,279
+[MUSIC]
+
+2
+00:00:05,279 --> 00:00:07,430
+Hello, welcome back.
+
+3
+00:00:08,520 --> 00:00:11,480
+In this lesson,
+we will talk about the parameters and
+
+4
+00:00:11,480 --> 00:00:17,242
+use cases that will effect your selection
+of an appropriate connectivity solution.
+
+5
+00:00:17,242 --> 00:00:22,010
+We will first define the criteria and
+then classify the protocols based on that.
+
+6
+00:00:23,430 --> 00:00:27,360
+The very first thing you need to
+do is define your project's need.
+
+7
+00:00:29,030 --> 00:00:33,430
+Defining your need helps you in
+selecting a protocol that offers
+
+8
+00:00:33,430 --> 00:00:38,110
+the right amount of compromise
+between you desired criteria.
+
+9
+00:00:39,400 --> 00:00:42,717
+Some of these have been discussed
+in detail in another video.
+
+10
+00:00:42,717 --> 00:00:45,770
+Let's look at some of the basic ones here.
+
+11
+00:00:48,855 --> 00:00:54,630
+Range defines the physical distance at
+which a protocol can offer connectivity.
+
+12
+00:00:56,110 --> 00:00:58,770
+If you want to build a citywide network,
+
+13
+00:00:58,770 --> 00:01:01,640
+you need a solution that
+has the longest range.
+
+14
+00:01:03,180 --> 00:01:07,663
+If you want a room base network, you need
+a solution that offers a shorter range.
+
+15
+00:01:07,663 --> 00:01:13,470
+Longer range generally comes at the cost
+of power consumption and data rate.
+
+16
+00:01:13,470 --> 00:01:17,250
+This is not always the case, however.
+
+17
+00:01:17,250 --> 00:01:20,195
+There certain exceptions,
+as we will see later.
+
+18
+00:01:20,195 --> 00:01:25,591
+If a protocol supports mesh networking,
+you can create a long range
+
+19
+00:01:25,591 --> 00:01:30,523
+network even if the range of
+each individual device is short.
+
+20
+00:01:33,159 --> 00:01:35,805
+Data rate is the amount of data,
+
+21
+00:01:35,805 --> 00:01:40,322
+the protocol will allow you
+to transfer in one second.
+
+22
+00:01:40,322 --> 00:01:45,402
+Generally, you want to choose
+a protocol that offers data rate close
+
+23
+00:01:45,402 --> 00:01:50,236
+to your needs as higher data rates
+means more power consumption.
+
+24
+00:01:53,754 --> 00:01:56,970
+How much power does your protocol consume?
+
+25
+00:01:58,630 --> 00:02:01,860
+If your device is battery powered,
+
+26
+00:02:01,860 --> 00:02:06,110
+you would want to choose the protocol
+that has the lowest power consumption.
+
+27
+00:02:07,220 --> 00:02:11,041
+If your device is directly
+connected to the power grid,
+
+28
+00:02:11,041 --> 00:02:13,332
+this might not be an issue at all.
+
+29
+00:02:13,332 --> 00:02:17,125
+Remote devices are generally
+battery powered and
+
+30
+00:02:17,125 --> 00:02:21,644
+require a solution that has
+the lowest power consumption.
+
+31
+00:02:25,435 --> 00:02:29,781
+Cost in terms of dollars
+defines how much the addition
+
+32
+00:02:29,781 --> 00:02:32,300
+of a certain module will cost.
+
+33
+00:02:36,681 --> 00:02:40,191
+Complexity is defined
+here in terms of time and
+
+34
+00:02:40,191 --> 00:02:46,050
+resources that are required to make
+the protocol functional in your design.
+
+35
+00:02:47,520 --> 00:02:53,280
+Base on the criteria we defined,
+let's classify the connectivity protocols.
+
+36
+00:02:54,610 --> 00:02:58,800
+GSM or cellular technologies
+offer the longest ranges for
+
+37
+00:02:58,800 --> 00:03:03,680
+point to point communications
+after several kilometers.
+
+38
+00:03:03,680 --> 00:03:09,170
+They also offer very high data rates
+starting from a few kilobytes per second,
+
+39
+00:03:09,170 --> 00:03:11,957
+like Edge, enhanced data rates for
+
+40
+00:03:11,957 --> 00:03:16,390
+GSM evolution to several megabytes
+per second, for example, 4G LTE.
+
+41
+00:03:18,490 --> 00:03:23,679
+This, of course, comes at a cost of higher
+price, complexity and power consumption.
+
+42
+00:03:25,240 --> 00:03:31,443
+There are however, other technologies
+that offer long range are cheaper and
+
+43
+00:03:31,443 --> 00:03:35,655
+very low power, but
+also have a very low data rates.
+
+44
+00:03:35,655 --> 00:03:42,179
+They are categorized as LPWANs
+orLow-Power Wide-Area Networks.
+
+45
+00:03:42,179 --> 00:03:49,603
+Example of these are LoRa, Long Range
+Wireless Data Telemetry and SigFox.
+
+46
+00:03:51,718 --> 00:03:53,144
+On the other hand,
+
+47
+00:03:53,144 --> 00:03:58,680
+we have short range technologies that
+offer both high and low data rates.
+
+48
+00:03:59,900 --> 00:04:03,530
+The difference between them is again,
+power consumption and cost.
+
+49
+00:04:05,530 --> 00:04:08,338
+Low data rate technologies
+consume significantly less power.
+
+50
+00:04:08,338 --> 00:04:12,277
+For example, Bluetooth,
+low energy and NFC or
+
+51
+00:04:12,277 --> 00:04:18,298
+near-field communication and
+are cheaper and less complex to deploy.
+
+52
+00:04:20,689 --> 00:04:23,408
+High data rate ones like Wi-Fi and
+
+53
+00:04:23,408 --> 00:04:27,074
+Ethernet are complex and
+power inefficient.
+
+54
+00:04:30,424 --> 00:04:35,290
+The three very high data rate
+technologies that we have
+
+55
+00:04:35,290 --> 00:04:38,690
+are cellular, Wi-Fi and Ethernet.
+
+56
+00:04:39,840 --> 00:04:43,106
+All of them offers speeds of
+several megabytes per second.
+
+57
+00:04:43,106 --> 00:04:48,180
+Ethernets is fixed or
+wired while the other two are wireless.
+
+58
+00:04:50,794 --> 00:04:54,841
+Medium bandwidth technologies are Zigby,
+
+59
+00:04:54,841 --> 00:04:58,893
+Bluetooth and Bluetooth Low Energy or BLE.
+
+60
+00:04:58,893 --> 00:05:02,674
+These have a short range,
+but a good battery life.
+
+61
+00:05:05,082 --> 00:05:09,937
+There are some technologies that
+you would use only for sensing or
+
+62
+00:05:09,937 --> 00:05:13,833
+tagging as they offer short range,
+low data rates.
+
+63
+00:05:13,833 --> 00:05:18,777
+And generally,
+very low storage capacity on each node,
+
+64
+00:05:18,777 --> 00:05:22,580
+just enough to identify the item.
+
+65
+00:05:22,580 --> 00:05:29,181
+For example, we could store the device ID,
+web link or a few bytes of text.
+
+66
+00:05:29,181 --> 00:05:33,144
+NFC and RFID are in this category.
+
+67
+00:05:36,523 --> 00:05:40,497
+Power consumption is a very
+important factor in deciding
+
+68
+00:05:40,497 --> 00:05:42,409
+a connectivity solution.
+
+69
+00:05:44,779 --> 00:05:49,187
+Most of the cyber-physical
+systems comprise devices or
+
+70
+00:05:49,187 --> 00:05:55,152
+nodes that are links wirelessly and
+may not have direct access to power like,
+
+71
+00:05:55,152 --> 00:05:59,140
+for example, remotes sensing solutions.
+
+72
+00:05:59,140 --> 00:06:04,780
+In such a case, choosing the most
+power efficient solution is suggested.
+
+73
+00:06:05,970 --> 00:06:09,550
+This comes at the disadvantage
+of lower data rates.
+
+74
+00:06:10,630 --> 00:06:14,881
+Here on the screen,
+we have divided the technologies into two
+
+75
+00:06:14,881 --> 00:06:18,821
+categories where the differentiating
+factor is range.
+
+76
+00:06:18,821 --> 00:06:22,938
+Power consumption and
+data rates vary, but not that much.
+
+77
+00:06:22,938 --> 00:06:28,185
+Compared to Wi-Fi and Ethernet,
+protocols like NFC, LoRa and
+
+78
+00:06:28,185 --> 00:06:32,762
+Bluetooth have significant
+lower power consumption.
+
+79
+00:06:34,760 --> 00:06:39,918
+Cost per dollar is a factor,
+if you are going to mass deploy
+
+80
+00:06:39,918 --> 00:06:45,407
+a large set of devices or
+if you aim at commercial production.
+
+81
+00:06:45,407 --> 00:06:50,315
+As we discussed earlier,
+you have to define your need first.
+
+82
+00:06:50,315 --> 00:06:54,930
+That is what you essentially
+require from your system.
+
+83
+00:06:54,930 --> 00:06:59,610
+This requirement analysis will also
+facilitate determining the cost.
+
+84
+00:07:00,830 --> 00:07:05,292
+If your need is only a sensing solution,
+you can go with LoRa or ZigBee.
+
+85
+00:07:06,490 --> 00:07:12,030
+If it's identification only,
+you can use NFC, which is even cheaper.
+
+86
+00:07:13,140 --> 00:07:18,214
+If your systems require high data rates
+and are stationary, use Ethernet.
+
+87
+00:07:18,214 --> 00:07:22,646
+The cost will depend on
+the needs of the system.
+
+88
+00:07:25,935 --> 00:07:29,560
+Here we have an example case,
+please read it through.
+
+89
+00:07:29,560 --> 00:07:31,627
+What would your solution be?
+
+90
+00:07:36,188 --> 00:07:40,946
+There is actually no unique solution,
+because you could, in a way or
+
+91
+00:07:40,946 --> 00:07:45,868
+another utilize any of these
+technologies to accomplish the task, but
+
+92
+00:07:45,868 --> 00:07:48,920
+we will look for
+the most optimal solution.
+
+93
+00:07:50,170 --> 00:07:52,443
+First, we have to identify your needs.
+
+94
+00:07:52,443 --> 00:07:54,684
+In this case, you have three.
+
+95
+00:07:54,684 --> 00:07:58,150
+The range is one kilometer.
+
+96
+00:07:59,430 --> 00:08:04,190
+Update frequencies once per hour and
+it's only about weather.
+
+97
+00:08:04,190 --> 00:08:07,502
+So, the date is already
+actually very low and
+
+98
+00:08:07,502 --> 00:08:10,563
+you want to see the updates on your phone.
+
+99
+00:08:10,563 --> 00:08:14,766
+Taking these into account, we can see that
+
+100
+00:08:14,766 --> 00:08:19,918
+Bluetooth offers the data rate,
+but not the range.
+
+101
+00:08:19,918 --> 00:08:23,364
+Wi-Fi doesn't offer the range either,
+
+102
+00:08:23,364 --> 00:08:28,200
+although it offers internet
+connectivity and ubiquity.
+
+103
+00:08:30,020 --> 00:08:34,710
+ZigBee offers the range and
+the required data rate and
+
+104
+00:08:34,710 --> 00:08:38,050
+power efficiency as an added bonus, but
+
+105
+00:08:38,050 --> 00:08:42,970
+there is a higher probability that it
+will not be supported by your phone and
+
+106
+00:08:42,970 --> 00:08:47,260
+you will need a gateway to connect
+it to the internet, for example.
+
+107
+00:08:48,680 --> 00:08:50,910
+This will increase cost and complexity.
+
+108
+00:08:52,720 --> 00:08:56,520
+GSM or
+cellular technology offers the range,
+
+109
+00:08:56,520 --> 00:09:00,280
+data rate and
+the ability to be on the same network.
+
+110
+00:09:01,500 --> 00:09:03,950
+As a once an hour update schedule,
+
+111
+00:09:03,950 --> 00:09:09,535
+it can get the weather as a text message
+from the weather station to your phone.
+
+112
+00:09:09,535 --> 00:09:13,754
+So, this solution fulfills your
+needs in the least complex way.
+
+113
+00:09:13,754 --> 00:09:17,160
+And therefore,
+it is the best one for this case.
+
+114
+00:09:18,660 --> 00:09:22,776
+In this lesson, we learned how to choose
+the right connectivity solution for
+
+115
+00:09:22,776 --> 00:09:24,311
+a cyber-physical system.
+
+116
+00:09:24,311 --> 00:09:25,538
+In the next video,
+
+117
+00:09:25,538 --> 00:09:30,076
+we will learn about choosing
+the right M2M communication protocol.
+
+118
+00:09:30,076 --> 00:09:30,576
+[MUSIC]

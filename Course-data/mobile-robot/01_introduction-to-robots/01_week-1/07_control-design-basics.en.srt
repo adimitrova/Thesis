@@ -1,0 +1,463 @@
+1
+00:00:00,000 --> 00:00:04,925
+Okay.
+So, so far in the course, we have mainly
+
+2
+00:00:04,937 --> 00:00:13,375
+chit-chatted about things. We've seen some
+models and we have now a model of a, a
+
+3
+00:00:13,387 --> 00:00:21,725
+cruise controller or at least how the
+controller input affects the velocity of a
+
+4
+00:00:21,737 --> 00:00:26,970
+car. We see it here, x dot was c over m
+times u. Where x was the velocity, u was
+
+5
+00:00:26,982 --> 00:00:31,830
+the applied input, and c was some unknown
+parameter, and m was the mass of the
+
+6
+00:00:31,842 --> 00:00:36,970
+vehicle. We also talked a little bit about
+what we wanted the controller to do. So
+
+7
+00:00:36,982 --> 00:00:42,130
+now, let's start designing controllers.
+Let's actually do it. No more excuses.
+
+8
+00:00:42,242 --> 00:00:47,805
+What we want, of course, is that x should
+approach r. And recall, again, that r was
+
+9
+00:00:47,817 --> 00:00:52,805
+the reference velocity that we wanted the
+car to get to. And x is the actual
+
+10
+00:00:52,817 --> 00:00:57,630
+velocity. And typically, in control
+design, you talk about asymptotic
+
+11
+00:00:57,642 --> 00:01:03,055
+properties, which is fancy speak for when
+t goes to infinity. So, what we want, is,
+
+12
+00:01:03,167 --> 00:01:08,485
+after a while x should approach r. The
+velocity should approach the reference
+
+13
+00:01:08,497 --> 00:01:13,320
+velocity. Or another way of saying that is
+that the error, so the mismatch or
+
+14
+00:01:13,332 --> 00:01:18,195
+imbalance between the 2 two velocities
+should approach 0. That's what we want.
+
+15
+00:01:18,302 --> 00:01:24,166
+So, I am going to give you a controller
+here. This is attempt 1. I have picked
+
+16
+00:01:24,178 --> 00:01:29,274
+some values for, you know, how hard I want
+to hit the gas pedal. And I'm going to say
+
+17
+00:01:29,286 --> 00:01:34,379
+that, if the error is positive, so
+positive error means that the reference is
+
+18
+00:01:34,391 --> 00:01:39,675
+bigger than the state, which means that
+we're driving slower than we should. Then,
+
+19
+00:01:39,784 --> 00:01:45,325
+let's hit the gas. And if the error is
+negative, meaning that the velocity, the
+
+20
+00:01:45,337 --> 00:01:51,238
+actual velocity of the car is greater than
+the reference velocity, which means we're
+
+21
+00:01:51,250 --> 00:01:56,536
+going too fast, let's brake. And if we're
+perfect, let's do nothing. Fine.
+
+22
+00:01:56,536 --> 00:02:02,428
+So, take a second to stare at this and see
+what you think. Is this going to work or
+
+23
+00:02:02,440 --> 00:02:08,335
+not? Okay, a second is up let's take a
+look. Yeah, it works beautifully. I put
+
+24
+00:02:08,347 --> 00:02:15,200
+the reference velocity to 70 so it's up
+here, here is 70. This is the actual
+
+25
+00:02:15,212 --> 00:02:21,550
+velocity of the car and look at what the
+car is doing. It's basically starting down
+
+26
+00:02:21,562 --> 00:02:26,615
+somewhere and then increasing up to 70 and
+then it's remaining flat around 70. So,
+
+27
+00:02:26,627 --> 00:02:31,395
+that's, that's awesome. It's doing what it
+should be doing. Now, I'm calling this
+
+28
+00:02:31,407 --> 00:02:36,278
+bang-bang control and that's actually a
+technical term from doing things like u
+
+29
+00:02:36,353 --> 00:02:42,105
+max and negative u max. You're switching
+between two extremes. so this seems to be
+
+30
+00:02:42,117 --> 00:02:48,225
+easy peasy and there's no need to take a
+course on controls and mobile robots. Now,
+
+31
+00:02:48,347 --> 00:02:54,150
+let's see what the control signals is
+actually doing. Let's see what the control
+
+32
+00:02:54,162 --> 00:02:59,500
+values were that generated this nice and
+pretty plot. Well, they look like this.
+
+33
+00:02:59,612 --> 00:03:04,925
+This ladies and gentlemen is miserable.
+Even though the car was doing the right
+
+34
+00:03:04,937 --> 00:03:09,369
+thing in terms of the velocity, I had u
+max be a 100, so negative max is minus a
+
+35
+00:03:09,369 --> 00:03:15,050
+100 and first of all, we are accelerating
+up for a while, until we hit the right
+
+36
+00:03:15,062 --> 00:03:21,145
+velocity. And then, we start switching
+wildly between plus and minus a 100. Well,
+
+37
+00:03:21,270 --> 00:03:27,742
+when the error was 0, the u was supposed
+to be 0, but the error is never going to
+
+38
+00:03:27,754 --> 00:03:33,459
+be exactly 0. Just ain't going to happen,
+and this is bad, because what's going on?
+
+39
+00:03:33,555 --> 00:03:37,794
+Well, first of all, we get a really bumpy
+ride. We're going to be tossed around in
+
+40
+00:03:37,806 --> 00:03:41,827
+the car, backwards, forwards, backwards,
+forwards, because of all these
+
+41
+00:03:41,839 --> 00:03:46,164
+accelerations that are being induced by
+these, these extreme control signals.
+
+42
+00:03:46,260 --> 00:03:50,551
+We're also burning out the actuators.
+We're asking the car to respond extremely
+
+43
+00:03:50,563 --> 00:03:55,646
+aggressive and for no good reason. I mean,
+we're basically doing a lot of work when
+
+44
+00:03:55,658 --> 00:04:00,738
+we're very close to perfect. So, this is
+actually not a particularly good control
+
+45
+00:04:00,750 --> 00:04:06,106
+design. And the problem is exactly this of
+overreaction to small errors. Even though
+
+46
+00:04:06,118 --> 00:04:10,834
+the error is tiny, as long as it's
+positive, we're slamming gas as hard as we
+
+47
+00:04:10,846 --> 00:04:16,457
+can. so we somehow need to change this
+design. So, how shall we do that? Well,
+
+48
+00:04:16,572 --> 00:04:22,130
+the easiest thing to do is to say, you
+know what, when error is small, let's have
+
+49
+00:04:22,142 --> 00:04:27,129
+the control signal be small. In fact,
+here's my second attempt. u is k times e,
+
+50
+00:04:27,141 --> 00:04:32,546
+for some positive k, e is the error.
+Positive error means we're going too slow,
+
+51
+00:04:32,852 --> 00:04:38,076
+u should be positive. Negati ve error
+means we're going to fast, u should be
+
+52
+00:04:38,088 --> 00:04:43,905
+negative. So this is a much cleaner
+design. It's what's called it's, it's a
+
+53
+00:04:43,917 --> 00:04:49,687
+smooth feedback law. It's actually linear
+feedback in the error, and this seems to
+
+54
+00:04:49,699 --> 00:04:55,865
+be much more reasonable because small
+error yields small control signals, which
+
+55
+00:04:55,877 --> 00:05:00,295
+is what we wanted. Nice and smooth. We're
+not going to wildly fluctuate in our
+
+56
+00:05:00,307 --> 00:05:04,710
+controller. And, in fact, this is called a
+P regulator, where P stands for
+
+57
+00:05:04,722 --> 00:05:09,790
+proportional because the control signal,
+the input, u, is directly proportional to
+
+58
+00:05:09,802 --> 00:05:15,124
+the error through this k controlled gain.
+So, here is a completely different and
+
+59
+00:05:15,136 --> 00:05:20,488
+possibly better way of doing it. This is
+what the P-regulator in action looks like.
+
+60
+00:05:20,598 --> 00:05:25,806
+So, it's nice and smooth, right? It seems
+even stable. Stable, again, we haven't
+
+61
+00:05:25,818 --> 00:05:30,732
+really defined it, but it's clearly we're
+not blowing up the course. So, nice and
+
+62
+00:05:30,744 --> 00:05:36,179
+smooth and stable. Now, here is a little
+problem. You see what it says up here? It
+
+63
+00:05:36,191 --> 00:05:42,272
+says 60 and I had my reference be 70. So,
+even though we're nice and smooth, we
+
+64
+00:05:42,284 --> 00:05:48,501
+actually did not hit the target value. The
+reference signal was supposed to be 70,
+
+65
+00:05:48,625 --> 00:05:54,420
+and we got to 58 or so. so even though
+we're stable and smooth, we're not
+
+66
+00:05:54,432 --> 00:06:00,705
+achieving tracking. And here is the
+problem. I actually added a term to the
+
+67
+00:06:00,717 --> 00:06:07,135
+model and this is a term that really
+reflects wind resistance because here is
+
+68
+00:06:07,147 --> 00:06:13,760
+the acceleration of the car, this is our
+term. Well, if we're going really, really
+
+69
+00:06:13,772 --> 00:06:17,838
+fast, we're going to encounter wind
+resistance. So, add it a little bit of
+
+70
+00:06:17,850 --> 00:06:22,031
+wind resistance. This says that if we're
+going positive and fast, then we're
+
+71
+00:06:22,043 --> 00:06:26,102
+getting a negative force, we, meaning,
+we're being slow down a little bit and
+
+72
+00:06:26,114 --> 00:06:30,467
+gamma is some term or some coefficient
+that again we don't know. And this was the
+
+73
+00:06:30,479 --> 00:06:35,740
+model I used when I simulated the
+controller. and somehow, the P-regulator
+
+74
+00:06:35,752 --> 00:06:40,740
+wasn't strong enough to, to deal with
+this, and in fact, let's see what happens.
+
+75
+00:06:40,847 --> 00:06:45,690
+At steady state, so steady state means
+when nothing changes anymore, and if for
+
+76
+00:06:45,702 --> 00:06:51,090
+your call from the plot, after awhile, x
+stopped varying. At steady state, x is not
+
+77
+00:06:51,102 --> 00:06:56,865
+varying. Well, another way of saying that,
+is that the time derivative of x is 0. So,
+
+78
+00:06:56,877 --> 00:07:02,515
+at steady state, x is not varying, which
+means that this term here has to be equal
+
+79
+00:07:02,527 --> 00:07:08,235
+to 0. And this is the model right? Well, I
+know what u is. u is equal to k times
+
+80
+00:07:08,247 --> 00:07:13,580
+error, which is r minus x. So, I'm
+plugging in u there. And I'm saying that
+
+81
+00:07:13,592 --> 00:07:19,550
+this thing has to be equal to 0. Well, if
+I write down the corresponding equation
+
+82
+00:07:19,562 --> 00:07:25,405
+now that says that, this term here has to
+be equal to 0, then I get this. Well, I
+
+83
+00:07:25,417 --> 00:07:31,075
+can do even better than that. What I get
+is that x, let me get rid of the red stuff
+
+84
+00:07:31,087 --> 00:07:36,050
+there, x is now going to be, ck divided by
+ck plus m gamma times r, and this, for all
+
+85
+00:07:36,062 --> 00:07:41,445
+these coefficients being positive, is
+always strictly less than r. Which means,
+
+86
+00:07:41,552 --> 00:07:46,565
+that at steady state, the velocity is not
+going to be, it's not going to make it up
+
+87
+00:07:46,577 --> 00:07:51,920
+to the reference velocity. And we can see
+that if we make k really, really, really
+
+88
+00:07:51,932 --> 00:07:56,800
+big, then these two terms are going to
+dominate and we're going to get closer and
+
+89
+00:07:56,812 --> 00:08:02,073
+closer to having this complicated thing,
+go to r. So, as k becomes bigger, we're
+
+90
+00:08:02,085 --> 00:08:07,478
+getting closer to r, which means we're
+having a stronger gain. But we're never,
+
+91
+00:08:07,490 --> 00:08:13,112
+for any finite value of the gain, going to
+actually make it up to the reference. So,
+
+92
+00:08:13,124 --> 00:08:18,517
+something is lacking and next time, we're
+going to see what it is that is lacking to
+
+93
+00:08:18,529 --> 00:08:21,337
+actually achieve tracking and stability.

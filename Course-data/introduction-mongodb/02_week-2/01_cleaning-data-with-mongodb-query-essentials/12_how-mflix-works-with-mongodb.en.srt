@@ -1,0 +1,543 @@
+1
+00:00:00,000 --> 00:00:04,731
+From this course title, you might
+get an impression that you will be
+
+2
+00:00:04,731 --> 00:00:09,381
+building a bunch of codes and
+you'll actually be building an app.
+
+3
+00:00:09,381 --> 00:00:11,717
+Well, that is almost true.
+
+4
+00:00:11,717 --> 00:00:17,498
+In reality, we are going to provide
+you with an app, a backbone app.
+
+5
+00:00:17,498 --> 00:00:22,506
+And you'll be tasked along the way to
+see how it works, to understand how it
+
+6
+00:00:22,506 --> 00:00:27,451
+operates, and to manipulate the data
+that it generates and reacts with.
+
+7
+00:00:27,451 --> 00:00:33,192
+You'll also be tasked along the way to do
+some things slightly of MFlix to either
+
+8
+00:00:33,192 --> 00:00:38,265
+improve it or to just change a little
+bit of the application behavior.
+
+9
+00:00:38,265 --> 00:00:40,481
+But more of that's ahead of us.
+
+10
+00:00:40,481 --> 00:00:45,962
+For now, we are just going to be looking
+to how this application actually works and
+
+11
+00:00:45,962 --> 00:00:47,958
+which dependencies we have.
+
+12
+00:00:47,958 --> 00:00:51,292
+The application that we're
+going to build is called MFlix.
+
+13
+00:00:51,292 --> 00:00:57,461
+Now any resemblance with the popular media
+streaming service is pure coincidence.
+
+14
+00:00:57,461 --> 00:01:02,419
+This application concretes our MFlix
+will have a few considerations in
+
+15
+00:01:02,419 --> 00:01:03,667
+functionality.
+
+16
+00:01:03,667 --> 00:01:08,850
+First, we will have some sort of user
+management where we can create users and
+
+17
+00:01:08,850 --> 00:01:10,536
+log in users, and so on.
+
+18
+00:01:10,536 --> 00:01:15,624
+We will have a video catalog, where we
+can scroll and see some interesting
+
+19
+00:01:15,624 --> 00:01:20,563
+information about popular videos
+that are available on the platform.
+
+20
+00:01:20,563 --> 00:01:25,914
+With a list of details of the movies
+based on several different rankings,
+
+21
+00:01:25,914 --> 00:01:30,487
+or some other sets of different
+filters that we can create, and
+
+22
+00:01:30,487 --> 00:01:33,875
+obviously, the actual
+detail of the movies.
+
+23
+00:01:33,875 --> 00:01:39,365
+So once you log in and have your account
+created, if you look for videos,
+
+24
+00:01:39,365 --> 00:01:44,226
+the application will allow you to look for
+them, and find them.
+
+25
+00:01:44,226 --> 00:01:47,400
+And obviously,
+we can also look into the details, and
+
+26
+00:01:47,400 --> 00:01:51,551
+have some sort of user interaction
+with this particular application.
+
+27
+00:01:51,551 --> 00:01:57,026
+Okay, so this is how the application
+is supposed to work.
+
+28
+00:01:57,026 --> 00:02:01,365
+We're also going to see internally in
+terms of code, how it is actually being
+
+29
+00:02:01,365 --> 00:02:05,460
+composed, and which are the components
+that make for the application.
+
+30
+00:02:05,460 --> 00:02:08,599
+The application itself, it's built so
+
+31
+00:02:08,599 --> 00:02:14,426
+that it can run on your local laptop,
+and using Atlas to store all the data.
+
+32
+00:02:14,426 --> 00:02:19,432
+For that, the version that you will be
+downloading from the lecture notes and
+
+33
+00:02:19,432 --> 00:02:24,129
+from the handout material will have
+some slight code gaps somewhere that
+
+34
+00:02:24,129 --> 00:02:28,922
+we will ask you to download and
+improve, or complete the functionality.
+
+35
+00:02:28,922 --> 00:02:32,150
+But more of that's a little
+bit further down the road.
+
+36
+00:02:32,150 --> 00:02:36,605
+For now, what I will ask you
+guys to do is pretty much just
+
+37
+00:02:36,605 --> 00:02:41,340
+have a folder path that you
+will be using for this course.
+
+38
+00:02:41,340 --> 00:02:45,605
+In my case, I'm going to be
+using users/mongodb/coursera.
+
+39
+00:02:45,605 --> 00:02:47,639
+And in it, I'm going to have a folder.
+
+40
+00:02:47,639 --> 00:02:50,817
+And I'm going to call it first_app or
+building app.
+
+41
+00:02:50,817 --> 00:02:53,372
+Whatever you choose, it's okay.
+
+42
+00:02:53,372 --> 00:02:59,991
+Once I am inside my first_app, my working
+data set for my MFlix application,
+
+43
+00:02:59,991 --> 00:03:05,409
+and after downloading to my local
+laptop the handout material,
+
+44
+00:03:05,409 --> 00:03:11,349
+I will unzip inside this folder,
+my working folder, that same code.
+
+45
+00:03:11,349 --> 00:03:17,020
+This is running code that you should
+be able to run in your local machine.
+
+46
+00:03:17,020 --> 00:03:23,338
+I also recommend you to, on this working
+folder, create a notebooks folder.
+
+47
+00:03:23,338 --> 00:03:27,478
+Now this is where I'm going to be
+storing the handouts that we're going to
+
+48
+00:03:27,478 --> 00:03:31,549
+be providing to make sure you can
+follow through with the lectures that
+
+49
+00:03:31,549 --> 00:03:34,048
+we are going to be
+teaching in this course.
+
+50
+00:03:34,048 --> 00:03:37,183
+So this is where I'm going to
+put all my Jupyter Notebooks.
+
+51
+00:03:37,183 --> 00:03:40,989
+Not needed for now, but
+will be needed later.
+
+52
+00:03:40,989 --> 00:03:45,530
+Once I have the folder for notebooks and
+unzipped my MFlix application,
+
+53
+00:03:45,530 --> 00:03:50,079
+this should be the directory structure
+that I have in my working folder.
+
+54
+00:03:50,079 --> 00:03:55,581
+As in any application, the README
+file is always convenient to have,
+
+55
+00:03:55,581 --> 00:03:57,642
+and this is no exception.
+
+56
+00:03:57,642 --> 00:04:02,487
+This here will tell you the dependencies
+that you need to install for
+
+57
+00:04:02,487 --> 00:04:06,822
+running our application, and
+some other instructions like
+
+58
+00:04:06,822 --> 00:04:11,166
+the run.sh file that will allow
+you to run the application.
+
+59
+00:04:11,166 --> 00:04:13,245
+It will be our executor.
+
+60
+00:04:13,245 --> 00:04:17,898
+Now make sure that you have all
+the dependencies installed.
+
+61
+00:04:17,898 --> 00:04:22,194
+As you figured out by now,
+we are going to be using Python, the best,
+
+62
+00:04:22,194 --> 00:04:24,653
+most beautiful language in the world.
+
+63
+00:04:24,653 --> 00:04:29,595
+Flask, which is a very popular
+web framework for Python.
+
+64
+00:04:29,595 --> 00:04:35,292
+PyMongo, obviously, we need to talk to
+MongoDB and PyMongo is the way to do so.
+
+65
+00:04:35,292 --> 00:04:39,889
+And some other libraries like Faker and
+flask-login and
+
+66
+00:04:39,889 --> 00:04:44,783
+bcrypt, all nice libraries to work and
+to use for our needs.
+
+67
+00:04:44,783 --> 00:04:47,816
+Now before we go and
+run our init run file,
+
+68
+00:04:47,816 --> 00:04:53,464
+you can see it here that it will launch
+an application, a Flask application.
+
+69
+00:04:53,464 --> 00:04:56,821
+There's a couple of things that
+we need to edit before hand.
+
+70
+00:04:56,821 --> 00:05:02,292
+The first file that we need to
+be editing would be our db.py,
+
+71
+00:05:02,292 --> 00:05:07,785
+this file here that will control
+all access to the database.
+
+72
+00:05:07,785 --> 00:05:11,227
+Now the first thing that we need
+to edit on this file will be
+
+73
+00:05:11,227 --> 00:05:13,544
+the MongoClient connection string.
+
+74
+00:05:13,544 --> 00:05:17,841
+As you can see here,
+I already done my due diligence and
+
+75
+00:05:17,841 --> 00:05:21,683
+added up my own personal
+MFlix cluster on Atlas.
+
+76
+00:05:21,683 --> 00:05:25,575
+You should do the same thing, and
+put your connection string here.
+
+77
+00:05:25,575 --> 00:05:29,847
+Once you've added it to your db.py file,
+
+78
+00:05:29,847 --> 00:05:34,483
+you are ready to run your run.sh or
+run.exe.
+
+79
+00:05:34,483 --> 00:05:39,833
+Once we have it up and running, you will
+see that we're going to have a up and
+
+80
+00:05:39,833 --> 00:05:44,854
+running server on 127.0.0.1 and
+port 5000, right?
+
+81
+00:05:44,854 --> 00:05:49,228
+And as you can see,
+this will be the exact same location that
+
+82
+00:05:49,228 --> 00:05:53,530
+I'm going to be connecting to
+show you MFlix up and running.
+
+83
+00:05:53,530 --> 00:05:57,818
+Sweet, but let's understand
+what's going on under the hood.
+
+84
+00:05:57,818 --> 00:05:59,748
+Now, the MFlix app itself,
+
+85
+00:05:59,748 --> 00:06:04,019
+it's composed by a couple of
+different interesting modules.
+
+86
+00:06:04,019 --> 00:06:06,244
+The first one is our mflix.py.
+
+87
+00:06:06,244 --> 00:06:11,259
+This is where we are going to actually
+instantiate all the Flask application
+
+88
+00:06:11,259 --> 00:06:15,974
+library and consequent libraries
+that we need to run the application.
+
+89
+00:06:15,974 --> 00:06:19,316
+Then we have another Python
+module called db.py.
+
+90
+00:06:19,316 --> 00:06:21,845
+Now db.py is responsible for
+
+91
+00:06:21,845 --> 00:06:27,016
+the connections between
+the application and the database.
+
+92
+00:06:27,016 --> 00:06:29,091
+Think about it as our model layer,
+
+93
+00:06:29,091 --> 00:06:32,104
+if you're coming from
+an MVC kind of standpoint.
+
+94
+00:06:32,104 --> 00:06:35,684
+Therefore the db.py talks to MongoDB.
+
+95
+00:06:35,684 --> 00:06:39,936
+In our case, in Atlas, this is where we're
+going to store all of our information.
+
+96
+00:06:39,936 --> 00:06:43,160
+And mflix.py instantiates and
+
+97
+00:06:43,160 --> 00:06:48,538
+uses the db.py methods to
+forward all the requests.
+
+98
+00:06:48,538 --> 00:06:53,805
+There are other things like the templates
+that we'll be using to prettify and
+
+99
+00:06:53,805 --> 00:06:55,842
+show you their correct HTML.
+
+100
+00:06:55,842 --> 00:06:59,524
+Well formatted with all
+the information that we need,
+
+101
+00:06:59,524 --> 00:07:04,418
+that you can have access and
+scroll around within the templates folder.
+
+102
+00:07:04,418 --> 00:07:08,995
+There's also obviously static information
+like the CSS that we are using or even
+
+103
+00:07:08,995 --> 00:07:14,060
+the source data file, movies.json, that
+you previously imported in other lectures.
+
+104
+00:07:14,060 --> 00:07:18,870
+Another important one, or not really
+that important, but just a important
+
+105
+00:07:18,870 --> 00:07:23,617
+functionality of our application is
+that we allow you to log in and log out.
+
+106
+00:07:23,617 --> 00:07:28,006
+And that's controlled by the auth.py file.
+
+107
+00:07:28,006 --> 00:07:31,990
+Give it a look to understand how we
+are dealing with the authentication.
+
+108
+00:07:31,990 --> 00:07:37,145
+So to sum it up, our MFlix application
+is a runnable application.
+
+109
+00:07:37,145 --> 00:07:42,281
+You need to configure the connection
+string to Atlas, and put it up and
+
+110
+00:07:42,281 --> 00:07:47,680
+running with run.sh that will
+instantiate the Flask application called
+
+111
+00:07:47,680 --> 00:07:52,575
+db.py to request and submit any
+information to MongoDB on Atlas.
+
+112
+00:07:52,575 --> 00:07:56,932
+Once you have that, the only thing that
+you need to do, go to your local browser
+
+113
+00:07:56,932 --> 00:08:01,310
+and browse away the magnificent interface
+that we built just for this course.

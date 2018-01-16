@@ -1,0 +1,125 @@
+The outcome of the last lecture was, in 
+some sense, quite glorious. We ended up with this beautiful hybrid 
+atomaton that solves the general navigation problem. 
+And it had all these cool things in it. Now, the problem is that, after we have 
+solved the general navigation problem i said, but it doesn't work. 
+It was a kind of annoying to be completely honest and today I want to 
+make it work by dealing with some of the practical considerations that we really 
+have to, to think about. the first is that we have this notion of 
+XO everywhere. Now, its hard to see, but this is the 
+distance. Or the point where the obstacle is. 
+Well, obstacles aren't points. And it's not entirely, clear how we 
+should translate these, real world obstacles that aren't points, into 
+something that we can deal with here. The other is what I call fat guards. 
+Here for instance, we're saying that the distance to the obstacle should be 
+exactly equal to delta. Well We're never going to be exactly = to 
+delta, because sensors are noisy. So what we need to do is, we need to say, 
+you know what? The distance is delta + -epsilon. 
+So we basically just need to just fact ta fi the guards, make them larger. 
+So that instead of switching exactly when we're at the distance delta, we're 
+building some slack into the system. [INAUDIBLE]. 
+And then, I have a third bullet here, that I'm calling tweak, tweak, tweak. 
+And the point with that one, is that, even if you have dealt with non point 
+obstacles. And we have fat a fi our goal, guards. 
+There are parameters. There are things like, CGTG. 
+Which is the coefficient in front of the goal to goal behavior. 
+We have things like, delta and epsilons. And there are all these Parameters that 
+we have chosen. That, mathematically, they're all fine. 
+But, in practice, there is no way out of the fact that you need to test, test, 
+test, and tweak your parameters. And this is, in some sense, why robotics 
+is so hard. And that's, how do you actually 
+transition from your beautiful theoretical design, into something that 
+works on the actual robots. Well, lets start with obstacles that 
+aren't points. Green ball is the robot, red thingy is 
+the obstacle, it's not a point. 
+Now the first thing to note is that almost all actual sensors they're really 
+the return points. Point [UNKNOWN], laser scaners, Infrared, 
+ultrasonic sensors, all of them measure distances to things in certain 
+directions. So, here are the points that I'm actually 
+detecting on this obstacle. So now the question is, how do I actually 
+deal with this situation? Where I have not one obstacle, where I 
+have one obstacle but for the purpose of robot these are let's see, 1, 2, 3, 4, 5, 
+6 obstacle points. So, I have 6 points all of a sudden. 
+Then I somehow need to deal with. So how do I do that. 
+Well, We have some options. One options is, you know what? I'm really 
+not interested in driving into this obstacle, so, the point in my algorithm 
+that I'm going to care about, is simply the closest obstacle. 
+In this case, it's this point, right? So, I'm simply going to say that xo is there, 
+that's actually not bad, it's not a bad idea at all and then this is supposed to 
+be straight line. you avoid obstacle would simply take me 
+in this direction, just straight away from the closest point. 
+That's not bad at all. But you know what, we have all this other 
+information. Why don't we take that information into 
+account a little bit more? So, another option would be to, weigh and add 
+obstacle vectors together, depending on the distances. 
+Right so, here it's closer, so I'm going to get more in this direction. 
+And I'm kind fo far away so I'm going to get little in that direction. 
+And then I'm going to weigh these together and maybe, get something out 
+like this. That's better. 
+So, there are different ways of weighing them. 
+Let's say that I get these weighed or scaled obstacle vectors. 
+And then my obstacle avoidance is simply going to be some scaled version, or 
+weighted and scaled version of that. So this would be, U avoid obstacle now. 
+And what you now need to do, to find x obstacle which we need, is to backtrack 
+this thing, and say that this point here, would be x o. 
+Now x o is not necessarily a point that we're measuring now. 
+It's the scaled and weighted version of the other points but, this is a much 
+better way of Of doing.Now the last thing I should point out this you know what , 
+you should weigh these things depending on the distance.But then you should also 
+weigh depending on the direction of travel, [COUGH] excuse me and what do I 
+mean by that.Well you know what, if I'm really on my way In this direction 
+[NOISE]. What do I care about obstacles behind me. 
+Why should I care about that. I really shouldn't right? So, what I 
+really want to do is weigh it also based on the direction of travel and in that 
+case I would get a weighted obstacle avoidance vector out like this. 
+So this is almost a I would say the best way of doing it. 
+And that's in fact how we're going to do it. 
+Now, the last thing I want to point out, though, you know, there's another option. 
+I should be able to collect all the points I'm getting, building a map of it, 
+so here is the obstacle service. And then, you know what? Instead of just 
+dealing with the questions, like you know, sliding, or snow sliding. 
+Maybe I can, plan my way around this obstacle. 
+Now, what I want to point out , this, in this class, we don't say things like most 
+bestest, because it's grammatical nonsense. 
+we stay with grammatically correct things, which means that Ultra4 is out. 
+what I really want to say is that building maps is an entirely different 
+type of topic, and all that we are learning in this class is still very much 
+applicable. So, I just want to point out that there 
+are ways of building maps and then planning in those maps and then you're 
+goal to goal behavior, for instance, wouldn't aim at the goal point but aim at 
+following planned path based on these obstacle maps. 
+So want to point out option 4 but its really not part of what we're going to 
+pursue in, in the class. Now the last thing or did the second 
+thing I said is we need to allow for fat guards and this is because no sensor is 
+perfect, no actuator is perfect. Robots aren't prefect, right? So if I 
+have this as my navigation hybrid automaton, when I'm doing f1 for some 
+reason until g is negative, then I'm doing f2. 
+And then when g becomes positive I'm doing f1 again. 
+This is not sufficiently fat. Because I may end up actually switching a 
+lot, I may do C note for instance or I may not but, the point is that what I 
+really should do is replace these guys with this, 
+right? Instead of saying G less than 0, I should 
+say G less than negative epsilon. And instead of saying g positive, I 
+should say g greater than epsilon. so Instead of having this as my switching 
+surface, I'm actually building this little corridor here where I'm saying, 
+I'm going to use f1 until I've gone through the entire corridor and so here's 
+f1. And then I'm going to use f2 until I've 
+gone through that corridor. And this factification not only reduces 
+chattering but it also allows us to switch not when we're exactly delta away 
+from an ob, obstacle but in somewhere delta plus minus epsilon. 
+So always build fat guards as a practical precaution against the fact that de, 
+deployed real world is not as clean as the theoretical world on my powerpoint 
+slides. And then, like I said, the final advice, 
+when it comes to practical considerations, is even though you have 
+built a beautiful hybrid automotan, you've thought about everything, you have 
+dealt with practical considerations and that you deal with point obstacles or non 
+point obstacles as susceptible points since [UNKNOWN]. 
+you are using sufficiently [UNKNOWN] guards, you still have to tweak, tweak, 
+tweak. You have to test these parameters. 
+You have to do it over and over again and Like I said, this is what makes robotics 
+hard and why it's a little frustrating at times, but at the end of it, it's also 
+what makes it satisfying when you get it right. 
+So what I'm going to do in the next lecture is not talk at you or to you at 
+all. Instead, what we are going to do is to 
+actually going to build this system that we now have and tweak parameters until we 
+are satisfied with our glorious, great, unifying navigation system.

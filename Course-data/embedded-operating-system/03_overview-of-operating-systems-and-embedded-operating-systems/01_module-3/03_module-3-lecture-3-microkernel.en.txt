@@ -1,0 +1,75 @@
+[MUSIC] Welcome. It is good to see you back for
+this lesson. In previous videos, we explored
+a monolithic kernel and its main features. Now, we will move into another
+kind of kernel, the Microkernel. In this video, we will cover
+the definition of microkernel, how it compares to the monolithic kernel,
+and its advantages and disadvantages. Let's begin with some
+interesting questions. What is microkernel, and what is the main difference between
+a monolithic kernel and the microkernel? Before answering these questions, let's go back briefly to our
+lesson monolithic Linux Kernel. In a monolithic kernel, all important
+functions and services of the operating system, such as file system and device
+drivers, are executed in kernel mode. As a result, the kernel is very large
+with millions of lines of code inside. In contrast, in a Microkernel,
+almost all functions and services are removed from the kernel
+mode and relocated into the user mode. As a result, the kernel size is minimal. At this point, there may be
+a question raising in your mind. What is the main function of the kernel,
+and what does it do if almost all
+functions are removed out of it? When comparing a Microkernel based
+system with a conventional one, the main difference is that most
+of the operating systems code runs as a separate process,
+mostly outside the kernel. Then, the tasks left for
+the kernel are only interrupt handling, low-level process management and
+message passing handling. Now, let's talk about interprocess
+communication in Microkernels. A common communication method in
+Microkernels is message passing. To better understand it,
+we must address three issues. What is interprocess communication? What is a message, and
+how does message passing work? Interprocess communication, or IPC for short, refers to the mechanism that
+an operating system provides for exchanging information among
+processes a message is simply the data that is transferred from
+one process to another using IPC. In a Microkernel, messages
+are passed using message registers. This is a sending process,
+writes a message to the register of the receiving process, and only then
+the receiving process can read the data. Sometimes the data to be sent can be
+larger than the receiver's register, in which case,
+the message contains a reference to a shared memory region
+where the data is stored. IPC is synchronous, meaning that when a message is
+sent from one process to another, both processes must call
+the corresponding IPC operation. A sender will log until either
+the receiver has performed the IPC call, or a specified time of
+interval has lapsed. It is important to mention that IPC
+does not use intermediate buffers. Therefore, improving efficiency and
+reducing the complexity of the operation. Let's move on to the advantages
+of Microkernels. One of the main advantages of
+a Microkernel is that its code is minimal. It is often the case that
+the less code is written, the less probability
+that an error can occur. Other benefits, due to a minimal kernel
+are small trusted computing base and suitability for verification. Trusted computing base
+is related to security. In computer security terminology, the trusted computing base is the set
+of all hardware, software and procedural components that
+enforce the security policy. This means that in order
+to break security, an attacker must subvert one or
+more of them. Regarding verification, the benefit
+of a small quote size is obvious. The less code we have,
+the simpler it is verifying it. Finally, due to the modularity
+of Microkernel, it is easy to add software to the system,
+thus making it scalable and extensible. We have already talked about
+the advantages of Microkernels, but what are their drawbacks? Why didn't Microkernel
+actually win the race? Although they seemed to
+be a better idea in 1992. To answer this question, let's go through
+a simple example like creating a file. In order to create a file
+in a monolithic kernel, It is necessary to perform
+a context to switch only two times. The first one occurs when the system
+switches from the application to the kernel, so
+the file operation can be executed. The second one occurs when the kernel
+gives control back to the calling process. Now, in the case of a Microkernel, how expensive is the file operation
+in terms of context switching? Well, it turns out it takes a lot more
+context switching between kernel and the user process. The reason for this is that now it is necessary to
+switch among multiple processors. Each one controlling a small function. In this particular example, one process
+may be in charge of the file system while another handles the device driver. As a result, the overall system
+response becomes slower. This overhead is not limited
+to input-output operations. Other kernel services, such inter-process
+communication, are also affected. In this video, we'll describe the most
+important features of Microkernels. However, to get a deeper
+understanding of its details, I recommend you go through
+the suggested materials. Thanks for watching, and
+see you in coming videos. [SOUND]

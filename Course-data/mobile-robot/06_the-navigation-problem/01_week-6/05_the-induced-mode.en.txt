@@ -1,0 +1,119 @@
+So the outcome of the last handful of 
+lectures, was that we needed something more rich to solve complex navigation 
+problems, and that something was wall following. 
+In fact was saw that we really had 2 barriers, wall following clockwise and 
+wall following counter clockwise. And, the way we could encode that was to 
+take our avoid obstacle behavior and simply flip, Either flip it -pi/2 for a 
+clockwise negotiation of the obstacle or +pi/2 for a counterclockwise negotiation 
+of the obstacle. What I want to do today is relate this 
+wall-following behavior to the induced mode when we looked at type 1 zeno in 
+hybrid systems. And the point with this is really for us 
+to first of all, trust that this is the right thing to do. 
+Trust that we understand alpha. And trust that we understand plus or 
+minus there. We use some kind of inner product rule to 
+determine whether or not we should go plus and minus. 
+Now we're going to see that that's, indeed. 
+the correct rule from a sliding mode vantage point. 
+However we're going to do little bit of maths today and at the end of it we're 
+just going to return back to this and say, this is how, still how we going to 
+implement it because it is much simpler but we need in the math to get there and 
+trust a that's correct. So here's the general set, set up. 
+As before we have an obstacle x sub o. We have a goal, X of G, and we have X, 
+which is the position of the robot. We also have a distance from the 
+obstacle, when we're going to switch to avoid obstacle as opposed to go to goal, 
+and even though I'm doing everything with points now This works for non-convex 
+obstacles, for pretty much anything. We can write that down at least in this 
+way. And the distance then being constant, 
+let's say it's delta from the obstacle, when I can simply say that that means 
+that the distance between the X and XO is equal to Now, what do I have? I have 2 
+different behaviors. I have one behavior that wants to take me 
+towards the goal and I have another behavior that wants to push me away from 
+the obstacle. And now I also have a switching surface 
+and I'm going to write this as the distance between X and the obstacle minus 
+delta, should be equal to 0. But, I'm going to put squares in there 
+because I'm going to start taking derivative and taking the derivative of 
+the square of a norm is easy taking the derivative of a norm is not so easy, and 
+then I'm going to put the half here just for the reason of getting rid of some 
+Coefficient but this half doesn't change anything. 
+So now what do I have? I have g. On one side I have g positive, which 
+means that you're further away from the obstacle than delta, which means you're 
+out here where you're going to use this behavior. 
+So we have f1 coming in here, so this is going to be my f1. 
+And then I have g negative on this other side, which is inside here, where I'm 
+going to use this behavior. So that's going to be equal to f2. 
+So I have everything I need to be able to unleash our induced mode piece of 
+mathematics. So, f1 is goal to goal. 
+f2 is avoid obstacle. Now, we need to connect these somehow 
+with the induced mode. Well, here is the connection. 
+We actually computed the induced mode. It was this convex combination of the two 
+modes, or the two behaviors. And this convex combination was given by 
+this, mouthful of Of an expression. But let's actually try to compute this, 
+in this case, to see what, what the induced mode should be. 
+Well, first of all, we need the Lee derivatives. 
+So, lf2g, if you remember. That was dg, dx*f2. 
+We need the same thing for f1 and then this lead derivative show, show up 
+repeatedly. Well, first of all the derivative of g 
+with respect to x is simply x-x obstacle transpose and this is the reason why I 
+put squares here because that made everything easy and I put the half there 
+because that hills an extra 2 that would show up. 
+This really doesn't but it just makes the math a little bit easier. 
+This is again one of these things that I encourage you to try to compute 
+yourselves, just to make sure that you actually trust that this is indeed the 
+correct answer. Well, now I can compute the [UNKNOWN] 
+derivatives, right? I have LF2G, well it's DG/DX times F2 Well the GDX which is 
+computed it was that. F2 is C avoid obstacle, X-Xo. 
+In previous lecture, I used K, with the prime index [INAUDIBLE] was C here. 
+Well, this is X-Xo transposed times X-X0. But that's just X-X0 squared, 
+the norm squared. So this lead derivative has a rather 
+simple expression. Similarly, I can compute the other lead 
+derivative. And its' c, goal to goal times this 
+thing, that we now know is an inner product of x-x obstacle, transposed times 
+x goal minus x. So I have the 2 lead derivatives that I 
+actually need. So, with that, I could go ahead and 
+compute the induced mode. For instance. 
+You know, this little thing here. What is that? It is let's see, it's 
+(x-xo) transpose times (CAO*(x-xo)), that's the first term, minus C goal to 
+goal times (xg-x). So, that's that term. 
+We have an explicit expression for it. We can also go ahead, and compute this, 
+right, for instance. It's CAO, x-x0 transposed times f1. 
+Which is, what was f1 again? It was goal to goal times xg - 
+x.. So I can compute this. 
+Similarly, I can compute that. The point is first of all that everything 
+is entirely computable here. The other point is, you know what, this 
+is a little bit of a mess. It's a mess to write it down, but what 
+we've actually done is [SOUND] We have recovered the same controller because 
+what we're doing is again we're sliding. The only difference is if you write it in 
+this form, you automatically get alpha to pop out because you get the certain 
+scaling, and you get plus or. Minus flip. 
+So you actually get the flip for free, your told which direction to go and which 
+alpha to go in and the nice thing is that the flip direction you get from computing 
+the induced mode is actually the same as taking the inner products with U follow 
+ball counter-clockwise with U avoid obstacle, if this inner. 
+U avoid obstacle. If this inner product is positive, we go, 
+counter clockwise, and otherwise we go clockwise. 
+So, the nice thing is, we have actually ,in a 
+mathematically rather involved way arrive at same expression. 
+And with the difference being that we can have the plus or the minus automatically 
+determined for us, and these scaling factors automatically determined for us. 
+In practice though, we're not going to do this, because this is too messy. 
+Instead, we're just going to pick some alpha that we feel good about. 
+I always pick alpha=1 because I'm lazy and then use the inner product tasks to 
+figure out whether we should go clockwise or counter-clockwise. 
+So, that's practically what we're going to do. 
+Now, that's not enough, so let's say that I"m going towards the goal here. 
+Here I want to go in this direction, and avoid obstacle once to take me there, so 
+sliding is immediately going to tell me that I'm going to start moving up like 
+this. Well you know what? This was all good and 
+Dandy, but if I'm simply looking at the sliding rule. 
+Then here, all of a sudden I'm pointing in both direction, and sliding is going 
+to tell me to stop, So what I need to do is to just keep following the ball, 
+verify then I'm going to follow the ball for a long time way and way and way, 
+around and around and around and may be here the right time to stop following the 
+ball. The question that really need to answer 
+now. When we know that follow wall is the 
+right thing to do, we know which direction to go in, and we know, really 
+how to scale it even though we're just going to scale it by one because it 
+really doesn't matter is when do we actually stop this sliding or follow 
+wall. Well, that turns out not to be so easy 
+and in fact there are multiple ways of Answering that and this is precisely the 
+topic of the next lecture.

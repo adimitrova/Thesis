@@ -1,0 +1,119 @@
+We saw that the one remaining challenge 
+is, how do we actually make our real robot or a model of the real robot, which 
+was the unicyle model, behave or act like the simpler model x dot is equal to u, 
+that we used when we designed our navigation architecture. 
+And we really have a problem because we used the simplest possible model, 
+x dot equal to u, as the basis for our control design. 
+And then, we started switching between go to goal, follow wall, follow wall 
+counterclockwise avoid obstacles and so forth. And the navigation architecture we 
+ended up with is this, as we've seen a couple of times now, rather messy-looking 
+hybrid system. Now, what we need to do is somehow come 
+up with a way of making the real robot relevant or this model relevant to the 
+real robot. And 
+we would like also to do this in such a way that we don't have to worry too much 
+about what kind of robot is it that we're using? We want this navigation 
+architecture to be relevant for differential drive robots or 4-wheel 
+robots or snake robots or flying quadrotors. 
+So, the question is, how do we do this? And the standard way of approaching this 
+problem is to produce a layered architecture, where you have different 
+levels of abstraction. So, in today's lecture, I'm going to talk about the 
+standard layers that people think of when they build architectures high-level 
+architectures for robotic systems. Well, the standard and most canonical way 
+in which people approach this is to have three levels and borrowing terms from the 
+military tactical literature people typically talk about a strategic level 
+and operational level and a tactical level. 
+So, the strategic level is high level. Where do we go? Recall, for instance, 
+that we have go to golal behaviors, we have a goal point, well, where did 
+that goal point come from? Who decided that that's reasonable? 
+Well, that happens at the strategic level, where the high level decisions are 
+being made. And then at the operational level, you're 
+trying to figure out, okay, I know that there is a goal point somewhere out 
+there, where do I go now? Meaning, this is a short term, low-level planning 
+problem. And in many ways, we can think of our x dot equal to u model to live at 
+the operational level. But then, we have the lowest level, the 
+tactical level, which asks, well, okay, I know that I want to go this way but how 
+do I actually do that? I am snake robot, how does a snake go in 
+this direction or I am a differential drive mobile robot, 
+a unicycle, how do I actually go in this direction? So, the question of mapping x 
+dot equal to u onto the real robot is a question of moving in between these two 
+levels or layers in the architecture. While, if you want to be slightly less 
+militaristic, which, maybe we do we can call the 
+highest level a high-level planning level. 
+We want to plan where the intermediary goal points should really be. 
+And then, the low-level planning that's the question of which direction to move 
+in-between these goal points. And then at the execution level that we 
+previously called the tactical level, it's just a matter of how do we actually 
+execute this? How do we make the robot do what it is that we want it to do? And I 
+should point out that the highest level, we haven't touched at all in this course. 
+In fact, we have assumed that someone very clever has designed a, an AI, 
+artificial intelligence algorithm for somehow producing the correct goal 
+points. And then, at the low-level, well, that's 
+where our navigation architecture sits. That's where we're assuming that x dot is 
+equal to u, which really tells the robot, if I'm here, this is x, then u is really 
+going to be, this is the direction in which I would like to move. 
+So, the navigation architecture we've seen really sits squarely at the 
+low-level planning layer. And then, of course the execution level. 
+Well, one thing we can do is simply say, here is our actual system. 
+Let's say x dot is, oh, let's, let's say, it's a complicated nonlinear system. 
+This is a slithering robot, that every now and then, can fly. 
+I don't know how to build that, but if I did, that's what this system would be. 
+And now, I would like it to follow, let's say, this reference. 
+And this reference is generated as if x dot is equal to u. 
+Well, this is simply r, right, a reference signal. 
+And we have seen repeatedly how to design controllers for making systems, general 
+systems, track reference signals. So, the execution problem be, really 
+becomes a question of how do you track reference signals? Well, we kind of know 
+how to do this, at least for linear systems, so that seems rather promising, 
+as far as I can, I can tell. 
+Okay, let's discuss these levels a little bit more. 
+at the high-level, like I said, it's really not part of the, the course, there 
+are many, many different ways in which people think about how to produce these 
+high-level plans. Typically, you somehow discretize the 
+world into a graph structure or somehow, a kind of grid structure and then you can 
+use Dijkstra's algorithm for searching through graphs, something called Dynamic 
+Programming. There are more specialized robotic 
+planning algorithms, something called A*, a version of A* called D*, which is a 
+dynamic version of A*, or something called RRTs, Rapidly Exploring Randomized 
+Trees. These are all methods for generating 
+these intermediary waypoints. And this big picture here, you're seeing 
+underneath it is, this is the kind of maps that we produce at the high-level 
+kind of plans and maps we produce at the high-level at, when we're building this 
+autonomous self-driving car. So, this map clearly doesn't tell us how 
+the car should drive but it tells us where do we want to go and how are the 
+things that we want to go to connect it. So, 
+all I want to say about this is if your'e interested in probing further when it 
+comes to high-level methods this six different methods are good places to 
+start if you want to to learn more about these high-level methods. 
+Okay, low-level, well, ta-da, we already know how to do this. 
+The simplest thing is to assume a very simple model, in our case, we've said x 
+dot is equal to u, and then we simply go to work. 
+Again, if I do that, my model, x dot is equal u model, 
+is going to produce a trajectory that we would like the actual robot to follow. 
+So, this trajectory becomes the plan, the low-level plan that will take us, let's 
+say, that here is a, a goal point and here was an obstacle. 
+Well, this low-level plan will tell us how we should go about avoiding the 
+obstacle and going to goal, but it doesn't at all tell us how to achieve it, 
+which leaves us with the execution level. as you can see, this is the video that 
+I've shown before of our self-driving car that is trying to to drive around in the 
+world. Well, the car, it's not a unicycle, but 
+it's almost a unicycle. but, if we're trying to build a 
+navigation system explicitly for a unicycle, it's not going to work, it's 
+going to be too complex. So, what we had to do in order to make 
+this car actually drive, was well, plan at a high-level, then a low-level, and 
+then make the car execute the trajectory. So, for instance here, you're seeing the 
+car overtaking an obstacle and what's going on here is that we have a low-level 
+planner that's telling it roughly how to do it. 
+And as you can see, the car overshoots a little bit and this is due to the fact 
+that the execution level reference trajectory isn't perfect. 
+Okay, so, what we've now arrived at is a layered architecture where at the highest 
+level, we're generating sequences of intermediary waypoints. 
+Well, those waypoints are fed into the plan level or the low-level plan level 
+where our navigation architecture generates reference trajectories. 
+Well, these reference trajectories are then fed into our actual nonlinear 
+systems. The actual dynamics were u now, well, 
+it's going to be function of this state, and r, where r is the reference and then 
+out of the trajectory comes the actual trajectory, the actual control signals 
+that will be running on the robot. So, what I want to do in the next lecture 
+is take this high-level view of a layered architecture for robots and apply it to 
+the [UNKNOWN] or 2-differential drive mobile robots, in general. 
+So that's it.

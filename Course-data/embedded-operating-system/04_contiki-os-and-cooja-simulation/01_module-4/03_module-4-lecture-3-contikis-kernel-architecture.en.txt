@@ -1,0 +1,82 @@
+[MUSIC] Welcome. It is good to see you back for
+this lesson. In the previous module,
+we explored the Contiki operating system. Now, we will take a look at
+Contiki's kernel architecture and explore the details of
+its characteristics. By the end of the lesson,
+you should understand the benefits and challenges faced when developing
+applications in Contiki. Let's start with Contiki's
+kernel architecture. As we know from previous videos, Contiki
+is based on a modular kernel architecture. Therefore, the kernel is minimal. Due to this reason, the kernel comprises only a few lines
+of code that perform vital functions. For example,
+the kernel consists of an event scheduler, which is light in terms of code size. In Contiki,
+all program execution is triggered either through the polling mechanism or
+by events which are sent by the kernel. In Contiki, the kernel supports two types
+of events, synchronous and asynchronous. Asynchronous events are not
+delivered to the receiving process immediately after being posted. Instead, they are stored
+in an event queue. The events in the queue are delivered
+to the receiving process by the kernel. The kernel delivers an event from
+the event queue by looping through it. The receiver of an asynchronous event
+can be either a specific process or all running processes. When the receiver is a specific process, the kernel invokes this
+process to deliver the event. When the receiver of an event is
+set to be processes in the system, the kernel delivers the same event
+to all processes sequentially. This is one after another. The process post function is used for
+posting an asynchronous event. Actually this function is very simple. First, the size of the event queue is
+evaluated and if there is room for the new event,
+then the event is added to the queue. Otherwise, the function will return zero. Synchronous events work differently
+from asynchronous events. In the sense that when
+a synchronous event is dispatched, it is delivered to the receiving
+process immediately. Another difference
+between asynchronous and synchronous events is
+the type of receiver. While asynchronous events can be received
+either by a specific process or all running processes, a synchronous event can
+only be received by a specific process. The mechanism for invoking a synchronous
+receiver is similar to calling a function. A synchronous receiver is called,
+so it performs it's task, after which it returns control
+to the posting process. Besides events,
+the kernel supports a polling mechanism. In short, the polling mechanism
+behaves as high priority events that are scheduled between
+asynchronous events. Typically, processes operating close
+to the hardware level use polling for evaluating hardware status. When a poll is scheduled, all processes
+that implement a poll handler are called sequentially
+according to their priority. In a similar way to
+event posting functions, Contiki also provides a process
+poll function for posting a poll. Posting a poll has a similar
+effect as an interrupt. It causes the receiving process to
+be scheduled as soon as possible. Contiki's kernel uses a single shared
+stack for all process execution. The use of asynchronous
+events reduce a stack's space requirements as the stack is rewound
+between each invocation of event handlers. At this point, you may have questions regarding
+events such as is an event unique? Or how are we best identify it? To answer these questions,
+let's talk about event identifiers. An event identifier is an 8-bit number
+used as a unique identifier for an event. When a process receives an event It uses the event identifier to
+determine the actions to perform. There are several event identifiers
+reserved by the Contiki kernel to handle process control, inter-process
+communication, and peripheral access. To get better acquainted with
+the available identifiers, I suggest you go through
+the suggested materials. Now, let's take a look at the way
+Contiki implements the scheduling. Contiki schedules all events using
+a single level hierarchy, and events cannot be preempted
+by other events. The only way to preempt
+an event is using interrupts. It is important to notice
+the interrupt must be supported by an underlying real-time executive. Correspondingly, interrupt
+handlers cannot post any event. The reason behind this policy is
+to avoid possible race conditions in the event handler. Instead, a polling flag is
+used to request a poll event. This flag provides interrupt handlers
+with a way to request immediate polling. Next, we are going to discuss about
+loadable programs in Contiki. To implement loadable programs,
+Contiki uses a binary format that includes relocation information and
+a run-time relocation function. But, how does a loadable program work? When a program is loaded,
+the loader uses the relocation information provided by the binary
+format to allocate memory. In case that there is not enough memory,
+the loading is aborted. In case of successful loading,
+the function for initialization is called for
+starting or replacing other processes. Finally, we're going to look
+at power saving in Contiki. In general, power can be saved by
+putting inactive nodes to sleep. In some cases, choosing appropriate level protocols
+may also reduce power consumption. Contiki also provides a mechanism for reducing power consumption even though
+there is no explicit abstraction for it. The mechanism works by checking
+the size of the systems event queue. If the event queue is empty, the micro-controller goes into a sleep
+mode until it's woken up by an interrupt. This is all for the lesson about
+Contiki kernel architecture. I hope now you have a better insight on
+how Contiki's kernel is structured and how it works. Thanks for watching and
+see you in the next video. [MUSIC]

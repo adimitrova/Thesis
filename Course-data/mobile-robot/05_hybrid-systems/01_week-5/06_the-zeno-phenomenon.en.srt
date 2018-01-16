@@ -1,0 +1,434 @@
+1
+00:00:00,012 --> 00:00:05,302
+So, in the last lecture, we investigated 
+this innocent-looking model or system, 
+
+2
+00:00:05,302 --> 00:00:10,389
+which was a ball bouncing on a surface. 
+And we saw something rather strange 
+
+3
+00:00:10,389 --> 00:00:15,425
+there, which was that, that the, the ball 
+ended up bouncing an infinite number of 
+
+4
+00:00:15,425 --> 00:00:19,221
+times in finite time. 
+And this is part of another potential 
+
+5
+00:00:19,221 --> 00:00:24,357
+complication that comes from hyberdizing 
+your model, namely, that you have these 
+
+6
+00:00:24,357 --> 00:00:28,572
+kinds of infinitely many swicthes. 
+And this is known as the Zeno Phenomenon. 
+
+7
+00:00:28,572 --> 00:00:32,487
+And in today's lecture, we're going to 
+dig a little deeper into the, the Zeno 
+
+8
+00:00:32,487 --> 00:00:36,452
+Phenomenon and see what we can do about 
+it and if you can understand it. 
+
+9
+00:00:36,452 --> 00:00:41,032
+But fundamentally, what I would like to 
+point out is that Zeno is bad, because if 
+
+10
+00:00:41,032 --> 00:00:45,497
+you're actually running something that's 
+asked to do an infinite amount of things 
+
+11
+00:00:45,497 --> 00:00:49,287
+in finite time, it crashes. 
+If you're running this on the computer, 
+
+12
+00:00:49,287 --> 00:00:53,082
+the simulations crash. 
+another thing is that we know that there 
+
+13
+00:00:53,082 --> 00:00:57,697
+is something inaccurate or wrong with our 
+model because the ball, if I drop a ball, 
+
+14
+00:00:57,697 --> 00:01:00,262
+it doesn't bounce an infinite number of 
+times, 
+
+15
+00:01:00,262 --> 00:01:02,852
+it bounces 17 times and then it stops 
+bouncing. 
+
+16
+00:01:02,852 --> 00:01:05,297
+So, there's something wrong with our 
+model. 
+
+17
+00:01:05,297 --> 00:01:08,957
+That's another warning flag. 
+And the third warning flag is that we 
+
+18
+00:01:08,957 --> 00:01:13,712
+don't actually know what the system does 
+beyond the, the Zeno point, meaning the 
+
+19
+00:01:13,712 --> 00:01:17,002
+time up to which we have an infinite 
+number of switches. 
+
+20
+00:01:17,002 --> 00:01:21,912
+So, since we can't really define what the 
+system is doing beyond that point, things 
+
+21
+00:01:21,912 --> 00:01:26,894
+like asymptotic stability is meaningless 
+because time is not allowed to really 
+
+22
+00:01:26,894 --> 00:01:31,090
+progress off to infinity. 
+So, first of all, why is it called the 
+
+23
+00:01:31,090 --> 00:01:36,846
+Zeno phenomenon? Well, there was a Greek 
+philosopher, Zeno, Zeno of Elea who spent 
+
+24
+00:01:36,846 --> 00:01:42,258
+a lot of time thinking about movement and 
+the dynamic world and basically his point 
+
+25
+00:01:42,258 --> 00:01:47,802
+was that our perception of the world is 
+wrong because clearly there are all these 
+
+26
+00:01:47,802 --> 00:01:51,955
+problems out there. For instance, here's 
+one of his famous paradoxes. 
+
+27
+00:01:51,955 --> 00:01:56,406
+We have a hare racing a tortoise. And the 
+tortoise is a little slower so the 
+
+28
+00:01:56,406 --> 00:02:00,386
+tortoise gets a head start. 
+In fact, the tortoise starts there and 
+
+29
+00:02:00,386 --> 00:02:03,928
+then, the race is on. 
+And at some point, the hare reaches the 
+
+30
+00:02:03,928 --> 00:02:08,684
+point were the tortoise started from but 
+at that point, right, the tortoise has 
+
+31
+00:02:08,684 --> 00:02:11,426
+moved, not much but it has moved a little 
+bit. 
+
+32
+00:02:11,426 --> 00:02:15,101
+This is how far the tortoise has moved. 
+Okay. The race goes on. 
+
+33
+00:02:15,101 --> 00:02:20,152
+And at some point, the hare catches up to 
+where the tortoise was last time but now, 
+
+34
+00:02:20,152 --> 00:02:23,894
+the tortoise has moved a little bit more, 
+not much, and then this repeats. 
+
+35
+00:02:23,894 --> 00:02:28,134
+In fact, here is the, the paradox. The 
+paradox is that the hare never catches up 
+
+36
+00:02:28,134 --> 00:02:32,822
+with the tortoise because every time it 
+reaches the step that the tortoise was 
+
+37
+00:02:32,822 --> 00:02:35,874
+last time, the tortoise would have moved 
+a tiny bit. 
+
+38
+00:02:35,874 --> 00:02:38,194
+Now mathematically, 
+this is nothing. 
+
+39
+00:02:38,194 --> 00:02:42,259
+We know now about convergent series. 
+We know that even though there are 
+
+40
+00:02:42,259 --> 00:02:47,419
+infinitely many of these small intervals 
+the sum of them will converge and there 
+
+41
+00:02:47,419 --> 00:02:50,915
+is indeed a point where the hare will 
+catch the tortoise. 
+
+42
+00:02:50,915 --> 00:02:56,139
+but the problem for us is that if I model 
+this as a hybrid system, I have, again, 
+
+43
+00:02:56,139 --> 00:03:00,964
+infinitely many switches in finite time. 
+So, this is why this kind of infinite 
+
+44
+00:03:00,964 --> 00:03:06,025
+amount of switches is called the Zeno 
+Phenomenon because it can be traced back 
+
+45
+00:03:06,025 --> 00:03:11,111
+to Zeno's many paradoxes about motion. 
+Now, let's look at another example, one 
+
+46
+00:03:11,111 --> 00:03:15,709
+that's not a hare and a tortoise but one 
+that's rather innocent-looking. 
+
+47
+00:03:16,758 --> 00:03:22,478
+Let's say that x-dot is negative, for +x 
+- 1 and it's positive for -x. 
+
+48
+00:03:22,478 --> 00:03:26,644
+Okay, so we have this. 
+If I write this as a this is a hybrid 
+
+49
+00:03:26,644 --> 00:03:30,088
+automoton, so let's see what's going 
+there. 
+
+50
+00:03:30,088 --> 00:03:36,300
+An if I draw this little plot here, 
+right, here is here is time and here's x. 
+
+51
+00:03:36,300 --> 00:03:40,912
+Let's say that x starts there. 
+Well, it starts positive so x-dot is 
+
+52
+00:03:40,912 --> 00:03:45,574
+going to be -1, so it's going to decay 
+down with a slope of -1 and then it 
+
+53
+00:03:45,574 --> 00:03:51,567
+becomes tiny bit negative, and then oh, 
+it's going to switch back up to plus, and 
+
+54
+00:03:51,567 --> 00:03:56,517
+then it goes up and in a second, it 
+becomes just a tiny bit positive again, 
+
+55
+00:03:56,517 --> 00:04:01,742
+it switches down and, in fact, really 
+what's happening is that once it hits 0, 
+
+56
+00:04:01,742 --> 00:04:06,592
+it starts switching like crazy here. 
+In practice, it would chatter but in 
+
+57
+00:04:06,592 --> 00:04:11,592
+theory, it starts switching like crazy 
+here and this is actually not good at 
+
+58
+00:04:11,592 --> 00:04:14,484
+all. 
+So, this is really a Super-Zeno 
+
+59
+00:04:14,484 --> 00:04:21,163
+Phenomenon because not only do we have 
+infinitely many switches in finite time, 
+
+60
+00:04:21,163 --> 00:04:27,826
+we have it at the single time instance, 
+which is when the system actually hits 
+
+61
+00:04:27,826 --> 00:04:31,609
+x=0. 
+So, for that reason, we typically talk 
+
+62
+00:04:31,609 --> 00:04:37,342
+about two different kinds of Zeno types 
+to, so type 1 Zeno, which is what I now 
+
+63
+00:04:37,342 --> 00:04:43,055
+call the Super-Zeno. It says that you get 
+infinitely many switches in a single time 
+
+64
+00:04:43,055 --> 00:04:46,410
+instant. 
+In this case, again, I want to reiterate 
+
+65
+00:04:46,410 --> 00:04:51,890
+this, the ball came down here and then, 
+not the ball, this system came down here 
+
+66
+00:04:51,890 --> 00:04:56,502
+and then it started switching infinitely 
+many times right there. 
+
+67
+00:04:56,502 --> 00:05:01,117
+Now, type 2 is Zeno by not type 1, 
+meaning, you have infinitely many 
+
+68
+00:05:01,117 --> 00:05:06,927
+switches but you have that over a time 
+interval and the bouncing ball is really 
+
+69
+00:05:06,927 --> 00:05:08,467
+an example of that. 
+So. 
+
+70
+00:05:08,467 --> 00:05:13,882
+there are some good news and bad news in 
+all these rather messy switching 
+
+71
+00:05:13,882 --> 00:05:17,542
+situation. 
+The bad news is that Zeno is a problem as 
+
+72
+00:05:17,542 --> 00:05:20,777
+we've seen. 
+However, type 1 which is arguably the 
+
+73
+00:05:20,777 --> 00:05:25,077
+more common type is not only detectable, 
+meaning, it is easy to see if you're 
+
+74
+00:05:25,077 --> 00:05:29,832
+going to end up in a situation where you 
+are going to switch infinitely many times 
+
+75
+00:05:29,832 --> 00:05:32,992
+at a single time instant. 
+But the other good news about type 1 is 
+
+76
+00:05:32,992 --> 00:05:36,462
+that we can actually deal with it because 
+you know what, 
+
+77
+00:05:36,462 --> 00:05:41,443
+what should this system do? It should go 
+down to zero and then it should stay at 
+
+78
+00:05:41,443 --> 00:05:44,107
+0. 
+It's clear that that's what we want the 
+
+79
+00:05:44,107 --> 00:05:49,560
+system to do and, in fact, you can do 
+that as you will see in the next lecture. 
+
+80
+00:05:49,560 --> 00:05:53,002
+Now, the last piece of bad news though is 
+that type 2, 
+
+81
+00:05:53,002 --> 00:05:57,043
+the bouncing ball type, that is hard, 
+it's hard to deal with a bouncing ball. 
+
+82
+00:05:57,043 --> 00:05:59,983
+It's hard to detect it, it hard, it's 
+hard to remedy it. 
+
+83
+00:05:59,983 --> 00:06:04,252
+and this is again, a situation where you 
+really need to test your system and see 
+
+84
+00:06:04,252 --> 00:06:08,250
+do I get something like this where you 
+start seeing an accumulation of switch 
+
+85
+00:06:08,250 --> 00:06:11,002
+times. 
+And if you do, you need to go back and 
+
+86
+00:06:11,002 --> 00:06:15,007
+revisit your model. 
+But in the next lecture, we will see how 
+
+87
+00:06:15,007 --> 00:06:20,990
+to indeed overcome the, the problems that 
+a type 1 Zeno system will will cause us. 

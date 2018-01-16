@@ -1,0 +1,638 @@
+1
+00:00:00,012 --> 00:00:05,162
+So, in the last lecture, we saw that, 
+even for rather un-, scary looking 
+
+2
+00:00:05,162 --> 00:00:08,687
+environments. 
+Let's say that we had, slight non 
+
+3
+00:00:08,687 --> 00:00:12,037
+convexities, or even extended convex 
+obstacles. 
+
+4
+00:00:12,037 --> 00:00:16,632
+the dynamic duo of behaviors, go to goal 
+and avoid obstacle, 
+
+5
+00:00:16,632 --> 00:00:20,147
+no longer was enough to negotioate these 
+environments. 
+
+6
+00:00:20,147 --> 00:00:24,912
+And we saw that we really needed some way 
+of flowing a long the boundary of an 
+
+7
+00:00:24,912 --> 00:00:28,387
+obstacle in order to be able to get 
+around in the world. 
+
+8
+00:00:28,387 --> 00:00:31,627
+And today, I want to talk about this 
+missing piece. 
+
+9
+00:00:31,627 --> 00:00:35,748
+The missinig behavior which is a wall 
+following behavior. 
+
+10
+00:00:35,748 --> 00:00:41,593
+And what I want to do now is really just 
+introduce it and then in the next lecture 
+
+11
+00:00:41,593 --> 00:00:47,197
+introduce it in a more systematic way as 
+to induce mode when you're trying to 
+
+12
+00:00:47,197 --> 00:00:51,722
+avoid sliding or avoid type 1 Zeno. 
+So, here is the question. 
+
+13
+00:00:51,722 --> 00:00:57,210
+How do you actually follow walls? Or when 
+I say walls what I really mean are 
+
+14
+00:00:57,210 --> 00:01:00,935
+boundaries of. 
+boundaries around obstacles. 
+
+15
+00:01:00,935 --> 00:01:05,595
+So let's, let's start simple. 
+Here is, as always, an obstacle and I 
+
+16
+00:01:05,595 --> 00:01:09,154
+have a disk around it where, this is my 
+safety disk. 
+
+17
+00:01:09,154 --> 00:01:14,353
+Well, avoid obstacle is going to tell me, 
+you know what, I want to move straight 
+
+18
+00:01:14,353 --> 00:01:19,907
+away from this From this obstacle. 
+Well, how do I , which direction do i go 
+
+19
+00:01:19,907 --> 00:01:25,032
+in, in order to maintain a constant 
+distance from this obstacle? Well what I 
+
+20
+00:01:25,032 --> 00:01:30,557
+need to do is, I need to flow, right, 
+along the boundary of this, this region. 
+
+21
+00:01:30,557 --> 00:01:35,032
+Well, what this means is that here, I 
+need to go in this direction. 
+
+22
+00:01:35,032 --> 00:01:41,158
+And what I really need to do then is take 
+The direction, given to me by my avoid 
+
+23
+00:01:41,158 --> 00:01:45,473
+obstacle behavior, and flip it down, like 
+this. 
+
+24
+00:01:45,473 --> 00:01:49,509
+And this is a negative pi over 2, or a 
+negative 90 degree flip. 
+
+25
+00:01:49,509 --> 00:01:55,236
+So, that's what I need to do. 
+I need to flip it down by 90 degrees, 
+
+26
+00:01:55,236 --> 00:01:59,482
+like this. 
+And now, I'm going to call this FW, for 
+
+27
+00:01:59,482 --> 00:02:05,636
+Follow-wall, and follow-wall is now, 
+simply, like I said, a flip down of 90 
+
+28
+00:02:05,636 --> 00:02:11,548
+degrees, which this curious looking 
+matrix here is actually achieving. 
+
+29
+00:02:11,548 --> 00:02:18,062
+And I may want to scale it, so I may have 
+some scaling that's making this Longer or 
+
+30
+00:02:18,062 --> 00:02:23,367
+shorter, depending on, I don't know. 
+Whatever concerns you may have. 
+
+31
+00:02:23,367 --> 00:02:29,477
+Now, I should point out that, this matrix 
+here, I can write as a rotation matrix, 
+
+32
+00:02:29,477 --> 00:02:34,297
+that corresponds to a pi over 2. 
+Sorry, negative pi over 2 flip. 
+
+33
+00:02:34,297 --> 00:02:40,400
+so I can actually write this as alpha, 
+which is the scale, times the rotation 
+
+34
+00:02:40,400 --> 00:02:46,010
+matrix, that is, the flip, times u, avoid 
+obstacle, because that is ultimately the 
+
+35
+00:02:46,010 --> 00:02:51,358
+behavior that I'm, that I'm flipping. 
+So, this tells me that the way to move 
+
+36
+00:02:51,358 --> 00:02:57,953
+around this obstacle, is to simply take 
+my avoid obstacle behavior, and flip it. 
+
+37
+00:02:57,953 --> 00:03:01,339
+That's as simple as that. 
+So, there is a problem though. 
+
+38
+00:03:01,339 --> 00:03:04,138
+I can actually flip in 2 different 
+directions. 
+
+39
+00:03:04,138 --> 00:03:07,219
+Not only can I go like this, I can also 
+go like that. 
+
+40
+00:03:07,219 --> 00:03:11,827
+So 1 question 1 should ask of course is 
+which direction should I go in, but the 
+
+41
+00:03:11,827 --> 00:03:17,923
+other question is how do I even 
+mathematically describe these 2 options? 
+
+42
+00:03:17,923 --> 00:03:24,362
+Well, what I have, what we saw before 
+was, we called it U clockwise follow 
+
+43
+00:03:24,362 --> 00:03:31,089
+wall, and the clockwise follow wall 
+corresponds to a negative pi over 2 flip 
+
+44
+00:03:31,089 --> 00:03:36,187
+to avoid the obstacle. 
+A counter clockwise follow wall, which 
+
+45
+00:03:36,187 --> 00:03:41,967
+means follow it in the other direction, 
+well that is simply a pi over 2 flip of 
+
+46
+00:03:41,967 --> 00:03:46,692
+the void obstacle behavior. 
+So if I introduce this thing that I've 
+
+47
+00:03:46,692 --> 00:03:52,322
+already called the rotation matrix, this 
+is simply an operation that does this 
+
+48
+00:03:52,322 --> 00:03:55,462
+flip over vector. 
+If I have a vector here. 
+
+49
+00:03:55,462 --> 00:04:01,997
+V, and I want to flip it by phi. 
+This new thing here, is simply r of, it's 
+
+50
+00:04:01,997 --> 00:04:05,187
+not phi, it's theta. 
+R of theta times v. 
+
+51
+00:04:05,187 --> 00:04:10,287
+This is how I get this new, this new 
+rotated vector. 
+
+52
+00:04:10,287 --> 00:04:14,832
+So the rotation matrix is cosine theta 
+negative sine cosine. 
+
+53
+00:04:14,832 --> 00:04:22,634
+That's the form of this linear operator 
+that's flipping vectors at certain angle. 
+
+54
+00:04:22,634 --> 00:04:29,198
+Well what we've already seen is that the 
+clockwise follow-wall it's a negative pi 
+
+55
+00:04:29,198 --> 00:04:35,405
+over 2 flip so this behavior is simply 
+equal to alpha times, this matrix times, 
+
+56
+00:04:35,405 --> 00:04:38,549
+uAO. 
+Now the counterclockwise, while I can 
+
+57
+00:04:38,549 --> 00:04:42,572
+write that in the same way, it's just a 
+pi over 2 flip instead of a negative pi 
+
+58
+00:04:42,572 --> 00:04:46,166
+over 2 flip, which gives me the following 
+expression. 
+
+59
+00:04:46,166 --> 00:04:51,126
+So, I actually have very, very clean 
+expressions for how I should make my 
+
+60
+00:04:51,126 --> 00:04:54,163
+flip, 
+meaning how I should proceed along the 
+
+61
+00:04:54,163 --> 00:04:59,093
+boundary of the obstacle. 
+And this works even if their obstacle is 
+
+62
+00:04:59,093 --> 00:05:03,900
+not just a point, because all I really 
+did was I took a void obstacle, a void 
+
+63
+00:05:03,900 --> 00:05:09,240
+obstacle behavior and, and flipped it. 
+Now we don't know which direction to go 
+
+64
+00:05:09,240 --> 00:05:12,732
+with them. 
+So lets say that we have this situation, 
+
+65
+00:05:12,732 --> 00:05:16,172
+right. 
+[SOUND] I'm going towards the goal, 
+
+66
+00:05:16,172 --> 00:05:20,846
+and then let's say when I'm here, I now 
+want to switch to a follow-wall behavior. 
+
+67
+00:05:20,846 --> 00:05:24,154
+Which direction to choose? it's not 
+entirely clear. 
+
+68
+00:05:24,154 --> 00:05:28,789
+Right? I, if the robot only sees what's 
+going on around here, for instance, how 
+
+69
+00:05:28,789 --> 00:05:33,527
+does the robot know what the world looks 
+like? We haven't built a map of anything. 
+
+70
+00:05:33,527 --> 00:05:38,293
+So, you could either go clockwise, 
+which in this case turned out to be the 
+
+71
+00:05:38,293 --> 00:05:42,849
+long way around, or you can go 
+counter-clockwise, but it's really not 
+
+72
+00:05:42,849 --> 00:05:48,138
+clear how we should make this choice. 
+But here's one thing one can observe, is 
+
+73
+00:05:48,138 --> 00:05:52,718
+that go to goal here is wants to move you 
+kind of upwards a little bit. 
+
+74
+00:05:52,718 --> 00:05:56,238
+So maybe we can let go to goal make the 
+choice for us. 
+
+75
+00:05:56,238 --> 00:06:00,745
+Go to goal once the drive was a little 
+bit in this direction, not at all in that 
+
+76
+00:06:00,745 --> 00:06:03,733
+direction. 
+So that's the idea we have here at, that 
+
+77
+00:06:03,733 --> 00:06:08,204
+there is no obvious answer, there is not 
+then obvious right choice given what 
+
+78
+00:06:08,204 --> 00:06:12,497
+local information the robot has. 
+The robot doesn't know globally what the 
+
+79
+00:06:12,497 --> 00:06:15,933
+world looks like. 
+So given that we only know locally what's 
+
+80
+00:06:15,933 --> 00:06:19,182
+going on may be we can lack this goal to 
+goal behavior. 
+
+81
+00:06:19,182 --> 00:06:24,318
+Decide which direction we should go in. 
+So let's, let's try to make this a little 
+
+82
+00:06:24,318 --> 00:06:29,379
+bit more mathematically precise, what it 
+means to let the goal to goal behavior 
+
+83
+00:06:29,379 --> 00:06:32,711
+decide. 
+Here, goal to goal, the angle was wrong 
+
+84
+00:06:32,711 --> 00:06:35,091
+here. 
+Goal to goal wants to go in this 
+
+85
+00:06:35,091 --> 00:06:38,231
+direction. 
+Right? So here, goal to goal wants to 
+
+86
+00:06:38,231 --> 00:06:41,665
+drive us up. 
+Limit up, so may be we should take 
+
+87
+00:06:41,665 --> 00:06:45,107
+follow-wall up. 
+So this would be u clockwise. 
+
+88
+00:06:45,107 --> 00:06:50,556
+Well, u counter clockwise or u 
+follow-wall counter clockwise wants to go 
+
+89
+00:06:50,556 --> 00:06:54,048
+down. 
+And note, that this angle is less than pi 
+
+90
+00:06:54,048 --> 00:06:59,168
+over 2, but this angle, the absolute 
+value of it, is greater than pi over 2. 
+
+91
+00:06:59,168 --> 00:07:03,442
+So we should be able to look at this 
+angle to determine. 
+
+92
+00:07:03,442 --> 00:07:09,182
+Where we should go, but lucky for us 
+there's a very simple way of checking 
+
+93
+00:07:09,182 --> 00:07:13,270
+these angles. 
+If I have two rectors v and w I can take 
+
+94
+00:07:13,270 --> 00:07:19,302
+what is called the inner product of those 
+t which is simple v transposed to w. 
+
+95
+00:07:19,302 --> 00:07:24,769
+Well that's equal to the absolute values 
+of, or the, the length of vectors times 
+
+96
+00:07:24,769 --> 00:07:30,032
+cosine of this angle in between them. 
+And if this angle is less than pi over 2, 
+
+97
+00:07:30,032 --> 00:07:34,713
+then cosine is going to be positive. 
+If it's greater than pi over 2, then 
+
+98
+00:07:34,713 --> 00:07:38,262
+cosine is going to be negative. 
+So all we need to do. 
+
+99
+00:07:38,262 --> 00:07:43,689
+It's to look at the sine of this thing, 
+to figure out whether or not we're kind 
+
+100
+00:07:43,689 --> 00:07:47,594
+of pointing in the right direction. 
+So, here is a test. 
+
+101
+00:07:47,594 --> 00:07:52,293
+Check go to goal inner product with 
+follow wall clockwise. 
+
+102
+00:07:52,293 --> 00:07:55,441
+If that's positive, we should go 
+clockwise. 
+
+103
+00:07:55,441 --> 00:08:00,792
+So, in this scenario, again. 
+Again, we're pointing in this direction, 
+
+104
+00:08:00,792 --> 00:08:04,041
+here is the follow wall, so this, go to 
+go. 
+
+105
+00:08:04,041 --> 00:08:08,433
+Here is u clockwise. 
+This angle, is less than pi over 2, which 
+
+106
+00:08:08,433 --> 00:08:14,484
+means that, this situation is satisfied. 
+Here is u counter-clockwise, so this 
+
+107
+00:08:14,484 --> 00:08:19,023
+angle is greater than pi over 2. 
+So, that means that the other condition 
+
+108
+00:08:19,023 --> 00:08:22,204
+is not satisfied. 
+So what we actually have is a local 
+
+109
+00:08:22,204 --> 00:08:24,682
+check. 
+We compute the direction that two 
+
+110
+00:08:24,682 --> 00:08:28,014
+different follow-wall behaviors would 
+take us in. 
+
+111
+00:08:28,014 --> 00:08:33,062
+Then we just take this inner product with 
+go-to-goal behavior, and we check the 
+
+112
+00:08:33,062 --> 00:08:35,925
+sign. 
+And whoever comes up with a positive sign 
+
+113
+00:08:35,925 --> 00:08:39,524
+is the winner. 
+and that's the direction we choose to go 
+
+114
+00:08:39,524 --> 00:08:41,783
+in. 
+Now, there is a problem with this of 
+
+115
+00:08:41,783 --> 00:08:44,240
+course. 
+And that's that if you remember our 
+
+116
+00:08:44,240 --> 00:08:46,722
+labyrinth, or our little maze here, 
+right. 
+
+117
+00:08:46,722 --> 00:08:51,078
+If I'm following wall, you know what, I'm 
+going to follow it all the way around. 
+
+118
+00:08:51,078 --> 00:08:55,024
+And I don't want to keep going 
+indefinitely around and around, right. 
+
+119
+00:08:55,024 --> 00:08:58,561
+So then I'm just spiraling. 
+At some point, if here's the goal. 
+
+120
+00:08:58,561 --> 00:09:00,832
+I want to release and go towards the 
+goal. 
+
+121
+00:09:00,832 --> 00:09:04,962
+So one thing that we don't know yet is. 
+When do we actually release the 
+
+122
+00:09:04,962 --> 00:09:09,487
+follow-wall behavior? When do we stop 
+following walls and start approaching 
+
+123
+00:09:09,487 --> 00:09:14,162
+goals again? The other question is, you 
+know what, we had avoid obstacle we had 
+
+124
+00:09:14,162 --> 00:09:18,762
+the rotation matrix, that flips either up 
+or down, depending when we're going 
+
+125
+00:09:18,762 --> 00:09:22,792
+clockwise or counterclockwise. 
+And then I have this little alpha there 
+
+126
+00:09:22,792 --> 00:09:27,002
+Is there some natural or systematic way 
+on which we can think about the alpha? 
+
+127
+00:09:27,002 --> 00:09:32,265
+And that is going to one One of the 
+things we will discuss in the next, the 
+
+128
+00:09:32,265 --> 00:09:33,260
+next lecture. 

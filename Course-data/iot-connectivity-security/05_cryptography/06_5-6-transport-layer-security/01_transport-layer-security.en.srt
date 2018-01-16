@@ -1,0 +1,676 @@
+1
+00:00:00,000 --> 00:00:05,953
+[MUSIC]
+
+2
+00:00:05,953 --> 00:00:09,928
+Hello, welcome back,
+this is the last lesson in the module
+
+3
+00:00:09,928 --> 00:00:13,675
+Cryptographic Solutions for
+Cyber Physical Systems.
+
+4
+00:00:14,785 --> 00:00:17,695
+It also concludes the course,
+Web Connectivity and
+
+5
+00:00:17,695 --> 00:00:20,115
+Security in Cyber Physical Systems.
+
+6
+00:00:21,283 --> 00:00:25,315
+In this final video lecture, we will
+look into the transport layer security
+
+7
+00:00:25,315 --> 00:00:28,279
+protocol, what it is, and how it works.
+
+8
+00:00:29,320 --> 00:00:34,730
+Transport Layer Security or
+TLS is a cryptographic protocol,
+
+9
+00:00:34,730 --> 00:00:38,350
+which facilitates secure communication or
+networks.
+
+10
+00:00:40,030 --> 00:00:45,050
+The predecessor of TLS is called
+Secure Socket Layer or SSL.
+
+11
+00:00:46,580 --> 00:00:50,700
+In fact,
+also TLS is often referred to as SSL,
+
+12
+00:00:50,700 --> 00:00:54,660
+because both of these protocols
+offer the same basic functionality,
+
+13
+00:00:54,660 --> 00:00:59,940
+and the first version of TLS is heavily
+based on the last version of SSL.
+
+14
+00:01:02,270 --> 00:01:06,309
+TLS provides a secured
+tunnel between two hosts.
+
+15
+00:01:07,320 --> 00:01:12,190
+The primary goal of TLS is to provide
+privacy and data integrity between
+
+16
+00:01:12,190 --> 00:01:18,210
+communicating applications, for example,
+between web browsers and web servers.
+
+17
+00:01:20,200 --> 00:01:24,990
+The TLS protocol is implemented on
+top of a reliable transport protocol,
+
+18
+00:01:24,990 --> 00:01:28,550
+such as the transmission control protocol,
+or TCP.
+
+19
+00:01:28,550 --> 00:01:34,629
+Or a datagram-oriented transport protocol,
+such as the User Datagram Protocol,
+
+20
+00:01:34,629 --> 00:01:39,097
+UDP, and the Datagram Congestion
+Control Protocol, DCCP.
+
+21
+00:01:39,097 --> 00:01:43,080
+The TLS protocol is composed
+of two base protocols,
+
+22
+00:01:43,080 --> 00:01:47,438
+called the Handshake Protocol and
+the Record Protocol.
+
+23
+00:01:50,402 --> 00:01:55,650
+Information transferred through TLS is
+protected using symmetric cryptography.
+
+24
+00:01:57,200 --> 00:02:02,790
+Unique keys for symmetric encryption
+are generated for each session and
+
+25
+00:02:02,790 --> 00:02:07,109
+exchanged using the handshake
+protocol at the start of the session.
+
+26
+00:02:09,060 --> 00:02:15,160
+The handshake protocol enables the client
+and server to authenticate each other and
+
+27
+00:02:15,160 --> 00:02:18,700
+select an encryption algorithm
+prior to sending the data.
+
+28
+00:02:20,670 --> 00:02:26,358
+The handshake protocol uses the public key
+cryptography to establish a shared secret
+
+29
+00:02:26,358 --> 00:02:31,809
+key for symmetric encryption between a
+client, which is usually a web browser and
+
+30
+00:02:31,809 --> 00:02:35,219
+a server,
+which provides a service to the client.
+
+31
+00:02:37,468 --> 00:02:42,972
+In addition to the shared secret key,
+the handshake protocol also exchanges
+
+32
+00:02:42,972 --> 00:02:48,004
+some other information,
+such as message formatting instructions.
+
+33
+00:02:48,004 --> 00:02:54,378
+Suppose you are trying to buy
+something from the Amazon website,
+
+34
+00:02:54,378 --> 00:02:59,770
+to start a secure transaction, a TLS or
+
+35
+00:02:59,770 --> 00:03:04,690
+SSL connection is established between
+your browser and the Amazon server.
+
+36
+00:03:06,250 --> 00:03:12,280
+First, your browser sends a hello
+message to Amazon server to request for
+
+37
+00:03:12,280 --> 00:03:14,150
+a TLS or SSL connection.
+
+38
+00:03:15,870 --> 00:03:18,720
+This message also includes
+some essential information,
+
+39
+00:03:18,720 --> 00:03:23,310
+such as session id and
+a list of cipher suits.
+
+40
+00:03:23,310 --> 00:03:27,610
+That is combinations of cryptographic
+methods supported by your system.
+
+41
+00:03:29,090 --> 00:03:34,930
+Then the server chooses one of the offered
+cipher suits, and sends a server
+
+42
+00:03:34,930 --> 00:03:40,760
+hello message, which includes a
+certificate and the selected cipher suite.
+
+43
+00:03:40,760 --> 00:03:45,830
+The certificate contains
+the servers public key,
+
+44
+00:03:45,830 --> 00:03:49,650
+which is verified and
+signed by a certificate authority.
+
+45
+00:03:51,110 --> 00:03:55,040
+In some cases, the server might want
+to also authenticate the client.
+
+46
+00:03:56,270 --> 00:03:57,240
+In this case,
+
+47
+00:03:57,240 --> 00:04:02,170
+it sends also an authentication request
+as part of the server hello message.
+
+48
+00:04:04,030 --> 00:04:08,760
+Once your browser has received the servers
+certificate, it will verify and
+
+49
+00:04:08,760 --> 00:04:10,920
+validate the certificate.
+
+50
+00:04:10,920 --> 00:04:17,320
+Then if everything is all right, the
+browser will generate a session key and
+
+51
+00:04:17,320 --> 00:04:21,740
+encrypt it with the server's public
+key and send it to the server.
+
+52
+00:04:23,170 --> 00:04:25,770
+Handshaking has now been completed.
+
+53
+00:04:25,770 --> 00:04:31,200
+And your browser and the Amazon server
+are ready to start a secure communication.
+
+54
+00:04:33,070 --> 00:04:37,200
+The second part of the TLS
+protocol is the record protocol.
+
+55
+00:04:38,870 --> 00:04:43,710
+After establishing a shared secret
+key using the handshake protocol,
+
+56
+00:04:43,710 --> 00:04:48,770
+the record protocol provides a secure
+communication session between the client
+
+57
+00:04:48,770 --> 00:04:51,470
+and the server using
+the shared secret key.
+
+58
+00:04:53,030 --> 00:04:57,350
+The record protocol has
+multiple responsibilities.
+
+59
+00:04:57,350 --> 00:05:02,900
+First, it splits the message, which it
+received from the application layer
+
+60
+00:05:02,900 --> 00:05:05,620
+into fixed size blocks of data.
+
+61
+00:05:05,620 --> 00:05:11,070
+Compresses them if required, and then adds
+a Message Authentication Code or MAC.
+
+62
+00:05:12,460 --> 00:05:17,270
+This is not to be confused with the Media
+Access Control Concept at the link layer.
+
+63
+00:05:18,960 --> 00:05:23,130
+A MAC has the same function
+as a digital signature.
+
+64
+00:05:23,130 --> 00:05:26,720
+It is used for message authentication and
+integrity checking.
+
+65
+00:05:28,930 --> 00:05:34,270
+A digital signature is generated
+by using public key cryptography
+
+66
+00:05:34,270 --> 00:05:39,880
+to encrypt a hash value of a message
+with a sender's private key.
+
+67
+00:05:39,880 --> 00:05:44,111
+A MAC is also obtained by encrypting
+the hash value of a message, but
+
+68
+00:05:44,111 --> 00:05:46,350
+now a shared symmetric key is used.
+
+69
+00:05:48,400 --> 00:05:53,310
+Since symmetric cryptography is use for
+a MAC, it is faster to generate and
+
+70
+00:05:53,310 --> 00:05:55,610
+verify it in a normal digital signature.
+
+71
+00:05:58,060 --> 00:06:03,040
+After generating and
+appending the MAC, the record protocol
+
+72
+00:06:03,040 --> 00:06:06,410
+encrypts the message block
+with the shared symmetric key.
+
+73
+00:06:08,120 --> 00:06:11,570
+As the last step, it adds a TLS header and
+
+74
+00:06:11,570 --> 00:06:14,030
+sends the message block
+to the other party.
+
+75
+00:06:16,270 --> 00:06:20,310
+On the receiver side, the message block
+is first decrypted using the shared key.
+
+76
+00:06:21,930 --> 00:06:27,130
+Then its authenticity and integrity
+are verified by comparing the MAC
+
+77
+00:06:27,130 --> 00:06:31,160
+computer from the received message block
+with the one appended to the block.
+
+78
+00:06:35,460 --> 00:06:41,630
+TLS or SSL secure connections are widely
+used in contemporary websites.
+
+79
+00:06:44,060 --> 00:06:49,990
+If a website uses such a connection,
+HTTPS appears in the beginning
+
+80
+00:06:49,990 --> 00:06:55,180
+of the web address, which indicates that
+a secure connection has been established.
+
+81
+00:06:56,670 --> 00:07:00,850
+HTTPS stands for
+Hypertext Transfer Protocol Secure.
+
+82
+00:07:02,780 --> 00:07:08,945
+Typically, there's also a small
+padlock icon beside the address line.
+
+83
+00:07:11,435 --> 00:07:16,921
+If you click on the padlock, you will see
+information about the secure connection in
+
+84
+00:07:16,921 --> 00:07:22,114
+question as well as the certificate which
+the website has sent to your browser.
+
+85
+00:07:24,917 --> 00:07:28,841
+If the certificate becomes invalid for
+some reason,
+
+86
+00:07:28,841 --> 00:07:33,724
+you will notice a red line across
+the HTTPS acronym indicating that
+
+87
+00:07:33,724 --> 00:07:38,800
+the connection is still secure,
+but the server cannot be verified.
+
+88
+00:07:41,250 --> 00:07:45,310
+A normal HTTP connection is establish
+
+89
+00:07:45,310 --> 00:07:50,130
+when the web address in your browser
+begin with the HTTP acronym.
+
+90
+00:07:51,340 --> 00:07:54,390
+And there is no padlock icon present,
+
+91
+00:07:54,390 --> 00:07:59,170
+indicating a connection which
+is not secured by TLS or SSL.
+
+92
+00:08:01,821 --> 00:08:03,483
+Digital certificates and
+
+93
+00:08:03,483 --> 00:08:08,960
+information on their issuing
+authorities are stored in your browser.
+
+94
+00:08:08,960 --> 00:08:11,730
+You can simply check them in
+the settings of your browser.
+
+95
+00:08:13,110 --> 00:08:16,500
+For example,in this image
+you see Firefox settings.
+
+96
+00:08:18,040 --> 00:08:24,460
+If you click on View Certificates,
+in the advanced menu and certificate tabs,
+
+97
+00:08:24,460 --> 00:08:29,239
+you will see the list of certificate
+authorities and their issued certificates.
+
+98
+00:08:30,890 --> 00:08:34,200
+Protocol such as session
+initiation protocol, or
+
+99
+00:08:34,200 --> 00:08:38,780
+SIP, and electronic gaming protocols
+are getting more and more popular.
+
+100
+00:08:39,910 --> 00:08:43,390
+Such protocols are based on
+the user datagram protocol or
+
+101
+00:08:43,390 --> 00:08:46,890
+UDP and require secure communication.
+
+102
+00:08:46,890 --> 00:08:52,410
+Datagram-based protocols
+cannot directly use TLS,
+
+103
+00:08:52,410 --> 00:08:54,400
+because of their delay-sensitive nature.
+
+104
+00:08:56,380 --> 00:09:01,017
+The Datagram Transport
+Layer Security Protocol,
+
+105
+00:09:01,017 --> 00:09:05,445
+or DTLS,
+is a natural extension of TLS over UDP.
+
+106
+00:09:05,445 --> 00:09:08,001
+With maximized reuse of code and
+
+107
+00:09:08,001 --> 00:09:13,310
+infrastructure to minimize the need for
+new security invention.
+
+108
+00:09:13,310 --> 00:09:17,868
+Like TLS, also DTLS is designed
+to provide communication
+
+109
+00:09:17,868 --> 00:09:22,808
+privacy with equivalent security
+guarantees for datagrams.
+
+110
+00:09:26,157 --> 00:09:31,299
+TLS is inefficient for
+datagram-oriented transport protocols,
+
+111
+00:09:31,299 --> 00:09:36,079
+because due to the inherent
+features of DTLS, possible lost or
+
+112
+00:09:36,079 --> 00:09:41,420
+out of order packets can cause
+unpredictable communication delays.
+
+113
+00:09:42,440 --> 00:09:47,859
+This is not acceptable or tolerable for
+delay senstive UDP based applications.
+
+114
+00:09:49,780 --> 00:09:55,400
+A TLS handshake breaks if the handshake
+messages are not delivered reliably or
+
+115
+00:09:55,400 --> 00:09:57,220
+in order, or are lost.
+
+116
+00:09:58,390 --> 00:10:03,240
+To solve this, DTLS assigns
+a specific sequence number for
+
+117
+00:10:03,240 --> 00:10:06,439
+each handshake message within
+the handshaking process.
+
+118
+00:10:07,610 --> 00:10:11,850
+It also uses a simple retransmission
+timer for each message.
+
+119
+00:10:13,180 --> 00:10:17,390
+Once a receiver receives
+a handshake message, it determines,
+
+120
+00:10:17,390 --> 00:10:21,320
+by checking the sequence number,
+if the message is in order or not.
+
+121
+00:10:22,740 --> 00:10:26,750
+If the right sequence number is detected,
+the message is processed.
+
+122
+00:10:28,100 --> 00:10:30,810
+Otherwise, it is queued for
+future delivery.
+
+123
+00:10:32,340 --> 00:10:37,750
+A queued message is processed only when
+all previous messages have been received.
+
+124
+00:10:39,520 --> 00:10:44,890
+On the sender side, if the sender doesn't
+get any reply for its handshake message
+
+125
+00:10:44,890 --> 00:10:50,150
+before the retransmission time runs out,
+it will resend that specific message.
+
+126
+00:10:51,890 --> 00:10:55,850
+The record protocols of DTLS and
+TLS are very similar.
+
+127
+00:10:57,240 --> 00:11:04,049
+The difference is that DTLS uses sequence
+numbers to re-order out of order packets.
+
+128
+00:11:05,870 --> 00:11:08,420
+This concludes our course
+on web connectivity and
+
+129
+00:11:08,420 --> 00:11:11,920
+security in cyber physical systems.
+
+130
+00:11:11,920 --> 00:11:15,690
+We started with the basics of the
+internet, and learned about its layered
+
+131
+00:11:15,690 --> 00:11:20,470
+structure and involved communication and
+connectivity protocols.
+
+132
+00:11:20,470 --> 00:11:23,891
+Then we learned how to design web
+connected cyber physical systems.
+
+133
+00:11:24,970 --> 00:11:29,290
+We also learned that cyber physical
+systems have a close relationship
+
+134
+00:11:29,290 --> 00:11:31,870
+with Internet of Things and
+cloud computing.
+
+135
+00:11:31,870 --> 00:11:36,170
+In the security segment of the course,
+
+136
+00:11:36,170 --> 00:11:41,370
+we learned about the basic concepts and
+components of security and privacy, and
+
+137
+00:11:41,370 --> 00:11:45,250
+so how cryptographic solutions can
+be used to secure your system.
+
+138
+00:11:46,940 --> 00:11:50,850
+That's it,
+I hope you have enjoyed the course.
+
+139
+00:11:50,850 --> 00:11:54,396
+Thanks for attending, bye, bye.
+
+140
+00:11:54,396 --> 00:11:58,300
+>> [SOUND]

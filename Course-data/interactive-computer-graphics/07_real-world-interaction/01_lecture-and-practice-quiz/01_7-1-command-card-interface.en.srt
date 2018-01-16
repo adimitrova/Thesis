@@ -1,0 +1,996 @@
+1
+00:00:00,025 --> 00:00:05,915
+[NOISE] Hello, this is week seven of
+
+2
+00:00:05,915 --> 00:00:13,030
+Interactive computer graphics course.
+
+3
+00:00:13,030 --> 00:00:16,315
+The topic we discuss here
+is Real World Interaction.
+
+4
+00:00:16,315 --> 00:00:19,800
+[COUGH]
+So real world interaction,
+
+5
+00:00:19,800 --> 00:00:25,180
+we mean a user interface for computing
+systems, working in the real world.
+
+6
+00:00:25,180 --> 00:00:29,850
+So, so far, we have discussed user
+interface between computer and the user.
+
+7
+00:00:29,850 --> 00:00:34,240
+So user do something, and then computer do
+something, and there's interaction here.
+
+8
+00:00:34,240 --> 00:00:36,730
+So through here,
+we extend this into the real world.
+
+9
+00:00:36,730 --> 00:00:42,520
+So some computers can be connected to real
+world objects like a robot or appliances,
+
+10
+00:00:42,520 --> 00:00:47,550
+home appliances so we discuss here
+the interaction between this kind of
+
+11
+00:00:48,590 --> 00:00:54,560
+computing systems working in the real
+world robots or home appliances and so on.
+
+12
+00:00:54,560 --> 00:00:57,100
+So here's original topics
+we discussed this week.
+
+13
+00:00:57,100 --> 00:01:00,780
+So we discussed command card interface for
+home robots.
+
+14
+00:01:00,780 --> 00:01:05,060
+And Style-By Demonstration for
+teaching robot's behavior, and
+
+15
+00:01:05,060 --> 00:01:07,110
+the Actuated Puppet Device, for
+
+16
+00:01:07,110 --> 00:01:11,830
+posing a steady characters and the Robotic
+Light systems and the Fur Display.
+
+17
+00:01:14,280 --> 00:01:19,740
+So first topic, we discuss is
+Command Card Interface, where this one is,
+
+18
+00:01:19,740 --> 00:01:22,019
+this work was published as Magic Cards.
+
+19
+00:01:24,040 --> 00:01:28,020
+And question here is, how to command
+a robot, walking robot in your home.
+
+20
+00:01:28,020 --> 00:01:31,780
+Now, typical approach is
+I think is two extremes.
+
+21
+00:01:31,780 --> 00:01:36,070
+One, it's very simplified, easy to
+use control with speech or gesture.
+
+22
+00:01:36,070 --> 00:01:38,080
+It's very abstract control.
+
+23
+00:01:38,080 --> 00:01:42,480
+However, in some cases,
+this is too abrupt, too simple.
+
+24
+00:01:42,480 --> 00:01:47,410
+You know, you cannot specify details with
+very simple command like create here,
+
+25
+00:01:47,410 --> 00:01:48,930
+or do it, or go there.
+
+26
+00:01:48,930 --> 00:01:50,640
+It's too abstract.
+
+27
+00:01:50,640 --> 00:01:53,070
+And also,
+these kind of commands are volatile.
+
+28
+00:01:53,070 --> 00:01:55,600
+You know, as soon as you say
+something it disappears.
+
+29
+00:01:55,600 --> 00:01:59,812
+It's kind of a difficult to confirm
+whether you actually gave a command or
+
+30
+00:01:59,812 --> 00:02:00,370
+the source.
+
+31
+00:02:00,370 --> 00:02:05,530
+And also you need to remember what command
+is available when you speak or gesture.
+
+32
+00:02:06,960 --> 00:02:11,530
+The other extreme is direct control,
+using joystick or gampad or somthing.
+
+33
+00:02:11,530 --> 00:02:18,410
+So you continuously provide command
+the system continuously follows a command.
+
+34
+00:02:18,410 --> 00:02:22,200
+So you can do everything with
+this control details, however.
+
+35
+00:02:22,200 --> 00:02:24,650
+In some cases,
+this is too little control, and
+
+36
+00:02:24,650 --> 00:02:27,290
+it's very tedious to control continuously.
+
+37
+00:02:27,290 --> 00:02:32,060
+So what we try to do here is to hit some
+middle ground between these two extremes.
+
+38
+00:02:34,160 --> 00:02:37,080
+So this is a method we propose here.
+
+39
+00:02:37,080 --> 00:02:40,660
+We propose paper card interface for
+giving command.
+
+40
+00:02:40,660 --> 00:02:45,530
+So in the, inter-environment the user
+leaves a command card giving instruction
+
+41
+00:02:45,530 --> 00:02:51,330
+to the robot, such as clean here, or
+deliver this object here, and so on.
+
+42
+00:02:51,330 --> 00:02:52,630
+And when she goes out,
+
+43
+00:02:52,630 --> 00:02:57,280
+everything happens, and the robot
+does its task when she is going out.
+
+44
+00:02:57,280 --> 00:03:00,520
+So the user puts the instruction
+card in the environment, and
+
+45
+00:03:00,520 --> 00:03:02,640
+the robot does the job
+while the user is out.
+
+46
+00:03:02,640 --> 00:03:04,191
+So that's the idea.
+
+47
+00:03:04,191 --> 00:03:05,278
+Let me show you a video.
+
+48
+00:03:14,509 --> 00:03:18,170
+So, first part of this
+video is a futuristic view.
+
+49
+00:03:18,170 --> 00:03:21,170
+So this is a concept video,
+not to be implemented.
+
+50
+00:03:21,170 --> 00:03:24,110
+But I hope you get the idea
+from this sequence.
+
+51
+00:03:24,110 --> 00:03:26,420
+So suppose you have a house, messy room,
+
+52
+00:03:26,420 --> 00:03:29,980
+messy kitchen,
+throw all trash bins is full.
+
+53
+00:03:29,980 --> 00:03:33,560
+So we need,
+I want robot system to take care of it.
+
+54
+00:03:33,560 --> 00:03:36,010
+So, she pulls out a command card set.
+
+55
+00:03:36,010 --> 00:03:38,270
+So this one is a combinatory list,
+
+56
+00:03:38,270 --> 00:03:42,540
+of possible operations you
+can give to the robot system.
+
+57
+00:03:42,540 --> 00:03:46,830
+Only you pick up appropriate command
+card and leaves it in the environment,
+
+58
+00:03:46,830 --> 00:03:51,880
+like wash this kitchen, and
+deliver this to the garbage or bin,
+
+59
+00:03:52,970 --> 00:03:57,960
+take out this garbage,
+make bed, so, clean here.
+
+60
+00:04:00,370 --> 00:04:04,140
+So a good thing about this kind
+of paper card couple things.
+
+61
+00:04:04,140 --> 00:04:08,760
+So, first you can see a list of available
+commands just by looking is the cards set
+
+62
+00:04:09,810 --> 00:04:13,520
+so you do not need to
+remember possible commands.
+
+63
+00:04:13,520 --> 00:04:16,600
+And also leaving a card is
+a very clear instruction and
+
+64
+00:04:16,600 --> 00:04:19,350
+if you want to cancel
+you just pick up a card.
+
+65
+00:04:19,350 --> 00:04:23,950
+And also a card is a very appropriate for
+space time physical location.
+
+66
+00:04:23,950 --> 00:04:27,640
+Like clean here, deliver here and
+here is very ambiguous, but
+
+67
+00:04:27,640 --> 00:04:30,760
+color location exactly
+space wise location.
+
+68
+00:04:30,760 --> 00:04:31,500
+So that's a benefit.
+
+69
+00:04:34,140 --> 00:04:38,150
+And after she goes out a robot
+appears to do the task.
+
+70
+00:04:40,030 --> 00:04:43,418
+And again this is a concept video
+not real implementations so
+
+71
+00:04:43,418 --> 00:04:46,414
+again this case our robot appears and
+it does the job.
+
+72
+00:04:48,752 --> 00:04:51,940
+So, here what we try to do
+is mimic interaction with
+
+73
+00:04:51,940 --> 00:04:57,440
+human human interaction you know a human
+can give a message card to another human.
+
+74
+00:04:57,440 --> 00:04:58,420
+And then they can do the job.
+
+75
+00:04:58,420 --> 00:05:01,489
+So we try to do the same
+as computer system.
+
+76
+00:05:20,827 --> 00:05:21,662
+So that's it.
+
+77
+00:05:21,662 --> 00:05:25,181
+And in the evening the user comes back and
+everything is done.
+
+78
+00:05:31,052 --> 00:05:34,240
+So this is the kind of
+envisioned futuristic view.
+
+79
+00:05:34,240 --> 00:05:37,003
+And now let me show you
+actual implementation.
+
+80
+00:05:40,088 --> 00:05:43,064
+So, Current Implementation, not too fancy,
+but there is a basic saying.
+
+81
+00:05:43,064 --> 00:05:47,250
+We built a system using Roomba robots.
+
+82
+00:05:47,250 --> 00:05:50,990
+So we have a couple of
+robots working together.
+
+83
+00:05:50,990 --> 00:05:53,410
+And also, we put it in the environment,
+
+84
+00:05:53,410 --> 00:05:56,990
+where everything is observed
+by the ceiling mounted camera.
+
+85
+00:05:59,970 --> 00:06:02,920
+And the system continues to
+track the command card and
+
+86
+00:06:02,920 --> 00:06:04,440
+also the lowered locations.
+
+87
+00:06:07,920 --> 00:06:12,260
+So yeah here's the system in the view in
+what, is it actually walking system so
+
+88
+00:06:12,260 --> 00:06:17,070
+user give instruction like deliver
+this box from here to there.
+
+89
+00:06:17,070 --> 00:06:17,620
+This location.
+
+90
+00:06:17,620 --> 00:06:19,410
+And the vacuum clean this spot.
+
+91
+00:06:20,590 --> 00:06:22,070
+And, also, remembers the task.
+
+92
+00:06:23,880 --> 00:06:27,190
+And then the user goes out and
+the system starts walking.
+
+93
+00:06:27,190 --> 00:06:29,840
+And see it in camera captures
+all of the command cards.
+
+94
+00:06:29,840 --> 00:06:32,120
+First, system picks up the command cards.
+
+95
+00:06:32,120 --> 00:06:33,480
+He is in this card pickup.
+
+96
+00:06:39,930 --> 00:06:42,290
+And after that,
+the system start to do the job.
+
+97
+00:06:42,290 --> 00:06:45,820
+First request was to deliver here,
+this to here.
+
+98
+00:06:45,820 --> 00:06:50,415
+So, pushing robot starts to walking and
+it push it over to the target location.
+
+99
+00:07:03,738 --> 00:07:07,860
+And next, using a grid system
+to vacuum clean this spot.
+
+100
+00:07:07,860 --> 00:07:09,745
+So vacuum cleaner appears and
+then clean it.
+
+101
+00:07:17,402 --> 00:07:19,325
+So, that's system and
+
+102
+00:07:19,325 --> 00:07:23,907
+also, another interesting aspect
+is that reporting errors.
+
+103
+00:07:23,907 --> 00:07:27,470
+So, user gives instructions to robot,
+as a paper card.
+
+104
+00:07:27,470 --> 00:07:31,340
+And, but sometimes system also
+provided feedback to the user.
+
+105
+00:07:31,340 --> 00:07:33,600
+For example, system makes an error,
+
+106
+00:07:33,600 --> 00:07:37,500
+then system should present
+error report to the user.
+
+107
+00:07:37,500 --> 00:07:40,630
+An interesting point about
+the system is that error report is
+
+108
+00:07:40,630 --> 00:07:43,820
+also given as a paper card
+left in the environment.
+
+109
+00:07:43,820 --> 00:07:44,320
+Let's see it.
+
+110
+00:07:45,760 --> 00:07:48,369
+So if the robot fails,
+like the power is out.
+
+111
+00:07:49,570 --> 00:07:53,620
+And the small printer,
+mobile printer robot appears and
+
+112
+00:07:53,620 --> 00:07:57,490
+then they have a printed message to
+the user, such as, I'm sorry, I failed.
+
+113
+00:07:57,490 --> 00:08:02,170
+So this may disclose a loop, you know,
+user provides command on paper card and
+
+114
+00:08:02,170 --> 00:08:05,040
+the system provides
+feedback as a paper card.
+
+115
+00:08:05,040 --> 00:08:08,560
+In this way, user can interact with
+the robotic system without touching any
+
+116
+00:08:08,560 --> 00:08:10,210
+computer, just using paper card.
+
+117
+00:08:14,325 --> 00:08:19,646
+So yeah, as again the environments like
+this we have ceiling mounted cameras and
+
+118
+00:08:19,646 --> 00:08:23,490
+central computers and
+then remotely controlled robots.
+
+119
+00:08:25,280 --> 00:08:32,300
+And we use visual tab using 2-dimensional
+augmented reality visual code.
+
+120
+00:08:32,300 --> 00:08:35,000
+And backside you see instruction for
+the user.
+
+121
+00:08:36,450 --> 00:08:37,980
+So that's a system.
+
+122
+00:08:37,980 --> 00:08:42,260
+And here let me briefly describe pushing
+algorithm developed for this system.
+
+123
+00:08:43,430 --> 00:08:47,780
+So this is a pushing algorithm for a non
+pre, prehensile, which means no grabbing.
+
+124
+00:08:50,130 --> 00:08:55,210
+So yeah, so naive approach is
+two binary state approach.
+
+125
+00:08:55,210 --> 00:08:59,860
+So first half your robot should
+go behind the object, and after
+
+126
+00:08:59,860 --> 00:09:05,250
+reaching the behind object the robot going
+to the pushing state and initialize push.
+
+127
+00:09:05,250 --> 00:09:07,450
+But in the middle then robot's mo,
+
+128
+00:09:07,450 --> 00:09:13,300
+may object may move sideways, and
+in that case robot go back to the behind.
+
+129
+00:09:13,300 --> 00:09:16,320
+And after reaching the behind
+goes the pushing state.
+
+130
+00:09:16,320 --> 00:09:19,960
+So in reality the robot
+needs to go back and.
+
+131
+00:09:19,960 --> 00:09:22,040
+Force between these two states.
+
+132
+00:09:22,040 --> 00:09:24,330
+And this is not very desirable.
+
+133
+00:09:24,330 --> 00:09:25,680
+So, this is unstable.
+
+134
+00:09:25,680 --> 00:09:30,190
+So, robot can, into an unstable status,
+between just go back and
+
+135
+00:09:30,190 --> 00:09:32,100
+force between these states.
+
+136
+00:09:32,100 --> 00:09:35,990
+And also this requires very
+careful parameter setting.
+
+137
+00:09:35,990 --> 00:09:40,210
+You know, you need some threshold
+distinguish these two states.
+
+138
+00:09:40,210 --> 00:09:42,130
+And this parameter can be very sensitive.
+
+139
+00:09:43,600 --> 00:09:46,240
+So, what we propose it to avoid this.
+
+140
+00:09:46,240 --> 00:09:51,870
+We propose to use a dipole field
+to achieve pushing behavior.
+
+141
+00:09:51,870 --> 00:09:53,470
+So suppose you have object here,
+
+142
+00:09:53,470 --> 00:09:57,270
+and you want to move this object to the,
+this direction.
+
+143
+00:09:57,270 --> 00:09:59,260
+So, given this object position and
+
+144
+00:09:59,260 --> 00:10:02,855
+orientation, we compute
+a dipole field at the center.
+
+145
+00:10:02,855 --> 00:10:07,590
+And that the object and
+the oriented tower's target direction.
+
+146
+00:10:07,590 --> 00:10:12,010
+And after that, simply we close the lower,
+according to this dipole field.
+
+147
+00:10:12,010 --> 00:10:14,000
+There are a couple benefits.
+
+148
+00:10:14,000 --> 00:10:19,240
+First, there's no clear mode switching,
+going behind and
+
+149
+00:10:19,240 --> 00:10:23,740
+pushing it smoothly emerge so there's
+no sudden change between the two modes.
+
+150
+00:10:23,740 --> 00:10:26,400
+Another thing is that scale invariance.
+
+151
+00:10:26,400 --> 00:10:30,830
+So, as you see dipole field it doesn't
+change, even if you scale up or
+
+152
+00:10:30,830 --> 00:10:31,950
+scale down.
+
+153
+00:10:31,950 --> 00:10:36,020
+Always the same shape depend,
+regardless of it's scale.
+
+154
+00:10:36,020 --> 00:10:39,090
+So which means you can
+apply the same allowances,
+
+155
+00:10:39,090 --> 00:10:42,399
+the same parameters to the object
+with different scales.
+
+156
+00:10:44,540 --> 00:10:47,010
+So here's a little bit more details.
+
+157
+00:10:47,010 --> 00:10:51,160
+So you have object and pushing direction,
+desired pushing direction,
+
+158
+00:10:51,160 --> 00:10:56,600
+direction and you first compute
+local coordinate plane defined by
+
+159
+00:10:56,600 --> 00:10:59,380
+the object position and orientation.
+
+160
+00:10:59,380 --> 00:11:01,190
+And then you compute the position.
+
+161
+00:11:01,190 --> 00:11:05,150
+Of the robot, relative to this
+object in this coordinate frame.
+
+162
+00:11:05,150 --> 00:11:09,450
+So, you get cos sin theta and
+sin theta, is a distance r.
+
+163
+00:11:09,450 --> 00:11:13,450
+After having this theta angle,
+the other one is very simple.
+
+164
+00:11:13,450 --> 00:11:17,590
+What you have to do is,
+just compute sin2 theta, sin2 theta.
+
+165
+00:11:17,590 --> 00:11:19,300
+It gives you the direction.
+
+166
+00:11:19,300 --> 00:11:21,140
+Where is it robot should look?
+
+167
+00:11:21,140 --> 00:11:24,645
+This is just a the finishing with
+right field, dipole field, and
+
+168
+00:11:24,645 --> 00:11:26,630
+you can implement this kind of here.
+
+169
+00:11:26,630 --> 00:11:28,660
+Very, very few lines of cords.
+
+170
+00:11:30,820 --> 00:11:32,430
+So, let me show you a brief video.
+
+171
+00:11:37,840 --> 00:11:39,680
+So, yeah this is the basic idea.
+
+172
+00:11:41,130 --> 00:11:44,289
+And the system consists of
+a seating camera and robots.
+
+173
+00:11:46,699 --> 00:11:49,980
+And then, this is a computed Dipole Field.
+
+174
+00:11:49,980 --> 00:11:52,960
+And then robot flows along the,
+flow field.
+
+175
+00:11:54,200 --> 00:11:58,110
+So in this examples,
+the robot pushes a very small cup.
+
+176
+00:11:58,110 --> 00:12:00,080
+And then the movement is very small.
+
+177
+00:12:00,080 --> 00:12:02,368
+There is no distinct two modes.
+
+178
+00:12:02,368 --> 00:12:05,770
+It's molds together.
+
+179
+00:12:05,770 --> 00:12:12,070
+And here the robot tries to push the large
+dish exactly using the same dipole field.
+
+180
+00:12:18,230 --> 00:12:21,615
+And you can apply the same
+algorithm to the Roomba box,
+
+181
+00:12:21,615 --> 00:12:23,523
+to push things on the floor.
+
+182
+00:12:29,543 --> 00:12:32,830
+By the way, this robot is very
+easy to control, from computer.
+
+183
+00:12:32,830 --> 00:12:37,300
+So, if you want to try robotic system,
+I recommend to try this system.
+
+184
+00:12:37,300 --> 00:12:40,490
+Another interesting thing is here,
+Cooperative pushing.
+
+185
+00:12:40,490 --> 00:12:43,890
+If the object is too heavy for
+one once to push,
+
+186
+00:12:43,890 --> 00:12:46,670
+two robots should cooperate together.
+
+187
+00:12:46,670 --> 00:12:49,140
+Traditional approach is the power pushing,
+you know?
+
+188
+00:12:49,140 --> 00:12:53,120
+There's always that other two, always
+act side by side, robot push together.
+
+189
+00:12:53,120 --> 00:12:58,920
+But here,
+we tested Single-line serial pushing.
+
+190
+00:13:00,080 --> 00:13:03,280
+So the other one was very simple,
+just apply two dipole fields.
+
+191
+00:13:03,280 --> 00:13:08,290
+Here, this robot tries to push this
+box this way, but it's too heavy.
+
+192
+00:13:08,290 --> 00:13:12,260
+Then this robot pushes this second,
+the fast robot.
+
+193
+00:13:12,260 --> 00:13:16,549
+The second robot pushes the fast robot,
+again, using a dipole field.
+
+194
+00:13:17,620 --> 00:13:21,470
+So by combining two [INAUDIBLE] then,
+you know,
+
+195
+00:13:21,470 --> 00:13:24,320
+robots can push relatively heavy object.
+
+196
+00:13:26,300 --> 00:13:28,000
+And again motion is going to be smooth.
+
+197
+00:13:28,000 --> 00:13:31,210
+So that's it.
+
+198
+00:13:33,090 --> 00:13:33,840
+So, yeah, so
+
+199
+00:13:33,840 --> 00:13:38,820
+we introduce command car based interaction
+and pushing outer wards in to achieve it.
+
+200
+00:13:38,820 --> 00:13:42,570
+And original paper was called Magic Cards,
+paper tag interface for
+
+201
+00:13:42,570 --> 00:13:45,030
+implicit robot control.
+
+202
+00:13:45,030 --> 00:13:48,580
+And the paper ID we used is a popular one.
+
+203
+00:13:48,580 --> 00:13:51,770
+They are visual two dimensional
+bar code to measure a dipoles,
+
+204
+00:13:51,770 --> 00:13:54,770
+frequently used in
+augmented reality systems.
+
+205
+00:13:54,770 --> 00:13:59,083
+Original paper was published in
+1998 by has metrics real time
+
+206
+00:13:59,083 --> 00:14:04,340
+object identification and
+registration method for augmented reality.
+
+207
+00:14:04,340 --> 00:14:09,420
+And if you want to use it and then there's
+a popular toolkit called AR toolkit, and
+
+208
+00:14:09,420 --> 00:14:12,120
+I recommend you to try it, if you want.
+
+209
+00:14:12,120 --> 00:14:17,180
+And for the pushing algorithm, we
+published a paper on the Dipole Field for
+
+210
+00:14:17,180 --> 00:14:20,040
+Object Delivery by Pushing
+on a Flat Surface.
+
+211
+00:14:20,040 --> 00:14:23,840
+So if you want to look at the pushing
+algorithm please take a look
+
+212
+00:14:23,840 --> 00:14:24,350
+at this paper.
+
+213
+00:14:24,350 --> 00:14:25,660
+Thank you.

@@ -1,0 +1,39 @@
+Welcome to this course,
+introduction to MongoDB. This course is part of our
+specialization, MongoDB Analytics, which has been
+designed to provide you with a broader understanding
+of how to fully utilize MongoDB from a data science
+and analytics perspective. Obviously, we need to
+start from the beginning and provide you with
+the knowledge foundation on how MongoDB works, how
+to operate with MongoDB, and where it fits
+your development practices before starting a
+full fledged MongoDB journey. In this course, you will learn
+the fundamentals of MongoDB that are needed to fully
+understand how to leverage its power to perform analytics. These fundamentals will include
+topics like MongoDB's document model, importing data
+into a MongoDB cluster, or working with the
+MongoDB CRUD API, alongside with an introduction
+to B's Aggregation framework. These topics will
+be explained to you by the means of a demo
+application, Mflix, which is a video
+streaming application similar to popular online
+streaming services. This will give you a
+great first encounter of how simple and practical it
+can be to build applications with MongoDB. In addition to these
+essential topics, you will also learn and work
+with useful MongoDB tools and services. Especially, you will
+work with MongoDB Atlas, our database as a
+service, MongoDB Compass, our schema visualization
+tool, as well as many other useful
+command line utilities. This course is for newcomers
+to the MongoDB family, so no prior MongoDB
+expertise is expected. That said, we do have some
+technical requirements that you should be aware of. We will be expecting you
+to know about Python, the most beautiful
+language in the world. This is the language of choice
+throughout this specialization. We will ask you to have
+Python 3 environments set up in your workstation. Finally, I just want
+to welcome you again to this first course on MongoDB. We hope that you enjoy the
+material we prepared for you, and we wish you
+the best of luck. And I'll see you in class.

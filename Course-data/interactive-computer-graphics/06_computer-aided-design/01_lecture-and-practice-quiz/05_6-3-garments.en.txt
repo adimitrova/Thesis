@@ -1,0 +1,114 @@
+Our next topic is Garment design. The work we introduce here
+is sensitive couture for interactive garment editing and modeling. So, the problem we want to address here, is a design of a new
+novel original garment. And again, this is very difficult for
+inexperienced people. So, you have 2D cross pattern, and then you have three
+dimensional garment on the body. it's, what you want is
+three dimensional shape. But what you have to control
+is two dimensional shape. And it's very difficult to imagine
+what 2D pattern you have to get to get the desired 3D shape. So, that's a problem we what to address. And our approach is the same
+as the previous one. So we learn continuous concurrent
+simulation behind the scene. So user continuously edits are saved
+2D pattern with mass operation and the system continuously applies
+physical draping across simulation. So user can directly edit to decide
+while watching the clothing in the 3D configuration. Well, that's the idea. So the same as before, on the left side, you see 2D clothes patterns
+the user is editing. And on the ride si, on the right side you
+see clothing, putting onto the 3D body. And here the simulation is much more
+accurate than the one I showed for the stuffed animal design. So you can actually predict details,
+wrinkles and so on. So you can interactively
+edit the 2D pattern. And the system interactively updates
+clothing draping simulation results. So you can actually see
+some more wrinkles here. And then you can edit the shape. So as to reduce wrinkles if necessary. So traditionally, if you want to do this,
+you have to actually physically cut paper or a cloth material, stitch together and
+put on the mannequin, physical mannequin. And learn draping and see the result and
+then go back to the pattern and cut it again. It can be very, very long,
+long time, it's very slow. And those are computer based
+simulations also available. It's similar. You have to move the simulation engine
+simulation and then go back to the design. That's a problem. And also, technically, it's very, challenge to run physical simulations so
+rapidly. Of course there are real time rapid
+cloth simulation existing already. But they, these physical simulation is for
+animation. So they assume fixed clothes pattern. So clothes geometry doesn't change. And the system learns lots
+of precomputation for efficient computation real-time. And then just draping learn animation. To learn simulation to create animation. However, here, the system, the user
+continuously change the rest of shape. Which is,
+violates assumption of standard animation, animation simulation [INAUDIBLE] so
+that's a challenge we have to address. So if you do not like a wrinkle here, then
+you can just interactively add dart here. And then, you can immediately see how
+the resulting clothing looks more natural. Okay, so this is one example and
+here's more examples. So, yeah, so design of t-shirt or garment for human character
+is not actually so difficult. There are many standard
+ways to design a garment. However, if you want
+to design a pajama for armadillo like here,
+it's a different program. No one knows how to
+design a character shirt. And especially if you wanted to
+buy a physically bodied garment, it's very difficult, and this kind of
+design tool can be very, very useful. So previously in computer graphics,
+garment of this character is a very cross mesh, there's no physics,
+just a polynomial mesh. But recently, game engines are very fast,
+more efficient. So we use, people starting to use
+physical assimilation for these garments. Now then, it's necessary to
+design physical bodied garments. So that's these are why you
+need this kind of tools. So here is a comparison with a real one. The left side is a computer graphics
+view in your simulation, and the right hand side is the physical
+construction which we 3D printed. This kind of character and also we
+physically stitched together this garment. And as you see, of course,
+it is not 100 millimeter size exact match. However, you see the general
+pattern like sleeve folds here and then you see full sleeve folds here. So I think this is enough for
+our initial design. And we also design real
+size garments using system. So this is just, just screen snapshot. We're using track to edit to save. And then you see continuously
+see the 3D result. And then we print it into a larger format,
+real size print. And then you put pattern into a cross and you stitch it together and
+then you get a wearable results. Okay. So let me briefly describe algorithm. So, again, so oh, complete implementation
+is beyond the scope of this short video. But I can briefly describe
+the basic idea behind it. How to make it faster. So this is a fundamental equation. Mathematical representation of
+the problem we trying solve here. So we have 2D input pattern. This is the input from the user. So user specify 2D clothes pattern. And then what we,
+ha want to compute is 3D cloth shape. So, yeah. So input these XY coordinate positions or
+we input clothes, and the output is XYZ position or or
+when you give your body shape. So 3D cloth shape,
+this is output you want to get. And then we cover function,
+that represents an additional set of 2D cloth pattern input and
+3D cloth shape output. And this function returns 0, if it is satisfy the physicality,
+body natural shape. And this function is called the resi,
+residual. So if the 3D cloth shape
+is not in the desired, appropriate physically balanced shape. This zero becomes bigger, larger. And then we, we gradually,
+this residual are smaller. They get more physically
+realistic results. So that's the problem we try to solve. And visually,
+the situation looks like this. So you have a space of varied designs. And on this view, on this axis, you have many different
+two dimensional cloth patterns. So use the space for
+that starts from this pattern and then moves to another pattern,
+and use the edit. And for each shape,
+you have a single iso surface, or space-specific region, where R becomes 0. So here, it's represented as
+a single line, single cloth line. So, for the given 2D clothes pattern, we take
+a look at the region where the R equals 0. And then look at the 3D shape, and
+then you will get the proper 3D output. So this is a, very very simplified
+view of what's going on internally. The program is at, notice here. So R, the residual is very highly
+non-linear and very, very slow to compute. So, yes, so R 0 is very curved and
+very complicated. When you change the pattern, you have to
+recompute R, which takes too much time. So we,
+what we use is a kind of a stanadard. But we use a linear appro,
+approximation around the current state. So visually, it looks like this. So, this a current design and
+then you compute the linear appro, approximation of this residual function. And this method called, called sensitivity
+analysis in structural analysis. And then after computing linear
+approximation it's kind of easy, to predict the,
+compute from 2D input to 3D shape. Just by solving our linear system. Which is faster. Of course,
+this is an approximation near this design. So, if you go farther away,
+then it's, it becomes too different. So and your system. So single linear
+appropriate is nothing now. Users who're walking far
+away from the linear state. It's a difference from the real
+physically realistic result gets bigger. So in that case, we compute another
+approximation here right this way. And then, so we cache multiple linear approximations
+occasionally and then blend them. So, in this case,
+if you have two examples and if you blend these two, you get a very,
+very close approximation. And this is still very fast to compute. So that's what we do in internally. So caching happens occasionally. So, the user,
+the system continuously monitors. Users the dragging operation. And then when the users dragging getting
+far away, you create another cache. Now you have two cache, and you move far away from these two caches,
+the system will generate another. So in this way, the system incrementally,
+the more and more caches. So this is a summary. So we presented garment design with
+concurrent physical simulation. So we edit a 2D pattern. And the system presents
+3D draping results. And then we have uprising sensite, sensiivity analysis which
+is linear approximation. And those are multiple caches
+before providing rapid feedback without random
+simulation each time. So, to learn more the original paper
+was published on Sensitive Couture for Interactive Garment Editing and Modeling. And the garment design is also a hot,
+popular topic in graphics community. And one example is Virtual Garments,
+A Fully Geometric Approach for Clothing Design. So, in this project,
+they did not use any physical simulation. Purely geometry approach, but the, but they can rapidly generate
+reasonable shapes this way. Thank you.

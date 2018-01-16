@@ -1,0 +1,88 @@
+Okay, our next topic is Desktop Icons. And what we will introduce here is called
+Bubble Clusters. So the topic we discuss here, is a
+management of desktop icons. So, suppose you have a desktop and the one
+possible way, the organized desktop is viewed
+special aggregation or special clusters. So, you put system icons here and
+shortcuts here and some documents here and documents on
+other topic here. So, this way people can manage, various
+information in limited space. However, a program is at this kind of
+visual cluster. Is not comprehensible from a computer. So they're just icons for a computer's
+point of view. So, whenever you have, you walk on this
+kind of a layout, you have to explicitly select
+group of objects. So, that's one problem. Another problem is that you have to, if
+you put too many icons in a same location, it can
+cause a cluster. And if you want to grab one icon hidden, behind these icons, you have to move other
+icons away. So that's a problem we want to address. Let me describe the program. So here, you be, clearly see four groups
+here. However, system does not understand these
+kind of clusters. So, you have to manually select and move around and then you should get a new
+group. Then you again, you have to manually
+select. Though, this can be very tedious. Also, if you have, a big cluster, like
+this and there you have to pick up, icon hidden
+it. Hidden behind it. You have to manually move out and then
+pick one object. So, this is very tedious. So, what we propose is, Bubble Clusters. So, Bubble Clusters is automatic grouping
+of nearby icons. And then visualization of them as in a
+bubble. And also, additionally, we introduce
+automatic spreading of cluster to pick up on hidden icon. So let me go back to the demonstration. So here, you have three grids, and if you
+enable Bubble Clusters, you will see the three
+bubbles, and then if you grab a bubble, you can drag them
+around by, just by grabbing a bubble, without
+manually selecting a group. [SOUND] And bubble, is automatically
+computed, as soon as you place these two icons
+nearby. And there's a little bit very small
+details but interesting details. Here, these two and these two, are in the
+same distance, however you know, if these two icons are
+previously separated. They will resist to be merged fast. But as soon as they are merged, then they
+start to resist to be splitted. So, this is, kind of history resist and it
+is very useful. And then you can, you know, move around
+and pick up many icons. And then, if you have a hidden icon, like
+this. Then you can double click here, and then
+you would temporarily spread icons and then you grab icon and the system go
+back to the original state. So, this is a bubble causal technique. And a bubble clusters technique, and then
+same idea can be applicable to this kind of digital
+ink. So, if we were walking on digital ink
+system. You know, you probably do not want to
+manipulate individual strokes. Rather than that, each cluster has a
+meaning grouping. And then, whenever you draw strokes, the system automatically groups nearby
+strokes together. And you can move around these strokes, by
+grabbing blue area. And if you connect together, it'll be one
+object, and then you can draw line and you will split
+them, so this is very useful for a discussion or
+a discussion on whiteboard or digital inks
+because that's a demonstration. Let me briefly describe the essence of
+implementation. So, we, I will first describe clustering
+algorithm. So, we use very, very simple pair-wise
+distance threshold. So, for all objects on the screen, first
+we assign each object to one cluster. So, cluster of object is like this. And then, for all object pairs, oi on the
+oj. If the distance is smaller than threshold. Then they will merge to object. Here's a view. So for each paper, each pair, we check the
+distance, against the one threshold. And if it is smaller, we merge them. And interesting part is here, the
+threshold. So, if the, if previously, in the previous
+frame, if the object in the different cluster, then the
+threshold becomes very small. So, difficult to merge together. And then, if the two objects are from the
+same cluster, in the previous step, then it becomes larger,
+which means very easier to merge together. And after having a cluster, we regenerate
+a visualization of the bubble. And here, what technology we use here, is
+2D Implicit Surface. So, Implicit Surface, is, to compute
+potential field. Field around each element, and then place
+iso-surface over the field. So, suppose you have one, two, three,
+four, five object and then we generate this kind of potential field
+around it, kind of height field. And then we aggregate them together and
+then compute iso-surface. And here is a visualization. [SOUND] So, if you have this kind of
+icons. And then this will, this one showings
+potential field. As you see, if you aggregate more and more object it becomes brighter which means
+high potential field. And after that, we just trace. lines, with the same height, heights. And, however, it's very time-consuming, to
+process individual pixels. So, we compute potential field values at
+grid cells, like this. And after computing potential fields at
+the grid cells, then we, out of, we, extract iso-surface by a technique
+called Marching Cubes. So, here's a summary of this video. So, the program we discuss here, is a management of spatially organized
+mini-icons on desktop. And then solution here. What we propose here, is automatic
+clustering of nearby icons as a bubble. And here's a pointers for further
+learning. So, original paper was published as a
+Bubble Cluster, Clusters: An Interface for Manipulating
+Spacial Aggregation of Graphical Objects. And the technique we use here, is called
+Implicit Surfaces. And Implicit Surfaces are very popular
+technique in computer graphics, to represent liquids
+and [INAUDIBLE] object. And the first publication was at SIGGRAPH
+82 by Jim Blinn. And then also, iso-surface extraction
+technique, called Marching Cubes was published at
+1987. And this is a very basic literature, and I
+recommend that, to take a look at them. Thank you.

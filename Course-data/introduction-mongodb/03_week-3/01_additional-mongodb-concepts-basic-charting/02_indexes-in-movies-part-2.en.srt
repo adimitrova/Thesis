@@ -1,0 +1,528 @@
+1
+00:00:00,150 --> 00:00:04,390
+Now, one of the things that we can do in
+MongoDB is actually explain how a query
+
+2
+00:00:04,390 --> 00:00:05,720
+is executed.
+
+3
+00:00:05,720 --> 00:00:08,690
+Now, to do this in Python,
+
+4
+00:00:08,690 --> 00:00:11,600
+there's a completely different
+command using the MongoDB shell.
+
+5
+00:00:11,600 --> 00:00:16,310
+But we're using our IPython notebook
+here or our Jupyter notebook here.
+
+6
+00:00:16,310 --> 00:00:20,860
+We can perform the explain by running
+a commands on the mflix database.
+
+7
+00:00:20,860 --> 00:00:24,440
+The explain command will be sent by
+defining where we want to find, or
+
+8
+00:00:24,440 --> 00:00:27,290
+what the command on which collection
+we want to find to perform.
+
+9
+00:00:27,290 --> 00:00:29,360
+In this case, the "find" on "movies".
+
+10
+00:00:29,360 --> 00:00:32,554
+And what's the filter that
+we want to actually execute.
+
+11
+00:00:32,554 --> 00:00:35,735
+For example, "tomatoes.viewer.numReviews"
+greater than 10.
+
+12
+00:00:35,735 --> 00:00:37,335
+It's a nice going to do.
+
+13
+00:00:37,335 --> 00:00:41,327
+And also, we can define the type of
+verbosity of this explain command.
+
+14
+00:00:41,327 --> 00:00:46,681
+Once we run this,
+we can see the execution of this query.
+
+15
+00:00:46,681 --> 00:00:51,166
+This different stages by which
+the execution of the query needed to go
+
+16
+00:00:51,166 --> 00:00:52,230
+through.
+
+17
+00:00:52,230 --> 00:00:57,940
+If the stage is an index scan or
+not, if it has it's FETCH stage,
+
+18
+00:00:57,940 --> 00:01:01,380
+and a bunch of other information
+that is really, really important for
+
+19
+00:01:01,380 --> 00:01:07,290
+us to understand if the actual execution
+is being optimum or close to that.
+
+20
+00:01:07,290 --> 00:01:11,007
+Now, I'm not going to go into too
+much deep in terms of the weeds of
+
+21
+00:01:11,007 --> 00:01:13,826
+the query engine in all
+the stages it performs.
+
+22
+00:01:13,826 --> 00:01:18,216
+But you should be aware of the fact that
+every single query that is executed in
+
+23
+00:01:18,216 --> 00:01:22,075
+MongoDB and in other databases
+will go through different stages.
+
+24
+00:01:22,075 --> 00:01:26,210
+For example, COLLSCAN basically stands for
+a collection scan.
+
+25
+00:01:26,210 --> 00:01:30,430
+This is the worst performance you can get
+because it will go into all different
+
+26
+00:01:30,430 --> 00:01:34,580
+documents of your collection and try to
+match them against your query criteria.
+
+27
+00:01:34,580 --> 00:01:36,935
+But there's like FETCH, SORT, IXSCAN,
+
+28
+00:01:36,935 --> 00:01:42,170
+SHARD_MERGE, bunch of different
+stages that make part of your query.
+
+29
+00:01:42,170 --> 00:01:46,090
+You will find some of them
+on your explain output.
+
+30
+00:01:46,090 --> 00:01:50,900
+But getting back to the explain
+itself of our query,
+
+31
+00:01:50,900 --> 00:01:54,060
+which is a filter on
+"tomatoes.viewer.numReviews" greater
+
+32
+00:01:54,060 --> 00:01:58,640
+than 10, we can see here this
+field called winningPlan.
+
+33
+00:01:58,640 --> 00:02:01,660
+It takes an inputStage
+is a direction forward.
+
+34
+00:02:01,660 --> 00:02:04,460
+It has a couple of other
+things which are interesting.
+
+35
+00:02:04,460 --> 00:02:09,200
+For example, the fact that it is passing
+though an index scan into the stage.
+
+36
+00:02:10,310 --> 00:02:14,780
+Another important thing here to raise
+up is the fact that it is using index.
+
+37
+00:02:14,780 --> 00:02:16,760
+And the index that's been used for
+
+38
+00:02:16,760 --> 00:02:21,440
+this query is this
+tomatoes.viewer.numReviews -1.
+
+39
+00:02:21,440 --> 00:02:25,730
+So it's using a single index to
+perform this particular query and
+
+40
+00:02:25,730 --> 00:02:29,470
+return results in a very,
+very efficient manner.
+
+41
+00:02:29,470 --> 00:02:31,230
+But getting back to our list of indexes,
+
+42
+00:02:31,230 --> 00:02:34,480
+there's a particular index that I
+want to raise your attention to.
+
+43
+00:02:34,480 --> 00:02:39,380
+This one here,
+title_text_cast_text_directors_text.
+
+44
+00:02:39,380 --> 00:02:46,000
+Now, this means that this index here
+is a fts, full-text search text.
+
+45
+00:02:46,000 --> 00:02:49,340
+Now, text search indexes
+are slightly different from, for
+
+46
+00:02:49,340 --> 00:02:53,780
+example, single fill indexes like
+tomatoes.viewer.numReviews, or
+
+47
+00:02:53,780 --> 00:02:59,240
+even compound indexes which are on
+genres and tomatoes.viewer.numReviews.
+
+48
+00:02:59,240 --> 00:03:03,937
+The main difference is that, text indexes
+do not just follow the exact match of
+
+49
+00:03:03,937 --> 00:03:06,226
+a value against the index structure.
+
+50
+00:03:06,226 --> 00:03:08,652
+They will take in consideration,
+relevance.
+
+51
+00:03:08,652 --> 00:03:12,874
+How relevant is a key compared
+to the different entries that
+
+52
+00:03:12,874 --> 00:03:14,822
+are present in that index?
+
+53
+00:03:14,822 --> 00:03:18,805
+In this particular example,
+the title, cast, and
+
+54
+00:03:18,805 --> 00:03:24,518
+directors are all fields which are going
+to be indexed based on their text.
+
+55
+00:03:24,518 --> 00:03:28,880
+That means that would be creating
+an index for text search support.
+
+56
+00:03:28,880 --> 00:03:33,420
+So if we go down here to the notebook and
+execute this particular query here where
+
+57
+00:03:33,420 --> 00:03:37,220
+our filters specifies that we're
+looking for a title, Titanic.
+
+58
+00:03:37,220 --> 00:03:40,520
+We can see that we only
+find the exact match
+
+59
+00:03:40,520 --> 00:03:43,510
+of the movies where the title is Titanic.
+
+60
+00:03:43,510 --> 00:03:48,329
+And if we would change something like
+the title from capital case to lower
+
+61
+00:03:48,329 --> 00:03:52,291
+case on the title,
+you might not find absolutely nothing.
+
+62
+00:03:52,291 --> 00:03:55,474
+Because there will not
+be an exact match for
+
+63
+00:03:55,474 --> 00:03:59,460
+that particular title in our movies,
+which is fine.
+
+64
+00:03:59,460 --> 00:04:01,225
+That's expected.
+
+65
+00:04:01,225 --> 00:04:04,230
+But we can also do another
+different type of search.
+
+66
+00:04:04,230 --> 00:04:08,910
+We can specify that we are going
+to be looking to a text search and
+
+67
+00:04:08,910 --> 00:04:11,920
+we're going to be searching for
+the term titanic.
+
+68
+00:04:12,920 --> 00:04:14,180
+Once we execute that query,
+
+69
+00:04:14,180 --> 00:04:19,550
+we can see that we can find several
+different movies, not just one.
+
+70
+00:04:19,550 --> 00:04:24,210
+And not all of them match titanic,
+either case insensitive, but
+
+71
+00:04:24,210 --> 00:04:28,150
+also, for example,
+the fact that we have Titan on it.
+
+72
+00:04:28,150 --> 00:04:29,870
+Now, why is that?
+
+73
+00:04:29,870 --> 00:04:32,280
+Text search will take in
+consideration relevance.
+
+74
+00:04:32,280 --> 00:04:36,583
+And that means that we're going to be
+looking to things like stemming of
+
+75
+00:04:36,583 --> 00:04:41,000
+the term, case insensitive,
+diacritics and even stop words.
+
+76
+00:04:41,000 --> 00:04:46,210
+There's a bunch of different other options
+that like we specified in our search terms
+
+77
+00:04:46,210 --> 00:04:52,200
+that would make this query results
+smaller or larger depending on the type
+
+78
+00:04:52,200 --> 00:04:57,420
+of fidelity that we want based on the term
+that we are providing for the search.
+
+79
+00:04:57,420 --> 00:05:00,460
+We're not going to go into
+too much detail on that.
+
+80
+00:05:00,460 --> 00:05:05,330
+But this is a baseline functionality that
+MongoDB supports based on a specific
+
+81
+00:05:05,330 --> 00:05:09,750
+set of text indexes that you
+can specify on a collection.
+
+82
+00:05:09,750 --> 00:05:13,590
+The limitation here is that you can
+only specify one text search index
+
+83
+00:05:13,590 --> 00:05:15,650
+per collection in MongoDB.
+
+84
+00:05:15,650 --> 00:05:16,380
+All right, cool.
+
+85
+00:05:16,380 --> 00:05:19,328
+l saw some of the different indexes that
+
+86
+00:05:19,328 --> 00:05:23,269
+MongoDB in this particular
+movies collection has.
+
+87
+00:05:23,269 --> 00:05:26,372
+How can l create one my own if l want to?
+
+88
+00:05:26,372 --> 00:05:30,359
+Let's say, for example,
+that we have this countries here filled,
+
+89
+00:05:30,359 --> 00:05:33,864
+that l would like to start searching on or
+matching exactly,
+
+90
+00:05:33,864 --> 00:05:39,450
+or even sorting the results base on the
+countries that the movie is related with.
+
+91
+00:05:39,450 --> 00:05:46,480
+Now, I could simply define a create index
+method pathing on an array of two pools.
+
+92
+00:05:46,480 --> 00:05:52,090
+Those two pools will contain the field
+key that I want, in this case, countries.
+
+93
+00:05:52,090 --> 00:05:57,074
+In what sort of order do I
+want my index to be sorted?
+
+94
+00:05:57,074 --> 00:06:02,091
+If I would like to have a text field,
+I could also specify that here or
+
+95
+00:06:02,091 --> 00:06:05,460
+even if it'd be to this field or
+to the index.
+
+96
+00:06:05,460 --> 00:06:08,480
+That will be the type of index
+that I'm going to be creating.
+
+97
+00:06:08,480 --> 00:06:12,790
+In this case, I'm going to create
+a top level root level field,
+
+98
+00:06:12,790 --> 00:06:16,500
+single field index sorted ASCENDING.
+
+99
+00:06:16,500 --> 00:06:21,430
+Once I run the commands, it would tell me
+back what's the name it was created with
+
+100
+00:06:21,430 --> 00:06:25,420
+following the nomenclature,
+the fields, and the sorting order.
+
+101
+00:06:25,420 --> 00:06:27,942
+As a recap on this lesson's topics,
+
+102
+00:06:27,942 --> 00:06:31,020
+MongoDB has several
+different types of indexes.
+
+103
+00:06:31,020 --> 00:06:35,030
+Now, indexes are used to optimize
+our query performance and
+
+104
+00:06:35,030 --> 00:06:38,430
+the query access patterns that
+we use in our application.
+
+105
+00:06:38,430 --> 00:06:43,200
+A collection may have several different
+types of indexes on different fields.
+
+106
+00:06:43,200 --> 00:06:44,180
+Use them wisely,
+
+107
+00:06:44,180 --> 00:06:48,160
+because the more indexes we have,
+the slower our writes will become.
+
+108
+00:06:48,160 --> 00:06:50,770
+If we are optimizing
+our read capabilities,
+
+109
+00:06:50,770 --> 00:06:55,420
+we might be putting some
+penalty in our write ability.
+
+110
+00:06:55,420 --> 00:06:58,740
+That's all I have for
+you on indexes in movies lesson.

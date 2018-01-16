@@ -1,0 +1,321 @@
+1
+00:00:00,860 --> 00:00:03,210
+It's easy to load data in to MongoDB.
+
+2
+00:00:03,210 --> 00:00:07,290
+In part, this is because MongoDB
+supports a very flexible data model.
+
+3
+00:00:07,290 --> 00:00:13,500
+Meaning, you do not need to define
+a schema in advance or set up any tables.
+
+4
+00:00:13,500 --> 00:00:16,110
+Tables, by the way are called
+collections in MongoDB.
+
+5
+00:00:17,140 --> 00:00:17,670
+In addition,
+
+6
+00:00:17,670 --> 00:00:21,490
+MongoDB is flexible about the shape of
+individual documents within a collection.
+
+7
+00:00:22,680 --> 00:00:25,680
+The number of fields,
+specific names of keys, and
+
+8
+00:00:25,680 --> 00:00:30,290
+value types can vary from one document
+to another within the same collection.
+
+9
+00:00:30,290 --> 00:00:31,820
+In general, you should develop and
+
+10
+00:00:31,820 --> 00:00:34,755
+use a consistent data model but
+MongoDB makes it easy.
+
+11
+00:00:34,755 --> 00:00:39,445
+To use an exploratory iterative
+approach to developing the data model.
+
+12
+00:00:39,445 --> 00:00:42,595
+This is important in nearly all
+use cases for data science.
+
+13
+00:00:42,595 --> 00:00:43,585
+Requirements evolve and
+
+14
+00:00:43,585 --> 00:00:47,285
+the availability of new data sources
+imposes changes on our data models.
+
+15
+00:00:48,295 --> 00:00:50,915
+So let's get started with an example
+of loading, cleaning, and
+
+16
+00:00:50,915 --> 00:00:53,105
+iterating on a data model using MongoDB.
+
+17
+00:00:54,620 --> 00:00:58,080
+First, we're going to load some data
+into your free tier cluster, for
+
+18
+00:00:58,080 --> 00:01:00,400
+this we're going to use
+the Mongo import program and
+
+19
+00:01:00,400 --> 00:01:05,420
+import the csv file of the data for
+a little more than 46,000 movies.
+
+20
+00:01:05,420 --> 00:01:10,940
+First, download the file
+movies_initial.csv
+
+21
+00:01:10,940 --> 00:01:16,770
+from the handouts, then we will import
+the data, using the mongoimport command.
+
+22
+00:01:16,770 --> 00:01:19,506
+Mongoimport is distributed with MongoDB.
+
+23
+00:01:19,506 --> 00:01:22,240
+Since you have already downloaded and
+installed MongoDB,
+
+24
+00:01:22,240 --> 00:01:25,770
+you have access to it from the command
+line interface of your choice.
+
+25
+00:01:25,770 --> 00:01:29,010
+On a Mac or Linux machine, you'll
+probably use a Bash shell of some kind.
+
+26
+00:01:30,280 --> 00:01:34,414
+On Windows, you'll probably use
+the Command Prompt, or PowerShell.
+
+27
+00:01:34,414 --> 00:01:38,165
+For this example, we're going to use
+some movies data from the open movie
+
+28
+00:01:38,165 --> 00:01:40,430
+database also known as OMDB.
+
+29
+00:01:40,430 --> 00:01:43,110
+This data set is nice because
+it is large enough and
+
+30
+00:01:43,110 --> 00:01:46,300
+requires enough data
+cleaning to be realistic.
+
+31
+00:01:47,440 --> 00:01:51,320
+In addition, there are a number of other
+publicly available data sets that we can
+
+32
+00:01:51,320 --> 00:01:55,040
+work to integrate with the OMDB data.
+
+33
+00:01:55,040 --> 00:01:59,240
+In a manner that effectively simulates the
+types of challenges we face in developing
+
+34
+00:01:59,240 --> 00:02:04,050
+and maintaining data resources to support
+enterprise analytic applications.
+
+35
+00:02:04,050 --> 00:02:06,940
+To import our initial data
+set you'll use mongoimport,
+
+36
+00:02:06,940 --> 00:02:09,810
+specifying several command line options.
+
+37
+00:02:09,810 --> 00:02:12,860
+Here's the template for
+the command you'll use.
+
+38
+00:02:12,860 --> 00:02:16,870
+You simply need to fill in
+the command with the cluster name and
+
+39
+00:02:16,870 --> 00:02:19,900
+seed list for your free tier cluster.
+
+40
+00:02:19,900 --> 00:02:20,670
+To get this string,
+
+41
+00:02:20,670 --> 00:02:24,460
+go into Atlas and from the cluster view,
+click the CONNECT button.
+
+42
+00:02:26,480 --> 00:02:31,355
+In the model that pops up,
+select Connect with the Mongo Shell.
+
+43
+00:02:31,355 --> 00:02:35,410
+Mongoimport has a slightly
+different API than the Mongo shell.
+
+44
+00:02:35,410 --> 00:02:40,070
+So, we just need to copy a couple
+portions of this connection URI.
+
+45
+00:02:40,070 --> 00:02:42,400
+First, we'll copy the cluster name.
+
+46
+00:02:42,400 --> 00:02:46,670
+The cluster name for your replica
+set should appear as the value for
+
+47
+00:02:46,670 --> 00:02:49,210
+the URI parameter replica set.
+
+48
+00:02:49,210 --> 00:02:53,900
+Go ahead and copy and
+paste it into our mongoimport command.
+
+49
+00:02:53,900 --> 00:02:57,540
+Replacing the cluster place holder
+with the actual cluster name.
+
+50
+00:02:57,540 --> 00:03:01,840
+Next, we need to select
+the seed list from this URI.
+
+51
+00:03:02,940 --> 00:03:08,120
+The seed list begins immediately
+after the :// in this URI and
+
+52
+00:03:08,120 --> 00:03:10,950
+ends just before /test.
+
+53
+00:03:10,950 --> 00:03:15,870
+The seed list is nothing more than a list
+of the fully qualified domain names, plus
+
+54
+00:03:15,870 --> 00:03:21,420
+the port on which MongoDB is running, for
+all the servers in your MongoDB cluster.
+
+55
+00:03:21,420 --> 00:03:26,640
+Replace the seed list placeholder with
+the seed list you've just copied.
+
+56
+00:03:26,640 --> 00:03:28,500
+See the lecture notes for this lesson for
+
+57
+00:03:28,500 --> 00:03:31,890
+a mongoimport template command
+you can copy and paste.
+
+58
+00:03:31,890 --> 00:03:35,050
+And for
+a written version of these instructions.
+
+59
+00:03:35,050 --> 00:03:39,606
+Once you have correctly added your seed
+list to the mongoimport command go ahead
+
+60
+00:03:39,606 --> 00:03:40,287
+and run it.
+
+61
+00:03:40,287 --> 00:03:46,075
+But before you do, make sure that
+the movies_initial.csv file is located in
+
+62
+00:03:46,075 --> 00:03:51,525
+the same directory from which you're
+running the mongoimport command.
+
+63
+00:03:52,580 --> 00:03:56,475
+I can run exactly the same command,
+in Windows,
+
+64
+00:03:56,475 --> 00:04:00,920
+from the Command Prompt or
+the Windows Shell.
+
+65
+00:04:00,920 --> 00:04:03,040
+Mongoimport has the same API,
+
+66
+00:04:03,040 --> 00:04:06,240
+regardless of which operating
+system you're running on.
+
+67
+00:04:06,240 --> 00:04:08,850
+Once mongoimport finishes running,
+
+68
+00:04:08,850 --> 00:04:12,240
+you should see a message indicating
+how many documents were imported.

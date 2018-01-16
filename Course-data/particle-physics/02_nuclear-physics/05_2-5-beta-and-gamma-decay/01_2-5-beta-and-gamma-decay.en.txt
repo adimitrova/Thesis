@@ -1,0 +1,91 @@
+[MUSIC] During the second module, we deal with
+nuclear physics and its applications. And in this fifth video,
+we go into more details on the two other types of radioactivity,
+that is to say beta and gamma decays. The goals for you are to be able to
+characterize beta decays of nuclei and their properties. To relate these properties to those
+of the underlying weak interactions, and to be able to characterize
+gamma decays of excited nuclei. A neutron-rich nucleus, i.e. one that has
+N/Z larger than what stability requires can transform into a more
+stable nucleus by emitting an electron and transforming one of
+its neutrons into a proton in what is called a ß- decay. To conserve lepton number, this emission must be accompanied by
+the emission of an anti-neutrino. In the contrary case, proton-rich nuclei,
+which have too many protons to be stable, can reach stability by ß+ decay,
+accompanied by neutrino emission. Since the proton is
+lighter than the neutron, this latter process can only happen for a bound proton where the Q value is turned
+positive by a gain in binding energy. A nucleus with a surplus
+of protons can also capture an electron from the internal
+K-shell of the atomic cloud. The other electrons of the atom will
+then cascade down to fill the gap. Since a lepton disappears in the capture a neutrino must be emitted
+to conserve lepton number. All these decays are isobar,
+they have ∆A = 0 and ∆Z = ±1. Since beta decays are
+three body processes, the spectrum of the emitted electron
+or positron is a continuous one. It has the shape which is
+sketched in this graph. The neutrino interacts only
+very weakly with matter. It will normally escape undetected. This is also the reason why the neutrino
+has taken so long to be discovered. Neutrinos and anti-neutrinos are fermions
+with zero electric charge and a very small mass. The maximum electron energy is obtained
+when the neutrino is produced almost at rest. Its maximum value then approaches the Q
+value, like it would in a two body decay. When one measures this energy, one can establish an upper limit on
+the neutrino mass by energy conservation. The video 2.5a introduces
+the exponential decay law, which describes the time evolution
+of this and other decay processes. At the quark level, beta decay proceeds
+via the exchange of a W boson, which is the gauge boson mediating the weak
+force like it is shown in this Feynman graph. The large mass of this
+boson is responsible for the short range of the weak force and
+its weakness at low energies. Neutrinos are very peculiar particles.
+Their generations can mix with each other. Their mass is the lightest
+among all particles and probably in the order of
+milli electron volt. It is not even clear if neutrinos and anti-neutrinos are really
+different particles. Their charge is the same, and
+they have no magnetic dipole moment, contrary to other neutral particles,
+like the neutron for example. The definitive answer will come
+from experiments searching for what is called double beta decay. They deal with nuclei
+where two beta decays happen simultaneously to
+reach the value of stability. If neutrino and
+antineutrino are really the same particle, one of them can then arrange
+the lepton number of the other one, such that there are no neutrinos
+emitted in the process at all. If they are not identical, two neutrinos must always be emitted
+in the process of double beta decay. For recent review of
+the experimental situation, please see the article by Rodejohann
+cited on the bottom of this slide. Weak interactions have
+two more peculiarities. The first one is that only the left-handed 
+part of the quark and lepton fields participate
+in the interaction. What we mean by that is that only matter
+particles will spin anti-parallel to the direction of motion,
+interact via the weak force. The opposite is true for
+matter anti-particles. Only right-handed anti-particles which
+have the spin parallel to the direction of motion can interact. Neutrinos and down type quarks, and
+that is the second peculiarity, which participate in weakened directions,
+are mixtures of the corresponding real particles. One denotes the neutrino
+mixtures of nu_e, nu_µ, and nu_tau according to their generation. They are mixtures of the real particles nu_L, nu_M and nu_H which we have
+introduced in the first module. The quark mixtures are denoted by d’,
+s’ and b’ for the three generations, mixtures of
+the real particles d, s, and b. We will come back to these astonishing
+properties in module 6 when we discuss weak interactions
+in more detail. What I mean by participating in weak
+interactions is that only the left handed mixtures are able to emit or
+absorb weak bosons. What I mean by real particles are quantum
+eigenstates of the mass operator. These states propagate
+with a specific velocity when their energy-momentum is known. This is not the case for nu_e or
+for the d’ for example. It is the nu_L and the d quark which have
+a mass which is a constant of motion. Let us now come to the last type of
+radioactivity, the gamma decays. They often follow another previous
+decay which leaves the daughter nucleus in an excited state. It can then fall back into its ground
+state by emitting a photon of a quantized energy. The energy of the photon will
+correspond to the energy difference between the excited and the ground state. The study of emission and
+absorption of nuclear gamma rays thus constitutes nuclear spectroscopy in
+an analogy to atomic spectroscopy. With one remarkable difference, one cannot neglect the recoil of
+the daughter nucleus in gamma decays. The more massive the system, the less
+important will be the recoil energy. One can just freeze the nucleus into a
+crystal structure which has a much larger mass and allows the recoil to
+be reduce to almost nothing. This is called the Mössbauer effect,
+it allows to reduce the line width of a gamma decays to of the order of 10^-7 eV, which in turn allows to measure
+the relative line separation to an accuracy to the order
+of 10^-12. One can thus study nuclear energy
+levels with great precision. This can also be used to measure
+the composition of materials. We show here an example of the gamma
+spectrum of natural uranium mineral. It allows to identify and
+quantify the presence of radionuclides like Ra-226, Pb-214. and Bi-214 coming from
+the decay change of U-238, which itself is not a gamma emitter. In the next video, we are invited to
+visit the laboratory of the nuclear physics course at University of
+Geneva to see experiments on radioactivity. [MUSIC]

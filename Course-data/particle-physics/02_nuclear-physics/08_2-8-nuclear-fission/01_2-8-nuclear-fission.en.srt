@@ -1,0 +1,625 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:11,021 --> 00:00:13,960
+During the second module,
+we are dealing with nuclear physics.
+
+3
+00:00:13,960 --> 00:00:19,100
+And in this eighth video, we will explain
+how to transform a part of the nuclear
+
+4
+00:00:19,100 --> 00:00:24,830
+binding energy into heat
+by nuclear fission.
+
+5
+00:00:24,830 --> 00:00:29,470
+After viewing this video, you will
+know how the nuclear fission mechanism
+
+6
+00:00:29,470 --> 00:00:32,710
+works and its necessary conditions.
+
+7
+00:00:34,190 --> 00:00:39,660
+A very important application of nuclear
+physics is the transformation of nuclear
+
+8
+00:00:39,660 --> 00:00:45,930
+binding energy into thermal and electrical
+energy by the fission mechanism.
+
+9
+00:00:45,930 --> 00:00:52,538
+Low energy neutrons can penetrate inside the nucleus
+since they're not subject to Coulomb repulsion.
+
+10
+00:00:52,538 --> 00:00:55,158
+This way they increase
+the nuclear mass and
+
+11
+00:00:55,158 --> 00:01:00,230
+the excited nucleus may break up into
+two daughter nuclei of smaller mass.
+
+12
+00:01:00,230 --> 00:01:05,090
+This fragmentation of a heavy
+nucleus into two medium mass
+
+13
+00:01:05,090 --> 00:01:10,940
+fragments plus accessory products
+is called nuclear fission.
+
+14
+00:01:10,940 --> 00:01:15,161
+The alpha decay which we have
+discussed in video 2.4 is
+
+15
+00:01:15,161 --> 00:01:20,590
+an extreme example of a very
+asymmetric spontaneous fission.
+
+16
+00:01:20,590 --> 00:01:26,496
+But more important is the fission
+induced by the absorption of a neutron.
+
+17
+00:01:26,496 --> 00:01:31,410
+Nuclear fission stay in the domain
+of a heavy matter nuclei and
+
+18
+00:01:31,410 --> 00:01:36,040
+this is due to the shape of
+the binding energy per nucleon as
+
+19
+00:01:36,040 --> 00:01:41,349
+a function of the mass number A 
+which we have shown in video 2.1.
+
+20
+00:01:42,680 --> 00:01:48,990
+Beyond the iron group, it decreases
+steadily such that binding energy can be
+
+21
+00:01:48,990 --> 00:01:55,300
+gained by splitting a heavy nucleus into two
+nuclei in a more or less symmetric way.
+
+22
+00:01:56,636 --> 00:02:01,992
+Thus, a less tightly bound nucleus
+can gain binding energy
+
+23
+00:02:01,992 --> 00:02:07,810
+by splitting it into two lighter,
+more tightly bound ones.
+
+24
+00:02:07,810 --> 00:02:12,884
+As an example,
+the binding energy per nucleon
+
+25
+00:02:12,884 --> 00:02:17,309
+is -7.5 MeV for U-235 and
+
+26
+00:02:17,309 --> 00:02:23,181
+-8.4 MeV on average for
+the two daughter nuclei.
+
+27
+00:02:23,181 --> 00:02:30,470
+The energy released by fission is
+typically 0.9 MeV per nucleon.
+
+28
+00:02:30,470 --> 00:02:38,100
+One gram of U-235 contains about
+3 10^21 nuclei.
+
+29
+00:02:39,150 --> 00:02:44,150
+The complete fission of all of these
+nuclei would release the impressive
+
+30
+00:02:44,150 --> 00:02:48,060
+energy of 10^11 joules,
+
+31
+00:02:48,060 --> 00:02:53,740
+about one megawatt a day if we
+ignore all efficiencies involved.
+
+32
+00:02:54,850 --> 00:02:59,130
+To give you an idea for
+comparison, burning one ton of
+
+33
+00:03:00,200 --> 00:03:07,250
+coal yields about 0.36 Megawatt-day,
+if again you ignore efficiencies.
+
+34
+00:03:07,250 --> 00:03:13,079
+Thus one gram of U-235 contains 
+as much nuclear
+
+35
+00:03:13,079 --> 00:03:19,520
+energy as three tons of coal
+contain in chemical energy.
+
+36
+00:03:19,520 --> 00:03:25,170
+We can understand the nuclear fission
+qualitatively and quantitatively using
+
+37
+00:03:25,170 --> 00:03:30,245
+the liquid drop model of the nucleus
+which we have introduced in video 2.3.
+
+38
+00:03:33,297 --> 00:03:36,231
+Let's first look at the process qualitatively.
+
+39
+00:03:36,231 --> 00:03:41,440
+The liquid drop model presumes
+a spherical shape of the nucleus.
+
+40
+00:03:41,440 --> 00:03:46,568
+But for a heavy nucleus a small external perturbation
+like for instance an incident neutron can
+
+41
+00:03:46,568 --> 00:03:52,958
+produce surface waves
+leading to a change in shape.
+
+42
+00:03:52,958 --> 00:03:56,767
+The drop may thus extend into spheroïdal shape and
+
+43
+00:03:56,767 --> 00:04:02,118
+if this perturbation is small enough,
+the nucleus will be left excited and
+
+44
+00:04:02,118 --> 00:04:06,300
+just return to its ground
+state by emitting a photon.
+
+45
+00:04:07,500 --> 00:04:11,565
+This process is called
+radiative neutron capture.
+
+46
+00:04:11,565 --> 00:04:16,219
+If on the contrary the perturbation 
+is large, Coulomb repulsion
+
+47
+00:04:16,219 --> 00:04:19,382
+along the axis of this spheroïd can split
+
+48
+00:04:19,382 --> 00:04:24,240
+the drop into two droplets by
+what is called induced fission.
+
+49
+00:04:26,060 --> 00:04:31,280
+Now, let us calculate under
+which condition this may happen.
+
+50
+00:04:33,010 --> 00:04:37,660
+A sphere of radius R will turn into
+a spheroïd of a constant volume because
+
+51
+00:04:37,660 --> 00:04:40,465
+of the incompressibility of nuclear matter.
+
+52
+00:04:40,465 --> 00:04:45,950
+We denote its half-axes by a and
+b, which is equal to c.
+
+53
+00:04:45,950 --> 00:04:48,040
+In terms of a small deformation epsilon,
+
+54
+00:04:48,040 --> 00:04:53,070
+they transform into
+(b - epsilon) and (a + epsilon).
+
+55
+00:04:54,170 --> 00:04:58,910
+For the binding energy, the volume 
+term stays constant, but the surface and
+
+56
+00:04:58,910 --> 00:05:00,600
+Coulomb energy are different.
+
+57
+00:05:01,660 --> 00:05:04,760
+The deformation increases
+this surface energy but
+
+58
+00:05:04,760 --> 00:05:06,320
+decreases the Coulomb term.
+
+59
+00:05:06,320 --> 00:05:07,980
+So the gain or
+
+60
+00:05:07,980 --> 00:05:12,930
+loss in binding energy will depend on the
+relative importance of these two terms.
+
+61
+00:05:14,110 --> 00:05:19,990
+If the difference is greater than 0, the
+spherical nucleus is more tightly bound
+
+62
+00:05:19,990 --> 00:05:22,600
+and thus stable against
+this small perturbation.
+
+63
+00:05:24,000 --> 00:05:26,740
+If on the contrary,
+∆ is less than zero,
+
+64
+00:05:26,740 --> 00:05:31,600
+the spherical nucleus is less tightly
+bound and can undergo fission.
+
+65
+00:05:32,970 --> 00:05:38,460
+Putting in the typical values for
+the coefficients a_2 and a_3,
+
+66
+00:05:38,460 --> 00:05:44,160
+one obtains stability if the ratio
+Z^2/A is less than 47.
+
+67
+00:05:44,160 --> 00:05:49,480
+There are small quantum corrections
+to this classical approach which,
+
+68
+00:05:49,480 --> 00:05:54,280
+however, do not change the conclusion.
+
+69
+00:05:54,280 --> 00:06:00,146
+We expect on the contrary, that nuclei
+which set Z^2 > 47A,
+
+70
+00:06:00,146 --> 00:06:06,960
+are highly unstable against a small perturbation
+and thus can be easily induced to fission.
+
+71
+00:06:08,490 --> 00:06:14,164
+Heavy nuclei have Z < A/2
+so  the conditions
+
+72
+00:06:14,164 --> 00:06:18,429
+that Z^2 < 47 A is satisfied.
+
+73
+00:06:18,429 --> 00:06:22,398
+The spherical shape corresponds
+to the maximum binding energy but
+
+74
+00:06:22,398 --> 00:06:26,470
+even in that case,
+a fission can be energetically favorable,
+
+75
+00:06:26,470 --> 00:06:32,590
+if the sum of binding energies of the
+daughter nuclei is favorable with respect
+
+76
+00:06:32,590 --> 00:06:37,850
+to the mother nucleus.
+
+77
+00:06:37,850 --> 00:06:39,852
+Let us calculate this case for a
+
+78
+00:06:39,852 --> 00:06:45,660
+symmetric fission assuming spherical
+daughter nuclei for simplicity.
+
+79
+00:06:45,660 --> 00:06:49,350
+A and Z of the parent nucleus must thus be even.
+
+80
+00:06:49,350 --> 00:06:54,970
+We again ignore quantum
+terms of the Bethe-Weizsäcker formula.
+
+81
+00:06:54,970 --> 00:06:57,730
+The energy difference is denoted by ∆.
+
+82
+00:06:57,730 --> 00:07:03,189
+With typical coefficients,
+we obtain delta equal to 
+
+83
+00:07:03,189 --> 00:07:10,510
+0.27 A^2/3 (-16.5 + Z^2/A).
+
+84
+00:07:12,480 --> 00:07:16,696
+Thus for Z^2 < 16.5A
+
+85
+00:07:16,696 --> 00:07:21,869
+the two daughter nuclei are more tightly
+bounded than the mother nucleus.
+
+86
+00:07:23,460 --> 00:07:29,156
+We thus see that for
+the region Z^2 between 16.5A and
+
+87
+00:07:29,156 --> 00:07:34,747
+47A, the spherical shape may
+be stable against fission but
+
+88
+00:07:34,747 --> 00:07:39,908
+it remains energetically favorable for
+the parent nucleus to split into
+
+89
+00:07:39,908 --> 00:07:44,990
+two smaller ones,
+when it is sufficiently perturbed.
+
+90
+00:07:46,060 --> 00:07:50,060
+Beyond that zone, even a minor
+perturbation by a thermal neutron, for
+
+91
+00:07:50,060 --> 00:07:53,230
+instance, will suffice to cause fission.
+
+92
+00:07:55,480 --> 00:07:58,940
+Let us consider Uranium
+isotopes as an example.
+
+93
+00:08:00,080 --> 00:08:03,180
+U-238 is an even even nucleus and
+
+94
+00:08:03,180 --> 00:08:08,890
+thus more tightly bound than U-235,
+which is odd even.
+
+95
+00:08:08,890 --> 00:08:15,180
+We thus need a smaller perturbation
+to induce fission in U-235.
+
+96
+00:08:15,180 --> 00:08:19,920
+The activation energy
+is about 5 MeV for
+
+97
+00:08:19,920 --> 00:08:25,220
+U-235 and 6 MeV for U-238.
+
+98
+00:08:25,220 --> 00:08:31,780
+When capturing a neutron,
+U-235 becomes an even-even nucleus.
+
+99
+00:08:31,780 --> 00:08:36,990
+This transformation releases about 6.5 MeV
+
+100
+00:08:36,990 --> 00:08:41,750
+of binding energy, which is
+sufficient to activate its fission.
+
+101
+00:08:41,750 --> 00:08:43,453
+For U-238,
+
+102
+00:08:43,453 --> 00:08:49,420
+a neutron capture changes the nucleus
+to a less tightly bound odd-even one.
+
+103
+00:08:51,010 --> 00:08:54,220
+This will be a less exothermal process.
+
+104
+00:08:54,220 --> 00:09:00,378
+It releases only 4.8 MeV
+out of the necessary 6 MeV.
+
+105
+00:09:00,378 --> 00:09:07,320
+So additional 1.2 MeV per neutron
+must be provided to induce fission.
+
+106
+00:09:07,320 --> 00:09:11,080
+The fragments are often rather asymmetric.
+
+107
+00:09:11,080 --> 00:09:16,540
+One observes a grouping of the daughter
+nuclei around mass number 95 and
+
+108
+00:09:16,540 --> 00:09:23,420
+140 as shown in this picture, for
+a reason which we have not yet understood.
+
+109
+00:09:25,080 --> 00:09:29,050
+The picture here in fact shows the mass
+spectrum of daughter nuclei from
+
+110
+00:09:29,050 --> 00:09:36,320
+the fission of U-233, U-235,
+Pu-239, as well as a mixture.
+
+111
+00:09:37,350 --> 00:09:42,800
+The mass spectra are similar.
+
+112
+00:09:45,710 --> 00:09:51,510
+After the fission process the daughter
+nuclei are often in a excited states.
+
+113
+00:09:51,510 --> 00:09:55,460
+And they turn into stable isotopes
+by neutron emission.
+
+114
+00:09:55,460 --> 00:10:00,173
+Neutrons are thus abundant
+among the fission products.
+
+115
+00:10:00,173 --> 00:10:05,590
+They can cause a chain reaction
+of nuclear fission processes.
+
+116
+00:10:05,590 --> 00:10:09,356
+U-235 produces on average
+2.5 neutrons per fission.
+
+117
+00:10:09,356 --> 00:10:14,700
+These neutrons can in turn induce
+new fission reactions and so forth.
+
+118
+00:10:14,700 --> 00:10:19,960
+To see if a chain reaction can be
+maintained, we consider the ratio
+
+119
+00:10:19,960 --> 00:10:24,908
+k of the number of neutrons
+produced in step n+1
+
+120
+00:10:24,908 --> 00:10:30,440
+to the one produced
+in step n of the chain.
+
+121
+00:10:30,440 --> 00:10:34,770
+If k is less than one,
+there are not enough neutrons to sustain
+
+122
+00:10:34,770 --> 00:10:38,010
+a chain reaction, and
+the process will stop by itself.
+
+123
+00:10:39,280 --> 00:10:44,575
+If k is equal to one or around one,
+there are just enough neutrons
+
+124
+00:10:44,575 --> 00:10:50,615
+to maintain a chain reaction with a
+constant number of fissions at each step.
+
+125
+00:10:50,615 --> 00:10:54,085
+This is the ideal situation for
+nuclear fission reactor.
+
+126
+00:10:56,105 --> 00:11:02,990
+If k is bigger than one, more and more
+neutrons will be produced at each stage,
+
+127
+00:11:02,990 --> 00:11:08,350
+thus leading to an exponential growth
+of the number of fission reaction.
+
+128
+00:11:08,350 --> 00:11:14,020
+And this is the situation which is searched
+for the production of nuclear weapons.
+
+129
+00:11:15,130 --> 00:11:19,264
+In the next video,
+we will talk about how to use
+
+130
+00:11:19,264 --> 00:11:23,729
+the fission process in
+nuclear power plants.
+
+131
+00:11:23,729 --> 00:11:29,629
+[MUSIC]

@@ -1,0 +1,639 @@
+1
+00:00:00,300 --> 00:00:05,108
+Our next topic is pen and ink restorations
+and pen and ink
+
+2
+00:00:05,108 --> 00:00:10,334
+textures and the work we introduce here is
+titled Vignette.
+
+3
+00:00:10,334 --> 00:00:13,379
+The problem we want to address here is
+
+4
+00:00:13,379 --> 00:00:17,302
+it is tedious to draw detailed patterns,
+manually.
+
+5
+00:00:17,302 --> 00:00:20,008
+So if you want to draw these kind of
+patterns using
+
+6
+00:00:20,008 --> 00:00:23,450
+your pen, you have to do every details
+which is very tedious.
+
+7
+00:00:24,470 --> 00:00:28,210
+And one possible approach is to copy and
+paste, to repeat,
+
+8
+00:00:28,210 --> 00:00:31,000
+generally repeated pattern but the
+repetition
+
+9
+00:00:31,000 --> 00:00:33,619
+is visible and looks too unnatural.
+
+10
+00:00:34,830 --> 00:00:36,909
+So our approach is to use example
+
+11
+00:00:36,909 --> 00:00:40,691
+based texture synthesis technic published
+in 2011.
+
+12
+00:00:40,691 --> 00:00:45,202
+So using this technique and combining
+interaction technique, you can
+
+13
+00:00:45,202 --> 00:00:49,726
+draw this kind of repeated pattern very
+quickly and efficiently.
+
+14
+00:00:49,726 --> 00:00:53,469
+Let me show you a video demo.
+
+15
+00:00:53,469 --> 00:00:56,860
+So, if you pick a standard pen.
+
+16
+00:00:56,860 --> 00:00:59,810
+This is just a standard inking system.
+
+17
+00:00:59,810 --> 00:01:03,390
+However you can also generate patterns
+like this way,
+
+18
+00:01:03,390 --> 00:01:07,100
+so you suppose you can draw this kind of,
+pattern.
+
+19
+00:01:10,350 --> 00:01:14,880
+And then after you get this, you can
+extend it this way.
+
+20
+00:01:14,880 --> 00:01:17,726
+And also this way, so after i, identify
+
+21
+00:01:17,726 --> 00:01:21,512
+pattern you can draw many instances just
+by drawing.
+
+22
+00:01:21,512 --> 00:01:26,630
+[BLANK_AUDIO]
+
+23
+00:01:26,630 --> 00:01:29,767
+And another example is this one, so you
+
+24
+00:01:29,767 --> 00:01:34,056
+specify a region first, and then you draw
+patterns.
+
+25
+00:01:34,056 --> 00:01:44,528
+[BLANK_AUDIO]
+
+26
+00:01:44,528 --> 00:01:48,711
+Then after having a pattern, you can
+repeat it like
+
+27
+00:01:48,711 --> 00:01:53,270
+this way and then you would just get
+pattern automatically.
+
+28
+00:01:53,270 --> 00:01:57,170
+And another interesting feature is like
+this, so you select a region.
+
+29
+00:01:58,990 --> 00:02:06,853
+And then you paint and use your elements,
+like this.
+
+30
+00:02:06,853 --> 00:02:10,168
+Suppose you have bricks in this way.
+
+31
+00:02:10,168 --> 00:02:15,687
+[BLANK_AUDIO]
+
+32
+00:02:15,687 --> 00:02:16,743
+Maybe enough.
+
+33
+00:02:16,743 --> 00:02:20,271
+And then you can get.
+
+34
+00:02:20,271 --> 00:02:24,061
+Patterns like this way, and after that,
+you
+
+35
+00:02:24,061 --> 00:02:27,670
+can tilt it, like this kind of 3D effect.
+
+36
+00:02:27,670 --> 00:02:31,845
+So this is, i, operation only happens
+inside this region.
+
+37
+00:02:31,845 --> 00:02:34,660
+But in this way, you can get, kind
+
+38
+00:02:34,660 --> 00:02:38,452
+of three di, three dimensional effect,
+within the region.
+
+39
+00:02:38,452 --> 00:02:40,734
+Another possible operation is hatching.
+
+40
+00:02:40,734 --> 00:02:44,562
+So, you first select a region.
+
+41
+00:02:44,562 --> 00:02:49,970
+And then you draw example strokes like
+this
+
+42
+00:02:49,970 --> 00:02:54,932
+way, this way and this way, and so on.
+
+43
+00:02:54,932 --> 00:02:56,991
+And then you, select these two.
+
+44
+00:02:56,991 --> 00:03:03,234
+And then you get this kind of, matching
+part of it.
+
+45
+00:03:03,234 --> 00:03:06,965
+And then you can also draw in different
+directions and
+
+46
+00:03:06,965 --> 00:03:11,016
+then you'll get this kind of hatching
+pattern very easy.
+
+47
+00:03:11,016 --> 00:03:14,991
+So let me show you a video.
+
+48
+00:03:14,991 --> 00:03:22,790
+So here, so you draw example sketches and
+then you draw a line.
+
+49
+00:03:22,790 --> 00:03:25,698
+And the system will automatically
+synthesize it, so it's same pattern.
+
+50
+00:03:25,698 --> 00:03:27,930
+And you can repeat it many times.
+
+51
+00:03:27,930 --> 00:03:32,513
+And again, you paint an example, and then
+system requests
+
+52
+00:03:32,513 --> 00:03:37,474
+the desired path, and the system
+synthesizes the same stroke.
+
+53
+00:03:37,474 --> 00:03:39,052
+So in this way, I use and can
+
+54
+00:03:39,052 --> 00:03:42,980
+paint many, many strokes, without drawing
+individual strokes.
+
+55
+00:03:44,030 --> 00:03:46,398
+And the most important part here is the
+
+56
+00:03:46,398 --> 00:03:50,990
+seamless integration of example
+generation, and then synthesis spot.
+
+57
+00:03:50,990 --> 00:03:55,868
+[BLANK_AUDIO]
+
+58
+00:03:55,868 --> 00:03:58,847
+And here's another example.
+
+59
+00:03:58,847 --> 00:04:03,960
+So you, draw a few example, and the system
+synthesizes a list.
+
+60
+00:04:03,960 --> 00:04:09,610
+And after the synthesis, you can go back,
+to the picture that I made.
+
+61
+00:04:09,610 --> 00:04:11,700
+You can get, you can add more details
+
+62
+00:04:11,700 --> 00:04:15,300
+and these are automatically applied to the
+synthesis result.
+
+63
+00:04:16,930 --> 00:04:24,667
+And you can also change the density, and
+also you can change the curve shape later.
+
+64
+00:04:24,667 --> 00:04:34,343
+[BLANK_AUDIO]
+
+65
+00:04:34,343 --> 00:04:37,120
+The next part example is flood fill
+synthesis.
+
+66
+00:04:37,120 --> 00:04:42,341
+Again, you draw a very few elements, an
+example, and then system
+
+67
+00:04:42,341 --> 00:04:47,950
+automatically synthesize, the same texture
+to fill the region.
+
+68
+00:04:50,980 --> 00:04:55,641
+And after that, if you want, you can
+change the flow orientation, just by
+
+69
+00:04:55,641 --> 00:04:59,020
+drawing the strokes, and then picture will
+
+70
+00:04:59,020 --> 00:05:03,140
+be modified to flo, flow, to flow
+direction.
+
+71
+00:05:06,570 --> 00:05:08,937
+And again, you can change the details
+later
+
+72
+00:05:08,937 --> 00:05:17,833
+[BLANK_AUDIO]
+
+73
+00:05:17,833 --> 00:05:19,400
+And here's an example of hatching.
+
+74
+00:05:20,430 --> 00:05:23,820
+You draw a few e, e, examples, and then
+system predicts it.
+
+75
+00:05:23,820 --> 00:05:27,732
+And after that, it will auto provide three
+dimensional
+
+76
+00:05:27,732 --> 00:05:31,395
+effect, you can use a tilting tool,
+tilting tool,
+
+77
+00:05:31,395 --> 00:05:35,474
+and then take, given the two dimensional
+drawing you
+
+78
+00:05:35,474 --> 00:05:40,570
+can add, kind of, perspective effect, for
+individual regions.
+
+79
+00:05:43,770 --> 00:05:47,020
+And here is a couple of example
+operations, so you paint this.
+
+80
+00:05:50,400 --> 00:05:59,349
+And then you can get many, many hairs,
+just by sketching.
+
+81
+00:05:59,349 --> 00:06:03,257
+And the auto-fill can be useful for the
+background.
+
+82
+00:06:03,257 --> 00:06:14,210
+[BLANK_AUDIO]
+
+83
+00:06:14,210 --> 00:06:18,239
+And, here is the result.
+
+84
+00:06:18,239 --> 00:06:20,487
+Here's another example.
+
+85
+00:06:20,487 --> 00:06:23,110
+See, you draw examples and then, fill the
+region.
+
+86
+00:06:26,400 --> 00:06:31,626
+And then, you can use a perspective
+tilting to
+
+87
+00:06:31,626 --> 00:06:37,261
+give a more, like, a three dimensional
+effect.
+
+88
+00:06:37,261 --> 00:06:42,195
+And then background can be painted using
+the picture synthesis.
+
+89
+00:06:42,195 --> 00:06:53,081
+[BLANK_AUDIO]
+
+90
+00:06:53,081 --> 00:06:57,208
+Now, here is the result.
+
+91
+00:06:57,208 --> 00:06:59,340
+So that's our video.
+
+92
+00:06:59,340 --> 00:07:03,340
+And here's a couple of results painted by
+test users.
+
+93
+00:07:03,340 --> 00:07:06,210
+So you can get this kind of eh, sketches
+with
+
+94
+00:07:06,210 --> 00:07:11,380
+many, many repetitions using this kind of
+automatic texture synthesis.
+
+95
+00:07:11,380 --> 00:07:14,520
+So this is one example and this is
+another.
+
+96
+00:07:14,520 --> 00:07:17,357
+You can get detail, very detailed hairs
+
+97
+00:07:17,357 --> 00:07:21,039
+and very detailed background and hatching,
+so on.
+
+98
+00:07:21,039 --> 00:07:22,661
+And you can also get this.
+
+99
+00:07:22,661 --> 00:07:28,660
+So I think 3D effect is used here and
+here.
+
+100
+00:07:28,660 --> 00:07:34,340
+And the technique we did, use here is
+called discrete element texture synthesis.
+
+101
+00:07:34,340 --> 00:07:40,160
+And so their technique takes input layout,
+example layout.
+
+102
+00:07:40,160 --> 00:07:43,800
+And then it automatically senses a new,
+larger layout.
+
+103
+00:07:43,800 --> 00:07:44,880
+Automatically.
+
+104
+00:07:44,880 --> 00:07:47,850
+Without explicit repetitions.
+
+105
+00:07:47,850 --> 00:07:53,290
+And what they do, is basically, iter,
+iteratively refine it.
+
+106
+00:07:53,290 --> 00:07:55,770
+Let's start with just simple repetitions.
+
+107
+00:07:55,770 --> 00:07:58,050
+Patch on the copy, repeated patterns.
+
+108
+00:07:58,050 --> 00:08:00,280
+But gradually improves it.
+
+109
+00:08:00,280 --> 00:08:03,690
+And then you finally get a very beautiful
+result.
+
+110
+00:08:03,690 --> 00:08:06,770
+And for each step we do this.
+
+111
+00:08:06,770 --> 00:08:09,590
+So, each step we repeat this.
+
+112
+00:08:09,590 --> 00:08:13,710
+So first, for each element in the
+synthesized image.
+
+113
+00:08:15,370 --> 00:08:18,208
+For each element in the synthesized image.
+
+114
+00:08:18,208 --> 00:08:20,826
+We look for the element in the source
+
+115
+00:08:20,826 --> 00:08:24,846
+image with similar neighbor fill or
+similar context.
+
+116
+00:08:24,846 --> 00:08:28,671
+So, suppose you have an element here, and
+you have,
+
+117
+00:08:28,671 --> 00:08:33,450
+you know, circle and bro, circle and box
+in this arrangement.
+
+118
+00:08:33,450 --> 00:08:36,520
+You try to find the most similar
+arrangement.
+
+119
+00:08:36,520 --> 00:08:38,441
+So that a matching phase.
+
+120
+00:08:38,441 --> 00:08:43,450
+After identifying a match, then you
+compare the context.
+
+121
+00:08:43,450 --> 00:08:48,500
+So this a synthesized context and this is
+original context.
+
+122
+00:08:48,500 --> 00:08:50,730
+And then you compare these two and then
+
+123
+00:08:50,730 --> 00:08:56,550
+try to find ideal position for the,
+surrounding object.
+
+124
+00:08:56,550 --> 00:09:03,870
+For example, this box should be more to
+the left to be similar to the source.
+
+125
+00:09:03,870 --> 00:09:06,421
+So in this way, you compute ideal,
+
+126
+00:09:06,421 --> 00:09:11,580
+ideal positions, or target positions for
+individual element.
+
+127
+00:09:11,580 --> 00:09:12,530
+For each pot, match.
+
+128
+00:09:14,250 --> 00:09:17,620
+And individual element belongs to multiple
+matches.
+
+129
+00:09:17,620 --> 00:09:23,500
+We simply take average of all the related
+ideal or target positions.
+
+130
+00:09:23,500 --> 00:09:26,280
+And then move the object to the target
+position.
+
+131
+00:09:26,280 --> 00:09:30,820
+So by repeating them, then you will get
+this kind of a result.
+
+132
+00:09:30,820 --> 00:09:32,969
+So starting from simple multi-copies.
+
+133
+00:09:34,020 --> 00:09:39,346
+And then you'll get seamless patches.
+
+134
+00:09:39,346 --> 00:09:43,757
+Okay so that's a brief description of the
+system called Vignette.
+
+135
+00:09:43,757 --> 00:09:46,740
+Our original paper was published as a
+interactive
+
+136
+00:09:46,740 --> 00:09:52,460
+texture designed migration with freeform
+gestures for pen-an-ink illustration.
+
+137
+00:09:52,460 --> 00:09:56,960
+And the technique we used is called
+Element Texture Synthesis.
+
+138
+00:09:56,960 --> 00:10:01,599
+And, it was introduced in SIGGRAPH of
+2011.
+
+139
+00:10:01,599 --> 00:10:01,649
+Thank you.

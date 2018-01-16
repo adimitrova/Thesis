@@ -1,0 +1,85 @@
+Our next topic is Chair Design. And the work we introduce
+here is called SketchChair. So the problem to address here is that
+design and construction of original chair. Suppose you want to design your own chair, instead of buying
+something from the store. And there're so
+many issues to consider, you know? You know that to work as a functional
+chair you need to be physically valid. It should be stable and
+it should not break if you sit down. And also it should be easy
+to manually construct. So we present our design
+system specialized for chairs. So the design can be done
+by easy sketching and the system automatically checks
+its balance, or stability. And also system automatically
+generates a construction plan. So let me show you a demo. So, yeah, here's the system. And then you design your own chair. For example, you have a chair
+like this with a long back, and we have a leg like this. So, I just draw three strokes, and now you already have a 3D chair
+moving like this one, and then by pushing a print button that
+you will get two dimensional pattern. So after that, you can just print this
+into, send this data to a laser cutter, and then the cutter automatically
+cuts physical wood material and then you can get a physical chair. So after having this designed,
+you can also learn its physical validity. So, we also have some additional features. So if you press play button here, system
+tries to push this guy on this chair. So here, it's fine. You know, you can put down on
+a character on this chair. However, if you,
+you create unstable chair. So let me show you
+intentionally unstable chair. For example, if you have a chair
+like this and then if you put leg in appropriate positions,
+if you press Play, and then you know, this is not very good, and then you,
+you see that this is problematic. So this is very simplistic,
+this is just a starting point but you see that physical validity checking
+is possible, and then can be useful. And let me show you a video. So yeah. I already showed a simple video,
+a demonstration already, but user draws a sketch, and then draw a leg,
+and then you will get the 3D shape. And then you can also additionally
+edit the shape profile by dragging to adjust the shape. And we can also adjust the leg. So if you spend more time,
+you're going to get more control. You can also, you know, edit individual
+layer to get more three dimensional shape. So then you can progressively move on
+to a more detailed design if you want. Yeah as we see we also provide
+the polygon tool and also tool and also you can change
+the spacing between the layers. So, yeah, as I said the simulation, so
+you can take the stability of the chair, And also you gain stability of the chair,
+rocking chair. Yeah, as we see, you can change the design while running
+a physical summation if you want. Now we also implemented a couple
+of features to assist molding. So this one is using of this
+kind of accessory object. So you can see this kind of object
+has a difference to design, here. So use as designing a piano chair,
+so you can see the size. And it's not shown here, but it's, you can also change the proportion
+of the human figure if you want. So this feature allows a user
+to test many variations. So after designing this one,
+it's a previous one was hibernated. So you can temporarily pan off on the,
+you can test different one, and then go back and
+forth between different designs. Okay, after our finish design,
+then you can get this profile and then you can send this to a printer. So fast easiest way is to use
+a cutting program with a paper cutter. So you can send this to a paper cutter,
+and then you can cut the paper. And then you can get the paper chairs. And this is cheapest way, so
+you can generate many designs. You can do many designs studies
+using this paper chair first. Yeah.
+After having a paper chair, you can actually generate a big
+one by using a laser cutter. Laser cutter is very handy too. So it's exactly like a printing machine. You just send two dimensional data. But then you will get this kind of
+wood material cut by according to the diagram and you get this. And by putting cushions
+around the surface, and then you'll get a more realistic chair. So here is some results. So these are the variation
+of paper chairs. A rocking chair we just saw. And then full sized chairs, like these. And this is a piano chairs. Yep, so, that's it. Here's a couple of examples,
+and so this is the big chair. Yeah so we, this is a big chair,
+I just saw, and then so
+I have a small chair like this one. This is. This can be a very good
+sitting form placer. Okay so we use physical simulation here. We use an open source physics
+engine rigid body simulation. So we, we currently use bullet engine. But there are many other possibilities. So these physics engine is usually
+used for games, you know, 3D games and there are objects moving around,
+bumping each other, but these are now very popular, easy to use. So you can pick any simulation engine into
+your code and you can play along with it. And I think this work is a very good
+example of a new way of design seating. We call it Meta-design. So traditionally,
+designers design final product directly. Go through designers, design chair, so
+designer just physical shape of a chair. But here, in the future,
+I think designers will not only just use their physical shape, but also designers
+needs to design, design processes. So here in this project, designer or
+us, we actually design a process. And we de, define a process, and then
+inside with this process and the user will sketch and then system automatically
+generates us, these number of 3D chair. Depending, taking user input, but also
+according to the designer's intention. And I think this kind of meta
+design process can be more and more important in the future. So, to learn more,
+original paper was published as SketchChair: An All-in-one chair
+Design System for End-users. And rigid-body simulation,
+if you now want to know the technique on implementation details,
+if you want to implement by yourself, recommended reading is Rigid-Body
+Simulations, SIGGRAPH Course 1992. But if you want to just use it,
+there are many you know, packages. And as for the furniture design,
+I recommend you, I recommend you to take a look at YouTube
+video from Front Sketch Furniture. So this is interesting artwork. So user can try to sketch
+furniture in this 3D space, and then you will get physical
+object using a 3D printer. So, thank you.

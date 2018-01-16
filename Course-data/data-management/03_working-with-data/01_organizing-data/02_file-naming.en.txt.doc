@@ -1,0 +1,48 @@
+We'll now consider the three main criteria
+that you need to think about when you're deciding how to name and
+label your research data files. First up, is the organisation. This is important for future access and
+retrieval and should take into account any file naming constraints that are applied
+by the system where you store your data. Second up, is the context. This may include content specific or descriptive information,
+irrespective of where the data is stored. And the third one is consistency. You should choose a single file naming
+convention and apply that consistently throughout by including the same
+information in the same order. So for
+example if you're going to use dates, you could follow a model like the ISO
+standard, which applies four digits for the year, two for the month and
+two for the day, such as 20150907. Whichever method you decide to adopt,
+just make sure you apply it consistently. There are a number of common
+elements that you should consider when you're developing
+your file naming strategy. These include a version number,
+the date of creation, the name of the creator, the description
+of the content, the name of the team or department associated with the data,
+a publication date, and a project number. Finally, you want to think about scalable
+your file naming policy should be. If you want to include a project number,
+don't limit yourself to two digits, or you can only have 99 projects. Don't use generic file names either, that may conflict if your data were
+moved from one system to another. And if your working over
+more than one computer, make sure your files are synchronized. File names should outlive the original
+person who named the file, so your best to adopt group guidelines rather
+than everyone having their own procedure. File and folder naming conventions
+are key to maintaining a well-organized electronic directory and
+drive structure. A file name is the chief identifier for
+a research data file. In most cases, the policy for file naming is left down
+to individuals or research groups. There are a number of easy rules
+that you should be following when naming your files. Firstly, you should keep file
+names short and relevant. Generally about 25 characters
+is a sufficient length to capture enough descriptive information. You shouldn't use special characters in
+a file name, as these are often use for special tasks in different
+operating systems. You should use underscores instead
+of full stops, or spaces, and if you include dates,
+you should format them consistently. Never assume that
+a software application or instrument uses case dependency when
+naming and renaming your flies. So how do you rename hundreds of files? Well most operating systems have
+in-built tools for file management. There are also a number of software tools
+that can help you to manage your data files and folders in a more automated and
+consistent way through batch renaming. Batch renaming software exists for
+most operating systems. There are many situations in which
+batch renaming may be useful. For example, where images from digital
+cameras are automatically assigned base file names,
+consisting of lots of sequential numbers. Where proprietary software, or instrumentation generates crude,
+default, or multiple file names. And where files are transferred from
+a system that support spaces or non-English characters,
+to one that doesn't. Batch renaming software can be used
+to substitute such characters with acceptable ones. There are some bulk renaming tools for different operating systems
+listed in the Mantra course.

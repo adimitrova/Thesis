@@ -1,0 +1,623 @@
+1
+00:00:00,025 --> 00:00:07,867
+[SOUND] Hello, welcome back to the online
+course on web connectivity and
+
+2
+00:00:07,867 --> 00:00:12,060
+security in cyber physical systems.
+
+3
+00:00:12,060 --> 00:00:16,095
+This lesson starts a module on
+a cryptographic solutions for
+
+4
+00:00:16,095 --> 00:00:18,410
+cyber physical systems.
+
+5
+00:00:18,410 --> 00:00:20,289
+It is the last module of the course.
+
+6
+00:00:21,440 --> 00:00:24,440
+In this video lecture,
+we will look into basic concepts and
+
+7
+00:00:24,440 --> 00:00:26,770
+techniques of cryptography.
+
+8
+00:00:26,770 --> 00:00:31,425
+Cryptography is a scientific and
+engineering field which develops and
+
+9
+00:00:31,425 --> 00:00:36,340
+analyzes mathematical techniques for so
+many different information, security, and
+
+10
+00:00:36,340 --> 00:00:40,985
+privacy issues such as confidentiality,
+data integrity,
+
+11
+00:00:40,985 --> 00:00:44,800
+entity authentication and
+data origin authentication.
+
+12
+00:00:46,440 --> 00:00:49,260
+Cryptography has a long and
+fascinating history.
+
+13
+00:00:50,480 --> 00:00:57,550
+Egyptians used some kind of encryption
+in their messages about 4,000 years ago.
+
+14
+00:00:57,550 --> 00:01:00,810
+In the 20th century,
+during the World War I and
+
+15
+00:01:00,810 --> 00:01:05,540
+II, cryptography was used to protect
+sensitive war related information.
+
+16
+00:01:07,660 --> 00:01:10,960
+Even though the usage
+of modern cryptography
+
+17
+00:01:10,960 --> 00:01:15,920
+originally focus on military applications,
+today it's widely use for
+
+18
+00:01:15,920 --> 00:01:20,000
+protecting our digital information
+in general, everywhere.
+
+19
+00:01:21,680 --> 00:01:26,631
+This development began in 1960's and
+has been boosted by the proliferation
+
+20
+00:01:26,631 --> 00:01:30,722
+of computers and communication
+systems during the last decades.
+
+21
+00:01:33,105 --> 00:01:38,106
+The main goal of cryptography
+is to hide and protect sensitive
+
+22
+00:01:38,106 --> 00:01:44,560
+information which is called a plaintext,
+from the adversaries or attackers.
+
+23
+00:01:45,850 --> 00:01:49,980
+You can imagine that you protect your
+belongings inside a suitcase with
+
+24
+00:01:49,980 --> 00:01:50,640
+a padlock.
+
+25
+00:01:52,150 --> 00:01:56,140
+The idea is that one needs
+the key of the padlock to get
+
+26
+00:01:56,140 --> 00:01:58,820
+the stuff out of the suitcase.
+
+27
+00:01:58,820 --> 00:02:01,890
+The cyber system essentially
+works in the same way.
+
+28
+00:02:03,620 --> 00:02:06,270
+The plain text, is encrypted,
+
+29
+00:02:06,270 --> 00:02:10,190
+using a cryptographic algorithm,
+which corresponds to the padlock.
+
+30
+00:02:12,010 --> 00:02:16,720
+The algorithm takes the plain text and
+encryption key as input, and
+
+31
+00:02:16,720 --> 00:02:19,580
+as a result, a cipher text is generated.
+
+32
+00:02:21,300 --> 00:02:25,850
+The cipher text is a new form or
+combination of the plain text.
+
+33
+00:02:27,510 --> 00:02:33,730
+It is not readable by a human or
+a computer without decrypting it.
+
+34
+00:02:33,730 --> 00:02:37,960
+And therefore, the cipher text can
+be safely sent to another party.
+
+35
+00:02:39,870 --> 00:02:45,300
+On the receiver side, if the receiver
+has the right decryption key, he or
+
+36
+00:02:45,300 --> 00:02:50,860
+she will be able to decrypt the cipher
+text to discover the original message.
+
+37
+00:02:52,120 --> 00:02:57,540
+The secrecy of a cipher system is highly
+dependent on the secrecy of the key.
+
+38
+00:02:58,890 --> 00:03:04,710
+So, the exchange of the decryption key
+should be done in a very secured way.
+
+39
+00:03:06,480 --> 00:03:11,034
+From the attackers perspective, the main
+challenge is to determine the plain text
+
+40
+00:03:11,034 --> 00:03:13,451
+from a cypher text
+without knowing the key.
+
+41
+00:03:15,902 --> 00:03:21,649
+The decryption key does not have to
+always be the same as the encryption key.
+
+42
+00:03:22,720 --> 00:03:28,530
+There are two types of cipher systems,
+a symmetric key cipher system and
+
+43
+00:03:28,530 --> 00:03:31,760
+an asymmetric key or
+public key cipher system.
+
+44
+00:03:33,480 --> 00:03:36,210
+In a symmetric key cipher system,
+
+45
+00:03:36,210 --> 00:03:41,130
+the decryption key is identical
+to the encryption key.
+
+46
+00:03:41,130 --> 00:03:43,900
+Or can be easily obtained
+from the encryption key.
+
+47
+00:03:45,610 --> 00:03:50,160
+In this case, there is a need for
+a secure channel for key exchange.
+
+48
+00:03:51,900 --> 00:03:55,770
+In an asymmetric key or
+public key cypher system,
+
+49
+00:03:55,770 --> 00:03:59,310
+the encryption key is not
+the same as the decryption key.
+
+50
+00:04:00,640 --> 00:04:02,930
+It is computation or in principle and
+
+51
+00:04:02,930 --> 00:04:08,190
+practical to obtain the decryption
+key from the encryption key.
+
+52
+00:04:08,190 --> 00:04:12,140
+In this case theirs a pair
+of different keys, one for
+
+53
+00:04:12,140 --> 00:04:14,640
+encryption and the other for decryption.
+
+54
+00:04:16,080 --> 00:04:19,020
+The encryption key is publicly available,
+so
+
+55
+00:04:19,020 --> 00:04:22,339
+everyone who has the public
+key can encrypt the message.
+
+56
+00:04:23,640 --> 00:04:27,970
+The decryption key is secret and
+is referred to as the private key.
+
+57
+00:04:29,110 --> 00:04:34,510
+So only the one who has the private
+key can decrypt the message.
+
+58
+00:04:36,360 --> 00:04:41,830
+Establishing a public key cipher system
+is computationally more complex and
+
+59
+00:04:41,830 --> 00:04:44,930
+requires more resources
+than symmetric encryption.
+
+60
+00:04:46,220 --> 00:04:50,390
+Therefore, it is usually used for
+shorter messages.
+
+61
+00:04:50,390 --> 00:04:54,670
+In practice, a public key system
+is used for encrypting and
+
+62
+00:04:54,670 --> 00:04:57,890
+transferring the encryption
+key of a symmetric key system.
+
+63
+00:04:59,610 --> 00:05:04,140
+Symmetric ciphers are far further divided
+into stream ciphers and block ciphers.
+
+64
+00:05:05,300 --> 00:05:10,890
+In a stream cipher, the plaintext is
+encrypted bit by bit or byte by byte.
+
+65
+00:05:12,070 --> 00:05:15,899
+For simplicity,
+we call this unit of encryption a digit.
+
+66
+00:05:17,170 --> 00:05:20,030
+So instead of one single key,
+
+67
+00:05:20,030 --> 00:05:24,798
+the stream cipher requires a stream
+of keys to encrypt every digit.
+
+68
+00:05:24,798 --> 00:05:29,670
+In this model, the cipher text stream is
+
+69
+00:05:29,670 --> 00:05:34,710
+calculated as an exclusive or
+a modular to addition of
+
+70
+00:05:34,710 --> 00:05:39,420
+every digit in the plaintext stream with
+the corresponding digit in the key stream.
+
+71
+00:05:40,740 --> 00:05:43,100
+The same key stream is then used for
+
+72
+00:05:43,100 --> 00:05:46,070
+decryption on the receiver
+side in the similar manner.
+
+73
+00:05:47,900 --> 00:05:52,910
+The key streams are generated as random or
+pseudo-random digits.
+
+74
+00:05:52,910 --> 00:05:58,030
+So, the security of a stream
+cipher is highly dependent
+
+75
+00:05:58,030 --> 00:06:00,230
+on the key stream generation process.
+
+76
+00:06:01,610 --> 00:06:04,840
+Stream ciphers are small and fast, and
+
+77
+00:06:04,840 --> 00:06:09,100
+that's why they are suitable for
+embedded resource constrain devices.
+
+78
+00:06:10,840 --> 00:06:14,640
+In contrast to a stream cipher,
+a block cipher
+
+79
+00:06:14,640 --> 00:06:19,620
+uses a single key to encrypt fixed
+size block of plain text at a time.
+
+80
+00:06:21,510 --> 00:06:24,570
+Blocks of cipher text
+are produced as the result.
+
+81
+00:06:25,600 --> 00:06:28,800
+Block ciphers are mostly used for
+encrypting large data.
+
+82
+00:06:28,800 --> 00:06:35,550
+The most of the well-known and widely
+used symmetric ciphers are block ciphers.
+
+83
+00:06:35,550 --> 00:06:41,089
+These include, for example,
+the Data Encryption Standard, or DES,
+
+84
+00:06:42,380 --> 00:06:48,710
+triple tests and the more recent
+Advanced Encryption Standard or AES.
+
+85
+00:06:50,150 --> 00:06:55,120
+Block ciphers are first as components in
+designing many cryptographic protocols.
+
+86
+00:06:56,250 --> 00:07:01,030
+The block ciphers can be implemented
+in different modes of operation,
+
+87
+00:07:01,030 --> 00:07:03,960
+offering different levels of
+protection and performance.
+
+88
+00:07:05,130 --> 00:07:10,292
+Common examples are The cipher
+feedback mode or CFB,
+
+89
+00:07:10,292 --> 00:07:17,320
+the cipher block chaining mode or CBC,
+and the electronic code block mode, ECB.
+
+90
+00:07:18,470 --> 00:07:21,950
+We are not going to cover
+this mode in this course.
+
+91
+00:07:21,950 --> 00:07:25,914
+However, you can read more about them
+on the internet if you are interested.
+
+92
+00:07:29,097 --> 00:07:34,085
+Breaking a cryptographic system
+involves finding the plain text without
+
+93
+00:07:34,085 --> 00:07:35,540
+the decryption key.
+
+94
+00:07:37,360 --> 00:07:42,070
+The attack models of a cyber system
+depend on the amount of information
+
+95
+00:07:42,070 --> 00:07:43,860
+that is available for the attacker.
+
+96
+00:07:45,070 --> 00:07:50,820
+Based on this the main attack models
+are classified four categories.
+
+97
+00:07:50,820 --> 00:07:55,178
+It is always assumed that the encryption
+algorithm is known by the attacker.
+
+98
+00:07:55,178 --> 00:07:59,220
+In a ciphertext-only attack,
+
+99
+00:07:59,220 --> 00:08:02,978
+the attacker has access only
+to the encrypted content.
+
+100
+00:08:02,978 --> 00:08:07,880
+In a known-plaintext attack,
+the attacker has access to
+
+101
+00:08:07,880 --> 00:08:11,350
+some plain text ciphertext pairs
+which correspond to each other.
+
+102
+00:08:12,660 --> 00:08:18,760
+In a chosen plaintext attack, the attacker
+has access to the encryption process and
+
+103
+00:08:18,760 --> 00:08:23,770
+is able to generate the corresponding
+cipher text for a chosen plaintext.
+
+104
+00:08:25,170 --> 00:08:26,970
+In a chosen ciphertext attack,
+
+105
+00:08:26,970 --> 00:08:30,680
+the attacker has access to
+the decryption process and
+
+106
+00:08:30,680 --> 00:08:35,830
+is able to generate the corresponding
+plaintext for a chosen cipher text.
+
+107
+00:08:35,830 --> 00:08:37,702
+In all of these attack models,
+
+108
+00:08:37,702 --> 00:08:40,582
+the ultimate goal is to
+find out the secret key.
+
+109
+00:08:43,093 --> 00:08:46,248
+In addition to the mentioned
+attack models,
+
+110
+00:08:46,248 --> 00:08:51,147
+if there is no such information available,
+the attacker has to try all
+
+111
+00:08:51,147 --> 00:08:55,560
+possible combinations of keys
+until the correct one is found.
+
+112
+00:08:57,060 --> 00:09:02,130
+This kind of attack is known as
+an Exhaustive Key Search attack or
+
+113
+00:09:02,130 --> 00:09:03,240
+a Brute force attack.
+
+114
+00:09:04,820 --> 00:09:09,322
+The Cipher System can not be considered
+perfect if the exhaustive search is
+
+115
+00:09:09,322 --> 00:09:11,046
+the only way to find the key.
+
+116
+00:09:13,883 --> 00:09:17,501
+When designing cryptographic algorithms,
+the time that
+
+117
+00:09:17,501 --> 00:09:22,020
+a message needs to be in the encrypted
+form should be taken into account.
+
+118
+00:09:23,490 --> 00:09:26,390
+This period is called a Cover Period.
+
+119
+00:09:26,390 --> 00:09:30,790
+For example, in a banks transaction
+a message needs to be in
+
+120
+00:09:30,790 --> 00:09:34,919
+the encrypted form for a few seconds
+until it reaches the receiver side.
+
+121
+00:09:36,150 --> 00:09:41,240
+While in a database, a file needs
+to be kept in a encrypted form for
+
+122
+00:09:41,240 --> 00:09:42,590
+a longer period of time.
+
+123
+00:09:44,360 --> 00:09:49,210
+The design of a cyber system should
+always ensure that any type of attack to
+
+124
+00:09:49,210 --> 00:09:55,030
+successfully find the key, would take
+longer time Than the given cover period.
+
+125
+00:09:56,570 --> 00:10:00,910
+In this lesson we learned about
+basic concepts of cryptography.
+
+126
+00:10:00,910 --> 00:10:05,370
+We also got familiar with different
+types of encryption algorithms, and
+
+127
+00:10:05,370 --> 00:10:09,930
+more specifically, we learned about
+symmetric key cipher systems.
+
+128
+00:10:09,930 --> 00:10:14,370
+In other video lectures, we will learn
+more about public key cryptography.
+
+129
+00:10:14,370 --> 00:10:17,044
+And its usage for
+securing digital communication.
+
+130
+00:10:17,044 --> 00:10:22,319
+[MUSIC]

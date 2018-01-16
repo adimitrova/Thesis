@@ -1,0 +1,92 @@
+[MUSIC] In this fourth module, we are in the
+process of discussing the properties of electromagnetic interactions. And in this fifth video,
+we discuss the annihilation of electron-positron pairs
+into pairs of fermions. After following this video, you will know
+the main properties of the process of e+ e- annihilation into lepton pairs, and also the peculiarities of their
+annihilation into hadrons. The annihilation of electron-positron
+pairs into pairs of photons that Mercedes has introduced int the previous video
+is not the only annihilation reaction. There's a whole class of reactions
+of electron-positron annihilation into fermion-antifermion pairs and
+the example is shown here. We do not include the reaction
+e+ e- -> e+ e-, which is complicated by a second
+scattering diagram where the two electrons exchange a photon rather than annihilate. Let us take the creation of
+pairs of muons as a prototype. In the center-of-mass frame the final
+state is characterized by two muons with equal and opposite momentum. Having no strong interactions and being too heavy to cause
+electromagnetic showers, muons penetrate all the material in the
+detector, just losing energy by dE/dx. The total cross section again exhibits
+the well known factors, alpha squared in the nominator and s, the square of the
+characteristic energy, in the denominator. These are the characteristic factors for electromagnetic reactions
+between point-like particles. The cross section for tau production,
+e+ e- -> tau+ tau-, is the same, far from threshold, that is to say,
+at s, much larger than m_tau^2. The differential cross section is
+symmetric with respect to the sign of the scattering angle theta,
+if one neglects the masses, s >> 4 m_µ^2. The figure shows the angular distribution
+at high energy, the dashed lines indicate the shape of the symmetric distribution
+predicted by quantum electrodynamics. The solid lines include an asymmetric term
+that comes from electro-weak interference. The angular distribution in fact
+shows a deviation from symmetry that increases with energy. It is due to the interference
+with weak interactions that we will treat in module 6. This prototype cross-section applies to
+all annihilation reactions which produce a fermion pair of negligible mass and
+charge ±e. The coupling constant is hidden
+in the fine structure constant, alpha = e^2/(4π). Again, an identical angular distribution
+is observed for the reaction e+ e -> tau+ tau- at energies much larger
+than the threshold for this reaction. Let us now turn to pair production
+of quarks, or rather quark-antiquark pairs by e+ e- annihilation. Here we must consider
+two important changes. First, quarks carry electric charge,
+either +2/3 for u, c and t quarks or
+-1/3 for d, s, and b quarks,
+relative to the elementary charge e. As the quark charge comes in at
+only one of the two vertices, we must introduce a factor Q_i^2 in
+the cross section for each quark type i. Second, quarks are produced with
+three color charges, red, green or blue, charges that are responsible for
+the strong interactions but to which electromagnetic
+interactions are insensitive. The color of quarks is another example of
+the property of the final state which is observable only in principle. We have no way to measure it, but it distinguishes nevertheless final states
+corresponding to different colors. We must therefore add the amplitudes
+squared or the cross-sections. These are obviously independent of color,
+and for each flavor we obtain a cross-section which depends
+only on the electric charge, but is three times larger than
+if the object had no color. The mass of quarks is negligible for u,
+d, and s, but not for the heavy quarks c, b, and especially t. For them, their production thresholds,
+as indicated on the bottom of the slide, in the inclusive cross section
+e+ e- -> q qbar, there are steps at these thresholds. Quarks in the final state are not
+observed as such, because of their strong interaction which starts
+acting as soon as they are produced. The color field that is established
+between them is so energetic that additional quark-
+antiquark pairs spontaneously pop-up and cluster around the primordial
+quark as hadronic jets. You see an example in this picture
+from the L3 experiment at LEP. The jets follow the initial
+direction of the quark. Their total energy is that of the quarks. The multiplicity of charged and
+neutral particles inside each jet is high. Each quark forms at least one
+jet such that the event contains at least two of them. We will come back to the jet phenomenon
+in module 5 when we discuss strong interactions. Because of the conversion
+of quarks into hadrons, we cannot necessarily
+differentiate their flavor either. We consider therefore often the inclusive
+hadron cross section sigma(e+ e- -> hadrons), which to first order is given by
+the sum of the individual cross sections. This again because in principle,
+flavor allows to distinguish them. You may wonder if the conversion
+of quarks into hadron jets does not change the cross-section. This is not the case
+because as far as we know, this conversion is always happening,
+it has probability one. In other words, the quarks are always, and
+without residues, converted into hadrons. The cross section thus does not change. To compensate for the important reduction with the square of
+the energy, proportional to 1/s, of the electron positron cross-section,
+we often form the ratio R of the hadronic cross-section to that of our reference
+process, e+ e- -> µ+ µ-. The sum includes all flavors,
+as indicated in this equation, that can be produced at the given
+energy in the center of mass frame. To first order in the different
+energy regions we just obtain simple ratios of whole numbers. At each threshold there is a step in
+the cross section because a new channel opens up. This figure compares the rough calculation
+that we just did to a compilation of experimental results from
+the particle data group. The data comes from experiments at various
+e+ e- colliders, at different energies. We see the gross features of
+the cross section as predicted, including a small step
+at the quark threshold. But the measured cross section
+are significantly larger than the simple fractions we have just calculated. This is again due to higher
+order contributions. We will see in the next module that
+final states with additional gluons add some 10% to the total
+inclusive hadron cross-section. At high energies, above few tens of GeV, we see the
+influence of the weak neutral interaction. The exchange of its intermediate boson, the Z boson, dominates the total
+cross section at these energies, and causes the big peak that you
+see on the right of this graph. We will see much more
+of this in module 6. But before that, in the next module
+we'll discuss strong interactions and hadronic structure. [MUSIC]

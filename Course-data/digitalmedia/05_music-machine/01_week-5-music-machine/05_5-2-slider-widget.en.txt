@@ -1,0 +1,80 @@
+So last week we introduced user 
+interfaces, and I introduced you to the user interface library that I have. 
+now this week we're going to continue using that to make music machine, but 
+we're going to introduce one other feature of that library, which is 
+sliders. so, a slider looks like this. 
+It's a horizontal bar that you can click on and it moves across the screen, and as 
+usual we can make that effect. What's going out things in the program, 
+in this case you set the screen cover. So, let's just see how that works. 
+Now a slider works pretty similar, in a pretty similar way to the buttons that we 
+saw last week. You can create a slider, give it a name. 
+And this is a new thing, you need to set the minimum or maximum values of the 
+slider. Those are the minimum and maximum values 
+that you can get out of a slider. So, the slider will have a certain size, 
+just as any other user interface element. And it will go from the, the left of that 
+slider to the right of that slider. And left of that slider will give you a 
+minimum value, in this case zero. And the right of that slider will give 
+you a maximum value. These are the values we're using to 
+control color, which go between zero and 255. 
+If you were to control something else, like audio volume, you would need another 
+range of, of values. This is quite similar to the map examples 
+we used earlier. And we have the initial value of the 
+slider. So you might want to start it at 0, but 
+sometimes you want to start it at another value. 
+Here I'm starting it at 20. These other bits are pretty much the same 
+as the button. You give it a position, X, Y, and a size, 
+width, and height. And this last this last parameter is the 
+orientation of the slider, whether it's a horizontal slider or a vertical slider. 
+You can see how we can change that. sliders pretty much work as, in the same 
+way as buttons. You need to draw them in the display 
+method, in the draw method, and you need to do, you need to check whether they 
+have been clicked on in the mouse released method, but I'll show you the 
+one other thing you need to do is get the value of the slider. 
+So you need to know what, what the value of that slider is, and we can use the 
+function get, the slider.get. We'll return you a floating point value, 
+a number, between the minimum value and the maximum value, and then you can use 
+that simple code. So let's see an example of doing that. 
+So this is the program I ran earlier. We've got a slider variable, just as we 
+had button variables. This is where we creating the slider. 
+Can you remember these are the minimum and maximum values, and that's the 
+initial value, we display it in the, in the draw method, and we call, slide it up 
+mouse released. In the mouse released method, and this is 
+where we actually make it interact with the rest of our program. 
+We get the value of the slider and use that as input to our background's color, 
+and let's just remind ourselves what that does. 
+So we're getting the value of the slider, it's a value between 0 and 255 because 
+that's what we set it to, and, and that's changing the background color. 
+We can change your initial value. We can change our minimum value so that 
+it's never going to get too dark, even right at the bottom it's still quite 
+grey, our maximum value similarly so to stop it whiting out as it does. 
+And the other thing we might want to change is the orientation of it, so 
+currently it's drawn horizontally across the screen, but we can draw it vertically 
+as well. but, I need to remember to change these 
+values because. it's going to be a very short, fat 
+vertical slider, if I draw the same size as the, the horizontal slider. 
+So if I'm drawing a vertical slider, I need to make it's it's thin but long, as 
+opposed to wide but short. So I'm swapping the width and height and 
+there we have our vertical slider. Now with a button it's fine just to 
+respond to clicks, but actually with a slider it's quite satisfying to drag 
+around and you can't do it. Input the code as it is now, but doing it 
+is very simple. We just create a mouse drag method and 
+call s.mousedrag. And then we can drag very smoothly and 
+smoothly change all the values so for you can just call any of mouse press, mouse 
+release, mouse drags and our user interface for each will have equivalents. 
+Now let's show you one last example of how to use multiple sliders together. 
+Last week you saw how to create radio buttons which is a combination of 
+different buttons, a series of buttons. You can do something very similar with 
+sliders where you have a set of different sliders that, that you can interact with, 
+and it looks something like this. So I can now set each of the color 
+channels with my background individually so I can make it less red. 
+And again, it works in a quite similar way. 
+We have multi slider available. We create the multi sliders. 
+Just like with radio buttons, we have to give it the number of sliders you want. 
+In this case, we're taking it from the length of this string of this array of 
+names, and again just like radio buttons we can set the names. 
+and then we display it and then we do, mouse release to capture events, and in 
+here we're getting there's no longer single gets. 
+We can get the value of each individual slider, and we pass in the number of that 
+slider, so it's get zero. We'll get the first slider, get one, 
+second get two, we'll get third. So, that's how it works. 
+So, get zero we'll get the value of this slider as I click on it [MUSIC].

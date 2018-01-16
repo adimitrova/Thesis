@@ -1,0 +1,465 @@
+1
+00:00:00,159 --> 00:00:05,708
+[MUSIC]
+
+2
+00:00:05,708 --> 00:00:06,964
+Welcome.
+
+3
+00:00:06,964 --> 00:00:11,180
+In our previous videos, we examine
+the many structure of Contiki core and
+
+4
+00:00:11,180 --> 00:00:12,870
+other features.
+
+5
+00:00:12,870 --> 00:00:17,980
+Now, we are going to discuss one of
+the most important features of Contiki
+
+6
+00:00:17,980 --> 00:00:20,089
+that is Contiki protothreads.
+
+7
+00:00:21,560 --> 00:00:27,236
+In order to provide sequential flow of
+control, Contiki provides protothreads
+
+8
+00:00:27,236 --> 00:00:32,110
+instead of using complex state machines or
+full multi-threading.
+
+9
+00:00:32,110 --> 00:00:34,380
+Protothreads are lightweight and
+
+10
+00:00:34,380 --> 00:00:38,760
+stand as stackless threads with only
+two bytes of memory per thread.
+
+11
+00:00:40,340 --> 00:00:44,040
+One of the benefits of using
+Contiki's protothreads is that
+
+12
+00:00:44,040 --> 00:00:47,790
+systems overhead can be small
+compared to other kernels.
+
+13
+00:00:48,790 --> 00:00:52,910
+This comes as a result of sharing
+the stack by old protothreads.
+
+14
+00:00:54,300 --> 00:00:58,950
+This has the additional benefit that
+context switching can be done easily
+
+15
+00:00:58,950 --> 00:01:00,059
+by stack rewinding.
+
+16
+00:01:01,260 --> 00:01:05,990
+It is more efficient to implement Contiki
+protothreads than applying traditional
+
+17
+00:01:05,990 --> 00:01:10,010
+ways of multithreading on wireless
+sensor network applications.
+
+18
+00:01:11,360 --> 00:01:14,000
+Contiki's protothreads
+are extremely lightweight.
+
+19
+00:01:15,070 --> 00:01:16,760
+Similar to other modules and
+
+20
+00:01:16,760 --> 00:01:20,900
+processes in Contiki, protothreads
+are completely written in standard C.
+
+21
+00:01:22,190 --> 00:01:26,375
+This avoids any extra requirement for
+using and compiling protothreads.
+
+22
+00:01:27,930 --> 00:01:31,580
+Now you have some idea of
+the structure of protothreads,
+
+23
+00:01:31,580 --> 00:01:33,400
+you may wonder how they really work.
+
+24
+00:01:34,460 --> 00:01:38,160
+A protothread basically works
+within a single function and
+
+25
+00:01:38,160 --> 00:01:41,270
+cannot span over other functions.
+
+26
+00:01:41,270 --> 00:01:45,220
+It is possible for
+a protothread to call another function,
+
+27
+00:01:45,220 --> 00:01:49,390
+however it cannot plug the flow
+inside the called function.
+
+28
+00:01:50,700 --> 00:01:54,760
+Some of the popular applications using
+protothreads are memory constraint
+
+29
+00:01:54,760 --> 00:01:57,755
+systems, event driven protocol stacks,
+
+30
+00:01:57,755 --> 00:02:02,570
+deeply embedded systems and
+sensor network nodes.
+
+31
+00:02:02,570 --> 00:02:06,220
+In order to give you a complete
+view of Contiki protothreads,
+
+32
+00:02:06,220 --> 00:02:09,180
+we are going to discuss
+how they are implemented.
+
+33
+00:02:10,590 --> 00:02:15,540
+Protothreads are implemented using
+local continuations, which are used
+
+34
+00:02:15,540 --> 00:02:20,279
+to present the current execution state
+of a program at the specific places.
+
+35
+00:02:21,530 --> 00:02:26,720
+A local continuation can be implemented
+using one of the following three ways.
+
+36
+00:02:27,730 --> 00:02:31,560
+These are machine specific assembler code,
+
+37
+00:02:31,560 --> 00:02:35,040
+standard C constructs,
+or compiler extensions.
+
+38
+00:02:36,390 --> 00:02:39,070
+The first way can be done by saving and
+
+39
+00:02:39,070 --> 00:02:43,210
+restoring the processor state,
+except for the stack pointers.
+
+40
+00:02:44,220 --> 00:02:49,950
+As a result, each proto-thread uses
+around 16 to 32 bytes of memory.
+
+41
+00:02:51,260 --> 00:02:53,720
+The second way of using a standard C for
+
+42
+00:02:53,720 --> 00:02:59,054
+implementation requires only 2 bytes
+of state information per protothread.
+
+43
+00:03:00,380 --> 00:03:05,860
+Although this approach has slower memory
+overhead it still has some challenges and
+
+44
+00:03:05,860 --> 00:03:06,570
+restrictions.
+
+45
+00:03:08,030 --> 00:03:11,560
+The last method is to
+use certain C compilers
+
+46
+00:03:11,560 --> 00:03:16,730
+which have a specific C extensions for
+implementing protothreads.
+
+47
+00:03:16,730 --> 00:03:17,930
+For example,
+
+48
+00:03:17,930 --> 00:03:23,620
+a GCC version supporting label pointers
+can be a good candidate to perform this.
+
+49
+00:03:24,910 --> 00:03:29,550
+As a result, only four bytes of
+RAM per protothread are required.
+
+50
+00:03:31,820 --> 00:03:37,050
+Now, I will show you an example of sealed
+code of protothreads in this slide.
+
+51
+00:03:38,240 --> 00:03:41,480
+Please take your time and
+look at the construct in detail.
+
+52
+00:03:43,890 --> 00:03:48,870
+We are now going to explore another
+important concept supported in Contiki,
+
+53
+00:03:48,870 --> 00:03:52,050
+that is preemptive multi-threading.
+
+54
+00:03:52,050 --> 00:03:56,336
+Instead of implementing multi-threading
+in the core, Kontiki implements
+
+55
+00:03:56,336 --> 00:04:00,720
+multi-threading as a library on
+the top of the event based kernel.
+
+56
+00:04:01,990 --> 00:04:05,680
+This gives the advantage that
+the library is only linked
+
+57
+00:04:05,680 --> 00:04:10,561
+with applications built with the need for
+multi-threading support.
+
+58
+00:04:10,561 --> 00:04:15,900
+Multi-threading is implemented
+by using timer interrupts.
+
+59
+00:04:15,900 --> 00:04:19,580
+The implementation is
+divided in two parts.
+
+60
+00:04:19,580 --> 00:04:23,336
+A platform specific part and
+a platform independent part.
+
+61
+00:04:23,336 --> 00:04:28,535
+Unlike a conventional Contiki
+processes discussed previously,
+
+62
+00:04:28,535 --> 00:04:33,370
+each thread in multi-threading
+requires a separate stack.
+
+63
+00:04:34,500 --> 00:04:39,960
+They run in separate threads until they
+yield explicitly or get preempted.
+
+64
+00:04:41,570 --> 00:04:46,480
+The multi-threading library provides
+a set of API's for easy interaction.
+
+65
+00:04:48,240 --> 00:04:52,650
+Some example methods of multi-threading
+API are shown in this slide.
+
+66
+00:04:56,510 --> 00:05:00,347
+Have you ever heard of
+Over-the-air programming?
+
+67
+00:05:00,347 --> 00:05:04,630
+Over-the-air programming is
+a simple Contiki protocol
+
+68
+00:05:04,630 --> 00:05:07,170
+to program the entire network of sensors.
+
+69
+00:05:08,180 --> 00:05:13,940
+Basically, the protocol sends a single
+program binary to a destination node or
+
+70
+00:05:13,940 --> 00:05:17,219
+concentrate node via
+point-to-point communication.
+
+71
+00:05:18,450 --> 00:05:23,040
+Their received binary is stored in first.
+
+72
+00:05:23,040 --> 00:05:25,670
+When the whole program
+is completely received,
+
+73
+00:05:25,670 --> 00:05:30,310
+the protocol continues to propagate the
+binary program to other neighboring nodes.
+
+74
+00:05:31,780 --> 00:05:33,810
+In cases of packet loss,
+
+75
+00:05:33,810 --> 00:05:36,789
+negative acknowledgment is
+sent to the concentrate node.
+
+76
+00:05:37,900 --> 00:05:41,140
+Then the node starts to
+repair data packets.
+
+77
+00:05:42,920 --> 00:05:47,120
+It is convenient to use the protocol
+to upgrade the whole network of
+
+78
+00:05:47,120 --> 00:05:47,960
+sensors quickly.
+
+79
+00:05:50,170 --> 00:05:53,610
+Let's start to analyze
+the code size of Contiki.
+
+80
+00:05:54,740 --> 00:06:00,180
+To see how large it is and to do code
+size comparisons between Contiki and
+
+81
+00:06:00,180 --> 00:06:04,880
+other embedded OSs,
+there are some strict requirements for
+
+82
+00:06:04,880 --> 00:06:08,850
+an operating system of embedded
+wireless sensor network devices.
+
+83
+00:06:10,250 --> 00:06:14,220
+These requirements arise due
+to resource constraints.
+
+84
+00:06:14,220 --> 00:06:19,850
+Memory, which is one of the most
+precious resources of embedded devices,
+
+85
+00:06:19,850 --> 00:06:22,680
+must be considered when
+choosing a suitable OS.
+
+86
+00:06:24,080 --> 00:06:26,640
+Let's examine the minimum RAM and
+
+87
+00:06:26,640 --> 00:06:31,140
+ROM required to run a simple
+wireless sensor network application.
+
+88
+00:06:32,210 --> 00:06:37,360
+Note that RAM and ROM usage vary
+depending on the actual application.
+
+89
+00:06:38,700 --> 00:06:42,860
+For instance, a simple wireless
+sensor network application
+
+90
+00:06:42,860 --> 00:06:46,580
+takes less than 2 kilobytes and
+30 kilobytes respectively.
+
+91
+00:06:48,210 --> 00:06:54,280
+Please take your time to see this slide
+which shows detailed compile code size and
+
+92
+00:06:54,280 --> 00:06:59,560
+RAM usage of a Contiki always compile for
+two architectures.
+
+93
+00:06:59,560 --> 00:07:05,638
+The Texas Instruments MSP430 and
+the Atmel AVR.
+
+94
+00:07:05,638 --> 00:07:09,370
+So this brings us to the end of the video.
+
+95
+00:07:09,370 --> 00:07:13,375
+I hope that you got a good understanding
+of Contiki protothreads and
+
+96
+00:07:13,375 --> 00:07:14,860
+multi-threading.
+
+97
+00:07:14,860 --> 00:07:18,145
+Thank you for participating and
+I hope to see you in upcoming videos.
+
+98
+00:07:18,145 --> 00:07:22,844
+[SOUND]

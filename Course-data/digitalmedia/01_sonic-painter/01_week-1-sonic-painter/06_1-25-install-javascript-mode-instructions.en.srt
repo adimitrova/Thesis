@@ -1,0 +1,50 @@
+1
+00:00:04,110 --> 00:00:04,240
+Okay.
+
+2
+00:00:04,240 --> 00:00:07,380
+Just quick video to show you how to
+install JavaScript mode in processing.
+
+3
+00:00:07,380 --> 00:00:09,430
+So if you look on this menu here, you're
+
+4
+00:00:09,430 --> 00:00:11,960
+going to click Java when you first install
+it.
+
+5
+00:00:11,960 --> 00:00:15,266
+So you click add mode, select JavaScript
+
+6
+00:00:15,266 --> 00:00:20,330
+mode, hit the install button, downloads
+and installs.
+
+7
+00:00:20,330 --> 00:00:20,750
+We're done.
+
+8
+00:00:20,750 --> 00:00:22,021
+Now we need to quit processing.
+
+9
+00:00:22,021 --> 00:00:25,997
+[BLANK_AUDIO]
+
+10
+00:00:25,997 --> 00:00:32,534
+Revamp processing.
+
+11
+00:00:32,534 --> 00:00:33,730
+And there it is.
+
+12
+00:00:33,730 --> 00:00:35,060
+We can now go to JavaScript mode.

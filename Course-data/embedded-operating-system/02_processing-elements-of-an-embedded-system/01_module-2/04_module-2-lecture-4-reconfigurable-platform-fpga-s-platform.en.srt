@@ -1,0 +1,665 @@
+1
+00:00:00,137 --> 00:00:06,187
+[MUSIC]
+
+2
+00:00:06,187 --> 00:00:08,410
+Hello and welcome back.
+
+3
+00:00:08,410 --> 00:00:13,478
+In this video, I'm going to explain
+what a reconfigurable architecture is,
+
+4
+00:00:13,478 --> 00:00:18,469
+and I will also talk about the main
+features of field programmable gate arrays
+
+5
+00:00:18,469 --> 00:00:21,727
+as an example of
+reconfigurable architectures.
+
+6
+00:00:21,727 --> 00:00:27,120
+Several FPGA platforms would be introduced
+to you as well as their main features.
+
+7
+00:00:28,760 --> 00:00:32,904
+The most efficient approach in
+terms of energy consumption and
+
+8
+00:00:32,904 --> 00:00:37,909
+performance to implement an embedded
+system is to develop an application,
+
+9
+00:00:37,909 --> 00:00:40,115
+a specific integrated circuit.
+
+10
+00:00:40,115 --> 00:00:45,250
+However, one of the main drawbacks
+of this approach is the cost.
+
+11
+00:00:45,250 --> 00:00:49,830
+Indeed, ASIC development cost
+is much higher than let's say,
+
+12
+00:00:49,830 --> 00:00:51,640
+software development for a processor.
+
+13
+00:00:52,960 --> 00:00:56,980
+On the other hand, a processor is much
+cheaper option to be then embedded
+
+14
+00:00:56,980 --> 00:01:01,515
+system on, but it does not give you
+a good energy performance trade off.
+
+15
+00:01:01,515 --> 00:01:08,260
+ASICs processors are in a way, two
+extremes, but what do we have in between?
+
+16
+00:01:09,300 --> 00:01:12,160
+The configurable architectures
+are a good compromise here.
+
+17
+00:01:13,250 --> 00:01:18,130
+These devices can be almost as fast
+as the special purpose hardware and
+
+18
+00:01:18,130 --> 00:01:19,240
+at the same time,
+
+19
+00:01:19,240 --> 00:01:23,920
+their inner architecture can be changed
+which brings some degree of flexibility.
+
+20
+00:01:25,020 --> 00:01:29,830
+Field programmable gate arrays are an
+example of reconfigurable architectures,
+
+21
+00:01:29,830 --> 00:01:33,470
+that we are going to focus on.
+
+22
+00:01:33,470 --> 00:01:36,270
+An FPGA is a semiconductor device
+
+23
+00:01:36,270 --> 00:01:40,140
+which can be configured to
+implement different algorithms.
+
+24
+00:01:40,140 --> 00:01:44,250
+I would like to emphasize
+that an FPGA implementation
+
+25
+00:01:44,250 --> 00:01:48,290
+is a hardware base approach
+to realize a certain task.
+
+26
+00:01:48,290 --> 00:01:52,650
+Meaning that hardware changes,
+whereas if you use a processor,
+
+27
+00:01:52,650 --> 00:01:57,160
+the underlying hardware stays the same,
+but the software can be changed.
+
+28
+00:01:58,270 --> 00:02:03,165
+So what is the inner structure of
+an FPGA that allows these devices
+
+29
+00:02:03,165 --> 00:02:05,485
+to reconfigure its hardware?
+
+30
+00:02:05,485 --> 00:02:09,297
+Its core compromises
+a matrix of logic blocks,
+
+31
+00:02:09,297 --> 00:02:14,549
+which can be connected to each
+other via special interconnects.
+
+32
+00:02:14,549 --> 00:02:16,015
+As mentioned before,
+
+33
+00:02:16,015 --> 00:02:21,120
+an FPGA should be configured to
+realize a certain application.
+
+34
+00:02:21,120 --> 00:02:24,020
+For that it can be programmed
+with a new design.
+
+35
+00:02:25,430 --> 00:02:30,450
+Program availability wise,
+FPGAs can be one time programmable.
+
+36
+00:02:30,450 --> 00:02:33,090
+These type of FPGA's is not meant for
+
+37
+00:02:33,090 --> 00:02:36,689
+applications where in field
+reprogrammability is needed.
+
+38
+00:02:37,830 --> 00:02:43,351
+On the other hand, reprogram level
+FPGAs can be reconfigured by
+
+39
+00:02:43,351 --> 00:02:48,372
+our user many times without
+using any special equipment.
+
+40
+00:02:48,372 --> 00:02:54,361
+Now let's go deeper in to the details
+about the inner structure of FPGAs.
+
+41
+00:02:54,361 --> 00:02:56,943
+The logic block plays the central role and
+
+42
+00:02:56,943 --> 00:03:00,280
+it can be considered as
+the building block of an FPGA.
+
+43
+00:03:01,640 --> 00:03:04,560
+The features of these
+block might be different
+
+44
+00:03:04,560 --> 00:03:07,370
+depending on certain types of an FPGA.
+
+45
+00:03:07,370 --> 00:03:10,690
+But it usually has
+combinational logic inside
+
+46
+00:03:10,690 --> 00:03:12,959
+which is represented by look up tables.
+
+47
+00:03:14,110 --> 00:03:16,600
+The lookup table style of the logic
+
+48
+00:03:16,600 --> 00:03:21,410
+was chosen because it makes easy to derive
+the functionality of the logic block.
+
+49
+00:03:22,590 --> 00:03:27,960
+Additionally, the logic block contains
+a register to implement sequential logic,
+
+50
+00:03:27,960 --> 00:03:32,300
+which introduces clocking and
+synchronization into the design and
+
+51
+00:03:32,300 --> 00:03:35,100
+it's a fundamental
+component of digital logic.
+
+52
+00:03:36,800 --> 00:03:40,895
+There are also multiplexers
+inside of the logic block,
+
+53
+00:03:40,895 --> 00:03:46,047
+which allow to select either the lookup
+table or the flip flop output.
+
+54
+00:03:46,047 --> 00:03:50,616
+Although the logic block is flexible
+obviously with only one logic block,
+
+55
+00:03:50,616 --> 00:03:55,080
+it is impossible to implement
+any kind of logic function.
+
+56
+00:03:55,080 --> 00:03:59,230
+Complex designs will require many
+logic blocks to be connected together.
+
+57
+00:04:00,350 --> 00:04:04,890
+The special interconnects inside
+of an FPGA serve this purpose.
+
+58
+00:04:06,030 --> 00:04:11,010
+These interconnects are an important and
+one of the most complex aspects of
+
+59
+00:04:11,010 --> 00:04:15,810
+an FPGA since wiring is a global
+property of a logical designer.
+
+60
+00:04:17,230 --> 00:04:22,468
+Note that the interconnection between
+logic elements might be very complex.
+
+61
+00:04:22,468 --> 00:04:27,629
+And therefore, not only connections
+between logic elements are required but
+
+62
+00:04:27,629 --> 00:04:29,830
+also between wires themselves.
+
+63
+00:04:29,830 --> 00:04:34,803
+An SRAM based FPGA uses a SRAM
+to hold the information
+
+64
+00:04:34,803 --> 00:04:38,315
+used to program the interconnects.
+
+65
+00:04:38,315 --> 00:04:42,490
+In a design,
+it is often necessary to source some data.
+
+66
+00:04:42,490 --> 00:04:46,060
+For this purpose,
+there are ground blocks available,
+
+67
+00:04:46,060 --> 00:04:50,580
+these blocks use the same storage that
+is used for the look up table function.
+
+68
+00:04:53,100 --> 00:04:57,229
+The majority of FPGAs
+nowadays are SRAM based.
+
+69
+00:04:58,480 --> 00:05:04,240
+SRAM based FPGAs store the configuration
+data in static memory.
+
+70
+00:05:04,240 --> 00:05:08,250
+The drawback of SRAM is
+that it is volatile and
+
+71
+00:05:08,250 --> 00:05:11,540
+can't keep the data without power source.
+
+72
+00:05:11,540 --> 00:05:16,990
+Because of that such FPGAs must be
+programmed or configured upon start.
+
+73
+00:05:18,200 --> 00:05:20,960
+There are two basic ways
+of programming an FPGA.
+
+74
+00:05:22,070 --> 00:05:27,750
+It can be either done in a master mode
+when the FPGA gets the configuration data
+
+75
+00:05:27,750 --> 00:05:34,380
+from an external source for example, from
+external flash memory or in a slave mode.
+
+76
+00:05:34,380 --> 00:05:38,050
+When FPGA is configured by
+an external master device.
+
+77
+00:05:38,050 --> 00:05:39,930
+For example, a processor.
+
+78
+00:05:39,930 --> 00:05:42,830
+This can be done via dedicated
+programming interfaces.
+
+79
+00:05:44,360 --> 00:05:48,750
+It is also worth mentioning
+that some types of FPGA support
+
+80
+00:05:48,750 --> 00:05:53,155
+partial reconfiguration, and
+there are two types of it.
+
+81
+00:05:53,155 --> 00:05:57,868
+First of them is dynamic partial
+reconfiguration, that allows you to change
+
+82
+00:05:57,868 --> 00:06:01,430
+the part of the design while
+the rest of an FPGA is running.
+
+83
+00:06:02,720 --> 00:06:05,960
+Another one is the static
+partial reconfiguration
+
+84
+00:06:05,960 --> 00:06:09,100
+when the FPGA is not running
+during the reconfiguration.
+
+85
+00:06:11,390 --> 00:06:15,203
+Before we continue,
+let's mention the upsides and
+
+86
+00:06:15,203 --> 00:06:18,155
+the downsides of FPGA implementation.
+
+87
+00:06:18,155 --> 00:06:22,720
+So compared to software solutions,
+an FPGA implementation is faster and
+
+88
+00:06:22,720 --> 00:06:25,750
+more efficient in terms
+of energy consumption.
+
+89
+00:06:26,770 --> 00:06:31,600
+On the other hand, FPGAs lose in
+many aspects such as performance and
+
+90
+00:06:31,600 --> 00:06:33,580
+energy consumption to ASICs.
+
+91
+00:06:34,790 --> 00:06:39,669
+However, FPGA design development
+is much cheaper than ASIC designs.
+
+92
+00:06:40,700 --> 00:06:46,310
+In other words FPGAs provide a tool
+that lies in between fully software and
+
+93
+00:06:46,310 --> 00:06:48,090
+fully hardware implementations.
+
+94
+00:06:49,240 --> 00:06:55,156
+Due to their reconfigurable nature FPGAs
+are good for different applications and
+
+95
+00:06:55,156 --> 00:06:59,270
+markets because of the high
+cost of ASIC manufacturing,
+
+96
+00:06:59,270 --> 00:07:02,799
+it is important to model
+the design before then.
+
+97
+00:07:02,799 --> 00:07:07,168
+Therefore, ASIC prototyping is
+one of the application areas for
+
+98
+00:07:07,168 --> 00:07:12,810
+FPGAs which allows accurate modeling and
+verification as well as rapid software and
+
+99
+00:07:12,810 --> 00:07:16,950
+firmware development and
+reduces the risk of design errors.
+
+100
+00:07:18,960 --> 00:07:23,844
+The wide domain of digital signal
+processing can also benefit from FPGAs.
+
+101
+00:07:23,844 --> 00:07:28,658
+Indeed, FPGAs provide high computational
+throughput by using parallel
+
+102
+00:07:28,658 --> 00:07:30,770
+architectures.
+
+103
+00:07:30,770 --> 00:07:35,320
+Their ability to reconfigure
+the inner hardware enables designers
+
+104
+00:07:35,320 --> 00:07:39,849
+to develop customized architectures for
+ideal implementation of their algorithms.
+
+105
+00:07:42,260 --> 00:07:46,270
+FPGAs provide cheaper solutions and
+faster time to markets for
+
+106
+00:07:46,270 --> 00:07:48,160
+low to medium volume productions.
+
+107
+00:07:49,268 --> 00:07:52,980
+Compared to ASICs which usually
+require a lot of money and
+
+108
+00:07:52,980 --> 00:07:54,630
+time to get the first device.
+
+109
+00:07:56,570 --> 00:08:00,399
+So you can buy FPGA platforms
+directly from the FPGA vendors.
+
+110
+00:08:01,730 --> 00:08:06,130
+The biggest FPGA manufacturers are Xilnx,
+Altera, and Actel.
+
+111
+00:08:07,660 --> 00:08:12,720
+On their websites, you can find a lot
+of information about their FPGA chips
+
+112
+00:08:12,720 --> 00:08:14,650
+as well as about the platforms they sell.
+
+113
+00:08:16,400 --> 00:08:19,280
+It is sensible to make the platform choice
+
+114
+00:08:19,280 --> 00:08:22,820
+based on the application that
+you would like to implement.
+
+115
+00:08:22,820 --> 00:08:27,710
+However, if you are in the phase
+of discovering what FPGA is,
+
+116
+00:08:27,710 --> 00:08:31,270
+the choice can be done
+based on other parameters.
+
+117
+00:08:31,270 --> 00:08:35,310
+For example, the platform can be
+picked according to performance or
+
+118
+00:08:35,310 --> 00:08:37,510
+overall amount of resources it has.
+
+119
+00:08:38,780 --> 00:08:43,154
+Another way to select the proper
+device is to choose it based on
+
+120
+00:08:43,154 --> 00:08:45,944
+the field where you like to apply it in.
+
+121
+00:08:45,944 --> 00:08:50,560
+I will introduce you FPGA
+platforms based on Xilinx FPGAs.
+
+122
+00:08:52,290 --> 00:08:55,790
+Xilinx separates its chips into families.
+
+123
+00:08:55,790 --> 00:08:56,695
+There are four of them.
+
+124
+00:08:56,695 --> 00:09:03,614
+Low end devices, 7 devices,
+UltraScale and UltraScale+.
+
+125
+00:09:03,614 --> 00:09:07,743
+All families are different from each other
+depending on the amount of available
+
+126
+00:09:07,743 --> 00:09:11,258
+resources, performance and
+application area.
+
+127
+00:09:11,258 --> 00:09:18,142
+For example, Spartan-6 based platforms are
+the most cost optimized solutions, whereas
+
+128
+00:09:18,142 --> 00:09:23,779
+UltraScale+ family provides the highest
+performance and integration capabilities.
+
+129
+00:09:24,860 --> 00:09:29,350
+Here, I would like to introduce you
+to Spartan-6 based FPGA platform.
+
+130
+00:09:31,610 --> 00:09:35,280
+This platform is a good development
+environment for discovering and
+
+131
+00:09:35,280 --> 00:09:38,630
+evaluating a spartan 6 FPGA family.
+
+132
+00:09:38,630 --> 00:09:43,560
+The evolution kit has all the basic
+components for system development, and
+
+133
+00:09:43,560 --> 00:09:48,320
+also provides some example designs to
+speed up the discovery of the features
+
+134
+00:09:48,320 --> 00:09:50,930
+such as integrated memory interface core.
+
+135
+00:09:52,300 --> 00:09:59,397
+So such development platform is a good
+starting point to discover FPGAs.
+
+136
+00:09:59,397 --> 00:10:04,456
+In this video, we covered important
+aspects of recomforial architectures,
+
+137
+00:10:04,456 --> 00:10:07,000
+take a FPGA as an example.
+
+138
+00:10:07,000 --> 00:10:12,388
+We covered the main building blocks
+of FPGAs and discussed the platform
+
+139
+00:10:12,388 --> 00:10:18,154
+which might serve as a good start point
+for you if you want to discover FPGAs.
+
+140
+00:10:18,154 --> 00:10:21,949
+[MUSIC]

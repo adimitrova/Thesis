@@ -1,0 +1,113 @@
+So now that we have a way of describing
+dynamical systems with differential equations in continuous time. Or
+difference equations in, discrete time. Let's, see if we can actually use this, to
+do something interesting with, with robots. And, let's start with. Building a
+cruise controller for a, for a car. And the, the cruise controller. I mean it's
+job is to make the car drive at the desired reference speed. And if you
+recall, we're going to use r to describe the reference. So someone You, in the car,
+have set the reference speed to, to 65 miles per hour, or whatever you desire.
+Now, we want to somehow understand how we should model the car so that we can make
+it go the reference speed. Well, like I said last time, the laws of physics
+ultimately will dictate how Objects in the world, like robots or cars, behave. And
+Newton's second law says that the force is = to the mass * the acceleration. Now,
+this is what we're going to have to start with. There's nothing we can do about
+this. It is what it is. Now, what is the state of the system? because we need to
+somehow relate Newton's Second Law to the state. Well, in this case, since what
+we're going to do is try to make the velocity do the right thing, we can say
+that, let's say that the velocity of this, the car is the state. So x is going to be
+The speed at which the carrist is driving. Now acceleration a appear, this, a is
+simply dv dt and its the time derivative of the velocity or the change in velocity
+as a function of time. So what we get from that of course is that we can relate the
+velocity to the acceleration. Now we're also going to have to have an input, and
+when you're driving a car, the input, if you're dealing with, with speeds rather
+than which direction the car is going is, you press the gas pedal or the brake. And
+we are going to be rather cruder and say, you know what? Somehow we're mapping
+stepping on the gas or the brake onto a force that's applied To the car. And this
+is done through some linear relationship, where we h as some coefficient c, which is
+an electric mechanical transmission coefficient, and I'm going to go out on a
+limb and say, we don't know what this is. And, I control this sign cannot rely on us
+knowing c, because we're not going to know exactly what it is. But, let's at least
+for now, go with this, and hope That that's good enough to give us the design
+we want. So now we know that the force is c times u, but it's the mass time the
+acceleration. Right. So x dot, which is the same as dv, dt,
+which we had up there. Well, that's A which means that mass times the
+acceleration which is mx dot is equal to the force, but the force is c times u. So,
+that tells me directly that x dot is c over m times u. So, this, this sweet heart
+equation here is an equation that describes how my input maps on to. The
+state of the system. It's a differential equation. But it's an equation that tells
+us something about how my choice of input affects the system. Okay.
+This is, in fact, a rather good model. And I want to show a little video. I was
+involved in one of the, the DARPA. grand challenges.
+This was an urban challenge. Where we were supposed to build self-driving cars and we
+use almost exactly this model for, for our car. So I want to talk a little bit about
+how one would do this. So here is the front, a spinning thing, that's a laser
+scanner. On the side here, is another laser scanner sitting on top of a radar.
+These were what we used to get measurements. Now what we see on the
+inside is our instrumented car, which translated ultimately input voltages onto
+mechanically things that push down the gas pedal. So this is how we actually affected
+it with the same coefficient. And now, look at this video. The car gets around
+obstacles, and then it gets out of bounds, and it starts oscillating. So, I'm showing
+this. A, because I think the car is awesome. But, B, because there are, even
+though we didn't crash into things, we were oscillating a little bit. so there is
+something not perfect about this control design. See how we get out of the lane,
+we're oscillating too much. If you look at the steering wheel, see that this is a
+little skittish. and that's another indication that maybe the control design
+here wasn't perfect, but the velocity controller was based on a model that's
+very similar to, to what we just wrote down. here's another example of obstacle
+avoidance where. We're actually trying to avoid another car, but the point being is
+that, this very, very, very simple model that we wrote down is actually applicable
+to real systems. And this is part of the miracle of abstractions, that you're that
+you're able to get simple things that you then can apply for real. Now, I want to
+point out that we did real well In this competition up to a point, these were
+actually the semifinals before the finals. So let me show you what happened at the
+end. This breaks my heart to show you but I'm going to show it to you anyway. Here
+comes our car. Sting racing. It's slowing down, it's slowing down and
+then ow. It drives straight into a k rail, which is this concrete railing. What
+happened was that we got some measurement errors, a lot of measurement errors
+actually from the GPS. But I wanted to show you this because it was the outcome
+of it. regardless of which, this was still. A very complicated system. A very
+complicated robot, a car, and the model we came up with was very simple, and the
+point is that simple models a lot of times get you very far. So, let's see how we
+should actually do, do the control design here. let's assume that we can measure
+directly the velocity, and record, recall that the state. X is the velocity the
+measurement or the output is what we called y, so y is actually directly equal
+to x in this case, so we have a some way of measuring velocities which you know
+typically have a, you have a speedometer in your car so we know roughly what the
+velocity is and now their control signals should be a function of R-y, where r is
+the desired velocity and y is the actual velocity. And, I'm going to call this e,
+which stands for error. And our job, as control designers, is to make the error
+disappear, drive the error down to zero. So let's, before we do the actual design
+discuss a little bit about what are The properties that a useful controller could
+have. Well 1 property is that the controller should not overreact. If the
+error is tiny, we're almost perfect in terms of the velocity of the car, we
+should not have a large control signal. The control signal should not be
+aggressive when we're close to being done, it's like. Lets say that you're trying to
+thread a, a thread through a needle. Well, when you're really, really close you
+shouldn't just jam the thread in there. You should take it nice and slow when
+you're close. So, no overreactions. That's important, because when you start
+overreacting, you start responding very Quickly and aggressively to measurement of
+noise, for instance. So, a small error should give a small control input. U
+should not be jerky. And jerky, here. All I mean with that is that, it shouldn't
+vary too rapidly all the time. Because if it does, then we're going to be sitting in
+this car. With our cruise controller, we're going be having a cup of coffee with
+us. And, now the cruise controller is smacking us around all over, because it's
+jerking, we're going to spill our coffee. And, in fact for auto pilot's on
+airplanes, there are limits on their accep, acceptable accelerations That are
+directly related to cups of coffees standing on the, the tray tables in the
+aircraft. so you should be, not overreacting. It should not be jerky. And
+the, it should not depend on us knowing c and m. So, m is the mass of the car. C is
+this semi-magical transmission coefficient. The mass of the car is
+changing depending on what luggage we have. It's changing depending on how many
+passengers we have. We should not have to Redesign our controller just because a new
+person entered the car. We shouldn't have to weigh everyone and enter how much we
+weigh to, for it to work. And in fact elevators have bounds on how many people
+can be in the elevators. This is import, related to the fact that they design
+controllers that are robust to Variations in mass across a certain spectrum. Same
+thing for cars. The cruise controller should work no matter how many people are
+in the car and we don't want to know c. What this means is that controller can not
+be allowed to depend exactly on the values of c and m. So these are the 3 properties,
+high level properties that we have to insist on our control signal to have. So
+having said that, in the next lecture we're going to see how we can actually
+take these high level objectives and turn em into actual controllers and see what
+constitutes a good control design and. Conversely, it would constitute a bad
+control design.

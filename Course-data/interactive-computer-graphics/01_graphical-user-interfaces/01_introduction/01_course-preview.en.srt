@@ -1,0 +1,116 @@
+1
+00:00:00,025 --> 00:00:05,158
+[SOUND] Welcome to our course on
+
+2
+00:00:05,158 --> 00:00:11,121
+Interactive Computer Graphics.
+
+3
+00:00:11,121 --> 00:00:16,053
+In this course we will learn design and
+implementation of interactive tools for
+
+4
+00:00:16,053 --> 00:00:17,679
+visual problem solving.
+
+5
+00:00:19,390 --> 00:00:22,660
+Visual problem solving appears
+everyday in our daily life.
+
+6
+00:00:23,730 --> 00:00:26,510
+Medical doctors plan surgical operations.
+
+7
+00:00:28,290 --> 00:00:30,650
+Coaches teach how to play sports.
+
+8
+00:00:32,310 --> 00:00:36,590
+Engineers and
+architects design products and buildings.
+
+9
+00:00:36,590 --> 00:00:39,000
+And fashion designers design garments.
+
+10
+00:00:40,540 --> 00:00:42,910
+Scientists try to understand nature.
+
+11
+00:00:42,910 --> 00:00:46,830
+All these activities involve
+intensive visual problem solving.
+
+12
+00:00:47,910 --> 00:00:52,050
+And our goal is to have these
+activities with computation tools.
+
+13
+00:00:52,050 --> 00:00:53,030
+And they have.
+
+14
+00:00:53,030 --> 00:00:57,010
+First, computers can help you
+understand incoming visual information.
+
+15
+00:00:57,010 --> 00:00:58,210
+And the second,
+
+16
+00:00:58,210 --> 00:01:03,620
+computers can help you come up with new
+solutions based on this information.
+
+17
+00:01:03,620 --> 00:01:09,510
+And finally, computers can help you
+communicate these results to other people.
+
+18
+00:01:09,510 --> 00:01:14,740
+In this course, we will introduce various
+tools we developed in our groups.
+
+19
+00:01:14,740 --> 00:01:20,147
+As example cases, topics include,
+graphical user interfaces,
+
+20
+00:01:20,147 --> 00:01:25,937
+[SOUND] 2D Drawings, and [SOUND] 3D
+modeling, and [SOUND] Fabrication,
+
+21
+00:01:25,937 --> 00:01:31,452
+and Computer-Aided Design, and
+[SOUND] Real world interactions.
+
+22
+00:01:31,452 --> 00:01:37,130
+And then we'll show five demonstrations
+on described implementation details.
+
+23
+00:01:40,120 --> 00:01:40,860
+Stay tuned.
+
+24
+00:01:40,860 --> 00:01:42,782
+I'm looking forward to seeing you.
+
+25
+00:01:42,782 --> 00:01:43,450
+Thank you.
+
+26
+00:01:43,450 --> 00:01:49,009
+[MUSIC]

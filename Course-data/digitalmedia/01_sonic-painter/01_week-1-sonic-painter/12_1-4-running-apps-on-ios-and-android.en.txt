@@ -1,0 +1,74 @@
+[SOUND]. 
+Okay, so one of the first things we have to learn how to do is to run applications 
+on mobile devices. now Matt will have already shown you how 
+to run stuff on Android, and Marco will have shown you how to run stuff off the 
+desktop. I'm going to show you how you can run the 
+same application, using our code that we've prepared for you, in the download 
+pack which is off, which is from Coursera. 
+So that you can do exactly the same code, write the same code, and have it run on 
+all three devices, specifically on, on iOS device. 
+Now, crucially, the way we're doing this as part of this program, is we're running 
+all of the iOS-specific code as JavaScript. 
+So, when you finish making your application, you press Go and it builds a 
+webpage specifically for our iOS mobile device. 
+There's a couple of little tricky things that we need to get right the first time 
+we do it, and I'm going to talk you through those right now. 
+But firstly, we start with a straightforward sketch. 
+Now, I'm going to use a sketch that we're, we're going to talk about later on 
+in lesson one, called Sonic Painter. And this is just a basic I'll sketch. 
+It also runs on the desktop, and it also runs on Android in exactly the same way. 
+So, I'm going to start by creating a running version on my desktop, so you can 
+see. Just to give you a, a reminder of how 
+that works. But we're using JavaScript. 
+So, I'm just hovering over with the mouse, over the little bit that says 
+JavaScript. When you click in the top right, 
+right-hand corner of the processing IDE, you can see it says Java, Andriod, 
+Javascript, Experimental. I don't really know what Experimental 
+means. We're not going to try it out today. 
+But we're going to try the JavaScript version. 
+When you run it, when you press this Play icon as Mark already shown you, it 
+launches your web browser. And I think we're recommending you use 
+Google Chrome for this. Now, you should be able to hear, [SOUND]. 
+And see the app. And that's the app we're going to look at 
+later on in more detail. But crucially, what we need to know is 
+what the web address is. Now, before you start, you need to make 
+sure that you're on the same wireless network as your desktop on your iOS 
+device. Most people do this all the time. 
+When you're in your house, you've got one wireless network. 
+And you connect your computer to that wireless network and you also connect all 
+your devices to the same network. But you really need to do that, because 
+if you don't do that, development can be a bit tricky to get started with. 
+Okay? So, I recommend you do that first. 
+If you haven't done that, do it now. So, the next thing we need to know is, 
+what the IP address of this desktop is, because the desktop is actually serving 
+the app at the moment. Later on in the course, you'll be serving 
+the app from a web server, and even storing it locally on your device. 
+I'll show you how to do that in a moment, but for now, we really need to know the 
+IP address. Now, on a Windows machine you can do this 
+by going to the command line terminal and typing IP config, and it will give you 
+the IP address of your advice. On a Macintosh device, we can do the same 
+thing. We can go to a terminal. 
+If I type ifconfig, it gives me a list, and you should be able to see that now, 
+it gives me a list of what looks like ridiculous numbers. 
+But there's a number here, inet 192.168.0.108, that's the IP address of 
+this machine on this network. I've got an iPad here. 
+I'm going to launch Safari. And I'm going to go to the IP address. 
+Http://192.168.0.108. Now, that's not enough, we also need a 
+colon, and the port number. The port number here is 55523, I know 
+this all seems like crazy garbage, but it, I promise you, is nearly over. 
+Here you go, and it's gone straight to the Solid Painter app. 
+And once it's loaded in, [SOUND], there you go. 
+It's running on my iOS device. Simple as that. 
+It's running over the network. Really simple. 
+And now, I can continue to edit that app live and just refresh this page. 
+So, I can change an aspect of it, go back to the code type something else in, and 
+then refresh the page and it will then come up. 
+One final thing though which is useful to know, if you want to embed this on your 
+home screen whilest you're developing, you can hit this little sharing icon and 
+choose add to home screen. And if you do that, it'll actually make 
+it a proper bundled app. We'll be talking more about that later on 
+towards the end of the course. But that, more or less, is how you get it 
+running on your iOS device. And I just want to point out that our 
+template, which we've prepared for you, is downloadable from the Coursera site. 
+And that should look identical on a iOS device whether it's an iPad, an iPhone 5 
+or an iPhone 4.

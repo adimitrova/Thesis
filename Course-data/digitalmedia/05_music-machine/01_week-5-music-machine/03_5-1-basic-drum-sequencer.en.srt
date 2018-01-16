@@ -1,0 +1,602 @@
+1
+00:00:04,838 --> 00:00:17,396
+[SOUND]. 
+
+2
+00:00:17,396 --> 00:00:20,370
+Wow, what's this? 
+It's a drum machine. 
+
+3
+00:00:20,370 --> 00:00:22,440
+So what, what, how does a drum machine 
+work? 
+
+4
+00:00:22,440 --> 00:00:26,376
+Well, let's figure it out. 
+So, a drum machine has a pattern, pattern 
+
+5
+00:00:26,376 --> 00:00:29,534
+which specifies what rhythm it's going to 
+play. 
+
+6
+00:00:29,534 --> 00:00:33,342
+And the way that you, you, you input that 
+pattern is using these colored buttons at 
+
+7
+00:00:33,342 --> 00:00:39,180
+the bottom, okay, so this is, this is a 
+tra2a, it's the classic drum machine. 
+
+8
+00:00:39,180 --> 00:00:42,020
+And you can see, you've got 16 buttons on 
+the bottom there. 
+
+9
+00:00:42,020 --> 00:00:45,412
+So if you, if you press a button, and a 
+light comes on, and that means that on 
+
+10
+00:00:45,412 --> 00:00:48,543
+that beat you're going to trigger a 
+sound. 
+
+11
+00:00:48,543 --> 00:00:51,935
+And then, a clock will step it through 
+the beats, and if it sees that the button 
+
+12
+00:00:51,935 --> 00:00:56,294
+is on, it will play a sound. 
+So, what we're going to try and do is 
+
+13
+00:00:56,294 --> 00:00:59,770
+emulate that kind of behavior. 
+What we call step sequencing inside 
+
+14
+00:00:59,770 --> 00:01:02,937
+processing. 
+So, we're going to have to figure out how 
+
+15
+00:01:02,937 --> 00:01:05,710
+we're going to represent that sequence 
+int he memory, we're going to have to 
+
+16
+00:01:05,710 --> 00:01:09,392
+figure out how to do the clock and 
+various other things. 
+
+17
+00:01:09,392 --> 00:01:12,382
+but it's really nice because if you do it 
+at this low level you have complete 
+
+18
+00:01:12,382 --> 00:01:16,411
+control over how the sequencer works. 
+And that means you have a much wider 
+
+19
+00:01:16,411 --> 00:01:20,020
+range of possibilities to get creative. 
+So, let's get into some code. 
+
+20
+00:01:21,230 --> 00:01:26,545
+So, I've got a basic starter code here. 
+And you can see I've got the usual maxim 
+
+21
+00:01:26,545 --> 00:01:28,884
+object. 
+And I've got an audio player, which I'm 
+
+22
+00:01:28,884 --> 00:01:32,610
+calling snare. 
+Which will be obvious why shortly. 
+
+23
+00:01:32,610 --> 00:01:35,210
+And then, so I create my maxim. 
+And I create my snare. 
+
+24
+00:01:35,210 --> 00:01:40,090
+So, I'm loading in wav files. 
+So, this is I believe it's a sample from 
+
+25
+00:01:40,090 --> 00:01:45,040
+the Roland TR-909 drum machine. 
+but you can obviously use any samples 
+
+26
+00:01:45,040 --> 00:01:47,220
+you'd like. 
+But certainly for a drum machine you 
+
+27
+00:01:47,220 --> 00:01:51,660
+probably want to be using short samples. 
+So, that's my snare sample. 
+
+28
+00:01:51,660 --> 00:01:53,750
+And then, my frame rate, I'm setting to 
+30. 
+
+29
+00:01:53,750 --> 00:01:57,930
+that could be, that could be set to 
+anything. 
+
+30
+00:01:57,930 --> 00:02:00,772
+But I'm just setting it to 30, so it's 
+really explicit how the timing is 
+
+31
+00:02:00,772 --> 00:02:03,330
+working. 
+Okay. 
+
+32
+00:02:03,330 --> 00:02:05,930
+Then, I've got this variable called 
+playHead, which I'm setting to 0. 
+
+33
+00:02:06,980 --> 00:02:11,370
+And playHead is, is how I'm going to 
+figure out when, when to trigger events. 
+
+34
+00:02:11,370 --> 00:02:14,481
+Okay? 
+So, when draw gets called, which happens 
+
+35
+00:02:14,481 --> 00:02:17,306
+repeatedly. 
+Remember, draw is just being called all 
+
+36
+00:02:17,306 --> 00:02:21,610
+the time. 
+The playHead is going to go up by one. 
+
+37
+00:02:21,610 --> 00:02:25,030
+And then, I'm going to check if the 
+playHead, how far the playhead has gone, 
+
+38
+00:02:25,030 --> 00:02:28,450
+and if it's gone up to 30, in other words 
+if I, if I take the remainder of the 
+
+39
+00:02:28,450 --> 00:02:32,098
+playHead in 30 then, and it's 0, that 
+means that it must have got through three 
+
+40
+00:02:32,098 --> 00:02:39,307
+calls to draw, sorry, 30 calls to draw. 
+So, that means because it's 30 frames a 
+
+41
+00:02:39,307 --> 00:02:45,275
+second that means one second has passed. 
+So, this little if statement here, checks 
+
+42
+00:02:45,275 --> 00:02:49,490
+if a second has passed, okay. 
+And so, when one second passes, I queue 
+
+43
+00:02:49,490 --> 00:02:53,739
+up the snare drum sound and I play it. 
+So, the, the sound we expect to hear from 
+
+44
+00:02:53,739 --> 00:02:56,330
+this is a snare drum being triggered once 
+a second. 
+
+45
+00:02:56,330 --> 00:02:58,608
+[SOUND]. 
+
+46
+00:02:58,608 --> 00:03:10,210
+Okay, there you have it. 
+Now, that's not really the best rhythm 
+
+47
+00:03:10,210 --> 00:03:15,226
+I've ever heard. 
+so, I think quite a few songs aren't that 
+
+48
+00:03:15,226 --> 00:03:18,219
+far from that rhythmically, but we can, 
+we can do better. 
+
+49
+00:03:18,219 --> 00:03:21,167
+So, what we need to do now is, is address 
+that problem I mentioned earlier which is 
+
+50
+00:03:21,167 --> 00:03:23,811
+how to represent a sequence in the 
+memory. 
+
+51
+00:03:23,811 --> 00:03:28,191
+So, the way I'm going to do it is I'm 
+going to take a Boolean array and call it 
+
+52
+00:03:28,191 --> 00:03:33,009
+snare, snSeq, like that, so I'm giving it 
+a kind of short variable name so I don't 
+
+53
+00:03:33,009 --> 00:03:39,398
+have to keep typing it in, okay. 
+So, snare sequence. 
+
+54
+00:03:39,398 --> 00:03:44,078
+Now yes just to reiterate it's a Boolean, 
+so that's going to contain trues and 
+
+55
+00:03:44,078 --> 00:03:48,086
+false values. 
+Because the idea is that it, remember 
+
+56
+00:03:48,086 --> 00:03:50,699
+with the buttons on that drum machine we 
+saw at the beginning they're either on or 
+
+57
+00:03:50,699 --> 00:03:53,870
+off. 
+So, Boolean is fine. 
+
+58
+00:03:53,870 --> 00:03:56,885
+And it's an array so that means you can 
+install several Booleans in one place, 
+
+59
+00:03:56,885 --> 00:04:00,110
+which makes it more convenient. 
+So, let's initialize it. 
+
+60
+00:04:01,570 --> 00:04:09,038
+snare sequence equals new boolean. 
+And I'm going to put four slots in it, 
+
+61
+00:04:09,038 --> 00:04:14,001
+and then I'm going to put a rhythm in. 
+Equals true. 
+
+62
+00:04:14,001 --> 00:04:18,332
+So, it's going to play a snare on the 
+first beat, let's put four beats in, one, 
+
+63
+00:04:18,332 --> 00:04:22,450
+two, three, and this, they're going to 
+miss it on the second beat and it's 
+
+64
+00:04:22,450 --> 00:04:29,030
+going to trigger it on the and then two, 
+it's going to do two. 
+
+65
+00:04:29,030 --> 00:04:32,980
+So, the idea with this rhythm, it's true 
+false true true. 
+
+66
+00:04:32,980 --> 00:04:34,150
+So, it's going to be like this. 
+
+67
+00:04:34,150 --> 00:04:39,090
+[SOUND]. 
+
+68
+00:04:39,090 --> 00:04:40,897
+Okay? 
+So, we get three in a row, and then a, 
+
+69
+00:04:40,897 --> 00:04:43,858
+and then a gap. 
+Right, so let's, so the problem is I now, 
+
+70
+00:04:43,858 --> 00:04:47,823
+I now need to look into that array as my, 
+as my, my ticking clock, you know, my 
+
+71
+00:04:47,823 --> 00:04:52,163
+playHead. 
+Every time playHead gets to zero, I need 
+
+72
+00:04:52,163 --> 00:04:58,100
+to figure out where I am in the array. 
+So, I'm going to need another variable 
+
+73
+00:04:58,100 --> 00:05:03,333
+which is it's going to be called 
+snSeqPos, okay? 
+
+74
+00:05:03,333 --> 00:05:08,055
+So, snSeqPos is going to start off at 0, 
+okay? 
+
+75
+00:05:08,055 --> 00:05:14,447
+Now I'm going to, want to do is every 
+time the the playHead tells me it's time 
+
+76
+00:05:14,447 --> 00:05:20,369
+to, to, to play a sound, I'm going to 
+increase my, my sequence of position by 
+
+77
+00:05:20,369 --> 00:05:27,500
+one. 
+Right, and then, I'm going to check if 
+
+78
+00:05:27,500 --> 00:05:32,473
+its gone too fast, snSeqPos. 
+So, I'll do a check. 
+
+79
+00:05:32,473 --> 00:05:37,061
+If, snSeqPos is equivalent to 
+snSeq.length, so in other words, if I've 
+
+80
+00:05:37,061 --> 00:05:42,241
+got up to four which is a remember from 
+Marco's lectures about arrays that arrays 
+
+81
+00:05:42,241 --> 00:05:48,281
+are zero index. 
+So, we don't want our index to go up over 
+
+82
+00:05:48,281 --> 00:05:54,680
+four and this is our index. 
+so, so we check if it's gone that far. 
+
+83
+00:05:54,680 --> 00:06:01,984
+If it's gone that far then we reset it. 
+Okay, so that, that code there is, if you 
+
+84
+00:06:01,984 --> 00:06:07,444
+like, a simple thing which steps through 
+from zero to three then goes back to zero 
+
+85
+00:06:07,444 --> 00:06:12,500
+again. 
+So, we can just check that code by, by 
+
+86
+00:06:12,500 --> 00:06:19,960
+testing, so let's print line position. 
+And let's print it out, snSeqPos. 
+
+87
+00:06:19,960 --> 00:06:23,725
+Okay, so we should see it going zero, 
+one, two, three, zero, one, two, three. 
+
+88
+00:06:23,725 --> 00:06:26,435
+So, let's run that. 
+Save and run. 
+
+89
+00:06:26,435 --> 00:06:30,976
+[SOUND]. 
+Okay, so you can see that's going, that's 
+
+90
+00:06:30,976 --> 00:06:37,865
+counting zero, one, two, three, and back 
+to zero again. 
+
+91
+00:06:37,865 --> 00:06:41,260
+Okay. 
+So, we've got our in, so we can now use 
+
+92
+00:06:41,260 --> 00:06:45,133
+that to index into the array. 
+So, we go snSeq. 
+
+93
+00:06:45,133 --> 00:06:49,465
+And so, what we're going to do is 
+basically if there's a true value in the 
+
+94
+00:06:49,465 --> 00:06:54,380
+in out sequence there, then we trigger 
+the sound. 
+
+95
+00:06:54,380 --> 00:07:00,644
+So, snare sequence, seq snSeqPos. 
+this is equivalent to true, but we can 
+
+96
+00:07:00,644 --> 00:07:05,464
+actually, we don't need the equivalent 
+true because we can just put it directly. 
+
+97
+00:07:05,464 --> 00:07:09,340
+because remember in an if statement you 
+can put a Boolean directly in there. 
+
+98
+00:07:09,340 --> 00:07:13,306
+But let's make it really explicit. 
+And there's different styles of coding, 
+
+99
+00:07:13,306 --> 00:07:16,342
+some more explicit than others, so let's 
+be really explicit. 
+
+100
+00:07:16,342 --> 00:07:20,527
+and just check if it's true, then we're 
+going to play the snare. 
+
+101
+00:07:20,527 --> 00:07:22,405
+So, remember that beat I mentioned 
+earlier? 
+
+102
+00:07:22,405 --> 00:07:27,952
+So, it was one, two, three, gap, one, 
+two, three, gap. 
+
+103
+00:07:27,952 --> 00:07:31,432
+Okay. 
+So let's see if we can get that -- that 
+
+104
+00:07:31,432 --> 00:07:36,862
+going now. 
+So, I'm going to run it. 
+
+105
+00:07:36,862 --> 00:07:47,415
+[SOUND]. 
+
+106
+00:07:47,415 --> 00:07:50,160
+So, you can hear it's got that gap, but 
+it's too slow so I'm going to speed it 
+
+107
+00:07:50,160 --> 00:07:54,738
+right up. 
+So, I'm actually going to just double my 
+
+108
+00:07:54,738 --> 00:08:02,475
+frame rate and that should speed it up. 
+Okay, let's save. 
+
+109
+00:08:02,475 --> 00:08:12,753
+[SOUND]. 
+
+110
+00:08:12,753 --> 00:08:14,760
+Okay, so the, the rhythm's a little bit 
+irregular. 
+
+111
+00:08:14,760 --> 00:08:16,960
+That's because I'm doing a screen capture 
+at the same time. 
+
+112
+00:08:16,960 --> 00:08:19,720
+So, if you're just running this in a 
+normal browser it should be fine. 
+
+113
+00:08:19,720 --> 00:08:25,360
+And okay, so, so we defined a basic 
+sequencer which we can we can use to 
+
+114
+00:08:25,360 --> 00:08:31,052
+trigger different sounds. 
+So sounds at different times. 
+
+115
+00:08:31,052 --> 00:08:35,340
+Now so the programmer can edit the 
+sequence and make it longer and so on and 
+
+116
+00:08:35,340 --> 00:08:40,280
+you can make a really elaborate rhythm 
+sequence. 
+
+117
+00:08:40,280 --> 00:08:43,909
+And it's obvious that you can also add 
+another Boolean array. 
+
+118
+00:08:43,909 --> 00:08:47,567
+And then you need another another 
+position counter, and then you an add 
+
+119
+00:08:47,567 --> 00:08:51,540
+more and more tracks. 
+So, that will allow you to build a full 
+
+120
+00:08:51,540 --> 00:08:55,028
+multitrack drum machine. 
+And I'll leave you to go and have a go at 
+
+121
+00:08:55,028 --> 00:08:59,159
+doing that, and, and we'll show you a 
+kind of fully worked example later. 
+
+122
+00:08:59,159 --> 00:08:59,550
+[MUSIC]. 

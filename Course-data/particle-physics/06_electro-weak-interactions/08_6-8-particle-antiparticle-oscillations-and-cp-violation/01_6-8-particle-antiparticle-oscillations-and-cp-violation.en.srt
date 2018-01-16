@@ -1,0 +1,549 @@
+1
+00:00:00,098 --> 00:00:10,701
+[MUSIC]
+
+2
+00:00:10,701 --> 00:00:12,925
+In the sixth module we
+are discussing weak interactions.
+
+3
+00:00:12,925 --> 00:00:18,512
+And in this eighth video, we will
+talk about the violation of the CP
+
+4
+00:00:18,512 --> 00:00:25,170
+symmetry between particles and
+antiparticles by weak interactions.
+
+5
+00:00:25,170 --> 00:00:29,620
+After following this video you will
+be able to describe the condition for
+
+6
+00:00:29,620 --> 00:00:34,040
+oscillation between particles and
+antiparticles and their mechanism.
+
+7
+00:00:35,110 --> 00:00:39,830
+And you will be able to explain
+the violation of the joint symmetry CP in
+
+8
+00:00:39,830 --> 00:00:40,980
+the quark sector.
+
+9
+00:00:42,790 --> 00:00:49,710
+The Cabibbo-Kobayashi-Maskawa matrix must
+be unitary but not necessarily real.
+
+10
+00:00:49,710 --> 00:00:54,410
+This allows a non-trivial complex
+phase which cannot be removed
+
+11
+00:00:54,410 --> 00:00:58,060
+by a global rotation in flavor space.
+
+12
+00:00:58,060 --> 00:01:02,007
+The existence of such
+a phase has very important
+
+13
+00:01:02,007 --> 00:01:05,440
+consequences that we will
+discuss in the following.
+
+14
+00:01:06,580 --> 00:01:10,010
+But first a reminder.
+We already saw in video 6.3,
+
+15
+00:01:10,010 --> 00:01:15,740
+that the weak interaction
+maximally violates parity P.
+
+16
+00:01:15,740 --> 00:01:20,250
+A good example is the π+ decay.
+
+17
+00:01:20,250 --> 00:01:27,430
+The dominant decay channel is 
+π+ -> µ+ nu_µ.
+
+18
+00:01:27,430 --> 00:01:31,804
+The neutrino produced in the decay
+must be left-handed because of
+
+19
+00:01:31,804 --> 00:01:34,198
+the structure of the interaction.
+
+20
+00:01:34,198 --> 00:01:39,588
+As the pion is a scalar particle,
+the µ+ must also be left-handed.
+
+21
+00:01:39,588 --> 00:01:42,207
+Which is allowed to the extent
+
+22
+00:01:42,207 --> 00:01:48,420
+that is mass is non-negligible and
+allows it to have the « wrong » helicity.
+
+23
+00:01:48,420 --> 00:01:51,048
+The mirror decay, on the contrary,
+
+24
+00:01:51,048 --> 00:01:56,677
+which will produce µ+ of the 
+« correct » helicity is not observed at all,
+
+25
+00:01:56,677 --> 00:02:02,465
+because the W does not interact
+with right-handed neutrinos.
+
+26
+00:02:02,465 --> 00:02:06,554
+This explains why the decay into
+an electron, π+ goes to electron and a
+
+27
+00:02:06,554 --> 00:02:12,303
+left-handed electron neutrino is so
+much this disfavored,
+
+28
+00:02:12,303 --> 00:02:16,626
+despite it's much larger
+phase space factor.
+
+29
+00:02:16,626 --> 00:02:22,134
+The small mass of the electron requires
+it much more to have the « correct »
+
+30
+00:02:22,134 --> 00:02:26,010
+helicity and thus suppresses
+the amplitude of this process.
+
+31
+00:02:27,350 --> 00:02:32,002
+The decay of the charged pion
+violates at the same time the
+
+32
+00:02:32,002 --> 00:02:34,450
+charge conjugation symmetry C.
+
+33
+00:02:34,450 --> 00:02:39,229
+Under this operation we obtain
+a reaction that is forbidden by the fact
+
+34
+00:02:39,229 --> 00:02:43,927
+that the the W does not couple at
+all to left-handed antineutrinos but
+
+35
+00:02:43,927 --> 00:02:47,640
+only to the right-handed antineutrino.
+
+36
+00:02:47,640 --> 00:02:49,370
+Since the symmetries of C and
+
+37
+00:02:49,370 --> 00:02:55,680
+P are both violated in a maximum
+fashion by charged weak interactions,
+
+38
+00:02:55,680 --> 00:03:01,840
+one might expect that the combined
+symmetry CP will be respected.
+
+39
+00:03:01,840 --> 00:03:05,083
+This is indeed the case in
+the example shown so far.
+
+40
+00:03:05,083 --> 00:03:09,672
+For the pion, it is simple to
+verify that the operation CP
+
+41
+00:03:09,672 --> 00:03:14,355
+converts the π+ decay
+into the π- decay,
+
+42
+00:03:14,355 --> 00:03:18,170
+with the good helicity for the neutrinos.
+
+43
+00:03:18,170 --> 00:03:25,258
+But the bad ones for muons are admitted
+because muons are non-relativistic.
+
+44
+00:03:25,258 --> 00:03:30,200
+This processes are therefore CP
+eigenstates with the same amplitude.
+
+45
+00:03:32,510 --> 00:03:35,136
+But this is not the case for
+
+46
+00:03:35,136 --> 00:03:40,000
+all the inter-generation weak
+processes mediated by the W boson.
+
+47
+00:03:40,000 --> 00:03:46,448
+Let's look at the neutral mesons,
+like K0, which contains a d quark and
+
+48
+00:03:46,448 --> 00:03:52,282
+an sbar quark, or B0, which
+contains a d quark and a bbar quark.
+
+49
+00:03:52,282 --> 00:03:57,481
+These can be converted into their own 
+antiparticle by a second-order process.
+
+50
+00:03:57,481 --> 00:04:00,531
+This reaction is obviously
+only possible for
+
+51
+00:04:00,531 --> 00:04:04,610
+particles that do not
+carry any kind of charge.
+
+52
+00:04:04,610 --> 00:04:09,959
+The pseudoscalar meson K0, for example,
+is an eigenstate of parity but
+
+53
+00:04:09,959 --> 00:04:15,593
+not of charge conjugation because
+this operation changes strangeness.
+
+54
+00:04:15,593 --> 00:04:21,626
+K0 contains an antiquark sbar,
+so it has strangeness plus 1.
+
+55
+00:04:21,626 --> 00:04:26,929
+K0-bar contains a quark s, so
+it has strangeness -1.
+
+56
+00:04:26,929 --> 00:04:32,259
+Therefore neither K0 nor
+K0-bar are eigenstates of CP.
+
+57
+00:04:32,259 --> 00:04:37,229
+But one can construct
+linear combinations, K1 and
+
+58
+00:04:37,229 --> 00:04:40,441
+K2, that are eigenstates of CP.
+
+59
+00:04:40,441 --> 00:04:47,440
+If CP is conserved, it should be these two
+states which decay by weak interactions.
+
+60
+00:04:48,630 --> 00:04:53,220
+If the eigenvalue of CP were
+conserved by weak interaction,
+
+61
+00:04:53,220 --> 00:04:57,990
+the eigenstates K1 and
+K2 will decay by weak forces into final
+
+62
+00:04:57,990 --> 00:05:03,036
+states which contains two pions and
+three pions, respectively.
+
+63
+00:05:03,036 --> 00:05:07,400
+These final states have
+the right CP properties.
+
+64
+00:05:07,400 --> 00:05:09,650
+This is approximately true.
+
+65
+00:05:09,650 --> 00:05:14,408
+The states K1 and K2 are almost
+identical to the particles K0_S and
+
+66
+00:05:14,408 --> 00:05:19,008
+K0_L found in the list
+of the Particle Data Group.
+
+67
+00:05:19,008 --> 00:05:24,280
+Because of the two very different phase
+space factors, one finds that the lifetime
+
+68
+00:05:24,280 --> 00:05:29,300
+of the K0_S is much shorter
+than the one of the K0_L,
+
+69
+00:05:29,300 --> 00:05:31,715
+which explains their name.
+
+70
+00:05:31,715 --> 00:05:36,294
+But their identification 
+K0_S almost equal to K1 and
+
+71
+00:05:36,294 --> 00:05:39,126
+K0_L equal to K2 is not perfect.
+
+72
+00:05:39,126 --> 00:05:42,168
+First, the two masses
+are not quite the same,
+
+73
+00:05:42,168 --> 00:05:44,922
+they differ by some µeV.
+
+74
+00:05:44,922 --> 00:05:49,102
+The mass difference produces
+oscillation between particles and
+
+75
+00:05:49,102 --> 00:05:51,582
+antiparticles in time,
+
+76
+00:05:51,582 --> 00:05:56,252
+because both states are not evolving
+with the same velocity when their energy
+
+77
+00:05:56,252 --> 00:05:57,322
+is the same.
+
+78
+00:05:58,962 --> 00:06:05,084
+Imagine a K1 meson at 
+t = 0 at rest in vacuum.
+
+79
+00:06:05,084 --> 00:06:10,898
+Its wave function evolves according to
+its mass am_1 and width Gamma_1.
+
+80
+00:06:10,898 --> 00:06:16,580
+The probability density to find K1 at time
+t is given by the evolution equation for
+
+81
+00:06:16,580 --> 00:06:18,265
+free particles.
+
+82
+00:06:18,265 --> 00:06:23,850
+The same reasoning is valid for K2 but
+with mass m_2 and width Gamma_2.
+
+83
+00:06:23,850 --> 00:06:27,630
+Since the strong interaction conserve
+flavors, including strangeness,
+
+84
+00:06:27,630 --> 00:06:32,110
+the state produced by strong
+interaction will have a definite
+
+85
+00:06:32,110 --> 00:06:36,550
+strangeness, like K0 or K0-bar.
+
+86
+00:06:36,550 --> 00:06:40,910
+If one produces, for instance,
+a K0 at t = 0,
+
+87
+00:06:40,910 --> 00:06:45,060
+we'll have a mixture of equal
+quantities of K1 and K2 at that time.
+
+88
+00:06:47,120 --> 00:06:49,960
+Now the two components
+are evolving differently
+
+89
+00:06:49,960 --> 00:06:53,220
+because of the small
+mass difference ∆m.
+
+90
+00:06:53,220 --> 00:06:57,620
+At a later time t,
+we therefore find a different mixture.
+
+91
+00:06:57,620 --> 00:07:03,627
+If we thus measure the strangeness
+of the state as a function of time,
+
+92
+00:07:03,627 --> 00:07:08,598
+for example by a stronger interaction,
+we find that it
+
+93
+00:07:08,598 --> 00:07:15,010
+oscillates between K0 and
+K0-bar with the frequency ∆m.
+
+94
+00:07:15,010 --> 00:07:20,361
+So far the combined symmetry
+CP is still respected.
+
+95
+00:07:20,361 --> 00:07:25,104
+But one finds that
+the long-lived particle,
+
+96
+00:07:25,104 --> 00:07:29,238
+K0_L, which is almost equal to K2,
+
+97
+00:07:29,238 --> 00:07:34,850
+has a low probability to decay into π+ π-, 
+a state which has the wrong CP eigenvalue. 
+
+98
+00:07:36,530 --> 00:07:42,010
+One must thus admit that K0_L also
+contains a small amplitude of K1.
+
+99
+00:07:43,300 --> 00:07:48,409
+The coefficient epsilon
+is 2.3 10^-3,
+
+100
+00:07:48,409 --> 00:07:51,700
+which is certainly small, but not 0.
+
+101
+00:07:51,700 --> 00:07:55,840
+Consequently, charged weak
+interaction violates also
+
+102
+00:07:55,840 --> 00:07:59,500
+the combined symmetry CP,
+but only a little bit.
+
+103
+00:08:00,710 --> 00:08:04,969
+This means that the amplitudes
+of charged weak interaction for
+
+104
+00:08:04,969 --> 00:08:08,276
+matter and
+antimatter are slightly different.
+
+105
+00:08:08,276 --> 00:08:13,110
+So nature has therefore foreseen
+an objective way to distinguish them.
+
+106
+00:08:14,420 --> 00:08:18,126
+A complex phase in
+the Cabibbo-Kobayashi-Maskawa
+
+107
+00:08:18,126 --> 00:08:22,899
+matrix allows to introduce this
+little asymmetry in the mixing of quark
+
+108
+00:08:22,899 --> 00:08:26,160
+states involved in weak interactions,
+
+109
+00:08:26,160 --> 00:08:31,192
+with a phase angle theta,
+which is about 45 degrees.
+
+110
+00:08:31,192 --> 00:08:37,010
+This describes the phenomenon using
+the CKM matrix, but does not explain it.
+
+111
+00:08:38,160 --> 00:08:44,188
+CP violation in weak interaction
+is a subject of active current
+
+112
+00:08:44,188 --> 00:08:49,256
+research both in the kaon sector and
+in the B0 sector.
+
+113
+00:08:49,256 --> 00:08:54,363
+The next video will discuss
+neutrino interactions
+
+114
+00:08:54,363 --> 00:09:00,693
+which are among the most rare
+processes in particle physics.
+
+115
+00:09:00,693 --> 00:09:04,389
+[MUSIC]

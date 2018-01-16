@@ -1,0 +1,99 @@
+[SOUND] Hello this is week six of Interactive Computer Graphics. And the topic we'll discuss
+here is Computer-aided Design. So, computer-aided design is a process
+of designing products using computers. And today, almost all products
+are designed using computers. Starting from home electronics or
+garments, or cars, and houses. Everything is designed using a computer. And physics,
+plays an important role in here, and physics simulation is already
+heavily used in the design. However, in most cases currently,
+physics analysis is done after modeling. So a user or designers design a model and
+the modelers calibrate model. And only after that, the model is
+transported into the physical simulation system, and then, so people will analyze
+the property like collision, friction, material property, gravity and so on. And if there's a problem,
+go back to the design. So, but this is useful for
+testing the validity afterwards, but this is not very good for actively
+use physics into the design process. So what we try to do here, is to integrate
+real-time physics into modeling. So, so currently 3D model ignore physics. Just specify x, y, z coordinates and shapes, but
+here in the system we introduce here. Are all integrates, 3D of physical
+assimilation into the modeling process, so as user generates a model, of physical
+assimilation automatically checks validity and then provides feedbacks. So that's the basic idea. And then we will show a couple
+of example systems here. So, this is a list of topics
+we're discussing this week. So one is cantilever design for
+architecture. And design with music [INAUDIBLE]
+noble musical instruments and garment design, furniture design and
+finally hobby glider design. So the first one is cantilever design. So this one is called responsive FEM,
+Finite Element Method, for aiding interactive geometric modeling. So the program we want today, discuss here is design of a,
+physical with physical constraint. Here, as an example is
+a cantilever design. Suppose you have a vertical wall here. And they have a horizontal
+steel bar attached to the wall. So originally,
+the steel bar is connected vertically com, completely horizontally,
+perpendicular to the wall. But after construction,
+if you release your hand, support material,
+gravity pulls the steel downwards. So, this is of course exaggerated. But in reality,
+there's always a deformation. So the goal is to find the shape that di, ended in a completely flat horizontal
+shape, after applying gravity. So this is kind of
+difficult inverse problem. A traditional approach is to run
+physical simulation after modeling. So, use a space for the rest shape and then physical simulation
+predicts what happens. Looking at the result, user go back to the
+design phrase, and adjusts the shape and they go to a simulation. Now this kind of back and
+forth interaction is not very efficient. So what we propose is to run physical
+simulation during modeling, specifically, while the user is dragging one by one. System should continuously
+provides feedback. This way, you can just know
+when to release dragging. So let me show you a demonstration. So here is a demonstration. So left side is original rest shape. Then right side is after the gravity,
+is applied. And here, the simulation is continuous,
+as a user. So this is so natural, so smooth, it's
+very hard to see, but hard to appreciate. But, as a user drags a system continuously
+physical simulation and continuously presenting the deformed shape, after
+physical simulation, it's very, very fast. So as a user change, the position
+system continuously updates lines many, many simulations. And the it shows a simulation result. So it's so fast and so smooth, so user actually looking at
+this simulation result, while dragging. So simulation result is satisfactory,
+these are just stop dragging, and you'll get the desired result. So, that's the result, and the other one that we use here is
+a standard finite element simulation. So finite element simulation is to divide
+the domain, shape into small regions. In this case triangle regions. And then compute physical equations
+on this matrix on these systems. On the internally, this is a kind of many, many it's internally
+essentially it solves. Huge linear equations, and
+actually handling matrices. And in order to accelerate this
+computation in this kind of direct manipulation editing,
+what we use, what we use is here. Reusing of intermediate
+computation results. So, traditionally it's too slow to hm, run this kind of physi,
+simulation from scratch each, each frame. But in this example,
+in this modeling task, you know, you have the previous step for
+simulation result. And compared to the previous simulation
+result, [INAUDIBLE] only a slight change, you know? Dragging single bar this,
+the change is very small. So you can reuse most of
+the previous computation. So that's a topic trick we use, we use. Now, this is a little bit more details. So, of course it's not possible
+to explain everything, because we skipped the exponential
+finite element measure. It's a little bit complicated. But still, you can get the general idea. So left hand side uses a coefficient
+matrix a, reconditioned matrix x. So, we do not describe
+details about these other ma, matrix structure we use in
+the computation of this simulation. And also, matrix has a value list and
+their structure, and the body list, and structure. So these information
+are heavily used in the system. And construction,
+of this information is time consuming. So in the idle time, nothing happened, so
+we can reuse old intermediate structure. And in the during dragging, we divided
+the dragging depending with the distance. When the dragging operation is very small,
+very small relocation, then what's the system is do just
+updates the mash-mish vertices. And almost all information will be used. As a user drags more and more, then,
+simple vertex relocation doesn't work, so system tries the update,
+while it finds a topology. But after a while, if the deformation
+still rise, then simple relocation and simple topology changes nothing there,
+so system re, reconstructs So this is what is happening,
+behind the scene, in this example. And internally,
+if the relocation is very small. Then only, system only,
+recomputes a value list of its matrix A. And if you change the topology,
+you have to refresh all the coe, coef, coefficient matrix A. But you can reuse
+the pre-condition matrix B. But after the reconstruction
+everything is re-computed. So this is equivalent to [INAUDIBLE]
+simulation from scratch. But this happens very rarely. So this is a very short section, but summary is to introduce cantilever design
+with concurrent physical simulation. So you can change the shape while
+watching a simulation result. And internally, most important point
+is that we apply multi-level reuse, of intermediate computation result. More specifically internal large matrixes,
+matrices. For efficient computation. So original paper is available
+as Responsive FEM for Aiding Interactive Geometric Modeling. We discussed many other
+examples too there. And finite element method is an est,
+established method and there are many textbooks. One example is this one,
+the finite element method. It's basis on the fundamentals. And structural optimization is often
+discussed in computer graphics. One example is this one. A procedure modeling of structurally
+sound masonry buildings. So this one is the kind of
+physics aware 3D modeling. However, there is also just
+automatic optimization, and did not discuss interme not bring
+the feedback to end user manipulation. Thank you.

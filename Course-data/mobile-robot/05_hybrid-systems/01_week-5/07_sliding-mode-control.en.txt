@@ -1,0 +1,80 @@
+Last time we saw that not only we have to 
+worry about Zeno. This zeno problem or the zeno phenomenon 
+comes in two different flavors. And one thing that I stated was that type 
+1 zeno which is infinitely many switches in zero time or in one timing sense here 
+represented by this system where. Again, if I have x here, and time here, 
+and I start positive, then x is going to be -1 until x becomes, just, just 
+negative. And then, we're going to get this 
+infinitely many switches going on right there. 
+that's type 1. Well, it turns out, that we can actually 
+remedy this. And the reason for it is, you know what 
+is very, very clear what should happen. The system shouldn't grind to a halt. 
+It should just nicely keep continuing on like this 
+Like x is equal to 0. So how do I take this intuitive notion of 
+that x should just keep saying and be equal to 0 and make that mathematically 
+sound. What, what's the topic of today's 
+lecture, and this construction by which we can continue beyond the zeno point in 
+the type 1 zeno system, using something that's known as. 
+Sliding mode control. So, let's be a little bit general here. 
+Let's say that I have one system, x dot is f1(x) and then I have a switching 
+surface, g(x). And when g is negative, I switch to f 
+two, and when it becomes positive I switch back to f1. 
+So here it is, here's my switching surface, g(x) = 0, that's where the 
+action is. Now on this side I'm going to be using 
+f1, and da, da, da, da, da, da, da, when I hit this point, well let's say that f1 
+is pointing inwards. Well on this part of the world I am going 
+to be using f2. Well, let's say that f2 here points 
+outwards. This means that when I hit this point 
+again, I grind to a halt. so this is really what's going on is that 
+both of the vector fields both f1 and f2 point in the wrong direction. 
+So f1 points over in to the f2 territory. f2 points over in the f1 territory, but 
+again it's clear what should really happen. 
+We should somehow slide along the switching surface here. 
+That's clear because f1 and f2 are pulling in different directions and this 
+is why it's known as sliding mode control because what we do is we slide along the 
+switching surface. So let's see how to actually make this 
+sliding happen. Again, I have g positive on this side, g 
+negative on this side, and the switching surface is g = 0. 
+f2 wants to drive me in this direction, and f1 wants to drive me in this 
+direction. I want to slide along the surface. 
+That should be the right solution. Well first of all what are the conditions 
+under which I'm going to slide. Well f2 needs to point in the positive 
+direction of g because on this side g is positive. 
+So what I'm going to do is I'm going to find this thing, the vector that's normal 
+to the switching surface and it turns out that luckily for us this is the gradient. 
+The partial derivative of g with respect to x, transpose. 
+And now I take what's called the inner product, so, with this thing and this 
+thing. So the inner product is just a 
+multiplication. and if this inner product is positive, it 
+means that this one and this one are pointing. 
+in the same direction. I also take the inter-product with this 
+and that, and if the inter-product is negative, it means that they're pointing 
+in, in different directions. So what this means is I actually have a condition for 
+sliding. I need dg the x, where this is actually 
+dg, dx1, blah, blah, blah, blah, blah, dg, the xn a roll vector like this times 
+f1, well f11 to f1n, 'cause these are all vectors. 
+If this is negative, that is code for having this arrow and this arrow pointing 
+in different directions. So, f1 points into negative g territory. 
+f2 points into positive g territory. if this happens at the switching surface, 
+then we have sliding. And, one way we can think about this 
+object here, it's the derivative of g, in the direction f1. 
+And this is the derivative of g in the direction f2, and there's actually a 
+fancy term for this. it's called the Lie derivative. 
+So the derivative of G in the direction f, we're going to write this Lfg which is 
+simply code for dg/dx * f. So when I write Lfg, this is what I mean. 
+It's the lead derivative of g in the direction of f. 
+So, using our slightly fancier notation we know that sliding occurs. 
+Meaning we should slide if the derivative, g, in the f1 direction is 
+negative, which, again, means this and this have different directions, and the 
+derivative of g in the f2 direction is positive, which means this and this have 
+the same signs meaning they point in the same, in the same directions. 
+So this actually tells us whether or not we have sliding and wallah, we actually 
+have a test for type 1 zeno that says that sliding occurs. 
+If Lf1g is negative and Lf2g is positive, and this is at g(x) = 0 so this is along 
+the switching surface when we're inside the different mode regime. 
+We don't have to worry about this. But on the switching surface, 
+this our zeno type 1 probe that we have to use to see whether or not we slide. 
+And this nice because this is something that's easily implemented. 
+We still don't know what actually happens beyond the zeno point, meaning, how do we 
+slide. And that is going to be the topic of next 
+lecture.

@@ -1,0 +1,471 @@
+1
+00:00:06,467 --> 00:00:09,778
+So good, analytic one,
+this is pretty straightforward.
+
+2
+00:00:09,778 --> 00:00:13,070
+Actually, you do something on
+this in the homeworks, as well.
+
+3
+00:00:13,070 --> 00:00:15,990
+So if we have torque free motion,
+we've assumed the principal frame.
+
+4
+00:00:15,990 --> 00:00:17,640
+These are the three equations you have.
+
+5
+00:00:17,640 --> 00:00:21,370
+The only thing I've dropped was the l1,
+2, 3, there's no external torque.
+
+6
+00:00:21,370 --> 00:00:25,690
+So this is a pure spin, you take an
+object, and you spin it up, what happens?
+
+7
+00:00:25,690 --> 00:00:30,726
+But in particular now,
+we want to look at an axisymmetric case.
+
+8
+00:00:30,726 --> 00:00:33,510
+So here we're going to
+assume this diagonal still.
+
+9
+00:00:33,510 --> 00:00:37,620
+And if we assume it's axisymmetric,
+like a cylinder, rocket bodies.
+
+10
+00:00:37,620 --> 00:00:41,090
+Many spacecraft kind of have axisymmetry
+just to coming out of the launch vehicle,
+
+11
+00:00:41,090 --> 00:00:42,570
+to have to get through the atmosphere.
+
+12
+00:00:42,570 --> 00:00:44,590
+So it is a common shape assumption.
+
+13
+00:00:44,590 --> 00:00:49,580
+We picked b1, b2 to be a transverse and
+then b3 is the axis of symmetry.
+
+14
+00:00:49,580 --> 00:00:53,380
+So I1 and I2 have to be equal,
+I'm just calling it It, right?
+
+15
+00:00:53,380 --> 00:00:55,630
+Those are the two transverse axes.
+
+16
+00:00:55,630 --> 00:01:00,640
+If you do that, and plug it in,
+the last one that was I2 minus I1, or
+
+17
+00:01:00,640 --> 00:01:03,600
+I1 minus I2, that's going to go to 0.
+
+18
+00:01:03,600 --> 00:01:05,735
+So immediately we have an omega 3 dot.
+
+19
+00:01:05,735 --> 00:01:08,940
+Whatever spin you give it
+about the axis of symmetry,
+
+20
+00:01:08,940 --> 00:01:11,070
+that spin rate just stays a flat line.
+
+21
+00:01:11,070 --> 00:01:12,299
+Doesn't change.
+
+22
+00:01:12,299 --> 00:01:15,039
+The other two will actually change and
+
+23
+00:01:15,039 --> 00:01:19,576
+they are the function of the inertia
+about the symmetry axis and
+
+24
+00:01:19,576 --> 00:01:24,560
+the transverse inertia, and
+of course, initial conditions.
+
+25
+00:01:24,560 --> 00:01:28,560
+So now we have two equations and
+two unknowns.
+
+26
+00:01:28,560 --> 00:01:33,396
+This one falls out because omega 3 dot,
+that makes omega 3 a constant.
+
+27
+00:01:33,396 --> 00:01:36,760
+That means up here omega 3 is
+simply the initial omega 3.
+
+28
+00:01:36,760 --> 00:01:40,919
+It's no longer not known, it's a known
+quantity by initial conditions.
+
+29
+00:01:40,919 --> 00:01:42,464
+So, we're left with omega 1, and
+
+30
+00:01:42,464 --> 00:01:45,860
+omega 2 and we've got two first
+order differential equations.
+
+31
+00:01:45,860 --> 00:01:48,297
+How do we solve this?
+
+32
+00:01:48,297 --> 00:01:51,083
+This is one of the cases when you're
+trying to solve these things,
+
+33
+00:01:51,083 --> 00:01:52,340
+you try to get rid of the dots.
+
+34
+00:01:53,350 --> 00:01:57,252
+And the easiest path is not to get rid of
+the dots is actually to add more dots and
+
+35
+00:01:57,252 --> 00:01:59,848
+that gives you an answer
+that we can find in the end.
+
+36
+00:01:59,848 --> 00:02:03,950
+If I differentiate this equation this
+is shouldn't be bold actually, unbold.
+
+37
+00:02:03,950 --> 00:02:05,330
+But just take the dots.
+
+38
+00:02:05,330 --> 00:02:06,364
+Inertia is a constant.
+
+39
+00:02:06,364 --> 00:02:11,420
+Omega 2, omega 3's a constant, so there's
+no omega 3 dot, but omega 2 could vary.
+
+40
+00:02:11,420 --> 00:02:16,650
+You can see omega 1 only depends on
+omega 2, and if I go back a slide,
+
+41
+00:02:16,650 --> 00:02:21,970
+the omega 2 dot only depends on omega 1,
+again, treating omega 3 as a constant.
+
+42
+00:02:21,970 --> 00:02:28,623
+So if I differentiate 1, I now get
+an omega 2 dot, which depends on omega 1.
+
+43
+00:02:28,623 --> 00:02:32,752
+And you can plug that in and
+you end up with this equation,
+
+44
+00:02:32,752 --> 00:02:37,850
+that's omega 1 double dot plus
+something times omega 1 equal to 0.
+
+45
+00:02:37,850 --> 00:02:39,096
+Which for engineers, like yes,
+
+46
+00:02:39,096 --> 00:02:41,419
+I knew there'd be a spring-mass
+system somewhere, right.
+
+47
+00:02:41,419 --> 00:02:43,360
+This is a typical spring-mass system.
+
+48
+00:02:43,360 --> 00:02:47,770
+You know how to find these answers, and
+they will give you the typical sines and
+
+49
+00:02:47,770 --> 00:02:48,875
+cosine results.
+
+50
+00:02:48,875 --> 00:02:53,143
+So, x double dock + kx can you
+solve that differential equation?
+
+51
+00:02:53,143 --> 00:02:56,885
+That's what it boils down to,
+for an axis symmetric case.
+
+52
+00:02:56,885 --> 00:02:59,105
+You can do the same things for omega 2,
+
+53
+00:02:59,105 --> 00:03:02,672
+it gives you the same kind of
+a constant Inertia's a constant,
+
+54
+00:03:02,672 --> 00:03:07,170
+omega 3 is a constant, so all of this
+is nothing but k in the end, right?
+
+55
+00:03:07,170 --> 00:03:09,229
+If you did a spring-mass analogy.
+
+56
+00:03:09,229 --> 00:03:12,374
+So for axi-symmetric cases,
+it's easy to do.
+
+57
+00:03:12,374 --> 00:03:15,395
+Then, I think in the homework
+you do this yourself.
+
+58
+00:03:15,395 --> 00:03:19,817
+Show me that you remember how to solve
+simple first order differential equations.
+
+59
+00:03:19,817 --> 00:03:22,742
+You plug in the conditions,
+come up with these coefficients.
+
+60
+00:03:22,742 --> 00:03:24,703
+And this one here is called omega p.
+
+61
+00:03:24,703 --> 00:03:27,820
+I can rewrite it, and so
+now it has to do with this.
+
+62
+00:03:27,820 --> 00:03:32,555
+What's interesting here is is I3 is for
+example less than IT.
+
+63
+00:03:32,555 --> 00:03:33,620
+That's this kind of stuff.
+
+64
+00:03:33,620 --> 00:03:37,010
+The inertia about the transverse on this
+pen is much bigger than the inertia about
+
+65
+00:03:37,010 --> 00:03:39,000
+the symmetry axis all right.
+
+66
+00:03:39,000 --> 00:03:42,707
+So in that case this is
+a ratio less than 1 minus 1,
+
+67
+00:03:42,707 --> 00:03:46,261
+it's going to give you
+omega 3 which is positive.
+
+68
+00:03:46,261 --> 00:03:49,260
+That's going to give you
+now a negative omega p.
+
+69
+00:03:50,580 --> 00:03:54,321
+We saw on the pole hold plus
+does momentum spheres and
+
+70
+00:03:54,321 --> 00:03:59,252
+energye lipsoids if I'm doing a spin
+near the axis of least inertia,
+
+71
+00:03:59,252 --> 00:04:03,370
+that was the i-3 axis, so
+those wobbles up there.
+
+72
+00:04:03,370 --> 00:04:07,670
+We would be orbiting in a negative sense,
+and that comes from the sine right here.
+
+73
+00:04:07,670 --> 00:04:14,070
+If we have I3 being the axis of largest
+inertia, so we have just a plate.
+
+74
+00:04:14,070 --> 00:04:18,174
+Think of a big, flat plate basically
+spinning, right, and you're off slightly.
+
+75
+00:04:18,174 --> 00:04:22,843
+Now I3 is actually, so it's oproid body,
+I3's bigger than the transverse inertia,
+
+76
+00:04:22,843 --> 00:04:26,390
+and this becomes more than 1,
+then -1 is still positive.
+
+77
+00:04:26,390 --> 00:04:30,617
+That's why there we saw those curves
+orbiting in a positive sense.
+
+78
+00:04:30,617 --> 00:04:34,111
+But this is the classic
+answer that you have for
+
+79
+00:04:34,111 --> 00:04:38,310
+a rigid body, no torques,
+but it's axis symmetric.
+
+80
+00:04:38,310 --> 00:04:42,020
+So we make that one assumption,
+and this is just a classic result.
+
+81
+00:04:42,020 --> 00:04:43,280
+Make sure you can derive this.
+
+82
+00:04:43,280 --> 00:04:44,880
+This is pretty straightforward.
+
+83
+00:04:44,880 --> 00:04:46,960
+Here are some answers.
+
+84
+00:04:46,960 --> 00:04:50,740
+If you integrate the equations, you
+would see, just using those differential
+
+85
+00:04:50,740 --> 00:04:56,280
+equations we talked, i omega dot plus
+omega ~ i omega equal to 0, in this case.
+
+86
+00:04:56,280 --> 00:05:00,990
+And you integrate this stuff, you would
+get these curves, which then show you yes,
+
+87
+00:05:00,990 --> 00:05:06,730
+as predicted, I get a sine Like curve with
+the face shift, or a cosine in some cases.
+
+88
+00:05:06,730 --> 00:05:09,440
+And you get [INAUDIBLE] in omega.
+
+89
+00:05:09,440 --> 00:05:11,190
+That's for the rates.
+
+90
+00:05:11,190 --> 00:05:14,852
+If you do the attitude motion,
+this is the same thing.
+
+91
+00:05:14,852 --> 00:05:17,920
+I'm just showing here all your angles.
+
+92
+00:05:17,920 --> 00:05:19,240
+Again, people, try to be diverse.
+
+93
+00:05:19,240 --> 00:05:20,673
+Something non-MRP.
+
+94
+00:05:20,673 --> 00:05:22,510
+We'll get to those a lot more later.
+
+95
+00:05:22,510 --> 00:05:26,858
+So what happens is, the attitude
+motion is very difficult to predict.
+
+96
+00:05:26,858 --> 00:05:28,950
+So for torque-free motions,
+
+97
+00:05:28,950 --> 00:05:32,630
+the parts that are easy are the spin
+parts with this equation.
+
+98
+00:05:32,630 --> 00:05:37,340
+And we can predict spin stability, but we
+don't necessarily have pointing stability.
+
+99
+00:05:37,340 --> 00:05:38,560
+That's a whole nother thing.
+
+100
+00:05:38,560 --> 00:05:40,526
+And we'll get to that
+in three-axis control.
+
+101
+00:05:40,526 --> 00:05:45,728
+But if you need spin stability, that's
+where these kinds of analysis really help.

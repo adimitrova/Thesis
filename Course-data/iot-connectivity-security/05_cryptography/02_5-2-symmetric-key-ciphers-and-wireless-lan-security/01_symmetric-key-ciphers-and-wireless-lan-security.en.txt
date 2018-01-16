@@ -1,0 +1,65 @@
+[MUSIC] Hello, welcome back. In this lesson, we will learn about
+common security approaches and protocols for
+wireless local area networks. These approaches are based on
+symmetric key cryptography. Wireless local area network,
+Wireless LAN, or Wi-Fi provides more flexibility
+in setting up a network system. In a cyber physical system, which may
+include a very large number of sensors and actuators Wi-Fi or some other wireless technology is the most
+practical means of communication, because of its cost efficiency and easier
+integration with other network components. However, it can be the most
+vulnerable component of a system, if it's not securely implemented. As information is transmitted through
+the air, an attacker has potentially better chances to intercept the
+transmission and capture sensitive data. Wired Equivalence Privacy or
+WEP is a cryptographic security protocol, which was included in the I triple
+E 802.11 wireless standard in 1999. WEP provides wireless security by
+simulating physical access controls. However, WEP is a weak method,
+and its password can be broken in a few minutes
+using available hacking tools. WEP uses Rivest Cipher 4 or RC4 stream cipher for encryption. WEP was implemented in three
+version with different key sizes. In each version, a 24 bit random or
+pseudorandom initialization vector IV is contaminated with the key
+to generate the RC4 keystream. RC4 is a simple and
+fast bit-oriented stream cipher, which has demonstrated many
+significant vulnerabilities. For this reason, WEP standard is not used
+anymore for secure wireless communication. In order to address the problems
+caused by the weaknesses of WEP, that is to improve the security of Wi-Fi, an I triple E draft standard was
+developed and named 802.11i. In it's 2003 version,
+the Wi-Fi Protected Access protocol or WPA was introduced as a more
+secure replacement for web. Like WEP, also WPA uses the RC4
+stream cipher for encryption. However in WPA
+a Temporal Key Integrity Protocol or TKIP uses the hash function to
+mix the initialization vector, IV with a preshared key rather than
+simply concatenating them like WEP. This reduces the effectiveness
+of the related key attacks. For further assurance, the size of
+an initialization vector is doubled from 24 bits to 48 bits. Meaning, in practice, that the reuse time
+of an initialization vector increased from a few hours of WEP
+to a few hundred years. Moreover, by implementing
+a packet sequence number, WPA provides protection
+against reply attacks. It also provides a stronger message
+integrity check called Michael compared to WEP, which uses basic CRC or
+cyclic redundancy check. WPA uses the same hardware as WEP for
+encryption in the access points. Despite its features also WPA suffers
+from many security vulnerabilities and is currently considered
+an unsecure protocol for Wi-Fi. This the block diagram
+of the WPA protocol. As we discussed earlier, WPA offers
+better security compared to WEP, by using a hash function for
+mixing pre-shared keys and initialization vectors, devising
+a sequence counter to avoid reply attacks, and using a better data
+integrity check algorithm. Because of the vulnerabilities
+of the WPA protocol, a new security protocol called
+WPA2 was introduced in the 2004 version of the I triple E
+draft standard 802.11i. It provides strong security for Wi-Fi. WPA2 is based is based on
+a new encryption method called Counter Mode Cipher Block Chaining Message
+Authentication Code Protocol or CCMP, which uses
+the Advanced Encryption Standard, AES. AES is a proven strong block cipher, which was published in 2001 by National
+Institute of Standards and Technology. It is still widely used. Hardware implementation of WPA2 requires additional components in wireless devices, because unlike WPA,
+it cannot utilize WEP hardware. Both WPA and WPA2 offer two authentication
+modes, personal and enterprise. In the personal authentication mode,
+a pre-shared key is used as a password. Hence, they are vulnerable
+to weak passwords. In the enterprise mode,
+a more advanced authentication called extensible authentication protocol or
+EAP is used. You can easily find further
+information on WPA2, its related protocols and
+authentication modes in the Internet. In this lesson, we learned about different
+wireless LAN security mechanisms, and more specifically we learned about WEP,
+WPA and WPA2 protocols. In the next video lecture, we will have
+a closer look at public key cryptography. [SOUND]

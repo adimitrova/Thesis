@@ -1,0 +1,654 @@
+1
+00:00:00,012 --> 00:00:05,566
+The punchline with the previous lecture 
+was the POS, meaning position and 
+
+2
+00:00:05,566 --> 00:00:12,067
+heading, is central in a lot of different 
+situations. and we made the claim that, 
+
+3
+00:00:12,067 --> 00:00:17,309
+other POS-based models, like cars or 
+underwater gliders, or other kinds of 
+
+4
+00:00:17,309 --> 00:00:20,441
+autonomous vehicles, can be made to look 
+like a unicycle. 
+
+5
+00:00:20,441 --> 00:00:24,508
+Today, I want to make this observation 
+precise and concrete by looking at the 
+
+6
+00:00:24,508 --> 00:00:27,497
+car-like robots. 
+So, for instance, there's a picture of 
+
+7
+00:00:27,497 --> 00:00:30,892
+our autonomous car out of Georgia Tech. 
+And the question is, 
+
+8
+00:00:30,892 --> 00:00:36,075
+how do we make this thing look like a 
+unicycle? Well, the first thing we need 
+
+9
+00:00:36,075 --> 00:00:39,626
+is a model. 
+And the standard car kinematics is to add 
+
+10
+00:00:39,626 --> 00:00:43,645
+another state to the system, which is the 
+steering handle. 
+
+11
+00:00:43,645 --> 00:00:46,650
+So here is the picture that we have in 
+mind. 
+
+12
+00:00:46,650 --> 00:00:52,007
+The, the rear wheel wheels are just 
+pointing in whatever direction the car is 
+
+13
+00:00:52,007 --> 00:00:56,650
+going which it or the car is facing, 
+which is the orientation phi. 
+
+14
+00:00:56,650 --> 00:01:01,688
+The position of the car, well, we're 
+going to take this point which is in the 
+
+15
+00:01:01,688 --> 00:01:06,874
+middle in between the front wheels. 
+And this distance here is going to be l. 
+
+16
+00:01:06,874 --> 00:01:10,183
+So, the rear wheels are l away from the 
+front wheels. 
+
+17
+00:01:10,183 --> 00:01:14,967
+And then, we have this angle which we're 
+going to call psi. 
+
+18
+00:01:14,967 --> 00:01:20,842
+So, what we're actually going to end up 
+doing is moving the car in this 
+
+19
+00:01:20,842 --> 00:01:24,917
+direction. 
+And the direction then is psi+phi. 
+
+20
+00:01:24,917 --> 00:01:28,285
+So, if we make this observation into a 
+model, 
+
+21
+00:01:28,285 --> 00:01:32,657
+we first see that the states are x, y, 
+phi, and psi steering angle. 
+
+22
+00:01:32,657 --> 00:01:35,695
+The inputs now that we're going to have 
+are, 
+
+23
+00:01:35,695 --> 00:01:39,721
+as before, the speed. 
+How quickly is the car going? And, how 
+
+24
+00:01:39,721 --> 00:01:44,141
+fast are we turning the steering wheel? 
+I'm going to call this sigma. 
+
+25
+00:01:44,141 --> 00:01:47,918
+Angular steering velocity, or steering 
+angle velocity. 
+
+26
+00:01:47,918 --> 00:01:52,294
+The model then becomes, 
+well, x-dot and v-dot is as before v 
+
+27
+00:01:52,294 --> 00:01:55,627
+cosin and then the direction we're going 
+in. 
+
+28
+00:01:55,627 --> 00:01:59,287
+But the direction we're going in is now 
+psi+phi. 
+
+29
+00:01:59,287 --> 00:02:04,929
+Then, we have an equation that relates 
+the steering angle and the velocity to 
+
+30
+00:02:04,929 --> 00:02:09,588
+the heading of the car. 
+And then, the last component is that we 
+
+31
+00:02:09,588 --> 00:02:16,472
+can immediately influence the velocity of 
+the steering angle, so how quickly are we 
+
+32
+00:02:16,472 --> 00:02:19,302
+turning the, the wheel. 
+Okay, good. 
+
+33
+00:02:19,302 --> 00:02:25,639
+Now, what we're going to do is pick sigma 
+and v in a clever enough way to make this 
+
+34
+00:02:25,639 --> 00:02:30,719
+thing become a unicycle. 
+Well, let's start then with the unicycle 
+
+35
+00:02:30,719 --> 00:02:33,912
+itself. 
+So, this is our car model. Well, let's 
+
+36
+00:02:33,912 --> 00:02:39,172
+start with our unicycle model and do 
+something called curvature control. 
+
+37
+00:02:39,172 --> 00:02:44,637
+So, what this means is that if I want to 
+drive along a particular circular arc, 
+
+38
+00:02:44,637 --> 00:02:47,782
+let's say that the radius of the arc is 
+raw. 
+
+39
+00:02:47,782 --> 00:02:51,952
+And here's the car, it's going, sorry, 
+the unicycle it's going, do, do, do, do, 
+
+40
+00:02:51,952 --> 00:02:56,447
+do, right? This is the direction in which 
+it's going so the orientation in the 
+
+41
+00:02:56,447 --> 00:03:00,697
+unicycle, this angle is just phi. 
+Well, here's alpha and simple geometry 
+
+42
+00:03:00,697 --> 00:03:02,277
+tells me that alpha is just phi minus pi 
+over 2. 
+
+43
+00:03:03,692 --> 00:03:07,181
+Okay. 
+If I'm describing how this thing is 
+
+44
+00:03:07,181 --> 00:03:12,861
+evolving along a circular arc, 
+then I get, for instance, that the x 
+
+45
+00:03:12,861 --> 00:03:17,865
+position is simply, 
+let's say that the center of the circle 
+
+46
+00:03:17,865 --> 00:03:23,078
+is x0, y0. 
+Then, x is simply x0 + rho cosine alpha. 
+
+47
+00:03:24,412 --> 00:03:29,502
+But because alpha is phi minus pi over 2, 
+I can write this is x dot plus rho sine 
+
+48
+00:03:29,502 --> 00:03:31,997
+alpha, 
+thanls to one of my favorite 
+
+49
+00:03:31,997 --> 00:03:36,972
+trigonometric identities. 
+Well, if I take the derivative of this 
+
+50
+00:03:36,972 --> 00:03:42,802
+with respect to time, I get that, well, 
+this thing the derivative of that is 
+
+51
+00:03:42,802 --> 00:03:46,098
+zero. 
+The time derivative of this, 
+
+52
+00:03:46,098 --> 00:03:51,985
+phi dot is equal to omega. 
+So, my x dot becomes omega rho cosine 
+
+53
+00:03:51,985 --> 00:03:54,265
+phi. 
+But, wait a second. 
+
+54
+00:03:54,265 --> 00:03:58,592
+I know what x dot is, 
+it's v cosine phi because it's a 
+
+55
+00:03:58,592 --> 00:04:03,027
+unicycle. 
+So now, these two expressions have to be 
+
+56
+00:04:03,027 --> 00:04:07,576
+the same. 
+Which means that the radius of the circle 
+
+57
+00:04:07,576 --> 00:04:12,622
+is v over omega. 
+Now, a lot of times, we care about what's 
+
+58
+00:04:12,622 --> 00:04:17,442
+called curvature. 
+And curvature is 1 over the radius. 
+
+59
+00:04:17,442 --> 00:04:23,456
+So, the curvature is simply 1 over rho. 
+Which means that the curvature I would 
+
+60
+00:04:23,456 --> 00:04:26,396
+get if I have omega and v, 
+well, it's omega over v. 
+
+61
+00:04:26,396 --> 00:04:31,066
+So, the bigger the omega is, the tighter 
+the circle, meaning the higher the 
+
+62
+00:04:31,066 --> 00:04:34,146
+curvature. 
+If omega is zero, I'm going at a, in a 
+
+63
+00:04:34,146 --> 00:04:39,412
+straight line and the curvature is zero. 
+So, this is the curvature of a unicycle. 
+
+64
+00:04:39,412 --> 00:04:43,241
+Okay. Let's figure what the curvature is 
+when we have a car. 
+
+65
+00:04:43,241 --> 00:04:48,114
+The only difference now is that the you, 
+the car is actually pointing in this 
+
+66
+00:04:48,114 --> 00:04:52,678
+direction but it's going in this 
+direction because of the fact we have a 
+
+67
+00:04:52,678 --> 00:04:56,775
+steering angle. 
+So, as before, alpha, this angle where we 
+
+68
+00:04:56,775 --> 00:05:02,188
+wanted to say where the car is, is, 
+well, it's phi plus psi minus pi over 2. 
+
+69
+00:05:02,188 --> 00:05:05,208
+So, we're doing exactly what we did 
+before. 
+
+70
+00:05:05,208 --> 00:05:09,650
+x is x0 plus rho where rho is the radius 
+of the circle, 
+
+71
+00:05:09,650 --> 00:05:13,760
+sine phi plus psi. 
+Taking the derivative, we get x dot is 
+
+72
+00:05:13,760 --> 00:05:19,339
+rho phi plus psi cosine phi plus psi. 
+Now, let's assume that we're driving on a 
+
+73
+00:05:19,339 --> 00:05:22,376
+circle. 
+This means that we're going to hold the 
+
+74
+00:05:22,376 --> 00:05:26,653
+steering wheel fixed. 
+Which means that this term is going to be 
+
+75
+00:05:26,653 --> 00:05:31,057
+equal to zero because we're not changing 
+the steering angel, 
+
+76
+00:05:31,057 --> 00:05:36,143
+right? So, we know that psi dot is zero. 
+Well, we also have the equation for phi 
+
+77
+00:05:36,143 --> 00:05:41,584
+dot, it looks like v/l sine phi, sorry, 
+psi, v/l sine psi. 
+
+78
+00:05:41,584 --> 00:05:48,669
+And, we also know that x dot should be 
+equal to this expression. 
+
+79
+00:05:48,669 --> 00:05:54,462
+So, what do we do? 
+Well, we simply now line up v here and 
+
+80
+00:05:54,462 --> 00:05:59,836
+rho phi dot there to get the curvature. 
+Sorry, 
+
+81
+00:05:59,836 --> 00:06:07,050
+to get the radius of the circle. 
+So, this becomes l divided by sine psi. 
+
+82
+00:06:07,050 --> 00:06:11,728
+And now, we invert this to get the 
+curvature. 
+
+83
+00:06:11,728 --> 00:06:19,972
+So, the curvature becomes sine psi over l 
+where psi is this fixed steering angle 
+
+84
+00:06:19,972 --> 00:06:21,722
+we're driving. 
+Okay. 
+
+85
+00:06:21,722 --> 00:06:25,622
+Then, we have curvature for the unicycle, 
+this thing. 
+
+86
+00:06:25,622 --> 00:06:28,142
+Curvature for the car, 
+that thing. 
+
+87
+00:06:28,142 --> 00:06:33,467
+Well, we just put them equal, right? Why 
+not? If we put them equal, then we 
+
+88
+00:06:33,467 --> 00:06:38,685
+immediately get that sine psi should be 
+equal to omega l/v. 
+
+89
+00:06:38,685 --> 00:06:44,815
+So this is the steering angle we, if I 
+have a unicycle that's driving at omega 
+
+90
+00:06:44,815 --> 00:06:50,833
+and v, then this is what the steering 
+angle should be to get the same behavior 
+
+91
+00:06:50,833 --> 00:06:57,552
+out. Which also means that my psi then 
+should be arcsin of, well, omega l/v. 
+
+92
+00:06:57,552 --> 00:07:04,602
+Well, I can't set psi directly. 
+So, what I need to do is say that this is 
+
+93
+00:07:04,602 --> 00:07:10,782
+my desired steering angle. 
+And then, I somehow need to make my 
+
+94
+00:07:10,782 --> 00:07:17,212
+actual steering angle become close to my 
+desired steering angle. 
+
+95
+00:07:17,212 --> 00:07:20,762
+That's the name of the game here, 
+right? 
+
+96
+00:07:20,762 --> 00:07:25,187
+So when we get these arcsin, or arcsine 
+sorry. 
+
+97
+00:07:25,187 --> 00:07:28,887
+psi d is arc sinus of omega l/v. 
+Okay. 
+
+98
+00:07:28,887 --> 00:07:34,287
+Now, arcsin is a little bit of an 
+annoying thing to have to do. 
+
+99
+00:07:34,287 --> 00:07:39,439
+So instead, we're not going to do that. 
+So, let's say that I have this thing and 
+
+100
+00:07:39,439 --> 00:07:43,702
+I would like d to be close to it. 
+Well, one thing I can do is a simple 
+
+101
+00:07:43,702 --> 00:07:46,625
+P-Regulator, which is something you've 
+seen. 
+
+102
+00:07:46,625 --> 00:07:49,811
+But 
+this thing involves this arcsin and one 
+
+103
+00:07:49,811 --> 00:07:55,000
+thing to note is what happen if actually 
+keep sinus in there while we would get 
+
+104
+00:07:55,000 --> 00:07:57,888
+something kind of cleaner, 
+right? 
+
+105
+00:07:57,888 --> 00:08:03,462
+So, let's get rid of it and simply say 
+that instead of psi here, I'm going to do 
+
+106
+00:08:03,462 --> 00:08:07,147
+sine of psi. 
+And instead of omega d then, I'm going to 
+
+107
+00:08:07,147 --> 00:08:10,966
+do sine omega d. 
+So, I keep saying omega, I mean psi, sin 
+
+108
+00:08:10,966 --> 00:08:14,914
+psi d, which we know is omega l over v, 
+which goes in there, 
+
+109
+00:08:14,914 --> 00:08:18,470
+right? 
+So, we keep the sinuses in there instead 
+
+110
+00:08:18,470 --> 00:08:22,884
+of taking arcsin. 
+And the reason for that is that for small 
+
+111
+00:08:22,884 --> 00:08:28,131
+enough angles this is, this is roughly 
+equal to the angle itself. 
+
+112
+00:08:28,131 --> 00:08:32,488
+So, sinus is, is not a bad thing to do. 
+well, let's see if this works. 
+
+113
+00:08:32,488 --> 00:08:37,179
+So over on the left there, you see the 
+unicycle, and over on the right you see 
+
+114
+00:08:37,179 --> 00:08:40,131
+the car. 
+And the unicycle has some omega and v, 
+
+115
+00:08:40,131 --> 00:08:43,602
+and the car is running the sinus version 
+of P-Regulator. 
+
+116
+00:08:43,602 --> 00:08:48,404
+And, as you can see, they're pretty 
+close, which means that we can basically 
+
+117
+00:08:48,404 --> 00:08:53,449
+do the same kind of curvature control on 
+the car as we can do on the unicycle. 
+
+118
+00:08:53,449 --> 00:08:57,978
+So, the moral of the story with this is, 
+you know what? We're planning. 
+
+119
+00:08:57,978 --> 00:09:01,036
+We're getting some direction we want to 
+move in. 
+
+120
+00:09:01,036 --> 00:09:06,551
+Here is my direction I want to move in. 
+Well, we know the clever trick. The 
+
+121
+00:09:06,551 --> 00:09:12,482
+trick, right? The trick gives us v and 
+omega, which is what are the speeds and 
+
+122
+00:09:12,482 --> 00:09:17,332
+angular velocities we would like. 
+We now also know that the curvature is 
+
+123
+00:09:17,332 --> 00:09:22,407
+omega over v. So, if you give me v and 
+omega, I can tell you what the curvature 
+
+124
+00:09:22,407 --> 00:09:26,332
+is going to look like. 
+Well, let's use this curvature idea to 
+
+125
+00:09:26,332 --> 00:09:30,322
+make the car track the unicycle which 
+gives us v and sigma. 
+
+126
+00:09:30,322 --> 00:09:33,231
+And, of course, this v is the same as 
+that v. 
+
+127
+00:09:33,231 --> 00:09:35,989
+So, we don't have to do anything about 
+it. 
+
+128
+00:09:35,989 --> 00:09:40,670
+The only thing we have to do, is to add 
+what sigma should actually be. 
+
+129
+00:09:40,670 --> 00:09:45,984
+And this, ladies and gentlemen, allows us 
+to make the car act like a unicycle 
+
+130
+00:09:45,984 --> 00:09:51,122
+simply by using this curvature idea. 
+And this generalizes to other types of 
+
+131
+00:09:51,122 --> 00:09:55,362
+unicycle like systems where POS, again, 
+is really important. 

@@ -1,0 +1,474 @@
+1
+00:00:00,012 --> 00:00:05,012
+In order to design behaviors or
+controllers for, for robots, we inevitably
+
+2
+00:00:05,024 --> 00:00:10,123
+need models of how the robots actually
+behave. And we're going to start with one
+
+3
+00:00:10,135 --> 00:00:15,333
+of the most common models out there, which
+is the model of a differential drive
+
+4
+00:00:15,345 --> 00:00:20,289
+mobile robot. So, differential drive
+wheeled mobile robot has two wheels and
+
+5
+00:00:20,301 --> 00:00:24,927
+the wheels can turn at different rates and
+by turning the, the wheels at different
+
+6
+00:00:24,939 --> 00:00:29,531
+rates, you can make the robot move around.
+So, this is the robot we are going to
+
+7
+00:00:29,543 --> 00:00:33,926
+start with and the reason for it is
+because it is extremely common. In fact,
+
+8
+00:00:33,938 --> 00:00:39,024
+the Khepera 3, which is the robot that we
+are going to be using quiet a lot in this
+
+9
+00:00:39,036 --> 00:00:44,428
+course is a differential drive wheeled
+mobile robot. But a lot of them out there
+
+10
+00:00:44,440 --> 00:00:49,251
+are, in fact, differential drive robots.
+Typically, they have the two wheels and
+
+11
+00:00:49,263 --> 00:00:54,295
+then a caster wheel in the back. and the
+way these robots work is you have the
+
+12
+00:00:54,307 --> 00:00:58,767
+right wheel velocity that you can control
+and the left wheel with velocity that you
+
+13
+00:00:58,767 --> 00:01:02,465
+can't control. So, for instance, if
+they're turning at the same rate, the
+
+14
+00:01:02,477 --> 00:01:06,860
+robot is moving straight ahead. If one
+wheel is turning slower than another, then
+
+15
+00:01:06,872 --> 00:01:10,905
+you're going to be turning towards the
+direction in which the slower wheel is.
+
+16
+00:01:11,002 --> 00:01:15,978
+So, this a way of actually being able to,
+to make the robot more round. So, let's
+
+17
+00:01:15,990 --> 00:01:21,123
+start with this kind of robot and see what
+does a robot model actually look like.
+
+18
+00:01:21,233 --> 00:01:26,099
+Well, here's my cartoon of the robot. The
+circle is the robot and the black
+
+19
+00:01:26,380 --> 00:01:31,762
+rectangles are supposed to be the wheels.
+The first thing we need to know is what
+
+20
+00:01:31,774 --> 00:01:36,680
+are the dimensions of the robot. And I
+know I've said that a good controller
+
+21
+00:01:36,692 --> 00:01:41,473
+shouldn't have to know exactly what
+particular parameters are because
+
+22
+00:01:41,741 --> 00:01:46,674
+typically dont know what the friction
+coeficcient is. Well, in this case, you
+
+23
+00:01:46,686 --> 00:01:51,304
+are going to need to know two parameters.
+And one parameter you need to know is the
+
+24
+00:01:51,316 --> 00:01:55,358
+wheel base, meaning how far away are the
+wheels from each other? We're going to
+
+25
+00:01:55,370 --> 00:01:59,197
+call that L. So, L is the wheel base of
+the robot. You're also going to need to
+
+26
+00:01:59,209 --> 00:02:03,533
+know the radius of the wheel, m eaning how
+big are the wheels? We call that capital
+
+27
+00:02:03,545 --> 00:02:07,413
+R. Now, luckily for us, these are
+parameters that are inherently easy to
+
+28
+00:02:07,425 --> 00:02:11,670
+measure. You take out the ruler and you
+measure it on your robot. But these
+
+29
+00:02:11,682 --> 00:02:17,587
+parameters will actually play a little bit
+of a role when we're trying to, to design
+
+30
+00:02:17,599 --> 00:02:23,325
+controllers for these robots. Now, that's
+the cartoon of the robot. What is it about
+
+31
+00:02:23,337 --> 00:02:28,189
+the robot that we want to be able to
+control? Well, we want to be able to
+
+32
+00:02:28,201 --> 00:02:33,690
+control how the robot is moving. But, at
+the end of the day, the control signals
+
+33
+00:02:33,702 --> 00:02:39,140
+that we have at our disposal are v sub r,
+which is the rate at which the right wheel
+
+34
+00:02:39,152 --> 00:02:44,540
+is turning. And v sub l, which is the rate
+at which the left wheel is turning. And
+
+35
+00:02:44,552 --> 00:02:49,640
+these are the two inputs to our system.
+So, these are the inputs, now, what are
+
+36
+00:02:49,652 --> 00:02:54,837
+the states? Well, here's the robot. Now,
+I've drawn it as a triangle because I want
+
+37
+00:02:54,837 --> 00:02:59,788
+to stress the fact that the things that we
+care about, typically, for a robot is,
+
+38
+00:02:59,894 --> 00:03:04,892
+where is it, x and y. It's the position.
+And which direction is it heading in? So,
+
+39
+00:03:04,998 --> 00:03:09,783
+phi is going to be the heading or the
+orientation of the robot. So, the things
+
+40
+00:03:09,795 --> 00:03:15,400
+that we care about are where is the robot,
+and in which direction is it going? So,
+
+41
+00:03:15,412 --> 00:03:20,700
+the robot model needs to connect the
+inputs, which is v sub l and v sub r, to
+
+42
+00:03:20,712 --> 00:03:26,350
+the states, somehow. So, we need some way
+of doing this transition. Well, this is
+
+43
+00:03:26,362 --> 00:03:32,636
+not a course on kinematics. So, instead of
+me spending 20 minutes deriving this,
+
+44
+00:03:32,779 --> 00:03:39,159
+voila, here it is. This is the
+differential drive robot model. It tells
+
+45
+00:03:39,171 --> 00:03:45,186
+me how vr and vl translates into x dot,
+which is, how does the x position of the
+
+46
+00:03:45,198 --> 00:03:50,410
+robot change? Or to y dot, which is how is
+the y position, or phi dot, meaning how is
+
+47
+00:03:50,422 --> 00:03:55,033
+the robot turning? So, this is a model
+that gives us what we need in terms of
+
+48
+00:03:55,045 --> 00:04:00,237
+mapping control inputs onto states. The
+problem is, that it's very cumbersome and
+
+49
+00:04:00,249 --> 00:04:04,556
+unnatural to think in terms of rates of
+various wheels. If I asked you, how should
+
+50
+00:04:04,568 --> 00:04:08,857
+I drive to get to the door, you probably
+not going to tell me how what v sub l and
+
+51
+00:04:08,869 --> 00:04:13,394
+v sub r are, your probably g oing to tell
+me don't drive too fast and turn in this
+
+52
+00:04:13,406 --> 00:04:17,610
+direction. Meaning, you're giving me
+instructions that are not given in terms
+
+53
+00:04:17,622 --> 00:04:21,938
+of v sub l and v sub r, which is why this
+model is not that commonly used when
+
+54
+00:04:21,950 --> 00:04:26,359
+you're designing controllers. However,
+when you implement them, this is the model
+
+55
+00:04:26,371 --> 00:04:30,652
+you're going to have to use. So, instead
+of using the differential drive model
+
+56
+00:04:30,652 --> 00:04:35,309
+directly, we're going to move to something
+called the unicycle model. And the
+
+57
+00:04:35,321 --> 00:04:40,165
+unicycle model overcomes this issue of
+dealing with unnatural or unintuitive
+
+58
+00:04:40,177 --> 00:04:45,146
+terms, like wheel velocities. Instead,
+what it's doing is it's saying, you know
+
+59
+00:04:45,158 --> 00:04:50,413
+what, I care about position. I care about
+heading, why don't I just control those
+
+60
+00:04:50,425 --> 00:04:55,574
+directly? In the sense that, let's talk
+about the speed of the robot. How fast is
+
+61
+00:04:55,586 --> 00:05:00,376
+it moving? And how quickly is it turning,
+meaning the angular velocity? So,
+
+62
+00:05:00,388 --> 00:05:05,810
+translational velocity, speed, and angular
+velocity is how quickly is the robot
+
+63
+00:05:05,822 --> 00:05:11,018
+turnings. If I have that my inputs are
+going to be v, which is speed, and omega,
+
+64
+00:05:11,030 --> 00:05:16,332
+which is angular velocity. So, these are
+the two inputs. They're very natural in
+
+65
+00:05:16,344 --> 00:05:21,543
+the sense that we can actually feel what
+they're doing which, we typically can't
+
+66
+00:05:21,555 --> 00:05:27,344
+when we have vr and vl. So, if we have
+that, how do we map them on to the actual
+
+67
+00:05:27,356 --> 00:05:33,409
+robot. Well, the unicycle dynamics looks
+as follows, x dot is v cosine phi. The
+
+68
+00:05:33,421 --> 00:05:38,786
+reason this is right is, if you put phi
+equal to 0, then cosine phi is 1. In this
+
+69
+00:05:38,798 --> 00:05:44,763
+case, x dot is equal to v, which means
+that your moving in a straight line, in
+
+70
+00:05:44,775 --> 00:05:50,169
+the x-direction, which makes sense.
+Similarly for y, so y dot is v sine phi
+
+71
+00:05:50,181 --> 00:05:55,643
+and phi dot is omega because I'm
+controlling the heading directly or the,
+
+72
+00:05:55,764 --> 00:06:01,578
+the, the, the rate at which the heading is
+changing directly. So, this model is
+
+73
+00:06:01,590 --> 00:06:06,670
+highly useful, we're going to be using it
+quite a lot which is why it deserves one
+
+74
+00:06:06,682 --> 00:06:11,555
+of the patented sweethearts. Okay, there
+is a little bit of problem though because
+
+75
+00:06:11,567 --> 00:06:16,220
+this is the model we're going to design
+our controllers for, the unicycle model.
+
+76
+00:06:16,322 --> 00:06:20,480
+Now, this model is not the differential
+drive wheele d model, this is. So, we're
+
+77
+00:06:20,492 --> 00:06:24,650
+going to have to implement it on this
+model and now, here we have v and omega.
+
+78
+00:06:24,842 --> 00:06:30,233
+These are our, the, the control inputs
+we're going to design for. But here, v sub
+
+79
+00:06:30,245 --> 00:06:35,278
+r and v sub l are the actual control
+parameters that we have. So, we somehow
+
+80
+00:06:35,290 --> 00:06:40,860
+need to map them together. Well, the trick
+to doing that is to find out that this x
+
+81
+00:06:40,770 --> 00:06:47,320
+dot, that's the same as this x dot, right?
+They're the same thing. This y dot is the
+
+82
+00:06:47,332 --> 00:06:53,220
+same as the other y dot. So, if we just
+identify the two x dots together, then
+
+83
+00:06:53,232 --> 00:06:59,390
+divide it by cosine 5, we actually get
+that the velocity v is simply r over 2, v
+
+84
+00:06:59,402 --> 00:07:05,398
+sub r plus v sub l or 2v over r is vr plus
+vl. So, this is an equation that connects
+
+85
+00:07:05,410 --> 00:07:12,861
+v, which is the translational velocity or
+the speed, to these real velocities. And
+
+86
+00:07:12,873 --> 00:07:18,858
+we do the same thing for omega. We get
+this equation. So, only l over r is vr
+
+87
+00:07:18,858 --> 00:07:24,690
+minus vl. Now, these are just two linear
+equations, we can actually solve these
+
+88
+00:07:24,702 --> 00:07:30,170
+explicitly for v sub r and v sub l and if
+we do that, we get that v sub r is this
+
+89
+00:07:30,182 --> 00:07:35,870
+thing and v sub l is this other thing. But
+the point now is, this is what I designed
+
+90
+00:07:35,882 --> 00:07:41,730
+for, this is what I designed for. So, v
+and omega are design parameters. l and r
+
+91
+00:07:41,742 --> 00:07:48,065
+are my known measured parameters for the
+robot, the base of the robot, meaning how
+
+92
+00:07:48,077 --> 00:07:53,770
+far the wheels are apart, and the radius
+of the wheel. And with these parameters,
+
+93
+00:07:53,887 --> 00:07:59,420
+you can map your designed inputs, v and
+omega, onto the actual inputs that are
+
+94
+00:07:59,432 --> 00:08:05,225
+indeed running on the robot. So, this is
+step 1, meaning we have a model. Now, step
+
+95
+00:08:05,237 --> 00:08:12,217
+2 is, okay, how do we know anything about
+the world around us?

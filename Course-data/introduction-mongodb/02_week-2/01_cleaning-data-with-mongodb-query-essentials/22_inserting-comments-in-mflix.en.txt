@@ -1,0 +1,56 @@
+A movie streaming service that does
+not let their users make comments on the movies they like. It's probably not a very good one, and there's a lot of improvement room for
+their user experience. Mflix is nothing like that, and it does
+allow you to provide feedback for future analysis and for us to do something more
+interesting with the service later on. Obviously, Mflix will be storing
+that information in MongoDB. And for that, we have a particular method
+I would like to be talk to you guys today about,
+which is this insert_one method here. It allows us to insert a documents
+into MongoDB collection, in particular to our comments collection. Now this is probably the simplest
+command that you can find in MongoDB but I still like to tell you all about it. So let's see this in action. And for that I'm going to use again,
+our Jupyter notebooks. There's one called insert-one for
+this lesson. And let's do the typical imports of
+importing everything that we need to use this particular notebook. We start by pymongo, pprint, and
+we're also going to import bson.objectid. And the built-in date time support of
+Python, which is datetime datetime. Now as usual we need to provide
+our MongoDB Atlas URI so we can connect to our instance. And it would be a nice idea for
+me to just print it out to see if we actually get a correct connection
+in place, so let's do just that. Once we run this you can
+see that the connection to the database is well executed,
+so we can move along. Now for
+inserting a single document we are just going to insert in this
+particular example, a dictionary. I'm going to create here, dictionary, then I'm going to call
+comment with some data on it. The data that we are storing
+in MongoDB is name, email, movie ID, text, and date,
+all of them of different data types. Name and
+email are the typical string data types. Movie_id will be a bson id, which I'm
+going to generate one right here, it's going to be fake a comment,
+so it's all good. Text, again, string, and then date,
+while we will be using datetime.utcnow. Another object I'm going to create here
+is this bypass validation flag that I'm going to put to false. Now the last thing that I need
+to do is call my mflix comments, insert_one method passing along
+my fake comments and this flag. Now why is this flag here and
+what is it's purpose? MongoDB allows us to define
+on a collection basis a validation of our documents. Obviously if we don't have one or
+if we just simply want to bypass it, MongoDB currently supports
+that in a very easy manner. We just need to pass the flag saying
+if we want to bypass evaluation or not. For this particular example I am going
+to do that just to show that we can. So if I do that, I get back an insert_one
+result that I'm storing in this variable here insert_results. Insert_result has two different fields
+as one field called acknowledged which will tell me if the command that I just
+emitted was acknowledged by the server. In this case, it's true, so we got there,
+we got to the server, fantastic. And now it also can tell me,
+if it's been acknowledged, what's the insert_id of our document,
+because we are not providing an _id field. And as you know,
+if we do not provide such _id field, MongoDB will create one for
+us, and there it is. But obviously we can, in fact,
+provide an _id, if we wish to do so. For example, here we are going to set our _id field to
+a string with the value some_id_field. If we do so, we can see that it is true,
+it has been acknowledged, and the inserted ID is the name or the string that we provided inside of
+the document, all checks correctly. And lastly, we need to also realize that
+a primary key cannot allow any duplicates. So if we try to insert
+the same document again or even just this different document with the
+same _id field, an error will be raised. MongoDB makes sure that
+if you tried to store two different documents with
+the same field value for _id, a DuplicateKeyError will be
+raised as you can find it here. And this is all on insert_one method.

@@ -1,0 +1,330 @@
+1
+00:00:00,000 --> 00:00:04,452
+A movie streaming service that does
+not let their users make comments on
+
+2
+00:00:04,452 --> 00:00:05,869
+the movies they like.
+
+3
+00:00:05,869 --> 00:00:09,111
+It's probably not a very good one, and
+
+4
+00:00:09,111 --> 00:00:14,327
+there's a lot of improvement room for
+their user experience.
+
+5
+00:00:14,327 --> 00:00:19,565
+Mflix is nothing like that, and it does
+allow you to provide feedback for future
+
+6
+00:00:19,565 --> 00:00:24,820
+analysis and for us to do something more
+interesting with the service later on.
+
+7
+00:00:24,820 --> 00:00:27,941
+Obviously, Mflix will be storing
+that information in MongoDB.
+
+8
+00:00:27,941 --> 00:00:32,635
+And for that, we have a particular method
+I would like to be talk to you guys
+
+9
+00:00:32,635 --> 00:00:36,148
+today about,
+which is this insert_one method here.
+
+10
+00:00:36,148 --> 00:00:39,983
+It allows us to insert a documents
+into MongoDB collection,
+
+11
+00:00:39,983 --> 00:00:42,775
+in particular to our comments collection.
+
+12
+00:00:42,775 --> 00:00:47,777
+Now this is probably the simplest
+command that you can find in MongoDB but
+
+13
+00:00:47,777 --> 00:00:50,325
+I still like to tell you all about it.
+
+14
+00:00:50,325 --> 00:00:52,538
+So let's see this in action.
+
+15
+00:00:52,538 --> 00:00:56,545
+And for that I'm going to use again,
+our Jupyter notebooks.
+
+16
+00:00:56,545 --> 00:01:00,078
+There's one called insert-one for
+this lesson.
+
+17
+00:01:00,078 --> 00:01:04,910
+And let's do the typical imports of
+importing everything that we need to use
+
+18
+00:01:04,910 --> 00:01:06,730
+this particular notebook.
+
+19
+00:01:06,730 --> 00:01:11,683
+We start by pymongo, pprint, and
+we're also going to import bson.objectid.
+
+20
+00:01:11,683 --> 00:01:17,480
+And the built-in date time support of
+Python, which is datetime datetime.
+
+21
+00:01:17,480 --> 00:01:21,063
+Now as usual we need to provide
+our MongoDB Atlas URI so
+
+22
+00:01:21,063 --> 00:01:23,220
+we can connect to our instance.
+
+23
+00:01:23,220 --> 00:01:28,227
+And it would be a nice idea for
+me to just print it out to see if we
+
+24
+00:01:28,227 --> 00:01:33,940
+actually get a correct connection
+in place, so let's do just that.
+
+25
+00:01:33,940 --> 00:01:37,577
+Once we run this you can
+see that the connection to
+
+26
+00:01:37,577 --> 00:01:41,578
+the database is well executed,
+so we can move along.
+
+27
+00:01:41,578 --> 00:01:44,521
+Now for
+inserting a single document we are just
+
+28
+00:01:44,521 --> 00:01:48,378
+going to insert in this
+particular example, a dictionary.
+
+29
+00:01:48,378 --> 00:01:50,221
+I'm going to create here, dictionary,
+
+30
+00:01:50,221 --> 00:01:52,440
+then I'm going to call
+comment with some data on it.
+
+31
+00:01:52,440 --> 00:01:55,600
+The data that we are storing
+in MongoDB is name,
+
+32
+00:01:55,600 --> 00:02:00,509
+email, movie ID, text, and date,
+all of them of different data types.
+
+33
+00:02:00,509 --> 00:02:03,363
+Name and
+email are the typical string data types.
+
+34
+00:02:03,363 --> 00:02:07,811
+Movie_id will be a bson id, which I'm
+going to generate one right here,
+
+35
+00:02:07,811 --> 00:02:10,847
+it's going to be fake a comment,
+so it's all good.
+
+36
+00:02:10,847 --> 00:02:16,498
+Text, again, string, and then date,
+while we will be using datetime.utcnow.
+
+37
+00:02:16,498 --> 00:02:21,303
+Another object I'm going to create here
+is this bypass validation flag that I'm
+
+38
+00:02:21,303 --> 00:02:22,550
+going to put to false.
+
+39
+00:02:22,550 --> 00:02:27,964
+Now the last thing that I need
+to do is call my mflix comments,
+
+40
+00:02:27,964 --> 00:02:33,922
+insert_one method passing along
+my fake comments and this flag.
+
+41
+00:02:33,922 --> 00:02:38,190
+Now why is this flag here and
+what is it's purpose?
+
+42
+00:02:38,190 --> 00:02:42,444
+MongoDB allows us to define
+on a collection basis
+
+43
+00:02:42,444 --> 00:02:45,254
+a validation of our documents.
+
+44
+00:02:45,254 --> 00:02:49,932
+Obviously if we don't have one or
+if we just simply want to bypass it,
+
+45
+00:02:49,932 --> 00:02:53,741
+MongoDB currently supports
+that in a very easy manner.
+
+46
+00:02:53,741 --> 00:02:59,064
+We just need to pass the flag saying
+if we want to bypass evaluation or not.
+
+47
+00:02:59,064 --> 00:03:03,350
+For this particular example I am going
+to do that just to show that we can.
+
+48
+00:03:03,350 --> 00:03:07,955
+So if I do that, I get back an insert_one
+result that I'm storing in this
+
+49
+00:03:07,955 --> 00:03:10,155
+variable here insert_results.
+
+50
+00:03:10,155 --> 00:03:15,174
+Insert_result has two different fields
+as one field called acknowledged which
+
+51
+00:03:15,174 --> 00:03:20,059
+will tell me if the command that I just
+emitted was acknowledged by the server.
+
+52
+00:03:20,059 --> 00:03:24,500
+In this case, it's true, so we got there,
+we got to the server, fantastic.
+
+53
+00:03:24,500 --> 00:03:27,873
+And now it also can tell me,
+if it's been acknowledged,
+
+54
+00:03:27,873 --> 00:03:32,950
+what's the insert_id of our document,
+because we are not providing an _id field.
+
+55
+00:03:32,950 --> 00:03:37,120
+And as you know,
+if we do not provide such _id field,
+
+56
+00:03:37,120 --> 00:03:40,932
+MongoDB will create one for
+us, and there it is.
+
+57
+00:03:40,932 --> 00:03:45,580
+But obviously we can, in fact,
+provide an _id, if we wish to do so.
+
+58
+00:03:45,580 --> 00:03:46,613
+For example,
+
+59
+00:03:46,613 --> 00:03:52,390
+here we are going to set our _id field to
+a string with the value some_id_field.
+
+60
+00:03:52,390 --> 00:03:57,358
+If we do so, we can see that it is true,
+it has been acknowledged, and
+
+61
+00:03:57,358 --> 00:03:59,415
+the inserted ID is the name or
+
+62
+00:03:59,415 --> 00:04:04,928
+the string that we provided inside of
+the document, all checks correctly.
+
+63
+00:04:04,928 --> 00:04:11,123
+And lastly, we need to also realize that
+a primary key cannot allow any duplicates.
+
+64
+00:04:11,123 --> 00:04:13,954
+So if we try to insert
+the same document again or
+
+65
+00:04:13,954 --> 00:04:19,190
+even just this different document with the
+same _id field, an error will be raised.
+
+66
+00:04:19,190 --> 00:04:22,692
+MongoDB makes sure that
+if you tried to store
+
+67
+00:04:22,692 --> 00:04:27,522
+two different documents with
+the same field value for _id,
+
+68
+00:04:27,522 --> 00:04:32,270
+a DuplicateKeyError will be
+raised as you can find it here.
+
+69
+00:04:32,270 --> 00:04:35,260
+And this is all on insert_one method.

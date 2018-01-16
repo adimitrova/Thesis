@@ -1,0 +1,544 @@
+1
+00:00:00,650 --> 00:00:03,440
+Our next topic is soft folding.
+
+2
+00:00:03,440 --> 00:00:05,500
+This is a work we published in 2013.
+
+3
+00:00:05,500 --> 00:00:11,710
+So as a program, we want to address is
+the design of softly folded shapes.
+
+4
+00:00:11,710 --> 00:00:16,940
+So origami and others, paper folding
+is always sharp, rigid folds.
+
+5
+00:00:16,940 --> 00:00:22,510
+But, many of the things like, things
+designed we've crafted from leather.
+
+6
+00:00:22,510 --> 00:00:23,960
+They have soft folds.
+
+7
+00:00:23,960 --> 00:00:28,920
+So our motivation here is to assist design
+of this kind of softly folded object.
+
+8
+00:00:30,230 --> 00:00:31,520
+And here's our approach.
+
+9
+00:00:31,520 --> 00:00:36,870
+So traditionally only the sharp fold
+was used in the design of origami and
+
+10
+00:00:36,870 --> 00:00:41,830
+folded shape, but here we allow the user
+to paint soft folds like this one.
+
+11
+00:00:41,830 --> 00:00:47,160
+You know, these thin,
+narrow strokes represent a sharp fold, and
+
+12
+00:00:47,160 --> 00:00:51,790
+then also this big,
+wide stroke represents soft folds.
+
+13
+00:00:51,790 --> 00:00:54,780
+So this is the 2D user input.
+
+14
+00:00:54,780 --> 00:00:59,100
+And then given this 2D input,
+system automatically folds them, and
+
+15
+00:00:59,100 --> 00:01:00,380
+then you will get the 3D shape.
+
+16
+00:01:00,380 --> 00:01:02,400
+So that's a basic workflow.
+
+17
+00:01:02,400 --> 00:01:04,740
+So user paints flow map.
+
+18
+00:01:04,740 --> 00:01:08,780
+Fold the map and
+then use a system that has 3D folded view.
+
+19
+00:01:08,780 --> 00:01:15,530
+In addition to it, not just study
+from 2D fold them up to 3D model,
+
+20
+00:01:15,530 --> 00:01:20,700
+our system allows very fast
+feedback as you change control, and
+
+21
+00:01:20,700 --> 00:01:22,960
+thus change the properties of the fold.
+
+22
+00:01:22,960 --> 00:01:25,920
+So, the user interacts with,
+controls the magnitude.
+
+23
+00:01:25,920 --> 00:01:26,910
+Or it gives you a fold.
+
+24
+00:01:26,910 --> 00:01:30,780
+And the user can also change
+the sharpness of individual folds, so
+
+25
+00:01:30,780 --> 00:01:32,610
+you can smoothly go back and
+
+26
+00:01:32,610 --> 00:01:37,120
+forth between sharp fold, smooth fold,
+sharp angle, no angle and so on.
+
+27
+00:01:38,940 --> 00:01:39,930
+So, let me show you.
+
+28
+00:01:46,460 --> 00:01:48,160
+So, yeah, here's the basic operation.
+
+29
+00:01:50,750 --> 00:01:51,250
+So.
+
+30
+00:01:55,247 --> 00:01:59,800
+So user specifies a sharp fold here,
+and then you change the angle.
+
+31
+00:01:59,800 --> 00:02:03,600
+Then you get this result.
+
+32
+00:02:03,600 --> 00:02:07,190
+So you see that as the user change
+the fold angle system interactively,
+
+33
+00:02:07,190 --> 00:02:09,450
+very quickly shows the folded result.
+
+34
+00:02:09,450 --> 00:02:11,780
+So this is far for now.
+
+35
+00:02:11,780 --> 00:02:15,100
+User is changing the softness of the fold.
+
+36
+00:02:15,100 --> 00:02:19,400
+So, as you, the user is moving
+from sharp fold to soft fold.
+
+37
+00:02:19,400 --> 00:02:25,550
+And then as again, the system continuously
+shows the simulation of folded result.
+
+38
+00:02:29,150 --> 00:02:30,564
+So this is a basic operations.
+
+39
+00:02:37,727 --> 00:02:40,560
+So by combining this,
+we can design multiple shapes.
+
+40
+00:02:40,560 --> 00:02:45,614
+So if you design curved line and then
+tries to then you will get this result.
+
+41
+00:02:45,614 --> 00:02:48,980
+And you can also control
+the softness of this curved fold.
+
+42
+00:02:55,020 --> 00:02:56,070
+Now a couple of examples.
+
+43
+00:03:00,952 --> 00:03:06,042
+So use our interactively drawing folds and
+the system quickly provides feeder box so
+
+44
+00:03:06,042 --> 00:03:09,852
+you can explore many different
+designs using soft folds.
+
+45
+00:03:14,956 --> 00:03:17,260
+And this spear is most important.
+
+46
+00:03:17,260 --> 00:03:20,368
+You know, if you are [INAUDIBLE] physical
+simulation, you can [INAUDIBLE] dissolve,
+
+47
+00:03:20,368 --> 00:03:22,484
+but standard physical simulation
+is too slow to do this.
+
+48
+00:03:31,598 --> 00:03:34,435
+Yeah, so use a space variety
+as a very soft fold and
+
+49
+00:03:34,435 --> 00:03:38,167
+then change the folding angle,
+and then you will get this shape.
+
+50
+00:03:54,207 --> 00:03:57,249
+So let me skip this.
+
+51
+00:03:57,249 --> 00:03:59,086
+So here is an, another example.
+
+52
+00:04:05,520 --> 00:04:13,442
+So use the sign the wide fold here,
+and the other fold, other fold,
+
+53
+00:04:13,442 --> 00:04:18,200
+other fold.
+
+54
+00:04:18,200 --> 00:04:19,285
+And they start bending.
+
+55
+00:04:19,285 --> 00:04:20,830
+As you see,
+
+56
+00:04:20,830 --> 00:04:27,010
+some contradictory force can be nicely
+handled as a result of computation.
+
+57
+00:04:27,010 --> 00:04:27,510
+So
+
+58
+00:04:36,900 --> 00:04:39,460
+important point is that
+everything is interactive, so
+
+59
+00:04:39,460 --> 00:04:43,580
+you can incrementally add more folds,
+test many fold angles.
+
+60
+00:04:43,580 --> 00:04:48,960
+Looking at the 3D view it
+changes configuration and so on.
+
+61
+00:04:48,960 --> 00:04:51,164
+So here's another example.
+
+62
+00:04:51,164 --> 00:04:54,320
+So user specifies sharp folds first.
+
+63
+00:05:07,729 --> 00:05:10,129
+And then specify a soft fold here.
+
+64
+00:05:20,694 --> 00:05:24,166
+And here you just specify
+the connection between two corners and
+
+65
+00:05:24,166 --> 00:05:27,324
+then you will get these connected
+corners in the 3D view.
+
+66
+00:05:42,807 --> 00:05:45,730
+Here's another example.
+
+67
+00:05:45,730 --> 00:05:49,460
+I think this sequence is
+showing the creation of a mask.
+
+68
+00:06:00,980 --> 00:06:01,894
+Yep.
+
+69
+00:06:09,695 --> 00:06:11,240
+Okay, that's it.
+
+70
+00:06:11,240 --> 00:06:14,231
+So, yeah he has a couple more results,
+you know,
+
+71
+00:06:14,231 --> 00:06:19,460
+this is sharp folds, and this is soft
+folds, and this is physical construction.
+
+72
+00:06:19,460 --> 00:06:20,640
+And here's our examples.
+
+73
+00:06:22,710 --> 00:06:28,510
+And here's a laser bag design or
+a shopping case or masks and shoes.
+
+74
+00:06:30,930 --> 00:06:33,040
+And so let me describe the details.
+
+75
+00:06:33,040 --> 00:06:38,760
+So user input is given as a fold map,
+sharp folds and soft folds.
+
+76
+00:06:38,760 --> 00:06:40,840
+And then the last one is 3D result.
+
+77
+00:06:40,840 --> 00:06:44,440
+But in the middle,
+a fast computer fold field.
+
+78
+00:06:44,440 --> 00:06:49,240
+So for the field computes gives the for
+the orientation, for the magnitude,
+
+79
+00:06:49,240 --> 00:06:50,570
+for the individual pixel.
+
+80
+00:06:52,350 --> 00:06:53,820
+So it has implementation.
+
+81
+00:06:53,820 --> 00:06:57,397
+So I use, I,
+input is given as 2D vector graphics and
+
+82
+00:06:57,397 --> 00:07:01,152
+then after that we compute
+2-dimensional mesh.
+
+83
+00:07:01,152 --> 00:07:04,147
+And then once the two-dimensional
+mesh vertices,
+
+84
+00:07:04,147 --> 00:07:06,330
+we compute fold field one by one.
+
+85
+00:07:06,330 --> 00:07:09,158
+And they are coding
+through the fold field,
+
+86
+00:07:09,158 --> 00:07:14,937
+which means we specify forwarding angle,
+and orientation, for individual vertices.
+
+87
+00:07:14,937 --> 00:07:19,800
+And then, by assembling this information
+together, we get a global folding.
+
+88
+00:07:19,800 --> 00:07:21,380
+And then we would get a 3D result.
+
+89
+00:07:24,090 --> 00:07:26,556
+So, fold field generation works like this.
+
+90
+00:07:26,556 --> 00:07:30,950
+For each user-specified folds if you,
+
+91
+00:07:30,950 --> 00:07:37,100
+first, the system generates a mesh so
+that they align the fold curve's tangent.
+
+92
+00:07:37,100 --> 00:07:38,980
+And as for soft folds,
+
+93
+00:07:38,980 --> 00:07:43,730
+we diffuse fold orientations in
+the non-overlapping regions.
+
+94
+00:07:43,730 --> 00:07:49,080
+And then for the overlapped regions, we
+blend overlap fold orientations together.
+
+95
+00:07:49,080 --> 00:07:51,370
+So if you have this orientation folding,
+
+96
+00:07:51,370 --> 00:07:53,910
+this orientation folding,
+you get in the middle.
+
+97
+00:07:56,120 --> 00:08:02,120
+So after getting a fold field, and
+then system computes a global folding, so,
+
+98
+00:08:02,120 --> 00:08:08,430
+which means assembling two-dimensional
+local folds, and then you get a 3D fold.
+
+99
+00:08:08,430 --> 00:08:13,120
+And most important thing here is that
+we do not use physical simulation here,
+
+100
+00:08:13,120 --> 00:08:15,530
+because physics is very slow.
+
+101
+00:08:15,530 --> 00:08:18,820
+Instead we take a comparative
+geometric approach.
+
+102
+00:08:19,830 --> 00:08:21,380
+So here is the overview.
+
+103
+00:08:21,380 --> 00:08:27,240
+So you get local folds, where individual
+local regions folded independently.
+
+104
+00:08:27,240 --> 00:08:31,590
+And then we basically stitch them
+together, to get global fold.
+
+105
+00:08:31,590 --> 00:08:35,310
+So in this 3D view,
+you get the local fold, one by one.
+
+106
+00:08:35,310 --> 00:08:37,590
+And they're stitched together.
+
+107
+00:08:37,590 --> 00:08:40,270
+And then, eventually,
+you get a large fold.
+
+108
+00:08:40,270 --> 00:08:43,841
+And the technique we used here is
+borrowed from our previous work on
+
+109
+00:08:43,841 --> 00:08:46,410
+a linear rotational-ivariant coordinates.
+
+110
+00:08:49,820 --> 00:08:55,920
+So to learn more, original paper was
+published Soft Folding in 2013 and
+
+111
+00:08:55,920 --> 00:09:00,500
+there are lots of discussions
+about developable surface control.
+
+112
+00:09:00,500 --> 00:09:03,290
+And one starting point to look at is
+
+113
+00:09:03,290 --> 00:09:07,680
+Flexible Developable Surfaces
+published in 2012.
+
+114
+00:09:07,680 --> 00:09:12,500
+And there are a couple of works on
+origami folding, always has folds.
+
+115
+00:09:12,500 --> 00:09:16,990
+One example is origami plane
+simulator in the module space.
+
+116
+00:09:16,990 --> 00:09:22,313
+And also origami assembly has a lot
+of interesting assemblies behind it.
+
+117
+00:09:22,313 --> 00:09:26,318
+If you want more,
+I recommend you to take a look at the book
+
+118
+00:09:26,318 --> 00:09:32,313
+titled Geometric Folding Algorithms,
+Linkages, Origami, and Polyhedra.
+
+119
+00:09:32,313 --> 00:09:32,813
+Thank you.

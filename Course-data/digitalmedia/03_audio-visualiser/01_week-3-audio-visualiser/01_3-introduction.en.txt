@@ -1,0 +1,24 @@
+[SOUND]. Hello and welcome to week 3 of creative 
+programming for digital media and mobile apps. 
+This week we're going to be looking at audio visualization. 
+So that means algorithmic drawing in comptuer graphics. 
+So ways of making abstract shapes. More complex shapes with translations and 
+rotations and different kinds of geometry. 
+And audio analysis. So, what that really means is, 
+understanding what's being played back in a sound and turning it into numbers which 
+are useful for changing the way that something's drawn. 
+So, there's quite a big chunk of graphics to do with translation, and rotation, and 
+transformations, and there's a nice chunk of analysis. 
+If you're interested in audio, and you have a background in audio, I think 
+there's a lot of good stuff for you there. 
+but then I'll be doing a kind of putting it together bit at the end. 
+Stuff I always do. just literally showing you how we combine 
+analysis and combine graphics to make something which you might find alongside 
+something like, I don't know, iTunes or the Xbox audio player. 
+So, there's a market for visualizers but there's a market for the techniques of 
+visualization. It's not just about making something that 
+works with I tunes although there's a lot of money to be made in that market. 
+It's also about how to how to analyze audio and there's an increasing amount of 
+applications that really need to do that including stuff like shazam which is a 
+really useful application. So, we're going to start to be thinking 
+about all these things and how to put them together. [MUSIC]

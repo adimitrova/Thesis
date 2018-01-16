@@ -1,0 +1,70 @@
+Our next topic is soft folding. This is a work we published in 2013. So as a program, we want to address is
+the design of softly folded shapes. So origami and others, paper folding
+is always sharp, rigid folds. But, many of the things like, things
+designed we've crafted from leather. They have soft folds. So our motivation here is to assist design
+of this kind of softly folded object. And here's our approach. So traditionally only the sharp fold
+was used in the design of origami and folded shape, but here we allow the user
+to paint soft folds like this one. You know, these thin,
+narrow strokes represent a sharp fold, and then also this big,
+wide stroke represents soft folds. So this is the 2D user input. And then given this 2D input,
+system automatically folds them, and then you will get the 3D shape. So that's a basic workflow. So user paints flow map. Fold the map and
+then use a system that has 3D folded view. In addition to it, not just study
+from 2D fold them up to 3D model, our system allows very fast
+feedback as you change control, and thus change the properties of the fold. So, the user interacts with,
+controls the magnitude. Or it gives you a fold. And the user can also change
+the sharpness of individual folds, so you can smoothly go back and forth between sharp fold, smooth fold,
+sharp angle, no angle and so on. So, let me show you. So, yeah, here's the basic operation. So. So user specifies a sharp fold here,
+and then you change the angle. Then you get this result. So you see that as the user change
+the fold angle system interactively, very quickly shows the folded result. So this is far for now. User is changing the softness of the fold. So, as you, the user is moving
+from sharp fold to soft fold. And then as again, the system continuously
+shows the simulation of folded result. So this is a basic operations. So by combining this,
+we can design multiple shapes. So if you design curved line and then
+tries to then you will get this result. And you can also control
+the softness of this curved fold. Now a couple of examples. So use our interactively drawing folds and
+the system quickly provides feeder box so you can explore many different
+designs using soft folds. And this spear is most important. You know, if you are [INAUDIBLE] physical
+simulation, you can [INAUDIBLE] dissolve, but standard physical simulation
+is too slow to do this. Yeah, so use a space variety
+as a very soft fold and then change the folding angle,
+and then you will get this shape. So let me skip this. So here is an, another example. So use the sign the wide fold here,
+and the other fold, other fold, other fold. And they start bending. As you see, some contradictory force can be nicely
+handled as a result of computation. So important point is that
+everything is interactive, so you can incrementally add more folds,
+test many fold angles. Looking at the 3D view it
+changes configuration and so on. So here's another example. So user specifies sharp folds first. And then specify a soft fold here. And here you just specify
+the connection between two corners and then you will get these connected
+corners in the 3D view. Here's another example. I think this sequence is
+showing the creation of a mask. Yep. Okay, that's it. So, yeah he has a couple more results,
+you know, this is sharp folds, and this is soft
+folds, and this is physical construction. And here's our examples. And here's a laser bag design or
+a shopping case or masks and shoes. And so let me describe the details. So user input is given as a fold map,
+sharp folds and soft folds. And then the last one is 3D result. But in the middle,
+a fast computer fold field. So for the field computes gives the for
+the orientation, for the magnitude, for the individual pixel. So it has implementation. So I use, I,
+input is given as 2D vector graphics and then after that we compute
+2-dimensional mesh. And then once the two-dimensional
+mesh vertices, we compute fold field one by one. And they are coding
+through the fold field, which means we specify forwarding angle,
+and orientation, for individual vertices. And then, by assembling this information
+together, we get a global folding. And then we would get a 3D result. So, fold field generation works like this. For each user-specified folds if you, first, the system generates a mesh so
+that they align the fold curve's tangent. And as for soft folds, we diffuse fold orientations in
+the non-overlapping regions. And then for the overlapped regions, we
+blend overlap fold orientations together. So if you have this orientation folding, this orientation folding,
+you get in the middle. So after getting a fold field, and
+then system computes a global folding, so, which means assembling two-dimensional
+local folds, and then you get a 3D fold. And most important thing here is that
+we do not use physical simulation here, because physics is very slow. Instead we take a comparative
+geometric approach. So here is the overview. So you get local folds, where individual
+local regions folded independently. And then we basically stitch them
+together, to get global fold. So in this 3D view,
+you get the local fold, one by one. And they're stitched together. And then, eventually,
+you get a large fold. And the technique we used here is
+borrowed from our previous work on a linear rotational-ivariant coordinates. So to learn more, original paper was
+published Soft Folding in 2013 and there are lots of discussions
+about developable surface control. And one starting point to look at is Flexible Developable Surfaces
+published in 2012. And there are a couple of works on
+origami folding, always has folds. One example is origami plane
+simulator in the module space. And also origami assembly has a lot
+of interesting assemblies behind it. If you want more,
+I recommend you to take a look at the book titled Geometric Folding Algorithms,
+Linkages, Origami, and Polyhedra. Thank you.

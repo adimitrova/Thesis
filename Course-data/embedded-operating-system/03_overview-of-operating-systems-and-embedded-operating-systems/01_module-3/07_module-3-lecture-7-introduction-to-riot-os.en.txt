@@ -1,0 +1,91 @@
+[MUSIC] Hello, it is good to see you back for
+this lesson. In previous videos we explored Kontiki and
+Tanjores, their features and advantages. Now we're going to address
+another type of IOT embedded OS. Right, which can be seen as an example
+of a micro current of design. First of all I will give you
+an introduction to Riot and then I will discuss its features and
+advantages. Riot is an open source
+embedded operating system. It is designed for networked and
+memory constrained embedded systems. Its primary focus is on low-power
+wireless sensor network systems and Internet of Things devices. As a result of this,
+it is made lightweight enough to satisfy the requirements of embedded devices
+having limited processing capacity, small main memory and storage,
+and powered by battery. The kernel of Riot was first developed by
+several European academic institutions in 1999, and later by various companies,
+individuals and universities. Riot and
+its applications are written in ANSI C. Riot implements a microkernel of
+architecture, inherited from Fire Kernal. In addition to Fire Kernel's original
+features, powerful C++ libraries such as, the Wise Leaf algorithm framework and
+tcpip network stack are added in to riot. As primly mentioned, Riot is built for
+networked and memory constrained systems. Therefore it needs to save memory and
+reduce the size of it's can. In order to address this,
+Riot is designed in a modular way. It also tries to limit dependencies
+between the modules as small as possible. In addition, the configuration of
+the system can be customized to meet a particular specification,
+thereby minimizing the size of the kernel. For instance, a Riot kernel can require as
+small as a few hundred bytes of RAM and program storage. Another benefit of modularity is the effect of bugs is
+limited in the module itself. Similar to Kontiki a bug in a module
+cannot mess up with the whole system. In contrast to many other operating
+systems, write a scheduler works without periodic events and
+it's consider a tickles scheduler. One benefit of this is, to switch to idle
+threat, when there are no pending tests. In addition, the idle threat contains
+a function to decide this looping duration of a device, or system. This decision is made, based on
+the peripheral devices in use, this gives the advantage that the system can
+stay in sleep state as long as possible. Subsequently, energy consumption
+can be significantly minimized. Only interrupts wake the system
+up from the idle state. Moreover, all kernel functions
+are kept as small as possible thus allowing the kernel to run even on a
+small systems with very low clock speeds. The scheduler is the sign to minimize
+the occurrences of threats which thereby reducing the overhead by switch questions related to interrupts may
+have popped out in your main software. For instance, how do interrupts
+awaken the system from a sleep state? How this would get handled? In order to give you answers for such questions, I'm going to
+explain interrupt handling in Riot. Interrupt handling is an important
+part of Riot because failure to handle interrupts well has a serious impact
+on the performance of the system. It is known that most device drivers for
+common real time and wireless network are designed
+to directly use interrupts. However using interrupts
+is not straightforward. For example,
+in a pre-emptively scheduled system, interrupt is passed through kernel and
+context switching must be carried out. Before switching to the interrupt, the
+context of the running task must be saved as you can see,
+it is complicated to work with. In order to help programmers
+achieve this easily, Riot provides an API which is similar
+to common sensor net programming model. In addition, Riot is built
+targeting the lowest possible interrupt latencies so that real
+time requirements can be fulfilled. Similar to other embedded wireless
+network operating systems, Riot supports various types of hardware such as
+16 bit MSP430 or 32 bit ARM server. One of the benefits of Riot
+is it's small footprint. It only requires less than
+five kilobytes of ROM and two kilobytes of RAM to run a basic
+wireless sensor network application. Compare to Contiki, Riot is better
+in terms of required minimum RAM and ROM for a basic task. Another advantage of Riot
+related to portability is in using advance
+features of processors. For instance,
+ARM processors are powerful and provide many complex features
+like vector interrupt controller. These features may not be suitable for
+other embedded network OSs. However, Riot utilizes,
+by virtue of separation of CPU code from the kernel implementation
+Riot's kernel is built in the target of achieving maximum reliability and
+strong realtime characteristics. Therefore, Riot supports multithreading
+with zero-latency interrupt handlers and minimum context-switching times. In order to assist system developers
+take advantage of really easily. Riot provides a developer friendly API. Another advantage of Riot is that is allows developers to create
+as many threads as possible. In addition, distributed systems
+can be easily implemented using the kernel messaging API. The maximum number of threads is only
+limited by the available memory and the size of the stack for threads,
+while the computational and memory overhead is minimum. Similar to other embedded
+network operating systems, Riot supports different
+network protocols for resource constrains systems
+Such as 6LoWPAN and RPL. In addition, IPv4, IPv6, UDP and
+TCP are also fully supported. Similar to Kontiki,
+network stack in Riot is also modular. This gives the flexibility to exchange
+protocol layers at any hierarchy. In addition,
+an adaptation layer is provided that offers an IEEE 802.15.4
+complete interface. There are many interesting things of Riot. Unfortunately we cannot
+discuss them all here. In order to cover more features,
+advantages of Riot and learn to program for it in detail, i suggest you to go through the
+commentation in the suggested materials. Before ending this section, we're going to take a look at
+the classic Helloworld example in Riot. In this example, 'Hello World' will be
+printed out to the terminal of the device. In order to know the details
+on how to write a program and run applications in Riot,
+please come back to our lecture. Who have more detailed videos. With this lesson, we concluded
+the embedded operation systems model. I hope you enjoyed watching.

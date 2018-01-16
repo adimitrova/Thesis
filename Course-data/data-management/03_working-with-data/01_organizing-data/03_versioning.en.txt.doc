@@ -1,0 +1,24 @@
+It's also important to distinguish between
+the different versions of your data files consistently. This ensures that there's a clear audit
+trail so you can track the development of your data files and
+return to earlier versions if needed. You should pick a method of versioning
+that makes sense to you and makes it clear to differentiate
+between the different data files. A common form for expressing data file
+versions is to use ordinal numbers such as 1, 2, and 3 for major version changes and
+decimals for minor changes. For example, version 1.1. You should avoid using confusing
+labels such as revision, final, final2, or definitive copy. You may find that these accumulate and it becomes difficult to understand
+which version proceeds which. You should always record changes to
+your data no matter how small or insignificant they seem at the time. You can use an auto backup facility for
+this, if one's available, rather than saving and
+archiving multiple versions. You can also use a tracking facility on
+software such as Google Docs or on Wiki's. There are a number of version control
+softwares, such as Subversion and TortoiseSVN which are commonly used for
+software code. Remember that you can also delete or
+discard obsolete versions of your data. Just always be sure to retain
+the original rule copy. So, you've now completed this module where
+we've introduced you to the concepts of good research data organization, including
+file naming conventions and versioning. You can take a look at the further
+resources, where you'll find additional references and links that you can
+follow up for more information. You may decide to come back
+to these later on, and start another module in the meantime. If you do so, we recommend you move
+on to the data file formats module.

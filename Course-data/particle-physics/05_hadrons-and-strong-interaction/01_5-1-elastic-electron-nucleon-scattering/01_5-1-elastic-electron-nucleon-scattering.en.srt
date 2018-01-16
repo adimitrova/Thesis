@@ -1,0 +1,667 @@
+1
+00:00:00,000 --> 00:00:10,578
+[MUSIC]
+
+2
+00:00:10,578 --> 00:00:11,183
+Hello, and
+
+3
+00:00:11,183 --> 00:00:15,680
+welcome to this fifth module of our
+introductory course to subatomic physics.
+
+4
+00:00:15,680 --> 00:00:19,266
+In this module,
+we'll discuss the structure of hadrons and
+
+5
+00:00:19,266 --> 00:00:20,681
+strong interactions.
+
+6
+00:00:20,681 --> 00:00:21,756
+In this first video,
+
+7
+00:00:21,756 --> 00:00:26,244
+we discussed the elastic electromagnetic
+scattering between electrons and nucleons,
+
+8
+00:00:26,244 --> 00:00:29,429
+which is one of the ways used to
+study the structure of hadrons.
+
+9
+00:00:30,890 --> 00:00:31,920
+After following this video,
+
+10
+00:00:31,920 --> 00:00:35,590
+you will know the main properties of
+elastic scattering between fermions, and
+
+11
+00:00:35,590 --> 00:00:38,970
+the meaning of the different terms
+that enter into the cross section.
+
+12
+00:00:39,990 --> 00:00:42,010
+The form factor concept you will know, and
+
+13
+00:00:42,010 --> 00:00:46,310
+its interpretation,
+in terms of the size of the nucleon.
+
+14
+00:00:46,310 --> 00:00:47,370
+And you will get to know
+
+15
+00:00:47,370 --> 00:00:51,400
+the historic experiments at the Stanford
+Linear Accelerator Center in this area.
+
+16
+00:00:54,390 --> 00:00:58,200
+When the structure of an interaction is
+known, it can be used as a tool to better
+
+17
+00:00:58,200 --> 00:01:00,910
+understand the particles
+that are involved.
+
+18
+00:01:00,910 --> 00:01:04,140
+Within this video, how elastic
+electron nucleon scattering
+
+19
+00:01:04,140 --> 00:01:08,130
+is used to determine the internal
+structure of nucleons.
+
+20
+00:01:08,130 --> 00:01:11,830
+We take advantage of the fact that
+the electron as far as we know,
+
+21
+00:01:11,830 --> 00:01:15,720
+is a point like particle in that we know
+electromagnetic interactions very well.
+
+22
+00:01:17,000 --> 00:01:20,318
+We can thus elucidate a single,
+but important unknown,
+
+23
+00:01:20,318 --> 00:01:25,225
+which is the distribution and the dynamics
+of quarks inside the proton and neutron,
+
+24
+00:01:25,225 --> 00:01:28,356
+represented by the big blue
+dot in the right diagram.
+
+25
+00:01:29,758 --> 00:01:31,402
+We’ll see in video 5.3, also,
+
+26
+00:01:31,402 --> 00:01:35,740
+how meson resonances are formed by
+an incident photon, for example.
+
+27
+00:01:35,740 --> 00:01:39,815
+These can be used to better understand
+the strong force that binds quarks and
+
+28
+00:01:39,815 --> 00:01:40,700
+anti-quarks together.
+
+29
+00:01:42,840 --> 00:01:44,270
+The prototype process for
+
+30
+00:01:44,270 --> 00:01:48,960
+the scattering between point like
+fermions is electron muon scattering.
+
+31
+00:01:48,960 --> 00:01:52,330
+It is very similar to e+ e- annihilation,
+
+32
+00:01:52,330 --> 00:01:55,420
+with the Feynman diagram
+rotated by 90 degrees.
+
+33
+00:01:55,420 --> 00:01:57,930
+We will approach this process in steps.
+
+34
+00:01:57,930 --> 00:02:03,660
+The first step is already shown here,
+since we have encountered it in the past.
+
+35
+00:02:03,660 --> 00:02:07,076
+It is to consider scattering
+of a very heavy type target,
+
+36
+00:02:07,076 --> 00:02:10,388
+which is without structure and
+without spin.
+
+37
+00:02:10,388 --> 00:02:15,054
+Also, ignoring the spin of the incoming
+electron, and neglecting its mass,
+
+38
+00:02:15,054 --> 00:02:19,011
+we obtain the formula shown here,
+the Rutherford cross section,
+
+39
+00:02:19,011 --> 00:02:21,853
+which we already encountered in video 1.4.
+
+40
+00:02:21,853 --> 00:02:26,910
+As usual, the factor alpha squared comes
+from the two electromagnetic vertices.
+
+41
+00:02:26,910 --> 00:02:30,552
+The denominator contains the square
+of the characteristic energy.
+
+42
+00:02:33,333 --> 00:02:37,492
+It results from the propagator of the
+virtual photon, one over q^2, and
+
+43
+00:02:37,492 --> 00:02:40,832
+you can easily verify this in
+the approximation that the mass of
+
+44
+00:02:40,832 --> 00:02:43,180
+the electron is negligible, as I did here.
+
+45
+00:02:45,140 --> 00:02:48,470
+The angular distribution
+is extremely steep for
+
+46
+00:02:48,470 --> 00:02:52,330
+the scattering of point like particles,
+and it peaks at small angles.
+
+47
+00:02:54,070 --> 00:02:58,230
+This remains valid when including
+the effect of the target recoil, and
+
+48
+00:02:58,230 --> 00:03:00,220
+the spin of the particles.
+
+49
+00:03:00,220 --> 00:03:04,040
+The additional term in red,
+shown here with M
+
+50
+00:03:04,040 --> 00:03:06,619
+the mass of the target, takes
+into account the recoil.
+
+51
+00:03:07,660 --> 00:03:09,580
+It is the ratio between the incident and
+
+52
+00:03:09,580 --> 00:03:12,410
+the outgoing electron
+energy E’/E.
+
+53
+00:03:12,410 --> 00:03:16,060
+This ratio is 1 for an infinitely
+heavy target, but less than 1 for
+
+54
+00:03:16,060 --> 00:03:17,220
+an important recoil.
+
+55
+00:03:19,240 --> 00:03:23,100
+This formula still neglects the magnetic
+component of the interaction.
+
+56
+00:03:24,400 --> 00:03:29,790
+For a point like fermion target with a
+magnetic moment, µ = e/(2m).
+
+57
+00:03:29,790 --> 00:03:33,520
+One finds the complete Mott formula
+given on the bottom of the page,
+
+58
+00:03:33,520 --> 00:03:37,320
+quoted here in the laboratory frame, and
+for relativistic electron projectiles.
+
+59
+00:03:38,700 --> 00:03:41,280
+The last term in red is
+of a magnetic nature.
+
+60
+00:03:41,280 --> 00:03:44,280
+It becomes important at high
+momentum transfers q^2,
+
+61
+00:03:44,280 --> 00:03:46,410
+much larger than the mass
+of the target squared
+
+62
+00:03:47,830 --> 00:03:52,108
+The angular distribution, still roughly
+follows the form of the Rutherford
+
+63
+00:03:52,108 --> 00:03:56,913
+formula, the third term contains sub-terms
+proportional to cosine squared theta,
+
+64
+00:03:56,913 --> 00:03:58,425
+and to sine squared theta,
+
+65
+00:03:58,425 --> 00:04:02,149
+which reduce a little the steepness
+of the angular distribution.
+
+66
+00:04:04,864 --> 00:04:09,276
+The historic experiments on elastic
+scattering between electrons and protons
+
+67
+00:04:09,276 --> 00:04:14,630
+have been conducted at the Stanford Linear
+Accelerator Center in the 1960s and 1970s.
+
+68
+00:04:16,000 --> 00:04:18,660
+The experiment consisted
+of a liquid hydrogen target
+
+69
+00:04:19,900 --> 00:04:22,870
+bombarded by electrons
+of a few hundred MeV.
+
+70
+00:04:22,870 --> 00:04:25,740
+In the final state,
+only the electron is observed,
+
+71
+00:04:25,740 --> 00:04:30,330
+in two spectrometers positioned
+at variable scattering angles.
+
+72
+00:04:30,330 --> 00:04:33,320
+The kinematics of the hadronic
+final state is then deduced
+
+73
+00:04:33,320 --> 00:04:36,870
+from energy-momentum conservation,
+assuming a target at rest.
+
+74
+00:04:39,160 --> 00:04:42,950
+Here are some results on the cross section
+as a function of the scattering angle on the left,
+
+75
+00:04:42,950 --> 00:04:46,730
+and as a function of
+the incident electron energy on the right.
+
+76
+00:04:46,730 --> 00:04:51,532
+The measurements confirm the calculations
+at these modest energies,
+
+77
+00:04:51,532 --> 00:04:53,700
+already below one GeV.
+
+78
+00:04:54,780 --> 00:04:58,100
+One observes a steep angular
+distribution in the left plot, and
+
+79
+00:04:58,100 --> 00:05:01,660
+a strong reduction of the cross section
+with energy in the right plot,
+
+80
+00:05:01,660 --> 00:05:03,680
+as we expected from the formulae.
+
+81
+00:05:06,010 --> 00:05:10,420
+Let us now consider what happens if
+the target is not a point-like particle.
+
+82
+00:05:10,420 --> 00:05:14,880
+Let us first take the model of a static
+charge distribution rho(x),
+
+83
+00:05:14,880 --> 00:05:19,580
+normalized such that the charge
+of the target remains elementary,
+
+84
+00:05:19,580 --> 00:05:24,990
+which means that the integral over
+rho(x) must be equal to 1.
+
+85
+00:05:24,990 --> 00:05:29,874
+The cross section then will be
+reduced with respect to a point-like target
+
+86
+00:05:29,874 --> 00:05:33,710
+by a factor of F^2,
+a so-called form factor.
+
+87
+00:05:33,710 --> 00:05:39,420
+We have already used this concept in video
+2.2, when we discussed the size of nuclei.
+
+88
+00:05:39,420 --> 00:05:40,310
+In the static case,
+
+89
+00:05:40,310 --> 00:05:43,680
+F is simply the Fourier transform
+of the spatial charged distribution.
+
+90
+00:05:45,425 --> 00:05:47,320
+For small momentum transfers,
+
+91
+00:05:47,320 --> 00:05:52,350
+one can develop the form vectors
+in powers of q times x.
+
+92
+00:05:54,920 --> 00:06:00,390
+If the distribution possess
+spherical symmetry, that is rho(x)
+
+93
+00:06:00,390 --> 00:06:05,950
+is only a function of r,
+and not of the spatial
+
+94
+00:06:05,950 --> 00:06:11,275
+directions separately,
+terms with odd exponent will not conribute.
+
+95
+00:06:11,275 --> 00:06:16,478
+Thus, the form factor measures the mean
+square radius of the charge distribution,
+
+96
+00:06:16,478 --> 00:06:21,450
+<r^2>, which represents
+the size of the distribution.
+
+97
+00:06:22,880 --> 00:06:27,150
+Take, for example, an exponential
+distribution as a function of distance.
+
+98
+00:06:27,150 --> 00:06:31,480
+It leads to the so-called dipolar
+form factor that is shown
+
+99
+00:06:31,480 --> 00:06:33,800
+in the last formula on the right.
+
+100
+00:06:36,090 --> 00:06:39,210
+It is clear that in the case of
+a non-static charge distribution,
+
+101
+00:06:39,210 --> 00:06:40,970
+things get more complicated.
+
+102
+00:06:40,970 --> 00:06:45,780
+First, magnetic interactions come in,
+since the target is moving.
+
+103
+00:06:45,780 --> 00:06:50,553
+Second, the charge distribution
+itself changes during the time
+
+104
+00:06:50,553 --> 00:06:56,201
+represented by the time-like component
+of the four-momentum transfer q_0.
+
+105
+00:06:56,201 --> 00:07:00,065
+By the action of the moving charges
+inside the distribution, electric and
+
+106
+00:07:00,065 --> 00:07:03,820
+magnetic terms will be modified, and
+their functions will in fact be mixed up.
+
+107
+00:07:05,060 --> 00:07:08,820
+We then find the cross section
+given here with the parameter tau,
+
+108
+00:07:08,820 --> 00:07:12,160
+which is the ratio between the momentum
+transfer and the target mass squared,
+
+109
+00:07:13,750 --> 00:07:17,410
+the ratio of the two quantities,
+which characterize this process.
+
+110
+00:07:18,680 --> 00:07:23,530
+We call G_E and G_M the electric and
+magnetic form factors,
+
+111
+00:07:23,530 --> 00:07:27,880
+although the distinction between the two
+obviously depends on the reference frame.
+
+112
+00:07:29,160 --> 00:07:33,039
+In the same sense, one can attribute
+G_E and G_M to the Fourier transforms
+
+113
+00:07:33,039 --> 00:07:37,114
+of the charge and magnetic moment
+distribution of the target particle,
+
+114
+00:07:37,114 --> 00:07:40,349
+even though this interpretation is,
+strictly speaking,
+
+115
+00:07:40,349 --> 00:07:42,890
+only valid in a very
+special reference frame.
+
+116
+00:07:45,627 --> 00:07:49,909
+The form factors G_E and
+G_M of the proton are measured by analyzing
+
+117
+00:07:49,909 --> 00:07:55,860
+the differential cross sections for
+the reaction e- p -> e- p,
+
+118
+00:07:55,860 --> 00:07:58,940
+and separating the terms proportional
+to cosine squared theta and
+
+119
+00:07:58,940 --> 00:08:02,090
+sine squared theta of
+the angular distribution.
+
+120
+00:08:02,090 --> 00:08:06,260
+We observe that G_E and G_M follow
+the dipolar shape, predicted for
+
+121
+00:08:06,260 --> 00:08:09,420
+exponential charge distributions.
+
+122
+00:08:09,420 --> 00:08:14,411
+The parameter Lambda then characterizes
+the size of the distribution,
+
+123
+00:08:14,411 --> 00:08:18,800
+and we find Lambda equal to 0.84 GeV,
+in both cases.
+
+124
+00:08:18,800 --> 00:08:22,050
+The size of the distribution is thus 
+of order 1 fm and
+
+125
+00:08:22,050 --> 00:08:25,350
+the same for electric and
+magnetic form factors.
+
+126
+00:08:26,400 --> 00:08:30,700
+Finding the same distribution for
+both form factors is not a miracle.
+
+127
+00:08:30,700 --> 00:08:35,110
+The quarks inside the nucleon are
+at the origin of both charge and
+
+128
+00:08:35,110 --> 00:08:38,340
+magnetic moment distributions,
+such that we find
+
+129
+00:08:38,340 --> 00:08:43,160
+the same distribution because they're
+caused by the same ingredient.
+
+130
+00:08:45,200 --> 00:08:49,937
+The figure shows representative
+results obtained by Hoffstetter and
+
+131
+00:08:49,937 --> 00:08:52,894
+collaborators at SLAC in the 1960s.
+
+132
+00:08:52,894 --> 00:08:56,778
+The form factors G_E, shown on the left,
+and G_M, shown on the right, for
+
+133
+00:08:56,778 --> 00:09:01,230
+the proton are measured as a function
+of the momentum transfer squared,
+
+134
+00:09:01,230 --> 00:09:05,370
+and extracted from the cross section for
+the elastic electron proton cross section.
+
+135
+00:09:06,750 --> 00:09:11,760
+One finds the dipolar shape,
+G equals one over one plus q^2 over
+
+136
+00:09:11,760 --> 00:09:18,010
+Lambda squared, both squared, with the same
+size perimeter Lambda equal to 0.84 GeV.
+
+137
+00:09:20,120 --> 00:09:23,944
+In the next video, we will see what
+happens when we increase q^2,
+
+138
+00:09:23,944 --> 00:09:27,722
+such that the exchanged photon can excite,
+or even break the nucleon.
+
+139
+00:09:27,722 --> 00:09:33,769
+[MUSIC]

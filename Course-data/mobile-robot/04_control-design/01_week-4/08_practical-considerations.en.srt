@@ -1,0 +1,614 @@
+1
+00:00:00,012 --> 00:00:04,960
+So, last lecture was really satisfying 
+because there, we finally understood how 
+
+2
+00:00:04,960 --> 00:00:09,638
+we can do control design using the state 
+and then at the same time, figure out 
+
+3
+00:00:09,638 --> 00:00:14,216
+what the state is and everything works. 
+Thanks to this fantastic principle known, 
+
+4
+00:00:14,216 --> 00:00:18,549
+known as the separation principle. 
+So, what it tells us is that we can 
+
+5
+00:00:18,549 --> 00:00:22,973
+completely decouple a control and 
+observer design, and here, I have a 
+
+6
+00:00:22,973 --> 00:00:26,612
+rather important little parentheses that 
+says, in theory. 
+
+7
+00:00:26,612 --> 00:00:31,497
+Now, there is a great American thinker 
+that has figured out that this in theory 
+
+8
+00:00:31,497 --> 00:00:35,918
+is actually kind of important. 
+This is Yogi Berra, the baseball player 
+
+9
+00:00:35,918 --> 00:00:40,897
+who presumably said, in theory, theory 
+and practice are the same. In practice, 
+
+10
+00:00:40,897 --> 00:00:44,963
+they are not. 
+Now, this is rather profound and it has 
+
+11
+00:00:44,963 --> 00:00:51,254
+some implications on the fact that just 
+because the theory tells us something, we 
+
+12
+00:00:51,254 --> 00:00:54,636
+need to be aware of certain things at 
+least. 
+
+13
+00:00:54,636 --> 00:01:00,281
+So, the first thing we need to be aware 
+of is, the controller is really only 
+
+14
+00:01:00,281 --> 00:01:05,102
+useful once the estimate, that the 
+estimated state is close to the actual 
+
+15
+00:01:05,102 --> 00:01:07,830
+state, 
+meaning, that the controller doesn't 
+
+16
+00:01:07,830 --> 00:01:11,461
+really do anything useful until the 
+observer has converged. 
+
+17
+00:01:11,461 --> 00:01:16,258
+So, what we want to do is want to make 
+sure that the observer converges quickly. 
+
+18
+00:01:16,258 --> 00:01:20,798
+What that means is that we want the 
+observer to be faster which in turn means 
+
+19
+00:01:20,798 --> 00:01:25,575
+that this eigenvalues that we were 
+picking should be larger for the observer 
+
+20
+00:01:25,575 --> 00:01:28,851
+than the controller. 
+Now, one thing we saw with large 
+
+21
+00:01:28,851 --> 00:01:31,581
+eigenvalues though, is that we get large 
+gains. 
+
+22
+00:01:31,581 --> 00:01:35,813
+So, in the control side, this is kind of 
+bad, because that means that we have 
+
+23
+00:01:35,813 --> 00:01:39,982
+large actuation signals, which means that 
+we can saturate the actuators. 
+
+24
+00:01:39,982 --> 00:01:45,860
+In the controller side, I'm sorry, the 
+observer side, that's no big deal because 
+
+25
+00:01:45,860 --> 00:01:49,048
+the observer is entirely done in 
+software. 
+
+26
+00:01:49,048 --> 00:01:54,021
+There is nothing that's going to 
+saturate, so we can actually make our 
+
+27
+00:01:54,021 --> 00:01:59,882
+observer eigenvalues large without having 
+to run into issues like saturation. 
+
+28
+00:01:59,882 --> 00:02:05,589
+So practically, what we need to do is 
+pick the eigenvalues typically in such a 
+
+29
+00:02:05,589 --> 00:02:10,734
+way that the controller eigenvalues are 
+all, first of all, they all need to have 
+
+30
+00:02:10,734 --> 00:02:15,076
+negative real part, of course. 
+And then, what we want to do is we want 
+
+31
+00:02:15,076 --> 00:02:20,292
+to make the observer eigenvalues bigger 
+because that means that the observer is 
+
+32
+00:02:20,292 --> 00:02:24,795
+faster than what the controller is. 
+So, here is a completely made up 
+
+33
+00:02:24,795 --> 00:02:28,958
+eigenvalue selection. 
+But the important thing here is that the 
+
+34
+00:02:28,958 --> 00:02:33,985
+slowest observer eigenvalue, which really 
+dictates how quickly the observer 
+
+35
+00:02:33,985 --> 00:02:39,062
+converges, is significantly faster than 
+the slowest controller eigenvalue. 
+
+36
+00:02:39,062 --> 00:02:44,547
+So, that's something that we typically 
+want when we're building our joint 
+
+37
+00:02:44,547 --> 00:02:47,697
+observer control design structures. 
+Okay. 
+
+38
+00:02:47,697 --> 00:02:53,062
+Having said that, let's actually use this 
+to control a humanoid robot. 
+
+39
+00:02:53,062 --> 00:02:59,037
+And this is the Aldebaran Nao that we're 
+going to be working on, and in fact, what 
+
+40
+00:02:59,037 --> 00:03:05,022
+we can control on this thing are joint 
+angles, meaning how the different angles 
+
+41
+00:03:05,022 --> 00:03:09,299
+are, are moving. 
+And luckily for us, we actually have 
+
+42
+00:03:09,299 --> 00:03:15,769
+detailed models of these joint angles. 
+In fact, for a given joint, the angular 
+
+43
+00:03:15,769 --> 00:03:19,646
+acceleration is 1/J times Ki minus B 
+theta dot. 
+
+44
+00:03:19,646 --> 00:03:23,827
+And these things, well, they are physical 
+things. 
+
+45
+00:03:23,827 --> 00:03:29,247
+So, J is the moment of inertia, i is our 
+input, alright, so i is actually equal to 
+
+46
+00:03:29,247 --> 00:03:32,327
+u, here in this case. 
+This is our input to the system. 
+
+47
+00:03:32,327 --> 00:03:34,827
+This is the current replying at the 
+motor. 
+
+48
+00:03:34,827 --> 00:03:38,677
+Well, K is a torque constant that 
+translates roughly currents into 
+
+49
+00:03:38,677 --> 00:03:42,502
+accelerations and then there's always a 
+friction coefficient, 
+
+50
+00:03:42,502 --> 00:03:45,497
+the viscous friction coefficient in these 
+motors. 
+
+51
+00:03:45,497 --> 00:03:50,698
+Now, luckily for us when you buy a robot 
+like this, someone has already figured 
+
+52
+00:03:50,698 --> 00:03:56,228
+out these physical parameters and there 
+are user manuals that describe what these 
+
+53
+00:03:56,228 --> 00:03:59,685
+parameters are. 
+Now, we need to put this on state base 
+
+54
+00:03:59,685 --> 00:04:04,575
+form. And the first thing we're going to 
+do, as always is say, well x1 is theta 
+
+55
+00:04:04,575 --> 00:04:06,790
+and x2 is theta dot, 
+alright? 
+
+56
+00:04:06,790 --> 00:04:12,325
+We're also going to say that what we can 
+match around this thing is the angle 
+
+57
+00:04:12,325 --> 00:04:15,352
+itself. 
+So, y is going to be equal to theta. 
+
+58
+00:04:15,352 --> 00:04:21,231
+Well, with this choice, we get a linear 
+time-invariance system that looks like 
+
+59
+00:04:21,231 --> 00:04:25,330
+this. 
+x dot is 0 1 x 0-b/Jx and then we have 
+
+60
+00:04:25,330 --> 00:04:32,002
+this b matrix which is 0K/J times u and y 
+is 1, 0 x is since we're pulling out the, 
+
+61
+00:04:32,002 --> 00:04:36,718
+the, orientation. 
+Now, one nice thing about this system is 
+
+62
+00:04:36,718 --> 00:04:41,911
+that it is completely controllable and 
+completely observable. 
+
+63
+00:04:41,911 --> 00:04:46,639
+So, what we have indeed learned in this 
+class should be applicable. 
+
+64
+00:04:46,639 --> 00:04:50,330
+Okay. So, let's do that. 
+The last thing we want to do though is we 
+
+65
+00:04:50,330 --> 00:04:55,416
+actually don't want to hold or stabilize 
+the Nao into all the angles being zero. 
+
+66
+00:04:55,416 --> 00:05:00,130
+We want to be able to move it around. 
+So, what we want to do is, we actually 
+
+67
+00:05:00,130 --> 00:05:05,189
+would like to track a reference angle. 
+We would like the, the angle of joints to 
+
+68
+00:05:05,189 --> 00:05:08,770
+be something. 
+So, I'm going to define a new variable e, 
+
+69
+00:05:08,770 --> 00:05:12,375
+it stands for error. 
+It's not the estimation error, it's 
+
+70
+00:05:12,375 --> 00:05:16,745
+another error, which is the current angle 
+minus the desired angle. 
+
+71
+00:05:16,745 --> 00:05:21,387
+And then as the second variable tossing 
+in the angular velocity. 
+
+72
+00:05:21,387 --> 00:05:26,862
+And I would like to drive e to zero 
+because if I have e=0, then I have theta 
+
+73
+00:05:26,862 --> 00:05:31,462
+equal to theta desired, meaning, I'm 
+holding it at the angle I would like. 
+
+74
+00:05:31,462 --> 00:05:36,462
+And I have theta dot equal to zero, which 
+means I'm actually holding it there. 
+
+75
+00:05:36,462 --> 00:05:40,807
+I'm not moving through it only. 
+Okay, so this is what we would like to 
+
+76
+00:05:40,807 --> 00:05:43,582
+do. 
+okay, then we need to write down the 
+
+77
+00:05:43,582 --> 00:05:48,739
+dynamics for our new variable e. 
+Well, e dot, well, it's simply, Ax+Bu, 
+
+78
+00:05:48,739 --> 00:05:55,663
+because e dot is really, [SOUND] well, 
+it's theta dot minus theta desired dot 
+
+79
+00:05:55,663 --> 00:06:02,424
+theta double dot, right? But this thing 
+is 0 because the, the desired heading is 
+
+80
+00:06:02,424 --> 00:06:09,544
+constant, so all we're left with is theta 
+dot, theta double dot, which is the same 
+
+81
+00:06:09,544 --> 00:06:13,164
+as x dot, 
+right? This is the same as x dot so what 
+
+82
+00:06:13,164 --> 00:06:17,000
+we do is we plug in the equation for x 
+dot and we get this. 
+
+83
+00:06:17,000 --> 00:06:20,324
+Now, we don't want to express this in 
+terms of x. 
+
+84
+00:06:20,324 --> 00:06:25,130
+We want to express it in terms of e. 
+And what we get if we plug in e is, we 
+
+85
+00:06:25,130 --> 00:06:29,975
+get this expression instead. 
+Now luckily for us, a times this vector 
+
+86
+00:06:29,975 --> 00:06:36,026
+is actually equal to zero. 
+And I encourage you to compute this so 
+
+87
+00:06:36,026 --> 00:06:42,321
+that you trust me. But having done that, 
+what we get is that e dot is equal to 
+
+88
+00:06:42,321 --> 00:06:47,692
+Ae+Bu meaning we have same system 
+dynamics as before but now, defined on 
+
+89
+00:06:47,692 --> 00:06:52,892
+this error, where the error is the 
+current orientation or angle of the joint 
+
+90
+00:06:52,892 --> 00:06:57,842
+minus the desired angle of the joint. 
+So, this is the dynamics we're caring 
+
+91
+00:06:57,842 --> 00:07:00,917
+about. 
+Well, we have to do the same thing to the 
+
+92
+00:07:00,917 --> 00:07:04,564
+output. 
+The output is Cx, well again, we replace 
+
+93
+00:07:04,564 --> 00:07:10,184
+x with e plus this vector. 
+So, this is Ce+C times this vector, and 
+
+94
+00:07:10,184 --> 00:07:16,863
+remember that C was actually 1,0. 
+So, if I take 1,0 times that, out comes 
+
+95
+00:07:16,863 --> 00:07:21,035
+data desired. 
+So, my output is C times e plus theta 
+
+96
+00:07:21,035 --> 00:07:24,529
+desired. 
+Now, this doesn't scare us one bit. 
+
+97
+00:07:24,529 --> 00:07:29,875
+We just plug it into our standard 
+controller and observer design 
+
+98
+00:07:29,875 --> 00:07:34,339
+methodology. 
+So, u is -K, not e because we don't know 
+
+99
+00:07:34,339 --> 00:07:37,448
+e but e hat, 
+which is our estimate of e. 
+
+100
+00:07:37,448 --> 00:07:39,132
+And e hat dot, 
+well, 
+
+101
+00:07:39,132 --> 00:07:43,442
+it has the standard predictor part and it 
+has the corrector part. 
+
+102
+00:07:43,442 --> 00:07:48,400
+And the corrector part is the current 
+output minus what the output would have 
+
+103
+00:07:48,400 --> 00:07:51,411
+been. 
+And the only difference is I have to keep 
+
+104
+00:07:51,411 --> 00:07:55,505
+track of this little extra theta desired. 
+But it's no big deal. 
+
+105
+00:07:55,505 --> 00:07:59,599
+It acts exactly the same way. 
+So, this is now my control structure. 
+
+106
+00:07:59,599 --> 00:08:04,416
+And instead of me talking about it, why 
+don't we move on to see an actual 
+
+107
+00:08:04,416 --> 00:08:07,867
+humanoid robot executing this controlled 
+strategy. 
+
+108
+00:08:07,867 --> 00:08:12,925
+So now, that we have designed a, an 
+observer based state feedback controller 
+
+109
+00:08:12,925 --> 00:08:19,125
+for controlling the joint angles of this 
+humanoid robot, the Aldebaran Nao, we're 
+
+110
+00:08:19,125 --> 00:08:24,230
+ready to do it for real. 
+And I'm here with Amy LaViers. She was a 
+
+111
+00:08:24,230 --> 00:08:28,932
+graduate student at Georgia Tech. 
+And what she has done is made the Nao 
+
+112
+00:08:28,932 --> 00:08:33,539
+move its arms and its head, and even its 
+upper body, in such a way that it is 
+
+113
+00:08:33,539 --> 00:08:38,638
+executing a friendly wave towards, 
+probably you, who are watching this right 
+
+114
+00:08:38,638 --> 00:08:41,282
+now. 
+And, what's happening is we're running 
+
+115
+00:08:41,282 --> 00:08:46,218
+the same controller on all the different 
+joints with different desired angles to 
+
+116
+00:08:46,218 --> 00:08:49,931
+get the effect out. 
+So, Amy, why don't we take the Nao for a 
+
+117
+00:08:49,931 --> 00:08:55,756
+little spin there and see what it can do? 
+So, what's going on here is that we're 
+
+118
+00:08:55,756 --> 00:09:02,570
+sequentially running multiple desired 
+angles and that's how we're getting this 
+
+119
+00:09:02,570 --> 00:09:06,224
+effect. 
+In fact, why don't we watch this again 
+
+120
+00:09:06,224 --> 00:09:10,816
+because I think this is quite, it's quite 
+charming to be honest. 
+
+121
+00:09:10,816 --> 00:09:17,018
+So, here we go. 
+Observer-based state feedback controlling 
+
+122
+00:09:17,018 --> 00:09:17,775
+action. 
+Oh, thank you very much, 
+
+123
+00:09:17,775 --> 00:09:17,775
+Amy. 
+And thank you. 

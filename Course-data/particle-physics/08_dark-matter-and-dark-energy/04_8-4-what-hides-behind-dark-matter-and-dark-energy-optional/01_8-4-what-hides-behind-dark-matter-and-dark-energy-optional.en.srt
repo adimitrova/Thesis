@@ -1,0 +1,926 @@
+1
+00:00:00,006 --> 00:00:05,650
+[MUSIC]
+>> Here we are with the last video
+
+2
+00:00:05,650 --> 00:00:09,490
+of the last module of our
+introductory course on
+
+3
+00:00:15,100 --> 00:00:17,390
+particle physics. 
+
+4
+00:00:17,390 --> 00:00:22,621
+And in this last video, we will 
+go into some more depth
+
+5
+00:00:22,621 --> 00:00:28,559
+on the preceding discussion of
+dark energy and dark matter. 
+
+6
+00:00:28,559 --> 00:00:33,186
+To do that, we have invited ourselves 
+to a colleague from the 
+
+7
+00:00:33,186 --> 00:00:37,440
+theoretical physics department 
+of University of Geneva. 
+
+8
+00:00:37,440 --> 00:00:41,630
+Let me present to you Ruth Durrer,
+professor of theoretical physics 
+
+9
+00:00:41,630 --> 00:00:45,880
+who is a specialist on cosmology,
+
+10
+00:00:45,880 --> 00:00:50,740
+the physics subject which remains most
+
+11
+00:00:50,740 --> 00:00:55,780
+concerned with these two phenomena,
+thus far inaccessible
+
+12
+00:00:57,710 --> 00:01:02,300
+to experimentation at 
+existing accelerators. 
+
+13
+00:01:03,930 --> 00:01:09,060
+So, at the end of this video, 
+you will understand a bit better how
+
+14
+00:01:10,260 --> 00:01:15,680
+dark matter and dark energy act on 
+the universe that surrounds us. 
+
+15
+00:01:17,470 --> 00:01:18,620
+So, Ruth,
+
+16
+00:01:19,910 --> 00:01:25,000
+I think there is little doubt on
+the existence of dark matter, is there?
+
+17
+00:01:25,000 --> 00:01:28,840
+Or am I mistaken, are there
+still people who believe that
+
+18
+00:01:28,840 --> 00:01:31,340
+dark matter does not exist?
+
+19
+00:01:31,340 --> 00:01:32,920
+>> Yes, there are such people. 
+
+20
+00:01:32,920 --> 00:01:38,820
+Dark matter, as you have already heard 
+in the preceding videos,
+
+21
+00:01:38,820 --> 00:01:43,050
+has been confirmed by only one
+interaction, which is gravity, and by
+
+22
+00:01:43,050 --> 00:01:48,290
+no other, so they ask 
+the question: should our
+
+23
+00:01:48,290 --> 00:01:53,720
+theory of gravitation – to discover
+dark matter, one only needs 
+
+24
+00:01:53,720 --> 00:01:58,060
+Newtonian gravitation – should it be
+modified at large distance scales.
+
+25
+00:01:58,060 --> 00:02:03,820
+There are people who have tried that,
+and who were able to explain, for example,
+
+26
+00:02:03,820 --> 00:02:09,650
+the fact that the rotational curve of 
+galaxies does not descend 
+
+27
+00:02:09,650 --> 00:02:15,570
+like one would expect, if
+gravitation obeys Kepler’s law. 
+
+28
+00:02:15,570 --> 00:02:18,910
+But even if one can modify
+
+29
+00:02:18,910 --> 00:02:24,350
+gravitation such that one obtains
+flat rotational curves also,
+
+30
+00:02:24,350 --> 00:02:29,310
+there is still a lot more
+confirmation for the existence of dark matter. 
+
+31
+00:02:29,310 --> 00:02:32,085
+>> Like gravitational lenses…
+>> Exactly.
+
+32
+00:02:32,085 --> 00:02:32,925
+>> …the motion of galaxies,
+
+33
+00:02:32,925 --> 00:02:35,756
+and their interactions, like the 
+Bullet Cluster for example…
+
+34
+00:02:35,756 --> 00:02:36,342
+>> Exactly. 
+
+35
+00:02:36,342 --> 00:02:41,515
+And if you want to explain all that by
+modifying the theory of gravitation, 
+
+36
+00:02:41,515 --> 00:02:46,025
+you can for example do this
+with what is called TeVeS,
+
+37
+00:02:46,025 --> 00:02:51,865
+but it is a horribly complicated theory and
+one makes hypotheses which are much more
+
+38
+00:02:53,520 --> 00:03:00,400
+complex and non-minimal, 
+than to just add a particle. 
+
+39
+00:03:00,400 --> 00:03:03,764
+So, I would say that 99% of 
+
+40
+00:03:03,764 --> 00:03:08,580
+the scientists are 
+convinced that dark matter
+
+41
+00:03:08,580 --> 00:03:13,770
+is what it takes and not a 
+modified theory of gravity. 
+
+42
+00:03:13,770 --> 00:03:18,030
+>> And in that case, there should be
+a particle which constitutes 
+
+43
+00:03:19,130 --> 00:03:26,400
+dark matter, and one should be able to see
+its interactions, either among themselves,
+
+44
+00:03:26,400 --> 00:03:31,330
+as we try with AMS, or with normal matter
+as out colleagues
+
+45
+00:03:31,330 --> 00:03:35,860
+try in Zurich, for example, 
+in their underground experiments, or
+
+46
+00:03:35,860 --> 00:03:43,150
+by the artificial creation of this matter,
+at the LHC for example. 
+
+47
+00:03:43,150 --> 00:03:48,170
+So, up to now, we have not
+succeeded to do so,
+
+48
+00:03:48,170 --> 00:03:51,800
+but it is never too late to try. 
+
+49
+00:03:51,800 --> 00:03:55,590
+So, if such a particle existed,
+
+50
+00:03:55,590 --> 00:04:00,140
+what would be the implication 
+for the Standard Model of
+
+51
+00:04:00,140 --> 00:04:06,210
+the existence of an additional particle,
+which we need to explain this, don’t we?
+
+52
+00:04:06,210 --> 00:04:06,710
+>> Of course,
+
+53
+00:04:06,710 --> 00:04:11,680
+such a particle is beyond the 
+Standard Model of particle physics
+
+54
+00:04:11,680 --> 00:04:15,260
+but there are plenty of hypotheses 
+on the existence of such a particle. 
+
+55
+00:04:15,260 --> 00:04:18,932
+For example, in supersymmetry. 
+
+56
+00:04:18,932 --> 00:04:25,040
+one expects that there be a
+stable supersymmetric particle.
+
+57
+00:04:25,040 --> 00:04:30,930
+Or one can add a heavy neutrino,
+to explain,
+
+58
+00:04:30,930 --> 00:04:37,060
+for example, the generation of quarks and
+leptons in the universe
+
+59
+00:04:37,060 --> 00:04:41,610
+and this could, at the same time, 
+also play the role of dark matter. 
+
+60
+00:04:41,610 --> 00:04:46,150
+A low mass neutrino does not work,
+because it has too large velocities
+
+61
+00:04:46,150 --> 00:04:51,660
+to be confined in galaxies, etc. 
+
+62
+00:04:51,660 --> 00:04:55,445
+So, we need a particle
+with a minimal mass of at least
+
+63
+00:04:55,445 --> 00:04:58,905
+some kiloelectronvolts. 
+
+64
+00:04:58,905 --> 00:05:04,835
+Standard candidates rather have
+some hundred GeV of mass. 
+
+65
+00:05:05,945 --> 00:05:11,110
+But what is the interaction of 
+this particle with normal matter?
+
+66
+00:05:11,110 --> 00:05:12,550
+Of course, we do not know. 
+
+67
+00:05:14,140 --> 00:05:19,600
+If it is comparable to weak interactions,
+in the coming years
+
+68
+00:05:19,600 --> 00:05:25,050
+one should discover it either at LHC,
+or with direct or indirect 
+
+69
+00:05:25,050 --> 00:05:30,530
+interactions. But if the interaction
+is much weaker,
+
+70
+00:05:30,530 --> 00:05:35,780
+if we had, for example 
+a gravitino, which interacts via the 
+
+71
+00:05:35,780 --> 00:05:41,020
+gravitational force, we will not discover it
+by these experiments. 
+
+72
+00:05:41,020 --> 00:05:44,290
+>> But we are still in good hope
+that during our own active lifetime
+
+73
+00:05:44,290 --> 00:05:47,240
+we will know of what is consists. 
+
+74
+00:05:47,240 --> 00:05:48,785
+>> Yes, I do hope so. 
+
+75
+00:05:48,785 --> 00:05:52,165
+It is one of these problems, which are
+with us since 70-80 years.
+
+76
+00:05:52,165 --> 00:05:52,805
+>> Since Zwicky, yes. 
+
+77
+00:05:52,805 --> 00:05:54,575
+>> Yeah. 
+>> So, on the contrary,
+
+78
+00:05:54,575 --> 00:05:59,945
+I have much less hope as far as
+dark energy is concerned, no? 
+
+79
+00:05:59,945 --> 00:06:07,575
+So, can you share with us your 
+vision of dark matter. 
+
+80
+00:06:07,575 --> 00:06:09,628
+First of all, according to you, what is it?
+
+81
+00:06:09,628 --> 00:06:14,180
+>> I don’t know.
+
+82
+00:06:14,180 --> 00:06:18,260
+This is the honest answer, we must 
+leave somethings to do
+
+83
+00:06:18,260 --> 00:06:21,660
+for young people, to explain to us. 
+
+84
+00:06:21,660 --> 00:06:24,550
+I don’t know what dark energy is. 
+
+85
+00:06:25,840 --> 00:06:31,730
+So, I can tell you that current
+data are in good agreement with the
+
+86
+00:06:31,730 --> 00:06:36,360
+assumption, that dark energy is
+just a cosmological constant.
+
+87
+00:06:36,360 --> 00:06:38,550
+But I will talk a little about how
+
+88
+00:06:38,550 --> 00:06:42,620
+one has discovered the existence 
+of this dark energy. 
+
+89
+00:06:42,620 --> 00:06:47,580
+One has seen that the universe is 
+currently in an accelerated expansion, and not
+
+90
+00:06:47,580 --> 00:06:53,550
+as one had thought, that due to gravitation
+the expansion would slow down more and more.
+
+91
+00:06:53,550 --> 00:06:57,480
+In fact, one has found that,
+since a while,
+
+92
+00:06:57,480 --> 00:07:01,410
+this slowing down has reversed
+and has become an acceleration. 
+
+93
+00:07:02,600 --> 00:07:04,130
+And this acceleration,
+
+94
+00:07:04,130 --> 00:07:10,770
+one can explain it, if there is a component
+practically with negative gravity. 
+
+95
+00:07:10,770 --> 00:07:13,820
+So, we need, for example, something which has
+
+96
+00:07:13,820 --> 00:07:17,360
+a very strong pressure, a 
+negative pressure. 
+
+97
+00:07:17,360 --> 00:07:22,150
+Negative energy density is not
+possible
+
+98
+00:07:22,150 --> 00:07:25,520
+according to the Friedmann equations
+
+99
+00:07:25,520 --> 00:07:30,470
+which are a consequence of the 
+Einstein equations…
+
+100
+00:07:30,470 --> 00:07:35,590
+>> Well, we have scratched the surface
+of these equations a little bit earlier in the course,
+
+101
+00:07:35,590 --> 00:07:41,016
+so, if you are no more familiar with this,
+
+102
+00:07:41,016 --> 00:07:47,310
+please watch again the previous video, which 
+talks just about the Friedmann equation.
+
+103
+00:07:47,310 --> 00:07:53,230
+So, if the famous lambda
+is the only thing which exists,
+
+104
+00:07:53,230 --> 00:07:59,180
+this would be a property of our universe, which was 
+created together with our universe, wouldn’t it?
+
+105
+00:07:59,180 --> 00:08:02,950
+So, by chance, well,
+it has the value it has,
+
+106
+00:08:02,950 --> 00:08:04,750
+and we must live with it, no?
+
+107
+00:08:04,750 --> 00:08:06,170
+>> It is more complicated than that. 
+
+108
+00:08:06,170 --> 00:08:10,800
+The problem is that this lambda,
+this cosmological constant,
+
+109
+00:08:10,800 --> 00:08:13,440
+must have changed, for example, 
+
+110
+00:08:13,440 --> 00:08:17,930
+if the interactions of the universe
+passed through a phase transition.
+
+111
+00:08:17,930 --> 00:08:18,610
+>> Yes.
+
+112
+00:08:18,610 --> 00:08:20,770
+Like inflation, to just name one. 
+
+113
+00:08:20,770 --> 00:08:23,120
+>> For example, during inflation. 
+
+114
+00:08:23,120 --> 00:08:28,220
+And during that transition,
+the cosmological constant has changed
+
+115
+00:08:28,220 --> 00:08:33,265
+its value, which was 10 to the power 120
+
+116
+00:08:33,265 --> 00:08:38,765
+greater that the value 
+we measure today. 
+
+117
+00:08:38,765 --> 00:08:44,435
+So, this value requires an
+enormous fine tuning. 
+
+118
+00:08:44,435 --> 00:08:46,675
+>> I.e. of the initial conditions
+to get there. 
+
+119
+00:08:46,675 --> 00:08:49,955
+>> And most of all this
+is not what we call
+
+120
+00:08:49,955 --> 00:08:54,760
+a « natural » fine tuning
+
+121
+00:08:54,760 --> 00:08:59,790
+in the sense that in 
+field theory
+
+122
+00:09:00,860 --> 00:09:04,770
+this constant is not 
+protected from corrections.
+
+123
+00:09:04,770 --> 00:09:09,750
+If one modifies the theory a litle bit,
+this constant changes enormously, etc. 
+
+124
+00:09:09,750 --> 00:09:14,630
+So, from the point of view of
+a quantum field theory,
+
+125
+00:09:14,630 --> 00:09:19,550
+such a constant is very, very 
+unnatural, unexpected, bizarre. 
+
+126
+00:09:20,650 --> 00:09:23,800
+>> So, all of this requires effectively
+
+127
+00:09:23,800 --> 00:09:26,055
+that his field is a quantum field, no?
+
+128
+00:09:26,055 --> 00:09:30,360
+Is it really necessary 
+that this be so,
+
+129
+00:09:30,360 --> 00:09:33,500
+or could it not simply be
+a classical field,
+
+130
+00:09:33,500 --> 00:09:36,960
+which does not have a quantum representation,
+which does not exist
+
+131
+00:09:36,960 --> 00:09:42,630
+in a theory at small scales,
+does not exist or is not necessary?
+
+132
+00:09:42,630 --> 00:09:47,760
+>> Well, the cosmological constant 
+itself is not a field, but it is
+
+133
+00:09:47,760 --> 00:09:53,020
+an effective constant, which comes from
+the quantisation of all other fields. 
+
+134
+00:09:53,020 --> 00:09:57,810
+And that the electron is well
+represented by a quantum field,
+
+135
+00:09:57,810 --> 00:10:01,650
+or the quarks, I believe that you
+have discussed that in your course. 
+
+136
+00:10:01,650 --> 00:10:09,970
+So you cannot say that at very small scales,
+this is not the case. 
+
+137
+00:10:09,970 --> 00:10:14,790
+I would even say that usually
+all fields, even effective ones,
+
+138
+00:10:14,790 --> 00:10:18,980
+even non-fundamental ones, can be
+described by quantum fields,
+
+139
+00:10:18,980 --> 00:10:23,260
+that they exhibit a quantum nature
+if one talks about very small excitations. 
+
+140
+00:10:23,260 --> 00:10:26,270
+>> Like phonons in a solid,
+for example. 
+
+141
+00:10:26,270 --> 00:10:29,520
+>> Exactly, like phonons
+in crystals. 
+
+142
+00:10:29,520 --> 00:10:35,070
+But here, we have two explanations, which are
+
+143
+00:10:35,070 --> 00:10:41,530
+a little bit more satisfactory, but more
+complicated and also not very attractive.
+
+144
+00:10:41,530 --> 00:10:45,020
+One is, one adds a scalar field,
+
+145
+00:10:45,020 --> 00:10:49,150
+which is not constant but nearly constant. 
+
+146
+00:10:49,150 --> 00:10:54,140
+And with that, if the field
+is sufficiently constant,
+
+147
+00:10:54,140 --> 00:10:57,190
+one can explain dark energy.
+
+148
+00:10:57,190 --> 00:11:01,440
+But the difference to a cosmological
+constant becomes more and more
+
+149
+00:11:01,440 --> 00:11:03,610
+diffuse there.
+
+150
+00:11:03,610 --> 00:11:08,635
+Another one is that one changes the
+theory of gravitation at large scales. 
+
+151
+00:11:08,635 --> 00:11:13,655
+You see, one has tested Einstein’s
+gravitation for distances beyond
+
+152
+00:11:15,635 --> 00:11:17,435
+a tenth of a millimetre,
+
+153
+00:11:17,435 --> 00:11:21,505
+a hundredth of a millimetre, 
+up to the size of galaxies, 
+
+154
+00:11:21,505 --> 00:11:26,590
+and maybe at the distance scale of the universe
+one must add modifications. 
+
+155
+00:11:26,590 --> 00:11:30,370
+This can be done, there are modifications,
+for example concerning the graviton,
+
+156
+00:11:30,370 --> 00:11:32,800
+which can have a very small mass.
+
+157
+00:11:32,800 --> 00:11:36,350
+This mass must also 
+be fine tuned.
+
+158
+00:11:36,350 --> 00:11:40,530
+But at least the quantum corrections,
+if one develops a quantum
+
+159
+00:11:40,530 --> 00:11:46,530
+theory of gravitation, are small,
+they are logarithmic corrections,
+
+160
+00:11:46,530 --> 00:11:51,525
+which do not blow up everything, when one
+
+161
+00:11:51,525 --> 00:11:55,255
+describes the facts by a quantum theory,
+like the cosmological constant does. 
+
+162
+00:11:55,255 --> 00:12:00,545
+>> I believe that it is, however, correct to
+say that this form of energy is not
+
+163
+00:12:00,545 --> 00:12:05,625
+easily amenable to human experimentation, is it?
+
+164
+00:12:05,625 --> 00:12:09,805
+This is a phenomenon, which really only exists 
+at a cosmological scale,
+
+165
+00:12:09,805 --> 00:12:13,180
+and which stays confined to this domain.
+
+166
+00:12:13,180 --> 00:12:15,570
+>> If it is a cosmological constant,
+
+167
+00:12:15,570 --> 00:12:20,290
+it is accessible only by
+gravitational forces. 
+
+168
+00:12:20,290 --> 00:12:23,870
+All other forces are not 
+sensitive to a constant 
+
+169
+00:12:23,870 --> 00:12:24,910
+difference in energy.
+
+170
+00:12:26,220 --> 00:12:28,520
+But, if it is not a 
+cosmological constant,
+
+171
+00:12:28,520 --> 00:12:31,600
+but if it is a modification,
+lets say, take this example,
+
+172
+00:12:31,600 --> 00:12:36,030
+a modification of gravity,
+one should be able to also see it
+
+173
+00:12:36,030 --> 00:12:40,880
+on other scales,
+with very high precision experiments, etc.
+
+174
+00:12:40,880 --> 00:12:45,820
+Or, if, for example, the 
+graviton had a mass, 
+
+175
+00:12:45,820 --> 00:12:51,828
+this would mean that the graviton 
+has five helicities and not only two. 
+
+176
+00:12:51,828 --> 00:12:56,950
+Ans maybe with certain experiments,
+still gravitational ones,
+
+177
+00:12:56,950 --> 00:12:59,890
+one would be able to excite these other 
+helicities of the graviton.
+
+178
+00:12:59,890 --> 00:13:04,870
+So, there would be this other
+possibility of see that. 
+
+179
+00:13:04,870 --> 00:13:07,580
+>> Experimental possibility. 
+
+180
+00:13:07,580 --> 00:13:08,340
+>> Yes.
+
+181
+00:13:08,340 --> 00:13:10,550
+But I would say also, however,
+
+182
+00:13:10,550 --> 00:13:13,850
+that a cosmological experiment is
+a human experiment. 
+
+183
+00:13:13,850 --> 00:13:18,800
+So, this is not to scale,
+but the scale
+
+184
+00:13:18,800 --> 00:13:23,200
+tested at LHC is as far from the
+human scale as the cosmological scale. 
+
+185
+00:13:23,200 --> 00:13:24,830
+>> There, I admit, that is true. 
+
+186
+00:13:24,830 --> 00:13:26,430
+>> You agree, Martin.
+
+187
+00:13:26,430 --> 00:13:27,570
+>> OK.
+
+188
+00:13:27,570 --> 00:13:31,650
+So, thank you very much for this interview.
+
+189
+00:13:31,650 --> 00:13:34,830
+I think that it is very important also
+
+190
+00:13:34,830 --> 00:13:39,500
+to indicate like an open window
+towards the future of our profession. 
+
+191
+00:13:39,500 --> 00:13:43,060
+Because the course does not stop here.
+
+192
+00:13:43,060 --> 00:13:49,378
+It invites you to stay interested
+in the forthcoming
+
+193
+00:13:49,378 --> 00:13:54,520
+experimental as well as 
+theoretical progress in the field. 
+
+194
+00:13:54,520 --> 00:14:00,270
+So, I invite you to have eyes and ears
+open,
+
+195
+00:14:00,270 --> 00:14:05,830
+for what will happen, and for what
+will probably again revolutionise our field 
+
+196
+00:14:05,830 --> 00:14:07,190
+in the coming decades. 
+
+197
+00:14:07,190 --> 00:14:11,966
+Thank you for your attention. 
+
+198
+00:14:11,966 --> 00:14:14,969
+[MUSIC]

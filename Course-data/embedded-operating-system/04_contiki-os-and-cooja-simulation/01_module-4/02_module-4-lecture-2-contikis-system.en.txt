@@ -1,0 +1,105 @@
+[MUSIC] Welcome. It is good to see you back for
+this lesson. Previously, we explored
+Contiki as a hybrid system. Now we will look into more
+details of the operating system to discover other
+characteristics in depth. At the end of this lesson, you will be
+able to understand what benefits and challenges Contiki presents when
+developing iOT applications. First of all, let's discuss
+the main components of Contiki. A Contiki system includes the kernel,
+libraries and applications or services, of which applications and
+services are implemented as modules. They are only loaded when
+an application requires them. As discussed before, this is one of the
+main positive characteristics of Contiki. If you do not remember details about this,
+I recommend you go back to other videos, we let it to modular kernel design and
+Contiki. In Contiki, it is possible to dynamically
+replace all processes at run-time, thus helping to save resources. Processes in this case can be either
+services or application programs. So far in our discussion,
+we haven't addressed what applications and services are and their differences. From the point of view of Contiki, they are all modules which
+are loaded when needed. However, from the point of view of
+a programmer, a service is implemented to provide a functionality which is used work
+for one or more application processes. All communication between processes
+are done through the kernel. We mentioned in the previous lesson that there is no hardware
+obstruction layer in Contiki. As a result of this, device drivers and applications communicate
+directly with the hardware. If you don't know or remember why Contiki does not provide
+a hardware abstraction layer, I suggest you to go back to the previews
+lesson titled Contiki, a hybrid system. All processes share the same address and
+space and all run in the same protection domain. This enables Contiki to run in
+memory constrained devices. In order to give you a deeper
+understanding of this idea, we will have a lesson threads and
+multi-threading. In that lesson, you will get an idea
+of why and how Contiki achieves it. But let's now examine how a process
+is created and treated in Contiki. A process is a piece of program code
+which is executed by Contiki's system. A process is started in two ways. The first is when Contiki starts, and
+the second when the module loaded. A process runs when an event
+related to the process occurs, such as a timer event or an external one. For example, consider an application that prints hello
+world to the terminal every second. This application process runs whenever a
+timer event is triggered at every second. It means that a counter of the timer
+will count down every second, and when it reaches zero,
+the event is triggered. Countdown frequency is based on
+the particular type of timer event used. In order to have a closer
+view of a timer event, I recommend that you stay with me for
+the upcoming videos. In those videos,
+different types of time or events, and other types of events
+will be deeply discussed. There are two types of
+execution modes in Contiki. These are cooperative and
+preemptive modes. Cooperative process code runs
+sequentially in a queue. This means that the first process
+has the right to use the CPU, while other processors wait for
+their right to access the CPU. After the process which
+occupied the CPU is finished, then the next waiting process in
+the queue gets the right to use the CPU. In contrast, preemptive mode
+handles process differently. In the preemptive context, a running
+process can be stopped by an interrupt, and the higher priority test immediately
+takes over the right to use the CPU. After finishing its job, it returns the right to access
+the CPU to the interrupted process. A process is defined by
+an event handler function and an optional poll handler function. In order to give you a better view of
+a process, and how it is defining Contiki, we're going to look at the internal
+structure of a Contiki process. The Contiki process is a combination
+of two different parts. These are process control block and
+the process threat. In this lesson, we only focus on
+Contiki System and Contiki Processes. Therefore a process thread will
+be discussed in following videos. The process control blog is composed of
+information about each process such as the state of the process, the pointer to
+the next process, name of the process, a pointer to a process thread, the state
+of the proto thread and internal flags. The slide shows a structure
+of a process in Contiki. The structure is written
+in a standard C language. The process, Control Block,
+is only used by the kernel. Therefore, users do not have any right
+to access the Control Block directly. This helps the system
+protect the process and avoid unexpected mistakes or
+bugs caused by programmers. Actually, the kernel only keeps
+a pointer to the process of state which is health in
+the process' private memory. This means that every process
+has its own state, and the state cannot be accessed
+by other processes. As you can see in this slide, the Process
+Control Block's structure is quite simple, and it does not contain
+complex information. Therefore, it is lightweight, and
+it just occupies a few bytes of memory. In Contiki, a Process Control Block
+cannot be declared or defined directly. The block is defined
+via the process macro. In order to give you
+a better view of this macro, I am going to take an example
+of hello world processing. As you can see,
+the process macro has two parameters, the name of the Process Control Block and
+the textural description. The variable name of the Process Control
+Block is used for accessing the process, while the description text of the process
+is used by programmers for debugging. As mentioned in previous videos,
+Contiki uses posting events for interprocess communication. This mechanism is also similar to the messaging mechanism in
+Microkernel described before. Contiki's system is
+partitioned in two parts. The first part is the core, and
+the second is the loaded program section. The partitioning is made at compiled time,
+and it's specific to the deployment
+in which Contiki is used. Typically, the core consists of
+Contiki kernel, the program loader, most commonly used parts of the language
+run-time, support libraries, and a communication stack with device
+drivers for the communication hardware. The core is compiled into
+a single binary image that is stored in the deploy devices. It is generally not
+modified after deployment. Although it is possible to overwrite or
+patch the core by a special boot loader. Programs are loaded into
+the system by the program loader. Which gets the program binaries by
+using directly attached storage, or using the communications tech. Typically, programs to be
+loaded into the system are first stored in the EEPROM before
+they are moved into the code memory. This is all for this lesson on
+Contiki System and Contiki processes. I hope that you have now a better
+understanding of Contiki System's structure and how it works. I hope to see you in the next videos,
+which will explain many other advanced features of Contiki, such as Contiki's
+kernel architecture and threats. [SOUND]

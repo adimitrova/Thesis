@@ -1,0 +1,85 @@
+[MUSIC] Hello, welcome back to the course
+on web connectivity and security in cyber physical systems. This is the last lesson in the module, introduction to cyber physical
+systems security and privacy. In the previous lessons of this
+module we have learned about security challenges,
+countermeasures, and attack models. In this video excerpt,
+we will explore security and privacy issues of important real world
+cyber physical systems called smart grids. The next generation of power systems
+involves a variety of smart devices and technologies, such as smart meters,
+smart appliances, renewable energy resources, and
+energy efficiency resources. Such devices and technologies are key
+components of a smart electrical grid. Security is a critical issue in smart
+grids, because they involve critical power facilities through millions of
+interconnected electronic devices. As you can see on the screen,
+a grid of renewable energy resources, transmission lines, distribution centers, service providers, and smart electricity
+consumers forms a smart grid. In order to provide a service,
+information is collected and communicated between the components through
+a distributed and hierarchical network. Reliability, safety, and
+usability of these services are highly dependent on security
+of smart grid networks. Based on its features, the smart grid is
+vulnerable to different kinds of attacks. Next, some of the most common
+attack types are introduced. Like many other networks
+also the smart grid suffers from denial of service attacks. These attacks can target different
+layers of the smart grid network in different ways. In the physical layer, channel jamming
+is the most common attack type, especially in wireless communication. Since it's easier for an attacker to
+intercept wireless communication channels than authenticated networks. In the media access control or
+a MAC layer, by spoofing MAC parameters, an attacker has a better chance
+to access the network in order to reduce the performance of
+shared communication channels, and compromise availability and
+integrity of the system. In the network and
+the transport layers, denial-of-service attacks can reduce the end-to-end
+communication performance. Especially worm propagation and
+traffic flooding in these layers can considerably reduce the communication
+speed, and thereby the overall performance of the smart grid. In the application layer, an attacker
+targets machine's resources, such as CPU or I/O bandwidth by exhausting resources
+of smart devices and computer systems. In a smart grid, majority of computing and communication devices are resource
+constrained, and therefore, this kind of attack is very serious and
+threatening for a smart grid. In addition to denial of service attacks,
+which may target the availability, smart grids are also vulnerable
+to some other attack types which target integrity and confidentiality
+of the customer's information. For example, usage and pricing
+information and also power system values, such as device readings. Such attacks are more complicated and less brute force than
+denial of service attacks. The risks of integrity attacks
+are very high and real. False data injection is an example
+of an integrity attack, which influences both users and suppliers. In this type of attack the attacker
+compromises a number of measuring devices to
+inject false information. This attack can have a long-term and
+heavy impact on smart grid systems, resulting in a significant
+financial loss for the suppliers. On the other hand, attacks which target
+the confidentiality of information are not meant to modify the information,
+but to gain knowledge about
+sensitive information. Eavesdropping is one of the main
+attack types in this category. Targeted information is typically
+a customer's account number or electricity usage. Data security and
+privacy are a top concern in smart grids. Utilization of cloud computing for
+data storage and processing has caused even
+more problems for smart grids. Indeed, the wide range and large amount
+of data originating from multiple sources makes it challenging to guarantee
+data security and privacy in the grid. Especially if data, either public or
+private, has multiple owners. It is more probable that personally
+identifiable information will be eventually passed and
+revealed if not handled carefully. This naturally compromises
+the privacy of smart grid users. Similar privacy issues are also present when transforming data by
+aggregating it from multiple owners. From the system performance point of view,
+enforcing security and privacy measures leads to
+finer granularity of data. That is more control information
+is embedded in data, and this might cause unacceptable
+latencies in some cases. User-centric access control approaches provide flexibility for
+the users to control access to their own data,
+which is stored in a shared environment. In these approaches,
+the access control policies could be set to change dynamically
+based on some external information, such as the social media
+activities of the users. Dynamically changing
+access control policies impose a high cost in terms
+of system complexity. Due to its nature, the data in
+the smart grid needs to be archived for a long period of time. Storing the data for a long time requires
+more powerful cryptographic solutions, because a computational
+ability to break cryptographic algorithms increase with time. In addition, the user's perception and
+requirements for privacy can change over time. With this in mind, the system
+should be designed in such a way that there is a built in tolerance for
+changes in security and privacy measures for
+long-term archive data. In this lesson,
+which concludes the module, Introduction to Cyber-Physical Systems, Security, and Privacy,
+we looked into some security issues of smart grid networks as an example
+of real world cyber-physical systems. In the next module, we are going to
+learn about cryptographic solutions for securing cyber physical systems. [SOUND]

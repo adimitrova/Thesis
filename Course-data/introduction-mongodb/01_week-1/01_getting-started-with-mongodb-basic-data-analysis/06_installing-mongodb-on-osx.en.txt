@@ -1,0 +1,141 @@
+Compass doesn't yet
+fully support the MongoDB query language. So in order to explore all
+CRUD operations in MongoDB, we're going to need to
+install the Mongo Shell. The Mongo Shell is a text based client
+that we'll be using by means of whatever command line interface you
+have available to you on your system. In this lesson, we'll take a look at how to install
+the Mongo Shell on a Mac OS X system. If you're on Windows,
+please see the video for installing the Mongo Shell
+on Windows systems. Now to install the Mongo Shell,
+we're actually going to go ahead and just install all of
+MongoDB Enterprise Server. Enterprise Server is bundled
+with a number of executables that are part of the MongoDB ecosystem,
+including the Mongo Shell. So please visit the MongoDB
+download center, you can get there with
+a single Google query. Click the Enterprise Server tab, and
+then select your operating system. In this case, we want to select OS X 64. Now please follow these
+installation instructions, even if you already have
+a version of MongoDB installed. Earlier versions of the Mongo Shell
+did not support SSL, and we need SSL support in order
+to connect to Atlas clusters. Once you've selected your
+operating system, click download. Now you might see a contact form pop up. If you do see a contact form,
+please complete it, and then download Enterprise Server. Once the download completes, we can open
+the Finder and navigate to Downloads. Here's the file we just downloaded,
+I'm going to move it to my home directory. Now if I navigate to my home directory,
+we can see the file right here. I'm going to double-click it,
+and unpack the archive file. Then if I look inside this
+folder I can see that there is, in addition to some licensing information, a bin directory that contains
+a number of executable files. The executable file we are interested
+in is this one, mongo. This is executable for the Mongo Shell. Please don't confuse this with mongod, mongod is the executable for
+the MongoDB server itself. So when we say that we have
+a MongoDB deployment running, it's running one or more mongods. Again, we're interested in
+the Mongo Shell or the mongo executable. Please place the download that you've
+unpacked into your home directory, as I've done here. That will make following these
+instructions a little simpler. Now in order to conveniently
+run the Mongo Shell, we're going to have to update
+our PATH environment variable. The PATH tells OS X where to look for
+programs that we'd like to run. You can set your PATH in a hidden
+file called .bash_profile. If I open up Sublime Text and
+select Open, I can see hidden files on my Mac by typing Cmd+Shift+Dot. Then if I navigate to my home directory,
+I can see that there is, in fact, a .bash_profile. Now on your system,
+you might not have a .bash_profile. If you haven't created one previously,
+you probably don't. Don't be alarmed if you don't see one. You can easily create
+one by simply creating a new file in your favorite text editor, and then saving it as .bash_profile. Make sure that you save it
+in your home directory. Don't save it on the desktop,
+don't save it anywhere else. Make sure you save it
+in your home directory. You can simply click Save, and a .bash_profile file will be created for
+you. I already have one, so I'm simply
+going to open the one that I have. Again, it's Cmd+Shift+Dot
+to see hidden files. And there's my .bash_profile,
+again, in my home directory. If I open this, we can see that
+there is one bash command in here. This command sets the prompt for
+my terminal application. Now in order to use the Mongo Shell, we're going to run it from
+a command line interface. The terminal application
+ships with Mac OS X, so that's the one that I'm going to use. And one thing I'll point out here is
+that you can see my prompt is dollar and then a space. That's because my bash profile
+specifies that the prompt for terminal, or for any bash shells,
+should be dollar followed by a space. A dive into bash,
+a dive into using command line interfaces other than the Mongo Shell is a little
+bit outside the scope of this course. So if you'd like to dive deeper on this, there are any number of tutorials on
+bash and the terminal application. Or, if you're on Windows,
+the Command shell or PowerShell. Any number of tutorials available
+online that I would encourage you to take a look at. So in order to run
+the Mongo Shell conveniently, we want to setup our PATH
+environment variable. When you have a Terminal application open, at any point you can look at environment
+variables that have been set. For example,
+if I'd like to see what PS1 is, I can do that simply by typing echo $PS1. You must use the $ character in order
+to stipulate that you want to see the value of that environment
+variable that's defined. I can do the same thing with
+the PATH environment variable. And here I can see that it is setup to
+some standard system directories where executable files or programs are found. This is so that I can run a number of
+commands from the terminal, including a number of system programs that make the
+command line interface really work for me. What I'd like to do is
+update our PATH to include the location where we just put MongoDB. As a reminder, that's in my home
+directory under this folder and inside the bin subdirectory. Now I've got an existing PATH,
+that's all of this, and I don't want to blow that away. So I need to make sure
+that in updating my PATH, I maintain all of those directories
+as well, as part of the PATH. The way we do that is
+through a command like this. So here I'm saying, as the value
+of the PATH environment variable, use this sequence of directories. So this simply means my home directory,
+and then with in my home directory,
+that long download name for MongoDB. And just as a convenience,
+don't try to type it, because you'll probably
+screw something up. Just right-click and select Copy,
+and that will copy the name of that directory for you, and
+then you can easily paste it in. So my home directory,
+the name of the download/bin, okay? And then,
+you'll see that I have a colon here. That colon says everything
+that follows is another directory in which to look for
+executable programs. So what this is saying is anytime
+a user requests to run a program, look for that program first
+in Shannon's home directory, mongodb-osx-x86_64-3.4.6/bin. So look here first, and then,
+if you don't find it there, continue on looking in other directories. Now by specifying $PATH here,
+don't forget the $, what we're saying is take
+all of these directories, note that they're all separated
+themselves by colons, and put them here. The PATH is always searched in order,
+so this will be searched first, and then each of the directories that
+are listed following this directory, following this colon,
+will be searched in sequence afterward. I'm asking you to put the directory we
+just downloaded first in your PATH so that if you happen to have
+a prior installation of MongoDB, when attempting to run the Mongo Shell
+Because the first place the system will look is in that directory we just
+downloaded, that is the version of the Mongo Shell that will be run, not some
+version that you installed previously. So if we save this, then our bash
+profile is updated with the new PATH. The last thing that I need to point
+out about this is that your PATH in the terminal won't be updated until
+the next time you launch a terminal, or unless you run a special command. So if I echo $PATH again, we'll see that
+it's exactly the same as it was before. However, it I type source ~/.bash_profile, what that does is reads my bash
+profile that I just updated.. And then, if I echo $PATH, now we see that that new directory
+we added is included in the path. What this does for
+us is ensures that all of these executable files can be found if we type
+their name here in the shell. So now if I type mongo, and I'm going to add the --nodb command
+line option, and you see that? What happened is exactly what
+I cautioned you against. And that is that I haven't correctly
+specified that folder in which our downloaded version of MongoDB exists. So I'm going to go back into the Finder,
+and I'm going to select Copy. And then I'm going to go
+back into Sublime, and I'm going to update my PATH
+with the correct value. I'm going to save it, and then I'm
+going to source bash profile again. And now if I check my PATH, we can
+see that it's been updated correctly. And now if I run Mongo, I can see
+that it does in fact start up for me. What we've walked through here is how
+to download MongoDB Enterprise package. We've talked about the fact that the Mongo
+Shell is bundled with the Mongo server and a number of other executables. We've walked through how to setup
+our PATH environment variable so that we can run
+the Mongo Shell from anywhere. And I've cautioned you against
+a couple of things that can go wrong when we're trying
+to set up the PATH. So it turns out that, given the steps
+we followed, we actually have both the correct version and
+the incorrect version here in our PATH. Because we were simply concatenating whatever was here onto the front
+of what was already the PATH. But don't worry because if I
+simply start up a new shell, you'll see that just
+the correct one is there. So on new invocations of
+the Terminal application, I'll pick up exactly what I want from
+my PATH, and I'll be able to run nodb. We look at a few more tips about how
+to use the Terminal application and go a lot deeper into how to use
+the Mongo Shell in other lessons. One last thing before we close this lesson
+is that if you have any trouble at all installing MongoDB on your OS X
+environment, please visit the MongoDB documentation for detailed instructions
+on installing MongoDB Enterprise. In addition to OS X, there are detailed
+instructions for installing MongoDB Enterprise on Linux and all the
+various flavors of Linux, and on Windows. And again, the Windows installation
+is covered in another lesson.

@@ -1,0 +1,916 @@
+1
+00:00:00,005 --> 00:00:10,005
+[MUSIC]
+
+2
+00:00:11,334 --> 00:00:12,879
+During this first module,
+
+3
+00:00:12,879 --> 00:00:17,780
+we are introducing the objects studied by
+particle physics namely matter, forces and
+
+4
+00:00:17,780 --> 00:00:22,280
+space-time but also, of course,
+reactions between particles.
+
+5
+00:00:22,280 --> 00:00:26,010
+In this third video,
+we present the concept of probability,
+
+6
+00:00:26,010 --> 00:00:30,140
+to characterize the strength
+of fundamental forces.
+
+7
+00:00:30,140 --> 00:00:32,990
+We'll also define one of
+the most important quantities in
+
+8
+00:00:32,990 --> 00:00:35,680
+particle physics, which is
+called the cross section.
+
+9
+00:00:35,680 --> 00:00:37,740
+This quantity allows to calculate and
+
+10
+00:00:37,740 --> 00:00:40,880
+to measure the strength
+of subatomic reactions.
+
+11
+00:00:42,240 --> 00:00:46,800
+After watching this video, you will be
+able to define the cross section in terms
+
+12
+00:00:46,800 --> 00:00:49,830
+of incident flux and
+number of target particles.
+
+13
+00:00:51,110 --> 00:00:55,990
+You will also be able to relate the cross
+section to the probability, and
+
+14
+00:00:55,990 --> 00:00:57,840
+the rate of a particle reaction.
+
+15
+00:01:01,150 --> 00:01:05,890
+In quantum physics the motion of
+fields and their way of interacting
+
+16
+00:01:05,890 --> 00:01:10,150
+is described by probability
+amplitudes and probabilities themselves.
+
+17
+00:01:11,310 --> 00:01:16,320
+They are defined in a frequentist
+way by multiple measurements.
+
+18
+00:01:16,320 --> 00:01:21,330
+For the movement of a particular the wave
+function psi, describes the probability
+
+19
+00:01:21,330 --> 00:01:26,230
+amplitude as a function of space-time,
+and the four-momentum of the particle,
+
+20
+00:01:26,230 --> 00:01:32,790
+namely as a function of t and x and
+of energy E and momentum p.
+
+21
+00:01:33,990 --> 00:01:37,590
+The probability density to find
+the particle at time t and
+
+22
+00:01:37,590 --> 00:01:43,290
+at location x, is given by the square
+of the wave function psi* psi.
+
+23
+00:01:44,620 --> 00:01:48,240
+Integrating this density
+over a finite volume
+
+24
+00:01:48,240 --> 00:01:51,600
+gives us the probability that
+the particle is in this volume.
+
+25
+00:01:53,280 --> 00:01:57,652
+The probability amplitude M for
+a reaction is the joint
+
+26
+00:01:57,652 --> 00:02:02,500
+probability amplitude that two
+current densities j_1 and
+
+27
+00:02:02,500 --> 00:02:06,786
+j_2 meet and exchange a virtual photon of
+four-momentum q.
+
+28
+00:02:06,786 --> 00:02:12,394
+The probability for the reaction is
+then given by the cross section sigma,
+
+29
+00:02:12,394 --> 00:02:17,748
+which is proportional to the square
+of the amplitude |M|^2.
+
+30
+00:02:17,748 --> 00:02:19,836
+The physics of particle motion and
+
+31
+00:02:19,836 --> 00:02:24,230
+particle reactions is thus expressed
+via statistical probabilities.
+
+32
+00:02:26,690 --> 00:02:31,620
+Mathematically speaking, a probability
+is a real number between 0 and 1.
+
+33
+00:02:31,620 --> 00:02:36,600
+In a frequentist approach, the probability
+is defined as the ratio between the number
+
+34
+00:02:36,600 --> 00:02:41,150
+of desired outcomes of an experiment,
+we might call successes, and
+
+35
+00:02:41,150 --> 00:02:43,410
+the number of trials it
+took to obtain them.
+
+36
+00:02:44,490 --> 00:02:48,500
+In terms of physics, this is
+the ratio between the number of times
+
+37
+00:02:48,500 --> 00:02:52,260
+an event happens, and the number
+of times it could have happened.
+
+38
+00:02:55,050 --> 00:02:55,860
+An event can for
+
+39
+00:02:55,860 --> 00:03:00,480
+example be the localization of
+a particle inside a given volume.
+
+40
+00:03:00,480 --> 00:03:04,320
+The ratio can also be the number
+of times a reaction takes place,
+
+41
+00:03:04,320 --> 00:03:07,050
+divided by the number of times
+it could have taken place.
+
+42
+00:03:08,470 --> 00:03:12,150
+This means in particular that
+reactions do not always happen.
+
+43
+00:03:12,150 --> 00:03:15,440
+In fact, we will find that
+they happen rather rarely.
+
+44
+00:03:17,420 --> 00:03:22,220
+Probabilities follow their own
+relatively simple algebra.
+
+45
+00:03:22,220 --> 00:03:26,050
+For our purposes it suffices to
+know our two simple rules.
+
+46
+00:03:26,050 --> 00:03:29,250
+The joint probability of
+two independent events
+
+47
+00:03:30,260 --> 00:03:34,650
+to happen is the product of
+their individual probabilities.
+
+48
+00:03:34,650 --> 00:03:38,790
+The probability that at least one
+of two incompatible events happen,
+
+49
+00:03:38,790 --> 00:03:42,580
+is the sum of the two properties.
+
+50
+00:03:42,580 --> 00:03:44,730
+The two probabilities, sorry.
+
+51
+00:03:44,730 --> 00:03:48,328
+Incompatible means that the two events
+cannot be realized at the same time.
+
+52
+00:03:48,328 --> 00:03:52,509
+And all of these rules applied to
+the probability amplitudes that we have
+
+53
+00:03:52,509 --> 00:03:53,820
+introduces earlier.
+
+54
+00:03:55,440 --> 00:03:59,371
+The two limiting cases for
+a probability are p=0 for
+
+55
+00:03:59,371 --> 00:04:03,048
+impossible events and
+p=1 for certain events.
+
+56
+00:04:03,048 --> 00:04:05,426
+In general,
+we will find that probabilities for
+
+57
+00:04:05,426 --> 00:04:07,750
+particle reactions
+are rather small numbers.
+
+58
+00:04:11,984 --> 00:04:19,820
+Processes which follow probabilistic
+laws are not certain individually,
+
+59
+00:04:19,820 --> 00:04:22,930
+but can still be predicted collectively.
+
+60
+00:04:22,930 --> 00:04:27,360
+This little simulation shows what is
+called a Galton board as an example.
+
+61
+00:04:27,360 --> 00:04:32,250
+The small balls are introduced in
+the middle at the top of the board.
+
+62
+00:04:32,250 --> 00:04:37,360
+The obstacles scatter them either left or
+right with 50% probability.
+
+63
+00:04:37,360 --> 00:04:40,240
+The multiple scatters
+are independent of each other,
+
+64
+00:04:40,240 --> 00:04:42,850
+the result does not
+depend on a previous one.
+
+65
+00:04:44,460 --> 00:04:46,790
+At the bottom of the board,
+the balls show,
+
+66
+00:04:46,790 --> 00:04:50,900
+as you can see, a Gaussian distribution
+around the middle position.
+
+67
+00:04:52,250 --> 00:04:57,093
+For those of you who know a little
+statistics, this is an example of how
+
+68
+00:04:57,093 --> 00:05:02,103
+chains of multiple events with
+an arbitrary individual distribution
+
+69
+00:05:02,103 --> 00:05:05,649
+– Boolean in this case but
+not necessarily Boolean –
+
+70
+00:05:05,649 --> 00:05:08,320
+asymptotically produce
+a Gaussian distribution,
+
+71
+00:05:08,320 --> 00:05:12,490
+the famous bell-shaped distribution,
+which is perfectly calculable and
+
+72
+00:05:12,490 --> 00:05:17,130
+characterized by just two parameters, the
+mean and the width of the distribution.
+
+73
+00:05:19,150 --> 00:05:21,920
+But let us come back to particle reaction.
+
+74
+00:05:21,920 --> 00:05:26,760
+Particle physics explores matter by
+means of scattering experiments.
+
+75
+00:05:26,760 --> 00:05:30,890
+For this purpose a beam of particles
+is directed towards a target.
+
+76
+00:05:31,980 --> 00:05:34,770
+One counts the number of
+scatters which take place, and
+
+77
+00:05:34,770 --> 00:05:37,409
+measures the scattered
+particle direction and energy.
+
+78
+00:05:38,820 --> 00:05:41,540
+This sketch shows
+a fictitious situation where each
+
+79
+00:05:41,540 --> 00:05:45,050
+target particle is represented
+by a small gray surface.
+
+80
+00:05:45,050 --> 00:05:49,330
+Let us consider a simple model
+where a reaction takes place if and
+
+81
+00:05:49,330 --> 00:05:51,830
+only if, a particle hits a gray surface.
+
+82
+00:05:52,970 --> 00:05:57,570
+Let us make the assumption that
+the distance between target particles
+
+83
+00:05:57,570 --> 00:06:02,770
+is large compared to their size such
+that the gray surfaces do not overlap.
+
+84
+00:06:02,770 --> 00:06:06,140
+The interaction thus stays rare.
+
+85
+00:06:06,140 --> 00:06:11,770
+In real life this corresponds to
+a target which is made by a thin foil or
+
+86
+00:06:11,770 --> 00:06:12,879
+a rarified gas.
+
+87
+00:06:14,030 --> 00:06:16,890
+The number of possible
+scatters is evidently
+
+88
+00:06:16,890 --> 00:06:21,270
+proportional to the flux of incoming
+particles, of incoming projectiles.
+
+89
+00:06:21,270 --> 00:06:21,970
+That is to say,
+
+90
+00:06:21,970 --> 00:06:26,470
+their number per unit time which pass
+through a perpendicular surface.
+
+91
+00:06:27,760 --> 00:06:31,480
+The number of actual scatters is
+proportional to the number of target
+
+92
+00:06:31,480 --> 00:06:33,470
+particles per square meter.
+
+93
+00:06:33,470 --> 00:06:36,090
+That is to say,
+the surface density n
+
+94
+00:06:37,120 --> 00:06:39,880
+and the individual surface sigma.
+
+95
+00:06:39,880 --> 00:06:43,180
+If fact, the probability to
+interact is simply the product
+
+96
+00:06:43,180 --> 00:06:46,045
+of the surface density and
+the surface size sigma.
+
+97
+00:06:50,000 --> 00:06:55,020
+A small part dI of the initial
+flux I will thus be scattered.
+
+98
+00:06:55,020 --> 00:06:57,770
+The rest of the flux is just transmitted.
+
+99
+00:06:57,770 --> 00:07:02,943
+The small fraction of the scattered
+flux -dI/I is
+
+100
+00:07:02,943 --> 00:07:08,030
+thus equal to the interaction
+probably n times sigma.
+
+101
+00:07:09,380 --> 00:07:14,750
+The density of targets can also be
+expressed as the volume density rho,
+
+102
+00:07:14,750 --> 00:07:18,729
+if one multiplies by the infinitesimal
+target thickness, dx.
+
+103
+00:07:20,000 --> 00:07:24,850
+Integrating over the thickness up to
+∆x, one obtains an exponential law for
+
+104
+00:07:24,850 --> 00:07:27,780
+the attenuation of the incident flux.
+
+105
+00:07:29,340 --> 00:07:32,360
+We call sigma the cross section for
+
+106
+00:07:32,360 --> 00:07:34,559
+the reaction because it has
+the dimension of a surface.
+
+107
+00:07:35,830 --> 00:07:40,400
+It has nothing to with the geometrical
+size of the target particle, it rather
+
+108
+00:07:40,400 --> 00:07:45,180
+represents the probability of interaction
+between an individual projectile and
+
+109
+00:07:45,180 --> 00:07:47,700
+an individual target particle.
+
+110
+00:07:47,700 --> 00:07:52,370
+The cross-section is often measured
+in enormous units which are one « barn » 
+
+111
+00:07:52,370 --> 00:07:56,250
+ten to the minus 28 square meters,
+which is a very large one.
+
+112
+00:07:57,910 --> 00:07:58,760
+The cross-section is,
+
+113
+00:07:58,760 --> 00:08:03,990
+thus, a sort of probability expressed
+by strange units, one must admit.
+
+114
+00:08:03,990 --> 00:08:06,880
+But the rules for
+probability calculation apply.
+
+115
+00:08:06,880 --> 00:08:09,190
+If two processes
+are independent of each other,
+
+116
+00:08:10,550 --> 00:08:12,500
+the probabilities just simply add up.
+
+117
+00:08:13,700 --> 00:08:18,300
+One distinguishes, for example,
+processes of elastic scattering,
+
+118
+00:08:18,300 --> 00:08:21,420
+where the kinetic energy of
+the projectile does not change,
+
+119
+00:08:21,420 --> 00:08:23,410
+just its direction changes,
+
+120
+00:08:23,410 --> 00:08:26,950
+inelastic scattering,
+where the projector looses energy and
+
+121
+00:08:26,950 --> 00:08:30,715
+the target particle recoils and/or
+changes mass, and
+
+122
+00:08:30,715 --> 00:08:35,560
+absorption where the projectile
+simply disappears inside the target.
+
+123
+00:08:35,560 --> 00:08:38,556
+For these mutually exclusive processes,
+
+124
+00:08:38,556 --> 00:08:44,060
+the cross-sections can just be added to
+form what is called a total cross section,
+
+125
+00:08:44,060 --> 00:08:49,180
+like in the bottom equation on this slide.
+
+126
+00:08:50,982 --> 00:08:54,510
+The cross-section must obviously
+be a positive real number.
+
+127
+00:08:54,510 --> 00:08:55,810
+It has a maximum,
+
+128
+00:08:55,810 --> 00:08:58,890
+which corresponds to a reaction
+which always takes place.
+
+129
+00:08:58,890 --> 00:09:00,730
+That is called the unitarity limit.
+
+130
+00:09:02,110 --> 00:09:04,930
+An application example is
+calculated in video 1.3a,
+
+131
+00:09:04,930 --> 00:09:09,630
+it deals with the attenuation
+of photons by a sheet of lead.
+
+132
+00:09:09,630 --> 00:09:15,520
+The result will probably surprise you,
+and encourage you hopefully, to be very
+
+133
+00:09:15,520 --> 00:09:20,907
+careful the next time you expose
+yourself to a beam of energetic photons.
+
+134
+00:09:20,907 --> 00:09:25,755
+It is clear that the properties of the
+outgoing particles are also important to
+
+135
+00:09:25,755 --> 00:09:27,450
+understand the reaction.
+
+136
+00:09:27,450 --> 00:09:32,024
+For example, the angle by which
+the projectile is scattered gives useful
+
+137
+00:09:32,024 --> 00:09:36,376
+information about the structure of
+the target, and the properties of
+
+138
+00:09:36,376 --> 00:09:41,490
+the interaction as we'll see with many
+examples in the course of these lectures.
+
+139
+00:09:42,700 --> 00:09:45,920
+Keeping in mind that the cross-section has
+nothing to do with the physical size of
+
+140
+00:09:45,920 --> 00:09:46,840
+the target,
+
+141
+00:09:46,840 --> 00:09:50,990
+let us continue to imagine
+the cross-section as an effective area for
+
+142
+00:09:50,990 --> 00:09:52,560
+the interaction.
+
+143
+00:09:52,560 --> 00:09:55,190
+If the projectile hits it
+a reaction takes place,
+
+144
+00:09:55,190 --> 00:09:59,440
+otherwise the projectile
+passes without perturbation.
+
+145
+00:09:59,440 --> 00:10:03,710
+The scattering into an infinitesimal
+element dOmega of solid angle,
+
+146
+00:10:03,710 --> 00:10:08,240
+centered on the polar angle theta and
+the azimuth angle phi,
+
+147
+00:10:08,240 --> 00:10:12,830
+then comes from an element dsigma of
+that surface in our geometrical model.
+
+148
+00:10:14,050 --> 00:10:17,490
+The fraction of the incoming beams
+scattered into the solid element
+
+149
+00:10:17,490 --> 00:10:21,140
+is proportional to the differential
+cross section, dsigma dOmega.
+
+150
+00:10:22,260 --> 00:10:25,530
+The probability that a projectile
+is scattered into a solid
+
+151
+00:10:25,530 --> 00:10:28,050
+angle element is not normally uniform.
+
+152
+00:10:28,050 --> 00:10:32,720
+It depends on the angles theta and phi,
+the scattering and the azimuth angle,
+
+153
+00:10:32,720 --> 00:10:37,389
+and allows one to look into
+the target in a literal sense.
+
+154
+00:10:38,760 --> 00:10:41,710
+The total cross section is obtained
+integrating the differential
+
+155
+00:10:41,710 --> 00:10:45,120
+cross section dsigma dOmega
+over the solid angle dOmega.
+
+156
+00:10:47,700 --> 00:10:53,310
+Let us consider a system
+with cylindrical symmetry.
+
+157
+00:10:53,310 --> 00:10:57,930
+The scattering probability is then independent
+of the azimuthal angle phi and
+
+158
+00:10:57,930 --> 00:11:00,980
+only depends on
+the scattering angle theta.
+
+159
+00:11:00,980 --> 00:11:05,930
+An example from classical physics is
+the scattering by a central force.
+
+160
+00:11:05,930 --> 00:11:09,800
+It shows a fixed relation between
+the impact parameter b and
+
+161
+00:11:09,800 --> 00:11:12,440
+the polar scattering angle theta.
+
+162
+00:11:12,440 --> 00:11:15,690
+All projectiles with an impact
+parameter between b and
+
+163
+00:11:15,690 --> 00:11:21,110
+b plus db and an initial azimuthal
+angle between phi and phi plus dphi,
+
+164
+00:11:21,110 --> 00:11:25,495
+are scattered into an element dOmega
+around the direction (theta,phi).
+
+165
+00:11:26,580 --> 00:11:31,810
+The fraction of the incoming beam which
+falls into such a region is dI/I
+
+166
+00:11:31,810 --> 00:11:36,465
+equal rho times ∆x times b db dphi.
+
+167
+00:11:38,720 --> 00:11:42,410
+Integrating over the azimuthal
+angle on which the force does not depend
+
+168
+00:11:42,410 --> 00:11:46,640
+we will just obtain a factor of 2π,
+and the results defines the cross-section
+
+169
+00:11:46,640 --> 00:11:50,280
+in terms of impact parameter,
+and the scheduling angle.
+
+170
+00:11:50,280 --> 00:11:53,270
+Taking the absolute value
+guarantees that the cross section,
+
+171
+00:11:53,270 --> 00:11:55,850
+is always a positive definite real number.
+
+172
+00:11:57,240 --> 00:12:01,660
+The scattering angle theta depends on the
+impact parameter b, in a specific manner,
+
+173
+00:12:03,550 --> 00:12:04,860
+which is determined, in fact,
+
+174
+00:12:04,860 --> 00:12:09,140
+by the distance law of the central
+force or its equivalent potential.
+
+175
+00:12:10,680 --> 00:12:12,950
+Let us take a really trivial example:
+
+176
+00:12:12,950 --> 00:12:16,110
+the classical shock
+between two rigid bodies.
+
+177
+00:12:16,110 --> 00:12:20,940
+The geometry and the laws of elastic
+reflection relate b to thetha,
+
+178
+00:12:20,940 --> 00:12:25,250
+in the simple geometrical way
+sketched in this little drawing.
+
+179
+00:12:26,608 --> 00:12:29,270
+The differential cross-section
+is just constant,
+
+180
+00:12:29,270 --> 00:12:31,260
+it does not depend on
+the scattering angle.
+
+181
+00:12:32,280 --> 00:12:35,610
+The angular distribution of
+the scattered particles is isotropic.
+
+182
+00:12:36,890 --> 00:12:40,520
+The total cross section is found
+to be sigma times πR^2,
+
+183
+00:12:40,520 --> 00:12:42,900
+equal to the geometrical
+surface of the target and
+
+184
+00:12:42,900 --> 00:12:46,420
+we're not surprised to find this result
+which we expected in the first place.
+
+185
+00:12:48,320 --> 00:12:52,090
+In the next video, Mercedes will give
+you a much more interesting example
+
+186
+00:12:52,090 --> 00:12:54,750
+of a realistic
+electromagnetic interaction.
+
+187
+00:12:56,210 --> 00:12:59,220
+In this case,
+the interaction of a He-4
+
+188
+00:12:59,220 --> 00:13:04,460
+nucleus also known as an alpha particle
+with a heavy nucleus like gold.
+
+189
+00:13:04,460 --> 00:13:09,243
+This process is called Rutherford scattering,
+its experimental observation has
+
+190
+00:13:09,243 --> 00:13:11,984
+revealed the existence
+of the atomic nucleus.
+
+191
+00:13:11,984 --> 00:13:17,739
+[MUSIC]

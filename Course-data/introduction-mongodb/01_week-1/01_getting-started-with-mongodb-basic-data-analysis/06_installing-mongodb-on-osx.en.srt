@@ -1,0 +1,847 @@
+1
+00:00:00,740 --> 00:00:04,820
+Compass doesn't yet
+fully support the MongoDB query language.
+
+2
+00:00:04,820 --> 00:00:07,900
+So in order to explore all
+CRUD operations in MongoDB,
+
+3
+00:00:07,900 --> 00:00:11,280
+we're going to need to
+install the Mongo Shell.
+
+4
+00:00:11,280 --> 00:00:16,010
+The Mongo Shell is a text based client
+that we'll be using by means of
+
+5
+00:00:16,010 --> 00:00:19,960
+whatever command line interface you
+have available to you on your system.
+
+6
+00:00:19,960 --> 00:00:21,340
+In this lesson,
+
+7
+00:00:21,340 --> 00:00:26,670
+we'll take a look at how to install
+the Mongo Shell on a Mac OS X system.
+
+8
+00:00:26,670 --> 00:00:29,150
+If you're on Windows,
+please see the video for
+
+9
+00:00:29,150 --> 00:00:31,640
+installing the Mongo Shell
+on Windows systems.
+
+10
+00:00:32,800 --> 00:00:37,001
+Now to install the Mongo Shell,
+we're actually going to go ahead and
+
+11
+00:00:37,001 --> 00:00:39,980
+just install all of
+MongoDB Enterprise Server.
+
+12
+00:00:42,160 --> 00:00:45,270
+Enterprise Server is bundled
+with a number of executables
+
+13
+00:00:45,270 --> 00:00:50,640
+that are part of the MongoDB ecosystem,
+including the Mongo Shell.
+
+14
+00:00:50,640 --> 00:00:53,850
+So please visit the MongoDB
+download center,
+
+15
+00:00:53,850 --> 00:00:56,050
+you can get there with
+a single Google query.
+
+16
+00:00:56,050 --> 00:01:01,850
+Click the Enterprise Server tab, and
+then select your operating system.
+
+17
+00:01:01,850 --> 00:01:06,040
+In this case, we want to select OS X 64.
+
+18
+00:01:06,040 --> 00:01:09,170
+Now please follow these
+installation instructions,
+
+19
+00:01:09,170 --> 00:01:13,280
+even if you already have
+a version of MongoDB installed.
+
+20
+00:01:13,280 --> 00:01:17,360
+Earlier versions of the Mongo Shell
+did not support SSL, and
+
+21
+00:01:17,360 --> 00:01:22,440
+we need SSL support in order
+to connect to Atlas clusters.
+
+22
+00:01:22,440 --> 00:01:26,720
+Once you've selected your
+operating system, click download.
+
+23
+00:01:26,720 --> 00:01:30,080
+Now you might see a contact form pop up.
+
+24
+00:01:30,080 --> 00:01:33,800
+If you do see a contact form,
+please complete it, and
+
+25
+00:01:33,800 --> 00:01:35,550
+then download Enterprise Server.
+
+26
+00:01:36,640 --> 00:01:41,660
+Once the download completes, we can open
+the Finder and navigate to Downloads.
+
+27
+00:01:41,660 --> 00:01:46,670
+Here's the file we just downloaded,
+I'm going to move it to my home directory.
+
+28
+00:01:46,670 --> 00:01:50,870
+Now if I navigate to my home directory,
+we can see the file right here.
+
+29
+00:01:50,870 --> 00:01:55,520
+I'm going to double-click it,
+and unpack the archive file.
+
+30
+00:01:56,580 --> 00:02:00,400
+Then if I look inside this
+folder I can see that there is,
+
+31
+00:02:00,400 --> 00:02:02,580
+in addition to some licensing information,
+
+32
+00:02:02,580 --> 00:02:06,960
+a bin directory that contains
+a number of executable files.
+
+33
+00:02:06,960 --> 00:02:10,220
+The executable file we are interested
+in is this one, mongo.
+
+34
+00:02:11,240 --> 00:02:14,260
+This is executable for the Mongo Shell.
+
+35
+00:02:14,260 --> 00:02:17,061
+Please don't confuse this with mongod,
+
+36
+00:02:17,061 --> 00:02:22,130
+mongod is the executable for
+the MongoDB server itself.
+
+37
+00:02:22,130 --> 00:02:26,890
+So when we say that we have
+a MongoDB deployment running,
+
+38
+00:02:26,890 --> 00:02:29,560
+it's running one or more mongods.
+
+39
+00:02:29,560 --> 00:02:35,050
+Again, we're interested in
+the Mongo Shell or the mongo executable.
+
+40
+00:02:35,050 --> 00:02:40,030
+Please place the download that you've
+unpacked into your home directory,
+
+41
+00:02:41,040 --> 00:02:42,170
+as I've done here.
+
+42
+00:02:42,170 --> 00:02:46,110
+That will make following these
+instructions a little simpler.
+
+43
+00:02:46,110 --> 00:02:49,670
+Now in order to conveniently
+run the Mongo Shell,
+
+44
+00:02:49,670 --> 00:02:54,480
+we're going to have to update
+our PATH environment variable.
+
+45
+00:02:54,480 --> 00:03:00,920
+The PATH tells OS X where to look for
+programs that we'd like to run.
+
+46
+00:03:00,920 --> 00:03:07,670
+You can set your PATH in a hidden
+file called .bash_profile.
+
+47
+00:03:07,670 --> 00:03:14,200
+If I open up Sublime Text and
+select Open, I can see hidden files
+
+48
+00:03:14,200 --> 00:03:18,760
+on my Mac by typing Cmd+Shift+Dot.
+
+49
+00:03:18,760 --> 00:03:22,260
+Then if I navigate to my home directory,
+I can see that there is,
+
+50
+00:03:22,260 --> 00:03:25,910
+in fact, a .bash_profile.
+
+51
+00:03:25,910 --> 00:03:31,840
+Now on your system,
+you might not have a .bash_profile.
+
+52
+00:03:31,840 --> 00:03:35,170
+If you haven't created one previously,
+you probably don't.
+
+53
+00:03:35,170 --> 00:03:37,450
+Don't be alarmed if you don't see one.
+
+54
+00:03:37,450 --> 00:03:42,630
+You can easily create
+one by simply creating
+
+55
+00:03:42,630 --> 00:03:47,390
+a new file in your favorite text editor,
+
+56
+00:03:47,390 --> 00:03:52,150
+and then saving it as .bash_profile.
+
+57
+00:03:52,150 --> 00:03:54,760
+Make sure that you save it
+in your home directory.
+
+58
+00:03:54,760 --> 00:03:57,342
+Don't save it on the desktop,
+don't save it anywhere else.
+
+59
+00:03:57,342 --> 00:04:00,380
+Make sure you save it
+in your home directory.
+
+60
+00:04:00,380 --> 00:04:02,230
+You can simply click Save, and
+
+61
+00:04:02,230 --> 00:04:06,520
+a .bash_profile file will be created for
+you.
+
+62
+00:04:06,520 --> 00:04:10,848
+I already have one, so I'm simply
+going to open the one that I have.
+
+63
+00:04:10,848 --> 00:04:15,766
+Again, it's Cmd+Shift+Dot
+to see hidden files.
+
+64
+00:04:15,766 --> 00:04:21,860
+And there's my .bash_profile,
+again, in my home directory.
+
+65
+00:04:21,860 --> 00:04:25,630
+If I open this, we can see that
+there is one bash command in here.
+
+66
+00:04:25,630 --> 00:04:29,000
+This command sets the prompt for
+my terminal application.
+
+67
+00:04:30,170 --> 00:04:32,234
+Now in order to use the Mongo Shell,
+
+68
+00:04:32,234 --> 00:04:37,050
+we're going to run it from
+a command line interface.
+
+69
+00:04:37,050 --> 00:04:40,061
+The terminal application
+ships with Mac OS X, so
+
+70
+00:04:40,061 --> 00:04:43,200
+that's the one that I'm going to use.
+
+71
+00:04:43,200 --> 00:04:48,100
+And one thing I'll point out here is
+that you can see my prompt is dollar and
+
+72
+00:04:48,100 --> 00:04:49,240
+then a space.
+
+73
+00:04:49,240 --> 00:04:54,935
+That's because my bash profile
+specifies that the prompt for
+
+74
+00:04:54,935 --> 00:05:01,745
+terminal, or for any bash shells,
+should be dollar followed by a space.
+
+75
+00:05:01,745 --> 00:05:06,310
+A dive into bash,
+a dive into using command line interfaces
+
+76
+00:05:06,310 --> 00:05:11,350
+other than the Mongo Shell is a little
+bit outside the scope of this course.
+
+77
+00:05:11,350 --> 00:05:13,410
+So if you'd like to dive deeper on this,
+
+78
+00:05:13,410 --> 00:05:18,370
+there are any number of tutorials on
+bash and the terminal application.
+
+79
+00:05:18,370 --> 00:05:22,110
+Or, if you're on Windows,
+the Command shell or PowerShell.
+
+80
+00:05:22,110 --> 00:05:24,920
+Any number of tutorials available
+online that I would encourage you
+
+81
+00:05:24,920 --> 00:05:26,110
+to take a look at.
+
+82
+00:05:26,110 --> 00:05:29,220
+So in order to run
+the Mongo Shell conveniently,
+
+83
+00:05:29,220 --> 00:05:33,010
+we want to setup our PATH
+environment variable.
+
+84
+00:05:33,010 --> 00:05:34,980
+When you have a Terminal application open,
+
+85
+00:05:35,980 --> 00:05:40,290
+at any point you can look at environment
+variables that have been set.
+
+86
+00:05:40,290 --> 00:05:44,260
+For example,
+if I'd like to see what PS1 is,
+
+87
+00:05:44,260 --> 00:05:47,400
+I can do that simply by typing echo $PS1.
+
+88
+00:05:47,400 --> 00:05:51,900
+You must use the $ character in order
+to stipulate that you want to see
+
+89
+00:05:51,900 --> 00:05:54,980
+the value of that environment
+variable that's defined.
+
+90
+00:05:56,570 --> 00:05:59,720
+I can do the same thing with
+the PATH environment variable.
+
+91
+00:05:59,720 --> 00:06:05,140
+And here I can see that it is setup to
+some standard system directories where
+
+92
+00:06:05,140 --> 00:06:08,050
+executable files or programs are found.
+
+93
+00:06:08,050 --> 00:06:13,100
+This is so that I can run a number of
+commands from the terminal, including
+
+94
+00:06:13,100 --> 00:06:17,790
+a number of system programs that make the
+command line interface really work for me.
+
+95
+00:06:17,790 --> 00:06:22,340
+What I'd like to do is
+update our PATH to include
+
+96
+00:06:22,340 --> 00:06:25,900
+the location where we just put MongoDB.
+
+97
+00:06:25,900 --> 00:06:31,350
+As a reminder, that's in my home
+directory under this folder and
+
+98
+00:06:31,350 --> 00:06:34,330
+inside the bin subdirectory.
+
+99
+00:06:34,330 --> 00:06:38,053
+Now I've got an existing PATH,
+that's all of this,
+
+100
+00:06:38,053 --> 00:06:40,470
+and I don't want to blow that away.
+
+101
+00:06:40,470 --> 00:06:43,558
+So I need to make sure
+that in updating my PATH,
+
+102
+00:06:43,558 --> 00:06:48,510
+I maintain all of those directories
+as well, as part of the PATH.
+
+103
+00:06:48,510 --> 00:06:51,990
+The way we do that is
+through a command like this.
+
+104
+00:06:51,990 --> 00:06:55,852
+So here I'm saying, as the value
+of the PATH environment variable,
+
+105
+00:06:55,852 --> 00:07:00,480
+use this sequence of directories.
+
+106
+00:07:00,480 --> 00:07:03,515
+So this simply means my home directory,
+and
+
+107
+00:07:03,515 --> 00:07:08,366
+then with in my home directory,
+that long download name for MongoDB.
+
+108
+00:07:08,366 --> 00:07:10,706
+And just as a convenience,
+don't try to type it,
+
+109
+00:07:10,706 --> 00:07:12,728
+because you'll probably
+screw something up.
+
+110
+00:07:12,728 --> 00:07:17,484
+Just right-click and select Copy,
+and that will copy the name of
+
+111
+00:07:17,484 --> 00:07:22,510
+that directory for you, and
+then you can easily paste it in.
+
+112
+00:07:22,510 --> 00:07:29,043
+So my home directory,
+the name of the download/bin, okay?
+
+113
+00:07:29,043 --> 00:07:32,150
+And then,
+you'll see that I have a colon here.
+
+114
+00:07:32,150 --> 00:07:37,170
+That colon says everything
+that follows is another
+
+115
+00:07:37,170 --> 00:07:41,040
+directory in which to look for
+executable programs.
+
+116
+00:07:41,040 --> 00:07:48,795
+So what this is saying is anytime
+a user requests to run a program,
+
+117
+00:07:48,795 --> 00:07:55,845
+look for that program first
+in Shannon's home directory,
+
+118
+00:07:55,845 --> 00:08:02,058
+mongodb-osx-x86_64-3.4.6/bin.
+
+119
+00:08:02,058 --> 00:08:05,258
+So look here first, and then,
+if you don't find it there,
+
+120
+00:08:05,258 --> 00:08:07,636
+continue on looking in other directories.
+
+121
+00:08:07,636 --> 00:08:13,010
+Now by specifying $PATH here,
+don't forget the $,
+
+122
+00:08:13,010 --> 00:08:17,220
+what we're saying is take
+all of these directories,
+
+123
+00:08:17,220 --> 00:08:21,550
+note that they're all separated
+themselves by colons, and put them here.
+
+124
+00:08:22,810 --> 00:08:27,150
+The PATH is always searched in order,
+so this will be searched first, and
+
+125
+00:08:27,150 --> 00:08:31,830
+then each of the directories that
+are listed following this directory,
+
+126
+00:08:31,830 --> 00:08:35,900
+following this colon,
+will be searched in sequence afterward.
+
+127
+00:08:35,900 --> 00:08:41,120
+I'm asking you to put the directory we
+just downloaded first in your PATH so
+
+128
+00:08:41,120 --> 00:08:44,640
+that if you happen to have
+a prior installation of MongoDB,
+
+129
+00:08:44,640 --> 00:08:48,410
+when attempting to run the Mongo Shell
+Because the first place the system will
+
+130
+00:08:48,410 --> 00:08:52,160
+look is in that directory we just
+downloaded, that is the version of
+
+131
+00:08:52,160 --> 00:08:56,200
+the Mongo Shell that will be run, not some
+version that you installed previously.
+
+132
+00:08:56,200 --> 00:09:01,370
+So if we save this, then our bash
+profile is updated with the new PATH.
+
+133
+00:09:01,370 --> 00:09:05,720
+The last thing that I need to point
+out about this is that your PATH in
+
+134
+00:09:05,720 --> 00:09:10,890
+the terminal won't be updated until
+the next time you launch a terminal,
+
+135
+00:09:10,890 --> 00:09:13,010
+or unless you run a special command.
+
+136
+00:09:13,010 --> 00:09:19,130
+So if I echo $PATH again, we'll see that
+it's exactly the same as it was before.
+
+137
+00:09:19,130 --> 00:09:25,500
+However, it I type source ~/.bash_profile,
+
+138
+00:09:25,500 --> 00:09:30,125
+what that does is reads my bash
+profile that I just updated..
+
+139
+00:09:30,125 --> 00:09:32,501
+And then, if I echo $PATH,
+
+140
+00:09:32,501 --> 00:09:38,870
+now we see that that new directory
+we added is included in the path.
+
+141
+00:09:38,870 --> 00:09:43,410
+What this does for
+us is ensures that all of these executable
+
+142
+00:09:43,410 --> 00:09:48,320
+files can be found if we type
+their name here in the shell.
+
+143
+00:09:49,560 --> 00:09:52,550
+So now if I type mongo, and
+
+144
+00:09:52,550 --> 00:09:58,010
+I'm going to add the --nodb command
+line option, and you see that?
+
+145
+00:09:58,010 --> 00:10:02,560
+What happened is exactly what
+I cautioned you against.
+
+146
+00:10:02,560 --> 00:10:07,420
+And that is that I haven't correctly
+specified that folder in which our
+
+147
+00:10:07,420 --> 00:10:10,205
+downloaded version of MongoDB exists.
+
+148
+00:10:10,205 --> 00:10:15,076
+So I'm going to go back into the Finder,
+and
+
+149
+00:10:15,076 --> 00:10:18,110
+I'm going to select Copy.
+
+150
+00:10:18,110 --> 00:10:21,510
+And then I'm going to go
+back into Sublime, and
+
+151
+00:10:21,510 --> 00:10:25,455
+I'm going to update my PATH
+with the correct value.
+
+152
+00:10:25,455 --> 00:10:30,270
+I'm going to save it, and then I'm
+going to source bash profile again.
+
+153
+00:10:30,270 --> 00:10:34,510
+And now if I check my PATH, we can
+see that it's been updated correctly.
+
+154
+00:10:35,710 --> 00:10:42,060
+And now if I run Mongo, I can see
+that it does in fact start up for me.
+
+155
+00:10:42,060 --> 00:10:47,400
+What we've walked through here is how
+to download MongoDB Enterprise package.
+
+156
+00:10:47,400 --> 00:10:50,730
+We've talked about the fact that the Mongo
+Shell is bundled with the Mongo server and
+
+157
+00:10:50,730 --> 00:10:51,909
+a number of other executables.
+
+158
+00:10:53,080 --> 00:10:56,796
+We've walked through how to setup
+our PATH environment variable so
+
+159
+00:10:56,796 --> 00:10:59,900
+that we can run
+the Mongo Shell from anywhere.
+
+160
+00:10:59,900 --> 00:11:02,410
+And I've cautioned you against
+a couple of things that can go
+
+161
+00:11:02,410 --> 00:11:04,670
+wrong when we're trying
+to set up the PATH.
+
+162
+00:11:05,720 --> 00:11:10,450
+So it turns out that, given the steps
+we followed, we actually have
+
+163
+00:11:10,450 --> 00:11:14,660
+both the correct version and
+the incorrect version here in our PATH.
+
+164
+00:11:14,660 --> 00:11:17,480
+Because we were simply concatenating
+
+165
+00:11:17,480 --> 00:11:20,600
+whatever was here onto the front
+of what was already the PATH.
+
+166
+00:11:20,600 --> 00:11:25,650
+But don't worry because if I
+simply start up a new shell,
+
+167
+00:11:25,650 --> 00:11:28,330
+you'll see that just
+the correct one is there.
+
+168
+00:11:28,330 --> 00:11:32,630
+So on new invocations of
+the Terminal application,
+
+169
+00:11:32,630 --> 00:11:38,590
+I'll pick up exactly what I want from
+my PATH, and I'll be able to run nodb.
+
+170
+00:11:38,590 --> 00:11:42,650
+We look at a few more tips about how
+to use the Terminal application and
+
+171
+00:11:42,650 --> 00:11:49,220
+go a lot deeper into how to use
+the Mongo Shell in other lessons.
+
+172
+00:11:49,220 --> 00:11:54,172
+One last thing before we close this lesson
+is that if you have any trouble at all
+
+173
+00:11:54,172 --> 00:11:59,980
+installing MongoDB on your OS X
+environment, please visit the MongoDB
+
+174
+00:11:59,980 --> 00:12:04,900
+documentation for detailed instructions
+on installing MongoDB Enterprise.
+
+175
+00:12:04,900 --> 00:12:09,440
+In addition to OS X, there are detailed
+instructions for installing
+
+176
+00:12:09,440 --> 00:12:15,860
+MongoDB Enterprise on Linux and all the
+various flavors of Linux, and on Windows.
+
+177
+00:12:15,860 --> 00:12:19,120
+And again, the Windows installation
+is covered in another lesson.

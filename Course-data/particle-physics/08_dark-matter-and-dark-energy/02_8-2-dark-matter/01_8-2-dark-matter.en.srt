@@ -1,0 +1,618 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:11,319 --> 00:00:16,491
+In this eighth module, we discuss
+the mysterious components of the universe,
+
+3
+00:00:16,491 --> 00:00:19,050
+which are dark matter and dark energy.
+
+4
+00:00:20,780 --> 00:00:24,890
+In this second video we
+review the dark matter.
+
+5
+00:00:24,890 --> 00:00:29,464
+After following this video you will
+know how dark matter is detected by its
+
+6
+00:00:29,464 --> 00:00:31,104
+gravitational effects.
+
+7
+00:00:31,104 --> 00:00:36,860
+And how we try to identify its quanta,
+the particles that make up dark matter.
+
+8
+00:00:38,690 --> 00:00:43,536
+Among the most compelling evidence for
+the existence of dark matter
+
+9
+00:00:43,536 --> 00:00:48,870
+is the observation of the rotational
+velocity v of stars around their galaxy
+
+10
+00:00:48,870 --> 00:00:54,310
+as a function of their distance
+R from the center of the galaxy.
+
+11
+00:00:54,310 --> 00:00:57,320
+Accordingly to Kepler's third law,
+
+12
+00:00:57,320 --> 00:01:02,735
+this velocity is determined by the total
+M(R), included within the orbit.
+
+13
+00:01:02,735 --> 00:01:11,033
+If M(R) became nearly constant outside R_vis,
+the visible boundary of the galaxy,
+
+14
+00:01:11,033 --> 00:01:15,131
+there will be a decrease
+in the rotational velocity
+
+15
+00:01:15,131 --> 00:01:18,688
+with the square root of
+distance from then on.
+
+16
+00:01:18,688 --> 00:01:23,737
+Observation indicates on
+the contrary that v(R) remains more or
+
+17
+00:01:23,737 --> 00:01:26,530
+less constant at large R.
+
+18
+00:01:26,530 --> 00:01:31,160
+This means that there is
+an invisible mass halo that extends
+
+19
+00:01:31,160 --> 00:01:33,815
+far beyond the optical limit.
+
+20
+00:01:33,815 --> 00:01:36,870
+Its density decreases with
+the square of the distance.
+
+21
+00:01:38,730 --> 00:01:41,490
+Gravitational lensing is a formidable
+
+22
+00:01:41,490 --> 00:01:46,090
+tool to measure the total mass of
+large astronomical structures,
+
+23
+00:01:46,090 --> 00:01:49,210
+even when this mass does not emit light.
+
+24
+00:01:49,210 --> 00:01:52,290
+The principle is based on
+the fact that light rays
+
+25
+00:01:52,290 --> 00:01:57,096
+follow straight lines in space-time
+distorted by the gravity of objects.
+
+26
+00:01:57,096 --> 00:02:01,280
+In this manner the gravity of
+the object in the foreground
+
+27
+00:02:01,280 --> 00:02:05,340
+causes multiple deformed images
+of the object in the background.
+
+28
+00:02:06,530 --> 00:02:12,170
+Measuring the deformation of the image of
+a galaxy behind the cluster for example,
+
+29
+00:02:12,170 --> 00:02:15,390
+we can calculate the mass of
+the cluster in the foreground.
+
+30
+00:02:17,040 --> 00:02:23,340
+In this way a kind of tomography of the
+structure in the foreground is obtained.
+
+31
+00:02:23,340 --> 00:02:27,419
+The optical image from the Hubble Space
+telescope on the left shows multiple
+
+32
+00:02:27,419 --> 00:02:32,818
+images of a galaxy in
+the background in blue color.
+
+33
+00:02:32,818 --> 00:02:35,720
+The reconstructed mass
+distribution of the galaxy
+
+34
+00:02:35,720 --> 00:02:39,390
+cluster in the foreground
+is shown on the right.
+
+35
+00:02:39,390 --> 00:02:44,880
+It demonstrates an amorphous
+distribution of invisible mass
+
+36
+00:02:44,880 --> 00:02:50,150
+on which peaks of luminous
+objects are superimposed.
+
+37
+00:02:50,150 --> 00:02:55,060
+The invisible mass dominates the visible
+mass of the cluster, as it does for
+
+38
+00:02:55,060 --> 00:02:56,030
+galaxies.
+
+39
+00:02:57,750 --> 00:03:03,020
+Another convincing indication is obtained
+by observing the components of the so
+
+40
+00:03:03,020 --> 00:03:05,380
+called bullet cluster.
+
+41
+00:03:05,380 --> 00:03:08,110
+It consists of two
+colliding galaxy clusters.
+
+42
+00:03:08,110 --> 00:03:13,280
+Using gravitational lensing and
+x-ray imaging, we can visualize
+
+43
+00:03:13,280 --> 00:03:18,440
+the behavior of different forms of
+matter after a galaxy cluster collision.
+
+44
+00:03:19,840 --> 00:03:23,455
+The pink part of this image is
+are reconstructed from data of
+
+45
+00:03:23,455 --> 00:03:25,545
+the satellite Chandra,
+
+46
+00:03:25,545 --> 00:03:31,135
+observing the intensity of
+X-rays emitted by the cluster.
+
+47
+00:03:31,135 --> 00:03:35,773
+This corresponds to the luminous material
+density which shows the deformation,
+
+48
+00:03:35,773 --> 00:03:37,598
+the acceleration by friction,
+
+49
+00:03:37,598 --> 00:03:41,496
+and the coalescence which is
+expected after such a collision for
+
+50
+00:03:41,496 --> 00:03:43,450
+ordinary matter.
+
+51
+00:03:43,450 --> 00:03:45,460
+The blue part on the contrary,
+
+52
+00:03:45,460 --> 00:03:49,910
+is the mass densely reconstructed
+through gravitational lensing.
+
+53
+00:03:49,910 --> 00:03:52,800
+The distribution shows that
+the majority of the mass of
+
+54
+00:03:52,800 --> 00:03:57,900
+the two clusters passes through the
+collision without too much interaction.
+
+55
+00:03:57,900 --> 00:04:02,550
+It is therefore in advance,
+with respect to the luminous mass.
+
+56
+00:04:02,550 --> 00:04:06,010
+We conclude from all this evidence
+that dark matter accounts for
+
+57
+00:04:06,010 --> 00:04:10,490
+about 85% of the mass of galaxies and
+their clusters.
+
+58
+00:04:11,680 --> 00:04:14,060
+But this percentage can vary a lot.
+
+59
+00:04:14,060 --> 00:04:19,366
+A recently discovered galaxy,
+Dragonfly-44,
+
+60
+00:04:19,366 --> 00:04:25,444
+is even suspected to contain
+99.9% of dark matter.
+
+61
+00:04:25,444 --> 00:04:29,208
+It is therefore beyond doubt
+that dark matter exists
+
+62
+00:04:29,208 --> 00:04:34,190
+and contributes to the confinement
+of matter and light in galaxies, and
+
+63
+00:04:34,190 --> 00:04:36,675
+probably also to their formation.
+
+64
+00:04:36,675 --> 00:04:41,435
+The gravitational behavior of this
+substance is the same as that of
+
+65
+00:04:41,435 --> 00:04:43,360
+luminous matter.
+
+66
+00:04:43,360 --> 00:04:46,110
+So this is indeed a form of matter, but
+
+67
+00:04:46,110 --> 00:04:49,690
+an unconventional one in
+that it shines no light,
+
+68
+00:04:49,690 --> 00:04:51,690
+does not reflect nor absorb it.
+
+69
+00:04:52,790 --> 00:04:57,870
+If it consists of particles,
+their properties must be the following.
+
+70
+00:04:57,870 --> 00:05:02,543
+They must be electrically neutral, else
+they would radiate light.
+
+71
+00:05:02,543 --> 00:05:07,020
+They should have evolved
+at non-relativistic velocity at
+
+72
+00:05:07,020 --> 00:05:09,610
+the epoch of matter-radiation equilibrium.
+
+73
+00:05:09,610 --> 00:05:12,555
+That's why we speak of
+cold dark matter.
+
+74
+00:05:12,555 --> 00:05:17,290
+And they must interact weakly among
+themselves and with normal matter.
+
+75
+00:05:17,290 --> 00:05:22,800
+Otherwise the products of
+their reactions will be abundant.
+
+76
+00:05:22,800 --> 00:05:27,180
+And finally their density must be
+compatible with the missing mass balance.
+
+77
+00:05:28,980 --> 00:05:33,803
+The main research methods which
+attempt to identify the generic
+
+78
+00:05:33,803 --> 00:05:37,345
+dark matter particle
+chi are the following.
+
+79
+00:05:37,345 --> 00:05:41,939
+Search for chi production at the high energy
+colliders like the LHC
+
+80
+00:05:41,939 --> 00:05:45,830
+according to the profile we just showed.
+
+81
+00:05:45,830 --> 00:05:50,017
+You will find examples of
+these on the CERN website.
+
+82
+00:05:50,017 --> 00:05:56,550
+So far researchers have not identified signals, but 
+this line is vigorously by ATLAS and CMS.
+
+83
+00:05:58,480 --> 00:06:03,970
+And Anna has introduced you to
+research like this in module 7.
+
+84
+00:06:03,970 --> 00:06:10,782
+Search for interaction of dark matter with ordinary 
+matter where one looks for recoil of a heavy nucleus.
+
+85
+00:06:10,782 --> 00:06:13,509
+Because of the low rates and tiny recoils,
+
+86
+00:06:13,509 --> 00:06:17,079
+this is done with cryogenic
+liquid noble gas detector,
+
+87
+00:06:17,079 --> 00:06:19,630
+for example with xenon.
+
+88
+00:06:19,630 --> 00:06:24,700
+You can find more information on
+the website of our colleagues in Zurich.
+
+89
+00:06:24,700 --> 00:06:28,891
+The search for
+self annihilation products of dark matter
+
+90
+00:06:28,891 --> 00:06:32,900
+particles which are their own
+anti-particles.
+
+91
+00:06:32,900 --> 00:06:37,381
+Annihilations will give pairs of
+ordinary particles and anti-particles.
+
+92
+00:06:37,381 --> 00:06:42,677
+This could result in a detectable
+signal in the energy spectra of
+
+93
+00:06:42,677 --> 00:06:50,180
+otherwise secondary and rare cosmic rays like 
+positrons and antiprotons and so on.
+
+94
+00:06:50,180 --> 00:06:55,530
+Martin and I follow this research line
+with the Alpha Magnetic Spectrometer.
+
+95
+00:06:56,670 --> 00:07:00,989
+We search for products of
+auto-annihilation between dark matter
+
+96
+00:07:00,989 --> 00:07:04,890
+particles with our cosmic
+ray spectrometer, AMS,
+
+97
+00:07:04,890 --> 00:07:09,700
+installed on the International
+Space Station for several years.
+
+98
+00:07:09,700 --> 00:07:14,730
+The spectrometer identifies cosmic ray
+particles and measures their energy.
+
+99
+00:07:14,730 --> 00:07:21,396
+It is sensitive to energies between
+a fraction of a GeV up to TeV.
+
+100
+00:07:21,396 --> 00:07:25,250
+It has, so far,
+collected over 85 billion particles,
+
+101
+00:07:25,250 --> 00:07:29,644
+the largest sample of cosmic rays
+analyzed since their discovery more
+
+102
+00:07:29,644 --> 00:07:31,290
+than a hundred years ago.
+
+103
+00:07:32,760 --> 00:07:36,237
+A result that could be relevant for
+dark matter detection
+
+104
+00:07:36,237 --> 00:07:42,157
+is the fact that beyond a few tenths of GeV
+the fluxes of cosmic positrons and
+
+105
+00:07:42,157 --> 00:07:46,280
+electrons deviate from their normal form.
+
+106
+00:07:46,280 --> 00:07:49,560
+This is particularly noticeable for
+positrons,
+
+107
+00:07:49,560 --> 00:07:53,960
+antiparticles which are rare
+compared to electrons.
+
+108
+00:07:53,960 --> 00:07:58,141
+This clearly indicates that there is
+a new source of electrons and positrons,
+
+109
+00:07:58,141 --> 00:08:03,460
+with the characteristic energy of
+several hundred GeV.
+
+110
+00:08:03,460 --> 00:08:07,829
+The question is whether this is a diffuse
+source such as the annihilation of dark
+
+111
+00:08:07,829 --> 00:08:08,367
+matter,
+
+112
+00:08:08,367 --> 00:08:14,600
+or a localized source such as one or
+more pulsars close to Earth.
+
+113
+00:08:14,600 --> 00:08:18,337
+These two hypotheses can be
+differentiated by the detection
+
+114
+00:08:18,337 --> 00:08:23,520
+of anisotropies in the arrival
+direction of electrons and positrons.
+
+115
+00:08:23,520 --> 00:08:29,060
+A higher level of anisotropy is
+expected from localized nearby sources.
+
+116
+00:08:30,440 --> 00:08:33,330
+We will probably be able to
+distinguish the two candidate
+
+117
+00:08:33,330 --> 00:08:36,500
+mechanisms with future data
+from the AMS experiment.
+
+118
+00:08:38,480 --> 00:08:42,240
+Also, the rate at which the spectrum
+falls back to its normal shape,
+
+119
+00:08:42,240 --> 00:08:45,030
+after the maximum, is full of information.
+
+120
+00:08:45,030 --> 00:08:49,090
+If the extra source is
+annihilation of dark matter
+
+121
+00:08:49,090 --> 00:08:53,910
+that mass imposes a well defined upper
+limit on any annihilation product.
+
+122
+00:08:53,910 --> 00:08:57,230
+Here, we show an example of
+a dark matter particle mass of
+
+123
+00:08:57,230 --> 00:09:00,400
+700 GeV in red.
+
+124
+00:09:01,780 --> 00:09:03,650
+If there are astrophysical sources,
+
+125
+00:09:03,650 --> 00:09:09,370
+the disappearance of the signal will be much
+slower, as indicated by the blue line.
+
+126
+00:09:10,650 --> 00:09:16,110
+We are thus actively fencing in dark matter
+from all sides with experimental searches.
+
+127
+00:09:16,110 --> 00:09:20,831
+And I hope to still see the dark matter
+particle identified during my lifetime.
+
+128
+00:09:20,831 --> 00:09:25,179
+I am much less optimistic
+regarding dark energy,
+
+129
+00:09:25,179 --> 00:09:28,500
+which is discussed in the next video.
+
+130
+00:09:28,500 --> 00:09:34,549
+[MUSIC]

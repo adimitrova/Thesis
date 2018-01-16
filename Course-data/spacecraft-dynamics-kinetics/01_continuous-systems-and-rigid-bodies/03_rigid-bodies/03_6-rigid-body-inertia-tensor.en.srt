@@ -1,0 +1,267 @@
+1
+00:00:06,143 --> 00:00:10,117
+If you pick vector components, this is
+just written in a very corner frame,
+
+2
+00:00:10,117 --> 00:00:11,180
+independent way.
+
+3
+00:00:11,180 --> 00:00:14,730
+I'm just taking the cross product operator
+and representing it in a matrix form.
+
+4
+00:00:16,060 --> 00:00:20,673
+Now to actually numerically compute it,
+you'd have to take r1, r2, r3.
+
+5
+00:00:20,673 --> 00:00:26,700
+And then your first rule becomes 0 minus
+r3 plus r2, right, and you break it down.
+
+6
+00:00:26,700 --> 00:00:30,050
+That means you've picked
+a particular body frame.
+
+7
+00:00:30,050 --> 00:00:35,740
+So if you do that and that matrix with the
+minus sign, it gives you this definition.
+
+8
+00:00:35,740 --> 00:00:40,666
+If you replace r1, r2, r3 with just x,
+y, and z this should look very familiar.
+
+9
+00:00:40,666 --> 00:00:45,495
+And now you would have your y squared
+plus z squared, x squared plus z squared,
+
+10
+00:00:45,495 --> 00:00:47,525
+x squared plus y squared.
+
+11
+00:00:47,525 --> 00:00:51,025
+Those are your different
+moments of inertia definitions.
+
+12
+00:00:51,025 --> 00:00:55,077
+And then we have our off diagonal
+terms that appear as well.
+
+13
+00:00:55,077 --> 00:01:00,157
+So generally, to have a rigid body your
+inertia tensor, which is what I'm showing
+
+14
+00:01:00,157 --> 00:01:03,777
+here, will be a three by three matrix
+when you numerically evaluate it.
+
+15
+00:01:03,777 --> 00:01:07,247
+But to do so, there's two conditions.
+
+16
+00:01:07,247 --> 00:01:11,667
+One, we've picked about which
+point we're taking moments.
+
+17
+00:01:11,667 --> 00:01:15,137
+These r's are defined relative
+to the center of mass.
+
+18
+00:01:16,420 --> 00:01:20,210
+And then when you numerically evaluate it,
+you pick a particular coordinate frame and
+
+19
+00:01:20,210 --> 00:01:21,770
+say, okay, my one access point is forward.
+
+20
+00:01:21,770 --> 00:01:24,270
+The second one is to the left and
+then the third one is up.
+
+21
+00:01:24,270 --> 00:01:29,380
+If you pick a different coordinate frame,
+you would have different components.
+
+22
+00:01:29,380 --> 00:01:33,710
+And you get a different inertia matrix
+representation of the inertia tensor.
+
+23
+00:01:33,710 --> 00:01:35,780
+The inertia tensor is really an invariant,
+
+24
+00:01:35,780 --> 00:01:39,530
+that's it for
+this space craft has one inertia tensor.
+
+25
+00:01:39,530 --> 00:01:41,210
+But then how we numerically express it.
+
+26
+00:01:41,210 --> 00:01:45,040
+There's an infinity of answers, because
+I could pick a infinity of body frames
+
+27
+00:01:45,040 --> 00:01:48,110
+to break out these vectors and
+do the tildes and compute this.
+
+28
+00:01:49,290 --> 00:01:51,570
+Now this body integral is not very fun.
+
+29
+00:01:51,570 --> 00:01:53,130
+It gets tedious.
+
+30
+00:01:53,130 --> 00:01:54,770
+Cat programs love this.
+
+31
+00:01:54,770 --> 00:01:58,800
+They know where every nut and
+bolt and panel and fuel tank is, and
+
+32
+00:01:58,800 --> 00:02:00,550
+everything that goes on the spacecraft.
+
+33
+00:02:00,550 --> 00:02:04,810
+So it simply has to sum them up, know
+the location, do this math, times dn and
+
+34
+00:02:04,810 --> 00:02:07,098
+sum everything up, and
+it spits it out in a heartbeat.
+
+35
+00:02:07,098 --> 00:02:09,340
+Doing it analytically
+a little bit tedious, so
+
+36
+00:02:09,340 --> 00:02:13,370
+we will look at tricks that we don't
+have to redo this integral every time.
+
+37
+00:02:13,370 --> 00:02:17,310
+What if I am not taking moments about this
+point, but I am putting this at the end of
+
+38
+00:02:17,310 --> 00:02:20,230
+a robot arm and
+I need movement about this other point.
+
+39
+00:02:20,230 --> 00:02:21,550
+Do I have to redo all this math?
+
+40
+00:02:22,630 --> 00:02:25,563
+So angular momentum expression,
+as we said, was just hc.
+
+41
+00:02:25,563 --> 00:02:29,070
+You already identified that term as
+being nothing but the inertia tensor.
+
+42
+00:02:29,070 --> 00:02:32,480
+I am writing it as Ic times Omega.
+
+43
+00:02:32,480 --> 00:02:34,706
+There is now some
+notational subtlety here.
+
+44
+00:02:34,706 --> 00:02:36,978
+Here I picked a particular bonding frame.
+
+45
+00:02:36,978 --> 00:02:38,990
+Here I am not specifying body.
+
+46
+00:02:38,990 --> 00:02:43,540
+So I'm really equating matrix math is
+equivalent to this tensor vector math.
+
+47
+00:02:44,610 --> 00:02:49,820
+The inertia tensor, think of it as
+a two-dimensional vector, right?
+
+48
+00:02:49,820 --> 00:02:54,780
+I can write these quantities in a general
+way, but then when I evaluate any vector I
+
+49
+00:02:54,780 --> 00:02:57,790
+have to have a coordinate frame to
+break down the components and add and
+
+50
+00:02:57,790 --> 00:02:58,620
+subtract them.
+
+51
+00:02:58,620 --> 00:03:00,740
+But you can write them in
+a very coordinate agnostic way.
+
+52
+00:03:00,740 --> 00:03:02,350
+And that's what I'm having here.
+
+53
+00:03:02,350 --> 00:03:05,440
+I'm not saying, if this is the b frame,
+this better be in the b frame.
+
+54
+00:03:05,440 --> 00:03:07,840
+Otherwise, you're adding apples and
+oranges.
+
+55
+00:03:07,840 --> 00:03:12,740
+But, this can also both be in the q
+frame or the r frame, it doesn't matter.
+
+56
+00:03:12,740 --> 00:03:16,640
+In the vectorial way, we can just
+write the tensor operator like this.
+
+57
+00:03:17,830 --> 00:03:18,916
+So that's the Inertia Tensor.

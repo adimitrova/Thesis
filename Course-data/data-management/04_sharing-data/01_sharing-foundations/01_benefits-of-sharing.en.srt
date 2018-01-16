@@ -1,0 +1,410 @@
+1
+00:00:00,000 --> 00:00:06,594
+[MUSIC]
+
+2
+00:00:06,594 --> 00:00:11,452
+Thus far, we have touched on FINRA
+expectations regarding data sharing as
+
+3
+00:00:11,452 --> 00:00:16,078
+well as some of the data management
+practices that can help researchers
+
+4
+00:00:16,078 --> 00:00:18,180
+share their data efficiently.
+
+5
+00:00:19,440 --> 00:00:22,690
+This includes following
+metadata standards,
+
+6
+00:00:22,690 --> 00:00:28,220
+creating documentation and
+following quality assurance protocols.
+
+7
+00:00:28,220 --> 00:00:32,480
+Now, we will delve more deeply into
+the topic of sharing digital data.
+
+8
+00:00:33,690 --> 00:00:35,290
+By the end of this lesson,
+
+9
+00:00:35,290 --> 00:00:40,250
+you will be able to identify some
+of the benefits of sharing data.
+
+10
+00:00:40,250 --> 00:00:44,090
+You will also be able to identify
+some of the challenges and
+
+11
+00:00:44,090 --> 00:00:45,530
+obstacles to data sharing.
+
+12
+00:00:46,760 --> 00:00:51,900
+And finally, you will recognize the
+importance and elements of data citations.
+
+13
+00:00:53,080 --> 00:00:57,860
+Let's consider the key players
+when it comes to data sharing.
+
+14
+00:00:57,860 --> 00:01:01,424
+First, there is the data creator or
+producer.
+
+15
+00:01:01,424 --> 00:01:06,381
+This is the person or entity who is
+making the data available to share.
+
+16
+00:01:06,381 --> 00:01:12,420
+There is also the person who reuses
+the data or the secondary data user.
+
+17
+00:01:12,420 --> 00:01:15,580
+Finally, there is the data repository.
+
+18
+00:01:15,580 --> 00:01:18,650
+This is where the data creator
+makes the data available.
+
+19
+00:01:19,890 --> 00:01:24,820
+A data repository plays a key role
+in enhancing the discovery and
+
+20
+00:01:24,820 --> 00:01:26,540
+reuse of the data.
+
+21
+00:01:26,540 --> 00:01:29,410
+And ideally,
+creating a formal data citation.
+
+22
+00:01:30,940 --> 00:01:34,302
+So what are some of
+the benefits of data sharing?
+
+23
+00:01:34,302 --> 00:01:37,401
+As we discussed previously,
+funders are encouraging.
+
+24
+00:01:37,401 --> 00:01:42,708
+And in some cases, requiring researcher
+to make their data available for
+
+25
+00:01:42,708 --> 00:01:46,304
+sharing to support transparency and
+openness and
+
+26
+00:01:46,304 --> 00:01:49,309
+maximize funders return on investment.
+
+27
+00:01:49,309 --> 00:01:54,975
+The specific benefits of data sharing to
+the research community are numerous and
+
+28
+00:01:54,975 --> 00:01:57,650
+discussed in much of the literature.
+
+29
+00:01:57,650 --> 00:02:02,819
+We will now look at the top ten
+benefits of sharing research data.
+
+30
+00:02:02,819 --> 00:02:07,273
+For more information on data sharing
+literature, check out the resources for
+
+31
+00:02:07,273 --> 00:02:08,090
+this module.
+
+32
+00:02:09,600 --> 00:02:15,260
+Number one, sharing data reinforces
+open scientific inquiry.
+
+33
+00:02:15,260 --> 00:02:19,160
+Making data openly available
+decreases the potential for
+
+34
+00:02:19,160 --> 00:02:23,410
+disagreements among researchers and
+allows scientific inquiry
+
+35
+00:02:23,410 --> 00:02:27,930
+to progress unimpeded to the benefit
+of the entire research community.
+
+36
+00:02:29,880 --> 00:02:34,380
+Number two,
+sharing data supports the verification and
+
+37
+00:02:34,380 --> 00:02:37,390
+replication of original results.
+
+38
+00:02:37,390 --> 00:02:44,150
+By making data available, data can be used
+to verify or replicate published results.
+
+39
+00:02:44,150 --> 00:02:49,940
+Verification can bolster the original
+results or it can expose errors.
+
+40
+00:02:49,940 --> 00:02:51,750
+Either outcome helps strengthen and
+
+41
+00:02:51,750 --> 00:02:54,240
+protect the integrity of
+the scientific record.
+
+42
+00:02:55,590 --> 00:03:00,290
+Number three, sharing data promotes
+new research and allows for
+
+43
+00:03:00,290 --> 00:03:03,560
+the testing of new or alternative methods.
+
+44
+00:03:03,560 --> 00:03:06,940
+While data creators may have
+one research question in mind,
+
+45
+00:03:06,940 --> 00:03:12,100
+the same data may be reused to answer
+new and innovative research questions.
+
+46
+00:03:13,870 --> 00:03:20,320
+Number four, sharing data encourages
+collaboration and multiple perspectives.
+
+47
+00:03:20,320 --> 00:03:25,620
+Sharing data can begin conversations
+between researchers across disciplines.
+
+48
+00:03:25,620 --> 00:03:30,310
+This could lead to cross-disciplinary
+collaborations or the exchange of
+
+49
+00:03:30,310 --> 00:03:35,830
+knowledge across fields that could result
+in new innovative research approaches.
+
+50
+00:03:37,110 --> 00:03:42,350
+Number five, sharing data provides
+important teaching resources.
+
+51
+00:03:42,350 --> 00:03:46,820
+Data are extremely valuable
+pedagogical tools.
+
+52
+00:03:46,820 --> 00:03:50,990
+Instructors may use data
+in analytical exercises or
+
+53
+00:03:50,990 --> 00:03:55,120
+students may model their own work
+after high-quality data examples.
+
+54
+00:03:56,540 --> 00:04:01,200
+Data can also provide students with
+firsthand experience in verifying results.
+
+55
+00:04:02,270 --> 00:04:03,200
+Number six,
+
+56
+00:04:03,200 --> 00:04:08,260
+sharing data reduces costs by avoiding
+duplicate data collection efforts.
+
+57
+00:04:08,260 --> 00:04:13,360
+Avoiding unintended duplicate data
+collections saves both respondents and
+
+58
+00:04:13,360 --> 00:04:17,910
+researchers valuable time and resources
+and freeze up researcher funds for
+
+59
+00:04:17,910 --> 00:04:18,760
+other projects.
+
+60
+00:04:20,250 --> 00:04:26,580
+Number seven, sharing data protects
+against faulty or fraudulent data.
+
+61
+00:04:26,580 --> 00:04:28,071
+Over the past few years,
+
+62
+00:04:28,071 --> 00:04:32,627
+there have been multiple stories in
+the news about misconduct in research.
+
+63
+00:04:32,627 --> 00:04:36,458
+Sharing data promotes transparency and
+accountability,
+
+64
+00:04:36,458 --> 00:04:42,710
+which lessens the potential for purposeful
+falsification or distortion of data.
+
+65
+00:04:42,710 --> 00:04:48,280
+It also allows reusers to
+detect unintentional errors.
+
+66
+00:04:48,280 --> 00:04:52,897
+And finally, the expectation that
+others may be verifying data
+
+67
+00:04:52,897 --> 00:04:56,838
+should encourage greater
+care in original analyses.
+
+68
+00:04:56,838 --> 00:05:00,966
+Number eight,
+sharing data enhances the visibility and
+
+69
+00:05:00,966 --> 00:05:03,810
+overall impact of research projects.
+
+70
+00:05:04,960 --> 00:05:08,950
+Making research data available
+within a data repository
+
+71
+00:05:08,950 --> 00:05:13,580
+can increase the visibility of researched
+products and increase the impact
+
+72
+00:05:13,580 --> 00:05:18,320
+of a project by encouraging
+secondary analysis of the data.
+
+73
+00:05:18,320 --> 00:05:23,980
+Scholars have also found a significant
+association between publishing data and
+
+74
+00:05:23,980 --> 00:05:25,180
+increased citation rates.
+
+75
+00:05:26,210 --> 00:05:31,260
+In the end, sharing data does not only
+benefit the broader research community,
+
+76
+00:05:31,260 --> 00:05:34,950
+but can also produce potential
+career benefits for researchers.
+
+77
+00:05:36,070 --> 00:05:40,760
+Number nine, sharing data
+preserves data for future use.
+
+78
+00:05:40,760 --> 00:05:46,500
+If a researcher makes their data available
+for sharing within a data repository,
+
+79
+00:05:46,500 --> 00:05:49,720
+then they can be sure that
+the data will be available and
+
+80
+00:05:49,720 --> 00:05:54,190
+understandable for the long-term for
+their own and others use.
+
+81
+00:05:55,650 --> 00:06:00,065
+Number ten, sharing data helps
+the broader community and
+
+82
+00:06:00,065 --> 00:06:03,589
+individual researchers do better research.
+
+83
+00:06:03,589 --> 00:06:08,322
+By sharing data, researchers
+support both their own research and
+
+84
+00:06:08,322 --> 00:06:13,816
+the broader research community resulting
+in science that is more accurate,
+
+85
+00:06:13,816 --> 00:06:18,989
+more open, more knowledgeable and
+has more resources at its disposal.
+
+86
+00:06:18,989 --> 00:06:28,279
+[MUSIC]

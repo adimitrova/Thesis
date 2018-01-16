@@ -1,0 +1,1078 @@
+1
+00:00:00,005 --> 00:00:24,410
+Okay so, Lesson one has been all about 
+getting started understanding graphics 
+
+2
+00:00:24,410 --> 00:00:30,355
+and sound and then try to make some very, 
+very basic program by manipulating them. 
+
+3
+00:00:30,355 --> 00:00:36,750
+And I want to extend that idea so that 
+we've got to our first-stage application, 
+
+4
+00:00:36,750 --> 00:00:42,324
+our Week 1 application. 
+And if you had a look at the intro video 
+
+5
+00:00:42,324 --> 00:00:46,580
+for running an app on your iOS device 
+you've seen a little bit of this already. 
+
+6
+00:00:46,580 --> 00:00:50,840
+So it's called Sonic Painter. 
+The application just allows you to draw 
+
+7
+00:00:50,840 --> 00:00:54,280
+on the screen and it makes a series of 
+shapes and at the same time you can 
+
+8
+00:00:54,280 --> 00:00:57,530
+manipulate some sounds using very, very 
+basic functions. 
+
+9
+00:00:57,530 --> 00:01:02,250
+So it's quite a simple application. 
+Having said that, there are a number of 
+
+10
+00:01:02,250 --> 00:01:06,470
+applications that are available on the 
+Web that people pay to use, that aren't 
+
+11
+00:01:06,470 --> 00:01:11,030
+that much more complicated than this. 
+The key to making it look nice is about 
+
+12
+00:01:11,030 --> 00:01:14,970
+having really, really good sound and 
+image integration, so that people really 
+
+13
+00:01:14,970 --> 00:01:19,320
+feel that it's interactive. 
+And, also mapping information from one 
+
+14
+00:01:19,320 --> 00:01:22,450
+domain to the other, we're going to talk 
+a little bit about how to do that. 
+
+15
+00:01:23,870 --> 00:01:30,700
+So the basic idea is that we draw shapes 
+on the screen, and they slowly rub each 
+
+16
+00:01:30,700 --> 00:01:34,620
+other around. 
+and we have different brushes as well, 
+
+17
+00:01:34,620 --> 00:01:38,000
+which I'm going to talk about. 
+And as you make a gesture to draw a 
+
+18
+00:01:38,000 --> 00:01:41,290
+shape, it plays back and manipulates a 
+sound. 
+
+19
+00:01:41,290 --> 00:01:46,940
+And that's the idea behind Sonic Painter. 
+So how do we map information from the 
+
+20
+00:01:46,940 --> 00:01:50,080
+mouse to control different aspects of 
+graphics? 
+
+21
+00:01:50,080 --> 00:01:53,675
+Well, we need to think about graphics 
+parameters specifically. 
+
+22
+00:01:53,675 --> 00:01:58,300
+The whole plan is to make something that 
+looks much better than just someone 
+
+23
+00:01:58,300 --> 00:02:01,420
+wheeling around it with their mouse. 
+But essentially, it's someone just 
+
+24
+00:02:01,420 --> 00:02:02,915
+wheeling around a mouse with their 
+finger. 
+
+25
+00:02:02,915 --> 00:02:06,990
+It's up to the programmer to try and make 
+it look more interesting than that. 
+
+26
+00:02:06,990 --> 00:02:10,850
+There are a couple of techniques which 
+you can use, which make that much easier. 
+
+27
+00:02:12,240 --> 00:02:19,220
+The first one is mapping information. 
+So we start with the map command and 
+
+28
+00:02:19,220 --> 00:02:25,182
+we're using it to adjust the color. 
+And you can see, the idea is we take the 
+
+29
+00:02:25,182 --> 00:02:32,820
+mouseX position and we map it between 0, 
+which is x equals 0, which is right at 
+
+30
+00:02:32,820 --> 00:02:38,750
+the leftmost part of the screen. 
+And the width, so the idea of that is 
+
+31
+00:02:38,750 --> 00:02:43,190
+that the user moves their finger from 
+here to here, we get a number which is 
+
+32
+00:02:43,190 --> 00:02:47,420
+representative of either 0 or the width. 
+And then we map that down to a scale 
+
+33
+00:02:47,420 --> 00:02:53,000
+between 0 and 255, and as Marco's already 
+explained, that's the range, the 
+
+34
+00:02:53,000 --> 00:02:56,840
+parameter range for a color. 
+Now, we're doing this by using this width 
+
+35
+00:02:56,840 --> 00:03:01,770
+command, which always tells us how wide 
+the application is currently and then 
+
+36
+00:03:01,770 --> 00:03:04,520
+we're mapping it in. 
+So let's have a look at that in action. 
+
+37
+00:03:04,520 --> 00:03:08,420
+I'm going to make this really simple by 
+changing the brush to the most simple 
+
+38
+00:03:08,420 --> 00:03:10,160
+brush, in fact, it's just going to be a 
+line. 
+
+39
+00:03:14,510 --> 00:03:22,850
+Here's a line and I need to be sure that 
+I'm actually deleting the right line 
+
+40
+00:03:22,850 --> 00:03:25,760
+there, okay, yeah. 
+Let me just try and run this again. 
+
+41
+00:03:25,760 --> 00:03:30,940
+Now, what you'll find is, if I refresh 
+this, it will pick up the changes I've 
+
+42
+00:03:30,940 --> 00:03:34,541
+just made without me having to mess with 
+it too much. 
+
+43
+00:03:34,541 --> 00:03:38,806
+And we should find, yeah. 
+[MUSIC] There's a single line. 
+
+44
+00:03:38,806 --> 00:03:43,800
+I'm just going to mute it for a second so 
+you can't hear, you can just see. 
+
+45
+00:03:45,140 --> 00:03:48,060
+I'm just drawing with a single line and 
+you'll be able to see that on the desktop 
+
+46
+00:03:48,060 --> 00:03:52,220
+version as well if I refresh this. 
+A single line is being drawn. 
+
+47
+00:03:52,220 --> 00:03:55,100
+So let's go back to the code and see how 
+that works. 
+
+48
+00:03:55,100 --> 00:03:59,702
+We're basically setting here, we're, 
+we're going to talk about the audio in a 
+
+49
+00:03:59,702 --> 00:04:04,313
+bit more detail later on. 
+But as Matt's already explained we can 
+
+50
+00:04:04,313 --> 00:04:08,630
+load a sound and we can play it back. 
+So playing back the sound, and then we're 
+
+51
+00:04:08,630 --> 00:04:13,820
+getting the red channel from mouseX. 
+And we're mapping the, from 0 to the 
+
+52
+00:04:13,820 --> 00:04:18,740
+width to a range of 0 to 255. 
+And then we're getting the blue, and 
+
+53
+00:04:18,740 --> 00:04:25,149
+we're mapping mouseY, which is up and 
+down from 0 to width to a range of 0 and 
+
+54
+00:04:25,149 --> 00:04:27,610
+255. 
+So that gives us our red and the blue. 
+
+55
+00:04:27,610 --> 00:04:31,550
+We've also got a green. 
+Now, let's have a look at the green and 
+
+56
+00:04:31,550 --> 00:04:36,540
+what it does. 
+So it's more green on the edges and less 
+
+57
+00:04:36,540 --> 00:04:39,100
+green in the middle. 
+How do we do that? 
+
+58
+00:04:39,100 --> 00:04:40,700
+Well, we can get the distance from the 
+center. 
+
+59
+00:04:43,190 --> 00:04:46,525
+The dist function in processing allows us 
+to get the distance. 
+
+60
+00:04:46,525 --> 00:04:52,610
+From any particular point to another 
+point, and it uses, quite fabulous to do 
+
+61
+00:04:52,610 --> 00:04:57,833
+this basically just, it makes a triangle 
+and figures out what the hypotenuse of 
+
+62
+00:04:57,833 --> 00:05:02,090
+the triangle is. 
+So the hypotenuse is, if you have a right 
+
+63
+00:05:02,090 --> 00:05:07,940
+angle triangle, it's the bit that is the 
+longest item aside. 
+
+64
+00:05:07,940 --> 00:05:10,810
+And that's the bit we want to work out, 
+with this being one point and this being 
+
+65
+00:05:10,810 --> 00:05:15,140
+the other point. 
+Now, the dist function does that for us. 
+
+66
+00:05:15,140 --> 00:05:18,540
+We just give it an xy coordinate as a 
+starting point and an xy coordinate as an 
+
+67
+00:05:18,540 --> 00:05:21,020
+ending point. 
+It tells us what the distance is. 
+
+68
+00:05:21,020 --> 00:05:26,078
+And we can use that to work out what the 
+green color ought to be. 
+
+69
+00:05:26,078 --> 00:05:33,030
+So dist does this for us. 
+We get the mouseX and mouseY, which is 
+
+70
+00:05:33,030 --> 00:05:39,160
+the, where the mouse or where the finger 
+is on the iPod or the iPad or iPhone. 
+
+71
+00:05:39,160 --> 00:05:44,530
+And then we see how far that is from the 
+center which is width divided by 2, 
+
+72
+00:05:44,530 --> 00:05:50,710
+height divided by 2. 
+So, let's just see again how that works. 
+
+73
+00:05:50,710 --> 00:05:55,050
+So we have this, what we do is we're 
+using that to adjust the green. 
+
+74
+00:05:56,310 --> 00:06:02,597
+And if we have a look at the app itself, 
+you can see we're greener as we get away 
+
+75
+00:06:02,597 --> 00:06:12,600
+from the center, and likewise here. 
+Just the same here. 
+
+76
+00:06:12,600 --> 00:06:14,790
+All right. 
+So we've got a nice mixture of red, green 
+
+77
+00:06:14,790 --> 00:06:19,450
+and blue across the entire range, across 
+the entire screen. 
+
+78
+00:06:19,450 --> 00:06:22,240
+We also want to know, well, let's see 
+what else we can do. 
+
+79
+00:06:22,240 --> 00:06:25,635
+We can get the speed. 
+If we get the speed, we can use the 
+
+80
+00:06:25,635 --> 00:06:30,510
+distance between the previous last 
+position and the current last position, 
+
+81
+00:06:30,510 --> 00:06:33,300
+and that's a good measure of speed, 
+because it's halfway traveled, right, 
+
+82
+00:06:33,300 --> 00:06:35,950
+with the finger. 
+So we get that distance, and that tells 
+
+83
+00:06:35,950 --> 00:06:38,135
+us how fast we're moving. 
+Simple as that. 
+
+84
+00:06:38,135 --> 00:06:43,400
+We can also change the alpha. 
+We can use the speed value that we've got 
+
+85
+00:06:43,400 --> 00:06:48,460
+to set how bright the alpha is, so how 
+transparent the drawing is. 
+
+86
+00:06:48,460 --> 00:06:53,330
+So the faster we go, the more 
+transparent, sorry, the less transparent 
+
+87
+00:06:53,330 --> 00:06:57,950
+it is, and the slower we go, the more 
+transparent it is. 
+
+88
+00:06:57,950 --> 00:07:02,520
+We can also set another variable called 
+line width, and we can use the speed to 
+
+89
+00:07:02,520 --> 00:07:05,420
+do that. 
+You can see on the screen here. 
+
+90
+00:07:05,420 --> 00:07:09,350
+That if I go very slowly, it's a fat 
+line, and if I go fast, it's a thin line. 
+
+91
+00:07:12,980 --> 00:07:17,850
+Also, I might want to constrain the line 
+width so that it doesn't go over a 
+
+92
+00:07:17,850 --> 00:07:20,360
+certain width. 
+Otherwise, I can end up with a really 
+
+93
+00:07:20,360 --> 00:07:24,770
+big, fat lines, when I don't want them, 
+simply because I'm going very, very 
+
+94
+00:07:24,770 --> 00:07:27,560
+slowly. 
+So here, what we're doing is using a 
+
+95
+00:07:27,560 --> 00:07:32,520
+function called constrain, and we're 
+saying that we want to constrain the line 
+
+96
+00:07:32,520 --> 00:07:36,016
+width, which is this variable here to 
+between this value and this value. 
+
+97
+00:07:36,016 --> 00:07:42,051
+Between 0 and 10, so the maximum line 
+width is always going to be 10. 
+
+98
+00:07:42,051 --> 00:07:48,990
+Okay. 
+So, using these techniques, we can map 
+
+99
+00:07:48,990 --> 00:07:52,400
+parameters from mouse interaction to 
+color. 
+
+100
+00:07:52,400 --> 00:07:56,370
+We can get distances from the mouse 
+pointer to different different parts of 
+
+101
+00:07:56,370 --> 00:08:00,260
+the screen and use that to control other 
+aspects of the drawing. 
+
+102
+00:08:00,260 --> 00:08:04,268
+we can also constrain certain elements 
+and certain variables that we've created 
+
+103
+00:08:04,268 --> 00:08:08,130
+such as a speed variable, which tells us 
+how far we've traveled between two 
+
+104
+00:08:08,130 --> 00:08:11,050
+frames. 
+And we can make sure that they don't 
+
+105
+00:08:11,050 --> 00:08:17,340
+cause massive changes in our program. 
+So we can also have different brushes. 
+
+106
+00:08:18,620 --> 00:08:20,780
+Now, I've included some brushes for you 
+to have a look at. 
+
+107
+00:08:20,780 --> 00:08:24,050
+These are quite complicated. 
+It's up to you to spend more time looking 
+
+108
+00:08:24,050 --> 00:08:25,500
+at them. 
+They're not too complicated. 
+
+109
+00:08:25,500 --> 00:08:28,820
+In fact, sometimes, there'll be over, a 
+little bit over edge, but they're all 
+
+110
+00:08:28,820 --> 00:08:30,760
+right and they're just to get you 
+started. 
+
+111
+00:08:30,760 --> 00:08:35,070
+But what makes a really good visual app 
+is really, really good brushes. 
+
+112
+00:08:35,070 --> 00:08:38,150
+You'll know that when you use Photoshop, 
+it's one thing just to be drawing a line 
+
+113
+00:08:38,150 --> 00:08:40,940
+on the screen. 
+It's another thing to be able to draw a 
+
+114
+00:08:40,940 --> 00:08:44,740
+very, very pretty pattern. 
+So your brush can even be an image which 
+
+115
+00:08:44,740 --> 00:08:47,570
+you load. 
+Well, in this case what I'm doing is I'm 
+
+116
+00:08:47,570 --> 00:08:50,850
+just using the, the basic shapes, because 
+it's lesson one. 
+
+117
+00:08:50,850 --> 00:08:54,090
+The basic shapes that comes with 
+processing, circles and rectangles and 
+
+118
+00:08:54,090 --> 00:08:56,440
+lines. 
+Just to give you an indication of some 
+
+119
+00:08:56,440 --> 00:08:59,690
+cool things you can do with very, very 
+limited material, and it's up to you to 
+
+120
+00:08:59,690 --> 00:09:02,030
+expand on that, really. 
+We've done the color, this is about 
+
+121
+00:09:02,030 --> 00:09:04,920
+shape. 
+So, let me show you some of these 
+
+122
+00:09:04,920 --> 00:09:08,970
+brushes. 
+And I'll quickly demonstrate a few of 
+
+123
+00:09:08,970 --> 00:09:12,380
+them. 
+So brush1 here, all I have to do is make 
+
+124
+00:09:12,380 --> 00:09:20,230
+it is on comment brush1, and then refresh 
+my apps. 
+
+125
+00:09:20,230 --> 00:09:25,000
+So I can just refresh. 
+Wait for it to finish loading. 
+
+126
+00:09:25,000 --> 00:09:30,290
+You can see on an iPad or an iPhone, 
+there's a little icon. 
+
+127
+00:09:30,290 --> 00:09:32,390
+There you go. 
+So this is drawing a circle. 
+
+128
+00:09:32,390 --> 00:09:39,200
+And you'll notice that the faster I go, 
+if you can see that, the faster I go, the 
+
+129
+00:09:41,510 --> 00:09:45,210
+bigger the circle. 
+And that's a very simple idea of a brush, 
+
+130
+00:09:45,210 --> 00:09:49,780
+so now, I'm going quite slowly and I've 
+got very small circles but the lines are 
+
+131
+00:09:49,780 --> 00:09:55,200
+still quite thick. 
+And the curls are more or less the same. 
+
+132
+00:09:58,070 --> 00:10:07,740
+I've also got this one, which draws 
+squares instead, so it's the same thing, 
+
+133
+00:10:07,740 --> 00:10:11,100
+but it's using rectangles. 
+It's just loading up here, you can see 
+
+134
+00:10:11,100 --> 00:10:15,280
+there's a little icon spinning around. 
+There you go. 
+
+135
+00:10:15,280 --> 00:10:20,430
+And this one produces a, not just one 
+square, but a whole bunch of squares. 
+
+136
+00:10:20,430 --> 00:10:24,090
+I think that's something which is really 
+important to understand, just because 
+
+137
+00:10:24,090 --> 00:10:27,600
+you've only got one input, doesn't mean 
+you should only have those one inputs. 
+
+138
+00:10:27,600 --> 00:10:31,470
+You can have more. 
+So you can take one input and map it to 
+
+139
+00:10:31,470 --> 00:10:33,858
+lots of others. 
+I'll show you how we do that in a minute 
+
+140
+00:10:33,858 --> 00:10:38,470
+and then I'll expand on that. 
+brush3 is a random selection of lines. 
+
+141
+00:10:38,470 --> 00:10:44,390
+So, when I draw on the iPad screen, we 
+can see, we have what looks like, I guess 
+
+142
+00:10:44,390 --> 00:10:48,522
+it looks like kind of very bad tinsel. 
+As I say these are just examples to get 
+
+143
+00:10:48,522 --> 00:10:50,510
+you started. 
+And they get varied with thickness 
+
+144
+00:10:50,510 --> 00:10:52,760
+depending on the speed and you get the 
+color variation. 
+
+145
+00:10:53,820 --> 00:10:55,605
+There's a few more of these. 
+You should have a look at them. 
+
+146
+00:10:55,605 --> 00:11:02,270
+But, this one is a bit more interesting. 
+And this introduces another idea. 
+
+147
+00:11:03,880 --> 00:11:07,310
+Symmetry. 
+Now, you can use symmetry to easily 
+
+148
+00:11:07,310 --> 00:11:11,470
+create order out of something which 
+doesn't necessarily look like ordered. 
+
+149
+00:11:12,870 --> 00:11:18,110
+And in this example, all I'm doing is I'm 
+getting the mouse position and drawing 
+
+150
+00:11:18,110 --> 00:11:22,220
+the line the same way that I did in the 
+very, very first approach that I showed 
+
+151
+00:11:22,220 --> 00:11:24,830
+you. 
+But I'm also drawing a line on the 
+
+152
+00:11:24,830 --> 00:11:30,110
+opposite side in the x-axis. 
+So anything I do is mirrored, and when 
+
+153
+00:11:30,110 --> 00:11:33,820
+you do that, it gives the illusion that 
+it's somehow intentional or more 
+
+154
+00:11:33,820 --> 00:11:37,680
+intentional than it was. 
+So if you have a look, I can just do this 
+
+155
+00:11:37,680 --> 00:11:39,820
+and it looks like I have a symmetrical 
+pattern, and I do. 
+
+156
+00:11:39,820 --> 00:11:48,020
+But that's because my single, my single 
+interaction is now two interactions that 
+
+157
+00:11:48,020 --> 00:11:51,320
+mirror each other, I've got in sort of 
+lateral symmetry. 
+
+158
+00:11:51,320 --> 00:11:54,630
+And this symmetry is one of the methods 
+that you can start to make stuff that 
+
+159
+00:11:54,630 --> 00:12:00,150
+looks very random, look very ordered. 
+Symmetry is a cheap way of getting 
+
+160
+00:12:00,150 --> 00:12:02,790
+something beautiful. 
+And the more layers of symmetry that you 
+
+161
+00:12:02,790 --> 00:12:06,050
+add, often, the more attractive people 
+find things. 
+
+162
+00:12:06,050 --> 00:12:09,890
+Not always, because it depends on their 
+personal taste, but it's one of those 
+
+163
+00:12:09,890 --> 00:12:13,590
+things you should explore if you're 
+interested in making, for example, 
+
+164
+00:12:13,590 --> 00:12:17,190
+concentric patterns or any kind of 
+abstract patterns or flower type shapes 
+
+165
+00:12:17,190 --> 00:12:19,260
+and arrangements. 
+It's used all the time in lots of 
+
+166
+00:12:19,260 --> 00:12:23,140
+different forms of art and it's a very 
+important aspect to computer graphics. 
+
+167
+00:12:23,140 --> 00:12:26,040
+It's a very important way of taking 
+something very simple and making it very 
+
+168
+00:12:26,040 --> 00:12:29,280
+complicated. 
+So I want to show you a more advanced 
+
+169
+00:12:29,280 --> 00:12:36,680
+version of that symmetry sample with 
+perhaps eight order of symmetry. 
+
+170
+00:12:36,680 --> 00:12:41,414
+That's with circles, let me just make 
+sure that it's right. 
+
+171
+00:12:41,414 --> 00:12:46,200
+That's, no it's it was actually the next 
+one. 
+
+172
+00:12:46,200 --> 00:12:49,082
+I should have known. 
+Yeah, so this is the same, but it has 
+
+173
+00:12:49,082 --> 00:12:53,140
+eight borders of symmetry. 
+And you'll notice now, we get something 
+
+174
+00:12:53,140 --> 00:12:57,230
+that looks, that has a kind of religious 
+appeal. 
+
+175
+00:12:58,750 --> 00:13:03,150
+And if I turn the audio up, we can see 
+how this is going to work. 
+
+176
+00:13:03,150 --> 00:13:17,090
+[MUSIC] And I'm randomly drawing, it 
+doesn't matter where I draw, I get 
+
+177
+00:13:17,090 --> 00:13:21,070
+symmetrical patterns. 
+I'm literally, I'm paying no attention to 
+
+178
+00:13:21,070 --> 00:13:24,170
+what I'm doing. 
+But it's, it's just coming up with 
+
+179
+00:13:24,170 --> 00:13:26,520
+interesting stuff. 
+That's because I've got so many different 
+
+180
+00:13:26,520 --> 00:13:28,640
+reflections. 
+As if I'm looking into mirrors upon 
+
+181
+00:13:28,640 --> 00:13:34,637
+mirrors upon mirrors upon mirrors. 
+Cheap trick, but powerful. 
+
+182
+00:13:34,637 --> 00:13:38,300
+Okay. 
+The last thing I want to talk about is 
+
+183
+00:13:38,300 --> 00:13:41,000
+sound. 
+I'll do this as quick as I can, because I 
+
+184
+00:13:41,000 --> 00:13:44,920
+know you want to get on. 
+It's really easy to have more than one 
+
+185
+00:13:44,920 --> 00:13:52,520
+sound, you can hear, we've got two. 
+We've got the bells and we've also got 
+
+186
+00:13:53,880 --> 00:13:58,750
+the ambient wash. 
+So I'm loading two sounds in exactly the 
+
+187
+00:13:58,750 --> 00:14:02,860
+same way that Matt was showing you. 
+[MUSIC] Let me mute this while I quickly 
+
+188
+00:14:02,860 --> 00:14:07,695
+show you. 
+What we have is a separate AudioPlayer, 
+
+189
+00:14:07,695 --> 00:14:11,340
+AudioPlayer 2. 
+And player2 loads the following exactly 
+
+190
+00:14:11,340 --> 00:14:15,760
+the same way. 
+So we have one maxim context, but we have 
+
+191
+00:14:15,760 --> 00:14:18,219
+two players. 
+player2 is loaded here. 
+
+192
+00:14:19,290 --> 00:14:24,640
+We set the new ping to true, and we're 
+also balancing the first time I'm 
+
+193
+00:14:24,640 --> 00:14:27,740
+loading, which is what I must warn is a 
+lot louder than the bells. 
+
+194
+00:14:27,740 --> 00:14:32,010
+So I'm using the volume command to turn 
+the volume down for the first one. 
+
+195
+00:14:33,480 --> 00:14:36,370
+And then, I'm playing them both in this 
+mouse drag method. 
+
+196
+00:14:36,370 --> 00:14:39,770
+So when I, when the mouse is dragged, it 
+starts to play the sounds before that 
+
+197
+00:14:39,770 --> 00:14:43,330
+it's silent. 
+I'm also doing a couple of other cool 
+
+198
+00:14:43,330 --> 00:14:47,870
+things, which I'm going to talk about in 
+more detail in the next lesson, and 
+
+199
+00:14:47,870 --> 00:14:52,320
+that's sound manipulation. 
+And this is just a taste of [UNKNOWN]. 
+
+200
+00:14:52,320 --> 00:14:56,320
+The two things I'm doing to make it more 
+interesting is I'm altering the speed, as 
+
+201
+00:14:56,320 --> 00:14:59,840
+you can see here, but I'm also altering 
+the filter. 
+
+202
+00:14:59,840 --> 00:15:05,940
+Now, the speed Is a really simple 
+equation which I'm going to quickly show 
+
+203
+00:15:05,940 --> 00:15:11,240
+you now. 
+player2 speed here is the mouseX divided 
+
+204
+00:15:11,240 --> 00:15:17,200
+by the width divided by 2. 
+So wherever that I am, from x, so from 0 
+
+205
+00:15:17,200 --> 00:15:22,520
+to width x divided by width times 2, that 
+is how fast I want it to go. 
+
+206
+00:15:22,520 --> 00:15:25,350
+And that's why we get these lovely 
+sounds, these lovely sounds. 
+
+207
+00:15:25,350 --> 00:15:35,770
+[MUSIC] There we go. 
+So I can slow that right down. 
+
+208
+00:15:35,770 --> 00:15:39,860
+Also, I've got a filter on the ambient 
+wash, which means the further down the 
+
+209
+00:15:39,860 --> 00:15:44,346
+screen I am, the brighter the ambient 
+wash is. 
+
+210
+00:15:44,346 --> 00:15:48,198
+[MUSIC] And I'm going to explain that in 
+more detail next week. 
+
+211
+00:15:48,198 --> 00:15:51,510
+So, I think it'll be a great idea for you 
+to take this example and pick it apart, 
+
+212
+00:15:51,510 --> 00:15:53,640
+add your own sounds, add your own 
+brushes. 
+
+213
+00:15:53,640 --> 00:15:57,800
+Try and make something which just helps 
+you understand the different aspects of 
+
+214
+00:15:57,800 --> 00:16:02,840
+graphics and sound to give you a better 
+indication of how you might move forward 
+
+215
+00:16:02,840 --> 00:16:14,526
+and create an application of this type 
+for your uses. 
+
+216
+00:16:14,526 --> 00:16:14,526
+[MUSIC]. 

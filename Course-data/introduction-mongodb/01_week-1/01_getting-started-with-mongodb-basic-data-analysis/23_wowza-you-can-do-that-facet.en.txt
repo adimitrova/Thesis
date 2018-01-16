@@ -1,0 +1,109 @@
+The problem with this output
+is that it doesn't provide a very good summary of what
+values the language fields holds. Using this movies data might require
+a deeper understanding of say, how the languages are distributed. In general understanding
+the distribution of data in a field is valuable as part of any ETL process. This is one example of an ETL problem and my objective is really just
+to give you a taste for whats possible with the aggregation
+framework as we begin this specialization. We have quite a few fundamentals to get
+through in the is course as you ramp up on the MongoDB ecosystem and
+In the second course, we'll do a deep dive on
+the aggregation framework. Returning to this example, let's generate a better summary of
+the distribution values this field. Essentially, I want to see
+specifically what language combinations are heavily used and
+just get a sense For how man unique language
+combinations we're dealing with. I want two different types
+of summary information. One has details on specific
+language combinations, the other just provides some raw counts. I can do this in Python. But it would require me to write
+a couple dozen lines of code and would be a little slow because I'd need
+to process all the documents in my script rather than in the database server. The challenge doing these two types of
+analysis simultaneously presents to the aggregation framework, is that with
+the pipeline I can really only process, the documents to one outcome. Again, this type of situation frequently
+arises, so the aggregation framework actually does support running
+multiple pipelines in parallel, with the use of the dollar facet stage. Let's use a dollar facet stage to provide
+both types of summary information I want. Again remember, I want details on
+specific language combinations and just some raw counts on
+unusual accommodations. $facet enables you to define multiple
+pipelines through which to process the same input documents. The output for
+each pipeline is omitted as the value of the key you specify in
+the facet stage definition. Here, I'm using $facet
+to define two pipelines. Note that I'm defining two fields, each has as its value,
+an array here and here. Each one of these arrays defines
+a separate pipeline that will be processed in parallel. And the result of running each
+pipeline will be stored as the value of these keys in
+the output from this $facet stage. These pipelines function just
+like a top level pipeline. In this case both pipelines will
+receive as input the stream of documents admitted by the sort by
+count stage in the main pipeline. I've defined one pipeline and
+labeled it top language combinations. The output of this pipeline would
+be admitted as the value for a key with the same name,
+top language combinations. This pipeline will simply take the input
+it receives from the sort by count stage and
+limit it to the first 100 documents. To do this, I'm using a pipeline
+stage you've not seen yet but it's pretty straight forward. Just specify an integer as the value and
+the $limit stage will take it's input and pass those documents along as output until
+it reaches the limit you've specified. Once the limit is reached, it stops. The second pipeline uses two stages,
+$skip and $buckatAuto. Skip, like limit,
+is defined by specifying an integer. And I see that I've actually
+got a mistake in my code here. Because what I really want to do is skip
+all of those top language combinations in this pipeline, because I'm considering
+all of those to be unusual combinations. So I don't want 25 here, I want 100,
+because I'm considering the first 100 to be top language combinations, and for
+those, I'm simply calculating counts. So let me go ahead and fix this. And then, what I'm doing here
+will again take that output from the SortByCount stage,
+skip the first 100, and then pass the remainder documents
+through to the second stage in the pipeline I'm defining here for
+unusual combinations. Now $skip like $limit,
+Is defined by specifying an integer. It simply ignores the number of input
+documents you specified that it should skip. Once a number of documents equal to
+the skip value has passed through a skip stage, it will pass any additional
+documents on as output. $bucketAuto is the second stage. It's very similar to
+the group stage except, it automatically defines a list of buckets
+into which it will group input documents. The buckets are defined by the value
+you specify for the groupBy key. Here we're using a value of $count
+as our value around which to group. However, rather than create
+groups based on the single value, bucket auto will automatically
+define ranges of values, and group all documents that fall
+within that range into the bucket. We specify a cap on the number
+of buckets that will be created using the buckets key for
+the $bucketAuto stage. Here we're asking bucketAuto to
+create five or fewer buckets. For each bucket, it will output the value
+we specified for the output key. Here I'm saying that I want the value
+of each bucket to be a document containing a single field. The name of the field should
+be language combinations, and its value should be the count of the
+number of documents added to this bucket. As we did with $group earlier we're
+simply using the $sum operator to add one to a running count for
+every document added to this bucket. Since the output of the sortByCount stage
+in the main pipeline is a stream of documents that captures the number of
+movies that use a particular combination of languages. The output of the unusual combinations
+shared by pipeline will be a count of the number of movies that share their
+particular language combinations with only a relatively small
+number of other movies. Those that share their
+combination with only two or three other movies might be
+grouped together, for example, depending on the distribution bucketAuto
+sees and what buckets it creates. So let's go ahead and run this. In the output, we see that, indeed, for
+top language combinations we have a list of documents that specify the most
+frequently used language combinations as the number of movies in our
+collection that use that combination. So 25,000 for
+English down to 16 movies that use a combination of English,
+Italian, and Spanish. A couple of other things to note here, are
+that not surprisingly a small number of language combinations dominate
+the dataset here at the top. One other thing to note here,
+is that it's significant number of documents in this collection do not
+specify a value for language at all. That's why we see this empty string
+as one of the keys in our output, more than 1,000 documents
+have no value for language. As we scroll down and look at the output
+for unusual combinations shared by, first let me explain that bucketAuto
+specifies ranges such that the minimum value is included in the range
+but the maximum value is excluded. So for the second bucket, for example, we'll have all movies for
+which at least two but no more than five movies use
+the same language combination. In this first bucket here, we see that
+there's a large number of movies. The use of language combination
+that no other movie does. Nearly 1900 that use a unique
+language combination. So as $facet, we can see how we
+can perform two types of analysis simultaneously with
+an aggregation pipeline. And we've really just seen
+the tip of the iceberg. But this at least gives you a glimpse of
+how easy it is to perform some pretty complex exploratory analysis of data
+sets using the aggregation framework. Again, we'll dive into
+some deep data science, using the aggregation framework in
+a second course in the specialization.

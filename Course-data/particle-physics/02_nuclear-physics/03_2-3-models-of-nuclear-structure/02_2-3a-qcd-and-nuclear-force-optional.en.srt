@@ -1,0 +1,175 @@
+1
+00:00:00,000 --> 00:00:10,830
+[MUSIC]
+
+2
+00:00:10,830 --> 00:00:12,290
+Here in the second module,
+
+3
+00:00:12,290 --> 00:00:16,547
+we're in the process of dealing with
+nuclear physics and it's applications.
+
+4
+00:00:16,547 --> 00:00:20,905
+We have underlined several times that
+the basics of the nuclear force in terms
+
+5
+00:00:20,905 --> 00:00:24,000
+of quantum chronodynamics,
+are anything but clear.
+
+6
+00:00:25,010 --> 00:00:29,160
+The purpose of this optional interlude
+is to trigger a discussion
+
+7
+00:00:29,160 --> 00:00:30,390
+on this particular subject.
+
+8
+00:00:32,740 --> 00:00:37,320
+The relation between the nuclear force
+which binds together nucleons inside
+
+9
+00:00:37,320 --> 00:00:42,210
+the nucleus and the strong force
+which binds quarks to form hadrons
+
+10
+00:00:42,210 --> 00:00:46,410
+is not clear at all although
+the two must be obviously related.
+
+11
+00:00:46,410 --> 00:00:50,525
+In fact the nuclear force ought
+to be a long range effect of QCD,
+
+12
+00:00:50,525 --> 00:00:53,680
+binding nucleons via
+color neutral objects.
+
+13
+00:00:54,920 --> 00:00:59,530
+An interesting discussion is found in this
+article by one of the fathers of QCD,
+
+14
+00:00:59,530 --> 00:01:07,140
+Fred Wilczek, in the journal nature, the
+source is quoted on the top of the slide.
+
+15
+00:01:07,140 --> 00:01:11,980
+An accessible summary can be found on the
+web at the address quoted on the bottom.
+
+16
+00:01:11,980 --> 00:01:14,140
+And here is a short excerpt
+that I will read to you.
+
+17
+00:01:15,550 --> 00:01:20,420
+Ironically, from the perspective of
+QCD the foundations of nuclear physics
+
+18
+00:01:20,420 --> 00:01:23,080
+appear distinctively unsound.
+
+19
+00:01:23,080 --> 00:01:26,040
+He continues by explaining
+what the contradiction is.
+
+20
+00:01:26,040 --> 00:01:31,100
+Yet QCD tells us that protons and neutrons
+are themselves built from quarks and
+
+21
+00:01:31,100 --> 00:01:33,470
+gluons that move at very
+nearly the speed of light.
+
+22
+00:01:34,500 --> 00:01:37,530
+These more basic particles
+carry color charge,
+
+23
+00:01:37,530 --> 00:01:42,140
+leading to the additional requirement
+that they be confined within bags
+
+24
+00:01:42,140 --> 00:01:45,490
+whose contents are overall color-neutral.
+
+25
+00:01:45,490 --> 00:01:49,120
+And he further asks, but
+why don't a separate proton and
+
+26
+00:01:49,120 --> 00:01:53,280
+neutron bags in a complex
+nucleus merge into a common bag?
+
+27
+00:01:53,280 --> 00:01:57,150
+On the face of it, the one bag
+arrangement has a lot going for it.
+
+28
+00:01:57,150 --> 00:02:01,380
+It would allow quarks and gluons free
+access to a larger volume of space and so
+
+29
+00:02:01,380 --> 00:02:05,870
+save on the energy cost of localizing
+their quantum mechanical wave function.
+
+30
+00:02:05,870 --> 00:02:10,653
+But in such a merger, protons and neutrons
+would lose their individual identities,
+
+31
+00:02:10,653 --> 00:02:15,720
+and our traditional quite successful
+model of atomic nuclei would crumble.
+
+32
+00:02:15,720 --> 00:02:17,130
+What prevents that calamity?
+
+33
+00:02:18,980 --> 00:02:21,620
+I invite you to think about
+this question yourself, and
+
+34
+00:02:21,620 --> 00:02:23,484
+discuss it in the forum of this course.
+
+35
+00:02:23,484 --> 00:02:28,076
+We will come back to it in module five
+where which will deal with hadrons and
+
+36
+00:02:28,076 --> 00:02:29,811
+their strong interaction.
+
+37
+00:02:29,811 --> 00:02:30,311
+[MUSIC]

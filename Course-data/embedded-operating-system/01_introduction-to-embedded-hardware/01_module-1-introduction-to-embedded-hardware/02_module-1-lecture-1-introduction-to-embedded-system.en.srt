@@ -1,0 +1,560 @@
+1
+00:00:00,000 --> 00:00:05,968
+[MUSIC]
+
+2
+00:00:05,968 --> 00:00:09,050
+Hello and welcome to the first
+lecture of the course.
+
+3
+00:00:09,050 --> 00:00:13,250
+This course if called embedded
+hardware and operating systems.
+
+4
+00:00:13,250 --> 00:00:17,830
+This course is a practice oriented guide
+on how to build an embedded system.
+
+5
+00:00:17,830 --> 00:00:20,970
+Nowadays, computers
+are literally everywhere.
+
+6
+00:00:20,970 --> 00:00:25,890
+They run engines, they encode voice, and
+construct radio signals to use them for
+
+7
+00:00:25,890 --> 00:00:27,570
+mobile communication.
+
+8
+00:00:27,570 --> 00:00:29,960
+They even control your microwave.
+
+9
+00:00:29,960 --> 00:00:35,830
+This non-visible computers that make it
+all possible are called embedded systems.
+
+10
+00:00:35,830 --> 00:00:40,080
+Although embedded system have received
+much attention from researcher
+
+11
+00:00:40,080 --> 00:00:43,720
+in the past,
+the community has just recently recognized
+
+12
+00:00:43,720 --> 00:00:46,990
+that new approaches are needed
+to develop and analyze them.
+
+13
+00:00:48,050 --> 00:00:50,900
+Mainly because they are one
+of the most rapidly growing
+
+14
+00:00:50,900 --> 00:00:52,480
+fields in the computer industry.
+
+15
+00:00:53,510 --> 00:00:55,650
+Considering the transient technology,
+
+16
+00:00:55,650 --> 00:01:01,080
+we can say that such kind of systems will
+soon be integrated into more things.
+
+17
+00:01:01,080 --> 00:01:06,230
+Computer will be everywhere information
+will be available anytime, any where.
+
+18
+00:01:08,340 --> 00:01:12,110
+As an example of embedded systems,
+we can think of airplanes.
+
+19
+00:01:12,110 --> 00:01:15,700
+An airplane is full of
+embedded computers in it.
+
+20
+00:01:15,700 --> 00:01:21,500
+Seats have entertainment systems with
+video, audio and gaming capabilities.
+
+21
+00:01:21,500 --> 00:01:24,780
+There is an air conditioning system
+adjusting the temperature and
+
+22
+00:01:24,780 --> 00:01:25,770
+pressure of the cabin.
+
+23
+00:01:26,860 --> 00:01:27,960
+On the other hand,
+
+24
+00:01:27,960 --> 00:01:32,770
+the flight management system is heavily
+equipped with embedded systems.
+
+25
+00:01:32,770 --> 00:01:37,210
+There are plenty of different sensors
+reporting the situation to the pilot.
+
+26
+00:01:37,210 --> 00:01:39,930
+Location, weather, altitude,
+
+27
+00:01:39,930 --> 00:01:45,170
+speed, orientation,
+all these values are constantly monitored.
+
+28
+00:01:45,170 --> 00:01:49,880
+The autopilot system significantly
+reduces the pilot workload.
+
+29
+00:01:49,880 --> 00:01:54,050
+Wings, jet engines,
+landing gear, brakes, and so
+
+30
+00:01:54,050 --> 00:01:57,700
+on are controlled electronically
+from the cockpit.
+
+31
+00:01:57,700 --> 00:02:01,100
+So as we see,
+an airplane is full of computers
+
+32
+00:02:01,100 --> 00:02:05,120
+embedded in different locations
+with different functionalities and
+
+33
+00:02:05,120 --> 00:02:07,730
+purposes and
+with different requirements too.
+
+34
+00:02:08,930 --> 00:02:10,970
+What are the main characteristics and
+
+35
+00:02:10,970 --> 00:02:14,860
+constraints of an embedded
+system used in airplanes?
+
+36
+00:02:14,860 --> 00:02:19,900
+Well first and the most important one,
+they have to be reliable.
+
+37
+00:02:19,900 --> 00:02:23,020
+Sensors should report
+correct values all the time.
+
+38
+00:02:24,020 --> 00:02:28,930
+The control system should not make any
+mistake under any circumstances and
+
+39
+00:02:28,930 --> 00:02:31,310
+must react according to deadlines.
+
+40
+00:02:32,340 --> 00:02:35,650
+Wings, brakes, landing gear, and so
+
+41
+00:02:35,650 --> 00:02:39,039
+on should follow exactly
+what the pilot demands.
+
+42
+00:02:40,090 --> 00:02:44,680
+If any of these reliability
+requirements are not fulfilled,
+
+43
+00:02:44,680 --> 00:02:46,730
+then a catastrophe can easily happen.
+
+44
+00:02:47,970 --> 00:02:51,670
+What do we mean by reliability,
+and how to measure it?
+
+45
+00:02:51,670 --> 00:02:54,290
+Anyway, we will discuss
+it in future lessons.
+
+46
+00:02:55,450 --> 00:02:59,270
+On the other hand,
+embedded systems should be secure.
+
+47
+00:02:59,270 --> 00:03:02,380
+No one must be able to break
+in to the control system or
+
+48
+00:03:02,380 --> 00:03:05,990
+the airplane and
+override the sensors and command data.
+
+49
+00:03:07,130 --> 00:03:09,060
+What else can we think of?
+
+50
+00:03:09,060 --> 00:03:14,330
+Well another important concern is the real
+time behavior of the airplane's systems
+
+51
+00:03:14,330 --> 00:03:17,100
+both in the passenger cabins and
+in the cockpit.
+
+52
+00:03:18,260 --> 00:03:22,760
+Passenger expects to watch smooth
+movies with no interruption or jitter.
+
+53
+00:03:23,870 --> 00:03:27,210
+The pilots commands should take
+effect at the right time, and
+
+54
+00:03:27,210 --> 00:03:30,070
+the autopilot system must
+not make late decisions.
+
+55
+00:03:31,210 --> 00:03:35,370
+Another good example that reflects
+the idea that computing will be everywhere
+
+56
+00:03:35,370 --> 00:03:37,400
+is the Internet of Things.
+
+57
+00:03:37,400 --> 00:03:40,720
+Indeed, the aim is to spread
+nodes around the world.
+
+58
+00:03:41,860 --> 00:03:47,330
+A node, it's the small embedded system
+connected to sensors and activators.
+
+59
+00:03:47,330 --> 00:03:50,160
+Nodes will collect data of any kind.
+
+60
+00:03:50,160 --> 00:03:53,380
+It may be temperature measurements or
+acceleration.
+
+61
+00:03:53,380 --> 00:03:58,390
+The data then will be pre-processed in
+the fog layer an sent to the Cloud.
+
+62
+00:03:59,500 --> 00:04:01,620
+There are many problems
+to tackle in this field.
+
+63
+00:04:02,940 --> 00:04:05,950
+Nodes may be located in remote areas, and
+
+64
+00:04:05,950 --> 00:04:09,140
+it is desirable to make the nodes work for
+longer.
+
+65
+00:04:09,140 --> 00:04:13,560
+So energy efficiency is one of the issues
+that the Internet of Things pulls out.
+
+66
+00:04:14,570 --> 00:04:17,880
+Another issue is making
+the gathered data meaningful.
+
+67
+00:04:17,880 --> 00:04:22,600
+In other words, it is about getting
+information out from the messy data.
+
+68
+00:04:22,600 --> 00:04:24,890
+Here machine learning is
+coming into the picture.
+
+69
+00:04:25,950 --> 00:04:30,850
+So Internet of Things will provide people
+with a lot of data, which can be used, for
+
+70
+00:04:30,850 --> 00:04:34,920
+example, to optimize processes.
+
+71
+00:04:34,920 --> 00:04:38,490
+There are many other examples of
+embedded systems that are applied
+
+72
+00:04:38,490 --> 00:04:42,610
+in different fields of industry,
+from home appliances to aerospace.
+
+73
+00:04:44,020 --> 00:04:48,140
+Now that you probably have a basic
+idea of what an embedded system is,
+
+74
+00:04:48,140 --> 00:04:51,490
+let's talk about how we
+can describe such system.
+
+75
+00:04:51,490 --> 00:04:54,770
+Well an embedded system
+is typically reactive.
+
+76
+00:04:54,770 --> 00:04:59,310
+This means that such system is constantly
+interacting with its environment and
+
+77
+00:04:59,310 --> 00:05:01,910
+executes with that environment say so.
+
+78
+00:05:03,240 --> 00:05:07,840
+Reactive systems being in some
+state is waiting for an input,
+
+79
+00:05:07,840 --> 00:05:12,330
+performs computations, produces an output,
+and transits to a new state.
+
+80
+00:05:13,360 --> 00:05:17,190
+Thus such systems can
+be modeled as Automata.
+
+81
+00:05:17,190 --> 00:05:21,450
+In other words, it is a set of states,
+inputs, and outputs.
+
+82
+00:05:22,870 --> 00:05:27,680
+So the abstract model of an embedded
+system consists of inputs,
+
+83
+00:05:27,680 --> 00:05:31,090
+outputs, a unit to perform computations,
+and
+
+84
+00:05:31,090 --> 00:05:36,180
+communication interfaces to exchange
+data with other embedded systems.
+
+85
+00:05:36,180 --> 00:05:38,890
+Inputs provide the computation
+unit with data.
+
+86
+00:05:39,940 --> 00:05:42,380
+Sensors can play the role of inputs.
+
+87
+00:05:42,380 --> 00:05:45,790
+Sensors can convert physical
+quantities into numbers.
+
+88
+00:05:47,290 --> 00:05:50,710
+Actuators for example,
+electrical moderators can be outputs.
+
+89
+00:05:51,860 --> 00:05:56,730
+In between inputs and outputs there
+is a unit called processing element
+
+90
+00:05:56,730 --> 00:06:00,700
+that makes computations on the input and
+produces output.
+
+91
+00:06:02,110 --> 00:06:05,380
+A persisting element
+is the digital device.
+
+92
+00:06:05,380 --> 00:06:09,930
+During the course, we will talk about
+two types of processing elements and
+
+93
+00:06:09,930 --> 00:06:12,050
+better processors and FPGA's.
+
+94
+00:06:13,500 --> 00:06:17,470
+In the course, we will talk about
+what a processing element is, and
+
+95
+00:06:17,470 --> 00:06:22,000
+how to pick an appropriate one for
+certain applications.
+
+96
+00:06:22,000 --> 00:06:26,780
+We will discuss how embedded
+processors and FPGA's are built, and
+
+97
+00:06:26,780 --> 00:06:27,700
+how to deal with them.
+
+98
+00:06:29,010 --> 00:06:34,500
+We also will cover most popular embedded
+platforms, this will be of great interest
+
+99
+00:06:34,500 --> 00:06:38,470
+for those who want to get hands on
+experience on building an embedded system.
+
+100
+00:06:39,740 --> 00:06:44,612
+We will also talk about sensors and
+actuators, and how to interface with them.
+
+101
+00:06:44,612 --> 00:06:48,550
+Embedded hardware works
+guided by software.
+
+102
+00:06:48,550 --> 00:06:53,510
+That's why embedded operating systems
+will also be covered in the course.
+
+103
+00:06:53,510 --> 00:06:57,650
+Indeed, the right choice of embedded
+operating system may not only
+
+104
+00:06:57,650 --> 00:07:02,590
+simplify the development, but also
+affect crucial parameters of the system,
+
+105
+00:07:02,590 --> 00:07:06,080
+such as energy consumption,
+or computational performance.
+
+106
+00:07:07,630 --> 00:07:09,300
+This course is intended for
+
+107
+00:07:09,300 --> 00:07:14,095
+those who want to obtain knowledge
+on how to build an embedded system.
+
+108
+00:07:14,095 --> 00:07:17,570
+This is,
+selecting the appropriate components,
+
+109
+00:07:17,570 --> 00:07:20,129
+based on the requirements you have for
+your application.
+
+110
+00:07:21,170 --> 00:07:24,880
+To ease the process of selection,
+it maybe important
+
+111
+00:07:24,880 --> 00:07:29,880
+to know how those components work and
+what their main characteristics are.
+
+112
+00:07:31,140 --> 00:07:34,600
+After selecting those components,
+they are assembled together,
+
+113
+00:07:34,600 --> 00:07:37,160
+program may have needed and used.
+
+114
+00:07:37,160 --> 00:07:42,280
+All these steps from selection to assembly
+are going to be covered during the course.
+
+115
+00:07:42,280 --> 00:07:46,315
+So if you want to design
+your own embedded system,
+
+116
+00:07:46,315 --> 00:07:50,074
+this course is a good starting point for
+that.
+
+117
+00:07:50,074 --> 00:07:52,599
+[MUSIC]

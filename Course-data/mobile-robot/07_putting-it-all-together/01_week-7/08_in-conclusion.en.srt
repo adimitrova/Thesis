@@ -1,0 +1,614 @@
+1
+00:00:01,410 --> 00:00:04,880
+So, welcome to the last of the lectures.
+
+2
+00:00:04,880 --> 00:00:08,840
+I've had a great time, I hope you've
+learned quite a bit.
+
+3
+00:00:08,840 --> 00:00:13,330
+What I want to do with this last lecture,
+is just wrap things up.
+
+4
+00:00:13,330 --> 00:00:17,810
+And the first thing I want to point out
+is, what really are the key things that I
+
+5
+00:00:17,810 --> 00:00:19,840
+was hoping to get out of this course, or
+
+6
+00:00:19,840 --> 00:00:21,960
+was hoping that you would get out of the
+course.
+
+7
+00:00:21,960 --> 00:00:26,890
+The first is, just learn in general how to
+use control
+
+8
+00:00:26,890 --> 00:00:30,100
+theory to make robots move around.
+
+9
+00:00:30,100 --> 00:00:33,980
+And not just move but move elegantly, or
+safely or effectively.
+
+10
+00:00:35,340 --> 00:00:40,790
+And in order to do this I want you to go
+home, if you're already home, stay home.
+
+11
+00:00:42,220 --> 00:00:45,940
+And appreciate the value of systematic
+thinking and design.
+
+12
+00:00:45,940 --> 00:00:49,690
+Sure, you could have hacked together 60%
+of what we did in this course.
+
+13
+00:00:49,690 --> 00:00:51,890
+But once you push beyond simple
+
+14
+00:00:51,890 --> 00:00:56,900
+things, you really have to do the theory
+right in order for it to work.
+
+15
+00:00:56,900 --> 00:00:59,230
+And then, I'm hoping that some of you
+managed
+
+16
+00:00:59,230 --> 00:01:02,510
+to bridge the theory-practice gap by
+actually not only
+
+17
+00:01:02,510 --> 00:01:06,080
+doing the lectures and the quizzes, but
+also, going
+
+18
+00:01:06,080 --> 00:01:10,920
+through the simulation and experiments and
+building your own robots.
+
+19
+00:01:10,920 --> 00:01:13,224
+And if I could wish for one thing, it is
+that
+
+20
+00:01:13,224 --> 00:01:16,960
+at the end of this course, you don't just
+stop being robot-Isis.
+
+21
+00:01:16,960 --> 00:01:22,620
+You use this as a stepping stone to go out
+and think abouut
+
+22
+00:01:22,620 --> 00:01:26,480
+new and exciting ways in which you can use
+robots or program robots.
+
+23
+00:01:26,480 --> 00:01:30,320
+So have fun, and I want it to spark
+further investigations.
+
+24
+00:01:30,320 --> 00:01:32,360
+So, let's talk a little bit about the
+punchlines.
+
+25
+00:01:32,360 --> 00:01:34,930
+Punchline #1 is the model.
+
+26
+00:01:34,930 --> 00:01:37,750
+I've been using models all through this
+course.
+
+27
+00:01:37,750 --> 00:01:41,130
+And the point is not that I love models.
+
+28
+00:01:41,130 --> 00:01:42,050
+It's you need
+
+29
+00:01:42,050 --> 00:01:45,716
+a model in order to be able to design
+control systems effectively.
+
+30
+00:01:45,716 --> 00:01:48,530
+Because, if I'm going to be able to say
+what this
+
+31
+00:01:48,530 --> 00:01:51,030
+robot is going to do over time, I need
+some way
+
+32
+00:01:51,030 --> 00:01:53,660
+of predicting what it's going to do, and
+the only way
+
+33
+00:01:53,660 --> 00:01:56,230
+I can do a prediction is if I have a
+model.
+
+34
+00:01:57,370 --> 00:02:01,790
+The other reason why we really need models
+is, well let's say you build a controller.
+
+35
+00:02:01,790 --> 00:02:07,140
+Well the only way of ensuring that the
+controller is actually sound and doing
+
+36
+00:02:07,140 --> 00:02:09,790
+what it's supposed to be doing is to go
+
+37
+00:02:09,790 --> 00:02:13,680
+back and analyze how the controller
+interacts with the system.
+
+38
+00:02:14,700 --> 00:02:17,000
+But the system is modeled using the model.
+
+39
+00:02:17,000 --> 00:02:20,410
+So that's where we really, really, really
+need the model.
+
+40
+00:02:20,410 --> 00:02:24,010
+Now, we need the model to be rich enough
+to be relevant.
+
+41
+00:02:25,070 --> 00:02:27,500
+Meaning it should describe something
+that's going on in the real
+
+42
+00:02:27,500 --> 00:02:30,380
+world, but, it has to be simple enough to
+be useful.
+
+43
+00:02:30,380 --> 00:02:32,480
+You don't have to model everything.
+
+44
+00:02:32,480 --> 00:02:34,380
+You don't have to worry about friction
+unless you're
+
+45
+00:02:34,380 --> 00:02:36,780
+trying to go really, really high speeds
+for instance.
+
+46
+00:02:37,820 --> 00:02:41,490
+It needs to be simple enough, enough to be
+useful,
+
+47
+00:02:41,490 --> 00:02:45,280
+and that's really key, and I talked about
+bananas versus non-bananas.
+
+48
+00:02:45,280 --> 00:02:48,280
+In the sense that, there are no linear
+
+49
+00:02:48,280 --> 00:02:51,310
+models out there, or linear systems out
+there.
+
+50
+00:02:51,310 --> 00:02:52,680
+Non bananas.
+
+51
+00:02:52,680 --> 00:02:55,064
+But, the world is filled with non-bananas,
+
+52
+00:02:55,064 --> 00:02:57,790
+meaning non-linear systems, yet at the
+same time,
+
+53
+00:02:57,790 --> 00:03:01,380
+the linear model is rich enough to do a
+lot of things.
+
+54
+00:03:01,380 --> 00:03:05,600
+So keep the bananas in mind, meaning make
+it as simple as possible.
+
+55
+00:03:06,660 --> 00:03:08,950
+The other punchline is feedback.
+
+56
+00:03:08,950 --> 00:03:12,550
+We don't just say, okay robot, drive for
+two
+
+57
+00:03:12,550 --> 00:03:15,320
+meters, make a left turn, and drive for
+four meters.
+
+58
+00:03:15,320 --> 00:03:18,380
+No, instead we measure what the robot is
+doing and adjust
+
+59
+00:03:18,380 --> 00:03:21,830
+the control signal based on what the robot
+is actually doing.
+
+60
+00:03:21,830 --> 00:03:22,680
+And this is feedback.
+
+61
+00:03:22,680 --> 00:03:25,510
+And feedback is so important to control
+theory.
+
+62
+00:03:25,510 --> 00:03:27,350
+In fact, it's important to life.
+
+63
+00:03:27,350 --> 00:03:31,280
+Our cells regulate what enzymes to express
+based on feedback.
+
+64
+00:03:31,280 --> 00:03:33,370
+Without it none of us would be here.
+
+65
+00:03:33,370 --> 00:03:37,600
+So, I want you always to think feedback
+and there
+
+66
+00:03:37,600 --> 00:03:41,810
+are somethings that we talked about when
+we're designing feedback controllers.
+
+67
+00:03:41,810 --> 00:03:44,040
+Stability is the most important thing.
+
+68
+00:03:44,040 --> 00:03:47,760
+If the system ain't stable it won't work.
+Then we talked about things
+
+69
+00:03:47,760 --> 00:03:50,260
+like tracking, how do you make it follow a
+reference path?
+
+70
+00:03:50,260 --> 00:03:53,406
+And robustness, how do we suppress noise,
+for instance?
+
+71
+00:03:53,406 --> 00:03:57,220
+And then, how do we actually design
+controllers?
+
+72
+00:03:57,220 --> 00:04:01,630
+Well, the key idea in control theory is
+state feedback.
+
+73
+00:04:01,630 --> 00:04:05,680
+We design our controllers as if we had the
+full state of the system.
+
+74
+00:04:05,680 --> 00:04:06,970
+Which we don't.
+
+75
+00:04:06,970 --> 00:04:10,930
+And then, we use observers to actually
+estimate the state.
+
+76
+00:04:10,930 --> 00:04:12,802
+And, thanks to this wonderful
+
+77
+00:04:12,802 --> 00:04:15,682
+thing called the separation principle, we
+can
+
+78
+00:04:15,682 --> 00:04:17,986
+design the controllers as if we had the
+
+79
+00:04:17,986 --> 00:04:23,055
+states, and then design our observers as a
+way of getting an estimate of the state.
+
+80
+00:04:23,055 --> 00:04:24,640
+So that's punchline number 2.
+
+81
+00:04:24,640 --> 00:04:28,460
+Punchline number 3 is architectures, you
+really have
+
+82
+00:04:28,460 --> 00:04:31,930
+to do the design at different levels of
+abstraction.
+
+83
+00:04:31,930 --> 00:04:34,030
+And we talked about three abstraction
+layers,
+
+84
+00:04:34,030 --> 00:04:37,960
+that's quite standard where you plan high
+
+85
+00:04:37,960 --> 00:04:41,860
+level where you want to go, then you
+generates reference paths, and in this
+
+86
+00:04:41,860 --> 00:04:44,010
+case we did that using linear models,
+
+87
+00:04:44,010 --> 00:04:46,490
+and then you track those using non-linear
+models.
+
+88
+00:04:46,490 --> 00:04:48,690
+And in particular, we looked at
+differential-drive robots.
+
+89
+00:04:49,910 --> 00:04:53,920
+Now, this is not because, we just happened
+to like differential-drive robots.
+
+90
+00:04:53,920 --> 00:04:57,700
+It's because the most robots out there are
+either differential-drive
+
+91
+00:04:57,700 --> 00:05:02,170
+robots, or they can be approximated with
+differential drive robots.
+
+92
+00:05:02,170 --> 00:05:03,250
+So this is a very,
+
+93
+00:05:03,250 --> 00:05:08,560
+very good way of modeling the actual
+non-linear dynamics in a way
+
+94
+00:05:08,560 --> 00:05:12,268
+that's simple enough to actually, be able
+to say something about it.
+
+95
+00:05:12,268 --> 00:05:16,856
+The fourth punchline, and this is the last
+punchline -
+
+96
+00:05:16,856 --> 00:05:22,060
+is whatever, don't listen to me, this
+field is not done.
+
+97
+00:05:22,060 --> 00:05:26,070
+There is so much left to explore in the
+wonderful world of robotics.
+
+98
+00:05:26,070 --> 00:05:28,530
+So, just because I didn't cover it here it
+
+99
+00:05:28,530 --> 00:05:31,230
+doesn't mean, it's not important, or it
+also doesn't
+
+100
+00:05:31,230 --> 00:05:32,950
+mean that we know already how to do it.
+
+101
+00:05:32,950 --> 00:05:34,750
+So, I would like you to leave the
+
+102
+00:05:34,750 --> 00:05:37,160
+course thinking that, you know what,
+there's a whole
+
+103
+00:05:37,160 --> 00:05:39,830
+world of robotics out there, that not only
+is
+
+104
+00:05:39,830 --> 00:05:42,610
+for me to discover, but for me to invent.
+
+105
+00:05:42,610 --> 00:05:45,000
+So the field is certainly not done yet.
+
+106
+00:05:46,100 --> 00:05:48,700
+And with that, I would like to say thank
+you.
+
+107
+00:05:48,700 --> 00:05:51,340
+I've really enjoyed myself and I do need
+
+108
+00:05:51,340 --> 00:05:53,630
+to point out the five people that have
+helped
+
+109
+00:05:53,630 --> 00:05:58,190
+make this possible.
+Which are all graduate students in my lab.
+
+110
+00:05:58,190 --> 00:06:01,270
+Greg Droge showed up, he was the Segway
+man.
+
+111
+00:06:02,510 --> 00:06:05,110
+JP de la Croix has been the master of
+ceremonies
+
+112
+00:06:05,110 --> 00:06:10,110
+throughout the course doing all the
+robotic experiments in the studio.
+
+113
+00:06:10,110 --> 00:06:13,420
+He's also been supporting the simulator
+and without
+
+114
+00:06:13,420 --> 00:06:15,320
+him, this course would have looked very
+differently.
+
+115
+00:06:16,490 --> 00:06:18,730
+Amy LaViers and Smriti Chopra have
+
+116
+00:06:18,730 --> 00:06:21,430
+been providing the glue lectures,
+combining
+
+117
+00:06:21,430 --> 00:06:24,120
+or connecting the lectures to the quizzes
+
+118
+00:06:24,120 --> 00:06:29,120
+and Smriti has also tirelessly answered
+all the questions on, on the forums.
+
+119
+00:06:29,120 --> 00:06:33,520
+And last, Rowland O'flaherty has been
+working on the hardware aspect.
+
+120
+00:06:33,520 --> 00:06:34,860
+Meaning, building the robots.
+
+121
+00:06:34,860 --> 00:06:41,330
+Showing you how you can actually build
+your own robot at a relatively low cost.
+
+122
+00:06:41,330 --> 00:06:43,660
+And then the last person, or persons,
+
+123
+00:06:43,660 --> 00:06:46,420
+that I need to thank is really all of you.
+
+124
+00:06:46,420 --> 00:06:50,020
+I don't know exactly what you look like or
+where you are, but sometimes I like
+
+125
+00:06:50,020 --> 00:06:51,900
+to imagine what you look like and when
+
+126
+00:06:51,900 --> 00:06:54,270
+I feel that a lecture has gone
+particularly well.
+
+127
+00:06:54,270 --> 00:06:55,896
+This is what I hope, it is.
+
+128
+00:06:55,896 --> 00:06:56,710
+People that are happy.
+
+129
+00:06:56,710 --> 00:06:59,440
+People that are learning robotics and
+people that are
+
+130
+00:06:59,440 --> 00:07:03,010
+going out in the world, exploring and
+discovering new things.
+
+131
+00:07:03,010 --> 00:07:03,340
+Thank you.

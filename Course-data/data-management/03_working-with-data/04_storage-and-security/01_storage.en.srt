@@ -1,0 +1,233 @@
+1
+00:00:11,884 --> 00:00:14,890
+So what would happen if
+you lost all of your data?
+
+2
+00:00:14,890 --> 00:00:16,880
+Have you ever considered
+that it might happen to you?
+
+3
+00:00:18,160 --> 00:00:23,080
+This module will introduce you to the
+issues involved in storing, securing and
+
+4
+00:00:23,080 --> 00:00:25,330
+backing up your research data.
+
+5
+00:00:25,330 --> 00:00:29,800
+By the end, you'll be aware of the
+different storage options available to you
+
+6
+00:00:29,800 --> 00:00:33,990
+and will understand the importance of
+data backup, security and encryption.
+
+7
+00:00:35,100 --> 00:00:39,510
+At the very least, you'll be motivated
+to avoid your own data loss scenario.
+
+8
+00:00:39,510 --> 00:00:45,230
+According to a survey released in 2014 by
+Kroll Ontrack, a provider of data recovery
+
+9
+00:00:45,230 --> 00:00:50,270
+and e-discovery products and services,
+hard disk drive crashes have more than
+
+10
+00:00:50,270 --> 00:00:54,760
+doubled in the last four years, making
+them the most common cause of data loss.
+
+11
+00:00:55,890 --> 00:01:02,155
+When they surveyed over 1,000 customers
+about the most common causes of data loss,
+
+12
+00:01:02,155 --> 00:01:06,933
+66% cited hard crash failure,
+compared to 29% in 2010.
+
+13
+00:01:06,933 --> 00:01:10,270
+This is followed by 14%
+claiming human error.
+
+14
+00:01:11,330 --> 00:01:16,252
+Software failure ranked as the third most
+common cause of data loss with just 6%.
+
+15
+00:01:16,252 --> 00:01:19,270
+Your data are the lifeblood
+of your research.
+
+16
+00:01:19,270 --> 00:01:23,560
+If you lose your data, recovery may
+be slow, costly, or worse still,
+
+17
+00:01:23,560 --> 00:01:25,730
+it may not even be possible.
+
+18
+00:01:25,730 --> 00:01:29,162
+This is why it's so important to store and
+back up your data securely.
+
+19
+00:01:29,162 --> 00:01:33,602
+It's useful to think about how much
+storage you'll require and plan for
+
+20
+00:01:33,602 --> 00:01:34,998
+that from the outset.
+
+21
+00:01:34,998 --> 00:01:37,670
+Also think about who will
+need access to your data and
+
+22
+00:01:37,670 --> 00:01:40,410
+what that means in terms of
+where it should be stored.
+
+23
+00:01:41,600 --> 00:01:46,490
+By considering these issues at the outset,
+you can plan for them appropriately, and
+
+24
+00:01:46,490 --> 00:01:49,509
+also include data management
+costs in your grant applications.
+
+25
+00:01:50,580 --> 00:01:54,880
+So where can you store your data securely
+during the course of your research?
+
+26
+00:01:54,880 --> 00:01:59,810
+There are various options such as
+network drives, PCs and laptops, or
+
+27
+00:01:59,810 --> 00:02:01,800
+external devices.
+
+28
+00:02:01,800 --> 00:02:04,720
+Let's take a look at the pros and
+cons of each of these.
+
+29
+00:02:04,720 --> 00:02:07,230
+Network drives are managed
+by staff centrally or
+
+30
+00:02:07,230 --> 00:02:09,330
+those within your school,
+department, or college.
+
+31
+00:02:10,380 --> 00:02:14,160
+It's highly recommended that you
+store your data to network drives.
+
+32
+00:02:14,160 --> 00:02:17,160
+This means that there's
+a single copy of your data,
+
+33
+00:02:17,160 --> 00:02:21,082
+that you can access it whenever you need
+to, and that it's backed up regularly.
+
+34
+00:02:22,100 --> 00:02:25,880
+Most importantly,
+it means that your data are held securely,
+
+35
+00:02:25,880 --> 00:02:30,400
+minimizing the risk of loss,
+damage, or unauthorized use.
+
+36
+00:02:30,400 --> 00:02:35,700
+You can of course use PCs, laptops,
+and other external storage devices,
+
+37
+00:02:35,700 --> 00:02:40,610
+such as hard drives,
+USB sticks, CDs, and DVDs.
+
+38
+00:02:40,610 --> 00:02:44,640
+These can be a convenient option due
+to their low cost and portability.
+
+39
+00:02:45,790 --> 00:02:49,800
+However, they should never be used for
+the master copy of your data.
+
+40
+00:02:49,800 --> 00:02:52,710
+Laptops and PCs can be lost and stolen.
+
+41
+00:02:52,710 --> 00:02:56,870
+And CDs, DVDs and
+magnetic tapes all degrade over time.
+
+42
+00:02:58,010 --> 00:03:01,185
+Errors writing to CDs and
+DVDs are fairly common.
+
+43
+00:03:01,185 --> 00:03:04,540
+And obviously, these can be lost,
+misplaced, or damaged.
+
+44
+00:03:04,540 --> 00:03:09,500
+If you choose to use CDs, DVDs or
+memory sticks, pick high quality
+
+45
+00:03:09,500 --> 00:03:13,360
+products from good manufacturers and
+follow the care instructions provided.
+
+46
+00:03:14,370 --> 00:03:17,540
+Regularly check the media to make
+sure they're not failing and
+
+47
+00:03:17,540 --> 00:03:19,890
+periodically refresh them.
+
+48
+00:03:19,890 --> 00:03:23,565
+Refreshing means to copy your
+files from one disk to another.

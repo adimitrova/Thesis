@@ -1,0 +1,100 @@
+Okay. So next task, next topic is motion
+database. So the work we introduce here is a
+retrieval on visualization of human motion data via
+stick figures. The motivation here is there is a large capture database, motion capture
+database available. So you have loads of human motion
+captured, lot's of them. So by combining them you can. Create interesting animation very easily. However, the problem is that it's very,
+very difficult to find desired motion. Two problems, it's very difficult to see
+what's in the database already, so browsing can
+be difficult. Another problem is that it's very
+difficult to search. You may want to search for specific motion, but specifying desired emotion is
+not easy. So that’s a problem. Our approach is to use comic visualization
+of stick figure representation. Stick figures for comic visualization and
+search, enabling us to use the image or motion capture data in this kind
+of comic strip like representation. So in this way you can get emotion just by
+watching a static representation and then you get
+the idea of the motion. And then another is a sketch based search. So you quickly sketch a desired emotion and then the system automatically delivers
+it. And what's interesting here is that not
+only user draws a pose. But user can also specify the motion,
+trajectory, or give a joint to find the target motion,
+efficiently. So, let me show you a video. So here is a representation, taken this 3D
+motion as input. The system creates this motion as
+representation. By looking at this comic you can
+understand the concept of motion. And this is stick figure sketch based
+search. On the left you draw a query and the system continuously shows the
+search result given this new input. So fast we show the generation of stick
+figure comic strip from motion. So this is input, animation. And then we analyze the speed, and then we
+get the key poses, this way. And then we select the most effective viewing angle, and then render the
+results. And that is all. You get a very inventive presentation. Here is a couple of examples. Here it is in relation to the pose itself, the system also shows the most dynamic,
+most projectory. To provide more of the information. [BLANK_AUDIO] So this is an example of database
+browsing. So usually in order to browse this kind of
+data base, you have to watch and then you draw the motion
+one by one. But here you can quickly see what's going
+on by looking at the go about view. So our next part of the search. So, on the left side you draw, sketch the
+desired shape of the stick figure. So head, and leg, and body, and as you see the system continuously provides
+feedback of a matching result. [BLANK_AUDIO] Now interesting here is that in addition
+to the pose itself you then can control this kind of project
+speed, speed line. So this specifies our movement direction. So here in this way you can move the, identify the shape that waves the hand
+this way. So this can filter out motion from top to
+down. And here is the opposite motion. So we have found that this kind of speed runs is very useful for this
+[unintelligible] specific motion. [BLANK_AUDIO] User can retrieve longer sequence by
+sketching multiple sequences like fast kick, next
+punch. And then do something next, then you got
+the system searches for a motion clip that
+satisfies this request. Okay, so let me briefly describe the
+algorithm. So first is visualization, and next is
+search. So visualizations, the one question to
+answer is what, which pose to use? You know, you have long sequence, so many
+poses, and they have to pick couple of important
+key poses. So here in this system, we've used a scene
+where the character changes it's motion, movement
+direction or when the motion is stopped. But here, you uses, here the direction
+suddenly changes, so we pick it as the [UNKNOWN]
+pose. And after picking the [UNKNOWN] poses next
+question is which viewing angle to use. There are many ways to lend specifically
+the shape. In 2D, so you don't have to identify a
+most effective view, we use a perpendicular, it's a new direction which is perpendicular to the movement
+direction. So here an example, when the, this
+character is making a kicking motion, we believe
+that this motion, side view, is better than front
+view because you can see the motion of the leg. So we compute the trajectory of the joint,
+most moving joint, and then we get a direction most
+perpendicular to the prominent motion. And search. So for search, one key observation we got
+is, joint, specific XY coordinator, joint
+locations are not very accurate. Because in user's former sketch, you know,
+joint [UNKNOWN] changes so much, and is so
+unstable. So we cannot rely on joint location, so
+basic positions. However, we [UNKNOWN] orientation of joint
+angle, is relatively stable. [UNKNOWN] in former user sketch. So we, we decided to use a 2D direction,
+orientation of each joint, or each bone, as a key for the
+search. Another important thing is that there are
+multiple matching possibilities, so we consider all
+possibilities in the search. For example, you now, if you a sketch,
+this kind of character. The user draws only one arm and one leg. So there are so many possibilities. This can represent left leg or right leg. And this can represent left arm or right
+arm. So we just consider all the possibilities
+and then we turn over and watch the result of these
+priorities. Okay. So here is a summary. So we presented a efficient access to
+large motion capsule database. So we presented comic base visualization,
+and sketch base search. And we discussed iden, identification
+keyboard's is and during directions. And those are we, the measurements that we
+use bone direction for the search. So to learn more, original paper is called
+Retrieval and Visualization of Human Motion Data by,
+via stick figures. And the comic-strip presentation, we get
+idea from a Comic Chat system, which takes a chat
+communication sequence. And the [INAUDIBLE] generates comic strips
+representing the chat conversation. And also there's a paper on 3D shape retrieval, using sketching as input, and
+this is called search engine for 3D models and
+this can be interesting little paper to look
+at. And finally, posing. Character posing by stick figure was
+already explored in a paper called sketching interface for
+articulated figure animation. So they take 2D stick figure illustration
+and then generate smooth 3D animation by doing
+multiple, stick figures. But they did not use motion capture. Okay, so this is a summary fo this week. So in this week we discussed the formation
+and animation. So instead of taking care of a rigid 3D
+shape. We we discussed how to control articulated
+character and also the form of our shapes. And we discussed clothing manipulation,
+how to put clothing on that character. And the layer operations, how to store up
+layers in stacked clothing or ropes. And we discussed special key frames to make smooth animation of our articulated
+characters. And procedure deformation means to
+generate animation of jelly fishes and wild. And then find the way we discussed how to efficiently access motion
+calculator database. So, thank you.

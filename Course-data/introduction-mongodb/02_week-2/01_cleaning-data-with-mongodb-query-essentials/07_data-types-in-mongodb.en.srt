@@ -1,0 +1,457 @@
+1
+00:00:00,200 --> 00:00:00,770
+In this lesson,
+
+2
+00:00:00,770 --> 00:00:04,280
+we're going to talk about the different
+data types that MongoDB supports.
+
+3
+00:00:04,280 --> 00:00:09,170
+And we're really going to get into some of
+the different data types that MongoDB has.
+
+4
+00:00:09,170 --> 00:00:12,980
+But not only that, we're also going to
+talk about how we can query for
+
+5
+00:00:12,980 --> 00:00:16,780
+documents by the data
+type that a field is.
+
+6
+00:00:16,780 --> 00:00:20,590
+So by now, you already understand that
+MongoDB stores data in documents and
+
+7
+00:00:20,590 --> 00:00:24,980
+you're already somewhat familiar with the
+different data types supported by MongoDB.
+
+8
+00:00:24,980 --> 00:00:28,900
+For example, here I go ahead and query for
+a random movie and print it out.
+
+9
+00:00:28,900 --> 00:00:33,020
+And as you can see,
+we know that title is a string.
+
+10
+00:00:33,020 --> 00:00:36,320
+We know that runtime is a number.
+
+11
+00:00:36,320 --> 00:00:40,420
+We've also looked at more complex data
+types in Mongo DB, like how cast is
+
+12
+00:00:40,420 --> 00:00:46,140
+an array, or like how imdb is
+actually an embedded document.
+
+13
+00:00:46,140 --> 00:00:49,568
+But let's look at all of the different
+data types that Mongo DB supports.
+
+14
+00:00:49,568 --> 00:00:54,005
+And here is a list of all the different
+data types supported by Mongo DB on our
+
+15
+00:00:54,005 --> 00:00:55,350
+documentation page.
+
+16
+00:00:55,350 --> 00:00:58,158
+And we don't have time to talk about
+all these different data types, but
+
+17
+00:00:58,158 --> 00:01:01,380
+in this lesson we're going to talk
+about three of the most interesting.
+
+18
+00:01:01,380 --> 00:01:04,520
+So we're going to talk about ObjectId,
+Date, and
+
+19
+00:01:04,520 --> 00:01:07,749
+finally we're going to
+talk about Decimal128.
+
+20
+00:01:07,749 --> 00:01:11,770
+So coming back to our notebook,
+here is the random document that we found.
+
+21
+00:01:11,770 --> 00:01:15,320
+We can go ahead and
+look at the specific _id field.
+
+22
+00:01:15,320 --> 00:01:18,130
+And you'll notice that
+it has this ObjectId
+
+23
+00:01:18,130 --> 00:01:22,000
+wrapper around this random
+string of letters and numbers.
+
+24
+00:01:22,000 --> 00:01:26,280
+And so, this ObjectId is
+actually a MongoDB data type.
+
+25
+00:01:26,280 --> 00:01:31,350
+And it's special because what it allows us
+to do is it allows MongoDB to identify,
+
+26
+00:01:31,350 --> 00:01:34,450
+uniquely, every document in the database.
+
+27
+00:01:34,450 --> 00:01:37,790
+And it's able to accomplish this because
+this random string of characters
+
+28
+00:01:37,790 --> 00:01:41,450
+is actually composed of
+the current time in unix,
+
+29
+00:01:41,450 --> 00:01:45,600
+the ID of the machine that is
+running this, the process ID,
+
+30
+00:01:45,600 --> 00:01:49,320
+and as well as a counter that
+starts with a random value.
+
+31
+00:01:49,320 --> 00:01:53,354
+And through all of these different pieces,
+MongoDB is able to,
+
+32
+00:01:53,354 --> 00:01:57,777
+with somewhat good certainty,
+ensure that this ObjectId is unique.
+
+33
+00:01:57,777 --> 00:02:02,710
+And is able to therefore uniquely
+identify every document in the database.
+
+34
+00:02:02,710 --> 00:02:04,070
+And so that's ObjectId.
+
+35
+00:02:04,070 --> 00:02:06,680
+Now let's talk about the Date data type.
+
+36
+00:02:06,680 --> 00:02:09,300
+So I can go ahead and import datetime.
+
+37
+00:02:09,300 --> 00:02:10,690
+And then I can go ahead and
+
+38
+00:02:10,690 --> 00:02:16,460
+look at this example test collection
+that I've created called dates.
+
+39
+00:02:16,460 --> 00:02:21,185
+So here's this dates database, and now
+I'm just going to go ahead and insert one
+
+40
+00:02:21,185 --> 00:02:25,780
+document where I say dt, which is date
+time, is the current time right now.
+
+41
+00:02:25,780 --> 00:02:28,630
+And so when I run this,
+you can see that it was successful and
+
+42
+00:02:28,630 --> 00:02:31,190
+now I should be able
+to find it right away.
+
+43
+00:02:31,190 --> 00:02:33,060
+And so, this is really cool.
+
+44
+00:02:33,060 --> 00:02:37,599
+It's really awesome that MongoDB allows
+us to natively insert dates into
+
+45
+00:02:37,599 --> 00:02:42,590
+MongoDB because this allows us to query
+for dates in a lot more interesting ways.
+
+46
+00:02:42,590 --> 00:02:46,352
+We can now query for dates using
+logical operators like less than and
+
+47
+00:02:46,352 --> 00:02:50,312
+greater than and a lot of other
+interesting things, like it allows us to
+
+48
+00:02:50,312 --> 00:02:54,932
+use advanced aggregation operators that
+allow us to pull out different components
+
+49
+00:02:54,932 --> 00:02:58,910
+of this date, like I can figure out
+the day of the year that this date is.
+
+50
+00:02:58,910 --> 00:03:01,590
+Or I can figure out
+the year that this date is.
+
+51
+00:03:01,590 --> 00:03:04,840
+And all this wouldn't be really possible
+if we were just storing this date
+
+52
+00:03:04,840 --> 00:03:06,590
+as a simple string.
+
+53
+00:03:06,590 --> 00:03:07,130
+And finally,
+
+54
+00:03:07,130 --> 00:03:11,480
+I also want to talk about this really
+interesting data type called Decimal128.
+
+55
+00:03:11,480 --> 00:03:16,360
+And so we already know that MongoDB allows
+us to store floating point numbers.
+
+56
+00:03:16,360 --> 00:03:20,190
+But more than that, MongoDB also
+lets us store decimal numbers.
+
+57
+00:03:20,190 --> 00:03:24,792
+And this is really important whenever
+you're storing numbers that represent
+
+58
+00:03:24,792 --> 00:03:28,917
+something that has to be strictly
+precise and strictly represented.
+
+59
+00:03:28,917 --> 00:03:31,040
+And a great example of this is money.
+
+60
+00:03:31,040 --> 00:03:35,590
+So we don't want any rounding errors
+when you're doing math with money.
+
+61
+00:03:35,590 --> 00:03:38,150
+And so when we are using money and
+storing it in MongoDB,
+
+62
+00:03:38,150 --> 00:03:42,870
+we really want to use the Decimal128
+data type so there's no rounding errors.
+
+63
+00:03:42,870 --> 00:03:45,242
+And so MongoDB natively supports this.
+
+64
+00:03:45,242 --> 00:03:49,875
+And so we can go ahead and import this
+special data type from the bson library.
+
+65
+00:03:49,875 --> 00:03:53,695
+And then insert a document,
+pretty simple, the API is very simple.
+
+66
+00:03:53,695 --> 00:03:59,093
+You just wrap your number as a string and
+then wrap that in the Decimal128 function.
+
+67
+00:03:59,093 --> 00:04:01,995
+And then, as you can see,
+we've successfully inserted it.
+
+68
+00:04:01,995 --> 00:04:04,510
+And now I can easily find it.
+
+69
+00:04:04,510 --> 00:04:09,175
+And you can see that this is stored kind
+of exactly as the way we would expect.
+
+70
+00:04:09,175 --> 00:04:12,800
+MongoDB is powerful, not only because
+it lets us store data with this rich
+
+71
+00:04:12,800 --> 00:04:15,190
+variety of different data types, but also,
+
+72
+00:04:15,190 --> 00:04:20,070
+it's really cool because we can actually
+query for documents based on their type.
+
+73
+00:04:20,070 --> 00:04:21,422
+So in this case, you can see here,
+
+74
+00:04:21,422 --> 00:04:27,640
+I'm writing a query where I want to find
+movies where the year is of type integer.
+
+75
+00:04:27,640 --> 00:04:30,465
+And so when I run this,
+exactly as we would expect,
+
+76
+00:04:30,465 --> 00:04:33,707
+here I'm able to find a movie
+where the year is an integer.
+
+77
+00:04:33,707 --> 00:04:36,540
+And this is useful for
+two common-use cases.
+
+78
+00:04:36,540 --> 00:04:39,340
+Firstly, this can be useful
+when we want to clean our data.
+
+79
+00:04:39,340 --> 00:04:43,910
+We can use the $type operator to find that
+
+80
+00:04:43,910 --> 00:04:46,900
+every field is the exact type
+that we expect it to be.
+
+81
+00:04:46,900 --> 00:04:50,170
+But second, this can be very
+useful if we have a schema
+
+82
+00:04:50,170 --> 00:04:54,560
+where a field has multiple
+data types across documents.
+
+83
+00:04:54,560 --> 00:04:55,130
+For example,
+
+84
+00:04:55,130 --> 00:05:01,060
+maybe we the director field as a string
+if a movie only has one director.
+
+85
+00:05:01,060 --> 00:05:04,650
+But we store it as an array
+if it has multiple directors.
+
+86
+00:05:04,650 --> 00:05:09,114
+In that case, we could use the $type
+operator to find movies of that specific
+
+87
+00:05:09,114 --> 00:05:12,696
+type, whether it be string versus array,
+and go from there.
+
+88
+00:05:12,696 --> 00:05:15,310
+So let's go ahead and
+recap what we discussed in this lesson.
+
+89
+00:05:15,310 --> 00:05:19,400
+We saw a list of all the different data
+types in MongoDB and, specifically,
+
+90
+00:05:19,400 --> 00:05:21,120
+we talked about three special ones.
+
+91
+00:05:21,120 --> 00:05:24,484
+We talked about ObjectId,
+we talked about Date, and
+
+92
+00:05:24,484 --> 00:05:27,113
+finally we talked about Decimal128.
+
+93
+00:05:27,113 --> 00:05:30,535
+And then we saw that we can actually
+query MongoDB based on data type,
+
+94
+00:05:30,535 --> 00:05:32,374
+which is useful for cleansing data.
+
+95
+00:05:32,374 --> 00:05:36,260
+And it can also be useful when we have
+documents with different types for
+
+96
+00:05:36,260 --> 00:05:38,280
+a field across multiple documents.

@@ -1,0 +1,101 @@
+Hello, our topic here is voice
+interaction, and the work we introduce here is voice and
+sound. So here the background motivation, we see
+there are two aspects in our voice. So one is verbal information. And the other is non-verbal information. And typical speech interactions use verbal
+information such as they convert your speech into recognizable
+command and then do something. But however, on the other hand, our voice
+also contains non verbal information such as pitch,
+volume, speed, and so on. So these are non-verbal information has been ignored in traditional speech
+recognition. But here, what we want to do is leverage, leverage these non-verbal
+information in your voice. And here is a kind of concept. So, interaction turn-around is very long in traditional voice or speech
+recognition. So you say something, and then computer
+tries to understand it, and then you say something, and the system
+tries to do something. And this is, this is very, very, very
+time-consuming. And it's very discontinuous. On the other hand. For example if you are working on a,
+mouse, if you grab an object, you continuously move your mouse
+cursor and then the system continuously provides
+feedback. So this kind of direct manipulation
+experience is what we want to achieve, as in computer. So we, in our technique, the user
+continuously produce makes your voice, and then system continuously
+provides feedback to your vocal input. So let me show you a video. So, here, we introduce three techniques. The first one is more simple. On/off button. So here, your voice works as on/off
+button. So if you say nothing, it's off. So if you say something continuously it
+means you press button. Here's an example. So here, typical approach is voice
+recognition. So if you want to move this node, say, maybe you say 30 degree, and you get
+result here. And so, 90 degree, you get result here. But again if you use voice recognition,
+interaction can be very discontinuous. Here your voice is a switch, so if you
+make voice this one starts moving, as you, as soon as you stop
+speeching, speaking it will stop. So you can continuously see the visual
+feedback [SOUND]. So as you see, you can continuously get
+feedback, so if you get a satisfact result, satisfactory result, you just stop
+speech and you get a result. And if the voice is very annoying or
+difficult to produce you can make any noise, so you can use a
+breath. To control a system. >> Down. >> And if you combine this with
+traditional speed recognition, you can do something
+like this. [SOUND] Again, traditional approach is to say, like, 100 meter. Away, or one kilometer away, and so on. But it's kind of difficult to understand
+what's going on. But here, you just speech, and then stop
+speaking. And this especially useful for zooming. You know, zooming 1.2 is very difficult to
+imagine. But here, you just see it. >> Bike. Zoom out. Out. Up. Up. >> Okay so that was a fast technique and
+here is the second one. Second one is addition to on and off, you
+control, control a parameter using a voice, using a pitch of your
+voice, so you let me see. [NOISE] So you control a slider with the
+pitch of your voice. [NOISE] It's very, very st, stable, that's
+a most important part [NOISE]. >> Up. Down. Down. >> So, here, in addition to controlling
+the distance, you can also control a speed of the
+scrolling. >> Up. Right. Up. >> [NOISE] Again, higher the voice, the faster you move. So, so far, I showed very continuous
+control parameters, but here, the last one is discontinuous
+Discrete Control by Tonguing. So suppose you want to change TV channel,
+or something like that. >> [SOUND] down. [UNKNOWN] Left. [UNKNOWN] up. [UNKNOWN] right. [UNKNOWN] down [UNKNOWN]. >> So here we use very, very basic signal
+processing, so you can do any noise, so you can also clap your
+hands to control it. >> Down. [SOUND] Right. Right. [SOUND]. [BLANK_AUDIO]. So those three techniques we introduced. And then next we, I will show you a couple entertainment applications of
+these techniques. The first, okay, the first one is jumping game using your
+voice. Up, up, up, up, up, up, up, down. >> So next one is using pitch control to control the
+vertical position of this fish. [INAUDIBLE] So last one is, like punching game using
+your voice. [UNKNOWN]. [SOUND] So that, that's it and let me go
+back to the slide. So let me briefly describe the
+implementation of this kind of system. First, where we use a signal processing
+techniques. And we use existing. A fourier transform library. So it transforms input voice signal data
+into frequency domain. And then application is control's
+implemented in Java. And the first technique, on and off
+control is very, very nice. Implement this and we use. It just checks total volume, total power. Or was the input signal. And if it's, we check whether the total volume is larger than the threshold or
+not. One implementation detail is that we
+ignore low frequency part to subtract, separate
+background noise. An important part is pitch detection, so. We con, we use voice pitch to control
+parameter up and down but this needs to be very, very
+stable. A naive approach is to use identify
+absolute pitch for each voice. So here's an input signal and then try to
+identify the dominant pitch. However this is very very difficult. It's very ambiguous, noisy, and unstable. Please imagine that at this kind of
+frequency signal, is changing all the time and then it is very difficult to
+identify a peak. So some t, at some point this is the
+highest. But at nex,next moment this one gets
+highest, so it's very unstable. So this naive approach is not works very
+well. So our approach is to just all checks slightly up or slightly down of each
+frame. So in this way the result is very stable. So we only check whether the pitch is
+getting high or lower, a little bit. So here's a detailed algorithm. Suppose you have this kind of spectrum of
+time t0. So the vertical, horizontal axis is
+frequency, low frequency to high frequency, and for each frequency
+you get amplitude. And then you get another thing now of t0
+plus dt. And then your task is to detect whether this frequency signal is shifting
+downwards or upwards. So in order to do it, we get this we aggregate this signal into a vector,
+and then in the next time. For the next fray, we get a vector for the shifted upwards and also shifted
+downwards, so you have three vectors. And then we just compute dot products
+between them. So this one is dot product between v and v
+minus. And then you compute also v and v plus. So if v minus is higher, then v minus is
+more closer to v, so which means that the pitch
+is shifted over. And then if this thought product of v plus
+is higher than v minus, which means that v plus is closer to v, which means
+the spectrum is, gets higher. So this very, very simple implementation. Returns a very, very stable result. So here's a summary. So we discussed problem of controlling
+object continuously, using your voice, using
+non-verbal features. And then our approach is to use a
+non-verbal aspect of your voice. And the original paper was published as
+Voice as Sound, Non-verbal Voice Input for
+Interactive Control. And multi-modal interface using gesture
+and voice is also a very popular topic in your field, and very original paper was
+called Put, Put That There so you say, put and then say that,
+showing some object. And then again say there. And they're showing another object using
+your gesture. And then you get the task. And the video is available on the YouTube. So I recommend you to take a look at it. And also there are a couple of interesting
+voice based interaction techniques. And one recommendation for you is speech
+completion. And this one tries to complete. Your speech in the middle. And also video is available, so I
+recommend you too take a look at it. Thank you. So this is the end of week one. Some topic we discuss in this week was
+graphical user interfaces. And then we discuss scrolling interfaces,
+the manageable desktop icons. Pointing techniques on the large screen. And management of digital ink. And then finally, we discuss voice
+interaction. Thank you.

@@ -1,0 +1,528 @@
+1
+00:00:00,000 --> 00:00:06,090
+[MUSIC]
+
+2
+00:00:06,090 --> 00:00:07,050
+Hello.
+
+3
+00:00:07,050 --> 00:00:09,430
+It is good to see you back for
+this lesson.
+
+4
+00:00:09,430 --> 00:00:12,690
+In previous videos we explored,
+with a bird's eye view,
+
+5
+00:00:12,690 --> 00:00:17,330
+what operating systems are and
+how they execute their tasks.
+
+6
+00:00:17,330 --> 00:00:20,040
+Now we will take a look
+into the Linux Kernel
+
+7
+00:00:20,040 --> 00:00:22,870
+to discuss some of its characteristics.
+
+8
+00:00:22,870 --> 00:00:26,720
+At the end of the lesson you should
+understand the main Linux Kernel functions
+
+9
+00:00:26,720 --> 00:00:27,650
+and it's advantages.
+
+10
+00:00:29,150 --> 00:00:31,390
+Let's begin with some questions.
+
+11
+00:00:31,390 --> 00:00:33,720
+What is a Linux process?
+
+12
+00:00:33,720 --> 00:00:35,820
+How does a process operate?
+
+13
+00:00:35,820 --> 00:00:37,750
+And how many processes are there?
+
+14
+00:00:38,930 --> 00:00:43,549
+In order to deal with these questions,
+we first define what are Linux processes.
+
+15
+00:00:44,570 --> 00:00:48,670
+A process is one of the fundamental
+abstractions in Linux.
+
+16
+00:00:48,670 --> 00:00:52,000
+In short it can be considered
+a program in execution.
+
+17
+00:00:53,150 --> 00:00:57,770
+A process encompasses a set of
+resources such as processor state,
+
+18
+00:00:57,770 --> 00:01:00,644
+address space, threats and data section.
+
+19
+00:01:00,644 --> 00:01:06,239
+The Linux Kernel implements a process
+manager to keep track of each process.
+
+20
+00:01:07,300 --> 00:01:12,410
+It does so using processes
+scriptors which store information
+
+21
+00:01:12,410 --> 00:01:16,535
+such as run state of the process,
+address space,
+
+22
+00:01:16,535 --> 00:01:20,384
+list of open files, process priority, etc.
+
+23
+00:01:20,384 --> 00:01:23,800
+A process can be in one
+of four possible states.
+
+24
+00:01:24,800 --> 00:01:29,870
+A running state means the process is
+already running or it is ready to run.
+
+25
+00:01:31,590 --> 00:01:35,430
+The waiting state is used for
+processes waiting for an event or
+
+26
+00:01:35,430 --> 00:01:36,470
+a particular resource.
+
+27
+00:01:38,080 --> 00:01:39,750
+There are two types of waiting,
+
+28
+00:01:39,750 --> 00:01:43,380
+including interruptible waiting and
+uninterruptible waiting.
+
+29
+00:01:44,840 --> 00:01:49,760
+A process is in a stopped state when
+it's not eligible for running anymore.
+
+30
+00:01:49,760 --> 00:01:52,190
+Often, as a result of
+receiving a system signal.
+
+31
+00:01:53,660 --> 00:01:57,450
+However, in some cases a process
+that is being debugged
+
+32
+00:01:57,450 --> 00:01:58,760
+can be in the stopped state.
+
+33
+00:02:00,460 --> 00:02:04,820
+Finally, a zombie state
+is a process occurs
+
+34
+00:02:04,820 --> 00:02:09,449
+when the process is terminated but the
+Kernel has not removed its resources yet.
+
+35
+00:02:11,360 --> 00:02:14,900
+Next we will focus on memory
+management in the Linux Kernel.
+
+36
+00:02:16,290 --> 00:02:20,810
+Actually the memory management system in
+the Kernel is a virtual memory system.
+
+37
+00:02:22,050 --> 00:02:27,110
+This means that all memory
+addresses as seen by user processes
+
+38
+00:02:27,110 --> 00:02:29,950
+are not the physical addresses
+used by the hardware.
+
+39
+00:02:31,170 --> 00:02:34,990
+To give you a better idea of
+memory management in Linux,
+
+40
+00:02:34,990 --> 00:02:36,680
+I will discuss its main features.
+
+41
+00:02:37,680 --> 00:02:39,980
+First is large address spaces.
+
+42
+00:02:41,080 --> 00:02:45,830
+This means the Kernel allows running
+programs to allocate more virtual memory
+
+43
+00:02:45,830 --> 00:02:47,590
+than the system's physical memory.
+
+44
+00:02:49,220 --> 00:02:52,260
+The Kernel also provides
+memory protection.
+
+45
+00:02:52,260 --> 00:02:56,140
+This way every process has its
+own virtual addressed space.
+
+46
+00:02:57,470 --> 00:03:01,832
+Virtual addresses spaces are completely
+separated unless a result
+
+47
+00:03:01,832 --> 00:03:05,590
+process running concurrently
+do not effect one another.
+
+48
+00:03:07,190 --> 00:03:10,320
+Next is memory mapping, which is used for
+
+49
+00:03:10,320 --> 00:03:14,260
+mapping the image of data files
+to a process addresses space.
+
+50
+00:03:15,580 --> 00:03:16,340
+This way,
+
+51
+00:03:16,340 --> 00:03:21,270
+the content of a file is directly linked
+to a process virtual addresses space.
+
+52
+00:03:23,240 --> 00:03:28,250
+Linux also has a mechanism for
+fair physical memory allocation.
+
+53
+00:03:28,250 --> 00:03:32,210
+Which ensures that running
+processes receive a fair share
+
+54
+00:03:32,210 --> 00:03:33,720
+of the system's physical memory.
+
+55
+00:03:34,960 --> 00:03:38,600
+And last but not least,
+there is a shared virtual memory.
+
+56
+00:03:39,900 --> 00:03:44,840
+As mentioned before, each process has
+a separate virtual address space.
+
+57
+00:03:44,840 --> 00:03:48,950
+However, in some cases,
+a shared virtual memory is necessary.
+
+58
+00:03:50,040 --> 00:03:51,470
+Let's take a look at an example.
+
+59
+00:03:52,600 --> 00:03:54,010
+When many processors run,
+
+60
+00:03:54,010 --> 00:03:58,750
+a VAS come in shell instead of
+replicating many copies of VAS.
+
+61
+00:03:58,750 --> 00:04:02,880
+It is better to have only one
+copy in physical memory and
+
+62
+00:04:02,880 --> 00:04:04,590
+those processes can share it.
+
+63
+00:04:06,280 --> 00:04:09,180
+Now, let's talk about
+scheduling in the Linux Kernel.
+
+64
+00:04:10,330 --> 00:04:12,550
+Scheduling is very important,
+
+65
+00:04:12,550 --> 00:04:16,000
+since it defines the policy
+on when a process can run.
+
+66
+00:04:16,000 --> 00:04:19,760
+This is which process runs first and
+which one runs later.
+
+67
+00:04:21,610 --> 00:04:25,480
+The Linux scheduler is
+a priority scheduler.
+
+68
+00:04:25,480 --> 00:04:30,392
+Meaning, it's policy is based
+on the priority of processes.
+
+69
+00:04:30,392 --> 00:04:32,510
+Every time the scheduler runs,
+
+70
+00:04:32,510 --> 00:04:37,200
+the priority of all processes
+in the wrong cue is analyzed.
+
+71
+00:04:37,200 --> 00:04:41,330
+And the process with the highest
+priority is allowed to run next.
+
+72
+00:04:42,530 --> 00:04:48,560
+In systems with many processors,
+each processor has a separate run queue.
+
+73
+00:04:48,560 --> 00:04:53,920
+And each processor selects
+processes only from it's own queue.
+
+74
+00:04:53,920 --> 00:04:59,330
+However, there may be the case that
+a processor has along waiting queue.
+
+75
+00:04:59,330 --> 00:05:00,960
+When compared to other processors.
+
+76
+00:05:02,250 --> 00:05:07,580
+In this case the Linux scheduler will
+move processors from the long queue
+
+77
+00:05:07,580 --> 00:05:09,340
+to the shorter queues.
+
+78
+00:05:09,340 --> 00:05:11,710
+Does getting a balanced
+workload as a result.
+
+79
+00:05:13,780 --> 00:05:18,610
+In previous videos we define an interrupt
+as an event generated by a hardware
+
+80
+00:05:18,610 --> 00:05:23,610
+component that causes change in
+the sequence of executed instructions.
+
+81
+00:05:24,880 --> 00:05:29,300
+Interrupts can be classified in
+two categories, synchronous and
+
+82
+00:05:29,300 --> 00:05:31,330
+asynchronous interrupts.
+
+83
+00:05:31,330 --> 00:05:35,540
+Synchronous interrupts are produced
+by the CPU control unit
+
+84
+00:05:35,540 --> 00:05:38,100
+while executing instructions.
+
+85
+00:05:38,100 --> 00:05:41,170
+They are called synchronous
+because the control unit
+
+86
+00:05:41,170 --> 00:05:45,060
+issues them only after terminating
+the execution of an instruction.
+
+87
+00:05:46,520 --> 00:05:50,290
+On the other hand,
+asynchronous interrupts are generated
+
+88
+00:05:50,290 --> 00:05:55,269
+by other hardware devices at arbitrary
+times regarding the CPU clock signals.
+
+89
+00:05:56,850 --> 00:06:01,770
+The Linux Kernel handles interrupt
+signals using interrupt handlers,
+
+90
+00:06:01,770 --> 00:06:04,040
+also called interrupt service routines.
+
+91
+00:06:05,230 --> 00:06:08,180
+The main difference between
+interrupt handlers and
+
+92
+00:06:08,180 --> 00:06:11,690
+other functions in the Kernel
+is that an interrupt handler
+
+93
+00:06:11,690 --> 00:06:15,590
+is executed in a special context
+named Interrupt Context.
+
+94
+00:06:17,570 --> 00:06:22,630
+To finalize today's talk, I will list
+some of the advantages of Linux Kernel.
+
+95
+00:06:23,910 --> 00:06:28,960
+The Linux Kernel is open source and
+anyone can contribute to it's code base.
+
+96
+00:06:28,960 --> 00:06:30,870
+Individuals and organizations alike.
+
+97
+00:06:31,970 --> 00:06:33,560
+As a result of this.
+
+98
+00:06:33,560 --> 00:06:38,300
+There is a large community that provides
+support and has produced large quantities
+
+99
+00:06:38,300 --> 00:06:42,130
+of documentation, most of it
+freely available in the Internet.
+
+100
+00:06:43,510 --> 00:06:46,600
+The Linux Kernel can be easily customized.
+
+101
+00:06:46,600 --> 00:06:49,990
+Therefore, there is wide variety
+of computer architectures
+
+102
+00:06:49,990 --> 00:06:51,670
+where you can use it.
+
+103
+00:06:51,670 --> 00:06:56,100
+From small sized microcontrollers to
+full fledged minicore processors.
+
+104
+00:06:57,350 --> 00:07:01,140
+The Linux Kernel is a very
+complex piece of software.
+
+105
+00:07:01,140 --> 00:07:05,660
+Unfortunately, many of its details
+were not covered in this video
+
+106
+00:07:05,660 --> 00:07:06,560
+due to lack of time.
+
+107
+00:07:07,710 --> 00:07:11,191
+Functions such as input-output
+device management.
+
+108
+00:07:11,191 --> 00:07:13,132
+Interprocess communication.
+
+109
+00:07:13,132 --> 00:07:17,230
+Security and protection
+management are now describe here.
+
+110
+00:07:18,250 --> 00:07:22,700
+However, to get a comprehensive view
+of them, I recommend you to read
+
+111
+00:07:22,700 --> 00:07:27,110
+the Linux Kernel Development book
+third edition written by Robert Love.
+
+112
+00:07:28,270 --> 00:07:32,186
+Thanks for watching and
+see you again in the coming lectures.
+
+113
+00:07:32,186 --> 00:07:36,159
+[MUSIC]

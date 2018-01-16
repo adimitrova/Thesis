@@ -1,0 +1,223 @@
+1
+00:00:12,209 --> 00:00:16,545
+We recommended that you encrypt your
+data a few times in the last section, so
+
+2
+00:00:16,545 --> 00:00:18,600
+what do we mean by data encryption?
+
+3
+00:00:20,050 --> 00:00:24,420
+Encryption is the process of converting
+your data into an unreadable code.
+
+4
+00:00:25,610 --> 00:00:30,600
+A user would need the encryption key or
+secure password in order to read the file.
+
+5
+00:00:31,940 --> 00:00:35,110
+Encryption will protect
+your data from disclosure,
+
+6
+00:00:35,110 --> 00:00:39,390
+in the case that your laptop or
+storage device is lost or stolen.
+
+7
+00:00:39,390 --> 00:00:44,030
+The University of Edinburgh Data
+Encryption Policy, warns that medium or
+
+8
+00:00:44,030 --> 00:00:46,420
+high risk personal data or
+
+9
+00:00:46,420 --> 00:00:52,020
+business information must be encrypted
+if it leaves the University environment.
+
+10
+00:00:52,020 --> 00:00:55,270
+Encryption is reliant on
+the creation of a strong password.
+
+11
+00:00:56,380 --> 00:00:59,870
+The data can't be recovered if
+this encryption key is lost.
+
+12
+00:00:59,870 --> 00:01:01,900
+So you should establish a reliable and
+
+13
+00:01:01,900 --> 00:01:07,090
+secure backup procedure for
+the data and any associated passwords.
+
+14
+00:01:07,090 --> 00:01:08,730
+Encryption is an obvious step for
+
+15
+00:01:08,730 --> 00:01:13,820
+laptop security, however there's
+no one size fits all solution.
+
+16
+00:01:13,820 --> 00:01:16,060
+BitLocker, Pretty Good Privacy.
+
+17
+00:01:16,060 --> 00:01:19,250
+And other commercial software
+packages are available, but
+
+18
+00:01:19,250 --> 00:01:21,880
+you'll need to consider
+your operating system.
+
+19
+00:01:21,880 --> 00:01:25,480
+If you keep sensitive
+data on USB flash drives,
+
+20
+00:01:25,480 --> 00:01:29,380
+it's recommended that you use
+drives with encryption software.
+
+21
+00:01:29,380 --> 00:01:32,240
+These give protection to
+the data if the drive is lost.
+
+22
+00:01:33,740 --> 00:01:37,670
+Especially if the data contained personal
+or commercially sensitive information.
+
+23
+00:01:38,720 --> 00:01:43,675
+Compared with ordinary USB flash drives,
+they only cost a modest amount more, so
+
+24
+00:01:43,675 --> 00:01:45,575
+are a good buy.
+
+25
+00:01:45,575 --> 00:01:50,055
+Your local IT support service should be
+happy to advise on the suitability of any
+
+26
+00:01:50,055 --> 00:01:53,055
+encrypted flash drive that
+you plan on purchasing.
+
+27
+00:01:53,055 --> 00:01:57,055
+So what happens to sensitive data
+when it's no longer required?
+
+28
+00:01:57,055 --> 00:01:58,995
+You may have anonymized your data and
+
+29
+00:01:58,995 --> 00:02:02,560
+now want to dispose of
+the identifiable portions, or
+
+30
+00:02:02,560 --> 00:02:06,890
+you may have agreed to delete your data
+at the end of your research project.
+
+31
+00:02:06,890 --> 00:02:11,810
+File deletion is not enough to completely
+remove sensitive data from your computer,
+
+32
+00:02:13,130 --> 00:02:17,750
+it only removes the pointers to the disk
+sectors in which the data reside.
+
+33
+00:02:17,750 --> 00:02:21,899
+The deleted files can be easily recovered
+with commonly available software.
+
+34
+00:02:22,980 --> 00:02:27,320
+So let's take a look at how you can
+permanently remove sensitive data.
+
+35
+00:02:27,320 --> 00:02:29,940
+There are three main options available.
+
+36
+00:02:29,940 --> 00:02:35,900
+Data erasure, also known as data clearing
+or data wiping, uses special software
+
+37
+00:02:35,900 --> 00:02:41,990
+to remove all data, while leaving the hard
+drive or storage medium still operable.
+
+38
+00:02:41,990 --> 00:02:46,000
+However, you should be aware that
+current techniques may not be completely
+
+39
+00:02:46,000 --> 00:02:50,300
+successful on solid-state drives and
+USB flash drives.
+
+40
+00:02:51,750 --> 00:02:55,150
+Degaussing is another way to remove data,
+
+41
+00:02:55,150 --> 00:02:58,670
+it disturbs the alignment
+of magnetic storage media.
+
+42
+00:02:58,670 --> 00:03:03,920
+But in many cases, it makes new media
+such as hard drives and tapes unusable.
+
+43
+00:03:05,030 --> 00:03:09,050
+Physical destruction through shredding,
+pulverising or
+
+44
+00:03:09,050 --> 00:03:11,990
+incineration is also an option.
+
+45
+00:03:11,990 --> 00:03:14,160
+You've now completed this module.
+
+46
+00:03:14,160 --> 00:03:18,481
+If you take a look at the further reading
+on the next slide, you'll get additional
+
+47
+00:03:18,481 --> 00:03:23,255
+references and resources, so you can learn
+more about storage, backup, and security.

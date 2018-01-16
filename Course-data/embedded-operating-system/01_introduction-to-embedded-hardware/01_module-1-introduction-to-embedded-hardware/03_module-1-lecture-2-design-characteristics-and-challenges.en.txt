@@ -1,0 +1,124 @@
+[MUSIC] Hello and welcome back. By now hopefully, you have a general
+picture of what an embedded system is. However, in order to give
+you a better insight, in this video we're going to talk about
+the characteristics of an embedded system. We will also discuss the challenges you
+may face when developing embedded systems as well as possible design flows
+to tackle those challenges. Any embedded system is built for
+a certain application, thus the system should fulfill
+the requirements of the application. These requirements dictate the
+characteristics of the embedded system. In general, we can distinguish several of them that
+can be applied to any embedded system. In the video,
+we will highlight some of them. We will talk about dependability,
+efficiency, and real-time constraints. These characteristics are crucial since
+they influence the way the system works. A lot of embedded systems are safety
+critical and so they must be dependable. A good example of a system which
+everyone would agree should be dependable is nuclear power plants. They are of course many other
+examples such as airplanes or cars. Why should these systems be dependable? The main reason is they are directly
+connected to the environment and if something goes wrong they will
+have an immediate impact on it. Dependability can be split into
+several sub-characteristics. The system is considered dependable if
+all those characteristics are fulfilled. An important issue is that
+initially the developers should not focus only on
+the functionality of the system assuming that the dependability
+can be brought in on later stages. In fact, this approach does not work, because design decisions might not allow
+achieving dependability afterwards. For example, if the wrong components
+are chosen for an application, let's say there is not enough
+computational performance to execute critical tasks on time, It will be very
+difficult to deal with it in later stages. So dependability should be considered
+during the initial stages of the system design. Efficiency is another issue. The importance of this
+characteristic comes from the fact that the amount of resources
+is always limited. Resources can be represented
+in the form of energy or memory space if it's an embedded system or
+as money if it's a customer. Nowadays, small resource constrained
+devices such as wearables or Internet of Things nodes
+are becoming more and more popular. These devices do not have
+constant power supply. However, they should last longer to
+provide costumers with proper services. Therefore, energy efficiency is
+much relevant to embedded systems. How can these characteristics
+be estimated? In general, Energy Efficiency can be
+estimated based on the amount of work done by the system considering
+the amount of spent energy. For example, for
+processors energy efficiency can be estimated based on the number
+of instructions per joule. It is probably obvious that the number
+of operations per joule is increasing as technology advances. If we make a quick comparison
+of the current technologies, we can conclude that the more
+application specific the components are that the more
+efficient the application is. According to that, processors offer
+the least energy efficient solutions. Whereas, application specific
+integrated-circuits are the most efficient ones. In an embedded system, hardware and
+software play equally important roles. If the running software does not
+exclude the underlying hardware at its full potential Then
+run-time efficiency will be poor. Inefficiencies cost by poor mapping
+of the application to platforms should be avoided. For instance, compilers should
+not bring in overhead which will eventually leave
+two of wasted energy. Code size is another issue that needs to
+be addressed when it comes to efficiency. Devices capable of loading additional
+code dynamically are still rare. Usually an embedded systems code
+is stored within the device. Therefore, it should occupy
+as less space as possible. The physical appearance of
+the system is not less important. Portable devices should be lightweight so
+to be more attractive to customers. The last but not the last parameter that
+influences the overall efficiency is cost. The system should be built using
+as little components as possible to implement the required functionality. Embedded systems should
+meet real-time constraints. If computations are not finished in time, the quality of the solution
+might decrease. Sometimes, violating real-time
+constraints may actually lead to more serious consequences, which will
+make the system less dependable. Of course, not all embedded systems
+share the mentioned characteristics, but the majority still do. However, since embedded systems lie in
+the intersection of different fields of a study. There is some haziness in the definition
+of what these systems are, and therefore,
+the set of characteristics may vary. Considering the above listed
+characteristics of embedded systems, we can think of challenges
+that developers might face. The dependability level of embedded
+systems goes beyond the level for PC-like systems. A real life example of the effects
+an undependable system can have is what happened in Southern California
+back in 2004. When due to technical problems,
+the air traffic control center could not operate and
+many airliners were held to the ground. This s the kind of situations that
+obviously everybody would like to avoid. To make a system efficient, software can not be developed
+independently of the underlying hardware. This means that during the initial
+design steps, both software and hardware should be taken into account. This actually requires
+collaboration between the fields of electrical engineering and
+computer science. The best energy efficiency can be achieved
+by building application specific hardware. However, there are downsides
+to hardware implementation, it doesn't provide high flexibility. It is also expensive and
+requires long design times. Embedded systems development is about
+finding the right balance between efficiency and flexibility. Embedded systems interact
+with the physical world. This fact has additional implications. For instance, developers must check
+if real-time constraints are met. It should be also considered,
+that real systems are concurrent. Managing concurrency is
+another important challenge. Embedded systems may consist of many
+components, such as processing elements, input-output devices, and
+communications units. This means that the impact of combining
+these components should be studied and considered. For instance, it is desirable to know how one component
+might influence the other components. In order to make
+the design process easier, it should be broken into
+several soft tests. These self tests should be
+performed sequentially and some of them can be repeated. Also, it is important that all solutions
+and methods are reused whenever possible. Designing starts from an idea which should
+be converted into a design specification. Special repository should be created where the relevant designing
+formation will be stored. The repository will lead the developer's
+to keep tract of the design. It is also good if the repository provides
+version control to make it possible to roll back to previous version
+of the design at each iteration, the repository should be updated. During the design process, applications
+are mapped to the platform iteratively. In each iteration,
+new design information is generated. The information comprises the mapping
+of operations to hardware or software. Computation and
+scaling in each step the design should be evaluated considering perimeters
+such as dependability, performance, energy consumption and others. During the intermediate steps there is no
+warranty that the design will be correct that's why the design should
+be validated in each step. As it was mentioned before, the system should be efficient,
+that's why optimization is important. To ease the design process, you might be
+interested in different design models. These models clearly show the different
+steps that must be performed. For example, the waterfall model
+is a sequential design process where development proceeds
+from the top to the bottom from obtaining the requirements
+to the maintenance. In order to use this model, the design
+process should be thought through very well because after the fact
+changes are very costly. The iterative model doesn't have
+dimension drawback since before deployment the design goes
+through testing, evolution, implementation every as many times
+as needed to meet the requirements. Well, this is all for this video. We discussed the main characteristics and
+challenges of embedded systems. In the next videos,
+we will go into interesting details and we will discuss more
+about embedded systems. [MUSIC]

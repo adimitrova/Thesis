@@ -1,0 +1,753 @@
+1
+00:00:00,012 --> 00:00:05,326
+So, in the last lecture, we saw that it 
+was possible to pick the eigenvalues of 
+
+2
+00:00:05,326 --> 00:00:10,337
+the closed loop system in such a way that 
+they became equal to some desired 
+
+3
+00:00:10,337 --> 00:00:14,083
+eigenvalues. 
+For the particular case of the point mass 
+
+4
+00:00:14,083 --> 00:00:16,967
+robot. 
+Now, today, I want to be a little bit 
+
+5
+00:00:16,967 --> 00:00:20,864
+more general. 
+In terms of, how do we go about doing 
+
+6
+00:00:20,864 --> 00:00:27,210
+this for, arbitrary and linear systems. 
+And again, the whole idea here is that we 
+
+7
+00:00:27,210 --> 00:00:32,892
+pick our control gains such that the 
+actual eigenvalues Of the closed loop 
+
+8
+00:00:32,892 --> 00:00:36,410
+system, becomes equal to the desired 
+eigenvalues. 
+
+9
+00:00:36,410 --> 00:00:42,053
+So, this is the whole the whole idea of 
+philosophy behind this, this approach. 
+
+10
+00:00:42,053 --> 00:00:47,318
+So, lets say that the characteristic 
+equation associated with my closed loop 
+
+11
+00:00:47,318 --> 00:00:50,762
+system. 
+So, this is the, again the determinant. 
+
+12
+00:00:50,762 --> 00:00:55,931
+Of (lambda*I-(A-BK)). 
+That's what this equation here says. 
+
+13
+00:00:55,931 --> 00:01:02,589
+Well, let's assume that if I compute this 
+I get the following expression. 
+
+14
+00:01:02,589 --> 00:01:07,471
+Well, what I now do is I pick my favorite 
+eigenvalues. 
+
+15
+00:01:07,471 --> 00:01:14,488
+What I would like and in this case the 
+lambda I's are my favorite eigenvalues. 
+
+16
+00:01:14,488 --> 00:01:20,627
+so What I have is an actual 
+characteristic equation, which is this 
+
+17
+00:01:20,627 --> 00:01:24,632
+thing. 
+And one that I would have had, had indeed 
+
+18
+00:01:24,632 --> 00:01:29,322
+the eigenvalues been equal to my favorite 
+eigenvalues. 
+
+19
+00:01:29,322 --> 00:01:33,017
+And all I do now is line up the 
+coefficients. 
+
+20
+00:01:33,017 --> 00:01:39,646
+So I take Bn-1 has to be equal to An-1. 
+Now, I'm writing An-1 as a function of K 
+
+21
+00:01:39,646 --> 00:01:43,923
+because it really is. 
+K is the control knob or the control gain 
+
+22
+00:01:43,923 --> 00:01:47,561
+that we have to solve these N equations 
+for. 
+
+23
+00:01:47,561 --> 00:01:52,864
+So this is the general procedure and it 
+seems magic, it seems so we can control 
+
+24
+00:01:52,864 --> 00:01:56,296
+anything. 
+So the first question we should ask is, 
+
+25
+00:01:56,296 --> 00:02:00,277
+is this always possible? The second 
+question is, well. 
+
+26
+00:02:00,277 --> 00:02:05,669
+Where do these the side eigenvalues come 
+from? And the third is, you know what 
+
+27
+00:02:05,669 --> 00:02:09,529
+determinants are not that fun to compute. 
+2 by 2, fine. 
+
+28
+00:02:09,529 --> 00:02:13,545
+But when we go to higher order systems, 
+it becomes a pain. 
+
+29
+00:02:13,545 --> 00:02:18,941
+Now, the first answer is, unfortunately. 
+This isn't magic, we can't always do it. 
+
+30
+00:02:18,941 --> 00:02:23,410
+So, what we need to understand is in fact 
+when we can do it and when we cannot do 
+
+31
+00:02:23,410 --> 00:02:25,978
+it. 
+the answer to the other question is, 
+
+32
+00:02:25,978 --> 00:02:30,461
+unfortunately there isn't a recipe book 
+that says here are the eigenvalues you 
+
+33
+00:02:30,461 --> 00:02:33,419
+need to use. 
+In fact, it's a little bit of an art and 
+
+34
+00:02:33,419 --> 00:02:38,262
+science, and the design choices that we 
+make ultimately boil down to The choices 
+
+35
+00:02:38,262 --> 00:02:41,736
+of eigenvalues. 
+So we have to discuss a little bit about 
+
+36
+00:02:41,736 --> 00:02:46,044
+how we pick our eigenvalues. 
+Now luckily for us, that's the answer to 
+
+37
+00:02:46,044 --> 00:02:49,794
+the third question. 
+We don't have to actually compute this. 
+
+38
+00:02:49,794 --> 00:02:54,635
+In, in math lab, we can very easily use 
+comething, something called the place 
+
+39
+00:02:54,635 --> 00:02:57,444
+command. 
+So if I have my a and b matrices and I 
+
+40
+00:02:57,444 --> 00:03:03,327
+wrote down A vector of my favorite 
+eigenvalues, then I simply run 
+
+41
+00:03:03,327 --> 00:03:10,754
+K=place(A,B,P) to compute this K matrix 
+that gives us the desired eigenvalues. 
+
+42
+00:03:10,754 --> 00:03:13,947
+Cool. 
+OKay, let's do some examples. 
+
+43
+00:03:13,947 --> 00:03:17,932
+Here is X dot is whatever X plus whatever 
+U. 
+
+44
+00:03:17,932 --> 00:03:23,846
+These are 2 arbitrary A and B matrixes. 
+Well, we're going to have to pick a K and 
+
+45
+00:03:23,846 --> 00:03:29,488
+again, K in this case has to be 1x2. 
+And the reason we see that is A is 2x2. 
+
+46
+00:03:29,488 --> 00:03:32,462
+B is 2x1. 
+That means that K has to be 1x2. 
+
+47
+00:03:32,462 --> 00:03:37,748
+Because these guys have to be the same. 
+They cancel out and what I end up with 
+
+48
+00:03:37,748 --> 00:03:40,242
+has to be of the right. 
+Dimension. 
+
+49
+00:03:40,242 --> 00:03:43,951
+So, that's why k, in this situation, has 
+to be a 1 by 2 matrix. 
+
+50
+00:03:43,951 --> 00:03:46,891
+So if I compute this, I get the following 
+matrix. 
+
+51
+00:03:46,891 --> 00:03:51,135
+Well, here is the characteristic 
+equation, or the, this determinant. 
+
+52
+00:03:51,135 --> 00:03:54,992
+this should be = to 0. 
+But we're actually not going to solve it. 
+
+53
+00:03:54,992 --> 00:03:58,658
+All we're going to do is, we're going to 
+compute this determinant. 
+
+54
+00:03:58,658 --> 00:04:02,601
+And again. 
+The way compute the determinants is this 
+
+55
+00:04:02,601 --> 00:04:08,254
+times this minus this times this. 
+And if you do that in this particular 
+
+56
+00:04:08,254 --> 00:04:14,155
+case, you get the following equation. 
+Here is one coefficient that we're 
+
+57
+00:04:14,155 --> 00:04:20,379
+going to have to mess with, and here is 
+the other coefficient that we're going to 
+
+58
+00:04:20,379 --> 00:04:22,101
+have to. 
+To mess with. 
+
+59
+00:04:22,101 --> 00:04:25,823
+Cool. 
+So, moving on, this is our characteristic 
+
+60
+00:04:25,823 --> 00:04:29,391
+equation. 
+Let's say again for the sake of argument 
+
+61
+00:04:29,391 --> 00:04:34,165
+that we want to place both our 
+eigenvalues in negative 1, then this is 
+
+62
+00:04:34,165 --> 00:04:37,704
+what we would have had, had this been 
+indeed true. 
+
+63
+00:04:37,704 --> 00:04:43,106
+So now I'm going to have to solve its. 
+These two being equal and these being 
+
+64
+00:04:43,106 --> 00:04:46,446
+equal. 
+Those are the equations that we are 
+
+65
+00:04:46,446 --> 00:04:50,648
+forced to solve. 
+So, you do that, first of all for the 
+
+66
+00:04:50,648 --> 00:04:56,803
+coefficient in front of lambda then we 
+get that, after a while, K1+K2=5 Well 
+
+67
+00:04:56,803 --> 00:05:02,227
+lets look at the coefficients in the form 
+of of lamba^0, which means no lambdas. 
+
+68
+00:05:02,227 --> 00:05:06,438
+If we do that we get k1+k2=1. 
+Hey, wait a second. 
+
+69
+00:05:06,438 --> 00:05:12,728
+This is trouble isn't it? k1+k2=5 and 
+k1+k2=1 this doesn't seem all that 
+
+70
+00:05:12,728 --> 00:05:18,550
+promising, in fact it's impossible. 
+It can't be two things at the same time. 
+
+71
+00:05:18,550 --> 00:05:22,701
+So here, all of a sudden, we failed. 
+We can't actually solve this. 
+
+72
+00:05:22,701 --> 00:05:27,630
+And, what's really at play here is a lack 
+of something called controllability. 
+
+73
+00:05:27,630 --> 00:05:32,685
+And controllability is this key term that 
+describes if we have enough Influence or 
+
+74
+00:05:32,685 --> 00:05:36,676
+control is already over our system, and 
+when I said that it is not over 
+
+75
+00:05:36,676 --> 00:05:40,340
+responsible to do power placement. 
+This is exactly what I mean. 
+
+76
+00:05:40,340 --> 00:05:44,583
+If we don't have enough control as 
+provided we can do anything. Nn fact, you 
+
+77
+00:05:44,583 --> 00:05:47,705
+can do nothing in that case, you just 
+have to hope for the best or hold your 
+
+78
+00:05:47,705 --> 00:05:51,367
+nose. 
+But we'll, we'll talk about that in a 
+
+79
+00:05:51,367 --> 00:05:55,854
+little bit late a little bit later. 
+So for now, this is what can go wrong, 
+
+80
+00:05:55,854 --> 00:06:00,005
+lack of controllability. 
+We don't know what controllability is yet 
+
+81
+00:06:00,005 --> 00:06:04,485
+but that's something to be aware of. 
+Now, let's pretend that we could do it 
+
+82
+00:06:04,485 --> 00:06:07,702
+though. 
+how do we pick the eigenvalues? Well. 
+
+83
+00:06:07,702 --> 00:06:13,610
+It's not clear, like I said. 
+But some things we should keep in mind 
+
+84
+00:06:13,610 --> 00:06:17,634
+is. 
+Well, if the eigenvalues have a non-zero 
+
+85
+00:06:17,634 --> 00:06:22,524
+imaginary part. 
+Alright, well first of all, let's say 
+
+86
+00:06:22,524 --> 00:06:28,877
+that sigma+Jomega is an eigenvalue. 
+Then there has to be another eigenvalue. 
+
+87
+00:06:28,877 --> 00:06:33,782
+In this case I call it lambda J. 
+There has to be another one that is the 
+
+88
+00:06:33,782 --> 00:06:39,534
+complex conjugate pair of this because 
+eigenvalues have to show up in conjugate 
+
+89
+00:06:39,534 --> 00:06:42,921
+complex pairs if indeed they are. 
+complex. 
+
+90
+00:06:42,921 --> 00:06:47,181
+So that's the first thing that we should 
+keep in mind, that we can't just assign 
+
+91
+00:06:47,181 --> 00:06:50,683
+an, one complex eigenvalue. 
+We have to assign two, if that's the 
+
+92
+00:06:50,683 --> 00:06:53,107
+case. 
+The other thing is, of course, we need 
+
+93
+00:06:53,107 --> 00:06:57,199
+the real part of the eigenvalues to be 
+strictly negative, because otherwise, we 
+
+94
+00:06:57,199 --> 00:07:01,667
+don't have asymptotic stability. 
+The other thing to know is that if, 
+
+95
+00:07:01,667 --> 00:07:05,437
+indeed, we keep an imaginary part around, 
+we get oscillations. 
+
+96
+00:07:05,437 --> 00:07:10,307
+So, oscillations, if that's something we 
+would like, typically we don't, but, so 
+
+97
+00:07:10,307 --> 00:07:14,337
+if you don't like oscillations the 
+eigenvalues we pick are all real. 
+
+98
+00:07:14,337 --> 00:07:18,952
+If for, for some reason wanting 
+oscillations, then we have to introduce. 
+
+99
+00:07:18,952 --> 00:07:22,307
+Imaginary parts. 
+And the last thing is that the choice of 
+
+100
+00:07:22,307 --> 00:07:26,897
+eigenvalues actually affect the rate of 
+convergence, meaning how quickly the 
+
+101
+00:07:26,897 --> 00:07:30,937
+system is stabilized. 
+And in fact the rate of convergence is 
+
+102
+00:07:30,937 --> 00:07:35,577
+dominated by the smallest eigenvalue. 
+So let's say that I've actually picked a 
+
+103
+00:07:35,577 --> 00:07:40,336
+bunch of eigenvalues here. 
+I've done poll placement, so here are my 
+
+104
+00:07:40,336 --> 00:07:44,678
+eigenvalues, my lambdas. 
+And they happen to be here, here, here, 
+
+105
+00:07:44,678 --> 00:07:49,825
+here, and here in the complex plane. 
+Notice here that here I have a complex 
+
+106
+00:07:49,825 --> 00:07:53,506
+conjugate pair. 
+Well, the eigenvalue that's closest to 
+
+107
+00:07:53,506 --> 00:07:56,626
+the imaginary axis is the smallest 
+eigenvalue. 
+
+108
+00:07:56,626 --> 00:08:01,311
+And this eigenvalue Actually dominates 
+the performance, in terms of how quickly 
+
+109
+00:08:01,311 --> 00:08:04,577
+the thing converges. 
+So what you could do, is if you make all 
+
+110
+00:08:04,577 --> 00:08:08,719
+your argmin values equal to minus a 
+million, then you have a really, really, 
+
+111
+00:08:08,719 --> 00:08:12,660
+really, really fast system. 
+The problem is that if you make them 
+
+112
+00:08:12,660 --> 00:08:17,906
+really, really really fast you get really 
+large control signals which means that 
+
+113
+00:08:17,906 --> 00:08:22,695
+any physical actuators going to 
+saturate.So, you don't wanted to go super 
+
+114
+00:08:22,695 --> 00:08:27,365
+fast because then your saturated 
+actuators so its that what we need to do 
+
+115
+00:08:27,365 --> 00:08:32,892
+is some how play around with these things 
+to balance a low bit aa how fast or how 
+
+116
+00:08:32,892 --> 00:08:38,836
+slow you want your systems to be versus 
+what size the control signal should be so 
+
+117
+00:08:38,836 --> 00:08:44,503
+let's investigate these few concepts a 
+little bit and we're going to do it in 
+
+118
+00:08:44,503 --> 00:08:48,088
+Matlab. 
+So I've picked some matrixes randomly, 
+
+119
+00:08:48,088 --> 00:08:53,757
+these are my system matrixes and then I 
+picked some poles or eigenvalues. 
+
+120
+00:08:53,757 --> 00:08:59,647
+In this case, I've picked a complex 
+conjugate pair, -0.5+-j, which you have 
+
+121
+00:08:59,647 --> 00:09:04,237
+to write as 1i in MATLAB. 
+and then, I run Pole placement. 
+
+122
+00:09:04,237 --> 00:09:08,132
+K=place (A,B,P). 
+And then, all I do is I compute the 
+
+123
+00:09:08,132 --> 00:09:12,122
+solution. 
+So instead of me chitchatting about this, 
+
+124
+00:09:12,122 --> 00:09:18,052
+why don't we switch over to It's a MATLAB 
+here, and I actually see it happen. 
+
+125
+00:09:18,052 --> 00:09:21,232
+So 
+Here is the same piece of code that you 
+
+126
+00:09:21,232 --> 00:09:24,042
+just saw. 
+this is the eigenvalues. 
+
+127
+00:09:24,042 --> 00:09:30,112
+And if you run this, we see that we have 
+a system that slowly, slowly, decays down 
+
+128
+00:09:30,112 --> 00:09:33,932
+to 0, possibly. 
+But, there are oscillations going on 
+
+129
+00:09:33,932 --> 00:09:39,247
+there, right? Clearly, because I have. 
+imaginary eigenvalues. 
+
+130
+00:09:39,247 --> 00:09:44,727
+Now, the real parts here, -0.1. 
+They're determining how quickly the 
+
+131
+00:09:44,727 --> 00:09:49,807
+system is converging. 
+So if I, instead, use this p matrix here. 
+
+132
+00:09:49,807 --> 00:09:54,567
+Same imaginary part. 
+But a larger negative, real part. 
+
+133
+00:09:54,567 --> 00:09:59,097
+Then I should get a. 
+Oscillatory response but faster and if I 
+
+134
+00:09:59,097 --> 00:10:04,112
+do that we see here what's happening. 
+This is the new system it's still 
+
+135
+00:10:04,112 --> 00:10:09,607
+oscillating but it's quicker getting down 
+to 0 which is what we would expect. 
+
+136
+00:10:09,607 --> 00:10:13,192
+Now let's get rid of the oscillations 
+altogether. 
+
+137
+00:10:13,192 --> 00:10:16,123
+So if I now pick 2 purely. 
+Real eigenvalues. 
+
+138
+00:10:16,123 --> 00:10:18,997
+And, in fact, the smallest one is 
+negative 0.5. 
+
+139
+00:10:18,997 --> 00:10:22,126
+So that's going to determine how quickly 
+we're moving. 
+
+140
+00:10:22,126 --> 00:10:25,248
+We run this, then, bam! See here. 
+No oscillations. 
+
+141
+00:10:25,248 --> 00:10:28,097
+We're decaying down to zero, quite 
+nicely. 
+
+142
+00:10:28,097 --> 00:10:31,747
+But, maybe we're thinking that this is a 
+little bit too slow. 
+
+143
+00:10:31,747 --> 00:10:34,323
+So let's pick some other eigenvalues 
+here. 
+
+144
+00:10:34,323 --> 00:10:38,872
+In fact, negative 5 and negative 4. 
+This should be dramatically quicker. 
+
+145
+00:10:38,872 --> 00:10:40,836
+And if I do that, bam. 
+I get this. 
+
+146
+00:10:40,836 --> 00:10:45,510
+Bam, very quickly down to 0, tiny bit of 
+overshoot, And then we're stabilizing. 
+
+147
+00:10:45,510 --> 00:10:49,711
+So this is how we're going to have to 
+play around a little bit with the ion 
+
+148
+00:10:49,711 --> 00:10:53,595
+values to get the system performance out 
+that we're interested in. 
+
+149
+00:10:53,595 --> 00:10:57,002
+Next time, we're going to investigate a 
+little bit more. 
+
+150
+00:10:57,002 --> 00:11:02,047
+What exactly was it that broke? When we 
+couldn't place the eigenvalues the way we 
+
+151
+00:11:02,047 --> 00:11:02,480
+wanted. 

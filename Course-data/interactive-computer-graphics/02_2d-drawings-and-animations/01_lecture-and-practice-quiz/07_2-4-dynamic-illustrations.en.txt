@@ -1,0 +1,90 @@
+Our next topic is Dynamic Illustrations. And the work we introduce here, is called sketch based dynamic illustration
+of fluid systems. And the program we want to address here, is that it is tedious to illustrate fluid
+flow. Suppose you have a engineering system or
+architecture. Or organic shapes or a liver system. There is a lot of fluid systems, and you
+may want to describe how the fluid flow in these
+kind of systems. And then you want to get these kinds of
+results. And it's very tedious to draw them
+manually. So, our idea is to use automatic flow
+simulation to automatically synthesize this kind of
+data for illustrations. So here, the simulation is not used for
+prediction, but this is used for a niche [UNKNOWN]
+illustration. So let me show you a video [BLANK_AUDIO] So this is basically a drawing system. You draw something, and the system continuously runs fluid simulation behind
+the scenes. And they add fluid flow visualizations
+automatically. So you draw something, a region. And then you draw pipes. And then as soon as you finish drawing a system, system starts flow simulation
+behind the scene. So it visualize a, a detail flow, and also
+shows the result of fluid mixtures. [BLANK_AUDIO] So this tool is very useful for explaining
+fluid phenomenons. [BLANK_AUDIO] So you can interactively edit the shape by
+deformation tools. [BLANK_AUDIO] Okay. So an, our [UNKNOWN] example is here [BLANK_AUDIO] So here we use these two for explaining
+surgical operations for a defected heart. So here is an example. So here this heart has very specific
+configuration. And not very ideal. And here ideally blue blood come from the
+body, should directly go to the lung, and then from the lung,
+fresh blood, red blood comes into the heart, and then red
+one should go through the body, however here blue blood is mixed together
+with red one. And then purple one go to the body. So, doctors will perform a surgical
+operation to fix this. However, before they that, they need to
+explain what they do to their patients, or their
+patients' parents. However, it's very difficult to do that
+with standard tools, currently, they use
+standard pen and ink. Black and white illustration to describe
+them, however, it's very difficult to understand
+it. But preparing this kind of beautiful
+illustration using computer system, is too time consuming, and more
+importantly, this kind of heart disease has different
+configuration for each patient, so it's not possible to prepare a template
+before hand. So, this kind of tool can be very useful. To explain and understand complicated flow
+phenomenon. And then let me show you how it works. So first, the operation start with connecting the
+locations, and then they will change the configuration
+here. So doctor cuts here and then connect them. So, as soon as the configuration changes, the fluid simulation changes the flow,
+prediction. [BLANK_AUDIO] So next one is the most important one. The doctor stops here, cut here, and then
+connect here. And therefore, blood suddenly changes. [BLANK_AUDIO] And finally, in closing this hole and then let blood directly go to the body, being
+red. [BLANK_AUDIO] And this kind of technique can be very
+useful for various fluid phenomena inside of your body, like
+blood circulation and others. [BLANK_AUDIO] And also this technique is, can be used
+for engineering systems. Like this one. [BLANK_AUDIO] And this is another example in [UNKNOWN]
+so you can see how cold air and le warm air mix together
+and flow. And you can test many different
+configurations. [BLANK_AUDIO] And this tool can be also used for, for explanation of pollution of rivers,
+and so. And so now let me describe the other
+region briefly. So what we use is a hybrid fluid
+simulation system. So user draws global network with local
+regions. And we apply different simulation
+[UNKNOWN] for different scale. Because single scale simulation can be
+very slow. So, for a global network simulation, we
+use simple hydraulic simulation. And therefore, individual local region, we
+use hydrodynamic simulations. And so, to use a [UNKNOWN] node inflow,
+and there forms a global network structure, hydraulics
+compute it's pipe flow and the node pressure, and then from this node
+pipe flow and node pressure, hydrodynamics computes a detailed, computes detailed
+flow, inside of this region. So this is a little bit in too involved,
+but let me describe the way. The first line is hydraulics simulation
+for a global network. Here, input is node inflow Qn, so how much
+flow comes in from the node. And then what we compute is pipe flow from
+node inflow. And hydraulics is a simplified
+computational method directly computed from compute from node inflow, and to get
+a pipe flow. And after pipe flow, we can compute a
+pressure, pressure drop at this pipe. And then from pipe pressure drop, we can compute the node pressure inside of each
+node. And you can get these all information by
+solving a linear global system once. It's very fast and it's very efficient. And after computing pressure node, and
+[UNKNOWN] pipe flow, we now switch to our regional [INAUDIBLE] so
+for each local region. We compute we divide into a lots of grid
+cells like this one, and for each grade cell, we
+compute pressure and velocity, and in order the compute
+individual pressure and velocity, we use a very standard established fluid
+equation called Navier-Stokes Equation. So this one is a little bit complicated,
+but essentially this just explains the
+relationship with fluid velocity and fluid pressure, you know, if there's a
+huge difference in fluid pressure, and it
+causes velocity, and so. And this step basically just solved this
+equation times step, each time step on this grid cells
+inside each region, to get an animation. So so original paper was published as sketch based dynamic illus, illustration
+of fluid systems. And if you want to learn more about fluid animation, I recommend you to read some
+text books. One example is Fluid Simulation for
+Computer Graphics by Bridson. And this work is an example of illustrative animation for facilitating
+understanding. And interesting early dated work is, MathPad, which takes mathematical
+[INAUDIBLE] expression, and they automatically
+generates animation, based on the mathematical
+expression. So that's, this is the end of our second week of this Interactive Computer
+Graphics course. We described dia, diagram beautification. And [INAUDIBLE] shape manipulation, and
+also dynamic illustration with a fluid
+simulation. Thank you.

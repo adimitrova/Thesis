@@ -1,0 +1,54 @@
+[MUSIC] In this sixth module, we are discussing
+electro-weak interactions and the Higgs mechanism. In this 12th video, we will encounter the particle associated
+with the Higgs field, the Higgs boson. After following this video,
+you should know how the Higgs boson is produced at the LHC,
+how we identify its production and decay, and how it is verified that it has
+the properties required for a Higgs boson. The Higgs field is a microscopic
+field that must be quantized. There is a particle which corresponds to
+the Phi field, the scalar Higgs boson H0. All its properties were known
+before it was discovered, except that we didn't know whether it
+existed, and that we didn't know its mass. In particular, its branching ratio
+into different fermion-antifermion or boson-boson pairs are fixed
+once the mass is known. The Higgs boson can be produced as
+a real particle at a hadron collider, provided its energy is sufficient. This is for
+the first time the case at the LHC. Here we show some Feynman diagrams for the 
+production of a Higgs boson from two protons, either by quarks or
+by gluons in the initial state. The existence of the Higgs boson,
+H0, has been confirmed in a spectacular way by the experiments
+ATLAS and CMS at the LHC in 2012. Higgs boson production is detected,
+among other methods, in the invariant mass distribution of
+photon pairs, or pairs of Z bosons. The latter ones decay, in turn,
+into lepton-antilepton pairs, which are then observed in the detector. A four-lepton event from the ATLAS
+experiment, with four muons in the final state, serves as the logo of this course,
+so you've seen it many times. The signal at the mass of about 125 GeV
+sticks out clearly above the background of other production mechanisms which
+do not involve Higgs bosons. On the left, you see the invariant
+mass distributions of two photons which has a peak at 125 GeV, and
+on the right you see the invariant mass of the four-lepton system that comes
+from a Higgs decay into Z-Z pairs. Indeed, we have here a second
+nice example of particle mass measurement through
+the invariant mass of its decay products. The measurements from the two experiments
+at the LHC give compatible results which can be combined. And this determines today the mass of
+the Higgs boson H0 to be 125 GeV with a precision of about 250 MeV, that is
+accurate to about two parts per thousand. This is a remarkable achievement by these
+experiments and is the fruit of the work of thousands of physicists and
+engineers during two decades. The experimental findings today
+can be summarized as follows. The H0 is clearly
+a well-established new particle. The probability that background fluctuates
+upwards to simulate the signal is of the order of one to
+several hundred million. It is indeed a boson because
+it decays into two photons. It very probably has spin zero. Its couplings to different
+particles are indeed proportional to their apparent masses, as they should. Here we show a summary of
+results from the CMS experiment. The only particle or coupling that is missing here
+is the Higgs coupling to itself, since the Higgs boson should also be
+responsible for generating its own mass. So that will come in the future. So, we are sure already at this point
+that H0 is indeed a Higgs boson. This, however, does not exclude the
+existence of other bosons of this type, which are obviously actively
+hunted by experiments at the LHC. In the next module, and Anna will go into
+more details about how to search for new phenomena in the challenging
+environment of a hadron collider. If you want to know more about the Higgs
+mechanism and its working principles, I recommend these three episodes of
+the excellent series Minute Physics from the Perimeter Institute in Waterloo,
+Canada. You will easily find them on YouTube. To conclude our discussion of the Higgs
+boson, the next video contains an interview with one of the key people
+who contributed to its discovery. [SOUND]

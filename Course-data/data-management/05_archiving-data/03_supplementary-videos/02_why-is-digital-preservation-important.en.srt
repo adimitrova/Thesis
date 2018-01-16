@@ -1,0 +1,323 @@
+1
+00:00:00,000 --> 00:00:05,109
+[MUSIC]
+
+2
+00:00:05,109 --> 00:00:08,608
+Digital preservation is important
+because it's not immediately obvious to
+
+3
+00:00:08,608 --> 00:00:10,110
+most people.
+
+4
+00:00:10,110 --> 00:00:13,760
+Researchers are busy with focus
+on the research they're doing and
+
+5
+00:00:13,760 --> 00:00:18,380
+the important content of what they're
+studying and it's up to people like me,
+
+6
+00:00:18,380 --> 00:00:24,795
+like data librarians, to remind them
+to keep the data safe in the long term.
+
+7
+00:00:25,890 --> 00:00:30,720
+And also by doing that they're making it
+available to themselves in the future.
+
+8
+00:00:30,720 --> 00:00:36,300
+Because, although it's very
+known to you at this point,
+
+9
+00:00:36,300 --> 00:00:38,910
+you'll forget the details
+about it in the future.
+
+10
+00:00:38,910 --> 00:00:42,570
+So you need to do the documentation and
+everything to be able to share it and
+
+11
+00:00:42,570 --> 00:00:44,360
+also for your own self.
+
+12
+00:00:45,450 --> 00:00:49,490
+>> I think digital preservation
+is very important.
+
+13
+00:00:49,490 --> 00:00:53,600
+I come from the scientific world,
+and in the scientific world
+
+14
+00:00:53,600 --> 00:00:58,678
+researchers build on the results
+that were published by others.
+
+15
+00:00:58,678 --> 00:01:03,370
+So, keeping these data is paramount
+because if you don't take care of
+
+16
+00:01:03,370 --> 00:01:08,740
+the adequate digital preservation of
+the data, there is no possibility for
+
+17
+00:01:08,740 --> 00:01:14,350
+later researchers to reuse these data and
+to build on these results.
+
+18
+00:01:14,350 --> 00:01:16,480
+But it's not only important for academia.
+
+19
+00:01:16,480 --> 00:01:20,820
+Also outside of academia these
+research data can be used.
+
+20
+00:01:20,820 --> 00:01:24,390
+So digital preservation should be
+at the top of all of our lists.
+
+21
+00:01:25,880 --> 00:01:29,060
+>> Well digital preservation
+is important because,
+
+22
+00:01:29,060 --> 00:01:34,030
+most of the output of research from
+the academy is now digital and
+
+23
+00:01:34,030 --> 00:01:38,120
+there isn't an analog form of that,
+in many cases.
+
+24
+00:01:38,120 --> 00:01:43,840
+So preserving that output serves
+the same function as libraries and
+
+25
+00:01:43,840 --> 00:01:46,140
+archives have in the past.
+
+26
+00:01:46,140 --> 00:01:50,060
+If we don't preserve this digital
+information it's really in danger
+
+27
+00:01:50,060 --> 00:01:51,740
+of being lost.
+
+28
+00:01:51,740 --> 00:01:54,700
+And that's a loss to the entire community.
+
+29
+00:01:54,700 --> 00:01:58,570
+And that creates a situation where
+research cannot be validated, or
+
+30
+00:01:58,570 --> 00:02:00,220
+can be reproduced.
+
+31
+00:02:00,220 --> 00:02:04,165
+And that's a serious problem for
+the entire academic endeavor.
+
+32
+00:02:05,400 --> 00:02:11,670
+>> Digital preservation as an extension
+of preservation of anything else
+
+33
+00:02:11,670 --> 00:02:18,530
+is important because it allows us
+to take resources which inspire and
+
+34
+00:02:18,530 --> 00:02:22,600
+inform to be transmitted
+through time to those who,
+
+35
+00:02:22,600 --> 00:02:25,710
+in the future,
+who'll want to better understand and
+
+36
+00:02:25,710 --> 00:02:29,840
+learn what has meaning to those
+who have gone before them.
+
+37
+00:02:29,840 --> 00:02:34,050
+So preservation is important to do this,
+both for our analog materials, but
+
+38
+00:02:34,050 --> 00:02:35,980
+also for our digital.
+
+39
+00:02:35,980 --> 00:02:42,590
+Which inherently, we cannot discern
+without that proactive effort to preserve.
+
+40
+00:02:44,260 --> 00:02:47,160
+>> Digital preservation
+is important because
+
+41
+00:02:47,160 --> 00:02:51,810
+it helps to unleash the value
+in digital objects.
+
+42
+00:02:51,810 --> 00:02:56,510
+We create a lot of digital content
+every day and some of it we save or
+
+43
+00:02:56,510 --> 00:02:59,469
+set aside for preservation purposes.
+
+44
+00:03:00,490 --> 00:03:03,880
+That value remains a potential,
+
+45
+00:03:03,880 --> 00:03:10,690
+like a latent value in these objects and
+we release when we use the objects again.
+
+46
+00:03:10,690 --> 00:03:12,550
+In order to be able to use those objects,
+
+47
+00:03:12,550 --> 00:03:14,870
+we need to be able to
+preserve them in between.
+
+48
+00:03:14,870 --> 00:03:18,230
+So preservation is a stage
+in the value chain
+
+49
+00:03:18,230 --> 00:03:22,470
+that takes the value of
+objects through time.
+
+50
+00:03:23,990 --> 00:03:28,060
+>> Digital preservation is important
+because it allows us to capture
+
+51
+00:03:28,060 --> 00:03:34,900
+the knowledge needed to apply and recreate
+the data sets that are being archived.
+
+52
+00:03:34,900 --> 00:03:40,040
+This in turn allows us to
+manage reproducible research.
+
+53
+00:03:40,040 --> 00:03:44,650
+Where a second researcher can
+reproduce the results of the original
+
+54
+00:03:44,650 --> 00:03:49,800
+researcher using the same data sets and
+the same analysis mechanism.
+
+55
+00:03:49,800 --> 00:03:53,640
+So preservation is the mechanism by
+which we capture the knowledge required
+
+56
+00:03:53,640 --> 00:03:55,405
+to do that.
+
+57
+00:03:55,405 --> 00:03:58,990
+>> It's important because our cultural
+heritage is being saved in digital formats
+
+58
+00:03:58,990 --> 00:04:05,110
+now and it used to be that history was
+saved by what didn't get thrown away.
+
+59
+00:04:05,110 --> 00:04:09,599
+And that's not a strategy that works
+anymore because if we leave our digital
+
+60
+00:04:09,599 --> 00:04:13,570
+stuff just on the ground in the hopes
+that it will manage to live for
+
+61
+00:04:13,570 --> 00:04:14,906
+100 years, it won't.
+
+62
+00:04:14,906 --> 00:04:20,316
+>> I think libraries which are drawn
+into digital preservation for
+
+63
+00:04:20,316 --> 00:04:25,725
+whatever reason, I think,
+into a great social service because
+
+64
+00:04:25,725 --> 00:04:32,852
+they are making the really available data,
+information for scholastic research.
+
+65
+00:04:32,852 --> 00:04:38,332
+So this is another actually
+helping the society to evolve and
+
+66
+00:04:38,332 --> 00:04:43,275
+also grow from the idea of
+scholarly information which
+
+67
+00:04:43,275 --> 00:04:47,155
+otherwise would not have been available.
+
+68
+00:04:47,155 --> 00:04:56,979
+[MUSIC]

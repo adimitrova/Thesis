@@ -1,0 +1,121 @@
+The outcome of the last handful of 
+lectures was that we can really use a layered architecture to make our robots 
+act like a simpler system. Like x dot = u, in our case. 
+And they key idea was to plan using the simple dynamics. 
+And then track using some clever controller. 
+And what we saw last time was we could use a PID regulator, for instance for, 
+controlling the heading of the robot, and then simply set the velocity of the robot 
+equal to the magnitude of the planned velocity, u. 
+Well, today, I want to discuss another twist to this theme. 
+In fact, I want to be even more clever. And there is a particularly eloquent and 
+cute way you can think about unicycles. And in general I'm not a big fan of 
+clever tricks for the sake of clever tricks, but because differential drive 
+mobile robots are so common. And we know that unicycles model them 
+well, then this trick becomes more than just a piece of mathematical curiosity, 
+becomes an effective way of thinking about a large, a large and rich class of 
+mobile robots. So, instead of doing tracking, we're 
+going to transform the unicycle dynamics. So recall that we have the position xy, 
+we have the heading phi, and we have the dynamics as seen here. 
+Well, typically, what we've seen so far is, we want the robot not to slam into 
+things, we want the robot to end up on top of goal points we want the robot to 
+folow walls. We don't particularly care which way it's 
+pointing, so the first thing we're going to do is say, you know what let's just 
+pretend that we don't worry about orientation whatsoever. 
+Well, we still have a rather awkward looking nonlinear differential equation 
+but let, now, pick another point. Let's not pick x, y, which as you 
+remember, was really the point right in between the wheels of the 
+differential-drive mobile robot. What if we picked another point, instead? 
+Let's pick this point. The red point here. 
+And let's say, that the distance between, the red point and the black point. 
+That's, that's some distance l, where l is some small number. 
+What would happen if we looked at this new point, instead? Well, let's place the 
+new point at x tilde y tilde The next tilde is simply x + l cosine phi. 
+Simple geometry. And y tilde is y + l sine phi. 
+Where, again, l is the distance removing our point along the heading of, of the 
+robot. Well, let's see what the dynamics of this 
+new point. The tilde point actually looks like. 
+Well, this is our old dynamics this how X and Y and phata actually behaves. 
+This is our new point and now, what we need to do is put dots over the tildes to 
+see. What do the time derivatives actually 
+look like? Well, it's not so complicated. X till the dot, well, it's x dot + the 
+time derivative of this thing, and, the time derivative of cosine phi, and 
+remember phi is a function of t, if I take ddt of this thing, then. 
+What I get, is, I get - phi dot * sin phi. 
+Well, that's what we have here, x tilde dot, is x dot - l phi dot sin phi, and 
+similarly for y, tilde dot. Alright, this still doesn't seem all that 
+helpful, to be completely honest, so lets simplify this a little bit. 
+Well, first of all, I know what x dot is. It's this thing here, so instead of that, 
+I'm just plugging in v cosine phi. I also know what phi dot is. 
+It's, it's omega. So, now I end up with a slightly, less 
+scary-looking expression. And, then we do the same thing for y 
+tilde dot. Well okay, where does this lead us? Well, 
+let's assume for a second that we can control this new point directly. 
+That this new point is indeed, the point that we before have called x dot = to u, 
+as a way of generating reference velocities. 
+Let's assume that we can actually immediately control this new point. 
+What would that tell us? Well, x tilde dot as you recall, was given by this 
+mouthful of an expression. Well, let's set this equal to u1 which is 
+our desired velocity in the x direction. And similarly, we set y tilde dot = u2. 
+Now, all we need to do at least, well I can say all we need to do, I don't know 
+if we can do it. But, all we would like to do is actually 
+solve this equation with respect to V and omega. 
+Because, if we did that, we would relate the actual velocities of the unicycle to 
+these u1 and u2 velocities, which are The planned velocities. 
+So let's see if we can do that. Well the first thing we do is we pull out 
+the cosine and the sine terms. So we get that cosine * v - sine * l 
+omega well that's that thing, that's equal to u1. 
+And similarly for the y tilde dot, or the u2 dot, sorry, the u2 equation. 
+I don't know, this equation still looks a little hairy but, as you hopefully 
+recall, this matrix right here is a rather nice matrix. 
+It is, in fact, a rotation matrix. All it's doing is it's taking a vector 
+and rotating it theta degrees. Actually, it's rotating it phi degrees, 
+but it is a very well behaved and well understood matrix, 
+okay? I don't particularly like l there, 
+because l is not part of what I would like. 
+I would like v and omega and, no l. So, what I can do, is I can rewrite this 
+thing as, a matrix, a diagonal matrix, with one on the first diagonal, and l on 
+the second diagonal, simply times v, and omega. 
+And if I do that, I get the following expression. 
+Rotation matrix phi, sorry, yeah, phi, * this matrix, v omega. 
+Well, these are all invertable. What is the inverse of the rotation 
+matrix? Well, the rotation matrix rotates something phi degrees. 
+Well, the inverse would be to rotate it back, right? Then you're back where you 
+started. That's -5. 
+So, R inverse phi always exists and it corresponds to rotating it back five 
+degrees. So, we can invert this matrix easily. 
+Well, this is a diagonal matrix, and the inverse of this thing is simply the 
+inverse of the diagonal, 1 / 1 00 1 / l. So the inverse of this thing is also 
+trivial. That means that I can actually solve 
+directly for V and omega, no problem. No questions asked, no tracking, no 
+approximation, just bam, I get the right velocities out. 
+So if I have my low level plan producing U1 and U2, then I can transform that into 
+V and omega directly. And this seems almost too good to be 
+true, and it is too good to be true, because remember We're actually not 
+making x y behave perfectly, we're making this new point that we call x tilde y 
+tilde, we're making that point behave perfectly. 
+And then we have l, that tells us how far away we are, and by making l small, we're 
+getting closer to x and y, so you practice. 
+You pick l tiny and then you go to work. So what does this mean, it means that 
+before we had a planner we used our complicated navigation algorithm to spid 
+out u1 and u2 all right and then we had a tracker and in our case we use the PID 
+tracker for the heading and simply set the velocity equal to the magnitude of u 
+and from that we got v and omega out. Well now, we don't have to deal with 
+trackers. We've actually replaced second part with 
+a transformation of the unicycle where we're simply saying that V and omega, or 
+these 2 matrices * u1, u2. And again, these matrices are, not 
+particularly complicated to compute. This, is simply the rotation matrix and 
+phi of course we have. This is one, easy to compute, it's just 
+one. And ;; is something that we decide, so 
+what we put here, this is 1 / l, l should be small so 1 / l should be some large 
+number, right? And the larger this number becomes the closer the tilde the point 
+and the actual point approach each other. I should put out a little warning though 
+that if you make this number too large, then you get a behavior where the robot 
+starts turning quite a bit, because this going to hit omega directly. 
+Okay but, this gives us a direct transformation, instead of a tracker, to 
+produce the desired velocities. And the reason why I like this trick, and 
+why this trick shouldn't be thought of as simply, an interesting little curiosity 
+because it is kind of interesting is that so many robots are differential drive 
+robots, and this transformation applies to all of them, because all of them can 
+be mapped onto the unicycle dynamics. So, that takes care of, how do we 
+actually go from low-level plans. To executable, desired velocities for 
+differential drive mobile robots.

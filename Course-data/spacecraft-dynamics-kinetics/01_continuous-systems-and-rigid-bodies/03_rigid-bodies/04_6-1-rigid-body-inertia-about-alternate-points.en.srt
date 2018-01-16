@@ -1,0 +1,282 @@
+1
+00:00:05,687 --> 00:00:07,280
+So now there's two aspects.
+
+2
+00:00:08,540 --> 00:00:12,420
+Either we need to have a different point
+about which we're taking moments or
+
+3
+00:00:12,420 --> 00:00:14,520
+we're taking a different corner frame.
+
+4
+00:00:14,520 --> 00:00:16,600
+And hopefully you've
+seen some of this before.
+
+5
+00:00:16,600 --> 00:00:18,330
+Just going to go through
+this pretty quickly.
+
+6
+00:00:18,330 --> 00:00:21,440
+The book derives this,
+if you want to look at this steps, but
+
+7
+00:00:21,440 --> 00:00:22,770
+I'm just going to give you the answer.
+
+8
+00:00:22,770 --> 00:00:26,950
+So if you have the inertia tensor
+about the center of mass and
+
+9
+00:00:26,950 --> 00:00:30,160
+that's typically what a statics
+mechanics book gives you.
+
+10
+00:00:30,160 --> 00:00:35,059
+And now you have this block, or
+this cone, or this panel, right.
+
+11
+00:00:35,059 --> 00:00:38,428
+And then it gives you X, Y, and
+Z coordinates, and assumes that things
+
+12
+00:00:38,428 --> 00:00:42,670
+are lined up with symmetry, it gives you
+this answer, basically, in that form.
+
+13
+00:00:42,670 --> 00:00:47,860
+For some reason this panel,
+you don't need the inertia, the moments.
+
+14
+00:00:47,860 --> 00:00:51,120
+About its center of mass, but
+it's going to be attached to a spacecraft.
+
+15
+00:00:51,120 --> 00:00:52,950
+The arm is the panel.
+
+16
+00:00:52,950 --> 00:00:54,590
+The panel center of mass is here, but
+
+17
+00:00:54,590 --> 00:00:57,320
+the spacecraft center of mass
+might be somewhere else.
+
+18
+00:00:57,320 --> 00:00:59,510
+How do I get these moments about here?
+
+19
+00:00:59,510 --> 00:01:01,800
+You could redo all these integrals.
+
+20
+00:01:01,800 --> 00:01:06,698
+Or this parallel axis theorem basically
+allows you to take moments about other
+
+21
+00:01:06,698 --> 00:01:07,298
+points.
+
+22
+00:01:07,298 --> 00:01:10,581
+And the way this is written is you need
+the inertia tenser about the center of
+
+23
+00:01:10,581 --> 00:01:13,658
+mass, that's always going to be
+the smallest inertia you'll have,
+
+24
+00:01:13,658 --> 00:01:15,670
+any further away and
+it's going to get bigger.
+
+25
+00:01:15,670 --> 00:01:18,750
+And you get mass times distance squared,
+that's probably how you remember
+
+26
+00:01:18,750 --> 00:01:21,950
+parallaxes theorem for
+fixed axis rotation.
+
+27
+00:01:21,950 --> 00:01:23,600
+If this is the inertia about center and
+
+28
+00:01:23,600 --> 00:01:26,540
+all of a sudden I'm spinning
+about the end-point.
+
+29
+00:01:26,540 --> 00:01:31,910
+You would have that distance squared times
+mass that you have to add to the inertia.
+
+30
+00:01:31,910 --> 00:01:34,010
+This is a 3D version of that.
+
+31
+00:01:34,010 --> 00:01:37,600
+Total mass,
+I need to know what is that shift.
+
+32
+00:01:37,600 --> 00:01:39,280
+So I'm taking moments about O.
+
+33
+00:01:39,280 --> 00:01:41,940
+There's a vector going from
+O to the center of mass.
+
+34
+00:01:41,940 --> 00:01:43,830
+And I'm calling that one RC again.
+
+35
+00:01:43,830 --> 00:01:46,170
+And I've got a tilde form
+to avoid a minus sign so
+
+36
+00:01:46,170 --> 00:01:50,600
+it's plus mass times distance squared
+essentially but in a tilde formulation.
+
+37
+00:01:51,800 --> 00:01:54,640
+So that's how we can,
+we don't have to reevaluate
+
+38
+00:01:54,640 --> 00:01:57,070
+the inertia tenser every time we
+have a different moment point.
+
+39
+00:01:57,070 --> 00:01:58,250
+You just use this theorem.
+
+40
+00:01:58,250 --> 00:02:00,820
+Here's the one subtlety
+people often trip over.
+
+41
+00:02:00,820 --> 00:02:05,140
+In here again, we mention these tensers
+when you numerically value a three pathway
+
+42
+00:02:05,140 --> 00:02:06,210
+matrices.
+
+43
+00:02:06,210 --> 00:02:07,990
+You have to pick a coordinate frame.
+
+44
+00:02:07,990 --> 00:02:10,940
+Make sure you're adding these things
+up in the same coordinate frame.
+
+45
+00:02:10,940 --> 00:02:12,510
+That includes this.
+
+46
+00:02:12,510 --> 00:02:15,450
+So these RC tildes better
+be broken down in the same
+
+47
+00:02:15,450 --> 00:02:17,440
+N frame if this is given in the N frame.
+
+48
+00:02:17,440 --> 00:02:22,440
+Or if this is given in the B frame,
+you have to write RC in the B frame.
+
+49
+00:02:22,440 --> 00:02:24,220
+RC's often given in the other frame.
+
+50
+00:02:24,220 --> 00:02:27,980
+You have a, your cube set,
+it goes on to the space station.
+
+51
+00:02:27,980 --> 00:02:31,850
+You probably have your cube set inertia
+about at the center of mass but
+
+52
+00:02:31,850 --> 00:02:35,260
+then it's in the space, and
+that's in the cube set frame.
+
+53
+00:02:35,260 --> 00:02:38,170
+But where, it is in the space station its
+typically expressed to you in a space
+
+54
+00:02:38,170 --> 00:02:39,190
+station coordinate frame.
+
+55
+00:02:39,190 --> 00:02:42,130
+All right, relative to the space station
+you put that cube set at this launch
+
+56
+00:02:42,130 --> 00:02:43,410
+location.
+
+57
+00:02:43,410 --> 00:02:47,690
+Well, then you have to of course
+use a DCM to map vectors from
+
+58
+00:02:47,690 --> 00:02:50,970
+a space station frame to body
+frame before you apply this stuff.
+
+59
+00:02:50,970 --> 00:02:53,100
+That's the one step I often see missed.
+
+60
+00:02:53,100 --> 00:02:56,690
+Right, so just make sure if you do this
+math everything's taken with respect to
+
+61
+00:02:56,690 --> 00:02:57,452
+the same frame.

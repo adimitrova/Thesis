@@ -1,0 +1,85 @@
+[MUSIC] In this module, we discuss searches for new phenomena beyond the known ones
+described by the standard model. In this video,
+we will discuss searches for tails in characteristic
+event distributions. This type of searches are, for example, typically used in searches for
+supersymmetry. After watching this video, you will know, how we typically search for
+supersymmetry in hadron colliders. What is the main challenge of researches in the BC
+proton-proton collision environment. And, where we stand in our search for
+supersymmetry and new physics in general using
+the ATLAS experiment as an example. We are typically searching for new physics
+looking for bumps on a steeply falling spectrum or looking for enhanced tails in
+the distribution of a relevant quantity. We already talked in the previous
+video about bump searches using the heavy Z boson as an example. While this type of searches
+is very intuitive and convincing in case of a positive result, such bumps are not easy to identify in
+the case of supersymmetric particles. Supersymmetric particles decay in
+cascades, generating long decay chains which make it difficult to
+identify a resonant signature. Given the large multiplicity and
+variety of particles in the final state, we are typically looking for an
+enhancement in the tail of a distribution. Relevant distributions can be related
+to the multiplicity of a specific type of object, for example jets, or
+to missing transport momentum which in many variants of supersymmetry is
+enhanced by the emission of neutralinos. These are the lightest supersymmetric
+particles, neutral and weakly interacting, escaping
+the detector just like neutrinos do. In a SUSY search, we are therefore looking for signals that way where a relevant quantity
+can be the missing transverse momentum. The standard model backgrounds,
+given the large number and variety of objects involved in these
+searches, are very complicated to estimate. For background determination, we are using data-driven methods combined
+with simulation-based techniques. We use standard model processes with
+similar characteristics to verify that the detector response to an assumed
+signal properly simulated is, indeed, as expected. In this type of searches, the user of multivaried discriminance
+is not uncommon in attempts to achieve a more powerful discrimination of
+the signal with respect to the background. To increase sensitivity in models that
+involve large multiplicity of b quarks in the final state like
+the one shown on this page, we reconstruct jets
+originating from a b quark. We use the knowledge that
+hadrons containing b quarks travel a short distance inside
+the detector before decaying. Stable hadrons, on the contrary, come
+directly from the proton-proton vertex. We also reconstruct top quarks from their
+decays using their kinematic properties. The top quark decays to a b quark and
+a W boson before forming a hadron and
+with a branching ratio close to 100%. The W boson decays most often to a quark pair. When the top quark has a large momentum, its decay products are more collimated,
+as shown in this picture. At high top quark momenta, some of the jets cannot
+be disentangled from each other. It is therefore common to define
+wider jets, called fat jets, which capture the products of the decay
+of a high momentum top quark. We can therefore require, for example, the presence of multiple fat
+jets in collision events, a requirement that can improve
+the signal to background discrimination compared to an event selection that
+does not include such requirements. You can see in these figures examples
+of how final distributions look like. The filled areas show the standard
+model prediction while the dashed line shows how supersymmetry
+would manifest itself. The black points show
+the observed distributions which agree very well with
+the standard model prediction. What is shown here where in fact,
+two signal regions with the largest excess on the left and largest deficit on
+the right of a specific search. The agreement with the standard model
+predictions is usually even better than what is demonstrated in
+these examples. Getting tails of a distribution right in hadron collider
+data is a very significant challenge. Many experimental factors can
+alter the expected distributions, therefore, careful study goes to
+distributions with similar properties but coming from well-known processes. This ensures an excellent
+understanding of those factors and the associated systematic uncertainties. One of the most significant challenges
+comes from what we call pile-up. At the LHC,
+protons don't collide individually but in bunches of hundreds
+of billions of protons. This results in multiple
+collisions in a bunch crossing leading to several low q^2 reactions. Distinguishing the hard scattering process
+from the rest and understanding how pile-up affects the distribution of
+interest are both very difficult tasks. In the hadron colliders, we have achieved
+a significant level of understanding, having thoroughly studied
+the LHC data collected so far. Having looked at a very broad spectrum
+of signatures, we have not yet found any significant excesses
+that could hint to new physics. In lack of excesses,
+we put limits to the theories and models that have motivated our searches. That way, we can obtain a global view
+of where we stand with our searches and ask theorists about their advice on which
+direction to take in our future searches. The figures in this slide
+give the current picture for all ATLAS searches for
+supersymmetry and other new phenomenon. They are all expressed as lower
+limits on the mass scale that characterizes the process. You can see we are close to
+excluding supersymmetric particles up to 2 TeV in mass. Despite the fact that supersymmetry and
+other theories beyond the Standard Model remain elusive so far, the open
+questions of the Standard Model are so pressing that it is certain
+there is something beyond. With the increasing amount of
+LHC data that is available, we are on the right track
+to find what that is. We are faced with a unique chance to
+make a unique discovery at the LHC. And history has taught us,
+it may be unexpected. At the LHC experiments,
+we are looking forward to that. [MUSIC]

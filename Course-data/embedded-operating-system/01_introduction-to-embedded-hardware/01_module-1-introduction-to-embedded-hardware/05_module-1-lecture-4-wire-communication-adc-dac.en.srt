@@ -1,0 +1,715 @@
+1
+00:00:00,032 --> 00:00:06,160
+[MUSIC]
+
+2
+00:00:06,160 --> 00:00:08,710
+Hello, and welcome back to the course.
+
+3
+00:00:08,710 --> 00:00:12,320
+In this video, we are going to
+talk about wired communication and
+
+4
+00:00:12,320 --> 00:00:15,920
+we will also cover ADCs and DACs.
+
+5
+00:00:15,920 --> 00:00:20,863
+Since these units convert analogue
+values that are fundamental in
+
+6
+00:00:20,863 --> 00:00:24,050
+our world to a digital form and
+vice versa.
+
+7
+00:00:24,050 --> 00:00:27,740
+Let's start with wired communication.
+
+8
+00:00:27,740 --> 00:00:29,860
+The definition is quite simple.
+
+9
+00:00:29,860 --> 00:00:31,320
+And as you might guess,
+
+10
+00:00:31,320 --> 00:00:35,245
+wired communication is
+the transmission of data over wires.
+
+11
+00:00:35,245 --> 00:00:37,160
+Wire-based communication.
+
+12
+00:00:38,290 --> 00:00:41,870
+Communication, regardless
+whether it is wired or
+
+13
+00:00:41,870 --> 00:00:44,379
+wireless, is guided by certain rules.
+
+14
+00:00:45,400 --> 00:00:48,860
+The set of such rules is called
+a communication protocol.
+
+15
+00:00:50,010 --> 00:00:53,760
+Two devices can communicate with each
+other if they use the same protocol.
+
+16
+00:00:54,880 --> 00:01:00,100
+The analogy that you can think of is two
+people who try to talk to each other.
+
+17
+00:01:00,100 --> 00:01:03,440
+They successfully understand each
+other if they use the same language.
+
+18
+00:01:04,590 --> 00:01:06,750
+There are many communication protocols.
+
+19
+00:01:06,750 --> 00:01:11,460
+Some of them are parallel, which
+enables high data rate communication.
+
+20
+00:01:11,460 --> 00:01:14,410
+And some of them are serial like USB.
+
+21
+00:01:14,410 --> 00:01:15,980
+Which is resource efficient.
+
+22
+00:01:15,980 --> 00:01:19,040
+If we think of the number of
+physical connections needed
+
+23
+00:01:19,040 --> 00:01:20,369
+to enable the communication.
+
+24
+00:01:21,610 --> 00:01:26,020
+For embedded systems where we deal
+with resource constrained devices,
+
+25
+00:01:26,020 --> 00:01:30,490
+communication is mostly
+done via serial protocols.
+
+26
+00:01:30,490 --> 00:01:34,866
+Such as USB, SPI, UART, and others.
+
+27
+00:01:34,866 --> 00:01:40,330
+Apart from serial-parallel
+type of classification,
+
+28
+00:01:40,330 --> 00:01:44,550
+the communication protocols can
+be synchronous or asynchronous.
+
+29
+00:01:44,550 --> 00:01:46,950
+Synchronous communication protocols
+
+30
+00:01:46,950 --> 00:01:50,610
+utilize common clock between
+the receiver and the transmitter.
+
+31
+00:01:51,890 --> 00:01:56,730
+The upside is higher throughput since
+no synchronization data is needed.
+
+32
+00:01:58,080 --> 00:02:01,920
+Asynchronous protocols do
+not use a common clock.
+
+33
+00:02:01,920 --> 00:02:04,820
+Instead, synchronization
+between the receiver and
+
+34
+00:02:04,820 --> 00:02:09,180
+the transmitter is done
+using synchronization data.
+
+35
+00:02:09,180 --> 00:02:17,610
+For example, start and stop bits in RS-232
+protocol are for synchronization purposes.
+
+36
+00:02:17,610 --> 00:02:20,820
+A good analogy might be
+two speaking people.
+
+37
+00:02:20,820 --> 00:02:26,830
+The listener starts listening attentively
+only when the speaker starts speaking.
+
+38
+00:02:26,830 --> 00:02:32,110
+In this case, the first two words of
+the speaker are for synchronization.
+
+39
+00:02:32,110 --> 00:02:35,700
+They make the listener start
+receiving the verbal information.
+
+40
+00:02:36,830 --> 00:02:41,840
+The upside of asynchronous communication
+protocols is that there is no need
+
+41
+00:02:41,840 --> 00:02:45,170
+of an additional wire or a common clock.
+
+42
+00:02:45,170 --> 00:02:48,870
+However, such communication
+protocols are slower
+
+43
+00:02:48,870 --> 00:02:53,270
+because some part of the transmitted
+data is used for synchronization.
+
+44
+00:02:55,460 --> 00:02:57,940
+Full duplex, half duplex.
+
+45
+00:02:57,940 --> 00:03:02,020
+You might have come across such words
+if you have read about communication
+
+46
+00:03:02,020 --> 00:03:03,380
+protocols.
+
+47
+00:03:03,380 --> 00:03:05,110
+What do they mean?
+
+48
+00:03:05,110 --> 00:03:09,450
+Full duplex communication is
+a bidirectional communication
+
+49
+00:03:09,450 --> 00:03:12,660
+that can operate in both
+ways at the same time.
+
+50
+00:03:14,010 --> 00:03:18,370
+A mobile phone is an example
+of full duplex communication.
+
+51
+00:03:18,370 --> 00:03:23,090
+You and your interlocutor
+can speak at the same time.
+
+52
+00:03:23,090 --> 00:03:27,400
+You may not understand anything but
+still you will hear your partner and
+
+53
+00:03:27,400 --> 00:03:28,920
+your partner will hear you.
+
+54
+00:03:30,070 --> 00:03:35,320
+However, half duplex communication
+allows only one side to talk.
+
+55
+00:03:35,320 --> 00:03:37,260
+It is either you or your partner.
+
+56
+00:03:38,340 --> 00:03:42,290
+A good example of these type of
+communications are walkie-talkies.
+
+57
+00:03:43,800 --> 00:03:49,689
+For instance, USB versions 1 and
+2 are half duplex prodigals,
+
+58
+00:03:49,689 --> 00:03:54,600
+whereas USB 3 has two
+additional pairs of wires.
+
+59
+00:03:54,600 --> 00:03:57,809
+And this enables full
+duplex data transfers.
+
+60
+00:03:59,680 --> 00:04:05,610
+Now that we mentioned USB, let's give more
+details about this communication protocol.
+
+61
+00:04:05,610 --> 00:04:10,190
+USB stands for universal serial bus.
+
+62
+00:04:10,190 --> 00:04:14,560
+In the beginning,
+USB was using only four wires.
+
+63
+00:04:14,560 --> 00:04:18,510
+As the protocol evolved,
+some additional wires were added.
+
+64
+00:04:18,510 --> 00:04:23,740
+For example, USB 3.0,
+apart from the mentioned four wires,
+
+65
+00:04:23,740 --> 00:04:26,040
+uses two additional twisted pairs.
+
+66
+00:04:27,350 --> 00:04:28,580
+As mentioned before,
+
+67
+00:04:28,580 --> 00:04:32,970
+these additional wires introduce
+full duplex capabilities to USB.
+
+68
+00:04:34,630 --> 00:04:38,950
+Data rates also vary
+quite significantly if we
+
+69
+00:04:38,950 --> 00:04:43,493
+compare the initial versions
+of the protocol and
+
+70
+00:04:43,493 --> 00:04:48,607
+the later ones,
+from 1.5 Mbit/s to 10 Gbit/s.
+
+71
+00:04:48,607 --> 00:04:53,410
+The structure of a USB
+network is a tire star.
+
+72
+00:04:53,410 --> 00:04:57,890
+It consists of one or more USB devices.
+
+73
+00:04:57,890 --> 00:05:01,480
+One or more hubs and host or controller.
+
+74
+00:05:02,610 --> 00:05:05,500
+Only one host exists in the network.
+
+75
+00:05:06,800 --> 00:05:12,728
+The hubs are the nodes to which
+devices and other hubs can connect to.
+
+76
+00:05:12,728 --> 00:05:18,390
+The host polls the hubs for
+changes in the network.
+
+77
+00:05:18,390 --> 00:05:22,590
+Thus, if a new device
+appears in the network, or
+
+78
+00:05:22,590 --> 00:05:27,590
+if the device is unplugged,
+hubs will notify the host about that.
+
+79
+00:05:30,520 --> 00:05:36,620
+All devices that can use USB
+are grouped into several categories.
+
+80
+00:05:36,620 --> 00:05:41,650
+Each category represents the functionality
+that the device can provide to the host.
+
+81
+00:05:43,470 --> 00:05:46,730
+So what is a structure
+of the protocol itself?
+
+82
+00:05:47,960 --> 00:05:50,800
+Data is sent using transfers.
+
+83
+00:05:51,830 --> 00:05:55,020
+Transfers consist of packets.
+
+84
+00:05:55,020 --> 00:06:00,220
+There are four main types of
+transfers in USB protocol, control,
+
+85
+00:06:00,220 --> 00:06:03,180
+bulk, isochronous, and
+an interrupt transfer.
+
+86
+00:06:05,220 --> 00:06:12,200
+Each packet consists of bytes, and
+each byte serves for a certain purpose.
+
+87
+00:06:12,200 --> 00:06:17,334
+For example, sync byte is used for
+synchronization.
+
+88
+00:06:17,334 --> 00:06:21,492
+And PID byte contains the packet id.
+
+89
+00:06:21,492 --> 00:06:25,786
+The packets can also
+be of different types,
+
+90
+00:06:25,786 --> 00:06:30,555
+token, data, handshaking, or a descriptor.
+
+91
+00:06:30,555 --> 00:06:35,839
+SPI is another communication protocol
+widely used in embedded systems.
+
+92
+00:06:36,840 --> 00:06:41,366
+SPI stands for
+Serial Peripheral Interface and
+
+93
+00:06:41,366 --> 00:06:44,770
+uses four wires for its operation.
+
+94
+00:06:44,770 --> 00:06:51,273
+The protocol can operate with one
+master and one or several slaves.
+
+95
+00:06:51,273 --> 00:06:57,090
+The data is being shifted bit by bit
+from the master to the the slave.
+
+96
+00:06:57,090 --> 00:07:00,240
+As well as from the slave to the master.
+
+97
+00:07:00,240 --> 00:07:05,320
+Shift registers are connected
+into a circle in a way that
+
+98
+00:07:05,320 --> 00:07:11,080
+when a bit is shifted in a slave register,
+a bit from the other
+
+99
+00:07:11,080 --> 00:07:16,930
+end of the register is shifted out and
+shifted into the master's register.
+
+100
+00:07:18,450 --> 00:07:23,540
+There is also a possibility to connect
+slave devices in a daisy chain manner.
+
+101
+00:07:24,590 --> 00:07:29,480
+In this case, the shift register of,
+let's say, slave 0,
+
+102
+00:07:29,480 --> 00:07:32,855
+will be connected with
+the shift register of slave 1.
+
+103
+00:07:35,730 --> 00:07:41,010
+In order to make a processing element
+deal with the outer physical world,
+
+104
+00:07:41,010 --> 00:07:46,220
+the physical values which represent,
+for example, the amount of light or
+
+105
+00:07:46,220 --> 00:07:51,690
+pressure, temperature, or
+voltage should be converted to numbers.
+
+106
+00:07:51,690 --> 00:07:56,610
+And all the way around, they should
+be a possibility to convert a number
+
+107
+00:07:56,610 --> 00:08:00,110
+into a physical value,
+let's say a voltage level.
+
+108
+00:08:01,310 --> 00:08:06,090
+Luckily there are special kinds of
+converters which can solve this problem.
+
+109
+00:08:07,320 --> 00:08:13,460
+They are analog to digital converters and
+digital to analog converters.
+
+110
+00:08:13,460 --> 00:08:18,720
+Their main objective is to convert
+voltage levels to a number,
+
+111
+00:08:18,720 --> 00:08:21,270
+and back from a number to a voltage level.
+
+112
+00:08:22,380 --> 00:08:26,624
+Among the large variety of parameters
+which describe these units,
+
+113
+00:08:26,624 --> 00:08:28,520
+let's emphasize some of them.
+
+114
+00:08:29,820 --> 00:08:35,860
+Resolution is the minimal deviation of the
+voltage that can be detected by an ADC.
+
+115
+00:08:36,940 --> 00:08:39,720
+Or, if we reformulate the definition for
+
+116
+00:08:39,720 --> 00:08:44,550
+a DAC, the resolution of the DAC
+is the minimal difference
+
+117
+00:08:44,550 --> 00:08:48,820
+of an input number that yet
+leads to a different voltage level.
+
+118
+00:08:50,080 --> 00:08:54,010
+The resolution is the quantity
+of digits in a number.
+
+119
+00:08:55,050 --> 00:08:59,170
+Which is the result of
+a conversion from an ADC or
+
+120
+00:08:59,170 --> 00:09:02,380
+the initial value of a conversion for
+a DAC.
+
+121
+00:09:03,500 --> 00:09:07,650
+Thus, if we have 8-bit resolution, ADC,
+
+122
+00:09:07,650 --> 00:09:13,232
+that means that the result
+can take 256 possible values.
+
+123
+00:09:13,232 --> 00:09:18,944
+Other parameters are the conversion
+rate which defines the number
+
+124
+00:09:18,944 --> 00:09:23,840
+of conversions that the ADC or
+DAC can make in one second.
+
+125
+00:09:23,840 --> 00:09:28,460
+And the conversion time which specifies
+time needed for a single conversion.
+
+126
+00:09:30,200 --> 00:09:32,960
+How does the conversion actually happen?
+
+127
+00:09:32,960 --> 00:09:34,660
+There are several methods and
+
+128
+00:09:34,660 --> 00:09:38,790
+one of them I will elaborate on,
+is successive approximation.
+
+129
+00:09:40,380 --> 00:09:45,710
+An ADC which exploits this
+method has a DAC inside.
+
+130
+00:09:45,710 --> 00:09:48,440
+It works using binary search.
+
+131
+00:09:48,440 --> 00:09:53,310
+Initially, we apply an input
+voltage level to the ADC.
+
+132
+00:09:53,310 --> 00:09:57,695
+And we set the most significant
+bit of the resulting number to 1.
+
+133
+00:09:59,050 --> 00:10:02,880
+Then this number is converted
+by the DAC to voltage.
+
+134
+00:10:04,090 --> 00:10:09,337
+If the obtained voltage is
+higher than the input voltage,
+
+135
+00:10:09,337 --> 00:10:15,665
+then the most significant bit stays 1,
+or else it should be set to 0.
+
+136
+00:10:15,665 --> 00:10:22,398
+Then we shift to the next bit, set it
+to 1, convert the number to a voltage,
+
+137
+00:10:22,398 --> 00:10:27,150
+compare the resulting
+voltage to the input voltage.
+
+138
+00:10:27,150 --> 00:10:31,740
+And if the resulting voltage is
+higher than the input voltage,
+
+139
+00:10:31,740 --> 00:10:33,590
+then the bit remains 1.
+
+140
+00:10:33,590 --> 00:10:35,595
+Otherwise, it resets to 0.
+
+141
+00:10:37,090 --> 00:10:41,770
+Thus, we go through each bit
+until we obtain the final number.
+
+142
+00:10:44,430 --> 00:10:49,260
+For DAC, one of the methods is
+called pulse-width modulator.
+
+143
+00:10:50,550 --> 00:10:55,360
+The input number defines
+a Duty cycle/Period
+
+144
+00:10:55,360 --> 00:10:57,790
+ratio of the generated pulse signal.
+
+145
+00:10:59,210 --> 00:11:04,220
+The generated signal is fed
+to a low-pass filter, and
+
+146
+00:11:04,220 --> 00:11:07,320
+at the output,
+we have a constant voltage level.
+
+147
+00:11:08,750 --> 00:11:14,200
+ADCs and DACs can be either
+part of bigger divisors,
+
+148
+00:11:14,200 --> 00:11:20,140
+for example, microcontrollers, or
+they can work as a stand alone unit.
+
+149
+00:11:20,140 --> 00:11:24,926
+Particles, we also explain how
+analog to digital conversion and
+
+150
+00:11:24,926 --> 00:11:27,631
+digital to analog conversion work.
+
+151
+00:11:27,631 --> 00:11:30,994
+Thanks for watching, and
+I'll see you in the next video.
+
+152
+00:11:30,994 --> 00:11:31,494
+[MUSIC]

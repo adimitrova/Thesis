@@ -1,0 +1,45 @@
+Now let's view the data we just loaded. For this and
+a number of other tasks in this course, MongoDB Compass is the best option. Compass is a GUI client for MongoDB
+that enables you to view databases, filter data using queries,
+modify data as needed and much more. To download Compass,
+let's visit the MongoDB Download Center. I will just Google for it here. Click the Compass tab, and make sure
+you select the right distribution for your operating system. I'm running on a Mac, so I will
+download the latest version for OSX. Once downloaded, go ahead and
+install compass. It should launch upon install, but in case it doesn't,
+just use Spotlight to launch it. Compass should launch once
+installed on Windows, but in case it doesn't,
+just click search and type compass. Once launched, you'll see
+a connect screen similar to this. Now, Compass is actively developed, so
+exactly what you see in the Compass UI might differ from what it
+is as I record this video. To connect to your free tier cluster,
+visit the cluster page for your Atlas account. Click Connect, and
+click Connect Your Application. Go ahead and copy the URL connection
+string, and then go back to Compass. You should see a model that
+asks you whether you want to use the connection string you just copied
+to connect Compass to MongoDB cluster. Go there and do this. Compass will populate nearly all
+the fields in the connection form. You just need to type the password for
+our analytics user. Remember, that is analytics-password. Now, all of the details you
+need to fill in this form are included in the lecture notes for
+this lesson. So don't worry if Compass didn't pop up the model asking you if you simply wanted
+to copy in what was in the clipboard. At the very bottom of the connect form,
+enter Analytics Free-Tier, and click Create Favorite, so that you can easily reconnect to your
+free-tier atlas cluster at any time. Now, I'll click Connect, and you'll see
+that I'm presented with three databases. The admin and
+local databases are created by default and are used by MongoDB for
+internal bookkeeping. The database we created when we
+loaded data set using Mongo import is called mflix. Click mflix. You then see that the mflix
+database contains one collection called movies_initial with
+46,014 documents in it. In MongoDB, documents are like
+Rose in a relational database. And documents are organized
+together in collections. Much in the same way that Rose make
+up tables in a relational database. Each document in a collection
+is a distinct record. In the movies_initial collection,
+each document stores data for one movie. Now click movies_initial. In the documents view that loads, you can scroll through
+the documents in this collection. Note the fields and
+basic shape of the documents. In the coming lessons, we'll be doing some
+data cleaning and reshaping of the schema in order to better enable
+an application and analytics. For example, note that the genre
+field is a simple string containing a comma
+separated list of genres. This makes it difficult to partition
+documents based on the genre. We'll do something about that
+in a number of other fields.

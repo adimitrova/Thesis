@@ -1,0 +1,655 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:11,832 --> 00:00:16,916
+In this first module, we are introducing
+the objects studied in particle physics,
+
+3
+00:00:16,916 --> 00:00:19,481
+namely matter, forces and space-time.
+
+4
+00:00:19,481 --> 00:00:24,203
+In this video, we will take
+a quick tour of elementary forces,
+
+5
+00:00:24,203 --> 00:00:27,067
+and their action at the subatomic level.
+
+6
+00:00:27,067 --> 00:00:32,159
+After watching this video, you should
+be able to name these forces and
+
+7
+00:00:32,159 --> 00:00:37,942
+their associated charges, to know
+the particles which transmit these forces,
+
+8
+00:00:37,942 --> 00:00:42,447
+and know the difference between real and
+virtual particles.
+
+9
+00:00:42,447 --> 00:00:46,090
+Here is a table comparing
+elementary interactions.
+
+10
+00:00:46,090 --> 00:00:50,474
+Note the vast differences between
+their respective strengths and ranges.
+
+11
+00:00:50,474 --> 00:00:55,400
+The strong force acts between quarks and
+particles containing quarks.
+
+12
+00:00:56,450 --> 00:00:59,320
+It has a large strength but
+a very short range.
+
+13
+00:00:59,320 --> 00:01:01,913
+It is transmitted by gluons.
+
+14
+00:01:01,913 --> 00:01:07,399
+The electromagnetic force concerns all
+particles carrying an electric charge, and
+
+15
+00:01:07,399 --> 00:01:13,470
+it has a modest strength but an infinite
+range, and it is transmitted by photons.
+
+16
+00:01:13,470 --> 00:01:16,090
+The weak force concerns
+all matter particles.
+
+17
+00:01:16,090 --> 00:01:18,871
+It has a low strength
+at long distances but
+
+18
+00:01:18,871 --> 00:01:23,651
+becomes comparable to the electromagnetic
+force at short distances.
+
+19
+00:01:23,651 --> 00:01:27,720
+It is transmitted by the W and Z bosons.
+
+20
+00:01:28,760 --> 00:01:35,150
+The gravitational force is weaker than
+these three but acts on all particles.
+
+21
+00:01:36,220 --> 00:01:40,710
+Because of the large mass
+of astronomic objects,
+
+22
+00:01:40,710 --> 00:01:46,730
+the gravitational force dominates
+the evolution of the Universe at cosmological scales,
+
+23
+00:01:46,730 --> 00:01:49,920
+but is however,
+negligible at the subatomic scales.
+
+24
+00:01:49,920 --> 00:01:54,930
+We don't know how this force
+acts at these scales and
+
+25
+00:01:54,930 --> 00:01:58,910
+we don't know if it is quantized
+as the other three forces.
+
+26
+00:02:00,000 --> 00:02:03,907
+Note also that the strength of
+the forces depends on distance or
+
+27
+00:02:03,907 --> 00:02:06,970
+equivalently on momentum transfer.
+
+28
+00:02:06,970 --> 00:02:11,720
+We will discuss this fact for each
+forces separately because the distance
+
+29
+00:02:11,720 --> 00:02:15,290
+laws for
+these forces are quite different.
+
+30
+00:02:17,330 --> 00:02:22,627
+So forces are transmitted by
+exchange of bosons of spin 1.
+
+31
+00:02:22,627 --> 00:02:27,762
+The photon for electromagnetic 
+interactions, the W± and
+
+32
+00:02:27,762 --> 00:02:32,630
+the Z bosons for the weak forces and
+gluons for the strong force.
+
+33
+00:02:33,870 --> 00:02:37,622
+These bosons are collectively
+called gauge bosons.
+
+34
+00:02:37,622 --> 00:02:42,820
+Particles can emit or absorb such a boson
+if they carry the required charge.
+
+35
+00:02:44,320 --> 00:02:48,136
+To emit a photon,
+an electric charge is required.
+
+36
+00:02:48,136 --> 00:02:53,130
+But the concept of charge is not
+limited to electric charge.
+
+37
+00:02:53,130 --> 00:02:58,707
+A particle must have a non-zero weak
+isospin to emit a W or a Z boson.
+
+38
+00:02:58,707 --> 00:03:00,990
+And a color charge
+to emit a gluon.
+
+39
+00:03:02,308 --> 00:03:07,535
+The Higgs boson is the only entry
+in this table, which has a spin 0.
+
+40
+00:03:07,535 --> 00:03:12,160
+Its role is to keep particles from
+moving at the speed of light, and
+
+41
+00:03:12,160 --> 00:03:15,310
+this applies to all particles,
+even to the Higgs boson itself.
+
+42
+00:03:17,090 --> 00:03:23,295
+The only exceptions are the photons,
+which always move at the speed of light,
+
+43
+00:03:23,295 --> 00:03:27,807
+and which are however
+confined to bound states
+
+44
+00:03:27,807 --> 00:03:32,570
+between quarks as we will
+discuss in module 5.
+
+45
+00:03:32,570 --> 00:03:39,470
+So, how does the transmission of forces
+via the exchange of particles work?
+
+46
+00:03:39,470 --> 00:03:40,470
+To understand this,
+
+47
+00:03:40,470 --> 00:03:45,580
+we need to recall how forces act in
+classical and quantum physics.
+
+48
+00:03:48,590 --> 00:03:52,080
+How does classical physics deal
+with the action of forces?
+
+49
+00:03:52,080 --> 00:03:55,390
+Particles are described as mass points.
+
+50
+00:03:55,390 --> 00:03:59,870
+Their position x and
+momentum p can be known with certainty.
+
+51
+00:04:00,900 --> 00:04:04,600
+Their motion is a smooth curve,
+in space a function of time,
+
+52
+00:04:04,600 --> 00:04:06,370
+which we call a trajectory.
+
+53
+00:04:06,370 --> 00:04:10,114
+It is determined by Newton's law,
+once we know the vector
+
+54
+00:04:10,114 --> 00:04:15,190
+sum of all forces acting, and the initial
+conditions on the position and velocity.
+
+55
+00:04:15,190 --> 00:04:20,680
+The action of forces is continuous,
+thus the trajectory is a smooth curve.
+
+56
+00:04:20,680 --> 00:04:22,960
+The number of particles is conserved,
+
+57
+00:04:22,960 --> 00:04:25,120
+mass points cannot disappear or appear.
+
+58
+00:04:28,723 --> 00:04:32,630
+Field and potential are notions which are subordinate to
+the central ones of force and energy.
+
+59
+00:04:33,910 --> 00:04:37,060
+We give here the example for
+the electric force and
+
+60
+00:04:37,060 --> 00:04:40,980
+energy which are related to the potential
+as shown in the last equation.
+
+61
+00:04:42,160 --> 00:04:44,580
+This description is not wrong.
+
+62
+00:04:44,580 --> 00:04:47,660
+After all,
+it allows you to drive your car.
+
+63
+00:04:47,660 --> 00:04:52,650
+It's just that its validity is limited
+to non-relativistic velocities and
+
+64
+00:04:52,650 --> 00:04:55,670
+distances, much larger
+than the size of an atom.
+
+65
+00:04:56,780 --> 00:05:00,550
+To talk about subatomic
+systems at high energies,
+
+66
+00:05:00,550 --> 00:05:03,630
+we need to go beyond classical physics.
+
+67
+00:05:05,110 --> 00:05:08,150
+Quantum mechanics radically
+changes the approach.
+
+68
+00:05:09,150 --> 00:05:13,850
+Particles are fields described by
+a probability amplitude psi, which is
+
+69
+00:05:13,850 --> 00:05:19,920
+a function of the position x and the time
+t, which is also called a wave function.
+
+70
+00:05:19,920 --> 00:05:24,955
+The square of this amplitude rho,
+which must be always positive definite
+
+71
+00:05:24,955 --> 00:05:31,970
+gives the probability density to find the
+particle at the time t in the position x.
+
+72
+00:05:31,970 --> 00:05:34,870
+This density is a probability
+per unit volume.
+
+73
+00:05:34,870 --> 00:05:39,100
+The trajectory does not
+exist at small scales.
+
+74
+00:05:39,100 --> 00:05:44,540
+Multiple measurements of the position of
+a particle do not form a smooth curve.
+
+75
+00:05:44,540 --> 00:05:47,570
+Probability amplitude and
+probability itself
+
+76
+00:05:47,570 --> 00:05:53,187
+evolve starting from initial state,
+described it by the Schrödinger equation.
+
+77
+00:05:54,440 --> 00:06:01,246
+Particles interact with the potential,
+the action the potential is continuous.
+
+78
+00:06:01,246 --> 00:06:09,825
+However, the origin of
+the potential remains unexplained.
+
+79
+00:06:09,825 --> 00:06:14,894
+Even though the action the potential
+is continuous it can be implemented
+
+80
+00:06:14,894 --> 00:06:19,570
+as a sequence of point-like
+interactions in a pertubative approach.
+
+81
+00:06:22,340 --> 00:06:27,087
+The number of particles is conserved,
+since probability amplitudes
+
+82
+00:06:27,087 --> 00:06:31,060
+follow a continuity equation as shown 
+at the bottom of the page.
+
+83
+00:06:31,060 --> 00:06:39,035
+This law relates the local probability
+density rho to the flux density j.
+
+84
+00:06:39,035 --> 00:06:43,135
+If the probability density
+diminishes at a certain place,
+
+85
+00:06:43,135 --> 00:06:46,265
+there must be a divergent
+flux at the same place.
+
+86
+00:06:47,775 --> 00:06:53,040
+So the flux j is thus a 
+flux of probability density.
+
+87
+00:06:53,040 --> 00:06:57,840
+The validity of Quantum Mechanics is
+limited to non relatively velocity,
+
+88
+00:06:58,920 --> 00:07:02,466
+since the Schrödinger equation
+is not covariant,
+
+89
+00:07:02,466 --> 00:07:05,250
+its forms depends on the reference frame.
+
+90
+00:07:07,120 --> 00:07:11,540
+To overcome this limitation,
+we have to use relativistic field theory.
+
+91
+00:07:11,540 --> 00:07:17,020
+Here, we are going just to introduce
+its language, its concepts and
+
+92
+00:07:17,020 --> 00:07:20,860
+its results, but
+we will not use it in a formal way.
+
+93
+00:07:22,110 --> 00:07:26,420
+The evolution of particles is described
+by a relativistic equation of motion,
+
+94
+00:07:26,420 --> 00:07:28,420
+the Klein-Gordon equation,
+
+95
+00:07:28,420 --> 00:07:35,090
+which is covariant because it contains
+only scalars under Lorentz transformations.
+
+96
+00:07:35,090 --> 00:07:37,830
+The number of particles is
+no longer conserved about
+
+97
+00:07:37,830 --> 00:07:40,620
+the electromagnetic current density is.
+
+98
+00:07:40,620 --> 00:07:44,200
+This current is analogous to
+the probability current, but
+
+99
+00:07:44,200 --> 00:07:47,590
+is proportional to the charge
+e of the particle.
+
+100
+00:07:47,590 --> 00:07:51,384
+This conservation means that it
+is the electrical charge,
+
+101
+00:07:51,384 --> 00:07:55,344
+which is locally conserved,
+and not the number of particles.
+
+102
+00:07:55,344 --> 00:08:00,312
+This allows to describe the creation
+of charged particles in pairs of
+
+103
+00:08:00,312 --> 00:08:02,490
+particle-antiparticle.
+
+104
+00:08:03,780 --> 00:08:06,235
+The potential no longer comes out of nowhere,
+
+105
+00:08:06,235 --> 00:08:09,810
+but is generated
+by a second current density j_2
+
+106
+00:08:10,990 --> 00:08:12,230
+according to Maxwell's laws.
+
+107
+00:08:13,640 --> 00:08:18,410
+The four-potential A^µ is generated
+by the current density j^µ
+
+108
+00:08:18,410 --> 00:08:22,310
+by means of the propagator
+1/q^2.
+
+109
+00:08:22,310 --> 00:08:26,801
+This quantity describes
+the probability amplitude for
+
+110
+00:08:26,801 --> 00:08:32,566
+the exchange of a photon of invariant
+mass q between the two currents.
+
+111
+00:08:35,522 --> 00:08:40,413
+Those who follow carefully may have
+noticed that there are at least three
+
+112
+00:08:40,413 --> 00:08:45,400
+unfamiliar notions, in the formulae 
+that come with relativistic field theory.
+
+113
+00:08:45,400 --> 00:08:50,205
+The dimensions of the quantities
+do not seem to fit.
+
+114
+00:08:50,205 --> 00:08:52,174
+In the first equation, there is
+
+115
+00:08:52,174 --> 00:08:57,392
+a relation between a quantity
+which is an energy, a momentum and
+
+116
+00:08:57,392 --> 00:09:02,412
+another quantity which is a mass,
+which have all different
+
+117
+00:09:02,412 --> 00:09:07,150
+units in the international system
+which we are familiar with.
+
+118
+00:09:08,430 --> 00:09:15,030
+Even worse in the second equation,
+since psi has no dimension,
+
+119
+00:09:15,030 --> 00:09:20,550
+the first time has dimension
+1/s^2,
+
+120
+00:09:20,550 --> 00:09:27,643
+the second 1/m^2,
+and the third kg^2.
+
+121
+00:09:27,643 --> 00:09:32,840
+The solution to this apparent
+inconsistency is the use of natural units.
+
+122
+00:09:35,440 --> 00:09:38,705
+Secondly, what does the notation j^µ and
+p^µ mean?
+
+123
+00:09:40,260 --> 00:09:42,610
+This is the notation used for four-vectors,
+
+124
+00:09:42,610 --> 00:09:47,960
+with implicit summation over Greek
+indices in scalar products.
+
+125
+00:09:49,280 --> 00:09:54,478
+Finally, the last equation
+requires the the photon has non-zero mass.
+
+126
+00:09:54,478 --> 00:09:58,147
+The real photon of course has zero mass.
+
+127
+00:09:58,147 --> 00:10:01,470
+After all, it moves at the speed of light.
+
+128
+00:10:01,470 --> 00:10:03,040
+The solution is the notion
+of your virtual particles,
+
+129
+00:10:03,040 --> 00:10:08,532
+which is central to the action
+of forces in field theory.
+
+130
+00:10:08,532 --> 00:10:12,920
+Virtual particles have all the same
+properties as the real ones,
+
+131
+00:10:13,960 --> 00:10:17,090
+except that they can
+have a different mass,
+
+132
+00:10:17,090 --> 00:10:20,900
+which can even be negative or
+imaginary.
+
+133
+00:10:22,840 --> 00:10:31,301
+We will introduce these three notions in
+the videos 1.2a, b, and c, one by one.
+
+134
+00:10:31,301 --> 00:10:36,164
+In the next video,
+we will explain how the probability for
+
+135
+00:10:36,164 --> 00:10:42,428
+a reaction between particles to happen
+is expressed by the cross section.
+
+136
+00:10:42,428 --> 00:10:48,509
+[MUSIC]

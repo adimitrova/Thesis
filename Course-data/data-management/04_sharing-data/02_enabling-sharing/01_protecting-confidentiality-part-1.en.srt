@@ -1,0 +1,387 @@
+1
+00:00:00,000 --> 00:00:06,121
+[MUSIC]
+
+2
+00:00:06,121 --> 00:00:10,166
+In this lesson, we're going to further
+examine some of the data sharing
+
+3
+00:00:10,166 --> 00:00:14,479
+challenges that we have briefly touched
+upon and discuss some strategies for
+
+4
+00:00:14,479 --> 00:00:16,810
+overcoming these challenges.
+
+5
+00:00:16,810 --> 00:00:18,660
+By the end of this lesson,
+
+6
+00:00:18,660 --> 00:00:24,190
+we'll understand what is confidential
+information, be aware of strategies for
+
+7
+00:00:24,190 --> 00:00:29,740
+anonymizing data, understand how data
+ownership can affect data sharing,
+
+8
+00:00:30,780 --> 00:00:36,260
+be aware of the types of access
+restrictions that may be placed on data,
+
+9
+00:00:36,260 --> 00:00:41,559
+and know how to apply a standard license
+to data, to encourage sharing and reuse.
+
+10
+00:00:42,650 --> 00:00:46,120
+When collecting data that
+deal with human subjects,
+
+11
+00:00:46,120 --> 00:00:52,530
+researchers have an ethical requirement to
+protect the privacy of study participants.
+
+12
+00:00:52,530 --> 00:00:57,830
+This involves protecting an individual's
+identity during the collection,
+
+13
+00:00:57,830 --> 00:01:01,100
+handling, storage, and sharing of data.
+
+14
+00:01:02,900 --> 00:01:08,280
+Often these ethical considerations
+are outlined in a researcher's application
+
+15
+00:01:08,280 --> 00:01:10,840
+to their institutional review board,
+or IRB.
+
+16
+00:01:10,840 --> 00:01:17,520
+There can be serious consequences of
+confidentiality is accidentally breached.
+
+17
+00:01:17,520 --> 00:01:22,450
+These consequences can negatively
+effect a researcher's career.
+
+18
+00:01:22,450 --> 00:01:26,270
+Negatively impact
+a research's institution, and
+
+19
+00:01:26,270 --> 00:01:29,510
+may include hefty fines or
+even legal sanctions.
+
+20
+00:01:30,620 --> 00:01:33,670
+Today, the news is full of horror stories
+
+21
+00:01:33,670 --> 00:01:38,450
+of data breaches that may arise from
+careless data management practices.
+
+22
+00:01:38,450 --> 00:01:41,850
+In order to avoid these
+situations a researcher
+
+23
+00:01:41,850 --> 00:01:46,610
+needs to think carefully during
+the data management planning phase
+
+24
+00:01:46,610 --> 00:01:51,430
+about what confidential
+information they may collect.
+
+25
+00:01:51,430 --> 00:01:55,040
+If the data will be de-identified and
+how or
+
+26
+00:01:55,040 --> 00:01:58,660
+if they will share the data at
+the conclusion of the research project?
+
+27
+00:02:00,000 --> 00:02:03,550
+So what are the types of information
+that need to be protected?
+
+28
+00:02:04,750 --> 00:02:09,100
+First there is Personally
+Identifiable Information, or PII.
+
+29
+00:02:09,100 --> 00:02:14,730
+PII is defined as any
+representation of information
+
+30
+00:02:14,730 --> 00:02:19,840
+that permits the identity of an individual
+to whom the information applies
+
+31
+00:02:19,840 --> 00:02:23,660
+to be reasonably inferred by
+either direct or indirect means.
+
+32
+00:02:24,670 --> 00:02:27,940
+Note the reference to either direct or
+indirect means.
+
+33
+00:02:27,940 --> 00:02:30,070
+We will come back to
+this idea in a moment.
+
+34
+00:02:31,480 --> 00:02:34,100
+Next, we have
+Protected Health Information or PHI.
+
+35
+00:02:35,190 --> 00:02:40,070
+PHI is individually identifiable
+health information transmitted or
+
+36
+00:02:40,070 --> 00:02:44,280
+maintained, in any form or
+medium, by a covered entity.
+
+37
+00:02:44,280 --> 00:02:47,020
+And finally there is
+sensitive information.
+
+38
+00:02:47,020 --> 00:02:51,720
+Which is information, that if disclosed
+there is a significant likelihood of
+
+39
+00:02:51,720 --> 00:02:57,740
+psychological, social, emotional,
+physical or reputational harm.
+
+40
+00:02:57,740 --> 00:03:01,920
+These definitions show the breadth of
+information that researchers need to
+
+41
+00:03:01,920 --> 00:03:05,890
+actively protect when managing and
+potentially sharing data.
+
+42
+00:03:07,220 --> 00:03:11,130
+Now let's look at three
+type of identifiers.
+
+43
+00:03:11,130 --> 00:03:13,880
+As we mentioned above,
+there are both direct and
+
+44
+00:03:13,880 --> 00:03:17,130
+indirect ways a person can be identified.
+
+45
+00:03:17,130 --> 00:03:20,490
+Direct identifiers are those variables or
+
+46
+00:03:20,490 --> 00:03:26,880
+information included within data that
+explicitly point to an individual or unit.
+
+47
+00:03:26,880 --> 00:03:31,740
+These include, Social Security numbers,
+phone numbers, and
+
+48
+00:03:31,740 --> 00:03:34,490
+names, and
+are often the easy ones to spot.
+
+49
+00:03:35,710 --> 00:03:41,210
+The identifiers that can become more
+problematic are the indirect identifiers.
+
+50
+00:03:41,210 --> 00:03:45,910
+These are variables that may make
+unique cases visible, particularly
+
+51
+00:03:45,910 --> 00:03:50,790
+when combined with other individual
+attributes, such as race or income.
+
+52
+00:03:52,160 --> 00:03:55,720
+Finally, we have geographic identifiers.
+
+53
+00:03:55,720 --> 00:04:00,750
+Which may include indirect
+identifiers such as a Zip Code or
+
+54
+00:04:00,750 --> 00:04:05,080
+direct identifiers such as
+a complete mailing address.
+
+55
+00:04:05,080 --> 00:04:10,460
+Consider an example data set in which
+direct identifiers have been removed.
+
+56
+00:04:10,460 --> 00:04:14,640
+The data set represents
+the population of US citizens,
+
+57
+00:04:14,640 --> 00:04:18,390
+who have earned doctoral degrees in 1991.
+
+58
+00:04:18,390 --> 00:04:24,460
+Variables include the major field
+of study, race, sex and geographic
+
+59
+00:04:24,460 --> 00:04:29,440
+region of the academic institution
+in which the degree was earned.
+
+60
+00:04:29,440 --> 00:04:33,810
+Without direct identifiers such as name,
+phone number,
+
+61
+00:04:33,810 --> 00:04:37,280
+mailing address,
+Social Security Number, and
+
+62
+00:04:37,280 --> 00:04:41,820
+other information that link directly
+to the identity of the individual
+
+63
+00:04:41,820 --> 00:04:46,530
+it would seem that it would be impossible
+to distinguish any given individual
+
+64
+00:04:46,530 --> 00:04:51,139
+represented in this data set which
+includes over 25,000 people.
+
+65
+00:04:52,310 --> 00:04:55,110
+Let's take a closer look at these data.
+
+66
+00:04:55,110 --> 00:04:59,170
+If we were to take just the people
+who earned their doctoral degrees in
+
+67
+00:04:59,170 --> 00:05:04,480
+the science and engineering fields, we are
+left with just over 14,000 individuals.
+
+68
+00:05:06,300 --> 00:05:10,800
+Of those individuals,
+2,119 received their degrees in
+
+69
+00:05:10,800 --> 00:05:16,510
+the physical sciences
+1,707 of which are male.
+
+70
+00:05:16,510 --> 00:05:21,830
+Of that group,
+only 20 reported their race as black.
+
+71
+00:05:21,830 --> 00:05:25,510
+Having quickly gone from over
+25,000 people to just 20,
+
+72
+00:05:25,510 --> 00:05:31,180
+how easy do you think it would be to
+figure out who those 20 people are?
+
+73
+00:05:31,180 --> 00:05:35,270
+Well, only eight of them were astronomy
+majors it wouldn't take much more
+
+74
+00:05:35,270 --> 00:05:39,620
+information to identify at
+least one of these individuals.
+
+75
+00:05:39,620 --> 00:05:43,352
+If we knew where those
+degrees were granted,
+
+76
+00:05:43,352 --> 00:05:48,081
+say in New York,
+we would likely know who that person is.
+
+77
+00:05:48,081 --> 00:05:53,152
+This example demonstrates that
+protecting confidentiality requires
+
+78
+00:05:53,152 --> 00:05:58,730
+careful consideration and special
+handling of not only direct identifiers,
+
+79
+00:05:58,730 --> 00:06:01,105
+but also indirect identifiers.
+
+80
+00:06:01,105 --> 00:06:09,819
+[MUSIC]

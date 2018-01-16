@@ -1,0 +1,110 @@
+Welcome to the second lecture on LTI
+models on state space forum, where LTI stood for Linear Time-Invariant Systems.
+And what we saw last time is that we could model at least two systems like x dot is
+Ax plus Bu and y is Cx. Well, it turns out that this is a very, very general
+description of a large class of systems. And x here is state of the system. What
+that means is that x describes what the system is currently doing, u is the input
+which tells us how we effect the system, and y is the output which measures the
+aspects of the system that we care about or that we have access to somehow. and the
+way we should think about these a, b, and c matrices are really that, here, Ax,
+well, that's the physics of the system. So, A is given to us by Newton, by the
+laws of physics or electromechanics, or whatever it is that we're using to model
+our system. And there's very little we can do about that. B, on the other hand, that
+tells us how the input affects the state. Meaning, this tells us what actuators we
+have. So, if we buy new actuators, we get a bigger B. In other words, B is, to a
+certain degree, up to us, the designers who are actually building the systems.
+Similarly, C, actually encodes what sensors we have. Meaning, how, can we
+actually get information about what's going on inside the system. So, A is
+given. Typically, B and C redesigned when we designed the system. And as we will see
+later on sometimes, we may not have enough control authority, for instance, to make
+the system do what we want, meaning our B matrix is too measly which means that we
+have to buy a better B matrix, maybe buy a new actuator or so. but at the end of the
+day, a system like this, it's influenced by our control signal u, that's the input,
+and out comes y, which is ultimately the thing we can see. We can typically not see
+x, but we can see y, because that's what our sensors are measuring. And the
+question that all of control theory is really about, is how do we pick this input
+to make the system do what it should be doing? And, more importantly, since we
+only can measure y. How do we pick u, given y? Unfortunately, we cannot answer
+that question right away. What we do need to do first is understand these systems a
+little bit and come up with tools for describing their behaviors because until
+we understand their behaviors, we can't pick u's that make the behaviors be what
+we want them to be. so we're going to do that. but first, we actually need to
+understand a little bit more about where these systems come from. So, let's start
+with our old friend, the car model. This was the model we used when we built the
+cruise controller for a car. So, what's going on here is that, the acceleration of
+the car, v dot, was c over m times u minus gamma v. so, let's put this model on state
+space form. Well, let's say, first of all that, we're building a cruise controller.
+All, all we care about is the velocity. In this case, let's say, that the state is
+actually the velocity. The thing we're measuring is the velocity, which means
+that y is Cx, where C is simply 1, alright?
+We're simply measuring one. Well, v dot is giving by this expression which means that
+x dot, where which x is the same as v is Ax and A here is simply minus gamma, plus
+Bu, where B then become C over m. So, in this case, we have a one-dimensional
+system for describing what's going on. Now, let's pretend that instead of
+building a cruise controller, we'll building a self-driving car. Well,
+clearly, we not only care about how fast it's going, we care about where it is. So,
+in this case, let's make our state, the position and the velocity, so P, V. In
+this case, we're measuring the position C, which means we're taking out the first
+component of the state. So, C is 1,0. Similarly, this equation still holds so
+what we're controlling is the acceleration through the Cm and what remains is my A
+matrix where the 1 here simply says, that the time derivative of position is
+velocity and then, this gamma is the same gamma as we got before. So, the impo rtant
+point to note here is that the model we end up with, to a certain degree, depends
+on what we care about and what are the things that we can, can measure. Now,
+let's take another model. Here is a pendulum. And the pendulum is attached up
+here on the ceiling somewhere. And it's swinging with an angle theta. It has
+length l. And the acceleration of this angle, this angular acceleration, turns
+out to be minus gravity over the length times sine of this angle plus Cu. And the
+way we should interpret this is that what we're doing is we're actually applying a
+torque up here that allows us to swing the pendulum a certain way. okay.
+Let's write this as an LTI system. Ouch. Sine theta is not linear. So, we actually
+cannot write this as an LTI system. But, here is something we can observe. For a
+very, for small thetas, then sine theta is actually roughly equal to theta. so what
+we can do for small angles, is actually replace this thing by theta.
+So, let's do that. For small angles then, what we get is, wellm if we measure the
+angle, then y is simply 1, 0, where we're taking out the angle and not the angle or
+velocity. Because the state, in this case, is theta, theta dot.
+Well, similarly, we're having a C here, so the C shows up there in the B matrix, and
+the A matrix looks like this. 0,1 here, which means that the time derivative of
+the angle is the angle of velocity, and this g over l term here is the same as the
+g over l term up there. So, this would be the a, b, and c matrices for this
+pendulum. And again, I want to encourage you to go
+through the math and perform this matrix multiplications so that you indeed trust
+that this is correct. Okay, let's do another example. Two simple robots. Let's
+say that we have two robots on a line and what we can do is we can control the
+velocities of these robots. So, x1 is the position of robot 1, x2 is the position of
+robot 2, and we want to somehow control them. Well, first of all, what we get is
+that x dot is 1 0, 0 1 u. We have no A matri x in this case, A is equal to 0 and
+the B matrix is simply the identity matrix. let's say that we can match where
+the robots are, too, so in that case, y would simply be the identity matrix times
+x, or just x itself, right? So, this would be, our, our model of this. Now, let's
+solve the problem here. Let's solve what's called the rendezvous problem. the
+rendezvous problem is the problem we'll have when the robots meet. And, you know
+what, why don't we actually have them drive towards each other? So, here's an
+idea one can have. Where we say that u1 is x2 minus x1, which is simply code for
+saying that x1 is going to move towards x2. And similarly, u2, let's make that x1
+minus x2. Then, that means that robot 2 is aiming towards robot 1. Well, what we've
+actually done now, is we've designed a closed loop feedback law, where we have
+written control inputs in terms of the states in this case, but since the outputs
+are the same as the states, we're actually writing them in terms of the outputs.
+Well, if I do that, I get a new system. X dot is negative 1, 1, 1, negative 1, x,
+and what this corresponds to is instead of writing u here, I'm plugging in these
+things there, and then you end up with a new system dynamics that's what's called a
+closed loop system dynamics. And, in fact, if I run this, and let's run it for not 2
+robots but a gazillion robots here, then as you will see, running exactly this
+simple controller makes the robots actually meet on a same, on the same
+point, so that's kind of cool. let's do another example now. This is the unicycle
+robot we looked at that when we modeled the differential drive robot. Again, sines
+and cosines are unpleasant. This is not linear, alright? , But cosine for small
+angles is equal to 1. So, let's assume we're dealing with small angles. And sine,
+for small angles, is equal to the angle itself. So, using that, we get this. But
+look at this. This is still not linear because here, we have a multiplication.
+So, even when we made a simplification, wh ich by the way is a completely stupid
+simplification because the pendulum may swing at small angles, but why does the
+car have to drive in only direction where we are having small angles? That doesn't
+make any sense. But the point there is that this kind of simplification didn't do
+anything. Still not linear. So, we need to be a little bit more systematic when we
+generate linear time invariant models from, for, from these kinds of non-linear
+systems because just saying that let the angle be small and hope for the best,
+won't actually give us all that much. And in the next lecture, we will be systematic
+in our generation of these linear time-invariant models.

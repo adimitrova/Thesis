@@ -1,0 +1,44 @@
+In this segment we're gonna take a look at
+box logic. Unfortunately, we cannot do that here on the studio so we're gonna
+have to take a road trip. Today we're headed for Stanford University's renowned
+logic laboratory. Follow me. And here we are. This is the logic laboratory. It may
+not look like much at least not superficially but this is where we
+investigate some of the latest innovations in logic technology. Today our goal was to
+look at box logic. Now the language of box logic is pretty simple. There are really
+just three constants. There is large box, there is medium box, and there is small
+box and they are all oriented one way or the other. Forming compound sentences from
+our consonants is easy. If we want to negate a sentence, we just invert. Not
+medium box, medium box. If you want this form of this junction from our constants,
+we stack them up. So here we have small box or medium box. And a conjunction is
+formed simply by placing multiple boxes or stacks of boxes on our table. So it's
+effectively colossal for. Okay. Now, let's try to use our logic to solve some
+problems. How about the problem case of Mary Patton Quincy? We call that. If it's
+Monday, Mary loves Pat or Quincy and Quincy, if Mary loves Pat, Mary loves
+Quincy. Let's see how we can represent that information using our new language.
+So first of all, if Mary loves Pat, Mary loves Quincy let's, let this medium sized
+box represent the fact that Mary loves Pat. This one represents Mary loves Quincy
+and the large one is going to be Monday. So we wanna say, if Mary loves Pat, Mary
+loves Quincy. How do we do that? Recalling the rules for converting to colossal form,
+we know that p implies q as equivalent to not p or q. So if you wanted to write
+that, we would write not Mary loves Pat or Mary loves Quincy. So, not Mary loves Pat
+or Mary loves Quincy. If Mary loves Pat, Mary loves Quincy. How about our other
+sentence? If it's Monday, then Mary loves Pat or Quincy. It's Monday, let's see. We
+need to say not Monday or Pat or Quincy. So it's not Monday mo re quick copies. Or
+Pat or Quincy. So there we have it. If it's Monday, Mary loves Pat or Quincy. If
+Mary loves Pat, Mary loves Quincy, represented, representing the premises of
+the problem. Now you may recall that the object of the problem was to show that if
+it's Monday then Mary loves Quincy. So how could we do that? What we have done is
+representing but we can also do computation, deduction with box logic. Any
+rules are pretty simple. If we ever have one stack which has a constant. Literal
+which is the complement of literal on another stack, we can do resolution on
+them. So here we have one stack with medium box down, here one stack with
+medium box up. We can combine the two stacks and eliminate the complementary
+literals and form these answers and since it's a duplicate, we can throw that one
+away and we're left with our conclusion. If it's Monday, Mary loves Quincy, nifty.
+Okay, what's the point? The point is that the language of logic is not about
+particular sets of symbols. And the active deduction doesn't mean necessarily that
+we're operating upon those particular symbols. Logic is an abstraction. Any
+instantiation of the symbols is equally good and any operations on them is equally
+good provided that it respects that basic abstraction. Okay. That's it for our visit
+to the logic laboratory today. We'll be back again later in the course with some
+additional demonstrations and we'll see you then.

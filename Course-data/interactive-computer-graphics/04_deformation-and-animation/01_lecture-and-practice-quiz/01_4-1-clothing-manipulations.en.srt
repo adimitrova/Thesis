@@ -1,0 +1,995 @@
+1
+00:00:00,700 --> 00:00:01,952
+[SOUND]
+
+2
+00:00:01,952 --> 00:00:09,571
+[BLANK_AUDIO]
+
+3
+00:00:09,571 --> 00:00:10,166
+hello.
+
+4
+00:00:10,166 --> 00:00:13,310
+This is Week 4 of Interactive Computer
+Graphics Course.
+
+5
+00:00:13,310 --> 00:00:16,209
+The topic of this week is Deformation and
+Animation.
+
+6
+00:00:17,210 --> 00:00:21,418
+So, last week we discussed the moving of
+3D shapes.
+
+7
+00:00:21,418 --> 00:00:25,650
+They are kind of rigid shapes, there is no
+deformation there is not motion.
+
+8
+00:00:25,650 --> 00:00:30,328
+In this we discuss how to make them move,
+how to make them form.
+
+9
+00:00:30,328 --> 00:00:37,140
+One way to change the pose of articulated
+character, our frog.
+
+10
+00:00:37,140 --> 00:00:41,294
+And the other possibility is, is to deform
+the objects
+
+11
+00:00:41,294 --> 00:00:46,623
+consistent with deformed object like frogs
+or robes or jellyfish [UNKNOWN].
+
+12
+00:00:46,623 --> 00:00:49,673
+And this as you see this is much more
+difficult because there
+
+13
+00:00:49,673 --> 00:00:53,772
+are lots more information there the time
+sequence for the articles positions.
+
+14
+00:00:53,772 --> 00:01:00,590
+And then we will discuss [INAUDIBLE]
+toughest to control so many information.
+
+15
+00:01:02,340 --> 00:01:05,200
+So these are the topics we discussed here.
+
+16
+00:01:05,200 --> 00:01:09,530
+The first one is Clothing Manipulations,
+so putting garment on the character.
+
+17
+00:01:09,530 --> 00:01:12,060
+And the next one is Layer Operations for
+
+18
+00:01:12,060 --> 00:01:16,290
+controlling stacked clothes or robes, and
+so on.
+
+19
+00:01:16,290 --> 00:01:21,040
+And then, we will describe Spatial Key
+Framing technique to animate character.
+
+20
+00:01:21,040 --> 00:01:24,297
+And then also, the Procedural Deformation
+technique for
+
+21
+00:01:24,297 --> 00:01:26,885
+animating jellyfish and other [UNKNOWN]
+and so on.
+
+22
+00:01:26,885 --> 00:01:30,064
+And then, finally we will describe a
+
+23
+00:01:30,064 --> 00:01:34,080
+method to handle large motion capture
+data.
+
+24
+00:01:34,080 --> 00:01:36,079
+The first one is Clothing Manipulation.
+
+25
+00:01:38,372 --> 00:01:43,190
+So this is work titled as Clothing
+Manipulation and published in 2002.
+
+26
+00:01:43,190 --> 00:01:49,472
+The problem we want to address here is
+that clothing manipulation is difficult.
+
+27
+00:01:49,472 --> 00:01:53,460
+Many people are working on clothes
+simulation, but I thought that
+
+28
+00:01:53,460 --> 00:01:59,000
+not so many people working on manipulation
+or control of the clothing.
+
+29
+00:01:59,000 --> 00:02:04,260
+So this is, these are a popular techniques
+in the field.
+
+30
+00:02:04,260 --> 00:02:09,272
+The one poss, popular approach is to put
+rigid clothes pieces along
+
+31
+00:02:09,272 --> 00:02:14,740
+the body and then start simulation and the
+clothes will snap to the body.
+
+32
+00:02:14,740 --> 00:02:16,380
+This is very popular with clothes.
+
+33
+00:02:16,380 --> 00:02:21,020
+However, from users point of view it's
+very tedious to place piece
+
+34
+00:02:21,020 --> 00:02:26,380
+of clothing around the body with 3D
+rotation and 3D position control.
+
+35
+00:02:26,380 --> 00:02:29,344
+And the other popular demonstration is
+this
+
+36
+00:02:29,344 --> 00:02:33,279
+kind of real-time simulation of clothes
+material.
+
+37
+00:02:33,279 --> 00:02:35,073
+But from user interest point of view,
+
+38
+00:02:35,073 --> 00:02:38,159
+it's like manipulating a handkerchief
+using a chopstick.
+
+39
+00:02:38,159 --> 00:02:40,880
+It's not very good for putting clothing on
+that character.
+
+40
+00:02:42,310 --> 00:02:46,040
+So what we want to do here, is a way to
+make it
+
+41
+00:02:46,040 --> 00:02:50,482
+easy to put clothes on a character in a
+very flex way, flexible way.
+
+42
+00:02:50,482 --> 00:02:55,300
+You know, there are so many different ways
+to put clothing on a character.
+
+43
+00:02:55,300 --> 00:03:02,150
+And we want to develop technique to make
+it easy to test many variations.
+
+44
+00:03:02,150 --> 00:03:04,040
+Okay let me show you, a video.
+
+45
+00:03:07,180 --> 00:03:12,667
+So we introduce two techniques here,
+wrapping
+
+46
+00:03:12,667 --> 00:03:18,162
+and then dragging, the first one is
+wrapping.
+
+47
+00:03:18,162 --> 00:03:20,105
+[BLANK_AUDIO]
+
+48
+00:03:20,105 --> 00:03:22,785
+So here you have a 3D character here, and
+
+49
+00:03:22,785 --> 00:03:26,010
+then we try to put clothing on this 3D
+character.
+
+50
+00:03:28,130 --> 00:03:31,150
+And on the right hand you have a garment
+editor.
+
+51
+00:03:31,150 --> 00:03:36,832
+And then, you design a garment here as a
+2D pattern.
+
+52
+00:03:36,832 --> 00:03:41,890
+So you will, you design a 2D shape, and
+then put this garment onto this character.
+
+53
+00:03:41,890 --> 00:03:45,816
+And I just said, keep options to push and
+pull, each individual
+
+54
+00:03:45,816 --> 00:03:50,720
+body, allowing this 3D body, it can be
+very timing consuming and difficult.
+
+55
+00:03:50,720 --> 00:03:53,931
+So our approach is to use painting
+interface.
+
+56
+00:03:53,931 --> 00:03:57,780
+So user [UNKNOWN] specify which part
+should go where.
+
+57
+00:03:57,780 --> 00:04:04,040
+So this line, these three lines should go
+here, then here, and then here.
+
+58
+00:04:04,040 --> 00:04:07,219
+And then with this thing, the system tries
+to put the
+
+59
+00:04:07,219 --> 00:04:12,390
+clothing on the character so that these
+painted marks matches together.
+
+60
+00:04:12,390 --> 00:04:15,365
+So just press the wrap button.
+
+61
+00:04:15,365 --> 00:04:22,559
+[BLANK_AUDIO]
+
+62
+00:04:22,559 --> 00:04:25,280
+And then you will instantly get the final
+shape.
+
+63
+00:04:25,280 --> 00:04:30,002
+And I think much more faster and efficient
+than standard dragging operations.
+
+64
+00:04:30,002 --> 00:04:35,634
+[BLANK_AUDIO]
+
+65
+00:04:35,634 --> 00:04:37,090
+So here's another example.
+
+66
+00:04:37,090 --> 00:04:41,136
+Here we tried to make our [UNKNOWN] and
+then
+
+67
+00:04:41,136 --> 00:04:45,403
+we tried to put this garment on this
+character.
+
+68
+00:04:45,403 --> 00:04:47,010
+So you draw lines here.
+
+69
+00:04:49,480 --> 00:04:53,390
+And then there is also a line here,
+corresponding lines on this character.
+
+70
+00:04:53,390 --> 00:04:58,930
+And then just press wrap, and you suddenly
+get [UNKNOWN] on this character.
+
+71
+00:04:58,930 --> 00:05:01,420
+And here is a little bit more complicated
+example.
+
+72
+00:05:03,750 --> 00:05:07,301
+So you would paint four strokes and
+
+73
+00:05:07,301 --> 00:05:12,698
+then also corresponding strokes on the
+character.
+
+74
+00:05:12,698 --> 00:05:16,978
+So in this way you can get a specific way
+of putting the garment on the character
+
+75
+00:05:16,978 --> 00:05:21,876
+[BLANK_AUDIO]
+
+76
+00:05:21,876 --> 00:05:24,190
+Now here's a little bit more complicated
+example.
+
+77
+00:05:26,310 --> 00:05:29,870
+So you can quickly design this kind of
+t-shirt and then
+
+78
+00:05:29,870 --> 00:05:32,340
+a shirt and then you can put in this
+garment.
+
+79
+00:05:32,340 --> 00:05:35,580
+Again, if you use traditional drag-ons
+[INAUDIBLE] operations
+
+80
+00:05:35,580 --> 00:05:37,565
+it can be very tedious to control this.
+
+81
+00:05:37,565 --> 00:05:48,498
+[BLANK_AUDIO]
+
+82
+00:05:48,498 --> 00:05:50,365
+So this [UNKNOWN].
+
+83
+00:05:50,365 --> 00:05:53,048
+So instead of moving around the garment,
+the
+
+84
+00:05:53,048 --> 00:05:57,050
+system actually grows a garment on this
+character.
+
+85
+00:05:57,050 --> 00:05:59,083
+So next operation, is Surface dragging.
+
+86
+00:05:59,083 --> 00:06:01,448
+So after putting a garment on a character
+
+87
+00:06:01,448 --> 00:06:04,460
+you may want to relocate or adjust the
+position.
+
+88
+00:06:04,460 --> 00:06:05,934
+And this is technique.
+
+89
+00:06:05,934 --> 00:06:09,739
+[BLANK_AUDIO]
+
+90
+00:06:09,739 --> 00:06:12,703
+So here basically idea, so typical
+dragging real
+
+91
+00:06:12,703 --> 00:06:16,580
+time clothes simulation is just move
+single objects.
+
+92
+00:06:16,580 --> 00:06:20,162
+And then rely on physics to move around
+the other vertices.
+
+93
+00:06:20,162 --> 00:06:23,272
+However, this is not convenient for making
+a drastic,
+
+94
+00:06:23,272 --> 00:06:26,394
+a large deform, large motion around the
+body surface.
+
+95
+00:06:26,394 --> 00:06:36,394
+[BLANK_AUDIO]
+
+96
+00:06:39,287 --> 00:06:43,040
+So this here is an example of traditional
+single vertex dragging.
+
+97
+00:06:43,040 --> 00:06:45,870
+So it can make a very local shape change,
+
+98
+00:06:45,870 --> 00:06:48,489
+but it's very hard to make a global
+change.
+
+99
+00:06:49,670 --> 00:06:52,830
+So what people propose is called surface
+dragging.
+
+100
+00:06:52,830 --> 00:06:55,240
+So as you drag a single vertex, the
+
+101
+00:06:55,240 --> 00:07:00,130
+the system dies, propogates motion
+allowing the [UNKNOWN].
+
+102
+00:07:00,130 --> 00:07:02,751
+It allows a small motion, all bodies are
+going to move
+
+103
+00:07:02,751 --> 00:07:05,619
+together, so you can make a big change
+with a single drag.
+
+104
+00:07:05,619 --> 00:07:12,569
+[BLANK_AUDIO]
+
+105
+00:07:12,569 --> 00:07:13,690
+So here's an example.
+
+106
+00:07:13,690 --> 00:07:16,758
+So you can easily up or down or even
+
+107
+00:07:16,758 --> 00:07:21,368
+you can rotate the skirt around the body
+surface.
+
+108
+00:07:21,368 --> 00:07:23,699
+And this kind of dynamic fast motion is
+
+109
+00:07:23,699 --> 00:07:27,700
+not possible with standard single vertex
+simulation method.
+
+110
+00:07:27,700 --> 00:07:31,750
+So you can move this cloth along the body
+surface.
+
+111
+00:07:31,750 --> 00:07:34,823
+[BLANK_AUDIO]
+
+112
+00:07:34,823 --> 00:07:37,452
+And the system also takes care of the
+basic physics,
+
+113
+00:07:37,452 --> 00:07:40,690
+so there is no penetration, and then also
+some gravity effect.
+
+114
+00:07:42,880 --> 00:07:47,050
+And you can get further control by putting
+pushpins on the body surface.
+
+115
+00:07:47,050 --> 00:07:51,800
+So you can put pushpins and then you
+constrain the position.
+
+116
+00:07:53,480 --> 00:07:56,230
+And after putting pushpin it's a fix, the
+location
+
+117
+00:07:56,230 --> 00:07:59,340
+is fixed and than you can get further
+control.
+
+118
+00:08:07,015 --> 00:08:12,203
+Yeah again, by pushing we can change
+lengths, by
+
+119
+00:08:12,203 --> 00:08:18,388
+propagation, so you can just move one part
+of the garment.
+
+120
+00:08:18,388 --> 00:08:28,388
+[BLANK_AUDIO]
+
+121
+00:08:36,683 --> 00:08:39,953
+We can also use, some painting interface
+for changing
+
+122
+00:08:39,953 --> 00:08:44,010
+the position after putting the garment on
+the character.
+
+123
+00:08:44,010 --> 00:08:48,263
+So this is useful to make discontinuous
+[UNKNOWN] change, like this one,
+
+124
+00:08:48,263 --> 00:08:51,343
+so you can suddenly jump part of the cloth
+to the arm.
+
+125
+00:08:51,343 --> 00:08:57,712
+[BLANK_AUDIO]
+
+126
+00:08:57,712 --> 00:09:01,639
+So here is a couple of examples of 3D
+models created using the technique.
+
+127
+00:09:03,060 --> 00:09:05,630
+So here is an octopus, a mommy octopus.
+
+128
+00:09:05,630 --> 00:09:09,050
+So you can put long garment, clothes on
+the octopus.
+
+129
+00:09:10,120 --> 00:09:14,153
+And again, I think this is very tedious to
+do using standard the dragging operation.
+
+130
+00:09:14,153 --> 00:09:20,768
+[BLANK_AUDIO]
+
+131
+00:09:20,768 --> 00:09:23,044
+And this is something we wanted to do
+using
+
+132
+00:09:23,044 --> 00:09:26,500
+the interface, is can put clothing on her
+head.
+
+133
+00:09:26,500 --> 00:09:27,222
+And you can play around with this.
+
+134
+00:09:27,222 --> 00:09:31,362
+[BLANK_AUDIO]
+
+135
+00:09:31,362 --> 00:09:32,610
+Okay, so that's video.
+
+136
+00:09:34,040 --> 00:09:37,870
+So as I said what we propose is surface
+dragging.
+
+137
+00:09:37,870 --> 00:09:41,670
+So traditional approach is single vertex
+dragging, or rigid
+
+138
+00:09:41,670 --> 00:09:44,940
+dragging moves all the vertices into the
+same direction.
+
+139
+00:09:44,940 --> 00:09:49,150
+But here, what we propose is propagation
+of moving
+
+140
+00:09:49,150 --> 00:09:52,090
+vector allowing to body to move slightly
+this way.
+
+141
+00:09:53,970 --> 00:09:56,130
+Okay so let me briefly describe the
+
+142
+00:09:56,130 --> 00:09:59,961
+implementation of these techniques, so
+wrapping and dragging.
+
+143
+00:09:59,961 --> 00:10:03,680
+And then, past experience wrapping always
+wins.
+
+144
+00:10:03,680 --> 00:10:09,090
+So wrapping is, as I said, instead of
+moving entire integrated entire
+
+145
+00:10:09,090 --> 00:10:14,578
+clothes to the body, we actually glue the
+cloth on the body surface.
+
+146
+00:10:14,578 --> 00:10:15,030
+That's the basic idea.
+
+147
+00:10:15,030 --> 00:10:21,150
+In this way, we can operate discard
+clothing detection and so on.
+
+148
+00:10:21,150 --> 00:10:22,878
+So here is a look at [UNKNOWN].
+
+149
+00:10:22,878 --> 00:10:27,790
+That's the beginning system fast computer
+dependency graph or propagation graph.
+
+150
+00:10:27,790 --> 00:10:31,300
+Starting from the painted triangle to the
+other triangles.
+
+151
+00:10:31,300 --> 00:10:33,140
+So this is a directive graph.
+
+152
+00:10:34,300 --> 00:10:37,467
+And then, according to the directive
+graph, dependence
+
+153
+00:10:37,467 --> 00:10:40,060
+graph, we grows the cloth to the body
+surface.
+
+154
+00:10:41,350 --> 00:10:46,700
+So first, we transplant, 2D clothes to 3D
+surface.
+
+155
+00:10:46,700 --> 00:10:50,470
+And then we paste, a new triangles, one by
+one,
+
+156
+00:10:50,470 --> 00:10:53,930
+on the body surface, using, according to
+the dependency graph.
+
+157
+00:10:55,970 --> 00:11:00,760
+An interesting question here is how to
+grow the surface.
+
+158
+00:11:02,260 --> 00:11:05,870
+Please consider there are two possible
+approaches.
+
+159
+00:11:05,870 --> 00:11:12,370
+One is you paste, triangle one by one,
+pasting on, directly on the body.
+
+160
+00:11:12,370 --> 00:11:17,158
+And another possibility is, instead of
+directly painting, it's
+
+161
+00:11:17,158 --> 00:11:20,779
+a kind of more straight a, along the cloth
+surface.
+
+162
+00:11:20,779 --> 00:11:24,400
+And we actually implemented the first one,
+as [UNKNOWN] approach.
+
+163
+00:11:24,400 --> 00:11:28,346
+However, we found it problematic and we
+then switched to
+
+164
+00:11:28,346 --> 00:11:32,140
+this planar growth, let me describe it a
+little more.
+
+165
+00:11:33,330 --> 00:11:39,270
+So if you stick to the body you can have a
+problem if you have a, like a sleeve.
+
+166
+00:11:39,270 --> 00:11:42,500
+You know, if you start to make a sleeve
+from both
+
+167
+00:11:42,500 --> 00:11:46,160
+sides, if you stick the body here, there
+are so many.
+
+168
+00:11:46,160 --> 00:11:49,380
+It causes many many folds, you know,
+around here.
+
+169
+00:11:49,380 --> 00:11:51,000
+So we find it problematic.
+
+170
+00:11:51,000 --> 00:11:54,920
+If you use a planar growth, then it works
+this way, and then
+
+171
+00:11:54,920 --> 00:11:59,330
+afterwards physics will stitch together
+and then you will get a reasonable result.
+
+172
+00:12:00,450 --> 00:12:03,700
+And here's another example, if you use
+stick to body,
+
+173
+00:12:03,700 --> 00:12:07,340
+then if you start growing here it goes
+around the body.
+
+174
+00:12:07,340 --> 00:12:09,070
+And it is not very desirable.
+
+175
+00:12:09,070 --> 00:12:12,060
+So we decided to use planar growth for the
+ruffle.
+
+176
+00:12:16,120 --> 00:12:19,940
+Okay, so now let me move on to our
+dragging implementation.
+
+177
+00:12:21,070 --> 00:12:26,060
+So as I said, dragging is to propagate the
+motion along the
+
+178
+00:12:26,060 --> 00:12:30,199
+body and then all the vertices move
+together along the body surface.
+
+179
+00:12:31,350 --> 00:12:34,808
+And at the beginning as, as soon as you
+click down and
+
+180
+00:12:34,808 --> 00:12:37,559
+start dragging, system fast the compute
+
+181
+00:12:37,559 --> 00:12:41,150
+this again dependency graph or propagation
+graph.
+
+182
+00:12:41,150 --> 00:12:45,550
+Starting from [UNKNOWN] vertices, vertex
+and to the rest of the vertices.
+
+183
+00:12:46,730 --> 00:12:50,020
+Then again, there are two, two
+possibilities.
+
+184
+00:12:50,020 --> 00:12:54,950
+One is to propagate cloth's, along the
+cloth’s surface.
+
+185
+00:12:54,950 --> 00:12:57,240
+And then, you know, as you see the vector.
+
+186
+00:12:57,240 --> 00:12:59,940
+You know vector changes along, across
+surface.
+
+187
+00:12:59,940 --> 00:13:03,049
+The other possibility is changes the
+
+188
+00:13:03,049 --> 00:13:07,267
+vector direction according to the body
+surface.
+
+189
+00:13:07,267 --> 00:13:09,135
+And then, we again tested the poles.
+
+190
+00:13:09,135 --> 00:13:11,757
+And then the [UNKNOWN] naive approach was
+
+191
+00:13:11,757 --> 00:13:15,910
+this changing vector along the body,
+up-close surface.
+
+192
+00:13:15,910 --> 00:13:18,553
+However, it turned out to be very ,very
+
+193
+00:13:18,553 --> 00:13:22,240
+unstable because he shape changes all the
+time.
+
+194
+00:13:22,240 --> 00:13:24,870
+However, if we switch to body
+
+195
+00:13:24,870 --> 00:13:27,860
+based propagation, the body shape doesn't
+change.
+
+196
+00:13:27,860 --> 00:13:29,610
+It is very stable.
+
+197
+00:13:29,610 --> 00:13:31,350
+We found that this is very much better.
+
+198
+00:13:33,540 --> 00:13:38,572
+So in summary, in this video we discussed
+clothing manipulation methods.
+
+199
+00:13:38,572 --> 00:13:42,476
+So we introduced our our painting
+interface for wrapping
+
+200
+00:13:42,476 --> 00:13:46,387
+and also our dragging along the whole
+surface dragging.
+
+201
+00:13:46,387 --> 00:13:50,477
+And the following implementation, wrapping
+is achieved by growing
+
+202
+00:13:50,477 --> 00:13:54,450
+or pasting triangles one by one on the
+body surface.
+
+203
+00:13:54,450 --> 00:13:58,209
+And for the dragging we propagate some
+motion along the body surface.
+
+204
+00:14:00,960 --> 00:14:06,280
+So to allow more the technique itself is
+published as clothing manipulation.
+
+205
+00:14:06,280 --> 00:14:08,330
+And if you want to know more about
+
+206
+00:14:08,330 --> 00:14:11,110
+clothes simulation, yeah, there are so
+many information.
+
+207
+00:14:11,110 --> 00:14:13,050
+But I just want to point to a very
+
+208
+00:14:13,050 --> 00:14:17,100
+famous, good paper called Large Steps in
+Cloth Simulation.
+
+209
+00:14:17,100 --> 00:14:19,410
+It's a little bit old paper, but I think
+still
+
+210
+00:14:19,410 --> 00:14:23,220
+very popular and a good starting point for
+further study.
+
+211
+00:14:23,220 --> 00:14:23,560
+Thank you.

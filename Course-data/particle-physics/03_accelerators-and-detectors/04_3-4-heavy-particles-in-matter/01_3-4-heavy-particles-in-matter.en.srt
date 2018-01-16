@@ -1,0 +1,450 @@
+1
+00:00:00,000 --> 00:00:10,588
+[MUSIC]
+
+2
+00:00:10,588 --> 00:00:13,861
+In this module, we touch the basics
+of particle exhilaration and
+
+3
+00:00:13,861 --> 00:00:15,360
+detection matters.
+
+4
+00:00:15,360 --> 00:00:16,520
+And in this fourth video,
+
+5
+00:00:16,520 --> 00:00:21,380
+we will show how heavy charged
+particles interact with matter.
+
+6
+00:00:21,380 --> 00:00:24,100
+These interaction mechanisms
+are used to detect them.
+
+7
+00:00:25,500 --> 00:00:29,160
+At the end of the video, you will know
+the energy loss by ionization and
+
+8
+00:00:29,160 --> 00:00:31,940
+excitation of heavy charged particles.
+
+9
+00:00:31,940 --> 00:00:35,334
+And the distribution of the energy
+loss for these particles and
+
+10
+00:00:35,334 --> 00:00:38,740
+their angular deviation when
+traversing a slice of material.
+
+11
+00:00:40,875 --> 00:00:45,800
+To detect particles, one must make
+them obviously interact with matter.
+
+12
+00:00:45,800 --> 00:00:49,140
+With the exception of neutrinos,
+all particles interact in one way or
+
+13
+00:00:49,140 --> 00:00:51,770
+another via the electromagnetic force.
+
+14
+00:00:51,770 --> 00:00:55,810
+Hadrons, obviously, also interact
+via the strong or the nuclear force.
+
+15
+00:00:57,800 --> 00:01:01,670
+Electromagnetic interactions thus play
+a predominant role among the mechanisms of
+
+16
+00:01:01,670 --> 00:01:03,990
+interaction and particle detection.
+
+17
+00:01:03,990 --> 00:01:06,210
+Its different reactions are listed here.
+
+18
+00:01:06,210 --> 00:01:09,601
+We will discuss them in this video and
+the one that follows.
+
+19
+00:01:11,946 --> 00:01:16,973
+When a charged particle passes through
+a slice of material of thickness dx,
+
+20
+00:01:16,973 --> 00:01:20,530
+it ionizes or excites the atoms it meets.
+
+21
+00:01:20,530 --> 00:01:23,650
+By this, the particle loses
+the part dE of its energy.
+
+22
+00:01:24,780 --> 00:01:26,410
+The energy lost per unit length,
+
+23
+00:01:26,410 --> 00:01:31,100
+dE/dx, plays a central role in
+the detection of stable charged particles.
+
+24
+00:01:31,100 --> 00:01:35,458
+It depends on both the properties of
+the particle such as its charge z and
+
+25
+00:01:35,458 --> 00:01:40,170
+its velocity beta, as well as
+the properties of the material crossed,
+
+26
+00:01:40,170 --> 00:01:42,840
+like the volume density n_e
+of its electrons,
+
+27
+00:01:42,840 --> 00:01:47,280
+which is proportional to the atomic
+charge and its ionization constant I,
+
+28
+00:01:47,280 --> 00:01:52,110
+which describes how easy
+it is to ionize its atoms.
+
+29
+00:01:52,110 --> 00:01:56,289
+The dependence of dE/dx on
+these factors is described by
+
+30
+00:01:56,289 --> 00:02:00,828
+the Bethe-Bloch formula reproduced
+on the top of this slide.
+
+31
+00:02:03,445 --> 00:02:08,317
+One can combine many of the constants
+into a single one which is called
+
+32
+00:02:08,317 --> 00:02:09,500
+K in this slide.
+
+33
+00:02:10,550 --> 00:02:15,510
+Thus, it can be seen that at low velocity
+dE/dx is proportional to the charge
+
+34
+00:02:15,510 --> 00:02:17,380
+of the particle squared and
+
+35
+00:02:17,380 --> 00:02:20,910
+inversely proportional to
+the square of its velocity.
+
+36
+00:02:22,590 --> 00:02:25,230
+The energy loss goes
+through a shallow minimum,
+
+37
+00:02:25,230 --> 00:02:29,570
+located approximately at the same
+velocity for all particles.
+
+38
+00:02:29,570 --> 00:02:33,995
+In this minimum,
+particles are called minimum ionizing.
+
+39
+00:02:33,995 --> 00:02:38,103
+Because of the strong dependence
+on the square of the charge,
+
+40
+00:02:38,103 --> 00:02:43,323
+we can even identify the charge of the
+incident particle by measuring dE/dx.
+
+41
+00:02:46,338 --> 00:02:51,399
+Beyond the minimum, the energy
+loss dE/dx increases slightly
+
+42
+00:02:51,399 --> 00:02:57,036
+with the logarithm of beta gamma equal
+to p/m, as shown in this graph.
+
+43
+00:03:00,586 --> 00:03:03,803
+Here's a summary of dE/dx
+in typical gases, liquids, and
+
+44
+00:03:03,803 --> 00:03:07,300
+metals as presented by
+the particle data group.
+
+45
+00:03:07,300 --> 00:03:11,320
+The minimum of the curves is
+approximately at the same velocity for
+
+46
+00:03:11,320 --> 00:03:13,370
+all the materials.
+
+47
+00:03:13,370 --> 00:03:18,600
+It is surprising that the curves for
+solids are below that for gas.
+
+48
+00:03:18,600 --> 00:03:21,840
+Do not forget that the energy loss
+is given here with respect to 
+
+49
+00:03:21,840 --> 00:03:23,598
+the surface density.
+
+50
+00:03:23,598 --> 00:03:29,920
+To find dE/dx in units of penetrated
+depth, one must multiply by the volume
+
+51
+00:03:29,920 --> 00:03:34,760
+density of the material which is a 150
+times greater full lead than for hydrogen.
+
+52
+00:03:36,160 --> 00:03:41,150
+The beta gamma scale, the x-axis of
+this graph, is converted to momentum
+
+53
+00:03:41,150 --> 00:03:46,150
+from neurons, charged pions and
+protons to simplify the use of this graph.
+
+54
+00:03:48,270 --> 00:03:50,730
+Obviously, the energy
+loss by ionization and
+
+55
+00:03:50,730 --> 00:03:56,160
+excitation is a random process, which
+will not always yield the same result.
+
+56
+00:03:56,160 --> 00:03:59,120
+Therefore, dE in a given
+material thickness dx
+
+57
+00:03:59,120 --> 00:04:01,490
+follows a Landau distribution.
+
+58
+00:04:01,490 --> 00:04:05,810
+This is an asymmetric distribution
+around the most probable value E_W
+
+59
+00:04:05,810 --> 00:04:08,070
+with a width characterized by xi.
+
+60
+00:04:09,090 --> 00:04:13,029
+The most probable energy loss is
+derived from the Bethe-Bloch formula.
+
+61
+00:04:15,471 --> 00:04:20,752
+Since dE/dx increases with decreasing
+velocity, the particle loses more and
+
+62
+00:04:20,752 --> 00:04:24,790
+more energy per unit depth
+while penetrating the material.
+
+63
+00:04:26,110 --> 00:04:29,610
+The greatest loss happens immediately
+before the particle is stopped.
+
+64
+00:04:29,610 --> 00:04:30,950
+This is called the Bragg Peak.
+
+65
+00:04:32,300 --> 00:04:35,675
+The effect may be beneficial
+in medical applications.
+
+66
+00:04:35,675 --> 00:04:40,282
+When irradiating tissue by charged
+particles, one can adjust the initial
+
+67
+00:04:40,282 --> 00:04:45,033
+momentum and thus, the penetration such
+that most of the energy is deposited
+
+68
+00:04:45,033 --> 00:04:49,591
+where a cancerous tumor is located,
+preserving healthy tissue around.
+
+69
+00:04:51,956 --> 00:04:55,434
+Multiple scattering off
+atomic electrons also deflect
+
+70
+00:04:55,434 --> 00:05:00,230
+the incident particle from its initial
+direction and displaces its path.
+
+71
+00:05:00,230 --> 00:05:03,905
+The distribution of angular deflection
+follows a Gaussian around zero.
+
+72
+00:05:03,905 --> 00:05:08,195
+The width depends on particle and
+material properties as shown.
+
+73
+00:05:08,195 --> 00:05:12,075
+The latter can be combined
+into the radiation length, X_0,
+
+74
+00:05:12,075 --> 00:05:15,053
+which we will introduce
+later in this module.
+
+75
+00:05:16,923 --> 00:05:19,990
+Hadrons, of course, also belong
+to the class of heavy particles.
+
+76
+00:05:19,990 --> 00:05:22,210
+In addition to
+electromagnetic interactions,
+
+77
+00:05:22,210 --> 00:05:26,200
+they can interact with matter nuclei
+through strong or nuclear interactions.
+
+78
+00:05:27,270 --> 00:05:30,550
+Elastic scattering makes them
+lose energy to a lesser extent
+
+79
+00:05:30,550 --> 00:05:34,560
+because nuclei are typically heavy and
+recoil little.
+
+80
+00:05:34,560 --> 00:05:39,510
+Inelastic interactions occur at high
+energies and create additional particles.
+
+81
+00:05:39,510 --> 00:05:45,640
+These deposit energy by dE/dx, but
+can also, in turn, produce more particles.
+
+82
+00:05:45,640 --> 00:05:49,280
+At sufficient energy, typically,
+a few GeV,
+
+83
+00:05:49,280 --> 00:05:53,760
+this will generate a cascade process
+which is called a hadron shower.
+
+84
+00:05:53,760 --> 00:05:57,112
+You see in this image a simulation
+of such a process with an incoming
+
+85
+00:05:57,112 --> 00:05:58,470
+high-energy proton.
+
+86
+00:05:58,470 --> 00:06:02,720
+Each block dot represents a unit of
+energy loss by a charged particle.
+
+87
+00:06:04,720 --> 00:06:07,370
+The characteristic
+lengths of this processes
+
+88
+00:06:07,370 --> 00:06:11,510
+are the nuclear collision lengths
+applying to elastic interactions and
+
+89
+00:06:11,510 --> 00:06:15,720
+the nuclear interaction length
+applying to inelastic interactions.
+
+90
+00:06:15,720 --> 00:06:19,200
+Both can be found in the tables
+of the Particle Data Group.
+
+91
+00:06:19,200 --> 00:06:22,647
+They are typically much larger than
+the radiation length of the material.
+
+92
+00:06:24,641 --> 00:06:28,781
+In the next video, we talk about
+the interactions of light particles in
+
+93
+00:06:28,781 --> 00:06:31,548
+general, and bremsstrahlung in particular.
+
+94
+00:06:31,548 --> 00:06:37,249
+[MUSIC]

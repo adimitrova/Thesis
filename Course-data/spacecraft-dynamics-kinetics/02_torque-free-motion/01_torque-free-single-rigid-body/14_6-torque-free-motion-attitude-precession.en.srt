@@ -1,0 +1,1028 @@
+1
+00:00:05,827 --> 00:00:10,310
+Now, let's talk about attitude.
+
+2
+00:00:10,310 --> 00:00:13,560
+With the axis symmetry I got
+some really easy looking omegas.
+
+3
+00:00:13,560 --> 00:00:16,205
+One of the most flatline is
+gets you the sine and cosines.
+
+4
+00:00:16,205 --> 00:00:17,749
+[SOUND].
+That's how we get the amplitude and
+
+5
+00:00:17,749 --> 00:00:18,360
+the right phase.
+
+6
+00:00:18,360 --> 00:00:20,169
+But that's pretty straight forward, right?
+
+7
+00:00:21,300 --> 00:00:25,740
+So, but the resulting motion, just looking
+at these yaw, pitch, rolls relative to
+
+8
+00:00:25,740 --> 00:00:30,350
+inertial frame, they were all over
+the place, and very nasty to predict.
+
+9
+00:00:30,350 --> 00:00:32,900
+Lots of wiggles, bumps, and
+stuff that was going on.
+
+10
+00:00:32,900 --> 00:00:36,470
+So, it wasn't very intuitive to
+predict what happens to the natural
+
+11
+00:00:36,470 --> 00:00:40,090
+procession of a torque-free
+attitude motion.
+
+12
+00:00:40,090 --> 00:00:42,740
+So this is a classic result
+that people have done.
+
+13
+00:00:44,480 --> 00:00:49,110
+And anybody heard of
+mutation procession before?
+
+14
+00:00:50,430 --> 00:00:50,930
+Good?
+
+15
+00:00:51,940 --> 00:00:53,910
+Was it Russell?
+
+16
+00:00:53,910 --> 00:00:54,810
+What does mutation mean?
+
+17
+00:00:56,140 --> 00:00:58,305
+>> It's where you're like
+slowly going around and
+
+18
+00:00:58,305 --> 00:01:01,304
+circling around what you're [CROSSTALK]
+>> So is this mutating or
+
+19
+00:01:01,304 --> 00:01:02,505
+is this processing?
+
+20
+00:01:05,842 --> 00:01:07,630
+Is it mutating now or processing?
+
+21
+00:01:10,920 --> 00:01:13,610
+Who thinks mutation procession
+definitions are confusing?
+
+22
+00:01:13,610 --> 00:01:15,460
+>> Like slowly around the depth.
+
+23
+00:01:15,460 --> 00:01:18,850
+>> Good.
+I hate them, quite frankly.
+
+24
+00:01:18,850 --> 00:01:20,760
+I'm always confused by those darn things.
+
+25
+00:01:20,760 --> 00:01:21,850
+Why?
+
+26
+00:01:21,850 --> 00:01:23,950
+In the end,
+those mutation procession things,
+
+27
+00:01:23,950 --> 00:01:26,560
+as I'll show you, they're nothing but
+older angle rates.
+
+28
+00:01:27,820 --> 00:01:30,730
+And, as often in the literature,
+we're not consistent.
+
+29
+00:01:30,730 --> 00:01:33,640
+Some people talk about 3-1-3
+Euler angle rates which means
+
+30
+00:01:33,640 --> 00:01:35,790
+certain motions mean something.
+
+31
+00:01:35,790 --> 00:01:36,920
+That's the notation part.
+
+32
+00:01:36,920 --> 00:01:38,280
+That's the procession part.
+
+33
+00:01:38,280 --> 00:01:40,871
+It's a 3-1-3 versus a 3-2-1.
+
+34
+00:01:40,871 --> 00:01:44,110
+The processions are often very similar
+because they are both 3 first axis.
+
+35
+00:01:44,110 --> 00:01:47,390
+But the 3-2-1s and the 3-1-3s are the two
+common things you will see people
+
+36
+00:01:47,390 --> 00:01:51,680
+use to describe torque free attitude
+motions and look at the tumbles.
+
+37
+00:01:51,680 --> 00:01:54,330
+But they don't always tell you what they
+are doing until you look at the math,
+
+38
+00:01:54,330 --> 00:01:56,230
+it takes a long time so
+I'd rather they just tell me,
+
+39
+00:01:56,230 --> 00:01:58,920
+look I'm studying it using three
+one three over under rates.
+
+40
+00:01:58,920 --> 00:02:02,490
+I know right away what you are talking
+about verses mutation and damping.
+
+41
+00:02:02,490 --> 00:02:06,300
+But it is a common mutation, common
+thing you hear so let's cover it and
+
+42
+00:02:06,300 --> 00:02:08,090
+I want to show you
+a little bit what it does.
+
+43
+00:02:08,090 --> 00:02:12,160
+The other issue is so
+we are going to use older angle rates.
+
+44
+00:02:12,160 --> 00:02:17,500
+to start to prescribe how much does
+this wobbling disk process around and
+
+45
+00:02:17,500 --> 00:02:19,250
+what's happening there.
+
+46
+00:02:19,250 --> 00:02:22,730
+The other trick is, whereas my
+earlier example acts as a metric,
+
+47
+00:02:22,730 --> 00:02:27,120
+I was plotting my yaw pitch roll
+angles relative to the inertial frame.
+
+48
+00:02:27,120 --> 00:02:28,510
+With nutation precession,
+
+49
+00:02:28,510 --> 00:02:33,700
+those terms, we're never talking about
+attitude motion relative to inertial.
+
+50
+00:02:33,700 --> 00:02:37,260
+We're talking about attitude motion
+relative to your momentum vector.
+
+51
+00:02:38,740 --> 00:02:40,000
+That's the key difference.
+
+52
+00:02:40,000 --> 00:02:42,080
+So, if this thing is spinning this way,
+
+53
+00:02:42,080 --> 00:02:43,830
+you have a big momentum
+vector sticking up.
+
+54
+00:02:43,830 --> 00:02:44,530
+Great!
+
+55
+00:02:44,530 --> 00:02:47,540
+Then you talk about precessing
+about that momentum vector and
+
+56
+00:02:47,540 --> 00:02:50,690
+how much you're nutating and
+wobbling Around the momentum.
+
+57
+00:02:50,690 --> 00:02:52,320
+If you're spinning this way,
+
+58
+00:02:52,320 --> 00:02:56,560
+then procession is really defined
+around that momentum vector, right?
+
+59
+00:02:56,560 --> 00:02:58,800
+So it has nothing to do with
+where your inertial system is,
+
+60
+00:02:58,800 --> 00:02:59,970
+it's torque-free motion.
+
+61
+00:02:59,970 --> 00:03:02,150
+Momentum vector is preserved.
+
+62
+00:03:02,150 --> 00:03:05,030
+So, if we do that, let's go through this.
+
+63
+00:03:05,030 --> 00:03:06,460
+I know some of you have seen this.
+
+64
+00:03:06,460 --> 00:03:09,290
+So, you have some momentum vector,
+it's torque-free motion,
+
+65
+00:03:09,290 --> 00:03:12,660
+as seen by inertial observer,
+this is a fixed quantity.
+
+66
+00:03:12,660 --> 00:03:15,930
+You give something some spin It's
+going to have some fixed momentum.
+
+67
+00:03:15,930 --> 00:03:17,270
+And whatever else happens and
+
+68
+00:03:17,270 --> 00:03:20,810
+how it gyrates and wobbles,
+that momentum has to be fixed.
+
+69
+00:03:20,810 --> 00:03:26,050
+So, we can now pick an inertial
+frame that is lined up with n3.
+
+70
+00:03:26,050 --> 00:03:30,446
+Just historically they pick the third
+one for some reason, to be = -H.
+
+71
+00:03:31,970 --> 00:03:37,170
+So now, I can talk about attitude
+motion relative to this frame here.
+
+72
+00:03:37,170 --> 00:03:38,880
+And n one two are really arbitrary,
+
+73
+00:03:38,880 --> 00:03:41,180
+they don't really matter much
+in the end you will find.
+
+74
+00:03:41,180 --> 00:03:45,110
+So I can write the momentum vector
+as minus h times n three and
+
+75
+00:03:45,110 --> 00:03:47,220
+this is also an frame, right?
+
+76
+00:03:47,220 --> 00:03:51,900
+It's just lined, however you released it,
+that momentum was this direction.
+
+77
+00:03:51,900 --> 00:03:55,530
+So n three goes in the opposite,
+that's it.
+
+78
+00:03:55,530 --> 00:03:59,200
+So now we can write that and
+we can say okay, good this makes my
+
+79
+00:03:59,200 --> 00:04:03,290
+h vector in this particular end frame,
+all right this is a special end frame,
+
+80
+00:04:03,290 --> 00:04:08,160
+not a general end frame,
+is zero zero something times a dcm.
+
+81
+00:04:08,160 --> 00:04:10,900
+This allows me to write my momentum
+
+82
+00:04:10,900 --> 00:04:14,350
+vector components in the body
+frame in an easier way.
+
+83
+00:04:14,350 --> 00:04:19,610
+Generally this H if you have an arbitrary
+inertial frame H would have an H1 two and
+
+84
+00:04:19,610 --> 00:04:21,670
+three in frame component.
+
+85
+00:04:21,670 --> 00:04:24,370
+Here we only have a third component, so
+
+86
+00:04:24,370 --> 00:04:29,380
+that means times the DCM you are not only
+pulling out the parts of the third column.
+
+87
+00:04:29,380 --> 00:04:30,780
+That saves you lots of Algebra.
+
+88
+00:04:32,110 --> 00:04:33,610
+Why do we do that?
+
+89
+00:04:33,610 --> 00:04:37,020
+So here's the DCM and
+using 3-2-1 Euler angles here so
+
+90
+00:04:37,020 --> 00:04:41,650
+I'll get 3-2-1 Euler angle rates out of
+this stuff times that zero zero minus H.
+
+91
+00:04:41,650 --> 00:04:48,050
+You do this, you have the H times sine and
+the minus minus cancel.
+
+92
+00:04:48,050 --> 00:04:52,670
+Here we have H with a minus and
+a sine and a cosine of the third angle,
+
+93
+00:04:52,670 --> 00:04:54,730
+which is rolled and
+the second angle which is pitch.
+
+94
+00:04:54,730 --> 00:04:58,940
+So phi is rolled, theta is pitch, and
+the same thing for the third term.
+
+95
+00:04:58,940 --> 00:05:01,820
+And this is the momentum
+vector in the body frame.
+
+96
+00:05:01,820 --> 00:05:05,420
+But then, you remember from kinetics,
+H is also equal to i omega, right?
+
+97
+00:05:05,420 --> 00:05:07,960
+That's what we derived for
+rotational motion.
+
+98
+00:05:07,960 --> 00:05:09,590
+And in principle coordinate frame.
+
+99
+00:05:09,590 --> 00:05:13,590
+This is simply i one, omega one, i two,
+omega two, i three, omega three.
+
+100
+00:05:13,590 --> 00:05:17,290
+So this is an elegant way that we can use
+the three dimensional and get momentum
+
+101
+00:05:17,290 --> 00:05:23,440
+vector to provide three constraints on how
+does omega and the angles have to roll it.
+
+102
+00:05:25,050 --> 00:05:29,170
+And you can see out of the 3-2-1 Euler
+angles pulling out this column here
+
+103
+00:05:29,170 --> 00:05:33,570
+because it was all about the third one,
+theta one doesn't appear here.
+
+104
+00:05:33,570 --> 00:05:35,190
+There's no yaw angle in here.
+
+105
+00:05:36,830 --> 00:05:40,365
+Which kind of makes sense because there
+will be the motion about the momentum
+
+106
+00:05:40,365 --> 00:05:42,220
+,vector that happens there.
+
+107
+00:05:42,220 --> 00:05:43,400
+So, if this is the spinning and
+
+108
+00:05:43,400 --> 00:05:47,060
+the processing rate you're going to have,
+if we take the system and twist it for
+
+109
+00:05:47,060 --> 00:05:49,540
+80 degrees about the momentum vector,
+it's completely asymmetric.
+
+110
+00:05:49,540 --> 00:05:52,010
+It gives you the same
+kind of a wobbly motion.
+
+111
+00:05:52,010 --> 00:05:54,920
+So that's kind of what manifests
+in the Mathew, does know we are.
+
+112
+00:05:54,920 --> 00:05:56,920
+There is H and these omegas.
+
+113
+00:05:56,920 --> 00:06:00,580
+Well, this is nice, so I don't have to
+integrate differential kinematic equations
+
+114
+00:06:00,580 --> 00:06:03,850
+to come up with, at this attitude,
+what is omega going to be?
+
+115
+00:06:03,850 --> 00:06:06,930
+It's kind of like the energy conservation,
+the bouncing ball problem, right?
+
+116
+00:06:06,930 --> 00:06:09,710
+That we've used the complete
+three dimensional h vector
+
+117
+00:06:09,710 --> 00:06:13,040
+here instead of just the magnitude
+as we did with pole plots.
+
+118
+00:06:13,040 --> 00:06:13,970
+So that's good.
+
+119
+00:06:13,970 --> 00:06:17,290
+So now, we can divide by inertia and
+you get this expression.
+
+120
+00:06:17,290 --> 00:06:20,890
+So, I can write analytically,
+if this is the pitch and this is the roll,
+
+121
+00:06:20,890 --> 00:06:24,300
+these are the omegas you must have or
+otherwise you're violating momentum.
+
+122
+00:06:25,540 --> 00:06:27,650
+So good, we have that.
+
+123
+00:06:27,650 --> 00:06:32,880
+Now the next step is we have our
+differential kinematic equations for
+
+124
+00:06:32,880 --> 00:06:35,710
+my Euler angle rates and omega.
+
+125
+00:06:35,710 --> 00:06:42,090
+Now I just had an expression of omegas in
+terms of these angles and you plug that
+
+126
+00:06:42,090 --> 00:06:45,870
+in so instead of having a differential
+kinematic for theta, you know,
+
+127
+00:06:45,870 --> 00:06:50,760
+your state rates then you differentiate
+omega to get the accelerations,
+
+128
+00:06:50,760 --> 00:06:54,890
+here we used angular momentum to
+completely get rid of omega dots and
+
+129
+00:06:54,890 --> 00:07:00,560
+I get, I end up with torque free motion
+that's three coupled non linear.
+
+130
+00:07:00,560 --> 00:07:02,920
+But first order of differential equations.
+
+131
+00:07:02,920 --> 00:07:06,210
+So I got, I used angular momentum
+to get rid of some of those dots.
+
+132
+00:07:06,210 --> 00:07:10,530
+Didn't have double dots in the end, in
+attitude angles, I only have single dots.
+
+133
+00:07:10,530 --> 00:07:12,090
+And this would be your procession,
+
+134
+00:07:12,090 --> 00:07:14,370
+this would be your mutation
+if you used a 3-2-1.
+
+135
+00:07:14,370 --> 00:07:18,770
+And then, the third roll, we often just
+call roll as the final roll motion.
+
+136
+00:07:18,770 --> 00:07:22,040
+But that's the wobbly plate problem, we've
+all seen this plate on a table, right,
+
+137
+00:07:22,040 --> 00:07:26,320
+that wobbles It doesn't keep the same
+plane, that plate kind of goes around and
+
+138
+00:07:26,320 --> 00:07:28,540
+precession and
+does some weird stuff, right?
+
+139
+00:07:28,540 --> 00:07:31,720
+That's all going to be
+predicted now by these motions.
+
+140
+00:07:31,720 --> 00:07:36,600
+If you look at this, positive, positive,
+H magnitude is positive, sin squared,
+
+141
+00:07:36,600 --> 00:07:38,470
+cosine squared, all positive.
+
+142
+00:07:38,470 --> 00:07:43,760
+The precession rate, your yaw rate
+essentially, is always negative.
+
+143
+00:07:43,760 --> 00:07:47,010
+And this comes out of the definition
+that we've chosen and end frame which is
+
+144
+00:07:47,010 --> 00:07:50,870
+in the minus H direction otherwise
+there will be a sign flip.
+
+145
+00:07:50,870 --> 00:07:55,460
+So is different this could be different
+but this is more the classic one
+
+146
+00:07:55,460 --> 00:07:59,870
+whereas the pitching,
+that's basically a mutation rate.
+
+147
+00:07:59,870 --> 00:08:03,060
+Does this, if this spinning,
+is there an up and
+
+148
+00:08:03,060 --> 00:08:06,150
+down motion that happens because of this?
+
+149
+00:08:06,150 --> 00:08:09,720
+And you can see, for example,
+if i3 is equal to i2.
+
+150
+00:08:09,720 --> 00:08:13,870
+This term actually vanishes and
+you get rid of notation rates, as well.
+
+151
+00:08:13,870 --> 00:08:16,860
+So different shapes call
+certain rate things to change.
+
+152
+00:08:18,350 --> 00:08:22,340
+Anyway, so this is the classic one for
+general inertias, and
+
+153
+00:08:22,340 --> 00:08:23,930
+we cannot be positive.
+
+154
+00:08:23,930 --> 00:08:26,230
+If you have an axis symmetric case, so
+
+155
+00:08:26,230 --> 00:08:29,380
+I'm just assuming here B1
+is my axis of symmetry.
+
+156
+00:08:29,380 --> 00:08:33,010
+So, I1 is unique and I2 and I3 are equal.
+
+157
+00:08:33,010 --> 00:08:34,610
+And you plug it into those equations.
+
+158
+00:08:34,610 --> 00:08:38,630
+They simply fly down to
+a constant mutation rate and
+
+159
+00:08:38,630 --> 00:08:42,300
+a constant procession
+rate that you would have.
+
+160
+00:08:42,300 --> 00:08:43,930
+This would tell you that
+if the sphere is spinning,
+
+161
+00:08:43,930 --> 00:08:46,750
+that at about the momentum vector,
+this object is spinning, but
+
+162
+00:08:46,750 --> 00:08:49,060
+it's also slowly processing around.
+
+163
+00:08:49,060 --> 00:08:52,330
+It has to do that to
+conserve angular momentum.
+
+164
+00:08:52,330 --> 00:08:55,490
+And so, these are some classic results
+where you can now actually make
+
+165
+00:08:55,490 --> 00:08:57,420
+predictions about the attitude motions,
+
+166
+00:08:57,420 --> 00:09:00,640
+and turns out all their angles are kind of
+convenient for some of this stuff.
+
+167
+00:09:00,640 --> 00:09:01,780
+They're nicely to be worked out.
+
+168
+00:09:01,780 --> 00:09:06,170
+And this tells you what happens to
+the motion, since data is constant,
+
+169
+00:09:06,170 --> 00:09:09,680
+your roll rate that you would have in
+this situation also will stay constant.
+
+170
+00:09:09,680 --> 00:09:11,380
+So this is pretty classical.
+
+171
+00:09:11,380 --> 00:09:15,180
+We build a lot of spaceships that
+are kind of, at least originally,
+
+172
+00:09:15,180 --> 00:09:18,630
+almost cylindrical, very axi-symmetric
+just because they come out of rockets and
+
+173
+00:09:18,630 --> 00:09:20,900
+it's been released and have a wobble.
+
+174
+00:09:20,900 --> 00:09:24,950
+These equations are very common to kind of
+analyze what happens post tip off,
+
+175
+00:09:24,950 --> 00:09:27,110
+how are things going to process,
+what's going to go on.
+
+176
+00:09:27,110 --> 00:09:28,400
+So, it's a convenient form.
+
+177
+00:09:29,780 --> 00:09:32,730
+Now, there's some other stuff people.
+
+178
+00:09:32,730 --> 00:09:33,870
+I'm just going to highlight this.
+
+179
+00:09:33,870 --> 00:09:35,030
+We're not going to go through details.
+
+180
+00:09:35,030 --> 00:09:36,470
+There's no particular homeworks on this.
+
+181
+00:09:36,470 --> 00:09:40,570
+But if you have angular momentum vector,
+here, this is my axis of symmetry, for
+
+182
+00:09:40,570 --> 00:09:41,890
+example, that I had.
+
+183
+00:09:41,890 --> 00:09:45,120
+I'm spinning about this axis,
+and I'm slowly precessing around.
+
+184
+00:09:45,120 --> 00:09:47,250
+That's the momentum that I have.
+
+185
+00:09:47,250 --> 00:09:50,920
+So the current angular velocity vector
+is not equal to just this spin,
+
+186
+00:09:50,920 --> 00:09:55,580
+because you're spinning about b1 and
+some of the other axis.
+
+187
+00:09:55,580 --> 00:09:57,210
+And there's all these different angles,
+but
+
+188
+00:09:57,210 --> 00:10:02,590
+you're basically revolving around this
+while processing around the he vector.
+
+189
+00:10:02,590 --> 00:10:06,490
+So these two motions that I'm
+doing is basically describe cones.
+
+190
+00:10:06,490 --> 00:10:09,240
+And there's different ways people
+have written these equations, but
+
+191
+00:10:09,240 --> 00:10:12,060
+you can show mathematically
+because this is equivalent to,
+
+192
+00:10:12,060 --> 00:10:14,870
+those are the right equations
+this is a special case.
+
+193
+00:10:14,870 --> 00:10:17,100
+What they call a space cone and
+a body cone, so
+
+194
+00:10:17,100 --> 00:10:20,158
+this is your momentum factor
+that's fixed and our whole space.
+
+195
+00:10:20,158 --> 00:10:23,530
+The Omega Vector will
+tend to evolve around it
+
+196
+00:10:23,530 --> 00:10:25,600
+depending on axis symmetry or not.
+
+197
+00:10:25,600 --> 00:10:28,630
+And then there's the body
+axis that you have.
+
+198
+00:10:28,630 --> 00:10:31,180
+That one is going to
+possess around as well.
+
+199
+00:10:31,180 --> 00:10:32,370
+And so, it's like,
+
+200
+00:10:32,370 --> 00:10:36,160
+you can mathematically describe it
+as one cone rotating on another.
+
+201
+00:10:36,160 --> 00:10:39,070
+And this is a What I want
+is the largest inertia.
+
+202
+00:10:39,070 --> 00:10:43,660
+So that means it's kind of like a frisbee,
+a flat plate, spinning but
+
+203
+00:10:43,660 --> 00:10:44,670
+slightly wobbling.
+
+204
+00:10:44,670 --> 00:10:46,360
+That's kind of an oblate condition.
+
+205
+00:10:46,360 --> 00:10:49,620
+If you have a prolate condition,
+which is more this pen, like a and
+
+206
+00:10:49,620 --> 00:10:52,770
+or rocket body, and
+is spinning about the axis of symmetry and
+
+207
+00:10:52,770 --> 00:10:56,600
+wobbling, you end up also with
+a body cone and a space cone.
+
+208
+00:10:56,600 --> 00:10:59,870
+But you can see you're kind of
+wobbling on the outside of the,
+
+209
+00:10:59,870 --> 00:11:01,010
+the thing's on the outside.
+
+210
+00:11:01,010 --> 00:11:04,610
+Whereas here, it's kind of
+wobbling around it as a whole.
+
+211
+00:11:04,610 --> 00:11:09,230
+So, if you study some classic papers on
+torque-free motions, you might come across
+
+212
+00:11:09,230 --> 00:11:13,220
+some of these space cones, body cones and
+what I hope you remember is wait a minute,
+
+213
+00:11:13,220 --> 00:11:16,380
+I remember this has to do
+with these intersections.
+
+214
+00:11:16,380 --> 00:11:20,000
+And read up of on other angle rates and
+how we can rewrite them as conic motions
+
+215
+00:11:20,000 --> 00:11:24,150
+essentially cones and
+cones rolling this was all good and
+
+216
+00:11:24,150 --> 00:11:27,850
+popular way back before we had all
+these wonderful computer tools.
+
+217
+00:11:27,850 --> 00:11:30,375
+These days use integrate and
+[SOUND] out comes the answers.
+
+218
+00:11:30,375 --> 00:11:34,571
+But people done an amazing amount of
+work in attitude as well to get analytic
+
+219
+00:11:34,571 --> 00:11:38,581
+answers and this is kind of one of
+the stages where this stuff comes from.

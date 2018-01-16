@@ -1,0 +1,804 @@
+1
+00:00:00,860 --> 00:00:02,390
+Our next topic is digital ink.
+
+2
+00:00:04,130 --> 00:00:06,420
+And so what we introduce here is called
+Flatland.
+
+3
+00:00:06,420 --> 00:00:13,194
+And the research goal here is design
+computational augmented office whiteboard.
+
+4
+00:00:13,194 --> 00:00:16,105
+So, in, work, in many workplaces there is
+a
+
+5
+00:00:16,105 --> 00:00:21,010
+whiteboard, near the desk, or near the
+walking meeting space.
+
+6
+00:00:21,010 --> 00:00:23,730
+And then you got people take various
+notes.
+
+7
+00:00:23,730 --> 00:00:27,100
+So we try to provide computational
+support.
+
+8
+00:00:27,100 --> 00:00:31,228
+This kind of computational this kind of
+whiteboard.
+
+9
+00:00:31,228 --> 00:00:34,785
+And this work started with an ob,
+observation that
+
+10
+00:00:34,785 --> 00:00:36,854
+office whiteboards are used for
+
+11
+00:00:36,854 --> 00:00:40,924
+informer, informal product, pre-production
+activities.
+
+12
+00:00:40,924 --> 00:00:44,785
+So examples are note taking while you are
+on a phone.
+
+13
+00:00:44,785 --> 00:00:47,110
+Or organizing to do list.
+
+14
+00:00:47,110 --> 00:00:52,850
+Or sketching paper outlines, or discussion
+with other office mate.
+
+15
+00:00:52,850 --> 00:01:00,420
+So this kind offi offline informal
+discussions is what we want to support.
+
+16
+00:01:02,630 --> 00:01:08,090
+And so this was it was, this was from
+users point of view.
+
+17
+00:01:08,090 --> 00:01:11,690
+From system design's point of view, what
+we try to do
+
+18
+00:01:11,690 --> 00:01:17,850
+is to design a computational system that
+complements client desktop computers.
+
+19
+00:01:17,850 --> 00:01:22,140
+So suppose we have desktop computers, and
+then whiteboards.
+
+20
+00:01:22,140 --> 00:01:23,968
+And these very complementary.
+
+21
+00:01:23,968 --> 00:01:30,060
+For example the tasks on the desktop
+computer is very goal oriented.
+
+22
+00:01:30,060 --> 00:01:32,297
+You have a space for goal, prepare
+document,
+
+23
+00:01:32,297 --> 00:01:36,240
+prepare presentation make a email and so
+on.
+
+24
+00:01:36,240 --> 00:01:43,720
+However works, activities on a white board
+is very informal and very pre-productive.
+
+25
+00:01:43,720 --> 00:01:45,679
+There is no space for goal in many cases.
+
+26
+00:01:47,250 --> 00:01:50,230
+And then, operation on desktop computers
+can be
+
+27
+00:01:50,230 --> 00:01:53,400
+very tedious or complicated because you
+have to satisfy
+
+28
+00:01:53,400 --> 00:01:57,120
+many constraints however, white board is
+very easy,
+
+29
+00:01:57,120 --> 00:01:59,670
+just pick up a pen, and then write down.
+
+30
+00:01:59,670 --> 00:02:02,119
+So its very lightweight, simple and easy.
+
+31
+00:02:03,720 --> 00:02:07,210
+And then finally visual representation on
+desktop
+
+32
+00:02:07,210 --> 00:02:09,700
+computers are very formal and typed you
+
+33
+00:02:09,700 --> 00:02:13,150
+see typed text, but however visuals on
+
+34
+00:02:13,150 --> 00:02:16,680
+disc of white boards are very, very
+informal.
+
+35
+00:02:16,680 --> 00:02:22,158
+So these are the differences and then we
+try to support these kind of activities.
+
+36
+00:02:22,158 --> 00:02:28,600
+And, so, the system we proposed has three
+features.
+
+37
+00:02:29,890 --> 00:02:34,120
+And one, is a way to manage space.
+
+38
+00:02:34,120 --> 00:02:37,130
+The other is to applications running
+
+39
+00:02:37,130 --> 00:02:42,090
+on this surfaces, and also history
+management.
+
+40
+00:02:42,090 --> 00:02:43,835
+So let me show you a demo.
+
+41
+00:02:43,835 --> 00:02:47,616
+[SOUND] So suppose you have a whiteboard
+and you
+
+42
+00:02:47,616 --> 00:02:51,509
+pick up a pen, and [INAUDIBLE] do writing
+here.
+
+43
+00:02:51,509 --> 00:02:56,960
+So I use mouse here, but please assume
+that I'm using a pen on a whiteboard.
+
+44
+00:02:56,960 --> 00:03:00,530
+And then you can take various notes, such
+as like a phone number
+
+45
+00:03:04,860 --> 00:03:09,987
+or you may want to take a note or about a
+schedule.
+
+46
+00:03:09,987 --> 00:03:19,558
+[SOUND] Or you maybe just like drawings,
+or you may want to draw a map.
+
+47
+00:03:19,558 --> 00:03:23,420
+And as you see, system starts to cluster.
+
+48
+00:03:23,420 --> 00:03:25,610
+Nearby [UNKNOWN] automatically.
+
+49
+00:03:25,610 --> 00:03:28,950
+And then you can grab a cluster, and then
+move around.
+
+50
+00:03:30,180 --> 00:03:31,550
+So, this is very convenient.
+
+51
+00:03:31,550 --> 00:03:35,170
+You do not need [UNKNOWN] to get that one
+up.
+
+52
+00:03:35,170 --> 00:03:36,870
+Or you can manually spread.
+
+53
+00:03:36,870 --> 00:03:38,040
+To grab clusters away and so.
+
+54
+00:03:39,320 --> 00:03:45,950
+And one important program seen here is
+that visibility is very important.
+
+55
+00:03:45,950 --> 00:03:50,980
+If you have desktop Windows, Windows
+starts to overlap each other soon.
+
+56
+00:03:50,980 --> 00:03:56,490
+But however, visibility is important here
+so, you should
+
+57
+00:03:56,490 --> 00:03:59,240
+be able to see all information, all the
+time.
+
+58
+00:03:59,240 --> 00:04:02,839
+So, as you start dragging and if it
+collides
+
+59
+00:04:02,839 --> 00:04:07,470
+with other segment, it starts the push
+other segments away.
+
+60
+00:04:07,470 --> 00:04:10,790
+So, in this way, system pretty bends,
+overlapping.
+
+61
+00:04:10,790 --> 00:04:15,140
+And if no more space available, it starts
+to shrink.
+
+62
+00:04:15,140 --> 00:04:16,450
+So, in this way.
+
+63
+00:04:16,450 --> 00:04:18,970
+You can still see the content of the
+[INAUDIBLE],
+
+64
+00:04:18,970 --> 00:04:23,030
+but you can use limited screen space very
+efficiently.
+
+65
+00:04:23,030 --> 00:04:27,516
+And you can just click and start drawing,
+and click and start drawing.
+
+66
+00:04:27,516 --> 00:04:32,960
+We also support [UNKNOWN] to other seats,
+like this way.
+
+67
+00:04:32,960 --> 00:04:37,780
+So this is kind of infinite screen
+connected by
+
+68
+00:04:40,820 --> 00:04:44,190
+horizontally infinite screen space.
+
+69
+00:04:44,190 --> 00:04:46,500
+So this is the screen management.
+
+70
+00:04:46,500 --> 00:04:49,535
+And the next feature is applications.
+
+71
+00:04:49,535 --> 00:04:55,200
+So here is a [UNKNOWN]
+application we support here.
+
+72
+00:04:56,270 --> 00:05:03,010
+Like we have to sleep or you may want to
+eat, and you also need to work.
+
+73
+00:05:05,750 --> 00:05:10,750
+And then you can change priorities, or you
+can delete them.
+
+74
+00:05:10,750 --> 00:05:16,370
+So here we can use visceral interaction
+using pen gestures.
+
+75
+00:05:16,370 --> 00:05:18,790
+And then another application is map
+drawings.
+
+76
+00:05:18,790 --> 00:05:20,670
+So you can do a line, and you can get a
+
+77
+00:05:20,670 --> 00:05:23,850
+map or you can erase and you can get a
+map.
+
+78
+00:05:23,850 --> 00:05:28,210
+So you just, just draw a single strokes,
+the system automatically makes them a map.
+
+79
+00:05:29,990 --> 00:05:34,520
+And one important feature here is that
+application can be removable.
+
+80
+00:05:34,520 --> 00:05:38,450
+Here it becomes to view a simple plain
+drawing
+
+81
+00:05:38,450 --> 00:05:42,000
+and you can add other operation
+applications like this one.
+
+82
+00:05:42,000 --> 00:05:44,705
+This is a beautification of your.
+
+83
+00:05:44,705 --> 00:05:47,889
+Informal handwriting.
+
+84
+00:05:47,889 --> 00:05:54,306
+[SOUND] Look at this.
+
+85
+00:05:54,306 --> 00:05:57,405
+[SOUND] So another example is [UNKNOWN].
+
+86
+00:05:57,405 --> 00:06:03,880
+You draw numbers here and you draw lines
+and then you look at the result.
+
+87
+00:06:07,090 --> 00:06:09,550
+We also implemented 3D drawing.
+
+88
+00:06:09,550 --> 00:06:13,480
+And you draw something, and you can
+rotate,
+
+89
+00:06:13,480 --> 00:06:14,990
+and you can cut, and then you can rotate.
+
+90
+00:06:16,490 --> 00:06:21,590
+And if you remove this guy, then you can
+draw notations and so.
+
+91
+00:06:22,760 --> 00:06:25,898
+And finally the last feature is history
+management.
+
+92
+00:06:25,898 --> 00:06:28,850
+So system remains, remembers everything
+you do on
+
+93
+00:06:28,850 --> 00:06:32,200
+this whiteboard, and then you can get
+previous state.
+
+94
+00:06:32,200 --> 00:06:36,780
+For example, if you draw many many lines,
+for a long
+
+95
+00:06:36,780 --> 00:06:41,880
+time, then you erase, the system records
+everything in the database.
+
+96
+00:06:43,130 --> 00:06:45,920
+And then if you get slider here.
+
+97
+00:06:45,920 --> 00:06:48,730
+You can go back to any previous state, in
+the history.
+
+98
+00:06:51,140 --> 00:06:54,270
+And then can go jump, to a previous state.
+
+99
+00:06:56,330 --> 00:06:59,340
+And as our feature is context space
+search.
+
+100
+00:06:59,340 --> 00:07:03,960
+So, as I said, system remembers all
+activity on whiteboard, and later you can
+
+101
+00:07:03,960 --> 00:07:09,960
+search them, just by time or used
+behaviors, or size, or colors, and so on.
+
+102
+00:07:09,960 --> 00:07:10,810
+And here's an example.
+
+103
+00:07:10,810 --> 00:07:17,020
+The system searches for the previous
+drawings activities, on this whiteboard.
+
+104
+00:07:17,020 --> 00:07:20,100
+And you can get these instantly.
+
+105
+00:07:20,100 --> 00:07:21,125
+So that's a demo.
+
+106
+00:07:21,125 --> 00:07:28,962
+[SOUND] Yeah, yeah, here's an example of
+context-based search.
+
+107
+00:07:28,962 --> 00:07:31,040
+So let me describe the videos here.
+
+108
+00:07:31,040 --> 00:07:36,140
+So user input here consists of two kinds.
+
+109
+00:07:36,140 --> 00:07:39,340
+One is primary input is given by standard
+ink
+
+110
+00:07:39,340 --> 00:07:44,220
+strokes, mouse left button, and it is
+always ink strokes.
+
+111
+00:07:44,220 --> 00:07:48,510
+And secondary input like the other side of
+pen or
+
+112
+00:07:48,510 --> 00:07:52,378
+pen down is bottom down is always a
+control strokes and
+
+113
+00:07:52,378 --> 00:07:56,600
+then input strokes is always inking so its
+always up growing
+
+114
+00:07:56,600 --> 00:08:00,940
+on the screen and then control stroke is
+for controlling applications.
+
+115
+00:08:02,500 --> 00:08:05,280
+So it can be a eraser, or can
+
+116
+00:08:05,280 --> 00:08:10,150
+be dragging or existing object or
+splitting over segment.
+
+117
+00:08:10,150 --> 00:08:12,110
+Or a pie and the marking menu.
+
+118
+00:08:12,110 --> 00:08:17,340
+A pie and marking menu is a laterally
+arranged menus.
+
+119
+00:08:19,670 --> 00:08:24,040
+And let me briefly describe the
+architecture behind the system.
+
+120
+00:08:24,040 --> 00:08:27,280
+So this can be seen as a kind of pen
+version.
+
+121
+00:08:27,280 --> 00:08:31,420
+Standard graphical user interface Window
+system.
+
+122
+00:08:31,420 --> 00:08:37,020
+So here a comparison, so we have Standard
+Graphical User Interface and our Flatland.
+
+123
+00:08:37,020 --> 00:08:42,840
+So Standard Graphical User Interface use a
+mouse, but here we use a pen, and then
+
+124
+00:08:42,840 --> 00:08:49,820
+Standard GUI use widgets and pixels and
+here everything in strokes.
+
+125
+00:08:49,820 --> 00:08:53,430
+And Graphical User Interface use Windows
+but here we use
+
+126
+00:08:53,430 --> 00:08:59,370
+more informal segments, and then Graphical
+User Interface applications corresponds
+
+127
+00:08:59,370 --> 00:09:04,460
+behaviors and the important thing here is
+that in GUI Windows and
+
+128
+00:09:04,460 --> 00:09:10,370
+applications are very, how to say consis,
+persistent object.
+
+129
+00:09:10,370 --> 00:09:13,330
+And application is tightly connected to
+Windows,
+
+130
+00:09:13,330 --> 00:09:16,900
+but here, segments can be merged or split.
+
+131
+00:09:16,900 --> 00:09:20,330
+And also, behaviors can be flexibly
+attached
+
+132
+00:09:20,330 --> 00:09:23,580
+or removed compared to the Windows and
+applications.
+
+133
+00:09:25,560 --> 00:09:31,320
+And here's a structure in Standard
+Graphical User Interface Windows system.
+
+134
+00:09:31,320 --> 00:09:35,890
+You know, data is, and handled by
+applications.
+
+135
+00:09:35,890 --> 00:09:40,060
+Application encapsulates internal data,
+and then take
+
+136
+00:09:40,060 --> 00:09:43,520
+mouse input, and then generates display
+output.
+
+137
+00:09:43,520 --> 00:09:46,060
+Using various, rejects.
+
+138
+00:09:47,350 --> 00:09:49,927
+In contrast, in our case.
+
+139
+00:09:49,927 --> 00:09:55,224
+You know, behaviors outside of the strokes
+and then it opens up the
+
+140
+00:09:55,224 --> 00:10:00,912
+strokes on the board and then add strokes
+and removes strokes and so on.
+
+141
+00:10:00,912 --> 00:10:07,394
+So, behavior works as an attached service
+to the whiteboard.
+
+142
+00:10:07,394 --> 00:10:09,725
+[SOUND] yeah, here is a little bit more
+details.
+
+143
+00:10:09,725 --> 00:10:12,330
+So here's a code example of a behavior.
+
+144
+00:10:12,330 --> 00:10:14,930
+So this is PlainDrawingBehavior.
+
+145
+00:10:14,930 --> 00:10:18,360
+So this one takes inputstroke, and then
+just put in the stroke.
+
+146
+00:10:18,360 --> 00:10:20,680
+And the code looks like this.
+
+147
+00:10:20,680 --> 00:10:24,630
+So, addInputStroke, handle's InputStroke.
+
+148
+00:10:24,630 --> 00:10:28,070
+And then just put, painted stroke to the
+segment.
+
+149
+00:10:28,070 --> 00:10:31,120
+So it's plain drawing behavior.
+
+150
+00:10:31,120 --> 00:10:33,570
+And in the case of map behavior, it takes
+[INAUDIBLE]
+
+151
+00:10:33,570 --> 00:10:38,620
+stroke and then two sided street, the code
+looks like this.
+
+152
+00:10:38,620 --> 00:10:41,580
+So for add input stroke event, the input
+
+153
+00:10:41,580 --> 00:10:45,140
+stroke is divided into left and right
+stroke.
+
+154
+00:10:45,140 --> 00:10:47,720
+And then these are individually added to
+the segment.
+
+155
+00:10:51,250 --> 00:10:54,930
+So, yeah here's a summary, the program we
+want
+
+156
+00:10:54,930 --> 00:11:00,080
+to address is management of multiple
+informal tasks on
+
+157
+00:11:00,080 --> 00:11:04,250
+a electronic whiteboard system and then we
+presented kind of
+
+158
+00:11:04,250 --> 00:11:08,259
+window system for this link with very,
+very flexible structures.
+
+159
+00:11:09,550 --> 00:11:11,390
+And here's further reading.
+
+160
+00:11:11,390 --> 00:11:13,560
+The original work was published as
+
+161
+00:11:13,560 --> 00:11:17,330
+Flatland, New Dimensions in Office
+Whiteboards.
+
+162
+00:11:17,330 --> 00:11:19,620
+And if you learn more about gesture
+
+163
+00:11:19,620 --> 00:11:22,700
+recognition, there are a couple pointers
+here.
+
+164
+00:11:22,700 --> 00:11:26,910
+The Rubine, specifying gestures by example
+is a very original
+
+165
+00:11:26,910 --> 00:11:32,190
+work on example based gesture recognition,
+which was published in 91.
+
+166
+00:11:32,190 --> 00:11:37,240
+And the reason to why is one example
+reason to why is gesture without
+
+167
+00:11:37,240 --> 00:11:42,240
+libraries, toolkits or training a $1
+recognizer for user interface prototypes.
+
+168
+00:11:44,170 --> 00:11:48,700
+And also I showed pie menu and marking
+menu here.
+
+169
+00:11:48,700 --> 00:11:52,920
+And this is interesting widget, popular in
+pen computing.
+
+170
+00:11:52,920 --> 00:11:59,745
+And you, I also recommend that you take a
+look into this literature.
+
+171
+00:11:59,745 --> 00:12:01,319
+Thank you.

@@ -1,0 +1,816 @@
+1
+00:00:00,530 --> 00:00:02,310
+Our next topic is Garment design.
+
+2
+00:00:03,890 --> 00:00:07,370
+The work we introduce here
+is sensitive couture for
+
+3
+00:00:07,370 --> 00:00:09,430
+interactive garment editing and modeling.
+
+4
+00:00:11,100 --> 00:00:13,070
+So, the problem we want to address here,
+
+5
+00:00:13,070 --> 00:00:16,620
+is a design of a new
+novel original garment.
+
+6
+00:00:16,620 --> 00:00:20,660
+And again, this is very difficult for
+inexperienced people.
+
+7
+00:00:20,660 --> 00:00:22,038
+So, you have 2D cross pattern,
+
+8
+00:00:22,038 --> 00:00:26,780
+and then you have three
+dimensional garment on the body.
+
+9
+00:00:26,780 --> 00:00:29,160
+it's, what you want is
+three dimensional shape.
+
+10
+00:00:29,160 --> 00:00:32,060
+But what you have to control
+is two dimensional shape.
+
+11
+00:00:32,060 --> 00:00:36,288
+And it's very difficult to imagine
+what 2D pattern you have to
+
+12
+00:00:36,288 --> 00:00:38,852
+get to get the desired 3D shape.
+
+13
+00:00:38,852 --> 00:00:41,690
+So, that's a problem we what to address.
+
+14
+00:00:41,690 --> 00:00:44,050
+And our approach is the same
+as the previous one.
+
+15
+00:00:44,050 --> 00:00:48,100
+So we learn continuous concurrent
+simulation behind the scene.
+
+16
+00:00:48,100 --> 00:00:52,591
+So user continuously edits are saved
+2D pattern with mass operation and
+
+17
+00:00:52,591 --> 00:00:57,675
+the system continuously applies
+physical draping across simulation.
+
+18
+00:00:57,675 --> 00:01:02,146
+So user can directly edit to decide
+while watching the clothing in
+
+19
+00:01:02,146 --> 00:01:03,861
+the 3D configuration.
+
+20
+00:01:03,861 --> 00:01:11,714
+Well, that's
+
+21
+00:01:11,714 --> 00:01:17,160
+the idea.
+
+22
+00:01:17,160 --> 00:01:19,325
+So the same as before, on the left side,
+
+23
+00:01:19,325 --> 00:01:22,022
+you see 2D clothes patterns
+the user is editing.
+
+24
+00:01:22,022 --> 00:01:29,550
+And on the ride si, on the right side you
+see clothing, putting onto the 3D body.
+
+25
+00:01:29,550 --> 00:01:33,380
+And here the simulation is much more
+accurate than the one I showed for
+
+26
+00:01:33,380 --> 00:01:34,680
+the stuffed animal design.
+
+27
+00:01:34,680 --> 00:01:40,160
+So you can actually predict details,
+wrinkles and so on.
+
+28
+00:01:40,160 --> 00:01:43,780
+So you can interactively
+edit the 2D pattern.
+
+29
+00:01:43,780 --> 00:01:49,180
+And the system interactively updates
+clothing draping simulation results.
+
+30
+00:01:49,180 --> 00:01:51,420
+So you can actually see
+some more wrinkles here.
+
+31
+00:01:51,420 --> 00:01:53,650
+And then you can edit the shape.
+
+32
+00:01:53,650 --> 00:01:55,785
+So as to reduce wrinkles if necessary.
+
+33
+00:02:11,524 --> 00:02:16,406
+So traditionally, if you want to do this,
+you have to actually physically cut paper
+
+34
+00:02:16,406 --> 00:02:21,450
+or a cloth material, stitch together and
+put on the mannequin, physical mannequin.
+
+35
+00:02:21,450 --> 00:02:25,645
+And learn draping and see the result and
+then go back to the pattern and
+
+36
+00:02:25,645 --> 00:02:26,710
+cut it again.
+
+37
+00:02:26,710 --> 00:02:30,106
+It can be very, very long,
+long time, it's very slow.
+
+38
+00:02:30,106 --> 00:02:33,040
+And those are computer based
+simulations also available.
+
+39
+00:02:33,040 --> 00:02:33,760
+It's similar.
+
+40
+00:02:33,760 --> 00:02:39,050
+You have to move the simulation engine
+simulation and then go back to the design.
+
+41
+00:02:39,050 --> 00:02:40,320
+That's a problem.
+
+42
+00:02:40,320 --> 00:02:42,990
+And also, technically, it's very,
+
+43
+00:02:42,990 --> 00:02:46,040
+challenge to run physical simulations so
+rapidly.
+
+44
+00:02:46,040 --> 00:02:50,920
+Of course there are real time rapid
+cloth simulation existing already.
+
+45
+00:02:50,920 --> 00:02:54,228
+But they, these physical simulation is for
+animation.
+
+46
+00:02:54,228 --> 00:02:57,570
+So they assume fixed clothes pattern.
+
+47
+00:02:57,570 --> 00:02:59,080
+So clothes geometry doesn't change.
+
+48
+00:02:59,080 --> 00:03:01,855
+And the system learns lots
+of precomputation for
+
+49
+00:03:01,855 --> 00:03:04,028
+efficient computation real-time.
+
+50
+00:03:04,028 --> 00:03:07,610
+And then just draping learn animation.
+
+51
+00:03:07,610 --> 00:03:09,840
+To learn simulation to create animation.
+
+52
+00:03:09,840 --> 00:03:15,080
+However, here, the system, the user
+continuously change the rest of shape.
+
+53
+00:03:15,080 --> 00:03:18,840
+Which is,
+violates assumption of standard animation,
+
+54
+00:03:18,840 --> 00:03:23,487
+animation simulation [INAUDIBLE] so
+that's a challenge we have to address.
+
+55
+00:03:30,653 --> 00:03:36,916
+So if you do not like a wrinkle here, then
+you can just interactively add dart here.
+
+56
+00:03:36,916 --> 00:03:43,125
+And then, you can immediately see how
+the resulting clothing looks more natural.
+
+57
+00:03:47,863 --> 00:03:52,880
+Okay, so this is one example and
+here's more examples.
+
+58
+00:03:55,410 --> 00:03:58,000
+So, yeah, so design of t-shirt or
+
+59
+00:03:58,000 --> 00:04:00,840
+garment for human character
+is not actually so difficult.
+
+60
+00:04:00,840 --> 00:04:03,270
+There are many standard
+ways to design a garment.
+
+61
+00:04:03,270 --> 00:04:06,910
+However, if you want
+to design a pajama for
+
+62
+00:04:06,910 --> 00:04:09,970
+armadillo like here,
+it's a different program.
+
+63
+00:04:09,970 --> 00:04:12,620
+No one knows how to
+design a character shirt.
+
+64
+00:04:12,620 --> 00:04:16,430
+And especially if you wanted to
+buy a physically bodied garment,
+
+65
+00:04:16,430 --> 00:04:20,390
+it's very difficult, and this kind of
+design tool can be very, very useful.
+
+66
+00:04:24,760 --> 00:04:29,340
+So previously in computer graphics,
+garment of this character is
+
+67
+00:04:29,340 --> 00:04:32,820
+a very cross mesh, there's no physics,
+just a polynomial mesh.
+
+68
+00:04:32,820 --> 00:04:36,650
+But recently, game engines are very fast,
+more efficient.
+
+69
+00:04:36,650 --> 00:04:40,970
+So we use, people starting to use
+physical assimilation for these garments.
+
+70
+00:04:40,970 --> 00:04:44,960
+Now then, it's necessary to
+design physical bodied garments.
+
+71
+00:04:44,960 --> 00:04:48,807
+So that's these are why you
+need this kind of tools.
+
+72
+00:04:55,456 --> 00:04:57,610
+So here is a comparison with a real one.
+
+73
+00:04:57,610 --> 00:05:01,470
+The left side is a computer graphics
+view in your simulation, and
+
+74
+00:05:01,470 --> 00:05:06,524
+the right hand side is the physical
+construction which we 3D printed.
+
+75
+00:05:06,524 --> 00:05:11,760
+This kind of character and also we
+physically stitched together this garment.
+
+76
+00:05:11,760 --> 00:05:18,740
+And as you see, of course,
+it is not 100 millimeter size exact match.
+
+77
+00:05:18,740 --> 00:05:23,400
+However, you see the general
+pattern like sleeve folds here and
+
+78
+00:05:23,400 --> 00:05:25,480
+then you see full sleeve folds here.
+
+79
+00:05:25,480 --> 00:05:28,160
+So I think this is enough for
+our initial design.
+
+80
+00:05:30,600 --> 00:05:34,560
+And we also design real
+size garments using system.
+
+81
+00:05:34,560 --> 00:05:36,610
+So this is just, just screen snapshot.
+
+82
+00:05:36,610 --> 00:05:38,280
+We're using track to edit to save.
+
+83
+00:05:38,280 --> 00:05:41,643
+And then you see continuously
+see the 3D result.
+
+84
+00:05:58,326 --> 00:06:02,195
+And then we print it into a larger format,
+real size print.
+
+85
+00:06:02,195 --> 00:06:05,269
+And then you put pattern into a cross and
+
+86
+00:06:05,269 --> 00:06:09,940
+you stitch it together and
+then you get a wearable results.
+
+87
+00:06:25,028 --> 00:06:26,570
+Okay.
+
+88
+00:06:26,570 --> 00:06:29,190
+So let me briefly describe algorithm.
+
+89
+00:06:29,190 --> 00:06:34,490
+So, again, so oh, complete implementation
+is beyond the scope of this short video.
+
+90
+00:06:34,490 --> 00:06:38,250
+But I can briefly describe
+the basic idea behind it.
+
+91
+00:06:38,250 --> 00:06:40,070
+How to make it faster.
+
+92
+00:06:40,070 --> 00:06:42,870
+So this is a fundamental equation.
+
+93
+00:06:42,870 --> 00:06:46,510
+Mathematical representation of
+the problem we trying solve here.
+
+94
+00:06:46,510 --> 00:06:48,940
+So we have 2D input pattern.
+
+95
+00:06:48,940 --> 00:06:50,380
+This is the input from the user.
+
+96
+00:06:50,380 --> 00:06:53,110
+So user specify 2D clothes pattern.
+
+97
+00:06:53,110 --> 00:06:56,730
+And then what we,
+ha want to compute is 3D cloth shape.
+
+98
+00:06:56,730 --> 00:06:57,470
+So, yeah.
+
+99
+00:06:57,470 --> 00:07:01,250
+So input these XY coordinate positions or
+we input clothes, and
+
+100
+00:07:01,250 --> 00:07:04,460
+the output is XYZ position or or
+when you give your body shape.
+
+101
+00:07:04,460 --> 00:07:07,940
+So 3D cloth shape,
+this is output you want to get.
+
+102
+00:07:07,940 --> 00:07:13,187
+And then we cover function,
+that represents an additional set
+
+103
+00:07:13,187 --> 00:07:17,436
+of 2D cloth pattern input and
+3D cloth shape output.
+
+104
+00:07:17,436 --> 00:07:19,568
+And this function returns 0,
+
+105
+00:07:19,568 --> 00:07:23,430
+if it is satisfy the physicality,
+body natural shape.
+
+106
+00:07:23,430 --> 00:07:26,820
+And this function is called the resi,
+residual.
+
+107
+00:07:26,820 --> 00:07:31,630
+So if the 3D cloth shape
+is not in the desired,
+
+108
+00:07:31,630 --> 00:07:34,000
+appropriate physically balanced shape.
+
+109
+00:07:34,000 --> 00:07:36,525
+This zero becomes bigger, larger.
+
+110
+00:07:36,525 --> 00:07:39,880
+And then we, we gradually,
+this residual are smaller.
+
+111
+00:07:39,880 --> 00:07:42,080
+They get more physically
+realistic results.
+
+112
+00:07:42,080 --> 00:07:45,240
+So that's the problem we try to solve.
+
+113
+00:07:45,240 --> 00:07:48,090
+And visually,
+the situation looks like this.
+
+114
+00:07:48,090 --> 00:07:51,460
+So you have a space of varied designs.
+
+115
+00:07:51,460 --> 00:07:52,470
+And on this view,
+
+116
+00:07:52,470 --> 00:07:56,570
+on this axis, you have many different
+two dimensional cloth patterns.
+
+117
+00:07:56,570 --> 00:07:59,180
+So use the space for
+that starts from this pattern and
+
+118
+00:07:59,180 --> 00:08:01,340
+then moves to another pattern,
+and use the edit.
+
+119
+00:08:03,070 --> 00:08:07,535
+And for each shape,
+you have a single iso surface, or
+
+120
+00:08:07,535 --> 00:08:11,240
+space-specific region, where R becomes 0.
+
+121
+00:08:11,240 --> 00:08:16,159
+So here, it's represented as
+a single line, single cloth line.
+
+122
+00:08:16,159 --> 00:08:16,688
+So, for
+
+123
+00:08:16,688 --> 00:08:21,842
+the given 2D clothes pattern, we take
+a look at the region where the R equals 0.
+
+124
+00:08:21,842 --> 00:08:26,766
+And then look at the 3D shape, and
+then you will get the proper 3D output.
+
+125
+00:08:26,766 --> 00:08:31,515
+So this is a, very very simplified
+view of what's going on internally.
+
+126
+00:08:31,515 --> 00:08:34,786
+The program is at, notice here.
+
+127
+00:08:34,786 --> 00:08:40,857
+So R, the residual is very highly
+non-linear and very, very slow to compute.
+
+128
+00:08:40,857 --> 00:08:45,850
+So, yes, so R 0 is very curved and
+very complicated.
+
+129
+00:08:45,850 --> 00:08:51,520
+When you change the pattern, you have to
+recompute R, which takes too much time.
+
+130
+00:08:51,520 --> 00:08:54,240
+So we,
+what we use is a kind of a stanadard.
+
+131
+00:08:54,240 --> 00:08:58,340
+But we use a linear appro,
+approximation around the current state.
+
+132
+00:08:58,340 --> 00:08:59,910
+So visually, it looks like this.
+
+133
+00:09:01,548 --> 00:09:05,350
+So, this a current design and
+then you compute the linear appro,
+
+134
+00:09:05,350 --> 00:09:08,440
+approximation of this residual function.
+
+135
+00:09:08,440 --> 00:09:13,330
+And this method called, called sensitivity
+analysis in structural analysis.
+
+136
+00:09:13,330 --> 00:09:17,997
+And then after computing linear
+approximation it's kind of easy,
+
+137
+00:09:17,997 --> 00:09:21,757
+to predict the,
+compute from 2D input to 3D shape.
+
+138
+00:09:21,757 --> 00:09:24,290
+Just by solving our linear system.
+
+139
+00:09:24,290 --> 00:09:25,410
+Which is faster.
+
+140
+00:09:25,410 --> 00:09:28,420
+Of course,
+this is an approximation near this design.
+
+141
+00:09:28,420 --> 00:09:32,240
+So, if you go farther away,
+then it's, it becomes too different.
+
+142
+00:09:32,240 --> 00:09:35,570
+So and your system.
+
+143
+00:09:35,570 --> 00:09:37,690
+So single linear
+appropriate is nothing now.
+
+144
+00:09:37,690 --> 00:09:40,340
+Users who're walking far
+away from the linear state.
+
+145
+00:09:40,340 --> 00:09:44,899
+It's a difference from the real
+physically realistic result gets bigger.
+
+146
+00:09:44,899 --> 00:09:50,480
+So in that case, we compute another
+approximation here right this way.
+
+147
+00:09:50,480 --> 00:09:51,310
+And then, so
+
+148
+00:09:51,310 --> 00:09:56,800
+we cache multiple linear approximations
+occasionally and then blend them.
+
+149
+00:09:56,800 --> 00:09:59,620
+So, in this case,
+if you have two examples and
+
+150
+00:09:59,620 --> 00:10:03,790
+if you blend these two, you get a very,
+very close approximation.
+
+151
+00:10:03,790 --> 00:10:06,250
+And this is still very fast to compute.
+
+152
+00:10:06,250 --> 00:10:08,700
+So that's what we do in internally.
+
+153
+00:10:08,700 --> 00:10:10,750
+So caching happens occasionally.
+
+154
+00:10:10,750 --> 00:10:14,150
+So, the user,
+the system continuously monitors.
+
+155
+00:10:14,150 --> 00:10:15,828
+Users the dragging operation.
+
+156
+00:10:15,828 --> 00:10:21,040
+And then when the users dragging getting
+far away, you create another cache.
+
+157
+00:10:21,040 --> 00:10:22,421
+Now you have two cache, and
+
+158
+00:10:22,421 --> 00:10:26,279
+you move far away from these two caches,
+the system will generate another.
+
+159
+00:10:26,279 --> 00:10:33,424
+So in this way, the system incrementally,
+the more and more caches.
+
+160
+00:10:33,424 --> 00:10:34,820
+So this is a summary.
+
+161
+00:10:34,820 --> 00:10:39,624
+So we presented garment design with
+concurrent physical simulation.
+
+162
+00:10:39,624 --> 00:10:41,353
+So we edit a 2D pattern.
+
+163
+00:10:41,353 --> 00:10:45,648
+And the system presents
+3D draping results.
+
+164
+00:10:45,648 --> 00:10:47,614
+And then we have uprising sensite,
+
+165
+00:10:47,614 --> 00:10:50,898
+sensiivity analysis which
+is linear approximation.
+
+166
+00:10:50,898 --> 00:10:54,416
+And those are multiple caches
+before providing rapid
+
+167
+00:10:54,416 --> 00:10:57,630
+feedback without random
+simulation each time.
+
+168
+00:10:59,360 --> 00:11:03,960
+So, to learn more the original paper
+was published on Sensitive Couture for
+
+169
+00:11:03,960 --> 00:11:06,720
+Interactive Garment Editing and Modeling.
+
+170
+00:11:06,720 --> 00:11:11,830
+And the garment design is also a hot,
+popular topic in graphics community.
+
+171
+00:11:11,830 --> 00:11:15,790
+And one example is Virtual Garments,
+A Fully Geometric Approach for
+
+172
+00:11:15,790 --> 00:11:16,610
+Clothing Design.
+
+173
+00:11:16,610 --> 00:11:20,100
+So, in this project,
+they did not use any physical simulation.
+
+174
+00:11:20,100 --> 00:11:22,100
+Purely geometry approach, but
+
+175
+00:11:22,100 --> 00:11:26,180
+the, but they can rapidly generate
+reasonable shapes this way.
+
+176
+00:11:27,180 --> 00:11:27,680
+Thank you.

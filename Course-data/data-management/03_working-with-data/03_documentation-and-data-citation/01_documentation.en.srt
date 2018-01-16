@@ -1,0 +1,250 @@
+1
+00:00:11,975 --> 00:00:16,884
+In this module, you'll be introduced
+to the concepts of documentation and
+
+2
+00:00:16,884 --> 00:00:17,966
+data citation.
+
+3
+00:00:17,966 --> 00:00:22,429
+By the end of the module, you'll
+understand why documentation is important,
+
+4
+00:00:22,429 --> 00:00:24,300
+and how and when to use metadata.
+
+5
+00:00:25,380 --> 00:00:28,600
+You'll also understand
+the relevance of data citation, and
+
+6
+00:00:28,600 --> 00:00:30,630
+will learn how to do this.
+
+7
+00:00:30,630 --> 00:00:32,190
+So why document your data?
+
+8
+00:00:33,210 --> 00:00:37,650
+By documenting your data systematically,
+you'll first and foremost help yourself.
+
+9
+00:00:38,940 --> 00:00:42,810
+You may be very familiar with your
+data when you're first creating it.
+
+10
+00:00:42,810 --> 00:00:45,760
+But the chances that you'll remember
+what all of the variables and
+
+11
+00:00:45,760 --> 00:00:49,330
+abbreviations mean in several months or
+years are slim.
+
+12
+00:00:51,030 --> 00:00:55,820
+The importance of documenting your data
+while you're creating and analyzing it,
+
+13
+00:00:55,820 --> 00:00:59,100
+and everything is still fresh in
+your mind, can't be overestimated.
+
+14
+00:01:00,400 --> 00:01:03,680
+Others will also need good
+documentation to understand your work.
+
+15
+00:01:04,680 --> 00:01:09,680
+This is particularly important if they're
+going to review your publications, try and
+
+16
+00:01:09,680 --> 00:01:14,650
+validate your research findings, or
+even use your data in new studies.
+
+17
+00:01:14,650 --> 00:01:18,600
+Some examples of data
+documentation are lab notebooks and
+
+18
+00:01:18,600 --> 00:01:22,632
+experimental protocols,
+questionnaires, codebooks,
+
+19
+00:01:22,632 --> 00:01:26,510
+data dictionaries,
+software syntax and output files.
+
+20
+00:01:26,510 --> 00:01:30,964
+Information about your equipment
+settings and calibration,
+
+21
+00:01:30,964 --> 00:01:36,181
+database schema, methodology reports,
+and provenance information.
+
+22
+00:01:36,181 --> 00:01:39,490
+Laboratory notebooks are crucial
+documents to be properly managed.
+
+23
+00:01:40,890 --> 00:01:44,590
+They can help in asserting
+intellectual property rights, and
+
+24
+00:01:44,590 --> 00:01:47,840
+can even help you defend against
+claims of scientific fraud.
+
+25
+00:01:48,990 --> 00:01:51,130
+In less extreme circumstances,
+
+26
+00:01:51,130 --> 00:01:54,530
+they can demonstrate adherence with
+standards of good practice and
+
+27
+00:01:54,530 --> 00:01:59,230
+ethical integrity, and show compliance
+with any contractual obligations.
+
+28
+00:02:00,300 --> 00:02:02,990
+Routine documentation of all lab work
+
+29
+00:02:02,990 --> 00:02:06,960
+is an important responsibility
+of laboratory researchers.
+
+30
+00:02:06,960 --> 00:02:09,810
+There are three levels
+of data documentation.
+
+31
+00:02:09,810 --> 00:02:11,610
+Let's take a look at them one by one.
+
+32
+00:02:12,900 --> 00:02:15,930
+So first up we have project
+level documentation.
+
+33
+00:02:15,930 --> 00:02:19,290
+Here you want to document
+what the study set out to do,
+
+34
+00:02:19,290 --> 00:02:22,570
+what the research questions and
+hypotheses were, and
+
+35
+00:02:22,570 --> 00:02:27,330
+what methodologies, sampling frames,
+instruments, or measures were used.
+
+36
+00:02:28,460 --> 00:02:33,010
+This information may be included in
+your theses, your published articles,
+
+37
+00:02:33,010 --> 00:02:35,270
+data papers or technical reports.
+
+38
+00:02:36,540 --> 00:02:40,908
+Second, we have file or
+database level documentation.
+
+39
+00:02:40,908 --> 00:02:42,000
+A, you should document,
+
+40
+00:02:42,000 --> 00:02:46,300
+how all of the files that make up
+the dataset relate to one another.
+
+41
+00:02:46,300 --> 00:02:49,960
+A readme.txt file is
+a classic way of doing this.
+
+42
+00:02:49,960 --> 00:02:53,810
+And finally, we have variable or
+item level documentation.
+
+43
+00:02:55,190 --> 00:02:59,260
+This isn't just defining the variable
+names at the top of the spreadsheet file,
+
+44
+00:02:59,260 --> 00:03:03,680
+but including a full label to explain
+the meaning of that variable.
+
+45
+00:03:03,680 --> 00:03:08,820
+In the course of publishing research,
+it's essential to cite your sources.
+
+46
+00:03:08,820 --> 00:03:13,450
+The reference list at the end of the
+publication shows the credibility of your
+
+47
+00:03:13,450 --> 00:03:18,680
+claims and also the prominence of
+a particular theory or school of thought.
+
+48
+00:03:18,680 --> 00:03:23,867
+So this is no less true for datasets than
+for publications, but somehow the practice
+
+49
+00:03:23,867 --> 00:03:28,264
+of proper data citation has been slow
+to take root in academic culture.
+
+50
+00:03:28,264 --> 00:03:33,011
+All too often we see very basic labels and
+charts in publications,
+
+51
+00:03:33,011 --> 00:03:37,929
+such as Source: OECD, without any proper
+information in the references
+
+52
+00:03:37,929 --> 00:03:41,260
+about how you can access
+the underlying data.

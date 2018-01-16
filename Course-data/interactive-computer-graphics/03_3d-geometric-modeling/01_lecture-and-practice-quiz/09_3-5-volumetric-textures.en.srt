@@ -1,0 +1,717 @@
+1
+00:00:00,340 --> 00:00:03,770
+The last topic of this week is volumetric
+textures.
+
+2
+00:00:05,360 --> 00:00:07,710
+The work we introduce here is volumetric
+
+3
+00:00:07,710 --> 00:00:11,730
+illustrations, designing 3D model with
+internal textures.
+
+4
+00:00:12,890 --> 00:00:14,880
+So motivation is here.
+
+5
+00:00:14,880 --> 00:00:17,113
+So we can see carefully designed three
+
+6
+00:00:17,113 --> 00:00:22,290
+dimensional illustration that shows
+complicated internal structure.
+
+7
+00:00:22,290 --> 00:00:25,760
+And this kinds illustration is very
+difficult to
+
+8
+00:00:25,760 --> 00:00:28,700
+generate, and also, it is especially
+difficult to make
+
+9
+00:00:28,700 --> 00:00:32,680
+it possible to interactively draw this
+kind of illustration
+
+10
+00:00:32,680 --> 00:00:35,820
+as you cut an object, so that's a goal.
+
+11
+00:00:35,820 --> 00:00:38,910
+The goal is to design cuttable 3D models.
+
+12
+00:00:38,910 --> 00:00:42,360
+You have 3D geometry, and whenever you
+cut, you
+
+13
+00:00:42,360 --> 00:00:45,720
+will get beautiful cross section, that is
+the goal.
+
+14
+00:00:45,720 --> 00:00:48,402
+And the program is very difficult to do.
+
+15
+00:00:48,402 --> 00:00:55,160
+Traditional, standard 3D models there is
+nothing inside, if you cut it is empty.
+
+16
+00:00:55,160 --> 00:00:59,560
+If you want internal structure, you
+probably need body metric
+
+17
+00:00:59,560 --> 00:01:04,060
+information However, body metric
+information is very difficult to generate.
+
+18
+00:01:04,060 --> 00:01:08,094
+You, essentially you have to paint
+individual pixel
+
+19
+00:01:08,094 --> 00:01:10,455
+box in x, y, g space one by one.
+
+20
+00:01:10,455 --> 00:01:11,720
+Especially if you want colors.
+
+21
+00:01:11,720 --> 00:01:14,240
+It's very, too complicated.
+
+22
+00:01:14,240 --> 00:01:17,790
+You can also use CD scanners or MRI to
+scan
+
+23
+00:01:17,790 --> 00:01:21,210
+but they just give you intensive values
+and there's no
+
+24
+00:01:21,210 --> 00:01:25,791
+beautiful colors assigned and that's a
+problem we address and
+
+25
+00:01:25,791 --> 00:01:30,400
+the base guide here is to use picture
+synthesis technique.
+
+26
+00:01:30,400 --> 00:01:34,620
+So as soon as you cut the marrow,
+[UNKNOWN] there is nothing inside.
+
+27
+00:01:34,620 --> 00:01:38,547
+But in the modeling phase, the designer
+specifies
+
+28
+00:01:38,547 --> 00:01:43,510
+which texture elements to use to generate
+cross section.
+
+29
+00:01:43,510 --> 00:01:46,500
+Using this information or hint system in
+
+30
+00:01:46,500 --> 00:01:50,250
+the real time synthesizes the real
+texture.
+
+31
+00:01:50,250 --> 00:01:56,250
+So from the users point of view, it looks
+like there is an existing texture inside.
+
+32
+00:01:56,250 --> 00:01:57,220
+That's the idea.
+
+33
+00:01:57,220 --> 00:01:58,440
+I'm going to show you a video.
+
+34
+00:01:58,440 --> 00:02:06,996
+[BLANK_AUDIO]
+
+35
+00:02:06,996 --> 00:02:08,680
+So here's the system overview.
+
+36
+00:02:10,600 --> 00:02:16,281
+So you provide input image and then as
+soon as a user cut a 3D model.
+
+37
+00:02:16,281 --> 00:02:17,760
+Make sure it's empty.
+
+38
+00:02:17,760 --> 00:02:20,940
+But system synthesis cross section
+
+39
+00:02:20,940 --> 00:02:24,414
+automatically using texture synthesis
+technique.
+
+40
+00:02:33,490 --> 00:02:36,980
+So let me fast show you the user interface
+for browsing.
+
+41
+00:02:36,980 --> 00:02:42,430
+So here's an input solidity shape, and the
+user cut the shape
+
+42
+00:02:42,430 --> 00:02:47,059
+and the system synthesizes the cross
+section and then you get this result.
+
+43
+00:02:49,840 --> 00:02:53,350
+And if you cut in different way, you get
+different texture.
+
+44
+00:02:53,350 --> 00:02:59,060
+So from users point of view, it looks like
+it has three dimensional textures.
+
+45
+00:02:59,060 --> 00:03:03,690
+But from the systems point of view, it
+just paints the cross section.
+
+46
+00:03:05,410 --> 00:03:09,745
+Here's a cucumber, when you cut it, you
+get cross section everywhere.
+
+47
+00:03:09,745 --> 00:03:13,785
+So it was
+
+48
+00:03:13,785 --> 00:03:18,390
+browsing
+
+49
+00:03:18,390 --> 00:03:25,970
+interface and now we show the modeling
+interface.
+
+50
+00:03:25,970 --> 00:03:28,636
+So the modeling starts with the given
+
+51
+00:03:28,636 --> 00:03:32,920
+3D surface model, nothing inside just
+surface.
+
+52
+00:03:32,920 --> 00:03:37,930
+And the way we'll teach how to synthesize
+internal texture to the system, so user
+
+53
+00:03:37,930 --> 00:03:44,420
+fast cut, example cross section, and they
+cut and see the inside.
+
+54
+00:03:44,420 --> 00:03:47,650
+And they user specifies, which texture
+type
+
+55
+00:03:47,650 --> 00:03:52,070
+you use, isotopic, orientation or layered,
+or oriented.
+
+56
+00:03:54,670 --> 00:03:59,470
+Then if the user chooses layered texture,
+the
+
+57
+00:03:59,470 --> 00:04:03,430
+system asks the user to specify example
+textures.
+
+58
+00:04:03,430 --> 00:04:09,110
+Say drop image here and the user drag and
+drop meat photograph.
+
+59
+00:04:09,110 --> 00:04:13,730
+And the user teaches which particles or
+image to use.
+
+60
+00:04:13,730 --> 00:04:17,150
+This is the outside, this is the inside
+and you'll get this.
+
+61
+00:04:19,590 --> 00:04:22,166
+And then also, user specify of there is
+
+62
+00:04:22,166 --> 00:04:25,770
+a difference in volume and inside and
+outside.
+
+63
+00:04:25,770 --> 00:04:29,994
+And you teach which part of the sodium
+model is inside or outside.
+
+64
+00:04:29,994 --> 00:04:35,922
+It is these correspondences, now the
+system has enough information,
+
+65
+00:04:35,922 --> 00:04:40,976
+and then synthesizes the picture, using
+the 3D modeling.
+
+66
+00:04:40,976 --> 00:04:44,047
+Now given this information, now we are
+able to use our
+
+67
+00:04:44,047 --> 00:04:49,041
+cut in different locations, the systems
+synthesizes it in the appropriate picture.
+
+68
+00:04:49,041 --> 00:04:54,473
+[BLANK_AUDIO]
+
+69
+00:04:54,473 --> 00:04:58,650
+In this system we supported three types,
+three types.
+
+70
+00:04:58,650 --> 00:05:02,551
+So, first one is Isotropic, so there's an
+orientation.
+
+71
+00:05:02,551 --> 00:05:10,910
+So, it's the easiest one, Like [UNKNOWN]
+or sponge, potato and others.
+
+72
+00:05:10,910 --> 00:05:18,310
+You just pick a type and then log on with
+a single texture, or orientation.
+
+73
+00:05:20,720 --> 00:05:25,050
+And then since this is automatically
+starts, like this.
+
+74
+00:05:25,050 --> 00:05:25,550
+The
+
+75
+00:05:34,120 --> 00:05:44,090
+second one is layered structure, such as,
+carrots, or cakes, and others.
+
+76
+00:05:44,090 --> 00:05:47,040
+And this is also a layered structure.
+
+77
+00:05:47,040 --> 00:05:51,330
+And here is a select the layer picture,
+and then get an image,
+
+78
+00:05:51,330 --> 00:05:57,640
+another set as we've already seen, use the
+space files inside or outside.
+
+79
+00:05:57,640 --> 00:06:00,500
+Or top and bottom and you also need to
+
+80
+00:06:00,500 --> 00:06:04,745
+space away the same thing for the 3D eh,
+geometry.
+
+81
+00:06:04,745 --> 00:06:07,383
+Top and bottom.
+
+82
+00:06:08,820 --> 00:06:12,900
+And now we know the correspondence between
+difference images and the 3D
+
+83
+00:06:12,900 --> 00:06:15,290
+geometry, and then system starts to
+
+84
+00:06:15,290 --> 00:06:18,270
+synthesize the texture of our chocolate
+cake.
+
+85
+00:06:20,560 --> 00:06:22,790
+The same thing for carrot, you can specify
+
+86
+00:06:22,790 --> 00:06:26,990
+inside, outside and the inside, outside
+for 3D shape.
+
+87
+00:06:26,990 --> 00:06:30,130
+And the system synthesizes the shape,
+texture.
+
+88
+00:06:32,150 --> 00:06:34,530
+The final one is oriented textures,
+
+89
+00:06:36,830 --> 00:06:38,830
+like this bamboo shape.
+
+90
+00:06:38,830 --> 00:06:42,450
+Bamboo fibers have a specific orientation.
+
+91
+00:06:42,450 --> 00:06:46,677
+So in that case user needs to specify the
+orientation of fibers.
+
+92
+00:06:46,677 --> 00:06:52,542
+So user input is two dimensional texture
+of a horizontal
+
+93
+00:06:52,542 --> 00:06:57,782
+cut and then you get three dimensional
+volume
+
+94
+00:06:57,782 --> 00:07:03,791
+difference, and then user specifies the
+orientation.
+
+95
+00:07:03,791 --> 00:07:09,417
+So here, user draws lines here and then
+orientation of hair is automatically
+
+96
+00:07:09,417 --> 00:07:15,144
+generated, and the system synthesizes the
+texture along with orientation.
+
+97
+00:07:15,144 --> 00:07:20,431
+[BLANK_AUDIO]
+
+98
+00:07:20,431 --> 00:07:24,337
+Sorry it's a little bit difficult to see
+in this presentation, but I hope
+
+99
+00:07:24,337 --> 00:07:28,060
+you see, for example, more lines here and
+lots of dots here, and so.
+
+100
+00:07:34,530 --> 00:07:37,570
+And here is an example, modeling example,
+
+101
+00:07:37,570 --> 00:07:40,660
+so you have a three dimensional tooth
+model.
+
+102
+00:07:40,660 --> 00:07:45,308
+First there is nothing inside,
+
+103
+00:07:45,308 --> 00:07:50,300
+then you pick up a photograph of the
+
+104
+00:07:50,300 --> 00:07:56,153
+insulation and then you put, specified
+
+105
+00:07:56,153 --> 00:08:01,145
+additions and then you will get the
+
+106
+00:08:01,145 --> 00:08:06,860
+body metric texture for a tooth.
+
+107
+00:08:06,860 --> 00:08:07,360
+That's it.
+
+108
+00:08:08,470 --> 00:08:12,710
+And here's a couple of results, like
+cucumber, or a donut, or bamboo, or tooth.
+
+109
+00:08:14,640 --> 00:08:19,710
+And, as I said, modelling phase, you use a
+specified how to paste the image to
+
+110
+00:08:19,710 --> 00:08:24,920
+the 3D model from the closed section, by
+specifying outside, inside, and so on.
+
+111
+00:08:24,920 --> 00:08:26,530
+Another way is like this.
+
+112
+00:08:26,530 --> 00:08:31,720
+So for the reference image, use a space
+slice inside and outside and then you
+
+113
+00:08:31,720 --> 00:08:38,450
+compute the control mark, kind of
+diffusion over the distance from inside.
+
+114
+00:08:38,450 --> 00:08:42,310
+And then also you get the same control map
+for the cross-section.
+
+115
+00:08:42,310 --> 00:08:46,550
+For the information or notation given to
+the 3-D shape.
+
+116
+00:08:46,550 --> 00:08:49,900
+And then, given this to information system
+generates
+
+117
+00:08:49,900 --> 00:08:53,620
+a synthesize cross section using textures
+synthesis algorithm.
+
+118
+00:08:54,750 --> 00:08:58,240
+And let me briefly describe the texture
+synthesis algorithm.
+
+119
+00:08:58,240 --> 00:09:02,730
+Texture synthesis is a very popular
+technique in computer graphics.
+
+120
+00:09:02,730 --> 00:09:07,570
+And it generates a larger texture from
+input smaller texture.
+
+121
+00:09:07,570 --> 00:09:10,500
+And when our original paper was published
+in
+
+122
+00:09:10,500 --> 00:09:13,740
+99, and the basic idea is very, very
+simple.
+
+123
+00:09:13,740 --> 00:09:17,780
+So, for synthesising a new texture from
+each individual
+
+124
+00:09:19,750 --> 00:09:26,080
+pixel, you just searches for the similar
+context pixel in the left virus.
+
+125
+00:09:26,080 --> 00:09:29,230
+And of you find a more similar one, just
+get a
+
+126
+00:09:29,230 --> 00:09:33,520
+color or the more similar pixel just to
+cut into the frame.
+
+127
+00:09:33,520 --> 00:09:37,002
+So, just by repeating this many times
+starting
+
+128
+00:09:37,002 --> 00:09:41,017
+from a [UNKNOWN] you get very, very
+realistic texture.
+
+129
+00:09:41,017 --> 00:09:43,602
+And this technique is very frequently used
+
+130
+00:09:43,602 --> 00:09:46,920
+and recently, already used in commercial
+products.
+
+131
+00:09:49,480 --> 00:09:52,050
+So yeah, so original paper was published
+
+132
+00:09:52,050 --> 00:09:56,040
+in 2004 as Volumetric Illustrations and
+Texture
+
+133
+00:09:56,040 --> 00:10:03,630
+Synthesis, a lot of papers, but original
+paper was Texture Synthesis in ICCV, '99.
+
+134
+00:10:03,630 --> 00:10:08,524
+And if you want to now the recent ones, a
+famous one is PatchMatch.
+
+135
+00:10:08,524 --> 00:10:14,270
+Published in 2009, and this is currently
+used in Photoshop, and those applications.
+
+136
+00:10:15,380 --> 00:10:20,545
+There are a couple more, recent 3D picture
+in solid texture and
+
+137
+00:10:20,545 --> 00:10:25,530
+not solid textures .And so these may be
+interesting for you.
+
+138
+00:10:25,530 --> 00:10:26,700
+Thank you.
+
+139
+00:10:29,210 --> 00:10:31,370
+Okay so this is the end of 3D Modeling.
+
+140
+00:10:31,370 --> 00:10:37,520
+We introduced suggestive interface,
+sketch-based modeling, shape control by
+
+141
+00:10:37,520 --> 00:10:44,130
+curves, and volumetric textures and let me
+go back to the initial discussion.
+
+142
+00:10:44,130 --> 00:10:46,420
+So the challenge in 3D modeling is how
+
+143
+00:10:46,420 --> 00:10:51,190
+to compliment missing information, mainly
+depth or z bodies.
+
+144
+00:10:51,190 --> 00:10:53,840
+An approach is to user a design user
+
+145
+00:10:53,840 --> 00:10:59,550
+interface, an automatic inference
+leveraging domain specific knowledge.
+
+146
+00:10:59,550 --> 00:11:02,900
+So, in the examples we show today, you
+know, for
+
+147
+00:11:02,900 --> 00:11:08,528
+architecture modeling we use hard-coded
+rules for design for architecture models.
+
+148
+00:11:08,528 --> 00:11:11,970
+And for [UNKNOWN] organic shapes, we use
+the
+
+149
+00:11:11,970 --> 00:11:17,060
+inflation algorithms, elimination
+[UNKNOWN] sets, so target is smooth.
+
+150
+00:11:17,060 --> 00:11:18,972
+And for all our modeling, we deduct
+
+151
+00:11:18,972 --> 00:11:22,570
+very specialized structure and zooming in
+the editors.
+
+152
+00:11:22,570 --> 00:11:25,960
+And for cross sections, we use texture
+synthesis outwards.
+
+153
+00:11:27,510 --> 00:11:28,170
+yeah, thank you.

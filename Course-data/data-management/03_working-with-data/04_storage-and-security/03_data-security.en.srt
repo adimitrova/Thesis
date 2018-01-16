@@ -1,0 +1,166 @@
+1
+00:00:12,029 --> 00:00:14,130
+So what do we mean by data security?
+
+2
+00:00:15,320 --> 00:00:19,240
+Data security means ensuring that
+your research data are kept safe from
+
+3
+00:00:19,240 --> 00:00:23,110
+corruption, and
+that access is suitably controlled.
+
+4
+00:00:23,110 --> 00:00:27,460
+>> It's important to consider the security
+of your data to prevent accidental or
+
+5
+00:00:27,460 --> 00:00:32,870
+malicious damage or modification,
+theft, breach of confidentiality,
+
+6
+00:00:32,870 --> 00:00:35,020
+and premature release of the data.
+
+7
+00:00:35,020 --> 00:00:39,220
+>> Consider who'll need access to the data
+and when and how you will enforce any
+
+8
+00:00:39,220 --> 00:00:44,240
+permissions or restrictions needed
+>> You should also have a clear policy and
+
+9
+00:00:44,240 --> 00:00:48,820
+guidelines on who can make copies of the
+data and whether these can be stored on
+
+10
+00:00:48,820 --> 00:00:53,580
+mobile devices such as laptops,
+smart phones or USB sticks.
+
+11
+00:00:53,580 --> 00:00:58,650
+This is particularly important if
+you're creating sensitive data.
+
+12
+00:00:58,650 --> 00:01:02,790
+Making sure data is secure is part
+of information technology security.
+
+13
+00:01:02,790 --> 00:01:05,790
+You should always have
+up-to-date antivirus
+
+14
+00:01:05,790 --> 00:01:09,030
+software installed on your office and
+home computers.
+
+15
+00:01:09,030 --> 00:01:11,030
+If you have sensitive data,
+
+16
+00:01:11,030 --> 00:01:15,380
+it's best to store them on a computer
+that's not connected to any network.
+
+17
+00:01:15,380 --> 00:01:18,700
+If this is impossible,
+you should encrypt the data or the PC.
+
+18
+00:01:20,200 --> 00:01:23,020
+Also bear in mind physical security.
+
+19
+00:01:23,020 --> 00:01:27,360
+An unnetworked computer is still
+vulnerable to theft or malicious damage or
+
+20
+00:01:27,360 --> 00:01:28,770
+modification of the data.
+
+21
+00:01:30,180 --> 00:01:36,110
+Highly sensitive data should be stored in
+a locked room or a safe when not in use.
+
+22
+00:01:36,110 --> 00:01:40,160
+Such data shouldn't be stored or
+transmitted without encryption.
+
+23
+00:01:40,160 --> 00:01:45,940
+One basic aspect of security, that's often
+overlooked, is user names and passwords.
+
+24
+00:01:45,940 --> 00:01:48,240
+There are some simple principles
+that you should follow here.
+
+25
+00:01:49,250 --> 00:01:53,640
+You shouldn't use your user name in your
+email address or your Twitter handle.
+
+26
+00:01:53,640 --> 00:01:55,350
+Try to use an alias instead.
+
+27
+00:01:56,720 --> 00:02:00,660
+Avoid using really obvious phrases for
+your password.
+
+28
+00:02:00,660 --> 00:02:05,750
+Such as your car registration number,
+your pet's name, your phone number or
+
+29
+00:02:05,750 --> 00:02:07,160
+other dictionary words.
+
+30
+00:02:08,180 --> 00:02:11,910
+You shouldn't write your password down
+on Post-it notes or read it aloud,
+
+31
+00:02:11,910 --> 00:02:13,760
+as you type it in.
+
+32
+00:02:13,760 --> 00:02:16,100
+And you should avoid using
+the same password for
+
+33
+00:02:16,100 --> 00:02:19,485
+a cloud service that you use for
+your university login.
+
+34
+00:02:20,720 --> 00:02:25,030
+Last but not least,
+you should avoid signing into secure sites
+
+35
+00:02:25,030 --> 00:02:29,020
+from untrusted computers or
+networks such as Internet cafes,

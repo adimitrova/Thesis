@@ -1,0 +1,643 @@
+1
+00:00:00,025 --> 00:00:03,799
+[SOUND] Hello, and
+
+2
+00:00:03,799 --> 00:00:08,333
+good to see you back.
+
+3
+00:00:08,333 --> 00:00:12,200
+Let me make a small recap
+about the previous lecture.
+
+4
+00:00:12,200 --> 00:00:15,035
+In the previous lecture,
+we went more technical, and
+
+5
+00:00:15,035 --> 00:00:19,360
+gave a general definition of a processor,
+and an FPGA.
+
+6
+00:00:19,360 --> 00:00:24,450
+We also made a comparison between these
+two types of processing elements.
+
+7
+00:00:24,450 --> 00:00:29,430
+I hope you remember the main difference
+between them, which is sequential nature
+
+8
+00:00:29,430 --> 00:00:32,900
+of a processor,
+versus the parallel nature of an FPGA.
+
+9
+00:00:34,010 --> 00:00:38,390
+I hope now you have some basic intuition
+on what a processor and FPGAs are.
+
+10
+00:00:39,600 --> 00:00:43,920
+In this lecture, more details on
+an embedded processor will be given.
+
+11
+00:00:43,920 --> 00:00:47,430
+And we will also discuss the main
+features of an embedded processor.
+
+12
+00:00:48,690 --> 00:00:53,260
+First of all, a processor is an electronic
+device that executes instructions.
+
+13
+00:00:54,440 --> 00:00:57,350
+The processor does not
+understand anything but
+
+14
+00:00:57,350 --> 00:01:02,530
+numbers, and can work with and
+manipulate only numbers.
+
+15
+00:01:02,530 --> 00:01:05,350
+So instructions are not an exception.
+
+16
+00:01:05,350 --> 00:01:07,270
+They are numbers.
+
+17
+00:01:07,270 --> 00:01:13,000
+However, unfortunately, humans are not
+as fast with numbers as processors.
+
+18
+00:01:13,000 --> 00:01:17,820
+So instructions are described with words
+to make them comprehensible for people.
+
+19
+00:01:19,190 --> 00:01:22,360
+All the instructions are stored in memory.
+
+20
+00:01:22,360 --> 00:01:26,214
+And they are fetched from the memory,
+one by one, to be executed.
+
+21
+00:01:28,861 --> 00:01:32,406
+Obviously, there is a wide range
+of different applications that
+
+22
+00:01:32,406 --> 00:01:33,830
+can be run on a processor.
+
+23
+00:01:34,970 --> 00:01:37,740
+And it is clear that one type of processor
+
+24
+00:01:37,740 --> 00:01:41,620
+cannot deal with this range of
+applications in an equally efficient way.
+
+25
+00:01:42,930 --> 00:01:47,360
+So it makes sense to have several
+types of embedded processors,
+
+26
+00:01:47,360 --> 00:01:50,440
+which are dedicated to certain
+types of applications.
+
+27
+00:01:51,960 --> 00:01:56,110
+To make an example, let's think
+about signal processing techniques,
+
+28
+00:01:56,110 --> 00:01:58,100
+which are used for image processing.
+
+29
+00:01:59,160 --> 00:02:03,620
+Signal processing has different, basic
+linear algebra routines in it's core.
+
+30
+00:02:04,800 --> 00:02:09,540
+DSP Processors are designed
+specifically for signal processing,
+
+31
+00:02:09,540 --> 00:02:13,600
+which have dedicated units that deal
+with those routines efficiently.
+
+32
+00:02:15,050 --> 00:02:20,810
+During our course we will mostly talk
+about Microcontrollers, or MC use.
+
+33
+00:02:20,810 --> 00:02:24,270
+And here I want to mention that
+Microcontrollers are meant for
+
+34
+00:02:24,270 --> 00:02:29,810
+general purpose applications, and most of
+them are resource constrained devices,
+
+35
+00:02:29,810 --> 00:02:33,540
+which are not meant for
+computationally intensive tasks.
+
+36
+00:02:35,260 --> 00:02:40,020
+There are also GPUs with thousands
+of cores within, which are meant for
+
+37
+00:02:40,020 --> 00:02:44,050
+extremely computationally demanding
+tasks like graphics rendering.
+
+38
+00:02:46,140 --> 00:02:50,000
+Of course it is sometimes challenging
+to choose in a specific type
+
+39
+00:02:50,000 --> 00:02:51,940
+of embedded processor.
+
+40
+00:02:51,940 --> 00:02:55,140
+Therefore, we have several
+metrics to make such choice.
+
+41
+00:02:56,380 --> 00:03:02,240
+Some of them, performance,
+energy consumption, versatility, and cost.
+
+42
+00:03:03,480 --> 00:03:05,330
+As it was said a bit earlier,
+
+43
+00:03:05,330 --> 00:03:10,140
+it is not possible to cover all the types
+of embedded processors in this course.
+
+44
+00:03:10,140 --> 00:03:13,450
+However, we are going to
+elaborate on microcontrollers.
+
+45
+00:03:15,430 --> 00:03:19,859
+I am going to shortly explain each of the
+main characteristics of a microcontroller.
+
+46
+00:03:21,330 --> 00:03:25,580
+A microcontroller has in
+its architecture a CPU,
+
+47
+00:03:25,580 --> 00:03:30,500
+which is in charge of fetching,
+decoding, and executing instructions.
+
+48
+00:03:31,690 --> 00:03:36,929
+The arithmetic logic unit is the unit
+that actually performs the computations.
+
+49
+00:03:38,270 --> 00:03:42,670
+Data is loaded into the CPU's
+registers from the data memory
+
+50
+00:03:42,670 --> 00:03:44,170
+using special instructions.
+
+51
+00:03:45,390 --> 00:03:49,340
+In the same way, the result of
+computations can be stored in memory.
+
+52
+00:03:51,110 --> 00:03:55,739
+The program is stored in a program
+memory as a sequence of instructions.
+
+53
+00:03:57,300 --> 00:04:02,280
+In order to keep track of where
+the execution is in this sequence,
+
+54
+00:04:02,280 --> 00:04:03,590
+there is a program counter.
+
+55
+00:04:05,250 --> 00:04:09,060
+There is also RAM memory
+available in microcontrollers and
+
+56
+00:04:09,060 --> 00:04:13,020
+some kinds of non-volatile memory,
+such as EEPROM.
+
+57
+00:04:14,770 --> 00:04:19,770
+Microcontrollers include different kinds
+of peripherals such as communication
+
+58
+00:04:19,770 --> 00:04:24,275
+units, timers, ADCs, DACs, etcetera.
+
+59
+00:04:25,880 --> 00:04:30,910
+If we think about the instruction's
+execution, the question that arises is,
+
+60
+00:04:30,910 --> 00:04:34,240
+when is it time to actually
+execute an instruction?
+
+61
+00:04:35,430 --> 00:04:39,060
+The answer is that
+the execution is clocked, so
+
+62
+00:04:39,060 --> 00:04:41,510
+it happens according to a clock frequency.
+
+63
+00:04:42,840 --> 00:04:47,570
+Each instruction takes on one or
+several clock cycles to complete.
+
+64
+00:04:48,920 --> 00:04:49,800
+From this,
+
+65
+00:04:49,800 --> 00:04:53,630
+you can conclude that the execution
+time depends on the clock frequency.
+
+66
+00:04:55,050 --> 00:04:58,310
+The clock frequency of
+microcontrollers can derive from
+
+67
+00:04:58,310 --> 00:05:01,215
+several megahertz to several
+hundreds of megahertz.
+
+68
+00:05:02,490 --> 00:05:05,330
+There's a special dedicated unit called
+
+69
+00:05:05,330 --> 00:05:09,450
+Clock Control unit that it's
+responsible for managing clocking.
+
+70
+00:05:10,510 --> 00:05:15,470
+For example, this unit can scale
+down an input reference frequency or
+
+71
+00:05:15,470 --> 00:05:18,690
+multiply it to obtain
+a higher club frequency.
+
+72
+00:05:20,252 --> 00:05:23,970
+A microcontroller may have several
+sources of clock frequency.
+
+73
+00:05:25,130 --> 00:05:27,620
+One of them is an internal RC oscillator.
+
+74
+00:05:28,620 --> 00:05:33,410
+However, the stability of this kind
+of oscillators is low, that's why
+
+75
+00:05:33,410 --> 00:05:38,270
+external clock sources such as an external
+quartz resonator, might be used.
+
+76
+00:05:40,010 --> 00:05:43,740
+It is important to introduce
+the notion of an interrupt,
+
+77
+00:05:43,740 --> 00:05:47,067
+since it is a powerful tool
+to handle real-time events.
+
+78
+00:05:48,670 --> 00:05:51,420
+An interrupt is
+a hardware-generated signal.
+
+79
+00:05:52,500 --> 00:05:57,290
+Indeed, interrupts are meant to break
+the execution flow of a program
+
+80
+00:05:57,290 --> 00:05:59,390
+when some external event happens.
+
+81
+00:06:00,620 --> 00:06:04,680
+For example, assume we have
+some communication unit, and
+
+82
+00:06:04,680 --> 00:06:08,410
+we want to check if there is
+new data in our receive buffer.
+
+83
+00:06:09,920 --> 00:06:13,040
+One way to do it would be
+to write a piece of code
+
+84
+00:06:13,040 --> 00:06:15,310
+that checks the input
+buffer once in a while.
+
+85
+00:06:16,560 --> 00:06:20,340
+However, this approach does
+not allow to know precisely
+
+86
+00:06:20,340 --> 00:06:21,820
+the time when the data arrive.
+
+87
+00:06:23,090 --> 00:06:26,370
+So there is an alternative
+way to manage this task.
+
+88
+00:06:26,370 --> 00:06:31,310
+We can adjust the microcontroller in
+a way so the execution of the main
+
+89
+00:06:31,310 --> 00:06:35,780
+program is interrupted precisely
+when the data comes into the buffer.
+
+90
+00:06:36,860 --> 00:06:41,460
+Moreover, when a certain interrupt occurs,
+the program counter jumps
+
+91
+00:06:41,460 --> 00:06:45,410
+to a specific location in a program
+memory assigned to this interrupt.
+
+92
+00:06:46,820 --> 00:06:50,180
+An interrupt service routine,
+written by a programmer,
+
+93
+00:06:50,180 --> 00:06:52,080
+can reside in this memory location.
+
+94
+00:06:53,650 --> 00:06:56,470
+Once the interrupt service
+routine is finished,
+
+95
+00:06:56,470 --> 00:06:59,180
+the program counter jumps
+back to the main program.
+
+96
+00:07:00,540 --> 00:07:02,790
+Each interrupt can have a priority.
+
+97
+00:07:03,820 --> 00:07:06,660
+If two interrupts happen at the same time,
+
+98
+00:07:06,660 --> 00:07:09,810
+the one with the higher priority
+will be processed first.
+
+99
+00:07:12,040 --> 00:07:16,540
+A standalone CPU is useless if
+it is not supplied with data.
+
+100
+00:07:17,640 --> 00:07:23,119
+Peripherals are exactly for this purpose,
+to give a CPU data to work with.
+
+101
+00:07:24,900 --> 00:07:28,180
+Peripherals can be classified
+into several groups.
+
+102
+00:07:28,180 --> 00:07:36,340
+First, communication units such as SPI,
+I2C, UART, Ethernet, and others.
+
+103
+00:07:36,340 --> 00:07:39,280
+All these units work based
+on specific protocols.
+
+104
+00:07:40,560 --> 00:07:44,750
+Next, there are analog units
+which deal with analog signals.
+
+105
+00:07:44,750 --> 00:07:49,300
+There are ADCs for converting
+a voltage level to a number, and
+
+106
+00:07:49,300 --> 00:07:52,220
+DACs for
+converting a number to a voltage level.
+
+107
+00:07:54,090 --> 00:07:56,720
+Timers constitute another group.
+
+108
+00:07:56,720 --> 00:08:01,160
+They are powerful tools when it comes to
+dealing with clocking and timing issues.
+
+109
+00:08:02,590 --> 00:08:07,430
+With the help of timers,
+PWM can be generator, or
+
+110
+00:08:07,430 --> 00:08:09,460
+they can be used to
+measure time intervals.
+
+111
+00:08:10,870 --> 00:08:12,410
+There are units to manage memory.
+
+112
+00:08:13,460 --> 00:08:17,970
+One of them is DMA, which it stands for
+Direct Memory Access.
+
+113
+00:08:18,970 --> 00:08:23,730
+This unit can transfer data from
+one location of memory to another
+
+114
+00:08:23,730 --> 00:08:25,309
+without the CPU's intervention.
+
+115
+00:08:28,330 --> 00:08:31,569
+Energy efficiency is
+an important issue nowadays, and
+
+116
+00:08:31,569 --> 00:08:35,340
+microcontrollers offer flexible
+alternatives to address it.
+
+117
+00:08:36,790 --> 00:08:41,650
+Modern MCUs have multiple power
+modes that provide developers
+
+118
+00:08:41,650 --> 00:08:45,889
+with fine grain control over the power
+consumption of their applications.
+
+119
+00:08:47,270 --> 00:08:52,770
+This way it is possible to power off
+the CPU, the peripherals, or both of them.
+
+120
+00:08:55,240 --> 00:08:58,710
+Microcontrollers have different
+programming and debugging interfaces.
+
+121
+00:08:59,850 --> 00:09:02,880
+One of the most widely used ones is JTAG.
+
+122
+00:09:04,100 --> 00:09:08,650
+JTAG programmer is a convenient tool,
+especially when it comes to debugging.
+
+123
+00:09:09,900 --> 00:09:12,690
+However, a debugger is not cheap to buy.
+
+124
+00:09:14,180 --> 00:09:17,100
+A bootloader can be a solution to this.
+
+125
+00:09:17,100 --> 00:09:22,780
+A bootloader is a program which
+resides inside of a microcontroller.
+
+126
+00:09:22,780 --> 00:09:28,560
+The bootloader receives a program byte
+by byte via any communication protocol,
+
+127
+00:09:28,560 --> 00:09:31,950
+and writes it into a program
+memory of a microcontroller.
+
+128
+00:09:33,160 --> 00:09:36,540
+Even though a bootloader does
+not allow to debug code,
+
+129
+00:09:36,540 --> 00:09:39,330
+it is a free of charge way to
+program a microcontroller.
+
+130
+00:09:40,930 --> 00:09:42,340
+This is all I have for this video.
+
+131
+00:09:42,340 --> 00:09:47,220
+I hope now you have a more in-depth
+knowledge about embedded processors and
+
+132
+00:09:47,220 --> 00:09:48,715
+microcontrollers.
+
+133
+00:09:48,715 --> 00:09:51,730
+In the next video we will
+cover MCU platforms, and
+
+134
+00:09:51,730 --> 00:09:56,160
+we will also describe some real
+industrial projects, powered by MCUs.
+
+135
+00:09:56,160 --> 00:10:01,049
+[SOUND]

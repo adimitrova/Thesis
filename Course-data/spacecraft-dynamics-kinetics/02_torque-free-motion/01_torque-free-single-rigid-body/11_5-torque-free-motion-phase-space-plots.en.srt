@@ -1,0 +1,803 @@
+1
+00:00:05,519 --> 00:00:07,929
+What other insight do we have,
+
+2
+00:00:07,929 --> 00:00:10,250
+if we assume, as we did with the pole hold plots?
+
+3
+00:00:10,250 --> 00:00:12,119
+So without loss in generality, remember,
+
+4
+00:00:12,119 --> 00:00:14,724
+we can always flip the principal axis such that
+
+5
+00:00:14,724 --> 00:00:16,745
+the largest inertia is axis one,
+
+6
+00:00:16,745 --> 00:00:20,260
+intermediate inertia is axis two and the least inertia axis
+
+7
+00:00:20,260 --> 00:00:22,164
+is axis number three, right?
+
+8
+00:00:22,164 --> 00:00:24,074
+So, I assume this ordering.
+
+9
+00:00:24,074 --> 00:00:26,695
+Then, we found earlier the B's
+
+10
+00:00:26,695 --> 00:00:28,870
+for one and three had to be positive,
+
+11
+00:00:28,870 --> 00:00:32,650
+meaning they have very strong stability for large departures.
+
+12
+00:00:32,650 --> 00:00:35,139
+Here, that's negative, something we have to consider.
+
+13
+00:00:35,139 --> 00:00:36,939
+But intermediate axis, we know,
+
+14
+00:00:36,939 --> 00:00:38,430
+this one is always unstable, right?
+
+15
+00:00:38,430 --> 00:00:41,240
+That was the separatrix stuff, so not too surprising.
+
+16
+00:00:41,240 --> 00:00:44,530
+It's actually linearly stable, nonlinearly unstable
+
+17
+00:00:44,530 --> 00:00:46,630
+and the other two's you don't have it defined.
+
+18
+00:00:46,630 --> 00:00:48,159
+It depends on the situation,
+
+19
+00:00:48,159 --> 00:00:50,270
+on how you're doing that and how you tumbling it for
+
+20
+00:00:50,270 --> 00:00:53,384
+that, you know, the energy levels to get the right sign.
+
+21
+00:00:53,384 --> 00:00:55,640
+So, it's different ways we can do this.
+
+22
+00:00:55,640 --> 00:00:59,439
+So, when you're looking at these systems for small departures,
+
+23
+00:00:59,439 --> 00:01:01,119
+we said, well, you know,
+
+24
+00:01:01,119 --> 00:01:05,680
+k times x is always going to be bigger close to x's around zero,
+
+25
+00:01:05,680 --> 00:01:11,079
+than another a times x is going to be bigger than b times x cubed
+
+26
+00:01:11,079 --> 00:01:13,180
+if x gets small enough.
+
+27
+00:01:13,180 --> 00:01:17,590
+As x gets very very small, x cubed is even smaller, right,
+
+28
+00:01:17,590 --> 00:01:19,799
+whereas x is going to be bigger in that sense.
+
+29
+00:01:19,799 --> 00:01:21,359
+At some point, this magnitudes always
+
+30
+00:01:21,359 --> 00:01:23,469
+crisscross and as x gets large,
+
+31
+00:01:23,469 --> 00:01:26,265
+at some point, x cubed will dominate.
+
+32
+00:01:26,265 --> 00:01:28,870
+So, you can use these coefficients to argue
+
+33
+00:01:28,870 --> 00:01:30,459
+if you have a particular sign.
+
+34
+00:01:30,459 --> 00:01:34,064
+If A1 is positive, that means I've got a positive spring stiffness.
+
+35
+00:01:34,064 --> 00:01:38,073
+That omega one motion should stay nicely bounded and stable,
+
+36
+00:01:38,073 --> 00:01:39,640
+nice oscillatory part.
+
+37
+00:01:39,640 --> 00:01:43,000
+If you have big departures and B is negative,
+
+38
+00:01:43,000 --> 00:01:45,099
+that means once you go too far from the origin,
+
+39
+00:01:45,099 --> 00:01:47,094
+it doesn't just oscillate at some point,
+
+40
+00:01:47,094 --> 00:01:48,844
+it's going to just take off to infinity.
+
+41
+00:01:48,844 --> 00:01:50,784
+That's what you find out in this analysis.
+
+42
+00:01:50,784 --> 00:01:54,340
+Or vice versa, if a is negative, that means, well,
+
+43
+00:01:54,340 --> 00:01:55,325
+it won't be stable.
+
+44
+00:01:55,325 --> 00:01:58,049
+Small departures drive you away from the origin,
+
+45
+00:01:58,049 --> 00:02:02,629
+but if B happens to be positive, in that case,
+
+46
+00:02:02,629 --> 00:02:04,359
+remember you can't have your x's then
+
+47
+00:02:04,359 --> 00:02:05,935
+go to infinity because at some point
+
+48
+00:02:05,935 --> 00:02:07,494
+x cubed is going to dominate
+
+49
+00:02:07,494 --> 00:02:09,164
+and it will try to bring it back.
+
+50
+00:02:09,164 --> 00:02:11,710
+And, in nonlinear system you get things called limit cycles,
+
+51
+00:02:11,710 --> 00:02:13,409
+and it doesn't converge to zero,
+
+52
+00:02:13,409 --> 00:02:15,020
+but these two terms fight each other
+
+53
+00:02:15,020 --> 00:02:18,069
+and you get these cyclic motions that happen in the end.
+
+54
+00:02:18,069 --> 00:02:19,259
+That's what it converges to.
+
+55
+00:02:19,259 --> 00:02:22,090
+So, the take off, this whole class is on nonlinear systems
+
+56
+00:02:22,090 --> 00:02:23,925
+that talk about these things.
+
+57
+00:02:23,925 --> 00:02:27,299
+So yeah, B1 can always be restoring if it's positive,
+
+58
+00:02:27,299 --> 00:02:29,259
+and we showed that.
+
+59
+00:02:29,259 --> 00:02:31,324
+Phase plane plots.
+
+60
+00:02:31,324 --> 00:02:32,824
+Let's talk about that.
+
+61
+00:02:32,824 --> 00:02:35,330
+Many of you have seen them, but not everybody,
+
+62
+00:02:35,330 --> 00:02:37,764
+not everybody's had quite an engineering background.
+
+63
+00:02:37,764 --> 00:02:46,139
+So, if I have a simple mx double dot plus kx system, all right,
+
+64
+00:02:46,139 --> 00:02:48,965
+what is a phase space plot?
+
+65
+00:02:48,965 --> 00:02:51,639
+What's on the horizontal axis?
+
+66
+00:02:51,639 --> 00:02:54,150
+Gamma x.
+
+67
+00:02:54,150 --> 00:02:55,019
+x.
+
+68
+00:02:55,019 --> 00:02:57,330
+And what's on the vertical axis?
+
+69
+00:02:57,330 --> 00:02:58,274
+x-dot, right?
+
+70
+00:02:58,274 --> 00:02:59,922
+So you solve this.
+
+71
+00:02:59,922 --> 00:03:02,145
+So, after some math or numerically,
+
+72
+00:03:02,145 --> 00:03:03,134
+you find what
+
+73
+00:03:03,134 --> 00:03:04,740
+x is going to be, and you have
+
+74
+00:03:04,740 --> 00:03:06,770
+also a solution what x-dot is going to be.
+
+75
+00:03:06,770 --> 00:03:07,990
+If it's numerical, you could,
+
+76
+00:03:07,990 --> 00:03:08,485
+you know, you're always getting
+
+77
+00:03:08,485 --> 00:03:10,659
+your positions and your rates and you're integrating,
+
+78
+00:03:10,659 --> 00:03:12,384
+so you could keep track of all of that.
+
+79
+00:03:12,384 --> 00:03:13,604
+The phase space plot
+
+80
+00:03:13,604 --> 00:03:17,324
+is nothing but a visualization of my position and rates.
+
+81
+00:03:17,324 --> 00:03:20,250
+So, I'm not plotting it versus time, but I'm plotting
+
+82
+00:03:20,250 --> 00:03:24,000
+added positions and velocities compared themselves directly.
+
+83
+00:03:24,000 --> 00:03:26,205
+So, if you have an oscillator equation
+
+84
+00:03:26,205 --> 00:03:28,335
+I give it an initial deflection here,
+
+85
+00:03:28,335 --> 00:03:29,759
+that's where I'm starting,
+
+86
+00:03:29,759 --> 00:03:32,373
+and I have a sinusoidal response, right?
+
+87
+00:03:32,373 --> 00:03:34,175
+Initially, I take the spring.
+
+88
+00:03:34,175 --> 00:03:38,360
+I deflect it and then I just gently let go.
+
+89
+00:03:38,360 --> 00:03:40,684
+The system would just oscillate, right?
+
+90
+00:03:40,684 --> 00:03:42,719
+What happens to the phase space plot?
+
+91
+00:03:42,719 --> 00:03:47,223
+What does that curve look like, for spring mass system?
+
+92
+00:03:47,223 --> 00:03:47,810
+Andrei.
+
+93
+00:03:47,810 --> 00:03:48,650
+Circle.
+
+94
+00:03:48,650 --> 00:03:50,539
+It's a circle, for this case, right?
+
+95
+00:03:50,539 --> 00:03:52,189
+So, at some point, this
+
+96
+00:03:52,189 --> 00:03:54,814
+potential energy goes into kinetic energy
+
+97
+00:03:54,814 --> 00:03:57,085
+right and then it slows down again.
+
+98
+00:03:57,085 --> 00:03:59,210
+And then, the net positions become negative
+
+99
+00:03:59,210 --> 00:04:01,264
+and then it becomes positive again and
+
+100
+00:04:01,264 --> 00:04:03,580
+you're just going to circle around, right?
+
+101
+00:04:03,580 --> 00:04:06,913
+If I give it less deflection,
+
+102
+00:04:06,913 --> 00:04:09,860
+you have a curve that does this.
+
+103
+00:04:09,860 --> 00:04:11,615
+If you give it more deflection,
+
+104
+00:04:11,615 --> 00:04:14,659
+you have bigger curves, right?
+
+105
+00:04:14,659 --> 00:04:18,600
+Do these curves ever intersect?
+
+106
+00:04:18,600 --> 00:04:20,384
+If you start here,
+
+107
+00:04:20,384 --> 00:04:26,227
+could this curve do this and go through here?
+
+108
+00:04:26,227 --> 00:04:30,920
+Then it's a different system.
+
+109
+00:04:30,920 --> 00:04:33,211
+If it's the same dynamical system,
+
+110
+00:04:33,211 --> 00:04:37,855
+can you have phase space lines intersect?
+
+111
+00:04:37,855 --> 00:04:40,074
+And the answer is really no.
+
+112
+00:04:40,074 --> 00:04:43,204
+The challenge with that, if they intercept,
+
+113
+00:04:43,204 --> 00:04:45,910
+if you had a different phase space plots, right?
+
+114
+00:04:45,910 --> 00:04:51,100
+It means if some curve does this and some other curve does this,
+
+115
+00:04:51,100 --> 00:04:54,117
+when you hit this intersection points which way do you go?
+
+116
+00:04:54,117 --> 00:04:56,620
+It's a second order dynamical system.
+
+117
+00:04:56,620 --> 00:04:59,425
+If I'm giving it a position velocity, the accelerations are
+
+118
+00:04:59,425 --> 00:05:01,970
+dictated by equations of motion.
+
+119
+00:05:01,970 --> 00:05:04,154
+You can't be going in two different directions.
+
+120
+00:05:04,154 --> 00:05:06,454
+Maybe unless you go on quantum stuff or something, you know.
+
+121
+00:05:06,454 --> 00:05:09,790
+But for classic mechanics systems, if given a position velocity,
+
+122
+00:05:09,790 --> 00:05:11,589
+there is a very distinct acceleration
+
+123
+00:05:11,589 --> 00:05:14,069
+and that velocity will evolve in a certain direction.
+
+124
+00:05:14,069 --> 00:05:16,329
+So, you don't typically see these lines intersect,
+
+125
+00:05:16,329 --> 00:05:19,379
+but you get these flow diagrams that you can draw,
+
+126
+00:05:19,379 --> 00:05:22,779
+and they will show you how the stuff evolves.
+
+127
+00:05:22,779 --> 00:05:23,404
+OK?
+
+128
+00:05:23,404 --> 00:05:26,850
+So, That's just a phase space, there should be a dot here.
+
+129
+00:05:26,850 --> 00:05:29,799
+That's what a phase space plot is.
+
+130
+00:05:29,799 --> 00:05:38,780
+With a phase space plot, let's still look at x double dot + kx,
+
+131
+00:05:38,780 --> 00:05:45,550
+just x double dot + the natural frequency squared x equal to zero.
+
+132
+00:05:45,550 --> 00:05:54,875
+What is an equilibria, no, actually that's not the one I'm looking for.
+
+133
+00:05:54,875 --> 00:06:04,514
+Sin(x) equal to zero.
+
+134
+00:06:04,514 --> 00:06:06,280
+This is basically your planar
+
+135
+00:06:06,280 --> 00:06:08,915
+and normalized version of a planar pendulum.
+
+136
+00:06:08,915 --> 00:06:11,180
+That was this problem we're talking about earlier.
+
+137
+00:06:11,180 --> 00:06:16,794
+With this system, what are my equilibriums going to be?
+
+138
+00:06:16,794 --> 00:06:25,352
+When is x doubled dot and x dot gonna go to zero?
+
+139
+00:06:25,352 --> 00:06:29,610
+If what?
+
+140
+00:06:29,610 --> 00:06:31,488
+When is x double dot gonna be zero?
+
+141
+00:06:31,488 --> 00:06:36,470
+That's the easy one.
+
+142
+00:06:36,470 --> 00:06:37,360
+Zero and 180.
+
+143
+00:06:37,360 --> 00:06:38,319
+Thank you.
+
+144
+00:06:38,319 --> 00:06:43,410
+So, if, x is equal to zero or pi.
+
+145
+00:06:43,410 --> 00:06:48,230
+So, on a phase space plot, plus or minus pi, right,
+
+146
+00:06:48,230 --> 00:06:51,000
+because you can go upside down this way or this way,
+
+147
+00:06:51,000 --> 00:06:53,295
+and if it hangs straight down, let's call that zero.
+
+148
+00:06:53,295 --> 00:06:54,404
+Right?
+
+149
+00:06:54,404 --> 00:06:56,420
+We know if we linearize this,
+
+150
+00:06:56,420 --> 00:06:58,355
+it's just x double dot plus x,
+
+151
+00:06:58,355 --> 00:07:00,620
+and you guys were arguing earlier, in that case,
+
+152
+00:07:00,620 --> 00:07:01,995
+around the equilibrium,
+
+153
+00:07:01,995 --> 00:07:04,295
+that's at the zero equilibrium
+
+154
+00:07:04,295 --> 00:07:08,949
+I would have something where my phase space plots look like circles.
+
+155
+00:07:08,949 --> 00:07:09,975
+Alright?
+
+156
+00:07:09,975 --> 00:07:12,249
+And they have a certain direction.
+
+157
+00:07:12,249 --> 00:07:14,170
+But if you go here,
+
+158
+00:07:14,170 --> 00:07:16,545
+and you'd linearize around that.
+
+159
+00:07:16,545 --> 00:07:19,779
+Here, you'd end up with x double dot equal to minus x,
+
+160
+00:07:19,779 --> 00:07:22,154
+x double dot minus x is equal to zero,
+
+161
+00:07:22,154 --> 00:07:23,699
+which gives you negative stiffness,
+
+162
+00:07:23,699 --> 00:07:26,129
+and it's actually hyperbolically unstable.
+
+163
+00:07:26,129 --> 00:07:28,607
+So there's these asymptotes you can draw,
+
+164
+00:07:28,607 --> 00:07:30,384
+and that's good for both of them.
+
+165
+00:07:30,384 --> 00:07:32,220
+So as we have larger departures,
+
+166
+00:07:32,220 --> 00:07:34,410
+these phase space plots can all look like this.
+
+167
+00:07:34,410 --> 00:07:36,704
+And, if you're on these lines,
+
+168
+00:07:36,704 --> 00:07:38,490
+you would do weird stuff,
+
+169
+00:07:38,490 --> 00:07:40,694
+where you could tumble from one with enough speed
+
+170
+00:07:40,694 --> 00:07:41,759
+and hit the, you know,
+
+171
+00:07:41,759 --> 00:07:44,160
+you can go from here and give it enough initial speed
+
+172
+00:07:44,160 --> 00:07:45,944
+to where you would hit over here again,
+
+173
+00:07:45,944 --> 00:07:47,914
+and do different kinds of motions, right?
+
+174
+00:07:47,914 --> 00:07:49,879
+But, that's what these phase space look like,
+
+175
+00:07:49,879 --> 00:07:51,954
+so you can quickly identify equilibriums.
+
+176
+00:07:51,954 --> 00:07:54,834
+If you do this and there's programs that will give you this flow,
+
+177
+00:07:54,834 --> 00:07:58,110
+the phase space flow, and you will see the dead spots.
+
+178
+00:07:58,110 --> 00:08:00,139
+Those are the equilibriums and around it,
+
+179
+00:08:00,139 --> 00:08:03,165
+the flows visually very quickly tell you this looks stable
+
+180
+00:08:03,165 --> 00:08:05,095
+neighboring stuff or no neighboring.
+
+181
+00:08:05,095 --> 00:08:08,144
+Some of it comes in, other stuff goes crazy, right?
+
+182
+00:08:08,144 --> 00:08:12,445
+So, that's my quick review, if you haven't seen phase space plots.
+
+183
+00:08:12,445 --> 00:08:17,970
+So, these kind of things with linear and cubic part can be used for that, as well.
+
+184
+00:08:17,970 --> 00:08:20,550
+So this is one of the phase space plots we could talk about,
+
+185
+00:08:20,550 --> 00:08:22,870
+where they flow.
+
+186
+00:08:22,870 --> 00:08:25,324
+Omega's nearby, those omega two's look good,
+
+187
+00:08:25,324 --> 00:08:27,920
+but then there's a limiting case, as well.
+
+188
+00:08:27,920 --> 00:08:30,879
+And it turns out, with this omega two this was the separatrix case,
+
+189
+00:08:30,879 --> 00:08:32,809
+but that was the intermediate axis case.
+
+190
+00:08:32,809 --> 00:08:33,509
+There's a limit.
+
+191
+00:08:33,509 --> 00:08:35,951
+If I'm doing a pure spin about omega two,
+
+192
+00:08:35,951 --> 00:08:39,750
+that's one of the conditions, and then anything inside is
+
+193
+00:08:39,750 --> 00:08:43,419
+a non-pure spin about the intermediate axis,
+
+194
+00:08:43,419 --> 00:08:46,139
+and you can, it turns out, you can show,
+
+195
+00:08:46,139 --> 00:08:48,384
+this paper showed, I'm not doing that in class.
+
+196
+00:08:48,384 --> 00:08:49,799
+But there's different limiting conditions
+
+197
+00:08:49,799 --> 00:08:51,014
+that they can come up with,
+
+198
+00:08:51,014 --> 00:08:53,904
+physical motions can never be outside here.
+
+199
+00:08:53,904 --> 00:08:56,315
+You have to be within this arc.
+
+200
+00:08:56,315 --> 00:08:58,545
+You can never actually exceed initial conditions.
+
+201
+00:08:58,545 --> 00:09:03,970
+It will give you nonphysical initial states that you'd have to have to get there.

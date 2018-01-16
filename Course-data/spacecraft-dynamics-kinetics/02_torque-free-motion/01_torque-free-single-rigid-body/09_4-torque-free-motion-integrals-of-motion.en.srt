@@ -1,0 +1,482 @@
+1
+00:00:05,645 --> 00:00:11,196
+There's an integral, every one of those
+equations we can actually integrate and
+
+2
+00:00:11,196 --> 00:00:14,660
+come up with these conserved quantities.
+
+3
+00:00:14,660 --> 00:00:16,230
+You can think I'm calling him K here,
+
+4
+00:00:16,230 --> 00:00:18,949
+this is not kinetic energy,
+it's something different.
+
+5
+00:00:20,900 --> 00:00:26,199
+But it's like energy, so
+it's an integral of motion basically.
+
+6
+00:00:30,431 --> 00:00:33,410
+So it leaves us a waypoint
+to go to a set of slides.
+
+7
+00:00:35,300 --> 00:00:39,192
+So let's say we have our
+classic mx double dot
+
+8
+00:00:39,192 --> 00:00:44,170
+= -kx.
+
+9
+00:00:44,170 --> 00:00:47,000
+Anybody know what the integral
+of motion of this one is?
+
+10
+00:00:47,000 --> 00:00:49,057
+What's the preserved quantity
+of this differential equation?
+
+11
+00:00:51,954 --> 00:00:52,694
+Spring mass system.
+
+12
+00:00:52,694 --> 00:00:55,750
+What's constant?
+
+13
+00:00:55,750 --> 00:00:57,789
+You did it in the homework with
+two particles in the spring mass.
+
+14
+00:00:57,789 --> 00:01:01,750
+Part B, what did you have to
+use to get that relationship?
+
+15
+00:01:01,750 --> 00:01:03,840
+Energy, right.
+
+16
+00:01:03,840 --> 00:01:04,580
+Basically.
+
+17
+00:01:04,580 --> 00:01:07,410
+We know out of this, this is nothing but
+a spring mass system.
+
+18
+00:01:07,410 --> 00:01:09,470
+So we know that that kinetic energy and
+
+19
+00:01:09,470 --> 00:01:13,910
+the spring potential energy summed
+up will give us a constant, right.
+
+20
+00:01:13,910 --> 00:01:14,790
+But we know that.
+
+21
+00:01:14,790 --> 00:01:16,180
+Can we mathematically prove it?
+
+22
+00:01:16,180 --> 00:01:18,760
+So I'm going to show you quickly
+how to integrate these system.
+
+23
+00:01:18,760 --> 00:01:20,237
+And this is a simple linear system.
+
+24
+00:01:20,237 --> 00:01:25,020
+With this other term there, the cubic
+stiffness has an x cubed instead of an x.
+
+25
+00:01:25,020 --> 00:01:27,110
+But even x cubed is trivial to integrate.
+
+26
+00:01:27,110 --> 00:01:29,610
+I expect you guys to know
+how to integrate x cubed.
+
+27
+00:01:29,610 --> 00:01:32,420
+In the next homework you will
+have other terms in there.
+
+28
+00:01:32,420 --> 00:01:34,580
+There was one homework where
+you end up with a sine theta,
+
+29
+00:01:34,580 --> 00:01:36,430
+but even sine theta isn't that evil.
+
+30
+00:01:36,430 --> 00:01:39,320
+I know you guys know how to
+integrate sine theta, hopefully.
+
+31
+00:01:39,320 --> 00:01:42,204
+So you can come up with these
+integrals of motions, all right.
+
+32
+00:01:42,204 --> 00:01:44,450
+So let's see how we can do this.
+
+33
+00:01:44,450 --> 00:01:46,090
+And there's some little tricks.
+
+34
+00:01:46,090 --> 00:01:47,769
+You'd have to write them down to
+remember all the little steps.
+
+35
+00:01:47,769 --> 00:01:55,930
+So I've got the second ordered
+derivative of x equals to minus kx.
+
+36
+00:01:55,930 --> 00:01:56,720
+This works nicely.
+
+37
+00:01:56,720 --> 00:02:01,330
+Now I'm going to do a substitution where
+I'm saying v is simply x dot, right?
+
+38
+00:02:01,330 --> 00:02:03,770
+It's commonly done,
+like you do in second order system,
+
+39
+00:02:03,770 --> 00:02:05,880
+we put in first order forms and
+integrate it.
+
+40
+00:02:05,880 --> 00:02:06,488
+That's typically what we do.
+
+41
+00:02:06,488 --> 00:02:14,421
+So this side can be
+rewritten as dv/dt = -kx.
+
+42
+00:02:14,421 --> 00:02:17,688
+And you can can also say, well,
+
+43
+00:02:17,688 --> 00:02:23,120
+let me multiply this dt
+Over to the other side.
+
+44
+00:02:23,120 --> 00:02:28,040
+So mass times differential velocities
+equal to -kx times differential time.
+
+45
+00:02:29,260 --> 00:02:32,170
+This phone,
+this side is easy to integrate.
+
+46
+00:02:32,170 --> 00:02:33,811
+That's just mdv.
+
+47
+00:02:33,811 --> 00:02:38,470
+The integral of that is just going to
+a give you v plus the constant.
+
+48
+00:02:38,470 --> 00:02:41,410
+But the right hand side, x depends on
+time and we don't have an answer for
+
+49
+00:02:41,410 --> 00:02:42,800
+it in this form yet.
+
+50
+00:02:42,800 --> 00:02:47,850
+Is not as easy, so once you get to
+the stage breaking these dts and dvs up,
+
+51
+00:02:47,850 --> 00:02:52,170
+the trick is you want to
+multiply both sides times v
+
+52
+00:02:54,330 --> 00:02:58,900
+which is of course dx/dt,
+right that's what .x means.
+
+53
+00:02:58,900 --> 00:03:02,770
+So if I multiply both
+sides over with this.
+
+54
+00:03:02,770 --> 00:03:09,120
+Here on the left hand side,
+I'm going to have mvdv, that's easy.
+
+55
+00:03:09,120 --> 00:03:14,768
+So, right hand side -kx times v and
+
+56
+00:03:14,768 --> 00:03:17,599
+v is dx/dt.dt.
+
+57
+00:03:17,599 --> 00:03:21,851
+These dt's cancel and
+
+58
+00:03:21,851 --> 00:03:26,773
+you end up with nothing but
+
+59
+00:03:26,773 --> 00:03:31,041
+-kxdx, that's it.
+
+60
+00:03:31,041 --> 00:03:37,490
+Now we've got a set of equations we
+can easily integrate and I'm not doing
+
+61
+00:03:37,490 --> 00:03:41,240
+in between two specific points in time I'm
+just going to get the indefinite integral.
+
+62
+00:03:41,240 --> 00:03:43,984
+So, if you do the indefinite
+integral of this,
+
+63
+00:03:43,984 --> 00:03:48,400
+the integral v with respect to v is
+just going to be v squared over 2 right.
+
+64
+00:03:48,400 --> 00:03:51,934
+So you end up with mass velocity
+squared over two which is nothing but
+
+65
+00:03:51,934 --> 00:03:52,870
+kinetic energy.
+
+66
+00:03:52,870 --> 00:03:54,408
+The right hand side,
+
+67
+00:03:54,408 --> 00:04:00,310
+the integral of x with respect to x is
+just going to be -kx squared over 2.
+
+68
+00:04:00,310 --> 00:04:04,000
+And then out of this whole thing
+you have to do plus a constant.
+
+69
+00:04:05,950 --> 00:04:08,060
+What's this constant physically
+going to be in this problem?
+
+70
+00:04:11,802 --> 00:04:16,405
+If you look at it the constant mv
+squared over 2 plus kx squared over 2,
+
+71
+00:04:16,405 --> 00:04:17,940
+what is that?
+
+72
+00:04:17,940 --> 00:04:20,180
+Total energy exactly that's it.
+
+73
+00:04:20,180 --> 00:04:23,887
+That's because it has a physical thing but
+in a more abstract sense when you have
+
+74
+00:04:23,887 --> 00:04:26,322
+differential equations we
+can often do this step but
+
+75
+00:04:26,322 --> 00:04:29,643
+you don't get something that's
+actually in terms of energy it's just
+
+76
+00:04:29,643 --> 00:04:32,663
+an equation constant of whatever
+these other things are right?
+
+77
+00:04:32,663 --> 00:04:37,543
+So here happens to be total energy but
+if you go back to these differential
+
+78
+00:04:37,543 --> 00:04:41,945
+equations and do the same steps
+bring this to the right hand side.
+
+79
+00:04:41,945 --> 00:04:47,012
+Instead of just having a minus A omega
+I also Also have minus B omega cubed,
+
+80
+00:04:47,012 --> 00:04:52,321
+I did the integrals of those in the end
+then I'll have an x to the 4th over 4 and
+
+81
+00:04:52,321 --> 00:04:55,753
+an x squared over 2 with
+the right constants, and
+
+82
+00:04:55,753 --> 00:04:58,245
+an integration constant, right?
+
+83
+00:04:58,245 --> 00:05:02,045
+And that's what we found here,
+so if you do that step,
+
+84
+00:05:02,045 --> 00:05:05,005
+and I encourage you to practice that
+once because in the homework you have to
+
+85
+00:05:05,005 --> 00:05:10,100
+use it anyway for one of the solve
+the homework for, you can get this.
+
+86
+00:05:10,100 --> 00:05:13,865
+So this is the integration constant,
+you can see this is not mass over velocity
+
+87
+00:05:13,865 --> 00:05:16,832
+squared the units are wrong this
+is actually velocity rates,
+
+88
+00:05:16,832 --> 00:05:19,684
+this is an acceleration squared,
+this can't be energy but
+
+89
+00:05:19,684 --> 00:05:23,248
+it's something energy like in that
+term and this is a preserve quantity.
+
+90
+00:05:23,248 --> 00:05:27,640
+If I get my resulting tumbling motion
+out of your integration, and every
+
+91
+00:05:27,640 --> 00:05:32,536
+integration times that if you're computing
+on mega .2 integrated and you have
+
+92
+00:05:32,536 --> 00:05:37,506
+your current omega and you go through this
+math, you should always get the same k.
+
+93
+00:05:37,506 --> 00:05:38,020
+All right?
+
+94
+00:05:40,280 --> 00:05:44,310
+So this becomes the great integration
+check for talk free motion as well.
+
+95
+00:05:44,310 --> 00:05:47,650
+And I think one of the homeworks, in the
+next homeworks said has you numerically
+
+96
+00:05:47,650 --> 00:05:51,950
+stimulate this and validate that this
+actually, you stimulate this numerically,
+
+97
+00:05:51,950 --> 00:05:55,020
+you compute this analytically
+with the T's and the H's.
+
+98
+00:05:55,020 --> 00:05:57,540
+And this math should always
+give you back that same value
+
+99
+00:05:57,540 --> 00:05:58,870
+that everything make sense.
+
+100
+00:05:58,870 --> 00:06:01,244
+That's a good numerical
+check of what's going on.
+
+101
+00:06:01,244 --> 00:06:05,460
+So this k1, 2's and 3's are now
+written out in terms of the energies,
+
+102
+00:06:05,460 --> 00:06:08,820
+these your integration constants for
+the system.
+
+103
+00:06:08,820 --> 00:06:11,425
+So I'm giving you the complete
+answer here at this stage.

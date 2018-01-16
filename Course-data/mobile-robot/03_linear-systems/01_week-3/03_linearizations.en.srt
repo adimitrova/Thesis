@@ -1,0 +1,763 @@
+1
+00:00:00,012 --> 00:00:04,897
+In this lecture, we're going to, dig a
+little bit deeper into the original non
+
+2
+00:00:04,909 --> 00:00:09,753
+linear models. And see, how do we produce
+linear models from them? And in fact, I
+
+3
+00:00:09,765 --> 00:00:14,418
+have a wonderful quote here. That says,
+classifying systems as linear and non
+
+4
+00:00:14,430 --> 00:00:19,508
+linear is like classifying objects in the
+universe. As bananas and non-bananas. What
+
+5
+00:00:19,520 --> 00:00:23,787
+this means is that if you're walking
+around in the universe, let's say your'e
+
+6
+00:00:23,799 --> 00:00:27,969
+on Jupiter and you pick up something,
+chances are it ain't going to be a banana.
+
+7
+00:00:28,067 --> 00:00:32,495
+Similarly, if you walk around and you pick
+up a system or a robot, chances are it
+
+8
+00:00:32,507 --> 00:00:36,982
+ain't going to be linear. What that means
+is that linear systems are really, really
+
+9
+00:00:36,994 --> 00:00:41,876
+rare. Yet, here I am, two lectures ago,
+bragging about how useful they are. So
+
+10
+00:00:41,888 --> 00:00:46,789
+something's gotta give here. And what it
+is, is that the non linear systems that
+
+11
+00:00:46,801 --> 00:00:51,974
+are everywhere. They act very much linear,
+at least around operating points. So the
+
+12
+00:00:51,986 --> 00:00:56,676
+linearization is a way of producing linear
+models from non linear models. Or
+
+13
+00:00:56,688 --> 00:01:01,521
+producing bananas from non-bananas, if you
+want. So what we're going to do in this
+
+14
+00:01:01,533 --> 00:01:08,287
+lecture is. Produce Linearizations or
+linear models from the non-linear models
+
+15
+00:01:08,299 --> 00:01:16,188
+that we start with. So, here is a general
+non-linear model . So, x dot is now not a
+
+16
+00:01:16,200 --> 00:01:22,454
+x plus bu with some general function f of
+x and u, and similarly y is not a simple
+
+17
+00:01:22,466 --> 00:01:26,844
+plus in cx, it's a non-linear function h
+of x. Okay.
+
+18
+00:01:26,847 --> 00:01:30,995
+So now, what we would like to do, is we
+would like to find some kind of local
+
+19
+00:01:31,007 --> 00:01:35,457
+description of what this system is doing.
+And this local description needs to be
+
+20
+00:01:35,469 --> 00:01:39,960
+linear, and what I mean by local, is that
+we have to pick an operating point. In the
+
+21
+00:01:39,972 --> 00:01:44,934
+pendulum we said, let's assume that the
+pendulum is hanging very close to straight
+
+22
+00:01:44,946 --> 00:01:49,804
+down, so straight down is the operating
+point and then what we do is we are going
+
+23
+00:01:49,816 --> 00:01:54,767
+to have to define a new variable. So,
+let's say that this is my operating point.
+
+24
+00:01:55,012 --> 00:02:00,086
+This in the pendulum case would be, the
+angle is zero, and I have no control
+
+25
+00:02:00,098 --> 00:02:05,881
+input. Well then, my actual state is going
+to be the operating point, plus some small
+
+26
+00:02:05,893 --> 00:02:11,069
+deviation in this state. Similarly my
+control input is going to be, well the
+
+27
+00:02:11,081 --> 00:02:17,708
+nominal operating Input point plus a small
+deviation. And, what we would like to do
+
+28
+00:02:17,720 --> 00:02:24,346
+somehow is describe these small
+variations. And in fact, the new equations
+
+29
+00:02:24,358 --> 00:02:30,557
+of motion that we care about well, we're
+going to care about how Delta x. This
+
+30
+00:02:30,569 --> 00:02:35,398
+deviation from the operating point
+behaves. Well, delta x is x minus x
+
+31
+00:02:35,410 --> 00:02:40,928
+operating point. Right? So delta x dot is
+x dot minus xl dot. Well, this thing is
+
+32
+00:02:40,940 --> 00:02:46,073
+equal to zero, because it's a constant,
+right? So this is just zero. So, here's my
+
+33
+00:02:46,085 --> 00:02:51,834
+zero. So, delta x dot is the same. As x
+dot. Well, I know what x dot is, it's
+
+34
+00:02:51,846 --> 00:02:58,314
+this. So, now delta x dot becomes this.
+Okay, let's see if we somehow can simplify
+
+35
+00:02:58,326 --> 00:03:05,070
+this. So this is my model, now luckily for
+me there's is something known as a tail or
+
+36
+00:03:05,082 --> 00:03:11,203
+expansion that's allows me to write this
+On a simpler form. So this thing can be
+
+37
+00:03:11,215 --> 00:03:17,222
+written as f evaluated at the operating
+point, times this partial derivative of f
+
+38
+00:03:17,234 --> 00:03:23,839
+with respect to x, also evaluated at the
+operating point, this is known as . And
+
+39
+00:03:23,851 --> 00:03:28,945
+then, you have the same partial
+derivative, but now with respect to u,
+
+40
+00:03:29,065 --> 00:03:35,287
+evaluated at the operating points. And, we
+multiply this with Delta u here, and delta
+
+41
+00:03:35,299 --> 00:03:39,832
+x here. And then I have something that I
+call HOT, which stands for higher order
+
+42
+00:03:39,844 --> 00:03:44,956
+terms. So this is where, we're saying that
+the higher order terms. Where, when delta
+
+43
+00:03:44,968 --> 00:03:49,551
+x and delta u become large, these matter.
+But for small delta x and delta u, they
+
+44
+00:03:49,563 --> 00:03:55,867
+really don't matter. Well why is this
+useful? Well, first of all lets assume
+
+45
+00:03:55,879 --> 00:04:01,599
+that we have picked operating points, so
+that f of x0, u0 is zero which that we're
+
+46
+00:04:01,611 --> 00:04:07,356
+holding the state steady, x dot is zero at
+this point which means that this thing
+
+47
+00:04:07,368 --> 00:04:10,991
+goes away. Now.
+Let's call these guys A and B. Why is
+
+48
+00:04:11,003 --> 00:04:15,619
+that? Well, these are just matrices
+because I'm plugging in some constant
+
+49
+00:04:15,631 --> 00:04:20,573
+value here. Similarly then I'm plugging in
+a constant value. So, these partial
+
+50
+00:04:20,585 --> 00:04:25,671
+derivatives are just matrices. Well, let's
+call them A and B. And now let's do the
+
+51
+00:04:25,683 --> 00:04:30,262
+same thing with Y. Y was the output. We
+want to kn ow what it looks like around
+
+52
+00:04:30,274 --> 00:04:35,225
+this operating point. Well, we have the
+same thing here, plus this term, plus high
+
+53
+00:04:35,237 --> 00:04:40,056
+order terms. So, let's assume that thing
+is zero, so let's assume that we pick an
+
+54
+00:04:40,068 --> 00:04:44,878
+operating point that kills the output at
+that operating point. So, the output is
+
+55
+00:04:44,890 --> 00:04:50,273
+zero at that point. Well, then, let's call
+this thing c. Right? Now I have a, b, and
+
+56
+00:04:50,285 --> 00:04:55,493
+c. And in fact, let's summarize what we
+just did. If I have this non-liner model,
+
+57
+00:04:55,603 --> 00:05:00,663
+and I pick an operating point, so that
+these two assumptions are satisfied. And
+
+58
+00:05:00,675 --> 00:05:05,979
+then I look at small deviations from the
+operating point. Then I can write delta x
+
+59
+00:05:05,893 --> 00:05:10,875
+dot. That's a delta x plus b delta u.
+Which is linear. And y is c delta x, where
+
+60
+00:05:10,887 --> 00:05:16,275
+these a, b, and c matrices are given by
+these partial derivatives, also known as
+
+61
+00:05:16,287 --> 00:05:21,875
+Jacobians. So this, ladies and gentlemen,
+is how you obtain linear models from non
+
+62
+00:05:21,887 --> 00:05:27,125
+linear systems. Well, let's actually do
+some computations here, just to know
+
+63
+00:05:27,137 --> 00:05:33,672
+what's going on. So let's assume that x is
+in Rm. u is an Rm, y is an Rp and we have
+
+64
+00:05:33,684 --> 00:05:41,527
+f and a being given by these things, but
+really what we have is f1 over x or is
+
+65
+00:05:41,539 --> 00:05:48,720
+actually a function of x1 to xn of u1 to
+up right, no sorry Alright.
+
+66
+00:05:48,722 --> 00:05:52,455
+So when I just write f1, that's what's a
+really mean. Okay.
+
+67
+00:05:52,457 --> 00:05:57,850
+Then, df, dx. This Jacobian that we talked
+about. The first one we need. Well, it has
+
+68
+00:05:57,862 --> 00:06:02,685
+this form. First component is the
+derivative of f1, with respect to x1. Then
+
+69
+00:06:02,697 --> 00:06:07,875
+it's f1 with respect to x2, and so forth.
+And the reason why I'm writing this is not
+
+70
+00:06:07,887 --> 00:06:12,940
+because I enjoy producing complicated
+PowerPoint slides. It's just, we need to
+
+71
+00:06:12,952 --> 00:06:18,916
+know what the different entries are. And
+it's important to do this right because
+
+72
+00:06:18,928 --> 00:06:24,476
+otherwise your dimensions don't line up
+when you produce your A, B, and C
+
+73
+00:06:24,488 --> 00:06:30,211
+matrices. So that's df dx or, as we now
+know it, A. This is my A matrix. Well,
+
+74
+00:06:30,334 --> 00:06:36,353
+similarly, B is df du, right? And again,
+the first component is df1 du1. This
+
+75
+00:06:36,365 --> 00:06:42,579
+component is the f1, the Here, we have the
+f and the u1. All the way to the f and the
+
+76
+00:06:42,887 --> 00:06:48,477
+So this is a n by m matrix, which is what
+we needed. And, in fact , this is the b
+
+77
+00:06:48,489 --> 00:06:54,093
+matrix, then. So it has the right
+dimension. And not surprisingly, we do the
+
+78
+00:06:54,105 --> 00:06:59,192
+same thing for our c matrix. and the
+reason again I wanted to show this is,
+
+79
+00:06:59,297 --> 00:07:03,976
+this is where the Jacobians come from. So
+if I write dhdx, this is what I mean.
+
+80
+00:07:03,976 --> 00:07:06,835
+Good.
+Let's do some examples. So let's start
+
+81
+00:07:06,847 --> 00:07:11,036
+with what's known as the inverted
+pendulum, which is a slightly more
+
+82
+00:07:11,048 --> 00:07:15,974
+complicated pendulum where what I have is,
+I have a moving base, my elbow in this
+
+83
+00:07:15,986 --> 00:07:21,244
+case. And then I have a pendulum pointing
+straight up. Or with some angle, and by
+
+84
+00:07:21,256 --> 00:07:26,671
+moving the base, the pendulum is going to
+swing, and in fact, it's going to fall if
+
+85
+00:07:26,683 --> 00:07:32,676
+I don't do anything very clever. But the
+dynamics of this can be written like this,
+
+86
+00:07:32,792 --> 00:07:37,482
+where theta double dot is g over l sin
+theta plus u cos theta. Okay.
+
+87
+00:07:37,483 --> 00:07:43,253
+Let's linearize this thing. the first
+thing we do is we pick our stakes. In this
+
+88
+00:07:43,265 --> 00:07:48,120
+case it's going to be theta and theta dot.
+And the reason I know that I have a
+
+89
+00:07:48,132 --> 00:07:52,912
+2-dimensional system is I have two dot's
+up here. So, I have a 2-dimensional
+
+90
+00:07:52,924 --> 00:07:58,283
+system, x1 is theta and x2 is theta dot.
+Let's say they're measuring the angles, so
+
+91
+00:07:58,295 --> 00:08:03,536
+y is x1. Well, then I get my f to be this
+two vector. And I get my h of x to be x1.
+
+92
+00:08:03,536 --> 00:08:07,481
+Okay, fine.
+Let's pick the operating point where the
+
+93
+00:08:07,493 --> 00:08:13,252
+pendulum is pointing straight up, and I'm
+doing nothing. And in that case, well,
+
+94
+00:08:13,370 --> 00:08:18,662
+what is my a matrix? My a matrix becomes
+df1, dx1. So now I have to take the
+
+95
+00:08:18,674 --> 00:08:24,053
+derivative of this thing here, with
+respect to x1. There is no x1 there, so.
+
+96
+00:08:24,182 --> 00:08:29,955
+The first component is zero. Then I have
+to take the derivative of this thing with
+
+97
+00:08:29,967 --> 00:08:35,335
+respect to x2, which is 1. So this
+component is 1. Similarly, I have to take
+
+98
+00:08:35,347 --> 00:08:41,195
+the derivative of f2, with respect to x1.
+So now, I have to take derivative of this
+
+99
+00:08:41,207 --> 00:08:46,765
+guy here with respect to x1. Well, the
+derivative of this with respect to x1 is.
+
+100
+00:08:47,032 --> 00:08:53,345
+g over l times sine. The derivative of
+that is going to be g over l times cosine
+
+101
+00:08:53,357 --> 00:08:59,745
+x1. While the derivative of this, with
+respect to x1 is actually going to be
+
+102
+00:08:59,757 --> 00:09:06,795
+negative u, sine x1. But I didn't actually
+write this here, even though I should
+
+103
+00:09:06,807 --> 00:09:10,660
+have. Arguably.
+Because what I'm going to do is I'm going
+
+104
+00:09:10,282 --> 00:09:15,807
+to evaluate this at the operating point.
+And you know what? U is zero. And in fact,
+
+105
+00:09:15,917 --> 00:09:20,906
+x1 is zero. So this term actually goes
+away. So all I'm left with is this term,
+
+106
+00:09:21,016 --> 00:09:26,322
+evaluated at zero, zero. And cosine zero
+is 1. So after all these pushups, I end up
+
+107
+00:09:26,334 --> 00:09:30,793
+with g over l here, as the known zero
+term. Now, that's how you get the A
+
+108
+00:09:30,805 --> 00:09:35,477
+matrix. Again, I would encourage you to go
+home, and thus your already home when you
+
+109
+00:09:35,489 --> 00:09:39,950
+are watching this and actually perform
+these computations so you know where they
+
+110
+00:09:39,962 --> 00:09:44,867
+come from. Similarly B, you have to do the
+same computation and in this case you have
+
+111
+00:09:44,879 --> 00:09:49,235
+no U up here, so you don't get a U in the
+first component. Here you have U cosine
+
+112
+00:09:49,247 --> 00:09:54,260
+x1. Take a derivative of that with respect
+to U. We get cosine x1. We plug in the
+
+113
+00:09:54,272 --> 00:09:59,785
+operating point, zero, zero. And wind up
+with this elegant b vec-, b vector here. C
+
+114
+00:09:59,893 --> 00:10:05,585
+is particularly simple, right? Because h
+of x is x1. Which means that c is simply
+
+115
+00:10:05,597 --> 00:10:08,821
+1, 0. So.
+That was how we would go about getting
+
+116
+00:10:08,833 --> 00:10:13,456
+these a, b, and c matrices. Okay, lets go
+to the unicycle the differental drive
+
+117
+00:10:13,468 --> 00:10:18,283
+robot that we have looked at that we saw
+in the previous lecture that we had a
+
+118
+00:10:18,295 --> 00:10:23,778
+little bit of an issue with. first of all
+lets figure out the state. Let's say that
+
+119
+00:10:23,790 --> 00:10:29,849
+x1 x now I'm having in the slight abuse of
+n notation right because x is also the
+
+120
+00:10:29,861 --> 00:10:35,258
+full statement. But this is the x
+component, x2 is y and x3 is theta and
+
+121
+00:10:35,270 --> 00:10:41,362
+then lets say that we're actually
+measuring everything. So y is this. Okay
+
+122
+00:10:41,362 --> 00:10:47,412
+We can control the translational velocity,
+or the speed and the angular velocity,
+
+123
+00:10:47,533 --> 00:10:52,434
+right? So my inputs would be u1 is v, and
+u2 is omega. Okay.
+
+124
+00:10:52,435 --> 00:10:58,018
+Let's compute, now, the linearization
+around x, operating point to zero. U,
+
+125
+00:10:58,236 --> 00:11:03,069
+operating point is zero. Okay.
+If you do that, what you actually end up
+
+126
+00:11:03,081 --> 00:11:07,062
+with, and I'm not going to show the
+different steps, you should do it
+
+127
+00:11:07,074 --> 00:11:11,850
+yourself, is first of all, an A matrix
+that's 0, a B matrix that looks like this,
+
+128
+00:11:11,954 --> 00:11:16,750
+and a C matrix that's dead end to the
+matrix, which is not surprising since we'
+
+129
+00:11:16,750 --> 00:11:22,520
+re measuring both the x y position and the
+orientation of, of the robot. Now, this is
+
+130
+00:11:22,532 --> 00:11:29,051
+a little bit weird. Because if I write
+down the, the dynamics for x2. Well, x2
+
+131
+00:11:28,765 --> 00:11:34,845
+dot it's going to be given by the second
+row of everything. Well, first of all,
+
+132
+00:11:34,973 --> 00:11:40,698
+it's zero, right? Because my a matrix is
+zero. Then I get zero, zero times u. So I
+
+133
+00:11:40,710 --> 00:11:46,071
+get plus zero, zero. I mean, times u, if
+you want. But this means that x2. is
+
+134
+00:11:46,083 --> 00:11:52,224
+actually eqaul to zero. Well x2 was the y
+direction, what this means is if I'm
+
+135
+00:11:52,236 --> 00:11:58,129
+pointing my robot straight in the x
+direction, then apparently I cannot
+
+136
+00:11:58,141 --> 00:12:04,388
+actually make the car drive in the y
+direction. That seems a little bit fishy
+
+137
+00:12:04,400 --> 00:12:11,166
+actually. what is going on here is that
+the linearization That we performed didn't
+
+138
+00:12:11,178 --> 00:12:16,203
+quite capture all the nitty gritty
+exciting things that were going on with
+
+139
+00:12:16,215 --> 00:12:21,442
+the non linear model. And this is an
+example where the non-linearities are so
+
+140
+00:12:21,454 --> 00:12:27,340
+severe, that the linearization as applied
+directly, doesn't entirely apply. Because
+
+141
+00:12:27,352 --> 00:12:31,127
+we lost control over the y direction. Even
+though.
+
+142
+00:12:31,127 --> 00:12:35,810
+>> If I have a car, I can clearly turn it.
+I can drive it and turn, and drive in the
+
+143
+00:12:35,822 --> 00:12:40,577
+Y directions. So, here's an example where
+the linearization actually doesn't give us
+
+144
+00:12:40,589 --> 00:12:45,247
+just what we wanted. And, the punch line
+here is that sometimes linearizations give
+
+145
+00:12:45,259 --> 00:12:50,039
+reasonable models, with inverted pendulum,
+for instance. And, sometimes they do not,
+
+146
+00:12:50,137 --> 00:12:54,901
+with the unicycle. and with a unicycle we
+have to be a little bit more care,
+
+147
+00:12:55,006 --> 00:12:59,957
+careful, but the fact that I want to point
+out though is that when they work. When
+
+148
+00:12:59,969 --> 00:13:04,337
+the linear stations work they are
+remarkably useful. Even though we're
+
+149
+00:13:04,349 --> 00:13:09,134
+finding them around the operating points
+they seem to work Better than what we
+
+150
+00:13:09,146 --> 00:13:13,837
+really theoretically have reason to
+believe, which is why we do a lot of
+
+151
+00:13:13,849 --> 00:13:19,155
+analysis of the linearizations rather than
+the non-linear models. And then take what
+
+152
+00:13:19,167 --> 00:13:23,990
+we learned from the linearizations and
+apply it to the, the non-linear models.
+
+153
+00:00:00,000 --> 00:00:00,000
+Thank you.

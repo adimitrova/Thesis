@@ -1,0 +1,588 @@
+1
+00:00:00,012 --> 00:00:06,563
+So now we have seen that controls deals
+with dynamical systems in generality. And
+
+2
+00:00:06,575 --> 00:00:13,110
+robotics is one facet of this. Now what we
+haven't done is actually try to make any
+
+3
+00:00:13,122 --> 00:00:20,112
+sense of what this means in any precise or
+mathematical was. And one thing that we're
+
+4
+00:00:20,124 --> 00:00:26,021
+going to need in order to do this is. Come
+up with, with models. And models are gong
+
+5
+00:00:26,033 --> 00:00:31,002
+to be an approximation, and an abstraction
+of what the actual system is doing. And
+
+6
+00:00:31,014 --> 00:00:35,782
+the control design is going to be made,
+rather done, relative to that model and
+
+7
+00:00:35,794 --> 00:00:40,629
+then deployed on the real system. But,
+without models we can't really do much in
+
+8
+00:00:40,641 --> 00:00:45,359
+terms of control design. We would just be
+stabbing in the dark without knowing
+
+9
+00:00:45,371 --> 00:00:50,345
+really what, what's going on. So, models
+are actually Key when it comes to
+
+10
+00:00:50,357 --> 00:00:55,710
+designing controllers, because if you
+remember that the question is really how
+
+11
+00:00:55,722 --> 00:01:01,170
+in control theory, is how do we pick the
+input signal u. So u again, takes the
+
+12
+00:01:01,182 --> 00:01:06,425
+reference, compares it to the output, the
+measurement and comes up with a
+
+13
+00:01:06,727 --> 00:01:11,950
+corresponding Course correction to what
+the system is doing. And the objectives
+
+14
+00:01:11,962 --> 00:01:16,925
+when you pick this kind of control input,
+well, there are a number of different
+
+15
+00:01:16,937 --> 00:01:22,015
+kinds of, of objectives. The first one is
+always stability. Stability, loosely
+
+16
+00:01:22,027 --> 00:01:27,565
+speaking, means that the system doesn't
+blow up. So, if you decide a controller
+
+17
+00:01:27,577 --> 00:01:33,516
+that makes the system go unstable, then no
+other objectives matter cause you have
+
+18
+00:01:33,528 --> 00:01:39,624
+failed. If your robots drive into walls or
+your aerial robots fall to the ground,
+
+19
+00:01:39,743 --> 00:01:45,393
+basically control stability is always
+control objective number one. Now, once
+
+20
+00:01:45,405 --> 00:01:50,356
+you have that, the system doesn't blow up.
+You may want it to do something more than
+
+21
+00:01:50,368 --> 00:01:54,964
+not blow up, and something that we're
+going to deal with is tracking a lot.
+
+22
+00:01:55,067 --> 00:02:00,624
+Which means, here is a reference either of
+value. 14, how do we make our system do 14
+
+23
+00:02:00,636 --> 00:02:05,880
+or here is a path how do I make my robot
+follow this path or how do I make my
+
+24
+00:02:05,892 --> 00:02:12,052
+autonomous self driving car follow a road.
+So tracking reference signals is another
+
+25
+00:02:12,064 --> 00:02:18,167
+kind of objective. assert important type
+of objective is robustness in the sense
+
+26
+00:02:18,179 --> 00:02:23,553
+that. ,, . Since we are dealing with
+models when we're doing our design. And
+
+27
+00:02:23,565 --> 00:02:28,255
+models are never going to be perfect. We
+can't overcommit to a particular model.
+
+28
+00:02:28,360 --> 00:02:33,186
+And we can't have our controller be too
+highly dependent on what the particular
+
+29
+00:02:33,198 --> 00:02:37,777
+parameters in the model. R, model r. So,
+what we need to do is to design
+
+30
+00:02:37,789 --> 00:02:43,117
+controllers that are somewhat immune to
+variations across parameters in the model,
+
+31
+00:02:43,226 --> 00:02:48,873
+for instance. So this is very important.
+I'm calling it robustness. a companion to
+
+32
+00:02:48,885 --> 00:02:54,385
+robustness, in fact one can ague that it's
+an aspect of robustness. It's disturbance
+
+33
+00:02:54,397 --> 00:02:59,576
+rejection, because, at the end of the day.
+We are going to be acting on measurements.
+
+34
+00:02:59,677 --> 00:03:05,299
+And sensors have measurement noise. things
+always happen if you're flying a in the
+
+35
+00:03:05,311 --> 00:03:09,984
+air, all of a sudden you get a wind gust.
+Now that's a disturbance. if you're
+
+36
+00:03:09,996 --> 00:03:15,135
+driving a robot, all of a sudden you're
+going from Linoleum floored carpet, now
+
+37
+00:03:15,147 --> 00:03:20,130
+the friction changed. So all of a sudden
+you have these disturbances that enter
+
+38
+00:03:20,142 --> 00:03:25,080
+into the system and your controllers have
+to be able to overcome them. at least,
+
+39
+00:03:25,187 --> 00:03:30,144
+reasonable disturbances for the, the
+controllers to be To be effective. Now
+
+40
+00:03:30,156 --> 00:03:34,281
+once you have that we can wrap other
+questions around it like optimality, which
+
+41
+00:03:34,293 --> 00:03:38,511
+is not only how do we do something but how
+do we do it in the best possible way. And
+
+42
+00:03:38,523 --> 00:03:42,666
+best can mean many different things, it
+could mean how do I drive from point A to
+
+43
+00:03:42,678 --> 00:03:47,808
+point B as quickly as possible, Possible
+or as using as little fuel as possible or
+
+44
+00:03:47,820 --> 00:03:53,668
+while staying as centered into the middle
+of the road as possible. So optimality can
+
+45
+00:03:53,680 --> 00:03:58,698
+mean different things and this is
+typically something we can do on top of
+
+46
+00:03:58,710 --> 00:04:04,268
+all these other things and in other to do
+any of this we really need a model to, to
+
+47
+00:04:04,280 --> 00:04:08,454
+be a. Effective.
+So effective controlled strategies rely on
+
+48
+00:04:08,466 --> 00:04:13,894
+predictive models. Because without them,
+we have no way of knowing what our control
+
+49
+00:04:13,906 --> 00:04:19,121
+actions are, are actually going to do. So,
+what do these models look like? Let's
+
+50
+00:04:19,133 --> 00:04:25,143
+start in discrete time. this means that,
+what's happening is that, that Distinct
+
+51
+00:04:25,155 --> 00:04:30,129
+time instances, thi ngs happen.
+In discrete time, what we have typically,
+
+52
+00:04:30,242 --> 00:04:35,594
+is that the state of the system, remember
+that x is the state. So this is at time
+
+53
+00:04:35,606 --> 00:04:40,149
+instance, k plus 1. Well, it's some
+function of what the state was like,
+
+54
+00:04:40,262 --> 00:04:46,515
+yesterday, the time, k, and, what they did
+yesterday. So, the position of the robot,
+
+55
+00:04:46,623 --> 00:04:51,580
+position of the robot tomorrow, is a
+function of where the robot is today, and
+
+56
+00:04:51,592 --> 00:04:56,624
+what I did today. And then, f, somehow
+tells me how to go from today's state and
+
+57
+00:04:56,636 --> 00:05:01,944
+controlling to tomorrow's state. This is
+known as a difference equation because it
+
+58
+00:05:01,956 --> 00:05:07,978
+tells you the difference between different
+values across, different time instances.
+
+59
+00:05:08,086 --> 00:05:14,088
+So, that's in, in discrete time. and
+here's an example of this. This is the
+
+60
+00:05:14,100 --> 00:05:20,717
+world's simplest discrete time system.
+It's a clock, or a calendar. This is the
+
+61
+00:05:20,729 --> 00:05:27,285
+time today. Now I'm adding one second. And
+this is the time one second later. So the
+
+62
+00:05:27,297 --> 00:05:32,910
+time right now plus 1 second is the time 1
+second later. This is clearly a completely
+
+63
+00:05:32,922 --> 00:05:38,460
+trivial discreet time system, but it is a
+difference equation. It's a clock, so if
+
+64
+00:05:38,472 --> 00:05:43,548
+you plot this we see that here is, this is
+the 8, which is what time it is As a
+
+65
+00:05:43,560 --> 00:05:48,961
+function of time. So it's silly. But at 1
+o' clock, the state is one. At 2 o' clock,
+
+66
+00:05:49,074 --> 00:05:54,071
+the state is two, and so forth. And you
+get this thing with slope one. So, this
+
+67
+00:05:54,083 --> 00:05:59,538
+would be the world's simplest model. There
+are no control signals or anything in
+
+68
+00:05:59,550 --> 00:06:04,920
+there. But it least it is a dynamic
+discrete time model that describes. How a
+
+69
+00:06:04,932 --> 00:06:09,755
+clock would work. Now the problem we have
+with this though is that the Laws of
+
+70
+00:06:09,767 --> 00:06:14,960
+Physics are all in continuous time. And
+when we're controlling robots we are going
+
+71
+00:06:14,972 --> 00:06:20,315
+to have to deal with the Laws of Physics.
+Newton is going to tell us that the force
+
+72
+00:06:20,327 --> 00:06:25,955
+is equal to the mass times acceleration.
+Or, if we're doing circuits, Kirchoff's
+
+73
+00:06:25,967 --> 00:06:30,855
+Laws is going to relate various properties
+to capacitances and resistances in the, in
+
+74
+00:06:30,867 --> 00:06:35,310
+the, in the circuit. So, we're going to
+have to deal with things in continuous
+
+75
+00:06:35,322 --> 00:06:39,985
+time, and in continuous time, there is no
+notion of next. But we have something
+
+76
+00:06:39,997 --> 00:06:44,880
+almost be tter, and that's the notion of a
+derivative, which is, it's not next, but
+
+77
+00:06:44,892 --> 00:06:49,965
+it tells us How is the time change? The
+change with respect to time. So in
+
+78
+00:06:49,977 --> 00:06:55,940
+continuous time, we don't have difference
+equations. What we have are these things
+
+79
+00:06:55,952 --> 00:07:01,730
+called differential equations. And right
+here you see that the derivative of the
+
+80
+00:07:01,742 --> 00:07:06,928
+state with respect to time. Is some
+function of x and u. So this not telling
+
+81
+00:07:06,940 --> 00:07:12,369
+me what the next value it is. It's telling
+me, what's the change? Instantaneous
+
+82
+00:07:12,381 --> 00:07:18,113
+change. And here, it's the same thing. But
+now I'm written, I've written x. instead
+
+83
+00:07:18,125 --> 00:07:23,729
+of dx, dt. and time derivatives, a lot of
+times, is written with a dot. And I'm
+
+84
+00:07:23,741 --> 00:07:28,485
+going to use that in this. Class and this
+actually traces back to the, the slight
+
+85
+00:07:28,497 --> 00:07:33,002
+controversy between Newton and Leibniz.
+Leibniz, so in 1684, Newton said, oh I
+
+86
+00:07:33,014 --> 00:07:37,035
+have this idea that I call it
+differential, and Leibniz at the same time
+
+87
+00:07:37,047 --> 00:07:41,651
+had the same idea. Well, this is Leibniz's
+notation and this is Newton's notation,
+
+88
+00:07:41,750 --> 00:07:46,255
+and we're going to use the dot for time
+derivatives here. The point is that these
+
+89
+00:07:46,267 --> 00:07:51,106
+are both the same equations and they are
+differential equations, because They are
+
+90
+00:07:51,118 --> 00:07:56,289
+relating changes to the values of the
+states. so if you go back to our clock,
+
+91
+00:07:56,404 --> 00:08:02,043
+what would the differential equation of a
+clock look like? Well, it would be very,
+
+92
+00:08:02,158 --> 00:08:07,613
+very simple it would say that the, the
+change, the rate of change of the time is
+
+93
+00:08:07,625 --> 00:08:12,848
+one. Which basically means The clock
+changes a second every second. That's what
+
+94
+00:08:12,860 --> 00:08:18,028
+it means. So when I drew this picture of
+the discrete time clock. Or, I drew this
+
+95
+00:08:18,040 --> 00:08:23,180
+line diagonally across it. What I was
+really doing was describing this. So this
+
+96
+00:08:23,192 --> 00:08:26,132
+is the continuous time clock. x dot is
+equal to 1 And.
+
+97
+00:08:26,134 --> 00:08:30,955
+We are going to need, almost always,
+continuous time. Models for, for our
+
+98
+00:08:30,967 --> 00:08:36,020
+systems. And next couple of lectures,
+we're going to start developing models of
+
+99
+00:08:36,032 --> 00:08:40,880
+particular systems. But, before we do
+this, I want to say a few words about how
+
+100
+00:08:40,892 --> 00:08:45,830
+to go from continuous time to discrete
+time. Because our models are going to be
+
+101
+00:08:45,842 --> 00:08:50,870
+continuous time differential equations.
+But th en, when we're putting this on a
+
+102
+00:08:50,882 --> 00:08:55,975
+robot, we're going to put it on a
+computer. The computer runs in discrete
+
+103
+00:08:55,987 --> 00:09:02,420
+time, so somehow we need to map continuous
+time models onto discrete time models. So
+
+104
+00:09:02,432 --> 00:09:08,094
+now if I say that x at time k, well it's x
+at time k times delta t, where delta t is
+
+105
+00:09:08,106 --> 00:09:14,159
+some sample time. So we've sampled k
+measurements. Well if I, use this. What is
+
+106
+00:09:14,171 --> 00:09:20,505
+x at time K plus 1 which is at the x.k
+plus first sample time. Well, I need to
+
+107
+00:09:20,517 --> 00:09:27,409
+relate this thing somehow to the
+differential equation. So how do I do
+
+108
+00:09:27,421 --> 00:09:35,392
+this? Well, this is not always easy to do
+exactly but what you can note is that.
+
+109
+00:09:35,632 --> 00:09:41,837
+This is known as a tailor approximation.
+So x at time k times delta t plus a little
+
+110
+00:09:42,160 --> 00:09:48,228
+delta t which is exactly the next state.
+Well it's roughly what it was last time
+
+111
+00:09:48,240 --> 00:09:54,842
+times the length of the time interval,
+delta t times the derivative. So this is a
+
+112
+00:09:54,854 --> 00:10:01,963
+an approximation but the cool thing here
+is that this x at time k plus delta t,
+
+113
+00:10:02,108 --> 00:10:09,774
+well that's, xk. So these things are the
+same. x dot at time k equals delta t, well
+
+114
+00:10:09,786 --> 00:10:16,127
+that's f. So this are the same things, and
+then I just have to multiply my delta t
+
+115
+00:10:16,139 --> 00:10:21,859
+there. So this is a way of getting a
+discrete time model from the continuous
+
+116
+00:10:21,871 --> 00:10:27,802
+time model. And, this is how we're going
+to have to take the things we do in
+
+117
+00:10:27,814 --> 00:10:34,310
+continuous time, and map it onto the
+actual Implementations of computers that
+
+118
+00:10:34,322 --> 00:10:37,027
+ultimately run in discrete time.

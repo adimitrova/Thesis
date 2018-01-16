@@ -1,0 +1,648 @@
+1
+00:00:00,012 --> 00:00:05,450
+So, in the previous lecture, we saw that
+eigenvalues play a fundamentally important
+
+2
+00:00:05,462 --> 00:00:11,150
+role when you want to understand stability
+properties of linear systems. We saw that
+
+3
+00:00:11,162 --> 00:00:16,725
+if all eigenvalues have strictly negative
+real part, the systems are asymptotically
+
+4
+00:00:16,737 --> 00:00:21,990
+stable. If one eigenvalue is positive,
+then we have positive real part. Then,
+
+5
+00:00:22,002 --> 00:00:27,215
+we're screwed and the system blows up.
+Now, today, I'm going to use some of these
+
+6
+00:00:27,227 --> 00:00:32,565
+ideas to solve a fundamental problem in
+swarm robotics. And this is known as the
+
+7
+00:00:32,577 --> 00:00:37,690
+Rendezvous Problem. And, in fact, what it
+is, is you have a collection of mobile
+
+8
+00:00:37,702 --> 00:00:43,076
+robots that can only measure the relative
+displacements of their neighbors. Meaning,
+
+9
+00:00:43,088 --> 00:00:47,568
+they don't know where they are, but they
+know where they are relative to the
+
+10
+00:00:47,580 --> 00:00:52,533
+neighbors. So here, here we have agent i,
+and it can measure xi minus xj, which is
+
+11
+00:00:52,545 --> 00:00:56,784
+actually this vector. So, it knows where
+agent j is relative to it. And this is
+
+12
+00:00:56,796 --> 00:01:01,187
+typically what you get when you have an
+censor skirt, right? Because, you can see
+
+13
+00:01:01,199 --> 00:01:05,556
+agents that are within a certain distance
+od you. And, as we saw, you know, where
+
+14
+00:01:05,568 --> 00:01:10,018
+they are relative to you. If you don't
+have global positioning information, you
+
+15
+00:01:10,030 --> 00:01:13,911
+don't know where you are so there's no way
+you're going to know, globally, where this
+
+16
+00:01:13,923 --> 00:01:17,499
+thing is, but you know where your
+neighbors are locally. And the Rendezvous
+
+17
+00:01:17,511 --> 00:01:21,316
+Problem is the problem where having all
+the agents meet at the same position. You
+
+18
+00:01:21,328 --> 00:01:24,752
+don't want to specify in advance where
+they going to meet because since they
+
+19
+00:01:24,764 --> 00:01:28,365
+don't know where they are, they don't know
+where they going to meet. They can say,
+
+20
+00:01:28,453 --> 00:01:33,696
+oh, we're going to meet in, at the origin.
+But I don't know where the origin is. Is
+
+21
+00:01:33,708 --> 00:01:38,363
+it in, in Atlanta, Georgia? Or is it in
+Belgium, or is it India? What do I know,
+
+22
+00:01:38,466 --> 00:01:42,971
+right? So, the point is, we're going to
+meet somewhere, but we don't know where.
+
+23
+00:01:42,971 --> 00:01:45,795
+Okay.
+So, we have actually solved this problem
+
+24
+00:01:46,146 --> 00:01:51,234
+before. We sold it for the 2 robot case,
+where we had 2 robots. and we could
+
+25
+00:01:51,246 --> 00:01:56,946
+control the velocities right away. What we
+did is we simply had the agents aim
+
+26
+00:01:56,958 --> 00:02:01,936
+towards each other. So, u1 was x2 minus
+x1. And u2 was x1 minus x2. This simply
+
+27
+00:02:01,948 --> 00:02:07,229
+means that they're aiming towards each
+other. Well, if we do that, we can
+
+28
+00:02:07,241 --> 00:02:12,809
+actually write down the following the
+following system. This is the closed loop
+
+29
+00:02:12,821 --> 00:02:17,748
+system now, where we have picked that
+controller. So, x dot is this matrix times
+
+30
+00:02:17,760 --> 00:02:22,763
+x. Okay, let's see if this works now.
+Well, how do we do that? Well, we check
+
+31
+00:02:22,775 --> 00:02:28,082
+the eigenvalues of the A matrix to see
+what's going on. Alright. Here is my A
+
+32
+00:02:28,094 --> 00:02:34,881
+matrix, type eig in MATLAB or whatever
+software you're using, and you get that
+
+33
+00:02:34,893 --> 00:02:40,196
+lambda 1 is 0, lambda 2 is negative 2.
+Okay, this is a little annoying, right?
+
+34
+00:02:40,321 --> 00:02:46,681
+Because we said asymptotic stability means
+that both eigenvalues need negative real
+
+35
+00:02:46,693 --> 00:02:51,774
+part, this doesn't have that. But
+asymptotically stable, so asymptotic
+
+36
+00:02:51,786 --> 00:02:56,847
+stability also means that the state goes
+to the origin and, like we said, we don't
+
+37
+00:02:56,859 --> 00:03:01,970
+know where the origin is, so why should we
+expect that? We should not expect it. We
+
+38
+00:03:01,982 --> 00:03:07,081
+also know that one positive eigenvalue or
+eigenvalue with positive real part makes a
+
+39
+00:03:07,093 --> 00:03:12,105
+system go unstable. We don't have that
+either. In fact, what we have is this
+
+40
+00:03:12,117 --> 00:03:17,166
+in-between case that we called critical
+stability. We have one 0 eigenvalue and
+
+41
+00:03:17,178 --> 00:03:22,486
+the remaining eigenvalues have negative
+real part. So, this is critically stable.
+
+42
+00:03:22,632 --> 00:03:27,299
+And, in fact, here is a fact that I'm not
+going to show but this is a very useful
+
+43
+00:03:27,311 --> 00:03:32,104
+fact. So, that if you have one eigenvalue
+be zero and all the others have negative
+
+44
+00:03:32,116 --> 00:03:36,993
+real part, then in, in a certain sense,
+you're acting like asymptotic stability.
+
+45
+00:03:37,097 --> 00:03:42,116
+Meaning, you go, in this case, not to zero
+but you go into a special space called the
+
+46
+00:03:42,128 --> 00:03:47,564
+null space of A. And the null space of A
+is given by the set of all x, so such that
+
+47
+00:03:47,576 --> 00:03:53,041
+when you multiply A by x, you get zero
+out. That's where your going to end up.
+
+48
+00:03:53,160 --> 00:03:59,010
+So, your going to end up inside this thing
+called the null space of A, in this case,
+
+49
+00:03:59,129 --> 00:04:05,787
+because you have one 0 eigenvalue and all
+others having strictly negative real part.
+
+50
+00:04:05,790 --> 00:04:12,326
+And if you type null(A) in MATLAB, you
+find that the null space for this
+
+51
+00:04:12,338 --> 00:04:18,238
+particular A is given by x is equal to
+alpha, alpha where alpha is any real
+
+52
+00:04:18,250 --> 00:04:23,851
+number and why is that? Well, if I take
+negative 1, 1, 1, negative 1, this is my A
+
+53
+00:04:23,863 --> 00:04:29,879
+matrix, and I multiply this by alpha,
+alpha, what do I get? Well, ll' get minus
+
+54
+00:04:29,891 --> 00:04:36,401
+alpha plus alpha here, and then I get plus
+alpha minus alpha there, which is clearly
+
+55
+00:04:36,413 --> 00:04:42,684
+equal to 0. So, this is the null space.
+Okay, what does this mean for me? Well, it
+
+56
+00:04:42,696 --> 00:04:46,961
+means that x is, x1 is going to go to
+alpha and x2 is going to go to alpha. x1
+
+57
+00:04:46,973 --> 00:04:51,682
+goes to alpha, x2 goes to alpha, which
+means that x1 minus x2 goes to 0 because
+
+58
+00:04:51,694 --> 00:04:56,688
+they go to the same thing. Which means,
+that we have, ta-da, achieved rendevous.
+
+59
+00:04:56,792 --> 00:05:01,685
+They end up on top of each other. In fact,
+they end, end up at alpha. We don't know
+
+60
+00:05:01,697 --> 00:05:05,780
+what alpha is but We know that they end up
+there. Okay.
+
+61
+00:05:05,782 --> 00:05:11,680
+Now, if you have more than two agents, we
+simply do the same thing. In this case, we
+
+62
+00:05:11,692 --> 00:05:17,601
+aim towards what's called the centroid of
+the neighbors. And, in fact, if we write
+
+63
+00:05:17,613 --> 00:05:23,561
+this down, we write down the same thing
+for more than one agent, we get that x dot
+
+64
+00:05:23,573 --> 00:05:29,487
+i, before it was just xj minus xi, there
+were 2 agents. Now, I'm summing over all
+
+65
+00:05:29,499 --> 00:05:35,288
+of agents i's neighbors. That is doing the
+same thing if you have more than one
+
+66
+00:05:35,300 --> 00:05:40,850
+agent. And, in fact, if you do that and
+you stack all the x's together then you
+
+67
+00:05:40,862 --> 00:05:45,575
+can write this as x. is negative lx. And
+this is just some bookkeeping. And the
+
+68
+00:05:45,587 --> 00:05:50,575
+interesting thing here, here is that l it,
+it's known as the Laplacian of the
+
+69
+00:05:50,587 --> 00:05:55,775
+underlying graph. Meaning, who can talk to
+whom. that's not so important. The
+
+70
+00:05:55,787 --> 00:06:01,599
+important thing though is that we know a
+lot about this matrix L and, again, and
+
+71
+00:06:01,611 --> 00:06:06,475
+it's called the graph Laplacian. And the
+fact is that if the undergrinding,
+
+72
+00:06:06,585 --> 00:06:11,816
+underlying graph is connected, then L has
+one 0 eigenvalue, and the rest of the
+
+73
+00:06:11,828 --> 00:06:17,351
+eigenvalues are positive. But look here,
+we have negative L here, which means that
+
+74
+00:06:17,363 --> 00:06:22,735
+negative L is one 0 eigenvalue and the
+rest of the eigenvalues are negative.
+
+75
+00:06:22,740 --> 00:06:28,679
+That means that this system here, the
+general multiagent system here is actually
+
+76
+00:06:28,691 --> 00:06:34,131
+critically stable. And we know that it
+goes int o the null space of L. And it
+
+77
+00:06:34,143 --> 00:06:39,565
+turns out, and this is a fact from
+something called algebraic graph theory.
+
+78
+00:06:39,684 --> 00:06:44,957
+We don't need to worry too much about it.
+We just know that clever graph
+
+79
+00:06:44,969 --> 00:06:49,913
+theoreticians have figured out that the
+null space to L, if the graph is connected
+
+80
+00:06:49,925 --> 00:06:54,894
+which means that there is some path with,
+through this network between any two
+
+81
+00:06:54,906 --> 00:06:59,975
+agents is given by not alpha, alpha but
+alpha, alpha, alpha, alpha, alpha, a bunch
+
+82
+00:06:59,987 --> 00:07:05,180
+of alphas. So, just like before, if I have
+this thing and, in fact, it doesn't have
+
+83
+00:07:05,192 --> 00:07:10,335
+to be scalar agents, what I do have is
+that all the agents go to the same alpha
+
+84
+00:07:10,444 --> 00:07:15,775
+or in other words, the difference between
+the agents will actually disappear. And
+
+85
+00:07:15,787 --> 00:07:21,581
+when we did this, we design a controller.
+We actually designed this thing here. And
+
+86
+00:07:21,593 --> 00:07:26,614
+this thing is so useful that it actually
+has its own name. It's known as the
+
+87
+00:07:26,626 --> 00:07:32,004
+consensus equation because it makes agents
+agree. In this case, they were agreeing on
+
+88
+00:07:32,016 --> 00:07:37,369
+position. But this equation actually will
+solve the rendezvous problem because of
+
+89
+00:07:37,381 --> 00:07:42,496
+the fact that the corresponding system
+matrix you get is negative L at the right
+
+90
+00:07:42,508 --> 00:07:48,096
+eigenvalues which means that the system is
+critically stable so we can solve
+
+91
+00:07:48,108 --> 00:07:53,694
+rendezvous in the multirobot case. And
+again, you've seen this video. Now, you
+
+92
+00:07:53,706 --> 00:07:59,392
+know what it was I was running to generate
+this video. In fact, you can go beyond
+
+93
+00:07:59,404 --> 00:08:05,205
+rendezvous So, here is actually a course
+that I'm teaching at Georgia Tech, where
+
+94
+00:08:05,217 --> 00:08:09,876
+you want to do a bunch of different
+things. And again, all I'm doing is really
+
+95
+00:08:09,888 --> 00:08:14,840
+the rendezvous equation with a bunch of
+weights on top of it. And we're going to
+
+96
+00:08:14,852 --> 00:08:19,536
+learn how to do this. I just want to show
+you this video, because I think it's quite
+
+97
+00:08:19,548 --> 00:08:24,644
+spectacular. You have robots that have to
+navigate an environment. They're running
+
+98
+00:08:24,656 --> 00:08:29,123
+these, basically the conses equation and
+they have to avoid slamming into
+
+99
+00:08:29,135 --> 00:08:33,861
+obstacles, so I should point out that this
+was the final project, project in this
+
+100
+00:08:33,873 --> 00:08:38,769
+course, it's called network control
+systems. And I just wanted to show you
+
+101
+00:08:38,781 --> 00:08:43,536
+that you can take this very simple
+algorithm that we just dev eloped, make
+
+102
+00:08:43,548 --> 00:08:48,522
+some minor tweaks to it, which we're going
+to learn how to do, to solve rather
+
+103
+00:08:48,534 --> 00:08:54,131
+complicated, multiagent robotics problems.
+So here, the robots have to split into
+
+104
+00:08:54,143 --> 00:08:59,546
+different subgroups and avoid things, they
+have to get information, they have to
+
+105
+00:08:59,558 --> 00:09:04,751
+discover missing agents and so forth. And
+we will learn how to do all of that in
+
+106
+00:09:04,763 --> 00:09:09,442
+this course. Now, having said that, talk
+is cheap, right? And simulation is maybe
+
+107
+00:09:09,454 --> 00:09:14,034
+not cheap, but let's do it for real. In
+this case, we're going to have two Khepera
+
+108
+00:09:14,046 --> 00:09:18,179
+mobile robots, and what we're going to do
+is we're going to use the same PID
+
+109
+00:09:18,191 --> 00:09:23,385
+go-to-go controllers and we're going to
+let the consensus equation flop down
+
+110
+00:09:23,397 --> 00:09:28,425
+intermediary goal points. And what we're
+going to do is we're going to keep track
+
+111
+00:09:28,437 --> 00:09:33,690
+of our position using odometry, meaning
+our, our real encoders. And what the
+
+112
+00:09:33,702 --> 00:09:37,288
+robots are going to do, is they're
+actually going to tell each other where
+
+113
+00:09:37,300 --> 00:09:41,577
+they are rather than sense where they are
+because we haven't talked yet about how
+
+114
+00:09:41,589 --> 00:09:45,698
+the design sensing links. So, what we're
+doing is we're faking the sensing and
+
+115
+00:09:45,710 --> 00:09:50,412
+telling, they're telling each other where
+they are. And they're using a PID
+
+116
+00:09:50,424 --> 00:09:57,204
+regulator to go in the direction that the
+consensus equation is telling them to go
+
+117
+00:09:57,216 --> 00:10:03,810
+in. And now, let's switch to the actual
+robots running and solving the rendezvous
+
+118
+00:10:03,822 --> 00:10:10,298
+problem. So, now that we have designed a
+closed looped controller for achieving
+
+119
+00:10:10,310 --> 00:10:17,600
+rendezvous we're going to deploy it on our
+old friends, to Khepera mobile robots. so,
+
+120
+00:10:17,612 --> 00:10:23,450
+what we will see now are these two robots
+actually executing this algorithm. and we
+
+121
+00:10:23,462 --> 00:10:28,225
+will be using the same go to goal
+controller as we designed earlier to
+
+122
+00:10:28,237 --> 00:10:34,250
+achieve this. And, as always, I have J P..
+De la Croix here to conduct the affairs
+
+123
+00:10:34,262 --> 00:10:39,489
+and practically, we're going to see two
+robots crashing into each other which is
+
+124
+00:10:39,501 --> 00:10:43,859
+exciting in its own right. But
+intellectually, what we're going to see,
+
+125
+00:10:43,963 --> 00:10:48,798
+is the state of the system asymptotically
+driving into the null space of our new A
+
+126
+00:10:48,810 --> 00:10:53,773
+matrix. And the reason for that is, as
+we've seen this matrix has 0, 0
+
+127
+00:10:53,785 --> 00:11:00,499
+eigenvalue, which means that the system is
+critically stable and the states approach
+
+128
+00:11:00,511 --> 00:11:06,766
+the null space. So, J.P., without further
+ado, let's see a robotic crash. So, we see
+
+129
+00:11:06,778 --> 00:11:14,834
+they're immediately turning towards each
+other and . Pretty exciting stuff, if I
+
+130
+00:11:14,846 --> 00:11:16,166
+may say so myself.

@@ -1,0 +1,125 @@
+Now we have lots of really good building 
+blocks. We haven't yet put them together. Cause we don't fully know how they fit 
+together, but we have lot's of cool things. 
+We have controllability, that tells us whether or not it's possible to control 
+the system, if we have access to the state. 
+And the way we do that is using state feedback. 
+We have this notion of observability, which tells us whether or not it is 
+possible to, to figure out the state from the output, and the way we do that is. 
+by building observers and we have this tool that seems remarkably strong which 
+is pole-placement which basically allows us to place the closed loop eigen values 
+where ever we want. So make them equal to the desired eigen 
+values and the big question now is how do we put everything together. 
+And the answer is known as the separation principle. 
+And in a nut shell, the separation principle, which by the way, is quite 
+wonderful tells us that we can actually decouple observer design and control 
+design from each other meaning we can actually control the system as if we have 
+X, even though we don't. And then we can get their estimate from x 
+using an observer structure. So this is the topic of today's lecture 
+and it really is the reason why we're able to effectively control linear 
+systems. So, here's the game plan. 
+Now, I have x dot is Ax + Bu. Y is Cx. 
+So this is a standard linear time and variance system. 
+Now I'm going to assume that this system is both completely controllable and 
+completely observable. If it's not then, to be completely frank, 
+we're toast. What that means, we need to go and buy 
+new sensors, which is fancy speak for get a new C matrix. 
+Or we need to buy more actuators which means get a better B matrix. 
+So let's assume that we have complete controllability and complete 
+observability. Well, the 1st step in our game plan is 
+let's ignore the fact that we don't have X. 
+So I'm going to design the state feedback controller as if I had X, meaning I'm 
+going to pick U=-Kx, which means that I get my closed loop, my closed loop 
+dynamics to be this. Now, this is what I designed for and I 
+have my favorite pole placement tool to do this. 
+Now, in reality, I don't have that. reality is I have u is -Kx hat, where the 
+hat is my estimated state. So that's what I actually have even 
+though that's not what I designed for. Now step two, of course, is I'm going to 
+estimate x using, using an In order to get this x hat and to make it be as 
+pleasant as it can. The big thing that we should note now is 
+that previously we didn't have a U term in the observer dynamics. 
+Now we do have a U term that we need to take into account but it turns out that 
+it's very simple to do that. I built my predicter and the predicter 
+part now. Contains both Ax hat and a BU term, 
+because a predictor is just a copy of the dynamics. 
+And then I have my corrector part which is this error between the actual output 
+and what the ouput would have been if I had x hat instead of x. 
+Well, this structure again gives me the same aerodynamics here. 
+So what we do is I pick L so that my error, my estimation error is stabilized. 
+And that's before the error is the actual state minus my estimated state. 
+So this is my game plan. Now, let's see if this game plan is any 
+good. A fact. 
+It should be good right? because otherwise I'm wasting everyones time with 
+these slides, but let's make sure that it indeed is worth while. 
+What do we want, this system to do? We want to drive x to zero, because we're 
+stabilizing it, and we want to drive e to zero, because we want the estimate to be 
+good. So, what I need to do, is analyze the 
+joint dynamics together. So x dot, is ax+bu, but u is, if you 
+remember, u = -k, not x, but x-hat, which is why I get my x dynamics to look like 
+this. While me e dynamics, that's the matrenary 
+dynamics, is what it has always been. Okay, let's simplify this a little bit. 
+So, I know that the error is X minus X hat. 
+So I can replace this X hat with X minus the error. 
+So then I get my dynamics after some pushups to be A minus BKX. 
+Plus BK. E. 
+So now I have something that involves X and E and here it only invovles E. 
+So now I can actually write everything in a joint way. 
+X dot E dot is this large matrix now that's not an NxN but it's a 2Nx2N*X E. 
+And mow, our strategy, our joint strategy works if and only if this new joint 
+system is an asymptotically stable system. 
+Which means that we need to check the eigenvalues of this new system matrix. 
+Now, here is where the separation principle comes into play. 
+This is my dynamics. Now, this matrix here is a rather special 
+matrix. Because it's triangular. 
+It has a block there, it has a block there and it has a block there. 
+And triangular matrices, or block triangular matrices. 
+May they be upper or lower triangular. They have a particularly nice structure. 
+So this is an upper triangle block-matrix and the eigenvalues are given by the 
+diagonal blocks. Which means that the eiganvalues to this 
+whole matrix are the eiganvalues to this matrix and the eiganvalues to this 
+matrix. Or another way of writing it is that the 
+characteristic equation is the characteristic equation to the first 
+block here. Times the characteristic equation to the 
+second block here. All that this means is that the 
+eigenvalues are given by the values of the diagonal blocks. 
+And here is the wonderful part. If we haven't been stupid in how we did 
+the design, then this thing has been stabalized, because we did cold placement 
+to make sure that the real part of our diagonals is strictly negative. 
+This part we have made sure is also well behaved because we have designed our 
+observer in such a way that real part of the eigenvalue is completely negative. 
+Which means that we haven't messed anything up. 
+Everything works. What that means is. 
+Control design people, we can design our controllers as if we had the state and 
+than we rely on our clever sensing people to estimate the state for us. 
+And thanks to the separation principal everything works. 
+Now the ones that we keep in mind is that we still have this term here, and this 
+term that basically tells you something about what happens to transients. 
+But after awhile. This term doesn't really matter and 
+everything works, so now we are ready to state the separation principle. 
+The separation principle tells us that we can in fact design controllers as if we 
+have x. And then, we can design the observers 
+independent of the control actions, because all we're doing is, we're adding 
+a + Bu in the observer dynamic, so the control actions are actually just 
+canceled out. In other words, control and observer 
+designs can be completely separated. So, if you put everything together, in a 
+final Glorious block diagram. This is what the world looks like. 
+We have our system. This is physics. 
+This is what a system does. Now, we have modeled it using A B and C 
+matrices, but what comes out of this thing is Y, meaning our measurements and 
+what we push into this system is U, our control action. 
+Now, we're taking u, sorry, we're taking y and feeding it into the observer. 
+So the observer now is, ax-hat + bu + l(y-Cx-hat) and, the one thing to note, 
+is that we need both, y and u to Feed into the observer. 
+Now, out of the observer comes x-hat, meaning, our estimate of what the system 
+is actually doing. And now, we use x-hat to feed back, to 
+get are, are u. And the beautiful thing here is that, 
+these two blocks together, they constitute the controller. 
+So these two blocks are what's being done in software and this, is the physics of 
+the world. So this the plant, there's nothing we can 
+do about that and the controller consists now of two pieces. 
+One piece that, estimates the state and another piece that computes the control 
+action/g. So now we have everything we need to do 
+effective control design and what we'll do in the next lecture, which is the 
+final lecture, lecture of this module is that we'll actually deploy it. 
+And in fact, we're going to see it in action on a humanoid robot where we're 
+doing simultaneous control and state estimation.

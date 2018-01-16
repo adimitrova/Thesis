@@ -1,0 +1,623 @@
+1
+00:00:00,000 --> 00:00:05,230
+[MUSIC]
+
+2
+00:00:05,230 --> 00:00:11,050
+Hello, welcome to another lesson
+on connectivity protocols.
+
+3
+00:00:11,050 --> 00:00:12,520
+In an earlier video lecture,
+
+4
+00:00:12,520 --> 00:00:16,810
+we talked about the different
+properties of connectivity protocols.
+
+5
+00:00:16,810 --> 00:00:20,176
+In this lesson, we will use
+those properties to describe and
+
+6
+00:00:20,176 --> 00:00:24,602
+differentiate some of the very common and
+important connectivity protocols.
+
+7
+00:00:24,602 --> 00:00:30,008
+The first, and the only wired protocol
+we will discuss here, is ethernet.
+
+8
+00:00:30,008 --> 00:00:38,437
+The IEEE 802.3 working group defines
+the specification for ethernet.
+
+9
+00:00:38,437 --> 00:00:41,762
+100 megabyte and gigabyte ethernet can
+
+10
+00:00:41,762 --> 00:00:46,664
+be commonly found in different
+embedded development boards.
+
+11
+00:00:48,050 --> 00:00:54,306
+Specifications for data rates up
+to 100Gbps over coaxial cable and
+
+12
+00:00:54,306 --> 00:00:59,300
+400Gbps over fiber optic
+cable have been proposed.
+
+13
+00:01:01,110 --> 00:01:06,760
+Ethernet was designed in a time when power
+consumption was not a consideration.
+
+14
+00:01:07,790 --> 00:01:10,950
+And therefore,
+the modules consume a lot of power
+
+15
+00:01:11,990 --> 00:01:14,500
+compared to the other
+standards discussed here.
+
+16
+00:01:16,370 --> 00:01:20,562
+It's cheap enough and is even available as
+
+17
+00:01:20,562 --> 00:01:25,224
+part of low cost embedded
+development boards.
+
+18
+00:01:25,224 --> 00:01:29,901
+Defined under the 802.11 umbrella of IEEE,
+
+19
+00:01:29,901 --> 00:01:35,341
+Wi-Fi offers a wireless local
+area network specification
+
+20
+00:01:35,341 --> 00:01:41,989
+that has a standard range of about
+100 meters and data rate of 1Gbps.
+
+21
+00:01:41,989 --> 00:01:49,474
+The data rate varies from
+50Mbps to greater than 1Gbps,
+
+22
+00:01:49,474 --> 00:01:55,620
+depending on the spectrum and
+technology used.
+
+23
+00:01:57,540 --> 00:02:00,990
+Power consumption varies
+based on the module and
+
+24
+00:02:00,990 --> 00:02:05,410
+manufacturer, but
+it's not a power friendly standard.
+
+25
+00:02:07,130 --> 00:02:12,070
+The number of devices connected to
+a single gateway depends on the available
+
+26
+00:02:12,070 --> 00:02:16,550
+bandwidth, which will be divided
+between the connected clients and
+
+27
+00:02:16,550 --> 00:02:18,910
+the processing power and
+memory of the system.
+
+28
+00:02:20,225 --> 00:02:25,274
+In simple home devices,
+there can be up to 253 connections.
+
+29
+00:02:25,274 --> 00:02:31,179
+WI-FI mainly operates in
+the 2.4 gigahertz ISM band,
+
+30
+00:02:31,179 --> 00:02:33,831
+although 5 gigahertz and
+
+31
+00:02:33,831 --> 00:02:39,268
+newer 60 gigahertz standards
+have been proposed.
+
+32
+00:02:39,268 --> 00:02:44,312
+A newer standard, 802.11 Has been
+
+33
+00:02:44,312 --> 00:02:48,956
+proposed in the 900 megahertz band.
+
+34
+00:02:48,956 --> 00:02:54,020
+It will offer better range and
+power consumption.
+
+35
+00:02:54,020 --> 00:02:57,598
+With the downside of lower bandwidth,
+this standard is targeted for
+
+36
+00:02:57,598 --> 00:02:58,900
+the Internet of Things.
+
+37
+00:03:02,703 --> 00:03:08,725
+Bluetooth is a standard managed by
+the Bluetooth Special Interest Group.
+
+38
+00:03:08,725 --> 00:03:14,790
+It's a short-range, low bandwidth
+personal area network protocol.
+
+39
+00:03:16,340 --> 00:03:22,395
+It operates in the unlicensed
+2.4 gigahertz ISM band and
+
+40
+00:03:22,395 --> 00:03:26,764
+uses frequency hopping spread spectrum.
+
+41
+00:03:26,764 --> 00:03:33,549
+Older Bluetooth standards offered
+up to 3Mbits/s data rates,
+
+42
+00:03:33,549 --> 00:03:39,603
+while newer Bluetooth 4.0
+offers up to 34Mbits/s.
+
+43
+00:03:43,303 --> 00:03:47,147
+Bluetooth Smart, or Bluetooth Low Energy,
+
+44
+00:03:47,147 --> 00:03:51,509
+or BLE is designed for
+very low power consumption.
+
+45
+00:03:53,560 --> 00:03:56,770
+Despite the similar name
+to the classic Bluetooth,
+
+46
+00:03:56,770 --> 00:03:59,300
+it's a completely different
+standard all together.
+
+47
+00:04:00,620 --> 00:04:06,490
+Unlike the classic Bluetooth,
+BLE has the data rate of just 1Mbits/s.
+
+48
+00:04:07,850 --> 00:04:12,160
+It's designed for
+sending periodic chunks of data, and
+
+49
+00:04:12,160 --> 00:04:17,117
+therefore it is not suitable for
+voice calls or music streaming.
+
+50
+00:04:19,565 --> 00:04:26,920
+BLE offers up to 128 bit AES
+encryption for messages.
+
+51
+00:04:26,920 --> 00:04:31,800
+Here AES stands for
+the Advance Encryption Standard.
+
+52
+00:04:33,902 --> 00:04:38,635
+With an approximate transmission
+power of 15 milliwatts, and
+
+53
+00:04:38,635 --> 00:04:43,580
+3 milliseconds per transaction,
+a BLE device can perform
+
+54
+00:04:43,580 --> 00:04:48,440
+more than 20 million transactions
+within a small coin cell battery.
+
+55
+00:04:50,880 --> 00:04:55,580
+Moreover, unlike in the classic Bluetooth,
+there is no theoretical
+
+56
+00:04:55,580 --> 00:05:00,090
+limits on how many nodes can
+connect to one access point.
+
+57
+00:05:02,570 --> 00:05:05,960
+Mesh networking is not supported, but
+
+58
+00:05:05,960 --> 00:05:09,140
+is being considered to be
+made part of the standard.
+
+59
+00:05:10,590 --> 00:05:14,390
+ZigBee is a standard for
+low power mesh networking nodes.
+
+60
+00:05:15,540 --> 00:05:18,810
+Although the range is up to a 100 meters,
+
+61
+00:05:18,810 --> 00:05:23,760
+due to the mesh nature, it can offer
+connectivity over longer distances.
+
+62
+00:05:25,410 --> 00:05:31,350
+On the physical or link layer,
+it uses the 802.15.4 standard
+
+63
+00:05:31,350 --> 00:05:38,090
+defined by IEEE, and
+unlike other connectivity protocols,
+
+64
+00:05:38,090 --> 00:05:41,570
+it also defines the network and
+application layer protocol.
+
+65
+00:05:42,950 --> 00:05:46,851
+All of this is part of
+the ZigBee protocol stack.
+
+66
+00:05:46,851 --> 00:05:54,143
+The simple way to understand this is that
+in the ZigBee standard the connectivity or
+
+67
+00:05:54,143 --> 00:06:00,084
+radio part is handled via
+IEEE 802.15.4 specifications,
+
+68
+00:06:00,084 --> 00:06:05,294
+but the remaining logical
+parts like routing, security,
+
+69
+00:06:05,294 --> 00:06:11,989
+data payload formats and profiling
+are done by the ZigBee alliance itself.
+
+70
+00:06:11,989 --> 00:06:16,542
+For this reason, ZigBee is not
+only a connectivity protocol, but
+
+71
+00:06:16,542 --> 00:06:18,830
+also a communication protocol.
+
+72
+00:06:20,150 --> 00:06:23,060
+We will learn more about
+communication protocols later.
+
+73
+00:06:24,580 --> 00:06:28,080
+RFID stands for
+radio frequency identification.
+
+74
+00:06:29,930 --> 00:06:33,819
+You can think of it as an advanced
+replacement for bar codes.
+
+75
+00:06:35,340 --> 00:06:38,800
+Instead of a barcode on a product,
+there's a tag.
+
+76
+00:06:40,160 --> 00:06:44,980
+And instead of light as in
+the case of a barcode reader,
+
+77
+00:06:44,980 --> 00:06:47,800
+you use radio waves to
+interact with the tag.
+
+78
+00:06:49,440 --> 00:06:53,510
+This means that you can
+have a longer range, and
+
+79
+00:06:53,510 --> 00:06:55,910
+the tag doesn't have to
+be visible to be read.
+
+80
+00:06:57,570 --> 00:07:01,360
+It can be implanted anywhere
+in the product, and
+
+81
+00:07:01,360 --> 00:07:06,220
+as long as it's in the range of
+the reader, it can be tracked and read.
+
+82
+00:07:06,220 --> 00:07:13,120
+At a minimum, tags have a chip,
+some kilobytes of memory, and antennae.
+
+83
+00:07:14,320 --> 00:07:17,880
+Memories stores
+the information on the tag.
+
+84
+00:07:17,880 --> 00:07:22,520
+The chip processes this data and
+performs the transformation functions.
+
+85
+00:07:22,520 --> 00:07:26,802
+And the antenna is use to transmit and
+receive the RF signals.
+
+86
+00:07:28,536 --> 00:07:31,200
+Tags can be passive or active.
+
+87
+00:07:32,380 --> 00:07:38,140
+Passive tags take their power from the RF
+signals transmitted by the reader.
+
+88
+00:07:39,500 --> 00:07:42,190
+Active tags have a battery
+that powers them.
+
+89
+00:07:43,530 --> 00:07:47,640
+That's why active tags have a higher cost,
+but a longer range.
+
+90
+00:07:49,520 --> 00:07:53,170
+A typical range for RFID usage is 1 meter.
+
+91
+00:07:55,138 --> 00:07:59,000
+Cellular technologies is
+a very broad term and
+
+92
+00:07:59,000 --> 00:08:01,560
+encapsulates a wide range of technologies.
+
+93
+00:08:02,900 --> 00:08:09,180
+In simple terms, cellular technologies
+are those where there are multiple small
+
+94
+00:08:09,180 --> 00:08:14,100
+interconnected transmitters or
+cells instead of one main transmitter.
+
+95
+00:08:15,800 --> 00:08:19,180
+Another feature is frequency reuse,
+
+96
+00:08:19,180 --> 00:08:24,450
+where one frequency is used by multiple
+cells to increase range and capacity.
+
+97
+00:08:26,155 --> 00:08:31,280
+But these cells, have to be geography
+far apart from each other, so
+
+98
+00:08:31,280 --> 00:08:33,760
+that there is minimal to no interference.
+
+99
+00:08:35,480 --> 00:08:38,170
+The most common cellular
+technology is GSM.
+
+100
+00:08:40,080 --> 00:08:43,390
+Most of the world's mobile
+network operators use GSM.
+
+101
+00:08:44,790 --> 00:08:50,260
+GSM also has multiple
+standards classified as first,
+
+102
+00:08:50,260 --> 00:08:53,140
+second, third generation and so on.
+
+103
+00:08:54,640 --> 00:08:59,720
+The data rates and number of users per
+cell improves with each generation.
+
+104
+00:09:01,440 --> 00:09:08,620
+The current deployed generation is fourth,
+or 4G, while 5G is in development.
+
+105
+00:09:10,430 --> 00:09:14,800
+For every generation,
+you can have multiple competing standards.
+
+106
+00:09:14,800 --> 00:09:21,471
+For example, for 4G, we have two
+main competitors, WiMax and LTE.
+
+107
+00:09:21,471 --> 00:09:26,655
+A competing standard to GSM is CDMA.
+
+108
+00:09:26,655 --> 00:09:32,240
+It's not used widely, and
+it's mostly limited to United States.
+
+109
+00:09:33,730 --> 00:09:38,692
+In any case,
+your choice of technology can be based on
+
+110
+00:09:38,692 --> 00:09:44,316
+the range you need,
+CDMA offers a better range, data rate,
+
+111
+00:09:44,316 --> 00:09:49,280
+LTE offers a better data rate,
+local availability,
+
+112
+00:09:49,280 --> 00:09:54,170
+whichever network is deployed
+in your area or cost.
+
+113
+00:09:56,575 --> 00:10:04,130
+6LoWPAN stands for IPv6 over low power
+wireless personal area networks.
+
+114
+00:10:04,130 --> 00:10:08,920
+As the name suggests,
+it is a standard that enables the use
+
+115
+00:10:08,920 --> 00:10:12,470
+of IPv6 on low power edge devices.
+
+116
+00:10:14,020 --> 00:10:20,130
+By natively communicating using
+Internet Protocol, 6LoWPAN devices and
+
+117
+00:10:20,130 --> 00:10:25,450
+networks don't require any special
+gateways to connect to other IP networks,
+
+118
+00:10:25,450 --> 00:10:26,650
+such as the Internet.
+
+119
+00:10:27,660 --> 00:10:31,729
+Therefore, 6LoWPAN offers
+interoperability and
+
+120
+00:10:31,729 --> 00:10:36,080
+simplicity in design compared to ZigBee or
+Bluetooth.
+
+121
+00:10:37,490 --> 00:10:41,840
+Essentially, this standard
+enables IPv6 packets to
+
+122
+00:10:41,840 --> 00:10:46,190
+be transmitted over IEEE 802.15.4,
+
+123
+00:10:46,190 --> 00:10:50,570
+which is a standard for low data rate
+wireless personal area networks.
+
+124
+00:10:52,300 --> 00:10:56,868
+This makes 6LoWPAN ideal for
+cyber physical systems,
+
+125
+00:10:56,868 --> 00:11:02,220
+where IP connectivity and
+low power consumption are essential.
+
+126
+00:11:03,630 --> 00:11:07,660
+In this lesson, we discuss the basics
+of some of the important M to
+
+127
+00:11:07,660 --> 00:11:13,220
+M connectivity protocols or protocols
+that mainly reside on the link layer.
+
+128
+00:11:13,220 --> 00:11:14,137
+In later videos,
+
+129
+00:11:14,137 --> 00:11:18,371
+we will look into communication protocols
+that reside on the application layer.
+
+130
+00:11:18,371 --> 00:11:23,734
+[SOUND]

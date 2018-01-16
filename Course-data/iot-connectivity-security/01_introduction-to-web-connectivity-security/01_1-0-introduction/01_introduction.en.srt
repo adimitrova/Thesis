@@ -1,0 +1,249 @@
+1
+00:00:00,047 --> 00:00:04,050
+[MUSIC]
+
+2
+00:00:07,893 --> 00:00:13,691
+Hello, welcome to this online
+course on web connectivity and
+
+3
+00:00:13,691 --> 00:00:17,266
+security in cyber physical systems.
+
+4
+00:00:17,266 --> 00:00:21,395
+I'll be your lecturer
+in this online course.
+
+5
+00:00:21,395 --> 00:00:23,269
+My name is Juha Plosila and
+
+6
+00:00:23,269 --> 00:00:28,050
+I teach embedded systems engineering
+at the University of Turku.
+
+7
+00:00:29,960 --> 00:00:34,290
+Turku is a beautiful city at
+the southwest coast of Finland.
+
+8
+00:00:36,190 --> 00:00:39,561
+A city next to 20,000 islands, and
+
+9
+00:00:39,561 --> 00:00:45,643
+one that 35,000 higher education
+students call their second home.
+
+10
+00:00:45,643 --> 00:00:54,187
+[MUSIC]
+
+11
+00:00:54,187 --> 00:00:56,921
+So, lets talk about
+cyber physical systems.
+
+12
+00:00:56,921 --> 00:01:06,921
+[MUSIC]
+
+13
+00:01:15,995 --> 00:01:20,895
+Cyber physical systems,
+are embedded devices that interact and
+
+14
+00:01:20,895 --> 00:01:22,770
+control the real world.
+
+15
+00:01:24,610 --> 00:01:27,380
+You might not notice them,
+but they are everywhere.
+
+16
+00:01:29,190 --> 00:01:34,480
+Ever wondered how the stationary escalator
+starts moving when you get near them?
+
+17
+00:01:36,740 --> 00:01:39,830
+There are sensors that detect movement and
+
+18
+00:01:39,830 --> 00:01:44,840
+a small computer that then controls
+the motors that run the escalators.
+
+19
+00:01:46,500 --> 00:01:49,420
+In other words,
+it's a combination of sensors and
+
+20
+00:01:49,420 --> 00:01:53,470
+actuators that control the escalator,
+a physical entity.
+
+21
+00:01:55,450 --> 00:01:58,172
+It is a system where computation and
+
+22
+00:01:58,172 --> 00:02:03,084
+control come together to improve
+efficiency of the real world.
+
+23
+00:02:03,084 --> 00:02:08,226
+And that is the philosophy
+behind cyber physical systems.
+
+24
+00:02:08,226 --> 00:02:15,415
+From controlling traffic to energy
+transmission to running factories.
+
+25
+00:02:15,415 --> 00:02:20,182
+Cyber physical systems help improve
+real world efficiency and productivity.
+
+26
+00:02:24,476 --> 00:02:31,340
+Modern cars and airplanes are examples
+of cyber physical systems.
+
+27
+00:02:31,340 --> 00:02:34,370
+Where electronic control units monitor and
+
+28
+00:02:34,370 --> 00:02:37,880
+handle the different aspects
+of these physical devices.
+
+29
+00:02:39,360 --> 00:02:46,180
+But these isolated systems, cyber physical
+systems generally do not work isolated.
+
+30
+00:02:47,370 --> 00:02:50,490
+Their impact is much higher
+when they are connected.
+
+31
+00:02:52,230 --> 00:02:56,750
+Take the example of a nationwide
+network of cyber physical systems
+
+32
+00:02:56,750 --> 00:02:58,710
+managing the electric grid.
+
+33
+00:03:00,830 --> 00:03:05,110
+Improving efficiency,
+providing configurability and
+
+34
+00:03:05,110 --> 00:03:09,391
+reactiveness in cases of great failures or
+excessive loads.
+
+35
+00:03:11,490 --> 00:03:16,147
+But what if we could connect our cyber
+physical system to another already
+
+36
+00:03:16,147 --> 00:03:18,140
+existing worldwide network?
+
+37
+00:03:18,140 --> 00:03:26,450
+The World Wide Web or WWW for short, that
+is what we will talk about in this course.
+
+38
+00:03:26,450 --> 00:03:29,980
+Connecting cyber physical
+systems to the World Wide Web.
+
+39
+00:03:32,410 --> 00:03:35,080
+The course is divided into five modules.
+
+40
+00:03:36,320 --> 00:03:38,400
+In the first three modules,
+
+41
+00:03:38,400 --> 00:03:42,150
+we'll talk about connectivity
+in cyber physical systems.
+
+42
+00:03:42,150 --> 00:03:48,130
+And go all the way to the advanced
+topics of cloud and fog computing.
+
+43
+00:03:48,130 --> 00:03:49,983
+In the last two modules,
+
+44
+00:03:49,983 --> 00:03:55,110
+we will teach you how to secure
+these systems against cyber threats.
+
+45
+00:03:56,940 --> 00:04:02,790
+If you want to build your understanding of
+the web, web connected embedded systems or
+
+46
+00:04:02,790 --> 00:04:08,120
+Internet of Things, and their security,
+but don't know where to begin.
+
+47
+00:04:08,120 --> 00:04:09,180
+This is the course for you.
+
+48
+00:04:10,700 --> 00:04:16,040
+We will take you on a journey from the
+fundamentals of the internet to web and
+
+49
+00:04:16,040 --> 00:04:17,480
+cloud connectivity.
+
+50
+00:04:17,480 --> 00:04:21,090
+And then towards building your
+understanding of security
+
+51
+00:04:21,090 --> 00:04:22,409
+in connected systems.
+
+52
+00:04:23,950 --> 00:04:28,379
+Join me on this journey as I
+strengthen your foundations toward web
+
+53
+00:04:28,379 --> 00:04:30,840
+connected cyber physical systems.
+
+54
+00:04:30,840 --> 00:04:35,039
+[MUSIC]

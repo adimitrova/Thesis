@@ -1,0 +1,386 @@
+1
+00:00:00,000 --> 00:00:05,359
+[MUSIC]
+
+2
+00:00:05,359 --> 00:00:10,860
+Welcome to the lesson on cloud
+computing and cyber physical systems.
+
+3
+00:00:10,860 --> 00:00:15,920
+In this video lecture, we will look into
+the relationship between cloud computing
+
+4
+00:00:15,920 --> 00:00:19,629
+and the future of cyber physical
+systems or embedded systems in general.
+
+5
+00:00:20,910 --> 00:00:22,480
+Let's talk about cloud computing.
+
+6
+00:00:22,480 --> 00:00:27,900
+In the simplest form,
+cloud computing is about utilizing
+
+7
+00:00:27,900 --> 00:00:33,650
+computational power as a utility
+like electricity or gas.
+
+8
+00:00:36,900 --> 00:00:40,927
+Instead of building your own
+in-house computational capabilities,
+
+9
+00:00:40,927 --> 00:00:44,423
+you rent them out from people
+who have already designed them.
+
+10
+00:00:47,127 --> 00:00:52,970
+This model of renting out resources based
+on one's needs has several benefits.
+
+11
+00:00:54,860 --> 00:00:56,330
+First, flexibility.
+
+12
+00:00:58,050 --> 00:01:02,970
+The resources you utilize like storage,
+computing capacity or
+
+13
+00:01:02,970 --> 00:01:06,810
+network can scale up or
+scale down based on your needs.
+
+14
+00:01:08,640 --> 00:01:10,640
+Second, low maintenance.
+
+15
+00:01:10,640 --> 00:01:15,400
+As the servers are managed
+by your provider,
+
+16
+00:01:15,400 --> 00:01:18,948
+you don't have to worry about
+maintenance or software updates.
+
+17
+00:01:18,948 --> 00:01:26,360
+Third, paper use, you only pay for
+the resources you use.
+
+18
+00:01:28,700 --> 00:01:33,774
+Fourth, security, cloud services
+can maintain better security and
+
+19
+00:01:33,774 --> 00:01:38,602
+hire better professionals compared
+to a small business or startup
+
+20
+00:01:41,942 --> 00:01:45,427
+In the words of a researcher
+in the field of security,
+
+21
+00:01:45,427 --> 00:01:48,300
+cloud is using somebody else's computer.
+
+22
+00:01:50,150 --> 00:01:55,270
+In another lesson, we talked about
+different protocols like GSM, Bluetooth,
+
+23
+00:01:55,270 --> 00:02:00,039
+and Zigby that enable us to connect
+our cyber physical systems.
+
+24
+00:02:01,140 --> 00:02:07,330
+We also pointed out the one's that support
+GCPIP to enable IP based communication.
+
+25
+00:02:09,600 --> 00:02:14,360
+When you take a small embedded device and
+assign it an IP address,
+
+26
+00:02:14,360 --> 00:02:18,080
+you can uniquely identify it,
+remotely access and
+
+27
+00:02:18,080 --> 00:02:21,990
+control it and
+share its data across the internet.
+
+28
+00:02:23,690 --> 00:02:28,090
+What you have done is that you have
+built an Internet of Things device or
+
+29
+00:02:28,090 --> 00:02:28,750
+IoT device.
+
+30
+00:02:28,750 --> 00:02:34,430
+You had a device, a thing, and
+you made it a part of the internet.
+
+31
+00:02:36,520 --> 00:02:41,540
+Irrespective of all the hype and
+well justified interest in the Internet of
+
+32
+00:02:41,540 --> 00:02:46,460
+Things, at its very basic level,
+it is a very large number of embedded
+
+33
+00:02:46,460 --> 00:02:51,890
+systems talking to each
+other via IP networks.
+
+34
+00:02:53,380 --> 00:02:59,440
+If you look at it from this perspective,
+to an embedded systems engineer, IoT is
+
+35
+00:02:59,440 --> 00:03:04,250
+more of an evolution of the technologies
+that were already available to him.
+
+36
+00:03:06,700 --> 00:03:10,510
+The reason we are talking about
+the Internet of Things is that
+
+37
+00:03:10,510 --> 00:03:14,150
+it shares a lot of similarities
+with cyber physical systems.
+
+38
+00:03:15,360 --> 00:03:20,660
+IoT is about monitoring or sensing the
+real world with interconnected sensors.
+
+39
+00:03:21,820 --> 00:03:23,610
+Cyber physical systems are the same.
+
+40
+00:03:25,270 --> 00:03:29,100
+Any platform that bills
+itself as an IoT platform
+
+41
+00:03:29,100 --> 00:03:31,790
+can also be cyber physical
+systems platform.
+
+42
+00:03:33,540 --> 00:03:37,940
+From now on, in this lesson,
+we will use the term IoT
+
+43
+00:03:37,940 --> 00:03:42,230
+instead of cyber physical
+systems as most of
+
+44
+00:03:42,230 --> 00:03:46,890
+the cloud platforms like to associate
+themselves with the Internet of things.
+
+45
+00:03:48,840 --> 00:03:52,640
+Cloud computing and
+IoT compliment each other very well.
+
+46
+00:03:54,030 --> 00:03:57,010
+In the vision of Internet of Things,
+
+47
+00:03:57,010 --> 00:04:00,230
+you have hundreds of thousands
+of sensors generating data.
+
+48
+00:04:01,730 --> 00:04:05,260
+Cloud computing helps you store and
+process that data.
+
+49
+00:04:06,400 --> 00:04:10,057
+You can see an example of tracking
+people's fitness on the screen.
+
+50
+00:04:12,902 --> 00:04:16,919
+If you are an IoT device and
+network provider,
+
+51
+00:04:16,919 --> 00:04:24,130
+you can focus on your core competence,
+building and connecting sensors.
+
+52
+00:04:24,130 --> 00:04:27,580
+You don't have to worry about
+building your own IT infrastructure.
+
+53
+00:04:29,480 --> 00:04:32,120
+Another problem is making
+sense of all that data.
+
+54
+00:04:33,430 --> 00:04:37,656
+There are cloud computing tools
+available that will help you analyze and
+
+55
+00:04:37,656 --> 00:04:40,710
+generate actionable
+intelligence from your data.
+
+56
+00:04:43,909 --> 00:04:46,349
+If you are monitoring traffic flow or
+
+57
+00:04:46,349 --> 00:04:49,654
+power consumption in
+a large housing society, or
+
+58
+00:04:49,654 --> 00:04:56,030
+monitoring the air quality of a large
+city, you need a strong IT infrastructure.
+
+59
+00:04:56,030 --> 00:04:57,570
+Cloud computing offers you that.
+
+60
+00:05:01,510 --> 00:05:05,440
+This growing interest in
+combining cloud computing and
+
+61
+00:05:05,440 --> 00:05:09,410
+Internet of Things has created
+on new field called cloud IoT.
+
+62
+00:05:10,870 --> 00:05:13,930
+Cloud IoT is providing
+on demand computational
+
+63
+00:05:13,930 --> 00:05:17,929
+infrastructure designed specifically for
+the Internet of Things.
+
+64
+00:05:19,870 --> 00:05:24,310
+Cloud IoT providers can
+offer different services.
+
+65
+00:05:24,310 --> 00:05:27,720
+Here are some basic considerations
+to look into when choosing one.
+
+66
+00:05:27,720 --> 00:05:31,950
+Do they offer support for
+
+67
+00:05:31,950 --> 00:05:35,060
+the communication hardware and
+software you will be using?
+
+68
+00:05:36,510 --> 00:05:40,160
+Do they support the communication
+protocols you are using in your solution?
+
+69
+00:05:40,160 --> 00:05:44,850
+Do they offer you remote
+node management like
+
+70
+00:05:44,850 --> 00:05:49,790
+controlling your device remotely, issuing
+commands or upgrading its firmware?
+
+71
+00:05:51,740 --> 00:05:54,750
+Do they offer any data analytics?
+
+72
+00:05:54,750 --> 00:05:57,610
+If yes, is it according to your needs?
+
+73
+00:05:58,980 --> 00:06:01,690
+What kind of pricing model do they have?
+
+74
+00:06:01,690 --> 00:06:06,150
+Are they charging by the number
+of nodes or sensors you have or
+
+75
+00:06:06,150 --> 00:06:08,050
+by the number of resources you use?
+
+76
+00:06:09,850 --> 00:06:14,680
+Here is a short list of different cloud
+IOT platforms and service providers.
+
+77
+00:06:16,180 --> 00:06:20,060
+In this lesson, we looked at
+the merging of cloud computing and
+
+78
+00:06:20,060 --> 00:06:21,490
+the Internet of Things phenomenon.
+
+79
+00:06:22,630 --> 00:06:23,770
+The next video lecture,
+
+80
+00:06:23,770 --> 00:06:27,065
+we will look at a phenomenon that
+is opposite to cloud computing.
+
+81
+00:06:27,065 --> 00:06:32,414
+[SOUND]

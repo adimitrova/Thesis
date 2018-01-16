@@ -1,0 +1,679 @@
+1
+00:00:00,012 --> 00:00:04,524
+In the last lecture, we saw that we have 
+really two choices when it comes to 
+
+2
+00:00:04,524 --> 00:00:08,216
+combining behaviors. 
+We can either switch between them or we 
+
+3
+00:00:08,216 --> 00:00:11,673
+can blend them. 
+And what I want to do in this lecture is 
+
+4
+00:00:11,673 --> 00:00:16,717
+really discuss a little bit further this 
+issue of, of maybe not how we should 
+
+5
+00:00:16,717 --> 00:00:22,872
+combine them but if we need to introduce 
+something more than just our dynamic duel 
+
+6
+00:00:22,872 --> 00:00:27,202
+of behaviors in order to deal with the 
+navigation problem. 
+
+7
+00:00:27,202 --> 00:00:32,302
+And as a hinted act at the end of last 
+lecture, was the induced mode, 
+
+8
+00:00:32,302 --> 00:00:35,092
+the sliding mode is somehow going to be 
+important. 
+
+9
+00:00:35,092 --> 00:00:39,972
+But what I want to do today is start by 
+discussing different kinds of worlds or 
+
+10
+00:00:39,972 --> 00:00:43,347
+environments. 
+And I'm going to start simple with worlds 
+
+11
+00:00:43,347 --> 00:00:47,052
+where everything is a point, the 
+obstacles are all points. 
+
+12
+00:00:47,052 --> 00:00:52,002
+And then, I'm going to start building up 
+more and more complex scenarios to see 
+
+13
+00:00:52,002 --> 00:00:56,796
+when do we actually need to introduce 
+another mode or another behavior in order 
+
+14
+00:00:56,796 --> 00:01:00,584
+to be able to act well in the world. 
+So, I'm going to start with points then 
+
+15
+00:01:00,584 --> 00:01:04,844
+I'm going to add a little bit of spatial 
+dimension to these points so they're 
+
+16
+00:01:04,844 --> 00:01:08,364
+going to be circular obstacles. 
+Then, we're going to generalize that to 
+
+17
+00:01:08,364 --> 00:01:12,372
+something called convex obstacles. 
+we're going to make it harder than by 
+
+18
+00:01:12,372 --> 00:01:15,395
+making them nonconvex. 
+And finally, we're going to look at 
+
+19
+00:01:15,395 --> 00:01:18,300
+labyrinths. 
+So, basically the maze problem. If you're 
+
+20
+00:01:18,300 --> 00:01:21,562
+a, if you're a rat, 
+a lab rat trying to get to the cheese, 
+
+21
+00:01:21,562 --> 00:01:26,038
+what kind of behaviors do you need to 
+actually find, find the cheese? So, let's 
+
+22
+00:01:26,038 --> 00:01:30,844
+start like this and what I'm going to do 
+now is basically discuss the different 
+
+23
+00:01:30,844 --> 00:01:34,707
+worlds at the rather high level by 
+drawing cartoons of what's going on. 
+
+24
+00:01:34,707 --> 00:01:38,853
+And then, in the next lectures, we're 
+going to be a little bit more precise 
+
+25
+00:01:38,853 --> 00:01:41,992
+about what's going on. 
+But let's start with point worlds. 
+
+26
+00:01:41,992 --> 00:01:45,148
+As always, blue means the robot, here's 
+the robot. 
+
+27
+00:01:45,148 --> 00:01:50,011
+Green means go and red means obstacle. 
+And this little disk around the obstacle 
+
+28
+00:01:50,011 --> 00:01:55,432
+is simply me saying, this is the distance 
+when it's unsafe to, to travel towards 
+
+29
+00:01:55,432 --> 00:01:59,268
+the obstacle and just switch, somehow, to 
+avoiding obstacle. 
+
+30
+00:01:59,268 --> 00:02:04,299
+Either with a hard switch or a bland and 
+in this case, it really doesn't matter 
+
+31
+00:02:04,299 --> 00:02:08,775
+too much which one we do. So, 
+the robot, well, it's simply going to 
+
+32
+00:02:08,775 --> 00:02:13,108
+start [SOUND] so here is go to goal. 
+Start moving towards the goal and then 
+
+33
+00:02:13,108 --> 00:02:16,074
+here, right? We're now hitting the, the 
+bad region. 
+
+34
+00:02:16,074 --> 00:02:19,755
+Well, we know that the obstacle avoidance 
+is going to push us away like this 
+
+35
+00:02:19,755 --> 00:02:24,207
+somehow so, you know, we do, we're going 
+to do something like this and we got 
+
+36
+00:02:24,207 --> 00:02:27,054
+away. 
+Let's say, there's a little epsilon disk 
+
+37
+00:02:27,054 --> 00:02:30,263
+around it. 
+So, here's avoid obstacle and then, now, 
+
+38
+00:02:30,263 --> 00:02:34,523
+we're going to switch back and start 
+[SOUND] going towards the goal. 
+
+39
+00:02:34,523 --> 00:02:38,764
+So, this seemed like a slam dunk, we did 
+well somewhat at least. 
+
+40
+00:02:38,764 --> 00:02:41,730
+so, maybe we can declare successful point 
+worlds. 
+
+41
+00:02:41,730 --> 00:02:47,143
+in fact, I want to show you another 
+situation where I move the point a little 
+
+42
+00:02:47,143 --> 00:02:51,262
+bit. Now, [SOUND] I'm going towards the 
+goal and here, 
+
+43
+00:02:51,262 --> 00:02:55,577
+go to goal, we want to move in this 
+direction and avoid obstacle, you want to 
+
+44
+00:02:55,577 --> 00:03:00,177
+move in exactly the same direction. 
+So, what could potentially happen in this 
+
+45
+00:03:00,177 --> 00:03:04,932
+set up is when you answer here, the robot 
+just keeps oscillating back and forth and 
+
+46
+00:03:04,932 --> 00:03:07,562
+it's never really finding a way around 
+itself. 
+
+47
+00:03:07,562 --> 00:03:12,456
+There is a really, really, really 
+unlikely scenario that could happen if 
+
+48
+00:03:12,456 --> 00:03:17,554
+you have this bilinear line up where 
+everything is on the same line, where you 
+
+49
+00:03:17,554 --> 00:03:21,924
+just end up switching back and forth 
+without really making, making any 
+
+50
+00:03:21,924 --> 00:03:24,988
+progress. 
+Now, that is extremely unlikely when an 
+
+51
+00:03:24,988 --> 00:03:29,460
+actual robot is out in the world. 
+That ain't going to happen because the 
+
+52
+00:03:29,460 --> 00:03:34,106
+world is always a little bit noisy, the 
+sensors are always a little bit noisy and 
+
+53
+00:03:34,106 --> 00:03:38,198
+even the slightest amount of noise is 
+going to push you out, away from this 
+
+54
+00:03:38,198 --> 00:03:41,144
+situation. 
+So, the punch line, when we look at point 
+
+55
+00:03:41,144 --> 00:03:45,614
+worlds, is these two behaviors seem to be 
+enough unless we're super unlucky. 
+
+56
+00:03:45,614 --> 00:03:50,071
+And I call this some kind of mild Zeno. 
+basically you may end up trasitioning 
+
+57
+00:03:50,071 --> 00:03:53,419
+back and forth with no progress but like 
+I said. 
+
+58
+00:03:53,419 --> 00:03:58,002
+in the real world, we're going to have 
+noise, so points we don't really worry 
+
+59
+00:03:58,002 --> 00:04:00,851
+too much about. 
+Well, let's go up in complexity. 
+
+60
+00:04:00,851 --> 00:04:04,278
+Let's look at circles. 
+Well again, let me draw a cartoon on 
+
+61
+00:04:04,278 --> 00:04:07,466
+what's going on. 
+Now, the red dot is big but I'm going 
+
+62
+00:04:07,466 --> 00:04:10,331
+towards the goal. 
+[SOUND] Here, I'm going to start avoiding 
+
+63
+00:04:10,331 --> 00:04:14,138
+the goal and then let's say here, I'm 
+going to start maybe, maybe I end up 
+
+64
+00:04:14,138 --> 00:04:17,896
+switching back and forth a couple times 
+and then 
+
+65
+00:04:17,896 --> 00:04:21,195
+save. 
+So, circular obstacles here seem pretty 
+
+66
+00:04:21,195 --> 00:04:24,904
+reasonable. 
+it seems like our two behaviors are, are 
+
+67
+00:04:24,904 --> 00:04:29,743
+basically doing the same thing. 
+Now, if the circular obstacle was moved 
+
+68
+00:04:29,743 --> 00:04:34,873
+down, again, so the center of mass of the 
+obstacle was bilinear, on the same line 
+
+69
+00:04:34,873 --> 00:04:40,367
+as the goal and the robot, the again, we 
+would get stuck in this highly unlikely, 
+
+70
+00:04:40,367 --> 00:04:45,994
+never-gonna-happen-in-real-life scenario. 
+But basically, circular obstacles are 
+
+71
+00:04:45,994 --> 00:04:51,302
+point obstacles, just larger. 
+But philosophically, and complexity-wise, 
+
+72
+00:04:51,302 --> 00:04:55,278
+we can deal with them. 
+Now, the next level up in complexity is 
+
+73
+00:04:55,278 --> 00:04:59,978
+convexity versus non-convexity. 
+So, on the left here, you see what's 
+
+74
+00:04:59,978 --> 00:05:05,186
+called a convex obstacle. 
+It's basically a, it looks like a circle 
+
+75
+00:05:05,186 --> 00:05:08,606
+or a disk that's being squished a little 
+bit. 
+
+76
+00:05:08,606 --> 00:05:14,151
+what makes it convex is that if I take 
+any two points inside this obstacle and I 
+
+77
+00:05:14,151 --> 00:05:19,518
+draw a line in between them, that line 
+lays entirely inside the obstacles, 
+
+78
+00:05:19,518 --> 00:05:22,669
+right? 
+If I take the right obstacle, which is in 
+
+79
+00:05:22,669 --> 00:05:27,970
+fact, not convex then, you know what, if 
+I take two points, we'll find this line 
+
+80
+00:05:27,970 --> 00:05:32,888
+lies entirely with in the obstacle. 
+But if I take a point here and a point 
+
+81
+00:05:32,888 --> 00:05:37,132
+there, then this line actually falls 
+outside of the obstacle. 
+
+82
+00:05:37,132 --> 00:05:41,965
+So, an obstacle or a set is convex if 
+every line in between two points in the 
+
+83
+00:05:41,965 --> 00:05:47,027
+set lies entirely inside that set itself. 
+So, we're going to start with convex 
+
+84
+00:05:47,027 --> 00:05:51,937
+obstacles as the first step up from 
+circles or disks and then we're going to 
+
+85
+00:05:51,937 --> 00:05:56,568
+look at non obstacles. 
+So, I have a nonconvex obstacle, right? 
+
+86
+00:05:56,568 --> 00:06:01,964
+It's not a circle anymore and what I have 
+here is, well, now my red marker doesn't 
+
+87
+00:06:01,964 --> 00:06:07,648
+show up, but any line I can draw here, of 
+course, is entirely within this this 
+
+88
+00:06:07,648 --> 00:06:10,490
+disk. 
+So, let's see what's happening here. 
+
+89
+00:06:10,490 --> 00:06:15,770
+the robot starts moving. 
+[SOUND] A straight line. 
+
+90
+00:06:15,770 --> 00:06:21,061
+And then here gets, let's say that they, 
+they now want to starts avoiding the 
+
+91
+00:06:21,061 --> 00:06:26,601
+obstacles so maybe avoid obstacle is 
+going to push it there, it may be pushed 
+
+92
+00:06:26,601 --> 00:06:29,342
+back. 
+What's going to happen is there is a 
+
+93
+00:06:29,342 --> 00:06:34,597
+point when avoid obstacle is going to 
+point straight away from go to goal and 
+
+94
+00:06:34,597 --> 00:06:40,200
+now and we've ended up in this situation 
+that was super unlucky and unlikely when 
+
+95
+00:06:40,200 --> 00:06:43,616
+we had a point. 
+But in the convex with noncircular 
+
+96
+00:06:43,616 --> 00:06:49,007
+obstacle situation, that situation is no 
+longer super unlucky because we ended up 
+
+97
+00:06:49,007 --> 00:06:51,518
+in it. 
+Let me again point out what's happening 
+
+98
+00:06:51,518 --> 00:06:54,864
+is that we're getting here, 
+let's say, here is actually the point 
+
+99
+00:06:54,864 --> 00:06:57,647
+where avoid obstacle wants to go in this 
+direction, 
+
+100
+00:06:57,647 --> 00:07:01,859
+go to goal wants to go in this direction 
+and by switching, we're ending up there, 
+
+101
+00:07:01,859 --> 00:07:05,679
+which is the unlucky point, but in this 
+case, it's actually not unlucky. 
+
+102
+00:07:05,679 --> 00:07:09,695
+So, these two behaviors themselves, 
+no matter, no matter if we blend them or 
+
+103
+00:07:09,695 --> 00:07:11,935
+switch between them, we actually get 
+stuck. 
+
+104
+00:07:13,170 --> 00:07:18,522
+So, we need someway of you know what, 
+getting around the obstacle and somehow 
+
+105
+00:07:18,522 --> 00:07:23,533
+we need to follow the boundary of this 
+obstacle and not just switch back 
+
+106
+00:07:23,533 --> 00:07:27,787
+absent-mindedly between going into goal 
+and avoiding obstacles. 
+
+107
+00:07:27,787 --> 00:07:32,972
+So, here is a situation where we clearly 
+need to introduce another behavior in 
+
+108
+00:07:32,972 --> 00:07:35,717
+order to be able to navigate this 
+obstacle. 
+
+109
+00:07:35,717 --> 00:07:40,907
+Well, if you have a nonconvex obstacle, 
+this is known as a robotic flytrap. 
+
+110
+00:07:40,907 --> 00:07:44,102
+what it is, it's, it's a nonconvex 
+obstacle. 
+
+111
+00:07:44,102 --> 00:07:47,977
+It's a cul-de-sac. 
+And you know what, this robot is going to 
+
+112
+00:07:47,977 --> 00:07:50,700
+get down here. 
+First of all, it's going to get stuck 
+
+113
+00:07:50,700 --> 00:07:54,615
+here right, right, because here, we have 
+this go to goal and avoid obstacle 
+
+114
+00:07:54,615 --> 00:07:59,111
+pointing in different directions but even 
+if we were able to continue here, well, 
+
+115
+00:07:59,111 --> 00:08:03,076
+now all of a sudden, we're going away 
+from the obstacle and, no, sorry, from 
+
+116
+00:08:03,076 --> 00:08:06,180
+the goal. 
+Clearly, we need something more than just 
+
+117
+00:08:06,180 --> 00:08:08,844
+go to goal and avoid obstacles to do 
+this. 
+
+118
+00:08:08,844 --> 00:08:13,955
+we need some clever way not only of 
+following the boundary of this obstacle 
+
+119
+00:08:13,955 --> 00:08:18,661
+but following it in such a way that we 
+actually progress towards the goal 
+
+120
+00:08:18,661 --> 00:08:23,580
+globally even though we're locally in the 
+short run and getting further away. 
+
+121
+00:08:23,580 --> 00:08:27,340
+So, nonconvex obstacles, 
+it's even worse than convex obstacles. 
+
+122
+00:08:27,340 --> 00:08:29,452
+Two, two behaviors certainly aren't going 
+to work. 
+
+123
+00:08:29,452 --> 00:08:33,088
+Well, what if you have a labyrinth? 
+So this is, you know, you have a bunch of 
+
+124
+00:08:33,088 --> 00:08:35,633
+different things. 
+You may have something extra here. 
+
+125
+00:08:35,633 --> 00:08:38,304
+You may have something here. 
+You have a bunch of things. 
+
+126
+00:08:38,304 --> 00:08:42,162
+And the robot needs to figure out that 
+it's supposed to do this, right? Which., 
+
+127
+00:08:42,162 --> 00:08:44,957
+I mean, 
+[SOUND] now I'm going to sound, try to 
+
+128
+00:08:44,957 --> 00:08:50,159
+sound like I'm from New Jersey, forget 
+about it. That was probably not so close 
+
+129
+00:08:50,159 --> 00:08:54,228
+with my Swedish accent. 
+But anyway, it ain't going to happen with 
+
+130
+00:08:54,228 --> 00:08:58,081
+just two behaviors. 
+Clearly, no way of dealing with that with 
+
+131
+00:08:58,081 --> 00:09:03,167
+only avoid obstacle and go to goal so 
+what we need is really at least one more 
+
+132
+00:09:03,167 --> 00:09:07,759
+behavior that allows us to deal with 
+worlds that aren't just circular 
+
+133
+00:09:07,759 --> 00:09:12,401
+obstacles or point obstacles. 
+That are, in fact, convex or nonconvex or 
+
+134
+00:09:12,401 --> 00:09:16,846
+even, you know, labyrinths. 
+We want to be able to solve this problem, 
+
+135
+00:09:16,846 --> 00:09:19,958
+we want our robotic rat to get the, the 
+cheese. 
+
+136
+00:09:19,958 --> 00:09:23,626
+And that is going to be the topic of the 
+next lecture. 

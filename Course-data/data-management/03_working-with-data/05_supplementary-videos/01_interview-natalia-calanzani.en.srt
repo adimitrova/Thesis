@@ -1,0 +1,268 @@
+1
+00:00:07,868 --> 00:00:11,500
+Thank you so much for
+coming to speak to us today.
+
+2
+00:00:11,500 --> 00:00:14,750
+Could you just tell us in a couple
+of sentences who you are and
+
+3
+00:00:14,750 --> 00:00:16,470
+what you do as a researcher?
+
+4
+00:00:16,470 --> 00:00:17,706
+What your research is about.
+
+5
+00:00:17,706 --> 00:00:19,492
+>> Yep, my name is Natalia Calanzani,
+
+6
+00:00:19,492 --> 00:00:22,800
+I'm a research fellow at
+the University of Edinburgh.
+
+7
+00:00:22,800 --> 00:00:25,060
+And I currently work on
+the feasibility study,
+
+8
+00:00:25,060 --> 00:00:28,840
+trying to increase the uptake
+of bowel cancer screening.
+
+9
+00:00:28,840 --> 00:00:31,597
+So that involves a database analysis but
+
+10
+00:00:31,597 --> 00:00:36,791
+we're still waiting on our data set,
+and collecting data in primary care.
+
+11
+00:00:36,791 --> 00:00:41,260
+>> Great, can I ask what are your
+strategies for file management,
+
+12
+00:00:41,260 --> 00:00:45,668
+file naming, versioning,
+just generally organizing data?
+
+13
+00:00:45,668 --> 00:00:50,007
+And how does that help you and your
+collaborator's make sense of the collected
+
+14
+00:00:50,007 --> 00:00:52,990
+data and leave an audit trail for
+yourselves?
+
+15
+00:00:52,990 --> 00:00:57,100
+>> So, we have a server here
+at the university where we
+
+16
+00:00:57,100 --> 00:00:59,978
+store every file from the project.
+
+17
+00:00:59,978 --> 00:01:04,990
+And only the researchers who have received
+ethical approval to check those files,
+
+18
+00:01:04,990 --> 00:01:07,090
+they can access those.
+
+19
+00:01:07,090 --> 00:01:12,270
+And we name the files based on their
+versions and the dates they were created.
+
+20
+00:01:12,270 --> 00:01:15,200
+And we try to use underscores instead
+of spaces because we know that
+
+21
+00:01:15,200 --> 00:01:19,460
+depending on the system you're using, if
+you have spaces you might have problems.
+
+22
+00:01:19,460 --> 00:01:22,970
+And this is important for
+us to be consistent but also so
+
+23
+00:01:22,970 --> 00:01:26,510
+we make sure we're using the file
+which was been approved by ethics.
+
+24
+00:01:26,510 --> 00:01:29,241
+Because we end up having so
+many different versions.
+
+25
+00:01:29,241 --> 00:01:34,598
+So, it's good for you to keep track
+of what exactly you are using.
+
+26
+00:01:34,598 --> 00:01:39,067
+And I have to admit that we could improve
+because when the file becomes obsolete
+
+27
+00:01:39,067 --> 00:01:43,400
+we are still keeping those there so
+it is quite cluttered at the moment .So we
+
+28
+00:01:43,400 --> 00:01:48,011
+couldn't improve on that
+>> Do you rely on
+
+29
+00:01:48,011 --> 00:01:52,218
+institutional storage and back up
+systems in the course of your research?
+
+30
+00:01:52,218 --> 00:01:55,480
+And how do you know your
+data are being kept secure?
+
+31
+00:01:55,480 --> 00:02:00,107
+>> Yes, so if you're dealing with patient
+data and identifiable information,
+
+32
+00:02:00,107 --> 00:02:04,379
+it's very likely that it's going to be
+mandatory for you to write forms and
+
+33
+00:02:04,379 --> 00:02:05,378
+applications.
+
+34
+00:02:05,378 --> 00:02:09,090
+Lots of applications explaining
+how data are kept secure.
+
+35
+00:02:09,090 --> 00:02:10,375
+And here at the university,
+
+36
+00:02:10,375 --> 00:02:13,820
+Information Services has helped
+us to develop those forms.
+
+37
+00:02:13,820 --> 00:02:17,130
+And they have explained to us
+how our data are stored, and
+
+38
+00:02:17,130 --> 00:02:19,310
+how the backup systems worked.
+
+39
+00:02:19,310 --> 00:02:23,140
+And they helped us develop a diagram
+showing how we access data, and
+
+40
+00:02:23,140 --> 00:02:24,990
+how the data are protected.
+
+41
+00:02:24,990 --> 00:02:30,160
+So I think we're quite certain that
+everything is well kept and protected.
+
+42
+00:02:32,370 --> 00:02:36,158
+>> And what are some of the methods
+available to you to protect patient
+
+43
+00:02:36,158 --> 00:02:37,314
+confidentiality.
+
+44
+00:02:37,314 --> 00:02:42,008
+>> So we for the patient databases,
+
+45
+00:02:42,008 --> 00:02:47,372
+like I mentioned, we're not allowed
+
+46
+00:02:47,372 --> 00:02:53,918
+to publish anything for
+less than five cases.
+
+47
+00:02:53,918 --> 00:02:55,926
+If you had less than five
+cases of a rare condition or
+
+48
+00:02:55,926 --> 00:02:58,590
+something you're not
+supposed to report that.
+
+49
+00:02:58,590 --> 00:03:02,800
+And of course, we're not allowed to copy
+these data sets to our own computers.
+
+50
+00:03:02,800 --> 00:03:05,460
+They all stay secure in the server.
+
+51
+00:03:05,460 --> 00:03:09,990
+>> We don't copy them to SB6 as well, for
+example, and that avoids a lot of issues.
+
+52
+00:03:09,990 --> 00:03:15,405
+And only people who have received
+approval to access these data sets,
+
+53
+00:03:15,405 --> 00:03:17,256
+they access this data.
+
+54
+00:03:17,256 --> 00:03:22,080
+In terms of the patient form that
+we have that collect data and
+
+55
+00:03:22,080 --> 00:03:28,150
+primary care practices, these are kept
+locked In cabinets in our offices.
+
+56
+00:03:29,860 --> 00:03:32,100
+>> Well, thank you very much and
+good luck with your research.
+
+57
+00:03:32,100 --> 00:03:32,600
+>> Thank you.

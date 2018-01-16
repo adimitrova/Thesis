@@ -1,0 +1,220 @@
+1
+00:00:00,000 --> 00:00:05,165
+[MUSIC]
+
+2
+00:00:05,165 --> 00:00:08,902
+>> It's important to,
+as you start designing a study or
+
+3
+00:00:08,902 --> 00:00:12,474
+an experiment or an observation,
+to think of how,
+
+4
+00:00:12,474 --> 00:00:17,560
+what are you going to do with the data
+you're going to be collecting, right?
+
+5
+00:00:17,560 --> 00:00:19,932
+And you're going to be producing.
+
+6
+00:00:19,932 --> 00:00:24,773
+And so, if this becomes part already
+of your design and you have a,
+
+7
+00:00:24,773 --> 00:00:30,740
+you think of long-term accessibility of
+that data, preservation of that data,
+
+8
+00:00:30,740 --> 00:00:35,409
+already you have that in mind as
+you're building your study or,
+
+9
+00:00:35,409 --> 00:00:38,080
+again, your experiment.
+
+10
+00:00:38,080 --> 00:00:41,855
+Then, there are more
+chances that you make it,
+
+11
+00:00:41,855 --> 00:00:45,330
+that it will be easier for
+you to make it accessible to others.
+
+12
+00:00:45,330 --> 00:00:47,720
+>> So, students in my discipline at least,
+I mean,
+
+13
+00:00:47,720 --> 00:00:53,070
+they need to be aware that data management
+is a critical part of what they do,
+
+14
+00:00:53,070 --> 00:00:57,590
+and will do, as either practicing
+engineers or scientists or
+
+15
+00:00:57,590 --> 00:01:00,830
+researchers
+>> It's,
+
+16
+00:01:00,830 --> 00:01:02,670
+you need to be able to
+keep track of your data.
+
+17
+00:01:02,670 --> 00:01:05,730
+Keep track of the different
+changes you've made to your data.
+
+18
+00:01:05,730 --> 00:01:10,550
+Be able to, if you get sued for
+example, as an engineer and
+
+19
+00:01:10,550 --> 00:01:12,080
+you need to show your calculations.
+
+20
+00:01:12,080 --> 00:01:16,850
+You need to be able to manage all that
+information, and be able to show it.
+
+21
+00:01:16,850 --> 00:01:20,170
+>> So, I see there being practical and
+symbolic benefits.
+
+22
+00:01:20,170 --> 00:01:27,685
+>> The practical benefits I think are,
+there's a plot.
+
+23
+00:01:27,685 --> 00:01:31,430
+There's a plan, from cradle to grave.
+
+24
+00:01:33,600 --> 00:01:35,540
+What is the research question?
+
+25
+00:01:35,540 --> 00:01:40,310
+How are data being used
+to address that question?
+
+26
+00:01:40,310 --> 00:01:46,970
+Are there other aspects of the research
+project that are required, the required
+
+27
+00:01:46,970 --> 00:01:51,660
+data is there, and archiving requirement
+for future use, and those sorts of things.
+
+28
+00:01:51,660 --> 00:01:55,210
+So that's the birth of the data,
+the growth of it, and
+
+29
+00:01:55,210 --> 00:01:56,690
+the final archiving of it.
+
+30
+00:01:57,750 --> 00:02:04,450
+It's a practical way to begin what
+is going to be a bunch of work.
+
+31
+00:02:04,450 --> 00:02:10,975
+They symbolic part, is it's a reason,
+it's a focus for people to talk.
+
+32
+00:02:10,975 --> 00:02:14,300
+>> I think there's a sense, I certainly
+get the sense in libraries that
+
+33
+00:02:14,300 --> 00:02:18,830
+people feel like we have a completely
+known set of data management practices.
+
+34
+00:02:18,830 --> 00:02:20,000
+I don't believe we do.
+
+35
+00:02:20,000 --> 00:02:23,950
+I think for a lot of domains those
+practices are still emerging.
+
+36
+00:02:23,950 --> 00:02:30,200
+So, I think that we should be really
+open to identifying new kinds of
+
+37
+00:02:30,200 --> 00:02:35,300
+data management practices, and figuring
+out what our role might be in them.
+
+38
+00:02:35,300 --> 00:02:40,340
+>> You need to have a digital librarian
+to do organization of your data.
+
+39
+00:02:40,340 --> 00:02:43,060
+You need to have a social
+scientist who can come and
+
+40
+00:02:43,060 --> 00:02:45,870
+help you how to arrange things,
+how to share things.
+
+41
+00:02:45,870 --> 00:02:50,220
+And you need to have some sort of
+a policy maven who can come and
+
+42
+00:02:50,220 --> 00:02:54,090
+say what type of policies you need for
+these type of working together,
+
+43
+00:02:54,090 --> 00:02:57,145
+sharing, and collaboration and
+things like that.
+
+44
+00:02:57,145 --> 00:03:01,230
+So, in a sense, you need multiple
+communities together to form your,
+
+45
+00:03:01,230 --> 00:03:03,900
+what you call, a scientific fabric.
+
+46
+00:03:03,900 --> 00:03:06,259
+And you have multiple people to come and
+read that.

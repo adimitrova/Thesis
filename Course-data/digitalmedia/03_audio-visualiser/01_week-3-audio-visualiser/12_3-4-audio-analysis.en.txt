@@ -1,0 +1,197 @@
+[SOUND]. In the next section I am going to talk 
+about how to use audio in analysis to get some information about the sound that's 
+currently playing. Now, you can see in this code here, that 
+I've got a player and I'm telling the player to do, to start analyzing by 
+calling the set analysis. Set analyzing method and setting it to 
+true. What that will do is that will cause the 
+player to, to begin, not just playing back, but also listening to itself 
+playing and doing some analysis on there. But the type of analysis we're going to 
+do, is, is called extracting in the, spectrum. 
+So we're going to extract from the power spectrum of the sound. 
+Now what does that mean? Well, the basic idea is that when you 
+listen to a sound, there are different components in that sound. 
+For example, if you listen to very heavy, bass-y music like Reggae or something 
+like that. There's a lot of really low frequency 
+sound in there, a lot of bass. So maybe bass is a more familiar term 
+than low frequency, right? So if we talk about base that's in the 
+low frequencies we can also talk about treble which is what makes a sound bright 
+and treble the opposite end to bass in the description of the sound. 
+So we talk about treble and midrange is more, things, so speech happens a lot in, 
+in the mid-range and hmm, but it has lot of trouble bits as well. 
+For example, if I go [SOUND] that's a lot of, there is a lot of trouble in that. 
+Okay, so the idea is that with this analysis we can actually get some 
+information about what, how much basis in that, how much trouble is in there and so 
+on and also we know what is the average, of, of the level of the sound. 
+And as I said the method we said to do this is the fast Fourier transform, the 
+FFT. And we can get the data out of that and 
+turn it into what we call a power spectrum, which really is just telling us 
+how much power this is in those different frequency bands. 
+So is there, how much bass is there, but not just how much bass and how much 
+different bands of bass so low bass and medium bass. 
+Okay. And so what we're going to do first is 
+just take an average of all of those difference frequencies. 
+And see if we can use that to, plot a signal meter, which will show us what's 
+going on in the sound currently. So you can see here, I'm pulling out this 
+float called Pow, which is the average power in, in the spectrum. 
+So that's looking at all of those bands, bass, treble, mid, and taking an average 
+of all that. And then I'm going to set a color using 
+that, and following that I'm going to draw a rectangle where the size is set by 
+the, by the power as well. So let's just code that up and see what 
+it looks like. So I'm going to have to first deactivate 
+a bit of this accelerometer code. So I'm going to add another float up 
+here. Float power okay. 
+Remember I have to say player.set analyzing so apologies if you're used to 
+American English spelling, and you're used to S's instead of zed zeds instead 
+of S's. But for obvious reasons, we're using Ss. 
+okay now. So that will tell it to start doing that 
+analysis. So extracting that, that, that spectrum. 
+So that I can then ask for it later. So, let's do that. 
+We'll leave this speed and in fact I'm going to delete all of that code, okay. 
+So, lets pull out the power. Power equal player get average power. 
+Okay, that's what I need to do to pull out the average power. 
+The player calculates it all for me and then I'm going to set a fill color using 
+that. So I'm going to use the red now and the 
+power value actually has been set up so it comes in the range zero to one. 
+Which makes it a little bit easier to deal with in the accelorameter data we 
+looked at. So its in the range zero to one so I 
+could just use it directly at that. So that's the red component. 
+OK so its just going to set the red and then I'm going to draw a rectangle with a 
+width which is set by the power. So again, I just use it as a ratio if you 
+like. Power times width. 
+So if it's full power, the bar should go all the way across. 
+If it's, if it's, as it, as it gets lower, it goes less and less across. 
+You'll see what that does in a minute. The basic idea is that it will be like a 
+bouncing bar. And height will be the complete height of 
+the screen. Right. 
+So now let's run this on the device and see what our new volume or power meter 
+looks like. [MUSIC] [MUSIC]. 
+Okay. So, it's a bit difficult to see. 
+Because the red, maybe, is a little bit, dim. 
+So what I'm going to do. And also, I'm not filling in the 
+background color as I go. Let's just fill in the background color. 
+because it wipes out, wipes the background. 
+[MUSIC] So I made a few edits to the code just to make it so that the background is 
+set at, is, is clear every time and the power, it should be clearer now. 
+[MUSIC] Okay. So that's, okay, that's a bit better. 
+[mmm] So there's quite a lot going on in that sound. 
+So it's not necessarily very clear what, what's going on from power there. 
+You can see when there are stronger, bursts in sound. 
+You can see the power bouncing. Let's just try it with a different sound. 
+So you can, you can see from that there are the volume meter bounces. 
+The power meter bounces, but maybe we can use a better sound to illustrate it. 
+So we actually have this sound we created previously. 
+called ping, as I remember. And so let's just run it with the ping 
+sound. And it might be a bit clearer what's 
+going on. [SOUND] Perhaps that's a bit clearer. 
+You can see that hmm, the parameter is bouncing every time the ping happens. 
+So we have covered how you can extract some information about the spectrum, but 
+it's quite, it's quite low-resolution if you like. 
+It's not telling us a lot of information about what's going on. 
+We just looked at the average power which was looking at all the frequency bands 
+and taking the average power, which is basic, kind of like, you know, how loud 
+is it right now? if you like, which allowed us to draw a 
+volume meter. Now, if you want to get into more detail 
+You can actually access not just the average power, but you can look at each, 
+individual band so you can tell how much bass there is, how much mid range there 
+is, and how much treble there is. So I've got some code on the next slide 
+which just shows you the basics of how to do that. 
+But I'm going to do a more interesting example in the editor. 
+So let's just look at that code first So at the top of your code you can create a 
+float array called spec. Now what's a float array? 
+Well remember that float is just a single variable which can store a number, which 
+is something like 1.7 or you has a has a decimal place if you like. 
+Its an accurate number think of it that way and float away, you can see we've got 
+those square brackets can basically store lots of floats. 
+Now, that makes sense because we don't, we want to, we don't just want to store, 
+so the average power, we want to store the power in every band. 
+So we need some place where we can store, lots of numbers so that's why we've got 
+an array there. Markers covered arrays in a previous 
+lesson and also you can look in his additional programming lectures to find 
+out more. Now in the code below so we asked the 
+player, we're assuming you've got a player created and we ask it to do the 
+analysis and then In a draw method, we, exp-, We, we ask for the power spectrum 
+from the player. Which will give us the current snapshot 
+of whatever the power spectrum is. And then, if we get something valid. 
+So we check if it's null. So we check if we get something valid 
+back. and then, if we do, we iterate that 
+spectrum using a four loop. Again, four loops are covered in more 
+detail in. Markers additional programming lectures. 
+So we've basically stepped through every number in that spectrum and we set a fill 
+color using that and draw a rectangle based on it. 
+Now as I said earlier that's a basic example I want to do a more interesting 
+works example where what we're going to do is plot that spectrum over time. 
+So you can kind of see a map of these sounds you've been hearing over time. 
+So how we do that is like this. So we've got an audio player and in draw 
+method, we can play as usual. And that will, that won't effect it, 
+it'll only cause it to play if it's not playing already. 
+So it's okay to just keep calling it And, we going to try to extract the spectrum 
+so first of all we add the float spectrum we'll expect so I can target slightly 
+more rapidly and here we going to say if. So spec equals. 
+Player get power spectrum, like that. And if spec is not input is no so we got 
+a valid got something plot, the we type in a for loop. 
+So we set a variable i to not. I has to be smaller than spec dot link so 
+and i plus plus so that's going to go from zero up to whatever, how many 
+numbers there are in that spectrum we've just been given. 
+Okay, and what I'm going to do is I'm going plot the spectrum using differently 
+colored dots. So if the If that, if the power band is, 
+is powerful, then it will do a brightly colored dot. 
+So I'm going to do that using the stroke, and I'm going to stroke color is 255, 
+which if, if it's just 255 it will give us a white color, but 255 times the value 
+of the spectrum at I, so As it goes through, it will start with the base at 
+the, the, the top end of the spectrum. That is, the top end of the array. 
+And work through the array, and get to the treble at the other end. 
+Okay? And then I'm going to draw a point. 
+now, the x and y position, the point. Well, the x position, I'm going to just, 
+I'm going to use a variable actually, because what I want to do is, I want to, 
+each time I plot this, this spectrum, I'm going to move along so that I can plot it 
+slightly further along the next time. Which will allow me to, if you like, draw 
+a map of that spectrum over time. So I'm going to create an integer called 
+xPos. And set it to naught, in set up so it 
+starts at zero. My x position is just going to be x 
+pause, and my y position will be just i. So, as i increases it draws, it will draw 
+a line, it will draw these dots down the screen where each dot has a different 
+color based on the power of that element. So next time I'm going to draw, I want x 
+pause to go up by four. So it moves along by four. 
+And since I'm moving along four. So imagine I'm drawing these kind of 
+dotted lines down-screen. I want to, I can also make my stroke 
+weight to four. So that the dots are drawing, also, are 
+four pixels wide. Okay? 
+So that should plot my, my sound over time across the screen. 
+So let's just. Let's run that on the device now. 
+[SOUND] [MUSIC] Okay, so you can see it's, it's drawn, let's just stop that 
+and I'll explain it, so you can see what it's drawn there is But looks like a kind 
+of, a bunch of white plotting gray scale plot of some sort. 
+Now the top of that screen wherever the bass frequencies and the lower down the 
+screen it gets the higher pitches so that's how that works. 
+And you'll notice there are if you like bands, looks like there was more going 
+on. And those bits were signifying when there 
+was a bass drum playing, or a snare drum. So that the, the, the break beat kind of 
+has a bass, snare, bass, snare sound. And you can see that pattern in, in the 
+spectrum. Now, what I want to do is just. 
+The problem is that x pause eventually gets higher than the width of the screen. 
+So it starts plotting off of the edge of the screen. 
+So you can't see it anymore. So what I'll do just to make a final 
+change is if X pos is greater than width in other words if I've moved off the edge 
+of the screen. So go back to the other side of the 
+screen and wipe it ready to re draw the new spectrum okay so set X so it will 
+move across the screen. Drawing the spectrum and when you get to 
+the end we go back to the beginning. So let's run that on a device now. 
+We should see when it gets to the edge of the screen it, it returns to the other 
+side and starts plotting there again. [SOUND] So you can see the double base drum 
+there. Dun, dun, dun, that sound. 
+[MUSIC] Right. So that's the spectrum. 
+So you can see it's quite dense at the top. 
+Quite dense. That means there's plenty of bass going 
+on in it. And there's, and it sort thins out 
+towards the top end. So you can definitely see the bass drums 
+having a kind of denser sound [MUSIC] so let's stop that. 
+Now, I encourage you try and load some different sounds into there and record 
+yourself and load back into there and just trying plotting some different 
+sounds and you see what's going on and also the layer in the spectrum is perhaps 
+more interesting so, you might want to plot the first. 
+So 50 things in that array and just plot them across the whole screen so you can 
+really explore what's going on in that spectrum so try some different sounds 
+explore the spectrum have fun and if you can make something more interesting. 
+You can also add interactivity so that they can slow down the sound speed up and 
+see how the spectrum changes so that's what I would advise you to go and do. 
+And to, to explore this topic further.  [MUSIC]

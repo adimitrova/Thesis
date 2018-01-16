@@ -1,0 +1,233 @@
+1
+00:00:00,000 --> 00:00:06,284
+[MUSIC]
+
+2
+00:00:06,284 --> 00:00:08,340
+Now that we know what data are,
+
+3
+00:00:08,340 --> 00:00:08,970
+in this unit,
+
+4
+00:00:08,970 --> 00:00:12,130
+we will familiarize ourselves with
+the meaning of data management,
+
+5
+00:00:12,130 --> 00:00:18,580
+its importance, who is involved, and where
+it fits within the research life cycle.
+
+6
+00:00:18,580 --> 00:00:23,354
+By the end of this lesson, you will
+be able to define data management.
+
+7
+00:00:23,354 --> 00:00:30,450
+The term gets tossed around quite a bit in
+both professional and researcher circles.
+
+8
+00:00:30,450 --> 00:00:34,890
+And having a clear concept of
+what data management entails
+
+9
+00:00:34,890 --> 00:00:38,990
+will be especially important as
+you move forward with this MOOC.
+
+10
+00:00:40,310 --> 00:00:43,560
+You will also understand
+the importance of managing data
+
+11
+00:00:43,560 --> 00:00:47,310
+as a part of responsible research
+conduct and the roles and
+
+12
+00:00:47,310 --> 00:00:51,810
+responsibilities of stakeholders
+in data management.
+
+13
+00:00:51,810 --> 00:00:55,620
+And last, but not least,
+you will be able to identify
+
+14
+00:00:55,620 --> 00:01:00,060
+the various data management tasks
+within the research lifecycle.
+
+15
+00:01:00,060 --> 00:01:03,290
+So what exactly is data management?
+
+16
+00:01:03,290 --> 00:01:05,990
+Data management refers to activities and
+
+17
+00:01:05,990 --> 00:01:11,620
+practices that support long term
+preservation, access, and use of data.
+
+18
+00:01:13,140 --> 00:01:18,630
+The activities surrounding data management
+can include planning, documenting data,
+
+19
+00:01:18,630 --> 00:01:22,910
+formatting data, storing data,
+anonymizing data, and
+
+20
+00:01:22,910 --> 00:01:26,420
+controlling access to data.
+
+21
+00:01:26,420 --> 00:01:28,370
+So why is it important to manage data?
+
+22
+00:01:29,430 --> 00:01:33,018
+Data management helps
+researchers do better research.
+
+23
+00:01:33,018 --> 00:01:37,120
+It helps researchers optimize use of data
+
+24
+00:01:37,120 --> 00:01:40,240
+during the active phase
+of the research project.
+
+25
+00:01:40,240 --> 00:01:42,429
+And helps them collaborate
+with other researchers.
+
+26
+00:01:43,780 --> 00:01:47,710
+To use an analogy,
+let's think of doing our taxes.
+
+27
+00:01:47,710 --> 00:01:51,000
+If you manage your receipts
+effectively during the year,
+
+28
+00:01:51,000 --> 00:01:54,470
+doing your taxes is easier in April,
+
+29
+00:01:54,470 --> 00:01:57,730
+and you're more likely to
+maximize your deductions and
+
+30
+00:01:57,730 --> 00:01:59,680
+get your taxes in on time without panic.
+
+31
+00:01:59,680 --> 00:02:02,950
+The same goes for data management.
+
+32
+00:02:02,950 --> 00:02:08,040
+If you have a plan and follow it,
+it is time well spent and
+
+33
+00:02:08,040 --> 00:02:09,930
+it will simplify your life later on.
+
+34
+00:02:11,510 --> 00:02:16,290
+Data management also ensures
+that data is preserved for
+
+35
+00:02:16,290 --> 00:02:21,110
+future researchers to discover,
+interpret, and reuse.
+
+36
+00:02:21,110 --> 00:02:23,910
+Further, it sustains the value of data.
+
+37
+00:02:23,910 --> 00:02:27,930
+When a research project has been
+completed, the data could be used to
+
+38
+00:02:27,930 --> 00:02:32,020
+answer additional questions not
+considered during the original project.
+
+39
+00:02:32,020 --> 00:02:32,920
+You, the researcher,
+
+40
+00:02:32,920 --> 00:02:38,069
+may also want to extend the study over
+time to do longitudinal comparisons.
+
+41
+00:02:39,200 --> 00:02:40,530
+This is very difficult,
+
+42
+00:02:40,530 --> 00:02:44,630
+if not impossible, if you have not
+effectively managed your data.
+
+43
+00:02:46,650 --> 00:02:52,210
+And last but not least, today
+a growing number of funding agencies,
+
+44
+00:02:52,210 --> 00:02:56,750
+journal publishers, and research
+institutions require data management.
+
+45
+00:02:57,830 --> 00:03:03,340
+These entities are demanding more
+transparency in research projects,
+
+46
+00:03:03,340 --> 00:03:08,323
+and data management is one way
+projects can meet this requirement.
+
+47
+00:03:08,323 --> 00:03:13,500
+Funders also often want to increase
+their return on investment by
+
+48
+00:03:13,500 --> 00:03:18,674
+ensuring the data that is produced
+from a project is available for
+
+49
+00:03:18,674 --> 00:03:24,434
+secondary analysis, replication,
+or reuse for future innovations.
+
+50
+00:03:24,434 --> 00:03:33,021
+[MUSIC]

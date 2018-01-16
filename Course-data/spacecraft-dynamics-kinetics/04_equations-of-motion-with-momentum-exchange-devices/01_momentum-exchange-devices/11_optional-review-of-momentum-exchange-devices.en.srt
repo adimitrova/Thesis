@@ -1,0 +1,1393 @@
+1
+00:00:05,597 --> 00:00:09,885
+A review from last time, we talked
+about momentum controlled devices,
+
+2
+00:00:09,885 --> 00:00:11,370
+let's do a quick thing.
+
+3
+00:00:11,370 --> 00:00:13,576
+What was the big benefit, Kevin,
+
+4
+00:00:13,576 --> 00:00:19,040
+of momentum controlled devices versus
+thrusters to do attitude control?
+
+5
+00:00:19,040 --> 00:00:22,210
+>> Can have a more precise
+control of the attitude.
+
+6
+00:00:22,210 --> 00:00:26,441
+>> Okay, I mean, we can give just
+a really small torques on it.
+
+7
+00:00:26,441 --> 00:00:30,571
+Though that's slowly changing because
+people are coming up with very
+
+8
+00:00:30,571 --> 00:00:34,992
+interesting micro thrusters that can
+also do nano Newton meters of force.
+
+9
+00:00:34,992 --> 00:00:40,595
+And so historically that's been precisely
+true, 10, 20 years from now, we'll see.
+
+10
+00:00:40,595 --> 00:00:43,146
+[LAUGH] It's evolving,
+but that's definitely so
+
+11
+00:00:43,146 --> 00:00:44,670
+we can make some more forces.
+
+12
+00:00:44,670 --> 00:00:46,520
+What else, Mariel?
+
+13
+00:00:46,520 --> 00:00:48,560
+>> You don't have to use fuel.
+
+14
+00:00:48,560 --> 00:00:50,120
+>> No fuel, that is the big benefit.
+
+15
+00:00:50,120 --> 00:00:53,650
+So regardless of, well, those little micro
+devices are probably very efficient,
+
+16
+00:00:53,650 --> 00:00:54,590
+they may not take much fuel.
+
+17
+00:00:54,590 --> 00:00:55,920
+But it's still a finite resource.
+
+18
+00:00:55,920 --> 00:00:58,780
+Versus these wheels,
+it's purely electrical.
+
+19
+00:00:58,780 --> 00:01:01,380
+Part of that is a motor,
+an electric motor, that we drive.
+
+20
+00:01:01,380 --> 00:01:03,390
+You give it a voltage,
+it spins up, all right?
+
+21
+00:01:03,390 --> 00:01:06,496
+So with reaction wheel,
+you put 1 Newton meter in on that torque,
+
+22
+00:01:06,496 --> 00:01:07,892
+you get 1 Newton meter back.
+
+23
+00:01:07,892 --> 00:01:10,470
+It's a 1 to 1 relationship, which is nice.
+
+24
+00:01:10,470 --> 00:01:14,140
+But we have to also develop the motor
+torque equations, which we'll do today.
+
+25
+00:01:14,140 --> 00:01:18,458
+What we did last time was developed
+equations of motion of a spacecraft with
+
+26
+00:01:18,458 --> 00:01:22,170
+the single variables b, c, and g, or
+at least, I outlined how you develop them.
+
+27
+00:01:22,170 --> 00:01:24,660
+There's lots of little steps
+in between that you're doing.
+
+28
+00:01:24,660 --> 00:01:29,497
+But so today too, we need extra equations
+of motion that we'll talk about
+
+29
+00:01:29,497 --> 00:01:31,534
+today when it comes together.
+
+30
+00:01:31,534 --> 00:01:36,180
+What is the benefit of a CMG device
+then compared to a reaction wheel?
+
+31
+00:01:36,180 --> 00:01:39,848
+Mandar, what do you think?
+
+32
+00:01:39,848 --> 00:01:43,477
+>> CMGs use a high spin rate,
+which stabilize,
+
+33
+00:01:43,477 --> 00:01:48,670
+as opposed to reaction wheels,
+which need to spin.
+
+34
+00:01:48,670 --> 00:01:50,950
+>> So it's the highest spin,
+what gives you a stability?
+
+35
+00:01:52,355 --> 00:01:56,842
+>> No, sorry, they use high spin
+rate to generate the torque.
+
+36
+00:01:56,842 --> 00:01:57,980
+>> Generate the torque, exactly.
+
+37
+00:01:57,980 --> 00:01:59,684
+There's a huge gyroscopic coupling.
+
+38
+00:01:59,684 --> 00:02:02,917
+If your wheel is spinning quickly,
+and my arm is my torque vector,
+
+39
+00:02:02,917 --> 00:02:06,459
+if you're twisting that arm,
+you're changing that momentum vector.
+
+40
+00:02:06,459 --> 00:02:09,789
+And h dot equal to l,
+a change in momentum, must be a torque.
+
+41
+00:02:09,789 --> 00:02:12,830
+That's that huge gyroscopic torque
+that can be taken advantage of it.
+
+42
+00:02:12,830 --> 00:02:14,310
+Great, so we get huge torques.
+
+43
+00:02:14,310 --> 00:02:17,970
+If you have to maneuver very quickly or
+maneuver very large objects,
+
+44
+00:02:17,970 --> 00:02:22,130
+like space stations and really big
+satellites, CMGs are definitely preferred.
+
+45
+00:02:22,130 --> 00:02:24,050
+Otherwise, you would need huge wheels.
+
+46
+00:02:24,050 --> 00:02:25,899
+What's the challenge with
+reaction wheels though?
+
+47
+00:02:27,060 --> 00:02:30,410
+They're simple, they're cheaper,
+what's the big issue?
+
+48
+00:02:30,410 --> 00:02:32,710
+So less torque, right, but what else?
+
+49
+00:02:32,710 --> 00:02:36,270
+>> So there can be static
+dynamic imbalance of the wheel.
+
+50
+00:02:36,270 --> 00:02:37,810
+>> I didn't think about that,
+but that's correct.
+
+51
+00:02:37,810 --> 00:02:38,770
+You could have an imbalance.
+
+52
+00:02:38,770 --> 00:02:41,873
+That's always the case, but
+that's also true for a CMG.
+
+53
+00:02:41,873 --> 00:02:45,399
+No mechanical device is ever
+perfectly balanced, all right?
+
+54
+00:02:45,399 --> 00:02:49,033
+So and a CMG actually moving at a very
+high frequency is going to give you this
+
+55
+00:02:49,033 --> 00:02:53,024
+very high frequency jitter that you just
+have to make sure your system handles,
+
+56
+00:02:53,024 --> 00:02:54,242
+and it's not an issue.
+
+57
+00:02:54,242 --> 00:02:58,530
+Every structure kind of absorbs some of
+that jitter, acts like a low-pass filter.
+
+58
+00:02:58,530 --> 00:03:00,308
+So, people have to design that.
+
+59
+00:03:00,308 --> 00:03:02,820
+Yeah, so imbalances,
+if you're doing a reaction wheel,
+
+60
+00:03:02,820 --> 00:03:04,780
+you go from slow speed to high speed.
+
+61
+00:03:04,780 --> 00:03:07,531
+And you go through all the frequencies, so
+
+62
+00:03:07,531 --> 00:03:11,131
+you may want to model if you
+have structural residences.
+
+63
+00:03:11,131 --> 00:03:15,402
+If the sense of platform has
+a 10 hertz first mode stiffness,
+
+64
+00:03:15,402 --> 00:03:19,688
+you may not want to hang out at 10
+hertz a long time with a wheel.
+
+65
+00:03:19,688 --> 00:03:21,812
+because you would be
+exciting that frequency.
+
+66
+00:03:21,812 --> 00:03:23,832
+So there might be things
+like that to consider.
+
+67
+00:03:23,832 --> 00:03:25,254
+But what's the fundamental challenge?
+
+68
+00:03:25,254 --> 00:03:29,697
+Why can't we just use reaction wheels and
+apply a torque indefinitely?
+
+69
+00:03:29,697 --> 00:03:30,307
+Andrew.
+
+70
+00:03:30,307 --> 00:03:31,119
+>> Desaturate?
+
+71
+00:03:31,119 --> 00:03:35,151
+>> Desaturate, right, at some point,
+you physically just can't go faster.
+
+72
+00:03:35,151 --> 00:03:37,907
+The bearings break down,
+there might be heat dissipation issues.
+
+73
+00:03:37,907 --> 00:03:39,776
+There's all kinds of stuff, an issue.
+
+74
+00:03:39,776 --> 00:03:44,105
+So with CMGs,
+we're going at a fixed speed nominally.
+
+75
+00:03:44,105 --> 00:03:47,190
+So I don't have any speed limits because
+I'm just running at a fixed speed.
+
+76
+00:03:47,190 --> 00:03:48,760
+I can always keep twisting.
+
+77
+00:03:48,760 --> 00:03:50,790
+What is the problem we
+have with CMGs then?
+
+78
+00:03:52,340 --> 00:03:53,789
+Casey.
+>> We have gimbal lock.
+
+79
+00:03:53,789 --> 00:03:54,750
+>> Gimbal lock, right?
+
+80
+00:03:54,750 --> 00:03:56,682
+So with the reaction wheels,
+
+81
+00:03:56,682 --> 00:04:01,270
+the axis about which we produce
+a torque is fixed as seen by the body.
+
+82
+00:04:01,270 --> 00:04:03,610
+because its wheel is bolted down, right?
+
+83
+00:04:03,610 --> 00:04:07,538
+And we had some pictures on this,
+let me just go down a few.
+
+84
+00:04:07,538 --> 00:04:10,546
+I like it because it looks beefy,
+it's really bolted down,
+
+85
+00:04:10,546 --> 00:04:14,010
+this spin X, the motor axis doesn't
+change as seen by the body.
+
+86
+00:04:14,010 --> 00:04:17,108
+So it's always, you put on this
+1 Newton meter on this wheel,
+
+87
+00:04:17,108 --> 00:04:20,981
+it always gives you a torque about that
+axis, no matter what the body is doing.
+
+88
+00:04:20,981 --> 00:04:27,950
+Versus if you go look at CMGs, which we
+had here, now, this is our spin axis.
+
+89
+00:04:27,950 --> 00:04:31,100
+But then there's a gimbal axis,
+and that varies with time.
+
+90
+00:04:31,100 --> 00:04:33,480
+And the gyroscopics we were
+hearing about earlier,
+
+91
+00:04:33,480 --> 00:04:35,630
+that's always about that transverse axis.
+
+92
+00:04:35,630 --> 00:04:38,300
+If this is my spin axis and
+that's my gimbal axis,
+
+93
+00:04:38,300 --> 00:04:43,290
+then the change in momentum is about the
+third axis, that's the GT axis we called.
+
+94
+00:04:43,290 --> 00:04:46,350
+And that axis varies as you gimbal.
+
+95
+00:04:46,350 --> 00:04:49,720
+So I could only get that big
+gyroscopic torque about a single axis.
+
+96
+00:04:49,720 --> 00:04:52,840
+And what can happen with gimbal
+lock is with multiple devices,
+
+97
+00:04:52,840 --> 00:04:55,410
+those axes can all become coplanar.
+
+98
+00:04:55,410 --> 00:04:57,700
+In fact, that's what would happen
+if you would just go there,
+
+99
+00:04:57,700 --> 00:05:02,020
+take the spacecraft, and an astronaut just
+goes there and keeps pressing against it,
+
+100
+00:05:02,020 --> 00:05:05,590
+just to be an irritant,
+that spacecraft will hold an attitude.
+
+101
+00:05:05,590 --> 00:05:07,640
+But eventually,
+all the gimbals will line up,
+
+102
+00:05:07,640 --> 00:05:11,340
+such that all the GT axes are orthogonal
+to that torque being applied.
+
+103
+00:05:11,340 --> 00:05:13,960
+And then you have gimbal arc,
+and everything starts tumbling.
+
+104
+00:05:13,960 --> 00:05:18,820
+So any momentum exchange devices has some
+momentum limitations in terms of speeds or
+
+105
+00:05:18,820 --> 00:05:24,880
+orientations or how you cannot absorb
+infinite amount of momentum onto a system.
+
+106
+00:05:24,880 --> 00:05:26,280
+That's just not physically possible.
+
+107
+00:05:26,280 --> 00:05:28,540
+There's always a finite
+limit that we're seeing.
+
+108
+00:05:28,540 --> 00:05:30,360
+So good, this is what we went through.
+
+109
+00:05:30,360 --> 00:05:32,330
+Now deriving equations of motion,
+
+110
+00:05:32,330 --> 00:05:35,949
+what was the one overriding equation
+that drives all this stuff?
+
+111
+00:05:35,949 --> 00:05:39,246
+>> [INAUDIBLE]
+>> H dot=L, so Casey,
+
+112
+00:05:39,246 --> 00:05:41,148
+let's go through this quickly.
+
+113
+00:05:41,148 --> 00:05:43,160
+H was what for this system?
+
+114
+00:05:43,160 --> 00:05:44,770
+>> The total angular momentum.
+
+115
+00:05:44,770 --> 00:05:45,920
+>> Of the dynamical system, right?
+
+116
+00:05:45,920 --> 00:05:48,770
+And here we have the spacecraft,
+we have a gimbal structure, and
+
+117
+00:05:48,770 --> 00:05:50,870
+then we have the wheel within
+that gimbal structure.
+
+118
+00:05:50,870 --> 00:05:52,750
+So we actually have three components.
+
+119
+00:05:52,750 --> 00:05:54,781
+What was the dot, Kevin?
+
+120
+00:05:54,781 --> 00:05:55,860
+>> The initial derivative.
+
+121
+00:05:55,860 --> 00:05:58,010
+>> Right, the derivative as
+seen by the inertial frames.
+
+122
+00:05:58,010 --> 00:06:01,550
+Immediately transport theorem, right,
+we're going to have to use that a bunch.
+
+123
+00:06:01,550 --> 00:06:03,029
+And then the L?
+
+124
+00:06:03,029 --> 00:06:03,770
+>> External torque.
+
+125
+00:06:03,770 --> 00:06:07,300
+>> The net external torque acting on it,
+so motor torques don't go in that L.
+
+126
+00:06:07,300 --> 00:06:08,876
+Motor torques are internal systems,
+
+127
+00:06:08,876 --> 00:06:11,841
+where the spacecraft is being pushed
+off relative to the gimbal frame.
+
+128
+00:06:11,841 --> 00:06:14,684
+And the gimbal frame pushes off
+relative to the wheel frame,
+
+129
+00:06:14,684 --> 00:06:16,110
+those are internal torques.
+
+130
+00:06:16,110 --> 00:06:19,140
+They don't show up in that L that we had,
+good.
+
+131
+00:06:19,140 --> 00:06:22,711
+So, we went through this H dot=L,
+how hard could that be, right?
+
+132
+00:06:22,711 --> 00:06:25,473
+And it's a lot of details,
+a lot of book keeping.
+
+133
+00:06:25,473 --> 00:06:27,970
+So, some rigor is helpful here.
+
+134
+00:06:27,970 --> 00:06:31,412
+Just notationally, to review,
+because we see the same,
+
+135
+00:06:31,412 --> 00:06:35,161
+[COUGH] excuse me, today,
+gs is our spin axis of the wheel,
+
+136
+00:06:35,161 --> 00:06:39,469
+gt is the transverse axis then,
+and gg, that's the gimbal axis.
+
+137
+00:06:39,469 --> 00:06:43,199
+So for gimbaling gamma dot,
+wheel speed, big omega, all right,
+
+138
+00:06:43,199 --> 00:06:45,720
+that was kind of the rough breakdown.
+
+139
+00:06:45,720 --> 00:06:48,850
+We had the gimbal frame that we
+actually used a lot in the derivation.
+
+140
+00:06:48,850 --> 00:06:52,900
+There's also body frame with a typical b1,
+2, and 3, but you see in this system,
+
+141
+00:06:52,900 --> 00:06:55,250
+it tends to be easier to write
+everything in the gimbal frame.
+
+142
+00:06:56,540 --> 00:07:00,040
+We have the angular velocities
+of gimbal relative to the body,
+
+143
+00:07:00,040 --> 00:07:03,880
+wheel relative to gimbal, so
+you can add, subtract them as needed.
+
+144
+00:07:03,880 --> 00:07:07,703
+And why was it in the end, if we assume
+this gimbal frame is principle and
+
+145
+00:07:07,703 --> 00:07:12,231
+the wheel frame, we've picked one that
+lines up with symmetry, it's principle,
+
+146
+00:07:12,231 --> 00:07:15,925
+why is it that the wheel inertia is
+the same in the wheel frame as it is in
+
+147
+00:07:15,925 --> 00:07:16,990
+the gimbal frame?
+
+148
+00:07:18,520 --> 00:07:21,640
+What was the reason why that was case
+because that's not generally true, right,
+
+149
+00:07:21,640 --> 00:07:23,042
+if you have two different frames?
+
+150
+00:07:27,401 --> 00:07:29,750
+And that's only true for IW, not for IG.
+
+151
+00:07:29,750 --> 00:07:33,020
+IG, if you look at this,
+it has three distinct inertias.
+
+152
+00:07:33,020 --> 00:07:37,940
+IW has a spin axis inertia, and
+then the two other inertias are the same.
+
+153
+00:07:39,230 --> 00:07:41,290
+>> Does the wheel inertia.
+
+154
+00:07:41,290 --> 00:07:43,125
+>> Because of the symmetry, exactly.
+
+155
+00:07:43,125 --> 00:07:48,426
+If you did the DCM, this is a rotation
+between a wheel fixed frame and
+
+156
+00:07:48,426 --> 00:07:49,920
+the gimbal frame.
+
+157
+00:07:49,920 --> 00:07:53,020
+The only difference is the rotation
+about the one axis, the GS, and
+
+158
+00:07:53,020 --> 00:07:56,610
+if you put in a DCM,
+pretty imposed with the one axis rotation.
+
+159
+00:07:56,610 --> 00:07:59,160
+Because of the symmetry here,
+you end up stuff that cancels,
+
+160
+00:07:59,160 --> 00:08:01,980
+and that doesn't matter in the end,
+so you get the same thing.
+
+161
+00:08:01,980 --> 00:08:04,910
+And I show that in Mathematica
+quickly without doing it by hand.
+
+162
+00:08:04,910 --> 00:08:06,002
+But that's a trick we use.
+
+163
+00:08:06,002 --> 00:08:08,772
+So that's why in the end,
+we define the wheel frame, but
+
+164
+00:08:08,772 --> 00:08:11,857
+we never actually use it afterwards
+once we get past this step.
+
+165
+00:08:11,857 --> 00:08:16,797
+And say well, the wheel tensor, we can
+express it easily in a diagonal form also
+
+166
+00:08:16,797 --> 00:08:19,590
+with a G up here, instead of a W.
+
+167
+00:08:19,590 --> 00:08:24,350
+We went here, we took our DCM,
+so if we have these three axes,
+
+168
+00:08:24,350 --> 00:08:30,049
+we did this kind of when we worked
+with direction cosine matrices, right?
+
+169
+00:08:30,049 --> 00:08:35,007
+The BN matrix, you could write as
+B1 transpose, B2, B3 as rows or N1,
+
+170
+00:08:35,007 --> 00:08:36,599
+2, and 3 as columns.
+
+171
+00:08:36,599 --> 00:08:38,584
+So instead of BN, we have BG, so
+
+172
+00:08:38,584 --> 00:08:41,830
+the G frames become the three
+columns that you have.
+
+173
+00:08:41,830 --> 00:08:43,020
+We can express that.
+
+174
+00:08:43,020 --> 00:08:47,290
+If you then do the matrix math here, which
+we did last time, you can write it as
+
+175
+00:08:47,290 --> 00:08:50,230
+the principle inertias times the outer
+products of the base vectors.
+
+176
+00:08:50,230 --> 00:08:54,150
+It's a very convenient form,
+because we know a lot of algebra on this.
+
+177
+00:08:54,150 --> 00:08:56,140
+Any questions on these things too?
+
+178
+00:08:56,140 --> 00:08:59,030
+If there's any questions on last material,
+yes, Casey.
+
+179
+00:08:59,030 --> 00:09:03,030
+>> The gimbal frame is literally
+the frame holding the wheel, right?
+
+180
+00:09:04,610 --> 00:09:08,818
+>> Yes, gimbal frame is this one here GG,
+so this axis lines up always with that.
+
+181
+00:09:08,818 --> 00:09:14,530
+So, on a general CMG device, this is the
+only one that's fixed as seen by the body.
+
+182
+00:09:14,530 --> 00:09:16,770
+That's where you bolt down the CMG.
+
+183
+00:09:16,770 --> 00:09:20,640
+But the other two axes as you gimbal,
+so if this is my gimbal axis,
+
+184
+00:09:20,640 --> 00:09:26,200
+the GS axis of the wheel and the GT,
+those are varying, they rotate about GG.
+
+185
+00:09:26,200 --> 00:09:28,390
+That's what's happening there, yep.
+
+186
+00:09:28,390 --> 00:09:32,170
+So GS, GG, and GT,
+that's where they come from.
+
+187
+00:09:32,170 --> 00:09:33,600
+Good, so we went through that.
+
+188
+00:09:33,600 --> 00:09:35,512
+So now to get H,
+as you were saying earlier,
+
+189
+00:09:35,512 --> 00:09:38,330
+H has to be the total angular
+momentum of this dynamical system.
+
+190
+00:09:38,330 --> 00:09:40,590
+And here we have three
+rigid body components.
+
+191
+00:09:40,590 --> 00:09:41,608
+We account for all of them.
+
+192
+00:09:41,608 --> 00:09:45,780
+Spacecraft to hub itself is easy,
+that's just inertia tensor times omega BN,
+
+193
+00:09:45,780 --> 00:09:48,812
+we've done that before,
+a single rigid body.
+
+194
+00:09:48,812 --> 00:09:51,492
+The gimbal frame has the same
+kind of formulation,
+
+195
+00:09:51,492 --> 00:09:55,684
+the gimbal inertia times the angular
+velocity of gimbal relative to inertial.
+
+196
+00:09:55,684 --> 00:09:59,804
+And we write that one as a sum of angular
+velocity of gimbal relative to body
+
+197
+00:09:59,804 --> 00:10:02,141
+plus our typical body angular velocity.
+
+198
+00:10:02,141 --> 00:10:06,497
+And this one is nothing, but
+gamma.tensor GG, and there was ways.
+
+199
+00:10:06,497 --> 00:10:10,468
+I showed you vector ways to do this math
+or matrix ways, I actually think later,
+
+200
+00:10:10,468 --> 00:10:12,240
+here, we did matrix ways.
+
+201
+00:10:12,240 --> 00:10:14,944
+So this is kind of the core stuff
+when you write these momentums,
+
+202
+00:10:14,944 --> 00:10:17,412
+just remember it has to be
+relative to the inertial again.
+
+203
+00:10:17,412 --> 00:10:20,383
+You don't just put in the angular momentum
+of the wheel relative to the body.
+
+204
+00:10:20,383 --> 00:10:23,139
+You need the full momentum of the system,
+H dot = L,
+
+205
+00:10:23,139 --> 00:10:26,060
+inertial angular momentum that went there.
+
+206
+00:10:26,060 --> 00:10:31,490
+Good, run through this, then there was
+a variety of derivatives we had to take,
+
+207
+00:10:31,490 --> 00:10:34,300
+which hopefully,
+you could do with the transport theorem,
+
+208
+00:10:34,300 --> 00:10:36,080
+that was pretty straightforward.
+
+209
+00:10:36,080 --> 00:10:39,780
+The more interesting ones is
+what were omega S, omega T, and
+
+210
+00:10:39,780 --> 00:10:41,459
+omega G, what were those omegas?
+
+211
+00:10:44,440 --> 00:10:45,719
+Usually, we have omega 1, 2,
+
+212
+00:10:45,719 --> 00:10:48,207
+and 3, which is the B1, 2,
+and 3 frame component, right?
+
+213
+00:10:48,207 --> 00:10:48,914
+Kevin, do you remember?
+
+214
+00:10:48,914 --> 00:10:53,940
+>> The components of
+the omega vector in G frame.
+
+215
+00:10:53,940 --> 00:10:59,840
+>> Yes, so the omega S is the GS component
+of omega, and omega T is the GT,
+
+216
+00:10:59,840 --> 00:11:03,560
+so instead of using omega 1, 2,
+we've taken the exact same omega vector.
+
+217
+00:11:03,560 --> 00:11:06,210
+Just instead of using the body frame,
+we're using this gimbal frame.
+
+218
+00:11:06,210 --> 00:11:08,610
+We're breaking it up into three
+different components, right?
+
+219
+00:11:08,610 --> 00:11:11,192
+And just convenient
+because those transpose,
+
+220
+00:11:11,192 --> 00:11:13,910
+those mappings happened everywhere.
+
+221
+00:11:13,910 --> 00:11:15,072
+So now this is a scalar.
+
+222
+00:11:15,072 --> 00:11:17,510
+So Tebo, I think last time,
+you answered this one.
+
+223
+00:11:17,510 --> 00:11:19,595
+Taking a derivative of the scalar,
+
+224
+00:11:19,595 --> 00:11:23,290
+with respect to what frame are we
+taking this time derivative?
+
+225
+00:11:23,290 --> 00:11:26,636
+>> You don't take it with respect
+to a frame, it's a scalar.
+
+226
+00:11:26,636 --> 00:11:30,288
+>> A scalar, but the scalar is
+a product of a bunch of vectors,
+
+227
+00:11:30,288 --> 00:11:32,680
+a dot product essentially.
+
+228
+00:11:32,680 --> 00:11:36,100
+So over here,
+what frame do you get to pick?
+
+229
+00:11:36,100 --> 00:11:37,650
+>> Whichever one you'd like.
+
+230
+00:11:37,650 --> 00:11:39,090
+>> But?
+>> It has to be the same.
+
+231
+00:11:40,280 --> 00:11:42,350
+>> So if you have A times B,
+you can't say,
+
+232
+00:11:42,350 --> 00:11:45,810
+well, I will take the Q
+frame derivative of A.
+
+233
+00:11:45,810 --> 00:11:46,470
+And then later on,
+
+234
+00:11:46,470 --> 00:11:51,070
+if chain ruled the N frame derivative of
+B, once you pick a frame across a product,
+
+235
+00:11:51,070 --> 00:11:55,190
+across a scalar part of that product,
+you're pretty much committed, all right?
+
+236
+00:11:55,190 --> 00:11:57,399
+And this is if you do it inertial,
+you can plug it in, and
+
+237
+00:11:57,399 --> 00:12:00,548
+I think I also showed last time that if
+you did it in the body frame, for example,
+
+238
+00:12:00,548 --> 00:12:03,100
+or the gimbal frame,
+that's another one you could pick.
+
+239
+00:12:03,100 --> 00:12:05,806
+You'll always get the same answer
+as you would expect, all right?
+
+240
+00:12:05,806 --> 00:12:09,661
+So this was a good exercise of taking
+derivatives of scalars since scalars
+
+241
+00:12:09,661 --> 00:12:13,550
+are a function of vectorial quantities,
+to put that together.
+
+242
+00:12:13,550 --> 00:12:16,020
+So just definition for
+today, you see this again.
+
+243
+00:12:16,020 --> 00:12:17,520
+J is nothing, but
+
+244
+00:12:17,520 --> 00:12:23,300
+the summation of the inertia of the frame
+plus the wheel within the frame.
+
+245
+00:12:23,300 --> 00:12:26,570
+because these sums appear everywhere,
+so we define J as that.
+
+246
+00:12:27,580 --> 00:12:32,930
+And then, yeah, the fun, which you did in
+homework, there's some sub-results there.
+
+247
+00:12:32,930 --> 00:12:36,240
+We do all this, and
+then the final definition is IS,
+
+248
+00:12:36,240 --> 00:12:41,220
+which is the inertia of the hub itself,
+plus the inertia of the VSCMG combined,
+
+249
+00:12:41,220 --> 00:12:42,970
+gives us the spacecraft inertia.
+
+250
+00:12:42,970 --> 00:12:47,313
+So this one now, does this I
+vary as seen by the body frame?
+
+251
+00:12:50,433 --> 00:12:52,770
+>> Yes.
+>> Yeah, this one is fixed.
+
+252
+00:12:52,770 --> 00:12:57,550
+It's a rigid hub, but if this is
+a variable speed CMG as you're gimbaling,
+
+253
+00:12:57,550 --> 00:13:00,420
+that wheel,
+the mass distribution does change.
+
+254
+00:13:00,420 --> 00:13:05,684
+If you just had a reaction wheel,
+does J vary as seen by the body,
+
+255
+00:13:05,684 --> 00:13:08,525
+if you only have a reaction wheel?
+
+256
+00:13:08,525 --> 00:13:11,991
+All right, no, because that wheel, even
+though you're spinning it up and down,
+
+257
+00:13:11,991 --> 00:13:15,770
+because it's perfectly symmetric balanced,
+there's no change in mass distribution.
+
+258
+00:13:16,770 --> 00:13:18,670
+One particle replaces the next particle.
+
+259
+00:13:18,670 --> 00:13:23,335
+So, anyway, so keep that in mind,
+when you do these simulations,
+
+260
+00:13:23,335 --> 00:13:27,370
+in this case, you're not going to simulate
+this in this class, but 6010, you would.
+
+261
+00:13:27,370 --> 00:13:31,612
+These are the things you would have to
+update every time step, 6010 is fun.
+
+262
+00:13:31,612 --> 00:13:35,580
+There's some really interesting
+code you're writing there.
+
+263
+00:13:35,580 --> 00:13:39,310
+You guys think estimation is bad,
+you have no idea.
+
+264
+00:13:39,310 --> 00:13:40,760
+This is fun stuff.
+
+265
+00:13:40,760 --> 00:13:42,260
+So now we have our equations of motion,
+
+266
+00:13:42,260 --> 00:13:44,370
+this is kind of where we
+ended up with last time.
+
+267
+00:13:44,370 --> 00:13:48,830
+This is a rigid spacecraft plus
+a single VSCMG device, and
+
+268
+00:13:48,830 --> 00:13:50,920
+we still have the external
+torques that act on it, right?
+
+269
+00:13:50,920 --> 00:13:53,190
+That's not motor torques,
+that's gravity gradient torques or
+
+270
+00:13:53,190 --> 00:13:55,400
+radiation pressure, all this good stuff.
+
+271
+00:13:55,400 --> 00:14:00,297
+And as before, if it's a reaction wheel,
+what all vanishes?
+
+272
+00:14:00,297 --> 00:14:02,270
+We'll see that again today.
+
+273
+00:14:02,270 --> 00:14:06,228
+What all goes to 0 if it's a reaction
+wheel, instead of a VSCMG?
+
+274
+00:14:06,228 --> 00:14:07,189
+Endor?
+
+275
+00:14:07,189 --> 00:14:08,741
+>> Gamma dot terms?
+
+276
+00:14:08,741 --> 00:14:10,520
+>> Gamma dot, yeah, anything else?
+
+277
+00:14:13,010 --> 00:14:17,010
+Gamma double dot also goes to 0,
+so this vanishes, this vanishes.
+
+278
+00:14:17,010 --> 00:14:19,250
+All this other stuff vanishes,
+and in fact,
+
+279
+00:14:19,250 --> 00:14:23,830
+you get only this term,
+you get this term and this term.
+
+280
+00:14:23,830 --> 00:14:26,640
+If you go back and look at your
+dual spin equations of motion,
+
+281
+00:14:26,640 --> 00:14:28,310
+let me just put this up.
+
+282
+00:14:28,310 --> 00:14:31,620
+With the dual spin stuff,
+you had exactly these same terms.
+
+283
+00:14:31,620 --> 00:14:36,493
+The one difference was,
+we didn't have GS GT GG, there,
+
+284
+00:14:36,493 --> 00:14:40,680
+the dual spinner,
+we lined up our wheel with B1.
+
+285
+00:14:40,680 --> 00:14:44,480
+But in essence, B1 then is GS,
+all right, that is that axis.
+
+286
+00:14:44,480 --> 00:14:46,840
+So just make that replacement,
+it's a 1 to 1 thing.
+
+287
+00:14:46,840 --> 00:14:48,720
+This is a slightly more general version,
+
+288
+00:14:48,720 --> 00:14:52,680
+where your wheel doesn't have
+to line up with the B1 axis.
+
+289
+00:14:52,680 --> 00:14:54,070
+That's what we found.
+
+290
+00:14:54,070 --> 00:14:57,040
+If it is a CMG, Kevin,
+how much simplifies?
+
+291
+00:14:58,460 --> 00:15:02,630
+>> You only get rid of
+the omega [INAUDIBLE]
+
+292
+00:15:02,630 --> 00:15:03,800
+>> That's it, whoopdy do,
+
+293
+00:15:03,800 --> 00:15:06,150
+we're still left with 6 million terms.
+
+294
+00:15:06,150 --> 00:15:07,560
+So now,
+especially when you have lots of CMG,
+
+295
+00:15:07,560 --> 00:15:12,010
+that's why you can see the mathematics of
+CMGs, way more complicated right away.
+
+296
+00:15:12,010 --> 00:15:16,269
+In fact, if you have a dual spinner
+constant speed, even this time goes to 0,
+
+297
+00:15:16,269 --> 00:15:18,070
+gets more simpler.
+
+298
+00:15:18,070 --> 00:15:20,222
+But this is where we ended up last time.

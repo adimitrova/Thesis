@@ -1,0 +1,767 @@
+1
+00:00:00,000 --> 00:00:10,267
+[MUSIC]
+
+2
+00:00:10,267 --> 00:00:14,570
+So thank you very much, Nico, for
+being here with us for this interview.
+
+3
+00:00:14,570 --> 00:00:17,660
+Could you tell us a couple
+of words about yourself?
+
+4
+00:00:17,660 --> 00:00:18,860
+>> Okay.
+Thanks, Anna.
+
+5
+00:00:18,860 --> 00:00:19,980
+Thanks for inviting me.
+
+6
+00:00:19,980 --> 00:00:21,650
+So, I'm Nico Serra.
+
+7
+00:00:21,650 --> 00:00:25,990
+I'm professor at University of Zurich and
+I work in the LHCb experiment.
+
+8
+00:00:25,990 --> 00:00:27,520
+>> The LHCb experiment.
+
+9
+00:00:27,520 --> 00:00:32,370
+Could you tell us how the detector
+of the LHCb experiment differs with
+
+10
+00:00:32,370 --> 00:00:37,890
+respect to the bigger,
+general purpose detectors at the LHC?
+
+11
+00:00:37,890 --> 00:00:43,050
+>> So, LHCb has been designed and
+optimized in order to measure
+
+12
+00:00:43,050 --> 00:00:48,280
+properties of c and c hadrons,
+Hadrons containing the b and c quarks.
+
+13
+00:00:48,280 --> 00:00:51,030
+This explains the peculiar geometry,
+
+14
+00:00:51,030 --> 00:00:56,280
+which is similar to the geometry
+of fixed target experiments
+
+15
+00:00:56,280 --> 00:01:01,510
+rather than onion-like geometry that you can
+see at detectors like ATLAS and CMS.
+
+16
+00:01:01,510 --> 00:01:06,210
+And the reason is that the partons
+that compose the protons,
+
+17
+00:01:06,210 --> 00:01:10,760
+the quarks and gluons, have a much
+higher probability to carry a low
+
+18
+00:01:10,760 --> 00:01:15,830
+momentum fraction of the proton with respect to
+carrying a large fraction of its momentum.
+
+19
+00:01:18,150 --> 00:01:23,789
+Therefore, to produce
+relatively light objects like for
+
+20
+00:01:23,789 --> 00:01:29,600
+instance b hadrons, the probability is much
+higher to have asymmetric collisions.
+
+21
+00:01:29,600 --> 00:01:35,550
+This implies that b hadrons are produced
+predominantly in the beam direction,
+
+22
+00:01:35,550 --> 00:01:39,450
+forward and backward, and
+with a very large Lorentz boost.
+
+23
+00:01:39,450 --> 00:01:41,500
+So this geometry, therefore,
+
+24
+00:01:41,500 --> 00:01:45,940
+allows to collect a really large
+statistics of b hadrons even
+
+25
+00:01:47,050 --> 00:01:52,120
+if covering really small solid angles and
+operating at a lower luminosity.
+
+26
+00:01:52,120 --> 00:01:57,419
+In addition, it has the advantage,
+since the b hadrons have a large
+
+27
+00:01:57,419 --> 00:02:03,550
+Lorentz boost, decays are really displaced
+with respect to the proton-proton interaction.
+
+28
+00:02:03,550 --> 00:02:07,100
+And these are very big
+handles against background.
+
+29
+00:02:07,100 --> 00:02:11,490
+And in this geometry, we can easily
+accommodate RICH detectors for
+
+30
+00:02:11,490 --> 00:02:14,520
+particle identification. Particle identificatiob,
+
+31
+00:02:14,520 --> 00:02:19,470
+momentum resolution and vertex
+resolution are the key feature in order
+
+32
+00:02:19,470 --> 00:02:21,790
+to select the signal over the background.
+
+33
+00:02:21,790 --> 00:02:26,400
+>> Good, so, you said that the LHCb
+detector operates at lower luminosities
+
+34
+00:02:26,400 --> 00:02:29,800
+with respect to other
+experiments like ATLAS,
+
+35
+00:02:29,800 --> 00:02:33,680
+in whose cavern we are right now,
+by the way.
+
+36
+00:02:33,680 --> 00:02:36,860
+So that means that there
+are smaller event rates.
+
+37
+00:02:36,860 --> 00:02:40,960
+Does it mean that we do not
+need a trigger anymore?
+
+38
+00:02:40,960 --> 00:02:43,240
+>> No, we do need a trigger.
+
+39
+00:02:43,240 --> 00:02:48,010
+And starting from the 40 MHz
+bunch crossing rate,
+
+40
+00:02:48,010 --> 00:02:53,290
+we have a hardware level-0 trigger that
+reduces the rate to about 1 MHz.
+
+41
+00:02:53,290 --> 00:02:57,140
+After that, we run a software high-level trigger
+
+42
+00:02:57,140 --> 00:03:02,900
+that runs a mixture of inclusive and
+exclusive selections to further reduce the rate.
+
+43
+00:03:02,900 --> 00:03:08,138
+And recently we had a major
+shift in the paradigm of triggering in LHCb.
+
+44
+00:03:08,138 --> 00:03:12,460
+And this is done in preparation for
+the LHCb upgrade,
+
+45
+00:03:12,460 --> 00:03:16,870
+where we will run directly a
+fully software trigger.
+
+46
+00:03:16,870 --> 00:03:21,380
+So what we do is to buffer events
+in the disk, and to perform online
+
+47
+00:03:21,380 --> 00:03:25,890
+calibration and alignment of
+the detector such that we will run in
+
+48
+00:03:25,890 --> 00:03:31,960
+the upgrade the same event reconstruction
+as offline with the same quality.
+
+49
+00:03:31,960 --> 00:03:33,300
+>> That's very interesting, indeed.
+
+50
+00:03:33,300 --> 00:03:35,440
+Can we can now focus on the searches?
+
+51
+00:03:35,440 --> 00:03:37,870
+What type of searches do you at the LHCb?
+
+52
+00:03:37,870 --> 00:03:42,010
+>> So, at LHCb we do searches for
+new physics.
+
+53
+00:03:42,010 --> 00:03:47,930
+But rather than doing direct search
+of bumps and tails of new particles,
+
+54
+00:03:47,930 --> 00:03:52,719
+we hunt for
+these particles as virtual particles.
+
+55
+00:03:52,719 --> 00:03:55,232
+So, let me explain this with an example.
+
+56
+00:03:55,232 --> 00:03:59,720
+For instance, let's consider
+the decay of the B_s mesons in a di-muon pair.
+
+57
+00:04:01,100 --> 00:04:05,920
+This decay is a very rare decay in
+the standard model because it is
+
+58
+00:04:05,920 --> 00:04:09,470
+suppressed by the GIM mechanism and
+also helicity suppressed.
+
+59
+00:04:09,470 --> 00:04:12,400
+And its branching ratio is about
+3 10^-9.
+
+60
+00:04:12,400 --> 00:04:16,180
+If you have new particles,
+like, for instance,
+
+61
+00:04:16,180 --> 00:04:21,410
+in supersymmetry,
+they can enter in mediating this decay.
+
+62
+00:04:21,410 --> 00:04:23,770
+And they can change
+the properties of this decay.
+
+63
+00:04:23,770 --> 00:04:27,810
+For instance, they can enhance this
+branching ratio by orders of magnitude.
+
+64
+00:04:27,810 --> 00:04:30,449
+Therefore, you compare what you
+measure with the predictions.
+
+65
+00:04:32,130 --> 00:04:35,060
+>> If you actually measure
+then this type of decay,
+
+66
+00:04:35,060 --> 00:04:37,460
+you can constraint
+supersymmetry as well.
+
+67
+00:04:37,460 --> 00:04:38,026
+>> Exactly.
+
+68
+00:04:38,026 --> 00:04:42,440
+For instance of all this particular
+decays, the fact that we measure a value
+
+69
+00:04:42,440 --> 00:04:46,998
+of the branching ratio that is in agreement
+with standard model predictions allows to
+
+70
+00:04:46,998 --> 00:04:49,010
+strongly contains supersymmetry.
+
+71
+00:04:49,010 --> 00:04:52,140
+Also consider that this is complimentary
+
+72
+00:04:52,140 --> 00:04:54,390
+with respect to direct
+searches in ATLAS and CMS.
+
+73
+00:04:54,390 --> 00:04:57,780
+Because since we hunt these particles
+as virtual particles,
+
+74
+00:04:57,780 --> 00:05:03,970
+we are not limited by the available
+energy in the center of mass.
+
+75
+00:05:03,970 --> 00:05:07,670
+So we can in principle
+constrain particle that have mass
+
+76
+00:05:07,670 --> 00:05:11,210
+higher than
+the collision energy at the LHC.
+
+77
+00:05:11,210 --> 00:05:12,630
+>> I see.
+
+78
+00:05:12,630 --> 00:05:16,680
+Could you explain to us
+how such a search is done?
+
+79
+00:05:16,680 --> 00:05:18,350
+>> So these are rare decays so
+
+80
+00:05:18,350 --> 00:05:21,390
+it's very important the selection.
+
+81
+00:05:21,390 --> 00:05:25,170
+You have to be efficient in rejecting
+the background and selecting the signal.
+
+82
+00:05:25,170 --> 00:05:30,930
+Then, we attribute the di-muon pair to the B_s,
+
+83
+00:05:30,930 --> 00:05:38,670
+because essentially, we see a mass
+bump in the di-muon invariant mass spectrum.
+
+84
+00:05:38,670 --> 00:05:42,910
+But the difference is that we
+do know what is the mass of the B_s,
+
+85
+00:05:42,910 --> 00:05:44,820
+so we do not have the so called « look elsewhere » effect.
+
+86
+00:05:44,820 --> 00:05:47,720
+But you do need to know
+
+87
+00:05:47,720 --> 00:05:52,540
+very well the efficiency of your
+detector and the background.
+
+88
+00:05:52,540 --> 00:05:56,800
+And you have to know how many B_s
+are produced originally.
+
+89
+00:05:56,800 --> 00:06:01,920
+What you do normally is to normalize with
+respect to another decay that you
+
+90
+00:06:01,920 --> 00:06:05,100
+know very well with a very
+well known branching ratio.
+
+91
+00:06:05,100 --> 00:06:10,000
+And you choose this decay,
+such that you can somehow
+
+92
+00:06:10,000 --> 00:06:14,670
+cancel some systematic
+uncertainties in the ratio.
+
+93
+00:06:14,670 --> 00:06:17,470
+>> Okay, now you talk about uncertainties.
+
+94
+00:06:17,470 --> 00:06:20,790
+How do these compromise
+this type of measurements?
+
+95
+00:06:20,790 --> 00:06:25,110
+>> So, first of all we have three
+types of uncertainties in these searches.
+
+96
+00:06:25,110 --> 00:06:29,688
+The statistical uncertainties like
+everywhere due to the limited statistics.
+
+97
+00:06:29,688 --> 00:06:33,460
+Then you have the systematic
+uncertainties.
+
+98
+00:06:33,460 --> 00:06:38,233
+In this case for instance, a 
+source of systematic would be the limited
+
+99
+00:06:38,233 --> 00:06:42,910
+knowledge of the efficiency or the limited
+knowledge of the background.
+
+100
+00:06:42,910 --> 00:06:47,740
+And in addition, since we compare our
+measurement with the predictions,
+
+101
+00:06:47,740 --> 00:06:53,560
+we have uncertainties which are due to
+the accuracy of the theory predictions.
+
+102
+00:06:53,560 --> 00:06:58,160
+This is due to the fact that theories
+have to extrapolate from the Feynman
+
+103
+00:06:58,160 --> 00:07:02,940
+diagrams at the quark level, to 
+what happens at the hadron level.
+
+104
+00:07:02,940 --> 00:07:05,910
+And this involves uncertainty
+due to QCD essentially.
+
+105
+00:07:05,910 --> 00:07:06,410
+>> Okay.
+
+106
+00:07:07,525 --> 00:07:11,400
+So, do you see any deviations with
+respect to the standard model in
+
+107
+00:07:11,400 --> 00:07:13,230
+this channel or elsewhere?
+
+108
+00:07:13,230 --> 00:07:17,600
+>> So we don't see deviations in
+B_s -> µ+ µ- but
+
+109
+00:07:17,600 --> 00:07:21,360
+we do see deviations with respect
+to the standard model elsewhere.
+
+110
+00:07:21,360 --> 00:07:23,720
+>> Could you tell us more about that,
+actually?
+
+111
+00:07:23,720 --> 00:07:27,720
+>> Yes, so
+one of the things we test at LHCb is
+
+112
+00:07:27,720 --> 00:07:32,706
+the lepton flavor universality in b decays.
+
+113
+00:07:32,706 --> 00:07:37,335
+So, as the students know, the electron,
+the muon and
+
+114
+00:07:37,335 --> 00:07:42,155
+the tau, they behave exactly
+the same way apart from their mass,
+
+115
+00:07:42,155 --> 00:07:46,755
+which comes from their different
+interactions with the HIggs boson.
+
+116
+00:07:46,755 --> 00:07:50,595
+But apart of that they behave
+exactly in the same way.
+
+117
+00:07:50,595 --> 00:07:55,463
+So if you have a branching ratio of a B meson
+decaying to charged leptons and
+
+118
+00:07:55,463 --> 00:08:02,210
+you factor out the effect of
+the mass in the phase space,
+
+119
+00:08:02,210 --> 00:08:04,450
+their branching ratios should be the same.
+
+120
+00:08:04,450 --> 00:08:09,310
+If you have a new particles,
+new virtual particles as I said before,
+
+121
+00:08:09,310 --> 00:08:12,500
+they might couple differently
+to electron, muon and tau and
+
+122
+00:08:12,500 --> 00:08:18,170
+they would spoil the lepton
+universality of the standard model.
+
+123
+00:08:18,170 --> 00:08:22,540
+So, what we see is exactly a departure
+from this lepton universality,
+
+124
+00:08:22,540 --> 00:08:27,050
+in some B decays and by now,
+
+125
+00:08:27,050 --> 00:08:32,330
+we need more data to be
+certain of this deviation but
+
+126
+00:08:32,330 --> 00:08:34,630
+it certainly looks like
+
+127
+00:08:34,630 --> 00:08:37,830
+an intriguing pattern we are seeing.
+
+128
+00:08:37,830 --> 00:08:43,830
+>> Okay, well it is certainly interesting
+the breadth of the research program of LHCb.
+
+129
+00:08:43,830 --> 00:08:45,310
+What else have you discovered?
+
+130
+00:08:45,310 --> 00:08:47,440
+Could you tell us a bit more about that?
+
+131
+00:08:47,440 --> 00:08:51,130
+>> Yes, so in addition to search for
+new physics,
+
+132
+00:08:51,130 --> 00:08:56,520
+what we do is also to do
+spectroscopy, to measure properties of
+
+133
+00:08:56,520 --> 00:09:01,460
+particles, of hadrons predicted by
+the quark model. For instance,
+
+134
+00:09:01,460 --> 00:09:06,010
+by doing bump searches,
+as you do in ATLAS, but at lower masses.
+
+135
+00:09:06,010 --> 00:09:11,030
+We discover new excited states
+of D mesons and B mesons.
+
+136
+00:09:11,030 --> 00:09:15,355
+And in addition, we also do different
+analysis which are called amplitude
+
+137
+00:09:15,355 --> 00:09:19,690
+analysis that allows us to measure
+the quantum numbers of these particles.
+
+138
+00:09:19,690 --> 00:09:27,707
+For instance, the resonance X(3872) that was
+long thought to be a D meson molecule.
+
+139
+00:09:27,707 --> 00:09:32,382
+We could discard this
+hyphothesis exactly by measuring
+
+140
+00:09:32,382 --> 00:09:35,706
+the quantum numbers of this resonance.
+
+141
+00:09:35,706 --> 00:09:41,630
+And also relatively recently,
+we discovered two particles,
+
+142
+00:09:41,630 --> 00:09:48,570
+which are consistent with being neither
+baryons not mesons but pentaquarks.
+
+143
+00:09:48,570 --> 00:09:52,330
+So particles composed by four quarks and
+one anti-quark.
+
+144
+00:09:52,330 --> 00:09:55,590
+And this was a breaking ground results.
+
+145
+00:09:55,590 --> 00:09:57,580
+>> That sounds really exciting indeed.
+
+146
+00:09:57,580 --> 00:10:01,750
+But now how about the prospects of LHCb for
+the future?
+
+147
+00:10:01,750 --> 00:10:04,960
+>> So, most of our measurements
+first of all are dominated
+
+148
+00:10:04,960 --> 00:10:06,730
+by the statistical errors.
+
+149
+00:10:06,730 --> 00:10:09,440
+So it means that, in order
+
+150
+00:10:09,440 --> 00:10:15,070
+to exploit fully the LHC potential,
+we need more statistics.
+
+151
+00:10:15,070 --> 00:10:19,800
+And therefore we are working
+to prepare an upgrade of the LHCb
+
+152
+00:10:19,800 --> 00:10:24,600
+detector to run at higher luminosity.
+
+153
+00:10:24,600 --> 00:10:28,520
+In addition as I said,
+in most measurements
+
+154
+00:10:28,520 --> 00:10:31,440
+we do see a striking agreement
+with respect to standard model and
+
+155
+00:10:31,440 --> 00:10:34,110
+prediction, but
+we also see some deviation.
+
+156
+00:10:34,110 --> 00:10:38,670
+So our hope is that in the future
+we will reveal a pattern of
+
+157
+00:10:38,670 --> 00:10:42,570
+this deviation that can lead us
+to the discovery of new physics.
+
+158
+00:10:42,570 --> 00:10:46,400
+>> The prospects for LHCb to be are really
+exciting from what you are telling us.
+
+159
+00:10:46,400 --> 00:10:53,430
+So, we really hope that you reveal
+this interesting patterns indeed.
+
+160
+00:10:53,430 --> 00:10:54,106
+Thank you very much
+
+161
+00:10:54,106 --> 00:10:58,415
+for this interview, Nico.
+
+162
+00:10:58,415 --> 00:11:01,730
+>> Thank you Anna, bye.

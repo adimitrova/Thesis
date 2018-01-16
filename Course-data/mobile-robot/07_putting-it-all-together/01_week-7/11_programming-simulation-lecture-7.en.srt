@@ -1,0 +1,1474 @@
+1
+00:00:01,710 --> 00:00:07,580
+Hello and welcome to the seventh and final
+programming and simulation lecture.
+
+2
+00:00:07,580 --> 00:00:11,370
+This week, the programming assignment
+comes to its grand finale, and we
+
+3
+00:00:11,370 --> 00:00:15,750
+will have an ro, quickbot navigate to the
+most complicated environment yet.
+
+4
+00:00:17,080 --> 00:00:21,880
+And what makes this different From our
+navigation,
+
+5
+00:00:21,880 --> 00:00:27,320
+from from week five, is that we need to
+answer three new questions
+
+6
+00:00:27,320 --> 00:00:28,290
+this week.
+
+7
+00:00:28,290 --> 00:00:31,610
+And the first one is, we need to keep
+
+8
+00:00:31,610 --> 00:00:34,360
+track of the progress that the robot is
+making.
+
+9
+00:00:34,360 --> 00:00:37,284
+Last in week five, I talked about this
+problem
+
+10
+00:00:37,284 --> 00:00:41,290
+that the robot can get trapped inside of
+an obstacle.
+
+11
+00:00:41,290 --> 00:00:44,860
+And if it does, it doesn't, it doesn't
+know that it's not making progress.
+
+12
+00:00:44,860 --> 00:00:47,690
+It's just going to try to keep going to
+the, to the goal, and then it'll
+
+13
+00:00:47,690 --> 00:00:50,710
+avoid the obstacle, try to get back to the
+goal, and it'll go on and on.
+
+14
+00:00:50,710 --> 00:00:52,150
+It'll never make any progress to the,
+
+15
+00:00:52,150 --> 00:00:53,290
+towards the goal.
+
+16
+00:00:53,290 --> 00:00:58,370
+So this week, we'll actually think about,
+is the robot making any progress?
+
+17
+00:00:58,370 --> 00:01:02,800
+And If robot is not making any progress,
+maybe
+
+18
+00:01:02,800 --> 00:01:06,070
+we should, you know, use the controller
+from week six.
+
+19
+00:01:06,070 --> 00:01:08,570
+And follow the wall either to the right or
+to the left.
+
+20
+00:01:08,570 --> 00:01:11,580
+So we're all have to make a decision not
+only, do we now
+
+21
+00:01:11,580 --> 00:01:17,170
+start following the wall but in which
+direction, right or, or to the left?
+
+22
+00:01:17,170 --> 00:01:17,270
+And
+
+23
+00:01:17,270 --> 00:01:18,730
+finally.
+
+24
+00:01:18,730 --> 00:01:24,010
+We also need to again revisit our final
+[INAUDIBLE] finite state machine from week
+
+25
+00:01:24,010 --> 00:01:28,830
+five because that one will no longer cut
+it for, for this week's obstacle course.
+
+26
+00:01:28,830 --> 00:01:31,680
+We're going to have to, to really think
+about if
+
+27
+00:01:31,680 --> 00:01:35,400
+we're in a certain state and certain event
+becomes true.
+
+28
+00:01:35,400 --> 00:01:38,840
+To which other states should we switch in
+order to have the rogo,
+
+29
+00:01:38,840 --> 00:01:43,270
+robot progress towards its ultimate goal,
+which is to reach the goal location.
+
+30
+00:01:43,270 --> 00:01:45,740
+And of course, don't collide with any
+obstacles,
+
+31
+00:01:45,740 --> 00:01:47,790
+because that would be bad for our
+quickbot.
+
+32
+00:01:49,480 --> 00:01:54,170
+So, all of the implementation this week
+will happen in the
+
+33
+00:01:54,170 --> 00:01:58,190
+supervisor, so we're only going to be
+worrying about one file this week.
+
+34
+00:01:58,190 --> 00:02:04,890
+And that's mainly because for the past
+seven weeks or six weeks we've written
+
+35
+00:02:04,890 --> 00:02:08,760
+all of the necessary controllers that,
+that we need to, to solve this problem.
+
+36
+00:02:10,010 --> 00:02:12,425
+And unlike the previous weeks I'm actually
+
+37
+00:02:12,425 --> 00:02:14,350
+going to start off with the demo this
+week.
+
+38
+00:02:14,350 --> 00:02:17,220
+To show you what it looks like when it
+works.
+
+39
+00:02:17,220 --> 00:02:19,050
+So Let's see it in action.
+
+40
+00:02:19,050 --> 00:02:25,030
+I'm going to go ahead and launch the
+simulator and
+
+41
+00:02:25,030 --> 00:02:29,730
+hit Play.
+And we're going to click on the robot
+
+42
+00:02:29,730 --> 00:02:35,040
+and try to get it, oop, there we go.
+And what you see
+
+43
+00:02:35,040 --> 00:02:41,310
+here is first of all the robot has Is
+navigating out of this obstacle that it's
+
+44
+00:02:41,310 --> 00:02:44,140
+trapped inside of and it's following the
+wall
+
+45
+00:02:44,140 --> 00:02:47,350
+nicely, or the boundary of the obstacle
+nicely,
+
+46
+00:02:47,350 --> 00:02:51,680
+and it's going to stick to the wall until
+it decides, hey, I'm going to peel off
+
+47
+00:02:51,680 --> 00:02:53,390
+and go towards the goal location, because
+the
+
+48
+00:02:53,390 --> 00:02:58,590
+goal location is somewhere up around this
+area.
+
+49
+00:02:58,590 --> 00:03:01,070
+And you'll see the robot has made it.
+
+50
+00:03:01,070 --> 00:03:05,700
+And eh, in the next couple slides, I'll go
+over exactly what decisions have made
+
+51
+00:03:05,700 --> 00:03:10,760
+to get to this point and what all of these
+beautiful colored lines actually mean.
+
+52
+00:03:12,080 --> 00:03:16,630
+And one more thing, here in the map land
+command window, you
+
+53
+00:03:16,630 --> 00:03:21,480
+can see that I have a few f, f statements
+and these are.
+
+54
+00:03:21,480 --> 00:03:26,740
+The robot switching between a state, so I
+can actually see that I was in ao and
+
+55
+00:03:26,740 --> 00:03:30,600
+go to goal, and then I switched to avoid
+obstacles, and then back ao to ao and
+
+56
+00:03:30,600 --> 00:03:32,360
+go to goal, and then to avoid obstacles,
+
+57
+00:03:32,360 --> 00:03:35,650
+and eventually, there's also a follow wall
+in here.
+
+58
+00:03:35,650 --> 00:03:37,950
+And so on and so forth.
+
+59
+00:03:37,950 --> 00:03:40,440
+But let's get back to the slides.
+
+60
+00:03:40,440 --> 00:03:43,390
+So.
+I talked about progression.
+
+61
+00:03:43,390 --> 00:03:48,660
+And we need progression because if we were
+just to
+
+62
+00:03:48,660 --> 00:03:52,255
+use the controller from week five I said
+we were going to
+
+63
+00:03:52,255 --> 00:03:57,280
+get stuck and that's for the, the, the
+reason for that is
+
+64
+00:03:57,280 --> 00:03:59,980
+that the robot is first of all trying to
+go to the goal.
+
+65
+00:03:59,980 --> 00:04:00,316
+So.
+
+66
+00:04:00,316 --> 00:04:06,100
+Right here I have the goal to goal vector.
+
+67
+00:04:06,100 --> 00:04:09,180
+And that was ugtg and that's pointing me
+towards this goal.
+
+68
+00:04:09,180 --> 00:04:11,990
+So you can just imagine this extends to
+here.
+
+69
+00:04:11,990 --> 00:04:16,040
+So is our goal to goal vector we're
+already familiar with that one.
+
+70
+00:04:16,040 --> 00:04:17,800
+And I also
+
+71
+00:04:17,800 --> 00:04:20,330
+have the obstacle avoidance vector.
+
+72
+00:04:20,330 --> 00:04:22,880
+And perhaps I'm either going truly, go to
+
+73
+00:04:22,880 --> 00:04:26,710
+goal, or perhaps I'm doing something in
+between.
+
+74
+00:04:26,710 --> 00:04:30,500
+So, but the point is that I'm trying, that
+the robot is
+
+75
+00:04:30,500 --> 00:04:36,760
+really trying to drive itself in this
+direction, or in this general direction.
+
+76
+00:04:36,760 --> 00:04:39,640
+So it's wants to go to this, to this goal
+but it's a blocked
+
+77
+00:04:39,640 --> 00:04:43,100
+off by, by, by this obstacle and it has to
+somehow navigate around it.
+
+78
+00:04:45,990 --> 00:04:46,926
+Now,
+
+79
+00:04:46,926 --> 00:04:49,166
+[BLANK_AUDIO]
+
+80
+00:04:49,166 --> 00:04:53,261
+With respect to progression, what I
+want to do is I want
+
+81
+00:04:53,261 --> 00:04:57,328
+to keep track of how close the robot gets
+to the goal.
+
+82
+00:04:57,328 --> 00:05:00,640
+So, first, in the previous slide the robot
+was at this
+
+83
+00:05:00,640 --> 00:05:04,680
+location, and now in this slide has
+progressed to this location.
+
+84
+00:05:04,680 --> 00:05:07,680
+And it's actually gotten closer to the
+goal.
+
+85
+00:05:07,680 --> 00:05:08,410
+And.
+
+86
+00:05:08,410 --> 00:05:10,950
+Because the reason it's gotten closer to
+goes
+
+87
+00:05:10,950 --> 00:05:15,490
+goal, because this distance to the goal is
+
+88
+00:05:15,490 --> 00:05:21,180
+larger than this distance to the goal.
+And the way that we update
+
+89
+00:05:21,180 --> 00:05:26,989
+our progress is by calling the function,
+set_progress_point right here.
+
+90
+00:05:28,180 --> 00:05:31,880
+So this function we'll call and we'll
+make, we'll
+
+91
+00:05:31,880 --> 00:05:35,220
+say, well, you know, the robot has made
+some progress,
+
+92
+00:05:35,220 --> 00:05:37,210
+and we're going to save its progress but
+we're always going to
+
+93
+00:05:37,210 --> 00:05:40,580
+store the closest it's ever gotten to the
+goal location.
+
+94
+00:05:41,760 --> 00:05:44,220
+And the reason that we do this is because
+we want to
+
+95
+00:05:44,220 --> 00:05:49,470
+check a certain event, and this event is
+called progress made.
+
+96
+00:05:49,470 --> 00:05:54,060
+And progress made to checks whether the
+current location the current distance of
+
+97
+00:05:54,060 --> 00:05:59,700
+the robot to the goal location is shorter
+than the last set_progress point.
+
+98
+00:06:00,740 --> 00:06:03,750
+And if so, it returns true otherwise it
+returns
+
+99
+00:06:03,750 --> 00:06:06,850
+false and we're going to use this to check
+whether you
+
+100
+00:06:06,850 --> 00:06:09,300
+know our robot has made progress towards
+the goal or not.
+
+101
+00:06:13,410 --> 00:06:13,910
+So, what
+
+102
+00:06:15,900 --> 00:06:18,000
+we saw in the what we saw in the
+
+103
+00:06:18,000 --> 00:06:23,020
+simulation, was that the robots started
+somewhere over here,
+
+104
+00:06:23,020 --> 00:06:25,360
+and then it drove in this direction and it
+
+105
+00:06:25,360 --> 00:06:28,390
+started avoiding goals and now it's gotten
+to this point.
+
+106
+00:06:28,390 --> 00:06:31,190
+So it's kind of follow this general
+trajectory,
+
+107
+00:06:31,190 --> 00:06:33,240
+because it's gone here, it's probably
+going.
+
+108
+00:06:34,290 --> 00:06:38,510
+Go to goal, and then here, it's doing
+avoid obstacle, and
+
+109
+00:06:38,510 --> 00:06:41,088
+then here, it gets to the point where it
+says well,
+
+110
+00:06:41,088 --> 00:06:50,540
+no progress made.
+
+111
+00:06:52,260 --> 00:06:54,820
+So, the robot's not made any, not made any
+more progress.
+
+112
+00:06:54,820 --> 00:06:56,330
+So, time to make a decision.
+
+113
+00:06:57,710 --> 00:07:01,790
+And, the decision that the robot makes is
+that when it's no
+
+114
+00:07:01,790 --> 00:07:05,800
+longer progressing, it's going to try to
+switch into the Follow Wall behavior.
+
+115
+00:07:07,270 --> 00:07:12,610
+But an important question is, what should
+the direction should be?
+
+116
+00:07:12,610 --> 00:07:18,910
+Should we follow the obstacle at our left
+or the obstacle on our right side?
+
+117
+00:07:18,910 --> 00:07:24,080
+And we're going to make this decision
+based on three vectors.
+
+118
+00:07:25,530 --> 00:07:28,220
+And we're going to make this decision
+based on
+
+119
+00:07:28,220 --> 00:07:30,970
+the goal to goal vector which points
+towards the goal.
+
+120
+00:07:30,970 --> 00:07:33,480
+So this is pointing me towards the goal
+location.
+
+121
+00:07:33,480 --> 00:07:35,600
+The obstacle avoidance vector, which is
+
+122
+00:07:35,600 --> 00:07:38,710
+pointing the robot away from the
+obstacles.
+
+123
+00:07:38,710 --> 00:07:44,590
+And we're going to inspect both the follow
+wall vector.
+
+124
+00:07:44,590 --> 00:07:46,480
+That we computed last week.
+
+125
+00:07:46,480 --> 00:07:51,648
+In the, on the right side and on the left
+side of the robots.
+
+126
+00:07:51,648 --> 00:07:55,110
+So we're going to look at these four
+vectors and make our decision
+
+127
+00:07:55,110 --> 00:07:58,670
+whether we need, we should follow an
+obstacle to the left or
+
+128
+00:07:58,670 --> 00:07:59,240
+to the right.
+
+129
+00:07:59,240 --> 00:08:04,110
+And that's, and that's how we determine
+the follow wall direction of the robot.
+
+130
+00:08:05,254 --> 00:08:08,240
+And the way we're going to do this is
+we're going to
+
+131
+00:08:08,240 --> 00:08:15,010
+ask the questions, is this vector, right
+here, follow wall, and
+
+132
+00:08:15,010 --> 00:08:18,340
+this is L again denotes that it's, it's
+with respect to
+
+133
+00:08:18,340 --> 00:08:23,934
+the left, is this between the vector's
+obstacle of ordnance and [INAUDIBLE].
+
+134
+00:08:23,934 --> 00:08:25,083
+We're going to ask that question.
+
+135
+00:08:25,083 --> 00:08:27,550
+And we're also, at the same time we're
+going to ask.
+
+136
+00:08:27,550 --> 00:08:31,693
+Is this vector.
+U Follow Wall comma R.
+
+137
+00:08:31,693 --> 00:08:39,930
+Between U _ao and ugtg.
+And of course you can argue
+
+138
+00:08:39,930 --> 00:08:45,389
+in this picture, well they're both, right?
+Because this is one, this is between
+
+139
+00:08:45,389 --> 00:08:48,679
+[BLANK_AUDIO]
+
+140
+00:08:48,679 --> 00:08:55,075
+This one right here is, this vector is
+between the two vectors
+
+141
+00:08:55,075 --> 00:09:00,979
+on this side of things, whereas this
+vector right here is
+
+142
+00:09:00,979 --> 00:09:06,830
+between these two.
+On these thought-side of things.
+
+143
+00:09:06,830 --> 00:09:12,260
+And really, the requirement is going to be
+for, is it between these two vectors?
+
+144
+00:09:12,260 --> 00:09:13,840
+If the A is, we're going to look
+
+145
+00:09:13,840 --> 00:09:19,660
+at the side where the angle between U go
+to goal
+
+146
+00:09:19,660 --> 00:09:26,120
+and U A O, so this angle between them is
+less than Pi.
+
+147
+00:09:26,120 --> 00:09:32,710
+So less than 180 degrees, so when we say
+is a vector between these two vectors.
+
+148
+00:09:32,710 --> 00:09:35,401
+It has to be between them on the side
+where it's
+
+149
+00:09:35,401 --> 00:09:38,968
+less than, probably where these two are
+less than pi apart.
+
+150
+00:09:38,968 --> 00:09:41,886
+[BLANK_AUDIO]
+
+151
+00:09:41,886 --> 00:09:45,081
+And the reason I'm setting it up in this
+way is because
+
+152
+00:09:45,081 --> 00:09:48,440
+that allows us to just do a little bit of
+linear algebra.
+
+153
+00:09:49,450 --> 00:09:51,010
+And the little bit of linear algebra that
+
+154
+00:09:51,010 --> 00:09:55,750
+we're going to do is, is this following
+equation.
+
+155
+00:09:55,750 --> 00:10:00,380
+So what I have here is I have the go to
+goal vector.
+
+156
+00:10:00,380 --> 00:10:06,050
+I have the obstacle avoidance vector.
+I have some scalar parameters.
+
+157
+00:10:06,050 --> 00:10:07,240
+Sigma one and
+
+158
+00:10:07,240 --> 00:10:08,190
+sigma two.
+
+159
+00:10:08,190 --> 00:10:12,820
+And on this side I have the follow wall
+vector that I care about.
+
+160
+00:10:12,820 --> 00:10:17,000
+In this case, I pick the left side, but
+this might as well be the right side.
+
+161
+00:10:18,370 --> 00:10:21,030
+And the condition is that we're going to
+
+162
+00:10:21,030 --> 00:10:26,390
+solve this linear equation for these two
+parameters.
+
+163
+00:10:26,390 --> 00:10:26,825
+So.
+
+164
+00:10:26,825 --> 00:10:29,734
+[BLANK_AUDIO]
+
+165
+00:10:29,734 --> 00:10:33,450
+What is this vector equal to and oh, I'm
+so sorry.
+
+166
+00:10:33,450 --> 00:10:35,650
+What is this scalar equal to?
+
+167
+00:10:37,380 --> 00:10:39,520
+And what does this second scaler do?
+
+168
+00:10:41,060 --> 00:10:44,210
+And we can compute this we're you know,
+
+169
+00:10:44,210 --> 00:10:46,820
+you just have to rearrange this a little
+bit.
+
+170
+00:10:46,820 --> 00:10:52,340
+And What we're going to do is, say, the,
+the
+
+171
+00:10:52,340 --> 00:10:55,150
+condition that we're going to come up with
+is, as follows.
+
+172
+00:10:59,450 --> 00:10:59,950
+If
+
+173
+00:11:01,800 --> 00:11:06,230
+sigma1 is greater than 0, and.
+
+174
+00:11:07,800 --> 00:11:13,278
+Sigma 2 is greater than 0.
+So if they're both
+
+175
+00:11:13,278 --> 00:11:19,745
+positive, that implies that if we
+
+176
+00:11:19,745 --> 00:11:26,658
+have the two vectors, ugtg and uao,
+
+177
+00:11:26,658 --> 00:11:32,453
+then.
+This vector ufw,of L is
+
+178
+00:11:32,453 --> 00:11:38,730
+between those two.
+So it's not on the other side.
+
+179
+00:11:38,730 --> 00:11:42,660
+It's, it's on this side between the two,
+because this, because this angle right
+
+180
+00:11:42,660 --> 00:11:49,728
+here is less than Pi, that's going to be
+our condition.
+
+181
+00:11:49,728 --> 00:11:52,960
+And I have
+
+182
+00:11:52,960 --> 00:11:56,950
+posted 2 PDF's online, and in and
+
+183
+00:11:56,950 --> 00:12:02,090
+announcement that go over why this exactly
+works.
+
+184
+00:12:02,090 --> 00:12:04,300
+Why this linear algebra works, and why it
+makes sense.
+
+185
+00:12:04,300 --> 00:12:07,400
+And I'll have and, and then, those notes,
+I
+
+186
+00:12:07,400 --> 00:12:10,180
+have some more diagrams and a lot more
+detailed
+
+187
+00:12:10,180 --> 00:12:13,380
+math, and you'll be able to follow along
+exactly
+
+188
+00:12:13,380 --> 00:12:16,500
+what this little piece of linear algebra
+does for you.
+
+189
+00:12:17,660 --> 00:12:18,160
+Now,
+
+190
+00:12:19,670 --> 00:12:24,850
+at some point the robot is, the robot you
+know follows the,
+
+191
+00:12:24,850 --> 00:12:30,220
+follows the, the wall, the obstacle, so
+Originally it was over here.
+
+192
+00:12:31,910 --> 00:12:35,670
+Over here and then it drove around and
+drove around.
+
+193
+00:12:35,670 --> 00:12:37,250
+And this was the, this was the best
+progress
+
+194
+00:12:37,250 --> 00:12:40,510
+we had made at any point, so right here.
+
+195
+00:12:40,510 --> 00:12:44,820
+And it follows it around, follows it
+around all the way until it gets to this
+
+196
+00:12:44,820 --> 00:12:46,040
+point right here.
+
+197
+00:12:46,040 --> 00:12:51,140
+And at this point, it says look This
+distance here,
+
+198
+00:12:51,140 --> 00:12:56,130
+from here to the goal, is less than the
+distance from here to here to the goal.
+
+199
+00:12:57,570 --> 00:13:06,170
+And if that's the case, and I no longer
+need to slide, and sliding refers to that
+
+200
+00:13:06,170 --> 00:13:07,680
+condition that I just talked about in the
+
+201
+00:13:07,680 --> 00:13:09,970
+previous slide and we have one for either
+sliding
+
+202
+00:13:09,970 --> 00:13:13,020
+left or one for sliding right, but in this
+case, it's sliding left.
+
+203
+00:13:14,930 --> 00:13:18,730
+And so if this condition is no longer
+true, which
+
+204
+00:13:18,730 --> 00:13:21,280
+it isn't because the, because as you can
+see right
+
+205
+00:13:21,280 --> 00:13:26,780
+here these vectors are no longer between
+the [INAUDIBLE] goal
+
+206
+00:13:26,780 --> 00:13:30,940
+and the obstacle points vector, and
+progress has been made.
+
+207
+00:13:30,940 --> 00:13:35,150
+If those two conditions hold.
+Then we can go switch
+
+208
+00:13:35,150 --> 00:13:41,190
+back to go to goal and our robot can go
+ahead and make its way
+
+209
+00:13:41,190 --> 00:13:46,120
+to the goal location and it doesn't, it
+no, no longer has to follow this obstacle
+
+210
+00:13:46,120 --> 00:13:51,690
+right here.
+Now, like I said, the.
+
+211
+00:13:51,690 --> 00:13:55,860
+State machine, the finite state machine
+from week five is no longer sufficient
+
+212
+00:13:55,860 --> 00:14:00,260
+for this particular problem so you're
+going to have to design a new one.
+
+213
+00:14:00,260 --> 00:14:06,260
+And the design is up to you, but here are
+a few pointers of what you should probably
+
+214
+00:14:06,260 --> 00:14:12,000
+think about in your finite state machine.
+The first is, as usual.
+
+215
+00:14:12,000 --> 00:14:14,770
+If the robot is at the goal, then you
+stop.
+
+216
+00:14:14,770 --> 00:14:19,260
+And it's useful for that as the first
+thing that you check in the finite
+
+217
+00:14:19,260 --> 00:14:21,420
+state machine, because you don't want to
+
+218
+00:14:21,420 --> 00:14:23,300
+execute anything else once you're at the
+goal.
+
+219
+00:14:23,300 --> 00:14:25,430
+Once you're at the goal the robot is done
+with
+
+220
+00:14:25,430 --> 00:14:27,763
+its task and it's just going to stay in
+the stopped state.
+
+221
+00:14:27,763 --> 00:14:32,820
+Also, if the robot get into an unsafe
+distance
+
+222
+00:14:32,820 --> 00:14:36,710
+to the obstacle, we immediately want to
+switch to avoid obstacles,
+
+223
+00:14:36,710 --> 00:14:40,440
+because avoid obstacles really is our last
+ditch effort to
+
+224
+00:14:40,440 --> 00:14:43,890
+make sure that a robot doesn't crash with,
+with obstacle.
+
+225
+00:14:43,890 --> 00:14:46,270
+So it's usually a good idea to have that
+
+226
+00:14:46,270 --> 00:14:48,450
+in there, to make sure that there are no
+collisions.
+
+227
+00:14:50,320 --> 00:14:50,820
+Then
+
+228
+00:14:52,150 --> 00:14:57,480
+Also, you want to have the condition that
+if are you going to goal or maybe
+
+229
+00:14:57,480 --> 00:14:59,370
+you're doing obstacle [INAUDIBLE] and
+[INAUDIBLE] goal
+
+230
+00:14:59,370 --> 00:15:01,510
+together, but both of these goal seeking
+behaviors.
+
+231
+00:15:01,510 --> 00:15:03,890
+And you're no longer making progress then
+you
+
+232
+00:15:03,890 --> 00:15:06,130
+want to switch to either to follow wall
+and you
+
+233
+00:15:06,130 --> 00:15:07,820
+want to do that based on the condition
+whether you're
+
+234
+00:15:07,820 --> 00:15:10,910
+sliding, you're suppose to slide left or
+slide right.
+
+235
+00:15:10,910 --> 00:15:13,400
+And I talked about it in the previous
+
+236
+00:15:13,400 --> 00:15:15,990
+slides but make sure you have that in
+there.
+
+237
+00:15:17,610 --> 00:15:23,220
+And the fourth one is if you do get around
+
+238
+00:15:23,220 --> 00:15:25,760
+the obstacle there will be a point where
+you're going
+
+239
+00:15:25,760 --> 00:15:28,640
+to start making progress again toward the
+goal location and
+
+240
+00:15:28,640 --> 00:15:32,160
+you Will probably no lee, no longer need
+to slide
+
+241
+00:15:32,160 --> 00:15:35,730
+along the wall in order to make progress,
+so if
+
+242
+00:15:35,730 --> 00:15:37,910
+those both tho, both of those conditions
+are, end up
+
+243
+00:15:37,910 --> 00:15:39,930
+being true, then you can go ahead and
+switch back
+
+244
+00:15:39,930 --> 00:15:43,110
+to your goal-seeking behavior, so which is
+either go to goal,
+
+245
+00:15:43,110 --> 00:15:44,920
+or what I usually like do to is if, if I'm
+
+246
+00:15:44,920 --> 00:15:48,050
+close to an obstacle, which I typically am
+because of the
+
+247
+00:15:49,470 --> 00:15:53,840
+follow all behavior I first switch into
+avoid obstacles and go
+
+248
+00:15:53,840 --> 00:15:56,610
+to goal before I switch into pure go to
+goal behavior.
+
+249
+00:15:59,680 --> 00:16:05,600
+Now, my tips for week seven are.
+Again, read the manual.
+
+250
+00:16:05,600 --> 00:16:07,020
+It has more details.
+
+251
+00:16:07,020 --> 00:16:09,990
+And also read the handouts, the, the
+additional handouts that
+
+252
+00:16:09,990 --> 00:16:12,540
+I'm going to be posting that explains the
+Linear Algebra.
+
+253
+00:16:12,540 --> 00:16:15,200
+And do that.
+
+254
+00:16:15,200 --> 00:16:18,900
+And then really the more, even more
+important one is
+
+255
+00:16:18,900 --> 00:16:22,680
+when you design this finite state machine,
+it's fairly complicated.
+
+256
+00:16:22,680 --> 00:16:24,910
+And what I like to do
+
+257
+00:16:24,910 --> 00:16:26,810
+is I like to get out a piece of paper and
+
+258
+00:16:26,810 --> 00:16:29,100
+a pen and I like to draw the finite state
+machine.
+
+259
+00:16:29,100 --> 00:16:30,090
+Really think about...
+
+260
+00:16:30,090 --> 00:16:33,960
+What are all the states that the robot can
+be in, and what are the events that can
+
+261
+00:16:33,960 --> 00:16:35,980
+take it from state to state, and then
+construct
+
+262
+00:16:35,980 --> 00:16:38,230
+it on paper before you even start coding
+it.
+
+263
+00:16:38,230 --> 00:16:41,630
+Because then you, what you can do is you
+can take your piece of paper, and you can
+
+264
+00:16:41,630 --> 00:16:43,480
+pretend you're the robot and you can go
+step
+
+265
+00:16:43,480 --> 00:16:45,530
+through and, and see if you can make it.
+
+266
+00:16:46,790 --> 00:16:49,790
+All the way around the obstacle to the
+goal location.
+
+267
+00:16:49,790 --> 00:16:50,680
+And then
+
+268
+00:16:50,680 --> 00:16:53,750
+after that, you can implement it and you
+can test it.
+
+269
+00:16:53,750 --> 00:16:55,500
+And then you'll always, always have this
+piece of paper
+
+270
+00:16:55,500 --> 00:16:57,520
+to go back and forth and make sure, hey is
+
+271
+00:16:57,520 --> 00:17:00,310
+the robot actually doing what I designed
+the funded state
+
+272
+00:17:00,310 --> 00:17:04,780
+machine What I'd de, how I'd design the
+finite state machine.
+
+273
+00:17:04,780 --> 00:17:06,280
+Is it doing that, is it not, and that
+
+274
+00:17:06,280 --> 00:17:10,480
+really makes debugging this week's
+programming assignment much easier.
+
+275
+00:17:12,230 --> 00:17:15,740
+And usually I would end the video lecture
+here,
+
+276
+00:17:15,740 --> 00:17:19,430
+but I have one extra special slide for you
+this week.
+
+277
+00:17:19,430 --> 00:17:22,130
+And that's the What's Next?
+
+278
+00:17:22,130 --> 00:17:26,040
+Well, it is the last one, but the
+simulator and it's
+
+279
+00:17:26,040 --> 00:17:30,830
+documentation will be available outside of
+this course at the following URL.
+
+280
+00:17:30,830 --> 00:17:35,850
+So the project continues to lives on after
+this course, and
+
+281
+00:17:35,850 --> 00:17:38,880
+at any time if you want to get new updates
+to the simulator.
+
+282
+00:17:38,880 --> 00:17:40,660
+If you want to check in.
+
+283
+00:17:40,660 --> 00:17:45,350
+Have their new robots been added to the
+simulator has there, have
+
+284
+00:17:45,350 --> 00:17:49,040
+there, are there new sensors, if there's
+now maybe a camera sensors, or,
+
+285
+00:17:51,240 --> 00:17:53,680
+whatever it may be, you go to this URL,
+and
+
+286
+00:17:53,680 --> 00:17:55,990
+you'll be sent to a webpage where there'll
+be updates.
+
+287
+00:17:55,990 --> 00:18:00,510
+And there also will be links to a GitHub
+repository.
+
+288
+00:18:00,510 --> 00:18:02,430
+And the point of this GitHub repository is
+
+289
+00:18:02,430 --> 00:18:05,440
+for everybody to have access to share
+improvement.
+
+290
+00:18:05,440 --> 00:18:09,500
+And using improvements can be either, hey,
+this is a way better way of
+
+291
+00:18:11,930 --> 00:18:15,790
+for example, limiting the error between
+minus pi and pi.
+
+292
+00:18:15,790 --> 00:18:17,260
+I want to add that to the simulator.
+
+293
+00:18:17,260 --> 00:18:19,350
+You can go ahead and do that there.
+
+294
+00:18:19,350 --> 00:18:21,500
+You can also add new robots, so if you
+
+295
+00:18:21,500 --> 00:18:23,430
+wanted to have, for example, a robot
+that's more like
+
+296
+00:18:23,430 --> 00:18:25,950
+a car you can add that to the simulator
+
+297
+00:18:25,950 --> 00:18:28,890
+and then have that become part of the
+official project.
+
+298
+00:18:28,890 --> 00:18:31,840
+And the same thing with sensors and
+anything else that you think
+
+299
+00:18:31,840 --> 00:18:37,280
+of, so I would really like to encourage
+you to consider if
+
+300
+00:18:37,280 --> 00:18:39,710
+you're making any improvements or adding
+anything to the simulator,
+
+301
+00:18:39,710 --> 00:18:42,930
+contribute back to the project because
+it'll just make everything better.
+
+302
+00:18:42,930 --> 00:18:45,450
+And future students and future users of
+the
+
+303
+00:18:45,450 --> 00:18:47,610
+simulator will really, really benefit from
+your improvements.
+
+304
+00:18:49,060 --> 00:18:52,280
+And the last thing is just, thank you very
+much
+
+305
+00:18:52,280 --> 00:18:55,050
+for your hard work and your participation
+in programming assignments.
+
+306
+00:18:55,050 --> 00:18:57,730
+I've seen some really exciting discussions
+on the forums, it makes
+
+307
+00:18:57,730 --> 00:19:02,690
+me really, really happy And privileged to
+witness everybody grow into
+
+308
+00:19:02,690 --> 00:19:07,420
+seasoned robotics experts during the
+course of this of these seven weeks.
+
+309
+00:19:07,420 --> 00:19:10,668
+And with that, thank you very much and
+goodbye.
+
+310
+00:19:10,668 --> 00:19:13,880
+[BLANK_AUDIO]

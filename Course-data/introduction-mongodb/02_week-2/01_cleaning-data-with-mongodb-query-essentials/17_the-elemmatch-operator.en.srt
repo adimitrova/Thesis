@@ -1,0 +1,379 @@
+1
+00:00:00,120 --> 00:00:03,137
+In this lesson, we're going to
+discuss the $elemMatch operator.
+
+2
+00:00:03,137 --> 00:00:07,664
+And specifically, we're going to discuss
+a common pitfall that you might be subject
+
+3
+00:00:07,664 --> 00:00:12,430
+to when you're querying for subdocuments
+that are embedded in an array field.
+
+4
+00:00:12,430 --> 00:00:13,660
+And we're going to talk about,
+specifically,
+
+5
+00:00:13,660 --> 00:00:16,860
+how we can use the $elemMatch
+operator to eliminate
+
+6
+00:00:16,860 --> 00:00:18,530
+this common pitfall that people fall into.
+
+7
+00:00:19,810 --> 00:00:22,290
+Unfortunately, the influx app
+doesn't need to query for
+
+8
+00:00:22,290 --> 00:00:25,990
+documents by subdocuments that
+are embedded in an array field.
+
+9
+00:00:25,990 --> 00:00:30,100
+So instead, we're going to walk through
+kind of a contrived example because this
+
+10
+00:00:30,100 --> 00:00:33,380
+topic $elemMatch is
+actually really important.
+
+11
+00:00:33,380 --> 00:00:37,150
+So let's go ahead and take a look at a
+random document in our movies collection.
+
+12
+00:00:37,150 --> 00:00:40,480
+And here, I'm making sure that it
+actually has a comments field.
+
+13
+00:00:40,480 --> 00:00:43,236
+And I'm just going to go ahead and
+project out the comments.
+
+14
+00:00:43,236 --> 00:00:44,860
+And just so
+that we're all on the same page,
+
+15
+00:00:44,860 --> 00:00:48,110
+as you can see,
+comments is an array field.
+
+16
+00:00:48,110 --> 00:00:53,200
+And each element in this comments array
+is actually an embedded document.
+
+17
+00:00:53,200 --> 00:00:58,260
+And this is the kind of schema where
+you'll encounter this specific pitfall.
+
+18
+00:00:58,260 --> 00:01:00,540
+Let's go ahead and go down to cell five.
+
+19
+00:01:00,540 --> 00:01:02,480
+Now, we know from previous
+lessons that we can query for
+
+20
+00:01:02,480 --> 00:01:05,160
+this document here using dot notation.
+
+21
+00:01:05,160 --> 00:01:08,240
+Here I'm saying I want to
+find a single document
+
+22
+00:01:08,240 --> 00:01:12,760
+where a comment was made by Samwell Tarly.
+
+23
+00:01:12,760 --> 00:01:17,050
+And awesome, we can go ahead and
+see here that here is our documents.
+
+24
+00:01:17,050 --> 00:01:21,760
+And there are three comments, and
+one of them is from Samwell Tarly.
+
+25
+00:01:21,760 --> 00:01:23,560
+But let's look at another example.
+
+26
+00:01:23,560 --> 00:01:28,512
+Let's say that I wanted to actually find
+this document, not only by one field, but
+
+27
+00:01:28,512 --> 00:01:30,012
+actually by two fields.
+
+28
+00:01:30,012 --> 00:01:32,542
+If we look at our past result,
+
+29
+00:01:32,542 --> 00:01:38,635
+you can see that this comment by
+Samwell was actually made in 1988.
+
+30
+00:01:38,635 --> 00:01:42,859
+So let's say I was having a query where
+I not only wanted to find this document
+
+31
+00:01:42,859 --> 00:01:47,560
+by the commenter's name, but also when
+this specific commenter made the comment.
+
+32
+00:01:47,560 --> 00:01:52,015
+In this case, I want to make sure that
+it is less than, or earlier than,
+
+33
+00:01:52,015 --> 00:01:53,761
+January 1st, 1995.
+
+34
+00:01:53,761 --> 00:01:56,999
+And when we run this query,
+we get the same document.
+
+35
+00:01:56,999 --> 00:01:59,350
+We have the same three comments
+from the same three commenters.
+
+36
+00:01:59,350 --> 00:02:02,170
+This is the exact same
+document as our last query.
+
+37
+00:02:02,170 --> 00:02:06,420
+So we know that we can actually query for
+
+38
+00:02:06,420 --> 00:02:09,890
+documents based on multiple fields
+when they're embedded in an array.
+
+39
+00:02:09,890 --> 00:02:13,120
+But there's actually
+a pitfall in our logic here.
+
+40
+00:02:13,120 --> 00:02:19,130
+We're actually returning this document
+not purely based on this criteria.
+
+41
+00:02:19,130 --> 00:02:20,780
+If this was not a find one,
+
+42
+00:02:20,780 --> 00:02:25,790
+we would actually return more
+documents than what we'd expect.
+
+43
+00:02:25,790 --> 00:02:27,780
+So let's go ahead and look at this.
+
+44
+00:02:27,780 --> 00:02:29,840
+If you scroll down to cell seven,
+
+45
+00:02:29,840 --> 00:02:33,880
+here you can see that I'm running
+the same exact filters, projection.
+
+46
+00:02:33,880 --> 00:02:37,430
+But now, I'm going to skip over this
+document that we've been looking at.
+
+47
+00:02:37,430 --> 00:02:38,450
+And I'm just going to get one document.
+
+48
+00:02:38,450 --> 00:02:41,980
+So we're just getting the next
+document that MongoDB will find.
+
+49
+00:02:41,980 --> 00:02:46,248
+And as you can see here,
+we do have a comment from Samwell, so
+
+50
+00:02:46,248 --> 00:02:47,940
+seems like it's good.
+
+51
+00:02:47,940 --> 00:02:53,410
+But if we look at that date, you'll
+notice that the comment was made in 2000,
+
+52
+00:02:53,410 --> 00:02:56,678
+which is not less than January 1st, 1995.
+
+53
+00:02:56,678 --> 00:03:01,530
+And the pitfall here is that what this
+query is actually saying is it's not
+
+54
+00:03:01,530 --> 00:03:06,477
+saying let's find comments from Sam
+that were also made before 1995.
+
+55
+00:03:06,477 --> 00:03:10,777
+But what we're actually saying is let's
+find documents where one of the comments
+
+56
+00:03:10,777 --> 00:03:14,278
+is from Sam, and also one of
+the comments is from before 1995.
+
+57
+00:03:14,278 --> 00:03:19,430
+We're not specifically saying that
+Sam's comments have to be before 1995.
+
+58
+00:03:19,430 --> 00:03:22,856
+But that's probably what the person who
+wrote this query was actually looking for.
+
+59
+00:03:22,856 --> 00:03:24,374
+And this is the common pitfall.
+
+60
+00:03:24,374 --> 00:03:28,812
+And the way that we get around that
+is by using the $elemMatch operator,
+
+61
+00:03:28,812 --> 00:03:30,357
+and here's the syntax.
+
+62
+00:03:30,357 --> 00:03:34,924
+Here we say $elemMatch, of course we say
+first the field that we're querying on.
+
+63
+00:03:34,924 --> 00:03:36,840
+And then we're saying, for this field,
+
+64
+00:03:36,840 --> 00:03:39,080
+what do we want our
+documents to look like?
+
+65
+00:03:39,080 --> 00:03:40,510
+Well we want our embedded documents,
+
+66
+00:03:40,510 --> 00:03:46,950
+we want to match them based on having
+this name and being before this date.
+
+67
+00:03:46,950 --> 00:03:51,190
+And now when we run this query,
+we're limiting to two.
+
+68
+00:03:51,190 --> 00:03:54,513
+So we would expect to find the first
+document that we've been finding
+
+69
+00:03:54,513 --> 00:03:55,151
+every time.
+
+70
+00:03:55,151 --> 00:03:59,041
+And then we would expect to not see
+this incorrect second document.
+
+71
+00:03:59,041 --> 00:04:02,376
+We'd expect to see a document where Sam,
+so
+
+72
+00:04:02,376 --> 00:04:06,627
+this is our first one,
+Sam before 1995, all good.
+
+73
+00:04:06,627 --> 00:04:12,476
+And if you look at our second document, we
+also have a comment from Sam before 1995.
+
+74
+00:04:12,476 --> 00:04:14,590
+So let's recap what we
+discussed in this lesson.
+
+75
+00:04:14,590 --> 00:04:19,100
+So we saw that when we're querying for
+multiple fields in subdocuments
+
+76
+00:04:19,100 --> 00:04:23,380
+that are embedded in arrays, sometimes our
+logic might not be what we think it is.
+
+77
+00:04:23,380 --> 00:04:26,720
+And we might actually return more
+documents than we're expecting.
+
+78
+00:04:26,720 --> 00:04:28,810
+And to get around this issue,
+to actually query for
+
+79
+00:04:28,810 --> 00:04:32,760
+multiple fields on the same embedded
+document that's in an array,
+
+80
+00:04:32,760 --> 00:04:34,980
+we're going to need use
+the $elemMatch operator.

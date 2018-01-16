@@ -1,0 +1,1050 @@
+1
+00:00:00,850 --> 00:00:02,220
+Welcome to week six.
+
+2
+00:00:02,220 --> 00:00:05,460
+This week I'm going to be talking about
+following walls.
+
+3
+00:00:05,460 --> 00:00:07,220
+Why do we need to follow walls?
+
+4
+00:00:07,220 --> 00:00:09,460
+Well, last week we solved the navi,
+
+5
+00:00:09,460 --> 00:00:11,990
+we somehow seemed to solve the navigation
+problem.
+
+6
+00:00:11,990 --> 00:00:13,570
+We had our robot drive from point A to
+
+7
+00:00:13,570 --> 00:00:16,420
+point B without colliding with any of the
+obstacles.
+
+8
+00:00:16,420 --> 00:00:20,290
+But, the obstacles were fairly easy, and.
+
+9
+00:00:20,290 --> 00:00:22,980
+The reason for this is that they're
+convex.
+
+10
+00:00:22,980 --> 00:00:25,240
+But we can have these obstacles that are
+concave in shape.
+
+11
+00:00:25,240 --> 00:00:25,870
+So, for example,
+
+12
+00:00:25,870 --> 00:00:30,370
+take this U-shaped obstacle, and if a
+robot starts here
+
+13
+00:00:30,370 --> 00:00:32,080
+and it's goal location is on the other
+side of
+
+14
+00:00:32,080 --> 00:00:34,470
+the obstacle, what will happen with the
+controllers that we
+
+15
+00:00:34,470 --> 00:00:38,400
+designed last week is that the robot will
+drive from here.
+
+16
+00:00:38,400 --> 00:00:40,840
+Into the obstacle, and then start avoiding
+the
+
+17
+00:00:40,840 --> 00:00:43,040
+obstacle, and then drive back into the
+obstacle.
+
+18
+00:00:43,040 --> 00:00:46,040
+Because it's always trying to get to this
+side, but also avoiding this obstacle.
+
+19
+00:00:46,040 --> 00:00:47,105
+But it's trapped in here.
+
+20
+00:00:47,105 --> 00:00:50,960
+because the shape of the obstacle is
+concave.
+
+21
+00:00:52,050 --> 00:00:54,350
+So what we need is an additional
+controller, the follow-all
+
+22
+00:00:54,350 --> 00:00:56,580
+controller, that will, so that when we
+make a decision
+
+23
+00:00:56,580 --> 00:00:59,730
+that we're inside of our concave obstacle,
+then we're going to
+
+24
+00:00:59,730 --> 00:01:04,710
+follow the contour of the, the boundary of
+this object, and.
+
+25
+00:01:04,710 --> 00:01:06,480
+We're going to follow it all the way
+around until we've
+
+26
+00:01:06,480 --> 00:01:08,810
+cleared it and then we can proceed onto
+the goal location.
+
+27
+00:01:10,220 --> 00:01:12,180
+And that's, that's the objective for this
+week.
+
+28
+00:01:13,470 --> 00:01:14,730
+And the way that we'll do this is
+
+29
+00:01:14,730 --> 00:01:17,220
+we're going to use the infrared sensors to
+approximate
+
+30
+00:01:17,220 --> 00:01:18,840
+a section of the wall, alright?
+
+31
+00:01:18,840 --> 00:01:22,210
+It's really an obstacle but we're going to
+call it a wall.
+
+32
+00:01:22,210 --> 00:01:22,710
+And.
+
+33
+00:01:24,030 --> 00:01:26,920
+And once we've, once we've estimated a
+section, we're basically
+
+34
+00:01:26,920 --> 00:01:30,900
+going to figure out a vector that's
+tangential to the wall.
+
+35
+00:01:30,900 --> 00:01:32,580
+And also one that's perpendicular to the
+wall.
+
+36
+00:01:32,580 --> 00:01:36,450
+And the point is to combine these two
+vectors into a single
+
+37
+00:01:36,450 --> 00:01:42,200
+vector that will not only steer the robot
+into,into one direction along.
+
+38
+00:01:42,200 --> 00:01:46,150
+The the, the, the contour of the, the
+boundary of the wall.
+
+39
+00:01:46,150 --> 00:01:50,430
+But also a vector that will make sure that
+the robot
+
+40
+00:01:50,430 --> 00:01:53,438
+neither steers into, into the wall or away
+from the wall.
+
+41
+00:01:53,438 --> 00:01:57,580
+So we're going to maintain some distance
+from the wall as we follow it.
+
+42
+00:01:59,900 --> 00:02:01,350
+Now.
+
+43
+00:02:01,350 --> 00:02:04,010
+How is the robot going to estimate the
+wall?
+
+44
+00:02:04,010 --> 00:02:07,100
+Well, first of all, one of the two inputs
+into the
+
+45
+00:02:07,100 --> 00:02:10,000
+controller is going, is going to be either
+left or right.
+
+46
+00:02:10,000 --> 00:02:13,650
+So we are either going to follow a wall
+thats to our left or to our right.
+
+47
+00:02:13,650 --> 00:02:16,950
+So we have to make that decision before we
+do anything else.
+
+48
+00:02:16,950 --> 00:02:18,950
+If we decide that we are going to use.
+
+49
+00:02:20,200 --> 00:02:25,290
+The left the left direction.
+What we're going to
+
+50
+00:02:25,290 --> 00:02:30,380
+do, is we're going to use sensors one,
+two, and three on the robot.
+
+51
+00:02:30,380 --> 00:02:33,140
+So we're going to use these three sensors.
+
+52
+00:02:33,140 --> 00:02:36,200
+to, to estimate a wall that's the left, or
+
+53
+00:02:36,200 --> 00:02:38,414
+an obstacle that's to the left of of the
+robot.
+
+54
+00:02:39,520 --> 00:02:40,550
+And.
+
+55
+00:02:40,550 --> 00:02:42,530
+What we'll do is we'll pick of these three
+we're
+
+56
+00:02:42,530 --> 00:02:46,410
+going to pick the two, that have the
+shortest infrared sensor readings.
+
+57
+00:02:46,410 --> 00:02:50,630
+And, we already know how to get a point,
+on these in the world frame.
+
+58
+00:02:50,630 --> 00:02:54,030
+So, what we end up is we end up with a
+point so.
+
+59
+00:02:55,490 --> 00:03:01,850
+We have, this point right here which I'm
+going to denote as, point 1.
+
+60
+00:03:01,850 --> 00:03:03,870
+And, this is going to be point 2.
+
+61
+00:03:03,870 --> 00:03:08,570
+So, we've picked these two, and since
+we've picked two points
+
+62
+00:03:08,570 --> 00:03:10,590
+in the world, we can come up with a vector
+right?
+
+63
+00:03:10,590 --> 00:03:13,420
+So, we're going to come up with this green
+vector right here.
+
+64
+00:03:13,420 --> 00:03:15,730
+And, this green vector is going to be our
+vector
+
+65
+00:03:15,730 --> 00:03:17,150
+that's tangential to the wall.
+
+66
+00:03:17,150 --> 00:03:19,280
+So I'm going to call this u, the vector u
+
+67
+00:03:20,560 --> 00:03:24,140
+fw denotes that, this is for the follow
+wall, and.
+
+68
+00:03:24,140 --> 00:03:28,740
+Comma T denotes that this is tangential to
+the wall.
+
+69
+00:03:28,740 --> 00:03:32,010
+And really, the way that you define it is,
+it's p2 minus p1.
+
+70
+00:03:32,010 --> 00:03:35,140
+That's the definition of this, of this
+vector.
+
+71
+00:03:35,140 --> 00:03:39,090
+Now, I also said that we want to maintain
+some spacing from the wall.
+
+72
+00:03:39,090 --> 00:03:40,750
+So we're going to have to calculate
+
+73
+00:03:40,750 --> 00:03:42,140
+a vector that's perpendicular.
+
+74
+00:03:43,220 --> 00:03:45,170
+And the way that we're going to calculate
+it is,
+
+75
+00:03:45,170 --> 00:03:48,068
+again, we have the vector from the
+previous slide.
+
+76
+00:03:48,068 --> 00:03:53,970
+We have u_fw_tp, and this time it has a
+prime
+
+77
+00:03:53,970 --> 00:03:58,120
+mark, and that's because I'm going to
+normali, normalize it, and.
+
+78
+00:03:58,120 --> 00:04:01,890
+Thus, and again, I think last week I
+talked about this is, what we're
+
+79
+00:04:01,890 --> 00:04:03,150
+going to do is we're going to just take
+
+80
+00:04:03,150 --> 00:04:05,220
+the vector, and divide it by its
+magnitude.
+
+81
+00:04:05,220 --> 00:04:05,670
+So that's the,
+
+82
+00:04:05,670 --> 00:04:09,160
+that's the normalized version of the of
+that vector.
+
+83
+00:04:09,160 --> 00:04:11,990
+And what we'll do is we'll first take a
+
+84
+00:04:11,990 --> 00:04:17,140
+point on this vector, which is going to be
+ua, and.
+
+85
+00:04:18,720 --> 00:04:24,340
+This point, I'm just going to pick for, to
+make it easy, I'm going to pick the first
+
+86
+00:04:24,340 --> 00:04:32,090
+I'm going to pick the point detected by
+this first infrared infrared sensor.
+
+87
+00:04:32,090 --> 00:04:34,385
+So, this one right here.
+
+88
+00:04:34,385 --> 00:04:36,430
+because I know this one I could also
+picked.
+
+89
+00:04:36,430 --> 00:04:38,940
+This one right here but I picked the first
+one.
+
+90
+00:04:40,060 --> 00:04:42,740
+Now I'm also going to pick another point
+which is
+
+91
+00:04:42,740 --> 00:04:46,340
+going to be the location of the robot in
+the world.
+
+92
+00:04:46,340 --> 00:04:50,780
+So that's going to be my point or vector
+up, u sub p.
+
+93
+00:04:52,310 --> 00:04:57,090
+And since I again have but I have so, I
+have this point so I have.
+
+94
+00:04:58,950 --> 00:05:01,350
+Let me indicate that on the slide.
+I have
+
+95
+00:05:04,560 --> 00:05:08,690
+this point right here, this point right
+here, and this vector, and what I can do
+
+96
+00:05:08,690 --> 00:05:15,010
+is I can compute the, a vector that points
+from the robot, so from the robot.
+
+97
+00:05:17,590 --> 00:05:20,480
+To this closest point on the wall.
+
+98
+00:05:20,480 --> 00:05:24,580
+And the, and the equation that describes
+this vector is as follows.
+
+99
+00:05:25,620 --> 00:05:29,358
+It's this, so this vector, this
+perpendicular
+
+100
+00:05:29,358 --> 00:05:32,800
+vector I'm denoting by u sub fw, p.
+
+101
+00:05:32,800 --> 00:05:37,260
+And it's this subtraction of these points
+dotted.
+
+102
+00:05:37,260 --> 00:05:40,350
+With a dot product of, of the tangential
+vector
+
+103
+00:05:40,350 --> 00:05:42,670
+and then multiply it again by the
+tangential vector.
+
+104
+00:05:42,670 --> 00:05:46,510
+So this is just some linear algebra that
+gives me a vector from the
+
+105
+00:05:46,510 --> 00:05:47,980
+robot to the closest point on the
+
+106
+00:05:47,980 --> 00:05:51,960
+wall, that's, that lies on the tangential
+vector.
+
+107
+00:05:53,400 --> 00:05:58,040
+And, this is not sufficient for us to
+maintain spacing yet.
+
+108
+00:05:58,040 --> 00:06:01,700
+What we really want to do, is we want to
+find another vector that's goes in
+
+109
+00:06:01,700 --> 00:06:05,730
+the opposite direction, and, and again
+from
+
+110
+00:06:05,730 --> 00:06:08,500
+the previous slide I have this
+perpendicular vector,
+
+111
+00:06:08,500 --> 00:06:10,490
+so all I'm going to do is I'm going
+
+112
+00:06:10,490 --> 00:06:15,640
+to normalize it and multiply it by some
+distance fw.
+
+113
+00:06:15,640 --> 00:06:17,710
+So d sub fw.
+
+114
+00:06:17,710 --> 00:06:18,210
+And.
+
+115
+00:06:19,780 --> 00:06:22,120
+This distance right here is the distance
+that
+
+116
+00:06:22,120 --> 00:06:24,990
+we want to maintain between the robot and
+the walls.
+
+117
+00:06:24,990 --> 00:06:32,760
+So we want the robot to end up in such a
+way that this is equal to dfw.
+
+118
+00:06:35,170 --> 00:06:41,030
+So the reason that I define this vector
+like, like so is that when we can combine.
+
+119
+00:06:41,030 --> 00:06:42,690
+The two together.
+
+120
+00:06:42,690 --> 00:06:44,982
+If we combine these two vectors together,
+we're
+
+121
+00:06:44,982 --> 00:06:47,570
+going to get a vector that either points
+us
+
+122
+00:06:47,570 --> 00:06:50,850
+toward the wall if the robot is farther
+than
+
+123
+00:06:50,850 --> 00:06:55,000
+d fw from the obstacle, or from the wall.
+
+124
+00:06:55,000 --> 00:06:57,940
+And we're going to get a vector that
+points us.
+
+125
+00:06:59,230 --> 00:07:00,600
+Away from
+
+126
+00:07:00,600 --> 00:07:07,524
+the, from the wall if we're closer than d
+sub fw.
+
+127
+00:07:07,524 --> 00:07:12,430
+So, that's the, that's the purpose of
+going through, through these equations.
+
+128
+00:07:14,180 --> 00:07:18,010
+And really, what ends up happening is if
+we div if we.
+
+129
+00:07:18,010 --> 00:07:24,520
+Somehow linearly combine the, tangential
+vector to the, to the wall.
+
+130
+00:07:24,520 --> 00:07:25,850
+And the perpendicular vector
+
+131
+00:07:25,850 --> 00:07:27,720
+the, to the wall, that you know either
+
+132
+00:07:27,720 --> 00:07:29,710
+points us towards or away depending on the
+distance.
+
+133
+00:07:29,710 --> 00:07:35,758
+If we combine those in some way, we're
+going to get a, vector,
+
+134
+00:07:35,758 --> 00:07:40,580
+u sub fw, which will both.
+
+135
+00:07:40,580 --> 00:07:45,980
+Point us in the direction in which the
+wall is going to, that allows
+
+136
+00:07:45,980 --> 00:07:50,990
+us to follow the wall, and it also has the
+component that either pushes us towards or
+
+137
+00:07:50,990 --> 00:07:54,240
+away from the wall depending on how close
+or far we
+
+138
+00:07:54,240 --> 00:07:57,790
+are away from the obstacle, and this is
+exactly what we wanted.
+
+139
+00:08:00,230 --> 00:08:04,460
+And then the last thing that we have to do
+is we just have to use our good
+
+140
+00:08:04,460 --> 00:08:07,460
+old PID controller to steer the robot in
+the
+
+141
+00:08:07,460 --> 00:08:10,200
+direction of this vector, and we're good
+to go.
+
+142
+00:08:12,520 --> 00:08:13,710
+So how all does this work?
+
+143
+00:08:13,710 --> 00:08:16,720
+Well, you saw in the previous slides that
+I got a really good
+
+144
+00:08:16,720 --> 00:08:19,860
+estimate of, of, of the, of the, of a
+section of the wall.
+
+145
+00:08:19,860 --> 00:08:22,020
+But that's not always the case.
+
+146
+00:08:22,020 --> 00:08:27,230
+So, for example here on the inside corner,
+what I have here is
+
+147
+00:08:27,230 --> 00:08:32,960
+this is the robot's estimate of, of the,
+of the wall.
+
+148
+00:08:32,960 --> 00:08:35,040
+And you can see that this is an
+overestimate.
+
+149
+00:08:35,040 --> 00:08:37,840
+So, we're actually okay with that, because
+if
+
+150
+00:08:37,840 --> 00:08:40,460
+we're overestimating the wall, that's, you
+know, that's
+
+151
+00:08:40,460 --> 00:08:43,770
+not really problematic because we're not
+going to.
+
+152
+00:08:43,770 --> 00:08:45,940
+We're going to avoid this, this virtual
+piece of
+
+153
+00:08:45,940 --> 00:08:47,610
+the wall and we're not going to slam into
+it.
+
+154
+00:08:47,610 --> 00:08:54,370
+There's no danger of, real danger of that.
+But that is on, these inside corners.
+
+155
+00:08:54,370 --> 00:08:58,320
+On the outside corners we are
+underestimating the wall.
+
+156
+00:08:58,320 --> 00:09:01,792
+So you can see here that the robot thinks
+that this represents.
+
+157
+00:09:01,792 --> 00:09:02,870
+Is it
+
+158
+00:09:02,870 --> 00:09:05,470
+a good representation of the wall?
+
+159
+00:09:05,470 --> 00:09:10,560
+And if we cut this corner too closely the
+robot collide with this
+
+160
+00:09:10,560 --> 00:09:14,520
+part of the obstacle that it doesn't
+really sense because there's a little
+
+161
+00:09:14,520 --> 00:09:18,020
+bit of spread between the sensors because
+we don't have, you know, 20,
+
+162
+00:09:18,020 --> 00:09:21,880
+20 sensors on the robot that cover every
+single inch outside the robot.
+
+163
+00:09:21,880 --> 00:09:24,165
+We only have five sensors, so we got to
+make,
+
+164
+00:09:24,165 --> 00:09:27,870
+deal with what we have, so here we have to
+
+165
+00:09:27,870 --> 00:09:32,460
+be a little careful, and that's where the
+design of this distance, d
+
+166
+00:09:32,460 --> 00:09:36,470
+sub fw comes into play.
+So, you want to make sure that this, this,
+
+167
+00:09:36,470 --> 00:09:44,150
+value is large enough to allow us to not
+cut corners and collide with the wall.
+
+168
+00:09:44,150 --> 00:09:50,660
+But also not too large so, so that we
+don't lose track
+
+169
+00:09:50,660 --> 00:09:52,970
+of the wall, because we don't want to end
+up too far away
+
+170
+00:09:52,970 --> 00:09:55,200
+from the wall and then the robot doesn't
+sense
+
+171
+00:09:55,200 --> 00:09:57,470
+the wall anymore and we can no longer
+follow it.
+
+172
+00:09:57,470 --> 00:09:59,860
+So, we want to kind of stick to the wall
+as
+
+173
+00:09:59,860 --> 00:10:02,920
+close as possible, but not too close to
+collide.
+
+174
+00:10:04,530 --> 00:10:10,038
+Now the implementation is going to happen
+in a new controller, FollowWall.m.
+
+175
+00:10:10,038 --> 00:10:12,540
+And you're going to have to implement some
+missing logic and,
+
+176
+00:10:12,540 --> 00:10:16,140
+and, and math that was covered in the
+previous slides.
+
+177
+00:10:16,140 --> 00:10:18,090
+And ag, also again covered in
+
+178
+00:10:18,090 --> 00:10:21,490
+the, in the manual in much greater detail.
+And.
+
+179
+00:10:23,440 --> 00:10:26,170
+As I said before the, what's, what's
+really unique about
+
+180
+00:10:26,170 --> 00:10:29,850
+this controller its going to accept either
+left or right
+
+181
+00:10:29,850 --> 00:10:32,530
+denoting which side of, which side of the
+robot the
+
+182
+00:10:32,530 --> 00:10:34,320
+wall is going to be in which its going to
+follow.
+
+183
+00:10:34,320 --> 00:10:36,800
+So we're going to tell it you're going to
+have to
+
+184
+00:10:36,800 --> 00:10:39,160
+follow a wall that's going be on your left
+
+185
+00:10:39,160 --> 00:10:40,570
+or we're going to tell you you're going to
+have to
+
+186
+00:10:40,570 --> 00:10:43,050
+follow an op a wall that's on your right.
+
+187
+00:10:43,050 --> 00:10:47,340
+And that those are going to be inputs and
+those [INAUDIBLE], really come into play.
+
+188
+00:10:47,340 --> 00:10:50,290
+And next week when we have our full
+navigation
+
+189
+00:10:52,460 --> 00:10:54,010
+algorithm and state machine going on.
+
+190
+00:10:56,610 --> 00:10:59,700
+So, let's see what this looks like in, in
+MATLAB and in the simulator.
+
+191
+00:11:03,850 --> 00:11:05,970
+I'll launch the simulator and hit Play.
+
+192
+00:11:07,580 --> 00:11:13,650
+And here, we have the robot, following the
+wall on it's left.
+
+193
+00:11:13,650 --> 00:11:17,520
+And as you can see here I got really,
+really close, to this corner.
+
+194
+00:11:19,630 --> 00:11:20,610
+So that was a little dangerous.
+
+195
+00:11:20,610 --> 00:11:22,170
+Maybe I should have picked a better,
+
+196
+00:11:22,170 --> 00:11:24,210
+better distance to maintain from, from the
+wall.
+
+197
+00:11:25,690 --> 00:11:27,850
+And here we are overestimating so we're
+okay.
+
+198
+00:11:27,850 --> 00:11:30,710
+And here we're going to cut it fairly
+close again.
+
+199
+00:11:32,150 --> 00:11:36,380
+So this is pretty, pretty much a little
+too close for comfort.
+
+200
+00:11:36,380 --> 00:11:40,430
+But, you know, we're not crashing into
+the, into the obstacles.
+
+201
+00:11:40,430 --> 00:11:42,410
+So we're, we're, we're gon, we're okay
+with that.
+
+202
+00:11:44,910 --> 00:11:45,510
+Alright.
+Great.
+
+203
+00:11:45,510 --> 00:11:50,965
+So, the robot's going to follow this wall
+on and on and on until I close this.
+
+204
+00:11:50,965 --> 00:11:54,532
+Now, again, make sure re-read the manual
+
+205
+00:11:54,532 --> 00:11:58,660
+for weeks, that's been updated for week
+six.
+
+206
+00:11:58,660 --> 00:12:00,990
+It has a lot more details especially, you
+know, for
+
+207
+00:12:00,990 --> 00:12:03,640
+the math and, and has diagrams that will
+help you.
+
+208
+00:12:04,650 --> 00:12:08,380
+Implement the logic in all the math in in
+the, in the controller.
+
+209
+00:12:09,750 --> 00:12:10,190
+And
+
+210
+00:12:10,190 --> 00:12:13,520
+I encourage you to experiment with
+different values
+
+211
+00:12:13,520 --> 00:12:16,040
+of the distance to maintain from the wall.
+
+212
+00:12:16,040 --> 00:12:19,810
+So you'll see different results for
+different distances that you pick.
+
+213
+00:12:19,810 --> 00:12:23,720
+And also you can decide how to combine the
+two vectors that
+
+214
+00:12:23,720 --> 00:12:27,730
+are tangential and, and perpendicular, to
+the, to the wall, and, and, and.
+
+215
+00:12:27,730 --> 00:12:29,460
+In different ways, so.
+
+216
+00:12:29,460 --> 00:12:32,700
+And it depends on where you want to put
+the emphasis.
+
+217
+00:12:32,700 --> 00:12:35,420
+You might want to put the emphasis
+strictly
+
+218
+00:12:35,420 --> 00:12:37,640
+on following the law, on following the
+
+219
+00:12:37,640 --> 00:12:40,230
+law, and not worry about maintaining a
+distance
+
+220
+00:12:40,230 --> 00:12:44,020
+too much, or you could do the converse of
+that, it's really up to you.
+
+221
+00:12:45,050 --> 00:12:46,600
+And with that I wish you good luck.

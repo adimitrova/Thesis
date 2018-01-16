@@ -1,0 +1,111 @@
+[MUSIC] In this sixth module,
+we are discussing weak interactions. In this second video, we introduce
+the operations of charge conjugation, parity, and time reversal. After following this video, you will know
+discrete transformations of space time, which are parity and time reversal,
+the charge conjugation transformation, which reverses all charges, and
+the behavior of forces and matter under these transformations.
+The reversals of space and time directions are discrete
+transformations of space-time coordinates. For the space coordinates, the transformation is also
+called the parity, P. Both transformations can be applied
+as operators to a quantum state such as a particle. These operators are unitary,
+because a double application to the initial state
+reproduce the original state. Therefore the eigenvalues of
+the two operators are plus or minus 1 if they are applied to
+eigenstates of parity or time reversal. However, there are many wave functions
+which are not eigenstates of parity. For example, a function phi
+equal to cos x + sin x becomes under the application
+of parity cos x - sin x, which is neither +phi nor -phi. Eigenstates of P can be
+classified like in this table. Scalar wave functions describe the spin
+zero particles with positive parity. Pseudoscalar ones describe spin
+zero particles with parity minus. Vector and axial vector wave
+functions describe the spin one particles with parity negative and
+positive respectively. Parity is a multiplicative quantum number,
+so the total parity of a system in its ground state is the product of
+the individual parities of its components. If there is an angular momentum
+between the components, characterized by am l-type
+quantum number, it must be taken into account by
+a factor (-1)^l. Parity is conserved in interaction due to
+electromagnetic and strong forces, but not in weak interactions. Conservation means that if a system is
+in an eigenstate before the reaction, it will be in an eigenstate with
+the same eigenvalue after the reaction. For bound states, the total angular
+momentum, J=l + s, comes in, multiplying the intrinsic
+parity of the components. Consequently, the notation J^P is
+used to characterize particles. You find it in the PDG tables for
+each particle. Electromagnetic transitions in bound
+states, as the hydrogen atom for example, require that ∆l ± 1. So the parity of the photon
+must be -1. The photon is thus indeed a vector
+particle, as we noted in module 4. Hadrons are parity eigenstates,
+thus their parity eigenvalues can be used to characterize a particle, just like
+spin, electric charge or baryon number. The parity of fermions is
+opposite to that of antifermions. By convention, parities are arbitrarily
+fixed to +1 for leptons and quarks, and antiquarks and antileptions,
+therefore, have parity -1. For bosons, the parity is the same for
+particles and antiparticles. The photon parity,
+as we already said, is -1. Baryons which contain three quarks
+without a relative quantum angular momentum, such as the proton and neutron,
+have a parity (+1)^3, so, finally, parity +1. That is to say that J^P is (1/2)^+. The lightest mesons,
+such as pions as well as light kaons, contain quark and
+antiquark with anti parallel spins. They have parity (+1)(-1), so -1, and they are called pseudoscalar mesons. The states with the same quark
+contents but parallels spins, like the mesons rho, K^*, omega,
+and Phi are called vector mesons. They have J^P equal to 1^-. But parity is not just
+a theoretical concept, it has a measurable effect whenever it
+corresponds to a conserved observable. Let us look at the dominant decay of
+the π^0, which goes into photons. The study of this process
+has allowed to conclude that π^0 is a pseudoscalar boson
+with J^P = 0^-. Its decay products are two photons,
+vector boson of J^P = 1^-. We project spins on the
+only natural axis of the system, given by the direction of the two
+photons in the rest frame of the π^0. Conservation of angular momentum requires one of the two configurations sketched
+here, or a combination of both. The first configuration has two photons in
+a right circular polarization state. The second has the left polarized photons. Under parity, the momentum of the two
+photons change sign but their spin, being pseudovectors, do not change. So the parity operation changes
+the first configuration into the second one, and vice versa. The photon wave function is characterized
+by its polarization vector epsilon, which points in the direction
+of the electric field, and for real photons is normal to
+the direction of motion. As parity is conserved in decay process, this requires that the total wave function
+psi be an eigenstate of parity. Up to a normalization constant,
+the two possibilities correspond to the wave function psi_1 and
+psi_2, given here. The first is proportional to a scalar,
+so it has parity +1. The angle phi between the two polarization
+planes will be preferentially zero, with an intensity distribution
+proportional to the square of cosine phi. The second is proportional to the product
+between a pseudovector and a vector. So it has parity -1. The angle phi between the polarization
+planes of the two photons will be preferentially 90 degrees. Experimentally, it is found that
+they are indeed orthogonal. The party of the π^0
+is therefore -1. The charge conjugation operator,
+indicated by C, is an example of a transformation of
+the field itself and not of coordinates. It transforms the wave
+function of a particle, phi_P, into the wave function
+of its antiparticle, phi_pbar. The operation therefore changes the sign
+of electric charge, color, baryon, and lepton number, in short, all the quantum
+numbers of the charge type. Thus the operator C applied to
+a fermion gives an antifermion, with all charges opposite,
+with the same mass, the same spin, and the same momentum. Again electromagnetic and strong
+interactions conserve charge conjugation. That is to say that this interactions have the same intensity for
+particles and anti-particles. Weak interactions on the contrary
+violate C, so they distinguish between the particles and
+the anti-particles. Particles which do not have any
+charge can be eigenstates of C. They are their own anti-particles. The photon and the Z boson are examples. The pseudoscalar meson π^0,
+which is also its own anti-particle, has C phi_pi = phi_pi,
+with eigenvalue C = +1. Since the photon is
+generated by moving charges, which change sign of
+the electric charge under C, C A_µ = -A_µ. So charge conjugation is another
+multiplicative quantum number. A system of n photons will have
+a C equal to (-1)^n. For example, π^0 decay into two
+photons respects the conservation of C, but π^0 decay into
+three photons is forbidden. Indeed, the branching
+ratio of this decay is measured to be less than
+3.1 10^-8. Time reversal operation, indicated by T, transforms the coordinate for
+four-vector x, so (t,x,y,z) into x’ = (-t,x,y,z). When applied to a field, T also turns
+them into their complex conjugate, and this is necessary because of the
+transformation of the equation of motion. Except for real boson fields,
+there are no eigenstates of T alone. So no conserved quantum number associated. The importance of T is rather in combination
+with the other discrete transformations, parity and charge conservation. One can easily understand that all
+the local fields theories must be invariant under the joint action of CPT,
+transforming a process into itself. We will see what follows
+that weak interaction violated to a maximum extent
+the symmetry C and P, and even the combined operation CP,
+which transforms right handed fermions into a left hand antifermions,
+is not respected by weak interactions. This introduces a small difference
+between a reaction and its reverse. It gives an objective direction to time. We will introduce weak
+interactions in the next video. [MUSIC]

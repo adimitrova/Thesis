@@ -1,0 +1,492 @@
+1
+00:00:00,581 --> 00:00:18,098
+[MUSIC]. 
+
+2
+00:00:18,098 --> 00:00:21,380
+Today we're going to talk a bit more 
+about moving things around in graphics. 
+
+3
+00:00:21,380 --> 00:00:25,868
+So in the first week we talked about how 
+to draw stuff and there we could position 
+
+4
+00:00:25,868 --> 00:00:30,016
+objects and then like rectangles, by 
+giving the pixel positions.And for 
+
+5
+00:00:30,016 --> 00:00:35,483
+example the white command and the ellipse 
+command. 
+
+6
+00:00:35,483 --> 00:00:40,074
+And, and that's fine, we can do that. 
+And last week we talked about doing 
+
+7
+00:00:40,074 --> 00:00:43,602
+animation, but animation with image 
+sequences where we're playing lots of 
+
+8
+00:00:43,602 --> 00:00:47,810
+different images all in the same 
+position. 
+
+9
+00:00:47,810 --> 00:00:52,995
+Today I'm going to talk about more 
+powerful ways of moving objects around 
+
+10
+00:00:52,995 --> 00:00:58,945
+beyond what you can do simply by putting 
+positions into the x y coordinates to say 
+
+11
+00:00:58,945 --> 00:01:05,785
+say, a rectangle. 
+These techniques accord transforms, and 
+
+12
+00:01:05,785 --> 00:01:10,044
+there are three of them. 
+The first transform is translate, which 
+
+13
+00:01:10,044 --> 00:01:14,984
+is a basic movement. 
+Not too different from what you could do 
+
+14
+00:01:14,984 --> 00:01:19,995
+by putting an X-Y position into, the 
+position of a rectangle, so. 
+
+15
+00:01:19,995 --> 00:01:24,656
+And that is a command for translate and 
+you pass in an x and a y which is the 
+
+16
+00:01:24,656 --> 00:01:29,554
+position you're moving whatever object 
+too and it's a separate command to 
+
+17
+00:01:29,554 --> 00:01:35,480
+whatever command drawing you're doing 
+this. 
+
+18
+00:01:35,480 --> 00:01:39,535
+So you can apply single translate to 
+multiple objects. 
+
+19
+00:01:39,535 --> 00:01:43,957
+And group objects together and move them 
+around and I'll talk a little bit more in 
+
+20
+00:01:43,957 --> 00:01:48,952
+detail about how you do that. 
+And the basic premise to translate an x 
+
+21
+00:01:48,952 --> 00:01:53,443
+and a y which gives you the position for 
+which you'll translate. 
+
+22
+00:01:53,443 --> 00:01:56,420
+So very similar to what we've done 
+before. 
+
+23
+00:01:56,420 --> 00:02:01,370
+The second one is a scale that's getting 
+things bigger and smaller and that just 
+
+24
+00:02:01,370 --> 00:02:06,940
+basically takes a number That is how much 
+of scaling apply. 
+
+25
+00:02:06,940 --> 00:02:09,400
+If that number's one you're not scaling 
+it at all. 
+
+26
+00:02:09,400 --> 00:02:11,620
+If it's less than one it's getting 
+smaller. 
+
+27
+00:02:11,620 --> 00:02:14,090
+If it's more than one it's getting 
+bigger. 
+
+28
+00:02:14,090 --> 00:02:18,055
+One quite useful thing about scale is you 
+can also give it two parameters which 
+
+29
+00:02:18,055 --> 00:02:22,250
+means you can scale separately about the 
+x and the y. 
+
+30
+00:02:22,250 --> 00:02:27,818
+So, you can make something wider While 
+making it sort of the same time, having 
+
+31
+00:02:27,818 --> 00:02:34,049
+high x scale and a small y scale. 
+So the rotate command is used to spin 
+
+32
+00:02:34,049 --> 00:02:38,260
+objects around. 
+And it takes an angle as its parameter. 
+
+33
+00:02:38,260 --> 00:02:41,248
+So that's how much you want to spin it 
+by. 
+
+34
+00:02:41,248 --> 00:02:50,745
+the normal way we talk about angles is in 
+degrees 0, 360 degrees. 
+
+35
+00:02:50,745 --> 00:02:54,689
+But in computer programming we often work 
+with another way of dealing with angles 
+
+36
+00:02:54,689 --> 00:02:58,330
+called radians. 
+Now the units we shall explain in a 
+
+37
+00:02:58,330 --> 00:03:03,420
+minute and you have to pass in that value 
+and radiance through a take command. 
+
+38
+00:03:03,420 --> 00:03:06,458
+If you don't want to get involved in 
+radians, there's a very simple command 
+
+39
+00:03:06,458 --> 00:03:10,550
+radians, that takes an angle in degrees 
+and converts it to radians. 
+
+40
+00:03:10,550 --> 00:03:14,732
+So I can just put radians 90 degrees, and 
+it will do it all for me. 
+
+41
+00:03:14,732 --> 00:03:17,300
+But if you want to know what radians are, 
+this is it. 
+
+42
+00:03:17,300 --> 00:03:25,065
+So radians work in terms of a circle. 
+And we can think of an angle as cutting 
+
+43
+00:03:25,065 --> 00:03:29,713
+out a chunk of a circle. 
+So, like a, a, a slice of the pie. 
+
+44
+00:03:29,713 --> 00:03:40,304
+now, if we make the circle of radius one. 
+So, each of these two straight edges is 
+
+45
+00:03:40,304 --> 00:03:45,350
+linked one. 
+Then we can measure the angle by taking 
+
+46
+00:03:45,350 --> 00:03:50,225
+the length of the arc, along the way just 
+to be certain, so that's how much of the 
+
+47
+00:03:50,225 --> 00:03:55,970
+edge of the circle is being cut out by my 
+angle. 
+
+48
+00:03:55,970 --> 00:04:00,260
+And that is a perfectly good measure of, 
+of, of angles, and that's what's called 
+
+49
+00:04:00,260 --> 00:04:05,670
+radians. 
+A few things you need to know. 
+
+50
+00:04:05,670 --> 00:04:10,210
+it's useful to know particular angles in 
+radians, if you ever use them. 
+
+51
+00:04:11,700 --> 00:04:16,398
+The, 360 degrees is the entire 
+circumference of the circle, and if you 
+
+52
+00:04:16,398 --> 00:04:21,501
+remember from school maths And the 
+circumference of a circle is two pi times 
+
+53
+00:04:21,501 --> 00:04:27,342
+the radius. 
+Because the radius is 1, the arc length 
+
+54
+00:04:27,342 --> 00:04:34,250
+of 360 degrees is two pi. 
+180 degrees is half that, pi. 
+
+55
+00:04:34,250 --> 00:04:41,100
+And 90 degrees is pi divided by two. 
+So that, that's a useful way. 
+
+56
+00:04:41,100 --> 00:04:42,618
+Thinking about, angles, you can use, put 
+values in terms of pi directly into the 
+
+57
+00:04:42,618 --> 00:04:44,518
+rotate command. 
+But if you're not, if you don't want to 
+
+58
+00:04:44,518 --> 00:04:46,592
+get involved in that, you can also the 
+radians command I just showed you to 
+
+59
+00:04:46,592 --> 00:04:58,770
+convert that to degrees. 
+So what are transforms doing? 
+
+60
+00:04:58,770 --> 00:05:01,726
+I said. 
+That transforms can apply to multiple 
+
+61
+00:05:01,726 --> 00:05:04,320
+objects and they're independent of the 
+objects. 
+
+62
+00:05:04,320 --> 00:05:08,660
+But how does a transform know to actually 
+move an object, if it's a separate 
+
+63
+00:05:08,660 --> 00:05:14,040
+command from do, doing so, drawing a 
+rectangle or an ellipse. 
+
+64
+00:05:14,040 --> 00:05:18,615
+Well what a transform does is in a way 
+not move just the object, but move the 
+
+65
+00:05:18,615 --> 00:05:22,633
+entire coordinate system. 
+Sort of. 
+
+66
+00:05:22,633 --> 00:05:27,190
+The, the screen. 
+What does that mean? 
+
+67
+00:05:27,190 --> 00:05:31,158
+Well I taught, told you a couple weeks 
+ago about how we can represent any point 
+
+68
+00:05:31,158 --> 00:05:37,617
+on screen by an x and a y. 
+How we do that is that we need to know 
+
+69
+00:05:37,617 --> 00:05:41,168
+which direction is x and which direction 
+is y and that's normally horizontal and 
+
+70
+00:05:41,168 --> 00:05:45,080
+vertical. 
+We can change that. 
+
+71
+00:05:45,080 --> 00:05:49,580
+But also, we need a starting point, we 
+need to know where 0, X and 0 Y are and 
+
+72
+00:05:49,580 --> 00:05:56,865
+normally, that is top left of the screen. 
+But what a translation does, is move 
+
+73
+00:05:56,865 --> 00:06:01,470
+that, so that anything after the 
+translate. 
+
+74
+00:06:02,480 --> 00:06:06,480
+The zero-zero point. 
+If I do Translate 20,100, I move my 
+
+75
+00:06:06,480 --> 00:06:14,195
+zero-zero point to 20,100. 
+So, if I draw an ellipse at point say, 
+
+76
+00:06:14,195 --> 00:06:22,320
+20,30, if I've done a transform on that, 
+Then that's 20, 30, relative to the new 
+
+77
+00:06:22,320 --> 00:06:30,938
+zero, zero points. 
+So if I've transformed my 20 100s, it's 
+
+78
+00:06:30,938 --> 00:06:37,739
+20, 30 relative to 20, 100. 
+Which is 20 plus 20, 40, 100 plus 30, 
+
+79
+00:06:37,739 --> 00:06:42,570
+130, relative. 
+To the top left of the screen. 
+
+80
+00:06:42,570 --> 00:06:45,490
+So I'm drawing, changing the way you draw 
+everything. 
+
+81
+00:06:45,490 --> 00:06:49,582
+It changes the meaning of the numbers 
+you're putting into your rect command and 
+
+82
+00:06:49,582 --> 00:06:53,426
+direct command .And what that means is 
+that if you draw both an ellipse and a 
+
+83
+00:06:53,426 --> 00:06:58,128
+rectangle they're both affect the same 
+way. 
+
+84
+00:06:58,128 --> 00:07:02,300
+So you can draw as many shapes as you 
+like. 
+
+85
+00:07:02,300 --> 00:07:06,108
+You can draw really complicated drawings, 
+and then put a translate in front of it, 
+
+86
+00:07:06,108 --> 00:07:14,132
+and they'll all move together. 
+Exactly the same thing with scale, but 
+
+87
+00:07:14,132 --> 00:07:19,894
+this time, rather than changing the 0,0 
+point, you're changing how much one unit 
+
+88
+00:07:19,894 --> 00:07:25,054
+of x or one unit of y means, so If you 
+scale up by two, each one unit you leave 
+
+89
+00:07:25,054 --> 00:07:32,985
+in x counts for double. 
+So each time you move one in x, you're 
+
+90
+00:07:32,985 --> 00:07:41,450
+moving two in the original screen used. 
+And finally the rotation, what that does 
+
+91
+00:07:41,450 --> 00:07:46,190
+is it actually What takes the x and y 
+axis. 
+
+92
+00:07:46,190 --> 00:07:49,690
+So, it changes the direction of x and the 
+direction of y. 
+
+93
+00:07:49,690 --> 00:07:52,514
+So, they're pointing in different 
+directions. 
+
+94
+00:07:52,514 --> 00:07:57,002
+So, if I've done this translation you're 
+seeing on, rotation you're seeing on the 
+
+95
+00:07:57,002 --> 00:08:01,094
+screen then when I move across an x I'm 
+no longer moving Just horizontal and 
+
+96
+00:08:01,094 --> 00:08:08,145
+moving diagonal down the screen. 
+So these transforms are very powerful 
+
+97
+00:08:08,145 --> 00:08:15,470
+because they give you new ways of 
+deforming and changing shapes. 
+
+98
+00:08:15,470 --> 00:08:23,812
+But also because they can apply 
+universally to multiple shapes.  [MUSIC].
+
+99
+00:08:23,812 --> 00:08:29,376
+[MUSIC] 

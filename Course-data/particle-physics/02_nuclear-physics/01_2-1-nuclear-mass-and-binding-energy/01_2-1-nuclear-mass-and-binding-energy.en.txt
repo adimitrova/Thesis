@@ -1,0 +1,98 @@
+[MUSIC] Hello, welcome to the second module of our
+introductory course on Subatomic Physics. During this module, we'll deal with
+nuclear physics and its applications. At the end of the module, we will visit the Tokamak of the Swiss
+Institute of Technology in Lausanne. And the Beznau Nuclear Power Plant which
+is the oldest one still in operation. This is pretty much
+a self-contained module, if your main interest is nuclear physics,
+you will be well-served. You will also notice that it is
+somewhat longer than other modules, so just take your time to digest
+the contents without pressure. In this first video, we will review
+what is known about the mass of nuclei. The goals for you are the following. To know the nomenclature of atomic
+nuclei and their periodic system. And to be able to qualitatively describe
+the mass and binding energy of nuclei. Experiments of the Rutherford type
+demonstrate the existence of a positively charged nucleus, which is four orders of magnitude
+smaller than the size of the atom. These experiments only require
+to understand electromagnetic interactions between the project and
+the target. Scattering experiments can also yield
+information about nuclear properties. And thus establish a catalog of
+the properties of the nuclear interaction that holds together protons and
+neutrons inside the nucleus. One must not confuse this nuclear force
+with the strong force introduced in the first module and more extensively
+discussed in module number five. The strong force binds together quarks
+inside hadrons by gluon exchange. It does not permit quarks
+to leave the hadrons. So hadrons in general and nucleons in particular,
+do not carry a net color charge. Thus gluons cannot bind protons and
+neutrons to form a nucleus. The nuclear force is more like a long
+distance residue of the strong force in that it resembles the well-known
+Van der Waals force, which is a residue of the electromagnetic
+interaction which acts between electrically neutral molecules. Let us compare some basic properties of
+atoms, and the electromagnetic force on one side, to nuclei, and
+the nuclear force on the other side. The electromagnetic force is
+responsible for holding atoms together. Its properties are well known,
+classically, and rather easy to extrapolate
+to quantum distances. The study of atomic spectra indeed
+gave rise to quantum mechanics, which qualitatively and quantitatively explains many phenomena
+of condensed matter physics. The fine structure constant, the electromagnetic coupling
+constant, is a small number. Alpha is about 1/137, which makes
+perturbative calculations feasible. The nuclear force, on the other hand,
+must be much stronger, since it wins over the Coulomb repulsion
+between tightly-packed protons. It must be of short range, since it doesn't make itself
+felt outside the nuclear volume. It has no classical analog. Only experimental results can help
+to understand its properties. One thus uses experiments as
+a guide towards empirical models of the nucleus and of the nuclear force. We will come back to the relation between
+experiments and models as we go along. Let us first summarize how we identify and
+denote nuclei. We denote by Z, the nuclear charge, which is equal to the atomic
+number in the periodic table. Itis given by the number
+of protons in the nucleus. A is the number of nucleons,
+the sum of protons and neutrons, it is also called the mass number. Nuclei are thus completely identified
+by their electric charge and the number of nucleons. The name we give them identifies Z and
+usually is supplemented by A. When we say carbon 14, that means a nucleus with Z=6 and A=14. Evidently, the number of neutrons is then
+the difference between the mass number and the atomic number, and is denoted by N. The chemical properties of the elements
+are determined by the electron cloud surrounding the nucleus. The periodic table is thus
+organized according to Z. Nuclei with the same number of protons,
+but with a different number of neutrons,
+are called isotopes. They have very similar
+chemical properties but not necessarily similar
+nuclear properties. Examples are uranium 235 and
+uranium 238, which have both 92 protons, but a different number of neutrons and
+thus different stability properties. Another example is hydrogen,
+deuterium, and tritium which all have one proton and
+zero, one, or two neutrons. Nuclei can also be
+excited to higher states, keeping the number of protons and
+neutrons constant. These are called resonances or isomers. Nuclei with the same
+number of nucleons but the different number of
+protons are called isobars. They have roughly the same nuclear mass. Examples are carbon 12 and boron 12,
+with both have 12 nucleons. Naively one might assume that the mass
+of nuclei is simply given by the sum of the masses of protons and
+neutrons they contain. But in reality, this mass is, of course, diminished by the binding
+energy between the nucleons. The mass deficit ∆M
+must always be negative so that the nucleus is in a bound state. We call it the binding energy. It has been measured for
+practically all nuclei. The absolute value of the binding energy
+is the energy required to decompose the nucleus into separate nucleons. The binding energy per nucleon,
+∆M/A, is the energy required to separate
+the average nucleon from its nucleus. It is much smaller than
+the mass of a nucleon p and n. The mass of the nucleus is thus indeed
+dominated by the mass of its constituents. For the nucleons themselves
+the situation is very different. The total mass of the quarks inside
+the nucleon is only around 1% of the nucleon mass. It is their binding energy which
+dominates the nucleon mass. When one analyzes the dependance of
+the binding energy, ∆M per nucleon A, on the mass number A one
+notices the following. For A less than 20 on
+the left side of this graph, ∆M/A oscillates but
+rises rapidly with increasing A. For A between 20 and 60, ∆M/A saturates. For A about 60, it has a broad maximum. That is, the iron group formed by nickel,
+iron, and cobalt with about 9 MeV
+per nucleon of binding energy. And then for A larger than 60, the binding
+energy per nucleon decreases slowly. The general mean is about 8 MeV per nucleon. The kinetic energy of nucleons inside
+the nucleus must thus be relatively small. Otherwise, they would not stay bound. The velocities of bound nucleons
+are thus non-relativistic. The binding energy corresponds indeed to a
+wavelength of nucleons inside the nucleus. This wavelength is less than two Fermi of
+the order of the nucleus' size itself. It is thus plausible that the nucleus can
+contain nucleons with the maximum kinetic energy of about 8 MeV. Or a maximum momentum of about 120 Me. If, on the other hand,
+the nucleus would contain electrons, they would be relativistic and
+their wavelength would be 2.5 x 10^-12 centimeters,
+much bigger than the nucleus size. The nucleus can thus not
+contain bound electrons. They need a much larger
+volume to be contained. This is obviously in agreement with
+the findings of Geiger and Marsden, that we have discussed
+in the previous module. In the next video, we will talk about
+the size and the spin of nuclei. [MUSIC]

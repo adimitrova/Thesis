@@ -1,0 +1,623 @@
+1
+00:00:00,511 --> 00:00:04,753
+The problem with this output
+is that it doesn't provide
+
+2
+00:00:04,753 --> 00:00:09,455
+a very good summary of what
+values the language fields holds.
+
+3
+00:00:09,455 --> 00:00:14,652
+Using this movies data might require
+a deeper understanding of say,
+
+4
+00:00:14,652 --> 00:00:17,438
+how the languages are distributed.
+
+5
+00:00:17,438 --> 00:00:22,155
+In general understanding
+the distribution of data in a field is
+
+6
+00:00:22,155 --> 00:00:24,915
+valuable as part of any ETL process.
+
+7
+00:00:24,915 --> 00:00:27,068
+This is one example of an ETL problem and
+
+8
+00:00:27,068 --> 00:00:29,743
+my objective is really just
+to give you a taste for
+
+9
+00:00:29,743 --> 00:00:34,262
+whats possible with the aggregation
+framework as we begin this specialization.
+
+10
+00:00:34,262 --> 00:00:39,203
+We have quite a few fundamentals to get
+through in the is course as you ramp
+
+11
+00:00:39,203 --> 00:00:42,848
+up on the MongoDB ecosystem and
+In the second course,
+
+12
+00:00:42,848 --> 00:00:46,424
+we'll do a deep dive on
+the aggregation framework.
+
+13
+00:00:46,424 --> 00:00:48,093
+Returning to this example,
+
+14
+00:00:48,093 --> 00:00:52,413
+let's generate a better summary of
+the distribution values this field.
+
+15
+00:00:52,413 --> 00:00:56,242
+Essentially, I want to see
+specifically what language
+
+16
+00:00:56,242 --> 00:00:59,906
+combinations are heavily used and
+just get a sense For
+
+17
+00:00:59,906 --> 00:01:04,072
+how man unique language
+combinations we're dealing with.
+
+18
+00:01:04,072 --> 00:01:06,512
+I want two different types
+of summary information.
+
+19
+00:01:06,512 --> 00:01:09,460
+One has details on specific
+language combinations,
+
+20
+00:01:09,460 --> 00:01:11,760
+the other just provides some raw counts.
+
+21
+00:01:11,760 --> 00:01:13,495
+I can do this in Python.
+
+22
+00:01:13,495 --> 00:01:16,205
+But it would require me to write
+a couple dozen lines of code and
+
+23
+00:01:16,205 --> 00:01:19,696
+would be a little slow because I'd need
+to process all the documents in my script
+
+24
+00:01:19,696 --> 00:01:21,330
+rather than in the database server.
+
+25
+00:01:21,330 --> 00:01:25,706
+The challenge doing these two types of
+analysis simultaneously presents to
+
+26
+00:01:25,706 --> 00:01:30,421
+the aggregation framework, is that with
+the pipeline I can really only process,
+
+27
+00:01:30,421 --> 00:01:32,220
+the documents to one outcome.
+
+28
+00:01:32,220 --> 00:01:36,795
+Again, this type of situation frequently
+arises, so the aggregation framework
+
+29
+00:01:36,795 --> 00:01:40,444
+actually does support running
+multiple pipelines in parallel,
+
+30
+00:01:40,444 --> 00:01:42,650
+with the use of the dollar facet stage.
+
+31
+00:01:42,650 --> 00:01:47,607
+Let's use a dollar facet stage to provide
+both types of summary information I want.
+
+32
+00:01:47,607 --> 00:01:53,080
+Again remember, I want details on
+specific language combinations and
+
+33
+00:01:53,080 --> 00:01:56,920
+just some raw counts on
+unusual accommodations.
+
+34
+00:01:56,920 --> 00:02:01,256
+$facet enables you to define multiple
+pipelines through which to process
+
+35
+00:02:01,256 --> 00:02:02,850
+the same input documents.
+
+36
+00:02:02,850 --> 00:02:07,103
+The output for
+each pipeline is omitted as the value of
+
+37
+00:02:07,103 --> 00:02:11,180
+the key you specify in
+the facet stage definition.
+
+38
+00:02:11,180 --> 00:02:16,592
+Here, I'm using $facet
+to define two pipelines.
+
+39
+00:02:16,592 --> 00:02:20,685
+Note that I'm defining two fields,
+
+40
+00:02:20,685 --> 00:02:25,843
+each has as its value,
+an array here and here.
+
+41
+00:02:25,843 --> 00:02:30,544
+Each one of these arrays defines
+a separate pipeline that will be
+
+42
+00:02:30,544 --> 00:02:32,380
+processed in parallel.
+
+43
+00:02:32,380 --> 00:02:37,159
+And the result of running each
+pipeline will be stored as
+
+44
+00:02:37,159 --> 00:02:42,460
+the value of these keys in
+the output from this $facet stage.
+
+45
+00:02:42,460 --> 00:02:46,347
+These pipelines function just
+like a top level pipeline.
+
+46
+00:02:46,347 --> 00:02:50,323
+In this case both pipelines will
+receive as input the stream of
+
+47
+00:02:50,323 --> 00:02:54,690
+documents admitted by the sort by
+count stage in the main pipeline.
+
+48
+00:02:54,690 --> 00:02:59,448
+I've defined one pipeline and
+labeled it top language combinations.
+
+49
+00:02:59,448 --> 00:03:03,276
+The output of this pipeline would
+be admitted as the value for
+
+50
+00:03:03,276 --> 00:03:06,740
+a key with the same name,
+top language combinations.
+
+51
+00:03:06,740 --> 00:03:11,481
+This pipeline will simply take the input
+it receives from the sort by count
+
+52
+00:03:11,481 --> 00:03:14,700
+stage and
+limit it to the first 100 documents.
+
+53
+00:03:14,700 --> 00:03:19,626
+To do this, I'm using a pipeline
+stage you've not seen yet
+
+54
+00:03:19,626 --> 00:03:22,691
+but it's pretty straight forward.
+
+55
+00:03:22,691 --> 00:03:28,235
+Just specify an integer as the value and
+the $limit stage will take it's input and
+
+56
+00:03:28,235 --> 00:03:33,955
+pass those documents along as output until
+it reaches the limit you've specified.
+
+57
+00:03:33,955 --> 00:03:36,460
+Once the limit is reached, it stops.
+
+58
+00:03:36,460 --> 00:03:41,233
+The second pipeline uses two stages,
+$skip and $buckatAuto.
+
+59
+00:03:41,233 --> 00:03:45,349
+Skip, like limit,
+is defined by specifying an integer.
+
+60
+00:03:45,349 --> 00:03:47,870
+And I see that I've actually
+got a mistake in my code here.
+
+61
+00:03:47,870 --> 00:03:53,039
+Because what I really want to do is skip
+all of those top language combinations
+
+62
+00:03:53,039 --> 00:03:58,950
+in this pipeline, because I'm considering
+all of those to be unusual combinations.
+
+63
+00:03:58,950 --> 00:04:03,613
+So I don't want 25 here, I want 100,
+because I'm considering the first 100 to
+
+64
+00:04:03,613 --> 00:04:07,973
+be top language combinations, and for
+those, I'm simply calculating counts.
+
+65
+00:04:07,973 --> 00:04:10,050
+So let me go ahead and fix this.
+
+66
+00:04:10,050 --> 00:04:14,804
+And then, what I'm doing here
+will again take that output
+
+67
+00:04:14,804 --> 00:04:19,463
+from the SortByCount stage,
+skip the first 100, and
+
+68
+00:04:19,463 --> 00:04:24,511
+then pass the remainder documents
+through to the second stage
+
+69
+00:04:24,511 --> 00:04:29,681
+in the pipeline I'm defining here for
+unusual combinations.
+
+70
+00:04:29,681 --> 00:04:34,232
+Now $skip like $limit,
+Is defined by specifying an integer.
+
+71
+00:04:34,232 --> 00:04:39,066
+It simply ignores the number of input
+documents you specified that it
+
+72
+00:04:39,066 --> 00:04:40,074
+should skip.
+
+73
+00:04:40,074 --> 00:04:44,186
+Once a number of documents equal to
+the skip value has passed through a skip
+
+74
+00:04:44,186 --> 00:04:47,586
+stage, it will pass any additional
+documents on as output.
+
+75
+00:04:47,586 --> 00:04:51,604
+$bucketAuto is the second stage.
+
+76
+00:04:51,604 --> 00:04:54,490
+It's very similar to
+the group stage except,
+
+77
+00:04:54,490 --> 00:04:59,819
+it automatically defines a list of buckets
+into which it will group input documents.
+
+78
+00:04:59,819 --> 00:05:04,944
+The buckets are defined by the value
+you specify for the groupBy key.
+
+79
+00:05:04,944 --> 00:05:10,325
+Here we're using a value of $count
+as our value around which to group.
+
+80
+00:05:10,325 --> 00:05:14,464
+However, rather than create
+groups based on the single value,
+
+81
+00:05:14,464 --> 00:05:18,452
+bucket auto will automatically
+define ranges of values, and
+
+82
+00:05:18,452 --> 00:05:22,689
+group all documents that fall
+within that range into the bucket.
+
+83
+00:05:22,689 --> 00:05:27,970
+We specify a cap on the number
+of buckets that will be created
+
+84
+00:05:27,970 --> 00:05:32,522
+using the buckets key for
+the $bucketAuto stage.
+
+85
+00:05:32,522 --> 00:05:36,770
+Here we're asking bucketAuto to
+create five or fewer buckets.
+
+86
+00:05:36,770 --> 00:05:42,268
+For each bucket, it will output the value
+we specified for the output key.
+
+87
+00:05:42,268 --> 00:05:46,707
+Here I'm saying that I want the value
+of each bucket to be a document
+
+88
+00:05:46,707 --> 00:05:48,623
+containing a single field.
+
+89
+00:05:48,623 --> 00:05:52,837
+The name of the field should
+be language combinations, and
+
+90
+00:05:52,837 --> 00:05:58,327
+its value should be the count of the
+number of documents added to this bucket.
+
+91
+00:05:58,327 --> 00:06:03,352
+As we did with $group earlier we're
+simply using the $sum operator
+
+92
+00:06:03,352 --> 00:06:08,389
+to add one to a running count for
+every document added to this bucket.
+
+93
+00:06:08,389 --> 00:06:13,055
+Since the output of the sortByCount stage
+in the main pipeline is a stream of
+
+94
+00:06:13,055 --> 00:06:18,019
+documents that captures the number of
+movies that use a particular combination
+
+95
+00:06:18,019 --> 00:06:18,996
+of languages.
+
+96
+00:06:18,996 --> 00:06:23,939
+The output of the unusual combinations
+shared by pipeline will be a count of
+
+97
+00:06:23,939 --> 00:06:28,726
+the number of movies that share their
+particular language combinations
+
+98
+00:06:28,726 --> 00:06:32,266
+with only a relatively small
+number of other movies.
+
+99
+00:06:32,266 --> 00:06:34,965
+Those that share their
+combination with only two or
+
+100
+00:06:34,965 --> 00:06:38,230
+three other movies might be
+grouped together, for example,
+
+101
+00:06:38,230 --> 00:06:42,328
+depending on the distribution bucketAuto
+sees and what buckets it creates.
+
+102
+00:06:42,328 --> 00:06:44,754
+So let's go ahead and run this.
+
+103
+00:06:44,754 --> 00:06:49,189
+In the output, we see that, indeed, for
+top language combinations we have a list
+
+104
+00:06:49,189 --> 00:06:53,371
+of documents that specify the most
+frequently used language combinations as
+
+105
+00:06:53,371 --> 00:06:56,998
+the number of movies in our
+collection that use that combination.
+
+106
+00:06:56,998 --> 00:07:02,027
+So 25,000 for
+English down to 16 movies that use
+
+107
+00:07:02,027 --> 00:07:06,738
+a combination of English,
+Italian, and Spanish.
+
+108
+00:07:06,738 --> 00:07:11,294
+A couple of other things to note here, are
+that not surprisingly a small number of
+
+109
+00:07:11,294 --> 00:07:14,782
+language combinations dominate
+the dataset here at the top.
+
+110
+00:07:14,782 --> 00:07:19,098
+One other thing to note here,
+is that it's significant number of
+
+111
+00:07:19,098 --> 00:07:23,896
+documents in this collection do not
+specify a value for language at all.
+
+112
+00:07:23,896 --> 00:07:28,586
+That's why we see this empty string
+as one of the keys in our output,
+
+113
+00:07:28,586 --> 00:07:32,801
+more than 1,000 documents
+have no value for language.
+
+114
+00:07:32,801 --> 00:07:39,019
+As we scroll down and look at the output
+for unusual combinations shared by,
+
+115
+00:07:39,019 --> 00:07:44,268
+first let me explain that bucketAuto
+specifies ranges such that
+
+116
+00:07:44,268 --> 00:07:50,606
+the minimum value is included in the range
+but the maximum value is excluded.
+
+117
+00:07:50,606 --> 00:07:54,124
+So for the second bucket, for example,
+
+118
+00:07:54,124 --> 00:07:58,263
+we'll have all movies for
+which at least two but
+
+119
+00:07:58,263 --> 00:08:03,556
+no more than five movies use
+the same language combination.
+
+120
+00:08:03,556 --> 00:08:08,874
+In this first bucket here, we see that
+there's a large number of movies.
+
+121
+00:08:08,874 --> 00:08:12,628
+The use of language combination
+that no other movie does.
+
+122
+00:08:12,628 --> 00:08:16,236
+Nearly 1900 that use a unique
+language combination.
+
+123
+00:08:16,236 --> 00:08:21,128
+So as $facet, we can see how we
+can perform two types of analysis
+
+124
+00:08:21,128 --> 00:08:24,852
+simultaneously with
+an aggregation pipeline.
+
+125
+00:08:24,852 --> 00:08:27,060
+And we've really just seen
+the tip of the iceberg.
+
+126
+00:08:27,060 --> 00:08:31,028
+But this at least gives you a glimpse of
+how easy it is to perform some pretty
+
+127
+00:08:31,028 --> 00:08:35,255
+complex exploratory analysis of data
+sets using the aggregation framework.
+
+128
+00:08:35,255 --> 00:08:37,825
+Again, we'll dive into
+some deep data science,
+
+129
+00:08:37,825 --> 00:08:41,750
+using the aggregation framework in
+a second course in the specialization.

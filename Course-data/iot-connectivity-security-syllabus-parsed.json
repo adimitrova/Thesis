@@ -1,0 +1,835 @@
+[
+    [
+        "introduction-to-web-connectivity-security",
+        [
+            [
+                "1-0-introduction",
+                [
+                    [
+                        "introduction",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/uWGlAYPxEead-BJkoDOYOw.processed/full/540p/index.mp4?Expires=1516233600&Signature=hOiAGVAMqYDb-UlstPuRyXxgUP8N3ERuInrguVp-deYO1Tydw-pVxRxtnSnDMpduuga7nWcqrHHk4ZWF7Fzt4TxJB1A4dJYuL5Zohm6~0qJZN4F0tH-FXaGeMNJ~SHNqcWM4R82bGpnOtwsfAQNlje1LOCe8dHFh~IhuFp9vSik_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Pd1Y2QNcSQudWNkDXGkLqQ?expiry=1516233600000&hmac=eG4SvyoKsn4eLFAnYaVJ0DOKq8yvpeoUe0n2XSkTalY&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Pd1Y2QNcSQudWNkDXGkLqQ?expiry=1516233600000&hmac=CSPh7zr_mhP-1a93Yrmy1gKZkyTthSCh8xywznLm4CY&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "1-1-introduction-to-cps-web-connectivity",
+                [
+                    [
+                        "introduction-to-cps-web-connectivity",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/hYQW6oO-Eeam4BLcQYZr8Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=PxxWfM9rMGW0QVm-HYY7fV-GaBK8PJU2OtRA6xPC06iIZFdRvZyOWr0DC~A8Iu0pQOPVj91oM290HWbr5KODTNzbPeof1LA-HXyXEgnIjwohuhqNbP5mTu9kRTAb2imL80nZBx6i03TjFhQU7wWFF2dYBOGvo5NYKmqE2HIJuLw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/rqcfJavBQKunHyWrwVCr1A?expiry=1516233600000&hmac=uUzIgY40Vl_hlOSGVlxetrWMkLwec8vK8c8bLkCiuyg&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/rqcfJavBQKunHyWrwVCr1A?expiry=1516233600000&hmac=3tWRT4dHnoeMn7aanBMZRh9fKVrQmRg7xFnDREC750c&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "1-2-introduction-to-web-connectivity",
+                [
+                    [
+                        "introduction-to-web-connectivity",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/jKLmoO-EeaNlA6zo4Pi2Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=AQj1tJaOojKNdzEaNjbrv-lfvBeb725YxaxXgLPAcHoczR4ACuwjtbcAolrQsQqAJdAURp3mo6vEY4sXz9VEhsYhx1Jo51dDX2DPlTlebz78nCxOY-theFrJpjjzKSSZrIU6LoPvFimf-JmP27tRu8mce0Z045yxlG3A6JYqgng_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/m1S6Nwo1TtGUujcKNQ7Reg?expiry=1516233600000&hmac=vprUIKqiaz2DglmbK83PqMi_IwOgyYhVyrEE9gkyWzg&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/m1S6Nwo1TtGUujcKNQ7Reg?expiry=1516233600000&hmac=B0tBE7_NTZnFdZhY9qoPFoNFcIP7eVyNeBgcGcPyHzQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "1-3-application-layer-protocols",
+                [
+                    [
+                        "application-layer-protocols",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/eEV6boO_EeaNlA6zo4Pi2Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=C7woWD-ZwsVTDngurtsyVeVSY09jV1dXrR--5vT1geyI72bcW~GcDvN4SQt185TtQ5T5q~nOPljvV9xiYgzJClp~BlO9Nb9cLaCEY8IYrhPpthdY995YjjrUkTkrLwvQlwJhWMC2dQHNvck2vNdc~xwQKoNS~gUudN2A3Ca1EOA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/yUWMUTVjQwOFjFE1Y-MDfw?expiry=1516233600000&hmac=3ruYipvkJB73mtsktGFK6md2jpXHXGFEM8cPp98TN-Y&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/yUWMUTVjQwOFjFE1Y-MDfw?expiry=1516233600000&hmac=ajB2h9d3lvKZZEtoTbXbORBSuuCRapWsdwYzitTc8Xo&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "1-4-transport-layer-protocols",
+                [
+                    [
+                        "transport-layer-protocols",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/VBm5HoPAEeaTyQp_BD0w6w.processed/full/540p/index.mp4?Expires=1516233600&Signature=Qqr97hql~4XlqANczX9nqE7~iiOTwsDbPgeCoyAGclDSg1Tdo~uuWYHZ~vMHEGQVssnRnMZV6z5axFtIMB~nFiJKfGqad5zKwzu3D2FwCdhx9lEPHJnmys0C96UvAHfSEWtYW3fD3~51U-UXDrpZNvzw3-TL0kwo2m3Xu9oTaMY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/gjJaZkgATxayWmZIAO8WCw?expiry=1516233600000&hmac=Ki9syRrhGq6cjEOZndKuJFYyRz1ws9xN2tPG4-77tT4&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/gjJaZkgATxayWmZIAO8WCw?expiry=1516233600000&hmac=O4ch1lDOUMXXeQgFgRtz8jHc012Ajtyz0oVhekyqsWQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "1-5-internet-link-layer-protocols",
+                [
+                    [
+                        "internet-link-layer-protocols",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/3P3RSYPAEeamDApmnD43Fw.processed/full/540p/index.mp4?Expires=1516233600&Signature=MKJQY29iEJzyN-PMX8EkVA09zFG~0FAnVU5Oecz-M72yAVy7pO3MY3ktT2Th~Fl9OW6M~MEqjO5RFdKbZRV69~LbfLoG8bmZ2PeOqb9GYJLbuSKlVrmxLTzZgkdc0blKX9iisUmmDN7Zv8~iq4AAn79bBTbGEGk9GkENHaN12Yk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/7fyEzdA5Tbq8hM3QOa267Q?expiry=1516233600000&hmac=nbLf-C0UHYkGBecTl4QEjn8WkIC7wLICulB4sgJ5r9Q&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/7fyEzdA5Tbq8hM3QOa267Q?expiry=1516233600000&hmac=6w4HYWS8W2h7zKePl3eF5ryia37pJujCt2efzKA5FQc&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "quiz",
+                [
+                    [
+                        "introduction-to-web-connectivity-security-graded-quiz",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<h3>\n Question 1\n</h3>\n<co-content>\n <p>\n  What benefits do we get from enabling Web Connectivity in our Cyber Physical systems? (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Future Proofing: Cloud Computing and related technologies mean that in the future everything will be Web-based.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Security: We can use mature web technologies to protect our systems, like firewalls and intrusion detection systems.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Easy accessibility:  The Web is accessible from almost anywhere.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Cross-Platform: Web technologies can communicate irrespective of the underlying embedded system you\u2019re using.\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 2\n</h3>\n<co-content>\n <p>\n  What is part of the Internet? (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    A world-wide network of computers and networks.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    A way for you to access the Web.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    A solution to all your connectivity problems.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    A collection of web-pages and websites.\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 3\n</h3>\n<co-content>\n <p>\n  How many layers does the TCP/IP Protocol Stack have?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Four.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Three, because the Link Layer is part of the system hardware.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Three, as the Application Layer is not fundamental.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Three, because the Internet Layer is actually part of the Internet and not of the TCP/IP Stack.\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 4\n</h3>\n<co-content>\n <p>\n  Which of the following are Application Layer Protocols? (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    TCP\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    XMPP\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    ARP\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    HTTP\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 5\n</h3>\n<co-content>\n <p>\n  Which layer of TCP/IP is responsible for communication establishment between hosts?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Link Layer\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Application Layer\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Transport Layer\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Internet Layer\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 6\n</h3>\n<co-content>\n <p>\n  UDP is considered faster than TCP, why?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    The only reason UDP is faster than TCP is because it offers no congestion-control.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Because TCP is an old protocol and not suited for current systems and network needs.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Because UDP is simpler compared to TCP and offers no connection-orientation or handshakes.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Because UDP offers reliable communication it can handle network resources better.\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "exam"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "m2m-connectivity-protocols",
+        [
+            [
+                "2-1-m2m-connectivity-protocols",
+                [
+                    [
+                        "m2m-connectivity-protocols",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/RVVJzIPCEeaTyQp_BD0w6w.processed/full/540p/index.mp4?Expires=1516233600&Signature=EC8DGZgMaV21fXQH22lBEdLJa2EYCgqhX2x5xFYdhmPDfzEIRxNIEm~TVdB1Zs9UL~ZKr1gUb~~4djadMoe48wo8tLfP8CDDsXZavjYnlpkZJG13Frp0sc6uUPVk8vbZ6~ZN7N1FFqghi0WzBL8h2C1rq0sWIcfHcdQwqvJAWWY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/i237EoeBS3yt-xKHgZt8BQ?expiry=1516233600000&hmac=43wGoPq2yKSVOQhsQHiXE96byxQntDbTI5FrP_nfa88&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/i237EoeBS3yt-xKHgZt8BQ?expiry=1516233600000&hmac=SNVTXu0WDROS9CqF9T7uLNBZHLl8LScVQ1LPflxaxDc&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "2-2-connectivity-protocols",
+                [
+                    [
+                        "connectivity-protocols",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/PqmhA4PMEead-BJkoDOYOw.processed/full/540p/index.mp4?Expires=1516233600&Signature=eYQX~mDd81ZG4PGmXyrGSIINjaAlKWiw-PDON0taS~J9QpHAPMODXcvOZyP9OD87gdOts-v9Q~TjzWyMYoE90a2ZEHI88fwnwIeGHwIdC3fZ34ubehjkqVLORf3-49u7YCVZMhdQX9QdKtF~PJX4Qo75P3LIEbLuDT6JirLC~ms_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Rj_vsKH9TsK_77Ch_Y7CCQ?expiry=1516233600000&hmac=eYQUE2H3XDJdwReVcaAS_gjGWIyJkJTmuH4DTpMnmeI&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Rj_vsKH9TsK_77Ch_Y7CCQ?expiry=1516233600000&hmac=tKqG40rOUwMyxTW_Rg0x684C545eVlTslKH06az-Ct0&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "2-3-m2m-communication-protocols",
+                [
+                    [
+                        "m2m-communication-protocols",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/OqG4ZIPNEeaxYA6oVw19Xw.processed/full/540p/index.mp4?Expires=1516233600&Signature=UKS2rVbiUcjW0zfVTHwt7gOPnCs0bJNfBNfbR53JevViosH9kZpSuLX~-JHMPDf18KdQ2-EXRS33l2VpDCPOxjDh3qYVp6n2Ta-LWhHq0ngyIhgEMzt0PnBvrQs65vfmeF1OabEkotYTp164y31~5onzvbF2R0PCHW5zJvpy0V8_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/6_nziXpHQRu584l6R5Ebpw?expiry=1516233600000&hmac=qaa-eX2yBVlRL6UukSR47eLmbXJMDyXZ8AOoVp6ZV68&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/6_nziXpHQRu584l6R5Ebpw?expiry=1516233600000&hmac=_pHT4uw1-lDbcwtdMkF2rJwJ9Lk5FXllDEKDyoL-ltc&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "2-4-connectivity-protocol-use-cases",
+                [
+                    [
+                        "connectivity-protocol-users",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/m84R_YPtEead-BJkoDOYOw.processed/full/540p/index.mp4?Expires=1516233600&Signature=EDrj4Mszc2vn2oB10tcUGN8uWm96AYLVYObndnl2houwjRW1a5RqdKrqBdK5A744-EEmeT0MHkZQZQQoDWFDl5bF5l0cetljC3y5kwslWXP4QOftu4A~gA6De~Idx12DrjVuBQ6bgU5MIYoRZucUDezGGJqZKabmw9QXhI-MpJw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/2EFgkcu2SPqBYJHLtnj6Lg?expiry=1516233600000&hmac=zSho3ucKz6nkcOrK94zAZy8WfDpGSZ8QMyniGdhm6FI&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/2EFgkcu2SPqBYJHLtnj6Lg?expiry=1516233600000&hmac=eWeLZ4rfZ8vIhPCL2hOdZRtODqt-FYtavEtGNIObcuI&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "2-5-choosing-the-right-m2m-communication-protocol",
+                [
+                    [
+                        "choosing-the-right-m2m-communication-protocol",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/P09CPIPvEeamDApmnD43Fw.processed/full/540p/index.mp4?Expires=1516233600&Signature=SBd6qMlF3hwl8rJsHObMHOIR3npKEi4KZbYY9wU-1n2XTZeFQAKzKAmCgrhHIzEqtMXEA6Oz8uZeIwTPsycDBZx7KuAp6PBCdULyaX~SUY7Y87D64T-TjEyxLNiH-Un9VBx3JUKhDuKvuaMpGRUBKDa3aMyb0NWKIIY2SGPcrio_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/quXjGp19Q_al4xqdfcP2VQ?expiry=1516233600000&hmac=eD6ep0aQOUHPvBQ2bHxTKHjdkeF-so0PRjs3vcKAtfA&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/quXjGp19Q_al4xqdfcP2VQ?expiry=1516233600000&hmac=QHPcUhAfeR1PrhOdLOVKbRXF_8cnmm3a24nqmr1KOIc&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "quiz",
+                [
+                    [
+                        "m2m-connectivity-protocols-graded-quiz",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<h3>\n Question 1\n</h3>\n<co-content>\n <p>\n  Which of the following categories of protocols generally have higher power requirements? (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Wired\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Low Data Rate\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Low Data Rate but Long Range\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    High Data Rate\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 2\n</h3>\n<co-content>\n <p>\n  Which of the following radio frequency bands are free to use? (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    5.8 GHz\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    13.56MHz (NFC)\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    2.4 GHz\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    900 MHz &amp; 1800 MHz\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 3\n</h3>\n<co-content>\n <p>\n  Which of the following technologies offers the lowest power consumption for an end node?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    NFC\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Bluetooth\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    ZigBee\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Bluetooth Low Energy\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 4\n</h3>\n<co-content>\n <p>\n  Which of the following Communication Protocols does\n  <strong>\n   not\n  </strong>\n  rely on TCP?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    MQTT\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    CoAP\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    HTTP\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    XMPP\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 5\n</h3>\n<co-content>\n <p>\n  If you had to choose a Communication Protocol based on widespread usage in general, which one will you choose?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    MQTT\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    CoAP\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    DDS\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    HTTP\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 6\n</h3>\n<co-content>\n <p>\n  You are an Embedded Systems engineer and a Web Developer offers to collaborate with you on an internet connected smart door alarm, you want long battery life and performance for the door alarm but the web developer requires easy integration to the back-end web/cloud systems. Which protocol will be the best choice in this case?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    HTTP\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    MQTT\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    CoAP\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    XMPP\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "exam"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "web-connectivity",
+        [
+            [
+                "3-1-embeddable-web-servers",
+                [
+                    [
+                        "embeddable-webservers",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/E5kixAvDEeaH8A5fACH5-Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=dDd9afPmWVyz54meycOa75ej6vGRPjNhvO9x227CiHmX8Ud9n-iFK2i9f9GIkc2Qy0zvMCkwPOuYQ-GRz8fXy2yCBcuKtgMDOUOq2mPUQlVk1Krj3vkz2VzCj-5PbBPteJL4hJDXUYb8AQiqCSBuRhApAWE~0qkQ~MdWuP6I3sI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/bsK6aE6TTOKCumhOk5zi5Q?expiry=1516233600000&hmac=uiYQHF9-kZ3AdnWUPahqVxUwPmqW3DHMYnTEAQCWpD8&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/bsK6aE6TTOKCumhOk5zi5Q?expiry=1516233600000&hmac=jVUd2VqQRBwXfhos76Ipq8rnAqETBakY4RGiZaB_JZs&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "3-2-web-services",
+                [
+                    [
+                        "web-services",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/r52Iu4PNEeaNlA6zo4Pi2Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=WGbH1xLSiHNnexaOSkoM4fPIJGktO10EDgoskgqlhF9DjStYDxZT7nfHXqVUFzUpE-Vvk0Xa5GHoqD6ilSfF-qa0KXmkyyJwQoTkn3wh4Xk0UiokPtaUcVLEQKyGYkVTWogr4N7Ul9zCTcyImkOHwhP7opaA5y41iATm4m7R9dY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/bkUKdgKJSuyFCnYCiUrs2w?expiry=1516233600000&hmac=6sDJOWbCHNSeH75fouonuCYqPqFKbniuVGqmKm-_LC4&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/bkUKdgKJSuyFCnYCiUrs2w?expiry=1516233600000&hmac=GB45IiWKYo8h6yJnbdDnQUKUI0K9NZdqrqU30NxBaIM&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "3-3-how-to-rest",
+                [
+                    [
+                        "how-to-rest",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/8QdKuYPNEeaTyQp_BD0w6w.processed/full/540p/index.mp4?Expires=1516233600&Signature=Sx33-FMHvds9Exmu4ksgvMIzVcrGd4-xNaOzoG2bBl8702S7OzUkN4EVoWksGgW9q93VVdRT8CztYYXOX1N1NUO4fuuwl9cX61RIkUWz8-TuKWW-VI09YtMZUbJSq3ft-bN0f4BJyYOJMItzM4kAYsa7nCllVbfkP9mQ8txYlDo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/tNj6xF4GQBSY-sReBnAUsQ?expiry=1516233600000&hmac=Kt8okYAHScPS0HgNxU25cIoTD-3Dr-ejxJX9FtROy6I&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/tNj6xF4GQBSY-sReBnAUsQ?expiry=1516233600000&hmac=Xe1F2QRqCoJgyz7-YDDxtlLkkeBoL4DwiuBy2ZPsOes&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "3-4-cloud-and-cyber-physical-systems",
+                [
+                    [
+                        "cloud-and-cyber-physical-systems",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/OJ3crIPOEeaxYA6oVw19Xw.processed/full/540p/index.mp4?Expires=1516233600&Signature=j5HGNV2zSaekbCrt-YJJr56EB0pvgZwgleCYlyB4QKU~SpCy9iOzUvq5VBMbPh6Vgo0TSOH-iX5f6m2poStc2JnadTv84armQ6wZh61eu577S0igIMARZTaZVxNTyJIgFRzIisiz2ZgVv6bTBkFVSsEnFWY533ozaaPyKW8JOAM_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Z953ZwpNQweed2cKTYMHvA?expiry=1516233600000&hmac=vaO_xhLNdODuz9kWIuSyN19zNMZ2FzUX1wIUFuT2Ee0&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Z953ZwpNQweed2cKTYMHvA?expiry=1516233600000&hmac=CNa-iNrbttoUi1q9pSZIgLCV7yWaNu2g03kEqTwxSIQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "3-5-fog-computing",
+                [
+                    [
+                        "fog-computing",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/8Vg_bIPPEeazqQoyai5dlw.processed/full/540p/index.mp4?Expires=1516233600&Signature=A0aQzfPNc8asCW6-UJZjcEviJYg90TG9VHExKihocMJ5v6KD3EzpwftVabT~ldYUdn0zh5jIM32ESYSw8C2PAtXKrIlNNqXyYmnpA~ViO6vMksmFL1boVKchQ~8szYSvNqHKBne5a1RxnDetmQ1966af4IsW60v3QudwaLcOxls_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/QjmiQOSkS5a5okDkpAuW8w?expiry=1516233600000&hmac=QUdWE-EpYovj9oHvqYILy5Akghv9ccuWnHNLRmkNcqQ&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/QjmiQOSkS5a5okDkpAuW8w?expiry=1516233600000&hmac=ovTQVOtUq5eEk24hLPOLYCwF_q9auEbbKRbZbNvoCbY&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "quiz",
+                [
+                    [
+                        "web-connectivity-graded-quiz",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<h3>\n Question 1\n</h3>\n<co-content>\n <p>\n  An application that reads and responds to HTTP requests from a user is commonly known as?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"0\" type=\"radio\"/>\n  <co-content>\n   <span>\n    HTML Parser\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Web Server\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Web Browser\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"radio\"/>\n  <co-content>\n   <span>\n    HTTP Parsers\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 2\n</h3>\n<co-content>\n <p>\n  Which of the following is\n  <strong>\n   false\n  </strong>\n  about REST? (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    REST borrows access methods from HTTP.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    REST maintains the state of the connection for future reuse.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    REST is a protocol, like SOAP.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    URIs are fundamental to REST.\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 3\n</h3>\n<co-content>\n <p>\n  Which HTTP Method should be used when creating a new resource on the server?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    GET\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    PUT\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    POST\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    DELETE\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 4\n</h3>\n<co-content>\n <p>\n  Building a RESTful Web Service is a suitable method for enabling web-access to Cyber Physical Systems, because? (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    REST is stateless, which makes it more power/memory efficient.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    It\u2019s the industry standard for such a purpose.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    REST offers easy mapping of Sensors as REST Services.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    RESTful APIs are secure by design.\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 5\n</h3>\n<co-content>\n <p>\n  A cloud platform that helps you control your sensors and devices, ideally should offer which of the following features: (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Wide support for sensor systems and devices.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Wide support for communication protocols.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Remote management and control of the sensors.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    None of above\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 6\n</h3>\n<co-content>\n <p>\n  What does CRUD operations stand for?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Common, Resilient, Uninterrupted, Definitive.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Create, Release, Unify, Destroy.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Create, Read, Update, Delete.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Consistent, Reliable, Universal, Dependable.\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "exam"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "cps-security-and-privacy",
+        [
+            [
+                "4-1-introduction-to-cps-security-and-privacy",
+                [
+                    [
+                        "introduction-to-cps-security-and-privacy",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/J9uPvYP3EeaNlA6zo4Pi2Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=QOtHmgzVt7Yxw18lENRj5C~Smw~wH-3WqdbpMuQbhQet6HqV3deJFnNuVS5J95TsJixmSo5LcYpx8YCOPVaTQd0zbhIa40iZkii4-k07aduQXYzaplWQTr5A36C9HIeeeMwYudO2nwYr0ogSfdtwD7FwEegF7KcPcUNOQi-NLQw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/O7ByEwhqSnywchMIaqp8kQ?expiry=1516233600000&hmac=BEUz5oyOwDNr5NPBwQZgWdQlsoPfIuidItNkS9ZcMV0&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/O7ByEwhqSnywchMIaqp8kQ?expiry=1516233600000&hmac=BlSckRueA-kUjaKPEp3dakywgjLNjjuP829K54IO1C4&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "4-2-key-concepts-in-cyber-physical-systems-security",
+                [
+                    [
+                        "key-concepts-in-cyber-physical-systems",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/_KuK6YP3EeaQkhKk4jYr6Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=j5BJdxxZLgc-jFfmb~B00BVg6mUuABjhvGcNsZ~Xv5nylm6BKvcWyCyP6DntjCNkq86VNrpP7BmsKF8jrnX~e2Sw--IOhcOxp6NGM7V4ODQGmT~lHTn8exrPVkMAaR6E6eLj7LFYbOaJYPjzoaMThyWueW7X7Vlqwrwbm2hvpOs_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/f8bqFNi8TfCG6hTYvA3wBw?expiry=1516233600000&hmac=l1jKkzBdvpzPrfuxTaH84pelHOdo6DaQjAi5DngzJe8&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/f8bqFNi8TfCG6hTYvA3wBw?expiry=1516233600000&hmac=PvGfbLJ0tZKGvy2HxEyLtRyV6MSrP2B6AozFvWIl4tY&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "4-3-attack-models-for-cps",
+                [
+                    [
+                        "attack-models-for-cps",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/aHXhRIP5Eeam4BLcQYZr8Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=XVhnWFNet8-XO0HtLZPwGGErzU1BmBY7j8zXVhZROGTmsEL7TO-CP9uJ~wIEGMZ3q5PE8EL5MfPJSVW1tuEhbuPl1BxHiM2~UMSzMIoGDi3N6seeuqhC0rov~D6QZvD2q2RUqMenPgGEb7tPvsoCbimJs0Ztyvl-HTMmsZ272fo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/ElHwG35vR1iR8Bt-b8dY3g?expiry=1516233600000&hmac=7-fXSqGwqnbDXic2jrjZx0CmJwmDrIaW-krkcBB_JvU&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/ElHwG35vR1iR8Bt-b8dY3g?expiry=1516233600000&hmac=zabzogpAAOqxqgeU3OKsuVRCLwszkjbffXpTM5tWjg8&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "4-4-security-issues-in-real-world-cps",
+                [
+                    [
+                        "security-issues-real-world-cps",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/eHbykYP7EealOA67wFuqoQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=FWa1r94kzyodjGhmD7Cc0pDsIMM7rXwLNdY8pIG6EoaJFA1kME-VA-WmsftikaPH~O8qVUVZFUJQqbD4QsJ9ZGTm9t1zz4C1ZoW4PiMfZJba13MkF7~RQIf8W3Pa2ZEwCUO2Kaa3pJHTY5rnNIzyAcYKDRy~5856PgNccCnkBT4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/z1bEWALnRNmWxFgC59TZTA?expiry=1516233600000&hmac=pGA319al3j0km95wfMeHp-SyXljZC4pQeRHGlBbMERo&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/z1bEWALnRNmWxFgC59TZTA?expiry=1516233600000&hmac=1djMFDLOvJ-h7Od8kGA4Yp61KwP7R9OUdWeM4_rtLp8&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "quiz",
+                [
+                    [
+                        "cps-security-and-privacy-graded-quiz",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<h3>\n Question 1\n</h3>\n<co-content>\n <p>\n  How does environment coupling impose specific security requirement for cyber physical systems? (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Since CPS deals with the physical environment, the physical security will be assured by securing CPS\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Any breaches in cyber physical systems not only affects the CPS itself by also could affect the physical environment\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Changes in physical environment can affect the CPS\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    Physical environment also must be protected against security attacks\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    The more physical environment is protected, the more accurate data could be obtained from the sensors\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 2\n</h3>\n<co-content>\n <p>\n  How to ensure physical integrity in CPS?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"1\" type=\"radio\"/>\n  <co-content>\n   <span>\n    configuration management\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"radio\"/>\n  <co-content>\n   <span>\n    tamperproof components\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"radio\"/>\n  <co-content>\n   <span>\n    attestation\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"radio\"/>\n  <co-content>\n   <span>\n    hashing\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 3\n</h3>\n<co-content>\n <p>\n  Which of the followings protects the confidentiality in CPS?\t(check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    passwords\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    physical access control\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    encryption\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    tamperproof hardware\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 4\n</h3>\n<co-content>\n <p>\n  Which one is\n  <strong>\n   not\n  </strong>\n  integrity attack?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Memory modification\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Salami attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Man-In-The-Middle attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Password cracking\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 5\n</h3>\n<co-content>\n <p>\n  Which attack has the most devastating effect in CPS ?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    DoS attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Compromised-key Attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Man-in-the-Middle Attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Eavesdropping Attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 6\n</h3>\n<co-content>\n <p>\n  Which of the following attacks violate the privacy ?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Compromised-key Attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Eavesdropping Attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Man-in-the-Middle Attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"radio\"/>\n  <co-content>\n   <span>\n    DoS attack\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "exam"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "cryptography",
+        [
+            [
+                "5-1-introduction-to-cryptography",
+                [
+                    [
+                        "introduction-to-cryptography",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/I3MHDYPhEealOA67wFuqoQ.processed/full/540p/index.mp4?Expires=1516233600&Signature=HoxLen7uyV4FOo3NEr01GSRtd7~rFsaL-k2AkEbdKEDmhbc2uMJVUNGaHVK-H4is9-1~yJjcsNoxAovKnzwG6ZTJUQzhkzhpkTUnG-VkxITitYVIYFdcGuy~SWn4vnprwXuCFh3yqFem7kLknELhhDxXT~0zIdHrDBTs0xbbQOA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/mr_esosZRca_3rKLGYXGHw?expiry=1516233600000&hmac=r4eFajr-AK2XA_iEXT6v2yZUdz5MgJ6F_lNfZz1RmHM&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/mr_esosZRca_3rKLGYXGHw?expiry=1516233600000&hmac=G5owz3dWBWbiGEa9mXdCsVPA64u4J-VUBs0q0-xbOY0&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "5-2-symmetric-key-ciphers-and-wireless-lan-security",
+                [
+                    [
+                        "symmetric-key-ciphers-and-wireless-lan-security",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/c-bFX4PiEeamDApmnD43Fw.processed/full/540p/index.mp4?Expires=1516233600&Signature=fcSweDktmHGNZ-MbiZSTa2OZZ~c6a4hh77nWUy7USqwsa7kYVyUL0TIXJe01bRtKnnwssowBwzSOvFH5RpvTWL2QW8uXOPSRTDbjx5O7jslaDSieW6XNi6nxOW50ID0VSQn90XClo4-JdTd~E5TgsXUoiMbTi~Isfb7FFp-uJck_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/GMuE_wPgQeOLhP8D4FHjlw?expiry=1516233600000&hmac=Qc_o3499JM33BEPHTNIdgiMmY1i67hTtMWElM6aIEbU&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/GMuE_wPgQeOLhP8D4FHjlw?expiry=1516233600000&hmac=NdP5PBz4yBFr6CNdTDKeiGQV1T2TlXidnuFjtBJzQ9E&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "5-3-public-key-cryptography",
+                [
+                    [
+                        "public-key-cryptography",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/Gt7CpoPjEeazqQoyai5dlw.processed/full/540p/index.mp4?Expires=1516233600&Signature=LYXu9eQf6vmn5sYUr06LjfpXf3xGhRacR56ZcHB1jGIu7xc6zeYeJR1WS5h1N~K~-Umnn4unxOdPgEREd3jWQ9rJtwqWf~oP1iCRlJA7YtAomIGkdmRVoASUqAzQLD8JIMHiFJsiPcX86aH2Vum7LIzREruZmObmeq2EteSUQLc_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/RxWUvb73TvaVlL2-9172NQ?expiry=1516233600000&hmac=rHFElDKjyiL9sLBOahE52HNQ5wKV1ZQTLgHyXdOVXh4&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/RxWUvb73TvaVlL2-9172NQ?expiry=1516233600000&hmac=FWqNR25YKUqNYllptbQ4mtswhj0-1K0dGo_9nPHn63w&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "5-4-diffie-hellman-key-exchange-protocol",
+                [
+                    [
+                        "diffie-hellman-key-exchange-protocol",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/CKM4aIPmEeaQkhKk4jYr6Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=bUkgor8WEcNNdxfD-~4LlrPMALc8bsciKsJ0-DCpRXgp2j7CbmOLVoT881Bn5QBeuJASp5Vy6ploohjOL98fKoG1AdbG4~crejBrIdK3AjHlNU3K7sZU8C96GOIMI84kjcJggUbR9tgprGJPTAh78~sAGniAQFybS8JmkhO4T4o_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/mMOJacfcTZaDiWnH3O2WEg?expiry=1516233600000&hmac=QFmszObF6-Qey8DNr422wVt6xtr0zPyWQdJxmScVmnE&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/mMOJacfcTZaDiWnH3O2WEg?expiry=1516233600000&hmac=I6aWZ23dKJdEnZBW8Jfs-1dh1tJxlNNcwlwYZsmlvWM&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "5-5-digital-signatures-digital-certificates",
+                [
+                    [
+                        "digital-signatures-digital-certificates",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/uJxaoYPmEeam4BLcQYZr8Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=TiEsEaDYLC2mzdPt90ShklH-O6~5RO1vw3TYxBKguftC2bMO-LhXnJfwwewRbYcS7z5NiDWwRf3BlkVzkJag-fbAUKZ1NF-SoQO5A0m-ympbw625HJuEaQPtzy6CKBpxthV8vE7-gE6cwS4ipY-bd1PKskc7xPpdtEi1tFul3xE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/HHWlrA9ATY61pawPQI2OVA?expiry=1516233600000&hmac=AN_tSls2Yhf8RugK6H9VbM-bsY7X8S3cYlJAPpD0jOk&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/HHWlrA9ATY61pawPQI2OVA?expiry=1516233600000&hmac=Pecq6lKo53cW-QRVLiclvj5KPXv6J-2DNqcJsczGNUY&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "5-6-transport-layer-security",
+                [
+                    [
+                        "transport-layer-security",
+                        {
+                            "mp4": [
+                                [
+                                    "https://d3c33hcgiwev3.cloudfront.net/DohlzIPoEeam4BLcQYZr8Q.processed/full/540p/index.mp4?Expires=1516233600&Signature=hpitepTSStN2jlzqH-I0xHpZpVvfnjOhFEMK5hIcPcxCwwRdzhE3V9GoMvKrybY8noY5ueKmRfJeqK2LJ5oml40CYDkGH7Hh2qmfN8lUhSJxBHAdpenknP1G0s084PCkrXd57ynY2qY3b1nfFAMfhTe-HJgeUJGJRi~MWdvp16o_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/JwjCbHJLQL-IwmxySxC_UQ?expiry=1516233600000&hmac=DzEeoBezg95lfni2Oa_PIm4-TE9QwVHE5z9PLBj2ppc&fileExtension=srt",
+                                    ""
+                                ]
+                            ],
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/JwjCbHJLQL-IwmxySxC_UQ?expiry=1516233600000&hmac=wEmFuOxsBdkDRqVVA8Sp3H4GVGQBEteWcWG-V4qzmNQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "quiz",
+                [
+                    [
+                        "cryptography-graded-quiz",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<h3>\n Question 1\n</h3>\n<co-content>\n <p>\n  In symmetric key cryptography, key used by sender and receiver is\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"0\" type=\"radio\"/>\n  <co-content>\n   <span>\n    shared\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"radio\"/>\n  <co-content>\n   <span>\n    different\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"radio\"/>\n  <co-content>\n   <span>\n    two keys are used\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"0\" type=\"radio\"/>\n  <co-content>\n   <span>\n    None\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 2\n</h3>\n<co-content>\n <p>\n  Which of the following encryption methods are suitable for resource constrained devices?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"1\" type=\"radio\"/>\n  <co-content>\n   <span>\n    simple substitution cipher\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"radio\"/>\n  <co-content>\n   <span>\n    public key encryption\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"radio\"/>\n  <co-content>\n   <span>\n    stream cipher\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"1\" type=\"radio\"/>\n  <co-content>\n   <span>\n    block cipher\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 3\n</h3>\n<co-content>\n <p>\n  Which of the following set of wireless security protocols uses the same hardware component?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    WPA and WPA2\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    All three protocols are independent of hardware implementations.\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    WEP and WPA2\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"2\" type=\"radio\"/>\n  <co-content>\n   <span>\n    WPA and WEP\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 4\n</h3>\n<co-content>\n <p>\n  A message digest is created by\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Symmetric encryption\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    RSA algorithm\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Digital Signature\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"3\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Hash function\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 5\n</h3>\n<co-content>\n <p>\n  What is the main service of TLS protocol ?\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Exchanging shared key of symmetric algorithm\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    Exchanging shared key of asymmetric algorithm\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"4\" type=\"radio\"/>\n  <co-content>\n   <span>\n    secure tunnel between two hosts\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<h3>\n Question 6\n</h3>\n<co-content>\n <p>\n  Why TLS is\n  <strong>\n   not\n  </strong>\n  suitable for Datagram based transport protocols? (check all that apply)\n </p>\n</co-content>\n<form>\n <label>\n  <input name=\"5\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    TLS may cause possible lost or out-of-order packets\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    TLS does not provide sufficient privacy and security for UDP based applications\n   </span>\n  </co-content>\n  <br/>\n </label>\n <label>\n  <input name=\"5\" type=\"checkbox\"/>\n  <co-content>\n   <span>\n    TLS can cause unpredictable communication delays.\n   </span>\n  </co-content>\n  <br/>\n </label>\n</form>\n<hr/>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "exam"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ]
+]

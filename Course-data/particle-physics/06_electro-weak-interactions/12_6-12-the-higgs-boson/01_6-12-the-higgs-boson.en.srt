@@ -1,0 +1,312 @@
+1
+00:00:00,240 --> 00:00:11,144
+[MUSIC]
+
+2
+00:00:11,144 --> 00:00:14,964
+In this sixth module, we are discussing
+electro-weak interactions and
+
+3
+00:00:14,964 --> 00:00:16,140
+the Higgs mechanism.
+
+4
+00:00:16,140 --> 00:00:17,501
+In this 12th video,
+
+5
+00:00:17,501 --> 00:00:22,526
+we will encounter the particle associated
+with the Higgs field, the Higgs boson.
+
+6
+00:00:22,526 --> 00:00:25,961
+After following this video,
+you should know how the Higgs boson
+
+7
+00:00:25,961 --> 00:00:29,079
+is produced at the LHC,
+how we identify its production and
+
+8
+00:00:29,079 --> 00:00:33,611
+decay, and how it is verified that it has
+the properties required for a Higgs boson.
+
+9
+00:00:35,212 --> 00:00:38,500
+The Higgs field is a microscopic
+field that must be quantized.
+
+10
+00:00:39,550 --> 00:00:43,810
+There is a particle which corresponds to
+the Phi field, the scalar Higgs boson H0.
+
+11
+00:00:45,950 --> 00:00:48,930
+All its properties were known
+before it was discovered,
+
+12
+00:00:48,930 --> 00:00:53,010
+except that we didn't know whether it
+existed, and that we didn't know its mass.
+
+13
+00:00:53,010 --> 00:00:57,751
+In particular, its branching ratio
+into different fermion-antifermion or
+
+14
+00:00:57,751 --> 00:01:00,991
+boson-boson pairs are fixed
+once the mass is known.
+
+15
+00:01:00,991 --> 00:01:05,098
+The Higgs boson can be produced as
+a real particle at a hadron collider,
+
+16
+00:01:05,098 --> 00:01:07,228
+provided its energy is sufficient.
+
+17
+00:01:07,228 --> 00:01:11,144
+This is for
+the first time the case at the LHC.
+
+18
+00:01:11,144 --> 00:01:15,431
+Here we show some Feynman diagrams for the 
+production of a Higgs boson from two protons,
+
+19
+00:01:15,431 --> 00:01:19,538
+either by quarks or
+by gluons in the initial state.
+
+20
+00:01:19,538 --> 00:01:24,064
+The existence of the Higgs boson,
+H0, has been confirmed in
+
+21
+00:01:24,064 --> 00:01:29,476
+a spectacular way by the experiments
+ATLAS and CMS at the LHC in 2012.
+
+22
+00:01:31,988 --> 00:01:35,405
+Higgs boson production is detected,
+among other methods,
+
+23
+00:01:35,405 --> 00:01:39,630
+in the invariant mass distribution of
+photon pairs, or pairs of Z bosons.
+
+24
+00:01:39,630 --> 00:01:43,933
+The latter ones decay, in turn,
+into lepton-antilepton pairs,
+
+25
+00:01:43,933 --> 00:01:46,583
+which are then observed in the detector.
+
+26
+00:01:46,583 --> 00:01:50,680
+A four-lepton event from the ATLAS
+experiment, with four muons in the final
+
+27
+00:01:50,680 --> 00:01:54,602
+state, serves as the logo of this course,
+so you've seen it many times.
+
+28
+00:01:54,602 --> 00:01:59,191
+The signal at the mass of about 125 GeV
+sticks out clearly above the background of
+
+29
+00:01:59,191 --> 00:02:02,758
+other production mechanisms which
+do not involve Higgs bosons.
+
+30
+00:02:02,758 --> 00:02:07,692
+On the left, you see the invariant
+mass distributions of two photons
+
+31
+00:02:07,692 --> 00:02:12,881
+which has a peak at 125 GeV, and
+on the right you see the invariant mass
+
+32
+00:02:12,881 --> 00:02:18,009
+of the four-lepton system that comes
+from a Higgs decay into Z-Z pairs.
+
+33
+00:02:19,570 --> 00:02:22,950
+Indeed, we have here a second
+nice example of particle mass
+
+34
+00:02:22,950 --> 00:02:26,987
+measurement through
+the invariant mass of its decay products.
+
+35
+00:02:28,481 --> 00:02:32,611
+The measurements from the two experiments
+at the LHC give compatible results which
+
+36
+00:02:32,611 --> 00:02:33,502
+can be combined.
+
+37
+00:02:33,502 --> 00:02:38,834
+And this determines today the mass of
+the Higgs boson H0 to be 125 GeV with
+
+38
+00:02:38,834 --> 00:02:44,681
+a precision of about 250 MeV, that is
+accurate to about two parts per thousand.
+
+39
+00:02:44,681 --> 00:02:48,655
+This is a remarkable achievement by these
+experiments and is the fruit of the work
+
+40
+00:02:48,655 --> 00:02:51,760
+of thousands of physicists and
+engineers during two decades.
+
+41
+00:02:54,138 --> 00:02:57,162
+The experimental findings today
+can be summarized as follows.
+
+42
+00:02:57,162 --> 00:02:59,959
+The H0 is clearly
+a well-established new particle.
+
+43
+00:02:59,959 --> 00:03:04,770
+The probability that background fluctuates
+upwards to simulate the signal is of
+
+44
+00:03:04,770 --> 00:03:07,468
+the order of one to
+several hundred million.
+
+45
+00:03:07,468 --> 00:03:11,271
+It is indeed a boson because
+it decays into two photons.
+
+46
+00:03:11,271 --> 00:03:13,978
+It very probably has spin zero.
+
+47
+00:03:13,978 --> 00:03:17,120
+Its couplings to different
+particles are indeed proportional
+
+48
+00:03:17,120 --> 00:03:19,023
+to their apparent masses, as they should.
+
+49
+00:03:19,023 --> 00:03:22,843
+Here we show a summary of
+results from the CMS experiment.
+
+50
+00:03:22,843 --> 00:03:24,436
+The only particle or
+
+51
+00:03:24,436 --> 00:03:29,404
+coupling that is missing here
+is the Higgs coupling to itself,
+
+52
+00:03:29,404 --> 00:03:35,609
+since the Higgs boson should also be
+responsible for generating its own mass.
+
+53
+00:03:35,609 --> 00:03:38,002
+So that will come in the future.
+
+54
+00:03:38,002 --> 00:03:42,858
+So, we are sure already at this point
+that H0 is indeed a Higgs boson.
+
+55
+00:03:42,858 --> 00:03:47,188
+This, however, does not exclude the
+existence of other bosons of this type,
+
+56
+00:03:47,188 --> 00:03:50,744
+which are obviously actively
+hunted by experiments at the LHC.
+
+57
+00:03:50,744 --> 00:03:54,774
+In the next module, and Anna will go into
+more details about how to search for
+
+58
+00:03:54,774 --> 00:03:58,626
+new phenomena in the challenging
+environment of a hadron collider.
+
+59
+00:04:00,387 --> 00:04:04,545
+If you want to know more about the Higgs
+mechanism and its working principles,
+
+60
+00:04:04,545 --> 00:04:08,640
+I recommend these three episodes of
+the excellent series Minute Physics from
+
+61
+00:04:08,640 --> 00:04:11,240
+the Perimeter Institute in Waterloo,
+Canada.
+
+62
+00:04:11,240 --> 00:04:13,634
+You will easily find them on YouTube.
+
+63
+00:04:13,634 --> 00:04:17,441
+To conclude our discussion of the Higgs
+boson, the next video contains
+
+64
+00:04:17,441 --> 00:04:21,382
+an interview with one of the key people
+who contributed to its discovery.
+
+65
+00:04:21,382 --> 00:04:27,279
+[SOUND]

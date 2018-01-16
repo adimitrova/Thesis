@@ -1,0 +1,541 @@
+1
+00:00:04,399 --> 00:00:07,200
+In this video I'm going
+to look at five things.
+
+2
+00:00:07,200 --> 00:00:09,960
+But don't worry,
+it's not going to take me too long.
+
+3
+00:00:09,960 --> 00:00:13,840
+First of all, I'm just going to have
+a quick chat about what is a function.
+
+4
+00:00:13,840 --> 00:00:15,680
+Then we're going to look
+at the setup function and
+
+5
+00:00:15,680 --> 00:00:17,650
+the draw function in processing.
+
+6
+00:00:17,650 --> 00:00:22,200
+We're going to find out how we can make
+animation by looking at mouse interaction.
+
+7
+00:00:22,200 --> 00:00:25,490
+Then we're going to look at how we can
+use mouse interaction in another way,
+
+8
+00:00:25,490 --> 00:00:27,060
+using the mouseDragged function.
+
+9
+00:00:27,060 --> 00:00:29,440
+So, first of all, what is a function?
+
+10
+00:00:29,440 --> 00:00:32,250
+Well a function is simply a way of
+
+11
+00:00:33,280 --> 00:00:38,330
+creating a block of code which
+we're going to run later in time.
+
+12
+00:00:38,330 --> 00:00:43,439
+Okay, so instead of just something
+like this, where we call background.
+
+13
+00:00:45,269 --> 00:00:47,160
+Actually, background is a function, right?
+
+14
+00:00:47,160 --> 00:00:51,120
+And we're calling background, but
+we're not defining what background is,
+
+15
+00:00:51,120 --> 00:00:53,590
+we're just telling it how to run.
+
+16
+00:00:53,590 --> 00:00:57,100
+And so what we're going to do in this
+video is actually define some functions.
+
+17
+00:00:57,100 --> 00:01:00,130
+And the functions we're going to
+define are called setup and draw,
+
+18
+00:01:00,130 --> 00:01:03,010
+and they are special
+functions in processing.
+
+19
+00:01:04,240 --> 00:01:07,150
+Because they are run automatically.
+
+20
+00:01:07,150 --> 00:01:09,640
+Okay, so whereas,
+think about that background function.
+
+21
+00:01:09,640 --> 00:01:10,860
+It wasn't being run automatically.
+
+22
+00:01:10,860 --> 00:01:14,250
+It was being run because we told it to,
+by writing background.
+
+23
+00:01:14,250 --> 00:01:17,490
+But setup is actually going
+to be run automatically.
+
+24
+00:01:17,490 --> 00:01:21,290
+The only difference is we have to tell
+it what to do in that setup function.
+
+25
+00:01:21,290 --> 00:01:24,520
+So the normal thing you would do in
+that setup function is set the size
+
+26
+00:01:24,520 --> 00:01:25,048
+of the window.
+
+27
+00:01:25,048 --> 00:01:31,570
+So remember size,
+you've got the width, height.
+
+28
+00:01:31,570 --> 00:01:35,326
+Just to remind me that that's
+the width and that's the height.
+
+29
+00:01:35,326 --> 00:01:41,280
+And then what you typically do in
+the draw function is do your drawing,
+
+30
+00:01:41,280 --> 00:01:41,840
+hence the name.
+
+31
+00:01:41,840 --> 00:01:45,540
+So you set things up in the setup function
+and you draw things in the draw function.
+
+32
+00:01:47,230 --> 00:01:50,029
+So before we do any drawing
+I'm just going to sort of
+
+33
+00:01:50,029 --> 00:01:53,733
+just really illustrate what's
+going on with these functions.
+
+34
+00:01:53,733 --> 00:02:00,019
+Hello from setup, okay, and
+here I'm going to say, this is,
+
+35
+00:02:00,019 --> 00:02:06,800
+if you like the simplest way
+to illustrate what's going on.
+
+36
+00:02:06,800 --> 00:02:10,230
+So, all it's going to do is
+set the size of the window and
+
+37
+00:02:10,230 --> 00:02:14,260
+then print that and then draw is just
+going to print out hello from draw.
+
+38
+00:02:14,260 --> 00:02:16,539
+So let's play it and see what happens.
+
+39
+00:02:17,790 --> 00:02:21,010
+So this area down here is called
+the console and whenever you call
+
+40
+00:02:21,010 --> 00:02:24,270
+print things go out into there and
+it's really useful for debugging.
+
+41
+00:02:24,270 --> 00:02:27,490
+So if you want to test what a value is or
+something like that.
+
+42
+00:02:27,490 --> 00:02:30,450
+So let's just whiz up to the top
+of what's come out in the console.
+
+43
+00:02:30,450 --> 00:02:33,700
+And you've probably noticed
+already that draw is just being
+
+44
+00:02:33,700 --> 00:02:35,530
+obviously run lots of times.
+
+45
+00:02:35,530 --> 00:02:39,640
+Whereas set up, you see it's only
+calling the setup code once.
+
+46
+00:02:39,640 --> 00:02:42,850
+So, setup gets called once at
+the beginning when the sketch runs.
+
+47
+00:02:42,850 --> 00:02:44,970
+Draw is being automatically
+called repeatedly.
+
+48
+00:02:44,970 --> 00:02:47,170
+And that's the trick to doing animations.
+
+49
+00:02:47,170 --> 00:02:48,120
+So, if you think about animation,
+
+50
+00:02:48,120 --> 00:02:51,800
+it's basically a series of frames
+with different stuff in and
+
+51
+00:02:51,800 --> 00:02:54,960
+that's exactly what draw allows us
+to do each time draw gets called.
+
+52
+00:02:54,960 --> 00:02:57,460
+We can draw a different
+frame of our animation, or
+
+53
+00:02:57,460 --> 00:02:59,690
+update the picture that's on the screen.
+
+54
+00:02:59,690 --> 00:03:01,200
+Okay, so let's try that.
+
+55
+00:03:01,200 --> 00:03:07,990
+And what I'm going to do is bring in that
+other idea, the idea of mouse movement.
+
+56
+00:03:07,990 --> 00:03:12,170
+And I'm going to use the mouse
+to actually draw something.
+
+57
+00:03:12,170 --> 00:03:15,370
+So we've seen before this rect function.
+
+58
+00:03:15,370 --> 00:03:19,820
+So remember x, y, width and height.
+
+59
+00:03:19,820 --> 00:03:21,270
+Those are the four variables,
+
+60
+00:03:21,270 --> 00:03:24,900
+the four numbers that we
+parse into the rect function.
+
+61
+00:03:24,900 --> 00:03:28,140
+So if I put it at 0,0,
+it goes to the top left of the screen.
+
+62
+00:03:28,140 --> 00:03:31,030
+And let's say I want a width and
+height of 25, 25.
+
+63
+00:03:31,030 --> 00:03:32,260
+So let's just run that.
+
+64
+00:03:34,390 --> 00:03:37,310
+That's not very interesting, but what
+you can imagine it's doing is basically
+
+65
+00:03:37,310 --> 00:03:40,180
+redrawing the rectangle on top of
+itself again and again and again.
+
+66
+00:03:41,410 --> 00:03:42,540
+Little bit boring.
+
+67
+00:03:42,540 --> 00:03:46,480
+But what happens if instead of
+setting x and y to just always be 0,
+
+68
+00:03:46,480 --> 00:03:49,888
+what if we set x and
+y to be the mouse position?
+
+69
+00:03:49,888 --> 00:03:53,470
+mouseX and mouseY?
+
+70
+00:03:53,470 --> 00:03:55,900
+So these two special variables here
+
+71
+00:03:55,900 --> 00:03:58,820
+give us access to the position
+of the mouse currently.
+
+72
+00:03:58,820 --> 00:04:01,600
+And as you imagine, if you move
+the mouse around, they'll change.
+
+73
+00:04:01,600 --> 00:04:04,200
+So if draw gets called again,
+it'll update.
+
+74
+00:04:04,200 --> 00:04:05,735
+So let's try that.
+
+75
+00:04:05,735 --> 00:04:08,640
+So if I move my mouse around,
+
+76
+00:04:08,640 --> 00:04:13,504
+you can see the rectangle appears
+to be following it and because
+
+77
+00:04:13,504 --> 00:04:18,490
+because draw just draws on top of
+the previous canvas that was there,
+
+78
+00:04:18,490 --> 00:04:22,380
+it doesn't wipe it each time, you can
+see that whatever it's drawn before is
+
+79
+00:04:22,380 --> 00:04:27,300
+being kept which makes for
+a nice kind of drawing effect here.
+
+80
+00:04:27,300 --> 00:04:29,240
+Now of course, if we did want to wipe it,
+
+81
+00:04:29,240 --> 00:04:30,770
+we could just call
+the background functions.
+
+82
+00:04:30,770 --> 00:04:36,370
+Now remember, background fills the entire
+background in a certain color, so
+
+83
+00:04:36,370 --> 00:04:40,070
+I'm going to fill it with the color black,
+which is a quick way of doing it is zero.
+
+84
+00:04:40,070 --> 00:04:42,162
+That means every time draw gets
+called the first thing it does,
+
+85
+00:04:42,162 --> 00:04:44,470
+it wipes everything over
+with a black background.
+
+86
+00:04:44,470 --> 00:04:45,170
+Then we hit play.
+
+87
+00:04:46,820 --> 00:04:50,550
+And you can see that now,
+the square is just following the mouse,
+
+88
+00:04:50,550 --> 00:04:52,930
+and it's wiping out that
+trail of other squares.
+
+89
+00:04:52,930 --> 00:04:56,480
+I kind of preferred
+the previous one to be honest.
+
+90
+00:04:56,480 --> 00:04:59,320
+Okay.
+Now, the final thing I wanted to show
+
+91
+00:04:59,320 --> 00:05:00,920
+you is the mouse track function.
+
+92
+00:05:00,920 --> 00:05:03,470
+So this is another function
+that gets called automatically.
+
+93
+00:05:05,127 --> 00:05:06,540
+By processing.
+
+94
+00:05:06,540 --> 00:05:11,020
+But this one doesn't just called again and
+again like draw does.
+
+95
+00:05:11,020 --> 00:05:15,310
+It actually gets called when
+the mouse is being dragged.
+
+96
+00:05:15,310 --> 00:05:20,540
+So the mouse is being dragged when
+you basically click in the sketch and
+
+97
+00:05:20,540 --> 00:05:21,290
+move the mouse around.
+
+98
+00:05:21,290 --> 00:05:22,620
+So let's just illustrate that.
+
+99
+00:05:22,620 --> 00:05:23,876
+So there's the whole sketch there.
+
+100
+00:05:23,876 --> 00:05:25,360
+There's not much to it.
+
+101
+00:05:25,360 --> 00:05:27,150
+I've got rid of the code
+from the draw function and
+
+102
+00:05:27,150 --> 00:05:29,980
+I'm just doing my drawing
+inside mouseDragged now.
+
+103
+00:05:29,980 --> 00:05:31,650
+So let's see what this one does.
+
+104
+00:05:31,650 --> 00:05:34,930
+You'll notice right now
+it's not doing any drawing.
+
+105
+00:05:34,930 --> 00:05:39,610
+If I click on the Window and start
+moving my mouse, then I can draw a line.
+
+106
+00:05:40,610 --> 00:05:41,500
+Then I can draw another one.
+
+107
+00:05:41,500 --> 00:05:45,750
+So it's a bit like a kind of
+paint program with this nice,
+
+108
+00:05:45,750 --> 00:05:50,000
+almost fake,
+3-D effect on the lines there.
+
+109
+00:05:50,000 --> 00:05:51,410
+Okay, so what have we done?
+
+110
+00:05:51,410 --> 00:05:55,270
+We've just found out about the setup
+function which gets called once every time
+
+111
+00:05:55,270 --> 00:05:56,380
+your sketch runs.
+
+112
+00:05:56,380 --> 00:05:59,305
+The draw function,
+which gets called repeatedly and
+
+113
+00:05:59,305 --> 00:06:03,310
+how to use mouse interaction
+to do animation in draw.
+
+114
+00:06:03,310 --> 00:06:08,320
+And how to use mouse interaction
+basically responding to the user clicking
+
+115
+00:06:08,320 --> 00:06:09,852
+into the window and
+dragging the mouse around.
+
+116
+00:06:09,852 --> 00:06:15,456
+[BLANK AUDIO]

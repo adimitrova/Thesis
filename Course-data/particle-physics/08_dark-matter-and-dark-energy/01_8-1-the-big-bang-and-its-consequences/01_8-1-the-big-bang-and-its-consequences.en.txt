@@ -1,0 +1,121 @@
+[MUSIC] Hello, and welcome to this eighth, and last module of our introductory
+course to subatomic physics. In this eighth module, we will talk
+about two mysterious components of the Universe which are dark matter and
+dark energy. After following this video you will now
+what we know about the Big Bang and what were the major steps in the history of the
+Universe from its beginning up to today. Observations indicate that our Universe
+was created some tens of billions of years ago in what is called a Big Bang and went through an extremely
+hot period afterwards. It then cooled down by expansion, down to its current
+temperature of 2.7 Kelvin. Here, you see a schematic
+representation of its evolution. The features of the cosmological standard
+model as we know it today are primarily based on the following observations. First of all, the systematic red shift
+of spectral lines from distant galaxies which leads to Hubble's law. Second, the cosmic microwave background
+which corresponds to that of a black body. The abundance of light elements in cosmic
+rays and the distribution of large-scale structures, galaxies,
+clusters of galaxies, etc., and its relation to the anisotropies
+of the microwave radiation. We will walk you through some major steps
+of the history of the Universe, and review some of these
+phenomena as we go along. Extrapolation of the current
+Universe backwards in time leads us to an infinite energy-density
+concentrated in a single point. At the beginning there was thus
+a singularity, the Big Bang. You should not be afraid of singularities. They show up everywhere when
+we talk about volume density when the volume tends to zero. The total energy of the Universe was,
+of course, finite at t = 0 and the same as today for all we know. But the volume was extremely small. It has been constantly
+expanding ever since. Be careful not to trust your intuition
+when you think about expansion of the Universe. The idea that this is happening relative
+to a fixed system of reference, is completely wrong.
+If you think about it like the explosion of a firecracker in the night sky,
+you're mistaken. It is space itself which expands. There's no way to observe this
+process from the outside. And the expansion concerns not only
+any distance between two objects, but any other length, such as
+the wavelength of photons, for example. Through this expansion, the temperature
+of the Universe has decreased by the same mechanism that your fridge
+is using to cool down your vegetables. We can only speculate on
+the first few 10^-40 s in the life of the Universe. In this era, the temperature was so high that all forces had the same
+strength including gravitation. In addition, the dimensions were such that
+gravity had to work in a quantized way, which we know nothing about. The homogeneity of the temperature
+in the Universe indicates that diametrically opposite regions were in
+causal contact shortly after this era. This is not explicable unless
+it is assumed that around 10^-37 seconds after the Big Bang, the expansion of the
+Universe passed through an exponential and superluminous phase. It is called a period of inflation. Its driving mechanism
+remains to be discovered. Again, we must not shy away from this
+thought, it is permissible by relativity that space itself expands at a velocity
+larger than the speed of light. Indeed, no signal exceeds this
+speed limit including this era. It is space itself which is blowing up. After the end of the inflation period,
+the Universe was filled with a plasma of quarks and gluons and
+other elementary particles. The temperature was such that
+all particles were relativistic. Particles and
+antiparticles were in thermal equilibrium. At some point during this era, a tiny asymmetry of unknown origin
+between matter and anti-matter appeared. Matter became more abundant than
+anti-matter by about 1 part in 30 million. The mechanism actually causing this
+unbalance, which is called baryogenesis, remains to be discovered. [COUGH] This mechanism is responsible for
+our existence. Without it,
+all matter would have annihilated with antimatter. The necessary conditions for
+this operation have been formulated for the first time by Andrei Sakharov. There are three such conditions. The first one is that C and CP symmetry
+must be violated to objectively distinguish between matter and antimatter. The second condition is that
+baryon number must be violated so that antibaryons can disappear
+in favor of baryons. And third, all of this must happen
+outside thermodynamic equilibrium e.g. in a phase transition, for example, so that anti-matter is not recreated
+by the reverse process all the time. Beyond roughly 10^-11 seconds, we know a little more
+precisely what happened. In this era, the Universe is sufficiently
+cooled down by expansion so that the laws of the standard model which we have
+encountered in this course are valid. The energies of the particles
+were then comparable to what accelerators can provide. Around 10^-6 seconds, quarks and gluons combined to form baryons,
+before this was not possible because the kinetic energy of the ingredients
+prevented bound states. The small excess of quarks caused a small
+excess of baryons over antibaryons. When the temperature was no longer
+sufficient to maintain the equilibrium between nucleons and anti-nucleons,
+a massive annihilation took place, leaving only about a single proton or
+neutron among 100 billion. A similar process followed at about one
+second, for electrons and positrons, leaving a tiny fraction of electrons. A few minutes after the Big Bang, the temperature had lowered
+to some billion Kelvin. Neutrons and
+protons fused to form deuterium and helium, but
+most protons stayed on their own. At some point during this expansion
+cooling process, energy in the form of gravitational mass began to dominate
+over the energy of photons. After some 380,000 years, electrons formed
+atoms with protons and other nuclei. Before the ambient photons were
+sufficiently energetic to ionize atoms when they formed. At this time, this was no longer the case,
+photons and matter decoupled. Radiation released at that
+moment still exists today, it is called the cosmic
+microwave background. When all dimensions expand,
+the wavelength of photons also expands. And the corresponding
+temperature decreases. We call the residual radiation
+from that event the cosmic microwave background because its equivalent
+temperature today is 2.7 degrees, the wavelength is thus
+in the microwave range. This radiation, therefore, provides us
+with an instantaneous photograph of the state the Universe was in
+380,000 years after its birth. It is indeed the oldest source of
+light because before the Universe was opaque since photons were
+observed when ionizing atoms. By measuring the wavelength of
+the cosmic microwave photons, one can map the temperature
+of the Universe. This was done first using ground
+based microwave antennas. And then, with specialized
+satellites like COBE, WMAP and most recently with the Planck satellite. The distribution of photon
+energy from any given direction exactly follows the one expected for
+an ideal black body. The characteristic temperatures
+are found to be homogeneous at the level of 100th of a per-mil even for
+diametrically opposite directions. This is the motivation for
+postulating the so called inflationary era. However, there are indeed small
+fluctuations around the average temperature, which were caused by
+regions of slight over- or under-density. These are probably the seeds
+around which the large structures of matter that we
+observe today have formed. Since then, thus, over the long
+period which lasts until today, gravitational attraction has caused
+matter to form gas clouds, then stars, galaxies and galaxy clusters and so on. The details of the structure formation
+depend on the type of quantity of matter available- Dark matter may have helped
+in this process as we'll see in video 8.2. Once stars are formed,
+elements heavy than helium are cooked by nuclear fusion
+as we learned in module 2. If one takes stock of the observed
+components of the Universe, one finds the following. The total density of matter
+deduced from the gravitational potential measured
+from the movement of stars and galaxies is of the order of
+10^-27 kilograms per cubic meter. The total density of baryons, visible or
+invisible, both measured and deduced from the well established baryogenesis process
+is smaller by about a factor of ten. Visible matter, shining light,
+concentrated in stars, gas and dust is again less dense
+by a factor of five. Most of the matter is thus
+neither visible nor baryonic. It is called dark matter. We will talk about it in the next video. The rest of the energy
+density of the Universe is provided by an even more mysterious form. It is called dark energy and appears to be currently accelerating
+the expansion of the Universe. We speak about the little that
+is known about it in video 8.3. But first, we will discuss
+dark matter in the next video. [MUSIC]

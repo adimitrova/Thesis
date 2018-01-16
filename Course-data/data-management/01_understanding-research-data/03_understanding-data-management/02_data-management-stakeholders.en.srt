@@ -1,0 +1,264 @@
+1
+00:00:00,000 --> 00:00:06,261
+[MUSIC]
+
+2
+00:00:06,261 --> 00:00:11,110
+Now, let's take a look at the array of
+stakeholders involved in data management.
+
+3
+00:00:12,350 --> 00:00:18,120
+So, initially, you have the primary
+researchers, or principal investigators,
+
+4
+00:00:18,120 --> 00:00:22,620
+who design the study,
+specify what data will be collected,
+
+5
+00:00:23,620 --> 00:00:29,260
+and determine how to analyze the data and
+draw conclusions from these analyses.
+
+6
+00:00:29,260 --> 00:00:31,450
+They come to know the data quite well, but
+
+7
+00:00:31,450 --> 00:00:36,490
+in a large research project with complex
+data, it can be difficult even for
+
+8
+00:00:36,490 --> 00:00:38,970
+the primary researchers
+to know what they have.
+
+9
+00:00:40,540 --> 00:00:45,250
+Within a research project,
+you may also have graduate students or
+
+10
+00:00:45,250 --> 00:00:49,150
+other staff members who are tasked
+with collecting the data and
+
+11
+00:00:49,150 --> 00:00:52,290
+managing it, and
+often analyzing it as well.
+
+12
+00:00:52,290 --> 00:00:58,100
+Good data management
+facilitates clear communication
+
+13
+00:00:58,100 --> 00:01:01,450
+between the primary researchers and
+graduate students.
+
+14
+00:01:03,000 --> 00:01:07,850
+It also facilitates multiple
+students working together and
+
+15
+00:01:07,850 --> 00:01:13,870
+the passing of information to new students
+from those who have left the project.
+
+16
+00:01:13,870 --> 00:01:17,920
+Institutions such as universities and
+research institutes,
+
+17
+00:01:17,920 --> 00:01:22,980
+are usually involved in setting some of
+the internal data management policies.
+
+18
+00:01:22,980 --> 00:01:27,550
+Institutions may also provide
+data management resources
+
+19
+00:01:27,550 --> 00:01:30,450
+to researchers including
+data management training,
+
+20
+00:01:31,460 --> 00:01:35,580
+support for researchers writing
+data management plans or
+
+21
+00:01:35,580 --> 00:01:38,150
+services for archiving data.
+
+22
+00:01:38,150 --> 00:01:40,578
+A data repository curates data,
+
+23
+00:01:40,578 --> 00:01:45,744
+ensures the long-term
+preservation of data and
+
+24
+00:01:45,744 --> 00:01:48,520
+provides access to data.
+
+25
+00:01:48,520 --> 00:01:52,770
+Data repositories work
+with the data creators
+
+26
+00:01:52,770 --> 00:01:55,700
+to ensure data remain useful over time.
+
+27
+00:01:57,060 --> 00:02:00,880
+Data repositories also
+work with data creators
+
+28
+00:02:00,880 --> 00:02:05,300
+to place any necessary access
+restrictions on the data,
+
+29
+00:02:05,300 --> 00:02:10,110
+including those determined by
+institutional or funder policies,
+
+30
+00:02:10,110 --> 00:02:14,790
+embargoes, as well as any security and
+copyright concerns.
+
+31
+00:02:14,790 --> 00:02:19,780
+The secondary user of the data is
+the third party that comes into
+
+32
+00:02:19,780 --> 00:02:24,280
+the picture later in the research
+data life-cycle and may use the data
+
+33
+00:02:24,280 --> 00:02:28,940
+to verify published results, for
+secondary analyses or for teaching.
+
+34
+00:02:30,140 --> 00:02:35,360
+Users can come from many backgrounds,
+including students, faculty,
+
+35
+00:02:35,360 --> 00:02:40,610
+research project team members,
+private entities, businesses,
+
+36
+00:02:40,610 --> 00:02:45,470
+government officials, journalists,
+or citizen scientists.
+
+37
+00:02:45,470 --> 00:02:46,970
+Funders are the agencies or
+
+38
+00:02:46,970 --> 00:02:51,490
+organizations that provide the money
+to support a research project.
+
+39
+00:02:52,690 --> 00:02:57,767
+Most US Federal funding agencies
+require researchers to actively and
+
+40
+00:02:57,767 --> 00:03:02,820
+properly manage their data throughout
+the research project’s life cycle
+
+41
+00:03:02,820 --> 00:03:07,740
+with an end goal of making the data
+available and accessible for sharing,
+
+42
+00:03:07,740 --> 00:03:12,950
+A data management plan is now
+required of most project proposals.
+
+43
+00:03:12,950 --> 00:03:17,360
+These plans clearly outline
+the specifics of how the data will be
+
+44
+00:03:17,360 --> 00:03:22,340
+effectively collected, managed, stored,
+and preserved for future access.
+
+45
+00:03:23,830 --> 00:03:28,020
+Publishers and Journals disseminate
+scientific discovery and
+
+46
+00:03:28,020 --> 00:03:30,670
+maintain the integrity of
+the scientific record.
+
+47
+00:03:31,790 --> 00:03:37,340
+Publishers and Journals are increasingly
+encouraging researchers to cite data,
+
+48
+00:03:37,340 --> 00:03:39,840
+and some, such as PLOS, or
+
+49
+00:03:39,840 --> 00:03:45,210
+the Public Library of Science, are issuing
+policies that require researchers
+
+50
+00:03:45,210 --> 00:03:49,780
+to make data underlying published results
+available within a data repository.
+
+51
+00:03:51,030 --> 00:03:55,580
+As you can see there are many different
+stakeholders involved in data management.
+
+52
+00:03:55,580 --> 00:04:00,728
+The variety of stakeholders
+suggests that proper management
+
+53
+00:04:00,728 --> 00:04:06,866
+of data throughout the research
+lifecycle requires communication and
+
+54
+00:04:06,866 --> 00:04:10,636
+cooperation between these various groups.
+
+55
+00:04:10,636 --> 00:04:20,199
+[MUSIC]

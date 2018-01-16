@@ -1,0 +1,51 @@
+It's easy to load data in to MongoDB. In part, this is because MongoDB
+supports a very flexible data model. Meaning, you do not need to define
+a schema in advance or set up any tables. Tables, by the way are called
+collections in MongoDB. In addition, MongoDB is flexible about the shape of
+individual documents within a collection. The number of fields,
+specific names of keys, and value types can vary from one document
+to another within the same collection. In general, you should develop and use a consistent data model but
+MongoDB makes it easy. To use an exploratory iterative
+approach to developing the data model. This is important in nearly all
+use cases for data science. Requirements evolve and the availability of new data sources
+imposes changes on our data models. So let's get started with an example
+of loading, cleaning, and iterating on a data model using MongoDB. First, we're going to load some data
+into your free tier cluster, for this we're going to use
+the Mongo import program and import the csv file of the data for
+a little more than 46,000 movies. First, download the file
+movies_initial.csv from the handouts, then we will import
+the data, using the mongoimport command. Mongoimport is distributed with MongoDB. Since you have already downloaded and
+installed MongoDB, you have access to it from the command
+line interface of your choice. On a Mac or Linux machine, you'll
+probably use a Bash shell of some kind. On Windows, you'll probably use
+the Command Prompt, or PowerShell. For this example, we're going to use
+some movies data from the open movie database also known as OMDB. This data set is nice because
+it is large enough and requires enough data
+cleaning to be realistic. In addition, there are a number of other
+publicly available data sets that we can work to integrate with the OMDB data. In a manner that effectively simulates the
+types of challenges we face in developing and maintaining data resources to support
+enterprise analytic applications. To import our initial data
+set you'll use mongoimport, specifying several command line options. Here's the template for
+the command you'll use. You simply need to fill in
+the command with the cluster name and seed list for your free tier cluster. To get this string, go into Atlas and from the cluster view,
+click the CONNECT button. In the model that pops up,
+select Connect with the Mongo Shell. Mongoimport has a slightly
+different API than the Mongo shell. So, we just need to copy a couple
+portions of this connection URI. First, we'll copy the cluster name. The cluster name for your replica
+set should appear as the value for the URI parameter replica set. Go ahead and copy and
+paste it into our mongoimport command. Replacing the cluster place holder
+with the actual cluster name. Next, we need to select
+the seed list from this URI. The seed list begins immediately
+after the :// in this URI and ends just before /test. The seed list is nothing more than a list
+of the fully qualified domain names, plus the port on which MongoDB is running, for
+all the servers in your MongoDB cluster. Replace the seed list placeholder with
+the seed list you've just copied. See the lecture notes for this lesson for a mongoimport template command
+you can copy and paste. And for
+a written version of these instructions. Once you have correctly added your seed
+list to the mongoimport command go ahead and run it. But before you do, make sure that
+the movies_initial.csv file is located in the same directory from which you're
+running the mongoimport command. I can run exactly the same command,
+in Windows, from the Command Prompt or
+the Windows Shell. Mongoimport has the same API, regardless of which operating
+system you're running on. Once mongoimport finishes running, you should see a message indicating
+how many documents were imported.

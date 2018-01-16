@@ -1,0 +1,713 @@
+1
+00:00:00,012 --> 00:00:06,025
+At the last, lecture we designed the 
+dynamic duo of robotic behaviors, mainly 
+
+2
+00:00:06,025 --> 00:00:11,595
+goal to goal and avoid obstacle. 
+And the question I want to talk about in 
+
+3
+00:00:11,595 --> 00:00:16,730
+today's lecture is really how do we 
+combine these two? So Let's say that I 
+
+4
+00:00:16,730 --> 00:00:22,708
+actually have, as always, a go to here, a 
+goal here, and an obstacle here with go 
+
+5
+00:00:22,708 --> 00:00:28,332
+to goal telling me to go in this 
+direction, and avoid obstacle telling me. 
+
+6
+00:00:28,332 --> 00:00:33,073
+To go in this direction which is straight 
+away from, from the obstacle. 
+
+7
+00:00:33,073 --> 00:00:38,432
+How do I actually combine these two? And 
+the question is really this, right. 
+
+8
+00:00:38,432 --> 00:00:43,813
+It, is there some blended version of the 
+two directions we should go in or should 
+
+9
+00:00:43,813 --> 00:00:49,258
+we actually switch between the different 
+behaviors in a hard way, so that the 
+
+10
+00:00:49,258 --> 00:00:52,611
+winner takes all. 
+And, these are really the main two 
+
+11
+00:00:52,611 --> 00:00:56,799
+options at our disposal. 
+And what I want to do today is just 
+
+12
+00:00:56,799 --> 00:01:01,754
+discuss almost philosophically. 
+What are the pros and cons associated 
+
+13
+00:01:01,754 --> 00:01:06,135
+with these two options? 
+And then in subsequent lectures, we will 
+
+14
+00:01:06,135 --> 00:01:11,399
+be a little more technical in terms of 
+how to actually build these so-called 
+
+15
+00:01:11,399 --> 00:01:16,070
+arbitration mechanisms. 
+Some mechanisms for transitioning in and 
+
+16
+00:01:16,070 --> 00:01:20,510
+out of different behaviors. 
+So the philosophical question is really 
+
+17
+00:01:20,510 --> 00:01:23,557
+this right. 
+Can robots can chew gum and walk at the 
+
+18
+00:01:23,557 --> 00:01:28,245
+same time meaning can they do two things 
+or should they do two things or should 
+
+19
+00:01:28,245 --> 00:01:30,907
+they really only be doing, doing one 
+thing. 
+
+20
+00:01:30,907 --> 00:01:35,846
+So the same cartoon here over on the left 
+where the black arrows again are the 
+
+21
+00:01:35,846 --> 00:01:39,295
+directions in which we think that the 
+robot should go. 
+
+22
+00:01:39,295 --> 00:01:42,812
+So if we're going with the hard switches 
+paradox time. 
+
+23
+00:01:42,812 --> 00:01:47,748
+What's going on is when we're let's say 
+far away from the obstacle then the 
+
+24
+00:01:47,748 --> 00:01:52,969
+robots should be doing nothing but going 
+towards the goal which I've illustrated 
+
+25
+00:01:52,969 --> 00:01:58,002
+here with the, a red arrow saying that 
+right now that's all the robot is trying 
+
+26
+00:01:58,002 --> 00:02:00,966
+to do. 
+And then when it gets lets say closer to 
+
+27
+00:02:00,966 --> 00:02:05,962
+the obstacle it switches completely. 
+To the other direction which is, in this 
+
+28
+00:02:05,962 --> 00:02:10,482
+case, straight away from the obstacle. 
+And the reason one might want to do 
+
+29
+00:02:10,482 --> 00:02:14,927
+something like this is that, we're 
+actually designing the behaviors, to do 
+
+30
+00:02:14,927 --> 00:02:18,402
+something really well. 
+The obstacle avoidance behavior is 
+
+31
+00:02:18,402 --> 00:02:23,232
+designed to, not drive into things. 
+And hopefully we design it right, so that 
+
+32
+00:02:23,232 --> 00:02:28,277
+we can actually trust that, if we're only 
+avoiding driving into things, indeed We 
+
+33
+00:02:28,277 --> 00:02:33,102
+do not drive into things, or if we are 
+only trying to a goal, than we have 
+
+34
+00:02:33,102 --> 00:02:37,702
+designed our controller to be as 
+methodically stable, so that we can 
+
+35
+00:02:37,702 --> 00:02:41,002
+actually trust, trust that we end up at 
+the goal. 
+
+36
+00:02:41,002 --> 00:02:46,302
+So, the pro the benefit we're doing hard 
+switches is then that we can actually 
+
+37
+00:02:46,302 --> 00:02:51,490
+trust these systems, that they are doing 
+what they were designed to do from a 
+
+38
+00:02:51,490 --> 00:02:56,400
+performance guarantee point of view. 
+Now there is a drawback with this. 
+
+39
+00:02:56,400 --> 00:03:01,611
+So, if you are a robot and you're just 
+switching ma, ma, ma, ma, ma, back and 
+
+40
+00:03:01,611 --> 00:03:05,672
+forth between going to the goal and 
+avoiding an obstacle. 
+
+41
+00:03:05,672 --> 00:03:09,210
+Let's say you're riding this robot. 
+It's a really bumpy ride. 
+
+42
+00:03:09,210 --> 00:03:13,880
+Or in general it, it's a, you're going to 
+get, rather, jerky motions out. 
+
+43
+00:03:13,880 --> 00:03:18,891
+And as we've already seen, if we're using 
+odometry, for instance, to knowing where 
+
+44
+00:03:18,891 --> 00:03:23,763
+we are, then, the odometric readings can 
+get really, a little bit messed off, up 
+
+45
+00:03:23,763 --> 00:03:28,344
+if you start switching quickly. 
+So, there is, the, the, the potential for 
+
+46
+00:03:28,344 --> 00:03:31,913
+having a really bumpy ride and 
+theoretically this bumpy ride can 
+
+47
+00:03:31,913 --> 00:03:36,167
+translate into Zeno behaviors where we're 
+forced to switch very, very, very 
+
+48
+00:03:36,167 --> 00:03:40,579
+quickly, In fact infinitely quickly in 
+the worst possible scenario between the 
+
+49
+00:03:40,579 --> 00:03:43,588
+two behaviors. 
+So on the one hand we can trust that the 
+
+50
+00:03:43,588 --> 00:03:47,712
+system is doing what it supposed to be 
+doing, but it's doing it in a rather 
+
+51
+00:03:47,712 --> 00:03:52,665
+Bumpy and unpleasant way. 
+So that's the, the, the deal with, with 
+
+52
+00:03:52,665 --> 00:03:56,861
+the hard switches. 
+The other alternative, of course, is to 
+
+53
+00:03:56,861 --> 00:04:01,086
+blend the two behaviors. 
+So the answer to the philosophical 
+
+54
+00:04:01,086 --> 00:04:05,472
+question here would be, yes. 
+Robots can, indeed, chew gum and walk at 
+
+55
+00:04:05,472 --> 00:04:08,447
+the same time. 
+They can avoid slamming into things and 
+
+56
+00:04:08,447 --> 00:04:11,617
+going towards goals. 
+And, I'm going to argue that all of us, 
+
+57
+00:04:11,617 --> 00:04:15,832
+when we're walking around were trying 
+both, not to walk into other people and 
+
+58
+00:04:15,832 --> 00:04:18,927
+go to the particular place we're 
+interested in going to. 
+
+59
+00:04:18,927 --> 00:04:22,992
+So we do it all the time. 
+Why shouldn't we let the robots do it? So 
+
+60
+00:04:22,992 --> 00:04:28,122
+the pro or the, the benefit we're doing 
+this would be to get a smoother ride when 
+
+61
+00:04:28,122 --> 00:04:31,346
+we're not switching between behaviors 
+rapidly. 
+
+62
+00:04:31,346 --> 00:04:36,501
+we avoid typically that the Zeno issue. 
+So this would be an argument for 
+
+63
+00:04:36,501 --> 00:04:39,487
+blending. 
+An argument against it is that we no 
+
+64
+00:04:39,487 --> 00:04:44,805
+longer can completely trust that we have 
+guarantees that our system does what it's 
+
+65
+00:04:44,805 --> 00:04:48,517
+supposed to be doing. 
+In the sense that now we're not only 
+
+66
+00:04:48,517 --> 00:04:52,597
+avoiding obstacles, we're kind of 
+avoiding obstacles but we're kind of 
+
+67
+00:04:52,597 --> 00:04:57,080
+doing something else and it's not clear 
+that we can actually guarantee anymore 
+
+68
+00:04:57,080 --> 00:05:01,449
+that we're staying clear of obstacles or 
+if we are going to the goal while not 
+
+69
+00:05:01,449 --> 00:05:05,428
+only doing that but something then are 
+going to indeed hit the landmark. 
+
+70
+00:05:05,428 --> 00:05:10,513
+So there are potential drawbacks with 
+with blending the behaviors and that one 
+
+71
+00:05:10,513 --> 00:05:15,216
+of them that is that it's hard to 
+guarantee what's actually going to, to 
+
+72
+00:05:15,216 --> 00:05:18,157
+happen. 
+So, lets first of all build some both of 
+
+73
+00:05:18,157 --> 00:05:22,973
+these solutions and then we're going to 
+to take some kind of stand here where 
+
+74
+00:05:22,973 --> 00:05:25,914
+we're going to prefer, prefer one over 
+the other. 
+
+75
+00:05:25,914 --> 00:05:30,722
+So lets actually start with with the 
+switched hybred atomatom. 
+
+76
+00:05:30,722 --> 00:05:37,101
+So, again we have the robot, the goal, 
+and the obstacle, and what were going to 
+
+77
+00:05:37,101 --> 00:05:42,149
+do is we're going to used the behavior 
+that we assigned last time. 
+
+78
+00:05:42,149 --> 00:05:47,955
+So we're saying that we're controlling 
+the volocity of the robot directly. 
+
+79
+00:05:47,955 --> 00:05:53,022
+So lets say X dot is equal to U. 
+This is in R2, because this is a planar 
+
+80
+00:05:53,022 --> 00:05:56,717
+robot, so it's a two-dimensional control 
+signal. 
+
+81
+00:05:56,717 --> 00:06:02,082
+And let's say for the sake of simplicity 
+that the go to goal behavior is simply a 
+
+82
+00:06:02,082 --> 00:06:05,212
+proportional regulator driving X to the 
+goal. 
+
+83
+00:06:05,212 --> 00:06:09,552
+And as long as KGTG is positive, we've 
+seen that this is an asymptotically 
+
+84
+00:06:09,552 --> 00:06:13,052
+stable controller. 
+And we're also using the avoid obstacle 
+
+85
+00:06:13,052 --> 00:06:17,017
+controller that's just simply pushing us 
+away from, from the goal. 
+
+86
+00:06:17,017 --> 00:06:20,957
+So this is actually an unstable 
+controller that's driving us away, 
+
+87
+00:06:20,957 --> 00:06:23,872
+straight away from the, from the obstacle 
+point. 
+
+88
+00:06:23,872 --> 00:06:28,238
+So let's say that we have these two these 
+two behaviors. 
+
+89
+00:06:28,238 --> 00:06:33,637
+Then, here would be a hybrid automaton 
+that switches between these two 
+
+90
+00:06:33,637 --> 00:06:37,524
+behaviors. 
+So the robot is going towards the goal, 
+
+91
+00:06:37,524 --> 00:06:43,458
+until the distance to the obstacle, so 
+this distance here, d do is less than or 
+
+92
+00:06:43,458 --> 00:06:48,615
+equal to some critical safety distance. 
+So when we're too close to the obstacle, 
+
+93
+00:06:48,615 --> 00:06:53,793
+we switch and then after we've switched 
+we're now avoiding the obstacle and we're 
+
+94
+00:06:53,793 --> 00:06:58,641
+going to do that until we're no longer 
+unsafe and what I've written here is that 
+
+95
+00:06:58,641 --> 00:07:02,281
+d obstacle should be. 
+Strictly greater than d safe plus some 
+
+96
+00:07:02,281 --> 00:07:05,237
+epsilon. 
+And the reason we want this epsilon here 
+
+97
+00:07:05,237 --> 00:07:09,647
+is that we don't want to end up switching 
+too quickly so if we get rid of the 
+
+98
+00:07:09,647 --> 00:07:14,221
+epsilon, we're immediately in this 
+situation where we might have ZnO or very 
+
+99
+00:07:14,221 --> 00:07:18,902
+very rapid switches so this would be a 
+switched hybrid automaton that switches 
+
+100
+00:07:18,902 --> 00:07:23,227
+between behaviors and its kind of clear 
+how we would design that. 
+
+101
+00:07:23,227 --> 00:07:28,127
+Blending on the other hand is not as 
+straight forward, so lets say that we 
+
+102
+00:07:28,127 --> 00:07:33,377
+have the same setup as before and lets 
+define a blending function as a function 
+
+103
+00:07:33,377 --> 00:07:38,272
+of the distance to the obstacle. 
+So this blending function is going to be 
+
+104
+00:07:38,272 --> 00:07:43,724
+For a given distance do its just going to 
+take on a value between 0 and 1 and the 
+
+105
+00:07:43,724 --> 00:07:49,390
+idea is that if this is 1 say we're only 
+going to the goal and if its 0 we're only 
+
+106
+00:07:49,390 --> 00:07:53,658
+avoiding obstacles. 
+Here's an example, where sigma is 0.75 
+
+107
+00:07:53,658 --> 00:07:57,472
+which means that I take you know 75 
+percent of this. 
+
+108
+00:07:57,472 --> 00:08:02,447
+Vector and I take 25% of this vector. 
+That's what the blending is doing and 
+
+109
+00:08:02,447 --> 00:08:07,422
+what I'm doing now is I'm taking this 
+little snippet, adding it on here and 
+
+110
+00:08:07,422 --> 00:08:10,622
+getting this as my new direction of 
+travel. 
+
+111
+00:08:10,622 --> 00:08:15,672
+So if I do that I get the green arrow 
+here and the green arrow would now be the 
+
+112
+00:08:15,672 --> 00:08:19,894
+blended direction. 
+So x dot is going to be 0.75 in this case 
+
+113
+00:08:19,894 --> 00:08:25,874
+of going towards to goal and 1 minus 0.75 
+which is 0.25 of avoiding obstacles. 
+
+114
+00:08:25,874 --> 00:08:32,369
+So this is a very natural way in which 
+you can actually blend blend these two 
+
+115
+00:08:32,369 --> 00:08:39,329
+types of behaviors now you have to design 
+the, the blending function and the very 
+
+116
+00:08:39,329 --> 00:08:44,609
+standard way to do it is something like 
+An exponential like this. 
+
+117
+00:08:44,609 --> 00:08:50,324
+So, what's going on is sigma is basically 
+one for large do values and when sigma is 
+
+118
+00:08:50,324 --> 00:08:57,360
+1 that means they were only going towards 
+goal. Then as we get closer to the goal d 
+
+119
+00:08:57,360 --> 00:09:03,042
+not becomes or do becomes small, then all 
+were doing is avoiding obstacle. 
+
+120
+00:09:03,042 --> 00:09:07,132
+And, basically, the parameter here, you 
+get the tweak, is beta. 
+
+121
+00:09:07,132 --> 00:09:11,457
+Which tells you, how quickly is this 
+thing going to decay off? Is it going to 
+
+122
+00:09:11,457 --> 00:09:15,612
+go like this, or is it going to be 
+slower? That's, that's really the, the 
+
+123
+00:09:15,612 --> 00:09:20,492
+design choice we would have to, to make. 
+If we're using this kind of exponential 
+
+124
+00:09:20,492 --> 00:09:25,029
+blending function, 
+which for the record is quite standard. 
+
+125
+00:09:25,029 --> 00:09:31,124
+so the punch lines behind this lecture is 
+really that we,we have two choices when 
+
+126
+00:09:31,124 --> 00:09:35,038
+it comes to, switching, or mixing 
+behaviors. 
+
+127
+00:09:35,038 --> 00:09:38,260
+One is to 
+switch hard between avoiding obstacles 
+
+128
+00:09:38,260 --> 00:09:41,349
+and going to goal. 
+And the other is to kind of blend them. 
+
+129
+00:09:41,349 --> 00:09:45,373
+And as we've seen, there are drawbacks 
+and benefits with both of them. 
+
+130
+00:09:45,373 --> 00:09:49,465
+So, if you're switching hard, you can 
+guarantee that your system doesn't do 
+
+131
+00:09:49,465 --> 00:09:52,858
+anything stupid but you get a bumpy ride 
+potentially out of it. 
+
+132
+00:09:52,858 --> 00:09:56,891
+If you're blending, you get something 
+much nicer and smoother out but, the 
+
+133
+00:09:56,891 --> 00:10:00,822
+guarantees are kind of gone. 
+So of course, what we want to do is have 
+
+134
+00:10:00,822 --> 00:10:04,504
+our cake and eat it. 
+Meaning we want to take what's best with 
+
+135
+00:10:04,504 --> 00:10:07,363
+both of them. 
+So, we want to get the performance 
+
+136
+00:10:07,363 --> 00:10:12,201
+guarantees that the hard switches give us 
+but the smooth ride that the blending 
+
+137
+00:10:12,201 --> 00:10:15,425
+gives us. 
+And the answer to that is surprisingly 
+
+138
+00:10:15,425 --> 00:10:20,383
+enough going to be this induced Sliding 
+mode that we've already talked about. 
+
+139
+00:10:20,383 --> 00:10:23,631
+That is going to give us the means by 
+which we can do. 
+
+140
+00:10:23,631 --> 00:10:26,183
+We can walk and chew gum at the same 
+time. 
+
+141
+00:10:26,183 --> 00:10:31,250
+Yet, somehow guaranteeing that we don't 
+trip over just because we started to chew 
+
+142
+00:10:31,250 --> 00:10:33,940
+gum. 
+So in the next lecture, we're going to 
+
+143
+00:10:33,940 --> 00:10:35,753
+start approaching this issue. 

@@ -1,0 +1,162 @@
+[MUSIC] Okay, so we've heard Marco explain in
+more detail how you access lots of different images and arrange them and
+put them on the screen. And we've heard Matt tell you a lot more
+detail about how sound is organized, how to get sounds, and
+how to do things with them. We've got an example that we've prepared
+for you, for you to munge around with and play with called DJ Tube and
+it's like a really basic example DJVJ app that you can expand on and
+develop yourself. Now to start with, before you can really make interesting audio visual apps,
+you have to have some good graphics. You can make these yourself,
+and I'm sure many of you will. But a lot of you might just want to get
+started without having to have all that hassle and
+just be able to drop something in. You'll find in the example,
+the DJ Tube example, there's a sample movie which
+Marco will show you some frames of just a tube train, I want to
+show you where I got that from and how you prepare it for use in this app. So normally if I'm bored, I'm looking for
+images and I don't want to have to pay huge amounts of royalties,
+I go to the Internet Archive. If you've never been to
+the Internet Archive, have you ever been on the Internet? I don't know if that is
+probably the best or one of the best sites on the Internet and
+one of the longest standing. You can do some cool things
+on the Internet Archive. You can look up websites and
+see the way they were in 1994. I don't know if that interests you or not. I guess it's of limited interest,
+but you can also get access to a huge array
+of copyright-free video. And that's great, so
+we're going to start there. The first thing I want to do
+is I'm going to type VJ loops, which is about as easy as it gets. You'll see there I've got VJ loops,
+quickly followed by VJ loops George Bush, although there aren't any George Bush VJ
+loops so you'll have to upload your own. That's the thing about the Internet
+Archive, if you do make some cool video, you can always upload it there and
+it's a nice place for it to be stored and
+it's a nice way of giving back. But you should be able to
+use most of this stuff and you'll see that there are loads and loads
+and loads of VJ loops for you to use. So for example,
+here's a bunch of video stuff, and this is mainly, I think people dancing
+in a club, put through a red filter. Now you could probably do that yourself,
+or if you're at home and don't happen to be in a club,
+you can just go to the archive. because there's shed loads of stuff
+there that you can try and use. Once you've got a video,
+you can manipulate it, you can treat it using iMovie,
+or Adobe Premier, or any other kind of editing
+software that you like. A lot of people use Final Cut Pro. We're not going to show you
+any of that stuff today. It's up to you. What you really need to be able to do
+before you can make it work inside a mobile app is you need to be able
+to cut it into individual frames. Why, why is that? Well, I'll tell you why. That's because most mobile devices,
+when they play back video, that's fine, they've got no problem playing back video. The problem they have is in allowing you
+to manipulate that video effectively, i.e., change the speed of playback or
+skip from one frame to another. These are the sorts of things that when
+you're making any kind of multimedia app, you want to be able to do with video. It's not enough just to be able
+to play a video file back. That's really simple. What we want to show you how to do is
+how to make something which you can edit in real time, in time to music,
+that's what our DJ Tube app does. So we need to split it
+into individual frames. And we've written a piece of software for
+you to allow you to do that. So you download a video and
+then when you've downloaded the video, you can run a piece of software
+that we've prepared for you. I'm going to just locate it now. It will be in your Lesson 2 document,
+so go to your Lesson 2 documents. I'm just going there now. Bear with me while I look slightly mad. Here we are. It's in Coursera > Lessons > Lesson2
+> Week2 and it's called ImageSaver. Now, ImageSaver You might find it's
+actually got a bunch of frames in it. So I'm going to remove those frames,
+and I'm going to launch it, and it's a processing sketch. It asks you for a QuickTime movie. And it creates a series
+of individual frames, so, I've got here a movie which is, I think we recorded
+straight from the Internet. Let me just see if I can find it. Oh yeah, here we go. So here it is,
+this one's from the Internet Archive. And it runs through the video and makes it into a series of
+individual frames, like so. When that's done, click stop and
+go to the Data directory. Actually, you just go to the directory
+where your ImageSaver application is, the one I just showed you about, and
+you'll see we've got movie0, movie1, movie2, movie3, movie4, movie5. Now, all film is made up of individual
+frames as you probably know. And each frame contains
+the same scene often, but with some elements of the scene moved. So by stringing these frames together,
+we can control that motion. Now, I'm going to copy this
+stuff into my directory here. I've got DJTube, here it is,
+my data folder > Animation_data, and I'm going to paste it in. There it is, neatly pasted in. And when I run this,
+let's close the ImageSaver, you'll see, I've got exactly the same code that
+Marco has been telling us about. Animation_data, movie is the name of the
+actual movie, and then we've got a number. We know there's a 134 images because I
+know that's the biggest number on any of those images. Let's just check that's true. Yeah, 134, so that's the last image
+in the sequence, and we load it in. Now, if we run that, you can see it here. I'm just going to show you how
+that works on the iPad because I think I have it prepared. Here we go. Let's have some audio and
+when I start, it plays it back. [MUSIC] And I can also change it. [MUSIC] And you'll notice that when I
+change the speed of the app, it's not just the image that slows down,
+it's the audio that slows down. So it'll synchronizes all those
+image frames with the audio frames. And I can also get two loops at once. [MUSIC] That's all right. [MUSIC] And scratch them. [MUSIC] So let's have a look at how that works. So, actually,
+before we go on to see how that works, you'll notice there's
+also this black record. This record is spinning round and changing
+speed based on how fast it's playing back. Now I've cheated. I could do it in two ways. I could do it by getting one image and
+rotating it, or I could use the same technique
+that Marco introduced to you, which we've just gone
+through with our video. We can make a series of frames
+of a record deck rotating, and we can just animate them in as a sequence. So that's what we've done in this case. If I show you in the data folder,
+you'll see we've got black-record.png, and
+you'll notice it's a PNG. The main reason it's a PNG is that
+we can have a transparency which means that we don't see a square
+image with a round thing inside it. It's a PNG file, a PNG file, and that means it can have
+a transparent background. Actually, PNG files can have
+transparent insides as well, so you can have holes in them. We have an example of that just here,
+I'll show you. We have a TV. If I show you the TV image,
+it's actually transparent on the inside. So we have the TV in our application,
+and we place the video behind it, and the TV sits on top of it. But the black record,
+we've got a different position. If I cycle through all of these images, we got a different position for
+each of the different rotations and we rotate around, and that's how we
+create the illusion of it moving. And we update this image based
+on the speed of playback. So let's quickly have
+a look at how we do that. You can see here, we load those images in, we've loaded all
+the images from the movie. We've loaded in the black-record
+as a sequence of images. We've loaded in the TV. They're the only images that we have. We've loaded in our sounds in the same
+way that we did with last week's session. And then we're doing exactly
+what Marcos described to position all the elements on the screen. And then you'll see that
+we can change the frame, the current frame,
+based on the speed, okay? So every time we go through
+the draw loop we can add 1 to the currentFrame number and
+multiply by the current speed. And what that does is it just
+tries to go from one part of the image sequence to the next
+part of the image sequence. But because it's multiplied by the given
+speed, it can slow it down or speed it up. I'll look again at that
+in a bit more detail, but this value currentFrame tells us
+what the current frame should be. And we use that to access
+the current record. Okay, so moving on, how do we know when
+we've actually selected a specific record? What we want to happen is we want to
+touch the middle of the record or anywhere around the record and we want
+it to start playing when we do that. And then when we touch it again,
+we want it to stop. So here's a bit of code that does that. Basically, it's the dist method again and
+we get the distance from the current mouse position
+to the center of the record. And if that's less than
+the width of the record player, then we basically say it's a hit and
+we play back the sound. Now there's two of these methods,
+one for each record deck, and that means that we can independently know
+whether the user has touched one record or the other and
+play back the appropriate sound. And it's all about
+getting the distance and checking whether it's less than the width. So what we're basically saying is if
+the mouseX and mouseY position are within the range of the entire graphic, then
+that means the user's pressed the record. And we have one of these methods for
+both records as I've said. I've also got another mouse interaction
+which is a drag interaction, and this changes the speed adjustment. So how do we synchronize the two loops? [MUSIC] Now, they're not actually the same speed. What they are, are two loops trimmed in
+the same way that Matt was showing you. So that they have the same number of
+pauses, the same number of actual pauses, but that doesn't mean they're
+the same length in time. They could be entirely different speeds. So, there's an easy way of
+synchronizing these two loops together. One loop acts as the master, and
+the other acts as the slave. If we know the length of each loop, we can synchronize the master
+loop to the slave loop. So, the speed of the second record
+player is basically a ratio. So if it was a one, it would be,
+the speed ration of one, which means the current speed. If it's naught 0.5, it would be a speed
+ratio of one half, so it's half the speed. If it's two,
+it's a speed ratio of twice the speed. Now if we get the length of
+the second player in milliseconds and we divide it by the length of
+the first player in milliseconds. So we take the first loop,
+we get the length in milliseconds, and we divide it by the length. Sorry, we get the second loop, we get the
+length of the second loop in milliseconds, and we divide it by
+the length of the first loop. Then that gives us a ratio, which tells us how fast the second
+record player should go. And that's what this is doing here. player2.speed is player2.getLengthMs
+divided by player1.getLengthMs. And that gives us our actual speed ratio. So player2's speed is found
+by dividing it's length by the length of the master loop. And in this case,
+player1 is the master loop. But as I've already described, we can change the speed using
+the speedAdjust variable. And basically, the mouse and touch
+interaction changes the multiplier, and you can see there's a bit of
+code here that handles that. player1.speed is always going to be
+equal to the same speed adjustment. So if I've got my mouse over here,
+that's the master loop and that's the speed for it. [MUSIC] Player2's speed is as I've just described,
+it's the length of player2 divided by the length of player1
+multiplied by the speed adjustment. And then the current frame, which is the
+frame of the video, is current frame plus one times the speed adjustment and that's
+what gives us this nice interaction. [MUSIC] So they're both really fast and
+then they're both really slow and the video stays in synch. [MUSIC] I think I like it when
+it's like this the best. [MUSIC] Out of time and really slow. [MUSIC]

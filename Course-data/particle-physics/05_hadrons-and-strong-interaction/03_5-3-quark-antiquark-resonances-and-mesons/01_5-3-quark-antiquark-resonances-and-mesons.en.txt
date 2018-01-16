@@ -1,0 +1,76 @@
+[MUSIC] In this module, we are in the process
+of discussing the internal structure of hadrons and strong interactions. In this video, we discuss mesons, which are bound states between quarks and
+antiquarks. After following this video, you will know
+the basic mechanisms that bind quarks and antiquarks to form mesons, and
+their excited states and their spectra, which provide information about the nature
+and behavior of the binding force. In addition to the baryons and
+their resonances, which we have already treated
+in the previous video, there are bound states between quarks and
+antiquarks which we call mesons. If their quantum numbers are right,
+they can be produced in vacuo by a virtual photon,
+as shown in this Feynman diagram. For light quarks,
+their mass is dominated by binding energy. For heavy quarks, their mass is slightly
+lower than the sum of the masses of the corresponding quark pair. An example is the production
+of rho mesons, a bound state between light quarks,
+which is shown in this Feynman diagram. Resonances can also appear as intermediate
+states in hadronic reactions. In this case, there's obviously more
+freedom regarding their quantum numbers. In general,
+bound states between quarks and antiquarks have a rather short lifetime,
+especially if heavy quarks are involved. This is due to the substantial phase
+space available for their decay. The energy dependence of
+the electron-positron cross section around a resonance generally follows
+a Breit-Wigner function, which is shown in this equation. M is the mass and
+Gamma is the width of the resonance. The cross section is reduced
+to half of its maximum value, sigma_max, for square root of s equal
+to M ± Gamma/2. The lifetime of the resonance is
+the inverse value of the width, tau is equal to one over gamma. The form of the Breit-Wigner function
+resembles the squared amplitude of a classical damped oscillator. Square root of s corresponds to the
+frequency of the external periodic force, M to the resonance frequency and
+Gamma to the damping factor. The cross section in this analogy
+appears as the squared amplitude of the oscillation,
+as shown in the graph on the left. For resonances between light quarks,
+such as rho and omega, one observes widths from a few MeV to 150
+MeV, corresponding to lifetimes between 10^-22 and 10^-24 seconds. They are produced in a resonant manner
+by the intermediate photon when the mass of the virtual photon is sufficiently
+close to that of the meson. When produced this way they must
+obviously have spin one and charge zero, just as the photon does. They decay into pions. Around a mass of about one GeV,
+one can produce the Phi resonance, which is an s-sbar bound state,
+which decays into strange particles. It's width is narrow,
+of the order of 4.4 MeV. Around 3 GeV, we find the J/Psi
+resonance, the lowest lying c-cbar bound state, as well as its
+excited states, the Psi mesons. Their width are small,
+about 90 keV for the J/Psi, itself. Their lifetime is thus long, and the 
+e+e- -> hadron cross section is significantly enhanced around the
+resonance energy, as shown in this plot. Close to 10 GeV, the Upsilon resonances
+are produced, made of b-bbar pairs. We see on the right the 
+e+e- -> hadrons cross section around the Upsilon_1s resonance,
+and its excited states, Upsilon_2s and Upsilon_3s,
+all mesons formed by b-bbar states. The states are distinguished by
+the relative angular momentum of the two quarks. The spins are always parallel
+to produce a vector meson. The study of resonance states, especially
+those of heavy quarks, allow us to better understand the potential generated
+by the strong force that binds quarks and antiquarks into mesons, as well as also
+the decay mechanisms for heavy quarks. As an example, the figure shows the mass
+spectrum and decay scheme of c-cbar and b-bbar resonances. The energy levels indicate that
+the potential between two quarks has two terms. The parameter alpha_s, of order of 0.2, is the strong interaction analog of the
+electromagnetic fine-structure constant. The first term diminishes with distance. The second term, on the contrary,
+grows with distance and keeps the two quarks from being separated. The constant in this confining term
+is of the order of 1 GeV/fm. In video 5.4, we will discuss in more
+detail the properties of the strong interactions which provide
+this binding force. The peaks of the cross section around
+resonances invites to build storage rings for the mass production of
+the corresponding states. The collider DAFNE in Frascati,
+Italy is one such factory dedicated to the production
+of Phi resonances. The Beijing e+e- storage ring, BEPC,
+produces J/Psi and Psi mesons. The PEP-II collider in
+the United States and KEKB in Japan are factories for
+the Upsilon and other b-bbar mesons. The systematic decrease of
+the width with the mass of the resonance could make you believe that
+a t-tbar resonance would be very narrow, and thus have a long lifetime and
+a significant cross section. This, however, is not at all the case. The top quark is so heavy, on the order
+of 175 GeV, that the phase space for its decay becomes enormous. The t-quark lifetime is
+thus extremely short. It decays before it can
+even form a bound state. Consequently, there will be hardly
+an increase in e+e- cross section at the threshold for
+the production of pairs of top quarks. In the next video, Mercedes will
+discuss what all of this means for the properties of strong interaction. [MUSIC]

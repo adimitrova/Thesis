@@ -1,0 +1,583 @@
+1
+00:00:00,000 --> 00:00:03,250
+Alright, so let's dive into projections a little bit more.
+
+2
+00:00:03,250 --> 00:00:06,745
+And for this, I'd like to use the aggregation framework.
+
+3
+00:00:06,745 --> 00:00:10,270
+As is the case with much of the way that MongoDB works,
+
+4
+00:00:10,270 --> 00:00:13,975
+particularly with respect to reading and writing data.
+
+5
+00:00:13,975 --> 00:00:17,440
+Nearly anything that you can do in the MongoDB query language,
+
+6
+00:00:17,440 --> 00:00:19,645
+you can do in the aggregation framework,
+
+7
+00:00:19,645 --> 00:00:21,580
+and with the aggregation framework,
+
+8
+00:00:21,580 --> 00:00:24,415
+we have even more power in terms of projections,
+
+9
+00:00:24,415 --> 00:00:27,670
+which are important for reshaping data as
+
+10
+00:00:27,670 --> 00:00:31,455
+we're going to want to do in cleaning up this movie's data set.
+
+11
+00:00:31,455 --> 00:00:33,830
+Now for a number of examples here,
+
+12
+00:00:33,830 --> 00:00:37,670
+what I'm going to do is just experiment a little bit to show
+
+13
+00:00:37,670 --> 00:00:42,180
+you the ways in which we can use the aggregation framework for ETL work.
+
+14
+00:00:42,180 --> 00:00:44,285
+And as part of these examples,
+
+15
+00:00:44,285 --> 00:00:47,765
+we'll use the movies_scratch collection
+
+16
+00:00:47,765 --> 00:00:52,655
+as the place where we create output to look at examples.
+
+17
+00:00:52,655 --> 00:00:54,455
+Now for this type of exploratory work,
+
+18
+00:00:54,455 --> 00:00:57,700
+there's no reason to run against the entire collection.
+
+19
+00:00:57,700 --> 00:00:59,975
+So what I'm going to do with all of these examples
+
+20
+00:00:59,975 --> 00:01:02,990
+is limit the documents that I'm working
+
+21
+00:01:02,990 --> 00:01:05,720
+on to the first 100 in the collection using
+
+22
+00:01:05,720 --> 00:01:09,205
+a dollar limit stage as the first stage in my pipeline.
+
+23
+00:01:09,205 --> 00:01:11,765
+And as I mentioned, we'll always be dumping
+
+24
+00:01:11,765 --> 00:01:16,645
+the results out to the movies_scratch collection.
+
+25
+00:01:16,645 --> 00:01:23,670
+Again, doing this just to build up our pipeline that's going to reshape these documents.
+
+26
+00:01:23,670 --> 00:01:26,810
+In considering reshaping, we're going to be looking at
+
+27
+00:01:26,810 --> 00:01:30,125
+a stage we've not yet looked at called dollar project.
+
+28
+00:01:30,125 --> 00:01:33,320
+Dollar project allows us to specify
+
+29
+00:01:33,320 --> 00:01:38,705
+a projection on all documents that pass through this stage.
+
+30
+00:01:38,705 --> 00:01:40,730
+So what we're going to do here is ignore the fact that
+
+31
+00:01:40,730 --> 00:01:43,040
+we've already looked at splitting several of
+
+32
+00:01:43,040 --> 00:01:48,815
+these fields into array valued fields using an add fields stage.
+
+33
+00:01:48,815 --> 00:01:52,220
+Where we're at at this point is that we've done enough work on
+
+34
+00:01:52,220 --> 00:01:57,500
+some fundamentals with respect to the aggregation pipeline, filtering,
+
+35
+00:01:57,500 --> 00:02:02,660
+projecting, that we can then really begin to talk about how to use
+
+36
+00:02:02,660 --> 00:02:08,590
+dollar project to do a lot of what we need to do with respect to cleaning up data.
+
+37
+00:02:08,590 --> 00:02:10,000
+So the best way to think about
+
+38
+00:02:10,000 --> 00:02:15,640
+a dollar project stage is as a tool for reshaping documents.
+
+39
+00:02:15,640 --> 00:02:17,755
+As we saw in a prior example,
+
+40
+00:02:17,755 --> 00:02:21,460
+I can stipulate that I want to include fields by
+
+41
+00:02:21,460 --> 00:02:25,120
+simply specifying the field name and a one.
+
+42
+00:02:25,120 --> 00:02:30,950
+And I could explicitly exclude fields with the use of a zero.
+
+43
+00:02:30,950 --> 00:02:38,845
+In this case, what we're going to do is pass through all fields of every document,
+
+44
+00:02:38,845 --> 00:02:40,945
+but for some we're going to do a little bit of work,
+
+45
+00:02:40,945 --> 00:02:46,060
+to either clean them up or to reshape them in some way so that
+
+46
+00:02:46,060 --> 00:02:48,580
+they meet our needs for the type of analysis and
+
+47
+00:02:48,580 --> 00:02:51,855
+application building we want to do down the road.
+
+48
+00:02:51,855 --> 00:02:55,360
+So any place in this project where you see one simply
+
+49
+00:02:55,360 --> 00:03:00,690
+means that field contains data that's good enough or that we're willing to work with.
+
+50
+00:03:00,690 --> 00:03:05,070
+It's only those that have something else that you really need to focus on.
+
+51
+00:03:05,070 --> 00:03:08,440
+There are a couple of silly fixes that we're making here as well.
+
+52
+00:03:08,440 --> 00:03:11,890
+And by silly I really mean just kind of tidying things up as
+
+53
+00:03:11,890 --> 00:03:15,615
+opposed to fixing a real problem. This is one example.
+
+54
+00:03:15,615 --> 00:03:17,475
+In the movie's initial data set,
+
+55
+00:03:17,475 --> 00:03:20,245
+there is a field called full plot.
+
+56
+00:03:20,245 --> 00:03:22,690
+The only real problem with that field from my perspective is that
+
+57
+00:03:22,690 --> 00:03:25,600
+it doesn't use camel case as the name of the field.
+
+58
+00:03:25,600 --> 00:03:32,540
+So what I'm doing here is effectively renaming that field to full Plot.
+
+59
+00:03:32,540 --> 00:03:35,500
+And as we saw with some other lessons,
+
+60
+00:03:35,500 --> 00:03:39,685
+this is a field path specifier and the semantics of this are,
+
+61
+00:03:39,685 --> 00:03:48,245
+find the value of the full plot key in all documents that pass through here.
+
+62
+00:03:48,245 --> 00:03:54,510
+And what we're going to do here then is create a new key with
+
+63
+00:03:54,510 --> 00:03:57,885
+this name and make as the value
+
+64
+00:03:57,885 --> 00:04:02,550
+for that key for every document that passes through this stage.
+
+65
+00:04:02,550 --> 00:04:06,913
+The value of the same key with the slightly different name,
+
+66
+00:04:06,913 --> 00:04:09,540
+full plot with no capital P.
+
+67
+00:04:09,540 --> 00:04:14,540
+Here we're doing something similar in renaming the rating field to rated.
+
+68
+00:04:14,540 --> 00:04:19,480
+I found with this data set that people get confused about what rating versus rated.
+
+69
+00:04:19,480 --> 00:04:24,770
+The rating field is actually the MPAA rating, PG, R, PG-13.
+
+70
+00:04:24,770 --> 00:04:26,665
+And that with the name rating,
+
+71
+00:04:26,665 --> 00:04:32,150
+people tend to get confused thinking that its critics review or a viewer's review.
+
+72
+00:04:32,150 --> 00:04:35,340
+But don't have that problem if we rename it rated.
+
+73
+00:04:35,340 --> 00:04:38,200
+And then you'll notice here that what we're doing is
+
+74
+00:04:38,200 --> 00:04:43,305
+that same split only I've accidentally named it actors instead of cast.
+
+75
+00:04:43,305 --> 00:04:48,190
+So fixing that, you'll note that we have that same split for each of these six fields
+
+76
+00:04:48,190 --> 00:04:54,525
+here to convert each of the string values for these fields to arrays.
+
+77
+00:04:54,525 --> 00:04:56,725
+But the cool thing about project is that,
+
+78
+00:04:56,725 --> 00:04:59,815
+because nowhere in here do we specify that
+
+79
+00:04:59,815 --> 00:05:03,040
+the field director or writer or genre should be
+
+80
+00:05:03,040 --> 00:05:09,940
+passed along out of this stage by specifying director colon one for example.
+
+81
+00:05:09,940 --> 00:05:15,190
+We are not only splitting the string values into arrays,
+
+82
+00:05:15,190 --> 00:05:17,705
+but we're also renaming these fields to their plural form.
+
+83
+00:05:17,705 --> 00:05:19,795
+So instead of director we'll have directors,
+
+84
+00:05:19,795 --> 00:05:22,810
+and instead of genre we'll have genres for example.
+
+85
+00:05:22,810 --> 00:05:25,150
+So both the splitting and renaming of
+
+86
+00:05:25,150 --> 00:05:28,825
+the same kind that we did when he renamed these two fields.
+
+87
+00:05:28,825 --> 00:05:32,270
+And lastly, what I'd like to point out is
+
+88
+00:05:32,270 --> 00:05:36,775
+that we're actually going to create an embedded document here for IMDb.
+
+89
+00:05:36,775 --> 00:05:38,860
+The movie's initial data set,
+
+90
+00:05:38,860 --> 00:05:40,500
+if we take a look at this encompass,
+
+91
+00:05:40,500 --> 00:05:43,885
+currently has field values for IMDb rating, IMDb votes.
+
+92
+00:05:43,885 --> 00:05:48,950
+In fact there are three keys that all lead off with the name IMDb.
+
+93
+00:05:48,950 --> 00:05:52,395
+So rather than do that in this data set,
+
+94
+00:05:52,395 --> 00:05:57,750
+what I'd like to do instead is have a single IMDb key and as its value,
+
+95
+00:05:57,750 --> 00:05:59,415
+I want not a scalar value,
+
+96
+00:05:59,415 --> 00:06:01,560
+not a string, and not an array,
+
+97
+00:06:01,560 --> 00:06:07,955
+but instead an embedded document or in Python parlance, a dictionary.
+
+98
+00:06:07,955 --> 00:06:12,495
+And in this case the dictionary then will have the keys ID rating and votes
+
+99
+00:06:12,495 --> 00:06:17,370
+and all we're going to do here is use the value
+
+100
+00:06:17,370 --> 00:06:23,830
+for the IMDb rating key and the IMDb votes key and simply use those values for
+
+101
+00:06:23,830 --> 00:06:30,850
+these new fields that I'm creating in this embedded document here as the value for IMDb.
+
+102
+00:06:30,850 --> 00:06:33,160
+This is not strictly necessary.
+
+103
+00:06:33,160 --> 00:06:37,780
+I'm providing this merely as an example of some of the flexibility that
+
+104
+00:06:37,780 --> 00:06:44,360
+the MongoDB document model provides to us in terms of how we structured data.
+
+105
+00:06:44,360 --> 00:06:46,350
+The query language and
+
+106
+00:06:46,350 --> 00:06:50,748
+the aggregation framework fully support this type of embedded document,
+
+107
+00:06:50,748 --> 00:06:55,755
+and there are lots of reasons why you might want to do this in a data model.
+
+108
+00:06:55,755 --> 00:07:00,700
+We're looking at one very simple reason here and that is simply to save a little space.
+
+109
+00:07:00,700 --> 00:07:03,540
+In other lessons, you'll get plenty of experience
+
+110
+00:07:03,540 --> 00:07:07,520
+querying on these types of embedded document fields.
+
+111
+00:07:07,520 --> 00:07:11,405
+Okay, so let's take a look at this as a whole.
+
+112
+00:07:11,405 --> 00:07:17,280
+We're passing through every field that we find in movies documents.
+
+113
+00:07:17,280 --> 00:07:20,160
+Some of them pass straight through like title,
+
+114
+00:07:20,160 --> 00:07:22,605
+year, released and runtime.
+
+115
+00:07:22,605 --> 00:07:26,275
+Others, we're splitting into arrays and renaming to
+
+116
+00:07:26,275 --> 00:07:31,290
+their plural form and others we're doing some simple renaming.
+
+117
+00:07:31,290 --> 00:07:34,575
+And finally we're doing some reshaping here,
+
+118
+00:07:34,575 --> 00:07:36,860
+creating an embedded document.
+
+119
+00:07:36,860 --> 00:07:44,390
+So project allows us to define the shape of documents that are output from
+
+120
+00:07:44,390 --> 00:07:53,860
+this stage using field values for documents that are input to a project stage.
+
+121
+00:07:53,860 --> 00:07:56,055
+Now if we run this,
+
+122
+00:07:56,055 --> 00:08:00,485
+let's take a look at what we get as output.
+
+123
+00:08:00,485 --> 00:08:07,175
+So again, we're sending the output here to the movies_scratch collection.
+
+124
+00:08:07,175 --> 00:08:09,700
+And I also want to point out that we should only have
+
+125
+00:08:09,700 --> 00:08:11,320
+100 documents because we're limiting
+
+126
+00:08:11,320 --> 00:08:14,110
+the documents that we look at from the very beginning.
+
+127
+00:08:14,110 --> 00:08:18,490
+Okay, and if we go into our movies_scratch collection,
+
+128
+00:08:18,490 --> 00:08:22,205
+note that there are just the one hundred documents that we expect.
+
+129
+00:08:22,205 --> 00:08:25,095
+And let's take a look at the shape of these documents.
+
+130
+00:08:25,095 --> 00:08:30,650
+We're doing this as a test of whether our strategy worked as intended.
+
+131
+00:08:30,650 --> 00:08:33,800
+So here we see title and year, runtime,
+
+132
+00:08:33,800 --> 00:08:38,755
+released being passed through as they were found in the movie's initial collection.
+
+133
+00:08:38,755 --> 00:08:42,110
+Note that we have a directors, cast,
+
+134
+00:08:42,110 --> 00:08:45,990
+writers, genres, languages, and countries array for each of those fields.
+
+135
+00:08:45,990 --> 00:08:51,360
+But note also that we don't have that redundant director or writer or
+
+136
+00:08:51,360 --> 00:08:58,320
+a genre field that we had when we used the add field's stage in an earlier lesson.
+
+137
+00:08:58,320 --> 00:09:01,025
+Lastly, we see that we have
+
+138
+00:09:01,025 --> 00:09:06,535
+an embedded document here for IMDb with the expected values here.
+
+139
+00:09:06,535 --> 00:09:12,050
+And of course full plot and rated were renamed as expected.
+
+140
+00:09:12,050 --> 00:09:16,697
+One thing I didn't mention is that we actually also renamed last updated,
+
+141
+00:09:16,697 --> 00:09:19,630
+again introducing camel case.
+
+142
+00:09:19,630 --> 00:09:25,460
+And you can see that if you look at the very last field in our project stage.
+
+143
+00:09:25,460 --> 00:09:29,010
+Okay, so that's an initial example of using project to do
+
+144
+00:09:29,010 --> 00:09:32,449
+some fairly simple reshaping of our documents
+
+145
+00:09:32,449 --> 00:09:35,100
+and I would say leaning toward
+
+146
+00:09:35,100 --> 00:09:40,000
+extremely useful reshaping when it comes to splitting strings into arrays.

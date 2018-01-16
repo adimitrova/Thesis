@@ -1,0 +1,690 @@
+1
+00:00:00,000 --> 00:00:10,668
+[MUSIC]
+
+2
+00:00:10,668 --> 00:00:15,258
+During this fourth module,
+we are going into more details
+
+3
+00:00:15,258 --> 00:00:20,790
+about the properties of
+electromagnetic interactions.
+
+4
+00:00:20,790 --> 00:00:26,838
+In this fourth video, we describe Compton
+scattering, which we already encountered
+
+5
+00:00:26,838 --> 00:00:32,050
+in module 3 when we discussed
+the interaction of photons and matter.
+
+6
+00:00:33,130 --> 00:00:35,050
+After following this video,
+
+7
+00:00:35,050 --> 00:00:37,880
+you will be able to characterize
+Compton scattering,
+
+8
+00:00:37,880 --> 00:00:43,430
+which is the elastic scattering
+between a photon and an electron.
+
+9
+00:00:43,430 --> 00:00:49,492
+Describe how the polarization of
+the photon influences the process,
+
+10
+00:00:49,492 --> 00:00:53,808
+and understand why the
+annihilation of electron-
+
+11
+00:00:53,808 --> 00:00:58,505
+positron pairs into photons
+has similar properties.
+
+12
+00:00:58,505 --> 00:01:04,750
+We have not yet discussed that vector
+bosons, which carry forces, can also appear
+
+13
+00:01:04,750 --> 00:01:09,083
+as real particles, and
+matter particles as virtual ones.
+
+14
+00:01:09,083 --> 00:01:13,728
+Compton scattering, elastic scattering
+between a photon and an electron,
+
+15
+00:01:13,728 --> 00:01:19,520
+involves a virtual intermediate electron,
+as shown in this Feynman diagram.
+
+16
+00:01:19,520 --> 00:01:24,150
+The kinematics of the process is
+characterized by the energy omega
+
+17
+00:01:24,150 --> 00:01:28,450
+of the incident photon and
+the scattering angle theta,
+
+18
+00:01:28,450 --> 00:01:32,810
+the angle between k and k prime,
+which are the four-momenta of
+
+19
+00:01:32,810 --> 00:01:37,810
+the incidence photon and
+the outgoing photon, respectively.
+
+20
+00:01:37,810 --> 00:01:43,260
+The conservation of energy-momentum
+reduces the energy, omega prime,
+
+21
+00:01:43,260 --> 00:01:48,300
+of the outgoing photon compared
+to that of the incident one, omega,
+
+22
+00:01:48,300 --> 00:01:52,750
+if the reaction occurs
+on an electron at rest.
+
+23
+00:01:52,750 --> 00:01:59,920
+The reduction depends on the scattering
+angle theta and the photon energy itself.
+
+24
+00:01:59,920 --> 00:02:04,596
+The figure gives an example
+of this relationship for
+
+25
+00:02:04,596 --> 00:02:09,589
+a source of Am-241,
+which emits photon with
+
+26
+00:02:09,589 --> 00:02:14,865
+omega = 59.54 keV.
+
+27
+00:02:14,865 --> 00:02:18,515
+Because of Heisenberg's principle,
+we can in fact,
+
+28
+00:02:18,515 --> 00:02:24,295
+not know whether the photon in
+the final state is emitted after or
+
+29
+00:02:24,295 --> 00:02:28,305
+before the absorption
+of the incident photon.
+
+30
+00:02:28,305 --> 00:02:31,455
+So there are two configurations
+of the Feynman diagram
+
+31
+00:02:32,525 --> 00:02:34,815
+which are indistinguishable.
+
+32
+00:02:34,815 --> 00:02:37,826
+The processes can
+interfere with one another.
+
+33
+00:02:37,826 --> 00:02:42,698
+To calculate the cross section,
+we must then add the amplitudes and
+
+34
+00:02:42,698 --> 00:02:46,555
+square the result,
+as we explained in video 4.2.
+
+35
+00:02:46,555 --> 00:02:50,299
+For the differencial across cross-section,
+
+36
+00:02:50,299 --> 00:02:54,740
+one finds the so-called Klein-Nishina formula.
+
+37
+00:02:55,760 --> 00:02:58,900
+Two factors are of particular interest.
+
+38
+00:02:58,900 --> 00:03:01,507
+The first is the factor alpha squared,
+
+39
+00:03:01,507 --> 00:03:05,540
+which determines the order of
+magnitude of the cross section.
+
+40
+00:03:06,730 --> 00:03:11,705
+It result from the fact that
+each vertex introduces a factor of
+
+41
+00:03:11,705 --> 00:03:15,735
+e when constructing
+the invariant amplitude M.
+
+42
+00:03:15,735 --> 00:03:20,315
+Consequently, the cross-section, which is
+proportional to |M|^2,
+
+43
+00:03:21,960 --> 00:03:26,910
+which is proportional
+to the fourth power of e,
+
+44
+00:03:26,910 --> 00:03:31,400
+is proportional to the square of
+the fine structure constant alpha.
+
+45
+00:03:33,020 --> 00:03:38,670
+The second interesting factor involves
+the product of two four vector
+
+46
+00:03:38,670 --> 00:03:43,240
+of photon polarization, epsilon and
+epsilon prime.
+
+47
+00:03:43,240 --> 00:03:47,050
+These appear as the amplitude in
+the wave function of the free photon,
+
+48
+00:03:47,050 --> 00:03:51,590
+which is the solution of
+the homogeneous Maxwell equations.
+
+49
+00:03:51,590 --> 00:03:56,173
+Under the Lorenz gauge,
+these equations of motion constrain
+
+50
+00:03:56,173 --> 00:04:00,510
+epsilon such that k^2 = 0,
+
+51
+00:04:00,510 --> 00:04:03,150
+which is the condition for a real photon.
+
+52
+00:04:03,150 --> 00:04:05,870
+The gauge condition, ∂_µ A^µ = 0,
+
+53
+00:04:05,870 --> 00:04:10,932
+means that epsilon^µ k_µ = 0.
+
+54
+00:04:10,932 --> 00:04:15,394
+The four-vector of polarization
+epsilon, indicating the electric field
+
+55
+00:04:15,394 --> 00:04:20,460
+direction, is thus orthogonal to the
+four-momentum of the free photon k.
+
+56
+00:04:21,660 --> 00:04:25,810
+In addition,
+this gauge condition shows that the photon
+
+57
+00:04:25,810 --> 00:04:30,230
+will function as only three
+independent components, not four.
+
+58
+00:04:30,230 --> 00:04:34,380
+It is therefore justified to call
+the photon a vector particle.
+
+59
+00:04:37,169 --> 00:04:40,972
+When the polarization of
+the initial state is 0, and
+
+60
+00:04:40,972 --> 00:04:46,128
+that of the final state is not measured,
+we must average the cross-section
+
+61
+00:04:46,128 --> 00:04:52,450
+over the direction of the initial spins,
+and sum over those of the final state.
+
+62
+00:04:52,450 --> 00:04:57,580
+This must be done at the level of
+the cross-sections, not of the amplitudes,
+
+63
+00:04:57,580 --> 00:04:59,991
+because the spin is an observable,
+
+64
+00:04:59,991 --> 00:05:05,521
+making the contributions distinguishable
+as we discussed in video 4.2.
+
+65
+00:05:05,521 --> 00:05:10,980
+For the factor containing the polarization
+this results in a distribution
+
+66
+00:05:10,980 --> 00:05:15,965
+(1 + cos^2 theta) of
+
+67
+00:05:15,965 --> 00:05:21,114
+the scattering angle theta between
+the incoming and outgoing photons.
+
+68
+00:05:21,114 --> 00:05:28,145
+At high photon energy omega much larger
+than m, the total cross-section
+
+69
+00:05:28,145 --> 00:05:34,810
+is roughly inversely proportional to
+the square s of the total initial energy.
+
+70
+00:05:34,810 --> 00:05:39,420
+This is a property shared by all
+scattering processes between point-like
+
+71
+00:05:39,420 --> 00:05:40,021
+particles.
+
+72
+00:05:40,021 --> 00:05:44,559
+Their cross-section decreases
+with the square of the energy scale,
+
+73
+00:05:44,559 --> 00:05:47,290
+which characterizes the process.
+
+74
+00:05:47,290 --> 00:05:51,310
+Obviously, the square of the fine
+structure constant alpha,
+
+75
+00:05:51,310 --> 00:05:55,784
+again determines the order of
+magnitude of the cross section.
+
+76
+00:05:55,784 --> 00:06:00,514
+Compton scattering can be measured at
+
+77
+00:06:00,514 --> 00:06:05,096
+high energies using the Large Electron-
+
+78
+00:06:05,096 --> 00:06:09,676
+Positron collider, LEP, at CERN,
+
+79
+00:06:09,676 --> 00:06:15,168
+which operated during the 80s and 90s.
+
+80
+00:06:15,168 --> 00:06:20,483
+The incident photon beam is generated by the incoming
+electrons via the bremsstrahlung mechanism.
+
+81
+00:06:20,483 --> 00:06:24,600
+An accelerated charge 
+tends to emit photons.
+
+82
+00:06:24,600 --> 00:06:29,050
+Here the acceleration is caused by
+the electromagnetic force coming from
+
+83
+00:06:29,050 --> 00:06:31,066
+the particles in the other beam.
+
+84
+00:06:31,066 --> 00:06:36,640
+The electron or positron emits a photon
+in its original direction of motion.
+
+85
+00:06:36,640 --> 00:06:41,522
+The photon interacts with a positron or
+electron
+
+86
+00:06:41,522 --> 00:06:43,844
+n the other beam,
+via Compton scattering.
+
+87
+00:06:45,432 --> 00:06:50,124
+The outgoing electron and
+photon are observed in
+
+88
+00:06:50,124 --> 00:06:55,805
+the detector. As the initial photon
+connects two vertices it
+
+89
+00:06:55,805 --> 00:07:01,610
+is a virtual photon with k^2
+different from 0.
+
+90
+00:07:01,610 --> 00:07:05,929
+Our treatment of the Compton
+effect applies to real
+
+91
+00:07:05,929 --> 00:07:08,947
+photons with a k^2 = 0.
+
+92
+00:07:08,947 --> 00:07:12,394
+To apply it to this case,
+we select events for
+
+93
+00:07:12,394 --> 00:07:17,115
+which the mass of the initial
+photon is negligible compared to
+
+94
+00:07:17,115 --> 00:07:23,490
+the characteristic energy, that is to
+say k^2 << s.
+
+95
+00:07:23,490 --> 00:07:27,664
+The cross-section for
+Compton scattering with this quasi real
+
+96
+00:07:27,664 --> 00:07:32,720
+photons measured by the experiment 
+L3 at LEP is shown on the right.
+
+97
+00:07:32,720 --> 00:07:38,652
+The dependence on the initial
+energy square root of s predicted
+
+98
+00:07:38,652 --> 00:07:45,422
+by the calculation is in fact
+observed. It is proportional to 1/s.
+
+99
+00:07:45,422 --> 00:07:50,620
+Rotating the Compton scattering
+Feynman diagram by 90 degrees,
+
+100
+00:07:50,620 --> 00:07:53,660
+one obtains another process.
+
+101
+00:07:53,660 --> 00:07:59,070
+The annihilation of an electron-
+positron pair into a pair of photons.
+
+102
+00:08:00,570 --> 00:08:04,424
+Notice that we also convert
+the outgoing electron of
+
+103
+00:08:04,424 --> 00:08:08,525
+the Compton process into
+an incoming positron.
+
+104
+00:08:08,525 --> 00:08:12,645
+This remains without consequence
+because these two states are completely
+
+105
+00:08:12,645 --> 00:08:14,225
+equivalent.
+
+106
+00:08:14,225 --> 00:08:17,465
+We will come back to that in
+the beginning of module 6
+
+107
+00:08:17,465 --> 00:08:20,535
+when we discuss antiparticles
+in more details.
+
+108
+00:08:21,720 --> 00:08:26,013
+With the appropriate changes
+in the kinematic variables,
+
+109
+00:08:26,013 --> 00:08:31,846
+we can convert to the Compton scattering
+result directly into the cross-section for
+
+110
+00:08:31,846 --> 00:08:37,120
+pair annihilation in the center of
+mass frame and neglecting masses,
+
+111
+00:08:37,120 --> 00:08:41,808
+for s much larger than
+the square of the electron mass.
+
+112
+00:08:41,808 --> 00:08:45,519
+Note again the characteristic factor,
+alpha squared,
+
+113
+00:08:45,519 --> 00:08:49,566
+which comes from the coupling constants,
+and 1/s,
+
+114
+00:08:49,566 --> 00:08:54,729
+which characterizes the square of
+the energy available in the process.
+
+115
+00:08:55,910 --> 00:09:00,108
+We have chosen the center of mass
+frame where the electron and
+
+116
+00:09:00,108 --> 00:09:03,746
+positron collide with equal and
+opposite momenta.
+
+117
+00:09:03,746 --> 00:09:07,975
+The photons are therefore also emitted
+with equal and opposite momenta.
+
+118
+00:09:07,975 --> 00:09:10,036
+The scattering angle theta
+
+119
+00:09:10,036 --> 00:09:15,540
+is the angle between the incoming
+electron and the outgoing photons.
+
+120
+00:09:15,540 --> 00:09:19,560
+It is obvious that the angular
+distribution is symmetric under
+
+121
+00:09:19,560 --> 00:09:22,255
+theta going to theta plus π.
+
+122
+00:09:23,390 --> 00:09:29,960
+The factor (1 - cos^2 theta) in
+the denominator can come as a surprise,
+
+123
+00:09:29,960 --> 00:09:35,590
+because it makes the cross section diverge
+when the scattering angle approaches 0 or
+
+124
+00:09:35,590 --> 00:09:40,340
+180 degrees.
+Such divergence is not admissible.
+
+125
+00:09:40,340 --> 00:09:45,180
+The cross action that represent the
+probability must always respect
+
+126
+00:09:45,180 --> 00:09:51,037
+the upper limit of unitarity corresponding
+to a probability of 1 for the process.
+
+127
+00:09:51,037 --> 00:09:55,290
+Already the factor 1/s
+looks suspicious, but
+
+128
+00:09:55,290 --> 00:10:00,940
+the dangerous limit, s -> 0, cannot
+be reached because of the threshold 
+
+129
+00:10:02,740 --> 00:10:07,230
+s > 4 m_e^2.
+
+130
+00:10:07,230 --> 00:10:10,590
+The angular divergence on
+the other hand is real.
+
+131
+00:10:10,590 --> 00:10:15,996
+It is finally not realized, because of
+higher order corrections which cancel it.
+
+132
+00:10:15,996 --> 00:10:22,211
+In fact, the perturbative expansion
+by orders of a small coupling constant,
+
+133
+00:10:22,211 --> 00:10:26,447
+always ends up converging
+in a quantum field theory
+
+134
+00:10:26,447 --> 00:10:30,930
+based on the principles
+of gauge invariance.
+
+135
+00:10:30,930 --> 00:10:36,827
+The demonstration of this fact has
+been rewarded by Nobel Prize in 1999 for
+
+136
+00:10:36,827 --> 00:10:39,140
+t’Hooft and Veltman.
+
+137
+00:10:39,140 --> 00:10:43,430
+In fact, the cross section
+is always really a finite quantity.
+
+138
+00:10:43,430 --> 00:10:49,020
+The figure shows the results of the
+measurement by the L3 experiment at LEP.
+
+139
+00:10:49,020 --> 00:10:54,022
+The cross section follows with great
+precision in absolute magnitude
+
+140
+00:10:54,022 --> 00:10:59,114
+and in energy dependence,
+the prediction of quantum electrodynamics.
+
+141
+00:10:59,114 --> 00:11:03,417
+In the next video,
+we give an example of an 
+
+142
+00:11:03,417 --> 00:11:07,516
+electromagnetic interaction
+between four fermions,
+
+143
+00:11:07,516 --> 00:11:13,263
+e+ e- annihilation into
+a fermion-antifermion pair.
+
+144
+00:11:13,263 --> 00:11:16,399
+[MUSIC]

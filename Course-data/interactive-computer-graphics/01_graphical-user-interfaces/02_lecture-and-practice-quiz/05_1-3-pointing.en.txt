@@ -1,0 +1,70 @@
+Okay. So, next topic is pointing. And so, what we introduce here is called
+the Ninja Cursors. A problem we address here, is that it's
+very, very difficult to point to a long-distance
+object very far away. So, today, the screen resolution is gets
+higher and higher. And then the screen gets bigger and bigger
+and you can even have multiple monitors. So in, in such a situation it's very hard
+to get a point, a very distant target with
+the mouse you have to you know, move the mouse many
+times to get the target, so this is the problem we're
+going to address. And then we propose a message to address
+this problem. Let me show you what we do. So, yeah, from here we discuss pointing
+with the mouse cursor. But this can be very tedious if some,
+target is far away like this way. So you have to clutch marks many times. [BLANK_AUDIO] So in the [UNKNOWN] program, we propose to
+use multiple cursors covering the screen. So here, we have so, four cursors. And we, if we have multiple cursors on the
+screen, you can just use a mouse cursor near the
+target object. So this can save time for pointing a
+distance target, that's the technique we propose in
+this paper. But the problem is that, ambiguity, so if
+you have multiple cursors and multiple objects
+in the screen. Then it's possible that, multiple pointers
+point to different targets at a time. So this is very problematic. [SOUND] So to address this problem we
+allow only one cursor to point some object at a
+time. So when a mouse cursor is in some other. Some object. Then another, other cursor needs to wait until the cursor moves out from the
+target. So here, the user moves the mouse pointer
+to the right continuously. And then, this one goes out. And, this one goes in. And the next one becomes in waiting state. So as you see pointing. [INAUDIBLE] pointers in a queue. When tries to, when trying to point to
+object. So, yeah let me describe again. So the basic idea of Ninja Cursors is to
+cover the screen with multiple syncronizedly
+moving cursors, like this way. And the user just use the nearest cursor
+to the target object. And this one effectively reduce the
+distance of the target. So it reduces average distance from the
+nearest cursor. It comes from D. To D divided by square n. So n means the number of cursors. And this one, this help you to point a
+distant, distant target. By the way, this is a little bit of
+background knowledge about pointing. So pointing is a very popular topic in HCA
+field. And then pointing performer this models by
+this kind of equation, and its called Fitt's
+law. So suppose you have mouse cursor here, and
+then you try to point a target with distance D, and suppose that the
+target size is W. And then, here we consider only one
+dimensional motion. And in this situation target acquisition,
+or pointing time is model like this. Time equals a plus b log b and then inside
+the log is 1 plus D divided by W. So which means, if the distance is longer,
+longer, then time gets longer and longer with the
+logarithmic function. And however, the we, width is, is, get
+bigger then time will be reduced. So that's equation. And Ninja Cursors, our technique
+effectively reduces this D. [BLANK_AUDIO] And as we have already discussed in the
+video there is a ambiguity problem. If multiple cursors point to multiple
+objects at a time, this can be a problem. So to address this problem we allow only
+one cursor point to a target. And others are blocked and in the waiting
+queue. So here green cursor points to this object
+and then this red one in the waiting queue, and then our
+user continuously moves a mouse cursor to the down, and then
+green one goes out, and then the red one goes into
+the object. And we provide a visual feedback Normal cursor, Pointing cursor and Blocked
+cursor. And also, we also provide visual feedback
+about the waiting time. So, yeah, that's it and here's the
+summary. So we discussed the problem of pointing a distant target on a very large high
+resolution displays. And then our solution is to show multiple
+cursors and use the nearest one. And we also describe how to address
+ambiguity problems. So original paper was published as Ninja
+Cursors, Using Multiple Cursors to Assist Target
+Acquisition on Large Screens. And pointing is a very, very popular topic
+in your field. In many publications. And here is a couple of interesting recent
+papers. One is bubbled cursors. And this mean, this bubble cursor
+technique changes the mouse size, depending with the target
+density. So if the target is dense, the mouse
+cursor gets smaller. But the target is vast, the mouse cursor
+gets larger. So it's a very interesting technique. Another is called drag and pop, pop and
+drag and pick. So as you see here, as you start to locate
+an object, then related icons jumps to near the cursor position to
+help you point. To help you do drag and drop efficiently. So that's it. Thank you.

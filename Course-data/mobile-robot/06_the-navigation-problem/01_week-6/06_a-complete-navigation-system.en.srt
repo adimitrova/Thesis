@@ -1,0 +1,639 @@
+1
+00:00:00,012 --> 00:00:03,729
+The missing piece of the navigation 
+puzzle was follow walls. 
+
+2
+00:00:03,729 --> 00:00:08,266
+And now we have it, in the sense that we 
+know how to move along boundaries of 
+
+3
+00:00:08,266 --> 00:00:11,422
+obstacles. 
+We also know which direction to go in and 
+
+4
+00:00:11,422 --> 00:00:16,520
+that was given by this sliding condition. 
+the one thing we don't know though is 
+
+5
+00:00:16,520 --> 00:00:21,468
+when to stop, because take a look here. 
+First of all, this is how follow wall, or 
+
+6
+00:00:21,468 --> 00:00:25,232
+go to goal is taking me. 
+Sliding tells me that, you know what, I 
+
+7
+00:00:25,232 --> 00:00:28,644
+should move up in this direction. 
+Let's look at this point. 
+
+8
+00:00:28,644 --> 00:00:32,660
+Go to goal wants me to go there. 
+Avoid obstacle wants me to go there. 
+
+9
+00:00:32,660 --> 00:00:38,497
+And if I draw this again a little better, 
+they are pointing in completely opposite 
+
+10
+00:00:38,497 --> 00:00:42,889
+directions. 
+And if I'm just sliding, I no longer have 
+
+11
+00:00:42,889 --> 00:00:47,474
+anywhere to go. 
+If I'm, instead using, in this case, r 
+
+12
+00:00:47,474 --> 00:00:50,582
+negative pi over 2 times u avoid 
+obstacle, 
+
+13
+00:00:50,582 --> 00:00:55,742
+then that's just going to keep me going 
+in a counterclockwise, 
+
+14
+00:00:55,742 --> 00:01:00,321
+sorry, in a clockwise manner. 
+so that's why this is the better behavior 
+
+15
+00:01:00,321 --> 00:01:05,218
+to use, even though sliding is useful to 
+go, to know which direction to start in. 
+
+16
+00:01:05,218 --> 00:01:08,382
+Now, if I do that, then I'm happily going 
+like this, 
+
+17
+00:01:08,382 --> 00:01:12,042
+but check out at this point. 
+Go to goal wants to go there. 
+
+18
+00:01:12,042 --> 00:01:16,236
+Avoid obstacle wants to go there. 
+We are no longer in conflict when it 
+
+19
+00:01:16,236 --> 00:01:20,715
+comes to the switching conditions so any 
+kind of sliding condition is going to 
+
+20
+00:01:20,715 --> 00:01:24,164
+fail because here. 
+I'm simply going to return to go to goal 
+
+21
+00:01:24,164 --> 00:01:28,651
+and then I'm going to just keep doing 
+this over and over again and I'm going to 
+
+22
+00:01:28,651 --> 00:01:32,414
+get stuck in this corner. 
+So, sliding is not answering when to stop 
+
+23
+00:01:32,414 --> 00:01:38,012
+sliding or when to stop following walls. 
+Instead, we need some other condition for 
+
+24
+00:01:38,012 --> 00:01:40,301
+this. 
+And here is what needs to happen. 
+
+25
+00:01:40,301 --> 00:01:45,434
+First of all, we need to [COUGH] excuse 
+me, have made enough progress. 
+
+26
+00:01:45,434 --> 00:01:49,637
+What does that means? 
+It means that if I'm switching here I'm 
+
+27
+00:01:49,637 --> 00:01:52,712
+kind of, I don't want to stop here, here, 
+here because in fact, 
+
+28
+00:01:52,712 --> 00:01:57,122
+I should stop when I'm closer to the goal 
+than where I was when I started sliding. 
+
+29
+00:01:57,122 --> 00:02:01,252
+Because otherwise, you can indeed end up 
+in a situation where you're moving 
+
+30
+00:02:01,252 --> 00:02:05,752
+successively further and further way from 
+the goal and basically you're switching 
+
+31
+00:02:05,752 --> 00:02:10,047
+your way away from where you want to be. 
+So, you want to insure that you're closer 
+
+32
+00:02:10,047 --> 00:02:13,632
+to the goal at the end of the maneuver 
+than you were when you began it. 
+
+33
+00:02:13,632 --> 00:02:16,892
+The other is that you have a clear shot 
+to the goal in some sense. 
+
+34
+00:02:16,892 --> 00:02:19,262
+Meaning that you can actually move 
+towards it. 
+
+35
+00:02:19,262 --> 00:02:22,317
+[COUGH] Excuse me. 
+Clear shot doesn't necessarily mean that 
+
+36
+00:02:22,317 --> 00:02:25,182
+there are no obstacles. 
+Becuase, let's say that the goal is there 
+
+37
+00:02:25,182 --> 00:02:28,811
+and here's a giant obstacle that I 
+haven't seen yet. 
+
+38
+00:02:28,811 --> 00:02:34,590
+I don't know about that, but from any 
+practical purpose, I somehow have a clear 
+
+39
+00:02:34,590 --> 00:02:38,812
+shot to, to the goal. 
+So, what we need to do is understand what 
+
+40
+00:02:38,812 --> 00:02:43,324
+these conditions mean. 
+Okay, let's say, that I started following 
+
+41
+00:02:43,324 --> 00:02:47,658
+walls at time tau. 
+So, let's say that I'm here, x at time 
+
+42
+00:02:47,658 --> 00:02:52,658
+tau, that's where I am. 
+Well, then progress, sufficient progress 
+
+43
+00:02:52,658 --> 00:02:59,425
+can simply say that the current position, 
+this is the current position x current, 
+
+44
+00:02:59,425 --> 00:03:04,693
+it needs to be closer to the goal than 
+where I was when I started my follow 
+
+45
+00:03:04,693 --> 00:03:07,474
+wall. 
+So, if I draw a circle here, at this 
+
+46
+00:03:07,474 --> 00:03:09,011
+distance around the, the goal, 
+let's pretend that this was a perfect 
+
+47
+00:03:09,011 --> 00:03:16,971
+circle, then, any point here is going to 
+be closer to the goal than where I 
+
+48
+00:03:16,971 --> 00:03:20,722
+started. 
+So, here are positions where I'm allowed 
+
+49
+00:03:20,722 --> 00:03:24,412
+to stop following walls. 
+But that's not enough. 
+
+50
+00:03:24,412 --> 00:03:29,363
+We needed this notion of clear shot also. 
+And the clear shot simply is this 
+
+51
+00:03:29,363 --> 00:03:32,765
+condition here, 
+where if I'm sitting here, then follow 
+
+52
+00:03:32,765 --> 00:03:36,440
+wall, sorry, go to goal wants to take me 
+in that direction. 
+
+53
+00:03:36,440 --> 00:03:39,462
+Avoid obstacle wants to take me in this 
+direction. 
+
+54
+00:03:39,462 --> 00:03:44,020
+And we already know how to check whether 
+or not they are somehow in agreement. 
+
+55
+00:03:44,020 --> 00:03:48,669
+What that means simply is that this 
+angle, the absolute value of this angle 
+
+56
+00:03:48,669 --> 00:03:53,201
+should be less than pi/2, 
+which we can simply encode by this inner 
+
+57
+00:03:53,201 --> 00:03:59,527
+product condition, which simply take and 
+compute u avoid obstacle transpose u go 
+
+58
+00:03:59,527 --> 00:04:04,218
+to goal and check if that's positive, 
+then we have a clear shot. 
+
+59
+00:04:04,218 --> 00:04:09,191
+We don't really know about other 
+obstacles but at least we have some 
+
+60
+00:04:09,191 --> 00:04:13,766
+notion of a, a clear shot. 
+So, these are the two pieces we need to 
+
+61
+00:04:13,766 --> 00:04:19,222
+determine when its time to no longer move 
+along the boundary. 
+
+62
+00:04:19,222 --> 00:04:21,427
+Okay. 
+Now, we have everything. 
+
+63
+00:04:21,427 --> 00:04:26,615
+Here's my robot. 
+It's very happily going towards a goal, 
+
+64
+00:04:26,615 --> 00:04:33,176
+right, that's, that's all it's doing. 
+And then, you know what, it encounters an 
+
+65
+00:04:33,176 --> 00:04:36,973
+obstacle. 
+So now, xo Sorry, x-xo is equal to delta. 
+
+66
+00:04:36,973 --> 00:04:43,425
+So, I'm delta apart from it. 
+And I have this directionality condition, 
+
+67
+00:04:43,425 --> 00:04:47,202
+right? 
+So, I'm going to check if this inner 
+
+68
+00:04:47,202 --> 00:04:52,059
+product is positive. 
+If it is, I should go clockwise. 
+
+69
+00:04:52,059 --> 00:04:55,434
+Similarly I have a counterclockwise 
+check. 
+
+70
+00:04:55,434 --> 00:05:00,079
+So, if this condition is satisfied, I 
+should go counterclockwise. 
+
+71
+00:05:00,079 --> 00:05:04,666
+So now, I know when it's time for me to 
+move either in a clockwise or 
+
+72
+00:05:04,666 --> 00:05:09,760
+counterclockwise direction. 
+Well, it's conceivable because the real 
+
+73
+00:05:09,760 --> 00:05:15,083
+world isn't the same as the theoretical 
+world that, as I'm sliding, I end up 
+
+74
+00:05:15,083 --> 00:05:18,242
+closer to the obstacle that I wanted to 
+be. 
+
+75
+00:05:18,242 --> 00:05:23,090
+Let's say that the distance of the 
+obstacle is now strictly less than delta, 
+
+76
+00:05:23,090 --> 00:05:27,700
+then I shouldn't slide anymore. 
+I should let my dedicated, custom-built 
+
+77
+00:05:27,700 --> 00:05:32,928
+avoid obstacle behavior just make sure we 
+don't slam, we don't slam into things. 
+
+78
+00:05:32,928 --> 00:05:38,308
+So, you always wrap a pure avoid obstacle 
+behavouir in there for safety reasons, in 
+
+79
+00:05:38,308 --> 00:05:41,459
+order to guarantee that you don't hit 
+things. 
+
+80
+00:05:41,459 --> 00:05:46,712
+Remember that we're actually looking for 
+both guarantees and a smooth ride. 
+
+81
+00:05:46,712 --> 00:05:52,013
+And this is our way of having the cake 
+and eating it, which very rarely works, 
+
+82
+00:05:52,013 --> 00:05:57,262
+but in this case, you actually can do it. 
+Okay, the one thing we need to remember 
+
+83
+00:05:57,262 --> 00:06:02,843
+though is, we needed to know how close we 
+were to the wall, or the obstacle at the 
+
+84
+00:06:02,843 --> 00:06:07,258
+time we started following it. 
+So, we had this thing that we said, let 
+
+85
+00:06:07,258 --> 00:06:12,405
+tau be the time of the next switch. Well, 
+I'm going to have something that I call d 
+
+86
+00:06:12,405 --> 00:06:15,698
+sub tau, which is just the distance when 
+I switch. 
+
+87
+00:06:15,698 --> 00:06:20,380
+And I'm going to reset, remember we 
+talked about resets, I'm going to reset d 
+
+88
+00:06:20,380 --> 00:06:25,711
+sub tau to be the distance to the goal at 
+the time I started to follow walls. 
+
+89
+00:06:25,711 --> 00:06:31,453
+So, here are resets, right? Now, I'm 
+going to stop sliding or stop following 
+
+90
+00:06:31,453 --> 00:06:37,313
+walls, well I wrote it as one guard, 
+because it's the same condition no matter 
+
+91
+00:06:37,313 --> 00:06:42,174
+where we're coming from. 
+And this condition says, we should have 
+
+92
+00:06:42,174 --> 00:06:46,899
+had or made enough progress. 
+So, this needs to happen and we need to 
+
+93
+00:06:46,899 --> 00:06:49,826
+have a clear shot, which is this 
+condition, okay? 
+
+94
+00:06:49,826 --> 00:06:54,106
+Is it beginning to look a little a little 
+messy to be honest, but regardless of 
+
+95
+00:06:54,106 --> 00:06:58,745
+which, we are able to write it down and 
+we know what all of these things are. 
+
+96
+00:06:58,745 --> 00:07:03,188
+Now, this isn't quite work yet because 
+right now, it's possible to avoid 
+
+97
+00:07:03,188 --> 00:07:08,261
+obstacles forever so we need some way of 
+stopping this thing and the way to stop 
+
+98
+00:07:08,261 --> 00:07:11,961
+is, you know what, now this looks like a 
+huge mess, right? 
+
+99
+00:07:11,961 --> 00:07:16,692
+But this simply is the sliding condition 
+for following walls in a clockwise 
+
+100
+00:07:16,692 --> 00:07:19,491
+direction so it's the same condition as 
+up here. 
+
+101
+00:07:19,491 --> 00:07:24,083
+But now, since I'm running out of space, 
+I have to write it right on top of the 
+
+102
+00:07:24,083 --> 00:07:26,734
+arrow. 
+I also need the same resets that I had 
+
+103
+00:07:26,734 --> 00:07:31,197
+here so it's the same condition. 
+And similarly, if, well, first of all, 
+
+104
+00:07:31,197 --> 00:07:36,549
+this condition is satisfied, I do 
+counterclockwise and I need to reset this 
+
+105
+00:07:36,549 --> 00:07:40,458
+distance again. 
+So, it's the same condition and the same 
+
+106
+00:07:40,458 --> 00:07:44,600
+reset as before. 
+so now, I basically have everything. 
+
+107
+00:07:44,600 --> 00:07:48,262
+I just want to add one more thing and 
+that's this. 
+
+108
+00:07:48,262 --> 00:07:55,050
+If the distance to the actual goal is 
+less than or equal to some epsilon, then 
+
+109
+00:07:55,050 --> 00:08:01,636
+I'm done and then I'm going to stop. 
+So, here is a rather messy looking hybrid 
+
+110
+00:08:01,636 --> 00:08:08,283
+automaton, but it is quite glorious in 
+its mess because it allows us to get 
+
+111
+00:08:08,283 --> 00:08:13,119
+smooth performance, or guarantee the 
+performance out while running in the 
+
+112
+00:08:13,119 --> 00:08:17,983
+smooth way. And even though it looks 
+hard, all of the things are inherently 
+
+113
+00:08:17,983 --> 00:08:21,448
+computable and it's actually not that 
+complicated. 
+
+114
+00:08:21,448 --> 00:08:26,168
+So, what I'm going to do is I'm going to 
+take this thing that looks messy, shrink 
+
+115
+00:08:26,168 --> 00:08:30,702
+it down, and make it look even more 
+messy, and say, this is our complete 
+
+116
+00:08:30,702 --> 00:08:33,987
+navigation system. 
+I think it is quite elegant, to be 
+
+117
+00:08:33,987 --> 00:08:37,672
+completely honest. 
+and now, its time to ask you know what, 
+
+118
+00:08:37,672 --> 00:08:42,652
+its elegant, we've done some math, we 
+know that it works, so this we think so, 
+
+119
+00:08:42,652 --> 00:08:46,992
+does it really? And here is the 
+unfortunate answer to the question, does 
+
+120
+00:08:46,992 --> 00:08:48,907
+this work? 
+Nope, it doesn't, 
+
+121
+00:08:48,907 --> 00:08:53,531
+which is why you're now getting a little 
+annoyed with me because I've spent all 
+
+122
+00:08:53,531 --> 00:08:57,824
+this time developing this framework and 
+now I'm claiming it doesn't work. 
+
+123
+00:08:57,824 --> 00:09:03,124
+the reason it doesn't work as is is there 
+are all these practical considerations to 
+
+124
+00:09:03,124 --> 00:09:06,354
+take into account. 
+And what I'm going to do in the next 
+
+125
+00:09:06,354 --> 00:09:11,028
+lecture is actually, make it work so that 
+it was worthwhile and we can take this 
+
+126
+00:09:11,028 --> 00:09:16,615
+little messy-looking hybrid automaton and 
+print it out and turn it into a badge 
+
+127
+00:09:16,615 --> 00:09:20,782
+that we can put it on our clothes or 
+wherever so we can be really proud of the 
+
+128
+00:09:20,782 --> 00:09:23,610
+fact that it does work. 
+but that is the topic of next lecture. 

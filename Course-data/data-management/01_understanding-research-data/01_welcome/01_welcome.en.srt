@@ -1,0 +1,261 @@
+1
+00:00:00,900 --> 00:00:04,180
+Hello, my name is Helen Tibbo.
+
+2
+00:00:04,180 --> 00:00:07,580
+Welcome to Research Data Management and
+Sharing.
+
+3
+00:00:07,580 --> 00:00:11,890
+Before I describe what we will
+be exploring in this course,
+
+4
+00:00:11,890 --> 00:00:15,920
+I would like to tell you a little
+bit about the CRADLE project, and
+
+5
+00:00:15,920 --> 00:00:16,680
+my background.
+
+6
+00:00:17,750 --> 00:00:22,220
+This MOOC was developed by
+the CRADLE project at the University
+
+7
+00:00:22,220 --> 00:00:24,730
+of North Carolina at Chapel Hill, and
+
+8
+00:00:24,730 --> 00:00:30,650
+was funded by the Institute of Museum and
+Library Services, or IMLS.
+
+9
+00:00:30,650 --> 00:00:34,860
+The CRADLE project stands for
+Curating Research Assets and
+
+10
+00:00:34,860 --> 00:00:38,180
+Data using Lifecycle Education, and
+
+11
+00:00:38,180 --> 00:00:43,340
+is a collaboration between the School
+of Information and Library Science,
+
+12
+00:00:43,340 --> 00:00:50,210
+the Odum Institute for Research and Social
+Science, and the UNC University Libraries.
+
+13
+00:00:50,210 --> 00:00:54,310
+EDINA and the Data Library at
+the University of Edinburgh
+
+14
+00:00:54,310 --> 00:00:57,350
+also contributed content to this MOOC.
+
+15
+00:00:57,350 --> 00:01:01,890
+The folks at the University of Edinburgh
+have created another great resource for
+
+16
+00:01:01,890 --> 00:01:05,440
+learning about research data
+management called MANTRA.
+
+17
+00:01:05,440 --> 00:01:09,457
+We strongly encourage students
+to explore this rich resource.
+
+18
+00:01:09,457 --> 00:01:12,929
+Now, a bit about me and
+why I am teaching this course.
+
+19
+00:01:12,929 --> 00:01:18,100
+I am an alumni distinguished professor
+at the School of Information and
+
+20
+00:01:18,100 --> 00:01:23,650
+Library Science at UNC,
+where I teach courses on data management,
+
+21
+00:01:23,650 --> 00:01:27,680
+digital preservation,
+and records management.
+
+22
+00:01:27,680 --> 00:01:30,920
+I was president of the Society of
+American Archivists from 2010-2011,
+
+23
+00:01:30,920 --> 00:01:35,801
+and I have been the principal
+investigator on a number
+
+24
+00:01:35,801 --> 00:01:40,800
+of IMLS funded projects
+focused on digital curation.
+
+25
+00:01:41,810 --> 00:01:46,850
+I am currently the head of the Standards
+and Policies, Community Practice for
+
+26
+00:01:46,850 --> 00:01:49,640
+the National Science Foundation funded
+
+27
+00:01:49,640 --> 00:01:53,000
+Datanet Federation Consortium Project
+based at UNC.
+
+28
+00:01:54,730 --> 00:01:58,400
+So, why learn about
+research data management?
+
+29
+00:01:58,400 --> 00:02:03,500
+Today funding agencies and journals
+are increasingly requiring researchers
+
+30
+00:02:03,500 --> 00:02:09,260
+to share, archive, and plan for
+the management of their data.
+
+31
+00:02:09,260 --> 00:02:15,110
+As research and information professionals
+respond to these new requirements,
+
+32
+00:02:15,110 --> 00:02:19,575
+data curation knowledge is necessary for
+the effective management,
+
+33
+00:02:19,575 --> 00:02:22,980
+long-term preservation, and reuse of data.
+
+34
+00:02:24,240 --> 00:02:28,380
+This course will provide students
+with knowledge of data management,
+
+35
+00:02:28,380 --> 00:02:32,320
+best practices throughout
+the research life cycle
+
+36
+00:02:32,320 --> 00:02:37,480
+from the planning stage all the way to
+when data will ideally be shared and
+
+37
+00:02:37,480 --> 00:02:40,410
+made available within
+a trustworthy repository.
+
+38
+00:02:41,438 --> 00:02:46,130
+Besides responding to requirements,
+effective data management
+
+39
+00:02:46,130 --> 00:02:50,880
+can also help researchers
+optimize their research output,
+
+40
+00:02:50,880 --> 00:02:56,690
+increase the impact of their research and
+support open scientific inquiry.
+
+41
+00:02:56,690 --> 00:03:01,690
+We will begin this course by
+building a basic understanding of
+
+42
+00:03:01,690 --> 00:03:04,690
+research data and data management.
+
+43
+00:03:04,690 --> 00:03:10,290
+We will then cover data management
+planning and funder requirements.
+
+44
+00:03:10,290 --> 00:03:15,450
+In module three, we will delve more
+deeply into some best practices and
+
+45
+00:03:15,450 --> 00:03:17,090
+suggestions for working with data.
+
+46
+00:03:18,120 --> 00:03:21,800
+And then in module four,
+we will discuss the benefits and
+
+47
+00:03:21,800 --> 00:03:24,400
+challenges of data sharing, and
+
+48
+00:03:24,400 --> 00:03:29,250
+some techniques to enable researchers
+to easily use each other's data.
+
+49
+00:03:29,250 --> 00:03:34,630
+We will end with a module
+on how to preserve data and
+
+50
+00:03:34,630 --> 00:03:38,360
+the roles of trustworthy repositories.
+
+51
+00:03:38,360 --> 00:03:44,060
+By the end of this course, you will have
+a firm understanding of data management
+
+52
+00:03:44,060 --> 00:03:49,130
+best practices, as well as many data
+management tools and resources to help
+
+53
+00:03:49,130 --> 00:03:54,208
+you foster data sharing and the conduct
+of better science and scholarship.
+
+54
+00:03:54,208 --> 00:03:57,756
+Let's start.
+
+55
+00:03:57,756 --> 00:04:01,579
+[MUSIC]

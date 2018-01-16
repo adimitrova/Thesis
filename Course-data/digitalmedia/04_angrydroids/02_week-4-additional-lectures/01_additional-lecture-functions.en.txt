@@ -1,0 +1,186 @@
+Welcome to another additional lecture 
+about programming. And so, this week I'm going to talk about 
+functions. Now, we've actually seen functions 
+before. In fact, we've seen them in two different 
+contexts and at the time they have seemed like very different things but they're 
+actually the same thing and I"m going to slide a detail what they are and how you 
+can work with them. So this is the first time we have seen 
+functions. Where we called above the surface line of 
+code we have to write size brackets 400, 600. 
+That is a function. That is a call to a function, size of the 
+function, and by we're calling that function in order to get its 
+functionalities [UNKNOWN] change the size of the screen. 
+So, this line of code is what we call a functional call. 
+We're using a function that somebody else has created. 
+Let's look again in a little bit more detail what this line [INAUDIBLE] does. 
+It's got a name, size, the name of the function. 
+It's got parameters. These are numbers that we are passing in 
+to the function. Giving to the function, in order to 
+change the way it works. And you've got these little bits of of, 
+of punctuation. The parameters of a function always have 
+brackets around them, and they're always separated by a comma. 
+And that's an important part of what makes a function and a function call. 
+And then we have a semi-colon on the end of the line, as we normally do. 
+This is the other context in which we've seen a function. 
+Void draw. Void draw is, we've seen it before, it's, 
+last week. It's where, it's a container in which we 
+put code that we want to be run every time the screen is refreshed. 
+Every time the screen [UNKNOWN]. So its a way of grouping k together and 
+have it happen at a set time but its also a function and this is a function 
+definition. On the last slide, we're looking at size, 
+where we're using an existing function. Here, we are creating a function that's 
+processing the use. So processing calls the draw function 
+when it's ready to redraw a screen. So these are two sides of the same thing. 
+This is what it looks like when we create a function so lets look again a little 
+bit more detail what happens. Got the name of the function and the name 
+will be the same name we'll be using in the function call. 
+The function has some content, the code deduction happens when the function is 
+called. It has the beginning, and an end and 
+they're defined by this curly bracket. And I will come back to this later. 
+In the previous lecture, I said come back in a few, feature we will come back to 
+them very soon to explain what they are. But just now to imagine that really all 
+that's happening when we were on the previous slide we talked about size, when 
+size is called, is that when we call size, it's a function that contains a lot 
+of bunch of codes just like the draw function contains code. 
+And that code as well, so that code happened. 
+So when line is, draw is called here, the line command will happen. 
+Which is itself another function, of course. 
+Okay. So, [SOUND] what can we do with that? 
+Well, the great thing is, we can create our own functions. 
+We created our own function when we created draw. 
+But we can create new functions that all I've got to rewrite call them, and then 
+we can call those functions later. So, at the top of the screen here we've 
+created a function called updateBall, and it has two lines of code in it, so what 
+it's doing is not terribly important but we've got one variable and we're adding 
+another variable to it. That is our function and its pretty much 
+the types of things we've seen in void draw or mouse pressed or set up. 
+All the things that we've used already but draw setup, mouse press, mouse drag, 
+these are all built in things to processing. 
+Their names have special meaning whereas update ball that could be anything I just 
+created that's my function I can call it whatever I want. 
+And I call whatever I want because it's me that's going to call it. 
+And I'm jsut going to the use the name I call it and the button here and draw 
+that's what I'm doing. We've got update ball is being called. 
+And, as we can see, the name of the function is the same as the update ball 
+function, up here, and that's how processing knows that I'm referring to 
+this bit of code up here. And we've got those brackets in there, 
+which we always need. Well we've got a function. 
+Now this function has not parameters, I'm not passing any parameters, but we still 
+need the brackets, so processing those that I'm calling a function. 
+Even if they're empty, there's no parameters, we still need the brackets. 
+Okay. Good. 
+So, what does this give us? Why is it useful? 
+Well it helps us in a number of ways the first way is that it can break up your 
+code a little bit if you've got very complicated code it become very difficult 
+to read. And if you divide up your code so, if you 
+have hundreds and hundreds of lines of code in draw you wouldn't know where 
+anything was. So if you divide that into functions that 
+can get called and draw it simplifies things. 
+We'll see another benefit of that system in a minute. 
+Let's look at another example. So, here's a slightly more complex 
+example. So, this time UpdateBall has two 
+parameters. Here we are. 
+This is how you create a function which has parameters. 
+So it's all function, calling functions with parameters like size, we've done 
+that quite a lot. You're passing numbers in that gets you 
+to the function. But this is how you actually create that 
+kind of function. And it looks a lot like, well, it looks a 
+lot like a call in that You've got brackets. 
+And inside those brackets are the two parameters. 
+And they're separated by commas. And that explains why we have brackets 
+after void draw. Because it's a function. 
+And though it, and [INAUDIBLE], though it doesn't have, take parameters. 
+Other functions do take parameters, and functions and no parameters still have 
+the brackets to show that they're functions. 
+It looks a like a variable definettion because it's got a type and a name jsut 
+as variables have types and names and in fact it is a variable you're creating a 
+variable. And it's a variable that you can use 
+inside your function just like any other variable. 
+So we're using it here. SpeedX is used inside the function. 
+it only exists inside the function. So you can't use it outside the function. 
+But within the function it's just like any other variable. 
+If its like a variable where do we get the value? 
+We don't, we're not doing float of speedX equals to a, as we would if you are 
+creating a variable. So where does the value come from? 
+Well, the value comes when we passing a [INAUDIBLE] to it. 
+So when we call update ball. If we pass a value in ball speed Y but it 
+could be a number it could just be 3. That value is copied into the varible 
+that is that parameter in this case speed Y. 
+Which can then be used inside the function so that's how. 
+Parameters work. So if you think when we're passing the 
+width, somewhere where size is created there's a there's a parameter that says 
+float width and inside the size function that float width variable gets used. 
+So To summarize, we define a parameter with a type and name just like a 
+variable, we can use it just liek a variable but the value of that variable 
+comes when we're passing a parameter in as we call the function. 
+Okay so that's functions with parameters. One last thing, as well as parameter all 
+these functions we've had to far have got void. 
+This one's got somethign different in there. 
+It's got float. What does it mean to have float there? 
+Well sometimes as well as passing values into a function you can get values back 
+out of the function. And this is called the return value. 
+And by putting a float there, we're saying the type of what is returned by 
+the function. We're saying the return to float. 
+It means we can get a float value back out of that function. 
+So if we're doing a calculation, we can get a value back out. 
+Up to now, it's been void. And void literally means nothing. 
+It means there is no value coming out of this function. 
+It just does its stuff, but it doesn't give anything back to you. 
+By saying float before update ball it's saying, I'm going to give a float to you 
+after I'm done with my stuff. And the thing that... 
+At she does that giving back is the return command, return keyword. 
+What that does is hmm, it says what value to give back so when I say return the 
+function stops and gives back the value and after the return statement. 
+Just after return, I put whatever value I wanted to give back. 
+So in this case, I'm returning the value of the variable newBall ballX. 
+And what happens? Well, when I make a call like this, 
+ballPosX equals updateBall, once the function finishes. 
+I copied ballpos the value that's returned new ball pos for X into my 
+variable ballpos X, so ballpos X is now equal to whatever new ball X is. 
+I'm copying one into another. So if we think of, of that whole process. 
+As I toss my parameters in they're copied into variables in my function and can be 
+used in whatever way I like to do whatever calculations or functionality I 
+want. And then if I want I can have a resulting 
+calculation that ends up with a value that I want to pop back In this case 
+newBallX and that gets copied back out of the function. 
+So value is going to come back out of the function copied into variables at the 
+point which we call the function outside the function. 
+So we can get two way flow of information. 
+From the, from the function inside in and out of the function, which is where it's 
+useful in multi contents. So, this is a classic example, a function 
+to add 2 numbers together. It's going to name add. 
+It's got a content which does some calculations. 
+A beginning and an end with those code brackets. 
+It's got parameters to floating point numbers a and b, they get added together, 
+and the. That calculation produces the result, 
+which is the return type to pass the [INAUDIBLE] and the return value is c, 
+this variable that I have created by adding a and b together. 
+So I can pass values into this function, doing calculations that pass them back 
+out and that's probably about the simplicity. 
+And you can do the dozen of those things. Okay, one last example. 
+So, don't bother, worry about what all this code means, apart from that the fact 
+that we've got a complicated function collideWithPaddle that has two 
+parameters. Now the great thing about function is 
+that, because you've got a bit of code that change, does different things 
+depending on different parameters there are there, you could call it multiple 
+times with different parameters. So, I can call collide paddle once. 
+With details of one paddel this comes from a palm game where the paddle is 
+basically a tennis racket. I can one set of parameters and pass them 
+in and do as functionality once. And I can call an exactly same. 
+Function with another two sets of parameters to do something different. 
+So, if I've got a tennis game, with two paddles, the tennis rackets. 
+If I call it once with one with the X and Y of one paddle, and once with the X and 
+Y of the other paddle, I only need one bit of code. 
+But I'm handling [UNKNOWN] paddles. And that's part of the benefit of doing, 
+sort of, a little bit more advanced programming, because you can work how, 
+actually you can save a lot of time and effort by realizing, well, I'm doing one 
+type of thing on lots of different types of data, lots of different types of data. 
+Doing one action for lots of data. One action for lots of objects. 
+If you can put that one action into a function, then you can just record, 
+recall it multiple times with different parameters. 
+And you don't have to rewrite much other than that one line function. 
+It simplifies your code a lot, saves you a lot of work, saves you a lot of errors. 
+You can miscopy the code, or if there's an error in one bit of code, you can 
+forget to copy the fix into another code. If it's all in a function, it becomes a 
+lot simpler [INAUDIBLE]. Okay. 
+Thanks a lot. That's all I want to say on function.

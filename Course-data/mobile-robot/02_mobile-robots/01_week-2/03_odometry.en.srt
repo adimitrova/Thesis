@@ -1,0 +1,443 @@
+1
+00:00:00,012 --> 00:00:06,349
+So now that we have a model, we need some
+way of knowing where the robot is because
+
+2
+00:00:06,361 --> 00:00:12,470
+the state of the robot is xy and fine,
+meaning the position xy and it's heading,
+
+3
+00:00:12,596 --> 00:00:18,858
+fine. Odometry is the means by which we
+can obtain this pose information and the
+
+4
+00:00:18,870 --> 00:00:24,885
+question is, how do we actually get the
+state or the pose of the robot? Well,
+
+5
+00:00:24,987 --> 00:00:29,505
+there are a number of different ways of
+doing it, but at the end of the day, we
+
+6
+00:00:29,517 --> 00:00:35,155
+absolutely need sensors . Well, there are
+two possibilities here. One is we can use
+
+7
+00:00:35,167 --> 00:00:39,780
+some kind of external sensors. So, an
+external sensor would be a sensor that's
+
+8
+00:00:39,792 --> 00:00:44,730
+measuring something in the environment.
+So, for instance, you pretend that you can
+
+9
+00:00:44,742 --> 00:00:48,104
+see a, A landmark.
+Let's say I can see the Eiffel Tower. And
+
+10
+00:00:48,116 --> 00:00:52,825
+now I start moving around, if I keep track
+of the Eiffel Tower I should be able to at
+
+11
+00:00:52,837 --> 00:00:56,186
+least know where I am relative to the
+Eiffel Tower. Right.
+
+12
+00:00:56,186 --> 00:01:00,642
+That seem to make some sense. So the
+external sensors. Ultrasound, infrared,
+
+13
+00:01:00,742 --> 00:01:05,553
+cameras, laser scanners, these are sensors
+that tell us something externally about
+
+14
+00:01:05,565 --> 00:01:09,821
+where we are. There is another type of
+external sensor that one can use, of
+
+15
+00:01:09,833 --> 00:01:14,140
+course, which would be GPS and it's
+external because we're not measuring it
+
+16
+00:01:14,152 --> 00:01:19,275
+internally, we're getting information from
+Outside, and the GPS immediately would
+
+17
+00:01:19,287 --> 00:01:24,270
+give us things like position and so forth.
+However, when you're running robots
+
+18
+00:01:24,282 --> 00:01:29,175
+indoors, you certainly don't have GPS
+signals, And a lot of times GPS alone is
+
+19
+00:01:29,187 --> 00:01:34,230
+not enough to know x, y, and phi to any
+high level of, of fidelity. So what you do
+
+20
+00:01:34,242 --> 00:01:38,747
+is you typically couple the external
+sensors with internal. Sensors.
+
+21
+00:01:38,748 --> 00:01:43,166
+So the internal sensors are sensors that
+are sitting in the robot. And they are
+
+22
+00:01:43,178 --> 00:01:47,460
+helping you know where you are. So, for
+instance, you could use a compass to,
+
+23
+00:01:47,795 --> 00:01:52,325
+figure out which way the, the robot is
+heading. So this would be orientation. Of
+
+24
+00:01:52,337 --> 00:01:57,015
+course, in every self respecting robot,
+there are accelerometers, and gyroscopes
+
+25
+00:01:57,027 --> 00:02:01,954
+for finding out. And how far you've
+traveled and so forth. So position and
+
+26
+00:02:01,966 --> 00:02:07,053
+orientation can both be derived from
+accelerometers and gyroscopes to certain
+
+27
+00:02:07,065 --> 00:02:12,061
+degree. another useful way is Wheel
+encoders. So typically you have tick
+
+28
+00:02:12,073 --> 00:02:17,333
+counts, you can tick and count how many.
+Basically, how many revolutions the wheels
+
+29
+00:02:17,345 --> 00:02:21,918
+are doing in a certain amount of time, and
+from that you can actually figure out
+
+30
+00:02:21,930 --> 00:02:26,464
+things about where the robot is. And, I
+would like to discuss a little bit with
+
+31
+00:02:26,476 --> 00:02:31,010
+you about Wheel Encoders. And the reason
+for that is, that if we are indeed now
+
+32
+00:02:31,022 --> 00:02:35,876
+working with the referential drive robots
+for awhile, lets see, if we can find out a
+
+33
+00:02:35,888 --> 00:02:40,347
+little bit of how we can get position
+information. And more importantly, how
+
+34
+00:02:40,359 --> 00:02:45,129
+much can, Can be trusted. So, a wheel
+encoder gives the distance moved by each
+
+35
+00:02:45,141 --> 00:02:49,970
+wheel. So, we have left and right wheels
+here. And here's the following assumption
+
+36
+00:02:49,982 --> 00:02:54,747
+we're going to make. We're going to assume
+that each wheel is following an arc, which
+
+37
+00:02:54,759 --> 00:02:59,193
+means that it's turning at a constant rate
+and driving at a constant velocity,
+
+38
+00:02:59,294 --> 00:03:04,006
+basically. So, v and Ohm r are constant.
+What this means is, on short time scales
+
+39
+00:03:04,018 --> 00:03:08,063
+that's, That's correct.
+And if we do that, well, let's say that D
+
+40
+00:03:08,712 --> 00:03:14,658
+is the distance the left wheel has turned,
+and D[UNKNOWN] is the , distance the right
+
+41
+00:03:14,670 --> 00:03:19,435
+wheel has turned. So in this case, the
+right wheel is turning quicker than the
+
+42
+00:03:19,447 --> 00:03:24,491
+left wheel because it's turned, turned
+more. Well, I'm interested in x, y, and
+
+43
+00:03:24,503 --> 00:03:30,196
+phi. Which is not where the wheels are,
+but where the center of the robot is. This
+
+44
+00:03:30,208 --> 00:03:35,847
+is where I'm interested in. So DC is the
+distance the center has turned and that's
+
+45
+00:03:35,859 --> 00:03:41,236
+the thing that I'm interested in. Now
+luckily, the center is simply DL + DR / 2.
+
+46
+00:03:41,351 --> 00:03:46,844
+I am not going to be particularly Picky in
+showing where the geometry of this comes
+
+47
+00:03:46,856 --> 00:03:51,892
+from. Instead, these are things that are
+readily available if you want to look up
+
+48
+00:03:51,904 --> 00:03:56,896
+things, like how wheel encoders work. But
+I want to connect a little bit with the
+
+49
+00:03:56,908 --> 00:04:01,850
+mobile robot model to the wheel encoders,
+just to see how we reason about things,
+
+50
+00:04:01,956 --> 00:04:07,521
+and in fact, if we are measuring how far.
+The road the wheels have moved over a time
+
+51
+00:04:07,533 --> 00:04:12,954
+interval. So let's say that we start at x
+and after the time interval , well we know
+
+52
+00:04:12,966 --> 00:04:18,560
+Dc because Dc is this thing then we can
+actually compute the new x primes, the new
+
+53
+00:04:18,572 --> 00:04:23,869
+x position of the robot. We can similarly
+compute the new y position of the robot.
+
+54
+00:04:24,092 --> 00:04:30,124
+Which is the same as the x update, but has
+sine instead of a cosine term. And, we can
+
+55
+00:04:30,136 --> 00:04:36,332
+even compute, the, the new orientation. So
+this is a way of knowing how to go from,
+
+56
+00:04:36,451 --> 00:04:42,301
+how far the wheels have turned. Into what
+are the new positions of the robot. And,
+
+57
+00:04:42,420 --> 00:04:47,810
+in fact, we're going to be running quite a
+few experiments, where the only
+
+58
+00:04:47,822 --> 00:04:54,155
+information the robot has. Is where it is,
+based on the wheel encoders. So but how do
+
+59
+00:04:54,167 --> 00:05:00,510
+we know Dr and Dl, thought? This is what
+we need to know in order to find out where
+
+60
+00:05:00,522 --> 00:05:06,340
+the robot is. Well, assume that each wheel
+has N ticks per revolution. So 2 pi
+
+61
+00:05:06,352 --> 00:05:12,630
+degrees is N ticks. So most wheel encoders
+actually give the total tick counts as to.
+
+62
+00:05:12,962 --> 00:05:17,860
+The beginning, so what you measure is how
+many ticks since, since you start the
+
+63
+00:05:17,872 --> 00:05:22,914
+system up. So, the updates I am writing
+here for both wheels. This is for the left
+
+64
+00:05:22,926 --> 00:05:27,227
+wheel and the right wheel, so you could
+write the you know.
+
+65
+00:05:27,234 --> 00:05:33,085
+Delta tick r or r or but for both of these
+wheels you take the old total tick count.
+
+66
+00:05:33,222 --> 00:05:38,332
+And subtract it away from the new total
+trick, tick count. So this tells me,
+
+67
+00:05:38,446 --> 00:05:43,583
+what's the tick count during the time
+interval you just looked at. And then
+
+68
+00:05:43,595 --> 00:05:49,321
+based on that, you can very easily compute
+what the distance that wheel has, turned.
+
+69
+00:05:49,435 --> 00:05:54,720
+So this d here, this d could either be d's
+of l or d's of r, so it's simply 2 pi r
+
+70
+00:05:54,732 --> 00:06:01,399
+delta tick over n. So this actually gives
+as a way of mapping ticks on to distances
+
+71
+00:06:01,411 --> 00:06:08,298
+traveled, and as we saw in the previous,
+previous slide distance traveled we can
+
+72
+00:06:08,310 --> 00:06:14,394
+then map into new position and orientation
+of the , Fair enough.
+
+73
+00:06:14,398 --> 00:06:20,138
+There is one major disclaimer I must make,
+though. And that is, ta-daa, drift. A
+
+74
+00:06:20,244 --> 00:06:25,679
+system like this, drift. It's very
+imprecise. And, if your using only real
+
+75
+00:06:25,691 --> 00:06:31,693
+encoders as your source of odometry, your
+probably going to run into a little bit of
+
+76
+00:06:31,705 --> 00:06:36,592
+trouble. So, here, I want to show a video.
+This was from one of the. Cou rses I
+
+77
+00:06:37,066 --> 00:06:40,902
+taught recently where you have now two
+robots competing against each other. It
+
+78
+00:06:40,914 --> 00:06:44,884
+looks like they're following lines but all
+they're doing is following wave points
+
+79
+00:06:44,896 --> 00:06:48,860
+that laid down, and they're using a PDA
+regulator to get through wave points. And
+
+80
+00:06:48,872 --> 00:06:52,465
+what you can see is that they're getting a
+little but out of whack, and the
+
+81
+00:06:52,477 --> 00:06:56,176
+interesting thing here is one robot gets
+up on top of the other robot and as a
+
+82
+00:06:56,188 --> 00:07:00,289
+consequence the wheel is spinning without
+it's actually touching the ground. and as
+
+83
+00:07:00,301 --> 00:07:04,831
+you can see The robot then has a
+completely confused idea of where it is in
+
+84
+00:07:04,843 --> 00:07:09,769
+the world. So this would be an example of
+were drifts its rather severe the robot is
+
+85
+00:07:09,781 --> 00:07:14,566
+going in way wrong direction because of
+the fact that the real encoders no longer
+
+86
+00:07:14,578 --> 00:07:18,719
+correspond to what's happening on the
+ground. So we're going to use real
+
+87
+00:07:18,731 --> 00:07:23,900
+encoders a lot. They're used a lot in
+robotics, but we always need to be aware
+
+88
+00:07:23,912 --> 00:07:29,049
+of the fact that themselves, by
+themselves, wheel encoders do not tell the
+
+89
+00:07:29,061 --> 00:07:31,509
+full story or a particularly robust

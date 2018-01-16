@@ -1,0 +1,177 @@
+1
+00:00:05,859 --> 00:00:06,770
+Okay.
+
+2
+00:00:06,770 --> 00:00:08,810
+Linear momentum,
+just kind of wrapping things up for
+
+3
+00:00:08,810 --> 00:00:10,800
+blobs, since we're onto blobs.
+
+4
+00:00:10,800 --> 00:00:15,380
+The linear momentum is always mass times
+velocity, is your linear momentum.
+
+5
+00:00:15,380 --> 00:00:19,730
+Then a completely vectorial way in
+a blob you would have your mass is DM,
+
+6
+00:00:19,730 --> 00:00:23,770
+your velocity inertial is R dot,
+and P is my linear momentum.
+
+7
+00:00:23,770 --> 00:00:27,830
+So DP is my linear momentum of that
+differential element that you have.
+
+8
+00:00:27,830 --> 00:00:31,190
+If you want the total linear
+momentum of a system,
+
+9
+00:00:31,190 --> 00:00:36,200
+you have to integrate over the body again,
+and you just plug in all these things.
+
+10
+00:00:36,200 --> 00:00:38,350
+Then same rules, we will plug in,
+
+11
+00:00:38,350 --> 00:00:42,690
+instead of R we have Rc + little r,
+and we can break this up.
+
+12
+00:00:42,690 --> 00:00:44,460
+We can pull this Rc out again.
+
+13
+00:00:44,460 --> 00:00:47,070
+And this integral by now, hopefully
+boring you can go yep, that's zero.
+
+14
+00:00:47,070 --> 00:00:51,300
+Right, that's the center of mass property
+again, and that one's going to vanish.
+
+15
+00:00:51,300 --> 00:00:53,290
+This one we've replaced with total mass.
+
+16
+00:00:53,290 --> 00:00:53,840
+So that's it.
+
+17
+00:00:53,840 --> 00:00:56,790
+So for a blob, again,
+like the super particle theorem, need to
+
+18
+00:00:56,790 --> 00:01:00,890
+know what is the total mass of the system
+and how is the center of mass moving?
+
+19
+00:01:02,120 --> 00:01:03,540
+And then we know what's going on.
+
+20
+00:01:05,250 --> 00:01:08,790
+If you differentiate it, this is how
+you come up with Newton's equation for
+
+21
+00:01:08,790 --> 00:01:10,630
+a constant mass solution.
+
+22
+00:01:10,630 --> 00:01:11,670
+So mass is preserved.
+
+23
+00:01:11,670 --> 00:01:13,870
+We're not gaining and
+losing mass in the system.
+
+24
+00:01:13,870 --> 00:01:16,580
+Taking the inertial derivative
+of linear momentum and
+
+25
+00:01:16,580 --> 00:01:19,710
+you plug that into this equation,
+this R dot becomes an R double dot.
+
+26
+00:01:19,710 --> 00:01:24,370
+This is nothing but the force acting on
+that element but integrated over a body.
+
+27
+00:01:24,370 --> 00:01:26,470
+You only care about
+the external forces again.
+
+28
+00:01:26,470 --> 00:01:29,180
+Which is a very powerful statement.
+
+29
+00:01:29,180 --> 00:01:31,800
+So if you go to space station
+have flew away from earth and
+
+30
+00:01:31,800 --> 00:01:33,890
+she's going through deep space.
+
+31
+00:01:33,890 --> 00:01:37,110
+And astronauts in there all of a sudden
+start running up on a treadmill.
+
+32
+00:01:38,150 --> 00:01:42,150
+Are they ever going to change the
+center-of-mass motion of the spacecraft?
+
+33
+00:01:42,150 --> 00:01:44,080
+No.
+They may change the orientation,
+
+34
+00:01:44,080 --> 00:01:45,520
+they may change the shape.
+
+35
+00:01:45,520 --> 00:01:49,900
+But these internal forces can
+never change your linear momentum.
+
+36
+00:01:49,900 --> 00:01:53,510
+That's what we saw in
+the superparticle theorem, too,
+
+37
+00:01:53,510 --> 00:01:58,989
+that only external forces impact how
+the center of mass evolves through space.
+
+38
+00:02:00,020 --> 00:02:02,415
+So, this is a kind of handy,
+handy, formula.

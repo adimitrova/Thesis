@@ -1,0 +1,68 @@
+>> Welcome to the last module of this
+entire course. In this module, Module 7, I will be
+putting all of the pieces that we have developed together into one neat unified
+package. And what we're going to have to do in this
+module is, connect the robotics piece that we discussed early on differential drive,
+mobile robots, odometry sensors to the control theoretic developments that we've
+gone through. And in particular, we need to see how we
+can take the navigation algorithms we have developed, and actually make them fit onto
+the actual robotic platforms that we're interested in.
+And the first lecture is really going to be a little bit of a high level
+discussions of what are the things that we need to be aware of when we start putting
+things together. I've call it approximations and
+abstractions and the reason for that is whenever we try to design control systems
+or navigation algorithms, we're using models.
+And we need to understand when these models are indeed relevant or useful, or
+applicable. So, recall our rather messy, yet exciting
+hybrid automoton. When we developed this, we assumed that we
+had perfect sensing. We even assumed that x dot was equal to u,
+meaning that we directly could control the velocities of, of the robot.
+But then, as we saw at the end of the last module, we ran it on a differential drive
+mobile robot. And these two robot, or systems, the
+actual differential drive mobile robot and x dot equal to u, it's very unclear what
+they even have in common. How do we make our models fit the reality,
+or more importantly, when are the models relevant to the real world?
+Well, I like to think of models as fables. Let's return to our old friend, the hare
+and the tortoise. So, when we discuss the Zeno phenomenon,
+we had the hare race the tortoise. Well, I don't exactly know where all of
+you live but chances are that where you live, very rarely do you see hares and
+tortoises actually racing. So, here's a story or a fable that never
+applies, but somehow, we still gain some kind of insight into the real world from
+this story. Like, slow and steady wins the race if the
+tortoise wins. Or, in the Zeno case, the hare is going to
+win. Well, what we should take away from that
+is, well, don't rush it when you're doing the quizzes for this course.
+So now, the hare and the tortoise actually had something to say about how we should
+approach the course. And similarly, the models are fables.
+They have some relevance, but they're not exactly telling the full story.
+So, let's take a step back and see what assumptions did we actually make and what
+kind of models did we actually use when we were talking about the robots.
+Well, we really had two main classes of assumptions.
+One was the dynamics. And when we developed our control
+algorithms, we made the assumption that we had this particle located at x, where we
+immediately controlled the velocity, x dot is equal to u.
+Well, that may or may not be reasonable. We also made this assumption that the
+robot has a sensor suite. It's actually one of these sensor skirts
+that allows the robot to see roughly, a disk around it that's not exactly true,
+because as we saw in the last module, we only see certain parts of this disk.
+But from, in assumption point of view, we still kind of made the assumption that, we
+cannot, we can see everything around us up to a point and we can measure where
+obstacles are and the angle to that obstacle.
+When it turns out that the sensing assumption is more or less okay.
+As the robot moves around, you can actually build up rather accurate models
+or, or maps of what's going on in the world.
+The problem is with the dynamics. This is not even close to being
+reasonable. The Khepera [inaudible] that we've used a
+lot, it's not, at all, looking like x dot is equal to u.
+So, in order for our fable, or our model, or our navigation algorithm to be relevant
+to the actual robot, we somehow need to remedy this lack of reasonability.
+So, the problem, of course, is that we have the point mass.
+And then we're using the unicycle model for actually describing the robot, where x
+dot is v cosine phi, where v is the speed and phi is the heading, y dot was v sine
+phi, and phi dot was equal to omega, where omega was the angular velocity.
+Well, this robot, this model, doesn't act like x dot is equal to u and somehow for
+what we've done during the last couple of modules to be relevant, we need to make
+these two models actually co-exist peacefully.
+So, what we're going to spend the next two lectures on is a very, very simple problem
+which is, how do we make a unicycle robot or a differential drive model robot act
+like x dot is equal to u?

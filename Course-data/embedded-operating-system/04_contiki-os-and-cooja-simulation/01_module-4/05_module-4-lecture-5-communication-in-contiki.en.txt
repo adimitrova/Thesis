@@ -1,0 +1,75 @@
+[SOUND]. Welcome, I am glad to see you back for
+this lesson. In this video we will discuss
+the details of how Contiki implements network communication. By the end of the lesson you should
+understand the structure and functioning of Contiki's
+communications stack. But perhaps the best question
+to start this lecture with is, what is communication in Contiki. Before answering this question, we are going to talk about communication
+in wireless sensor networks. Communication plays an essential role
+in any wireless sensor network system. Basically, communication in a wireless
+sensor network architecture includes three parts. Sensor nodes, a gateway,
+and the backend system. Sensors collect data and
+send it to the gateway wirelessly. Depending on the network characteristics, a particular communication
+protocol is used. For example, Wi-Fi or
+Bluetooth can be used for sending data from sensor
+nodes to a getaway. Then the data is forward via
+the internet and reach the cloud. Finally end-users can access data or
+use services offered by the cloud. In this lecture, we will focus on communication
+between sensor nodes and the gateway. In other words, the communication
+between devices using Contiki. In Contiki,
+communication is implemented as a service. Therefore it has all the features
+of Contiki services, such as run time replacement. As a result, it allows to simultaneously
+load multiple communication stacks. This helps to reduce the latency
+of loading modules one by one. In addition, this feature can be used for comparing different
+communication protocols. To have a better understanding
+of such protocols, we will explore them in
+depth later in this video. But now, we are going to focus on
+the loosely coupled communication stack in Contiki. Communication in Contiki may be
+divided into different services. The communication stack
+uses synchronous events to communicate with a program application. Here, an interesting question is, why using synchronous events instead
+of asynchronous events, or polling? The answer is that it is possible
+to use a single buffer for all communication processing, since it is necessary that synchronous
+event handlers run to completion. This approach ensures that there is no
+need to copy data to intermediate buffers. The bias drivers operate between
+the communication stack and the hardware. Device drivers would in come in packets,
+place them into the communication buffer and then call
+the upper layer's communication service. When the communication service is awaken,
+it inspects the packet in the buffer. Based on the content of the packet header,
+the service searches for the application which is
+the destination of the packet. When it finds the exact application, it posts a synchronous event
+to that application program. After receiving the event generated
+by the communication stack, the application program
+proceeds to process the packet. In some cases, it is necessary for
+the application program to replay by posting some data to the communication
+stack before returning the control to it. Then, when the communication stack
+takes control, it places the reply in the communication buffer and
+appends its header to the outgoing packet. Finally, it gives control
+to the device driver, so that the packet can be transmitted. After understanding the big picture
+of Contiki's communication stack, let's examine its
+structure with more detail. There are two types of communication
+stacks in Contiki, Micro IP and Rime. In this lesson, we will only discuss Rime
+and leave micro IP for the next video. What is the Rime communication stack? Rime is a lightweight communication
+stack with a layered design where the more complex communication
+protocols can reuse the simpler ones. When using Rime there is no rule
+that compels an application to go through all the layers of
+the stack in order to communicate. Instead it can use any primitive or
+protocol that it requires. Both single hop and
+multi-hop communication primitives are fully supported in
+Contiki's Rime communication stack. However there is no packet routing in
+the multihub communication primitives. This task is specified by the application
+or the upper layer protocol. One of the benefits of Rime stack is that
+users can implement all their protocols, which do not belong to
+Rime on the top of it. So now let's take a look at some of
+the primitives available in the set of communication abstractions in glide. First is single-hop broadcast. Where the sender's address is
+added to the outgoing packet before sending it to all
+local area neighbors. Then we have single-hop unicast, which is used to send packets
+to a specific destination. The reliable unicast is another
+type of single-hop unicast that repeatedly sends a packet to a particular
+destination while waiting for an acknowledgement packet
+from the receiver. Finally, the multi-hop unicast
+primitive is used for sending packets to an identified node in the network
+which is located several hops away. In this case, a rooting function must
+be provided by the application or protocol to choose
+the next hop destination. This is the end for the lesson about Contiki communication and
+ground communication stack. By now, I hope you have a deeper
+understanding on the way Contiki's communication is structured and
+how it works. See you in the next video. [SOUND]

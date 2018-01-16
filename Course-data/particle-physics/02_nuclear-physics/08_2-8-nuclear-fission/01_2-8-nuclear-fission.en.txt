@@ -1,0 +1,103 @@
+[MUSIC] During the second module,
+we are dealing with nuclear physics. And in this eighth video, we will explain
+how to transform a part of the nuclear binding energy into heat
+by nuclear fission. After viewing this video, you will
+know how the nuclear fission mechanism works and its necessary conditions. A very important application of nuclear
+physics is the transformation of nuclear binding energy into thermal and electrical
+energy by the fission mechanism. Low energy neutrons can penetrate inside the nucleus
+since they're not subject to Coulomb repulsion. This way they increase
+the nuclear mass and the excited nucleus may break up into
+two daughter nuclei of smaller mass. This fragmentation of a heavy
+nucleus into two medium mass fragments plus accessory products
+is called nuclear fission. The alpha decay which we have
+discussed in video 2.4 is an extreme example of a very
+asymmetric spontaneous fission. But more important is the fission
+induced by the absorption of a neutron. Nuclear fission stay in the domain
+of a heavy matter nuclei and this is due to the shape of
+the binding energy per nucleon as a function of the mass number A 
+which we have shown in video 2.1. Beyond the iron group, it decreases
+steadily such that binding energy can be gained by splitting a heavy nucleus into two
+nuclei in a more or less symmetric way. Thus, a less tightly bound nucleus
+can gain binding energy by splitting it into two lighter,
+more tightly bound ones. As an example,
+the binding energy per nucleon is -7.5 MeV for U-235 and -8.4 MeV on average for
+the two daughter nuclei. The energy released by fission is
+typically 0.9 MeV per nucleon. One gram of U-235 contains about
+3 10^21 nuclei. The complete fission of all of these
+nuclei would release the impressive energy of 10^11 joules, about one megawatt a day if we
+ignore all efficiencies involved. To give you an idea for
+comparison, burning one ton of coal yields about 0.36 Megawatt-day,
+if again you ignore efficiencies. Thus one gram of U-235 contains 
+as much nuclear energy as three tons of coal
+contain in chemical energy. We can understand the nuclear fission
+qualitatively and quantitatively using the liquid drop model of the nucleus
+which we have introduced in video 2.3. Let's first look at the process qualitatively. The liquid drop model presumes
+a spherical shape of the nucleus. But for a heavy nucleus a small external perturbation
+like for instance an incident neutron can produce surface waves
+leading to a change in shape. The drop may thus extend into spheroïdal shape and if this perturbation is small enough,
+the nucleus will be left excited and just return to its ground
+state by emitting a photon. This process is called
+radiative neutron capture. If on the contrary the perturbation 
+is large, Coulomb repulsion along the axis of this spheroïd can split the drop into two droplets by
+what is called induced fission. Now, let us calculate under
+which condition this may happen. A sphere of radius R will turn into
+a spheroïd of a constant volume because of the incompressibility of nuclear matter. We denote its half-axes by a and
+b, which is equal to c. In terms of a small deformation epsilon, they transform into
+(b - epsilon) and (a + epsilon). For the binding energy, the volume 
+term stays constant, but the surface and Coulomb energy are different. The deformation increases
+this surface energy but decreases the Coulomb term. So the gain or loss in binding energy will depend on the
+relative importance of these two terms. If the difference is greater than 0, the
+spherical nucleus is more tightly bound and thus stable against
+this small perturbation. If on the contrary,
+∆ is less than zero, the spherical nucleus is less tightly
+bound and can undergo fission. Putting in the typical values for
+the coefficients a_2 and a_3, one obtains stability if the ratio
+Z^2/A is less than 47. There are small quantum corrections
+to this classical approach which, however, do not change the conclusion. We expect on the contrary, that nuclei
+which set Z^2 > 47A, are highly unstable against a small perturbation
+and thus can be easily induced to fission. Heavy nuclei have Z < A/2
+so  the conditions that Z^2 < 47 A is satisfied. The spherical shape corresponds
+to the maximum binding energy but even in that case,
+a fission can be energetically favorable, if the sum of binding energies of the
+daughter nuclei is favorable with respect to the mother nucleus. Let us calculate this case for a symmetric fission assuming spherical
+daughter nuclei for simplicity. A and Z of the parent nucleus must thus be even. We again ignore quantum
+terms of the Bethe-Weizsäcker formula. The energy difference is denoted by ∆. With typical coefficients,
+we obtain delta equal to 0.27 A^2/3 (-16.5 + Z^2/A). Thus for Z^2 < 16.5A the two daughter nuclei are more tightly
+bounded than the mother nucleus. We thus see that for
+the region Z^2 between 16.5A and 47A, the spherical shape may
+be stable against fission but it remains energetically favorable for
+the parent nucleus to split into two smaller ones,
+when it is sufficiently perturbed. Beyond that zone, even a minor
+perturbation by a thermal neutron, for instance, will suffice to cause fission. Let us consider Uranium
+isotopes as an example. U-238 is an even even nucleus and thus more tightly bound than U-235,
+which is odd even. We thus need a smaller perturbation
+to induce fission in U-235. The activation energy
+is about 5 MeV for U-235 and 6 MeV for U-238. When capturing a neutron,
+U-235 becomes an even-even nucleus. This transformation releases about 6.5 MeV of binding energy, which is
+sufficient to activate its fission. For U-238, a neutron capture changes the nucleus
+to a less tightly bound odd-even one. This will be a less exothermal process. It releases only 4.8 MeV
+out of the necessary 6 MeV. So additional 1.2 MeV per neutron
+must be provided to induce fission. The fragments are often rather asymmetric. One observes a grouping of the daughter
+nuclei around mass number 95 and 140 as shown in this picture, for
+a reason which we have not yet understood. The picture here in fact shows the mass
+spectrum of daughter nuclei from the fission of U-233, U-235,
+Pu-239, as well as a mixture. The mass spectra are similar. After the fission process the daughter
+nuclei are often in a excited states. And they turn into stable isotopes
+by neutron emission. Neutrons are thus abundant
+among the fission products. They can cause a chain reaction
+of nuclear fission processes. U-235 produces on average
+2.5 neutrons per fission. These neutrons can in turn induce
+new fission reactions and so forth. To see if a chain reaction can be
+maintained, we consider the ratio k of the number of neutrons
+produced in step n+1 to the one produced
+in step n of the chain. If k is less than one,
+there are not enough neutrons to sustain a chain reaction, and
+the process will stop by itself. If k is equal to one or around one,
+there are just enough neutrons to maintain a chain reaction with a
+constant number of fissions at each step. This is the ideal situation for
+nuclear fission reactor. If k is bigger than one, more and more
+neutrons will be produced at each stage, thus leading to an exponential growth
+of the number of fission reaction. And this is the situation which is searched
+for the production of nuclear weapons. In the next video,
+we will talk about how to use the fission process in
+nuclear power plants. [MUSIC]

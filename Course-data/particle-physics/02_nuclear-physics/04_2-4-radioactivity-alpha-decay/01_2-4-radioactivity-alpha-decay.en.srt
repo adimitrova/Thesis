@@ -1,0 +1,566 @@
+1
+00:00:00,000 --> 00:00:10,000
+[MUSIC]
+
+2
+00:00:11,185 --> 00:00:16,160
+During this second module, we deal
+with nuclear physics and its application.
+
+3
+00:00:16,160 --> 00:00:18,670
+We'll now discuss radioactivity.
+
+4
+00:00:18,670 --> 00:00:23,090
+In this fourth video, we'll talk
+about nuclear decay in general, and
+
+5
+00:00:23,090 --> 00:00:25,850
+the alpha decay in particular.
+
+6
+00:00:25,850 --> 00:00:27,644
+After watching this video,
+
+7
+00:00:27,644 --> 00:00:32,284
+you will be able to describe the valley
+of stability and its surroundings.
+
+8
+00:00:32,284 --> 00:00:37,631
+To know how to locate and characterize
+the nuclei with respect to this valley,
+
+9
+00:00:37,631 --> 00:00:41,429
+and characterize alpha decays and
+their properties.
+
+10
+00:00:43,120 --> 00:00:47,574
+An unstable nucleus can transform
+itself in a more stable one through
+
+11
+00:00:47,574 --> 00:00:49,660
+radioactive decay.
+
+12
+00:00:49,660 --> 00:00:56,778
+We distinguish three types, historically
+labelled as alpha, beta, and gamma decays.
+
+13
+00:00:56,778 --> 00:01:02,670
+Alpha decay is the spontaneous fission of
+a heavy nucleus into a less heavy one and
+
+14
+00:01:02,670 --> 00:01:07,470
+the nucleus of He-4,
+also called alpha particle.
+
+15
+00:01:07,470 --> 00:01:13,190
+The beta decays are transformation
+between a nuclear neutron into a proton,
+
+16
+00:01:13,190 --> 00:01:17,414
+or vice versa,
+by respectively emitting an electron and
+
+17
+00:01:17,414 --> 00:01:22,080
+its antineutrino or
+a positron and its neutrino.
+
+18
+00:01:22,080 --> 00:01:26,130
+This way, both baryon number and
+lepton number are conserved.
+
+19
+00:01:26,130 --> 00:01:30,850
+This decay is often leave the daughter
+the nucleus in an excited state,
+
+20
+00:01:30,850 --> 00:01:36,810
+and a gamma decays allows it to return
+it to its ground state by emitting one or
+
+21
+00:01:36,810 --> 00:01:37,890
+more photons.
+
+22
+00:01:39,480 --> 00:01:42,000
+Decays are a spontaneous processes.
+
+23
+00:01:42,000 --> 00:01:47,030
+The happen if they tighten
+the binding of a nucleus.
+
+24
+00:01:47,030 --> 00:01:50,146
+Thus very heavy nuclei
+can reduce their mass and
+
+25
+00:01:50,146 --> 00:01:56,200
+increase their binding energy by emitting
+a tightly-bound He-4 nucleus.
+
+26
+00:01:56,200 --> 00:02:02,440
+Nuclei which are rich in neutrons can gain
+a more symmetric state by transforming
+
+27
+00:02:02,440 --> 00:02:06,370
+one of them into a proton
+via a ß- decay.
+
+28
+00:02:07,550 --> 00:02:13,448
+Nuclei, which are rich in protons, can
+correct this asymmetry by a ß+ decay.
+
+29
+00:02:13,448 --> 00:02:19,360
+And excited daughter nuclei can reach
+their ground state by meeting one or
+
+30
+00:02:19,360 --> 00:02:20,609
+more photons.
+
+31
+00:02:20,609 --> 00:02:25,530
+All these reactions take the nucleus
+closer to the valley of stability.
+
+32
+00:02:28,320 --> 00:02:31,680
+This table shows
+the distribution of nuclei
+
+33
+00:02:31,680 --> 00:02:35,398
+with the stable isotopes
+over the periodic system.
+
+34
+00:02:35,398 --> 00:02:42,100
+About 60 radioactive nuclei
+are naturally present on Earth,
+
+35
+00:02:42,100 --> 00:02:45,750
+compared to about 1,000
+radioactive isotopes so
+
+36
+00:02:45,750 --> 00:02:48,680
+far produced in the laboratory.
+
+37
+00:02:48,680 --> 00:02:50,350
+When our planet was formed,
+
+38
+00:02:50,350 --> 00:02:56,040
+we can assume that all these nuclei
+were roughly equally abundant.
+
+39
+00:02:56,040 --> 00:03:00,100
+The absences of certain
+radioactive nuclei today
+
+40
+00:03:00,100 --> 00:03:04,280
+can give us an idea of
+the age of the solar system.
+
+41
+00:03:04,280 --> 00:03:08,920
+This estimate give us an age of
+roughly 10 billion years for the Sun.
+
+42
+00:03:08,920 --> 00:03:13,230
+All nuclei with a shorter lifetime
+have completely disappeared.
+
+43
+00:03:13,230 --> 00:03:17,330
+The naturally present radioactive
+nuclei have a nuclear charge, Z,
+
+44
+00:03:17,330 --> 00:03:20,980
+between 81 and 92.
+
+45
+00:03:20,980 --> 00:03:24,780
+They are characterized by
+an excess of neutrons.
+
+46
+00:03:24,780 --> 00:03:29,200
+Since they are heavy,
+they first undergo an alpha decay,
+
+47
+00:03:29,200 --> 00:03:33,000
+leading to an even larger
+relative excess of neutrons.
+
+48
+00:03:33,000 --> 00:03:37,450
+This then can be fixed by
+subsequent beta decay.
+
+49
+00:03:37,450 --> 00:03:41,180
+The grand daughters are often
+themselves unstable and
+
+50
+00:03:41,180 --> 00:03:43,810
+undergo alpha decay and so on.
+
+51
+00:03:43,810 --> 00:03:48,629
+This results in a chain of alpha and
+beta decays which will continue until
+
+52
+00:03:48,629 --> 00:03:52,510
+the valley of stability in the N-Z
+plane is reached.
+
+53
+00:03:57,885 --> 00:04:02,212
+All of this results in four
+series of alpha emitters where
+
+54
+00:04:02,212 --> 00:04:07,380
+the daughters progressively differ
+by a multiple of four nucleons.
+
+55
+00:04:07,380 --> 00:04:12,966
+We have the Thorium series with
+a mass number which is 4N,
+
+56
+00:04:12,966 --> 00:04:18,552
+the Neptunian series with mass
+number A equal to 4N + 1,
+
+57
+00:04:18,552 --> 00:04:22,998
+the Uranium-Radium series with A equal to 4N + 2,
+and
+
+58
+00:04:22,998 --> 00:04:28,130
+the Uranium-Actinium series
+with A equal to 4N + 3.
+
+59
+00:04:28,130 --> 00:04:33,140
+One of the important applications
+of radioactivity is the dating
+
+60
+00:04:33,140 --> 00:04:39,450
+of organic materials, which can
+work up to several thousand years.
+
+61
+00:04:39,450 --> 00:04:43,548
+We will see this in more
+detail when we speak about
+
+62
+00:04:43,548 --> 00:04:46,779
+radioisotope dating in video 2.7.
+
+63
+00:04:49,792 --> 00:04:55,434
+Let us now discuss the physics
+of alpha decay in more detail.
+
+64
+00:04:55,434 --> 00:05:01,375
+A parent nucleus, P, decays into a daughter
+nucleus D via emission of a He-4 nucleus.
+
+65
+00:05:01,375 --> 00:05:07,575
+This corresponds to a spontaneous fission
+into daughter nuclei of vary asymmetric mass,
+
+66
+00:05:07,575 --> 00:05:11,189
+since the nucleus D is much
+heavier than the He-4.
+
+67
+00:05:11,189 --> 00:05:17,794
+For more details on other fission processes,
+we refer you to the video 2.8.
+
+68
+00:05:17,794 --> 00:05:21,750
+If we consider the parent
+nucleus to be at rest,
+
+69
+00:05:21,750 --> 00:05:27,370
+energy conservation gives us a relation
+between the masses and energies.
+
+70
+00:05:27,370 --> 00:05:31,070
+Since the number of electrons
+is unchanged in the reaction,
+
+71
+00:05:31,070 --> 00:05:35,186
+you can directly use atomic mass for
+this calculation.
+
+72
+00:05:35,186 --> 00:05:40,143
+T_alpha and T_D are the kinetic
+energies of the alpha particle and
+
+73
+00:05:40,143 --> 00:05:41,809
+the daughter nucleus.
+
+74
+00:05:41,809 --> 00:05:47,710
+The gain in binding energy that drives
+the decay is called the Q value.
+
+75
+00:05:47,710 --> 00:05:53,540
+And it is converted into the kinetic
+energy of the decay products.
+
+76
+00:05:53,540 --> 00:06:01,100
+An example of the calculation of
+T_alpha and T_D is given in video 2.4a.
+
+77
+00:06:01,100 --> 00:06:04,520
+Because of the asymmetry in
+the masses the alpha particle
+
+78
+00:06:04,520 --> 00:06:07,270
+takes most of the kinetic energy.
+
+79
+00:06:10,098 --> 00:06:13,720
+The spectra of alpha particles
+coming from the decay
+
+80
+00:06:13,720 --> 00:06:18,106
+of the same isotope can reveal
+intermediate metastable states.
+
+81
+00:06:18,106 --> 00:06:23,426
+One the observes alpha particles
+with slightly different but,
+
+82
+00:06:23,426 --> 00:06:26,881
+of course, quantized energies.
+One also observes gamma ray
+
+83
+00:06:26,881 --> 00:06:32,780
+emission which comes from the decay
+cascade towards the ground state.
+
+84
+00:06:32,780 --> 00:06:38,330
+The parent nucleus can of course also
+directly decay to the ground state
+
+85
+00:06:38,330 --> 00:06:41,340
+without passing by intermediate states.
+
+86
+00:06:41,340 --> 00:06:46,145
+This direct decay results in
+the most energetic alpha particle.
+
+87
+00:06:46,145 --> 00:06:51,247
+An example is shown here for
+the decay chain of Am-241,
+
+88
+00:06:51,247 --> 00:06:56,000
+which is a radioactive source
+often used in the laboratory.
+
+89
+00:06:59,370 --> 00:07:03,824
+The kinetic energy of an alpha
+particle from nuclear decay is
+
+90
+00:07:03,824 --> 00:07:06,982
+typically of the order of 5 MeV.
+
+91
+00:07:06,982 --> 00:07:11,327
+When such a low energy particle
+approaches a heavy nucleus from outside,
+
+92
+00:07:11,327 --> 00:07:14,530
+it cannot penetrate the Coulomb barrier.
+
+93
+00:07:14,530 --> 00:07:23,190
+For a nucleus of mass number about 200,
+it has a typical height of 20 to 25 MeV.
+
+94
+00:07:23,190 --> 00:07:26,745
+So why does the process work
+in the opposite direction?
+
+95
+00:07:26,745 --> 00:07:31,450
+How can an alpha particle traverse
+the Coulomb barrier from the inside?
+
+96
+00:07:32,510 --> 00:07:36,660
+The answer is given by
+the quantum process of tunneling.
+
+97
+00:07:36,660 --> 00:07:40,743
+The probability that
+an alpha particle traverses
+
+98
+00:07:40,743 --> 00:07:45,708
+the Coulomb barrier is of
+the order of 10^-40.
+
+99
+00:07:45,708 --> 00:07:50,071
+But this is the probability of
+traversing on a single trial.
+
+100
+00:07:50,071 --> 00:07:52,800
+This is why a low energy alpha particle
+
+101
+00:07:52,800 --> 00:07:56,647
+from the outside cannot
+penetrate the barrier.
+
+102
+00:07:56,647 --> 00:08:01,920
+The velocity of an alpha particle,
+bound to a nucleus with kinetic
+
+103
+00:08:01,920 --> 00:08:08,030
+energy of about 44 MeV, is not
+relativistic but still impressive.
+
+104
+00:08:08,030 --> 00:08:12,100
+It has a velocity of about
+0.15 speed of light.
+
+105
+00:08:13,380 --> 00:08:18,490
+Confined to a region with a radius of
+about 10^-12 centimeters,
+
+106
+00:08:18,490 --> 00:08:23,522
+the particle bounces off the barrier
+with a frequency of about
+
+107
+00:08:23,522 --> 00:08:28,822
+4.5 10^21 times per second.
+
+108
+00:08:28,822 --> 00:08:37,240
+The probability of penetration per second is thus
+0.5 10^-18 per second.
+
+109
+00:08:38,480 --> 00:08:42,577
+This quantity is called
+the decay constant lambda,
+
+110
+00:08:42,577 --> 00:08:45,845
+which is the inverse of the lifetime tau.
+
+111
+00:08:45,845 --> 00:08:50,989
+For a typical nucleus we find a 
+lifetime of 10^10 years,
+
+112
+00:08:50,989 --> 00:08:55,160
+which is representative for
+nuclei with alpha decay.
+
+113
+00:08:55,160 --> 00:09:00,546
+The number of nuclei N(t)
+remaining after elapsed time t
+
+114
+00:09:00,546 --> 00:09:07,580
+from an initial sample of N_0 nuclei diminishes
+exponentially according to the decay law.
+
+115
+00:09:08,900 --> 00:09:15,920
+We will give more detail on this
+law in the optional video 2.5a.
+
+116
+00:09:15,920 --> 00:09:21,792
+In the next video, we will talk about
+the other two types of radioactivity,
+
+117
+00:09:21,792 --> 00:09:24,196
+namely beta and gamma decays.
+
+118
+00:09:24,196 --> 00:09:30,139
+[MUSIC]

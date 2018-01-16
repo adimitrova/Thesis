@@ -1,0 +1,630 @@
+1
+00:00:00,253 --> 00:00:11,037
+[MUSIC]
+
+2
+00:00:11,037 --> 00:00:16,000
+During this second module, we deal with
+nuclear physics and its applications.
+
+3
+00:00:16,000 --> 00:00:17,920
+In this second video,
+
+4
+00:00:17,920 --> 00:00:23,080
+we will summarize what is known about
+the size and the spin of nuclei.
+
+5
+00:00:24,910 --> 00:00:31,350
+The goals for you are to know how nuclear
+size is measured and what the results are.
+
+6
+00:00:31,350 --> 00:00:34,738
+To know general facts
+about the spin of nuclei.
+
+7
+00:00:34,738 --> 00:00:38,434
+And to be able to describe the valley
+of stability of nuclei
+
+8
+00:00:38,434 --> 00:00:42,880
+as a function of the number of protons and
+neutrons.
+
+9
+00:00:42,880 --> 00:00:49,786
+The size of a subatomic object
+must be carefully defined.
+
+10
+00:00:49,786 --> 00:00:53,835
+In a quantum system, it is given by
+the root mean square of the eigenvalue of
+
+11
+00:00:53,835 --> 00:00:56,362
+the coordinate operator
+in its ground state.
+
+12
+00:00:56,362 --> 00:01:01,290
+For an atom, this is the root mean square
+of the radial position of the electron,
+
+13
+00:01:01,290 --> 00:01:04,390
+which is farthest away from the nucleus.
+
+14
+00:01:04,390 --> 00:01:08,815
+This distance can be calculated
+because we know perfectly the binding
+
+15
+00:01:08,815 --> 00:01:10,471
+electromagnetic force
+
+16
+00:01:10,471 --> 00:01:14,703
+and because it is defined with
+respect to a static reference point,
+
+17
+00:01:14,703 --> 00:01:16,570
+the position of the nucleus.
+
+18
+00:01:17,730 --> 00:01:22,540
+For the nucleus, we do not have
+a simple description of these actions.
+
+19
+00:01:22,540 --> 00:01:25,900
+So we must interpret
+the results of experiments,
+
+20
+00:01:25,900 --> 00:01:29,859
+which probe the distribution of
+nucleons inside the nucleus.
+
+21
+00:01:31,210 --> 00:01:34,979
+It will be unwise to use
+hadronic probes to do so
+
+22
+00:01:34,979 --> 00:01:39,047
+because they are sensitive
+to the nuclear force.
+
+23
+00:01:39,047 --> 00:01:43,263
+High energy electrons, on the contrary,
+can penetrate inside the nucleus
+
+24
+00:01:43,263 --> 00:01:48,860
+and their scattering maps out the charge
+distribution of the target.
+
+25
+00:01:48,860 --> 00:01:50,040
+The cross section for
+
+26
+00:01:50,040 --> 00:01:55,288
+a point-like target without spin is given
+by the Mott formula displayed here.
+
+27
+00:01:55,288 --> 00:01:59,780
+If the charge instead is
+distributed according to a volume
+
+28
+00:01:59,780 --> 00:02:04,330
+density rho(x),
+leaving the total charge intact,
+
+29
+00:02:04,330 --> 00:02:09,550
+the cross section will be
+reduced by form factor F(q),
+
+30
+00:02:09,550 --> 00:02:13,000
+which is a function of
+the momentum transfer q.
+
+31
+00:02:15,850 --> 00:02:17,411
+For a static target,
+
+32
+00:02:17,411 --> 00:02:22,910
+F(q) is the Fourier transform of
+the spatial charge distribution.
+
+33
+00:02:22,910 --> 00:02:25,372
+For small momentum transfers,
+
+34
+00:02:25,372 --> 00:02:29,207
+we can develop the form
+factor in a Taylor series.
+
+35
+00:02:29,207 --> 00:02:31,842
+If the distribution is
+spherically symmetric,
+
+36
+00:02:31,842 --> 00:02:33,840
+the terms with an odd power drop out.
+
+37
+00:02:33,840 --> 00:02:38,434
+And the dominant second term is
+proportional to the mean square radius,
+
+38
+00:02:38,434 --> 00:02:40,930
+<r^2> of the charge distribution.
+
+39
+00:02:40,930 --> 00:02:45,042
+And this can serve as a size estimator for
+the nucleus.
+
+40
+00:02:45,042 --> 00:02:48,104
+For an exponential charge distribution,
+
+41
+00:02:48,104 --> 00:02:51,852
+the form factor takes what
+is called a dipolar form.
+
+42
+00:02:51,852 --> 00:02:57,587
+The dependence of the electron nucleus
+cross section on the momentum transfer for
+
+43
+00:02:57,587 --> 00:03:01,770
+small angle scattering
+at high electron energies
+
+44
+00:03:01,770 --> 00:03:05,459
+is thus used to measure
+the size of the nucleus.
+
+45
+00:03:07,605 --> 00:03:12,086
+Scattering experiments establish
+a simple relation between
+
+46
+00:03:12,086 --> 00:03:16,690
+the radius of a nucleus R and
+the number of nucleons A.
+
+47
+00:03:16,690 --> 00:03:21,140
+The radius is proportional to the cube
+root of the number of nucleons,
+
+48
+00:03:21,140 --> 00:03:26,550
+with a universal proportionality
+constant of 1.2 femtometers.
+
+49
+00:03:26,550 --> 00:03:31,457
+Nuclei are thus indeed small
+compared to the atomic size.
+
+50
+00:03:31,457 --> 00:03:34,840
+The nuclear volume is proportional to A.
+
+51
+00:03:34,840 --> 00:03:38,902
+This corresponds to densely packed and
+incompressible nucleons,
+
+52
+00:03:38,902 --> 00:03:40,740
+which do not fuse.
+
+53
+00:03:40,740 --> 00:03:45,681
+The mass density of nuclear matter is
+of the order of 10^14 grams
+
+54
+00:03:45,681 --> 00:03:47,309
+per cm^3.
+
+55
+00:03:51,058 --> 00:03:56,669
+Nuclear spin is the sum of the spin
+S of all individual nucleons and
+
+56
+00:03:56,669 --> 00:03:59,865
+the relative angular momentum, L.
+
+57
+00:03:59,865 --> 00:04:03,915
+Protons and
+neutrons are fermions with spin one-half.
+
+58
+00:04:03,915 --> 00:04:04,885
+Like in atoms,
+
+59
+00:04:04,885 --> 00:04:10,285
+the nuclear angular momentum L
+follows an integer quantum number.
+
+60
+00:04:10,285 --> 00:04:15,065
+The total should therefore be a
+half integer number if A is odd,
+
+61
+00:04:15,065 --> 00:04:17,720
+an integer if A is even.
+
+62
+00:04:17,720 --> 00:04:22,910
+Indeed, all nuclei with both N and
+Z even have nuclear spin 0.
+
+63
+00:04:22,910 --> 00:04:27,390
+Heavy nuclei have rather small
+nuclear spin in their ground state.
+
+64
+00:04:28,480 --> 00:04:30,523
+We conclude that neutrons and
+
+65
+00:04:30,523 --> 00:04:34,781
+protons tend to arrange in pairs
+of opposite spin direction.
+
+66
+00:04:38,519 --> 00:04:44,137
+Every charged particle has a magnetic
+dipole moment associated with its spin,
+
+67
+00:04:44,137 --> 00:04:45,847
+including the nuclei.
+
+68
+00:04:45,847 --> 00:04:50,200
+The order of magnitude for an electron
+is given by the Bohr magneton, µ_B.
+
+69
+00:04:51,960 --> 00:04:56,757
+The nuclear magneton is three orders
+of magnitude smaller due to the larger
+
+70
+00:04:56,757 --> 00:04:58,120
+proton mass.
+
+71
+00:04:58,120 --> 00:05:03,980
+The gyromagnetic factor g measures
+the ratio between the angular momentum and
+
+72
+00:05:03,980 --> 00:05:05,468
+the magnetic moment.
+
+73
+00:05:05,468 --> 00:05:11,045
+For a point charge,
+g is about 2 with small deviation of order
+
+74
+00:05:11,045 --> 00:05:17,110
+10^-3 for electrons and
+muons as we will see in module 4.
+
+75
+00:05:17,110 --> 00:05:21,124
+The magnetic moments of proton and
+neutron are considerably different,
+
+76
+00:05:21,124 --> 00:05:29,789
++2.79 and -1.91 nuclear magnetons, respectively.
+
+77
+00:05:29,789 --> 00:05:35,340
+This is the first indication of
+a charged substructure of the nucleons.
+
+78
+00:05:35,340 --> 00:05:41,820
+In fact, since the neutron has zero net
+charge, it must contain charged particles.
+
+79
+00:05:41,820 --> 00:05:46,433
+All nuclei have measured magnetic
+moments between minus three and
+
+80
+00:05:46,433 --> 00:05:50,400
+ten nuclear magnetons, thus,
+relatively small ones.
+
+81
+00:05:50,400 --> 00:05:54,113
+This is a consequence of
+the spin pairings of nucleons,
+
+82
+00:05:54,113 --> 00:05:57,747
+leading to a limited total
+nuclear angular momentum.
+
+83
+00:06:00,905 --> 00:06:04,950
+Most nuclei and
+their isotopes are unstable.
+
+84
+00:06:04,950 --> 00:06:07,730
+Stable nuclei are found in a narrow band,
+
+85
+00:06:07,730 --> 00:06:12,440
+in the N-Z diagram which is
+called the valley of stability.
+
+86
+00:06:12,440 --> 00:06:14,402
+The valley has the following shape.
+
+87
+00:06:14,402 --> 00:06:17,680
+For lighter nuclei with
+atomic mass less than 40,
+
+88
+00:06:17,680 --> 00:06:22,276
+the number of neutrons equals
+the number of protons.
+
+89
+00:06:22,276 --> 00:06:25,350
+For heavy nuclei with
+atomic mass bigger than 40,
+
+90
+00:06:25,350 --> 00:06:31,000
+the number of neutrons is about
+1.7 times the number of protons.
+
+91
+00:06:31,000 --> 00:06:34,740
+This indicates that for
+heavy nuclei, the charge density,
+
+92
+00:06:34,740 --> 00:06:39,231
+and thus the Coulomb repulsion must
+be diluted by additional neutrons.
+
+93
+00:06:39,231 --> 00:06:45,150
+The decay of unstable nuclei is
+the source of nuclear radioactivity.
+
+94
+00:06:45,150 --> 00:06:50,424
+Alpha radioactivity is
+the emission of He-4 nuclei or
+
+95
+00:06:50,424 --> 00:06:53,020
+so-called alpha particles.
+
+96
+00:06:53,020 --> 00:06:55,805
+Beta radioactivity is
+the emission of electrons or
+
+97
+00:06:55,805 --> 00:06:58,970
+positrons together with neutrinos.
+
+98
+00:06:58,970 --> 00:07:02,360
+And gamma radioactivity is
+the emission of photons.
+
+99
+00:07:02,360 --> 00:07:05,830
+Nuclei with a surplus of
+neutrons can be stabilized
+
+100
+00:07:05,830 --> 00:07:09,220
+by converting a neutron into a proton.
+
+101
+00:07:09,220 --> 00:07:14,510
+And those with the surplus of protons
+can convert a proton into a neutron.
+
+102
+00:07:14,510 --> 00:07:18,988
+These are isobar decays of
+type beta plus or minus.
+
+103
+00:07:18,988 --> 00:07:23,766
+Heavy nuclei often decay into
+a pair of lighter nuclei.
+
+104
+00:07:23,766 --> 00:07:31,030
+This corresponds to spontaneous fission,
+often by emitting a He-4 nucleus.
+
+105
+00:07:31,030 --> 00:07:32,827
+This is the alpha decay.
+
+106
+00:07:32,827 --> 00:07:37,786
+This decay is normally related to
+an excited state of the daughter nucleus.
+
+107
+00:07:37,786 --> 00:07:42,162
+And they're often followed by a gamma
+decay towards the ground states.
+
+108
+00:07:42,162 --> 00:07:46,489
+We will enter into more detail on
+these processes in the fourth and
+
+109
+00:07:46,489 --> 00:07:48,386
+fifth video of this module.
+
+110
+00:07:51,182 --> 00:07:55,820
+So let us summarize what we have
+learned about the nuclear force.
+
+111
+00:07:55,820 --> 00:07:59,860
+It has a very short range
+limited to the nuclear size.
+
+112
+00:07:59,860 --> 00:08:06,160
+The binding energy per nucleon it leads to
+is independent of the size of the nucleus.
+
+113
+00:08:06,160 --> 00:08:09,790
+The nucleon thus interacts only
+with its nearest neighbors.
+
+114
+00:08:10,940 --> 00:08:12,950
+The nuclear force is attractive and
+
+115
+00:08:12,950 --> 00:08:17,250
+much stronger than the Coulomb
+repulsion between protons.
+
+116
+00:08:17,250 --> 00:08:20,970
+But it must also have a repulsive
+component at distances
+
+117
+00:08:20,970 --> 00:08:25,320
+compatible to the size of the nucleon,
+which is about 1 femtometer.
+
+118
+00:08:25,320 --> 00:08:29,610
+This is due to the existence of
+quarks inside the nucleon.
+
+119
+00:08:29,610 --> 00:08:34,535
+The repulsive component is necessary
+to prevent the fusion among nucleons.
+
+120
+00:08:34,535 --> 00:08:38,226
+QCD is a quantum field
+theory which describes
+
+121
+00:08:38,226 --> 00:08:41,825
+the interaction among colored particles,
+
+122
+00:08:41,825 --> 00:08:43,853
+so quarks inside hadrons,
+
+123
+00:08:43,853 --> 00:08:47,725
+via the exchange of
+equally colored gluons.
+
+124
+00:08:47,725 --> 00:08:54,935
+But the strong force acts only inside
+hadrons, which thus have a zero net color.
+
+125
+00:08:54,935 --> 00:08:58,320
+Nucleons cannot exchange gluons.
+
+126
+00:08:58,320 --> 00:09:03,470
+It is by the exchange of colorless objects
+like mesons that they bind together.
+
+127
+00:09:04,610 --> 00:09:10,154
+This makes the nucleus a complex multibody
+object, which is difficult to understand.
+
+128
+00:09:10,154 --> 00:09:15,399
+The appropriate theoretical methods
+are effective field theories
+
+129
+00:09:15,399 --> 00:09:21,810
+like Chiral Perturbation Theory or
+a numerical calculation like Lattice QCD.
+
+130
+00:09:21,810 --> 00:09:25,890
+All of this goes beyond
+the scope of this course.
+
+131
+00:09:25,890 --> 00:09:30,763
+In the next video, we will rather
+concentrate on much simpler models,
+
+132
+00:09:30,763 --> 00:09:33,993
+which describe the gross
+features of nuclei.
+
+133
+00:09:33,993 --> 00:09:39,989
+[MUSIC]

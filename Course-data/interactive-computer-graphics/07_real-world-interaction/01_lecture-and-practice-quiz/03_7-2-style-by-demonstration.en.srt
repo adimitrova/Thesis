@@ -1,0 +1,550 @@
+1
+00:00:00,460 --> 00:00:05,190
+Our next topic is style-by-demonstration.
+
+2
+00:00:05,190 --> 00:00:08,860
+So, the what we do this here is
+called style by demonstration,
+
+3
+00:00:08,860 --> 00:00:11,970
+teaching interactive movement,
+movement style to robots.
+
+4
+00:00:13,370 --> 00:00:16,550
+So the goal here is to teach
+interactive behavior to robots.
+
+5
+00:00:16,550 --> 00:00:19,840
+The robot observes user behavior.
+
+6
+00:00:19,840 --> 00:00:22,310
+And the user do something and
+the robot do something.
+
+7
+00:00:22,310 --> 00:00:25,970
+So we try to teach this
+kind of interactive motion.
+
+8
+00:00:25,970 --> 00:00:27,440
+And you will have to do this,
+
+9
+00:00:27,440 --> 00:00:30,510
+you know traditional programming
+is require, you know?
+
+10
+00:00:30,510 --> 00:00:33,800
+User have to how to call, how to do it.
+
+11
+00:00:33,800 --> 00:00:37,260
+However, traditional text
+based programming like C or
+
+12
+00:00:37,260 --> 00:00:39,159
+Java is too difficult for designers.
+
+13
+00:00:40,670 --> 00:00:46,960
+So, our goal is to, do this, make it
+possible for artists to design behavior.
+
+14
+00:00:46,960 --> 00:00:51,010
+And then, we take proble,
+programming by demonstration approach.
+
+15
+00:00:51,010 --> 00:00:57,150
+So the intertwining phase, user interacts
+with the robot, operated by an operator.
+
+16
+00:00:57,150 --> 00:01:01,470
+So, the designer actually operates
+this robot, interacting with the user.
+
+17
+00:01:01,470 --> 00:01:06,350
+And then, from this demonstration
+result training data, is a run time,
+
+18
+00:01:06,350 --> 00:01:09,970
+systems automatically
+synthesizes robot motion,
+
+19
+00:01:09,970 --> 00:01:14,770
+responding to the user input in the real
+time and defaulting to the training data.
+
+20
+00:01:14,770 --> 00:01:15,860
+So that's the basic idea.
+
+21
+00:01:17,440 --> 00:01:18,208
+Let me show you a video.
+
+22
+00:01:24,752 --> 00:01:28,716
+So here this is a user and
+this is a designer operator, and
+
+23
+00:01:28,716 --> 00:01:30,400
+then here's a robot.
+
+24
+00:01:30,400 --> 00:01:32,290
+So, and this is a training phase.
+
+25
+00:01:32,290 --> 00:01:33,640
+In the training phase,
+
+26
+00:01:33,640 --> 00:01:37,250
+operator is operating the robot
+to responding to the user.
+
+27
+00:01:37,250 --> 00:01:39,370
+After that, he leaves.
+
+28
+00:01:39,370 --> 00:01:40,140
+He disappears.
+
+29
+00:01:41,420 --> 00:01:44,442
+So I think he's teaching
+following behavior.
+
+30
+00:01:54,425 --> 00:02:00,507
+So, in this case, the designer
+is teaching attacking behavior.
+
+31
+00:02:00,507 --> 00:02:08,779
+So, tries to push this user away from
+the lesion, so that's a behavior.
+
+32
+00:02:08,779 --> 00:02:12,763
+Oh, by the way, everything in tracked
+using a motion capture system, so
+
+33
+00:02:12,763 --> 00:02:16,814
+if the users positions, and robot
+position is continuously tracked, and
+
+34
+00:02:16,814 --> 00:02:18,570
+recorded, as a training data.
+
+35
+00:02:22,220 --> 00:02:24,240
+After the learning in the lab time,
+
+36
+00:02:24,240 --> 00:02:29,390
+robot replays interactive motion
+adapting to the current situation.
+
+37
+00:02:30,450 --> 00:02:34,264
+So here is a robot who is reprising
+a burglar attacking behavior.
+
+38
+00:02:43,210 --> 00:02:48,140
+So, I think it's very tedious to teach
+this kind of motion using standard program
+
+39
+00:02:48,140 --> 00:02:54,240
+language, taking user and robot position
+as input, and then compute many geometric.
+
+40
+00:02:54,240 --> 00:02:57,520
+How to code motor motion
+is hard very difficult.
+
+41
+00:03:01,010 --> 00:03:04,890
+We also tested this kind of tabletop
+configuration for teaching.
+
+42
+00:03:04,890 --> 00:03:09,799
+So the user is manipulating,
+controlling the robot in this way
+
+43
+00:03:09,799 --> 00:03:13,267
+following the character
+following the user.
+
+44
+00:03:20,736 --> 00:03:24,118
+I think here the user is
+teaching stalking behavior.
+
+45
+00:03:24,118 --> 00:03:28,004
+You know, following a person
+from the behind, hiding away.
+
+46
+00:03:35,621 --> 00:03:37,139
+So, this is the result.
+
+47
+00:03:37,139 --> 00:03:42,100
+So the system is learning automatic
+auto-resume based on the training data.
+
+48
+00:03:42,100 --> 00:03:48,790
+So this why he's following the person,
+like a stalking, with a certain distance.
+
+49
+00:03:51,910 --> 00:03:55,550
+So this is not just a replay, or
+pre-programmed, predefined motion.
+
+50
+00:03:55,550 --> 00:03:59,083
+It is adaptive to the current,
+current configuration.
+
+51
+00:04:19,476 --> 00:04:21,964
+Okay.
+So, that's, that's video.
+
+52
+00:04:21,964 --> 00:04:24,680
+So let me briefly describe the algorithm.
+
+53
+00:04:24,680 --> 00:04:25,910
+How to do it.
+
+54
+00:04:25,910 --> 00:04:27,910
+So, here's situation.
+
+55
+00:04:27,910 --> 00:04:29,220
+So, we have training data.
+
+56
+00:04:29,220 --> 00:04:32,808
+User motion data, position data,
+robot position data, and
+
+57
+00:04:32,808 --> 00:04:35,260
+these are time sensitive data.
+
+58
+00:04:35,260 --> 00:04:40,640
+So, in the training data you have lots
+of time series paired, traditional data,
+
+59
+00:04:40,640 --> 00:04:41,990
+motion data.
+
+60
+00:04:41,990 --> 00:04:44,090
+And also, we have a runtime situation.
+
+61
+00:04:44,090 --> 00:04:46,687
+So use is suppose to show he's
+continuously interact and
+
+62
+00:04:46,687 --> 00:04:48,754
+the robot motion is continuously interact.
+
+63
+00:04:48,754 --> 00:04:50,635
+So, now, this is the current time.
+
+64
+00:04:50,635 --> 00:04:55,259
+In the current time frame you have the
+history of user position, robot motion,
+
+65
+00:04:55,259 --> 00:04:57,410
+and also user's current position.
+
+66
+00:04:57,410 --> 00:05:03,220
+And the task is how to compute
+the robot's next next desired position.
+
+67
+00:05:03,220 --> 00:05:04,100
+So that's a.
+
+68
+00:05:04,100 --> 00:05:08,230
+Tasks, so input is this old data,
+and the output is position.
+
+69
+00:05:08,230 --> 00:05:10,420
+Desire to position was lowered.
+
+70
+00:05:10,420 --> 00:05:15,330
+In order to do it, in order to send
+similar motion to the training data,
+
+71
+00:05:15,330 --> 00:05:19,540
+first task is searches for
+the similar situation.
+
+72
+00:05:19,540 --> 00:05:23,500
+So, you compute the current configuration,
+we send you suppositions.
+
+73
+00:05:23,500 --> 00:05:27,310
+Recent user motions and
+recent robot motions, and it searches for
+
+74
+00:05:27,310 --> 00:05:30,158
+the similar situation in the data set.
+
+75
+00:05:30,158 --> 00:05:33,320
+You can make it faster by
+indexing it beforehand, but
+
+76
+00:05:33,320 --> 00:05:37,450
+anyway what you do is search for
+the similar situation.
+
+77
+00:05:37,450 --> 00:05:40,620
+And after identifying
+the most similar situation.
+
+78
+00:05:40,620 --> 00:05:42,760
+And the system basically just copies and
+
+79
+00:05:42,760 --> 00:05:47,400
+pastes, takes the motion in
+the training data to the current data.
+
+80
+00:05:47,400 --> 00:05:48,620
+Of course, this is a very,
+
+81
+00:05:48,620 --> 00:05:53,610
+very simplified view, but
+this describes the basic idea behind it.
+
+82
+00:05:53,610 --> 00:05:55,600
+And this kind of two-pair and
+
+83
+00:05:55,600 --> 00:06:01,900
+two-pair synthesis is inspired by this
+technique so called image analogies.
+
+84
+00:06:01,900 --> 00:06:06,378
+This is the technique designed,
+developed for image filtering.
+
+85
+00:06:06,378 --> 00:06:11,110
+So what we, what they do is here,
+so A, A dash, and B is an input.
+
+86
+00:06:12,320 --> 00:06:14,220
+And the B dash is a result.
+
+87
+00:06:14,220 --> 00:06:18,210
+So, here the user tries
+to teach image filtering.
+
+88
+00:06:18,210 --> 00:06:20,610
+So this is a, A is an input image.
+
+89
+00:06:20,610 --> 00:06:23,050
+And A dash is output image of this one.
+
+90
+00:06:23,050 --> 00:06:28,510
+So this one is kind of water painting
+filter, so system takes image and
+
+91
+00:06:28,510 --> 00:06:33,770
+then converts it to a kind of a water
+painted painting from the input.
+
+92
+00:06:33,770 --> 00:06:36,640
+So here the user provides
+an example as A and
+
+93
+00:06:36,640 --> 00:06:40,390
+A dash, and
+it also provides B as a source image.
+
+94
+00:06:40,390 --> 00:06:43,300
+After the system learns
+filtering from A and
+
+95
+00:06:43,300 --> 00:06:48,220
+A dash, and applies to B,
+and you get B as an output.
+
+96
+00:06:48,220 --> 00:06:53,090
+What happens internally is similar
+to the method we had just described.
+
+97
+00:06:53,090 --> 00:06:58,800
+For each pixel in B dash we searches for
+the similar situation in A,
+
+98
+00:06:58,800 --> 00:07:02,920
+A dash, and B, and then applies
+the result in A dash to B dash.
+
+99
+00:07:02,920 --> 00:07:03,840
+So that's what they do.
+
+100
+00:07:06,480 --> 00:07:09,930
+Okay.
+So, in this short video we describe how to
+
+101
+00:07:09,930 --> 00:07:14,280
+teach interactive behavior
+to a robot by demonstration.
+
+102
+00:07:14,280 --> 00:07:20,920
+So the, the designer operates a robot in
+training time, and then know what behaves.
+
+103
+00:07:20,920 --> 00:07:23,380
+The based on the training data.
+
+104
+00:07:23,380 --> 00:07:27,020
+And internally what they do is
+what the lower do is searches for
+
+105
+00:07:27,020 --> 00:07:29,550
+the similar data in the demonstration or
+
+106
+00:07:29,550 --> 00:07:34,670
+training data, and then copies
+the previous motion to the current motion.
+
+107
+00:07:34,670 --> 00:07:37,600
+And then the algorithm is
+inspired by the image and
+
+108
+00:07:37,600 --> 00:07:40,089
+the logistic developed
+the image filtering.
+
+109
+00:07:42,200 --> 00:07:46,000
+To allow more art, original paper was
+published as Style by Demonstration,
+
+110
+00:07:46,000 --> 00:07:49,065
+teaching interactive
+movement style to robots.
+
+111
+00:07:49,065 --> 00:07:52,680
+And image analogies is at SIGGRAPH 2001.
+
+112
+00:07:52,680 --> 00:07:57,287
+And the general concept of
+programming by demonstration, or
+
+113
+00:07:57,287 --> 00:08:03,360
+programming by example,
+has been extensively studied in field.
+
+114
+00:08:03,360 --> 00:08:06,890
+And one represented reading is,
+recommended reading is
+
+115
+00:08:06,890 --> 00:08:11,550
+titled book is Watch What I do:
+Programming by Demonstration.
+
+116
+00:08:11,550 --> 00:08:14,640
+So this book introduce many
+interesting techniques and
+
+117
+00:08:14,640 --> 00:08:18,950
+examples of program,
+programming by demonstration.
+
+118
+00:08:18,950 --> 00:08:19,450
+Thank you.

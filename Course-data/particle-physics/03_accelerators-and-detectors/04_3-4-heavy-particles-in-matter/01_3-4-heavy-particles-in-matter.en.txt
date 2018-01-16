@@ -1,0 +1,76 @@
+[MUSIC] In this module, we touch the basics
+of particle exhilaration and detection matters. And in this fourth video, we will show how heavy charged
+particles interact with matter. These interaction mechanisms
+are used to detect them. At the end of the video, you will know
+the energy loss by ionization and excitation of heavy charged particles. And the distribution of the energy
+loss for these particles and their angular deviation when
+traversing a slice of material. To detect particles, one must make
+them obviously interact with matter. With the exception of neutrinos,
+all particles interact in one way or another via the electromagnetic force. Hadrons, obviously, also interact
+via the strong or the nuclear force. Electromagnetic interactions thus play
+a predominant role among the mechanisms of interaction and particle detection. Its different reactions are listed here. We will discuss them in this video and
+the one that follows. When a charged particle passes through
+a slice of material of thickness dx, it ionizes or excites the atoms it meets. By this, the particle loses
+the part dE of its energy. The energy lost per unit length, dE/dx, plays a central role in
+the detection of stable charged particles. It depends on both the properties of
+the particle such as its charge z and its velocity beta, as well as
+the properties of the material crossed, like the volume density n_e
+of its electrons, which is proportional to the atomic
+charge and its ionization constant I, which describes how easy
+it is to ionize its atoms. The dependence of dE/dx on
+these factors is described by the Bethe-Bloch formula reproduced
+on the top of this slide. One can combine many of the constants
+into a single one which is called K in this slide. Thus, it can be seen that at low velocity
+dE/dx is proportional to the charge of the particle squared and inversely proportional to
+the square of its velocity. The energy loss goes
+through a shallow minimum, located approximately at the same
+velocity for all particles. In this minimum,
+particles are called minimum ionizing. Because of the strong dependence
+on the square of the charge, we can even identify the charge of the
+incident particle by measuring dE/dx. Beyond the minimum, the energy
+loss dE/dx increases slightly with the logarithm of beta gamma equal
+to p/m, as shown in this graph. Here's a summary of dE/dx
+in typical gases, liquids, and metals as presented by
+the particle data group. The minimum of the curves is
+approximately at the same velocity for all the materials. It is surprising that the curves for
+solids are below that for gas. Do not forget that the energy loss
+is given here with respect to the surface density. To find dE/dx in units of penetrated
+depth, one must multiply by the volume density of the material which is a 150
+times greater full lead than for hydrogen. The beta gamma scale, the x-axis of
+this graph, is converted to momentum from neurons, charged pions and
+protons to simplify the use of this graph. Obviously, the energy
+loss by ionization and excitation is a random process, which
+will not always yield the same result. Therefore, dE in a given
+material thickness dx follows a Landau distribution. This is an asymmetric distribution
+around the most probable value E_W with a width characterized by xi. The most probable energy loss is
+derived from the Bethe-Bloch formula. Since dE/dx increases with decreasing
+velocity, the particle loses more and more energy per unit depth
+while penetrating the material. The greatest loss happens immediately
+before the particle is stopped. This is called the Bragg Peak. The effect may be beneficial
+in medical applications. When irradiating tissue by charged
+particles, one can adjust the initial momentum and thus, the penetration such
+that most of the energy is deposited where a cancerous tumor is located,
+preserving healthy tissue around. Multiple scattering off
+atomic electrons also deflect the incident particle from its initial
+direction and displaces its path. The distribution of angular deflection
+follows a Gaussian around zero. The width depends on particle and
+material properties as shown. The latter can be combined
+into the radiation length, X_0, which we will introduce
+later in this module. Hadrons, of course, also belong
+to the class of heavy particles. In addition to
+electromagnetic interactions, they can interact with matter nuclei
+through strong or nuclear interactions. Elastic scattering makes them
+lose energy to a lesser extent because nuclei are typically heavy and
+recoil little. Inelastic interactions occur at high
+energies and create additional particles. These deposit energy by dE/dx, but
+can also, in turn, produce more particles. At sufficient energy, typically,
+a few GeV, this will generate a cascade process
+which is called a hadron shower. You see in this image a simulation
+of such a process with an incoming high-energy proton. Each block dot represents a unit of
+energy loss by a charged particle. The characteristic
+lengths of this processes are the nuclear collision lengths
+applying to elastic interactions and the nuclear interaction length
+applying to inelastic interactions. Both can be found in the tables
+of the Particle Data Group. They are typically much larger than
+the radiation length of the material. In the next video, we talk about
+the interactions of light particles in general, and bremsstrahlung in particular. [MUSIC]

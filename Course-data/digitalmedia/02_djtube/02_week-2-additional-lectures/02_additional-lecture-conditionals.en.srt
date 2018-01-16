@@ -1,0 +1,1138 @@
+1
+00:00:00,960 --> 00:00:03,120
+This lecture I'll talk about 
+conditionals. 
+
+2
+00:00:03,120 --> 00:00:09,600
+which statements, which of the mechanisms 
+we use in programs to make decisions. 
+
+3
+00:00:09,600 --> 00:00:14,930
+So, up to now, our programs have been 
+responding to use an input in various 
+
+4
+00:00:14,930 --> 00:00:17,840
+ways, but always kind of doing the same 
+thing. 
+
+5
+00:00:17,840 --> 00:00:21,710
+Sometimes we want to do different things, 
+depending on whether the user does 
+
+6
+00:00:21,710 --> 00:00:25,800
+different stuff, or different conditions 
+happen in our program. 
+
+7
+00:00:25,800 --> 00:00:29,710
+So, we want to do a different thing when 
+the mouse button is down from when it's 
+
+8
+00:00:29,710 --> 00:00:32,074
+up. 
+we've seen some ways of doing that for 
+
+9
+00:00:32,074 --> 00:00:35,704
+the mouse button being up and down. 
+We used the dragging mouse, mouse 
+
+10
+00:00:35,704 --> 00:00:38,806
+dragging method. 
+And we'll look at a very general way for 
+
+11
+00:00:38,806 --> 00:00:41,380
+making that kind of decision in 
+programming. 
+
+12
+00:00:41,380 --> 00:00:44,880
+So let's look at an example. 
+So this is a very simple program that 
+
+13
+00:00:44,880 --> 00:00:52,790
+does roughly what we've done before. 
+it draws points at the mouse position. 
+
+14
+00:00:52,790 --> 00:00:59,842
+This is not very different from the 
+programs we've looked at last week except 
+
+15
+00:00:59,842 --> 00:01:01,630
+for. 
+This draw method. 
+
+16
+00:01:01,630 --> 00:01:06,650
+Rather than doing it in mouse drags, so 
+when the mouse was moved, we're doing it 
+
+17
+00:01:06,650 --> 00:01:11,610
+in draw, and that means it's happening 
+every front. 
+
+18
+00:01:11,610 --> 00:01:14,890
+that's a useful thing. 
+We'll talk about it this week in terms of 
+
+19
+00:01:14,890 --> 00:01:20,070
+doing animations, where rather than 
+simply responding to input from the user, 
+
+20
+00:01:20,070 --> 00:01:23,400
+we're. 
+We're proactively animating the stuff. 
+
+21
+00:01:23,400 --> 00:01:28,710
+We need to do, do drawing actions and do 
+animation actions constantly. 
+
+22
+00:01:28,710 --> 00:01:32,030
+Not just when there's user input. 
+That's why [INAUDIBLE] So what's 
+
+23
+00:01:32,030 --> 00:01:35,650
+happening is every frame we're drawing a 
+point and, for the moment this doesn't 
+
+24
+00:01:35,650 --> 00:01:41,492
+get us very much but uh, [UNKNOWN] But 
+we'll see there are other things we can 
+
+25
+00:01:41,492 --> 00:01:46,480
+do and draw in todays lecture. 
+But in particular I'd like to look at 
+
+26
+00:01:46,480 --> 00:01:49,980
+copying the kind of functionality we had 
+with mouse dragged using this draw 
+
+27
+00:01:49,980 --> 00:01:53,980
+method. 
+Now the main difference here is that when 
+
+28
+00:01:53,980 --> 00:01:57,950
+we use mouse dragged it would only work 
+when the mouse is down, now it's working 
+
+29
+00:01:57,950 --> 00:02:00,068
+when the, both when the mouse is up and 
+when it's down. 
+
+30
+00:02:00,068 --> 00:02:07,583
+If we do it this way, how would we go 
+about, only drawing the point, when the 
+
+31
+00:02:07,583 --> 00:02:12,161
+mouse is pressed. 
+So, we need to only draw the point, if 
+
+32
+00:02:12,161 --> 00:02:17,175
+the mouse is pressed. 
+We need to make that decision, if the 
+
+33
+00:02:17,175 --> 00:02:21,740
+mouse is pressed, draw a point. 
+If not, don't draw it. 
+
+34
+00:02:21,740 --> 00:02:27,650
+And the way we do that is use a method 
+called an if statement. 
+
+35
+00:02:27,650 --> 00:02:38,970
+So we say, if mouse is pressed. 
+Draw a point [INAUDIBLE] this. 
+
+36
+00:02:38,970 --> 00:02:44,260
+If I drag the mouse pointer around The 
+window, without the mouse pressed does 
+
+37
+00:02:44,260 --> 00:02:46,920
+nothing, the minute I press the mouse we 
+start drawing. 
+
+38
+00:02:50,680 --> 00:02:56,310
+So that's really nice. 
+Now, I'm going to go back my slides to 
+
+39
+00:02:56,310 --> 00:03:01,840
+explain that. 
+So this is roughly what we saw, I'm using 
+
+40
+00:03:01,840 --> 00:03:08,142
+an elipse rather than mouse points but 
+Pretty much is the same code of what if. 
+
+41
+00:03:08,142 --> 00:03:17,955
+and something inside the if, which is 
+mousePressed, it's a variable. 
+
+42
+00:03:17,955 --> 00:03:24,920
+and this is a variable which takes on two 
+values, it's either true, or it's false. 
+
+43
+00:03:24,920 --> 00:03:31,820
+I'll come back to that in more detail. 
+And then, depending on whether it's true 
+
+44
+00:03:31,820 --> 00:03:36,990
+or false it does different things. 
+So what that if does is if, the thing 
+
+45
+00:03:36,990 --> 00:03:42,474
+inside the brackets, the variable inside 
+the brackets, in this case mousePressed 
+
+46
+00:03:42,474 --> 00:03:46,881
+is true, then we do that line that comes 
+after it. 
+
+47
+00:03:46,881 --> 00:03:49,530
+Good. 
+We draw the, we draw the ellipse to the 
+
+48
+00:03:49,530 --> 00:03:52,892
+point. 
+And then we carry on and do the rest of 
+
+49
+00:03:52,892 --> 00:03:59,790
+the program. 
+If this thing inside the brackets is 
+
+50
+00:03:59,790 --> 00:04:04,540
+false, is not true - mousePressed is not 
+true, so the mouse isn't pressed (no 
+
+51
+00:04:04,540 --> 00:04:09,080
+period) We don't do the line after each 
+statement we just carry on straight 
+
+52
+00:04:09,080 --> 00:04:14,360
+ahead. 
+So this if allows us to make a decision 
+
+53
+00:04:14,360 --> 00:04:17,730
+based on whether something is true or 
+false. 
+
+54
+00:04:17,730 --> 00:04:22,645
+Wherever in this case, when the mouse is 
+pressed or not, we do different things. 
+
+55
+00:04:22,645 --> 00:04:25,835
+If the mouse is pressed, we draw the 
+ellipse. 
+
+56
+00:04:25,835 --> 00:04:33,900
+If it isn't pressed, don't. 
+We can do more complicated things. 
+
+57
+00:04:33,900 --> 00:04:37,270
+So the first thing is, well what if I 
+want to do something special when the 
+
+58
+00:04:37,270 --> 00:04:40,030
+mouse isn't pressed. 
+This is another example. 
+
+59
+00:04:42,010 --> 00:04:46,699
+If the mouse is pressed, if mousePressed 
+is true, we draw a white background. 
+
+60
+00:04:50,480 --> 00:04:55,170
+Then we do whatever else we want. 
+But in this case, we've also got 
+
+61
+00:04:55,170 --> 00:04:57,730
+something different. 
+We've got, as long as the if, we've got 
+
+62
+00:04:57,730 --> 00:05:01,280
+this thing, else. 
+What this means what happens when the if 
+
+63
+00:05:01,280 --> 00:05:05,090
+bit isn't true. 
+So when mousePressed is false. 
+
+64
+00:05:05,090 --> 00:05:09,095
+We do this other line, background zero, 
+we do the bit that's attached to else. 
+
+65
+00:05:09,095 --> 00:05:13,730
+So we have an else, if which happens when 
+it's true and and else which happens when 
+
+66
+00:05:13,730 --> 00:05:16,741
+it's false. 
+We draw the background and then we carry 
+
+67
+00:05:16,741 --> 00:05:24,600
+on and do the rest of the [UNKNOWN]. 
+Note that I've indented the two bits Of 
+
+68
+00:05:24,600 --> 00:05:27,280
+code that controlled by the if and the 
+else. 
+
+69
+00:05:28,320 --> 00:05:32,130
+That's not necessary, it's not a, a 
+crucial part of the program. 
+
+70
+00:05:32,130 --> 00:05:34,485
+The program won't complain if you don't 
+do that. 
+
+71
+00:05:34,485 --> 00:05:39,170
+But it makes it a lot clearer to 
+understand your code if every time you do 
+
+72
+00:05:39,170 --> 00:05:42,411
+an if, you indent it a bit. 
+And that's just telling you. 
+
+73
+00:05:42,411 --> 00:05:48,340
+O so you better move it in a bit. 
+And that tells you that this bit is 
+
+74
+00:05:48,340 --> 00:05:53,120
+controlled by the if statement. 
+So this bit, is part of the code that's 
+
+75
+00:05:53,120 --> 00:05:58,370
+controlled by the if statement. 
+Another thing you can do, is you can have 
+
+76
+00:05:58,370 --> 00:06:01,750
+multiple commands from a single if 
+statement. 
+
+77
+00:06:01,750 --> 00:06:04,950
+By combining them in these special curly 
+brackets. 
+
+78
+00:06:04,950 --> 00:06:10,194
+You saw those curly brackets before, at 
+the start and end of setup and draw, and 
+
+79
+00:06:10,194 --> 00:06:15,690
+mousePressed this is another instance. 
+And they're really, curly brackets are 
+
+80
+00:06:15,690 --> 00:06:19,750
+always used to glue bits of code 
+together. 
+
+81
+00:06:19,750 --> 00:06:24,700
+So that they can be used as if they were 
+a single line of code instead of context. 
+
+82
+00:06:24,700 --> 00:06:28,644
+In this context, they're grouping them 
+together, so they're all controlled by 
+
+83
+00:06:28,644 --> 00:06:35,339
+the mousePressed, and in this context, 
+your, or both these lines of code will 
+
+84
+00:06:35,339 --> 00:06:41,804
+only happen if mousePressed is true. 
+[NOISE] So let's look. 
+
+85
+00:06:41,804 --> 00:06:46,960
+What is mousePressed? 
+Well, I've shown you the slide a number 
+
+86
+00:06:46,960 --> 00:06:50,390
+of times now. 
+There's lots of different types of data 
+
+87
+00:06:50,390 --> 00:06:53,575
+that could be, you know represents on the 
+computer. 
+
+88
+00:06:53,575 --> 00:06:59,011
+mousePressed is a variable that can only 
+take on two values, true and false. 
+
+89
+00:06:59,011 --> 00:07:05,541
+It's what we call a Boolean variable. 
+It's named after the magician George 
+
+90
+00:07:05,541 --> 00:07:10,373
+Bool, who developed a system of 
+mathematical logic based on values true 
+
+91
+00:07:10,373 --> 00:07:16,388
+and false. 
+We can create a Boolean variable just 
+
+92
+00:07:16,388 --> 00:07:21,130
+like any other variable. 
+We give it a title, we need to give the 
+
+93
+00:07:21,130 --> 00:07:22,730
+title to the variable. 
+That is Boolean. 
+
+94
+00:07:22,730 --> 00:07:26,890
+And when we set a value, we have to set 
+it either to false or to true. 
+
+95
+00:07:28,150 --> 00:07:32,720
+So if we want to, can have a variable 
+which says whether the, background is 
+
+96
+00:07:32,720 --> 00:07:41,120
+black, we can set that to true or false. 
+We can change the value of that variable 
+
+97
+00:07:41,120 --> 00:07:44,380
+just like any other variable and this is 
+like a clever trick to do that. 
+
+98
+00:07:46,300 --> 00:07:52,940
+The exclamation mark means not. 
+What that means is it means the opposite. 
+
+99
+00:07:52,940 --> 00:07:58,690
+So not black is the opposite of black. 
+So if black is true, not black is false. 
+
+100
+00:07:58,690 --> 00:08:04,280
+Black is false, not black is true. 
+So it inverts it. 
+
+101
+00:08:04,280 --> 00:08:08,522
+And by setting black equals not black, we 
+switch it to its opposite. 
+
+102
+00:08:08,522 --> 00:08:14,960
+So it's like, just like a little switch, 
+light switch 
+
+103
+00:08:14,960 --> 00:08:19,470
+If we, if black is true and we hit not 
+black, black equals not black then 
+
+104
+00:08:19,470 --> 00:08:24,145
+becomes false. 
+If it is false, it becomes true. 
+
+105
+00:08:24,145 --> 00:08:33,160
+This is very useful because we can for 
+example when we click, we can have put a 
+
+106
+00:08:33,160 --> 00:08:39,722
+line of code like this in mouse clicks. 
+And, as we as we turn that varlible, 
+
+107
+00:08:39,722 --> 00:08:46,720
+variable on and off, whenever it's, mouse 
+is clicked we can switch the value of one 
+
+108
+00:08:46,720 --> 00:08:50,993
+of our variables. 
+And maybe we can see that as an example. 
+
+109
+00:08:50,993 --> 00:08:56,550
+So, let's first give an exam, a different 
+example of using the example I gave with 
+
+110
+00:08:56,550 --> 00:09:13,780
+the else, [UNKNOWN] background. 
+[SOUND] Just going to swap things round. 
+
+111
+00:09:13,780 --> 00:09:17,660
+So now we're using both an if bit and an 
+else bit. 
+
+112
+00:09:17,660 --> 00:09:21,200
+So that something different will happen 
+in either case if the mouse is pressed. 
+
+113
+00:09:21,200 --> 00:09:28,964
+Or the mouse is, to code the in 
+background. 
+
+114
+00:09:28,964 --> 00:09:31,530
+And I'm not holding the mouse button 
+down. 
+
+115
+00:09:31,530 --> 00:09:35,205
+And the background is white. 
+The minute I do it turns black. 
+
+116
+00:09:35,205 --> 00:09:40,371
+Okay, let's try creating our own reading 
+variable. 
+
+117
+00:09:40,371 --> 00:09:47,013
+Our own version of mousePressed. 
+And we can make that bo, be created 
+
+118
+00:09:47,013 --> 00:09:51,070
+boolean variable. 
+Give, give it type boolean. 
+
+119
+00:09:51,070 --> 00:09:54,649
+Set it, call it black. 
+And set it initially to false. 
+
+120
+00:09:54,649 --> 00:10:01,578
+[NOISE] And we can use the variable black 
+in this if statement and, and, when you 
+
+121
+00:10:01,578 --> 00:10:09,963
+run the program, it's not going to do 
+anything in interesting because black is 
+
+122
+00:10:09,963 --> 00:10:17,445
+always false, you can't change it. 
+So let's change it when we click the 
+
+123
+00:10:17,445 --> 00:10:20,025
+mouse. 
+[NOISE] So you put it in the 
+
+124
+00:10:20,025 --> 00:10:27,300
+mousePressed, and we did, black equals 
+not black, exactly what I showed you. 
+
+125
+00:10:33,560 --> 00:10:39,340
+And every time I click the mouse The 
+value of our black Boolean variable 
+
+126
+00:10:39,340 --> 00:10:42,770
+switches, and the color of this, the 
+window changes. 
+
+127
+00:10:44,930 --> 00:10:48,150
+Now, we can do other useful things. 
+We don't just have to use Boolean 
+
+128
+00:10:48,150 --> 00:10:51,121
+variables. 
+what's happening here? 
+
+129
+00:10:51,121 --> 00:10:55,762
+Well, this is what's called a Boolean 
+expression. 
+
+130
+00:10:55,762 --> 00:11:06,670
+So we, we can use expressions as well as 
+variables, and a boolean expression is a 
+
+131
+00:11:06,670 --> 00:11:13,870
+bit of maths that is a literal false. 
+This boolean expression is checking the 
+
+132
+00:11:13,870 --> 00:11:16,442
+value of a key. 
+Has been pressed on keyboard. 
+
+133
+00:11:16,442 --> 00:11:24,390
+What it's saying, if this key expression 
+is equal to the character bits so I'll 
+
+134
+00:11:24,390 --> 00:11:29,255
+press the B key. 
+Now you notice I'm using two equal signs. 
+
+135
+00:11:29,255 --> 00:11:36,320
+That's because a single equal sign as we 
+saw last week, means becomes equal to. 
+
+136
+00:11:36,320 --> 00:11:39,110
+So, we're setting the value of the 
+variable. 
+
+137
+00:11:39,110 --> 00:11:42,790
+Two equals signs, we're not setting the 
+value of the variable key doesn't become 
+
+138
+00:11:42,790 --> 00:11:47,381
+b, we're checking if it is b. 
+We're, we're checking the value of a 
+
+139
+00:11:47,381 --> 00:11:50,360
+variable. 
+So, we have to remember the difference 
+
+140
+00:11:50,360 --> 00:11:54,720
+between these two equals signs, and 
+that's an common thing to trip up on. 
+
+141
+00:11:54,720 --> 00:11:58,410
+It's easy to forget when there's single 
+equals and when there's double equals. 
+
+142
+00:11:58,410 --> 00:12:04,228
+If you're using inside an if statement, 
+you should always be using a double 
+
+143
+00:12:04,228 --> 00:12:09,990
+equals. 
+just to let you know, just, the single 
+
+144
+00:12:09,990 --> 00:12:13,417
+quotation marks means I'm working with a 
+single character. 
+
+145
+00:12:13,417 --> 00:12:21,692
+Double quotes means I'm working with 
+words and not strings of characters. 
+
+146
+00:12:21,692 --> 00:12:27,330
+[SOUND] So we've got a bunch of specials, 
+we've seen a double equals and that's our 
+
+147
+00:12:27,330 --> 00:12:32,660
+first boolean expression. 
+So if we have two values, a variable or a 
+
+148
+00:12:32,660 --> 00:12:36,890
+value, we can check if they are equal to 
+each other And that's true if they're the 
+
+149
+00:12:36,890 --> 00:12:42,010
+same, false if otherwise. 
+We can also test out things like we can 
+
+150
+00:12:42,010 --> 00:12:44,360
+test whether one value is less than 
+another value. 
+
+151
+00:12:45,570 --> 00:12:52,630
+So this little arrow here is true if the 
+thing on the left of it is less than the 
+
+152
+00:12:52,630 --> 00:12:56,860
+thing on the right of it. 
+You've got a variant of that called less 
+
+153
+00:12:56,860 --> 00:13:00,510
+than or equals. 
+The straight less than is false if the 
+
+154
+00:13:00,510 --> 00:13:05,240
+two are the same. 
+Less than or equals is true if they're 
+
+155
+00:13:05,240 --> 00:13:11,587
+the same, and if they're, if the thing on 
+the left is less than the thing on the 
+
+156
+00:13:11,587 --> 00:13:13,970
+right. 
+Same goes for the greater than, the thing 
+
+157
+00:13:13,970 --> 00:13:17,171
+on the left is more than the thing on the 
+right, or more than or equal to it. 
+
+158
+00:13:17,171 --> 00:13:18,080
+We've already seen not, that means the 
+opposite of a Boolean value, and we also 
+
+159
+00:13:18,080 --> 00:13:29,630
+have not equal to, so we can check if 
+something is worth checking they are the 
+
+160
+00:13:29,630 --> 00:13:36,870
+same, we can check if they are different. 
+[NOISE] So we can think of, look at some 
+
+161
+00:13:36,870 --> 00:13:41,894
+more complicated examples. 
+For example, what if we want the position 
+
+162
+00:13:41,894 --> 00:13:43,270
+of the mouse to change the background 
+color? 
+
+163
+00:13:43,270 --> 00:13:57,480
+And this is a boolean expression which 
+checks if the mouse position Is less than 
+
+164
+00:13:57,480 --> 00:14:02,200
+half the width of the screen, so the 
+mouse position is less than the middle of 
+
+165
+00:14:02,200 --> 00:14:06,800
+the screen the mouse x, so the mouse is 
+on the left of the screen. 
+
+166
+00:14:06,800 --> 00:14:12,210
+So if we look here we have mouse position 
+there, where the red circle is. 
+
+167
+00:14:12,210 --> 00:14:16,790
+Well, mouse x is going to be less than 
+half the width. 
+
+168
+00:14:16,790 --> 00:14:20,448
+That's going to be true. 
+You're going to draw the background in 
+
+169
+00:14:20,448 --> 00:14:25,230
+black. 
+If the mouse pointer is there on, where 
+
+170
+00:14:25,230 --> 00:14:29,640
+the other circle is. 
+Mouse actually is going to be more than 
+
+171
+00:14:29,640 --> 00:14:33,810
+the width of the screen. 
+So it's going to hit the else part. 
+
+172
+00:14:33,810 --> 00:14:42,129
+Which is going to About them once. 
+We can even combine these things. 
+
+173
+00:14:42,129 --> 00:14:45,510
+So we can have an if statement inside an 
+if statement. 
+
+174
+00:14:45,510 --> 00:14:52,400
+So we can check if the mouseX is less 
+than the width divided by 2 and inside 
+
+175
+00:14:52,400 --> 00:14:56,300
+that, we can check even further down, 
+divide this screen up again check this. 
+
+176
+00:14:57,430 --> 00:15:02,220
+More than the width divided by 4. 
+So we can create a little line down the 
+
+177
+00:15:02,220 --> 00:15:06,090
+middle of the screen. 
+So, if we look at the red point there, 
+
+178
+00:15:06,090 --> 00:15:10,420
+that's less than half the width. 
+That's true. 
+
+179
+00:15:10,420 --> 00:15:13,611
+It's more than a quarter of the width. 
+So that's true. 
+
+180
+00:15:13,611 --> 00:15:17,930
+So we draw the background in black. 
+Put a point there. 
+
+181
+00:15:17,930 --> 00:15:25,400
+Then it's still less than half, half the 
+width but it's more than a quarter of the 
+
+182
+00:15:25,400 --> 00:15:29,240
+width. 
+So it's less than a quarter of the width. 
+
+183
+00:15:29,240 --> 00:15:35,450
+So that the second if statement is false. 
+And we can engage down to this else bit. 
+
+184
+00:15:35,450 --> 00:15:38,613
+Which is the else bit that the e no if 
+statement. 
+
+185
+00:15:38,613 --> 00:15:41,870
+The secondary statement. 
+[UNKNOWN] in white. 
+
+186
+00:15:41,870 --> 00:15:45,390
+The point's all the way over there. 
+The first if statement is false. 
+
+187
+00:15:47,030 --> 00:15:50,310
+We never get to the second if statement 
+because the second if statement is inside 
+
+188
+00:15:50,310 --> 00:15:53,100
+the first one. 
+We just get to the else part of the if 
+
+189
+00:15:53,100 --> 00:16:04,000
+statement and it draws the screen white. 
+[SOUND] We can also combine together 
+
+190
+00:16:04,000 --> 00:16:09,290
+boolean expressions in other ways. 
+So if you have two boolean expressions A, 
+
+191
+00:16:09,290 --> 00:16:14,070
+A and B, we can combine them together 
+with this double ampersand here which 
+
+192
+00:16:14,070 --> 00:16:20,326
+says If A, both A and B are true, so both 
+of these things are true, do something. 
+
+193
+00:16:20,326 --> 00:16:29,060
+Or we could do it the other way around 
+and do these two lines, which say if A is 
+
+194
+00:16:29,060 --> 00:16:34,410
+true or B is true, or both are true, so 
+only one of them have to be true and 
+
+195
+00:16:34,410 --> 00:16:36,042
+[INAUDIBLE]. 
+Together. 
+
+196
+00:16:36,042 --> 00:16:42,040
+Let's have a look at this example. 
+This is a, an easier way of writing what 
+
+197
+00:16:42,040 --> 00:16:44,490
+I've just done. 
+Doing this line. 
+
+198
+00:16:44,490 --> 00:16:49,900
+So what that double-edge statement I 
+showed you a couple of slides back did, 
+
+199
+00:16:49,900 --> 00:16:57,190
+was check basically if the mouseX is on 
+the left or the middle of the screen And 
+
+200
+00:16:57,190 --> 00:17:01,858
+on the right is a line that's a quarter 
+of the way across the screen. 
+
+201
+00:17:01,858 --> 00:17:06,580
+Instead of doing 2 if statements, we can 
+use an and. 
+
+202
+00:17:06,580 --> 00:17:12,170
+Which checks, this expression. 
+If this point it's true. 
+
+203
+00:17:12,170 --> 00:17:15,689
+Checks that expression, which is also 
+true. 
+
+204
+00:17:16,810 --> 00:17:20,000
+For the total expression here both of 
+them have to be true 'cause I'm using 
+
+205
+00:17:20,000 --> 00:17:26,680
+that double and, what we call and, and 
+because they're both true we do the true 
+
+206
+00:17:26,680 --> 00:17:30,820
+part of the if statements. 
+If we move here, the first part is still 
+
+207
+00:17:30,820 --> 00:17:35,840
+true, but the second part is false. 
+They're not both true so we'll move down 
+
+208
+00:17:35,840 --> 00:17:38,835
+to the else part. 
+Assuming over there they're both false, 
+
+209
+00:17:38,835 --> 00:17:44,732
+neither of them are true, use the else. 
+Now if we change from and to or we have a 
+
+210
+00:17:44,732 --> 00:17:49,340
+different effect, so we're looking this 
+time if MouseX is more than the width 
+
+211
+00:17:49,340 --> 00:17:53,444
+over two or less than width divided by 
+four, so we're doing kind of the 
+
+212
+00:17:53,444 --> 00:17:58,320
+opposite. 
+We're looking at, you know, the side of 
+
+213
+00:17:58,320 --> 00:18:00,498
+that little bar down the middle of the 
+screen. 
+
+214
+00:18:00,498 --> 00:18:05,853
+So if we look at this one here, it's not 
+more than the width divided by two, but 
+
+215
+00:18:05,853 --> 00:18:12,303
+it is less than width divided by four. 
+So that's true. 
+
+216
+00:18:12,303 --> 00:18:15,353
+So one of them is true, so only one of 
+those needs to be true to, for the whole 
+
+217
+00:18:15,353 --> 00:18:18,644
+all statement to be true, if we're using 
+all. 
+
+218
+00:18:18,644 --> 00:18:21,535
+So we do the true part of the if 
+statement. 
+
+219
+00:18:21,535 --> 00:18:28,135
+If we look there, well, mouse x greater 
+than width is still false, it's still not 
+
+220
+00:18:28,135 --> 00:18:32,168
+true. 
+And this time, but it's no longer less 
+
+221
+00:18:32,168 --> 00:18:35,830
+than width divided by 4, so that part's 
+also false. 
+
+222
+00:18:35,830 --> 00:18:41,629
+They're both false, so we get the else. 
+If you look over here, well, mouseX is 
+
+223
+00:18:41,629 --> 00:18:47,190
+more than width, that's true. 
+The other part is not true, it's still 
+
+224
+00:18:47,190 --> 00:18:51,189
+false. 
+So we've, but one of them is still true, 
+
+225
+00:18:51,189 --> 00:18:56,680
+so we go to the if path, because we use 
+them all. 
+
+226
+00:18:56,680 --> 00:19:02,590
+So, that's the end of my lecture on 
+conditionals, if statements and we'll be 
+
+227
+00:19:02,590 --> 00:19:05,930
+using some examples of if statements in 
+the main lectures. 
+
+228
+00:19:05,930 --> 00:19:06,760
+Thank you very much. 

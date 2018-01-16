@@ -1,0 +1,74 @@
+[MUSIC] Hello, and welcome to this fourth module of our introductory course on subatomic physics. This module starts a series of three
+modules, where we talk about the three fundamental forces described by the standard
+model of particles physics. During this first module,
+we go into more details about the electromagnetic interactions and
+their properties. You will notice that
+the intellectual challenge, and also the mathematical levels is slightly
+higher than in previews modules. But in this first video,
+we will remind you how to describe the intensity of the reaction using the
+cross section and the decay rate, so that you are up to speed
+with the rest of the course. After following this video, you will know
+the relation between the reaction rate and the cross section. Also, the relation between the decay rate,
+and the lifetime of a particle. And how the probability amplitude for
+a process enters into all these notions. So, we now resume our discussion
+of scattering and decay processes. To characterize these processes, we need
+a quantity which measures the intensity of a reaction or, in the context of
+quantum mechanics, its probability. This quantity is the cross section sigma
+that we introduced in video 1.3 for scattering processes, and it's analog for
+decays, which is called the decay rate. Both quantities measure the ratio
+of the number of scatters or decays, that actually take place, to
+the number that would have been possible, that could have taken place. If this were a game, we would speak
+of this probability as the ratio between the successes and
+the trials of the game. We have already seen that the unit for
+the cross section is a bit surprising, it is a surface. We will see that for
+the decay rate, it is an energy. This is due to using the system of natural
+units that we have introduced in video 1.2a. If you are still somewhat uneasy with
+the construction an interpretation of Feynman diagrams, like the ones
+that you see behind me, – on the left for a scattering process on the right for a decay process – you should follow the optional video 4.1a. As quantum physics takes
+a statistical approach, the basic problem of particle
+physics is the measurement and calculation of the probability for
+a process. Both calculation and
+measurement use the cross section to express this probability
+independently of experimental details. We consider here a four-body
+reaction a + b -> c + d. If each target particle b
+has a cross section sigma, which represents the probability to hit
+it, the rate of scatters per second will be proportional to the incident flux of
+projectiles and the number of targets. The cross action is thus defined as
+the reaction rate per target particle, normalized to the flux of projectiles. It represents the intensity of a reaction
+independent of exponential parameters. The proportionality factor
+between the cross section and the rate of interaction
+is called luminosity. The laboratory frame,
+the flux of project ions I_a, that is to say their number per unit surface
+and per unit time is equal to their volume density times their velocity relative to the targets b,
+which are at rest. The luminosity L is the product of this
+flux, and the number of targets N_b. In a colliding beam experiment on the
+country, the luminosity is the product of the number of projectiles and targets
+per bunch, N_a and N_b, multiplied by the crossing frequency f and divided by
+the surface, that is common to the two beams. The unit of the cross section is the barn. In high energy reactions, we rather find cross section of
+the order of the nanobarn, or even picobarn. The smallest known cross sections
+are those of neutrinos, of the order of attobarn. As far as decays are concerned,
+the description is quite similar. There's of course no projectiles, so we only consider
+the particles b in the initial state. We normalize the number of decays
+per second to their current number N_b, to find the decay rate Gamma. It is the inverse of the lifetime tau_b. The decay rate Gamma has
+the dimension of an energy. It is also called
+the width of the particle, because it corresponds to the uncertainty
+in the mass of b particles. Therefore, it can be measured either
+by measuring the lifetime of the particle, or by observing the width of the invariant
+mass distribution of its decay products. As the decay rate is a constant,
+we find an exponential law for the number of remaining
+particles at time t. Consequentially, also, the absolute number of decay in time
+interval ∆t decreases exponentially. If several decay channels exist, the lifetime
+observed in each channel is of course the same, but
+the decay rate depends on the channel. One thus defines a partial decay
+rate Gamma_i, for each channel i. By probability conservation the sum
+is equal to the total width Gamma. The branching ratio Gamma_i/Gamma expresses the relative probability of observing
+channel i, among all decay channels. Analogous to the differential
+cross section, one can also measure
+the differential decay rate, dGamma/dOmega,
+depending on the solid angle. Let us think for a moment. If, for a decay with multiple decay
+channels, we only observe one channel i. Is the time evolution determined by Gamma,
+or is it determined by Gamma_i? Well, it is, of course,
+determined by Gamma. Since the lifetime of the particle
+is independent of the decay channel, that it will choose. In the next video,
+we will apply the concept of cross section to elementary
+electromagnetic interactions. [MUSIC]

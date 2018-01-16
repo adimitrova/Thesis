@@ -1,0 +1,1457 @@
+1
+00:00:01,240 --> 00:00:02,590
+Hi, I'm Smriti Chopra.
+
+2
+00:00:02,590 --> 00:00:09,320
+I am a graduate student at Dr. Egerstedt's
+lab, and I will be your instructor for the
+
+3
+00:00:09,320 --> 00:00:13,810
+Glue Lectures, for the duration of this
+course, which is Control of Mobile Robots.
+
+4
+00:00:13,810 --> 00:00:16,425
+And just a quick idea: what are these Glue
+Lectures?
+
+5
+00:00:16,425 --> 00:00:19,525
+Basically, they're going to kind of
+connect, you know what you learn
+
+6
+00:00:19,525 --> 00:00:22,470
+with Dr. Egerstedt to the quizzes we are
+going to give you.
+
+7
+00:00:22,470 --> 00:00:24,180
+And give you helpful hints about the
+quizzes.
+
+8
+00:00:24,180 --> 00:00:26,380
+Clarify, repeat certain concepts.
+
+9
+00:00:26,380 --> 00:00:28,890
+By that I really mean we, you know, work
+out a few
+
+10
+00:00:28,890 --> 00:00:34,190
+examples, understand the math that goes
+behind some of the lectures, etc.
+
+11
+00:00:34,190 --> 00:00:37,950
+Just to help you guys move along the
+course.
+
+12
+00:00:37,950 --> 00:00:41,900
+And the format is going to be one Glue
+Lecture every week.
+
+13
+00:00:41,900 --> 00:00:45,610
+And the course is seven weeks, so seven
+Glue Lectures.
+
+14
+00:00:45,610 --> 00:00:49,070
+And on a side note Amy LaViers is a former
+
+15
+00:00:49,070 --> 00:00:51,640
+grad student in our lab, and she was last
+year's
+
+16
+00:00:51,640 --> 00:00:53,630
+instructor for the Glue Lectures.
+
+17
+00:00:53,630 --> 00:00:56,330
+So we will be reusing some of her
+lectures.
+
+18
+00:00:56,330 --> 00:00:59,860
+And so in the coming weeks, you know she
+and I are going to share.
+
+19
+00:00:59,860 --> 00:01:02,390
+Between the two of us, we're going to
+teach you guys, out of the seven lectures.
+
+20
+00:01:03,990 --> 00:01:07,920
+But whatever questions, etc, you have, you
+direct them to me, because well she's
+
+21
+00:01:07,920 --> 00:01:11,780
+not here, and I'll be answering those
+questions for you on the forums, etc.
+
+22
+00:01:12,880 --> 00:01:15,410
+And with that, let's get into the
+lectures.
+
+23
+00:01:15,410 --> 00:01:17,070
+The first one is Dynamical Models.
+
+24
+00:01:19,580 --> 00:01:21,750
+This week with Dr. Egerstedt, you guys
+kind of, you
+
+25
+00:01:21,750 --> 00:01:26,090
+know, went through this introductory
+notion of what a model is.
+
+26
+00:01:26,090 --> 00:01:28,520
+And he tells you that really, a model is
+basically, you
+
+27
+00:01:28,520 --> 00:01:33,420
+know, something that describes how your
+system changes or evolves with time.
+
+28
+00:01:33,420 --> 00:01:35,320
+And your system could be a robot, for
+
+29
+00:01:35,320 --> 00:01:37,240
+example, and a model is just going to
+describe,
+
+30
+00:01:37,240 --> 00:01:39,110
+let's say, how the positions change with
+time,
+
+31
+00:01:39,110 --> 00:01:42,670
+or how the angle, angles change with time,
+etc.
+
+32
+00:01:42,670 --> 00:01:44,610
+And the whole idea behind controls
+
+33
+00:01:44,610 --> 00:01:47,730
+is that we're going to kind of try and
+influence this
+
+34
+00:01:47,730 --> 00:01:51,530
+change to make our system do something we
+want to do.
+
+35
+00:01:51,530 --> 00:01:54,060
+And we're going to do this by injecting
+controls.
+
+36
+00:01:54,060 --> 00:01:57,080
+But let's go really down to the basics.
+What really is a model?
+
+37
+00:01:57,080 --> 00:02:01,670
+And before we do that, let's do a little
+exercise in derivatives.
+
+38
+00:02:01,670 --> 00:02:04,640
+So here we have, let's say, position x,
+with
+
+39
+00:02:04,640 --> 00:02:08,310
+the respect to time, is given by this
+exponential function.
+
+40
+00:02:08,310 --> 00:02:10,154
+Now this is in its general form.
+
+41
+00:02:10,154 --> 00:02:13,560
+I'm saying that let's say me, for example,
+my position is x
+
+42
+00:02:13,560 --> 00:02:17,026
+of t, and I wake up at time t equal to 0.
+
+43
+00:02:17,026 --> 00:02:18,166
+I'm at position 10.
+
+44
+00:02:19,670 --> 00:02:22,670
+So and I'm saying that my position evolves
+with time with
+
+45
+00:02:22,670 --> 00:02:26,770
+respect to this function here, and it's
+given by this graph here.
+
+46
+00:02:28,360 --> 00:02:28,830
+That's okay.
+
+47
+00:02:28,830 --> 00:02:29,250
+That's simple.
+
+48
+00:02:29,250 --> 00:02:34,380
+And now I can take the derivative of this
+position with respect to time, right?
+
+49
+00:02:34,380 --> 00:02:35,290
+And I get what,
+
+50
+00:02:35,290 --> 00:02:36,990
+what is the velocity.
+
+51
+00:02:36,990 --> 00:02:40,180
+And you'll see this is actually 2x of t,
+really.
+
+52
+00:02:40,180 --> 00:02:43,220
+And then you can do this further on, and
+you can take
+
+53
+00:02:43,220 --> 00:02:46,930
+more derivatives, and now we have the
+acceleration, which is 4x of t.
+
+54
+00:02:46,930 --> 00:02:49,130
+One thing I want to point, point out
+really quick here is
+
+55
+00:02:49,130 --> 00:02:52,800
+that x dot of t equal to 2x of t, for
+example.
+
+56
+00:02:52,800 --> 00:02:53,440
+Now what is this?
+
+57
+00:02:53,440 --> 00:02:57,120
+This is really nothing but a differential
+equation.
+
+58
+00:02:57,120 --> 00:03:00,415
+Basically something that relates a
+variable x to
+
+59
+00:03:00,415 --> 00:03:02,450
+its derivatives, second, third whatever.
+
+60
+00:03:02,450 --> 00:03:06,180
+So in this case, x dot equal to 2x of t is
+a differential equation.
+
+61
+00:03:06,180 --> 00:03:08,842
+Something he mentioned in class, right?
+
+62
+00:03:08,842 --> 00:03:09,441
+Okay.
+
+63
+00:03:09,441 --> 00:03:11,410
+So this was just an exercise in
+derivatives.
+
+64
+00:03:11,410 --> 00:03:16,040
+You guys should be able to take
+exponentials and their derivatives, etc.
+
+65
+00:03:16,040 --> 00:03:16,560
+No problem.
+
+66
+00:03:16,560 --> 00:03:19,758
+We saw the graphs related to these, as
+well.
+
+67
+00:03:19,758 --> 00:03:21,540
+But in action, what does it really mean?
+
+68
+00:03:21,540 --> 00:03:25,380
+So I'm telling you that my position with
+respect to chi,
+
+69
+00:03:25,380 --> 00:03:29,360
+time changes like this: 10e to the power
+2t.
+
+70
+00:03:29,360 --> 00:03:33,380
+What it really means is, let's say that's
+me, or that's a pink ball, whatever.
+
+71
+00:03:33,380 --> 00:03:36,420
+And now I draw this line, which is the x
+axis.
+
+72
+00:03:37,460 --> 00:03:42,714
+And I start at 10, which is where I wake
+up, because you guys see, if we're here in
+
+73
+00:03:42,714 --> 00:03:45,674
+this equation, if you put x at time 0,
+you'll
+
+74
+00:03:45,674 --> 00:03:48,546
+get 10, e to the power 0, which is 10.
+
+75
+00:03:48,546 --> 00:03:50,646
+So at time 0, when I wake
+
+76
+00:03:50,646 --> 00:03:53,009
+up, I'm at 10.
+Right?
+
+77
+00:03:53,009 --> 00:03:56,163
+And now, the whole point is that let's say
+at
+
+78
+00:03:56,163 --> 00:03:59,260
+time t equal to 0, like I said, we wake
+up.
+
+79
+00:03:59,260 --> 00:04:02,890
+Now I say start, right?
+
+80
+00:04:02,890 --> 00:04:06,308
+And then I start moving.
+
+81
+00:04:06,308 --> 00:04:08,531
+And as my time increases, my position is
+going
+
+82
+00:04:08,531 --> 00:04:11,130
+to keep changing with respect to this
+function here.
+
+83
+00:04:11,130 --> 00:04:15,340
+And because it's exponential, let's say at
+time point 1, I'm here.
+
+84
+00:04:15,340 --> 00:04:15,690
+And then I
+
+85
+00:04:15,690 --> 00:04:19,070
+jump really high at point 2, and then even
+further.
+
+86
+00:04:19,070 --> 00:04:21,170
+because exponentially my position is
+changing.
+
+87
+00:04:21,170 --> 00:04:23,690
+So, so from graphs, all of a sudden we see
+
+88
+00:04:23,690 --> 00:04:27,790
+how it maps onto, these equations map onto
+actual motion.
+
+89
+00:04:29,010 --> 00:04:30,850
+That's all I wanted to really show in
+this.
+
+90
+00:04:31,870 --> 00:04:35,470
+But now, instead, I tell you that, you
+know what, I'm
+
+91
+00:04:35,470 --> 00:04:38,937
+not going to tell you how x changes with
+respect to time.
+
+92
+00:04:38,937 --> 00:04:40,762
+I'm instead going to give you
+
+93
+00:04:40,762 --> 00:04:44,412
+this set of equations, which is a
+differential equation,
+
+94
+00:04:44,412 --> 00:04:47,299
+and then an initial condition where I wake
+up.
+
+95
+00:04:47,299 --> 00:04:51,141
+And now I want to find what my x of t is
+going
+
+96
+00:04:51,141 --> 00:04:56,284
+to be, given this, which is x dot of t and
+x of 0.
+
+97
+00:04:56,284 --> 00:04:59,650
+So in this case what do you do?
+
+98
+00:04:59,650 --> 00:05:02,730
+Well, what you do is, and this is what you
+did
+
+99
+00:05:02,730 --> 00:05:06,130
+in your lectures as well, just to see how
+you evolve
+
+100
+00:05:06,130 --> 00:05:10,020
+with res, with time, you discretize the
+world.
+
+101
+00:05:10,020 --> 00:05:12,973
+And real quick, let's say this is your
+time axis.
+
+102
+00:05:12,973 --> 00:05:15,934
+And I'm going to divide up this time axis
+into, you
+
+103
+00:05:15,934 --> 00:05:20,060
+know, delta t chunks, where each chunk is
+0.5 seconds, or whatever.
+
+104
+00:05:20,060 --> 00:05:22,560
+So it's very simple.
+
+105
+00:05:22,560 --> 00:05:24,450
+I just divide up the axis.
+
+106
+00:05:24,450 --> 00:05:29,190
+And now, I'm going to say that my t is
+actually given by this k delta t.
+
+107
+00:05:29,190 --> 00:05:31,280
+This is how you discretize, right?
+
+108
+00:05:31,280 --> 00:05:33,210
+And k becomes a counter.
+Why?
+
+109
+00:05:33,210 --> 00:05:36,170
+Because when k is equal to 0, my time is
+0.
+
+110
+00:05:36,170 --> 00:05:40,690
+And when k is 1, it's 0.5.
+When k is 2, I'm at one, etc.
+
+111
+00:05:40,690 --> 00:05:43,832
+So k becomes kind of like a counter,
+right?
+
+112
+00:05:43,832 --> 00:05:47,340
+All right.
+Now let's see how the ball is moving.
+
+113
+00:05:47,340 --> 00:05:49,350
+So we know that we discretized time.
+
+114
+00:05:49,350 --> 00:05:54,370
+What we want to see is now, as I move k
+from 0, 1, 2, 3, how does my ball move?
+
+115
+00:05:54,370 --> 00:05:56,785
+And sort of extract x
+
+116
+00:05:56,785 --> 00:05:59,087
+of t from it.
+Right?
+
+117
+00:05:59,087 --> 00:05:59,903
+Okay.
+
+118
+00:05:59,903 --> 00:06:05,760
+So again, this is our equation in
+continuous time.
+
+119
+00:06:05,760 --> 00:06:09,300
+So remember I told you I have given you
+only two things.
+
+120
+00:06:10,880 --> 00:06:13,070
+These are the two things that I've given
+you.
+
+121
+00:06:13,070 --> 00:06:16,420
+Okay, so I know this guy here, that at
+time 0, I'm here.
+
+122
+00:06:16,420 --> 00:06:20,710
+And now I have the equation, the
+differential equation.
+
+123
+00:06:20,710 --> 00:06:22,400
+Well, you can discretize this differential
+
+124
+00:06:22,400 --> 00:06:25,290
+equation through something called
+Taylor's,
+
+125
+00:06:25,290 --> 00:06:26,860
+Taylor extension, which you guys did
+
+126
+00:06:26,860 --> 00:06:30,640
+with Dr. Egerstedt, which basically is
+given by this equation here.
+
+127
+00:06:32,420 --> 00:06:34,030
+And a quick note.
+
+128
+00:06:34,030 --> 00:06:39,100
+What it really is doing is, it's kind of
+saying, x k plus 1 is
+
+129
+00:06:39,100 --> 00:06:45,300
+nothing but x times k plus 1 times delta
+t.
+
+130
+00:06:45,300 --> 00:06:47,537
+Right?
+And xk is nothing but
+
+131
+00:06:47,537 --> 00:06:49,326
+x at time k delta t.
+
+132
+00:06:49,326 --> 00:06:53,397
+So it's, by incrementing k, what we are
+doing is we are finding out at
+
+133
+00:06:53,397 --> 00:06:56,985
+the next time instant, discrete dimension
+where should
+
+134
+00:06:56,985 --> 00:06:59,870
+I be, depending on my previous time
+instant.
+
+135
+00:06:59,870 --> 00:07:02,971
+That's all this equation is really doing.
+
+136
+00:07:02,971 --> 00:07:06,692
+A good thing to note here, though, is that
+we will be using just the first
+
+137
+00:07:06,692 --> 00:07:08,949
+two terms of the Taylor expansion, which
+is
+
+138
+00:07:08,949 --> 00:07:11,505
+what you guys did in the lectures as well.
+
+139
+00:07:11,505 --> 00:07:13,137
+This expansion
+
+140
+00:07:13,137 --> 00:07:17,553
+is really an approximation, because you
+see these dot
+
+141
+00:07:17,553 --> 00:07:20,800
+dot dot here it just goes on and on.
+
+142
+00:07:20,800 --> 00:07:25,995
+You keep taking derivatives, and you keep
+going on, so obviously the more
+
+143
+00:07:25,995 --> 00:07:31,050
+terms you use, the better your
+approximation of x of t will be.
+
+144
+00:07:31,050 --> 00:07:36,890
+But as of now, we're just going to use the
+first two terms of the expansion.
+
+145
+00:07:36,890 --> 00:07:38,670
+So let's see.
+
+146
+00:07:38,670 --> 00:07:43,002
+Here we have x of t is 2x, delta t is 0.5,
+we know this, t is k
+
+147
+00:07:43,002 --> 00:07:45,890
+delta t, and now let's put this entire
+thing
+
+148
+00:07:45,890 --> 00:07:50,480
+into this equation of ours, the discrete
+time equation.
+
+149
+00:07:50,480 --> 00:07:54,800
+And we get this guy here, x k plus 1 is
+equal to 2xk.
+
+150
+00:07:54,800 --> 00:07:57,240
+You guys should do this yourselves.
+It's really simple.
+
+151
+00:07:57,240 --> 00:08:01,000
+But just, you know, plug in values.
+You get this one equation.
+
+152
+00:08:01,000 --> 00:08:03,850
+And this is now our discrete time update
+equation.
+
+153
+00:08:03,850 --> 00:08:05,400
+And how do we use this?
+
+154
+00:08:05,400 --> 00:08:11,538
+Well, we are simply going to say okay, so
+at k is equal to 0, x of 0 is 0, and now
+
+155
+00:08:11,538 --> 00:08:18,680
+xk plus 1, which is x1, will be 2 times x
+of 0, which is actually 20, right?
+
+156
+00:08:18,680 --> 00:08:22,280
+So we saw that at k is equal to 1, which
+
+157
+00:08:22,280 --> 00:08:26,000
+is actually time point 0.5, I jumped from
+here to here.
+
+158
+00:08:27,480 --> 00:08:28,950
+Okay?
+And now I keep
+
+159
+00:08:28,950 --> 00:08:30,401
+incrementing k.
+
+160
+00:08:30,401 --> 00:08:36,250
+So now I take k is equal to 1, and I
+calculate my x2, which is now 40.
+
+161
+00:08:36,250 --> 00:08:40,040
+And then I take k is equal to 2, and I
+increment, and I get x3, which is 80.
+
+162
+00:08:41,130 --> 00:08:43,230
+For all you guys, you guys can kind
+
+163
+00:08:43,230 --> 00:08:45,900
+of see that this is really a linear
+approximation.
+
+164
+00:08:45,900 --> 00:08:50,040
+It's not changing exponentially, and like
+we thought it should,
+
+165
+00:08:50,040 --> 00:08:54,380
+because we know that it should change
+exponentially, but it's not.
+
+166
+00:08:54,380 --> 00:08:56,880
+And this is because, like I said, the more
+terms you
+
+167
+00:08:56,880 --> 00:08:57,690
+take in the Taylor series for
+
+168
+00:08:57,690 --> 00:09:00,360
+your approximation, the better the
+approximation.
+
+169
+00:09:00,360 --> 00:09:04,630
+So here, since we took just two terms,
+it's a kind of linear approximation.
+
+170
+00:09:04,630 --> 00:09:06,510
+If I take more terms and added, you know,
+
+171
+00:09:06,510 --> 00:09:09,700
+acceleration, etc, then your approximation
+would have been better.
+
+172
+00:09:10,830 --> 00:09:15,410
+And so, what we actually just found out,
+was nothing more than
+
+173
+00:09:15,410 --> 00:09:19,560
+a dynamical model, and how you kind of
+solve it to see how
+
+174
+00:09:19,560 --> 00:09:20,770
+your system is evolving.
+
+175
+00:09:20,770 --> 00:09:26,560
+So your differential equation and an
+initial condition, or just a condition,
+
+176
+00:09:26,560 --> 00:09:29,460
+basically telling you this is where I am
+at a certain time.
+
+177
+00:09:29,460 --> 00:09:33,900
+These two things are more than enough to
+find out how your system
+
+178
+00:09:33,900 --> 00:09:36,570
+is evolving with respect to time, and what
+is your x of t.
+
+179
+00:09:37,780 --> 00:09:43,710
+And in general, general form, this is, how
+you say, is your dynamical model.
+
+180
+00:09:43,710 --> 00:09:45,580
+Basically, it's an equation
+
+181
+00:09:45,580 --> 00:09:46,310
+x star of t.
+
+182
+00:09:46,310 --> 00:09:49,150
+That is a function of its, you know, state
+or time.
+
+183
+00:09:49,150 --> 00:09:51,900
+And later on, this is where you put in
+your control
+
+184
+00:09:51,900 --> 00:09:54,730
+input, you as well, when you guys go later
+into the course.
+
+185
+00:09:54,730 --> 00:09:58,470
+So you kind of, like I said, influencing
+the change x
+
+186
+00:09:58,470 --> 00:10:02,650
+dot of t, to make x of t do whatever you
+want.
+
+187
+00:10:02,650 --> 00:10:04,400
+Right now we're not dealing with control,
+so it's
+
+188
+00:10:04,400 --> 00:10:07,360
+just simply x dot of t is given by
+something.
+
+189
+00:10:07,360 --> 00:10:10,670
+And you have an equation here x t star is
+x star,
+
+190
+00:10:10,670 --> 00:10:12,570
+which is basically saying that at some
+time, I'm
+
+191
+00:10:12,570 --> 00:10:14,870
+going to tell you where you should be in
+space.
+
+192
+00:10:14,870 --> 00:10:18,430
+And with just this information, you should
+be able to evolve
+
+193
+00:10:18,430 --> 00:10:22,480
+x of t, and see how your state is changing
+with time.
+
+194
+00:10:22,480 --> 00:10:24,430
+So that was pretty simple.
+
+195
+00:10:24,430 --> 00:10:24,990
+Punchline.
+
+196
+00:10:24,990 --> 00:10:29,160
+This is the following dynamical model,
+which we've been solving all this while.
+
+197
+00:10:29,160 --> 00:10:30,630
+We know how x evolves.
+
+198
+00:10:30,630 --> 00:10:33,736
+But we know how x evolves numerically,
+right?
+
+199
+00:10:33,736 --> 00:10:35,790
+We discretize the world.
+And we
+
+200
+00:10:35,790 --> 00:10:41,520
+saw how x should evolve as we move the
+counter from 1, 2, 3, 4, etc.
+
+201
+00:10:41,520 --> 00:10:46,560
+But we didn't really get the equation out.
+
+202
+00:10:47,580 --> 00:10:49,430
+You know, the mathematical expression for
+x of
+
+203
+00:10:49,430 --> 00:10:53,850
+t, which we know is the exponential 2t,
+10.
+
+204
+00:10:53,850 --> 00:10:57,050
+We know that this was the actual solution,
+but
+
+205
+00:10:57,050 --> 00:10:59,690
+we really didn't get this equation, pretty
+equation out.
+
+206
+00:10:59,690 --> 00:11:01,620
+What we got was a
+
+207
+00:11:01,620 --> 00:11:05,880
+list of basically times, and where x
+should land up, numerical solutions.
+
+208
+00:11:05,880 --> 00:11:09,920
+So if you had to, let's say, get the
+equation out, what do you do?
+
+209
+00:11:10,940 --> 00:11:12,345
+Well, you integrate.
+
+210
+00:11:12,345 --> 00:11:16,820
+And again, like I said, we know already
+the solutions.
+
+211
+00:11:16,820 --> 00:11:18,910
+That's our hint.
+All we are given is this.
+
+212
+00:11:20,840 --> 00:11:23,190
+For all of those, this is not important
+for the course, but
+
+213
+00:11:23,190 --> 00:11:26,740
+for all those people who want to see how
+you integrate and get,
+
+214
+00:11:26,740 --> 00:11:30,600
+you know, x of t, we can go over it really
+quick here.
+
+215
+00:11:31,790 --> 00:11:37,520
+It's really nothing but, of course, an
+integration.
+
+216
+00:11:37,520 --> 00:11:39,220
+Let's say dx by dt is 2x.
+
+217
+00:11:39,220 --> 00:11:41,310
+You kind of separate the variables real
+quick.
+
+218
+00:11:41,310 --> 00:11:45,350
+So you say over x is equal to 2dt.
+Integrate both sides.
+
+219
+00:11:45,350 --> 00:11:50,330
+This is actually your logx is equal to two
+t plus c, c is your constant.
+
+220
+00:11:50,330 --> 00:11:52,155
+And now this is an equation
+
+221
+00:11:52,155 --> 00:11:55,020
+you've got in which you're going to plug
+in your initial condition.
+
+222
+00:11:55,020 --> 00:11:56,860
+So log10 is equal to c.
+
+223
+00:11:58,700 --> 00:12:03,010
+And from here you say, okay, so let me put
+all this back into my main equation.
+
+224
+00:12:03,010 --> 00:12:09,132
+Logx becomes two t plus log10.
+And now you kind of, you know, shift
+
+225
+00:12:09,132 --> 00:12:15,880
+terms here and there, and you get x is
+equal to 10e to the power 2t, x of t.
+
+226
+00:12:15,880 --> 00:12:17,205
+So now you guys even saw that,
+
+227
+00:12:17,205 --> 00:12:19,908
+you know, if you don't want to do the
+whole discretizing the
+
+228
+00:12:19,908 --> 00:12:24,100
+world and kind of simulating where you
+should be, instead you can integrate.
+
+229
+00:12:24,100 --> 00:12:25,880
+And a word of caution here, that
+
+230
+00:12:25,880 --> 00:12:28,640
+you cannot always integrate and find the
+solution.
+
+231
+00:12:28,640 --> 00:12:30,770
+Sometimes you have to rely on numerical
+methods,
+
+232
+00:12:30,770 --> 00:12:33,190
+because analytical solutions may not even
+exist, you know?
+
+233
+00:12:33,190 --> 00:12:37,300
+You may not get pretty equations for
+dynamical models, etc.
+
+234
+00:12:37,300 --> 00:12:41,670
+But here, just to kind of show you that,
+you know, you can do it.
+
+235
+00:12:41,670 --> 00:12:42,560
+Just integrate, and
+
+236
+00:12:42,560 --> 00:12:44,360
+you'll get the answer.
+
+237
+00:12:44,360 --> 00:12:47,130
+Again, it's not important for the course,
+but woo, we got it.
+
+238
+00:12:47,130 --> 00:12:48,320
+But what is
+
+239
+00:12:50,540 --> 00:12:54,170
+important for the course is that even
+though maybe, okay, we won't ask you
+
+240
+00:12:54,170 --> 00:12:58,130
+to integrate, what we'll do instead is
+we'll say, okay, here is your model.
+
+241
+00:12:58,130 --> 00:13:00,330
+And I'm going to give you what I call a
+candidate
+
+242
+00:13:00,330 --> 00:13:03,450
+solution, x of t should be 10e to the
+power 2t.
+
+243
+00:13:03,450 --> 00:13:05,400
+And now what you need to do is figure out,
+
+244
+00:13:05,400 --> 00:13:08,320
+is this indeed a solution to the model or
+not.
+
+245
+00:13:08,320 --> 00:13:10,978
+And for that, there are just two simple
+steps that you do.
+
+246
+00:13:10,978 --> 00:13:14,580
+First is called the initial condition
+check.
+
+247
+00:13:14,580 --> 00:13:15,370
+What does that mean?
+
+248
+00:13:15,370 --> 00:13:16,750
+It basically means that
+
+249
+00:13:18,870 --> 00:13:20,790
+I'm given this candidate solution, and
+then
+
+250
+00:13:20,790 --> 00:13:22,780
+within the solution, I'm going to kind of
+put
+
+251
+00:13:22,780 --> 00:13:27,270
+in my initial condition x of 0 and see if
+I actually get 10 or not.
+
+252
+00:13:27,270 --> 00:13:33,110
+And here I do get 10, so it satisfies this
+equation, my x of t.
+
+253
+00:13:33,110 --> 00:13:36,070
+And then the second check is the
+differential equation check.
+
+254
+00:13:36,070 --> 00:13:36,630
+And what is that?
+
+255
+00:13:36,630 --> 00:13:39,270
+That is really nothing but okay, again I
+have my candidate
+
+256
+00:13:39,270 --> 00:13:42,320
+solution, but I'm going to now take the
+derivative of that candidate solution.
+
+257
+00:13:43,460 --> 00:13:44,018
+And 2e
+
+258
+00:13:44,018 --> 00:13:46,994
+to the power of 2t, which is really my
+
+259
+00:13:46,994 --> 00:13:51,007
+2 times x, and see if it satisfies this
+equation.
+
+260
+00:13:51,007 --> 00:13:51,960
+And it does.
+
+261
+00:13:51,960 --> 00:13:53,300
+So this is another technique.
+
+262
+00:13:53,300 --> 00:13:55,935
+So in case, you know, given a model, you
+don't want to
+
+263
+00:13:55,935 --> 00:13:59,870
+find out through integration or numerical
+methods what your x of t should
+
+264
+00:13:59,870 --> 00:14:02,480
+be, but instead I'm telling you what it
+should be, this is
+
+265
+00:14:02,480 --> 00:14:05,520
+how you check or confirm that it is indeed
+a solution or not.
+
+266
+00:14:07,520 --> 00:14:07,873
+Okay.
+
+267
+00:14:07,873 --> 00:14:09,473
+So the take home message
+
+268
+00:14:09,473 --> 00:14:13,990
+of this entire lecture is really first,
+dynamical models.
+
+269
+00:14:13,990 --> 00:14:15,228
+What are dynamical models?
+
+270
+00:14:15,228 --> 00:14:17,530
+I hope I've kind of given you guys an
+idea, and
+
+271
+00:14:18,630 --> 00:14:21,950
+made you sort of comfortable with the idea
+of, you know, models.
+
+272
+00:14:21,950 --> 00:14:24,655
+And for example, you have something like
+this, right?
+
+273
+00:14:24,655 --> 00:14:27,350
+Okay, then how do we solve them?
+
+274
+00:14:27,350 --> 00:14:31,940
+We solve, one we can do by numerical
+solving,
+
+275
+00:14:31,940 --> 00:14:35,000
+which is numerically discretize the world
+and solve it.
+
+276
+00:14:35,000 --> 00:14:39,472
+And then, another is analytically, through
+integration, right?
+
+277
+00:14:39,472 --> 00:14:42,630
+And then the third thing, which is very
+important, is that I give
+
+278
+00:14:42,630 --> 00:14:46,040
+you the model and then I say okay, this is
+the candidate solution.
+
+279
+00:14:46,040 --> 00:14:47,920
+You check the solution through two checks,
+the
+
+280
+00:14:47,920 --> 00:14:51,040
+first being initial condition, second
+being differential equations.
+
+281
+00:14:51,040 --> 00:14:54,760
+And sort of try and verify that
+
+282
+00:14:54,760 --> 00:14:58,160
+this candidate solution is indeed
+satisfying the model.
+
+283
+00:14:58,160 --> 00:15:00,320
+And this is a homework
+
+284
+00:15:00,320 --> 00:15:01,240
+assignment for you guys.
+
+285
+00:15:01,240 --> 00:15:04,060
+For this model, see if you can
+numerically,
+
+286
+00:15:04,060 --> 00:15:07,150
+analytically, and this whole checking
+thing, whether, you
+
+287
+00:15:07,150 --> 00:15:10,990
+know, you can kind of solve it and see if
+you get this equation or not.
+
+288
+00:15:10,990 --> 00:15:14,970
+And before we wrap up this lecture,
+there's just one
+
+289
+00:15:14,970 --> 00:15:19,290
+concept more, which is the equilibrium
+point concept, which I want to introduce.
+
+290
+00:15:19,290 --> 00:15:26,520
+Which is really nothing but basically this
+concept that if my state x wakes
+
+291
+00:15:26,520 --> 00:15:29,110
+up here at this point, or at this
+
+292
+00:15:29,110 --> 00:15:32,030
+position, or at this value, it stays
+there.
+
+293
+00:15:32,030 --> 00:15:33,370
+As simple as that.
+
+294
+00:15:33,370 --> 00:15:37,050
+So it's really not anything more than
+saying that
+
+295
+00:15:37,050 --> 00:15:39,010
+my x dot of t is going to be 0.
+
+296
+00:15:41,180 --> 00:15:43,932
+So to find an equilibrium point, you do
+simply x dot
+
+297
+00:15:43,932 --> 00:15:46,720
+of t equal to 0, and find the value of x.
+
+298
+00:15:46,720 --> 00:15:50,640
+And like I said, now if, if I was to wake
+up here, or if at, let's say, time
+
+299
+00:15:50,640 --> 00:15:57,120
+t is equal to 0 I or 3, or whenever I wake
+up, I am at this equilibrium point.
+
+300
+00:15:57,120 --> 00:16:02,820
+Because my x dot of t is 0 and there's no
+change, my change is basically 0.
+
+301
+00:16:02,820 --> 00:16:05,050
+I will stay there.
+So it's really simple.
+
+302
+00:16:05,050 --> 00:16:06,470
+So in our case, in the dynamical
+
+303
+00:16:06,470 --> 00:16:10,520
+model case, x is equal to negative 1 by 3
+is your equilibrium point.
+
+304
+00:16:10,520 --> 00:16:13,770
+So if you're asked, you know, find an
+equilibrium point, simply
+
+305
+00:16:13,770 --> 00:16:17,660
+just put x dot equal to 0, or whatever
+function you
+
+306
+00:16:17,660 --> 00:16:20,725
+have here equal to 0, and find the values
+of your
+
+307
+00:16:20,725 --> 00:16:24,390
+state, x in this case, and that will be
+your equilibrium point.
+
+308
+00:16:24,390 --> 00:16:27,730
+And also, with that check the forums.
+
+309
+00:16:27,730 --> 00:16:30,920
+Good luck with Quiz One.
+And bye bye.

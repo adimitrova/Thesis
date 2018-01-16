@@ -1,0 +1,94 @@
+[MUSIC] In this module, we are discussing
+the basics of particle acceleration and detection methods. In this video, you will see how different
+technologies are combined to build the two basic types of particle detectors,
+spectrometers, and calorimeters. At the end of this video, you will be able
+to describe how a spectrometer measures the direction and momentum of a charged
+particle in a nondestructive manner. And to describe how a calorimeter measures
+the direction and energy of a particle by total absorption. You will also be able to identify
+the strength of these two basic methods and their synergy. A magnetic spectrometer is used
+to measure the direction and momentum of a particle
+with minimal interaction. It is a nondestructive method
+to measure these properties. The particle trajectory is measured
+in a known magnetic field. For a homogeneous field, the trajectory is
+a spiral, a circle in the plane orthogonal to the field, and a straight line
+in the direction of the field. The radius of curvature is proportional to
+what is called the magnetic rigidity R, which is the ratio between the momentum p,
+and the charge Z. R = p/Z, and can be
+measured by the product of the radius of curvature and the magnetic field. The magnetic field itself is provided by
+a permanent magnet or an electromagnet. Measurements of the path are performed
+by an ionization detector, a gas filled wire chamber, for example,
+or layers of semiconductor detectors. The tangent to the trajectory
+at the entry of the magnet gives the direction of
+the incident particle. As an example, here's, again, a photo of
+the drift chamber from the L3 experiment at the Large Electron-
+Positron collider at CERN as well as a picture of an e+e- annihilation
+into hedrons on the right side. The reaction takes place in
+the middle of the device, the center of the image on the right. In the central part, you see the tracks of
+charged particles in yellow reconstructed from the measured coordinates
+indicated by the small green crosses. The curvature is barely visible but well-measured by the high
+resolution drift chamber. In this photograph on the left, you see a central detector
+made out of silicone sensors, the one that is used by
+the ATLAS experiment. The right image is a reconstruction of a
+reaction between protons in the middle of the device. The charged particles, which are produced, leave tracks forming circles
+orthogonal to the magnetic field. The purpose of a calorimeter
+is to measure the energy and direction of particles by absorbing them. The principle of operation
+is the following. The incident particle initiates
+a shower of particles in the detector, an electromagnetic shower,
+or a hadronic shower. The shape, size, and composition of the
+shower depends on the incident particle. But also on the detector material,
+namely, its radiation length,
+its nuclear interaction length. The energy is deposited in the form of
+heat, which is not very useful, but also produces detectable signals,
+like ionization and excitation by dE/dx, scintillation light,
+Cherenkov radiation, etc. This energy is detected by sensors. The resulting signal is proportional to
+the total energy deposited by the particle of the shower in the active
+medium of the detector. There are two kinds of calorimeters,
+homogenous ones with only one material to absorb and detect the shower particles and
+layered calorimeters, which use different materials for
+interaction, absorption and detection. Here's an example of a layered calorimeter. In such a calorimeter, layers alternate. There are absorption layers made of heavy
+materials like copper, lead, or uranium with the short
+radiation in direction. Here, particles interact and
+form a shower. In the sensitive layers,
+the energy lost by dE/dx is recorded. These layers may be
+equipped with a gaseous or noble liquid, a proportional chamber,
+a semiconductor sensor, or a scintillator. You see here, the electromagnetic
+calorimeter of ATLAS which contains absorption layers of lead and steel alternating with
+sensitive layers filled with liquid argon. The whole has a shape
+resembling an accordion. In a homogenous calorimeter on the other
+hand, the two functions are combined. The same material is used as an absorber
+and as a detector for deposited energy. Scintillators made of heavy
+materials can be used, like bismuth germanate,
+BGO, or lead tungstate. Because of the short radiation length and
+the transparency of these materials, they are often used to detect
+electromagnetic showers. The scintillation light,
+emitted by the electrons of the shower, is detected by photomultipliers or
+by semiconductor photodiodes, as in this example, which shows you the lead tungstate
+calorimeter of the CMS experiment at LHC. Calorimeters are also one of the main
+applications of plastic scintillators. The large calorimeter for hadron showers of
+the ATLAS experiment is an example. Here, you see a small animation
+showing the structure of one of its wedge-shaped slices. It uses scintillated tiles
+inserted between steel absorbers to measure the energy of hadrons. The shower develops mainly
+in the metal layers. The charged particles it generates produce
+scintillation light in the sensitive layers. The scintillation light is
+collected by optical fibers and guided to photo detectors. In this way, a three-dimensional
+image of the shower is measured, which allows to reconstruct direction and
+energy of hadrons. But also the Cherenkov effect allows
+to build complete detectors. The Super-Kamiokande Detector in Japan
+consists of a huge cylindrical tank, which contains 50,000
+tons of ultra pure water. When a charged particle passes through
+the water at the speed beyond that of the speed of light in water, which is
+about 75% of the speed of light in vacuum, a cone of light is emitted. This cone is intercepted by an array
+of photomultipliers distributed on the walls. They detect an ellipse of photons, which
+allows to reconstruct the direction and velocity of the particle. Lateral and longitudinal segmentation
+allows to distinguish between hadrons and particles, which interact only via the
+electromagnetic force, like electrons and photons, or muons. As a general rule, one can say that electromagnetic
+showers are short, slim and regular. Hadronic showers are penetrating,
+wide, and irregular. Because of the different characteristics
+of electromagnetic and hadronic showers, they are often two calorimeters,
+a fine grain electromagnetic one and a coarser hadron calorimeter. But it is the synergy between
+different detector types that allows to both identify particles and
+measure their direction and energy. This is further explained
+in optional video 3.10a, which shows how the ATLAS
+detector at LHC works. In the next video, we will show which
+types of particle detectors are developed and produced in our laboratories
+at the University of Geneva. [MUSIC]

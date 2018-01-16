@@ -1,0 +1,556 @@
+1
+00:00:00,000 --> 00:00:06,155
+[MUSIC]
+
+2
+00:00:06,155 --> 00:00:10,050
+Hello, I am glad to see you back for
+this lesson.
+
+3
+00:00:10,050 --> 00:00:16,040
+In previous modules, we explored different
+types of embedded IoT operating systems.
+
+4
+00:00:16,040 --> 00:00:19,290
+Now we will look into
+the details of Contiki and
+
+5
+00:00:19,290 --> 00:00:22,160
+discover certain detailed behaviors.
+
+6
+00:00:22,160 --> 00:00:24,870
+At the end of the lesson,
+you will be able to understand
+
+7
+00:00:24,870 --> 00:00:28,900
+some of the challenges in developing
+IoT applications for Contiki.
+
+8
+00:00:30,160 --> 00:00:34,280
+First of all, let's elaborate
+the title of today's lesson, Contiki,
+
+9
+00:00:34,280 --> 00:00:36,290
+a hybrid operating system.
+
+10
+00:00:37,360 --> 00:00:42,990
+Remember our discussion in previous module
+on operating system kernel designs?
+
+11
+00:00:42,990 --> 00:00:46,920
+We discussed contiki as an example
+of a modular kernel design,
+
+12
+00:00:46,920 --> 00:00:50,310
+combining features from monolithic and
+microkernel.
+
+13
+00:00:51,410 --> 00:00:55,970
+This allows it to inherit some
+advantages of both systems.
+
+14
+00:00:55,970 --> 00:01:00,140
+Contiki implements a hybrid model
+through an event driven kernel.
+
+15
+00:01:01,940 --> 00:01:06,950
+In Contiki, preemptive multi-threading is
+implemented as an application library.
+
+16
+00:01:08,040 --> 00:01:10,340
+This is optionally
+linked with the program,
+
+17
+00:01:10,340 --> 00:01:12,770
+if the program requires
+multi-threading features.
+
+18
+00:01:14,320 --> 00:01:18,210
+There are two key benefits when
+building a system like this.
+
+19
+00:01:18,210 --> 00:01:23,520
+First, concurrency can be provided
+without the need of per-thread stacks or
+
+20
+00:01:23,520 --> 00:01:24,620
+locking mechanisms.
+
+21
+00:01:25,760 --> 00:01:30,670
+This benefit is evident by looking at why
+per-thread stacks are not suitable for
+
+22
+00:01:30,670 --> 00:01:31,625
+embedded devices.
+
+23
+00:01:31,625 --> 00:01:36,680
+Per-thread stack approach
+allocates a stack for each thread.
+
+24
+00:01:38,160 --> 00:01:41,180
+It is hard to specify how
+much a thread requires.
+
+25
+00:01:42,660 --> 00:01:45,830
+In addition,
+when a thread is created the memory for
+
+26
+00:01:45,830 --> 00:01:48,230
+stack must be assign or allocated.
+
+27
+00:01:49,300 --> 00:01:52,200
+This creates a problem,
+because memory assigned for
+
+28
+00:01:52,200 --> 00:01:55,529
+specific task cannot be use
+by other concurrent test.
+
+29
+00:01:57,220 --> 00:02:02,040
+The second benefit is that event driven
+model with the state driven programming
+
+30
+00:02:02,040 --> 00:02:03,880
+are difficult for programmers to manage.
+
+31
+00:02:04,980 --> 00:02:09,030
+In addition, not all programs can
+be expressed as state machines.
+
+32
+00:02:10,480 --> 00:02:13,990
+Let's take an example of a purely
+event driven operating system.
+
+33
+00:02:15,240 --> 00:02:19,450
+In such a system, a task could
+consume the full CPU time completely.
+
+34
+00:02:20,750 --> 00:02:22,450
+When the task is complex and
+
+35
+00:02:22,450 --> 00:02:26,988
+require a long CPU time, the system cannot
+respond to external events sometime.
+
+36
+00:02:26,988 --> 00:02:34,230
+A preemptive multi-threaded system
+overcomes the problem in such situation.
+
+37
+00:02:34,230 --> 00:02:38,420
+Hence, a hybrid system can be
+considered as the most suitable for
+
+38
+00:02:38,420 --> 00:02:39,440
+such kind of problems.
+
+39
+00:02:42,010 --> 00:02:45,270
+As I mentioned earlier,
+Contiki inheritance advantages
+
+40
+00:02:45,270 --> 00:02:49,850
+from microperable design, and hence
+separates from the kernel from processors.
+
+41
+00:02:50,890 --> 00:02:54,890
+This helps to reduce the kernel
+size as small as possible and
+
+42
+00:02:54,890 --> 00:02:59,125
+consequently the probability of
+bulks can be dramatically reduce.
+
+43
+00:02:59,125 --> 00:03:05,130
+Similar to microkernel design,
+Contiki also uses messaging mechanism for
+
+44
+00:03:05,130 --> 00:03:07,680
+communication between services and
+the kernel.
+
+45
+00:03:09,110 --> 00:03:14,420
+However, instead of using the peer
+messages discussed in micro kernel lesson,
+
+46
+00:03:14,420 --> 00:03:16,370
+Contiki uses posting events.
+
+47
+00:03:17,640 --> 00:03:22,240
+The only difference between pure messages
+and event posting is formatting.
+
+48
+00:03:24,200 --> 00:03:28,140
+There is no hardware abstraction layer or
+HAL in Contiki.
+
+49
+00:03:29,460 --> 00:03:31,370
+Therefore, the bias drivers and
+
+50
+00:03:31,370 --> 00:03:34,300
+applications communicate
+directly with the hardware.
+
+51
+00:03:35,780 --> 00:03:39,280
+In order to give you a better
+understanding of the pros and
+
+52
+00:03:39,280 --> 00:03:42,540
+cons of removing hardware
+obstruction layer in Contiki,
+
+53
+00:03:42,540 --> 00:03:46,119
+I will first discuss about
+the hardware obstruction layer.
+
+54
+00:03:47,810 --> 00:03:53,200
+The hardware abstraction layer is a layer
+between application, component code,
+
+55
+00:03:53,200 --> 00:03:53,820
+and hardware.
+
+56
+00:03:55,140 --> 00:04:00,220
+In other words, HAL allows operating
+systems to interact with devices
+
+57
+00:04:00,220 --> 00:04:03,620
+at an abstract level rather
+than a detailed hardware level.
+
+58
+00:04:05,390 --> 00:04:11,490
+The main purposes of halt is to help
+the OS access hardware simply and
+
+59
+00:04:11,490 --> 00:04:16,810
+portably via abstract API's regardless
+of the type of underlying hardware.
+
+60
+00:04:18,200 --> 00:04:20,718
+Therefore, HAL has many advantages.
+
+61
+00:04:20,718 --> 00:04:25,806
+For example,
+first it enables switching hardware.
+
+62
+00:04:25,806 --> 00:04:28,605
+It is possible to switch
+to another hardware,
+
+63
+00:04:28,605 --> 00:04:32,210
+such as a different microcontroller
+during development.
+
+64
+00:04:33,470 --> 00:04:37,570
+As a result, there is less of a risk
+due to choosing suitable tools.
+
+65
+00:04:38,900 --> 00:04:42,080
+Second, it allows cross development.
+
+66
+00:04:42,080 --> 00:04:46,230
+It is not possible to develop application
+and components more conveniently.
+
+67
+00:04:47,470 --> 00:04:50,180
+As a result,
+the development speed can be fast.
+
+68
+00:04:51,630 --> 00:04:55,330
+In addition, a large-scale
+simulation environment can be built.
+
+69
+00:04:57,340 --> 00:05:01,700
+Third, it results in less effort and
+less bugs.
+
+70
+00:05:01,700 --> 00:05:07,139
+This enables a significant reduction in
+lines of code, which leads to less bugs.
+
+71
+00:05:08,560 --> 00:05:11,640
+The final benefit is for
+automated unit testing.
+
+72
+00:05:12,700 --> 00:05:17,230
+It is possible to run embedded
+software on a computer platform,
+
+73
+00:05:17,230 --> 00:05:22,070
+extending the concept of continuous
+integration with automated unit tests.
+
+74
+00:05:23,500 --> 00:05:28,169
+Although HAL has many advantages,
+it also has several drawbacks.
+
+75
+00:05:29,280 --> 00:05:30,360
+Let's look at some of them.
+
+76
+00:05:31,770 --> 00:05:34,340
+First, HAL cannot completely cover
+
+77
+00:05:34,340 --> 00:05:39,390
+all available features of a particular
+hardware, such as a microcontroller.
+
+78
+00:05:39,390 --> 00:05:43,200
+As a result, it limits some
+functionalities of the hardware.
+
+79
+00:05:44,750 --> 00:05:48,580
+Possible conflict with other frameworks,
+libraries and
+
+80
+00:05:48,580 --> 00:05:51,101
+components is the second drawback of HAL.
+
+81
+00:05:52,780 --> 00:05:55,590
+The third problem is that it is hard or
+
+82
+00:05:55,590 --> 00:06:00,560
+even possible to maintain the hold,
+especially in cleaning HALs mess.
+
+83
+00:06:02,010 --> 00:06:05,550
+Finally, a number of lines of
+code increase dramatically
+
+84
+00:06:05,550 --> 00:06:07,269
+when integrated into the OS.
+
+85
+00:06:09,000 --> 00:06:13,230
+Currently, HAL is deprecated in
+different Linux distributions.
+
+86
+00:06:14,470 --> 00:06:18,040
+Since Contiki is built for
+wireless sensor networks and
+
+87
+00:06:18,040 --> 00:06:21,630
+embedded IoT devices,
+it is better off without HAL.
+
+88
+00:06:23,630 --> 00:06:26,120
+Because of this, device drivers and
+
+89
+00:06:26,120 --> 00:06:29,150
+applications communicate
+directly with the hardware.
+
+90
+00:06:30,900 --> 00:06:35,500
+Based on a modular kernel approach,
+Contiki has the ability to load and
+
+91
+00:06:35,500 --> 00:06:37,290
+unload models at run time.
+
+92
+00:06:38,630 --> 00:06:43,100
+This allows Contiki to load
+only the necessary services,
+
+93
+00:06:43,100 --> 00:06:46,390
+consequently allowing it to
+have a reduced kernel size.
+
+94
+00:06:48,610 --> 00:06:53,230
+Almost all abstractions are implemented
+as libraries and services, except for
+
+95
+00:06:53,230 --> 00:06:58,560
+CPU multiplexing, which is the only
+obstruction provided by the core system.
+
+96
+00:07:00,250 --> 00:07:04,550
+The implementation is almost similar
+to a scheduler of microkernel.
+
+97
+00:07:07,040 --> 00:07:11,105
+Looking at this implementation,
+Contiki is developed in C language, and
+
+98
+00:07:11,105 --> 00:07:13,150
+it's applications are also written in C.
+
+99
+00:07:14,260 --> 00:07:18,160
+Therefore, its is easy to develop
+application, reprogram, and
+
+100
+00:07:18,160 --> 00:07:19,230
+replace services.
+
+101
+00:07:20,550 --> 00:07:24,620
+Last but not least,
+Contiki is easily portable.
+
+102
+00:07:24,620 --> 00:07:29,560
+This implies that it possible to run it
+on various microcontroller architectures
+
+103
+00:07:30,930 --> 00:07:35,660
+such as the CC2538, CC2650, SensorTek,
+
+104
+00:07:35,660 --> 00:07:39,180
+AdmilABR, and the MSP430, and so on.
+
+105
+00:07:40,730 --> 00:07:42,350
+It is easy to add support for
+
+106
+00:07:42,350 --> 00:07:46,850
+new microcontrollers using the built-in
+libraries and existing Contiki platform.
+
+107
+00:07:47,960 --> 00:07:52,800
+For example, a programmer can easily
+port Contiki to their own board
+
+108
+00:07:52,800 --> 00:07:56,700
+by creating configuration files for
+the specific microcontroller and
+
+109
+00:07:56,700 --> 00:08:00,120
+edit existing general
+configuration files of Contiki.
+
+110
+00:08:01,440 --> 00:08:03,070
+However, it is rare for
+
+111
+00:08:03,070 --> 00:08:07,480
+a programmer to add a new
+microcontroller to the Contiki platform.
+
+112
+00:08:07,480 --> 00:08:11,800
+As Contiki supports all popular micro
+controllers and embedded devices.
+
+113
+00:08:12,810 --> 00:08:16,190
+This is all for the lesson about Contiki,
+a hybrid system.
+
+114
+00:08:17,200 --> 00:08:22,670
+I hope that you got the important features
+of Contiki's kernel, and the hybrid model.
+
+115
+00:08:22,670 --> 00:08:26,560
+We also discussed unique characteristics
+of Contiki, and its kernel.
+
+116
+00:08:27,820 --> 00:08:29,940
+I hope to see you in the next video,
+
+117
+00:08:29,940 --> 00:08:35,055
+which will further explain many
+advanced features of Contiki.

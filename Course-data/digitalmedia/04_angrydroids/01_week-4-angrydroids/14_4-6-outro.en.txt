@@ -1,0 +1,48 @@
+[SOUND]. so that was week four. 
+And you've seen how to use a physics engine to make a basic game. 
+And how the use of physics can really bring richness to the game play and 
+strong interactivity. And there's a mass of games out there on 
+mobile platforms. Maybe you want to talk a little bit 
+about. >> Well. 
+ >> The potential. >> Well there is a lot of potential 
+because you can use those kind of techniques to easily make a casual game. 
+And casual gaming is the it's one of the big up and coming genres in markets. 
+So you can here, it's the sort of game which you can play when you're on the bus 
+or you're on the train. And it's really engaging. 
+Because really, really small changes in the way that you use and massive impact. 
+And you know you, you cant, it's quite difficult to get exactly the same thing 
+each time although it's always deterministic. 
+So it's always the same if you get the same thing. 
+So yeah it's a really useful thing for making games. 
+But also we did a little bit of some sound [INAUDIBLE], and collision didn't 
+we? >> Yeah so, so as usual we try to get 
+creative with the sounds as well as the graphics, so, so, so we were, we were 
+looking at how. This way we're sort of working from the 
+opposite direction to how we did last week. 
+So we were kind of parameterizing the audio from what was going on in the 
+graphics. So we were kind of sending back impacts 
+velocities from, from the physics engine and using that to control the playback. 
+ >> Yeah, that worked really well. So there's a lot more you could do. 
+As always, its just a thing to get you started. 
+It's a jumping off point. >> I mean, I think you can, there's, 
+you can look at the game you already play and see all the games on the the android 
+and iPhone markets. And loads of them use physics and you 
+could probably start figuring out how they're built and trying to build your 
+own versions. >> [INAUDIBLE] Yeah. 
+ >> Or coming out with your own games. >> that's right. 
+ >> [INAUDIBLE] It's not as if it's going to go away. 
+It's a genre which is going to be around for a long time. 
+And it's something which is easy enough for you to build in 2D with any source of 
+engaging. So yeah you don't have to make big 3D 
+monstrosities to be making, to be big in the games market. 
+Next week we're going to be doing something which is a bit more 
+complicated. We're going a bit deeper. 
+It's Facebook integration and also using stuff like the camera from your mobile 
+device. So that's going to be an interesting 
+week. There's a lot of new stuff there. 
+A lot of people are interested in social media and integration and that. 
+We're really kind of covering that all over then. 
+So and remember to check the forums, and to talk to our students who are there who 
+are able to, you know. Who are going to respond to you and any 
+questions that you have. And we'll see you next week. 
+ >> [MUSIC]
