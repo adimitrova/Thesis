@@ -1,3 +1,8 @@
+!["Use case"](UseCase2.png)
+
+### ------------------ Metadata types ---------------------
+!["MD types"](MetadataTypes.png)
+
 ### ------------------ PATTERN 1 ---------------------
 !["Pattern1"](pat1.png)
 ### ------------------ PATTERN 2 ---------------------
@@ -10,3 +15,4 @@
 !["Pattern5"](pat5.png)
 ### ------------------ PATTERN 6 ---------------------
 !["Pattern6"](pat6.png)
+
