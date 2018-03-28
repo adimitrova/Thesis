@@ -1,0 +1,46 @@
+[MUSIC] Now, let's take a look at the array of
+stakeholders involved in data management. So, initially, you have the primary
+researchers, or principal investigators, who design the study,
+specify what data will be collected, and determine how to analyze the data and
+draw conclusions from these analyses. They come to know the data quite well, but in a large research project with complex
+data, it can be difficult even for the primary researchers
+to know what they have. Within a research project,
+you may also have graduate students or other staff members who are tasked
+with collecting the data and managing it, and
+often analyzing it as well. Good data management
+facilitates clear communication between the primary researchers and
+graduate students. It also facilitates multiple
+students working together and the passing of information to new students
+from those who have left the project. Institutions such as universities and
+research institutes, are usually involved in setting some of
+the internal data management policies. Institutions may also provide
+data management resources to researchers including
+data management training, support for researchers writing
+data management plans or services for archiving data. A data repository curates data, ensures the long-term
+preservation of data and provides access to data. Data repositories work
+with the data creators to ensure data remain useful over time. Data repositories also
+work with data creators to place any necessary access
+restrictions on the data, including those determined by
+institutional or funder policies, embargoes, as well as any security and
+copyright concerns. The secondary user of the data is
+the third party that comes into the picture later in the research
+data life-cycle and may use the data to verify published results, for
+secondary analyses or for teaching. Users can come from many backgrounds,
+including students, faculty, research project team members,
+private entities, businesses, government officials, journalists,
+or citizen scientists. Funders are the agencies or organizations that provide the money
+to support a research project. Most US Federal funding agencies
+require researchers to actively and properly manage their data throughout
+the research project’s life cycle with an end goal of making the data
+available and accessible for sharing, A data management plan is now
+required of most project proposals. These plans clearly outline
+the specifics of how the data will be effectively collected, managed, stored,
+and preserved for future access. Publishers and Journals disseminate
+scientific discovery and maintain the integrity of
+the scientific record. Publishers and Journals are increasingly
+encouraging researchers to cite data, and some, such as PLOS, or the Public Library of Science, are issuing
+policies that require researchers to make data underlying published results
+available within a data repository. As you can see there are many different
+stakeholders involved in data management. The variety of stakeholders
+suggests that proper management of data throughout the research
+lifecycle requires communication and cooperation between these various groups. [MUSIC]

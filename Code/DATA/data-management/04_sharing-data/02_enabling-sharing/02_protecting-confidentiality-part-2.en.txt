@@ -1,0 +1,77 @@
+[MUSIC] Now that we have familiarized
+ourselves with key definitions, let's move on to the laws that govern and
+regulate how confidential information is managed and
+a subject's privacy is protected. We're going to focus on laws in
+the United States, but different countries have different laws related to
+the handling of confidential information. Researchers should familiarize themselves with all applicable laws prior to
+collecting confidential information. We're going to cover three of the big laws that effect confidentiality
+in the United States. Mainly, the Common Rule, FERPA, and HIPAA. The Federal Policy for
+the Protection of Human Subjects, known as the Common Rule, Governs human
+subjects research that is conducted or supported by any federal department or
+agency. The common rule establishes
+institutional review boards, IRBs, as the entities that oversee the ethical
+treatment of human subjects in research. The Common Rule also
+establishes requirements and protocols for gaining informed
+consent from human subjects. And establishes rules for
+the protection of confidentiality. FERPA or the Family Educational Rights and
+Privacy Act applies to educational data. And establishes a student's right of
+privacy for their educational records. This includes personally identifiable
+information maintained by educational agencies or
+institutions that receive funds under an applicable program from
+the US Department of Education. PII in this case includes both direct and
+indirect identifiers. The Health Insurance Portability and
+Accountability Act, or HIPAA Privacy Rule, protects PHI held or
+transmitted by a covered entity. And the Department of Health and Human Services provides detailed
+guidance on de-identification methods. In order to encourage
+the dissemination of data. The HIPAA privacy rule provides two
+main methods for de-identification. The expert determination method, allows
+the person with appropriate knowledge to apply statistical methods
+to de-identify a data set and then determine that the risk of disclosure
+to an individual is very small. The expert must also
+document the methods and results that lead to this determination. The Safe Harbor Method stipulates
+the removal of 18 types of identifiers. The 18 identifiers include direct and
+geographical identifiers. And the final identifier in the list
+is in many ways a catch all for those indirect identifiers
+that may be problematic. Because of the clarity of
+the Safe Harbor Method, it has also been adopted in other
+areas as a standard method for de-identification where laws and
+procedures may be less clear. The Inter-University Consortium for
+Political and Social Research, or ICPSR, also has information on methods for
+protecting confidentiality in their guide to social science data preparation and
+archiving which we will now describe. The most straight forward method is completely removing
+the problematic variables. However, this could negatively affect
+the usability of the data set for secondary analysis. Fortunately, there are alternative
+approaches that may be used for handling indirect identifiers
+within a data set. First is top-coding,
+which involves restricting the upper range of a variable that may identify
+outliers or unique individuals. Second is collapsing or combining. Where you combine values into a single
+variable or merging data from two or more variables into one summary variable. Third is sampling, where you release
+a randomized sample of the larger original data set that provides analysis
+results comparable to the original. Fourth is swapping, where you use an
+indirect identifier to match unique cases. Then swapping values of key
+variables between those cases. And finally, there is disturbing the data. Where you manipulate the data
+by adding random variation in the value while maintaining
+their statistical properties. When it comes to qualitative data,
+anonymizing data is best done using a pre-planned
+anonymization scheme. An anonymization scheme
+describes modifications to the qualitative dataset to
+protect respondent confidentiality. For example, a proper name should be
+replaced with more generalized text that describes the demographic
+of the individual or the person's relationship
+with the respondent. Specific dates, especially birth dates or important events, will also need to
+be replaced with general markers. Other types of information that
+would uniquely identify a respondent may have to be redacted or
+removed completely. In this case, a marker should indicate that an item
+was removed from the data set. These are just some strategies
+that are used today to protect confidentiality
+through anonymization. There are other strategies that
+are currently being developed to protect confidential data. However, the most common strategy
+currently remains to anonymize data by removing variables,
+applying statistical techniques, or redacting information to lessen the
+potential for identifying an individual. To determine the best strategy for
+anonymizing data to maximize usability, a researcher should consider
+future research questions and carefully consider a variable's
+analytic importance. It may also be useful to consult
+your institutional review board, statistical experts, or
+information professionals. Who have expertise dealing with
+sensitive or confidential data. [MUSIC]

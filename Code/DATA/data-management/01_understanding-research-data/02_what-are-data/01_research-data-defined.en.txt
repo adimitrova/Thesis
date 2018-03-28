@@ -1,0 +1,44 @@
+[MUSIC] To begin this course,
+we need to first discuss some basics. The most fundamental question for
+us is what are data? While this may seem like
+a straightforward question, numerous organizations have tackled it
+resulting in a range of definitions. It's important to note that data
+are different for various disciplines and different context. By the end of this lesson, you will be introduced to multiple
+types of data in an array of contexts. Data come in many forms from numeric and textual data to biological samples and
+physical collections. You will also be able to make
+the distinction between research data and other associated researcher materials. Some of which may be
+required alongside the data to understand the data themselves. And finally, and this is probably one of the most
+important concepts in the entire course. You will understand data in the context
+of the research data life cycle. To understand data management, is to
+understand data in all of its constructs. From project planning, through the
+collection of data to archiving that data as a research output after
+the project period has ended. First, let's take a look at
+how others have defined data. The National Institutes of Health, or NIH,
+define data as “recorded factual material commonly accepted in
+the scientific community as necessary to validate
+research findings.” Key concepts here include recorded and accessible data that others may look
+at to validate a studies findings. The National Science Foundation or
+NSF considers data to be something, determined by the community of interest
+through the process of peer review and project management. NSF’s definition points out the data are
+essential to the research community and not just to individual researchers or
+research teams. NSF also offers some examples of data that make the rather abstract
+definition easier to understand. As we know, examples are always useful. The NSF list includes data, publications, samples, physical collections,
+software, and models. It's interesting that NSF includes
+data as an example of data, but the point here is there are many types
+of data beyond quantitative datasets. The National Endowment for
+the Humanities, or NEH, also offers examples of data that
+includes citations, software code, algorithms, digital tools,
+documentation, databases, geospatial coordinates,
+reports and articles. It is interesting to note that NEH
+includes a wider array of data types than we see from NSF or NIH. Any of these data types NEH
+defines as humanities data, or “materials generated or collected during
+the course of conducting research.” So what are some key concepts
+in these definitions? For NIH and NSF, the research
+community establishes definitions of data that involve validity and
+presume data sharing among the community. When you look at the examples provided
+by any of these organizations, you can see that data come in
+quite a significant variety of forms, almost to the point of being nebulous. What is important to understand here is that data are products of research
+that are heterogeneous across and contextualized within
+the academic disciplines. So to reiterate,
+data should be valid, shared, and are heterogeneous, and contextualized
+within research communities. [MUSIC]

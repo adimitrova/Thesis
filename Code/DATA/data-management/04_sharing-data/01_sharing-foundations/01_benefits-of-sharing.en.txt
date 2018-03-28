@@ -1,0 +1,68 @@
+[MUSIC] Thus far, we have touched on FINRA
+expectations regarding data sharing as well as some of the data management
+practices that can help researchers share their data efficiently. This includes following
+metadata standards, creating documentation and
+following quality assurance protocols. Now, we will delve more deeply into
+the topic of sharing digital data. By the end of this lesson, you will be able to identify some
+of the benefits of sharing data. You will also be able to identify
+some of the challenges and obstacles to data sharing. And finally, you will recognize the
+importance and elements of data citations. Let's consider the key players
+when it comes to data sharing. First, there is the data creator or
+producer. This is the person or entity who is
+making the data available to share. There is also the person who reuses
+the data or the secondary data user. Finally, there is the data repository. This is where the data creator
+makes the data available. A data repository plays a key role
+in enhancing the discovery and reuse of the data. And ideally,
+creating a formal data citation. So what are some of
+the benefits of data sharing? As we discussed previously,
+funders are encouraging. And in some cases, requiring researcher
+to make their data available for sharing to support transparency and
+openness and maximize funders return on investment. The specific benefits of data sharing to
+the research community are numerous and discussed in much of the literature. We will now look at the top ten
+benefits of sharing research data. For more information on data sharing
+literature, check out the resources for this module. Number one, sharing data reinforces
+open scientific inquiry. Making data openly available
+decreases the potential for disagreements among researchers and
+allows scientific inquiry to progress unimpeded to the benefit
+of the entire research community. Number two,
+sharing data supports the verification and replication of original results. By making data available, data can be used
+to verify or replicate published results. Verification can bolster the original
+results or it can expose errors. Either outcome helps strengthen and protect the integrity of
+the scientific record. Number three, sharing data promotes
+new research and allows for the testing of new or alternative methods. While data creators may have
+one research question in mind, the same data may be reused to answer
+new and innovative research questions. Number four, sharing data encourages
+collaboration and multiple perspectives. Sharing data can begin conversations
+between researchers across disciplines. This could lead to cross-disciplinary
+collaborations or the exchange of knowledge across fields that could result
+in new innovative research approaches. Number five, sharing data provides
+important teaching resources. Data are extremely valuable
+pedagogical tools. Instructors may use data
+in analytical exercises or students may model their own work
+after high-quality data examples. Data can also provide students with
+firsthand experience in verifying results. Number six, sharing data reduces costs by avoiding
+duplicate data collection efforts. Avoiding unintended duplicate data
+collections saves both respondents and researchers valuable time and resources
+and freeze up researcher funds for other projects. Number seven, sharing data protects
+against faulty or fraudulent data. Over the past few years, there have been multiple stories in
+the news about misconduct in research. Sharing data promotes transparency and
+accountability, which lessens the potential for purposeful
+falsification or distortion of data. It also allows reusers to
+detect unintentional errors. And finally, the expectation that
+others may be verifying data should encourage greater
+care in original analyses. Number eight,
+sharing data enhances the visibility and overall impact of research projects. Making research data available
+within a data repository can increase the visibility of researched
+products and increase the impact of a project by encouraging
+secondary analysis of the data. Scholars have also found a significant
+association between publishing data and increased citation rates. In the end, sharing data does not only
+benefit the broader research community, but can also produce potential
+career benefits for researchers. Number nine, sharing data
+preserves data for future use. If a researcher makes their data available
+for sharing within a data repository, then they can be sure that
+the data will be available and understandable for the long-term for
+their own and others use. Number ten, sharing data helps
+the broader community and individual researchers do better research. By sharing data, researchers
+support both their own research and the broader research community resulting
+in science that is more accurate, more open, more knowledgeable and
+has more resources at its disposal. [MUSIC]

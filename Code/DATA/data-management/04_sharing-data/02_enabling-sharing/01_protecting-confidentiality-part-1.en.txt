@@ -1,0 +1,69 @@
+[MUSIC] In this lesson, we're going to further
+examine some of the data sharing challenges that we have briefly touched
+upon and discuss some strategies for overcoming these challenges. By the end of this lesson, we'll understand what is confidential
+information, be aware of strategies for anonymizing data, understand how data
+ownership can affect data sharing, be aware of the types of access
+restrictions that may be placed on data, and know how to apply a standard license
+to data, to encourage sharing and reuse. When collecting data that
+deal with human subjects, researchers have an ethical requirement to
+protect the privacy of study participants. This involves protecting an individual's
+identity during the collection, handling, storage, and sharing of data. Often these ethical considerations
+are outlined in a researcher's application to their institutional review board,
+or IRB. There can be serious consequences of
+confidentiality is accidentally breached. These consequences can negatively
+effect a researcher's career. Negatively impact
+a research's institution, and may include hefty fines or
+even legal sanctions. Today, the news is full of horror stories of data breaches that may arise from
+careless data management practices. In order to avoid these
+situations a researcher needs to think carefully during
+the data management planning phase about what confidential
+information they may collect. If the data will be de-identified and
+how or if they will share the data at
+the conclusion of the research project? So what are the types of information
+that need to be protected? First there is Personally
+Identifiable Information, or PII. PII is defined as any
+representation of information that permits the identity of an individual
+to whom the information applies to be reasonably inferred by
+either direct or indirect means. Note the reference to either direct or
+indirect means. We will come back to
+this idea in a moment. Next, we have
+Protected Health Information or PHI. PHI is individually identifiable
+health information transmitted or maintained, in any form or
+medium, by a covered entity. And finally there is
+sensitive information. Which is information, that if disclosed
+there is a significant likelihood of psychological, social, emotional,
+physical or reputational harm. These definitions show the breadth of
+information that researchers need to actively protect when managing and
+potentially sharing data. Now let's look at three
+type of identifiers. As we mentioned above,
+there are both direct and indirect ways a person can be identified. Direct identifiers are those variables or information included within data that
+explicitly point to an individual or unit. These include, Social Security numbers,
+phone numbers, and names, and
+are often the easy ones to spot. The identifiers that can become more
+problematic are the indirect identifiers. These are variables that may make
+unique cases visible, particularly when combined with other individual
+attributes, such as race or income. Finally, we have geographic identifiers. Which may include indirect
+identifiers such as a Zip Code or direct identifiers such as
+a complete mailing address. Consider an example data set in which
+direct identifiers have been removed. The data set represents
+the population of US citizens, who have earned doctoral degrees in 1991. Variables include the major field
+of study, race, sex and geographic region of the academic institution
+in which the degree was earned. Without direct identifiers such as name,
+phone number, mailing address,
+Social Security Number, and other information that link directly
+to the identity of the individual it would seem that it would be impossible
+to distinguish any given individual represented in this data set which
+includes over 25,000 people. Let's take a closer look at these data. If we were to take just the people
+who earned their doctoral degrees in the science and engineering fields, we are
+left with just over 14,000 individuals. Of those individuals,
+2,119 received their degrees in the physical sciences
+1,707 of which are male. Of that group,
+only 20 reported their race as black. Having quickly gone from over
+25,000 people to just 20, how easy do you think it would be to
+figure out who those 20 people are? Well, only eight of them were astronomy
+majors it wouldn't take much more information to identify at
+least one of these individuals. If we knew where those
+degrees were granted, say in New York,
+we would likely know who that person is. This example demonstrates that
+protecting confidentiality requires careful consideration and special
+handling of not only direct identifiers, but also indirect identifiers. [MUSIC]
