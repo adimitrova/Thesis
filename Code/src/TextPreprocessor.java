@@ -1,19 +1,13 @@
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
- * Class to preprocess data: 
+ * Class to pre-process data: 
  * Data is .txt and .srt files
  * Get all the data and separate it into sentences. Each sentence on a new line
  * Keep commas as some specific patterns will be looking for comma separated values
@@ -23,20 +17,21 @@ import java.util.regex.Pattern;
 public class TextPreprocessor {
 	
 	public static void main(String[] args) {
-		String directoryPath = "C:\\Users\\ani\\Desktop\\Thesis\\PROCESSED\\01_understanding-research-data";
+		String directoryPath = "C:\\Users\\ani\\Desktop\\Thesis\\PROCESSED\\";
 		File root = new File(directoryPath);
-		File oneFile =  new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en.txt_ONELINE.txt");
+		File ONELineFile =  new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en_ONELINE.txt");
+		File RawFile = new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en.txt");
 		File[] filelist = root.listFiles();
 		
 		// Please enter (0), (1) or (2) for NO, INITIAL or FULL processing with method showFiles(FILES, OPTION);
-		// showFiles(filelist,2); // also calls the procRawFile() method to make the raw data into one whole text
-		// readFile(oneFile);
-
-		System.out.println(getDirPath(oneFile,0));
-		System.out.println(getDirPath(oneFile,1));
+		showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
+		showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
+		// readFile(ONELineFile);
+		//procRawFile(RawFile);
 		
-		SplitSentences(oneFile);
-		System.out.println("\n");
+		getFileList().toString();
+		
+		//SplitSentences(ONELineFile);
 	}
 
 
@@ -45,7 +40,7 @@ public class TextPreprocessor {
 	// ---------------- CLASS FIELDS ----------------
 	String directoryPath;
 	private File root;
-	private File[] filelist;	
+	private static File[] filelist;	
 	
 	// ------ CONSTRUCTOR ----------
 	public TextPreprocessor(String rootPath) {
@@ -103,7 +98,7 @@ public class TextPreprocessor {
 	public File getRootFile() { return root; }
 	
 	// get the curr root file
-	public File[] getFileList() { return filelist; }
+	public static File[] getFileList() { return filelist; }
 	
 	// clear the list of files
 	public boolean clearFileList() {
@@ -121,7 +116,7 @@ public class TextPreprocessor {
 	 * 0 for no processing, just file listing
 	 * 1 for initial processing
 	 * 2 for full processing
-	 * Calls the initial pocessing method procRawFile(File fileToRead) for every TXT file
+	 * Calls the initial processing method procRawFile(File fileToRead) for every TXT file
 	 * 
 	 */
 	private static void showFiles(File[] files, int optionIn) {
@@ -167,7 +162,7 @@ public class TextPreprocessor {
 			
 		case 2:
 			// ----- OPTION 2: Perform all processing that's possible -----
-			
+						
 			for(File curFile : files) {
 				if(curFile.isDirectory()) {
 					System.out.println("DIR: \t" + curFile.getName());
@@ -178,8 +173,7 @@ public class TextPreprocessor {
 				} else if(curFile.isFile()) {
 					System.out.println("\t\t" + curFile.getName());
 					if(curFile.getName().endsWith("txt")) {
-						// File processing methods here
-						procRawFile(curFile);
+						// File processing methods here;
 						SplitSentences(curFile);
 					}
 				}
@@ -195,11 +189,16 @@ public class TextPreprocessor {
 
 	
 	
+	/**
+	 * Gets the file and removes new lines at random places
+	 * makes all the text into one line text for the next step of the pre-processing
+	 * @WORKS
+	 * @IMPORTANT Overrides the original file. MAKE A BACK-UP of the data!!!
+	 * @param fileToRead
+	 */
 	private static void procRawFile(File fileToRead) {
 		//BufferedReader reader = new BufferedReader(new FileReader(curFile));
 		Scanner fileReaded;
-		String[] SENTENCE = new String[50]; 
-		ArrayList<String> sentBySent = new ArrayList<String>();
 		ArrayList<String> sentenceList = new ArrayList<String>();
 		
 		// @ WORKS
@@ -228,7 +227,10 @@ public class TextPreprocessor {
 			 *  process file into one single big sentence and save to a file
 			 *  SAVE TO FILE (Uncomment when ready)
 			 */
-			PrintWriter writerNoLines = new PrintWriter("C:\\Users\\ani\\Desktop\\Thesis\\PROCESSED\\"+fileToRead.getName()+"_ONELINE.txt", "UTF-8");
+			String pathWithNameAndExt = fileToRead.getPath();
+			//String pathNoExt = getDirPath(fileToRead,0).concat("_ONELINE.txt");
+			
+			PrintWriter writerNoLines = new PrintWriter(pathWithNameAndExt, "UTF-8");
 			writerNoLines.println(BigSentenceNoLines);
 			writerNoLines.close();
 		} catch (FileNotFoundException | UnsupportedEncodingException e) {
@@ -238,8 +240,8 @@ public class TextPreprocessor {
 	
 	
 	/**
-	 * @WORKS
 	 * Splits the whole text into sentences and saves it in the original folder with _SENTbySENT.txt extension
+	 * @WORKS
 	 * @param fileToRead
 	 */
 	private static void SplitSentences(File fileToRead) {
@@ -297,15 +299,7 @@ public class TextPreprocessor {
 	}
 
 
-	private void curFile() {
-		for(File curFile : filelist) {
-			if(curFile.isDirectory()) {
-				System.out.println("Dir: \t" + curFile.getName());
-			} else if(curFile.isFile()) {
-				System.out.println("File: \t" + curFile.getName());
-			}
-		}
-	}
+
 	
 	
 	// overriding the toString() method for the resulting file list ONLY, not for path or anything else
@@ -317,13 +311,17 @@ public class TextPreprocessor {
 		if(filelist.length == 0) {
 			finaloutp = " NO FILES! Update the file list with .updateFileList()";
 		} else {
-			for (int i = 0; i < filelist.length; i++) {
-				if (filelist[i].isDirectory()) {
-					finaloutp += "\nDir: " + filelist[i].getName();
-				} else if (filelist[i].isFile()) {
-					finaloutp += "\nFile: " + filelist[i].getName();
+			for(File curFile : filelist) {
+				if(curFile.isDirectory()) {
+					boolean isEmpty = curFile.listFiles().equals(null);
+					finaloutp += "\nDir: " + curFile.getName();
+					if(!(isEmpty == true)) {
+						showFiles(curFile.listFiles(), 0);
+					}
+				} else if(curFile.isFile()) {
+					finaloutp += "\nFile: " + curFile.getName();
 				}
-			} 
+			}
 		}
 		return start + finaloutp + " >";
 	}
