@@ -34,7 +34,7 @@ public class MainAppAllCode {
 			
 		case 2:
 			TextPreprocessor processor = new TextPreprocessor(path);
-			System.out.println(processor.getFileList());
+			//System.out.println(processor.getFileList());
 			System.out.println(processor.getDirPath());
 			
 		default:
