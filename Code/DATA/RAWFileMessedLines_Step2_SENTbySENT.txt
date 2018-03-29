@@ -1,0 +1,32 @@
+Let's look at different types of data
+Probably what most of us think aboutwhen we use the term data is numeric or tabular data, what researchers mightrefer to as quantitative data
+And then there are other types
+Samples such as DNA orblood samples, physical collections, including plant specimens,software programs and code, databases, algorithms, model, and geodatabases
+Obviously, these are not allthe types of data out there
+Can you think of other examples
+What types have you encountered
+Please share them in the forum
+There are other research products thatneed to be considered alongside data in order for the data to be meaningful
+These include questionnaires, code books,and descriptions of methodologies
+Jillian Wallis, Elizabeth Rolando, and Christine Borgman describethis as background data
+Background data provides contextualinformation important in the analysis of the primary foregrounddata collected for analysis
+For example, what the temperature wasat the time a sensor reading is taken may be critical to understandingvariances in data a sensor collected
+And then there are research productsbuilt on the data that are essential for secondary analysis or meta-analysis andfor content dissemination
+These include reports, conference posters,articles, white papers, and books
+And we should include websites and blogs
+Another essential concept indata management is metadata
+This is a term that you will hearme refer to throughout this course
+Metadata is often definedas data about data
+This, of course, is a basic and circulardefinition that may not help us too much
+More specifically, metadata isstructured information that describes, explains, locates, orotherwise represents something else
+For our interest in this course,that something else is, of course, our target research data
+Metadata makes it easier to retrieve,use or manage an information source
+Data are nothing without metadata,especially digital data
+One cannot search for, identify, orinterpret data without robust metadata
+For each dataset, we need to knowat minimum, who created the data, when the data were created orpublished, and a title or descriptive nameused to refer to the dataset
+In this digital landscape,we also need a unique and persistent identifier forthe data so that we can locate it, even if the data are moved toa different location on the web
+Beyond these metadata elements,we can increase our ability to find and identify data if we haveinformation about these, along with the other 11 metadata elements that makeup the Dublin Core Metadata Element Set
+Dublin Core allows us to find andidentify data
+But to be able to interpret anduse data as they were intended, we also need to know quite a bit ofother information about the data
+The Data Documentation Initiative, or DDI, developed a metadata schemespecifically for this purpose
+Along with basic Dublin Core Elements, DDI prescribes additionalmetadata elements that provide specific informationabout data collection processes, variable-level descriptions,and methodologies.

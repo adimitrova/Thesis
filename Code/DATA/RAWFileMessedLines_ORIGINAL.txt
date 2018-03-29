@@ -1,4 +1,4 @@
-[MUSIC] Let's look at different types of data. Probably what most of us think about
+Let's look at different types of data. Probably what most of us think about
 when we use the term data is numeric or tabular data, what researchers might
 refer to as quantitative data. And then there are other types. Samples such as DNA or
 blood samples, physical collections, including plant specimens,
@@ -39,4 +39,4 @@ other information about the data. The Data Documentation Initiative, or DDI, dev
 specifically for this purpose. Along with basic Dublin Core Elements, DDI prescribes additional
 metadata elements that provide specific information
 about data collection processes, variable-level descriptions,
-and methodologies. [MUSIC]
+and methodologies.
