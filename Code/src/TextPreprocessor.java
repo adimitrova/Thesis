@@ -29,8 +29,6 @@ public class TextPreprocessor {
 		// readFile(ONELineFile);
 		//procRawFile(RawFile);
 		
-		getFileList().toString();
-		
 		//SplitSentences(ONELineFile);
 	}
 
