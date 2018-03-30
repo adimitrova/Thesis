@@ -1,7 +1,5 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
+import java.nio.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -24,17 +22,18 @@ public class TextPreprocessor {
 		File[] filelist = root.listFiles();
 		
 		// Please enter (0), (1) or (2) for NO, INITIAL or FULL processing with method showFiles(FILES, OPTION);
-		showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
-		showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
+		//showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
+		//showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
 		// readFile(ONELineFile);
 		//procRawFile(RawFile);
 		
 		//SplitSentences(ONELineFile);
+		
+		clearEmptyFiles(filelist);
 	}
 
 
 
-	
 	// ---------------- CLASS FIELDS ----------------
 	String directoryPath;
 	private File root;
@@ -263,6 +262,7 @@ public class TextPreprocessor {
 			while(readFile.hasNext()) {
 				text = readFile.nextLine();
 			}
+			readFile.close();
 			/** replace the content of the text variable with sentences each on a new line by looking at the 
 			 * text content and looking for a pattern and when it finds the end of sentence, replaces it with new line
 			 * that is saved back to the text String
@@ -283,7 +283,7 @@ public class TextPreprocessor {
 				OFSentBySent.println(sentence);
 			} 
 			OFSentBySent.close();
-			
+			readText.close();
 			// END OF SENTENCE PUNCTUATION PPATTERN 	(?>[.?!])(\\s)
 			// WHOLE SENTENCE		[\"']?[A-Z][^.?!]+((?![.?!]['\"]?\\s[\"']?[A-Z][^.?!]).)+[.?!'\"]+
 			
@@ -297,7 +297,42 @@ public class TextPreprocessor {
 	}
 
 
-
+	private static void clearEmptyFiles(File[] filelistIn) {
+		File[] listOfFiles = filelistIn;
+		//int deletedFiles = 0;
+		float OneKB = 1024.0f;
+		
+		for(File curFile : listOfFiles) {
+			if(curFile.isDirectory()) {
+				boolean isEmpty = curFile.listFiles().equals(null);
+				if(!(isEmpty == true)) {
+					clearEmptyFiles(curFile.listFiles());
+				}
+			} else if(curFile.isFile()) {
+				// if file is 1KB or smaller, it is probably empty => delete it
+				long fileSizeKB = curFile.length()/1024;
+				if(fileSizeKB <= 1) {
+					int fileLines = 0;
+					try {
+						Scanner curFileReader;
+						curFileReader = new Scanner(curFile);
+						while(curFileReader.hasNextLine()) {
+							fileLines++;
+						}
+						curFileReader.close();
+					} catch (FileNotFoundException e) {
+						e.printStackTrace();
+					}
+					if(fileLines <= 1) {
+						System.out.println("DELETING FILE:\t " + curFile.getName() + "\t | SIZE (KB) = " + fileSizeKB);	
+						//curFile.delete();
+						//deletedFiles++;						
+					}
+					System.out.println(fileLines);
+				}
+			}
+		}
+	}
 	
 	
 	// overriding the toString() method for the resulting file list ONLY, not for path or anything else
