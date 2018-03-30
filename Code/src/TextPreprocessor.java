@@ -1,4 +1,3 @@
-import java.nio.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,15 +20,13 @@ public class TextPreprocessor {
 		File RawFile = new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en.txt");
 		File[] filelist = root.listFiles();
 		
+		/*procRawFile(RawFile);
+		SplitSentences(ONELineFile);*/
+		
 		// Please enter (0), (1) or (2) for NO, INITIAL or FULL processing with method showFiles(FILES, OPTION);
-		//showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
-		//showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
-		// readFile(ONELineFile);
-		//procRawFile(RawFile);
-		
-		//SplitSentences(ONELineFile);
-		
-		clearEmptyFiles(filelist);
+		showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
+		showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
+		delUselessFiles(filelist);
 	}
 
 
@@ -96,12 +93,6 @@ public class TextPreprocessor {
 	
 	// get the curr root file
 	public static File[] getFileList() { return filelist; }
-	
-	// clear the list of files
-	public boolean clearFileList() {
-		// TODO: implement
-		return false;
-	}
 	
 	// ----------- CLASS SPECIFIC METHODS ------------
 	
@@ -184,7 +175,6 @@ public class TextPreprocessor {
 		}
 	}
 
-	
 	
 	/**
 	 * Gets the file and removes new lines at random places
@@ -289,7 +279,6 @@ public class TextPreprocessor {
 			
 			// System.out.println(sentenceList.size());
 		} catch (FileNotFoundException | UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -297,38 +286,38 @@ public class TextPreprocessor {
 	}
 
 
-	private static void clearEmptyFiles(File[] filelistIn) {
+	private static void delUselessFiles(File[] filelistIn) {
 		File[] listOfFiles = filelistIn;
-		//int deletedFiles = 0;
-		float OneKB = 1024.0f;
+		//float OneKB = 1024.0f;
 		
 		for(File curFile : listOfFiles) {
 			if(curFile.isDirectory()) {
 				boolean isEmpty = curFile.listFiles().equals(null);
 				if(!(isEmpty == true)) {
-					clearEmptyFiles(curFile.listFiles());
+					delUselessFiles(curFile.listFiles());
 				}
 			} else if(curFile.isFile()) {
 				// if file is 1KB or smaller, it is probably empty => delete it
-				long fileSizeKB = curFile.length()/1024;
-				if(fileSizeKB <= 1) {
-					int fileLines = 0;
-					try {
-						Scanner curFileReader;
-						curFileReader = new Scanner(curFile);
-						while(curFileReader.hasNextLine()) {
-							fileLines++;
-						}
-						curFileReader.close();
-					} catch (FileNotFoundException e) {
-						e.printStackTrace();
-					}
-					if(fileLines <= 1) {
+				double fileSizeBytes = (double)curFile.length();
+				double fileSizeKB = (double)curFile.length()/1024;
+				
+				// ------ delete all files except the processed to sentences and the SRT files -------
+				String endOnSENTbySENT = "_SENTbySENT.txt";
+				String endOnSRT = ".srt";
+				if(!(curFile.getName().endsWith(endOnSENTbySENT))) {
+					if(!curFile.getName().endsWith(endOnSRT)) {
 						System.out.println("DELETING FILE:\t " + curFile.getName() + "\t | SIZE (KB) = " + fileSizeKB);	
-						//curFile.delete();
-						//deletedFiles++;						
+						curFile.delete();
+					}					
+				}
+				
+				// ------ check if file smaller than 1KB, if yes, check if files has more than 1 line of text, if not, delete --------
+				// 0.01 (KB)
+				if(curFile.exists()) {
+					if(fileSizeKB <= 0.01) { 
+						System.out.println("DELETING EMPTY FILE:\t " + curFile.getName() + "\t | SIZE = " + fileSizeKB + " KB | " + fileSizeBytes + " Bytes");
+						curFile.delete();
 					}
-					System.out.println(fileLines);
 				}
 			}
 		}
