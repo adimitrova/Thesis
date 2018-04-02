@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Class to pre-process data: 
@@ -10,23 +11,63 @@ import java.util.Scanner;
  * Keep commas as some specific patterns will be looking for comma separated values
  * Recursive solution to go over all files in a folder and sub-folders
  */
-
-public class TextPreprocessor {
-	
-	public static void main(String[] args) {
-		String directoryPath = "C:\\Users\\ani\\Desktop\\Thesis\\PROCESSED\\";
+public class TextPreprocessor extends Thread {
+	public static void main(String[] args) throws IOException, InterruptedException {
+		
+		//String directoryPath = "C:\\Users\\ani\\Desktop\\Thesis\\PROCESSED\\";
+		String directoryPath = "C:\\Users\\ani\\Desktop\\Course data Thesis\\PROCESSED\\02_operating-system-kernels";
 		File root = new File(directoryPath);
 		File ONELineFile =  new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en_ONELINE.txt");
 		File RawFile = new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en.txt");
 		File[] filelist = root.listFiles();
 		
+		// ------------- RUN FIRST ----------------
+		/*showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
+		showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
+		
+		filelist = root.listFiles();
+		ConvTXTtoWORD(filelist);*/
+		
+		// ------------- RUN SECOND ---------------
+		//delUselessFiles(filelist);
+		
+		/*TextPreprocessor thread1 = new TextPreprocessor(directoryPath);
+		TextPreprocessor thread2;
+        thread1.start();
+        boolean thread1IsAlive = true;
+        boolean thread2IsAlive = false;
+                
+        if(thread1IsAlive) {
+        	// ------------- RUN FIRST ----------------
+
+        	System.out.println("--------- Executing Thread 1 ---------");
+    		// Please enter (0), (1) or (2) for NO, INITIAL or FULL processing with method showFiles(FILES, OPTION);
+    		showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
+    		showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
+    		
+    		filelist = root.listFiles();
+    		ConvTXTtoWORD(filelist);
+    		
+    		filelist = root.listFiles();
+    		thread1IsAlive = false;		// kill thread 1
+            System.out.println("Thread 1 is alive: " + thread1IsAlive);
+    		
+            thread2IsAlive = true;
+        } 
+        
+        if(thread2IsAlive) {
+        	// ------------- RUN SECOND ---------------
+        	System.out.println("\n--------- Executing Thread 2 ---------");
+        	thread2 = new TextPreprocessor(directoryPath);
+        	thread2.start();
+        	
+        	delUselessFiles(filelist);
+    		thread2IsAlive = false;
+    		System.out.println("Thread 2 is alive: " + thread2IsAlive);
+        }*/
+		
 		/*procRawFile(RawFile);
 		SplitSentences(ONELineFile);*/
-		
-		// Please enter (0), (1) or (2) for NO, INITIAL or FULL processing with method showFiles(FILES, OPTION);
-		showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
-		showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
-		delUselessFiles(filelist);
 	}
 
 
@@ -238,7 +279,6 @@ public class TextPreprocessor {
 		 * write each element of the ArrayList into a the file on a new line
 		 * Save and close the file
 		 */
-		List<String> sentenceList = new ArrayList<String>();
 		File inpFile = fileToRead;
 		String text = "";		// used to save first the whole single String from the file and then sentence by sentence
 		String pathNoExt = getDirPath(inpFile,0).concat("_SENTbySENT.txt");
@@ -266,18 +306,14 @@ public class TextPreprocessor {
 			 */
 			Scanner readText = new Scanner(text);
 			while(readText.hasNextLine()) {
-				sentenceList.add(readText.nextLine());
+				OFSentBySent.println("* " + readText.nextLine());
 			}
 			
-			for (String sentence : sentenceList) {
-				OFSentBySent.println(sentence);
-			} 
 			OFSentBySent.close();
 			readText.close();
 			// END OF SENTENCE PUNCTUATION PPATTERN 	(?>[.?!])(\\s)
 			// WHOLE SENTENCE		[\"']?[A-Z][^.?!]+((?![.?!]['\"]?\\s[\"']?[A-Z][^.?!]).)+[.?!'\"]+
 			
-			// System.out.println(sentenceList.size());
 		} catch (FileNotFoundException | UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
@@ -286,6 +322,33 @@ public class TextPreprocessor {
 	}
 
 
+	private static void ConvTXTtoWORD(File[] filelistIn) throws IOException {
+		for(File curFile : filelistIn) {
+			if(curFile.isDirectory()) {
+				boolean isEmpty = curFile.listFiles().equals(null);
+				if(!(isEmpty == true)) {
+					ConvTXTtoWORD(curFile.listFiles());
+				}
+			} else if(curFile.isFile()) {
+				boolean isTXT = curFile.getName().endsWith(".txt");
+				boolean isSentBySent = curFile.getName().endsWith("_SENTbySENT.txt");
+				System.out.println("Is TXT: " + isTXT + " Is SENTbySENT: " + isSentBySent + " | " + curFile.getName());
+				if(isTXT && isSentBySent) {
+					String OrigPathNOExt = curFile.getPath().substring(0, curFile.getPath().lastIndexOf('.'));
+					String convFileExt = OrigPathNOExt.concat(".rtf");
+					PrintWriter converted = new PrintWriter(convFileExt, "utf-8");
+					Scanner fileReader = new Scanner(curFile);
+					while(fileReader.hasNextLine()) {
+						System.out.println("CONVERTING: " + curFile.getName());
+						converted.println(fileReader.nextLine());
+					}
+					fileReader.close();
+					converted.close();
+				}
+			}
+		}
+	}
+	
 	private static void delUselessFiles(File[] filelistIn) {
 		File[] listOfFiles = filelistIn;
 		//float OneKB = 1024.0f;
@@ -306,8 +369,10 @@ public class TextPreprocessor {
 				String endOnSRT = ".srt";
 				if(!(curFile.getName().endsWith(endOnSENTbySENT))) {
 					if(!curFile.getName().endsWith(endOnSRT)) {
-						System.out.println("DELETING FILE:\t " + curFile.getName() + "\t | SIZE (KB) = " + fileSizeKB);	
-						curFile.delete();
+						if(!curFile.getName().endsWith(".rtf")) {
+							System.out.println("DELETING USELESS FILE:\t " + curFile.getName() + "\t | SIZE (KB) = " + fileSizeKB);	
+							curFile.delete();
+						}
 					}					
 				}
 				
