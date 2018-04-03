@@ -15,7 +15,7 @@ public class TextPreprocessor extends Thread {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
 		//String directoryPath = "C:\\Users\\ani\\Desktop\\Thesis\\PROCESSED\\";
-		String directoryPath = "C:\\Users\\ani\\Desktop\\Course data Thesis\\PROCESSED\\02_operating-system-kernels";
+		String directoryPath = "C:\\Users\\ani\\Desktop\\Course data Thesis\\PROCESSED\\Coursera Downloads new";
 		File root = new File(directoryPath);
 		File ONELineFile =  new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en_ONELINE.txt");
 		File RawFile = new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en.txt");
@@ -71,11 +71,11 @@ public class TextPreprocessor extends Thread {
 	}
 
 
-
 	// ---------------- CLASS FIELDS ----------------
 	String directoryPath;
 	private File root;
 	private static File[] filelist;	
+	static int lines;
 	
 	// ------ CONSTRUCTOR ----------
 	public TextPreprocessor(String rootPath) {
@@ -134,6 +134,7 @@ public class TextPreprocessor extends Thread {
 	
 	// get the curr root file
 	public static File[] getFileList() { return filelist; }
+	
 	
 	// ----------- CLASS SPECIFIC METHODS ------------
 	
