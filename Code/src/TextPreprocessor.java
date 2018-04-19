@@ -15,59 +15,27 @@ public class TextPreprocessor extends Thread {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
 		//String directoryPath = "C:\\Users\\ani\\Desktop\\Thesis\\PROCESSED\\";
-		String directoryPath = "C:\\Users\\ani\\Desktop\\Course data Thesis\\PROCESSED\\Coursera Downloads new";
+		String directoryPath = "C:\\Users\\ani\\Desktop\\Course data Thesis\\PROCESSED\\Coursera Downloads";
 		File root = new File(directoryPath);
-		File ONELineFile =  new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en_ONELINE.txt");
-		File RawFile = new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en.txt");
+		//File ONELineFile =  new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en_ONELINE.txt");
+		//File RawFile = new File("C:\\Users\\ani\\Desktop\\Thesis\\01_demonstrating-trustworthiness.en.txt");
 		File[] filelist = root.listFiles();
 		
 		// ------------- RUN FIRST ----------------
-		/*showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
+		// FILES ARE SAVED IN THE SAME FOLDER AS THE ORIGINAL FILES (so in the DirectoryPath path)
+		/*try {
+		showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
 		showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
 		
 		filelist = root.listFiles();
-		ConvTXTtoWORD(filelist);*/
+		ConvTXTtoWORD(filelist); 
+		} catch (NullPointerException e) {
+			System.out.println("NullPointer ERROR: Did you change the directory path?");
+		}*/
+		
 		
 		// ------------- RUN SECOND ---------------
-		//delUselessFiles(filelist);
-		
-		/*TextPreprocessor thread1 = new TextPreprocessor(directoryPath);
-		TextPreprocessor thread2;
-        thread1.start();
-        boolean thread1IsAlive = true;
-        boolean thread2IsAlive = false;
-                
-        if(thread1IsAlive) {
-        	// ------------- RUN FIRST ----------------
-
-        	System.out.println("--------- Executing Thread 1 ---------");
-    		// Please enter (0), (1) or (2) for NO, INITIAL or FULL processing with method showFiles(FILES, OPTION);
-    		showFiles(filelist,1); // first process raw file into one line text and override original file | IMPORTANT: Make data backup first!!!!
-    		showFiles(filelist,2); // Then grab each file and process it and make it sentence by sent. on a new line | Appends SENTbySENT.txt at the end
-    		
-    		filelist = root.listFiles();
-    		ConvTXTtoWORD(filelist);
-    		
-    		filelist = root.listFiles();
-    		thread1IsAlive = false;		// kill thread 1
-            System.out.println("Thread 1 is alive: " + thread1IsAlive);
-    		
-            thread2IsAlive = true;
-        } 
-        
-        if(thread2IsAlive) {
-        	// ------------- RUN SECOND ---------------
-        	System.out.println("\n--------- Executing Thread 2 ---------");
-        	thread2 = new TextPreprocessor(directoryPath);
-        	thread2.start();
-        	
-        	delUselessFiles(filelist);
-    		thread2IsAlive = false;
-    		System.out.println("Thread 2 is alive: " + thread2IsAlive);
-        }*/
-		
-		/*procRawFile(RawFile);
-		SplitSentences(ONELineFile);*/
+		delUselessFiles(filelist);
 	}
 
 
@@ -304,10 +272,12 @@ public class TextPreprocessor extends Thread {
 			/**
 			 * Once text is split to sentences on new lines, scans each line
 			 * and saves each line by line into the output file
+			 * each line starts with "---" so that it's easy to read
+			 * also all text is converted to lower case
 			 */
 			Scanner readText = new Scanner(text);
 			while(readText.hasNextLine()) {
-				OFSentBySent.println("* " + readText.nextLine());
+				OFSentBySent.println(readText.nextLine().toLowerCase());
 			}
 			
 			OFSentBySent.close();

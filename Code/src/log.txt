@@ -47078,4 +47078,5 @@
 * So now,especially when you have lots of CMG, that's why you can see the mathematics ofCMGs, way more complicated right away
 * In fact, if you have a dual spinnerconstant speed, even this time goes to 0, gets more simpler
 * But this is where we ended up last time.
+
 TOTAL lines: 42003 | TOTAL files: 563
