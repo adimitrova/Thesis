@@ -1,0 +1,248 @@
+music 
+in this first module, we introducing 
+objects studied in particle physics, 
+namely matter, forces spacetime 
+in this video, we will take 
+a quick tour elementary forces, 
+action subatomic level 
+watching this video, you 
+able to name forces 
+associated charges, to know 
+particles transmit forces, 
+know difference between real 
+virtual particles 
+here is a table comparing 
+elementary interactions 
+note vast differences between 
+respective strengths ranges 
+strong force acts between quarks 
+particles containing quarks 
+a large strength 
+a short range 
+is transmitted gluons 
+electromagnetic force concerns 
+particles carrying an electric charge, 
+a modest strength an infinite 
+range, is transmitted photons 
+weak force concerns 
+matter particles 
+a low strength 
+long distances 
+becomes comparable to electromagnetic 
+force short distances 
+is transmitted w z bosons 
+gravitational force is weaker 
+three acts particles 
+large mass 
+astronomic objects, 
+gravitational force dominates 
+evolution universe cosmological scales, 
+is however, 
+negligible subatomic scales 
+we dont know this force 
+acts scales 
+we dont know if is quantized 
+three forces 
+note also that strength 
+forces depends distance 
+equivalently momentum transfer 
+we will discuss this fact 
+forces separately distance 
+laws 
+forces quite different 
+so forces transmitted 
+exchange bosons spin 
+photon electromagnetic 
+interactions, w 
+z bosons weak forces 
+gluons strong force 
+bosons collectively 
+called gauge bosons 
+particles emit absorb a boson 
+if carry required charge 
+to emit a photon, 
+an electric charge is required 
+concept charge is 
+limited to electric charge 
+a particle must a nonzero weak 
+isospin to emit a w a z boson 
+a color charge 
+to emit a gluon 
+higgs boson is entry 
+in this table, a spin 
+role is to keep particles 
+moving speed light, 
+this applies to particles, 
+even to higgs boson 
+exceptions photons, 
+always move speed light, 
+however 
+confined to bound states 
+between quarks we will 
+discuss in module 
+so, transmission forces 
+via exchange particles work 
+to understand this, 
+we need to recall forces act in 
+classical quantum physics 
+classical physics deal 
+action forces 
+particles described mass points 
+position x 
+momentum p known certainty 
+motion is a smooth curve, 
+in space a function time, 
+we call a trajectory 
+is determined newtons law, 
+we know vector 
+sum forces acting, initial 
+conditions position velocity 
+action forces is continuous, 
+thus trajectory is a smooth curve 
+number particles is conserved, 
+mass points cannot disappear appear 
+field potential notions subordinate to 
+central ones force energy 
+we give here example 
+electric force 
+energy related to potential 
+shown in last equation 
+this description is wrong 
+all, 
+allows you to drive car 
+that validity is limited 
+to nonrelativistic velocities 
+distances, much larger 
+size an atom 
+to talk subatomic 
+systems high energies, 
+we need to go beyond classical physics 
+quantum mechanics radically 
+changes approach 
+particles fields described 
+a probability amplitude psi, is 
+a function position x time 
+t, is also called a wave function 
+square this amplitude rho, 
+must always positive definite 
+gives probability density to find 
+particle time in position x 
+this density is a probability 
+per unit volume 
+trajectory 
+exist small scales 
+multiple measurements position 
+a particle form a smooth curve 
+probability amplitude 
+probability 
+evolve starting initial state, 
+described schrdinger equation 
+particles interact potential, 
+action potential is continuous 
+however, origin 
+potential remains unexplained 
+even though action potential 
+is continuous implemented 
+a sequence pointlike 
+interactions in a pertubative approach 
+number particles is conserved, 
+since probability amplitudes 
+follow a continuity equation shown 
+bottom page 
+this law relates local probability 
+density rho to flux density j 
+if probability density 
+diminishes a certain place, 
+there must a divergent 
+flux place 
+so flux j is thus a 
+flux probability density 
+validity quantum mechanics is 
+limited to non relatively velocity, 
+since schrdinger equation 
+is covariant, 
+forms depends reference frame 
+to overcome this limitation, 
+we to use relativistic field theory 
+here, we going to introduce 
+language, concepts 
+results, 
+we will use in a formal way 
+evolution particles is described 
+a relativistic equation motion, 
+kleingordon equation, 
+is covariant contains 
+scalars lorentz transformations 
+number particles is 
+longer conserved 
+electromagnetic current density is 
+this current is analogous to 
+probability current, 
+is proportional to charge 
+e particle 
+this conservation means that 
+is electrical charge, 
+is locally conserved, 
+number particles 
+this allows to describe creation 
+charged particles in pairs 
+particleantiparticle 
+potential longer comes nowhere, 
+is generated 
+a second current density j 
+according to maxwells laws 
+fourpotential a is generated 
+current density j 
+means propagator 
+q 
+this quantity describes 
+probability amplitude 
+exchange a photon invariant 
+mass q between two currents 
+follow carefully may 
+noticed that there least three 
+unfamiliar notions, in formulae 
+that come relativistic field theory 
+dimensions quantities 
+seem to fit 
+in first equation, there is 
+a relation between a quantity 
+is an energy, a momentum 
+another quantity is a mass, 
+different 
+units in international system 
+we familiar 
+even worse in second equation, 
+since psi dimension, 
+first time dimension 
+s, 
+second m, 
+third kg 
+solution to this apparent 
+inconsistency is use natural units 
+secondly, notation j 
+p mean 
+this is notation used fourvectors, 
+implicit summation greek 
+indices in scalar products 
+finally, last equation 
+requires photon nonzero mass 
+real photon course zero mass 
+all, moves speed light 
+solution is notion 
+virtual particles, 
+is central to action 
+forces in field theory 
+virtual particles 
+properties real ones, 
+except that 
+a different mass, 
+even negative 
+imaginary 
+we will introduce three notions in 
+videos a, b, c, one one 
+in next video, 
+we will explain probability 
+a reaction between particles to happen 
+is expressed cross section 
+music 

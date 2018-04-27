@@ -1,0 +1,318 @@
+1
+00:00:00,012 --> 00:00:09,952
+[music] There's a visual way to gain some
+insight into these anti-differentiation
+
+2
+00:00:09,952 --> 00:00:14,019
+problems.
+A visual method goes by the name of slope
+
+3
+00:00:14,019 --> 00:00:17,174
+fields.
+So, what's a slope field?
+
+4
+00:00:17,175 --> 00:00:20,376
+The idea is that I start with some
+function.
+
+5
+00:00:20,376 --> 00:00:23,954
+Like, here's an example of function x
+squared minus x.
+
+6
+00:00:23,954 --> 00:00:29,414
+But instead of just graphing the function,
+like I normally do here, I'm graphing the
+
+7
+00:00:29,414 --> 00:00:31,848
+function's values.
+I make a graph.
+
+8
+00:00:31,848 --> 00:00:37,007
+But the thing that I'm graphing is little
+tiny line segments of that given slope,
+
+9
+00:00:37,007 --> 00:00:40,594
+right?
+So, instead of plotting a value at some
+
+10
+00:00:40,594 --> 00:00:45,264
+height, I draw little tiny line segments
+with that slope.
+
+11
+00:00:45,264 --> 00:00:51,445
+Now, you can see in this example that if
+you plug in 0 or 1 into this function, the
+
+12
+00:00:51,445 --> 00:00:55,812
+output 0.
+And in this slope field, if you look at a
+
+13
+00:00:55,812 --> 00:01:03,138
+point whose x value is 0 or whose x value
+is 1, there I'm plotting just horizontal
+
+14
+00:01:03,138 --> 00:01:08,317
+lines, lines of slope zero.
+Over here, I've got very high slope, and
+
+15
+00:01:08,317 --> 00:01:13,336
+over here I've got very high slope.
+And that just reflects the fact that this
+
+16
+00:01:13,336 --> 00:01:18,059
+function's value is very high when x is
+negative and when x is positive.
+
+17
+00:01:18,060 --> 00:01:22,879
+And in between here, I've got just a
+little tiny region where the lines are
+
+18
+00:01:22,879 --> 00:01:26,780
+pointing down, right?
+Where the slope of these little line
+
+19
+00:01:26,780 --> 00:01:30,420
+segments is negative.
+And of course, that's because there's a
+
+20
+00:01:30,420 --> 00:01:33,805
+little tiny region here where this
+function's value is negative.
+
+21
+00:01:33,806 --> 00:01:40,320
+Well, let's look at a specific example.
+With this specific example, function F of
+
+22
+00:01:40,320 --> 00:01:45,141
+x equals x times cosine x.
+Now, I can draw the slope field for this
+
+23
+00:01:45,141 --> 00:01:48,957
+example.
+Well, in that case, here's the slope field
+
+24
+00:01:48,957 --> 00:01:54,780
+that I get.
+Imagine that I have an anti-derivative, a
+
+25
+00:01:54,780 --> 00:01:59,621
+function f, whose derivative was F.
+That is, suppose I had some function, f,
+
+26
+00:01:59,621 --> 00:02:03,018
+whose derivative was F.
+The slope field is drawn so that all these
+
+27
+00:02:03,018 --> 00:02:08,760
+little line segments have slope equal to
+the value of F, so I could use this slope
+
+28
+00:02:08,760 --> 00:02:13,624
+field to try to draw a picture, the graph
+of my function f, right?
+
+29
+00:02:13,624 --> 00:02:16,150
+Let's suppose that my function maybe
+starts here.
+
+30
+00:02:16,150 --> 00:02:23,222
+And then, I could try to follow the slope
+field along and try to use the information
+
+31
+00:02:23,222 --> 00:02:29,774
+in the, in the slope field to try to draw
+a picture of what my function, f, must
+
+32
+00:02:29,774 --> 00:02:32,910
+look like.
+So, these slope fields let you see the
+
+33
+00:02:32,910 --> 00:02:36,721
+anti-derivative, right?
+If you follow the slope field, you're
+
+34
+00:02:36,721 --> 00:02:40,847
+tracing out a function whose derivative is
+given by the slope field.
+
+35
+00:02:40,848 --> 00:02:46,356
+Now, we can find this anti-derivative, but
+we're trying to anti-differentiate x
+
+36
+00:02:46,356 --> 00:02:49,480
+cosine x.
+Well, our first guess might be x sine x.
+
+37
+00:02:49,480 --> 00:02:53,995
+I mean, that's a reasonable guess because
+differentiating sine will give me the
+
+38
+00:02:53,995 --> 00:02:58,445
+cosine and it, but what happens if I
+actually differentiate this product?
+
+39
+00:02:58,445 --> 00:03:04,127
+Well, that's the sort of thing that I do
+with the product rule which is x times the
+
+40
+00:03:04,127 --> 00:03:07,626
+derivative, which is cosine.
+So, that's looking good.
+
+41
+00:03:07,627 --> 00:03:14,042
+But it's plus the derivative of the first,
+which is 1 times the second, which is sine
+
+42
+00:03:14,042 --> 00:03:16,585
+x.
+So, the anti-derivative of x cosine x
+
+43
+00:03:16,585 --> 00:03:21,012
+isn't just x sine x because I've got this
+pesky additional sine x term.
+
+44
+00:03:21,012 --> 00:03:25,141
+But I also know that the derivative of
+cosine is minus sine.
+
+45
+00:03:25,141 --> 00:03:34,408
+So, if I add these things together, right?
+If I add them together, what's the
+
+46
+00:03:34,408 --> 00:03:39,636
+derivative of x sine x plus cosine x?
+Well, it's these two things added
+
+47
+00:03:39,636 --> 00:03:44,040
+together.
+But that's x cosine x, which is good, plus
+
+48
+00:03:44,040 --> 00:03:47,892
+sine x minus sine x.
+So, it's just x cosine x.
+
+49
+00:03:47,893 --> 00:03:53,750
+So that means the general anti-derivative
+of x cosine x is x sine x plus cosine x
+
+50
+00:03:53,750 --> 00:03:57,695
+plus some constant c.
+And yeah, we can see this in the graph.
+
+51
+00:03:57,696 --> 00:04:01,296
+So here, I've graphed x sine x plus cosine
+x.
+
+52
+00:04:01,296 --> 00:04:05,387
+And you can see that it's really moving in
+the direction of the slope field, which
+
+53
+00:04:05,387 --> 00:04:08,284
+makes sense.
+Because the slope field is coming from x
+
+54
+00:04:08,284 --> 00:04:11,272
+cosine x, which is the derivative of this
+thing.
+
+55
+00:04:11,272 --> 00:04:16,226
+And, you know, I drew the slope field by
+drawing little tiny line segments whose
+
+56
+00:04:16,226 --> 00:04:20,282
+slope is x cosine x.
+So, since this thing differentiates to x
+
+57
+00:04:20,282 --> 00:04:24,480
+cosine x, this thing is really moving
+along the slope field.
+
+58
+00:04:24,480 --> 00:04:29,088
+The slope field picture also gives you
+some insight into how the plus c really
+
+59
+00:04:29,088 --> 00:04:31,366
+works.
+What is the plus c really accomplishing,
+
+60
+00:04:31,366 --> 00:04:34,607
+right?
+It's moving the graph up and down.
+
+61
+00:04:34,608 --> 00:04:39,828
+And if you start with, you know, say x
+sine x plus cosine x, and then you slide
+
+62
+00:04:39,828 --> 00:04:44,702
+that graph up and down, it's still
+following the slope field, right?
+
+63
+00:04:44,703 --> 00:04:50,194
+It's still an anti-derivative for x cosine
+x.
+
+64
+00:04:50,195 --> 00:04:56,016
+.

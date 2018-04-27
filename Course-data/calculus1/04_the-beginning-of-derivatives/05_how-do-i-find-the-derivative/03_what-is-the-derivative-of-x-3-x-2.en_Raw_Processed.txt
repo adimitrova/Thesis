@@ -1,0 +1,128 @@
+music 
+youve heard the, ask 
+country you, you 
+country rule 
+chiastic rules limits 
+limits sum limits 
+thing is true derivatives 
+lets go to board 
+heres rule derivatives 
+derivative f g 
+is derivative f derivative 
+g 
+in short, derivative sum is 
+sum derivatives 
+this make sense well, think 
+back to derivative is measuring 
+derivative is measuring changing 
+input affects output 
+in this case, i want to know changing 
+x affects sum f x g x 
+well, sum is affected sum 
+effects 
+sum derivative f 
+derivative g 
+let see this in a specific case 
+heres a specific case 
+function fx x x 
+lets differentiate this 
+im going to calculate d dx 
+xx 
+this is a derivative a sum, 
+is sum derivatives 
+we to figure whats 
+derivative x whats 
+derivative x 
+thats power law 
+derivative x is x, 
+derivative x is x 
+theres ddxs 
+weve calculated derivative 
+derivative xxx 
+we know this, we figure 
+derivative is positive 
+negative 
+so, derivative xx i want 
+to know thats positive 
+negative, values x make that 
+bigger , values x make 
+that less 
+one approach to thinking this is to 
+factor xx 
+i write that xx 
+i factor like this i 
+figure sign this figuring 
+sign two terms 
+separately 
+visualize this a direct whole number 
+line 
+so x, heres a number line 
+x is positive is bigger 
+negative x is less 
+thats complicated 
+well look x 
+well, x, i draw a number line 
+that 
+exciting point is 
+x is less , x is 
+negative 
+x is bigger s, 
+x 
+is positive 
+now, i really dont care x x 
+separately 
+i want to put together right 
+i want to know product is 
+positive negative 
+so, i write product x x 
+make a new number line here 
+ill record points 
+i think happens 
+x is less x is 
+negative x is negative 
+so product is a negative a 
+negative, is positive 
+x is between , x is 
+negative x is positive a 
+negative times a positive number is 
+negative 
+finally, x is bigger , 
+well x is positive also x is 
+positive 
+so is positive 
+so, here this number line, ive 
+recorded information x 
+x is positive negative 
+we use this information to say 
+something graph 
+heres graph function xx 
+goes up, up, thats exactly 
+youd expect derivative, 
+right we calculated that if 
+youre standing to left s, 
+derivative positive, 
+indeed functions going 
+
+you get to , derivative 
+is here, between 
+derivative is negative indeed 
+graph is moving until you get to 
+derivative this function is 
+positive graph is going 
+look, sign derivative 
+positive, negative, positive is reflected 
+in direction that this graph is 
+moving 
+increasing, decreasing, increasing 
+incredible 
+able to differentiate xx, 
+able to gain real insight 
+graph function 
+plotting a whole bunch 
+points hoping that we fill in 
+a straight line 
+looking derivative, we know 
+that function is increasing 
+decreasing 
+able to say something, sure 
+music 

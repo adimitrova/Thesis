@@ -1,0 +1,329 @@
+1
+00:00:00,012 --> 00:00:06,143
+[MUSIC] Sometime in the future, we're 
+going to see the following derivative 
+
+2
+00:00:06,143 --> 00:00:09,561
+rule. 
+But, I want to mention it now just so we 
+
+3
+00:00:09,561 --> 00:00:14,565
+can see an example of how derivatives 
+play out in practice. 
+
+4
+00:00:14,565 --> 00:00:24,195
+The derivative of the √x is 1/2√x. 
+You might already believe this if you 
+
+5
+00:00:24,195 --> 00:00:27,394
+believe the power rule, 
+right? 
+
+6
+00:00:27,394 --> 00:00:35,396
+The derivative of x^n is nx^n-1. So, if n 
+is 1/2, then I've got that the derivative 
+
+7
+00:00:35,396 --> 00:00:42,172
+of x^n, now 1/2, is n, 1/2, times x^n-1. 
+And conveniently, 1/2-1=-1/2. 
+
+8
+00:00:42,172 --> 00:00:49,082
+This is really the same as this, it's 
+just written here with the square root 
+
+9
+00:00:49,082 --> 00:00:56,177
+symbol instead of with the exponents. 
+We can use this derivative rule to help 
+
+10
+00:00:56,177 --> 00:01:00,502
+explain certain numerological 
+coincidences. 
+
+11
+00:01:00,502 --> 00:01:08,194
+Let's take a look. 
+Look, the √9999 is 99.9949998, okay, so 
+
+12
+00:01:08,194 --> 00:01:13,374
+it keeps on going forever. 
+It's irrational. 
+
+13
+00:01:13,374 --> 00:01:22,758
+But, this is bizarrely close to 99.99 
+instead of 499 just saying it's close to 
+
+14
+00:01:22,758 --> 00:01:27,246
+99.995. 
+Is this just a coincidence? This isn't a 
+
+15
+00:01:27,246 --> 00:01:28,553
+coincidence. 
+Look. 
+
+16
+00:01:28,553 --> 00:01:32,215
+The square √10000 is 100 because 100^2 is 
+10,000. 
+
+17
+00:01:32,215 --> 00:01:35,376
+What I'm really doing here is wiggling 
+the input. 
+
+18
+00:01:35,376 --> 00:01:39,940
+I'm going from 10,000 to 9,999. 
+In other words, I'm trying to calculate 
+
+19
+00:01:39,940 --> 00:01:44,027
+the √10000-1, wiggling the input down a 
+bit. 
+
+20
+00:01:44,027 --> 00:01:49,343
+What does the derivative calculate? Well, 
+the derivative calculates the ratio 
+
+21
+00:01:49,343 --> 00:01:55,645
+between output change to input change. 
+So, the √10000 wiggled down a little bit 
+
+22
+00:01:55,645 --> 00:02:01,339
+is about the √10000 minus how much I 
+change the input by times the ratio of 
+
+23
+00:02:01,339 --> 00:02:06,052
+how much I expect the output change 
+compared to the input change. 
+
+24
+00:02:06,052 --> 00:02:09,803
+Now, we can try to calculate the 
+derivative at 10,000. 
+
+25
+00:02:09,803 --> 00:02:13,043
+What's the derivative at 10,000? Well, 
+it's 1/2√10000. 
+
+26
+00:02:15,492 --> 00:02:22,587
+The √10000 is 100, so it's 1/2*100. 
+1/2*100 is 1/200, which is 0.005. 
+
+27
+00:02:22,587 --> 00:02:30,072
+Look, the √9999 is so close to 99.995 
+because the √10000 is 100. 
+
+28
+00:02:30,072 --> 00:02:36,585
+And, when I shift the input down by one, 
+this derivative calculation is suggesting 
+
+29
+00:02:36,585 --> 00:02:42,492
+that the output should be shifted down by 
+about 0.005, and indeed it is. 
+
+30
+00:02:42,492 --> 00:02:48,371
+This is a great example of calculus. 
+Yes, you could have asked your calculator 
+
+31
+00:02:48,371 --> 00:02:55,246
+to compute the √9999, but you couldn't 
+have asked your calculator to tell you 
+
+32
+00:02:55,246 --> 00:02:59,815
+why. Why is that answer so mysteriously 
+close to 99.995? 
+
+33
+00:02:59,815 --> 00:03:02,912
+In short, calculus is more than 
+calculating. 
+
+34
+00:03:02,912 --> 00:03:07,080
+It's not about answers, it's about 
+reasons. It's about explanations about 
+
+35
+00:03:07,080 --> 00:03:11,567
+the stories that human beings can tell to 
+each other about why that number and not 
+
+36
+00:03:11,567 --> 00:03:14,049
+another. 
+But, that's not say that the numbers 
+
+37
+00:03:14,049 --> 00:03:18,231
+aren't fun to play with themselves, and 
+we can use this same trick to do other 
+
+38
+00:03:18,231 --> 00:03:21,992
+amazing feats like · , we can try to 
+estimate the √82. 
+
+39
+00:03:21,992 --> 00:03:26,236
+I know the √81 is 9. 
+I'm trying to say something about the 
+
+40
+00:03:26,236 --> 00:03:29,442
+√82. 
+I'm trying to wiggle the input up a 
+
+41
+00:03:29,442 --> 00:03:32,640
+little bit. 
+Well, derivatives have something to say 
+
+42
+00:03:32,640 --> 00:03:37,495
+about that. 
+The √81+1, the √82, would be about the 
+
+43
+00:03:37,495 --> 00:03:41,806
+√81, which is 9, plus how much I expect 
+the output to change. 
+
+44
+00:03:41,806 --> 00:03:45,280
+I wiggled the input, 
+I expect the output to change by some 
+
+45
+00:03:45,280 --> 00:03:48,091
+amount. 
+Well, the derivative is measuring how 
+
+46
+00:03:48,091 --> 00:03:52,794
+much I expect the output to change by. 
+So, I'm going to take the derivative of 
+
+47
+00:03:52,794 --> 00:03:57,014
+the function at 81, at the square root 
+function at 81, I'm going to multiply by 
+
+48
+00:03:57,014 --> 00:04:01,880
+how much I'm wiggling the input by. This 
+will be how much I expect the output to 
+
+49
+00:04:01,880 --> 00:04:06,188
+change when I change the input. 
+Now, in this specific case, what's the 
+
+50
+00:04:06,188 --> 00:04:14,652
+derivative at 81? Well, that's 1/2√81, 
+which is 1/2*9. The √81 is 9, which is 
+
+51
+00:04:14,652 --> 00:04:23,572
+1/18. So, I would expect the √82 to be 
+about 9+1/18 because I expect wiggling 
+
+52
+00:04:23,572 --> 00:04:27,962
+the input up to wiggle the output up by 
+about 1/18. 
+
+53
+00:04:27,962 --> 00:04:33,439
+And this is pretty good. 
+There's actually two different ways to 
+
+54
+00:04:33,439 --> 00:04:38,326
+tell if this isn't such a bad guess. 
+Here's here's one way to tell. 
+
+55
+00:04:38,326 --> 00:04:41,628
+What's what's 1/18? Well, it's 0.05 
+repeating. 
+
+56
+00:04:41,628 --> 00:04:45,901
+And, what's the actual value of the √82? 
+It's 9.055. 
+
+57
+00:04:45,901 --> 00:04:51,119
+Look, it's pretty close to 9 plus this. 
+That's pretty good. 
+
+58
+00:04:51,119 --> 00:04:59,096
+Another way to see that this isn't such a 
+bad guess is just to take 9+1/18, and 
+
+59
+00:04:59,096 --> 00:05:03,147
+square it. 
+When I square 9+1/18, I get 
+
+60
+00:05:03,147 --> 00:05:05,759
+9^2+2*9/18+1/1/8^2. 
+2*1/2=1. 
+
+61
+00:05:06,812 --> 00:05:12,530
+This is 81+1=82, and 1/18^2 is the very 
+small number 1/324. 
+
+62
+00:05:12,530 --> 00:05:20,413
+So, either way you look at it, we're 
+doing pretty good to guess the √82 is 
+
+63
+00:05:20,413 --> 00:05:25,094
+about this, 
+and we're doing it with derivatives. 
+
+64
+00:05:25,094 --> 00:05:31,889
+Again, it's derivatives for the win. 
+By relating the input change to the 
+
+65
+00:05:31,889 --> 00:05:39,433
+output change, we're able to estimate the 
+values of functions that would be very 
+
+66
+00:05:39,433 --> 00:05:42,567
+hard to access directly. 
+[MUSIC] 

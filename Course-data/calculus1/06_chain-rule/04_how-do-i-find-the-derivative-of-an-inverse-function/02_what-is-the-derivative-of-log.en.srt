@@ -1,0 +1,363 @@
+1
+00:00:00,012 --> 00:00:06,082
+, In our quest for a function which with
+it's own derivative, we met e to the x.
+
+2
+00:00:06,207 --> 00:00:11,523
+Remember, the derivative of e to the x is
+e to the x. What's the inverse function
+
+3
+00:00:11,535 --> 00:00:17,492
+for e to the x? What function undoes that
+sort of exponentiation? Well, we really
+
+4
+00:00:17,504 --> 00:00:23,235
+don't have a name for that function yet,
+so we're just going to call it Log.
+
+5
+00:00:23,238 --> 00:00:28,486
+So in symbols, if e to the x is equal to
+y, then log y equals x, right?
+
+6
+00:00:28,490 --> 00:00:35,685
+Log is the inverse function for e to the,
+the log of something I must raise e to get
+
+7
+00:00:35,697 --> 00:00:42,941
+back the thing I plugged into log. These
+logs or logarithms are super important for
+
+8
+00:00:42,953 --> 00:00:49,052
+a ton of reasons. Take a look at this.
+Since e to the x plus y is e to the x
+
+9
+00:00:49,064 --> 00:00:55,348
+times e to y, right? This is the property
+of exponents, if you like. There's a
+
+10
+00:00:55,360 --> 00:01:01,970
+corresponding statement about log. Log of
+a times b is log of a plus log of b. Or, a
+
+11
+00:01:01,982 --> 00:01:08,308
+shorthand way to say that is that
+logarithms transform products into sums.
+
+12
+00:01:08,314 --> 00:01:14,332
+This is a big reason why we care so much
+about logs. Once we've got this new
+
+13
+00:01:14,344 --> 00:01:20,344
+function, log, we can ask what's the
+derivative of log? So, if f of x is e to
+
+14
+00:01:20,356 --> 00:01:27,418
+the x, the inverse function is log.
+If I want to now differentiate log, I can
+
+15
+00:01:27,430 --> 00:01:35,230
+use the inverse function theorem. So, the
+derivative of the inverse function is 1
+
+16
+00:01:35,242 --> 00:01:42,743
+over the derivative of the original
+function evaluated at the inverse function
+
+17
+00:01:42,755 --> 00:01:49,026
+of x. Now, the neat thing here is that the
+derivative of e to the x is itself. So, f
+
+18
+00:01:49,038 --> 00:01:55,293
+prime is just f, and I'm left with f of f
+inverse of x. It's e to the log of x. But
+
+19
+00:01:55,744 --> 00:02:01,949
+log of x tells me what I have to plug into
+e to get out the input, right? f of the
+
+20
+00:02:01,961 --> 00:02:06,886
+inverse function of f is just, it would be
+the, the same input again. So, this is 1
+
+21
+00:02:06,886 --> 00:02:12,649
+over x. So, the derivative of log x is
+just 1 over x. And you can really see this
+
+22
+00:02:12,661 --> 00:02:17,685
+fact on the graph. Here's a graph of y
+equals log x. And I should warn you right
+
+23
+00:02:17,697 --> 00:02:22,671
+off the bat that the x-axis and the y-axis
+have totally different scales. The x-axis
+
+24
+00:02:22,996 --> 00:02:28,023
+goes from 1 to 100. The y-axis in this
+plot goes from 0 to 5. it's going to make
+
+25
+00:02:28,035 --> 00:02:33,322
+it not so easy to tell the exact values of
+the slopes and tangent lines, but you can
+
+26
+00:02:33,334 --> 00:02:38,188
+see from this graph the important
+qualitative feature. That the graph is
+
+27
+00:02:38,200 --> 00:02:43,836
+getting less and less slopey. And if you
+like, it's flattening out as the input
+
+28
+00:02:43,848 --> 00:02:49,665
+gets bigger. if I put down a tangent line
+and I start moving the point that I'm
+
+29
+00:02:49,677 --> 00:02:54,335
+taking the tangent line at to the right,
+you can see the tangent line slope is
+
+30
+00:02:54,347 --> 00:02:59,095
+getting closer and closer to zero. And, of
+course, that's reflected by knowing the
+
+31
+00:02:59,107 --> 00:03:03,915
+derivative of log x is 1 over x. So, if x
+is really big, the tangent line at x is
+
+32
+00:03:03,927 --> 00:03:09,617
+really close to zero in slope. Think about
+log of a really big number. For instance,
+
+33
+00:03:09,738 --> 00:03:14,973
+what's log of a million? A log of a
+million is about 13.815510. And, of
+
+34
+00:03:14,985 --> 00:03:20,690
+course, it keeps going. I, it's an
+irrational number. But, now the derivative
+
+35
+00:03:20,702 --> 00:03:26,205
+of log, right? Is 1 over its input. So,
+what does that tell you that you might
+
+36
+00:03:26,217 --> 00:03:31,723
+think log of a million and 1 is equal to?
+Well, the derivative tells you how much
+
+37
+00:03:31,735 --> 00:03:37,308
+wiggling input affects the output. So, if
+I wiggle the input by 1, you expect the
+
+38
+00:03:37,320 --> 00:03:42,972
+output to change by about the derivative.
+And yeah, log of a million and 1 is about
+
+39
+00:03:42,984 --> 00:03:48,902
+13.815511, right? What's being affected
+here is in the millionths place after the
+
+40
+00:03:48,914 --> 00:03:54,569
+decimal point, right? It's the 6th digit
+after the decimal point because it's being
+
+41
+00:03:54,581 --> 00:03:59,145
+affected like a change of 1 over a
+million. All right? I'm changing the
+
+42
+00:03:59,157 --> 00:04:04,178
+output by about a millionth. At this
+point, we can also handle logs with other
+
+43
+00:04:04,190 --> 00:04:09,092
+bases. So, let's suppose I want to
+differentiate log of x base b, right? This
+
+44
+00:04:09,104 --> 00:04:14,153
+is the number that I'd raise b to, to get
+back x. Well, there's a change of base
+
+45
+00:04:14,165 --> 00:04:20,034
+formula for log. This is the same as the
+derivative of, say, the natural log of x
+
+46
+00:04:20,046 --> 00:04:26,019
+over the log of b. But the log of b is a
+constant, and the derivative of a constant
+
+47
+00:04:26,031 --> 00:04:31,938
+multiple is just that constant multiple
+times the derivative. So, this is 1 over
+
+48
+00:04:31,950 --> 00:04:37,428
+log b times the derivative of, here's a
+natural log of x. But I know the
+
+49
+00:04:37,440 --> 00:04:41,518
+derivative of the natural log of x, it's 1
+over x.
+
+50
+00:04:41,519 --> 00:04:47,948
+So, the derivative of log of x base b is 1
+over log b times 1 over x. Or maybe
+
+51
+00:04:47,960 --> 00:04:54,951
+another way to write this would be 1 over
+x times log b, if you prefer writing it
+
+52
+00:04:54,963 --> 00:05:00,778
+that way. e to the x is a sort of key that
+unlocks how to understand the derivative
+
+53
+00:05:00,790 --> 00:05:05,991
+of a ton of other exponential functions.
+For example, now that we know how to
+
+54
+00:05:06,003 --> 00:05:11,035
+differentiate e to the x, we can also
+differentiate 2 to the x. So, let's
+
+55
+00:05:11,047 --> 00:05:16,023
+suppose I want to differentiate 2 to the
+x. Now, you might just memorize some
+
+56
+00:05:16,035 --> 00:05:21,677
+formula for differentiating this. But it's
+easier, I think better, to just recreate
+
+57
+00:05:21,689 --> 00:05:26,590
+this function out of the functions that
+you already know all the derivatives of.
+
+58
+00:05:26,701 --> 00:05:32,082
+So, in this case, let's replace 2 by e to
+the log 2 to the x, right? So, instead of
+
+59
+00:05:32,094 --> 00:05:37,294
+writing 2 here, I've just written e to the
+log 2, this is just 2. But I've got e to
+
+60
+00:05:37,306 --> 00:05:42,383
+the log 2 to the x and that's the same as
+e to the log 2 times x. You know, this is
+
+61
+00:05:42,395 --> 00:05:47,272
+a composition of functions that I know how
+to differentiate. I know how to
+
+62
+00:05:47,284 --> 00:05:52,580
+differentiate e to the, and I know how to
+differentiate constant multiple times x.
+
+63
+00:05:52,962 --> 00:05:57,789
+So, by the chain rule, it's the derivative
+of the outside function. So, which is
+
+64
+00:05:57,801 --> 00:06:02,221
+itself, e to the, at the inside function,
+which is log 2 times x, times the
+
+65
+00:06:02,233 --> 00:06:07,423
+derivative of the inside function which in
+this case is log 2 log x. So, I'm just
+
+66
+00:06:07,435 --> 00:06:12,635
+going to multiply by log 2. Now, I could
+kind of make this look a little bit nicer,
+
+67
+00:06:12,752 --> 00:06:18,195
+right? e to the log 2 times x, well,
+that's just 2 to the x times, again log 2.
+
+68
+00:06:18,312 --> 00:06:23,330
+So, the derivative of 2 to the x is 2 to
+the x times log 2. And, of course, 2
+
+69
+00:06:23,342 --> 00:06:29,170
+didn't play any significant role here. I
+could have replaced 2 by any other number
+
+70
+00:06:29,422 --> 00:06:34,695
+and I'd get the same kind of formula. What
+I hope you're seeing is that all of the
+
+71
+00:06:34,707 --> 00:06:39,879
+derivative laws are connected. With
+practice, you'll be able to differentiate
+
+72
+00:06:39,891 --> 00:06:45,088
+any function that you build by combining
+our standard library of functions and
+
+73
+00:06:45,100 --> 00:06:47,112
+operations on those functions.

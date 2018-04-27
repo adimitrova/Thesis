@@ -1,0 +1,599 @@
+1
+00:00:00,000 --> 00:00:06,044
+[MUSIC] People often have this idea that 
+l'Hopital's rule is really great. 
+
+2
+00:00:06,044 --> 00:00:11,921
+I'm going to tell you why you shouldn't 
+fall in love with l'Hopital's rule. 
+
+3
+00:00:11,921 --> 00:00:17,210
+For one thing, l'Hopital's rule often 
+leads to circular reasoning. 
+
+4
+00:00:17,210 --> 00:00:20,820
+Let's go to the blackboard and take a 
+look. 
+
+5
+00:00:22,240 --> 00:00:25,467
+For example, 
+here's a problem that you might be 
+
+6
+00:00:25,467 --> 00:00:29,837
+tempted to use l'Hopital on. 
+You know, in a limit as x approaches zero 
+
+7
+00:00:29,837 --> 00:00:32,609
+of sine x over x. 
+Now, what do you have to check? 
+
+8
+00:00:32,609 --> 00:00:36,032
+Well, let's take a look at the limit of 
+the numerator by itself. 
+
+9
+00:00:36,032 --> 00:00:40,433
+The limit of sine x as x approaches zero, 
+sine is continuous so that limit is just 
+
+10
+00:00:40,433 --> 00:00:43,858
+sine of zero, which is zero. 
+Numerator's limit is zero. 
+
+11
+00:00:43,858 --> 00:00:48,605
+Limit of our denominator? 
+the limit of x as x approaches zero is 
+
+12
+00:00:48,605 --> 00:00:49,584
+zero. 
+So, yeah. 
+
+13
+00:00:49,584 --> 00:00:52,899
+This is a zero over zero indeterminate 
+form. 
+
+14
+00:00:52,899 --> 00:00:58,023
+So, we have tried using l'Hopital. 
+l'Hopital tells us that this limit is 
+
+15
+00:00:58,023 --> 00:01:04,125
+equal to the limit as x approaches zero 
+of the derivative of the numerator, which 
+
+16
+00:01:04,125 --> 00:01:09,500
+is cosine x over the derivative of the 
+denominator, which is one. 
+
+17
+00:01:09,500 --> 00:01:12,649
+Now, this limit is quite a bit easier to 
+do, right? 
+
+18
+00:01:12,649 --> 00:01:16,634
+This is really just the limit of cosin x 
+as x approaches zero. 
+
+19
+00:01:16,634 --> 00:01:22,360
+Cosine is continuous so this is just the 
+value of cosine at zero, which is one. 
+
+20
+00:01:22,360 --> 00:01:25,547
+And yeah, 
+I mean, the limit of sine x over x as x 
+
+21
+00:01:25,547 --> 00:01:28,092
+it approaches zero, 
+it is, in fact, one. 
+
+22
+00:01:28,092 --> 00:01:29,909
+This looks good, 
+alright? 
+
+23
+00:01:29,909 --> 00:01:35,292
+The, the question though is how did you 
+know that the derivative of sine X was 
+
+24
+00:01:35,292 --> 00:01:38,158
+cosine x? 
+You needed to know that in order to apply 
+
+25
+00:01:38,158 --> 00:01:41,723
+l'Hopital. 
+How did you know the derivative of sine x 
+
+26
+00:01:41,723 --> 00:01:44,100
+was cosine x? 
+Well, let's think back. 
+
+27
+00:01:46,160 --> 00:01:49,704
+Right. 
+So, how did I know that the derivative of 
+
+28
+00:01:49,704 --> 00:01:53,927
+sine x was cosine x? 
+Well, taking a derivative is the same 
+
+29
+00:01:53,927 --> 00:01:57,094
+thing as a limit of a difference 
+quotient. 
+
+30
+00:01:57,094 --> 00:02:02,825
+So, to calculate, say, the derivative of 
+sine at zero, I take a limit like this. 
+
+31
+00:02:02,825 --> 00:02:08,580
+The limit if h goes to zero of sine 0 + h 
+- sine 0 / h. 
+
+32
+00:02:08,580 --> 00:02:13,757
+Sine of zero is just zero. 
+So, calculating this limit, which is 
+
+33
+00:02:13,757 --> 00:02:20,438
+calculating the derivative of sine at 0, 
+is really the same as calculating the 
+
+34
+00:02:20,438 --> 00:02:27,120
+limit as h goes to zero, 
+sine 0 + h, that's just sign h - 0 / h. 
+
+35
+00:02:28,140 --> 00:02:31,741
+Now, what just happened? 
+I wanted to calculate the derivative of 
+
+36
+00:02:31,741 --> 00:02:36,197
+sine at zero, and to calculate the 
+derivative of sine at zero, is really the 
+
+37
+00:02:36,197 --> 00:02:40,104
+same as calculating the limit at h goes 
+to zero of sine h over h. 
+
+38
+00:02:40,104 --> 00:02:45,424
+It's the definition of derivative. 
+And I was going to use this to evaluate 
+
+39
+00:02:45,424 --> 00:02:48,750
+the limit of sine x over x using 
+l'Hopital, 
+
+40
+00:02:48,750 --> 00:02:52,736
+right? l'Hopital doesn't just reduce a 
+limit problem down to another limit 
+
+41
+00:02:52,736 --> 00:02:55,160
+problem. 
+It reduces a limit problem down to a 
+
+42
+00:02:55,160 --> 00:02:57,422
+limit problem and two derivative 
+problems, 
+
+43
+00:02:57,422 --> 00:02:59,847
+right? 
+To, to do l'Hopital, you have to be able 
+
+44
+00:02:59,847 --> 00:03:02,378
+to differentiate the numerator and 
+denominator. 
+
+45
+00:03:02,378 --> 00:03:06,473
+So, if you're going to use l'Hopital to 
+evaluate sine x over x as x goes to zero, 
+
+46
+00:03:06,473 --> 00:03:08,681
+you're going to have to differentiate 
+sine x. 
+
+47
+00:03:08,681 --> 00:03:12,991
+But then, to differentiate sin x at zero, 
+which is what you're trying to do, to, to 
+
+48
+00:03:12,991 --> 00:03:17,085
+use l'Hopital, you have to be able to 
+evaluate this limit, the limit of sine h 
+
+49
+00:03:17,085 --> 00:03:19,401
+over h. 
+You have to be able to do the limit 
+
+50
+00:03:19,401 --> 00:03:23,580
+you're trying to do already. 
+It's just circular reasoning. 
+
+51
+00:03:23,580 --> 00:03:26,944
+So, what just happened? 
+I was trying to calculate the limit of 
+
+52
+00:03:26,944 --> 00:03:29,909
+sine x over x as x approaches zero. 
+I used l'Hopital. 
+
+53
+00:03:29,909 --> 00:03:36,181
+l'Hopita told me to differentiate sine x. 
+But then, to differentiate sine x, I 
+
+54
+00:03:36,181 --> 00:03:40,686
+would've needed to be able to evaluate 
+the limit of sine h over h as h goes to 
+
+55
+00:03:40,686 --> 00:03:43,138
+zero, the exact problem I'm trying to 
+solve. 
+
+56
+00:03:43,138 --> 00:03:47,528
+It's an example of circular reasoning. 
+There's other things that can go wrong 
+
+57
+00:03:47,528 --> 00:03:50,550
+with l'Hopital. 
+One of the conditions of l'Hopital is 
+
+58
+00:03:50,550 --> 00:03:53,971
+that the limit of the ratio of the 
+derivatives has to exist. 
+
+59
+00:03:53,971 --> 00:03:56,880
+let's see an example where that fails to 
+happen. 
+
+60
+00:03:59,140 --> 00:04:02,888
+Here's an example. 
+Let's take a look at the limit of x plus 
+
+61
+00:04:02,888 --> 00:04:06,636
+sine x over x as x approaches infinity. 
+Try to use l'Hopital. 
+
+62
+00:04:06,636 --> 00:04:10,193
+So, I want to look at the limit of the 
+numerator by itself. 
+
+63
+00:04:10,193 --> 00:04:14,195
+The limit of x plus sine x as x 
+approaches infinity is infinity. 
+
+64
+00:04:14,195 --> 00:04:19,214
+The limit of the denominator by itself, 
+the limit of x as x approaches infinity, 
+
+65
+00:04:19,214 --> 00:04:22,263
+also infinity. 
+This is an infinity over infinity 
+
+66
+00:04:22,263 --> 00:04:24,360
+indeterminate form. 
+It seems good. 
+
+67
+00:04:24,360 --> 00:04:29,308
+Now, l'Hopital's tells me that to 
+calculate this, I should look at the 
+
+68
+00:04:29,308 --> 00:04:34,790
+limit as x approaches infinity. 
+The derivative of the numerator, which is 
+
+69
+00:04:34,790 --> 00:04:40,580
+one plus cosine x over the derivative of 
+the denominator, which is one. 
+
+70
+00:04:40,580 --> 00:04:47,440
+Now, what's the limit of one plus cosine 
+x as x approaches infinity? 
+
+71
+00:04:47,440 --> 00:04:54,214
+Well, the limit of one is just one. 
+But what's the limit of cosine x as x 
+
+72
+00:04:54,214 --> 00:04:56,660
+approaches infinity, 
+right? 
+
+73
+00:04:56,660 --> 00:05:03,622
+Cosine just oscillates between -1 and 1. 
+This limit doesn't exist. 
+
+74
+00:05:03,622 --> 00:05:10,364
+This limit doesn't exist. 
+Now, does that mean that this limit 
+
+75
+00:05:10,364 --> 00:05:13,722
+doesn't exist? 
+I, I, I wrote equals here, but remember, 
+
+76
+00:05:13,722 --> 00:05:15,895
+I'm using l'Hopital's rule, 
+alright. 
+
+77
+00:05:15,895 --> 00:05:18,660
+And what does l'Hopital's rule actually 
+say? 
+
+78
+00:05:18,660 --> 00:05:23,466
+It says, that this limit is equal to the 
+limit of the derivative over the 
+
+79
+00:05:23,466 --> 00:05:28,404
+derivative, provided this limit exists. 
+And this limit doesn't exist in this 
+
+80
+00:05:28,404 --> 00:05:31,170
+case. 
+So, l'Hopital is silent as to the value 
+
+81
+00:05:31,170 --> 00:05:34,857
+of this limit. 
+Let's see if we can actually compute that 
+
+82
+00:05:34,857 --> 00:05:39,124
+limit some other way. 
+Alright. 
+
+83
+00:05:39,124 --> 00:05:42,299
+So, let's try to do this limit some other 
+way. 
+
+84
+00:05:42,299 --> 00:05:47,521
+We're going to do the limit of x plus 
+sine over x as x goes to infinity without 
+
+85
+00:05:47,521 --> 00:05:51,331
+using l'Hopital. 
+This is a limit of fraction, we could 
+
+86
+00:05:51,331 --> 00:05:56,906
+split up the fraction as a limit as x 
+goes to infinity of x over x plus sine x 
+
+87
+00:05:56,906 --> 00:06:00,127
+over x. 
+Now, that's a limit of a sum, which is 
+
+88
+00:06:00,127 --> 00:06:03,666
+the sum of the limits provided the limits 
+exist. 
+
+89
+00:06:03,666 --> 00:06:10,376
+So, this is the limit as x goes to 
+infinity of x over x plus the limit as x 
+
+90
+00:06:10,376 --> 00:06:15,831
+goes to infinity of sine x over x. 
+Now, what's the limit x over x as x goes 
+
+91
+00:06:15,831 --> 00:06:17,380
+to infinity? 
+Just one. 
+
+92
+00:06:17,380 --> 00:06:21,911
+What's the limit of sine x over x as x 
+goes to infinity? 
+
+93
+00:06:21,911 --> 00:06:27,118
+Well, sine x is always between -1 and 1. 
+And x here is going to infinity. 
+
+94
+00:06:27,118 --> 00:06:32,045
+I can make x as big as I like. 
+So, question is can I make this as close 
+
+95
+00:06:32,045 --> 00:06:33,664
+to zero as I like? 
+Yeah. 
+
+96
+00:06:33,664 --> 00:06:39,434
+By making x large enough, a number 
+between -1 and 1 / x can be made as close 
+
+97
+00:06:39,434 --> 00:06:42,291
+to zero as I like. 
+So, this limit is zero. 
+
+98
+00:06:42,291 --> 00:06:47,526
+[SOUND] So, the sum of the limits is one 
+[SOUND] and that's the limit of the sum. 
+
+99
+00:06:47,526 --> 00:06:53,380
+That's the limit of x plus sine x over x. 
+It's one as x goes to infinity. 
+
+100
+00:06:53,380 --> 00:06:57,131
+And this is true in spite of the fact 
+that l'Hopital failed us, right? 
+
+101
+00:06:57,131 --> 00:07:00,938
+When we did l'Hopital's in this problem, 
+I was told to differentiate the 
+
+102
+00:07:00,938 --> 00:07:05,193
+numerator, divided it by the derivative 
+of the denominator as x goes to infinity, 
+
+103
+00:07:05,193 --> 00:07:09,700
+and that derivative didn't exist. 
+It was oscillating between zero and two. 
+
+104
+00:07:09,700 --> 00:07:12,065
+And in that case, l'Hopital is just 
+silent. 
+
+105
+00:07:12,065 --> 00:07:16,615
+l'Hopital requires that limit of the 
+ratio of the derivatives to exist, and if 
+
+106
+00:07:16,615 --> 00:07:19,344
+it doesn't exist, l'Hopital doesn't say 
+anything. 
+
+107
+00:07:19,344 --> 00:07:23,712
+This limit does exist and then to see 
+that requires some, some algebraic 
+
+108
+00:07:23,712 --> 00:07:29,135
+computation. 
+So, we manage to evaluate that limit. 
+
+109
+00:07:29,135 --> 00:07:31,907
+The limit was one, but no thanks to 
+l'Hopital. 
+
+110
+00:07:31,907 --> 00:07:35,536
+The limit of the ratio of the derivatives 
+didn't exist, 
+
+111
+00:07:35,536 --> 00:07:39,232
+it was oscillating. 
+We evaluated that limit by algebraic 
+
+112
+00:07:39,232 --> 00:07:41,241
+manipulation. 
+And don't get me wrong. 
+
+113
+00:07:41,241 --> 00:07:44,547
+l'Hopital is awfully powerful. 
+There's plenty of situations where you 
+
+114
+00:07:44,547 --> 00:07:48,404
+want to use l'Hopital. But often, you can 
+get away with just doing some algebraic 
+
+115
+00:07:48,404 --> 00:07:50,908
+manipulation. 
+So, I encourage you, when you're doing 
+
+116
+00:07:50,908 --> 00:07:55,001
+those limit problems, 
+don't forget that you can just 
+
+117
+00:07:55,001 --> 00:08:01,475
+algebraically manipulate things. 
+There might be an easier way than 
+
+118
+00:08:01,475 --> 00:08:07,655
+bringing out l'Hopital. 
+Only use l'Hopital if you absolutely have 
+
+119
+00:08:07,655 --> 00:08:13,149
+to use l'Hopital. 
+In other words, don't fall in love with 
+
+120
+00:08:13,149 --> 00:08:14,915
+l'Hopital. 
+[MUSIC] 

@@ -1,0 +1,193 @@
+sound 
+hi, welcome back to video 
+lectures web connectivity 
+security in cyberphysical systems 
+this lesson starts second 
+part course 
+this part includes two modules, 
+dedicated to system security 
+issues solutions 
+we will learn different 
+security technologies methods 
+learn to utilize in securing 
+protecting cyber physical 
+systems cyber attacks 
+in this video lecture, 
+we will look basic security 
+requirements cyber physical systems 
+several physical systems facilitate 
+a wide range solutions 
+services that help people 
+in daily lives 
+however, providing solutions 
+services in a reliable safe 
+secure manner is trivial 
+contrary, 
+there many challenging issues that 
+need to appropriately addressed 
+example, dealing sensitive 
+safetycritical data, 
+if this data is properly protected, 
+lead to significant financial losses, 
+loss privacy reputation, 
+mental suffering physical damage 
+could even endanger lives 
+so, among issues 
+challenges involved in design 
+deployment cyber physical systems, 
+security a important role 
+cyber physical systems 
+specific security issues 
+this is 
+special characteristics 
+first all, 
+involving physical processes, 
+tightly coupled 
+physical environments 
+so changes in environments, 
+especially expected changes that 
+havent considered design time 
+will affect them, potentially make 
+vulnerable to security breaches 
+this is true way around well 
+security breaches in 
+cyberphysical systems 
+serious influence 
+environments 
+second, cyberphysical systems 
+composed a large number 
+different devices different 
+computing platforms capabilities 
+in general, devices in cyber physical 
+systems resource constrained, 
+meaning that dont 
+much processing, 
+storage, power capacity to 
+execute complex operations 
+this poses challenges 
+applying efficient security 
+countermeasures that may require 
+a relatively high amount resources 
+third, cyberphysical systems 
+massively networked systems 
+use various 
+communication technologies 
+between devices ranging 
+simple wired connections 
+to different wireless technologies 
+different ranges characteristics 
+so highly complex 
+heterogeneous systems making 
+harder to find optimal solutions 
+to ensure secure transmission 
+data everywhere in system 
+finally, cyber physical 
+systems typically 
+highly autonomous embedded 
+intelligence controlling many operations 
+this reduces need 
+manual control supervision 
+one hand is an advantage, 
+risk human error is reduced 
+hand, user must 
+able to rely autonomous system 
+to protected malicious 
+attacks that aim to secretly alter 
+behavior system, 
+to steal sensitive information 
+in general, we classify 
+security requirements cyber 
+physical systems several categories 
+in a system, interacts 
+a physical environment, 
+validity 
+accuracy sensed data is important 
+so, proper protection sensors 
+data is high 
+importance in a system 
+data collected multiple sensors 
+needs to store temporarily 
+malicious unauthorized modification 
+this stored data results in errors 
+is processing 
+serious consequences 
+this reason, data while 
+in storage needs to protected 
+unauthorized access 
+modification 
+in large cyber physical systems, 
+data may collected 
+a large group sensors 
+time period resulting in a 
+large set data beak data 
+data you 
+complex 
+difficult is to 
+properly secure this data 
+many cyber physical systems 
+networked distributed 
+sensitive data is transmitted 
+heterogeneous communication channels 
+communication security is needed 
+within a system between systems 
+we will discuss different communication 
+security protocols in video 
+lectures 
+in a system carries autonomous 
+operations actuators, 
+is key importance to make sure 
+that actuations authorized 
+according to latest 
+policies system 
+feedback loops play an important role 
+in cyber physical system control 
+a systems embedded intelligence 
+ability to learn largely based 
+feedback actuations 
+therefore feedback data needs to 
+appropriately protected 
+tampering attempts 
+finally, system may 
+application specific security 
+requirements, depending nature 
+applications running in system 
+cyber physical systems 
+physical cyber aspects that 
+need to taken account 
+designing security counter measures 
+in developing security solutions 
+cyber physical systems, 
+we need to keep in mind that 
+attacks also indirect 
+meaning that aim to 
+affect physical environment in 
+a way that data coming 
+sensors is corrupted 
+misleading resulting in unexpected 
+behavior even system failure 
+system needs to designed to 
+detect abnormal physical conditions, 
+act in a safe way in situations 
+also, system always 
+protected physical tampering 
+whenever possible 
+security counter measures 
+must considered 
+in design phase 
+a cyber physical system 
+security design means 
+designing system free 
+vulnerabilities 
+resistant attacks possible 
+this achieved continuous 
+testing careful design rigorous 
+authentication solutions hardware 
+software components system 
+in this lesson, 
+we discussed different security 
+requirements cyberphysical systems 
+in next video lecture, 
+we will learn key 
+security concepts in 
+cyberphysical systems 
+sound 

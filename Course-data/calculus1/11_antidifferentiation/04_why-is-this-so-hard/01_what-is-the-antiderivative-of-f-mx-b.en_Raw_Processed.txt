@@ -1,0 +1,131 @@
+music weve already seen 
+antiderivatives sine cosine, 
+so whats an antiderivative say, 
+cosine x 
+right 
+im looking function that 
+differentiates to cosine x 
+well, theres basically one trick that 
+weve using throughout 
+antidifferentiation problems 
+guessing 
+sine differentiates to cosine, so maybe 
+sine x is a good guess 
+if i differentiate sine x using 
+chain rule, i get derivative 
+outside function, thats looking good, 
+inside function, thats looking 
+good, 
+times derivative inside 
+function is 
+so thats good, i fix that 
+pretty easily, right 
+if i include a rd here, that rigs 
+everything perfectly, right 
+rd here 
+cancel, i left cosine x 
+so, i summarize this saying that an 
+antiderivative cosine x is rd 
+sine x 
+then, to get in 
+antiderivative, i add locally 
+constant function c 
+well, that worked 
+lets try to a slightly harder example 
+lets try to antidifferentiate say, sine 
+x plus 
+alright, im looking function 
+differentiates to x plus 
+i might guess that answer will involve 
+cosine 
+well, i know that cosine differentiates to 
+minus sine 
+so, first guess might cosine x 
+plus 
+if i differentiate this, i get 
+minus sine inside function, times 
+derivative inside function 
+so, this is exactly this, so i havent 
+quite found an antiderivative 
+but, itll easy to patch that up, 
+right 
+if i instead look a slightly different 
+function 
+if i include a factor minus half in 
+front cosine x plus , 
+derivative would minus half times 
+derivative cosine x plus , is 
+minus sine x plus times 
+now, good news is that minus 
+half, this minus sign this 
+cancel, im left is 
+sine x plus means ive 
+found an antiderivative, right 
+an antiderivative sine x plus 
+is, according to this argument, negative 
+half cosine x plus , plus constant 
+c 
+i see a bit a general principle 
+here 
+well, heres set 
+ive got m b, a couple 
+constants 
+i want to is 
+antidifferentiate a function evaluated 
+mx plus b 
+alright, this is general framework 
+thats general enough to encompass 
+examples weve done thus far, right 
+f could say, sine cosine 
+in first example, we looked cosine 
+x, so m b 
+in second example, we looked sine 
+x plus , so m b f 
+sine 
+but, this is sort a general example 
+that encompasses specific 
+example already taking a look 
+
+lets suppose that you already an 
+antiderivative f 
+yeah, lets suppose that i know to 
+antidifferentiate f, lets call 
+that f, right 
+so, derivative f is f 
+now, i deal mx plus b 
+part 
+well basically, trying to guess 
+im trying to find function that 
+differentiates to this, ive got a 
+function that differentiates to 
+f 
+so, lets see happens if i 
+differentiate f mx plus b using 
+chain rule 
+well, derivative f is f, evaluated 
+inside times derivative 
+inside, is m 
+now, i fix this if i include a factor 
+m here 
+then, i get a factor m here 
+thats great this 
+m, this m cancel 
+so here, ive got a function whose 
+derivative is f mx plus b 
+in words, antiderivative f 
+mx plus b is this, right 
+f mx plus b divided m plus c 
+instead always relying guessing 
+hoping that we guess correct 
+antiderivative, going to 
+learning general techniques 
+along lines 
+big one will go name 
+substitution, chain rule in 
+reverse 
+we develop 
+antidifferentiation techniques in 
+tool box, well able to 
+antidifferentiate a whole lot 
+functions without relying flashes 
+insight 

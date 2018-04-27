@@ -1,0 +1,281 @@
+next topic is furniture design 
+so work we introduce here is a guided 
+exploration physically valid shapes 
+furniture design 
+so motivation, 
+question we want to address here is 
+to design valid furniture 
+like a shelf a table 
+so problem we consider 
+is robustness stability 
+robustness means, means break 
+this one example, is you this kind 
+shelf you put heavy object here, 
+this nail break, bent 
+so this is a problem we to avoid 
+also if you get this shape 
+you put this heavy weight here, 
+this would probably topple 
+so problem we want to avoid 
+however, in this simple case 
+easy to see if you a 
+complicated shape like this one, 
+hard to see to design valid furniture 
+so thats a problem we want addressed 
+approach is like previous 
+systems we introduced so far, we provide 
+continuous structure simulation 
+so given user input, 
+system applied physical analysis 
+identify is valid invalid so 
+you continuously part 
+addition to in this work we 
+also provide active guidance to 
+maintain validity 
+so in addition telling you, 
+you invalid you valid 
+system also guides user 
+to recover validity 
+example, 
+if user in this invalid region, 
+you design is invalid 
+telling that you bad 
+also tell you to fix 
+so system is continuously provide 
+active feedback to go back to 
+valid region 
+so this is farther assist user 
+in design process, so thats idea 
+this is a special 
+technique we will introduce, 
+is one annotation indicating valid range 
+so here, in this angle, 
+is good, durable 
+so, if you put weight here, 
+this nail will broken 
+however, if you rotate this, 
+plank to vertical, 
+becomes stable, 
+robust, doesnt break 
+if you go beyond farther 
+robust, durable 
+so system compute valid range 
+angle you manipulating 
+visualizing another annotation so 
+internally system runs many simulations 
+finds valid divisions 
+so this is stability analysis 
+annotation 
+so another is stability 
+so here system identifies that 
+this configuration is stable 
+if you physically fabricate this, 
+this will topple 
+so this is a inaudible 
+in addition to providing this feedback, 
+system also provides suggestions 
+showing valid designs 
+so user provide this, 
+telling user this is stable, 
+system generates body 
+candidates this way 
+user speaks long 
+you get product design 
+so let show you a video 
+sound 
+so, this is a user interface, so 
+user design shape, 
+a simple logging operations 
+yeah 
+nothing special so far 
+so here, 
+a user start rotating this plank 
+if angle is much, 
+this joint will collapse 
+system profile is 
+durable feedback 
+in addition, this durable indicator, 
+system shows a valid lane 
+so in this range okay 
+yeah, so this is a visualization 
+so, this is much helpful 
+telling you durable 
+you can, system also 
+provides visual feedback 
+yeah, this is body domains 
+preventing toppling 
+system also provides balance 
+in a number positions 
+if this is geometric analysis if 
+disconnected system suggest 
+multiple choices to fix discontinuity 
+here in 
+this situation will topple, so system 
+suggest multiple candidates to fix 
+yeah, in this case durable so 
+systems suggested lower it, 
+remove lower bar support 
+let show you a little bit 
+complicated example 
+yeah, so design gets 
+complicated hard to see 
+is bottle neck is a body 
+this kind system helpful to 
+design physically bodied complicated shape 
+like this one 
+we also fabricated l one so 
+in this case we designed a chair 
+noise okay, so 
+let briefly 
+describe whats going inside 
+so we presenting is to prevent 
+breaking to prevent toppling 
+so first one is robustness analysis 
+so if analyze bend force joints 
+also in prevent toppling we put, 
+analyze force, 
+contact force ground 
+so let explain one one 
+so okay lets ask to, let 
+clarify to prevent breaking 
+so, suppose we this kind 
+configuration, three planks two nails 
+we try to find region 
+nail is placed 
+in, 
+to this we consider a space spanned by, 
+nail joint bending forces 
+so we compute bending force 
+this nail nail , 
+we put designs, 
+in space spanned forces, 
+applied bending force 
+right to sets 
+example, in this configuration, 
+is located here 
+you know theres no, 
+if theres bending force, 
+lambda equal zero 
+lambda is somewhere here 
+so this is best thing, 
+so compute bending force 
+you put current design in this space 
+that we bodied range 
+right, if bending force is light, 
+large, durable 
+so bending force smaller 
+a specific threshold 
+is end 
+a kind box region 
+so if design is inside this region 
+durable, safe, okay 
+if outside 
+durable okay 
+so system needs to suggest 
+going back to this region 
+so yeah, so 
+value to design is somewhere here 
+so task is moving here to there 
+so thats starting point 
+we is something like this 
+so given current, 
+spin, non durable design 
+we gradually change a parameter 
+we check project tree 
+you know, gradually change design 
+you rotate in this fourth space 
+then, you see a trajectory 
+so if you change one thing, 
+you get this trajectory, 
+if you change another thing, 
+you will get another trajectory 
+so in system, 
+we test various trajectories, you know 
+one point we try to change angle here, 
+in somewhere else, 
+you try to position something else 
+we try many different variety 
+operations check trajectory 
+then, checking trajectory, 
+we pick one going safe 
+region show it, a result 
+so internally, systems learns a lot 
+physical simulation we 
+explain data here, internally we 
+giving you sensitivity analysis 
+so is a linear approximation 
+so instead computing individual one, 
+we approximating so 
+linear single line you 
+arithmetically compute collision, 
+safe collision faster 
+so thats whats going 
+prevent toppling 
+so this is also similar 
+so here we compute contact force between 
+furniture leg also ground 
+this force in one direction, 
+you know, force 
+action force comes 
+floor to furniture 
+if force is pointed side, 
+means that floor 
+means that there is a problem 
+so in force space diagram 
+looks like this, so if 
+so contact force 
+always positive 
+you know 
+contact force needs, 
+needs to positive, if negative, 
+means that contact becomes fall 
+apart means furniture 
+topples over, stumbles 
+so in, task is to move design 
+back this valid region 
+so again, thing 
+you compute trajectory 
+checking many variations 
+to identify find good one 
+ok, so little bit, maybe fast 
+thats a brief summary 
+so, we presented furniture design 
+durability, stability analysis 
+so system continously checks whether 
+current design stable durable 
+in addition to that, 
+system actively guide user 
+to go back to valid region 
+so to so, internally, we apply joint 
+force analysis in force space 
+so in case durability we compute 
+bending force force stability 
+we compute contact force we 
+try to move back safe region 
+so to learn more, original paper 
+published guided exploration 
+physically valid shapes 
+furniture design 
+physically valid design 
+objects is popular 
+topic in this entry, a couple 
+interesting works appear in this entry 
+one is make stand balancing 
+shapes d fabrication 
+so this technique takes single d object 
+tries to adjust shapes so 
+that actually stands, topple 
+so this is automatic optimization 
+another is, 
+stress relief improving structural 
+strength d printable objects 
+so this one takes d object print 
+however also analyzes weakest 
+bottle neck example, this neck 
+easily break, so system identifies it, 
+make stronger 
+so this kind condition 
+is heavily explored 
+work is different we try to 
+guide user modeling phase 
+thats it, thank you 

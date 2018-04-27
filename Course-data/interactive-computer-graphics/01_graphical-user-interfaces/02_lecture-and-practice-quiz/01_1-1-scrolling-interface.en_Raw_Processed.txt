@@ -1,0 +1,308 @@
+hello this is interactive computer 
+graphics week 
+topic we discuss this week is 
+graphical user interfaces 
+graphical user interface is windows, 
+icons, menus so on, 
+turns computer controlled program 
+visual problem solving 
+so whenever you interact computers 
+smart 
+phone you always to solve video 
+problem solving 
+visual problem 
+in this lecture, this week we introduce 
+five 
+attempts to improve current graphical user 
+interface operations 
+here list topics we discuss 
+here in this week 
+first is scrolling interfaces 
+second is manipulation desktop 
+icons 
+pointing mouse cursor 
+handling digital ink 
+finally we will introduce a 
+technique voice interaction 
+first one is scroll interface 
+work we introduce here is called 
+speed dependent automatic zooming 
+browsing large documents 
+problem we want to address here, 
+is 
+that a navigation a large document is 
+difficult 
+currently, dominant techniques is 
+scrolling zooming 
+so scrolling usually use a scroll bar 
+however, tedious sometimes to 
+control small knob 
+you also use light based speed 
+depending scrolling 
+hard to control you 
+moving fast 
+typical approach is to use zooming 
+interfaces to largen 
+unknown documents, we to 
+combine scrolling zooming 
+confusing 
+let describe specific examples 
+so here is an example 
+okay, so here you a long 
+document 
+then, if you want to scroll, if you 
+first acquire a small knob 
+you start logging 
+however, if document is long, 
+small mouse movement, causes a big 
+jump 
+difficult 
+also one difficult, important problem 
+is that 
+this kind chapter structure, is 
+visible 
+so, if you want to go to, example, 
+chapter 
+time consuming to find 
+chapter 
+another possible interface is write 
+based scrolling 
+speed dependent scrolling, so you press 
+wheel 
+a mouse you get this widget 
+you start scrolling without 
+controlling speed 
+okay youre moving slowly, 
+soon you move fast 
+you know, you idea whats going 
+
+it, difficult to navigate 
+example, if you want to go to chapter 
+you know hard to using 
+this interface 
+sound 
+similar program happens in 
+operate, applications 
+this is an example map navigation 
+if you moving slowly 
+fine 
+you start moving faster faster, 
+hard to understand whats going 
+
+so typical approach is to manually zoom 
+
+acquire target move, zoom in, 
+move, zoom in 
+you to switch, go back forth, 
+between scrolling zooming 
+inefficient 
+tedious 
+
+so we propose here is to 
+automatically 
+zoom in zoom depending 
+speed 
+so 
+if youre moving, you start slowly, 
+moving fast, slow 
+you change speed in this 
+way, system automatically changes 
+scale screen 
+so in this way, is user 
+navigate large information space, 
+controlling speed 
+so, let show you a demo sound 
+so here 
+program, here we enabled automatic 
+zooming 
+so you moving slowly, nothing 
+happens 
+you move faster faster, system 
+automatically changes scale 
+so here 
+speed in information space is 
+fast 
+thanks to zooming, peak cell 
+flow speed is consistent, constant 
+you move faster, acquire 
+target slow 
+so in this way, you navigate 
+a large information space smoothly, 
+efficiently 
+controlling speed 
+you thing a web 
+browsing 
+again, without zooming, if you move fast, 
+hard to understand whats going 
+
+automatic zooming, youre moving 
+faster 
+system starts to shrink, so here, 
+speed is already fast 
+so difficult to understand 
+whats going without zooming 
+thanks to zooming, pixel flow remains 
+constant, constant, 
+you keep track whats going 
+in addition, system makes chapter 
+structures visible 
+so easy to 
+go to specific chapter, using this 
+interface 
+like chapter 
+techniques useful, 
+inaudible applications 
+so this is an image browser 
+again, without zooming, hard 
+to understand whats going 
+so, neighbouring adjacents, snapshot, 
+then, next, two blocks 
+unknown to understand whats going 
+
+zooming, you know, system 
+automatically zoom out, depending 
+speed 
+easy to understand, whats 
+going 
+next image, two image, this 
+one 
+so this is like reading a big 
+newspaper 
+you know, you reading here, 
+moving to next, 
+you go to see entire overview, 
+go to next 
+this interface naturally unknown, 
+represent this kind interaction 
+so thats a demonstration 
+let briefly describe, discuss 
+implementation issues behind scene 
+so, basic algorithm is very, 
+simple 
+this is a governing equation, basic 
+equation 
+so a scale, multiplied speed, remains 
+constant 
+so means, if speed is faster, 
+speed is larger 
+scale gets smaller speed is 
+smaller 
+scale gets larger 
+so so simple, easy to implement 
+so, this ensures that perceptual 
+scrolling 
+space, speed, screen remains 
+constant 
+however this naive implementation 
+problems 
+so, two problems, sudden zoomout 
+beginning 
+scrolling, also abrupt swelling 
+turning directions 
+let describe one one, first 
+one is sudden zoomout, so let describe 
+here 
+so naive implementation this technique 
+is fast 
+we said speed, proportional to mouse 
+movement 
+in stand like theyre scrolling 
+scale is calculated based 
+equation 
+so heres a diagram 
+so you change mouse position 
+speed, linearly increases 
+based this equation 
+speed equals constant sound dy, mouse 
+position 
+you get speed 
+based equation , you get 
+this speed 
+however, look here 
+soon you start zooming, scale 
+suddenly drops 
+so this sudden drop is 
+annoying, if youre actually interacting 
+a system 
+so thinking zooming, zooming 
+exponential 
+you move mouse, scale 
+multiplied ratio time 
+example, mouse move here 
+scale unknown half, 
+move faster scale 
+unknown in a half 
+so revised implementation, is scale is 
+exponential to 
+mouse movement first, speed is 
+calculated based equation first 
+so, heres a diagram 
+so soon you start scaling, 
+scale is exponential function 
+mouse position 
+like, like this 
+so this will show constant, smooth 
+scaling 
+that, you compute speed, based 
+equation 
+a 
+you know, inverse proportional 
+in this way, you will get 
+a smooth introduction, shown in 
+demonstration 
+then, second problem is abrupt 
+swelling turning 
+suppose you moving downwards fast 
+then, you moved a mouse upwards 
+you change directions, 
+go 
+this 
+here, you know, you change 
+direction, velocity unknown temp, 
+temp, temporarily becomes zero 
+means 
+that scale, equals suddenly zero 
+means that you change direction 
+in a screen abruptly gets larger 
+is annoying 
+so one possible solution is like this 
+so we introduce delay, in scale change 
+so you change direction, 
+zooming scale changes slowly, 
+when, 
+you go back to ori, original 
+speed, scale will recovered 
+so this way, you will get a smoother 
+interaction 
+so thats a brief description paper 
+we published uist 
+title, speed, speeddependent automatic 
+zooming browsing large documents 
+here is a couple pointers 
+sources study 
+study 
+so one is zooming interface 
+zooming interface is interesting 
+a popular topic in user interface 
+computer graphic research fields 
+original paper published an, 
+siggraph ken perlin 
+you still see demos here 
+there also many follow 
+studies techniques 
+also this work is 
+one, one example a research 
+project information visualization 
+techniques 
+information visualization is a 
+large research field, 
+you learn many resources 
+available net 
+also theres a popular textbook 
+
+edward tufte called visual display 
+quantitative information 
+i recommend you to take a look that 
+book 
+thats in this video 
+thank you 

@@ -1,0 +1,190 @@
+[music]
+hello, welcome back to the course
+on web connectivity and
+security in cyber physical systems.
+this is the last lesson in the module,
+introduction to cyber physical
+systems security and privacy.
+in the previous lessons of this
+module we have learned about
+security challenges,
+countermeasures, and attack models.
+in this video excerpt,
+we will explore security and
+privacy issues of important real world
+cyber physical systems called smart grids.
+the next generation of power systems
+involves a variety of smart devices and
+technologies, such as smart meters,
+smart appliances,
+renewable energy resources, and
+energy efficiency resources.
+such devices and technologies are key
+components of a smart electrical grid.
+security is a critical issue in smart
+grids, because they involve critical
+power facilities through millions of
+interconnected electronic devices.
+as you can see on the screen,
+a grid of renewable energy resources,
+transmission lines, distribution centers,
+service providers, and smart electricity
+consumers forms a smart grid.
+in order to provide a service,
+information is collected and communicated
+between the components through
+a distributed and hierarchical network.
+reliability, safety, and
+usability of these services
+are highly dependent on security
+of smart grid networks.
+based on its features, the smart grid is
+vulnerable to different kinds of attacks.
+next, some of the most common
+attack types are introduced.
+like many other networks
+also the smart grid
+suffers from denial of service attacks.
+these attacks can target different
+layers of the smart grid network
+in different ways.
+in the physical layer, channel jamming
+is the most common attack type,
+especially in wireless communication.
+since it's easier for an attacker to
+intercept wireless communication channels
+than authenticated networks.
+in the media access control or
+a mac layer, by spoofing mac parameters,
+an attacker has a better chance
+to access the network in
+order to reduce the performance of
+shared communication channels, and
+compromise availability and
+integrity of the system.
+in the network and
+the transport layers, denial-of-service
+attacks can reduce the end-to-end
+communication performance.
+especially worm propagation and
+traffic flooding in these layers
+can considerably reduce the communication
+speed, and thereby the overall
+performance of the smart grid.
+in the application layer, an attacker
+targets machine's resources, such as cpu
+or i/o bandwidth by exhausting resources
+of smart devices and computer systems.
+in a smart grid, majority of computing and
+communication devices are resource
+constrained, and therefore,
+this kind of attack is very serious and
+threatening for a smart grid.
+in addition to denial of service attacks,
+which may target the availability,
+smart grids are also vulnerable
+to some other attack types
+which target integrity and confidentiality
+of the customer's information.
+for example, usage and pricing
+information and also power system values,
+such as device readings.
+such attacks are more complicated and
+less brute force than
+denial of service attacks.
+the risks of integrity attacks
+are very high and real.
+false data injection is an example
+of an integrity attack,
+which influences both users and suppliers.
+in this type of attack the attacker
+compromises a number of
+measuring devices to
+inject false information.
+this attack can have a long-term and
+heavy impact on smart grid systems,
+resulting in a significant
+financial loss for the suppliers.
+on the other hand, attacks which target
+the confidentiality of information
+are not meant to modify the information,
+but
+to gain knowledge about
+sensitive information.
+eavesdropping is one of the main
+attack types in this category.
+targeted information is typically
+a customer's account number or
+electricity usage.
+data security and
+privacy are a top concern in smart grids.
+utilization of cloud computing for
+data storage and
+processing has caused even
+more problems for smart grids.
+indeed, the wide range and large amount
+of data originating from multiple
+sources makes it challenging to guarantee
+data security and privacy in the grid.
+especially if data, either public or
+private, has multiple owners.
+it is more probable that personally
+identifiable information
+will be eventually passed and
+revealed if not handled carefully.
+this naturally compromises
+the privacy of smart grid users.
+similar privacy issues are also present
+when transforming data by
+aggregating it from multiple owners.
+from the system performance point of view,
+enforcing security and
+privacy measures leads to
+finer granularity of data.
+that is more control information
+is embedded in data,
+and this might cause unacceptable
+latencies in some cases.
+user-centric access
+control approaches provide flexibility for
+the users to control
+access to their own data,
+which is stored in a shared environment.
+in these approaches,
+the access control policies
+could be set to change dynamically
+based on some external information,
+such as the social media
+activities of the users.
+dynamically changing
+access control policies
+impose a high cost in terms
+of system complexity.
+due to its nature, the data in
+the smart grid needs to be archived for
+a long period of time.
+storing the data for a long time requires
+more powerful cryptographic solutions,
+because a computational
+ability to break cryptographic
+algorithms increase with time.
+in addition, the user's perception and
+requirements for
+privacy can change over time.
+with this in mind, the system
+should be designed in such a way
+that there is a built in tolerance for
+changes in security and
+privacy measures for
+long-term archive data.
+in this lesson,
+which concludes the module,
+introduction to cyber-physical systems,
+security, and privacy,
+we looked into some security issues
+of smart grid networks as an example
+of real world cyber-physical systems.
+in the next module, we are going to
+learn about cryptographic solutions for
+securing cyber physical systems.
+[sound]

@@ -1,0 +1,253 @@
+next topic we discuss is control 
+robotic lighting system 
+work we introduce here is titled 
+lighty, a painting interface 
+room illumination robotic light array 
+so a program, we want to address 
+here is that is difficult to 
+control many light, especially 
+change orientations 
+so here an example destination, so suppose 
+we many lights in ceiling, 
+individual lights 
+change orientation 
+this is a huge 
+control parameter space, 
+hard to control 
+appropriate parameters 
+typical user 
+interfaces look like this 
+you many sliders to change 
+brightness orientation, so 
+this is useful 
+people to quickly sketch 
+desired lighting configuration 
+so approach is to 
+use painting interface 
+so configuration looks like this 
+we an environment, 
+we many robotic lights, 
+change brightness orientation 
+we a camera here 
+to capture environment 
+in this kind view, 
+theres a paint, desired lighting this 
+so this part bright, 
+this be, this part dark 
+we paint desired configuration 
+system learns 
+inverse relation, 
+obtain desired parameter setting 
+so thats idea 
+let show you a video 
+so again, this is a system work view 
+so you actuated light 
+ceiling ui in environment 
+you would attempt to control 
+light you pick a tablet 
+use environment 
+paint 
+so this is a prototype 
+hardware we developed 
+we the, we built a miniature 
+room miniature lights 
+miniature furniture 
+this is a array robotic lights 
+so, change 
+orientation individually, 
+also change brightness 
+so, light three 
+degrees freedom 
+so if we light, 
+means yeah, degrees freedom 
+so, heres a painting user interface 
+so, given this screen, 
+youre going to pick a color paint 
+yeah 
+okay 
+so here lots things happening here 
+so this view is always a realtime 
+capture camera view 
+so you see camera view 
+i use a paint, 
+users paint is actually feedback 
+is given quanta lines 
+so this area bright, 
+this area is a little bit dark 
+given this control user 
+request, system continuously learns 
+optimization to get desired parameters, 
+a realtime 
+environment con 
+moves around light 
+up, you see result 
+in realtime in this camera view 
+so, theres a lots 
+happening behind scene 
+yeah, so user paint system searches 
+the, parameter setting interactively 
+you see layout 
+result immediately 
+so, you always see camera view 
+yeah 
+so, depending user input, 
+system automatically computes 
+parameters said 
+derives robotic system 
+so, this is rapid example 
+so, if you touch down, move around, 
+will actually paint uncommitted 
+but, if you hover, you paint 
+top surface, you still see 
+preview painting without 
+actually committing paint 
+so this is a mimic oh, 
+simulation traditional approach 
+so you lights 
+you individually control 
+brightness orientation 
+so, this a typical interface, 
+tedious control one one, 
+to get desired result 
+so we compare this interface 
+painting interface, 
+if you want to bright somewhere, 
+if you want to illuminate somewhere, 
+relatively easy 
+you turn on, you edit right, 
+delete 
+however, if you want to 
+make part dark, 
+suddenly turns to difficult 
+using traditional interface 
+involves control many lights 
+you know, you move like sideways, 
+moving away, looking away turn 
+theres lots interruptions behind, 
+between multiple lights, so 
+thats a difficulty 
+okay, so thats video i think 
+so benefit 
+system is that in addition, 
+make specific regions bright, 
+you also make specific regions dark 
+this is kind negative light 
+so you ask a specific region to 
+get darker, system it, 
+looks like a negative light, 
+if you, figure user study, 
+in painting if user asked to 
+make a upper left corner dark, 
+paint a region darker 
+you get this result 
+however, if you use traditional 
+direct controller, takes time 
+difficult to 
+get this kind result 
+let briefly describe algorithm, 
+behind scene 
+so, this is whats happening 
+so, this is light parameters, 
+so you many parameters 
+light orientations, brightness so 
+if you derive light, 
+if you get this out, you know, 
+physics will happen 
+you will get this camera view 
+then, that i use a paint, 
+desired painting result 
+so, system compares two, 
+optimize parameter setting 
+well get 
+in order to run optimization, you need 
+to this iteratively many times, so 
+instead using actually driving 
+physical lights, we run simulation 
+you know, happens if this 
+parameter setting is given, 
+system simulates illumination 
+result compare result compare 
+to user input, last 
+simulation so, so thats idea 
+so physical process 
+is process, 
+physical process is complicate 
+to obtain analytic model 
+so in order to this simulation, 
+we use a datadriven prediction method 
+so we, so we capture many, 
+many illumination results 
+so you many parameters, 
+like lighting parameters 
+so this light brightness, 
+second right query orientation 
+so you many parameters this, 
+you get many, many camera views 
+so you capture many images 
+based this data, you predict 
+resulting elimination results 
+a new given parameter set 
+in order to this, 
+we basically individually control 
+lighting parameter individual 
+light, we add together 
+however, important point is 
+naive summation image data 
+pixel values work 
+so suppose you pixel a illumination 
+rays here, no, suppose you 
+a illumination result a here 
+illumination result light b here 
+id you tired of, 
+to pixel values, 
+correspond to result, eliminated 
+light a b simultaneously 
+that is nonlinear 
+radiation set between radiance 
+so, physical physical value 
+brightness is directly linear 
+relate, linearly related to pixel 
+value, theres a nonlinearity 
+so in order to handle this, 
+you, we first need to convert pixel 
+values a radiance value 
+so reaward brightness value 
+converting pixel 
+value to radiance value you 
+accurately predict summation 
+two light illumination 
+that we convert 
+to pixel body to get prediction 
+so thats you need to 
+to get this kind system 
+so in summary, we, i shows robotic 
+lighting system painting interface 
+i briefly discussed you need 
+to do, to implement this kind thing 
+so, you need to compute 
+a simulation in radiance space, 
+instead pixel space, 
+pixel brightness value space 
+so reason a paper 
+published design 
+enhancement painting interface 
+room lights 
+if you want to know 
+radiance computation, one, 
+one good starting point is this paper, 
+recovering high dynamic range, 
+dynamic radiance maps photographs 
+so this paper discuss, hot to compute 
+original radiance values 
+multiple photographs, scene 
+also lighting control 
+painting interfaces, there a couple 
+experiments in d graphics, one 
+example is this one, lighting paint 
+so user paints desired lighting result, 
+
+system computes, appropriate 
+lighting computer graphics 
+so we is a real 
+world version this one 
+so thats this week 

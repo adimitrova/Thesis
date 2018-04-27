@@ -1,0 +1,241 @@
+music 
+hello welcome back to course 
+now, 
+i hope you know microcontrollers 
+netfpgas well features 
+in this video, we will show steps you 
+need to follow to make actually work 
+this sequence steps is 
+called a design work flow 
+obviously, design flows 
+microcontrollers spgas different 
+we will start microcontrollers, so 
+application that you 
+want to implement is selected 
+choice appropriate 
+microcontroller platform is done, 
+is time to actually start 
+building solution 
+first, you may want to select 
+a programming language that you will use 
+there three popular 
+programming languages 
+microcontrollers, assembler, c, c 
+sometimes developers use language 
+know best 
+choice may dictated 
+project 
+if, example, 
+project is built using c 
+will cause less trouble if a project 
+extension will done c well 
+however, solution benefit 
+programming language differently 
+assembler is a efficient 
+way to build a solution 
+generated code is fast 
+takes less memory 
+also, assembler lets you investigate 
+inner structure hardware 
+unluckily, is less convenient 
+humans to read a program 
+written in assembler 
+is more, 
+larger solution becomes, 
+difficult is to maintain 
+debug assembly code 
+fortunately, memory cost is low 
+micro controllers nowadays 
+cheaper used to 
+this fact enables use 
+human friendly programming languages, 
+c c 
+languages allow 
+developers to build vigor 
+complex solutions, 
+easier to maintain extend 
+though, is still possible 
+to write assembly code 
+critical parts program, 
+combining c assembler 
+even though required tools, 
+compilers, 
+linkers, used manually, to build 
+an executable a microcontroller 
+is often convenient, 
+to build a solution in an integrated 
+development environment 
+vendors develop ids 
+example, admil, admil studio 
+there, course, options 
+eclipse ide is one 
+this is a free ide range 
+platforms programming languages 
+usually vendors release supplementary 
+libraries to ease use devices 
+speed design process 
+code is written an 
+executable file is built, firmware 
+loaded via programming interface 
+a bootloader if is installed 
+next steps will to execute 
+solution, verify 
+refine program if needed 
+design flow 
+fpgas comprises design entry, 
+design synthesis, design 
+implementation device programming 
+design entry creation includes 
+creating a project 
+adding to project design files 
+files include actual description 
+hardware that you want to in 
+one hardware description languages 
+example, vhdl verilog 
+also design entry might include pin 
+assignment area constraint files 
+in a simplified way an fpga 
+design represented 
+module that inputs outputs 
+top module include many 
+smaller modules connected together 
+bhdl is a widely used 
+outdoor development supports 
+modular style development 
+to make a simple example, lets see a 
+basic gate implemented in bhdo 
+description consists two parts, 
+entity architecture 
+entity declares inputs outputs 
+well types in later stages, 
+this inputs outputs mapped 
+to certain physical pings an fpga 
+architecture describes 
+actual implementation 
+in words, in architecture 
+section inputs mapped to outputs 
+a certain entity may several 
+architectures design synthesis, 
+is important to verify design 
+entry running simulations 
+simulation allows to check if 
+functionality design is correct 
+design synthesis stage, 
+code syntax will checked 
+hierarchy design 
+will also analyzed, 
+ensures that design is 
+optimized chosen architecture 
+result this stage is a netlist, 
+is a textual representation 
+a circuit diagram a schematic 
+design implementation 
+consists four phases 
+translate, map, 
+place route, program 
+translate phase, 
+input netlists generated 
+synthesis merged together 
+design constraints 
+output this phase 
+is a database file 
+describes logical 
+design reduced to primitives 
+map phase, 
+logic defined database file 
+is mapped fpga 
+elements logic blocks 
+output this phase is a circuit 
+description file contains 
+a fiscal representation design, 
+map to components fpga 
+place route process takes 
+circuit description file, places 
+routes design 
+produces another circuit description file 
+that will used input 
+bit stream generation 
+finally, last phase 
+fo programming file generation, 
+actual file that will used to 
+uploaded to hardware is generated 
+i hope you an insight 
+to apply a processor 
+fpgas, well you know 
+application areas 
+often happens, optimal 
+solution, lies between extremes 
+in a sense, is also true in case, 
+we choose between a processor 
+an fpga 
+to find a solution that is 
+flexible, energy efficient, 
+fast time 
+this is hybrid platforms, 
+systems chips, come picture 
+an soc is a microchip 
+circuit that integrates 
+necessary components 
+a system a single chip 
+an soc might leverage advantages 
+embedded processors an fpga 
+indeed, an embedded processor, 
+surrounded programmable logic, 
+is a powerful tool 
+building complex, flexible solutions 
+comparing an soc implementation 
+another one 
+components in a single chip 
+lets say spread 
+printed circuit board, 
+soc will provide a lower cost 
+solution that benefits fast 
+data transfers higher speeds, 
+smaller sizes, is reliable 
+an example an soc lets take 
+a look xilinx zynq chip 
+zynq is a hybrid 
+platform that dual arm cortex 
+a processors programmable logic 
+an axi bus serves a messenger between 
+a processor programmable logic 
+design flow hybrid platforms 
+comprises hardware 
+software development testing, well 
+system integration final step 
+there several representatives 
+zynq family 
+different in many parameters 
+maximum speed hardcore 
+processor, amount available fpg logic, 
+ram size, etc 
+there also several zynqbased 
+platforms market 
+theyve arrived in amount 
+available resources, sizes costs 
+picozed, that is smallest 
+cheapest option, 
+to zynq miniitx that is 
+size standard pc mother board 
+there obviously many 
+platforms available in market 
+ones that we 
+mentioned in course 
+one different 
+features,platforms tools 
+to build application 
+although tool is important, 
+purpose serves is even important 
+in words, selecting a tool, 
+approach application based 
+this is i this lesson 
+in this video, 
+we discussed possible design flows 
+microcontrollers fpgas 
+we also covered hybrid platforms 
+provide a flexible solution 
+certain applications 
+this lesson is also last 
+one this morning 
+i hope to see you in next one 
+thank you watching 

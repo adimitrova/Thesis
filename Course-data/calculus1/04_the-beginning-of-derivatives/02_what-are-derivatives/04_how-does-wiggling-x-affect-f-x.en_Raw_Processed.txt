@@ -1,0 +1,78 @@
+music remember, f prime x is 
+encoding wiggling x affects f x 
+we see this thinking slopes 
+tangent lines well 
+here, ive drawn in orange graph 
+random function yfx 
+this point, a fa ive drawn in red 
+tangent line to graph 
+i want to know is output f 
+affected input moves a to ah 
+i want to know happens i wiggle 
+input adding h 
+let zoom in this picture a little 
+bit 
+here, ive got this tangent line, 
+slope that tangent line is 
+derivative function point 
+a 
+that means that this triangle 
+understood, right this slope 
+fa, this base h means this 
+height is hfa 
+in order to get this slope fa, rise 
+run better equal to fa, this 
+divided this is fa 
+this is giving information 
+wiggling input will affect 
+output 
+if i move a to ah, well, 
+tangent line m moving to this point 
+isnt so far real value 
+function here 
+now, if i made h really, really small, 
+id an even better job 
+staying close to graph 
+function i follow tangent line 
+instead starting function 
+trying to figure derivative, we 
+imagine that we know a little bit 
+information derivative try 
+to figure something 
+function 
+lets make a concrete example 
+suppose that ive got function f, 
+i know is that derivative is 
+x, value , is 
+knowing this information without a 
+rule function this point, 
+i say anything functions value 
+at, say yes, i 
+right f, well thats f plus 
+much output changes i go 
+to 
+well, output change is approximately 
+something that i compute 
+derivative, 
+right 
+derivative is infinitesimally 
+ratio between output change input 
+change 
+so if i multiply much i change 
+input ratio input change to 
+output change, 
+this approximately true 
+output change 
+now, in this case, i know 
+numbers 
+times derivative f is 
+means that this is 
+is 
+thats this function 
+is equal to 
+one cat moves neighborhood 
+happens to mouse population 
+right a small change to one thing will 
+affect something else 
+thats derivative is encoding 
+music 

@@ -1,0 +1,318 @@
+next topic is actuated puppet 
+we introduce here is an actuated 
+physical puppet an input device 
+controlling a digital manikin 
+motivation here is that d 
+character posing is difficult 
+so, suppose you a character 
+that you want to set posing 
+popular approach 
+i think is d widgets 
+screen, 
+you a widget like this, 
+you use a mouse to control 
+individual joy dongles 
+however, this is tedious to 
+control individual joint dongles 
+joint, you three angles, 
+one one, take much time 
+another approach is motion capture 
+you a capture device a unit 
+however, you need dedicated environment, 
+
+that you also need a skilled actor, actor 
+also another possibility is 
+to use physical input device 
+this is convenient 
+you grab a puppet 
+pose, you get d view 
+so you use 
+hands good 
+however standard physical 
+input devices stiff 
+you know if you, if to relax, 
+cannot hold a pose 
+if stiff enough to hold a pose, 
+hard to control 
+also you to control, 
+manually, space 
+joint angles, 
+is inconvenient, in cases 
+so, approach is to add 
+several motors to joint, so 
+we get an actuated physical puppet 
+so we use puppet input device, 
+
+also device reacts to physical 
+batch data to provide active feedback 
+there couple benefits to 
+first, easy to load 
+existing pose robot, so 
+you start existing 
+pose to accelerate posing 
+so one benefit 
+another is intelligent 
+gravitational compensation 
+heres a little bit explanation 
+i said, if joint is free, 
+easy to control 
+you know, 
+cannot hold posture 
+so inconvenient to 
+another approach is always 
+approach turn sabo motors 
+stiff 
+hold existing pose, like this legs 
+however a negative side 
+hard to control, change a pose 
+so we is, adaptively it, 
+intelligent gravitational compensation 
+so if you touch this arm, 
+legs, con, 
+fixed a sabo motor producing 
+a power grav, gravity 
+however, if user start 
+to manipulating joint, 
+system automatically detects 
+automatically turns 
+sabo motors, so 
+you push a berry 
+light weight force 
+so, that is intelligent 
+gravitational compensation 
+finally, 
+we also implemented active guidance, 
+using measured human data 
+this consist joint coupling, 
+data driven inverse kinematics 
+let describe a little bit 
+so joint coupling is two 
+joints work together 
+whats easy to understand example 
+is this hip joint, knee joint 
+you know, 
+you know if you move leg 
+upwards you if you control hip joint, 
+knee joint also follows, right 
+hard to keep legs 
+straight you rotate hip joint 
+so, if you rotate hip joint, 
+natural to also 
+bend knee joint together 
+so, this is joint coupling 
+actuation you it, 
+you know, 
+if you control hip joint, system 
+will automatically rotate knee joint 
+this is joint coupling, 
+is useful to generate 
+natural human posture 
+so this one automatically avoids, 
+unnatural configuration 
+another is, 
+data driven inverse kinematics 
+if you control position 
+example, suppose you control 
+fingertip, go downwards, 
+if you apply simple inverse 
+kinematics result is like this 
+so mechanical value 
+geometric, geometrically bodied 
+finger tip follows user control 
+however, joint rotates along alo, 
+along arm 
+then, resulting pose is strange, 
+a unnatural force 
+instead that, we use data 
+we measure up, lots natural 
+reaching gesture, humour 
+user synthesize 
+appropriate motion 
+so here if user pull 
+fingertip downwards, 
+character, robot, 
+automatically puppet 
+moves making a natural motion, 
+using data 
+so, let show you a video 
+so i said physical puppet 
+controls a physical body character, 
+also body character provides 
+feedback to physical puppet to 
+guide to oppose anything 
+inaudible to eight degrees 
+freedom connect to pc 
+yeah so primarily an input device 
+you control pulse, you 
+sink inaudible pulse 
+so this provides a intuitive way, 
+controlling character posture 
+this tedious, 
+if you use two dimensional mouse 
+one benefit using sabo motors is, 
+uploading pre defined postures 
+a robot, puppet 
+so, you get predefined 
+postures in to puppet 
+so this is a good starting point 
+design, 
+this is gravitational compensation 
+you know, if torque is to relax 
+cannot hold a given posture, 
+you know, if you release goes 
+hand, if you to, 
+always turn torque power, 
+hold posture, 
+but, rigid, you know 
+you need strong power 
+to rotate 
+this is a result 
+automatic gravity compensation 
+so you start pushing 
+system turns power 
+so, you change pose, 
+light weight force 
+also, 
+system hold posture release 
+then, 
+this is a result datadriven ik 
+so, if datadriven ik is turned 
+motion is unnatural 
+robotic motion, 
+robot doesnt change entire body shape 
+however 
+if you turn inverse driven, 
+datadriven ik, 
+resulting motion is vary natural 
+so user control fingertip, 
+system automatically bend legs 
+move head arm 
+this is a joint coupling 
+user is controlling hip joint, 
+system automatically 
+controls knee joint, so 
+so, let show you a couple 
+application scenarios 
+so, suppose you design in car seat, 
+visibility preserved 
+so this, in this way, 
+you intuitively control detail 
+monitoring in car environment 
+you check here, 
+is reachability 
+so you check whether this puppet 
+meet specific target in car 
+so this one is load assessment 
+so this led indicates power 
+is necessary to hold posture 
+so, this is useful 
+analysis environment 
+this is a visibility analysis 
+so changing posture puppet, 
+we see part 
+environment puppet see 
+so thats idea 
+so let briefly describe algorithm 
+specifically, i will briefly describe 
+to datadriven inversekinematics 
+so i said, 
+datadriven i case like this 
+if you move a fingertip, puppet 
+makes a natural human like motion 
+in order to so 
+we get data 
+let first describe 
+inversekinematics in general 
+so in that inversekinematics, 
+is a fundamental program, 
+in character animation 
+also in robotics 
+so suppose you this kind arc, 
+you a base here, 
+you joint one, 
+joint two joint three 
+you joint angles 
+so, forward kinematics 
+is standard way 
+so, given joint angles, 
+you get position fingertip 
+so, this is fairly deterministic 
+single computation 
+however, people usually want 
+to is to specify target x, 
+y position fingertip 
+try to convert 
+appropriate joint angles 
+this is infrequently 
+occurring problem to solve 
+looks like this, given x, 
+y, you gone to joint angles 
+this is inverse problem, 
+is difficult to solve 
+many solutions, 
+many there couple 
+possible ways like purely geometric 
+so something like, minimize a change 
+current configuration 
+physically you know, physically 
+plausible shape, a datadriven 
+datadriven is a method we use 
+so, we synaptics 
+in motion capture environment, 
+we ask person to reach many places 
+around body, we measure 
+postures, to get always position 
+so you get many data like this, x, y, 
+z position, joint angles, x, y, 
+z position, joint angles 
+we get many data samples 
+that user input is 
+target fingertip location 
+we identify 
+nearby samples 
+blend together 
+youll get, 
+a desired joint angle 
+so this is we in 
+datadriven inversekinematics 
+so heres summary 
+so we presented, i presented actuated 
+puppet device character posing 
+user controls a virtual character, 
+using physical puppet, 
+also gets feedback system 
+one important feature is 
+intelligent gravity compensation, 
+active guidance system 
+we, i present 
+datadriven inverse kinematics 
+so, we take many snapshots, example 
+this, blend 
+together to get natural posture 
+so, to learn more, 
+original paper is titles, 
+an actuated physical puppet an input 
+device controlling a digital manikin 
+if you want to know 
+previous standard puppet devices, 
+theres two papers 
+dinosaur input device 
+mice donkeys, 
+specialize in device 
+inaudible animations 
+inverse kinematics, i said, 
+lots work topics 
+so example base like is this one 
+artist directed inverse kinematics using 
+gladiator basis function interpolation 
+so this is an example 
+a datadriven inverse icad 
+also there is a geometric approach 
+so natural motion, animation solute 
+constraining, deconstraining will 
+so this one introduces 
+a purely geometric approach, 
+to get natural posture 
+finger tip positions 
+thats this week 
+i guess inaudible 

@@ -1,0 +1,250 @@
+music 
+in this sixth module, 
+we discussing weak interactions 
+in this second video, we introduce 
+operations charge conjugation, 
+parity, time reversal 
+following this video, you will know 
+discrete transformations space time, 
+parity time reversal, 
+charge conjugation transformation, 
+reverses charges, 
+behavior forces matter 
+transformations 
+reversals space 
+time directions discrete 
+transformations spacetime coordinates 
+space coordinates, 
+transformation is also 
+called parity, p 
+transformations applied 
+operators to a quantum state 
+a particle 
+operators unitary, 
+a double application 
+to initial state 
+reproduce original state 
+therefore eigenvalues 
+two operators plus 
+minus if applied to 
+eigenstates parity time reversal 
+however, there many wave functions 
+eigenstates parity 
+example, a function phi 
+equal to cos x sin x 
+becomes application 
+parity cos x sin x, 
+is neither phi phi 
+eigenstates p 
+classified like in this table 
+scalar wave functions describe spin 
+zero particles positive parity 
+pseudoscalar ones describe spin 
+zero particles parity minus 
+vector axial vector wave 
+functions describe spin 
+one particles parity negative 
+positive respectively 
+parity is a multiplicative quantum number, 
+so total parity a system 
+in ground state is product 
+individual parities components 
+if there is an angular momentum 
+between components, 
+characterized ltype 
+quantum number, 
+must taken account 
+a factor l 
+parity is conserved in interaction due to 
+electromagnetic strong forces, 
+in weak interactions 
+conservation means that if a system is 
+in an eigenstate reaction, 
+will in an eigenstate 
+eigenvalue reaction 
+bound states, total angular 
+momentum, jl s, 
+comes in, multiplying intrinsic 
+parity components 
+consequently, notation jp is 
+used to characterize particles 
+you find in pdg tables 
+particle 
+electromagnetic transitions in bound 
+states, hydrogen atom 
+example, require that l 
+so parity photon 
+must 
+photon is thus indeed a vector 
+particle, we noted in module 
+hadrons parity eigenstates, 
+thus parity eigenvalues 
+used to characterize a particle, like 
+spin, electric charge baryon number 
+parity fermions is 
+opposite to that antifermions 
+convention, parities arbitrarily 
+fixed to leptons quarks, 
+antiquarks antileptions, 
+therefore, parity 
+bosons, parity is 
+particles antiparticles 
+photon parity, 
+we already said, is 
+baryons contain three quarks 
+without a relative quantum angular 
+momentum, proton neutron, 
+a parity , 
+so, finally, parity 
+that is to say that jp is 
+lightest mesons, 
+pions well light kaons, 
+contain quark 
+antiquark anti parallel spins 
+parity , so , 
+called pseudoscalar mesons 
+states quark 
+contents parallels spins, 
+like mesons rho, k, omega, 
+phi called vector mesons 
+jp equal to 
+parity is 
+a theoretical concept, 
+a measurable effect whenever 
+corresponds to a conserved observable 
+let us look dominant decay 
+, goes photons 
+study this process 
+allowed to conclude that 
+is a pseudoscalar boson 
+jp 
+decay products two photons, 
+vector boson jp 
+we project spins 
+natural axis system, 
+given direction two 
+photons in rest frame 
+conservation angular momentum requires 
+one two configurations sketched 
+here, a combination 
+first configuration two photons in 
+a right circular polarization state 
+second left polarized photons 
+parity, momentum two 
+photons change sign spin, 
+pseudovectors, change 
+so parity operation changes 
+first configuration 
+second one, vice versa 
+photon wave function is characterized 
+polarization vector epsilon, 
+points in direction 
+electric field, 
+real photons is normal to 
+direction motion 
+parity is conserved in decay process, 
+this requires that total wave function 
+psi an eigenstate parity 
+to a normalization constant, 
+two possibilities correspond to 
+wave function psi 
+psi, given here 
+first is proportional to a scalar, 
+so parity 
+angle phi between two polarization 
+planes will preferentially zero, 
+an intensity distribution 
+proportional to square cosine phi 
+second is proportional to product 
+between a pseudovector a vector 
+so parity 
+angle phi between polarization 
+planes two photons will 
+preferentially degrees 
+experimentally, is found that 
+indeed orthogonal 
+party 
+is therefore 
+charge conjugation operator, 
+indicated c, 
+is an example a transformation 
+field coordinates 
+transforms wave 
+function a particle, 
+phip, wave function 
+antiparticle, phipbar 
+operation therefore changes sign 
+electric charge, color, baryon, 
+lepton number, 
+in short, quantum 
+numbers charge type 
+thus operator c applied to 
+a fermion gives an antifermion, 
+charges opposite, 
+mass, spin, 
+momentum 
+electromagnetic strong 
+interactions conserve charge conjugation 
+that is to say that this interactions 
+intensity 
+particles antiparticles 
+weak interactions contrary 
+violate c, so 
+distinguish between particles 
+antiparticles 
+particles 
+charge eigenstates c 
+antiparticles 
+photon z boson examples 
+pseudoscalar meson , 
+is also antiparticle, 
+c phipi phipi, 
+eigenvalue c 
+since photon is 
+generated moving charges, 
+change sign 
+electric charge c, 
+c a a 
+so charge conjugation is another 
+multiplicative quantum number 
+a system n photons will 
+a c equal to n 
+example, decay two 
+photons respects conservation c, 
+decay 
+three photons is forbidden 
+indeed, branching 
+ratio this decay is 
+measured to less 
+time reversal operation, indicated t, 
+transforms coordinate 
+fourvector x, so t,x,y,z 
+x t,x,y,z 
+applied to a field, also turns 
+complex conjugate, 
+this is necessary 
+transformation equation motion 
+except real boson fields, 
+there eigenstates alone 
+so conserved quantum number associated 
+importance is rather in combination 
+discrete transformations, 
+parity charge conservation 
+one easily understand that 
+local fields theories must invariant 
+joint action cpt, 
+transforming a process 
+we will see follows 
+that weak interaction 
+violated to a maximum extent 
+symmetry c p, 
+even combined operation cp, 
+transforms right handed fermions 
+a left hand antifermions, 
+is respected weak interactions 
+this introduces a small difference 
+between a reaction reverse 
+gives an objective direction to time 
+we will introduce weak 
+interactions in next video 
+music 

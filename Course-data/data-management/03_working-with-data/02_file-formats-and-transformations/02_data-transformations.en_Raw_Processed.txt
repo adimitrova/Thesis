@@ -1,0 +1,45 @@
+also a good idea to 
+consider data transformations 
+there a number reasons, 
+you may wish to transform data, 
+either project, afterwards 
+unlike earlier discussion 
+migrating files one format 
+to other, data transformations 
+involve changing actual data 
+example via anonymization 
+example in survey data collected 
+questionnaires, multiple choice 
+kinds responses usually coded 
+numbers instead character strings 
+this simple type transformation 
+advantage easing data entry 
+if youre typing in paper responses, 
+also avoids inconsistencies 
+typos in data values 
+qualitative data interview 
+transcripts, transformed 
+quantitative data applying textual 
+coding categorization techniques 
+another reason data transformation may 
+to visualize data effectively 
+a simple example is converting data 
+theres a numerator a denominator 
+ratios to percentages, so you 
+display a bar chart pie graph 
+a number methods may used 
+to transform confidential 
+sensitive data, so 
+shared researchers 
+include aggregation, 
+anonymization 
+youve completed this module 
+take a look reading, 
+youll find additional resources to learn 
+file formats, compression, 
+normalization, data transformations 
+you may wish to move to next module 
+return to references later 
+we recommend that you move to 
+module documentation 
+data citation 

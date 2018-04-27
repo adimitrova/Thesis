@@ -1,0 +1,226 @@
+music 
+hello, im good to see 
+you back in course 
+we start this video, 
+let remind you 
+covered in earlier videos 
+now, you an idea 
+an embedded processor is works 
+you also familiar 
+features an embedded processor 
+i must remind you again, 
+that in this course we make 
+emphasis microcontrollers 
+therefore, large field 
+embedded processors 
+is reduced to microcontrollers 
+you learn microcontrollers, 
+next step would to somehow 
+put hands 
+start actually working 
+one way to so 
+is to buy a microcontroller breadboard, 
+set resistors, capacitors, wires, 
+whatever else is necessary to build proper 
+electrical circuits assemble 
+circuits breadboard 
+well, doesnt sound cool 
+a long process 
+you know there is always one resistor 
+that you need that is missing, 
+in end there will little motivation 
+to continue playing microcontrollers 
+luckily, there is another option 
+to buy a ready made platform 
+a mounted microcontroller 
+to start working immediately 
+in this video going 
+to talk platforms 
+lets start arduino 
+arduino is a widely known platform 
+fast prototyping 
+platform uses atmel 
+microcontrollers core 
+overall there 
+boards available 
+website, you find 
+organized according to application areas, 
+internet things, 
+wearable, others 
+besides boards, there many 
+shields built specifically 
+arduino devices 
+functionality 
+shields vary a lot 
+example, an mp shield you 
+build mp player if you need one 
+a wifi shield is a great 
+tool to build applications 
+lets say in domain 
+internet things 
+a joystick shield is suitable 
+control purposes 
+so if you want to extend 
+functionality board 
+application, 
+you plug in a shield 
+luckily easily done thanks 
+to sockets installed in arduino 
+arduino also provides integrated 
+development environment software 
+development, is easy to use 
+really speeds development process 
+second platform that i would like 
+to mention is stm nucleo platform 
+core there stx complex 
+cortex m microcontrollers m to m 
+so we choose here between speed 
+energy consumption 
+boards also extension connectors, 
+
+connectors compatible 
+arduino shields is convenient 
+also there is socalled morpho 
+connector kind shields 
+a convenient feature this platform 
+is that programmerdebugger 
+is mounted board 
+there in an online id available 
+this platform well a whole set 
+tools including operating system, 
+tools, developer ecosystem 
+building internet things solutions 
+offline ides also available 
+complex arduinos one, 
+
+give you 
+freedom to developer 
+i would say that this platform is 
+experienced users 
+here i mentioned two kinds 
+general purpose platforms 
+that extended help 
+shields to target specific areas 
+there are, course, 
+platforms available market 
+target one specific area 
+might extensible 
+so there is a legit 
+question you might 
+i select a certain 
+platform this diversity 
+first all, choice obviously 
+applicationoriented 
+example, if you want to 
+digital signal processing, 
+you might want to use microcontroller 
+that supports dsp operations 
+if you need high computational power, 
+cortex m 
+cortex m microcontrollers would suit you 
+well since highest clock 
+frequency among previous 
+mentioned mcus 
+therefore choice would either 
+arduino due stm nuclear cortex m m 
+if small size is crucial you 
+there is need high performance, 
+you probably want 
+to check arduino micro 
+is also important to consider that 
+platforms interchangeable in 
+sense that application 
+implemented two different platforms 
+something i would like to emphasize 
+is that a community is crucial 
+comes to choosing a platform 
+bigger community is, 
+likely problems you might face 
+already solved someone else, 
+in case you 
+probably find answer in internet 
+i would like to show you a real 
+project that implemented using 
+microcontrollers 
+is a metering system 
+imagine that we a tube, there is 
+liquid flowing that tube 
+goal system is to 
+measure liquids flow speed 
+since we know size tube, 
+we need to calculate volume 
+liquid that time interval 
+finally, we need to store 
+measurements in a memory 
+is more, device 
+user interface, like a keyboard 
+a small screen 
+so, to start 
+well, we start dividing 
+tasks in two components, 
+metering unit control unit 
+next thing to would to decide 
+to measure liquid flow speed 
+this done using ultrasound 
+we need to emit an ultrasonic sound, 
+receive back, 
+spectral analysis to 
+estimate liquid flow speed 
+dont worry if you dont understand 
+a spectral analysis is 
+here i want to show 
+you is approach 
+so we need to digital signal 
+processing to get liquid flow speed 
+we get measurements, 
+we simple averaging, 
+finally we store 
+processed measurements 
+okay, so we a set tasks, 
+signal processing, averaging, 
+storing, user interface 
+would make sense to map set 
+tasks onto two microcontrollers 
+lets say signal processing 
+will done mcu , 
+we will call this part metering unit 
+tasks will run control 
+unit, will implemented mcu 
+parts will connected 
+together using a uart interface 
+since mcu spectral analysis, 
+cortex m microcontroller would suit well, 
+since dsp extensions 
+we will also need an adc to 
+sample ultrasonic signal 
+hand, mcu 
+need to support dsp operations 
+need to fast enough 
+to communicate a screen 
+a keyboard while 
+averaging time 
+enough pins to 
+work a keyboard least 
+two uart units to work screen 
+to communicate metering unit 
+cortex m would fit well 
+is useful to leave room 
+expansion 
+this means you might want to 
+extra functionality to device 
+in future 
+therefore, selected microcontrollers 
+enough resources in 
+terms performance memory 
+finally, is important to notice 
+that system implemented 
+in many ways 
+in this video we discussed 
+ways to 
+actually start working 
+microcontrollers using platforms 
+hopefully, you an idea 
+to pick an appropriate platform 
+application 
+good luck 
+sound 

@@ -1,0 +1,194 @@
+in this video im going 
+to look five things 
+dont worry, 
+going to take long 
+first all, im going to 
+a quick chat is a function 
+going to look 
+setup function 
+draw function in processing 
+going to find we make 
+animation looking mouse interaction 
+going to look we 
+use mouse interaction in another way, 
+using mousedragged function 
+so, first all, is a function 
+well a function is simply a way 
+creating a block code 
+going to run later in time 
+okay, so instead something 
+like this, we call background 
+actually, background is a function, right 
+calling background, 
+defining background is, 
+telling to run 
+so going to in this 
+video is actually define functions 
+functions going to 
+define called setup draw, 
+special 
+functions in processing 
+run automatically 
+okay, so whereas, 
+think that background function 
+wasnt run automatically 
+run we told to, 
+writing background 
+setup is actually going 
+to run automatically 
+difference is we to tell 
+to in that setup function 
+so normal thing you would in 
+that setup function is set size 
+window 
+so remember size, 
+youve got width, height 
+to remind that thats 
+width thats height 
+you typically in 
+draw function is drawing, 
+hence name 
+so you set things in setup function 
+you draw things in draw function 
+so we drawing 
+im going to sort 
+really illustrate whats 
+going functions 
+hello setup, okay, 
+here im going to say, this is, 
+if you like simplest way 
+to illustrate whats going 
+so, going to is 
+set size window 
+print that draw is 
+going to print hello draw 
+so lets play see happens 
+so this area here is called 
+console whenever you call 
+print things go there 
+really useful debugging 
+so if you want to test a value is 
+something like that 
+so lets whiz to top 
+whats come in console 
+youve probably noticed 
+already that draw is 
+obviously run lots times 
+whereas set up, you see 
+calling setup code 
+so, setup gets called 
+beginning sketch runs 
+draw is automatically 
+called repeatedly 
+thats trick to animations 
+so, if you think animation, 
+basically a series frames 
+different stuff in 
+thats exactly draw allows us 
+to time draw gets called 
+we draw a different 
+frame animation, 
+update picture thats screen 
+okay, so lets try that 
+im going to is bring in that 
+idea, idea mouse movement 
+im going to use mouse 
+to actually draw something 
+so weve seen this rect function 
+so remember x, y, width height 
+four variables, 
+four numbers that we 
+parse rect function 
+so if i put ,, 
+goes to top left screen 
+lets say i want a width 
+height , 
+so lets run that 
+thats interesting, 
+you imagine is basically 
+redrawing rectangle top 
+
+little bit boring 
+happens if instead 
+setting x y to always , 
+if we set x 
+y to mouse position 
+mousex mousey 
+so two special variables here 
+give us access to position 
+mouse currently 
+you imagine, if you move 
+mouse around, theyll change 
+so if draw gets called again, 
+itll update 
+so lets try that 
+so if i move mouse around, 
+you see rectangle appears 
+to following 
+draw draws top 
+previous canvas that there, 
+doesnt wipe time, you 
+see that whatever drawn is 
+kept makes 
+a nice kind drawing effect here 
+course, if we want to wipe it, 
+we could call 
+background functions 
+remember, background fills entire 
+background in a certain color, so 
+im going to fill color black, 
+is a quick way is zero 
+that means every time draw gets 
+called first thing does, 
+wipes everything 
+a black background 
+we hit play 
+you see that now, 
+square is following mouse, 
+wiping that 
+trail squares 
+i kind preferred 
+previous one to honest 
+okay 
+now, final thing i wanted to show 
+you is mouse track function 
+so this is another function 
+that gets called automatically 
+processing 
+this one doesnt called 
+like draw 
+actually gets called 
+mouse is dragged 
+so mouse is dragged 
+you basically click in sketch 
+move mouse around 
+so lets illustrate that 
+so theres whole sketch there 
+theres much to 
+ive got rid code 
+draw function 
+im drawing 
+inside mousedragged 
+so lets see this one 
+youll notice right 
+drawing 
+if i click window start 
+moving mouse, i draw a line 
+i draw another one 
+so a bit like a kind 
+paint program this nice, 
+almost fake, 
+d effect lines there 
+okay, so we done 
+weve found setup 
+function gets called every time 
+sketch runs 
+draw function, 
+gets called repeatedly 
+to use mouse interaction 
+to animation in draw 
+to use mouse interaction 
+basically responding to user clicking 
+window 
+dragging mouse around 
+blank audio 

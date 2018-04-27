@@ -1,0 +1,328 @@
+1
+00:00:00,005 --> 00:00:07,911
+[music] We've already seen
+anti-derivatives for sine and for cosine,
+
+2
+00:00:07,911 --> 00:00:13,408
+so what's an anti-derivative for say,
+cosine 3x?
+
+3
+00:00:13,409 --> 00:00:17,064
+Right?
+I'm looking for some function that
+
+4
+00:00:17,064 --> 00:00:21,486
+differentiates to cosine 3x.
+Well, there's basically one trick that
+
+5
+00:00:21,486 --> 00:00:24,833
+we've been using throughout all of these
+anti-differentiation problems.
+
+6
+00:00:24,833 --> 00:00:29,154
+It's guessing.
+Sine differentiates to cosine, so maybe
+
+7
+00:00:29,154 --> 00:00:33,401
+sine of 3x is a good guess.
+But if I differentiate sine of 3x using
+
+8
+00:00:33,401 --> 00:00:38,852
+the chain rule, I get the derivative of
+the outside function, that's looking good,
+
+9
+00:00:38,852 --> 00:00:42,428
+at the inside function, that's looking
+good, too.
+
+10
+00:00:42,428 --> 00:00:46,703
+But times the derivative of the inside
+function which is 3.
+
+11
+00:00:46,703 --> 00:00:50,653
+So that's no good, but I can fix that
+pretty easily, right?
+
+12
+00:00:50,653 --> 00:00:57,804
+If I just include a 1 3rd here, that rigs
+up everything perfectly, right?
+
+13
+00:00:57,804 --> 00:01:05,485
+Because then the 1 3rd here and the 3
+cancel, and I am left with cosine of 3x.
+
+14
+00:01:05,485 --> 00:01:14,924
+So, I can summarize this by saying that an
+anti-derivative for cosine 3x is 1 3rd
+
+15
+00:01:14,924 --> 00:01:17,330
+sine 3x.
+And then, to get in the other
+
+16
+00:01:17,330 --> 00:01:20,529
+anti-derivative, I just add some locally
+constant function c.
+
+17
+00:01:20,530 --> 00:01:25,458
+Well, that worked out.
+Let's try to do a slightly harder example.
+
+18
+00:01:25,458 --> 00:01:30,386
+Let's try to anti-differentiate say, sine
+of 2x plus 1.
+
+19
+00:01:30,386 --> 00:01:37,397
+Alright, I'm looking for some function
+which differentiates to 2x plus 1.
+
+20
+00:01:37,397 --> 00:01:40,185
+I might guess that the answer will involve
+cosine.
+
+21
+00:01:40,186 --> 00:01:44,020
+Well, I know that cosine differentiates to
+minus sine.
+
+22
+00:01:44,020 --> 00:01:48,211
+So, my first guess might be cosine of 2x
+plus 1.
+
+23
+00:01:48,211 --> 00:01:55,075
+Because if I differentiate this, I get
+minus sine of the inside function, times
+
+24
+00:01:55,075 --> 00:02:00,794
+the derivative of the inside function.
+So, this is not exactly this, so I haven't
+
+25
+00:02:00,794 --> 00:02:05,665
+quite found an anti-derivative.
+But, it'll be easy to patch that up,
+
+26
+00:02:05,665 --> 00:02:09,211
+right?
+If I instead look at a slightly different
+
+27
+00:02:09,211 --> 00:02:13,115
+function.
+If I include a factor of minus 1 half in
+
+28
+00:02:13,115 --> 00:02:19,983
+front of cosine of 2x plus 1, then the
+derivative would be minus 1 half times the
+
+29
+00:02:19,983 --> 00:02:25,760
+derivative of cosine 2x plus 1, which is
+minus sine 2x plus 1 times 2.
+
+30
+00:02:25,760 --> 00:02:32,130
+And now, the good news is that the minus 1
+half, and this minus sign and this 2
+
+31
+00:02:32,130 --> 00:02:38,206
+cancel, and what I'm left with then is
+just sine of 2x plus 1 which means I've
+
+32
+00:02:38,206 --> 00:02:45,347
+found an anti-derivative, right?
+An anti-derivative for sine of 2x plus 1
+
+33
+00:02:45,347 --> 00:02:54,447
+is, according to this argument, negative 1
+half cosine 2x plus 1, plus some constant
+
+34
+00:02:54,447 --> 00:02:57,010
+c.
+I can see a bit of a general principle
+
+35
+00:02:57,010 --> 00:02:58,790
+here.
+Well, here's our set up.
+
+36
+00:02:58,790 --> 00:03:02,660
+I've got m and b, just a couple of
+constants.
+
+37
+00:03:02,660 --> 00:03:08,541
+And what I want to do is
+anti-differentiate a function evaluated at
+
+38
+00:03:08,541 --> 00:03:11,786
+mx plus b.
+Alright, this is the general framework
+
+39
+00:03:11,786 --> 00:03:16,684
+that's general enough to encompass the
+examples we've done thus far, right?
+
+40
+00:03:16,684 --> 00:03:22,302
+F could be say, sine or cosine.
+In our first example, we looked at cosine
+
+41
+00:03:22,302 --> 00:03:27,522
+of 3x, so m was 3 and b was 0.
+In our second example, we looked at sine
+
+42
+00:03:27,522 --> 00:03:30,310
+of 2x plus 1, so m was 2 and b was 1 and f
+was sine.
+
+43
+00:03:30,310 --> 00:03:34,531
+But, this is sort of a general example
+that encompasses some of the specific
+
+44
+00:03:34,531 --> 00:03:37,206
+example which we're already taking a look
+at.
+
+45
+00:03:37,206 --> 00:03:40,867
+Let's suppose that you already have an
+anti-derivative for f.
+
+46
+00:03:40,868 --> 00:03:47,501
+Yeah, let's suppose that I know how to
+anti-differentiate just f, and let's call
+
+47
+00:03:47,501 --> 00:03:52,355
+that F, right?
+So, the derivative of F is f.
+
+48
+00:03:52,356 --> 00:03:55,416
+Now, how do I deal with the mx plus b
+part?
+
+49
+00:03:55,417 --> 00:03:58,875
+Well basically, we're trying to guess.
+What I'm trying to find some function that
+
+50
+00:03:58,875 --> 00:04:02,479
+differentiates to this, and I've got a
+function that just differentiates to just
+
+51
+00:04:02,479 --> 00:04:04,920
+f.
+So, let's see what happens if I
+
+52
+00:04:04,920 --> 00:04:08,850
+differentiate F of mx plus b by using the
+chain rule.
+
+53
+00:04:08,850 --> 00:04:16,374
+Well, the derivative of F is f, evaluated
+the inside times the derivative of the
+
+54
+00:04:16,374 --> 00:04:22,000
+inside, which is just m.
+Now, I can fix this if I include a factor
+
+55
+00:04:22,000 --> 00:04:25,836
+of 1 over m here.
+Then, I get a factor of 1 over m here.
+
+56
+00:04:25,836 --> 00:04:30,158
+And that's great because then this 1 over
+m, and this m cancel.
+
+57
+00:04:30,158 --> 00:04:34,477
+So here, I've got a function whose
+derivative is f of mx plus b.
+
+58
+00:04:34,478 --> 00:04:41,574
+In other words, the anti-derivative of f
+of mx plus b is this, right?
+
+59
+00:04:41,575 --> 00:04:48,574
+It's F of mx plus b divided by m plus c.
+Instead of always just relying on guessing
+
+60
+00:04:48,574 --> 00:04:52,291
+and hoping that we can guess the correct
+anti-derivative, we're going to be
+
+61
+00:04:52,291 --> 00:04:55,380
+learning more and more general techniques
+along these lines.
+
+62
+00:04:55,380 --> 00:04:59,090
+The big one will go by the name
+substitution, or the chain rule in
+
+63
+00:04:59,090 --> 00:05:03,340
+reverse.
+And as we develop more and more of these
+
+64
+00:05:03,340 --> 00:05:09,780
+anti-differentiation techniques in our
+tool box, we'll be able to
+
+65
+00:05:09,780 --> 00:05:17,485
+anti-differentiate a whole lot more
+functions without relying on just flashes
+
+66
+00:05:17,485 --> 00:05:18,700
+of insight.

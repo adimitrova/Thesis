@@ -1,0 +1,50 @@
+sound music hi, welcome to week 
+four, creative programming digital 
+media mobile applications 
+im mick, this is marco matt 
+today going to looking making 
+a basic game 
+going to focus a certain 
+type game 
+a physicsbased game that you run 
+a mobile device 
+really, really popular casual 
+games, theyre, i think two 
+reasons 
+firstly nice to able to 
+run something uses physics 
+phone 
+in addition to that, something 
+got us a dynamic game play 
+so, you use physics in a game, you 
+never quite sure whats going to 
+happen it, very, small changes 
+in way that you use game 
+a big effect game world 
+so this is first time weve done a 
+game, going to, i think, take a 
+step in intensity 
+in the, complexity 
+programming that 
+mark got a big chunk stuff to tell 
+you physics 
+hes built physics engine, which, 
+integrates java javascript in a 
+really neat way, works entirely in 
+processing 
+then, matts going to use that to 
+interesting stuff triggering sound 
+effects actually generating 
+triggering that sound effects entirely 
+based collisions that happen in 
+game world 
+so there is a lot interesting stuff 
+this week, there is also a little demo 
+an app that we built you called, 
+angry droids, i tell you 
+absolutely nothing to 
+d physics based games that you might 
+played 
+fine so without ado, i think 
+going to start marco 
+music 

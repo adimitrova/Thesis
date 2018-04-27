@@ -1,0 +1,185 @@
+sound 
+hello 
+welcome to last 
+lecture this module 
+in previous videos, we studied main 
+structures contiki core, 
+important features 
+we going to cover last piece, 
+cooja simulator 
+cooja is a simulation software 
+wireless sensor network applications 
+works kontiki seamlessly 
+using cooja simulator, 
+wireless sensor network applications 
+running in kontiki 
+ported to different platforms, 
+ti , secuduino, 
+sit one mode 
+simulator allows several libraries to 
+loaded in cooja simulation 
+example, a large wireless sensor 
+network application formed 
+heterogeneous sensor nodes, 
+vary in terms hardware platform 
+in addition, cooja provides 
+several features analyzing 
+controlling a contiki system 
+cooja used different oss, 
+including windows, linux, even mac os 
+cooja simulator is located in 
+tools folder contiki distribution 
+convenience, i will continue 
+discussion latest version, 
+is contiki 
+however, please note that steps 
+commands performed here 
+similar in contiki 
+you start cooja simulator 
+following commands shown in this slide 
+if simulator start 
+second command 
+shows an error, dont panic 
+problem is that in newest version, 
+contiki , folder mspsim is empty 
+in order to fix this issue, 
+you to download msp this link, 
+follow shown steps 
+cooja opens, 
+you create a new simulation 
+choosing file new simulation 
+this opens a window to create a new 
+simulation, shown in slide 
+there several boxes that allow 
+you to fine tune simulation 
+default values, you 
+also set applications requirements 
+applications, 
+unit disc graph medium, udgm 
+distance loss is suitable 
+radio medium 
+delay to start a mode is 
+set in mode startup delayms 
+final setting is seed 
+random number generator in random seed 
+you finish settings, 
+click create butter to new 
+simulation open shown in this light 
+interface five windows 
+network window 
+in upper left corner shows 
+networks physical layout 
+simulation control window 
+in middle top part 
+is used to control simulation 
+you stop, start, 
+reload simulation 
+mote output window center shows 
+serial output generated motes 
+timeline window bottom 
+shows events that occur mode 
+timeline simulation 
+finally notes window 
+in right side 
+temporary notes in simulation 
+lets start to setup a whole 
+network a single rpl border router 
+we start adding single border router 
+to this, go to motes add motes 
+followed create new mote type, 
+select sky mote 
+in this example we work sky mote 
+you choose types mote depending 
+applications requirements 
+remember to give mote 
+type a useful description 
+create border router several nodes 
+slide shows a form 
+creating a new mode type 
+now, we will need to fill boxes 
+first one is mode name 
+in this case, 
+we set name border router 
+in second box, we provide 
+path to source node 
+there two types 
+sources we provide here 
+first one is source file in c, 
+second one is a compiled file 
+in this example, we 
+compile source a sky node 
+therefore we provide a c source 
+file rpl router 
+now, we compile source file 
+clicking compile button 
+is recommended that you 
+click clean compiling 
+compilation is successful, 
+you create a border router 
+selecting create button 
+now, a new window appears 
+you must fill empty boxes 
+is also fine to leave 
+default settings here 
+box that you must fill edit is 
+box labeled number new nodes 
+in network we need one 
+border router, so value is one 
+choosing av node, a single border 
+router node appears in network window 
+we need to repeat 
+steps to create additional nodes 
+two differences source 
+nodes number nodes 
+in this case, we provide 
+caesars file directory, 
+you find slide 
+please follow detailed steps 
+in slide to add notes 
+everything is successfully 
+done you will see a total 
+six randomly placed notes 
+network window shown in slide 
+six nodes, 
+node one is border router 
+rest nodes 
+will execute unicasts sender code 
+note that you click, drag nodes, 
+locate preferred location, 
+to create network topology 
+you click a node, also shows 
+radio environment in green 
+grey color 
+please note that to 
+radio enviornment 
+network traffic displayed, you must 
+choose options in view menu 
+even though network 
+layout is set 
+is jet complete 
+starting simulation a bridge 
+rpl network must created 
+bridge is responsible 
+connection local 
+network internet 
+means that bridging helps 
+border router become connective 
+outside world 
+subsequently ip address 
+border router pinged 
+we create bridge using 
+command shown slide 
+results similar 
+to shown bottom 
+we verify this using a web browser to 
+connect to router using this address 
+if you also get a results similar to 
+one shown here congratulations, 
+you successfully 
+created an rpl network 
+i hope that this video you 
+simulate one application 
+use a capstone project 
+this video we conclude module 
+i hope you enjoyed watching 
+music 

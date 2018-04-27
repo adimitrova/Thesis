@@ -1,0 +1,206 @@
+okay, next topic is desktop icons 
+we will introduce here is called 
+bubble 
+clusters 
+so topic we discuss here, is a 
+management desktop icons 
+so, suppose you a desktop one 
+possible 
+way, organized desktop is viewed 
+special aggregation special clusters 
+so, you put system icons here 
+shortcuts here 
+documents here documents 
+topic here 
+so, this way people manage, various 
+information in limited space 
+however, a program is this kind 
+visual cluster 
+is comprehensible a computer 
+so theyre icons a computers 
+point view 
+so, whenever you have, you walk this 
+kind 
+a layout, you to explicitly select 
+group objects 
+so, thats one problem 
+another problem is that you to, if 
+you put 
+many icons in a location, 
+cause a cluster 
+if you want to grab one icon hidden, 
+behind icons, you to move 
+icons away 
+so thats a problem we want to address 
+let describe program 
+so here, you be, clearly see four groups 
+here 
+however, system understand 
+kind clusters 
+so, you to manually select move 
+around you get a new 
+group 
+you again, you to manually 
+select 
+though, this tedious 
+also, if you have, a big cluster, like 
+this 
+there you to pick up, icon hidden 
+
+hidden behind 
+you to manually move 
+pick one object 
+so, this is 
+tedious 
+so, we propose is, bubble clusters 
+so, bubble clusters is automatic grouping 
+nearby icons 
+visualization in a 
+bubble 
+also, additionally, we introduce 
+automatic spreading 
+cluster to pick hidden icon 
+so let go back to demonstration 
+so here, you three grids, if you 
+enable 
+bubble clusters, you will see three 
+bubbles, 
+if you grab a bubble, you drag 
+around 
+by, grabbing a bubble, without 
+manually selecting a group 
+sound bubble, is automatically 
+computed, 
+soon you place two icons 
+nearby 
+theres a little bit small 
+details interesting details 
+here, two two, in 
+distance, 
+however you know, if two icons 
+previously separated 
+will resist to merged fast 
+soon merged, 
+start to resist to splitted 
+so, this is, kind history resist 
+is useful 
+you can, you know, move around 
+pick many icons 
+then, if you a hidden icon, like 
+this 
+you double click here, 
+you would temporarily spread icons 
+you grab icon system go 
+back to original state 
+so, this is a bubble causal technique 
+a bubble clusters technique, 
+idea 
+applicable to this kind digital 
+ink 
+so, if we walking digital ink 
+system 
+you know, you probably want to 
+manipulate individual strokes 
+rather that, cluster a 
+meaning grouping 
+then, whenever you draw strokes, 
+system automatically groups nearby 
+strokes together 
+you move around strokes, 
+grabbing blue area 
+if you connect together, itll one 
+object, 
+you draw line you will split 
+them, 
+so this is useful a discussion 
+a 
+discussion whiteboard digital inks 
+thats a demonstration 
+let briefly describe essence 
+implementation 
+so, we, i will first describe clustering 
+algorithm 
+so, we use very, simple pairwise 
+distance threshold 
+so, objects screen, first 
+we assign object to one cluster 
+so, cluster object is like this 
+then, object pairs, oi 
+oj 
+if distance is smaller threshold 
+will merge to object 
+heres a view 
+so paper, pair, we check 
+distance, one threshold 
+if is smaller, we merge 
+interesting part is here, 
+threshold 
+so, if the, if previously, in previous 
+frame, if 
+object in different cluster, 
+threshold becomes small 
+so, difficult to merge together 
+then, if two objects 
+cluster, in 
+previous step, becomes larger, 
+means easier to merge together 
+a cluster, we regenerate 
+a visualization bubble 
+here, technology we use here, is 
+d implicit surface 
+so, implicit surface, is, to compute 
+potential field 
+field around element, place 
+isosurface field 
+so, suppose you one, two, three, 
+four, five object 
+we generate this kind potential field 
+around it, kind height field 
+we aggregate together 
+compute isosurface 
+here is a visualization 
+sound so, if you this kind 
+icons 
+this will, this one showings 
+potential field 
+you see, if you aggregate 
+object becomes brighter means 
+high potential field 
+that, we trace 
+lines, 
+height, heights 
+and, however, timeconsuming, to 
+process individual pixels 
+so, we compute potential field values 
+grid cells, like this 
+computing potential fields 
+grid cells, we, 
+of, we, extract isosurface a technique 
+called marching cubes 
+so, heres a summary this video 
+so, program we discuss here, is 
+a management spatially organized 
+miniicons desktop 
+solution here 
+we propose here, is automatic 
+clustering nearby icons a bubble 
+heres a pointers 
+learning 
+so, original paper published a 
+bubble cluster, 
+clusters an interface manipulating 
+spacial aggregation graphical objects 
+technique we use here, is called 
+implicit surfaces 
+implicit surfaces popular 
+technique in 
+computer graphics, to represent liquids 
+inaudible object 
+first publication siggraph 
+jim blinn 
+also, isosurface extraction 
+technique, 
+called marching cubes published 
+this is a basic literature, i 
+recommend that, to take a look 
+thank you 

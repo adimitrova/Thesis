@@ -1,0 +1,228 @@
+1
+00:00:00,012 --> 00:00:08,582
+,, . I can cook up some really nasty
+functions, give them to you. And then ask
+
+2
+00:00:08,594 --> 00:00:16,943
+you to differentiate them. For instance, I
+could ask you to differentiate this
+
+3
+00:00:16,955 --> 00:00:19,112
+function. 1 plus x squared to the 5th
+power, 1 plus x cubed to the 8th power,
+
+4
+00:00:20,130 --> 00:00:24,591
+all divided by 1 plus x to the fourth,
+this to the seventh power. In principle,
+
+5
+00:00:24,603 --> 00:00:29,308
+there's nothing stopping you from plowing
+ahead and computing the derivative. You
+
+6
+00:00:29,320 --> 00:00:33,720
+can totally differentiate this function.
+Right? What's the derivative of this
+
+7
+00:00:33,732 --> 00:00:38,085
+function? Well, this function's a quotient
+so he needs the quotient rule. The
+
+8
+00:00:38,097 --> 00:00:43,428
+denominator of the quotient rule is the
+original denominator squared. So it's
+
+9
+00:00:43,440 --> 00:00:49,054
+going to be the original denominator now
+to the 14th power And the quotient rule,
+
+10
+00:00:49,169 --> 00:00:54,543
+the numerator starts off with the
+derivative of the original numerator. Now,
+
+11
+00:00:54,646 --> 00:00:59,192
+the original numerator is a product. So
+I'll be able to do this derivative by
+
+12
+00:00:59,204 --> 00:01:04,287
+using the, product rule and chain rule. So
+it's the derivative of the numerator imes
+
+13
+00:01:04,299 --> 00:01:08,490
+the denominator. And it keeps going,
+right? Then I gotta subtract the,
+
+14
+00:01:08,841 --> 00:01:13,255
+derivative of the denominator times the
+numerator. But, look, you can do this
+
+15
+00:01:13,267 --> 00:01:18,250
+derivative just by careful application of
+the quotient rule, the product rule, the
+
+16
+00:01:18,262 --> 00:01:23,120
+power rule, and the chain rule. There is
+one thing stopping you, your sense of
+
+17
+00:01:23,132 --> 00:01:27,500
+human decency. It's just an awful
+calculation. Nobody would want to do that.
+
+18
+00:01:27,602 --> 00:01:32,225
+So instead, I propose a trick. But maybe
+it's not a trick, because it's a trick
+
+19
+00:01:32,237 --> 00:01:37,035
+that fits into a general theme. It's
+logarithms. Logarithms turn exponentiation
+
+20
+00:01:37,047 --> 00:01:41,915
+into multiplication, and multiplication
+into addition. Let's see how this helps
+
+21
+00:01:41,927 --> 00:01:46,755
+us. So here we go. Instead of calling this
+function f of x. I'm jut going to call it
+
+22
+00:01:46,767 --> 00:01:51,665
+y, because I'm getting ready to do a sort
+of implicit differentiation. I'm going to
+
+23
+00:01:51,677 --> 00:01:57,117
+first apply log to both sides of this. And
+I'll get log y. And what's log of the
+
+24
+00:01:57,129 --> 00:02:03,404
+other side? Well it 's log of a quotient,
+which is a difference of logs, and logs of
+
+25
+00:02:03,416 --> 00:02:09,272
+things to powers, which is that power
+times log of the base. So this works out
+
+26
+00:02:09,284 --> 00:02:15,825
+to 5 times log of 1 plus x squared plus
+This log turns multiplication into
+
+27
+00:02:15,837 --> 00:02:23,713
+addition. 8 times log of 1 plus X cubed
+and this quotient becomes a difference,
+
+28
+00:02:23,867 --> 00:02:30,120
+so, minus 7. The 7 in the exponent, log 1
+plus x. Now, we differentiate. All right,
+
+29
+00:02:30,237 --> 00:02:35,320
+so differentiating now, what's the
+derivative of log y? Remember, y is
+
+30
+00:02:35,332 --> 00:02:40,415
+secretly a function of x, so I
+differentiate log y. It's the derivative
+
+31
+00:02:40,427 --> 00:02:46,275
+of the outside, which is 1 over y, times
+the derivative of the inside, which, I'll
+
+32
+00:02:46,287 --> 00:02:51,783
+write dy dx. This is really an example if
+you like the implicit differentiation.
+
+33
+00:02:51,893 --> 00:02:56,955
+Alright, now I differentiate the other
+side, 5, I just multiply it by 5 the
+
+34
+00:02:56,967 --> 00:03:03,347
+derivative of log is 1 over, so 1 over the
+inside function and 1 plus x squared times
+
+35
+00:03:03,359 --> 00:03:08,801
+the derivative of the inside function
+which is 2x. The derivative of 1 plus x
+
+36
+00:03:08,813 --> 00:03:15,125
+squared is 2x. All right, plus 8, and its
+derivative log is 1 over at the inside
+
+37
+00:03:15,137 --> 00:03:21,440
+function, 1 plus x cubed, times the
+derivative of this inside function, which
+
+38
+00:03:21,452 --> 00:03:27,673
+is 3 times x squared, minus 7 over, the
+derivative of log is one over at the
+
+39
+00:03:27,685 --> 00:03:34,484
+inside function, one plus x to the fourth,
+and the derivative of one plus x to the
+
+40
+00:03:34,496 --> 00:03:41,078
+fourth is four x cubed. We're almost
+there. So now, I just multiply both sides
+
+41
+00:03:41,090 --> 00:03:48,485
+by y. And I get that the derivative is
+this thing calculated x y, y is this
+
+42
+00:03:48,497 --> 00:03:56,814
+quantity. I can write this a little bit
+more nicely alright here's this 5 times 2x
+
+43
+00:03:56,826 --> 00:04:02,769
+is 10x, 8 times 3 is 24, 7 times 4 is 28,
+and then I multiply by y. So I found the
+
+44
+00:04:02,781 --> 00:04:09,476
+derivative, here it is. In general, this
+trick logarithmic differentiation as it's
+
+45
+00:04:09,488 --> 00:04:14,672
+called, works fantastically well for
+functions like these. Rational functions
+
+46
+00:04:14,684 --> 00:04:16,791
+that involve a lot of high powers.

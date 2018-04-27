@@ -1,0 +1,95 @@
+sound 
+so that week four 
+youve seen to use a physics 
+engine to make a basic game 
+use physics really 
+bring richness to game play 
+strong interactivity 
+theres a mass games there 
+mobile platforms 
+maybe you want to talk a little bit 
+
+well 
+potential 
+well there is a lot potential 
+you use kind 
+techniques to easily make a casual game 
+casual gaming is one 
+big coming genres in markets 
+so you here, sort game 
+you play youre bus 
+youre train 
+really engaging 
+really, really small changes in 
+way that you use massive impact 
+you know you, you cant, quite 
+difficult to get exactly thing 
+time although always 
+deterministic 
+so always if you get 
+thing 
+so yeah a really useful thing 
+making games 
+also we a little bit 
+sound inaudible, collision didnt 
+we 
+yeah so, so usual we try to get 
+creative sounds well 
+graphics, so, so, so we were, we 
+looking 
+this way sort working 
+opposite direction to we last 
+week 
+so we kind parameterizing 
+audio going in 
+graphics 
+so we kind sending back impacts 
+velocities from, physics engine 
+using that to control playback 
+yeah, that worked really well 
+so theres a lot you could 
+always, a thing to get you 
+started 
+a jumping point 
+i mean, i think you can, theres, 
+you look game you already play 
+see games android 
+iphone markets 
+loads use physics you 
+could probably start figuring 
+theyre built trying to build 
+versions 
+inaudible yeah 
+coming games 
+thats right 
+inaudible if 
+going to go away 
+a genre is going to around 
+a long time 
+something is easy enough 
+you to build in d source 
+engaging 
+so yeah you dont to make big d 
+monstrosities to making, to big in 
+games market 
+next week going to 
+something is a bit 
+complicated 
+going a bit deeper 
+facebook integration also using 
+stuff like camera mobile 
+device 
+so thats going to an interesting 
+week 
+theres a lot new stuff there 
+a lot people interested in social 
+media integration that 
+really kind covering that 
+
+so remember to check forums, 
+to talk to students there 
+able to, you know 
+going to respond to you 
+questions that you 
+well see you next week 
+music 

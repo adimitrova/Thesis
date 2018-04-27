@@ -1,0 +1,126 @@
+music theres a visual way to gain 
+insight antidifferentiation 
+problems 
+a visual method goes name slope 
+fields 
+so, whats a slope field 
+idea is that i start 
+function 
+like, heres an example function x 
+squared minus x 
+instead graphing function, 
+like i normally here, im graphing 
+functions values 
+i make a graph 
+thing that im graphing is little 
+tiny line segments that given slope, 
+right 
+so, instead plotting a value 
+height, i draw little tiny line segments 
+that slope 
+now, you see in this example that if 
+you plug in this function, 
+output 
+in this slope field, if you look a 
+point whose x value is whose x value 
+is , there im plotting horizontal 
+lines, lines slope zero 
+here, ive got high slope, 
+here ive got high slope 
+that reflects fact that this 
+functions value is high x is 
+negative x is positive 
+in between here, ive got a 
+little tiny region lines 
+pointing down, right 
+slope little line 
+segments is negative 
+course, thats theres a 
+little tiny region here this 
+functions value is negative 
+well, lets look a specific example 
+this specific example, function f 
+x equals x times cosine x 
+now, i draw slope field this 
+example 
+well, in that case, heres slope field 
+that i get 
+imagine that i an antiderivative, a 
+function f, whose derivative f 
+that is, suppose i function, f, 
+whose derivative f 
+slope field is drawn so that 
+little line segments slope equal to 
+value f, so i could use this slope 
+field to try to draw a picture, graph 
+function f, right 
+lets suppose that function maybe 
+starts here 
+then, i could try to follow slope 
+field along try to use information 
+in the, in slope field to try to draw 
+a picture function, f, must 
+look like 
+so, slope fields let you see 
+antiderivative, right 
+if you follow slope field, youre 
+tracing a function whose derivative is 
+given slope field 
+now, we find this antiderivative, 
+trying to antidifferentiate x 
+cosine x 
+well, first guess might x sine x 
+i mean, thats a reasonable guess 
+differentiating sine will give 
+cosine it, happens if i 
+actually differentiate this product 
+well, thats sort thing that i 
+product rule is x times 
+derivative, is cosine 
+so, thats looking good 
+plus derivative first, 
+is times second, is sine 
+x 
+so, antiderivative x cosine x 
+isnt x sine x ive got this 
+pesky additional sine x term 
+i also know that derivative 
+cosine is minus sine 
+so, if i add things together, right 
+if i add together, whats 
+derivative x sine x plus cosine x 
+well, two things added 
+together 
+thats x cosine x, is good, plus 
+sine x minus sine x 
+so, x cosine x 
+so that means general antiderivative 
+x cosine x is x sine x plus cosine x 
+plus constant c 
+yeah, we see this in graph 
+so here, ive graphed x sine x plus cosine 
+x 
+you see that really moving in 
+direction slope field, 
+makes sense 
+slope field is coming x 
+cosine x, is derivative this 
+thing 
+and, you know, i drew slope field 
+drawing little tiny line segments whose 
+slope is x cosine x 
+so, since this thing differentiates to x 
+cosine x, this thing is really moving 
+along slope field 
+slope field picture also gives you 
+insight plus c really 
+works 
+is plus c really accomplishing, 
+right 
+moving graph 
+if you start with, you know, say x 
+sine x plus cosine x, you slide 
+that graph down, still 
+following slope field, right 
+still an antiderivative x cosine 
+x 

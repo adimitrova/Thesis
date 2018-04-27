@@ -1,0 +1,197 @@
+music youve already seen a few 
+different techniques to multiply 
+quickly 
+techniques include 
+quartersquares, using logarithms a 
+sliderule 
+that method prosthaphaeresis, 
+involves arc cosine 
+so yeah, theres a ton different 
+techniques that i use to multiply two 
+numbers quickly 
+if i could already multiply 
+quickly, i wanted to divide quickly 
+if i wanted to calculate divided 
+b 
+well, we use newtons method to 
+this 
+now, going to use newtons 
+method 
+well, newtons method is really a trick 
+finding zeroes a function 
+so, if i want to approximate one divided 
+b, reciprocal b, i really 
+want to find is function that 
+number is a zero function 
+newtons method will help approximate 
+that zero consequently help 
+approximate b 
+theres a ton different choices that 
+possible a function 
+well, heres one choice 
+function f x equals x minus 
+b 
+lets check, yeah, if i evaluate 
+this function b, thats 
+b minus b 
+b, reciprocal 
+reciprocal b, is b 
+b minus b is in fact 
+so, this function f b 
+a 
+lets apply newtons method 
+so we going to this 
+here is formula newtons method, 
+right 
+this is iterative formula, next 
+guess is old guess minus this fraction 
+function evaluate old guess 
+divided derivative evaluate 
+old guess 
+this works, marching 
+closer to a function 
+heres good function 
+division 
+this function a b 
+so, if i get closer closer to a 
+zero this function, im actually 
+computing b, is i want 
+to 
+so, lets try to rewrite this formula 
+using this 
+first step here is to 
+differentiate this 
+so, lets differentiate this 
+well, differential goes back to x 
+so, derivative x is minus 
+x squared, b here is 
+constant 
+so, i to include 
+so, this is derivative f 
+now, ill use that to try to make this 
+newtons method formula look a little bit 
+nicer 
+so, x n plus is x n minus 
+function evaluated, x n, is 
+x n minus b, divided 
+derivative evaluator x n, is 
+minus x n squared 
+now, to kill this denominator, lets 
+multiple minus x sub n squared divided 
+minus x sub n squared 
+thats a sneaky version , 
+manages to kill denominator 
+simplify this a bit 
+ive got x sub n 
+ive got minus x sub n squared times 
+x sub n, that leaves a minus 
+x sub n 
+ive got a negative b, negative x sub 
+n squared, thats a plus b x sub n 
+squared 
+im subtracting this 
+so, ive got x sub n plus x sub n, thats 
+two x sub ns, minus b x n squared 
+ill factor an x n, so x n 
+times minus bx n 
+ive got here is an iterative 
+formula that, least works 
+applying this iterative formula is going 
+to move closer closer to one 
+b 
+this formula doesnt involve division, 
+involves multiplying 
+subtracting 
+so, this is a way to approximate b 
+without ever dividing, right 
+multiplying subtracting 
+
+then, well make this even concrete 
+lets set b equals so i try to 
+approximate 
+so here we go 
+b will 
+so, trying to approximate th 
+using newtons method 
+so, i make an initial guess 
+ill make initial guess th 
+make arithmetic work out, a 
+little bit reasonably 
+im going to start this initial 
+guess, ill use this formula we 
+derived to improve this initial guess to a 
+hopefully better guess 
+so, i take original guess, th 
+multiply minus b is , times 
+previous guess th 
+i calculate this 
+this is th times, instead ill 
+write th 
+instead times a th, ill write 
+th 
+i got minus th, so thats th 
+so, th times th, thats th 
+thats a slightly better to 
+value of, th, i repeat 
+this process using this formula 
+so, ill get a better guess here x sub 
+starting previous guess, 
+is th 
+multiply that minus times 
+previous guess th 
+i calculate this is 
+so, th 
+instead , ill write th, thats 
+another name minus 
+instead times , ill multiply that 
+
+ill get th 
+now, minus , thats th times 
+th 
+times is , times 
+is , 
+so, thats an even better approximation to 
+actual value th 
+i could appreciate process 
+arithmetic gets, you know, sort 
+awful 
+point here isnt so much, you 
+know, that i actually this 
+paper, that i would want to this 
+paper 
+that this procedure involves 
+adding, subtracting, multiplying, 
+yet ends calculating a division 
+problem 
+well, close we to actual value 
+th 
+th is keeps 
+going 
+so yeah, really quite well 
+i mean, is a pretty good guess to 
+actual value th 
+this method a name 
+so, this technique usually goes 
+name newtonraphson division 
+we saw that works finding 
+recipricols, if you find 
+recipricols you multiply, you 
+division in general 
+alright, if you wanted to approximate 
+th using this technique, well, you 
+point that th is times th, 
+right 
+imagine that you multiply, add, 
+subtract, division is hard 
+okay, well a moment ago, we approximated 
+th, alright 
+we approximated th to , 
+, 
+this second stage in 
+approximation 
+times , is , 
+isnt so far th, right 
+point though is that, you know, if 
+division, if division that 
+involves repeated adding, subtracting, 
+multiplying 

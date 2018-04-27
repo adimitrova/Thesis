@@ -1,0 +1,118 @@
+music really, we to even 
+bother checking endpoints 
+so, lets suppose that i want to find 
+maximumminimum values this function f 
+x equals x minus x cubed 
+that function, f, if i considered 
+whole real line, doesnt achieve a maximum 
+minimum value 
+f x is really negative if x is really 
+positive 
+conversely, f x is really positive 
+if x is really negative 
+true enough 
+so, lets ask a better question 
+if i want to maximize minimize 
+this function closed interval 
+minus to 
+this is a continuous function a 
+closed bounded interval 
+so, extreme value theorem guarantees 
+that ill successful, right 
+guarantees that there is input 
+minimizes this functions value 
+input maximizes this functions 
+value this interval 
+ill begin listing critical 
+points this function 
+so, ill differentiate this function, 
+right 
+if i differentiate that function, 
+derivative x is , derivative 
+minus x cubed is minus x squared 
+alright, so, theres derivative 
+im looking places 
+derivative is equal to , 
+derivative doesnt exist 
+well, this function is differentiable 
+everywhere 
+so, theres critical points 
+derivative doesnt exist 
+there going to places 
+derivative is equal to 
+lets find 
+so, im trying to solve this equation 
+ill add x squared to sides, im 
+really trying to solve equation, 
+equals x squared 
+divide sides , so now, im trying 
+to solve equation rd equals x 
+squared 
+now, ill take a square root sides 
+ill find that x is equal to 
+square root a third maybe negative 
+square root a third, so ill write 
+x is plus minus square root a 
+third 
+two critical points this 
+function 
+oh, im also going to careful to list 
+endpoints 
+well see we to 
+so, here points that i 
+check, right 
+i check critical points, i 
+found two critical points 
+negative square root a third, 
+positive square root a third 
+i also want to check endpoints, 
+right 
+original question is asking to 
+maximize minimize this function 
+this interval, includes endpoint 
+minus endpoint 
+so, im going to include list 
+points to check 
+so, this continuous function 
+achieve maximum value 
+this continuous function 
+achieve minimum value given 
+domain 
+so, lets go ahead evaluate 
+function four points 
+here endpoints, minus , 
+critical points plus minus 
+square root a third 
+i evaluate function 
+points, i find 
+well, i find that largest output 
+occurs x is negative 
+smallest, negative output 
+occurs x is equal to 
+critical points, outputs, you 
+know, in size bigger , 
+nightmarish scenario wouldve ensued 
+i forgotten to include endpoints 
+well, heres danger, right 
+this is actually im saying 
+im saying that if x is in this closed 
+interval, largest value 
+function occurs x is equal to minus 
+, smallest value occurs x is 
+equal to 
+if i hadnt included endpoints in 
+chart, i would fooled 
+thinking that largest output this 
+function 
+this interval, this closed 
+interval between minus , 
+largest output actually occurs this 
+endpoint 
+upshot to these, is that 
+endpoints are, in sense, critical 
+points 
+standing an endpoint, you cant wiggle 
+freely, so you really cant differentiate 
+youre standing an endpoint 
+a place you cant differentiate 
+thats one critical points 

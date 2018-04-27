@@ -1,0 +1,204 @@
+kinetic energy, lets start here 
+we this blobs in space 
+blobs in space we able to 
+show kinetic energy nothing 
+kinetic energy center 
+mass plus kinetic energy 
+center mass 
+this second term contains 
+deformational energy, 
+if panels flexing 
+fuel is sloshing 
+rotational part, right 
+lets use assumption 
+r dot a rigid body, 
+doesnt go to zero, 
+r dot became omega crossed r, 
+body relative derivative zero 
+so also going to 
+focus rotational side 
+this is basically translational 
+energy comes 
+orbits class 
+going to focus orbits in 
+here, rotational dynamics, so 
+going to cover that 
+this is i plugged 
+in r dot is omega cross r 
+so you get a bunch cross products, 
+dot product 
+you know right away there 
+must magic trick identity 
+that we rearrange this 
+thats kind im here, 
+almost actually 
+first, im using trig here, this omega 
+is a constant seen integration 
+if rigid, every point 
+to rotating rate 
+so this omega i take outside 
+theres a dot product 
+okay i use a vector identity 
+already to rewrite this this form, 
+i could take omega 
+outside to dot product 
+here im still left 
+omega in middle 
+we trick that 
+a cross b is minus b cross a 
+that puts right hand side 
+you take that one well 
+in fact if you go back look hc, 
+this whole definition is nothing hc 
+in fact this term becomes nothing 
+inertia tense times omega 
+inertia tense times 
+omega nothing 
+angular momentum that point c 
+so nice, we have, rotational 
+energy simply written one half 
+omega dotted angular momentum 
+two vectors dotted together 
+you dot them, 
+mathematically make sure theyre 
+taken respect to frame 
+here is written in 
+a frame agnostic way 
+so angle rotation, so 
+thats thing, h is i omega, 
+you might remember rotational energy 
+inertia times angular 
+rate squared fixed axis rotation 
+this is d version that 
+you would onehalf 
+omega transpose i omega 
+thats basically inertia omega squared 
+, essentially thats is 
+power 
+we earlier, 
+if time derivative a blob, 
+first part translation force 
+times inertial velocity, again, 
+thats translational sign 
+we care here is dot 
+so if you differentiate this term, 
+you will end this 
+to get this form, you need to 
+rotational equations motion, 
+we havent derived yet 
+i will let you, this is something 
+you make a note in exam, 
+definitely go back make sure you 
+go here to here, simplifies 
+beauty this is, 
+translation, 
+we force started 
+translational velocity 
+rotation, you torque 
+dotted angular velocity 
+really type 
+term that going to 
+thats makes, 
+this is gives you power rate 
+to system 
+is tdot going to zero 
+lets ignore translation, 
+well focus this 
+is power equation 
+going to zero 
+sheila, you think 
+without reading more, 
+i want to hear you think 
+angular velocity is zero 
+you could, if youre spinning 
+center mass is acceleration is zero, 
+rc 
+well going in 
+translation right 
+okay 
+focus this one, 
+rotational side 
+makes this second term go to zero 
+omega could zero, yes 
+kind a trivial 
+dynamical system then, yes, 
+if energy is zero 
+energy rate is going to zero 
+that works, yep 
+else could you 
+inaudible make lc zero 
+so is lc here 
+inaudible 
+
+is lc here 
+torque 
+a torque 
+so this is a torque point c 
+in fact we get this torque, 
+this torque is due to external forces 
+we derived this stuff 
+so this dynamical system, 
+if external torque that 
+rigid body is zero, 
+you wont dissipate energy 
+this makes a great integration check 
+so you guys writing numerical code, 
+youve got something thats spinning 
+theres external torque this system 
+i know energy to preserved 
+if we h dot equal to l, 
+that thing 
+angle momentum seen 
+inertial observer, 
+thats that dot meant right, 
+inertial derivative 
+seen inertial observer, 
+h to a constant vector if 
+external torque is acting 
+things become fantastic 
+integration checks 
+this is a single rigid body 
+even if you multibody, 
+complex panels flapping, reaction wheels, 
+gyros spinning, twisting, this stuff 
+still to hold, is really nice 
+if there is a torque 
+acting that system 
+i actually predict quickly 
+kinetic energy needs to change 
+this becomes a nice integration check, 
+i compute kinetic energy 
+simulation numerically 
+differentiate to get dot 
+compare, 
+i know i applied this gravity gradient 
+torque, this is spin rate time 
+energy changed this 
+many joules per second, right 
+so tools becomes very, 
+useful validation tools, also 
+analysis you will see 
+so torquefree motion is 
+momentum is inertially preserved 
+kinetic energy is preserved, 
+this is zero 
+third option actually could exist, 
+in that dot product goes to zero 
+maybe you particular torques 
+applied, that matter 
+spin rate is, right 
+torques orthogonal to that 
+in that case you 
+a nonworking force acting 
+thats call 
+doesnt, 
+work means doesnt 
+change energy state 
+so theres three ways, 
+either omega zero, lc zero, 
+two things orthogonal 
+dot goes to zero 
+over, if you to work 
+between points time, you this 
+a time integral you could 
+also in spatial integral 

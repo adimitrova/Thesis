@@ -1,0 +1,219 @@
+1
+00:00:00,012 --> 00:00:04,279
+[MUSIC] So now we learn what the official 
+definition of limit is. 
+
+2
+00:00:04,279 --> 00:00:09,061
+To say that the limit of f(x) = L as x 
+approaches a, means the following. 
+
+3
+00:00:09,061 --> 00:00:13,768
+It means that for all epsilon bigger than 
+zero, this backwards three is the real 
+
+4
+00:00:13,768 --> 00:00:19,084
+number epsilon or the Greek letter, a 
+variable. So for all epsilon greater than 
+
+5
+00:00:19,084 --> 00:00:23,426
+zero, there's a delta greater than zero, 
+this is the Greek letter delta. 
+
+6
+00:00:23,426 --> 00:00:27,842
+So, for all epsilon greater than zero, 
+there's a delta greater than zero. 
+
+7
+00:00:27,842 --> 00:00:33,037
+So that if, this, if the absolute value 
+of x - a is between zero and delta, then, 
+
+8
+00:00:33,037 --> 00:00:36,702
+the absolute value of f(x) - L is less 
+than epsilon. 
+
+9
+00:00:36,702 --> 00:00:41,282
+When you say it like that, I think it's 
+really hard to see how this has any 
+
+10
+00:00:41,282 --> 00:00:46,342
+relationship to what a more intuitive 
+description of this limit statement might 
+
+11
+00:00:46,342 --> 00:00:48,952
+be. 
+I mean, what's this trying to get at? 
+
+12
+00:00:48,952 --> 00:00:54,307
+It's trying to say f(x) is as close as I 
+want to L by making x sufficiently close 
+
+13
+00:00:54,307 --> 00:00:57,260
+to a. 
+So, how, how to reconcile those, those 
+
+14
+00:00:57,260 --> 00:01:02,307
+two perspectives, right? How does this 
+have anything to do with things being 
+
+15
+00:01:02,307 --> 00:01:05,210
+close. 
+The key, take a look at this absolute 
+
+16
+00:01:05,210 --> 00:01:06,868
+value of the difference, 
+right? 
+
+17
+00:01:06,868 --> 00:01:11,222
+The absolute value of x - a is the 
+distance between x and a. 
+
+18
+00:01:11,222 --> 00:01:16,936
+So to say that the distance between x and 
+a is between zero and delta is to say 
+
+19
+00:01:16,936 --> 00:01:22,596
+that x is within delta of a, alright? The 
+distance from x to a is less than delta. 
+
+20
+00:01:22,596 --> 00:01:27,707
+And to say that the distance between x 
+and a is bigger than zero is just to say 
+
+21
+00:01:27,707 --> 00:01:33,252
+that the distance between x and, and a, 
+you know, isn't zero, right, x isn't a. 
+
+22
+00:01:33,252 --> 00:01:38,431
+So I can rewrite that, maybe in a little 
+bit easier way. 
+
+23
+00:01:38,431 --> 00:01:46,190
+[SOUND] So instead of saying that, it's 
+the same thing to say, if x is not equal 
+
+24
+00:01:46,190 --> 00:01:54,060
+to a, so the absolute value of x - a 
+isn't zero, and x is within delta of a. 
+
+25
+00:01:54,060 --> 00:01:58,647
+So the distance between x and a is delta. 
+And I can do the same thing to this 
+
+26
+00:01:58,647 --> 00:02:03,812
+absolute value of a difference, alright? 
+The absolute value of f(x) - L, that's 
+
+27
+00:02:03,812 --> 00:02:08,491
+the distance, between f(x) and L. 
+And the sum of the distance between f(x) 
+
+28
+00:02:08,491 --> 00:02:14,243
+and L is less than epsilon. 
+Well, that just means that f(x) is within 
+
+29
+00:02:14,243 --> 00:02:17,813
+epsilon of L. 
+So, I'll rewrite that as that. [SOUND] 
+
+30
+00:02:17,813 --> 00:02:21,517
+Here we go. 
+[SOUND] Then f(x) is within epsilon of L. 
+
+31
+00:02:21,517 --> 00:02:28,314
+So, I think when, when you write it like 
+this, it makes a little bit more sense, 
+
+32
+00:02:28,314 --> 00:02:32,317
+right? 
+To say that the limit of f(x) = L as x 
+
+33
+00:02:32,317 --> 00:02:36,247
+approaches a, 
+means that for all numbers epsilon, 
+
+34
+00:02:36,247 --> 00:02:39,887
+epsilon is measuring how close I want 
+f(x) to L, 
+
+35
+00:02:39,887 --> 00:02:45,922
+then, there's some corresponding number 
+delta, which is how close x has to be to 
+
+36
+00:02:45,922 --> 00:02:49,197
+a. 
+So that whenever x is that close, delta, 
+
+37
+00:02:49,197 --> 00:02:53,624
+within delta of a, 
+then f(x) is really within epsilon of L. 
+
+38
+00:02:53,624 --> 00:02:58,572
+And to say that the limit of f(x) = L 
+means that no matter which epsilon I 
+
+39
+00:02:58,572 --> 00:03:03,896
+choose, there's some corresponding delta, 
+so that whenever x is within delta of a, 
+
+40
+00:03:03,896 --> 00:03:08,056
+then f(x) is within epsilon of L. 
+Now, how this actually gets played out 
+
+41
+00:03:08,056 --> 00:03:12,425
+in, in more concrete situations can be, 
+you know, kind of complicated, but this 
+
+42
+00:03:12,425 --> 00:03:17,297
+is really the official definition of what 
+it means to say that the limit of f(x) 
+
+43
+00:03:17,297 --> 00:03:20,910
+equals L as x goes to a. [MUSIC] And 
+we're going to be trying to unpack this 
+
+44
+00:03:20,910 --> 00:03:34,121
+definition to see what it might mean in 
+some specific cases. 

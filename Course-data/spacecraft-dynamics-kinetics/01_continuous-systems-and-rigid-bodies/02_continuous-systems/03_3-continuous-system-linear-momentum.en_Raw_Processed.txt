@@ -1,0 +1,64 @@
+okay 
+linear momentum, 
+kind wrapping things 
+blobs, since onto blobs 
+linear momentum is always mass times 
+velocity, is linear momentum 
+a completely vectorial way in 
+a blob you would mass is dm, 
+velocity inertial is r dot, 
+p is linear momentum 
+so dp is linear momentum that 
+differential element that you 
+if you want total linear 
+momentum a system, 
+you to integrate body again, 
+you plug in things 
+rules, we will plug in, 
+instead r we rc little r, 
+we break this 
+we pull this rc 
+this integral now, hopefully 
+boring you go yep, thats zero 
+right, thats center mass property 
+again, that ones going to vanish 
+this one weve replaced total mass 
+so thats 
+so a blob, again, 
+like super particle theorem, need to 
+know is total mass system 
+is center mass moving 
+we know whats going 
+if you differentiate it, this is 
+you come newtons equation 
+a constant mass solution 
+so mass is preserved 
+gaining 
+losing mass in system 
+taking inertial derivative 
+linear momentum 
+you plug that this equation, 
+this r dot becomes an r double dot 
+this is nothing force acting 
+that element integrated a body 
+you care 
+external forces 
+is a powerful statement 
+so if you go to space station 
+flew away earth 
+shes going deep space 
+astronauts in there a sudden 
+start running a treadmill 
+ever going to change 
+centerofmass motion spacecraft 
+
+may change orientation, 
+may change shape 
+internal forces 
+never change linear momentum 
+thats we saw in 
+superparticle theorem, too, 
+that external forces impact 
+center mass evolves space 
+so, this is a kind handy, 
+handy, formula 

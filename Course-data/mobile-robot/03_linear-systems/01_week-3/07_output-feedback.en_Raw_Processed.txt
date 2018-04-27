@@ -1,0 +1,190 @@
+so we know that first 
+order business is to make system 
+stable meaning shouldnt blow up, 
+behave well, we also know 
+this means, namely that eigen values 
+system negative real 
+part even though we saw 
+critically stable cases last time 
+including a rather awesome, set robots 
+slamming we typically 
+dont want critical stability we want 
+asymptotic stability means that we 
+need to strictly negative real part 
+eigenvalues here today, 
+going to actually achieve that, 
+try to achieve it, designing a 
+controller remember this picture 
+, speakerwe system, x dot is ax 
+plus bu u is input, y 
+is equal to cx so, whatever we to 
+control choice to depend things 
+that we access to, is we 
+dont know state system but, 
+we certainly know output so, today 
+going to try something called 
+output feedback, means going 
+to take output system use 
+to feed directly back in a way 
+controlling going to start 
+returning to old friend, 
+worlds simplest robot, is a 
+point a line that we control 
+acceleration and, you hopefully 
+recall, we write this in state space 
+form x dot is this a matrix, x 
+plus a b matrix thats then, 
+output is x this means that output 
+is position point mass x, 
+first component x is position 
+second component x is velocity 
+u immediately gives us the, 
+acceleration so job is to somehow 
+connect y to u meaning pick input in 
+a way that this system behaviors 
+in fact here is an idea, we want to drive 
+system to zero, means stabilize 
+so, dont we move towards 
+origin meaning, position robot 
+is is lets say that, here is 
+origin job is to drive to 
+origin so if position is 
+negative meaning left 
+origin we probably move in this 
+direction if 
+robot is there, we move to 
+left, is in a negative 
+direction so thats a very, simple 
+idea in fact if we turn math, 
+we see that if y is negative, so y 
+negative again, corresponds if origin 
+is here, us this side, u 
+positive, means moving 
+this direction, similarly if y is 
+positive u negative 
+heres suggestion right 
+lets pick worlds simplest controller 
+that achieves this simply, negative 
+y so y positive means negative u, y 
+negative means positive u u so lets try 
+this, see actually 
+we need to first is understand 
+this change system dynamics 
+we really now, is, we 
+u equal to well, we minus y so k, in 
+example, a in general, 
+k here could a rich 
+structure, if used in ys 
+multidimensional, this needs to a 
+vector now, we know that y is equal to c 
+times x, so we write this u 
+equal to negative kcx so, lets plug 
+this differential equation that 
+we so, x dot is ax plus bu, 
+instead u plugging in this term 
+right so we get a minus bkcx if 
+you plug everything together, we get a 
+minus bkcx this, we write if you 
+want to a hat times x so this is 
+a new system matrix course job 
+is to pick k so thats real part 
+eigenvalues a hat is strictly 
+negative in words, pick if possible 
+k that real part lambda is 
+strictly negative lambda that is, 
+that is an eigenvalue to this new system 
+matrix a minus bkc so thats really our, 
+job here in a way already picked 
+k, we said k equal to one well lets 
+see whats happening if thats case, 
+we x dot is, this is a, this is 
+b, this is k a nd this is c so this is 
+we in terms system 
+matrix our, robot one thing to 
+note, first that times , is 
+, if i multiply this , , 
+i get, i get i get times 
+, times times times 
+so this is this whole expression 
+is equal to so i take this 
+matrix, subtract away this matrix to 
+get the, right answer if i 
+that, i get x is , , negative , , x 
+this is particular choice k 
+lets check what, 
+eigenvalues this thing well, you 
+write eig in matlab you get 
+answer or, we will see in future 
+lectures, you actually compute and, 
+say something clever choice 
+k in that way but, now, 
+going to immediately plug this 
+favorite software system, we find 
+that eigenvalues plus minus j 
+j is square root to negative so 
+is this system asymptotically stable 
+well, real part lamda 
+lamdas so we two lamdas real 
+part is zero, this is a purely 
+imaginary system and, i said last 
+time, if i two imaginary eigenvalues 
+others well behaved, in 
+this case i dont others, i 
+a critically stable system in 
+fact since i imaginary components, we 
+already hinted this that we 
+actually end oscillations so 
+this is a critically stable system if 
+i simulate this role, 
+doing, going to look like this 
+really whats happening is this thing is 
+going back forth, back forth 
+so, whats problem we clearly 
+stabilize it, we know 
+asymptotically stable in fact 
+going back forth back forth well 
+here is problem, robot is 
+lets say way away 
+origin, pushing it, correctly 
+so, towards origin 
+way back, still pushing 
+equally hard, even thou gh actually 
+going there almost so, 
+kind taking direction in 
+robot is going account 
+this actually means is that we 
+looking velocity 
+velocity is going to tell you 
+direction is going in so problem 
+is that we take velocity 
+account remember state is 
+state is position velocity so 
+problem is that we need to 
+stabilize we need full state 
+information output so output 
+feedback like this doesnt quiet work, 
+instead we want to operate x instead 
+y here course is problem 
+we that corollary to that 
+is, we dont even know x we know y 
+in world we design controllers 
+things that we dont know well, we 
+will see in next module, possible 
+to figure x y a lot times if 
+you think y in this case 
+position x y, x 
+position in velocity velocity, 
+right, we get measuring two 
+positions other, dividing 
+time in between 
+measurements we get an estimate 
+velocity so, clearly possible in 
+this case to least get an estimate 
+state the, output so 
+like i said this is next module in 
+next lecture is last lecture 
+this module will pretend that we 
+actually x revisits worlds 
+simplest robot see we actually 
+stabilize if we x 
+y 

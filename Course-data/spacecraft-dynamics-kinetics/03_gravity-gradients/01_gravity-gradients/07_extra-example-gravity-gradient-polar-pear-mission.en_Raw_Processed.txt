@@ -1,0 +1,184 @@
+that math 
+linearization everything, 
+really boils to a pretty simple 
+this is you fly an equilibrium 
+weve identified three axis line up, 
+three orbit axis to 
+principle axis body so 
+you line that dictates 
+particular orientations 
+then, to stable, you to 
+make sure this condition is satisfied 
+one, if this is stable, 
+flying sideways, you know 
+so is this one, right 
+you could fly nose nose 
+you care if youre flying nose 
+nose 
+depends application 
+if shuttle want to use fuel, 
+doesnt care 
+this spacecraft care 
+this is a famous one, 
+polar bear mission, 
+has, you see gravity 
+grating stabilized, need 
+laugh need three 
+axis to skinnier one, so 
+put small mass to save weight 
+a thin boom way 
+so inertias 
+axis going to big, 
+big moment arm between 
+this mass this honking mass 
+along axis, 
+thats least inertia 
+thats we needed 
+stability, right 
+go this stuff, 
+i, bigger i, bigger i 
+life is good, could go wrong 
+this craft care that this 
+point is looking earth 
+
+thats put sensors 
+didnt put this side 
+so this launched to gravity 
+gradiants stabilize satellite, 
+reasonable mass, huge but, 
+reasonable mass 
+supposed to point this way, 
+actually happened 
+first period in full sunlight, 
+attitude degraded significantly 
+basically means shit happened, 
+bad stuff happened 
+attitude degraded significantly, 
+essentially, means inverted 
+instead here a little bit 
+stable, this whole actually tumbled, 
+banded to go there 
+you go back shadow, 
+everything is good 
+we said, this is stable 
+so is this 
+in this case, we care 
+satellite doesnt, 
+following physics 
+goes, hey, im perfectly happy 
+you bump you want 
+im stable, im going to stay here 
+so like, great 
+earth happened 
+wasnt supposed to happen 
+so, several attempts made 
+to reinvent this thing 
+finally able to get 
+basically to give a kick 
+way give a kick 
+without using fuel is, despin 
+spin wheel to crazy amounts 
+is going to apply this huge torque 
+needed something to move pass 
+this linear local state stable regime 
+bigger motion happened 
+basically give a kick 
+tumbled recovered 
+this one 
+use wheel to clean 
+mess get close 
+hopefully stay stable 
+so, good news is 
+able to recover, 
+bad news is even happen 
+jordan, you got a question 
+inaudible 
+we miss here 
+assumption you think 
+violated space craft 
+theres a clue 
+first period 
+fully sunlit orbit 
+happens sunlight 
+put in a space craft 
+a radiation pressure 
+could radiation pressure, 
+dont think that cause 
+definitely something i would look at, is 
+inaudible you a craft 
+this huge solar sails basically 
+attached that would cause significant 
+dont think that cause here, 
+definitely related 
+spencer 
+outgassing 
+i think outgassing youve always have, 
+
+causes outgassing in 
+sunlight condition you think 
+i figured in first fully 
+sunlit orbit that would 
+outgassed 
+going to outgassed initially 
+you think a first orbit, 
+sunlit 
+yeah 
+maybe 
+again, i dont details this, 
+good ideas 
+right now, you start to wonder, 
+we miss 
+whats going here 
+happens sunlight, though 
+heating 
+you heat 
+this is a lightweight structure 
+heats up, is one side 
+happens to side 
+happens to heated breath 
+i see 
+that side will expand inaudible so 
+inaudible 
+if curving, 
+we violate 
+rigid 
+rigid, this a really, 
+really lightweight structure, 
+to get this tucker way there 
+theres much stiffness to this 
+didnt really 
+model well thermal deformations that 
+happen kinds an orbit 
+so there flexing going 
+flexing doesnt necessarily 
+immediately make go crazy 
+this an unlucky mission 
+that flexing happened to happening in 
+a way 
+that able to give 
+right kick right time, 
+to get one equilibrium 
+in end settled, 
+settle equilibrium 
+perfectly stable, thats trickiness 
+gravity gradiants stabilize 
+really doesnt care if 
+positive negative 
+every one equilibriums 
+a flip thats still like an equilibrium 
+if you care, 
+you to a mean to put 
+right equilibrium, right 
+locally there 
+so heres a case a lessons learned, 
+thermal deformations 
+really matter 
+so flex endure, thats 
+i heard primary culprit 
+ideas fantastic ideas, 
+im sure tested every one 
+well, make notice 
+another bounding case assumption 
+even cause this effect right 
+to model simulate that 
+so, gets tricky 

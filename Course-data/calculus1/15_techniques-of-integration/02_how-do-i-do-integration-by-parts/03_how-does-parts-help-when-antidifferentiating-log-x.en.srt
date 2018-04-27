@@ -1,0 +1,109 @@
+1
+00:00:00,025 --> 00:00:06,845
+[MUSIC] We could figure out our anti 
+derivative for log x, by just guessing 
+
+2
+00:00:06,845 --> 00:00:13,977
+and then checking our answer. 
+But we can also get that anti derivative 
+
+3
+00:00:13,977 --> 00:00:18,923
+by using integration by parts. 
+So I want to know an anti derivative of , 
+
+4
+00:00:18,923 --> 00:00:22,618
+log x dx. 
+And just to remind you, this is natural 
+
+5
+00:00:22,618 --> 00:00:25,487
+log. 
+At first, it looks like there's nothing 
+
+6
+00:00:25,487 --> 00:00:29,120
+helpful here. 
+What would my u and my dv be? 
+
+7
+00:00:29,120 --> 00:00:34,632
+The trick is to sit u log x that's the 
+part of the anagram I'm going to 
+
+8
+00:00:34,632 --> 00:00:41,711
+differentiate as dv. 
+To be dx and it gets quite surprising, 
+
+9
+00:00:41,711 --> 00:00:47,320
+and that helps. 
+Let's see, so if u is log x then du is 1 
+
+10
+00:00:47,320 --> 00:00:53,826
+over x dx. 
+And if dv is dx then an anti-derivative, 
+
+11
+00:00:53,826 --> 00:00:57,580
+just be x. 
+Now, what does parts tell us? 
+
+12
+00:00:57,580 --> 00:01:06,523
+So by parts the integral of u dv, so log 
+x dx, that's what I'm interested in. 
+
+13
+00:01:06,523 --> 00:01:14,125
+Is u v so x log x minus the integral of 
+vdu, which is x times du. 
+
+14
+00:01:14,125 --> 00:01:19,900
+And I've got x log x minus x times 1 over 
+x, that's just 1. 
+
+15
+00:01:19,900 --> 00:01:24,825
+So I'm just anti-differentiating dx. 
+Then I've got x log x, what's an 
+
+16
+00:01:24,825 --> 00:01:30,420
+anti-derviative of 1, just x, and I'll 
+add a constant. 
+
+17
+00:01:30,420 --> 00:01:34,934
+So I'm claiming that the antiderivative 
+of log x is x log x minus x plus some 
+
+18
+00:01:34,934 --> 00:01:39,824
+constant. 
+I think it's really surprising that, at 
+
+19
+00:01:39,824 --> 00:01:44,380
+least in this case, dv equals dx is a 
+great choice. 
+
+20
+00:01:44,380 --> 00:01:47,308
+Well here's a similar integration problem 
+that you can try the same kind of 
+
+21
+00:01:47,308 --> 00:01:50,500
+technique on. 
+For example, here's a challenge. 
+
+22
+00:01:50,500 --> 00:02:02,373
+Can you find an anti derivative of log of 
+x squared? 

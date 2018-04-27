@@ -1,0 +1,48 @@
+[music]
+i'm gonna say a little bit about how
+this course as a whole is structured.
+right, we're really covering three topics.
+covering limits,
+derivatives, and integrals.
+and for each of those three topics,
+we're looking at three different things.
+we're looking at the definition,
+the sort of concepts behind it.
+looking at techniques,
+sort of how we work with those concepts.
+and then we're looking at applications,
+what can we do with it.
+so, take a look at limits, all right.
+we learned about the definitions for
+the concepts behind limits at first, and
+then we learned some techniques for
+doing computations involving limits.
+say, using a little bit of algebra or
+thinking about infinity.
+and now we want to think
+about an application.
+why do we care about limits?
+well the reason that we care about
+limits was because of the derivative.
+right?
+we use the limits to define the derivative
+and to introduce some of
+the concepts of the derivative.
+and now that we've introduced
+the concept of the derivative,
+we wanna go into the techniques or
+the computational questions.
+how do you actually compute a derivative?
+and in order to do those kinds of
+computations, we have to think about
+how would you calculate the derivative
+of a product of two things,
+if you knew the derivative
+of those two things.
+or how would you calculate
+the derivative of a fraction if you knew
+how to differentiate the numerator and
+the denominator separately?
+those are the kinds of questions
+that'll occupy us now.
+[music]

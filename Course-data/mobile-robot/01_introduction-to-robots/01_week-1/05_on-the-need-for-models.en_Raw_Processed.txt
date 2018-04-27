@@ -1,0 +1,235 @@
+so we seen that controls deals 
+dynamical systems in generality 
+robotics is one facet this we 
+havent done is actually try to make 
+sense this means in precise 
+mathematical one thing that 
+going to need in order to this is come 
+with, models models gong 
+to an approximation, an abstraction 
+actual system is 
+control design is going to made, 
+rather done, relative to that model 
+deployed real system but, 
+without models we cant really much in 
+terms control design we would 
+stabbing in dark without knowing 
+really what, whats going so, models 
+actually key comes to 
+designing controllers, if you 
+remember that question is really 
+in control theory, is we pick 
+input signal u so u again, takes 
+reference, compares to output, 
+measurement comes a 
+corresponding course correction to 
+system is objectives 
+you pick this kind control input, 
+well, there a number different 
+kinds of, objectives first one is 
+always stability stability, loosely 
+speaking, means that system doesnt 
+blow so, if you decide a controller 
+that makes system go unstable, 
+objectives matter cause you 
+failed if robots drive walls 
+aerial robots fall to ground, 
+basically control stability is always 
+control objective number one now, 
+you that, system doesnt blow 
+you may want to something 
+blow up, something that 
+going to deal is tracking a lot 
+means, here is a reference either 
+value , we make system 
+here is a path i make robot 
+follow this path i make 
+autonomous self driving car follow a road 
+so tracking reference signals is another 
+kind objective assert important type 
+objective is robustness in sense 
+that ,, since we dealing 
+models design 
+models never going to perfect we 
+cant overcommit to a particular model 
+we cant controller 
+highly dependent particular 
+parameters in model r, model r so, 
+we need to is to design 
+controllers that somewhat immune to 
+variations across parameters in model, 
+instance so this is important 
+im calling robustness a companion to 
+robustness, in fact one ague that 
+an aspect robustness disturbance 
+rejection, because, end day 
+we going to acting measurements 
+sensors measurement noise things 
+always happen if youre flying a in 
+air, a sudden you get a wind gust 
+thats a disturbance if youre 
+driving a robot, a sudden youre 
+going linoleum floored carpet, 
+friction changed so a sudden 
+you disturbances that enter 
+system controllers 
+to able to overcome least, 
+reasonable disturbances the, 
+controllers to to effective 
+you that we wrap 
+questions around like optimality, 
+is we something 
+we in best possible way 
+best mean many different things, 
+could mean i drive point a to 
+point b quickly possible, possible 
+using little fuel possible 
+while staying centered middle 
+road possible so optimality 
+mean different things this is 
+typically something we top 
+things in to 
+this we really need a model to, to 
+a effective 
+so effective controlled strategies rely 
+predictive models without them, 
+we way knowing control 
+actions are, actually going to so, 
+models look like lets 
+start in discrete time this means that, 
+whats happening is that, that distinct 
+time instances, thi ngs happen 
+in discrete time, we typically, 
+is that state system, remember 
+that x is state so this is time 
+instance, k plus well, 
+function state like, 
+yesterday, time, k, and, 
+yesterday so, position robot, 
+position robot tomorrow, is a 
+function robot is today, 
+i today then, f, somehow 
+tells to go todays state 
+controlling to tomorrows state this is 
+known a difference equation 
+tells you difference between different 
+values across, different time instances 
+so, thats in, in discrete time 
+heres an example this this is 
+worlds simplest discrete time system 
+a clock, a calendar this is 
+time today im adding one second 
+this is time one second later so 
+time right plus second is time 
+second later this is clearly a completely 
+trivial discreet time system, is a 
+difference equation a clock, so if 
+you plot this we see that here is, this is 
+, is time is a 
+function time so silly 
+o clock, state is one o clock, 
+state is two, so forth you 
+get this thing slope one so, this 
+would worlds simplest model there 
+control signals anything in 
+there least is a dynamic 
+discrete time model that describes a 
+clock would work problem we 
+this though is that laws 
+physics in continuous time 
+controlling robots we going 
+to to deal laws physics 
+newton is going to tell us that force 
+is equal to mass times acceleration 
+or, if circuits, kirchoffs 
+laws is going to relate various properties 
+to capacitances resistances in the, in 
+the, in circuit so, going to 
+to deal things in continuous 
+time, in continuous time, there is 
+notion next we something 
+almost tter, thats notion a 
+derivative, is, next, 
+tells us is time change 
+change respect to time so in 
+continuous time, we dont difference 
+equations we things 
+called differential equations right 
+here you see that derivative 
+state respect to time is 
+function x u so this telling 
+next value is telling 
+me, whats change instantaneous 
+change here, thing 
+im written, ive written x instead 
+dx, dt time derivatives, a lot 
+times, is written a dot im 
+going to use that in this class this 
+actually traces back to the, slight 
+controversy between newton leibniz 
+leibniz, so in , newton said, oh i 
+this idea that i call 
+differential, leibniz time 
+idea well, this is leibnizs 
+notation this is newtons notation, 
+going to use dot time 
+derivatives here point is that 
+equations 
+differential equations, 
+relating changes to values 
+states so if you go back to clock, 
+would differential equation a 
+clock look like well, would very, 
+simple would say that the, 
+change, rate change time is 
+one basically means clock 
+changes a second every second thats 
+means so i drew this picture 
+discrete time clock or, i drew this 
+line diagonally across i 
+really describing this so this 
+is continuous time clock x dot is 
+equal to 
+we going to need, almost always, 
+continuous time models for, 
+systems next couple lectures, 
+going to start developing models 
+particular systems but, we 
+this, i want to say a few words 
+to go continuous time to discrete 
+time models going to 
+continuous time differential equations 
+th en, putting this a 
+robot, going to put a 
+computer computer runs in discrete 
+time, so somehow we need to map continuous 
+time models onto discrete time models so 
+if i say that x time k, well x 
+time k times delta t, delta is 
+sample time so weve sampled k 
+measurements well if i, use this is 
+x time k plus is xk 
+plus first sample time well, i need to 
+relate this thing somehow to 
+differential equation so i 
+this well, this is always easy to 
+exactly you note is that 
+this is known a tailor approximation 
+so x time k times delta plus a little 
+delta is exactly next state 
+well roughly last time 
+times length time interval, 
+delta times derivative so this is a 
+an approximation cool thing here 
+is that this x time k plus delta t, 
+well thats, xk so things 
+x dot time k equals delta t, well 
+thats f so this things, 
+i to multiply delta 
+there so this is a way getting a 
+discrete time model continuous 
+time model and, this is going 
+to to take things we in 
+continuous time, map onto 
+actual implementations computers that 
+ultimately run in discrete time 

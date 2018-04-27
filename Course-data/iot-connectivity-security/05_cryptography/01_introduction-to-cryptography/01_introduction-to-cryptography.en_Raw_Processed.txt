@@ -1,0 +1,234 @@
+sound hello, welcome back to online 
+course web connectivity 
+security in cyber physical systems 
+this lesson starts a module 
+a cryptographic solutions 
+cyber physical systems 
+is last module course 
+in this video lecture, 
+we will look basic concepts 
+techniques cryptography 
+cryptography is a scientific 
+engineering field develops 
+analyzes mathematical techniques so 
+many different information, security, 
+privacy issues confidentiality, 
+data integrity, 
+entity authentication 
+data origin authentication 
+cryptography a long 
+fascinating history 
+egyptians used kind encryption 
+in messages , years ago 
+in th century, 
+world war i 
+ii, cryptography used to protect 
+sensitive war related information 
+even though usage 
+modern cryptography 
+originally focus military applications, 
+today widely use 
+protecting digital information 
+in general, everywhere 
+this development began in 
+boosted proliferation 
+computers communication 
+systems last decades 
+main goal cryptography 
+is to hide protect sensitive 
+information is called a plaintext, 
+adversaries attackers 
+you imagine that you protect 
+belongings inside a suitcase 
+a padlock 
+idea is that one needs 
+key padlock to get 
+stuff suitcase 
+cyber system essentially 
+works in way 
+plain text, is encrypted, 
+using a cryptographic algorithm, 
+corresponds to padlock 
+algorithm takes plain text 
+encryption key input, 
+a result, a cipher text is generated 
+cipher text is a new form 
+combination plain text 
+is readable a human 
+a computer without decrypting 
+therefore, cipher text 
+safely sent to another party 
+receiver side, if receiver 
+right decryption key, 
+will able to decrypt cipher 
+text to discover original message 
+secrecy a cipher system is highly 
+dependent secrecy key 
+so, exchange decryption key 
+done in a secured way 
+attackers perspective, main 
+challenge is to determine plain text 
+a cypher text 
+without knowing key 
+decryption key to 
+always encryption key 
+there two types cipher systems, 
+a symmetric key cipher system 
+an asymmetric key 
+public key cipher system 
+in a symmetric key cipher system, 
+decryption key is identical 
+to encryption key 
+easily obtained 
+encryption key 
+in this case, there is a need 
+a secure channel key exchange 
+in an asymmetric key 
+public key cypher system, 
+encryption key is 
+decryption key 
+is computation in principle 
+practical to obtain decryption 
+key encryption key 
+in this case a pair 
+different keys, one 
+encryption decryption 
+encryption key is publicly available, 
+so 
+everyone public 
+key encrypt message 
+decryption key is secret 
+is referred to private key 
+so one private 
+key decrypt message 
+establishing a public key cipher system 
+is computationally complex 
+requires resources 
+symmetric encryption 
+therefore, is usually used 
+shorter messages 
+in practice, a public key system 
+is used encrypting 
+transferring encryption 
+key a symmetric key system 
+symmetric ciphers far divided 
+stream ciphers block ciphers 
+in a stream cipher, plaintext is 
+encrypted bit bit byte byte 
+simplicity, 
+we call this unit encryption a digit 
+so instead one single key, 
+stream cipher requires a stream 
+keys to encrypt every digit 
+in this model, cipher text stream is 
+calculated an exclusive 
+a modular to addition 
+every digit in plaintext stream 
+corresponding digit in key stream 
+key stream is used 
+decryption receiver 
+side in similar manner 
+key streams generated random 
+pseudorandom digits 
+so, security a stream 
+cipher is highly dependent 
+key stream generation process 
+stream ciphers small fast, 
+thats suitable 
+embedded resource constrain devices 
+in contrast to a stream cipher, 
+a block cipher 
+uses a single key to encrypt fixed 
+size block plain text a time 
+blocks cipher text 
+produced result 
+block ciphers mostly used 
+encrypting large data 
+wellknown widely 
+used symmetric ciphers block ciphers 
+include, example, 
+data encryption standard, des, 
+triple tests recent 
+advanced encryption standard aes 
+block ciphers first components in 
+designing many cryptographic protocols 
+block ciphers implemented 
+in different modes operation, 
+offering different levels 
+protection performance 
+common examples cipher 
+feedback mode cfb, 
+cipher block chaining mode cbc, 
+electronic code block mode, ecb 
+we going to cover 
+this mode in this course 
+however, you read 
+internet if you interested 
+breaking a cryptographic system 
+involves finding plain text without 
+decryption key 
+attack models a cyber system 
+depend amount information 
+that is available attacker 
+based this main attack models 
+classified four categories 
+is always assumed that encryption 
+algorithm is known attacker 
+in a ciphertextonly attack, 
+attacker access 
+to encrypted content 
+in a knownplaintext attack, 
+attacker access to 
+plain text ciphertext pairs 
+correspond to 
+in a chosen plaintext attack, attacker 
+access to encryption process 
+is able to generate corresponding 
+cipher text a chosen plaintext 
+in a chosen ciphertext attack, 
+attacker access to 
+decryption process 
+is able to generate corresponding 
+plaintext a chosen cipher text 
+in attack models, 
+ultimate goal is to 
+find secret key 
+in addition to mentioned 
+attack models, 
+if there is information available, 
+attacker to try 
+possible combinations keys 
+until correct one is found 
+this kind attack is known 
+an exhaustive key search attack 
+a brute force attack 
+cipher system considered 
+perfect if exhaustive search is 
+way to find key 
+designing cryptographic algorithms, 
+time that 
+a message needs to in encrypted 
+form taken account 
+this period is called a cover period 
+example, in a banks transaction 
+a message needs to in 
+encrypted form a few seconds 
+until reaches receiver side 
+while in a database, a file needs 
+to kept in a encrypted form 
+a longer period time 
+design a cyber system 
+always ensure that type attack to 
+successfully find key, would take 
+longer time given cover period 
+in this lesson we learned 
+basic concepts cryptography 
+we also got familiar different 
+types encryption algorithms, 
+specifically, we learned 
+symmetric key cipher systems 
+in video lectures, we will learn 
+public key cryptography 
+usage 
+securing digital communication 
+music 

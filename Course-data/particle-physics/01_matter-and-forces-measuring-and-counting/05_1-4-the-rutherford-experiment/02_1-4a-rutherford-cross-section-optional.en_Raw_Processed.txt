@@ -1,0 +1,66 @@
+music 
+we will calculate classical arguments 
+la rutherford cross section a small 
+nucleus charge z scattering 
+a heavy nucleus charge z 
+basis this calculation, is 
+relationship between differential 
+crosssection dependence 
+impact parameter b scattering angle theta 
+first we use fact that 
+kinetic energy is conserved, 
+that, there is recoil target, 
+initial 
+final projectile 
+velocities 
+in way, 
+angular momentum will conserved, 
+tells us that mvb is a constant 
+this means that dgammadt 
+expressed in terms initial 
+velocity projecile, 
+impact parameter 
+distance squared between 
+projectile target 
+this serves to express coulomb force, 
+is product two 
+charges divided pi r, 
+times unit vector connects 
+projectile target, 
+in terms we know that is to say, 
+projectile velocity 
+impact parameter 
+we integrate this relationship 
+between gamma gamma pitheta, 
+one side is vector difference between 
+final initial velocities 
+side is integral 
+relationship we obtained 
+a little trigonometry, we get rather 
+painfully value this integral 
+in particular, we obtain that integral 
+unit vector between initial 
+final states, is costheta 
+hand, 
+simple trigonometry gives us 
+a relationship between length 
+vector difference 
+between final initial velocity 
+scattering angle, 
+turns to v sintheta 
+two relationships together 
+finally give us relationship 
+between impact parameter 
+scattering angle we looking 
+we insert this result 
+formula 
+differential cross section 
+simplification, 
+we finally obtain rutherford formula 
+differential cross 
+section process 
+tells us that there is 
+a steep angular dependent, 
+inversely proportional to 
+sintheta 
+sound 

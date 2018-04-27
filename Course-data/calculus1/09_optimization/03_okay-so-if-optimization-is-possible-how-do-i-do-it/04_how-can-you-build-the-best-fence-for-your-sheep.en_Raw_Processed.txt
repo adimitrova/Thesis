@@ -1,0 +1,221 @@
+music 
+lets pretend that youre a shepherd 
+you want to build a fence sheep 
+specifically, lets say that youve got 
+meters fencing 
+youre committed to building a 
+rectangular pen sheep next to 
+barn 
+so big a sheep pen you build 
+that much fencing 
+process is a standard one, got five 
+steps 
+first thing im going to is to draw 
+a picture situation 
+a picture in hand everything 
+labelled variables 
+i write thing im tying to 
+optimize, goal 
+that, i also write 
+constraints, right 
+every combination variables maybe 
+make sense 
+maybe domain issues to consider 
+well 
+in step four, im going to solve 
+goal a single variable 
+i get a function a single 
+variable, i apply calculus 
+right 
+this last step really means to say 
+differentiate function a single 
+variable, find critical points, figure 
+largest smallest values 
+
+thats fivestep process 
+first, i draw a picture, so lets 
+rearrange this in a slightly nicer 
+picture 
+ill build little sheep pen here 
+heres rectangular pen sheep 
+that i built next to barn 
+id better label side lengths 
+here 
+top bottom will x meters long 
+this side here will y meters long 
+now, is that im trying to 
+maximize 
+well, i want fenced in area here to 
+big possible 
+so thing im trying to maximize is 
+area this pen that area is x times 
+y 
+this point, you probably think, 
+well i know to maximize that function 
+ill pick x y to absolutely 
+enormous 
+if an enormous number is multiplied 
+an enormous number, if i multiply x times 
+y, output will enormous 
+right, ill build a sheep pen size 
+milky way 
+theres a constraint 
+yeah, i mean, i cant simply build this 
+fence big i like, ive 
+got meters yellow fence to begin 
+
+so constraint is that length 
+this fence, is x plus y is 
+im saying equal , i might 
+well use fence that i to 
+build this sheep pen 
+another way to say that, is that this is 
+im trying to 
+im trying to maximize this quantity, 
+area pen, subject to constraint 
+that x plus y, length fence in 
+pane is meters i say that x 
+y nonnegative quantities 
+doesnt make sense to make one side 
+sheet pane negative 
+now, i use to constraint to solve 
+thing im trying to optimize a single 
+variable 
+okay 
+so im going to solve this a single 
+variable 
+ive got that x plus y is , so i could 
+solve y, y is minus x 
+quantity that im trying to maximize 
+is x times y, if y is minus x, 
+then, im really trying to maximize x 
+times minus x, this quantity 
+is y 
+so this is function a single 
+variable that im trying to maximize 
+okay, fantastic 
+now, ive got a function one variable 
+so i apply calculus 
+i differentiate this thing search 
+critical points 
+so lets call this a function f 
+so f x is x times minus x, that 
+dot is multiplication 
+i could distribute this write f is 
+times x minus x squared 
+now, i calculate derivative, 
+derivative f is derivative x 
+minus derivative x squared 
+derivative x is 
+derivative x squared is x 
+so, derivative f is minus x 
+critical points places 
+functions derivative vanishes 
+function is differentiable 
+this function is polynomial, so 
+differentiable everywhere 
+thing i to worry then, 
+critical points, is this 
+derivative is equal to zero 
+so values x is that equal to 
+zero 
+well, place this derivative 
+is equal to zero is x equals 
+i also remember that im maximizing 
+this function subject to this constraint 
+there also domain issues 
+i dont want x to negative 
+and, in order to ensure that y is 
+nonnegative, if x plus y is , x 
+cant negative, x also cant 
+bigger 
+so, whats situation here 
+well, i summarize 
+critical points 
+well, theres really one critical 
+point critical point is x is 
+equal to 
+ive also got endpoints, right 
+endpoints to consider x is 
+equal to x is equal to 
+so three points to check 
+now, i to figure 
+values results in best fence 
+right 
+so three points that i 
+check, so ill make a little table 
+here 
+x values that ill check , , 
+
+ill figure corresponding 
+y value is ill figure x 
+times y, will area 
+fenced in region if i use side 
+lengths sheep pen 
+so, lets see 
+if x is equal to i satisfy this 
+constraint that x plus y is 
+if x is equal to zero, y must 
+if x is , times plus 
+gives 
+well, y is equal to 
+if x is , times is , 
+plus gives 
+well, y must 
+now, in three cases, i 
+figure area resulting 
+sheep pen would 
+times is times is 
+also 
+times is 
+so here, this is best choice 
+sheep pen 
+this isnt a great calculation 
+i hope that, intuitively, this method 
+really makes sense 
+i mean, look, if x is equal to , that 
+means im building sheep pen 
+entirely side barn 
+if y equals , well, that means im 
+building sheep pen like this 
+im building fence that goes 
+fence that comes right back 
+again, theres area that this socalled 
+pen is enclosing 
+that x equals y equals is 
+best choice sheep is clear if you 
+think wiggling x would affect 
+area sheep pen 
+so here is best solution, right, to 
+x y 
+if i to push this fence in 
+a little bit, right 
+id make x values a little bit smaller 
+make y value a little bit 
+bigger to compensate, right 
+maybe x is y is 
+is this worse 
+well, think happens i 
+change x equals to x equals 
+i give this region here thats 
+square meters fenced in region 
+i gain this region here this region 
+here, this region here is 
+square meters this region here is 
+square meters 
+so im giving square meters to gain 
+square meters 
+thats a bad deal 
+this is really whole crux 
+matter 
+right 
+you found best thing, small 
+changes to best thing, dont make 
+better 
+if you hadnt found best thing, 
+you could make a small change that 
+would make better 
+thats whole idea, right 
+that understanding functions change 
+used to understand best output 
+a function 

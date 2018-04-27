@@ -1,0 +1,226 @@
+music 
+in this fifth module we discussing 
+structure hadrons 
+strong interactions 
+in this second video we discuss 
+inelastic scattering between electrons 
+nucleons one learn that 
+following this video, 
+you will know resonances 
+excited states nucleons 
+dee inelastic scattering 
+nucleon structure functions 
+socalled scaling 
+hypothesis evidence 
+substructures inside nucleon, 
+well role 
+distribution quarks in nucleon 
+form factors decrease rapidly 
+q like we showed in video 
+consequently, probability 
+to observe an elastic scattering 
+becomes low high energymomentum transfer 
+this is surprising 
+large q corresponds to 
+a short photon wavelength, 
+is 
+able to resolve internal 
+structure target particle 
+this structure will 
+insensitive to energymomentum 
+transfer 
+target will excited 
+even destroyed 
+in words, 
+inelastic processes take 
+moderate q, inelastic 
+processes produce excited states 
+nucleon, also called 
+resonances, , 
+quantum 
+numbers proton 
+resonances an extremely 
+short lifetime 
+therefore a broad mass distribution 
+figure show result an 
+electronproton scattering experiment 
+an energy gev 
+fixed scattering angle 
+elasticity reaction 
+is first visible in 
+energy distribution 
+outgoing electron left, 
+is longer fixed 
+in elastic case 
+broader secondary maxima formed 
+corresponded to excited states 
+nucleon, 
+also clearly visible in invariant 
+mass distribution outgoing 
+hadronic state right 
+is kinematic is completely 
+determined measuring outgoing 
+electron in case 
+elastic scattering 
+position inverse width 
+large maximum indicate mass 
+life time resonance 
+higher q, beyond resonance region we 
+enter region 
+socalled 
+deep elastic scattering 
+final state consists multiple 
+hadrons least one baryon to 
+to conserve quantum numbers 
+this is region 
+photon interacts 
+individually charged 
+constituents nucleon 
+cross section parametrized 
+terms before, 
+unknown structure function w 
+w replacing form factors 
+parametrize distribution 
+dynamics nucleon constituents 
+depend tranfered 
+energy nu is energy 
+photon invariant mass squared 
+kinematics requires a second 
+additional kinematic parameter 
+mass hadronic 
+system is longer fixed, 
+case a proton 
+resonance in final state 
+in addition to scattering we 
+thus choose a second variable 
+here is energy e 
+outgoing electron 
+structure functions measured 
+experimentally, analyzing dependence 
+cross section scattering 
+angle, like in elastic case 
+big discovery slac in late 
+that structure functions 
+depend nu 
+q separately ratio xbj, 
+is equal to q twice 
+mass proton times nu 
+variable is named 
+inventor james d bjorken 
+phenomenon called scaling that 
+time general observation 
+that dimensionless variable xbj 
+depend energy mass scale 
+structure functions follow in fact 
+scaling if inside nucleon there exist 
+substructures 
+photon interacts elastically 
+this interpretation scaling is 
+best demonstrated in limit 
+large equal square, 
+interaction between quarks 
+is negligible compared to force 
+transmitted photon 
+quarks act quasi free particles 
+photon interacts 
+in an incoherent manner 
+to respect kinematic 
+constraint in an elastic 
+electronquark scattering, 
+photon interact 
+a quark carries a fraction 
+xbj nucleon momentum 
+consequently, cross section is 
+proportional to probability 
+to find a quark in nucleon 
+in limit square going to infinity, 
+structure functions wi 
+tend toward function fix 
+directly 
+related to distribution 
+fractional momentum xi 
+carried quarks type i 
+experiment slac in fact shown that 
+phenomenon already occurs moderate squared 
+structure function w, 
+a function kinematical 
+variable omega, 
+is equal to xbj, 
+smoothens increasing q 
+beyond resonance region, 
+follows a universal function 
+xbj independent q 
+kinematic constraint imposed 
+elastic scattering 
+pointlike particles inside 
+proton is indeed respected 
+however, scaling 
+structure functions is exact 
+this figure show modern measurements 
+that come experiments 
+electron proton collider hera 
+curves data different x 
+expressed a constant 
+in order to visible 
+in graph 
+small x, 
+so small quark momenta, 
+structure function varies 
+strongly q 
+contributions virtual gluons 
+enriching quark contents 
+smaller deviation 
+large x subtle 
+coupling constant 
+strong interactions 
+depends momentum transfer 
+is really a constant 
+we will come back to this 
+astonishing fact in video 
+structure functions thus used to 
+measure momentum distribution 
+quarks inside nucleons 
+we qualitatively demonstrate behavior 
+structure function fx based 
+successively refined 
+hypotheses dynamics quarks 
+if nucleon consisted three 
+quarks without interaction, 
+x will fixed to quark, 
+f will a delta function this value 
+if a state 
+quarks bound together 
+via gluons, 
+average value x would still , 
+a wider distribution 
+around this value 
+if we finally take 
+account that quarks emit 
+virtual gluons split 
+a quarkantiquark pair low energy, 
+we expect that quark distribution 
+tends to fill x 
+experimental data indeed to 
+follow this qualitative picture 
+first valence quarks, 
+that is two quarks 
+one quark proton, 
+structure function varies around 
+a strong enhancement 
+small x additional quarkantiquark 
+pairs produced gluons 
+integral distribution 
+is twice large 
+quark 
+quark, 
+contribution gluons is indeed 
+seen in contribution 
+sbar quarks would 
+present in nucleon otherwise 
+integrating this distribution we 
+see that 
+proton momentum is carried quarks 
+rest is carried gluons 
+in next video, we discuss mesons, 
+bound states between quarks antiquarks 
+music 

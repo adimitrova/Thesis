@@ -1,0 +1,86 @@
+[music]. 
+i've mostly been selling you on the idea 
+of u-substitution as a method for finding 
+antiderivatives, for evaluating 
+indefinite integrals. 
+let's think about what u-substitution 
+says just for definite integrals. 
+so here's the setup. 
+i've got the integral x goes from a to b 
+of some function f, not the derivative of 
+f, just f g of x times g prime of x dx. 
+now, how could i approach a problem like 
+this so i can make a substitution? 
+u equals g of x so that du is g prime of 
+x dx and, in that case, this integration 
+problem becomes the integral of f of u u 
+is g of x times this is du. 
+but now i've gotta change the bounds of 
+integration. 
+when is x is equal to a, u is g of a, and 
+when x is equal to b, u is g of b. 
+assuming that those two integrals exist 
+to justify the equalty of those two 
+integrals. 
+it's just the chain rule and the 
+fundamental theorem of calculus. 
+and yet, this statement, the equality of 
+this integral and this integral, that's 
+just a statement about two definite 
+integrals. 
+i don't need to know the fundamental 
+theorem of calculus in order to make this 
+assertion. 
+this raises a fascinating question, u 
+substitution is making a claim about 
+definite integrals. 
+and yet the naive way to justify that 
+claim goes through the fundamental 
+theorem of calculus and the chain rule. 
+is it possible to see why the statement 
+about u substitution for definite 
+integral should be true without resorting 
+back to anti-differentiation? 
+well, to gain some insight into this, 
+here's a random graph that i made of some 
+function that's nearly constant. 
+but the function i'm calling f. 
+and this, area, in here is the interval 
+from 1 to 10 of f of udu. 
+and that's this area in here. 
+now i want to imagine what happens when i 
+do the substitution. 
+what happens when i replace. 
+u with x squared plus 1, and that changes 
+du, right. 
+that's that formula that we saw a moment 
+ago. 
+if i'm integrating f of u du, i could 
+alternatively integrate f of g of x times 
+du g prime of xdx, and i can imagine that 
+in the graph, transforming from the u 
+coordinates to these x coordinates. 
+well the u-coordinates are more stretched 
+out, right. 
+when x is 0, u is 1. 
+when x is 1, u is 2. 
+when is x is 2, u is 5. 
+and when x is 3, u is 10. 
+so if i redraw this picture in the, 
+x-coordinates, it's as if i've taken this 
+picture and squished it in, right, and 
+when i squish it in. 
+then i'm going to get a picture more like 
+this. 
+and to calculate the area, there, i'd be 
+calculating this integral. 
+the integral from 0 to 3, this is x, of f 
+of what u is equal to in terms of x, du, 
+which is 2x dx. 
+and the whole gimmick here is just that 
+i'm trading the width in this picture for 
+the height in this picture. 
+and the factor that relates the width 
+here, the du's and the height here, well 
+that's exactly this factor here, right? 
+that's du but written in terms of dx. 

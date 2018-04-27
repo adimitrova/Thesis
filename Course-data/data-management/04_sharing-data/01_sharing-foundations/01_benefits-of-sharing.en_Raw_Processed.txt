@@ -1,0 +1,153 @@
+music 
+thus far, we touched finra 
+expectations regarding data sharing 
+well data management 
+practices that help researchers 
+share data efficiently 
+this includes following 
+metadata standards, 
+creating documentation 
+following quality assurance protocols 
+now, we will delve deeply 
+topic sharing digital data 
+end this lesson, 
+you will able to identify 
+benefits sharing data 
+you will also able to identify 
+challenges 
+obstacles to data sharing 
+finally, you will recognize 
+importance elements data citations 
+lets consider key players 
+comes to data sharing 
+first, there is data creator 
+producer 
+this is person entity is 
+making data available to share 
+there is also person reuses 
+data secondary data user 
+finally, there is data repository 
+this is data creator 
+makes data available 
+a data repository plays a key role 
+in enhancing discovery 
+reuse data 
+ideally, 
+creating a formal data citation 
+so 
+benefits data sharing 
+we discussed previously, 
+funders encouraging 
+in cases, requiring researcher 
+to make data available 
+sharing to support transparency 
+openness 
+maximize funders return investment 
+specific benefits data sharing to 
+research community numerous 
+discussed in much literature 
+we will look top ten 
+benefits sharing research data 
+information data sharing 
+literature, check resources 
+this module 
+number one, sharing data reinforces 
+open scientific inquiry 
+making data openly available 
+decreases potential 
+disagreements among researchers 
+allows scientific inquiry 
+to progress unimpeded to benefit 
+entire research community 
+number two, 
+sharing data supports verification 
+replication original results 
+making data available, data used 
+to verify replicate published results 
+verification bolster original 
+results expose errors 
+either outcome helps strengthen 
+protect integrity 
+scientific record 
+number three, sharing data promotes 
+new research allows 
+testing new alternative methods 
+while data creators may 
+one research question in mind, 
+data may reused to answer 
+new innovative research questions 
+number four, sharing data encourages 
+collaboration multiple perspectives 
+sharing data begin conversations 
+between researchers across disciplines 
+this could lead to crossdisciplinary 
+collaborations exchange 
+knowledge across fields that could result 
+in new innovative research approaches 
+number five, sharing data provides 
+important teaching resources 
+data extremely valuable 
+pedagogical tools 
+instructors may use data 
+in analytical exercises 
+students may model work 
+highquality data examples 
+data also provide students 
+firsthand experience in verifying results 
+number six, 
+sharing data reduces costs avoiding 
+duplicate data collection efforts 
+avoiding unintended duplicate data 
+collections saves respondents 
+researchers valuable time resources 
+freeze researcher funds 
+projects 
+number seven, sharing data protects 
+faulty fraudulent data 
+past few years, 
+there multiple stories in 
+news misconduct in research 
+sharing data promotes transparency 
+accountability, 
+lessens potential purposeful 
+falsification distortion data 
+also allows reusers to 
+detect unintentional errors 
+finally, expectation that 
+others may verifying data 
+encourage greater 
+care in original analyses 
+number eight, 
+sharing data enhances visibility 
+overall impact research projects 
+making research data available 
+within a data repository 
+increase visibility researched 
+products increase impact 
+a project encouraging 
+secondary analysis data 
+scholars also found a significant 
+association between publishing data 
+increased citation rates 
+in end, sharing data 
+benefit broader research community, 
+also produce potential 
+career benefits researchers 
+number nine, sharing data 
+preserves data future use 
+if a researcher makes data available 
+sharing within a data repository, 
+sure that 
+data will available 
+understandable longterm 
+others use 
+number ten, sharing data helps 
+broader community 
+individual researchers better research 
+sharing data, researchers 
+support research 
+broader research community resulting 
+in science that is accurate, 
+open, knowledgeable 
+resources disposal 
+music 

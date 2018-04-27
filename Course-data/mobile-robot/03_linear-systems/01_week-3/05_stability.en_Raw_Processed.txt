@@ -1,0 +1,262 @@
+so in previous lecture, we a lot 
+technical push ups to end end 
+a description solution 
+to a general lti system is reason 
+that is, is that i really, really enjoy 
+rule, even though i that will 
+actually help us to characterize 
+systems today, i want 
+to talk stability, you 
+probably recall we a control 
+design, first order business is to 
+design controllers so that systems dont 
+blow if blow up, theres nothing 
+we quad rotors 
+fall air robots drive 
+to infinity cars smash things 
+we dont want to blow up, 
+deciding objectives almost always 
+layered in this sense first order 
+business is stability we want to 
+track whatever reference character 
+reference point we we also want 
+to robust to parameter uncertainties, 
+possibly noise we wrap 
+objectives around it, like you 
+want to move fast, quickly you can, 
+use little energy youre 
+moving, things like this but, 
+regardless which, stability is always 
+first order business so lets 
+start scalar systems, inputs so 
+a matrix now, in this case x dot 
+is little ax, means that 
+scalar well solution x is e 
+to a, we said minus naught x 
+naught here i simply picked naught to 
+equal to so this is solution 
+okay, lets plot this solution looks 
+like if a is positive, x 
+starts nicely pabaah its, 
+blowing far i tell so if a 
+is positive this system blows well, if 
+a is negative, e to at, this is a 
+decaying exponential so we get x to 
+go, , nice to zero happens if a 
+is zero in between well, you 
+e to zero t, is so then, 
+x is simply equal to x naught x 
+never changes 
+so here, didnt blow up, didnt 
+actually go to zero in fact, 
+we its, really a sitution 
+three possible things happen you 
+blow up, you go to zero, you stay 
+put so lets talk three 
+cases first case is is called 
+asymptotic, stability so system is 
+asymptotically stable if x goes to zero 
+initial conditions, so this fancy 
+upside a, is known universal 
+quantifier we need to know is that 
+we see upside a way we 
+pronounce is x nought so 
+asymptotic stability means that we go to 
+zero almost always we want to 
+design system so that x actually goes 
+to matter we start, thats 
+asymptotically stability you 
+recall, in scalar case, a strictly 
+negative corresponds to asymptotically 
+stability we unstability, 
+instability system 
+unstable that means is there exists 
+an initial condition, so flipped e, 
+to speak existential 
+quantifier, we read exists so 
+unstable if there exists so many 
+extra conditions system 
+actually blows in scaler case, we 
+a positive corresponding to 
+instability we something we 
+call critical stability, is somehow 
+in between system doesnt blow 
+doesnt go to zero either, in 
+fact, scalar system, this 
+corresponded, corresponded to the, a equal 
+to zero case so if you summarize that, if 
+you a scalar system a positive 
+means system is unstable a negative 
+means that system is asymptotically 
+stable, is code saying that 
+state goes to zero a zero means 
+critically stable okay 
+let use this way thinking 
+matrix case x is ax, capital a so this 
+is now, x is a vector, a is a matrix 
+we there well, we cant say 
+oh, a is positive, a is negative 
+a is a matrix positive 
+negative we is we 
+go next best thing, is 
+eigenva lues 
+and, in fact, almost always, intuition 
+you get a scalar system translates 
+behavior eigenvalues 
+matrices you 
+dont know eigenvalues are, 
+special things that associated 
+matrices so, if i a matrix a n 
+n, i multiply a vector an n 
+vector, if i write 
+vector times a scalar, this 
+means is that way that a acts this 
+vector is basically scaling 
+scaling factor is given lambda if i 
+can, if i find lambda v to satisfy 
+this, i is a lambda that is 
+called an eigenvalue actually 
+a real number typically a 
+complex number so a, a slightly 
+general object a real number, 
+thats an eigenvalue v is known 
+an eigenvector eigenvalues 
+eigenvectors really fundamental 
+objects in, in youre dealing 
+matrices you want to understand 
+behave and, whenever you think 
+scalar first, you almost always 
+translate eigenvalues, 
+eigenvalues systems and, 
+eigenvalues actually would tell you 
+matrix a acts in directions eh 
+eigenvectors so, you almost think 
+scalar systems in directions 
+different eigenvectors and, you 
+know, sometimes you may want to compute 
+eigenvalues i dont 
+so, if you use matlab you would 
+write, eiga, pops 
+eigenvalues whatever software you, 
+comfortable with, you want to use c, 
+python, whatever, there is almost 
+always a library that allows you to 
+compute eigenvalues and, command is 
+typically something like eiga 
+so, this would give you eigenvalues 
+are, given a particular matrix okay 
+lets see this actually means lets 
+take a simple example here heres a 
+system , , o minus if you take eig a 
+this you get eigenvalue 
+eigenvalue negative 
+correspo nding eigenvectors , , 
+, okay 
+this mean actually means 
+following so lets say that this is x, 
+this is x okay 
+v , so this this direction 
+so here is what, v is this is 
+direction in v is pointing well, 
+eigenvalue there is negative , 
+means that, if you recall scalar 
+system, a negative, we 
+stability so if i start here, 
+trajectory is going to pull to 
+zero nice stable, in fact, if i 
+start here, going to pull to 
+zero, nice stable right 
+so, if im starting x axis, 
+system is well behaved if i start 
+x axis, i lambda positive, 
+corresponds to little a 
+positive in scalar case, means 
+that system actually blows so, 
+here, system goes to infinity 
+and, in fact, if i start here, x 
+component is going to shrink x 
+component is going to go to infinity 
+so i is this is system 
+actually looks like so eigen vectors 
+in this case will tell happens 
+along different dimensions of, 
+system so this, if i x 
+dot big ax, i find a solution, 
+system is asymptotically stable, 
+if if, scalar case, we 
+that little a to negative 
+we need in matrix case is that 
+real part, remember that lambda 
+complex, real part lambda is 
+strictly negative eigenvalues to 
+a all, this is asymptotic 
+stability means linear systems 
+unstable means that there is one more, 
+one single bad eigenvalue spoils 
+whole bunch so a single eigenvalue that 
+positive real part this is an, a 
+sufficient condition instability 
+we critical stability if so this 
+is a, a necessary condition that says 
+real part to less equal to 
+igon values we 
+going to spending time is typically 
+here in asymptotically stabl e 
+domain, we want to do, is we 
+want to design system 
+controllers in a way that closed 
+loop system is asymptotically stable so 
+going to somehow make eigen 
+values negative real part thats 
+going to one design objectives 
+that interested in i want to 
+point something critical 
+stability that if one eigenvalue is 
+rest eigenvalues negative 
+real part, if you two purely 
+imaginary eigenvalues so real 
+part, rest negative real 
+part, you critical stability 
+we will actually see that a little bit 
+later on, thing that i really want 
+to take, you to take you based 
+this slide, is, you look a matrix, 
+you compute eigenvalues if real 
+part eigenvalues negative 
+youre free clear, system is 
+asymptotically stable if one 
+eigenvalues positive real part, you 
+toast, system blows that is bad 
+so, lets end a tale two pendula 
+here is normal pendula, well if you 
+compute this, you get this matrix 
+eigenvalues j negative j 
+well, i dont know if you remember, 
+previous slide, there a bullet 
+that said if you purely imaginary 
+eigenvalues, we here we 
+purely imaginary eigenvalues 
+more, we critical stability 
+this actually means is that, this 
+pendulum, clearly, there is friction 
+grav, damping here going to 
+oscillate forever going to blow 
+its, , excuse 
+going to go to zero going 
+to keep oscillating forever ever 
+critically stable system 
+now, lets look inverted pendulum 
+im moving base, in that 
+case, a is we already know, this 
+things is going to fall right so, 
+if you compute eigen values you get 
+one eigen value to equal to negative 
+to positive , means that, 
+we one rothton eigenvalue this 
+eigenvalue thats going to spoil 
+system so this in an unstable system so 
+that we understand that eigenvalues 
+really matter, really influence 
+behavior system, lets see, , 
+excuse me, we use this to 
+advantage we control design 

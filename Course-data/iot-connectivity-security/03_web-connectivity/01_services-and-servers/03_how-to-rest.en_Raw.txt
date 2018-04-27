@@ -1,0 +1,177 @@
+[music]
+welcome to the lesson on
+restful web services.
+in this video lecture,
+we will have a deep look at rest.
+but what is rest, actually?
+rest, or representational state transfer,
+is an architectural style.
+a set of guidelines to
+serve network applications.
+it specifies a set of constraints
+on developing web services, and
+if those constraints are met
+we call that service restful.
+the first constraint is the separation
+of the client and server functions and
+architectures.
+the client doesn't care about
+the task executed on the server.
+for example, database access or
+memory management.
+and the server doesn't care
+how the client operates.
+this way they both can be
+developed independently.
+clients can send multiple requests, but
+these requests should be
+independent of each other.
+responses should be clearly identified
+as cacheable or non-cacheable.
+this is more of a performance constraint.
+multiple clients might request
+the same resource, and in this case,
+caching will help in reducing response
+time and reducing a server load.
+there should be a uniform way of
+identifying and accessing resources.
+each resource must have a uri and
+representation.
+the representation can be in json or xml.
+the last constraint is that
+an application can have multiple layers.
+layers between client and server,
+like cash servers and load balancers.
+if there is a load balancer
+between a client and a server,
+the client shouldn't see
+beyond the load balancer.
+and the server shouldn't be concerned
+with who the load balancer is talking to.
+this restriction reduces complexity and
+makes it easy to add and remove layers.
+as a design consideration
+rather than a constraint,
+there should be one to one
+mapping between crud operations.
+that is create, read, update, and
+delete operations, and
+operations provided by the server.
+in light of these constraints,
+let's look at how http fits rest.
+https is stateless,
+it has a client-server model,
+it supports caches, and
+uses urls to identify resources.
+the last design consideration
+is mapping of craft operations.
+this can be done by a http
+methods as shown in the table.
+we see that it is simple to build
+a restful web service via http.
+but why should we use rest when exposing
+the functionality of an embedded or
+cyber physical system to the web.
+first of all,
+a central idea of rest is a resource.
+a resource is a component
+of an application
+that can be uniquely identified.
+the same logic applies
+to embedded systems.
+we have resources in
+the form of sensor and
+actuators, which need to be
+individually identified and accessed.
+identification is achieved via uri's,
+and they're representation via json.
+an access comes by a http
+methods like get and post.
+in rest, we call for crud operations,
+create, read, update and delete.
+in most cases, these are the only
+operations that we need on our sensors.
+create the stages,
+update them, or shut them off.
+rest and json, used together,
+create a lightweight
+representation of resources.
+being lightweight makes
+it more power efficient.
+the statelessness of rest means that
+it is more memory efficient as a server
+doesn't store our main information
+about the state of the connection.
+so, not only does rest fulfill
+our design considerations, but
+it also fulfills real-world considerations
+related to limited power and memory.
+we looked into rest, and its applicability
+to embed in systems in general.
+now we will talk about some best practices
+to follow when designing
+web-enabled embedded systems.
+first of all, identify the sensors or
+functionalities that are available to you,
+and then decide which ones you
+would like to enable as a resource.
+each of these resources
+should have a simple and
+focused uri to identify and access them.
+and finally, what actions would you like
+to allow on each of these resources?
+to better understand, we will look
+at an example development board.
+on the screen, you see a texas
+instruments smart rf06 evaluation board.
+it has an accelerometer,
+light sensor, lcd display,
+an sd card slot, and
+some push buttons and leds.
+in this case,
+it is easy to identify our resources.
+all of the mentioned
+components are resources
+that can be uniquely identified and
+accessed.
+the next step is to assign each
+one a unique and logical uri.
+here you see an example mapping
+of uris against each resource.
+the next step is to specify which
+operations you would allow on
+each resource.
+so when you enter in a browser the url
+of whichever sensor you want to access,
+the response will depend on whether the
+specific http method is allowed or not.
+if it's allowed you will
+get an okay status message
+with the value of the sensor.
+if the method is not allowed, you will get
+the method not allowed status message.
+on the screen you see an example
+mapping of methods to resources.
+as we will be only reading data
+from the accelerometer and
+licencer, the only method
+we can use is get.
+an led can have a get method
+to tell us it status on or
+off and
+a put method to change that status.
+and lcd can be updated to output certain
+information, and for that we need put.
+if we are reading and writing to the sd
+card, we can have all of these methods,
+create a file, update a file,
+read it, and delete it.
+in this lesson, we looked at how
+the rest style of designing web services
+is beneficial for
+cyber physical systems, and
+then we described an example mapping of
+rest to an embedded development board.
+next we will learn about another type
+of service called cloud computing.
+[music]

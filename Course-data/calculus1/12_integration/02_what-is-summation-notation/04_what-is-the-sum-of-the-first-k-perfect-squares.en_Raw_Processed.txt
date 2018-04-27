@@ -1,0 +1,171 @@
+music we get if we add a 
+bunch perfect squares 
+say, first k perfect squares 
+im asking is a formula this 
+sum 
+sum n squared n goes to 
+k, right 
+so squared, plus squared, plus 
+squared, plus dot, dot, dot, right 
+so on, until i get to k squared 
+i get if i add first k 
+perfect squares 
+quite shockingly, resulting formula 
+ends looking really nice 
+this ends equal to k times k plus 
+times k plus 
+really 
+well, we try specific 
+value 
+right 
+if i sum go to 
+n squared 
+thats squared plus squared plus 
+squared plus squared 
+thats plus plus plus 
+make 
+make 
+plus is 
+so sum first four perfect 
+squares is 
+is that really this formulas giving 
+well lets check 
+so im going to put in k, times 
+plus 
+times times plus 
+whats that 
+well thats times times times plus 
+is divided 
+is times , so kills part 
+part to give times 
+times 
+yeah, i mean, times is , twice 
+is 
+really works, least value 
+course, this isnt a proof in general 
+so i going to verify that, that 
+statement is true 
+well, one argument is a geometric 
+argument, really a proof picture 
+so heres a geometric a diagrammatic 
+way writing squared plus 
+squared plus squared plus squared 
+i know theres dots here, right 
+im trying to draw a diagram that 
+suggests a general pattern 
+ok 
+so lets try to add 
+these, four numbers 
+im going to use this device here 
+is this 
+well, ive done here is ive taken 
+copies k squares, alright 
+so heres square plus square plus 
+squares plus squares 
+heres another squared plus squared 
+plus squared plus squared, in 
+middle i sort mixed a little bit 
+ive taken lower lefthand corner dot, 
+is red, ive lined 
+vertically here 
+ive taken next, sort three long l 
+shape ive drawn in blue here, 
+ive straightened placed 
+three here 
+ive taken two five long orange ls 
+straightened here, 
+here top ive got one long brown l 
+comprised seven dots, ive 
+straightened that right here 
+top 
+so whats happened here 
+right, i taken three copies 
+sums squares, right so ive got three 
+copies squares 
+one set is here, one sets here, 
+set is mixed in middle 
+i figure big a 
+rectangle this is 
+well bottom here this is a k k 
+square, k k square built 
+corners that dot 
+so theres a whole bottom side is made 
+k plus dots, k plus plus k k 
+plus 
+along side 
+well along side, ive got one 
+dot plus two dots plus three dots plus 
+four dots course, this is a 
+specific picture 
+so in general, will plus plus 
+plus until i get to k 
+so i to figure tall this 
+rectangle is, i in fact know a formula 
+plus plus plus k, 
+alright 
+we figured that already 
+k times k plus 
+so ive taken three copies built 
+a rectangle whos base is k plus , 
+is k times k plus tall 
+so that means that this sum, is 
+im trying to compute, must 
+well the, height this rectangle 
+times width this rectangle divided 
+, since i used three copies of, 
+squares to build big rectangle 
+so i ended dividing 
+this is in fact formula that we 
+had, right 
+original formula k times k times 
+k plus times k plus 
+thats a rearranged version 
+this formula 
+there geometric arguments 
+well 
+proofs picture that you could 
+give 
+there geometric arguments 
+
+heres another way to get this sum 
+squares formula 
+i could right sum squares 
+something built little tiny 
+cubelets 
+right 
+here ive got one cube 
+underneath ive got squared cubes right, 
+this is a block 
+underneath ive got nine little cubes, 
+right 
+a block 
+underneath that ive got cubes, a 
+block, right 
+i imagine that this thing is k 
+high 
+i take six copies this pyramid 
+you know, fit together 
+flip one so forth 
+until i end a k k plus k 
+plus box 
+right 
+that box must comprise k times k 
+plus times k plus little tiny cubes 
+since i used six copies this thing 
+well that means number cubes in 
+this thing 
+is sum squared plus 
+squared plus until i get to k squared 
+right 
+that sum must k times k plus time k 
+plus divided 
+here, weve given geometric arguments 
+this particular sum 
+in future also going to see 
+algebraic arguments 
+right 
+going to wait a little 
+bit 
+time being, this particular 
+quality will helpful we start 
+calculations of, riemann sum 

@@ -1,0 +1,158 @@
+1
+00:00:00,000 --> 00:00:05,329
+[SOUND] So far, we've been selling 
+continuity as something about nearness. 
+
+2
+00:00:05,329 --> 00:00:11,169
+Continuous functions preserve nearness, 
+so nearby points gets into nearby points. 
+
+3
+00:00:11,169 --> 00:00:16,352
+But continuity isn't just about how small 
+changes become small changes. 
+
+4
+00:00:16,352 --> 00:00:21,973
+Continuity has consequences for the 
+global structure of the function as well. 
+
+5
+00:00:21,973 --> 00:00:26,191
+Here's one of them. 
+I've graphed just some random looking 
+
+6
+00:00:26,191 --> 00:00:30,514
+continuous function. 
+And I've picked a couple input points, 
+
+7
+00:00:30,514 --> 00:00:32,601
+input point a, 
+input point b. 
+
+8
+00:00:32,601 --> 00:00:36,551
+Here is the point a, f of a, 
+here's the point b, f of b. 
+
+9
+00:00:36,551 --> 00:00:41,395
+And on the y-axis I've got the value f of 
+a and the value f of b. 
+
+10
+00:00:41,395 --> 00:00:46,463
+Now, in between f of a and f of b, I've 
+just picked some random value. 
+
+11
+00:00:46,463 --> 00:00:51,360
+I'm calling it y. 
+Here's a consequence of continuity. 
+
+12
+00:00:51,360 --> 00:00:59,657
+There has to be some corresponding input 
+x so that if I plug in x, [SOUND] I get 
+
+13
+00:00:59,657 --> 00:01:03,152
+out y. 
+This is the so-called intermediate value 
+
+14
+00:01:03,152 --> 00:01:06,172
+theorem. 
+Let me write down a more precise 
+
+15
+00:01:06,172 --> 00:01:10,370
+definition now. 
+So here's a statement of the intermediate 
+
+16
+00:01:10,370 --> 00:01:13,390
+value theorem. 
+Theorem says the following. 
+
+17
+00:01:13,390 --> 00:01:19,061
+Suppose f of x is continuous in the 
+closed interval between a and b, and that 
+
+18
+00:01:19,061 --> 00:01:22,155
+y is some point between f of a and f of 
+b. 
+
+19
+00:01:22,155 --> 00:01:27,900
+Then, there's an x between a and b so 
+that the function's output, when you plug 
+
+20
+00:01:27,900 --> 00:01:31,725
+in x, is equal to y. 
+Here's a real world example, or if you 
+
+21
+00:01:31,725 --> 00:01:35,810
+like, a real world non-example of the 
+intermediate value theorem. 
+
+22
+00:01:35,810 --> 00:01:40,932
+Is it possible for me to be standing here 
+in one moment and over here in the next 
+
+23
+00:01:40,932 --> 00:01:44,430
+moment without actually occupying the 
+points in between? 
+
+24
+00:01:44,430 --> 00:01:47,360
+What does the intermediate value theorem 
+say? 
+
+25
+00:01:47,360 --> 00:01:50,919
+My position is a continuous function of 
+time. 
+
+26
+00:01:50,919 --> 00:01:57,167
+So, if I'm standing here at say, time t 
+equals zero seconds, and I'm over here at 
+
+27
+00:01:57,167 --> 00:02:02,542
+say, time equals three seconds, 
+mustn't there be a time when I'm 
+
+28
+00:02:02,542 --> 00:02:07,454
+standing, say, right here? 
+Yeah, maybe it's a time t equals two 
+
+29
+00:02:07,454 --> 00:02:09,092
+seconds. 
+Who knows? 
+
+30
+00:02:09,092 --> 00:02:16,552
+What the intermediate value theorem says 
+is that for a continuous function, all of 
+
+31
+00:02:16,552 --> 00:02:23,284
+the intermediate values are actually 
+achieved at some point along the way. 
+
+32
+00:02:23,284 --> 00:02:24,012
+[SOUND] 

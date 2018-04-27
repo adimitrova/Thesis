@@ -1,0 +1,173 @@
+in this module, you'll be introduced
+to the concepts of file formats,
+compression, data normalization,
+and transformations.
+by the end of the module,
+you'll understand why these are important.
+and you'll be able to make decisions
+about which approach to use when.
+you'll also be able to use
+the content featured in the module
+to help improve your research
+data management practice.
+so what is a file format?
+a file format is a way of encoding
+information within a computer file.
+a program or an application
+needs to recognize that file
+format in order to be able to
+access the content within the file.
+a web browser, for example,
+will recognize html, things in hypertext
+markup language, and will be able to open
+these files and display them as webpages.
+if a browser comes across a different type
+of file it might call on a special kind of
+plugin to be able to open and
+display those files.
+otherwise, if it doesn't recognize
+the file type, it may offer the option to
+download the file so
+you can open it with the relevant program.
+the file format is often indicated as
+part of the file name in an extension or
+suffix.
+conventionally, the extension follows
+a full stop in the file name, and
+has three or four letters that
+identify the format such as jpg for
+jpegs, or docx for a word document.
+files in proprietary formats usually
+have to be opened by the specific
+software in which they've been created.
+so this means that somebody
+without a license for
+that software can't
+always open those files.
+in contrast, open formats are ones
+in which the software company or
+the collective that's created that
+software, has made it openly available.
+and this usually means that a number of
+applications have been developed which
+can open those types of files.
+adobe pdf is good example
+of an open format.
+it can be opened by a number of
+applications, not just adobe products.
+file types are based on either text or
+binary encoding.
+text files are machine readable
+through character encoding standards,
+such as ascii and uni-code,
+whereas binary files are run by applicable
+software and may be proprietary.
+only binary formats can be executed.
+some file types include both binary and
+text, such as the rich text format.
+a big advantage of creating or
+saving your research data in a text format
+is that the file can be read in a plain
+text editor, like windows notepad,
+and is human-readable.
+they can be opened in any operating system
+and by a wide range of applications.
+some of the well-known file extensions
+of plain text files are .txt,
+.csv, .asc, .html, and .xml.
+most software packages allow export and
+exchange formats, so
+you can create a text file for
+import into another program.
+for example, in microsoft excel, you can
+save your spreadsheet as a csv file.
+file formats that are open,
+non-proprietary and
+in widespread use, stand the best chance
+of being readable well into the future.
+in contrast, proprietary formats,
+especially those that are non-standard,
+that require specific
+software applications or
+particular versions of that software,
+are likely to pose issues for future use.
+rapid changes in technology in the market
+mean that file formats can
+very quickly become obsolete.
+this obviously has negative connotations
+for long-term preservation and reuse.
+if you want your data
+to be accessible later,
+you're best to convert
+it to open standards.
+data formats that conform to
+agreed international standards
+are less likely to become obsolete,
+as there should be a range of software
+applications that can read them.
+there may well be trade-offs in terms
+of software functionality though,
+such as a loss of formatting or macros.
+sometimes there is a de
+facto standard that's used.
+pdf for example has become the de facto
+standard for publishing documents
+on the web in a way that retains
+the original layout, fonts, and text.
+at some point during your research,
+you may need to convert or
+migrate your data files
+from one format to another.
+this could be because you've upgraded
+your pc, you've got new software, you're
+sharing data with a collaborator who uses
+different software, you're using a shared
+platform, or simply because you want your
+data files to be readable in the future.
+a checksum algorithm tool can be
+used to compare the bits of a file
+when it's been moved from
+one medium to another.
+checksums are typically
+run by repositories
+to perform data integrity checks.
+these won't work however,
+if the file format has changed or
+if you're comparing files across
+different computing platforms.
+at some point during your research you
+may choose to compress your files.
+this could be to fit them onto
+a particular storage device or for
+transmission or transportation.
+compression is also known
+as bit-rate reduction.
+it involves encoding
+the information in fewer bits
+than the original representation.
+zip is a de facto standard compression
+format that's used on windows,
+macs, linux, and unix platforms.
+zip is a lossless type of compression,
+which means the file should be identical
+to the original once you unzip it.
+there are also lossy types of compression
+associated with some multimedia file
+formats.
+these may result in some
+kind of distortion or
+loss of quality fidelity when played.
+tar, tape archive files,
+are commonly used in unix or
+linux to bundle a set of files into one.
+tar files may also be zipped
+to reduce the file size.
+lossiness can be one
+trade off of compression.
+another is the amount of processing
+time it takes to compress and
+decompress the files before or during use.
+the amount of computing resource
+needed can also be an issue,
+particularly in the case of very
+large files or shared servers.

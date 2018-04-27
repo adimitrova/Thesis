@@ -1,0 +1,274 @@
+1
+00:00:00,012 --> 00:00:08,223
+[music] In our calculus class so far, some
+of the applications have involved sheep
+
+2
+00:00:08,223 --> 00:00:14,933
+trapped inside fences and ladders leaning
+up against buildings.
+
+3
+00:00:14,934 --> 00:00:18,021
+Well, here's a scene that combines all
+these things.
+
+4
+00:00:18,021 --> 00:00:21,191
+I've got a sheep, I've got a fence, I've
+got a ladder.
+
+5
+00:00:21,191 --> 00:00:25,271
+Here's a really tall barn.
+Here's the sun shining down on the ground.
+
+6
+00:00:25,271 --> 00:00:30,176
+Let's suppose that you're the sheep, stuck
+behind the fence, but eager to get to the
+
+7
+00:00:30,176 --> 00:00:32,992
+barn.
+The really good news is that you're not
+
+8
+00:00:32,992 --> 00:00:36,174
+just a regular sheep, you're some sort of
+ninja sheep.
+
+9
+00:00:36,174 --> 00:00:39,418
+And you've got a supply of a bunch of
+different ladders.
+
+10
+00:00:39,418 --> 00:00:43,091
+The question is, what's the shortest
+ladder that you can use?
+
+11
+00:00:43,092 --> 00:00:48,350
+You want to pick the shortest ladder that
+you can get away with, which goes over the
+
+12
+00:00:48,350 --> 00:00:52,405
+fence and touches the barn.
+I mean, if the ladder is too short, it
+
+13
+00:00:52,405 --> 00:00:56,712
+won't even go over the fence.
+But, even this longer ladder, I mean, it
+
+14
+00:00:56,712 --> 00:01:01,362
+will get you over the fence, but this
+ladder is not long enough yet to get you
+
+15
+00:01:01,362 --> 00:01:05,493
+all the way to the barn.
+At this point, you're probably feeling
+
+16
+00:01:05,493 --> 00:01:08,472
+really bad.
+You now recognize that this is an
+
+17
+00:01:08,472 --> 00:01:12,724
+optimization problem, but you're thinking,
+oh no, not again.
+
+18
+00:01:12,724 --> 00:01:17,395
+Not another optimization problem.
+Well, let me say a little more about
+
+19
+00:01:17,395 --> 00:01:21,441
+exactly how tall the fence is, and how far
+it is from the barn.
+
+20
+00:01:21,441 --> 00:01:24,487
+Let's say that, that fence is 6.4 meters
+tall.
+
+21
+00:01:24,488 --> 00:01:29,569
+And let's say that the fence is 2.7 meters
+from the barn.
+
+22
+00:01:29,569 --> 00:01:35,229
+Is something sounding familiar here?
+Yeah, we've seen numbers like 64 and 27
+
+23
+00:01:35,229 --> 00:01:39,111
+come up before.
+We saw them in that hallway problem,
+
+24
+00:01:39,111 --> 00:01:42,199
+right?
+What did I want to do in the hallway
+
+25
+00:01:42,199 --> 00:01:46,070
+problem?
+I wanted to take some stick and figure out
+
+26
+00:01:46,070 --> 00:01:51,866
+what the, in this case, longest stick was
+that I could navigate through this
+
+27
+00:01:51,866 --> 00:01:55,365
+hallway.
+But as, remember, the issue was finding
+
+28
+00:01:55,365 --> 00:02:00,954
+the shortest stick which simultaneously
+touched this bottom wall, this wall here
+
+29
+00:02:00,954 --> 00:02:05,351
+in the corner.
+That's really the exact same problem.
+
+30
+00:02:05,351 --> 00:02:09,093
+We just have to think about this problem
+in, in different terms.
+
+31
+00:02:09,093 --> 00:02:13,038
+Instead of thinking of this as a wall, I
+think of this as the ground.
+
+32
+00:02:13,038 --> 00:02:17,837
+Instead of thinking of this is a wall, I
+think of this as the side of the barn.
+
+33
+00:02:17,837 --> 00:02:22,003
+And I want to pass through this point.
+I want to touch this corner, which really
+
+34
+00:02:22,003 --> 00:02:24,410
+just means I want to clear the fence, you
+know?
+
+35
+00:02:24,411 --> 00:02:29,548
+And because this problem happened to be
+solved by a stick of length 125
+
+36
+00:02:29,548 --> 00:02:35,485
+millimeters, this problem is going to be
+solved by a ladder of length 12.5 meters.
+
+37
+00:02:35,485 --> 00:02:41,119
+And here, and this drawing is actually to
+scale so I can, I can really demonstrate
+
+38
+00:02:41,119 --> 00:02:44,552
+it, you know?
+Here, I position the ladder and yeah,
+
+39
+00:02:44,552 --> 00:02:49,752
+this, this ladder is in fact long enough
+to touch the ground, the barn, and just
+
+40
+00:02:49,752 --> 00:02:53,477
+clear the fence.
+We've done a ton of stuff this week, but
+
+41
+00:02:53,477 --> 00:02:56,772
+this is perhaps the most important lesson
+of all.
+
+42
+00:02:56,772 --> 00:03:00,868
+At it's core, mathematics is not about
+just solving problems.
+
+43
+00:03:00,868 --> 00:03:06,562
+What we've done here is realize an analogy
+between two seemingly different problems,
+
+44
+00:03:06,562 --> 00:03:09,740
+alright?
+The problem of a stick turning a corner
+
+45
+00:03:09,740 --> 00:03:13,778
+and a ladder clearing a fence.
+More than about solving problems,
+
+46
+00:03:13,778 --> 00:03:18,322
+mathematics is really about these kinds of
+analogies, about being able to recognize
+
+47
+00:03:18,322 --> 00:03:21,162
+that things that look different are really
+the same.
+
+48
+00:03:21,162 --> 00:03:25,520
+People have been doing mathematics for
+thousands of years, and there's been a ton
+
+49
+00:03:25,520 --> 00:03:29,958
+of new mathematics developed in that time.
+So, you might think that with all the new
+
+50
+00:03:29,958 --> 00:03:34,431
+mathematics, that mathematics would be
+constantly splintering off and fracturing
+
+51
+00:03:34,431 --> 00:03:37,941
+into different subjects.
+But that's not what's happened at all.
+
+52
+00:03:37,941 --> 00:03:44,634
+This desire to analogize, to unify.
+To see different parts of the elephant as
+
+53
+00:03:44,634 --> 00:03:51,316
+the same elephant, right?
+This tendency has really kept mathematics
+
+54
+00:03:51,316 --> 00:03:56,307
+together.
+It means that mathematics doesn't appear
+
+55
+00:03:56,307 --> 00:04:02,735
+as a bunch of separate subjects, it really
+appears as a unified whole.

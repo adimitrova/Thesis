@@ -1,0 +1,212 @@
+music 
+in this module, we discussing 
+basics particle acceleration 
+detection methods 
+in this video, you will see different 
+technologies combined to build 
+two basic types particle detectors, 
+spectrometers, calorimeters 
+end this video, you will able 
+to describe a spectrometer measures 
+direction momentum a charged 
+particle in a nondestructive manner 
+to describe a calorimeter measures 
+direction energy a particle 
+total absorption 
+you will also able to identify 
+strength two basic 
+methods synergy 
+a magnetic spectrometer is used 
+to measure direction 
+momentum a particle 
+minimal interaction 
+is a nondestructive method 
+to measure properties 
+particle trajectory is measured 
+in a known magnetic field 
+a homogeneous field, trajectory is 
+a spiral, a circle in plane orthogonal 
+to field, a straight line 
+in direction field 
+radius curvature is proportional to 
+is called magnetic rigidity r, 
+is ratio between momentum p, 
+charge z 
+r pz, 
+measured product radius 
+curvature magnetic field 
+magnetic field is provided 
+a permanent magnet an electromagnet 
+measurements path performed 
+an ionization detector, 
+a gas filled wire chamber, example, 
+layers semiconductor detectors 
+tangent to trajectory 
+entry magnet 
+gives direction 
+incident particle 
+an example, heres, again, a photo 
+drift chamber l 
+experiment large electron 
+positron collider cern well a picture 
+an ee annihilation 
+hedrons right side 
+reaction takes place in 
+middle device, 
+center image right 
+in central part, you see tracks 
+charged particles in yellow reconstructed 
+measured coordinates 
+indicated small green crosses 
+curvature is barely visible 
+wellmeasured high 
+resolution drift chamber 
+in this photograph left, 
+you see a central detector 
+made silicone sensors, 
+one that is used 
+atlas experiment 
+right image is a reconstruction a 
+reaction between protons in middle 
+device 
+charged particles, produced, 
+leave tracks forming circles 
+orthogonal to magnetic field 
+purpose a calorimeter 
+is to measure energy 
+direction particles absorbing 
+principle operation 
+is following 
+incident particle initiates 
+a shower particles in detector, 
+an electromagnetic shower, 
+a hadronic shower 
+shape, size, composition 
+shower depends incident particle 
+also detector material, 
+namely, 
+radiation length, 
+nuclear interaction length 
+energy is deposited in form 
+heat, is useful, 
+also produces detectable signals, 
+like ionization excitation 
+dedx, scintillation light, 
+cherenkov radiation, etc 
+this energy is detected sensors 
+resulting signal is proportional to 
+total energy deposited particle 
+shower in active 
+medium detector 
+there two kinds calorimeters, 
+homogenous ones one material to 
+absorb detect shower particles 
+layered calorimeters, 
+use different materials 
+interaction, absorption detection 
+heres an example a layered calorimeter 
+in a calorimeter, layers alternate 
+there absorption layers made heavy 
+materials like copper, lead, 
+uranium short 
+radiation in direction 
+here, particles interact 
+form a shower 
+in sensitive layers, 
+energy lost dedx is recorded 
+layers may 
+equipped a gaseous 
+noble liquid, a proportional chamber, 
+a semiconductor sensor, a scintillator 
+you see here, electromagnetic 
+calorimeter atlas contains absorption 
+layers lead steel alternating 
+sensitive layers filled liquid argon 
+whole a shape 
+resembling an accordion 
+in a homogenous calorimeter 
+hand, two functions combined 
+material is used an absorber 
+a detector deposited energy 
+scintillators made heavy 
+materials used, 
+like bismuth germanate, 
+bgo, lead tungstate 
+short radiation length 
+transparency materials, 
+often used to detect 
+electromagnetic showers 
+scintillation light, 
+emitted electrons shower, 
+is detected photomultipliers 
+semiconductor photodiodes, 
+in this example, 
+shows you lead tungstate 
+calorimeter cms experiment lhc 
+calorimeters also one main 
+applications plastic scintillators 
+large calorimeter hadron showers 
+atlas experiment is an example 
+here, you see a small animation 
+showing structure 
+one wedgeshaped slices 
+uses scintillated tiles 
+inserted between steel absorbers 
+to measure energy hadrons 
+shower develops mainly 
+in metal layers 
+charged particles generates produce 
+scintillation light in sensitive 
+layers 
+scintillation light is 
+collected optical fibers 
+guided to photo detectors 
+in this way, a threedimensional 
+image shower is measured, 
+allows to reconstruct direction 
+energy hadrons 
+also cherenkov effect allows 
+to build complete detectors 
+superkamiokande detector in japan 
+consists a huge cylindrical tank, 
+contains , 
+tons ultra pure water 
+a charged particle passes 
+water speed beyond that 
+speed light in water, is 
+speed light in vacuum, 
+a cone light is emitted 
+this cone is intercepted an array 
+photomultipliers distributed 
+walls 
+detect an ellipse photons, 
+allows to reconstruct direction 
+velocity particle 
+lateral longitudinal segmentation 
+allows to distinguish between hadrons 
+particles, interact via 
+electromagnetic force, like electrons 
+photons, muons 
+a general rule, 
+one say that electromagnetic 
+showers short, slim regular 
+hadronic showers penetrating, 
+wide, irregular 
+different characteristics 
+electromagnetic hadronic showers, 
+often two calorimeters, 
+a fine grain electromagnetic one 
+a coarser hadron calorimeter 
+is synergy between 
+different detector types that 
+allows to identify particles 
+measure direction energy 
+this is explained 
+in optional video a, 
+shows atlas 
+detector lhc works 
+in next video, we will show 
+types particle detectors developed 
+produced in laboratories 
+university geneva 
+music 

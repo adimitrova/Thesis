@@ -1,0 +1,305 @@
+music thus far, ive trying to 
+sell you idea that derivative 
+f measures we wiggling input 
+effects output 
+a important point is that 
+sensitivity to input depends 
+youre wiggling input 
+heres an example 
+think function fxx 
+f is is 
+f cubed is 
+so, input change 
+magnified times in 
+output 
+now, think f is , 
+is 
+f is so input change 
+magnified times 
+much, 
+right this input change this input 
+change magnified different 
+amounts 
+you know, you shouldnt surprised 
+that right, derivative, course, 
+measures this 
+derivative this function is x, 
+so derivative two is is 
+is coincidentally, theres a 
+here theres a here, right, 
+thats reflecting sensitivity 
+output to input change 
+derivative this function is 
+, is is 
+again, surprisingly heres a , 
+right point is that much 
+output is effected depends 
+youre wiggling input 
+if youre wiggling around , output 
+is affected times much if 
+wiggling around , output is 
+affected times much, 
+right derivative isnt constant 
+everywhere, depends youre 
+plugging in 
+we package together 
+ratios output changes to input changes 
+a single function 
+i mean this, well, fx is 
+limit h goes to fxhfxh 
+this limit doesnt calculate 
+derivative a particular point 
+this is actually a rule, right, this is a 
+rule a function 
+function is fx this tells 
+to compute that function 
+input x 
+derivative is a function 
+now, since derivative is a 
+function, i take derivative 
+derivative 
+im often going to write second 
+derivative, derivative 
+derivative this way, 
+fx 
+theres notations that youll 
+see in wild well 
+so, heres derivative f 
+if i take derivative 
+derivative, this would second 
+derivative i might write this a 
+little bit differently 
+i could put ds together, so to 
+speak, dxs together 
+ill left this 
+second derivative fx 
+a subtle point here is if f maybe y, 
+you might see this written 
+sometimes people write this dy, thats 
+right 
+i mean, d dx is second 
+derivative y 
+derivative measures slope 
+tangent line, geometrically 
+so, second dreivative 
+measure well, lets think back to 
+derivative is measuring 
+derivative is measuring changes 
+to input affect output 
+deravitive derivative measures 
+changing input changes, 
+changing input changes output, 
+im repeating here, 
+really second derivative is 
+measuring 
+measuring input affects 
+input affects output 
+if you say like that, doesnt make 
+a whole lot sense 
+maybe a geometric example will help 
+convey second derivative is 
+measuring 
+heres a function, yx 
+ive drawn this graph ive 
+slected three points graph 
+lets a tangent line 
+points 
+so, heres tangent line this 
+bottom point, point , 
+tangent line to graph that point 
+is horizontal, right, derivative is 
+there 
+if i move here, tangent line 
+positive slope if i move to this 
+third point draw tangent line 
+now, derivative there is even larger 
+line slope line 
+that point 
+whats going here is that 
+derivative is different 
+here , here positive, here 
+larger still, right derivative 
+is changing second derivative is 
+measuring quickly derivative is 
+changing 
+contrast that say, this example 
+a perfectly straight line 
+here, ive drawn points this line 
+if i draw tangent line to this line, 
+
+i mean, tangent line to this line is 
+line i started with, right so, 
+slope this tangent line isnt 
+changing 
+second derivative this 
+function, yx, really is , right 
+functions derivative isnt changing 
+
+here, in this example, functions 
+derivative really is changing i 
+see that if i take second derivative 
+this, 
+if i differentiate this, i get x, if 
+i differentiate that again, i get 
+two, isnt 
+theres also a physical interpretation 
+second derivative 
+so, lets call pt, function that 
+records position time 
+now, happens if i differentiate 
+this whats derivative respect 
+to time pt 
+i might write that, pt 
+thats asking, quickly is 
+position changing, well, thats velocity 
+thats quickly youre moving 
+you got a word that 
+now, i could ask question 
+happens if i differentiate velocity, 
+i asking quickly is velocity 
+changing 
+weve got a word that, 
+thats acceleration 
+thats rate change rate 
+change 
+theres also an economic interpretation 
+second derivative 
+so, maybe right dhappiness, ddonuts 
+is equal to , 
+right this is saying this is 
+saying much will happiness 
+affected, if i change donut eating 
+habits 
+if i really an economist id 
+talking marginal utility donuts 
+something, but, this is really a 
+reasonable statement, right this is 
+saying that right this moment you 
+know, eating donuts really wont 
+make happier i probably 
+in this state right now, if 
+this werent case, id eating 
+donuts 
+so, lets suppose this is true right 
+now, something else might true 
+right 
+i might know something second 
+derivative happiness respect 
+to donuts 
+is this saying maybe this is 
+positive right 
+this is saying that a small change to 
+donut eating habits might affect how, 
+changing donut habits would affect 
+happy i 
+if this positive right now, i 
+eating donuts, even though 
+dhappiness, ddonuts is equal to zero 
+well, yeah, if this is positive, a 
+small change in donut eating habits, 
+one bite delicious donut 
+would suddenly result in dhappiness, 
+ddonuts positive, 
+great, i 
+keep eating donuts 
+contrast this situation 
+opposite situation, second 
+derivative happens respect to donuts 
+isnt positive, second derivative 
+happiness respect to donuts is 
+negative 
+if this is case i absolutely 
+eating donuts if 
+i start eating donuts, im 
+going to find that, that eating 
+donuts will make less happy 
+lets think this case 
+geometrically 
+so here, ive drawn a graph 
+happiness depending many donuts 
+im eating 
+heres two places that i might 
+standing right graph 
+two places derivative 
+is equal to zero 
+i sort know that i must 
+standing a place derivative 
+is , if i standing in 
+middle, id eating donuts right 
+
+so, i know that im standing either right 
+here, say, right here 
+maybe here, here 
+im standing place 
+derivative vanishes 
+now, question is i 
+distinguish between two different 
+situations right here, if i started 
+eating donuts, id really 
+much happier 
+here, if i started eating 
+donuts id sadder 
+well, look this situation, this is a 
+situation second derivative 
+happiness to respected donuts is 
+positive, 
+right 
+im standing bottom this 
+hole, a small change in donut 
+consumption starts to increase extent 
+to a change in donut consumption 
+will make happier, 
+alright if i find that second 
+derivative happiness respect 
+to donuts is positive, i eating 
+donuts to walk this hill to a 
+place im happier 
+contrast that a situation im 
+here 
+again, derivative is zero so a small 
+change in doughnut consumption doesnt 
+really seem to affect happiness 
+second derivative in that 
+situation is negative 
+that mean that means a 
+small change to donuts consumption 
+starts to decrease extent to 
+donuts make happier 
+so, if im standing here i find 
+that second derivative 
+happiness respect to donuts is 
+negative, i absolutely shouldnt 
+eating anymore donuts 
+i realize that im standing 
+in a place where, least small 
+changes to donut consumption, im 
+happy i possibly i 
+content to stay there 
+theres to this graph 
+look this graph 
+so, maybe i standing here 
+maybe derivative happiness 
+respect to donuts is zero 
+maybe second derivative 
+happiness respect to donuts is 
+negative 
+so, i realize that im happy i 
+really could small changes in 
+donut consumption 
+if im willing to make a drastic 
+change to life, 
+if im willing to gorge 
+donuts, things going to get real bad, 
+theyre going to get really 
+really good im going to start 
+climbing this great hill 
+donuts, also 
+true calculus 
+look, right now, you might think things 
+really good, theyre going to get 
+worse a little bit 
+work, youre eventually going to climb 
+this hill youre going to find 
+immeasurable rewards that increased 
+calculus knowledge will bring you 
+music 

@@ -1,0 +1,169 @@
+music 
+this fourth module, 
+we go details properties 
+electromagnetic interaction 
+in this third video, 
+we discussed phenomenon spin 
+consequences 
+electromagnetic interactions 
+following this video, you will know 
+spin a typical quantum observable, 
+measurable consequences 
+functional principle a penning trap 
+we seen in video that 
+matter particles known to 
+fermions spin onehalf 
+particles carrying 
+forces spin one bosons 
+elementary scalar boson 
+observed to date is higgs boson 
+is therefore inevitable that we 
+discuss date spin in depths 
+we will that 
+a formal approach, 
+instead we discuss 
+consequences spin 
+spin is a typical quantum observable 
+classical equivalent 
+is an intrinsic degree freedom 
+corresponding to an angular momentum 
+manifesting a magnetic moment 
+theres movement associated to either 
+moments, let alone a rotation 
+this is evident spin is 
+a property pointlike particles 
+we will nevertheless use a classical 
+analogy laid this slide 
+a particle charge q mass m, 
+magnetic moment is related 
+to angular momentum l 
+qm l 
+this is easy to see 
+a particle traveling a circle radius r 
+magnetic moment is product 
+current caused motion 
+surface included in path 
+current expressed using 
+charge angular velocity, 
+magnetic moment is thus 
+proportionate to angular momentum 
+proportionality factor is 
+simply qm 
+is plausible that 
+an intrinsic angular momentum 
+would cause an analogous magnetic moment 
+a new proportionality constant comes in, 
+is called gyromagnetic ratio g 
+value depends internal 
+structure particle 
+a pointlike fermion, 
+electron, muon tau, 
+spin is onehalf, 
+charge is e, 
+so is equal to gem 
+a qed calculation to first order 
+gives g simply equal to two 
+classical experiment to measure 
+g uses an electron trapped in 
+an electromagnetic bottle 
+called a penning trap 
+a good description is available 
+in article ekstrom 
+wineland, in scientific american, 
+that is quoted bottom this page 
+system resembles a macroscopic 
+atom nucleus is 
+replaced an external field 
+electron circulates 
+in a magnetic field 
+is pretty much homogeneous except 
+focusing component generated 
+a ferromagnetic nickel 
+ring in equatorial plane 
+an electric field counteracts excursions 
+along axis magnetic field 
+is generated a ring electrode 
+two cap electrodes 
+we calculate energy levels 
+a system in video a 
+result is given here, 
+neglecting focusing effects ring 
+caps, is relatively simple 
+first term in blue corresponds to 
+a free movement in z direction 
+this movement is constraint 
+focusing components we neglected 
+caused axial oscillation 
+two terms in red correspond to 
+harmonic oscillator in equatorial 
+plane energy 
+eigenvalues 
+omega times n 
+n equal to zero, one, two so 
+adding magnetic moment spin s, 
+last term in green is obtained 
+two directions spin, 
+sz equal plus onehalf 
+minus onehalf, therefore separated 
+energy difference omega 
+main levels, provided that 
+g is exactly equal to two 
+energy levels spin parallel 
+antiparallel to z would 
+displaced exactly one step omega 
+this degeneracy exist if 
+value g differs two 
+levels slightly displaced 
+a frequency shift delta omega 
+equal to omega times g, 
+measured impressive 
+accuracy using a penning trap 
+principle measurement is 
+shown here electrical analogue 
+in an empty trap, three 
+electrodes form a capacitance network 
+that transmits ac signal generated 
+top to detector bottom 
+trapped electron introduces 
+an additional capacitanceinductance 
+in circuit 
+amplitude transmitting signal 
+a function frequency thus indicates 
+number electrons in device 
+frequency shift delta 
+omega determines deviation 
+g two 
+figure left shows detected 
+signal a function time 
+well adjusted frequency 
+major step corresponds to 
+loss one electron in trap 
+right figure shows frequency shift 
+delta omega a function time 
+minima indicate 
+two directions spin 
+also indicated much larger 
+shifts due to a change in orbit 
+precidion experimental 
+result is amazing 
+you see value obtained in 
+blue bottom page 
+value in bracket indicates 
+measurement error 
+applies to th 
+th decimal places 
+comparison this value to 
+electromagnetic theory requires 
+a calculation quantity to 
+th order in pertubation expansion 
+one finds good agreement 
+between measurement 
+theory even this unrivalled precision 
+measurement also gives us one 
+precise values fine structure 
+constant alpha equals e 
+in next video, mercedes 
+will discuss compton scattering, 
+elastic scattering 
+a photon an electron 
+sound 

@@ -1,0 +1,144 @@
+[music]. 
+i want to begin with a statement of he 
+fundamental theorem of calculus. 
+suppose the function little f, from the 
+closed interval a to b, to the real 
+numbers, is a continuous function. 
+and let's define a function big f, to be 
+the accumulation function. 
+right, that's the integral. 
+from a to x of the function on the left 
+well then the function big f turns out to 
+be continuous in the closed interval a to 
+b differentiable on the open interval a 
+to b and this is the big point the 
+derivative of big f is little f. 
+we've seen a bit of evidence for this 
+already. 
+and suppose i got the accumulation 
+function. 
+so big f of x is the integral from a to x 
+of f of tdt. 
+and now i can ask, how is the 
+accumulation function changing? 
+well, the accumulation function is 
+increasing, meaning it's derivative is 
+positive if the function that i'm 
+integrating is positive. 
+and the accumulation function is 
+decreasing, meaning the derivative is 
+negative. 
+if the function that i'm integrating is 
+negative. 
+and this suggests that the derivative of 
+the accumulation function and the 
+function that i'm integrating might be 
+related in some way. 
+here's a graph that's particularly 
+compelling. 
+so, i'll draw the coordinate plane, 
+here's the y axis, here's the t axis in 
+this case and i'll draw some random 
+looking graph. 
+that'll be the graph y equals f of t. 
+and then i'll pick some point. 
+i'll call it a and some other point x. 
+and then i'll look at the area under the 
+graph between a and x, rigth? 
+and that's the integral from a to x of f 
+of t d t. 
+right that area is the accumulation 
+function evaluated x. 
+now what's the derivative of the 
+accumulation function. 
+what got the accumulation function, right 
+f(x) equals the interval from a to x that 
+f(t)dt and i don't know how that changes 
+when x changes. 
+so lets make a small change in x. 
+lets go from x. 
+to say x plus h and then ask how does the 
+area in this region compare to the area 
+in this much larger region. 
+what's big f of x plus h minus big f of 
+x? 
+yeah, so what's f of x plus h right 
+that's the area. 
+from a to x plus h, minus f of x, big f 
+of x. 
+that's the area from a to x, and that 
+difference, right. 
+that difference is just the area inside 
+here. 
+that little leftover piece is practically 
+a rectangle of height, f of x, little f 
+of x and width h. 
+i mean, this region is not quite a 
+rectangle. 
+but it's awfully close to a rectangle of, 
+width h. 
+and area f of x plus h minus f of x. 
+now, remember, by goal was to 
+differentiate the accumulation function. 
+and all i've got is this rectangle. 
+whose width is about h, and whose height, 
+you think about it, it's about f of x. 
+so what's up with this rectangle? 
+alright? 
+i mean what i've really got here is a 
+rectangle and its area is about f of x 
+plus h minus f of x, this accumulation 
+function. 
+it's width is h, and it's height is about 
+f of x. 
+well i've got a rectangle with this area 
+and this width and, and this height. 
+alright, what do i know? 
+i know its height times its width is its 
+area, so if i take its area and divide by 
+its width, i should get its height. 
+now all this is just approximate, but 
+let's write that down. 
+i the area of this you know, rectangle is 
+f of x plus h minus f of x. 
+and if i divide by the width, i should 
+get, the height. 
+what does that mean after i take a limit? 
+oh of course this is only approximately 
+true, but if i take a limit, right. 
+if i take a limit as h approaches 0. 
+this gives me the derivative of the 
+accumulation function and that will in 
+fact be equal to the function's value. 
+and that is the whole game. 
+the accumulation function f is an 
+antiderivative of f. 
+well this, i mean this is really 
+remarkable. 
+for instance you might be wondering 
+what's an anti-derivative of this 
+function, little f of x equals e to the 
+negative x squared? 
+well if a functions continuous then we 
+can find an anti-derivative. 
+the anti-dirivitive is the accumulation 
+function. 
+so an anti-derivative of either the 
+negative x squared is the accumulation 
+function. 
+i can define a function big f of x to be 
+the intregal from a to x, for some number 
+a, of e to the negative t squared d t. 
+and if i differentiate this accumulation 
+function, i get back e to the negative x 
+squared. 
+so i found an anti-derivative. 
+for this function. 
+well i can't write it down any more 
+nicely. 
+because i can't write down an 
+anti-derivative for e to the negative x 
+squared using the functions that i have 
+at hand. 
+but nevertheless, the anti-derivative is 
+the accumulation function. 

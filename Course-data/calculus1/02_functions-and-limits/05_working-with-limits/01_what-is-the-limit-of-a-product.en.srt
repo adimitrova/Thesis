@@ -1,0 +1,104 @@
+1
+00:00:00,000 --> 00:00:05,007
+Here is an arithmetic problem, 
+660 * 310. 
+
+2
+00:00:05,007 --> 00:00:13,318
+I'm going give this exercise to Bart. 
+So, the product of 660 and 310 is 
+
+3
+00:00:13,318 --> 00:00:18,113
+204,600. 
+But, what if I perturb these inputs a 
+
+4
+00:00:18,113 --> 00:00:23,654
+little bit? 
+Instead of assigning this multiplication 
+
+5
+00:00:23,654 --> 00:00:30,900
+exercise, I could have assigned this 
+multiplication exercise, 
+
+6
+00:00:30,900 --> 00:00:35,488
+664 * 311. 
+Let's give this to somebody else. 
+
+7
+00:00:35,488 --> 00:00:39,998
+Hi. 
+My name is Vadranna. 
+
+8
+00:00:39,998 --> 00:00:52,255
+So, 664 * 311 is 206,504. 
+Which isn't so far off of the answer that 
+
+9
+00:00:52,255 --> 00:00:57,137
+Bart got when he multiplied 660 times 310 
+and got 204,600. 
+
+10
+00:00:57,137 --> 00:01:00,750
+So, look at this. 
+We've got two different problems. 
+
+11
+00:01:00,750 --> 00:01:06,805
+The input to these multiplication 
+problems are similar, 
+
+12
+00:01:06,805 --> 00:01:13,521
+the outputs are also similar. 
+Let's do some more, very similar 
+
+13
+00:01:13,521 --> 00:01:20,346
+multiplication problems. 
+[SOUND] Hello, my name is Sean Gory. 
+
+14
+00:01:20,346 --> 00:01:23,980
+[SOUND] Oh, this is great. 
+Look. 
+
+15
+00:01:23,980 --> 00:01:32,480
+204,600, 206,504, 206,926, 204,702. 
+We multiplied all of these pairs of 
+
+16
+00:01:32,480 --> 00:01:41,230
+nearby numbers, and the result of the 
+multiplications were also nearby. 
+
+17
+00:01:41,230 --> 00:01:45,722
+There's a limit lesson hiding at all of 
+this. 
+
+18
+00:01:45,722 --> 00:01:53,210
+If the limit of f of x as x approaches a 
+is L, and the limit of g of x as x 
+
+19
+00:01:53,210 --> 00:02:01,497
+approaches a is M, then the limit of f of 
+x times g of x as x approaches a is equal 
+
+20
+00:02:01,497 --> 00:02:07,687
+to L times M. 
+In other words, the limit of a product is 
+
+21
+00:02:07,687 --> 00:02:13,877
+the product of the limits provided those 
+limits exist [SOUND] 

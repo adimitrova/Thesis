@@ -1,0 +1,123 @@
+, sometimes you don't have a function, you
+have a relation between two variables. a
+classic example is x squared plus y
+squared equals, say, 25. the graph of the
+points in the plane that satisfy this
+equation as a circle. but that's not the
+graph of a function, right? this graph
+fails the vertical line test. for a given
+input value, say 4 in this case, there's
+multiple y values which satisfy this
+equation. so, i can't simply solve this
+equation for y. nevertheless, if you pick
+a specific point like 4, 3, you might be
+able to find a function whose graph traces
+out that same curve. so yeah, if i pick 4,
+3, there is a function, y equals the
+square of 25 minus x squared. which traces
+out a piece of the whole curve, right? i'm
+just ignoring the rest of this and this
+little tiny piece of the curve can be
+regarded as a function. if i had picked a
+different point, then i'm going to pick a
+different function. instead of the square
+root of 25 minus x squared, if i wanted to
+stand down here, near the point 4, minus
+3, well then maybe i'd pick the function y
+equals negative the square root of 25
+minus x squared. if i ignore the rest of
+this and i'm just looking at this curve
+here, yet this curve by itself is a
+function. if i ignore this, it satisfies
+the vertical line test. this function is
+picking out a piece of the curve given by
+this equation which is, yeah, only valid
+near the point 4, minus 3. but maybe
+that's all i care about for the time
+being. so, let's say there is a function,
+y equals f of x, that satisfies the
+original equation. well then, i can write
+that down. y equald f of x say satisfies
+the equation just means that x squared
+plus f of x squared equals 25. now, i'm
+not saying that this gives me all of the
+solutions, right? the graph x squared plus
+y squared equals 25 is a circle fails the
+vertical line test. there is no function
+that gives me all those outputs because
+there's multiple outputs for a given
+input. all i'm saying is that i've got
+some function which traces out a piece of
+the whole curve. then, i can
+differentiate. so, this is true for a
+bunch of values of x that i can
+differentiate this. the derivative of this
+sum is the sum of the derivative, so the
+derivative of x squared is 2x plus the
+derivative of f of x squared. i'm going to
+use a chain rule to do that. it's the
+derivative of the outside function at the
+inside times the derivative of the inside
+function equals the derivative of 25,
+which is zero. now i can solve. so,
+subtract 2x from both sides and i'm left
+with 2 times f of x times f prime of x
+equals negative 2x. and then, i'll divide
+both sides by 2 times f of x. and i'll
+find that f prime of x is minus 2x over 2
+f of x, and i can cancel those 2's and
+just get minus x over f of x. it seems
+like a funny situation. the derivative
+depends on more than just x. it also has
+an f of x. in it.
+another way to say it is that the slope of
+the tangent line dy, dx, is negative x
+over y, right? y is f of x. and it does
+really seem a littie bit off putting
+initially in these kinds of calculations
+the slope of the tangent line depends on
+more than just x. it's negative x over y
+for this particular case. but think back
+to the piacture for this case, right?
+the picture's a circle. and what i'm
+saying is the slope of the tangent line is
+negative x over y. so, if you pick that
+point, say 4,3, and you ask what's the
+slope of the tangent line to the circle at
+the point 4,3 this equation is telling you
+the slope is -4 thirds. and yeah, that
+line is going down, the slope's negative.
+what's the slope of the tangent line to
+the curve at the point 4, negative 3? same
+equation tells us that the slope there is
+4 3rds. and yeah, this line's going up.
+the slope of the tangent line is depending
+on more than just the x coordinate, right?
+you also need to know the y coordinate in
+order to know exactly what function you're
+actually looking at near that point. and
+that totally affects the slope of that
+tangent line. to do all these sorts of
+calculations, the trick is the cha in
+rule.
+for instance, if you're given some
+relation like this, x squared plus y cubed
+equals 1. you just got to make sure to
+think of y as a function of x. so that
+when you differentiate both sides, the
+derivative of the left hand side is 2x
+plus the derivative of y cubed equals the
+derivative of 1, which is 0, but what's
+the derivative of y cubed? if y is a
+function of x, then when you differentiate
+this, you've got to use the chain rule.
+it's 3 times the inside function squared,
+that's the derivative of the third power
+function, times the derivative of the
+inside function. i'll just write y prime.
+and as long as you're careful to use the
+chain rule, you'll be able to do these
+kinds of implicit differentiation
+problems. and you'll eventually solve for
+y prime in terms of both x and y. the
+chain rule is our friend.

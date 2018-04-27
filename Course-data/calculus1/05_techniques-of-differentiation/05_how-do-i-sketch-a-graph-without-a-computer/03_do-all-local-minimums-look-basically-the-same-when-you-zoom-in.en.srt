@@ -1,0 +1,238 @@
+1
+00:00:00,012 --> 00:00:06,503
+[MUSIC] People have the idea that a local 
+minimum means the function decreases and 
+
+2
+00:00:06,503 --> 00:00:10,783
+then increases. 
+Here's a local minimum on the graph of 
+
+3
+00:00:10,783 --> 00:00:15,597
+this random function. 
+And the misconception is that they all 
+
+4
+00:00:15,597 --> 00:00:20,092
+look like this. 
+That every time you got a local minimum 
+
+5
+00:00:20,092 --> 00:00:24,994
+on one side, the function's decreasing, 
+and on the other side the function's 
+
+6
+00:00:24,994 --> 00:00:28,807
+increasing. 
+Plenty of local minima do look exactly 
+
+7
+00:00:28,807 --> 00:00:33,138
+like that. But, there's also plenty of 
+pathological examples. 
+
+8
+00:00:33,138 --> 00:00:37,492
+For instance, consider this a somewhat 
+pathological example. 
+
+9
+00:00:37,492 --> 00:00:42,519
+I'm going to define this function f as a 
+piecewise function. 
+
+10
+00:00:42,519 --> 00:00:49,826
+If the input's nonzero, I'm going to do 
+this. 1+sin(1/x), which makes sense since 
+
+11
+00:00:49,826 --> 00:00:54,285
+x isn't zero, time x^2. 
+And if the input is zero, the function's 
+
+12
+00:00:54,285 --> 00:01:00,546
+output will also be zero. 
+In this case, there's a local minimum at 
+
+13
+00:01:00,546 --> 00:01:05,087
+zero. 
+How do I know? Well, here's how I know. 
+
+14
+00:01:05,087 --> 00:01:13,361
+Let's take a look at this function The 
+claim is that f(x) is never negative. 
+
+15
+00:01:13,361 --> 00:01:22,447
+How do I know that? Well, what do I know 
+about sine? Sine of absolutely anything 
+
+16
+00:01:22,447 --> 00:01:29,438
+at all, no matter what I take this sine 
+of, is between -1 and 1. 
+
+17
+00:01:29,438 --> 00:01:36,512
+Now, if I add 1 to this, 1 plus sine of 
+absolutely anything at all, 
+
+18
+00:01:36,512 --> 00:01:40,625
+is between zero and two. 
+Now, that's pretty good. 
+
+19
+00:01:40,625 --> 00:01:44,781
+Now, think back to the definition of this 
+function. 
+
+20
+00:01:44,781 --> 00:01:49,080
+Here, I've got 1 plus sine of something, 
+it doesn't matter what, 
+
+21
+00:01:49,080 --> 00:01:51,233
+alright? 
+1 plus sine of anything, 
+
+22
+00:01:51,233 --> 00:01:53,682
+this is between zero and two. 
+Now, 
+
+23
+00:01:53,682 --> 00:01:59,131
+I'm multiplying it by x^2. 
+What do I know about x^2? Well, x^2 is 
+
+24
+00:01:59,131 --> 00:02:03,812
+not negative. 
+It could be zero, it could be positive. 
+
+25
+00:02:03,812 --> 00:02:07,742
+But no matter what x is, x^2 is not 
+negative. 
+
+26
+00:02:07,742 --> 00:02:16,420
+Now, I'm multiplying 1+sin(1/x), this 
+number which is trapped between zero and 
+
+27
+00:02:16,420 --> 00:02:25,329
+to, by x^2 which is never negative. And 
+that means f(x) is not negative as long 
+
+28
+00:02:25,329 --> 00:02:28,423
+as x isn't equal to zero, 
+alright? 
+
+29
+00:02:28,423 --> 00:02:32,539
+As long as x isn't equal to zero. I mean, 
+this first case and this is a 
+
+30
+00:02:32,539 --> 00:02:37,494
+non-negative number times a non-negative 
+number, so the product is also 
+
+31
+00:02:37,494 --> 00:02:41,332
+non-negative. 
+Now, the other possibility, of course, is 
+
+32
+00:02:41,332 --> 00:02:45,192
+that I plug in zero for x. 
+But then, f(0) is just by definition 
+
+33
+00:02:45,192 --> 00:02:47,991
+zero. 
+And that means in either case, no matter 
+
+34
+00:02:47,991 --> 00:02:51,412
+that I plug in for x, f(x) is never a 
+negative. 
+
+35
+00:02:51,412 --> 00:02:56,087
+Now if f(x) is never negative and f(0)=0, 
+then I know that this must be the 
+
+36
+00:02:56,087 --> 00:02:59,227
+smallest possible output value for the 
+function. 
+
+37
+00:02:59,227 --> 00:03:03,987
+The only numbers that are smaller than 
+zero are negative numbers, and the output 
+
+38
+00:03:03,987 --> 00:03:08,632
+of this function is never negative. But 
+this isn't the usual sort of local 
+
+39
+00:03:08,632 --> 00:03:12,592
+minimum where the function just decreases 
+and then increases. 
+
+40
+00:03:12,592 --> 00:03:15,206
+Well, here's the graph for our funciton 
+f. 
+
+41
+00:03:15,206 --> 00:03:20,019
+And, there is a local minimum at zero, 
+but if I start zooming in, no matter how 
+
+42
+00:03:20,019 --> 00:03:24,841
+much I zoom in, there's no little region 
+on which the graph is just decreasing and 
+
+43
+00:03:24,841 --> 00:03:27,746
+then increasing. 
+The graph is always wiggling. 
+
+44
+00:03:27,746 --> 00:03:32,501
+The upshot here is that decreasing and 
+then increasing is one way to produce a 
+
+45
+00:03:32,501 --> 00:03:36,402
+local minimum, but it's not the 
+definition of a local minimum. 
+
+46
+00:03:36,402 --> 00:03:39,732
+And not every local minimum arises in 
+that exact way. 
+
+47
+00:03:39,732 --> 00:03:45,099
+What a local minimum means is just that 
+no nearby output value is smaller than 
+
+48
+00:03:45,099 --> 00:03:46,825
+that local minimum value. 

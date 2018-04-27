@@ -1,0 +1,225 @@
+[sound]
+so
+it's week six.
+and as you know we're
+doing audio applications.
+the thing about music and
+interactive music is it's much more
+accessible than it's ever been.
+and now it's really quite good fun making
+interactive music applications that
+run on your iphone, your ipad or
+your android devices.
+because there's so
+many people who want to use them.
+and i thought as well as showing
+you a really easy way of
+making a very,very cool scent, which is
+what we're going to do in a moment, and
+incorporating some of the stuff that
+matt's been talking about i thought it'd
+be really good if i got
+want to my friends martin.
+so come and talk to you so
+yeah basically this is martin roth, and
+he's director of research
+at a company called rjdj.
+so rjdj specialize in interactive
+audio applications on mobile devices.
+so yeah martin can you tell us a little
+bit about some of the applications that
+you guys have made.
+>> absolutely mick thank you.
+well our first app was back in 2008 and
+we started off with the original rjdj app.
+and that was really one of the first times
+anyone on a mass scale had been able to
+interact with their music.
+you were able to download
+what we call the seen.
+it was basically an interactive
+user track onto you iphone.
+and then interact with it either through
+the microphone or by tilting the phone
+around or the accelerometer would
+influence what you were listening to.
+or perhaps, we can use the internet
+to find out things about what,
+what was going on around you for
+instance what the was like.
+>> mm-hm
+>> so, you can imagine that you
+were walking down the street.
+and the music that you were listening to,
+would change tempo,
+according to how fast you were moving.
+so if you were moving slowly then the
+music might be, you know might also have
+a relatively low tempo, it might be
+a little bit relaxed, little chill.
+but then if you started running not
+only would the tempo pick up, but
+you could also change
+the energy in the music and
+it would become much more energetic,
+much more exciting, much more thrilling.
+>> so what kind of stuff did you do?
+because i've seen some of
+the earlier apps as well.
+>> yeah.
+>> but you've obviously done some
+quite large scale apps
+that have movie tie-ins.
+>> yeah, that's right.
+one of the first movie tie-in apps that
+we did was called inception, and that
+came out a the end of 2010, along with,
+alongside the dvd release of the film.
+the inception app worked
+extremely well with the film,
+because the film is all about dreams, it
+was about going to dreams within dreams,
+and then losing yourself a bit in this,
+in the dream environment.
+and certainly one thing that the kinds of,
+the kinds of music that we were
+making at the time, one thing that it lent
+itself very well to, was a kind of dream,
+psychedelic experience.
+worked incredibly well.
+some people were in fact really worried
+that if they went to sleep with
+this thing on then they
+would never wake up.
+[laugh] it was a real customer complaint.
+[cough].
+>> yeah, certainly.
+but since then we have also done
+other movie tie-ins such as with
+the dark knight, and there are even some
+new ones coming on down the pipe line.
+>> that is really cool.
+so, so that's what main stream that
+interactive and reactive music there.
+>> yeah, absolutely and
+i think it's something that will
+become even more mainstream in,
+in the coming years.
+the philosophy behind rjdj
+is always been that for
+the last year many decades
+music has been frozen.
+we record music,
+we import it to some medium, whether it
+be vinyl, cassette, cd or these days mp3.
+but once you've made the recording
+of that music, it's done,
+it stays like that forever.
+and every time that you go back and
+listen to that piece of music,
+it's exactly the same.
+but with the technology that we have
+in the palm of our hands today,
+we can do so much more.
+not only can we allow the,
+the musician to give their fans all of
+the different variations that they
+have in mind for a piece of music, but
+we can allow the fans to explore all of
+those different variations themselves.
+>> right.
+>> for instance,
+you can imagine as with video games,
+where you can go and you are driving
+the plot, you are driving what happens and
+you can go and explore the scene of the.
+the video game developers have created.
+we would like to be able to give
+the same opportunity to musicians.
+>> yeah right.
+it's interesting as well because
+the landscapes changing isn't it
+a little bit from a development
+particularly in terms of audio.
+because of the web audio api, so we're
+using it as part of this coursera program
+instead of doing native coding for
+audio on the, on our devices.
+when you think about it,
+you think it's a good step forward?
+>> oh,
+absolutely i love the web audio api.
+in the past we've done
+everything natively of course.
+we needed the performance.
+but now, that the web audio api's coming
+along and it's been standardized to
+some degree, and it certainly seen support
+across not only desk top browsers but
+also mobile browsers.
+>> mm-hm.
+>> it gives it gives
+the developer the opportunity to
+develop their audio experience once.
+and truly be able to deliver it to many
+platforms without having to do a lot of
+work in order to adapt your code
+whether your experienced to
+any one particular platform.
+>> yeah, and so i think we've found it
+really useful for delivering this program.
+>> mm-hm.
+>> but also i think we've gotta kind of
+of there's an instinct about
+what's going to happen.
+now that the web audio api is there.
+you can just sense this huge
+amount of music interactive music,
+and reactive music and
+music instruments on the web.
+this huge kind of number of
+applications just about to spill over
+>> oh for sure.
+>> it's almost as if [inaudible] yeah.
+>> i would say right now people
+are really experimenting,
+they're trying to figure out what's
+possible like through this course.
+>> mm.
+>> once people become more
+comfortable with the technology, once they
+understand, what can they do with it?
+what are the limits?
+and then once they start pushing
+those limits, i'm extremely excited.
+>> yeah.
+>> extremely excited.
+>> well, that's great.
+i really appreciate you coming down and
+talking to us.
+i know that you're very busy,
+and you got to shoot off now and
+talk to some other music types.
+but yeah.
+we are going to go through some of our
+some of our web audio api kind of
+based synthesis stuff now, and,
+and yeah, i just kind of of,
+we're just going to give you
+a quick burst of what it sounds like and
+then kind of, you know.
+yeah, this is the one.
+so this is the app that we're
+going to be talking about.
+[music]
+so you get the picture.
+[music]
+so that's what we're working on today.
+>> mick, thank you very much for
+inviting me.
+>> that's great.
+>> you're a true musician,
+gentleman and scholar.
+>> [laugh] yeah, well,
+that's what they all say.
+[music]

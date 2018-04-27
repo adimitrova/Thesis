@@ -1,0 +1,654 @@
+1
+00:00:00,012 --> 00:00:06,291
+Provided some conditions are satisfied,
+the Extreme Value Therom guarantees the
+
+2
+00:00:06,291 --> 00:00:12,139
+existence of maximum and minimum values.
+But how am I supposed to find those
+
+3
+00:00:12,139 --> 00:00:17,478
+maximum and minimum values?
+We've actually already done this in some
+
+4
+00:00:17,478 --> 00:00:23,575
+examples, but it's worth describing an
+explicit process for finding maxima and
+
+5
+00:00:23,575 --> 00:00:26,624
+minima.
+Here's a frour-step process.
+
+6
+00:00:26,624 --> 00:00:31,303
+First, differentiate your function Can
+find all the critical points.
+
+7
+00:00:31,303 --> 00:00:35,469
+Those are places where the derivative is
+equal to zero or the derivative isn't
+
+8
+00:00:35,469 --> 00:00:38,128
+defined.
+And also lists the end points if they're
+
+9
+00:00:38,128 --> 00:00:41,028
+included in your domain.
+Check those points, right?
+
+10
+00:00:41,028 --> 00:00:45,658
+Check the end points, check the critical
+points, and potentially you also need to
+
+11
+00:00:45,658 --> 00:00:49,575
+check the limiting behavior if you're
+working on an open Interval.
+
+12
+00:00:49,575 --> 00:00:53,936
+Let's work an example.
+Okay, let's work an example.
+
+13
+00:00:53,937 --> 00:01:01,219
+Let's look at the function, given by the
+rule f of x equals 1 over, x squared minus
+
+14
+00:01:01,219 --> 00:01:03,166
+1.
+This quantity squared.
+
+15
+00:01:03,166 --> 00:01:07,497
+But let's only consider this function on a
+restricted domain.
+
+16
+00:01:07,497 --> 00:01:13,635
+Let's consider, a maximum, minimum values
+of this function on the interval between
+
+17
+00:01:13,635 --> 00:01:16,025
+minus 1 and 1.
+This open interval.
+
+18
+00:01:16,025 --> 00:01:20,616
+And now I differentiate.
+Yeah, the first step is to differentiate
+
+19
+00:01:20,616 --> 00:01:23,922
+this function.
+So before I differentiate it, I'm just
+
+20
+00:01:23,922 --> 00:01:26,930
+going to rewrite this.
+Instead of 1 over x squared minus 1
+
+21
+00:01:26,930 --> 00:01:31,161
+squared, I'm going to write this as x
+squared minus 1 to the negative 2nd power.
+
+22
+00:01:31,161 --> 00:01:35,486
+It's going to make it a little bit easier
+for me when I think about the derivative.
+
+23
+00:01:35,486 --> 00:01:41,053
+So what's the derivative of this function?
+By the power rule and the chain rule This
+
+24
+00:01:41,053 --> 00:01:47,455
+is negative 2 times the inside, x squared
+minus 1 to the negative 3rd power times
+
+25
+00:01:47,455 --> 00:01:53,954
+the derivative of the inside which is 2x
+or another way to write this is negative 2
+
+26
+00:01:53,954 --> 00:01:59,889
+times 2x, that's minus 4x divided by x
+squared minus 1 to the third power.
+
+27
+00:01:59,889 --> 00:02:03,114
+With the derivative in hand, I can find
+the critical points.
+
+28
+00:02:03,114 --> 00:02:07,024
+Yeah, the next step is to list the
+critical points, and also the end points
+
+29
+00:02:07,024 --> 00:02:08,959
+if they're included.
+So let's see.
+
+30
+00:02:08,959 --> 00:02:11,446
+What are the critical points of this
+function?
+
+31
+00:02:11,446 --> 00:02:16,492
+Will those be places where the derivative
+doesn't exist, or the derivative is equal
+
+32
+00:02:16,492 --> 00:02:18,557
+to zero.
+Let's first think about when the
+
+33
+00:02:18,557 --> 00:02:21,860
+derivative is equal to zero.
+Well, in order for that derivative to be
+
+34
+00:02:21,860 --> 00:02:24,926
+equal to zero, it's a fraction.
+When's a fraction equal to zero?
+
+35
+00:02:24,926 --> 00:02:28,005
+Well, that occurred exactly when the
+numerator is equal to zero.
+
+36
+00:02:28,005 --> 00:02:30,766
+So I'm really just asking when is minus 4x
+equal to zero?
+
+37
+00:02:30,766 --> 00:02:35,484
+And that's just when x is equal to 0.
+So the only time when the derivative is
+
+38
+00:02:35,484 --> 00:02:40,093
+equal to 0 is when x is equal to 0.
+Now the derivative doesn't exist when x is
+
+39
+00:02:40,093 --> 00:02:44,607
+equal to 1 or when x is equal to minus 1
+but, you know, the functions not even
+
+40
+00:02:44,607 --> 00:02:48,737
+defined in that case anyway.
+And I'm only considering numbers between
+
+41
+00:02:48,737 --> 00:02:51,583
+minus 1 and 1 anyhow.
+Don't have to worry about those.
+
+42
+00:02:51,583 --> 00:02:53,863
+And I don't have to worry about end
+points.
+
+43
+00:02:53,863 --> 00:02:57,838
+Because, again, the interval that I'm
+considering doesn't include the end
+
+44
+00:02:57,838 --> 00:03:01,451
+points, It's an open interval.
+So I'm just going to check x equals zero
+
+45
+00:03:01,451 --> 00:03:06,050
+to figure out what's going on there.
+So let's think about this point where x is
+
+46
+00:03:06,050 --> 00:03:09,267
+equal to zero.
+Well the derivative at zero is equal to
+
+47
+00:03:09,267 --> 00:03:12,023
+zero.
+If I just plug in zero into this I can see
+
+48
+00:03:12,023 --> 00:03:14,907
+that.
+What's the derivative at a number between
+
+49
+00:03:14,907 --> 00:03:18,365
+minus 1 and zero?
+Well if I plug in a number between minus 1
+
+50
+00:03:18,365 --> 00:03:22,745
+and zero, x squared is then between zero
+and 1, so x squared minus 1 is now a
+
+51
+00:03:22,745 --> 00:03:26,749
+negative number cubed.
+The denominator is negative, but this is a
+
+52
+00:03:26,749 --> 00:03:30,154
+negative number, negative 4 times a
+negative number.
+
+53
+00:03:30,155 --> 00:03:35,101
+So we've got negative times negative
+divided by negative, that's negative.
+
+54
+00:03:35,101 --> 00:03:39,866
+So the derivative at a number between
+minus 1 and 0 is negative in this case.
+
+55
+00:03:39,866 --> 00:03:44,672
+And a similar kind of reasoning will show
+that the derivative is positive if I
+
+56
+00:03:44,672 --> 00:03:48,844
+evaluate the derivative between 0 and 1.
+So here is the deal.
+
+57
+00:03:48,844 --> 00:03:53,484
+I've got one critical point on this
+interval between minus 1 and 1.
+
+58
+00:03:53,484 --> 00:03:59,134
+And the function's decreasing between
+minus 1 and 0, and it's increasing between
+
+59
+00:03:59,134 --> 00:04:02,530
+0 and 1.
+So what does that mean about the point 0?
+
+60
+00:04:02,530 --> 00:04:08,080
+Well it means that the point 0 must be a
+place where the function achieves a local
+
+61
+00:04:08,080 --> 00:04:11,817
+minimum value.
+So I can summarize that here, f of 0.
+
+62
+00:04:11,818 --> 00:04:18,005
+Is by, this is the first derivative test
+is a local minimum value.
+
+63
+00:04:18,005 --> 00:04:24,581
+What about the end behavior?
+What happens when x is near negative 1, or
+
+64
+00:04:24,581 --> 00:04:28,602
+when x is near 1?
+So that's really step 4 in this checklist,
+
+65
+00:04:28,602 --> 00:04:32,200
+is to check the limiting or the end
+behavior of this function.
+
+66
+00:04:32,200 --> 00:04:35,837
+What do I mean by that?
+I really mean look at this when X is just
+
+67
+00:04:35,837 --> 00:04:39,669
+a little bit bigger than minus Y, or X is
+a little bit less than 1.
+
+68
+00:04:39,670 --> 00:04:42,714
+Alright, that's the end behavior of this
+function.
+
+69
+00:04:42,714 --> 00:04:46,664
+These end points are actually included so
+of course I can't evaluate the function
+
+70
+00:04:46,664 --> 00:04:50,407
+there but I should still see what happens
+when X is close to these endpoints.
+
+71
+00:04:50,407 --> 00:04:53,858
+Let's imagine I was trying to draw a graph
+of the function, alright.
+
+72
+00:04:53,858 --> 00:04:58,338
+How would I know from the derivative.
+I know the function's decreasing here and
+
+73
+00:04:58,338 --> 00:05:01,343
+increasing here.
+And I know the function's got a local
+
+74
+00:05:01,343 --> 00:05:04,859
+minimum value here, but linking to the
+first derivative test.
+
+75
+00:05:04,859 --> 00:05:07,757
+So the function's going down and then it's
+going up.
+
+76
+00:05:07,757 --> 00:05:12,488
+But what happens at these two Values, when
+I get close to minus 1 and when I get
+
+77
+00:05:12,488 --> 00:05:15,737
+close to 1.
+When I get close to minus 1, the function
+
+78
+00:05:15,737 --> 00:05:20,677
+is very, very large, and when I get close
+to 1, on this side, the function's also
+
+79
+00:05:20,677 --> 00:05:24,401
+very, very large.
+So if I imagined trying to draw a graph of
+
+80
+00:05:24,401 --> 00:05:27,975
+this function?
+Right, it would be coming down like this,
+
+81
+00:05:27,975 --> 00:05:32,302
+flattening out and then it would be
+getting very, very large again.
+
+82
+00:05:32,303 --> 00:05:36,780
+Let's summarize the situation.
+This graph will help us summarize the
+
+83
+00:05:36,780 --> 00:05:39,149
+situation.
+Alright, what do I know.
+
+84
+00:05:39,149 --> 00:05:44,314
+I know that F of 0 is the smallest output,
+it's the minimum value that the function
+
+85
+00:05:44,314 --> 00:05:47,722
+achieves on the domain, open interval
+minus 1 to 1.
+
+86
+00:05:47,722 --> 00:05:52,254
+And there's no maximum value.
+By considering this limiting behavior, as
+
+87
+00:05:52,254 --> 00:05:56,455
+x approached to the endpoints which aren't
+included in this domain.
+
+88
+00:05:56,455 --> 00:06:01,393
+I can see that this function's output can
+be made as positive as I'd like, right.
+
+89
+00:06:01,393 --> 00:06:05,077
+I can choose values of X to make the
+output as big as I want.
+
+90
+00:06:05,078 --> 00:06:10,265
+So I can't say this function actually
+achieves some maximum output value.
+
+91
+00:06:10,265 --> 00:06:13,468
+It doen'st achieve some maximum output
+value.
+
+92
+00:06:13,468 --> 00:06:17,208
+But it does achieve a minimum output value
+right here.
+
+93
+00:06:17,208 --> 00:06:20,074
+When x is equal to 0.
+And that output is 1.
+
+94
+00:06:20,074 --> 00:06:24,280
+It's important to emphasize that the
+domain truly matters.
+
+95
+00:06:24,280 --> 00:06:30,307
+Yeah, what if I ask to find the maximum
+and minimum values of the same function f
+
+96
+00:06:30,307 --> 00:06:36,404
+of x is equal to one over x squared minus
+one squared, but a different domain?What
+
+97
+00:06:36,404 --> 00:06:41,591
+if I looked on the interval from one to
+infinity this open interval?
+
+98
+00:06:41,591 --> 00:06:46,909
+Again we start by differentiating Well of
+course, the derivative's the same.
+
+99
+00:06:46,909 --> 00:06:51,651
+The derivative of this function is still
+minus 4 x over x squared minus 1 to the
+
+100
+00:06:51,651 --> 00:06:54,749
+third power.
+Now, where are the critical points?
+
+101
+00:06:54,749 --> 00:06:59,236
+The only place that this derivative is
+equal to 0, is when x is equal to 0.
+
+102
+00:06:59,236 --> 00:07:03,987
+And the only place where the derivative
+doesn't exist is just places where the
+
+103
+00:07:03,987 --> 00:07:07,723
+function isn't even defined, right?
+So on this interval.
+
+104
+00:07:07,723 --> 00:07:13,030
+From one to infinity, there's no place
+where the derivative isn't defined or is
+
+105
+00:07:13,030 --> 00:07:16,093
+equal to zero.
+So there's no critical points.
+
+106
+00:07:16,093 --> 00:07:20,335
+So what about the behavior near the
+boundaries of this interval?
+
+107
+00:07:20,335 --> 00:07:25,381
+What happens if X is just a little bit
+more than one or when X is really, really
+
+108
+00:07:25,381 --> 00:07:27,978
+big?
+So, we working on the interval from 1 to
+
+109
+00:07:27,978 --> 00:07:29,604
+infinity.
+This open interval.
+
+110
+00:07:29,604 --> 00:07:33,640
+So, that means the limits that you'd
+consider are the limits, the function as x
+
+111
+00:07:33,640 --> 00:07:37,856
+approaches infinity and the limit of the
+function as x approaches 1 from the right
+
+112
+00:07:37,856 --> 00:07:40,421
+hand side.
+And, doing calculation I find that the
+
+113
+00:07:40,421 --> 00:07:44,079
+limit of the function as x approaches
+infinity is 0 because, in that case the
+
+114
+00:07:44,079 --> 00:07:48,047
+denominator can be made as large as I
+like, which makes this ratio as close to 0
+
+115
+00:07:48,047 --> 00:07:50,451
+as I like.
+And, the limit of the function as x
+
+116
+00:07:50,451 --> 00:07:53,252
+approaches 1 from the right is equal to
+infinity.
+
+117
+00:07:53,252 --> 00:07:58,187
+Because in that case if x approaches 1
+from the right this denominator can be
+
+118
+00:07:58,187 --> 00:08:02,837
+made as close to 0 and positive as I'd
+like which makes this ratio as large as
+
+119
+00:08:02,837 --> 00:08:05,734
+I'd like.
+So in this case this function on this
+
+120
+00:08:05,734 --> 00:08:10,174
+domain doesn't take a largest value and
+doesn't take a smallest value.
+
+121
+00:08:10,174 --> 00:08:14,968
+The function's output can be made as big
+as I'd like if I'm willing to choose x
+
+122
+00:08:14,968 --> 00:08:19,908
+just a little bit bigger than 1 and the
+function's output can be made as close to
+
+123
+00:08:19,908 --> 00:08:23,441
+0 as I'd like if I'm willing to choose X
+to be big enough.
+
+124
+00:08:23,441 --> 00:08:28,267
+In other words, the domain matters.
+I mean this function, if I'm considering
+
+125
+00:08:28,267 --> 00:08:33,217
+the funciton on this domain, from -1 to 1.
+It does have a smallest output value.
+
+126
+00:08:33,217 --> 00:08:37,042
+And it should use its local minimum value
+when x is equal to 0.
+
+127
+00:08:37,042 --> 00:08:42,142
+But if consider the same function.
+But on a different domain there's no
+
+128
+00:08:42,142 --> 00:08:48,220
+critical point on this domain, right?
+And I studied the limiting behavior as x
+
+129
+00:08:48,220 --> 00:08:53,986
+approached one, and as x approached
+infinity, and I found that I could make
+
+130
+00:08:53,986 --> 00:09:00,140
+the output of this function as large as
+I'd like and as close to zero as I'd like.
+
+131
+00:09:00,140 --> 00:09:05,940
+So this function doesn't achieve a maximum
+minimum value on this interval.

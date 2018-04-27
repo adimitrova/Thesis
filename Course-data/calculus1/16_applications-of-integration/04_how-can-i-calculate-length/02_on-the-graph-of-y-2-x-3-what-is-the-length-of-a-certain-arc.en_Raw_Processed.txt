@@ -1,0 +1,85 @@
+music 
+we defined arc length using an integral 
+integral that well using is this 
+one 
+im going to integrating a to b 
+square root plus derivative 
+squared dx 
+lets apply this to a specific problem 
+lets compute arc length a little 
+piece a graph 
+so lets look graph y squared 
+equals x cubed figure length 
+this arc , to , 
+i could rewrite this equation 
+instead writing y squared equals x 
+cubed, i could write y equals x to 
+halves power 
+well start differentiating 
+so this, i write dy, dx is 
+halves x to half power 
+well put that derivative 
+formula arc length so im going to 
+integrating 
+x goes to , square root 
+plus this derivative squared 
+so, ill write halves, x to half 
+squared dx 
+now, i want to compute that 
+integral 
+
+well, i rewrite integrand 
+this is integral to 
+square root plus halves squared is 
+ths 
+x to one half squared, ill write 
+x, dx 
+fear, keep going 
+well, i could use substitution 
+u equals plus ths x so that du is 
+ths x alternatively, dx is ths du 
+that means this integral, 
+integral square root u 
+times ths du remind you bounce 
+integration 
+well an x is , u is x is u 
+is ths 
+alright, i to write an 
+anti derivative here, well i could write 
+this th, u to halves 
+halves thats an antiderivative 
+square root , evaluated th 
+so im going to plug in th plug 
+in , take difference 
+okay, so this is th, i write, times 
+rd, instead dividing halves 
+times th 
+to halves power minus th times 
+rd times to halves power i 
+got to simplify this little bit even 
+lets see here 
+times is , okay thats also to 
+halves power 
+so i cancel things 
+i simplify gotta 
+arithmetic here 
+so ive got what, to halves 
+power divided times is , minus, 
+this is ths times 
+and, if you dont like halves here, 
+i could write this times square 
+root minus 
+this, is length that arc 
+we it, worked almost 
+well 
+alright thats sad thing arc 
+length calculations 
+arc length formula involves 
+that square root plus a derivative 
+squared, extraordinarily unlikely 
+if you give random 
+function, im going to succeed in 
+able to evaluate that integral 
+sorts things we calculate 
+arc length pretty special sorts 
+things 

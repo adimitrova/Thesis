@@ -1,0 +1,132 @@
+, chain rule is so important, 
+worth thinking a proof 
+validity you might tempted to think 
+that you get away 
+cancelling i mean is you might 
+tempted to think that something like this 
+works lets say you wanted to 
+differentiate g f x you might set f 
+x equal to y then, you might 
+think, well, youre really trying to 
+calculate is derivative g y 
+okay then, you might say, well, 
+derivative g y, that will 
+derivative g respect to y times 
+derivative y respect to x, 
+thats really chain rule i mean, this 
+first thing is derivative g 
+this thing is derivative f 
+like youd expect, youre 
+trying to say that you cancel, 
+alright youre allowed to 
+cancel i mean, upshot here is 
+that dydx is a fraction, alright you 
+cant justify this equality 
+canceling objects, way 
+youre supposedly canceling, 
+theyre fractions we need a 
+delicate argument that one way to go 
+is to give a slightly different definition 
+derivative well, heres a slightly 
+different way packaging 
+derivative function f is 
+differentiable a point a, provided 
+theres number, im 
+suggestively calling f prime a, if 
+derivative f a, so that limit 
+this error function is equal to 
+whats this error function well, 
+measuring far approximation is that 
+id get using derivative 
+actual functions output if i plug in an 
+input value near a in ways, thats 
+actually a nicer definition derivative, 
+since really conveys that 
+derivative provides a way to approximate 
+output values functions in case, 
+now, lets take this new definition 
+derivative try to prove chain 
+rule try to approximate g f x plus 
+h try to discover chain rules so, i 
+want to able to express this in terms 
+derivative g f, least, 
+approximately, control error 
+well, i that f im 
+assuming that f is deferential 
+point x so, this is g of, instead f 
+x plus h, f x plus derivative f 
+x times h plus an error term, we 
+calling error f h times h im 
+going to play game g this 
+is g f x plus a small quantity 
+if i assume that g is differentiable 
+point f x, this is g f x 
+plus derivative g f x times 
+much i wiggle by, which, in this case, 
+is f prime x h plus that error term 
+plus an error term g, is 
+error term g i to put in 
+much i wiggled by, which, in this case, is 
+f prime xh plus error term f 
+h times h times that quantity, f 
+prime xh plus error term f h 
+times h alright, so thats exactly equal 
+to g f x plus h im including 
+error terms now, we expand 
+a bit so, this is g f x plus, 
+you multiply two terms together, 
+g prime f x times f prime xh 
+thats looking really good, thats 
+chain rule is, right 
+supposed to give this derivative 
+g composed f plus, ive got a ton 
+error terms error terms 
+an h, so im going to collect 
+hs end first error term is g 
+prime f x, this term here, times 
+error f h next ones, plus 
+error g, this complicated quantity, 
+i going to abbreviate hyphen, times f 
+prime x times h, im collecting 
+hs end, plus error term 
+g, that complicated quantity, times 
+error f h, that is times 
+h alright now, this is almost giving 
+derivative composite function 
+provided that i control size 
+this error term, right i need to 
+show is that limit h approches 
+this error term is really , 
+error term, right, part th 
+e times h, g prime f x 
+times error term f h plus 
+error term g times f prime x, plus 
+error term g times error term 
+f h now, i know that, that 
+limit is equal to well, i in 
+pieces, right limit sum, 
+so sum limits i know 
+that this first term is got 
+an error f h term in it, f is 
+differentiable, error term goes to 
+i likewise know this, 
+alright this is, also got an error f 
+h term in mysterious term 
+is this if you think a little bit 
+it, error g this 
+hyphen thing, im abbreviating this 
+whole thing here, also goes to h goes 
+to thats another thing to know 
+that limit h goes to this 
+quantity is is enough to say 
+that g f x plus h equals this 
+quantity, actually implies that this is 
+derivative so, heres weve 
+actually shown suppose that f is 
+differentiable a point a g is 
+differentiable point f a, 
+composite function, g composed f, 
+is differentiable a, 
+derivative g f point a, equal 
+to derivative g f a times 
+derivative f a 

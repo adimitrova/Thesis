@@ -1,0 +1,1046 @@
+going to next is 
+going to spend a little bit time, 
+least two lectures, talking 
+torque free motion, 
+spacecraft this is 
+a pretty common situation 
+youre always thrusting 
+youre always reacting, youre 
+using lots resources, energy, fuel 
+so we understand 
+torque free motion 
+in fact theres many missions that exploit 
+torque free motions to spin stabilize 
+kinds stuff 
+well look 
+disturbances like gravity gradients, 
+well derive that scratch using 
+much kind notation 
+dual spinners, thats another one 
+well jump 
+control stuff afterwards 
+okay, so i didnt 
+put that one 
+lets talk torquefree 
+attitude motion 
+weve saying today, 
+h dot is equal to l 
+if torquefree 
+l becomes zero 
+that says nerve, whatever this 
+vector is, h is a vector in space 
+a vector a magnitude 
+times a direction 
+saying h dot equal to l 
+is that seen an inertial observer, 
+this vector is fixed 
+so that means, you seen before, 
+h is equal to i omega, we compute 
+this stuff, we i in body 
+frame, we omega in body frame 
+we often write h is equal 
+to something, something, 
+something in body frame 
+body frame components h 
+torque free motion zero 
+inertias fixed, omegas 
+going to vary, go back forth 
+if you reconstruct in body frame, 
+this is vector is, 
+you know body attitude is 
+so times bn, right 
+you map back end frame 
+those, three inertia frame 
+components to fixed 
+thats essentially 
+here 
+this is in body frame 
+this is typically we write 
+here weve assumed type 
+body frame to get this form 
+principle, exactly 
+diagonal 
+well this a lot analysis 
+we always this anybody 
+simplifies basic stability 
+analysis that looking 
+so that we that 
+times dcm in 
+whatever coordinates you wish 
+people that use 
+something besides mrp 
+i want to highlight that 
+that happen 
+so you get this 
+you to take derivative 
+this is n frame components 
+you to take derivative 
+this stuff set equal to zero 
+you get a lot theta one dots 
+omega dots yeah that to 
+true i this dots 
+insightful 
+so thats this is 
+fundamentally happens 
+so this is a good test if 
+youre writing an integrator 
+you give initial attitude 
+give a spin 
+torque 
+set torque to zero 
+that equations motion let tumble 
+let spin 
+you watch attitude history 
+every time step, 
+if you compute this 
+attitude computed dcn, 
+map momentum coordinates 
+body inertial frame, 
+you three coordinates 
+that give you perfect flat lines 
+if that, 
+you get really warm fuzzy feelings 
+that integrator is working 
+a guarantee that you get 
+warm fuzzy feelings something 
+theres always ways people 
+get creative screw things 
+but, if you preserve momentum 
+in inertial frame 
+thats a really good indicator 
+youre right track 
+good numerical checks, 
+good analysis 
+so next step is 
+analytical insight 
+we look this stuff 
+so really, key component is we want 
+to everything in body frame 
+helps us 
+we want to look at, we want to 
+make use that momentum is preserved 
+if torque free motion is there 
+something else that preserved well 
+cough 
+momentum 
+yes, spencer, energy actually 
+you remember power equation dot 
+ended omega dotted l, 
+l 
+that one cases, 
+we get power system 
+so inaudible to 
+preserved well 
+thats a result well jump next 
+so if you everything in body frame, 
+h equal to i omega 
+omega, in body frame is 
+classic omega one b one, 
+omega two b two, so forth 
+if you take in h vector 
+putting in body frames, 
+im using h one, h two, h three 
+thats labels b 
+frame components h vector 
+i omega means h one 
+must i one omega one 
+thats that first vector component h, 
+im using a principle frame 
+that diagonalised stuff 
+is saying okay, 
+good we going this 
+written age in body frame 
+instead using 
+a rewritten version prior 
+slide going to next is 
+instead saying three in actual 
+vector component to constant, 
+nice flat lines you plot out, 
+going to 
+focus magnitude 
+magnitude is a scalar 
+we discussed in first week, 
+to take a derivative a scalar 
+doesnt a framed dependency 
+so if h a vector is 
+constant in frame, 
+that must mean magnitude 
+to constant well 
+therefore, 
+magnitude is something i always 
+compute even in body frame components 
+so thats a nice trick 
+we go, okay, we get magnitude 
+well, going to get magnitude 
+squared dotting h 
+in a matrix form we h transpose h 
+math, gives you stuff 
+so this times gives you i one 
+squared, omega one squared, i two squared, 
+omega two squared 
+you start adding 
+this to 
+give you a constant 
+whatever spin you gave system 
+whatever gyrations going 
+things to add 
+omega ones twos 
+threes vary time 
+to add to give you 
+number in end momentum 
+so good this gives one equation 
+kinetic energy 
+one that we talked 
+if you look kinetic energy that 
+one half omega transpose i omega, 
+if i is diagonal really 
+simplifies quickly 
+you end one half 
+inertia rate squared 
+principle axis, thats 
+energy is also preserved 
+so you notice in two equations, 
+independent coordinates omegas 
+giving an initial spin, 
+i know omegas, rates, change 
+that gives three degrees freedom 
+rates, subject to two constraints 
+momentum magnitude to fixed 
+energy to fixed 
+so in end jordan, two constraints, 
+three degrees freedom, 
+many degrees 
+freedom you left 
+one, right 
+so that means immediately, 
+we top free motion, 
+omega time history become to 
+a single curve in three dimensional space 
+a one b sub space 
+that we to find 
+so right looking this 
+we intercept this, this, 
+predict that behaves 
+this is quite geometrically intuitive 
+thats next stuff comes 
+let go back here 
+could somebody tell 
+replace omega one, 
+two three x, y 
+z three coordinates 
+that tracking 
+if you ax squared plus bx 
+squared plus y squared plus cz 
+squared equal to a constant 
+type shape you describing 
+okay, a circle this 
+is a three dimensional shape 
+a sphere 
+crosstalk 
+a, b, c different 
+if a, b, 
+c would ge a sphere 
+so is shape 
+ellipsoid 
+an ellipsoid that you actually, 
+this is a classic equation 
+surface an ellipsoid 
+so that means, this is kind like stuff, 
+we this d hyper sphere, 
+thats hard to visualize 
+a d surface, i draw, so 
+well see visualizations this 
+this equation actually 
+means that solutions 
+omega , , , reside this ellipsoid 
+ellipsoid a constant shape, 
+change shape time 
+inaudible 
+
+x,y, 
+z parameters inaudible time 
+x, y, 
+z independent coordinates 
+lets look that 
+much fire, okay 
+if we this, this is a classic 
+way, you might see this ellipsoid 
+thats constant, 
+right is this an ellipse 
+if a, b, c constants is 
+this an ellipse a fixed shape, 
+is this ellipse varying size 
+fixed shape 
+fixed shape, right 
+so here we 
+a lot coordinates that 
+people get quickly confused is 
+is independent stuff that 
+looking 
+so omegas would independent things, 
+like x, y z 
+you see in classic ellipsoidal, 
+wiki notes something 
+i, , principle inertias 
+that fixed in time we 
+a rigid body 
+if werent rigid, 
+would fixed things 
+well see that actually dual 
+spinners, so you multiple buttons 
+thing here, 
+this also will make a squared y 
+so thats x squared y squared 
+z squared times constant 
+equals to something thats constant 
+this is also an ellipse, so 
+that that george talking right, 
+thats space we 
+actually looking 
+we two constraints, 
+this is an ellipse, thats an ellipse 
+this two to intercepted thats 
+answer, thats intuitive, 
+easy to intercept 
+two ellipsis to 
+so people came 
+this approach 
+instead treating omega one, two, three, 
+independent coordinates 
+trying to figure whats happening 
+we use scaled versions omega one, 
+two, three 
+basically you multiply in times 
+principle inertias so new independent 
+coordinates simply body frame 
+angular momentum vector components 
+so im treating h, , 
+i find h, , time histories, 
+to map back to omegas, 
+i is divide principal 
+inertias you get omegas 
+if you this, you get momentum, 
+constraint looks like this, 
+type geometric shape is this 
+this is a sphere, right, 
+basically constants equal to x 
+square plus y square plus z square 
+so this is definitely a sphere, 
+thats easy to draw, you will see 
+energy constraint, 
+in terms this, 
+i will let you this 
+you to plug in that h 
+is i omega, yeah we arrange 
+you end getting energy constraint 
+divided gives you this 
+this is kind a classic normalized 
+forward ellipsoidal 
+form is something old square equal to one 
+this terms if you go look 
+ellipsoids you could easily 
+become related to semiminor, 
+semiintermediate, 
+semimajor axes that ellipsoid 
+that youre going to have, right 
+this is a unit, a unit sphere 
+a sphere size h, you 
+get energies that come in there, 
+this is something we 
+start to put together 
+so torquefree motion, 
+to consider happens to rates 
+time youre jumbling tirading 
+anybody, this is nothing cylindrical 
+symmetric, inertias 
+two constraints, weve 
+moved omega space to h space, 
+that gave us a simpler way to 
+geometrically find things 
+so thats a sphere, 
+this is classic ellipsoidal equations, 
+that you find a, bs cs 
+youre semiaxes 
+three things, so yep, 
+thats you find there 
+so well three, 
+if we three distinct inertias, 
+you will three distinct axis, 
+a key element is well lets see, 
+vary a spacecraft 
+im full simple questions this morning 
+torquefree motion, 
+theres external torque 
+acting a spacecraft, 
+could vary, ansel 
+yeah 
+could h vary 
+if torquefree, external 
+force acting spacecraft 
+you dont think so, 
+you guessing, you feeling lucky 
+h l, goes back to that 
+is that good a rigid body 
+yes, is good a continuum 
+yeah, so if you spacecraft 
+rigid, fuel slosh 
+people wandering around in there, 
+a space station 
+big panels that flex, 
+space station again, huge panels right 
+h dot equal to l still holds, 
+if theres external torque acting 
+system, h to preserved 
+so torquefree motions, 
+we always treat h a constant 
+thats religion, i mean, 
+doesnt change, t, though, energy 
+we say this is rigid, 
+rigid is structure, 
+everything a little bit flex 
+theres always something, 
+maybe stiff, 
+there is always amount flexing 
+so soon you flex, 
+happens mechanically 
+happens to energy state 
+yeah, youre going to 
+start dissipating energy 
+theres always a resistance to flexing 
+theres damping coefficient 
+might really, really small 
+if internal friction theres stuff 
+rubbing ach there 
+theres walls, theres always 
+friction ways to dissipate energy, so 
+even though might almost rigid 
+you nothing is truly rigid 
+so in practice in this math we 
+assuming right perfectly rigid 
+thats an artefact mathematics 
+in real life an engineer we 
+realize nothing is perfectly rigid, 
+in fact first satellite 
+that went us 
+explorer 
+explorer 
+explorer 
+kind in this shape, go hey, 
+we looked this equations 
+if we spin this axis 
+i heard spinning stabilizes things, 
+so spun this axis right 
+big antenna sticking out, 
+thats communicated 
+antenna flopping, 
+stuff, anybody remember 
+long went unstable 
+less an orbit, bery glorious 
+that started to listen 
+to astrodynamicist go 
+to help if you right axis 
+right stuff, right 
+so that one is flexing 
+definitely lost energy 
+you will see here shortly 
+constraints 
+this leads to something that 
+unstable, actually, 
+move towards 
+theres definite stable equilibrium, 
+this spin, 
+youre spinning this nice 
+symmetry axis, skinny one, right 
+so energy vary, 
+that means, momentum doesnt, 
+if torquefree, 
+momentum sphere is locked 
+that amount momentum there is 
+a finite range energies that you 
+have, this ellipsoid 
+to intercept momentum 
+so theres a minimum energy 
+state you have, 
+theres a maximum energy 
+state you 
+so you a fixed amount 
+momentum you cannot predict 
+actual energy state is 
+theres a range energies you 
+we dissipate energy we go one to 
+another 
+happens though we change energy, 
+you see x principle inertia 
+x energy takes square root 
+energy scales, going to 
+scale axes simultaneously 
+so this ellipsoid, basically, 
+grows homogeneously 
+shrinks homogeneously energy 
+you change energy, you dont make 
+this ellipsoid longer in one direction 
+skinnier in another 
+grows scales evenly 
+right 
+thats key 
+thing you want to get 
+this equation 
+good, now, lets look this 
+this is first many figures 
+going to assume, 
+without loss in generality, 
+that principal in body frame, 
+principal frame, 
+lined that b 
+gives axis maximum inertia 
+that would like kind like 
+this axis here this box 
+you b is axis 
+intermediate inertia 
+thats one inbetween 
+that would this 
+kind a skinnier side 
+axis least inertia is here 
+we said principal frames 
+is to find that permutation 
+i always choose a frame 
+this is true 
+so, i dont to this 
+math six different ways 
+i 
+you flip 
+frames if needed 
+plotting 
+things in momentum corner space 
+omega space 
+we realize that omega omega h, 
+sorry h h omega times i 
+so forth 
+momentum shows a sphere, 
+thats nice 
+ellipsoid shows here, 
+to intercept 
+so, we said earlier weve got three 
+coordinates looking for, omega , 
+, , subject to two constraints 
+answer must a curve 
+thats curve is 
+is that intersection 
+theres one im showing 
+backside 
+thank you 
+laugh 
+so, even here, so 
+if you energy specified 
+momentum specified, theres actually two 
+possible trajectories you could 
+theyre related 
+theyre kind mirror images 
+shape isnt flat, 
+this is kind potatoshaped 
+things, ellipsoid, 
+wrapped around a sphere, 
+thats intersection 
+curve looks like 
+thats you would 
+here you would wobble 
+around in this direction, 
+there in this direction 
+so, this gives you something, 
+this scale body inertia, 
+you tell right away, 
+this is omegas to reside 
+this also used 
+an integration check 
+so we play energy levels 
+start to look different spin conditions 
+also talk stability 
+so, i know, you taking , 
+youve seen slides 
+so, well quickly go to new stuff 
+h, lets look 
+smallest ellipse you 
+if you shrink energy 
+remember axes proportional 
+to principal inertias so this axis b 
+that largest principal inertia 
+longest elongation 
+if you shrink ellipsis small you 
+make it, longest elongation is 
+going to point that 
+barely touches momentum sphere 
+thats kind geometric 
+interpretation 
+so that means, 
+kind spin you 
+thats a single intersection point here 
+here 
+so that means, in this case, 
+you a spin thats 
+either youre rotating positive 
+negative b axis, youre 
+a pure spin a principle axis 
+so in this case here, 
+actually would wobble 
+youd spinning this case that way 
+so h you 
+an h axis intercept, thats there 
+you plug back equations, 
+in kinetic equations 
+in end, if you h 
+principle inertias, 
+you compute this 
+that minimum energy state is 
+so, theres a clementine mission that 
+went to moon, successful 
+one first ones that 
+found signs potential water, 
+ice kind in shadowy parts 
+polar craters moon 
+we going to go 
+visit asteroid comet something 
+along way a slight 
+glitch sudden 
+thrusters told to stay 
+until you run fuel 
+wasnt thrusters, maybe 
+balanced, like theres one 
+thing went on, so spun to 
+a crazy momentum mission 
+now, torp free still, 
+probably whatever is flexing 
+going in structure might still 
+dissipating energy will never 
+ever come to rest unless you 
+external force acting system 
+you need an external torque to change 
+a total angle momentum, right 
+so even damping in system 
+that you fuel slosh, 
+itll dissipate 
+dissipate 
+to this, thats limiting case 
+lower energy that ellipsoid 
+sphere dont intersect 
+youre violating momentum 
+youve changed 
+momentum system 
+we must applied an external force 
+maybe srps could this stuff 
+thats one thing we 
+space debris tracking 
+srps atmospheric drag 
+im looking electrostatic drag forces, 
+well, torques 
+change momentum time, 
+really complicates 
+analysis objects 
+but, this is one 
+so, good 
+you think this is going to stable 
+this is an equilibrium spin 
+that means, if i put body in this 
+condition omega , 
+if you go back to look 
+differential equations, you end 
+getting is omega data zero 
+omega data zero, omega data zero 
+right, lets actually look at, 
+let go back a few 
+here we go 
+if omega omega , 
+while times , thats 
+times something is , something 
+times is , torques 
+you see a pure spin b 
+is going to in equilibrium, 
+omegas , right 
+so good 
+so we found that 
+we want to know, 
+is this going to a stable equilibrium 
+so if i take this object, 
+i a pure spin this, im never 
+going to physically give a pure spin 
+im that good 
+right 
+im always a smidgen 
+so, stability is always well 
+this particular spin rate would perfect 
+to give you zero rates in everything 
+if youre a little bit, 
+you going to stay close 
+is that going to drive upside 
+gravity gradient is easy example, 
+right 
+here, like this kind a pendulum 
+would stable, if i this, 
+anyhow, keeps wobbling, 
+friction, 
+keeps wobbling here to 
+stay close versus this one 
+this is in equilibrium 
+if i wouldnt hold tight im 
+a little bit, drives away 
+thats an unstable one, right 
+here, if we neighboring motion, 
+we cant make energy smaller, 
+we wouldnt intercept 
+so we make energy slightly bigger, 
+happens to interception curves 
+stay tight 
+bounded around that equilibrium 
+louis 
+yes, everything looks rounded 
+so, if you make a little bit bigger, 
+you would think, okay, 
+youve got this little 
+bit a curve there 
+okay, youre wobbling 
+if youre a fierce spin, 
+you would wobble 
+we see that, right 
+if you take this object 
+i take here spin it, 
+that spun pretty well, biggie 
+lets see so ive got videos here 
+inertias, im showing an object 
+that kind scales inertias 
+im giving a sphere spin, 
+would in equilibrium 
+i never see wobble 
+axis, that pure b spin 
+here im giving slight 
+offsets half a degree, 
+you see, look almost identical 
+perfectly identical 
+stay, 
+little wobbles stay small 
+bounded life behaves well,right 
+kind makes sense 
+deviations a minimum 
+energy states 
+youve often learned in physics, 
+nature loves minimum energy 
+everything kind converges 
+to minimum energy state 
+right, thats stable 
+one that we would 
+so, thats this spin 
+if we look intermediate energy, 
+we increase energy, right 
+everything scales evenly, a sudden, 
+intermediate access is 
+along b intercepts you would 
+a pure spin this point, 
+a pure spin 
+that means object 
+spinning this axis in a positive 
+negative set 
+two options if you 
+this specific energy state 
+before, you said h 
+h equal to 
+then, you quickly solve that 
+intermediate energy state is momentum 
+squared times 
+intermediate inertia 
+if you that energy state, 
+two points you could spinning 
+intersection 
+line isnt points, 
+like minimum energy state 
+theres also this whole 
+curve that happens, 
+a saddle point that 
+wraps around 
+that is a physical motion well, 
+thats called separatrix motion 
+so if youre spinning nearly it, 
+now, if i a pure spin here, im good 
+that give a spin, 
+is that one going to stable 
+if youre slightly, if youre 
+this point, we increase energy 
+a sudden youre 
+a point slightly here 
+you going to stay close, 
+things 
+you think 
+no, right 
+so this curve actually takes you 
+here, back here 
+here comes in, so question is if 
+youre this curve, well, wait a minute 
+if i hit this point, i go this way 
+that way, happens 
+answer is you never hit that point 
+spin conditions, you put 
+mathematically perfectly 
+if youre separatrix motion, 
+you will get there 
+infinite amount time 
+an asymptote, right 
+otherwise mathematically you see you 
+a decision point a sudden 
+stuff go left right 
+that never happens, 
+you asymptotically, 
+would take an infinite amount 
+time to actually reach that point 
+is that patient 
+so if youre slightly, 
+you will see interception lines 
+that kind look like this 
+anytime i get close to 
+this interception point, 
+thats i know this actually 
+takes a long, long, long time 
+itll hang there, 
+then, eventually, 
+goes back to side 
+this is why, 
+if you try to flip an object 
+axis intermediate inertia, right 
+flipped, didnt, 
+there we go, flipped again, 
+flipped 
+in one twist im trying hard, 
+immediately , , 
+unstable in that sense, right 
+that becomes 
+kinds behaviors 
+so, intermediate axis 
+spins never stable 
+theyre highly unstable, 
+may deceiving 
+may look stable 
+a short period time 
+so, lets see if i 
+get this video to work 
+went commercial 
+lets see if youtube is going to this 
+this is space station, 
+an object, took spun 
+is this motion 
+thats so cool laugh 
+perturbed slightly goes 
+definitely a spin 
+theyre here, 
+this is a spin axis 
+inner median inertia 
+theres a little bit a wobble, 
+a perfect spin 
+i guess astronauts arent 
+that well trained, right 
+laugh 
+so, this is hard to do, 
+you see 
+short periods time, 
+almost looks stable, right 
+gets close 
+stays close, crap 
+hell breaks loose, right 
+you flip upside again, 
+you hang awhile 
+no, youtube, thank you, 
+knows going to show us 
+laugh 
+okay, goes back 
+forth, yep, you stop 
+so thats whats happening here 
+you see, looks stable 
+short periods time, 
+getting close to here, 
+hangs a while 
+then, eventually, going to 
+get here hang 
+a while come back 
+never settles one point, 
+thats stable 
+you may look like youre staying close 
+a finite period time 
+we go through, later on, 
+control proof, stable mean, 
+so forth 
+you enter a bounded region, 
+you to remain in that region forever, 
+you will 
+if youre off, you may stay there 
+, years, you got really, 
+really, really, really close 
+eventually you will, you give 
+enough time, you will bounce back 
+will go to side 
+hang a while come back 
+so thats kind a really cool video, 
+i like that one 
+kind illustrates whats happening, 
+right 
+this is youre going one direction, 
+floats around 
+comes back here 
+and, except air drag in that space 
+station, really a torquefree motion 
+bouncing back 
+forth satisfying, this stuff 
+this is actually 
+leads to chaos well 
+so a single rigid body, 
+proof completely rigorous 
+mathematic that this is a chaotic system 
+if youre spinning nearly around 
+a separatrix kind energy state 
+a infinitesimal change 
+here you spinning this way 
+another one you spinning this way, 
+is different orientations 
+so infinite sensitivity to small 
+changes is redefines chaos 
+so separatrix motions is 
+a chaotic type motion 
+so you see kinds 
+papers published 
+so chaos is fun, here we look it, 
+ive done a minor minor inaudible, 
+degrees 
+even less one revolution, 
+hugely different orientations, right 
+thats youre seeing 
+you flip this thing 
+let spin already tumbled 
+so definitely unstable, 
+lets see whats maximum energy state 
+if you scale this ellipse 
+big you can, 
+you end this kind a huge 
+ellipse, still to intercept 
+thats going to 
+polar points, b axis 
+so this is a pure spin 
+to axis least inertia, 
+thats we define b 
+that would this, 
+so if i try to spin this, 
+reasonably stable, 
+an awkward way to spin 
+little bit a tumble, 
+looks stable 
+again, you make , 
+this term, you derive energy 
+is h squared , minimum inertia 
+that makes sense, 
+you divide smallest inertia to 
+get biggest energy state, right 
+so thats maximum energy you could 
+this amount momentum 
+to more, you to apply 
+external torques increase sphere 
+you intercept points, 
+is good 
+now, here, if you have, 
+we cant energy 
+thats a maximum energy state, 
+if we slightly less, nathan, 
+is that motion going to stable 
+unstable 
+unstable 
+
+itll go to minimum 
+
+going to lose energy, 
+going to dissipate energy 
+if you dont consider energy loss, 
+this really explorer , 
+bad could 
+really, a little dappy, 
+nothing, small, right 
+so without energy loss, if youre like 
+this, thats exactly explorer 
+doing, spinning 
+skinny axis rocket 
+got going, 
+you would wobbling here 
+this looks perfectly stable, 
+soon you count energy loss, 
+you know this ellipse 
+to get smaller smaller 
+point, 
+youre going to go separatrix 
+that point, knows happens, 
+you might end upside down, 
+right side 
+impossible to predict, 
+a chaotic thing, right 
+and, then, end, energy loss, 
+will we converge to 
+inaudible 
+yeah, this ellipse will go smaller 
+smaller smaller 
+smallest one would 
+motions here 
+so, in end, everything in nature 
+rigid body converges to a flat spin 
+so you 
+space situational awareness, 
+tracking debris objects so forth, 
+this is things would converge 
+assuming null external torques, right 
+so you include srp, 
+a recent graduate we this a lot 
+looking statics 
+joes work, 
+things go quite 
+different a sudden 
+you need an external influence 
+to pump momentum energy level, 
+takes you 
+things get way complicated, 
+much, much harder to track 
+if is torque free, 
+classic results 
+good, heres an example, 
+theres energy dissipation here 
+so this one, yes, 
+a slight difference 
+you see a little 
+bit pronounced, 
+overall, 
+nothing like intermediate axis one 
+that one really went hog wild 
+went place 
+so three, 
+you look infinite inaudible, 
+thats im looking here 
+so minimum energy would here, 
+maximum energy would here 
+separatrix energies is here, 
+you see arrows go 
+so if you look h, omega , , 
+coordinates spaces, 
+you actually quickly tell 
+actually, wobbling 
+an axis maximum inertia 
+im wobbling around 
+in a positive sense 
+if i omegas 
+hs move around this axis, 
+you see thats actually 
+orbiting in a negative 
+so this is a positive sense, 
+this is a negative sense 
+i know i spinning an axis 
+least inertia, near to 
+if flipping back 
+forth closer to separatrix, 
+crazy stuff 
+you look 
+interceptions, 
+this kind gives you a quick geometric 
+way to interpret stability rigid bodies 
+we dual spinner, 
+well a complete mathematical 
+way to talk stabilities 
+well rediscover results, 
+a a linearization 
+approach that works 

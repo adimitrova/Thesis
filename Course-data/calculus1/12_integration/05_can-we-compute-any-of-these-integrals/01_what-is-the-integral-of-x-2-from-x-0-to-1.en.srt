@@ -1,0 +1,493 @@
+1
+00:00:00,025 --> 00:00:11,412
+[music] Let's integrate x squared from 0
+to 1 by using the definition of integral.
+
+2
+00:00:11,412 --> 00:00:14,931
+Now, since the function x squared is
+continuous, it's integrable.
+
+3
+00:00:14,931 --> 00:00:19,904
+So, it won't matter exactly how we choose
+our partition or how we choose our sample
+
+4
+00:00:19,904 --> 00:00:22,820
+points as long as the partition is fine
+enough.
+
+5
+00:00:22,820 --> 00:00:27,356
+So, I'm going to choose a partition in
+which each of the subintervals has the
+
+6
+00:00:27,356 --> 00:00:31,212
+same width, 1 over n.
+I'm going to divide the interval into n
+
+7
+00:00:31,212 --> 00:00:35,322
+pieces each with the same size.
+Now, I've got to figure out exactly where
+
+8
+00:00:35,322 --> 00:00:39,968
+those cut points are being made.
+And I'm labeling these points x sub i, so
+
+9
+00:00:39,968 --> 00:00:45,396
+my left hand n point is x sub 0 and my
+right hand n point is x sub n, and my cut
+
+10
+00:00:45,396 --> 00:00:50,437
+points in between where I'm cutting up to
+partition are i over n.
+
+11
+00:00:50,437 --> 00:00:55,072
+So, the first one here, or the one after
+the 0 of 1 anyway, is 1 over n.
+
+12
+00:00:55,072 --> 00:01:00,566
+The next one is 2 over n, the next one is
+3 over n, and each of those subintervals
+
+13
+00:01:00,566 --> 00:01:04,503
+has the same width, 1 over n.
+Now, I also have to choose points to
+
+14
+00:01:04,503 --> 00:01:08,550
+sample the function at, and I'm just going
+to choose the right hand end point here.
+
+15
+00:01:08,550 --> 00:01:14,283
+So, my x sub 1 sample point will be 1 over
+n, my x sub 2 sample point will be 2 over
+
+16
+00:01:14,283 --> 00:01:17,815
+n, and so on.
+And I can write down the Riemann sum,
+
+17
+00:01:17,815 --> 00:01:22,199
+right?
+The Riemann sum is the sum, i goes from 1
+
+18
+00:01:22,199 --> 00:01:29,759
+to n, the function evaluated at the sample
+point times the width of this i-th
+
+19
+00:01:29,759 --> 00:01:35,274
+interval, right?
+Which I could write as x sub i minus x sub
+
+20
+00:01:35,274 --> 00:01:38,082
+i minus 1.
+Now, in this case some of this is a little
+
+21
+00:01:38,082 --> 00:01:40,309
+bit easier.
+I know I can write this a little bit more
+
+22
+00:01:40,309 --> 00:01:44,170
+nicely, right?
+F of x of i star, x of i star being i over
+
+23
+00:01:44,170 --> 00:01:48,074
+n, and the function being the squaring
+function.
+
+24
+00:01:48,074 --> 00:01:55,516
+I can rewrite this Riemann sum as i over n
+squared, and then x of i minus x of i
+
+25
+00:01:55,516 --> 00:01:58,946
+minus 1.
+That's just the width of the i-th
+
+26
+00:01:58,946 --> 00:02:03,444
+subinterval in my partition.
+And that's, you know, how far apart these
+
+27
+00:02:03,444 --> 00:02:08,375
+numbers are, and that's 1 over n.
+So, there is my Riemann sum associated to
+
+28
+00:02:08,375 --> 00:02:13,899
+this particular partition as my particular
+choice of sample point.
+
+29
+00:02:13,900 --> 00:02:20,202
+I can evaluate that exactly by using some
+of the facts we've learned about sums.
+
+30
+00:02:20,202 --> 00:02:23,759
+In fact, I want to do a little bit more
+than just evaluate this, right?
+
+31
+00:02:23,760 --> 00:02:27,389
+I want to take the limit of this as n goes
+to infinity.
+
+32
+00:02:27,389 --> 00:02:32,039
+And by choosing finer and finer
+partitions, that's going to give me better
+
+33
+00:02:32,039 --> 00:02:37,415
+and better approximations to the true area
+under the graph of this function, right?
+
+34
+00:02:37,416 --> 00:02:43,030
+That's the area that I'm trying to
+calculate by evaluating this particular
+
+35
+00:02:43,030 --> 00:02:48,215
+Riemann sum and taking the limit as the
+number of pieces in my equal length
+
+36
+00:02:48,215 --> 00:02:52,218
+partition goes to infinity, okay?
+So, this is really what I want to
+
+37
+00:02:52,218 --> 00:02:55,597
+calculate, alright?
+I want to calculate the limit as the
+
+38
+00:02:55,597 --> 00:03:01,014
+number of things in my partition, each of
+equal size, goes to infinity, right?
+
+39
+00:03:01,015 --> 00:03:04,297
+That's a finer and finer partition.
+And this is the Riemann sum that we had
+
+40
+00:03:04,297 --> 00:03:07,555
+before.
+And this is calculating the integral from
+
+41
+00:03:07,555 --> 00:03:09,706
+0 to 1 of x squared.
+All right.
+
+42
+00:03:09,707 --> 00:03:16,386
+Well, how do I do this now?
+Well, this is the limit as n approaches
+
+43
+00:03:16,386 --> 00:03:25,421
+infinity of the sum, i goes from 1 to n,
+and this is i squared over n squared times
+
+44
+00:03:25,421 --> 00:03:29,033
+1 over n.
+Now, n is a constant, so I can pull this
+
+45
+00:03:29,033 --> 00:03:36,920
+out of a sum by using distributivity.
+This is the limit as n approaches infinity
+
+46
+00:03:36,920 --> 00:03:44,434
+of 1 over n cubed times the sum of i
+squared, i goes from 1 to n.
+
+47
+00:03:44,434 --> 00:03:49,900
+Now we think back, I've got a formula for
+the sum of the first n perfect squares,
+
+48
+00:03:49,900 --> 00:03:53,259
+right?
+That formula tells me that this is the
+
+49
+00:03:53,259 --> 00:03:58,810
+limit as n goes to infinity of 1 over n
+cubed times, and what's the sum of the
+
+50
+00:03:58,810 --> 00:04:08,063
+first n perfect squares?
+It's n times n plus 1 times 2n plus 1 all
+
+51
+00:04:08,063 --> 00:04:11,460
+over 6.
+Now, I could expand that out.
+
+52
+00:04:11,460 --> 00:04:22,186
+This is the limit as n goes to infinity of
+1 over n cubed times 2n cubed plus 3n
+
+53
+00:04:22,186 --> 00:04:28,420
+squared plus n all over 6.
+And this limit, well, it really just
+
+54
+00:04:28,420 --> 00:04:31,790
+matters, right?
+What these highest powers are.
+
+55
+00:04:31,790 --> 00:04:36,990
+There's an n cubed in the denominator, or
+a 6n cubed in the denominator, and a 2n
+
+56
+00:04:36,990 --> 00:04:42,344
+cubed in the numerator.
+And as n approaches infinity, this is 1
+
+57
+00:04:42,344 --> 00:04:45,038
+3rd.
+Let's summarize this with an official
+
+58
+00:04:45,038 --> 00:04:49,278
+looking statement.
+So, the integral from 0 to 1 of x squared
+
+59
+00:04:49,278 --> 00:04:52,948
+dx, right?
+We've just calculated this as 1 3rd.
+
+60
+00:04:52,948 --> 00:04:59,916
+And what that's really saying is that if
+I've got say, this graph here, say this is
+
+61
+00:04:59,916 --> 00:05:06,808
+the graph of x equals x squared, this
+integral is calculating this area, right?
+
+62
+00:05:06,808 --> 00:05:12,420
+The area between 0 and 1 underneath the
+graph of x squared, right?
+
+63
+00:05:12,420 --> 00:05:19,560
+This red area here is 1 3rd square unit as
+a result of the integral calculation.
+
+64
+00:05:19,560 --> 00:05:21,719
+Now, I can play around with this a little
+bit.
+
+65
+00:05:21,720 --> 00:05:26,697
+So, to say that the integral from 0 to 1
+of x squared dx is 1 3rd, well, one thing
+
+66
+00:05:26,697 --> 00:05:30,360
+I could do with this is I could multiply
+this by 3, right?
+
+67
+00:05:30,360 --> 00:05:34,680
+What's 3 times the integral from 0 to 1 of
+x squared?
+
+68
+00:05:34,680 --> 00:05:38,160
+Well, that's 3 times a 3rd, that's equal
+to 1.
+
+69
+00:05:38,160 --> 00:05:44,374
+But 3 times an integral, that's the same
+as integrating from 0 to 1 3 times the
+
+70
+00:05:44,374 --> 00:05:48,825
+function, right?
+And this is really worth thinking about.
+
+71
+00:05:48,825 --> 00:05:53,160
+I mean, here I'm taking this area and
+multiplying it by 3.
+
+72
+00:05:53,160 --> 00:05:57,885
+Here, I'm calculating the area of the
+graph stretched in the y direction by 3
+
+73
+00:05:57,885 --> 00:06:00,689
+times, right?
+And these are the same.
+
+74
+00:06:00,690 --> 00:06:06,533
+And this is saying that the integral from
+0 to 1 of 3x squared dx is equal to 1.
+
+75
+00:06:06,533 --> 00:06:11,250
+So, what does that mean?
+So here, I've graphed the function y
+
+76
+00:06:11,250 --> 00:06:16,448
+equals x squared from 0 to 1.
+And the area in there is 1 3rd of a square
+
+77
+00:06:16,448 --> 00:06:19,024
+unit.
+That's the first calculation that we did.
+
+78
+00:06:19,025 --> 00:06:24,176
+And, now what I'm claiming is that if I
+took this same function here but
+
+79
+00:06:24,176 --> 00:06:28,769
+multiplied it by 3, right?
+Which has the effect of stretching it in
+
+80
+00:06:28,769 --> 00:06:32,822
+the y direction by 3 times as much.
+Well, that triples the area.
+
+81
+00:06:32,822 --> 00:06:37,714
+So, the original area here is a 3rd, but
+now there's new area 1 square unit, right?
+
+82
+00:06:37,714 --> 00:06:43,437
+Which is what I've written here, okay?
+So, what does it mean to say that the area
+
+83
+00:06:43,437 --> 00:06:49,434
+under the graph is one square unit?
+What I don't mean is that I can take a
+
+84
+00:06:49,434 --> 00:06:54,960
+square of side length 1 and cut it up and
+exactly cover that region.
+
+85
+00:06:54,960 --> 00:07:00,047
+That's really not what I'm talking about
+when I claim that, that region has area 1.
+
+86
+00:07:00,047 --> 00:07:04,100
+If I claim that, that region is area one,
+I really mean two different things.
+
+87
+00:07:04,100 --> 00:07:09,618
+I mean that if I had a square with just a
+little tiny corner nicked off of it, I
+
+88
+00:07:09,618 --> 00:07:15,492
+could take that thing that has area just
+under one unit and chop it up into little
+
+89
+00:07:15,492 --> 00:07:20,084
+pieces and fit that thing entirely inside
+my curved region.
+
+90
+00:07:20,084 --> 00:07:25,656
+Conversely, I mean that I could take a
+square of side length 1 and just a little
+
+91
+00:07:25,656 --> 00:07:31,398
+bit of extra area, and I could cut that
+thing up into little tiny pieces and cover
+
+92
+00:07:31,398 --> 00:07:36,205
+up my curved region, right?
+But it's fundamentally all about limits,
+
+93
+00:07:36,205 --> 00:07:39,151
+right?
+This whole story isn't actually about
+
+94
+00:07:39,151 --> 00:07:43,068
+achieving anything.
+It's just saying that I can get as close
+
+95
+00:07:43,068 --> 00:07:46,797
+as I want, right?
+It's saying that I can take this almost 1
+
+96
+00:07:46,797 --> 00:07:52,011
+square unit entirely inside, or I could
+take a little bit more than 1 square unit
+
+97
+00:07:52,011 --> 00:07:55,676
+and cover it up.
+But I'm never actually asserting that
+
+98
+00:07:55,676 --> 00:08:05,138
+things are equal.
+I'm just saying that they are as close as
+
+99
+00:08:05,138 --> 00:08:08,673
+I like them to be.

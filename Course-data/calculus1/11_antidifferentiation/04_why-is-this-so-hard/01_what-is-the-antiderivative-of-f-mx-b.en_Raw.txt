@@ -1,0 +1,131 @@
+[music] we've already seen
+anti-derivatives for sine and for cosine,
+so what's an anti-derivative for say,
+cosine 3x?
+right?
+i'm looking for some function that
+differentiates to cosine 3x.
+well, there's basically one trick that
+we've been using throughout all of these
+anti-differentiation problems.
+it's guessing.
+sine differentiates to cosine, so maybe
+sine of 3x is a good guess.
+but if i differentiate sine of 3x using
+the chain rule, i get the derivative of
+the outside function, that's looking good,
+at the inside function, that's looking
+good, too.
+but times the derivative of the inside
+function which is 3.
+so that's no good, but i can fix that
+pretty easily, right?
+if i just include a 1 3rd here, that rigs
+up everything perfectly, right?
+because then the 1 3rd here and the 3
+cancel, and i am left with cosine of 3x.
+so, i can summarize this by saying that an
+anti-derivative for cosine 3x is 1 3rd
+sine 3x.
+and then, to get in the other
+anti-derivative, i just add some locally
+constant function c.
+well, that worked out.
+let's try to do a slightly harder example.
+let's try to anti-differentiate say, sine
+of 2x plus 1.
+alright, i'm looking for some function
+which differentiates to 2x plus 1.
+i might guess that the answer will involve
+cosine.
+well, i know that cosine differentiates to
+minus sine.
+so, my first guess might be cosine of 2x
+plus 1.
+because if i differentiate this, i get
+minus sine of the inside function, times
+the derivative of the inside function.
+so, this is not exactly this, so i haven't
+quite found an anti-derivative.
+but, it'll be easy to patch that up,
+right?
+if i instead look at a slightly different
+function.
+if i include a factor of minus 1 half in
+front of cosine of 2x plus 1, then the
+derivative would be minus 1 half times the
+derivative of cosine 2x plus 1, which is
+minus sine 2x plus 1 times 2.
+and now, the good news is that the minus 1
+half, and this minus sign and this 2
+cancel, and what i'm left with then is
+just sine of 2x plus 1 which means i've
+found an anti-derivative, right?
+an anti-derivative for sine of 2x plus 1
+is, according to this argument, negative 1
+half cosine 2x plus 1, plus some constant
+c.
+i can see a bit of a general principle
+here.
+well, here's our set up.
+i've got m and b, just a couple of
+constants.
+and what i want to do is
+anti-differentiate a function evaluated at
+mx plus b.
+alright, this is the general framework
+that's general enough to encompass the
+examples we've done thus far, right?
+f could be say, sine or cosine.
+in our first example, we looked at cosine
+of 3x, so m was 3 and b was 0.
+in our second example, we looked at sine
+of 2x plus 1, so m was 2 and b was 1 and f
+was sine.
+but, this is sort of a general example
+that encompasses some of the specific
+example which we're already taking a look
+at.
+let's suppose that you already have an
+anti-derivative for f.
+yeah, let's suppose that i know how to
+anti-differentiate just f, and let's call
+that f, right?
+so, the derivative of f is f.
+now, how do i deal with the mx plus b
+part?
+well basically, we're trying to guess.
+what i'm trying to find some function that
+differentiates to this, and i've got a
+function that just differentiates to just
+f.
+so, let's see what happens if i
+differentiate f of mx plus b by using the
+chain rule.
+well, the derivative of f is f, evaluated
+the inside times the derivative of the
+inside, which is just m.
+now, i can fix this if i include a factor
+of 1 over m here.
+then, i get a factor of 1 over m here.
+and that's great because then this 1 over
+m, and this m cancel.
+so here, i've got a function whose
+derivative is f of mx plus b.
+in other words, the anti-derivative of f
+of mx plus b is this, right?
+it's f of mx plus b divided by m plus c.
+instead of always just relying on guessing
+and hoping that we can guess the correct
+anti-derivative, we're going to be
+learning more and more general techniques
+along these lines.
+the big one will go by the name
+substitution, or the chain rule in
+reverse.
+and as we develop more and more of these
+anti-differentiation techniques in our
+tool box, we'll be able to
+anti-differentiate a whole lot more
+functions without relying on just flashes
+of insight.

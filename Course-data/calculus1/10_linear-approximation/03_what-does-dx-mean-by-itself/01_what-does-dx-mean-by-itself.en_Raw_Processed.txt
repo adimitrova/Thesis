@@ -1,0 +1,140 @@
+music weve seen dfdx weve seen 
+ddx 
+so now, going to think 
+dx 
+this sort object is called a 
+differential 
+inaudible dx ddx, right 
+weve thought that little bit 
+already, right 
+an operator, this thing that 
+differentiation 
+this object is going to study 
+right 
+called a differential 
+that even mean 
+geometrically, differentials, so dy 
+dx, represented change in 
+linear approximation that i get using 
+tangent line 
+so here, ive got function that ive 
+graphed, y equals f x 
+heres a point, x, f x 
+ive got a tangent line a curve 
+there 
+heres change in x, im 
+calling dx, heres change in y, 
+im calling dy 
+if you think about, is 
+derivative 
+well, i mean derivative really is dy 
+dx, right, in sense, you know 
+if you take derivative multiply 
+much input changed by, i mean, 
+you dont actually get much output 
+changed you get an approximation to 
+much output changed 
+this dy here is used as, this dy is 
+change in linear approximation 
+okay, heres a statement in words 
+in words, dy is a change in 
+linearization, linear 
+approximation, tangent line 
+approximation, to this function that 
+youre thinking y, depending x 
+thats dy is 
+i emphasize that dys 
+better include a dx in there somewhere 
+different points in life, youll 
+develop hm, different ideas dx 
+dy really mean 
+so, in a calculus class, in this calculus 
+class, if you really want to, you 
+think dx dy infinitesimal 
+quantities, small quantities 
+difficult to make this sort 
+thinking entirely rigourous 
+thats certainly an okay way to think 
+if youre trying to get intuition 
+things representing 
+now, later in life, you take 
+course, say, a differential geometry 
+course, dx will given better 
+foundation 
+dx will revealed to a differential 
+form a covector 
+i mean, youll actual 
+interpretation dx time 
+being, you know, if you really want to, 
+you regard things 
+infinitesimal quantities 
+honestly, i wouldnt worry much 
+to actually think 
+things focus to compute 
+objects 
+basic trick is that if y is f x, 
+dy is derivative f dx, you 
+dont even need necessarily to 
+differentiate f in a lot cases 
+differential satisfies many 
+rules analogous rules 
+differentiation satisfies 
+so, example, d u v, u plus v 
+i say, is du plus dv 
+d u times v, is a product rule, is du 
+times v plus u dv, right 
+theres a quotient rule 
+i mean, this differential satisfied 
+lets say analogous rules 
+to derivatives 
+lets take a look an example 
+example maybe y is something here like 
+x squared and, in that case, whats dy 
+well, dy is derivative x times dx 
+yes, this relate change in x 
+change in y in terms linearizations 
+you dont even need necessarily to 
+write this way 
+you could if you wanted to write dx 
+squared think that there is power 
+rule a differential like usual 
+power rule, says that this is 
+x dx 
+so, in general, d x to n would 
+nx to n minus dx 
+we cook a complicated example 
+example, lets calculate d x sine 
+x 
+well, this is d a product i 
+compute that using product rule 
+differentials, right 
+that tell 
+well, will d first thing 
+times second thing plus first 
+thing times d second thing 
+now, instead writing dx times sin x, i 
+could write that sin x dx 
+whats d sin x 
+well, this is d a function 
+remember, i take d a 
+function 
+well, derivative times dx 
+so, this is x times derivative, 
+is cosine x times dx 
+now, if i like, i could factor dx 
+i could write this sin x plus x cos 
+x dx, now, i havent done anything 
+new here, right 
+i mean, i could differentiate x 
+sin x point is im writing 
+without ever, you know, taking derivative 
+im sort using rule to 
+compute differentials, right 
+like differential product rule 
+fact that differential a function 
+is derivative dx 
+im a little bit vague to 
+deal differentials this 
+point 
+going to seeing 
+differentials in coming weeks 

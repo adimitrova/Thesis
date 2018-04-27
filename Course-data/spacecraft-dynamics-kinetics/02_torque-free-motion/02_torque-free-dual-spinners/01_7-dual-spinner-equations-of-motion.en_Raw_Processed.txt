@@ -1,0 +1,195 @@
+we wrapped premotion, right 
+so thats a spacecraft tumbling 
+theres different ways to write 
+we predict angular velocities if axisymmetric analytically in a closed form 
+if axisymmetric general,there homogeneous 
+undamped duffing equations that we write,which is kind elegant, 
+that in current homework you will actually apply this different ways 
+moving to next is different ways to start, 
+a rigidbody spinning trying to stable, 
+cause that doesnt always work 
+a common design that moved us torquefree motion, 
+people looked natural equilibrias a one single solid spacecraft, 
+thats simplest thing you build, theres moving parts 
+limitations axis you to pretty much spin 
+axis max inertia if you wanna turn stable energy loss 
+going to look different systems 
+dualspinner is a pop used to a popular design geo satellites 
+still built 
+i think cassini is actually a dual spinner 
+this huge platform that spun a different 
+range lower platform helps stability well 
+so thats a classic result that still applies 
+gonna look also gravity gradients 
+thats way people build satellites exploit 
+differential gravity to stabilize spacecraft 
+so, passive weight 
+we dont active feedback sensing 
+i pointing, i going, i close this loop 
+that will in third part class we talk 
+nonlinear control feedback control developments 
+kind putting gonna a little bit theory control theory 
+you get basics basic that we need this class 
+im giving a whole class nonlinear control, 
+this is specifics you need, thisand this is we apply 
+specifically attitude control problem 
+right 
+so, dual spin gravity gradient, passive ways to stabilize a spacecraft 
+so lets look this 
+we write is im modeling spacecraft like this 
+this doesnt necessarily to an axisymmetric body 
+i drew a cylinder cause easy to draw 
+i is a coordinate frame b, thats a principle coordinate frame, 
+we know means, ive chosen an option 
+inertia tensor becomes a diagonal 
+right 
+so, you that im lining spin wheel 
+spin axis is lined one principal axis, 
+without loss in generality, i called first one 
+right 
+so, thats this thing is lined 
+so, this flywheel a speed, big omega, 
+thats speed relative to body 
+if you zero big omega, that means this body acts a single rigidbody 
+you know, brakes failed clamped 
+if spacecraft tumbles wheel tumbles, right 
+if you a nonzero omega, 
+that means wheel is moving so a way now, basically, two rigidbodies 
+looking flexing this point 
+a multibody system that actually solving this 
+so, lets start looking things 
+going to use, before, we use h dot equal to l a single rigidbody 
+going to h dot equal to l this twobody system 
+first thing we need is to get momentum 
+different ways to write this 
+is is inertia tensor spacecraft 
+iw is inertia tensor this flywheel, this is a full three three, right 
+but, since ive chosen a b frame is is a diagonal, 
+you see this flywheel is symmetric 
+so a unique inertia im calling that inertia, iw 
+along spin axis 
+theres two transverse inertias that equal 
+in b one, two, three frame also gonna an is diagonal matrix 
+b frame is principal frame spacecraft, 
+this wheel symmetry assumption 
+so, that, actually, you a combined sector 
+i is actually combined spacecraft plus wheel inertia tensor, 
+also gonna diagonal 
+a diagonal plus a diagonal gives you a diagonal 
+so, im calling i one, two, three 
+wheel inertia b one, spin axis, is going to iw scalar 
+convenience 
+now, thats inertia tensor, we want to write angular momentum 
+different ways you add contributions 
+one way is, you could say, ok, spacecraft is spinning, 
+you see, this is actually lined in cg 
+cg wheel, cga spacecraft, coincidence here 
+doesnt to 
+if coincident, 
+that part mass is like a bolt one meter removed, 
+you use parallel axis theorem, adjust inertia tensor spacecraft 
+thats you typically 
+so, without loss in generality we typically write this way 
+here, im showing you one way im saying, total inertia times omega, 
+thats really gonna inertia spacecraft times omega, 
+makes sense that omega is b relative to n 
+thats classic angular momentum youve seen 
+then, wheel momentum is gonna wheel inertia times omega w relative to 
+andand im gonna break that actually mathematics here 
+so we i is equal to is plus iw 
+if im saying now, 
+is times omega bn, thats momentum spacecraft 
+sorry, is times omega bn, iw, i need angular velocity w relative to n 
+w relative to n is simply gonna big omega times b one plus omega b relative to n 
+this is angular velocity wheel frame relative to body, alright 
+that omega defined relative to body frame 
+so, like in that exam problem you feet, 
+that second angled part one defined relative to first link, you know, 
+this is comes conveniently 
+so, that makes easy 
+so weve got this, 
+so this is really gonna expanded iw times omega bn plus iw times 
+this part, alright 
+this this combines to is plus iw times omega bn, 
+plus this part is really a three three that you 
+this in b frame, cause thats principal frame wheel, 
+angular velocity is gonna omega zero, zero, in b frame 
+if you use b frame components 
+so, you see this youre gonna get is 
+this inertia is iw times omega, 
+ones dont matter cause theyre multiplied times zero 
+so, end result, 
+this thing becomes iw, big omega, thats in axis 
+so, if you carry this out, you would get this zero, zero 
+thats thing b one hat times that 
+this is nothing inertia tensor times this 
+so, things added 
+different ways you get to it, alright 
+so, here im a little bit a direct way, 
+i kind this implicitly 
+ok, this is angular momentum if wheel locked, 
+im adding angular momentum wheel relative to body 
+different ways you approach 
+try different ways cause always give you same, 
+simple derivations 
+this is prime stuff a final exam 
+you know, i something you do, you able to 
+so, we h written out, 
+this tensor, im specifying particular frames this point 
+anyway, just, adds 
+so, we need h dot equal to l 
+gonna choose to differentiate this vector seen body frame 
+
+we know seen body frame, thethe i primes will zero 
+we to add omega crossed, there is momentum vector again, alright 
+thing is we a single rigidbody, 
+applying to this dualspinner 
+this part looks like rigidbody, is actually inertias two 
+rigidbodies, if one locked relative to other, gives you results 
+so, youd body frame derivative 
+omega, is thing inertial derivative omega, alright 
+cause omega bn, crossed products vanish 
+so, this gets you exactly parts plus omega cross this vector, 
+that gets you omega till i omega 
+so, this part is like a single rigidbody, 
+a if that if thats if thats, 
+if that wheel locks in, is a single rigidbody, alright 
+essentially 
+thats one way to look 
+this second part 
+people typically call this momentum wheel relative to body, 
+a little h, little a lowercase h 
+you see this often in literature, so im gonna use notation 
+so, iw a this is a little h 
+so, seen body frame, this wheel change speed, spin up, 
+spin 
+so, ill an h dot in b one, omega crossed hb 
+this vector, to equal to external torque 
+so, if you carry this out, you plug in omega omega one b one, 
+omega two b two, omega three b three, 
+you cross b one, you know to that, b one b ones cancel, 
+b two b ones give minus b three, b three, b one, gives you minus b two, 
+everything is moved to side 
+so, we have, like ill make a dot equal to this, thats like a single rigidbody 
+i dropped l this point saying, lets look a torquefree motion case, 
+rest gyroscopics also brought to righthand side 
+to wheel gyroscopics that come in 
+if you change wheel speed, you get effect along b one 
+if you spinning youre tumbling spacecraft 
+wheel is spinning youre tumbling, 
+theres cross coupling terms that appear in here 
+alight 
+thats 
+i derived equations a dualspinner 
+spin rate doesnt even to constant 
+so, lets look this 
+this is written in a complete 
+tensor notation, so this doesnt to a principal frame actually 
+this still works even without that assumption 
+if we assume a principle frame, we write this a diagonal 
+this part, omega till i omega, if this i is a diagonal, 
+simplifies like a single rigidbody 
+terms, we something in b one, two, 
+three direction, we rewrite this 
+this is gyroscopics a spinning accelerating wheel there 
+thats impacts a spacecraft 

@@ -1,0 +1,326 @@
+next topic is layer operations 
+so this work is titled, apparent layer 
+operations manipulation 
+deformable objects 
+problem we discussed discussed here is 
+that interaction deformable objects 
+is difficult 
+deformed object we may hear, this 
+kind 
+interrelated stacked closed also lobs, 
+so 
+typical approach is to round, 
+continuously, physical assimilation 
+user moves one vortex 
+rely physics 
+this is always physically possibly 
+this is kind a little bit 
+inflexible 
+you know, you penetrate pass an 
+object so 
+so always needs to physically 
+bodied 
+this inflexible in 
+situations modeling purposes 
+besides a possibility, 
+directory 
+control vertices one one 
+in this way you ever you want 
+however, very, very, tedious, 
+right 
+you many, many control 
+vertices 
+so we introduce here is one example 
+semanticlevel operations 
+semantics like, layers so 
+so if you look physical 
+configuration, heres want to sum 
+operations 
+operations in meaning 
+operation 
+user like changes order layers 
+this comment 
+however, computer to, point view, 
+this is a collection vortex 
+coordinates 
+so many, many, numerical values 
+so additionally asked to control 
+numerical valued directory 
+here we tried to allow user to 
+work this d model semanticlevel 
+specifically we want to, we introduce 
+here is layer a operations 
+d modeling, i think you know 
+three layer operations 
+so in d drawing systems you always 
+a layer ordering 
+so you say, go to front go to back 
+so 
+example in powerpoint you say you 
+say 
+go to back you will get this 
+result 
+then, go to front you will 
+get this result 
+so we want to get this kind operation 
+comments, 
+cloth to go front, front to 
+back so 
+so 
+so we specifically we introduced two new 
+techniques here 
+one is layer swap 
+so you click here system 
+changes layer ordering 
+is, you drag one piece, 
+
+you go up, down, depending 
+user control 
+so let show you a demonstration 
+so you a three dimensional cloth 
+placed floor, like this one 
+then, you deform 
+pulling, pushing, so 
+here this is a standard physics 
+based dragging 
+so always physically bodied 
+however, example, if you want to try 
+to change layer 
+ordering this part this part, 
+be, suddenly becomes tedious 
+you to move away 
+move here, comes back 
+this takes a lot steps 
+global configuration changes 
+so if you want to swap this blue 
+this green, almost impossible 
+here we propose is a single 
+click operation to 
+so if you want to swap this layer just, 
+just, click here system will 
+automatically swaps 
+so subtle internally 
+system a lot things 
+if you click here, swap, 
+there you will get this instantly 
+this operation very, 
+tedious, if 
+you use standard rigging operation 
+robotics space control 
+let show you a couple examples 
+so heres an example, so you green, 
+purple blue here 
+example if you 
+try to swap green purple blue 
+if you click here user want system to 
+swap green blue 
+if you, system naively, 
+there 
+a penetration intersection 
+between part one blue 
+so system automatically analyze 
+
+try to abort invalid 
+configurations 
+so if you click here instead putting 
+blue somewhere 
+system decided to bring green to 
+front to abort intersection 
+again, thing, so if you click 
+blue, 
+if you want to swap blue purple, if 
+you it, if purple is 
+top green, therell a intersection 
+here, right 
+so in, in order to prevent an 
+intersection, penetration user 
+clicks here, system push 
+purple one way to bottom 
+thats we here 
+if you click here, system 
+automatically 
+pushes purple one way back 
+here is a folded pocket handkerchief 
+if you click here you still do, you know, 
+outward penetration 
+system will automatically decide to move 
+top layer way to bottom 
+you will get this shape 
+if you click here direction a 
+spiral completely swaps 
+also if you this one example 
+you something like 
+this quickly, a successive 
+breaking, you will get 
+so this way changing way making 
+a 
+knot difficult due to 
+traditional approaches 
+
+this is complicated case, a 
+necktie 
+so we created this shape many, many 
+clicks here 
+operation applicable 
+a knot ropes 
+so if you click here you swap 
+layers 
+you quickly change 
+configuration a knot 
+here thing you 
+change whole direction a 
+twist you change configuration 
+a net, like this one 
+blankaudio 
+okay, so thats layers work 
+next operation i will show is layer 
+hardware dragging 
+so, in standard dragging, you know, a 
+dragged object always top existing 
+one 
+however, if you press shift key down, 
+
+dragging will automatically goes 
+colliding clothing 
+so combining shift shift down, 
+you go go so 
+so this is useful making a knot 
+here, so you go without shift 
+shift down, shift up, 
+shift down, shift 
+so in this way, you generate a 
+three dimensional knot two 
+dimensional dragging 
+okay 
+so thats a demonstration let 
+briefly describe algorithm behind 
+this 
+so layer swap 
+so, this is a layer swap 
+layer swap 
+suppose i use a click somewhere here 
+i use to try to swap yellow blue 
+in order to system will 
+actually a lot inside box 
+so first, system project, d 
+configuration onto screen space 
+analyze configuration, 
+then, 
+generate a structure list graph 
+list graph is, subregion represents a 
+layered 
+structure system maintains 
+adjacency graph the, regions 
+then, depending, starting this 
+current configuration 
+depending user input, system swaps 
+layers, in this d representation 
+layer is a list graph representation 
+that, system takes this two 
+dimensional 
+input configuration, 
+automatically synthesize it, a d shape 
+offer a physical acquisition to 
+get final, solid shape 
+so thats we 
+first step is project, projection, 
+analysis 
+so projection is d, to d vector 
+representation 
+similar technique presented 
+eisemann is 
+getting to 
+twodimensional vector, 
+d representation, we construct a list 
+graph presentation 
+this technique inspired a local 
+layering technique proposed in here 
+so in this one call, represents local 
+layering structure also adjacency 
+graph 
+okay, so given this list graph you know, 
+d layer structure, system updates 
+list graph 
+so this, this is configuration 
+gets a new configuration 
+so actually is to change 
+ordering this local layers 
+however, important thing is to, to 
+avoid invalid configurations 
+so heres an example invalid 
+configuration 
+so type one, invalid configuration is like 
+this one 
+so you see two subregions here 
+here 
+in top region this 
+region here, blue is 
+top purple, here purple is 
+top blue 
+so if this kind configuration happens 
+there 
+will an intersection penetration 
+here means 
+undefinable, so this is type error 
+type 
+one invalid configuration, so another 
+invalid configuration is like this 
+so this is so obvious suppose this 
+is folded, you know, this is dark blue 
+light blue is folded 
+connected, 
+then, connected layer 
+adjacent 
+otherwise, you know, there will a 
+penetration, so thats a problem 
+so we is to consider possible 
+permutations layer orders 
+in region tries to find 
+valid configuration 
+to this we actually kind 
+an exhaustive search 
+combinations in this space 
+gets updated 
+list graph, 
+we is reconstruct d geometry 
+
+this is two step operation 
+so first operation is to get geometric 
+reconstruction, so there is gravity, 
+theres 
+physics, reconstruct 
+threedimensional 
+layered structure, tied 
+to computer depths d layer 
+that, we apply physics you 
+know, apply gravity to get final 
+deducted shape 
+so, in summary, we introduced layer 
+operations cloth ropes 
+specifically we need to today 
+a swap single group change layer 
+ordering 
+change layer dragging, you go 
+go using a shift key 
+algorithm we 
+is projection d representation called 
+list graph 
+so project order synthesize go 
+back to d 
+to learn more, original paper 
+published apparent layer operations 
+
+manipulation deformable objects, d 
+layer 
+operations introduced local 
+layering in 
+so work is inspired this work 
+also if you want to d to 
+d projection, i recommend you 
+take a look this visibility algorithm 
+
+converting d meshes editable d 
+vector graphics 
+so this one enables to combine d 
+graphics to d vector installations 
+thank you 

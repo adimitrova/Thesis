@@ -1,0 +1,173 @@
+so, in last lecture, we investigated 
+this innocentlooking model system, 
+a ball bouncing a surface 
+we saw something rather strange 
+there, that, that the, ball 
+ended bouncing an infinite number 
+times in finite time 
+this is part another potential 
+complication that comes hyberdizing 
+model, namely, that you 
+kinds infinitely many swicthes 
+this is known zeno phenomenon 
+in todays lecture, going to 
+dig a little deeper the, zeno 
+phenomenon see we 
+if you understand 
+fundamentally, i would like to 
+point is that zeno is bad, if 
+youre actually running something thats 
+asked to an infinite amount things 
+in finite time, crashes 
+if youre running this computer, 
+simulations crash 
+another thing is that we know that there 
+is something inaccurate wrong 
+model ball, if i drop a ball, 
+doesnt bounce an infinite number 
+times, 
+bounces times stops 
+bouncing 
+so, theres something wrong 
+model 
+thats another warning flag 
+third warning flag is that we 
+dont actually know system 
+beyond the, zeno point, meaning 
+time to we an infinite 
+number switches 
+so, since we cant really define 
+system is beyond that point, things 
+like asymptotic stability is meaningless 
+time is allowed to really 
+progress to infinity 
+so, first all, is called 
+zeno phenomenon well, there a greek 
+philosopher, zeno, zeno elea spent 
+a lot time thinking movement 
+dynamic world basically point 
+that perception world is 
+wrong clearly there 
+problems there instance, heres 
+one famous paradoxes 
+we a hare racing a tortoise 
+tortoise is a little slower so 
+tortoise gets a head start 
+in fact, tortoise starts there 
+then, race is 
+point, hare reaches 
+point tortoise started 
+that point, right, tortoise 
+moved, much moved a little 
+bit 
+this is far tortoise moved 
+okay race goes 
+point, hare catches to 
+tortoise last time now, 
+tortoise moved a little bit more, 
+much, this repeats 
+in fact, here is the, paradox 
+paradox is that hare never catches 
+tortoise every time 
+reaches step that tortoise 
+last time, tortoise would moved 
+a tiny bit 
+mathematically, 
+this is nothing 
+we know convergent series 
+we know that even though there 
+infinitely many small intervals 
+sum will converge there 
+is indeed a point hare will 
+catch tortoise 
+problem us is that if i model 
+this a hybrid system, i have, again, 
+infinitely many switches in finite time 
+so, this is this kind infinite 
+amount switches is called zeno 
+phenomenon traced back 
+to zenos many paradoxes motion 
+now, lets look another example, one 
+thats a hare a tortoise one 
+thats rather innocentlooking 
+lets say that xdot is negative, x 
+positive x 
+okay, so we this 
+if i write this a this is a hybrid 
+automoton, so lets see whats going 
+there 
+an if i draw this little plot here, 
+right, here is here is time heres x 
+lets say that x starts there 
+well, starts positive so xdot is 
+going to , so going to decay 
+a slope 
+becomes tiny bit negative, oh, 
+going to switch back to plus, 
+goes in a second, 
+becomes a tiny bit positive again, 
+switches and, in fact, really 
+whats happening is that hits , 
+starts switching like crazy here 
+in practice, would chatter in 
+theory, starts switching like crazy 
+here this is actually good 
+
+so, this is really a superzeno 
+phenomenon we 
+infinitely many switches in finite time, 
+we single time instance, 
+is system actually hits 
+x 
+so, that reason, we typically talk 
+two different kinds zeno types 
+to, so type zeno, is i 
+call superzeno says that you get 
+infinitely many switches in a single time 
+instant 
+in this case, again, i want to reiterate 
+this, ball came here then, 
+ball, this system came here 
+started switching infinitely 
+many times right there 
+now, type is zeno type , 
+meaning, you infinitely many 
+switches you that a time 
+interval bouncing ball is really 
+an example that 
+so 
+there good news bad news in 
+rather messy switching 
+situation 
+bad news is that zeno is a problem 
+weve seen 
+however, type is arguably 
+common type is detectable, 
+meaning, is easy to see if youre 
+going to end in a situation you 
+going to switch infinitely many times 
+a single time instant 
+good news type is 
+that we actually deal 
+you know what, 
+this system go 
+to zero stay 
+clear that thats we want 
+system to and, in fact, you 
+that you will see in next lecture 
+now, last piece bad news though is 
+that type , 
+bouncing ball type, that is hard, 
+hard to deal a bouncing ball 
+hard to detect it, hard, 
+hard to remedy 
+this is again, a situation you 
+really need to test system see 
+i get something like this you 
+start seeing an accumulation switch 
+times 
+if you do, you need to go back 
+revisit model 
+in next lecture, we will see 
+to indeed overcome the, problems that 
+a type zeno system will will cause us 

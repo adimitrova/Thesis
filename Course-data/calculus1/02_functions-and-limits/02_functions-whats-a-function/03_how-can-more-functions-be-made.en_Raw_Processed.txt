@@ -1,0 +1,94 @@
+functions going to main star 
+course 
+so we building in sort a 
+repertoire library functions that 
+we might interested in studying 
+heres first function in library 
+fx x, 
+identity function 
+whatever you plug in, this function 
+outputs that thing 
+heres another function, 
+a constant function 
+you pick number c, 
+c stands constant 
+alright 
+you define this function, 
+fx c 
+whatever you plugin x, f ignores 
+that outputs original value, 
+c 
+heres a function, fx x 
+if youre thinking stuff like 
+that, stuff like this pick two 
+numbers, a b, you define 
+a function like this, fx ax b 
+you think fifth fx x 
+nth power, fx xn fixed 
+value n 
+polynomials, like this 
+complicated looking polynomial, fx 
+x x x 
+if youre thinking polynomials, you 
+might want to think roots, 
+fx equals, say square root x 
+you might remember absolute value 
+function fx equals absolute value 
+x 
+you might experience trig 
+functions, 
+like sines, cosines, tangents, 
+transcendental functions 
+like logarithms exponentials 
+so weve got small library 
+functions, 
+identity function, constant 
+functions, polynomials, trig 
+functions, 
+i want functions 
+i, i want way to able to take two 
+functions produce a new function 
+
+okay 
+so in this setup ive got a conveyor belt 
+ive got two functions, 
+a function here a function here 
+lets pick functions 
+
+maybe first function ill call f 
+fx would x 
+so ill call this function f maybe 
+second function ill call g g 
+will take input square it, so 
+gx will x 
+so ill label this function, g 
+here, ive got a number i 
+going to run that number 
+first function whatever comes 
+first function, im going to plug in 
+to second function to see comes 
+
+so lets take that number , lets start 
+moving conveyor belt 
+going to go function f, 
+f is to , is 
+so weve got a right there 
+so went function came 
+a 
+im going to take output to f 
+put in to input g 
+so g, well going to 
+thatll 
+so here now, coming function 
+g, is number 
+i could written this in a little 
+bit a little bit a shorthand way 
+i could written gf, 
+right, f is g is 
+so ive got this sort conveyor 
+belt metaphor going in head, i 
+could following trick 
+i take two functions 
+i take output to first 
+function plug in to input 
+second function 

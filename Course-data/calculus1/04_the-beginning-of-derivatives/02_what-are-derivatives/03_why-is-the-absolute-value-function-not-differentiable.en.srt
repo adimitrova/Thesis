@@ -1,0 +1,149 @@
+1
+00:00:00,012 --> 00:00:04,460
+[MUSIC]. 
+When I say a function is differentiable, 
+
+2
+00:00:04,460 --> 00:00:11,271
+what I really mean is that when I zoom 
+in, the function looks like a straight 
+
+3
+00:00:11,271 --> 00:00:15,332
+line. 
+This is the graph of the absolute value 
+
+4
+00:00:15,332 --> 00:00:18,713
+function. 
+Let's zoom in on the origin. 
+
+5
+00:00:20,369 --> 00:00:27,009
+No matter how much I zoom in, this graph 
+doesn't look like a straight line. 
+
+6
+00:00:27,009 --> 00:00:33,549
+Consequently, the absolute value function 
+is not differentiable at 0. 
+
+7
+00:00:33,549 --> 00:00:39,242
+We can also see this from the limit 
+definition of derivative. 
+
+8
+00:00:39,242 --> 00:00:44,187
+So we just going to name the absolute 
+value function f, for the time being. 
+
+9
+00:00:44,187 --> 00:00:48,401
+What I am trying to calculate is the 
+derivative of f at 0. 
+
+10
+00:00:48,401 --> 00:00:52,135
+I want to know is this function 
+differentiable at 0. 
+
+11
+00:00:52,135 --> 00:00:55,742
+By the definition the derivative is the 
+limit. 
+
+12
+00:00:55,742 --> 00:01:00,492
+As h approaches 0, of the function, at |0 
++ h| - |0| / h. 
+
+13
+00:01:00,492 --> 00:01:06,467
+Now I can simplify that a bit. 
+The absolute value of 0 + h, is just the 
+
+14
+00:01:06,467 --> 00:01:12,717
+absolute value of h, and the absolute 
+value of 0, so I don't even need to 
+
+15
+00:01:12,717 --> 00:01:15,538
+subtract 0. 
+And I"m dividing by h. 
+
+16
+00:01:15,538 --> 00:01:20,587
+Now what's the limit as it approaches 0 
+of absolute value h/h. 
+
+17
+00:01:20,587 --> 00:01:26,816
+That limit doesn't exist and consequently 
+this function's not differential at zero. 
+
+18
+00:01:26,816 --> 00:01:32,243
+If you wonder why that limit doesn't 
+exist, well think back to our 2 sided 1 
+
+19
+00:01:32,243 --> 00:01:38,862
+sided limit discussion from before. 
+What's the limit as h approaches 0 from 
+
+20
+00:01:38,862 --> 00:01:46,267
+the right-hand side of |h| / h? It's 1. 
+Well what's the limit as h approaches 0 
+
+21
+00:01:46,267 --> 00:01:50,417
+from the left-hand side of |h| / h? It's 
+-1. 
+
+22
+00:01:50,417 --> 00:01:56,857
+And 1 is not equal to -1. 
+Because the one-sided limits disagree The 
+
+23
+00:01:56,857 --> 00:02:02,012
+two sided limit doesn't exist. 
+And this limit calculating the derivative 
+
+24
+00:02:02,012 --> 00:02:05,782
+means that this function is not 
+differentiable at 0. 
+
+25
+00:02:05,782 --> 00:02:11,017
+Of course, that raises the question why 
+should you care about differentiable 
+
+26
+00:02:11,017 --> 00:02:15,292
+functions at all? 
+Here's some terrible looking function. 
+
+27
+00:02:15,292 --> 00:02:21,603
+But it's differentiable. 
+So if I zoom in on some point, the thing 
+
+28
+00:02:21,603 --> 00:02:27,839
+looks like a straight line. 
+Calculus is all about replacing the 
+
+29
+00:02:27,839 --> 00:02:35,693
+curved objects that we can't understand 
+with straight lines, which we have some 
+
+30
+00:02:35,693 --> 00:02:37,884
+hope of understanding. 
+[MUSIC] 

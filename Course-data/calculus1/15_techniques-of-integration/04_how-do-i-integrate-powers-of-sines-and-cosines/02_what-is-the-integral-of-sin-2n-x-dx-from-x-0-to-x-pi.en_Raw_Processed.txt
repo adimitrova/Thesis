@@ -1,0 +1,178 @@
+we already know to handle 
+integration problems integrand 
+is a powers sines cosines 
+example, i antidifferentiate 
+sine to odd power 
+
+trading in one sins 
+cosines 
+lets make this really concrete 
+instead talking an odd power 
+well lets make 
+i antidifferentiate sin to th 
+power 
+yeah, i rewrite this problem sin 
+x times sin squared x to th 
+power, sin square to th 
+power gives copies sin times 
+sin gives copies sin, 
+we trade sin squared cos 
+signs right, sin squared is minus cos 
+sign squared to th power 
+so if i this antidifferentiation 
+problem i need to is this 
+antidifferentiation problem 
+i that a substitution 
+so make substitution u equals cosine 
+x in that case d u is minus sign x 
+dx 
+maybe youre complaining you dont 
+see a minus sign 
+youll see sin, ill 
+put a pair cancelling minus sins 
+there, i see a minus sin next dx so 
+we got a du rest i write in 
+terms u 
+specifically, this becomes negative, 
+n is derivative minus u squared to 
+power du, is whats left 
+this antidifferentiation problem that i 
+is a little bit annoying 
+cause i guess i gotta expand this thing 
+to find an antiderivative this, 
+i 
+if instead id an even power 
+sine 
+well, maybe ill antidifferentiate sine 
+to fouth power 
+right 
+so this is an odd power an even 
+power 
+thats harder, i cant trade in 
+sins cosines i need one 
+left to make substitution work 
+instead, ill use an identity, half 
+angle formula 
+lets replace sined squared x 
+minus cosine x 
+lets replace cosign squared 
+x plus cosign x 
+help 
+well i rewrite this integral 
+integral sin squared, squared 
+i use this half angle 
+identity 
+this is integral 
+sin squared 
+sin squared is minus cos x 
+right 
+equal 
+still to square that, dx 
+now, i expand 
+so, i get this is 
+integrating 
+well, cos x term, squared is 
+cosigned squared x 
+theres cross term 
+half times minus cosign x 
+theres 
+so i end getting minus half 
+cosigned x 
+theres one half term squared 
+plus a quarter, so i to 
+this integration problem 
+i split that integrals 
+so this gives integral cos sign 
+squared x dx minus integral 
+cos sign x dx plus integral 
+th dx 
+now, second third integration 
+problem i do, im going to copy 
+this one 
+integral cos squared x dx 
+this, here, well i could this 
+making a substitution 
+u equals x, say 
+ill get that this is sine x 
+divided 
+if i integrate a quarter, i get th 
+x 
+that first one 
+i integrate cosine squared 
+so, to handle this, i repeat 
+trick half angle identity 
+im looking integrating cosign 
+squared x 
+so ill replace x x ill turn 
+this a x 
+so i use this identity 
+that go 
+well i get instead this integral 
+plus cosine x instead 
+ill copy 
+things 
+sin x plus a quarter x 
+i put together 
+so i want to differentiate th 
+i get th x 
+i want to, i differentiate 
+cos x , i get sin x 
+ill include rest 
+so, ill subtract sin x 
+ill add a quarter x ill add 
+constant 
+i could combine one quarter x 
+x, so i could right this x 
+plus sine x minus sine x 
+plus c 
+i say that in cases you 
+get away a bit less work 
+so i want to calculate integral 
+zero to pi sine to fourth ill 
+start way, right im going 
+to integrate zero to pi ill 
+write this sine squared squared 
+so i see half angle 
+formula is going to help 
+alright, ill use half angle 
+formula integral zero to pi 
+minus cosinex squared, 
+i want to 
+well, ill expand that again, so this 
+is integral to pi fourth 
+minus cross term is one half cosign 
+x plus cosign times squared 
+x 
+theres a little trick 
+im integrating to pi cosign 
+right im integrating cosign an 
+entire period 
+that ends 
+so i throw this whole term away 
+i keep going 
+i also use half angle formula 
+here 
+so this is integral to pi 
+well ive still got plus, 
+this become 
+half angle formula, this is 
+plus 
+instead x 
+cosine x , i would again, 
+if i integrate cosine x, x going 
+to pi, thats integrating cosine ove 
+complete periods that ends cancelling 
+so i throw that term away, 
+im really integrating is a 
+quarter plus an 
+well thats ths, im integrating 
+an interval life pi, so this 
+definite integral is ths pi 
+this turn to so bad 
+see im getting an answer ths pi, 
+thats really point right 
+cool thing setting this a 
+definite integral is really easy 
+is to calculation since i 
+throw away terms along way that 
+i know would integrate to zero 

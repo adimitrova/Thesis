@@ -1,0 +1,168 @@
+[music] here, i've got an orange.
+i'd like to measure say, the radius of the
+orange, thinking of this orange as a
+perfect sphere.
+one way to do this would be to measure,
+say, the circumference of the orange
+around its equator.
+so here if i measure that it looks like
+it's about 24 centimeters.
+so the circumference of the orange is 24
+centimeters.
+what does that tell me about, say the
+radius of the orange?
+well that circumference will be 2 pi times
+the radius of the orange.
+so if i divide both sides by 2 pi.
+i get that the radius of the orange is
+about 12 over pi centimeters.
+how much rind is there on this orange?
+that could be formulated as a linear
+approximation problem.
+well let's fit this up./g so, i just
+calculated the orange radius to be about
+12 over pi centimeters.
+i want to figure out how thick the rind
+is.
+let me.
+let me peel off a bit of the orange here.
+just want to measure how thick this is
+with, say my little ruler here and yeah,
+maybe three millimeters.
+so, point three centimeters will be the
+rind thickness.
+now how does knowing the rind thickness
+going to help me to calculate, at least
+approximate, the volume of the rind in
+this whole orange.
+well i know the volume of a sphere, which
+by modeling the orange to be, is 4 3rds pi
+r q.
+and the rind volume, is at least
+approximately how much the volume changes
+when i take this formula, and replace r
+with r minus h.
+right?
+when i take that sphere and i make it just
+a little bit smaller.
+that change in volume is the volume of the
+rind.
+and to understand how wiggling the input
+effects the output, i'm going to use the
+derivative.
+the formula that i want to be
+differentiating here is this volume of a
+sphere of radius r.
+which is 4 thirds pi r cubed [noise]and if
+i differentiate this with respect to r.
+the r cubed differentiates to 3r squared.
+and the 3 in the denominator here will
+cancel this 3 by the power rule.
+so the derivative will be 4 pi r squared.
+now what i'm trying to approximate is the
+rind volume which is really the difference
+between a sphere of radius r and a
+slightly smaller sphere where i've shrunk
+down just past the rind, right.
+that difference will be the volume of the
+rind.
+and approximately this h times the
+derivitive of v at r.
+right, because this is asking how does the
+output change when the input goes from r
+minus h to r.
+and it's approximately the input change
+times the derivative.
+now in this case what do i know?
+the orange's radius is 12 over pi, so i'll
+use that for r.
+and the rind's thickness is point three
+centimeters so i'm going to use that for
+h.
+so this is point three centimeters times 4
+pi, times this radius, which is 12 over pi
+centimeters squared.
+so this is cubic centimeters.
+well that's good because i'm trying to
+calculate a volume.
+and i'll just keep calculating here.
+so it's point 3 times 4 pi times 144 over
+pi squared.
+cubic centimeters.
+and 4 times 144 is 576 times .3, the pi
+divided the pi squared is going to be a pi
+in the denominator.
+so i've got .3 times 576 over pi cubic
+centimeters.
+that's about 55 cubic centimeters.
+so the volume of the rind is approximately
+55 cubic centimeters.
+now admittedly i could have calculated the
+volume of the rind just by calculating the
+volume of the whole thing.
+calculating the volume of the whole thing
+with the radius reduced by h, and taking a
+difference.
+but the neat thing here is that you can
+approximate that quantity by using
+calculus, right?
+by thinking about this linear
+approximation business.
+i also want to see now how close the
+linear approximation was.
+alright, so i've taken my orange and
+peeled off all the rind, and i've taken
+the rind and smooched it down into this
+ball, and i'll try to calculate the volume
+now of this rind ball.
+i want to compute the volume of a rind,
+and i made that rind ball here, let me let
+me compute the circumference of this rind
+ball.
+that's about 15 centimeters.
+so the circumference of my ball of rind is
+about 15 centimeters, that means my rind
+ball has a radius.
+15 over 2 pi centimeters.
+and here, assuming my rind ball is a
+perfect sphere.
+this would be the volume of the rind ball.
+but in here i gotta put the radius, which
+is 15 over.
+2 pie.
+so, 4 3rds pie the radius cubed, and
+that's about 57 cubic centimeters.
+so, yeah, i mean, i actually took all the
+rind off the orange and the value that we
+got is pretty close to what the linear
+approximation told us the volume of rind
+should be.
+this perspective sheds some light on what
+might otherwise be seen as just some
+random coincidence.
+now what you notice is that the volume of
+a sphere which is 4 3rds pi r cubed and
+the surface area of a sphere which is 4 pi
+r squared.
+these two formulas are related right.
+if i differentiate this volume formula
+with respect to r, i get the surface area.
+formula.
+again we're seeing that calculus isn't
+really about solving specific problems.
+i don't care about the volume of the rind
+of this orange.
+right?
+if that was what calculus was good for,
+who would care?
+right.
+what calculus is really good at is
+providing a general framework and with
+that general framework we can begin to see
+the patterns between different concepts.
+like this fact, the surface area of a
+sphere is the derivative of the volume of
+a sphere with respect to the radius.
+that's not really a coincidence, right?
+calculus is providing an explanation for
+that supposed coincidence.

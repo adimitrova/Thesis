@@ -1,0 +1,277 @@
+here's another timeless classic, another
+optimization problem that just comes up in
+all the calculus textbooks.
+goes like this: you've got some big object
+and you want to move that big object
+around a corner.
+the question is for some given corner, how
+big of a object can you navigate around
+that corner.
+this is an example of the so called piano
+moving problem.
+a piano is way to complicated of an object
+to really understand in this course right,
+it's just got a way to much geometry going
+on there.
+so going to consider a simpler example.
+so here's our diagram of a corner and i
+mentioned that i want to move this red
+stick around this corner without it
+getting stuck.
+maybe it doesn't look like it but this
+problem can be set up as an optimization
+problem and we can solve it.
+it's an optimization problem, because i'm
+asking to know the length of the longest
+stick, that i can navigate around this
+corner.
+we have to think about where that stick
+can get stuck.
+well the stick is going to get stuck when
+it's in a position like this.
+when it's touching these two walls and
+pressed up against this corner.
+so, what i actually have to think about is
+what's the shortest length of stick that
+simultaneously touches this wall, this
+wall and this corner.
+i think it's a little bit funny that in
+order to solve this problem, we end up
+minimizing something.
+we actually want to figure out the longest
+length, the maximum length of a stick that
+can be navigated around that corner.
+but to answer that problem, we end up
+solving a minimization problem.
+well anyhow, let's proceed in our usual
+way.
+i'm going to draw a picture and label
+everything.
+so, here i have drawn this picture and i
+have labelled every thing.
+the width of this hallway is a, the width
+of this hallway is b, the length of this
+stick is l, and makes this angle theta
+with this bottom wall.
+now we gotta figure out what it is that we
+are trying to optimize.
+what's the quantity that we are trying to
+minimize?
+what's the goal?
+so my goal is to minimize the length of
+this stick, right?
+i want to know the shortest length that
+touches these two walls and this corner,
+and that'll constrain the largest stick
+that'll fit around this corner.
+now, my hallways have fixed lengths, and
+i'd like to express the length of this
+stick in terms of this angle theta.
+so i can break up the stick into 2 pieces.
+there's a piece that goes from this wall
+to the corner and a piece from this corner
+to the other wall.
+so this piece here, well that's really the
+hypotenuse of a right triangle, whose
+opposite side to this angle theta has
+length a.
+and that means this hypotenuse has length
+a times co-secant theta.
+similarly here i got a right triangle and
+i have got this side length here is b so,
+the hypotenuse has length b times secant
+theta and the stick is just the sum of
+these two lengths so that gives me a
+formula for l in terms of theta.
+l is a cosecant theta plus b secant theta.
+what's the constraint in this problem?
+yeah i only need to think about theta
+being between 0 and pi over 2 in order to
+touch these two walls and the corner.
+so now we've got a function, and it's
+function of a single variable so we can
+apply calculus.
+so, i'm going to differentiate this
+function, right, the derivative of l with
+respect to theta.
+well what's the derivative of cosecant?
+that's minus cosecant theta cotangent
+theta.
+and what's the derivative of secant?
+well that's secant theta tangent theta.
+so that's the derivative of l minus a
+cosecant theta cotangent theta plus b
+secant theta tangent theta.
+with the derivative in hand i can now try
+to find the critical points for this
+function.
+now since this function l is
+differentiable on the domain that we're
+considering, i don't have to worry about
+places where l fails to be differentiable
+when i'm looking for critical points.
+i only need to find points where the
+derivative is equal to zero.
+so for which values of theta does this
+thing vanish?
+well, let's write this as an equation
+equal to 0, and let's add a cosecant theta
+contangent theta to both sides.
+so then i've got b secant theta tangent
+theta is equal to a cosecant theta
+cotangent theta.
+i, i will divide both sides by co-secant
+theta, cotangent theta and i will divide
+both sides by b so that i have got secant
+theta, tangent theta divided by cosecant
+theta, cotangent theta is equal to a over
+b.
+now what do i notice here?
+well dividing by cotangent is as good as
+multiplying by tangent.
+and secant and co-secant is actually
+tangent again.
+so this is in fact tangent cubed.
+so i've got tangent cubed theta.
+is equal to a over b.
+if i take a cubed route now, i get that
+tangent theta is equal to the cube root of
+a over b.
+in over words, theta is arc tangent the
+cube root of a over b.
+so now i know what theta is, but i don't
+care about theta.
+what i really care about is l.
+what's the length?
+so let's evaluate l of theta at the
+critical point.
+now, where's the critical point?
+it's where tangent of theta is equal to
+the cube root of a over b.
+i can build a right triangle with an angle
+whose tangent is the cube root of a over
+b.
+i do that as follows.
+i make this length 1.
+and this length the cube root of a over b
+and that makes the tangent of theta which
+is this divided by this equal to this
+right and this is 1 in the denominator.
+that is the right triangle which means i
+can compute the length of hypotenuse
+right.
+the length of hypotenuse is a square root
+of the sum of these two lengths squared
+and that's what i had written.
+and here.
+okay, so i've got a right triangle.
+i've got an angle whose tangent is theta
+and i'm trying to calculate l of theta.
+and if you remember back l was defined in
+terms of cosecant and secant.
+and i can compute cosecant and secant for
+this angle theta whose tangent is this
+quantity by reading off the cosecant and
+secant from this triangle.
+so the co-secant remember is a one over
+sine which means it's hypotenuse divided
+by the opposite side length and that's
+what i got here, length by hypotenuse
+divided by length of opposite side and
+secant, remember is one over cosine so
+that means it's the side length by
+hypotenuse divided by this length, which
+is just one.
+now once i know cosecant and secant in
+terms of this quantity here, i can then
+evaluate l at that quantity.
+so here we go, this is what i get when i
+plug in these quantities for coseekit, and
+seekit.
+get.
+now this looks terrible, right?
+well, i can simplify this a little bit.
+what do you notice here?
+i've got a dividing by the cubert of b in
+the denominator, which is as good as
+putting a b to the thirds power up here.
+and here i'm going to separate out this b
+to b a b to the two thirds times b to the
+one third and move that inside the square
+root.
+the upshot is that this thing is in fact
+the same as this thing here.
+and now this begins to be a little bit
+more symmetric, right?
+i took the a and the cube root of a and
+that gave me the a to the 2 3rds and by
+putting a b to the 2 3rds inside here, i
+made this look a lot, a lot nicer.
+okay.
+now i've got a common factor of the square
+root of b to the 2 3rds plus a to the 2
+3rds here and i can collect that out.
+so now i've got a to the 2 3rds plus b to
+the 2 3rds times the square root of b to
+the 2 3rds plus a to the 2 3rds.
+now this is the same thing, here.
+it's this thing times the square root that
+thing.
+and another way of saying that is just
+this quantity to the 3/2 power, right?
+this is this quantity to the first power,
+times the 1/2 power, and that gives me the
+3/2 power, here.
+so, at the critical point, l of theta is
+equal to this quantity.
+now with a bit more work, we can show that
+this quantity is in fact the minimum value
+of l.
+we can summarize our answer.
+so given a hallway of width a meeting a
+hallway of width b at some corner, what
+we've shown is that a stick of length at
+most, a to the two thirds plus b to the
+two thirds, that quantity to the three
+halves power can be navigated around that
+corner.
+and we can see this playing out in action.
+i made a model that you can download well
+here is an example.
+i've got a hallway of width 64
+millimeters, that's a pretty small
+hallway, right?
+and i've got another hallway here, 27
+millimeters.
+and the calculation that we've done tells
+us that a stick of length 125 millimeters
+will just be able to turnaround, this
+hallway.
+so let's see.
+here's the stick and i start the stick
+moving down the hallway, right?
+and i start trying to rotate it around and
+eventually i'm going to bump up against
+the corner , but i'll just be able to make
+it around the corner and then i'll be able
+to move it out of the hallway.
+perhaps you're wondering where those
+numbers came from.
+well here's where i got these numbers
+from, right?
+64 and 27, these are the widths of my
+hallways and this is the formula that
+tells us the largest stick that can pass
+through a hallway of these two widths.
+now i chose 64 and 27 for, maybe two
+different reasons.
+one thing is that these are both perfect
+cubes.
+so, 64 to the one third power is 4 and 27
+to the one third power is 3.
+the other thing that's nice about these
+numbers is that 4 squared plus 3 squared
+is 5 squared, right?
+these are pythagorean triple.
+and 5 squared to the 1/2 is just 5.
+so it's 5 cubed which is 125.

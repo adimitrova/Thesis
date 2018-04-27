@@ -1,0 +1,602 @@
+1
+00:00:00,283 --> 00:00:07,174
+[MUSIC] Limits are probably the most 
+important concept in this course. 
+
+2
+00:00:07,174 --> 00:00:13,121
+So we should really have a definition of 
+what we mean by limit. 
+
+3
+00:00:13,121 --> 00:00:19,918
+Now here is what we mean by limits. 
+To say that the limit of f of x as x 
+
+4
+00:00:19,918 --> 00:00:27,471
+approaches a is equal to L means that f 
+of x can be as close to L as desired by 
+
+5
+00:00:27,471 --> 00:00:32,986
+making x close enough to a. 
+There is a tons of subtlety to this 
+
+6
+00:00:32,986 --> 00:00:36,050
+definition so it's worth to look at an 
+example. 
+
+7
+00:00:36,050 --> 00:00:42,038
+So let's take a look at this function. 
+This is the function that takes an input 
+
+8
+00:00:42,038 --> 00:00:45,070
+x and spits out x^second minus one 
+divided by by x minus one. 
+
+9
+00:00:45,070 --> 00:00:49,030
+So let's try plugging in number three 
+into this function. 
+
+10
+00:00:49,030 --> 00:00:54,033
+So I plug in number three into this 
+function and I have to just compute, 
+
+11
+00:00:54,033 --> 00:00:55,840
+right? 
+Three squared minus one over three minus 
+
+12
+00:00:55,840 --> 00:01:02,858
+one well, that's three squared is nine 
+minus one is eight three minus one is two 
+
+13
+00:01:02,858 --> 00:01:08,000
+and nine divided by two is four And sure 
+enough, out of this function comes the 
+
+14
+00:01:08,000 --> 00:01:13,490
+number four Let's look at that example 
+again but with a little bit more detail. 
+
+15
+00:01:13,490 --> 00:01:16,432
+this is actually a pretty complicated 
+function. 
+
+16
+00:01:16,432 --> 00:01:18,726
+Alright? 
+But I can open up the function. 
+
+17
+00:01:18,726 --> 00:01:21,374
+Alright. 
+And take a look at how the functions 
+
+18
+00:01:21,374 --> 00:01:25,670
+actually doing its calculations. 
+You can think of this function as having 
+
+19
+00:01:25,670 --> 00:01:27,435
+three different steps. 
+Alright. 
+
+20
+00:01:27,435 --> 00:01:31,907
+One of the steps squares its input and 
+subtracts one, and so I calculate the 
+
+21
+00:01:31,907 --> 00:01:34,908
+numerator. 
+Another step just subtracts one from its 
+
+22
+00:01:34,908 --> 00:01:37,615
+input. 
+The outputs of those two steps then get 
+
+23
+00:01:37,615 --> 00:01:41,498
+plugged into the division. 
+And that's how I get the output of this 
+
+24
+00:01:41,498 --> 00:01:45,077
+big complicated function. 
+Now, something like x^two - one, 
+
+25
+00:01:45,077 --> 00:01:49,185
+you could also think of that as having 
+some, you know separate steps as well. 
+
+26
+00:01:49,185 --> 00:01:51,131
+But this is good for right now. 
+Okay. 
+
+27
+00:01:51,131 --> 00:01:54,644
+Now let's see what happens. 
+I take the number three and I plug it 
+
+28
+00:01:54,644 --> 00:01:56,050
+into the function. 
+Alright? 
+
+29
+00:01:56,050 --> 00:02:01,121
+Now I'm going to be calculating the 
+numerator and the denominator separately, 
+
+30
+00:02:01,121 --> 00:02:07,151
+so I'll take those 3s, and up here, I'll 
+look at three^two - one and I'll get out 
+
+31
+00:02:07,151 --> 00:02:10,646
+eight. 
+And down here, three - one became two Now 
+
+32
+00:02:10,646 --> 00:02:15,718
+the eight and the two get plugged into 
+the division, and eight divided by two is 
+
+33
+00:02:15,718 --> 00:02:19,076
+four and that becomes the output of the 
+function, 
+
+34
+00:02:19,076 --> 00:02:22,159
+right? 
+Input's three, output is four but when I 
+
+35
+00:02:22,159 --> 00:02:27,320
+look at it this way, I can see how all 
+the steps are, are playing out. 
+
+36
+00:02:27,320 --> 00:02:29,907
+Okay. 
+I evaluate the function at three, but who 
+
+37
+00:02:29,907 --> 00:02:32,494
+cares? 
+Well, let's try to evaluate the function 
+
+38
+00:02:32,494 --> 00:02:36,037
+at one instead of at three. 
+So what happens when we plug in the 
+
+39
+00:02:36,037 --> 00:02:39,356
+number one into this function? 
+I got the number one here. 
+
+40
+00:02:39,356 --> 00:02:42,393
+I'm going to look inside. 
+I'm going to open up this function. 
+
+41
+00:02:42,393 --> 00:02:46,499
+Now imagine I've got this number one. 
+I'm going to plug it into the function. 
+
+42
+00:02:46,499 --> 00:02:48,861
+All right. 
+Now I'm going to be evaluating the 
+
+43
+00:02:48,861 --> 00:02:53,192
+numerator and denominator separately, so 
+I'm going to take this one and split it 
+
+44
+00:02:53,192 --> 00:02:56,229
+up, and plug it into the numerator and 
+the denominator. 
+
+45
+00:02:56,229 --> 00:03:00,540
+The numerator sends its input to its 
+input squared minus one. 
+
+46
+00:03:00,540 --> 00:03:08,265
+So one^two minus one is zero and the same 
+thing down here, one - one is zero Now 
+
+47
+00:03:08,265 --> 00:03:14,323
+I've got 0 and 0 which I'm going to be 
+plugging in to the. 
+
+48
+00:03:14,323 --> 00:03:16,781
+Okay, very bad. 
+Right? 
+
+49
+00:03:16,781 --> 00:03:23,365
+I'm dividing by zero and I can not 
+proceed, so this function is not defined 
+
+50
+00:03:23,365 --> 00:03:27,024
+at one. 
+So I can't plug one into the function. 
+
+51
+00:03:27,024 --> 00:03:32,423
+But if I wanted to figure out what the 
+function's value was that inputs near 
+
+52
+00:03:32,423 --> 00:03:35,789
+one, I could do that. 
+So let's try to plug in one point one 
+
+53
+00:03:35,789 --> 00:03:39,313
+instead so let's plug one point one into 
+this function. 
+
+54
+00:03:39,313 --> 00:03:44,758
+I can't plug in one because I need to 
+divide them by zero, but let's try 
+
+55
+00:03:44,758 --> 00:03:49,723
+plugging in one point one I'm going to 
+open up the function again and take one 
+
+56
+00:03:49,723 --> 00:03:53,968
+point one plug it into the function. 
+Now one point one is going to to be 
+
+57
+00:03:53,968 --> 00:03:57,732
+evaluated in the numerator and the 
+denominator. 
+
+58
+00:03:57,732 --> 00:03:59,974
+one point one^second minus one is 
+twentyone. 
+
+59
+00:03:59,974 --> 00:04:04,699
+And one point one minus one became one. 
+Now twentyone and one are going into the 
+
+60
+00:04:04,699 --> 00:04:07,153
+division. 
+And twentyone divided by one is two point 
+
+61
+00:04:07,153 --> 00:04:11,449
+one So when I evaluate the function at 
+one pint one I get out two point one. 
+
+62
+00:04:11,449 --> 00:04:17,177
+Instead of just plugging in one value, 
+let's plug in a whole bunch of values. 
+
+63
+00:04:17,177 --> 00:04:21,021
+We'll make a table. 
+So use that same function again. 
+
+64
+00:04:21,021 --> 00:04:26,824
+F of x is x^second minus one divided by x 
+minus one Now, I can't plug 1 into the 
+
+65
+00:04:26,824 --> 00:04:32,326
+function, 'because if I plug in one, I'd 
+be dividing by zero, and I can't divide 
+
+66
+00:04:32,326 --> 00:04:36,020
+by zero. 
+One isn't in the domain of this function. 
+
+67
+00:04:36,020 --> 00:04:39,735
+But I can plug in numbers near one, 
+right? 
+
+68
+00:04:39,735 --> 00:04:44,086
+And we saw that one point one if I plug 
+in that, I get two point one. 
+
+69
+00:04:44,086 --> 00:04:47,167
+Right? 
+And if I plug in one point zero one I get 
+
+70
+00:04:47,167 --> 00:04:49,886
+two point zero one If I plug in 1 point 
+zero zero one I get two point zero zero 
+
+71
+00:04:49,886 --> 00:04:50,974
+one. 
+Right? 
+
+72
+00:04:50,974 --> 00:04:55,233
+And so on. 
+If I plug in 1.000001 I get 2.000001. 
+
+73
+00:04:55,233 --> 00:04:58,134
+Right. 
+Well, what's going on here? 
+
+74
+00:04:58,134 --> 00:05:03,300
+I could summarize this situation by 
+saying the following. 
+
+75
+00:05:04,440 --> 00:05:13,480
+The limit of x squared minus one over x 
+minus one as x approaches one is equal to 
+
+76
+00:05:13,480 --> 00:05:15,244
+two. 
+Why is that? 
+
+77
+00:05:15,244 --> 00:05:24,700
+Well, this is because. 
+I can make x^2-1 over x minus one. 
+
+78
+00:05:24,700 --> 00:05:34,060
+As close to two as I want. 
+If. 
+
+79
+00:05:34,060 --> 00:05:39,080
+I make x. 
+Close enough. 
+
+80
+00:05:40,860 --> 00:05:43,773
+To one. 
+Lets see. 
+
+81
+00:05:43,773 --> 00:05:50,209
+Here's my table alright if you want the 
+output of this function to be within a 
+
+82
+00:05:50,209 --> 00:05:56,727
+billionth of two all you need to do is to 
+make sure that your input is within a 
+
+83
+00:05:56,727 --> 00:06:02,186
+trillionth of one alright. 
+As long as your input is close enough to 
+
+84
+00:06:02,186 --> 00:06:07,890
+one you can guarantee that your output is 
+as close to two as you like. 
+
+85
+00:06:07,890 --> 00:06:10,376
+This is just looking at a table of 
+values. 
+
+86
+00:06:10,376 --> 00:06:14,580
+You know, maybe a dozen values and seeing 
+what they're getting close to. 
+
+87
+00:06:14,580 --> 00:06:18,488
+It would be a lot better if there were a 
+more convincing argument. 
+
+88
+00:06:18,488 --> 00:06:21,093
+So let's go back to our definition of 
+limit. 
+
+89
+00:06:21,093 --> 00:06:26,007
+To say the limit of f of x equals l means 
+that f of x can be made as close to l as 
+
+90
+00:06:26,007 --> 00:06:30,270
+you desire by making x close enough to a. 
+And let me emphasize something. 
+
+91
+00:06:30,270 --> 00:06:34,960
+Close enough. 
+But not equal. 
+
+92
+00:06:34,960 --> 00:06:40,818
+To a. 
+Why does something like this matter? 
+
+93
+00:06:40,818 --> 00:06:45,185
+Well, let's go back to our example. 
+In our example the function wasn't 
+
+94
+00:06:45,185 --> 00:06:48,539
+defined at one. 
+But the limit doesn't depend upon the 
+
+95
+00:06:48,539 --> 00:06:52,590
+function's value at one. 
+It only depends on the function's value 
+
+96
+00:06:52,590 --> 00:06:56,791
+near one. 
+So x squared minus one over x minus one 
+
+97
+00:06:56,791 --> 00:07:01,841
+is equal to x plus one as long as x isn't 
+equal to one right. 
+
+98
+00:07:01,841 --> 00:07:05,814
+As long as x isn't one this is a true 
+statement. 
+
+99
+00:07:05,814 --> 00:07:12,520
+So now what's the limit as x goes to one 
+of x squared minus one over x - one. 
+
+100
+00:07:13,720 --> 00:07:17,391
+Well, this is the limit as x approaches 
+one of x. 
+
+101
+00:07:17,391 --> 00:07:20,584
+one = one. 
+because the limit doesn't depend upon the 
+
+102
+00:07:20,584 --> 00:07:26,012
+value of the function at one. 
+It only depends upon the values of the 
+
+103
+00:07:26,012 --> 00:07:30,482
+function near one. 
+And as a result, these two things have 
+
+104
+00:07:30,482 --> 00:07:34,871
+the same limit. 
+Even better the limit of x plus one, as x 
+
+105
+00:07:34,871 --> 00:07:37,891
+approaches one, well that's the limit of 
+a sum. 
+
+106
+00:07:37,891 --> 00:07:41,042
+And the limit of a sum is the sum of the 
+limits. 
+
+107
+00:07:41,042 --> 00:07:46,490
+So I can rewrite this limit as the limit 
+as x goes to one of x plus the limit as x 
+
+108
+00:07:46,490 --> 00:07:50,429
+goes to one of one. 
+And what the limit of x as x goes to one? 
+
+109
+00:07:50,429 --> 00:07:55,549
+Well that's asking what can I make x 
+close to if I make x close enough to one? 
+
+110
+00:07:55,549 --> 00:07:59,374
+Well that's one. 
+And the limit of one as x goes to one is 
+
+111
+00:07:59,374 --> 00:08:04,721
+asking me what's one close to when x is 
+close to well there's not even an x in 
+
+112
+00:08:04,721 --> 00:08:09,662
+this right wiggling x doesn't affect this 
+at all so that limits also one. 
+
+113
+00:08:09,662 --> 00:08:12,640
+And one plus one is two so indeed the 
+limit. 
+
+114
+00:08:12,640 --> 00:08:19,000
+x^twenty two minus one divided by x - one 
+as x approaches one is two. 
+
+115
+00:08:19,000 --> 00:08:24,944
+Limits provide information about what a 
+functions values are approaching, 
+
+116
+00:08:24,944 --> 00:08:28,363
+alright. 
+It's a way of accessing otherwise 
+
+117
+00:08:28,363 --> 00:08:33,493
+forbidden information. 
+I might not be able to plug in the value 
+
+118
+00:08:33,493 --> 00:08:37,890
+one, because that would have entailed 
+dividing by zero. 
+
+119
+00:08:37,890 --> 00:08:43,590
+And yet I know, that the functions output 
+is as close to two as I like. 
+
+120
+00:08:43,590 --> 00:08:47,987
+As long as the input is close to but not 
+equal to one. 
+
+121
+00:08:47,987 --> 00:08:48,639

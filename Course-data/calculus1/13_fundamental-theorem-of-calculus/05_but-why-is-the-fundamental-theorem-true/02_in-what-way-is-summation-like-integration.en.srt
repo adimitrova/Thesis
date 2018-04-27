@@ -1,0 +1,168 @@
+1
+00:00:00,025 --> 00:00:05,386
+[MUSIC]. 
+
+2
+00:00:05,386 --> 00:00:08,350
+I've been trying to sell you on an 
+analogy. 
+
+3
+00:00:08,350 --> 00:00:13,214
+The analogy is that integration is a 
+whole lot like summation. 
+
+4
+00:00:13,214 --> 00:00:17,634
+Now we've also seen the fundamental 
+theorem of calculus, and the fundamental 
+
+5
+00:00:17,634 --> 00:00:21,646
+theorem of calculus tells us that 
+integration practically amounts to 
+
+6
+00:00:21,646 --> 00:00:26,464
+antidifferentiation. 
+So how does the fundamental theorem of 
+
+7
+00:00:26,464 --> 00:00:30,710
+calculus fit into this analogy? 
+Well here's the analogy square. 
+
+8
+00:00:30,710 --> 00:00:35,520
+I've got integrating and differentiating. 
+And integrating is like summing. 
+
+9
+00:00:35,520 --> 00:00:39,870
+So what's the thing that's like 
+differentiating but for the discrete 
+
+10
+00:00:39,870 --> 00:00:44,160
+world? 
+I'm claiming it's differencing. 
+
+11
+00:00:44,160 --> 00:00:47,018
+Now how so? 
+Well, let's suppose that I've got a list 
+
+12
+00:00:47,018 --> 00:00:50,816
+of numbers. 
+Made my list of numbers is something easy 
+
+13
+00:00:50,816 --> 00:00:55,890
+like one, two, three, four, five, it 
+could be more creative. 
+
+14
+00:00:55,890 --> 00:00:57,740
+But let's suppose this is my list of 
+numbers. 
+
+15
+00:00:57,740 --> 00:01:02,370
+The accumulation function just amounts to 
+adding up those numbers. 
+
+16
+00:01:02,370 --> 00:01:10,710
+So in this case, it'd be 0 plus 1, 1 plus 
+2, 3 plus 3, 6 plus 4, 10 plus 5, and so 
+
+17
+00:01:10,710 --> 00:01:16,630
+forth. 
+The difference operator, it's like 
+
+18
+00:01:16,630 --> 00:01:20,536
+differentiation, but the difference 
+operator amounts to writing out a new 
+
+19
+00:01:20,536 --> 00:01:23,774
+list. 
+The list of differences between success 
+
+20
+00:01:23,774 --> 00:01:26,750
+of numbers. 
+So in this case if I just had this list 
+
+21
+00:01:26,750 --> 00:01:29,582
+of numbers, I could write down the 
+differences between the subsequent 
+
+22
+00:01:29,582 --> 00:01:34,650
+numbers in that list. 
+1 minus 0 is 1, 3 minus 1 is 2, six minus 
+
+23
+00:01:34,650 --> 00:01:41,358
+3 is 3, 10 minus 6 is 4, 15 minus 10 is 
+5, and so forth. 
+
+24
+00:01:41,358 --> 00:01:44,738
+Now if I were to look at the list of 
+differences in the list of the 
+
+25
+00:01:44,738 --> 00:01:50,690
+accumulation function, I'd get back the 
+original list that I started with. 
+
+26
+00:01:50,690 --> 00:01:51,950
+It's really worth repeating. 
+Right? 
+
+27
+00:01:51,950 --> 00:01:55,434
+Taking differences between the sum of the 
+first k numbers in my original list and 
+
+28
+00:01:55,434 --> 00:01:59,820
+the sum of the first k minus 1 numbers in 
+my original list. 
+
+29
+00:01:59,820 --> 00:02:02,320
+Just gives me back my original list of 
+numbers. 
+
+30
+00:02:02,320 --> 00:02:06,810
+And this is an analogous to the statement 
+from calculus. 
+
+31
+00:02:06,810 --> 00:02:11,212
+That if I take the derivative of the 
+accumulation function, I give back the 
+
+32
+00:02:11,212 --> 00:02:15,619
+original function. 
+Mathematics isn't just about isolated 
+
+33
+00:02:15,619 --> 00:02:19,440
+facts, It's really about analogies 
+between ideas. 
+
+34
+00:02:19,440 --> 00:02:31,473
+It's just like in literature where 
+metaphor plays such an important role. 

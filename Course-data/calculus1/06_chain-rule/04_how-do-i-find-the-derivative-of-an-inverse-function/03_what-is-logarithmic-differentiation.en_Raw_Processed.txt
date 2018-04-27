@@ -1,0 +1,91 @@
+,, i cook really nasty 
+functions, give to you ask 
+you to differentiate instance, i 
+could ask you to differentiate this 
+function plus x squared to th 
+power, plus x cubed to th power, 
+divided plus x to fourth, 
+this to seventh power in principle, 
+theres nothing stopping you plowing 
+ahead computing derivative you 
+totally differentiate this function 
+right whats derivative this 
+function well, this functions a quotient 
+so needs quotient rule 
+denominator quotient rule is 
+original denominator squared so 
+going to original denominator 
+to th power quotient rule, 
+numerator starts 
+derivative original numerator now, 
+original numerator is a product so 
+ill able to this derivative 
+using the, product rule chain rule so 
+derivative numerator imes 
+denominator keeps going, 
+right i gotta subtract the, 
+derivative denominator times 
+numerator but, look, you this 
+derivative careful application 
+quotient rule, product rule, 
+power rule, chain rule there is 
+one thing stopping you, sense 
+human decency an awful 
+calculation nobody would want to that 
+so instead, i propose a trick maybe 
+a trick, a trick 
+that fits a general theme 
+logarithms logarithms turn exponentiation 
+multiplication, multiplication 
+addition lets see this helps 
+us so here we go instead calling this 
+function f x im jut going to call 
+y, im getting ready to a sort 
+implicit differentiation im going to 
+first apply log to sides this 
+ill get log y whats log 
+side well log a quotient, 
+is a difference logs, logs 
+things to powers, is that power 
+times log base so this works 
+to times log plus x squared plus 
+this log turns multiplication 
+addition times log plus x cubed 
+this quotient becomes a difference, 
+so, minus in exponent, log 
+plus x now, we differentiate right, 
+so differentiating now, whats 
+derivative log y remember, y is 
+secretly a function x, so i 
+differentiate log y derivative 
+outside, is y, times 
+derivative inside, which, ill 
+write dy dx this is really an example if 
+you like implicit differentiation 
+alright, i differentiate 
+side, , i multiply 
+derivative log is over, so 
+inside function plus x squared times 
+derivative inside function 
+is x derivative plus x 
+squared is x right, plus , 
+derivative log is inside 
+function, plus x cubed, times 
+derivative this inside function, 
+is times x squared, minus over, 
+derivative log is one 
+inside function, one plus x to fourth, 
+derivative one plus x to 
+fourth is four x cubed almost 
+there so now, i multiply sides 
+y i get that derivative is 
+this thing calculated x y, y is this 
+quantity i write this a little bit 
+nicely alright heres this times x 
+is x, times is , times is , 
+i multiply y so i found 
+derivative, here is in general, this 
+trick logarithmic differentiation 
+called, works fantastically well 
+functions like rational functions 
+that involve a lot high powers 

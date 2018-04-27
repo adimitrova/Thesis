@@ -1,0 +1,100 @@
+music 
+i mentioned before, 
+one obstacles to sharing data is a 
+lack career incentives researchers 
+one method to reward researchers 
+sharing data is to ensure 
+receive proper acknowledgement 
+credit data citation 
+data citation provides a standardized 
+method secondary users to cite data 
+data citations also 
+used data producers 
+to cite data 
+standalone research products 
+instance, 
+nsf renamed publications to products 
+in biographical sketch section 
+grant application researchers 
+list datasets along 
+publications research products 
+currently, work is done 
+in data curation field to 
+establish data citation principles 
+standards 
+instance, joint declaration 
+data citation principles, 
+is a synthesis work 
+a number prominent groups, 
+established principles to guide 
+development human understandable 
+machine actionable data citations 
+eight principles include importance, 
+credit 
+attribution, evidence, 
+unique identification, 
+access, persistence, 
+specificity verifiability, 
+interoperability flexibility 
+another group important work 
+in expanding infrastructure 
+culture citing data is datacite 
+datacite works data repositories 
+incentives to assigned persistent 
+identifierssuch digital object 
+identifiers, dois, to data 
+work, 
+data sites support simple 
+effective methods data citation, 
+discovery, access 
+doi insures that data 
+discovered online, 
+regardless located 
+so lets take a look an actual data 
+citation generated data verse 
+look elements 
+this citation map 
+to joint declaration 
+data citation principles 
+author data publisher, 
+distributer information, 
+maps to principle credit 
+attribution, stresses 
+importance contributors 
+receiving due credit data 
+version information maps to 
+principle specificity 
+verifiability, stresses 
+importance enough information 
+to make sure data retrieved 
+used data cited 
+finally, doi maps directly to 
+principles unique identification, 
+access persistence 
+doi provides a method 
+identification that is machine 
+actionable well provides 
+stable access to data resource 
+using a persistent identifier 
+one thing researchers may want to consider 
+choosing a data repository 
+making data available is whether 
+repository supports creation unique 
+data citations that embody joint 
+declaration data citation principles 
+proper citation datasets supports 
+reproducibility research, 
+ensures proper credit researchers, 
+enables tracking data reuse 
+although there real challenges 
+that may make difficult, 
+in cases, impossible to share data, 
+there significant benefits 
+to researchers 
+broader research community 
+using techniques information 
+provided in this mooc, you will better 
+equipped to overcome challenges 
+reap benefits data sharing 
+dont forget, cite data 
+music 

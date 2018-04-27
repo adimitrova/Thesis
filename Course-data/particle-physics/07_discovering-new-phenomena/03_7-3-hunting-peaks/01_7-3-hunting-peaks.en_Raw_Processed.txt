@@ -1,0 +1,175 @@
+music 
+in this module, 
+we will discuss searches 
+new phenomenon beyond known ones 
+described standard model 
+in this video, we will talk bump hunting 
+watching this video, you will 
+know we look new resonances 
+in hadron collider data 
+signal choice led in 
+past to important discoveries 
+impact statistics searches 
+we use data we collect in hadron 
+colliders measurements processes 
+predicted standard model 
+searches new physics 
+we typically measure crosssection 
+a process, mass a particle, 
+properties 
+searches typically split 
+in bump searches tail searches 
+measurements always precede searches 
+is confidence that we 
+know well standard model 
+predicts that 
+enables us to look beyond 
+one things we measure in data 
+is rate production a specific 
+process allows us to 
+determine cross section 
+is given formula you 
+already seen in previous videos 
+cross section process, 
+example production a z boson, times 
+branching ratio a specific decay, 
+example to a dimuon pair, is equal 
+to number events corresponding 
+to exact process divided 
+three numbers that remove biases related 
+to way measurement is performed 
+acceptance, indicating fraction 
+signal events passing selection 
+requirements applying to data 
+reconstruction efficiency 
+relevant objects, muons in example, 
+integrated luminosity indicating 
+amount incoming particles we used 
+in numerator we to subtract 
+total number events 
+expected number background events 
+events producing 
+signature, a dimuon pair in example, 
+resulting processes, 
+different to process interest 
+z boson discovered in 
+protonantiproton collisions cern in 
+a small bump around mass 
+value shown in left plot 
+constituted a major discovery back 
+time, is a well established 
+process now, we make precise 
+measurements measure properties, 
+crosssection 
+plot right 
+shows a mass peak 
+z bosons decaying to two muons looks 
+like in early atlas data back in 
+despite small amount 
+data available that time, 
+is remarkable this compares to 
+topology z discovered 
+this established lepton pair signature 
+one many particles 
+discovered time 
+is one key signatures we use in 
+hadron colliders to search new peaks 
+primarily, in high mass region 
+this is muon pair mass 
+spectrum looks like in atlas 
+starting 
+z mass peak 
+extending to highest 
+values we data 
+blue area indicates 
+contribution to this distribution 
+a z boson decaying to two muons 
+this is dominant process 
+in whole spectrum, 
+especially in peak z mass 
+colored areas indicate 
+standard model contributions to 
+spectrum 
+black points correspond to data 
+expected contributions 
+standard model scaled 
+integrated luminosity 
+data we used 
+one see this plot, that data 
+match well distribution expected 
+standard model alone 
+presence a heavy z boson would manifest 
+a bump in tail distribution, 
+shown here simulated rates 
+three different possible masses 
+in absence bump, 
+limits set masses 
+production cross sections 
+heavy z bosons 
+to increase number 
+events in tails, 
+we try to use many 
+final states possible 
+a natural one in this case, 
+is electron final state 
+here is invariant spectrum 
+electronpositron pairs atlas 
+despite differences, 
+picture is similar 
+everything we measure 
+carries uncertainties 
+originate systematic 
+effects associated methods 
+limited available statistics 
+searches also affected 
+uncertainties, 
+though statistical uncertainties 
+important in this case 
+searches typically 
+improve using data 
+this is demonstrated in this slide, 
+compare lepton pair spectra 
+luminosities differing 
+a factor roughly 
+heavy z boson search 
+given hints new physics yet 
+hadron colliders 
+bump searches 
+successful in past 
+a well known one is higgs search, 
+effectively a bump search 
+atlas cms scientists looked 
+a bump in photon pair 
+innvariant mass spectrum 
+we already seen this 
+example in video 
+is interesting to see in 
+this demonstration 
+statistics make a difference 
+in picture spectrum, 
+lead to a discovery 
+beyond higgs mass, photon pair mass 
+spectrum is continuously scanned 
+new bumps that could indicate 
+presence new phenomena 
+a potential bump hinted in 
+data mass gev 
+significance excess low, so 
+search 
+conclusive that point 
+spectrum scanned 
+date became available in 
+excess increased 
+proportionally to increasing 
+luminosity 
+thus concluded that bump 
+due to a statistical fluctuation 
+you see that a firm 
+discovery is difficult to make, 
+strict requirements 
+significance a convincing signal 
+must respected concluding 
+this concludes this video 
+in next video, we will discuss 
+another type searches, tail searches 
+music 

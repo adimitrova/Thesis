@@ -1,0 +1,15 @@
+okay.
+just quick video to show you how to
+install javascript mode in processing.
+so if you look on this menu here, you're
+going to click java when you first install
+it.
+so you click add mode, select javascript
+mode, hit the install button, downloads
+and installs.
+we're done.
+now we need to quit processing.
+[blank_audio]
+revamp processing.
+and there it is.
+we can now go to javascript mode.

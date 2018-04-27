@@ -1,0 +1,144 @@
+sound welcome to course 
+interactive computer graphics 
+this is course introduction 
+let first describe, we mean 
+interactive computer graphics 
+first this is real 
+time rendering, this course is 
+interaction 
+noise specifically we discuss 
+interactive 
+techniques systems visual problem 
+solving 
+so 
+let describe we mean visual 
+problem solving 
+so visual problem solving we mean, visual, 
+visual aspects human intelligence 
+i think visual problems consist 
+three parts 
+first you to understand incoming 
+information, 
+you to come a 
+solution problem you 
+
+to communicate idea to 
+people 
+this kind visual problem solving 
+appears everywhere in professional 
+daily activities 
+as, example, medical doctors plan 
+surgical 
+operations, coaches teach to play 
+sports 
+product designers, architects, design 
+products buildings 
+costume designers design garments 
+a scientist trying to understand 
+nature 
+activities involve intensive 
+visual problem solving 
+goal is to make processes 
+efficient, productive pleasant 
+using computer technique 
+technologies 
+leveraging interactive computer, 
+interactive computing 
+let know describe we mean 
+interactive computing 
+so let compare interactive computing 
+old style command based interaction 
+so old style interaction is command based, 
+so user gives 
+command to a system system a 
+task 
+user sees a result 
+this is kind asking a computer, 
+something 
+interactive computing we mean 
+like 
+an augmentation human activities, like 
+this 
+so user continuously walks a 
+program, system continuous 
+provides feedback 
+so this is kind walking stair we 
+want to emphasize in this course 
+so interactive computing is to augment 
+human intelligence 
+providing rich feedback in rapidly 
+fast 
+so continuously sup provide 
+feedback 
+the, accepts intuitive input, 
+provide intuitive feedback 
+behind scenes, should, 
+tries to intelligent computation 
+in this course, students will 
+know to do, using an ios system 
+so let explain course in 
+broader context computer science 
+computer science field is roughly 
+divided fields 
+theoretical field 
+applied view 
+among applied view, course is 
+related 
+to subfields called graphics 
+visualization, humancomputer 
+interaction 
+and, so this course seen 
+an introduction to computer 
+science subfields 
+let show you a couple topics we 
+discuss in this course 
+so first we will discuss influence to 
+uh,to additional graphical user interface 
+so we will describe to implement 
+window operations, scrolling, icon 
+manipulation so 
+we me, move to d drawings 
+so, we, well you to draw 
+restorations also to move 
+
+next week is d modeling 
+so, we will describe to create d 
+objects using dimensional input devices 
+we would discuss to handle 
+deformation 
+animation objects closing 
+lobes also flexible 
+cough 
+rebs object 
+in last three weeks we, we 
+move 
+screen space go to 
+real world 
+so we first discuss to create physical 
+object a threedimensional model in 
+a computer 
+we will discuss to 
+leverage physical simulation to produce 
+functional products 
+finally we will describe 
+introduction techniques that work 
+computers systems interacting in 
+real world robots 
+this course is basically a casebased 
+learning so lecture introduce example 
+systems 
+then, exercise help you obtain deeper, 
+lasting, understanding topic 
+course 
+sample examples among many, many infinite 
+possibilities 
+studying points 
+exploration 
+so end topic, i will 
+show information point is 
+research 
+study 
+so in this course throughout 
+examples students learn we 
+also we 
+interactive computing 

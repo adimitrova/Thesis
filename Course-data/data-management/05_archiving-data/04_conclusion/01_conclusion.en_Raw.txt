@@ -1,0 +1,80 @@
+we have covered a lot in this course.
+and as we have discussed,
+data can come in many different forms.
+but despite the heterogeneity of data,
+there are some basic data management
+best practices that can help
+researchers do better research.
+we hope that this course was helpful not
+only to researchers who are needing to
+actively manage their data and
+share it at the end of a project but
+also for information professional
+who are supporting researchers.
+as we have covered in this course,
+research data management is most
+effective when it takes place throughout
+the research data life cycle,
+and the first step should include
+writing a data management plan.
+as we discussed,
+writing a dmp is not only best practice,
+but it is increasingly
+required by funding agencies.
+after discussing dmps and
+some useful dmp tools,
+the folks at the university of edinburgh
+covered some best practices related to
+organizing data, file formats and
+transformations, and storage and
+security that can help when researchers
+are actively working with their data.
+we also discuss the benefits
+of sharing data,
+including promoting new research and
+collaborations.
+allowing for the verification and
+replication of original results and
+enhancing the visibility
+of research projects.
+these are just a few of the benefits, and
+while the benefits can be numerous
+we also covered various challenges
+to sharing data from the effort it
+takes to prepare data for sharing,
+to the lack of incentives for sharing
+data within the current academic culture.
+finally, we went over the role of
+trusted repositories in curating,
+archiving and preserving data to
+make sure it remains accessible, and
+understandable for the long term.
+all of the cradle team would like to thank
+you for participating in this course.
+we would also like to thank the institute
+of museum and library services for
+sponsoring the creation of this mook.
+and finally we would like to thank sarah
+jones from the digital curation center,
+adina and the data library at
+the university of edinburgh for
+their contributions.
+if you would like to continue your data
+management education, we would encourage
+you to check out the programs offered
+at the school of information and
+library science here at unc, including our
+post master certificate in data curation.
+and our forth coming professional
+science masters in digital curation.
+likewise, the odum institute at unc
+provides data management services
+to researchers that can help ease their
+burden as well as training information
+professionals and researchers in data
+management and curation best practices.
+check out the resources for additional
+information on other data management
+training and education opportunities.
+bye and thanks for participating.
+[music]

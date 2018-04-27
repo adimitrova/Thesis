@@ -1,0 +1,133 @@
+music 
+a lot calculus is understanding 
+qualitative features functions 
+nobody really cares f 
+you might care f a big 
+number, qualitatively 
+going to try to make this concept 
+big number a bit precise 
+well, heres going to get 
+around talking a big number 
+going to talk limit 
+limit f x x approaches 
+infinity equals to l 
+means that f x is close you want 
+to to l, provided x is large 
+enough 
+so instead talking plugging 
+in a big number, im going to say f 
+big number, so to speak, is equal to 
+l if i make output f close to 
+l plugging in big enough numbers 
+this point weve seen a bunch 
+different definitions limits 
+theyre united a common theme 
+if someone asked us to cook a 
+definition limit f x equals 
+infinity x goes to infinity 
+could we come a definition 
+this 
+yeah, absolutely we can, here we go 
+limit f x x approaches 
+infinity equals infinity means that i 
+make f x large you want to 
+provided x is large enough 
+consistently talking 
+infinity in limits never actually 
+talking a specific value 
+talking a value is 
+big you want to 
+lets go an example blackboard 
+there is a question 
+limit, x x x 
+approaches infinity 
+we dive this analytically, 
+lets get numeric evidence 
+this is function, fx x 
+x 
+i want to know qualitatively, 
+happens i plug in big numbers in 
+this function 
+so, lets say f 
+
+well, thats hard to figure 
+times is plus one is 
+now, divided is pretty close 
+to 
+theres nothing special 
+, right 
+if id done this four million i would 
+gotten two million a million in 
+one, would even closer to 
+numerically, looks like this limits 
+two, we figured that 
+plugging in big numbers 
+i want a rigorous argument, 
+analytic that is limit is actually equal 
+to two 
+im going to proceed 
+first guess would to use limit 
+law quotients 
+this is limit a quotient is 
+quotient limits provided 
+limits exist limit 
+denominator is none zero 
+bad news here is limits dont exist 
+limit numerator is infinity 
+isnt a number 
+so i cant use limit law quotients 
+here 
+instead im going to sneak this 
+limit problem wearing a disguise 
+im going to multiply a disguised 
+version one 
+im going to multiply one x 
+divided one x 
+this is one 
+admittedly, i changed function 
+functions defined anymore 
+zero 
+large values x, this doesnt 
+affect anything 
+im taking limit x goes to 
+infinity 
+so i care agreement large 
+values x 
+ill algebra 
+this limit limit x times 
+one x 
+is two divided limit x 
+plus one times one x 
+is one plus one x 
+maybe doesnt look like ive made a 
+lot progress here, this is a huge 
+progress 
+limit numerator is a 
+number, two 
+limit denominator is also 
+a number 
+a non zero number, that 
+so i use limit law quotients 
+this is limit a quotient, is 
+quotient a limit 
+limit two, numerator 
+divided limit denominator, 
+x approaches infinity 
+limit numerator is 
+limit a constant, is 
+limit denominator is a limit 
+a sum, is sum limits 
+provided limits exist, 
+limit is 
+whats limit x x 
+approaches infinity 
+well thats asking, is x 
+close to x is large 
+well i make x close to zero 
+i like if im willing to make x large 
+enough 
+so limit x x approaches 
+infinity is zero 
+that means original limit is 
+plus zero, is 
+music 

@@ -1,0 +1,223 @@
+next topic is dynamic illustrations 
+work we introduce here, is 
+called sketch based dynamic illustration 
+fluid systems 
+program we want to address here, 
+is that is tedious to illustrate fluid 
+flow 
+suppose you a engineering system 
+architecture 
+organic shapes a liver system 
+there is a lot fluid systems, you 
+may want 
+to describe fluid flow in 
+kind systems 
+you want to get kinds 
+results 
+tedious to draw 
+manually 
+so, idea is to use automatic flow 
+simulation 
+to automatically synthesize this kind 
+data illustrations 
+so here, simulation is used 
+prediction, 
+this is used a niche unknown 
+illustration 
+so let show you a video 
+blankaudio 
+so this is basically a drawing system 
+you draw something, system 
+continuously runs fluid simulation behind 
+scenes 
+add fluid flow visualizations 
+automatically 
+so you draw something, a region 
+you draw pipes 
+soon you finish drawing 
+a system, system starts flow simulation 
+behind scene 
+so visualize a, a detail flow, also 
+shows result fluid mixtures 
+blankaudio 
+so this tool is useful explaining 
+fluid phenomenons 
+blankaudio 
+so you interactively edit shape 
+deformation tools 
+blankaudio 
+okay 
+so an, unknown example is here 
+blankaudio 
+so here we use two explaining 
+surgical operations a defected heart 
+so here is an example 
+so here this heart specific 
+configuration 
+ideal 
+here ideally blue blood come 
+body, directly 
+go to lung, lung, 
+fresh blood, red 
+blood comes heart, red 
+one go body, 
+however here blue blood is mixed together 
+red one 
+purple one go to body 
+so, doctors will perform a surgical 
+operation to fix this 
+however, that, need to 
+explain 
+to patients, 
+patients parents 
+however, difficult to that 
+
+standard tools, currently, use 
+standard pen ink 
+black white illustration to describe 
+them, 
+however, difficult to understand 
+
+preparing this kind beautiful 
+illustration using computer 
+system, is time consuming, 
+importantly, this kind 
+heart disease different 
+configuration patient, 
+so possible to prepare a template 
+hand 
+so, this kind tool useful 
+to explain understand complicated flow 
+phenomenon 
+let show you works 
+so first, 
+operation start connecting 
+locations, 
+will change configuration 
+here 
+so doctor cuts here connect 
+so, soon configuration changes, 
+fluid simulation changes flow, 
+prediction 
+blankaudio 
+so next one is important one 
+doctor stops here, cut here, 
+connect here 
+therefore, blood suddenly changes 
+blankaudio 
+finally, in closing this hole 
+let blood directly go to body, 
+red 
+blankaudio 
+this kind technique 
+useful various 
+fluid phenomena inside body, like 
+blood circulation others 
+blankaudio 
+also this technique is, used 
+engineering systems 
+like this one 
+blankaudio 
+this is another example in unknown 
+so you see 
+cold air le warm air mix together 
+flow 
+you test many different 
+configurations 
+blankaudio 
+this tool also used for, 
+explanation pollution rivers, 
+so 
+so let describe 
+region briefly 
+so we use is a hybrid fluid 
+simulation system 
+so user draws global network local 
+regions 
+we apply different simulation 
+unknown different scale 
+single scale simulation 
+slow 
+so, a global network simulation, we 
+use simple hydraulic simulation 
+therefore, individual local region, we 
+use hydrodynamic simulations 
+so, to use a unknown node inflow, 
+there forms 
+a global network structure, hydraulics 
+compute pipe flow 
+node pressure, this node 
+pipe flow node pressure, hydrodynamics 
+computes a detailed, computes detailed 
+flow, inside this region 
+so this is a little bit in involved, 
+let describe way 
+first line is hydraulics simulation 
+a global network 
+here, input is node inflow qn, so much 
+flow comes in node 
+we compute is pipe flow 
+node inflow 
+hydraulics is a simplified 
+computational method directly computed 
+compute node inflow, to get 
+a pipe flow 
+pipe flow, we compute a 
+pressure, pressure drop this pipe 
+pipe pressure drop, we 
+compute node pressure inside 
+node 
+you get information 
+solving a linear global system 
+fast efficient 
+computing pressure node, 
+unknown pipe flow, we 
+switch to regional inaudible so 
+local region 
+we compute we divide a lots grid 
+cells 
+like this one, grade cell, we 
+compute pressure 
+velocity, in order compute 
+individual pressure velocity, we 
+use a standard established fluid 
+equation called navierstokes equation 
+so this one is a little bit complicated, 
+
+essentially this explains 
+relationship fluid velocity 
+fluid pressure, you know, if theres a 
+huge 
+difference in fluid pressure, 
+causes velocity, so 
+this step basically solved this 
+equation times 
+step, time step this grid cells 
+inside region, to get an animation 
+so so original paper published 
+sketch based dynamic illus, illustration 
+fluid systems 
+if you want to learn fluid 
+animation, i recommend you to read 
+text books 
+one example is fluid simulation 
+computer graphics bridson 
+this work is an example 
+illustrative animation facilitating 
+understanding 
+interesting early dated work 
+is, mathpad, takes mathematical 
+inaudible 
+expression, automatically 
+generates 
+animation, based mathematical 
+expression 
+so thats, this is end 
+second week this interactive computer 
+graphics course 
+we described dia, diagram beautification 
+inaudible shape manipulation, 
+also 
+dynamic illustration a fluid 
+simulation 
+thank you 

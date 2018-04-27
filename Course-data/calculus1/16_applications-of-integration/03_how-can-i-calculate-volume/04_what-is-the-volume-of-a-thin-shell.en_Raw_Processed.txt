@@ -1,0 +1,198 @@
+music 
+we cut a three dimensional object 
+shapes beyond slabs, disks, 
+washers 
+specifically instead building an 
+object disks, instead building 
+stacking disks varying radii 
+we build object wrapping 
+shells 
+this shell thing is supposed to like a 
+cardboard mailing tube 
+a cylinder sort a thin wall 
+shells different 
+washers 
+well there similarities 
+shells washers things that 
+you get taking cylinders drilling 
+cylinders 
+washers, thin dimension is 
+height 
+shells, thin dimension is 
+sort thickness this wall 
+we need to write a formula 
+volume a shell in terms 
+height, radius that thin dr 
+let label parts diagram 
+here 
+so height shell 
+ill call h, thickness shell 
+ill call that dr, radius 
+shell ill call r 
+now, if i get scissors 
+mathematics here cut shell 
+you might imagine unrolling shell, 
+you end a slab like 
+this 
+big is this slab 
+well, slabs height is still h 
+thickness this slab is dr 
+long is this slab 
+well slabs long 
+circumference circle , is 
+pi r 
+multiplying three dimensions 
+will give volume slab 
+so youre guessing that volume 
+shell slab is pi rh dr 
+we say something a bit precise 
+well heres shell 
+instead calling this dr 
+lets think this a big cylinder, 
+a little cylinder drilled 
+so cylinders 
+heighth, h 
+lets say big cylinder a 
+radius, r 
+little cylinder a radius 
+little r 
+lets write formula 
+volume shell in between 
+so volume shell, right, is 
+volume big cylinder pi big r 
+squared h 
+minus volume little cylinder 
+that i drilled out, pi little r squared 
+h 
+in effect youll recognize that this, 
+this makes look a lot like a washer 
+heres difference, little r is 
+really close to big r 
+right, im thinking difference 
+dr 
+right, thin walled cylinder 
+well lets rewrite this volume anyhow 
+im going to factor this pi 
+big r squared, minus little r squared, h 
+lets rewrite this 
+this is a difference squares, so i 
+write that pie, big r plus little r 
+big r minus little r, h 
+thinking difference in 
+radii really small 
+so im going to rewrite this term dr 
+so this is pi, big r plus little r, 
+ill write h dr 
+i big r plus little 
+r 
+well this is sum two radia 
+i mean, if you think big r 
+little r really close together 
+i might well write this 
+little r 
+so ill write this pi little r 
+thats little rs, if im imagining big 
+r little r to close together, h 
+dr 
+youll see this is 
+formula that i got volume 
+a shell 
+this formula, formula volume 
+a shell, to write an integral 
+that calculates volume a solid 
+revolution 
+an example, lets take this region 
+this is graph y equals minus x 
+squared 
+i want to consider y greater 
+equal to , so consider this region 
+inside here 
+so let write y less equal to 
+minus x 
+so to emphasize this, this 
+region inside here, lets take that, 
+lets rotate that region around y 
+axis 
+to give this solid revolution, 
+im going to calculate volume that 
+solid 
+admittedly, we could this problem 
+without using shells, using washers 
+in that case, id chopping region 
+horizontal slices 
+horizontal slices, 
+i rotate around y axis would give 
+a disc 
+i integrate volumes 
+discs to give volume 
+solid revolution 
+lets try shells 
+in this case, ill cut 
+vertical slices ill rotate 
+vertical slices around y axes to 
+produce shells 
+ill integrate volumes 
+shells 
+to give volume whole solid 
+revolution 
+now, going to use formula, 
+volume a shell 
+lets look one shells 
+so, heres one thin rectangles, 
+i imagine, rotating this thin rectangle, 
+around 
+y axis to produce this shell 
+now, tall is this shell 
+well, height that shell is given 
+right here 
+minus x squared 
+radius shell is x 
+thickness that shell is dx 
+so, i put pieces together 
+i write volume that 
+one, one shell 
+itll pi, radius that 
+shell 
+height that shell, thickness 
+that shell 
+i to worry end points 
+integration 
+you might think that id integrating 
+x equals minus to 
+actually i to integrate 
+x equals to 
+rotating a thin rectangle 
+here also accounts stuff happening 
+here 
+so enough to integrate x 
+goes to 
+so ill write that here, x goes to 
+this integral will calculate volume 
+solid revolution 
+finally, a matter evaluating 
+integral fundamental theorem 
+calculus 
+to this integral 
+well ill pull constants, pi, 
+integral to x minus x 
+cubed, i combine two terms 
+i to write an 
+antiderivative here 
+pi, antiderivative x is x squared 
+, antiderivative x cubed is x to 
+th 
+im evaluating this x equals, , 
+x equals 
+im subtracting, alright 
+thats fundamental theorem 
+calculus 
+i plug in , i get 
+so answer is whatever i get 
+i plug in 
+and, thats pi, a half minus a th, 
+a half minus a th is a th 
+so, pi times a th, times a th 
+is a half 
+so, pi , is volume solid 
+revolution 
+we 

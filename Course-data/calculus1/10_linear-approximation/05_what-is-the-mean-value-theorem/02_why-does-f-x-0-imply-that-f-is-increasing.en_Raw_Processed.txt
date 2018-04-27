@@ -1,0 +1,142 @@
+music 
+mean value theorem 
+applications connects derivative 
+information back to information 
+original function 
+well, heres a theorem 
+suppose derivative function 
+so im assuming a differential 
+function, is positive, greater 
+zero open interval 
+function is an increasing 
+function, meaning that sends, bigger 
+inputs to bigger outputs 
+you probably already believe that 
+statement 
+mean value theorem lets us verify 
+that actually true 
+okay, so lets prove, this result 
+im going to pick, two points a b, 
+i want to make sure that i pick in 
+order 
+so im going to pick b bigger a so i 
+talk interval a b 
+right 
+so ill pick two points 
+im going to apply mean value 
+theorem to open interval a,b 
+thats ok im going to pick a 
+b to in this open interval 
+thats mean that f differentiable 
+satisfies conditions mean value 
+theorem 
+continuous closed interval a, b 
+will differnetial open 
+interval a, b 
+okay 
+so mean value theorem tells to 
+look f v minus f a b minus 
+a, conclusion is that this is 
+derivative f mystery point in 
+between a b 
+good news is i dont know much 
+derivative i know 
+derivative is positive 
+so i know that f b minus f a b 
+minus a is positive 
+thing that i know is that b is 
+greater a that means 
+denominator here b minus a is also 
+positive 
+so ive got mystery number divided 
+positive is positive 
+that means this numerator must also 
+positive 
+so f b minus f a is positive 
+now, if i add f a to sides, i get 
+that f b is bigger f a 
+if f sends bigger inputs to bigger outputs 
+f is increasing 
+increasing means that a bigger input is 
+sent to a bigger output 
+so if b is greater a f b is 
+bigger f a this argument works 
+a b in open interval 
+i know derivative is positive 
+so im going to conclude that f is an 
+increasing function, is exactly 
+i wanted to show 
+so if derivatives positive a whole 
+interval, functions increasing 
+that interval 
+important to point that i 
+needed to know sign, i g n 
+derivative that entire interval 
+mean value theorem ends 
+picking a single point, that point c, 
+itll examine derivative 
+in order to cover bases right 
+i dont know point c mean 
+value theorem might make look 
+ive got to control sign i g n 
+derivative entire interval 
+alright, i play game 
+sign derivative is negative 
+so, if i know sign sig derivative 
+is negative open interval i 
+include that f is a decreasing function 
+and, this is an application 
+mean value theorem 
+lets see proof 
+so, im going to start 
+picking two points a,b in opening 
+interval ill pick so that 
+b is greater a so i talk 
+interval a,b 
+applying mean value theorem, 
+i look at, f b minus, f a 
+b minus a 
+mean value theorem promises 
+that this is derivative point, 
+i dont know c is 
+derivative point 
+i know that derivative 
+point is negative so this must 
+negative 
+b minus a is positive bs 
+bigger a 
+so ive got a number i dont know divided 
+a positive number is negative 
+that means that f b minus f a must 
+negative 
+i add f a to sides i 
+conclude that f b is less f a 
+in words, f sends bigger inputs to 
+smaller output 
+since f sends bigger inputs to smaller 
+outputs, f is a decreasing function 
+seeing that mean 
+value theorem lets relate information 
+derivative, in this case 
+fact that sign derivative is 
+negative 
+back to information original 
+function, in this case functions 
+decreasing 
+alright, well lets summarize weve 
+learned thus far 
+so here applications mean 
+value theorem 
+if f is differentiable open 
+interval depending to happens 
+we know something f that 
+interval 
+so if derivative is identically zero, 
+if derivative is equal to zero 
+matter i plug in, f is constant 
+that interval 
+if derivative is positive matter 
+i plug in, f is increasing 
+that interval 
+and, if derivative is negative, f 
+is decreasing that interval 

@@ -1,0 +1,127 @@
+music sometime in future, 
+going to see following derivative 
+rule 
+but, i want to mention so we 
+see an example derivatives 
+play in practice 
+derivative x is x 
+you might already believe this if you 
+believe power rule, 
+right 
+derivative xn is nxn so, if n 
+is , ive got that derivative 
+xn, , is n, , times xn 
+conveniently, 
+this is really this, 
+written here square root 
+symbol instead exponents 
+we use this derivative rule to help 
+explain certain numerological 
+coincidences 
+lets take a look 
+look, is , okay, so 
+keeps going forever 
+irrational 
+but, this is bizarrely close to 
+instead saying close to 
+is this a coincidence this isnt a 
+coincidence 
+look 
+square is is 
+im really here is wiggling 
+input 
+im going , to , 
+in words, im trying to calculate 
+, wiggling input a 
+bit 
+derivative calculate well, 
+derivative calculates ratio 
+between output change to input change 
+so, wiggled a little bit 
+is minus much i 
+change input times ratio 
+much i expect output change 
+compared to input change 
+now, we try to calculate 
+derivative , 
+whats derivative , well, 
+
+is , so 
+is , is 
+look, is so close to 
+is 
+and, i shift input one, 
+this derivative calculation is suggesting 
+that output shifted 
+, indeed is 
+this is a great example calculus 
+yes, you could asked calculator 
+to compute , you couldnt 
+asked calculator to tell you 
+is that answer so mysteriously 
+close to 
+in short, calculus is 
+calculating 
+answers, 
+reasons explanations 
+stories that human beings tell to 
+that number 
+another 
+but, thats say that numbers 
+arent fun to play themselves, 
+we use this trick to 
+amazing feats like , we try to 
+estimate 
+i know is 
+im trying to say something 
+im trying to wiggle input a 
+little bit 
+well, derivatives something to say 
+that 
+, , would 
+, is , plus much i expect 
+output to change 
+i wiggled input, 
+i expect output to change 
+amount 
+well, derivative is measuring 
+much i expect output to change 
+so, im going to take derivative 
+function , square root 
+function , im going to multiply 
+much im wiggling input this 
+will much i expect output to 
+change i change input 
+now, in this specific case, whats 
+derivative well, thats , 
+is is , is 
+so, i would expect to 
+i expect wiggling 
+input to wiggle output 
+
+this is pretty good 
+theres actually two different ways to 
+tell if this isnt a bad guess 
+heres heres one way to tell 
+whats whats well, 
+repeating 
+and, whats actual value 
+
+look, pretty close to plus this 
+thats pretty good 
+another way to see that this isnt a 
+bad guess is to take , 
+square 
+i square , i get 
+this is , is 
+small number 
+so, either way you look it, 
+pretty good to guess is 
+this, 
+derivatives 
+again, derivatives win 
+relating input change to 
+output change, able to estimate 
+values functions that would 
+hard to access directly 
+music 

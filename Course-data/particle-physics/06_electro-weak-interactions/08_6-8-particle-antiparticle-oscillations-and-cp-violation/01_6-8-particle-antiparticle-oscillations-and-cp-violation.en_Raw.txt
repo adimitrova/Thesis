@@ -1,0 +1,205 @@
+[music]
+in the sixth module we
+are discussing weak interactions.
+and in this eighth video, we will
+talk about the violation of the cp
+symmetry between particles and
+antiparticles by weak interactions.
+after following this video you will
+be able to describe the condition for
+oscillation between particles and
+antiparticles and their mechanism.
+and you will be able to explain
+the violation of the joint symmetry cp in
+the quark sector.
+the cabibbo-kobayashi-maskawa matrix must
+be unitary but not necessarily real.
+this allows a non-trivial complex
+phase which cannot be removed
+by a global rotation in flavor space.
+the existence of such
+a phase has very important
+consequences that we will
+discuss in the following.
+but first a reminder.
+we already saw in video 6.3,
+that the weak interaction
+maximally violates parity p.
+a good example is the Ôê+ decay.
+the dominant decay channel is 
+Ôê+ -> ‚µ+ nu_‚µ.
+the neutrino produced in the decay
+must be left-handed because of
+the structure of the interaction.
+as the pion is a scalar particle,
+the ‚µ+ must also be left-handed.
+which is allowed to the extent
+that is mass is non-negligible and
+allows it to have the ‚´‚†wrong‚†‚ª helicity.
+the mirror decay, on the contrary,
+which will produce ‚µ+ of the 
+‚´‚†correct‚†‚ª helicity is not observed at all,
+because the w does not interact
+with right-handed neutrinos.
+this explains why the decay into
+an electron, Ôê+ goes to electron and a
+left-handed electron neutrino is so
+much this disfavored,
+despite it's much larger
+phase space factor.
+the small mass of the electron requires
+it much more to have the ‚´‚†correct‚†‚ª
+helicity and thus suppresses
+the amplitude of this process.
+the decay of the charged pion
+violates at the same time the
+charge conjugation symmetry c.
+under this operation we obtain
+a reaction that is forbidden by the fact
+that the the w does not couple at
+all to left-handed antineutrinos but
+only to the right-handed antineutrino.
+since the symmetries of c and
+p are both violated in a maximum
+fashion by charged weak interactions,
+one might expect that the combined
+symmetry cp will be respected.
+this is indeed the case in
+the example shown so far.
+for the pion, it is simple to
+verify that the operation cp
+converts the Ôê+ decay
+into the Ôê- decay,
+with the good helicity for the neutrinos.
+but the bad ones for muons are admitted
+because muons are non-relativistic.
+this processes are therefore cp
+eigenstates with the same amplitude.
+but this is not the case for
+all the inter-generation weak
+processes mediated by the w boson.
+let's look at the neutral mesons,
+like k0, which contains a d quark and
+an sbar quark, or b0, which
+contains a d quark and a bbar quark.
+these can be converted into their own 
+antiparticle by a second-order process.
+this reaction is obviously
+only possible for
+particles that do not
+carry any kind of charge.
+the pseudoscalar meson k0, for example,
+is an eigenstate of parity but
+not of charge conjugation because
+this operation changes strangeness.
+k0 contains an antiquark sbar,
+so it has strangeness plus 1.
+k0-bar contains a quark s, so
+it has strangeness -1.
+therefore neither k0 nor
+k0-bar are eigenstates of cp.
+but one can construct
+linear combinations, k1 and
+k2, that are eigenstates of cp.
+if cp is conserved, it should be these two
+states which decay by weak interactions.
+if the eigenvalue of cp were
+conserved by weak interaction,
+the eigenstates k1 and
+k2 will decay by weak forces into final
+states which contains two pions and
+three pions, respectively.
+these final states have
+the right cp properties.
+this is approximately true.
+the states k1 and k2 are almost
+identical to the particles k0_s and
+k0_l found in the list
+of the particle data group.
+because of the two very different phase
+space factors, one finds that the lifetime
+of the k0_s is much shorter
+than the one of the k0_l,
+which explains their name.
+but their identification 
+k0_s almost equal to k1 and
+k0_l equal to k2 is not perfect.
+first, the two masses
+are not quite the same,
+they differ by some ‚µev.
+the mass difference produces
+oscillation between particles and
+antiparticles in time,
+because both states are not evolving
+with the same velocity when their energy
+is the same.
+imagine a k1 meson at 
+t = 0 at rest in vacuum.
+its wave function evolves according to
+its mass am_1 and width gamma_1.
+the probability density to find k1 at time
+t is given by the evolution equation for
+free particles.
+the same reasoning is valid for k2 but
+with mass m_2 and width gamma_2.
+since the strong interaction conserve
+flavors, including strangeness,
+the state produced by strong
+interaction will have a definite
+strangeness, like k0 or k0-bar.
+if one produces, for instance,
+a k0 at t = 0,
+we'll have a mixture of equal
+quantities of k1 and k2 at that time.
+now the two components
+are evolving differently
+because of the small
+mass difference ‚àÜm.
+at a later time t,
+we therefore find a different mixture.
+if we thus measure the strangeness
+of the state as a function of time,
+for example by a stronger interaction,
+we find that it
+oscillates between k0 and
+k0-bar with the frequency ‚àÜm.
+so far the combined symmetry
+cp is still respected.
+but one finds that
+the long-lived particle,
+k0_l, which is almost equal to k2,
+has a low probability to decay into Ôê+ Ôê-, 
+a state which has the wrong cp eigenvalue. 
+one must thus admit that k0_l also
+contains a small amplitude of k1.
+the coefficient epsilon
+is 2.3 10^-3,
+which is certainly small, but not 0.
+consequently, charged weak
+interaction violates also
+the combined symmetry cp,
+but only a little bit.
+this means that the amplitudes
+of charged weak interaction for
+matter and
+antimatter are slightly different.
+so nature has therefore foreseen
+an objective way to distinguish them.
+a complex phase in
+the cabibbo-kobayashi-maskawa
+matrix allows to introduce this
+little asymmetry in the mixing of quark
+states involved in weak interactions,
+with a phase angle theta,
+which is about 45 degrees.
+this describes the phenomenon using
+the ckm matrix, but does not explain it.
+cp violation in weak interaction
+is a subject of active current
+research both in the kaon sector and
+in the b0 sector.
+the next video will discuss
+neutrino interactions
+which are among the most rare
+processes in particle physics.
+[music]

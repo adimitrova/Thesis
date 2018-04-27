@@ -1,0 +1,85 @@
+music 
+im going to blow this balloon 
+lets suppose that im blowing air 
+that balloon a constant rate, so 
+balloons volume is changing a constant 
+rate 
+quickly is radius balloon 
+changing 
+we model balloon a sphere 
+recall volume a sphere in terms 
+radius r 
+volume a sphere radius r is 
+rds pi r cubed 
+so fast radius change i 
+blow balloon 
+so ive got original equation 
+volume a sphere radius r 
+im going to differentiate sides 
+respect to time 
+so derivative v, respect to 
+time, is im going to write dv dt 
+derivative side, 
+respect to time, weve gotta think a 
+little bit 
+rds pi constants 
+so i pull derivative 
+ive still gotta figure 
+time derivative r cubed is 
+to figure time derivative r 
+cubed, im regarding r, remember, a 
+function 
+so i use chain rule, 
+derivative cubing is times inside 
+function squared times derivative 
+inside function, so dr dt 
+so dv dt is rds pi times times r 
+squared times dr dt 
+lets solve dr dt, rate change 
+in balloons radius 
+right, so im going to solve dr 
+dt 
+well, first thing i is, ive got a 
+dividing , a multiplying 
+so i dont need to 
+operations 
+so this is pi r squared times dr dt 
+side is dv dt 
+so ill divide sides pi r 
+squared 
+ill find that, dr dt is dv dt 
+divided pi r squared 
+we really make use this equation 
+i, this help us 
+yeah, this makes sense 
+we started original equation 
+volume a sphere in terms 
+radius 
+i differentitated this equation 
+solved dr dt 
+this equation is telling is 
+that change in radius, is 
+dr dt is measuring, rate change in 
+size balloon, well, depends 
+quickly volumes changing, 
+is dv dt 
+also depends upon radius, 
+right 
+this is this r squared in denominator 
+in particular, a really big balloon 
+doesnt get a whole lot bigger a given 
+change in volume, compared to a little 
+tiny balloon, gets quite a bit 
+bigger change in volume 
+to that r squared in 
+denominator 
+balloons radius is small, a 
+given change in volume results in quite a 
+dramatic change in radius 
+radius is large, r 
+squared in denominator means that dr 
+dt is much smaller 
+change in volume 
+another breath, yeah, i mean, 
+things still getting bigger, much 
+less dramatically 

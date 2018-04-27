@@ -1,0 +1,184 @@
+music information 
+derivative connect back to information 
+original function 
+there is a technical tool that connects 
+this differential information to 
+value function that tool is 
+mean value theorum 
+well heres a statement mean value 
+theorem 
+suppose that f is continuous closed 
+interval between a b, 
+differentiable open interval a b 
+so thats setup 
+f is a pretty nice function 
+there exist point in between a 
+b, so a point in interval a b 
+so that derivative function 
+point c, is equal to this 
+is really calculating slope 
+between point a f a 
+b f b 
+that statement seems really complicated 
+lets try to boil that to a statement 
+we really believe in 
+well, heres one interpretation 
+if that function is giving you position 
+input to that function is time, so 
+that derivative that function is 
+velocity, that formula is saying 
+that average velocity is achieved, 
+point instantaneously 
+right 
+that fraction, that difference ratio, is 
+calculating average velocity 
+instantaneous velocity is 
+derivative 
+mean value theorem is saying that 
+equal point in between 
+lets go back to official 
+statement mean value theorem 
+so here again, is statement 
+mean value theorem, right, a nice enough 
+function that theres point in 
+middle so that derivative, 
+instantaneous velocity is equal to this 
+is, you know, if you like 
+calculating average velocity 
+we take a look this a graph 
+well might help even 
+right heres graph 
+function that ive made 
+ive picked points a b 
+certainly a nice enough function 
+i mean a continuous function a 
+differentiable function, ive picked 
+points a b 
+heres f a f b ive 
+drawn this red line that connects 
+point a f a b f b 
+slope that line is exactly 
+this quantity calculates 
+right, so ill label this slope 
+that secant line 
+now, if asserting existence 
+point in between, derivative 
+value slope this secant 
+line you know, sort looks like, 
+this picture, maybe that point is 
+here 
+and, yeah, looks like if i draw a 
+tangent line to curve that point, 
+slope that tangent line, is 
+derivative point c, is 
+slope that red secant line 
+right 
+so, in statement mean value 
+theorem, this f prime c, thats 
+slope tangent line 
+to graph function point 
+c, this statement is asserting that 
+slope tangent line point in 
+between is equal to slope 
+secent line between a f a, b f 
+b 
+meanvalue theorem is often told a 
+story somebody driving a car 
+well heres story 
+noon, youre in city a, 
+pm 
+youre driving car youve arrived 
+in a city b, is miles away 
+city a 
+youre driving car youve arrived 
+in a city b, is miles away 
+city a 
+meanvalue theorem say 
+well, mean value theorem tells you 
+that point in between, 
+derivative is equal to slope 
+secant line 
+in this story means, that 
+point journey, 
+speedometer 
+said miles per hour 
+speedometers reporting 
+instantaneous speed, right 
+thats this, derivative 
+position respect to time, 
+point in between 
+im claiming that point 
+said miles per hour, thats 
+average speed miles 
+per hour, right 
+in one hour you traveled miles 
+thats exactly this difference 
+quotient is calculating 
+so point along journey, you 
+must exceeded speed limit 
+alright, so this is interesting, 
+mean value theorem, really great 
+is this used for, mean 
+value theorem actually help us understand 
+anything a function we know 
+something derivative 
+well, heres one important 
+application a theorem 
+youve got function f 
+differentiable open interval 
+that interval derivative is 
+identically zero, so derivative is 
+zero matter i plug in 
+that function is constant that 
+interval 
+so a really exciting result, 
+relating information 
+derivative back to information 
+value function 
+saying that if derivative is 
+equal to , that function outputs one 
+value 
+a constant function 
+so lets prove this statement using 
+valuable theorem, mvt, 
+mean value theorem 
+well here we go 
+so i want to prove this im going 
+to is im going to pick two points, 
+ill call a b, in interval 
+since f is differentiable whole 
+interval ive picked a b inside 
+that interval, this is actually enough to 
+guarantee that hypotheses, mean 
+value theorem, applied 
+functions continuous closed 
+interval differentiable open 
+interval a b 
+okay, that means value theorem 
+applies 
+so f b minus f a b minus a is 
+equal to derivative f 
+mystery point c in between a b 
+matter i evaluate 
+derivative assumption here is that 
+derivative is identically 
+so that is equal to 
+this means that matter a b i 
+pick f b minus f a b minus a is 
+equal to 
+a fraction equal to 
+way fraction is equal to is 
+if numerators equal to 
+so that means that f b minus f a is 
+equal to 
+now, if i add f a to 
+sides, i conclude that f b is equal to 
+f a 
+im really saying here, is that 
+matter a b i pick, f a 
+is equal to f b 
+so, f, is a constant function, right 
+two output values so 
+there must one output value 
+is exactly means to say 
+function is constant 

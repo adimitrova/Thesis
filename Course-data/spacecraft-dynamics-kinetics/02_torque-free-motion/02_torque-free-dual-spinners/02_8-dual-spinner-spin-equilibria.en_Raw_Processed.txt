@@ -1,0 +1,226 @@
+now, lets look this 
+going to start to is, 
+talk stability 
+soon we talk stability, 
+we always talk small 
+departures right 
+this is an equilibrium 
+this is an equilibrium 
+equilibrium nothing 
+to stability 
+equilibrium means, 
+if i put particular side state 
+theta is equal to degrees, if i 
+measuring this is zero, this would 
+happens if i small 
+motions stability 
+equilibrium means, 
+if you this this particular state, 
+state rates will go to 
+x go to 
+we spin stability 
+a single rigid body, going to 
+look conditions will this 
+vanish, if i nt this 
+if i this, you see, 
+conditions will omega , 
+, dot go to zero 
+one case is course trivial, 
+you make rates 
+that exactly a spinning condition, 
+going to a trivial solution 
+if you something else though, 
+way you make general 
+inertias, way you make 
+three terms go to zero is 
+andre 
+axisymmetric 
+doesnt to axis, 
+we look axisymmetric 
+if axisymmetric one 
+axis, this could go to says, 
+omega is constant, right 
+then, you to make two 
+go to if omega is a non value 
+way vanish, 
+inertias cause 
+spherical symmetry, is omega 
+omega would to zero, right 
+thats one way, yes 
+general inertias, if inertia 
+differences never zero, howd you make 
+three go to zero without 
+three omegas go to zero 
+to big omega inaudible 
+well, 
+we dont big omega right 
+lets ignore real 
+if you single rigid body 
+spencer 
+would you spin 
+axis maximum inertia 
+then, spinning 
+two axes 
+you could 
+in fact, 
+you could spin 
+principal axes 
+if omega is nonzero, lets say 
+omega axis maximum inertia 
+omega is nonzero, this is nonzero 
+omega is 
+i got times , something finite times , 
+is also something times , 
+right vanishes 
+this is we identify quickly 
+mathematics three equilibrium 
+spins general inertia is 
+appears spin to b, b b 
+also we saw graphically 
+in pole hole plots 
+we discussed several different ways, 
+right 
+three spin equilibrius 
+in real life, we dont spin 
+spacecraft around intermediate axis 
+leased axis we to worry 
+anticipation chaotic behavior 
+so, really limits design to 
+spin axis max inertia 
+geostationary satellites tend to tall, 
+boeing i believe big 
+tubular shapes want to spin so 
+theyre always pointing earth 
+so, want to spin 
+least axis inertia 
+we know is an issue energy 
+loss, always pointing earth 
+so, this dual spinner allows us 
+to spin actually axis 
+i could even spin dual spin 
+axis intermediate inertia 
+right spin conditions 
+well develop i make stable 
+so this is a way to provide passive 
+stability without dual spinner, 
+you could long term spin 
+axis max inertia 
+wheel we add this stuff 
+we look mathematics 
+i show you that we 
+equilibrias 
+conditions if we 
+pick right wheel speeds, 
+i make one 
+stable without feedback 
+so rigid body, 
+we to spin b, , 
+equilibrias 
+now, lets 
+exercise a wheel 
+going to say this 
+wheel a dual spinner, 
+nominal case is wheel 
+is moving a constant rate 
+that means omega dot vanishes 
+now, i want to find an equilibrium, 
+is omega dot, dot, dot 
+im going to non omega , 
+s, 
+i dont want everything to stationary 
+thats back to trivial answer, 
+i also want to a non omega 
+we make that work 
+cough 
+right, 
+you kind basically 
+go deductions 
+like sherlock holmes, 
+you deduct cant possible 
+whatever is left, however improbably, 
+must answer, right 
+so if we start here, this is already 
+zero a constant wheel speed 
+way to make this zero, again, 
+looking general inertia still, 
+in this case, is either to omega 
+to zero 
+okay, lets pick omega 
+right 
+start deduction 
+if omega is zero, 
+this is going to 
+this is a finite wheel speed 
+times going to 
+you go hey, i like this 
+okay 
+now, omega 
+if this is going to go to , 
+you could make omega , 
+if we dont want 
+three to 
+if you make omega , 
+omega to 
+this term goes to 
+omega times something 
+if omega is , 
+you nonzero times nonzero 
+you dont get a second 
+derivative omegas 
+a zero derivative second omega 
+so, that wouldnt work 
+so, instead you see 
+is you make omega two zero 
+that vanishes, cancels this, 
+makes this zero 
+way you make this one zero 
+is to take omega three thats zero 
+even if omega one is non zero 
+doesnt matter 
+wheel nonzero, 
+doesnt matter 
+theyre multiplied 
+times something zero 
+so, thats going to equilibrium 
+you notice first axis is also, so 
+i an omega one thats nonzero 
+that one axis is also axis 
+thats a spin axis wheel 
+thats this came 
+axis, 
+you cant really make this work 
+i could picked omega three, 
+went logic, you end 
+answer this stuff 
+so, instead able to spin 
+equlibrias principle axes 
+space craft a dual spinner, 
+youre constrained to 
+an equilibria 
+spin axis wheel 
+if i a tumble omega 
+omega i end here 
+cross coupling terms that will give 
+non derivatives right that wouldnt 
+an equilibrium spin would 
+a general tumble that you would 
+so, yes ansel 
+you talking this 
+passive you would need kind 
+big bigger right 
+if you to actually carry this 
+you would spin 
+well get to spin part in a few 
+slides, probably tuesday next week 
+here weve 
+axed spin condition 
+then, you a little motor 
+that keeps spinning a fixed rate 
+theres external feedback that says 
+look stars, look horizon, 
+look everything stabilize 
+holding a fixed speed 
+thats 
+big omegadot zero 
+yes, so dual spinner, 
+nominal case is big omega dot to zero 

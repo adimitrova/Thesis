@@ -1,0 +1,533 @@
+1
+00:00:00,000 --> 00:00:09,285
+[SOUND] So here's a table of values of 
+the function F of X equals sin 1 / X. 
+
+2
+00:00:09,285 --> 00:00:14,100
+F of one is really sin of one, it's like 
+8.. 
+
+3
+00:00:14,100 --> 00:00:21,322
+F of 1. which is really sin of one over 
+1. sin of 10 -.5. 
+
+4
+00:00:21,322 --> 00:00:25,030
+F of 01.. 
+This will be sine of 100, it's also about 
+
+5
+00:00:25,030 --> 00:00:27,889
+-0.5. 
+F of 0.001, which is like sine of 1000, 
+
+6
+00:00:27,889 --> 00:00:33,062
+well that's 0.8 and some more, right? 
+So the question is these numbers aren't 
+
+7
+00:00:33,062 --> 00:00:36,261
+really getting close to anything in 
+particular. 
+
+8
+00:00:36,261 --> 00:00:41,639
+Can you really say that if you evaluate f 
+at values which are close to but not 
+
+9
+00:00:41,639 --> 00:00:46,608
+equal to zero, that the outputs are 
+actually getting close to anything in 
+
+10
+00:00:46,608 --> 00:00:49,603
+particular. 
+I mean this is positive, negative, 
+
+11
+00:00:49,603 --> 00:00:54,300
+negative, positive, negative, positive, 
+negative, it's looking pretty bad. 
+
+12
+00:00:55,680 --> 00:00:58,227
+Instead of a table, let's look at a 
+graph. 
+
+13
+00:00:58,227 --> 00:01:02,391
+Here, I've got a graph of the funtcion f 
+(x) = sin 1 / x. 
+
+14
+00:01:02,391 --> 00:01:06,741
+And you see the middle of this graph is 
+just that horrible green blob. 
+
+15
+00:01:06,741 --> 00:01:09,860
+Right? 
+It's really hard to make out any detail. 
+
+16
+00:01:09,860 --> 00:01:14,701
+You might think that's just a consequence 
+of the fact that I'm drawing this graph 
+
+17
+00:01:14,701 --> 00:01:18,703
+with such thick lines. 
+You know, and if I used thinner lines to 
+
+18
+00:01:18,703 --> 00:01:24,180
+draw my graph, maybe I could, you know 
+get rid of this green blob and really see 
+
+19
+00:01:24,180 --> 00:01:27,924
+some detail. 
+Even if I dial down the size of the lines 
+
+20
+00:01:27,924 --> 00:01:32,984
+that I'm using to draw this graph, the 
+blob thing is still there, you know. 
+
+21
+00:01:32,984 --> 00:01:36,520
+And it's really there in the graph of the 
+function. 
+
+22
+00:01:36,520 --> 00:01:42,205
+Even if these lines were true lines, zero 
+thickness, it wouldn't be possible to fit 
+
+23
+00:01:42,205 --> 00:01:47,266
+even a single atom next to the Y axis 
+without touching the graph of this 
+
+24
+00:01:47,266 --> 00:01:50,649
+function. 
+The graph is oscillating wildly near 
+
+25
+00:01:50,649 --> 00:01:54,080
+zero. 
+Even if your input is very close to zero 
+
+26
+00:01:54,080 --> 00:01:57,810
+your output could be anything between -1 
+and 1. 
+
+27
+00:01:57,810 --> 00:02:08,762
+So in light of this evidence, the limit 
+of sine 1 / x as x approaches 0 does not. 
+
+28
+00:02:08,762 --> 00:02:14,643
+[SOUND] exist. 
+Which sometimes I'll abbreviate DNE, for 
+
+29
+00:02:14,643 --> 00:02:18,676
+does not exist. 
+what does it even mean to say it doesn't 
+
+30
+00:02:18,676 --> 00:02:20,970
+exist? 
+What do we mean by the definition of 
+
+31
+00:02:20,970 --> 00:02:23,814
+limit? 
+To say the limit equals something means 
+
+32
+00:02:23,814 --> 00:02:28,484
+that I can make the output as close as I 
+want to l by making x close to a. 
+
+33
+00:02:28,484 --> 00:02:33,722
+So when I say this limit doesn't exist, I 
+mean it's not the case that this limit is 
+
+34
+00:02:33,722 --> 00:02:37,319
+equal to anything, okay? 
+If you tell me this limit is some 
+
+35
+00:02:37,319 --> 00:02:41,089
+positive number, well look. 
+When I evaluate the function at a number 
+
+36
+00:02:41,089 --> 00:02:45,037
+very close to 0, the output is negative. 
+So the limit is probably not some 
+
+37
+00:02:45,037 --> 00:02:49,089
+positive number but there's also inputs 
+very close to zero that give positive 
+
+38
+00:02:49,089 --> 00:02:52,517
+outputs so that the limit is pulling out 
+a negative number either. 
+
+39
+00:02:52,517 --> 00:02:56,621
+Limit is pulling out zero either cause 
+none of these numbers are getting close 
+
+40
+00:02:56,621 --> 00:02:57,920
+to zero. 
+So in this sense. 
+
+41
+00:02:57,920 --> 00:03:02,049
+This limit just doesn't exist because 
+it's not the case that this limit is 
+
+42
+00:03:02,049 --> 00:03:06,013
+equal to anything in particular. 
+If you tell me this limit is equal to l, 
+
+43
+00:03:06,013 --> 00:03:09,592
+I'm going to show you numbers close to 
+zero which aren't close to l. 
+
+44
+00:03:09,592 --> 00:03:12,180
+Let's see another example along the same 
+lines. 
+
+45
+00:03:12,180 --> 00:03:18,713
+This is a particularly confusing example 
+because in the function f(x)x) = sine pi 
+
+46
+00:03:18,713 --> 00:03:22,582
+/ x. 
+The function evaluated at 1 is 0. 
+
+47
+00:03:22,582 --> 00:03:28,600
+That's pretty clear because that is sine 
+of pi and sine of pi is zero. 
+
+48
+00:03:28,600 --> 00:03:33,053
+About the function at 0.1, I'm counting 
+that's also equal to zero. 
+
+49
+00:03:33,053 --> 00:03:37,781
+The function at 0.01, that is also zero. 
+This can be kind of confusing. 
+
+50
+00:03:37,781 --> 00:03:43,262
+When you take a look here, I typed in sin 
+pi divided by 0.01 on to my calculator. 
+
+51
+00:03:43,262 --> 00:03:46,620
+This is calculating the function's value 
+at 01.. 
+
+52
+00:03:46,620 --> 00:03:51,944
+If I ask my calculator to do this, it is 
+not telling me the answer zero, right? 
+
+53
+00:03:51,944 --> 00:03:56,853
+The calculator's giving me this, 
+admittedly, a very small number, right, E 
+
+54
+00:03:56,853 --> 00:04:00,587
+-11 here. 
+But it's still not actually zero. 
+
+55
+00:04:00,587 --> 00:04:03,698
+So, can I convince you that this is even 
+true? 
+
+56
+00:04:03,698 --> 00:04:07,640
+That the functions value at 01. actually 
+is equal to zero. 
+
+57
+00:04:13,060 --> 00:04:23,040
+What is f (0.01)? 
+Well it's the same as sine, of pi / 0.01. 
+
+58
+00:04:23,040 --> 00:04:27,080
+Now here I'm taking pi and I'm dividing 
+it by 0.01. 
+
+59
+00:04:28,200 --> 00:04:33,387
+That's the same thing as what? 
+That's the same thing as multiplying a 
+
+60
+00:04:33,387 --> 00:04:36,619
+100. 
+I'm dividing by a hundredth, that's the 
+
+61
+00:04:36,619 --> 00:04:41,881
+same as multiplying by a 100. 
+So this function at.01 is sine of 100 pi. 
+
+62
+00:04:41,881 --> 00:04:46,317
+What's sine of 100 pi? 
+Well, think back to what the graph of 
+
+63
+00:04:46,317 --> 00:04:52,732
+sine looks like. 
+Here's a graph of sine, zero to two pi. 
+
+64
+00:04:52,732 --> 00:04:58,452
+If I do it again. 
+Here it is at four pi, and I drew it 
+
+65
+00:04:58,452 --> 00:05:02,202
+again. 
+Here it is at six pi, and I'm going to 
+
+66
+00:05:02,202 --> 00:05:07,050
+keep on going. 
+And eventually, I'm going to get to 100 
+
+67
+00:05:07,050 --> 00:05:10,891
+pi. 
+And at that point, sign really is going 
+
+68
+00:05:10,891 --> 00:05:15,921
+to be equal to zero. 
+Calculators are great, they're also 
+
+69
+00:05:15,921 --> 00:05:20,312
+terrible. 
+This calculator can't really calculate 
+
+70
+00:05:20,312 --> 00:05:26,257
+with pi, all it can do is calculate with 
+some approximation to pi. 
+
+71
+00:05:26,257 --> 00:05:26,440
+We can use our human mind to evaluate 
+this function exactly. 
+
+72
+00:05:26,440 --> 00:05:33,356
+In light of this evidence, you might be 
+tricked into believing that the limit of 
+
+73
+00:05:33,356 --> 00:05:40,619
+f(x) as x approaches 0 is equal to 0. 
+After all these points are approaching 
+
+74
+00:05:40,619 --> 00:05:45,634
+zero, and function evaluating each of 
+these points is zero. 
+
+75
+00:05:45,634 --> 00:05:52,028
+So maybe that means that this is true. 
+So it looks like the limit is equal to 
+
+76
+00:05:52,028 --> 00:05:55,058
+zero. 
+But, what happens if I look at some other 
+
+77
+00:05:55,058 --> 00:05:58,107
+points? 
+We'll take a look at this example. 
+
+78
+00:05:58,107 --> 00:06:02,446
+Here's the same function, f of x equals 
+sign of pi over x. 
+
+79
+00:06:02,446 --> 00:06:08,154
+This function, if I evaluate it at 75. is 
+this, maybe a little bit mysterious 
+
+80
+00:06:08,154 --> 00:06:13,634
+number, negative 866. and so forth. 
+If I evaluate this function at 075. you 
+
+81
+00:06:13,634 --> 00:06:17,896
+get the same thing. 
+If I evaluate the function at 0075,. I 
+
+82
+00:06:17,896 --> 00:06:22,235
+get the same thing. 
+At 00075. I get the same thing, .000075, 
+
+83
+00:06:22,235 --> 00:06:25,660
+I get the same thing. 
+So, what's going on here. 
+
+84
+00:06:26,740 --> 00:06:29,584
+Well what is this number? 
+I mean 0.8666. 
+
+85
+00:06:29,584 --> 00:06:32,720
+This isn't just some sort of random 
+number. 
+
+86
+00:06:32,720 --> 00:06:36,367
+Right? 
+This is in fact negative the square root 
+
+87
+00:06:36,367 --> 00:06:41,805
+of three over two. 
+And it looks like this function at all of 
+
+88
+00:06:41,805 --> 00:06:47,529
+these points has the same value, negative 
+the square root of three over two. 
+
+89
+00:06:47,529 --> 00:06:53,253
+So does that mean that the limit as X 
+approaches zero of F of X, [SOUND] is 
+
+90
+00:06:53,253 --> 00:06:57,222
+equal to negative the square root of 
+three over two? 
+
+91
+00:06:57,222 --> 00:07:03,099
+[SOUND] I mean again all of these values, 
+.75.075.0075, these input values are 
+
+92
+00:07:03,099 --> 00:07:09,320
+approaching zero, and the functions value 
+at all of those inputs is the same. 
+
+93
+00:07:09,320 --> 00:07:13,754
+So, what gives, is the limit zero, is a 
+negative point A, which is it?. 
+
+94
+00:07:13,754 --> 00:07:18,390
+Okay, okay, I've been little bit too 
+tricky in picking my input points. 
+
+95
+00:07:18,390 --> 00:07:23,564
+Since the same function, F of X equals 
+Sin pie over X, and here, I am picking a 
+
+96
+00:07:23,564 --> 00:07:27,729
+collection of points, again approaching 
+zero, .7, .07, .007, .0007. 
+
+97
+00:07:27,729 --> 00:07:32,769
+Its getting closer and closer to zero. 
+But now, my output values are looking 
+
+98
+00:07:32,769 --> 00:07:36,263
+pretty random. 
+I mean, they are not over the same, for 
+
+99
+00:07:36,263 --> 00:07:39,488
+instance. 
+So this is, maybe some evidence, that, 
+
+100
+00:07:39,488 --> 00:07:46,440
+the limit. 
+Of sine pi over x as x approaches zero. 
+
+101
+00:07:46,440 --> 00:07:50,982
+Doesn't exist. 
+Here I've got a bunch of input points 
+
+102
+00:07:50,982 --> 00:07:57,883
+that are getting closer and closer to 
+zero but my output values at least don't 
+
+103
+00:07:57,883 --> 00:08:02,600
+appear to be getting close to. 
+We're not just learning. 
+
+104
+00:08:02,600 --> 00:08:07,404
+We're exploring. 
+[SOUND] I encourage you to cook up you 
+
+105
+00:08:07,404 --> 00:08:12,208
+own examples. 
+We've seen a couple examples now of where 
+
+106
+00:08:12,208 --> 00:08:16,489
+limits don't exist but can you come up 
+with more? 
+
+107
+00:08:16,489 --> 00:08:17,188
+[SOUND] 

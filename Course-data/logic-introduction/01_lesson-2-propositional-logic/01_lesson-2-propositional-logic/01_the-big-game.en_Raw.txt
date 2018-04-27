@@ -1,0 +1,60 @@
+finally as an exercise in using some of
+the concepts introduced in this section,
+let's consider the following problem.
+stanford people always tell the truth and berkeley people always lie.
+unfortunately, by looking at a person you cannot tell whether he is from stanford or berkeley.
+you come to a fork in the road and want to get to the football stadium down one fork, or you did not know which road to take.
+there is a person standing there. what
+single question can you ask him to help
+you decide which fork to take? there are a
+number of ways to approach this problem
+most interesting involves a question in
+which a person is asked. how we would
+answer if you were from stanford or if you
+were from berkley. however, we can also
+approach this problem without entertaining
+such meta-level questions. let's draw out
+a table with the set of all possible
+states of affairs, and leave columns for
+the question we want to ask and the
+response we want to receive. we want to ask a
+question that will list of one response.
+let's say true or one, if the stadium is
+to the left, and a different response, for
+example, false or zero, if the stadium is
+to the right. note that the response
+in each case may differ from the actual
+truth of the question depending on whether
+the informant is from stanford or from
+berkley. now, let's see what the actual
+truth value or question must be to have
+elicited this response. if the stadium is
+actually to the left, and the informant is
+actually from stanford, then we want a
+question that has value true. if the
+stadium is not to the left, and the informant is from stanford, then we want a
+question with truth value false. so it
+stands that if a person's going to tell
+the truth the value should be the same as
+the values in our response. the opposite
+is true for the berkley case, cases, if
+the stadium is to the left and the
+informant is from berkley, we want a
+question the has truth value of false
+since the informant were lying. if the
+stadium is not to the left and the
+informant is from berkeley then we want a
+question that has truth value true. now looking
+at our operator semantics tables, we see
+that this is exactly the set of true
+values assigned to the sentence left, if
+and only if su, stanford. so we can phrase
+this as a question as follows. is it the
+case that the left road is the way to the
+stadium if and only if you are from
+stanford. okay, that's not a particularly
+clever or simple question, but it will
+ellicit the right response. importantly
+the example illustrates that it's possible
+to solve problems of this sort using just
+the concepts we have seen so far.

@@ -1,0 +1,217 @@
+[music]
+in this 6th module,
+we are discussing weak interactions.
+and in this third video, we will go
+through the general properties of weak
+interactions, which are not
+quite like the others.
+after following this video, you will know
+about the nonconservation of parity for
+weak interactions.
+and the main vertices and
+charges which are relevant.
+weak interactions, in fact,
+do not deserve their name.
+their apparent weakness at low energy is
+due to the fact that they are transmitted
+by heavy particles,
+the neutral z, and
+the charged w‚± bosons.
+their propagator weakens the amplitude
+at low momentum transfer.
+their coupling constant, g and
+g‚êô, on the other hand,
+are of comparable magnitude
+as the electric charge e.
+indeed, they are connected by
+the condition of electro-weak unification,
+which involves the weinberg angle theta_w.
+its value is close to 30 degrees.
+so instead of three coupling constants,
+there's only one and an angle.
+the tangent of this angle is
+the ratio between g‚êô and g.
+at the same time, it links the masses of
+the weak bosons by 
+cos theta_w = m_w/m_z.
+feynman diagrams for typical charged and
+neutral weak interactions
+are shown in the two left graphs.
+comparison with the corresponding photon
+exchange diagram shows that the structure
+of weak interactions is quite
+similar to that of electromagnetism.
+the neutral component of weak interactions
+can even interfere with electromagnetic
+interactions when it acts
+between charged particles.
+the charged weak interaction is the only
+force that can change the flavor of matter
+particles.
+it can even mediate between members of
+different generations at the same vertex.
+there are however other major
+differences between electromagnetic and
+weak interactions.
+the weak charge is a quantity
+with two components,
+in contrast with a single component for
+the electromagnetic charge,
+and three components for the color charge.
+the weak charge is called weak
+isospin by analogy to spin.
+one characterizes particles by their total
+weak isospin t and its third component t_3.
+they determine the coupling
+constants g and
+g‚êô together with
+the electromagnetic coupling e.
+the weak force is transmitted by vector
+bosons, similar to the photon and
+the gluon, but very heavy.
+the w‚± mass is of the order of 80 gev,
+that of the z of order 90 gev.
+the two bosons carry
+themselves weak isospin, and
+can thus interact among themselves.
+in addition, charged bosons can
+obviously interact with the photon.
+weak interactions also
+do not conserve parity.
+thus, they produce polarization phenomena
+even from non-polarized initial states.
+this explains the first part of the small
+print at the bottom of this table.
+this non-conservation of parity is
+the most visible example of symmetries,
+which are respected by other interactions,
+but not by weak interactions.
+weak interactions do not even
+respect the combined cp symmetry,
+and are therefore the only known
+interaction which distinguishes between
+matter and anti-matter.
+we will discuss this in video 6.8.
+at the same time, and maybe even for
+the same reason, they are the only
+interactions which connect particles from
+different generations at a single vertex.
+they can thus not conserve flavor.
+this fact is well established for quarks.
+and also has been observed for
+leptons as we will see in video 6.7 and
+6.10, respectively.
+now let us first discuss the discovery
+of parity nonconservation in charged
+weak interactions.
+in 1956, based on the study of
+experimental data obtained by 
+c.s. wu, lee and yang concluded that
+weak interactions are not invariant
+under the operation of parity.
+in order to investigate their behavior
+under this transformation, wu and
+colleagues have designed an experiment
+that remains a classic of our discipline.
+it uses beta decay of neutrons n -> p e- nu_e-bar bound in co-60 nuclei.
+at low temperature of
+the order of 0.01 kelvin and
+in the presence of a magnetic field,
+the spin vectors of these nuclei with j=5
+are strongly aligned with
+the magnetic field direction.
+their decay,
+co-60 with j=5 into ni-60 with j=4
+can lead to two spin configurations.
+p and e denote momentum and
+energy of the emitted electron,
+and sigma denotes a unit vector in
+the direction of the spin of the nucleus.
+in case a shown on top,
+the electron is emitted in the direction
+opposite to the co-60 spin.
+in case b, it is emitted in
+the direction of the initial spin.
+any combination of
+the two cases is allowed
+by conservation of angular momentum.
+the experiment showed the angular
+distribution of case a exclusively.
+it does not admit a contribution,
+however small, of configuration b.
+this corresponds to a maximum
+violation of parity.
+indeed, conservation of parity
+would imply that the probabilities
+of the two configurations a and
+b are the same.
+this also means that
+charged weak interactions
+only admit a certain spin direction
+of participating fermions.
+in our example, the two spins of
+electron and neutrino must be aligned
+with that of the nucleus to
+conserve total angular momentum.
+in case a, the electron spin is
+antiparallel to its direction of motion.
+the antineutrino spin is parallel.
+so we find that the electron has
+negative helicity, it is left handed.
+the antilepton has positive helicity,
+it is right handed.
+this property of charged weak
+interactions can be generalized.
+as far as we know, the w only
+interacts with left-handed fermions,
+fermions of negative helicity.
+and right-handed antifermions,
+antifermions of positive helicity.
+charged weak interactions thus
+violate parity to a maximum extent.
+consequently, we assign left-handed
+leptons to doublets of weak isospin.
+right-handed leptons to singlets.
+in this way, left-handed matter
+fields carry a weak charge and
+are coupled to w and z.
+right-handed matter fields do not.
+in the same manner,
+quarks are assigned to doublets and
+singlets according to their helicity.
+for antimatter fields,
+the opposite is true.
+right-handed antileptons and
+antiquark carry weak isospin.
+left-handed ones do not.
+the w and z themselves belong to
+a triplet of weak isospin with t = 1.
+they can therefore
+interact among themselves.
+in addition, the w‚± obviously
+carries an electromagnetic charge and
+can interact with a photon.
+weak interactions conserve weak
+isospin such that the fundamental
+weak interaction vertices with
+matter are shown on this graph.
+here, l denotes a generic charged lepton.
+and nu_l a neutrino of the same flavor.
+q is an up-type quark.
+q‚êô is a down-type quark.
+the exact definitions we will reserve for
+later.
+w interactions change t_3 by one unit.
+so a charged lepton is
+transformed into a neutrino.
+an up-type quark is transformed into
+a down-type quark or vice versa.
+attention, the emitted quarks and
+neutrinos do not necessarily
+belong to the same generation.
+the interaction of the z boson keeps
+t_3 the same and conserves flavor.
+in the next video, we will present
+a prototype of w interactions,
+namely muon and tau lepton decay.
+[music]

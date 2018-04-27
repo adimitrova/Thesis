@@ -1,0 +1,27 @@
+hi welcome to first 
+segment spacecraft kinetics 
+in this section going to 
+talking equations motion 
+a space object 
+in fact, going to 
+start basic principles 
+going to go to a deformable body, 
+something that change shape, 
+going to move freeze to 
+a rigid body, is typical 
+many a spacecraft mission 
+in applications, studying 
+angular momentum this stuff spins 
+looking kinetic 
+energy objects 
+also showing you to 
+use principles to develop 
+equations motion 
+you need this 
+equations motion is a fundamental 
+property you to analytically derive, 
+so you demur to simulate 
+predict space 
+craft will actually 
+this is also often used 
+mission analysis tools 

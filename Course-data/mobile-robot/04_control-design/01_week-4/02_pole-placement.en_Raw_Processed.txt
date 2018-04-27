@@ -1,0 +1,301 @@
+so, in last lecture, we saw that 
+possible to pick eigenvalues 
+closed loop system in a way that 
+became equal to desired 
+eigenvalues 
+particular case point mass 
+robot 
+now, today, i want to a little bit 
+general 
+in terms of, we go 
+this for, arbitrary linear systems 
+again, whole idea here is that we 
+pick control gains that 
+actual eigenvalues closed loop 
+system, becomes equal to desired 
+eigenvalues 
+so, this is whole whole idea 
+philosophy behind this, this approach 
+so, lets say that characteristic 
+equation associated closed loop 
+system 
+so, this is the, determinant 
+lambdaiabk 
+thats this equation here says 
+well, lets assume that if i compute this 
+i get following expression 
+well, i is i pick favorite 
+eigenvalues 
+i would like in this case 
+lambda is favorite eigenvalues 
+so i is an actual 
+characteristic equation, is this 
+thing 
+one that i would had, indeed 
+eigenvalues equal to favorite 
+eigenvalues 
+i is line 
+coefficients 
+so i take bn to equal to an 
+now, im writing an a function k 
+really is 
+k is control knob control gain 
+that we to solve n equations 
+
+so this is general procedure 
+seems magic, seems so we control 
+anything 
+so first question we ask is, 
+is this always possible second 
+question is, well 
+side eigenvalues come 
+third is, you know 
+determinants that fun to compute 
+, fine 
+we go to higher order systems, 
+becomes a pain 
+now, first answer is, unfortunately 
+this isnt magic, we cant always 
+so, we need to understand is in fact 
+we we cannot 
+
+answer to question is, 
+unfortunately there isnt a recipe book 
+that says here eigenvalues you 
+need to use 
+in fact, a little bit an art 
+science, design choices that we 
+make ultimately boil to choices 
+eigenvalues 
+so we to discuss a little bit 
+we pick eigenvalues 
+luckily us, thats answer to 
+third question 
+we dont to actually compute this 
+in, in math lab, we easily use 
+comething, something called place 
+command 
+so if i a b matrices i 
+wrote a vector favorite 
+eigenvalues, i simply run 
+kplacea,b,p to compute this k matrix 
+that gives us desired eigenvalues 
+cool 
+okay, lets examples 
+here is x dot is whatever x plus whatever 
+u 
+arbitrary a b matrixes 
+well, going to to pick a k 
+again, k in this case to x 
+reason we see that is a is x 
+b is x 
+that means that k to x 
+guys to 
+cancel i end 
+to right 
+dimension 
+so, thats k, in this situation, 
+to a matrix 
+so if i compute this, i get following 
+matrix 
+well, here is characteristic 
+equation, the, this determinant 
+this to 
+actually going to solve 
+going to is, going to 
+compute this determinant 
+
+way compute determinants is this 
+times this minus this times this 
+if you that in this particular 
+case, you get following equation 
+here is one coefficient that 
+going to to mess with, here is 
+coefficient that going to 
+to 
+to mess 
+cool 
+so, moving on, this is characteristic 
+equation 
+lets say sake argument 
+that we want to place 
+eigenvalues in negative , this is 
+we would had, this 
+indeed true 
+so im going to to solve 
+two equal 
+equal 
+equations that we 
+forced to solve 
+so, you that, first 
+coefficient in front lambda we 
+get that, a while, kk well 
+lets look coefficients in form 
+lamba, means lambdas 
+if we that we get kk 
+hey, wait a second 
+this is trouble isnt kk 
+kk this doesnt seem that 
+promising, in fact impossible 
+cant two things time 
+so here, a sudden, we failed 
+we cant actually solve this 
+and, whats really play here is a lack 
+something called controllability 
+controllability is this key term that 
+describes if we enough influence 
+control is already system, 
+i said that is 
+responsible to power placement 
+this is exactly i mean 
+if we dont enough control 
+provided we anything nn fact, you 
+nothing in that case, you 
+to hope best hold 
+nose 
+well, well talk that in a 
+little bit late a little bit later 
+so now, this is go wrong, 
+lack controllability 
+we dont know controllability is yet 
+thats something to aware 
+now, lets pretend that we could 
+though 
+we pick eigenvalues well 
+clear, like i said 
+things we keep in mind 
+is 
+well, if eigenvalues a nonzero 
+imaginary part 
+alright, well first all, lets say 
+that sigmajomega is an eigenvalue 
+there to another eigenvalue 
+in this case i call lambda j 
+there to another one that is 
+complex conjugate pair this 
+eigenvalues to show in conjugate 
+complex pairs if indeed 
+complex 
+so thats first thing that we 
+keep in mind, that we cant assign 
+an, one complex eigenvalue 
+we to assign two, if thats 
+case 
+thing is, course, we need 
+real part eigenvalues to 
+strictly negative, otherwise, we 
+dont asymptotic stability 
+thing to know is that if, 
+indeed, we keep an imaginary part around, 
+we get oscillations 
+so, oscillations, if thats something we 
+would like, typically we dont, but, so 
+if you dont like oscillations 
+eigenvalues we pick real 
+if for, reason wanting 
+oscillations, we to introduce 
+imaginary parts 
+last thing is that choice 
+eigenvalues actually affect rate 
+convergence, meaning quickly 
+system is stabilized 
+in fact rate convergence is 
+dominated smallest eigenvalue 
+so lets say that ive actually picked a 
+bunch eigenvalues here 
+ive done poll placement, so here 
+eigenvalues, lambdas 
+happen to here, here, here, 
+here, here in complex plane 
+notice here that here i a complex 
+conjugate pair 
+well, eigenvalue thats closest to 
+imaginary axis is smallest 
+eigenvalue 
+this eigenvalue actually dominates 
+performance, in terms quickly 
+thing converges 
+so you could do, is if you make 
+argmin values equal to minus a 
+million, you a really, really, 
+really, really fast system 
+problem is that if you make 
+really, really really fast you get really 
+large control signals means that 
+physical actuators going to 
+saturateso, you dont wanted to go super 
+fast saturated 
+actuators so that we need to 
+is play around things 
+to balance a low bit aa fast 
+slow you want systems to versus 
+size control signal so 
+lets investigate few concepts a 
+little bit going to in 
+matlab 
+so ive picked matrixes randomly, 
+system matrixes i 
+picked poles eigenvalues 
+in this case, ive picked a complex 
+conjugate pair, j, you 
+to write i in matlab 
+then, i run pole placement 
+kplace a,b,p 
+then, i is i compute 
+solution 
+so instead chitchatting this, 
+dont we switch to a matlab 
+here, i actually see happen 
+so 
+here is piece code that you 
+saw 
+this is eigenvalues 
+if you run this, we see that we 
+a system that slowly, slowly, decays 
+to , possibly 
+but, there oscillations going 
+there, right clearly, i 
+imaginary eigenvalues 
+now, real parts here, 
+theyre determining quickly 
+system is converging 
+so if i, instead, use this p matrix here 
+imaginary part 
+a larger negative, real part 
+i get a 
+oscillatory response faster if i 
+that we see here whats happening 
+this is new system still 
+oscillating quicker getting 
+to is we would expect 
+lets get rid oscillations 
+altogether 
+so if i pick purely 
+real eigenvalues 
+and, in fact, smallest one is 
+negative 
+so thats going to determine quickly 
+moving 
+we run this, then, bam see here 
+oscillations 
+decaying to zero, quite 
+nicely 
+but, maybe thinking that this is a 
+little bit slow 
+so lets pick eigenvalues 
+here 
+in fact, negative negative 
+this dramatically quicker 
+if i that, bam 
+i get this 
+bam, quickly to , tiny bit 
+overshoot, stabilizing 
+so this is going to to 
+play around a little bit ion 
+values to get system performance 
+that interested in 
+next time, going to investigate a 
+little bit 
+exactly that broke we 
+couldnt place eigenvalues way we 
+wanted 

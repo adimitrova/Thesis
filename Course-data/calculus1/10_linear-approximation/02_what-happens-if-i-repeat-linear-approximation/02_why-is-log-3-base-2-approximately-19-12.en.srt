@@ -1,0 +1,499 @@
+1
+00:00:00,012 --> 00:00:08,657
+[music] I'm going to approximate log 2 at
+the natural log of 2 by starting at log
+
+2
+00:00:08,657 --> 00:00:16,903
+of, of 1, which I know to be 0 and moving
+over one quarter each time until after
+
+3
+00:00:16,903 --> 00:00:21,661
+four steps I arrive at 2.
+So here we go.
+
+4
+00:00:21,662 --> 00:00:26,482
+First I'll try to approximate log of 1
+plus a quarter.
+
+5
+00:00:26,482 --> 00:00:32,981
+This will be approximately log of 1 plus a
+quarter, which is how much I changed the
+
+6
+00:00:32,981 --> 00:00:38,335
+input by, times, and I gotta approximate
+the derivative somehow.
+
+7
+00:00:38,335 --> 00:00:43,346
+I don't really want to approximate the
+derivative of log at 1, and I don't really
+
+8
+00:00:43,346 --> 00:00:46,689
+want to approximate the derivative of log
+at 5 4ths.
+
+9
+00:00:46,689 --> 00:00:52,095
+That will be an over and under estimate of
+the derivative over the whole interval.
+
+10
+00:00:52,096 --> 00:00:57,420
+So, I'm going to approximate the
+derivative by evaluating the derivative in
+
+11
+00:00:57,420 --> 00:01:00,277
+the middle of this region at 1 plus an
+8th.
+
+12
+00:01:00,277 --> 00:01:05,653
+Alright the derivative of log is 1 over,
+so this is the derivative of log in the
+
+13
+00:01:05,653 --> 00:01:09,388
+middle of the interval between 1 and 5/25.
+Alright.
+
+14
+00:01:09,388 --> 00:01:13,268
+So let's keep calculating here.
+Log of 1 is zero.
+
+15
+00:01:13,269 --> 00:01:20,063
+Plus a 4th times, what's 1 over 1 plus an
+8th, 1 plus an 8th is 9 8ths, so that's a
+
+16
+00:01:20,063 --> 00:01:24,481
+4th times 8 9ths.
+Since I'm taking the reciprocal.
+
+17
+00:01:24,481 --> 00:01:30,469
+And that is 2 9ths, so log of 5 4ths,
+according to this is about 2 9ths.
+
+18
+00:01:30,469 --> 00:01:36,037
+And I just keep on going right?
+Now I want to approximate log Of one plus
+
+19
+00:01:36,037 --> 00:01:40,337
+a quarter plus a quarter.
+Well, that'll be about log of 1 plus a
+
+20
+00:01:40,337 --> 00:01:45,563
+quarter, which is what I just calculated,
+plus a quarter times, now I gotta write
+
+21
+00:01:45,563 --> 00:01:50,711
+down the derivative, and, again, I'm going
+to pick the derivative of the middle of
+
+22
+00:01:50,711 --> 00:01:55,907
+this interval.
+So, I'll evaluate the derivative at 1 plus
+
+23
+00:01:55,907 --> 00:02:02,556
+3 8ths which is right in between 1 plus a
+quarter and 1 plus 2 quarters.
+
+24
+00:02:02,556 --> 00:02:10,465
+I approximated log of 1 plus a quarter to
+be 2 nineth plus a 4th times, what's this?
+
+25
+00:02:10,465 --> 00:02:15,455
+1 plus 3 8ths?
+Well, that turns out to be 11 8ths but
+
+26
+00:02:15,455 --> 00:02:20,975
+then I'm taking the reciprocal so I'll
+write 8 11ths.
+
+27
+00:02:20,975 --> 00:02:26,138
+So I've got 2 9ths plus 2 11ths.
+That works out to 40 99ths.
+
+28
+00:02:26,138 --> 00:02:31,604
+So that's approximately log of 1.5.
+Let's keep on going.
+
+29
+00:02:31,604 --> 00:02:36,436
+What's log of 1 plus 3 quarters.
+Well, that should be about log of 1 plus 2
+
+30
+00:02:36,436 --> 00:02:42,091
+quarters plus how much input changes to go
+from here to here, which is a quarter
+
+31
+00:02:42,091 --> 00:02:46,903
+times the derivative.
+And now, where do I want to approximate
+
+32
+00:02:46,903 --> 00:02:51,359
+the derivative?
+I'll approximate it in the middle of the
+
+33
+00:02:51,359 --> 00:02:54,942
+interval again.
+So, it'll be 1 over 1 plus 5 8ths.
+
+34
+00:02:54,942 --> 00:03:00,684
+Well what's this?
+A log of 1 plus 2 quarters, log of 1.5, I
+
+35
+00:03:00,684 --> 00:03:08,858
+just approximated that to be 40 99ths plus
+a quarter times 1 plus 5 8ths, that's 13
+
+36
+00:03:08,858 --> 00:03:12,973
+8ths.
+The reciprocal is 8 13th.
+
+37
+00:03:12,974 --> 00:03:22,245
+So this is 40 99ths plus 2 13ths which
+this is going to be a, a huge number.
+
+38
+00:03:22,245 --> 00:03:28,934
+It turns out 718 over 1,287.
+And, that's approximately log of 1.75.
+
+39
+00:03:28,934 --> 00:03:31,669
+Now, here we go.
+What's log of 2?
+
+40
+00:03:31,669 --> 00:03:38,001
+Well, that should be about log of 1.75.
+So, 1 and 3 quarters plus 1 quarter, so
+
+41
+00:03:38,001 --> 00:03:44,734
+that's how much the input change is to go
+from here to here, times the derivative.
+
+42
+00:03:44,734 --> 00:03:50,256
+Which I'm going to approximate as 1 over 1
+plus 7 8th, right?
+
+43
+00:03:50,256 --> 00:03:55,080
+I'm going to approximate the derivative in
+the middle of this interval.
+
+44
+00:03:55,080 --> 00:03:59,692
+And what does this turn out to be?
+Well, I just approximated this.
+
+45
+00:03:59,692 --> 00:04:04,385
+That was 718 over 1287 plus a quarter
+times 1 plus 7 8th.
+
+46
+00:04:04,385 --> 00:04:09,616
+That's 15 8th.
+So 8 15th with the reciprocal.
+
+47
+00:04:09,616 --> 00:04:20,512
+So, that's 718 over 1287 plus 2 15th which
+turns out to be 4448 over 6435, which is
+
+48
+00:04:20,512 --> 00:04:27,517
+approximately 0.691.
+That is really great because log 2 Is
+
+49
+00:04:27,517 --> 00:04:34,416
+actually closer to 0.693 but 0.691 is
+awfully close to 0.693.
+
+50
+00:04:34,416 --> 00:04:40,018
+And it's really fantastic that, you know,
+just on paper, right?
+
+51
+00:04:40,018 --> 00:04:44,481
+I'm able to get such a good approximation
+to log 2.
+
+52
+00:04:44,481 --> 00:04:49,878
+Let's use this same Euler method, or more
+precisely, the midpoint method, to
+
+53
+00:04:49,878 --> 00:04:53,962
+approximate log 3.
+I use a little bit bigger step size here
+
+54
+00:04:53,962 --> 00:04:57,989
+to save us some time.
+I'm going to put this same gain to, to
+
+55
+00:04:57,989 --> 00:05:01,329
+approximate log of 3.
+Let's first do log 2.
+
+56
+00:05:01,329 --> 00:05:07,232
+By writing log 2 as log 1 and I move from
+1 to 2 by adding 1, so I'll add 1 times
+
+57
+00:05:07,232 --> 00:05:13,812
+the derivative, and again I gotta pick 1
+then I'll evaluate with the derivative.
+
+58
+00:05:13,812 --> 00:05:19,212
+I don't want to evaluate the derivative
+log at 1 or at 2, I want to do in between,
+
+59
+00:05:19,212 --> 00:05:24,728
+so it would be 1 over 1 plus a half.
+So log of 1 is 0 plus 1 plus a half is 3
+
+60
+00:05:24,728 --> 00:05:29,238
+halves, but there's a reciprocal, so
+that's 2 3rd.
+
+61
+00:05:29,238 --> 00:05:33,468
+So this is telling me that log of 2 is
+about 2 3rds.
+
+62
+00:05:33,468 --> 00:05:39,330
+And I can do the same trick again with a
+step size of 1, so log of 3 is log 2 plus
+
+63
+00:05:39,330 --> 00:05:45,090
+1, which is how much I change by going
+from 2 to 3 times the derivative, the
+
+64
+00:05:45,090 --> 00:05:51,714
+approximation of the derivative somewhere,
+i'll do it in between again so it'll be
+
+65
+00:05:51,714 --> 00:05:56,381
+one over 2 plus a 1/2 right.
+That's a point in between 2 and 3.
+
+66
+00:05:56,381 --> 00:06:01,038
+And I approximated log 2 to be 2 3rds and
+2 plus a half.
+
+67
+00:06:01,038 --> 00:06:06,627
+That's 5 halves, by the reciprocal, that's
+2 5ths.
+
+68
+00:06:06,627 --> 00:06:16,027
+And 2 3rds plus 2 5ths, common denominator
+of 15, is 16 15th which is about 1.07.
+
+69
+00:06:16,027 --> 00:06:22,652
+How does this actually compare to log 3,
+well log 3 is actually about 1.0986, so I
+
+70
+00:06:22,652 --> 00:06:28,952
+mean seriously, 1.07 is not such a bad
+guess, compared to 1.0986 blah, blah,
+
+71
+00:06:28,952 --> 00:06:33,151
+blah, right?
+In here I just used 2 steps and with a
+
+72
+00:06:33,151 --> 00:06:39,301
+whole step size here of 1, right.
+So this is even a coarser approximation
+
+73
+00:06:39,301 --> 00:06:43,088
+than a, the thing I used to approximate
+log 2.
+
+74
+00:06:43,088 --> 00:06:50,142
+Now let's compute log 3 over log 2 or, if
+you like, log 3 base 2.
+
+75
+00:06:50,142 --> 00:06:56,926
+So log 3 over log 2 is about 1.584962501,
+it keeps going, right?
+
+76
+00:06:56,926 --> 00:07:02,340
+What you might notice here is that 19
+12ths is 1.583.
+
+77
+00:07:02,340 --> 00:07:08,398
+These are pretty close.
+We can rephrase this without using
+
+78
+00:07:08,398 --> 00:07:15,899
+logarithms at all.
+So what I'm saying here is that log of 3
+
+79
+00:07:15,899 --> 00:07:25,983
+over log 2 is about 19 12ths.
+Well if this is true, that means that 12
+
+80
+00:07:25,983 --> 00:07:35,265
+times log 3 is about 19 times log 2.
+And my properties of logs, 12 times log 3
+
+81
+00:07:35,265 --> 00:07:41,460
+is same as log 3 to the 12th and 19 log 2
+is the same as log 2 to the 19th.
+
+82
+00:07:41,460 --> 00:07:49,446
+Now if these logarithms are approximately
+equal, you'd think then that 3 to the 12th
+
+83
+00:07:49,446 --> 00:07:56,970
+would be approximately 2 to the 19th and
+yes, sure enough 3 to the 12th is 531441,
+
+84
+00:07:56,970 --> 00:08:03,556
+and 2 to the 19th is 524288.
+And these numbers aren't so different.
+
+85
+00:08:03,556 --> 00:08:10,231
+This turns out to be maybe more
+significant than it seems at first.
+
+86
+00:08:10,231 --> 00:08:29,389
+Let's play around with this some more.
+These numbers 7, 12, 3 halves, 2, they're
+
+87
+00:08:29,389 --> 00:08:40,813
+significant musically.
+Alright?
+
+88
+00:08:40,813 --> 00:09:00,723
+Two notes that are separated by a 5th are
+actually in a ratio of 3 to 3 in terms of
+
+89
+00:09:00,723 --> 00:09:14,335
+their frequencies.
+Here, listen to two notes that are
+
+90
+00:09:14,335 --> 00:09:23,216
+separated by a 5th.
+Those two notes are a 5th apart.
+
+91
+00:09:23,216 --> 00:09:28,253
+Now listen to two notes that are an octave
+apart.
+
+92
+00:09:28,254 --> 00:09:35,907
+Those two notes are an octave apart and
+their frequency's in a ratio of two to
+
+93
+00:09:35,907 --> 00:09:40,193
+one.
+Now the deal is that at 12 fifths is about
+
+94
+00:09:40,193 --> 00:09:46,422
+seven octaves.
+Twelve fifths, that's like three halves,
+
+95
+00:09:46,422 --> 00:09:52,692
+that's the ratio for a fifth to the
+twelfth power is close to two to the
+
+96
+00:09:52,692 --> 00:10:00,478
+seventh power, close to seven octaves.
+Here, let's, let's listen to 12 5th in a
+
+97
+00:10:00,478 --> 00:10:07,263
+row.
+So that is 12 5th and now listen to seven
+
+98
+00:10:07,263 --> 00:10:17,025
+octaves, starting at the same note.
+Notice that last note, right?
+
+99
+00:10:17,025 --> 00:10:27,051
+They're close to each other.
+And that's really an audio proof that 3
+
+100
+00:10:27,051 --> 00:10:35,035
+halves to the 12th power is almost two to
+the seventh power.

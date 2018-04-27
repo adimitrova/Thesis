@@ -1,0 +1,338 @@
+1
+00:00:00,025 --> 00:00:08,300
+[music] Differentiating is a process
+really guaranteed to work.
+
+2
+00:00:08,300 --> 00:00:10,990
+Alright, if somebody writes down a
+function and asks you to differentiate it.
+
+3
+00:00:10,990 --> 00:00:13,270
+You can.
+It might be painful, alright, it might
+
+4
+00:00:13,270 --> 00:00:16,813
+involve a lot of steps but it's just a
+matter of applying those steps carefully.
+
+5
+00:00:16,813 --> 00:00:20,870
+In contrast antidifferentiation might be
+really hard.
+
+6
+00:00:20,870 --> 00:00:25,762
+Let's try a really hard example now.
+For instance, can you find some function
+
+7
+00:00:25,762 --> 00:00:30,065
+so if I differentiate that function, I get
+e to the negative x squared?
+
+8
+00:00:30,065 --> 00:00:34,446
+Which is just another way of saying, I
+want to anti-differentiate e to the
+
+9
+00:00:34,446 --> 00:00:36,816
+negative x squared.
+Right, what is that?
+
+10
+00:00:36,816 --> 00:00:40,638
+Well, let's make a guess and see if our
+guess is correct.
+
+11
+00:00:40,638 --> 00:00:47,506
+I mean maybe, an antiderivative of e to
+the negative x squared is I don't know, e
+
+12
+00:00:47,506 --> 00:00:52,062
+to the negative x squared, over minus 2 x
+plus c, right.
+
+13
+00:00:52,062 --> 00:00:55,367
+I mean I'm not saying this is correct, but
+it could be true.
+
+14
+00:00:55,368 --> 00:00:57,533
+If this were the case, I can check it,
+right.
+
+15
+00:00:57,533 --> 00:01:00,517
+I can differentiate this side and see if I
+get this.
+
+16
+00:01:00,518 --> 00:01:07,487
+So let's differentiate e to the minus x
+squared over minus 2 x.
+
+17
+00:01:07,487 --> 00:01:12,719
+That's sort of the same thing as
+differentiating e to the minus x squared
+
+18
+00:01:12,719 --> 00:01:18,181
+times minus 2 x to the negative 1st power.
+So that's a derivative of a product, which
+
+19
+00:01:18,181 --> 00:01:20,954
+is assuming the product rule's good for,
+right?
+
+20
+00:01:20,954 --> 00:01:26,449
+So first I'll differentiate e to the minus
+x squared.
+
+21
+00:01:26,450 --> 00:01:32,324
+And I'll multiply that by the second term
+minus two x to the minus 1st power and
+
+22
+00:01:32,324 --> 00:01:37,784
+I'll add to that the first term, e to the
+minus x squared times the derivative of
+
+23
+00:01:37,784 --> 00:01:41,958
+the second term, which is minus two x to
+the minus 1st power.
+
+24
+00:01:41,958 --> 00:01:44,442
+But what's the derivative of e to the
+minus x squared?
+
+25
+00:01:44,442 --> 00:01:48,900
+That's e to the minus x square cause the
+derivative of e to the is e to the.
+
+26
+00:01:48,900 --> 00:01:52,483
+Times the derivative of minus x squared
+which is minus 2 x.
+
+27
+00:01:52,483 --> 00:02:00,013
+And then it's times negative 2 x to the
+negative 1st power, right?
+
+28
+00:02:00,013 --> 00:02:05,306
+Plus e to the minus x squared times the
+derivative of minus 2 x to the minus 1st
+
+29
+00:02:05,306 --> 00:02:07,820
+power.
+I'll just copy that down and we'll deal
+
+30
+00:02:07,820 --> 00:02:10,911
+with it in a second.
+Because this is pretty exciting right here
+
+31
+00:02:10,911 --> 00:02:13,588
+right.
+This term cancels, this term cancels, this
+
+32
+00:02:13,588 --> 00:02:17,215
+is looking pretty good right.
+Maybe the antiderivative of e to the minus
+
+33
+00:02:17,215 --> 00:02:20,682
+x squared really is this.
+Because when I differentiate this thing,
+
+34
+00:02:20,682 --> 00:02:24,973
+at least I get a e to the minus x squared.
+The bad news is that I also get this term,
+
+35
+00:02:24,973 --> 00:02:28,090
+right.
+And this terms out to be e to the minus x
+
+36
+00:02:28,090 --> 00:02:33,105
+squared, now I gotta deal with this.
+It's again e to the minus x squared and
+
+37
+00:02:33,105 --> 00:02:38,406
+then times the derivative of this.
+Well, when I differentiate this, I get a
+
+38
+00:02:38,406 --> 00:02:43,250
+negative sign times this thing to the
+negative 2nd power, right?
+
+39
+00:02:43,251 --> 00:02:48,567
+And then by the chain rule, the derivative
+of the inside, which is negative 2.
+
+40
+00:02:48,567 --> 00:02:52,840
+And yeah, I mean this is, this is bad
+right.
+
+41
+00:02:52,840 --> 00:02:57,396
+I mean I differentiated this thing right
+here and I got back some of that included
+
+42
+00:02:57,396 --> 00:03:01,070
+in the e to the minus x squared but also
+includes non zero term.
+
+43
+00:03:01,070 --> 00:03:07,305
+So as result this is not the case.
+Well that didn't work but it wasn't from
+
+44
+00:03:07,305 --> 00:03:10,878
+lack trying.
+In fact, an antiderivative for e to the
+
+45
+00:03:10,878 --> 00:03:14,930
+negative x squared cannot be expressed
+using elementary functions.
+
+46
+00:03:14,930 --> 00:03:18,975
+What do I mean by elementary functions?
+I mean things like polynomials, trig
+
+47
+00:03:18,975 --> 00:03:21,983
+functions, e to the x, log, things like
+that, right?
+
+48
+00:03:21,983 --> 00:03:24,385
+I mean, this is really a surprising
+result.
+
+49
+00:03:24,385 --> 00:03:28,416
+I mean there is a function whose
+derivative is e to the negative x squared,
+
+50
+00:03:28,416 --> 00:03:33,180
+but it's not a function I can write down.
+Using the functions that I already have in
+
+51
+00:03:33,180 --> 00:03:36,226
+hand.
+May be e to the negative x squared just an
+
+52
+00:03:36,226 --> 00:03:41,096
+isolated terrible example.
+I can't answer differentiate e to the e to
+
+53
+00:03:41,096 --> 00:03:45,586
+the x using elementary functions.
+I can't answer differentiate log, log x
+
+54
+00:03:45,586 --> 00:03:49,157
+using elementary functions.
+I can't even answer differentiate this
+
+55
+00:03:49,157 --> 00:03:51,480
+very reasonable looking algebraic
+function.
+
+56
+00:03:51,480 --> 00:03:56,759
+The square root of 1 plus x to the 4th.
+I can't find an anti-derivative of this
+
+57
+00:03:56,759 --> 00:04:00,000
+just using elementary functions.
+So, what does this mean?
+
+58
+00:04:00,000 --> 00:04:04,270
+Let's try to summarize the situation.
+It's not just that many functions are hard
+
+59
+00:04:04,270 --> 00:04:08,144
+to antidifferentiate.
+It's that many functions are impossible to
+
+60
+00:04:08,144 --> 00:04:12,354
+antidifferentiate, not in the sense that
+they don't have an antiderivative.
+
+61
+00:04:12,354 --> 00:04:16,106
+But in the sense that we're not going to
+succeed in writing down that
+
+62
+00:04:16,106 --> 00:04:19,377
+antiderivative using the functions that we
+have at hand.
+
+63
+00:04:19,378 --> 00:04:23,550
+In light of the difficulties of
+antidifferentiating, the fact that there's
+
+64
+00:04:23,550 --> 00:04:27,840
+no guaranteed answer, it means that we
+should be happy that we can ever evaluate
+
+65
+00:04:27,840 --> 00:04:32,111
+an antiderivative problem right.
+It also reflects the fact that some real
+
+66
+00:04:32,111 --> 00:04:38,002
+creativity is needed.
+You know, if an answer's not guaranteed
+
+67
+00:04:38,002 --> 00:04:46,913
+then potentially we're going to require
+more creativity to cook up the answers,
+
+68
+00:04:46,913 --> 00:04:49,333
+even when they exist.

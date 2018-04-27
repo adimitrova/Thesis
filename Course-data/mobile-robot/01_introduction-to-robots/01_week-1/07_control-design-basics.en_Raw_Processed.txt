@@ -1,0 +1,185 @@
+okay 
+so, so far in course, we mainly 
+chitchatted things weve seen 
+models we a model a, a 
+cruise controller least 
+controller input affects velocity a 
+car we see here, x dot c m 
+times u x velocity, u 
+applied input, c unknown 
+parameter, m mass 
+vehicle we also talked a little bit 
+we wanted controller to so 
+now, lets start designing controllers 
+lets actually excuses 
+we want, course, is that x 
+approach r recall, again, that r 
+reference velocity that we wanted 
+car to get to x is actual 
+velocity typically, in control 
+design, you talk asymptotic 
+properties, is fancy speak 
+goes to infinity so, we want, is, 
+a while x approach r 
+velocity approach reference 
+velocity another way saying that is 
+that error, so mismatch 
+imbalance between two velocities 
+approach thats we want 
+so, i going to give you a controller 
+here this is attempt i picked 
+values for, you know, hard i want 
+to hit gas pedal im going to say 
+that, if error is positive, so 
+positive error means that reference is 
+bigger state, means that 
+driving slower we then, 
+lets hit gas if error is 
+negative, meaning that velocity, 
+actual velocity car is greater 
+reference velocity, means 
+going fast, lets brake if 
+perfect, lets nothing fine 
+so, take a second to stare this see 
+you think is this going to work 
+okay, a second is lets take a 
+look yeah, works beautifully i put 
+reference velocity to so 
+here, here is this is actual 
+velocity car look 
+car is basically starting 
+somewhere increasing to 
+remaining flat around so, 
+thats, thats awesome 
+now, im calling this 
+bangbang control thats actually a 
+technical term things like u 
+max negative u max youre switching 
+between two extremes so this seems to 
+easy peasy theres need to take a 
+course controls mobile robots now, 
+lets see control signals is 
+actually lets see control 
+values that generated this nice 
+pretty plot well, look like this 
+this ladies gentlemen is miserable 
+even though car right 
+thing in terms velocity, i u 
+max a , so negative max is minus a 
+first all, we accelerating 
+a while, until we hit right 
+velocity then, we start switching 
+wildly between plus minus a well, 
+error , u supposed 
+to , error is never going to 
+exactly aint going to happen, 
+this is bad, whats going 
+well, first all, we get a really bumpy 
+ride going to tossed around in 
+car, backwards, forwards, backwards, 
+forwards, 
+accelerations that induced 
+these, extreme control signals 
+also burning actuators 
+asking car to respond extremely 
+aggressive good reason i mean, 
+basically a lot work 
+close to perfect so, this is 
+actually a particularly good control 
+design problem is exactly this 
+overreaction to small errors even though 
+error is tiny, long 
+positive, slamming gas hard we 
+so we somehow need to change this 
+design so, shall we that well, 
+easiest thing to is to say, you 
+know what, error is small, lets 
+control signal small in fact, 
+heres second attempt u is k times e, 
+positive k, e is error 
+positive error means going slow, 
+u positive negati ve error 
+means going to fast, u 
+negative so this is a much cleaner 
+design whats called its, a 
+smooth feedback law actually linear 
+feedback in error, this seems to 
+much reasonable small 
+error yields small control signals, 
+is we wanted nice smooth 
+going to wildly fluctuate in 
+controller and, in fact, this is called a 
+p regulator, p stands 
+proportional control signal, 
+input, u, is directly proportional to 
+error this k controlled gain 
+so, here is a completely different 
+possibly better way this is 
+pregulator in action looks like 
+so, nice smooth, right seems 
+even stable stable, again, we havent 
+really defined it, clearly 
+blowing course so, nice 
+smooth stable now, here is a little 
+problem you see says here 
+says i reference so, 
+even though nice smooth, we 
+actually hit target value 
+reference signal supposed to , 
+we got to so so even though 
+stable smooth, 
+achieving tracking here is 
+problem i actually added a term to 
+model this is a term that really 
+reflects wind resistance here is 
+acceleration car, this is 
+term well, if going really, really 
+fast, going to encounter wind 
+resistance so, add a little bit 
+wind resistance this says that if 
+going positive fast, 
+getting a negative force, we, meaning, 
+slow a little bit 
+gamma is term coefficient 
+that we dont know this 
+model i used i simulated 
+controller somehow, pregulator 
+wasnt strong enough to, to deal 
+this, in fact, lets see happens 
+steady state, so steady state means 
+nothing changes anymore, if 
+call plot, awhile, x 
+stopped varying steady state, x is 
+varying well, another way saying that, 
+is that time derivative x is so, 
+steady state, x is varying, 
+means that this term here to equal 
+to this is model right well, i 
+know u is u is equal to k times 
+error, is r minus x so, im 
+plugging in u there im saying that 
+this thing to equal to well, if 
+i write corresponding equation 
+that says that, this term here to 
+equal to , i get this well, i 
+even better that i get 
+is that x, let get rid red stuff 
+there, x is going to be, ck divided 
+ck plus m gamma times r, this, 
+coefficients positive, is 
+always strictly less r means, 
+that steady state, velocity is 
+going to be, going to make 
+to reference velocity we see 
+that if we make k really, really, really 
+big, two terms going to 
+dominate going to get closer 
+closer to this complicated thing, 
+go to r so, k becomes bigger, 
+getting closer to r, means 
+a stronger gain never, 
+finite value gain, going to 
+actually make to reference so, 
+something is lacking next time, 
+going to see is that is lacking to 
+actually achieve tracking stability 

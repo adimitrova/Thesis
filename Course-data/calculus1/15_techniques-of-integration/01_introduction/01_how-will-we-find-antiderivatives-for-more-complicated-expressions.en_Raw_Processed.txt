@@ -1,0 +1,43 @@
+music 
+armed fundamental theorem 
+calculus 
+we evaluate definite integrals, 
+just, taking antiderivatives 
+laugh course, just, is really 
+overstating a little bit 
+quite difficult to find an 
+antiderivative 
+trouble is that hard to run 
+differentiation rules in reverse 
+remember a long, long time ago, we 
+learned chain rule 
+if you take chain rule, you 
+run in reverse, you get u substitution 
+difficulty though, is you know, 
+youre u substitution, you 
+gotta make a choice u, that 
+pretty hard 
+well now, we want to kind 
+game differentiation rules 
+i want to take product rule, run 
+product rule in reverse 
+going to call that integration 
+parts and, 
+clever, well able to evaluate 
+a 
+ton integrals them, 
+parts, 
+using product rule in reverse 
+
+one cool integrals that well 
+able 
+to evaluate, integrals powers 
+sines cosines 
+i think maybe sounds a little bit 
+dry 
+i think actually pretty fun to 
+see we do, fearsome 
+looking integrals, a little bit 
+help product rule 
+music 
+blankaudio 

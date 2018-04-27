@@ -1,0 +1,305 @@
+music 
+right in this weeks audio class 
+going to learn we get 
+control audio 
+youve already a bit a preview 
+that last week towards end 
+exercises you would got 
+depths controlling audio using 
+various functions 
+going to this week is look 
+a bit detail audio is 
+represented in computers memory 
+whawhats this thing telling to 
+play 
+whawhats in there whats it, whats 
+happening 
+so trying to, pick a few 
+details 
+well look more, control 
+methods, for, controlling audio 
+playback using rapi 
+so heres a, heres a starter slide 
+showing you computers represent 
+sound 
+so we got 
+weve got this, two blocks here 
+so, the, block, the, 
+number zero seven 
+so imagine thats a short snippet 
+sound 
+seven, seven little snapshots 
+sound 
+that would last a very, short time 
+sound in a, in a machine is 
+typically represented a lot 
+numbers 
+so its, similar to, something 
+that you might familiar with, 
+is idea of, a video, and, 
+film chopped frames 
+we thing sound in a 
+computer 
+we slice frames, called samples, 
+we play 
+sound card in sequence 
+now, if we, if we look frames, 
+whats actually in them, slightly 
+different video 
+so in the, in case audio, there 
+a lot frames, there could 
+to, well, a typical sample, right say, 
+a good quality audio, would , 
+frames, samples per 
+second, is a lot data 
+so this is, this is way compressed audio 
+formats exists like mp makes 
+possible to reduce amount data 
+required to store audio maintain 
+quality 
+in this example going to 
+working uncompressed data, is 
+raw numbers that represent that 
+audio signal 
+so lets a look 
+so in first box here, you see, 
+ive illustrated real contents 
+a, a single sample might in 
+computers memory 
+so ive represented binary 
+number, which, converts to in 
+base ten 
+you, in, in numbers youll 
+familiar 
+so you dont need to worry much 
+that conversion 
+to show you that 
+computers memory is taking 
+zeros ones to represent one 
+samples 
+sometimes might take if a 
+higher quality audio 
+in examples working 
+here, typically going to 
+so we use zeros ones to represent 
+one single snapshot sand 
+and, we use say, , 
+snapshots to represent one second 
+sound 
+okay, so ive, ive, ive shown you 
+here is that, that chunk memory 
+is represented boxes extend 
+to you know, many thousands of, spaces 
+in memory so we talk sample 
+rate is number samples 
+that used to represent signal per 
+second 
+higher sample rate 
+accurate representation sound, 
+wider range sounds we 
+represent 
+bit depth is another property 
+is i said earlier number 
+that i use to represent 
+snapshots 
+so if we a low bit depth, 
+happens is samples 
+inaccurate 
+dont enough range to 
+represent possible values that 
+sample might 
+if you a higher bit depth 
+you can, you store a much 
+accurate representation sound 
+ive got a, an animation shows 
+that 
+perhaps clearly 
+so first animation im going to show 
+illustrates happens if you increase 
+sample rate 
+so well start a low sample 
+rate well see a typical smooth 
+signal looks like 
+now, will start blocky 
+get much smoother goes 
+so lets a look animation 
+
+so, the, pointer moves across 
+screen, sample rate increases 
+so, you see signal is, kind of, 
+getting smoother smoother 
+smoother signal, 
+accurate is in, a representation 
+original sound 
+so remember, earlier, i recording 
+hitting something 
+i play that back, i want to 
+hear an accurate recording that 
+i dont want to hear a really rough 
+inaccurate recording 
+so, a high sample rate allows 
+that 
+so, next slide, going to see 
+the, representation looks 
+like, we increase bit depth, is a 
+kind similar effect, in that 
+becomes less blocky you increase 
+bit depth, totally different 
+okay 
+we might say is that increasing 
+bit depth increases vertical 
+resolution, resolution top to 
+bottom y axis, represents 
+loud signal given 
+time 
+whereas increasing sample rate 
+changes horizontal resolution, 
+is, if you like, precise is in 
+time 
+so sample rate represents the, 
+precision in time 
+whereas bit depth represents 
+precision in, in actual measurements 
+that taking 
+okay 
+so thats end theory section 
+going to look we get 
+control this, this sound 
+and, and, to, to understand what, 
+changing 
+controls 
+so first thing going to try 
+to create an interactive speed 
+slider allows us to vary speed 
+playback 
+so you see in this code here that im 
+first calculating a ratio 
+so im going to demonstrate you 
+vary speed sample 
+playback 
+so remember speed, relates to 
+sample rate if you like 
+so speed playback is 
+quickly flinging numbers 
+sound card 
+so, if you increase speed, 
+going to zip that, that, that 
+section memory that, thats storing 
+sound faster 
+so if we double speed, get 
+twice fast 
+so lets remind playing 
+normal speed 
+so player, speed, one 
+lets run this app see 
+sounds 
+so im running 
+so building android 
+device 
+sound so thats, thats speed one, 
+thats, that sounds similar to 
+i actually played in 
+real world 
+happens if i double speed 
+speed noise 
+music so that you see that 
+sounds higher 
+music so whats it, scanning 
+unknown twice fast 
+sending to sound card 
+obviously, really boring, to 
+continue, edit, run 
+device 
+itd much nicer if we could experiment 
+speed in an interactive way 
+so going to is make a 
+simple, if you like, slider that allows 
+us to slide mouse pointer across 
+screen, a finger across screen, 
+
+increase speed 
+speed is, is useful so in range 
+zero to two 
+so that gives us an interesting range 
+kay, we heard sounds like 
+if you play speed two 
+speed zero, doesnt play all, 
+so on, to two 
+so let, lets listen to that 
+making interactive slider 
+so im going to is, in draw 
+function im going to continually 
+calculate a new speed player 
+so im going to calculate, first all, 
+ratio position mouse to 
+width screen 
+youll see this, float, 
+things there 
+ill explain are, theyre 
+so, i float ratio 
+remember, float is a number that 
+is a whole number, a 
+real number, so we 
+say, in this case 
+we want to, weve got 
+range to speed in this example 
+we want to able to specify that precisely 
+so im going to take floating point 
+version mouse position 
+floating point version width,and 
+that, that would cause to 
+calculation accurate numbers 
+if i didnt this, would in 
+whole numbers i wouldnt get 
+accurate ratio 
+so thats ratio mousex to 
+width 
+that means is, theyre 
+far left screen itll zero 
+theyre far right itll 
+one 
+im going to scale that 
+two, so thats in range zero to two 
+then, ill call playerspeed 
+that value 
+okay 
+so that mean i now, change 
+speed dynamically 
+i might do, i tap 
+queue back to beginning 
+well set to loop 
+well set looping to true so that 
+kind you continue to hear whats 
+going 
+so lets play this sketch now, lets 
+review that we actually 
+so im going to review i 
+typed 
+player set looping is set to true, so 
+that continually plays sound 
+ive calculated ratio position 
+mouse the, finger tap 
+screen 
+across screen, scout two, 
+sent into, speed, so i will 
+setting a speed to a range zero 
+to two, so idea is that 
+far left screen you 
+play slowly, far 
+right screen play 
+quickly 
+lets see 
+sound okay, so you heard there 
+moving finger around varying 
+speed playback, as, 
+playing sample 
+if you that with, break 
+beat, as, comparison, youll see 
+that a slightly different effect 
+music okay, so youre getting 
+towards a musical deejaying 
+experience you slow sound 
+speed back 
+a performance feel to 
+rather playing sound 
+music 

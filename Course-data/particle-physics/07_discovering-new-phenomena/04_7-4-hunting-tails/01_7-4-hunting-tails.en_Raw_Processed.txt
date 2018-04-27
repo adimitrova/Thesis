@@ -1,0 +1,189 @@
+music 
+in this module, we discuss searches 
+new phenomena beyond known ones 
+described standard model 
+in this video, 
+we will discuss searches 
+tails in characteristic 
+event distributions 
+this type searches are, 
+example, typically used in searches 
+supersymmetry 
+watching this video, 
+you will know, we typically search 
+supersymmetry in hadron colliders 
+is main challenge 
+researches in bc 
+protonproton collision environment 
+and, we stand in search 
+supersymmetry 
+new physics in general using 
+atlas experiment an example 
+we typically searching new physics 
+looking bumps a steeply falling 
+spectrum looking enhanced tails in 
+distribution a relevant quantity 
+we already talked in previous 
+video bump searches 
+using heavy z boson an example 
+while this type searches 
+is intuitive 
+convincing in case a positive result, 
+bumps easy to identify in 
+case supersymmetric particles 
+supersymmetric particles decay in 
+cascades, generating long decay 
+chains make difficult to 
+identify a resonant signature 
+given large multiplicity 
+variety particles in final state, 
+we typically looking an 
+enhancement in tail a distribution 
+relevant distributions related 
+to multiplicity a specific 
+type object, example jets, 
+to missing transport momentum in 
+many variants supersymmetry is 
+enhanced emission neutralinos 
+lightest supersymmetric 
+particles, neutral 
+weakly interacting, escaping 
+detector like neutrinos 
+in a susy search, we therefore looking 
+signals that way a relevant quantity 
+missing transverse momentum 
+standard model backgrounds, 
+given large number 
+variety objects involved in 
+searches, complicated to estimate 
+background determination, 
+we using datadriven methods combined 
+simulationbased techniques 
+we use standard model processes 
+similar characteristics to verify that 
+detector response to an assumed 
+signal properly simulated is, 
+indeed, expected 
+in this type searches, 
+user multivaried discriminance 
+is uncommon in attempts to 
+achieve a powerful discrimination 
+signal respect to background 
+to increase sensitivity in models that 
+involve large multiplicity 
+b quarks in final state like 
+one shown this page, 
+we reconstruct jets 
+originating a b quark 
+we use knowledge that 
+hadrons containing b quarks 
+travel a short distance inside 
+detector decaying 
+stable hadrons, contrary, come 
+directly protonproton vertex 
+we also reconstruct top quarks 
+decays using kinematic properties 
+top quark decays to a b quark 
+a w boson 
+forming a hadron 
+a branching ratio close to 
+w boson decays often to a quark pair 
+top quark a large momentum, 
+decay products collimated, 
+shown in this picture 
+high top quark momenta, jets cannot 
+disentangled 
+is therefore common to define 
+wider jets, called fat jets, 
+capture products decay 
+a high momentum top quark 
+we therefore require, example, 
+presence multiple fat 
+jets in collision events, 
+a requirement that improve 
+signal to background discrimination 
+compared to an event selection that 
+include requirements 
+you see in figures examples 
+final distributions look like 
+filled areas show standard 
+model prediction while dashed line 
+shows supersymmetry 
+would manifest 
+black points show 
+observed distributions 
+agree well 
+standard model prediction 
+is shown here in fact, 
+two signal regions largest excess 
+left largest deficit 
+right a specific search 
+agreement standard model 
+predictions is usually even better 
+is demonstrated in 
+examples getting tails 
+a distribution right in hadron collider 
+data is a significant challenge 
+many experimental factors 
+alter expected distributions, 
+therefore, careful study goes to 
+distributions similar properties 
+coming wellknown processes 
+this ensures an excellent 
+understanding factors 
+associated systematic uncertainties 
+one significant challenges 
+comes we call pileup 
+lhc, 
+protons dont collide individually 
+in bunches hundreds 
+billions protons 
+this results in multiple 
+collisions in a bunch crossing 
+leading to several low q reactions 
+distinguishing hard scattering process 
+rest understanding 
+pileup affects distribution 
+interest difficult tasks 
+in hadron colliders, we achieved 
+a significant level understanding, 
+thoroughly studied 
+lhc data collected so far 
+looked a broad spectrum 
+signatures, we yet 
+found significant excesses 
+that could hint to new physics 
+in lack excesses, 
+we put limits to theories 
+models that motivated searches 
+that way, we obtain a global view 
+we stand searches 
+ask theorists advice 
+direction to take in future searches 
+figures in this slide 
+give current picture 
+atlas searches 
+supersymmetry new phenomenon 
+expressed lower 
+limits mass scale that 
+characterizes process 
+you see we close to 
+excluding supersymmetric particles 
+to tev in mass 
+despite fact that supersymmetry 
+theories beyond standard model 
+remain elusive so far, open 
+questions standard model so 
+pressing that is certain 
+there is something beyond 
+increasing amount 
+lhc data that is available, 
+we right track 
+to find that is 
+we faced a unique chance to 
+make a unique discovery lhc 
+history taught us, 
+may unexpected 
+lhc experiments, 
+we looking forward to that 
+music 

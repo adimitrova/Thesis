@@ -1,0 +1,195 @@
+sound hello 
+welcome back to course 
+in this video, going to talk 
+to get data processing 
+element well to transfer 
+data processing element 
+a processing element is a digital device, 
+makes computations 
+computations 
+performed data, 
+is stored in memory 
+within processing element 
+however, initially memory is empty, 
+so to get data 
+i would like to introduce here 
+two concepts, input output 
+you may guess, input comprises 
+whole set devices 
+units data 
+delivered to make computations 
+hand an output is a device 
+unit that help to transfer 
+processed data a processing 
+element to devices 
+inputoutput devices share 
+characteristics 
+however, lets talk 
+inputs first 
+input devices meant 
+delivering data to processing element 
+in cases, microcontrollers 
+different peripheral units that play 
+role inputs, example, 
+communication units uart spi 
+an analog to digital converter 
+also considered an input device 
+peripheral units might located 
+inside microcontroller 
+exposed to user external pins 
+way, 
+general purpose inputoutput pins, 
+you might guess name, 
+also used an input, 
+regardless peripheral 
+unit attached to 
+there many ways to classify 
+a microcontrollers inputs 
+however, among them, 
+i would like to mention one 
+separates inputs two categories, 
+serial parallel 
+an example you think serial 
+peripheral interface gpios 
+inputs also classified according 
+to type signal handle 
+this way an input may digital, 
+example spi interface, 
+analog, an analog 
+to digital converter 
+next question i would like to cover 
+is to actually read 
+data inputs 
+details to 
+that may quite different 
+depending input 
+unit you want to use 
+lets consider an spi interface 
+an adc, clearly 
+different kinds units 
+first one is meant to communication, 
+whereas second one converts 
+analog signals a digital form 
+fundamental differences, 
+we expect operation details 
+to differ much well 
+methods reading data 
+however, a higher abstraction level, 
+we distinguish two ways 
+this 
+first one is to read 
+input every in a while, 
+lets say every 
+milliseconds interval 
+in this case, read operation 
+is initiated software 
+therefore, we need write a piece 
+code that gets data 
+input unit 
+chosen interval 
+in case, interval is 
+milliseconds, adjusted 
+now, lets think following case 
+if we interested in knowing 
+time an event happens 
+example, we need to know 
+voltage level pin 
+rises logic zero to logic one 
+time interval we choose 
+in order to catch event 
+you make an assumption 
+that shorter interval, 
+frequently we check input, 
+
+therefore less probability 
+that we will miss event 
+this is course true 
+however, if we think amount 
+time processing element will spend 
+checking if event occurred, 
+we will conclude that approach 
+is efficient since a lot 
+computational power will wasted 
+luckily, there is another 
+way catching fast events 
+if first method 
+software initiated, 
+second way is hardware initiated 
+is based interrupts 
+an event occurs, 
+causes an interrupt, 
+in turn breaks flow 
+main program reads input 
+second method is reliable 
+in sense that is less likely 
+to miss event 
+to make sense received data, 
+communications unit used input 
+must compatible sender 
+this compatibility 
+protocol level 
+this means that signals 
+used follow rules 
+example, 
+if spi communication protocol is used, 
+sender receiver 
+work according to this protocol 
+is also important to 
+consider voltage compatibility 
+signals preferably 
+used voltage, 
+lets say either volts volts 
+outputs, 
+picture is pretty much 
+peripheral units used output 
+interaction outer 
+world is done via external pins 
+classification is also similar, 
+serial, parallel, analog, digital 
+an example an analog output is 
+a digital to analog converter, 
+converts a number 
+to a voltage signal 
+communication units, uart 
+spi, examples digital outputs 
+sending receiving data 
+software hardwareinitiated 
+lets make an example 
+hardwareinitiated transfer 
+example, we need to build an analog 
+signal using a microcontroller 
+in this case, we will need 
+a digitaltoanalog converter 
+shape required signal 
+be, example, sinusoidal 
+that we will keep samples, 
+numbers, 
+one periods 
+sinusoidal in memory 
+we need to is to read 
+samples right intervals 
+to send to dac 
+right intervals time 
+measured using a timer 
+now, if we want to keep 
+shape a signal stable, 
+we need to rely hardware 
+done in following way 
+a timer marks right moment 
+instructs direct memory access unit 
+to transfer one sample 
+memory to dac 
+dac converts 
+sample to voltage, 
+everything is set to done 
+without influence software 
+inputs, output units 
+compatible receiver 
+regarding protocol 
+voltage level used 
+so in this video we discussed ways 
+an embedded system exchange 
+data outer world, 
+requirements that 
+expected to make exchange correct 
+sound 

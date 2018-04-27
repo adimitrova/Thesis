@@ -1,0 +1,108 @@
+well consider three main criteria 
+that you need to think 
+youre deciding to name 
+label research data files 
+first up, is organisation 
+this is important future access 
+retrieval take account 
+file naming constraints that applied 
+system you store data 
+second up, is context 
+this may include content specific 
+descriptive information, 
+irrespective data is stored 
+third one is consistency 
+you choose a single file naming 
+convention apply that consistently 
+throughout including 
+information in order 
+so 
+example if youre going to use dates, 
+you could follow a model like iso 
+standard, applies four digits 
+year, two month 
+two day, 
+whichever method you decide to adopt, 
+make sure you apply consistently 
+there a number common 
+elements that you consider 
+youre developing 
+file naming strategy 
+include a version number, 
+date creation, 
+name creator, description 
+content, name team 
+department associated data, 
+a publication date, a project number 
+finally, you want to think scalable 
+file naming policy 
+if you want to include a project number, 
+dont limit to two digits, 
+you projects 
+dont use generic file names either, 
+that may conflict if data 
+moved one system to another 
+if working 
+one computer, 
+make sure files synchronized 
+file names outlive original 
+person named file, so 
+best to adopt group guidelines rather 
+everyone procedure 
+file folder naming conventions 
+key to maintaining 
+a wellorganized electronic directory 
+drive structure 
+a file name is chief identifier 
+a research data file 
+in cases, 
+policy file naming is left 
+to individuals research groups 
+there a number easy rules 
+that you following 
+naming files 
+firstly, you keep file 
+names short relevant 
+generally characters 
+is a sufficient length 
+to capture enough descriptive information 
+you shouldnt use special characters in 
+a file name, often use 
+special tasks in different 
+operating systems 
+you use underscores instead 
+full stops, spaces, 
+if you include dates, 
+you format consistently 
+never assume that 
+a software application 
+instrument uses case dependency 
+naming renaming flies 
+so you rename hundreds files 
+well operating systems 
+inbuilt tools file management 
+there also a number software tools 
+that help you to manage data 
+files folders in a automated 
+consistent way batch renaming 
+batch renaming software exists 
+operating systems 
+there many situations in 
+batch renaming may useful 
+example, images digital 
+cameras automatically assigned 
+base file names, 
+consisting lots sequential numbers 
+proprietary software, 
+instrumentation generates crude, 
+default, multiple file names 
+files transferred 
+a system that support spaces 
+nonenglish characters, 
+to one that doesnt 
+batch renaming software used 
+to substitute characters 
+acceptable ones 
+there bulk renaming tools 
+different operating systems 
+listed in mantra course 

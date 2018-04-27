@@ -1,0 +1,212 @@
+1
+00:00:00,012 --> 00:00:08,200
+[MUSIC] Here I've graphed some function. 
+Notice what happens if I zoom in on one 
+
+2
+00:00:08,200 --> 00:00:10,946
+little piece of the graph, 
+right? 
+
+3
+00:00:10,946 --> 00:00:18,594
+If I just focus on one part of the graph, 
+well, that little bit of graph sort of 
+
+4
+00:00:18,594 --> 00:00:25,505
+looks like part of a straight line. 
+Another way to think about this is as a 
+
+5
+00:00:25,505 --> 00:00:30,461
+limit of secant lines. 
+By secant line, I mean, I'm going to pick 
+
+6
+00:00:30,461 --> 00:00:36,570
+two points on the graph and I'm going to 
+put a line, the secant line, through 
+
+7
+00:00:36,570 --> 00:00:39,378
+those two points. 
+But, I can do better. 
+
+8
+00:00:39,378 --> 00:00:44,312
+By taking this point and moving it closer 
+to a, this red line is going to be a 
+
+9
+00:00:44,312 --> 00:00:48,311
+better approximation to the orange curve 
+near the point a. 
+
+10
+00:00:48,311 --> 00:00:53,347
+So, instead of putting it through those 
+two points, let me put the secant line 
+
+11
+00:00:53,347 --> 00:00:58,532
+through, say, these two points, this 
+point at a and this point that's nearby. 
+
+12
+00:00:58,532 --> 00:01:04,147
+And now, the line segment through those 
+two points is a much better approximation 
+
+13
+00:01:04,147 --> 00:01:08,466
+of the orange curve. 
+And I can do better and better by taking 
+
+14
+00:01:08,466 --> 00:01:13,832
+a limit, by putting those two points 
+closer and closer together, I can get my 
+
+15
+00:01:13,832 --> 00:01:19,391
+secant line to be a better and better 
+approximation to the orange curve near 
+
+16
+00:01:19,391 --> 00:01:22,758
+the point a. 
+What we're really calculating here is a 
+
+17
+00:01:22,758 --> 00:01:25,537
+limit. 
+So here, I've got an input a and an input 
+
+18
+00:01:25,537 --> 00:01:29,932
+a+h, and here are the corresponding 
+points on the graph of the function. 
+
+19
+00:01:29,932 --> 00:01:33,122
+I'm going to put a secant line through 
+those points. 
+
+20
+00:01:33,122 --> 00:01:38,172
+What I want to know is what's the slope 
+of that secant line because I'm going to 
+
+21
+00:01:38,172 --> 00:01:43,347
+take the limit as this a+h point is moved 
+closer to a as h goes to zero in other 
+
+22
+00:01:43,347 --> 00:01:48,497
+words, and that'll make this secant line 
+move closer and closer to the tangent 
+
+23
+00:01:48,497 --> 00:01:50,136
+line, 
+to the curve. 
+
+24
+00:01:50,136 --> 00:01:53,889
+Okay, so what's the slope of the secant 
+line? 
+
+25
+00:01:53,889 --> 00:01:58,431
+Well, the rise is f(a)+h-f(a). 
+The run is h. 
+
+26
+00:01:58,431 --> 00:02:01,771
+So, the slope of that secant line is 
+this, f(a+h)-f(a)/h. 
+
+27
+00:02:04,842 --> 00:02:10,137
+If I take the limit as h goes to 0, I get 
+this: the limit as h goes to 0 of this 
+
+28
+00:02:10,137 --> 00:02:13,507
+slope. 
+We've seen this, this is the derivative 
+
+29
+00:02:13,507 --> 00:02:18,442
+of the function at the point a. 
+Let's find the equation of the tangent 
+
+30
+00:02:18,442 --> 00:02:22,182
+line in a concrete example. 
+Here's a graph of y=x^2. 
+
+31
+00:02:22,182 --> 00:02:27,517
+Let's figure out the equation of the 
+tangent line to that graph at the point 
+
+32
+00:02:27,517 --> 00:02:31,214
+(3,9). 
+So to do that, we're going to use the 
+
+33
+00:02:31,214 --> 00:02:36,126
+derivative and I know that the derivative 
+of x^2 is 2x. 
+
+34
+00:02:36,126 --> 00:02:41,347
+So, the slope of the tangent line at the 
+point 3 is 2*3=6, 
+
+35
+00:02:41,347 --> 00:02:48,492
+and that's the slope of the tangent line. 
+I also know a point that the tangent line 
+
+36
+00:02:48,492 --> 00:02:52,100
+passes through. 
+It should be passing through the point 
+
+37
+00:02:52,100 --> 00:02:55,637
+(3,9), right? The point (3,9) is on the 
+tangent line. 
+
+38
+00:02:55,637 --> 00:03:00,371
+So, if I know the slope of the tangent 
+line and I know a point on the line, I 
+
+39
+00:03:00,371 --> 00:03:04,702
+can write down an equation for the line 
+using point slope form. 
+
+40
+00:03:04,702 --> 00:03:12,012
+So, y minus the y coordinate on the line 
+is the slope time x minus the x 
+
+41
+00:03:12,012 --> 00:03:19,834
+coordinate on the line. 
+So, this is an equation for this red 
+
+42
+00:03:19,834 --> 00:03:21,612
+tangent line. 
+
+43
+00:03:21,612 --> 00:03:28,065
+[MUSIC] 

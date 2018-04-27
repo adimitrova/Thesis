@@ -1,0 +1,90 @@
+music 
+lets use fundamental theorem 
+calculus to evaluate an integral 
+lets integral zero to pi 
+sine x dx 
+lets call this function little f 
+so, f x, little f x, will sine 
+x 
+now, i need to find an antiderivative 
+little f, right 
+i need a function whose derivative is sin 
+x 
+i know one already, right 
+derivative minus cosine x 
+well, if derivative cosine is 
+minus sine, ive got a minus sign 
+there 
+thats a little joke 
+right 
+derivative minus cosine x is 
+sine x 
+so, minus cosine x is an 
+antiderivative sine x 
+now, fundamental theorem 
+calculus tell us to 
+fundamental theorem calculus tells 
+that if i want to integrate this 
+function little f, i find an 
+antiderivative, ive located, 
+right 
+minus cosine, evaluate that 
+antiderivative end points 
+take difference 
+so, in this particular case i 
+get 
+so, in this case, ive got a function big 
+f, right this is antiderivative, 
+minus cosine x 
+according to fundamental theorem, 
+if i want to integrate zero to pi, 
+function little f, is sine x, 
+im going to evaluate antiderivative 
+pi subtract antiderivative 
+zero 
+in this case chosen antiderivative is 
+minus cosine x 
+so, minus cosine pi minus, minus 
+cosine zero 
+now, whats cosine pi 
+thats minus negative minus 
+thats minus cosine zero is , 
+negative 
+so, minus negative , is 
+there exactly square units area 
+graph sine x 
+between x equals x equals pi 
+we actually see that fact 
+well, heres a graph y equals sine x 
+interval that we did, 
+area this curve is square units 
+well, heres square units, right 
+maxium value sine is 
+so, this is height 
+sine hits maximum here 
+width, this rectangle is 
+so, this is square units 
+claim is that i able to 
+fit this graph 
+so, ive got scissors here ill 
+start cutting 
+if i cut 
+here, this part now, fits pretty 
+well graph 
+ive got this little bit left 
+let 
+chop this here 
+i mean this is, this is looking pretty 
+good 
+right 
+i mean thats not, perfect i 
+mean, you know, looks like 
+square units fit underneath this graph 
+i always thought a little bit 
+surprising that answer, area 
+graph sine x, turned to 
+exactly square units 
+i mean, you might thought that 
+answer would involve pi something 
+answer ends a lot nicer 
+i think you might expected 

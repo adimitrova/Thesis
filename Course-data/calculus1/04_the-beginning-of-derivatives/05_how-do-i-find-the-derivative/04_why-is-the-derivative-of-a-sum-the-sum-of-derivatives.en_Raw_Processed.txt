@@ -1,0 +1,113 @@
+music 
+looks like ive got two functions fx 
+gx, theyre differentiable 
+a 
+i define a new function 
+hx is sum f g 
+alright a new function, to compute 
+hx i plug x f i plug x 
+g i add together whatever f 
+g give 
+alright so thats a new function that i 
+build f g 
+heres conclusion, right 
+prime a is sum 
+derivative f a derivative 
+g a 
+to prove something like this, this is 
+a really a theorem, right this is a 
+theorem that tells to compute 
+derivative sum functions 
+i prove something like this 
+i go back to definition 
+derivative 
+alright 
+derivative this function h 
+point a is limit x goes to a of, 
+hxhaxa 
+i know hx is 
+hx is fx gx 
+so i plug that in 
+alright, so this is limit x goes 
+to a fxgx 
+i also know ha is, right i 
+plug in a x 
+i get that ha is faga 
+this is divided 
+denominator, xa 
+great 
+i want to calculate that limit, right 
+well, i rearrange numerator, so 
+numerator is this 
+is fx gx fa 
+minus g a, rearrange numerator 
+get f x minus f a plus g a x 
+minus g a this is divided x 
+minus a 
+i well i actually 
+split this separate fractions, 
+alright this is fxfaxa, 
+gxgaxa 
+so this is limit 
+fxfaxaxagxgaxa 
+thats a a limit is x goes to a 
+i calculate that limit 
+okay 
+im applying these, rules 
+calculating limits one rules 
+calculating limits is limit 
+sum is sum limits provided 
+limits exist 
+limits well, this is 
+really derivative fa this is 
+really derivative ga 
+i assume that f g 
+differentiable a 
+so, limits do, exist i 
+apply limit sum sum 
+limits 
+so this limit x goes to a 
+fxfaxa limit x goes to 
+a gxgaxa, i know 
+limits exist 
+i even know theyre equal to, 
+right i a name limits 
+this st limit is derivative f 
+a, this nd limit is derivative g 
+a 
+so this is f prime a plus g prime a 
+thats exactly i wanted to 
+show,right i wrote definition 
+derivative h point a, there 
+is is i applied properties limits 
+until i conclude that that limit is 
+equal 
+to derivative fa 
+derivative ga, alright this is 
+tells to calculate 
+derivative a sum 
+alright, if ive got a sum 
+functions, this is telling that 
+long functions 
+differentiable a, i calculate 
+derivative adding together 
+derivatives f g 
+hopefully this, this seem 
+reasonable, right is 
+derivative measuring, right, 
+measuring much change in input 
+changes output 
+right, i want to know much wiggling 
+input a, would effect output 
+h, thats this derivative is 
+measuring 
+right well, thats really going to be, 
+you know, somehow connected to 
+wiggling input to f changes f 
+wiggling input to g changes g im 
+adding together 
+so i think this makes sense that, 
+the, output changes would 
+sum component 
+functions change 
+music 

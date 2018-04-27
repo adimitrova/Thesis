@@ -1,0 +1,112 @@
+music 
+upon a time, a long, long time ago in 
+a cave somewhere, 
+there cave person first 
+started studying numbers 
+cave person an idea 
+idea is functions 
+instead studying numbers, this 
+cave person is going to 
+study numbers depending numbers, 
+relationships between numbers 
+theres another way to think 
+functions 
+a different metaphor is that functions 
+sound eat numbers, 
+theyre done processing them, spit 
+sound number 
+functions eat numbers spit 
+numbers 
+food chain keeps going 
+derivative is an operator 
+that means is that like a 
+function functions 
+derivative eats a function 
+done 
+spits a new function, 
+derivative 
+first we studied numbers 
+we studied functions, 
+numbers that depend 
+numbers things that you to 
+numbers 
+derivative 
+derivative eats something 
+eats something spits numbers 
+derivative spits a new 
+thing that eats numbers spits 
+numbers 
+derivative takes a function gives 
+you 
+a new function, this ddx notation is 
+so 
+powerful, that you start to talk 
+
+derivative even youve applies 
+to function 
+look this, this is sort 
+equation, really a nonsense 
+equation 
+second derivative minus one 
+even mean 
+equals derivative minus one, i 
+here 
+knows 
+derivative plus one 
+this sort nonsense looks similar to 
+something reasonable, that 
+x squared minus is x minus times x 
+plus 
+theres actually sense to this 
+so lets try to make sense right 
+hand side 
+i apply to a function 
+so we dont even really know this 
+means, 
+notations so powerful that 
+going to lead us forward 
+so im going to copy ddx minus in 
+parentheses, i 
+to figure im going to apply 
+this thing to f 
+im going to act like this distributes, so 
+ill write ddx f 
+plus times f 
+i keep going, right 
+this, if you kind imagine, might 
+distribute this 
+would that, would that mean 
+im going to ddx this whole thing, so 
+ddx 
+ddx f plus f, minus times this 
+so minus ddx f, plus f 
+i keep calculating, 
+derivative derivative f plus f 
+well, derivative a sum is sum 
+derivative so that makes sense 
+thats derivative derivative 
+f plus derivative f minus 
+derivative f minus f, subtracting 
+summing f, so subtracting f 
+good news, ive got a plus derivative 
+here, 
+a minus derivative f there, so im 
+left 
+is d dx, d dx f, i 
+could write second derivative f 
+minus f 
+well i could also write this second 
+derivative minus , applied to f 
+thats exactly whats 
+side this equation 
+this point, this is a sort 
+cheating, so if this doesnt speak to you, 
+dont worry 
+upshot though, is that differentiation 
+is 
+an operation that you apply to functions 
+possible to reason precisely 
+
+differentiation in abstract an 
+operation 
+music 

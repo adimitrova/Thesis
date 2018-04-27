@@ -1,0 +1,133 @@
+[music] sometimes people ask for the anti
+derivative.
+but instead of talking about the anti
+derivative it's probably better to talk
+about an anti deriviative.
+so why is this the and an distinction
+really important.
+because a function can have more than one
+anti-derivative.
+let's take a look at an example.
+let's think about the function f of x
+equals 2 x, to find on the whole real
+line.
+can you think of a function whose
+derivative is 2 x?
+i'm looking for a function which
+differentiates to give me this function.
+so here's an example.
+a big f of x equals x squared, and yes, if
+i differentiate that function i get back
+2x, which is in fact little f.
+so the derivative of big f is little f, or
+in other words an anti-derivative for
+little f.
+is big f.
+okay.
+good.
+now, can we think of another function
+whose derivative is 2x?
+well, yeah.
+think about this function big g of x which
+i'll define to be x squared plus 17 and
+big g's derivative is the derivative of
+this sum which is the derivative of x
+squared which is 2x plus the derivative of
+17 which is 0.
+so big g differentiates to little f.
+and that means another anti-derivative for
+little f is big g.
+okay great.
+now let's think of yet another function
+whose derivative is 2x.
+yeah, i can play this game all day.
+big h of x is equal to say x squared plus
+big h differentiates to 2 x again.
+so big h is another anti derivative of
+little f.
+there's clearly a pattern here, right.
+what's the general story?
+well here's the general story.
+so i got this function f of x equals 2 x.
+any anti derivative of little f has the
+form big f.
+equals x squared plus c for some constant
+c.
+all of out previous examples had this
+form.
+like here the constant is 0, here the
+constant is 17, here the constant is 123.
+and what i'm claiming here is that any
+other anti derivative is just x squared
+plus some fixed number.
+how do we know this?
+well, it goes back to the mean value
+theorem.
+so, suppose i've got 2 anti-derivatives,
+big f and big g for little f.
+in other words, i mean that if i
+differentiate big f i get little f, and if
+i differentiate big g i get little f.
+so, suppose i've got two anti derivatives
+for little f.
+now what can i do, like i define a new
+function called big h and big h will just
+be big f minus big g.
+now what do i know about the derivative of
+big h, the derivative of big h is the
+derivative of f minus the derivative of g
+because the derivative of the difference
+is the difference of derivatives.
+so this is the derivative of f minus the
+derivative of g.
+but what is the derivative of f?
+it's little f.
+what's the derivative of g?
+it's little f?
+this is little f minus little f.
+oh noes.
+this is 0, right?
+the derivative of big h is 0.
+now what does that mean?
+well if you think back to the mean value
+theorem from earlier in the course, if a
+functions derivative is equal to zero, and
+say that function is defined on the whole
+real line, like our example with x squared
+and two x, then, that means that this
+function is a constant.
+right?
+so that means that h of x is a constant.
+now, what that means is that the
+difference between f and g, these two
+antiderivatives for little f, is just some
+fixed constant, right?
+in other words, f of x, is equal to g of x
+plus some constant.
+and this is exactly what we're trying to
+get at, right?
+this idea that if a function's got two
+different anti-derivatives.
+and the function's defined say on the
+whole real line.
+then those two different anti-derivatives
+just differ by a constant or said
+differently.
+if you've got a specific anti-derivative,
+than any other anti-derivative is just
+that specific anti-derivative plus some
+constant.
+let me say that again, and, and actually
+write it down.
+suppose that little f is a function that's
+defined on an interval i.
+that's really crucial that it's defined on
+an interval.
+and suppose that big f is an
+anti-derivative of little f.
+in other words if i differentiate big f, i
+get little f.
+well then any antiderivative of little f,
+not just this one, any antiderivative has
+the form big f of x plus c for some
+constant c.

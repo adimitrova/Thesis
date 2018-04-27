@@ -1,0 +1,259 @@
+so, in the previous lecture, we saw that
+eigenvalues play a fundamentally important
+role when you want to understand stability
+properties of linear systems. we saw that
+if all eigenvalues have strictly negative
+real part, the systems are asymptotically
+stable. if one eigenvalue is positive,
+then we have positive real part. then,
+we're screwed and the system blows up.
+now, today, i'm going to use some of these
+ideas to solve a fundamental problem in
+swarm robotics. and this is known as the
+rendezvous problem. and, in fact, what it
+is, is you have a collection of mobile
+robots that can only measure the relative
+displacements of their neighbors. meaning,
+they don't know where they are, but they
+know where they are relative to the
+neighbors. so here, here we have agent i,
+and it can measure xi minus xj, which is
+actually this vector. so, it knows where
+agent j is relative to it. and this is
+typically what you get when you have an
+censor skirt, right? because, you can see
+agents that are within a certain distance
+od you. and, as we saw, you know, where
+they are relative to you. if you don't
+have global positioning information, you
+don't know where you are so there's no way
+you're going to know, globally, where this
+thing is, but you know where your
+neighbors are locally. and the rendezvous
+problem is the problem where having all
+the agents meet at the same position. you
+don't want to specify in advance where
+they going to meet because since they
+don't know where they are, they don't know
+where they going to meet. they can say,
+oh, we're going to meet in, at the origin.
+but i don't know where the origin is. is
+it in, in atlanta, georgia? or is it in
+belgium, or is it india? what do i know,
+right? so, the point is, we're going to
+meet somewhere, but we don't know where.
+okay.
+so, we have actually solved this problem
+before. we sold it for the 2 robot case,
+where we had 2 robots. and we could
+control the velocities right away. what we
+did is we simply had the agents aim
+towards each other. so, u1 was x2 minus
+x1. and u2 was x1 minus x2. this simply
+means that they're aiming towards each
+other. well, if we do that, we can
+actually write down the following the
+following system. this is the closed loop
+system now, where we have picked that
+controller. so, x dot is this matrix times
+x. okay, let's see if this works now.
+well, how do we do that? well, we check
+the eigenvalues of the a matrix to see
+what's going on. alright. here is my a
+matrix, type eig in matlab or whatever
+software you're using, and you get that
+lambda 1 is 0, lambda 2 is negative 2.
+okay, this is a little annoying, right?
+because we said asymptotic stability means
+that both eigenvalues need negative real
+part, this doesn't have that. but
+asymptotically stable, so asymptotic
+stability also means that the state goes
+to the origin and, like we said, we don't
+know where the origin is, so why should we
+expect that? we should not expect it. we
+also know that one positive eigenvalue or
+eigenvalue with positive real part makes a
+system go unstable. we don't have that
+either. in fact, what we have is this
+in-between case that we called critical
+stability. we have one 0 eigenvalue and
+the remaining eigenvalues have negative
+real part. so, this is critically stable.
+and, in fact, here is a fact that i'm not
+going to show but this is a very useful
+fact. so, that if you have one eigenvalue
+be zero and all the others have negative
+real part, then in, in a certain sense,
+you're acting like asymptotic stability.
+meaning, you go, in this case, not to zero
+but you go into a special space called the
+null space of a. and the null space of a
+is given by the set of all x, so such that
+when you multiply a by x, you get zero
+out. that's where your going to end up.
+so, your going to end up inside this thing
+called the null space of a, in this case,
+because you have one 0 eigenvalue and all
+others having strictly negative real part.
+and if you type null(a) in matlab, you
+find that the null space for this
+particular a is given by x is equal to
+alpha, alpha where alpha is any real
+number and why is that? well, if i take
+negative 1, 1, 1, negative 1, this is my a
+matrix, and i multiply this by alpha,
+alpha, what do i get? well, ll' get minus
+alpha plus alpha here, and then i get plus
+alpha minus alpha there, which is clearly
+equal to 0. so, this is the null space.
+okay, what does this mean for me? well, it
+means that x is, x1 is going to go to
+alpha and x2 is going to go to alpha. x1
+goes to alpha, x2 goes to alpha, which
+means that x1 minus x2 goes to 0 because
+they go to the same thing. which means,
+that we have, ta-da, achieved rendevous.
+they end up on top of each other. in fact,
+they end, end up at alpha. we don't know
+what alpha is but we know that they end up
+there. okay.
+now, if you have more than two agents, we
+simply do the same thing. in this case, we
+aim towards what's called the centroid of
+the neighbors. and, in fact, if we write
+this down, we write down the same thing
+for more than one agent, we get that x dot
+i, before it was just xj minus xi, there
+were 2 agents. now, i'm summing over all
+of agents i's neighbors. that is doing the
+same thing if you have more than one
+agent. and, in fact, if you do that and
+you stack all the x's together then you
+can write this as x. is negative lx. and
+this is just some bookkeeping. and the
+interesting thing here, here is that l it,
+it's known as the laplacian of the
+underlying graph. meaning, who can talk to
+whom. that's not so important. the
+important thing though is that we know a
+lot about this matrix l and, again, and
+it's called the graph laplacian. and the
+fact is that if the undergrinding,
+underlying graph is connected, then l has
+one 0 eigenvalue, and the rest of the
+eigenvalues are positive. but look here,
+we have negative l here, which means that
+negative l is one 0 eigenvalue and the
+rest of the eigenvalues are negative.
+that means that this system here, the
+general multiagent system here is actually
+critically stable. and we know that it
+goes int o the null space of l. and it
+turns out, and this is a fact from
+something called algebraic graph theory.
+we don't need to worry too much about it.
+we just know that clever graph
+theoreticians have figured out that the
+null space to l, if the graph is connected
+which means that there is some path with,
+through this network between any two
+agents is given by not alpha, alpha but
+alpha, alpha, alpha, alpha, alpha, a bunch
+of alphas. so, just like before, if i have
+this thing and, in fact, it doesn't have
+to be scalar agents, what i do have is
+that all the agents go to the same alpha
+or in other words, the difference between
+the agents will actually disappear. and
+when we did this, we design a controller.
+we actually designed this thing here. and
+this thing is so useful that it actually
+has its own name. it's known as the
+consensus equation because it makes agents
+agree. in this case, they were agreeing on
+position. but this equation actually will
+solve the rendezvous problem because of
+the fact that the corresponding system
+matrix you get is negative l at the right
+eigenvalues which means that the system is
+critically stable so we can solve
+rendezvous in the multirobot case. and
+again, you've seen this video. now, you
+know what it was i was running to generate
+this video. in fact, you can go beyond
+rendezvous so, here is actually a course
+that i'm teaching at georgia tech, where
+you want to do a bunch of different
+things. and again, all i'm doing is really
+the rendezvous equation with a bunch of
+weights on top of it. and we're going to
+learn how to do this. i just want to show
+you this video, because i think it's quite
+spectacular. you have robots that have to
+navigate an environment. they're running
+these, basically the conses equation and
+they have to avoid slamming into
+obstacles, so i should point out that this
+was the final project, project in this
+course, it's called network control
+systems. and i just wanted to show you
+that you can take this very simple
+algorithm that we just dev eloped, make
+some minor tweaks to it, which we're going
+to learn how to do, to solve rather
+complicated, multiagent robotics problems.
+so here, the robots have to split into
+different subgroups and avoid things, they
+have to get information, they have to
+discover missing agents and so forth. and
+we will learn how to do all of that in
+this course. now, having said that, talk
+is cheap, right? and simulation is maybe
+not cheap, but let's do it for real. in
+this case, we're going to have two khepera
+mobile robots, and what we're going to do
+is we're going to use the same pid
+go-to-go controllers and we're going to
+let the consensus equation flop down
+intermediary goal points. and what we're
+going to do is we're going to keep track
+of our position using odometry, meaning
+our, our real encoders. and what the
+robots are going to do, is they're
+actually going to tell each other where
+they are rather than sense where they are
+because we haven't talked yet about how
+the design sensing links. so, what we're
+doing is we're faking the sensing and
+telling, they're telling each other where
+they are. and they're using a pid
+regulator to go in the direction that the
+consensus equation is telling them to go
+in. and now, let's switch to the actual
+robots running and solving the rendezvous
+problem. so, now that we have designed a
+closed looped controller for achieving
+rendezvous we're going to deploy it on our
+old friends, to khepera mobile robots. so,
+what we will see now are these two robots
+actually executing this algorithm. and we
+will be using the same go to goal
+controller as we designed earlier to
+achieve this. and, as always, i have j p..
+de la croix here to conduct the affairs
+and practically, we're going to see two
+robots crashing into each other which is
+exciting in its own right. but
+intellectually, what we're going to see,
+is the state of the system asymptotically
+driving into the null space of our new a
+matrix. and the reason for that is, as
+we've seen this matrix has 0, 0
+eigenvalue, which means that the system is
+critically stable and the states approach
+the null space. so, j.p., without further
+ado, let's see a robotic crash. so, we see
+they're immediately turning towards each
+other and . pretty exciting stuff, if i
+may say so myself.

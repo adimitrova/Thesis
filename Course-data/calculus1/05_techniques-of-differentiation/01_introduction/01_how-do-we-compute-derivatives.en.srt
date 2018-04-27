@@ -1,0 +1,128 @@
+1
+00:00:00,220 --> 00:00:05,080
+[MUSIC]
+
+2
+00:00:05,080 --> 00:00:09,730
+I'm gonna say a little bit about how
+this course as a whole is structured.
+
+3
+00:00:09,730 --> 00:00:12,350
+Right, we're really covering three topics.
+
+4
+00:00:12,350 --> 00:00:15,770
+Covering limits,
+derivatives, and integrals.
+
+5
+00:00:15,770 --> 00:00:19,390
+And for each of those three topics,
+we're looking at three different things.
+
+6
+00:00:19,390 --> 00:00:22,960
+We're looking at the definition,
+the sort of concepts behind it.
+
+7
+00:00:22,960 --> 00:00:27,260
+Looking at techniques,
+sort of how we work with those concepts.
+
+8
+00:00:27,260 --> 00:00:30,360
+And then we're looking at applications,
+what can we do with it.
+
+9
+00:00:30,360 --> 00:00:31,860
+So, take a look at limits, all right.
+
+10
+00:00:31,860 --> 00:00:35,971
+We learned about the definitions for
+the concepts behind limits at first, and
+
+11
+00:00:35,971 --> 00:00:39,970
+then we learned some techniques for
+doing computations involving limits.
+
+12
+00:00:39,970 --> 00:00:42,820
+Say, using a little bit of algebra or
+thinking about infinity.
+
+13
+00:00:43,820 --> 00:00:46,150
+And now we want to think
+about an application.
+
+14
+00:00:46,150 --> 00:00:47,590
+Why do we care about limits?
+
+15
+00:00:48,700 --> 00:00:52,140
+Well the reason that we care about
+limits was because of the derivative.
+
+16
+00:00:52,140 --> 00:00:54,970
+Right?
+We use the limits to define the derivative
+
+17
+00:00:54,970 --> 00:00:57,079
+and to introduce some of
+the concepts of the derivative.
+
+18
+00:00:58,180 --> 00:01:01,510
+And now that we've introduced
+the concept of the derivative,
+
+19
+00:01:01,510 --> 00:01:05,230
+we wanna go into the techniques or
+the computational questions.
+
+20
+00:01:05,230 --> 00:01:08,160
+How do you actually compute a derivative?
+
+21
+00:01:08,160 --> 00:01:12,050
+And in order to do those kinds of
+computations, we have to think about
+
+22
+00:01:12,050 --> 00:01:15,230
+how would you calculate the derivative
+of a product of two things,
+
+23
+00:01:15,230 --> 00:01:17,260
+if you knew the derivative
+of those two things.
+
+24
+00:01:17,260 --> 00:01:20,654
+Or how would you calculate
+the derivative of a fraction if you knew
+
+25
+00:01:20,654 --> 00:01:24,310
+how to differentiate the numerator and
+the denominator separately?
+
+26
+00:01:24,310 --> 00:01:27,430
+Those are the kinds of questions
+that'll occupy us now.
+
+27
+00:01:27,430 --> 00:01:37,430
+[MUSIC]

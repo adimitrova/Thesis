@@ -1,0 +1,294 @@
+1
+00:00:00,000 --> 00:00:05,729
+[MUSIC] Hello. 
+I'm at the Knowlton School of 
+
+2
+00:00:05,729 --> 00:00:11,199
+Architecture at the Ohio State 
+University. 
+
+3
+00:00:12,240 --> 00:00:21,486
+And today, we're going to measure the 
+slope of some staircases, namely, this 
+
+4
+00:00:21,486 --> 00:00:27,300
+staircase here and this even larger 
+staircase. 
+
+5
+00:00:27,300 --> 00:00:36,490
+You may think that this larger staircase 
+is steeper than this staircase because, 
+
+6
+00:00:36,490 --> 00:00:43,570
+well, this staircase is harder to climb. 
+But let's actually find out. 
+
+7
+00:00:43,570 --> 00:00:50,999
+And we're going to find out by measuring 
+how far the staircase goes up by how wide 
+
+8
+00:00:50,999 --> 00:00:55,829
+each step is. 
+When I measure this step, I see that it 
+
+9
+00:00:55,829 --> 00:01:02,887
+goes over twelve inches and it rises 
+about six and a quarter inches. 
+
+10
+00:01:02,887 --> 00:01:07,809
+On the other hand, we have this larger 
+staircase here. 
+
+11
+00:01:07,809 --> 00:01:14,674
+Let's see what its slope is. 
+So, when I measure, I get 36 inches for 
+
+12
+00:01:14,674 --> 00:01:20,229
+the width of each step. 
+On the other hand, [SOUND] I find that 
+
+13
+00:01:20,229 --> 00:01:26,331
+the height of each step is about 18-3/4 
+inches. 
+
+14
+00:01:26,331 --> 00:01:32,160
+Now, that we've made the measurements, 
+let's go compute the slope. 
+
+15
+00:01:33,440 --> 00:01:45,268
+So, we've measured our stairs and we 
+found out that the small steps went up by 
+
+16
+00:01:45,268 --> 00:01:54,064
+6.25 inches and they were 12 inches wide, 
+okay? 
+
+17
+00:01:54,064 --> 00:02:07,240
+This gives us a slope for the small steps 
+of 6.25 all over twelve. 
+
+18
+00:02:07,240 --> 00:02:11,912
+But there were also large steps. 
+Let's draw those in. 
+
+19
+00:02:11,912 --> 00:02:17,226
+Here we go. 
+So, this was one of the large steps and 
+
+20
+00:02:17,226 --> 00:02:23,914
+then, we had another one. 
+It goes off and it builds, it climbs over 
+
+21
+00:02:23,914 --> 00:02:26,571
+there. 
+It goes down like this. 
+
+22
+00:02:26,571 --> 00:02:29,228
+This is a large step. 
+Alright. 
+
+23
+00:02:29,228 --> 00:02:35,118
+The height of the large step was this 
+place right here. 
+
+24
+00:02:35,118 --> 00:02:44,060
+18.75 inches, 
+that's the height of the large step. 
+
+25
+00:02:44,060 --> 00:02:54,779
+And the width of the large step was 36 
+inches. 
+
+26
+00:02:54,779 --> 00:03:11,680
+Okay, great. So, the slope of the large 
+steps is 18.75 all over 36. 
+
+27
+00:03:11,680 --> 00:03:19,919
+These two slopes are the same, because we 
+can simplify, we can reduce this fraction 
+
+28
+00:03:19,919 --> 00:03:28,159
+to be dividing the numerator by three and 
+dividing the denominator by three, we get 
+
+29
+00:03:28,159 --> 00:03:33,987
+6.25 / 12. 
+And we can see, if we connect the tips of 
+
+30
+00:03:33,987 --> 00:03:41,415
+these stairs with a line or this makes a 
+line of the desired slope and see how the 
+
+31
+00:03:41,415 --> 00:03:46,250
+large stairs and the small stairs all 
+meet at the corner of this line. 
+
+32
+00:03:46,250 --> 00:03:51,147
+The fact that the staircase with the 
+large steps and the staircase with the 
+
+33
+00:03:51,147 --> 00:03:56,371
+small steps have exactly the same slope 
+is evidenced by the fact that they have 
+
+34
+00:03:56,371 --> 00:03:59,963
+the same railing. 
+There's the railing for the staircase 
+
+35
+00:03:59,963 --> 00:04:04,991
+with the large steps and here's the 
+railing for the staircase with the small 
+
+36
+00:04:04,991 --> 00:04:07,864
+steps. 
+And they're exactly at the same angle. 
+
+37
+00:04:07,864 --> 00:04:12,958
+So, we've seen that the staircase with 
+the larger steps and the staircase with 
+
+38
+00:04:12,958 --> 00:04:16,550
+the smaller steps actually have exactly 
+the same slope. 
+
+39
+00:04:16,550 --> 00:04:22,858
+Now, let's use the slope to estimate how 
+tall the staircase is after you've gone a 
+
+40
+00:04:22,858 --> 00:04:27,140
+certain distance in the horizontal 
+direction. 
+
+41
+00:04:27,140 --> 00:04:32,129
+How high up am I now? 
+Here, you can see that we have a tape 
+
+42
+00:04:32,129 --> 00:04:38,496
+measure where we're measuring the width 
+or the horizontal distance that I 
+
+43
+00:04:38,496 --> 00:04:44,518
+traveled here on the staircase. 
+And if we get to the point where I was 
+
+44
+00:04:44,518 --> 00:04:48,647
+standing, we'll find out that it's about 
+23 feet. 
+
+45
+00:04:48,647 --> 00:04:52,777
+Now, how high was I standing when I was 
+up there? 
+
+46
+00:04:52,777 --> 00:04:58,541
+So, now that we've made our calculation, 
+let's check our calculation. 
+
+47
+00:04:58,541 --> 00:05:04,809
+Okay. Now, we have a question. 
+We went to a certain part on the 
+
+48
+00:05:04,809 --> 00:05:07,929
+staircase, 
+say, right here. 
+
+49
+00:05:07,929 --> 00:05:12,610
+And then we measured. 
+We, we, we, we marked, 
+
+50
+00:05:12,610 --> 00:05:23,084
+we had a point in mind and we measured 
+the distance on the ground to that point. 
+
+51
+00:05:23,084 --> 00:05:28,559
+We found out that it was 23 feet, 
+okay? 
+
+52
+00:05:28,559 --> 00:05:38,318
+So, if you remember, the slope of a 
+staircase was 6.25 / 12, which is 
+
+53
+00:05:38,318 --> 00:05:48,504
+approximately 0.52. 
+We want to know this height, x. 
+
+54
+00:05:48,504 --> 00:05:54,134
+So, we went x / 23 to be approximately 
+0.52. 
+
+55
+00:05:58,140 --> 00:06:05,376
+Solve for x. 
+Multiply both sides by 23 and we get x is 
+
+56
+00:06:05,376 --> 00:06:13,603
+approximately 0.52 times 23. 
+0.52 times 23 is 11.96. 
+
+57
+00:06:13,603 --> 00:06:23,800
+So, x is approximately 12 feet. 
+Now, let's go check our answer. 
+
+58
+00:06:29,540 --> 00:06:44,945
+So here we are, checking our measurement. 
+[MUSIC] And I can see, it's almost 
+
+59
+00:06:44,945 --> 00:06:50,775
+exactly twelve feet. 
+[MUSIC] 

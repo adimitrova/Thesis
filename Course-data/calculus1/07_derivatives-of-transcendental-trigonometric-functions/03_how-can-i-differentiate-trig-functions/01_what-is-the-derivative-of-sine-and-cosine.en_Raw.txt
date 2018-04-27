@@ -1,0 +1,246 @@
+[music].
+once, we believe that sine and cosine are
+important functions, they're all about the
+connection between angles and lengths.
+well, then we want to apply our usual
+calculus trick.
+what happens if i wiggle the input to sine
+and cosine?
+you might think about trigonometry as
+being something about right triangles.
+but, here, i've drawn a picture of a
+circle and you can rephrase all this stuff
+in terms of just geometry of the unit
+circle.
+so this is the unit circle.
+the length of this radius is 1 and i've
+got a right triangle here and this angle
+is theta.
+that means this base here has like cosine
+theta and the height of this triangle is
+sine theta.
+the coordinates then, or this point on the
+unit circle are cosine theta sine theta.
+now, let's make that angle just a little
+bit bigger.
+let's suppose that i make this angle just
+a big bigger, and instead of thinking
+about theta, i'm thinking about an angle
+of measure theta plus h and that means
+this angle in between has measure h.
+we'll do a little bit of geometry to
+figure out how far that point moved when i
+wiggled from theta to theta plus h.
+so let's think about this point here and
+let's draw the tangent line to the circle
+at that particular point.
+well, i'm going to draw a little tiny
+triangle, which is heading in the
+direction of that of that tangent line.
+and, so that it's tangent to the circle,
+the hypotenuse of that little tiny right
+triangle here in red will be perpendicular
+to this line here.
+i can actually determine the angles in
+that little, tiny right triangle.
+so we go this big right triangle down
+here, and just because its a triangle,
+this angle theta plus this angle in here
+plus this right angle have to add up to
+180 degrees.
+but i've also got a straight line here and
+that means that this top angle plus this
+right angle plus this mystery angle must
+also add up to 180 degrees.
+well, this plus this plus this is 180
+degrees.
+and this plus this, same right angle, plus
+this mystery angle add up to 180 degrees.
+that means that, that mystery angle and
+that little tiny right triangle must also
+be theta.
+i'd also like to know the length of the
+hypotenuse of the little tiny triangle.
+radians save the day.
+how so?
+well, i want to know the length of this
+little piece of arc.
+what else do i know?
+i know this is a unit circle.
+and i know this angle here is h in
+radians.
+and the definition of radiance means that
+this little length of arc here has length
+h.
+now, let's put my tiny right triangle back
+there.
+i'm going to have the hypotenuse of that
+little right triangle also be h.
+it's going to be close enough, right,
+because this little piece of curved arch
+and this straight line are awfully close.
+now that i know the length of the
+hypotenuse and the angles in that right
+triangle i can use sine and cosine to
+determine the side lengths of the other
+two sides.
+so i've got a little tiny right triangle,
+hypotenuse h, that angle there is theta,
+and that means that this vertical distance
+here is h times cosine theta.
+and the horizontal distance of that little
+tiny red triangle is h sine theta.
+okay.
+so how much did wiggling from theta to
+theta plus h move the point around the
+circle?
+so the original point here from angle
+theta had coordinates cosine theta sine
+theta.
+and the point up here which i got when i
+wiggled theta up to theta plus h, that
+point has coordinates cosine theta plus h
+sine theta plus h.
+so how much did wiggling from theta to
+theta plus h move the point?
+well, if i use this little right triangle
+as the approximation, sine theta increased
+by about h cosign data, and cosign data
+decreased by about h sine theta.
+we're now in a position to make a claim
+about the derivative.
+in other words, from the picture, we
+learned that sine theta plus h is about
+sine theta plus h cosine theta.
+and cosine theta plus h is about cosine
+theta minus h sine theta.
+and as a result, we can say something now
+about the derivatives.
+how does changing theta affect sine?
+well, about a factor of cosine theta
+compared to the input.
+so the derivative of sine is cosine theta.
+and how does changing theta affect cosine?
+well, about a factor of negative sine.
+so the derivative of cosine is negative
+sine.
+maybe you don't find all this geometry
+convincing.
+well, we could go back to the definition
+of derivative in terms of limits and
+calculate the derivative of sin directly.
+so if i want to calculate the derivative
+of sin using the limit definition of the
+derivative, well, the derivative of sine
+would be the limit as h approaches 0 of
+sine theta plus h minus sine theta over h.
+the trouble now, is that i've gotta
+somehow calculate sine theta plus h.
+how can i do that?
+well, you might remember, there's an angle
+sum formula for sine.
+sine of alpha plus beta is sine alpha
+cosine beta plus cosine alpha sine beta.
+if i use this, but replace alpha by theta
+and beta by h, i get this.
+sine of theta plus h can be replaced by
+sine theta cosine h plus cosine theta sine
+h.
+so let's do that.
+so, the derivative is the limit as h
+approaches zero of, instead of sine theta
+plus h, it's sine theta times cosine h.
+this first term, plus cosine theta sine h
+minus sine theta from up here and this
+whole thing is divided by h.
+so, this is sine theta plus h minus sine
+theta all over h.
+now, i can simplify this a bit.
+i've got a common factor of sine theta, so
+i can pull that out.
+this is the limit as h approaches zero,
+pull out that common factor of sine theta.
+what's left over is cosine h minus 1 over
+h plus, i've still got this term here,
+cosine theta sine h over h.
+i'll write that as cosine theta times sine
+h over h.
+all right.
+so this limit calculates the derivative of
+sine.
+now, it's written as a limit of a sum,
+which is a sum of the limits, provided the
+limits exist.
+so, i can also note that sine theta and
+cosine theta are constants.
+right, h is the thing that's wiggling, so
+i can pull those constants out of the
+limits as well.
+so what i'm left with is sine theta.
+times the limit as h approaches 0 of
+cosine h minus 1 over h.
+plus cosine theta times the limit as h
+approaches 0 of sine h over h.
+now, how do i calculate these limits?
+well, we've got to remember way back to
+when we were calculating limits a long,
+long time ago.
+we can calculate these limits by hand,
+using say, the squeeze theorem.
+and it happens that this first limit is
+equal to 0 and the second limit is equal
+to 1.
+so i'm left with 0 plus cosine theta.
+so, this is a limit argument, back from
+the definition of derivative that the
+derivative of sine is cosine.
+so, regardless of whether you think more
+geometrically or more algebraically, the
+derivative of sine is cosine and the
+derivative of cosine is minus sine.
+now, once you believe this, there is some
+sort of weird things you might notice,
+like what if you differentiate sine a
+whole bunch of times?
+so the derivative of sine is cosine and
+the second derivative of sine, is the
+derivative of the derivative.
+it's the derivative of cosine which is
+minus sine.
+and the third derivative of sine is the
+derivative of the second derivative and
+the derivative of minus sine is minus
+cosine.
+and the fourth derivative of sine, well,
+that's the derivative of the third
+derivative, which is minus cosine.
+and the derivative of a cosine is minus
+sine.
+so, the derivative of minus cosine is
+sine.
+so the fourth derivative of sine is sine.
+so that's kind of interesting.
+if you differentiate sine four times, you
+get back to itself.
+and we already know a function that if you
+differentiate just once, it spits out
+itself again, e to the x is its own
+derivative.
+so as sort of a fun challenge, you might
+try to find a function f, so that if you
+differentiate it twice, you get back the
+original function, but if you
+differentiate it only once, you don't get
+back the original function.
+and if you can do this, you can ask the
+same question for even higher derivatives.
+we know a function whose fourth derivative
+is itself, but none of the earlier
+derivatives are the function again.
+can you find a function whose third
+derivative is itself, but the first and
+second derivatives aren't the original
+function?
+that's a fun little game to play, anyway,
+it's a little challenge for you to try to
+find such a function.

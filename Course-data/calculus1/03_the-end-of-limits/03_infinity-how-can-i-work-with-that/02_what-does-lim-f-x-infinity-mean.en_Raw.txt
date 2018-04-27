@@ -1,0 +1,145 @@
+people have thought, people have wondered 
+about infinity for thousands of years. 
+we're going to continue that tradition of 
+thinking about infinity, but we're going 
+to focus in on one specific instance of 
+infinity in mathematics. 
+what does it mean to say that the limit 
+of a function equals infinity? 
+here's what it means. 
+the limit of f of x, as x approaches a 
+equals infinity means that f of x is as 
+large as you like. 
+provided x is close enough to a. 
+as a bit of a warning, i'm not saying 
+that this number limit f of x, x 
+approaches a is equal to this number, 
+infinity is not a number. 
+what i am doing here is attaching a 
+precise meaning to the entire statement 
+that the limit of f of x is infinity. 
+so, that's what it means precisely, but 
+what does it mean practically. 
+let's go to the board. 
+this is an example, 
+the limit of one over x squared as x 
+approaches zero. 
+now this limit is not equal to a number. 
+one over x squared is not getting close 
+to a number when x is approaches zero. 
+but one over x squared is as big as i 
+want it to be if i'm willing to put x 
+close to zero. 
+for instance, if x is within a 1000th of 
+zero, what happens? 
+well to say x is within a 1000th of zero 
+is to say that x is between minus.00 
+and.001. 
+now, x is also non zero here because i 
+don't want to divide by zero. 
+so i've got a non zero number within a 
+1000th of zero. 
+what does that mean about x squared? 
+[sound]. 
+well that means that x squared is, it's 
+bigger than zero because if i square any 
+non zero number, it's positive and it's 
+less than, [sound] a millionth. 
+so if i take a number within a thousandth 
+of zero and i square it, that was within 
+a millionth of zero. 
+and [sound] what does that mean about one 
+over x squared? 
+well if x squared is within a millionth 
+of zero, one over x squared is now 
+bigger, [sound] than a million. 
+what happened, right? 
+i made one over x squared very large by 
+making x close enough but not equal to 
+zero. 
+and there's nothing particularly special 
+about these numbers. 
+if i wanted one over x squared to be 
+bigger than a trillion, i would just need 
+x to be within a millionth of zero. 
+this example is at once maybe too 
+complicated because i've got some 
+explicit numbers in here. 
+and maybe this formula is not complicated 
+enough to, to really get a sense of 
+what's going on. 
+let's look at a slightly more complicated 
+function. 
+so what's the limit of x plus two over x 
+squared minus 2x plus one as x approaches 
+one. 
+and this is a limit of a quotient. 
+so your first temptation is to think the 
+limit of a quotient the quotients the 
+limits. 
+but what's the limit of the denominator? 
+the denominator is a polynomial. 
+polynomials are continuous. 
+so i can evaluate the limit of the 
+denominator just by plugging in one. 
+and if i plug in one, i get one minus two 
+plus one. 
+that's zero. 
+the limit of the denominator is zero. 
+so i can't simply say that the limit of 
+the quotient is the quotient of the 
+limits in this case. 
+because the limit of the denominator is 
+zero. 
+and that limit law does not apply in this 
+case. 
+what am i going to do? 
+well i could also notice the denominator 
+factors. 
+x squared minus 2x plus one, i can 
+rewrite that. 
+[sound] x squared minus 2x plus one is x 
+minus one squared. 
+[sound] so instead of evaluating this 
+limit, i could try to look at this limit, 
+the limit of x plus two over x minus one 
+squared as x approaches one. 
+now what do i know? 
+the numerator is x plus two and if x is 
+close to one, i can make x plus two close 
+to three. 
+what about the denominator? 
+a number close to one, minus one squared, 
+is a number close to zero. 
+but not just a number close to zero. 
+it's a positive number close to zero. 
+so let me write this down. 
+alright. 
+the numerator [sound] is about three. 
+[sound] and the denominator [sound] is 
+about what? 
+well, it's some small but positive 
+number. 
+[sound]. 
+and what happens if i take a number, 
+like, near three, and divide it by a 
+number which is small and positive? 
+that number can be as big as i like. 
+so i can make this quantity as large as i 
+like, if i make x close enough to one. 
+because i can make the numerator close to 
+three, and i can make the denominator as 
+close to zero and positive as i like. 
+and if i take a number close to three and 
+divide it by a number close to zero, i 
+can make a number as large as i want. 
+so this limit [sound] is equal to 
+infinity. 
+the homework includes even trickier 
+situations. 
+for instance, limit problems where x 
+approaches negative infinity, instead of 
+infinity. 
+if you get stuck i encourage you to 
+contact us. 
+we're here to help you. 

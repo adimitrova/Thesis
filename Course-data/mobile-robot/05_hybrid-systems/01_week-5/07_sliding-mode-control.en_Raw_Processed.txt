@@ -1,0 +1,158 @@
+last time we saw that we to 
+worry zeno 
+this zeno problem zeno phenomenon 
+comes in two different flavors 
+one thing that i stated that type 
+zeno is infinitely many switches 
+in zero time in one timing sense here 
+represented this system 
+again, if i x here, time here, 
+i start positive, x is going to 
+until x becomes, just, 
+negative 
+then, going to get this 
+infinitely many switches going right 
+there 
+thats type 
+well, turns out, that we actually 
+remedy this 
+reason is, you know 
+is very, clear happen 
+system shouldnt grind to a halt 
+nicely keep continuing 
+like this 
+like x is equal to 
+so i take this intuitive notion 
+that x keep saying 
+equal to make that mathematically 
+sound 
+what, whats topic todays 
+lecture, this construction 
+we continue beyond zeno point in 
+type zeno system, using something 
+thats known 
+sliding mode control 
+so, lets a little bit general here 
+lets say that i one system, x dot 
+is fx i a switching 
+surface, gx 
+g is negative, i switch to f 
+two, becomes positive i 
+switch back to f 
+so here is, heres switching 
+surface, gx , thats 
+action is 
+this side im going to using 
+f, da, da, da, da, da, da, da, 
+i hit this point, well lets say that f 
+is pointing inwards 
+well this part world i going 
+to using f 
+well, lets say that f here points 
+outwards 
+this means that i hit this point 
+again, i grind to a halt 
+so this is really whats going is that 
+vector fields f f 
+point in wrong direction 
+so f points in to f territory 
+f points in f territory, 
+clear really 
+happen 
+we somehow slide along 
+switching surface here 
+thats clear f f 
+pulling in different directions this 
+is known sliding mode control 
+we is we slide along 
+switching surface 
+so lets see to actually make this 
+sliding happen 
+again, i g positive this side, g 
+negative this side, switching 
+surface is g 
+f wants to drive in this direction, 
+f wants to drive in this 
+direction 
+i want to slide along surface 
+that right solution 
+well first conditions 
+im going to slide 
+well f needs to point in positive 
+direction g this side g is 
+positive 
+so im going to is im going to 
+find this thing, vector thats normal 
+to switching surface turns 
+that luckily us this is gradient 
+partial derivative g respect 
+to x, transpose 
+i take whats called inner 
+product, so, this thing this 
+thing 
+so inner product is a 
+multiplication 
+if this inner product is positive, 
+means that this one this one 
+pointing 
+in direction 
+i also take interproduct this 
+that, if interproduct is 
+negative, means that theyre pointing 
+in, in different directions so this 
+means is i actually a condition 
+sliding 
+i need dg x, this is actually 
+dg, dx, blah, blah, blah, blah, blah, 
+dg, xn a roll vector like this times 
+f, well f to fn, cause 
+vectors 
+if this is negative, that is code 
+this arrow this arrow pointing 
+in different directions 
+so, f points negative g territory 
+f points positive g territory 
+if this happens switching surface, 
+we sliding 
+and, one way we think this 
+object here, derivative g, in 
+direction f 
+this is derivative g in 
+direction f, theres actually a 
+fancy term this 
+called lie derivative 
+so derivative g in direction 
+f, going to write this lfg is 
+simply code dgdx f 
+so i write lfg, this is i mean 
+lead derivative g in 
+direction f 
+so, using slightly fancier notation 
+we know that sliding occurs 
+meaning we slide if 
+derivative, g, in f direction is 
+negative, which, again, means this 
+this different directions, 
+derivative g in f direction is 
+positive, means this this 
+signs meaning point in 
+same, in directions 
+so this actually tells us whether 
+we sliding wallah, we actually 
+a test type zeno that says 
+that sliding occurs 
+if lfg is negative lfg is positive, 
+this is gx so this is along 
+switching surface inside 
+different mode regime 
+we dont to worry this 
+switching surface, 
+this zeno type probe that we 
+to use to see whether we slide 
+this nice this is something 
+thats easily implemented 
+we still dont know actually happens 
+beyond zeno point, meaning, we 
+slide 
+that is going to topic next 
+lecture 

@@ -1,0 +1,289 @@
+>> hello and welcome to our third glue
+lecture.
+to sort of round out the third week of the
+course, today's glue lecture is titled
+systems, and i'm going to talk kind of how
+we think about systems in this course.
+and this will be helpful for quiz 3, we'll
+do 2 examples that are similar to
+questions on the quiz.
+so the goal of this lecture is to think
+about how inputs and outputs can define a
+system, and that's really how we are going
+to think of systems in this course.
+and then, i hope to kind of get you used
+to this matrix representsation, this
+states based form of systems by doing an
+example of putting a second order system
+into states based form.
+and to do a linearization of a non-linear
+second order system as well.
+so first, let's just think for a few
+minutes about what a system is.
+so, you know, in general, we might think
+of a satellite being a system, as a fancy
+technological device that, that does
+something that we design it to do.
+we might think of it as something that has
+this kind of confusing block diagram.
+description.
+we might think of it as something in our
+car, right or a, or a interface which was,
+a technological interface that we, we
+interact with..
+of course there's also the solar system,
+that is somehow a system of planets that's
+working together.
+that we think of, or systems of the body,
+different organs that work together to
+perform basic functions.
+so the point of this slide is just the
+idea that the word system a lot and we
+might all have different ideas about what
+a system is and, you know, this course is
+really kind of all about systems.
+and so i kind of want to clarify what
+we'll mean, and, when we think about them,
+and the idea, really is that, in this
+course, we want to understand how inputs
+really relates to outputs.
+and so any of these systems, we can be
+considering different inputs, different
+parts of the system that we can control or
+actuate on and different outputs of the
+system, different things that we might be
+measuring for different goals.
+so you know, on, you know, a satellite,
+you might be controlling orientation.
+and so you might think of different inputs
+and outputs there, or you might be
+controlling altitude, and so now you have
+different actuators, different goals for
+the altitude than the orientation.
+so we could think of those really in this
+course, as, as distinct systems that have
+different control objectives.
+and so the picture that we're thinking
+about is really this idea that we have
+some input here that we're mapping to an
+output defined by these a, b and c
+matrices.
+and so getting into the first example,
+we're going to talk about how to move a
+dynamical equation that describes some
+system into this form that looks like
+this.
+and at first that can be a little bit
+tricky and so i want to go over it and of
+course remembering that both of these
+equations, have some initial condition.
+f of 0 equals f not.
+x of 0 equals x not.
+keeping that in mind, we're just going to
+think right now about how to go between
+something that looks like this to
+something that looks like this.
+and, really that's just a matter of
+picking our state variables, de, deciding
+what our state is, and then to/g choosing
+these inputs and outputs.
+so which of these variables is what we're
+controlling and which of these is what
+we're measuring.
+and then we're going to write this second
+order differential equation as a pair of
+first order ones, so that our second order
+system is now represented in terms of two
+first order equations.
+and then, put these in terms of our x, our
+u, and our y, right?
+so first, for this example, we'll select
+our state to be f and f dot that's a
+pretty common choice for, for a state at
+not necessarily the only choice, but
+you'll see that it's convenient because
+when we think of x dot, x dot is going to
+look like this right?
+oops, f double dot.
+and now we ha, we, we need to be able to
+know something about f double dot right to
+for this choice of state, and so of course
+we do, and so that's why you'll see that
+often as the choice of the state.
+and now we pick our input to be this
+function p here, so this is somehow,
+someway that we're influencing what f,
+the, the various derivatives of f are
+doing, and now we'll chose our output to
+be f, but again this could be chosen as f
+dot, this could be chosen as both f and f
+dot, and that will determine the form of
+these a, b, and c matrices.
+so those choices are important and usually
+they are described in the problem setup.
+so now that we have chosen our state, our
+input and our output we need to write this
+equation in terms of two first order
+equations.
+so we can think of f-dot and f-double-dot.
+well now we're going to write them in
+terms of our state variables x 1 x 2 in
+our input and our output.
+so, here we have f dot.
+well that was x2, right?
+so we can directly relate f dot in terms
+of x2 and now, x2 of course is related to
+x1 through this, through this time
+derivative.
+and then for f double dot, well f double
+dot is x two dot, and this equation that
+we were given here.
+so where i'm dividing by everything by m,
+and now i'm writing remember x two is f
+dot, so i filled that in here, and here
+i'm filling in that x one is f.
+and here i'm filling in that u is p.
+so just rewriting this to this.
+and so now if we come back, this is
+exactly what i had on the last slide.
+x dot in terms of the other state
+variables as we renamed them in the first
+step.
+and so now it's just a matter of getting
+it to look something like a x plus b u,
+right?
+so i need to pull out, we need to, what i
+would like to do is write an empty matrix,
+and i know that i want that to be times x,
+right?
+so, i write x here, so that's the ax term.
+and, now it's time some other matrix, this
+one's going to be tall and skinny, times
+u.
+okay, so here, i just need to kind of
+rearrange these terms.
+and here we'll have, so what, remember
+that this is x 1 dot, and x 2 dot, that
+we're trying to equal.
+so what does x 1 dot equal?
+well, it equals x 2, so we just need no x
+1 contribution, and 1 x 2 contribution,
+and then no u.
+>> so, now this first line, because, is
+correct, right?
+this x1 gets multiplied by the first entry
+of the matrix, x2 gets multiplied by the
+second.
+they get added together, so this all adds
+up to x2.
+now, for x2 dot, well that equals this
+whole term.
+so now we have a contribution from x1, x2
+and u.
+and that contribution for x one is beta
+over, and from x two is alpha over m.
+and now from u, we need to multiply u by
+c, to get this o, over m, to get this term
+tied up.
+so that ends up looking like this, right?
+where this is our a matrix, and this is
+our b matrix.
+and we can do the same thing for y.
+y equals c x, and since y was f, and f is
+x one, you get just a one in the, in the
+entry of the matrix that x one will be
+multiplied by.
+so this is how you work.
+something that looks like this and to stay
+space form, so now we have that our system
+where we picked our state, our input, our
+output its represented by these three
+matrices a, b and c.
+so to pick up to get into example two.
+this is going to be an example of
+linearizing a non-linear system.
+so this is a system where we have this z
+squared term.
+sorry let me fix my marker here.
+so now we have this z squared term, which
+means we can't do what i just did where i
+wrote this empty a matrix and pulled out x
+and just filled in the indices right.
+we have this z squared term which means
+it's not going to fit into that abc form.
+and so what we do is we linearize it
+around some operating point, and here that
+point is going to be 0, 0.
+and so first what we need to do, of
+course, is just write this guy, the second
+order.
+differential equation in terms of these 2
+first order equations.
+so just i'm writing this kind so that you
+remember that x1 dot because of this twice
+that we;re given in the problem that x and
+z and z dot and our input u is tau.
+that this is how, that d dot and d double
+dot relate to x1 dot and x2 dot.
+and so now we have that x1 dot is x2, x2
+dot is this whole thing because that's
+what d double dot is.
+again writing it in terms of our state
+variables.
+but now, again we have this x1 squared, so
+we can't just write this in abc form.
+so the way we do it in this case is to
+just compute this a matrix, this
+linearization.
+so here we have f1, f and f2 which are
+going to be, here's our f1, here's our f2.
+and so we just have to compute these
+derivatives in terms of our stay
+variables.
+so this first, let's i'll write it out.
+for a, we have the derivative of this guy
+with respect to x1.
+that's 0.
+now the derivative x2 with respect to x2.
+that's 1.
+now we look at f2 to compute the second
+row.
+derivative of x2 with respect to x1 is
+2lx1, this term.
+both of these other two terms go to zero,
+and now f2 in terms of x2 is just gamma,
+right, because here's the x2 term.
+and so now this is our a matrix evaluated
+at our operating point, right?
+so this term is going to go away, and this
+whole thing is going to equal zero, zero
+0,1,0 gamma, for this choice of this
+operating point.
+so we're linearizing around that, around
+that point.
+in the case of the pendulum, when it's
+hanging down.
+right?
+that we're just going to be able to
+control it around that hanging down
+position.
+so, in nicer text, this is what we have.
+and we do the same, a very similar process
+for the b matrix, where now the b matrix
+has a different size, right?
+but we have the derivative f one in terms
+of u, and the derivative f two in terms of
+u.
+so that's these two equations again.
+and we get this, that this is zero c, and
+evaluated at any operating point this is
+actually going to be the same thing
+because it's not and a function of any of
+our state variables anymore.
+so now, the linearization of this system
+is given by these 2 matrices.
+and our output is going to be a similar
+process, that i think dr.
+iverson went over in lecture, as well.
+so with that, good luck on quiz 3, and i
+hope you're enjoying the course.

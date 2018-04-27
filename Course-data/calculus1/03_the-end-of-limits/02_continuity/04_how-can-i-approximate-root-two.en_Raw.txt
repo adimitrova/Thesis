@@ -1,0 +1,287 @@
+[music] so, i get a number like the 
+square root of two. 
+and square root of two is irrational. 
+so, how am i going to figure out what 
+it's approximately equal to? 
+well, it turns out that it's 
+approximately, you know, 1.414 and a bit 
+more. 
+but how would ever figure that out? 
+how would i know that that's 
+approximately the value of the square 
+root of two? 
+let's use the intermediate value theorem 
+to try to pull it. 
+i want to use the intermediate value 
+theorem to approximate the square root of 
+two. 
+to do that, i'm going to use this 
+function, 
+f(x) = x^2 - 2. 
+notice something about this function. 
+this function is equal to zero when x is 
+the square root of 2. 
+and how is that? 
+f of the square root of 2 is the squared 
+of two squared, which is two, minus two, 
+which is zero. 
+so, if i'm trying to approximate the 
+square root of 2, what i'm going to think 
+about this, is that i'm going to look for 
+a positive value, that i can plug into 
+this function to make it a square root of 
+zero. 
+how am i going to find such a value? 
+you know, the other good thing about this 
+function is that it's continuous. 
+and then, i can plug in some values, like 
+f(1). 
+now, what's f(1)? 
+it's one squared minus two and that's 
+minus one. 
+and i can plot that on my graph right 
+here, and it's this point right here. 
+and take a look at, say, f(2). 
+f(2) would be two squared minus two, 
+which is two. 
+and i can plot that on my graph, right 
+here. 
+it's 2, 
+now, f is a continuous function and at 
+one, it's negative. 
+and at two, it's positive. 
+so, it's a continuous function. 
+it's negative at one and it's positive at 
+two. 
+by the intermediate value theorem, there 
+must be a point in between when the 
+functions value is equal to zero. 
+and you can see that on the graph. 
+we're looking for that point. 
+that is the square root of two where this 
+graph crosses the x-axis, 
+the positive x-axis. 
+and that's the point that we're looking 
+for, 
+right? 
+the intermediate value theorem promises 
+me there's a value in between where the 
+functions value equals zero. 
+and i can see that there must be such a 
+point on the graph. 
+and now, i know that that value is 
+between one and two. 
+and i can do better. 
+i can cut this interval between one and 
+two in half and i get that f(1.5). 
+well, 1.5 squared is 2.25 - 2 is 0.25. 
+[sound] alright. 
+so, that's, say, this point on my graph. 
+now, what do i know? 
+i know that the squared of two, which is 
+where this graph crosses the x-axis, is 
+between one, where the function is 
+negative and 1.5, where the function is 
+positive. 
+and i can do better, 
+alright? 
+i can pick some other point. 
+let's be brave and pick 1.4. 
+and if i plug in 1.4, well, 14 squared is 
+so, 1.4 squared is 1.96 - 2, 
+that makes this -0.4, 
+alright? 
+this is barely below the x-axis. 
+and i can plot that point here. 
+and now, i know that the square root of 
+two, the positive input to this function, 
+which is equal to zero, 
+well, it must be between 1.4 and 1.5. 
+because the function's value at 1.4 is 
+negative and the function's value at 1.5 
+is positive. 
+so, this is not so bad. 
+i mean, we, we could do this with a few 
+calculations on the blackboard. 
+let's, let's bring out some sort of 
+computation device so we can try to get 
+an even better approximation to the 
+square root of two. 
+so here, i've got a function. 
+the function is f(x) = x^2 - 2. 
+and you can see that if i plug zero into 
+the function, i get out -2 because 0^2 - 
+2 is -2. 
+now, this is a physical function. 
+i've got this knob here. and as i spin 
+this knob, the function's input value 
+changes. 
+so, for example, if i spin it up to 
+f(05.), f(1/2), that's negative 1.75 and 
+that's right because if i take a half 
+squared, i get a quarter, and a quarter 
+minus two is -1.75. 
+now, i could spin the input up to one. 
+f(1) is -1 = because 1^2 - 2 is -1 or 
+f(1.5), well, 1.5 squared is 2.25, 2.25 - 
+1 is 0.25. 
+now, this is positive or i could wheel it 
+back down a little bit. 
+and i see that when i get to 1.41, the 
+function's output is negative again. 
+then, i could increase the function's 
+input a bit. 
+oh, now the function's output is positive 
+again, at f(1.145). 
+and then, i could decrease the value a 
+little bit. 
+oh, 
+now, the function's output value is 
+negative again and that would increase 
+the output value a little bit. 
+oh, 
+now, the function's output is positive 
+and i could decrease the input a bit. 
+now, the function's output is negative, 
+could increase the input a little bit. 
+now, it's positive, could decrease the 
+input a little bit. 
+now, it's negative again. 
+now, look at what happened, 
+right? 
+what's going on? 
+i'm looking at the function f(x) = x^2 - 
+2 and i'm walking back and forth across 
+the point where this function is equal to 
+zero. 
+and as i walk to the left and to the 
+right, the function is positive and the 
+function is negative. 
+and i'm getting closer and closer to a, 
+to the actual place where the function is 
+equal to zero and what is 1.41421356? 
+it's awfully close to the square root of 
+two. 
+and if you think the square root of two 
+and square it and subtract two, you get 
+zero. 
+what we just saw with the knob that i was 
+turning is actually an incredibly general 
+technique for figuring out where a 
+continuous function crosses the x-axis. 
+and we can do it very efficiently. 
+let's take a look at how we might do this 
+a little bit more carefully. 
+here, i've drawn a graph with some random 
+looking continuous function and i've 
+labeled some points along the x-axis. 
+imagine that we couldn't see this whole 
+graph. 
+just imagine that the only thing you can 
+do is interrogate this function. 
+you can ask this function at some input 
+point, are you positive or negative? 
+we're trying to figure out where, 
+approximately, this continuous function 
+crosses the x-axis. 
+we're looking for a zero of this 
+continuous function. 
+how might the game begin? 
+i'll let it begin by asking the function, 
+are you positive or negative at zero? 
+and the function is positive at zero. 
+and then, maybe i'd ask at sixteen. 
+at sixteen, is this function positive or 
+negative? 
+and i'd see the function is negative. 
+the function's value is negative at 
+sixteen. 
+because it's a continuous function and 
+the function's value at zero is positive 
+and the function's value at sixteen is 
+negative, i know that there's a zero in 
+between. 
+there's some point in between that if i 
+plug it into the function, i get zero 
+out. 
+now, i could cut that interval in half. 
+i could plug in eight and i could ask the 
+function at f(8), are you positive or 
+negative? 
+and the function f(8), the value of the 
+function at eight is positive. 
+now, look. 
+i know the function's value at eight is 
+positive, the function's value at sixteen 
+is negative. 
+so, by the intermediate value theorem, 
+there must be a value in between, right 
+there, where the function's value is 
+zero. 
+and now, i could take that interval and 
+cut it in half again. 
+i could take a look at twelve, which is 
+exactly between eight and sixteen. 
+and i could ask the function, at 
+f(12),12), are you positive or negative? 
+and the function's value at twelve is 
+negative. 
+[sound] so now, i know by the 
+intermediate value theorem, the function 
+zero zero of this function must land 
+between eight and twelve and i could cut 
+that interval in half again. 
+i could look at ten, and i could ask the 
+function, 
+well, if i plug in ten, are you positive 
+or negative? 
+and the function's value with ten is 
+negative. 
+and now, i know that the zero must land 
+between eight and ten, because the 
+function's value at eight is positive and 
+the function's value at ten is negative, 
+so there must be a zero in between, a 
+point where the function's value is equal 
+to zero. 
+now, i could cut that interval between 
+eight and ten in half again. 
+i could look at nine. and i could ask the 
+function, at nine, are you positive or 
+negative? and if i plug in nine, it looks 
+like the function is positive. 
+and that means that a value that i can 
+plug into the function to make the output 
+zero lies between nine and ten. 
+and this is really quite remarkable. 
+i, i, i could cut the interval between 
+nine and ten and half again and see if it 
+was between nine and 9.5 or 9.5 and ten. 
+and i could keep doing this every time 
+i'm getting a little bit more precision 
+as to the exact value of the input that 
+would make the function zero. 
+the other really neat thing about this is 
+that i could have just tried all of the 
+values between zero and sixteen. 
+i could have plugged all seventeen of 
+those numbers into the function to figure 
+this out. but by doing this clever 
+cutting in half method, this bisection 
+method, i managed to only ask six 
+questions, 
+right? 
+i asked the function's value at zero and 
+sixteen, at eight and twelve, at ten and 
+at nine, and by only asking six 
+questions, i was able to narrow down a 
+region where a zero resided. 
+now, that's pretty quite efficient, much 
+better than asking seventeen questions. 
+so, this is a very general technique for 
+figuring out where zeroes of continuous 
+functions lie. 
+and i encourage you to pick your favorite 
+function and see if you can approximate a 
+root, a zero of that function. 
+[music] 

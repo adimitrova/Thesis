@@ -1,0 +1,402 @@
+1
+00:00:00,025 --> 00:00:05,035
+[MUSIC]. 
+
+2
+00:00:05,035 --> 00:00:09,655
+Let's use calculus not just to calculate 
+the area under the graph of a function, 
+
+3
+00:00:09,655 --> 00:00:14,670
+let's use calculus to find the area 
+between two curves. 
+
+4
+00:00:14,670 --> 00:00:20,120
+Specifically, what's the area between the 
+graph of y equals the square root of x. 
+
+5
+00:00:20,120 --> 00:00:26,699
+And the graph of y equals x squared. 
+As usual, let's start by drawing a graph 
+
+6
+00:00:26,699 --> 00:00:29,922
+of the situation. 
+Here's my plane. 
+
+7
+00:00:29,922 --> 00:00:36,880
+the graph of y equals x squared maybe 
+looks like that. 
+
+8
+00:00:36,880 --> 00:00:43,768
+And the graph of the square root of x, 
+maybe looks like this in red. 
+
+9
+00:00:43,768 --> 00:00:47,300
+So what's this area between curves even 
+mean? 
+
+10
+00:00:47,300 --> 00:00:53,732
+Well I really mean the area inside, this 
+little wing shaped region here. 
+
+11
+00:00:53,732 --> 00:01:00,780
+this point is worth thinking about, that 
+point has coordinates 1,1. 
+
+12
+00:01:00,780 --> 00:01:03,960
+let's set it up as an integration 
+problem. 
+
+13
+00:01:03,960 --> 00:01:09,659
+I can imagine carving this region up into 
+lots of thin rectangles, right? 
+
+14
+00:01:09,659 --> 00:01:14,084
+Setting up a[UNKNOWN] sum. 
+Let's draw some of those thin rectangles, 
+
+15
+00:01:14,084 --> 00:01:18,271
+in this region here. 
+And, you have to worry a little bit about 
+
+16
+00:01:18,271 --> 00:01:21,830
+exactly how tall all these rectangles 
+are. 
+
+17
+00:01:21,830 --> 00:01:26,620
+And how wide all these rectangles are. 
+Well, how tall are these rectangles? 
+
+18
+00:01:26,620 --> 00:01:29,470
+Let's just pick one of the rectangles in 
+particular to think about. 
+
+19
+00:01:29,470 --> 00:01:31,770
+Let's pick this rectangle, and think 
+about it. 
+
+20
+00:01:31,770 --> 00:01:34,650
+How tall is it? 
+Well, its top edge. 
+
+21
+00:01:34,650 --> 00:01:40,470
+Is on y equals the square root of x, and 
+its bottom edge is on this orange curve. 
+
+22
+00:01:40,470 --> 00:01:44,403
+The y equals x squared term. 
+So the height of that particular 
+
+23
+00:01:44,403 --> 00:01:49,095
+rectangle is its top coordinate minus its 
+bottom coordinate, so it will be square 
+
+24
+00:01:49,095 --> 00:01:53,972
+root of x minus x squared tall And how 
+wide is it? 
+
+25
+00:01:53,972 --> 00:01:58,942
+Well, the width of this little tiny tri-, 
+rectangle, is, not supposed to very big, 
+
+26
+00:01:58,942 --> 00:02:02,904
+right? 
+So let's call its width dx, right? 
+
+27
+00:02:02,904 --> 00:02:06,831
+I'm imagining that its, width is, very 
+narrow. 
+
+28
+00:02:06,831 --> 00:02:10,967
+It's a very thin rectangle. 
+So that amounts to evaluating a certain 
+
+29
+00:02:10,967 --> 00:02:13,815
+integral. 
+Yeah, but which integral? 
+
+30
+00:02:13,815 --> 00:02:16,790
+Well, I want to add up the areas of all 
+these little boxes. 
+
+31
+00:02:16,790 --> 00:02:21,078
+And these little boxes have heights given 
+by this, and widths given by some small 
+
+32
+00:02:21,078 --> 00:02:26,180
+quantity, I'm[INAUDIBLE] dx. 
+So the integral that I want to calculate 
+
+33
+00:02:26,180 --> 00:02:31,218
+will be the integral of the area. 
+So it'll be the height. 
+
+34
+00:02:31,218 --> 00:02:37,030
+The square root of x minus x squared. 
+Times the width which is DX. 
+
+35
+00:02:37,030 --> 00:02:41,782
+And then what does my X go between? 
+Well the smallest value of X here is zero 
+
+36
+00:02:41,782 --> 00:02:48,180
+and the biggest value of X here is one so 
+I'll have X going from zero to one. 
+
+37
+00:02:48,180 --> 00:02:52,755
+So that's the integral that I want to 
+calculate which will find the area in 
+
+38
+00:02:52,755 --> 00:02:58,643
+between these two curves. 
+I can evaluate that integral by using. 
+
+39
+00:02:59,740 --> 00:03:03,220
+The fundamental theorem of calculus. 
+So, the fundamental theorem of calculus 
+
+40
+00:03:03,220 --> 00:03:05,672
+tells me to find an anti-derivative for 
+this. 
+
+41
+00:03:05,672 --> 00:03:08,636
+So, let's first thing. 
+What's an anti-derivative of the square 
+
+42
+00:03:08,636 --> 00:03:11,690
+root of x? 
+Well that's an anti-derivative of x to 
+
+43
+00:03:11,690 --> 00:03:14,696
+the one half power. 
+But remember my rule for 
+
+44
+00:03:14,696 --> 00:03:19,115
+anti-differentiaing x to a power. 
+It's x to that power plus one, so 3 
+
+45
+00:03:19,115 --> 00:03:23,455
+halves is one more than a half, divided 
+by that power plus 1, 3 halves so that 
+
+46
+00:03:23,455 --> 00:03:28,075
+when I differentiate this I get back x to 
+the one half power and I'll just add some 
+
+47
+00:03:28,075 --> 00:03:35,576
+constant C on there to give myself the 
+general anti-derivative. 
+
+48
+00:03:35,576 --> 00:03:39,340
+What if I want to anti-differentiate x 
+squared? 
+
+49
+00:03:39,340 --> 00:03:42,650
+Well, that's maybe easier. 
+And it's the same power rule. 
+
+50
+00:03:42,650 --> 00:03:49,100
+It's x to the third power, which is one 
+more than two, divided by two plus one. 
+
+51
+00:03:49,100 --> 00:03:52,516
+So that when I differentiate this, I just 
+get back x squared, and I'll add a 
+
+52
+00:03:52,516 --> 00:03:55,330
+constant. 
+Now what's an antiderivative of the 
+
+53
+00:03:55,330 --> 00:03:58,686
+difference? 
+Well, the difference of anti derivatives. 
+
+54
+00:03:58,686 --> 00:04:04,783
+So, the aniti derivative of the square of 
+x minus x squared is the anti derivative 
+
+55
+00:04:04,783 --> 00:04:10,243
+for the squared of x which is x to the 3 
+halves over 3 halves, minus the anti 
+
+56
+00:04:10,243 --> 00:04:18,312
+derivative for x squared. 
+So, x to the 3rd over 3. 
+
+57
+00:04:18,312 --> 00:04:22,590
+So, there's the general anti-derivative 
+for this. 
+
+58
+00:04:22,590 --> 00:04:26,622
+Armed with the anti-derivative, I can now 
+evaluate the internal. 
+
+59
+00:04:26,622 --> 00:04:32,190
+So, one way to write that is as follows. 
+If I went to integrate from 0 to 1, the 
+
+60
+00:04:32,190 --> 00:04:38,760
+squared of x, minus x squared dx. 
+I'll just write down the anti-derivative 
+
+61
+00:04:38,760 --> 00:04:44,735
+for this, or an anti-derivative for this. 
+Which is x to the 3 halves over 3 halves, 
+
+62
+00:04:44,735 --> 00:04:49,540
+minus x to the 3rd over 3. 
+That's an anti-derivative for this, plus 
+
+63
+00:04:49,540 --> 00:04:53,692
+0, if you like. 
+And then, I'll evaluate this quantity at 
+
+64
+00:04:53,692 --> 00:04:58,444
+0 and 1 and take the difference. 
+So, this is a little bit of fancy 
+
+65
+00:04:58,444 --> 00:05:01,924
+notation. 
+Just for plugging in x equals 1, plugging 
+
+66
+00:05:01,924 --> 00:05:06,668
+in x equals 0 and finding the difference. 
+And if I want to emphasize what I'm 
+
+67
+00:05:06,668 --> 00:05:10,264
+plugging in I might write even x equals 0 
+here just to emphasize that x is the 
+
+68
+00:05:10,264 --> 00:05:14,624
+variable that I'm working with. 
+Alright well let's do that. 
+
+69
+00:05:14,624 --> 00:05:20,740
+let's plug in x equals 1 here. 
+And when I do that I get 1 to the 3 
+
+70
+00:05:20,740 --> 00:05:27,780
+halves power over 3 halves minus 1 to the 
+third over 3. 
+
+71
+00:05:27,780 --> 00:05:30,540
+And I'll subtract what I get when I plug 
+in 0. 
+
+72
+00:05:30,540 --> 00:05:37,138
+SO I plug in 0, 0 to the 3 halves over 3 
+halves minus 0 to the third. 
+
+73
+00:05:37,138 --> 00:05:40,742
+Over three. 
+Well this is easy to calculate now. 
+
+74
+00:05:40,742 --> 00:05:45,270
+1 to the 3 halves is 1. 
+So it's the reciprocal of three halves. 
+
+75
+00:05:45,270 --> 00:05:51,100
+Which is 2 3rds, minus 1 to the 3rd, 
+which is 1 over 3. 
+
+76
+00:05:51,100 --> 00:05:56,030
+So that's just a third. 
+And here I've got minus 0. 
+
+77
+00:05:56,030 --> 00:06:02,289
+So I've 2 3rds minus 1 3rd. 
+This integral ends up being equal to 1 
+
+78
+00:06:02,289 --> 00:06:09,940
+3rd which is computing the area between 
+the original curves. 
+
+79
+00:06:09,940 --> 00:06:13,468
+I hope this problem wets your appetite 
+for harder problems along these same 
+
+80
+00:06:13,468 --> 00:06:22,308
+lines, right? 
+You can imagine very complicated area 
+
+81
+00:06:22,308 --> 00:06:26,684
+calculations. 

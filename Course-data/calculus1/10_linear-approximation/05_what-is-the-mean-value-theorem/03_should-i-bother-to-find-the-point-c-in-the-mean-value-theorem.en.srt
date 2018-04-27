@@ -1,0 +1,278 @@
+1
+00:00:00,012 --> 00:00:05,359
+[music].
+A classic problem about the mean theorem
+
+2
+00:00:05,359 --> 00:00:14,267
+problem that's often asked in Calculus
+courses, well, that classic problem goes
+
+3
+00:00:14,267 --> 00:00:19,566
+like this.
+Given a function f and points a and b, I
+
+4
+00:00:19,566 --> 00:00:27,688
+want to find some other point c, so that f
+prime of c is equal to f of b minus f of a
+
+5
+00:00:27,688 --> 00:00:33,843
+all over b minus a.
+The mean value theorem promises us that as
+
+6
+00:00:33,843 --> 00:00:42,054
+long as f is a nice enough function, nice
+enough meaning it's differentiable on the
+
+7
+00:00:42,054 --> 00:00:47,794
+open interval a b, continuous on the
+closed interval a b.
+
+8
+00:00:47,794 --> 00:00:52,063
+That as long as f is a nice enough
+function, then that's possible.
+
+9
+00:00:52,063 --> 00:00:57,071
+I can find that point c, so that the
+derivative of f at the point c is equal to
+
+10
+00:00:57,071 --> 00:01:02,124
+f of b minus f of a over b minus a.
+Let, let's do an example where I try to
+
+11
+00:01:02,124 --> 00:01:05,121
+find that point c.
+So let's do an example.
+
+12
+00:01:05,121 --> 00:01:10,797
+I'll have f of x, just making up some
+example, that'll be x cubed and it will be
+
+13
+00:01:10,797 --> 00:01:14,166
+on the interval where a equal 1 and b
+equals 4.
+
+14
+00:01:14,166 --> 00:01:20,970
+So really, what I'm trying to do is find
+some point c so that the derivative of the
+
+15
+00:01:20,970 --> 00:01:25,767
+function at the point c is f of b minus f
+of a over b minus a.
+
+16
+00:01:25,767 --> 00:01:29,687
+Now, in this case, f of b is 4 cubed,
+that's 64.
+
+17
+00:01:29,687 --> 00:01:34,668
+F of a is 1 cubed, that's 1.
+And b minus a, that's 4 minus 1.
+
+18
+00:01:34,668 --> 00:01:39,368
+This is 63 over 3.
+That's 21.
+
+19
+00:01:39,368 --> 00:01:43,425
+So I'm looking for a point c, where the
+derivative is equal to 21.
+
+20
+00:01:43,425 --> 00:01:45,030
+Now, can I do that?
+Yeah.
+
+21
+00:01:45,030 --> 00:01:48,573
+I just gotta differentiate this function.
+So here we go.
+
+22
+00:01:48,573 --> 00:01:53,454
+I'll differentiate this function, and I
+get that the derivative of x cube is 3 x
+
+23
+00:01:53,454 --> 00:01:57,540
+squared, and I'm looking for which value
+of x is that equal to 21?
+
+24
+00:01:57,540 --> 00:02:04,203
+We'll divide both sides by 3.
+I'm looking for a value of x, where x
+
+25
+00:02:04,203 --> 00:02:07,560
+squared is 7.
+And so divide both sides by 3.
+
+26
+00:02:07,560 --> 00:02:13,872
+And my x should be between a and b, right?
+So in that case, x is the positive square
+
+27
+00:02:13,872 --> 00:02:18,578
+root of 7.
+And what I've really accomplished here, if
+
+28
+00:02:18,578 --> 00:02:25,009
+I make a little graph, here's the x y
+plane, and I'll draw kind of a made up
+
+29
+00:02:25,009 --> 00:02:31,316
+graph of the cubed function.
+All right, here's the point 1, say.
+
+30
+00:02:31,316 --> 00:02:34,531
+Here's the point 4.
+Here is 1,1.
+
+31
+00:02:34,531 --> 00:02:36,611
+Here's 4,64.
+Right?
+
+32
+00:02:36,611 --> 00:02:41,136
+The slope of the line here, all right, is
+21.
+
+33
+00:02:41,136 --> 00:02:48,231
+All right, the slope here is 21.
+And what I've really managed to do here is
+
+34
+00:02:48,231 --> 00:02:55,539
+find that at the square root of 7, the
+slope of the tangent line is exactly the
+
+35
+00:02:55,539 --> 00:03:01,033
+same as the slope of the line through 1,
+1, and 4, 4 cubed.
+
+36
+00:03:01,034 --> 00:03:05,220
+It's super important to emphasize that
+although these kinds of problems are fun,
+
+37
+00:03:05,220 --> 00:03:09,551
+and the mean value theorem guarantees that
+for nice enough functions we can find such
+
+38
+00:03:09,551 --> 00:03:13,363
+a c, yeah, these are fun problems.
+The mean value theorem guarantees that
+
+39
+00:03:13,363 --> 00:03:16,264
+it's possible.
+But that's not the point of the mean value
+
+40
+00:03:16,264 --> 00:03:18,857
+theorem.
+The mean value theorem is more than just a
+
+41
+00:03:18,857 --> 00:03:21,875
+computational result.
+It's really an existence theorem.
+
+42
+00:03:21,875 --> 00:03:27,341
+It's important to emphasize the power of
+these existence results.
+
+43
+00:03:27,341 --> 00:03:32,165
+Something like the mean value theorem
+tells you that something exists without
+
+44
+00:03:32,165 --> 00:03:36,119
+you having to actually go out into the
+world and find that thing.
+
+45
+00:03:36,119 --> 00:03:38,797
+Right?
+And having you do a ton of problems where
+
+46
+00:03:38,797 --> 00:03:43,179
+you find the point c really would
+undermine that important lesson, right?
+
+47
+00:03:43,179 --> 00:03:47,534
+The power of the mean value theorem lies
+not in the fact that you can actually go
+
+48
+00:03:47,534 --> 00:03:51,744
+out and compute the value c, right?
+The power lies in the fact, the mean value
+
+49
+00:03:51,744 --> 00:03:56,164
+theorem tells you that it's possible, that
+you know there's a value of c out there,
+
+50
+00:03:56,164 --> 00:03:58,595
+without you having actually go and find
+it.
+
+51
+00:03:58,595 --> 00:04:02,697
+And because of that, it opens up the door
+to all these interesting conceptual
+
+52
+00:04:02,697 --> 00:04:07,177
+applications where we're relating, say,
+positive derivative on an interval to the
+
+53
+00:04:07,177 --> 00:04:13,398
+fact the function's values are increasing.
+And that's really the power of the mean
+
+54
+00:04:13,398 --> 00:04:18,372
+value theorem.
+It's a conceptual result that helps you
+
+55
+00:04:18,372 --> 00:04:25,981
+relate Information about the derivative to
+information about the original function.
+
+56
+00:04:25,981 --> 00:04:27,234
+.

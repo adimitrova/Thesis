@@ -1,0 +1,171 @@
+music 
+in this short video, 
+we will remind you special relativity notation 
+fourvectors essential tools 
+to work in high energy physics 
+this course will treat phenomena high energy, 
+so a velocity requires 
+a relativistic treatment 
+fundamental principles 
+special relativity 
+based experimental findings 
+that speed light c is constant 
+value in every inertial frame 
+means that galilean way adding 
+velocity is valid high speeds 
+this way, speed light is 
+a maximum velocity cannot 
+exceeded in frame 
+motion is described in a 
+fourdimensional space, called spacetime 
+an event in spacetime is localized 
+carthesian coordinates ct, 
+is time, 
+x, x is position 
+this is described a fourvector x 
+metric space time is 
+defined speed light c, 
+invariant constant in 
+every inertial frame 
+so suppose that a light 
+ray connects two events 
+ct,x ct,x 
+distance between two points 
+in space is always proportional 
+to propagation time light 
+since proportionality constant, 
+speed light, is in every 
+inertial frame, follows that norm 
+a fourvector is also constant 
+lorentz transformations 
+describe rotations 
+translations in spacetime 
+compatible principles 
+let us specify lorentz 
+transformation a simple example 
+let two reference frames 
+first one is rest 
+in laboratory 
+second one moves relative to 
+first one a constant velocity v 
+in direction x axis, 
+parallel two frames 
+coordinates 
+one point in moving system, 
+so x, 
+expressed in coordinates 
+laboratory frame, x 
+answer is given lorentz 
+transformation relates 
+x to x, 
+relative velocity, beta, 
+is ratio between velocity v 
+speed light c, 
+relativistic factor gamma 
+transformation corresponds to a rotation 
+in spacetime leaves norm 
+fourvectors like x invariant 
+transformation involves 
+time coordinate 
+spatial coordinate x along 
+direction motion 
+coordinates orthogonal to 
+motion, y z, left untouched 
+in nonrelativistic 
+limit that is beta 
+gamma, approaches , 
+lorentz transformation 
+reproduces galilean 
+transformation 
+is equal simply to t, 
+x is simply equal 
+to x vt 
+fourvector notation unites 
+time space coordinates in a single vector 
+fourvectors transforming like 
+fourvector x spacetime 
+lorentz transformations 
+called contravariant 
+an important example is contravariant 
+energymomentum vector p 
+norm a fourvector is 
+defined via scalar product 
+between contravariant fourvector 
+covariant form 
+two related metric 
+tensor gnu, shown here 
+scalar products between fourvectors 
+invariant lorentz transformations 
+generally, scalar product is 
+thus defined product between 
+a covariant 
+a contravariant fourvector 
+greek index shows 
+in two, implicit summation this index, 
+runs zero to three, is assumed 
+first example here repeats norm 
+squared spacetime fourvector 
+second example shows norm 
+energymomentum fourvector, 
+is square invariant mass 
+third example 
+is a scalar product between 
+spacetime energymomentum 
+fourvectors, shows in 
+wave function particles 
+scalar products between 
+fourvectors indeed scalars 
+lorentz transformation so 
+invariant, 
+one changes one 
+inertial frame to another 
+notation simplifies if we 
+adopt system natural units, 
+since ubiquitous 
+speed light c disappears 
+two important examples 
+fourvectors fourvector 
+electromagnetic current density, j, 
+charge density 
+rho timelike component, 
+vector current density 
+j spacelike component 
+fourvector 
+electromagnetic potential a, 
+electric potential v 
+a timelike component 
+magnetic vectorpotential 
+a spacelike component 
+an example, we calculate here total 
+available energy in collision 
+a gev electron a proton 
+rest in laboratory frame 
+we confront results 
+a collision in center mass frame, 
+a gev electron collides 
+a gev proton 
+
+an example we calculate 
+kinematics a two 
+body process in laboratory 
+center mass frame 
+in laboratory frame a particle mass 
+m impacts a particle mass 
+m rest 
+we calculate total energy 
+momentum vector in this frame well 
+square length, 
+one neglects masses in system 
+one obtains that maximum invariant 
+mass produced is 
+equal to square root em 
+in numerical example 
+this corresponds to gev 
+in center mass frame 
+contrary two particles impact 
+equal opposite momenta 
+calculation leads us to 
+an invariant mass produced, 
+is two times energy either 
+particle gev in example 
+music 

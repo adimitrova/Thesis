@@ -1,0 +1,96 @@
+[music] since i know about triangular
+numbers and i know how to sum constants, i
+can combine those two facts to some more
+complicated expressions.
+for example, let's do the sum as n goes
+from 1 to k of 2n minus 1.
+all right?
+and what this notation mean is that i plug
+in these numbers from 1 to k into this
+expression and add them up.
+so, i plug in n equals 1, i get 1.
+i plug in n equals 2, i get 3.
+i plug in n equals 3, i get 5.
+i plug in n equals 4, i get 7.
+all right.
+and i'm going to keep going until i end
+with 2k minus 1.
+in words, right, what is this asking me to
+do?
+well, 1, 3, 5, this is adding up odd
+numbers, right?
+so, i could say in words that this is the
+sum of the first k odd numbers.
+right?
+i'm going to add up the first k odd
+numbers, 1 plus 3 plus 5, until i get to
+the k 5 number, which is 2k minus 1.
+let's first work this out algebraically.
+so, algebraically, i've got the sum of 2n
+minus 1 as n goes from 1 to k.
+and this is summing this difference, so i
+could write this as the difference of two
+sums.
+so, both of these are sums as n goes from
+1 to k, but now i'm adding up 2n, i'm just
+adding up 1.
+now, i can pull out this factor of 2 by
+distributivity.
+so, this is 2 times the sum of n as n goes
+from 1 to k, minus just the sum of 1.
+n goes from 1 to k.
+i have a bit of a formula for the sum of
+just the first k whole numbers, right.
+and if you remember back to that formula
+that's k plus 1 times k over 2.
+and what's just the sum of 1 as n goes
+from 1 to k?
+well, this is 1 plus 1 plus 1 plus 1 k
+times.
+that's just minus k.
+now, this is 2 times something divided by
+2, so this is k plus 1 times k and then,
+minus k.
+well, if i expand this out, i've got k
+plus 1 times k minus 1 times k.
+this is k squared.
+so, the sum of the first k odd numbers is
+k squared.
+but i can also see this fact that the sum
+of odd numbers gives me perfect squares.
+i can see this fact geometrically.
+so, i'll draw, say one dot, and then i'll
+draw three more dots.
+all right.
+this is 1 plus 3, it's 2 squared.
+then, i'll draw five more dots.
+1 plus 3 plus 5, that's 3 squared.
+then, i'll draw seven more dots.
+all right, and that's 1 plus 3 plus 5 plus
+7, that's 4 squared.
+and then, i'll draw nine dots, one, two,
+three, four, five, six, seven, eight,
+nine.
+and that's five squared.
+1 plus 3 plus 5 plus 7 plus 9 is 5
+squared, 25.
+and i'll add 11 dots, one, two, three,
+four, five, six, seven, eight, nine, ten,
+and 1 plus 3 plus 5 plus 7 plus 9 plus 11,
+right?
+the sum of the first 1, 2, 3, 4, 5, 6 odd
+numbers is 1, 2, 3, 4, 5, 6 squared, it's
+so, the upshot here is that if you sum odd
+numbers, you end up getting perfect
+squares.
+and, and that's cool independent of
+everything else right, you can see that
+fact geometrically.
+but the real take away here is to remember
+you can actually do summation problems,
+right?
+if somebody gives you a complicated sum,
+by using facts like the sum of just n, and
+the sum of constants, you can combine
+those facts to evaluate more complicated
+summation problems.

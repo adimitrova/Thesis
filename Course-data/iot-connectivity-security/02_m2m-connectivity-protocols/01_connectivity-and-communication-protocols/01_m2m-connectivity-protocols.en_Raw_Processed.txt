@@ -1,0 +1,259 @@
+sound hello, welcome back to 
+course web connectivity 
+security in cyberphysical systems 
+this lesson starts a module link 
+layer connectivity protocols 
+application layer communication protocols 
+in this video lecture, well talk 
+connectivity solutions available 
+embedded systems 
+in words, 
+we will focus machine to machine 
+mm connectivity protocols 
+basic characteristics 
+machine to machine connectivity 
+protocols facilitate establishment 
+a connection between two 
+devices 
+here we will discussing protocols 
+that reside link layer tcp, 
+ip model 
+establish a path 
+between two end points 
+cyberphysical system case, 
+connectivity solutions 
+broadly divided two main 
+categories, wired wireless 
+wired connection ones that 
+require a physical connection between 
+endpoints 
+while in wireless connections, 
+we dont physical medium 
+we will see this classification 
+affects abilities 
+protocols in many ways 
+example range, date rate, 
+power consumption 
+wired connections generally tend 
+to higher date rates 
+higher power consumption 
+this is always case 
+there certain parameters 
+that help us defining 
+distinguishing connectivity protocols 
+mainly range, data rate, 
+power consumption, topology, 
+tcpip support, spectrum, 
+estimated node support, approximate cost 
+well, will 
+discussed in this lecture 
+range defines far away 
+to distance protocol 
+offer connectivity 
+based this definition range, 
+we divide protocols broadly 
+four logical categories, 
+pan, lan, man, wan 
+pan personal area network 
+interconnects devices 
+within personal 
+space an individual 
+range is typically 
+ten centimeters to ten meters 
+lan local area network 
+interconnects devices within a limited 
+area a home, office, building 
+ranges typically ten 
+meters to hundreds meters 
+man a metropolitan area network 
+interconnects devices within a city 
+district covering several buildings, 
+a large 
+university network a citywide 
+municipal network good examples 
+range is typically 
+meters to tens kilometers 
+wan, wide area network, 
+generally geographical 
+restrictions location size 
+wan enables different lans 
+to connect to 
+although distance 
+is a limit such, 
+a wan restricted to 
+a specific country example 
+data rate defines much 
+data per second you transfer 
+much data protocol 
+theoretically transfer per second 
+in wireless networks, 
+theoretical maximum is generally 
+quite different actual results 
+cyberphysical systems, 
+we divide data rates low, 
+high high categories 
+low data rates transfer 
+to one megabits per second 
+high data rates one 
+to two megabits per second 
+high data rates 
+megabits per second 
+this classification doesnt apply 
+thinking in terms typical 
+human usage networks 
+remember that two megabits per second 
+sustained throughput is pretty high 
+embedded systems, 
+smart energy meter 
+smart lighting system, like philips hue, 
+doesnt watch netflix 
+data transfers typically periodic 
+updates require high 
+data rates 
+power consumptions gives you 
+an idea battery life 
+a data throughput 
+interconnection protocol 
+generally, lower power 
+consumption, lower data rate 
+higher rates mean device is 
+longer periods time 
+to process faster, 
+thereby increasing power consumption 
+here we divide power consumption 
+two categories, idle active 
+idle power consumption is power used 
+devices is in state rest 
+meaning, communication is taking place 
+idle power is a significant factor, 
+example, in sensor networks 
+sensors mostly 
+idle communication wise 
+active power consumption 
+is power used 
+a device is in full 
+communication mode 
+this will give you 
+battery life node 
+node is 
+full communication load 
+another consideration is whether 
+connectivity protocol 
+modules offer different power profiles 
+idle state enabling profile, 
+low data rate profile, 
+receive profile, 
+transmit profile 
+save battery 
+power in way 
+topology refers to interconnection 
+between different nodes in network 
+there different ways a protocol might 
+allow devices to connect to 
+common 
+dominant ones following 
+in a bus topology theres 
+a central line bus 
+device is connected to that line 
+so logically device is directly 
+connected to devices 
+in a star topology we 
+a central node server 
+device connects to this server 
+in a mesh topology, 
+device is connected 
+via point to point links to two 
+devices 
+in a full mesh topology, 
+device is connected to 
+devices in network 
+a tree topology is a mixture 
+star bus topologies 
+in a tree network, two star 
+networks connected a bus network 
+an important question is, 
+connectivity protocol 
+support tcpip higher layers 
+this is essential in two main ways 
+first, supporting tcpip 
+means easy aggressing 
+connectivity to existing internet 
+legacy systems that already deployed 
+second, makes web 
+connectivity easy 
+in case there is support internet 
+connectivity, a gateway used 
+example, a large set smart 
+tags connect to a central server, 
+is connected to internet 
+in this case, central server is 
+gateway to internet tags 
+gateways benefits 
+drawbacks 
+example, 
+add extra cost complexity 
+hand, 
+used to offer extended functions 
+a gateway could, example, 
+encrypt data coming tags 
+passing this data to internet 
+manage authentication 
+limited access to tag 
+so 
+gateway essentially extends 
+complements services provided 
+connectivity protocols 
+is important to know part 
+microwave spectrum a wireless 
+connectivity protocol uses 
+there might regional restrictions 
+spectrum is used device 
+a device might operating 
+in a commercial band 
+requiring you to get a license to operate 
+there different bands 
+simplicity we divide 
+two categories, free commercial 
+free band is portion 
+wireless spectrum 
+that doesnt require devices 
+to operating licenses 
+common one is industry 
+scientific medical ism band 
+frequency ranges vast 
+an example bluetooth 
+wifi operate in two point 
+four gigahertz ism band 
+an example commercial band is 
+, megahertz range used gsm 
+estimated node support 
+is simple to understand 
+means number clients that 
+connected to other, 
+either directly via gateway 
+there might theoretical limit 
+many devices connected 
+there comes a point 
+performance get severely degraded 
+a lot nodes connect 
+to a single gateway, 
+example in case a wifi 
+last parameter is cost 
+deploying a small set devices 
+a difference euros per 
+device might matter much 
+deploying hundreds 
+thousands nodes 
+even a few cents affect 
+overall price greatly 
+in cyberphysical systems 
+censor networks, number 
+nodes is often large enough to make 
+price a decisive factor in 
+selecting connectivity protocol 
+in this lecture, we defined basic 
+properties connectivity protocols 
+in next video, 
+we will an overview a set 
+popular connectivity protocols 
+sound 

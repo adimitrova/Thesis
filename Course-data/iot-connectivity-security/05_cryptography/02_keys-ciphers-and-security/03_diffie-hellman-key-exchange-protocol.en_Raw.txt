@@ -1,0 +1,113 @@
+[sound] hello, welcome back to the video
+lectures on web connectivity and
+security in cyber physical systems.
+in this video lecture, we are going to
+learn how two parties that don't know each
+other previously can share a secret
+through a public medium like the internet.
+the shared secret could be and
+often is the encryption key of
+a symmetric key cipher system.
+the diffie-hellman key exchange algorithm
+was published in 1976 as one of
+the first public key protocols for
+securely exchanging cryptographic
+keys over public networks.
+the algorithm is based on
+the concept of discrete logarithms.
+diffie-hellman is not an actual
+encryption algorithm,
+meaning that it's not used to protect
+data transfer between two parties.
+let's explore how
+the diffie-hellman protocol works.
+suppose that alice and bob don't know
+each other and they would like to share
+an encryption key of a symmetric cipher in
+order to initiate secure communication.
+to do this, first, alice and
+bob have to agree on two numbers,
+a sufficiently large prime number p and
+a base generator g,
+which is a primitive root modulo p.
+alice chooses a secret number or key a and
+computes her public result, capital a,
+as g to the power of a mod p and
+sends it to bob.
+bob also chooses a secret number or
+key b and
+computes his public results,
+capital b, as g
+to the power of b mod p and
+sends it to alice.
+at this point,
+a potential attacker may intercept
+their communication and
+get the public results a and b.
+he might also capture p and g when alice
+and bob are agreeing on these numbers.
+now, alice computes a shared secret s1
+with her secret key a as b
+to the power of a mod p.
+and, likewise,
+bob computes a shared secret s2 with
+his secret key b as a to
+the power of b mod p.
+it can be mathematically proven that
+s1 and s2 actually have the same value.
+this shared number is alice's and
+bob's shared secret and
+can be used as an encryption
+key of a symmetric cipher.
+because the attacker doesn't
+know the secret keys a and b,
+he will not be able to
+compute the shared secret.
+we just learned how diffie-hellman
+is implemented mathematically.
+let's have a simpler example in order
+to demonstrate how the protocol works.
+suppose alice and
+bob know a common color yellow.
+alice chooses pink color and bob chooses
+green color as their secret colors.
+alice mixes her secret color with
+the common color and produces a new color.
+bob also does the same.
+they exchange the new colors.
+now they mix the new colors with
+their secret colors and produce yet
+another color.
+since the final color on each side is made
+of the same combination of three colors,
+yellow, pink and green,
+it is identical on both sides.
+so, alice and bob ended up with the same
+final color without revealing their
+own secret colors to each other.
+as you can see on the screen,
+the same thing happens mathematically.
+the final values computed on each
+side are actually identical.
+diffie-hellman is one of the most
+powerful security protocols and
+is therefore still widely
+used in many applications.
+for resource constraint devices,
+the diffie-hellman protocol can be
+implemented using elliptic
+curve cryptography.
+if you are interested to learn more about
+lightweight diffie-hellman protocols,
+you can search on the web for
+elliptic curve diffie-hellman.
+you will find many useful
+tutorials on this topic.
+in this video lecture,
+we saw how the diffie-hellman protocol
+is used to share secret information.
+in the next lesson, we will learn
+how to establish a public key
+crypto system to secure
+digital communication.
+[sound]

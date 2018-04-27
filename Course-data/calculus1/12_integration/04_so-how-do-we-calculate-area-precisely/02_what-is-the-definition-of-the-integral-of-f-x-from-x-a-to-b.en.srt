@@ -1,0 +1,294 @@
+1
+00:00:00,012 --> 00:00:07,682
+[music] We've already got an idea of how
+we can approximate the area of a curved
+
+2
+00:00:07,682 --> 00:00:13,420
+region by replacing that curved region
+with rectangles.
+
+3
+00:00:13,420 --> 00:00:16,748
+We've already done this.
+If I want to approximate the area under
+
+4
+00:00:16,748 --> 00:00:20,100
+the curve, I'll just add up the areas of
+these rectangles.
+
+5
+00:00:20,100 --> 00:00:23,319
+And that's a pretty cut approximation of
+if these rectangles are thin enough.
+
+6
+00:00:23,320 --> 00:00:28,768
+If I make those rectangles thinner and
+thinner, that gives me better and better
+
+7
+00:00:28,768 --> 00:00:31,700
+approximations to the area under the
+curve.
+
+8
+00:00:31,700 --> 00:00:36,257
+In fact, more than just approximating the
+area under the curve.
+
+9
+00:00:36,258 --> 00:00:41,563
+By making those rectangles thinner and
+thinner, I can write down a definition of
+
+10
+00:00:41,563 --> 00:00:45,240
+the area under the curve.
+So by taking those triangles to be thinner
+
+11
+00:00:45,240 --> 00:00:48,148
+and thinner.
+I'm going to get a better and better
+
+12
+00:00:48,148 --> 00:00:50,560
+approximation to the area under this
+curve.
+
+13
+00:00:50,560 --> 00:00:56,111
+And I'm going to denote that limit by
+this, the integral, which is this long,
+
+14
+00:00:56,111 --> 00:00:59,425
+thin s, from a to b of the function dx,
+right?
+
+15
+00:00:59,425 --> 00:01:05,525
+That's how I'm going to write down the
+area Under the graph of this function,
+
+16
+00:01:05,525 --> 00:01:10,730
+above the x-axis, and between the line y
+equals a and y equals b.
+
+17
+00:01:10,730 --> 00:01:16,263
+It's going to be by this notation.
+Here is the precise definition of the
+
+18
+00:01:16,263 --> 00:01:19,621
+integral.
+To precisely, the integral of this
+
+19
+00:01:19,621 --> 00:01:25,222
+function from a to b is a limit over
+partitions of the Riemann sum, alright?
+
+20
+00:01:25,222 --> 00:01:29,650
+And it's a limit over partitions where
+I've also chosen some sample points for
+
+21
+00:01:29,650 --> 00:01:33,330
+those partitions.
+And I'm taking the limit as a maximum
+
+22
+00:01:33,330 --> 00:01:37,027
+width of a sub-interval in that partition
+goes to 0.
+
+23
+00:01:37,028 --> 00:01:43,394
+In order to ensure that all of the widths
+of the sub-intervals are going to 0, I
+
+24
+00:01:43,394 --> 00:01:49,569
+just demand that the maximum one, the
+biggest one goes to 0, and that forces all
+
+25
+00:01:49,569 --> 00:01:54,892
+the other ones to be small as well.
+I had to say that the maximum width goes
+
+26
+00:01:54,892 --> 00:01:58,139
+to 0 to prevent some sort of bizarre
+scenario.
+
+27
+00:01:58,140 --> 00:02:02,650
+Well I've got one really big sub-interval
+and then lots and lots of small
+
+28
+00:02:02,650 --> 00:02:05,986
+sub-intervals right?
+I want to make sure that all of those
+
+29
+00:02:05,986 --> 00:02:10,609
+sub-intervals are getting very narrow so
+that I'm getting a very fine partition in
+
+30
+00:02:10,609 --> 00:02:14,814
+the limit.
+There's no guarantee whatsoever that, that
+
+31
+00:02:14,814 --> 00:02:18,292
+limit actually exists.
+On the other hand, here's a theorem.
+
+32
+00:02:18,292 --> 00:02:23,646
+If a function f is continuous then it's
+integrable, meaning that the integral,
+
+33
+00:02:23,646 --> 00:02:28,204
+right, the integral of the function from
+say a to b actually exists.
+
+34
+00:02:28,204 --> 00:02:32,765
+So when I say integraable, what do I even
+mean by integrable?
+
+35
+00:02:32,765 --> 00:02:38,504
+If I were to claim that the integral of f
+from a to b is equal to some number, big
+
+36
+00:02:38,504 --> 00:02:44,136
+I, what that means is that no matter how I
+partition the interval from a to b, as
+
+37
+00:02:44,136 --> 00:02:50,414
+long as that partition is fine enough.
+Alright, as long as the maximum width of
+
+38
+00:02:50,414 --> 00:02:57,860
+any rectangle in my skyscraper picture is
+small enough, right, as long as the widest
+
+39
+00:02:57,860 --> 00:03:02,912
+one Is thin enough.
+Then no matter how I choose those sample
+
+40
+00:03:02,912 --> 00:03:09,352
+points within each of the sub-intervals in
+my partition, the resulting Reimann sum
+
+41
+00:03:09,352 --> 00:03:12,880
+that I calculate is close to I.
+How close?
+
+42
+00:03:12,880 --> 00:03:15,443
+Well it's as close as I want it to be.
+Right?
+
+43
+00:03:15,444 --> 00:03:18,754
+To say that this is equal to something is
+really to say something about a limit.
+
+44
+00:03:18,755 --> 00:03:23,881
+So that means that if I'm asserting that
+this is equal to I, it means that I can
+
+45
+00:03:23,881 --> 00:03:29,040
+get the Reimann sum as close as I want to
+I by simply demanding that my partition is
+
+46
+00:03:29,040 --> 00:03:32,570
+fine enough.
+Regardless of how I exactly choose those
+
+47
+00:03:32,570 --> 00:03:36,108
+sample points.
+And all this talk about Reimann sums is
+
+48
+00:03:36,108 --> 00:03:40,929
+reflected in the very notation in that
+we've chosen for the integral.
+
+49
+00:03:40,930 --> 00:03:44,210
+So here, I've got the integral, the
+integral of f from a to b.
+
+50
+00:03:44,210 --> 00:03:49,704
+And here, I've got a Riemann sum, right,
+and this integral is defined to be a limit
+
+51
+00:03:49,704 --> 00:03:53,251
+of these Reimann sums.
+And the notation really reflects their
+
+52
+00:03:53,251 --> 00:03:57,402
+common origin, right?
+Here, I've got a summation symbol, a Greek
+
+53
+00:03:57,402 --> 00:04:01,914
+sigma, Greek letter s.
+And here, I've got a long s.
+
+54
+00:04:01,915 --> 00:04:06,848
+Alright, these are both a kind of sum.
+And the thing I'm summing is the function
+
+55
+00:04:06,848 --> 00:04:11,734
+evaluated somewhere times a change in x.
+And the thing I'm summing here is the same
+
+56
+00:04:11,734 --> 00:04:15,340
+thing it's the function evaluated
+somewhere times a change in x.
+
+57
+00:04:15,340 --> 00:04:20,605
+So I hope that even the way I write down
+integrals really reminds you that there
+
+58
+00:04:20,605 --> 00:04:23,780
+are a limit of things that look like this
+right.
+
+59
+00:04:23,780 --> 00:04:36,282
+The function evaluated somewhere times
+some change in x being added up.

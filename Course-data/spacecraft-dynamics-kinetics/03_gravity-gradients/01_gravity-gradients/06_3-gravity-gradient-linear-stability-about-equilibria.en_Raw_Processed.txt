@@ -1,0 +1,407 @@
+so we found equilibrius, next step is stability this equilibrius 
+like dualspinner, this stage, 
+going to use linear stability analysis 
+so, going to come equations, 
+linearize make small, small departure approximations 
+in one way in homework you actually duplicate this, 
+mrps instead angles basically 
+falls much steps, 
+so thats im going this part a little bit quicker 
+this is much high level thing, make sure concepts make sense 
+mathematical details, you will in homework anyway 
+thats you that 
+so, looking we use gravity gradients 
+equilibrius, right 
+we know that this is an equilibria, this is an equilibria 
+this equilibria is stable cause, 
+if you a small departure, visually easy to see 
+this part weighs this one, 
+so a restoring force that gets you back to equilibrium point, 
+least towards 
+wont asymptotic, itll oscillate 
+this is also an equilibria 
+if you perturb it, youre going to driven away 
+that equilibria towards one 
+so, that local motion is going to stay linearly stable 
+so, we identify this three axes, 
+make this completely stable if we wish 
+so, we used o frame again, rc, everything is there 
+this is different notes instead n, i a big omega 
+thats in orbit rate thing, different label 
+so, thats orbital speed that you would have, 
+basically nu rate, circular orbit radius cubed 
+that gives you, in radians per second, orbital speed 
+going to look at, assuming principle chorded frame 
+thats a key assumption, so inertia tensor in body frame is there 
+motion, we allow nonzero angular motion, right 
+if this is equilibrium, i want to bump see happens small motions 
+so i to account omega bos in this development, right 
+thats you get equations motion this state 
+so, we describe that here 
+im going to use angles three, two, one, yard pitch roll sequence 
+youve seen this differential equations 
+this is i relate omega bo 
+angles b body relative to orbit 
+theyre body relative to inertial 
+if we needed body relative to inertial, you know to that, right 
+we know to add, three, two, one, angles 
+you map dcms 
+thats one approach, right 
+multiply amount pull again, if you to 
+so, this is whats going to go here 
+this is constant orbit rate, , a body axis 
+so, i need dcm to go orbit to body frame, 
+im using three, two, one angles 
+so, thats this classic one youve derived, 
+this is one weve seen in first part class 
+so, if i need to map orbit motion, is basically zero, big omega, zero, 
+thats orbit rate in orbit frame a vector, 
+body frame, you multiply times here 
+so, this is going to pull second column zero, big omega, 
+zero times a three three gives you that big omega, times second column 
+thats you end 
+if you want to choose different attitude parameterizations you 
+going to mrps here, cerp, quaternions, whatever you want to use 
+you write this motion using whatever angles, 
+you guys good kinematics 
+so, good 
+we have, well make a b 
+omegas written in b frame, is nice 
+so, we add 
+i add matrix representations it, so this is math that you get 
+so you see yaw pitch roll rates, again, 
+motions body relative to orbit frame, 
+big omega accounts that frame 
+is in a constant rotational state, right 
+so, terms add there 
+thats omega bn parameterized this way 
+this is good anything, theres approximation in kinematics 
+we assume that spacecraft is a circular orbit that 
+so, if we want approximate small departures, 
+we actually linearize this expression small motions 
+big omegas a small term, we assume yaw pitch, roll angles, 
+associated yaw pitch roll rates 
+going to small oscillations, slow oscillations 
+happens there 
+so, theyre treated small variables, linearizing zero 
+thats result you get 
+lets look first line 
+thats already linear, thats roll rate 
+here we sign pitch times yaw rate 
+well sign pitch linearizes to pitch right 
+sign x becomes approximately x small departures 
+so, thats small times small, small quadratic 
+we drop it, right 
+here we a cosine small, linearizes to one, 
+times sine small, linearizes to small 
+so, thats first order term 
+thats you see in first line here 
+so, thats we end two terms 
+thats first order approximation 
+you steps two axes 
+in fact, i encourage you to own, i dont need to this you 
+in homework, you mrps 
+so, good 
+now, this isnt body frame, we need, in end, omega dot 
+we use handy dandy identity that omega is omega bn, 
+so n framed derivative, b framed derivatives 
+right 
+so, i dont to crossproduct stuff i to is, 
+this term is going to vanish, 
+i to is take a derivative three matrix components, 
+that is inertial derivative this particular omega bn vector 
+right 
+so, this is still rigorous 
+approximations 
+means here, big omega is constant im a circular orbit 
+so theres bigger make a dot 
+everything else receives an extra dot 
+now, i a first order approximation omega dot, 
+first order approximation omega, we start 
+well, almost ready to start applying to here 
+we linearize this term that, this term will still make times omega 
+theres an extra step we to 
+still missing is gravity gradient torque 
+we a general expression, 
+we need to get an approximation 
+gravity gradient torque around one equilibrius 
+is that torque vary if i pitch, roll, yaw slightly, you know, around 
+so, lets look that 
+we this math already earlier, this is we get to this stuff 
+now, we a particular bo matrix in terms yaw, pitch roll, 
+times zero, zero something 
+so, going to pull third column this bo matrix, 
+is nothing sines cosines, times rc 
+so, this is rc one, two, three, b frame vector components 
+position vector is written this way 
+theres approximation here yet 
+you substitute this expression this earlier expression we derived, 
+we products rc ones, twos, threes, this gives you this answer 
+so, this is still 
+we havent made small angle approximations yet in this expression 
+this is still perfectly valid 
+you describe gravity gradient torques a function yaw, pitch, 
+roll angles body relative to this orbit frame 
+thats this yaw, pitch, roll means 
+and, again, you make inertial tensors specific to make go to zero, 
+that here 
+so, looking small departure motions 
+one thing that stands is one 
+if you look this, third column dcm there, 
+there is yaw angle in here, actually makes somewhat physical sense 
+right we line things up, we know that if this is lined up, a zero gravity gradient 
+thats true, that answer is true regardless i rotate that axis 
+in this system we call that axis three, 
+a yaw, pitch, roll, thats a three to one rotation 
+so, three rotation doesnt really affect that gravity gradient torque 
+thats you find duplicated here used angles in this sequence, 
+is kind nice 
+so, this is a general expression 
+we want to linearize this cause looking linear results 
+if we general big motions, im a little wiggles, right 
+angles going to small cosines become one, sine two axis, two x 
+so that comes in there another cosine to one 
+here you a two theta becomes, sign two theta becomes two theta 
+here you a sine times a sine, so that small times small, 
+thats going to higher order drops 
+so, generally, while yaw doesnt appear, you get a torque third body axis 
+right 
+nominally, lining b one, two, three , one, two, three 
+you get a torque actually really small 
+thats one that kind helps you, though, restore yawing motion if needed 
+right 
+thats we need there 
+if you linearize, small enough to you drop it, 
+doesnt appear there, so that becomes a second order term that you would 
+so, good 
+now, we r a little bit math, 
+weve got a linearized version 
+gravity gradient in terms three, two, one, order angles relative to orbit frame 
+thats we define this stuff 
+so, this stage ready to start to put this together 
+this is still fundamental equations motion a rigid body, 
+single rigid body, a dualspinner something close enough, right 
+so, weve got this linear, 
+plugging in conditions including that inertia tensor is diagonal 
+this one, weve seen before, gives you terms, differences, 
+omega twos threes, omega ones threes products omegas 
+plugging in omegas thats you get 
+gravity gradient torque, first second components, 
+third one dropped completely in linearization that we 
+so, last step you have, this is omega till i omega, 
+this is still omega squared 
+linearizing omega wasnt quite enough, you still to, 
+this point, drop second order terms 
+so, we look that 
+pitch equation, faded one is actually a nice example 
+youve got pitch acceleration here, youve got pitch angles here, 
+in between things cross coupled yaw roll 
+if you look terms, yaw rates times roll rate 
+that small time small, drops out, yaw rates times yaw angle, again, small times small 
+going to second order 
+roll times roll rate, second order, roll times yaw angle, also small time small 
+so, second equation, you linearize drop second order gyroscopic terms, 
+youre going to left is this term, this term 
+thats ive written here 
+thats pitch equation, right 
+so, if we im flying along this way this is one axis, 
+two axis, three, positive pitch 
+thats basically, thats this motion 
+if youre flying along like this, this motion, is going to stable 
+so now, lets look that result 
+you linearize, things always look spring mass damper systems, right 
+theres damping in this system, gravity, a conservative force 
+like, adding a springiness to system, thats you get 
+so, there is never asymptotic convergence gravity gradient stabilization, 
+a marginal stability like a spring a mass 
+if deflected, going to oscillate shouldnt get bigger smaller, 
+least within linear stuff that youre 
+so, this is stiffness that we to look at, 
+to make this pitch motion stable, we need this to positive 
+three is positive, a real number squared guaranteed positive 
+i, principle inertias, theyre positive you never negative principle inertias 
+i havent seen anybody build a structure 
+so, way to make this positive negative is relative size i i 
+so, way this is written i actually to bigger i 
+pitch motion to stable 
+now, again, i mean 
+principle inertias weve linearized o frame 
+so i is inertia craft nominally aligned axis, 
+i is inertia craft nominally axis to orbit radial axis 
+so, if you look spacecraft, pretty distinct inertias, 
+this would gravity gradient stable pitch motion 
+im flying this way, so inertia this axis, this inertia is i 
+definitely much bigger inertia gravity axis three, right 
+this is much skinnier this, that would stable 
+so, pitch motions actually would stable 
+if you reverse that, well, sudden, 
+you a negative stiffness, thats appears mathematically 
+this would deviate 
+theres ways you this well 
+theres shapes 
+i to bigger so you could fly 
+this, so this way you could fly well 
+lets see 
+no, that wouldnt work, i is this 
+this is i, if i 
+i to this 
+so, if i want this to larger, i fly there, this to to skinniest one 
+i could fly, i could fly this way basically 
+pitch motion, kind makes geometric sense, this would also stable, 
+right 
+so, different 
+thats comes 
+if you want to pitch motion to stable, 
+you to line spacecraft that o axis inertia 
+is bigger axis inertia 
+now, that stabilizes one angles 
+doesnt guarantee that yaw roll going to stable, in this case 
+so we to look two differential equations 
+now, fate one actually let look that one 
+here, there faded dots that appeared multiply times here here, 
+theyre small 
+one thats first order is going to this product 
+thing here, theres a inaudible times this 
+everything else is going to dropping a second order 
+so, theta dots drop roll pitch roll yaw equations, 
+pitch perfectly decoupled two 
+so, pitch this is we need 
+focusing roll yaw motion, to first order decouple 
+this form writing it, takes a little bit algebra quickly a few steps 
+this is a classic form you find in a lot textbooks 
+papers that deal this topic 
+people come kr ky ratios differences, 
+inertia, two minus other, two minus other, divided third basically 
+thats theyve done 
+theres probably historical reasons that 
+this is rewrite 
+so, we ended second order coupled differential equations 
+we to look stability this 
+way you this in linear controls, a linear analysis, dynamic analysis class 
+we look characteristic equation, right 
+you write this stuff first order form, get determinant the, 
+you know, one minus, that matrix sends s, get determinant 
+this in first order form second differential equation 
+would give a four dimensional state 
+roll, pitch, sorry, yaw, roll, yawrate, rollrate 
+so, you end a fourth order polynomial 
+to true roots this characteristic equation 
+well, cant positive real parts 
+roots real, imaginary, thats fine 
+imaginary tipping implies oscillatory motions, 
+real roots implies asymptotic convergence divergence depending 
+we need real parts it, right 
+so, four roots we to make sure theyre either on, 
+basically, positive plain negative, 
+imaginary axis, to guarantee form stability 
+theres different criteria 
+you taken classes this, 
+you might recognized this routh hurwitz criteria 
+that you use, ill apply that here in a moment 
+im going details, really important 
+if you havent seen this, theres whole courses you take this 
+this is results level this class, 
+you handderiving conditions 
+but, in essence, weve got a quartic term, 
+weve got a quadratic term a zeroth order term 
+thats something we take heavy advantage 
+easier to get roots you could read, 
+instead solving lambda, you basically solved lambda squared, 
+is quadratic form 
+square root that gives you actual roots 
+thats you find four possible routes cause 
+always plus minuses that work 
+so, thats going to use 
+now, skipping a bunch derivations, this is you find kinds topics 
+conditions in terms betas 
+this is terms defined, 
+this is inertia ratios, you to highlight this 
+this is would guarantee that roots positive 
+in krky space, ratios, you size stuff 
+thats equivalent kind condition 
+this one i added 
+this came pitch conditions, 
+pitch conditions written in krky mean ky to bigger kr 
+so, if you think that condition, 
+gives you one half whole krky space 
+that drops you to plus side 
+this one, too, actually, kr, x times y to positive 
+well, that means that x y either positive x y negative 
+right 
+product is going to positive 
+so that means answers to either in quadrant 
+so if youre looking now, well see quatrains in a moment 
+that restricts to two quadrants 
+instead using x, krky written in terms inertia, 
+looking defined 
+this really boils to this second inertia to either largest 
+so thats inertia , thats inertia orbit normal axis, 
+equivalent to either largest inertia least inertia 
+four conditions youre seeing here 
+if we plug visually, 
+you get discovered matlab, mathematica, plot things 
+this is you end 
+so, we conditions that we to be, one to bigger 
+product to positive put this in this quadrant this quadrant 
+ones that inequality gave us this region that stable, 
+this slither here 
+slither is this constraint that we this equation, 
+gets a little bit complicated to visualize, 
+thats happens mathematically 
+this is guarantees that we stability 
+so, this mean 
+this means, in regions, if i 
+this one basically, boils to i so largest inertia 
+in this region here, little white region, 
+you a condition i is least inertia 
+in them, if i small departures, in pitch in yaw, 
+in roll well, that motions would stay stable 
+wont start to tumble axes 
+cause you could stable this way unstable this axis, 
+that wouldnt good space station 
+dont like to flip upside down, right 
+so, two possible regions 
+we typically fly this kind a scenario 
+that means i is largest inertia 
+im sure many you seen images space shuttle, 
+flying, happy, nose is typically pointing 
+space shuttle nose is actually axis least inertia 
+so, kind like skinny side, right 
+wings going out, 
+everything, thats axis maximum inertia like this flat plate 
+axis along wingtip to wingtip 
+if you look a side profile, looking nose, 
+much looking broad side 
+so thats axis two axes, axis intermediate inertia 
+this says is, you to pick maximum inertia, 
+is basically looking straight cargo bay shuttle, you know 
+wings sticking out, noses 
+you want that to line orbit normal 
+so if youre flying along this way this is local gravity direction 
+axis flight direction, normal axis is this way 
+i to line cargo bay orbit normal, essentially 
+thats i to 
+i still need, i want bigger i, so inertia long track axis, 
+is this axis, to bigger inertia orbit radius axis, 
+is local vertical 
+thats space shuttle tends to fly this sidestepping motion 
+well, used to fly 
+that gravity gradient stabilized orientation 
+didnt take fuel, thrust, little astronauts wake bump wall 
+that enough to kind stay close, didnt go crazy, you know 
+thats inertia ratios come 
+if youre going to fly one here, trickier 
+this is a first order analysis 
+higher order terms ignored 
+in particular flexing ignored 
+so, if we rigid things could move, 
+this quickly become unstable well, you to really careful, ok 
+so, historically, people like this one but, again, first order analysis is nice 
+life isnt first order, life isnt linear, nonlinear messy, 
+higher order terms might have, actually, a strong impact, 
+especially flexing part, you know, small attitude 
+if rigid, this is rigorous right 
+if you flexing happening a sudden motions, 
+that give you gyroscopic stack and, you know, 
+stability you is this big gyroscopic is this big, 
+gyroscopic is going to overrule take you place 

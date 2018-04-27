@@ -1,0 +1,197 @@
+1
+00:00:00,012 --> 00:00:04,947
+[MUSIC]. 
+
+2
+00:00:04,947 --> 00:00:08,934
+We've already seen how the chain rule can 
+help us find the anti-derivatives. 
+
+3
+00:00:08,934 --> 00:00:11,913
+Alright, that message is called u 
+substitution. 
+
+4
+00:00:11,913 --> 00:00:16,488
+I'm going to do more messing around with 
+the chain rule and integration. 
+
+5
+00:00:16,488 --> 00:00:21,032
+In particular, let's see what we can do 
+with the chain rule, and the end points 
+
+6
+00:00:21,032 --> 00:00:25,647
+of integration. 
+Well here's an example to play around 
+
+7
+00:00:25,647 --> 00:00:32,440
+with, if I take the integral from 0 to x, 
+of sine of t dt, well that's something. 
+
+8
+00:00:32,440 --> 00:00:36,460
+But let's think about the derivative of 
+this with respect to x. 
+
+9
+00:00:36,460 --> 00:00:40,850
+And by the fundamental theorem of 
+calculus this is sine of x. 
+
+10
+00:00:40,850 --> 00:00:44,630
+The fundamental theorem of calculus is 
+the derivative of the accumulation 
+
+11
+00:00:44,630 --> 00:00:49,159
+function is the integrand. 
+What if that upper endpoint were a 
+
+12
+00:00:49,159 --> 00:00:53,695
+function of x? 
+What I'm asking is what if this endpoint 
+
+13
+00:00:53,695 --> 00:01:00,040
+weren't x anymore? 
+But some function g of x right? 
+
+14
+00:01:00,040 --> 00:01:04,000
+Then this wouldn't be sine of x anymore, 
+be something else. 
+
+15
+00:01:04,000 --> 00:01:07,870
+So to analyze this let's define a 
+function f. 
+
+16
+00:01:07,870 --> 00:01:11,620
+So that function will be given by this 
+rule. 
+
+17
+00:01:11,620 --> 00:01:19,590
+f of x is the integral from 0 to x of 
+sine t dt. 
+
+18
+00:01:19,590 --> 00:01:23,744
+Now what would it mean if we replace that 
+right hand endpoint instead of being x if 
+
+19
+00:01:23,744 --> 00:01:28,908
+we replace that with g of x? 
+That would mean that I want to think 
+
+20
+00:01:28,908 --> 00:01:33,214
+about f of g of x, right? 
+What's f of g of x? 
+
+21
+00:01:33,214 --> 00:01:41,910
+So, that's the integral from 0 to g of x, 
+of sine t dt. 
+
+22
+00:01:41,910 --> 00:01:47,676
+And specifically, right, what I want to 
+know, is what's the derivative with 
+
+23
+00:01:47,676 --> 00:01:53,071
+respect x of f of g of x. 
+That's just the chain-rule. 
+
+24
+00:01:53,071 --> 00:02:00,744
+So let me just write down the chain rule. 
+The derivative of f of g of x is the 
+
+25
+00:02:00,744 --> 00:02:07,280
+derivative of f at g of x times the 
+derivative of g. 
+
+26
+00:02:07,280 --> 00:02:10,720
+So what does it mean in this specific 
+case? 
+
+27
+00:02:10,720 --> 00:02:18,704
+Remember in this case, f of x is the 
+integral from 0 to x of sine t dt. 
+
+28
+00:02:18,704 --> 00:02:24,917
+So the derivative of f, by the 
+fundamental theorem is sin of x and that 
+
+29
+00:02:24,917 --> 00:02:32,002
+means that the derivative of f of g of x, 
+well that's just sin the derivative of f 
+
+30
+00:02:32,002 --> 00:02:42,596
+at g of x times the derivative of g. 
+Let's make it even more concrete. 
+
+31
+00:02:42,596 --> 00:02:46,660
+Let's say that g is the squaring 
+function. 
+
+32
+00:02:46,660 --> 00:02:52,192
+Let me write that down. 
+So if I'm making g the squaring function, 
+
+33
+00:02:52,192 --> 00:02:59,570
+then the derivative of g is just 2x and 
+in that case the derivative of f of g of 
+
+34
+00:02:59,570 --> 00:03:11,498
+x is sine of g which is x squared times 
+the derivative of g which is 2x. 
+
+35
+00:03:11,498 --> 00:03:15,990
+So let's write down our final answer in 
+this specific case. 
+
+36
+00:03:15,990 --> 00:03:21,219
+The final claim is that the derivative of 
+the integral from 0 to g of x which in 
+
+37
+00:03:21,219 --> 00:03:29,737
+this case is x squared of sine t dt. 
+This is the derivative with respect to x 
+
+38
+00:03:29,737 --> 00:03:36,587
+of f of g of x. 
+This is sin of x squared times 2x and 
+
+39
+00:03:36,587 --> 00:03:45,329
+this statement, we can get by combining 
+the chain rule and the fundamental 
+
+40
+00:03:45,329 --> 00:03:51,333
+theorem of calculus. 

@@ -1,0 +1,65 @@
+[music]. 
+for this course, we'll be using a 
+programming environment called 
+processing, developed at mit. 
+it's a fantastic environment to learn to 
+program in, but in particular it's a 
+fantastic environment in which to create 
+a program in, because it makes it very 
+simple from the very beginning to do 
+highly graphical, audio-based, and 
+interactive software. 
+this is the processing window in which 
+you run the processing program. 
+the first thing you'll notice is there's 
+a nice play button. 
+if we hit play, we get a program. 
+it's not a very instant program, it's a 
+very small window and it doesn't really 
+do anything. 
+that's not surprising, we haven't written 
+anything to put in the code. 
+this main editor window is where we write 
+codes and i'm going to give an example of 
+some codes that you might want to write. 
+so i'm going to set the size of the 
+screen with two numbers and set the 
+background color. 
+i'll come back later to exactly what 
+these things mean. 
+but for now we need to know that we've 
+changed the size of the screen, made it 
+bigger. 
+and we've gone and changed the background 
+to red. 
+over the next couple of weeks, we'll be 
+looking at some much more complicated 
+programs that really use the full power 
+of processing, but for now, i wanted to 
+show you how to write a very simple 
+program. 
+an important part of this course is that 
+it's not just about writing processing 
+programs for the desktop, but processing 
+can be used on mobile devices, android 
+devices, ios devices, and on the web. 
+and in a minute, mathew and mick are 
+going to show you how to do that. 
+and mick is going to go through a more 
+complex example that we're going to 
+explain throughout the course of this 
+weeks lecture. 
+the last thing i want to say is that if 
+you're used to programming and have had 
+some experience in java you'll find 
+processing very familiar because it's 
+based on java. 
+but even if you have programmed before in 
+say javascript or php it won't be too 
+hard to learn. 
+if you've never done any programming 
+before don't worry. 
+but have a look at some of the additional 
+lectures i've posted that will introduce 
+programming from the very beginning 
+[music]. 

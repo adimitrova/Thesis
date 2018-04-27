@@ -1,0 +1,354 @@
+1
+00:00:00,012 --> 00:00:03,969
+[music].
+The mean value theorem has some other
+
+2
+00:00:03,969 --> 00:00:11,342
+applications where it connects derivative
+information back to information about the
+
+3
+00:00:11,342 --> 00:00:14,646
+original function.
+Well, here's a theorem.
+
+4
+00:00:14,646 --> 00:00:19,332
+Suppose the derivative of some function.
+So I'm assuming it's a differential
+
+5
+00:00:19,332 --> 00:00:23,562
+function, is positive, it's greater than
+zero on some open interval.
+
+6
+00:00:23,562 --> 00:00:28,320
+Then the function is an increasing
+function, meaning that it sends, bigger
+
+7
+00:00:28,320 --> 00:00:32,048
+inputs to bigger outputs.
+You probably already believe that
+
+8
+00:00:32,048 --> 00:00:35,332
+statement.
+But the mean value theorem let's us verify
+
+9
+00:00:35,332 --> 00:00:39,687
+that it's actually true.
+Okay, so let's prove, this result.
+
+10
+00:00:39,687 --> 00:00:45,197
+I'm going to pick, two points a and b, but
+I want to make sure that I pick them in
+
+11
+00:00:45,197 --> 00:00:48,243
+order.
+So I'm going to pick b bigger than a so I
+
+12
+00:00:48,243 --> 00:00:51,131
+can talk about the interval a b.
+All right.
+
+13
+00:00:51,131 --> 00:00:54,248
+So I'll pick my two points.
+Now I'm going to apply the mean value
+
+14
+00:00:54,248 --> 00:00:58,057
+theorem to the open interval a,b.
+And that's OK because I'm going to pick a
+
+15
+00:00:58,057 --> 00:01:02,152
+and b to be in this open interval and
+that's mean that f being differentiable
+
+16
+00:01:02,152 --> 00:01:05,116
+satisfies the conditions of the mean value
+theorem.
+
+17
+00:01:05,116 --> 00:01:09,812
+The continuous on the closed interval a, b
+and it will be differnetial on the open
+
+18
+00:01:09,812 --> 00:01:10,951
+interval a, b.
+Okay.
+
+19
+00:01:10,951 --> 00:01:17,383
+So the mean value theorem then tells me to
+look at f of v minus f of a over b minus
+
+20
+00:01:17,383 --> 00:01:24,115
+a, and the conclusion is that this is the
+derivative of f at some mystery point in
+
+21
+00:01:24,115 --> 00:01:27,892
+between a and b.
+Now the good news is I don't know much
+
+22
+00:01:27,892 --> 00:01:31,656
+about the derivative but I know the
+derivative is positive.
+
+23
+00:01:31,656 --> 00:01:35,280
+So I know that f of b minus f of a over b
+minus a is positive.
+
+24
+00:01:35,280 --> 00:01:39,926
+The other thing that I know is that b is
+greater than a and that means the
+
+25
+00:01:39,926 --> 00:01:42,927
+denominator here b minus a is also
+positive.
+
+26
+00:01:42,927 --> 00:01:47,602
+So I've got mystery number divided by
+positive is positive.
+
+27
+00:01:47,602 --> 00:01:51,435
+That means this numerator must also be
+positive.
+
+28
+00:01:51,435 --> 00:01:56,974
+So f of b minus f of a is positive.
+Now, if I add f of a to both sides, I get
+
+29
+00:01:56,974 --> 00:02:04,439
+that f of b is bigger than f of a.
+If f sends bigger inputs to bigger outputs
+
+30
+00:02:04,439 --> 00:02:10,456
+then f is increasing.
+Increasing means that a bigger input is
+
+31
+00:02:10,456 --> 00:02:15,438
+sent to a bigger output.
+So if b is greater than a then f of b is
+
+32
+00:02:15,438 --> 00:02:21,710
+bigger than f of a and this argument works
+for any a and b In the open interval on
+
+33
+00:02:21,710 --> 00:02:27,661
+which I know the derivative is positive.
+So I'm going to conclude that f is an
+
+34
+00:02:27,661 --> 00:02:32,086
+increasing function, which is exactly what
+I wanted to show.
+
+35
+00:02:32,086 --> 00:02:36,920
+So if the derivative's positive on a whole
+interval, then the function's increasing
+
+36
+00:02:36,920 --> 00:02:40,130
+on that interval.
+But it's important to point out that I
+
+37
+00:02:40,130 --> 00:02:44,551
+needed to know the sign, the s i g n of
+the derivative on that entire interval.
+
+38
+00:02:44,551 --> 00:02:48,841
+The mean value theorem ends of just
+picking out a single point, that point c,
+
+39
+00:02:48,841 --> 00:02:53,654
+where it'll examine the derivative.
+But in order to cover all my bases right
+
+40
+00:02:53,654 --> 00:02:58,611
+because I don't know what point c the mean
+value theorem might make me look at .
+
+41
+00:02:58,611 --> 00:03:03,636
+I've got to control the sign the S I G N
+on the derivative on the entire interval.
+
+42
+00:03:03,636 --> 00:03:08,881
+Alright, now I can play the same game when
+the sign of the derivative is negative.
+
+43
+00:03:08,881 --> 00:03:13,546
+So, if I know the sign the SIG derivative
+is negative on some open interval then I
+
+44
+00:03:13,546 --> 00:03:18,288
+include that F is a decreasing function.
+And, again this is just an application of
+
+45
+00:03:18,288 --> 00:03:20,884
+the mean value theorem.
+Let's see the proof.
+
+46
+00:03:20,884 --> 00:03:24,754
+So, I'm going to start out by again
+picking two points a,b in my opening
+
+47
+00:03:24,754 --> 00:03:29,170
+interval and I'll again pick them so that
+b is greater than a so I can talk about
+
+48
+00:03:29,170 --> 00:03:32,702
+the interval a,b.
+And then applying the mean value theorem,
+
+49
+00:03:32,702 --> 00:03:35,466
+I should look at, f of b minus, f of a
+over b minus a.
+
+50
+00:03:35,466 --> 00:03:39,894
+And the mean value theorem promises me
+that this is the derivative at some point,
+
+51
+00:03:39,894 --> 00:03:43,381
+and I don't know what c is but it's the
+derivative at some point.
+
+52
+00:03:43,381 --> 00:03:48,061
+But I know that the derivative at any
+point Is negative so this must be
+
+53
+00:03:48,061 --> 00:03:51,619
+negative.
+Now b minus a is positive because b's
+
+54
+00:03:51,619 --> 00:03:55,852
+bigger than a.
+So I've got a number I don't know divided
+
+55
+00:03:55,852 --> 00:04:01,340
+by a positive number is negative.
+That means that f of b minus f of a must
+
+56
+00:04:01,340 --> 00:04:05,287
+be negative.
+Then I add f of a to both sides and I can
+
+57
+00:04:05,287 --> 00:04:10,814
+conclude that f of b is less than f of a.
+In other words, f sends bigger inputs to
+
+58
+00:04:10,814 --> 00:04:14,204
+smaller output.
+Since f sends bigger inputs to smaller
+
+59
+00:04:14,204 --> 00:04:18,790
+outputs, f is a decreasing function.
+Once again we're seeing that the mean
+
+60
+00:04:18,790 --> 00:04:23,681
+value theorem lets me relate information
+about the derivative, in this case the
+
+61
+00:04:23,681 --> 00:04:26,748
+fact that the sign of the derivative is
+negative.
+
+62
+00:04:26,748 --> 00:04:31,434
+Back to information about the original
+function, in this case the function's
+
+63
+00:04:31,434 --> 00:04:34,746
+decreasing.
+Alright, well lets summarize what we've
+
+64
+00:04:34,746 --> 00:04:38,010
+learned thus far.
+So here are some applications of the mean
+
+65
+00:04:38,010 --> 00:04:40,822
+value theorem.
+If f is differentiable on some open
+
+66
+00:04:40,822 --> 00:04:45,178
+interval and depending as to what happens
+then we know something about f on that
+
+67
+00:04:45,178 --> 00:04:48,197
+interval.
+So if the derivative is identically zero,
+
+68
+00:04:48,197 --> 00:04:52,418
+if the derivative is equal to zero no
+matter what I plug in, then f is constant
+
+69
+00:04:52,418 --> 00:04:57,575
+on that interval.
+If the derivative is positive no matter
+
+70
+00:04:57,575 --> 00:05:02,931
+what I plug in, then f is increasing on
+that interval.
+
+71
+00:05:02,931 --> 00:05:10,455
+And, if the derivative is negative, then f
+is decreasing on that interval.

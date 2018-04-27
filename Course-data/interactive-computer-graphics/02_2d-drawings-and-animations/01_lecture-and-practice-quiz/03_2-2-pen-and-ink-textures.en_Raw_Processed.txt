@@ -1,0 +1,222 @@
+next topic is pen ink restorations 
+pen ink 
+textures work we introduce here is 
+titled vignette 
+problem we want to address here is 
+is tedious to draw detailed patterns, 
+manually 
+so if you want to draw kind 
+patterns using 
+pen, you to every details 
+is tedious 
+one possible approach is to copy 
+paste, to repeat, 
+generally repeated pattern 
+repetition 
+is visible looks unnatural 
+so approach is to use example 
+based texture synthesis technic published 
+in 
+so using this technique combining 
+interaction technique, you 
+draw this kind repeated pattern 
+quickly efficiently 
+let show you a video demo 
+so, if you pick a standard pen 
+this is a standard inking system 
+however you also generate patterns 
+like this way, 
+so you suppose you draw this kind of, 
+pattern 
+you get this, you 
+extend this way 
+also this way, so i, identify 
+pattern you draw many instances 
+drawing 
+blankaudio 
+another example is this one, so you 
+specify a region first, you draw 
+patterns 
+blankaudio 
+a pattern, you 
+repeat like 
+this way you would get 
+pattern automatically 
+another interesting feature is like 
+this, so you select a region 
+you paint use elements, 
+like this 
+suppose you bricks in this way 
+blankaudio 
+maybe enough 
+you get 
+patterns like this way, that, 
+you 
+tilt it, like this kind d effect 
+so this is, i, operation happens 
+inside this region 
+in this way, you get, kind 
+three di, three dimensional effect, 
+within region 
+another possible operation is hatching 
+so, you first select a region 
+you draw example strokes like 
+this 
+way, this way this way, so 
+you, select two 
+you get this kind of, matching 
+part 
+you also draw in different 
+directions 
+youll get this kind hatching 
+pattern easy 
+so let show you a video 
+so here, so you draw example sketches 
+you draw a line 
+system will automatically 
+synthesize it, so pattern 
+you repeat many times 
+again, you paint an example, 
+system requests 
+desired path, system 
+synthesizes stroke 
+so in this way, i use 
+paint many, many strokes, without drawing 
+individual strokes 
+important part here is 
+seamless integration example 
+generation, synthesis spot 
+blankaudio 
+heres another example 
+so you, draw a few example, system 
+synthesizes a list 
+synthesis, you go back, 
+to picture that i made 
+you get, you add details 
+automatically applied to 
+synthesis result 
+you also change density, 
+also you change curve shape later 
+blankaudio 
+next part example is flood fill 
+synthesis 
+again, you draw a few elements, an 
+example, system 
+automatically synthesize, texture 
+to fill region 
+that, if you want, you 
+change flow orientation, 
+drawing strokes, picture will 
+modified to flo, flow, to flow 
+direction 
+again, you change details 
+later 
+blankaudio 
+heres an example hatching 
+you draw a few e, e, examples, 
+system predicts 
+that, will auto provide three 
+dimensional 
+effect, you use a tilting tool, 
+tilting tool, 
+take, given two dimensional 
+drawing you 
+add, kind of, perspective effect, 
+individual regions 
+here is a couple example 
+operations, so you paint this 
+you get many, many hairs, 
+sketching 
+autofill useful 
+background 
+blankaudio 
+and, here is result 
+heres another example 
+see, you draw examples then, fill 
+region 
+then, you use a perspective 
+tilting to 
+give a more, like, a three dimensional 
+effect 
+background painted using 
+picture synthesis 
+blankaudio 
+now, here is result 
+so thats video 
+heres a couple results painted 
+test users 
+so you get this kind eh, sketches 
+
+many, many repetitions using this kind 
+automatic texture synthesis 
+so this is one example this is 
+another 
+you get detail, detailed hairs 
+detailed background hatching, 
+so 
+you also get this 
+so i think d effect is used here 
+here 
+technique we did, use here is 
+called discrete element texture synthesis 
+so technique takes input layout, 
+example layout 
+automatically senses a new, 
+larger layout 
+automatically 
+without explicit repetitions 
+do, is basically, iter, 
+iteratively refine 
+lets start simple repetitions 
+patch copy, repeated patterns 
+gradually improves 
+you finally get a beautiful 
+result 
+step we this 
+so, step we repeat this 
+so first, element in 
+synthesized image 
+element in synthesized image 
+we look element in source 
+image similar neighbor fill 
+similar context 
+so, suppose you an element here, 
+you have, 
+you know, circle bro, circle box 
+in this arrangement 
+you try to find similar 
+arrangement 
+so that a matching phase 
+identifying a match, you 
+compare context 
+so this a synthesized context this is 
+original context 
+you compare two 
+try to find ideal position the, 
+surrounding object 
+example, this box to 
+left to similar to source 
+so in this way, you compute ideal, 
+ideal positions, target positions 
+individual element 
+pot, match 
+individual element belongs to multiple 
+matches 
+we simply take average related 
+ideal target positions 
+move object to target 
+position 
+so repeating them, you will get 
+this kind a result 
+so starting simple multicopies 
+youll get seamless patches 
+okay so thats a brief description 
+system called vignette 
+original paper published a 
+interactive 
+texture designed migration freeform 
+gestures penanink illustration 
+technique we used is called 
+element texture synthesis 
+and, introduced in siggraph 
+thank you 

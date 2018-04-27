@@ -1,0 +1,87 @@
+[music]. 
+sometimes the best substitution to make 
+isn't even visible until after we've 
+messed around with the integrand some 
+how. 
+for example, what's the antiderivative of 
+1 over 1 plus cosine x? 
+dx, what can you do? 
+your first move might be to try the 
+substitution u equals cosine x, which 
+case du is negative sine x dx, but 
+there's no visible sine x in the 
+integrand. 
+well, since we're talking about invisible 
+substitutions, we should try to mess 
+around with the integrand. 
+instead of doing that, let's try a 
+different trick. 
+let's try to multiply 1 over 1 plus 
+cosine x by 1 minus cosine x divided by 1 
+minus cosine x. 
+this doesn't change the integrand at all, 
+because this is just 1. 
+this trick makes a hitherto invisible 
+substitution visible. 
+i'm getting ahead of myself a little bit. 
+let's first apply a trig identity. 
+oh, this is 1 minus cosine x in the 
+numerator divided by, that's 1 minus 
+cosine squared x, and then the trig 
+identity is that 1 minus cosine squared 
+x, well that's sine squared x. 
+so now i want to antidifferentiate 1 
+minus cosine x over sine squared x dx. 
+well even that isn't so great. 
+let's split it up. 
+well then i get, that this is 
+antiderivative 1 over sine squared x dx 
+minus the antiderivative of cosine x over 
+sine squared x dx. 
+now that first integral is one that i can 
+do. 
+rewrite it as the antiderivative of 
+cosecant squared x. 
+you know, i just have to think, do i know 
+any function whose derivative is cosecant 
+squared. 
+yes, negative cotangent is an 
+antiderivative of cosecant squared, of of 
+x. 
+what about that other intergral? 
+well i could read this as cotangent times 
+cosecant and just recognize the 
+antiderivative that way. 
+but to demonstrate the technique i can 
+also apply u substitution to that 
+antidifferentiation problem so let's let 
+u equal sine x, and in that case, du is 
+cosine x dx, which is great, because 
+that's the numerator there. 
+so this this antidifferentiation problem 
+becomes what? 
+this is the antiderivative of du over u 
+squared. 
+and i just gotta think, how do i, 
+antidifferentiate u to the negative 
+second power? 
+well that, is by the power rule plus1 
+over u plus c. 
+alright, if i differentiate one over u, 
+that gives me negative 1 over u squared. 
+okay, but i don't want my answer to be in 
+terms of u, right, i want my answer to be 
+in terms of x. 
+so this is negative cotangent x plus, 
+what's 1 over u, well that's 1 over sine 
+x which, if i wanted to, i could write as 
+cosecant x plus c. 
+let's put it all together. 
+so what i'm claiming here is that the 
+antiderivative of 1 over 1 plus cosine x 
+dx is negative cotangent plus cosecant, 
+plus some constant. 
+if you have it already, i hope you're 
+getting the idea that there's some really 
+clever things that you can try to make 
+these substitutions work. 

@@ -1,0 +1,204 @@
+kinetic energy, let's start here.
+now we did this for blobs in space.
+and for blobs in space we were able to
+show kinetic energy was nothing but
+the kinetic energy off the center
+of mass plus kinetic energy
+about the center of mass.
+but this second term contains
+both deformational energy,
+if panels are flexing and
+doing or fuel is sloshing.
+and the rotational part, right?
+now let's use the same assumption.
+r dot for a rigid body,
+it doesn't go to zero, but
+the r dot just became omega crossed r,
+the body relative derivative of zero.
+so we're also just going to
+focus on the rotational side.
+this is basically your translational
+energy which comes out of
+your orbits class.
+we're not going to focus on orbits in
+here, just the rotational dynamics, so
+we're not going to cover that.
+and this is where i plugged
+in r dot is omega cross r.
+so you get a bunch of cross products,
+dot product.
+and you know right away there
+must be some magic trick identity
+that we can rearrange this.
+that's kind of what i'm doing here,
+almost actually.
+first, and i'm using trig here, this omega
+is a constant as seen of the integration.
+if it's rigid, every point has
+to be rotating at the same rate.
+so this omega i can just take outside.
+there's a dot product.
+okay i did use a vector identity
+already to rewrite this into this form,
+and now i could take your omega
+outside to the dot product.
+here i'm still left with
+omega in the middle but
+we have the trick that
+a cross b is minus b cross a.
+that puts it on the right hand side.
+and you can take that one out as well.
+in fact if you go back and look at hc,
+this whole definition is nothing but hc.
+in fact this term becomes nothing but
+your inertia tense times omega.
+and the inertia tense times
+omega was nothing but
+angular momentum about that point c.
+so it's nice, we now have, rotational
+energy can simply be written as one half
+omega dotted with angular momentum.
+those are two vectors dotted together.
+when you dot them,
+mathematically make sure they're
+taken with respect to the same frame.
+but here is written in
+a frame agnostic way.
+so angle rotation, so
+that's the same thing, h is i omega,
+you might remember as rotational energy
+being inertia over 2 times angular
+rate squared for fixed axis rotation.
+this is the 3d version of that.
+you would have one-half
+omega transpose i omega.
+and that's basically inertia omega squared
+over 2, essentially that's what it is.
+power.
+we had earlier,
+if the time derivative from a blob,
+the first part translation was just force
+times the inertial velocity, again,
+that's the translational sign.
+what we do care about here is t dot.
+so if you differentiate this term,
+you will end up with this.
+now to get this form, you need to have
+the rotational equations of motion,
+which we haven't derived yet.
+but i will let you, this is something
+you should make a note in exam,
+definitely go back and make sure you can
+go from here to here, but it simplifies.
+but the beauty of this is,
+for translation,
+we have force started with
+translational velocity.
+with rotation, you have torque
+dotted with angular velocity.
+it's really the same type of
+term that we're going to have.
+and that's what makes,
+this is what gives you your power rate.
+to the system.
+when is t-dot going to be zero?
+let's ignore translation,
+we'll just focus on this.
+when is my power equation
+going to be zero?
+sheila, what do you think?
+without reading more,
+i want to hear you think.
+>> the angular velocity is zero or-
+>> you could, if you're not spinning.
+>> center of mass is acceleration is zero,
+the rc.
+>> well we're going in
+translation right now.
+>> okay.
+>> just focus on this one,
+the rotational side.
+what makes this second term go to zero?
+omega could be zero, yes.
+it's kind of a trivial
+dynamical system then, yes,
+if the energy is zero then
+the energy rate is going to be zero.
+but that works, yep.
+what else could you do?
+>> [inaudible] make lc zero.
+>> so what is lc here?
+[inaudible].
+>> no?
+what is lc here?
+>> torque.
+>> it's a torque.
+so this is a torque about point c.
+and in fact when we get this torque,
+this torque is due to external forces
+when we derived all this stuff.
+so for this dynamical system,
+if your external torque on that
+rigid body is zero,
+you won't dissipate energy.
+this makes a great integration check.
+so as you guys are writing numerical code,
+you've got something that's spinning and
+there's no external torque on this system.
+i know energy has to be preserved.
+if we had h dot equal to l,
+that was the same thing.
+the angle momentum as seen
+by the inertial observer,
+that's what that dot meant right,
+inertial derivative.
+as seen by inertial observer,
+h has to be a constant vector if no
+external torque is acting on it.
+these things become fantastic
+integration checks.
+this is for a single rigid body.
+but even if you do multi-body,
+complex panels flapping, reaction wheels,
+gyros spinning, twisting, this stuff
+still has to hold, which is really nice.
+and now if there is a torque
+acting on that system.
+i can actually predict very quickly
+how my kinetic energy needs to change.
+and this becomes a nice integration check,
+because i can compute kinetic energy from
+the simulation numerically and
+then differentiate it to get t dot.
+and compare,
+i know i applied this gravity gradient
+torque, this is my spin rate at the time.
+energy should have changed by this
+many joules per second, right?
+so these tools becomes very,
+very useful validation tools, but also for
+analysis you will see.
+so torque-free motion is when
+momentum is inertially preserved and
+kinetic energy is preserved,
+because this is zero.
+the third option actually could exist,
+in that the dot product goes to zero.
+maybe you have very particular torques
+being applied, such that no matter what
+your spin rate is, right now
+the torques are orthogonal to that.
+in that case you have
+a non-working force acting on it.
+that's what they call
+it because it doesn't,
+not doing work means it doesn't
+change my energy state.
+so there's three ways,
+either omega zero, lc zero, or
+those two things are orthogonal.
+then t dot goes to zero.
+and again over, if you have to work down
+between points and time, you can do this
+with a time integral or you could
+also do it in the spatial integral.

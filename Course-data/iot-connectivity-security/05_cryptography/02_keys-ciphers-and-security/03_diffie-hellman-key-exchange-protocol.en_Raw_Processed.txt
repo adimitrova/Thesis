@@ -1,0 +1,113 @@
+sound hello, welcome back to video 
+lectures web connectivity 
+security in cyber physical systems 
+in this video lecture, we going to 
+learn two parties that dont know 
+previously share a secret 
+a public medium like internet 
+shared secret could 
+often is encryption key 
+a symmetric key cipher system 
+diffiehellman key exchange algorithm 
+published in one 
+first public key protocols 
+securely exchanging cryptographic 
+keys public networks 
+algorithm is based 
+concept discrete logarithms 
+diffiehellman is an actual 
+encryption algorithm, 
+meaning that used to protect 
+data transfer between two parties 
+lets explore 
+diffiehellman protocol works 
+suppose that alice bob dont know 
+would like to share 
+an encryption key a symmetric cipher in 
+order to initiate secure communication 
+to this, first, alice 
+bob to agree two numbers, 
+a sufficiently large prime number p 
+a base generator g, 
+is a primitive root modulo p 
+alice chooses a secret number key a 
+computes public result, capital a, 
+g to power a mod p 
+sends to bob 
+bob also chooses a secret number 
+key b 
+computes public results, 
+capital b, g 
+to power b mod p 
+sends to alice 
+this point, 
+a potential attacker may intercept 
+communication 
+get public results a b 
+might also capture p g alice 
+bob agreeing numbers 
+now, alice computes a shared secret 
+secret key a b 
+to power a mod p 
+and, likewise, 
+bob computes a shared secret 
+secret key b a to 
+power b mod p 
+mathematically proven that 
+actually value 
+this shared number is alices 
+bobs shared secret 
+used an encryption 
+key a symmetric cipher 
+attacker doesnt 
+know secret keys a b, 
+will able to 
+compute shared secret 
+we learned diffiehellman 
+is implemented mathematically 
+lets a simpler example in order 
+to demonstrate protocol works 
+suppose alice 
+bob know a common color yellow 
+alice chooses pink color bob chooses 
+green color secret colors 
+alice mixes secret color 
+common color produces a new color 
+bob also 
+exchange new colors 
+mix new colors 
+secret colors produce yet 
+another color 
+since final color side is made 
+combination three colors, 
+yellow, pink green, 
+is identical sides 
+so, alice bob ended 
+final color without revealing 
+secret colors to 
+you see screen, 
+thing happens mathematically 
+final values computed 
+side actually identical 
+diffiehellman is one 
+powerful security protocols 
+is therefore still widely 
+used in many applications 
+resource constraint devices, 
+diffiehellman protocol 
+implemented using elliptic 
+curve cryptography 
+if you interested to learn 
+lightweight diffiehellman protocols, 
+you search web 
+elliptic curve diffiehellman 
+you will find many useful 
+tutorials this topic 
+in this video lecture, 
+we saw diffiehellman protocol 
+is used to share secret information 
+in next lesson, we will learn 
+to establish a public key 
+crypto system to secure 
+digital communication 
+sound 

@@ -1,0 +1,39 @@
+[sound] welcome to our course on
+interactive computer graphics.
+in this course we will learn design and
+implementation of interactive tools for
+visual problem solving.
+visual problem solving appears
+everyday in our daily life.
+medical doctors plan surgical operations.
+coaches teach how to play sports.
+engineers and
+architects design products and buildings.
+and fashion designers design garments.
+scientists try to understand nature.
+all these activities involve
+intensive visual problem solving.
+and our goal is to have these
+activities with computation tools.
+and they have.
+first, computers can help you
+understand incoming visual information.
+and the second,
+computers can help you come up with new
+solutions based on this information.
+and finally, computers can help you
+communicate these results to other people.
+in this course, we will introduce various
+tools we developed in our groups.
+as example cases, topics include,
+graphical user interfaces,
+[sound] 2d drawings, and [sound] 3d
+modeling, and [sound] fabrication,
+and computer-aided design, and
+[sound] real world interactions.
+and then we'll show five demonstrations
+on described implementation details.
+stay tuned.
+i'm looking forward to seeing you.
+thank you.
+[music]

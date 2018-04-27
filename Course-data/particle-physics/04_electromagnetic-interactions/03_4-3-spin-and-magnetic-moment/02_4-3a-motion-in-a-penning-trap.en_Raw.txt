@@ -1,0 +1,54 @@
+[music]
+we will calculate the motion of
+electrons in a penning trap like
+the one shown in this small sketch.
+for the moment we will neglect
+the influence of the slight
+inhomogeneity of the magnetic field
+caused by the nickel ring, and
+the electric field of the cap electodes.
+if b points in the z direction it
+follows from a vector potential equal to
+(-by,0,0).
+so the hamiltonian of such a system
+using minimal substitution
+is 1/(2m) (p - ea)^2.
+so with a bit of trivial mathematics,
+we find 1/(2m)(p + 
+2m omega y p_x + m^2 omega^2 y^2).
+if you write this in terms of
+cartesian components of the momentum,
+we find that all the terms proportional
+to p_x can be joined together and
+the remaining term is p_z^2/(2m),
+which corresponds to a uniform motion
+in this z direction, which in reality,
+will be limited by the cap electrodes.
+the other two terms correspond to a
+harmonic oscillation in the x-y plane.
+the energy levels for
+this oscillation are equal to 
+omega(n+1/2) with n a whole number, 0,
+1, 2, and so on.
+we now take into account
+a spin of the electron.
+the hamiltonian acquires a term
+âµ_s b where âµ_s is
+the magnetic moment of the electron and
+b is the magnetic field vector.
+so this gives an additional splitting
+by plus or minus g_e (eb)/(4m).
+this last term is g/4 times the same
+frequency which we had found earlier.
+the energies corresponding
+to these two spin directions
+differ from e_n by plus or
+minus g_e/4 times omega.
+this results in a level spacing due to
+spin of g_e/2 times omega compared
+to one level spacing by the cyclotron
+motion which is âˆ†e_n = omega.
+the difference between
+these two level spacings
+directly measures (g_e - 2)/2.
+[music]

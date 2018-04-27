@@ -1,0 +1,93 @@
+going to go to kinetics 
+we focused a lot 
+to describe orientations 
+theres lots sets, actually, 
+theres an infinity 
+different attitude sets 
+benefits drawbacks 
+going to work 
+full dynamics 
+that means going to focus 
+mass, inertia, forces, torque, 
+that kind stuff 
+we find, 
+ultimately always, omega dot 
+thats kind after, 
+fundamentally 
+so, heres topics, going to 
+start a continuous system 
+again, thats chapter two 
+going to jump straight 
+to that formulation 
+derive fundamental properties 
+everything in a vectorial 
+format formulation 
+thats kind important nice 
+so you may 
+seen this 
+going to freeze that blob 
+jelly, basically, a rigid body 
+things will simplify 
+you to careful 
+to terms simplify 
+momentum, energy, things 
+that we use to derive equations 
+well talk inertia tensor, 
+energetic equations 
+we talk stability 
+torquefree spins, 
+different equilibrias that we 
+a body happy, happy to 
+tumble in one set direction 
+directions if this goes crazy 
+that stuff will come there 
+dual spin spacecraft, are, 
+used to common platform 
+you still see occasionally 
+used to make 
+geosats that way 
+with, basically, you want antenna 
+facing earth per day 
+revolution 
+a geo 
+always point us 
+part is 
+spun a different rate 
+i think cassini is also a dual spinner 
+a big antenna platforms that 
+spinning a different rate 
+rest 
+theres instability 
+that comes this 
+so this is basically 
+a system rigid bodies 
+so weve done here is 
+going to a single rigid body 
+we two rigid bodies 
+another one that we want to 
+derive is gravity gradient torch 
+well go back to much fma, 
+look field equations, expand 
+you truncate 
+theres simple questions like, 
+i know that if i change orbit, 
+i will change attitude torque 
+i earth, 
+smaller that torque will be, 
+gravitys smaller, so differential 
+gravitys going to smaller 
+is inverse true 
+if i change orientation, 
+i impact orbit 
+thats kind 
+stuff well see there 
+so, 
+well go in great detail a lot, 
+in a vectorial formulation 
+go there 
+thats kind basic dynamics 
+later in class we will also 
+spacecraft nreaction wheels 
+in fact, variable speed cngs, 
+contain reaction wheels 
+that will a later stage 

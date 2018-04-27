@@ -1,0 +1,204 @@
+music going to sneak a 
+certain fact 
+i want to show that pi is less 
+sevenths 
+awfully close 
+pi is 
+seventh is 
+alright 
+awfully close 
+well anunknown 
+im going to make something up, 
+itll turn in retrospect to 
+exactly we need 
+so tricks going to be, 
+integral to x to fourth 
+times one minus x to fourth 
+one plus x squared dx 
+i integrate that 
+well, we actually 
+calculation, lets notice something 
+integrand 
+denominator here is positive 
+numerator, well long x 
+isnt , numerators positive 
+well 
+continuous im integrating a 
+continuous function thats mostly 
+positive except end point 
+so that means that this integral ends 
+positive well 
+well need that fact later 
+the, fact that integrals 
+positive 
+lets work integrand 
+im going to focus first 
+numerator 
+minus x to fourth 
+if i multiply this i get x to 
+fourth minus x cubed plus x squared 
+minus x plus 
+if i multiply this x to 
+fourth, that adds to 
+exponents 
+this will x to eighth minus x to 
+seventh, plus x to sixth, minus 
+x to fifth, plus x to fourth 
+lets get ready to long division 
+so im going to copy this 
+so, i get numerator, 
+x to fourth times minus x to 
+fourth 
+expand out, x to eight minus 
+x to seventh plus x to sixth 
+minus x to fifth 
+plus x to fourth, im going to 
+take that numerator i divide 
+one plus x squared, so this 
+going to long division 
+im dividing this by, i write x 
+squared plus one 
+okay, so thats calculation i want to 
+
+i want to this long division problem 
+well i gotta put something here that i 
+multiply x squared plus to kill x to 
+th 
+and, that i could use x to th, 
+x to th times x squared is x 
+to eighth 
+x to sixth times , is plus 
+x to th 
+im going to subtract that, 
+i get 
+well, x to th terms cancel, 
+ive got a minus x to th 
+x to sixth minus x to sixth is 
+x to sixth minus x to fifth 
+plus x to fourth 
+survive im subtracting 
+anything soon copy down, minus 
+x to fifth plus x to fourth 
+alright, you gotta put something 
+here that i multiply x squared 
+plus to minus x to seventh 
+minus x to fifth 
+because, that times x squared gives 
+minus x to seventh that times 
+gives ooh, minus x to fifth 
+thats great 
+so this term dies this term dies 
+lets copy terms actually 
+x to sixth 
+plus x to fourth 
+i put here to multiply 
+this to kill this 
+plus five x to fourth will it, 
+that times x squared gives 
+five x to sixth, five x to 
+fourth times one gives plus x to 
+fourth 
+remember, im subtracting this 
+so that kills this first term 
+here ive got minus x to 
+fourth 
+im going to write that here 
+so, minus x to fourth is thats 
+left 
+ive gotta put something here to 
+multiply this to kill this 
+minus x squared, that 
+times this gives minus x to 
+fourth 
+minus x squared 
+im subtracting this so this becomes 
+x squared 
+ive got to put something here to 
+multiply this to kill this 
+well plus will 
+plus times that gives x squared 
+plus 
+i subtract this i get minus four 
+left thats remainder 
+we rewrite integral 
+so in light expansion 
+numerator long division i 
+divided plus x squared 
+this is integral to 
+of, well, i get i divided 
+x to sixth minus four x to 
+fifth plus five x to fourth minus 
+four x squared 
+plus four i a remainder so 
+minus four one plus x squared 
+this is an integral i 
+okay this is x to seventh seven 
+that is antiderivative x to 
+sixth 
+antiderivative here is four x to 
+sixth six 
+plus an antiderivative here 
+x to fifth, antiderivative 
+here is minus x to third 
+antiderivative is plus x, 
+an antiderivative plus x 
+squared, well antiderivative 
+plus x squareds arctan 
+so this is minus , orcten x im 
+integrating to , so im 
+going to evaluate this to 
+now, i get i evaluate this 
+i plug in , i get , , , , 
+arctan is 
+so, i end subtracting 
+so i to evaluate this 
+to figure this integral is equal 
+to 
+so i plug in , i get seventh 
+minus sixths plus one minus thirds 
+plus minus times, whats arctan 
+, well arctan is pi , lets 
+simplify a bit 
+so, ive got seventh, ill put 
+a common denominator three 
+so, minus thirds plus thirds minus 
+thirds plus thirds, minus 
+times pi is minus pi 
+well i 
+lets see here 
+so ive got minus minus thats minus 
+thirds, plus , thats thirds 
+minus thirds 
+that gives thirds leftover, 
+also minus pi 
+so ive got a seventh 
+plus, well thirds is minus pi 
+well seventh plus thats sevenths 
+minus pi 
+heres significance this, remember 
+back to beginning 
+well way back beginning i pointed 
+that this integral is positive 
+so we shown 
+so weve shown that this, value 
+integral is positive 
+in words, that sevenths is 
+bigger pi 
+so this is really a fun example 
+weve got pieces coming 
+together 
+weve got derivative arctan, long 
+division polynomials, fundamental 
+theorem calculus 
+forces combining to convince us 
+that sevenths is bigger pi 
+so if you want an entertaining challenge, 
+here is an even complicated integral 
+to evaluate 
+interval x goes to x to 
+eighth minus x to eighth 
+times plus times x squared 
+that times one plus x 
+squared 
+answer that you get here is 
+pretty entertaining 

@@ -1,0 +1,78 @@
+music whats trigonometry 
+well heres basic idea 
+so ive got a bunch right triangles, 
+right triangles, this 
+angle is in them, 
+theyre different sizes 
+so side lengths different 
+ratios between corresponding sides 
+
+i mean 
+well, take a look this big triangle 
+got height that ill label in, 
+in orange, got width that 
+ill label in blue 
+width this triangle isnt 
+this triangle, isnt 
+this triangle, isnt this 
+small triangle 
+height this triangle is 
+different heights three 
+triangles 
+look ratio this height to 
+this width 
+alright, heres height, heres 
+width, if i double width, width 
+a little bit height 
+in words height is a little 
+bit less twice width 
+thats true triangles 
+ratio heights to widths 
+same, even though theyre 
+different sizes 
+thats key fact that makes 
+trigonometry work 
+if you draw random right 
+triangle given angles, doesnt 
+really make a lot sense to ask 
+questions side lengths, 
+really depends big triangle you 
+drew 
+make sense to ask questions 
+ratios side lengths, 
+depend angles 
+so we give names to ratios 
+we call sine theta ratio 
+between height hypotenuse 
+so if you like, opposite side 
+hypotenuse 
+so y r in this diagram 
+cosine theta is ratio between 
+adjacent side hypotenuse 
+right triangle 
+x r in this picture 
+tangent theta 
+thats opposite side adjacent 
+side, y x in this picture 
+sine, cosine, tangent 
+this angle theta 
+theyre defined in terms 
+ratios side lengths 
+that weve got a definition sine 
+we can, instance, calculate sine pi 
+
+if we build a triangle, right triangle 
+an angle measure pi 
+i built a right triangle 
+this angle is pi 
+i use little ruler to measure 
+hypotenuse 
+hypotenuse here is 
+centimeters 
+i measure opposite side, 
+opposite sides 
+centimetres 
+sine is opposite side 
+hypotenuse, means sine pi 
+five is 
+, is 

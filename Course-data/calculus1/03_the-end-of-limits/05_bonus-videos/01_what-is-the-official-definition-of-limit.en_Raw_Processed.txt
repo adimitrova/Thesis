@@ -1,0 +1,88 @@
+music so we learn official 
+definition limit is 
+to say that limit fx l x 
+approaches a, means following 
+means that epsilon bigger 
+zero, this backwards three is real 
+number epsilon greek letter, a 
+variable so epsilon greater 
+zero, theres a delta greater zero, 
+this is greek letter delta 
+so, epsilon greater zero, 
+theres a delta greater zero 
+so that if, this, if absolute value 
+x a is between zero delta, then, 
+absolute value fx l is less 
+epsilon 
+you say like that, i think 
+really hard to see this 
+relationship to a intuitive 
+description this limit statement might 
+
+i mean, whats this trying to get 
+trying to say fx is close i 
+want to l making x sufficiently close 
+to a 
+so, how, to reconcile those, 
+two perspectives, right this 
+anything to things 
+close 
+key, take a look this absolute 
+value difference, 
+right 
+absolute value x a is 
+distance between x a 
+so to say that distance between x 
+a is between zero delta is to say 
+that x is within delta a, alright 
+distance x to a is less delta 
+to say that distance between x 
+a is bigger zero is to say 
+that distance between x and, a, 
+you know, isnt zero, right, x isnt a 
+so i rewrite that, maybe in a little 
+bit easier way 
+sound so instead saying that, 
+thing to say, if x is equal 
+to a, so absolute value x a 
+isnt zero, x is within delta a 
+so distance between x a is delta 
+i thing to this 
+absolute value a difference, alright 
+absolute value fx l, thats 
+distance, between fx l 
+sum distance between fx 
+l is less epsilon 
+well, that means that fx is within 
+epsilon l 
+so, ill rewrite that that sound 
+here we go 
+sound fx is within epsilon l 
+so, i think when, you write like 
+this, makes a little bit sense, 
+right 
+to say that limit fx l x 
+approaches a, 
+means that numbers epsilon, 
+epsilon is measuring close i want 
+fx to l, 
+then, theres corresponding number 
+delta, is close x to to 
+a 
+so that whenever x is that close, delta, 
+within delta a, 
+fx is really within epsilon l 
+to say that limit fx l 
+means that matter epsilon i 
+choose, theres corresponding delta, 
+so that whenever x is within delta a, 
+fx is within epsilon l 
+now, this actually gets played 
+in, in concrete situations be, 
+you know, kind complicated, this 
+is really official definition 
+means to say that limit fx 
+equals l x goes to a music 
+going to trying to unpack this 
+definition to see might mean in 
+specific cases 

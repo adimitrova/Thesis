@@ -1,0 +1,200 @@
+music 
+hello 
+welcome to sixth module 
+introductory course subatomic physics 
+in this sixth module, we discuss weak 
+interactions higgs mechanism 
+you will notice that this module is 
+larger average module 
+this is due to rich phenomenology 
+electroweak interactions 
+we recommend that you take 
+two weeks to digest 
+diving subject, in this 
+first video we will go depth 
+subject antiparticles 
+following this video, you will know 
+difference between particles 
+antiparticles 
+connection between antiparticles 
+energymomentum reversal 
+antiparticles come 
+play in standard model 
+starts 
+evolution equation 
+fields takes role 
+an equation motion particles 
+follows relativistic 
+energymomentum conservation 
+operator substitution 
+result is kleingordon 
+equation free particles 
+solutions follow a continuity 
+equation seen here 
+describes conversation a 
+fourvector current j particles 
+time component is probability 
+density finding a particle 
+location x 
+spatial component is particle 
+flow density that position 
+imagine an infinitely small 
+volume that surrounds 
+point that we considering 
+density in volume 
+change drhodt equal to zero 
+if particles enter exit 
+boundaries volume, means that 
+divergence j 
+simultaneously nonequal to zero 
+this ensures that number 
+particles in volume 
+is conserved 
+might surprise you that 
+probability density contains 
+time derivative wave function 
+we will understand this 
+fact in a little while 
+kleingordon equation is manifestly 
+covariant, contains scalars 
+lorenz transformation 
+plain waves must a solution 
+kleingordon equation, 
+describe a free particle 
+we use a normalization proportional to 
+an arbitrary constant square root n 
+you may take n number 
+density particles if you wish 
+current density is 
+proportional to fourmomentum 
+temporal component is 
+proportional to energy 
+this is due to covariance 
+quantity 
+requires that probability 
+rho dx is invariant 
+volume element changes like 
+dx dxgamma, 
+lorentz contraction 
+in direction motion 
+invariance, 
+probability density must 
+change rho gamma times rho 
+gamma equal em, 
+rho must thus proportional to energy 
+is this reason that 
+probability density 
+current density contain respectively a 
+time a space derivative field 
+let us consider energy eigenvalues 
+relativistic free particles, 
+inserting a plane wave solution 
+kleingordon equation 
+we find solutions positive 
+negative energy 
+since density probability 
+is proportional to energy, 
+is positive definite either 
+this contradicts definition 
+probability a real number between 
+zero one 
+to solve this problem we must interpret 
+continuity equation in an innovative way, 
+introducing electromagnetic 
+current density 
+proportional to electric charge q, 
+j becomes local 
+charge density thus, 
+may negative well positive 
+in agreement intuition 
+is obvious that 
+solutions positive 
+negative energy distinguished 
+charge considered particle, 
+if one wants to keep probability 
+density always positive 
+is thus probability density, 
+n p, is invariant, 
+electromagnetic current density, 
+q n p, 
+obeys rules 
+physically sensible probabilities 
+current density is conserved 
+continuity equation 
+this concept, we well 
+spontaneously create annihilate particles, 
+provided that total charge in an 
+infinitesimal volume remains constant 
+this is a consequence 
+relativistic covariance 
+implications 
+this reinterpretation 
+negative energy solutions 
+answer is given feynmans 
+interpretation states 
+electromagnetic current density 
+a free electron charge q e, 
+ignoring spin, is given 
+first equation 
+this current is that a particle 
+positive energy advancing in direction 
+momentum vector let us 
+say that emerges a vertex 
+a free positron, q e, 
+current is positive 
+current density is an 
+electron negative energy moves in 
+opposite direction, 
+say entering vertex 
+that is to say that particle 
+negative energy 
+comes a vertex is equivalent to 
+an antiparticle positive energy that 
+enters intervals 
+in this way, we eliminate 
+solutions negative energy, 
+replace antiparticles 
+evolving in opposite direction 
+this establishes a connection between 
+transformation between particles 
+antiparticles, we call 
+charge conjugation, 
+reversal direction 
+momentum called parity 
+two transformations will analyzed 
+in detail in next video 
+first, we look consequences 
+feynmans interpretation negative 
+energy states 
+consequences indeed quite 
+dramatic shown example 
+a simple double scattering process 
+heisenbergs principle allows us 
+to reverse order two 
+scatters in time 
+intermediate state will 
+move backwards in time 
+we replace antiparticle 
+moving forward in time 
+double scatter becomes a pair 
+creation process shown right 
+followed a particleantiparticle 
+annihilation process 
+contributions begin 
+initial state 
+end final state 
+we must thus sum 
+level amplitudes 
+calculating total 
+probability process 
+calculating simple scatters, 
+is sufficient to consider particles, 
+corresponding antiparticle 
+process obtained reversing 
+direction particles 
+in next vide, we introduce 
+discreet transformations space time, 
+parity, time reversal charge 
+conjugation, transforms wave 
+function a particle that 
+an anti particle vise versa 

@@ -1,0 +1,276 @@
+music 
+hello welcome back 
+hopefully, you a general 
+picture an embedded system is 
+however, in order to give 
+you a better insight, 
+in this video going to talk 
+characteristics an embedded system 
+we will also discuss challenges you 
+may face developing embedded systems 
+well possible design flows 
+to tackle challenges 
+embedded system is built 
+a certain application, 
+thus system fulfill 
+requirements application 
+requirements dictate 
+characteristics embedded system 
+in general, 
+we distinguish several that 
+applied to embedded system 
+in video, 
+we will highlight 
+we will talk dependability, 
+efficiency, realtime constraints 
+characteristics crucial since 
+influence way system works 
+a lot embedded systems safety 
+critical so must dependable 
+a good example a system 
+everyone would agree 
+dependable is nuclear power plants 
+course many 
+examples airplanes cars 
+systems dependable 
+main reason is directly 
+connected to environment 
+if something goes wrong will 
+an immediate impact 
+dependability split 
+several subcharacteristics 
+system is considered dependable if 
+characteristics fulfilled 
+an important issue is that 
+initially developers 
+focus 
+functionality system 
+assuming that dependability 
+brought in later stages 
+in fact, this approach work, 
+design decisions might allow 
+achieving dependability afterwards 
+example, if wrong components 
+chosen an application, 
+lets say there is enough 
+computational performance to execute 
+critical tasks time, will 
+difficult to deal in later stages 
+so dependability considered 
+initial stages 
+system design 
+efficiency is another issue 
+importance this 
+characteristic comes fact 
+that amount resources 
+is always limited 
+resources represented 
+in form energy 
+memory space if an embedded system 
+money if a customer 
+nowadays, small resource constrained 
+devices wearables 
+internet things nodes 
+becoming popular 
+devices 
+constant power supply 
+however, last longer to 
+provide costumers proper services 
+therefore, energy efficiency is 
+much relevant to embedded systems 
+characteristics 
+estimated 
+in general, energy efficiency 
+estimated based amount work done 
+system considering 
+amount spent energy 
+example, 
+processors energy efficiency 
+estimated based number 
+instructions per joule 
+is probably obvious that number 
+operations per joule is increasing 
+technology advances 
+if we make a quick comparison 
+current technologies, 
+we conclude that 
+application specific 
+components that 
+efficient application is 
+according to that, processors offer 
+least energy efficient solutions 
+whereas, application specific 
+integratedcircuits 
+efficient ones 
+in an embedded system, hardware 
+software play equally important roles 
+if running software 
+exclude underlying hardware 
+full potential 
+runtime efficiency will poor 
+inefficiencies cost poor mapping 
+application to platforms 
+avoided 
+instance, compilers 
+bring in overhead 
+will eventually leave 
+two wasted energy 
+code size is another issue that needs to 
+addressed comes to efficiency 
+devices capable loading additional 
+code dynamically still rare 
+usually an embedded systems code 
+is stored within device 
+therefore, occupy 
+less space possible 
+physical appearance 
+system is less important 
+portable devices lightweight so 
+to attractive to customers 
+last last parameter that 
+influences overall efficiency is cost 
+system built using 
+little components possible 
+to implement required functionality 
+embedded systems 
+meet realtime constraints 
+if computations finished in time, 
+quality solution 
+might decrease 
+sometimes, violating realtime 
+constraints may actually lead to 
+serious consequences, will 
+make system less dependable 
+course, embedded systems 
+share mentioned characteristics, 
+majority still 
+however, since embedded systems lie in 
+intersection different fields 
+a study 
+there is haziness in definition 
+systems are, 
+therefore, 
+set characteristics may vary 
+considering listed 
+characteristics embedded systems, 
+we think challenges 
+that developers might face 
+dependability level embedded 
+systems goes beyond level 
+pclike systems 
+a real life example effects 
+an undependable system is 
+happened in southern california 
+back in 
+due to technical problems, 
+air traffic control center 
+could operate 
+many airliners held to ground 
+this kind situations that 
+obviously everybody would like to avoid 
+to make a system efficient, 
+software developed 
+independently underlying hardware 
+this means that initial 
+design steps, software 
+hardware taken account 
+this actually requires 
+collaboration between fields 
+electrical engineering 
+computer science 
+best energy efficiency achieved 
+building application specific hardware 
+however, there downsides 
+to hardware implementation, 
+doesnt provide high flexibility 
+is also expensive 
+requires long design times 
+embedded systems development is 
+finding right balance between 
+efficiency flexibility 
+embedded systems interact 
+physical world 
+this fact additional implications 
+instance, developers must check 
+if realtime constraints met 
+also considered, 
+that real systems concurrent 
+managing concurrency is 
+another important challenge 
+embedded systems may consist many 
+components, processing elements, 
+inputoutput devices, 
+communications units 
+this means that impact combining 
+components studied 
+considered 
+instance, 
+is desirable to know one component 
+might influence components 
+in order to make 
+design process easier, 
+broken 
+several soft tests 
+self tests 
+performed sequentially 
+repeated 
+also, is important that solutions 
+methods reused whenever possible 
+designing starts an idea 
+converted a design specification 
+special repository created 
+relevant designing 
+formation will stored 
+repository will lead developers 
+to keep tract design 
+is also good if repository provides 
+version control to make possible 
+to roll back to previous version 
+design iteration, 
+repository updated 
+design process, applications 
+mapped to platform iteratively 
+in iteration, 
+new design information is generated 
+information comprises mapping 
+operations to hardware software 
+computation 
+scaling in step design 
+evaluated considering perimeters 
+dependability, performance, 
+energy consumption others 
+intermediate steps there is 
+warranty that design will correct 
+thats design 
+validated in step 
+mentioned before, 
+system efficient, 
+thats optimization is important 
+to ease design process, you might 
+interested in different design models 
+models clearly show different 
+steps that must performed 
+example, waterfall model 
+is a sequential design process 
+development proceeds 
+top to bottom 
+obtaining requirements 
+to maintenance 
+in order to use this model, design 
+process thought 
+well fact 
+changes costly 
+iterative model doesnt 
+dimension drawback since 
+deployment design goes 
+testing, evolution, 
+implementation every many times 
+needed to meet requirements 
+well, this is this video 
+we discussed main characteristics 
+challenges embedded systems 
+in next videos, 
+we will go interesting details 
+we will discuss 
+embedded systems 
+music 

@@ -1,0 +1,160 @@
+music i antidifferentiate trig 
+functions 
+sine cosine easy if we 
+remember derivatives 
+derivative sine x, respect 
+to x, is cosine x 
+derivative negative cosine is 
+sine 
+so antiderivatives 
+knowing this, i know 
+antiderivatives 
+if derivative sine is cosine, 
+antiderivative cosine is sine plus 
+c 
+if derivative negative cosine 
+is sine 
+that means antiderivative sine is 
+negative cosine plus c 
+well tangent 
+would i differentiate to get tangent 
+x 
+yeah, im asking i differentiate 
+to get tangent whats 
+antiderivative tangent 
+im claiming, that antiderivative 
+tangent is log secant x, plus 
+constant 
+i know this 
+well, to verify this is true, enough 
+to a differentiation problem 
+i need to check that derivative log 
+secant x is equal to tan x 
+i know this 
+well i to differentiate this 
+composition functions 
+composition log secant, 
+ill in chain rule, right 
+so whats derivative log 
+one 
+so inside function times 
+derivative secant 
+whats derivative secant 
+secant tangent 
+alright, so this is secant times 
+secant x times tangent x 
+good news secants cancel 
+im left is tangent x 
+so ive found an antiderivative 
+tangent 
+totally opaque to somebody 
+would ever gotten that 
+antiderivative tangent 
+yet, that candidate 
+antiderivative revealed to us, we 
+verify that truly an antiderivative 
+differentiating checking 
+that really gives us tangent 
+ok, lets try another one kinds 
+problems 
+whats an antiderivative secant 
+so im asking a function, whose 
+derivative is secant x 
+right 
+im looking antiderivative 
+secant x 
+is that 
+well turns that antiderivative 
+secant x is this 
+log, absolute value secant x 
+plus tangent x 
+again, totally mysterious, right, 
+this came 
+we verify that thats truly an 
+antiderivative 
+so to verify that antiderivative 
+secant x is this, enough to 
+differentiate this end secant 
+x 
+so lets try that, alright 
+ill differentiate log absolute 
+value secant x plus tangent x 
+i get 
+well, derivative log is 
+inside function, is secant x plus 
+tangent x 
+times derivative inside 
+function 
+this is really chain rule in action 
+right 
+now, whats derivative this sum 
+well, thats sum derivatives, 
+right 
+so derivative secant is secant x 
+tangent x 
+derivative of, tangent 
+is secant squared, this is divided 
+secant x plus tangent x 
+note i factor a secant x here, 
+ive got secant x times numerator 
+is tangent x plus secant x 
+denominators thing 
+i mean i wrote in opposite order 
+this is great, right 
+this cancels im left is 
+secant x 
+so yeah, derivative this is secant 
+x consequently antiderivative 
+secant x is this 
+this is really a key in to anti 
+multiplying, to factoring 
+if you remember experience, 
+multiplying antimultiplying, 
+factoring numbers, right 
+factoring hard 
+i to a bunch trial division to 
+figure to factor a number 
+i that factorization, 
+purported factorization, in hand, 
+checking easy 
+multiplying is something that you 
+story here derivatives, 
+right 
+anti differentiating is hard, i mean 
+seems hard to figure anti 
+differentiating derivative is 
+you show a guess, i verify 
+that guess is correct 
+easy step differentiating 
+seeing if youre right 
+i hope that examples giving you 
+real respect true 
+difficulties antidifferentiation 
+differentiating is a mechanical process 
+you to apply rules 
+carefully 
+weve seen that 
+antidifferentiation requires flashes 
+insight, cooking correct 
+answer verifying that 
+correct 
+well this seems, you know, impossible to 
+continue, right 
+we ever find antiderivatives if 
+we to keep hoping insight to 
+appear 
+well good news is that 
+rest this course will developing 
+tools to make this kind guessing 
+systematic right 
+instead relying sheer insight 
+to solve problems 
+going to providing tools that 
+will aid insight aid 
+creativity, provide a little bit 
+structure so that you exploit 
+patterns that going to seeing, 
+order finite derivatives much 
+easily 
+so i think seems hard right now, 
+going to get a lot easier 

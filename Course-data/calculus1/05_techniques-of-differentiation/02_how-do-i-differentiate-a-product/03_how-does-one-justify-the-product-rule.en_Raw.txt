@@ -1,0 +1,142 @@
+[music] we can drive the product rule by 
+just going back, to the definition of 
+derivative. 
+so what is the definition of derivative 
+say? it tell us that the derivative of 
+the product of f of x and g of x is a 
+limit. 
+it's the limit as h approaches zero. 
+of the function at x+h, which, in this 
+case, is the product of f and g, both 
+evaluated at x+h, because i'm thinking of 
+this as the function, so i'm plugging in 
+x+h, and i subtract the function 
+evaluated at x, which is just f(x)*g(x), 
+and then i divide that by h. 
+so, it's this limit of this difference 
+quotient, that gives me the derivative of 
+the product. 
+how can i evaluate that limit? here's the 
+trick, i'm going to add a disguised 
+version of zero to this limit. 
+instead of just calculating the limit of 
+f(x+h)g(x+h)-f(x)g(x), i'm going to 
+subtract and add the same thing. 
+so here, i've got f(x+h)*g(x+h), just 
+like up here. 
+now i'm going to just subtract 
+f(x+h)*g(x+h), and then add it back in, 
+plus f(x+h)*g(x). 
+this is just zero, 
+i haven't done anything. 
+and i'm going to subtract f(x)*g(x) right 
+here and i'm still dividing by h. 
+so these are the same limits, 
+i haven't really done anything, but i've 
+actually done everything i need. 
+by introducing these extra factors, i've 
+now got a common factor of f(x+h) here 
+and a common factor of g(x) here. 
+so, i can collect those out and i'll get 
+some good things happening as a result. 
+let's see exactly how this happens. 
+so this is the limit as h goes to zero, 
+i'm going to pull out that common factor 
+of f(x+h) [sound]. 
+and i'm going to multiply by what's left 
+over g(x+h)-g(x) [sound] and i can put it 
+over h. 
+so that's these two terms. 
+now, what's left over here? i've got a 
+common factor of g(x). 
+and what's left over? f(x+h)-f(x) i'll 
+divide this by h, 
+and then the factor i pull out is g(x). 
+so this limit is the same as this limit. 
+now this is a limit of a sum. 
+so that's a sum of the limits provided 
+the limits exist and we'll see that they 
+do. 
+so this is the limit as h goes to zero of 
+f(x+h)*g(x+h)-g(x)/h plus the lim as h 
+goes to zero of f(x+h)-f(x)/h*g(x). 
+now what do i have here i've got limits 
+of products which are the products of 
+limits providing the limits exist, and 
+they do and we'll see, so let's rewrite 
+these limits of products as products of 
+limits. 
+this is the limit as h goes to zero of 
+f(x+h) times the limit as h goes to zero 
+of g(x+h)-g(x)/h. 
+you might begin to see what's happening 
+here, 
+plus the limit as h goes to zero of 
+f(x+h)-f(x)/h times the limit as h goes 
+to zero of g(x). 
+okay, 
+now we've got to check that all these 
+limits exist, in order to justify 
+replacing limits [inaudible] limits. 
+but these limits do exist, 
+let's see why? 
+this first limit, the limit of f(x+h) as 
+h goes to zero, it's actually the hardest 
+one i think, of all these to see. 
+remember back, we showed that 
+differentiable functions are continuous. 
+this is really calculating the limit of f 
+of something, as the something approaches 
+x. 
+and that's really what this limit is, and 
+because f is continuous, because f is 
+differentiable, this limit is actually 
+just f(x). 
+but i think seeing that step is probably 
+the hardest in this whole argument. 
+what's this thing here? well, this is the 
+limit of the thing that calculates the 
+derivative of g, and g is differentiable 
+by assumption. 
+so, this is the derivative of g at x 
+plus, what's this limit? this is the 
+limit that calculates the derivative of 
+f, and f is differentiable by assumption, 
+so that's f (x)'. 
+this is the limit of g(x), as h goes to 
+zero. 
+this is the limit of a constant. 
+wiggling h doesn't affect this at all, so 
+that's just g(x). 
+and look at what we've calculated here. 
+the limit that calculates the derivative 
+of the product is f(x)*g'(x)+f'(x)*g, 
+that is the product rule. 
+what have we really shown here? well, 
+here is one way to write down the product 
+rule very precisely. 
+confusingly, i'm going to define a new 
+function that i'm calling h. 
+so h is just the product of f and g now, 
+h(x)=f(x)*g(x). 
+if f and g are differentiable at some 
+point, a, then i know the derivative of 
+their product. 
+the derivative of their product is the 
+derivative of f times the value of g plus 
+the value of f times the derivative of g. 
+this is a precise statement of the 
+product rule, and you can really see, for 
+instance, where this differentiability 
+condition was necessary. 
+in our proof, at some point in the proof 
+here, i wanted to go from a limit of a 
+product to the product of limits. 
+but in order to do that, i need to know 
+that this limit exists. 
+and that limit is exactly calculating the 
+derivative of g. 
+so you can really see where these 
+conditions are playing a crucial role in 
+the proof of the product rule. 
+[music] 

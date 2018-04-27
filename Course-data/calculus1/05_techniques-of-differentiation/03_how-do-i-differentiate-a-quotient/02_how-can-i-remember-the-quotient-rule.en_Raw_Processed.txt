@@ -1,0 +1,165 @@
+music youre lost 
+youre trapped a desert island 
+you to remember quotient rule 
+you remember quotient rule 
+even while trapped that desert island, 
+youll remember vague form 
+quotient rule 
+youll remember, numerator looks a 
+little bit like product rule 
+a value times a derivative minus 
+value times derivative 
+but, you might remember exactly 
+minus sign goes, 
+right you dont know if 
+fxgxgxf x, way 
+around, gxfxfxgx 
+one is if you werent trapped 
+desert island, youd access 
+to wikipedia 
+you could look quotient 
+rule 
+music even if you could look 
+lets think a little bit 
+is quotient rule is to 
+make easy lets suppose 
+that f x is positive g x is 
+positive 
+im trying to understand 
+derivative quotient is 
+really is quotient changing 
+f g changing 
+lets make that really concrete 
+lets suppose that numerator is 
+getting bigger denominator is 
+staying 
+this change well that is 
+bigger, right if you take bigger thing 
+cut number 
+pieces 
+then, pieces bigger 
+now, we could play game 
+way 
+i could keep pieces size, 
+increase denominator would 
+cutting pieces 
+right if i take amount 
+stuff divide pieces, 
+pieces is smaller 
+right so a size number divided a 
+bigger number this fraction is 
+smaller 
+this relate to derivitaive 
+well think back to sign, i g n 
+derivative 
+so set up, f x is positive, g 
+x is positive, maybe denominator 
+isnt really changing, numerator, 
+is getting bigger i want to know, 
+is fraction changing 
+well, numerators getting bigger 
+denominators staying same, 
+fraction getting bigger, 
+tells us something sign 
+this derivative 
+we similarly analyze situation 
+involving denominator 
+so, if numerator is positive 
+denominator is positive numerator 
+is really changing, 
+denominator is getting bigger 
+fraction f x g x is getting 
+smaller 
+so that tells us, again, something 
+sign derivative this ratio 
+negative, if 
+denominators getting bigger, 
+numerators really changing, this 
+ratio is getting smaller 
+this help us to identify 
+actual quotient rule we get 
+rid that imposter quotient rule 
+so weve got to guesses to 
+quotient rule might ive got 
+information that we thought about, 
+right if functions values 
+positive numerators getting 
+bigger denominators really 
+changing that means fractions 
+getting bigger 
+if numerators really changing 
+denominators getting bigger 
+that fractions getting smaller 
+truths 
+truths compatible 
+guesses 
+quotient rule well, lets take a look 
+this first guess quotient rule, 
+lets see happens if numerators 
+changing, denominators 
+getting bigger 
+if numerators changing, that 
+kills this whole first term 
+derivative f vanishes 
+derivative that a nominator 
+positive, im imagining value 
+function is positive 
+so, this is a positive number a 
+negative sign there, so this is a 
+negative numerator divided a positive 
+number 
+so, if this quotient rule, 
+would telling us that an increasing 
+denominator makes this ratio smaller 
+makes derivative negative, 
+thats good 
+thats really compatible this 
+picture 
+now, is this compatible that well, 
+would happen here if denominator 
+increasing, numerator 
+staying if numerators 
+staying same, this is zero, 
+kills this term 
+im left this, 
+if numerator is increasing 
+this term is positive imagine 
+functions unknown positive 
+so you got a positive thing divided 
+positive thing 
+if quotient row, an 
+increasing denominator 
+numerator remains would make 
+this ratio increase this 
+derivative would positive this 
+cant be, this isnt quotient rule, 
+compatible this fact 
+in fact, this is quotient rule we 
+see that also compatible 
+this first fact 
+if numerator is getting bigger 
+denominator is staying well 
+denominator staying makes 
+this term zero kills this whole 
+term im left is this 
+imagine g is positive 
+derivative numerator is positive 
+derivator is getting bigger 
+this is positive, 
+ive got a positive thing divided a 
+positive thing 
+that makes derivative positive 
+that makes sense 
+if numerators getting bigger 
+denominators staying same, 
+derivative is positive thats exactly 
+this true quotient rule is saying 
+fundamentally, i dont want you to 
+memorize rules 
+music i want you to understand 
+rules 
+i want you to get a feeling 
+theres a negative sign in quotient 
+rule 
+really belongs there 
+music 

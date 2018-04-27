@@ -1,0 +1,218 @@
+1
+00:00:00,025 --> 00:00:05,047
+[MUSIC]. 
+
+2
+00:00:05,047 --> 00:00:09,272
+Sometimes the best substitution to make 
+isn't even visible until after we've 
+
+3
+00:00:09,272 --> 00:00:12,861
+messed around with the integrand some 
+how. 
+
+4
+00:00:12,861 --> 00:00:20,172
+For example, what's the antiderivative of 
+1 over 1 plus cosine x? 
+
+5
+00:00:20,172 --> 00:00:24,721
+Dx, what can you do? 
+your first move might be to try the 
+
+6
+00:00:24,721 --> 00:00:29,867
+substitution u equals cosine x, which 
+case du is negative sine x dx, but 
+
+7
+00:00:29,867 --> 00:00:35,492
+there's no visible sine x in the 
+integrand. 
+
+8
+00:00:35,492 --> 00:00:39,512
+Well, since we're talking about invisible 
+substitutions, we should try to mess 
+
+9
+00:00:39,512 --> 00:00:44,143
+around with the integrand. 
+Instead of doing that, let's try a 
+
+10
+00:00:44,143 --> 00:00:49,916
+different trick. 
+Let's try to multiply 1 over 1 plus 
+
+11
+00:00:49,916 --> 00:00:59,240
+cosine x by 1 minus cosine x divided by 1 
+minus cosine x. 
+
+12
+00:00:59,240 --> 00:01:03,290
+This doesn't change the integrand at all, 
+because this is just 1. 
+
+13
+00:01:03,290 --> 00:01:07,782
+This trick makes a hitherto invisible 
+substitution visible. 
+
+14
+00:01:07,782 --> 00:01:12,100
+I'm getting ahead of myself a little bit. 
+Let's first apply a trig identity. 
+
+15
+00:01:12,100 --> 00:01:19,524
+Oh, this is 1 minus cosine x in the 
+numerator divided by, that's 1 minus 
+
+16
+00:01:19,524 --> 00:01:27,460
+cosine squared x, and then the trig 
+identity is that 1 minus cosine squared 
+
+17
+00:01:27,460 --> 00:01:37,303
+x, well that's sine squared x. 
+So now I want to antidifferentiate 1 
+
+18
+00:01:37,303 --> 00:01:42,530
+minus cosine x over sine squared x dx. 
+Well even that isn't so great. 
+
+19
+00:01:42,530 --> 00:01:46,381
+Let's split it up. 
+Well then I get, that this is 
+
+20
+00:01:46,381 --> 00:01:54,337
+antiderivative 1 over sine squared x dx 
+minus the antiderivative of cosine x over 
+
+21
+00:01:54,337 --> 00:02:01,009
+sine squared x dx. 
+Now that first integral is one that I can 
+
+22
+00:02:01,009 --> 00:02:05,250
+do. 
+Rewrite it as the antiderivative of 
+
+23
+00:02:05,250 --> 00:02:11,008
+cosecant squared x. 
+You know, I just have to think, do I know 
+
+24
+00:02:11,008 --> 00:02:16,357
+any function whose derivative is cosecant 
+squared. 
+
+25
+00:02:16,357 --> 00:02:24,933
+Yes, negative cotangent is an 
+antiderivative of cosecant squared, of of 
+
+26
+00:02:24,933 --> 00:02:29,000
+x. 
+What about that other intergral? 
+
+27
+00:02:29,000 --> 00:02:33,331
+Well I could read this as cotangent times 
+cosecant and just recognize the 
+
+28
+00:02:33,331 --> 00:02:38,443
+antiderivative that way. 
+But to demonstrate the technique I can 
+
+29
+00:02:38,443 --> 00:02:42,987
+also apply u substitution to that 
+antidifferentiation problem so let's let 
+
+30
+00:02:42,987 --> 00:02:47,176
+u equal sine x, and in that case, du is 
+cosine x dx, which is great, because 
+
+31
+00:02:47,176 --> 00:02:55,815
+that's the numerator there. 
+So this this antidifferentiation problem 
+
+32
+00:02:55,815 --> 00:03:01,251
+becomes what? 
+This is the antiderivative of du over u 
+
+33
+00:03:01,251 --> 00:03:06,211
+squared. 
+And I just gotta think, how do I, 
+
+34
+00:03:06,211 --> 00:03:13,190
+antidifferentiate u to the negative 
+second power? 
+
+35
+00:03:13,190 --> 00:03:19,895
+Well that, is by the power rule plus1 
+over u plus c. 
+
+36
+00:03:19,895 --> 00:03:27,794
+Alright, If I differentiate one over u, 
+that gives me negative 1 over u squared. 
+
+37
+00:03:27,794 --> 00:03:32,018
+Okay, but I don't want my answer to be in 
+terms of u, right, I want my answer to be 
+
+38
+00:03:32,018 --> 00:03:37,020
+in terms of x. 
+So this is negative cotangent x plus, 
+
+39
+00:03:37,020 --> 00:03:42,782
+what's 1 over u, well that's 1 over sine 
+x which, if I wanted to, I could write as 
+
+40
+00:03:42,782 --> 00:03:49,060
+cosecant x plus C. 
+Let's put it all together. 
+
+41
+00:03:49,060 --> 00:03:54,604
+So what I'm claiming here is that the 
+antiderivative of 1 over 1 plus cosine x 
+
+42
+00:03:54,604 --> 00:04:01,640
+dx is negative cotangent plus cosecant, 
+plus some constant. 
+
+43
+00:04:01,640 --> 00:04:08,140
+If you have it already, I hope you're 
+getting the idea that there's some really 
+
+44
+00:04:08,140 --> 00:04:16,073
+clever things that you can try to make 
+these substitutions work. 

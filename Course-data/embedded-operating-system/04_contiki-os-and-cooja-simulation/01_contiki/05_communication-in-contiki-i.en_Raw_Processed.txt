@@ -1,0 +1,170 @@
+sound 
+welcome, i glad to see you back 
+this lesson 
+in this video we will discuss 
+details contiki implements 
+network communication 
+end lesson you 
+understand structure 
+functioning contikis 
+communications stack 
+perhaps best question 
+to start this lecture is, 
+is communication in contiki 
+answering this question, 
+we going to talk communication 
+in wireless sensor networks 
+communication plays an essential role 
+in wireless sensor network system 
+basically, communication in a wireless 
+sensor network architecture 
+includes three parts 
+sensor nodes, a gateway, 
+backend system 
+sensors collect data 
+send to gateway wirelessly 
+depending network characteristics, 
+a particular communication 
+protocol is used 
+example, wifi 
+bluetooth used 
+sending data sensor 
+nodes to a getaway 
+data is forward via 
+internet reach cloud 
+finally endusers access data 
+use services offered cloud 
+in this lecture, 
+we will focus communication 
+between sensor nodes gateway 
+in words, communication 
+between devices using contiki 
+in contiki, 
+communication is implemented a service 
+therefore features 
+contiki services, 
+run time replacement 
+a result, allows to simultaneously 
+load multiple communication stacks 
+this helps to reduce latency 
+loading modules one one 
+in addition, this feature used 
+comparing different 
+communication protocols 
+to a better understanding 
+protocols, 
+we will explore in 
+depth later in this video 
+now, we going to focus 
+loosely coupled communication 
+stack in contiki 
+communication in contiki may 
+divided different services 
+communication stack 
+uses synchronous events 
+to communicate a program application 
+here, an interesting question is, 
+using synchronous events instead 
+asynchronous events, polling 
+answer is that is possible 
+to use a single buffer 
+communication processing, 
+since is necessary that synchronous 
+event handlers run to completion 
+this approach ensures that there is 
+need to copy data to intermediate buffers 
+bias drivers operate between 
+communication stack hardware 
+device drivers would in come in packets, 
+place 
+communication buffer call 
+upper layers communication service 
+communication service is awaken, 
+inspects packet in buffer 
+based content packet header, 
+service searches 
+application is 
+destination packet 
+finds exact application, 
+posts a synchronous event 
+to that application program 
+receiving event generated 
+communication stack, 
+application program 
+proceeds to process packet 
+in cases, is necessary 
+application program to replay 
+posting data to communication 
+stack returning control to 
+then, communication stack 
+takes control, places reply 
+in communication buffer 
+appends header to outgoing packet 
+finally, gives control 
+to device driver, so 
+that packet transmitted 
+understanding big picture 
+contikis communication stack, 
+lets examine 
+structure detail 
+there two types communication 
+stacks in contiki, micro ip rime 
+in this lesson, we will discuss rime 
+leave micro ip next video 
+is rime communication stack 
+rime is a lightweight communication 
+stack a layered design 
+complex communication 
+protocols reuse simpler ones 
+using rime there is rule 
+that compels an application 
+to go layers 
+stack in order to communicate 
+instead use primitive 
+protocol that requires 
+single hop 
+multihop communication primitives 
+fully supported in 
+contikis rime communication stack 
+however there is packet routing in 
+multihub communication primitives 
+this task is specified application 
+upper layer protocol 
+one benefits rime stack is that 
+users implement protocols, 
+belong to 
+rime top 
+so lets take a look 
+primitives available in set 
+communication abstractions in glide 
+first is singlehop broadcast 
+senders address is 
+added to outgoing packet 
+sending to 
+local area neighbors 
+we singlehop unicast, 
+is used to send packets 
+to a specific destination 
+reliable unicast is another 
+type singlehop unicast that 
+repeatedly sends a packet to a particular 
+destination while waiting 
+an acknowledgement packet 
+receiver 
+finally, multihop unicast 
+primitive is used sending packets 
+to an identified node in network 
+is located several hops away 
+in this case, a rooting function must 
+provided application 
+protocol to choose 
+next hop destination 
+this is end 
+lesson contiki communication 
+ground communication stack 
+now, i hope you a deeper 
+understanding way contikis 
+communication is structured 
+works 
+see you in next video 
+sound 

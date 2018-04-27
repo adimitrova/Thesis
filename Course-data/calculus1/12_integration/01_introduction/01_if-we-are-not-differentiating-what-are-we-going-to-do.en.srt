@@ -1,0 +1,201 @@
+1
+00:00:00,000 --> 00:00:04,958
+[MUSIC]
+
+2
+00:00:04,958 --> 00:00:07,836
+This new content marks a sudden departure
+from
+
+3
+00:00:07,836 --> 00:00:11,190
+what we've been doing in the course do
+far.
+
+4
+00:00:11,190 --> 00:00:13,480
+Practically everything that we've done in
+the course
+
+5
+00:00:13,480 --> 00:00:17,290
+up til now has involved derivatives in
+some form.
+
+6
+00:00:17,290 --> 00:00:21,160
+And this is now a sudden departure from
+that topic.
+
+7
+00:00:21,160 --> 00:00:23,100
+Now we're going to be looking at area.
+
+8
+00:00:24,700 --> 00:00:26,640
+You might be thinking that this means
+we're going to
+
+9
+00:00:26,640 --> 00:00:29,490
+be computing a bunch of areas, but it
+would
+
+10
+00:00:29,490 --> 00:00:32,680
+be more precise to say that this material
+is
+
+11
+00:00:32,680 --> 00:00:36,799
+about defining what the very idea of area
+even means.
+
+12
+00:00:37,800 --> 00:00:41,750
+Think way back, to when we were first
+learning about the derivative.
+
+13
+00:00:41,750 --> 00:00:43,560
+When we first learned about the
+derivative, you
+
+14
+00:00:43,560 --> 00:00:48,790
+might have thought that we were computing
+instantaneous velocity.
+
+15
+00:00:48,790 --> 00:00:51,120
+But it would have been better to think
+that we
+
+16
+00:00:51,120 --> 00:00:56,320
+were defining what the very notion of
+instantaneous velocity even means.
+
+17
+00:00:56,320 --> 00:00:56,710
+Right?
+
+18
+00:00:56,710 --> 00:00:59,960
+We needed all this machinery of limits to
+
+19
+00:00:59,960 --> 00:01:04,400
+even think about precisely what those
+concepts mean.
+
+20
+00:01:04,400 --> 00:01:06,250
+And the same is true for the material now.
+
+21
+00:01:07,270 --> 00:01:11,480
+Yes we're going to be computing areas, but
+really we're setting
+
+22
+00:01:11,480 --> 00:01:15,660
+up the machinery so that we can even
+define what area means.
+
+23
+00:01:17,150 --> 00:01:20,330
+Of course you might be wondering why is
+this in this course.
+
+24
+00:01:20,330 --> 00:01:22,110
+Well it turns out that this really does
+fit
+
+25
+00:01:22,110 --> 00:01:23,779
+into the narrative of the course as a
+whole.
+
+26
+00:01:24,880 --> 00:01:26,920
+We just saw anti differiantion.
+
+27
+00:01:26,920 --> 00:01:31,300
+And the next thing after looking at area
+
+28
+00:01:31,300 --> 00:01:33,760
+is going to be the fundamental theorem of
+calculus.
+
+29
+00:01:33,760 --> 00:01:36,870
+And what the fundamental theorem of
+calculus is going to do for us,
+
+30
+00:01:36,870 --> 00:01:42,535
+it's going to relate anti differentiation
+and this process of, of computing area.
+
+31
+00:01:42,535 --> 00:01:46,850
+Unfortunately we've got to wait a little
+bit longer to see that story.
+
+32
+00:01:46,850 --> 00:01:51,410
+And for the time being we really going to
+focus on just defining what area means,
+
+33
+00:01:51,410 --> 00:01:53,850
+we're going to review summation notion so
+that
+
+34
+00:01:53,850 --> 00:01:56,420
+we can write down these kinds of formulas.
+
+35
+00:01:56,420 --> 00:01:59,560
+But hang in there, the connection between
+this material
+
+36
+00:01:59,560 --> 00:02:01,920
+on area and all the stuff that we're doing
+
+37
+00:02:01,920 --> 00:02:06,330
+on differentiation is going to become
+crystal clear very soon,
+
+38
+00:02:06,330 --> 00:02:08,680
+once we get to the fundamental theorem of
+calculus.
+
+39
+00:02:08,680 --> 00:02:12,090
+Which it is arguably really the triumph of
+the whole course.
+
+40
+00:02:12,090 --> 00:02:13,775
+We've got a little bit longer to wait.
+
+41
+00:02:13,775 --> 00:02:16,271
+Good luck.
+
+42
+00:02:16,271 --> 00:02:24,479
+[MUSIC]
+
+43
+00:02:24,479 --> 00:02:27,589
+[BLANK_AUDIO]

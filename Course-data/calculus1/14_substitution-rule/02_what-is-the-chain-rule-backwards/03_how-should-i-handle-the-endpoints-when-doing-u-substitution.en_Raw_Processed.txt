@@ -1,0 +1,112 @@
+music 
+im mostly selling you idea 
+usubstitution, a way to find 
+antiderivatives 
+antidifferentiation is a means 
+to an end 
+real goal, this point in 
+course, is evaluating definite integrals 
+well, heres an example a definite 
+integral 
+lets evaluate integral x times x 
+squared plus to rd power dx 
+x goes to 
+we usubstitution 
+substitution that i want to make is u 
+equals x squared plus , in that case 
+du, whats derivative this, is x 
+dx 
+thats great cuz ive got a x dx 
+right there 
+so, this integration problem becomes 
+integral x goes to 
+is integrand 
+u cube du i know 
+antiderivative u cube is u to 
+forth i want to make sure that 
+i evaluate this x equals to 
+
+we replace u x squared plus 
+so this is x squared plus to th, 
+
+i want to evaluate 
+we plug in x equals , x equals 
+, take difference 
+okay, well i plug in , i get 
+squared plus to th 
+i plug in , i get squared 
+plus to th 
+whats squared plus 
+thats to th thats 
+to th, is 
+a quarter 
+and, i got think whats to 
+th 
+well thats times 
+thats minus 
+and, i combine a 
+single fraction, thats 
+that i simplify a bit 
+thats 
+we 
+i couldve finished this problem 
+in a slightly different equivalent 
+way 
+lets back up, ill get rid this, 
+lets suppose that i didnt go this 
+path i stopped here 
+problem is that endpoints in 
+terms x integrand is in 
+terms u 
+so im going to change 
+endpoints 
+so instead ill see that, that 
+integration problem is 
+integral u cubed du 
+x is equal to , u is 
+x is equal to , u is squared plus , 
+is 
+so if i change endpoint to in term 
+u, i dont to go back to x 
+so i know antiderivative, 
+u to th im evaluating 
+
+in term u taking 
+difference so i plug in , i 
+get to th i 
+plug in i get to th 
+to th is squared is 
+
+this is 
+minus a quarter and, like before, 
+this ends 
+lets summarize two different 
+approaches 
+first time i went this 
+problem, i found antiderivative in 
+terms x, alright 
+i wanted to integrate this i found an 
+antidirivitive i evaluated 
+b a took difference 
+in second method, instead finding 
+antidirivitive in terms x, i 
+change endpoints to make 
+endpoints in terms u 
+so, i took this original problem 
+making substitution u equals g 
+x, i rewrote endpoints to go 
+g a to g b in terms u 
+i found an antiderivative f 
+prime u du f u i evaluated 
+that g b g a took 
+difference 
+end im 
+calculation 
+in cases im calculating, you know, 
+f g b, f g b, im 
+subtracting f g a, f g a, 
+im setting slightly differently 
+in first case im finding 
+antiderivative in terms x, in 
+second case, im changing bounds 
+integral to in terms u 

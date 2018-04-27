@@ -1,0 +1,240 @@
+music people often this idea that 
+lhopitals rule is really great 
+im going to tell you you shouldnt 
+fall in love lhopitals rule 
+one thing, lhopitals rule often 
+leads to circular reasoning 
+lets go to blackboard take a 
+look 
+example, 
+heres a problem that you might 
+tempted to use lhopital 
+you know, in a limit x approaches zero 
+sine x x 
+now, you to check 
+well, lets take a look limit 
+numerator 
+limit sine x x approaches zero, 
+sine is continuous so that limit is 
+sine zero, is zero 
+numerators limit is zero 
+limit denominator 
+limit x x approaches zero is 
+zero 
+so, yeah 
+this is a zero zero indeterminate 
+form 
+so, we tried using lhopital 
+lhopital tells us that this limit is 
+equal to limit x approaches zero 
+derivative numerator, 
+is cosine x derivative 
+denominator, is one 
+now, this limit is quite a bit easier to 
+do, right 
+this is really limit cosin x 
+x approaches zero 
+cosine is continuous so this is 
+value cosine zero, is one 
+yeah, 
+i mean, limit sine x x x 
+approaches zero, 
+is, in fact, one 
+this looks good, 
+alright 
+the, question though is you 
+know that derivative sine x 
+cosine x 
+you needed to know that in order to apply 
+lhopital 
+you know derivative sine x 
+cosine x 
+well, lets think back 
+right 
+so, i know that derivative 
+sine x cosine x 
+well, taking a derivative is 
+thing a limit a difference 
+quotient 
+so, to calculate, say, derivative 
+sine zero, i take a limit like this 
+limit if h goes to zero sine h 
+sine h 
+sine zero is zero 
+so, calculating this limit, is 
+calculating derivative sine , 
+is really calculating 
+limit h goes to zero, 
+sine h, thats sign h h 
+now, happened 
+i wanted to calculate derivative 
+sine zero, to calculate 
+derivative sine zero, is really 
+calculating limit h goes 
+to zero sine h h 
+definition derivative 
+i going to use this to evaluate 
+limit sine x x using 
+lhopital, 
+right lhopital doesnt reduce a 
+limit problem to another limit 
+problem 
+reduces a limit problem to a 
+limit problem two derivative 
+problems, 
+right 
+to, to lhopital, you to able 
+to differentiate numerator 
+denominator 
+so, if youre going to use lhopital to 
+evaluate sine x x x goes to zero, 
+youre going to to differentiate 
+sine x 
+then, to differentiate sin x zero, 
+is youre trying to do, to, to 
+use lhopital, you to able to 
+evaluate this limit, limit sine h 
+h 
+you to able to limit 
+youre trying to already 
+circular reasoning 
+so, happened 
+i trying to calculate limit 
+sine x x x approaches zero 
+i used lhopital 
+lhopita told to differentiate sine x 
+then, to differentiate sine x, i 
+wouldve needed to able to evaluate 
+limit sine h h h goes to 
+zero, exact problem im trying to 
+solve 
+an example circular reasoning 
+theres things that go wrong 
+lhopital 
+one conditions lhopital is 
+that limit ratio 
+derivatives to exist 
+lets see an example that fails to 
+happen 
+heres an example 
+lets take a look limit x plus 
+sine x x x approaches infinity 
+try to use lhopital 
+so, i want to look limit 
+numerator 
+limit x plus sine x x 
+approaches infinity is infinity 
+limit denominator itself, 
+limit x x approaches infinity, 
+also infinity 
+this is an infinity infinity 
+indeterminate form 
+seems good 
+now, lhopitals tells that to 
+calculate this, i look 
+limit x approaches infinity 
+derivative numerator, is 
+one plus cosine x derivative 
+denominator, is one 
+now, whats limit one plus cosine 
+x x approaches infinity 
+well, limit one is one 
+whats limit cosine x x 
+approaches infinity, 
+right 
+cosine oscillates between 
+this limit doesnt exist 
+this limit doesnt exist 
+now, that mean that this limit 
+doesnt exist 
+i, i, i wrote equals here, remember, 
+im using lhopitals rule, 
+alright 
+lhopitals rule actually 
+say 
+says, that this limit is equal to 
+limit derivative 
+derivative, provided this limit exists 
+this limit doesnt exist in this 
+case 
+so, lhopital is silent to value 
+this limit 
+lets see if we actually compute that 
+limit way 
+alright 
+so, lets try to this limit 
+way 
+going to limit x plus 
+sine x x goes to infinity without 
+using lhopital 
+this is a limit fraction, we could 
+split fraction a limit x 
+goes to infinity x x plus sine x 
+x 
+now, thats a limit a sum, is 
+sum limits provided limits 
+exist 
+so, this is limit x goes to 
+infinity x x plus limit x 
+goes to infinity sine x x 
+now, whats limit x x x goes 
+to infinity 
+one 
+whats limit sine x x x 
+goes to infinity 
+well, sine x is always between 
+x here is going to infinity 
+i make x big i like 
+so, question is i make this close 
+to zero i like 
+yeah 
+making x large enough, a number 
+between x made close 
+to zero i like 
+so, this limit is zero 
+sound so, sum limits is one 
+sound thats limit sum 
+thats limit x plus sine x x 
+one x goes to infinity 
+this is true in spite fact 
+that lhopital failed us, right 
+we lhopitals in this problem, 
+i told to differentiate 
+numerator, divided derivative 
+denominator x goes to infinity, 
+that derivative didnt exist 
+oscillating between zero two 
+in that case, lhopital is 
+silent 
+lhopital requires that limit 
+ratio derivatives to exist, if 
+doesnt exist, lhopital doesnt say 
+anything 
+this limit exist to see 
+that requires some, algebraic 
+computation 
+so, we manage to evaluate that limit 
+limit one, thanks to 
+lhopital 
+limit ratio derivatives 
+didnt exist, 
+oscillating 
+we evaluated that limit algebraic 
+manipulation 
+dont get wrong 
+lhopital is awfully powerful 
+theres plenty situations you 
+want to use lhopital often, you 
+get away algebraic 
+manipulation 
+so, i encourage you, youre 
+limit problems, 
+dont forget that you 
+algebraically manipulate things 
+there might an easier way 
+bringing lhopital 
+use lhopital if you absolutely 
+to use lhopital 
+in words, dont fall in love 
+lhopital 
+music 

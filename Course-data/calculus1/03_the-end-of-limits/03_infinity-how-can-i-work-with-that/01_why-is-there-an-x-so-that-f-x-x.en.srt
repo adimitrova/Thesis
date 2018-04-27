@@ -1,0 +1,323 @@
+1
+00:00:00,000 --> 00:00:06,487
+[SOUND] Here's an application of the 
+intermediate value theorem I'm very fond 
+
+2
+00:00:06,487 --> 00:00:08,317
+of. 
+Here's how it goes. 
+
+3
+00:00:08,317 --> 00:00:14,222
+Suppose you've got a function f. 
+f is continuous in the closed interval 
+
+4
+00:00:14,222 --> 00:00:19,378
+between zero and one. 
+And whenever x is between zero and one, f 
+
+5
+00:00:19,378 --> 00:00:25,533
+of x is between zero and one. 
+So that's what you've got to suppose when 
+
+6
+00:00:25,533 --> 00:00:30,440
+you get out of this. 
+Then, there is a point x, x between zero 
+
+7
+00:00:30,440 --> 00:00:34,513
+and one, and f of x = x. 
+It's telling you that there exists an 
+
+8
+00:00:34,513 --> 00:00:37,051
+input. 
+So that if you apply f to that input 
+
+9
+00:00:37,051 --> 00:00:41,243
+value, you get the output which is the 
+same as the thing you plugged in. 
+
+10
+00:00:41,243 --> 00:00:45,670
+You call these things fixed points. 
+You imagine that f is moving around the 
+
+11
+00:00:45,670 --> 00:00:49,389
+points between zero and one, 
+and you're finding a point x which 
+
+12
+00:00:49,389 --> 00:00:53,049
+doesn't move a fixed point. 
+Why is something like this true? 
+
+13
+00:00:53,049 --> 00:00:55,963
+Let's see. 
+Let me use the Intermediate Value Theorem 
+
+14
+00:00:55,963 --> 00:01:00,090
+but I'm not going to apply the 
+Intermediate Value Theorem to f but I'm 
+
+15
+00:01:00,090 --> 00:01:03,610
+going to make up a new function. g(x) = 
+f(x) - x. 
+
+16
+00:01:03,610 --> 00:01:06,409
+What do I know about g? 
+g's continuous. 
+
+17
+00:01:06,409 --> 00:01:11,712
+f is continuous by assumption. 
+The identity function x is continuous and 
+
+18
+00:01:11,712 --> 00:01:15,469
+differences of continuous functions are 
+continuous. 
+
+19
+00:01:15,469 --> 00:01:19,667
+So, g is a continuous function and the 
+closed interval 01. 
+
+20
+00:01:19,667 --> 00:01:23,571
+I also know some of the values of g. 
+What's g of zero? 
+
+21
+00:01:23,571 --> 00:01:29,611
+Well, g(0) is by definition f(0) - 0. 
+f(0) is between zero and one. 
+
+22
+00:01:29,611 --> 00:01:33,147
+So I've got a number between zero and one 
+minus zero, 
+
+23
+00:01:33,147 --> 00:01:38,160
+that number's at least zero. 
+I also know something about g(1). 
+
+24
+00:01:38,160 --> 00:01:44,920
+g(1) is by definition f(1) - 1 f(1) is 
+between zero and one, it could be zero, 
+
+25
+00:01:44,920 --> 00:01:48,526
+could be one. 
+But, a number between zero and one minus 
+
+26
+00:01:48,526 --> 00:01:53,127
+one is less than or equal to zero. 
+What do I know altogether? 
+
+27
+00:01:53,127 --> 00:01:57,884
+I've got a continuous function g, its 
+value at zero is bigger than equal to 
+
+28
+00:01:57,884 --> 00:02:00,701
+zero. 
+Its value at one is less than equal to 
+
+29
+00:02:00,701 --> 00:02:03,455
+zero. 
+By the intermediate value theorem, this 
+
+30
+00:02:03,455 --> 00:02:10,059
+gives me a point x so that g(x) = 0. 
+Why do I care about finding a point x so 
+
+31
+00:02:10,059 --> 00:02:14,871
+that g(x) is equal to zero? 
+Well, if I take a look at what g(x) is 
+
+32
+00:02:14,871 --> 00:02:20,520
+equal to, g(x) is f(x) - x. 
+So, I found a point x so that f(x) - x is 
+
+33
+00:02:20,520 --> 00:02:24,565
+equal to zero. 
+I found a point x so that f(x) = x, I 
+
+34
+00:02:24,565 --> 00:02:32,624
+found the fixed point. 
+So, we've seen why this is true. 
+
+35
+00:02:32,624 --> 00:02:38,380
+Let'd try to apply this to a specific 
+example life f(x) equals cosine x. 
+
+36
+00:02:39,920 --> 00:02:44,755
+Now, here I've got a graph of cosine and 
+that the graph of y equals cosine x. 
+
+37
+00:02:44,755 --> 00:02:49,797
+Now, what do I know about cosine? 
+I know cosine's continuous and cosine of 
+
+38
+00:02:49,797 --> 00:02:54,148
+a number between zero and one is a number 
+between zero and one. 
+
+39
+00:02:54,148 --> 00:02:58,569
+So, our statement applies to it. 
+There's a fixed point for cosine. 
+
+40
+00:02:58,569 --> 00:03:02,920
+There's some value of x between zero and 
+one so cosine of x equals x. 
+
+41
+00:03:02,920 --> 00:03:05,960
+Let's see if we can find that on a 
+computer. 
+
+42
+00:03:07,740 --> 00:03:11,028
+Okay. 
+I've got cosine loaded up on to my 
+
+43
+00:03:11,028 --> 00:03:13,905
+computer. 
+Cosine of one is about 0.54. 
+
+44
+00:03:13,905 --> 00:03:19,083
+Let me decrease the input. 
+And I notice that cosine of 0.68 is 0.77. 
+
+45
+00:03:19,083 --> 00:03:22,782
+Here the input is smaller than the 
+output. 
+
+46
+00:03:22,782 --> 00:03:29,496
+Let me increase the input. 
+Now, notice what happened. 
+
+47
+00:03:29,496 --> 00:03:34,415
+Now the input is 0.74 but the output is 
+smaller than 0.74. 
+
+48
+00:03:34,415 --> 00:03:39,720
+Cosine of 0.74 is just 0.73. 
+Now, it decreased the input. 
+
+49
+00:03:39,720 --> 00:03:44,253
+Oh, the opposite thing happened. 
+Now the input is smaller than the output. 
+
+50
+00:03:44,253 --> 00:03:49,540
+Now, I'll increase the input. 
+I'll decrease the input. 
+
+51
+00:03:50,620 --> 00:03:55,663
+Increase the input. 
+And you can see that I, I can sort of 
+
+52
+00:03:55,663 --> 00:04:03,319
+zoom in or narrow in on the correct value 
+of of x so that cosine of x is equal to 
+
+53
+00:04:03,319 --> 00:04:11,145
+x. 
+Sees in the computer I found that this 
+
+54
+00:04:11,145 --> 00:04:19,844
+point here is at about 0.739. 
+So, without a number between zero and 
+
+55
+00:04:19,844 --> 00:04:24,525
+one, cosine of that number is itself. 
+It's a fixed point for cosine. 
+
+56
+00:04:24,525 --> 00:04:29,844
+These kinds of fixed point theorem 
+statements that assert the existence of 
+
+57
+00:04:29,844 --> 00:04:32,540
+fixed points, 
+they pervade mathematics. 
+
+58
+00:04:32,540 --> 00:04:36,583
+Here's another example. 
+I've got a map of Ohio right here. 
+
+59
+00:04:36,583 --> 00:04:39,916
+Let me apply a continuous function to 
+this map. 
+
+60
+00:04:39,916 --> 00:04:43,179
+[SOUND] I'm going to throw it down to the 
+ground, 
+
+61
+00:04:43,179 --> 00:04:46,300
+stomp on it. 
+And now let's take a look at it. 
+
+62
+00:04:48,120 --> 00:04:58,442
+[SOUND] The question is, is there a point 
+on the map which is exactly above its 
+
+63
+00:04:58,442 --> 00:05:05,498
+corresponding point in the ground? 
+And indeed there is. 
+
+64
+00:05:05,498 --> 00:05:11,378
+I'll use this pin to stab through that 
+point. 
+
+65
+00:05:11,378 --> 00:05:12,424
+[SOUND] 

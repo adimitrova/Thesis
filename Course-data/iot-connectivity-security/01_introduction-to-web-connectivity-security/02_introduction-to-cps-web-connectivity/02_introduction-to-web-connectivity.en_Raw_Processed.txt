@@ -1,0 +1,269 @@
+sound welcome back to video 
+lectures web connectivity 
+security in cyberphysical systems 
+in this lecture, well go 
+basics internet 
+web connectivity, including 
+background information internet 
+nuts bolts operation, 
+especially internet protocol suite 
+basic communication 
+protocol internet 
+layer design will discussed 
+lets start internet 
+a group connected 
+computers is a network 
+a group connected networks 
+a large scale became internet 
+one way understanding new 
+technology is to look origins, 
+developed 
+this is a technique well 
+also use in later videos 
+we learn different protocols 
+so to understand there is a huge 
+network connected computers, 
+lets look history 
+internet came 
+desire to a robust, 
+faulttolerant network computers 
+there two key takeaways here 
+first, network to robust 
+full tolerant, second, 
+computers 
+we see in modern internet 
+we a pocket base network 
+pocket take a different route 
+to destination 
+effect designed 
+computers 
+is that essentially we would 
+call lightweight power efficient 
+take example ethernet, designed 
+computers a time 
+power a requirement 
+is one power hungry 
+connectivity technologies 
+cyberphysical systems ones 
+that we will discuss in this course 
+we moving 
+an internet connected computers 
+to an internet connected devices 
+things 
+this requires new technologies 
+changes to current ones to suit 
+needs new breed systems 
+internet is network computers, 
+
+actually carries information 
+top this network 
+one ways to carry 
+display information this network, 
+here we mean internet, 
+is world wide web 
+world wide web is a way to organize 
+present information people 
+this is a common distinction that 
+many us generally get wrong 
+internet connectivity means becoming 
+a part this large worldwide network 
+web connectivity, hand, 
+means leveraging web 
+technologies to share 
+information this network 
+heart web 
+technologies hypertext, 
+hypertext transfer protocol 
+http, a web server, a browser 
+we need internet connectivity 
+web technologies to work, 
+therefore, we will talk 
+technologies that enable us to connect 
+cyberphysical systems to internet 
+technologies that enable us 
+to access share web 
+here is a short overview web 
+internet 
+internet enables existence 
+world wide web 
+world wide web facilitates interaction 
+information sharing internet 
+if internet is a highway, 
+web is moving cars 
+lets continue a bit analogy 
+internet a highway 
+web moving cars 
+there one 
+type cars moving highway 
+example, there buses, 
+trucks, vans, motor bikes 
+likewise, there is 
+web traffic internet 
+there is email, usenet, file transfer 
+protocol, peertopeer sharing, so 
+enables 
+to share network 
+technology that enables different 
+types traffic to share 
+go network is tcpip 
+transmission control 
+protocolinternet protocol, 
+commonly known 
+internet protocol suite 
+a protocol is a set rules methods 
+you think 
+grammar a spoken language 
+rules 
+methods facilitates a standard way 
+communicating interacting 
+tcpip protocol suite is 
+therefore a set standards 
+methods that allow different devices 
+systems to communicate internet 
+standard, doesnt 
+matter system, operating system, 
+application you 
+long say, 
+speak tcpip language, 
+communicate 
+others internet 
+tcpip is divided layers 
+simplicity understanding 
+there multiple technologies that 
+make tcpip, classification 
+layers makes easy to 
+comprehend this inherent diversity 
+also enables decoupling 
+one technology another 
+imagine a wine glass 
+a detachable base body 
+you could change base depending 
+surface youll using 
+if you need grip, you would use rigid base 
+while body would remain 
+if you want to taste 
+different kinds wine, 
+you change body top 
+in way tcpip layers 
+you go top to bottom, 
+you decide technology 
+to use layers, 
+technology that best suits needs 
+if you develop technology, 
+you place in appropriate 
+layers others to use 
+there four layers in tcpip model, 
+application, transport, 
+internet, link 
+we will discuss next 
+here is an overview 
+layers functions 
+we will discuss protocols 
+layers, 
+specifications in detail later 
+topmost layer is 
+application layer 
+if you designing 
+a protocol that allows 
+different applications to communicate, 
+will placed this layer 
+we talking specific 
+application software 
+methods that 
+application software will 
+use to communicate another 
+application software network 
+an example is one chat client sending 
+a message to another chat client 
+if clients use 
+chatting protocol xmpp, 
+doesnt matter designed chat 
+client platform is running 
+will able to send 
+receive messages 
+here, application 
+layer protocol is xmpp 
+layer beneath application 
+layer is transport layer 
+purpose is to establish hosttohost 
+communication one device to another 
+receives data application 
+layer, doesnt care this data is, 
+transmits data to another 
+process another host computer 
+imagine you three browsers, 
+chrome, firefox, internet explorer 
+first one you entered google, 
+second one you entered yahoo, 
+bing third one 
+in this case, you send three http requests 
+three separate applications 
+http is an application layer protocol 
+responses 
+requests appropriately 
+provided to application 
+chrome gets google page, 
+firefox gets yahoo page, 
+internet explorer gets bing page 
+now, send similar requests, 
+data didnt get mixed 
+
+transport layer, provides 
+data to application layer, 
+is responsible ensuring that 
+process receives intended 
+moreover, this layer is responsible 
+reliability, congestion control, 
+multiplexing 
+internet layer, is 
+next lower layer, source 
+destination addresses attached to 
+packets coming higher layers 
+this layer is responsible 
+addressing routing 
+also, a packet is received, 
+is internet layers 
+responsibility to forward to 
+appropriate transport layer protocol 
+link layer bottom 
+protocol stack specifies standards 
+methods that handle physical link 
+protocols reside local link, 
+meaning that limited to 
+scope local network 
+example, arp, 
+address resolution protocol, is 
+used to figure physical address, 
+that is media access control 
+mac address an internet 
+protocol ip address 
+this is computer knows 
+local device an ip packet 
+forwarded to 
+a distinction to make here is that you 
+need a mac address to send data in 
+a local network an ip address 
+to send data across networks 
+sending data across networks is 
+an internet layer operation, 
+sending data within local 
+network is a blink layer operation 
+tcpip link layer 
+doesnt assume anything 
+type physical medium 
+issues 
+assumes that an underlying 
+physical link exists 
+therefore, link layer represents 
+media access protocol, 
+including wireless protocols 
+wifi, gsm, bluetooth 
+here example protocols 
+layer 
+a recap, in this lesson, we looked 
+internet, world wide web, 
+basics tcpip model 
+in later videos, we will a 
+detailed look different layers 
+respective protocols 
+music 

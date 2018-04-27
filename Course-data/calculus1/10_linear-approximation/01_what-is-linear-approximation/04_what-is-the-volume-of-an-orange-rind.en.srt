@@ -1,0 +1,419 @@
+1
+00:00:00,012 --> 00:00:06,492
+[music] Here, I've got an orange.
+I'd like to measure say, the radius of the
+
+2
+00:00:06,492 --> 00:00:11,275
+orange, thinking of this orange as a
+perfect sphere.
+
+3
+00:00:11,275 --> 00:00:17,885
+One way to do this would be to measure,
+say, the circumference of the orange
+
+4
+00:00:17,885 --> 00:00:23,282
+around its equator.
+So here if I measure that it looks like
+
+5
+00:00:23,282 --> 00:00:29,798
+it's about 24 centimeters.
+So the circumference of the orange is 24
+
+6
+00:00:29,798 --> 00:00:34,460
+centimeters.
+What does that tell me about, say the
+
+7
+00:00:34,460 --> 00:00:39,727
+radius of the orange?
+Well that circumference Will be 2 pi times
+
+8
+00:00:39,727 --> 00:00:44,019
+the radius of the orange.
+So if I divide both sides by 2 pi.
+
+9
+00:00:44,019 --> 00:00:48,684
+I get that the radius of the orange is
+about 12 over pi centimeters.
+
+10
+00:00:48,684 --> 00:00:53,793
+How much rind is there on this orange?
+That could be formulated as a linear
+
+11
+00:00:53,793 --> 00:00:57,997
+approximation problem.
+Well let's fit this up./g So, I just
+
+12
+00:00:57,997 --> 00:01:02,554
+calculated the orange radius to be about
+12 over pi centimeters.
+
+13
+00:01:02,554 --> 00:01:05,378
+I want to figure out how thick the rind
+is.
+
+14
+00:01:05,378 --> 00:01:08,901
+Let me.
+Let me peel off a bit of the orange here.
+
+15
+00:01:08,901 --> 00:01:14,787
+Just want to measure how thick this is
+with, say my little ruler here and yeah,
+
+16
+00:01:14,787 --> 00:01:19,512
+maybe three millimeters.
+So, point three centimeters will be the
+
+17
+00:01:19,512 --> 00:01:23,547
+rind thickness.
+Now how does knowing the rind thickness
+
+18
+00:01:23,547 --> 00:01:28,817
+going to help me to calculate, at least
+approximate, the volume of the rind in
+
+19
+00:01:28,817 --> 00:01:33,302
+this whole orange.
+Well I know the volume of a sphere, which
+
+20
+00:01:33,302 --> 00:01:36,584
+by modeling the orange to be, is 4 3rds pi
+r q.
+
+21
+00:01:36,584 --> 00:01:42,046
+And the rind volume, is at least
+approximately how much the volume changes
+
+22
+00:01:42,046 --> 00:01:45,976
+when I take this formula, and replace r
+with r minus h.
+
+23
+00:01:45,976 --> 00:01:49,461
+Right?
+When I take that sphere and I make it just
+
+24
+00:01:49,461 --> 00:01:54,073
+a little bit smaller.
+That change in volume is the volume of the
+
+25
+00:01:54,073 --> 00:01:57,436
+rind.
+And to understand how wiggling the input
+
+26
+00:01:57,436 --> 00:02:01,054
+effects the output, I'm going to use the
+derivative.
+
+27
+00:02:01,054 --> 00:02:05,734
+The formula that I want to be
+differentiating here is this volume of a
+
+28
+00:02:05,734 --> 00:02:10,041
+sphere of radius r.
+Which is 4 thirds pi r cubed [NOISE]And if
+
+29
+00:02:10,041 --> 00:02:16,016
+I differentiate this with respect to r.
+The r cubed differentiates to 3r squared.
+
+30
+00:02:16,016 --> 00:02:21,090
+And the 3 in the denominator here will
+cancel this 3 by the power rule.
+
+31
+00:02:21,090 --> 00:02:27,254
+So the derivative will be 4 pi r squared.
+Now what I'm trying to approximate is the
+
+32
+00:02:27,254 --> 00:02:33,113
+rind volume which is really the difference
+between a sphere of radius r and a
+
+33
+00:02:33,113 --> 00:02:39,003
+slightly smaller sphere where I've shrunk
+down just past the rind, right.
+
+34
+00:02:39,003 --> 00:02:42,685
+That difference will be the volume of the
+rind.
+
+35
+00:02:42,685 --> 00:02:47,114
+And approximately this h times the
+derivitive of v at r.
+
+36
+00:02:47,115 --> 00:02:52,130
+Right, because this is asking how does the
+output change when the input goes from R
+
+37
+00:02:52,130 --> 00:02:55,448
+minus H to R.
+And it's approximately the input change
+
+38
+00:02:55,448 --> 00:02:58,861
+times the derivative.
+Now in this case what do I know?
+
+39
+00:02:58,861 --> 00:03:02,456
+The orange's radius is 12 over Pi, so I'll
+use that for R.
+
+40
+00:03:02,456 --> 00:03:07,262
+And the rind's thickness is point three
+centimeters so I'm going to use that for
+
+41
+00:03:07,262 --> 00:03:11,227
+H.
+So this is point three centimeters Times 4
+
+42
+00:03:11,227 --> 00:03:17,266
+pi, times this radius, which is 12 over pi
+centimeters squared.
+
+43
+00:03:17,266 --> 00:03:23,657
+So this is cubic centimeters.
+Well that's good because I'm trying to
+
+44
+00:03:23,657 --> 00:03:29,481
+calculate a volume.
+And I'll just keep calculating here.
+
+45
+00:03:29,481 --> 00:03:34,656
+So it's point 3 times 4 pi times 144 over
+pi squared.
+
+46
+00:03:34,656 --> 00:03:41,388
+Cubic centimeters.
+And 4 times 144 is 576 times .3, the pi
+
+47
+00:03:41,388 --> 00:03:47,945
+divided the pi squared is going to be a pi
+in the denominator.
+
+48
+00:03:47,945 --> 00:03:52,913
+So I've got .3 times 576 over pi Cubic
+centimeters.
+
+49
+00:03:52,913 --> 00:03:58,834
+That's about 55 cubic centimeters.
+So the volume of the rind is approximately
+
+50
+00:03:58,834 --> 00:04:03,869
+55 cubic centimeters.
+Now admittedly I could have calculated the
+
+51
+00:04:03,869 --> 00:04:09,133
+volume of the rind just by calculating the
+volume of the whole thing.
+
+52
+00:04:09,133 --> 00:04:13,716
+Calculating the volume of the whole thing
+with the radius reduced by h, and taking a
+
+53
+00:04:13,716 --> 00:04:16,563
+difference.
+But the neat thing here is that you can
+
+54
+00:04:16,563 --> 00:04:19,597
+approximate that quantity by using
+calculus, right?
+
+55
+00:04:19,597 --> 00:04:22,680
+By thinking about this linear
+approximation business.
+
+56
+00:04:22,680 --> 00:04:26,796
+I also want to see now how close the
+linear approximation was.
+
+57
+00:04:26,796 --> 00:04:31,886
+Alright, so I've taken my orange and
+peeled off all the rind, and I've taken
+
+58
+00:04:31,886 --> 00:04:37,380
+the rind and smooched it down into this
+ball, and I'll try to calculate the volume
+
+59
+00:04:37,380 --> 00:04:41,919
+now of this rind ball.
+I want to compute the volume of a rind,
+
+60
+00:04:41,919 --> 00:04:48,569
+and I made that rind ball here, let me Let
+me compute the circumference of this rind
+
+61
+00:04:48,569 --> 00:04:52,214
+ball.
+That's about 15 centimeters.
+
+62
+00:04:52,214 --> 00:04:59,632
+So the circumference of my ball of rind is
+about 15 centimeters, that means my rind
+
+63
+00:04:59,632 --> 00:05:03,868
+ball has a radius.
+15 over 2 pi centimeters.
+
+64
+00:05:03,868 --> 00:05:08,167
+And here, assuming my Rind ball is a
+perfect sphere.
+
+65
+00:05:08,167 --> 00:05:14,918
+This would be the volume of the Rind ball.
+But in here I gotta put the radius, which
+
+66
+00:05:14,918 --> 00:05:16,837
+is 15 over.
+2 pie.
+
+67
+00:05:16,837 --> 00:05:22,665
+So, 4 3rds pie the radius cubed, and
+that's about 57 cubic centimeters.
+
+68
+00:05:22,665 --> 00:05:29,205
+So, yeah, I mean, I actually took all the
+rind off the orange and the value that we
+
+69
+00:05:29,205 --> 00:05:35,937
+got is pretty close to what the linear
+approximation told us the volume of rind
+
+70
+00:05:35,937 --> 00:05:39,407
+should be.
+This perspective sheds some light on what
+
+71
+00:05:39,407 --> 00:05:42,998
+might otherwise be seen as just some
+random coincidence.
+
+72
+00:05:42,998 --> 00:05:47,792
+Now what you notice is that the volume of
+a sphere which is 4 3rds pi r cubed and
+
+73
+00:05:47,792 --> 00:05:51,043
+the surface area of a sphere which is 4 pi
+r squared.
+
+74
+00:05:51,043 --> 00:05:55,907
+These two formulas are related right.
+If I differentiate this volume formula
+
+75
+00:05:55,907 --> 00:05:59,142
+with respect to r, I get the surface area.
+Formula.
+
+76
+00:05:59,142 --> 00:06:03,658
+Again we're seeing that calculus isn't
+really about solving specific problems.
+
+77
+00:06:03,658 --> 00:06:06,835
+I don't care about the volume of the rind
+of this orange.
+
+78
+00:06:06,835 --> 00:06:09,536
+Right?
+If that was what calculus was good for,
+
+79
+00:06:09,536 --> 00:06:10,918
+who would care?
+Right.
+
+80
+00:06:10,918 --> 00:06:16,414
+What calculus is really good at Is
+providing a general framework and with
+
+81
+00:06:16,414 --> 00:06:22,835
+that general framework we can begin to see
+the patterns between different concepts.
+
+82
+00:06:22,835 --> 00:06:28,921
+Like this fact, the surface area of a
+sphere is the derivative of the volume of
+
+83
+00:06:28,921 --> 00:06:35,052
+a sphere with respect to the radius.
+That's not really a coincidence, right?
+
+84
+00:06:35,052 --> 00:06:40,547
+Calculus is providing an explanation for
+that supposed coincidence.

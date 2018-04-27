@@ -1,0 +1,255 @@
+so, in last lecture, we saw that, 
+even rather un, scary looking 
+environments 
+lets say that we had, slight non 
+convexities, even extended convex 
+obstacles 
+dynamic duo behaviors, go to goal 
+avoid obstacle, 
+longer enough to negotioate 
+environments 
+we saw that we really needed way 
+flowing a long boundary an 
+obstacle in order to able to get 
+around in world 
+today, i want to talk this 
+missing piece 
+missinig behavior is a wall 
+following behavior 
+i want to is really 
+introduce in next lecture 
+introduce in a systematic way 
+to induce mode youre trying to 
+avoid sliding avoid type zeno 
+so, here is question 
+you actually follow walls 
+i say walls i really mean 
+boundaries 
+boundaries around obstacles 
+so lets, lets start simple 
+here is, always, an obstacle i 
+a disk around where, this is 
+safety disk 
+well, avoid obstacle is going to tell me, 
+you know what, i want to move straight 
+away this this obstacle 
+well, i , direction i go 
+in, in order to maintain a constant 
+distance this obstacle well i 
+need to is, i need to flow, right, 
+along boundary this, this region 
+well, this means is that here, i 
+need to go in this direction 
+i really need to is take 
+direction, given to avoid 
+obstacle behavior, flip down, like 
+this 
+this is a negative pi , a 
+negative degree flip 
+so, thats i need to 
+i need to flip degrees, 
+like this 
+now, im going to call this fw, 
+followwall, followwall is now, 
+simply, like i said, a flip 
+degrees, this curious looking 
+matrix here is actually achieving 
+i may want to scale it, so i may 
+scaling thats making this longer 
+shorter, depending on, i dont know 
+whatever concerns you may 
+now, i point that, this matrix 
+here, i write a rotation matrix, 
+that corresponds to a pi 
+sorry, negative pi flip 
+so i actually write this alpha, 
+is scale, times rotation 
+matrix, that is, flip, times u, avoid 
+obstacle, that is ultimately 
+behavior that im, that im flipping 
+so, this tells that way to move 
+around this obstacle, is to simply take 
+avoid obstacle behavior, flip 
+thats simple that 
+so, there is a problem though 
+i actually flip in different 
+directions 
+i go like this, i also 
+go like that 
+so question ask course is 
+direction i go in, 
+question is i even 
+mathematically describe options 
+well, i have, we saw 
+was, we called u clockwise follow 
+wall, clockwise follow wall 
+corresponds to a negative pi flip 
+to avoid obstacle 
+a counter clockwise follow wall, 
+means follow in direction, 
+well that is simply a pi flip 
+void obstacle behavior 
+so if i introduce this thing that ive 
+already called rotation matrix, this 
+is simply an operation that this 
+flip vector 
+if i a vector here 
+v, i want to flip phi 
+this new thing here, is simply r of, 
+phi, theta 
+r theta times v 
+this is i get this new, this new 
+rotated vector 
+so rotation matrix is cosine theta 
+negative sine cosine 
+thats form this linear operator 
+thats flipping vectors certain angle 
+well weve already seen is that 
+clockwise followwall a negative pi 
+flip so this behavior is simply 
+equal to alpha times, this matrix times, 
+uao 
+counterclockwise, while i 
+write that in way, a 
+pi flip instead a negative pi 
+flip, gives following 
+expression 
+so, i actually very, clean 
+expressions i make 
+flip, 
+meaning i proceed along 
+boundary obstacle 
+this works even if obstacle is 
+a point, i really 
+i took a void obstacle, a void 
+obstacle behavior and, flipped 
+we dont know direction to go 
+
+so lets say that we this situation, 
+right 
+sound im going towards goal, 
+lets say im here, i 
+want to switch to a followwall behavior 
+direction to choose 
+entirely clear 
+right i, if robot sees whats 
+going around here, instance, 
+robot know world looks 
+like we havent built a map anything 
+so, you could either go clockwise, 
+in this case turned to 
+long way around, you go 
+counterclockwise, really 
+clear we make this choice 
+heres one thing one observe, is 
+that go to goal here is wants to move you 
+kind upwards a little bit 
+so maybe we let go to goal make 
+choice us 
+go to goal drive a little 
+bit in this direction, in that 
+direction 
+so thats idea we here at, that 
+there is obvious answer, there is 
+obvious right choice given 
+local information robot 
+robot doesnt know globally 
+world looks like 
+so given that we know locally whats 
+going may we lack this goal to 
+goal behavior 
+decide direction we go in 
+so lets, lets try to make this a little 
+bit mathematically precise, 
+means to let goal to goal behavior 
+decide 
+here, goal to goal, angle wrong 
+here 
+goal to goal wants to go in this 
+direction 
+right so here, goal to goal wants to 
+drive us 
+limit up, so may we take 
+followwall 
+so this would u clockwise 
+well, u counter clockwise u 
+followwall counter clockwise wants to go 
+
+note, that this angle is less pi 
+, this angle, absolute 
+value it, is greater pi 
+so we able to look this 
+angle to determine 
+we go, lucky us 
+theres a simple way checking 
+angles 
+if i two rectors v w i take 
+is called inner product 
+is simple v transposed to w 
+well thats equal to absolute values 
+of, the, length vectors times 
+cosine this angle in between 
+if this angle is less pi , 
+cosine is going to positive 
+if greater pi , 
+cosine is going to negative 
+so we need to 
+to look sine this thing, 
+to figure whether kind 
+pointing in right direction 
+so, here is a test 
+check go to goal inner product 
+follow wall clockwise 
+if thats positive, we go 
+clockwise 
+so, in this scenario, 
+again, pointing in this direction, 
+here is follow wall, so this, go to 
+go 
+here is u clockwise 
+this angle, is less pi , 
+means that, this situation is satisfied 
+here is u counterclockwise, so this 
+angle is greater pi 
+so, that means that condition 
+is satisfied 
+so we actually is a local 
+check 
+we compute direction that two 
+different followwall behaviors would 
+take us in 
+we take this inner product 
+gotogoal behavior, we check 
+sign 
+whoever comes a positive sign 
+is winner 
+thats direction we choose to go 
+in 
+now, there is a problem this 
+course 
+thats that if you remember 
+labyrinth, little maze here, 
+right 
+if im following wall, you know what, im 
+going to follow way around 
+i dont want to keep going 
+indefinitely around around, right 
+so im spiraling 
+point, if heres goal 
+i want to release go towards 
+goal 
+so one thing that we dont know yet is 
+we actually release 
+followwall behavior we stop 
+following walls start approaching 
+goals question is, you 
+know what, we avoid obstacle we 
+rotation matrix, that flips either 
+down, depending going 
+clockwise counterclockwise 
+i this little alpha there 
+is there natural systematic way 
+we think alpha 
+that is going to one one 
+things we will discuss in next, 
+next lecture 

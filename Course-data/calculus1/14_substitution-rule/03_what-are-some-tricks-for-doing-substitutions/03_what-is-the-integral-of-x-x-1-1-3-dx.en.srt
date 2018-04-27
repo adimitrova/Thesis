@@ -1,0 +1,183 @@
+1
+00:00:05,230 --> 00:00:09,262
+[MUSIC] Generally speaking, 
+anti-differentiating things with radicals 
+
+2
+00:00:09,262 --> 00:00:13,381
+is difficult. 
+For example, let's try to find an 
+
+3
+00:00:13,381 --> 00:00:21,390
+anti-derivative of, x over the cube root 
+of x plus 1 dx right? 
+
+4
+00:00:21,390 --> 00:00:26,195
+Let's try to anti-differentiate this. 
+Can I make a substitution to improve the 
+
+5
+00:00:26,195 --> 00:00:29,670
+integrand? 
+So what substitution do I want to make? 
+
+6
+00:00:29,670 --> 00:00:34,534
+Well, I really have some choices, I mean, 
+one thing I could do is I could make ux 
+
+7
+00:00:34,534 --> 00:00:41,252
+plus 1 and in that case, du is just dx. 
+And if u is x plus 1, then x is u minus 
+
+8
+00:00:41,252 --> 00:00:47,830
+1, and I can then rewrite this 
+anti-differentiation problem. 
+
+9
+00:00:47,830 --> 00:00:54,529
+instead this becomes the anti-derivative 
+of that x, but u minus 1 still cube root, 
+
+10
+00:00:54,529 --> 00:01:01,602
+but instead of x plus 1, it's now of u 
+and the dx becomes du. 
+
+11
+00:01:01,602 --> 00:01:06,265
+And I, I could actually do this, but I'm 
+not going to head down that path. 
+
+12
+00:01:06,265 --> 00:01:10,047
+Instead, I want to show you a trick by 
+which you can get rid of the radical all 
+
+13
+00:01:10,047 --> 00:01:15,588
+together. 
+So instead let's set u, just to grab the 
+
+14
+00:01:15,588 --> 00:01:22,693
+whole denominator. 
+So u will be the cube root of x plus 1 
+
+15
+00:01:22,693 --> 00:01:33,660
+and in that case, u cubed is x plus 1. 
+Or, in other words, x is u cubed minus 1. 
+
+16
+00:01:33,660 --> 00:01:40,580
+And that tells me what dx is. 
+In that case, dx is 3u squared du. 
+
+17
+00:01:41,840 --> 00:01:47,618
+Now I could make this substitution. 
+This transforms this integration problem 
+
+18
+00:01:47,618 --> 00:01:53,860
+to, the anti-derivative of x now becomes 
+u-cubed minus 1. 
+
+19
+00:01:53,860 --> 00:02:00,140
+The whole denominator just becomes u. 
+And then the dx here is now a 3u squared 
+
+20
+00:02:00,140 --> 00:02:06,650
+du, so I'll write 3u squared du. 
+And that's just a polynomial. 
+
+21
+00:02:06,650 --> 00:02:13,964
+So I'll simplify this a bit, this is the 
+anti-derivative of, what is this here, u 
+
+22
+00:02:13,964 --> 00:02:20,536
+cubed over u times 3u squared, that's 3u 
+to the 4th minus 1 over u times 3u 
+
+23
+00:02:20,536 --> 00:02:30,163
+squared that's minus 3u, du. 
+And this, this is just a polynomial, so I 
+
+24
+00:02:30,163 --> 00:02:39,069
+can anti-differentiate this very quickly. 
+This anti-derivative is 3 5ths u to the 
+
+25
+00:02:39,069 --> 00:02:48,855
+5th, minus 3 halves u squared plus C. 
+Now, we'll just replace u with what it 
+
+26
+00:02:48,855 --> 00:02:52,635
+equals in terms of x. 
+So u, remember, is the cube root of x 
+
+27
+00:02:52,635 --> 00:02:57,285
+plus 1, so putting that in here, I get 3 
+5ths, instead of u it's x plus 1 to the 1 
+
+28
+00:02:57,285 --> 00:03:04,592
+3rd to the 5th. 
+So to the 5 3rds power, minus 3 halves x 
+
+29
+00:03:04,592 --> 00:03:14,400
+plus 1 to the 1 3rd squared, which is to 
+the 2 3rds power plus C. 
+
+30
+00:03:14,400 --> 00:03:18,906
+To make it easy to talk about this 
+particular technique, it has a name. 
+
+31
+00:03:18,906 --> 00:03:22,990
+The rationalizing substitution. 
+The original problem had a cube root in 
+
+32
+00:03:22,990 --> 00:03:28,780
+it, but I made a substitution to get rid 
+of the radical, a rationalizing. 
+
+33
+00:03:28,780 --> 00:03:32,490
+A challenge when doing u substitutions is 
+that there really are multiple paths that 
+
+34
+00:03:32,490 --> 00:03:37,569
+you can take to the correct answer. 
+It's not even apparent how successful a 
+
+35
+00:03:37,569 --> 00:03:42,140
+particular substitution might be until 
+after you've started applying it, right? 
+
+36
+00:03:42,140 --> 00:03:45,440
+You have to take that first bite before 
+you realize whether or not you're eating 
+
+37
+00:03:45,440 --> 00:03:46,480
+food. 

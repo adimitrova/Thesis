@@ -1,0 +1,360 @@
+so, congratulations, that hard work 
+paid 
+least, congratulations if you 
+managed to hang in there this far 
+claiming that hard work paid 
+job in this module is to show that 
+indeed pay, going to 
+unleash newfound powers mobile 
+robots 
+this entire module is, dedicated to, 
+whats known navigation problem, 
+means you make a robot drive 
+around in a world populated obstacles 
+without slamming things, getting 
+safely to landmarks goal positions 
+so, in first lecture, going to 
+return to this idea behaviors 
+going to use control theory, 
+now, to describe whats actually going 
+
+i dont know if you remember 
+but, we actually talked behaviors 
+
+atomic primitive things 
+that robots 
+then, connecting together 
+we get overall navigation system 
+we probably know that behavior is 
+code a subsystem a 
+controller, connecting 
+together is code a hybrid system 
+so this is really we need to do, we 
+need to revisit behaviors in context 
+control failure 
+so first we need a model in fact 
+almost always pays to start simple 
+so going to start old friend 
+this point 
+so position robot is x, so x 
+is in r, i mean a plain 
+inaudible 
+im saying that i control that 
+velocity, this robots direction 
+to compare us, weve seen 
+differential drive robots 
+you cant really this 
+instead, you to control 
+translational velocities rotational 
+velocities 
+so, we think this really 
+purpose planning we want 
+robot to go 
+we to couple this to 
+actual dynamics 
+but, to start with, lets say that 
+x 
+is equal to u, well first 
+that look like in ax plus bu 
+paradigm 
+well a is equal to zero so this is a 
+matrix simply go to zero b matrix 
+is simply identity matrix 
+well we anything else we need 
+to see whether we actually 
+control this system we formed a 
+controllability matrix b ab 
+well, a is zero, so this term is zero 
+b is identity matrix, so this is 
+identity matrix 
+identity matrix is full rank 
+matrix anywhere come 
+so, clearly rank gamma is equal to 
+, way is dimension 
+system 
+so, we a completely controllable 
+system 
+we able to make system 
+we would like to 
+so going to start i call 
+dynamic duo 
+key behaviors that you 
+always need 
+matter robot is going to do, 
+you always need to able to go to a 
+goal location 
+a landmark, a waypoint 
+you always need to able to go to 
+somewhere, you need to able to 
+without slamming things 
+without either one two, 
+robot aint going to able to 
+you want to 
+so job is to design two 
+behaviors using weve already 
+learned 
+so, going to rather simply 
+going to actually simply say, you 
+know what, if robot is here, i 
+want to go in this direction, well, 
+dont i simply say that this is equal to 
+u, thats equal to x dot 
+so thats going to tell me, this is 
+direction in robot is actually 
+going to 
+going to moving using 
+handwriting pretty graphics 
+this is we going to 
+going to figure direction 
+in we want to move set u 
+equal to that desired direction 
+okay, 
+lets start gotogoal 
+this is robot is 
+lets say goal is located x 
+g 
+well, i want to go to goal, so 
+really clear i would like to go 
+i would like to go in this direction, 
+xgx is this vector, im going to 
+call e 
+so, dont i put ue, u equal 
+to constant k times z, 
+well lets see e dot in this case, 
+actually becomes 
+well, e dots is x gold dot, is , 
+minus x dot 
+x dot, well, thats equal to u 
+is equal to ke so edot becomes ke 
+well, thats kind good so if i e 
+dot is ke, this work, drive 
+error to zero 
+well, we know we to check 
+eigenvalues 
+so, if k is a scalar, long 
+this scalar is positive, fine 
+if we want, reason, matrix 
+k 
+we to pick a matrix k that 
+positive eigenvalues 
+so, if k is a scaler positive, we 
+know that system is asymptotically 
+inaudible stable 
+if we pick k a matrix 
+instance, could a diagonal 
+matrix, you know , a , say 
+seems silly, 
+this is a positive, definite matrix means 
+that eigen values positive 
+i a minus sign here so i need to 
+worry negative k in this 
+case eigen values would 
+negative 
+so, if you that i would go k 
+constant if you this you will 
+indeed drive error to means 
+that we solved go to go problem 
+there concerns, though in fact 
+theres one 
+a linear controller means that you a 
+bigger vector away you are, 
+means that youre going to go 
+faster towards goal 
+away you 
+doesnt, to honest, make 
+complete sense 
+so we do, is we should, in 
+practice, moderate this 
+to make, maybe game smaller, 
+far away 
+make game constant somehow 
+we dont want to go faster 
+far away 
+that doesnt quite make sense 
+you play around this 
+long k is positive actually 
+fine 
+going to implement 
+robot is this choice k 
+a k that makes norm u reach 
+vnot, so here is vnot youre 
+kind far away, going to 
+go faster you way, 
+you get closer to goal, 
+meaning arrow goes you 
+start slowing down, in fact, if you 
+try to a little creative in you 
+pick k, this k here is k that 
+corresponds to this plot 
+thats k that going to 
+looking at, you dont to 
+that 
+in fact, a lot robotics involves 
+clever parameter tuning tuning 
+weights 
+whole thing, point here, i want 
+to make is that you want to make sure 
+that you dont go faster youre 
+away that actually 
+doesnt make entirely sense 
+okay, we know to go, you to go to 
+goal 
+lets avoid obstacles 
+well, if i wanted to go towards 
+obstacle, i would simply pick xoxu, 
+scaled version that 
+well, i want to avoid obstacle 
+dont i flip thats 
+xxo, instead, so flipping means, im 
+going to avoid obstacle 
+in fact, thats going to 
+
+lets pick uke, k is a 
+positive constant, 
+e, now, is x obstacle minus x 
+well, if i that, i get e dot is ke, 
+is actually an unstable system 
+unstable in sense that 
+error is stabilized 
+cuz error is distance to 
+obstacle instead 
+avoiding obstacle 
+obstacle 
+a little scary to 
+purpose an unstable system in there 
+you will see we dont worry much 
+we need to make sure 
+that robot actually drive 
+to infinity would if we 
+unstable 
+thing that a little weird, so 
+this is if i use ukxx 
+is, that its, a rather 
+cautious system in that we seem to 
+avoiding obstacles that also behind 
+us even that doesnt entirely make sense 
+we also cared less obstacle 
+closer we get 
+absolutely makes sense, we 
+care closer we get 
+well, solution is again, make k 
+dependent e, actually 
+distances, so normal e 
+to aviod this overly cautious, 
+we actually going to switch between 
+behaviors, in fact, going 
+to is using something like a induced 
+mode, sliding mode to gracefully 
+combine goal to goal avoid obstacles 
+let point that 
+one clever thing instances is say 
+that you want to care to 
+obstacle u closer you get, so you want u 
+to bigger closer to the, 
+obstacle you get 
+so in this case this k that we 
+used, in fact this is that k that 
+im going to use to implement things but, 
+i want to point that you want 
+something that you dont care so much 
+you far away 
+you care a lot you close 
+reason i an epsilon here 
+is a small number is to make sure 
+that this thing doesnt go to infinity 
+normally is 
+things going to infinity is typically 
+that good an idea 
+okay so we know to build 
+individual control modes 
+we also saw that choice weights 
+matter 
+you aware, again, that there 
+isnt a right answer in to pick 
+weights, depending 
+application, you may to tweak 
+weights to make robot less 
+skittish cautious 
+structure still is there 
+whats missing, though first all, is 
+to couple this x dot is equal to u model 
+to actual robot dynamics 
+going to ignore that question 
+this module 
+devote last module course 
+to that question 
+we need to is make 
+transitions between goal to goal 
+avoid obstacles 
+thats topic next lecture 
+we conclude, though, lets 
+actually deploy 
+this dynamic duo old friend, tho 
+compare robots, to see would happen 
+in real life 
+so, weve seen, in theory, to 
+design this dynamic duo of, robot 
+controllers 
+in par, in particular, weve seen 
+key behaviors, goal to goal avoid 
+obstacles 
+and, now, lets actually deploy 
+real old friend, unknown 
+mobile robot 
+always, im joined sean pierre 
+delacroix here, will conduct 
+affairs 
+and, first going to see go to 
+gold behavior in action 
+
+we know is that this 
+behavior really is is looking 
+error between robot is, 
+right there, robot wants to 
+be, in this case this turquoise piece 
+tape 
+globally asymptotically 
+stabilizing this error in sense that 
+driving error to zeros 
+so, jp dont we see inaudible 
+make error go away 
+so, you see, robot is going 
+straight goal, error is 
+indeed, decaying to zero 
+this is you encode things like 
+getting to a point 
+you make error vanish 
+nice 
+thank you 
+so now, going to run act two 
+this drama 
+robots sole ambition in life is 
+driving things, things, in 
+this case, is going to 
+one thing thats going to slightly 
+different i in lecture, 
+is that i a point, meaning 
+a point in fact an obstacle 
+spread that robot is going 
+to avoid 
+in fact, going to is 
+going to first ignore everything 
+thats behind robot 
+doesnt care avoiding things that 
+behind 
+things in front it, going 
+to sum contributions 
+sensors going to care a little 
+bit things ahead 
+
+sight, so jp, lets take away 
+lets see happen here 
+so, here i 
+oh, right 
+nice 
+dont hit thank you 
+sound perfect 
+we a perfectly safe robot that is 
+driving professors 
+that i think we compute 
+thank you 

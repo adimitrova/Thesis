@@ -1,0 +1,169 @@
+so good, analytic one, 
+this is pretty straightforward 
+actually, you something 
+this in homeworks, well 
+so if we torque free motion, 
+weve assumed principal frame 
+three equations you 
+thing ive dropped l, 
+, , theres external torque 
+so this is a pure spin, you take an 
+object, you spin up, happens 
+in particular now, 
+we want to look an axisymmetric case 
+so here going to 
+assume this diagonal still 
+if we assume axisymmetric, 
+like a cylinder, rocket bodies 
+many spacecraft kind axisymmetry 
+to coming launch vehicle, 
+to to get atmosphere 
+so is a common shape assumption 
+we picked b, b to a transverse 
+b is axis symmetry 
+so i i to equal, 
+im calling it, right 
+two transverse axes 
+if you that, plug in, 
+last one that i minus i, 
+i minus i, thats going to go to 
+so immediately we an omega dot 
+whatever spin you give 
+axis symmetry, 
+that spin rate stays a flat line 
+doesnt change 
+two will actually change 
+function inertia 
+symmetry axis 
+transverse inertia, 
+course, initial conditions 
+so we two equations 
+two unknowns 
+this one falls omega dot, 
+that makes omega a constant 
+that means here omega is 
+simply initial omega 
+longer known, a known 
+quantity initial conditions 
+so, left omega , 
+omega weve got two first 
+order differential equations 
+we solve this 
+this is one cases youre 
+trying to solve things, 
+you try to get rid dots 
+easiest path is to get rid 
+dots is actually to add dots 
+that gives you an answer 
+that we find in end 
+if i differentiate this equation this 
+is shouldnt bold actually, unbold 
+take dots 
+inertia is a constant 
+omega , omega a constant, so theres 
+omega dot, omega could vary 
+you see omega depends 
+omega , if i go back a slide, 
+omega dot depends omega , 
+again, treating omega a constant 
+so if i differentiate , i get 
+an omega dot, depends omega 
+you plug that in 
+you end this equation, 
+thats omega double dot plus 
+something times omega equal to 
+engineers, like yes, 
+i knew thered a springmass 
+system somewhere, right 
+this is a typical springmass system 
+you know to find answers, 
+will give you typical sines 
+cosine results 
+so, x double dock kx you 
+solve that differential equation 
+thats boils to, 
+an axis symmetric case 
+you things omega , 
+gives you kind 
+a constant inertias a constant, 
+omega is a constant, so this 
+is nothing k in end, right 
+if you a springmass analogy 
+so axisymmetric cases, 
+easy to 
+then, i think in homework 
+you this 
+show that you remember to solve 
+simple first order differential equations 
+you plug in conditions, 
+come coefficients 
+this one here is called omega p 
+i rewrite it, so 
+to this 
+whats interesting here is is i is 
+example less 
+thats this kind stuff 
+inertia transverse this 
+pen is much bigger inertia 
+symmetry axis right 
+so in that case this is 
+a ratio less minus , 
+going to give you 
+omega is positive 
+thats going to give you 
+a negative omega p 
+we saw pole hold plus 
+momentum spheres 
+energye lipsoids if im a spin 
+near axis least inertia, 
+that i axis, so 
+wobbles there 
+we would orbiting in a negative sense, 
+that comes sine right here 
+if we i axis largest 
+inertia, so we a plate 
+think a big, flat plate basically 
+spinning, right, youre slightly 
+i is actually, so oproid body, 
+is bigger transverse inertia, 
+this becomes , 
+is still positive 
+thats there we saw curves 
+orbiting in a positive sense 
+this is classic 
+answer that you 
+a rigid body, torques, 
+axis symmetric 
+so we make that one assumption, 
+this is a classic result 
+make sure you derive this 
+this is pretty straightforward 
+here answers 
+if you integrate equations, you 
+would see, using differential 
+equations we talked, i omega dot plus 
+omega i omega equal to , in this case 
+you integrate this stuff, you would 
+get curves, show you yes, 
+predicted, i get a sine like curve 
+face shift, a cosine in cases 
+you get inaudible in omega 
+thats rates 
+if you attitude motion, 
+this is thing 
+im showing here angles 
+again, people, try to diverse 
+something nonmrp 
+well get to a lot later 
+so happens is, attitude 
+motion is difficult to predict 
+so torquefree motions, 
+parts that easy spin 
+parts this equation 
+we predict spin stability, we 
+dont necessarily pointing stability 
+thats a whole nother thing 
+well get to that 
+in threeaxis control 
+if you need spin stability, thats 
+kinds analysis really help 

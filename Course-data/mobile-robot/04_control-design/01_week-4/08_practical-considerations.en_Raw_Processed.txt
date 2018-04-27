@@ -1,0 +1,246 @@
+so, last lecture really satisfying 
+there, we finally understood 
+we control design using state 
+time, figure 
+state is everything works 
+thanks to this fantastic principle known, 
+known separation principle 
+so, tells us is that we 
+completely decouple a control 
+observer design, here, i a 
+rather important little parentheses that 
+says, in theory 
+now, there is a great american thinker 
+that figured that this in theory 
+is actually kind important 
+this is yogi berra, baseball player 
+presumably said, in theory, theory 
+practice in practice, 
+
+now, this is rather profound 
+implications fact that 
+theory tells us something, we 
+need to aware certain things 
+least 
+so, first thing we need to aware 
+is, controller is really 
+useful estimate, that 
+estimated state is close to actual 
+state, 
+meaning, that controller doesnt 
+really anything useful until 
+observer converged 
+so, we want to is want to make 
+sure that observer converges quickly 
+that means is that we want 
+observer to faster in turn means 
+that this eigenvalues that we 
+picking larger observer 
+controller 
+now, one thing we saw large 
+eigenvalues though, is that we get large 
+gains 
+so, in control side, this is kind 
+bad, that means that we 
+large actuation signals, means that 
+we saturate actuators 
+in controller side, im sorry, 
+observer side, thats big deal 
+observer is entirely done in 
+software 
+there is nothing thats going to 
+saturate, so we actually make 
+observer eigenvalues large without 
+to run issues like saturation 
+so practically, we need to is 
+pick eigenvalues typically in a 
+way that controller eigenvalues 
+all, first all, need to 
+negative real part, course 
+then, we want to is we want 
+to make observer eigenvalues bigger 
+that means that observer is 
+faster controller is 
+so, here is a completely made 
+eigenvalue selection 
+important thing here is that 
+slowest observer eigenvalue, really 
+dictates quickly observer 
+converges, is significantly faster 
+slowest controller eigenvalue 
+so, thats something that we typically 
+want building joint 
+observer control design structures 
+okay 
+said that, lets actually use this 
+to control a humanoid robot 
+this is aldebaran nao that 
+going to working on, in fact, 
+we control this thing joint 
+angles, meaning different angles 
+are, moving 
+luckily us, we actually 
+detailed models joint angles 
+in fact, a given joint, angular 
+acceleration is j times ki minus b 
+theta dot 
+things, well, physical 
+things 
+so, j is moment inertia, i is 
+input, alright, so i is actually equal to 
+u, here in this case 
+this is input to system 
+this is current replying 
+motor 
+well, k is a torque constant that 
+translates roughly currents 
+accelerations theres always a 
+friction coefficient, 
+viscous friction coefficient in 
+motors 
+now, luckily us you buy a robot 
+like this, someone already figured 
+physical parameters there 
+user manuals that describe 
+parameters 
+now, we need to put this state base 
+form first thing going to 
+do, always is say, well x is theta 
+x is theta dot, 
+alright 
+also going to say that we 
+match around this thing is angle 
+
+so, y is going to equal to theta 
+well, this choice, we get a linear 
+timeinvariance system that looks like 
+this 
+x dot is x bjx we 
+this b matrix is kj times u y 
+is , x is since pulling the, 
+the, orientation 
+now, one nice thing this system is 
+that is completely controllable 
+completely observable 
+so, we indeed learned in this 
+class applicable 
+okay so, lets that 
+last thing we want to though is we 
+actually dont want to hold stabilize 
+nao angles zero 
+we want to able to move around 
+so, we want to is, we actually 
+would like to track a reference angle 
+we would like the, angle joints to 
+something 
+so, im going to define a new variable e, 
+stands error 
+estimation error, 
+another error, is current angle 
+minus desired angle 
+second variable tossing 
+in angular velocity 
+i would like to drive e to zero 
+if i e, i theta 
+equal to theta desired, meaning, im 
+holding angle i would like 
+i theta dot equal to zero, 
+means im actually holding there 
+im moving 
+okay, so this is we would like to 
+
+okay, we need to write 
+dynamics new variable e 
+well, e dot, well, simply, axbu, 
+e dot is really, sound well, 
+theta dot minus theta desired dot 
+theta double dot, right this thing 
+is the, desired heading is 
+constant, so left is theta 
+dot, theta double dot, is 
+x dot, 
+right this is x dot so 
+we is we plug in equation x 
+dot we get this 
+now, we dont want to express this in 
+terms x 
+we want to express in terms e 
+we get if we plug in e is, we 
+get this expression instead 
+luckily us, a times this vector 
+is actually equal to zero 
+i encourage you to compute this so 
+that you trust done that, 
+we get is that e dot is equal to 
+aebu meaning we system 
+dynamics now, defined 
+this error, error is 
+current orientation angle joint 
+minus desired angle joint 
+so, this is dynamics caring 
+
+well, we to thing to 
+output 
+output is cx, well again, we replace 
+x e plus this vector 
+so, this is cec times this vector, 
+remember that c actually , 
+so, if i take , times that, comes 
+data desired 
+so, output is c times e plus theta 
+desired 
+now, this doesnt scare us one bit 
+we plug standard 
+controller observer design 
+methodology 
+so, u is k, e we dont know 
+e e hat, 
+is estimate e 
+e hat dot, 
+well, 
+standard predictor part 
+corrector part 
+corrector part is current 
+output minus output would 
+
+difference is i to keep 
+track this little extra theta desired 
+big deal 
+acts exactly way 
+so, this is control structure 
+instead talking it, 
+dont we move to see an actual 
+humanoid robot executing this controlled 
+strategy 
+so now, that we designed a, an 
+observer based state feedback controller 
+controlling joint angles this 
+humanoid robot, aldebaran nao, 
+ready to real 
+im here amy laviers a 
+graduate student georgia tech 
+done is made nao 
+move arms head, even 
+upper body, in a way that is 
+executing a friendly wave towards, 
+probably you, watching this right 
+
+and, whats happening is running 
+controller different 
+joints different desired angles to 
+get effect 
+so, amy, dont we take nao a 
+little spin there see 
+so, whats going here is that 
+sequentially running multiple desired 
+angles thats getting this 
+effect 
+in fact, dont we watch this 
+i think this is quite, quite 
+charming to honest 
+so, here we go 
+observerbased state feedback controlling 
+action 
+oh, thank you much, 
+amy 
+thank you 

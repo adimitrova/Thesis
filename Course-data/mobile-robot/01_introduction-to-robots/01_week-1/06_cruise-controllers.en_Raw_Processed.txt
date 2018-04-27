@@ -1,0 +1,224 @@
+so that we a way describing 
+dynamical systems differential 
+equations in continuous time 
+difference equations in, discrete time 
+lets, see if we actually use this, to 
+something interesting with, 
+robots and, lets start building a 
+cruise controller a, a car 
+the, cruise controller i mean 
+job is to make car drive 
+desired reference speed if you 
+recall, going to use r to describe 
+reference so someone you, in car, 
+set reference speed to, to 
+miles per hour, whatever you desire 
+now, we want to somehow understand we 
+model car so that we make 
+go reference speed well, like i 
+said last time, laws physics 
+ultimately will dictate objects in 
+world, like robots cars, behave 
+newtons second law says that force is 
+to mass acceleration now, 
+this is going to to start 
+theres nothing we 
+this is is now, is 
+state system we need to 
+somehow relate newtons second law to 
+state well, in this case, since 
+going to is try to make 
+velocity right thing, we say 
+that, lets say that velocity this, 
+car is state so x is going to 
+speed carrist is driving 
+acceleration a appear, this, a is 
+simply dv dt time derivative 
+velocity change in velocity 
+a function time so we get 
+that course is that we relate 
+velocity to acceleration 
+also going to to an input, 
+youre driving a car, input, if 
+youre dealing with, speeds rather 
+direction car is going is, 
+you press gas pedal brake 
+we going to rather cruder say, 
+you know somehow mapping 
+stepping gas brake onto a 
+force thats applied to car this 
+is done linear relationship, 
+we h coefficient c, is 
+an electric mechanical transmission 
+coefficient, im going to go a 
+limb say, we dont know this is 
+and, i control this sign cannot rely us 
+knowing c, going to know 
+exactly is but, lets least 
+now, go this, hope that 
+thats good enough to give us design 
+we want so we know that force is 
+c times u, mass time 
+acceleration right 
+so x dot, is dv, dt, 
+we there well, thats a 
+means that mass times 
+acceleration is mx dot is equal to 
+force, force is c times u so, 
+that tells directly that x dot is c 
+m times u so, this, this sweet heart 
+equation here is an equation that 
+describes input maps to 
+state system a differential 
+equation an equation that tells 
+us something choice input 
+affects system okay 
+this is, in fact, a rather good model 
+i want to show a little video i 
+involved in one the, darpa grand 
+challenges 
+this an urban challenge we 
+supposed to build selfdriving cars we 
+use almost exactly this model for, 
+car so i want to talk a little bit 
+one would this so here is 
+front, a spinning thing, thats a laser 
+scanner side here, is another 
+laser scanner sitting top a radar 
+we used to get 
+measurements we see 
+inside is instrumented car, 
+translated ultimately input voltages onto 
+mechanically things that push gas 
+pedal so this is we actually affected 
+coefficient now, 
+look this video car gets around 
+obstacles, gets bounds, 
+starts oscillating so, im showing 
+this a, i think car is 
+awesome but, b, there are, even 
+though we didnt crash things, we 
+oscillating a little bit so there is 
+something perfect this control 
+design see we get lane, 
+oscillating much if you look 
+steering wheel, see that this is a 
+little skittish thats another 
+indication that maybe control design 
+here wasnt perfect, velocity 
+controller based a model thats 
+similar to, to we wrote 
+heres another example obstacle 
+avoidance actually trying to 
+avoid another car, point is 
+that, this very, very, simple model 
+that we wrote is actually applicable 
+to real systems this is part 
+miracle abstractions, that youre that 
+youre able to get simple things that you 
+apply real now, i want to 
+point that we real well in this 
+competition to a point, 
+actually semifinals finals 
+so let show you happened 
+end this breaks heart to show you 
+im going to show to you anyway here 
+comes car sting racing 
+slowing down, slowing 
+ow drives straight a k rail, 
+is this concrete railing 
+happened that we got measurement 
+errors, a lot measurement errors 
+actually gps i wanted to 
+show you this outcome 
+regardless which, this 
+still a complicated system a 
+complicated robot, a car, model we 
+came simple, 
+point is that simple models a lot times 
+get you far so, lets see we 
+actually do, control design 
+here lets assume that we measure 
+directly velocity, record, recall 
+that state x is velocity 
+measurement output is we 
+called y, so y is actually directly equal 
+to x in this case, so we a way 
+measuring velocities you know 
+typically a, you a speedometer 
+in car so we know roughly 
+velocity is control signals 
+a function ry, r is 
+desired velocity y is actual 
+velocity and, im going to call this e, 
+stands error job, 
+control designers, is to make error 
+disappear, drive error to zero 
+so lets, we actual design 
+discuss a little bit 
+properties that a useful controller could 
+well property is that 
+controller overreact if 
+error is tiny, almost perfect in 
+terms velocity car, we 
+a large control signal 
+control signal 
+aggressive close to done, 
+like lets say that youre trying to 
+thread a, a thread a needle well, 
+youre really, really close you 
+shouldnt jam thread in there 
+you take nice slow 
+youre close so, overreactions thats 
+important, you start 
+overreacting, you start responding 
+quickly aggressively to measurement 
+noise, instance so, a small error 
+give a small control input u 
+jerky jerky, here 
+i mean that is that, shouldnt 
+vary rapidly time if 
+does, going to sitting in 
+this car cruise controller, 
+going a cup coffee 
+us and, cruise controller is 
+smacking us around over, 
+jerking, going to spill coffee 
+and, in fact auto pilots 
+airplanes, there limits 
+accep, acceptable accelerations that 
+directly related to cups coffees 
+standing the, tray tables in 
+aircraft so you be, 
+overreacting jerky 
+the, depend us knowing c 
+m so, m is mass car c is 
+this semimagical transmission 
+coefficient mass car is 
+changing depending luggage we 
+changing depending many 
+passengers we we to 
+redesign controller a new 
+person entered car we shouldnt 
+to weigh everyone enter much we 
+weigh to, to work in fact 
+elevators bounds many people 
+in elevators this is import, 
+related to fact that design 
+controllers that robust to variations 
+in mass across a certain spectrum 
+thing cars cruise controller 
+work matter many people 
+in car we dont want to know c 
+this means is that controller 
+allowed to depend exactly values 
+c m so properties, 
+high level properties that we to 
+insist control signal to so 
+said that, in next lecture 
+going to see we actually 
+take high level objectives turn 
+em actual controllers see 
+constitutes a good control design 
+conversely, would constitute a bad 
+control design 

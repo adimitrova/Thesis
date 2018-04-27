@@ -1,0 +1,74 @@
+music 
+we in course 
+well weve seen stuff 
+antidifferentation, alright 
+we learned to start a function, 
+
+find a function whose derivative is that 
+original function 
+weve also sudden change pace, 
+we looked integrals 
+we looked areas curves 
+now, i want to take 
+two seemingly unrelated topics connect 
+together 
+thats fundamental theorem 
+calculus is, is going to us 
+alright, fundamental theorem 
+calculus, tells us 
+that evaluating integrals really amounts 
+to finding antiderivatives 
+two seemingly unrelated concepts 
+differentiation, integration 
+really related 
+this is really key insight calculus 
+a whole 
+i mean think it, in sense 
+newton leibniz discover calculus 
+greek mathematics ideas right, 
+greek mathematicians 
+calculating areas curved objects 
+taking limits 
+i formulas areas circles 
+idea is slope, okay, predate 
+newton livenets 
+so, insight that, that means 
+that we credit newton leibniz 
+discovering calculus 
+really amounts to fundamental 
+theorem calculus 
+amounts to this idea that, 
+differentiation integration 
+somehow related 
+thinking systematically precisely, 
+
+a function changes you wiggle 
+input, in particular, thinking 
+a derivative accumulation 
+function 
+alright, able to see this, this 
+relationship between 
+evaluating a definite integral, 
+finding an ai derivative 
+i want to now, than, 
+show 
+you to calculate integrals, using 
+fundamental theorem calculus 
+that will a big thing too, 
+process computing 
+i hope, that youll understand 
+
+reasons why, fundamental theorem 
+calculus is true 
+so, i want to look fundamental 
+theorem 
+calculus a lot different 
+perspectives 
+alright, we come away this, 
+ability to compute, 
+also ability to really communicate 
+sort 
+an understanding, this absolutely 
+amazing theorem 
+music 
+blankaudio 

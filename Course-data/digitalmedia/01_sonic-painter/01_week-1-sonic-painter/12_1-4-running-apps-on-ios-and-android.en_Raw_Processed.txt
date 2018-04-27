@@ -1,0 +1,146 @@
+sound 
+okay, so one first things we 
+to learn to is to run applications 
+mobile devices 
+matt will already shown you 
+to run stuff android, marco will 
+shown you to run stuff 
+desktop 
+im going to show you you run 
+application, using code that 
+weve prepared you, in download 
+pack is off, is 
+coursera 
+so that you exactly code, 
+write code, run 
+three devices, specifically on, 
+ios device 
+now, crucially, way this 
+part this program, is running 
+iosspecific code 
+javascript 
+so, you finish making 
+application, you press go builds a 
+webpage specifically ios mobile 
+device 
+theres a couple little tricky things 
+that we need to get right first time 
+we it, im going to talk you 
+right 
+firstly, we start a 
+straightforward sketch 
+now, im going to use a sketch that 
+were, going to talk later 
+in lesson one, called sonic painter 
+this is a basic ill sketch 
+also runs desktop, also 
+runs android in exactly way 
+so, im going to start creating a 
+running version desktop, so you 
+see 
+to give you a, a reminder 
+that works 
+using javascript 
+so, im hovering 
+mouse, little bit that says 
+javascript 
+you click in top right, 
+righthand corner processing ide, 
+you see says java, andriod, 
+javascript, experimental 
+i dont really know experimental 
+means 
+going to try today 
+going to try javascript 
+version 
+you run it, you press this play 
+icon mark already shown you, 
+launches web browser 
+i think recommending you use 
+google chrome this 
+now, you able to hear, sound 
+see app 
+thats app going to look 
+later in detail 
+crucially, we need to know is 
+web address is 
+now, you start, you need to make 
+sure that youre wireless 
+network desktop ios 
+device 
+people this time 
+youre in house, youve got one 
+wireless network 
+you connect computer to that 
+wireless network you also connect 
+devices to network 
+you really need to that, 
+if you dont that, development 
+a bit tricky to get started 
+okay 
+so, i recommend you that first 
+if you havent done that, 
+so, next thing we need to know is, 
+ip address this desktop is, 
+desktop is actually serving 
+app moment 
+later in course, youll serving 
+app a web server, even 
+storing locally device 
+ill show you to that in a moment, 
+now, we really need to know 
+ip address 
+now, a windows machine you this 
+going to command line terminal 
+typing ip config, will give you 
+ip address advice 
+a macintosh device, we 
+thing 
+we go to a terminal 
+if i type ifconfig, gives a list, 
+you able to see that now, 
+gives a list looks like 
+ridiculous numbers 
+theres a number here, inet 
+, thats ip address 
+this machine this network 
+ive got an ipad here 
+im going to launch safari 
+im going to go to ip address 
+http 
+now, thats enough, we also need a 
+colon, port number 
+port number here is , i know 
+this seems like crazy garbage, 
+it, i promise you, is nearly 
+here you go, gone straight to 
+solid painter app 
+loaded in, sound, there 
+you go 
+running ios device 
+simple that 
+running network 
+really simple 
+now, i continue to edit that app 
+live refresh this page 
+so, i change an aspect it, go back 
+to code type something else in, 
+refresh page will 
+come 
+one final thing though is useful to 
+know, if you want to embed this 
+home screen whilest youre developing, 
+you hit this little sharing icon 
+choose add to home screen 
+if you that, itll actually make 
+a proper bundled app 
+well talking that later 
+towards end course 
+that, less, is you get 
+running ios device 
+i want to point that 
+template, weve prepared you, 
+is downloadable coursera site 
+that look identical a ios 
+device whether an ipad, an iphone 
+an iphone 

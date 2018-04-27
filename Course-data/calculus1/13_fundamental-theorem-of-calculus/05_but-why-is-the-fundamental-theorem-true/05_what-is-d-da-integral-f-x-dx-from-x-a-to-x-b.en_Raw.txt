@@ -1,0 +1,126 @@
+we've seen what happens when we 
+differentiate the accumulation function. 
+that's the fundamental theorem of 
+calculus. 
+if i take the derivative of the integral 
+from a to b of f of x dx, well what do i 
+get? 
+well, it's just f. 
+of b, right? 
+the rate of the change of the 
+accumulation function is the functions 
+value. 
+but, what would happen if i were to 
+differentiate with respect to the left 
+hand end point instead of with respect to 
+the right hand end point? 
+by which i mean. 
+what's the derivative with respect to a 
+of the integral from a to b of f of x dx. 
+right. 
+what happens if instead of diferentiating 
+with respect to the top end point, i'm 
+diferentiating with respect to the bottom 
+end point? 
+i'm asking how is this function as a 
+function of a changing? 
+let's think about the graph. 
+let's draw my coordinate axes. 
+and i'll draw some random looking 
+function. 
+and i'll pick some points a and b. 
+and the integral from a to b calculates 
+the area in here. 
+and i want to know how does that integral 
+change when i wiggle a? 
+i'm asking to differentiate the integral 
+with respect to this. 
+left-hand endpoint. 
+so let's wiggle the left-hand endpoint. 
+let's move it over a little bit to a plus 
+h. 
+i'm imagining h is very small. 
+alright, and i want to know, how does the 
+integral change? 
+well the quantity that calculates the 
+absolute change in the integral is this. 
+what's this thing here? 
+this is the integral from a plus h to b. 
+and this thing here is the integral from 
+a to b, so this difference is telling me 
+how the integral changes when i replace a 
+by a plus h. 
+now if you think about it, what this is 
+really calculating is, you know, related 
+to the integral from just a plus h, 
+right. 
+this integral is calculating this area, 
+and subtracting this larger area. 
+so the difference is really just this 
+area in here between a and a+h but it 
+comes with a negative sign because i'm 
+subtracting this smaller area and i'm 
+subtracting now this larger area. 
+so i've got this negative sign here. 
+now this region, if h is small enough, is 
+practically a rectangle, and it's 
+practically a rectangle of width h and 
+height let's say f of a. 
+so, that means that this difference is at 
+least approximately just h times the 
+function's value at a. 
+now how does that help? 
+remember what i'm trying to calculate. 
+i, i'm trying to differentiate the 
+interval from a to be with respect to a. 
+that means i'm trying to take the limit 
+of this difference quotient. 
+but the numerator here, we just saw, is 
+approximately, negative h times f of a. 
+and that means in the limit i expect to 
+get an answer of just negative f of a, 
+alright, these hs will cancel in the 
+limit, and that's exactly what i hope 
+for, right? 
+the derivitive of the integral from a to 
+b with respect to the left hand endpoint 
+a is negative f of a. 
+so i can summarize this. 
+so i can summarize this. 
+the derivative with respect to a of the 
+integral from a to b of f of x dx is 
+negative f of a. 
+this fact coheres with a certain 
+convention about integration. 
+the convention that we use is that if we 
+integrate from a to b. 
+the function f of x dx that's negative 
+the interval from b to a of f of x dx. 
+so if you integrate the wrong way, so to 
+speak, we want to count that as negative 
+area. 
+ >> now in light of this convention, what do 
+we know? 
+ >> so d da of the integral from a to b of f 
+of x dx is d da of this, negative the 
+integral from b to a of f of x dx. 
+but now this is the derivative of the top 
+end point which is just the usual 
+fundamental theorem of calculus. 
+so this is negative f of a. 
+so the upshot here is that 
+differentiating the integral from a to b, 
+with respect to the left hand or bottom 
+end point, is negative the function's 
+value. 
+and that make sense because if you 
+increase the left hand endpoint that 
+decreases the area. 
+alright, so it seems reasonable that a 
+negative sign should be popping up there. 
+and the cool thing is that, that fact is 
+cohering with a convention about 
+integration. 
+that compared to integrating the usual 
+way, if you integrate the wrong way you 
+introduce a negative sign. 

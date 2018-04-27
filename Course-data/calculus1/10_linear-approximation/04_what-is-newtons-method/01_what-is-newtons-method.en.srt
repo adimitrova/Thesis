@@ -1,0 +1,663 @@
+1
+00:00:00,012 --> 00:00:03,823
+[music].
+I often want to find approximate roots.
+
+2
+00:00:03,823 --> 00:00:08,780
+Well, here's the set up.
+I start with some nice function, f, nice
+
+3
+00:00:08,780 --> 00:00:13,982
+meaning differentiable.
+Maybe the derivative is continuous, a, a
+
+4
+00:00:13,982 --> 00:00:18,679
+reasonable function.
+And then I want to find some input, x, so
+
+5
+00:00:18,679 --> 00:00:23,044
+that the function evaluated at that input
+is equal to 0.
+
+6
+00:00:23,045 --> 00:00:26,501
+Now in practice, this is way too much to
+ask for.
+
+7
+00:00:26,501 --> 00:00:30,826
+I'm not really going to be able to find
+some particular input x.
+
+8
+00:00:30,826 --> 00:00:36,766
+I mean I might not even be able to write
+down that input in any reasonable sense.
+
+9
+00:00:36,766 --> 00:00:43,417
+But what I can ask for is I can find some
+x so that, f of x is very close to 0.
+
+10
+00:00:43,417 --> 00:00:49,093
+Right I mean, maybe I can't find it so
+that the output of the function is equal
+
+11
+00:00:49,093 --> 00:00:52,739
+to zero.
+But maybe I can find an input so that the
+
+12
+00:00:52,739 --> 00:00:56,555
+output there is really close to 0, really
+small.
+
+13
+00:00:56,555 --> 00:00:59,605
+If you think back, we've already done
+this.
+
+14
+00:00:59,605 --> 00:01:02,139
+Right.
+If you remember this video, where I use
+
+15
+00:01:02,139 --> 00:01:06,693
+the Intermediate Value Theorem, I was able
+to proximate a root of a function just by
+
+16
+00:01:06,693 --> 00:01:10,551
+interrogating the function, evaluating it
+at a handful of points.
+
+17
+00:01:10,552 --> 00:01:14,207
+And, there was that bisection trick.
+So in this example it looks like the
+
+18
+00:01:14,207 --> 00:01:18,793
+function evaluated that a is positive and
+the function evaluated b is negative.
+
+19
+00:01:18,793 --> 00:01:23,023
+This function looks like a reasonable nice
+function who's continuous so the
+
+20
+00:01:23,023 --> 00:01:27,828
+intermediate value theorem applies.
+And that mean in-between a and b, there's
+
+21
+00:01:27,828 --> 00:01:30,819
+some input, where the function's output is
+0.
+
+22
+00:01:30,819 --> 00:01:35,427
+I can cut this interval in half and if I
+look in the middle of interval the
+
+23
+00:01:35,427 --> 00:01:40,497
+function's output there is positive, and
+that means just in between these two
+
+24
+00:01:40,497 --> 00:01:44,778
+inputs there must be some input where the
+function's output is 0.
+
+25
+00:01:44,778 --> 00:01:49,088
+And then I could cut that in half again.
+And if I look at the input there, the
+
+26
+00:01:49,088 --> 00:01:53,685
+output of the function is negative.
+And that means in between these two inputs
+
+27
+00:01:53,685 --> 00:01:56,860
+there must be some input so the functions
+output is 0.
+
+28
+00:01:56,860 --> 00:02:01,376
+And then I could cut that in half again.
+And if I look there the functions output
+
+29
+00:02:01,376 --> 00:02:04,309
+is positive.
+So I've got a negative output Put in a
+
+30
+00:02:04,309 --> 00:02:09,137
+positive output, so in between, by the
+intermediate value theorem, there must be
+
+31
+00:02:09,137 --> 00:02:11,791
+some input where the function's output is
+0.
+
+32
+00:02:11,791 --> 00:02:16,067
+And so on and so forth, right?
+I'm getting closer and closer to the point
+
+33
+00:02:16,067 --> 00:02:20,682
+where the function output is actually
+equal to 0, at least I can approximate it
+
+34
+00:02:20,682 --> 00:02:24,216
+this way.
+The downside to this bisection method is
+
+35
+00:02:24,216 --> 00:02:29,882
+just speed, it takes a really long time.
+So a different method, called Newton's
+
+36
+00:02:29,882 --> 00:02:33,496
+method, is much faster than this bisection
+trick.
+
+37
+00:02:33,496 --> 00:02:36,706
+Well, this is faster when it actually
+works.
+
+38
+00:02:36,706 --> 00:02:40,719
+So what is Newton's method.
+What I'm trying to do is find the x
+
+39
+00:02:40,719 --> 00:02:45,001
+coordinate, where the graph of this
+function crosses the x-axis right.
+
+40
+00:02:45,001 --> 00:02:48,446
+I want to know an input so this function's
+output there is 0.
+
+41
+00:02:48,446 --> 00:02:53,336
+And instead of marching in from either
+side, as in intermediate value theorem,
+
+42
+00:02:53,336 --> 00:02:57,567
+Newton's method has us just start by
+making a potentially bad guess.
+
+43
+00:02:57,567 --> 00:03:00,704
+Here's my 1st guess.
+I'm going to call it x of 0.
+
+44
+00:03:00,704 --> 00:03:03,890
+And yeah, that's, that's not a very good
+guess.
+
+45
+00:03:03,890 --> 00:03:07,125
+Because the function's output is all the
+way up here.
+
+46
+00:03:07,125 --> 00:03:10,945
+Not that close to 0.
+But after I've made that first guess,
+
+47
+00:03:10,945 --> 00:03:14,685
+Newton tells us to draw the tangent line
+to the curve.
+
+48
+00:03:14,685 --> 00:03:20,282
+Through, through that point.
+So here's the tangent line to the curve
+
+49
+00:03:20,282 --> 00:03:24,975
+through that point.
+And then my next guess will be wherever
+
+50
+00:03:24,975 --> 00:03:30,792
+that tangent line crosses the x axis.
+So here would be my next guess x of 1.
+
+51
+00:03:30,792 --> 00:03:34,985
+And then I just hope that, that next guess
+is better.
+
+52
+00:03:34,985 --> 00:03:38,444
+But I could repeat the process.
+Right?
+
+53
+00:03:38,444 --> 00:03:43,763
+I could do the same game here.
+This point is closer to 0.
+
+54
+00:03:43,763 --> 00:03:50,279
+And then I could again draw another
+tangent line to the curve, through that
+
+55
+00:03:50,279 --> 00:03:53,612
+point.
+And then this next place where that
+
+56
+00:03:53,612 --> 00:03:58,375
+tangent line crosses the x axis that'll be
+x of 2, my next guess.
+
+57
+00:03:58,375 --> 00:04:04,051
+And at least from this picture it looks
+like that's an even better guess as to
+
+58
+00:04:04,051 --> 00:04:07,954
+where the graph of this function crosses
+the x axis.
+
+59
+00:04:07,954 --> 00:04:13,636
+So at least pictorily that's what Newton's
+method is telling us what to do.
+
+60
+00:04:13,637 --> 00:04:18,486
+Let's write down the steps.
+Well here is Newton's method in words.
+
+61
+00:04:18,486 --> 00:04:24,043
+You start with some initial guess x0.
+The next step is to draw the tangent line
+
+62
+00:04:24,043 --> 00:04:28,856
+through the point x0 f of x0, right.
+That's exactly what I did here.
+
+63
+00:04:28,856 --> 00:04:33,115
+I started with x0 and then I drew this 1st
+red Tangent line.
+
+64
+00:04:33,115 --> 00:04:36,896
+Now the next step is to figure out where
+that tangent line.
+
+65
+00:04:36,896 --> 00:04:40,893
+All right, the tangent line right there.
+Crosses the x-axis.
+
+66
+00:04:40,893 --> 00:04:43,907
+Now I'm going to use that for my new
+guess, x of 1.
+
+67
+00:04:43,907 --> 00:04:47,688
+Which I hope will be a better guess from
+my original guess.
+
+68
+00:04:47,688 --> 00:04:51,325
+All right, my original guess was pretty
+far away from 0.
+
+69
+00:04:51,325 --> 00:04:55,250
+X1, Which is where the tangent line here
+crosses the x-axis.
+
+70
+00:04:55,250 --> 00:05:00,114
+I'm hoping that's a better guess.
+And yeah, at least in this example it is.
+
+71
+00:05:00,114 --> 00:05:03,540
+And then I'm going to repeat the process.
+Right?
+
+72
+00:05:03,540 --> 00:05:09,306
+In this picture, once I had my new guess X
+of 1 I then drew the tangent line to the
+
+73
+00:05:09,306 --> 00:05:14,526
+graph at X 1 comma F of X 1 and that
+tangent line intesect the X access at a
+
+74
+00:05:14,526 --> 00:05:20,016
+point I'm calling X of 2 and I'm just
+hoping then that, that's even a better
+
+75
+00:05:20,016 --> 00:05:25,106
+guess as to the actual point where the
+graph crosses the X access.
+
+76
+00:05:25,106 --> 00:05:29,518
+All right, so that's this repeat process.
+And you can just keep repeating this as
+
+77
+00:05:29,518 --> 00:05:32,653
+long as you want.
+And, you know, hopefully you're getting
+
+78
+00:05:32,653 --> 00:05:36,986
+better and better guesses every time.
+As to exactly where that graph crosses the
+
+79
+00:05:36,986 --> 00:05:39,733
+x-axis.
+Those worked this all out with equations.
+
+80
+00:05:39,733 --> 00:05:42,223
+Right?
+I'm going to write down the equation in
+
+81
+00:05:42,223 --> 00:05:45,392
+the tangent line.
+And then solve for wherever that tangent
+
+82
+00:05:45,392 --> 00:05:49,342
+line crosses the x-axis.
+So I'm going to start by thinking about
+
+83
+00:05:49,342 --> 00:05:53,899
+this red line, right?
+This red line is the tangent line to the
+
+84
+00:05:53,899 --> 00:05:59,715
+orange graph at the point x0, f of x0.
+And as a tangent line, so it has slope the
+
+85
+00:05:59,715 --> 00:06:04,238
+derivative at x0.
+And here I've written down the point slope
+
+86
+00:06:04,238 --> 00:06:06,327
+form Of the red line.
+Right?
+
+87
+00:06:06,327 --> 00:06:12,430
+It's y minus the y coordinate on the line,
+which is fx0, is equal to the slope of the
+
+88
+00:06:12,430 --> 00:06:17,961
+line which is the derivative add x 0.
+Times x minus the x coordinate on the
+
+89
+00:06:17,961 --> 00:06:21,592
+line, which is x0.
+Now, Newton's method tells me that I
+
+90
+00:06:21,592 --> 00:06:26,344
+should use that linear approximation to
+the graph, figure out where the linear
+
+91
+00:06:26,344 --> 00:06:31,168
+approximation crosses the x axis and just
+hope that's a better approximation to
+
+92
+00:06:31,168 --> 00:06:34,351
+where the orange curve actually crosses
+the x axis.
+
+93
+00:06:34,351 --> 00:06:40,076
+So to do that, I'm going to set y equals 0
+and I'm going to solve for x.
+
+94
+00:06:40,076 --> 00:06:43,864
+Right.
+And that'll tell me where the red line
+
+95
+00:06:43,864 --> 00:06:48,123
+crosses the x axis, if I solve this
+equation for x.
+
+96
+00:06:48,124 --> 00:06:51,977
+Well, I can expand out, this side.
+Right?
+
+97
+00:06:51,977 --> 00:07:00,303
+And, the right-hand side of this equation
+is f prime, x 0 times x minus f prime x0
+
+98
+00:07:00,303 --> 00:07:05,312
+times x0.
+I'm going to add f prime x0 times x0 to
+
+99
+00:07:05,312 --> 00:07:11,057
+both sides.
+So the equation becomes f prime x0 times
+
+100
+00:07:11,057 --> 00:07:16,681
+x0 minus f of x 0 is equal to f prime x 0
+times x, right?
+
+101
+00:07:16,681 --> 00:07:21,697
+I just added f prime of x 0 times x 0 to
+both sides.
+
+102
+00:07:21,697 --> 00:07:24,634
+And 0 here went away.
+Right?
+
+103
+00:07:24,634 --> 00:07:31,260
+So f prime x 0 times x 0 minus f of x 0 is
+equal to this f prime x 0 times x.
+
+104
+00:07:31,260 --> 00:07:37,338
+Now assuming that the derivative not equal
+to 0 at this point I'm going to divide
+
+105
+00:07:37,338 --> 00:07:42,270
+both sides by f prime x 0.
+We're going to divide this side by f prime
+
+106
+00:07:42,270 --> 00:07:47,001
+f 0, I just get x0.
+0 minus f of x0 divided by f prime x0, so
+
+107
+00:07:47,001 --> 00:07:51,748
+that's this left-hand side divided by f
+prime of x0.
+
+108
+00:07:51,748 --> 00:07:58,495
+The f prime x0 here cancelled, and the f
+x0 divided by f prime of x0 is what I got
+
+109
+00:07:58,495 --> 00:08:02,403
+here.
+And I'm dividing both sides by f prime of
+
+110
+00:08:02,403 --> 00:08:08,038
+x0, so this side is just x.
+So the x coordinate where this red line
+
+111
+00:08:08,038 --> 00:08:12,767
+crosses the x axis is this.
+And I'm going to call this my new
+
+112
+00:08:12,767 --> 00:08:18,694
+hopefully improved guess, x sub 1.
+With this equation in hand, I can now
+
+113
+00:08:18,694 --> 00:08:25,005
+write down the step by step process for
+Newtons method just using a formula.
+
+114
+00:08:25,005 --> 00:08:29,523
+Here's the step by step process.
+I start with some initial guess x sub 0,
+
+115
+00:08:29,523 --> 00:08:34,473
+and then I'm drawing that tangent line to
+the graph x 0 x of f 0, looking where that
+
+116
+00:08:34,473 --> 00:08:38,205
+tangent line crosses the x axis to get my
+new guess, right?
+
+117
+00:08:38,206 --> 00:08:42,433
+And this is the formula we just computed.
+X1, my new guess, is X 0 minus the
+
+118
+00:08:42,433 --> 00:08:46,135
+functions value there divided by the
+functions derived there.
+
+119
+00:08:46,135 --> 00:08:49,257
+And with that new guess, I can then play
+the same game.
+
+120
+00:08:49,257 --> 00:08:52,344
+Drawing the tangent line to the graph at
+X1, F of X1.
+
+121
+00:08:52,345 --> 00:08:56,998
+Figure out where that tangent line crosses
+the x-axis, to get a newer guess x of 2.
+
+122
+00:08:56,998 --> 00:09:00,829
+Same formula works for that.
+It's the old guess minus the function at
+
+123
+00:09:00,829 --> 00:09:05,118
+the old guess divided by the derivative at
+the old guess, to get my new guess.
+
+124
+00:09:05,118 --> 00:09:08,310
+And I can just keep playing this game over
+and over again.
+
+125
+00:09:08,310 --> 00:09:13,244
+Hoping that each generation brings me
+closer To a place where the function's
+
+126
+00:09:13,244 --> 00:09:16,916
+value is in fact 0.
+Let's just summarize the formula.
+
+127
+00:09:16,916 --> 00:09:22,277
+So in summering I could say that my new
+guess which I'll call x of n plus 1, is my
+
+128
+00:09:22,277 --> 00:09:27,802
+old guess minus the function's value of my
+old guess divided by the function's
+
+129
+00:09:27,802 --> 00:09:32,596
+derivative at my old guess.
+And I can just keep repeating this over
+
+130
+00:09:32,596 --> 00:09:37,897
+and over again.
+When this works, all right, when Newton's
+
+131
+00:09:37,897 --> 00:09:45,989
+method actually succeeds, it works really
+well and it zooms in on that root really
+
+132
+00:09:45,989 --> 00:09:50,872
+quickly.
+The problem is that I can't promise you
+
+133
+00:09:50,872 --> 00:09:55,100
+that Newton's method will actually work.

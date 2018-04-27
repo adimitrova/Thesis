@@ -1,0 +1,168 @@
+[music]
+hello.
+welcome back to the course
+on web connectivity and
+security in cyber physical systems.
+this lesson starts a module on web
+solutions for embedded systems.
+in this video lecture,
+we will walk you through web servers
+that are inherently designed for
+low power embedded systems.
+we call them embeddable web servers.
+but first of all, what is a web server?
+if you have been following
+the lessons in this course,
+you might remember that in an earlier
+lecture we talked about the key
+technologies that enable
+the world wide web.
+these technologies are html,
+http and webservers.
+http has been discuss in
+detail in other lessons.
+today, we will look into web servers.
+the protocol http works
+on a client server model.
+a client sends a request to a server and
+the server responds.
+therefore, web servers
+are applications that accept, read and
+respond to the http requests from clients.
+one of the principles of a web server is
+that it's always responds to a request.
+the response can be some information that
+the user requested or an error message.
+but the server will respond.
+what if the server is too
+busy to fulfill a request?
+then it will send an error
+message with a status code
+503 indicating that it's temporarily busy.
+the next question you might have is,
+okay, i now know that i have to request
+a web server, but
+how do i identify and access one.
+this is what urls are for.
+url stands for
+uniform resource locator and
+as the name suggests, it is used
+to identify resources on the web.
+on the screen is an example url.
+it has three parts.
+the first is the protocol,
+in our case, it is http.
+the second is the ip address of the
+machine where the web server is running.
+and the third is the location
+of the resource or
+file that we want to
+access on that machine.
+so at the very least, a web server should
+be able to understand http and urls.
+next, we will look into web servers
+designed for lightweight use.
+when you are on your computer and you want
+to access the web, you open a browser and
+type the url of the web server
+that you want to access.
+similarly, if you want
+your embedded device or
+sensor to access the web,
+you don't need a web server.
+all you need is a small client that
+can send and receive http requests.
+simple enough.
+but what if someone else on the web wants
+to access your embedded device or sensor?
+then you will need a web server.
+remember, web servers comes
+in all sizes and shapes.
+from resource heavy ones
+like apache to light-weight
+ones like [inaudible]
+and nginx.
+but we are looking for web servers that
+will run on devices with a few megabytes,
+even kilobytes, of ram and
+with very limited processing power.
+web servers that are small enough that
+you can execute them as part of your
+standard application code.
+we will look into two of these small,
+lightweight web servers,
+smews and mongoose.
+smews stands for smart and
+mobile embedded web server.
+it is developed by researchers
+from lille 1 university in france.
+it can run on devices with as
+low as 200 bytes of ram and
+8 kilobytes of flash memory.
+it supports multiple connections and
+doesn't require any operating system
+to be installed in the system.
+it has its own tcp/ip stack.
+this web server comes as a very
+compact and complete package.
+mongoose is another embeddable web server.
+it's open source and
+free for non-commercial use.
+mongoose is more advanced and
+also heavier than smews.
+the list of features that mongoose
+supports is on the screen.
+it's constantly being developed and
+more features are being added.
+we have tested an implementation of
+mongoose in our lab and it was able to
+handle up to 2,000 clients and 1 million
+request in total on our test set up.
+to show you how to use an embeddable
+web server in your application,
+we will use mongoose.
+let's look at an example scenario.
+imagine you have a temperature
+sensor whose value
+you would like to access via your browser.
+we will not go into too much detail but
+we'll only explore the basic
+functions that we need to implement
+the scenario we just defined.
+first of all, include the mongoose
+header file into your c program.
+next we will use a function
+from the mongoose api or
+application programming interface, that
+enables us to handle incoming requests.
+in this function, we will specify
+what happens when a user access
+a specific url or
+uniform resource locator.
+if you look at the line number 10,
+we have defined that if the access uri or
+uniform resource identifier is /temp,
+the program should take three actions.
+call a function to check the temperature,
+send
+the temperature back and
+close the connection.
+the last step is to build the main
+function and call the web server.
+how that is done is shown on the screen.
+and that's it.
+in three simple functions you
+can make your applications or
+devices respond to http requests.
+now as a last step in this example,
+if you go to any browser and type the url
+in the form shown on the screen,
+you will get the temperature as text.
+to summarize.
+in this lesson,
+we learned about basics of web servers and
+looked at an example
+web server application.
+in the next lecture, we will look at web
+services and their dominant technologies.
+[sound]

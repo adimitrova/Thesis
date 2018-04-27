@@ -1,0 +1,613 @@
+where we have a slender rod
+that's falling to the ground.
+so basically, think of this rod.
+you sign in this up on
+a frictionless surface.
+think of an ice rink, a very slick ice
+rink and he's standing it up and for
+some reason this is perturbed.
+there's no friction force here
+holding your lower end in place.
+so once you slide off you're
+just going to slide out.
+so it's basically just going to
+fall down and slide down like this.
+that's what's going to happen.
+and what we're going to try to find
+here are our equations of motion.
+and we're going to use these very
+principles, super particle theorem,
+hl equal to l.
+the inertia tenser definitions and so
+forth to derive all the right quantities.
+so i'm giving you here from a material
+statics book you can find easily
+if you have a slender rod then the inertia
+about it's center of mass is mass over 12.
+l squared, l's length of the rod.
+so slender means we're
+ignoring the other dimensions.
+it's just a homogeneous, very,
+very thin mass distribution, right.
+so that's what you get there.
+so we're going, okay, so we have that.
+now let's look at the angular momentum.
+if we want to write hc, the angle
+momentum above the center of mass,
+we needed the inertia tensor times
+the angular velocity of this stuff.
+and you can see,
+i've got a body fixed point,
+a body fixed frame, e,
+that i'm defining here.
+so el, e theta, where is e3 pointing?
+let me just make sure you're
+looking at the picture, right.
+into the board or out of the board?
+>> into.
+>> into the board, right?
+el, e theta, e3,
+third finger points into the board,
+that's where it's pointing, okay?
+so the angular velocity
+as we're tilting in 1d,
+it's going to be theta dot about e3,
+right.
+so that's what this part right here,
+those two terms,
+that's omega of e relative to n for
+this body.
+now i need the inertia tensor about this
+one, so let's just write that one out.
+you've seen the matrix notations,
+i want to make sure that you
+get all this stuff right.
+so if we have this in the e frame,
+it's a principle frame,
+you will have i1, i2, i3.
+and, let's just ignore this.
+e relative to n, theta dot e3.
+what does theta dot e3 look
+like as a 3 by 1 matrix?
+0, 0, theta dot, right.
+and yes, you have these other inertias.
+we said, it's a slender rod so
+there are some terms about that.
+but in the end,
+this matrix times this matrix is
+just going to give me 0,
+0, i3 theta dot, right?
+in different components,
+which is equivalent to
+that i3 theta dot e3.
+and in this problem i3 is
+the n over 12 l squared.
+that's the inertia about that,
+the third axis that we have, in and
+out of the board.
+all right, we didn't need
+the inertias about the long axis or
+anything else like that.
+that's where, so when you've,
+this is something you want to practice.
+once it clicks,
+you go how was this ever confusing?
+but you want to be able to go from
+the inertia stuff to this quick other
+formulations especially
+with the plane of rotation.
+it should always give
+you equivalent results.
+so good, so that's how we get this part.
+we have to angle momentum about c.
+now to get equations of motion,
+one way we often do with rotational
+side is we use euler's equation,
+which means h dot = l and taking moments
+about center of mass, h dot = l holds.
+and i need to have l
+above the center of mass.
+so let's see what do we have here?
+what torch is being applied?
+the only torch that's being
+applied here is this normal force,
+somethings holding that tip from
+sliding beneath the i surface, right?
+so the i is still pushing up.
+it's just not pushing laterally.
+so it's giving it lateral stability, but
+it is holding that point in place,
+all right?
+why does gravity's acting on this?
+why doesn't gravity cause any torques?
+>> ax on the center of mass.
+>> right, gravity ax on the center of
+mass and therefore the moment on for
+the gravity force.
+that's when you apply it,
+it would actually vanish.
+very good, okay.
+so, we need the moment arm.
+what is the point of force relative to the
+center of mass then that's this vector.
+so, this length is l, so
+if going from here to here is minus
+l over 2 in the el direction, right?
+back to week one,
+vectors are distances times direction.
+the distance is el over 2.
+the direction is minus el hat.
+that's the moment arm
+crossed with the force,
+which is the normal force on the surface,
+right?
+and you now have an el crossed in n2.
+well you're going to have to map one
+into the other and that's what you get,
+a sign term in here in terms of e3.
+so we can write this out.
+so good, we're looking for
+equations of motion for theta, but
+all of a sudden we have to
+introduce an extra unknown.
+we don't know what this
+force is on the surface.
+so we know right away h equal
+to l is not going to be enough.
+you can't have two
+unknowns in one equation.
+people try, they try really hard,
+it just doesn't work.
+so we'll need additional equations.
+let's first wrap this up,
+we have h, we have l,
+now the derivative of this h, inertial
+derivative has to be equal to this l.
+well e3, this is a rotating frame but
+what can you say about e3?
+is that a rotating axis or
+a fixed heading axis?
+it's fixed, actually, right.
+it's the other two that are rotating.
+so e3 is actually n1,
+it's the same thing as minus n3.
+and n3's definitely an inertial frame so
+that's why taken the intertial
+derivative of this, i don't have
+to treat e3 as a rotating axis.
+it's actually a fixed axis.
+so this inertia is fixed.
+i'm not changing the mass
+distribution of the rod.
+the only thing that varies is theta.
+so you very quickly get the inertia
+times theta double dot.
+and here i've dropped e3.
+because in the end,
+everything's along the e3 axis.
+so it gives me my one thing.
+so h dot equal to l.
+i brought l over to the left hand side.
+and that's how that comes in.
+so this is one equation.
+i'm looking for always second
+order differential equations for
+equations of motion.
+and so acceleration, that's my theta
+double dot acceleration equation.
+but it have an extra unknown.
+so h dot equal to l was not enough,
+what else do we have?
+people.
+>> super particle theorem or energy?
+energy here is pretty smart
+because there's no friction.
+>> yeah, energy doesn't typically
+help quite in these equations of
+motion typically.
+the principles we use is either h = l,
+there's different points we could use.
+we've used for now the point c.
+what was the other point
+we could have used?
+an inertia point that
+was another approach.
+and you can try h equal to l about center
+of mass or about the inertial point and
+they can give you different information.
+and that might be a way
+to get a second equation.
+but what we're going to do here is
+actually use newton's equation.
+basically, super particle theorem, right?
+that said, well whatever the sum
+of the external forces is,
+mass times the inertial
+acceleration to center of mass,
+has to be equal to that force, right?
+so if we do that,
+the center of mass location,
+i'm just going to call this coordinate y,
+you can see here.
+so y doubled up in two because its own
+center of mass is only moving in n2
+direction.
+that makes it easy,
+it's an inertial direction.
+take it twice derivative it's just
+y doubly ny doubled up in two.
+that's my big m times rc
+double dot that we have to
+review the particle theorem, right.
+now that has to be equal to the sum of
+the forces acting on the system, and
+this system only has two forces.
+there is a force on the surface that's
+pushing back against the pen tip,
+keeping it just in place.
+and there's gravity acting on the slot and
+that's why we're falling.
+otherwise, if you have slippery
+surface on the space station and
+without any other human slip.
+so with gravity +n it's
+in the n2 direction and
+ng is in the -n2 direction so
+this gives you your differential equation.
+but you look at this and go, i can see
+brian already going wait a minute.
+we get an end that's good but
+now we introduce a y.
+we just seem to be chasing our tail here.
+every time we have an equation
+we have an extra unknown.
+so now we have two equations and three
+unknowns we're not making any progress.
+and brian's absolutely right,
+so what are we missing?
+we need an extra equation.
+are y and theta independent?
+spencer, are those two independent
+coordinates of the dynamical system?
+or another question is, this dynamical
+system has how many degrees of freedom?
+>> one.
+>> one, right,
+there's only one degree of freedom.
+there's only one angle, right.
+now with that angle, we can prescribe
+what that height has to be.
+so there must be a geometric relationship
+between the y coordinate and
+the theta coordinates, right.
+because you have y and theta, this didn't
+turn it into a two degree freedom problem.
+it's still a one degree
+of freedom problem.
+so what is the relationship?
+and that's what we do here.
+it's very simple, this line would be l
+over 2 cosine, that gets you to heighth y.
+that's what i have here, all right.
+so if i have theta, i know y.
+and now here, i need theta double dot,
+that means you simply take 2 times
+derivative of this y expression,
+chain rule of this cosine, so you get
+some sines and cosines and other stuff.
+but that's how your y double
+dots relate to your thetas.
+theta dots and theta double dots, right.
+so those are not, we had two kinematic
+variables that was convenient.
+this y was very convenient
+when writing f = ma.
+but in the end,
+we have to pick one of them and
+write everything in terms
+of one of the coordinates.
+so if you do this, you plug this in here.
+you can now,
+actually this depends on y and
+n, this depends on y and theta,
+i can now write n in terms of theta.
+so i get rid of one of the variables, y.
+and now the last step is this,
+this has to go back up in here and
+now we can write our
+equations of motion for
+this slender rod falling in place,
+slipping down like this.
+looks a little bit more complicated.
+it's amazing how life gets complicated
+quickly, even with simple examples.
+now with this differential equation,
+is this a linear differential equation or
+a non-linear differential equation?
+non-linear.
+there's sines,
+cosines of the states, right?
+there's even theta dot squares, sine
+squared of stuff, definitely not linear.
+so who thinks they can quickly
+solve this differential equation?
+darn, i always hope somebody raises their
+hand because then i want to talk to you
+about a phd program.
+because i can't solve this.
+maybe a mathematician can solve this.
+but it's tricky, right?
+so how do we solve this?
+well, we go back to integration, right?
+you put this in state space form.
+x1 is equal to theta.
+x2 is equal to theta dot.
+then you get your sets of equations.
+you can integrate.
+so numerically, no problem.
+but analytically, this can be a challenge.
+and very often in these problems
+we want to have at least
+integration of one time.
+that means, i'm looking for the
+relationship between positions and rates.
+and it happens, you've done this,
+high school physics problems.
+bouncing balls,
+perfectly elastic bouncing ball, right?
+the total energy has to be preserved.
+it's a conservative system.
+so therefore, we have our
+potential energy of the ball, and
+we have the kinetic energy.
+and as you're up,
+you have a lot of potential energy.
+no kinetic energy.
+let go, it trades potential energy for
+kinetic energies, but
+the sum has to be the same.
+potential energy always
+depends on position.
+never rates.
+kinetic energy, you see the definition.
+it's always ex dots, theta dots,
+it's all the rate of the coordinates.
+so if you're looking for a relationship,
+and one of the homeworks asks you for
+this in part b in particularly,
+what's the relationship
+between some states and rates?
+your first step shouldn't necessarily be
+to try to integrate this equation once.
+that might be quite hard.
+the trick is you're going to look for
+is the system conservative, and
+if yes,
+now we can look at the energy balance.
+so people was talking
+earlier about energy,
+this is typically where i use energy
+systems and i can come up with directly
+in analytic, at this angle what
+is my rate going to have to be?
+it's good conservative.
+now in this system there's
+no lateral friction.
+there's nothing doing work on the system
+it's just a conservative one.
+and this point here is not doing work
+because this point is not moving
+up and down.
+work is typically force
+times distance moved and
+this point is not moving
+in this direction.
+so this force end also.
+this system is conservative.
+and we can use conservation.
+so this part should hopefully be boring.
+very simple, mgh, right?
+or this case, y,
+we have it as in terms of the angle theta.
+i know what the potential
+energy is of this rod.
+i need the total mass of this rod,
+the moment arm,
+the height of the surface, i've got that.
+the kinetic energy,
+now remember how do i get this?
+kinetic energy, like momentum, i can break
+up as the kinetic energy of the center of
+mass plus the kinetic energy
+about the center of mass.
+for weird complicated tumbling things like
+this i really recommend that approach.
+sometimes there are shortcuts with
+other stuff that you can quickly do but
+this is a way that's very rigorous, you
+won't double count terms all of a sudden.
+so the kinetic energy,
+all the center of mass is mass
+over 2 times the only
+velocity we'll have is y dot.
+and we know how to relate
+y dot to theta dot right,
+by using that earlier geometry
+expression and differentiating.
+and then here is the moment
+over 2 times theta dot squared.
+that's the one-half omega
+transpose i omega but
+put back into everything's about e3.
+and it all simplifies down to
+the simple scalar equation.
+so we've got that.
+so you plug in that kinematic
+relation between y dot and
+theta theta dot simplify.
+this is what you end up with.
+so you do something very similar
+in the homework to this.
+so now we have kinetic energy and
+potential energy and
+if you sum the two up, i'm seeing
+initially this rod is standing up,
+and yes, something has to disturb it but
+the disturb it's been
+treating us infinitesimal.
+so the total energy is basically
+just the initial potential.
+and then something turns it ever so
+slightly and it will start to slip, right?
+and so the initial one is this.
+and then we want to look at what is
+the relationship at a later time so now
+we know at a later time we plug in this
+plus this has to always be equal to this.
+this is the total energy system.
+so no matter how far you slipped
+of whatever angle you're at,
+i can come up with a relationship.
+and in fact, solve for the theta
+dot which we do here analytically.
+so energy's become very powerful
+expressions that we can use in these
+systems to actually predict some great
+relationships to states as well.
+if you looked at the prior
+differential equations,
+i would challenge anybody
+to just glance at this.
+and then predict that this is how
+states and rates have to relate.
+it's not intuitive,
+that's why we have these principles,
+these mathematical processes
+in there in place, to do that.
+so anyway that kind of wraps that one up.
+any questions on this example?
+so when you solve this equations,
+and there's a few in the homework,
+if you want to look for h dot equal to l,
+but apply it about points that make sense.
+either center of mass,
+that's often a very good place to start.
+or you might find that
+inertial point as well.
+and that might,
+both of those equations might give
+you all the information you need.
+the other one that we have is
+f = m a of the center of mass,
+that's the super particle theorem.
+between the combinations of that you
+should always get all the states,
+everything that you need.
+if you have multiple kinematic states,
+it's only one degree of freedom look for
+the geometric relationship.
+how does theta relate to y or z or
+whatever you introduced, all right?
+and if the statement is somehow
+relates states to rates
+immediately think energies.
+look for the system most likely
+to system is conservative.
+and that allows you to exploit
+conservation of energy in some way and
+come up with these relationships, okay?
+good, so that's good stop, not,
+well for that topic that ends there.
+we've got two minutes, that's good.
+well let's do a quick thought experiment.
+so now what we'll move next
+into is torque free motion.
+daniel already mentioned earlier that if
+its torque free motion certain special
+things happen.
+and in fact,
+spacecraft once deployed from a rocket,
+the initial stage is always
+tumbling in one way or a manner.
+and then you have to recover,
+maybe we use magnetic torque bars or
+we use thrusters or
+reaction wheels, or something.
+and we want to go positive.
+or these all these different challenges.
+and even otherwise, you don't have
+a situation typically where you're
+continuously controlling attitude
+because you just run out of resources,
+even with reaction that
+only use electrical energy.
+it's a lot of effort.
+you try to exploit as much you
+can the natural dynamics, and
+the natural dynamics is no torque,
+it's just there.
+so can we come up with
+spacecraft that spin?
+and people do that quite often.
+they spin stabilize a single rigid body.
+or we'll be looking at dual spinners that
+means we have multiple parts that spin,
+but without any feedback.
+and then multiple parts that's basically
+a stepping stone into reaction wheels,
+momentum exchange devices,
+which we'll derive afterwards and
+stay up there as well.
+so that's kind of the motivation for why
+do we want to look at torque free motions?
+really a classic problem, even with three
+axis control these days you still want to
+understand the different modes.
+why are some motions stable?
+why are some motion unstable?
+and one of the equilibria spin conditions.
+and if i put it in a particular spin,
+will it just stay there or
+will it wobble out of that spin and
+go and get in the way?
+and one way we can investigate that
+ends up being angular momentum.
+the angular momentum vector h of a rigid
+body, we know if it's torque-free, h dot
+has to be equal to 0 which immediately
+gives us a constraint equation.
+but this first cut at it though
+is very complicated because
+if i do everything in the inertia frame,
+i will get three components.
+they all have to ce zero.
+that's great but your momentum in
+the body frame, if i have a principal
+coordinate frame, is simply i 1 omega 1,
+i 2 omega 2, i 3 omega 3, right?
+we mentioned principal coordinate frame
+that inertia tension that's just diagonal.
+so it becomes a very simple product.
+h is equal to i omega.
+but then we have to map this
+into the inertial frame.
+and here i'm using [inaudible] in
+terms of three to one euler angles.
+and immediately,
+you get all these relationships.
+but you can see there's tons of sines and
+cosines and omegas and
+everything varies with time.
+and true, that's a constraint, but
+it's very had to wrap your brain around
+that and get some analytic insight.
+so next time when we start off
+we're going to start here and
+i'm going to show you a different approach
+which leads to the pole hold methods.
+those of you who have taken 3200 have
+seen a little of this stuff already.
+but it's a classic approach in
+how we can discuss stability, but
+we'll take it all a step
+further then from that as well.

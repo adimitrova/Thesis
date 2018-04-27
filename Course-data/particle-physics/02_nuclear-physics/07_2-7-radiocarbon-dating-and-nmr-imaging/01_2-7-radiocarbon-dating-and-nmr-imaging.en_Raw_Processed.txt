@@ -1,0 +1,207 @@
+music 
+in this second module, we in 
+process discussing nuclear physics, 
+we turn to a few examples 
+applications 
+in this seventh video, 
+we will briefly discuss two applications, 
+radiocarbon dating 
+imaging nuclear magnetic resonance 
+watching this video you will able 
+to describe one determines age 
+organic substances based 
+contents c 
+to describe principles imaging 
+using nuclear magnetic resonance 
+one important applications 
+natural radioactivity is dating 
+organic materials is 
+called radiocarbon method 
+this works to several thousand years 
+relatively good accuracy 
+an example is controversial 
+dating turin linen, 
+believe to show an imprint 
+body jesus death 
+is shown in this image behind 
+now, let us examine this 
+method dates organic materials 
+atmosphere contains a lot 
+stable n c, 
+play an important role 
+play in organic processes 
+atmosphere is constantly hit cosmic 
+rays high energy, consist 
+mainly protons helium nuclei, 
+also electrons, photons neutrons 
+cosmic rays interact 
+atmospheric nuclei 
+slow neutrons produce, 
+among many particles, 
+interact n to 
+produce radioactive carbon 
+isotope c in 
+a charge exchange reaction 
+carbon is a beta emitter a 
+lifetime a bit , years, 
+so well suited to date materials 
+that several thousand years old 
+moment, atmosphere thus 
+contains a majority c 
+a small quantity c nuclei 
+form co molecules, since 
+chemical properties 
+living organisms, like plants, 
+consume carbon dioxide 
+photosynthesis, 
+will integrate carbon isotopes alike 
+organism dies, 
+co ingestion stops 
+on, 
+c component slowly decays, 
+level c will stay constant 
+one thus uses relative concentration 
+two isotopes to estimate 
+age fossils 
+course, 
+concentration c in 
+atmosphere is necessarily constant 
+depends flux 
+cosmic rays a given time 
+this dating method thus 
+needs a calibration 
+this curve shown here gives an example 
+deviation linearity 
+method 
+let us turn to a noninvasive medical 
+imaging technique that uses nuclear spin 
+imaging nuclear magnetic resonance, 
+nmr, is based absorption 
+reemission electromagnetic radiation 
+via nuclear magnetic moment 
+sample is immersed in 
+magnetic field b to establish 
+an external quantization axis 
+component nuclear 
+magnetic moment along this axis 
+will proportional to quantum 
+number ms, is equal to plus 
+minus onehalf, 
+depending spin orientation 
+associated energy is 
+proportional to ms b 
+transition energy between two 
+orientations spin, parallel 
+antiparallel to magnetic axis, 
+is e hbar gamma b, 
+proportionality 
+factor gamma is equal to 
+gyromagnetic constant 
+times e divided m 
+spin vector rotates around 
+magnetic axis a larmor 
+frequency nu, is equal 
+to gamma b pi 
+a photon thus absorbed 
+nucleus if frequency corresponds 
+to this resonance in range radio 
+frequencies if b is a few tesla 
+this resonance use to 
+is called nuclear spectroscopy 
+you see a nuclear spectroscopy 
+apparatus in image right 
+let us discuss one 
+uses this to locate molecules 
+nuclei inside body 
+varying magnetic field 
+around b gradients in 
+three spatial directions, 
+one correlate resonance frequency 
+position 
+a certain type nucleus 
+intensity signal 
+is proportional 
+to local density element 
+this is principle nuclear 
+magnetic resonance imaging, nmr 
+one uses resonance frequencies of, 
+example, hydrogen, na, 
+p to obtain an image 
+internal structure body 
+often, 
+hydrogen is indeed used to obtain access 
+to density distribution liquids 
+soft tissues, difficult 
+to render classical tomography 
+patient is introduced 
+a solenoid 
+between two helmholtz coils, 
+in two examples 
+provide field b 
+typically a few tesla 
+additional coils adapted to 
+body region examination 
+provide magnetic field gradient 
+a pulsed radio frequency 
+signal is applied, 
+absorption tissue is 
+analyzed fourier analysis 
+height fourier peak 
+resonance frequency 
+measures local density 
+chosen nucleus 
+a characteristic relaxation 
+time between milliseconds 
+seconds, rf signal is restored 
+time delay reveal 
+additional tissue properties 
+one obtains an image a typical 
+resolution order millimeters, 
+a good contrast, you see 
+in this nmr picture knee 
+in addition, 
+image shows also soft tissue, 
+difficult to visualize 
+classical xray tomography 
+mechanism nuclear magnetic 
+resonance even allows 
+a functional imaging organs 
+this is due to magnetic 
+properties hemoglobin, 
+transport oxygen in blood 
+hemoglobin is found in 
+two different forms 
+red blood cells, 
+oxygenized lungs, 
+contain oxyhemoglobin, 
+a molecule is inactive in nmr 
+red blood cells, 
+delivered oxygen to tissue, 
+contain deoxyhemoglobin, 
+is a paramagnetic molecule 
+this means that influence 
+external magnetic field, 
+will acquire a magnetization, 
+is detectable nmr 
+brain activity, 
+example, causes characteristic dynamics 
+blood flow composition 
+in active brain regions, 
+neurons stimulated, one observes 
+simultaneously a higher oxygen consumption 
+a higher local blood flow 
+in healthy tissue, 
+increase in blood flow is 
+important local 
+consumption oxygen 
+this corresponds to a relative 
+decrease in deoxyhemoglobin, 
+used to 
+localize brain activity 
+in next video, well represent 
+another important application, 
+physical principle energy 
+release in nuclear fission, 
+is currently furnishing 
+global energy consumption 
+music 

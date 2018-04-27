@@ -1,0 +1,65 @@
+[music]
+here in the second module,
+we're in the process of dealing with
+nuclear physics and it's applications.
+we have underlined several times that
+the basics of the nuclear force in terms
+of quantum chronodynamics,
+are anything but clear.
+the purpose of this optional interlude
+is to trigger a discussion
+on this particular subject.
+the relation between the nuclear force
+which binds together nucleons inside
+the nucleus and the strong force
+which binds quarks to form hadrons
+is not clear at all although
+the two must be obviously related.
+in fact the nuclear force ought
+to be a long range effect of qcd,
+binding nucleons via
+color neutral objects.
+an interesting discussion is found in this
+article by one of the fathers of qcd,
+fred wilczek, in the journal nature, the
+source is quoted on the top of the slide.
+an accessible summary can be found on the
+web at the address quoted on the bottom.
+and here is a short excerpt
+that i will read to you.
+ironically, from the perspective of
+qcd the foundations of nuclear physics
+appear distinctively unsound.
+he continues by explaining
+what the contradiction is.
+yet qcd tells us that protons and neutrons
+are themselves built from quarks and
+gluons that move at very
+nearly the speed of light.
+these more basic particles
+carry color charge,
+leading to the additional requirement
+that they be confined within bags
+whose contents are overall color-neutral.
+and he further asks, but
+why don't a separate proton and
+neutron bags in a complex
+nucleus merge into a common bag?
+on the face of it, the one bag
+arrangement has a lot going for it.
+it would allow quarks and gluons free
+access to a larger volume of space and so
+save on the energy cost of localizing
+their quantum mechanical wave function.
+but in such a merger, protons and neutrons
+would lose their individual identities,
+and our traditional quite successful
+model of atomic nuclei would crumble.
+what prevents that calamity?
+i invite you to think about
+this question yourself, and
+discuss it in the forum of this course.
+we will come back to it in module five
+where which will deal with hadrons and
+their strong interaction.
+[music]

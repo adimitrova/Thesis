@@ -1,0 +1,268 @@
+1
+00:00:00,025 --> 00:00:05,089
+[MUSIC]. 
+
+2
+00:00:05,089 --> 00:00:09,115
+The basic idea of integration by parts is 
+that it lets you differentiate part of 
+
+3
+00:00:09,115 --> 00:00:13,615
+the integrand, but only if you're willing 
+to pay a price. 
+
+4
+00:00:13,615 --> 00:00:18,726
+And that price is anti-differentiating 
+the other part of the integrand. 
+
+5
+00:00:18,726 --> 00:00:21,960
+Well, let's try it. 
+For example, let's find an 
+
+6
+00:00:21,960 --> 00:00:28,242
+anti-derivative of x times e to the x. 
+If we're going to attack this integrand 
+
+7
+00:00:28,242 --> 00:00:31,578
+by parts, then I've got to pick a u and a 
+dv. 
+
+8
+00:00:31,578 --> 00:00:36,640
+I'd be willing to differentiate x. 
+That'll make x just go away. 
+
+9
+00:00:36,640 --> 00:00:40,116
+And the price I'd have to pay is to 
+anti-differentiate what remains. 
+
+10
+00:00:40,116 --> 00:00:42,782
+But anti-differentiating e to the x is 
+not much of a price to pay because e to 
+
+11
+00:00:42,782 --> 00:00:47,440
+the x is its own anti-derivative. 
+So let's set that down. 
+
+12
+00:00:47,440 --> 00:00:51,710
+Let's set u to the x, because I'd like to 
+differentiate that part. 
+
+13
+00:00:51,710 --> 00:00:55,870
+And I'm willing to anti-differentiate 
+what remains. 
+
+14
+00:00:55,870 --> 00:01:02,469
+Now, let's figure out du and v. 
+Now if u is x, then du is dx. 
+
+15
+00:01:02,469 --> 00:01:05,978
+And then, I've got to pick an 
+anti-derivative for dv. 
+
+16
+00:01:05,978 --> 00:01:09,500
+Now, in principle, there's a ton of 
+anti-derivatives I could pick, right? 
+
+17
+00:01:09,500 --> 00:01:12,630
+e to the x plus 17 differentiates the e 
+to the x. 
+
+18
+00:01:12,630 --> 00:01:15,070
+But I'll just pick the nice one. 
+I'll pick e to the x. 
+
+19
+00:01:15,070 --> 00:01:20,670
+Now I've got u, dv, v, and du. 
+We can put it all together. 
+
+20
+00:01:20,670 --> 00:01:25,778
+Parts tells me that an anti-derivative u 
+dv is uv minus anti-derivative v du. 
+
+21
+00:01:25,778 --> 00:01:35,354
+So, in this case, the anti-derivative of 
+u dv is u times v, x times e to the x 
+
+22
+00:01:35,354 --> 00:01:45,740
+minus anti-derivative of v du, which is 
+just dx. 
+
+23
+00:01:45,740 --> 00:01:51,505
+But, I know how to integrate e to the x. 
+Anti-derivative of e to the x is just 
+
+24
+00:01:51,505 --> 00:01:55,432
+itself. 
+So, the anti-derivative of x, e to the x 
+
+25
+00:01:55,432 --> 00:02:00,210
+is x, e to the x minus e to the x plus 
+some constant. 
+
+26
+00:02:00,210 --> 00:02:06,164
+We did it, and we can check our answer. 
+So we have to differentiate this and make 
+
+27
+00:02:06,164 --> 00:02:09,420
+sure I get x, e to the x. 
+Let's try it. 
+
+28
+00:02:09,420 --> 00:02:14,442
+So, if I differentiate xe to the x minus 
+e to the x, I don't need to add the plus 
+
+29
+00:02:14,442 --> 00:02:20,130
+C because if I differentiate a constant, 
+I just get 0. 
+
+30
+00:02:20,130 --> 00:02:24,855
+All right, this is a derivative of a 
+difference so it's the difference of the 
+
+31
+00:02:24,855 --> 00:02:28,312
+derivatives. 
+But now this is a derivative of a 
+
+32
+00:02:28,312 --> 00:02:31,530
+product, so I'm going to use the product 
+rule. 
+
+33
+00:02:31,530 --> 00:02:35,950
+I'm going to take the derivative of the 
+first, so the derivative of x, times the 
+
+34
+00:02:35,950 --> 00:02:41,350
+second, plus the first times the 
+derivative of a second, right? 
+
+35
+00:02:41,350 --> 00:02:45,500
+That's the product rule. 
+And then I subtract, well, the derivative 
+
+36
+00:02:45,500 --> 00:02:49,914
+of e to the x is just itself. 
+And I've got the derivative of x, which 
+
+37
+00:02:49,914 --> 00:02:53,690
+is 1 times e to the x plus x times the 
+derivative of e to the x e to the x minus 
+
+38
+00:02:53,690 --> 00:02:58,377
+e to the x. 
+And here's the slightly exciting part, 
+
+39
+00:02:58,377 --> 00:03:02,355
+right? 
+This and this cancel, and all I'm left 
+
+40
+00:03:02,355 --> 00:03:08,290
+with is just x times e to the x. 
+So, in fact, we have found an 
+
+41
+00:03:08,290 --> 00:03:12,020
+anti-derivative for x e to the x. 
+Here it is. 
+
+42
+00:03:12,020 --> 00:03:15,725
+And of course, that makes sense because 
+integration by parts is just a product 
+
+43
+00:03:15,725 --> 00:03:19,752
+rule in reverse. 
+Now, we can use the same trick to attack 
+
+44
+00:03:19,752 --> 00:03:24,616
+similar integration problems. 
+For example, let's say you want to 
+
+45
+00:03:24,616 --> 00:03:30,760
+anti-differentiate some polynomial in x 
+times e to te x. 
+
+46
+00:03:30,760 --> 00:03:33,381
+You could do this with parts. 
+Well, how? 
+
+47
+00:03:33,381 --> 00:03:38,010
+Well, I've made this be u and I make this 
+be dv. 
+
+48
+00:03:38,010 --> 00:03:42,020
+And why is that such a great choice? 
+Well, think about what parts lets you do. 
+
+49
+00:03:42,020 --> 00:03:45,200
+Parts lets you differentiate part of the 
+integrand if you're willing to 
+
+50
+00:03:45,200 --> 00:03:49,468
+anti-differentiate the rest. 
+But anti-differentiating e to the x is 
+
+51
+00:03:49,468 --> 00:03:53,863
+paying no price at all because it's its 
+own anti-derivative. 
+
+52
+00:03:53,863 --> 00:03:58,350
+And, if you differentiate the polynomial, 
+then you reduce its degree. 
+
+53
+00:03:58,350 --> 00:04:03,802
+So, by doing parts enough times, 
+eventually you're just 
+
+54
+00:04:03,802 --> 00:04:13,133
+anti-differentiating e to the x by 
+itself, which you can definitely do. 

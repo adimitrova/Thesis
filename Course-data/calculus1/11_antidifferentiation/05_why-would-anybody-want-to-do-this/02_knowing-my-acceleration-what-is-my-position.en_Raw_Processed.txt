@@ -1,0 +1,115 @@
+music maybe i dont know position 
+velocity, i know acceleration 
+maybe acceleration sometime is 
+a constant units per second 
+squared, right 
+so, im going to accelerate a constant 
+rate 
+is that enough information to determine 
+velocity 
+we to think back to velocity 
+acceleration related 
+definition acceleration is 
+change to derivative in velocity, 
+right 
+acceleration is rate change in 
+velocity 
+in words, right, velocity is an 
+antiderivative acceleration 
+so, i know that a is 
+lets solve v 
+okay, so a t, acceleration, is 
+constant function , v is 
+antiderivative acceleration, right 
+if i antidifferentiate acceleration, im 
+going to get velocity 
+means im antidifferentiating 
+well antidifferentiates to t, 
+plus constant c 
+that constant 
+right 
+knowing acceleration doesnt determine 
+velocity, determines 
+velocity to constant 
+i could going really fast really 
+slow, still accelerating 
+rate 
+well, in case, ive least got a 
+formula velocity that 
+constant 
+now, i use that formula to determine 
+position 
+kind game 
+velocity is rate in change in 
+position, right 
+velocity is derivative position 
+that means position is an 
+antiderivative velocity 
+so, lets antidifferentiate 
+so, p is an antiderivative 
+velocity, i figured velocity a 
+minute ago 
+velocity is plus c 
+so, i want to antidifferentiate plus 
+c 
+well, an antiderivative a sum, so 
+sum antiderivatives 
+whats an antiderivative times 
+something 
+well, thats a constant multiple, so 
+times antiderivative t, plus an 
+antiderivative c 
+now, times, whats an antiderivative 
+
+well one is squared 
+whats an antiderivative c 
+well, c times is an antiderivative 
+c 
+then, i add constant here 
+im going to call that constant big d 
+right 
+so, heres position 
+i guess i could write this a little bit 
+nicely, coz dividing 
+simplify that i could write 
+squared, plus ct, plus d 
+well, thats kind weird, right 
+there two constants in answer 
+knowing that acceleration is 
+units per second squared, doesnt tell 
+initial velocity, right 
+this quantity c here, is really v 
+right 
+initial velocity 
+i could accelerating a rate 
+units per second squared 
+starting a range 
+possible initial velocities, right 
+i could going really fast first 
+really slow first 
+still, always accelerating units 
+per second squared 
+so, knowing this doesnt nail c 
+similarly, knowing velocity 
+doesnt nail initial position 
+right 
+this d here is really p 
+right 
+if i plug in equals , i get d 
+that means that d is really providing 
+initial position 
+so, if i know initial position 
+initial velocity acceleration, 
+i nail an exact formula 
+position 
+i get rid mystery constants 
+important lesson to take away here is 
+that antidifferentiating actually 
+useful 
+antidifferentiating lets us take, say, 
+velocity information produce 
+position data 
+even better, in this case, let us 
+take acceleration information, figure 
+velocity, then, take that velocity 
+information to figure position 

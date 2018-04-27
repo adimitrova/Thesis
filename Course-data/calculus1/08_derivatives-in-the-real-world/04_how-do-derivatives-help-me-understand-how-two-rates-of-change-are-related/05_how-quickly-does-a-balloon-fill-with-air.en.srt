@@ -1,0 +1,214 @@
+1
+00:00:00,012 --> 00:00:13,201
+[music].
+>> I'm going to blow up this balloon.
+
+2
+00:00:13,202 --> 00:00:22,978
+Let's suppose that I'm blowing air into
+that balloon at a constant rate, so the
+
+3
+00:00:22,978 --> 00:00:28,911
+balloon's volume is changing at a constant
+rate.
+
+4
+00:00:28,911 --> 00:00:34,013
+How quickly is the radius of the balloon
+changing?
+
+5
+00:00:34,014 --> 00:00:39,369
+We can model the balloon as a sphere.
+And recall the volume of a sphere in terms
+
+6
+00:00:39,369 --> 00:00:42,989
+of its radius r.
+The volume of a sphere of radius r is 4
+
+7
+00:00:42,989 --> 00:00:46,685
+3rds pi r cubed.
+So how fast does the radius change as I
+
+8
+00:00:46,685 --> 00:00:50,898
+blow the balloon up?
+So I've got the original equation for the
+
+9
+00:00:50,898 --> 00:00:55,714
+volume of a sphere of radius r.
+I'm going to differentiate both sides with
+
+10
+00:00:55,714 --> 00:00:59,972
+respect to time.
+So the derivative of v, with respect to
+
+11
+00:00:59,972 --> 00:01:05,346
+time, is I'm going to write dv dt.
+And the derivative of the other side, with
+
+12
+00:01:05,346 --> 00:01:09,698
+respect to time, we've gotta think a
+little bit more about.
+
+13
+00:01:09,698 --> 00:01:15,417
+Now 4 3rds and pi are just constants.
+So I can pull them out of the derivative.
+
+14
+00:01:15,418 --> 00:01:20,337
+But I've still gotta figure out what the
+time derivative of r cubed is.
+
+15
+00:01:20,337 --> 00:01:25,635
+To figure out the time derivative of r
+cubed, I'm regarding r, remember, as a
+
+16
+00:01:25,635 --> 00:01:29,143
+function of t.
+So I use the chain rule, and the
+
+17
+00:01:29,143 --> 00:01:36,073
+derivative of cubing is 3 times the inside
+function squared times the derivative of
+
+18
+00:01:36,073 --> 00:01:42,132
+the inside function, so dr dt.
+So dv dt is 4 3rds pi times 3 times r
+
+19
+00:01:42,132 --> 00:01:48,377
+squared times dr dt.
+Let's solve for dr dt, the rate of change
+
+20
+00:01:48,377 --> 00:01:53,535
+in the balloon's radius.
+All right, so I'm going to solve for dr
+
+21
+00:01:53,535 --> 00:01:56,493
+dt.
+Well, first thing I can do is, I've got a
+
+22
+00:01:56,493 --> 00:02:01,299
+dividing by 3, and a multiplying by 3.
+So I don't need to do both of those
+
+23
+00:02:01,299 --> 00:02:04,781
+operations.
+So this is 4 pi r squared times dr dt.
+
+24
+00:02:04,781 --> 00:02:09,026
+The other side is just dv dt.
+So I'll divide both sides by 4 pi r
+
+25
+00:02:09,026 --> 00:02:12,843
+squared.
+And I'll find out that, dr dt is dv dt
+
+26
+00:02:12,843 --> 00:02:18,341
+divided by 4 pi r squared.
+Can we really make use of this equation?
+
+27
+00:02:18,341 --> 00:02:22,664
+I, does this help us at all?
+Yeah, this makes sense.
+
+28
+00:02:22,664 --> 00:02:29,170
+We started with the original equation for
+the volume of a sphere in terms of its
+
+29
+00:02:29,170 --> 00:02:33,040
+radius.
+And I differentitated this equation.
+
+30
+00:02:33,040 --> 00:02:37,802
+And then solved for dr dt.
+And what this equation is telling me is
+
+31
+00:02:37,802 --> 00:02:42,977
+that the change in radius, which is what
+dr dt is measuring, the rate of change in
+
+32
+00:02:42,977 --> 00:02:47,927
+the size of the balloon, well, it depends
+on how quickly the volume's changing,
+
+33
+00:02:47,927 --> 00:02:51,036
+which is dv dt.
+But it also depends upon the radius,
+
+34
+00:02:51,036 --> 00:02:54,741
+right?
+This is this r squared in the denominator.
+
+35
+00:02:54,741 --> 00:03:00,379
+In particular, a really big balloon
+doesn't get a whole lot bigger for a given
+
+36
+00:03:00,379 --> 00:03:05,835
+change in volume, compared to a little
+tiny balloon, which gets quite a bit
+
+37
+00:03:05,835 --> 00:03:11,882
+bigger for the same change in volume.
+It all has to do with that r squared in
+
+38
+00:03:11,882 --> 00:03:16,672
+the denominator.
+When the balloon's radius is very small, a
+
+39
+00:03:16,672 --> 00:03:21,253
+given change in volume results in quite a
+dramatic change in the radius.
+
+40
+00:03:21,253 --> 00:03:26,219
+But once the radius is large, the r
+squared in the denominator means that dr
+
+41
+00:03:26,219 --> 00:03:29,828
+dt is then much smaller for the same
+change in volume.
+
+42
+00:03:31,153 --> 00:03:40,945
+Another breath, and yeah, I mean, the
+thing's still getting bigger, but much
+
+43
+00:03:40,945 --> 00:03:45,379
+less dramatically.
+.

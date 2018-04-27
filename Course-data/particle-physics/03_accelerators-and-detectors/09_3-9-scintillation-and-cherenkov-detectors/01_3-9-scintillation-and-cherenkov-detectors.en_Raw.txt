@@ -1,0 +1,295 @@
+[music]
+in this module, we are touching
+the basics of particle acceleration and
+detection metals.
+and in this video, we'll continue our
+discussion of particle detection,
+the techniques, talking about
+scintillators and cherenkov detectors.
+after watching this video, you will know
+the principle of particle detection by
+scintillation light, and the measurements
+that can be done via the cherenkov effect.
+in scintillation detectors,
+also called more simply scintillators,
+particles are detected by means
+of their luminescence mechanism.
+certain materials,
+when exposed to radiation, absorb energy,
+which is then emitted as light.
+if the light emission occurs soon after
+radiation, we call it fluorescence.
+if it takes more than 100 milliseconds to
+emit light, we call it phosphorescence.
+scintillation corresponds to fluorescence,
+after radiation by charged particles,
+high energy photons or neutrons.
+there are two types of scintillating
+materials, inorganic materials, for
+which fluorescence is associated to
+intermediate states due to impurities.
+they have a high atomic number, so
+they are well-suited for photon detection.
+and they can be ceramics,
+glasses, liquids, noble gases and
+crystals, such as
+thallium-doped sodium iodide,
+lead tungstate or bismuth germanate,
+also called the bgo.
+and this is an example
+of a bismuth germanate,
+a bgo crystal, which is quite heavy.
+organic materials are the second
+type of scintillating materials.
+and in these, the source of fluorescence
+are excited molecular states.
+they have high hydrogen content, so they
+are well suited for neutron detection.
+they can be crystals, liquids and
+doped plastics like this example here.
+both have a very short response times,
+ranging from nanoseconds for
+organic scintillators towards 0500
+nanoseconds for inorganic ones.
+a particle traversing a scintillator
+excites the atoms of the molecules of
+the material, which will then return
+to their ground state emitting photons.
+if the material is transparent through
+at least a portion of the scintillation
+wavelength spectrum, the photons
+emitted can be collected at the end of
+the scintillator by a photosensitive
+detector, for example,
+in photomultiplier tube, pmt,
+and often to a light guide.
+the collected light is then
+transformed into an electrical signal.
+the shape of the signal,
+which is shown in the plot on the bottom,
+is characterized by the very short rise
+time, typically less than one nanosecond,
+and then much larger decay time
+of the order of 100 nanoseconds.
+this short rise time makes scintillator
+response faster than ionization detectors.
+that's why they are used
+in triggering systems.
+they have a good efficiency, the energy
+needed to create a scintillation photon
+ranges from 20 electronvolt for
+thallium-doped sodium iodide,
+to a few hundred electron volts for
+doped plastic and bgo.
+except for low energies,
+they are linear, that is,
+the number of photons is proportional
+to the energy deposition.
+thus, counting photons allows to
+measure the deposited energy d by dx.
+often, light guides are used to transport
+scintillation light to the photodetector,
+minimizing losses both by absorption and
+leakage.
+they are used to adapt the shape
+of the scintillator cross section
+to that of the photodetector.
+and here is an example of a light guide,
+so
+typically the scintillators
+will be connected here and
+the light will be routed
+to the photodetector,
+which will be connected
+here at the bottom.
+in some cases, light guides also
+serve to shift the emission
+spectrum of scintillation light
+to better match the spectral
+sensitivity of the photodetector with
+what is called a wavelength shifter.
+these are materials which
+absorb scintillation light and
+remit it in a different wavelength.
+in order to minimize light
+losses by reflection,
+light guides as well as scintillators
+themselves use total internal reflection.
+if the incident angle theta of the photon
+is larger than a critical angle,
+theta c, which sine of theta c is equal
+to the ratio between the reflecting
+index in air and
+in the scintillator over the light guides,
+the photon will not escape by reflection
+and will reach the photodetector.
+for plastic,
+the critical angle is about 39 degrees.
+at smaller angles, mirror reflection on a
+external reflector like reflective paint,
+paper or
+special foils like liquidity are used.
+reflection can be further
+reduced using luo gel,
+with the same reflective
+index to join the elements.
+and here is an example
+of scintillator bars,
+which have painted with white
+paint to minimize reflection.
+and then also connected to
+wavelength shifter fibers,
+which guide the light
+to the photodetector,
+which will be connected here at the top.
+the wavelength spectrum of photons
+emitted by scintillation has an error of
+distribution around a maximum.
+for plastic,
+the maximum is at 423 nanometers.
+for thallium-doped sodium
+iodide at 430 nanometers.
+at 480 nanometers for bgo,
+and 475 nanometers for
+cadmium tungstate, as shown in this graph.
+also shown is the detection efficiency for
+a specific photodetector,
+a photomultiplier.
+this quantity is often called
+the quantum efficiency.
+it is optimum in a certain spectral range,
+so
+the photomultiplier must be
+adapted to the material used.
+sometimes a dopant is added to
+the detection material to shift
+the wavelength and better fit
+the photomultiplier sensitivity.
+the dopant absorbs the scintillation
+of photons and quickly,
+that is in less than one nanosecond,
+emits photons with another wavelength.
+photon must pass through the scintillator
+to reach the photosensitive elements.
+some photons will be absorbed on the way.
+the number of non-absorbed photons
+decreases with distance following
+an exponential distribution, which depends
+on the attenuation length of the material,
+which is generally of
+the order of one meter.
+and this allows to build large
+scintillation detectors.
+the purpose of the photodetector is
+to convert scintillation photons
+to an electrical signal,
+which can be then processed
+electronically after amplification.
+here we show a photomultiplier,
+where the conversion of photons into
+an electrical signal is achieved
+via the photoelectric effect
+in a thin layer of alkali metal
+alloy called photocathode.
+the quantum efficiency measures the number
+of photoelectrons created
+per incident photon.
+for modern photocathodes,
+this is typically 30, 40%,
+depending on the wavelength, as shown in
+this plot for two different photocathodes.
+behind the photocathode is
+a series of electrodes,
+typically 10 to 14, called dynodes.
+they contain a particular alloy
+with low ionization energy.
+an increasing electrical
+potential is applied.
+the photoelectrons emitted by
+the photocathode are accelerated and
+focalized on the first dynode.
+they release, typically between two and
+five electrons per photoelectron,
+depending on the applied voltage.
+the signal amplification progresses
+from line to dynode, and
+the total gain can reach 10
+million after 14 dynodes.
+and here is an example of
+a photo tube with metal dynodes.
+another type of photodetector
+implements dynodes
+as grades like in this example
+of a metal mesh photo tube,
+which you see is much more compact then
+the photo tube with metal dynodes.
+so let's now see how the cherenkov
+effect an be used to detect particles.
+a charged particles of velocity
+v going through a medium
+of refractive index n will
+polarize the atom along its path.
+these atoms become electric dipoles and
+emit electromagnetic radiation upon
+returning to the ground state.
+if the velocity of the particle does
+not exceed that of light in the medium,
+radiation of the dipoles of the upstream
+and downstream sides are about to cancel.
+if on the contrary, the velocity of
+the particle v is larger than c over n,
+where c is the velocity of the light
+in a vacuum and n is the reflective
+index of the medium, the downstream
+material cannot be polarized.
+the electromagnetic field created
+by the particle propagates less
+quickly than the particle itself and
+the net radiation results its
+waveform to form the cone of light,
+around the part or the particle.
+this is the cherenkov effect.
+this kind of radiation is produced
+in all transparent media.
+the energy loss by cherenkov
+radiation is negligible.
+there are mechanical analogies
+to this mechanism, which is like
+a boat in the water or a plane which
+exceeds the velocity of mach one.
+the additional threshold
+is then a bit larger than
+the inverse of the refractive
+index of the medium.
+a threshold of radiation is emitted
+in the direction of the particle that
+is at theta equal to 0.
+the different threshold for charged
+particles with different masses can be
+spread to differences between them for
+reason to identify different isotopes.
+particles heavier than m max
+will not emit radiation.
+ring imaging cherenkov,
+go the reach, go a step further.
+here the cherenkov light is
+intercepted by a detection surface.
+photons form a ring, which allows to
+measure cherenkov light angle, and
+thus determine the velocity
+of the incoming particle.
+in addition, the intensity of
+the cherenkov light, that is the number of
+photons in the circle, is proportional
+to the square of the particle charge.
+cherenkov light is also emitted in water.
+this gives the possibility of
+build a large mass detector like
+the super-kamiokande in japan.
+this gigantic water tank,
+surrounded by photomultipliers,
+is used to detect neutrinos.
+in the next video, we will see how
+the different detectors are combined to
+form spectrometers and calorimeters.
+[music]

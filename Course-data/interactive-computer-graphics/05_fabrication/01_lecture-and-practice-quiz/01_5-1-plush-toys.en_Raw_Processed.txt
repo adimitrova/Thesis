@@ -1,0 +1,286 @@
+hello, this is week 
+interactive computer graphics 
+a topic we discuss here is fabrication 
+so, so far, we working on, 
+introduced, discussed computer graphics 
+so display imagery screen 
+everything computer 
+screen inside a computer 
+so this week, we discussed trying to 
+going computer screen 
+try to work physical object we 
+touch manipulate in real world 
+background motivation is here, 
+so you know there so 
+many possible publication machines 
+getting available, getting cheaper 
+so if you a d model inside 
+a computer, you easily directly print 
+d models physical objects 
+example, if you a d printer, 
+you get a d model 
+similarly, milling machines 
+automatically mills, material 
+you get d model 
+so you have, d dimensional patterns 
+you easily send to laser 
+cutter, cutting machine 
+you will get nice three, 
+two dimensional shapes box 
+so, heres list 
+topics we discussed here 
+we discussed design plush toys 
+design beadworks chairs 
+also discussed soft folding 
+crossing materials, 
+also interactive packing, packing method 
+so first one is a plush toy design 
+so this one is called plushie 
+so program is address is that 
+is difficult non experts, 
+us to design d pattern 
+stuck inaudible appropriately 
+you know 
+you want to get a threedimensional 
+stuffed animal, 
+you need to design 
+twodimensional clothes patterns 
+experts, may easy to 
+understand relationship, 
+novice users noexperience people, 
+difficult to go back course 
+between d to d d to d 
+so, sketchbased d modeling 
+automatic close pattern generation 
+so this is extension 
+teddy system we introduced 
+so you sketch desired shape, 
+system generates a three dimensional, 
+geometry 
+time, 
+system also generates 
+a corresponding d cloth pattern 
+so if user print them, cut them, 
+stitch together, ready 
+youll get d, 
+physical d shape 
+so thats idea 
+let show you a video 
+so heres overview 
+user input is threedimensional 
+sketching input computer screen 
+then, giving user input system 
+automatically generate a d shape 
+corresponding d equals patterns 
+closing patterns, 
+user sew together 
+you get physical stuffed animal 
+there operational 
+user interface is similar 
+to original teddy system 
+user get outline, 
+system 
+time you get 
+a twodimensional cross pattern, 
+whats happening here inside is that we 
+learn a simple physical simulation inside 
+so system predicts happens 
+if you stitch together 
+system shows 
+a predicted d geometry here 
+geometry, 
+you interact edit 
+like like system, you cut object 
+system automatically gets 
+d shape well 
+a twodimensional close pattern 
+so user continuously edits shape, 
+system continuously presents 
+a twodimensional shape 
+this is a operation 
+so here we generate two 
+possible operations 
+so one is like this one 
+so last base holes also, 
+we also support inaudible this 
+is useful making an ear 
+we also implemented a cover editing 
+operations pulling shape 
+so here system concurrently edits, 
+modifies d shape 
+also twodimensional patterns 
+this is in, in, interesting so 
+you actively add 
+erase a seams top a colored pattern 
+so this is interesting i think 
+so, you have, we three pieces 
+a single d object 
+if, 
+here user tries to erase seam, 
+means that two 
+parties will merged together 
+so you will end two parties 
+system outlines this 
+computation in real time 
+so user erases a patch boundary, 
+system merges two patches together, 
+you will a two, 
+patches, 
+system also applies physical 
+simulation to result 
+so user also operate 
+directly d pattern, 
+you will get a modified d shape 
+so you easily directly 
+working d shape, 
+you work, 
+directly working d pattern 
+so this two way agent 
+flexible 
+this is an example 
+modeling sequence 
+so use a fast generator base shape, 
+you operate cut operation 
+to get control 
+so basically repeating 
+simple sketching, 
+editing operations, you generate 
+reasonably complicated shape 
+here we, we show in this video, 
+in actual printout, system also 
+gives, hints information, which, 
+edge to connected end 
+so, construction is also guided 
+computer generated annotations 
+so this d model, 
+user print this pattern paper 
+cloth you will manually 
+create d stuff animal 
+so this is d model, this is 
+a generated real physical stuffed animal 
+so you take four 
+five hours to get this 
+yeah, you also create a big 
+one using, you know, inflation 
+so this is a big balloon, 
+like two meter size, a big balloon 
+so traditionally this kind balloon is 
+designed professional designers, 
+requires many testing 
+trials prototyping 
+here, computer take care 
+prototyping simulation 
+so even inexperienced people 
+design it, so, balloons 
+so we learned simple study 
+so, we asked kids to design 
+stuffed animal 
+so traditionally, 
+people buy existing pattern 
+create, stuffed animal 
+almost impossible to design new 
+original character, stuffed animal 
+here, you know, even students, 
+kids design stuffed animal 
+finishing design, you know 
+print cut stitch together, 
+you will get a final d model, 
+oh no, no, final press toy 
+so, you design 
+original model 
+yep 
+so, let briefly, 
+describe algorithm 
+inflation algorithm, 
+inflation simulation, we use a very, 
+simple, basic massspring method 
+so, close d model mesh vertices 
+move outward time 
+air pressure cotton pressure 
+so tries to inflate 
+time system 
+tries to pull back, 
+depending edge length 
+if edge length is long 
+will pull back 
+we repeat two processes, 
+
+end you will 
+get a stable result 
+we must say that this simulation is 
+accurate simulation real physics 
+there will bonds physical 
+simulation methods, you get 
+accurate result using accurate 
+methods is also interesting to 
+see that you get basic result 
+basic simple simulation method 
+another interesting issue is that 
+adjustment to sha, to patterns 
+so, so, algorithm first takes user inputs, 
+this red one 
+direct to the, 
+use a d pattern 
+however, if you start d pattern 
+inflate it, 
+you know, 
+inflated you inflate in z direction 
+if you pull in d direction x y 
+frame becomes gets smaller right 
+so in order to prevent it, 
+system tries to adjust shape 
+to compensate this difference 
+so after, initial configuration, 
+system tries to gradually 
+inflate d pattern so 
+that resulting d inflation result 
+matches exactly to d input sketch 
+so thats, you know, 
+inflation algorithm you saw in video 
+so this shape adjustment 
+is important 
+you know, if user draw let, 
+box, a input, 
+if you dive to use this 
+box a d cross pattern, 
+if you generate a d shape 
+d shape, you will get shape 
+so resulting shape is 
+exactly match this rectangle 
+if we apply shape 
+adjustment maths algorithm, 
+system automatically 
+inflates input to shape 
+physical result will, 
+publication result matches, 
+closer to rectangle 
+so, yeah, this is interesting 
+so if you want to a rectangular, 
+pillow, 
+you start this kind 
+pattern, start here 
+so, to learn more, 
+original paper published plushie, 
+an interactive design system 
+plush toys 
+this work, strongly inspired 
+previous work paper craft model 
+so this work making paper 
+craft toys meshes using 
+strip based approximate unfolding 
+so this one starts giving d model, 
+automatically generates 
+a d paper craft pattern 
+so you generate interesting, 
+d shapes using a paper craft 
+we use a surface flattening method 
+to generate moving d to d 
+surface flattening is also a 
+popular topic in computer graphics 
+used to compute a texture map 
+coordinates, if you learn more, 
+one starting point would this 
+mesh parameterization method 
+applications 
+so thats inaudible this week 
+this video 

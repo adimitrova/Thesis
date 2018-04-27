@@ -1,0 +1,444 @@
+1
+00:00:05,090 --> 00:00:09,954
+We already know how to handle some 
+integration problems where the integrand 
+
+2
+00:00:09,954 --> 00:00:15,918
+is a powers of sines and cosines. 
+For example, I can anti-differentiate 
+
+3
+00:00:15,918 --> 00:00:19,520
+sine to and odd power. 
+How? 
+
+4
+00:00:19,520 --> 00:00:23,800
+By trading in all but one of those sins 
+for cosines. 
+
+5
+00:00:23,800 --> 00:00:26,572
+Let's make this really concrete. 
+Instead of talking about an odd power 
+
+6
+00:00:26,572 --> 00:00:30,558
+well let's just make it 17. 
+Can I antidifferentiate sin to the 17th 
+
+7
+00:00:30,558 --> 00:00:34,042
+power? 
+Yeah, I can rewrite this problem as sin 
+
+8
+00:00:34,042 --> 00:00:38,659
+of x times sin squared x to the 8th 
+power, because sin square to the 8th 
+
+9
+00:00:38,659 --> 00:00:43,600
+power gives me 16 copies of sin times 
+more sin gives me 17 copies of sin, now 
+
+10
+00:00:43,600 --> 00:00:48,622
+we can trade sin squared for some cos 
+signs right, sin squared is 1 minus cos 
+
+11
+00:00:48,622 --> 00:00:58,489
+sign squared to the 8th power. 
+So if I can do this anti-differentiation 
+
+12
+00:00:58,489 --> 00:01:04,380
+problem all I need to do is do this 
+anti-differentiation problem. 
+
+13
+00:01:04,380 --> 00:01:11,426
+And I can do that with a substitution. 
+So make the substitution u equals cosine 
+
+14
+00:01:11,426 --> 00:01:17,320
+x and in that case d u is minus sign x 
+dx. 
+
+15
+00:01:17,320 --> 00:01:20,344
+Now maybe you're complaining you don't 
+see a minus sign. 
+
+16
+00:01:20,344 --> 00:01:23,524
+And you'll only see sin, but I'll just 
+put a pair of cancelling minus sins 
+
+17
+00:01:23,524 --> 00:01:26,651
+there, and I see a minus sin next dx so 
+we got a du and the rest I can write in 
+
+18
+00:01:26,651 --> 00:01:31,776
+terms of u. 
+Specifically, this becomes negative, the 
+
+19
+00:01:31,776 --> 00:01:36,054
+n is derivative of 1 minus u squared to 
+the 8 power du, is what's left over and 
+
+20
+00:01:36,054 --> 00:01:40,608
+this anti-differentiation problem that I 
+can do and it is a little bit annoying 
+
+21
+00:01:40,608 --> 00:01:45,093
+cause I guess I gotta expand this thing 
+out to find an anti-derivative of this, 
+
+22
+00:01:45,093 --> 00:01:53,075
+but I can do it. 
+But what if instead I'd had an even power 
+
+23
+00:01:53,075 --> 00:01:57,482
+of sine. 
+Well, maybe I'll anti-differentiate sine 
+
+24
+00:01:57,482 --> 00:01:59,900
+to the fouth power. 
+All right? 
+
+25
+00:01:59,900 --> 00:02:02,930
+So this is not an odd power but an even 
+power. 
+
+26
+00:02:02,930 --> 00:02:07,214
+that's harder, I can't trade in all of my 
+sins for cosines because I need just one 
+
+27
+00:02:07,214 --> 00:02:13,190
+left over to make the substitution work. 
+Instead, I'll use an identity, the half 
+
+28
+00:02:13,190 --> 00:02:17,165
+angle formula. 
+It let's me replace sined squared of x by 
+
+29
+00:02:17,165 --> 00:02:22,978
+1 minus cosine of 2x over 2. 
+And it lets me replace cosign squared of 
+
+30
+00:02:22,978 --> 00:02:28,510
+x by 1 plus cosign 2x over 2. 
+How do those help? 
+
+31
+00:02:28,510 --> 00:02:35,481
+Well I can rewrite this integral as the 
+integral of sin squared, squared. 
+
+32
+00:02:35,481 --> 00:02:38,260
+And now I can use this half angle 
+identity. 
+
+33
+00:02:38,260 --> 00:02:41,770
+This is the same as the integral of what 
+sin squared. 
+
+34
+00:02:41,770 --> 00:02:48,100
+Sin squared is 1 minus cos 2x over 2. 
+All right? 
+
+35
+00:02:48,100 --> 00:02:51,686
+These are equal. 
+And still have to square that, dx. 
+
+36
+00:02:51,686 --> 00:02:55,686
+Now, I expand. 
+So, I get this is the same as 
+
+37
+00:02:55,686 --> 00:03:01,572
+integrating. 
+Well, the cos 2x over 2 term, squared is 
+
+38
+00:03:01,572 --> 00:03:08,370
+cosigned squared of 2x over 4. 
+And there's our cross term. 
+
+39
+00:03:08,370 --> 00:03:13,640
+The 1 half times minus cosign 2 x over 2. 
+And there's 2 of those. 
+
+40
+00:03:13,640 --> 00:03:20,060
+So I end up getting minus 1 half. 
+cosigned 2x. 
+
+41
+00:03:20,060 --> 00:03:24,911
+And there's the one half term squared 
+just plus a quarter, so I just have to do 
+
+42
+00:03:24,911 --> 00:03:30,990
+this integration problem. 
+I can split that into 3 integrals. 
+
+43
+00:03:30,990 --> 00:03:38,293
+So this gives me the integral of cos sign 
+squared 2x over 4dx minus the integral of 
+
+44
+00:03:38,293 --> 00:03:45,760
+cos sign 2x over 2dx plus the integral of 
+1 4th dx. 
+
+45
+00:03:45,760 --> 00:03:50,286
+Now, the second and third integration 
+problem I can do, I'm just going to copy 
+
+46
+00:03:50,286 --> 00:03:56,502
+down this one again. 
+The integral of cos squared 2x over 4 dx. 
+
+47
+00:03:56,502 --> 00:04:00,500
+This, here, well I could do this by 
+making a substitution. 
+
+48
+00:04:00,500 --> 00:04:05,484
+u equals 2x, say. 
+And then I'll get that this is sine of 2x 
+
+49
+00:04:05,484 --> 00:04:12,972
+divided by 4. 
+And if I integrate a quarter, I get 1 4th 
+
+50
+00:04:12,972 --> 00:04:16,180
+x. 
+What about that first one? 
+
+51
+00:04:16,180 --> 00:04:20,946
+How do I integrate cosine squared? 
+So, to handle this, I can repeat the 
+
+52
+00:04:20,946 --> 00:04:25,945
+trick with the half angle identity. 
+But I'm looking at integrating cosign 
+
+53
+00:04:25,945 --> 00:04:30,073
+squared 2x. 
+So I'll replace x by 2x and I'll turn 
+
+54
+00:04:30,073 --> 00:04:34,520
+this into a 4x. 
+So I can use this identity. 
+
+55
+00:04:34,520 --> 00:04:38,770
+How does that go? 
+Well I get instead of this the integral 
+
+56
+00:04:38,770 --> 00:04:44,350
+of 1 plus cosine 4x and instead of over 4 
+its now over 8 and then I'll just copy 
+
+57
+00:04:44,350 --> 00:04:54,310
+down these things again. 
+Sin 2x over 4 plus a quarter x. 
+
+58
+00:04:54,310 --> 00:04:59,240
+Now I can put it all together. 
+So I want to and differentiate 1 8th. 
+
+59
+00:04:59,240 --> 00:05:04,126
+I get 1 8th x. 
+And then I want to, and I differentiate 
+
+60
+00:05:04,126 --> 00:05:12,754
+cos 4x over 8, and I get sin of 4x over 
+32 and then I'll include the rest. 
+
+61
+00:05:12,754 --> 00:05:20,125
+So, I'll subtract sin of 2x over 4. 
+I'll add a quarter x and I'll add some 
+
+62
+00:05:20,125 --> 00:05:26,222
+constant. 
+And I could combine the one quarter x and 
+
+63
+00:05:26,222 --> 00:05:33,662
+the 1 8x, so I could right this as 3 8x 
+plus sine of 4x over 32 minus sine of 2x 
+
+64
+00:05:33,662 --> 00:05:41,130
+over 4 plus c. 
+I should say that in some cases you can 
+
+65
+00:05:41,130 --> 00:05:46,639
+get away with doing a bit less work. 
+So I want to calculate the integral from 
+
+66
+00:05:46,639 --> 00:05:52,117
+zero to pi of sine to the fourth and I'll 
+again start the same way, right I'm going 
+
+67
+00:05:52,117 --> 00:06:01,150
+to integrate from zero to pi and I'll 
+write this as sine squared squared. 
+
+68
+00:06:01,150 --> 00:06:04,134
+Just so I can see how the half angle 
+formula is going to help me. 
+
+69
+00:06:04,134 --> 00:06:10,024
+Alright, now I'll use the half angle 
+formula as the integral from zero to pi 
+
+70
+00:06:10,024 --> 00:06:17,658
+of 1 minus cosine2x over 2 squared, but 
+now what do I want to do? 
+
+71
+00:06:17,658 --> 00:06:22,923
+Well, I'll expand that out again, so this 
+is the integral from 0 to pi of 1 fourth 
+
+72
+00:06:22,923 --> 00:06:28,269
+Minus the cross term is one half cosign 
+2x and then plus the cosign times squared 
+
+73
+00:06:28,269 --> 00:06:33,800
+2x over 4. 
+And now there's a little trick. 
+
+74
+00:06:33,800 --> 00:06:41,794
+I'm integrating from 0 to pi cosign. 
+Right I'm integrating cosign over an 
+
+75
+00:06:41,794 --> 00:06:44,770
+entire period. 
+And that ends up being 0. 
+
+76
+00:06:44,770 --> 00:06:49,630
+So I can just throw this whole term away 
+and now I can keep on going. 
+
+77
+00:06:49,630 --> 00:06:52,760
+I can also use the half angle formula 
+here. 
+
+78
+00:06:52,760 --> 00:06:58,427
+So this is the integral from 0 to pi. 
+well I've still got the 1/4 plus, and 
+
+79
+00:06:58,427 --> 00:07:02,917
+then what does this become? 
+By the half angle formula, this is 1 
+
+80
+00:07:02,917 --> 00:07:05,288
+plus. 
+And instead of 2x. 
+
+81
+00:07:05,288 --> 00:07:10,553
+It's cosine 4x over 8, but I would again, 
+if I integrate cosine 4x, x going from 0 
+
+82
+00:07:10,553 --> 00:07:18,598
+to pi, that's integrating cosine ove 2 
+complete periods that ends up cancelling. 
+
+83
+00:07:18,598 --> 00:07:23,458
+So I can just throw that term away, and 
+all I'm really integrating now is a 
+
+84
+00:07:23,458 --> 00:07:29,309
+quarter plus an 8. 
+Well thats 3 8ths, but I'm integrating 
+
+85
+00:07:29,309 --> 00:07:36,410
+over an interval of life pi, so this 
+definite integral is 3 8ths pi. 
+
+86
+00:07:36,410 --> 00:07:40,041
+This turn out to be not so bad. 
+See I'm getting an answer of 3 8ths pi, 
+
+87
+00:07:40,041 --> 00:07:45,125
+but that's not really the point right? 
+The cool thing about setting this up as a 
+
+88
+00:07:45,125 --> 00:07:51,395
+definite integral is really just how easy 
+it is to do the calculation since I can 
+
+89
+00:07:51,395 --> 00:08:00,773
+throw away some terms along the way that 
+I know would integrate to zero. 

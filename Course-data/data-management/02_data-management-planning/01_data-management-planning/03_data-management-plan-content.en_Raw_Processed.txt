@@ -1,0 +1,148 @@
+music 
+in three data management 
+policies, dmp describe in detail 
+major aspects data management 
+throughout research life cycle 
+here is a checklist a data management 
+plan digital curation center 
+that list questions that 
+addressed in dmp 
+data will you collect create 
+to answer this question, you 
+provide a description data, 
+including type, format, volume, 
+a justification format choice 
+if there storage implications 
+due to format volume data 
+you include well 
+will data collected created 
+describe data collection 
+methods to used, 
+including standards 
+that dictate methods 
+you also discuss plans 
+organizing data files 
+applying version control, 
+well quality assurance 
+protocols will implemented 
+data collection 
+documentation metadata 
+will accompany data 
+is important to determine 
+information will required to ensure 
+that data understandable to 
+secondary users data, 
+you team in future 
+in words, you 
+describe type documentation 
+that will needed to accompany data 
+in order to interpret use 
+documents might include 
+a description methodologies, 
+a codebook that provides variable 
+value definitions, questionnaires 
+instruments, analysis procedures 
+will you manage ethical issues 
+dmp demonstrate 
+that you considered critical 
+issues related to laws guidelines 
+regarding protection 
+human subjects 
+if project will conduct research 
+involving human participants, 
+you need to describe provisions 
+protecting confidentiality 
+this include strategies 
+handling 
+storing sensitive data, 
+restricting access to sensitive data, 
+preparing deindentified datasets 
+sharing 
+will you manage copyright 
+intellectual property rights issues 
+this is legal issues data 
+ownership need to addressed 
+you need to identify owner data 
+conditions using data 
+if you reusing thirdparty 
+data particularly property data 
+you discuss permissions 
+data producer 
+will data stored 
+backed research 
+to answer this question, you 
+describe provisions storage 
+degree to adequate 
+type size data 
+provisions 
+storage include plans 
+systematic back ups data files 
+will you manage access security 
+if data sensitive 
+otherwise restricted 
+to authorize project personnel 
+you describe in 
+detail security measures 
+that will in place to protect data 
+you also need to describe standards 
+security measures comply 
+data retained, 
+shared, andor preserved 
+in thinking data will 
+used others team in 
+future, you make note 
+potential value data effort 
+that will required to prepare 
+datasets preservation access 
+is longterm preservation 
+plan dataset 
+answering this question requires you 
+to identify repository you will 
+use to archive data plans 
+to prepare document data 
+to ensure that will preserved 
+usable foreseeable future 
+will you share data 
+here you identify mechanism 
+you will use to share data 
+describe others might find data 
+data files will delivered 
+you also specify you would like 
+others to acknowledge sight data 
+restrictions 
+data sharing required 
+again, if privacy concerns affect 
+ability to share project data, 
+you will need to discuss 
+you will overcome concerns 
+to enable data sharing whether 
+providing anonymized versions data 
+requiring a data use agreement 
+mechanisms 
+you may also choose to place 
+an embargo data, 
+to ensure you exclusive use 
+data a period time 
+if this is case, 
+you explain this is necessary 
+will responsible 
+data management 
+quite simply, you need to identify, 
+name if possible, 
+will oversee implementation 
+data management plan 
+resources will you require 
+to implement plan 
+projects complex data, 
+whether due to type, size, fact 
+that project activities geographically 
+distributed among different institutions, 
+data management might require specialized 
+expertise special equipment 
+you may also consider costs 
+associated performing ongoing 
+data management tasks, 
+well resources required 
+longterm preservation 
+data in a repository 
+music 

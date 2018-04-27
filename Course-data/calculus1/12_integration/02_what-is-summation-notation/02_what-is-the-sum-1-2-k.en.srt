@@ -1,0 +1,393 @@
+1
+00:00:05,380 --> 00:00:10,586
+Let's do another summation problem.
+The summation problem that I want to do,
+
+2
+00:00:10,586 --> 00:00:14,765
+is the sum as n goes from 1 to a some
+number k of just n.
+
+3
+00:00:14,765 --> 00:00:19,681
+Alright?
+In other words, I want to add up 1 plus 2
+
+4
+00:00:19,681 --> 00:00:25,840
+plus 3 dot, dot, dot plus k, right.
+I want to add up the first k whole
+
+5
+00:00:25,840 --> 00:00:29,469
+numbers.
+These are called triangular numbers.
+
+6
+00:00:29,469 --> 00:00:34,270
+The reason is because performing this sum
+is really counting the dots in a triangle.
+
+7
+00:00:34,270 --> 00:00:42,282
+Let me draw a picture.
+So, 1 dot, 2 dots Three dots, four dots,
+
+8
+00:00:42,282 --> 00:00:45,054
+five dots.
+All right?
+
+9
+00:00:45,055 --> 00:00:49,597
+And then I'll keep on going until I get to
+K dots.
+
+10
+00:00:49,598 --> 00:00:52,802
+You know, and this picture here is a
+triangle.
+
+11
+00:00:52,802 --> 00:00:56,196
+Right?
+So this sum is counting the number of dots
+
+12
+00:00:56,196 --> 00:01:00,290
+in a triangle.
+Having that k there makes this a very
+
+13
+00:01:00,290 --> 00:01:05,583
+general problem, and anytime that you're
+confronted with a general problem, it
+
+14
+00:01:05,583 --> 00:01:10,263
+helps to specialize to a specific case.
+In order to gain some insight.
+
+15
+00:01:10,263 --> 00:01:15,545
+So let's set k equal to 10.
+So I'm just going to do the sum n goes
+
+16
+00:01:15,545 --> 00:01:22,852
+from 1 to k which is now 10 of n.
+Which means I'm going to add 1 plus 2 plus
+
+17
+00:01:22,852 --> 00:01:28,285
+3 plus 4 plus 5 plus 6 plus 7 plus 8 plus
+9 plus 10.
+
+18
+00:01:28,285 --> 00:01:39,569
+I could actually draw this as a triangle.
+Put down 1 dot, 2 dots, 3 dots, 4 dots, 5
+
+19
+00:01:39,569 --> 00:01:49,290
+dots, 6 dots, 7 dots, 8 dots, 9 dots, 10
+dots.
+
+20
+00:01:49,291 --> 00:01:55,801
+[laugh] So I've got this triangle, and
+this sum is just the number of dots in
+
+21
+00:01:55,801 --> 00:01:59,000
+this triangle.
+Now I just count those dots.
+
+22
+00:01:59,000 --> 00:02:04,856
+I just add those numbers up.
+1 plus 2 is 3, 3 plus 3 is 6, 6 plus 4 is
+
+23
+00:02:04,856 --> 00:02:13,498
+10, 10 plus 5 is 15, 15 plus 6 is 21, 21
+plus 7 is 28, 28 plus 8 is 36, 36 plus 9
+
+24
+00:02:13,498 --> 00:02:17,996
+is 45, and 45 plus 10.
+Is 55.
+
+25
+00:02:17,996 --> 00:02:23,368
+So the sum of the first 10 whole numbers
+is 55, and I drew 55 dots to make this
+
+26
+00:02:23,368 --> 00:02:26,396
+triangle.
+But there's another approach.
+
+27
+00:02:26,396 --> 00:02:31,076
+Instead of just adding 1 plus 2 plus 3
+plus 4 plus 5 plus 6 plus 7 plus 8 plus 9
+
+28
+00:02:31,076 --> 00:02:34,124
+plus 10, I could add these in a different
+order.
+
+29
+00:02:34,124 --> 00:02:39,665
+I could add 1 and 10 together to make 11.
+2 and 9 together to make 11.
+
+30
+00:02:39,665 --> 00:02:44,684
+3 and 8 together to make 11.
+4 and 7 together to make 11 , and I'm left
+
+31
+00:02:44,684 --> 00:02:48,115
+with 5 and 6 and those two together make
+11, right?
+
+32
+00:02:48,115 --> 00:02:54,340
+So I've got five groups of 11, which means
+if I add up all these numbers I get 55.
+
+33
+00:02:54,340 --> 00:02:59,742
+Armed with this trick I can do the same
+thing to attack the problem in general.
+
+34
+00:02:59,743 --> 00:03:05,990
+So in general, I'm trying to do the sum, n
+goes from 1 to k of just n.
+
+35
+00:03:05,990 --> 00:03:09,187
+Trying to add up the first k whole
+numbers.
+
+36
+00:03:09,188 --> 00:03:12,830
+And if I write this in a different order,
+and let's say k is even, just to make this
+
+37
+00:03:12,830 --> 00:03:16,875
+a little bit easier to think about.
+Alright I'll take the first number and the
+
+38
+00:03:16,875 --> 00:03:22,460
+last number, and add those together.
+The second number and the second-to-last
+
+39
+00:03:22,460 --> 00:03:27,842
+number and add those together.
+The third number and the third-to-last
+
+40
+00:03:27,842 --> 00:03:32,004
+number, and add those together.
+And I'm going to keep on going, right?
+
+41
+00:03:32,005 --> 00:03:36,755
+And the first number and the last number
+is, you know, I'm writing it as 1 plus K,
+
+42
+00:03:36,755 --> 00:03:40,725
+that's fine.
+The second number and the second-to-last
+
+43
+00:03:40,725 --> 00:03:44,618
+number, well that's also 1 plus K.
+All right, the third number and the
+
+44
+00:03:44,618 --> 00:03:46,882
+third-to-last that's also 1 plus K.
+Right?
+
+45
+00:03:46,882 --> 00:03:51,200
+All of these things add up to 1 plus K.
+And the key question is just how many
+
+46
+00:03:51,200 --> 00:03:53,344
+things I've got.
+All right?
+
+47
+00:03:53,344 --> 00:03:56,750
+And I'm pairing them off in twos.
+So, let's say this is an even number.
+
+48
+00:03:56,750 --> 00:04:00,480
+K is an even number.
+And I've got K over 2 pairs.
+
+49
+00:04:00,480 --> 00:04:05,182
+All of which add up to K plus 1.
+And that's just a multiplication problem.
+
+50
+00:04:05,182 --> 00:04:10,663
+Right?
+That means that this sum is 1 plus k times
+
+51
+00:04:10,663 --> 00:04:15,200
+k over 2.
+So that's the sum of the first k whole
+
+52
+00:04:15,200 --> 00:04:18,388
+numbers.
+If all this algebra doesn't really speak
+
+53
+00:04:18,388 --> 00:04:21,404
+to you.
+We can redo this geometrically.
+
+54
+00:04:21,405 --> 00:04:23,750
+So what I want to calculate, right, is
+this sum.
+
+55
+00:04:23,750 --> 00:04:29,740
+The sum as n goes from 1 to k of n.
+And geometrically, right, I can draw this
+
+56
+00:04:29,740 --> 00:04:34,510
+pattern of dots, right?
+1 plus 2 plus 3 plus 4 plus 5 plus 6 in
+
+57
+00:04:34,510 --> 00:04:37,127
+this case.
+But I could imagine that, you know, this
+
+58
+00:04:37,127 --> 00:04:39,944
+is a specific picture that represents the
+general case, right?
+
+59
+00:04:39,945 --> 00:04:44,160
+I've got this triangle, a k by k triangle
+of dots.
+
+60
+00:04:44,160 --> 00:04:47,471
+And this sum is just counting the number
+of dots.
+
+61
+00:04:47,472 --> 00:04:49,875
+Right?
+1 plus 2 plus 3, that's exactly what the
+
+62
+00:04:49,875 --> 00:04:52,450
+sum does.
+Now I'm going to count these dots.
+
+63
+00:04:52,450 --> 00:04:57,056
+So I'll make two copies of this picture.
+So now I've got two copies of this sum.
+
+64
+00:04:57,056 --> 00:05:00,139
+Right?
+There's another k by k triangle of dots.
+
+65
+00:05:00,140 --> 00:05:06,471
+And to count these dots I'm going to take
+this triangle, rotate it, and slide it
+
+66
+00:05:06,471 --> 00:05:10,526
+over here.
+So as to make not a k by k square, but
+
+67
+00:05:10,526 --> 00:05:14,393
+this is a k plus 1 by k rectangle,
+alright?
+
+68
+00:05:14,394 --> 00:05:19,513
+As the bottom of this one just fits in,
+but it's a little bit wider.
+
+69
+00:05:19,513 --> 00:05:22,754
+I got this k plus 1 by k rectangle of
+dots.
+
+70
+00:05:22,754 --> 00:05:28,052
+So I know there's k plus 1 times k dots
+and this is two copies of the sum that I'm
+
+71
+00:05:28,052 --> 00:05:31,652
+interested in.
+So 2 times the sum I'm interested in is k
+
+72
+00:05:31,652 --> 00:05:34,964
+plus 1 times k, the number of dots in this
+rectangle.
+
+73
+00:05:34,964 --> 00:05:40,200
+And consequently if I just divide by 2 I
+get the formula that I'm interested in.
+
+74
+00:05:40,200 --> 00:05:44,627
+The sum of n, n goes from 1 to k is k plus
+1 times k over 2, right.
+
+75
+00:05:44,628 --> 00:05:49,690
+It's half of the number of dots in this k
+plus 1 by k rectangle.
+
+76
+00:05:49,690 --> 00:05:54,955
+A big part of the joy of mathematics is
+that the same ideas can be presented with
+
+77
+00:05:54,955 --> 00:05:58,865
+very different clothing.
+In this case, we're seeing really the same
+
+78
+00:05:58,865 --> 00:06:07,610
+argument.
+But presented both algebraically and
+
+79
+00:06:07,610 --> 00:06:11,188
+geometrically.

@@ -1,0 +1,165 @@
+music 
+welcome 
+is good to see you back 
+this lesson 
+in previous videos, we explored 
+a monolithic kernel main features 
+now, we will move another 
+kind kernel, microkernel 
+in this video, we will cover 
+definition microkernel, 
+compares to monolithic kernel, 
+advantages disadvantages 
+lets begin 
+interesting questions 
+is microkernel, 
+is main difference between 
+a monolithic kernel microkernel 
+answering questions, 
+lets go back briefly to 
+lesson monolithic linux kernel 
+in a monolithic kernel, important 
+functions services operating 
+system, file system device 
+drivers, executed in kernel mode 
+a result, kernel is large 
+millions lines code inside 
+in contrast, in a microkernel, 
+almost functions 
+services removed kernel 
+mode relocated user mode 
+a result, kernel size is minimal 
+this point, there may 
+a question raising in mind 
+is main function kernel, 
+
+if almost 
+functions removed 
+comparing a microkernel based 
+system a conventional one, 
+main difference is that 
+operating systems code 
+runs a separate process, 
+mostly outside kernel 
+then, tasks left 
+kernel interrupt handling, 
+lowlevel process management 
+message passing handling 
+now, lets talk interprocess 
+communication in microkernels 
+a common communication method in 
+microkernels is message passing 
+to better understand it, 
+we must address three issues 
+is interprocess communication 
+is a message, 
+message passing work 
+interprocess communication, ipc 
+short, refers to mechanism that 
+an operating system provides 
+exchanging information among 
+processes a message is simply 
+data that is transferred 
+one process to another using ipc 
+in a microkernel, messages 
+passed using message registers 
+this is a sending process, 
+writes a message to register 
+receiving process, 
+receiving process read data 
+sometimes data to sent 
+larger receivers register, 
+in case, 
+message contains a reference 
+to a shared memory region 
+data is stored 
+ipc is synchronous, 
+meaning that a message is 
+sent one process to another, 
+processes must call 
+corresponding ipc operation 
+a sender will log until either 
+receiver performed ipc call, 
+a specified time 
+interval lapsed 
+is important to mention that ipc 
+use intermediate buffers 
+therefore, improving efficiency 
+reducing complexity operation 
+lets move to advantages 
+microkernels 
+one main advantages 
+a microkernel is that code is minimal 
+is often case that 
+less code is written, 
+less probability 
+that an error occur 
+benefits, due to a minimal kernel 
+small trusted computing base 
+suitability verification 
+trusted computing base 
+is related to security 
+in computer security terminology, 
+trusted computing base is set 
+hardware, software 
+procedural components that 
+enforce security policy 
+this means that in order 
+to break security, 
+an attacker must subvert one 
+
+regarding verification, benefit 
+a small quote size is obvious 
+less code we have, 
+simpler is verifying 
+finally, due to modularity 
+microkernel, 
+is easy to add software to system, 
+thus making scalable extensible 
+we already talked 
+advantages microkernels, 
+drawbacks 
+didnt microkernel 
+actually win race 
+although seemed to 
+a better idea in 
+to answer this question, lets go 
+a simple example like creating a file 
+in order to create a file 
+in a monolithic kernel, 
+is necessary to perform 
+a context to switch two times 
+first one occurs system 
+switches application 
+to kernel, so 
+file operation executed 
+second one occurs kernel 
+gives control back to calling process 
+now, in case a microkernel, 
+expensive is file operation 
+in terms context switching 
+well, turns takes a lot 
+context switching between kernel 
+user process 
+reason 
+this is that is necessary to 
+switch among multiple processors 
+one controlling a small function 
+in this particular example, one process 
+may in charge file system 
+while another handles device driver 
+a result, overall system 
+response becomes slower 
+this overhead is limited 
+to inputoutput operations 
+kernel services, interprocess 
+communication, also affected 
+in this video, well describe 
+important features microkernels 
+however, to get a deeper 
+understanding details, 
+i recommend you go 
+suggested materials 
+thanks watching, 
+see you in coming videos 
+sound 

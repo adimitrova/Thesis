@@ -1,0 +1,509 @@
+1
+00:00:00,000 --> 00:00:04,400
+[MUSIC] So, there's all these different 
+ways of taking two functions and 
+
+2
+00:00:04,400 --> 00:00:08,250
+producing new functions. 
+You could add, subtract, multiply, divide 
+
+3
+00:00:08,250 --> 00:00:12,712
+two functions, and could take two 
+functions and compose them, meaning that 
+
+4
+00:00:12,712 --> 00:00:16,073
+the output for the one becomes the input 
+for the other. 
+
+5
+00:00:16,073 --> 00:00:20,962
+In light to this, I'd encourage you just 
+to pick up your pen and just write down 
+
+6
+00:00:20,962 --> 00:00:22,979
+some extraordinarily complicated 
+functions, 
+
+7
+00:00:22,979 --> 00:00:25,851
+alright? 
+The function that you write down has 
+
+8
+00:00:25,851 --> 00:00:29,580
+probably never been written down in the 
+history of humankind. 
+
+9
+00:00:29,580 --> 00:00:33,710
+I mean, there's just so many different 
+choices that you could make when you are 
+
+10
+00:00:33,710 --> 00:00:37,951
+combining all the algebraic operations. 
+And that's part of what makes Calculus so 
+
+11
+00:00:37,951 --> 00:00:38,684
+amazing, 
+right? 
+
+12
+00:00:38,684 --> 00:00:41,357
+There's just a huge variety of functions 
+out there. 
+
+13
+00:00:41,357 --> 00:00:45,183
+But not, not every function really has 
+its source in just combinations of 
+
+14
+00:00:45,183 --> 00:00:46,441
+algebraic symbols, 
+right? 
+
+15
+00:00:46,441 --> 00:00:50,266
+A lot of the functions that we want to 
+study are really functions that are 
+
+16
+00:00:50,266 --> 00:00:53,725
+somehow coming from the real world. 
+So, I want to see some real world 
+
+17
+00:00:53,725 --> 00:00:58,862
+examples of, of functions right now. 
+So, here's one unit conversion from 
+
+18
+00:00:58,862 --> 00:01:03,474
+Celsius to Fahrenheit. 
+These are two different temperature 
+
+19
+00:01:03,474 --> 00:01:06,574
+scales. 
+So, the function would be f of x, 
+
+20
+00:01:06,574 --> 00:01:12,140
+it's 9 * x / 5 + 32. 
+So, this is just a linear function. 
+
+21
+00:01:12,140 --> 00:01:18,023
+It's a number times x plus a number. 
+let's take a look what's f of zero. 
+
+22
+00:01:18,023 --> 00:01:24,934
+And that would be 9 * 0 / 5 + 32. 
+Well, that's zero plus 32, that just 32 
+
+23
+00:01:24,934 --> 00:01:31,286
+and, of course, zero degrees Celsius is 
+the same thing as 32 degrees Fahrenheit. 
+
+24
+00:01:31,286 --> 00:01:35,673
+Here's another example. 
+What's f of, say, 37? 
+
+25
+00:01:35,673 --> 00:01:46,653
+Well, that's nine * 37 / 5 + 32. 
+9 * 37 is 333 / 5 + 32. 
+
+26
+00:01:46,653 --> 00:01:57,633
+333 / 5 is 66.6, so 66.6 + 32 is 98.6. 
+And indeed, 37 degrees Celsius is the 
+
+27
+00:01:57,633 --> 00:02:06,906
+same thing as 98.6 degrees Fahrenheit. 
+So, this function takes in something in 
+
+28
+00:02:06,906 --> 00:02:11,080
+Celsius and spits out something in 
+Fahrenheit. 
+
+29
+00:02:11,080 --> 00:02:15,622
+Unit conversion is an example of a 
+function, but hardly the coolest example. 
+
+30
+00:02:15,622 --> 00:02:18,611
+This is a much cooler example from the 
+real world. 
+
+31
+00:02:18,611 --> 00:02:21,002
+What is this thing? 
+Well, this thing here is a 
+
+32
+00:02:21,002 --> 00:02:24,051
+microcontroller. 
+So, a very small computer and it's 
+
+33
+00:02:24,051 --> 00:02:26,980
+attached to a couple light emitting 
+diodes, LEDs. 
+
+34
+00:02:26,980 --> 00:02:31,158
+With a name like light emitting diode, 
+you might think that they light up, and 
+
+35
+00:02:31,158 --> 00:02:33,926
+they could. 
+But in this circuit, I'm using the light 
+
+36
+00:02:33,926 --> 00:02:37,128
+emitting diodes in reverse. 
+I'm using them as light sensors. 
+
+37
+00:02:37,128 --> 00:02:40,818
+This one happens to be a red one. 
+This one happens to be a green one. 
+
+38
+00:02:40,818 --> 00:02:44,888
+So, what this circuit does is let me 
+detect how much red and green light is 
+
+39
+00:02:44,888 --> 00:02:48,362
+falling on these sensors. 
+At the other end is a USB cable and it 
+
+40
+00:02:48,362 --> 00:02:51,130
+plugs into my computer so I can record 
+the results. 
+
+41
+00:02:51,130 --> 00:02:55,674
+The data that I gathered from the real 
+world using the microcontroller. 
+
+42
+00:02:55,674 --> 00:03:00,888
+It's really two different functions. 
+A function for the red LED and a function 
+
+43
+00:03:00,888 --> 00:03:04,831
+for the green LED. 
+Along the x-axis, I've plotted the number 
+
+44
+00:03:04,831 --> 00:03:08,975
+of seconds that have elapsed since June 
+5th, 2012 at 6:0303 p.m. 
+
+45
+00:03:08,975 --> 00:03:13,586
+And on the y-axis, I'm plotting the 
+number of clock cycles it took to 
+
+46
+00:03:13,586 --> 00:03:17,010
+discharge the LED. 
+So, what is the red function do? 
+
+47
+00:03:17,010 --> 00:03:21,306
+It's input is a number a number of 
+seconds that have elapsed since this 
+
+48
+00:03:21,306 --> 00:03:25,086
+particular moment in time. 
+It's output is how many clock cycles it 
+
+49
+00:03:25,086 --> 00:03:28,810
+takes at that particular moment in time 
+to discharge the red LED. 
+
+50
+00:03:28,810 --> 00:03:31,985
+Now, this thing was sitting in my 
+windowsill, right? 
+
+51
+00:03:31,985 --> 00:03:35,986
+And the sun was rising. 
+And as the sun rises, there's more light 
+
+52
+00:03:35,986 --> 00:03:41,130
+shining on the sensors which means fewer 
+clock cycles are necessary to discharge 
+
+53
+00:03:41,130 --> 00:03:43,861
+the LED. 
+And you can see that in this graph, 
+
+54
+00:03:43,861 --> 00:03:46,909
+right? 
+The red function is decreasing as the sun 
+
+55
+00:03:46,909 --> 00:03:49,830
+rises. 
+There's tons more examples of functions 
+
+56
+00:03:49,830 --> 00:03:53,323
+coming from the real world. 
+Here's one, human population. 
+
+57
+00:03:53,323 --> 00:03:56,890
+It's a function. 
+The input is a year, the output is the 
+
+58
+00:03:56,890 --> 00:04:02,126
+number of people alive during that year. 
+If you want to see this function just 
+
+59
+00:04:02,126 --> 00:04:07,094
+take a look at Wikipedia and their 
+article on population growth. There's a 
+
+60
+00:04:07,094 --> 00:04:12,531
+graph of that function, along the x-axis 
+is years and along the y-axis is human 
+
+61
+00:04:12,531 --> 00:04:16,061
+population. 
+And as long as researching the Internet, 
+
+62
+00:04:16,061 --> 00:04:19,106
+here's another example of a real world 
+function. 
+
+63
+00:04:19,106 --> 00:04:23,737
+It's a function I'll call f of n, and 
+it'll be defined by the rule f of n 
+
+64
+00:04:23,737 --> 00:04:27,861
+equals the number of Google hits when we 
+search for the number n. 
+
+65
+00:04:27,861 --> 00:04:32,775
+Let's try it out. 
+Let's figure out some values of this 
+
+66
+00:04:32,775 --> 00:04:37,888
+function like f of 188. 
+So I plug 188 into Google, and I find 
+
+67
+00:04:37,888 --> 00:04:44,294
+that there's about 1.08 billion hits. 
+So, the function at 188 is about a 
+
+68
+00:04:44,294 --> 00:04:51,602
+billion, alright, the input is 188 and 
+the output of this function is the number 
+
+69
+00:04:51,602 --> 00:04:57,377
+of Google hits. 
+let's try about 4 * 188, that's 752. And 
+
+70
+00:04:57,377 --> 00:05:01,527
+if I search for that, there's 308 million 
+hits, 
+
+71
+00:05:01,527 --> 00:05:05,858
+alright? 
+So, f, the function, at 752 is about 300 
+
+72
+00:05:05,858 --> 00:05:09,694
+million. 
+if we're persistent, we can plug inn lots 
+
+73
+00:05:09,694 --> 00:05:13,800
+of numbers, and make a really 
+nice-looking chart like this. 
+
+74
+00:05:13,800 --> 00:05:16,453
+Now, you do this for hundreds of numbers, 
+right? 
+
+75
+00:05:16,453 --> 00:05:20,088
+You type them into Google, you see how 
+many Google hits you get. 
+
+76
+00:05:20,088 --> 00:05:23,781
+And you can plot them, right? 
+It's a function so you can the graph of 
+
+77
+00:05:23,781 --> 00:05:26,434
+the function. 
+Along the x-axis is the number that I 
+
+78
+00:05:26,434 --> 00:05:30,704
+typed into Google. On the y-axis is the 
+millions of Google hits that I get. 
+
+79
+00:05:30,704 --> 00:05:34,396
+And when you look at the graph of this 
+function, it's not random. 
+
+80
+00:05:34,396 --> 00:05:38,204
+There's real structure here, right? 
+The function is decreasing, right? 
+
+81
+00:05:38,204 --> 00:05:42,012
+Larger values get smaller outputs 
+because, you know, there is fewer 
+
+82
+00:05:42,012 --> 00:05:46,570
+webpages that talk about really large 
+numbers than about popular small numbers. 
+
+83
+00:05:46,570 --> 00:05:51,282
+But even more dramatically, when you plot 
+this on this special log, log graph 
+
+84
+00:05:51,282 --> 00:05:55,064
+paper, the graph looks like it's sitting 
+near a straight line. 
+
+85
+00:05:55,064 --> 00:05:58,785
+I mean, that's, that's really amazing 
+when you think about it. 
+
+86
+00:05:58,785 --> 00:06:03,621
+I mean, this is some sort of pattern 
+that's just hidden in the number of pages 
+
+87
+00:06:03,621 --> 00:06:05,768
+that talk about numbers. 
+I mean why? 
+
+88
+00:06:05,768 --> 00:06:09,840
+Where is this coming from, right? 
+It's a function from the real world. 
+
+89
+00:06:09,840 --> 00:06:12,800
+Input is a number. 
+The output is a number. 
+
+90
+00:06:12,800 --> 00:06:16,901
+We want to understand that function. 
+Calculus is part of the tool kit for 
+
+91
+00:06:16,901 --> 00:06:19,903
+analyzing problems like this. 
+So, we've seen what functions do. 
+
+92
+00:06:19,903 --> 00:06:22,906
+They take their input and they transform 
+in into some output. 
+
+93
+00:06:22,906 --> 00:06:25,318
+And we've even sort of got this mental 
+image now, 
+
+94
+00:06:25,318 --> 00:06:28,616
+this metaphor of a machine. 
+A conveyor belt that's transforming the 
+
+95
+00:06:28,616 --> 00:06:31,520
+input into the output. 
+We've seen how to build a lot of new 
+
+96
+00:06:31,520 --> 00:06:34,228
+functions using algebra. 
+or say, composing two functions. 
+
+97
+00:06:34,228 --> 00:06:36,875
+And we've thought about some real world 
+examples. 
+
+98
+00:06:36,875 --> 00:06:43,145
+[MUSIC] Now, we're going to be thinking 
+more about functions for the rest of the 
+
+99
+00:06:43,145 --> 00:06:46,672
+term. 
+But if you've got questions right now, I 
+
+100
+00:06:46,672 --> 00:06:50,434
+encourage you to contact me as soon as 
+possible. 
+
+101
+00:06:50,434 --> 00:06:55,294
+And I encourage you to get started on the 
+homework right away. 
+
+102
+00:06:55,294 --> 00:06:56,078
+Good luck. 
+[MUSIC] 

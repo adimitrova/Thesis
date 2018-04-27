@@ -1,0 +1,202 @@
+1
+00:00:00,038 --> 00:00:05,121
+[music]
+
+2
+00:00:05,121 --> 00:00:07,600
+Where are we in the course?
+
+3
+00:00:07,600 --> 00:00:10,850
+Well we've seen some stuff about
+anti-differentation, alright.
+
+4
+00:00:10,850 --> 00:00:13,430
+We learned how to start with a function,
+and
+
+5
+00:00:13,430 --> 00:00:16,320
+find a function whose derivative is that
+original function.
+
+6
+00:00:17,320 --> 00:00:21,380
+We've also had the sudden change of pace,
+where we looked at integrals.
+
+7
+00:00:21,380 --> 00:00:23,389
+We looked at areas under the curves.
+
+8
+00:00:24,810 --> 00:00:26,050
+And now, I want to take those
+
+9
+00:00:26,050 --> 00:00:30,520
+two seemingly unrelated topics and connect
+them together.
+
+10
+00:00:30,520 --> 00:00:33,970
+That's what the fundamental theorem of
+calculus is, is going to do for us.
+
+11
+00:00:33,970 --> 00:00:36,420
+Alright, the fundamental theorem of
+calculus, tells us
+
+12
+00:00:36,420 --> 00:00:42,090
+that evaluating integrals really amounts
+to finding anti-derivatives.
+
+13
+00:00:42,090 --> 00:00:44,800
+These two seemingly unrelated concepts of
+
+14
+00:00:44,800 --> 00:00:48,220
+differentiation, and integration are
+really related.
+
+15
+00:00:49,600 --> 00:00:52,950
+And this is really key insight of calculus
+as a whole.
+
+16
+00:00:52,950 --> 00:00:58,530
+I mean think about it, in what sense did
+Newton and Leibniz discover calculus.
+
+17
+00:00:58,530 --> 00:01:01,730
+Greek mathematics had these ideas right,
+Greek mathematicians
+
+18
+00:01:01,730 --> 00:01:06,000
+were calculating areas of curved objects
+by taking limits.
+
+19
+00:01:06,000 --> 00:01:08,020
+I have formulas for the areas of circles.
+
+20
+00:01:09,640 --> 00:01:14,440
+And the idea is of slope, okay, predate
+Newton and Livenets.
+
+21
+00:01:14,440 --> 00:01:17,200
+So, what was the insight that, that means
+
+22
+00:01:17,200 --> 00:01:20,475
+that we credit Newton and Leibniz with
+discovering calculus?
+
+23
+00:01:20,475 --> 00:01:23,690
+What really amounts to the fundamental
+theorem of calculus?
+
+24
+00:01:23,690 --> 00:01:25,780
+It amounts to this idea that,
+
+25
+00:01:25,780 --> 00:01:28,640
+differentiation and integration are
+somehow related.
+
+26
+00:01:30,010 --> 00:01:33,780
+By thinking systematically and precisely,
+about
+
+27
+00:01:33,780 --> 00:01:35,790
+how a function changes when you wiggle
+
+28
+00:01:35,790 --> 00:01:38,530
+its input, and in particular, thinking
+
+29
+00:01:38,530 --> 00:01:41,680
+about a derivative of the accumulation
+function.
+
+30
+00:01:41,680 --> 00:01:45,140
+Alright, we're able to see this, this
+relationship between
+
+31
+00:01:45,140 --> 00:01:48,820
+evaluating a definite integral, and
+finding an AI derivative.
+
+32
+00:01:50,010 --> 00:01:53,250
+And I want to do more now, than, than just
+show
+
+33
+00:01:53,250 --> 00:01:57,400
+you how to calculate integrals, by using
+the fundamental theorem of calculus.
+
+34
+00:01:57,400 --> 00:02:00,150
+That will be a big thing too, just the
+process of computing.
+
+35
+00:02:00,150 --> 00:02:02,240
+But I hope, that you'll understand some of
+the
+
+36
+00:02:02,240 --> 00:02:05,670
+reasons why, the fundamental theorem of
+calculus is true.
+
+37
+00:02:05,670 --> 00:02:07,549
+So, I want to look at the fundamental
+theorem
+
+38
+00:02:07,549 --> 00:02:10,280
+of calculus just from a lot of different
+perspectives.
+
+39
+00:02:10,280 --> 00:02:15,640
+Alright, we should come on away from this,
+not just with the ability to compute,
+
+40
+00:02:15,640 --> 00:02:18,748
+but also the ability to really communicate
+sort
+
+41
+00:02:18,748 --> 00:02:22,724
+of an understanding, of this absolutely
+amazing theorem.
+
+42
+00:02:22,724 --> 00:02:31,077
+[MUSIC]
+
+43
+00:02:31,077 --> 00:02:33,899
+[BLANK_AUDIO]

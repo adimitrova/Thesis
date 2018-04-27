@@ -1,0 +1,225 @@
+music 
+hello, i glad to see you back 
+this lesson 
+in previous lessons, 
+we explored contikis kernel architecture 
+we will look details 
+contikis services libraries 
+end lesson, 
+you understand benefits 
+challenges using developing 
+services libraries in contiki 
+first all, 
+i will go directly to a question 
+is a service in contiki 
+we mentioned before, 
+services implemented modules 
+so a particular service is required 
+corresponding module is loaded 
+thus making contiki run efficiently 
+a certain point view, a service is 
+different application programs 
+since a service used 
+several application programs 
+in words, 
+a service is a type shared library 
+one benefits contiki services 
+is that 
+dynamically replaced random 
+mentioned before, this strategy 
+contiki minimizes number modules 
+to loaded booting time 
+a result, memory researches 
+used efficiently 
+an example, popular 
+hag intensive use services in kentucky 
+communication stacks 
+sensor device drivers 
+kind services will 
+discussed in depth in coming videos 
+this short introduction, 
+i assume that you already 
+a basic idea contiki services 
+now, we going to take a look 
+skin contiki services 
+components related to services 
+in every operating system, service 
+a unique identifier, 
+defined system users 
+format identifier 
+write depending 
+a particular operating system 
+in contiki, a service identifier 
+is a textual string that describes 
+functionality service 
+identifiers used application 
+programs invoke a service 
+a service is requested, service 
+layer uses ordinary string matching 
+querying installed services 
+you may wondering, 
+is a service layer 
+surface layer is a component located 
+between kernel services 
+a process wants to call a service, 
+posts an event to colonial, 
+in turn sends a command 
+information related to requested 
+service to service leader 
+this layer uses this data 
+querying a matching services 
+instead searching 
+services in kernel, 
+searching job will 
+service layer 
+everything we discussed so 
+far unveiled actual 
+structure a service in contiki 
+therefore, we going to 
+explore structure a service 
+a service includes a service interface 
+a process 
+a service interface 
+provides an entry point 
+that an application uses to access 
+functionality exposed service 
+service interface 
+includes a version number 
+a list functions pointers to 
+functions that implement interface 
+services application programs 
+use a stub library to communicate 
+a stub library work 
+a stub library that linked 
+an application utilizes 
+service layer purpose 
+finding corresponding service process 
+a service located, 
+service is stopped, 
+gets process identifier, 
+will used later requests 
+using a stub library an application 
+need to know exact 
+location in memory service, 
+implementation details service 
+a service is called 
+first time stub library queries 
+service layer searching 
+necessary service 
+a result, if there is an instance 
+service in system, 
+service layer will return 
+a pointer to service interface 
+this, version number 
+in service interface 
+will compared to stub 
+interfaces number 
+if identical, 
+implementation requested 
+service will delivered 
+next, i going to explain 
+service replacement 
+is service replacement in contiki 
+we know, services in contiki 
+dynamically loaded replaced 
+however, would become unmanageable if 
+process identifier would changed 
+therefore, in order to avoid this issue, 
+service identifier must remain 
+even if process is replaced 
+a reasonable question would be, 
+is process replaced 
+process identifier is still kept 
+to answer this question, 
+we going to explore mechanism 
+that performs this task in contiki 
+a service is to replaced, 
+a special event is sent kernel to 
+service process to inform running 
+version service changes 
+accordingly, service is 
+automatically removed system 
+however, there 
+cases that many services 
+internal stage that may need to 
+transferred to new process 
+in order to deal cases, 
+a pointer 
+a stage description used 
+passing to new service process 
+in short, this stage description, 
+is stored a shared memory, 
+is a tag motion 
+number service 
+reason 
+this is to avoid that an incorrect 
+version this service is loaded 
+lets talk libraries in contiki 
+we know, kernel in contiki 
+is minimal performs 
+vital functions event handling 
+features cpu multipliers 
+rest system 
+is build a library 
+program needs to use 
+a function provided a library 
+link a library that 
+implements required function 
+there three types linking 
+between an application a library 
+first one is a static link 
+between an application 
+libraries part core 
+second one is a static link 
+between an application 
+libraries part 
+loadable program 
+last one is application 
+call service that 
+implements a specific library 
+a result last method, 
+library implemented services 
+replaced random 
+is difference 
+between linking types 
+libraries part core 
+this means that system 
+is booted rebooted, 
+libraries always automatically 
+loaded along system 
+type libraries loadable 
+program libraries, 
+libraries loaded a program 
+application requires functions 
+libraries rarely used, 
+applicationspecific libraries 
+last term is runtime libraries, 
+implemented services 
+this runtime libraries replaced 
+system is running 
+libraries frequently used 
+to give you a 
+comprehensive understanding 
+different types libraries, 
+i will discuss examples 
+lets discuss two functions commonly used 
+in contiki applications memcpy atoi 
+memcpy function is used 
+copying data between two memory regions, 
+while atoi function is used 
+converting strings integers 
+memcpy is frequently used in contiki, 
+therefor is considered 
+a part core 
+whereas atoi is less frequently used, 
+therefore is included 
+in system core 
+is implemented in 
+loadable program libraries 
+this is 
+lesson contiki service, 
+service replacement, libraries 
+i hope you a good idea 
+contiki features work 
+thanks watching 
+music 

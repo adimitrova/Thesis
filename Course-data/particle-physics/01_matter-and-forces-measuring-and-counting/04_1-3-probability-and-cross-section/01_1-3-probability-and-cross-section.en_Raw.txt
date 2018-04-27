@@ -1,0 +1,344 @@
+[music]
+during this first module,
+we are introducing the objects studied by
+particle physics namely matter, forces and
+space-time but also, of course,
+reactions between particles.
+in this third video,
+we present the concept of probability,
+to characterize the strength
+of fundamental forces.
+we'll also define one of
+the most important quantities in
+particle physics, which is
+called the cross section.
+this quantity allows to calculate and
+to measure the strength
+of subatomic reactions.
+after watching this video, you will be
+able to define the cross section in terms
+of incident flux and
+number of target particles.
+you will also be able to relate the cross
+section to the probability, and
+the rate of a particle reaction.
+in quantum physics the motion of
+fields and their way of interacting
+is described by probability
+amplitudes and probabilities themselves.
+they are defined in a frequentist
+way by multiple measurements.
+for the movement of a particular the wave
+function psi, describes the probability
+amplitude as a function of space-time,
+and the four-momentum of the particle,
+namely as a function of t and x and
+of energy e and momentum p.
+the probability density to find
+the particle at time t and
+at location x, is given by the square
+of the wave function psi* psi.
+integrating this density
+over a finite volume
+gives us the probability that
+the particle is in this volume.
+the probability amplitude m for
+a reaction is the joint
+probability amplitude that two
+current densities j_1 and
+j_2 meet and exchange a virtual photon of
+four-momentum q.
+the probability for the reaction is
+then given by the cross section sigma,
+which is proportional to the square
+of the amplitude |m|^2.
+the physics of particle motion and
+particle reactions is thus expressed
+via statistical probabilities.
+mathematically speaking, a probability
+is a real number between 0 and 1.
+in a frequentist approach, the probability
+is defined as the ratio between the number
+of desired outcomes of an experiment,
+we might call successes, and
+the number of trials it
+took to obtain them.
+in terms of physics, this is
+the ratio between the number of times
+an event happens, and the number
+of times it could have happened.
+an event can for
+example be the localization of
+a particle inside a given volume.
+the ratio can also be the number
+of times a reaction takes place,
+divided by the number of times
+it could have taken place.
+this means in particular that
+reactions do not always happen.
+in fact, we will find that
+they happen rather rarely.
+probabilities follow their own
+relatively simple algebra.
+for our purposes it suffices to
+know our two simple rules.
+the joint probability of
+two independent events
+to happen is the product of
+their individual probabilities.
+the probability that at least one
+of two incompatible events happen,
+is the sum of the two properties.
+the two probabilities, sorry.
+incompatible means that the two events
+cannot be realized at the same time.
+and all of these rules applied to
+the probability amplitudes that we have
+introduces earlier.
+the two limiting cases for
+a probability are p=0 for
+impossible events and
+p=1 for certain events.
+in general,
+we will find that probabilities for
+particle reactions
+are rather small numbers.
+processes which follow probabilistic
+laws are not certain individually,
+but can still be predicted collectively.
+this little simulation shows what is
+called a galton board as an example.
+the small balls are introduced in
+the middle at the top of the board.
+the obstacles scatter them either left or
+right with 50% probability.
+the multiple scatters
+are independent of each other,
+the result does not
+depend on a previous one.
+at the bottom of the board,
+the balls show,
+as you can see, a gaussian distribution
+around the middle position.
+for those of you who know a little
+statistics, this is an example of how
+chains of multiple events with
+an arbitrary individual distribution
+‚êì boolean in this case but
+not necessarily boolean ‚êì
+asymptotically produce
+a gaussian distribution,
+the famous bell-shaped distribution,
+which is perfectly calculable and
+characterized by just two parameters, the
+mean and the width of the distribution.
+but let us come back to particle reaction.
+particle physics explores matter by
+means of scattering experiments.
+for this purpose a beam of particles
+is directed towards a target.
+one counts the number of
+scatters which take place, and
+measures the scattered
+particle direction and energy.
+this sketch shows
+a fictitious situation where each
+target particle is represented
+by a small gray surface.
+let us consider a simple model
+where a reaction takes place if and
+only if, a particle hits a gray surface.
+let us make the assumption that
+the distance between target particles
+is large compared to their size such
+that the gray surfaces do not overlap.
+the interaction thus stays rare.
+in real life this corresponds to
+a target which is made by a thin foil or
+a rarified gas.
+the number of possible
+scatters is evidently
+proportional to the flux of incoming
+particles, of incoming projectiles.
+that is to say,
+their number per unit time which pass
+through a perpendicular surface.
+the number of actual scatters is
+proportional to the number of target
+particles per square meter.
+that is to say,
+the surface density n
+and the individual surface sigma.
+if fact, the probability to
+interact is simply the product
+of the surface density and
+the surface size sigma.
+a small part di of the initial
+flux i will thus be scattered.
+the rest of the flux is just transmitted.
+the small fraction of the scattered
+flux -di/i is
+thus equal to the interaction
+probably n times sigma.
+the density of targets can also be
+expressed as the volume density rho,
+if one multiplies by the infinitesimal
+target thickness, dx.
+integrating over the thickness up to
+‚àÜx, one obtains an exponential law for
+the attenuation of the incident flux.
+we call sigma the cross section for
+the reaction because it has
+the dimension of a surface.
+it has nothing to with the geometrical
+size of the target particle, it rather
+represents the probability of interaction
+between an individual projectile and
+an individual target particle.
+the cross-section is often measured
+in enormous units which are one ‚´‚†barn‚†‚ª 
+ten to the minus 28 square meters,
+which is a very large one.
+the cross-section is,
+thus, a sort of probability expressed
+by strange units, one must admit.
+but the rules for
+probability calculation apply.
+if two processes
+are independent of each other,
+the probabilities just simply add up.
+one distinguishes, for example,
+processes of elastic scattering,
+where the kinetic energy of
+the projectile does not change,
+just its direction changes,
+inelastic scattering,
+where the projector looses energy and
+the target particle recoils and/or
+changes mass, and
+absorption where the projectile
+simply disappears inside the target.
+for these mutually exclusive processes,
+the cross-sections can just be added to
+form what is called a total cross section,
+like in the bottom equation on this slide.
+the cross-section must obviously
+be a positive real number.
+it has a maximum,
+which corresponds to a reaction
+which always takes place.
+that is called the unitarity limit.
+an application example is
+calculated in video 1.3a,
+it deals with the attenuation
+of photons by a sheet of lead.
+the result will probably surprise you,
+and encourage you hopefully, to be very
+careful the next time you expose
+yourself to a beam of energetic photons.
+it is clear that the properties of the
+outgoing particles are also important to
+understand the reaction.
+for example, the angle by which
+the projectile is scattered gives useful
+information about the structure of
+the target, and the properties of
+the interaction as we'll see with many
+examples in the course of these lectures.
+keeping in mind that the cross-section has
+nothing to do with the physical size of
+the target,
+let us continue to imagine
+the cross-section as an effective area for
+the interaction.
+if the projectile hits it
+a reaction takes place,
+otherwise the projectile
+passes without perturbation.
+the scattering into an infinitesimal
+element domega of solid angle,
+centered on the polar angle theta and
+the azimuth angle phi,
+then comes from an element dsigma of
+that surface in our geometrical model.
+the fraction of the incoming beams
+scattered into the solid element
+is proportional to the differential
+cross section, dsigma domega.
+the probability that a projectile
+is scattered into a solid
+angle element is not normally uniform.
+it depends on the angles theta and phi,
+the scattering and the azimuth angle,
+and allows one to look into
+the target in a literal sense.
+the total cross section is obtained
+integrating the differential
+cross section dsigma domega
+over the solid angle domega.
+let us consider a system
+with cylindrical symmetry.
+the scattering probability is then independent
+of the azimuthal angle phi and
+only depends on
+the scattering angle theta.
+an example from classical physics is
+the scattering by a central force.
+it shows a fixed relation between
+the impact parameter b and
+the polar scattering angle theta.
+all projectiles with an impact
+parameter between b and
+b plus db and an initial azimuthal
+angle between phi and phi plus dphi,
+are scattered into an element domega
+around the direction (theta,phi).
+the fraction of the incoming beam which
+falls into such a region is di/i
+equal rho times ‚àÜx times b db dphi.
+integrating over the azimuthal
+angle on which the force does not depend
+we will just obtain a factor of 2Ôê,
+and the results defines the cross-section
+in terms of impact parameter,
+and the scheduling angle.
+taking the absolute value
+guarantees that the cross section,
+is always a positive definite real number.
+the scattering angle theta depends on the
+impact parameter b, in a specific manner,
+which is determined, in fact,
+by the distance law of the central
+force or its equivalent potential.
+let us take a really trivial example:
+the classical shock
+between two rigid bodies.
+the geometry and the laws of elastic
+reflection relate b to thetha,
+in the simple geometrical way
+sketched in this little drawing.
+the differential cross-section
+is just constant,
+it does not depend on
+the scattering angle.
+the angular distribution of
+the scattered particles is isotropic.
+the total cross section is found
+to be sigma times Ôêr^2,
+equal to the geometrical
+surface of the target and
+we're not surprised to find this result
+which we expected in the first place.
+in the next video, mercedes will give
+you a much more interesting example
+of a realistic
+electromagnetic interaction.
+in this case,
+the interaction of a he-4
+nucleus also known as an alpha particle
+with a heavy nucleus like gold.
+this process is called rutherford scattering,
+its experimental observation has
+revealed the existence
+of the atomic nucleus.
+[music]

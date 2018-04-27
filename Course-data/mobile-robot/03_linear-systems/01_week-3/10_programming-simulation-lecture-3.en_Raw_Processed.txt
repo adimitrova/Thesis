@@ -1,0 +1,178 @@
+hello welcome back 
+this is third programming 
+simulation lecture 
+this week ill talking gotogoal 
+controllers 
+controllers used to steer mobile 
+robots to, point a to point b 
+in fact, in this weeks programming 
+assignment 
+youll implementing a pid based 
+gotogoal controller 
+therefore, you will need to implement 
+proportional, integral, derivative, 
+derivative terms controller well 
+adjust gains 
+optimal performance 
+notation that i will use in this 
+weeks assignment is follows 
+first, we location robot 
+denoted x y 
+robot also an orientation denoted 
+theta respect to x axis 
+location goal is denoted xg 
+yg, vector between 
+goal, the, position 
+robot is denoted ugtg 
+this vector also an angle, thetag, 
+
+res, respect to xaxis 
+now, this particular gotogoal controller 
+that youll 
+implementing works in following 
+way 
+going to keep linear velocity 
+constant use 
+pid to compute omega, angle 
+velocity 
+robots, that will steer towards 
+goal, you 
+will implement this in gotogoal 
+class, defined in gotogoalm 
+an important part this controller is 
+memory 
+we need memory 
+to keep track previous 
+accumulated error 
+integral derivative terms 
+pid controller 
+way we keep memory is 
+variables in class 
+we two variables 
+first is this variable right here, 
+is total accumul, accumulated 
+error 
+whereas this, whereas, whereas this 
+variable right here is previous error 
+will 
+remembered time step so that we 
+keep track use 
+in the, youre calculating 
+derivative youre calculating 
+integral 
+you also note, take note 
+three variables here, correspond 
+to 
+proportional, integral, derivative 
+gains controller, 
+you adjust pid 
+controller 
+you will implement three parts 
+pid controller in execute function 
+this execute function is also in 
+gotogoalm file 
+this execute function takes in 
+location goal, 
+well a linear velocity 
+location orientation robot 
+computes appropriate linear 
+angular velocity, outputs this 
+so lets take a look skeleton code 
+this function 
+this is skeleton code execute 
+function 
+top, retrieving location 
+goal well 
+location robot 
+orientation, design linear 
+velocity 
+you will need to compute heading 
+to goal 
+compute error between robots 
+orientation 
+orientation goal respect 
+to robot 
+in last part, you need to complete 
+three terms 
+pid controller 
+first, you calculate proportional 
+term, 
+integral term, derivative 
+term 
+you combine three terms along 
+
+gains to compute appropriate angular 
+velocity robot 
+last, integral, accumulated error 
+
+previous error saved next time 
+step 
+now, if you run this pid controller, 
+youre going to get something 
+similar to graph left, 
+red dashed line 
+is desired angle to goal, 
+blue line, 
+blue solid line is actual 
+orientation robot 
+you want to see is that 
+difference 
+between two is minimized pid 
+controller 
+thing you want to see is 
+that gains ensure that there is 
+low overshoot almost osco, 
+oscillations in the, in output 
+you see theres a little bit, 
+much 
+also blue line almost perfectly 
+matches red line 
+now, to help you test this, weve included 
+a stop condition 
+so that robot stops gets near 
+goal 
+you adjust this goal location in 
+constructor supervisor 
+you want to edit is this variable 
+right here, objgoal 
+and, and, default i selected 
+meter in x 
+direction meter in y 
+direction, indicated right here 
+now, lets see this in action 
+im going to launch simulator 
+this brings up, us, to spar 
+screen 
+im going to hit play button 
+you see is graph 
+output come well robot 
+start immediately moving towards 
+goal location 
+so, lets this 
+theres graph 
+im going to move way 
+and, here you see robot driving 
+towards goal location 
+i click here look 
+graph, i see that output is 
+nice 
+and, if i close simulator, ill 
+show you that ive used fprintf statement 
+to 
+print current position 
+robot 
+well estimated position 
+robot 
+you very, close to 
+stock condition stops robot within 
+centimeters goal 
+so you, you fairly close here 
+tips this week last 
+week 
+make sure to read week section 
+in manual details 
+and, use many fprintf statements you 
+to help 
+you debug code like i in 
+demo 
+and, thats this week 

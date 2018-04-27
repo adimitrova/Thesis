@@ -1,0 +1,82 @@
+music anyone compute sine 
+i mean nowadays, people use computers 
+caluculators 
+mysterious force 
+computational devices able to perform 
+computations 
+machine know sine one 
+is equal to 
+so, thats a good question 
+we compute sine radian 
+one way is to use a little bit 
+calculus 
+so, calculus tell us 
+so lets let f equals sine x, 
+derivative x is cosine x, value 
+f is , sine , value 
+derivative is , cosine is 
+now, i use derivative to 
+approximate functions value 
+functions value near zero is 
+functions value zero, plus much i 
+would input by, times ratio 
+output change to input change, 
+derivative zero 
+well given this, in specific case 
+value function derivative is 
+, that means functions value 
+h, h small, is h 
+that means that sine a small angle 
+is close to that value 
+lets actually use numbers 
+so concretely, sine say nd is 
+really close to nd 
+now, in addition to this, weve also got a 
+double angle formula 
+double angle formula sine says 
+that sine x is times sine x times 
+cosine x 
+you derive this formula angle 
+sum formula sine 
+sine x plus x gives you this 
+alright 
+another way to rewrite that a double angle 
+formula is to write entirely in terms 
+sine 
+alright 
+cosine is square root minus sine 
+squared x 
+well, long cosine is positive, 
+this is true 
+so, if im working a value x, 
+cos sins positive, sin x 
+is times sin x times square root 
+minus sin squared x 
+we put pieces together 
+well, heres we 
+i know that sin nd is close to 
+nd nd is close to 
+and, sin a number close to zero is 
+that 
+that number 
+i use this doubleangle formula 
+entirely in terms sign to get an 
+approximate value sign th 
+using approximate value sign 
+nd 
+then, i use this doubleangle formula 
+to get an approximate value sign 
+th, to get an approximate 
+value sign th, to get 
+an approximate value sign half, 
+to get an approximate value 
+sign 
+is really quite close to actual 
+value sine 
+so, happened 
+calculus told us that sine a small 
+number, is close to that small number 
+double angle formula let us transport 
+that bit information around zero to 
+points much away 
+way to approximate sine 

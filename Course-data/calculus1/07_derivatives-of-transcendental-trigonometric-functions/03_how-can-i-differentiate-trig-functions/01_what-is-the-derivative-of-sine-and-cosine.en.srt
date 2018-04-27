@@ -1,0 +1,614 @@
+1
+00:00:00,012 --> 00:00:04,084
+[music].
+Once, we believe that sine and cosine are
+
+2
+00:00:04,084 --> 00:00:10,213
+important functions, they're all about the
+connection between angles and lengths.
+
+3
+00:00:10,213 --> 00:00:14,465
+Well, then we want to apply our usual
+calculus trick.
+
+4
+00:00:14,465 --> 00:00:17,602
+What happens if I wiggle the input to sine
+and cosine?
+
+5
+00:00:17,602 --> 00:00:22,062
+You might think about trigonometry as
+being something about right triangles.
+
+6
+00:00:22,062 --> 00:00:26,484
+But, here, I've drawn a picture of a
+circle and you can rephrase all this stuff
+
+7
+00:00:26,484 --> 00:00:29,137
+in terms of just geometry of the unit
+circle.
+
+8
+00:00:29,137 --> 00:00:32,830
+So this is the unit circle.
+The length of this radius is 1 and I've
+
+9
+00:00:32,830 --> 00:00:35,827
+got a right triangle here and this angle
+is theta.
+
+10
+00:00:35,828 --> 00:00:41,165
+That means this base here has like cosine
+theta and the height of this triangle is
+
+11
+00:00:41,165 --> 00:00:44,698
+sine theta.
+The coordinates then, or this point on the
+
+12
+00:00:44,698 --> 00:00:50,037
+unit circle are cosine theta sine theta.
+Now, let's make that angle just a little
+
+13
+00:00:50,037 --> 00:00:53,691
+bit bigger.
+Let's suppose that I make this angle just
+
+14
+00:00:53,691 --> 00:00:59,086
+a big bigger, and instead of thinking
+about theta, I'm thinking about an angle
+
+15
+00:00:59,086 --> 00:01:04,266
+of measure theta plus h and that means
+this angle in between has measure h.
+
+16
+00:01:04,266 --> 00:01:09,690
+We'll do a little bit of geometry to
+figure out how far that point moved when I
+
+17
+00:01:09,690 --> 00:01:15,722
+wiggled from theta to theta plus h.
+So let's think about this point here and
+
+18
+00:01:15,722 --> 00:01:21,660
+let's draw the tangent line to the circle
+at that particular point.
+
+19
+00:01:21,660 --> 00:01:27,602
+Well, I'm going to draw a little tiny
+triangle, which is heading in the
+
+20
+00:01:27,602 --> 00:01:34,664
+direction of that of that tangent line.
+And, so that it's tangent to the circle,
+
+21
+00:01:34,664 --> 00:01:41,524
+the hypotenuse of that little tiny right
+triangle here in red will be perpendicular
+
+22
+00:01:41,524 --> 00:01:45,947
+to this line here.
+I can actually determine the angles in
+
+23
+00:01:45,947 --> 00:01:51,362
+that little, tiny right triangle.
+So we go this big right triangle down
+
+24
+00:01:51,362 --> 00:01:57,342
+here, and just because its a triangle,
+this angle theta plus this angle in here
+
+25
+00:01:57,342 --> 00:02:01,321
+plus this right angle have to add up to
+180 degrees.
+
+26
+00:02:01,321 --> 00:02:08,608
+But I've also got a straight line here and
+that means that this top angle plus this
+
+27
+00:02:08,608 --> 00:02:14,687
+right angle plus this mystery angle must
+also add up to 180 degrees.
+
+28
+00:02:14,687 --> 00:02:18,711
+Well, this plus this plus this is 180
+degrees.
+
+29
+00:02:18,711 --> 00:02:24,999
+And this plus this, same right angle, plus
+this mystery angle add up to 180 degrees.
+
+30
+00:02:24,999 --> 00:02:31,303
+That means that, that mystery angle and
+that little tiny right triangle must also
+
+31
+00:02:31,303 --> 00:02:34,823
+be theta.
+I'd also like to know the length of the
+
+32
+00:02:34,823 --> 00:02:39,503
+hypotenuse of the little tiny triangle.
+Radians save the day.
+
+33
+00:02:39,503 --> 00:02:42,782
+How so?
+Well, I want to know the length of this
+
+34
+00:02:42,782 --> 00:02:45,824
+little piece of arc.
+What else do I know?
+
+35
+00:02:45,824 --> 00:02:50,357
+I know this is a unit circle.
+And I know this angle here is h in
+
+36
+00:02:50,357 --> 00:02:54,199
+radians.
+And the definition of radiance means that
+
+37
+00:02:54,199 --> 00:02:57,431
+this little length of arc here has length
+h.
+
+38
+00:02:57,431 --> 00:03:01,516
+Now, let's put my tiny right triangle back
+there.
+
+39
+00:03:01,516 --> 00:03:06,718
+I'm going to have the hypotenuse of that
+little right triangle also be h.
+
+40
+00:03:06,718 --> 00:03:11,235
+It's going to be close enough, right,
+because this little piece of curved arch
+
+41
+00:03:11,235 --> 00:03:15,651
+and this straight line are awfully close.
+Now that I know the length of the
+
+42
+00:03:15,651 --> 00:03:20,124
+hypotenuse and the angles in that right
+triangle I can use sine and cosine to
+
+43
+00:03:20,124 --> 00:03:23,138
+determine the side lengths of the other
+two sides.
+
+44
+00:03:23,138 --> 00:03:28,720
+So I've got a little tiny right triangle,
+hypotenuse h, that angle there is theta,
+
+45
+00:03:28,720 --> 00:03:33,746
+and that means that this vertical distance
+here is h times cosine theta.
+
+46
+00:03:33,746 --> 00:03:39,881
+And the horizontal distance of that little
+tiny red triangle is h sine theta.
+
+47
+00:03:39,881 --> 00:03:43,425
+Okay.
+So how much did wiggling from theta to
+
+48
+00:03:43,425 --> 00:03:47,241
+theta plus h move the point around the
+circle?
+
+49
+00:03:47,241 --> 00:03:52,597
+So the original point here from angle
+theta had coordinates cosine theta sine
+
+50
+00:03:52,597 --> 00:03:55,645
+theta.
+And the point up here which I got when I
+
+51
+00:03:55,645 --> 00:04:01,057
+wiggled theta up to theta plus h, that
+point has coordinates cosine theta plus h
+
+52
+00:04:01,057 --> 00:04:04,932
+sine theta plus h.
+So how much did wiggling from theta to
+
+53
+00:04:04,932 --> 00:04:09,759
+theta plus h move the point?
+Well, if I use this little right triangle
+
+54
+00:04:09,759 --> 00:04:15,624
+as the approximation, sine theta increased
+by about H cosign data, and cosign data
+
+55
+00:04:15,624 --> 00:04:20,702
+decreased by about h sine theta.
+We're now in a position to make a claim
+
+56
+00:04:20,702 --> 00:04:25,126
+about the derivative.
+In other words, from the picture, we
+
+57
+00:04:25,126 --> 00:04:30,409
+learned that sine theta plus h is about
+sine theta plus h cosine theta.
+
+58
+00:04:30,409 --> 00:04:34,780
+And cosine theta plus h is about cosine
+theta minus h sine theta.
+
+59
+00:04:34,780 --> 00:04:39,052
+And as a result, we can say something now
+about the derivatives.
+
+60
+00:04:39,052 --> 00:04:43,927
+How does changing theta affect sine?
+Well, about a factor of cosine theta
+
+61
+00:04:43,927 --> 00:04:48,287
+compared to the input.
+So the derivative of sine is cosine theta.
+
+62
+00:04:48,287 --> 00:04:53,830
+And how does changing theta affect cosine?
+Well, about a factor of negative sine.
+
+63
+00:04:53,830 --> 00:04:56,453
+So the derivative of cosine is negative
+sine.
+
+64
+00:04:56,453 --> 00:04:59,602
+Maybe you don't find all this geometry
+convincing.
+
+65
+00:04:59,602 --> 00:05:04,207
+Well, we could go back to the definition
+of derivative in terms of limits and
+
+66
+00:05:04,207 --> 00:05:09,357
+calculate the derivative of sin directly.
+So if I want to calculate the derivative
+
+67
+00:05:09,357 --> 00:05:14,389
+of sin using the limit definition of the
+derivative, well, the derivative of sine
+
+68
+00:05:14,389 --> 00:05:19,206
+would be the limit as h approaches 0 of
+sine theta plus h minus sine theta over h.
+
+69
+00:05:19,206 --> 00:05:23,961
+The trouble now, is that I've gotta
+somehow calculate sine theta plus h.
+
+70
+00:05:23,961 --> 00:05:27,983
+How can I do that?
+Well, you might remember, there's an angle
+
+71
+00:05:27,983 --> 00:05:31,801
+sum formula for sine.
+Sine of alpha plus beta is sine alpha
+
+72
+00:05:31,801 --> 00:05:37,242
+cosine beta plus cosine alpha sine beta.
+If I use this, but replace alpha by theta
+
+73
+00:05:37,242 --> 00:05:42,432
+and beta by h, I get this.
+Sine of theta plus h can be replaced by
+
+74
+00:05:42,432 --> 00:05:46,554
+sine theta cosine h plus cosine theta sine
+h.
+
+75
+00:05:46,554 --> 00:05:51,303
+So let's do that.
+So, the derivative is the limit as h
+
+76
+00:05:51,303 --> 00:05:58,699
+approaches zero of, instead of sine theta
+plus h, it's sine theta times cosine h.
+
+77
+00:05:58,699 --> 00:06:05,849
+This first term, plus cosine theta sine h
+minus sine theta from up here and this
+
+78
+00:06:05,849 --> 00:06:11,923
+whole thing is divided by h.
+So, this is sine theta plus h minus sine
+
+79
+00:06:11,923 --> 00:06:16,271
+theta all over h.
+Now, I can simplify this a bit.
+
+80
+00:06:16,271 --> 00:06:21,665
+I've got a common factor of sine theta, so
+I can pull that out.
+
+81
+00:06:21,665 --> 00:06:29,129
+This is the limit as h approaches zero,
+pull out that common factor of sine theta.
+
+82
+00:06:29,129 --> 00:06:36,553
+What's left over is cosine h minus 1 over
+h plus, I've still got this term here,
+
+83
+00:06:36,553 --> 00:06:43,002
+cosine theta sine h over h.
+I'll write that as cosine theta times sine
+
+84
+00:06:43,002 --> 00:06:44,684
+h over h.
+All right.
+
+85
+00:06:44,684 --> 00:06:47,656
+So this limit calculates the derivative of
+sine.
+
+86
+00:06:47,656 --> 00:06:52,398
+Now, it's written as a limit of a sum,
+which is a sum of the limits, provided the
+
+87
+00:06:52,398 --> 00:06:55,617
+limits exist.
+So, I can also note that sine theta and
+
+88
+00:06:55,617 --> 00:06:59,896
+cosine theta are constants.
+Right, h is the thing that's wiggling, so
+
+89
+00:06:59,896 --> 00:07:03,117
+I can pull those constants out of the
+limits as well.
+
+90
+00:07:03,117 --> 00:07:08,834
+So what I'm left with is sine theta.
+Times the limit as h approaches 0 of
+
+91
+00:07:08,834 --> 00:07:14,741
+cosine h minus 1 over h.
+Plus cosine theta times the limit as h
+
+92
+00:07:14,741 --> 00:07:21,297
+approaches 0 of sine h over h.
+Now, how do I calculate these limits?
+
+93
+00:07:21,297 --> 00:07:29,123
+Well, we've got to remember way back to
+when we were calculating limits a long,
+
+94
+00:07:29,123 --> 00:07:34,452
+long time ago.
+We can calculate these limits by hand,
+
+95
+00:07:34,452 --> 00:07:41,032
+using say, the squeeze theorem.
+And it happens that this first limit is
+
+96
+00:07:41,032 --> 00:07:45,000
+equal to 0 and the second limit is equal
+to 1.
+
+97
+00:07:45,000 --> 00:07:51,378
+So I'm left with 0 plus cosine theta.
+So, this is a limit argument, back from
+
+98
+00:07:51,378 --> 00:07:56,686
+the definition of derivative that the
+derivative of sine is cosine.
+
+99
+00:07:56,686 --> 00:08:03,202
+So, regardless of whether you think more
+geometrically or more algebraically, the
+
+100
+00:08:03,202 --> 00:08:08,922
+derivative of sine is cosine and the
+derivative of cosine is minus sine.
+
+101
+00:08:08,923 --> 00:08:15,998
+Now, once you believe this, there is some
+sort of weird things you might notice,
+
+102
+00:08:15,998 --> 00:08:21,222
+like what if you differentiate sine a
+whole bunch of times?
+
+103
+00:08:21,222 --> 00:08:28,788
+So the derivative of sine is cosine and
+the second derivative of sine, is the
+
+104
+00:08:28,788 --> 00:08:35,715
+derivative of the derivative.
+It's the derivative of cosine which is
+
+105
+00:08:35,715 --> 00:08:41,031
+minus sine.
+And the third derivative of sine is the
+
+106
+00:08:41,031 --> 00:08:49,416
+derivative of the second derivative and
+the derivative of minus sine is minus
+
+107
+00:08:49,416 --> 00:08:53,891
+cosine.
+And the fourth derivative of sine, well,
+
+108
+00:08:53,891 --> 00:09:00,106
+that's the derivative of the third
+derivative, which is minus cosine.
+
+109
+00:09:00,106 --> 00:09:04,019
+And the derivative of a cosine is minus
+sine.
+
+110
+00:09:04,019 --> 00:09:07,788
+So, the derivative of minus cosine is
+sine.
+
+111
+00:09:07,788 --> 00:09:12,423
+So the fourth derivative of sine is sine.
+So that's kind of interesting.
+
+112
+00:09:12,423 --> 00:09:16,369
+If you differentiate sine four times, you
+get back to itself.
+
+113
+00:09:16,369 --> 00:09:21,457
+And we already know a function that if you
+differentiate just once, it spits out
+
+114
+00:09:21,457 --> 00:09:24,559
+itself again, e to the x is its own
+derivative.
+
+115
+00:09:24,560 --> 00:09:28,326
+So as sort of a fun challenge, you might
+try to find a function f, so that if you
+
+116
+00:09:28,326 --> 00:09:31,748
+differentiate it twice, you get back the
+original function, but if you
+
+117
+00:09:31,748 --> 00:09:35,312
+differentiate it only once, you don't get
+back the original function.
+
+118
+00:09:35,312 --> 00:09:41,146
+And if you can do this, you can ask the
+same question for even higher derivatives.
+
+119
+00:09:41,146 --> 00:09:46,016
+We know a function whose fourth derivative
+is itself, but none of the earlier
+
+120
+00:09:46,016 --> 00:09:50,742
+derivatives are the function again.
+Can you find a function whose third
+
+121
+00:09:50,742 --> 00:09:56,102
+derivative is itself, but the first and
+second derivatives aren't the original
+
+122
+00:09:56,102 --> 00:09:59,715
+function?
+That's a fun little game to play, anyway,
+
+123
+00:09:59,715 --> 00:10:03,998
+it's a little challenge for you to try to
+find such a function.

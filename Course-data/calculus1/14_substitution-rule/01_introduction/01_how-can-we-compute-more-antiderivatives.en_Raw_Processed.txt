@@ -1,0 +1,41 @@
+music 
+we first learned definite 
+integrals, we 
+learned limits remind 
+sums 
+in a few cases that definition 
+good enough 
+we able to use a complicated looking 
+summation formula, take a 
+limit end evaluating a definite 
+integral bare hands 
+usually that much hard 
+so we quickly learned 
+fundamental theorem calculus 
+that reduced evaluating definite integrals 
+to finding anti derivatives 
+turns that finding anti 
+derivatives is also really hard to 
+so, this point, we need 
+better 
+techniques, heuristics to 
+find antiderivatives 
+a big one is called usubstitution 
+maybe substitution rule 
+really amounts to, is 
+running chain rule in reverse 
+and, if you think back to many times 
+using 
+chain rule, we differentiating, 
+we using time 
+right, there kinds 
+differentiation problems that involved 
+chain rule 
+well, if chain rule appears so often 
+differentiating, 
+going to need way running 
+that chain rule in reverse 
+and, thats exactly substitution will 
+us 
+music 
+blankaudio 

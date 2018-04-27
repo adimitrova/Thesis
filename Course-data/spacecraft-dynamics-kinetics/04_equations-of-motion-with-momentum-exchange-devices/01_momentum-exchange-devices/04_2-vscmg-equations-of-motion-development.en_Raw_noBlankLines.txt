@@ -1,0 +1,1229 @@
+okay, so weve done a review
+of what these devices are
+there are certain benefits,
+everything has drawbacks,
+now we need to get into the math of it
+how do we get the equations
+of motion of these things
+so were going to be stepping
+through this carefully
+we are going to do it for
+spacecraft with a single vscmg
+so thats a single variablespeed
+controlmoment gyroscope
+thats a single axis
+controlmoment gyroscope
+there have been a few
+that have flown this way
+yes, jordan
+ sorry,
+going back really quick to the cmgs,
+do you know if there are any that use
+like flux spinning to do like, so
+that could just levitate the bearing and
+rotate them
+ there are, yeah
+because, especially, well,
+with the variable speed,
+the air force had a nice program,
+fred levy was running that,
+to look at energy storage, because as you
+spin up this wheels, as you despin them,
+you can actually pull and you could turn
+mechanical energy in the dimo effect
+you can turn into electrical energy,
+so this could replace a battery
+but you have to spin to pretty high
+speeds to make them efficient
+so theyre looking at ,
+, rpms, really fast and
+mechanically with worrying about friction
+and little imbalances is quite tricky
+so theres some that are looking at
+magnetic bearings, levitation, and
+those kind of things
+not necessarily flux pinning, i havent
+heard that one being used but, magnetic
+bearings, absolutely, you will find
+some of those devices looking at that
+yep, so theres a lot of mechanical
+challenges and how to do this well,
+robust, it survives launch, where you
+get shaken to death, almost hopefully,
+not slight
+so anyway, so think of vscmg as a hybrid,
+well have the math for
+the cmg and for
+the reaction wheel all embedded in one
+so we can talk to this once
+i want you to understand this path,
+deal the parts of just specialties of it,
+thats going to be our goal
+so goes with time, to wrap this up
+so very convenient because
+we can run both but,
+this vscmgs are devices
+being researched and
+done actually phoned some small sats via
+cmg and tested those as well already
+so this is not just theoretical,
+this is starting to happen
+but this is stuff i did way back for my
+phd, its one of my chapters in the phd
+so were going to try and look at this
+one of the niceties im going to
+highlight is we talked about cmgs having
+singularities
+what well find is vscmg actually avoids
+this by move, by changing the wheel
+speeds, i can actually produce torques
+about axis or to the tork direction
+and that can be useful,
+its highly redundant, each device
+if its a variable speed you could use
+it as a reaction wheel, and as a cmg
+so thats two control modes that are for
+devices that gives you
+eight control modes, and
+its still a three degree problem
+so youve got a lot of redundancy
+built in which is sometimes nice, and
+also combine power energy storage,
+something we just discussed
+thats something people have been
+researching and looking at and
+would be nice,
+that we didnt need batteries as much
+so how do we get equations of motion
+it all basically boils down to this one
+little, simple equation, all right
+how hard could that be
+its kind of like, hey youre doing
+your whole dissertation fma, thats it
+right, if youre doing orbits,
+trajectories, unstable manifolds
+all youre doing, and daniels laughing,
+thats really thats all
+youre doing is fma, right
+how hard is that, in attitude its
+hequal to l how hard can that be
+and ill show you here
+this is the hint of that
+if you want some more fun go chat
+with cody and john from my lab,
+theyve been doing these imbalanced vscmg
+equations that are quite interesting
+so lets review this,
+what is hequal to l
+what is l here
+start in the right hand side, andre
+ inaudible
+ be more specific
+ inaudible
+on the body
+ which body
+because we now have multiple
+ rigid body
+ only on the rigid bodies and
+not on the wheels
+no, external torque
+ exactly, right
+if this is a dynamical system,
+this applied to blobs in space,
+jello flying through space
+but it was the net external torque
+acting on this dynamical system
+now we dont have blobs but
+we will have systems of rotating,
+its a multirigid body problem
+essentially that were solving here
+so thats just the net external torques
+we dont need motor torques
+whatever that reactional spin
+torque is doesnt appear here,
+because thats an internal torque
+the gimbal access motor torque does not
+appear here its also an internal torque
+so just the externals, gravity gradients,
+solar radiation pressure drag,
+maybe you have thrusters to augment this
+because maybe for momentum dumping
+people still use thrusters sometimes,
+that could be good
+now what is the h on the left hand side
+robert
+ on the tip of my tongue, im just
+ the total angular momentum
+ total angular momentum, right
+all of this dynamic assistance
+so if its a blob, its just the entire
+thing, its not quite a blob here
+for us its a spacecraft, plus the wheels,
+plus the frame whatever
+holds these things together
+everything that has momentum,
+angular momentum, we have to account for
+and then whats this baud up here, what
+type of time derivative are we taking
+and as you know we often for
+good reason do things in a body frame, but
+transport theorem is
+going to be all over this
+we have to do that, right
+were also about which point have
+we taken torks in momentum here
+center of mass, actually
+so this either has to be a center
+of mass point or taking moments and
+torques about an inertial point
+then h equal to l is true
+if youre talking about a body fix point,
+thats anything else than center of mass,
+there was extra turnums
+that have to appear here
+so again these inbalance things makes
+things immediately much more complicated
+so h equal to l
+we can assume this is all about
+the center of mass of this system
+all the wheels are balanced so
+even when im trying gyrating
+im not really changing
+when im putting the gimballing angles in
+im not changing the center of mass of
+that cmg configuration, im just
+changing where the axis is pointing
+im changing the inertias but
+not center of mass, so
+that makes huge simplifications
+so we need some frames to define this
+stuff, and ive got this gimbal frame
+so you will have gs is my spin axis,
+so this is your wheel,
+if its just the reaction wheel
+this is all you would have
+a reaction wheel in a gimbling frame, this
+is how we can twist that spinning wheel,
+gg is the gimble axis, and that other
+and the cmg devices solves a pancake with
+the motor knob sticking out left and
+right, its actually the gg axis
+and so gs is the spin axis, gimble axis,
+and then gt is at the transverse axis,
+its the third axis that
+cannot complete a full frame
+gs crossed to gt gives you plus gg, okay
+so thats what these are,
+weve defined them
+big omega here is going to
+be the wheel speed and
+were treating it here as time varying
+later on we can freeze it to make it
+a cmg device, not a variable speed cmg
+gimbel angles are defined through gamma,
+so the gimbel rate
+at which i am twisting these things is
+gamma dot, and thats what thats defined
+so thats the rotation
+rate about this gg axis,
+so kinematics is going to come back in
+and then so the full frame is gs, gt,
+gd, thats the g frame that we have
+this is the one well use a lot
+so lets talk about angle velocities,
+the angular velocity of the gimbal
+frame relative to the body
+this is where we attach this device to
+a body, because the motor is taking it and
+its twisting it left and right, right
+and so this is the twist rate and the axis
+about which youre twisting is gg
+so the angular velocity of the g frame
+relative to the b frame is just going
+to be gamma times gg
+its the classic kinematics we did
+in the first part of the class
+theres a wheelframe,
+im going to introduce this quickly, and
+then within a few steps,
+were going to ignore it again
+well make some arguments
+why we can ignore it
+so the wheelframe needs three axis
+im picking principal axis, so the spin
+axis, ds, i can reuse it just to be lazy
+thats my first one and
+then i have a wt and
+a wg which are two axis that
+are fixed relative to the wheel,
+so as the wheel rotates, these axis
+are going to rotate with the wheel, right
+so if you look at the wheel frame,
+you can go ahead and
+get the angular velocity of the wheel
+system relative to the gimbal frame, and
+thats simply going to be the wheels spin
+rate times the wheel spin axis, thats it
+so if you sat on the wheel frame its set
+all this gimbal frame, look at the wheel
+you would see the wheels spinning about
+that axis at that rate and vice versa
+so now we have our two
+if you need omega of w, relative to b,
+you would just add up the two of course,
+and thats how, so we can get any
+combinations of omegas that we need
+lets talk about inertias
+im assuming this thing is built in a way
+such that i have three principal inertias
+of this gimbal contraption and
+theyd line up with the gs, gt, gt frame
+recently good assumption,
+may not be perfect but
+its a good simplifying in the analysis
+that were doing right now
+so i have igs, igg, gt and igg
+so ig is the inertias of the gimbal
+frame along the st and g axis
+thats where the subscripts
+are coming from
+for the wheel, we can write that in
+the wheel frame, youre going to have
+an inertia about here so thats going to
+be the wheel inertia about the s axis
+and then i have iwt, because the wheel
+is perfectly symmetric, right
+no imbalances, no other warping,
+all these kind of stuff
+its going to be the same
+inertia about the any
+two orthogonal axis in the plane
+of the disc, of the wheel, right
+so i just have iwt, iwt
+now, here im saying the wheel
+inertia in the gimbal frame,
+is actually going to be the same as wheel
+inertia expressed in the wheel frame
+why does that happen
+i think this is really,
+thats an inertial tensor
+this is a matrix representation
+of the inertial tensor,
+where i picked the w frame
+here im claiming if i
+picked the w frame or
+the g frame,
+they both give you the same answer
+why do you think that is
+ theres a degenerate
+eigenvalue in the w inertia
+ youre getting mathematical
+no, but youre right
+there is a repeated eigenvalue in here
+that means that these axes are actually,
+the eigenaxes that generates
+these inertias are not unique
+if we go back and look at that
+we talked about eigenvalue
+of an axis symmetric body
+where we had is and
+it in some of the torque
+free motion of an axis symmetric body,
+all of that stuff
+so you dont have to pick
+i could really, to get this diagonal
+from i just have to pick this axis and
+i have to pick any two axis that
+are orthogonal to gs will do
+if any two axis will do,
+i can always pick gt and
+gg if you wanted to, and
+theyll give you the same answer
+so actually i wrote up
+a quick mathematical thing
+so really im going to evaluate this now,
+im pulling in library
+im going to define now here
+this as a diagonal matrix
+in this case the g frame, ive got this
+now, since gs is my first axis,
+im doing what we call
+m basically that was the one axis
+rotation that we needed with an angle
+so, youd have , ,  or
+i can do metrics form of wg, right
+so thats the classic note, thats
+the rotation because were doing one axis
+rotation where the gs is the first axis
+so if i translate here from
+the gimbal frame to the wheel frame,
+this is what i could do,
+i get this answer and then you can
+identify what does this cosine
+squared the same thing sine squared
+those things are just
+going to drop out to b, and
+after all this math you get nothing but
+exactly the same result again even though
+we did this code of transformation
+so if you dont believe the geometric
+arguments, you can quickly do the math and
+validate and go, yeah
+actually, this inertia tensor is
+diagonally both in the w frame and
+in the g frame, thats all we need,
+because that saves us a lot of transpose
+without then end up all youre
+doing is creating a lot of trigs that
+become one in the end and not needed
+good, so thats kind of helps
+explain that one last slide
+now i need to get some corner frames and
+attitudes
+we have the body attitude,
+we know how to describe that already,
+mrps, dcm,
+cortanians whatever you want to wish
+we need to get the attitude of the gimball
+frame relative to the body frame
+and if you go back and
+look at how we defined dcms, right
+it was basically the mapping from n to b
+and im just going to write that one out
+if your recall bn ended up being n,
+n, n in b frame components,
+that was one way to write it or each row,
+was the b,  and  in n frame components
+so if we go back and look at those
+definitions, if you have the three axis,
+you can actually construct
+the dcn very quickly
+and in fact here, im using this one, so
+instead of having, what do i have here
+let me go back
+here we have bg instead of bm
+so instead of n, , , i have the g
+first, second and third axis i put in
+and then the b frame component
+which is how we define them and
+thats give you to dcm
+so that works
+so if we have bg
+now if i need to get the inertia
+tensor which was diagonal in
+the g frame which is great
+but i typically will need it in the end
+in the body frame, well do a lot of body
+frame relative derivatives, i would have
+to reimposed multiply with the dcm, right
+to map it from one frame into
+another frame and you can do that
+the mathematics here become quite simple,
+ig is a diagonal and
+this one i can write out like this
+so, lets just kind of
+do this by hand once
+so, if i have bg is equal to my first
+vector, my second, my third,
+and then i need to compute bg times
+i in g frame components times b,
+now g transpose, right
+that would give me ig and the body frame
+now, if you write it in the matrix form
+like this, its going to be nothing but
+gs, gt, gg thats the bg times
+this diagonal which was igs ,
+,  igt, ,
+,  igg times the same matrix transposed
+so, this transpose becomes gs transposed,
+gt transposed gg transposed, right
+and now you can just start to carry
+out all this matrix math here
+if you look at the second part,
+this is going to be igs times gs
+you can think of this like a vectrix,
+matrix of vectors that
+we talked about earlier
+so out of this, all youll going to
+get is igs times gs hat transpose igt,
+the second row,  times this,
+ time this, drops out, gt
+transpose plus igg, gg transpose
+so thats that part times this, so,
+laugh gss, lets see
+actually thats not right, hold on
+this is not a single line
+this is a three by three
+times a three by one
+this is not plus, thats wrong
+this would have to go here,
+and this goes here
+this should be a three by one
+its a three by three
+times a three by one
+that should be a three by one,
+one by three times three by one
+now all i have to do is gs times
+this term, gt times that term,
+gg times this term, and
+thats where you get the final answer
+so from here, if i go backwards, igs, gs,
+gs transpose plus these other terms
+thats all were doing
+so its a nice analytic way that
+we can do these projections
+from the inertia of one frame to another
+and you will see this is a handy result
+to what well use several times as we go
+through that
+so thats what was done here
+this one also in the gimbal frame,
+i can just do the same thing, but
+instead of igs, igt,
+i have iws, iwt and thats it
+its a little bookkeeping
+so you get exactly the same result
+so now we have the inertias
+written in two different frames
+good, next step, angular momentum
+you guys said h had to be the angular
+momentum of the total system
+the system will be composed
+of a single vscmg, so
+its a spacecraft,
+thats part b, thats the body
+then i have g that denotes the inertia and
+momentum of the gimbal frame that has
+some mass and it rotates and does stuff
+and then you have hw which is
+the momentum of just the wheel
+itself spinning about that
+so we have to add up all these momentums
+and each one of these momentums
+is of these bodies relative to
+the inertial frame
+so for the body this is dead simple,
+youve done this
+im using is now, that is my
+inertia tensor of the spacecraft
+youll see a different
+i appearing later on
+so this one right now is just
+of the spacecraft itself
+it has the center of mass
+of the reaction wheel,
+cng devices already accounted for in that
+but what were not doing is the momentum
+of the wheeldisk part spinning about
+the center of mass of those disks
+so a lot of it is already lumped in there
+and this part will be easy to go forth
+the other ones get more complicated
+so for the gimbal frame,
+its the same math at the first step
+we have ig times,
+now i need omega g relative to n and
+omega g relative to n is omega g relative
+to b plus b relative to n, right
+earlier we kept calling this just omega,
+here and being a little explicit
+because weve got lots of different
+frames and lots of different omegas
+so its a little bit
+easier to keep track of
+so we need both
+this one was simply gamma dot times gg and
+thats put in here
+and the other one is omega bn
+the inertia one ive written with
+this projections into g frame
+components already
+so, ig times omega bn
+gives me this answer, and
+ig times this one will
+give me this answer
+now, again,
+im jumping through a few steps directly
+so let me just look at it once
+this is a tricky one to do yourself in the
+homework and different ways to solve this
+one thing you could say is,
+you know you have ig like this,
+and omega g relative to b
+is just gamma dot times gg
+well gg times gg here
+transposed just gives you 
+thats good
+gg times gt transposed,
+whats that going to happen
+the dot product between gt and gg
+zero, theyre orthogonal, right
+so that drops out
+and same thing with the gg times gs
+theyre also orthogonal, they drop out
+so thats one way to do it
+i think on the next slide i show you
+another way with the matrix method
+that will give you
+the same answer hopefully
+its the same physics
+now these terms, gs transposed
+with omega bn will happen a lot
+if you look at,
+if we were showing the definition,
+let us recall how we
+typically write omega
+so omega bn, we typically write it as
+omega b  omega b  omega b
+so we have a reframe, the omega , ,
+s are nothing but the ,
+ and  access components
+omega  is really defined
+as b dotted with omega bn,
+or in matrix form this is equivalent
+to b transpose omega bn, all right
+now, here we dont have b dotted with
+omega, we have gs dotted with omega
+so if you have omega bn,
+gs hat, this is really what is going to
+give you, if you think of this,
+if this is your omega vector
+and here is your gs vector
+its giving you the gs component
+of that omega vector essentially
+and were just going to call that, instead
+of omega , , , weve already used , ,
+ for the body frame stuff
+so i cant reuse the same names,
+im just going to use omegas, omegat and
+omegag for the gs, gt,
+gg axis of that stuff
+so a slight notational thing but
+it helps us
+so thats what you see defined right here
+where we have omega s is gs
+hat transpose with omega
+omega t is gt transpose with omega and
+gg is the projection of g onto omega
+so the omega vector, this is again without
+any subscripts, we imply its omega bn
+at some point it just gets old to write
+all that stuff over and over again
+so this is omega bn is equal to
+these three vector components
+of that along the g axis
+so if you use that definition then you
+have here gs transpose times omega and
+that becomes nothing but
+this little omega s
+so, the same momentum expression here can
+be rewritten a little bit more compactly
+in this form and that will help us
+in same label keeping that we do
+so, now we have to angular momentum
+vector off the g frame relative to
+the inertial frame
+what we need next is the angular
+momentum of the wheel
+ inaudible
+ itself
+then its the same formula
+you need the angular velocity of
+the wheel relative to inertial, and
+we know the angular velocity of
+the wheel relative to gimbal
+that was big omega times gs
+that was the spin axis side
+gimbal relative to body,
+that was the gamma dot times gg,
+thats the gimbaling rate
+and then of course, this is the classic
+spacecraft body rate that youd have
+if you plug that in you now have
+three of these terms to evaluate
+and i will just to show you different ways
+to do it, ill do it different ways here
+this first term ive written out, and
+its going to be this inertia tensor
+which we rewrote earlier as a result of
+the principal inertias times
+these outer products times omega
+and in here quickly you can see
+again gs hat transposed omega
+thats what we defined to be omega s
+the projection of the gs axis onto
+omega was the omega s component
+same thing with omega t and omega g
+so thats one way we can
+get that first term
+that gives us this one
+now we want to get the other two
+im showing you a matrix representation,
+for
+some people this might be
+a easier way to think
+both of them should all
+give you the same stuff
+this term i can write in g frame
+components as this diagonal matrix
+g relative to b,
+that was gamma dot times gg
+so, in g frame component its
+ gamma dot, all right
+and then you just do your typical matrix
+math with which will give you  iwt that
+along the third axis,
+as the vector representation of that
+thats the third axis is gg, so
+you always get back the same answer
+you could do the same thing also for
+this one, just here omega w relative to g
+was big omega times gs, so its big omega
+along the first axis of the wheel frame
+this inertia tensor in the wheel frame
+you carry out the matrix math,
+you get just something in the first axis,
+which is the gs representation
+so, this ties back to the, you know,
+week one stuff that we did
+vector matrix representation
+you should be able to go back and
+forth and
+whatevers most convenient itll get you
+there, it should be the same answer
+now, we have these, we add them up
+to the other term, you combine them,
+this gives us now the angular
+momentum of the wheel that we need
+okay, great
+a few more things, as we take derivatives,
+well want inertial derivatives and,
+of course, well use transport theorems
+because a lot of these inertia tensors
+are fixed by the body frame
+and also some of these
+other axis have benefits
+so, the gs, gt,
+gg axis you could write analytically if
+you know their orientation at launch
+i locked them down and gs was pointing
+here and gt was pointing here, and
+theres no gimble angle, right
+and after launch, you rotated  degrees,
+you can actually compute with
+your classic cosines and sines
+what are the current
+orientations of those axes
+gg stays always the same, hopefully,
+that means you bolted it down correctly,
+all right
+the gimbal axis is supposed
+to stay body fixed, always
+but for a vscmg, the gsgt, we have
+to treat generally as time varying
+so, you can write this and
+in code in fact, it would simulate this
+if i know my gimbal angle i
+cant compute at any instant
+if i know my initial orientations at
+launch what are my current orientations of
+this frame of the wheel
+how far has it twisted
+all right, so
+we will need derivatives of this stuff
+if we take body frame derivatives,
+different ways you can do it
+if you want to, you could just use this
+expression here and take derivatives
+because these are actually
+fixed as seen by the body
+and cosine becomes minus sine,
+which is right here
+sine becomes cosine, and
+you can see the derivative of this is
+going to be the gt direction and
+vice versa
+and the derivative of this one is just
+common sense, is going to be zero
+thats one way
+or you can also use a transport
+theorem and say, well wait a minute,
+instead of taking the b frame, what if i
+took the g frame derivative of this stuff
+and if you have the g frame
+derivative of gs that is zero,
+i see by the frame itself
+these axes dont move
+plus you would need the omega g
+relative to b, which is gamma delta gg,
+crossed with this axis, you get a g,
+a third axis cross with gs,
+the first axis which gives
+you plus the second one
+you can see the transport theorem,
+you get the same answer
+different ways you can approach it
+i like the transport, its very compact,
+you can get there very,
+very quickly without writing it out
+so, we can get the body frame derivatives,
+the key is the third one,
+thats where its locked down
+that one doesnt vary, the other two
+are a function of the gimbal rate
+if you need inertial derivatives,
+which we can do it here,
+weve chosen to do bframe derivatives
+weve already got these
+answers as a subresult,
+plus the omega crossed these axes again
+and you can do that, and
+carry out, if you write omega
+the easy trick here is to get this
+answer in your homework i would say
+write omega node as omega  b,
+omega  b because youre crossing the gs
+instead write omega as omega s gs,
+omega t gt, right
+use the g frame components of omega and
+those definitions and
+thats where these terms come in
+and then, its just a classic
+cross products between vectors in
+the same frame
+so,  crossed  gives you ,  crossed 
+give you minus , all the usual rules
+and thats how you can
+get there then as well
+so, that would work
+so then,
+you should derive this yourself then
+im just kind of showing you
+the highlights and how we go after it
+since we have omega s, omega t and
+omega g, the vector components of
+the body rate in the g frame components
+we will also have derivatives of this
+omega s, omega t, omega g are scalars
+so, what type of derivative am
+i taking on the left hand side
+tebow
+ time derivative its
+ as seen by what frame
+ doesnt matter
+ doesnt matter, right
+just a scalar, so
+that stuff comes back again
+if its just a scalar its
+just a time derivative
+over here, tebow, what type of
+derivative have i chosen to use here
+ an inertila derivative
+ inertial derivative
+but that was purely a choice, i didnt
+have to use an inertial derivative
+i could have used any,
+as long as im consistent,
+you cant use these derivative chain rules
+into one part in a and one part in b
+if youve taken a, make everything a,
+if youve taken b, make everything b
+the math will work itself out
+so, you can do that, so
+that term is just okay,
+the angular acceleration dotted
+in the the gs direction, great
+this term here, gs hat transposed omega
+if you go back and look at gs hat is here,
+so we have all this math times,
+what did we do,
+times omega, gs hat transposed omega
+so, if you can see here, gs hat,
+this stuff, transposed omega,
+gt transposed with omega,
+what does that give me
+ omega t
+ omega t, exactly
+that was the projection
+gg transposed omega gives you omega g
+and youre going to have an omega g, omega
+t with that product and here omega t,
+omega g with the product
+ plus,  minus, they both cancel and all
+youre left with is here times gt times
+that term, that second term, which was gt
+transposed omega which gives you omega t
+lets say we did body frame
+how is that going to look different
+let me do that by hand
+so, just so i can prove, so if we use this
+formula, i dont need to fire here, okay
+if we use this formula as tebow says,
+thats just a time derivative
+now, lets say,
+im going to use body frames
+im going to use primes as a body frame
+instead of writing ddt and bs and
+all that stuff
+you would have gs transposed prime,
+right, times omega plus
+gs hat omega bn prime
+well, one thing, omega bn prime, how does
+that relate to the initial derivative
+its the same thing, right
+omega, the b and the n frame is the same
+so, thats kind of cool
+we get right away gs hat transposed
+omega bn dot, the inertial derivative
+so, thats good
+this one, we need the body
+frame derivative of gs, and
+if you go back, we did that actually and
+i had showed you the results
+here we go
+the body framed derivative of that,
+different ways you can derive it, but
+ill use the transport theorem,
+was nothing but gamma dot gt
+and if i plug that one in,
+gamma dot gt transposed omega bn,
+this whole thing is nothing but
+the definition of that and
+you get the same answer
+so, as expected, hopefully, we took here,
+b frame derivatives, in the slides im
+taking n frame derivatives,
+i get the same answer both ways
+so, thats always a good thing to practice
+then you know youre doing all your
+math correctly
+so, you do this and you apply this now for
+all the three axes and
+now we have the inertial derivative
+that you will need as a sub result
+once we start to take h dot and
+start grinding
+so, we have that
+one other thing well use is
+you will see a lot in the math,
+we have ig plus iws appearing
+and thats the inertia of
+the wheel plus the inertia
+of the gimbal frame that
+holds the wheel and twists
+and so, we can sum them up
+if you see js, its nothing, but
+basically the inertia of the combined
+wheel gimbal frame system
+so, just a notational thing,
+because theres lots of stuff happening
+and now the fun, you need to do this
+yourself, im showing you the highlights
+laugh but this is now where you
+apply your excellent skills on
+transport theorem and differentiation,
+we need h dot  l, so
+i would say since weve broken it up
+as h of the hub b h of the gimbal and
+h of the wheel, do each separately
+it just helps manage all the algebra
+otherwise youre bound to get
+one letter crossed with another
+do one by at the time
+so if i take h dot using
+the transport theorem
+i take the derivative as
+seen by the gimbal frame,
+because im using a lot of
+gimbal frame components
+but then i need to add plus
+omega of the gimbal frame,
+relative to the inertial, right
+because dot is still the inertial
+derivative, cross with that h expression,
+carry all that algebra
+this is what you get,
+ill let you do that
+you guys are very good at this now
+you do the same thing for
+the gimbal stuff and this is what you get,
+the gimbal frame stuff
+and then for the body itself, well thats
+pretty trivial, weve done this before for
+a single rigid body, you regain
+the same derivative expression, right
+now we pack it together h dot
+ l is a sum of all three
+were going to use this definition,
+j was the inertia of the gimbal frame and
+the wheel, the combined vscmg device
+this is the inertia of the rigid
+part of the spacecraft
+so this one is actually constant,
+as seen by the body frame
+this one isnt, because inertia,
+everything is spinning and twisting
+and i now is the combined spacecraft
+inertia, thats the full thing
+the rigid part plus all these spinning,
+twisting wheel parts, all combined
+that means i in this notation
+actually becomes time varying
+if you simulate these things,
+every time step,
+you have to recompute where are these
+axes, where are these inertias and
+sum up all these inertia
+contributions again
+so it becomes even as seen by the body, i
+is time varying but is is the rigid part
+thats what you took advantage of when you
+did the earlier differentiation of hb,
+that it was fixed as
+seen by the body frame
+yes, louis
+ how do you guys account for
+the center of mass of the gimbal system,
+in the body or no
+ so all of these things have
+been taken in account for
+is here actually already accounts for
+the parallel axis part
+that if the cg of the wheels arent
+mounted in the center of the spacecraft,
+center of mass of the spacecraft,
+but theyre offset somehow
+that is a fixed offset, and
+thats already accounted for
+actually here when we derive this stuff
+so here these are just the wheel
+parts that thats the momentum and
+inertia is spinning about their
+own perspective center of masses
+so center of mass is all subtlety
+im glossing over somewhat, but
+this is rigorous, this works,
+its just you have to account for
+depending on where you place them, okay
+theres this much mass out there,
+that m distance squared term
+is already put into this part
+because that part is fixed,
+relative, its a balanced wheel
+if its inbalanced, your question would be
+very good, because then with an imbalance,
+as im rotating, then the center of mass
+of the wheel is actually orbiting inside
+the craft and then this wouldnt work
+youd have to be much more careful
+about which points you do it so
+being balanced allows us to,
+as complicated as it is, and im sure
+youll agree in the homework, being
+balanced makes this much, much easier
+so thats a key assumption, so
+now we throw this all together
+h dot  l, and i combine terms,
+which you will do as well,
+you can come up with
+these kind of a terms
+now this is the i inertial
+tensor of the hub,
+the rigid plus all the spinning stuff
+you can write it out into this form,
+which is our equation of motion of
+the spacecraft with a single
+variable speed cmg
+l is still the net external torque
+we were talking about earlier, so
+that could be your gravity gradient torque
+acting on this or deviation pressure,
+if we have thrusters acting for
+generating pure torques
+but its all about
+the system center of mass
+and then inside you have all these terms
+so the first thing i always do is lets
+make sure these equations make sense if we
+simplify them
+if we bolt down like on launch, we have no
+gimbling, we have no wheel acceleration,
+everything is locked down for launch, i
+should get back the equations of motion of
+a single rigid body, which was
+this part and this part and the l
+everything else should vanish
+so if you look at that and you see, okay,
+if i have gamma dot, if im locked down,
+theres no gimbling going on
+so gamma dot has to be 
+this vanishes, this vanishes, lets see,
+gimbal acceleration vanishes
+thats  and this is , so
+no gimbling makes a lot of them vanish
+if you take the remaining
+equations youve got one here,
+iws omega dot, and youve got this
+is all vanished, that vanished
+you got this term thats nonzero,
+and this term thats nonzero
+go back and look at your dual
+spinner equations of motion
+there we lined it up with the real
+axis being along b or something
+so if you make gsb,
+you get exactly the same equations again,
+so thats a nice validation
+if the wheel is locked down,
+then big omega is 
+that means this term vanishes as well,
+this term vanishes as well,
+and theres no wheel acceleration
+so, as expected,
+all these terms vanish once you
+lock it down, which is always good
+now, so this is good for both devices, but
+you can see the gimbling
+adds a lot of terms
+theres gamma, gamma, gamma,
+all the stuff that happens here
+what if you have a reaction wheel mode,
+we talked about that
+we basically get a double spin
+equations of motion, way simpler
+what if we make it a classic cmg
+in that case, the wheels speed has
+to be constant, not variable speed
+lets see how much it simplifies then
+one term, woopdedoo
+you got all this other stuff, so
+the cmgs really arent that much
+easier than the variable speed cmgs,
+you just now accounted for
+all the other stuff spinning and gyrating
+ why is it that they
+havent flown vscmgs
+ they have, and in fact every
+cmg is in fact a variable speed
+cmg because it launches spun down and
+they have to slowly spin it up
+but what they do is a simple control
+that they, its complexity of the stuff
+here, let me show you what generates
+the control that you have
+we have body rates are pretty small
+i mean, were talking small
+people freak out when this craft goes
+more than two degrees per second,
+thats nothing
+the wheels will be going way, way faster
+so cmgs, were looking at , rpm
+so the big omega is going to
+be the big honking elephant
+so this is small, gimbal rates are small,
+this stuff is all small
+whats going to give us the big torque
+its going to be this term, right here,
+thats the wheel speed, which is huge
+iws, which is your biggest inertia of this
+disk because we move the mass out about
+the gs axis, that give us that ring,
+the pancake shape
+and gamma dot is directly
+proportional to that
+so, if you hold the fixed wing speed, this
+is the control torque that we would use
+in a control application, and
+thats what theyre after
+you could make everything else variable,
+but thats really more in a later
+research, weve been finding in
+how we can avoid singularities
+but the trick is, with the reaction wheel,
+what generates the torque is this one
+ill show you the motor torque
+equation in the next class
+but as you accelerate a wheel you get,
+with a minus sign,
+an opposite torque back onto the craft
+but you only get one newton meter in,
+you get one newton meter out
+here though, if i gimble, with a little
+effort, the faster the wheel is going,
+the bigger the torque i get
+and thats what theyve been focusing on
+so, devices could do this
+the issue is the motor torque about the
+spin axis typically are not that strong
+if you have to muscle through a
+singularity acting like a reaction wheel,
+youre simply going to saturate that
+little motor very, very quickly
+so the way theyre designing it,
+theyre doing the minimal effort required,
+which means it tracks it within a simple
+bound, but its not very tight bound, and
+it doesnt have much
+it may take, it just needs you to spin it
+up and keep it roughly at the same speed,
+thats all they need
+so it would be a hardware change
+so some have flown them like this and
+actually demonstrated that you can do it,
+its just a little bit more complexity
+in the control and people, air force in
+particular have been looking at these
+form of energy storage devices and
+to account for them
+theres extra complexity,
+they feel like i can do it
+or some cmg manufacturer who was
+chatting with me during my phd too, and
+theyre saying well, we could also take
+a reaction wheel off the shelf and a cmg
+off the shelf, and combine both devices
+to get the same mathematical benefits
+off the shelf is always
+cheaper than trying to custom
+design specifically for something
+so until these become common,
+theres different ways you can do it
+but for here, this is kind of,
+where are we going to go
+so what we can see, my final comments on
+this is, with these equations of motion,
+you see now there that as the wheel speed
+grows, we can get a very large torque
+but also theres limits in each reaction
+wheel, how fast you can spin it and
+thats that big omega dot
+the gimbling is a nice mode, but
+you will also have singularities
+actually, i think i could
+show those as well
+this will be something about the gt axis,
+thats one axis
+if i have four devices,
+im going to have four gt axes
+and depending on how youve lined it up,
+you can have all those
+axes become coplanar
+and if your control is outside of that,
+which will happen commonly with external
+disturbances, thats
+a gimbal lock situation
+because these axis about which i get these
+nice generous torques vary with time,
+it just makes a lot of
+things more complicated
+but that was the singularity that
+we have so, anyway so you can see,
+cmgs, definitely a lot of benefits,
+the amplification but
+also mechanical challenges,
+more expensive
+but you get a lot of bang for your buck,
+way bigger torques than what you
+get with a reaction wheel, but
+it comes at a cost and
+the controls get more challenging, too

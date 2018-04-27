@@ -1,0 +1,213 @@
+1
+00:00:00,184 --> 00:00:04,911
+[MUSIC]. 
+
+2
+00:00:04,911 --> 00:00:09,361
+We defined arc length using an integral. 
+The integral that we'll be using is this 
+
+3
+00:00:09,361 --> 00:00:11,916
+one. 
+I'm going to be integrating from a to b 
+
+4
+00:00:11,916 --> 00:00:16,370
+the square root of 1 plus the derivative 
+squared dx. 
+
+5
+00:00:16,370 --> 00:00:20,230
+Let's apply this to a specific problem. 
+Let's compute the arc length of a little 
+
+6
+00:00:20,230 --> 00:00:24,272
+piece of a graph. 
+So let's look at the graph of y squared 
+
+7
+00:00:24,272 --> 00:00:30,730
+equals x cubed and figure out the length 
+of this arc from 0,0 to 1,1. 
+
+8
+00:00:30,730 --> 00:00:34,707
+Now I could rewrite this equation. 
+Instead of writing y squared equals x 
+
+9
+00:00:34,707 --> 00:00:40,080
+cubed, I could write y equals x to the 3 
+halves power. 
+
+10
+00:00:40,080 --> 00:00:44,060
+We'll start by differentiating. 
+So because of this, I can write dy, dx is 
+
+11
+00:00:44,060 --> 00:00:50,517
+3 halves x to the 1 half power. 
+We'll put that derivative into the 
+
+12
+00:00:50,517 --> 00:00:58,080
+formula for arc length so I'm going to be 
+integrating. 
+
+13
+00:00:58,080 --> 00:01:05,530
+X goes from 0 to 1, the square root of 1 
+plus this derivative squared. 
+
+14
+00:01:05,530 --> 00:01:11,870
+So, I'll write 3 halves, x to the 1 half 
+squared dx. 
+
+15
+00:01:11,870 --> 00:01:13,892
+Now, I just want to compute that 
+integral. 
+
+16
+00:01:13,892 --> 00:01:17,280
+But how? 
+Well, I can rewrite the integrand. 
+
+17
+00:01:17,280 --> 00:01:22,887
+This is the integral from 0 to 1 of the 
+square root of 1 plus 3 halves squared is 
+
+18
+00:01:22,887 --> 00:01:29,307
+9 4ths. 
+And x to the one half squared, I'll write 
+
+19
+00:01:29,307 --> 00:01:33,560
+x, dx. 
+Just have no fear, keep going. 
+
+20
+00:01:33,560 --> 00:01:38,706
+Well, I could use substitution. 
+u equals 1 plus 9 4ths x so that du is 9 
+
+21
+00:01:38,706 --> 00:01:48,302
+4ths x or alternatively, dx is 4 9ths du. 
+And that means this integral, it's the 
+
+22
+00:01:48,302 --> 00:01:55,726
+same as the integral of square root of u 
+times 4 9ths du and remind you bounce of 
+
+23
+00:01:55,726 --> 00:02:05,960
+integration. 
+Well an x is 0, u is 1 and when x is 1 u 
+
+24
+00:02:05,960 --> 00:02:13,760
+is 14 4ths. 
+Alright, now I just have to write down an 
+
+25
+00:02:13,760 --> 00:02:19,745
+anti derivative here, well I could write 
+this as 4 9th, u to the 3 halves over 3 
+
+26
+00:02:19,745 --> 00:02:29,764
+halves that's an anti-derivative for 
+square root 2, evaluated at 1 and 13 4th. 
+
+27
+00:02:30,810 --> 00:02:35,420
+So I'm just going to plug in 13 4th plug 
+in 1, take the difference. 
+
+28
+00:02:35,420 --> 00:02:44,029
+Okay, so this is 4 9th, I write, times 2 
+3rd, instead of dividing by 3 halves. 
+
+29
+00:02:44,029 --> 00:02:51,280
+Times 13 4th. 
+To the 3 halves power minus 4 9th times 2 
+
+30
+00:02:51,280 --> 00:02:57,980
+3rd times 1 to the 3 halves power and I 
+got to simplify this little bit more even 
+
+31
+00:02:57,980 --> 00:03:05,821
+lets see here. 
+4 times 2 is 8, okay that's also 4 to the 
+
+32
+00:03:05,821 --> 00:03:12,565
+3 halves power. 
+So I can cancel all of these things. 
+
+33
+00:03:12,565 --> 00:03:16,180
+And then I can simplify gotta do some 
+arithmetic here. 
+
+34
+00:03:16,180 --> 00:03:23,620
+So I've got what, 13 to the 3 halves 
+power divided by 9 times 3 is 27, minus, 
+
+35
+00:03:23,620 --> 00:03:33,599
+this is 8 27ths just times 1. 
+And, if you don't like the 3 halves here, 
+
+36
+00:03:33,599 --> 00:03:41,720
+I could write this as 13 times the square 
+root of 13 over 27 minus 8 over 27. 
+
+37
+00:03:41,720 --> 00:03:45,444
+This, is the length of that arc. 
+We did it, but it worked out almost too 
+
+38
+00:03:45,444 --> 00:03:48,068
+well. 
+Alright that's the sad thing about arc 
+
+39
+00:03:48,068 --> 00:03:51,401
+length calculations. 
+Because the arc length formula involves 
+
+40
+00:03:51,401 --> 00:03:56,070
+that square root of 1 plus a derivative 
+squared, it's extraordinarily unlikely. 
+
+41
+00:03:56,070 --> 00:03:59,020
+And if you just give me some random 
+function, I'm going to succeed in being 
+
+42
+00:03:59,020 --> 00:04:03,983
+able to evaluate that integral. 
+The sorts of things we can calculate the 
+
+43
+00:04:03,983 --> 00:04:06,900
+arc length of are pretty special sorts of 
+things. 

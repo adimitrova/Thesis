@@ -1,0 +1,362 @@
+1
+00:00:00,179 --> 00:00:05,000
+[MUSIC]. 
+
+2
+00:00:05,000 --> 00:00:09,410
+We've seen that we can use either 
+horizontal strips or vertical strips when 
+
+3
+00:00:09,410 --> 00:00:14,971
+using integrals to calculate area. 
+We end up computing the same number, the 
+
+4
+00:00:14,971 --> 00:00:18,924
+area of this region, whether we use 
+vertical rectangles or horizontal 
+
+5
+00:00:18,924 --> 00:00:25,270
+rectangles, we're getting the same 
+answer, the area of this region. 
+
+6
+00:00:25,270 --> 00:00:28,490
+But if both work, which one should we 
+choose? 
+
+7
+00:00:28,490 --> 00:00:30,790
+The best choice depends on the shape of 
+the region. 
+
+8
+00:00:30,790 --> 00:00:35,715
+I like to think about how many different 
+kinds of edges my rectangles will touch. 
+
+9
+00:00:35,715 --> 00:00:37,770
+Here is an example to demonstrate what I 
+mean. 
+
+10
+00:00:37,770 --> 00:00:41,800
+I've drawn some region in here with three 
+edges, this curved edge, this curved 
+
+11
+00:00:41,800 --> 00:00:45,605
+edge, and this straight edge along the x 
+axis. 
+
+12
+00:00:45,605 --> 00:00:49,120
+Now, I could calculate the area of the 
+enclosed region. 
+
+13
+00:00:49,120 --> 00:00:55,640
+Either by decomposing this into vertical 
+strips or horizontal strips. 
+
+14
+00:00:55,640 --> 00:00:59,849
+The bad news about vertical strips is 
+that there's two different kinds of 
+
+15
+00:00:59,849 --> 00:01:03,857
+vertical strips. 
+There's vertical strips over here, and 
+
+16
+00:01:03,857 --> 00:01:07,662
+there's vertical strips over here. 
+The vertical strips over here touch the 
+
+17
+00:01:07,662 --> 00:01:10,478
+orange and the purple edge, and the 
+vertical strips over here would touch the 
+
+18
+00:01:10,478 --> 00:01:15,122
+orange and the blue edge. 
+Contrast that with the much better 
+
+19
+00:01:15,122 --> 00:01:20,640
+situation that happens if I cut this up 
+into horizontal strips. 
+
+20
+00:01:20,640 --> 00:01:26,800
+All of my horizontal strips have an 
+orange side and a blue side. 
+
+21
+00:01:26,800 --> 00:01:32,316
+I only have one type of horizontal strip. 
+So I should calculate the area of a 
+
+22
+00:01:32,316 --> 00:01:37,367
+region like this using horizontal strips. 
+Let's take this advice and apply it to 
+
+23
+00:01:37,367 --> 00:01:41,892
+solve a specific problem. 
+So here's a bigger, specific version of 
+
+24
+00:01:41,892 --> 00:01:46,090
+this problem. 
+Let's figure out the area of this region. 
+
+25
+00:01:46,090 --> 00:01:50,034
+this orange curve is the curve y equals 
+the square root of x, and this blue curve 
+
+26
+00:01:50,034 --> 00:01:54,310
+is y equals the square root of 2x minus 
+one. 
+
+27
+00:01:54,310 --> 00:01:57,790
+And then here I've just got the purple 
+line along the x-axis. 
+
+28
+00:01:57,790 --> 00:02:01,020
+I've really got a choice as to how to 
+approach this. 
+
+29
+00:02:01,020 --> 00:02:06,260
+I could do this with vertical strips. 
+But then I'd have to do two different 
+
+30
+00:02:06,260 --> 00:02:09,000
+integrals. 
+I'd have to handle the case over here 
+
+31
+00:02:09,000 --> 00:02:13,250
+where rectangles are touching the orange 
+line and the purple line. 
+
+32
+00:02:13,250 --> 00:02:16,337
+And I'd have to do an integral over here 
+where my rectangles are touching the 
+
+33
+00:02:16,337 --> 00:02:21,301
+orange line and the blue line. 
+It's going to be better to use horizontal 
+
+34
+00:02:21,301 --> 00:02:24,088
+strips. 
+In that case, all of the rectangles are 
+
+35
+00:02:24,088 --> 00:02:27,175
+the same kind of rectangle, they're a 
+rectangle with one edge on this orange 
+
+36
+00:02:27,175 --> 00:02:33,125
+curve, and one edge on this blue curve. 
+Let me just draw one of those thin 
+
+37
+00:02:33,125 --> 00:02:37,541
+horizontal rectangles. 
+I have to figure out the size of that 
+
+38
+00:02:37,541 --> 00:02:40,520
+rectangle. 
+Let's suppose this thin strip is at 
+
+39
+00:02:40,520 --> 00:02:44,060
+height y. 
+I know how tall this strip is. 
+
+40
+00:02:44,060 --> 00:02:49,940
+I'll call that dy. 
+But how wide is this green strip? 
+
+41
+00:02:49,940 --> 00:02:52,860
+I should figure out what this point and 
+where this point is. 
+
+42
+00:02:52,860 --> 00:02:58,074
+And if I think about it a little bit, if 
+this is y, I can solve this equation and 
+
+43
+00:02:58,074 --> 00:03:05,544
+find out that in that case x. 
+Is y squared, and I can similarly solve 
+
+44
+00:03:05,544 --> 00:03:10,880
+this equation and find out that if this 
+point has a y coordinate y, the x 
+
+45
+00:03:10,880 --> 00:03:17,522
+coordinate will be y squared plus 1 over 
+2. 
+
+46
+00:03:17,522 --> 00:03:26,080
+And that tells me the width of this green 
+rectangle, it's this minus this. 
+
+47
+00:03:26,080 --> 00:03:29,470
+I'm going to write down the area of that 
+green rectangle. 
+
+48
+00:03:29,470 --> 00:03:35,102
+So the width is y squared plus 1 over 2 
+minus y squared, that's how wide this 
+
+49
+00:03:35,102 --> 00:03:40,708
+rectangle is. 
+And the height of that rectangle is dy, 
+
+50
+00:03:40,708 --> 00:03:44,875
+so this product is the area of that green 
+rectangle. 
+
+51
+00:03:44,875 --> 00:03:48,347
+But of course I don't care just about 
+that one rectangle, I want to integrate 
+
+52
+00:03:48,347 --> 00:03:53,120
+so that I'm adding up the areas of all 
+kinds of thin rectangles. 
+
+53
+00:03:53,120 --> 00:03:56,300
+And then in the limit I'm getting the 
+area of this region exactly. 
+
+54
+00:03:56,300 --> 00:04:00,722
+So instead of just this single rectangle, 
+I'm going to integrate y goes from where 
+
+55
+00:04:00,722 --> 00:04:04,424
+to where. 
+Well, I look at my picture here, y can be 
+
+56
+00:04:04,424 --> 00:04:10,430
+as small as zero and as tall as this 
+point up here which is one. 
+
+57
+00:04:10,430 --> 00:04:14,722
+So y goes from zero to one and this 
+interval calculates the area of that 
+
+58
+00:04:14,722 --> 00:04:18,399
+region. 
+Let's do the calculation. 
+
+59
+00:04:18,399 --> 00:04:22,140
+This integral is the integral from 0 to 
+1. 
+
+60
+00:04:22,140 --> 00:04:29,516
+for I can simplify the integrand a bit. 
+It's 1 half minus y squared over 2 dy . 
+
+61
+00:04:29,516 --> 00:04:35,010
+And now we can write an antiderivative 
+for that. 
+
+62
+00:04:35,010 --> 00:04:40,232
+So I add a derivative of 1 half. 
+One half y and a derivative of y squared 
+
+63
+00:04:40,232 --> 00:04:46,220
+over 2 is y cubed over 6. 
+I'm going to evaluate that at 0 and 1, 
+
+64
+00:04:46,220 --> 00:04:51,430
+take a difference. 
+But when I plug in 0 I just get 0. 
+
+65
+00:04:51,430 --> 00:04:54,430
+So the answer is whatever I get when I 
+plug in 1. 
+
+66
+00:04:54,430 --> 00:04:58,822
+And that's 1 half times 1, minus 1 cubed 
+over 6. 
+
+67
+00:04:58,822 --> 00:05:05,158
+Could simplify that a bit, that's 1 half 
+minus a 6th, and 1 half, well, that's 3 
+
+68
+00:05:05,158 --> 00:05:14,830
+6ths, so 3 6ths minus 1 6th, is 2 6ths, 
+which you might write as, 1 3rd. 
+
+69
+00:05:14,830 --> 00:05:21,770
+So the area of that, shark fin shaped 
+region is a third of a square unit. 
+
+70
+00:05:21,770 --> 00:05:25,735
+Often, it's not there are right ways or 
+wrong ways but there are better ways and 
+
+71
+00:05:25,735 --> 00:05:29,380
+worse ways, right. 
+Ways that are better in that they are 
+
+72
+00:05:29,380 --> 00:05:34,100
+quicker, safer, more elegant. 
+So don't just make good choices. 
+
+73
+00:05:34,100 --> 00:05:45,688
+Make the best choices. 

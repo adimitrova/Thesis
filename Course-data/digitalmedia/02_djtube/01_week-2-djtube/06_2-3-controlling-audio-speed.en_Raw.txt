@@ -1,0 +1,305 @@
+[music]. 
+right in this weeks audio class we're 
+going to learn about how we can get more 
+control over the audio. 
+you've already had a bit of a preview of 
+that last week where towards the end of 
+the exercises you would have got into the 
+depths of controlling audio and using the 
+various functions. 
+what we're going to do this week is look 
+at a bit more detail about how audio is 
+represented in the computer's memory 
+wha-what's this thing we're telling it to 
+play? 
+wha-what's in there and what's it, what's 
+happening? 
+so we're trying to, pick a few of those 
+details. 
+and then we'll look at some more, control 
+methods, for, for controlling audio 
+playback using rapi. 
+so here's a, here's a starter slide 
+showing you how computers represent 
+sound. 
+so what have we got? 
+we've got this, two blocks here. 
+so, the, the block, the, the has the 
+number zero through seven. 
+so imagine that's a short snippet of 
+sound. 
+only seven, seven little snapshots of 
+sound. 
+that would last a very, very short time. 
+because sound in a, in a machine is 
+typically represented with a lot of 
+numbers. 
+so it's, it's very similar to, something 
+that you might be more familiar with, 
+which is the idea of, of a video, and, 
+and film being chopped into frames. 
+we do the same thing with sound in a 
+computer. 
+we slice it into frames, called samples, 
+and then we just play those out through 
+the sound card in sequence. 
+now, if we, if we look at those frames, 
+what's actually in them, it's slightly 
+different from the video. 
+so in the, in the case of audio, there 
+are a lot of frames, there could be up 
+to, well, a typical sample, right say, 
+for a good quality audio, would be 44,100 
+of these frames, of these samples per 
+second, which is a lot of data. 
+so this is, this is way compressed audio 
+formats exists like mp3 because it makes 
+it possible to reduce the amount of data 
+required to store the audio but maintain 
+the quality. 
+but in this example we're going to be 
+working with uncompressed data, which is 
+just the raw numbers that represent that 
+audio signal. 
+so let's have a look. 
+so in the first box here, you can see, 
+i've illustrated what the real contents 
+of a, of a single sample might be in the 
+computer's memory. 
+so i've represented it with the binary 
+number, which, which converts to 27 in 
+base ten. 
+those of you, in, in the numbers you'll 
+be more familiar with. 
+so you don't need to worry too much about 
+that conversion. 
+but it's just to show you that the 
+computer's memory is taking up 16 of 
+these zeros and ones to represent one of 
+those samples. 
+sometimes it might take 24 if it's a 
+higher quality audio. 
+but in the examples we're working with 
+here, typically it's going to be 16. 
+so we use 16 zeros and ones to represent 
+one single snapshot of sand. 
+and, we use say, 44,100 of those 
+snapshots to represent one second of 
+sound. 
+okay, so what i've, i've, i've shown you 
+here is that, that chunk of memory which 
+is represented by those boxes can extend 
+to you know, many thousands of, of spaces 
+in the memory so we talk about the sample 
+rate which is the number of those samples 
+that are used to represent the signal per 
+second. 
+the higher the sample rate the more 
+accurate the representation of the sound, 
+the wider range of sounds we can 
+represent. 
+the bit depth is another property which 
+is as i said earlier the number of 0s and 
+1s that i use to represent each of those. 
+snapshots. 
+so if we have a very low bit depth, what 
+happens is the samples are very 
+inaccurate. 
+because they don't have enough range to 
+represent all the possible values that 
+sample might have. 
+but if you have a higher bit depth. 
+then you can, you can store a much more 
+accurate representation of sound. 
+now i've got a, an animation which shows 
+that. 
+perhaps more clearly. 
+so the first animation i'm going to show 
+illustrates what happens if you increase 
+the sample rate. 
+so we'll start with a very low sample 
+rate and we'll see what a typical smooth 
+signal looks like. 
+now, it will start off very blocky and 
+then get much smoother as it goes. 
+so let's have a look at the animation 
+now. 
+so, as the, as the pointer moves across 
+the screen, the sample rate increases. 
+so, you can see the signal is, kind of, 
+getting smoother and smoother. 
+and the smoother the signal, the more 
+accurate it is in, as a representation of 
+the original sound. 
+so remember, earlier, i was recording 
+myself hitting something. 
+and and when i play that back, i want to 
+hear an accurate recording of that. 
+i don't just want to hear a really rough 
+inaccurate recording of it. 
+so, having a high sample rate allows 
+that. 
+so, on the next slide, we're going to see 
+what the, what the representation looks 
+like, as we increase the bit depth, is a 
+kind of similar effect, in that it 
+becomes less blocky as you increase the 
+bit depth, but it's totally different. 
+okay. 
+what we might say is that increasing the 
+bit depth increases the vertical 
+resolution, the resolution from top to 
+bottom on the y axis, which represents 
+how loud the signal was at any given 
+time. 
+whereas increasing the sample rate 
+changes the horizontal resolution, which 
+is, if you like, how precise it is in 
+time. 
+so the sample rate represents the, the 
+precision in time. 
+whereas the bit depth represents the 
+precision in, in the actual measurements 
+that we're taking. 
+okay. 
+so that's the end of the theory section. 
+we're now going to look at how we can get 
+more control over this, this sound. 
+and, and, and to, to understand what, 
+what we're doing when we're changing 
+those controls. 
+so the first thing we're going to try and 
+do it's to create an interactive speed 
+slider which allows us to vary the speed 
+of the playback. 
+so you can see in this code here that i'm 
+first calculating a ratio. 
+so now i'm going to demonstrate how you 
+can vary the speed of the sample 
+playback. 
+so remember the speed, relates to the 
+sample rate if you like. 
+so it's the speed of playback is how 
+quickly we're flinging those numbers at 
+the sound card. 
+so, if you increase the speed, it's 
+going to zip through that, that, that 
+section of memory that, that's storing 
+the sound faster. 
+so if we double the speed, it should get 
+through twice as fast. 
+so let's just remind ourselves by playing 
+it at normal speed. 
+so player, speed, one. 
+let's just run this app and see how it 
+sounds. 
+so i'm running it now. 
+so it's now building for the android 
+device. 
+[sound] so that's, that's speed one, 
+that's, that sounds very similar to how 
+it did when i actually played it in the 
+real world. 
+what happens if i double the speed? 
+speed [noise] it's the 2. 
+[music] so that you can see that it 
+sounds higher. 
+[music] so what's doing it, it's scanning 
+through those [unknown] twice as fast as 
+sending them out to the sound card. 
+obviously, it's really boring, having to 
+continue, edit, and then run it on the 
+device. 
+it'd be much nicer if we could experiment 
+with the speed in an interactive way. 
+so what we're going to do is make a 
+simple, if you like, slider that allows 
+us to slide the mouse pointer across the 
+screen, or a finger across the screen, 
+and. 
+increase the speed. 
+now speed is, is useful so in the range 
+zero to two. 
+so that gives us an interesting range. 
+'kay, we just heard what it sounds like 
+if you play at speed two? 
+speed zero, it doesn't play at all, and 
+then and so on, up to two. 
+so let, let's just listen to that by 
+making interactive slider. 
+so what i'm going to do is, in the draw 
+function i'm going to continually 
+calculate a new speed for the player. 
+so i'm going to calculate, first of all, 
+the ratio of the position of the mouse to 
+the width of the screen. 
+and you'll see all this, these float, 
+things there. 
+i'll explain what they are, they're for. 
+so, i do float ratio.
+now remember, float is a number that 
+is not a whole number, it's a
+real number, so we can have
+say, 0.5 or 0.6. and in this case
+we want to, because we've only got the
+range 0 to 2 for the speed in this example
+we want to be able to specify that very precisely.
+so i'm going to take the floating point 
+version of the mouse position and 
+floating point version of the width,and 
+that, that would cause it to do the 
+calculation with these accurate numbers. 
+if i didn't do this, it would do it in 
+whole numbers and i wouldn't get my 
+accurate ratio. 
+so that's the ratio of the mousex to the 
+width. 
+what that means is, when they're on the 
+far left of the screen it'll be zero and 
+when they're on the far right it'll be 
+one. 
+now i'm just going to scale that up by 
+two, so that's in the range zero to two. 
+and then, i'll just call it player.speed 
+with that value. 
+okay. 
+so that should mean i can now, change the 
+speed dynamically. 
+what i might do, when i tap it should 
+queue it back to the beginning again. 
+we'll set it to loop. 
+we'll set looping to true so that it's 
+kind of you can continue to hear what's 
+going on. 
+so let's play this sketch now, let's just 
+review that before we do it actually. 
+so i'm just going to review what i just 
+typed. 
+player set looping is set to true, so 
+that it continually plays the sound. 
+i've calculated the ratio of the position 
+of the mouse or the, or the finger tap on 
+the screen. 
+across the screen, scout it by two, and 
+then sent into, for the speed, so i will 
+be setting a speed to a range from zero 
+to two, so the idea is that when it's on 
+the far left of the screen you should 
+play it slowly, when it's on the far 
+right of the screen it should play 
+quickly. 
+let's see what it does... 
+[sound] okay, so what you heard there was 
+me moving my finger around and varying 
+the speed of the playback, as, as it was 
+playing the sample. 
+now if you do that with, with the break 
+beat, just as, by comparison, you'll see 
+that it has a slightly different effect. 
+[music] okay, so then you're getting 
+towards more of a musical deejaying 
+experience where you can slow the sound 
+down and then speed it back up again. 
+and it has a more performance feel to it 
+rather than playing with the sound. 
+[music]. 

@@ -1,0 +1,412 @@
+okay we looking 
+an old nominal big omegazero 
+wheels accelerating 
+we dont launch that way 
+we launch everything locked 
+we release 
+in fact, craft will 
+spin gets kicked 
+we engaged wheel 
+momentum happens 
+settle in end 
+youre spinning 
+there classic 
+answers we go 
+so to begin with, whats commonly 
+done dual spinners, 
+theyre released spinning 
+an axis thats aligned wheel 
+wheel aligned b, so 
+spacecraft, lets assume spinning 
+b b combination 
+thereof, something orthogonal to b 
+so we want to this in end, 
+spinning skinny, 
+right 
+this kind a tumble 
+reaction wheel is spun 
+if this is spinning, 
+inertia one, 
+a spin rate one, inertia times 
+spin rate gives momentum one 
+non dimensional units 
+im going to spin wheel until 
+momentum magnitude matches that 
+space craft launch 
+is one in this case, right 
+now, in this kind a dynamical system is 
+is angular momentum vector conserved 
+tony 
+no, theres a torque 
+applied to spin 
+right 
+theres a torque 
+torque is applied 
+between two bodies 
+wheel spacecraft 
+okay so system im talking 
+wheel spacecraft system 
+okay 
+is that an internal torque 
+an external torque 
+would an internal 
+exactly 
+so there is still external torque 
+so combined hub wheel system, 
+total momentum vector 
+is we laugh used to derive 
+equations motion like h dot equal to l 
+that h still to fixed 
+seen inertial observer 
+so we use that 
+so we want to really study 
+happens to attitude we this 
+spin up, right 
+going to go this 
+so initial spin rate, we said, 
+tumbling here, right 
+b, without loss generality, 
+im tumbling a rate , 
+inertia , gives momentum , 
+thats i here 
+spinning momentum 
+wheel relative to body, 
+that wheel 
+inertia times big omega 
+big omega omega 
+wheel relative to b, right 
+im simply omega dots, that tells 
+little h is changing time 
+going to 
+constantly increase right 
+input shaping 
+something like that, 
+going to ramp linearly 
+until you hit desired speed 
+desired speed will make little h 
+equal to big h, thats we said 
+so momentum wheel relative to 
+craft is total momentum 
+system 
+so manuever time 
+you figure 
+well end i to this much 
+thats constant rate 
+you quickly compute 
+this is going to take a hundred seconds, 
+a thousand seconds depending 
+quickly youre ramping 
+wheel speed 
+right 
+this is long will take to 
+reach this total amount momentum 
+so we compute that 
+nominally we launching like this, 
+spinning right 
+this wheel is going to spinning 
+until momentum magnitude matches 
+this spacecraft momentum time t, 
+this is going to line 
+is 
+we argued total h vector 
+to constant, right 
+we cannot change total 
+momentum this two body system 
+internal torques tony saying 
+so h is always same, 
+always pointing in this drawing 
+if wheel momentum is 
+spacecraft initial momentum, 
+wheel is spinning this axis 
+since total momentum is 
+momentum spacecraft plus 
+momentum wheel, doesnt 
+that mean spacecraft is despun, 
+like nathan talking 
+must lined this way 
+now, way im asking that question, 
+obviously answer is no, right 
+trick is 
+
+attitudes that allow 
+you to little h equal to big h, 
+im lining perfectly 
+onzo, you think 
+i cant think anything 
+top head 
+ideas 
+think this 
+right weve 
+talking magnitudes 
+we to add really is vectors, 
+ang momentum vector body plus 
+ang momentum vector wheels 
+yes 
+depending direction that you 
+well no, we spinning 
+okay, so you assuming 
+locked in, there, right 
+is dependent 
+direction vectors 
+little h is equal to 
+magnitude initial big h 
+doesnt mean two directions 
+to 
+thats essentially, this is 
+initial h that we have, this system 
+this is we launched, wheels 
+locked down, speeding 
+and, ends wheel a vector 
+magnitude that is 
+initial magnitude system 
+little h equal to big h, 
+scalars 
+you could two vectors 
+that magnitude 
+in direction 
+this is actually 
+spacecraft body must 
+so this momentum vector plus this one 
+add to original 
+we argue we cannot 
+change initial momentum 
+so, this maneuver, 
+guaranteed, we, typically, 
+spacecraft launched this way, 
+want to line like this 
+we talked boeing 
+geostats that always point 
+earth, skinny ones like this 
+you want to nice even 
+theyre this big wobble 
+call this coning motion 
+this is coning angle 
+that you see right here 
+so wed like to zero, 
+typically zero happens 
+theres different ways to explain 
+is happening, basically this momentum 
+matching guarantee doesnt enforce that 
+two things actually line 
+analysis this 
+gets rather complicated 
+typically we to, 
+i will show you numerical 
+results to kind talk this 
+we dont nice analytic answers 
+to guarantee behaviors, 
+we study this stuff 
+i mean theres lots theories 
+behind this im giving a spin 
+initially tom blake youre omega 
+omega degrees per second 
+wheel inertia, spacecraft stuff, 
+everythings locked 
+this gives an initial big h, momentum 
+im going to go ahead start 
+spinning that wheel a constant rate 
+so i took equations motion 
+you saw earlier, last class, 
+im integrating initial 
+conditions also tracking attitude 
+im tracking omega i used 
+euler angles and, i forget i used, 
+something, maybe mrps 
+two hundred seconds, 
+i finished that maneuver 
+you saw two hundred seconds, 
+we close to lined like this 
+there still a little bit 
+a wobble left, that happens there 
+so 
+that amount wobble, thats whats 
+happening amplitudes here 
+we predict that 
+see whats happening 
+so we get close quite there 
+here im taking a thousand seconds, 
+im taking a lot time 
+so itll take a minute to run 
+you see simulations running 
+keeps wobbling spinning 
+a much gradual process 
+so whats going to happen 
+in this process is itll take, 
+obviously takes time to roll up, 
+if you look final omega twos 
+like plus minus seven 
+degrees even axis bigger, 
+we will less a coning 
+angle end this maneuver 
+so gets close there well 
+want to take a look that 
+thats general trends 
+we in systems 
+a dual spinner spinning 
+up, we dont want to aggressive 
+you end this huge 
+momentum vector to side 
+you really have, 
+you to stuff 
+you want to a coning 
+angle small possible so 
+a little patience goes a long way 
+take a little bit longer 
+to spin this thing 
+that point, 
+you a smaller coning angle 
+so will get there 
+halfway there 
+way we get rid this coning angle, 
+you could use thrusters, 
+in end if you want 
+to change attitude 
+you could apply h dot equal to l, apply 
+thrusters, in right control 
+change that momentum vector 
+body, puff back place 
+using fuel, 
+we hate using fuel in space 
+theres an elegant method that people 
+devised called mutation damper 
+anybody heard a mutation damper 
+
+is you put basically 
+a ball in a tube slush, 
+oil, something highly viscous 
+so creates friction 
+so losing energy 
+right 
+we want to is spin 
+omega one in end so 
+you make that damper, you line that 
+tube slush along either b 
+so if youre still wobbling 
+conic motion, 
+youre always actually exciting that 
+slosh, youre losing energy 
+people shown this stuff, 
+end would actually get rid 
+coning motion completely 
+that goes there 
+weve used this a turn project in 
+past people to integrate 
+this study spin 
+go that 
+a fun project actually 
+so take away notes is spin up, 
+you match momentum magnitudes 
+doesnt mean youve matched vectors 
+teaching vectors 
+patience goes a long way 
+to get rid coning angle, you want 
+to put a mutation damper orthogonal 
+thatll get rid energies 
+modes here time, 
+itll settle in place 
+theres kinds of, 
+you look mutation dampers 
+heres results 
+so two hundred seconds 
+you see you 
+a thousand seconds, 
+you know, five times longer, 
+weve improved a factor two 
+theres really, an asintotic thing 
+so if you want to get even closer, 
+you might take a long time 
+thats where, 
+patient you, you know 
+a little bit mutation 
+damping go a long way, 
+get rid coning motion 
+things are, weve seen plots 
+im going to go this, 
+reasonably highlevel 
+to show you, plots also 
+applied rigid bodies, 
+also systems rigid bodies like 
+wheels dual spinners 
+energy here, this is really 
+energy spacecraft only, 
+here, real energy 
+relative to spacecraft 
+so part i w two, 
+big omega squared 
+so thats called e star 
+total momentum energy system 
+is before, momentum sphere 
+to constant, even internal 
+torques acting theyre internal 
+theyre changing total 
+momentum system 
+is kind nice, 
+thats a constraint 
+so we rewrite energy 
+ellipsoid spacecraft 
+in terms coordinates 
+a little math this is you, 
+this is you come 
+so energy that you have, 
+momentum one axis is due to 
+wheel due to spacecraft, so 
+you to pull wheel momentum 
+divide right stuff 
+to come energy terms 
+spacecraft one axis 
+two three axis look like 
+this is a sphere, this is still an 
+ellipsoid, a shifted ellipsoid 
+if h one two threes essentially 
+x, y, z, independent coordinates 
+if you go look classic 
+ellipsoidal equation 
+if you didnt minus h this would 
+a centered ellipsoid thats there, 
+minus h, actually shifts 
+that ellipsoid along one access 
+so we spin wheel that 
+energy ellipsoid is going to move 
+thats you see here 
+initially we launched 
+spacecraft spin is here 
+we spinning purely b in 
+that numerical problem i showed you 
+we spin wheel 
+you see momentum 
+coordinates that we to satisfy 
+thats total momentum 
+coordinates spacecraft 
+intersects energy in here 
+energy ellipsoid starts to shrink 
+inside spacecraft cause 
+we spin wheel spacecraft tends 
+to despin change orientation 
+although momentum wed like 
+to go wheels 
+so theres different critical points 
+one point this ellypsoid intercepts 
+in this nice figure eight motion 
+this kind a separate trick stuff 
+that weve seen rigid bodies 
+momentum magnitude 
+matches, this is you end 
+you match momentum magnitudes 
+doesnt guarantee that youve despun 
+primary body completely 
+this is a mutation damper would 
+help get rid that remaining energy 
+make that actually attractive 
+collapse onto a point 
+thats would happening there 
+so im kind showing 
+this a pictorial thing 
+so youve seen this 
+something thatll exam 
+plots, graphical 
+visualizations momentum 
+energy quite powerful 
+if you read a lot 
+classical attitude control, 
+you will see kind tools 
+used in different areas 

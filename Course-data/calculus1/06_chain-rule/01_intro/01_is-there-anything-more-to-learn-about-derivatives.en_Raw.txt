@@ -1,0 +1,53 @@
+[music]
+we've been spending a ton of time on
+derivatives.
+and at this point, you might be asking
+yourself, is there
+anything more to do with derivatives, and
+the good news is, yes.
+there's a lot more to see.
+right now i want to look at the chain
+rule.
+the chain rule tells us how to
+differentiate a composition of two
+differentiable functions and because lots
+and lots of functions in the real
+world are written as compositions of
+differentiable functions, we'll then be
+able
+to differentiate just a ton more functions
+by using the chain rule.
+now, looking ahead a bit further to see
+what else might be coming up on the
+horizon.
+well, after the chain rule we're going to
+learn
+how to differentiate functions like e to
+the x, natural
+logarithm and then even further out we're
+going to
+learn how to differentiate trig functions
+like sine and cosine.
+and once we have all of that, and once
+we've got the chain rule, we'll
+be in a position to just differentiate
+anything
+you could write down by combining those
+functions.
+and then, even further out, as we look
+even further
+ahead in the course, we can see some
+applications of differentiation.
+once we learn the mechanics of
+differentiating, then
+we'll be able to get to these
+applications.
+things like, solving optimization
+problems.
+all right, well.
+hang in there.
+we think that the chain rule, but
+computations are going to get harder.
+but, i know you can do it.
+good
+luck.

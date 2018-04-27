@@ -1,0 +1,110 @@
+music 
+sometimes you might want to u 
+substitution 
+imagine that youve got something 
+really terriblelooking, like trying to 
+find an antiderivative this, negative 
+cosine x sin x 
+cosine, cosine squared x plus dx, 
+right 
+predefine an antiderivative this 
+we 
+you might thinking ugh, if i could 
+get rid that cosine squared term 
+well to that, lets say u, equaled a 
+cosine x 
+lets write that down, so 
+substitution that im proposing, is u 
+equals cosine x 
+thatll good cause ive got a 
+cosine x a cosine squared x here 
+i also see du in this intergrand, 
+right 
+whats du 
+well differential u 
+whats derivative cosine 
+minus sine, so differential, 
+includes this dx, right 
+du is negative sine x dx 
+well lets make substitution 
+lets see works 
+so this, antiderivative problem is now, 
+a minus sin x dx, become du 
+im left a two cos x u, 
+minus two sin x dx is 
+going to in du, i got a cos 
+sign, cos sign squared x is u squared 
+plus one everything else thats left 
+is in this du 
+ill make another substitution 
+ill make v equal u squared plus 
+well lets write that 
+so substitution that im proposing is 
+v equals u squared plus 
+thats a good choice, ive 
+got a u squared plus there, i 
+see that derivative this appears 
+here so this will grab quite a bit 
+integrant 
+okay, lets site differential, 
+dv in that case is derivative to you 
+du so dv is u, du i write 
+this antidifferentiation 
+problem becomes u du ends 
+dv 
+ive got a cosine v 
+i antidifferentiate that 
+problem 
+right 
+antiderivative cosine v dv 
+is just, sine v 
+ill write plus c, right 
+derivative sine v is 
+cosine v respect to v, probably 
+grader is going to 
+impressed if i express answer 
+in terms a substitution that i 
+made up, right 
+i shouldnt write answer in 
+terms v, i writing 
+answer in terms x 
+remember that v is u squared 
+plus , so i subsitute that in here, 
+instead writing sin v plus 
+c, ill write sin u squared plus 
+, ill include that plus c 
+da, answer is in terms u, 
+original question in terms x 
+lets remember u 
+u cosine x so i make that final 
+substitution back in here 
+so instead writing sine u squared 
+plus 
+ill write sine cosine squared x, 
+u is cosine x 
+plus , plus c 
+so i claiming 
+original question asking an 
+anti derivative this crazy expression, 
+im claiming, then, is that 
+anti derivative this is sign cosign 
+squared x plus plus c 
+so we 
+i bet that you imagine truly 
+terrible anti differentiation problems 
+that involved substitutions within 
+substitutions within substitutions 
+part problem this calculus 
+course, i suppose calculus courses 
+generally, is that courses sort 
+based this idea instructor 
+providing problems to you 
+heres challenge 
+invent difficult antiderivative 
+problems 
+cooking 
+antidifferentiation problems, youll gain 
+insight makes 
+antidifferentiation problems easy, 
+makes antidifferentiation problems 
+hard 

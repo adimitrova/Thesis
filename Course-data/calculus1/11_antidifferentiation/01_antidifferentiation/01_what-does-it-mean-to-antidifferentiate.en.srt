@@ -1,0 +1,232 @@
+1
+00:00:00,000 --> 00:00:05,130
+[MUSIC]
+
+2
+00:00:05,130 --> 00:00:09,342
+We've done a ton of differentiating in
+this course.
+
+3
+00:00:09,342 --> 00:00:12,351
+We've learned all these rules for taking
+derivatives, and
+
+4
+00:00:12,351 --> 00:00:15,720
+we've been studying a bunch of
+applications of differentiation.
+
+5
+00:00:15,720 --> 00:00:18,530
+And things like optimization problems.
+
+6
+00:00:18,530 --> 00:00:20,360
+But now, I want to take all this
+
+7
+00:00:20,360 --> 00:00:24,040
+differentiation stuff and run it in
+reverse.
+
+8
+00:00:24,040 --> 00:00:26,180
+I want to do anti-differentiation.
+
+9
+00:00:27,300 --> 00:00:29,625
+Well, what is anti-differentiation?
+
+10
+00:00:29,625 --> 00:00:34,150
+When we're just differentiating, we're
+just taking derivatives.
+
+11
+00:00:34,150 --> 00:00:37,200
+That means I'm giving you functions and
+you're giving me the derivative.
+
+12
+00:00:38,510 --> 00:00:43,470
+When I ask you to anti-differentiate, I
+want you to do that in reverse.
+
+13
+00:00:43,470 --> 00:00:45,320
+I want to give you a function.
+
+14
+00:00:45,320 --> 00:00:47,300
+And then I want you to give me a
+
+15
+00:00:47,300 --> 00:00:50,930
+function whose derivative is the function
+I gave you.
+
+16
+00:00:50,930 --> 00:00:53,210
+That's anti-differentiating.
+
+17
+00:00:53,210 --> 00:00:56,620
+Starting with the derivative, and figuring
+out what function would
+
+18
+00:00:56,620 --> 00:01:00,149
+I have to differentiate to get that, as
+its derivative.
+
+19
+00:01:01,560 --> 00:01:05,850
+It turns out thatâs quite a bit harder
+than just differentiating.
+
+20
+00:01:05,850 --> 00:01:08,260
+No matter how complicated an expression I
+gave
+
+21
+00:01:08,260 --> 00:01:10,280
+you, I know that you can differentiate it.
+
+22
+00:01:10,280 --> 00:01:14,270
+You just have to carefully apply the rules
+of differentiation.
+
+23
+00:01:14,270 --> 00:01:16,260
+You know, things like the sum rule, the
+product
+
+24
+00:01:16,260 --> 00:01:18,970
+rule, the quotient rule, the chain rule,
+derivatives of
+
+25
+00:01:18,970 --> 00:01:21,860
+certain transcendental functions but I
+know that you can
+
+26
+00:01:21,860 --> 00:01:24,430
+do it, it's just a matter of applying
+those rules.
+
+27
+00:01:24,430 --> 00:01:26,608
+It might be complicated but it's doable.
+
+28
+00:01:26,608 --> 00:01:30,822
+In contrast, anti-differentiating doesn't
+really have
+
+29
+00:01:30,822 --> 00:01:33,530
+so may rules associated with it.
+
+30
+00:01:33,530 --> 00:01:37,140
+It involves a lot more creativity, and
+therefore, I think it's a lot more fun.
+
+31
+00:01:39,010 --> 00:01:41,630
+Of course, if it's going to be complicated
+we should
+
+32
+00:01:41,630 --> 00:01:44,070
+ask ourselves why we're doing it at all,
+you know?
+
+33
+00:01:44,070 --> 00:01:47,310
+What's the point of undoing
+differentiation?
+
+34
+00:01:47,310 --> 00:01:50,920
+Why would you want to anti-differentiate
+in the first place?
+
+35
+00:01:51,920 --> 00:01:55,360
+Well, it turns out that
+anti-differentiation is like
+
+36
+00:01:55,360 --> 00:01:58,459
+a bridge between two different parts of
+this course.
+
+37
+00:01:59,660 --> 00:02:03,690
+Up until now, we've really been looking
+at, at differentiation.
+
+38
+00:02:03,690 --> 00:02:05,750
+And then, the end of this course gets into
+
+39
+00:02:05,750 --> 00:02:09,330
+integration, and this theory of, of areas,
+if you like.
+
+40
+00:02:09,330 --> 00:02:16,170
+A huge surprise is that
+anti-differentiation will let us solve the
+
+41
+00:02:16,170 --> 00:02:19,090
+integration problems that are coming up at
+the end of this course.
+
+42
+00:02:19,090 --> 00:02:20,285
+So you can really think of
+
+43
+00:02:20,285 --> 00:02:23,580
+anti-differentiation as a sort of bridge
+between
+
+44
+00:02:23,580 --> 00:02:26,690
+the, the differentiation section of this
+course,
+
+45
+00:02:26,690 --> 00:02:29,990
+and the integration section of this
+course.
+
+46
+00:02:29,990 --> 00:02:31,420
+That's a story that's yet to come.
+
+47
+00:02:31,420 --> 00:02:36,387
+For now, I just want to focus on
+anti-differentiation.
+
+48
+00:02:36,387 --> 00:02:36,836
+[SOUND]
+
+49
+00:02:36,836 --> 00:02:45,142
+[MUSIC]
+
+50
+00:02:45,142 --> 00:02:48,039
+[BLANK_AUDIO]

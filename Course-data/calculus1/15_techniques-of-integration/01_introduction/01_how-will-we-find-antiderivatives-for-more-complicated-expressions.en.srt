@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:04,510
+[MUSIC]
+
+2
+00:00:04,510 --> 00:00:08,210
+Armed with the fundamental theorem of
+calculus.
+
+3
+00:00:08,210 --> 00:00:13,990
+We can no evaluate definite integrals,
+just, by taking antiderivatives.
+
+4
+00:00:13,990 --> 00:00:16,620
+[LAUGH] Of course, just, is really
+overstating it a little bit.
+
+5
+00:00:16,620 --> 00:00:20,029
+It can be quite difficult to find an
+antiderivative.
+
+6
+00:00:21,190 --> 00:00:25,910
+And the trouble is that it's hard to run
+our differentiation rules in reverse.
+
+7
+00:00:25,910 --> 00:00:30,210
+And remember a long, long time ago, we
+learned about the chain rule.
+
+8
+00:00:30,210 --> 00:00:34,740
+And if you take the chain rule, and you
+run it in reverse, you get u substitution.
+
+9
+00:00:36,022 --> 00:00:38,860
+The difficulty though, is you know, when
+you're doing u substitution, you
+
+10
+00:00:38,860 --> 00:00:40,900
+gotta make a choice for u, and that can be
+pretty hard.
+
+11
+00:00:42,210 --> 00:00:46,590
+Well now, we want to do the same kind of
+game with other differentiation rules.
+
+12
+00:00:46,590 --> 00:00:51,010
+I want to take the product rule, and run
+the product rule in reverse.
+
+13
+00:00:51,010 --> 00:00:54,034
+We're going to call that integration by
+parts and,
+
+14
+00:00:54,034 --> 00:00:56,770
+by being clever, we'll be able to evaluate
+a
+
+15
+00:00:56,770 --> 00:00:59,506
+ton more integrals by doing them, by
+parts,
+
+16
+00:00:59,506 --> 00:01:03,070
+by using the product rule in reverse on
+them.
+
+17
+00:01:03,070 --> 00:01:05,842
+And one of those cool integrals that we'll
+be able
+
+18
+00:01:05,842 --> 00:01:09,259
+to evaluate, our integrals of powers of
+sines and cosines.
+
+19
+00:01:09,259 --> 00:01:11,380
+And I think maybe it sounds a little bit
+dry.
+
+20
+00:01:11,380 --> 00:01:16,580
+But I think it's actually pretty fun to
+see how we can do, these very fearsome
+
+21
+00:01:16,580 --> 00:01:21,646
+looking integrals, with just a little bit
+of help from the product rule.
+
+22
+00:01:21,646 --> 00:01:29,965
+[MUSIC]
+
+23
+00:01:29,965 --> 00:01:32,849
+[BLANK_AUDIO]

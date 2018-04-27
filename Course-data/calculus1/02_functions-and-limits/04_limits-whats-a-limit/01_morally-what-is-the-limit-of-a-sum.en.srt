@@ -1,0 +1,364 @@
+1
+00:00:00,453 --> 00:00:12,711
+[MUSIC] There are subtleties even to 
+things that appear as simple as addition. 
+
+2
+00:00:12,711 --> 00:00:18,469
+Here, I've got some addition problems. 
+4279 + 1202, 
+
+3
+00:00:18,469 --> 00:00:18,801
+4279 + 1190, 
+4269 + 1207, 
+
+4
+00:00:18,801 --> 00:00:18,801
+42731202. 
++ 1191, 
+
+5
+00:00:18,801 --> 00:00:30,720
+and 4270 + 1100 You'll notice that 
+they're all close to this problem. 
+
+6
+00:00:30,720 --> 00:00:34,471
+The numbers that I've been listing off 
+are all hovering around this problem. 
+
+7
+00:00:34,471 --> 00:00:37,927
+Anyway, I'm going to give out these 
+problems to some people and have them try 
+
+8
+00:00:37,927 --> 00:00:47,015
+to do them. 
+[MUSIC] Hi, I'm [UNKNOWN] and I'm Math 
+
+9
+00:00:47,015 --> 00:01:00,651
+junior undergraduate at Ohio State. 
+[MUSIC] Yeah. My name is Jacob Turner. 
+
+10
+00:01:00,651 --> 00:01:07,015
+I'm a graduate TA here at OSU. 
+[MUSIC] Alright. 
+
+11
+00:01:10,470 --> 00:01:15,348
+People are finished doing the arithmetic 
+problems. 
+
+12
+00:01:15,348 --> 00:01:17,760
+Let's record the answers. 
+So 
+
+13
+00:01:17,760 --> 00:01:33,400
+here, 4270 + 1200 was 5470. 
+4279 + 1202 was 5481. 
+
+14
+00:01:33,400 --> 00:01:51,540
+The next one is 5476, I've got 5467, 
+and the last one was 5464. 
+
+15
+00:01:51,540 --> 00:01:57,541
+what do all these numbers have in common? 
+They're all really close together. 
+
+16
+00:01:57,541 --> 00:02:02,055
+Is that just an accident? 
+Of course, it's not an accident, right? 
+
+17
+00:02:02,055 --> 00:02:06,250
+Here's the fact. 
+Near the sum of two numbers is the sum of 
+
+18
+00:02:06,250 --> 00:02:10,444
+two nearby numbers. 
+These arithmetic problems are not just 
+
+19
+00:02:10,444 --> 00:02:15,217
+random arithmetic problems. 
+Look at the numbers I'm asking them to 
+
+20
+00:02:15,217 --> 00:02:16,157
+add. 
+4277 and 1190, 
+
+21
+00:02:16,157 --> 00:02:19,990
+those Those numbers are really close to 
+4273 and 1191. 
+
+22
+00:02:19,990 --> 00:02:25,341
+Which is really close to 4270 and 1200. 
+Which is really close to 4269 and 1207, 
+
+23
+00:02:25,341 --> 00:02:29,101
+alright? 
+Near the sum of two numbers is the sum of 
+
+24
+00:02:29,101 --> 00:02:33,840
+two nearby numbers, 
+all of the answers are nearby as well. 
+
+25
+00:02:33,840 --> 00:02:40,040
+How does this relate to limits? 
+Let's take a look. 
+
+26
+00:02:40,040 --> 00:02:44,721
+Here's how it relates to limits. 
+The limit of f of x plus g of x as x 
+
+27
+00:02:44,721 --> 00:02:50,285
+approaches a, is the limit of f of x as x 
+approaches a plus the limit of g of x, as 
+
+28
+00:02:50,285 --> 00:02:54,017
+x approaches a. 
+How is this related to those arithmetic 
+
+29
+00:02:54,017 --> 00:02:57,342
+problems? 
+Well, remember what this limit is saying. 
+
+30
+00:02:57,342 --> 00:03:02,566
+This is saying, what can I make f of x 
+plus g of x close to, if I'm willing to 
+
+31
+00:03:02,566 --> 00:03:07,318
+make x sufficiently close to a. 
+Well, it's going to be close to whatever 
+
+32
+00:03:07,318 --> 00:03:12,086
+I can make f of x close to added to 
+whatever I can make g of x close to, 
+
+33
+00:03:12,086 --> 00:03:14,734
+right? 
+It's the same kind of setup, right? 
+
+34
+00:03:14,734 --> 00:03:18,641
+Near the sum of two values is the sum of 
+the nearby values. 
+
+35
+00:03:18,641 --> 00:03:21,820
+For the limit of a sum is the sum of the 
+limits. 
+
+36
+00:03:21,820 --> 00:03:25,221
+We can use this fact to do some 
+calculations. 
+
+37
+00:03:25,221 --> 00:03:30,256
+Let's see how. 
+So, here's a limit problem. 
+
+38
+00:03:30,256 --> 00:03:33,633
+The limit of x squared plus x as x 
+approaches two. 
+
+39
+00:03:33,633 --> 00:03:37,889
+I really want you to resist the 
+temptation to just plug in two. 
+
+40
+00:03:37,889 --> 00:03:42,550
+We're going to be using our limit laws to 
+try to evaluate this limit. 
+
+41
+00:03:42,550 --> 00:03:49,658
+Now, this is the limit of a sum, and the 
+limit of the sum is the sum of the limits 
+
+42
+00:03:49,658 --> 00:03:55,186
+provided the limits exist. 
+So, this limit of x squared plus x is 
+
+43
+00:03:55,186 --> 00:04:01,943
+equal to the limit of x squared as x 
+approaches 2 plus the limit of x as x 
+
+44
+00:04:01,943 --> 00:04:05,870
+approaches 2. 
+Now, what's the limit of x squared? 
+
+45
+00:04:05,870 --> 00:04:12,089
+Because the limit of the products is also 
+the product of the limits provided the 
+
+46
+00:04:12,089 --> 00:04:15,467
+limits exist, this is the limit of a 
+product. 
+
+47
+00:04:15,467 --> 00:04:20,996
+This is the limit of x times x. 
+That's what x squared means, it's x times 
+
+48
+00:04:20,996 --> 00:04:24,220
+x. 
+So, I could rewrite this as the limit of 
+
+49
+00:04:24,220 --> 00:04:30,132
+x times x, as x approaches 2+. 
+Now what's the limit of x as x approaches 
+
+50
+00:04:30,132 --> 00:04:33,291
+2? 
+This is asking, what does x get close to 
+
+51
+00:04:33,291 --> 00:04:37,112
+when x gets close to 2? 
+Or, some more precisely, what can I 
+
+52
+00:04:37,112 --> 00:04:42,036
+guarantee that x is close to if I'm 
+willing to make x sufficiently close to 
+
+53
+00:04:42,036 --> 00:04:44,756
+2? 
+The limit of x as x approaches 2 is 2, 
+
+54
+00:04:44,756 --> 00:04:46,700
+alright? 
+So, this limit is just two. 
+
+55
+00:04:46,700 --> 00:04:53,374
+Now, this a limit of a product, and the 
+limit of a product is the product of the 
+
+56
+00:04:53,374 --> 00:04:59,288
+limits provided the limits exist. 
+So, this limit is the limit of x as x 
+
+57
+00:04:59,288 --> 00:05:05,260
+approaches 2 times the limit of x as x 
+approaches to +2. 
+
+58
+00:05:05,260 --> 00:05:08,908
+Now again, the limit of x as x approaches 
+two, right? 
+
+59
+00:05:08,908 --> 00:05:13,273
+What can I guarantee that x is close to 
+if x is close to 2? 
+
+60
+00:05:13,273 --> 00:05:15,347
+Well, two. 
+So, this is just 2. 
+
+61
+00:05:15,347 --> 00:05:18,853
+This limit is the same thing, it's again 
+just 2. 
+
+62
+00:05:18,853 --> 00:05:24,648
+And here, I have +2. 
+2 * 2 + 2 is 6, which is the value of the 
+
+63
+00:05:24,648 --> 00:05:27,940
+limit of x squared plus x as x approaches 
+2. 
+
+64
+00:05:31,020 --> 00:05:35,912
+The takeaway message here is ask not what 
+your country can do for you but what you 
+
+65
+00:05:35,912 --> 00:05:39,522
+can do for your country. 
+Or in other words, that the limit of a 
+
+66
+00:05:39,522 --> 00:05:42,726
+sum is the sum of the limits provided the 
+limits exist. 
+
+67
+00:05:42,726 --> 00:05:45,405
+It's the same rhetorical device right, 
+x-y, y-x. 
+
+68
+00:05:45,405 --> 00:05:50,297
+Alright, the limit of a sum is the sum of 
+the limits provided the limits exist. 
+
+69
+00:05:50,297 --> 00:05:54,839
+I hope this is very memorable because 
+these kinds of chiastic rules are going 
+
+70
+00:05:54,839 --> 00:05:58,800
+to be used throughout our time together 
+in order to evaluate limits. 
+
+71
+00:05:58,800 --> 00:06:06,801
+Soon, we're going to see that the same 
+sort of pattern holds not just for sums, 
+
+72
+00:06:06,801 --> 00:06:12,988
+but for differences, for products and 
+almost for quotients. 
+
+73
+00:06:12,988 --> 00:06:14,909
+Good luck. 
+[MUSIC] 

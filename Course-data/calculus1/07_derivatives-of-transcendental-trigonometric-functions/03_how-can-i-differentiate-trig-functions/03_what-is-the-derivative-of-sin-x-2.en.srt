@@ -1,0 +1,284 @@
+1
+00:00:00,012 --> 00:00:03,953
+[music].
+Let's combine the change rule and the
+
+2
+00:00:03,953 --> 00:00:10,681
+derivative of sign to differentiate a
+slightly more complicated function.
+
+3
+00:00:10,681 --> 00:00:14,706
+Let's try to differentiate sine of x
+squared.
+
+4
+00:00:14,706 --> 00:00:20,506
+We can realize this function as the
+composition of two functions.
+
+5
+00:00:20,506 --> 00:00:26,428
+I can write sine of x squared as the
+composition of f and g, where f is the
+
+6
+00:00:26,428 --> 00:00:30,365
+sine function and g is the squaring
+function.
+
+7
+00:00:30,365 --> 00:00:35,015
+Now, how do I differentiate a composition
+of two functions?
+
+8
+00:00:35,015 --> 00:00:39,940
+I use the chain rule.
+So I differentiate f and the derivative of
+
+9
+00:00:39,940 --> 00:00:44,165
+f is cosine x, where the derivative of
+sine is cosine.
+
+10
+00:00:44,165 --> 00:00:52,021
+And the derivative of g is just 2x.
+So now I want to differentiate the
+
+11
+00:00:52,021 --> 00:01:01,109
+composition of f and g and that's by the
+chain rule f prime of g of x times g prime
+
+12
+00:01:01,109 --> 00:01:05,240
+of x.
+In this case, f prime is cosine, so it's
+
+13
+00:01:05,240 --> 00:01:12,273
+cosine of just g of x, which is x squared
+times the derivative of g, which is 2 x.
+
+14
+00:01:12,273 --> 00:01:19,555
+So, the derivative of sine x squared with
+respect to x, is cosine of x squared times
+
+15
+00:01:19,555 --> 00:01:23,629
+2x.
+Honestly, this is a pretty neat example.
+
+16
+00:01:23,629 --> 00:01:28,957
+In magnitude, this function, sine of x
+squared, is no bigger than 1.
+
+17
+00:01:28,957 --> 00:01:33,471
+And yet, what do we know about this
+function's derivative?
+
+18
+00:01:33,471 --> 00:01:39,056
+Well, the derivative of sine of x squared
+is cosine of x squared times 2x.
+
+19
+00:01:39,056 --> 00:01:42,513
+And that function can be as large as you
+like.
+
+20
+00:01:42,513 --> 00:01:48,564
+You can make cosine of x squared times 2x
+as big as you want, as long as you choose
+
+21
+00:01:48,564 --> 00:01:52,870
+x appropriately.
+So what we have here is a function which
+
+22
+00:01:52,870 --> 00:01:57,052
+isn't very big.
+The function's value is no bigger than 1
+
+23
+00:01:57,052 --> 00:02:01,656
+in magnitude, but the function's
+derivative is very large.
+
+24
+00:02:01,656 --> 00:02:06,080
+And you can see that on the graph.
+The values of this function really aren't
+
+25
+00:02:06,080 --> 00:02:08,692
+that large.
+The values are all hugging zero.
+
+26
+00:02:08,692 --> 00:02:12,345
+But the derivative, the slope of the
+tangent line is enormous.
+
+27
+00:02:12,345 --> 00:02:15,284
+Look over here.
+If you imagine a tangent line, that
+
+28
+00:02:15,284 --> 00:02:17,837
+tangent line is going to have enormous
+slope.
+
+29
+00:02:17,837 --> 00:02:20,718
+The derivative over here is going to be
+very large.
+
+30
+00:02:20,719 --> 00:02:25,932
+In spite of the fact, that the actual
+values of the function really aren't that
+
+31
+00:02:25,932 --> 00:02:29,096
+large.
+This actually provides another lesson.
+
+32
+00:02:29,096 --> 00:02:34,553
+Just because 2 functions are nearby in
+value, doesn't mean that their derivatives
+
+33
+00:02:34,553 --> 00:02:39,750
+are anything close to each other.
+For instance, here is the graph of the
+
+34
+00:02:39,750 --> 00:02:44,484
+cosine function.
+And here is the graph of a function sine
+
+35
+00:02:44,484 --> 00:02:51,200
+of x square over 10 plus cosine of x.
+Since sine of x squared is between minus 1
+
+36
+00:02:51,200 --> 00:02:56,462
+and 1, this differs from the cosine by no
+more than a tenth.
+
+37
+00:02:56,462 --> 00:03:02,230
+And, yeah, you can see the graph is really
+close to the graph of cosine and yet this
+
+38
+00:03:02,230 --> 00:03:07,353
+graph is way more wriggly.
+Let's zoom in and we can see the same sort
+
+39
+00:03:07,353 --> 00:03:10,799
+of thing.
+Here's a zoomed in copy of just a cosine
+
+40
+00:03:10,799 --> 00:03:14,161
+curve.
+And here's what happens if you zoom in on
+
+41
+00:03:14,161 --> 00:03:18,284
+this other function.
+And in terms of the value, this other
+
+42
+00:03:18,284 --> 00:03:22,380
+function really isn't different from
+cosine very much.
+
+43
+00:03:22,380 --> 00:03:27,658
+But in terms of derivative, this function
+is totally different than cosine.
+
+44
+00:03:27,658 --> 00:03:33,208
+This function is super wiggly, so the
+derivative of this function is enormous,
+
+45
+00:03:33,208 --> 00:03:38,173
+even though the derivative of cosine is no
+bigger than 1 in magnitude.
+
+46
+00:03:38,173 --> 00:03:42,499
+If you think this is kind of an
+interesting example, it's worth trying to
+
+47
+00:03:42,499 --> 00:03:47,396
+cook up an even more elaborate example.
+Here's a very specific challenge for you.
+
+48
+00:03:47,396 --> 00:03:52,154
+Can you find a function that, just make
+one up, so that your functions values and
+
+49
+00:03:52,154 --> 00:03:56,906
+magnitude are less than c, and your
+functions derivative and magnitude is less
+
+50
+00:03:56,906 --> 00:03:59,922
+than c?
+So I want a specific number c, so that no
+
+51
+00:03:59,922 --> 00:04:04,947
+matter what value of x you plug in, the
+function's value there and the function's
+
+52
+00:04:04,947 --> 00:04:07,869
+derivative there is less than c in
+magnitude.
+
+53
+00:04:07,869 --> 00:04:12,685
+But, I want that function to have second
+derivative which can't be bounded by a
+
+54
+00:04:12,685 --> 00:04:17,104
+constant.
+I want you to cook up a function so that,
+
+55
+00:04:17,104 --> 00:04:22,495
+yeah, the values of the first derivative
+are bounded by c.
+
+56
+00:04:22,495 --> 00:04:29,781
+But the second derivative can be as big or
+as negative as I'd like, by choosing x
+
+57
+00:04:29,781 --> 00:04:35,934
+appropriately.
+Can you find a function like that?

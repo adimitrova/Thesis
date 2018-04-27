@@ -1,0 +1,84 @@
+music here ive graphed function 
+notice happens if i zoom in one 
+little piece graph, 
+right 
+if i focus one part graph, 
+well, that little bit graph sort 
+looks like part a straight line 
+another way to think this is a 
+limit secant lines 
+secant line, i mean, im going to pick 
+two points graph im going to 
+put a line, secant line, 
+two points 
+but, i better 
+taking this point moving closer 
+to a, this red line is going to a 
+better approximation to orange curve 
+near point a 
+so, instead putting 
+two points, let put secant line 
+through, say, two points, this 
+point a this point thats nearby 
+now, line segment 
+two points is a much better approximation 
+orange curve 
+i better better taking 
+a limit, putting two points 
+closer closer together, i get 
+secant line to a better better 
+approximation to orange curve near 
+point a 
+really calculating here is a 
+limit 
+so here, ive got an input a an input 
+ah, here corresponding 
+points graph function 
+im going to put a secant line 
+points 
+i want to know is whats slope 
+that secant line im going to 
+take limit this ah point is moved 
+closer to a h goes to zero in 
+words, thatll make this secant line 
+move closer closer to tangent 
+line, 
+to curve 
+okay, so whats slope secant 
+line 
+well, rise is fahfa 
+run is h 
+so, slope that secant line is 
+this, fahfah 
+if i take limit h goes to , i get 
+this limit h goes to this 
+slope 
+weve seen this, this is derivative 
+function point a 
+lets find equation tangent 
+line in a concrete example 
+heres a graph yx 
+lets figure equation 
+tangent line to that graph point 
+, 
+so to that, going to use 
+derivative i know that derivative 
+x is x 
+so, slope tangent line 
+point is , 
+thats slope tangent line 
+i also know a point that tangent line 
+passes 
+passing point 
+,, right point , is 
+tangent line 
+so, if i know slope tangent 
+line i know a point line, i 
+write an equation line 
+using point slope form 
+so, y minus y coordinate line 
+is slope time x minus x 
+coordinate line 
+so, this is an equation this red 
+tangent line 
+music 

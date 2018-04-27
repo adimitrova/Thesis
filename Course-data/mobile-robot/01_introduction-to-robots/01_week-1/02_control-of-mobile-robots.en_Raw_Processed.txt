@@ -1,0 +1,331 @@
+welcome to course control mobile 
+robots 
+name is magnus egerstedt, im a 
+professor 
+georgia tech in school electrical 
+computer engineering 
+i delighted to able to to 
+deliver this, this course to you 
+focus course is, you 
+make 
+mobile robots move in effective safe 
+predictable ways 
+meaning that dont slam 
+obstacles, move smoothly 
+nicely without weird oscillations 
+in motions 
+trick to achieving this is 
+something called control theory 
+an this first module course is 
+going to focus controls control 
+theory, 
+is, pieces that 
+you need to able to actually control 
+robots 
+i dive in, though, i wanted to say 
+a few words 
+research hammer 
+is control theory, so that, ive 
+already said, deals 
+you make things move behave 
+well 
+this could stock markets 
+this could cruise controllers 
+this could limiting spread 
+epidemics, instance, using 
+vaccination strategies 
+so control theory doesnt really a 
+tight, necessary coupling to robotics 
+a general language describing 
+things behave 
+now, if thats hammer, nail is 
+robotics 
+im very, interested in 
+you make robots elegant useful 
+things 
+and, in lab, we really three 
+different types robotics 
+one is swarm robotics 
+so you get lots lots robots 
+to exciting things together 
+is something called behavior 
+based control, behavior based robotics 
+we will see quite a bit this in 
+this course 
+behavior is basically a controller thats 
+in charge something, like, going 
+towards 
+a landmark, slamming 
+obsticles, 
+following cooridors, things like 
+that 
+question is you design 
+behaviors you patch 
+together 
+third thing that im interested in is 
+field robotics 
+meaning you take robots put 
+in 
+unstructured, strange world outside 
+lab, meaning, if you 
+a robot driving forest, 
+a sudden there 
+corridors hallways doors 
+life becomes much complicated 
+so, we start, i wanted to show a 
+little 
+video that came lab a few years 
+ago 
+so, here, this is is an example swarm 
+robotics 
+we robots that asked to 
+spell grits 
+grits stands georgia robotics 
+intelligence systems 
+thats robotics lab that im 
+directing 
+and, robots to figure 
+go in letter 
+need to figure go 
+there 
+need to figure to go there without 
+slamming 
+so, whats going there is control 
+design multiple levels abstraction 
+one each, one is high level, 
+you go 
+you lower level deals 
+with, okay, i know i want to 
+i actually get there without 
+driving 
+robots, instance 
+you see, robots, 
+limited information, meaning 
+dont really 
+know every robot is, 
+figure 
+go in this 
+formation 
+this video i like multiple 
+reasons 
+one is, theres a lot control 
+theory going underneath hood 
+second is, you will able to 
+this end this course 
+so, lets talk a little 
+course 
+control theory will play a key role, 
+meaning, you actually control 
+systems 
+this will done decoupled 
+robotics 
+then, going to couple in 
+robotic applications 
+looking robot models, 
+robots 
+hopping 
+slithering 
+rolling 
+flying 
+different type robots require 
+different type controllers 
+going to look in general 
+mobility, 
+meaning, you make robots move 
+thats main question interested 
+in, in this course 
+well end applications 
+so, you actually use robot 
+for, robots 
+we need kinds solutions that we 
+will going in course 
+i want to say though, that course 
+is 
+artificial intelligence, 
+is high level planning, 
+meaning robots actually 
+
+going to dealing 
+question of, theyve already figured 
+doing, 
+
+going to deal much 
+perception, meaning we 
+take computer motion, data actually 
+turn something actable 
+we actually design perception 
+algorithms 
+going to assume that someone else 
+done this 
+going to act perceptual 
+data that we already 
+a mechanical engineering 
+course 
+meaning, going to building 
+robots 
+dealing different kinds robotic 
+designs 
+however, there is a slight little caveat 
+to that 
+we will indeed looking 
+hardware aspects robotics 
+here is a video a course i taught 
+campus georgia tech 
+and, this is a robot 
+thats running a lot things that 
+learning in this course, meaning 
+figuring 
+to get to a landmark, in this case, a 
+purple little tape mark floor 
+to while avoiding 
+obstacles 
+so, to design different controllers 
+different situations 
+instance, left robot is 
+so well 
+right robot here is even worse 
+slamming things 
+point is that, end this 
+course you will able to this 
+hopefully better we seeing 
+right 
+now, robots 
+place 
+here seeing 
+instantiations this 
+see 
+robot is oscillating a little bit 
+much, is able 
+to navigate the, cardboard box and, 
+well, right robot is driving 
+chairs 
+robot seems to a little 
+confused 
+so, examples robotic 
+controllers 
+that arent perfectly tuned perfectly 
+designed 
+lets look a final race 
+going to see outcome would 
+if youd done control design 
+properly 
+see, theyre going straight 
+theres little oscilation 
+well, one robot is oscilating 
+purple robot 
+there seems to really well, going 
+quite straight 
+this, in mind, is a successful 
+robotic control design 
+so, is actually in course, 
+is this structured 
+well, going to lectures 
+therere going to eight mini lectures 
+week 
+and, there going to seven weeks in 
+total 
+week will capped a quiz 
+and, there will also glue lectures 
+so, lectures that designed to glue 
+
+i do, slides, to actual quizzes 
+then, a bonus, there will 
+additional material 
+this is mandatory 
+if you it, experience will 
+doubt enjoyable 
+first all, we a robotic simulator 
+that we use in lab called simiam 
+runs matlab this will part 
+course, meaning you if you 
+want to 
+few words, matlab, is program 
+environment we using 
+this is one standards in 
+engineering world 
+now, you will able to get matlab 
+free a student license this 
+course 
+so this will come extra cost to you 
+then, well also map this onto a real 
+hardware 
+platform, where, if youre interested you 
+build robot 
+because, i truly believe that there 
+nothing exciting 
+theory right, seeing things 
+move in real world 
+so, if you follow along course, 
+simulatin also build robot 
+end, you will an awesome 
+platform that actually run around in 
+world 
+without slamming things 
+we this though, i want to make 
+one minor maybe even major disclaimer 
+to robotics right to control 
+theory right 
+there is way around fact that you 
+need math 
+so mathematics will play a key role 
+this may a little uncomfortable to 
+
+you first a 
+reason 
+i 
+will try best to make sure that i 
+explain 
+actually going stuff 
+that going 
+things like linear algebra, matrices, 
+eigen values will show 
+differential equations will play a key 
+role 
+calculus, derivatives integrals will 
+everywhere 
+this is something you to 
+in able, 
+in a, in order to able to robotics 
+right 
+i hope you 
+will following along this ride 
+this seven week adventure 
+a final note, actual course 
+begins, let that 
+this opportunity to introduce team 
+behind course, graduate 
+students in robotics control theory, 
+here georgia tech, here 
+is smriti chopra, smriti is going to 
+running the, glue lectures 
+so lectures that going to 
+map general stuff 
+that i in class onto particulars 
+weekly quizzes 
+and, 
+smriti is also going to highly involved 
+discussion forums 
+here we jp de laqua 
+jp is going to the, master 
+ceremony comes to running the, 
+robotic experiments that 
+sprinkling in throughout 
+course to highlight stress 
+particular key points 
+jp is also key force behind 
+optional 
+simulation part course, will 
+running 
+weekly programming assignments 
+here lastly is roland oflaherty 
+roland is hardware guy 
+hes going to show us to build robots 
+this will also an optional weekly 
+feature we will building 
+platforms that, 
+end day, we implement 
+run controllers code 
+roland tells that hes actually 
+going 
+to produce a cooking show, instead 
+baking bread, we will baking robots 

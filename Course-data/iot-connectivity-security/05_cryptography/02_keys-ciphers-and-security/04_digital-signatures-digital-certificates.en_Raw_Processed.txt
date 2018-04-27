@@ -1,0 +1,199 @@
+music 
+hello, welcome back 
+in this lesson, we will look 
+concept public infrastructure, 
+learn two 
+important applications, 
+namely digital signatures 
+digital certificates 
+a public key infrastructure, pki, 
+is a fundamental component many 
+security protocols web 
+a pki is a collection software, 
+hardware, people, 
+policies, 
+processes that aim to manage, generate, 
+distribute, revoke cryptographic 
+keys digital certificates 
+digital certificates 
+documents that used to 
+prove ownership public keys 
+public key cryptography 
+is a powerful tool, 
+is widely used in 
+many security solutions 
+one important uses 
+public key cryptography is to provide 
+confidentiality information 
+in electronics communications 
+this is made possible 
+encryption data 
+public key cryptography also 
+used following purposes 
+first, ensuring integrity 
+data in digital communication 
+second, identification authentication 
+third, ensuring nonrepudiation 
+in digital communications 
+nonrepudiation associates 
+actions to individuals, 
+so that cannot deny 
+actions performed 
+fourth, facilitating 
+establishment trust 
+between two parties that 
+dont know 
+fifth, sharing a session key 
+in encrypted communication 
+symmetric encryption is faster 
+computationally simpler, 
+actual data is typically 
+encrypted using symmetric ciphers 
+while asymmetric 
+public key ciphers used 
+exchanging encryption keys symmetric 
+ciphers in a communication session 
+next, we going to learn 
+public key encryption is capable 
+providing solutions 
+along encryption data session 
+keys, provides confidentiality, 
+public keys systems also used 
+making digital signatures 
+similar to normal signature a paper, 
+a digital signature is a technique 
+providing authentication 
+nonrepudiation sender 
+ensuring integrity data in 
+electronic communications 
+lets see a digital signature works 
+suppose alice 
+bob want to communicate 
+a pair keys, 
+including one public key 
+one private key 
+alice bobs public key 
+so, encrypt 
+message using public key 
+send encrypted message to 
+we mentioned in another lecture, 
+one, including alice herself, 
+decrypt message, except one 
+corresponding private key 
+so, bob receives message, 
+decrypts private key 
+in fact, anyone bobs public key 
+will able to communicate him, 
+so bob needs to make sure that 
+message really sent alice 
+in a paper based communication, 
+alice could sign paper so 
+that bob could authenticate 
+signature 
+likewise in digital communication, 
+alice needs to associate 
+digital signature message 
+to that computes hash 
+value whole message, 
+is called message digest 
+needs to encrypt message 
+digest using private key 
+result is alices digital signature 
+message is encrypted 
+bobs public key 
+append digital 
+signature to encrypted message 
+send to bob 
+bob receives message 
+alices digital signature 
+first, decrypts message 
+using private key 
+computes message 
+digest received data, 
+using hash function alice 
+decrypts digital 
+signature alices public key 
+gets message digest 
+compares two versions 
+message digest 
+if identical, 
+bob conclude that message 
+sent alice 
+moreover, also ensure 
+that message 
+altered received 
+since alice signed 
+message private key, 
+anyone public key 
+verify if sent message 
+therefore, will 
+able to deny signature 
+this guarantees nonrepudiation 
+alices message 
+so, we learned a digital signature, 
+employs public key encryption, 
+ensure authenticity, 
+integrity nonrepudiation 
+now, consider alice 
+bob scenario 
+communication starts, 
+alice needs to get bobs public key 
+imagine that alice 
+received bobs public key, 
+an adversary breaks system 
+sends alice another public key, 
+created pretending to bob 
+so question is, 
+alice authenticate 
+public key received 
+sure that 
+really belongs to bob 
+well, solution is rather obvious 
+alice rely a trusted third 
+party to certify bobs public key 
+this third party is called 
+a certificate authority, ca 
+document that contains 
+verified public key is 
+called a digital certificate 
+cas usually companies that issue 
+certificates charge customers 
+lets see a digital certificate works 
+suppose that bob wants to 
+send public key to alice 
+alice bob know a ca trust 
+so bob sends public key 
+identification information to ca 
+ca verifies bobs identity, 
+generates a certificate, 
+contains bobs public key 
+additional information 
+ca signs certificate 
+private key sends to bob 
+instead sending 
+public key such, 
+bob sends public key 
+certificate to alice 
+alice check certificate 
+get bobs authentic 
+public key decrypting 
+cas signature in digital 
+certificate cas public key 
+ca manages public keys 
+certified by, 
+example, revoking compromised keys 
+setting validation 
+suspension periods keys 
+this kind status information 
+is part a certificate 
+in this lesson, 
+we learned public key encryption 
+mechanisms that use public key encryption 
+ensure authenticity, integrity, 
+nonrepudiation, establishment 
+trust between two parties 
+in next video lecture, we will 
+learn public key infrastructure 
+used in communication security 
+protocols dls, ssl, dtls 
+music 

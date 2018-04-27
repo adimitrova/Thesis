@@ -1,0 +1,224 @@
+a review 
+we covered last time 
+we dual spinners 
+so a dual spinner, 
+i spacecraft, 
+didnt necessarily to symmetric 
+this spacecraft b, b, 
+b 
+youd panel attached to 
+so now, nathan 
+we dual spinner 
+whats set that we here 
+well you one section spinning 
+to maintain angular momentum 
+or, so spinning axis 
+minimum energy, so maximum inertia 
+okay 
+section is 
+spinning essentially 
+is that required 
+we to spin an axis 
+a minimum inertia 
+second section to despun 
+i guess 
+no, in fact thats im going 
+to show today an example 
+we stabilize is 
+beauty dual spinners 
+i make axis stable 
+if you energy loss minimum 
+inertia one you to kind 
+a little bit careful theres 
+power equations you find 
+this stuff 
+conceptually, we know without 
+energy loss this is a stable spin 
+this is a stable spin 
+a spin access 
+intermediate act inertia tends to 
+flip around unstable, right 
+so, a dual spinner in this 
+mathematics, we a fly wheel 
+we line up, brett, we line 
+this fly wheel in dual spinner 
+one body axis 
+yeah, one principal ones 
+so, if we wanted to a nominal spin 
+here, omega, thats equilibrium spin 
+i going to add a wheel, 
+a spin axis, going to call gshat, 
+thats wheel spin axis, 
+is thing b 
+lined 
+good, we went through, 
+we find equations motion 
+we still use h equal to l 
+h is due to two rigid bodies 
+theres different ways to derive 
+we went that last time 
+theres angular momentum space 
+craft wheel that i, 
+that a summed i times omega plus 
+wheel momentum routed to spacecraft 
+you treat two separate 
+ones, i showed you that well 
+you combine 
+thats a great problem that ive 
+used in final so 
+make sure you go that 
+a good simple exercise 
+later in class, you spacecraft 
+within variable speed cmgs 
+process 
+pages algebra 
+so this is you want 
+to practice process so 
+you dont get silly sign errors 
+rest 
+kind becomes mechanical 
+im going to this, 
+im going to this, 
+you use computer 
+tools well to that 
+so practice this 
+so we went this 
+i labeled this an equilibrium 
+spin omega e, right 
+mean mandar 
+to in equilibrium spin 
+that mean 
+cough 
+omega dots go to 
+exactly, dynamical system, 
+flow process whatever you have, if you 
+x dot equal to f, a nonlinear thing, 
+inaudible xe is x dot equal to 
+planar pendulum one 
+equilibrium here, one equilibrium here 
+this anything to 
+stability, finding equilibrius 
+no, a convenient point 
+we tend to discuss stability 
+stability is a separate concept 
+finding equilibrius, right 
+so we found equilibrius 
+in particularly 
+single rigid body there three 
+equilibrium spins we discussed earlier 
+spinning axis least inertia, 
+maximum inertia, 
+also intermediate inertia 
+equilibrium spins 
+if you put perfectly 
+there would tumble that way 
+if you bump it, if you perturb it, 
+that little delta that we talking 
+earlier, you stay close 
+happens to spin rates 
+right, i wobble a little bit 
+stay there, is true 
+this kind a thing 
+if i throw this way you see 
+several gyrations right away, 
+thats an unstable motion, right 
+thats 
+so good, so 
+we identified while single rigid 
+body could equilibrium 
+spins three axis 
+duel spinner 
+equilibrium spins we end 
+using is primarily 
+one gs axis 
+i say primarily, 
+lets look that equation 
+sound 
+here, 
+we argue that if i a non 
+omega omega , 
+i always dots 
+omega dots going to 
+like mandar saying earlier 
+perfect, 
+you also omega e non 
+omega e is 
+makes this this 
+you could pick particular inertias, a 
+particular e a particular wheel speed, 
+that this combination a non 
+omega e actually goes to well 
+thats also an equilibrium, 
+one we typically fly, 
+a sudden you 
+a particular solution 
+you to exactly this wheel speed 
+if youre a little bit fast, 
+little bit lower, 
+youre that equilibrium part 
+whereas this spin we if this 
+wheel speed is supposed to rpm 
+i put in rpm still 
+an equilibrium actually 
+still going to hold stair 
+so, we that, here we added 
+is equilibrium plus delta 
+dropped tie terms, right 
+you end 
+differential equations 
+that stable, 
+if you see here, 
+if instead putting in that rpm 
+i gave something slightly faster 
+perturbed, this hold that speed 
+angular acceleration 
+one axis, 
+spin axis wheel, is 
+so you stay there 
+two, tends to couple 
+we two first order differential 
+equations that coupled 
+way we solve was, 
+we differentiate again, substitute in 
+so we replaced two coupled differential 
+equations one second order decoupled 
+differential equation, in end, 
+two bracketed terms 
+this is effective stiffness 
+x doubled plus k x, 
+k to positive right 
+either we make this positive 
+this positive 
+we make bracketed terms negative 
+different ways we write 
+well in that example today, 
+you will see omega hat thats 
+a nondimensionalized 
+we take wheel speed, rpm, 
+divide spacecraft speed, rpm, so 
+megahat would in this case 
+a multiplier factor between 
+spacecraft spin wheel spin 
+breaks to 
+inertias that you need 
+you to pick spin speeds 
+that terms positive, 
+terms negative 
+if you put in spin speed we recover 
+case a single rigid body 
+thats we quickly found that this 
+stiffness is going to positive if 
+inertia is either maximum inertia, 
+that means flat spin we 
+discussed earlier pole hose 
+b is access least inertia 
+least linearly without 
+energy loss is also stable 
+so you see in here also mathematical 
+linearized proof stability 
+min max inertia case 
+intermediate one gets positive 
+negative, definitely stable 
+non one in 
+nondimensionalized terms 
+conditions we need 

@@ -1,0 +1,210 @@
+music 
+hello welcome to first 
+lecture course 
+this course if called embedded 
+hardware operating systems 
+this course is a practice oriented guide 
+to build an embedded system 
+nowadays, computers 
+literally everywhere 
+run engines, encode voice, 
+construct radio signals to use 
+mobile communication 
+even control microwave 
+this nonvisible computers that make 
+possible called embedded systems 
+although embedded system received 
+much attention researcher 
+in past, 
+community recently recognized 
+that new approaches needed 
+to develop analyze 
+mainly one 
+rapidly growing 
+fields in computer industry 
+considering transient technology, 
+we say that kind systems will 
+soon integrated things 
+computer will everywhere information 
+will available anytime, 
+an example embedded systems, 
+we think airplanes 
+an airplane is full 
+embedded computers in 
+seats entertainment systems 
+video, audio gaming capabilities 
+there is an air conditioning system 
+adjusting temperature 
+pressure cabin 
+hand, 
+flight management system is heavily 
+equipped embedded systems 
+there plenty different sensors 
+reporting situation to pilot 
+location, weather, altitude, 
+speed, orientation, 
+values constantly monitored 
+autopilot system significantly 
+reduces pilot workload 
+wings, jet engines, 
+landing gear, brakes, so 
+controlled electronically 
+cockpit 
+so we see, 
+an airplane is full computers 
+embedded in different locations 
+different functionalities 
+purposes 
+different requirements 
+main characteristics 
+constraints an embedded 
+system used in airplanes 
+well first important one, 
+to reliable 
+sensors report 
+correct values time 
+control system make 
+mistake circumstances 
+must react according to deadlines 
+wings, brakes, landing gear, so 
+follow exactly 
+pilot demands 
+if reliability 
+requirements fulfilled, 
+a catastrophe easily happen 
+we mean reliability, 
+to measure 
+anyway, we will discuss 
+in future lessons 
+hand, 
+embedded systems secure 
+one must able to break 
+in to control system 
+airplane 
+override sensors command data 
+else we think 
+well another important concern is real 
+time behavior airplanes systems 
+in passenger cabins 
+in cockpit 
+passenger expects to watch smooth 
+movies interruption jitter 
+pilots commands take 
+effect right time, 
+autopilot system must 
+make late decisions 
+another good example that reflects 
+idea that computing will everywhere 
+is internet things 
+indeed, aim is to spread 
+nodes around world 
+a node, small embedded system 
+connected to sensors activators 
+nodes will collect data kind 
+may temperature measurements 
+acceleration 
+data will preprocessed in 
+fog layer an sent to cloud 
+there many problems 
+to tackle in this field 
+nodes may located in remote areas, 
+is desirable to make nodes work 
+longer 
+so energy efficiency is one issues 
+that internet things pulls 
+another issue is making 
+gathered data meaningful 
+in words, is getting 
+information messy data 
+here machine learning is 
+coming picture 
+so internet things will provide people 
+a lot data, used, 
+example, to optimize processes 
+there many examples 
+embedded systems that applied 
+in different fields industry, 
+home appliances to aerospace 
+that you probably a basic 
+idea an embedded system is, 
+lets talk we 
+describe system 
+well an embedded system 
+is typically reactive 
+this means that system is constantly 
+interacting environment 
+executes that environment say so 
+reactive systems in 
+state is waiting an input, 
+performs computations, produces an output, 
+transits to a new state 
+thus systems 
+modeled automata 
+in words, is a set states, 
+inputs, outputs 
+so abstract model an embedded 
+system consists inputs, 
+outputs, a unit to perform computations, 
+
+communication interfaces to exchange 
+data embedded systems 
+inputs provide computation 
+unit data 
+sensors play role inputs 
+sensors convert physical 
+quantities numbers 
+actuators example, 
+electrical moderators outputs 
+in between inputs outputs there 
+is a unit called processing element 
+that makes computations input 
+produces output 
+a persisting element 
+is digital device 
+course, we will talk 
+two types processing elements 
+better processors fpgas 
+in course, we will talk 
+a processing element is, 
+to pick an appropriate one 
+certain applications 
+we will discuss embedded 
+processors fpgas built, 
+to deal 
+we also will cover popular embedded 
+platforms, this will great interest 
+want to get hands 
+experience building an embedded system 
+we will also talk sensors 
+actuators, to interface 
+embedded hardware works 
+guided software 
+thats embedded operating systems 
+will also covered in course 
+indeed, right choice embedded 
+operating system may 
+simplify development, also 
+affect crucial parameters system, 
+energy consumption, 
+computational performance 
+this course is intended 
+want to obtain knowledge 
+to build an embedded system 
+this is, 
+selecting appropriate components, 
+based requirements you 
+application 
+to ease process selection, 
+maybe important 
+to know components work 
+main characteristics 
+selecting components, 
+assembled together, 
+program may needed used 
+steps selection to assembly 
+going to covered course 
+so if you want to design 
+embedded system, 
+this course is a good starting point 
+that 
+music 

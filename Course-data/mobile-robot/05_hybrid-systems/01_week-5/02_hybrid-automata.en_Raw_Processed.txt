@@ -1,0 +1,274 @@
+so in previous lecture, we saw that 
+switches show naturally, 
+especially in robotics going 
+to switch between different modes 
+operation 
+i want to today is talk a 
+little bit models that 
+going to use to describe phenomena 
+models that going to use 
+called hybrid automata 
+models that contain 
+continuous dynamics 
+meaning to x dot part discrete 
+switching logic that says oh, if you see 
+an obstacle you switch to an 
+obstacle avoidance behavior, something 
+like that 
+now, this means is that discrete 
+logic will modeled a finite state 
+machine that moves between different 
+discrete states, so thats discrete 
+logic 
+a finite state machine static 
+steroids in sense that inside 
+state we a continuous dynamics 
+loraking so 
+said that, we need first 
+is notion a state 
+so x, before, is continuous state 
+system 
+this is physical state typically 
+a robot is 
+going to is 
+going to add a discrete state that im 
+going to call q 
+q is going to tell different 
+continuous mode i in 
+so dynamics encoded 
+xdotfx,u xdotfsubqx,u 
+this q tells mode i 
+actually in 
+going to is transition 
+between different discrete modes in a 
+state machine here im mode 
+q 
+so really, xdot inside that mode 
+is going to, fsubq xdot inside 
+this mode is going to xdot is, fsubq 
+prime 
+now, called transitions right, 
+so you jump in between different 
+discrete modes youre making transitions 
+between different states in finite 
+state machine 
+we need to understand is, 
+we actually make jumps, well 
+that we need something called a guard 
+guard is something that checks 
+whether you jump 
+also, cough, excuse me, 
+also going to add something else is 
+called a reset is going to tell you 
+you jump you end 
+you made transition 
+so guard condition is a condition 
+that tells you is time to jump 
+so lets say that i in mode q i 
+want to jump to mode q prime 
+well, i have, is i a guard that 
+says, if 
+x belongs to this guard, lets say that 
+this is, im going to switch one 
+gear to another gear if rpm is 
+, im going to switch 
+this is a guard condition that encodes 
+is time to jump 
+now, im jumping i may actually 
+reset value state 
+instance, if im dropping a ball, 
+whoop, onto this desk, bounces up, 
+loses energy in, in bounce so 
+is subtracting a piece 
+away state 
+bounce 
+this way messing state 
+moment transitions occur is called a 
+reset 
+so, if i going, im here in mode q 
+sound 
+guard is true, so i moving 
+to q prime 
+well, whats happening here is that x 
+changes instance, x is lets say, 
+old x 
+that would a guard that says, oh im 
+getting a fifth energy 
+somehow this jump 
+so, we need dynamics, individual 
+dynamics called modes 
+we need transitions tell us, tells 
+us discrete states we moving in 
+between 
+we need guards tell us 
+going to make jumps were, need 
+resets to tell us jumps end 
+effecting state 
+so if we put this together, we get 
+a rather arguably messy looking thing 
+rich 
+this is hybrid automaton 
+singular, hybrid automata, plural 
+model way this works is, lets 
+see here, we start x equal to x not, 
+we end in this mode, is q, 
+we evolving according to this 
+differential equation 
+right okay, if in this case, x belongs 
+to g, x, going to move, 
+this mode way 
+going to reset state 
+state is here 
+this is dynamics 
+im in q mode 
+well if, g becomes true, i jump this 
+way 
+if g becomes true, i jump that way 
+so lets say g became true, i jump this 
+way 
+i change state, possibly according to 
+this reset map 
+i a third dynamics, q 
+x enters g guard, 
+jumps back q, a new possible 
+reset 
+so this is general model that 
+going to work 
+now, looks a little bit messy, 
+actually really 
+in cases, models going to 
+look rather, innocent 
+so, heres example, a 
+simple hybrid system 
+a thermostat, idea a 
+thermostat 
+typically, way a thermostat works, 
+least cheap ones, is you set 
+temperature you would like 
+thermostat is heater is 
+until you reach that temperature, 
+typically, go a little bit 
+then, turns off, you cool 
+down, then, youre low, you 
+turn 
+youve heard this 
+in buildings with, heaters, that 
+turn 
+so, is, heating 
+until comfortable warm 
+in fact, this is desired 
+temperature you typically want to add 
+a little slack that says that im going 
+to, shut this thing im at, 
+whatever i want to degrees 
+plus a little slack, lets say 
+way, this is degrees 
+fahrenheit 
+you celsius people there, lets 
+say 
+so now, celsius, 
+going to cool 
+cooling until 
+were,in this case, below, well, 
+degrees celsius, whatever is in 
+fahrenheit, epsilon 
+reason we need this epsilon 
+is 
+if we didnt it, this guard is 
+true 
+this is guard is immediately true 
+cuz if is to desired, 
+going to start spinning around 
+indefinitely here 
+so, little epsilons important 
+so, this would way 
+in we will model a thermostat 
+there resets here current 
+conditions magically 
+making temperature jump 
+changing heaters from, 
+to 
+well, heres a gear shifter, right well, 
+we dynamics 
+v is velocity car 
+in first gear 
+this is dynamics 
+u is smashing break gas 
+pedal 
+so this is we driving 
+we rpm threshold 
+we change gears 
+we switch to second gear is 
+here, right 
+so we second gear 
+if we keep pressing gas 
+so that rpm goes beyond, beyond 
+c, we switch to third gear 
+apparently this car three gears 
+but, we go to third gear, 
+thing here a downshift 
+note this here that i c prime 
+c prime 
+c c here 
+this is again, you want to build 
+in a little bit slack 
+this is way hiding an epsilon 
+inside there so we dont immediately 
+transition between, between gears 
+so this would a hybrid atomaton gear 
+shifter 
+im writing dynamics 
+particulars arent that 
+important right 
+important thing is, switching 
+logic way guards operate 
+well finally, lets look 
+behaviorbased robotics system 
+im is im running robot 
+so lets say x is position 
+robot 
+according to a go to goal behavior 
+so f go to goal x 
+this is to assign that 
+distance between i 
+closest obstacle is thats 
+less sum d, meaning im 
+close to an obstacle, im going to 
+switch to another mode another 
+behavior is avoid obstacles 
+so i decide avoid obstacle 
+behavior safely taking away 
+obstacle 
+position robot is greater 
+distance, prime away 
+obstacle i switched to goal to 
+goal 
+way this would look is, lets say 
+heres obstacle 
+heres goal 
+heres robot 
+sound 
+robot is fine 
+heres ball radius d 
+i get in here, im going to switch 
+to a goal to goal behavior 
+thats going to take away 
+robot 
+lets say here is a larger circle 
+radius d prime im here, im 
+going to safe im going to switch 
+to goal to goal behavior 
+so this is would happen in practice 
+if you ran this hybrid atomaton a 
+behavior based robotic system 
+now, unfortunately, things arent 
+rosy in hybrid world 
+well see in next lecture is 
+that things may actually go wrong even 
+we meaning well we 
+start building systems 
+so next lecture is a dangerbeware 
+sign that we need to put whenever we 
+designing hybrid systems, opposed 
+to standard standalone linear time 
+variant systems 

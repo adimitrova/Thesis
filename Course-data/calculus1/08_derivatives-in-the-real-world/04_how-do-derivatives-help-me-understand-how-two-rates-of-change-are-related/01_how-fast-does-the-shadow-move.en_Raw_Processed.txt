@@ -1,0 +1,134 @@
+music here is a classic related rates 
+problem 
+so heres question 
+youre walking away a light source, 
+speed, you dont know fast 
+is shadows length changing 
+theres a standard method to solving a 
+related rates problem, four steps 
+so, step is draw a picture, alright 
+youre told sort story, you 
+convert diagram 
+step , find an equation 
+given that picture, you label 
+everything in picture so you write 
+equation 
+step is to differentiate that equation 
+would probably involve chain 
+rule 
+step is to solve that equation 
+whatever youre interested in finding 
+i mean, hopefully youre trying to find 
+rate something so, youre going to 
+try to find one derivatives in 
+there 
+lets draw a picture to represent this 
+person moving away light source 
+heres picture, ive got a light source 
+right here ive got this person right 
+here 
+i imagine that person walking away 
+light ive drawn in 
+shadow 
+ive drawn this beam light 
+glancing across this persons head 
+well turn this picture an 
+equation using similar triangles 
+you might suppose that original 
+problem told us that lamppost 
+meters tall, person was, say, two 
+meters tall 
+i label relevant lengths 
+this diagram 
+ill call x distance bottom 
+lamppost to persons feet, 
+distance feet to tip 
+shadow, ill call that shadow 
+so, ive got a nicely labeled diagram, 
+i replace that nicely labeled 
+diagram a slightly extract 
+diagram, person is a 
+vertical line, lamppost is a 
+vertical line, ive got 
+triangles 
+shot here is that ive got similar 
+triangles 
+this little triangle is similiar to this 
+big triangle 
+well, angles same, 
+right 
+triangles a right angle 
+here, angle here, 
+consequently angles 
+theyre two triangles that 
+angles, theyre similar triangles 
+a result, i get this equation 
+diagram 
+this distance to this distance, x plus 
+to , must 
+corresponding ratio in to 
+triangle, is this distance to this 
+distance 
+an equation in hand we 
+differentiate 
+thinking position shadows 
+length a function t, i could rewrite 
+this equation say, x plus 
+divided equals divided , 
+right 
+position is a function time 
+shows length is a function time, i 
+differentiate sides this 
+equation 
+derivative this is rd, 
+derivative x plus derivative s, 
+derivative side is 
+one half derivative 
+i could solve derivative 
+let first expand this 
+ive got derivative x plus 
+derivative s, is derivative 
+ill subtract prime sides 
+got rd x prime is th prime 
+a half minus a rd is a th 
+i multiply sides 
+so i find that prime 
+this is rate change in shadows 
+length is twice 
+x prime this is speed 
+person is moving 
+theres a bit a surprise to this 
+answer 
+take a look this equation, telling 
+you that speed that shadows 
+length is changing is twice speed 
+that walking 
+doesnt matter standing 
+value x doesnt appear this side 
+x prime appears this side 
+so thats kind interesting right 
+speed shadow is 
+growing to fast 
+youre walking 
+in fact, speed shadow is 
+growing is exactly twice speed 
+you walking 
+assuming course, you two meters 
+tall lamp post is three meters 
+tall 
+i think important thing to take away 
+this example is that similar 
+triangles hugely helpful 
+if you see similar triangles, use 
+theres also one thing that i think is 
+funny this particular solution 
+to problem 
+heres challenge you to think 
+
+if velocity is speed 
+light, so youre almost going speed 
+light 
+this formula would telling you 
+that shadows length would moving 
+faster speed light, is that 
+really possible 

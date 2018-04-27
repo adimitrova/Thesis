@@ -1,0 +1,201 @@
+what other insight do we have,
+if we assume, as we did with the pole hold plots?
+so without loss in generality, remember,
+we can always flip the principal axis such that
+the largest inertia is axis one,
+intermediate inertia is axis two and the least inertia axis
+is axis number three, right?
+so, i assume this ordering.
+then, we found earlier the b's
+for one and three had to be positive,
+meaning they have very strong stability for large departures.
+here, that's negative, something we have to consider.
+but intermediate axis, we know,
+this one is always unstable, right?
+that was the separatrix stuff, so not too surprising.
+it's actually linearly stable, nonlinearly unstable
+and the other two's you don't have it defined.
+it depends on the situation,
+on how you're doing that and how you tumbling it for
+that, you know, the energy levels to get the right sign.
+so, it's different ways we can do this.
+so, when you're looking at these systems for small departures,
+we said, well, you know,
+k times x is always going to be bigger close to x's around zero,
+than another a times x is going to be bigger than b times x cubed
+if x gets small enough.
+as x gets very very small, x cubed is even smaller, right,
+whereas x is going to be bigger in that sense.
+at some point, this magnitudes always
+crisscross and as x gets large,
+at some point, x cubed will dominate.
+so, you can use these coefficients to argue
+if you have a particular sign.
+if a1 is positive, that means i've got a positive spring stiffness.
+that omega one motion should stay nicely bounded and stable,
+nice oscillatory part.
+if you have big departures and b is negative,
+that means once you go too far from the origin,
+it doesn't just oscillate at some point,
+it's going to just take off to infinity.
+that's what you find out in this analysis.
+or vice versa, if a is negative, that means, well,
+it won't be stable.
+small departures drive you away from the origin,
+but if b happens to be positive, in that case,
+remember you can't have your x's then
+go to infinity because at some point
+x cubed is going to dominate
+and it will try to bring it back.
+and, in nonlinear system you get things called limit cycles,
+and it doesn't converge to zero,
+but these two terms fight each other
+and you get these cyclic motions that happen in the end.
+that's what it converges to.
+so, the take off, this whole class is on nonlinear systems
+that talk about these things.
+so yeah, b1 can always be restoring if it's positive,
+and we showed that.
+phase plane plots.
+let's talk about that.
+many of you have seen them, but not everybody,
+not everybody's had quite an engineering background.
+so, if i have a simple mx double dot plus kx system, all right,
+what is a phase space plot?
+what's on the horizontal axis?
+gamma x.
+x.
+and what's on the vertical axis?
+x-dot, right?
+so you solve this.
+so, after some math or numerically,
+you find what
+x is going to be, and you have
+also a solution what x-dot is going to be.
+if it's numerical, you could,
+you know, you're always getting
+your positions and your rates and you're integrating,
+so you could keep track of all of that.
+the phase space plot
+is nothing but a visualization of my position and rates.
+so, i'm not plotting it versus time, but i'm plotting
+added positions and velocities compared themselves directly.
+so, if you have an oscillator equation
+i give it an initial deflection here,
+that's where i'm starting,
+and i have a sinusoidal response, right?
+initially, i take the spring.
+i deflect it and then i just gently let go.
+the system would just oscillate, right?
+what happens to the phase space plot?
+what does that curve look like, for spring mass system?
+andrei.
+circle.
+it's a circle, for this case, right?
+so, at some point, this
+potential energy goes into kinetic energy
+right and then it slows down again.
+and then, the net positions become negative
+and then it becomes positive again and
+you're just going to circle around, right?
+if i give it less deflection,
+you have a curve that does this.
+if you give it more deflection,
+you have bigger curves, right?
+do these curves ever intersect?
+if you start here,
+could this curve do this and go through here?
+then it's a different system.
+if it's the same dynamical system,
+can you have phase space lines intersect?
+and the answer is really no.
+the challenge with that, if they intercept,
+if you had a different phase space plots, right?
+it means if some curve does this and some other curve does this,
+when you hit this intersection points which way do you go?
+it's a second order dynamical system.
+if i'm giving it a position velocity, the accelerations are
+dictated by equations of motion.
+you can't be going in two different directions.
+maybe unless you go on quantum stuff or something, you know.
+but for classic mechanics systems, if given a position velocity,
+there is a very distinct acceleration
+and that velocity will evolve in a certain direction.
+so, you don't typically see these lines intersect,
+but you get these flow diagrams that you can draw,
+and they will show you how the stuff evolves.
+ok?
+so, that's just a phase space, there should be a dot here.
+that's what a phase space plot is.
+with a phase space plot, let's still look at x double dot + kx,
+just x double dot + the natural frequency squared x equal to zero.
+what is an equilibria, no, actually that's not the one i'm looking for.
+sin(x) equal to zero.
+this is basically your planar
+and normalized version of a planar pendulum.
+that was this problem we're talking about earlier.
+with this system, what are my equilibriums going to be?
+when is x doubled dot and x dot gonna go to zero?
+if what?
+when is x double dot gonna be zero?
+that's the easy one.
+zero and 180.
+thank you.
+so, if, x is equal to zero or pi.
+so, on a phase space plot, plus or minus pi, right,
+because you can go upside down this way or this way,
+and if it hangs straight down, let's call that zero.
+right?
+we know if we linearize this,
+it's just x double dot plus x,
+and you guys were arguing earlier, in that case,
+around the equilibrium,
+that's at the zero equilibrium
+i would have something where my phase space plots look like circles.
+alright?
+and they have a certain direction.
+but if you go here,
+and you'd linearize around that.
+here, you'd end up with x double dot equal to minus x,
+x double dot minus x is equal to zero,
+which gives you negative stiffness,
+and it's actually hyperbolically unstable.
+so there's these asymptotes you can draw,
+and that's good for both of them.
+so as we have larger departures,
+these phase space plots can all look like this.
+and, if you're on these lines,
+you would do weird stuff,
+where you could tumble from one with enough speed
+and hit the, you know,
+you can go from here and give it enough initial speed
+to where you would hit over here again,
+and do different kinds of motions, right?
+but, that's what these phase space look like,
+so you can quickly identify equilibriums.
+if you do this and there's programs that will give you this flow,
+the phase space flow, and you will see the dead spots.
+those are the equilibriums and around it,
+the flows visually very quickly tell you this looks stable
+neighboring stuff or no neighboring.
+some of it comes in, other stuff goes crazy, right?
+so, that's my quick review, if you haven't seen phase space plots.
+so, these kind of things with linear and cubic part can be used for that, as well.
+so this is one of the phase space plots we could talk about,
+where they flow.
+omega's nearby, those omega two's look good,
+but then there's a limiting case, as well.
+and it turns out, with this omega two this was the separatrix case,
+but that was the intermediate axis case.
+there's a limit.
+if i'm doing a pure spin about omega two,
+that's one of the conditions, and then anything inside is
+a non-pure spin about the intermediate axis,
+and you can, it turns out, you can show,
+this paper showed, i'm not doing that in class.
+but there's different limiting conditions
+that they can come up with,
+physical motions can never be outside here.
+you have to be within this arc.
+you can never actually exceed initial conditions.
+it will give you nonphysical initial states that you'd have to have to get there.

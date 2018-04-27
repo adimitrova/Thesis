@@ -1,0 +1,100 @@
+so now there's two aspects.
+either we need to have a different point
+about which we're taking moments or
+we're taking a different corner frame.
+and hopefully you've
+seen some of this before.
+just going to go through
+this pretty quickly.
+the book derives this,
+if you want to look at this steps, but
+i'm just going to give you the answer.
+so if you have the inertia tensor
+about the center of mass and
+that's typically what a statics
+mechanics book gives you.
+and now you have this block, or
+this cone, or this panel, right.
+and then it gives you x, y, and
+z coordinates, and assumes that things
+are lined up with symmetry, it gives you
+this answer, basically, in that form.
+for some reason this panel,
+you don't need the inertia, the moments.
+about its center of mass, but
+it's going to be attached to a spacecraft.
+the arm is the panel.
+the panel center of mass is here, but
+the spacecraft center of mass
+might be somewhere else.
+how do i get these moments about here?
+you could redo all these integrals.
+or this parallel axis theorem basically
+allows you to take moments about other
+points.
+and the way this is written is you need
+the inertia tenser about the center of
+mass, that's always going to be
+the smallest inertia you'll have,
+any further away and
+it's going to get bigger.
+and you get mass times distance squared,
+that's probably how you remember
+parallaxes theorem for
+fixed axis rotation.
+if this is the inertia about center and
+all of a sudden i'm spinning
+about the end-point.
+you would have that distance squared times
+mass that you have to add to the inertia.
+this is a 3d version of that.
+total mass,
+i need to know what is that shift.
+so i'm taking moments about o.
+there's a vector going from
+o to the center of mass.
+and i'm calling that one rc again.
+and i've got a tilde form
+to avoid a minus sign so
+it's plus mass times distance squared
+essentially but in a tilde formulation.
+so that's how we can,
+we don't have to reevaluate
+the inertia tenser every time we
+have a different moment point.
+you just use this theorem.
+here's the one subtlety
+people often trip over.
+in here again, we mention these tensers
+when you numerically value a three pathway
+matrices.
+you have to pick a coordinate frame.
+make sure you're adding these things
+up in the same coordinate frame.
+that includes this.
+so these rc tildes better
+be broken down in the same
+n frame if this is given in the n frame.
+or if this is given in the b frame,
+you have to write rc in the b frame.
+rc's often given in the other frame.
+you have a, your cube set,
+it goes on to the space station.
+you probably have your cube set inertia
+about at the center of mass but
+then it's in the space, and
+that's in the cube set frame.
+but where, it is in the space station its
+typically expressed to you in a space
+station coordinate frame.
+all right, relative to the space station
+you put that cube set at this launch
+location.
+well, then you have to of course
+use a dcm to map vectors from
+a space station frame to body
+frame before you apply this stuff.
+that's the one step i often see missed.
+right, so just make sure if you do this
+math everything's taken with respect to
+the same frame.

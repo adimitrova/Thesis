@@ -1,0 +1,373 @@
+1
+00:00:00,025 --> 00:00:10,189
+[music] What do I get if I take one cubed
+plus two cubed plus three cubed plus so on
+
+2
+00:00:10,189 --> 00:00:14,158
+plus K cubed?
+This is a truly remarkable fact it's
+
+3
+00:00:14,158 --> 00:00:19,183
+called Nicomachus' Theorem, and it says
+that the sum of the first K perfect cubes
+
+4
+00:00:19,183 --> 00:00:23,983
+is the square of just the sum of the first
+K whole numbers, and it's literally a
+
+5
+00:00:23,983 --> 00:00:27,943
+remarkable fact that these two things are,
+are equal, right?
+
+6
+00:00:27,943 --> 00:00:32,841
+I mean, you know, it just doesn't look
+like this should be true at all, but it
+
+7
+00:00:32,841 --> 00:00:35,200
+is.
+Now, once you believe something like this
+
+8
+00:00:35,200 --> 00:00:39,022
+you could rewrite this sum of cubes
+formula in maybe a slightly easier way.
+
+9
+00:00:39,022 --> 00:00:44,183
+Right, once you've got the sum of cubes is
+the square of just the sum of the first k
+
+10
+00:00:44,183 --> 00:00:49,019
+whole numbers, while we already know a
+formula for some of the first k whole
+
+11
+00:00:49,019 --> 00:00:52,568
+numbers.
+It's k times k plus 1 over 2, and I'm just
+
+12
+00:00:52,568 --> 00:00:56,380
+squaring that.
+So now here is a formula for the sum of
+
+13
+00:00:56,380 --> 00:01:01,152
+the first k perfect cubes.
+It's k squared times k plus 1 squared over
+
+14
+00:01:01,152 --> 00:01:01,663
+4.
+Right?
+
+15
+00:01:01,663 --> 00:01:07,806
+I just took this formula and squared it.
+Again there's a slick geometric proof of
+
+16
+00:01:07,806 --> 00:01:11,026
+this fact.
+So let's add 1 cubed plus 2 cubed plus 3
+
+17
+00:01:11,026 --> 00:01:15,738
+cubed plus 4 cubed pictorially, of course
+the same arguments going to work in
+
+18
+00:01:15,738 --> 00:01:18,646
+general, if I add up the first k perfect
+cubes.
+
+19
+00:01:18,646 --> 00:01:20,759
+Alright, well here's 1 cubed.
+Alright.
+
+20
+00:01:20,760 --> 00:01:24,402
+Here's 2 cubed.
+It's 8 dots, but I've arranged them in a,
+
+21
+00:01:24,402 --> 00:01:27,319
+in a cube.
+Here's 3 cubed, all right?
+
+22
+00:01:27,319 --> 00:01:33,036
+It's 3 times 3 times 3, 27 dots, but I've
+arranged them again in, in a cube shape.
+
+23
+00:01:33,036 --> 00:01:38,073
+And then 4 cubed would be 64 dots, but I
+haven't drawn all the dots in, right?
+
+24
+00:01:38,073 --> 00:01:42,610
+So I want to count all of these dots, and
+the trick is to rearrange these dots.
+
+25
+00:01:42,610 --> 00:01:46,620
+So that's how most of these sort of
+pictorial arguments end up going.
+
+26
+00:01:46,620 --> 00:01:51,617
+So I'm going to rearrange these dots like,
+like this.
+
+27
+00:01:51,618 --> 00:01:58,955
+So here I've made a square, and here's the
+1 cube, I added just, just 1 dot.
+
+28
+00:01:58,956 --> 00:02:03,181
+Here's the 2 cube, but I've rearranged it
+where 1 of the layers of the 2 by 2 by 2
+
+29
+00:02:03,181 --> 00:02:06,754
+cube is right here, and I've split the
+other layer in half.
+
+30
+00:02:06,755 --> 00:02:11,869
+So if I take this vertical 2 by 1 piece
+and this horizontal 1 by 2 piece, I can
+
+31
+00:02:11,869 --> 00:02:16,688
+rearrange them to make it 2 by 2 square
+that I stack on top of that one, which
+
+32
+00:02:16,688 --> 00:02:22,600
+then gives me this again.
+Here's the 3 by 3 by 3 cube, it's 3, 3 by
+
+33
+00:02:22,600 --> 00:02:27,469
+3 squares.
+Here's the 4 by 4 by 4 cube.
+
+34
+00:02:27,469 --> 00:02:32,240
+It's 4 squares, but that top square is
+been cut in half.
+
+35
+00:02:32,240 --> 00:02:37,269
+Right, so this piece here, and this piece
+here, would combine to give me another 4
+
+36
+00:02:37,269 --> 00:02:41,769
+by 4 square, which I can stack on top of
+these three to recover the 4 by 4 by 4
+
+37
+00:02:41,769 --> 00:02:45,211
+cube.
+Now I could put five 5 by 5 squares
+
+38
+00:02:45,211 --> 00:02:50,357
+around, and then around that I could put
+six 6 by 6 squares, but I'd cut one of
+
+39
+00:02:50,357 --> 00:02:55,828
+those squares in half just like this.
+So the even layers I use square that's
+
+40
+00:02:55,828 --> 00:03:00,147
+been cut in half, and the odd layers, I
+can just stack them down.
+
+41
+00:03:00,147 --> 00:03:08,153
+The, the point here is that I end up
+producing a square whose side length is 1
+
+42
+00:03:08,153 --> 00:03:11,590
+plus 2 plus 3 plus 4.
+You know, and of course this is being
+
+43
+00:03:11,590 --> 00:03:13,807
+general.
+Alright, it would be plus k.
+
+44
+00:03:13,808 --> 00:03:20,026
+So this is 1 plus 2 plus 3 plus 4.
+I've rearranged the sum of cubes into a
+
+45
+00:03:20,026 --> 00:03:26,206
+square, and that side length of that
+square is the sum of the first k whole
+
+46
+00:03:26,206 --> 00:03:29,924
+numbers.
+Good news now is that I've got a formula
+
+47
+00:03:29,924 --> 00:03:35,277
+for the sum of the first k whole numbers.
+It's k times k plus 1 over 2.
+
+48
+00:03:35,277 --> 00:03:42,495
+So the resulting square has side length k
+times k plus 1 over 2, which then means
+
+49
+00:03:42,495 --> 00:03:48,617
+that if I take the sum of the first K
+cubes it's that number squared.
+
+50
+00:03:48,618 --> 00:03:53,190
+These kinds of formulas enable us to
+perform calculations that would be
+
+51
+00:03:53,190 --> 00:03:57,138
+extraordinarily painful without access to
+these formulas.
+
+52
+00:03:57,138 --> 00:04:02,155
+For instance, what if I wanted to add up
+the first 100 perfect cubes, right.
+
+53
+00:04:02,155 --> 00:04:09,256
+That's the same thing as computing the
+sum, n goes from 1 to 100, of n cubed.
+
+54
+00:04:09,256 --> 00:04:16,672
+Now, because I've got a formula for this,
+because this is, the same as, just the sum
+
+55
+00:04:16,672 --> 00:04:21,454
+of The first hundred whole numbers
+squared, right?
+
+56
+00:04:21,455 --> 00:04:25,908
+I know how to compute this, right?
+What's the sum of the first hundred whole
+
+57
+00:04:25,908 --> 00:04:30,880
+numbers, well that's 100 times 101 over 2,
+and I just have to square that.
+
+58
+00:04:30,880 --> 00:04:34,519
+What's a 100 times 101 over 2?
+What's the sum of the first hundred
+
+59
+00:04:34,519 --> 00:04:39,670
+numbers?
+It's 5,050 and I just have to square this.
+
+60
+00:04:39,670 --> 00:04:44,770
+And if I square this I get 2, 5, 5, 0, 2,
+5, 0, 0.
+
+61
+00:04:44,771 --> 00:04:48,322
+All right?
+So I get about 25 million, and this makes
+
+62
+00:04:48,322 --> 00:04:53,684
+possible, you know, this calculation that
+would have been horrible tedious, right?
+
+63
+00:04:53,685 --> 00:04:58,509
+But because I've got access to this
+formula, I can perform really amazing
+
+64
+00:04:58,509 --> 00:05:02,576
+numeric feats, right?
+This would be horrible to calculate, but
+
+65
+00:05:02,576 --> 00:05:05,797
+with this formula, I can just write down
+the answer.
+
+66
+00:05:05,798 --> 00:05:09,247
+If you like these kinds of formulas,
+here's a challenge.
+
+67
+00:05:09,248 --> 00:05:12,998
+Here's the challenge.
+What's the sum of fourth powers.
+
+68
+00:05:12,999 --> 00:05:18,252
+The answer's going to be some polynomial
+in K, right, but you've gotta figure out
+
+69
+00:05:18,252 --> 00:05:23,510
+which polynomial that is.
+One trick would be to plug in values.
+
+70
+00:05:23,510 --> 00:05:26,320
+Say K equals one, K equals two, K equals
+three.
+
+71
+00:05:26,320 --> 00:05:31,260
+And then try to find the polynomial that
+passes through those points.
+
+72
+00:05:31,260 --> 00:05:36,147
+Now that's your challenge.
+And there's a long tradition here.
+
+73
+00:05:36,148 --> 00:05:43,510
+Bernoulli for instance computed the sum of
+the first thousand tenths powers, and he
+
+74
+00:05:43,510 --> 00:05:51,164
+did it 300 years ago.
+People have been thinking about these
+
+75
+00:05:51,164 --> 00:05:57,403
+kinds of formulas for a really long time.

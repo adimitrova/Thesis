@@ -1,0 +1,229 @@
+[music]
+>> during this third module, we are discussing techniques 
+for the acceleration and detection of elementary particles. 
+for this video, we are invited to hall sm18 of cern, a hall where
+the magnets of the large hadron collider have been tested in the past and
+spare magnets are still being checked out. 
+a part of this hall has been transformed into an exhibition. 
+at the end of this module, you will know how to describe the elements 
+of an accelerator and know how they look like in real life. 
+so, let us meet today␙s host. 
+for this video, we are accompanied by
+tobias golling, who is one of my colleagues,
+professor at university of geneva, who dedicates 100% of his
+research to the analysis of data from the atlas experiment at the lhc.
+so, tobis,
+can you let us know what exactly you are doing in this domain?
+>> yes, with pleasure. 
+in short, i try to find new phenomena in the data,
+with my group. 
+let me put this in context. the standard model is a great success,
+it describes all visible matter, all forces, well almost all forces. 
+>> except one. 
+>> yes, except one. 
+the higgs mechanism describes how all 
+particules acquire a mass, and the higgs boson has been discovered
+at cern in 2012, so all of this is very, very well set. 
+but, there are weaknesses of the model.
+for example, it cannot explain dark matter and it cannot explain
+gravity, that his the missing force, and there are other phenomena, like, for example, 
+the famous hierarchy problem, i.e. 
+>> the difference in scale␦
+>> exactly, between the higgs mass and the scale of gravity.
+so, there are open questions. what are we to do?
+we can ask our theorist colleagues,
+and they formulate hypotheses, that there are particles,
+that one must introduce particles beyond the standard model, 
+and the hypothesis is that one can create these new
+particle in our collisions. so i dedicate 
+my research to finding new particles, 
+like particles predicted by supersymmetry, or theories with extra dimensions. 
+>> so, for this, the predicted cross sections 
+are very, very small, are they not?
+>> they are of the order of, or smaller than the cross sections
+characterising the standard model, and thus 
+we evidently need an high performance accelerator, a collider.
+>> so, what are the properties of the lhc,
+which are crucial for your research?
+>> we expect that these particles have a very large mass,
+and that their production rate is very low. 
+so, the two most important parameters of the lhc for this 
+are the energy and the luminosity. 
+higher energy allows us to produce more massive particles.
+>> and a higher luminosity␦
+>> it means more data, a higher production rate,
+more events, which can be observed. 
+>> the lhc is a sort of double accelerator and
+storage ring, where the protons circulate in two directions. 
+so, in principle, it is two accelerators in one, isn␙t it?
+>> exactly. we have the principle of two-in-one, for all the magnets of the lhc
+there are two coils. 
+>> why does one need two accelerators?
+>> because there are two proton beams in opposite directions. 
+so, one needs two magnetic fields. 
+>> one beam circulates in one direction.
+>> yes.
+>> and the other in the opposite direction.
+and they meet at the interaction points. 
+>> yes. 
+we need the same lorenz force towards the center of the orbit,
+so we need one magnetic field pointing upwards, the other one downwards. 
+and for this one uses these dipole magnets.
+>> so here, we are almost sitting on one of these dipole magnets,
+can you explain the elements of these magnets a little?
+>> exactly. 
+so here, one sees the two rings, the two vacuum tubes,
+and one sees two coils, one and the other, which are exactly the same, 
+the only difference is that the current is reversed. 
+and here is the common yoke for the magnetic fields
+and the cryostat is also in common. 
+>> ok. 
+so, in one of these coils, there is an upward pointing magnetic field,
+and in the other, the same dipole field, but pointing downward. 
+with means that we are deviating the two beam in the same direction, 
+even though they have opposite directions, simply
+applying lorentz␙ law, which gives the centripetal force, 
+which we need, q(v x b) in this case. 
+>> exactly, 
+with the right hand rule. 
+>> mh mh.
+the two coils are in the same cryostat. why?
+why does one not simply build two separate magnets?
+>> one can reduce the cost this way, 
+having a common cryostat for the two coils. 
+>> so, for the enormous energies of the 
+lhc, one needs superconducting coils. 
+>> exactly. 
+>> ok. 
+and because of that, all are in one cryostat. 
+so, the coils themselves are made of copper, aren␙t they?
+>> maybe a few numbers about the magnetic system,
+which show that it is really very important,
+even essential for the lhc. 
+of the 27 km of circumference, 85% are 
+occupied by magnets, the magnet system␦ 
+>> ok. 
+>> ␦and 75% by dipoles, like this one.
+>> so this is really the heart of the matter.
+magnets are practically everywhere. 
+>> there are magnets everywhere, right. 
+there are more than 1000, more than 1200 elements like this. 
+each one weighs 30 tons,
+has 15m length and a maximum magnetic field of 8.3 tesla. 
+>> so what we see here is just a small segment of a dipole,
+which in reality is much longer. 
+>> ok. 
+so this makes a gigantic cryogenic system,
+so, practically all the ring is at cryogenic temperature, 
+all around its length of 27km. 
+>> yes. 
+so, later we will see the superconducting cables, there are 1200 tons of 
+superconducting cables and it needs 130 tons of superfluid helium
+to cool down all this mass to 1.9 kelvin. 
+>> wow. 
+>> so i propose to move on to see
+how these coils look and
+also the focalising elements of the lhc. 
+here we are in front of one of the quadruples of the lhc, which serves to focalise the two beams. 
+so, the principle of this focalisation has been explained in video 3.2, 
+but why is it important to focalise the beams
+of the accelerator, tobias?
+>> so, here we come back to the luminosity, which we have already mentioned. 
+the luminosity is inversely proportional 
+to the common surface of the two proton beams,
+and that is why one must focalise them, to reduce this surface. 
+and here we see very well 
+a section of a quadrupole magnet, which is responsible for the focalisation.
+one sees very well the four poles, here two north poles and two south poles, and then
+here are two version of this magnet, one is responsible for
+horizontal focalisation, the other one for the vertical one. 
+one alternates the two␦
+>> puts them in chains.
+>> ␦to have an optimum focalisation. 
+>> so if we look at the coils, the wires go effectively
+in this direction, don␙t they?
+>> exactly.
+>> so here we have in fact 
+a section of such a coil. can you
+explain the ingredients of such a coil?
+>> yes.
+all coils are composed of superconducting cables, they are very 
+important,
+as we said, there are 1200 tons of these cables. 
+they are in fact composed of these strands, with a diameter of roughly 1mm. 
+and these strands are themselves composed of 
+filaments, which are ten times finer than a human hair. 
+>> that means about 10 micrometers in diameter?
+>> something like that. 
+>> what is the material?
+>> it is niobium-titanium.
+and there is copper layer around. 
+>> and all of this is normally imbedded in a sort of aluminum stabiliser, 
+that is why there is this gray material. 
+>> yes, yes.
+>> ok.
+so this serves to wind the coils of the active part
+of the magnets. 
+but also to transport current around the accelerator, doesn␙t it?
+>> exactly. 
+we have these cables all around the accelerator. 
+if one takes the total length of the filaments, 
+one arrives at an astronomical scale. 
+one can go five times to the sun an back with this. 
+>> it is really incredible, all this effort
+which is made to produce the particles
+you are searching for, isn␙t it?
+>> in fact it serves this purpose. 
+>> so, we still need to discuss an element of the accelerator
+which we have not covered yet. 
+these are the accelerating elements themselves. 
+so i propose that we move on to see what they look like in reality.
+in this small video animation we see a cryostat which contains four
+superconducting elements, i.e. radio frequency resonators.  
+the radio frequency wave enters through these wave guides
+and establishes an electric field with the right polarity, such that
+the beam is accelerated in its direction of motion. 
+so here is one of these elements.
+tobias, can you please explain these ingredients of this 
+radio frequency cavity?
+>> of course. such a cavity has
+as you said, the principle purpose to accelerate protons
+from an energy of 450 gev, 
+the energy with which they enter the lhc, 
+up to 7 tev, which is their maximum energy. 
+here we see the wave guides, the radio frequency 
+generated by the klystron enter here and leaves there. 
+for the lhc, they have a frequency of 400 mhz. 
+>> ok. 
+so inside, a stationary wave is formed.
+and when the polarity is right at the right time of arrival of the protons, 
+we will have a net acceleration in the direction of the electric field.  
+so, how does one synchronise this wave with the beam passage?
+>> it is very important to have mono-energetic beams
+so we must equalise the proton energy. 
+so when the proton with the right energy
+enters at the right moment, there will be no acceleration
+if we are already at the maximum energy level. 
+however, if the protons arrive too early or too late, 
+i.e. when their energy is a little too large or too small, an acceleration is felt
+the protons are decelerated or accelerated to approach the ideal energy. 
+this happens automatically, when the protons enter in the increasing 
+phase of the electric field, as we have seen in video 3.2.
+so, this accelerating cavity, the resonator and all what is around,
+is made of copper and is emerged in a cryostat, which holds
+it at liquid helium temperature, such that the copper is superconducting. 
+>> so why is it important that this structure 
+also is superconducting?
+>> yes, it is very important that there is a minimum 
+ohmic resistance, such that the power 
+of the wave is not attenuated. 
+>> ok, this means that the radio frequency wave 
+arrives without loss from the klystron to the beam. 
+>> exactly.
+>> ok.
+so, thank you very much, tobias, for this visit,
+and for this demonstration of the lhc elements. 
+this concludes this video.
+in the next video, 
+we will start to discuss particle detection. 
+[music]

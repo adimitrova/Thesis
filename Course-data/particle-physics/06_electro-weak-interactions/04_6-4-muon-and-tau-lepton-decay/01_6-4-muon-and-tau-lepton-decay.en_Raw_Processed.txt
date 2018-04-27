@@ -1,0 +1,201 @@
+music 
+in sixth module, 
+we discussing weak interaction 
+in this fourth video, 
+we discuss a prototype process charged 
+weak interactions, leptonic 
+interaction w boson 
+following this video, you will know 
+to describe decays muon 
+tau leptons, 
+in terms a feynman diagram 
+to discuss properties 
+this interaction quantitatively 
+here is feynman diagram 
+muon decay 
+emission w converts 
+muon a muon neutrino 
+virtual w decays 
+an electron electronantineutrino pair 
+this way lepton number 
+weak isospin 
+quantum numbers, conserved 
+in diagram, we already converted 
+outgoing antineutrino an incoming 
+neutrino, inverting charge 
+fourmomentum, k k 
+in amplitude, w propagator 
+contributes a factor one q 
+minus mass squared w, 
+weakens amplitude 
+qs much smaller 
+square mass w 
+low momentum transfers, like 
+light particles decays 
+q is smaller 
+equal to square mass 
+muon, that is, is negligible, 
+propagator is constant equal to 
+inverse square mass w 
+we treat this process in 
+socalled fermi approximation 
+convention, one absorbs this 
+residual w propagator 
+square coupling constant 
+g, to form fermi constant gf 
+takes role fine structure 
+constant weak interactions 
+in this approximation, valid low 
+momentum transfers, weak interactions 
+described a direct interaction 
+between two current densities 
+transition currents corresponding 
+to charged weak interactions, 
+similar to electromagnetic ones 
+one denotes in an imprecise manner, 
+charged currents cc 
+analogously, interaction 
+z boson low energy, 
+that is q much smaller 
+square mass z, 
+approximated direct interaction 
+two neutral currents, nc 
+constant rho involves weinberg 
+angular thetaw, measures 
+ratio between coupling constants 
+weak charged neutral interactions 
+constant rho is equal 
+to one good precision 
+this is due to fact that in 
+standard theory electroweak 
+interaction, masses vector 
+bosons coupling constants 
+connected higgs mechanism, 
+we will discuss in video 
+highprecision experimental 
+results verify this relationship 
+differencial muon decay rate, 
+neglecting mass electron, 
+is much smaller that 
+mass muon, 
+is given here a function energy 
+e outgoing electron 
+this energy vary between zero 
+half mass muon 
+this process is virtually 
+decay channel, 
+total rate is obtained 
+integrating e 
+measure a lifetime 
+muon is close to 
+
+we thus find a fermi constant gf 
+inverse gev squared 
+factor m comes in 
+phasespace factor, 
+enters calculation gamma 
+therefore we find formula 
+weak decays, 
+especially tau decay 
+hand, directly 
+correspond to total decay rate, 
+tau important 
+decay channels due large mass 
+so gamma specific 
+decay is a partial width, 
+we must take account 
+branching fraction in numerator 
+one precise experiments 
+that measure muon lifetime, 
+is mulan paul scherrer 
+institute villigen in switzerland 
+a mu beam enters left, 
+is stopped in a target 
+scintillator ball surrounding target 
+registers positrons decay, 
+measures emission times 
+number decays per unit 
+time follows an exponential law 
+to a good approximation, 
+a low background accidental 
+coincidences between beam arrival 
+electron signal 
+slope curve gives 
+muon lifetime 
+mulan collaboration finds value 
+,, plus minus picoseconds 
+this result dominate global 
+average particle data group 
+this gives a value fermi constant 
+accurate to parts per million 
+tau lepton lifetime is short 
+a direct measurement 
+we rather measure path length l, 
+high energies 
+tau leptons produced in large 
+numbers in electron positron 
+annihilation tau pairs 
+high energies, that is 
+square root equal to twice 
+energy tau, 
+lifetime in laboratory frame 
+is extended 
+relativistic factor gamma 
+mean part length l is 
+therefore longer a factor 
+p mass tau 
+a lifetime several 
+hundred femtoseconds, 
+path length is hardly directly 
+observable, even high energies 
+a tau energy gev example, 
+average decay distance 
+is millimeters, 
+thus completely 
+contained in vacuum tube, 
+that contains beam 
+collider experiments 
+one determines decay point 
+vertex decays three charged particles 
+tau decays in three 
+pions plus a neutrino 
+trajectories three pions 
+measured a tracking detector, 
+is typically a silicon detector, 
+directly outside vacuum tube 
+extrapolated 
+back to common origin, 
+is decay vertex 
+tau lepton 
+tau origin known 
+beam position, 
+decay length l is thus 
+distance between two points 
+decay length distribution 
+in logarithmic scale, 
+shows expected exponential behavior, 
+modified 
+experimental resolution, 
+is significantly worse 
+direct time measurement 
+slope distribution 
+measures average decay length, 
+in turn gives lifetime 
+lgamma v 
+global average tau lifetime 
+determined particle 
+data group is 
+this figure is in excellent agreement 
+precision prediction, based 
+fermi constant determined 
+measured lifetime muon 
+this show that coupling 
+constants electron, muon 
+tau to w boson 
+to within a few per mil 
+in next video, 
+well talk a little 
+properties w 
+w bosons, 
+in particular, masses 
+music 

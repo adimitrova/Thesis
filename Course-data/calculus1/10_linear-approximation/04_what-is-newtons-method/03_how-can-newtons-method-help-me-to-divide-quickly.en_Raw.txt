@@ -1,0 +1,197 @@
+[music] you've already seen a few
+different techniques for how to multiply
+quickly.
+some of those techniques include
+quartersquares, using logarithms or a
+sliderule.
+and that method of prosthaphaeresis, which
+involves arc cosine.
+so yeah, there's a ton of different
+techniques that i can use to multiply two
+numbers quickly.
+but what if i could already multiply
+quickly, but i wanted to divide quickly?
+what if i wanted to calculate 1 divided by
+b?
+well, we can use newton's method to do
+this.
+now, how we're going to use newton's
+method.
+well, newton's method is really a trick
+for finding zeroes of a function.
+so, if i want to approximate one divided
+by b, the reciprocal of b, what i really
+want to find is some function where that
+number is a zero of the function.
+newton's method will help me approximate
+that zero and consequently help me
+approximate 1 over b.
+there's a ton of different choices that
+are possible for such a function.
+well, here's one choice.
+the function f of x equals 1 over x minus
+b.
+and let's just check, yeah, if i evaluate
+this function at 1 over b, that's 1 over 1
+over b minus b.
+but 1 over 1 over b, the reciprocal of the
+reciprocal of b, is just b.
+and b minus b is in fact 0.
+so, this function f does have 1 over b as
+a 0.
+now let's apply newton's method.
+so how are we going to do this?
+here is the formula for newtons' method,
+right?
+this is the iterative formula, my next
+guess is my old guess minus this fraction.
+the function evaluate of my old guess
+divided by the derivative evaluate of my
+old guess.
+and when this works, it's marching me
+closer to a 0 of the function.
+and here's the good function for doing
+division.
+this function has a 0 at 1 over b.
+so, if i can get closer and closer to a
+zero of this function, i'm actually
+computing 1 over b, which is what i want
+to do.
+so, let's try to rewrite this formula just
+by using this.
+and the first step here is to
+differentiate this.
+so, let's differentiate this.
+well, the differential goes back to x.
+so, the derivative of 1 over x is minus 1
+over x squared, and the b here is the
+constant.
+so, i have to include it.
+so, this is the derivative of f.
+now, i'll use that to try to make this
+newton's method formula look a little bit
+nicer.
+so, x of n plus 1 is x of n minus the
+function evaluated, x of n, which is 1
+over x of n minus b, divided by the
+derivative evaluator x of n, which is
+minus 1 over x of n squared.
+now, to kill off this denominator, let's
+multiple by minus x sub n squared divided
+by minus x sub n squared.
+that's just a sneaky version of 1, but it
+manages to kill off the denominator
+simplify this a bit.
+i've got x sub n.
+i've got minus x sub n squared times 1
+over x sub n, that leaves me with a minus
+x sub n.
+and i've got a negative b, negative x sub
+n squared, that's a plus b x sub n
+squared.
+i'm subtracting this.
+so, i've got x sub n plus x sub n, that's
+two x sub n's, minus b x of n squared.
+and i'll factor out an x of n, so x of n
+times 2 minus bx of n.
+and what i've got here now is an iterative
+formula that, at least when it works.
+applying this iterative formula is going
+to move me closer and closer to one over
+b.
+but this formula doesn't involve division,
+it only involves multiplying and
+subtracting.
+so, this is a way to approximate 1 over b
+without ever dividing, right?
+just multiplying and subtracting over and
+over again.
+then, we'll make this even more concrete.
+let's set b equals 7 so i can try to
+approximate 1 over 7.
+so here we go.
+b will be 7.
+so, we're trying to approximate 1 7th
+using newton's method.
+so, i make an initial guess.
+and i'll make my initial guess 1 10th and
+make some of the arithmetic work out, a
+little bit more reasonably.
+and i'm going to start with this initial
+guess, and i'll use this formula we just
+derived to improve this initial guess to a
+hopefully better guess.
+so, i take my original guess, 1 10th.
+multiply it by 2 minus b is 7, times my
+previous guess of 1 10th.
+i can calculate this.
+this is 1 10th times, instead of 2 i'll
+write 20 10th.
+and instead of 7 times a 10th, i'll write
+7 10th.
+i got 20 minus 7 10th, so that's 13 10th.
+so, 1 10th times 13 10th, that's 13 100th
+and that's a slightly better as to the
+value of, of 1 7th, but i can now repeat
+this process using this formula again.
+so, i'll get a better guess here x sub 2
+by starting with my previous guess, which
+is 13 100th.
+multiply that by 2 minus 7 times my
+previous guess of 13 100th.
+i can calculate what this is.
+so, 13 100th.
+instead of 2, i'll write 200 100th, that's
+another name for 2 minus.
+instead of 7 times 13, i'll multiply that
+out.
+i'll get 91 100th.
+now, 200 minus 91, that's 109 100th times
+13 100th.
+and 13 times 109 is 1417, and 100 times
+100 is 10,000.
+so, that's an even better approximation to
+the actual value of 1 7th.
+and i could appreciate the process again.
+the arithmetic gets, you know, sort of
+awful.
+but the point here isn't so much, you
+know, that i can actually do this on
+paper, or that i would want to do this on
+paper.
+but that this procedure only involves
+adding, subtracting, and multiplying, and
+yet it ends up calculating a division
+problem.
+well, how close are we to the actual value
+of 1 7th?
+1 7th is about 0.142857 and it keeps on
+going.
+so yeah, we're doing really quite well.
+i mean, 0.14 is a pretty good guess as to
+the actual value of 1 7th.
+this method has a name.
+so, this technique usually goes by the
+name newton-raphson division.
+and we just saw that it works for finding
+recipricols, but if you can find
+recipricols and you can multiply, you can
+do division in general.
+alright, if you wanted to approximate 3
+7th using this technique, well, you just
+point out that 3 7th is 3 times 1 7th,
+right?
+and imagine that you can multiply, add,
+subtract, but the division is hard.
+okay, well a moment ago, we approximated 1
+7th, alright?
+we approximated 1 7th to be about 1,417
+over 10,000.
+this was the second stage in the
+approximation.
+and 3 times 1,417 is 4251 over 10,000.
+which isn't so far off of 3 7th, right?
+the point though is that, you know, if
+division, but if division that only
+involves repeated adding, subtracting, and
+multiplying.

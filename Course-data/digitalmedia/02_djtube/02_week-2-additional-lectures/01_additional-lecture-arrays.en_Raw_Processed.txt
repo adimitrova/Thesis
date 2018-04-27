@@ -1,0 +1,130 @@
+this weeks additional programming 
+lecture is arrays 
+so last week we talked variables 
+i talked a variable is a 
+place in memory a box in memory 
+you put data 
+thats obviously useful 
+storing types data, 
+able to access via name 
+really suitable one 
+particular item data, a single number, 
+a single image 
+part benefit using a 
+computer, is that you compute lots 
+lots data 
+well see in this weeks lecture, 
+we use lots lots images to 
+create an animation 
+to that you need, a way storing 
+images in a convenient way, 
+a hundred variables, if 
+you a hundred images in one 
+dimension 
+and, that is you we use 
+something called an array 
+an array variable is created 
+much like variable, except you 
+two little square brackets 
+makes look a little like a box, 
+ill come to exactly mean in a 
+minute 
+we put between type 
+variable, int, variable name plus 
+x 
+we put square brackets in that, 
+tells us that an array variable, 
+is to, stor, study, storing one 
+int, store many integers 
+if we see here bottom in 
+memory, rather a single box, a 
+lot boxes, value 
+memory number 
+you access a single name, 
+posx this, boxes 
+together 
+a single variable, we lots 
+different bits data 
+so you access an individual item 
+data 
+you access a number, you use 
+square brackets, this is 
+square brackets come in 
+there way you get access to a 
+particular item array, inside 
+square brackets, you put a number 
+so boxes a number, 
+this is way you get box number three, 
+you would get an item that 
+one thing to note, importantly, is 
+that starts , so first element 
+in an array is element 
+you would naturally think element 
+is not, 
+that will influence you 
+everything right 
+important to clear that 
+that means if youve got a number 
+element elements in an array 
+elements in, first element is 
+, last one is , is 
+, starts 
+a little bit confusing 
+unfortunate, thats way 
+works, you will get used to 
+quickly 
+so this is you set an element to 
+array, like you would set a variable 
+to be, using equals command 
+you set element here, using 
+equals, we to use square 
+brackets to get hold that value 
+like ordin, ordinary 
+variable 
+this is you create an array, one way 
+creating an array 
+in example well actually use a 
+function to create an array, we 
+declare a new variable 
+there many type create box in memory, 
+to this you say type a, 
+called a floating point 
+we square brackets, 
+square brackets tell us one 
+floating value, an array 
+give a name, like variable 
+you create an array 
+this is, curly brackets a 
+list numbers 
+that gives you an array 
+well see in actual example, 
+well a different, use a different 
+mechanism, next week well use yet 
+another mechanism 
+but, here is an example creating a 
+simple array, you use 
+element zero 
+you use this syntax 
+square brackets, name array, 
+square brackets number, to get 
+element 
+youve got that element, you 
+use in way youd use 
+variable, way youd use a number 
+so print out, you 
+use inputs to command you 
+like 
+so you could translate vals zero, 
+rotate, wrecked, commands 
+that youre familiar 
+so we use rectval zero, we could use 
+fill vals zero, commands 
+youre used to 
+wherever you would use a normal variable, 
+you could use an array variable, plus 
+squared brackets a number 
+that would give you a number 
+value, like value 
+simple, well in main 
+example you use images, 
+to create an animation 

@@ -1,0 +1,148 @@
+[music] here's kind of an old timey puzzle
+about numbers.
+suppose you've got 2 numbers which add up
+to 24.
+you've got 2 numbers that sum to 24.
+how large can their product be?
+when you take those 2 numbers that add up
+to 24, how big of a number can you get
+when you multiply them together?
+this is an optimization problem so let's
+draw a picture.
+okay, maybe i can't draw a picture in this
+problem but at least i can label things.
+so, instead of just saying two numbers
+that sum to 24, let's give them the name.
+two numbers, x and y, which sum to, to 24.
+and instead of just saying how large can
+their product be, i can say, how large
+can, you know, x times y be?
+so, what's the goal?
+well, my goal here is really just to
+maximize the product, so maximize x times
+y.
+and there's a constraint.
+the constraint is that x and y have to add
+up to 24.
+so, i'll write that as x plus y equals 24.
+rats.
+x,y isn't a function of a single variable.
+i need to rewrite it so it's a function of
+x alone.
+now, since x plus y is 24, i could rewrite
+this as y equals 24 minus x.
+and consequently, x times y, which is the
+thing i'm trying to maximize, i could
+write that as a function of a single
+variable, x times, and instead of y 24
+minus x.
+so, this is the quantity now that i want
+to maximize.
+now, i can apply calculus.
+let's differentiate and then find the
+critical points.
+so, here's this function of a single
+variable that i'm trying to maximize.
+my function is x times 24 minus x, that
+should be y or this is x times y, this
+thing i'm trying to maximize.
+but if i expand this out, i get 24x minus
+x squared.
+then, i can easily differentiate this.
+the derivative of this function is, what's
+the derivative of 24x?
+it's 24.
+what's the derivative minus x squared?
+it's minus 2x.
+i'm trying to find critical points, right?
+critical points are where the derivative
+doesn't exist or where the derivative is
+equal to 0.
+now, this function's just a polynomial, so
+it's differentiable everywhere.
+so, i don't have to worry about the
+functions derivative not existing
+somewhere.
+but i do have to find places where the
+derivative is equal to zero.
+so, when is this thing equal to zero?
+well, that's the same as asking, when 24
+is 2x?
+that's exactly when x is 12.
+so, here is my critical point.
+what sort of point is that?
+well, let's think about the s, i, g, n,
+the sign of the first derivative.
+the derivative is positive if x is less
+than 12, and the derivative is negative if
+x is bigger than 12.
+what does that mean?
+well, that means the function is
+increasing for x values less than 12.
+and the function is decreasing for x
+values bigger than 12.
+so, the function goes up, gets to 12, and
+starts going down.
+what kind of point does that make 12?
+well, that must be a maximum.
+so, i'll write f of 12 is my maximum
+value.
+so, what do we conclude?
+so, here's our conclusion.
+a 144 is the maximum product of two
+numbers which sum to 24.
+did we really need the awesome power of
+calculus to solve this problem?
+no.
+for example, you could have used a
+technique like this.
+there's the so-called arithmetic geometric
+mean inequality.
+the am-gm inequality.
+and what it tells you is the following.
+that for numbers a and b, the arithmetic
+mean, just a fancy word for the average of
+a and b, is bigger than or equal to the
+geometric mean, which is the square root
+of the product of a and b.
+and this inequality becomes an equality,
+if and only if a and b are the same.
+now, how can you use something like this?
+well, in our specific case, what do we
+know?
+i know that x plus y is equal to 24 and if
+these two numbers add to 24, then their
+average x plus y over 2 must be equal to
+but if this is their average by the am-gm
+inequality, this must be bigger than or
+equal to the square root of x times y, the
+geometric mean of x and y.
+now, how does this help us?
+well, what if i square both sides, right?
+then i know that 144 is bigger than or
+equal to x times y.
+and that's exactly what i'm trying to
+figure out.
+i'm trying to figure out how big can the
+product of x and y be, if i know what the
+sum is.
+and what this is telling me, is that the
+product can be no bigger than 144, with
+equality when x and y are both equal.
+and that happens when they are both equal
+to 12.
+that you don't actually need calculus to
+solve many of the problems that are
+assigned in calculus courses, is perhaps
+one of the best kept secrets of calculus
+instructors.
+a result like this am-gm inequality,
+actually solves a ton of optimization
+problems.
+you often don't have to resort to taking
+derivatives, if you can just apply a
+result like this.
+calculus is a powerful tool but there are
+other ways to attack these problems.
+don't be afraid to make use of other
+methods.

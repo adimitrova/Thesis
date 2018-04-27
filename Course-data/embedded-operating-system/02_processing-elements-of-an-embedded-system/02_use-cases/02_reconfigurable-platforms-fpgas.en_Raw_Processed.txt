@@ -1,0 +1,246 @@
+music 
+hello welcome back 
+in this video, im going to explain 
+a reconfigurable architecture is, 
+i will also talk main 
+features field programmable gate arrays 
+an example 
+reconfigurable architectures 
+several fpga platforms would introduced 
+to you well main features 
+efficient approach in 
+terms energy consumption 
+performance to implement an embedded 
+system is to develop an application, 
+a specific integrated circuit 
+however, one main drawbacks 
+this approach is cost 
+indeed, asic development cost 
+is much higher lets say, 
+software development a processor 
+hand, a processor is much 
+cheaper option to embedded 
+system on, give you 
+a good energy performance trade 
+asics processors in a way, two 
+extremes, we in between 
+configurable architectures 
+a good compromise here 
+devices almost fast 
+special purpose hardware 
+time, 
+inner architecture changed 
+brings degree flexibility 
+field programmable gate arrays an 
+example reconfigurable architectures, 
+that we going to focus 
+an fpga is a semiconductor device 
+configured to 
+implement different algorithms 
+i would like to emphasize 
+that an fpga implementation 
+is a hardware base approach 
+to realize a certain task 
+meaning that hardware changes, 
+whereas if you use a processor, 
+underlying hardware stays same, 
+software changed 
+so is inner structure 
+an fpga that allows devices 
+to reconfigure hardware 
+core compromises 
+a matrix logic blocks, 
+connected to 
+via special interconnects 
+mentioned before, 
+an fpga configured to 
+realize a certain application 
+that programmed 
+a new design 
+program availability wise, 
+fpgas one time programmable 
+type fpgas is meant 
+applications in field 
+reprogrammability is needed 
+hand, reprogram level 
+fpgas reconfigured 
+user many times without 
+using special equipment 
+lets go deeper in to details 
+inner structure fpgas 
+logic block plays central role 
+considered 
+building block an fpga 
+features 
+block might different 
+depending certain types an fpga 
+usually 
+combinational logic inside 
+is represented look tables 
+lookup table style logic 
+chosen makes easy to derive 
+functionality logic block 
+additionally, logic block contains 
+a register to implement sequential logic, 
+introduces clocking 
+synchronization design 
+a fundamental 
+component digital logic 
+there also multiplexers 
+inside logic block, 
+allow to select either lookup 
+table flip flop output 
+although logic block is flexible 
+obviously one logic block, 
+is impossible to implement 
+kind logic function 
+complex designs will require many 
+logic blocks to connected together 
+special interconnects inside 
+an fpga serve this purpose 
+interconnects an important 
+one complex aspects 
+an fpga since wiring is a global 
+property a logical designer 
+note that interconnection between 
+logic elements might complex 
+therefore, connections 
+between logic elements required 
+also between wires 
+an sram based fpga uses a sram 
+to hold information 
+used to program interconnects 
+in a design, 
+is often necessary to source data 
+this purpose, 
+there ground blocks available, 
+blocks use storage that 
+is used look table function 
+majority fpgas 
+nowadays sram based 
+sram based fpgas store configuration 
+data in static memory 
+drawback sram is 
+that is volatile 
+cant keep data without power source 
+that fpgas must 
+programmed configured upon start 
+there two basic ways 
+programming an fpga 
+either done in a master mode 
+fpga gets configuration data 
+an external source example, 
+external flash memory in a slave mode 
+fpga is configured 
+an external master device 
+example, a processor 
+this done via dedicated 
+programming interfaces 
+is also worth mentioning 
+that types fpga support 
+partial reconfiguration, 
+there two types 
+first is dynamic partial 
+reconfiguration, that allows you to change 
+part design while 
+rest an fpga is running 
+another one is static 
+partial reconfiguration 
+fpga is running 
+reconfiguration 
+we continue, 
+lets mention upsides 
+downsides fpga implementation 
+so compared to software solutions, 
+an fpga implementation is faster 
+efficient in terms 
+energy consumption 
+hand, fpgas lose in 
+many aspects performance 
+energy consumption to asics 
+however, fpga design development 
+is much cheaper asic designs 
+in words fpgas provide a tool 
+that lies in between fully software 
+fully hardware implementations 
+due to reconfigurable nature fpgas 
+good different applications 
+markets high 
+cost asic manufacturing, 
+is important to model 
+design 
+therefore, asic prototyping is 
+one application areas 
+fpgas allows accurate modeling 
+verification well rapid software 
+firmware development 
+reduces risk design errors 
+wide domain digital signal 
+processing also benefit fpgas 
+indeed, fpgas provide high computational 
+throughput using parallel 
+architectures 
+ability to reconfigure 
+inner hardware enables designers 
+to develop customized architectures 
+ideal implementation algorithms 
+fpgas provide cheaper solutions 
+faster time to markets 
+low to medium volume productions 
+compared to asics usually 
+require a lot money 
+time to get first device 
+so you buy fpga platforms 
+directly fpga vendors 
+biggest fpga manufacturers xilnx, 
+altera, actel 
+websites, you find a lot 
+information fpga chips 
+well platforms sell 
+is sensible to make platform choice 
+based application that 
+you would like to implement 
+however, if you in phase 
+discovering fpga is, 
+choice done 
+based parameters 
+example, platform 
+picked according to performance 
+overall amount resources 
+another way to select proper 
+device is to choose based 
+field you like to apply in 
+i will introduce you fpga 
+platforms based xilinx fpgas 
+xilinx separates chips families 
+there four 
+low end devices, devices, 
+ultrascale ultrascale 
+families different 
+depending amount available 
+resources, performance 
+application area 
+example, spartan based platforms 
+cost optimized solutions, whereas 
+ultrascale family provides highest 
+performance integration capabilities 
+here, i would like to introduce you 
+to spartan based fpga platform 
+this platform is a good development 
+environment discovering 
+evaluating a spartan fpga family 
+evolution kit basic 
+components system development, 
+also provides example designs to 
+speed discovery features 
+integrated memory interface core 
+so development platform is a good 
+starting point to discover fpgas 
+in this video, we covered important 
+aspects recomforial architectures, 
+take a fpga an example 
+we covered main building blocks 
+fpgas discussed platform 
+might serve a good start point 
+you if you want to discover fpgas 
+music 

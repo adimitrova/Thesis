@@ -1,0 +1,78 @@
+[music]. 
+we've already seen how the chain rule can 
+help us find the anti-derivatives. 
+alright, that message is called u 
+substitution. 
+i'm going to do more messing around with 
+the chain rule and integration. 
+in particular, let's see what we can do 
+with the chain rule, and the end points 
+of integration. 
+well here's an example to play around 
+with, if i take the integral from 0 to x, 
+of sine of t dt, well that's something. 
+but let's think about the derivative of 
+this with respect to x. 
+and by the fundamental theorem of 
+calculus this is sine of x. 
+the fundamental theorem of calculus is 
+the derivative of the accumulation 
+function is the integrand. 
+what if that upper endpoint were a 
+function of x? 
+what i'm asking is what if this endpoint 
+weren't x anymore? 
+but some function g of x right? 
+then this wouldn't be sine of x anymore, 
+be something else. 
+so to analyze this let's define a 
+function f. 
+so that function will be given by this 
+rule. 
+f of x is the integral from 0 to x of 
+sine t dt. 
+now what would it mean if we replace that 
+right hand endpoint instead of being x if 
+we replace that with g of x? 
+that would mean that i want to think 
+about f of g of x, right? 
+what's f of g of x? 
+so, that's the integral from 0 to g of x, 
+of sine t dt. 
+and specifically, right, what i want to 
+know, is what's the derivative with 
+respect x of f of g of x. 
+that's just the chain-rule. 
+so let me just write down the chain rule. 
+the derivative of f of g of x is the 
+derivative of f at g of x times the 
+derivative of g. 
+so what does it mean in this specific 
+case? 
+remember in this case, f of x is the 
+integral from 0 to x of sine t dt. 
+so the derivative of f, by the 
+fundamental theorem is sin of x and that 
+means that the derivative of f of g of x, 
+well that's just sin the derivative of f 
+at g of x times the derivative of g. 
+let's make it even more concrete. 
+let's say that g is the squaring 
+function. 
+let me write that down. 
+so if i'm making g the squaring function, 
+then the derivative of g is just 2x and 
+in that case the derivative of f of g of 
+x is sine of g which is x squared times 
+the derivative of g which is 2x. 
+so let's write down our final answer in 
+this specific case. 
+the final claim is that the derivative of 
+the integral from 0 to g of x which in 
+this case is x squared of sine t dt. 
+this is the derivative with respect to x 
+of f of g of x. 
+this is sin of x squared times 2x and 
+this statement, we can get by combining 
+the chain rule and the fundamental 
+theorem of calculus. 

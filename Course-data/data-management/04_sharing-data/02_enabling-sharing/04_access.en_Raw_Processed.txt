@@ -1,0 +1,153 @@
+music 
+we discussed, 
+there numerous benefits 
+challenges to sharing research data 
+variety stakeholders 
+involved in data management 
+heterogeneity data, 
+access to data may vary based external 
+limitations researchers needs 
+challenges we discussed, 
+data ownership issues 
+data containing sensitive 
+confidential information 
+may also affect 
+a researcher provides access 
+well types 
+restrictions placed data 
+today we will begin discussing 
+three types restrictions, 
+limitations, that 
+commonly placed data 
+first embargos 
+embargos a specified period time 
+access to data will restricted 
+embargos commonly last 
+between to months 
+often based rights first use 
+researchers needs to sufficient 
+time to publish using data 
+prior to releasing publicly 
+embargos also required 
+stakeholders publishers 
+however, funders may require 
+that data made available in 
+a timely fashion within a certain 
+timeframe project completion, 
+could limit length 
+possible embargos 
+another type restriction that may 
+placed data is technological 
+access restrictions based 
+user affiliation requirements 
+instance, data users may required 
+to log in to a particular system 
+authenticate relationship to 
+an institution to access certain data 
+restrictions may stipulate 
+that membership required 
+access, that a data user affiliated 
+a certain research group 
+institution, often due 
+to licensing agreements 
+final type restriction we 
+will discuss is data use agreements 
+a data use agreement explicitly 
+outlines an agreement between 
+data producer secondary data user 
+may impose rules reuse, 
+storage, redissemination disposal 
+data use agreements commonly 
+required data potential 
+to identify human subjects 
+either directly indirectly 
+data user is required 
+to sign a data use agreement 
+review this document carefully 
+comply 
+aspects agreement, 
+violations 
+result in consequences 
+ideally to optimize use researches 
+make data open possible 
+however, this may always feasible 
+clearly outlining access 
+restrictions within terms use 
+applying a standard license positively 
+impact potential reuse 
+researchers discuss 
+possible access restrictions 
+licensing a repository 
+choice to clarify needs 
+also determine types licenses 
+supported required repository 
+while there multiple different ways 
+methods to assign a license waiver 
+to data, going to go 
+a little depth one increasingly 
+popular method, is assigning 
+a standard creative commons license 
+creative commons is a usbased nonprofit 
+organization that a leader 
+in developing legal tools 
+sharing creative works 
+internet since 
+a creative commons license 
+key benefits 
+namely, provides a robust legal code 
+provides a humanreadable summary 
+that is understandable a glance 
+provides 
+a machinereadable layer code 
+that help make resources 
+interoperable across systems 
+version, creative commons 
+also conforms to copyright 
+database laws applicable, 
+is particularly important 
+discussing licensing data 
+there five main creative commons 
+license categories 
+distinctive logo 
+abbreviation 
+attribution requires that users 
+credit creator a work 
+noncommercial stipulates that a work 
+cannot used commercial purposes 
+derivative works states that you cannot 
+alter, transform, build upon a work 
+sharealike requires that if you alter, 
+transform, build upon a work, 
+if you distribute resulting work, 
+you must assign an identical license 
+finally, 
+cc reserve rights, 
+releases work public domain 
+you will also see licenses that 
+a combination categories 
+instance, cc nc nd 
+means you must attribute creator, 
+work cannot used commercially, 
+derivatives may 
+created using work 
+creative commons is an online 
+tool that helps users select 
+an appropriate license generate 
+text to apply license to a work 
+today, while groups, 
+datasite recommend researchers 
+apply a cc license to data sets to 
+allow maximum freedom to reuse data 
+this may possible 
+in situations 
+we discussed in this lesson 
+researchers may to impose access 
+restrictions certain data, 
+take multiple forms, 
+placing an embargo data to 
+requiring a data use agreement 
+however, in general, explaining 
+restrictions within terms use 
+applying a standard license, a researcher 
+help enable informed reuse 
+music 

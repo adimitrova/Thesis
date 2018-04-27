@@ -1,0 +1,226 @@
+music 
+hello, welcome to second module 
+introductory course subatomic physics 
+this module, well deal 
+nuclear physics applications 
+end module, 
+we will visit tokamak swiss 
+institute technology in lausanne 
+beznau nuclear power plant 
+is oldest one still in operation 
+this is pretty much 
+a selfcontained module, 
+if main interest is nuclear physics, 
+you will wellserved 
+you will also notice that is 
+somewhat longer modules, so 
+take time to digest 
+contents without pressure 
+in this first video, we will review 
+is known mass nuclei 
+goals you following 
+to know nomenclature atomic 
+nuclei periodic system 
+to able to qualitatively describe 
+mass binding energy nuclei 
+experiments rutherford type 
+demonstrate existence a positively 
+charged nucleus, 
+is four orders magnitude 
+smaller size atom 
+experiments require 
+to understand electromagnetic 
+interactions between project 
+target 
+scattering experiments also yield 
+information nuclear properties 
+thus establish a catalog 
+properties nuclear interaction 
+that holds together protons 
+neutrons inside nucleus 
+one must confuse this nuclear force 
+strong force introduced in 
+first module extensively 
+discussed in module number five 
+strong force binds together quarks 
+inside hadrons gluon exchange 
+permit quarks 
+to leave hadrons 
+so hadrons in general 
+nucleons in particular, 
+carry a net color charge 
+thus gluons cannot bind protons 
+neutrons to form a nucleus 
+nuclear force is like a long 
+distance residue strong force 
+in that resembles wellknown 
+van der waals force, 
+is a residue electromagnetic 
+interaction acts between 
+electrically neutral molecules 
+let us compare basic properties 
+atoms, electromagnetic force 
+one side, to nuclei, 
+nuclear force side 
+electromagnetic force is 
+responsible holding atoms together 
+properties well known, 
+classically, 
+rather easy to extrapolate 
+to quantum distances 
+study atomic spectra indeed 
+gave rise to quantum mechanics, 
+qualitatively 
+quantitatively explains many phenomena 
+condensed matter physics 
+fine structure constant, 
+electromagnetic coupling 
+constant, is a small number 
+alpha is , makes 
+perturbative calculations feasible 
+nuclear force, hand, 
+must much stronger, 
+since wins coulomb repulsion 
+between tightlypacked protons 
+must short range, 
+since doesnt make 
+felt outside nuclear volume 
+classical analog 
+experimental results help 
+to understand properties 
+one thus uses experiments 
+a guide towards empirical models 
+nucleus nuclear force 
+we will come back to relation between 
+experiments models we go along 
+let us first summarize we identify 
+denote nuclei 
+we denote z, nuclear charge, 
+is equal to atomic 
+number in periodic table 
+itis given number 
+protons in nucleus 
+a is number nucleons, 
+sum protons neutrons, 
+is also called mass number 
+nuclei thus completely identified 
+electric charge 
+number nucleons 
+name we give identifies z 
+usually is supplemented a 
+we say carbon , 
+that means a nucleus z a 
+evidently, number neutrons is 
+difference between mass number 
+atomic number, is denoted n 
+chemical properties elements 
+determined electron 
+cloud surrounding nucleus 
+periodic table is thus 
+organized according to z 
+nuclei number protons, 
+
+a different number neutrons, 
+called isotopes 
+similar 
+chemical properties 
+necessarily similar 
+nuclear properties 
+examples uranium 
+uranium , protons, 
+a different number neutrons 
+thus different stability properties 
+another example is hydrogen, 
+deuterium, 
+tritium one proton 
+zero, one, two neutrons 
+nuclei also 
+excited to higher states, 
+keeping number protons 
+neutrons constant 
+called resonances isomers 
+nuclei 
+number nucleons 
+different number 
+protons called isobars 
+roughly nuclear mass 
+examples carbon boron , 
+nucleons 
+naively one might assume that mass 
+nuclei is simply given sum 
+masses protons 
+neutrons contain 
+in reality, this mass is, 
+course, diminished binding 
+energy between nucleons 
+mass deficit m 
+must always negative so 
+that nucleus is in a bound state 
+we call binding energy 
+measured 
+practically nuclei 
+absolute value binding energy 
+is energy required to decompose 
+nucleus separate nucleons 
+binding energy per nucleon, 
+ma, 
+is energy required to separate 
+average nucleon nucleus 
+is much smaller 
+mass a nucleon p n 
+mass nucleus is thus indeed 
+dominated mass constituents 
+nucleons 
+situation is different 
+total mass quarks inside 
+nucleon is around 
+nucleon mass 
+is binding energy 
+dominates nucleon mass 
+one analyzes dependance 
+binding energy, m per nucleon a, 
+mass number a one 
+notices following 
+a less 
+left side this graph, 
+ma oscillates 
+rises rapidly increasing a 
+a between , ma saturates 
+a , a broad maximum 
+that is, iron group formed nickel, 
+iron, 
+cobalt mev 
+per nucleon binding energy 
+a larger , binding 
+energy per nucleon decreases slowly 
+general mean is mev per nucleon 
+kinetic energy nucleons inside 
+nucleus must thus relatively small 
+otherwise, would stay bound 
+velocities bound nucleons 
+thus nonrelativistic 
+binding energy corresponds indeed to a 
+wavelength nucleons inside nucleus 
+this wavelength is less two fermi 
+order nucleus size 
+is thus plausible that nucleus 
+contain nucleons maximum kinetic 
+energy mev 
+a maximum momentum 
+if, hand, 
+nucleus would contain electrons, 
+would relativistic 
+wavelength would 
+x centimeters, 
+much bigger nucleus size 
+nucleus thus 
+contain bound electrons 
+need a much larger 
+volume to contained 
+this is obviously in agreement 
+findings geiger marsden, 
+that we discussed 
+in previous module 
+in next video, we will talk 
+size spin nuclei 
+music 

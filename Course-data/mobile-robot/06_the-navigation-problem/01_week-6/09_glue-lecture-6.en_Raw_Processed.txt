@@ -1,0 +1,238 @@
+hello welcome to glue lecture 
+todays lecture kind walk you 
+a little bit this idea 
+robots going to behave using 
+framework introduced in module this week 
+in dr edgersetts lecture 
+so hopefully itll help you quiz 
+so this week in lecture, dr edgersett 
+introduced this kind scary looking 
+hybrid automaton that lots 
+complicated guard conditions 
+today kind going to 
+break sort show you 
+we might move this automaton 
+we try to navigate towards a goal 
+so we behaviors 
+go to goal, this is actually a controller, 
+you go to goal, follow wall, navigating 
+around obstacle counterclockwise 
+avoid obstacle follow wall 
+obstacle navigating in clockwise 
+direction 
+so, going to answer this question, 
+this look like a robot 
+so in little set we robot 
+here 
+a heading, given this black 
+arrow 
+we obstacle in red 
+around this obstacle ive drawn a, a line 
+in grey that represents this delta 
+distance away obstacle 
+we need to switch to avoid obstacles 
+we get inside 
+here, little orange star is 
+goal 
+so now, robot wake in 
+terms this high level description 
+control 
+so this, this first arrow points right 
+here u, u go to goal, means 
+go to goal controller will running 
+right robot wakes 
+so this is behavior we start 
+so this look like in 
+scenario 
+we this vector here drawn in red 
+points to goal 
+this is direction along u go 
+to goal will drive us 
+remember that robot, kind 
+that lower level, thinking 
+controllers equations 
+right 
+so go to goal controller is going to 
+cause us to drive current state x to 
+this goal using gain given in k 
+likewise the, avoid obstacle 
+controller 
+follow wall, 
+rotating direction that you ao, avoid 
+obstacle controller takes us 
+rotating that degrees depending 
+whether going clockwise 
+counterclockwise way degrees 
+goes 
+remember thats given this rotation 
+matrix here 
+so, if you see something like, you know 
+you have, say ,,,, notice that 
+this could a rotation matrix 
+you know, there might theta that 
+satisfies this matrix looks like that 
+means that this matrix is causing a 
+rotation a vector 
+anytime you see kind of, a symmetrical 
+structure like this in a, in a matrix, say 
+quiz , keep that in mind 
+remember that robot is 
+implementing this, this, controller 
+here u in terms vnw actuator 
+wheel commands 
+we know to go with, between vnw 
+wheel commands back in module , 
+thats we learned that 
+so, while we this high level kind 
+controlling automaton, there 
+things going kind lower 
+level robot 
+well think okay we know 
+that u go to goal is running, 
+robot is going to drive towards that star, 
+directly towards 
+so lets watch that happens, theyre 
+driving towards 
+a sudden, this point 
+where, within delta away 
+obstacle 
+so lets go back to automaton, see 
+if that changes anything 
+indeed, two guard conditions 
+that, inside this radius 
+delta, we might condition 
+we need to change 
+so lets look half 
+conditions, 
+looking this inner product 
+between vectors defined this, 
+control laws, the, go to goal 
+controller follow wall controller, 
+clockwise counterclockwise 
+this is really going to determine, 
+inside this delta range, we 
+follow obstacle clockwise 
+counterclockwise 
+we talking vec, vectors 
+here in euclidean space 
+this, so we follow wall vector 
+ua, avoid obstacle director this 
+vector, this is direction we would 
+drive in if we operating this 
+controller this controller this 
+controller 
+so now, we kind decode this 
+condition this inner product 
+so these, vectors in 
+euclidean space dot, inner product 
+is a dot product 
+so we write magnitudes 
+vectors here, 
+example, clockwise follow wall 
+controller 
+angle between two guys 
+so, this is really important term, 
+right 
+this is going to vary between 
+negative , in following way 
+so if two vectors are, collinear, 
+angle between is 
+cosine that is 
+so that would satisfy this condition, 
+right 
+theyre perpendirect, you know, exact 
+perpendicular to other, cosine 
+that is 
+so we satisfy this condition 
+course, theyre 
+completely open angle between 
+is pi, we get this negative value 
+so we know that vector is this cosine 
+term is going to vary between values 
+if negative , matter 
+magnitudes are, kind 
+irrelevant 
+so really, worried is 
+in between two cases 
+between this is going to 
+greater 
+so you kind see directly 
+picture in this case, angle between 
+clockwise avoid obstacle is a 
+little bit smaller between two 
+right 
+going to add to 
+this one looks like a little bit less 
+so that means going to follow that 
+clockwise rotation that way 
+so we see that two conditions 
+satisfied 
+so we move operating go 
+to goal controller to clockwise 
+follow wall 
+this point this is true, we 
+note time detail thats 
+important condition whether we switch 
+later given this guy here 
+so we note the, detail time is 
+not, time is but, far 
+away we goal 
+here d tal, so we, we mark distance 
+goal d tal 
+we follow wall 
+so going to follow this new kind 
+pink vector 
+robots going to keep moving forward 
+now, weve actually gotten a little 
+bit closer to goal, right 
+so lets go back to that automaton 
+lets look condition that might 
+cause us here, in this state 
+might cause us to leave is if we get, 
+within distance delta 
+well thats going to happen, right 
+following wall 
+if we get closer to goal we 
+time detail time tell so 
+distance time tell 
+this inner product 
+that we need to consider 
+so lets look two vectors so 
+here we follow wall, avoid obstacle, 
+go to goal 
+now, interested in whether 
+cosine angle between two 
+vectors avoid obstacle go to goal is 
+between 
+course in this case we see that 
+thats ninety so going to 
+stay following wall we dont 
+satisfy conditions to go back 
+to go to goal 
+so we continue to follow wall continue to 
+follow wall now, getting closer 
+to that point where, this angle here 
+is less 
+inner product between two 
+vectors is greater , so we 
+switch 
+two conditions we needed to 
+satisfy right, we switch back follow 
+wall to go to goal 
+weve made way, this is 
+kind home free 
+going to encounter 
+obstacles 
+but, if we did, wed kind go 
+that whole process 
+so you see this overall hybrid 
+automaton switching controllers 
+we get to these, to this we did, 
+right 
+this path around obstacle 
+would make goal 
+so i hope that this helps you 
+kind highlevel behavior questions 
+you going to quiz six this 
+week check forums help 
+good luck 

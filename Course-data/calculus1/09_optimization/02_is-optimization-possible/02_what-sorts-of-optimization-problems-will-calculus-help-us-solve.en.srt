@@ -1,0 +1,124 @@
+1
+00:00:00,012 --> 00:00:04,096
+[music].
+Welcome back to Calculus One, and welcome
+
+2
+00:00:04,096 --> 00:00:10,105
+to week eight of our time together.
+Last week, during week seven, we began
+
+3
+00:00:10,105 --> 00:00:16,279
+studying applications of the derivative
+and we focused in on related rates
+
+4
+00:00:16,279 --> 00:00:19,112
+problems.
+It's not so surprising, I think that
+
+5
+00:00:19,112 --> 00:00:21,739
+calculus can solve these related rates
+problems.
+
+6
+00:00:21,739 --> 00:00:26,029
+After all calculus is all about how things
+change, so it makes sense that you could
+
+7
+00:00:26,029 --> 00:00:29,120
+use calculus to study how things are
+changing together.
+
+8
+00:00:29,120 --> 00:00:32,949
+This week, in week eight, we focus on
+optimization problems.
+
+9
+00:00:32,949 --> 00:00:37,193
+Optimization problems are all about the
+best of something, right?
+
+10
+00:00:37,193 --> 00:00:39,369
+You want to find the shape of a soup can
+that maximizes the amount of soup for a
+
+11
+00:00:39,369 --> 00:00:40,851
+given amount of metal.
+Or you want to find the shape of
+
+12
+00:00:40,851 --> 00:00:42,983
+rectangular fence that encloses the most
+area for a given length of fence.
+
+13
+00:00:42,983 --> 00:00:47,054
+Or you want to find the shape of
+rectangular fence that encloses the most
+
+14
+00:00:47,054 --> 00:00:51,615
+area for a given length of fence.
+Or you want to understand why bubbles form
+
+15
+00:00:51,615 --> 00:00:56,048
+the shapes that they do or why light
+travels on the paths that it does.
+
+16
+00:00:56,048 --> 00:00:58,408
+Right?
+All of these are problems about finding
+
+17
+00:00:58,408 --> 00:01:02,322
+the best of something and that's really
+different in related rates problems.
+
+18
+00:01:02,322 --> 00:01:04,767
+Right?
+We're not just asking about how something
+
+19
+00:01:04,767 --> 00:01:08,484
+changes, I'm actually trying to find a
+point where some function achieves a
+
+20
+00:01:08,484 --> 00:01:12,386
+maximum or a minimum value.
+And I think it is really surprising that
+
+21
+00:01:12,386 --> 00:01:17,336
+calculus, which fundamentally, is all
+about how things change can also be used
+
+22
+00:01:17,336 --> 00:01:22,167
+to solve that problem.
+It can also be used to find a specific
+
+23
+00:01:22,167 --> 00:01:28,911
+value or something really exiting happens.
+I also want to say thank you.
+
+24
+00:01:28,911 --> 00:01:36,021
+It's is a long and difficult course, and
+you've made it now, more than half way
+
+25
+00:01:36,021 --> 00:01:38,695
+through.
+Congratulations.

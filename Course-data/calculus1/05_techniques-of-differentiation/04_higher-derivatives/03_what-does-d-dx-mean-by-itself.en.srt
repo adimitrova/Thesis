@@ -1,0 +1,315 @@
+1
+00:00:00,000 --> 00:00:02,594
+[MUSIC].
+
+2
+00:00:02,594 --> 00:00:07,541
+Once upon a time, a long, long time ago in
+a cave somewhere,
+
+3
+00:00:07,541 --> 00:00:12,850
+there was some cave person who first
+started studying numbers.
+
+4
+00:00:14,010 --> 00:00:17,070
+And then the cave person had an idea.
+
+5
+00:00:17,070 --> 00:00:20,230
+The idea is functions.
+
+6
+00:00:20,230 --> 00:00:23,749
+Instead of just studying numbers, this
+cave person is going to
+
+7
+00:00:23,749 --> 00:00:28,870
+study numbers depending on other numbers,
+the relationships between numbers.
+
+8
+00:00:28,870 --> 00:00:31,580
+There's another way to think about
+functions.
+
+9
+00:00:31,580 --> 00:00:37,322
+A different metaphor is that functions
+[SOUND] eat numbers, and after
+
+10
+00:00:37,322 --> 00:00:43,429
+they're done processing them, they spit
+out [SOUND] some other number.
+
+11
+00:00:43,429 --> 00:00:46,638
+Functions eat numbers and spit out
+numbers.
+
+12
+00:00:46,638 --> 00:00:49,510
+But the food chain keeps going.
+
+13
+00:00:49,510 --> 00:00:51,530
+The derivative is an operator.
+
+14
+00:00:51,530 --> 00:00:54,140
+And what that means is that it's like a
+function for functions.
+
+15
+00:00:54,140 --> 00:00:58,330
+The derivative eats a function and after
+it's done
+
+16
+00:00:58,330 --> 00:01:01,850
+with it it spits out a new function, the
+derivative.
+
+17
+00:01:03,020 --> 00:01:05,150
+First we studied numbers.
+
+18
+00:01:05,150 --> 00:01:07,820
+Then we studied functions, which are
+numbers that depend
+
+19
+00:01:07,820 --> 00:01:11,030
+on numbers or things that you do to
+numbers.
+
+20
+00:01:11,030 --> 00:01:12,370
+And now the derivative.
+
+21
+00:01:12,370 --> 00:01:17,590
+The derivative eats something which itself
+eats something and spits out numbers.
+
+22
+00:01:17,590 --> 00:01:19,620
+And then the derivative spits out a new
+
+23
+00:01:19,620 --> 00:01:22,940
+thing that eats numbers and spits out
+numbers.
+
+24
+00:01:22,940 --> 00:01:25,524
+The derivative takes a function and gives
+you
+
+25
+00:01:25,524 --> 00:01:27,972
+a new function, and this ddx notation is
+so
+
+26
+00:01:27,972 --> 00:01:30,624
+powerful, that you can start to talk about
+the
+
+27
+00:01:30,624 --> 00:01:34,650
+derivative even before you've applies it
+to any function.
+
+28
+00:01:34,650 --> 00:01:36,800
+Look at this, this is some sort
+
+29
+00:01:36,800 --> 00:01:39,440
+of equation, but it's really a nonsense
+equation.
+
+30
+00:01:39,440 --> 00:01:41,190
+The second derivative minus one.
+
+31
+00:01:41,190 --> 00:01:42,820
+What does it even mean?
+
+32
+00:01:42,820 --> 00:01:46,200
+Equals the derivative minus one, what am I
+doing here?
+
+33
+00:01:46,200 --> 00:01:47,080
+Who knows?
+
+34
+00:01:47,080 --> 00:01:49,120
+The derivative plus one?
+
+35
+00:01:49,120 --> 00:01:54,061
+This sort of nonsense looks similar to
+something very reasonable, that
+
+36
+00:01:54,061 --> 00:01:57,290
+x squared minus 1 is x minus 1 times x
+plus 1.
+
+37
+00:01:58,610 --> 00:02:01,120
+There's actually some sense to this.
+
+38
+00:02:01,120 --> 00:02:04,730
+So let's try to make sense of the right
+hand side.
+
+39
+00:02:04,730 --> 00:02:06,760
+After I apply it to a function.
+
+40
+00:02:07,910 --> 00:02:10,140
+So we don't even really know what this
+means, but
+
+41
+00:02:10,140 --> 00:02:13,980
+the notation's so powerful that it's just
+going to lead us forward.
+
+42
+00:02:13,980 --> 00:02:17,196
+So I'm going to copy down ddx minus 1 in
+parentheses, and I
+
+43
+00:02:17,196 --> 00:02:20,750
+have to figure out how I'm going to apply
+this thing to F.
+
+44
+00:02:20,750 --> 00:02:25,710
+I'm going to act like this distributes, so
+I'll write DDX of F.
+
+45
+00:02:25,710 --> 00:02:27,300
+Plus 1 times f.
+
+46
+00:02:28,520 --> 00:02:30,770
+Now I can keep on going, right?
+
+47
+00:02:30,770 --> 00:02:33,710
+This, if you kind of imagine, might
+distribute over this.
+
+48
+00:02:33,710 --> 00:02:35,440
+What would that, what would that mean?
+
+49
+00:02:35,440 --> 00:02:39,870
+I'm going to d/dx this whole thing, so
+d/dx of
+
+50
+00:02:39,870 --> 00:02:45,260
+d/dx of f plus f, minus 1 times this.
+
+51
+00:02:45,260 --> 00:02:49,000
+So minus d/dx of f, plus f.
+
+52
+00:02:49,000 --> 00:02:55,180
+And now I can keep calculating, the
+derivative of the derivative of f plus f.
+
+53
+00:02:55,180 --> 00:02:59,510
+Well, the derivative of a sum is the sum
+of the derivative so that makes sense.
+
+54
+00:02:59,510 --> 00:03:07,034
+That's the derivative of the derivative of
+f plus the derivative of f minus the
+
+55
+00:03:07,034 --> 00:03:14,310
+derivative of f minus f, subtracting
+summing F, so it's subtracting F.
+
+56
+00:03:15,510 --> 00:03:19,290
+Now good news, I've got a plus derivative
+here, and
+
+57
+00:03:19,290 --> 00:03:22,650
+a minus derivative of F there, so what I'm
+left
+
+58
+00:03:22,650 --> 00:03:24,750
+with is D Dx, D Dx of F, which I
+
+59
+00:03:24,750 --> 00:03:28,417
+could write as the second derivative of F
+minus F.
+
+60
+00:03:28,417 --> 00:03:36,660
+Well I could also write this as the second
+derivative minus 1, applied to F.
+
+61
+00:03:36,660 --> 00:03:41,380
+And that's exactly what's on the other
+side of this equation.
+
+62
+00:03:42,510 --> 00:03:43,980
+At this point, this is all a sort of
+
+63
+00:03:43,980 --> 00:03:46,350
+cheating, so if this doesn't speak to you,
+don't worry.
+
+64
+00:03:46,350 --> 00:03:49,390
+The upshot though, is that differentiation
+is
+
+65
+00:03:49,390 --> 00:03:52,141
+an operation that you apply to functions.
+
+66
+00:03:52,141 --> 00:03:55,105
+And it's possible to reason precisely
+about
+
+67
+00:03:55,105 --> 00:03:58,782
+differentiation in the abstract just as an
+operation.
+
+68
+00:03:58,782 --> 00:04:05,879
+[MUSIC]

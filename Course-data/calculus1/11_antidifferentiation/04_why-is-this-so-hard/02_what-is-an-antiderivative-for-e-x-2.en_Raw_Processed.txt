@@ -1,0 +1,135 @@
+music differentiating is a process 
+really guaranteed to work 
+alright, if somebody writes a 
+function asks you to differentiate 
+you 
+might painful, alright, might 
+involve a lot steps a 
+matter applying steps carefully 
+in contrast antidifferentiation might 
+really hard 
+lets try a really hard example 
+instance, you find function 
+so if i differentiate that function, i get 
+e to negative x squared 
+is another way saying, i 
+want to antidifferentiate e to 
+negative x squared 
+right, is that 
+well, lets make a guess see if 
+guess is correct 
+i mean maybe, an antiderivative e to 
+negative x squared is i dont know, e 
+to negative x squared, minus x 
+plus c, right 
+i mean im saying this is correct, 
+could true 
+if this case, i check it, 
+right 
+i differentiate this side see if i 
+get this 
+so lets differentiate e to minus x 
+squared minus x 
+thats sort thing 
+differentiating e to minus x squared 
+times minus x to negative st power 
+so thats a derivative a product, 
+is assuming product rules good for, 
+right 
+so first ill differentiate e to minus 
+x squared 
+ill multiply that second term 
+minus two x to minus st power 
+ill add to that first term, e to 
+minus x squared times derivative 
+second term, is minus two x to 
+minus st power 
+whats derivative e to 
+minus x squared 
+thats e to minus x square cause 
+derivative e to is e to 
+times derivative minus x squared 
+is minus x 
+times negative x to 
+negative st power, right 
+plus e to minus x squared times 
+derivative minus x to minus st 
+power 
+ill copy that well deal 
+in a second 
+this is pretty exciting right here 
+right 
+this term cancels, this term cancels, this 
+is looking pretty good right 
+maybe antiderivative e to minus 
+x squared really is this 
+i differentiate this thing, 
+least i get a e to minus x squared 
+bad news is that i also get this term, 
+right 
+this terms to e to minus x 
+squared, i gotta deal this 
+e to minus x squared 
+times derivative this 
+well, i differentiate this, i get a 
+negative sign times this thing to 
+negative nd power, right 
+chain rule, derivative 
+inside, is negative 
+yeah, i mean this is, this is bad 
+right 
+i mean i differentiated this thing right 
+here i got back that included 
+in e to minus x squared also 
+includes non zero term 
+so result this is case 
+well that didnt work wasnt 
+lack trying 
+in fact, an antiderivative e to 
+negative x squared cannot expressed 
+using elementary functions 
+i mean elementary functions 
+i mean things like polynomials, trig 
+functions, e to x, log, things like 
+that, right 
+i mean, this is really a surprising 
+result 
+i mean there is a function whose 
+derivative is e to negative x squared, 
+a function i write 
+using functions that i already in 
+hand 
+may e to negative x squared an 
+isolated terrible example 
+i cant answer differentiate e to e to 
+x using elementary functions 
+i cant answer differentiate log, log x 
+using elementary functions 
+i cant even answer differentiate this 
+reasonable looking algebraic 
+function 
+square root plus x to th 
+i cant find an antiderivative this 
+using elementary functions 
+so, this mean 
+lets try to summarize situation 
+that many functions hard 
+to antidifferentiate 
+that many functions impossible to 
+antidifferentiate, in sense that 
+dont an antiderivative 
+in sense that going to 
+succeed in writing that 
+antiderivative using functions that we 
+hand 
+in light difficulties 
+antidifferentiating, fact that theres 
+guaranteed answer, means that we 
+happy that we ever evaluate 
+an antiderivative problem right 
+also reflects fact that real 
+creativity is needed 
+you know, if an answers guaranteed 
+potentially going to require 
+creativity to cook answers, 
+even exist 

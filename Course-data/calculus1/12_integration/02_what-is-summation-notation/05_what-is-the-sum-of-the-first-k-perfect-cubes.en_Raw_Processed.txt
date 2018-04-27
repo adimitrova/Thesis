@@ -1,0 +1,147 @@
+music i get if i take one cubed 
+plus two cubed plus three cubed plus so 
+plus k cubed 
+this is a truly remarkable fact 
+called nicomachus theorem, says 
+that sum first k perfect cubes 
+is square sum first 
+k whole numbers, literally a 
+remarkable fact that two things are, 
+equal, right 
+i mean, you know, doesnt look 
+like this true all, 
+is 
+now, you believe something like this 
+you could rewrite this sum cubes 
+formula in maybe a slightly easier way 
+right, youve got sum cubes is 
+square sum first k 
+whole numbers, while we already know a 
+formula first k whole 
+numbers 
+k times k plus , im 
+squaring that 
+so here is a formula sum 
+first k perfect cubes 
+k squared times k plus squared 
+right 
+i took this formula squared 
+theres a slick geometric proof 
+this fact 
+so lets add cubed plus cubed plus 
+cubed plus cubed pictorially, course 
+arguments going to work in 
+general, if i add first k perfect 
+cubes 
+alright, well heres cubed 
+alright 
+heres cubed 
+dots, ive arranged in a, 
+in a cube 
+heres cubed, right 
+times times , dots, ive 
+arranged in, in a cube shape 
+cubed would dots, i 
+havent drawn dots in, right 
+so i want to count dots, 
+trick is to rearrange dots 
+so thats sort 
+pictorial arguments end going 
+so im going to rearrange dots like, 
+like this 
+so here ive made a square, heres 
+cube, i added just, dot 
+heres cube, ive rearranged 
+layers 
+cube is right here, ive split 
+layer in half 
+so if i take this vertical piece 
+this horizontal piece, i 
+rearrange to make square 
+that i stack top that one, 
+gives this 
+heres cube, , 
+squares 
+heres cube 
+squares, that top square is 
+cut in half 
+right, so this piece here, this piece 
+here, would combine to give another 
+square, i stack top 
+three to recover 
+cube 
+i could put five squares 
+around, around that i could put 
+six squares, id cut one 
+squares in half like this 
+so even layers i use square thats 
+cut in half, odd layers, i 
+stack 
+the, point here is that i end 
+producing a square whose side length is 
+plus plus plus 
+you know, course this is 
+general 
+alright, would plus k 
+so this is plus plus plus 
+ive rearranged sum cubes a 
+square, that side length that 
+square is sum first k whole 
+numbers 
+good news is that ive got a formula 
+sum first k whole numbers 
+k times k plus 
+so resulting square side length k 
+times k plus , means 
+that if i take sum first k 
+cubes that number squared 
+kinds formulas enable us to 
+perform calculations that would 
+extraordinarily painful without access to 
+formulas 
+instance, if i wanted to add 
+first perfect cubes, right 
+thats thing computing 
+sum, n goes to , n cubed 
+now, ive got a formula this, 
+this is, as, sum 
+first hundred whole numbers 
+squared, right 
+i know to compute this, right 
+whats sum first hundred whole 
+numbers, well thats times , 
+i to square that 
+whats a times 
+whats sum first hundred 
+numbers 
+, i to square this 
+if i square this i get , , , , , 
+right 
+so i get million, this makes 
+possible, you know, this calculation that 
+would horrible tedious, right 
+ive got access to this 
+formula, i perform really amazing 
+numeric feats, right 
+this would horrible to calculate, 
+this formula, i write 
+answer 
+if you like kinds formulas, 
+heres a challenge 
+heres challenge 
+whats sum fourth powers 
+answers going to polynomial 
+in k, right, youve gotta figure 
+polynomial that is 
+one trick would to plug in values 
+say k equals one, k equals two, k equals 
+three 
+try to find polynomial that 
+passes points 
+thats challenge 
+theres a long tradition here 
+bernoulli instance computed sum 
+first thousand tenths powers, 
+years ago 
+people thinking 
+kinds formulas a really long time 

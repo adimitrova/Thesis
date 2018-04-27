@@ -1,0 +1,179 @@
+music this second module, 
+we discussing physics atomic nucleus 
+in video , physical principles nuclear fission discussed 
+in video , explained 
+principles implemented to build a nuclear reactor 
+today, we visit beznau nuclear power plant, 
+in production since , making oldest nuclear power plant 
+that is still commercially exploited 
+power plant welcomes us in showroom 
+called axporama, you see around 
+watching this video, you will know to three things 
+first is to describe operation a 
+pressurized water nuclear power plant beznau 
+second is to describe regulation mechanisms 
+chain reaction 
+security mechanisms that monitor safety this process 
+third, appreciate role nuclear energy 
+in mix energy production in switzerland, 
+in europe in world 
+today we invited to beznau nuclear power station, belongs to axpo sa 
+we in axporama exhibition, is part plant, 
+informs visitors year energy in general nuclear energy production nuclear fission in particular 
+host today is dr urs weidmann 
+is a particle physicist like 
+is a graduate university zrich an experimental work violation muon number, 
+still a topical field research, is still pursued paul scherrer institute far here 
+obtained phd university bern, influence co emissions climate, 
+still a topic high interest years phd in particular, made a model ocean currents 
+influence adsorption co seawater, delay this causes climate effect 
+use nuclear power produces virtually co, 
+so seems logical that doctorate moved to federal inspectorate nuclear security ensi 
+there changed to nagra, swiss competence center storage radioactive waste 
+years to a nuclear power producer, that is to say beznau nuclear power plant, first in monitoring department, 
+in electrotechnical department finally years director power plant 
+thank you much, dr weidmann, that you available this course broad background knowledge 
+could you briefly introduce us to axpo company 
+axpo is a swiss power company owned cantons northeastern switzerland 
+group produces, sells distributes energy million people several thousand companies in switzerland 
+is leader in production electricity hydraulic nuclear origin, well renewable energy sources, in particular wind power 
+axpo is active in countries employs around , people, including , in switzerland 
+so a major company 
+could you briefly introduce us to beznau nuclear power plant, kkb, you director 
+kkb consists two identical pressurized water reactors westinghouse 
+two blocks a net electrical power mw 
+production two blocks covers swiss electricity consumption 
+beznau nuclear power plant complies modern safety requirements 
+this high standard security maintained constant updates renewal investments billion swiss francs 
+in this way is assured that kkb, operation years, always fulfilled current requirements in safety, 
+in several aspects even surpassed 
+swiss supervisory authority, ifsn, confirmed this fact several occasions 
+axpo plans to operate nuclear power plants long safe economically viable 
+we interested in this course less economic aspect practical use fission energy 
+in particular, we interested in control chain reaction 
+that we already presented in video 
+to fission u, one needs slow neutrons 
+chain reaction is a selfregulating process, is influenced neutron flux energy 
+could you expand that 
+to extent process is still selfregulating, 
+let first briefly explain is going inside reactor 
+operation, course simplifying a bit 
+energy, heats fuel rods, is produced fission heavy nuclei u 
+if much heat is to produced, many nuclei must fissioned per unit time 
+if less heat is required, fission rate must reduced 
+fission is induced neutrons relatively modest kinetic energy, 
+we call thermal neutrons 
+to control fission, is simply a matter ensuring 
+that proper amount thermal neutrons is available times to generate fissions 
+much, little either 
+control parameter is therefore neutron flux 
+systems measuring this flux placed outside reactor pressure vessel, 
+measure neutron flux 
+a large range decades 
+thus measurement neutron flux is carried outside reactor is this flow controlled 
+fission reaction two to three neutrons high kinetic energy released 
+called fast neutrons 
+if energy produced reactor is to remain stable, fission rate must kept constant, 
+ie fission must capable generating a single subsequent fission 
+this purpose, is necessary to ensure that two to three neutrons there remains average one fast neutron, 
+high energy must reduced to thermal level 
+in this way one one thermal neutron to generate next fission 
+this thus concerns first neutron flux we reduce this flux we reduce energy neutrons, high 
+neutron flux is regulated a less strong absorption, capture neutrons 
+this purpose, control rods used contain a material, a large crosssection absorption neutrons 
+hand, cooling water fuel rods contains boron 
+boron also a high efficiency neutron absorption 
+inserting control rods less deeply, varying concentration boron 
+in cooling water, flux neutrons is influenced 
+so neutron flux is regulated to right level 
+remains to reduce energy that generate fission 
+fast neutrons slowed to thermal energy a moderator 
+in a pressurized water reactor, boron in cooling water also acts moderator, 
+in addition to role a neutron absorber 
+in this way, remaining neutrons thermalized 
+you mentioned beginning astonishing fact that fission chain reaction selfregulating component 
+you go detail 
+operation reactor two feedback effects occur 
+increasing temperature fuel, relative movement u nuclei increases, causes an increased absorption neutrons doppler effect 
+neutron absorption increases, there fewer that available next fission 
+time, temperature cooling water increases, causes a decrease in density a less effective moderation 
+two mechanisms eventually decrease fission rate 
+temperature increases, that temperature is reduced automatically 
+despite this fact, a regulation reactor is necessary to keep control chain reaction, could escape control cause major accidents 
+is ensured that control a nuclear reactor works 
+operating a nuclear power plant following important safety goals must ensured in a consistent manner 
+one must able to stop fission instantaneously, that is to say to stop chain reaction time 
+reactor core, that is to say fuel rods must cooled times, including reactor switched 
+enclosure radioactivity must ensured permanently 
+one must avoid that radioactive material contaminate environment 
+principles absolutely to respected 
+principles 
+one implement goals, one ensure that indeed respected 
+to ensure this, principles rules that defined national 
+international authorities must already respected planning stage 
+a plant is built, compliance requirements 
+is monitored competent authorities in a consistent manner 
+requirements ultimately result a consistent application 
+principle defence in depth 
+concept multiple barriers isolation radioactivity 
+defence in depth a little aftertaste military strategy 
+could you explain that to us a bit 
+comparison military significance is in fact justified 
+means actually implementing a defence accidents staggered in depth 
+characterized a chain tiered security measures 
+includes, example, choosing a suitable reactor concept, 
+also redundant systems, that is to say several systems purpose 
+redundant systems chosen purpose different technologies, 
+that incident cannot occur twice simultaneously 
+in particular training knowhow employees essential 
+elements in this accident protection concept staggered in depth 
+nevertheless, accidents known to occurred 
+last serious accident that fukushima 
+a result accidents a few countries, including switzerland germany, 
+decided to stop use nuclear energy in long term, 
+to rely renewable energies wind, water solar energy 
+despite this fact, axpo continues to invest in maintenance operation oldest nuclear power plant 
+you resolve this apparent contradiction 
+we analyze situation thoroughly, we realize that few countries 
+in world decided to reverse nuclear policy fukushima accident 
+many countries even decided to invest anew in nuclear technology to ensure electricity supply 
+early , reactors operating in countries 
+there new power plant projects worldwide, including in china 
+but, i noted beginning, axpo is a leader in production nuclear hydropower, 
+also in exploitation renewable energy source, especially in wind farms 
+in line ideas federal council parliaments, axpo plans future without construction new nuclear power plants 
+continued operation existing proven plants, 
+long safe economical, 
+is axpo an important even necessary prerequisite a successful implementation federal councils strategy 
+operation existing nuclear power plants is also great importance continuity electricity supply in switzerland 
+a dependency foreign countries is in opinion, that axpo, neither effective economically desirable 
+this seems comprehensible to another problem amply discussed is course storage 
+highly radioactive waste, also partially highly toxic, is produced in a nuclear power plant 
+you see solution to this problem 
+theres ambiguity radioactive waste must disposed in a way 
+that sustainable protection man environment is ensured times 
+to this end, whole chain waste must scrupulously rethought, generation in nuclear plant, conditioning, 
+temporary storage until a final disposal in geological formations 
+step must treated carefully ultimately, waste must permanently isolated 
+habitat so that cannot reenter biosphere food chain 
+this must ensured enormous periods , years 
+this is an easy exercise is vision final storage long periods 
+almost countries that use nuclear energy, chain disposal highly radioactive 
+waste ends storage in deep layers geologically stable rock 
+in international circle experts there is also a consensus that welldesigned 
+deep underground repositories ensure longterm safe isolation radioactive substances 
+thus protection man environment assured 
+in swiss legislation, final deep underground storage is even mandatory there alternatives to this 
+in spite this, there is a nonnegligible resistance population storage facilities in neighborhood 
+one find a place storage that is accepted public time meets requirements geological safety 
+is also unanimously accepted internationally that establishment a deep underground repository imperatively requires a stepbystep approach 
+results a preliminary phase must taken account in planning implementation next phase 
+constant development science technology must also taken account 
+this makes process identifying a storage site a long one 
+this ensures that one find optimal alternative 
+given moment correct 
+thank you, dr weidmann, this interesting open discussion 
+i would like to thank dr urs weidmann this extremely informative open discussion 
+i would also like to thank mrs christine mller, director axporama, 
+opening doors this exhibition, i highly recommend 
+an instructive didactic visit 

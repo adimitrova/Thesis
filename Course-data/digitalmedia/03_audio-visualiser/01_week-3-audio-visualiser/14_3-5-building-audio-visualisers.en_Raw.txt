@@ -1,0 +1,711 @@
+[sound]. 
+okay, so we've had marco explain to you 
+about rotation and translation and other 
+types of methods for changing the display 
+of certain types of graphics and 
+characteristics of graphics on the 
+screen. 
+and we've had matt explaining to you, 
+explaining really how we analyze audio 
+among other things. 
+now what we going to do is we're going to 
+try and combine those two things 
+together. 
+we're going to do a little bit of what we 
+call graphical synthesis to create 
+algorithmic graphics. 
+and we're going to do a little bit of 
+audio analysis and combine that to make 
+an audio visualizer. 
+audio visualizers are really popular and 
+you find them all over the place 
+remarkably so in pretty much every media 
+player and every major console. 
+so for example in the xbox jeff minter's 
+audio visualizer is the main visualizer 
+when you see when you put a cd in. 
+although other visual artist like i think 
+it's flight 404, their visualizer used 
+for itunes, so there is a whole range of 
+people who just make computer graphics, 
+abstract computer graphics. 
+and their work is a major part of 
+everybody's listening experience. 
+the audo analysis aspect of doing 
+audio-visualization is quite good to 
+understand and is quite nice to know how 
+to do some of those tricks. 
+i'm going to take you through basic 
+analysis and how we use it to change 
+graphic parameters. 
+and i'm also going to give you a really 
+quick introduction to beat detection. 
+so let's start at the beginning. 
+building an audio visualiser. 
+so, the first thing we need to learn is 
+how to do algorithmic drawings. 
+there are so many different ways to doing 
+this and so many different methods and 
+different algorithms you can apply. 
+i'm going to teach you how to do some 
+really simple stuff that uses rotation 
+and translation, and we're going to start 
+with rotation. 
+now, fundamentally the key to almost all 
+algorithmic drawing is a for loop. 
+and marco will explain that to you if 
+you're not sure what for loops are you 
+should go back and check the programming 
+lectures that marco supplied for you in 
+case you're a little rusty. 
+it's actually really, really easy to 
+understand the for loop and i'm sure 
+you'll be fine with it. 
+but all you really need to know is this 
+is a method for drawing lots and lots of 
+things in different ways on the screen. 
+let me give you an example. 
+here's a basic rotation sketch which we 
+can look at. 
+you can see this would run fine on an 
+ipad or an iphone. 
+we've got a bunch of rectangles and 
+they're all spinning round. 
+you'll notice that when they spin round, 
+they seem to, line up at certain points. 
+like just then. 
+also you'll notice if you're looking, 
+that you get four, a group of four, then 
+a group of five, then a group of three, 
+and then it spins out into one long arm 
+and goes all the way around. 
+now the reason this works is because 
+every individual shape i'm drawing is 
+spinning. 
+based on its position in a system of a 
+certain number of object. 
+so if i want, if i had 20 objects and i 
+was spinning them all, and i was spinning 
+an object in the middle, i, i would be 
+spinning it 20 times slower than the 
+object on the object on the edge. 
+and when you do that, you get this 
+interesting symmetrical pattern. 
+this has been used by lots of artists 
+over the years and it's an interesting 
+way of getting feedback type effects that 
+are really symmetrical. 
+let's have a quick look at how it works. 
+so it doesn't use any trigonometry 
+although we are going to look at some 
+basic trig real soon. 
+but what we do have is a so it doesn't 
+use any trigonometry, but what we do have 
+is a simple rotation. 
+and i'm going to show you how that works. 
+this is the sketch. 
+so ther's no sine, there's no cosine, 
+there's no tangents or stuff, and there's 
+no pi. 
+we'll be looking at pi a little bit 
+later. 
+young blah etc. 
+but it has a similar effect, i'll just 
+used a variable called time. 
+this variable is initialized at zero at 
+the top of the sketch. 
+let's have a quick look at what's going 
+on underneath here if we go back. 
+so we have time and time is this value 
+where we're incrementing bit by bit. 
+every, every time that we ask the 
+computer to draw a frame that increments. 
+and then what we do is we say okay, 
+here's a for loop. 
+basically i want to do this 20 times 
+times, and it uses this variable i, which 
+is an integer, to do it 20 times. 
+we're going to rotate given the current 
+time so as time progresses and as time is 
+incremented by this value of 0.01, it's 
+going to change the rotation. 
+and then what we're going to do is we're 
+going to draw a rectangle based on its 
+position, i, it's position in the system, 
+whichever one it is. 
+and then we're also going to change the 
+signs based on their position. 
+and that's what we have here and that's 
+what gives us this spinning set of 
+squares. 
+so you can see here the normal sort 
+processing stuff size and frame rate, we 
+set the background to white. 
+we translated everything to the middle of 
+the screen so that zero and zero the 0x 
+and 0y is right in the center. 
+this is useful, and for all the sketches 
+i'm doing today, that why, that's how i'm 
+working. 
+i've turned the fill of and then here's 
+the bit we just looked at. 
+i'm incrementing time. 
+i've got 20 of these and then i'm just 
+spinning them around. 
+each one is being spun around differently 
+based on what the time is. 
+and then i'm drawing it but the join 
+functions been parameterized with the 
+number i. 
+the number i represents the number in the 
+system, so remember what i said before. 
+so if i'm spinning the one in the center 
+around, i was spinning it 20 times slower 
+than the one on the edge. 
+so as i count each one out rectangle 
+here, rectangle here, rectangle here this 
+one spins like this and this one spins 
+like this. 
+so this one for every single rotation 
+this one does this one does 20 rotations, 
+the one on the other end. 
+okay, so that's the basic idea. 
+let's try something a bit more 
+complicated. 
+let's do a for loop with rotation and a 
+bit of trigonometry. 
+it's a really, really simple algorithmic 
+process. 
+this one, i always use, i always used 
+this example when i'm explaining about 
+algorithmic drawing because it's a really 
+good algorithm to start with because it's 
+one of the earliest computer graphics 
+algorithms we're creating. 
+animations and it was used by john 
+whitney, sr to produce a range of really 
+famous abstract animated pieces. 
+he also used a similar technique for 
+generating what's called lissajous 
+figures for doing the title sequence to 
+vertigo. 
+which i think there's just been a, in 
+fact the day we're recording this there's 
+a google doodle which gives you an 
+indication of when we're recording this. 
+there's a google doodle which celebrates 
+the work of saul bass and on that there's 
+quite a lot of stuff about john whitney 
+because saul bass went with john whitney 
+to do the vertigo type of sequence using 
+exactly this algorithm. 
+and it's one of the earliest pieces of 
+computer graphics that whitney did on a 
+computer that he built himself, in fact. 
+so get this to work, we need to use some 
+trigonometry, and we need some elements. 
+we've got some variables and some 
+elements. 
+the elements is the number of objects 
+that we want to draw and the variables 
+are the way we want to draw them. 
+and we change these all inside the loop. 
+so we have a variable float spacing a 
+variable called rotation a variable 
+called radius and a variable called 
+magnify. 
+and the we have int the number of 
+elements. 
+so in the for loop we say. 
+as many elements as we've got, we keep 
+looping around until we've drawn them 
+all. 
+that's what it says int i equals 0, i 
+less than element i plus plus. 
+and then we're using pushmatrix and 
+popmatrix, which marco will have 
+explained to you about already. 
+now what we do is instead of rotating 
+given our time value, we rotate given 
+spacing, i and rotation. 
+so there are three numbers that we use to 
+calculate what the current rotation's 
+going to be. 
+so we have the spacing, which is the 
+distance between all the objects. 
+we have i, which is the number of the 
+object in the system. 
+and we have rotation, which is how much 
+rotation there currently is, how much 
+we're rotating into our system. 
+and then what we do is we're translating 
+it as well at the same time. 
+so that's the main difference. 
+although we're parametrizing rotate 
+differently, we're still just rotating 
+it. 
+the key thing is here we're translating 
+at the same time. 
+which means it doesn't just spin round, 
+it goes in and out. 
+and we are using sine to do this which is 
+a trigonometric function which squeezes 
+all the, all the shapes in and out. 
+now, let's have a quick look. 
+basically, we're drawing an ellipse every 
+time we do this. 
+i'm going to show you what that looks 
+like. 
+so this is the basic rotation with sine. 
+now, as always with these examples, 
+they're accessible in week three, lesson 
+three of the coursera documents that you 
+should have. 
+and here we have it. 
+so this is this is the algorithm that i 
+was just talking about. 
+it's useful for all sorts of things. 
+and, it's neat so i'll pair, i'll 
+parametrize it with mousex and mousey so 
+you can see i'm just exploring with the 
+mouse at the moment. 
+you'll notice that while i'm just 
+traveling down the diagonal, we'll always 
+have it well it always gives us circles. 
+but if i move in the y dimension, it 
+rotates and if i move in the x dimension, 
+it translates. 
+and you see we get these interesting 
+symmetries. 
+let's have a, a kind of closer look at 
+that. 
+i'm going to go back to here. 
+so how are we doing that? 
+well, we're mapping the radius and the 
+rotation, given mousex and mousey, 
+exactly as i'm showing you on this slide. 
+so, we're going, okay. 
+well, we'll take the mousex as input. 
+and we presume that's from zero, which is 
+the leftmost side of the screen, to the 
+width of the screen. 
+and then we're mapping that to values 
+between 0 and 10. 
+and we're doing the same for the 
+rotation. 
+so, because of the way we've organized 
+these elements to be drawn, radius and 
+rotation are in the same range. 
+the other thing, the other variable which 
+we introduced in the last slide which 
+we're using to make this whitney 
+algorithm, is, spacing. 
+now spacing is how far apart, as i've 
+said, how far apart the different 
+elements are drawn. 
+and this is really about how far around a 
+circle it is. 
+so in this case, we're getting two_pi. 
+now two_pi is basically how we measure 
+around a circle. 
+so we start here zero pi and we measure 
+around and we get to, two_pi. 
+okay? 
+so marco will have explained a little bit 
+about pi. 
+we're using pi divided by elements to 
+figure out how we get, say we have 1000 
+elements. 
+we're dividing two_pi by 1000. 
+and we're saying that's how far apart all 
+the, all the different elements are. 
+so it's a bit like saying, well, you 
+know, i've got a box which is one meter 
+long. 
+and i want to get ten sandwiches in it. 
+so i'm going to stick each one in at a 
+tenth of a meter, apart. 
+that's basically what we're doing. 
+although they're not sandwiches. 
+there's no box. 
+it's just a circle and some graphics. 
+so radius and rotation, they're the two 
+variables which are how far around it's 
+going, and how far away from the center 
+it is, and spacing is how far apart we 
+are around the circle. 
+so quickly let's have a look at this. 
+so here they are. 
+we're in the draw loop. 
+we set the background to black. 
+we've mapped mousex to ray x. 
+we've mapped mousey to rotation. 
+we've created spacing which is two_pi 
+elements. 
+we translated the center of the screen 
+which is what we're doing for all these 
+sketches. 
+i've explained that to you before. 
+we turn fill off and then what we do is 
+we say for every element pick a color. 
+i'll be talking about a color in a 
+minute. 
+pushmatrix just like marco said we needed 
+to. 
+now rotate based on how far apart they're 
+supposed to be, which element and system 
+they are and what the rotation currently 
+is. 
+and then translate but when we 
+translating we're getting the sine of the 
+spacing which is how far apart they are. 
+the i which is the number which 
+particular element it is and the radius 
+which is how far from the center it is. 
+so we get the sine of that and then we 
+magnify it. 
+now this is what creates that squeezing, 
+cause the, what sine produces is this 
+waveform like this. 
+and because we're running those values 
+into a sine wave and then magnifying them 
+out, then we're basically not just going 
+around the circle, we're going through 
+the circle as well. 
+as we are squeezing the radius to and 
+from the centerfold. 
+and that's how it works. 
+then we draw our circles. 
+now, you'll see, if i show you the 
+sketch, all the circles are the same 
+size. 
+i can do some interesting things quite 
+fast just by times-ing them by i. 
+let's try again. 
+and you'll notice that immediately i've 
+got a very very different sketch with, 
+which looks a lot more interesting. 
+you see, i've got, i think they're far 
+too big so i should probably change the 
+size. 
+let's just make them, i just, i'll say i 
+times 10 instead of 20, cause they're a 
+bit off the screen. 
+let's try that again. 
+yeah, that's a bit more like it. 
+so you can see i've got a lot more 
+control, and you get this weird sort of 
+pseudo 3d effect. 
+and it's worrying as all the different 
+circles interact, exactly like they did 
+in the first sketch. 
+you get this kind of weird mesh. 
+now, when i'm all the way over here, it 
+looks a bit messy. 
+but really when both the values are quite 
+near to zero, you get some quite nice 
+effects, nice 3d effects. 
+also what we can do is we can change the 
+number of circles. 
+so if i change the number of elements to 
+something a bit ridiculous, like 1,000 is 
+a lot. 
+let's try 256, just double them, i wonder 
+if it can handle that? 
+yeah, there you go, well that's 256 and 
+you see that immediately. 
+it's starting to look a lot more 
+interesting, and all we've done is taken 
+a few of the variables and parameterized 
+them okay. 
+so we're going to use this, in a bit to 
+show you the final example. 
+but lets move on. 
+i want to talk a bit about hue and 
+rotation and then i'm going to talk about 
+how we organize, so we do color and then 
+i'm going to talk about how we organize 
+sound and beat detection. 
+so instead of using red, green, and blue 
+colors like we normally do i'm using hue 
+saturation and brightness, hsb. 
+sometimes called hsv color where the v 
+stands for value instead of brightness. 
+sometimes called hsl, where it stands for 
+luminance. 
+so basically, hue is the color tone. 
+rather than having a mixture of red, 
+green and blue, we can say, well, i want 
+the color tone, whether it's red, blue or 
+yellow to be one number. 
+and that's normally expressed between 
+zero and 360 degrees. 
+and it's, it's as if it was going around 
+a circle. 
+saturation is the color depth which is 
+how strong the color is. 
+and brightness is self explanatory, it's 
+how bright it is. 
+so bright it is if so if saturation is 
+zero. 
+the color is, is either you know, is a 
+shade of gray. 
+and if brightness is zero, it's black. 
+and you can see by this triangle, how it 
+works. 
+now so what we do here in processing, in 
+order to make this work is we change the 
+color mode to hsb. 
+and then we can control what we would 
+normally like the fill command, or the 
+stroke command to set the hue saturation 
+and brightness. 
+and in that example i was showing you, 
+you saw that the color was going through 
+a range of different colors from one 
+circle to the other. 
+because in my stroke command in my fit, 
+yeah, it was the stroke command. 
+in that stroke command i was setting it 
+based on the number of the elements in 
+the system. 
+so it went around the hue circle, you can 
+see the hue circle here, which is on the 
+top of this, on the bottom of this cone. 
+it went round and round and round that 
+cone, based on which number in the 
+graphical system we were drawing. 
+so, if we use that hue saturation and 
+brightness, and then we do some analysis, 
+we can create some interesting visuals. 
+i'm going to start with a really simple 
+visualizer, based on analyzing sound. 
+exactly what matt said. 
+we get, we analyze the audio by getting a 
+float value called power in this example. 
+and that's that's done by using the audio 
+method, get average power. 
+so, we go float power equals plat pow 
+float power equals player.getaveragepower 
+and then we use the variable power to 
+change the animation. 
+i've got an example that i want to show 
+you. 
+which is really, really simple. 
+what it does is, it's, uses hsv, as i've 
+already said, and it produces. 
+the form, it produces it, you load the 
+sound, you analyze the sound, and then we 
+just change the color. 
+you can see i'm changing the color here, 
+before it draws this circle. 
+and it looks like this. 
+and we should get some [music] and just 
+to prove that i'm actually analyzing it 
+if i change the speed you see that a hue 
+rotation changes speed too. 
+so, i'm clicking and dragging, [sound] 
+clicking and dragging to change the speed 
+and you gotta be a bit careful with this 
+cause if you stare at it to long it can 
+give you a funny feeling. 
+i guess i better move on. 
+so, if i show you a bit of that code, 
+it's really simple. 
+we have another for loop with a number of 
+elements which is exactly the same as 
+before. 
+i'm literally just drawing 20 circles, 
+and those 20 circles are spaced in the 
+screen from the outside in, just as if i 
+was laying sugar paper circles one on top 
+of the other. 
+and then, what i'm doing, is i'm using 
+the hue and i'm rotating the hue based on 
+the power, and also the also then the 
+number of the element that we're 
+currently in. 
+so, the outer circle is a different hue 
+to the inner circle. 
+which is why it seems to cycle from the 
+outside to in. 
+that's basic color cycling. 
+okay. 
+so, we're just to go through that again, 
+we're changing the color of the elements 
+depending on the power. 
+we get the float value power from the 
+getaveragepower method. 
+we also have another float called go 
+which. 
+go is basically how much energy we have. 
+so we keep adding the extra power and 
+i've got a multiplier plus 50 which you 
+can change. 
+have a mess with that. 
+see how it effects how fast it moves. 
+so go is a value which we use to keep 
+cycling through, through all the 
+different color values. 
+so, it's the, it's the additive power as 
+we keep going. 
+and it's kind of a number that keeps 
+getting bigger and bigger. 
+now, i'm using modulo here to make sure 
+that whatever that value is, it's 
+constrained to between 0 and 255. 
+and we go, basically we have a fill 
+command, i plus go, modulo 255. 
+and that's the hue, power times 512, 
+that's the saturation, and 255 is the 
+brightness, so it's always very bright. 
+and then we draw our ellipses, and the 
+size of the ellipse is dependent on which 
+circle we're actually drawing. 
+so the circle go from the outside in. 
+so that's the most simple kind of audio 
+visualiser. 
+let's take another look at it because 
+it's good for the eyes [music]. 
+really simple and really effective. 
+now let's say you want to do something 
+more complicated, we can control the 
+visualizer with sound through beat 
+detection. 
+beat detection is something which is 
+useful when you're doing visualizers. 
+and i've got a simple example here. 
+let me show you the example. 
+i'll tell you how it works. 
+as i've said before, all of these can be 
+found in the materials which you should 
+have week three. 
+so um, [music] we've got the same track 
+here and you'll notice we've got circle 
+in the middle, which is showing us the 
+average power. 
+and then there's a square appearing 
+whenever it, it detects a beat, and the 
+square is appearing in the top left hand 
+corner. 
+let me show you how i did that. 
+so how did i do that? 
+basically, what i'm doing is i'm getting 
+the average power, i'm running a beat 
+detector. 
+let me talk you through how the beat 
+detector works. 
+so quickly, what we do is we need to have 
+two variables for beat detector. 
+in addition to power, we need to have 
+threshold, and we need to have wait. 
+so the threshold is what the power needs 
+to be for us to detect that there's been 
+a beat. 
+it's basically a level that we set and if 
+it goes over that level, we call it a 
+beat. 
+and then wait, tells us to wait a certain 
+amount of time before we go looking for 
+more beats. 
+now, so we have a little method here, in 
+each statement. 
+power, if the power is greater than the 
+threshold, and also weight is less than 
+zero so if we finished waiting and the 
+power is over the threshold then we can 
+do something to change the animation. 
+so in the case that i just showed you 
+we're just drawing a rectangle on the 
+screen but we could also do something 
+else. 
+we could get this value go or our other 
+value, we'll call it amplitude for 
+example and we can add the power to that 
+amplitude to create a running graph of 
+the current amplitude. 
+and then what we do is we add ten to the 
+wait value. 
+so we wait for another ten frames before 
+we detect another beat. 
+and then immediately we close that 
+bracket we do wait minus minus which 
+starts the countdown. 
+so every drawing frame we count down and 
+we're counting down until wait is less 
+than zero again and then we go okay we 
+can look for another beat. 
+and that's basically how it works. 
+let me just show it working again so you 
+can see. 
+[music] and you can see that [music] you 
+should actually be able to see the 
+numbers flashing on as it detects a beat 
+here. 
+you've got the average here and the 
+square is being drawn when we get a beat. 
+[noise] so that's really simple. 
+okay so this is the last example i'm 
+showing you, it's just a way of showing 
+you how we put all those things together. 
+it's not a fully in a worked example you 
+cold do a lot. 
+so for example, i'm, i'm not really using 
+the color cycling. 
+and also i've only done a little bit to 
+change the animation. 
+i just made it look slightly nice. 
+but i'm drawing lines instead of drawing 
+circles. 
+also i'm not changing the visualizer 
+through out. 
+you could have a number of different 
+drawing methods and change them based on. 
+how many beats are being detected or any 
+number of different ideas. 
+so let me just show you a bit what that 
+looks like and then you should take this 
+away as a starting point with all of the 
+other examples and try and build your 
+own. 
+so this is what it ends up looking like. 
+[music] you can see that we've got the 
+position of the lines changes based on 
+[music] the beat's being protected, but 
+they're also rotating based on the 
+energy, so they're really closely linked 
+to the music. 
+also, because the lines are all being 
+rotated. 
+they're being rotated twice, once around 
+the origin and then again given a 
+separate value, and you'll see sometimes 
+we get nice symmetries, and sometimes we 
+get more noisy output. 
+[music] i'm also using a hue to rotate 
+all of the different colors, and so 
+that's it. 
+so in summary, what we've done is we're 
+created a simple visualizer, a really 
+basic one. 
+we could do a lot more by using alpha 
+blending, by doing more color cycling. 
+but essentially we are taking some 
+algorithmic approaches to drawing. 
+we are parameterizing them so that we can 
+control them in various ways. 
+we're analyzing the audio and we're 
+taking the output of the audio analysis 
+and plugging it into the sound, into the 
+graphics parameters. 
+so the sounds being plugged straight into 
+the graphics as if we were taking a jack 
+plug out of a guitar and sticking it in. 
+in fact it's more complex than that 
+because we're doing spectral analysis and 
+we're doing weighted average spectral 
+analysis. 
+so this is a really good way a good 
+method of generating visual material and 
+generating interesting visual 
+applications [music] 

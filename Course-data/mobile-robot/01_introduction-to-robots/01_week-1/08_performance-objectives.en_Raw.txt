@@ -1,0 +1,137 @@
+so recall, last time, we saw that. we
+designed a controller that was nice and
+smooth. it didn't overreact to small
+errors. made a system stable. yet didn't
+achieve tracking. and this was the
+proportional regulator, or the p
+regulator. and let's return to our
+performance objectives a little bit. we've
+talked about them briefly. but a
+controller at the minimum should.
+stabilize the system. if it doesn't do
+that, we know nothing and i've written
+this rather awkward looking acronym here,
+bibo, which is something out of the lord
+of the rings almost. what it stands for
+is, bounded in, bounded out which means
+that if the control signal is bounded, the
+state of the system should also be
+bounded. what this means is that, by
+doing. reasonable things the system
+doesn't blow up. and our system doesn't do
+that. tracking means we should get to the
+reference value we want. and robustness
+means we shouldn't have to know too much
+about parameters that we really have no
+way of knowing. and preferably we should
+be able to fight noise as. well, so recall
+at this was the model and when i
+introduced this wind resistant term here,
+we had a little bit of a problem.the
+proportional regulator couldn't overcome
+it and lets have another controller done
+one that explicitly cancels out the effect
+of the wind resistance. so here is my.
+attempt 3, i'm going to use this part,
+which is the proportional part that we
+already talked about, and then i'm going
+to add this thing which is plus gamma
+m/c*x.
+well why did i do this? well, i did this
+for the following reason that if you reach
+steady state x is not equal to 0, then now
+what you get is well this was the p part.
+this is the controller, the p controller.
+and then the effect of this thing well
+you're going to multiply this by c/m. what
+you're going get then is plus gamma x. and
+then you have wind resistance which is
+negative gamma x. so the gamma x, the bad
+parts cancel out. and in fact all we're
+left with then is that x. has to be equal
+to r. so, voila, we've sol ved the
+problem.
+we have perfect tracking. or, have we?
+dom, dom, dom. no, we have not. and, why
+is this? well, we have stability and we
+have tracking, but we don't have
+robustness. here are three things that we
+don't know. gamma, m, and c. and our
+controller depends explicitly on, on these
+coefficients. so all of a sudden we have
+to know all these physical parameters that
+we don't know, so this is not a robust
+control design. so attempt 3 is a failure.
+okay, let's go back to the p-regulator and
+see what's going on there. what, what's
+actually happening is that the
+proportional error is doing a fine job
+pushing the system up to close to where it
+should be, but, then it kind of runs out
+of steam, and it can't push hard enough to
+overcome the effect of the wind
+resistance. so the proportional thing
+isn't hard enough, but take a look here.
+this is the error, then the error starts
+accumulating over time, so if we somehow,
+if we're able to collect all of these
+errors over time, even though they are
+very small. over time, that should be
+enough, so that we can use this now
+accumulated error to push all the way up.
+so i wish there was some way of collecting
+things over time in a plot like this. and,
+of course, there. there is, this is
+something called an integral. so, if we
+take the integral over the error we're
+collecting the error over time and over
+time as this errors going to accumulate
+it's going to give us enough pushing power
+to actually overcome the wind resistance.
+so attempt 4 is a pi. regulator.
+so what i have here is the error at time
+t. this is my kp, which is my proportional
+gain. so this is the p part that we
+already saw. and now, i'm adding an
+integral that is integrating up the error
+from. the beginning to the current time.
+and it's collecting this. and then we have
+another term here, or another coefficient.
+the ki, where i stands for the integral
+part. so this a pi regulator. and it is
+2/3 of. the most common regulator found
+anywhere in the world, and in fact it's
+almos t 2/3 of commercial grade cruise
+controllers. so if i have a p and an i,
+what could possibly be missing to get to
+all of them? 3/3 instead of just 2/3.
+well, we take a derivative. right, we have
+proportion, we have integral, and we have
+a derivative. so, why not produce what's
+called a pid-regulator? so now we have a
+proportional term with a proportional
+gain. we have an integral part with an
+integral gain. and then we have a
+derivative part with a derivative gain, so
+this is. it's an extremely useful
+controller that shows up a lot. and, in
+fact, i'm going to hand, have to hand out
+a big sweetheart to the pid regulator.
+because it's such an important type of
+control structure that shows up all the
+time. and in fact we're going to get quite
+good at designing the pid regulators. now
+having said that, i can draw hearts all i
+want, let's see it in action and see what
+it actually does. and if i use just the pi
+regulator, not even a d component to the
+cruise controller, then all of a sudden i
+get something that's getting up quickly,
+nice and slowly, i mean smoothly, to 70.
+miles per hour, which is my reference. so
+this solves the problem. i don't know
+parameters, so it's robust. i'm achieving
+tracking, because i'm getting to 30 miles
+per hour. and, i'm stable in the sense
+that i didn't crash. so, this seems like a
+very useful design.

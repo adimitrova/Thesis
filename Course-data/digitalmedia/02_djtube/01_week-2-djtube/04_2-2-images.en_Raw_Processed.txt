@@ -1,0 +1,494 @@
+sound 
+this week, im going to talk images 
+to display in processing 
+in later weeks, im going to go a 
+lot detail images 
+represented, today mostly 
+laying images well 
+look to create animations 
+sequence images 
+so if you look slides here, weve 
+got an image taken a sequence that 
+mick prepared dj app, dj app, 
+im going to show you you would 
+display this kind image in processing 
+so, matthew, last week, talked you 
+loading sound files 
+playing 
+in many ways, loading images is 
+similar 
+you something called a pimage object 
+uh,which represents image you 
+load that file 
+so you is you create a variable 
+type pimage you load that in based 
+file name that image 
+matthew noted last week, that 
+go in data folder 
+processing sketch 
+like, like audio files 
+that matthew talked 
+so youve got pimage there, 
+displaying is simple, you use 
+image command 
+so image command, that is 
+draws image that youve loaded in, 
+you call that in draw 
+method 
+you normally load file in setup 
+so main parameter image command 
+takes is obviously image youre 
+going to display 
+you see here that takes two 
+images 
+to parameters 
+two numbers that give 
+position you want to draw 
+image 
+in fact you pass yet another two 
+numbers, is size image 
+default draws image 
+actual size in pixels 
+you adjust that to size you 
+want passing in a width a height 
+so, ive said that you give 
+position an image, that 
+actually mean, an image is a big 
+thing mean an image to 
+asked to take a pick 
+turns you actually define 
+that means in a number ways 
+default, is an image mode called 
+corner 
+so, here im showing you command, 
+image mode, specifies you draw 
+an image 
+default thats set to corner 
+that means is that position 
+image is top left 
+image 
+sign red dot here 
+so if i to call a image 
+position top left image 
+will point screen 
+you also use imagemode center 
+means that you must position 
+image based middle image, 
+often thats convenient 
+often intuitive to think it, 
+center image position, 
+so in this case, if i to call 
+image zero zero center image 
+would zero, zero, is top 
+left screen 
+is probably even you want 
+if you would set, to set position 
+to something else you could get an you 
+could position well 
+so im going to talk a little bit 
+positioning images 
+first lets a look an example 
+this working in practice 
+so this is a simple processing 
+sketch that involves loading 
+displaying an image 
+im creating top sketch 
+here a p image variable 
+im loading that in file 
+im here, im something clever, im 
+setting size screen to 
+exactly size 
+image 
+so im using image width 
+imadge dot height, to find width 
+height screen here im 
+drawing image position , 
+there we displaying an 
+image 
+i move image changing 
+positions im parsing in 
+i change size im going to 
+show you here that you to a 
+little bit careful if i set 
+size to , im maintaining 
+aspect ratio 
+image, so im squishing 
+so the, youve gotta careful to make 
+sure youre always keeping ratio 
+width height, otherwise 
+youre going to get a squished 
+stretched image 
+one nice way that is, is this, 
+im noise so here im, so here im 
+calculating a height 
+image that maintains aspect 
+ratio based width 
+im setting width to 
+im is, im taking that 
+width multiplying 
+height, dividing height 
+image dividing width 
+image 
+that multiply height divide 
+width maintains ratio between 
+width heights image 
+so this image height is right height 
+so thats image is width 
+isnt washed stretched 
+okay last thing i showed you 
+image mode 
+so i set imagemode corner 
+imagemode corner doesnt change anything 
+so if i there, exactly 
+
+i going to leave a little bit 
+to make clear i 
+if i move image mode sensor would 
+different 
+actually lets, lets draw 
+mouse position, will clear 
+whats happening 
+so im drawing image 
+position mouse, center 
+image is mouse position 
+if i corner 
+top left image is mouse 
+position 
+okay, lets a look a little bit 
+to lay images nicely, 
+to use commands to get 
+right sort layout feeling, is 
+so getting a correct layout your, 
+screen is really an important part 
+getting app to look nice 
+so you need to think a little 
+bit 
+maybe well talk this a little 
+
+in lesson today 
+lets look to this 
+so, this is an example 
+so, if we look this big rectangle is 
+processing window, we draw an 
+image point box 
+now, one basic things you 
+might want to 
+is sent to image in screen either 
+right in middle centered in 
+, dimension often sent to 
+horizontally 
+thats here 
+so im using image mode center, im 
+drawing position 
+box width divided two 
+width divided two is half width 
+screen 
+so, halfway across screen 
+so, im going to send to horizontally 
+i want near top vertically, 
+top 
+so, i dont want zero 
+im going to add a little margin 
+so, margin is two that small value, 
+pixels 
+that moves to, adds a little edge 
+between top screen 
+window 
+examples 
+so if i want to lay things in 
+columns 
+well, here still relative to 
+middle screen 
+so we want to position relative to 
+middle screen, we want to put 
+one side middle 
+screen 
+so, we want moved middle 
+screen in a certain margin 
+we add a little margin 
+mid, in, width 
+image divided 
+so width image divided is 
+half width image 
+thats half center image 
+essentially moving image in 
+center first margin 
+half width 
+so half way into, so the, 
+in center amount given 
+margin 
+we exactly thing 
+vertically 
+we move half height, 
+so half way screen, add a 
+margin, add imageheight 
+divided to move half 
+height 
+if we were, that imageheight two is 
+there image mid 
+comma, so specifying 
+center image is 
+so, thats kind thing you might 
+want to do, youre looking 
+positioning images, you need to think 
+relative to points screen, like 
+halfway point screen, width 
+divided two, height divided two 
+you want to add a little bit a margin 
+to sort give a bit space to 
+layout, you may want to 
+shift around size image, 
+half size image 
+mick will show you a number 
+examples that 
+so going to look about, 
+to create animations sequence 
+images 
+so is an animation 
+an animation is essentially something 
+that moves time 
+looking film 
+computer animation, really talking 
+a sequence frames time 
+so true movement, a, a 
+sequence individual images that 
+present one another 
+this goes back to glory days 
+disney animation 
+form until animation 
+always placed a number images 
+along a timeline 
+so we always think this 
+image 
+this is image , this is image , 
+a moment in time 
+talking real images, 
+looks something like this 
+we a sequence images 
+in real animation we many 
+to make sure we smooth 
+movements, im showing this an 
+example 
+we lay in order so we have, 
+we play sequentially one 
+
+if we play fast enough, that 
+gives us illusion movement 
+so a technical level in processing, 
+we need to is to able to 
+collect together a large number images 
+play one 
+quickly 
+now,thats something a little bit 
+different we last 
+week, so last week, we created a program 
+we sort set running 
+we interacted it, we we 
+mouse drag, mouse movements, 
+mouse movements resulted in changes 
+to state program, changes to 
+drawn, that we could see 
+playing in animation, we 
+want stuff to happen independently 
+whether drawing stuff 
+we want to play along 
+so, responding to mouse drag 
+mouse pressed events 
+we need program to thing 
+independently 
+and, we use is a method called draw, 
+this is a really fundamental part 
+processing, this is, a method that is 
+called every frame to times a 
+second 
+is used to draw a new image time 
+time time 
+changing images 
+slightly time we get illusion 
+animation 
+so in draw method, going to 
+draw image, 
+draw method automatically repeats 
+repeats repeats 
+so that we get that illusion 
+animation 
+we cant obviously drawing 
+image every time 
+we need a lot images 
+to represent a large number images, we 
+use a data structure called an array 
+now, if youre already familiar 
+programming, youre probably familiar 
+arrays 
+if youre familiar them, 
+please look additional lecture 
+ive put arrays 
+okay, we create an array an array is 
+a large block memory that a 
+numbered sequence elements 
+so weve got an array images 
+so weve got a bunch images 
+number in order 
+sound way arrays work we 
+start 
+so you 
+image , image , image , image 
+thing we need is to able to 
+keep track we in image 
+sequence 
+which, image we cant reclaim 
+to that, we keep in variable 
+is number current image 
+an int a whole 
+number to that, that image sequence 
+so we got this variable current image 
+is keeping track we are, 
+we, we draw a frame 
+so we, in draw method 
+we draw current image 
+we use image command, anim 
+currentimage, hold position in 
+there that weve put a position in there 
+that will draw image we 
+currently playing 
+so, thats basics we 
+need to 
+thing is that 
+actually animating nothing is 
+changing 
+so core to animation is that every 
+frame we something, something 
+to change 
+so that we get a new image 
+in this case simple 
+we need to is move to next 
+image 
+we that is simply add one to 
+current image available 
+so that image steps onto next 
+one 
+youll note im going to use this syntax 
+current image plus equals that 
+means adding if youre familiar 
+price signal java syntax 
+so, time draw is called, so every 
+frame, times a second, adding 
+one to current image 
+so im moving to next image, 
+displaying that one 
+moving to next image, displaying 
+that one, next one 
+carry 
+to large number images in examples 
+well looking at, sort of, a 
+hundred images 
+so, this is an example 
+program would look like in setup 
+we, we create our, array 
+images, we start current image 
+zero 
+in draw, we draw current imagethat 
+gives us currentimage 
+we add to 
+we still use things, like 
+mousepressed mousedragged to control 
+playback 
+example, we press mouse we 
+could set current image to zero 
+would reset playing 
+beginning 
+i show you example, i want to 
+go one last thin, is looping 
+so fine adding one to current 
+position 
+happens we get to end 
+array 
+we run images 
+if we try to access an image thats 
+in way 
+so thats, so getting a current 
+position is number 
+images weve got 
+well get an error, program will 
+crash 
+so we need to something that 
+we could stop animation, a 
+common thing we might want to is loop 
+so, this is an example 
+codes 
+if we check if current position 
+is length image 
+if is, we set current position 
+back to zero so we reset back to zero 
+so, lets a look that in practice 
+so here is animation sketch, i 
+written a little example 
+function that loads images 
+you that in example pack 
+you dont to rewrite that 
+we load images, passing in an im, 
+image format 
+so this is name will look like this, 
+movie number jpg, this 
+is number images 
+we frame will display 
+image 
+we add one to it, we go back to 
+beginning leave 
+mouse press will reset to 
+so, mouse press function, 
+we set to , mouse gets 
+first 
+so i restart mouse 
+buttons pressed otherwise will 
+play in a loop, animation 
+theres one last thing id like to cover, 
+is playing pausing an 
+animation 
+so sometimes you want to stop 
+animation temporarilty restart 
+to that, we use whats called a 
+boolean variable so thats a variable 
+that take two values, true 
+false 
+acts like an onoff switch, so, 
+playing is true, means 
+we playing 
+playing is false, means 
+playing 
+we use this boolean variable 
+input an if statement like this 
+we use, if playing 
+that means if playing is true 
+we move currentimage 
+if playing is true, 
+nothing 
+so this is is controlling playing 
+we turn playing 
+in mousepressed, i using 
+clever here, called operator 
+that, that is takes a 
+boolean variable, 
+opposite 
+so switches, taking playing here 
+switching it, accessing to 
+opposite playing 
+so if playing is false, will become 
+true 
+if playing is true, will become false 
+i will show you that works in 
+practice, here 
+so weve got a, a processing sketch 
+again, loads images, we a 
+boolean variable here, weve wrapped 
+playing code in an in an if statement 
+in unknown toggling so 
+turning playing true to flase 
+flase to true 
+i click to turn 
+like this 
+okay, so matthews going to tell you a 
+little bit work in audio 
+that we need todays lesson 
+well, mick will show you an example 
+to use this to create a vjr music 

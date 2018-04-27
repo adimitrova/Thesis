@@ -1,0 +1,329 @@
+1
+00:00:00,012 --> 00:00:06,248
+, The Chain rule is so important, it's
+worth thinking through a proof of its
+
+2
+00:00:06,260 --> 00:00:11,611
+validity. You might be tempted to think
+that you can get away with just
+
+3
+00:00:11,623 --> 00:00:17,773
+cancelling. What I mean is you might be
+tempted to think that something like this
+
+4
+00:00:17,785 --> 00:00:23,519
+works. let's say you wanted to
+differentiate g of f of x. You might set f
+
+5
+00:00:23,531 --> 00:00:28,193
+of x equal to y. And then, you might
+think, well, what you're really trying to
+
+6
+00:00:28,205 --> 00:00:32,801
+calculate is the derivative of g of y and
+okay. And then, you might say, well, the
+
+7
+00:00:32,813 --> 00:00:37,252
+derivative of g of y, that will be the
+derivative of g with respect to y times
+
+8
+00:00:37,264 --> 00:00:42,124
+the derivative of y with respect to x, and
+that's really the Chain rule. I mean, this
+
+9
+00:00:42,136 --> 00:00:46,682
+first thing is the derivative of g and
+this other thing is the derivative of f
+
+10
+00:00:46,694 --> 00:00:51,306
+just like you'd expect, and then you're
+trying to say that you can just cancel,
+
+11
+00:00:51,652 --> 00:00:57,004
+alright? You're not allowed to just
+cancel. I mean, the upshot here is just
+
+12
+00:00:57,016 --> 00:01:02,577
+that dy/dx is not a fraction, alright? You
+can't justify this equality by just
+
+13
+00:01:02,589 --> 00:01:07,972
+canceling because these objects, the way
+you're supposedly doing the canceling,
+
+14
+00:01:08,087 --> 00:01:13,560
+they're not fractions. We need a more
+delicate argument than that. One way to go
+
+15
+00:01:13,572 --> 00:01:18,075
+is to give a slightly different definition
+of derivative. Well, here's a slightly
+
+16
+00:01:18,087 --> 00:01:21,555
+different way of packaging up the
+derivative. The function f is
+
+17
+00:01:21,567 --> 00:01:25,371
+differentiable at a point a, provided
+there's some number, which I"m
+
+18
+00:01:25,372 --> 00:01:30,261
+suggestively calling f prime of a, if the
+derivative of f at a, so that the limit of
+
+19
+00:01:30,273 --> 00:01:35,242
+this error function is equal to 0. And
+what's this error function? Well, it's
+
+20
+00:01:35,254 --> 00:01:40,148
+measuring how far my approximation is that
+I'd get using the derivative from the
+
+21
+00:01:40,160 --> 00:01:45,018
+actual functions output if I plug in an
+input value near a. In some ways, that's
+
+22
+00:01:45,030 --> 00:01:49,695
+actually a nicer definition of derivative,
+since it really conveys that the
+
+23
+00:01:49,707 --> 00:01:54,820
+derivative provides a way to approximate
+output values of functions. In any case,
+
+24
+00:01:54,932 --> 00:01:59,920
+now, let's take this new definition of
+derivative and try to prove the Chain
+
+25
+00:01:59,932 --> 00:02:05,470
+rule. Try to approximate g of f of x plus
+h. Try to discover the Chain rules. So, I
+
+26
+00:02:05,482 --> 00:02:10,495
+want to be able to express this in terms
+of the derivative s of g and f, at least,
+
+27
+00:02:10,607 --> 00:02:15,995
+approximately, and then control the error.
+Well, I can do that for f because I'm
+
+28
+00:02:16,007 --> 00:02:22,490
+assuming that f is deferential about the
+point x. So, this is g of, instead of f of
+
+29
+00:02:22,502 --> 00:02:28,257
+x plus h, f of x plus the derivative of f
+at x times h plus an error term, we should
+
+30
+00:02:28,257 --> 00:02:36,545
+be calling error of f of h times h. I'm
+going to play the same game with g. This
+
+31
+00:02:36,557 --> 00:02:44,630
+is g of f of x plus a small quantity. And
+if I assume that g is differentiable at
+
+32
+00:02:44,642 --> 00:02:52,575
+the point f of x, then this is g of f of x
+plus the derivative of g at f of x times
+
+33
+00:02:52,587 --> 00:03:00,543
+how much I wiggle by, which, in this case,
+is f prime of x h plus that error term
+
+34
+00:03:00,822 --> 00:03:08,304
+plus an error term for g, which is the
+error term for g. And I have to put in how
+
+35
+00:03:08,316 --> 00:03:16,271
+much I wiggled by, which, in this case, is
+f prime of xh plus the error term for f at
+
+36
+00:03:16,283 --> 00:03:23,560
+h times h times that same quantity, f
+prime of xh plus the error term for f at h
+
+37
+00:03:23,572 --> 00:03:30,650
+times h. Alright, so that's exactly equal
+to g of f of x plus h and I'm including
+
+38
+00:03:30,662 --> 00:03:37,551
+all of the error terms. Now, we can expand
+out a bit. So, this is g of f of x plus,
+
+39
+00:03:37,672 --> 00:03:43,561
+you can multiply these two terms together,
+g prime of f of x times f prime of xh.
+
+40
+00:03:43,682 --> 00:03:49,446
+That's looking really good, because that's
+what the Chain rule is, right? It's
+
+41
+00:03:49,458 --> 00:03:55,381
+supposed to give me this as the derivative
+of g composed with f. Plus, I've got a ton
+
+42
+00:03:55,393 --> 00:04:02,384
+of error terms now. All those error terms
+have an h, so I'm going to collect all the
+
+43
+00:04:02,396 --> 00:04:09,196
+h's at the end. The first error term is g
+prime of f of x, this term here, times the
+
+44
+00:04:09,208 --> 00:04:15,883
+error of f at h. The next ones, plus the
+error of g, at this complicated quantity,
+
+45
+00:04:15,895 --> 00:04:24,063
+I was going to abbreviate hyphen, times f
+prime of x times h, I'm collecting all of
+
+46
+00:04:24,075 --> 00:04:32,955
+these h's the end, plus the error term for
+g, at that complicated quantity, times the
+
+47
+00:04:32,967 --> 00:04:40,714
+error for f at h, and all of that is times
+h. Alright. Now, this is almost giving me
+
+48
+00:04:40,726 --> 00:04:47,362
+the derivative of the composite function
+provided that I can control the size of
+
+49
+00:04:47,374 --> 00:04:54,041
+this error term, right? What I need to
+show now is that the limit as h approches
+
+50
+00:04:54,053 --> 00:05:01,284
+0 of this error term is really 0, and the
+error term, right, it's the part before th
+
+51
+00:05:01,284 --> 00:05:11,584
+e times h, and it's g prime of f of x
+times the error term for f at h plus the
+
+52
+00:05:11,596 --> 00:05:20,648
+error term for g times f prime of x, plus
+the error term for g times the error term
+
+53
+00:05:20,660 --> 00:05:26,794
+for f at h. Now, why do I know that, that
+limit is equal to 0? Well, I can do it in
+
+54
+00:05:26,806 --> 00:05:33,548
+pieces, right? It's the limit of the sum,
+so it's the sum of the limits. and I know
+
+55
+00:05:33,560 --> 00:05:40,183
+that this first term is 0 because it's got
+an error f h term in it, and because f is
+
+56
+00:05:40,195 --> 00:05:45,379
+differentiable, the error term goes to 0.
+I likewise know the same for this,
+
+57
+00:05:45,483 --> 00:05:50,100
+alright? This is, it also got an error f
+of h term in it. The most mysterious term
+
+58
+00:05:50,112 --> 00:05:54,553
+is this. But if you think a little bit
+more about it, the error of g at this
+
+59
+00:05:54,565 --> 00:06:00,117
+hyphen thing, which I'm abbreviating this
+whole thing here, also goes to 0 as h goes
+
+60
+00:06:00,129 --> 00:06:05,843
+to 0. And that's another thing to know
+that the limit as h goes to 0 of this
+
+61
+00:06:05,855 --> 00:06:11,569
+quantity is 0 which is then enough to say
+that g of f of x plus h equals this
+
+62
+00:06:11,581 --> 00:06:17,655
+quantity, actually implies that this is
+the derivative. So, here's what we've
+
+63
+00:06:17,667 --> 00:06:22,985
+actually shown. Suppose that f is
+differentiable at a point a and g is
+
+64
+00:06:22,997 --> 00:06:29,190
+differentiable at the point f of a, then
+the composite function, g composed with f,
+
+65
+00:06:29,312 --> 00:06:34,850
+is differentiable at a, with the
+derivative of g of f at the point a, equal
+
+66
+00:06:34,862 --> 00:06:39,550
+to the derivative of g at f of a times the
+derivative of f at a.

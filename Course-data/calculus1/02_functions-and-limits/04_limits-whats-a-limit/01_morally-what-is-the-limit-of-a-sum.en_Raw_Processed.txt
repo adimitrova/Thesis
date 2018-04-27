@@ -1,0 +1,142 @@
+music there subtleties even to 
+things that appear simple addition 
+here, ive got addition problems 
+, 
+, 
+, 
+, 
+youll notice that 
+theyre close to this problem 
+numbers that ive listing 
+hovering around this problem 
+anyway, im going to give 
+problems to people try 
+to 
+music hi, im unknown im math 
+junior undergraduate ohio state 
+music yeah name is jacob turner 
+im a graduate ta here osu 
+music alright 
+people finished arithmetic 
+problems 
+lets record answers 
+so 
+here, 
+
+next one is , ive got , 
+last one 
+numbers in common 
+theyre really close together 
+is that an accident 
+course, an accident, right 
+heres fact 
+near sum two numbers is sum 
+two nearby numbers 
+arithmetic problems 
+random arithmetic problems 
+look numbers im asking to 
+add 
+, 
+numbers really close to 
+
+is really close to 
+is really close to , 
+alright 
+near sum two numbers is sum 
+two nearby numbers, 
+answers nearby well 
+this relate to limits 
+lets take a look 
+heres relates to limits 
+limit f x plus g x x 
+approaches a, is limit f x x 
+approaches a plus limit g x, 
+x approaches a 
+is this related to arithmetic 
+problems 
+well, remember this limit is saying 
+this is saying, i make f x 
+plus g x close to, if im willing to 
+make x sufficiently close to a 
+well, going to close to whatever 
+i make f x close to added to 
+whatever i make g x close to, 
+right 
+kind setup, right 
+near sum two values is sum 
+nearby values 
+limit a sum is sum 
+limits 
+we use this fact to 
+calculations 
+lets see 
+so, heres a limit problem 
+limit x squared plus x x 
+approaches two 
+i really want you to resist 
+temptation to plug in two 
+going to using limit laws to 
+try to evaluate this limit 
+now, this is limit a sum, 
+limit sum is sum limits 
+provided limits exist 
+so, this limit x squared plus x is 
+equal to limit x squared x 
+approaches plus limit x x 
+approaches 
+now, whats limit x squared 
+limit products is also 
+product limits provided 
+limits exist, this is limit a 
+product 
+this is limit x times x 
+thats x squared means, x times 
+x 
+so, i could rewrite this limit 
+x times x, x approaches 
+whats limit x x approaches 
+this is asking, x get close to 
+x gets close to 
+or, precisely, i 
+guarantee that x is close to if im 
+willing to make x sufficiently close to 
+limit x x approaches is , 
+alright 
+so, this limit is two 
+now, this a limit a product, 
+limit a product is product 
+limits provided limits exist 
+so, this limit is limit x x 
+approaches times limit x x 
+approaches to 
+again, limit x x approaches 
+two, right 
+i guarantee that x is close to 
+if x is close to 
+well, two 
+so, this is 
+this limit is thing, 
+
+here, i 
+is , is value 
+limit x squared plus x x approaches 
+takeaway message here is ask 
+country you you 
+country 
+in words, that limit a 
+sum is sum limits provided 
+limits exist 
+rhetorical device right, 
+xy, yx 
+alright, limit a sum is sum 
+limits provided limits exist 
+i hope this is memorable 
+kinds chiastic rules going 
+to used throughout time together 
+in order to evaluate limits 
+soon, going to see that 
+sort pattern holds sums, 
+differences, products 
+almost quotients 
+good luck 
+music 

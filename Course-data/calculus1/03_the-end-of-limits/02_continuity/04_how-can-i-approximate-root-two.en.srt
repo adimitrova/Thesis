@@ -1,0 +1,723 @@
+1
+00:00:00,000 --> 00:00:03,680
+[MUSIC] So, I get a number like the 
+square root of two. 
+
+2
+00:00:03,680 --> 00:00:08,724
+And square root of two is irrational. 
+So, how am I going to figure out what 
+
+3
+00:00:08,724 --> 00:00:12,541
+it's approximately equal to? 
+Well, it turns out that it's 
+
+4
+00:00:12,541 --> 00:00:15,540
+approximately, you know, 1.414 and a bit 
+more. 
+
+5
+00:00:15,540 --> 00:00:19,902
+But how would ever figure that out? 
+How would I know that that's 
+
+6
+00:00:19,902 --> 00:00:23,310
+approximately the value of the square 
+root of two? 
+
+7
+00:00:23,310 --> 00:00:26,966
+Let's use the intermediate value theorem 
+to try to pull it. 
+
+8
+00:00:26,966 --> 00:00:31,862
+I want to use the intermediate value 
+theorem to approximate the square root of 
+
+9
+00:00:31,862 --> 00:00:33,969
+two. 
+To do that, I'm going to use this 
+
+10
+00:00:33,969 --> 00:00:36,820
+function, 
+f(x) = x^2 - 2. 
+
+11
+00:00:36,820 --> 00:00:42,475
+Notice something about this function. 
+This function is equal to zero when x is 
+
+12
+00:00:42,475 --> 00:00:44,722
+the square root of 2. 
+And how is that? 
+
+13
+00:00:44,722 --> 00:00:50,305
+f of the square root of 2 is the squared 
+of two squared, which is two, minus two, 
+
+14
+00:00:50,305 --> 00:00:52,970
+which is zero. 
+So, if I'm trying to approximate the 
+
+15
+00:00:52,970 --> 00:00:56,822
+square root of 2, what I'm going to think 
+about this, is that I'm going to look for 
+
+16
+00:00:56,822 --> 00:01:00,490
+a positive value, that I can plug into 
+this function to make it a square root of 
+
+17
+00:01:00,490 --> 00:01:03,971
+zero. 
+How am I going to find such a value? 
+
+18
+00:01:03,971 --> 00:01:08,570
+You know, the other good thing about this 
+function is that it's continuous. 
+
+19
+00:01:08,570 --> 00:01:12,113
+And then, I can plug in some values, like 
+f(1). 
+
+20
+00:01:12,113 --> 00:01:15,718
+Now, what's f(1)? 
+It's one squared minus two and that's 
+
+21
+00:01:15,718 --> 00:01:18,702
+minus one. 
+And I can plot that on my graph right 
+
+22
+00:01:18,702 --> 00:01:25,201
+here, and it's this point right here. 
+And take a look at, say, f(2). 
+
+23
+00:01:25,201 --> 00:01:29,543
+f(2) would be two squared minus two, 
+which is two. 
+
+24
+00:01:29,543 --> 00:01:33,066
+And I can plot that on my graph, right 
+here. 
+
+25
+00:01:33,066 --> 00:01:36,820
+It's 2, 
+2. 
+
+26
+00:01:36,820 --> 00:01:42,300
+Now, f is a continuous function and at 
+one, it's negative. 
+
+27
+00:01:43,560 --> 00:01:48,072
+And at two, it's positive. 
+So, it's a continuous function. 
+
+28
+00:01:48,072 --> 00:01:50,543
+It's negative at one and it's positive at 
+two. 
+
+29
+00:01:50,543 --> 00:01:54,627
+By the intermediate value theorem, there 
+must be a point in between when the 
+
+30
+00:01:54,627 --> 00:01:58,174
+functions value is equal to zero. 
+And you can see that on the graph. 
+
+31
+00:01:58,174 --> 00:02:01,989
+We're looking for that point. 
+That is the square root of two where this 
+
+32
+00:02:01,989 --> 00:02:04,407
+graph crosses the x-axis, 
+the positive x-axis. 
+
+33
+00:02:04,407 --> 00:02:06,772
+And that's the point that we're looking 
+for, 
+
+34
+00:02:06,772 --> 00:02:09,243
+right? 
+The intermediate value theorem promises 
+
+35
+00:02:09,243 --> 00:02:12,897
+me there's a value in between where the 
+functions value equals zero. 
+
+36
+00:02:12,897 --> 00:02:16,068
+And I can see that there must be such a 
+point on the graph. 
+
+37
+00:02:16,068 --> 00:02:18,970
+And now, I know that that value is 
+between one and two. 
+
+38
+00:02:18,970 --> 00:02:23,061
+And I can do better. 
+I can cut this interval between one and 
+
+39
+00:02:23,061 --> 00:02:34,227
+two in half and I get that f(1.5). 
+Well, 1.5 squared is 2.25 - 2 is 0.25. 
+
+40
+00:02:34,227 --> 00:02:41,312
+[SOUND] Alright. 
+So, that's, say, this point on my graph. 
+
+41
+00:02:41,312 --> 00:02:45,309
+Now, what do I know? 
+I know that the squared of two, which is 
+
+42
+00:02:45,309 --> 00:02:50,186
+where this graph crosses the x-axis, is 
+between one, where the function is 
+
+43
+00:02:50,186 --> 00:02:53,370
+negative and 1.5, where the function is 
+positive. 
+
+44
+00:02:53,370 --> 00:02:55,271
+And I can do better, 
+alright? 
+
+45
+00:02:55,271 --> 00:03:00,596
+I can pick some other point. 
+Let's be brave and pick 1.4. 
+
+46
+00:03:00,596 --> 00:03:05,350
+And if I plug in 1.4, well, 14 squared is 
+196. 
+
+47
+00:03:05,350 --> 00:03:10,009
+So, 1.4 squared is 1.96 - 2, 
+that makes this -0.4, 
+
+48
+00:03:10,009 --> 00:03:13,812
+alright? 
+This is barely below the x-axis. 
+
+49
+00:03:13,812 --> 00:03:20,611
+And I can plot that point here. 
+And now, I know that the square root of 
+
+50
+00:03:20,611 --> 00:03:25,476
+two, the positive input to this function, 
+which is equal to zero, 
+
+51
+00:03:25,476 --> 00:03:31,267
+well, it must be between 1.4 and 1.5. 
+Because the function's value at 1.4 is 
+
+52
+00:03:31,267 --> 00:03:35,360
+negative and the function's value at 1.5 
+is positive. 
+
+53
+00:03:35,360 --> 00:03:38,828
+So, this is not so bad. 
+I mean, we, we could do this with a few 
+
+54
+00:03:38,828 --> 00:03:42,644
+calculations on the blackboard. 
+Let's, let's bring out some sort of 
+
+55
+00:03:42,644 --> 00:03:47,037
+computation device so we can try to get 
+an even better approximation to the 
+
+56
+00:03:47,037 --> 00:03:49,754
+square root of two. 
+So here, I've got a function. 
+
+57
+00:03:49,754 --> 00:03:54,668
+The function is f(x) = x^2 - 2. 
+And you can see that if I plug zero into 
+
+58
+00:03:54,668 --> 00:03:59,120
+the function, I get out -2 because 0^2 - 
+2 is -2. 
+
+59
+00:03:59,120 --> 00:04:04,421
+Now, this is a physical function. 
+I've got this knob here. And as I spin 
+
+60
+00:04:04,421 --> 00:04:07,828
+this knob, the function's input value 
+changes. 
+
+61
+00:04:07,828 --> 00:04:14,417
+So, for example, if I spin it up to 
+f(05.), f(1/2), that's negative 1.75 and 
+
+62
+00:04:14,417 --> 00:04:20,172
+that's right because if I take a half 
+squared, I get a quarter, and a quarter 
+
+63
+00:04:20,172 --> 00:04:24,337
+minus two is -1.75. 
+Now, I could spin the input up to one. 
+
+64
+00:04:24,337 --> 00:04:35,114
+f(1) is -1 = because 1^2 - 2 is -1 or 
+f(1.5), well, 1.5 squared is 2.25, 2.25 - 
+
+65
+00:04:35,114 --> 00:04:41,334
+1 is 0.25. 
+Now, this is positive or I could wheel it 
+
+66
+00:04:41,334 --> 00:04:48,565
+back down a little bit. 
+And I see that when I get to 1.41, the 
+
+67
+00:04:48,565 --> 00:04:53,902
+function's output is negative again. 
+Then, I could increase the function's 
+
+68
+00:04:53,902 --> 00:04:59,293
+input a bit. 
+Oh, now the function's output is positive 
+
+69
+00:04:59,293 --> 00:05:04,073
+again, at f(1.145). 
+And then, I could decrease the value a 
+
+70
+00:05:04,073 --> 00:05:07,545
+little bit. 
+Oh, 
+
+71
+00:05:07,545 --> 00:05:12,081
+now, the function's output value is 
+negative again and that would increase 
+
+72
+00:05:12,081 --> 00:05:15,503
+the output value a little bit. 
+Oh, 
+
+73
+00:05:15,503 --> 00:05:20,320
+now, the function's output is positive 
+and I could decrease the input a bit. 
+
+74
+00:05:23,200 --> 00:05:28,540
+Now, the function's output is negative, 
+could increase the input a little bit. 
+
+75
+00:05:30,660 --> 00:05:35,220
+Now, it's positive, could decrease the 
+input a little bit. 
+
+76
+00:05:35,220 --> 00:05:38,333
+Now, it's negative again. 
+Now, Look at what happened, 
+
+77
+00:05:38,333 --> 00:05:39,703
+right? 
+What's going on? 
+
+78
+00:05:39,703 --> 00:05:45,768
+I'm looking at the function f(x) = x^2 - 
+2 and I'm walking back and forth across 
+
+79
+00:05:45,768 --> 00:05:48,956
+the point where this function is equal to 
+zero. 
+
+80
+00:05:48,956 --> 00:05:54,045
+And as I walk to the left and to the 
+right, the function is positive and the 
+
+81
+00:05:54,045 --> 00:05:58,048
+function is negative. 
+And I'm getting closer and closer to a, 
+
+82
+00:05:58,048 --> 00:06:03,407
+to the actual place where the function is 
+equal to zero and what is 1.41421356? 
+
+83
+00:06:03,407 --> 00:06:06,460
+It's awfully close to the square root of 
+two. 
+
+84
+00:06:06,460 --> 00:06:11,820
+And if you think the square root of two 
+and square it and subtract two, you get 
+
+85
+00:06:11,820 --> 00:06:14,985
+zero. 
+What we just saw with the knob that I was 
+
+86
+00:06:14,985 --> 00:06:20,166
+turning is actually an incredibly general 
+technique for figuring out where a 
+
+87
+00:06:20,166 --> 00:06:24,746
+continuous function crosses the x-axis. 
+And we can do it very efficiently. 
+
+88
+00:06:24,746 --> 00:06:28,773
+Let's take a look at how we might do this 
+a little bit more carefully. 
+
+89
+00:06:28,773 --> 00:06:33,260
+Here, I've drawn a graph with some random 
+looking continuous function and I've 
+
+90
+00:06:33,260 --> 00:06:37,690
+labeled some points along the x-axis. 
+Imagine that we couldn't see this whole 
+
+91
+00:06:37,690 --> 00:06:40,394
+graph. 
+Just imagine that the only thing you can 
+
+92
+00:06:40,394 --> 00:06:44,536
+do is interrogate this function. 
+You can ask this function at some input 
+
+93
+00:06:44,536 --> 00:06:48,784
+point, are you positive or negative? 
+We're trying to figure out where, 
+
+94
+00:06:48,784 --> 00:06:52,710
+approximately, this continuous function 
+crosses the x-axis. 
+
+95
+00:06:52,710 --> 00:06:56,299
+We're looking for a zero of this 
+continuous function. 
+
+96
+00:06:56,299 --> 00:07:00,767
+How might the game begin? 
+I'll let it begin by asking the function, 
+
+97
+00:07:00,767 --> 00:07:05,710
+are you positive or negative at zero? 
+And the function is positive at zero. 
+
+98
+00:07:05,710 --> 00:07:10,144
+And then, maybe I'd ask at sixteen. 
+At sixteen, is this function positive or 
+
+99
+00:07:10,144 --> 00:07:12,901
+negative? 
+And I'd see the function is negative. 
+
+100
+00:07:12,901 --> 00:07:15,538
+The function's value is negative at 
+sixteen. 
+
+101
+00:07:15,538 --> 00:07:20,332
+Because it's a continuous function and 
+the function's value at zero is positive 
+
+102
+00:07:20,332 --> 00:07:25,006
+and the function's value at sixteen is 
+negative, I know that there's a zero in 
+
+103
+00:07:25,006 --> 00:07:27,882
+between. 
+There's some point in between that if I 
+
+104
+00:07:27,882 --> 00:07:30,340
+plug it into the function, I get zero 
+out. 
+
+105
+00:07:30,340 --> 00:07:34,598
+Now, I could cut that interval in half. 
+I could plug in eight and I could ask the 
+
+106
+00:07:34,598 --> 00:07:37,367
+function at f(8), are you positive or 
+negative? 
+
+107
+00:07:37,367 --> 00:07:41,800
+And the function f(8), the value of the 
+function at eight is positive. 
+
+108
+00:07:41,800 --> 00:07:44,769
+Now, look. 
+I know the function's value at eight is 
+
+109
+00:07:44,769 --> 00:07:47,982
+positive, the function's value at sixteen 
+is negative. 
+
+110
+00:07:47,982 --> 00:07:52,588
+So, by the Intermediate Value Theorem, 
+there must be a value in between, right 
+
+111
+00:07:52,588 --> 00:07:55,073
+there, where the function's value is 
+zero. 
+
+112
+00:07:55,073 --> 00:07:58,710
+And now, I could take that interval and 
+cut it in half again. 
+
+113
+00:07:58,710 --> 00:08:03,135
+I could take a look at twelve, which is 
+exactly between eight and sixteen. 
+
+114
+00:08:03,135 --> 00:08:06,711
+And I could ask the function, at 
+f(12),12), are you positive or negative? 
+
+115
+00:08:06,711 --> 00:08:09,774
+And the function's value at twelve is 
+negative. 
+
+116
+00:08:09,774 --> 00:08:14,458
+[SOUND] So now, I know by the 
+intermediate Value Theorem, the function 
+
+117
+00:08:14,458 --> 00:08:19,420
+zero zero of this function must land 
+between eight and twelve and I could cut 
+
+118
+00:08:19,420 --> 00:08:23,586
+that interval in half again. 
+I could look at ten, and I could ask the 
+
+119
+00:08:23,586 --> 00:08:26,526
+function, 
+well, if I plug in ten, are you positive 
+
+120
+00:08:26,526 --> 00:08:29,528
+or negative? 
+And the function's value with ten is 
+
+121
+00:08:29,528 --> 00:08:32,572
+negative. 
+And now, I know that the zero must land 
+
+122
+00:08:32,572 --> 00:08:36,921
+between eight and ten, because the 
+function's value at eight is positive and 
+
+123
+00:08:36,921 --> 00:08:41,328
+the function's value at ten is negative, 
+so there must be a zero in between, a 
+
+124
+00:08:41,328 --> 00:08:44,189
+point where the function's value is equal 
+to zero. 
+
+125
+00:08:44,189 --> 00:08:47,967
+Now, I could cut that interval between 
+eight and ten in half again. 
+
+126
+00:08:47,967 --> 00:08:52,431
+I could look at nine. And I could ask the 
+function, at nine, are you positive or 
+
+127
+00:08:52,431 --> 00:08:56,380
+negative? And if I plug in nine, it looks 
+like the function is positive. 
+
+128
+00:08:56,380 --> 00:09:02,172
+And that means that a value that I can 
+plug into the function to make the output 
+
+129
+00:09:02,172 --> 00:09:06,472
+zero lies between nine and ten. 
+And this is really quite remarkable. 
+
+130
+00:09:06,472 --> 00:09:11,043
+I, I, I could cut the interval between 
+nine and ten and half again and see if it 
+
+131
+00:09:11,043 --> 00:09:15,325
+was between nine and 9.5 or 9.5 and ten. 
+And I could keep doing this every time 
+
+132
+00:09:15,325 --> 00:09:20,012
+I'm getting a little bit more precision 
+as to the exact value of the input that 
+
+133
+00:09:20,012 --> 00:09:24,478
+would make the function zero. 
+The other really neat thing about this is 
+
+134
+00:09:24,478 --> 00:09:29,259
+that I could have just tried all of the 
+values between zero and sixteen. 
+
+135
+00:09:29,259 --> 00:09:34,572
+I could have plugged all seventeen of 
+those numbers into the function to figure 
+
+136
+00:09:34,572 --> 00:09:39,353
+this out. But by doing this clever 
+cutting in half method, this bisection 
+
+137
+00:09:39,353 --> 00:09:42,208
+method, I managed to only ask six 
+questions, 
+
+138
+00:09:42,208 --> 00:09:45,329
+right? 
+I asked the function's value at zero and 
+
+139
+00:09:45,329 --> 00:09:49,977
+sixteen, at eight and twelve, at ten and 
+at nine, and by only asking six 
+
+140
+00:09:49,977 --> 00:09:54,360
+questions, I was able to narrow down a 
+region where a zero resided. 
+
+141
+00:09:54,360 --> 00:10:00,984
+Now, that's pretty quite efficient, much 
+better than asking seventeen questions. 
+
+142
+00:10:00,984 --> 00:10:08,628
+So, this is a very general technique for 
+figuring out where zeroes of continuous 
+
+143
+00:10:08,628 --> 00:10:13,384
+functions lie. 
+And I encourage you to pick your favorite 
+
+144
+00:10:13,384 --> 00:10:19,414
+function and see if you can approximate a 
+root, a zero of that function. 
+
+145
+00:10:19,414 --> 00:10:20,094
+[MUSIC] 

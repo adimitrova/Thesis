@@ -1,0 +1,752 @@
+sound 
+hi so weve heard matt explain to you 
+wonders audio recording sound 
+effects to synchronize 
+collisions generated physics engine 
+weve marco explain physic engine 
+in using that works in ios 
+devices also android desk 
+weve done is weve tried to create 
+a framework app 
+is a basic physics game, d physics 
+game 
+theyre really, really popular 
+handheld devices 
+really popular amongst casual gamers 
+so template gives you bare 
+bones you want to make a game 
+gives you a physics engine 
+gives you a mechanism loading 
+sound effects, a mechanism 
+loading artwork 
+you easily make a game that, you 
+easily make a game 
+components is somewhat like angry 
+birds, angry birds famous 
+physicsbased d platformer mobile 
+devices, i think 
+actually uses boxd, is 
+library weve using 
+yeah 
+so youre using exactly 
+physics engine, almost exactly 
+physics engine that edward burns is using 
+yeah 
+except youre using one that weve 
+hacked together, may may 
+a good thing 
+certain improvements 
+yes, theres improvements 
+made crossplatform 
+relatively easy you to use 
+so weve got this example 
+want to talk you 
+so you see inaudible 
+this is running an ios device 
+so you see basically 
+youve got little hero here 
+is a hes basically tux, hes 
+linux users refer to tux is 
+symbol linux 
+hes a penguin 
+hes normally a really ugly penguin 
+reveal a lot linux 
+hes wearing a little android head 
+hes fighting laugh i see 
+unknown hes fighting little 
+boxes, hes trying to hit boxes 
+inside crate a bunch apples, 
+you cant see thats a 
+unknown thing 
+so runs fine ipad device 
+runs fine iphone 
+so lets a look this desktop 
+version, this is running 
+desktop, basically 
+we hit boxes, 
+so, weve got artwork assets here, 
+weve got a physics engine 
+thats implemented that a lot 
+complicated stuff that im going to talk 
+also going to talk 
+you know whole things put 
+together so lets start art work 
+assets 
+that will take a small amount 
+time 
+youll find in coursera folder in 
+week 
+basis game called 
+angry drawings we thought 
+funny 
+cough time 
+time 
+so yeah, basically, you see in 
+data folder theres a bunch different 
+aspects 
+we a ball currently 
+using, we a crate is 
+mythical apple crate 
+we this, scrapyard 
+backgrounds 
+we tux droid 
+youll notice hes a png file, so 
+hes got transparent background, that 
+means that although hes a rectangle, 
+we draw screen you 
+see here, hes shape a fluffy 
+penguin 
+an android inaudible 
+so we dont nasty 
+rectangular issues, thats is a 
+png 
+background isnt a png, 
+background is a jpeg so a 
+compressed image 
+weve got two backgrounds, weve got this 
+one is nice bleak 
+i dont know if you see that 
+bleak background, you might 
+want to throw in if you feel depressive 
+weve got scrap yard 
+in order to produce kind align 
+way you place objects 
+part scrap yard image 
+grayed made a bit 
+muted in color 
+weve got a colorful kind 
+ground area we would place 
+objects ideally 
+so we havent actually got that many 
+assets 
+we could easily introduce assets 
+thats enough us to a basic 
+level 
+you know, dynamics game 
+you spring back, tucked, you fire 
+boxes every time 
+hits a box, you score a point 
+cough thats a long way a complete 
+game 
+to get you started 
+so in order to understand whats going 
+here let talk you this code 
+im going to ask questions 
+marcos going to fill us in 
+matts going to fill us in 
+bits, 
+fundamentally weve got a a base code 
+works way android 
+ios desktop 
+so, weve got stuff in here thats 
+specific to one platform 
+so here you see weve got a bunch 
+import statements, 
+is importing boxd, is 
+library you talking before, 
+marco, is that right 
+yeah, thats right, so using 
+an external library in order to implement 
+physics engine java android we 
+need to import that live v using that 
+code there 
+code youre running 
+javascript, that code gets ignored 
+instead happens is youll see that 
+tabs we a copy ox 
+td 
+we a copy pf physicsjs, is 
+little wraparound q ox td 
+collision doctor detected 
+objects handles collisions 
+gives you a nice interface to create 
+a simple collision function that gets 
+called whenever something collides 
+so thats entirely running 
+physics that we see 
+inaudible yeah, okay 
+right, so usual, weve got 
+here is a maxim audio context 
+audio players 
+audio players sound 
+effects 
+right, matt 
+thats right 
+so, we one audio player tux 
+so if tux hits anything 
+sound 
+we another sound 
+wall 
+so, if anything hits a wall, we 
+trigger a wall 
+kind a metallic sound 
+tux sounds a kind ee sound, so i 
+thought that appropriate 
+so, you that 
+i myself, 
+good 
+and, finally weve actually got 
+something a bit complicated 
+crates 
+were, playing around 
+with, one audio player for, 
+crates 
+so we never crate collided 
+something 
+we triggered audio file we found 
+a problem if there 
+several crates colliding 
+time, would keep retriggering 
+sound so you would ever hear one 
+sound 
+so i decided to create an array 
+players 
+one crate instead 
+so happens is depending 
+crates collide though 
+sound player per 
+crate 
+ill trigger individually 
+cool 
+then, we also a new object, 
+is called physics 
+type physics 
+so this is main physics handler 
+this is basically 
+using to control well, whats making 
+physics this controls work, is 
+that right 
+this is work 
+yeah, thats right i explained in 
+lecture physics object is 
+inaudible whole physics world 
+contains things like gravity 
+that 
+you need to create 
+youre going to need to create one 
+physics world 
+a bit like you need to create one 
+maxim 
+you create several bodies 
+crosstalk so we call a body called 
+boid, whos droid 
+angry droid, in fact 
+yes, crosstalk droid yep 
+and, inaudible 
+we got a whole, array bodies 
+crates will unknown interacts 
+so an array you could 
+lights crates crate hole 
+we a vector is 
+start point, we use to, set 
+a catapult is 
+so thats start point 
+s, bring back, talks in guy room, is 
+that right 
+yeah, thats right, thats 
+catapult is 
+okay, we a collision 
+detector, called detector, in the, 
+a, detection responds to collisions 
+so thats basically what, a, detects 
+collisions calls 
+collision method 
+that well see later 
+right, we 
+initializers variables 
+crate size, you change if you 
+want a massive crate bolt size 
+we a bunch images 
+we pass physics engine 
+draws 
+well explain that works in a 
+second 
+score is initialized to zero 
+currently dragging is 
+that marker 
+you crosstalk thats i 
+need to keep track youre 
+dragging mouse drawing a 
+line thats sent to catapult elastic 
+so whenever youre actually dragging 
+mouse, youre dragging 
+inaudible will follow you around 
+youre pulling elastic you 
+need to see that elastic 
+thats thats 
+there really terrible jokes 
+in this 
+i think, yeah, well to 
+pretend 
+that theyre funny 
+so you see here that we a size 
+command 
+this is one that using 
+ipad predominantly moment 
+this is 
+we is set this to 
+size an iphone screen 
+would 
+if android we comment 
+
+frames a second 
+we load images 
+scrap yard is background 
+crate is grate 
+tux droid is hero 
+image mode center, you know that 
+means 
+now, we get physics objects we 
+initialize a width a height, 
+basically says bounds 
+world 
+so in this case, 
+bounds actual screen 
+id like to say that ive put 
+comments it, gives 
+another example you might want to 
+a complex initialization 
+you pass in values gravity 
+here width width times height 
+times 
+thats overall world size 
+going to bigger size 
+the, screen 
+so you could this complex 
+initialization sets values 
+time youre going to need 
+that 
+time you this 
+version 
+so if you a world size is 
+greater size screen you 
+screen objects 
+float screen 
+exactly 
+so objects go screen 
+instantly sort stop stimulated 
+world size, if something goes outside 
+world size stops part 
+physics simulation 
+also you custom 
+gravitiy so that you 
+yeah 
+high gravity gravity 
+that goes upwards crosstalk so 
+things suddenly go suddenly go 
+
+yeah 
+i always love that happens 
+well thats actually happens in that 
+kind space version that famous 
+physics game that we already mentioned 
+far much 
+okay 
+so weve got a custom rendering 
+method ill talk a little bit 
+this 
+this is something special this sort 
+way physics engine works 
+you actually, if you dont 
+that, if you comment that line out, 
+will draw 
+sort renderer 
+will draw boxes boxes 
+that 
+is quite useful youre 
+debugging if you dont, havent got 
+graphics in yet 
+youve got graphics in, you 
+want to able to control rendering 
+physics objects 
+rather calling that in draw 
+method, physics engine sets a 
+custom rendering method, is 
+function mycustomrenderer 
+well see later on, unknown 
+drawing unknown 
+that basically draws tucks, 
+draws cranes 
+yeah, thats right 
+right, okay 
+so instead to draw methods, 
+weve got method, is a 
+wearable a physical object 
+okay, great 
+weve got set density, is 
+stupid ive 
+inaudible 
+okay 
+how, is that inaudible 
+laugh basically, ti 
+controls mass object, so 
+density is mass divided area, that 
+will, so the, mass an object, 
+inaudible 
+much resists forces, much 
+force you need to actually push an 
+object 
+is determined big is also 
+density 
+so if you set really high density, 
+quite a high density objects 
+is going to, going to quite 
+massive 
+going to a bit hard to 
+move around 
+if you set a really low density theyre 
+going to floating around 
+if you set density to zero, 
+create objects that dont move 
+thats quite useful 
+so if you want objects that dont, that 
+dont move, set density equals zero, 
+that set density equals one, 
+you create objects that move 
+so you change density you go, 
+you create different objects 
+right, so we create seven 
+new bodies, crates 
+accessed arrays, 
+we create a cough rectangular 
+body 
+a position, is start 
+position 
+a height a width 
+whats this last one 
+so thats, that is the, thats y 
+position 
+x position, y position 
+y position 
+width height 
+im using height 
+oh yeah, x 
+bottom screen, so 
+moving height 
+inaudible bottom 
+screen 
+okay 
+so actually x position, y 
+poition, top left, x position, y 
+position bottom right 
+width height like like a 
+rectangle 
+yeah, so fundamentally, would 
+much better if this done 
+relatively to screen width 
+screen height in in week two 
+example 
+yeah 
+yeah 
+that, well leave that to you 
+so, yeah 
+so this basically sets the, 
+boxes beginning 
+gives an initial position 
+start point, is where, 
+thats tux is connected to 
+inaudible stuff 
+see i inaudible inaudible this 
+is we put 
+we put that in a physics 
+word 
+yeah so im converting to a physics 
+coordinates 
+i said in lecture, weve got a 
+different set coordinates 
+world, simulation you would 
+screen we want start point in 
+physics coordinates 
+so, boid is circle rather a 
+rectangle 
+we created unknown, 
+bodies, we used this rect, 
+android kind angry droid 
+using a circle 
+whys that 
+well, because, well, first to say 
+this is example fact that you 
+use simpler shapes physics 
+you would drawings 
+so inaudible is quite a complex object 
+crates, crated boxes, 
+fine to use a box physics 
+graphics 
+inaudible a fairly complex 
+object 
+you wouldnt want to simulate 
+physics exact shape, 
+that would 
+yeah 
+unknown expensive 
+would take a lot time 
+so you a simplified object, you 
+take physics in that 
+so simplifying down, hes quite 
+rounds, simplifying to a 
+circle point view physics, 
+you see something a bit 
+different from, in actual graphics 
+so we set collision detector 
+is standard 
+we pass to phy, physics word 
+basically gets collision detector 
+we maxim context, 
+weve seen 
+we load in boid sounds, is 
+sounds tux hitting something 
+wall sound 
+we set looping, stuff 
+youve seen 
+we this loop 
+loads create sounds in 
+thats big array full sounds, 
+right 
+let you describe array 
+thats correct 
+yes 
+okay 
+moving to draw method 
+so whoo, we start game, 
+first level game, that quite 
+intense, 
+a second, great thing 
+using a physics engine is you set 
+up, will run 
+yeah, that is true 
+actually biggest thing is 
+you set world, 
+everything you 
+yep, that is good 
+so you dont actually to process 
+collisions, you dont 
+actually to know velocity 
+objects compute 
+
+physics engine you 
+this is people 
+developing games 
+we learn search engine in order 
+to calculations 
+people insist watching learn 
+search engines scratch 
+cough i think thats actually a good 
+idea if you like that sort 
+thing, if you dont you 
+probably inaudible 
+so, draw method is surprisingly 
+small, in this case, mark 
+already mentioned 
+physics engine is drawing 
+foreground objects that 
+moving around 
+this is knows everything 
+is calculating velocity 
+in words calculating x 
+y positions 
+we still need to image 
+tip, is backdrop, i 
+already explained 
+we also to score 
+which, moment, theres 
+objective 
+one thing you might an objective 
+is say, you know what, lets 
+session last seconds 
+get highest score you in 
+seconds 
+a second, in words, 
+session lasts, game level lasts 
+seconds 
+next level lasts seconds 
+you to get highest 
+score that you 
+this provides an objective 
+to you to kind think an 
+objective 
+whole point designing a game is to 
+something people want to 
+giving you a framework 
+so itll great to see you come 
+
+right 
+now, cough, a few standard 
+methods mousedragged, basically 
+sets position tucks 
+is basically boid object 
+weve got screentoworld 
+coordinates 
+we parse in mousex mousey 
+values, add a twodimensional vector to 
+physics world, that sets 
+position so that we click 
+screen we make sure that thats 
+unknown is going to 
+we demo that 
+thats i click 
+screen turks appears less i 
+leave him, i fly around 
+okay 
+mouse release theres a bit stuff 
+going 
+dragging is set to false 
+so this means that longer fixing 
+position turks we this 
+thing called an impulse thats 
+probably best if marco explains this 
+so basically, you release 
+catapults touch will start flying off, 
+reason is that force is instantly 
+applied to touch 
+an impulse i talked this in 
+lecture 
+so is calculating 
+appropriate impulse direction 
+magnitude impulse based 
+youre pulling back 
+elastic catapult 
+ive gone details this 
+calculation in lecture, using 
+vector subtraction multiplying 
+impulse a certain constant to get 
+right value, matthew 
+saying a bit audio 
+sometimes you need to play around to 
+get right number, to get right 
+feel we apply impulse 
+to tux physics 
+handle moves 
+so that constant in this case is 
+then, yeah, we apply impulse 
+to, to hes given 
+impulse if youve smacked in 
+face a big stick 
+yeah, i think penguins, you know, 
+theyre probably used to that 
+okay, so last thing we want to talk 
+in terms this demo app is 
+custom rendered 
+is ill substitute draw 
+function drawing 
+physics end so first thing to 
+note here is that we set stoke to 
+we get start point use 
+draw to a line thats you see 
+in example this line is 
+pole that tux is suspended 
+that we use to fire 
+thats kind starting point in 
+world 
+boing 
+okay, following that we to 
+draw stuff 
+so marco, you want to talk us 
+that 
+yeah, sure 
+to make a note this is, this is 
+i described in lecture 
+getting position 
+angle physics objects 
+in this case void we to convert 
+world coordinates to screen coordinates 
+we we to here 
+we use whatever processing 
+drawing code we like using 
+coordinates 
+theyre values theyre numbers 
+we whatever we like 
+im a fairly obvious thing, im 
+translating, imitating two 
+values drawing an image 
+so time you going to 
+want to get positions angle 
+translate position take angle 
+draw whatever you want, in this 
+case going to draw images we 
+got code crate is exactly 
+weve got a four loop 
+crates pretty 
+much thing drawing a 
+different image 
+an array 
+crates 
+yeah 
+so one a time 
+okay so final, final thing in 
+addition to final thing we 
+going to talk is 
+collisions work 
+now, main method 
+collisions is, in collision 
+detector dot js 
+so we to use that collision 
+detector, pass in positions 
+will work a collision 
+happened will let us know 
+so main method that, well this is 
+basically here boid collision 
+so collision dysfunction is caused 
+collision detector, youve got, 
+i said in lecture, two bodies that 
+colliding in impulse 
+so you use that, example, im 
+checking here if impulse is 
+one, so a proper impulse 
+im increasing score, so scores 
+going 
+thats we in scoring 
+going to a few things so we 
+can, we can, we got bodies we 
+check particular body is 
+we need to make sure that theres two 
+things 
+theres, we need ju, the, 
+actual tux thats colliding so 
+checking if one bodies, b b, 
+is, is void 
+thing here is 
+checking mass 
+objects 
+we that 
+you might notice that cut 
+bouncing screen thats 
+theyre physics objects edges 
+screen that automically created 
+mass means dont 
+move theyre static objects 
+we dont want to get unknown 
+we bounce walls so weer 
+checking that objects 
+mass means theyre one 
+static objects, theyre one 
+crates 
+so we that test similarly 
+unknown whether you talk a 
+bunch code is easiest to crate 
+audio 
+to create audio to respond to 
+collisions 
+that stuffs here, 
+
+thats right 
+okay, great 
+so fundamentally thats basic set 
+example 
+shows you to create a 
+physical world, to put objects in 
+that world, to interact 
+them, interact 
+other, also shows you to draw 
+different artwork that you need, best 
+way preparing artwork, 
+to you to put in example decent 
+artwork, game play, mechanics that sort 
+thing, kinds scoring 
+mechanisms different kind ideas 
+so you use a starting point, 
+you develop try to build 
+something thats a much developed 
+project 
+and, thats 
+fun 
+music 

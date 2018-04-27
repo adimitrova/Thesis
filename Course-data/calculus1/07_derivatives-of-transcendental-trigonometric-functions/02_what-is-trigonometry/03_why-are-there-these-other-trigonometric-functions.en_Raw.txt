@@ -1,0 +1,126 @@
+[music] so we know about sine and cosine
+but what about all those other funny trig
+functions?
+so maybe we already know about sine and
+cosine, we saw tangent already too.
+but tangent could be defined in terms of
+sine and cosine as sine theta over cosine
+theta.
+cosecant is just defined to be 1 over sine
+theta.
+secant is 1 over cosine theta and
+cotangent is 1 over tangent theta.
+what's so special about those 6 functions?
+i mean why we'd have a function called
+cosecant if its just 1 over sine theta.
+why don't we always just try 1 over sine
+theta.
+for that matter why even have a function
+called tangent if you can compute tangent
+in terms of sines and cosines.
+it doesn't seeming like we need all of
+these functions.
+to make matters worse, there's even other
+functions that practically no one knows
+about anymore.
+in addition to these, there's the
+haversine function which is just defined
+to be sine squared of the angle over 2.
+i mean you really don't need haversine
+once you've got sine.
+considering that most of these functions
+can be defined in terms of other ones, the
+reason for studying, you know, these 6
+trig functions isn't really mathematical.
+you don't really need cosecant if you've
+got sine.
+the reason for emphasizing these 6 trig
+functions is cultural.
+these are the functions that people are
+likely to see when they open some
+technical manual and knowing about these
+functions can sometimes give you the right
+intuition for how to attack a problem.
+because sine and cosine are the legs of a
+right triangle with angle theta and
+hypotenuse length 1 just by the
+pythagorean theorem we get this that sine
+squared plus cosine squared is equal to 1.
+now if you believe this identity and you
+could divide this identity by cosine
+squared you get sine squared over cosine
+squared plus cosine squared over cosine
+squared is 1 over cosine squared.
+now because we've got all these other
+functions i could rewrite sine squared
+over cosine squared as tangent squared,
+cosine over cosine is 1, and 1 over cosine
+squared is secant squared.
+and this is maybe an example of how
+knowing about the other functions can be
+helpful.
+its a little bit easier to internalize
+this identity, i mean if you walk around
+and you happen to notice that secant
+squared you can think always going to
+place over tangent squared plus 1.
+then say trying to internalize this middle
+identity.
+this also a lovely geometric picture that
+kind a sells you on an idea that these 6
+trig functions have some special role.
+for example, here is a unit circle and
+i've drawn an angle of measure theta and
+we know what some of the lengths in this
+picture are.
+this length across the bottom here is
+cosine theta.
+and this length here, the height of that
+right triangle is sine theta.
+but it turns out that the other 4 trig
+functions are also encoded in the lengths
+of other relevant lines in this diagram.
+for instance this line here has length
+tangent theta and this line between the
+point and the y axis has length cotangent
+theta.
+and if you measure on the bottom here the
+length from the origin to where this
+tangent line crosses that has length
+secant theta.
+and, if we measure over here, from the
+origin to where that tangent line crosses
+the y axis, that segment has length
+cosecant theta.
+so when you put all these functions down
+we've got cosine and sine but we've also
+got very visibly cotangent, tangent,
+secant, and cosecant.
+and the secant is measuring you know
+something that's crossing the circle and
+the tangent is really measuring the length
+of part of this tangent line.
+and if we take this picture and we go
+fader you won't get idea of how all the
+trig functions vary together.
+for instance by, by looking at this
+picture with theta moving you can get a
+sense of how these functions are moving
+together.
+for instance, tangent and secant are
+moving together right when tangent is
+really big, secant is really big.
+and conversely when cotangent is really
+small, cosecant is you know small, close
+to 1.
+they can use some idea as to why tangent
+is called tangent.
+why is sine called sine?
+so sine comes from this latin word sinus,
+you know, like the thing in your nose.
+it's like a opening, and if like that as
+an [inaudible] device you can remember
+that sine is measuring this side of the
+right triangle because you can imagine the
+right triangle sort of opens up in that
+side.

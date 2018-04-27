@@ -1,0 +1,159 @@
+sound welcome back 
+in this video lecture, we will look 
+technologies that allow you to 
+interact different web services 
+benefit web connectivity 
+is that you utilize 
+interact different web services 
+services developed 
+perfected vendors 
+example, if you want to build user 
+authentication product, 
+you use authy 
+authy is a web service that 
+provides two factor authentication 
+in another video, we discussed 
+a temperature sensor a web server 
+if you want that temperature sensor 
+to send you a tweet every alert, 
+you call twitters api 
+application programming interface service 
+you running onboard storage 
+call amazon web services api 
+load data to 
+amazons data centers 
+this is possible we 
+standard ways to connect 
+to web services 
+in this lesson, 
+we will look two major classes 
+technologies, rest soap 
+we get that, we will look 
+data formats that use 
+lets start json 
+json is a textbased data 
+serialization format 
+stands javascript object notation 
+json is made two structures, 
+objects arrays 
+objects start end curly brackets 
+arrays start end square brackets 
+data is in name value pairs 
+one set 
+pair data is separated 
+another a comma 
+this is pretty much 
+basics json 
+screen you see 
+an example json object plants 
+data is in name value pairs, pairs 
+separated commas 
+we also an array 
+three objects in 
+in json, everything nested 
+you see here that we an array 
+objects that is a part 
+a larger object, plants 
+if we want to represent that 
+data in xml, will look like this 
+xml stands extensible markup language 
+is another data encoding format 
+like json is also textbased 
+chat protocol xmpp uses xml based 
+objects to send receive messages 
+example that you see 
+screen is pretty simple 
+xml is relatively complex 
+old microsoft office word files 
+an extension doc 
+doc 
+newer ones docx docx 
+that last x in docx stands xml 
+this is whole structure 
+newer word documents is formatted in xml 
+xml is an open standard, 
+applications besides 
+microsoft office also accurately 
+read format docx files 
+back to web services 
+we describe two 
+data exchange formats 
+we will describe two 
+common specifications 
+implementing a web service 
+rest stands representation 
+state transfer 
+lays ground rules 
+to design web services 
+rest is a protocol 
+a style designing services 
+is also protocol independent, 
+is generally paired http 
+salient features rest 
+shown screen 
+we will discuss in much 
+detail in a later video 
+this style designing web 
+services easily translated 
+embedded systems 
+in short, every service, 
+we a url 
+we interact that service via http 
+methods 
+basic principles rest are, 
+keep design limited to 
+http methods like get put 
+request independent 
+previous next one 
+service you 
+a separate uri 
+data exchange format json, 
+xml 
+generally, is json 
+soap stands 
+simple object access protocol 
+is another method 
+interacting web services 
+relies xml like rest, 
+is protocol platform independent 
+protocol three 
+main characteristics 
+extensibility, meaning 
+supports expansion 
+there several extensions available 
+that you use that soap 
+neutrality in this case means 
+is protocol neutral 
+independence platform 
+programming language 
+developers use 
+programming model see fit, 
+whether is objectoriented 
+agentoriented dataflowbased 
+so, one you use 
+sometimes you dont really a choice 
+if you interacting a web service, 
+you will to use technology 
+that used 
+if youre building youre web service, 
+you a choice 
+basic difference is between 
+two candidates outlined here 
+rest is lighter soap in 
+terms network resources 
+rest is power efficient 
+soap in small embedded systems 
+is also simpler 
+hand, 
+soap offers better security 
+many extensions 
+is inherently protocol independent 
+also rest is protocol independent in 
+principle, is generally bound to http 
+in this lesson, 
+we looked technologies 
+data formats that allow us to 
+interact web services 
+in next video lecture, we will learn 
+restful web services in detail 
+sound 

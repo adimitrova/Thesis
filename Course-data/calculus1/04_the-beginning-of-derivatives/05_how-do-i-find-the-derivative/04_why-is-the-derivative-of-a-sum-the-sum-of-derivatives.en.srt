@@ -1,0 +1,283 @@
+1
+00:00:00,012 --> 00:00:08,012
+[MUSIC]. 
+Looks like I've got two functions f(x) 
+
+2
+00:00:08,012 --> 00:00:14,984
+and g(x), and they're both differentiable 
+at a. 
+
+3
+00:00:14,984 --> 00:00:22,017
+Then I can define a new function. 
+h(x) which is the sum of f and g. 
+
+4
+00:00:22,017 --> 00:00:28,165
+Alright it's a new function, to compute 
+h(x) I just plug x into f and I plug x 
+
+5
+00:00:28,165 --> 00:00:32,210
+into g and I add together whatever f and 
+g give me. 
+
+6
+00:00:32,210 --> 00:00:37,102
+Alright so that's a new function that I 
+build from f and g. 
+
+7
+00:00:37,102 --> 00:00:42,946
+Now here's the conclusion, right? Then 
+each prime of a is just the sum of the 
+
+8
+00:00:42,946 --> 00:00:46,664
+derivative of f at a and the derivative 
+of g at a. 
+
+9
+00:00:46,664 --> 00:00:52,620
+And to prove something like this, this is 
+a really a theorem, right? This is a 
+
+10
+00:00:52,620 --> 00:00:57,851
+theorem that tells me how to compute. 
+The derivative of the sum of functions. 
+
+11
+00:00:57,851 --> 00:01:02,270
+And how do I prove something like this? 
+Why I just go back to the definition of 
+
+12
+00:01:02,270 --> 00:01:03,567
+derivative. 
+Alright. 
+
+13
+00:01:03,567 --> 00:01:08,820
+The derivative of this function h at the 
+point a is the limit as x goes to a of, 
+
+14
+00:01:08,820 --> 00:01:13,272
+h(x)-h(a)/x-a. 
+Now I know what h(x) is. 
+
+15
+00:01:13,272 --> 00:01:17,674
+h(x) is f(x) + g(x). 
+So I can plug that in. 
+
+16
+00:01:17,674 --> 00:01:22,415
+Alright, so this is the limit as x goes 
+to a of f(x)+g(x). 
+
+17
+00:01:23,673 --> 00:01:29,792
+And I also know what h(a) is, right? I 
+just plug in a for x. 
+
+18
+00:01:29,792 --> 00:01:36,512
+And I get that h(a) is f(a)+g(a). 
+And this is all divided by the same 
+
+19
+00:01:36,512 --> 00:01:39,220
+denominator, x-a. 
+Great. 
+
+20
+00:01:39,220 --> 00:01:47,194
+I want to calculate that limit, right?. 
+Well, I can rearrange the numerator, so 
+
+21
+00:01:47,194 --> 00:01:53,282
+the numerator is the same as what? This 
+is f(x) + g(x) - f(a). 
+
+22
+00:01:53,282 --> 00:02:02,289
+Minus g of a, but rearrange the numerator 
+and get f of x minus f of a plus g of a x 
+
+23
+00:02:02,289 --> 00:02:07,374
+minus g of a and this is divided by x 
+minus a. 
+
+24
+00:02:07,374 --> 00:02:16,722
+Now what do I do? Well I can actually 
+split this up into 2 separate fractions, 
+
+25
+00:02:16,722 --> 00:02:21,224
+alright? This is f(x)-f(a)/x-a, 
+g(x)-g(a)/x-a. 
+
+26
+00:02:23,344 --> 00:02:26,186
+So this is the limit of 
+f(x)-f(a)/x-a/x-a+g(x)-g(a)/x-a). 
+
+27
+00:02:30,262 --> 00:02:34,117
+That's a As a limit is x goes to a How do 
+I calculate that limit. 
+
+28
+00:02:34,117 --> 00:02:36,902
+Okay. 
+I'm just applying these, these rules for 
+
+29
+00:02:36,902 --> 00:02:41,697
+calculating limits and one for the rules 
+of calculating limits is the limit of the 
+
+30
+00:02:41,697 --> 00:02:45,012
+sum is the sum of the limits provided the 
+limits exist. 
+
+31
+00:02:45,012 --> 00:02:49,932
+What are these 2 limits? Well, this is 
+really the derivative of f(a) and this is 
+
+32
+00:02:49,932 --> 00:02:53,893
+really the derivative of g(a). 
+And I assume that f and g are both 
+
+33
+00:02:53,893 --> 00:02:57,600
+differentiable at a. 
+So, those limits do, do exist and I can 
+
+34
+00:02:57,600 --> 00:03:01,442
+apply the limit of the sum and the sum of 
+the limits. 
+
+35
+00:03:01,442 --> 00:03:11,795
+So this = the limit as x goes to a of 
+f(x)-f(a)/(x-a) + the limit as x goes to 
+
+36
+00:03:11,795 --> 00:03:20,222
+a of g(x)-g(a)/x-a, because I know those 
+2 limits exist. 
+
+37
+00:03:20,222 --> 00:03:25,069
+And I even know what they're equal to, 
+right? I have a name for those 2 limits. 
+
+38
+00:03:25,069 --> 00:03:29,960
+This 1st limit is the derivative of f at 
+a, this 2nd limit is the derivative of g 
+
+39
+00:03:29,960 --> 00:03:32,681
+at a. 
+So this is f prime of a plus g prime of a 
+
+40
+00:03:32,681 --> 00:03:37,378
+and that's exactly what I wanted to 
+show,right? I wrote down the definition 
+
+41
+00:03:37,378 --> 00:03:42,313
+of derivative of h at the point a, there 
+is is and I applied properties of limits 
+
+42
+00:03:42,313 --> 00:03:45,172
+until I conclude that that limit is 
+equal. 
+
+43
+00:03:45,172 --> 00:03:49,153
+To the derivative of f(a) + the 
+derivative of g(a), alright? And this is 
+
+44
+00:03:49,153 --> 00:03:52,108
+what tells me how to calculate the 
+derivative of a sum. 
+
+45
+00:03:52,108 --> 00:03:55,778
+Alright, if I've got a sum of 2 
+functions, this is telling me that as 
+
+46
+00:03:55,778 --> 00:03:59,811
+long as those 2 functions are both 
+differentiable at a, I can calculate the 
+
+47
+00:03:59,811 --> 00:04:03,382
+derivative by just adding together the 
+derivatives of f and g. 
+
+48
+00:04:03,382 --> 00:04:07,469
+And hopefully this, this should seem 
+reasonable, right? Because what is the 
+
+49
+00:04:07,469 --> 00:04:11,390
+derivative measuring, right, it's 
+measuring how much change in the input 
+
+50
+00:04:11,390 --> 00:04:14,698
+changes the output. 
+Right, I want to know how much wiggling 
+
+51
+00:04:14,698 --> 00:04:18,777
+the input a, would effect the output of 
+H, and that's what this derivative is 
+
+52
+00:04:18,777 --> 00:04:21,571
+measuring. 
+Right? Well, that's really going to be, 
+
+53
+00:04:21,571 --> 00:04:25,368
+you know, somehow connected to how 
+wiggling the input to f changes f and 
+
+54
+00:04:25,368 --> 00:04:29,062
+wiggling the input to g changes g and I'm 
+just adding them together. 
+
+55
+00:04:29,062 --> 00:04:39,151
+So I think this makes sense that, then 
+the, how the output changes which would 
+
+56
+00:04:39,151 --> 00:04:46,070
+be the sum of how these 2 component 
+functions change. 
+
+57
+00:04:46,070 --> 00:04:47,140
+[MUSIC]. 

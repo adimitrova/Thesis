@@ -1,0 +1,259 @@
+last topic this 
+week is a glider design 
+so work we here, we introduce here 
+is a teromis, an interactive design 
+optimization free form, 
+free flight model airplanes 
+you see, this is a latest work 
+so motivation question we here 
+is to design a paper airplane 
+glider so you could fly airplane, 
+we hope flies well 
+however, is easy 
+inexperienced people to design 
+a glider that flies well 
+you know, there many designs, 
+this is result many, 
+many experimentation 
+easy to design 
+arbitrary shaped airplane 
+so thats a problem we want to address 
+again, we ran concurrent simulation, 
+ran simulation to 
+analyze well, 
+we also provide automatic optimization 
+so given current designs this model 
+automatic adjusts shape so 
+that flies well 
+so, this is similar to 
+previous system 
+behind scene is interesting 
+here, we use a data driven approach 
+simulation 
+so accurate analytic simulation 
+airflow is difficult 
+so here, we use many, many measured data 
+so this is airplanes, 
+we actually fabricated, created, 
+flew together measured 
+we get this loads data 
+we infer many parameters 
+we use 
+physical analysis 
+so thats story 
+so let show you we 
+yeah, so this is a typical 
+example flying airplane 
+so if you design arbitrary wing shape, 
+you know, drops, doesnt fly 
+so goal is to able 
+to design arbitrary shape, 
+this kind strange shape 
+airplane that flies 
+this is one example we 
+created flies well 
+so, approach is like this 
+so first is offline precomputation 
+so we took many, 
+many airplane trajectories analyze 
+so we flew gliders, check 
+trajectory, flight trajectory 
+we compare simulation result, 
+adjust parameters so 
+that simulation result fits 
+well actual flight 
+this is basis 
+physical analysis 
+given this data, you generate, 
+you design airplane, 
+system predict 
+soft flight trajectory 
+the, in addition to showing 
+predicting flight trajectory set 
+system runs automatic 
+optimization to make flyable 
+so user pause 
+edit, edit simulation inaudible 
+you get desired shape 
+so this is user interface 
+so similarly, to previous system 
+we use edit to shape this kind 
+two dimensional view 
+so youre moving along vertices, 
+system continuously 
+change d shape 
+in addition to that, here, 
+bottom half is simulation result 
+so this predicts happens 
+in this case, airplane goes upwards, 
+inaudible goes 
+user edits a shape, system 
+continuously runs physical simulation, 
+tells whether airplane flies well 
+
+reason, we multiple 
+trajectories is that, you know, 
+users hand throw always changes 
+sometimes goes higher 
+sometimes goes lower 
+so system automatically predict, 
+consider multiple possibilities, 
+show general tendencies 
+so thats a inaudible 
+let describe 
+optimization part 
+so you see, 
+there is a magic make fly button 
+so this is you press this button, 
+system apprised automatic optimization, 
+to make this airplane fly 
+so here, in this design, doesnt 
+fly well, doesnt pass this line 
+goes 
+doesnt fly well 
+soon you press this button, 
+system optimizer, say carefully, 
+kind subtle 
+i not, nothing 
+video, shows system 
+automatically adjust wing position 
+so, lets see 
+user press this button, 
+system adjust wing position 
+yeah, here 
+so, front wing moved sideways, 
+so this is user, 
+system automatically adjusts 
+shape so that flies well 
+so in this clip, 
+user edits front wing 
+system automatically adjusts 
+position orientation rear wing 
+so you see, user, 
+moves around front wing 
+system automatically adjust, 
+rear wing 
+please note that simulation results 
+inaudible drastically changes 
+small change in 
+reorientation position 
+is difficult to 
+user, people to it, 
+system 
+sound so important part is 
+this kind interactive exploration 
+you test many different things 
+system continuously provide feedback 
+design, 
+you send data to laser cutter, 
+you get a shape 
+results 
+so, heres results 
+so important thing is 
+really flies well 
+you know, kind amazing us 
+so this a launcher 
+starting 
+you see, yeah, flies way back, 
+so amazing 
+yeah, we here 
+this dragon airplane, this also flies 
+you also use materials 
+this one 
+this one 
+okay 
+thats video 
+so, heres a summary 
+algorithm that we use 
+so, standard fluid simulation 
+aerodynamics is slow 
+not, a real time 
+so we use a traditional wing theory 
+wing theory is simplified 
+model airplane 
+so computes lift force occurring 
+wing, computing lift 
+force gravity others, 
+you predict flight trajectory 
+so thats theory we use 
+so wing theory looks like this 
+so given given a, a wing, 
+shape, force 
+we compute, force up, close wing 
+so lift force, f, 
+drag force, fd, 
+rotation force in tau, tau 
+a function velocity 
+area, you know 
+faster faster forces 
+gets bigger, area is bigger, 
+forces gets bigger 
+question is parameters 
+you know, constant 
+defines behavior wing 
+depends angle attack 
+also depends shape wing 
+parameters are, 
+is we want to know 
+so to estimate this parameter, we take 
+data driven parameterization approach 
+so we fly many airplanes 
+measure parameters 
+we try to fit parameters 
+so, you know, this cd, cl, cm, 
+depending angle attack 
+we plot in a measure, 
+we plot measured data in space 
+we get best approximation 
+also we then, 
+we estimate force caused 
+wing element in this way 
+we aggregate forces caused 
+small wing elements 
+we computes approximate total 
+force caused total entire wing 
+so to learn original paper is 
+published interactive design 
+optimization freeformed 
+freeflight model airplanes in 
+flight simulation is also 
+discussed in graphics community 
+one example is datadriven 
+controllable flapping flight 
+so simulates flapping 
+flight birds 
+datadriven simulation 
+is also a popular topic 
+so you, is opens a case slow 
+to land, stand a simulation 
+so possible approach is to allow many, 
+many simulations beforehand flying 
+in a long time assemble, 
+measure previous simulation 
+result to get a realistic result 
+one possible reading is 
+datadriven simulation methods in 
+computer graphics is published 
+a a siggraph course material 
+so this is a summary this week 
+so we presented integration 
+real time physics modeling 
+so user continuously aid to save, 
+system continuously provides 
+feedback, running physical simulation 
+systems, provides 
+inaudible simulation results 
+but, also system provides continuous 
+guidance to design varied shapes 
+so we introduce a fast, 
+simple cantilever design, 
+also design, discuss musical 
+instruments model analysis 
+also also garment design, 
+using linear approximation 
+furniture design active guidance 
+using joint force analysis, 
+finally glider design using wing theory 
+data driven parameter feeding 
+so, thats end this video 
+thank you 

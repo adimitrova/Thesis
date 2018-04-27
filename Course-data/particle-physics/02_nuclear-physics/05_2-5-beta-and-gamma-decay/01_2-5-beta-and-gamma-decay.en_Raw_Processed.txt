@@ -1,0 +1,206 @@
+music 
+second module, we deal 
+nuclear physics applications 
+in this fifth video, 
+we go details 
+two types radioactivity, 
+that is to say beta gamma decays 
+goals you to able to 
+characterize beta decays nuclei 
+properties 
+to relate properties to 
+underlying weak interactions, 
+to able to characterize 
+gamma decays excited nuclei 
+a neutronrich nucleus, ie one that 
+nz larger stability 
+requires transform a 
+stable nucleus emitting an electron 
+transforming one 
+neutrons a proton 
+in is called a decay 
+to conserve lepton number, 
+this emission must accompanied 
+emission an antineutrino 
+in contrary case, protonrich nuclei, 
+many protons to stable, 
+reach stability decay, 
+accompanied neutrino emission 
+since proton is 
+lighter neutron, 
+this latter process happen 
+a bound proton q value is turned 
+positive a gain in binding energy 
+a nucleus a surplus 
+protons also capture 
+an electron internal 
+kshell atomic cloud 
+electrons atom will 
+cascade to fill gap 
+since a lepton disappears in capture 
+a neutrino must emitted 
+to conserve lepton number 
+decays isobar, 
+a 
+z 
+since beta decays 
+three body processes, 
+spectrum emitted electron 
+positron is a continuous one 
+shape is 
+sketched in this graph 
+neutrino interacts 
+weakly matter 
+will normally escape undetected 
+this is also reason neutrino 
+taken so long to discovered 
+neutrinos antineutrinos fermions 
+zero electric charge 
+a small mass 
+maximum electron energy is obtained 
+neutrino is produced almost 
+rest 
+maximum value approaches q 
+value, like would in a two body decay 
+one measures this energy, 
+one establish an upper limit 
+neutrino mass energy conservation 
+video a introduces 
+exponential decay law, 
+describes time evolution 
+this decay processes 
+quark level, beta decay proceeds 
+via exchange a w boson, 
+is gauge boson mediating weak 
+force like is shown in this feynman graph 
+large mass this 
+boson is responsible 
+short range weak force 
+weakness low energies 
+neutrinos peculiar particles 
+generations mix 
+mass is lightest 
+among particles 
+probably in order 
+milli electron volt 
+is even clear if neutrinos 
+antineutrinos really 
+different particles 
+charge is same, 
+magnetic dipole moment, 
+contrary to neutral particles, 
+like neutron example 
+definitive answer will come 
+experiments searching 
+is called double beta decay 
+deal nuclei 
+two beta decays 
+happen simultaneously to 
+reach value stability 
+if neutrino 
+antineutrino really particle, 
+one arrange 
+lepton number one, 
+that there neutrinos 
+emitted in process 
+if identical, 
+two neutrinos must always emitted 
+in process double beta decay 
+recent review 
+experimental situation, 
+please see article rodejohann 
+cited bottom this slide 
+weak interactions 
+two peculiarities 
+first one is that lefthanded 
+part quark 
+lepton fields participate 
+in interaction 
+we mean that is that matter 
+particles will spin antiparallel 
+to direction motion, 
+interact via weak force 
+opposite is true 
+matter antiparticles 
+righthanded antiparticles 
+spin parallel to direction 
+motion interact 
+neutrinos type quarks, 
+that is second peculiarity, 
+participate in weakened directions, 
+mixtures corresponding real particles 
+one denotes neutrino 
+mixtures nue, nu, 
+nutau according to generation 
+mixtures real particles nul, 
+num nuh we 
+introduced in first module 
+quark mixtures denoted d, 
+b 
+three generations, mixtures 
+real particles d, s, b 
+we will come back to astonishing 
+properties in module 
+we discuss weak interactions 
+in detail 
+i mean participating in weak 
+interactions is that left handed 
+mixtures able to emit 
+absorb weak bosons 
+i mean real particles quantum 
+eigenstates mass operator 
+states propagate 
+a specific velocity 
+energymomentum is known 
+this is case nue 
+d example 
+is nul d quark 
+a mass is a constant motion 
+let us come to last type 
+radioactivity, gamma decays 
+often follow another previous 
+decay leaves daughter 
+nucleus in an excited state 
+fall back ground 
+state emitting a photon 
+a quantized energy 
+energy photon will 
+correspond to energy difference 
+between excited ground state 
+study emission 
+absorption nuclear gamma rays thus 
+constitutes nuclear spectroscopy in 
+an analogy to atomic spectroscopy 
+one remarkable difference, 
+one cannot neglect recoil 
+daughter nucleus in gamma decays 
+massive system, less 
+important will recoil energy 
+one freeze nucleus a 
+crystal structure a much larger 
+mass allows recoil to 
+reduce to almost nothing 
+this is called mssbauer effect, 
+allows to reduce line width 
+a gamma decays to order ev, 
+in turn allows to measure 
+relative line separation 
+to an accuracy to order 
+
+one thus study nuclear energy 
+levels great precision 
+this also used to measure 
+composition materials 
+we show here an example gamma 
+spectrum natural uranium mineral 
+allows to identify 
+quantify presence 
+radionuclides like ra, pb 
+bi coming 
+decay change u, 
+is a gamma emitter 
+in next video, we invited to 
+visit laboratory nuclear 
+physics course university 
+geneva to see experiments radioactivity 
+music 

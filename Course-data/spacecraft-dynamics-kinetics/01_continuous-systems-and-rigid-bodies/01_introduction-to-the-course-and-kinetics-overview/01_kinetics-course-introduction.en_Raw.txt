@@ -1,0 +1,35 @@
+hi, and welcome to this course
+sequence on spacecraft kinetics.
+my name is hanspeter schaub and
+i'm a professor here at
+the university of colorado boulder.
+the sequence will have four components.
+the first component we're want to
+talk about continued mechanics and
+also rigid body dynamics.
+how we developed equations of
+motion from basic principles?
+the next component is going to look
+at a rigid body of a space craft and
+study how it's being stabilized.
+we are looking at torque free motions and
+equilibrium exists and
+which ones are stable.
+the third component talks
+about gravity gradients.
+this is a common method of stabilizing
+the space craft without having
+active feedback.
+and we'll be looking at the derivation
+of this gravity gradient torque, but
+also the force, its stability,
+and equilibrium.
+the last, the fourth component,
+is going to look at a spacecraft which has
+multiple momentum exchange
+device developed.
+in fact, you've developed a very
+general formulation with variable speed
+control moment gyros.
+and then we can simplify the formulations
+for cmgs and reaction wheels.

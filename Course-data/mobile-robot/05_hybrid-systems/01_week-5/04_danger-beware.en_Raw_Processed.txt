@@ -1,0 +1,151 @@
+so, last time, we saw that 
+possible to destabilize a hybrid system 
+switching between different modes even 
+if different subsystems modes 
+stable asymptotically stable 
+
+in this lecture i want to harp this 
+theme a little and, in fact, ive 
+called danger, beware 
+this is actually something that 
+we need to aware is 
+always so easy to ensure that overall 
+hybrid system is stable even if 
+subsystems unstable 
+in fact, like i saw, we looked a 
+counter example that allowed us to 
+actually destabilize, means drive 
+state to infinity, 
+unlucky unclever in we 
+transitioned in different 
+modes 
+so, if we ignore resets, meaning 
+there reset maps, state 
+doesnt jump youre making 
+transitions, we get something called a 
+switch system you x dot if is 
+fx,u i this a little sigma 
+index here sigma is whats known 
+switch signal 
+so, sigma is going to tell mode 
+system is in 
+so, if sigma is i in mode 
+if sigma is , in mode if 
+p in mode p 
+so, im is im switching 
+between different modes this switch 
+signal be, rather different 
+random 
+driven time 
+driven things happening in 
+state 
+a general way describing 
+a switch system 
+now, if you that, we actually 
+talk different kinds stability 
+i wanted to point that 
+things actually exist we 
+aware 
+first is whats known universal 
+asymptotic stability universal means 
+that there is nothing i to 
+destabilize system 
+matter what, this upsidedown a means 
+sigma, so x will go to 
+matter i switch 
+thats called universal stability 
+notion is existential 
+stability, means there exists 
+flipped e called an existential 
+quantifier 
+means, there exists a switch signal 
+that makes system stable 
+so, them, least there 
+is one that makes go to zero 
+two main ways in 
+people want to deal switch systems 
+in case, we dont have, there exists 
+a switch signal typically, all, we 
+whats called hybrid stability 
+that we actually a hybrid system 
+that is generating the, switch 
+signal this is known hybrid 
+stability 
+so, x goes to zero, sigma 
+sigma, one that 
+happens to one that we in 
+hybrid system 
+so, here results 
+lets say that i a hybrid system 
+individual modes 
+asymptotically stable 
+well, then, we guarantee that is 
+least existentially stable well, 
+clearly, we can, right 
+we is we dont switch 
+if i design a switch signal that 
+picks one mode stays that 
+forever ever ever, well, 
+never switching individual 
+modes asymptotically stable so if 
+modes asymptotically stable, we 
+never switch voila, 
+we an existentially stable 
+system 
+but, we will have, we seen, 
+theyre always universally 
+asymptotically stable 
+reason this is well, this 
+counter example 
+reason is that we actually 
+destabilize system an unfortunate 
+switching between modes 
+so, we this well, there 
+is something in nonlinear control known 
+a common lyapunov function 
+im going to talk this in this 
+course, 
+mainly common lyapunov 
+function is an elusive beast that you 
+almost never find 
+theoretically, thats youre 
+going to to hunt 
+practically speaking though, you 
+need to is following 
+first, never design unstable controllers 
+youre going to in 
+trouble probably, right 
+so, design stabilizing controllers 
+subsystems 
+then, we design switching logic, 
+meaning we going to switch 
+between different modes if 
+lucky we a lot amount free 
+time hands, we go find, try 
+to find common lyapunov functions 
+now, like i said, finding that is really 
+art science in sense that 
+hard in general to find 
+so, important thing here is 
+really, we need to aware fact 
+that stable subsystems ensure 
+asymptotic stability hybrid 
+systems 
+so, we need to aware test, 
+test, test, test, test 
+in sense that, run it, see 
+happens, we get instabilities induced 
+if we do, we need to start messing 
+switching logic 
+this is really key i cannot 
+underemphasize testing aspect 
+hybrid system 
+in fact, people design avionics 
+software, instance, majority 
+time is spent test, on, 
+development controllers, 
+testing that switching logic in 
+combination controllers 
+induce instability 
+so, thats we need to keep an eye 
+

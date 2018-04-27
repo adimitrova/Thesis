@@ -1,0 +1,764 @@
+1
+00:00:00,012 --> 00:00:04,807
+[music].
+Let's suppose that you work for a soup
+
+2
+00:00:04,807 --> 00:00:12,999
+company, and they've given you a task, a
+task to design a soup can that can hold
+
+3
+00:00:12,999 --> 00:00:20,104
+300 times pi cubic centimeters of soup.
+This is really an optimization problem.
+
+4
+00:00:20,104 --> 00:00:25,090
+Your goal is to design a soup can using as
+little metal as possible, which
+
+5
+00:00:25,090 --> 00:00:28,972
+nevertheless holds 300 pi cubic
+centimeters of soup.
+
+6
+00:00:28,973 --> 00:00:33,789
+Okay, less dramatically, you're really
+being asked to produce a cylinder with a
+
+7
+00:00:33,789 --> 00:00:36,837
+given volume.
+I want the volume of the thing to be 300
+
+8
+00:00:36,837 --> 00:00:41,138
+pi cubic centimeters, and I want you to
+minimize the surface area, right.
+
+9
+00:00:41,138 --> 00:00:43,769
+This thing's got a side and a top and a
+bottom.
+
+10
+00:00:43,769 --> 00:00:47,379
+And I want you to minimize the surface
+area for a given volume.
+
+11
+00:00:47,379 --> 00:00:52,633
+Probably helps to review a little bit of
+the geometry that goes into this problem.
+
+12
+00:00:52,633 --> 00:00:57,603
+Here's a picture of a cylinder right, and
+it's got some height that I'll be calling
+
+13
+00:00:57,603 --> 00:01:01,814
+h and a radius that I'll call r.
+And the volume of this cylinder is pi r
+
+14
+00:01:01,814 --> 00:01:04,836
+squared h.
+All right, pi r squared is the area, and
+
+15
+00:01:04,836 --> 00:01:09,670
+I'm multiplying by h to compute the volume
+of this disk dragged through space.
+
+16
+00:01:09,670 --> 00:01:15,936
+What's the surface area of this cylinder?
+Well 2 pi r squared counts the surface
+
+17
+00:01:15,936 --> 00:01:22,209
+area of the top disk and the bottom disk.
+Each of those has pi r squared for their
+
+18
+00:01:22,209 --> 00:01:25,873
+area.
+And the curved part of this cylinder has
+
+19
+00:01:25,873 --> 00:01:28,782
+area 2 pi r h.
+Okay, let me draw a picture of my soup
+
+20
+00:01:28,782 --> 00:01:31,038
+can.
+So, yeah, here's a little picture of our
+
+21
+00:01:31,038 --> 00:01:33,935
+soup can, and you see I've labeled the
+relevant sizes.
+
+22
+00:01:33,935 --> 00:01:37,932
+The height of the can and the radius of
+the can is what I'm trying to figure out.
+
+23
+00:01:37,932 --> 00:01:40,072
+Now what is it that I'm trying to
+optimize?
+
+24
+00:01:40,072 --> 00:01:42,241
+So I'm trying to minimize the surface
+area.
+
+25
+00:01:42,241 --> 00:01:46,267
+Here's that formula for the surface area
+of this can, and I want that surface area
+
+26
+00:01:46,267 --> 00:01:49,361
+to be as small as possible.
+Of course, if I wanted to make that
+
+27
+00:01:49,361 --> 00:01:53,236
+surface area as small as possible, I just
+make a really tiny soup can, right?
+
+28
+00:01:53,236 --> 00:01:57,484
+But there's a constraint.
+Well, the constraint is that soup can has
+
+29
+00:01:57,484 --> 00:02:02,425
+to hold 300 pi cubic centimeters of soup.
+So I'm trying to make this quantity, the
+
+30
+00:02:02,425 --> 00:02:07,235
+surface area, as small as possible,
+subject to the constraint that the volume
+
+31
+00:02:07,235 --> 00:02:11,498
+of the soup can is in fact 300 pi.
+And I should also point out that the
+
+32
+00:02:11,498 --> 00:02:15,826
+radius and height had better be positive.
+Otherwise, kind of nonsense.
+
+33
+00:02:15,826 --> 00:02:19,546
+This thing that I'm trying to optimize
+really involves two variables.
+
+34
+00:02:19,546 --> 00:02:23,571
+It involves the height and also a radius.
+Yeah this is some bad news, right?
+
+35
+00:02:23,571 --> 00:02:27,991
+The quantity that I'm trying to minimize
+involves 2 variables, involves r and h.
+
+36
+00:02:27,991 --> 00:02:32,617
+And calculus, as we've been setting it up,
+only works for understanding how a single
+
+37
+00:02:32,617 --> 00:02:38,015
+variable changing affects something else.
+So I need to rewrite this function of two
+
+38
+00:02:38,015 --> 00:02:41,126
+variables as a function of a single
+variable.
+
+39
+00:02:41,126 --> 00:02:46,375
+So, here we go, let's take this constraint
+and let's solve for h, all right?
+
+40
+00:02:46,375 --> 00:02:51,810
+And if I start doing that, well, h is 300
+pi over pi r squared and I can cancel
+
+41
+00:02:51,810 --> 00:02:56,187
+these, pis and I'm just left with h is 300
+over r squared.
+
+42
+00:02:56,187 --> 00:03:02,657
+So, for a given radius, this is how tall I
+need to make the soup can to guarantee
+
+43
+00:03:02,657 --> 00:03:07,421
+that the soup can holds 300 pi cubic
+centimeters of soup.
+
+44
+00:03:07,421 --> 00:03:14,294
+Now, once I've got an equation for h in
+terms of r, I can use this to rewrite the
+
+45
+00:03:14,294 --> 00:03:18,365
+thing I'm trying minimize just in terms of
+r.
+
+46
+00:03:18,365 --> 00:03:23,489
+So, here we go.
+The thing I'm trying to minimize now is 2
+
+47
+00:03:23,489 --> 00:03:30,769
+pi r squared plus 2 pi r times h, but h,
+in order to satisfy the constraint, is 300
+
+48
+00:03:30,769 --> 00:03:35,342
+over r squared.
+And now I can simplify this a little bit
+
+49
+00:03:35,342 --> 00:03:39,247
+further, right?
+I've got an r and an r squared here.
+
+50
+00:03:39,247 --> 00:03:43,066
+So I can get rid of this square and get
+rid of this r.
+
+51
+00:03:43,066 --> 00:03:48,896
+And then, the thing I'm trying to minimize
+is 2 pi r squared plus 2 pi times 300,
+
+52
+00:03:48,896 --> 00:03:54,140
+which is 600 pi divided by r.
+So this is the quantity that I'm trying to
+
+53
+00:03:54,140 --> 00:03:57,937
+minimize.
+Now that I've got this thing written as a
+
+54
+00:03:57,937 --> 00:04:03,674
+function of a single variable, I'm really
+tempted to do the fifth step here.
+
+55
+00:04:03,674 --> 00:04:07,289
+Apply calculus, right?
+If I got a function of a single variable,
+
+56
+00:04:07,289 --> 00:04:10,164
+I could differentiate.
+Find the critical points.
+
+57
+00:04:10,164 --> 00:04:12,745
+Figure out where the maxima and minima
+occur.
+
+58
+00:04:12,745 --> 00:04:17,307
+But before we dive in to the calculus side
+of this problem, let's just think about
+
+59
+00:04:17,307 --> 00:04:20,091
+some creative solutions to the soup can
+issue.
+
+60
+00:04:20,091 --> 00:04:24,610
+For example, here's a little model of a
+situation.
+
+61
+00:04:24,610 --> 00:04:31,112
+Here's the sun, here's Earth and here is
+my new plan for soup cans, right?
+
+62
+00:04:31,112 --> 00:04:35,223
+Really big radius, really tiny height,
+right?
+
+63
+00:04:35,223 --> 00:04:41,895
+Even if r is you know, 100 million miles,
+that can make h small enough so that this
+
+64
+00:04:41,895 --> 00:04:47,287
+soup can contains exactly 300 pi cubic
+centimeters of soup.
+
+65
+00:04:47,287 --> 00:04:50,493
+[laugh].
+Well, what's the surface area in this
+
+66
+00:04:50,493 --> 00:04:53,510
+case?
+Is this a really good choice for a soup
+
+67
+00:04:53,510 --> 00:04:56,674
+can, in, in terms of surface area?
+No, right?
+
+68
+00:04:56,674 --> 00:05:01,960
+If I make r really big, admittedly, this
+quantity, 600 pi over r, which is
+
+69
+00:05:01,960 --> 00:05:06,491
+measuring the curved area, that'll end up
+being very small.
+
+70
+00:05:06,492 --> 00:05:12,148
+Right, but 2 pi r squared when r is really
+big, this quantity, the amount of metal in
+
+71
+00:05:12,148 --> 00:05:15,650
+the top and the bottom of the can is
+enormous right?
+
+72
+00:05:15,650 --> 00:05:18,585
+So this is not a great choice for soup
+cans.
+
+73
+00:05:18,585 --> 00:05:23,292
+So having the soup can shaped like a giant
+pancake is a terrible idea.
+
+74
+00:05:23,292 --> 00:05:27,989
+But what if I went the other way?
+Here is a piece of wire, what if I made
+
+75
+00:05:27,989 --> 00:05:31,990
+the soup can really long and thin like
+this piece of wire?
+
+76
+00:05:31,991 --> 00:05:36,012
+Well, here is that long, thin wire-shaped
+soup can, right.
+
+77
+00:05:36,012 --> 00:05:41,364
+Even if I make the radius of my cylinder
+very small, if I make it long enough, then
+
+78
+00:05:41,364 --> 00:05:45,594
+the soup can does hold 300 pi cubic
+centimeters of soup, right?
+
+79
+00:05:45,594 --> 00:05:50,550
+And the question is, is this a really
+smart choice to minimize surface area, and
+
+80
+00:05:50,550 --> 00:05:55,251
+no, it turns that if r is really small,
+that's really not all that helpful.
+
+81
+00:05:55,251 --> 00:05:58,991
+Yeah, if r is really small, then 2 pi r
+squared is really small.
+
+82
+00:05:58,991 --> 00:06:02,828
+I don't need very much metal on the top
+and the bottom of the soup can.
+
+83
+00:06:02,828 --> 00:06:07,175
+But then 600 pi over r, which is how much
+metal is in the curved part of the soup
+
+84
+00:06:07,175 --> 00:06:09,578
+can, this quantity is going to be
+enormous.
+
+85
+00:06:09,578 --> 00:06:13,234
+So really, we see that these two things
+are competing against each other.
+
+86
+00:06:13,234 --> 00:06:17,209
+A small value of r isn't really very
+helpful, and a really big value of r isn't
+
+87
+00:06:17,209 --> 00:06:20,272
+very helpful.
+So our creative solutions didn't quite pan
+
+88
+00:06:20,272 --> 00:06:22,013
+out.
+Let's do some calculus now.
+
+89
+00:06:22,013 --> 00:06:26,079
+Okay, so I'm going to think of this
+surface area as a function of a single
+
+90
+00:06:26,079 --> 00:06:29,512
+variable, r, right?
+Here it is, f of r is 2 pi r squared plus
+
+91
+00:06:29,512 --> 00:06:33,831
+600 pi over r, and I'm going to
+differentiate, and here's the derivative.
+
+92
+00:06:33,831 --> 00:06:38,257
+All right, I differentiate 2 pi r squared
+to get 4 pi r, and I differentiate this
+
+93
+00:06:38,257 --> 00:06:41,109
+number divided by r.
+Well, 1 over r is negative 1 over r
+
+94
+00:06:41,109 --> 00:06:42,771
+squared.
+That's its derivative.
+
+95
+00:06:42,771 --> 00:06:45,952
+And the I multiply by 600 pi.
+So this, is the derivative of this.
+
+96
+00:06:45,952 --> 00:06:49,929
+Now, I need to find the critical points.
+Now, remember what critical points are,
+
+97
+00:06:49,929 --> 00:06:52,322
+right?
+Critical points are where the derivative
+
+98
+00:06:52,322 --> 00:06:55,145
+vanishes, or where the derivative doesn't
+exist, right?
+
+99
+00:06:55,145 --> 00:06:58,896
+The function's not differentible.
+This function, that was differentible on
+
+100
+00:06:58,896 --> 00:06:59,969
+its domain.
+All right?
+
+101
+00:06:59,969 --> 00:07:03,618
+You might worry when r is equal to 0.
+But that's not even in the domain of the
+
+102
+00:07:03,618 --> 00:07:07,203
+original function.
+So I don't have to worry about that.
+
+103
+00:07:07,203 --> 00:07:12,793
+All right, now we've gotta figure out,
+when is the derivative equal to zero, so
+
+104
+00:07:12,793 --> 00:07:17,606
+I'm trying to solve this.
+I'll add 600 pi over r squared to both
+
+105
+00:07:17,606 --> 00:07:21,424
+sides.
+So 4 pi r must be 600 pi over r squared in
+
+106
+00:07:21,424 --> 00:07:26,680
+that case.
+I'll multiply both sides by r squared, and
+
+107
+00:07:26,680 --> 00:07:33,740
+I'll divide both sides by 4 pi.
+And I'll get r cubed is 600 pi over 4 pi.
+
+108
+00:07:33,740 --> 00:07:39,552
+The pis cancel, and 600 over 4 is 150, so
+r cubed must be 150.
+
+109
+00:07:39,552 --> 00:07:44,648
+In other words, r is the cube root of 150.
+This is the only critical point.
+
+110
+00:07:44,648 --> 00:07:48,549
+Now that I found the critical points, what
+about the end points?
+
+111
+00:07:48,549 --> 00:07:52,760
+Well, the end points actually aren't
+really valid in this situation.
+
+112
+00:07:52,760 --> 00:07:55,857
+One of the end points might be when r is
+equal to zero.
+
+113
+00:07:55,857 --> 00:07:58,569
+But in that case, the soup can has no
+volume.
+
+114
+00:07:58,569 --> 00:08:03,102
+So I can't satisfy the constraint.
+The same thing happens when h is equal to
+
+115
+00:08:03,102 --> 00:08:05,989
+zero.
+In that case, the soup can, again, has no
+
+116
+00:08:05,989 --> 00:08:08,836
+volume.
+So I can't satisfy the constraint.
+
+117
+00:08:08,836 --> 00:08:13,444
+So, I don't have to worry about the end
+points, because they're not in the domain
+
+118
+00:08:13,444 --> 00:08:17,137
+that I'm considering.
+But I do have to worry about the limiting
+
+119
+00:08:17,137 --> 00:08:20,453
+behavior when r is really big or when r is
+really small.
+
+120
+00:08:20,453 --> 00:08:23,905
+So, we actually already handled the
+limiting behavior.
+
+121
+00:08:23,906 --> 00:08:26,638
+Right?
+We've already considered the situation
+
+122
+00:08:26,638 --> 00:08:30,281
+when r is really small.
+That's the situation where the soup can's
+
+123
+00:08:30,281 --> 00:08:33,791
+like a long, thin wire.
+And we checked, in that case the surface
+
+124
+00:08:33,791 --> 00:08:35,218
+area is enormous.
+Right?
+
+125
+00:08:35,218 --> 00:08:39,644
+If r is small enough, the surface area can
+be as large as you like, and still hold
+
+126
+00:08:39,644 --> 00:08:44,296
+300 pi cubic centimeters of soup.
+We also consider the situation where r is
+
+127
+00:08:44,296 --> 00:08:48,152
+really large, right?
+When r was really big ,we had this sort of
+
+128
+00:08:48,152 --> 00:08:52,758
+flat pancake shape for the soup can.
+And in that case, we again saw that if r
+
+129
+00:08:52,758 --> 00:08:57,346
+is big enough, the surface area can be
+made as large as you like, while still
+
+130
+00:08:57,346 --> 00:09:01,371
+having that soup can contain 300 pi cubic
+centimeters of soup.
+
+131
+00:09:01,371 --> 00:09:04,983
+So, the only thing that really remains is
+this critical point.
+
+132
+00:09:04,983 --> 00:09:09,477
+And if you plug this critical point into
+the original function, you get this as the
+
+133
+00:09:09,477 --> 00:09:13,833
+resulting surface area, if you build your
+soup can with a radius of cube root 150
+
+134
+00:09:13,833 --> 00:09:18,321
+centimeters, and your height, whatever it
+has to be in order to guarantee that the
+
+135
+00:09:18,321 --> 00:09:21,451
+soup can contains 300 pi cubic centimeters
+of soup.
+
+136
+00:09:21,452 --> 00:09:25,608
+So how does this turn out?
+What's the best shape for a soup can?
+
+137
+00:09:25,608 --> 00:09:30,427
+So the best case for your soup can is to
+use a radius of the cube root of 150.
+
+138
+00:09:30,427 --> 00:09:35,340
+And you can see that from this graph.
+Here, I'm graphing the surface area for a
+
+139
+00:09:35,340 --> 00:09:39,958
+given radius of soup can containing 300 pi
+cubic centimeters of soup.
+
+140
+00:09:39,958 --> 00:09:43,701
+And you can see that the graph goes up
+towards infinity here.
+
+141
+00:09:43,701 --> 00:09:48,119
+And up towards infinity there.
+And that's exactly the situation when the
+
+142
+00:09:48,119 --> 00:09:52,258
+radius is very small or very big.
+The derivative is negative and then
+
+143
+00:09:52,258 --> 00:09:53,387
+positive.
+Right?
+
+144
+00:09:53,387 --> 00:09:56,242
+The function's decreasing and then
+increasing.
+
+145
+00:09:56,242 --> 00:10:01,724
+So this value really is a local minimum.
+And in fact, this is the global minimum of
+
+146
+00:10:01,724 --> 00:10:03,444
+this function.
+Right?
+
+147
+00:10:03,444 --> 00:10:07,633
+And that's why this is the best choice for
+your soup can.
+
+148
+00:10:07,633 --> 00:10:11,638
+Is this really a legitimate application of
+calculus?
+
+149
+00:10:11,638 --> 00:10:14,853
+Well, here's a task to think about.
+Right?
+
+150
+00:10:14,853 --> 00:10:18,068
+Go out, find some soup cans and check
+them.
+
+151
+00:10:18,068 --> 00:10:23,948
+Are they really building soup cans in
+order to minimize the amount of metal that
+
+152
+00:10:23,948 --> 00:10:28,991
+it takes to manufacture the can?
+Or perhaps there's other issues involved
+
+153
+00:10:28,991 --> 00:10:31,655
+in manufacturing soup cans.
+.

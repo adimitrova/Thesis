@@ -1,0 +1,171 @@
+music to conclude 
+first module this course, 
+we visit lab course nuclear physics 
+university geneva, 
+to see one an experiment la rutherford 
+i present dr alessandro bravar, a senior lecturer 
+in department, is responsible this lab course 
+is also an active researcher, like collaborators, is part 
+neutrino physics group also experiment, prepares 
+to measure detailed properties muons will take place 
+in a few years paul scherrer institute in villigen, near zurich 
+so in front us we a typical setup a rutherford experiment 
+alessandro, you please explain 
+ingredients this setup way works 
+okay 
+here, we try to repeat rutherford measurements, 
+modern equipment a technique 
+that looks a bit like experiments that we make today to study, 
+example, electron structure 
+so we have, in case, 
+an alpha emitter, emits alpha particles sent to a target, 
+we detecting alpha particles scattered target 
+indeed, rutherford, first, 
+geiger marsden implemented idea 
+rutherford interpreted observations geiger marsden 
+so to make this experiment, we to work in a vacuum 
+this will require to open this box in a moment, to show ingredients 
+reason that one works in vacuum, is that we use alpha particles 
+alpha particles already stopped 
+an air layer ten centimeters 
+so that alpha particles propagate source to target 
+detector, 
+we need to remove air that otherwise would stop particles 
+we therefore put in in this box a pump 
+that pumps air makes noise you hear 
+we will is to stop pump 
+open cover to see ingredients experiment 
+lets go 
+you open valve 
+yes, first thing, open valve let air in, 
+otherwise we cannot lift cover 
+we hear faint sound air entering vacuum chamber 
+i think 
+this is 
+yet we to wait a while 
+here we go 
+so we open vacuum chamber 
+three main components experiment seen 
+here we a source americium that emits alpha particles 
+alpha particles travel to a target, here 
+we use a gold foil a thickness micron 
+alpha particles interact gold nuclei 
+scattered gold nuclei in different directions 
+to detect alpha particles, we use a silicon detector, 
+a diode placed in tube here 
+we will see silicon detector in a little detail 
+thank you martin 
+thats silicon detector 
+central part we see here is active part detector, 
+while rest serves to define acceptance detector 
+behind there is a small connector to measure electrical signal 
+generated alpha particles, completely absorbed in this detector 
+signal is propagated 
+yes, goes this cable an amplifier we here, 
+charge left an alpha particle in silicon detector 
+is a few femtocoulombs we need to amplify 
+this signal detection 
+experiment is to measure count rate, rate 
+alpha particles, deflected, depending angle 
+that detector made incident alpha beam 
+target may varied, may gold different thicknesses, 
+also made metals, iron here, microns 
+iron, nickel, a thin foil microns thick, 
+different thicknesses gold, here, 
+a gold foil half a micron 
+one varies two things target, that is to say z thickness x 
+target in direction beam, one varies angle 
+many different angles one typically measure in an experiment 
+a dozen different angles 
+one puts detector sides alpha beam to ensure, 
+that we make a symmetric measurement relative to direction incident alpha beam 
+obviously, count rate varies quickly angle 
+this is famous sin work 
+then, count rate varies between what, roughly 
+if you make measurement in direction incident beam, you measure, 
+in principle, alpha particles source, 
+that scattered to small angle, 
+also those, interacted in target 
+thus count rate, in this case, is roughly a few kilohertz 
+so we measure quickly acquire enough events 
+in a short period 
+this also gives us intensity incident beam 
+exactly 
+then, to measure count rate different scattering angles, 
+we move silicon detector to degrees, 
+dplace le dtecteur silicium 
+sometimes degrees, relative to axis alpha particles 
+is clear that count rate drops dramatically 
+we vary angle 
+is degree count rate, roughly 
+small, one event per minute 
+so we need to measure several days to accumulate sufficient statistics 
+contrary, low angles, is a lot higher, right 
+a lot higher 
+i said earlier, this is a few kilohertz zero angle, 
+small angles counting rate is still high 
+okay then, students spend 
+a day to this experiment, a day a night perhaps 
+well, if we measure angles in direction particle, 
+measurement done in a few hours 
+while we measure fairly large angles, 
+we leave experiment running a whole week 
+students spend day to start experiment, 
+check that ingredients working properly, 
+afterwards measurement taken, i said, in a week 
+so, i put sensor zero angle 
+to a significant count rate see things in real time 
+to run experiment, you need to put back vacuum 
+so we will close vacuum chamber switch pump 
+so, chamber is closed, 
+internal pressure drops relatively quickly, 
+is also possible to apply bias voltage to silicon diode 
+that is used counting passage particles 
+here, you use bias voltage 
+here we work v, this is due to thickness 
+also, one need 
+to deplete detector completely, 
+alpha particles stop within first few microns detector thickness 
+if first microns depleted, 
+this is perfectly adequate accumulating signal 
+so here, we see signal alpha particles passing, 
+typical signal curve shown a silicon detector 
+this is voltage a function time 
+i said before, we a very, low signal, 
+a very, low charge, femtocoulombs 
+so we need a first amplifier 
+to amplify signal times, 
+signal seen here, so this is a charge amplifier 
+that is we see a signal that rises quickly, 
+a much longer decay time 
+so method measurement would trigger a counter 
+voltage exceeds a certain threshold, 
+count rate events 
+to measure interaction rate 
+here, actually, we something a little sophisticated 
+instead measuring count rate, we measure charge 
+deposited alpha particle in detector, to sure 
+that detected pulse is generated an alpha particle 
+to this, we need to go a second amplifier that will 
+shape signal seen here 
+in principle, converts signal to almost gaussian shape, 
+so a slower rise, afterwards 
+we use a chargetodigital converter 
+this transforms signal something that used 
+a computer 
+that is to say that we measure dedx particles, 
+leave in thickness detector 
+we converted charge to a binary number, 
+a computer is used to store data, 
+ie charge deposited alpha particles, 
+we obtain an energy spectrum alpha particles 
+okay 
+completely absorbed, 
+is a kind miniature calorimeter 
+time, one obviously saves 
+count rate that will give us rutherford cross section 
+exactly 
+so we must also record time we used 
+to measure, gives us count rate 
+we record a number pulses divide measurement time 
+music 

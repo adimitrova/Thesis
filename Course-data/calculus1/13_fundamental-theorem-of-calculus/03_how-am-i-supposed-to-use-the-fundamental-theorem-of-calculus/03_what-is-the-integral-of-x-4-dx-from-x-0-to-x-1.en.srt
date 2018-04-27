@@ -1,0 +1,272 @@
+1
+00:00:00,025 --> 00:00:05,049
+[MUSIC]. 
+
+2
+00:00:05,049 --> 00:00:08,541
+Let's find the area under graph of a 
+polynomial. 
+
+3
+00:00:08,541 --> 00:00:14,850
+So let's integrate from 0 to 1, the 
+function x to the 4th dx. 
+
+4
+00:00:14,850 --> 00:00:19,430
+To solve this problem, I can use the 
+fundamental theorem of calculus. 
+
+5
+00:00:19,430 --> 00:00:23,360
+So the first step is to find an 
+anti-derivative of x to the 4th. 
+
+6
+00:00:23,360 --> 00:00:26,464
+Well, what's an antiderivative just for x 
+to the n? 
+
+7
+00:00:26,464 --> 00:00:30,830
+Right, as long as n isn't minus 1, an 
+antiderivative for this is x to the n 
+
+8
+00:00:30,830 --> 00:00:35,874
+plus 1 over n plus 1 plus c. 
+So for this specific problem, right, 
+
+9
+00:00:35,874 --> 00:00:38,550
+what's an antiderivative for x to the 
+4th? 
+
+10
+00:00:38,550 --> 00:00:43,550
+Well, that'll be x to the fifth over 5 
+plus some constant c. 
+
+11
+00:00:43,550 --> 00:00:47,124
+And it doesn't matter which anti 
+derivative I pick. 
+
+12
+00:00:47,124 --> 00:00:51,612
+So, just to emphasize that point, let's 
+be a little bit ridiculous and, pick my 
+
+13
+00:00:51,612 --> 00:00:55,572
+anti derivative that I'm calling big F, 
+to be x to the fifth over 5 plus 17, 
+
+14
+00:00:55,572 --> 00:00:59,836
+right? 
+And this really is an anti derivative for 
+
+15
+00:00:59,836 --> 00:01:03,600
+x to the 4th. 
+Because if I differentiate this function, 
+
+16
+00:01:03,600 --> 00:01:07,760
+I get the derivative next to the flipped 
+over five, which is 5x to the 4th over 5 
+
+17
+00:01:07,760 --> 00:01:14,012
+plus the derivative 17, which is 0. 
+And 5x to the fourth over 5 is just x to 
+
+18
+00:01:14,012 --> 00:01:17,890
+the 4th. 
+So I really have found an anti-derivative 
+
+19
+00:01:17,890 --> 00:01:22,950
+for x to the fourth right here. 
+It's x to the 4th over 5 plus 17. 
+
+20
+00:01:22,950 --> 00:01:27,740
+Now I apply the fundamental theorem. 
+So the fundamental theorem tells me that, 
+
+21
+00:01:27,740 --> 00:01:32,058
+to integrate from 0 to 1. 
+The function, x to the 4th is the same as 
+
+22
+00:01:32,058 --> 00:01:37,280
+evaluating an anti derivative for x to 
+the fourth at 1. 
+
+23
+00:01:37,280 --> 00:01:41,310
+And subtracting that anti derivative 
+evaluated at 0. 
+
+24
+00:01:41,310 --> 00:01:44,430
+In this case, my chosen anti derivative 
+is this function. 
+
+25
+00:01:44,430 --> 00:01:47,837
+So I plug in 1. 
+I get 1 to the 5th over 5, plus 17, minus 
+
+26
+00:01:47,837 --> 00:01:53,010
+what I get when I plug in 0, which is 0 
+to the 5th over 5, plus 17. 
+
+27
+00:01:53,010 --> 00:02:03,400
+And one fifth plus 17, minus 17 Well this 
+is just 1 5th. 
+
+28
+00:02:03,400 --> 00:02:07,524
+I can really see this fact. 
+So here's a graph of the function y 
+
+29
+00:02:07,524 --> 00:02:11,062
+equals x to the 4th, and we just saw is 
+that the integral from 0 to 1 of x to the 
+
+30
+00:02:11,062 --> 00:02:14,658
+4th dx is 1 5th, so there must be 1 5th 
+of a square unit of area underneath this 
+
+31
+00:02:14,658 --> 00:02:20,390
+graph. 
+Let me get out my scissors. 
+
+32
+00:02:20,390 --> 00:02:24,284
+Well here's a rectangle, and the width of 
+this rectangle is one and the height of 
+
+33
+00:02:24,284 --> 00:02:27,824
+this rectangle is a 5th, so this 
+rectangle contains 1 5th of a square unit 
+
+34
+00:02:27,824 --> 00:02:33,140
+of area, and it's the same as the area 
+under this graph. 
+
+35
+00:02:33,140 --> 00:02:39,823
+So let me cut this rectangle a bit. 
+I'll shove that piece Under there and 
+
+36
+00:02:39,823 --> 00:02:46,214
+I've got this leftover piece which I 
+guess I have to do something with. 
+
+37
+00:02:46,214 --> 00:02:48,550
+Huh. 
+Maybe I'll turn it over. 
+
+38
+00:02:48,550 --> 00:02:56,448
+Maybe I'll cut off this piece here. 
+I'll put that there. 
+
+39
+00:02:56,448 --> 00:02:59,682
+I'll rip this there, and sort of shove 
+that in there, and there'll be a little 
+
+40
+00:02:59,682 --> 00:03:03,286
+bit up there... 
+I mean it's not great, the job that I did 
+
+41
+00:03:03,286 --> 00:03:07,255
+here, but it's at least believable that 
+there's a 5th of a square unit of area 
+
+42
+00:03:07,255 --> 00:03:12,651
+underneath this graph. 
+Admittedly this particular case, the area 
+
+43
+00:03:12,651 --> 00:03:16,431
+under the graph of X to a power, this 
+particular case was known to Fermont 
+
+44
+00:03:16,431 --> 00:03:20,350
+before Newton. 
+And yet what we're really selling here 
+
+45
+00:03:20,350 --> 00:03:25,115
+isn't the answer to a particular problem. 
+It's a general technique for approaching 
+
+46
+00:03:25,115 --> 00:03:28,500
+these area problems. 
+If you want to find the area under a 
+
+47
+00:03:28,500 --> 00:03:31,920
+graph of a function instead of trying to 
+do it by hand You can apply the 
+
+48
+00:03:31,920 --> 00:03:35,640
+fundamental theorem of calculus and 
+reduce it to an antidifferentiation 
+
+49
+00:03:35,640 --> 00:03:41,710
+problem, which hopefully is easier. 
+This is an example of the way in which 
+
+50
+00:03:41,710 --> 00:03:46,742
+mathematics is a democratizing force. 
+Problems that at one time would have been 
+
+51
+00:03:46,742 --> 00:03:53,040
+only accessible to the geniuses on earth. 
+are now accessible to everybody, right? 
+
+52
+00:03:53,040 --> 00:03:56,680
+At one time in history, you would've had 
+to been the smartest person on Earth in 
+
+53
+00:03:56,680 --> 00:04:00,450
+order to calculate the area of some 
+curved object. 
+
+54
+00:04:00,450 --> 00:04:09,294
+And yet now, armed with the fundamental 
+theorem of calculus, we can all take part 
+
+55
+00:04:09,294 --> 00:04:14,914
+in these area calculations. 

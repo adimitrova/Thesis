@@ -1,0 +1,355 @@
+hi, welcome to glue lecture , control 
+mobile robots 
+im smriti chopra, instructor 
+glue lectures 
+this lecture is titled, hybrid 
+automata 
+so this week, dr egerstedt uh,introduced 
+to 
+you guys this concept hybrid control, 
+right 
+a system, in case, a robot, 
+
+to go different behaviors in 
+order to complete 
+a task 
+example go to goal, avoid obstacle, 
+hop skip jump, whatever 
+different behaviors in order to complete a 
+task 
+problem that is, 
+problem, 
+you need to keep in mind, is that 
+suddenly we need a bigger model that 
+takes 
+account little models little 
+behaviors robots 
+we that 
+we that something called a 
+hybrid automata, 
+takes account 
+continuous dynamics, yet, 
+switching logic, to switch between 
+different dynamics different behaviors 
+so basically, an example a hybrid 
+automata is this 
+guy here, really nothing a 
+finite state machine 
+a state machine is something that 
+skips between different states, etc 
+so we 
+a q, example, is counter 
+different states 
+so q is , youre in this state 
+q is , youre here 
+q is , youre here 
+mode, state, in 
+different dynamics, x dots 
+right 
+different behaviors modes 
+you guard conditions 
+that tell 
+you want to switch one mode to 
+another 
+pretty simple 
+we 
+we call resets 
+is basically you switch to a 
+different 
+mode, you change state in way 
+
+something you add 
+automata 
+so this is a simple example a 
+hybrid automata looks like 
+we while studying this hybrid 
+automata, 
+came across this phenomenon called zeno 
+effect, right 
+is that, 
+really 
+this annoying thing that makes 
+state 
+system kind go really fast between 
+guard conditions 
+so here guard, less , 
+you go x dot f to f 
+greater equal to , you 
+switch back 
+problem is equal to , 
+you switch, 
+you keep switching between 
+two modes infinitely fast 
+thats something we dont want in 
+system 
+this is called zeno phenomenon 
+theres this whole thing called type 
+zeno 
+type zeno, is studied in 
+lectures 
+going to deal type zenoes, 
+we know to deal 
+type zenoes tough, 
+going to 
+deal here, in this class 
+least 
+an example is that, okay, youre given 
+a system, 
+right 
+this is a simple system here two 
+states, you want 
+to see if this guy here is type zeno 
+
+again, remember that this 
+effect happens 
+you have, lets say, guard 
+condition, flipped, right 
+so this g g, possible that 
+you keep going between 
+states really fast 
+condition here, 
+g x, is less , 
+greater equal to , thats way 
+you get this surface g x 
+equal to , along youre going to 
+keep moving like this, right 
+okay 
+so is going to type zeno 
+this is first question you ask 
+youre designing a system here 
+you certain conditions 
+conditions 
+basically, you want to see is that 
+this is surface g x equal to 
+im hitting surface 
+whichever direction im coming, either 
+im coming greater equal to 
+less , right 
+whichever condition im coming from, 
+i hit 
+surface this particular equation hold 
+true 
+this particular condition 
+hold true 
+is simply saying that whenever 
+i hit 
+a surface, is true that one mode, 
+f example, is pulling in one 
+direction, 
+f is pulling in 
+direction 
+thats encoded in this condition here 
+so always true 
+so thats you want to check is 
+going to 
+true that im pulled different 
+directions i hit 
+surface, is g x equal to 
+okay, so this is pretty simple 
+you guys saw derivation in class, etc 
+this is true, you 
+determine that 
+yes, is a type zeno, you 
+
+okay, you dont want to keep moving 
+infinitely fast along surface, right 
+instead you want to is you want to 
+slide along surface 
+so we found that is type 
+zeno, going to try induce 
+sliding mode instead 
+going back forth really fast so 
+that, you know, 
+we kind remove this whole annoying 
+thing zeno effect 
+so we this example that we saw 
+we want to find out, first 
+thing, is this in fact type zeno 
+not, right 
+we saw that we need to this check 
+to ensure if type zeno 
+this check is pretty simple, g 
+effect equal to , 
+see if this condition holds not, 
+going to that 
+so we know g x equal to gives us x 
+equal to , right 
+lead derivative, lfg, is 
+really nothing 
+partial derivative g respect 
+to x times f 
+g x is x minus , 
+partial derivative g 
+respect to x is going to 
+times f, is f 
+is minus x, right 
+okay 
+we want to make sure that 
+new derivative is negative, in f 
+direction, right 
+so in order to this expression 
+negative, we 
+find that x must greater 
+in way, math, you 
+check 
+this condition, gives you x 
+greater 
+so you three things here x is 
+equal 
+to , x greater , x greater 
+you want to see if this makes sense 
+
+will this situation ever occur, right 
+turns out, course will occur, 
+x equal to automatically means 
+x is greater , x is greater 
+
+so that means i hit surface, i 
+in fact going to experience zer, zeno 
+effect 
+so we established that 
+okay 
+so yeah, x is equal to 
+kind make sure that 
+that means that we must in fact 
+sliding control 
+we hit surface, we dont 
+want to keep moving 
+infinitely fast along that surface, we 
+want to slide smoothly along surface 
+so we to sliding control 
+okay 
+so in general form, this is looks 
+like 
+thing is, you find that is 
+type 
+zeno, that there will zeno effect, 
+what, right 
+youve hit surface 
+you know that this is zeno effect 
+you going to 
+you need to move along that surface 
+to move along that surface, you need 
+to know dynamics, right 
+you need to know x dot 
+
+i moving along surface 
+so thats this log diagram here 
+shows 
+this guy in particular is dynamics 
+x 
+dot that you employ in order to move along 
+surface 
+way you get this is taking 
+time derivative guard condition, 
+setting to 
+logic behind that is you 
+want to move this line, gx equal 
+to , obviously you want to stay 
+here g is , 
+you, you going to say that time 
+derivative g is also 
+theres change g is going to stay 
+constant 
+thats whole intuition behind 
+you get x dot 
+actual derivation is there in 
+lectures, so you 
+guys can, you know, go refer to 
+stuff 
+im giving you formula here, 
+im 
+telling you you actually get 
+setting dg 
+dt equal to zero 
+okay, lets go back to sliding 
+mode dynamics cough find 
+so we know that this system, we 
+already 
+found guy is going to zeno 
+effects, right 
+so im going to find sliding mode 
+dynamics this equation right here 
+there two ways 
+one is pretty much i told you, that i 
+know 
+going to type zeno, so im 
+going to set dg dt equal to 
+again, g x is x minus 
+so dg dt is going to really x 
+dot, right 
+i set x dot equal to , well 
+guess what, i got dynamics 
+so i means i hit sliding surface, 
+i stop x dot is 
+i velocity 
+i nothing 
+i pretty much stop 
+okay 
+then, theres another way it, 
+if you dont want to go this 
+thats pretty much solving 
+this expression here 
+so you actually compute little guys, 
+derivatives, we 
+done, way, plug 
+this equation 
+you get x dot 
+so remember lfg f 
+lfg f, so you put this 
+stuff this guy, this becomes ff 
+minus ff, 
+is 
+so you get x dot equal to 
+so ways we saw that we get 
+dynamics, x dot equal to 
+that really whole point 
+this slide, to show you how, 
+given a system, first you find if 
+zeno type zeno 
+lets say i tell you type zeno, 
+
+you find sliding mode 
+dynamics 
+so together happens is, okay, 
+ive got this new mode 
+here, i need to somehow connect it, 
+right, to initial system 
+so this is pretty simple 
+i know that i hit surface, im 
+going to go sliding mode, 
+whichever mode im in 
+im transitioning, i hit x equal to 
+i come sliding mode, then, 
+course, i 
+get it, sliding mode, i 
+come back 
+states 
+if youre wondering, you know, 
+you come well 
+in this case x dot is , so maybe youre 
+going to grind to a halt 
+there times where, you know, 
+x dot is 
+you continuously moving, 
+condition, you remember that lfg 
+condition , less , 
+something else greater 
+basically vectors 
+pointing opposite 
+so while moving, if point 
+vectors stop pointing opposite directions, 
+start 
+pointing in direction, etc, 
+suddenly 
+you dont experience zeno effect that 
+point, right 
+thats dynamics 
+going to 
+push you sliding mode, 
+youre going to get 
+come back to guys here 
+so this is a general form 
+okay 
+that, keep checking forums, good 
+luck quiz , byebye 

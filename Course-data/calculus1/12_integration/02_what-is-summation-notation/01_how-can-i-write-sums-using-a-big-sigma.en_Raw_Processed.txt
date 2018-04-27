@@ -1,0 +1,130 @@
+music sometimes, youll see a greek 
+restaurant a name like this 
+so, g, r, sigma, sigma, k restaurant 
+little rant here is that this 
+say greek restaurant 
+says grssk restaurant 
+that sigma is really a letter 
+right 
+sigma makes sound 
+yeah, so grssk restaurant 
+well, this sigma makes an sound, right 
+so, you know, forget this greek restaurant 
+story 
+whats another word that actually 
+start 
+alright, a word that starts is sum 
+so, going to use that giant sigma 
+sums 
+lets see an example 
+so, ill write a big sigma sum, 
+sigma, ill write i 
+want to start 
+sigma, ill right i want to 
+end 
+heres i want to add 
+so, in this example, i first plug in n 
+equals 
+right 
+times minus is 
+then, i plug in n equals 
+times minus is 
+then, i plug in n equals 
+times minus is 
+then, i plug in n equals 
+times minus is 
+then, i plug in n equals 
+times minus is 
+i keep this, right, until i 
+plug in n equals 
+is times minus is 
+so, to evaluate this sum, right, 
+meaning symbols is to add 
+plus plus plus , so on, until i 
+get to 
+we compute this 
+well, here we go 
+alright, plus is 
+plus is 
+alright, plus is 
+plus is 
+plus, whats next number in this 
+list, is 
+plus is 
+plus next number that would come 
+this is 
+plus is 
+plus, next number is 
+plus is 
+plus is next number, right 
+
+plus is 
+plus is 
+so, yeah 
+if i add plus plus plus plus 
+way , adding 
+odd numbers between , i get 
+thats value this sum 
+if you programming experience, 
+you think sums like loops 
+formally, this notation mean, 
+right 
+so, i put a big summation symbol, a big 
+sigma 
+n goes a to b, a b whole 
+numbers 
+then, ive got expression 
+involving n i write a 
+function n 
+this notation means is to 
+plug in numbers between a b, 
+whole numbers between a b 
+including a b, this expression, 
+sum 
+right 
+giant sigma sum 
+you know, so if i wanted to expand this 
+out, if i want to right this is 
+doing, you know, i first plug in a, i 
+plug in a plus , i add to that a, 
+whatever i get i plug in a plus , 
+dot, dot, dot, i keep going, 
+right 
+then, i get closer to n 
+right n, i plug in b minus 
+then, i finish plugging in b i 
+add things thats 
+value this sum 
+alright thats this notation means 
+theres one easy case we figure 
+whole story 
+happens if we take sum a 
+constant 
+expression that doesnt depend 
+indexing variable 
+instance, is sum, n goes 
+a to b, constant c, 
+right 
+this is you know, sort expression that 
+doesnt involve n 
+so, to compute this, we to know 
+is many times c is added 
+
+right, so this is c plus c plus, 
+keeps going, you know, plus c 
+whole issue is many times 
+c appears 
+c appears b minus a plus times 
+that, that plus maybe is a little bit 
+confusing 
+you see that plus really 
+belongs there, if you plug in 
+specific values for, b a 
+so, if i add c to itself, b minus a plus 
+times, this sum is really a 
+multiplication problem, right 
+repeated addition is called 
+multiplication 
+c times b minus a plus 
+so, sum c n goes a to b is 
+c times b minus a plus 

@@ -1,0 +1,157 @@
+music so heres a great function to 
+look 
+function is going to defined 
+fx sine x x 
+question is whats limit this 
+function, x approaches zero 
+lets try to guess limit looking 
+a table function values 
+so heres a bunch input values that 
+getting closer closer to zero, 
+right, , 
+getting closer closer to zero 
+looking output values 
+function, 
+right 
+so f is sine 
+sine 
+f, thats sign , 
+a little bit 
+f is a little bit 
+you keep looking here 
+numbers seem to getting close to 
+something, alright this is 
+really, really close to one 
+so based this table values 
+tempted to guess that limit fx 
+x approaches is 
+another way to gain insight 
+this limit will to look graph 
+heres graph 
+this is graph sign x x 
+you see that x equals zero, 
+functions defined there i 
+cant divide zero, so i got this 
+little hole in graph 
+nevertheless, im claiming that limit 
+x approaches is equal to 
+actually means that i make output 
+close to you like, if youre 
+willing to input close enough 
+to 
+instead talking closeness, push 
+this red button turn this red 
+interval 
+so i say close to one, i really 
+mean is output is inside this, this 
+red interval 
+that red interval might really big 
+might really small 
+to close to one is going to mean 
+inside red interval 
+point is that, turn this blue 
+interval 
+close you want output to 
+one, i promise you that 
+output is within red interval if 
+input is within this blue interval 
+red interval is really big, well 
+thats much a challenge 
+i a really wide blue interval 
+anything inside blue interval 
+output landing inside red interval 
+even red interval is very, 
+small theres still tiny blue 
+interval so that whenever x is within 
+blue interval, output is within 
+tiny red interval 
+in words, even if you want 
+output to really close to one 
+i promise you that output is that 
+close to one, if youre willing to 
+input close enough to zero 
+so, weve looked function values, 
+weve looked graph 
+weve got this idea that limit 
+sine x x x approaches zero is 
+equal to one 
+that, an idea 
+we dont yet a rigorous argument 
+that this limit is equal to one 
+heres a sketch a rigorous 
+argument that limit sine x x, 
+x approaches is equal to one 
+turns that values x 
+close to equal to zero, this 
+is true 
+cosine x is less sine x x, 
+sine x x is less one 
+would you care this 
+note, limit cosine x x 
+approaches zero is one limit 
+is limit a constant 
+function is that constant 
+so i know that limit this side is 
+one limit this side is one 
+im trying to conclude is that 
+limit thing in between is also 
+one 
+turns theres a way to 
+this 
+lets take a look 
+heres going to use, 
+squeeze theorum 
+suppose youve got three functions, im 
+calling gf h 
+gx is less equal to fx fx 
+is less equal to hx 
+values x that near a, 
+maybe inner qualities dont hold 
+point a 
+also, suppose that limit gx x 
+approaches a, is equal to limit 
+hx x approach a, is equal to sum l 
+so limit gx, limit h x 
+value, l 
+the, you get to conclude limit f 
+x approaches a exists equals l 
+is this thing called squeeze 
+theorem people call 
+sandwich theorem pinching theorem 
+lets take a look 
+pictorially, is this called 
+squeeze theorem 
+ive got an example here 
+three functions 
+g, f, h 
+again, gx is less fx, fx 
+less hx 
+now, note, limit gx x 
+approaches a is l 
+limit hx x approaches a 
+is l 
+f is squeezed, sandwiched, between h 
+g 
+consequently, limit f x 
+approaches a is also equal to l 
+now, going to use squeeze 
+theorem to try to understand limit 
+sin x x 
+so weve got squeeze theorem 
+i know 
+i know that cosine x is less sine x 
+x is less values x that 
+close to equal to 
+limit cosine x x approaches 
+is equal to 
+if you like, cosines continuous 
+cosine is 
+also limit x approaches is 
+equal to limit a 
+constant function is that constant 
+so limit this function is one, 
+limit this function is one x 
+approaches zero 
+that means squeeze theorem, 
+limit sine x x is also equal to 
+music 

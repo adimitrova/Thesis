@@ -1,0 +1,331 @@
+music this is a story three 
+bubbles 
+well really three bubble walls, 
+alright 
+i imagine that ive got this pane glass 
+here, alright 
+ive got three points connected 
+three edges bubble 
+so, bits bubble end 
+intersecting 
+this actually turns to an 
+optimization problem 
+bubbles wants to small possible 
+so, less colorfully, this is im 
+really asking 
+i imagine that ive got a triangle, 
+im trying to find a point in middle 
+triangle so that sum 
+three lengths, a plus b plus c, is 
+small possible 
+try to minimize total length 
+bubble 
+lets make this concrete 
+lets actually pick points place 
+triangle point 
+anyhow, we drawing a picture, 
+right 
+we starting drawing a 
+picture 
+so, concreteness, im going to put 
+vertices here ,, ,, , 
+then, i trying to do, well, 
+im trying to find a point, i call x,y, 
+in in middle triangle so 
+that lengths this length here, 
+im calling a, length x,y to 
+origin, i call b, length x,y 
+to point ,, ill call c 
+i want a plus b plus c to small 
+possible 
+im trying to minimize sum 
+lengths to vertices 
+way that ive set this problem 
+way that ive exactly positioned 
+vertices introduces a symmetry that we 
+exploit in this problem 
+this configuration is symmetric across 
+line y equals x bubbles really 
+shouldnt prefer one side 
+i mean, bubble knows left 
+right 
+so solution, point that minimizes 
+sum distances to 
+vertices lie this line, so i 
+say that coordinates x,x, so 
+whats goal 
+so im trying to find value x, so, 
+that this point x,x minimizes sum 
+distances to vertices 
+now, i write that 
+well, heres a formula sum 
+distances to vertices 
+this first part, square root x 
+squared plus x squared 
+thats pythagorean theorem, 
+right 
+far is point x,x point 
+, 
+well, heres a right triangle 
+two legs this right triangle 
+length x 
+so, length a hypotenuse is 
+square root x squared plus x squared 
+what, say, this term here, is 
+square root minus x squared plus x 
+squared come 
+well, take a look this little tiny 
+right triangle here 
+this right triangle this leg 
+length x this leg length minus 
+x 
+so, long is hypotenuse, is 
+distance x,x to , 
+well, square root minus x 
+squared plus x squared 
+this last term, this square root x 
+squared plus one minus x squared, thats 
+measuring distance , to 
+x,x 
+i simplify this, somewhat 
+this first term, this square root x 
+squared plus x squared, well, i could 
+rewrite that square root x 
+squared 
+terms actually 
+
+addition is done in a 
+different order but, course, doesnt 
+effect value so i write 
+this two copies this first one, 
+square root minus x squared plus 
+x square 
+so, this is a slightly easier way 
+writing f 
+we also review if theres 
+constraints this problem 
+im going to find a little bit easier 
+if i assume that x is bigger equal 
+to 
+in that case, square root x 
+squared rewritten in an even easier 
+way, right 
+square root x squared is 
+absolute value x 
+if i assume that x is bigger 
+equal to , i could rewrite this 
+square root times x plus, 
+this term, times square 
+root minus x squared plus x squared 
+so, weve got function a single 
+variable so we apply calculus 
+we differentiate 
+so, here we go 
+i want to differentiate this 
+f prime is, well, derivative a 
+sum, is sum derivative 
+so, i to first differentiate square 
+root times x 
+square root plus times 
+something 
+so, will times derivative 
+that thing 
+is derivative minus x squared 
+plus x squared, this square 
+root 
+alright, i keep going here 
+i got square root plus times 
+i differentiate a square root 
+well, derivative square root is 
+times square root i use 
+chain rule so will 
+times square inside function 
+here, is minus x squared plus x 
+squared times derivative inside 
+function 
+so, derivative minus x squared 
+plus x squared 
+alright, lets this 
+so, i got square root , plus, oh, 
+i cancel this this , so, ive 
+got square root minus x 
+squared plus x squared times, i got to 
+differentiate this sum, is sum 
+derivatives 
+so, derivative minus x squared, 
+thats times one minus x times 
+derivative inside function, 
+derivation minus x is minus , plus 
+derivative x squared, is 
+x 
+so, heres derivative f 
+derivative in hand, we look 
+critical points, places 
+function either isnt differentiable 
+derivative is equal to 
+i dont to worry critical 
+points derivative doesnt exist 
+this function is differentiable 
+everywhere 
+so, im looking values x 
+derivative is equal to 
+let rewrite this derivative even a 
+little bit nicely 
+so, derivative is square root 
+plus, this thing i want to 
+simplify a little bit here 
+i got 
+i got x 
+ive got another x here 
+so, x minus 
+so, x minus this denominator, 
+square root minus x squared plus x 
+squared 
+alright, pretty good 
+im looking values x that 
+thing is equal to 
+ill subtract square root 
+sides 
+that means im looking values x 
+so that x minus square root 
+minus x squared plus x squared, is equal 
+to negative square root 
+then, ill multiply sides this 
+denominator 
+that means im looking values 
+x 
+so that x minus is negative square 
+root times square root minus 
+x squared plus x squared 
+now, i solve an equation like this 
+well, one trick i use is to square 
+sides, that might introduce extra 
+solutions 
+i go back and, figure 
+exactly solution is still a solution 
+to this original problem 
+so, lets square sides 
+so, ive got x minus squared is 
+negative square root times minus x 
+squared plus x squared, this whole thing 
+squared 
+now, i expand that a bit, 
+right 
+whats x minus squared 
+well, thats x squared minus x plus 
+whats this side 
+well, squaring negative gets rid 
+
+squaring square root is , 
+square this thing, this is 
+positive so whatever is inside 
+radical, is minus x squared 
+plus x squared 
+okay, so i got x squared minus x plus 
+i expand this thing 
+alright, this is a minus x 
+here, i got a plus x squared another x 
+squared so plus x squared 
+ill expand this whole side so thats 
+minus x plus x squared ill 
+subtract this sides ill get 
+x uh,squared minus x plus , is equal 
+to 
+so, this is a quadratic equation, 
+alright, i solve that quadratic 
+equation using say, a quadratic 
+formula 
+i get that x is half plus minus 
+square root , alright 
+so this is an application quadratic 
+equation to solve this, quadratic 
+now, issue here is that, turns 
+that im getting solutions x 
+is actually a place 
+derivative is equal to zero 
+so if youre careful, you check 
+turns that this is in fact, a minus 
+sign 
+so this is critical point x 
+equals half minus square 
+root 
+so, ive got a critical point 
+lets draw a picture see exactly 
+critical point lands inside 
+triangle 
+so, a little bit numerics this 
+critical point ends point 
+, yeah, i mean i plot this right 
+here 
+this is point x,x x is equal to 
+this 
+and, you know, maybe that looks believable 
+bubble walls would 
+intersect in order to minimize sum 
+distances 
+theres work to 
+to actually show that critical point 
+indeed give rise to global minimum 
+value this function, we need to 
+work 
+lets put that 
+instead, i want to focus in an angle 
+calculation 
+in particular, i want to calculate this 
+angle here, angle that this bubble 
+this bubble make point 
+intersect 
+i that law sines 
+calculation i also need to know to 
+length this piece bubble if 
+you calculation, that will 
+square rd 
+alright, so im going to use fact that 
+i know this length, oh, i also know 
+this bottom length is i know this 
+angle, right 
+line y equals x makes a degree 
+angle xaxis 
+so, i put that information together 
+a law sines calculation, right 
+sine pi , thats this angle, a 
+degree angle divided length 
+opposite side square root 
+rd 
+well, that sine theta divided 
+length opposite side is 
+now, i want to try to figure sine 
+theta is 
+well, ive got bits information 
+here that i need 
+i know sine pi is 
+square root 
+so, square root , 
+divided square root rd is 
+equal to sine theta 
+this, yeah, if calculate it, 
+square root 
+now, you might tempted to apply 
+arc sine to square root three 
+two 
+you to think a little bit 
+domain here, exactly this 
+angle theta lie 
+between degrees 
+a theta, if you look picture, is 
+bigger degrees, so im looking 
+an angle between, say, degrees 
+whose sine is square root , 
+that actually nails theta us 
+theta is pi three radians 
+degrees 
+so, bubble walls meet degree 
+angles we see this real in 
+nature 
+look degree angles 
+calculations that here 
+symbols page 
+yet, somehow, manage to govern 
+real physical world, right 
+bubbles know calculus 
+somehow, calculus knows bubbles 

@@ -1,0 +1,203 @@
+[music]
+in this module we are in the process of discussing
+the basics of particle acceleration and
+particle detection.
+in this video, we will demonstrate
+how photons interact with matter.
+at the end of this video, you will know
+the mechanisms by which they are detected,
+namely, the photoelectric effect,
+compton scattering and pair production.
+in these processes, the photon is either
+absorbed or scattered by a wide angle.
+most of the photons in a beam
+keep their original energy, but
+their flux is diminished.
+a photon beam will thus be
+attenuated rather than lose energy.
+the probability of an interaction in
+a given target thickness is a constant,
+proportional to the cross
+section of the process.
+this leads to an exponential decrease
+of the intensity of a photon beam
+as a function of absorber thickness.
+we've already calculated an example
+of this in the optional video 1.3a.
+photons are detected by interactions
+which produce charged particles.
+the photoelectric effect is the absorption
+of a photon by an atomic electron, dominant
+between the ionization energy of an atom
+and about 100kv of photon energy.
+compton scattering is the elastic
+scattering of a photon off a quasi-free
+atomic electron, dominant around photon
+energies roughly 1 mev.
+pair production is the conversion of
+a photon into an electron-positron pair
+in the electromagnetic field of
+typically of a nucleus, dominant for
+photon energies much larger
+than 1 mev.
+we will discuss these processes
+one by one in what follows.
+in the photoelectric process,
+the atomic electron is released
+when the atom absorbs the photon.
+its kinetic energy is then the difference
+between the photon energy and
+the ionization energy.
+this latter one depends on the shell
+where the electron was and
+is typically between and
+1 and 25 electron volts.
+the photoelectric process is
+not feasible for a free electron.
+it would violate conservation of momentum.
+if the photon energy
+is larger than the k shell energy,
+the cross section is dominated
+at the level of roughly 80% by
+the absorption of k shell electrons,
+since the proximity of the nucleus
+eases absorption of the recoil energy.
+sigma_th, in this formula, is the standard
+cross-section of thompson scattering,
+it sets the scale of this cross section.
+the dependence on the atomic
+charge to the fifth power and
+the photon energy to
+the power -7/2
+favors the photoelectric process for
+low energy photons in heavy materials.
+at high energies in
+the relativistic limit,
+the energy dependence
+becomes simply 1/e_gamma.
+the vacancy opened by
+the photoelectric effect can be filled
+by another electron of an upper shell,
+say the l shell for example.
+this will result in either the emission
+of an x-ray with energy e_l- e_k or
+the emission of an auger electron,
+if the available energy is greater than
+the ionization energy for higher shells.
+in compton scattering, dominant at
+intermediate energies around 1 mev,
+a photon is scattered off a quasi-free electron.
+the cross section is given by the
+klein-nishima formula which is obtained
+by quantum electrodynamics that
+we'll discuss in module 4.
+the energy of the scattered electron is
+maximum when the scattering angle is 90
+degrees with a maximum electron
+energy that is given by the formula
+on the bottom of this page.
+the compton scattering cross section
+is typically about 0.1 barn
+in the forward direction.
+for backward scattering,
+it varies between 0.1 barn
+at low energies and 0.04 barn at 100 kev.
+at high energy, the process is thus dominated
+by scattering in the forward direction.
+in the electromagnetic field of a nucleus,
+the photon can convert into
+an electron-positron pair.
+the energy threshold is essentially
+twice the mass of the electron
+with a small correction for the
+recoil fo the nucleus.
+this process cannot take place in vacuum
+because of energy-momentum conservation,
+but little energy is transmitted to the
+nucleus, about 1 mev for heavy nuclei.
+at low and
+modest energies the cross-section per atom
+is given in terms of the radiation length.
+this is the same length as the one
+we defined in video 3.5, i.e,
+the length after which an electron loses
+all but 1/e its energy by bremsstrahlung.
+in this image, taken with a historical
+bubble chamber, we see the tracks
+left by charged particles as small
+bubbles formed in an overheated liquid.
+the chamber is immersed in a magnetic
+field octagonal to the projection plane,
+which deflects the trajectories.
+this is an atypical process in that
+a photon enters from the left and
+converts into an electron positron pair
+in the field of an atomic electron and
+not in the field of a nucleus.
+this produces what is called a trident.
+these are the three
+charged particle tracks you see
+attached to the left vertex.
+the pair particles lose
+their energy in the liquid,
+their trajectories are the spirals
+that you see on the left.
+the atomic electron takes an appreciable
+recoil energy because of it's
+small mass.
+its stiff track goes to the right
+with very little curvature.
+about halfway,
+the electron emits a bremsstrahlung photon,
+which in turn converts into
+an electron-positron pair.
+you see this pair by the v-shaped
+tracks on the right.
+the cross-section for pair production
+becomes almost independent of
+the photo energy above
+an energy of about 1 gev and
+then depends only on the material,
+that is to say on x_0.
+the conversion probability per unit
+distance is inversely proportional to
+the radiation length.
+the mean free path for
+a photon before it converts
+is the inverse of this probability and
+thus 9/7 of a radiation length.
+the busy plot on the right shows
+the summary of the contributions
+of all processes to the photon
+total cross section in metal.
+among this the most important ones are the
+photoelectric effect at low energies and
+pair production at high energies
+in between around 1 mev, at
+the minimum of the cross section,
+compton scattering dominates
+over other processes.
+at high energy, as we have seen at
+energies above 1 gev, electrons and
+positrons lose their energy almost
+exclusively by bremsstrahlung.
+photons convert to electrons and
+positrons by pair production.
+the two phenomena have the same
+characteristic length,
+the radiation length.
+the successive combination
+of these two effects
+results in the formation of what is
+called an electromagnetic shower.
+whenever an electron,
+positron or photon of high
+energy enters into a medium,
+it will cause such a shower.
+a simulation is shown on the right.
+again, each black dot corresponds
+to a unit of energy loss.
+in the next video,
+we will see how ionization detectors
+measure the passage of charged particles.
+[music]

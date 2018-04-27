@@ -1,0 +1,162 @@
+music 
+remember, continuity is nearby 
+inputs sent to nearby outputs 
+differentiability is wiggling 
+input affects output 
+in light this, seemed related, 
+right 
+something like following seems 
+plausible 
+heres theorem 
+theorem 
+if f is differentiable a, f is 
+continuous a 
+in words, a differentiable function 
+is continuous 
+morely, we know that a differentiable 
+function is continuous 
+advanced enough is point 
+in course to give a precise argument 
+using limit 
+here we go 
+lets suppose that f prime a exists 
+in words, that means a certain 
+limit exists 
+limit well, limit 
+fxfxxa x approaches a 
+this limit a difference quotients 
+computes derivative function 
+a so, to say that derivative 
+exists is to say that this limit exists 
+now, here comes trick 
+id like to compute is limit 
+fxfa x approaches a, i dont 
+know to that directly 
+but, i rewrite this thing im taking 
+limit a product 
+watch 
+instead taking this limit, im going 
+to take limit x approaches a 
+xa times this difference quotient, times 
+fxfaxa 
+now, long x isnt equal to a, this 
+product is equal to this difference 
+now, that help well, this is a 
+limit a product 
+so, one limit laws, limit 
+a products product limits 
+long limits exist 
+in this case, 
+so, this limit this product is, 
+product limits 
+limit xa x approaches a, 
+times limit fxfaxa 
+im allowed to use this limit law 
+i know limits 
+exist 
+now, this first limit, limit xa 
+x approaches a, thats 
+this second limit, well, this limit 
+exists precisely im assuming 
+differentiability, 
+functions differentiable 
+so, this limit is calculating 
+derivative a, zero times 
+number is equal to zero 
+upshot here is that weve shown that 
+limit fxfa x approaches 
+a 
+would you care this 
+that help us we know that limit 
+fxfa x approaches a is equal to 
+that means is that limit fx 
+x approaches a is equal to fa, 
+this is definition 
+continuity 
+so we know that f is continuous 
+point a 
+thats we ended 
+remember, we started 
+we started assuming that f 
+differentiable a 
+this work, we ended 
+concluding that f is continuous 
+point a 
+so, differentiability implies continuity 
+one way to keep track arguments like 
+this is to think clouds rain 
+theorem 
+if is rainy, is cloudy 
+a shorter way saying this, rainy 
+implies cloudy 
+question is, go 
+way if cloudy, is necessarily 
+rainy you think a cloudy day 
+rain yes, today 
+lets look window 
+is cloudy theres rain 
+beyond clouds rain, lets bring this 
+back to mathematics a differentiable 
+function is continuous, you think 
+a continuous function isnt 
+differentiable 
+you might want to hit pause right now, 
+if you dont want puzzle given away 
+heres an example a function is 
+continuous differential, 
+function fxx 
+we recently saw that absolute value 
+function wasnt differentable zero 
+we know that absolute 
+value function is continuous everywhere 
+we know that absolute value function 
+is continuous 
+i mean, look 
+one piece 
+but, we better 
+we use limit knowledge to make a 
+precise argument 
+we know that fxx is continuous 
+positive inputs 
+continuous open interval 
+zero to infinity function x 
+is continuous there 
+this function, absolute value 
+function, agrees function x if i 
+plug in positive numbers 
+likewise, i know that function is 
+continuous negative inputs 
+function x is continuous there, 
+function x agrees this function 
+this interval 
+sticking point is to check that 
+functions continuous zero if 
+i know continuous positive 
+inputs, negative inputs, 
+continuous zero, i know that 
+continuous inputs 
+now, i know that absolute 
+value function is continuous zero 
+well, thats another limit argument, 
+right limit absolute value 
+function i push righthand 
+side is limit 
+absolute value function i push 
+lefthand side, theyre zero 
+two onesided limits 
+exist agree, i know 
+twosided limit absolute value 
+function is equal to zero, 
+is also functions value 
+zero 
+therefore, abslute value function 
+is continuous 
+in end, theres relationship 
+between differentiability continuity 
+differentiable functions continuous 
+mathematics isnt a sequence 
+unrelated concepts 
+music a single unified whole 
+ideas connected 
+deepest possible levels 
+music 

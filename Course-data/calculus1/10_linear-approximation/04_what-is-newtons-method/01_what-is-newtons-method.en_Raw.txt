@@ -1,0 +1,263 @@
+[music].
+i often want to find approximate roots.
+well, here's the set up.
+i start with some nice function, f, nice
+meaning differentiable.
+maybe the derivative is continuous, a, a
+reasonable function.
+and then i want to find some input, x, so
+that the function evaluated at that input
+is equal to 0.
+now in practice, this is way too much to
+ask for.
+i'm not really going to be able to find
+some particular input x.
+i mean i might not even be able to write
+down that input in any reasonable sense.
+but what i can ask for is i can find some
+x so that, f of x is very close to 0.
+right i mean, maybe i can't find it so
+that the output of the function is equal
+to zero.
+but maybe i can find an input so that the
+output there is really close to 0, really
+small.
+if you think back, we've already done
+this.
+right.
+if you remember this video, where i use
+the intermediate value theorem, i was able
+to proximate a root of a function just by
+interrogating the function, evaluating it
+at a handful of points.
+and, there was that bisection trick.
+so in this example it looks like the
+function evaluated that a is positive and
+the function evaluated b is negative.
+this function looks like a reasonable nice
+function who's continuous so the
+intermediate value theorem applies.
+and that mean in-between a and b, there's
+some input, where the function's output is
+i can cut this interval in half and if i
+look in the middle of interval the
+function's output there is positive, and
+that means just in between these two
+inputs there must be some input where the
+function's output is 0.
+and then i could cut that in half again.
+and if i look at the input there, the
+output of the function is negative.
+and that means in between these two inputs
+there must be some input so the functions
+output is 0.
+and then i could cut that in half again.
+and if i look there the functions output
+is positive.
+so i've got a negative output put in a
+positive output, so in between, by the
+intermediate value theorem, there must be
+some input where the function's output is
+and so on and so forth, right?
+i'm getting closer and closer to the point
+where the function output is actually
+equal to 0, at least i can approximate it
+this way.
+the downside to this bisection method is
+just speed, it takes a really long time.
+so a different method, called newton's
+method, is much faster than this bisection
+trick.
+well, this is faster when it actually
+works.
+so what is newton's method.
+what i'm trying to do is find the x
+coordinate, where the graph of this
+function crosses the x-axis right.
+i want to know an input so this function's
+output there is 0.
+and instead of marching in from either
+side, as in intermediate value theorem,
+newton's method has us just start by
+making a potentially bad guess.
+here's my 1st guess.
+i'm going to call it x of 0.
+and yeah, that's, that's not a very good
+guess.
+because the function's output is all the
+way up here.
+not that close to 0.
+but after i've made that first guess,
+newton tells us to draw the tangent line
+to the curve.
+through, through that point.
+so here's the tangent line to the curve
+through that point.
+and then my next guess will be wherever
+that tangent line crosses the x axis.
+so here would be my next guess x of 1.
+and then i just hope that, that next guess
+is better.
+but i could repeat the process.
+right?
+i could do the same game here.
+this point is closer to 0.
+and then i could again draw another
+tangent line to the curve, through that
+point.
+and then this next place where that
+tangent line crosses the x axis that'll be
+x of 2, my next guess.
+and at least from this picture it looks
+like that's an even better guess as to
+where the graph of this function crosses
+the x axis.
+so at least pictorily that's what newton's
+method is telling us what to do.
+let's write down the steps.
+well here is newton's method in words.
+you start with some initial guess x0.
+the next step is to draw the tangent line
+through the point x0 f of x0, right.
+that's exactly what i did here.
+i started with x0 and then i drew this 1st
+red tangent line.
+now the next step is to figure out where
+that tangent line.
+all right, the tangent line right there.
+crosses the x-axis.
+now i'm going to use that for my new
+guess, x of 1.
+which i hope will be a better guess from
+my original guess.
+all right, my original guess was pretty
+far away from 0.
+x1, which is where the tangent line here
+crosses the x-axis.
+i'm hoping that's a better guess.
+and yeah, at least in this example it is.
+and then i'm going to repeat the process.
+right?
+in this picture, once i had my new guess x
+of 1 i then drew the tangent line to the
+graph at x 1 comma f of x 1 and that
+tangent line intesect the x access at a
+point i'm calling x of 2 and i'm just
+hoping then that, that's even a better
+guess as to the actual point where the
+graph crosses the x access.
+all right, so that's this repeat process.
+and you can just keep repeating this as
+long as you want.
+and, you know, hopefully you're getting
+better and better guesses every time.
+as to exactly where that graph crosses the
+x-axis.
+those worked this all out with equations.
+right?
+i'm going to write down the equation in
+the tangent line.
+and then solve for wherever that tangent
+line crosses the x-axis.
+so i'm going to start by thinking about
+this red line, right?
+this red line is the tangent line to the
+orange graph at the point x0, f of x0.
+and as a tangent line, so it has slope the
+derivative at x0.
+and here i've written down the point slope
+form of the red line.
+right?
+it's y minus the y coordinate on the line,
+which is fx0, is equal to the slope of the
+line which is the derivative add x 0.
+times x minus the x coordinate on the
+line, which is x0.
+now, newton's method tells me that i
+should use that linear approximation to
+the graph, figure out where the linear
+approximation crosses the x axis and just
+hope that's a better approximation to
+where the orange curve actually crosses
+the x axis.
+so to do that, i'm going to set y equals 0
+and i'm going to solve for x.
+right.
+and that'll tell me where the red line
+crosses the x axis, if i solve this
+equation for x.
+well, i can expand out, this side.
+right?
+and, the right-hand side of this equation
+is f prime, x 0 times x minus f prime x0
+times x0.
+i'm going to add f prime x0 times x0 to
+both sides.
+so the equation becomes f prime x0 times
+x0 minus f of x 0 is equal to f prime x 0
+times x, right?
+i just added f prime of x 0 times x 0 to
+both sides.
+and 0 here went away.
+right?
+so f prime x 0 times x 0 minus f of x 0 is
+equal to this f prime x 0 times x.
+now assuming that the derivative not equal
+to 0 at this point i'm going to divide
+both sides by f prime x 0.
+we're going to divide this side by f prime
+f 0, i just get x0.
+0 minus f of x0 divided by f prime x0, so
+that's this left-hand side divided by f
+prime of x0.
+the f prime x0 here cancelled, and the f
+x0 divided by f prime of x0 is what i got
+here.
+and i'm dividing both sides by f prime of
+x0, so this side is just x.
+so the x coordinate where this red line
+crosses the x axis is this.
+and i'm going to call this my new
+hopefully improved guess, x sub 1.
+with this equation in hand, i can now
+write down the step by step process for
+newtons method just using a formula.
+here's the step by step process.
+i start with some initial guess x sub 0,
+and then i'm drawing that tangent line to
+the graph x 0 x of f 0, looking where that
+tangent line crosses the x axis to get my
+new guess, right?
+and this is the formula we just computed.
+x1, my new guess, is x 0 minus the
+functions value there divided by the
+functions derived there.
+and with that new guess, i can then play
+the same game.
+drawing the tangent line to the graph at
+x1, f of x1.
+figure out where that tangent line crosses
+the x-axis, to get a newer guess x of 2.
+same formula works for that.
+it's the old guess minus the function at
+the old guess divided by the derivative at
+the old guess, to get my new guess.
+and i can just keep playing this game over
+and over again.
+hoping that each generation brings me
+closer to a place where the function's
+value is in fact 0.
+let's just summarize the formula.
+so in summering i could say that my new
+guess which i'll call x of n plus 1, is my
+old guess minus the function's value of my
+old guess divided by the function's
+derivative at my old guess.
+and i can just keep repeating this over
+and over again.
+when this works, all right, when newton's
+method actually succeeds, it works really
+well and it zooms in on that root really
+quickly.
+the problem is that i can't promise you
+that newton's method will actually work.

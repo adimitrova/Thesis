@@ -1,0 +1,259 @@
+the last topic of this
+week is a glider design.
+so the work we here, we introduce here
+is a teromis, an interactive design and
+optimization of free form,
+free flight model airplanes.
+as you see, this is a very latest work.
+so motivation the question we here
+is how to design a paper airplane or
+glider so you could fly the airplane,
+and then we hope it flies well.
+however, it is not very easy for
+inexperienced people to design
+a glider that flies well.
+you know, there are many designs, but
+this is the result of many,
+many experimentation.
+it's not easy to design
+arbitrary shaped airplane.
+so that's a problem we want to address.
+and again, we ran concurrent simulation,
+but not only ran simulation to
+analyze it with as well,
+we also provide automatic optimization.
+so given current designs this model
+automatic adjusts the shape so
+that it flies well.
+so, this is similar to
+the previous system.
+behind the scene is more interesting.
+here, we use a data driven approach for
+the simulation.
+so accurate analytic simulation
+of airflow is very difficult.
+so here, we use many, many measured data.
+so this is airplanes,
+we actually fabricated, created,
+flew together and measured.
+we get this loads of data and
+we infer many parameters.
+and then we use it for
+the physical analysis.
+so that's the story.
+so let me show you what we do.
+yeah, so this is a typical
+example of not flying airplane.
+so if you design arbitrary wing shape,
+you know, it just drops, doesn't fly.
+so our goal is to be able
+to design arbitrary shape,
+this kind of strange shape
+airplane by yourself that flies.
+and then this is one example we
+created and it flies very well.
+so, our approach is like this.
+so first is offline precomputation.
+so we took many,
+many airplane trajectories and analyze it.
+so we flew these gliders, and then check
+the trajectory, flight trajectory.
+and then we compare the simulation result,
+and then adjust the parameters so
+that simulation result fits
+well with actual flight.
+and this is the basis of
+the physical analysis.
+and given this data, now you generate,
+you design your own airplane, and
+the system now can predict
+soft flight trajectory.
+on the, in addition to showing or
+predicting the flight trajectory the set
+system runs automatic
+optimization to make it flyable.
+so the user can pause for
+edit, edit and simulation [inaudible] and
+then you get desired shape.
+so this is our user interface.
+so similarly, to the previous system
+we use our edit to shape this kind of
+two dimensional view.
+so you're moving along the vertices, and
+then system continuously
+change the 3d shape.
+in addition to that, here,
+the bottom half is the simulation result.
+so this predicts what happens.
+in this case, the airplane goes upwards,
+and the [inaudible] goes down.
+and as user edits a shape, system
+continuously runs physical simulation, and
+tells whether the airplane flies well or
+not.
+the reason, why we have multiple
+trajectories is that, you know,
+the user's hand throw always changes.
+sometimes goes higher.
+sometimes goes lower.
+so the system automatically predict,
+consider multiple possibilities, and
+then show general tendencies.
+so that's a [inaudible].
+and now let me describe
+the optimization part.
+so as you see,
+there is a magic make it fly button.
+so this is where you press this button,
+system apprised automatic optimization,
+and to make this airplane fly.
+so here, in this design, it doesn't
+fly well, it doesn't pass this line.
+it goes too up or too down or
+it doesn't fly well.
+as soon as you press this button,
+system optimizer, say it carefully,
+it's kind of very subtle.
+but i do not, nothing.
+the video, shows the system
+automatically adjust the wing position.
+so, let's see.
+the user press this button,
+system adjust the wing position.
+yeah, here.
+so, the front wing moved sideways,
+so this is not by the user,
+the system automatically adjusts
+the shape so that it flies well.
+so in this clip,
+the user edits the front wing and
+the system automatically adjusts the
+position and orientation of the rear wing.
+so as you see, user,
+moves around the front wing and
+then system automatically adjust,
+the rear wing.
+please note that simulation results
+[inaudible] drastically changes with
+just small change in
+the reorientation of the position.
+which is very difficult to do for
+the user, or people to do it, but
+the system can do it.
+[sound] so again the important part is
+this kind of interactive exploration.
+you can test many different things and
+the system continuously provide feedback.
+after having the design,
+you send the data to the laser cutter, and
+then you get a shape.
+and results.
+so, here's our results.
+so important thing is
+it really flies well.
+you know, it's kind of amazing for us too.
+so this has a launcher and
+they are starting from
+as you see, yeah, it flies way back,
+so it's very amazing.
+yeah, we have it here.
+this dragon airplane, and this also flies.
+you can also use other materials.
+and this one.
+or this one.
+okay.
+that's the video.
+so, here's a summary of
+the algorithm that we use.
+so, standard fluid simulation
+aerodynamics is too slow.
+it's not, can be a real time.
+so we use a traditional wing theory.
+wing theory is simplified
+model of our airplane.
+so it computes lift force occurring each
+wing, and then after computing the lift
+force and gravity and others, and then
+you can predict the flight trajectory.
+so that's the theory we use.
+so wing theory looks like this.
+so given given a, a wing,
+shape, and then the force.
+we compute, force up, close by the wing.
+so it's the lift force, f,
+and the drag force, fd, and
+then rotation force in tau, tau.
+and then it's a function of velocity and
+area, you know.
+it's faster and faster and then forces
+gets bigger, and the area is bigger, and
+the forces gets bigger.
+and the question is these parameters.
+you know, these are the constant.
+defines the behavior of the wing.
+and it depends on the angle of attack and
+also depends on the shape of the wing.
+and these parameters are,
+is what we want to know.
+so to estimate this parameter, we take our
+data driven parameterization approach.
+so we fly many airplanes and
+then measure the parameters and
+then we try to fit the parameters.
+so, you know, this cd, cl, cm,
+are all depending on the angle of attack.
+and then we plot it in a measure,
+we plot the measured data in the space and
+then we get the best approximation.
+and also we then,
+we can estimate the force caused
+by each wing element in this way.
+and then we aggregate forces caused
+by these small wing elements.
+and then we computes approximate total
+force caused by the total entire wing.
+so to learn more the original paper is
+published as interactive design and
+optimization of free-formed
+free-flight model airplanes in 2014.
+and flight simulation is also
+discussed in graphics community.
+one example is data-driven
+controllable flapping flight.
+so it simulates the flapping
+flight of birds.
+and data-driven simulation
+is also a popular topic.
+so you, it is opens a case too slow
+to land, stand out a simulation.
+so possible approach is to allow many,
+many simulations beforehand of flying.
+and then in a long time just assemble,
+measure previous simulation
+result to get a realistic result.
+and one possible reading is
+data-driven simulation methods in
+computer graphics is published as
+a a siggraph 12 course material.
+so this is a summary of this week.
+so we presented integration of
+real time physics into modeling.
+so user continuously aid it to save, and
+then system continuously provides
+feedback, running physical simulation.
+on some systems, just provides
+[inaudible] simulation results.
+but, also some system provides continuous
+guidance to design varied shapes.
+so we introduce a fast,
+simple cantilever design, and
+also design, discuss musical
+instruments with model analysis.
+also also garment design,
+using linear approximation and
+furniture design with active guidance
+using joint force analysis, and
+finally glider design using wing theory
+with data driven parameter feeding.
+so, that's the end of this video.
+thank you

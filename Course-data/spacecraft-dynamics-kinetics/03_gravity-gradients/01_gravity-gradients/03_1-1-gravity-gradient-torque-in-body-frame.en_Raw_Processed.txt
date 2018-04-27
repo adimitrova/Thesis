@@ -1,0 +1,228 @@
+so good 
+this is vector form, 
+coordinate independent form 
+lets actually apply 
+particular frames 
+theres different answers 
+that we get this 
+always answer, 
+different expressions, 
+different formulations 
+that answer 
+so if im using an orbit frame, 
+here ive used an aircraftlike frame, 
+if an airplane is flying you 
+nose pointing in one direction, 
+wings may to left right 
+i yaw axis up, 
+aircraft probably would 
+orbits we tend 
+to third axis 
+one axis in 
+radial direction 
+so, is long track, 
+is cross track orbit normal, 
+is orbit radius direction vector 
+theyre unit direction vectors 
+that means rc definition is always 
+going to , kilometers in that 
+direction, right 
+that direction is defined here 
+so, in o frame, position vector 
+a circular orbit in particular, 
+is going to constant 
+going to , , rc, 
+right, is kind nice 
+so we write that 
+weve seen spacecraft part, 
+inertia tensor, 
+we tend to write in body frame 
+so while orbit positions could 
+written in simple manners, 
+we tend to need in body frame 
+now, so if this is position 
+vector pointing to satellite, 
+youve got a coordinate frame 
+satellite, depending orientation, 
+you an infinity different 
+variations, generally, 
+youre going to to account 
+three different vector components, 
+rc inertial position vector, always 
+so, rc , , , nothing 
+b frame components position vector, 
+different ways to look 
+so we that 
+we plug this in, 
+i added this morning 
+everythings in body frame 
+to make explicit 
+so we rc, cross i rc 
+ive picked a principal coordinate 
+frame here to make, 
+i always that 
+a rigid body, right 
+exists, makes 
+analysis a little bit easier 
+you this math, 
+this multiplication is talking 
+you get a little bit scaling, 
+cross product, 
+this is going to answer 
+so this box, answers 
+earlier one 
+expressed everything 
+in body frame components 
+we look 
+conditions 
+try to figure will gravity 
+gradient torque go to zero 
+i care going to zero 
+equilibrious that 
+to study, 
+thats thing if you conditions 
+this is one disturbance youre 
+modeling, if that disturbance acts it, 
+you wont an equilibrious 
+this is like gravity gradients 
+we talked last time 
+this would a gravity 
+gradient equilibria 
+if you disturb it, then, 
+this one weigh this 
+point makes restore 
+so orientations 
+shapes give us that 
+you guys mentioned earlier, 
+one way to make things go to zero 
+is simply differences 
+to vanish 
+that means, you guys already 
+identified, is that principal 
+inertias must equal is either 
+a sphere a cube, kinds shapes 
+so, there particular shapes that 
+make attitude go to 
+thats so 
+gravity gradient torque go to 
+thats important, there a 
+satellite that we built here called dandy 
+anybody know that one 
+heard a little bit, right 
+a sphere reason like that so 
+we could this stuff, 
+didnt gravity gradient 
+torques disturbing i really wanted 
+to measure atmospheric force effects, 
+i didnt need disturbances 
+acting much 
+so that really leading to this 
+decision, right, that gave us zero 
+gravity gradient torques, 
+also atmospheric drag effects so 
+you didnt weird panels sticking out, 
+there reasons 
+so way we make go to 
+zero is we look components 
+there particular orientations 
+remember, rc one two three, 
+position vector always 
+points to straight outward 
+depending attitude, i will 
+different rc , , components 
+there different orientations that 
+will force this lg to go to zero 
+answer im showing you 
+is rc is equal to rc times bi 
+so, is david 
+that mean orientation, 
+if rc is equal to rc bi hat 
+mean youre aligning body 
+axis o frame that you created 
+specific, 
+part o frame 
+radius vector 
+right, if you say youre adding 
+a body axis relative to o frame 
+if theyre principal inertia axis 
+that implies 
+principal inertia axis 
+to line o frame, 
+thats true 
+so second argument is correct, 
+we really care is 
+rc part here that we have, right 
+thats in o direction here, 
+basically orbit to radium to axis 
+so that says is 
+position vector that direction to 
+a principal axis body 
+that could b, b, b 
+locking 
+one r axis in 
+im going to use to 
+three distinct axis, right 
+so we have, this is a principal axis, 
+this is a principal axis, 
+this is a principal axis 
+says that if i line one 
+things a principal axis 
+lets simple example, right 
+here i skinny axis 
+in vertical direction 
+that satisfies that condition 
+if i rotate that axis, 
+this is still in equilibrium, 
+symmetry stuff, right 
+so you see, 
+that orientation doesnt matter 
+matters that one 
+principal axes is lined 
+this is another one that we identified, 
+right gravity gradients 
+even cancelled 
+i rotate that 
+gravity direction 
+i still a zero gravity 
+gradient torque, right 
+thats this condition means 
+so locks one body axis to 
+aligned orbit direction vector 
+thats 
+still leaves an infinity 
+orientations you rotate 
+that local vertical axis 
+okay, good, yes 
+inaudible 
+thinking like j that stuff 
+inaudible 
+theyre pretty small 
+j is a thousand times 
+smaller regular stuff 
+so if you care accuracies, you 
+could that youd to account 
+that in developments, 
+that would actual terms 
+i dont typically see 
+this is already a pretty small torque 
+many simulations dont even include this, 
+if you include it, great, 
+j is much, much smaller 
+if youre going around asteroids, 
+thats a whole different problem 
+if youre looking 
+an asteroid binary system, 
+i know you this year 
+might looking 
+thats a full thing 
+you expansions 
+like ive done 
+two bodies treating earth 
+a big point mass, a big thing 
+earth, is spherical 
+far that goes, right 
+yep, no, great question 
+so, this would modified 
+process is same, you might 
+extra conditions to line 
+local area, that mean 

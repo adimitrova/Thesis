@@ -1,0 +1,168 @@
+music 
+in this sixth module, 
+we discussing weak interactions 
+in this nineth video, we talk 
+neutrinos particles 
+that interact exclusively 
+weak interactions 
+following this video, you will know 
+basic properties neutrinos 
+fabulously small 
+crosssection mater 
+processes involving neutrinos 
+due to weak interactions neutrinos 
+carry neither electric 
+color charge 
+process weak neutral 
+interactions discovered 
+is elastic scattering 
+neutrinos electrons, 
+namely nu e nu e 
+this picture taken 
+a gargamelle bubble chamber cern 
+documents first 
+observation this reaction type 
+is in fact first observation 
+a weak neutrino current event 
+neutrino enters left 
+interacts an atomic 
+electron liquid 
+a single visible track leaves 
+interaction vertex 
+is due to a minimum ionizing particle 
+shown low bubble density 
+particle also causes bremsstrahlung 
+is therefore clearly an electron 
+bremsstrahlung photon is 
+converted an e e pair 
+since observation this reaction, 
+neutrino become a precious tool 
+study weak interactions, 
+particularly interactions z 
+w matter 
+energies much lower 
+z boson mass, 
+crosssection depends coupling 
+constants gv ga electron 
+neutrino we 
+fixed to onehalf 
+coupling constants already 
+discussed defined in video 
+crosssection is valid 
+neutrinos second 
+third generation, 
+that is to say nu nutau 
+antineutrino, crosssection 
+is indicated lower equation 
+differs neutrino crosssection 
+in sign interference term 
+between vector 
+axialvector contributions 
+neutrino electron crosssections 
+extremely small 
+proportionality to 
+enu comes 
+total energy available in initial 
+state s, is pk, 
+in approximation 
+zero neutrino mass, 
+is two times energy neutrino 
+times mass electron 
+this proportionality is regularized 
+high energy z propagator 
+hidden in fermi constant, gf 
+gev, crosssections 
+order attobarn 
+rates thus desperately low 
+obviously, neutrino also 
+interact quarks 
+exchange a z boson 
+this image taken 
+gargamelle bubble chamber 
+in cern neutrino beam 
+here we show original 
+negative picture 
+neutrino 
+enters left 
+interacts this time 
+a proton liquid 
+there three hadrons 
+coming vertex, 
+two positively charged 
+one negative, shown curvature 
+tracks in magnetic field 
+proton in middle interacts 
+a nucleus liquid, 
+pions slowed 
+dedx absorbed 
+neutrino escapes 
+without leaving a track 
+neutrinos also interact via w exchange 
+in charged weak interactions, like 
+in this example 
+neutrino 
+enters left 
+interacts this time a neutron 
+a leaves chamber 
+minimal ionization 
+a highly ionizing proton 
+is visible vertex 
+a decays two photons 
+in turn converted 
+e e pairs 
+two charged pions interact 
+liquid strong force 
+produce hadrons 
+you see examples that bubble 
+chamber images contain a lot 
+information graphical 
+easily interpreted to 
+identify reaction final state 
+in fact, photos this type 
+awakened fascination 
+particle physics in 
+this analog technology is 
+course longer used today 
+we seen that 
+neutrinoelectron interactions, 
+crosssection is proportional 
+to neutrino energy 
+this is true in general to purely 
+leptonic interactions between 
+neutrinos quarks charged, 
+well neutral current interactions 
+here you see compilation 
+particle data group neutrino 
+antineutrino charged 
+current crosssections, 
+divided neutrino energy to 
+better appreciate proportionality 
+you may wonder if point, 
+a crosssection 
+that increases energy will 
+violate unitarity limit 
+indeed, neutrino crosssections 
+regularized propagator w 
+z boson high q 
+to see this effect propagator, 
+we need fabulously high energies beyond 
+ev in laboratory 
+frame, that is to say , tev 
+this graph shows a calculation 
+crosssection high energy 
+z resonance is clearly visible 
+reactions involve an 
+schannel z exchange 
+beyond resonance, propagator 
+regularizes cross sections that 
+will eventually tend to 
+reactions involving w 
+exchange in tchannel, 
+regularization takes much higher energy, 
+since a small fraction 
+neutrino energy 
+is transmitted to target 
+in next video, 
+we will discuss oscillations 
+between different neutrino species 
+music 

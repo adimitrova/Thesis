@@ -1,0 +1,291 @@
+next topic we discuss is, spatial key 
+framing character animation 
+and, work we introduce here 
+published spatial key framing 
+performancedriven animation 
+so motivation here is, creation 
+character animation is tedious 
+difficult 
+so heres a list of, popular techniques, 
+so key framing, motion capture, physics 
+scripting 
+keyframe is way popular 
+technique 
+so you set key bodies time frame 
+so, a program we want to address here 
+is creation character animation is 
+tedious difficult 
+here a list current popular 
+techniques 
+key framing, motion capture, physics, 
+scripting 
+so ways popular technique is 
+key framing 
+so you get a character time 
+you place a pose 
+like time zero, this pose, time one, this 
+pose, time two, this pose 
+so individual key framing 
+however, this is difficult to 
+especially, we use to get a smooth 
+animation using this key framing 
+if you poorly, like a robotic 
+motion 
+another popular technique is 
+motion capture 
+you directly record body motion using 
+tracking systems 
+however this one requires special device, 
+special space, 
+also scale, skilled actors is 
+difficult 
+physics simulation is also used 
+good designing character 
+animation 
+scripting is also used a robotic 
+motion, like change angle this to change 
+this angle 
+however, this is good expressive 
+character animation 
+so we want to is easily sketch 
+create, you know dynamic form motions 
+character 
+so basic idea is simple 
+we believe that best, easiest way is 
+to 
+directly manipulate a character in front 
+camera 
+press record, 
+manipulate, 
+stop play back thing 
+so direct recording performers 
+best way to 
+one problem here is that typical input 
+device is limited degree freedom 
+so example, if you use a mouse, you 
+x y inputs, two dimensional 
+inputs 
+however, character usually a high 
+degree freedom 
+so joint three degrees 
+rotation freedom, you many many 
+joints 
+so you to control many joints 
+single 
+mouse, difficult a 
+performancebased recording 
+so proposal is to use spatial 
+keyframing, so user designer first 
+specifies 
+prepares key poses in d space 
+blend them, depending control 
+handle 
+so let show you a demo 
+so, here is a character in d space 
+we make an animation this 
+character 
+i said, difficult project is key 
+framing 
+you know, this time, this pose, next time, 
+this pose, next time, this pose so 
+very, tedious to this 
+a long animation sequence 
+so, process is to directly record a 
+motion 
+particularly, if but, if you use one 
+one, tedious 
+in this you head, arm, 
+leg, you cannot manipulate 
+together 
+so approach is to use a predefined key 
+frame 
+so you say, this pose is associated 
+this 
+position, next pause is 
+associated this position 
+then, so you two key frames 
+so, standard key frames associate 
+timeline 
+here, key frames associated 
+spatial locations 
+clicking you jump to key 
+frames dragging you plan 
+
+so now, you control three joints 
+a single mass 
+an interesting point here, is that you 
+add more, key poses easily 
+so, you know three key poses 
+blend together, you get 
+a reasonably interesting motion already 
+you add more, operation 
+
+key poses, like a kick kick so 
+right, let show you a couple 
+examples 
+so, so 
+here, again, individual poses so 
+complicated 
+however, if you hide, start 
+moving around ball, you 
+make this teddy bear juggling, 
+using a twodimensional mouse 
+another example is this one 
+so again, individual coordinates 
+so expressive 
+however, you start moving around, 
+you make dance like this way 
+so here you know, hand motion is 
+directly 
+appears in character motion, so that 
+resulting motion is expressive 
+so course, you let go this 
+motion you know, one, two, one, two, mm 
+so you get this animation 
+you get a motion 
+so 
+you see many different 
+locations 
+okay 
+let show you a couple 
+examples 
+so here is a kicking motion 
+so you many, many couple key 
+poses 
+dragging this lead ball you 
+make 
+teddy bear make a high kick, well a 
+low kick 
+this is a mushroom, jumping, so you 
+five six key bodies 
+directly manipulating that 
+ball you make this animation 
+blankaudio 
+this is a teddy bear in trouble, i 
+think six key poses 
+then, you know, says first, 
+get idea, happy 
+so, you make this kind expressive 
+emotion 
+using hand motion integrated 
+final 
+blankaudio 
+here this eyeballs also a separate 
+joint so you control rotation 
+blankaudio 
+okay, so let briefly describe 
+algorithm to this 
+so input to this system is handle 
+coordinates 
+so, you d mouse, you 
+control lead ball position using a 
+mouse 
+output is orientation 
+joint 
+so, you many in rotation angles 
+so, question here is to represent 
+orientation angle, rotation joint angle 
+there a couple ways to represent 
+joint angles like euler 
+angles quaternions here we use a 
+rotation matrix, so nine elements 
+like this way, so joint a three 
+three 
+matrix represents also 
+axis joint 
+we need to control 
+nine 
+parameters joint depending 
+user input 
+so lets take this joint 
+so, this joint suppose we three 
+special key frames, 
+key frame this nine 
+parameters joint 
+user specifies new handle 
+position we 
+need to compute three three matrix 
+this position this joint 
+to this we basically blend nearby 
+three key poses 
+so you wont to this 
+lets take, we compute interpretation 
+individual elements 
+individual entry three 
+three matrix 
+so this is a simple skeletal body 
+interpolation 
+here we use a technique called radial 
+basis function interpolation 
+so this is a scattered data interpolation 
+using radial basis functions 
+this is a kind stand technique 
+you use a possible 
+interpolation techniques 
+this is easy to implement, easy 
+to use 
+idea is simple 
+so a supposed example you three 
+skeletal bodies special location 
+location, we a 
+kernel function 
+kernel function, we eh, compute 
+appropriate waiting coefficients 
+kernels 
+adding together, 
+you will get a smooth, interpolating 
+function 
+if you want to know more, you can, i 
+recommend you to take paper turk in 
+so 
+computing this line, this 
+skeletal body interpolation individual 
+elements, you nine elements in a 
+three three matrix 
+unfortunately, if you apply 
+interpolation independently to 
+entries in resulting matrix, is 
+necessarily orthonormal, you know 
+rotation matrix needs to be, orthonormal 
+also perpendicular to 
+also directions equal to 
+one 
+so that we apply orthonomalization 
+operation to 
+three three matrix to get this 
+one 
+i always skip details this 
+orthonormalization theres a standard 
+approach 
+okay, so heres a summary 
+so we introduce spatial keyframing 
+creating character animation quickly 
+easily 
+a user defines key poses in screen 
+space, system automatically 
+blends nearby key poses 
+in order to so, we use rotation matrix 
+
+we use radial basis function interpolation 
+element in matrix 
+so to learn more, original paper 
+published spatial keyframing 
+performancedriven 
+animation, if you want to learn 
+interpolation radial basis 
+functions 
+theres a paper titled modeling 
+implicit surfaces that interpolate 
+heres an example 
+so use a space prior positions in d 
+space 
+this technique generates a 
+beautiful smooth surface 
+interpolating points 
+interpolation d angles is popular 
+topic discussion in graphics community 
+popular technique used is 
+quaternion interpretation 
+i recommend you take a lot 
+original paper published in siggraph 
+thank you 

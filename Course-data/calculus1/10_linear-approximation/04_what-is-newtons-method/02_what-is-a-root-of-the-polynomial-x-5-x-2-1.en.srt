@@ -1,0 +1,443 @@
+1
+00:00:00,012 --> 00:00:06,540
+[music] Just for fun I'd like to know a
+root of the polynomial x to the 5th, plus
+
+2
+00:00:06,540 --> 00:00:11,233
+x squared, minus 1.
+So here's the function where I want to
+
+3
+00:00:11,233 --> 00:00:16,034
+find a root, right?
+I want to find some input that makes this
+
+4
+00:00:16,034 --> 00:00:20,639
+function equal to 0.
+What do I know about this function?
+
+5
+00:00:20,639 --> 00:00:25,324
+It's continuous and I know that f of 0, if
+I plug in 0.
+
+6
+00:00:25,324 --> 00:00:28,918
+It's 0 plus 0 minus 1.
+So f of zero is minus 1.
+
+7
+00:00:28,918 --> 00:00:32,686
+And f of 1 is 1 to the 5th plus 1 squared
+minus 1.
+
+8
+00:00:32,686 --> 00:00:37,616
+That's 1 plus 1 minus 1, that's 1.
+So what I know here is I've got a
+
+9
+00:00:37,616 --> 00:00:42,054
+continuous function.
+And its value at 0 is minus 1 and its
+
+10
+00:00:42,054 --> 00:00:45,898
+value at 1 is 1.
+So there has to be some input between 0
+
+11
+00:00:45,898 --> 00:00:49,436
+and 1 where this function's output is
+equal to 0.
+
+12
+00:00:49,436 --> 00:00:52,776
+So I know there's a root there between 0
+and 1.
+
+13
+00:00:52,776 --> 00:00:57,872
+Let's find that root.
+Now, if we were just trying to find where
+
+14
+00:00:57,872 --> 00:01:03,135
+some linear term was equal to 0.
+You can just solve for x, in that case.
+
+15
+00:01:03,135 --> 00:01:07,727
+If I were just trying to figure out where
+some quadratic was equal to 0.
+
+16
+00:01:07,727 --> 00:01:12,068
+There's the quadratic formula.
+If I were trying to figure out where ax
+
+17
+00:01:12,068 --> 00:01:15,294
+cubed plus bx squared plus cx plus d was
+equal to 0.
+
+18
+00:01:15,294 --> 00:01:19,223
+I could use a more complicated formula.
+It's the cubic formula.
+
+19
+00:01:19,223 --> 00:01:22,576
+It's way more complicated than the
+quadratic formula.
+
+20
+00:01:22,576 --> 00:01:27,842
+But there is such a formula.
+If I were trying to solve an equation like
+
+21
+00:01:27,842 --> 00:01:33,732
+this that started with a X to the 4th
+term, I could use the quartic formula to
+
+22
+00:01:33,732 --> 00:01:37,330
+do that.
+The bad news is that here I'm trying to
+
+23
+00:01:37,330 --> 00:01:43,402
+solve a quintic and there is no quintic
+formula in terms of the usual arithmetic
+
+24
+00:01:43,402 --> 00:01:48,322
+operations plus, minus, times, and
+divides, and taking roots.
+
+25
+00:01:48,322 --> 00:01:52,546
+Of course some quintics can be solved I
+mean, it's true.
+
+26
+00:01:52,546 --> 00:01:55,404
+Right?
+If I had instead been trying to find a
+
+27
+00:01:55,404 --> 00:02:00,381
+solution to this equation, x to the 5th
+minus 2 equals 0, I'm looking for some
+
+28
+00:02:00,381 --> 00:02:04,183
+value of x, take its 5th power and
+subtract 2 and I'd get 0.
+
+29
+00:02:04,183 --> 00:02:06,809
+Yes, I could solve this quintec.
+Right?
+
+30
+00:02:06,809 --> 00:02:09,940
+I mean, its solution is the 5th root of 2.
+2.
+
+31
+00:02:09,940 --> 00:02:16,678
+But in contrast this particular example X
+to the 5th plus X squared minus 1 can't be
+
+32
+00:02:16,678 --> 00:02:23,311
+solved in the sense that I can't write
+down using fractions, plus, minus, times,
+
+33
+00:02:23,311 --> 00:02:28,747
+divides, and the taking of roots.
+A number which, if I take it's 5th power,
+
+34
+00:02:28,747 --> 00:02:31,796
+add it to its square, and subtract 1, I
+get back 0.
+
+35
+00:02:31,796 --> 00:02:34,462
+Right?
+I mean, that's the sense in which I can't
+
+36
+00:02:34,462 --> 00:02:37,054
+solve it.
+I can't just write that thing down in
+
+37
+00:02:37,054 --> 00:02:39,514
+terms of the operations that I have at
+hand.
+
+38
+00:02:39,514 --> 00:02:42,789
+Knowing that requires something called the
+Galois theory.
+
+39
+00:02:42,789 --> 00:02:46,713
+So in light of Galois theory, what does it
+even mean to find a, A root.
+
+40
+00:02:46,713 --> 00:02:49,990
+Well, I'm not going to be able to write
+down the root.
+
+41
+00:02:49,990 --> 00:02:54,203
+But I can at least approximate the root by
+using Newton's method.
+
+42
+00:02:54,203 --> 00:02:58,056
+So I can use Newton's method to at least
+approximate a root.
+
+43
+00:02:58,056 --> 00:03:01,981
+So here's the function whose root I want
+to approximate.
+
+44
+00:03:01,981 --> 00:03:04,963
+Right?
+I want to find some input so that f is
+
+45
+00:03:04,963 --> 00:03:07,952
+close to 0.
+And I'll first differentiate f.
+
+46
+00:03:07,952 --> 00:03:12,214
+So the derivative of f, well the
+derivative of x to the 5th is 5 x to the
+
+47
+00:03:12,214 --> 00:03:16,221
+4th, derivative of x squared is 2 x, and
+the derivative of 1 is 0.
+
+48
+00:03:16,221 --> 00:03:20,896
+So I've got my original function.
+I've got my derivative, and then Newton's
+
+49
+00:03:20,896 --> 00:03:23,875
+method tells me that I should make a first
+guess.
+
+50
+00:03:23,875 --> 00:03:27,541
+My first guess will be 1.
+So I've made my initial guess.
+
+51
+00:03:27,541 --> 00:03:31,332
+What's my next guess?
+So my next guess according to Newton's
+
+52
+00:03:31,332 --> 00:03:34,197
+method.
+We'll call that x of 1, would be my old
+
+53
+00:03:34,197 --> 00:03:38,971
+guess minus the functions value of my old
+guess, divided by the function's
+
+54
+00:03:38,971 --> 00:03:42,646
+derivative at my old guess.
+And now my old guess is 1.
+
+55
+00:03:42,646 --> 00:03:48,525
+The function's value at 1, that's 1 to the
+5th plus 1 squared minus 1.
+
+56
+00:03:48,525 --> 00:03:54,472
+That's 1 plus 1 minus 1, that's 1.
+And the derivative at 1, now that's 5
+
+57
+00:03:54,472 --> 00:03:59,401
+times 1 to the 4th plus 2 times 1.
+That's 5 plus 2, that's 7.
+
+58
+00:03:59,401 --> 00:04:06,072
+So, my new guess is 1 minus 1 over 7.
+That's 6 7ths, so that's my new guess.
+
+59
+00:04:06,072 --> 00:04:10,249
+And 6 7ths really isn't that bad of a
+guess.
+
+60
+00:04:10,249 --> 00:04:14,858
+So my original guess, right, x0, that was
+1.
+
+61
+00:04:14,858 --> 00:04:21,070
+And f of 1 was just 1.
+My next guess, x1, that was 6 7ths, right?
+
+62
+00:04:21,070 --> 00:04:26,702
+And what's f of 6 7ths?
+Well that's 6 7ths to the 5th plus 6 7ths
+
+63
+00:04:26,702 --> 00:04:31,142
+squared minus 1.
+That turns out to be about .197.
+
+64
+00:04:31,142 --> 00:04:35,556
+Right?
+So certainly this 6 7ths is a better guess
+
+65
+00:04:35,556 --> 00:04:39,874
+than 1.
+Now armed with my better guess I can apply
+
+66
+00:04:39,874 --> 00:04:47,257
+Newton's method again and hopefully arrive
+at an even better approximation to the
+
+67
+00:04:47,257 --> 00:04:50,747
+rut.
+So I get a new guess, x sub 2, by taking
+
+68
+00:04:50,747 --> 00:04:57,281
+my old guess, x sub 1, and subtracting the
+functions value there, divided by the
+
+69
+00:04:57,281 --> 00:05:03,237
+functions derivative there.
+And when I do that I get something which
+
+70
+00:05:03,237 --> 00:05:07,790
+is a about .812.
+X of 2 is an even better guess.
+
+71
+00:05:07,790 --> 00:05:15,454
+So I evaluate my function F at X 2, I get
+well it turns out to be about .014.
+
+72
+00:05:15,454 --> 00:05:23,908
+So this new guess for the root of my
+function is even better then my old guess,
+
+73
+00:05:23,908 --> 00:05:27,992
+right?
+My old guess was giving me .197 as the
+
+74
+00:05:27,992 --> 00:05:34,832
+output This new guess is getting me closer
+to a 0 of the function looks like.
+
+75
+00:05:34,832 --> 00:05:37,605
+Well don't stop.
+I'll do it again.
+
+76
+00:05:37,605 --> 00:05:43,308
+I can do Newton's method again, right.
+And I'll get a newer guess even.
+
+77
+00:05:43,308 --> 00:05:48,284
+X of 3 will be x of 2 minus f of x of 2
+divided by the derivative.
+
+78
+00:05:48,284 --> 00:05:54,018
+Of, of f at x sub 2 n.
+This turns out to be about .809.
+
+79
+00:05:54,018 --> 00:06:01,237
+This last guess is even better.
+And this is really working quite well.
+
+80
+00:06:01,237 --> 00:06:07,326
+F at this new guess, x sub 3, turns out to
+be about 0.000085.
+
+81
+00:06:07,326 --> 00:06:14,340
+And I'm getting much closer now to the
+actual 0 of this function.
+
+82
+00:06:14,340 --> 00:06:19,616
+These sorts of examples of polynomials
+where I can't explicitly write down the
+
+83
+00:06:19,616 --> 00:06:22,687
+root.
+They really raise a fascinating question
+
+84
+00:06:22,687 --> 00:06:27,506
+as to what it even means to find the root.
+All right, the intermediate value theorem
+
+85
+00:06:27,506 --> 00:06:33,461
+promises me that there is a root.
+In this case, between 0 and 1.
+
+86
+00:06:33,461 --> 00:06:40,661
+And Newton's method, or this bi-section
+algorithm permits me to get better and
+
+87
+00:06:40,661 --> 00:06:47,391
+better approximations to that root.
+But it's only in that sense that I can
+
+88
+00:06:47,391 --> 00:06:52,842
+ever find the root.
+It's in the sense that I can get as close
+
+89
+00:06:52,842 --> 00:06:55,124
+as you want to that root.

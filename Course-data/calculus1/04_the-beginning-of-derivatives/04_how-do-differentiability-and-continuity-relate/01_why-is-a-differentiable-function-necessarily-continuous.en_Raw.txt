@@ -1,0 +1,162 @@
+[music]. 
+remember, continuity is all how nearby 
+inputs are sent to nearby outputs. 
+differentiability is how wiggling the 
+input affects the output. 
+in light of this, they seemed related, 
+right? 
+something like the following seems 
+plausible. 
+here's the theorem. 
+theorem. 
+if f is differentiable at a, then f is 
+continuous at a. 
+in other words, a differentiable function 
+is continuous. 
+morely, we know that a differentiable 
+function is continuous. 
+but were advanced enough at the is point 
+in the course to give a precise argument 
+using limit. 
+here we go. 
+let's suppose that f prime of a exists. 
+in other words, that means a certain 
+limit exists. 
+what limit? well, the limit of 
+f(x)-f(x)/x-a as x approaches a. 
+this limit of a difference quotients 
+computes the derivative for the function 
+at a. so, to say that the derivative 
+exists is to say that this limit exists. 
+now, here comes the trick. 
+what i'd like to compute is the limit of 
+f(x)-f(a) as x approaches a, but i don't 
+know how to do that directly. 
+but, i can rewrite this thing i'm taking 
+the limit of as a product. 
+watch. 
+instead of taking this limit, i'm going 
+to take the limit as x approaches a of 
+x-a times this difference quotient, times 
+f(x)-f(a)/x-a. 
+now, as long as x isn't equal to a, this 
+product is equal to this difference. 
+now, why does that help? well, this is a 
+limit of a product. 
+so, by one of the limit laws, the limit 
+of a product's the product of the limits 
+as long as the limits exist. 
+and in this case, they do. 
+so, this limit of this product is, the 
+product of the limits. 
+it's the limit of x-a as x approaches a, 
+times the limit of f(x)-f(a)/x-a. 
+i'm only allowed to use this limit law 
+because i know both of these limits 
+exist. 
+now, this first limit, the limit of x-a 
+as x approaches a, that's 0. 
+and this second limit, well, this limit 
+exists precisely because i'm assuming 
+differentiability, 
+the function's are differentiable. 
+so, this limit is calculating the 
+derivative at a, and zero times any 
+number is equal to zero. 
+the upshot here is that we've shown that 
+the limit of f(x)-f(a)=0 as x approaches 
+a. 
+why would you care about this? how does 
+that help us? we know that the limit of 
+f(x)-f(a) as x approaches a is equal to 
+what that means is that the limit of f(x) 
+as x approaches a is equal to f(a), but 
+this is just the definition of 
+continuity. 
+so now we know that f is continuous at 
+the point a. 
+that's where we ended up. 
+remember, what we started with. 
+we started by assuming that f was 
+differentiable at a. 
+and after doing all this work, we ended 
+up concluding that f is continuous at the 
+point a. 
+so, differentiability implies continuity. 
+one way to keep track of arguments like 
+this is to think about clouds and rain. 
+theorem. 
+if it is rainy, then it is cloudy. 
+a shorter way of saying this, rainy 
+implies cloudy. 
+now the question is, does it go the other 
+way? if it's cloudy, is it necessarily 
+rainy? can you think of a cloudy day with 
+no rain? yes, today. 
+let's look out the window. 
+it is very cloudy but there's no rain. 
+beyond clouds and rain, let's bring this 
+back to the mathematics. a differentiable 
+function is continuous, can you think of 
+a continuous function which isn't 
+differentiable? 
+you might want to hit pause right now, 
+if you don't want the puzzle given away. 
+here's an example of a function which is 
+continuous but not differential, 
+the function f(x)=|x|. 
+we recently saw that the absolute value 
+function wasn't differentable at zero. 
+but how do we know that the absolute 
+value function is continuous everywhere? 
+we know that the absolute value function 
+is continuous. 
+i mean, look at it. 
+it's all one piece. 
+but, we can do better. 
+we can use our limit knowledge to make a 
+more precise argument. 
+we know that f(x)=|x| is continuous for 
+positive inputs. 
+it's continuous on the open interval from 
+zero to infinity because the function x 
+is continuous there. 
+and this function, the absolute value 
+function, agrees with the function x if i 
+plug in positive numbers. 
+likewise, i know that the function is 
+continuous on negative inputs because the 
+function -x is continuous there, and the 
+function -x agrees with this function on 
+this interval. 
+the only sticking point is to check that 
+the function's continuous at zero. and if 
+i know it's continuous for positive 
+inputs, negative inputs, and it's 
+continuous at zero, then i know that it's 
+continuous for all inputs. 
+now, how do i know that the absolute 
+value function is continuous at zero? 
+well, that's another limit argument, 
+right? the limit of the absolute value 
+function when i push from the right-hand 
+side is the same as the limit of the 
+absolute value function when i push from 
+the left-hand side, they're both zero. 
+and because these two one-sided limits 
+exist and agree, then i know the 
+two-sided limit of the absolute value 
+function is equal to zero, 
+which is also the function's value at 
+zero. 
+and therefore, the abslute value function 
+is continuous. 
+in the end, there's some relationship 
+between differentiability and continuity. 
+differentiable functions are continuous. 
+mathematics isn't just a sequence of 
+unrelated concepts. 
+[music] it's a single unified whole. 
+all of these ideas are connected at the 
+deepest possible levels. 
+[music] 

@@ -1,0 +1,136 @@
+last thing i want to talk today 
+is another powerful mathematical function 
+that we use a lot enjoying, and, the, 
+functions are, trigonometry 
+he, probably studied in high school 
+equivalent 
+three functions that relate 
+to triangles 
+relate angles triangles 
+so, if we look slide here, weve 
+got a right angled triangle 
+weve got an angle a in that triangle, 
+we label sides 
+adjacent side, means side 
+thats next to angle 
+opposite side, ones opposite 
+hypotenuse, is long 
+long angle, long side 
+triangle 
+this trigonometric functions 
+defined in terms three sides 
+sine an angle is opposite side 
+to that angle divided this hypotenuse, 
+length opposite side divided 
+hypotenuse 
+in case tangent, also 
+defined way 
+now, actually going to use 
+to work angles triangles, 
+im going to show you something 
+different 
+im actually interested in working 
+sine a function, a 
+really instant function 
+really powerful 
+graphics animation, im going to show 
+you 
+so, if drawing circle, you 
+that vertical line in circle is 
+opposite angle in middle 
+circle we rotate around 
+so, we see drawing a circle, 
+im tracing path 
+actual sine function time 
+drawing circle 
+you see, is that angle 
+is 
+starts again, near zero, 
+sine function zero 
+gets increasingly negative, 
+increasingly positive 
+goes back to zero again, 
+starts way around a circle 
+so, repeated exactly, going 
+negative, going positive 
+whats powerful is that 
+repetitive oscillating function 
+so, goes down, down, 
+time 
+looks a little bit like a wave 
+in fact, a important mechanism 
+modeling sound wave 
+sound waves act a lot like sou, sine 
+waves 
+in fact, we build sound wave 
+a whole load si, si, sine 
+functions different sizes 
+frequencies 
+so, we, we this 
+well, we come to that, ill talk a 
+little bit function 
+so, this is detail sine, 
+sine function, this is we would write 
+
+using function sine, is 
+calculates sine an angle, 
+putting numbers in 
+firstly t, we think this time, 
+if youre working animation 
+sounds, sine function is changing 
+time 
+weve got, we multiply result 
+a 
+thats called amplitude, thats 
+high gets also low gets 
+thats big sine wave is 
+in audio, that is closely related to 
+volume audio 
+if you take, if youre listening to 
+sound 
+we frequency, thats 
+many ups downs you get in a 
+second, say, if youre dealing time 
+that im showing you in 
+diagram here is that distance 
+one point to next identical point is one 
+divided frequency wave 
+finally you got phase, that, 
+we really think that waves 
+a starting point to sine wave, say 
+off, far zero point 
+actual function is starting 
+you combine together different 
+sine waves slightly different phases, 
+you get an interesting effect 
+say, youre starting one point, 
+youre starting another one a little bit 
+later, you combine together, 
+thatll inaudible an interesting visual 
+inaudible effect 
+theres a lot you sine 
+waves 
+so, a sine wave used nicely in 
+graphics 
+a nice shape 
+starts to look a bit like a water 
+wave 
+you inaudible, you could model 
+water sine waves 
+certainly, if you add a bunch sine 
+waves together, you get quite a nice 
+model it, even landscapes 
+importantly you use in animation 
+thats really powerful 
+great thing sine wave is that 
+oscillates 
+goes repeatedly 
+thats a really useful thing 
+animating moving objects 
+well see make work, work a lot 
+sine wave inaudible 
+great thing sine wave is, 
+i said, a fantastic tool 
+modeling audio functions, i think 
+matthew will talk that in a later 
+music music 

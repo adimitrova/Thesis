@@ -1,0 +1,181 @@
+so welcome to module course, 
+control mobile robots 
+so far first modules kind 
+introductions to topic 
+previous modules went rather 
+deeply issue of, control 
+sign linear time in variant systems 
+we ended last module a high 
+note 
+showed that we could rather 
+remarkable things, like make a humanoid 
+robot wave in, exciting ways 
+using, control linear time in variant 
+systems 
+now, unfortunately, world isnt that 
+easy 
+especially, robotic world is 
+that easy 
+so this entire module is devoted to 
+we take module 
+make cope realities 
+world in robots embedded 
+in module , actually going to 
+go full force robotics, 
+this module thought 
+glue module between linear systems 
+actual robotics 
+in fact, title this lecture 
+is, switches everywhere, so far 
+modules, models 
+time, in fact, 
+models same, we design a size 
+fits type controller 
+way weve kind messed 
+controllers, is changing the, the, 
+reference values to desired angles 
+
+this humanoid robot, desired 
+velocities angular velocities 
+segue robot 
+but, certainly always true that 
+models never change in real 
+world 
+and, this is never true in robotics, 
+unfortunately 
+in fact, if you recall, we talked 
+in module 
+we talked something called behavior 
+based control 
+robot switches between 
+different modes operation, 
+behaviors, in response to world 
+throws you 
+you see an obstacle, you switch to avoid 
+that obstacle 
+if you, need to go recharge you switch to 
+a, lets look outlets behavior 
+so we need to is somehow come to 
+grips, terms this reality 
+that is going to start this 
+module 
+first thing to note is that in 
+world there switches everywhere 
+so here, left, is a bipedal 
+walking robot 
+well, bipedal walking robots a leg 
+thats swinging, one dynamics, 
+bam, ro, leg is 
+ground, dynamics changed 
+so fact that dynamics 
+changes 
+depending whether youre in 
+swing face, stance face 
+dynamics is different 
+here, i drew a cartoon a bouncing 
+ball 
+well, modes 
+in air, sound 
+bounces 
+something new happens 
+b, ball gets squished, 
+releases 
+so, there 
+we switches 
+i actually included this wonderful 
+picture locusts i 
+actually worked locusts 
+locusts dont bother anyone 
+whats called a solitary mode 
+something happens 
+switch to a gregarious mode 
+lump together devastate harvests 
+everywhere 
+this is a transition that occurs 
+a lack food, instance 
+in the, cases, 
+naturally occurring switches that 
+models to take account 
+now, a robotics point view, 
+may slightly relevant to look 
+switches design instead 
+necessity 
+so here is a gear box to a car 
+switching between different gears 
+we want car to run 
+smoothly different rpms 
+so switching dynamics 
+we to 
+better 
+here, this is a, a cockpit 
+supposed to representing an 
+autopilot an aircraft youre 
+switching between cruise climb turn land 
+takeoff modes 
+so, instead designing controller 
+that takes atlanta, georgia to 
+stockholm, sweden 
+you a bunch different controllers 
+that youre switching in order to 
+this 
+bottom here, we a sensor 
+network 
+where, in order to preserve power, youre 
+turning sensors purpose 
+so, youre switching design, rather 
+necessity 
+and, in robotics 
+everywhere switches design 
+this is south driving georgia tech 
+car that switches between different 
+behaviors depending whats happening 
+in world 
+heres a mobile robot that switches 
+between behaviors depending not, 
+whether there obstacles, i 
+wish we worked snake robotics 
+switching between different modes, 
+depending is going in 
+environment 
+this is a friend in now, this is 
+sensor network, this is aerial 
+robot that weve seen, going to 
+see 
+in cases, going to 
+to switch in order to respond to 
+world throws way 
+now, there issues that we need 
+to deal 
+issue number one is really we 
+model switches we model 
+systems that arent staying 
+time 
+well, question then, course, 
+is if models change, 
+stability performance 
+we go old methods to try to 
+understand this well, this boils 
+to fact, that go to 
+infinity, within a single mode 
+meaning you staying in mode 
+forever, stability is defined 
+happens goes to infinity, 
+go to infinity in in, 
+individual mode 
+so, we somewhat need to understand that 
+we also issues compositionality 
+this is fancy speak saying, if i 
+multiple modes multiple controllers, 
+i put together is 
+way in fit together like lego 
+pieces in a big lego drawing 
+and, importantly, there traps 
+there issues that arise 
+switches that we dont fully know 
+to deal 
+now, this module will deal 
+this, 
+in next lecture, going to 
+start first question is, 
+we really model hybrid switched 
+systems in a systematic coherent way 

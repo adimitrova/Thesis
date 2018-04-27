@@ -1,0 +1,264 @@
+welcome to web connectivity 
+security course 
+in this course we will study different web 
+connectivity standards, solutions, 
+protocols 
+we will also study need 
+security well protocols, 
+methodologies solutions that will 
+help you mitigate security risks 
+talking web connectivity 
+in cyberphysical systems, first 
+question that arises is, bother 
+connecting embedded systems 
+if there is a device that controls 
+settings microwave oven, 
+need to 
+talk to devices 
+this is a valid point 
+standalone embedded systems exist 
+cater to a specific problem 
+in case a microwave oven 
+another example is an image 
+processor in a digital camera 
+whose purpose is handling light 
+capture sensor 
+to digitize, process, 
+store that information an image 
+performs that specific job 
+well 
+reality is that devices 
+getting complex 
+that connection is needed 
+digital camera wifi 
+gps modules 
+to offer seamless transfer photos 
+a geopack 
+wifi gps modules 
+baseline processors 
+to work seamlessly, 
+you to bring together 
+you to connect 
+reasonably modern car 
+to onboard processors 
+a modern series bmw 
+to a hundred processors 
+control different 
+functions car 
+example gps navigation, entertainment, 
+parking distance control, 
+radar cruise control, so 
+to make car really function 
+provides a safer journey, processors 
+to communicate 
+a classic example is that a car crash 
+in case a crash, car will open 
+door locks deploy air bag 
+may perform emergency 
+functions like flashing headlights 
+,and sending location 
+coordinates to an emergency service 
+this is possible 
+incar network 
+if you think this is much, 
+nvidia announced car computation 
+platform that a combined 
+performance teraflops 
+to put this in perspective, 
+worlds thranked 
+super computer in 
+a computational power 
+teraflops 
+that one , processor cores 
+so, soon car will 
+computation 
+capability super computers in 
+here we discuss 
+selfcontained local networks within cars 
+soon cars will able to communicate 
+cars road 
+traffic monitoring systems 
+thus, future is connected 
+connectivity is optional anymore, 
+fundamental 
+establishing case 
+connectivity in cyberphysical 
+embedded systems, next question would 
+we need web connectivity 
+here we need to a deeper look 
+lets first look 
+benefits web connectivity 
+first 
+foremost benefit is ubiquity 
+web is everywhere, pc, 
+to phones, to even smart watches 
+you access world wide 
+web smartphones 
+also dumb phones a decade ago 
+you need is a browser 
+a browser like opera mini that 
+even bundled embedded systems 
+scalability is another important point 
+world wide web is 
+already quite large 
+accommodate even 
+sources information users 
+web technologies automatically scale, 
+based demand, 
+minimal user intervention 
+scale to user needs, 
+computational load, 
+network requirements 
+world wide web us 
+well two decades 
+that is enough time to test 
+optimize webenabling technologies, 
+html, http, 
+web servers fully understood 
+there highly optimized web servers 
+available small sensors that take 
+less seven kilobytes space, 
+is an efficient use memory 
+one main features web 
+technologies is that dont care 
+underlying architecture 
+technologies 
+one websupported device communicate 
+effectively another one, 
+irrespective system 
+communication infrastructure used 
+lastly, major future technologies 
+will reside web 
+heavily utilize current 
+internet technologies 
+lets take cloud computing 
+you provided ondemand 
+computational power services 
+you use services 
+big data analytics 
+utilize data insights 
+better decisionmaking 
+imagine gathering data 
+hundreds thousands sensors, 
+transferring this data to cloud 
+storage processing, 
+afterwards relaying this decision back 
+to nodes an actuator to activate 
+despite benefits web connectivity, 
+also comes a cost 
+web connectivity, you get to leverage 
+cloud computing infrastructure, 
+remote monitoring assessment 
+well remote command control 
+however, first thing 
+people involved design 
+development connected embedded 
+systems is an increase in complexity 
+compared to a stand alone setup, 
+a network connected system requires 
+extra effort in network design 
+connectivity solutions, 
+in hardware software design 
+to enable that connectivity 
+in later videos well discuss 
+choices you 
+comes to network connectivity 
+moreover, web connectivity you 
+inherit security issues well 
+you connect cyberphysical 
+systems internet, 
+you open to roughly 
+level security weaknesses 
+attacks in 
+internetconnected networks 
+security cant an afterthought anymore 
+if you building a connected system, 
+security an inherent 
+feature right beginning 
+in case car example, you 
+a network limited to cars internals 
+so, locking door 
+will effectively lock 
+thieves accessing 
+computer systems 
+you connect 
+that car to internet, 
+you cant rely locking doors 
+you opened car to attacks 
+anywhere in world 
+assured, 
+we technologies, protocols, 
+solutions that will help 
+mitigate threats 
+well discuss in later videos 
+lastly web connectivity 
+is resource heavy 
+really small low power devices, 
+memory computational power 
+a limited resource, connectivity 
+puts an extra burden resources 
+depending upon connectivity solutions, 
+solutions that you choose, 
+you will to add 
+extra hardware 
+software layers to communicate that 
+takes memory processing power 
+solutions 
+resource hungry others 
+we will discuss that later 
+nonetheless, 
+connectivity adds an extra cost 
+additionally, if you decide to 
+add security, you should, 
+youll need sort cryptographic 
+algorithm to secure data 
+cryptographic computations 
+processorintensive, 
+meaning that put a lot 
+strain processor 
+this drive energy 
+consumption well 
+lets discuss connectivity 
+in cyberphysical systems 
+in a general context 
+course, nice to an overview 
+home you vacation 
+remote start car in a freezing 
+weather so, warm you get inside 
+to able to assess whats 
+wrong in production plant 
+without physically there 
+but, you will come across situations 
+you wont need web connectivity 
+daily life example, 
+you really need to connect 
+standalone coffee machine to wifi 
+course you might think, 
+a coffee machine 
+go wrong if 
+hackers get access to 
+boil coffee to 
+give a bitter taste 
+thing is that coffee 
+machine if security is weak, 
+hackers will get access 
+to network 
+there go to system 
+anywhere 
+in this case, coffee machine 
+is target but, 
+another attack vector system 
+so, yes, there benefits to web 
+connectivity there downsides 
+you will need to is assess whether 
+you really need web connectivity 
+you decide former, 
+youll need a proper implementation 
+that is this course will help you 
+end, youll 
+informed protocols 
+solutions available to you 
+you will able to make informed 
+decisions comes to adding 
+connectivity to embedded solutions 
+music 

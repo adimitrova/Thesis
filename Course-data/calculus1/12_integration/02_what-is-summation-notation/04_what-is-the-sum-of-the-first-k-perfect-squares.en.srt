@@ -1,0 +1,428 @@
+1
+00:00:00,008 --> 00:00:09,480
+[music] What do we get if we add up a
+bunch of perfect squares?
+
+2
+00:00:09,480 --> 00:00:15,847
+Say, the first k perfect squares.
+What I'm asking for is a formula for this
+
+3
+00:00:15,847 --> 00:00:18,890
+sum.
+The sum of n squared as n goes from 1 to
+
+4
+00:00:18,890 --> 00:00:21,237
+k, right?
+So 1 squared, plus 2 squared, plus 3
+
+5
+00:00:21,237 --> 00:00:25,049
+squared, plus dot, dot, dot, right?
+And so on, until I get to k squared.
+
+6
+00:00:25,050 --> 00:00:30,390
+What do I get if I add up the first k?
+Perfect squares.
+
+7
+00:00:30,390 --> 00:00:35,717
+Quite shockingly, the resulting formula
+ends up looking really nice.
+
+8
+00:00:35,718 --> 00:00:46,754
+This ends up being equal to k times k plus
+1 times 2 k plus 1 All over 6.
+
+9
+00:00:46,754 --> 00:00:51,492
+Really?
+Well, we can try it for some specific
+
+10
+00:00:51,492 --> 00:00:52,380
+value.
+All right.
+
+11
+00:00:52,380 --> 00:00:57,252
+What if I do the sum and go from 1 to 4 of
+N squared.
+
+12
+00:00:57,252 --> 00:01:02,115
+That's 1 squared plus 2 squared plus 3
+squared plus 4 squared.
+
+13
+00:01:02,116 --> 00:01:07,970
+That's 1 plus 4 plus 9 plus 16.
+4 and 16 make 20.
+
+14
+00:01:07,970 --> 00:01:12,314
+1 and 9 make 10.
+20 plus 10 is 30.
+
+15
+00:01:12,315 --> 00:01:14,864
+So the sum of the first four perfect
+squares is 30.
+
+16
+00:01:14,864 --> 00:01:18,670
+Is that really what this formula's giving?
+Well let's check it out.
+
+17
+00:01:18,670 --> 00:01:23,923
+So I'm going to put in 4 for K, 4 times 4
+plus 1.
+
+18
+00:01:23,924 --> 00:01:30,070
+Times 2 times 4 plus1 all over 6.
+What's that?
+
+19
+00:01:30,070 --> 00:01:36,663
+Well that's 4 times 5 times 2 times 4 plus
+1 is 9 divided by 6.
+
+20
+00:01:36,664 --> 00:01:44,285
+6 is 2 times 3, so the 2 kills part of the
+4 and part of the 9 to give me 2 times 5
+
+21
+00:01:44,285 --> 00:01:49,157
+times 3.
+And yeah, I mean, 5 times 3 is 15, twice
+
+22
+00:01:49,157 --> 00:01:53,354
+15 is 30.
+It really works, at least for the value 4.
+
+23
+00:01:53,354 --> 00:01:57,691
+Of course, this isn't a proof in general.
+So how am I going to verify that, that
+
+24
+00:01:57,691 --> 00:02:01,410
+statement is true?
+Well, one argument is a geometric
+
+25
+00:02:01,410 --> 00:02:06,823
+argument, really a proof by picture.
+So here's a geometric or a diagrammatic
+
+26
+00:02:06,823 --> 00:02:11,801
+way of writing down 1 squared plus 2
+squared plus 3 squared plus 4 squared.
+
+27
+00:02:11,801 --> 00:02:15,640
+Now I know there's 30 dots here, right.
+But I'm trying to draw a diagram that
+
+28
+00:02:15,640 --> 00:02:17,775
+suggests a general pattern.
+Ok.
+
+29
+00:02:17,775 --> 00:02:22,227
+So let's try to add up.
+These, these four numbers.
+
+30
+00:02:22,228 --> 00:02:25,568
+I'm going to use this device here.
+What is this?
+
+31
+00:02:25,568 --> 00:02:34,622
+Well, what I've done here is I've taken 3
+copies of these k squares, alright.
+
+32
+00:02:34,623 --> 00:02:38,009
+So here's 1 square plus 2 square plus 3
+squares plus 4 squares.
+
+33
+00:02:38,009 --> 00:02:42,256
+Here's another 1 squared plus 2 squared
+plus 3 squared plus 4 squared, and in the
+
+34
+00:02:42,256 --> 00:02:47,575
+middle I sort of mixed it up a little bit.
+I've taken the lower lefthand corner dot,
+
+35
+00:02:47,575 --> 00:02:51,687
+which is red, and I've lined them up
+vertically here.
+
+36
+00:02:51,688 --> 00:02:56,914
+I've taken the next, sort of three long L
+shape which I've drawn in blue here, and
+
+37
+00:02:56,914 --> 00:03:00,989
+I've straightened them out and placed
+those three here.
+
+38
+00:03:00,990 --> 00:03:09,147
+I've taken the two five long orange L's
+and straightened them out here, and then
+
+39
+00:03:09,147 --> 00:03:15,927
+here at the top I've got one long brown L
+comprised of seven dots, and I've
+
+40
+00:03:15,927 --> 00:03:20,589
+straightened that out right here at the
+top.
+
+41
+00:03:20,590 --> 00:03:24,916
+So what's happened here?
+Right, I have taken three copies of my
+
+42
+00:03:24,916 --> 00:03:29,917
+sums of squares, right so I've got three
+copies of all these squares.
+
+43
+00:03:29,918 --> 00:03:34,450
+One set is down here, one sets down here,
+and the other set is mixed in the middle.
+
+44
+00:03:34,450 --> 00:03:38,374
+And now I can figure out how big a
+rectangle this is .
+
+45
+00:03:38,375 --> 00:03:44,575
+Well the bottom here this is a k by k
+square, k by k square and these are built
+
+46
+00:03:44,575 --> 00:03:52,197
+out of the corners that are just 1 dot.
+So there's a whole bottom side is made up
+
+47
+00:03:52,197 --> 00:03:57,114
+of 2 K plus 1 dots, k plus 1 plus k or 2 k
+plus 1.
+
+48
+00:03:57,114 --> 00:04:01,025
+What about along the other side?
+Well along the other side, I've got one
+
+49
+00:04:01,025 --> 00:04:05,985
+dot plus two dots plus three dots plus
+four dots and of course, this is just a
+
+50
+00:04:05,985 --> 00:04:10,657
+specific picture.
+So in general, it will be 1 plus 2 plus 3
+
+51
+00:04:10,657 --> 00:04:15,230
+plus 4 until I get to k.
+So I have to figure out how tall this
+
+52
+00:04:15,230 --> 00:04:20,990
+rectangle is, but I in fact know a formula
+for 1 plus 2 plus 3 plus 4 up through k,
+
+53
+00:04:20,990 --> 00:04:22,989
+alright.
+We figured that out already.
+
+54
+00:04:22,990 --> 00:04:30,164
+It's k times k plus 1 over 2.
+So I've taken three copies and built them
+
+55
+00:04:30,164 --> 00:04:38,131
+into a rectangle who's base is 2k plus 1,
+and which is k times k plus 1 over 2 tall.
+
+56
+00:04:38,132 --> 00:04:43,019
+So that means that this sum, which is what
+I'm trying to compute, must be.
+
+57
+00:04:43,020 --> 00:04:50,010
+Well its the, the height of this rectangle
+times the width of this rectangle divided
+
+58
+00:04:50,010 --> 00:04:56,380
+by 3, since I used three copies of, of
+these squares to build the big rectangle.
+
+59
+00:04:56,380 --> 00:04:59,411
+So I ended up dividing by 3.
+And this is in fact the formula that we
+
+60
+00:04:59,411 --> 00:05:02,210
+had, right?
+The original formula was K times K times 2
+
+61
+00:05:02,210 --> 00:05:06,674
+K plus 1 times 2 K plus 1 all over 6.
+But that's just a rearranged version of
+
+62
+00:05:06,674 --> 00:05:09,355
+this formula.
+There are other geometric arguments as
+
+63
+00:05:09,355 --> 00:05:11,976
+well.
+Other proofs by picture that you could
+
+64
+00:05:11,976 --> 00:05:14,258
+give.
+And there are other geometric arguments
+
+65
+00:05:14,258 --> 00:05:16,910
+too.
+Here's another way to get at this sum of
+
+66
+00:05:16,910 --> 00:05:21,028
+squares formula.
+I could right down my sum of squares as
+
+67
+00:05:21,028 --> 00:05:24,355
+something built out of little tiny
+cubelets.
+
+68
+00:05:24,355 --> 00:05:26,754
+Right?
+Here I've got one cube.
+
+69
+00:05:26,755 --> 00:05:33,904
+Underneath I've got 2 squared cubes right,
+but this is a 2 by 2 by 1 block.
+
+70
+00:05:33,905 --> 00:05:36,096
+Underneath I've got nine little cubes,
+right.
+
+71
+00:05:36,096 --> 00:05:42,134
+It's a 3 by 3 by 1 block.
+And underneath that I've got 16 cubes, a 4
+
+72
+00:05:42,134 --> 00:05:45,440
+by 4 by 1 block, right.
+And I can imagine that this thing is k
+
+73
+00:05:45,440 --> 00:05:48,910
+high.
+I take six copies of this pyramid.
+
+74
+00:05:48,910 --> 00:05:52,400
+You know, fit them together.
+Flip one over and so forth.
+
+75
+00:05:52,400 --> 00:05:56,915
+Until I end up with a K by K plus 1 by 2K
+plus 1 box.
+
+76
+00:05:56,915 --> 00:06:01,150
+Right?
+And that box must be comprise of K times K
+
+77
+00:06:01,150 --> 00:06:07,120
+plus 1 times 2K plus 1 little tiny cubes.
+And since I used six copies of this thing.
+
+78
+00:06:07,120 --> 00:06:09,460
+Well that means the number of cubes in
+this thing.
+
+79
+00:06:09,460 --> 00:06:13,300
+Which is the sum of 1 squared plus 2
+squared plus until I get to k squared.
+
+80
+00:06:13,300 --> 00:06:17,305
+Right?
+That sum must be k times k plus 1 time 2k
+
+81
+00:06:17,305 --> 00:06:22,623
+plus 1 divided by 6.
+And here, we've given geometric arguments
+
+82
+00:06:22,623 --> 00:06:26,623
+for this particular sum.
+But in the future we're also going to see
+
+83
+00:06:26,623 --> 00:06:28,195
+some algebraic arguments.
+Right?
+
+84
+00:06:28,196 --> 00:06:30,099
+But we're going to wait on those a little
+bit.
+
+85
+00:06:30,100 --> 00:06:40,985
+For the time being, this particular
+quality will be very helpful when we start
+
+86
+00:06:40,985 --> 00:06:47,171
+doing some calculations of, Riemann sum.

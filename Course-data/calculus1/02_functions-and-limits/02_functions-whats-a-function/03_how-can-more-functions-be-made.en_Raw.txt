@@ -1,0 +1,94 @@
+functions are going to be the main star 
+of the course. 
+so we should be building up in sort of a 
+repertoire or library of functions that 
+we might be interested in studying. 
+here's the first function in our library 
+f(x) = x, 
+the identity function. 
+whatever you plug in, this function 
+outputs that same thing. 
+here's another function, 
+a constant function. 
+you pick some number c, 
+c stands for constant. 
+alright? 
+and you can define this function, 
+f(x) = c. 
+whatever you plugin for x, f just ignores 
+that and then outputs the original value, 
+c. 
+here's a function, f(x) = 3x + 2. 
+and if you're thinking about stuff like 
+that, why not stuff like this? pick two 
+numbers, a and b, and then you can define 
+a function like this, f(x) = ax + b. 
+you can think about fifth f(x) = x^5 or 
+nth power, f(x) = x^n for some fixed 
+value of n. 
+and about polynomials, like this 
+complicated looking polynomial, f(x) = 
+2x^3 + 5x^2 - 2x + 1. 
+if you're thinking about polynomials, you 
+might want to think about roots, 
+f(x) equals, say the square root of x. 
+you might remember the absolute value 
+function f(x) equals the absolute value 
+of x. 
+you might have some experience with trig 
+functions, 
+like sines, cosines, and tangents, 
+or with other transcendental functions 
+like logarithms and exponentials. 
+so now we've got our small library of 
+functions, 
+the identity function, constant 
+functions, polynomials, some trig 
+functions, 
+and i want more functions. 
+i, i want some way to be able to take two 
+functions and produce a new function out 
+of them. 
+okay. 
+so in this setup i've got a conveyor belt 
+and i've got two functions, 
+a function here and a function here. 
+let's pick out what these functions 
+should be. 
+maybe the first function i'll call f and 
+f(x) would be 2x + 1. 
+so i'll call this function f and maybe 
+the second function i'll call g and g 
+will take its input and square it, so 
+g(x) will be x^2. 
+so i'll label this function, g. 
+and now here, i've got a number 3 and i 
+am going to run that number through the 
+first function and whatever comes out of 
+the first function, i'm going to plug in 
+to the second function to see what comes 
+out. 
+so let's take that number 3, let's start 
+moving the conveyor belt. 
+it's going to go through the function f, 
+f(3) is 2 * 3 + 1 to 6 + 1, which is 7. 
+so now we've got a 7 right there. 
+so the 3 went into the function and came 
+out as a 7. 
+now i'm going to take the output to f and 
+put it in to the input of g. 
+so g(7), well it's going to be 7^2 and 
+that'll be 49. 
+so here now, coming out of the function 
+g, is the number 49. 
+and i could have written this in a little 
+bit a little bit of a shorthand way. 
+i could have just written g(f(4)), 
+right, f(3) is 7 and g(7) is 49. 
+so once i've got this sort of conveyor 
+belt metaphor going on in my head, i 
+could do the following trick. 
+i can take two functions. 
+i can take the output to the first 
+function and plug it in to the input of 
+the second function. 

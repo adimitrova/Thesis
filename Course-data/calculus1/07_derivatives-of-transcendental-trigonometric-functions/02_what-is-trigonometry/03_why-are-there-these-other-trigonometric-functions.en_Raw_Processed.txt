@@ -1,0 +1,126 @@
+music so we know sine cosine 
+funny trig 
+functions 
+so maybe we already know sine 
+cosine, we saw tangent already 
+tangent could defined in terms 
+sine cosine sine theta cosine 
+theta 
+cosecant is defined to sine 
+theta 
+secant is cosine theta 
+cotangent is tangent theta 
+whats so special functions 
+i mean wed a function called 
+cosecant if sine theta 
+dont we always try sine 
+theta 
+that matter even a function 
+called tangent if you compute tangent 
+in terms sines cosines 
+doesnt seeming like we need 
+functions 
+to make matters worse, theres even 
+functions that practically one knows 
+anymore 
+in addition to these, theres 
+haversine function is defined 
+to sine squared angle 
+i mean you really dont need haversine 
+youve got sine 
+considering that functions 
+defined in terms ones, 
+reason studying, you know, 
+trig functions isnt really mathematical 
+you dont really need cosecant if youve 
+got sine 
+reason emphasizing trig 
+functions is cultural 
+functions that people 
+likely to see open 
+technical manual knowing 
+functions sometimes give you right 
+intuition to attack a problem 
+sine cosine legs a 
+right triangle angle theta 
+hypotenuse length 
+pythagorean theorem we get this that sine 
+squared plus cosine squared is equal to 
+if you believe this identity you 
+could divide this identity cosine 
+squared you get sine squared cosine 
+squared plus cosine squared cosine 
+squared is cosine squared 
+weve got 
+functions i could rewrite sine squared 
+cosine squared tangent squared, 
+cosine cosine is , cosine 
+squared is secant squared 
+this is maybe an example 
+knowing functions 
+helpful 
+a little bit easier to internalize 
+this identity, i mean if you walk around 
+you happen to notice that secant 
+squared you think always going to 
+place tangent squared plus 
+say trying to internalize this middle 
+identity 
+this also a lovely geometric picture that 
+kind a sells you an idea that 
+trig functions special role 
+example, here is a unit circle 
+ive drawn an angle measure theta 
+we know lengths in this 
+picture 
+this length across bottom here is 
+cosine theta 
+this length here, height that 
+right triangle is sine theta 
+turns that trig 
+functions also encoded in lengths 
+relevant lines in this diagram 
+instance this line here length 
+tangent theta this line between 
+point y axis length cotangent 
+theta 
+if you measure bottom here 
+length origin to this 
+tangent line crosses that length 
+secant theta 
+and, if we measure here, 
+origin to that tangent line crosses 
+y axis, that segment length 
+cosecant theta 
+so you put functions 
+weve got cosine sine weve also 
+got visibly cotangent, tangent, 
+secant, cosecant 
+secant is measuring you know 
+something thats crossing circle 
+tangent is really measuring length 
+part this tangent line 
+if we take this picture we go 
+fader you wont get idea 
+trig functions vary together 
+instance by, looking this 
+picture theta moving you get a 
+sense functions moving 
+together 
+instance, tangent secant 
+moving together right tangent is 
+really big, secant is really big 
+conversely cotangent is really 
+small, cosecant is you know small, close 
+to 
+use idea to tangent 
+is called tangent 
+is sine called sine 
+so sine comes this latin word sinus, 
+you know, like thing in nose 
+like a opening, if like that 
+an inaudible device you remember 
+that sine is measuring this side 
+right triangle you imagine 
+right triangle sort opens in that 
+side 

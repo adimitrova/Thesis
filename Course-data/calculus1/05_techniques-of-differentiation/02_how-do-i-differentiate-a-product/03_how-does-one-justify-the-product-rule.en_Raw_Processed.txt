@@ -1,0 +1,142 @@
+music we drive product rule 
+going back, to definition 
+derivative 
+so is definition derivative 
+say tell us that derivative 
+product f x g x is a 
+limit 
+limit h approaches zero 
+function xh, which, in this 
+case, is product f g, 
+evaluated xh, im thinking 
+this function, so im plugging in 
+xh, i subtract function 
+evaluated x, is fxgx, 
+i divide that h 
+so, this limit this difference 
+quotient, that gives derivative 
+product 
+i evaluate that limit heres 
+trick, im going to add a disguised 
+version zero to this limit 
+instead calculating limit 
+fxhgxhfxgx, im going to 
+subtract add thing 
+so here, ive got fxhgxh, 
+like here 
+im going to subtract 
+fxhgxh, add back in, 
+plus fxhgx 
+this is zero, 
+i havent done anything 
+im going to subtract fxgx right 
+here im still dividing h 
+so limits, 
+i havent really done anything, ive 
+actually done everything i need 
+introducing extra factors, ive 
+got a common factor fxh here 
+a common factor gx here 
+so, i collect ill get 
+good things happening a result 
+lets see exactly this happens 
+so this is limit h goes to zero, 
+im going to pull that common factor 
+fxh sound 
+im going to multiply whats left 
+gxhgx sound i put 
+h 
+so thats two terms 
+now, whats left here ive got a 
+common factor gx 
+whats left fxhfx ill 
+divide this h, 
+factor i pull is gx 
+so this limit is this limit 
+this is a limit a sum 
+so thats a sum limits provided 
+limits exist well see that 
+
+so this is limit h goes to zero 
+fxhgxhgxh plus lim h 
+goes to zero fxhfxhgx 
+i here ive got limits 
+products products 
+limits providing limits exist, 
+well see, so lets rewrite 
+limits products products 
+limits 
+this is limit h goes to zero 
+fxh times limit h goes to zero 
+gxhgxh 
+you might begin to see whats happening 
+here, 
+plus limit h goes to zero 
+fxhfxh times limit h goes 
+to zero gx 
+okay, 
+weve got to check that 
+limits exist, in order to justify 
+replacing limits inaudible limits 
+limits exist, 
+lets see 
+this first limit, limit fxh 
+h goes to zero, actually hardest 
+one i think, to see 
+remember back, we showed that 
+differentiable functions continuous 
+this is really calculating limit f 
+something, something approaches 
+x 
+thats really this limit is, 
+f is continuous, f is 
+differentiable, this limit is actually 
+fx 
+i think seeing that step is probably 
+hardest in this whole argument 
+whats this thing here well, this is 
+limit thing that calculates 
+derivative g, g is differentiable 
+assumption 
+so, this is derivative g x 
+plus, whats this limit this is 
+limit that calculates derivative 
+f, f is differentiable assumption, 
+so thats f x 
+this is limit gx, h goes to 
+zero 
+this is limit a constant 
+wiggling h doesnt affect this all, so 
+thats gx 
+look weve calculated here 
+limit that calculates derivative 
+product is fxgxfxg, 
+that is product rule 
+we really shown here well, 
+here is one way to write product 
+rule precisely 
+confusingly, im going to define a new 
+function that im calling h 
+so h is product f g now, 
+hxfxgx 
+if f g differentiable 
+point, a, i know derivative 
+product 
+derivative product is 
+derivative f times value g plus 
+value f times derivative g 
+this is a precise statement 
+product rule, you really see, 
+instance, this differentiability 
+condition necessary 
+in proof, point in proof 
+here, i wanted to go a limit a 
+product to product limits 
+in order to that, i need to know 
+that this limit exists 
+that limit is exactly calculating 
+derivative g 
+so you really see 
+conditions playing a crucial role in 
+proof product rule 
+music 

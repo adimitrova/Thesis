@@ -1,0 +1,194 @@
+1
+00:00:00,012 --> 00:00:07,576
+[MUSIC] Remember, f prime of x is 
+encoding how wiggling x affects f of x. 
+
+2
+00:00:07,576 --> 00:00:14,492
+We can see this by thinking about slopes 
+of tangent lines as well. 
+
+3
+00:00:14,492 --> 00:00:21,012
+Here, I've drawn in orange the graph of 
+some random function y=f(x). 
+
+4
+00:00:21,012 --> 00:00:27,582
+And this point, a f(a) I've drawn in red 
+the tangent line to the graph. 
+
+5
+00:00:27,582 --> 00:00:34,533
+I want to know how is the output f 
+affected when input moves from a to a+h. 
+
+6
+00:00:34,533 --> 00:00:39,113
+I want to know what happens when I wiggle 
+the input over by adding h. 
+
+7
+00:00:39,113 --> 00:00:42,048
+Let me zoom in on this picture a little 
+bit. 
+
+8
+00:00:42,048 --> 00:00:47,008
+Here, I've got this tangent line, and the 
+slope of that tangent line is the 
+
+9
+00:00:47,008 --> 00:00:49,922
+derivative of the function at the point 
+a. 
+
+10
+00:00:49,922 --> 00:00:55,887
+That means that this triangle can be 
+understood, right? This slope being 
+
+11
+00:00:55,887 --> 00:01:00,173
+f'(a), this base being h means this 
+height is h*f'(a). 
+
+12
+00:01:01,745 --> 00:01:09,227
+In order to get this slope as f'(a), rise 
+over run better be equal to f'(a), this 
+
+13
+00:01:09,227 --> 00:01:14,637
+divided by this is f'(a). 
+this is giving me some information about 
+
+14
+00:01:14,637 --> 00:01:17,982
+how wiggling the input will affect the 
+output. 
+
+15
+00:01:17,982 --> 00:01:23,517
+If I move from a to a+h, well, on the 
+tangent line m' moving up to this point 
+
+16
+00:01:23,517 --> 00:01:28,052
+which isn't so far off of the real value 
+of the function up here. 
+
+17
+00:01:28,052 --> 00:01:33,227
+Now, if I made h really, really small, 
+I'd be doing an even better job of 
+
+18
+00:01:33,227 --> 00:01:37,567
+staying close to the graph of the 
+function when I follow the tangent line. 
+
+19
+00:01:37,567 --> 00:01:42,362
+Instead of starting with the function and 
+trying to figure out the derivative, we 
+
+20
+00:01:42,362 --> 00:01:47,092
+can imagine that we know a little bit of 
+information about the derivative and try 
+
+21
+00:01:47,092 --> 00:01:49,697
+to figure out something about the 
+function. 
+
+22
+00:01:49,697 --> 00:01:53,882
+Let's make up a concrete example. 
+Suppose that I've got some function f, 
+
+23
+00:01:53,882 --> 00:01:58,940
+and all I know is that its derivative is 
+3x, and its value at 2, is 4. 
+
+24
+00:01:58,940 --> 00:02:06,149
+Just knowing this information without a 
+rule for the function at this point, can 
+
+25
+00:02:06,149 --> 00:02:12,682
+I say anything about the function's value 
+at, say 2.01? Yes, I can. 
+
+26
+00:02:12,682 --> 00:02:23,517
+Right? f(2.01), well that's f(2) plus how 
+much the output changes when I go from 2 
+
+27
+00:02:23,517 --> 00:02:27,854
+to 2.01. 
+Well, the output change is approximately 
+
+28
+00:02:27,854 --> 00:02:31,775
+something that I can compute from the 
+derivative, 
+
+29
+00:02:31,775 --> 00:02:35,093
+right? 
+The derivative is infinitesimally the 
+
+30
+00:02:35,093 --> 00:02:38,685
+ratio between output change and input 
+change. 
+
+31
+00:02:38,685 --> 00:02:44,957
+So if I multiply by how much I change the 
+input by the ratio of input change to 
+
+32
+00:02:44,957 --> 00:02:49,997
+output change, 
+this should be approximately the true 
+
+33
+00:02:49,997 --> 00:02:54,816
+output change. 
+Now, in this case, I know what these 
+
+34
+00:02:54,816 --> 00:02:59,289
+numbers are. 
+0.01 times the derivative of f(2) is 6. 
+
+35
+00:02:59,289 --> 00:03:04,372
+Which means that this is about 4+0.06 
+which is 4.06. 
+
+36
+00:03:04,372 --> 00:03:09,812
+And that's about what this function at 
+2.01 is equal to. 
+
+37
+00:03:09,812 --> 00:03:17,825
+One more cat moves into the neighborhood. 
+What happens to the mouse population? 
+
+38
+00:03:17,825 --> 00:03:24,078
+Right? A small change to one thing will 
+affect something else. 
+
+39
+00:03:24,078 --> 00:03:28,940
+That's what the derivative is encoding. 
+[MUSIC] 

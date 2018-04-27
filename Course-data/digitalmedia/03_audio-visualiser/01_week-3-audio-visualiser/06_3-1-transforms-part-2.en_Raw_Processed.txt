@@ -1,0 +1,133 @@
+sound 
+so transforms great 
+in fact everything if we a 
+transloate will move everything we 
+draw if we one 
+translate another like this 
+well obvious thing that happens 
+is that we move move 
+exactly is happening there 
+we call translate command 
+everything call back command is 
+affected translate including 
+translates we 
+so, if we look second second 
+translate thats a movement object 
+that 
+that is also affected first 
+translate, first translate its, 
+mean to first translate will 
+happen to second translate 
+starting point is point 
+second translate will affected that 
+first translate 
+so 
+happens is that you, effect 
+fir, first translator is 
+applied to second translator 
+which, kind feels naturally like 
+saying that well second translate is 
+actually happening first 
+instead happening to object, 
+going to translated the, 
+unknown first translate 
+we often think translates, transforms 
+happening in opposite order 
+so happens if we a translate 
+followed a rotate 
+well, rotate spins around, thats 
+fine 
+if weve got a translate happening 
+that rotates 
+going to a movement 
+applies to , o point rotate 
+so point rotate is 
+going to moved 
+in much way we saw 
+translates 
+theyre applying one 
+kind like theyre playing 
+backwards 
+if we way 
+around 
+well, we put a translate movement 
+put a rotate applies to zero 
+zero point that translate 
+happens is that zero zero 
+translate 
+is rotated relatively to point 
+screen 
+so actually like, im taking 
+an object arms length translate 
+i spin around 
+so spinning starting point 
+translate 
+center object 
+so two transforms in 
+different orders a radically 
+different effect 
+if i example this bottle water, 
+if i apply translate first rotate 
+second basically means 
+way around 
+i would take i would translate well, 
+i would take something i 
+translate 
+i move 
+if i way around, 
+i translate first i rotate 
+im making, rotate isnt a 
+simply spinning around center 
+object 
+actually a big movement in space 
+so first thing to remember is that 
+you kind think in opposite 
+order if you to think 
+transforms makes sense to think 
+theyre happening backwards 
+thing to think is is well, if 
+i want to move objects 
+well, if you want to move together, 
+thats easy, we translate 
+if you got to move 
+separately 
+often youll two objects, 
+two cars, two crates, whatever 
+you want, want to move one unknown 
+to move 
+if im applying a translate 
+then, everything that happens that 
+translation is going to affected 
+
+so i translate first object 
+circle here square is also going 
+to get affect if i want to move 
+independeantly 
+well we use a command a called push 
+matrix pop matrix 
+i wont go mathematical details, 
+transforms implemented using a 
+bit maths called a matrix 
+call upon pushmatrix, basically 
+creating a new matrix that adding 
+new transforms to 
+we call popmatrix, transforms 
+that weve added since we added push, 
+pushmatrix 
+inaudible will get canceled, 
+removing that matrix 
+so push matrix pop matrix a way 
+limiting effect transforms 
+any, in fact, transforms that happen 
+push matrix will automatically 
+removed, you call pop matrix 
+that inaudible gives you a nice way 
+independently moving objects 
+you pushmatrix, you whatever 
+transforms you like, you draw object 
+you pop matrix 
+next object, you exactly 
+thing, pushmatrix, transform it, 
+draw pop matrix 
+music 
+music 

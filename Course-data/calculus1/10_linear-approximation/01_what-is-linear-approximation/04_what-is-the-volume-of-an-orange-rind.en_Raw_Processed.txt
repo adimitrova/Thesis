@@ -1,0 +1,168 @@
+music here, ive got an orange 
+id like to measure say, radius 
+orange, thinking this orange a 
+perfect sphere 
+one way to this would to measure, 
+say, circumference orange 
+around equator 
+so here if i measure that looks like 
+centimeters 
+so circumference orange is 
+centimeters 
+that tell about, say 
+radius orange 
+well that circumference will pi times 
+radius orange 
+so if i divide sides pi 
+i get that radius orange is 
+pi centimeters 
+much rind is there this orange 
+that could formulated a linear 
+approximation problem 
+well lets fit this upg so, i 
+calculated orange radius to 
+pi centimeters 
+i want to figure thick rind 
+is 
+let 
+let peel a bit orange here 
+want to measure thick this is 
+with, say little ruler here yeah, 
+maybe three millimeters 
+so, point three centimeters will 
+rind thickness 
+knowing rind thickness 
+going to help to calculate, least 
+approximate, volume rind in 
+this whole orange 
+well i know volume a sphere, 
+modeling orange to be, is rds pi 
+r q 
+rind volume, is least 
+approximately much volume changes 
+i take this formula, replace r 
+r minus h 
+right 
+i take that sphere i make 
+a little bit smaller 
+that change in volume is volume 
+rind 
+to understand wiggling input 
+effects output, im going to use 
+derivative 
+formula that i want to 
+differentiating here is this volume a 
+sphere radius r 
+is thirds pi r cubed noiseand if 
+i differentiate this respect to r 
+r cubed differentiates to r squared 
+in denominator here will 
+cancel this power rule 
+so derivative will pi r squared 
+im trying to approximate is 
+rind volume is really difference 
+between a sphere radius r a 
+slightly smaller sphere ive shrunk 
+past rind, right 
+that difference will volume 
+rind 
+approximately this h times 
+derivitive v r 
+right, this is asking 
+output change input goes r 
+minus h to r 
+approximately input change 
+times derivative 
+in this case i know 
+oranges radius is pi, so ill 
+use that r 
+rinds thickness is point three 
+centimeters so im going to use that 
+h 
+so this is point three centimeters times 
+pi, times this radius, is pi 
+centimeters squared 
+so this is cubic centimeters 
+well thats good im trying to 
+calculate a volume 
+ill keep calculating here 
+so point times pi times 
+pi squared 
+cubic centimeters 
+times is times , pi 
+divided pi squared is going to a pi 
+in denominator 
+so ive got times pi cubic 
+centimeters 
+thats cubic centimeters 
+so volume rind is approximately 
+cubic centimeters 
+admittedly i could calculated 
+volume rind calculating 
+volume whole thing 
+calculating volume whole thing 
+radius reduced h, taking a 
+difference 
+neat thing here is that you 
+approximate that quantity using 
+calculus, right 
+thinking this linear 
+approximation business 
+i also want to see close 
+linear approximation 
+alright, so ive taken orange 
+peeled rind, ive taken 
+rind smooched this 
+ball, ill try to calculate volume 
+this rind ball 
+i want to compute volume a rind, 
+i made that rind ball here, let let 
+compute circumference this rind 
+ball 
+thats centimeters 
+so circumference ball rind is 
+centimeters, that means rind 
+ball a radius 
+pi centimeters 
+here, assuming rind ball is a 
+perfect sphere 
+this would volume rind ball 
+in here i gotta put radius, 
+is 
+pie 
+so, rds pie radius cubed, 
+thats cubic centimeters 
+so, yeah, i mean, i actually took 
+rind orange value that we 
+got is pretty close to linear 
+approximation told us volume rind 
+
+this perspective sheds light 
+might otherwise seen 
+random coincidence 
+you notice is that volume 
+a sphere is rds pi r cubed 
+surface area a sphere is pi 
+r squared 
+two formulas related right 
+if i differentiate this volume formula 
+respect to r, i get surface area 
+formula 
+seeing that calculus isnt 
+really solving specific problems 
+i dont care volume rind 
+this orange 
+right 
+if that calculus good for, 
+would care 
+right 
+calculus is really good is 
+providing a general framework 
+that general framework we begin to see 
+patterns between different concepts 
+like this fact, surface area a 
+sphere is derivative volume 
+a sphere respect to radius 
+thats really a coincidence, right 
+calculus is providing an explanation 
+that supposed coincidence 

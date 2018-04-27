@@ -1,0 +1,191 @@
+[noise] 
+so, we've talked about objects. 
+the, the things that affect objects may 
+move other forces. 
+i'm going to talk about a couple forces 
+that we'll work with. 
+the first force is the pervasive gravity. 
+basically we're always going to have 
+force downwards that pulls objects down. 
+doesn't have to be downwards you can 
+actually set gravity to move to the left 
+or even 0 if you want a space world. 
+but most of the time you're going to have 
+a force pulling things downwards. 
+and that's automatically built into the 
+worlds. 
+so, you don't have to do anything to get 
+gravity. 
+you can use the set gravity commands to 
+change the gravity force. 
+it's a vector. 
+so you can have, at the moment, gravity 
+is something like 0, minus 10. 
+0x minus 10y so it's, vertical, but you 
+can have horizontal gravity if you give 
+it a, an x value. 
+another kind of force is an impulse. 
+that's basically a force that's applied 
+at a particular moment in time. 
+so, sometimes you just want to push an 
+object in a certain direction to get it 
+moving and applying impulses is a good 
+way of doing it. 
+it's just applied for one moment, just 
+like kicking an object. 
+this is how you do it. 
+an impulse is a vector. 
+you create a new vector with whatever 
+values you want so that you'd call new 
+vec2. 
+that's a vector type. 
+and you pass in the x and y coordinates 
+of that vector. 
+it's actually a direction. 
+say 2, 4 where we mostly vertical, we 
+mostly downwards with a bit across. 
+and then you call the apply impulse 
+command on the box. 
+so you do box.applyimpluse and that 
+applies impluse to that box. 
+you pass in you have to say where the 
+impulse is acting on. 
+so you can apply an impulse to different 
+bits of the box. 
+often you just want to apply to the 
+center of the box so it's not going to 
+spin around. 
+but if you apply it to the edge of the 
+box, you, bo-, box won't just move, it 
+will also spin around. 
+and then you obviously have to apply past 
+the impulse into that function. 
+i'm going to show a bit more of a complex 
+example that mick will be following up 
+later and in, in, in the code he's going 
+to show you. 
+[cough] of how to implement a catapult. 
+so we've got a ball that's on a piece of 
+elastic and when we pull that ball, the 
+further back we pull it, when we release 
+it, it will fly in the direction that 
+we've been pulling back. 
+so the two things we need to know will 
+fly in the direction of the elastic. 
+but, the more we pull the elastic back 
+the further it will fly. 
+so, it depends on both the distance and 
+the direction from the catapult to the 
+ball and what it produces is an impulse 
+that's applied to the ball. 
+so that impulse, if you remember what i 
+was saying about vectors earlier. 
+is based on the vector that goes from the 
+ball to the catapult. 
+it's in that direction, then the more 
+that the growth of distance is, the 
+bigger the force is going to be. 
+that's fine, because that vector includes 
+that. 
+so the vector from the ball to the 
+catapult is simply catapult minus ball. 
+the catapult is the vector position of 
+the catapult. 
+ball is the vector position of the ball 
+and we multiply that by constant c. 
+just so, you know, just so we've got a 
+bit more control about how big that 
+impulse is. 
+so we can vary that to make it a bigger 
+force or, or a lesser force and just 
+tweak it again. 
+when you, when you're working with 
+physics again there's a lot of tweaking 
+to do to make sure that all the densities 
+and the, the, these constants are right. 
+just get the right feel that it's moving 
+at the right dynamically enough without 
+things going all over the place. 
+so, if we look here how we do the 
+calculation we create first an impulse 
+vector. 
+that's a vector. 
+we set its value to be equal to the 
+position of the catapult. 
+then we subtract off the position of the 
+ball. 
+and finally, we multiply by a constant, 
+in this case, 200, quite a big number to 
+get a quite a dynamic move. 
+and we'll see that later in the example 
+that mick's going to show you. 
+the final kind of force, and maybe the 
+most important one for physics engine is 
+collisions. 
+a lot of what a physics engine does is 
+handle when objects collide at each other 
+and bounce off. 
+and gets that, those collisions 
+absolutely physically correct. 
+and, you see in example, we've got 
+objects bouncing off crates, and then 
+objects bouncing off the sides of the 
+screen, stuff bouncing everywhere and 
+that's all handled by the physics engine. 
+um, [cough] in a, in a sense, you don't 
+really need to do anything. 
+to handle collisions the physics engine 
+will do everything for you. 
+but sometimes you want to know when a 
+collision's happening. 
+so, for example, you might want to, 
+increase your score whenever a collision 
+happens. 
+and as, as matthew would show you, you 
+may want to you may want to play a sound 
+whenever you have a collision. 
+so you need to know when there's a 
+collision. 
+in the first extension we're using, we do 
+this in a very simple way. 
+you just create a function in your 
+program called collision. 
+that has to look exactly like this. 
+it has to have collision. 
+takes three parameters. 
+body 1 body 2 and the impulse. 
+so the body 1 and body 2 are the 2 
+objects that are colliding with each 
+other. 
+and the impulse parameter is how big the 
+force or the impulse of the collision 
+was. 
+so that's really useful. 
+you can find out which objects are 
+colliding. 
+so, depending on which objects there are, 
+you can make different sounds. 
+and you can make use of how big the 
+collision was. 
+so maybe if the collision was very small, 
+you don't make a sound. 
+maybe with a bigger collision, you make a 
+bigger sound. 
+so, 
+with those three parameters you can 
+really control exactly what happens in 
+your program when different collisions 
+happen. 
+and the next, matthew will talk about how 
+to create a sound engine which can 
+produce different results, based on 
+different objects and with, varying 
+parameters of the sound, which is exactly 
+what we need to change the sound whenever 
+an impulse is played. 
+once he's done that, mick will show you 
+full example that has physics objects 
+colliding all over the place and audio 
+being triggered by those physics objects. 
+[music] 
+[music] 

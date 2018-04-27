@@ -1,0 +1,344 @@
+[music] calculus study functions and this 
+course is no exception. 
+we're going to be studying functions in 
+this course, alright? 
+functions like f of x or the sine 
+function or the square root function. 
+and that raises a question what are 
+functions?if if we're going to be 
+studying functions, we should know what 
+they are. 
+and that question is pretty metaphysical. 
+i mean what are numbers? 
+what are numbers for? 
+i mean that question doesn't make a lot 
+of sense does it? 
+i, you know, it's not like a number four 
+is a physical object that i can go look 
+at it and see if it's got polka dots or 
+it's striped or something, 
+right? 
+but i know four objects when i see them, 
+right? 
+i sort understand what numbers do more 
+than what they are in some metaphysical 
+sense. 
+the same is true about functions, 
+right? 
+i'm not really going to tell you what a 
+function is. 
+what i'm going to tell you is what a 
+function does. 
+this is what a function does. 
+a function assigns to each number in its 
+domain another number. 
+and this definition doesn't say anything 
+about how the function does that 
+assignment. 
+let's see an example. 
+just make up some example. 
+suppose i've got some function, i'll call 
+it f, f for function. 
+maybe this function assigns to the number 
+two, the number four. 
+so, i'll write f(2) is 4 or f(3) is 9 or 
+f(4) is 16 of f(5) is 25. 
+i'm just making this up. 
+this is a function. 
+and i'm telling you what number it 
+assigns to each number, 
+right? 
+f assigns the number two, the number 
+four. 
+f(3) is 9, right? 
+so, f assigns to the number three, the 
+number nine. 
+well, look, 
+i'm not going to just list off every 
+single assignment that f makes. 
+so instead, one way to talk about these 
+assignments is to use a rule, like f(x) = 
+x^2. 
+and this single rule explains how all of 
+these assignments are made, 
+alright? 
+this rule said that f assigns to the 
+number x, the number x^2. 
+so in particular, f assigns the number 
+five, five squared or 25, or f assigns 
+the number four, four squared which is 
+sixteen or f assigns the number three, 
+three squared which is nine, alright? 
+so, a lot of times, when you actually 
+want to talk about how these assignments 
+are being made, use some sort of rule 
+like this: and you write f of x is 
+something, to compute the output value, 
+right? 
+so, a function assigns to each number in 
+its domain another number. 
+one way to do that is with a rule. 
+of course, this definition of function 
+involves another word, domain. 
+what is a domain? 
+unless, i say otherwise, the domain 
+consists of all numbers for which the 
+rule makes sense, 
+right? 
+a function assigns to each number in its 
+domain another number. 
+and the domain is just the numbers that i 
+can plug in. 
+let's take a look to see what i mean by 
+this. 
+suppose i've got a function f(x) = 1 / x. 
+so, that's a function given by a rule. 
+it takes an input x and produces the 
+output 1 / x, 
+right? 
+it assigns the number x, the number 1 / 
+x. 
+but this rule doesn't always make sense, 
+right? 
+i'm dividing by x, 
+alright? 
+and to divide by x, what do i need? 
+well, 
+i must have that x is not zero, 
+not permitted to divide by zero. 
+so, i can plug in any number for x except 
+for zero. 
+and that's when this rule makes sense. 
+so, i'll summarize that by saying that 
+the domain of f is all real numbers 
+except zero. 
+so, a function takes some input and 
+produces some output. 
+that's what it does. 
+but how is that supposed to make us feel, 
+you know? 
+how are we supposed to imagine that? 
+well, here's one metaphor that you could 
+use to try to think about what a function 
+is actually doing, right? 
+you could imagine a, a conveyor belt with 
+the function, 
+you know, 
+and you could imagine the numbers coming 
+in. 
+boom. 
+being hit by the function and then going 
+out transformed somehow, by whatever the 
+rule is of the function. 
+here's what i'm talking about. 
+i've got a conveyor belt here, i got this 
+big box, and imagine if that big box is 
+the function. 
+and in here, i've got the input, imagine 
+the number five. 
+let's see what this machine is going to 
+do. 
+maybe this is the function f(x) = x^2 + x 
+and i've got this number five here. 
+and i'll start the conveyer belt going so 
+the number five starts moving through the 
+machine and when the machine is done 
+processing it, it comes out the other 
+side and now, it's the number 30, 
+alright. 
+because f(5) is 5^2 + 5, which is 25 + 5 
+is 20. 
+so, we have seen how you can write down a 
+function by using a, a rule involving 
+these, these mathematical symbols, 
+right? 
+x^2 + x. 
+you can also write down a function just 
+using english words. 
+so, let's see an example of that, just 
+make up a new function here. 
+i'll call it r(x) and i'll define ã‚ë‡ã‚â r(x) 
+to be thrice, that means three times, 
+thrice the square root of x. 
+and here, i've computed some, some values 
+of the function, you know, like the 
+function that four is six. 
+well, why is that? 
+well, r(4) would be three times the 
+square root of four, which is three times 
+two which is six. 
+okay. now, of course, when i do the 
+calculation this way, you know, it's not 
+too surprising that instead of writing 
+this out in words, thrice the square root 
+of x, 
+i mean i could have just written three 
+times the square root of x. 
+so, maybe you're not too impressed with 
+this. 
+the point is that you can define a 
+function just by writing down what the 
+function is supposed to do using english 
+words. 
+so, we've seen an example of a function 
+that we defined just in terms of algebra, 
+f(x) = x^2 + x. 
+i've also seen an example of a function 
+that i define entirely with just english 
+words. 
+we can kind of combine those two things, 
+alright? 
+we can use the english to sort of pick 
+out different kinds of of algebra. 
+let's see an example of that now. 
+so, here's another function i just made 
+up. 
+g(x) is x^22 if x is bigger than or equal 
+to five. 
+and twice x if x is less than five. 
+the point here is that i'm using just a 
+little bit of english. 
+so, this word, if, in order to select 
+based on how big x is, 
+a different algebraic rule for 
+calculating the function and this is a 
+little abstract. 
+let me just do with some calculations and 
+that might convince you, you know, how, 
+how this notation is, 
+this so-called piecewise notation works. 
+so, what is g(1)? 
+well, let's take a look. 
+one is less than five so that means i use 
+this second rule for calculating g, 
+so it's two times one which is two. 
+what's g of, say, four? 
+well, four is still less than five so i 
+use the second rule again. 
+twice the input, two times four and that 
+means the output is eight. 
+but what is, say, g(5)? 
+ooh. 
+five is not less than five. 
+five is greater than or equal to five. 
+so, this if is telling me to use the 
+first of the two rules for calculating g 
+so i'm going to use five squared as the 
+output and that will be 25. 
+or g(10). 
+well, ten is definitely bigger than or 
+equal to five and it's bigger than five. 
+so, i again use the first rule and the 
+output to this function is computed as 
+ten squared or 100. 
+so, this is, you know, really more 
+complicated than just using some algebra, 
+right? 
+i'm using these if statements to select 
+which of these two rules g will use to 
+compute its output. 
+in principle, functions can be really 
+complicated. 
+i mean, all the examples we've seen are 
+just doing various kinds of algebra. 
+i mean, maybe different algebra, 
+depending upon which value of x i'm 
+plugging in. 
+but it's all, you know, adding, 
+subtracting, multiplying, dividing that 
+sort of thing. 
+but you can do really complicated things 
+with, with functions. 
+let's see an example of something that is 
+you know really different than doing 
+straight up algebra. 
+i'll do a much crazier example. 
+alright. 
+c(x) is the number of even digits in the 
+number x, when x is a whole number. 
+it is zero if x isn't a whole number, so 
+otherwise. 
+and it is a really different and crazy 
+function, right? 
+so, c of, say, 7236 is two, and why is 
+that? 
+this is a whole number so i use the first 
+part of the rule. 
+and the number of even digits in this 
+number, 
+well, i count them. 
+that's odd, 
+even, 
+odd, 
+even. 
+so, two and six are the two even digits. 
+the value of that function is two. 
+well, let's take a look at this number 
+here, 60,202. 
+that again is a whole number, so the 
+value of the function at 60,202 is the 
+number of even digits in x. 
+and this number has how many even digits? 
+one, two, three, four, five, they're all 
+even digits so that value is five. 
+here's another example. 
+here's another 5-digit number. 
+again, it's a whole number so i use the 
+first part of the rule, the number of 
+even digits. 
+i count how many of these digits are 
+even. 
+five is odd, odd, odd, odd, odd. 
+there are no even digits. 
+so, the value of this function is zero at 
+this point. 
+now, if i plug in a number that's not a 
+whole number like this, this is not a 
+whole number, then i use the otherwise 
+part of the definition. 
+and the function at that point is just a 
+zero. 
+so, we can use english to define a 
+function but you got to be careful, 
+alright? sometimes, when you write 
+another definition of a function, you 
+might write down something that's more 
+ambiguous than, than you intended. 
+so, let's try to define a function. 
+just making this stuff up, i'll call the 
+function b(x) for bad. 
+and i'll say that the value of b(x) is 
+some rearrangement of the digits of x. 
+and it's okay that i'm using english to 
+define my functions. 
+there's nothing wrong with that. 
+but this definition is too ambiguous to 
+be the definition of a function. 
+here's a definition of what goes wrong. 
+what is the function's value at 352? 
+well, the function takes its input and 
+rearranges the digits somehow, alright? 
+so, you might think that the functions 
+value at 352 is 325. 
+because 325 is some rearrangement of the 
+digits of 352, right, i took the five and 
+the two, swapped their positions. 
+but then, the functions value at 352 
+should also be 235 because 235 is also a 
+rearrangement of 352. 
+the function's value with 352 should also 
+be 532 because 532 is some rearrangement 
+of the digits of 352. 
+this is terrible, 
+alright? 
+a function is suppose to take its input 
+and produce unambiguously a single output 
+value. 
+but this so-called function takes this 
+single input value and purportedly 
+produces all these possible outputs. 
+this thing here is not a function, 
+alright? 
+a function takes one input and produces 
+one output. 
+[music] 

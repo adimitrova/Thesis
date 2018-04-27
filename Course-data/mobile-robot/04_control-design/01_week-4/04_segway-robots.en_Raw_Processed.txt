@@ -1,0 +1,324 @@
+so, we a general procedure 
+designing controllers is pole 
+placement 
+whole idea there is, we pick 
+k that desired eigenvalues line 
+
+we also, in last lecture, learned 
+works doesnt 
+key characteristic there 
+controlability complete 
+controlability 
+we pole placement we 
+complete controlability 
+if we dont, we cant 
+simple that 
+in fact, pole 
+placement 
+if we dont complete controlability, 
+we cant make system we want 
+meaning, we to buy a new one, bigger 
+b matrix 
+theres nothing else we 
+today, in this lecture, i would like to 
+unleash awesome powers that we 
+a complicated robotic system, namely a 
+segway robot 
+in fact, this is a robot thats 
+balancing two wheels, in 
+fact, here georgia tech, 
+we a segway robot, known 
+golem crane in professor mike stillmans 
+lab 
+basically, way a segway robot 
+works is that a unicycle, roughly a 
+unicycle, top there is an 
+inverted pendulum 
+luckily us, we know to model 
+unicycles inverted pendulas 
+now, im writing 
+there theres a little bit 
+going on, basically going to 
+moving while balancing this thing 
+so, lets start base 
+base is a unicycle, 
+x x, 
+thats x y position base 
+v cosine psi, psi is 
+heading 
+psi dot is still omega 
+weve seen this repeatedly 
+so, this is dynamics base, 
+almost 
+then, top that, we this 
+inverted pendulum 
+weve seen, we need phi, is 
+angle pendulum is 
+deviating upright position we 
+also need angular velocity to 
+describe is going here 
+now, inputs to a segway robot 
+torques, wheel torques 
+so, left wheel torque right 
+wheel torque 
+torques translates forces, 
+torques forces translate 
+accelerations, here in unicycle, 
+are, old control inputs 
+velocities now, since we inputs 
+that acts torques, we need to actually 
+add v dot omega dot 
+equation 
+so, v omega going to extra 
+states, thats 
+comes because, i done is i 
+added v omega states to my, 
+model 
+so, i really in terms 
+state system, well, 
+position unicycle, 
+translational velocity, orientation, 
+angular velocity, phi 
+phi dot associated upright face 
+inputs wheel torques, 
+left right wheel torques 
+in fact, if i write dynamics 
+this thing 
+well here, i unicycle 
+dynamics 
+thats that im saying here, this is 
+unicycle dynamics 
+then, i 
+derivatives that i need to solve 
+compute 
+if you sit math 
+carefully you look in a book 
+something, you got this mess here 
+wooh, this looks kind horrible 
+well, first thing we do, course, 
+we something like this is we 
+linearize 
+this looks absolutely miserable 
+if we linearize it, we end 
+is a, an lti system and, in fact, 
+x dot is axbu, i point 
+that ive done, is ive 
+linearized this around x,u,, 
+means that i zero torques 
+position robot is zero 
+looking x direction 
+pendulum is looking straight 
+so, im linearizing around , 
+if you that, you get following 
+a b matrices 
+obviously, im going to ask anyone to 
+laugh memorize this 
+im showing you 
+this is a b matrices came 
+
+now, we even attempt pole 
+placement, lets make sure that we 
+indeed 
+so, first thing we to check 
+this system is controllability 
+this is big, right so, im going 
+to go to matlab right away write, 
+heres controllability matrix a 
+b, heres rank, comes 
+anyone remember n in this 
+case well, i 
+n equal to , means that 
+rank controlability matrix 
+equal to 
+so, this is a completely controllable 
+system 
+problem here is unicycle 
+weve already seen that we linearize 
+unicycle, dynamics gets messed 
+up, we cant move in y direction 
+i dont know if you remember that if 
+you say an x y is position 
+unicycle, we y dot equal to 
+that means is we way 
+moving sideways basically 
+so, unicycle is whats making life 
+hard us here, so im going to 
+is im going to ignore unicycle 
+say, that position orientation 
+base, i dont care that, 
+i care is, velocities, 
+quickly moving quickly 
+turning 
+so, im going to shave x, y, x, 
+y, x, x psi state space 
+get a smaller system that 
+states, velocity, translational 
+velocity, angular velocity phi 
+phi dot associated pendulum 
+if i that, i get a system 
+following a b matrices, again, 
+actual numbers arent that, that 
+important 
+well, i go to matlab, i write rank 
+controllability matrix, i get answer 
+
+in this case, n equal to 
+so, if i shave unicycle base 
+system, i get completely 
+controllable system 
+now, i start controlling 
+last twist though i that 
+is, i want system to actually move 
+so, im going to stabilize to v 
+omega equal to zero, thats 
+i want 
+instead, im going to say, i would like 
+to go to v desired omega desired 
+so, lets subtract away v desired 
+omega desired, 
+i a here you want 
+to stabilize to phi phi dot 
+zero, 
+meaning, pendulum upright 
+im going to find a new state, 
+x tilde, is old state minus this 
+delta is thing i would like to 
+stabilize to so, this is delta 
+so, i a new state 
+well, whats dynamics new 
+state well, delta x tilde dot is x minus 
+delta dot, delta is constant so this is 
+so this is x dot 
+so, axbu 
+well, i write, i add a minus 
+delta add in an a delta end 
+i x tilde here 
+so, if i that, i get a new system 
+here is lucky part us 
+a times delta turns to equal to 
+zero structure a so i 
+get this thing going away 
+i x tilde here so new system 
+dynamics is old system 
+dynamics 
+x tilde dot is ax tilde plus bu 
+now, i want to stabilize this system 
+to origin, 
+means that velocities 
+actually going to end equal to 
+desired velocities 
+so, we completely control 
+system 
+we wish to stabilize 
+we pole placement 
+again, like we talked last 
+time, 
+isnt entirely clear to pick 
+eigenvalues 
+so, i played around eigenvalues 
+this seemed to give a good response 
+i didnt want oscillations, so there 
+imaginary parts, i picked lambda 
+minus , lambda minus , so 
+forth 
+this is smallest eigenvalue, 
+going to tell quickly, in general, 
+system responds 
+so, this, im going to pick u k 
+x x tilde, is the, new 
+system im interested in 
+i get close look dynamics like this 
+and, in fact, way i compute k is to 
+use the, place command in matlab 
+so, i type in p k is place a, b, 
+p 
+so, this stabilizes segway robot 
+so now, last thing we to is 
+to actually 
+reason im okay 
+neglecting unicycle base 
+controlling v omega is that 
+curvature path thats traced 
+segway robot, actually is omega 
+v 
+so, im really controlling is 
+curvature path rather 
+actual robot is 
+i in simulation that 
+im to show you is basically, 
+buttons, make v bigger v smaller 
+omega bigger omega smaller 
+in essence, im im 
+changing v omega is im changing v 
+desired omega desired 
+so, thats way im going to giving 
+reference signals commands to the, 
+unicycle robot 
+so, that, lets move to actual, 
+actually simulation an actual 
+segway robot 
+so now, ready to see developed 
+segway robot controller in action 
+im here greg droge is a 
+graduate student georgia tech will 
+showing us a simulation the, 
+segway robot, so, greg, you 
+to show us okay 
+here, we a simulation segway 
+robot 
+left, we a d implementation 
+graphics 
+so, you see that now, im able to 
+drive around changing velocities 
+as, dr 
+egerstedt mentioned keypad 
+you notice a few interesting things 
+right here in top right corner you 
+see plot translational 
+velocity 
+red line is desired velocity 
+blue line is the, actual 
+velocity 
+you see that converts this 
+quickly to inputs that i give 
+middle, you see rotational 
+velocity you see 
+eigenvalues that weve chosen, that 
+actually converges really slowly 
+still converges 
+bottom you see that theyre, 
+tilt angle will always keep the, 
+robot stable 
+so, i a question 
+you simulating this 
+linearization full nonlinear 
+model 
+so, simulation is full 
+nonlinear model 
+aha, so i actually a question 
+so, linearizations valid 
+locally 
+you sense this 
+breaks meaning, we make robot 
+fall over, instance yeah, so if you 
+give a really big huge step input 
+translational velocity youll see 
+that in d simulation, goes in a 
+full circle actually hit 
+ground 
+do, that 
+that exciting 
+okay 
+aha, so there, we actually get a feeling 
+good reasonable 
+linearizations 
+in this case, fairly reasonable, 
+you drive around, if you give 
+really large desired velocities, 
+actually falls 
+correct 
+alright 
+thank you much, 
+greg 
+yup 
+youre welcome 

@@ -1,0 +1,73 @@
+music generally speaking, 
+antidifferentiating things radicals 
+is difficult 
+example, lets try to find an 
+antiderivative of, x cube root 
+x plus dx right 
+lets try to antidifferentiate this 
+i make a substitution to improve 
+integrand 
+so substitution i want to make 
+well, i really choices, i mean, 
+one thing i could is i could make ux 
+plus in that case, du is dx 
+if u is x plus , x is u minus 
+, i rewrite this 
+antidifferentiation problem 
+instead this becomes antiderivative 
+that x, u minus still cube root, 
+instead x plus , u 
+dx becomes du 
+i, i could actually this, im 
+going to head that path 
+instead, i want to show you a trick 
+you get rid radical 
+together 
+so instead lets set u, to grab 
+whole denominator 
+so u will cube root x plus 
+in that case, u cubed is x plus 
+or, in words, x is u cubed minus 
+that tells dx is 
+in that case, dx is u squared du 
+i could make this substitution 
+this transforms this integration problem 
+to, antiderivative x becomes 
+ucubed minus 
+whole denominator becomes u 
+dx here is a u squared 
+du, so ill write u squared du 
+thats a polynomial 
+so ill simplify this a bit, this is 
+antiderivative of, is this here, u 
+cubed u times u squared, thats u 
+to th minus u times u 
+squared thats minus u, du 
+this, this is a polynomial, so i 
+antidifferentiate this quickly 
+this antiderivative is ths u to 
+th, minus halves u squared plus c 
+now, well replace u 
+equals in terms x 
+so u, remember, is cube root x 
+plus , so putting that in here, i get 
+ths, instead u x plus to 
+rd to th 
+so to rds power, minus halves x 
+plus to rd squared, is to 
+rds power plus c 
+to make easy to talk this 
+particular technique, a name 
+rationalizing substitution 
+original problem a cube root in 
+it, i made a substitution to get rid 
+radical, a rationalizing 
+a challenge u substitutions is 
+that there really multiple paths that 
+you take to correct answer 
+even apparent successful a 
+particular substitution might until 
+youve started applying it, right 
+you to take that first bite 
+you realize whether youre eating 
+food 

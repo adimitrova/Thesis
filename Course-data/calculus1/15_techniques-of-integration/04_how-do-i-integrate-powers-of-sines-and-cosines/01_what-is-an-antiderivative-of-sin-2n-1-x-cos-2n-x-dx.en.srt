@@ -1,0 +1,304 @@
+1
+00:00:00,025 --> 00:00:06,743
+[MUSIC] When you're integrating powers of 
+sines and cosines. 
+
+2
+00:00:06,743 --> 00:00:13,886
+I've got a motto for you to remember. 
+You can trade sines for cosines or vice 
+
+3
+00:00:13,886 --> 00:00:16,510
+versa. 
+How so? 
+
+4
+00:00:16,510 --> 00:00:21,409
+Well since sin squared plus cosin squared 
+is 1, that is the Pythagorean identity, I 
+
+5
+00:00:21,409 --> 00:00:27,053
+can use this to get these two facts. 
+That I can replace sin squared x by 1 
+
+6
+00:00:27,053 --> 00:00:33,510
+minus cosin squared, and can I replace a 
+cosin squared by 1 minus sin squared? 
+
+7
+00:00:33,510 --> 00:00:36,960
+This is often useful. 
+Let's try making some trades. 
+
+8
+00:00:36,960 --> 00:00:43,450
+For example, let's try to 
+anti-differentiate say, sine cubed of x 
+
+9
+00:00:43,450 --> 00:00:50,278
+times cosine squared of x, dx. 
+Our first inclination might be to try and 
+
+10
+00:00:50,278 --> 00:00:55,332
+make a substitution. 
+But rats, I mean if you were sin x right 
+
+11
+00:00:55,332 --> 00:01:01,687
+then du would be cosine x dx. 
+But I got a cosine squared term there 
+
+12
+00:01:01,687 --> 00:01:08,162
+that I have to deal with. 
+If I made different subsitiution like, 
+
+13
+00:01:08,162 --> 00:01:15,530
+you know u equals cosine x or when du, 
+would be minus sine x dx. 
+
+14
+00:01:15,530 --> 00:01:19,220
+But then I've got a sine cube term to 
+deal with. 
+
+15
+00:01:19,220 --> 00:01:23,772
+So instead, I'll trade a pair of sines 
+for a pair of cosines. 
+
+16
+00:01:23,772 --> 00:01:26,886
+So, instead of making a substitution 
+immediately. 
+
+17
+00:01:26,886 --> 00:01:30,827
+I'm going to trade a pair of sines for a 
+pair of cosines. 
+
+18
+00:01:30,827 --> 00:01:35,402
+What I mean, is that I'm going to rewrite 
+the integrand as sine of x times sine 
+
+19
+00:01:35,402 --> 00:01:42,363
+squared of x times cosine squared of x. 
+And then I'm going to use the fact that 
+
+20
+00:01:42,363 --> 00:01:49,433
+sine squared is is what? 
+Well it's 1 minus cosine squared x. 
+
+21
+00:01:51,360 --> 00:01:55,230
+All right, so I can rewrite the integral 
+as this. 
+
+22
+00:01:55,230 --> 00:01:59,806
+Now I can make the substitution u equals 
+cosine x. 
+
+23
+00:01:59,806 --> 00:02:08,041
+So, u is cosine x and in that case du is 
+minus sine x dx which I don't quite see 
+
+24
+00:02:08,041 --> 00:02:16,271
+here. 
+But I can manufacture that by including a 
+
+25
+00:02:16,271 --> 00:02:25,329
+minus sign there. 
+So this becomes the integral of 1 minus u 
+
+26
+00:02:25,329 --> 00:02:34,720
+squared times u squared and then minus 
+du. 
+
+27
+00:02:34,720 --> 00:02:39,710
+Now I expand. 
+So this is negative the integral of u 
+
+28
+00:02:39,710 --> 00:02:43,961
+squared minus u to the 4th du. 
+Now I'll integrate. 
+
+29
+00:02:43,961 --> 00:02:51,668
+So this is minus and I derivative of u 
+squared is u cubed over 3. 
+
+30
+00:02:51,668 --> 00:02:59,730
+And an anti derivative u to the 4th is u 
+to the 5th over 5 plus c. 
+
+31
+00:02:59,730 --> 00:03:08,402
+Now I'll substitute cosine x, for u. 
+And, we get negative cosine cubed, of x 
+
+32
+00:03:08,402 --> 00:03:16,154
+over 3, plus the negative of the 
+subtraction Cosine to the 5th x over 5 
+
+33
+00:03:16,154 --> 00:03:22,235
+plus c. 
+And this same kind of trick works in 
+
+34
+00:03:22,235 --> 00:03:25,982
+other cases too. 
+For example, what if I wanted to 
+
+35
+00:03:25,982 --> 00:03:32,420
+anti-differentiate sine to the 5th power 
+times cosine to the 5th power? 
+
+36
+00:03:32,420 --> 00:03:36,680
+Since I've got an odd number of cosines, 
+I can trade all but one of them for 
+
+37
+00:03:36,680 --> 00:03:41,644
+sines. 
+What I mean is I can rewrite this 
+
+38
+00:03:41,644 --> 00:03:50,788
+integral as sine to the 5th times cosine 
+squared squared times cosine x dx. 
+
+39
+00:03:50,788 --> 00:03:57,002
+Right, this is four cosines times another 
+cosine gives me cosine to the 5th. 
+
+40
+00:03:57,002 --> 00:04:04,661
+But, now, I can use the fact that cosine 
+squared is 1 minus sine squared. 
+
+41
+00:04:04,661 --> 00:04:11,829
+So I can rewrite cosine squared squared, 
+as 1 minus sine squared, squared. 
+
+42
+00:04:11,829 --> 00:04:16,300
+And then times cosine dx. 
+And now we can finish by making a 
+
+43
+00:04:16,300 --> 00:04:20,320
+substitution. 
+I'll make the substitution, u equals sine 
+
+44
+00:04:20,320 --> 00:04:25,826
+x. 
+In that case, du is cosine x dx. 
+
+45
+00:04:25,826 --> 00:04:31,820
+So, the integral becomes, instead of sine 
+to the 5th, u to the 5th. 
+
+46
+00:04:31,820 --> 00:04:35,190
+1 minus sine squared is 1 minus u 
+squared. 
+
+47
+00:04:35,190 --> 00:04:40,769
+And that's squared. 
+And cosine x dx is du. 
+
+48
+00:04:40,769 --> 00:04:44,546
+Is that going to work? 
+Yeah, I could definitely finish this off, 
+
+49
+00:04:44,546 --> 00:04:48,104
+I just expand this out and I get a 
+polynomial u. 
+
+50
+00:04:48,104 --> 00:04:52,392
+And I can anti-differentiate a polynomial 
+u and then just replace u by sine of x to 
+
+51
+00:04:52,392 --> 00:04:57,950
+get the anti-derivative of sine of the 
+5th cosine of the 5th. 
+
+52
+00:04:57,950 --> 00:05:01,210
+So what's the general pattern to this 
+kind of trick? 
+
+53
+00:05:01,210 --> 00:05:04,360
+The trick works as long as we've got an 
+odd power on the sine, or an odd power on 
+
+54
+00:05:04,360 --> 00:05:08,290
+the cosine. 
+'Cuz in that case, I can split off all 
+
+55
+00:05:08,290 --> 00:05:12,748
+but one of them. 
+And then I'll get say, sine times an even 
+
+56
+00:05:12,748 --> 00:05:16,810
+power of sine, times some number of 
+cosines. 
+
+57
+00:05:16,810 --> 00:05:21,690
+Or sine, times an even number of cosines, 
+times cosine. 
+
+58
+00:05:21,690 --> 00:05:30,099
+And since this an even number here, I can 
+rewrite those in terms of the other. 
+
+59
+00:05:30,099 --> 00:05:36,247
+So then I'll end up with a single sine 
+times a bunch of cosines, really a 
+
+60
+00:05:36,247 --> 00:05:43,821
+polynomial and cosine x. 
+Or a polynomial and sine x times cosine, 
+
+61
+00:05:43,821 --> 00:05:50,304
+and then I can finish it off with a 
+single substitution. 

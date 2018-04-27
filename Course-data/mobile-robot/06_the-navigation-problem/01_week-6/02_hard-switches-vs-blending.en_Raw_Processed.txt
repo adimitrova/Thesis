@@ -1,0 +1,285 @@
+last, lecture we designed 
+dynamic duo robotic behaviors, mainly 
+goal to goal avoid obstacle 
+question i want to talk in 
+todays lecture is really we 
+combine two so lets say that i 
+actually have, always, a go to here, a 
+goal here, an obstacle here go 
+to goal telling to go in this 
+direction, avoid obstacle telling 
+to go in this direction is straight 
+away from, obstacle 
+i actually combine two 
+question is really this, right 
+it, is there blended version 
+two directions we go in 
+we actually switch between different 
+behaviors in a hard way, so that 
+winner takes 
+and, really main two 
+options disposal 
+i want to today is 
+discuss almost philosophically 
+pros cons associated 
+two options 
+in subsequent lectures, we will 
+a little technical in terms 
+to actually build socalled 
+arbitration mechanisms 
+mechanisms transitioning in 
+different behaviors 
+so philosophical question is really 
+this right 
+robots chew gum walk 
+time meaning two things 
+two things 
+really doing, one 
+thing 
+so cartoon here left 
+black arrows 
+directions in we think that 
+robot go 
+so if going hard switches 
+paradox time 
+whats going is lets say 
+far away obstacle 
+robots nothing going 
+towards goal ive illustrated 
+here the, a red arrow saying that 
+right thats robot is trying 
+to 
+gets lets say closer to 
+obstacle switches completely 
+to direction is, in this 
+case, straight away obstacle 
+reason one might want to 
+something like this is that, 
+actually designing behaviors, to 
+something really well 
+obstacle avoidance behavior is 
+designed to, drive things 
+hopefully we design right, so that 
+we actually trust that, if 
+avoiding driving things, indeed we 
+drive things, if we 
+trying to a goal, we 
+designed controller to 
+methodically stable, so that we 
+actually trust, trust that we end 
+goal 
+so, pro benefit hard 
+switches is that we actually 
+trust systems, that 
+designed to a 
+performance guarantee point view 
+there is a drawback this 
+so, if you a robot youre 
+switching ma, ma, ma, ma, ma, back 
+forth between going to goal 
+avoiding an obstacle 
+lets say youre riding this robot 
+a really bumpy ride 
+in general it, a, youre going to 
+get, rather, jerky motions 
+weve already seen, if using 
+odometry, instance, to knowing 
+we are, then, odometric readings 
+get really, a little bit messed off, 
+if you start switching quickly 
+so, there is, the, the, potential 
+a really bumpy ride 
+theoretically this bumpy ride 
+translate zeno behaviors 
+forced to switch very, very, 
+quickly, in fact infinitely quickly in 
+worst possible scenario between 
+two behaviors 
+so one hand we trust that 
+system is supposed to 
+doing, in a rather 
+bumpy unpleasant way 
+so thats the, the, deal with, 
+hard switches 
+alternative, course, is to 
+blend two behaviors 
+so answer to philosophical 
+question here would be, yes 
+robots can, indeed, chew gum walk 
+time 
+avoid slamming things 
+going towards goals 
+and, im going to argue that us, 
+walking around trying 
+both, to walk people 
+go to particular place 
+interested in going to 
+so we time 
+shouldnt we let robots so 
+pro the, benefit 
+this would to get a smoother ride 
+switching between behaviors 
+rapidly 
+we avoid typically that zeno issue 
+so this would an argument 
+blending 
+an argument is that we 
+longer completely trust that we 
+guarantees that system 
+supposed to 
+in sense that 
+avoiding obstacles, kind 
+avoiding obstacles kind 
+something else clear 
+that we actually guarantee anymore 
+that staying clear obstacles 
+if we going to goal while 
+that something 
+going to indeed hit landmark 
+so there potential drawbacks 
+blending behaviors that one 
+that is that hard to 
+guarantee whats actually going to, to 
+happen 
+so, lets first build 
+solutions going to 
+to take kind stand here 
+going to prefer, prefer one 
+
+so lets actually start 
+switched hybred atomatom 
+so, we robot, goal, 
+obstacle, going to 
+is going to used behavior 
+that we assigned last time 
+so saying that controlling 
+volocity robot directly 
+so lets say x dot is equal to u 
+this is in r, this is a planar 
+robot, so a twodimensional control 
+signal 
+lets say sake simplicity 
+that go to goal behavior is simply a 
+proportional regulator driving x to 
+goal 
+long kgtg is positive, weve 
+seen that this is an asymptotically 
+stable controller 
+also using avoid obstacle 
+controller thats simply pushing us 
+away from, goal 
+so this is actually an unstable 
+controller thats driving us away, 
+straight away the, obstacle 
+point 
+so lets say that we two 
+two behaviors 
+then, here would a hybrid automaton 
+that switches between two 
+behaviors 
+so robot is going towards goal, 
+until distance to obstacle, so 
+this distance here, d is less 
+equal to critical safety distance 
+so close to obstacle, 
+we switch weve switched 
+avoiding obstacle 
+going to that until longer 
+unsafe ive written here is that 
+d obstacle 
+strictly greater d safe plus 
+epsilon 
+reason we want this epsilon here 
+is that we dont want to end switching 
+quickly so if we get rid 
+epsilon, immediately in this 
+situation we might zno 
+rapid switches so this would a 
+switched hybrid automaton that switches 
+between behaviors kind clear 
+we would design that 
+blending hand is 
+straight forward, so lets say that we 
+setup lets 
+define a blending function a function 
+distance to obstacle 
+so this blending function is going to 
+a given distance going to 
+take a value between 
+idea is that if this is say 
+going to goal if 
+avoiding obstacles 
+heres an example, sigma is 
+means that i take you know 
+percent this 
+vector i take this vector 
+thats blending is 
+im is im taking this 
+little snippet, adding here 
+getting this new direction 
+travel 
+so if i that i get green arrow 
+here green arrow would 
+blended direction 
+so x dot is going to in this case 
+going towards to goal minus 
+is avoiding obstacles 
+so this is a natural way in 
+you actually blend blend two 
+types behaviors you to design 
+the, blending function 
+standard way to is something like 
+an exponential like this 
+so, whats going is sigma is basically 
+one large values sigma is 
+that means going towards 
+goal we get closer to goal d 
+becomes becomes small, 
+is avoiding obstacle 
+and, basically, parameter here, you 
+get tweak, is beta 
+tells you, quickly is this 
+thing going to decay is going to 
+go like this, is going to 
+slower thats, thats really the, 
+design choice we would to, to make 
+if using this kind exponential 
+blending function, 
+record is quite standard 
+so punch lines behind this lecture is 
+really that we,we two choices 
+comes to, switching, mixing 
+behaviors 
+one is to 
+switch hard between avoiding obstacles 
+going to goal 
+is to kind blend 
+weve seen, there drawbacks 
+benefits 
+so, if youre switching hard, you 
+guarantee that system doesnt 
+anything stupid you get a bumpy ride 
+potentially 
+if youre blending, you get something 
+much nicer smoother but, 
+guarantees kind gone 
+so course, we want to is 
+cake eat 
+meaning we want to take whats best 
+
+so, we want to get performance 
+guarantees that hard switches give us 
+smooth ride that blending 
+gives us 
+answer to that is surprisingly 
+enough going to this induced sliding 
+mode that weve already talked 
+that is going to give us means 
+we 
+we walk chew gum 
+time 
+yet, somehow guaranteeing that we dont 
+trip we started to chew 
+gum 
+so in next lecture, going to 
+start approaching this issue 

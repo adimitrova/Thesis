@@ -1,0 +1,592 @@
+1
+00:00:00,012 --> 00:00:05,080
+[MUSIC]. 
+
+2
+00:00:05,080 --> 00:00:09,460
+We've already seen how difficult it is to 
+integrate powers of sin. 
+
+3
+00:00:09,460 --> 00:00:16,910
+For example, what's the inner goal from 0 
+to power of a 2 of sin the 32nd power. 
+
+4
+00:00:16,910 --> 00:00:22,676
+Well it turns out that it's, what is 
+this, 300540195 divided by 4294967296 
+
+5
+00:00:22,676 --> 00:00:26,810
+times pi. 
+But how would I ever that. 
+
+6
+00:00:26,810 --> 00:00:36,880
+That looks so random and yet there's more 
+going on here. 
+
+7
+00:00:36,880 --> 00:00:41,760
+In fact, this ends up being 3 times 3 
+times 5 times 17 times 19 times 23 times 
+
+8
+00:00:41,760 --> 00:00:47,320
+29 times 31 all over 2 to the 32nd power. 
+What? 
+
+9
+00:00:47,320 --> 00:00:51,730
+All those numbers suggest something's 
+going on here that could hardly be an 
+
+10
+00:00:51,730 --> 00:00:54,770
+accident. 
+The goal of computing, the goal of 
+
+11
+00:00:54,770 --> 00:00:57,870
+numbers, the goal of everything that 
+we're doing in this course isn't just 
+
+12
+00:00:57,870 --> 00:01:01,130
+answers. 
+It's insight. 
+
+13
+00:01:01,130 --> 00:01:06,500
+So how can we gain some insight into why 
+that integral works out like that. 
+
+14
+00:01:06,500 --> 00:01:15,740
+Specifically our question is why does it 
+factor, so nicely? 
+
+15
+00:01:15,740 --> 00:01:19,575
+Right I mean there's no reason at least 
+at this point for it to work out so 
+
+16
+00:01:19,575 --> 00:01:25,449
+nicely so why does it factor so nicely? 
+Well to gain some insight into this lets 
+
+17
+00:01:25,449 --> 00:01:29,607
+use parts to examine the relationship 
+between the integral of sin to the nth 
+
+18
+00:01:29,607 --> 00:01:33,954
+power and sin to the n minus second 
+power. 
+
+19
+00:01:33,954 --> 00:01:36,842
+Well, let me write that down. 
+To answer this question, of why it 
+
+20
+00:01:36,842 --> 00:01:41,400
+factors is what I want to do is figure 
+out some sort of relationship. 
+
+21
+00:01:41,400 --> 00:01:45,560
+Between the interval from 0 to pi over 2 
+of sin to the nth power and the interval 
+
+22
+00:01:45,560 --> 00:01:49,990
+from 0 to pi over 2 to the n minus second 
+power. 
+
+23
+00:01:49,990 --> 00:01:53,228
+We'll use parts. 
+So lets start with this and I gotta pick 
+
+24
+00:01:53,228 --> 00:01:57,479
+a u and a dv. 
+So I'll have a u be a sin to the n minus 
+
+25
+00:01:57,479 --> 00:02:03,438
+1 and dv, which would be the rest of 
+this, will just be sine x dx, so udv 
+
+26
+00:02:03,438 --> 00:02:11,370
+gives me this integrand. 
+Now if that's u and that's dv, I gotta 
+
+27
+00:02:11,370 --> 00:02:14,820
+figure out what d, u, and v are supposed 
+to be. 
+
+28
+00:02:14,820 --> 00:02:19,363
+Well, if dv is sin of x, then an 
+antiderivative for that is minus cosine x 
+
+29
+00:02:19,363 --> 00:02:23,983
+and, if u is sin to the n minus 1, then 
+du, we've gotta differentiate this, 
+
+30
+00:02:23,983 --> 00:02:32,660
+that'll be the chain rule. 
+n minus 1 times sin to the n minus 2. 
+
+31
+00:02:32,660 --> 00:02:36,670
+And then times the derivative of this. 
+What's the derivative of the inside? 
+
+32
+00:02:36,670 --> 00:02:41,130
+The derivative of sin is cosine, and then 
+dx. 
+
+33
+00:02:41,130 --> 00:02:46,230
+Now we get a formular for parts. 
+So this integral is u v. 
+
+34
+00:02:46,230 --> 00:02:54,290
+So sin, to the n minus 1, times cosine 
+with a minus sin, evaluated at pi over 2 
+
+35
+00:02:54,290 --> 00:03:01,110
+and 0. 
+Minus the interval from 0 to pi over 2 of 
+
+36
+00:03:01,110 --> 00:03:07,190
+v du, which is well here's n minus 1 sin 
+to the n minus 2 cosine squared dx and 
+
+37
+00:03:07,190 --> 00:03:15,685
+I've got a minus sin there on the v so 
+I'll make that plus. 
+
+38
+00:03:15,685 --> 00:03:21,724
+Alright, now when I plug in pi over 2 
+that kills the cosine terms, and when I 
+
+39
+00:03:21,724 --> 00:03:30,070
+plug in 0, that kills the, the sin term. 
+So this thing here is just 0, and that 
+
+40
+00:03:30,070 --> 00:03:35,986
+means this original integral is just the 
+integral from 0 to pi over 2 of n minus 1 
+
+41
+00:03:35,986 --> 00:03:46,529
+times sin to the n minus 2 x. 
+And instead of, cosine square, there I'll 
+
+42
+00:03:46,529 --> 00:03:55,700
+right that as 1 minus sin squared x d x. 
+Now I can expand this out. 
+
+43
+00:03:55,700 --> 00:04:01,000
+This is, really the difference between 
+two integrals after I expand. 
+
+44
+00:04:01,000 --> 00:04:08,080
+It's n minus 1 times the integral from 0 
+to pi over 2 of sin to the n minus 2 x, 
+
+45
+00:04:08,080 --> 00:04:15,396
+then minus n minus 1 times the integral 
+from 0 to pi over 2 of sin to the n minus 
+
+46
+00:04:15,396 --> 00:04:27,030
+2 times sine squared. 
+Is just sin to the nth power dx. 
+
+47
+00:04:27,030 --> 00:04:30,210
+And we can solve this. 
+So, this is what I've got at this point. 
+
+48
+00:04:30,210 --> 00:04:35,029
+I've that the integral from 0 to pi over 
+2 of sin to the n x dx is equal to this, 
+
+49
+00:04:35,029 --> 00:04:40,064
+after I did parts. 
+But now, I can add n minus 1 times the 
+
+50
+00:04:40,064 --> 00:04:45,350
+interval from 0 to pi over 2 sin to the 
+nx dx to both sides. 
+
+51
+00:04:45,350 --> 00:04:50,840
+And what do I get, well I'll get n times 
+the integral from 0 to pi over 2 sin to 
+
+52
+00:04:50,840 --> 00:04:58,100
+the n x dx is equal to. 
+And on the other side I'll have n minus 1 
+
+53
+00:04:58,100 --> 00:05:05,900
+the integral from 0 to pi over 2 sin to 
+the n minus 2 xdx. 
+
+54
+00:05:05,900 --> 00:05:10,352
+And I can divide both sides by n. 
+And if I divide both sides by n, alright, 
+
+55
+00:05:10,352 --> 00:05:15,140
+I find that the integral from 0 to pi 
+over 2 of sin to the n xdx is n minus 1 
+
+56
+00:05:15,140 --> 00:05:24,000
+over n times the integral from 0 to pi 
+over 2 of sin to the n minus 2 xdx. 
+
+57
+00:05:24,000 --> 00:05:27,965
+So this formula is telling me how to 
+compute the integral of sine to the nth 
+
+58
+00:05:27,965 --> 00:05:33,340
+power in terms of the integral of sin to 
+the n minus second power. 
+
+59
+00:05:33,340 --> 00:05:39,580
+So I get started by knowing that the 
+integral from 0 to to pi over 2 of sin to 
+
+60
+00:05:39,580 --> 00:05:46,109
+the 0 power of x dx. 
+That's just the integral of 1 from 0 to 
+
+61
+00:05:46,109 --> 00:05:50,210
+pi over 2. 
+Well that's just pi over 2. 
+
+62
+00:05:50,210 --> 00:05:55,060
+So, what's the integral of sine squared 
+on the interval 0 to pi over 2. 
+
+63
+00:05:55,060 --> 00:06:00,820
+Well, using this formula, when n equals 
+2, I find that the integral from 0 to pi 
+
+64
+00:06:00,820 --> 00:06:08,318
+over 2 of sin squared x dx. 
+This is when n equals 2, is 2 minus 1. 
+
+65
+00:06:08,318 --> 00:06:14,235
+Over 2, that's n minus 1 over n times the 
+integral from 0 to pi over 2 of sin to 
+
+66
+00:06:14,235 --> 00:06:19,615
+the zeroth power. 
+But I know what sin to the zeroth power 
+
+67
+00:06:19,615 --> 00:06:24,640
+is, it's just pi over 2. 
+So this is 1 half 2 minus 1 over 2 times 
+
+68
+00:06:24,640 --> 00:06:32,830
+this which is pi over 2 which pi over 4. 
+So the integral from 0 to power over 2 
+
+69
+00:06:32,830 --> 00:06:37,068
+sin squared x is just pi over 4. 
+What's the integral of sine to the 
+
+70
+00:06:37,068 --> 00:06:40,522
+fourth? 
+Well, let's use this formula when n 
+
+71
+00:06:40,522 --> 00:06:48,330
+equals 4 so the integral from 0 to pi 
+over 2 signed to the fourth x dx. 
+
+72
+00:06:48,330 --> 00:06:53,146
+That'll be 4 minus 1 over 4 times the 
+integral from 0 to pi over 2 of sin 
+
+73
+00:06:53,146 --> 00:07:01,490
+squared xdx, and we just figured out what 
+the integral of sin squared is right. 
+
+74
+00:07:01,490 --> 00:07:09,506
+This is 3 4th times pi over 4. 
+What's the integral of sin to the 6th? 
+
+75
+00:07:09,506 --> 00:07:12,720
+So, that means I should look at this 
+formula when n equals 6. 
+
+76
+00:07:12,720 --> 00:07:17,912
+So, the integral from 0 to pi over 2 of 
+sin to the 6th x dx is, well if I put in 
+
+77
+00:07:17,912 --> 00:07:23,192
+n equals 6, I get 6 minus 1 over 6 times 
+the integral from 0 to pi over 2 of sin 
+
+78
+00:07:23,192 --> 00:07:31,438
+to the 4th x dx, but I just figured that 
+one out. 
+
+79
+00:07:31,438 --> 00:07:37,549
+So, this is 5 6th times, well here's the 
+integral of sin to the 4th, times 3 4th 
+
+80
+00:07:37,549 --> 00:07:42,840
+times pi over 4. 
+What's the integral of sin to the 8th? 
+
+81
+00:07:42,840 --> 00:07:45,780
+Well, that means I should use this 
+formula when n equals 8. 
+
+82
+00:07:45,780 --> 00:07:51,575
+So, the integral from 0 to pi over 2 of 
+sin to the 8th dx is, according to this 
+
+83
+00:07:51,575 --> 00:07:57,845
+when n equals 8, that's 8 minus 1 over 8 
+times the integral from 0 to pi over 2 of 
+
+84
+00:07:57,845 --> 00:08:05,650
+sin to the 6th x dx. 
+And we just figured out sin to the 6th. 
+
+85
+00:08:05,650 --> 00:08:11,140
+This is 8 minus 1 over 8. 
+That's 7 over 8 times the integral of sin 
+
+86
+00:08:11,140 --> 00:08:15,736
+to the 6th. 
+Which is 5 6th times 3 4ths times pi over 
+
+87
+00:08:15,736 --> 00:08:21,450
+4. 
+Okay, okay, we're seeing a pattern. 
+
+88
+00:08:21,450 --> 00:08:24,670
+What's the integral of sin to the 32nd 
+power? 
+
+89
+00:08:24,670 --> 00:08:31,130
+So, the integral from 0 to pi over 2 of 
+sin to the 32nd power. 
+
+90
+00:08:31,130 --> 00:08:37,578
+Just following this pattern will be 31 
+over 32 times 29 over 30 times 27 over 
+
+91
+00:08:37,578 --> 00:08:43,818
+28, and I'm going to keep on going until 
+I get down to 5 over 6 times 3 over 4 and 
+
+92
+00:08:43,818 --> 00:08:53,490
+then finally times pi over 4. 
+Now we can cancel like crazy. 
+
+93
+00:08:53,490 --> 00:08:57,224
+So this 3 and this 6 give me a 2. 
+This 5 and this 10 give me a 2. 
+
+94
+00:08:57,224 --> 00:09:03,144
+This 7 and the 14 give me a 2. 
+The 9 and the 18 gives me a 2. 
+
+95
+00:09:03,144 --> 00:09:12,474
+The 11 and the 22 gives me a 2. 
+The 13 and the 26 gives me a 2. 
+
+96
+00:09:12,474 --> 00:09:18,340
+The 15 and the 30 gives me a 2. 
+The 17 survives, all right. 
+
+97
+00:09:18,340 --> 00:09:22,898
+Let's see what else I can cancel. 
+the 19 is going to survive. 
+
+98
+00:09:22,898 --> 00:09:30,420
+The 21, however, well the 21 is going to 
+be killed by a 7 somewhere. 
+
+99
+00:09:30,420 --> 00:09:35,460
+I can find a 7 in in the 28, so this 
+gives me a 4 and this 21 gives me a 3 
+
+100
+00:09:35,460 --> 00:09:43,266
+leftover can I kill that 3 somehow? 
+Yeah, that 3 can be killed by this 12 
+
+101
+00:09:43,266 --> 00:09:47,720
+giving me 4 left over. 
+So this is entirely gone now. 
+
+102
+00:09:47,720 --> 00:09:50,240
+the 23 is going to survive. 
+What about the 25? 
+
+103
+00:09:50,240 --> 00:09:53,436
+Do I have any 5's? 
+Well, we've got a 5 in this 20, that 
+
+104
+00:09:53,436 --> 00:09:58,902
+gives me a 4, and then I've got a 5 here 
+which will end up surviving. 
+
+105
+00:09:58,902 --> 00:10:02,670
+I've got a 27 here. 
+Do I have any 3's down here? 
+
+106
+00:10:02,670 --> 00:10:07,830
+Well I've got a 3 in this 24. 
+I can make this this 24 into an 8, if I 
+
+107
+00:10:07,830 --> 00:10:14,241
+convert this 27 into a 9. 
+the 29 is going to survive and the 31 is 
+
+108
+00:10:14,241 --> 00:10:19,646
+is going to survive. 
+So in the numerator, what all do I have? 
+
+109
+00:10:19,646 --> 00:10:27,786
+Well, the numerator, I've got a 31, a 29. 
+A 9, a 5, a 23, a 19, and a 17, and way 
+
+110
+00:10:27,786 --> 00:10:34,974
+over here, a pi. 
+And in the denominator I've got a whole 
+
+111
+00:10:34,974 --> 00:10:38,980
+bunch of of 2's, right? 
+How many 2's do I have? 
+
+112
+00:10:38,980 --> 00:10:44,401
+Well I've got 2 to what power? 
+I've got five 2's there, another 2 here, 
+
+113
+00:10:44,401 --> 00:10:50,221
+two more 2's, a 2, three more 2's, 
+another 2, two more 2's, another 2, four 
+
+114
+00:10:50,221 --> 00:10:56,429
+more 2's, one more 2, two more 2's, one 
+more 2, three more 2's, one more two, and 
+
+115
+00:10:56,429 --> 00:11:05,510
+then here, another four 2's. 
+And that's going to figure what are all 
+
+116
+00:11:05,510 --> 00:11:08,870
+of these number that I get when I add 
+these things up and 5 plus 1 plus 2 plus 
+
+117
+00:11:08,870 --> 00:11:14,790
+1 plus 3 plus 1 plus 2 plus 1 plus 4 plus 
+1 plus 2 plus 1 plus 3 plus 1 plus 4. 
+
+118
+00:11:14,790 --> 00:11:20,190
+That's 32 two's in the denominator. 
+This was a triumph. 
+
+119
+00:11:20,190 --> 00:11:33,586
+I'm making a note here huge success. 

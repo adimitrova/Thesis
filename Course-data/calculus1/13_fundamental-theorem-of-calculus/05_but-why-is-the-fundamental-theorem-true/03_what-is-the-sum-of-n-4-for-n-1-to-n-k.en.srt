@@ -1,0 +1,547 @@
+1
+00:00:00,002 --> 00:00:05,034
+[MUSIC]. 
+
+2
+00:00:05,034 --> 00:00:11,480
+Let's find the sum of the 4th powers. 
+In particular, I want to calculate the 
+
+3
+00:00:11,480 --> 00:00:18,045
+sum, n goes from 1 to k, of n to the 4th. 
+Playing with this analogy, I could think 
+
+4
+00:00:18,045 --> 00:00:22,686
+about this problem the same way that I'd 
+approach an integration problem. 
+
+5
+00:00:22,686 --> 00:00:26,393
+I should try to antidifference n to the 
+4th. 
+
+6
+00:00:26,393 --> 00:00:30,221
+I should try to find a list of numbers, 
+whose successive differences are n to the 
+
+7
+00:00:30,221 --> 00:00:33,643
+fourth, just try to find a list of 
+numbers whose differences are n to the 
+
+8
+00:00:33,643 --> 00:00:37,396
+4th. 
+Let's just try to find some lists of 
+
+9
+00:00:37,396 --> 00:00:42,170
+numbers and their differences. 
+So as a first example let's take a look 
+
+10
+00:00:42,170 --> 00:00:46,964
+at say n to the 5th, and let's look at 
+the 5th power. 
+
+11
+00:00:46,964 --> 00:00:52,788
+So 0 the 5th is 0, 1 to the 5th is 1, 2 
+to the 5th is 32, 3 to the 5th is 243, 4 
+
+12
+00:00:52,788 --> 00:01:01,000
+to the 5th is the same as 2 to the tenth 
+that's 1024. 
+
+13
+00:01:01,000 --> 00:01:10,550
+Five to the 5th is 3125 and so on. 
+So that's just lists of of 5th powers. 
+
+14
+00:01:10,550 --> 00:01:15,240
+Now, let's try to find the differences 
+between subsequent numbers in this list. 
+
+15
+00:01:15,240 --> 00:01:21,370
+So the difference between 1 and 0 is 1. 
+The difference between 32 and 1 is 31. 
+
+16
+00:01:21,370 --> 00:01:29,022
+The difference between 243 and 32 is 211. 
+The difference between 1,024 and 243 is 
+
+17
+00:01:29,022 --> 00:01:35,695
+781. 
+And the difference between 1,024 and 
+
+18
+00:01:35,695 --> 00:01:42,575
+3,125 is 2101 and so forth. 
+Now it's maybe not so helpful just to see 
+
+19
+00:01:42,575 --> 00:01:44,840
+specific numbers. 
+Let's try to write down a formula for 
+
+20
+00:01:44,840 --> 00:01:47,838
+this. 
+So I'll write the differences, between 
+
+21
+00:01:47,838 --> 00:01:51,667
+the 5th powers. 
+Well that's n to the 5th minus the 
+
+22
+00:01:51,667 --> 00:01:56,389
+previous 5th power, so minus n minus 1 to 
+the 4th. 
+
+23
+00:01:56,389 --> 00:02:02,301
+And then I could expand this out. 
+I could take n to 5th minus this thing 
+
+24
+00:02:02,301 --> 00:02:08,378
+expanded and I'd get 5 n to the 4th is 
+the n to the 5th will cancel minus 10 n 
+
+25
+00:02:08,378 --> 00:02:17,486
+cubed plus 10 n squared minus 5 n plus 1. 
+Right, and the plus 1 comes from 
+
+26
+00:02:17,486 --> 00:02:22,202
+subtracting a minus 1 to the 5th. 
+Okay, so that formula there gives these 
+
+27
+00:02:22,202 --> 00:02:26,168
+green numbers, it's the differences in 
+the 5th powers. 
+
+28
+00:02:26,168 --> 00:02:29,240
+I'm going to play the same kind of game 
+for a different list of numbers. 
+
+29
+00:02:29,240 --> 00:02:33,926
+Let's try to find the differences in the 
+list of say 4th powers, well that will be 
+
+30
+00:02:33,926 --> 00:02:38,257
+the 4th power of n, minus the fourth 
+power of the pervious number of n minus 
+
+31
+00:02:38,257 --> 00:02:43,856
+1. 
+And again I can expand this out and n to 
+
+32
+00:02:43,856 --> 00:02:48,783
+the 4th minus, there's an n to the fourth 
+that cancels. 
+
+33
+00:02:48,783 --> 00:02:53,247
+So the highest power that survives is an 
+n cubed term with a coefficient of 4 
+
+34
+00:02:53,247 --> 00:02:59,646
+minus 6 n squared plus 4 n minus 1. 
+So this formula tells me the differences 
+
+35
+00:02:59,646 --> 00:03:04,527
+between subsequent 4th powers. 
+Now I want to combine those, to get 
+
+36
+00:03:04,527 --> 00:03:08,222
+somehting with a difference of n to the 
+4th. 
+
+37
+00:03:08,222 --> 00:03:11,714
+Okay, but how am I going to do that? 
+Well, here's something I could do to make 
+
+38
+00:03:11,714 --> 00:03:13,680
+it a little bit easier to see what's 
+going on. 
+
+39
+00:03:13,680 --> 00:03:18,300
+Instead of looking at differences between 
+5th powers, I can look at the differences 
+
+40
+00:03:18,300 --> 00:03:23,408
+between 1 5th of 5th power. 
+So I, that is the effect of dividing all 
+
+41
+00:03:23,408 --> 00:03:27,411
+these numbers by five. 
+And since all these coefficients except 
+
+42
+00:03:27,411 --> 00:03:30,856
+for the last one are multiples of five, 
+that'll make that formula look a little 
+
+43
+00:03:30,856 --> 00:03:34,615
+bit nicer. 
+And I could do the same thing with with n 
+
+44
+00:03:34,615 --> 00:03:38,110
+to the 4th. 
+Instead of looking at 4th powers, I could 
+
+45
+00:03:38,110 --> 00:03:42,205
+look at 1 quarter of fourth powers, and 
+I'd have the effect of dividing all of 
+
+46
+00:03:42,205 --> 00:03:47,986
+these coefficients by by four. 
+Let me just write down you know, what, 
+
+47
+00:03:47,986 --> 00:03:52,138
+what we've got here, kind of summarize 
+the resulting formulas. 
+
+48
+00:03:52,138 --> 00:04:00,647
+So, the differences between n to the 5th 
+over 5, well, according to this that will 
+
+49
+00:04:00,647 --> 00:04:11,360
+be n to the 4th minus 2 n cubed plus 2 n 
+squared minus n plus a 5th. 
+
+50
+00:04:11,360 --> 00:04:18,490
+And I get a similar kind of formula for 
+looking at differences of n to the 4th 
+
+51
+00:04:18,490 --> 00:04:24,688
+over 4. 
+It's this divided by 4 and that will give 
+
+52
+00:04:24,688 --> 00:04:32,820
+me an n, cubed minus 3 halves and squared 
+plus n minus a quarter. 
+
+53
+00:04:32,820 --> 00:04:35,328
+Well, let's just try to combine those 
+two. 
+
+54
+00:04:35,328 --> 00:04:37,836
+But how, exactly, do I want to combine 
+them? 
+
+55
+00:04:37,836 --> 00:04:41,136
+Well, the deal is that I've got an n to 
+he 4th here, and that's really what I 
+
+56
+00:04:41,136 --> 00:04:45,855
+want at the end of this process. 
+I want something with the differences n 
+
+57
+00:04:45,855 --> 00:04:49,709
+to the 4th, because I'm trying to 
+antidifference n to the 4th. 
+
+58
+00:04:49,709 --> 00:04:53,920
+And I've got a minus 2n cubed. 
+And I've just got an n cubed here. 
+
+59
+00:04:53,920 --> 00:05:00,420
+So if I took this and added two copies of 
+this, I'd be in pretty good shape. 
+
+60
+00:05:00,420 --> 00:05:04,460
+So what would I get in that case? 
+I'll be looking at the differences of n 
+
+61
+00:05:04,460 --> 00:05:10,060
+to the 5th over 5 plus two copies of n to 
+the 4th over 4. 
+
+62
+00:05:10,060 --> 00:05:15,580
+And that would give me an n to the 4th. 
+The n cubed term would go away. 
+
+63
+00:05:15,580 --> 00:05:21,314
+I'd get a minus n squared, because I've 
+got a 2n squared minus two copies of 
+
+64
+00:05:21,314 --> 00:05:27,960
+three halves n squared. 
+And then I get a plus n, because I've got 
+
+65
+00:05:27,960 --> 00:05:34,744
+minus n plus two copies of n. 
+And then a 5th minus 2 copies of a 4th 
+
+66
+00:05:34,744 --> 00:05:42,425
+will give me minus 3 tenths. 
+I could try to get rid of that n squared 
+
+67
+00:05:42,425 --> 00:05:47,387
+term by adding up on the differences of n 
+cubed. 
+
+68
+00:05:47,387 --> 00:05:52,539
+Why does that work? 
+Well, if you calculate the differences 
+
+69
+00:05:52,539 --> 00:06:02,251
+for the list of numbers n cubed over 3. 
+you end up getting, n squared minus n, 
+
+70
+00:06:02,251 --> 00:06:07,882
+plus a third. 
+So, if I take this and add this, that'll 
+
+71
+00:06:07,882 --> 00:06:11,200
+get rid of this n squared term. 
+Right? 
+
+72
+00:06:11,200 --> 00:06:16,019
+So I'm going to look at the differences 
+of n to the 5th over 5 plus two copies of 
+
+73
+00:06:16,019 --> 00:06:23,668
+n to the 4th over 4 plus n cubed over 3, 
+and I'm left with an n to the fourth. 
+
+74
+00:06:23,668 --> 00:06:30,407
+No more n squared anymore. 
+The plus n minus n also cancels, and then 
+
+75
+00:06:30,407 --> 00:06:38,016
+I've got minus three tenths plus a third, 
+and that ends up being plus 1 30th. 
+
+76
+00:06:38,016 --> 00:06:38,950
+Now I can get rid of the 1 over 30th 
+term. 
+
+77
+00:06:38,950 --> 00:06:45,681
+Now how do I do that? 
+Well, look at the differences of the list 
+
+78
+00:06:45,681 --> 00:06:53,110
+of numbers n over 30, and that's just 1 
+30th, right. 
+
+79
+00:06:53,110 --> 00:06:56,750
+This list of numbers, each number in that 
+list differs by 1 30th compared to the 
+
+80
+00:06:56,750 --> 00:07:01,490
+previous number in the list. 
+So if I take this and subtract n over 30, 
+
+81
+00:07:01,490 --> 00:07:06,859
+then the differences in that list are 
+exactly n to the 4th, right? 
+
+82
+00:07:06,859 --> 00:07:12,274
+By which I mean that I take d of n to the 
+5th over 5 plus 2 n to the 4th over 4 
+
+83
+00:07:12,274 --> 00:07:20,818
+plus n to the 3rd over 3 minus n over 30. 
+And then I got n to the 4th plus a 30th 
+
+84
+00:07:20,818 --> 00:07:26,340
+minus a 30th and what I'm left with is 
+just n to the 4th. 
+
+85
+00:07:26,340 --> 00:07:30,410
+So in light of all of this, What do I 
+know right know? 
+
+86
+00:07:30,410 --> 00:07:34,363
+Taking differences between a list of 
+numbers, and this accumulation function, 
+
+87
+00:07:34,363 --> 00:07:37,800
+adding up the first k numbers on the 
+list. 
+
+88
+00:07:37,800 --> 00:07:41,752
+Those are inverse operations, right? 
+This is the discreet version of the 
+
+89
+00:07:41,752 --> 00:07:46,950
+fundamental theorem of calculus. 
+In this particular case, the differences 
+
+90
+00:07:46,950 --> 00:07:50,660
+between these numbers give you the 4th 
+power. 
+
+91
+00:07:50,660 --> 00:07:56,610
+So if I sum the 4th powers I get this, at 
+least up to some constant. 
+
+92
+00:07:56,610 --> 00:07:59,840
+Now I just have to worry about that 
+constant. 
+
+93
+00:07:59,840 --> 00:08:02,370
+But then constant is zero, we can check 
+it. 
+
+94
+00:08:02,370 --> 00:08:08,000
+Here's a sum for n equals 1 just to 1 of 
+n to the 4th. 
+
+95
+00:08:08,000 --> 00:08:11,192
+And I can just plug in any value of K 
+that I like, since this constant C 
+
+96
+00:08:11,192 --> 00:08:15,433
+doesn't depend upon K. 
+I can figure out what that constant is by 
+
+97
+00:08:15,433 --> 00:08:20,450
+looking at when K equals 1. 
+So, this is just 1. 
+
+98
+00:08:20,450 --> 00:08:24,050
+But on the other side, I've got what I 
+get when I plug in k equals 1. 
+
+99
+00:08:24,050 --> 00:08:29,930
+Which is, 1 5th plus 2 times the 4th, 
+plus, you know, 1 to the 3rd over 3. 
+
+100
+00:08:29,930 --> 00:08:33,898
+So plus a 3rd minus a 30th, plus that 
+constant c that doesn't depend upon k at 
+
+101
+00:08:33,898 --> 00:08:37,716
+all. 
+But a 5th plus a half plus a third minus 
+
+102
+00:08:37,716 --> 00:08:43,336
+a 30th is 1. 
+So I've got 1 equals 1 plus C. 
+
+103
+00:08:43,336 --> 00:08:48,374
+So that means C equals 0. 
+And that tells me what the formula then, 
+
+104
+00:08:48,374 --> 00:08:53,512
+for the sum of the 4fourh powers is. 
+It's just this, and that constant is just 
+
+105
+00:08:53,512 --> 00:08:56,180
+0. 
+This whole process is really analogous to 
+
+106
+00:08:56,180 --> 00:08:59,620
+the fundamental theorem of calculus and 
+how we use it, right. 
+
+107
+00:08:59,620 --> 00:09:06,130
+In this example I'm antidifferencing n to 
+the 4th in order to sum n to the 4th. 
+
+108
+00:09:06,130 --> 00:09:10,024
+In the same way that if I were to 
+antidifferentiate x to the fourth, that 
+
+109
+00:09:10,024 --> 00:09:14,210
+would help me to integrate x to the 4th, 
+right. 
+
+110
+00:09:14,210 --> 00:09:24,033
+This analogy runs really deep. 

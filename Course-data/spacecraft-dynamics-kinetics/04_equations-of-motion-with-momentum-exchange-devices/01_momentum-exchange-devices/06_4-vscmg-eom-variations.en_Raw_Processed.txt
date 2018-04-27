@@ -1,0 +1,293 @@
+now, going to look 
+this simplifies 
+if we a single reaction wheel, 
+we mentioned earlier, 
+if you 
+gimbal rates zero, 
+gimbal acceleration is zero 
+that means this whole frame is 
+locked down, relative to body, 
+earlier equations 
+simplify to this form 
+thats nice 
+so now, we 
+is you could rewrite this 
+going to use motor torque 
+equation to get rid big omega dot 
+so im taking that extra differential 
+equation, im going to solve 
+omega dot, back substitute so 
+i get spacecraft accelerations 
+in terms motor torque 
+one thing, i show you this 
+in identity, this term here, 
+a little bit algebra, you 
+show that relates to omega cross gs 
+just, 
+if you carry cross product terms, 
+thats you come 
+so thats i used to 
+replace this this part 
+next thing is this is motor 
+torque equation without gimbaling, so 
+theres gamma tau term in there 
+thats good 
+so you see in here, 
+there is a js times big omega dot 
+js times big omega dot 
+i could directly substitute this, 
+i take js times this, bring 
+to left hand side substitute 
+this back in here, i that 
+if you that, you end 
+a term here thats going to js 
+this is js times this, 
+youre still going to a js here, 
+gs, gs transposed omega dot 
+here we full 
+inertia tensor times this 
+this inertia space 
+craft inertia plus gimbal 
+wheel frame inertia 
+so i is this plus js, 
+ts, gs transpose, well 
+since, you substitute this 
+back in there, you get this extra term 
+like this last 
+term you here 
+two actually cancel 
+so, reaction wheel form that im 
+showing you, people often ignore this 
+include that extra term, 
+doesnt make momentum work 
+this will full answer 
+you then, so redefining that, i 
+rewrite groups in terms a little 
+bit, this is classic form 
+that you would see reaction wheels 
+reaction wheels we come 
+control loss that ill show one example 
+then, we come 
+torque level control loss 
+cmgs i cover in , we dont come 
+motor torque level control loss 
+we come gimbal rates 
+mario is pointing right 
+we want to take advantage that 
+gyroscopic torque we twist 
+so we command a twist rate 
+you a sub server system 
+that implements that twist rate 
+thats bunch 
+lectures in future 
+so this is classic 
+equation motion a wheel, 
+spacecraft 
+a single reaction wheels 
+oriented in a general way, gs, 
+gt, dont to line b one, 
+two 
+three like we dual spinner 
+thats youd end in there, 
+so good 
+thats a single device 
+if you a single cmg, thats really 
+much, you guys mentioned earlier, 
+this one term vanishes, 
+youre left everything else 
+this is still form that we use 
+we dont solve motor torques, 
+we dont back substitute here 
+in fact, this is term that gives 
+us huge gyroscopic effect 
+big omega times small gimbal rate, 
+is still a 
+big torque acting 
+so, in fact, to control valves this 
+you find come laws to come 
+desired gimbal rates to give 
+you commanded steering 
+gyroscopics 
+this is full 
+torque level solution 
+weve done single vscmg devices 
+typically you dont fly a single one, we 
+fly clusters four least vscmgs, 
+reaction wheels you may three, 
+four 
+ive seen six 
+depends on, you might use 
+three redundancy 
+also maybe torque 
+maybe a single wheel that you get 
+shelf gives you one newton meter, 
+maneuvers require one 
+a half newton meter 
+so you may double wheels 
+to get bang there 
+so we to deal clusters, 
+systems 
+in essence everything 
+weve done still holds 
+comes to book keeping 
+problem if you multiple wheels 
+we one wheel, 
+that is going to a gsi, right 
+first gs axis, second gs axis 
+thing transverse 
+gimbal, everything n 
+theres convenient projection 
+matrices im making a three 
+n matrix n number cmg devices, 
+projections calculated 
+this inertia, 
+hub plus single vscmg, 
+list a hub plus a summation 
+those, right 
+so we carry that 
+kind a calculation 
+rest gyroscopic terms 
+grouped this tau vectors 
+gyroscopic terms within 
+theyre n ones you will see 
+one torques acts 
+gs gsn axes 
+gt gn axis, 
+gg one to ggn axis 
+so allows you to write in a little 
+bit compact way, this way whereas 
+before, we gs times terms 
+if you like this, 
+would take you probably two pages 
+to write every single term 
+so allows you to cheat a little bit, 
+use substitutions 
+notations to simplify 
+so if you one wheel, 
+really multiple wheels 
+is a bookkeeping problem 
+hard part is done, i 
+want to a nice bookkeeping method 
+we look 
+examples is kinetic energy 
+we kinetic energy that hub, 
+great, you got wheel 
+a spin rate relative to body 
+wheel also gimbal 
+so if you go back 
+look omega w relative to n, 
+big omega gamma in there 
+inertia, combined inertia system, 
+you write this out, 
+thats kinetic energy 
+beauty you guys arent 
+in this class, gets to this fun 
+you take derivatives this, 
+plug in equations motion, 
+lots algebra later 
+you come looking 
+power equation that weve 
+weve solved this power equation 
+
+rotational part you proved that omega 
+dotted l power that you 
+if an external torque is acting 
+so way you want to 
+look this though, 
+this is kind called 
+workenergy principle 
+this torque is torque that acts 
+body relative to inertia 
+youre pushing thrusters, 
+youre really pushing inertial space, 
+so to speak that 
+omega is body relative to inertia 
+big omega here, thats wheel speed 
+wheel relative to gimbal frame 
+us is motor torque acting between 
+wheel gimbal frame 
+little gamma dot is angular velocity 
+between gimbal frame body 
+ug is torque acting between 
+gimbal frame body 
+this patterns holds, 
+youll see this in a lot 
+analytic dynamics text materials 
+youve recognized 
+know gets there, 
+instead taking this derivative 
+getting there really powerful 
+saves you lots days algebra 
+anyway, so 
+we a nice power expression even 
+really complicated 
+multi vscmg equation 
+we dont much in this class, 
+classes you might see 
+so next step is lets we 
+equations motion 
+a single reaction wheel 
+if we apply principle, 
+we this irw, 
+instead we to account 
+transverse 
+gimbal axis directions 
+wheel inertia in this irw 
+instead one, 
+we n 
+so a summation again, right 
+we this h vector 
+we saw this h vector a dual spinner 
+point i defined 
+momentum second, 
+dual part, 
+relative to body like that 
+thats also appearing here 
+this is kind a common notation 
+you put this together, 
+a little bit algebra, much 
+you write 
+equations motions 
+nice matrix form us is stack, 
+n motor torques 
+you get this 
+angular rate acceleration 
+nice thing this form is l dont 
+big omega dot showing anymore 
+l mean l know 
+motor torques are, 
+l essentially decoupled 
+two differential equations 
+l get omega dot directly 
+that motor torque you applied 
+to motor torque equations, 
+you know big omega dot is 
+you substitute in a known 
+you get big omega dots, 
+wheel acceleration 
+so this gives you a way, 
+weve kind analytically one 
+way solved sets equations 
+thats good 
+so thats if you a system 
+a popular configuration gs, thats 
+projection axis is you line 
+first wheel b, second wheel 
+b third wheel b 
+in that case, 
+this projection matrix is nothing 
+is an identity matrix, 
+right 
+gs drop 
+you end this form 
+this form is nice if you even 
+try to perfectly b if 
+youre a degree two 
+this form allows you to solve in a much 
+general way without that perfect 
+alignment assumption 
+thats a differential equation 
+we control well use this particular 
+differential equation, 
+come a control development 
+to stabilizing that youll see 

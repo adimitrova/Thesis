@@ -1,0 +1,228 @@
+now we have a rather useful seemingly
+general purpose controller, that we call
+the pid regulator and, we saw that we
+could use it to design a cruise controller
+for a car to make the car reach the, the
+desired velocity what i havent said
+though is how do we actually take
+something that looks, looks, to be
+completely honest, rather awkward you
+know integrals and derivatives and stuff
+and actually turn it into executable code
+meaning, how do we go from this
+mathematical expression to something
+thats running on a platform well, the
+first thing to note is that, we always
+have a sample time were sampling at a
+certain rate theres a certain clock
+frequency on the, on the computer well,
+what we need to do is we need to take
+these continuous time objects that we have
+here in the, in the pad regulator and have
+them be defined in this discreet time
+first of all here is an arrow, it doesnt
+matter if this is running in continuous
+time and discrete time, the proportional
+part we just read in the currents
+velocity and compare it to the reference
+velocity, and then we get the error at
+time, k times delta t so thats trivial
+now, but what do we do with derivatives
+and integrals well, lets start with the
+derivatives, because they are not so hard
+we know that, roughly, a derivative is the
+new value minus the old value divided
+delta t in fact, as delta t goes to ,
+this becomes the definition of a
+derivative limit so, we actually know
+that if i can store my old error, compute
+a new error, take the difference and
+divide it by delta t, i have a pretty good
+approximation of edot, which is this thing
+detdt, so i actually can approximate
+the, the derivative part in a rather
+direct way compared the latest value to
+the previous value divided by delta two,
+and were good now the integral thats
+where were going to have to do a little
+bit of work so, what is the integral
+well the integral is the sum under the
+curve right thats the integral well is
+there some way of approximating this
+well, clearly it is we can sum up all
+these little blocks this is a rim
+approximation of the integral so what
+this means is well were not going to get
+the integral exactly, but if you can sum
+up these blocks somehow and the width here
+is going to be what did we call it delta
+t so the width of each base of the
+rectangle is delta t so if you can do
+that then were getting a, a reasonably
+good approximation and, in fact, then the
+integral is simply a sum of the values at
+the sample time so the value up there
+the value at that time and then we
+multiply it by delta t to get the
+rectangle, and then we sum up all the
+rectangles thats a reasonable
+approximation and in fact what im going
+to do is im going to take this sum and
+call the sum e so this is the same thing
+so then the integral is roughly equal to
+delta t times e well, that turns out to
+be useful because, lets get rid of that
+stuff again my next value, delta, or e
+delta t times e new well, its delta t
+times the sum, but now im summing to n
+plus , well, lets pull out the last
+term so, the error at time, n plus 
+times delta t thats the last value that
+we called little e new up here lets pull
+that out, multiply it by delta t, and
+whats left is the sum from  or  to n,
+which is e old, times delta t so, delta
+t e new is equal to delta t, e old  this
+guy here or if i want to put it in a
+slightly more compact way, e new where e
+is the sum of the errors is e old  the
+latest error which is a little bit dah
+the new sum is the old sum plus the latest
+entry so, that gives me enew and now,
+since i kne know that the integral is
+delta t x e, i know that, well, the
+integral term that i get here is simply
+delta t times enew which gives me an
+approximation of the interval
+so, now, having said it, lets put this
+into, into pseudocode here so, every
+time the controller is called, well, im
+going to read in the latest error, which
+is the reference minus the measurement
+and then, im going to say e dot
+edot is really
+e minus, now we call it, lets call it e
+old, here its really divided by delta t,
+right but the d part of the controller is
+kd times this thing well, what if i just
+called this thing my new, lets call it kd
+prime i just divided by delta t because i
+dont actually need to typically know
+delta t lets call this kd prime well,
+then i just got rid of delta t, and i
+dont have to worry about delta t i do
+the same thing for the integral so e new
+is e old plus the latest error again, i
+really have that this thing, this
+integral, is roughly equal to delta t
+times e so if i have ki times that, i
+have this times ki, well lets take these
+guys and call this, this is my new ki
+then again i get rid of the t, so then if
+i do that, my actual controller is kp
+times e times kp times e dot which i just
+computed and ki times e this is my
+control structure, this is how we actually
+implement it and then i just need to at
+the end, remember to store the light, the
+latest e as the old e so the next time i
+call the controller, i have the previous
+value this is the implementation of a
+pid regulator
+so lets do it ok
+im going to point out again the
+coefficients include the sample times i
+pointed that out already but lets do it
+before we do it though i actually want to
+say that thats the end almost of module
+ and in module , were going to go
+robotics in the sense that were going to
+see, now, how to relate some of these
+initial concepts to robotics but, in the
+interest of full disclosure, we actually
+dont know why anything we did in module
+ actually worked
+so module  is were going to revisit what
+we did here but, revisit it in a much
+more systematic way okay, thats enough
+chitchat now, lets do it were going to
+do altitude control which means were
+going to control the height, how high up
+in the air a quadrotor is and the model
+were going to use is, well, x is going to
+be, so heres the height, heres the
+ground, so x is going to be how high up
+this thing is and x, which is the
+acceleration of the quadrotor, well g, the
+gravity, is pulling it down, so there has
+to be a g somewhere gravity is pulling
+it down, and then what were doing is
+were really controlling the velocity of
+the rotor collectives so these are all
+the rotors of the quadrotor, all the four
+rotors, the angular velocity of this thing
+were controlling and thats translating
+into thrust and upthrust through this
+coefficient, c, that we dont know and we
+actually really dont know what the
+gravitational constant is either, but this
+is the model were going to use and this
+is the controller were going to use and
+instead of me showing plots and
+simulations, why dont we get away from
+the power point presentation right here,
+and move over to an actual quadrotor
+running a pid regulator
+so, now that we have a way of designing
+reasonably good controllers in this case,
+pid regulators we have some understanding
+of the basic performance objectives were
+trying to hit in this case, stability,
+tracking, and robustness we even have a
+model, or at least a rudimentary model of
+a quadrotor aerial vehicle what we did
+in the model is we tried to somehow
+connect the rotor collective speed to an
+upthrust and the model included some
+parameters that we dont know it even
+included the gravitational constant the
+idea, of course, with robustness now is,
+we should not have to know these
+parameters exactly
+because that would actually be a rather
+poor and fragile control assign so i have
+jp delacroix with me here who is a
+graduate student at georgia tech and
+without any further ado, jp, lets see
+what thee pid regulator actually looks
+like in action , so what were doing now
+is altitude control only so were trying
+to make this thing stay at the fixed
+altitude its going to drift a little bit
+sideways because were not controlling
+sideways drift at all one thing we can
+see right off the bat is that the system
+is indeed stabilized because if it
+wasnt, the quadrotor would actually fall
+down to the ground the other thing we see
+is, when im pushing it a little bit like
+this, its able to overcome it i can even
+push it down a little bit and the
+controller fights these disturbance, so
+robustness is, certainly achieved in
+terms of tracking, its not so clear
+whats actually going on because we dont
+exactly see what the reference height is,
+however we are measuring altitude with a
+downward facing ultrasonic sensor and,
+lets get this thing out of the way of jp
+and the integral part or the integral term
+in the pid regulator is ensuring that
+modulatiries these extra errors in the
+height measurements, we are actually
+achieving the the altitude we were,
+looking for so with this rather simple
+initial experiment, were going to declare
+success when it comes to pid regulation
+and we now are going to move on to bigger
+and better problems thank you ,, 

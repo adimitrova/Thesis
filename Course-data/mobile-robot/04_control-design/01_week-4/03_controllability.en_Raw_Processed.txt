@@ -1,0 +1,258 @@
+so, in previous lecture, we saw that 
+there something fishy play here, 
+sometimes we poleplacement 
+sometimes we cannot 
+we really here is, a 
+question b matrix 
+is b matrix rich enough, so that we 
+make system whatever we want 
+to remember, that b 
+matrix, really describes actuators we 
+so, if cheap we dont buy 
+actuators, i mean theres nothing we 
+do, course, we cannot affect 
+system 
+so, choice b matrix meaning 
+actuators we buy will matter whether 
+we enough control authority 
+revolves around concept 
+controlability 
+that is topic this lecture 
+in order to sneak 
+controlability, im going to start a 
+rather modest example 
+lets a discretetime system, we 
+seen mainly continuous times systems 
+lets start discretetime system 
+here starting a time zero origin 
+
+so, i would like to is take this 
+system in n steps, n is 
+dimension of, state, 
+im going to drive to a target state, 
+x 
+so basically, heres i want to do, i 
+want to start origin 
+in n steps sound flow around 
+until i get to i would like to 
+question one ask is, 
+i that is possible there 
+exist a u well, lets figure 
+
+first thing i is i pick view 
+time x, 
+axbu 
+well, x equal to , so this whole 
+thing is simply equal to b times u 
+well x, thats a times x plus b times 
+u well, x is bu, right, so whole 
+thing becomes abubu 
+x, well if i plug things in, i get 
+abuabubu 
+in fact, if i keep going to xn, i get a 
+n bu, blah, blah, blah, blah, 
+right 
+so, we seem to a formula, really, 
+
+we end 
+and, in fact, we want to do, 
+course, is make xn equal to this desired 
+point 
+i is i rewrite this 
+thing, this equation, 
+is really an equation in us in 
+following form 
+i u n times b 
+well, thats this term 
+then, way to ub an, 
+is this term right here 
+so, im is im saying, 
+this is i would like to solve 
+respect to us 
+well, i that well, first 
+all, this matrix here, b ab 
+way to a n b, 
+a fancylooking matrix and, in fact, 
+an importantlooking matrix 
+im going to call this matrix, gamma 
+gamma is an n m times n matrix, 
+n is dimension state 
+m is dimension input 
+well, this solution, sorry, this 
+equation x is gamma times this u u 
+vector a solution in terms us, if 
+if rank gamma is equal to 
+n 
+rank is number linearly 
+independent rows columns in gamma 
+well, so thats we want to do, 
+right we want to somehow a gamma 
+thats rich enough 
+turns that this thing 
+generalizes, this way thinking 
+control problem, generalizes quite 
+nicely to continuous time systems 
+well 
+so, if i a continuous time system, 
+x dot is axbu, x in rn 
+well, first all, this system is 
+completely controllable, 
+going to call cc 
+if is possible to go initial 
+state to final state, 
+so, meaning, if i start here i want 
+to end here, 
+there is a u that takes between 
+points, 
+points, 
+thats means system to 
+completely controllable 
+now, im going to define gamma again, 
+is this b ab way to a n 
+b 
+this is known controllability 
+matrix 
+here, ladies gentlemen, is 
+first theorem this entire course 
+controllability theorem complete 
+controllability theorem 
+system is completely controllable 
+if if rank, 
+means number linearly 
+independent columns gamma rows, 
+
+if if rank gamma is equal 
+to n, n is dimension 
+system 
+so, this is rank test known 
+a way checking controllability 
+a linear timeinvariance system 
+so, lets see happens 
+here i two different systems, 
+x plus u is first one 
+u, 
+fine, there an x here, 
+way 
+so lower one is point mass 
+upper one one we actually saw 
+that poleplacement possible 
+in fact, poleplacement is possible 
+lower system possible 
+upper system 
+this is, in fact, system used we 
+couldnt 
+well, lets look first all, 
+this top system is a twodimensional 
+system, 
+n 
+gamma, in this case, is b ab, 
+way a n b 
+n so gamma is simply b times ab 
+well, lower system also istwo 
+dimensional 
+gamma is equal b times ab 
+well, lets compute ab 
+turns to equal to 
+upper system if i apply this 
+gamma, i get b here ab here 
+so, this is , first column , 
+second column 
+if i multiply first column 
+two, i get second column 
+so, this thing two linearly 
+independent columns 
+in fact, one linearly independent 
+column 
+so, rank gamma is equal to one, 
+means, completely 
+controllable 
+well, looking lower system 
+well, this is ab, this is gamma, 
+there is way i multiply this 
+column anything to get this column 
+so, lower gamma rank equal to 
+thats two linearly independant 
+columns 
+so, is completely controlable 
+so here, poleplacement possible, 
+completely controllable 
+here, poleplacement possible, 
+completely controllable 
+seems like ready theorem 
+number 
+so, if i u kx, x dot become 
+abkx 
+this is close loop dynamics 
+then, controllability theorem number 
+says that poleplacement to arbitrary 
+eigenvalues is possible if if 
+system is completely controllable 
+so, this tells is that we need to 
+check controllability 
+if we dont complete 
+controllability, chances 
+going to able to control 
+so, this is obstruction to 
+poleplacement 
+and, in fact lets lets see we would 
+actually compute something like this 
+real 
+so, lets say that i again, 
+point, my, system 
+well, in matlab, luckily us, we dont 
+to compute things 
+we say, here is controllability 
+matrix 
+so, gamma g is controllability ab, 
+we check rank 
+in this case, we get answer out, 
+so, rank g is 
+n is , in this case, 
+so we indeed, a completely 
+controllable system, 
+means, i forgot an x there, i 
+apologize, 
+means that we place poles 
+wherever we want we all, also 
+means that possible to go between 
+two points 
+so, lets say that i start here i 
+want to go to x 
+is possible to go like this well, i 
+know possible to go x to x 
+turns that you 
+go between two points, doesnt 
+mean you follow trajectory 
+this system, 
+point mass, well, x here is 
+position, right x is velocity 
+well, if im here, that means i a 
+positive velocity a positive 
+possession 
+now, im going to if i start 
+moving like this, im going backwards, 
+meaning, x is reduced a positive 
+velocity there is way i go 
+backwards a positive velocity, so 
+this is possible 
+so, we need to well, here i 
+a positive velocity so im going to 
+keep growing i reduce 
+velocity 
+here, i zero velocity, right 
+here 
+that negative velocity, i start going 
+backwards 
+sound im going backwards 
+then, i start going forward 
+to get to x 
+so, this is you would to go 
+x to x 
+so, you cant follow arbitrary 
+trajectories system is 
+completely controllable, 
+you know that you go between 
+arbitrary points so, that gives us 
+tools that we really need to understand 
+we control system that 
+tool is controllability 

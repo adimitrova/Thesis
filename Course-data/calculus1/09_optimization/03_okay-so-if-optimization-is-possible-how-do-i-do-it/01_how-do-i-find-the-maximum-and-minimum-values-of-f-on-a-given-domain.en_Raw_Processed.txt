@@ -1,0 +1,261 @@
+provided conditions satisfied, 
+extreme value therom guarantees 
+existence maximum minimum values 
+i supposed to find 
+maximum minimum values 
+weve actually already done this in 
+examples, worth describing an 
+explicit process finding maxima 
+minima 
+heres a frourstep process 
+first, differentiate function 
+find critical points 
+places derivative is 
+equal to zero derivative isnt 
+defined 
+also lists end points if theyre 
+included in domain 
+check points, right 
+check end points, check critical 
+points, potentially you also need to 
+check limiting behavior if youre 
+working an open interval 
+lets work an example 
+okay, lets work an example 
+lets look function, given 
+rule f x equals over, x squared minus 
+this quantity squared 
+lets consider this function a 
+restricted domain 
+lets consider, a maximum, minimum values 
+this function interval between 
+minus 
+this open interval 
+i differentiate 
+yeah, first step is to differentiate 
+this function 
+so i differentiate it, im 
+going to rewrite this 
+instead x squared minus 
+squared, im going to write this x 
+squared minus to negative nd power 
+going to make a little bit easier 
+i think derivative 
+so whats derivative this function 
+power rule chain rule this 
+is negative times inside, x squared 
+minus to negative rd power times 
+derivative inside is x 
+another way to write this is negative 
+times x, thats minus x divided x 
+squared minus to third power 
+derivative in hand, i find 
+critical points 
+yeah, next step is to list 
+critical points, also end points 
+if theyre included 
+so lets see 
+critical points this 
+function 
+will places derivative 
+doesnt exist, derivative is equal 
+to zero 
+lets first think 
+derivative is equal to zero 
+well, in order that derivative to 
+equal to zero, a fraction 
+whens a fraction equal to zero 
+well, that occurred exactly 
+numerator is equal to zero 
+so im really asking is minus x 
+equal to zero 
+thats x is equal to 
+so time derivative is 
+equal to is x is equal to 
+derivative doesnt exist x is 
+equal to x is equal to minus 
+but, you know, functions even 
+defined in that case anyway 
+im considering numbers between 
+minus anyhow 
+dont to worry 
+i dont to worry end 
+points 
+because, again, interval that im 
+considering doesnt include end 
+points, an open interval 
+so im going to check x equals zero 
+to figure whats going there 
+so lets think this point x is 
+equal to zero 
+well derivative zero is equal to 
+zero 
+if i plug in zero this i see 
+that 
+whats derivative a number between 
+minus zero 
+well if i plug in a number between minus 
+zero, x squared is between zero 
+, so x squared minus is a 
+negative number cubed 
+denominator is negative, this is a 
+negative number, negative times a 
+negative number 
+so weve got negative times negative 
+divided negative, thats negative 
+so derivative a number between 
+minus is negative in this case 
+a similar kind reasoning will show 
+that derivative is positive if i 
+evaluate derivative between 
+so here is deal 
+ive got one critical point this 
+interval between minus 
+functions decreasing between 
+minus , increasing between 
+
+so that mean point 
+well means that point must a 
+place function achieves a local 
+minimum value 
+so i summarize that here, f 
+is by, this is first derivative test 
+is a local minimum value 
+end behavior 
+happens x is near negative , 
+x is near 
+so thats really step in this checklist, 
+is to check limiting end 
+behavior this function 
+i mean that 
+i really mean look this x is 
+a little bit bigger minus y, x is 
+a little bit less 
+alright, thats end behavior this 
+function 
+end points actually included so 
+course i cant evaluate function 
+there i still see happens 
+x is close to endpoints 
+lets imagine i trying to draw a graph 
+function, alright 
+would i know derivative 
+i know functions decreasing here 
+increasing here 
+i know functions got a local 
+minimum value here, linking to 
+first derivative test 
+so functions going 
+going 
+happens two values, 
+i get close to minus i get 
+close to 
+i get close to minus , function 
+is very, large, i get close 
+to , this side, functions also 
+very, large 
+so if i imagined trying to draw a graph 
+this function 
+right, would coming like this, 
+flattening would 
+getting very, large 
+lets summarize situation 
+this graph will help us summarize 
+situation 
+alright, i know 
+i know that f is smallest output, 
+minimum value that function 
+achieves domain, open interval 
+minus to 
+theres maximum value 
+considering this limiting behavior, 
+x approached to endpoints arent 
+included in this domain 
+i see that this functions output 
+made positive id like, right 
+i choose values x to make 
+output big i want 
+so i cant say this function actually 
+achieves maximum output value 
+doenst achieve maximum output 
+value 
+achieve a minimum output value 
+right here 
+x is equal to 
+that output is 
+important to emphasize that 
+domain truly matters 
+yeah, if i ask to find maximum 
+minimum values function f 
+x is equal to one x squared minus 
+one squared, a different domainwhat 
+if i looked interval one to 
+infinity this open interval 
+we start differentiating well 
+course, derivatives 
+derivative this function is still 
+minus x x squared minus to 
+third power 
+now, critical points 
+place that this derivative is 
+equal to , is x is equal to 
+place derivative 
+doesnt exist is places 
+function isnt even defined, right 
+so this interval 
+one to infinity, theres place 
+derivative isnt defined is 
+equal to zero 
+so theres critical points 
+so behavior near 
+boundaries this interval 
+happens if x is a little bit 
+one x is really, really 
+big 
+so, we working interval to 
+infinity 
+this open interval 
+so, that means limits that youd 
+consider limits, function x 
+approaches infinity limit 
+function x approaches right 
+hand side 
+and, calculation i find that 
+limit function x approaches 
+infinity is because, in that case 
+denominator made large i 
+like, makes this ratio close to 
+i like 
+and, limit function x 
+approaches right is equal to 
+infinity 
+in that case if x approaches 
+right this denominator 
+made close to positive id 
+like makes this ratio large 
+id like 
+so in this case this function this 
+domain doesnt take a largest value 
+doesnt take a smallest value 
+functions output made big 
+id like if im willing to choose x 
+a little bit bigger 
+functions output made close to 
+id like if im willing to choose x 
+to big enough 
+in words, domain matters 
+i mean this function, if im considering 
+funciton this domain, to 
+a smallest output value 
+use local minimum value 
+x is equal to 
+if consider function 
+a different domain theres 
+critical point this domain, right 
+i studied limiting behavior x 
+approached one, x approached 
+infinity, i found that i could make 
+output this function large 
+id like close to zero id like 
+so this function doesnt achieve a maximum 
+minimum value this interval 

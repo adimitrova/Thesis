@@ -1,0 +1,408 @@
+1
+00:00:00,012 --> 00:00:03,772
+[MUSIC]. 
+Remember, continuity is all how nearby 
+
+2
+00:00:03,772 --> 00:00:09,590
+inputs are sent to nearby outputs. 
+Differentiability is how wiggling the 
+
+3
+00:00:09,590 --> 00:00:14,632
+input affects the output. 
+In light of this, they seemed related, 
+
+4
+00:00:14,632 --> 00:00:18,002
+right? 
+Something like the following seems 
+
+5
+00:00:18,002 --> 00:00:19,961
+plausible. 
+Here's the theorem. 
+
+6
+00:00:19,961 --> 00:00:22,807
+Theorem. 
+If f is differentiable at a, then f is 
+
+7
+00:00:22,807 --> 00:00:26,432
+continuous at a. 
+In other words, a differentiable function 
+
+8
+00:00:26,432 --> 00:00:29,697
+is continuous. 
+Morely, we know that a differentiable 
+
+9
+00:00:29,697 --> 00:00:33,255
+function is continuous. 
+But were advanced enough at the is point 
+
+10
+00:00:33,255 --> 00:00:36,852
+in the course to give a precise argument 
+using limit. 
+
+11
+00:00:36,852 --> 00:00:42,369
+Here we go. 
+Let's suppose that f prime of a exists. 
+
+12
+00:00:42,369 --> 00:00:47,600
+In other words, that means a certain 
+limit exists. 
+
+13
+00:00:47,600 --> 00:00:55,472
+What limit? Well, the limit of 
+f(x)-f(x)/x-a as x approaches a. 
+
+14
+00:00:55,472 --> 00:01:01,118
+This limit of a difference quotients 
+computes the derivative for the function 
+
+15
+00:01:01,118 --> 00:01:06,509
+at a. So, to say that the derivative 
+exists is to say that this limit exists. 
+
+16
+00:01:06,509 --> 00:01:11,177
+Now, here comes the trick. 
+What I'd like to compute is the limit of 
+
+17
+00:01:11,177 --> 00:01:17,215
+f(x)-f(a) as x approaches a, but I don't 
+know how to do that directly. 
+
+18
+00:01:17,215 --> 00:01:21,860
+But, I can rewrite this thing I'm taking 
+the limit of as a product. 
+
+19
+00:01:21,860 --> 00:01:26,167
+Watch. 
+Instead of taking this limit, I'm going 
+
+20
+00:01:26,167 --> 00:01:32,160
+to take the limit as x approaches a of 
+x-a times this difference quotient, times 
+
+21
+00:01:32,160 --> 00:01:36,533
+f(x)-f(a)/x-a. 
+Now, as long as x isn't equal to a, this 
+
+22
+00:01:36,533 --> 00:01:41,355
+product is equal to this difference. 
+Now, why does that help? Well, this is a 
+
+23
+00:01:41,355 --> 00:01:44,766
+limit of a product. 
+So, by one of the limit laws, the limit 
+
+24
+00:01:44,766 --> 00:01:49,099
+of a product's the product of the limits 
+as long as the limits exist. 
+
+25
+00:01:49,099 --> 00:01:53,043
+And in this case, they do. 
+So, this limit of this product is, the 
+
+26
+00:01:53,043 --> 00:01:57,952
+product of the limits. 
+It's the limit of x-a as x approaches a, 
+
+27
+00:01:57,952 --> 00:02:04,452
+times the limit of f(x)-f(a)/x-a. 
+I'm only allowed to use this limit law 
+
+28
+00:02:04,452 --> 00:02:08,177
+because I know both of these limits 
+exist. 
+
+29
+00:02:08,177 --> 00:02:14,182
+Now, this first limit, the limit of x-a 
+as x approaches a, that's 0. 
+
+30
+00:02:14,182 --> 00:02:19,653
+And this second limit, well, this limit 
+exists precisely because I'm assuming 
+
+31
+00:02:19,653 --> 00:02:23,621
+differentiability, 
+the function's are differentiable. 
+
+32
+00:02:23,621 --> 00:02:28,262
+So, this limit is calculating the 
+derivative at a, and zero times any 
+
+33
+00:02:28,262 --> 00:02:32,762
+number is equal to zero. 
+The upshot here is that we've shown that 
+
+34
+00:02:32,762 --> 00:02:37,240
+the limit of f(x)-f(a)=0 as x approaches 
+a. 
+
+35
+00:02:37,240 --> 00:02:42,629
+Why would you care about this? How does 
+that help us? We know that the limit of 
+
+36
+00:02:42,629 --> 00:02:45,993
+f(x)-f(a) as x approaches a is equal to 
+0. 
+
+37
+00:02:45,993 --> 00:02:51,560
+What that means is that the limit of f(x) 
+as x approaches a is equal to f(a), but 
+
+38
+00:02:51,560 --> 00:02:54,568
+this is just the definition of 
+continuity. 
+
+39
+00:02:54,568 --> 00:02:58,202
+So now we know that f is continuous at 
+the point a. 
+
+40
+00:02:58,202 --> 00:03:01,698
+That's where we ended up. 
+Remember, what we started with. 
+
+41
+00:03:01,698 --> 00:03:05,033
+We started by assuming that f was 
+differentiable at a. 
+
+42
+00:03:05,033 --> 00:03:09,946
+And after doing all this work, we ended 
+up concluding that f is continuous at the 
+
+43
+00:03:09,946 --> 00:03:13,231
+point a. 
+So, differentiability implies continuity. 
+
+44
+00:03:13,231 --> 00:03:18,062
+One way to keep track of arguments like 
+this is to think about clouds and rain. 
+
+45
+00:03:18,062 --> 00:03:21,337
+Theorem. 
+If it is rainy, then it is cloudy. 
+
+46
+00:03:21,337 --> 00:03:25,267
+A shorter way of saying this, rainy 
+implies cloudy. 
+
+47
+00:03:25,267 --> 00:03:31,267
+Now the question is, does it go the other 
+way? If it's cloudy, is it necessarily 
+
+48
+00:03:31,267 --> 00:03:35,942
+rainy? Can you think of a cloudy day with 
+no rain? Yes, today. 
+
+49
+00:03:35,942 --> 00:03:40,467
+Let's look out the window. 
+It is very cloudy but there's no rain. 
+
+50
+00:03:40,467 --> 00:03:45,577
+Beyond clouds and rain, let's bring this 
+back to the mathematics. A differentiable 
+
+51
+00:03:45,577 --> 00:03:50,312
+function is continuous, can you think of 
+a continuous function which isn't 
+
+52
+00:03:50,312 --> 00:03:53,932
+differentiable? 
+You might want to hit pause right now, 
+
+53
+00:03:53,932 --> 00:03:58,804
+if you don't want the puzzle given away. 
+Here's an example of a function which is 
+
+54
+00:03:58,804 --> 00:04:01,698
+continuous but not differential, 
+the function f(x)=|x|. 
+
+55
+00:04:03,717 --> 00:04:08,596
+We recently saw that the absolute value 
+function wasn't differentable at zero. 
+
+56
+00:04:08,596 --> 00:04:13,472
+But how do we know that the absolute 
+value function is continuous everywhere? 
+
+57
+00:04:13,472 --> 00:04:16,918
+We know that the absolute value function 
+is continuous. 
+
+58
+00:04:16,918 --> 00:04:19,097
+I mean, look at it. 
+It's all one piece. 
+
+59
+00:04:19,097 --> 00:04:22,804
+But, we can do better. 
+We can use our limit knowledge to make a 
+
+60
+00:04:22,804 --> 00:04:27,971
+more precise argument. 
+We know that f(x)=|x| is continuous for 
+
+61
+00:04:27,971 --> 00:04:31,621
+positive inputs. 
+It's continuous on the open interval from 
+
+62
+00:04:31,621 --> 00:04:35,160
+zero to infinity because the function x 
+is continuous there. 
+
+63
+00:04:35,160 --> 00:04:40,048
+And this function, the absolute value 
+function, agrees with the function x if I 
+
+64
+00:04:40,048 --> 00:04:44,052
+plug in positive numbers. 
+Likewise, I know that the function is 
+
+65
+00:04:44,052 --> 00:04:49,397
+continuous on negative inputs because the 
+function -x is continuous there, and the 
+
+66
+00:04:49,397 --> 00:04:52,937
+function -x agrees with this function on 
+this interval. 
+
+67
+00:04:52,937 --> 00:04:57,887
+The only sticking point is to check that 
+the function's continuous at zero. And if 
+
+68
+00:04:57,887 --> 00:05:02,342
+I know it's continuous for positive 
+inputs, negative inputs, and it's 
+
+69
+00:05:02,342 --> 00:05:06,662
+continuous at zero, then I know that it's 
+continuous for all inputs. 
+
+70
+00:05:06,662 --> 00:05:10,447
+Now, how do I know that the absolute 
+value function is continuous at zero? 
+
+71
+00:05:10,447 --> 00:05:14,666
+Well, that's another limit argument, 
+right? The limit of the absolute value 
+
+72
+00:05:14,666 --> 00:05:18,873
+function when I push from the right-hand 
+side is the same as the limit of the 
+
+73
+00:05:18,873 --> 00:05:23,055
+absolute value function when I push from 
+the left-hand side, they're both zero. 
+
+74
+00:05:23,055 --> 00:05:26,778
+And because these two one-sided limits 
+exist and agree, then I know the 
+
+75
+00:05:26,778 --> 00:05:30,092
+two-sided limit of the absolute value 
+function is equal to zero, 
+
+76
+00:05:30,092 --> 00:05:33,155
+which is also the function's value at 
+zero. 
+
+77
+00:05:33,155 --> 00:05:37,508
+And therefore, the abslute value function 
+is continuous. 
+
+78
+00:05:37,508 --> 00:05:43,717
+In the end, there's some relationship 
+between differentiability and continuity. 
+
+79
+00:05:43,717 --> 00:05:49,840
+Differentiable functions are continuous. 
+Mathematics isn't just a sequence of 
+
+80
+00:05:49,840 --> 00:05:54,304
+unrelated concepts. 
+[MUSIC] It's a single unified whole. 
+
+81
+00:05:54,304 --> 00:05:59,248
+All of these ideas are connected at the 
+deepest possible levels. 
+
+82
+00:05:59,248 --> 00:05:59,863
+[MUSIC] 

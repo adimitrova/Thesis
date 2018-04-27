@@ -1,0 +1,244 @@
+1
+00:00:00,000 --> 00:00:04,172
+[MUSIC] Up to now, we've been thinking a 
+lot about limits. 
+
+2
+00:00:04,172 --> 00:00:09,150
+We've been considering f(x) when x is 
+close to but not equal to a. 
+
+3
+00:00:09,150 --> 00:00:14,054
+Let's refine that a bit now. 
+Instead of thinking about x close to a. 
+
+4
+00:00:14,054 --> 00:00:19,617
+I'm going to think about x close to the 
+right side of a or x close to the left 
+
+5
+00:00:19,617 --> 00:00:21,830
+side of a. 
+Super-sized definition. 
+
+6
+00:00:21,830 --> 00:00:26,722
+So we say the limit of f(x) as x 
+approaches a from the right, I'm going to 
+
+7
+00:00:26,722 --> 00:00:29,619
+use this little + sign to mean from the 
+right. 
+
+8
+00:00:29,619 --> 00:00:34,769
+So if this is equal to l, it means that 
+f(x) is as close as you want to l, this 
+
+9
+00:00:34,769 --> 00:00:39,340
+is just like before, provided x is near 
+enough a on the right-hand side. 
+
+10
+00:00:39,340 --> 00:00:44,413
+So we're going to use a little + sign to 
+denote approaching from the right-hand 
+
+11
+00:00:44,413 --> 00:00:47,076
+side. 
+Now we're going to play a same game for 
+
+12
+00:00:47,076 --> 00:00:51,769
+approaching from the left-hand side. 
+So let's say the limit of f(x) as x 
+
+13
+00:00:51,769 --> 00:00:57,096
+approaches a from the left-hand side is 
+equal to l means that f(x) is as close as 
+
+14
+00:00:57,096 --> 00:01:02,170
+you want to l just like usual, provided x 
+is near enough a on the left-hand side. 
+
+15
+00:01:02,170 --> 00:01:05,100
+Let's go see some picture of this at the 
+blackboard. 
+
+16
+00:01:06,340 --> 00:01:10,590
+Really helps to see a graph. 
+Here's a graph of a made up function that 
+
+17
+00:01:10,590 --> 00:01:14,242
+I'm called f(x). 
+You'll note that f(x) has some issues at 
+
+18
+00:01:14,242 --> 00:01:17,908
+the input 3. 
+There's an empty circle here and a 
+
+19
+00:01:17,908 --> 00:01:23,170
+filled-in circle here so if I plug in 3, 
+my output valley is 2. 
+
+20
+00:01:23,170 --> 00:01:27,754
+And indeed if I plug in numbers that are 
+just a little bit above 3, I get out 
+
+21
+00:01:27,754 --> 00:01:31,772
+numbers that are close to 2. 
+On the other hand, if I plug numbers that 
+
+22
+00:01:31,772 --> 00:01:35,677
+are a little bit less than 3, I get out 
+numbers that are close to 1. 
+
+23
+00:01:35,677 --> 00:01:39,072
+We can summarize our observations with 
+these two statements. 
+
+24
+00:01:39,072 --> 00:01:43,883
+The first is that the limit of f(x) as x 
+approaches three from the right-hand side 
+
+25
+00:01:43,883 --> 00:01:46,995
+is equal to 2. 
+And that makes sense because I can get 
+
+26
+00:01:46,995 --> 00:01:51,466
+the output of the function to be as close 
+to 2 as I'd like if I'm willing to 
+
+27
+00:01:51,466 --> 00:01:55,937
+evaluate the function of inputs that are 
+close to but just a little bit bigger 
+
+28
+00:01:55,937 --> 00:01:58,574
+than 3. 
+Similarly, the limit of f(x) as x 
+
+29
+00:01:58,574 --> 00:02:01,739
+approaches two from the left-hand side is 
+equal to 1. 
+
+30
+00:02:01,739 --> 00:02:06,113
+We think back in the graph, I was getting 
+outputs that are close to one if I 
+
+31
+00:02:06,113 --> 00:02:10,486
+evaluated the function inputs which are 
+close to, but just a little bit less, 
+
+32
+00:02:10,486 --> 00:02:13,451
+than 3. 
+So in this case, the two sided limit 
+
+33
+00:02:13,451 --> 00:02:17,207
+doesn't exist. 
+I can't say that f(x) is getting close to 
+
+34
+00:02:17,207 --> 00:02:22,583
+anything if all I know is that x is close 
+to 3 but the left and the right hand 
+
+35
+00:02:22,583 --> 00:02:28,023
+limits do exist. I can say that f(x) is 
+getting close to 1. If x approaches 3 
+
+36
+00:02:28,023 --> 00:02:33,139
+from the left-hand side, and I can say 
+that f(x) is getting close to 2 if x 
+
+37
+00:02:33,139 --> 00:02:38,471
+approaches 3 from the right-hand side. 
+This situation comes up quite a bit where 
+
+38
+00:02:38,471 --> 00:02:43,445
+you compute and you find that the right 
+and the left hand limits exist but they 
+
+39
+00:02:43,445 --> 00:02:47,300
+disagree and consequently, the two side 
+of limit doesn't exist. 
+
+40
+00:02:47,300 --> 00:02:52,321
+I can summarize it like this. 
+If the limit of f(x) as x approaches a 
+
+41
+00:02:52,321 --> 00:02:58,059
+from the right, is different than the 
+limit of f(x) as x approaches a from the 
+
+42
+00:02:58,059 --> 00:03:03,870
+left, then the two sided limit the limit 
+of f(x) as x approaches a does not exist. 
+
+43
+00:03:03,870 --> 00:03:08,766
+It works the other way as well. 
+If the limit from the right-hand side is 
+
+44
+00:03:08,766 --> 00:03:14,070
+equal to the limit from the left-hand 
+side, let's call our common value l, then 
+
+45
+00:03:14,070 --> 00:03:18,423
+the two sided limit, the limit of f(x) as 
+x approaches a, no + or -. 
+
+46
+00:03:18,423 --> 00:03:23,659
+So this is just the usual old limit. 
+Then this limit exists and it's equal to 
+
+47
+00:03:23,659 --> 00:03:31,937
+that same common value, l. 
+The homework will challenge you with many 
+
+48
+00:03:31,937 --> 00:03:40,356
+more situations of one sided limits. 
+If you get stuck, contact us. 
+
+49
+00:03:40,356 --> 00:03:45,619
+We are here to help you succeed. 
+[MUSIC] 

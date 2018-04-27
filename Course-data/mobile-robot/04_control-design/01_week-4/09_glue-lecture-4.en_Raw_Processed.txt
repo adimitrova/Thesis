@@ -1,0 +1,573 @@
+hello, welcome to glue lecture four 
+im smriti chopra, instructor 
+glue lectures, lets get 
+so this lecture is titled controllability 
+observability, 
+this week, dr egerstedt, you 
+guys learned 
+is a system 
+importantly, you see if 
+stable, unstable 
+if unstable, you 
+stabilize controls 
+you that, you need to 
+see if system is controllable 
+lets say you stabilize 
+you want to see if observable, 
+because, you know, you 
+dont state information, so you need 
+to somehow bring in output, etc 
+we see you put everything 
+together 
+so in this lecture, going to go 
+this 
+one big example clearing 
+concepts you guys 
+okay 
+so lets start system stability 
+lets say this is robot, an 
+arm is that going to consider, 
+is theta theta to join 
+angles this arm, two angles 
+im going to see that state is this 
+guy here, angles 
+velocities 
+a matrix is this 
+this is state relates to 
+derivatives, right 
+this is given to us 
+so this is system looks like, 
+this guy, this equation here 
+there you go 
+so we going to 
+going to check if system is 
+stable 
+blow up, time goes to 
+infinity, is going to stable 
+
+way to that is checking 
+eigen values a, right 
+so in matlab you simply type eig a, 
+you sit find 
+eigen values 
+either way 
+here we put in matlab, we see 
+that eigen values a 
+we know lectures that 
+eigen 
+values , that means system 
+is unstable 
+so we found that this system, this 
+particular x a, guy is unstable 
+okay, so that means we need to introduce 
+control, right 
+you introduce control 
+we know this pretty equation here, x dot 
+equal to ax plus bu 
+really mean 
+is b 
+is u u course, is control 
+signal 
+well, we need to first find is 
+that we 
+control system, lets say 
+
+putting motors putting 
+actuators, etc 
+so going to assume that we 
+control 
+acceleration first joint angle, 
+theta 
+if we that, we see that b 
+matrix turns to this guy here 
+
+now, you put b here in this 
+equation yours, youll 
+see that input u shows next to 
+theta double dot 
+that means you influence 
+acceleration 
+theta double theta , right 
+thats input shows 
+so thats you generate 
+b matrix 
+that we this, great 
+we, this particular choice 
+b, actually control this guy 
+that is, we see if controllable 
+
+this we a simple test, 
+is you create this matrix 
+this is controllability matrix, right 
+you simply check rank this 
+matrix 
+so here we 
+going to make this matrix first 
+you guys comfortable 
+finding matrix multiplications, etc 
+maybe big systems, 
+lets say a 
+two two matrix, you able to 
+
+if you want we really fast go one 
+example 
+example, this is a, right , 
+youve got, im going to find ab 
+so lets put b here, is 
+now, a is a cross , 
+b is a cross , resulting matrix 
+is going to a cross , right 
+lets multiply quick times 
+so this guy, theres a one that 
+lines place 
+going to get a here, is here 
+too, right 
+there that line up, so 
+you get a , , 
+so you see we got this guy here, 
+correlates to this vector in 
+controllability matrix 
+so you able to ab, a square 
+b, etc, quite easily, least cross 
+matrices 
+going to check rank 
+this guy, 
+turns that rank here is 
+we this condition 
+that rank needs to full rank, 
+matrix 
+needs to full rank in order to 
+controllable 
+that means linearly 
+independent vectors, right 
+you mean full rank 
+basically, rank equal to n, 
+
+n is number states that you 
+here n is , right 
+so clearly, this guy rank , equal 
+to , 
+thats this guy is uncontrollable 
+in case you dont want to sit and, 
+you know, compute rank, etc, 
+things, you even this in matlab 
+this is code 
+you create a matrix 
+create b matrix 
+ctrb function will give you 
+controllability matrix gamma 
+you rank this guy 
+pops , 
+is equal to , we know that, 
+so uncontrollable 
+okay 
+right, perfect 
+so we 
+uncontrollable 
+we give 
+
+we need to introduce controls 
+somehow, right 
+we saw earlier, 
+you introduce control 
+putting actuators, putting motors, 
+seeing else you control 
+so here in this case, lets say we 
+control theta 
+double dot, theta double dot, 
+acceleration theta well 
+course, will happen to 
+b matrix 
+this is b matrix will look, right 
+to double check again, put here 
+see if, in fact, u shows theta 
+double dot, theta double dot, 
+we know that u is influencing 
+accelerations, right 
+okay, so we this new guy, 
+we to check if this is controllable 
+
+we thing 
+we create controllability matrix 
+going to this in 
+matlab, we dont feel like 
+computing everything 
+this is code 
+again, similar to we 
+earlier 
+this time controllability matrix is 
+going to 
+much bigger, you two 
+vectors here in b 
+so ab is going to dimension 
+plus times 
+cross , gives you cross 
+instead cross 
+so guy here is going to your, you 
+know, b, ab, a square b, a cube b 
+so you see, matrix expanded 
+anyway, you find rank this 
+guy 
+in terms this rank is , is equal 
+to 
+number states we have, so we 
+
+full rank, is great, that 
+means we controllable 
+okay, so that we controllable, 
+this particular system, mean 
+means that i use u to make 
+original system, 
+x dot equal to ax, unstable 
+original system, stable, right 
+we that 
+we use state feedback 
+that is, we say, u is equal to negative 
+kx 
+going to try design 
+k so that we force eigen 
+values to make sure that this system is 
+stable, right 
+okay, lets go this example, 
+finding k 
+this huge cross matrix, etc, is really 
+cumbersome 
+well use a simpler system 
+lets shave one angle completely 
+so lets think state theta 
+theta double dot, theta dot 
+so weve gotten rid theta 
+problem 
+so we this new guy here, again, 
+we to this entire charade 
+
+first we need to find out, is this guy 
+stable 
+im going to give you answer 
+you yourself, to 
+convince 
+yeah, this guy is unstable 
+so im going to introduce control 
+this plus bu thing 
+again, im going to say i control 
+acceleration 
+im going to get this b matrix 
+now, is this controllable 
+thats second question you 
+ask, right 
+im going to tell you 
+controllable 
+you guys find 
+make controllability matrix 
+
+good exercise 
+im going to come back to, okay, 
+state feedback 
+going to design state feedback, 
+much simpler system, so 
+we actually work 
+instead putting in matlab 
+okay, 
+that, so we this 
+we know that system is controllable, 
+
+we this guy, u equal to negative kx 
+so lets put u this equation x 
+dot, we get 
+this new guy here, right, x dot is equal 
+to this big guy here 
+okay 
+so we put values inside 
+a, this is a 
+b, k is this 
+cross 
+matrix, k k, two gains, 
+you finally get 
+solving this entire thing is this 
+new guy here, simply a dash, right 
+so you this new a dash, youve 
+put 
+in control everything, is 
+this matrix here 
+we know that if you given a 
+system 
+x dot equal to ax, a dash x, 
+whatever, 
+to see if stable not, you check 
+eigen values a a dash 
+in this case, we control k 
+k, so actually going to force 
+eigen values k k to b to 
+make sure that system is stable 
+if you remember, eigen values one 
+condition is that the, 
+real part eigen value in 
+left half plane, right 
+so going to force, k 
+k, eigen values to 
+in left half plane world 
+okay, that so you find 
+eigen values 
+so in first slide we pretty much 
+put in matlab said eig a 
+really, you is, you find 
+this guy here, determinant a dash 
+minus lambda i, is really, if you 
+follow it, turns to this 
+so basically youre 
+is, youre saying a, 
+you have, so you actually solve 
+system, youre going to get minus 
+lambda , minus k, minus k, minus 
+lambda final matrix 
+you find determinant this 
+guy 
+solve it, youll get this equation 
+right here 
+okay 
+another exercise that you guys 
+
+good stuff 
+okay 
+so that we this characteristic 
+polynomial, going to is 
+going to pick two favorite eigen 
+values left half plane 
+lets say we pick negative 
+negative 
+so going to is, this is 
+we got 
+this is we want, right, is 
+this guy here 
+so we going to simply compare 
+two guys, 
+get values k k, 
+simple comparison two polynomials 
+happens is that, 
+this particular choice k 
+k, system, this particular 
+choice is going to actually stable 
+one quick thing 
+so yeah, you put this k k here, 
+in this guy, right, 
+in this matrix, a dash is 
+definitely going to this eigen value 
+this is really means 
+we chose eigen values to 
+in left 
+half plane, we know that this new system 
+is going to stable 
+okay 
+so yeah 
+there you go 
+we state feedback a simpler 
+system 
+we chose key, we know that 
+this guy is stable 
+so, 
+woohoo 
+now, we come to another annoying 
+thing, 
+is that we dont know state 
+we happy saying that, oh, you 
+
+negative kx, we dont this x 
+we instead is x hat, an estimate 
+state 
+we dont even that, this is 
+we using really 
+we need to find this estimate 
+state 
+that, again, we to 
+introduce this concept output 
+we see 
+senses 
+we measure 
+thats whole y matrix 
+whole thing comes in 
+
+we say, assume we see this 
+guy here 
+theta 
+so, accordingly, c matrix is going to 
+this, y is equal to cx 
+again, 
+
+you put c guy inside here, youll see 
+that 
+y becomes simply theta , thats 
+we see, right 
+so we choose we see, we choose 
+senses we have, 
+we create c, accordingly, get 
+this y equal to cx thing 
+we come to this whole thing 
+of, is, is this observable 
+is this new system observable 
+new system guys 
+is observable 
+means, that i, in fact, estimate 
+
+state, x hat, based this particular c 
+matrix 
+that, you a 
+simple test, similar to 
+controllability matrix 
+this guy is called observability 
+matrix 
+we two states here, 
+this is going to a short little matrix 
+you find is which, you 
+guys 
+you check rank this guy 
+this rank is actually equal to 
+is full rank 
+well is, states, number 
+states are, sorry, , right 
+here 
+so yes 
+is in fact full rank, means that 
+this guy is observable 
+perfect 
+that is great 
+so yay 
+really mean 
+again, to reiterate, means 
+is that lectures, you guys remember 
+that you write 
+dynamics estimate 
+state in this form 
+l is gain matrix, 
+similar to k matrix 
+controllability, right 
+saying this, really means 
+is that if you 
+to write error dynamics given 
+this guy state dynamics, 
+you get this matrix here, looks 
+similar to a minus 
+kb right 
+for, if you guys remember 
+earlier controllability analysis 
+so nice 
+
+we choose l way 
+that we chose 
+k, to make sure that eigen values 
+this guy here 
+force error to become stable, in 
+fact, that 
+means is basically force that error 
+blow 
+it, time goes to infinity, error 
+actually 
+diminishes to , thats really 
+observability means 
+you in fact find an l that will make 
+sure that error 
+goes to , means that estimate 
+will become equal to state 
+okay, 
+perfect 
+so quiz, important you guys 
+familiar least 
+is really going on, is 
+dynamics estimate, error, etc 
+comfortable understanding 
+is thats happening 
+together, execution, 
+this is important part, right 
+we got little blocks 
+everywhere, controllable, observable, 
+blah, blah, blah 
+we really dont know to 
+put together 
+thats going to 
+so this is system 
+x dot equal to ax plus bu, y is equal to 
+cx 
+this particular choice x, a, b, 
+c, weve solving this 
+while 
+okay, we found that x 
+dot equal to 
+ax is unstable, 
+introducing b c, 
+system is controllable observable 
+great 
+controllable means i find a k to make 
+sure that system becomes stable 
+observable means i find l to make sure 
+that i in fact estimate state, 
+right 
+so lets put together 
+so i wake this time equal to 
+nought im 
+x equal to x nought that i dont 
+know, i dont know state 
+im 
+going to estimate x to x 
+hat nought 
+right 
+something 
+im going to start loop dd 
+increments 
+so i started d not, im going to start 
+incrementing time dd increments 
+okay, im going to read output 
+i dont state information, 
+i is 
+output, so im going to read 
+output is giving 
+okay, 
+using that, im going to compute 
+control, u equal to negative kx hat, 
+using output, using estimate, 
+initial estimate that we 
+simply 
+okay and, remember that youve already 
+designed k l 
+okay, so you compute output, sorry, 
+compute control, 
+you send this control signal to 
+system, right 
+you update x hat using 
+dynamics, x hat this guy here 
+this is you use output, 
+output you read 
+right 
+control you need x hat, so 
+obviously you need to see 
+is new x hat, that youre 
+going to update this guy here 
+remember, youre updating 
+dynamics, 
+i here is x hat dot 
+i find x hat 
+next time instant, you know what, 
+youre going to use this oilers 
+approximation, we 
+studied together in glue lecture 
+one, i think 
+course youve 
+going dr egerstedt 
+basically, next step is previous 
+step, plus dt times dynamics 
+right 
+so thats going to 
+going to find x hat dot, 
+going to say next 
+guy is previous guy, this 
+estimate here, plus dt times x hat dot 
+thatll give us new guy 
+going to repeat 
+so we come back, we read 
+output again, compute new controls 
+control update 
+x hat, etc 
+this is we put this 
+stuff together, execution, in 
+code, etc, whatever 
+okay, that, check forums, 
+good luck quiz four 
+best 

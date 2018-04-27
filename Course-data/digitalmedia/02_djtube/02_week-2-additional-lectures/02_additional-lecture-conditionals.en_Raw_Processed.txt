@@ -1,0 +1,455 @@
+this lecture ill talk 
+conditionals 
+statements, mechanisms 
+we use in programs to make decisions 
+so, to now, programs 
+responding to use an input in various 
+ways, always kind 
+thing 
+sometimes we want to different things, 
+depending whether user 
+different stuff, different conditions 
+happen in program 
+so, we want to a different thing 
+mouse button is 
+
+weve seen ways that 
+mouse button 
+we used dragging mouse, mouse 
+dragging method 
+well look a general way 
+making that kind decision in 
+programming 
+so lets look an example 
+so this is a simple program that 
+roughly weve done 
+draws points mouse position 
+this is different 
+programs weve looked last week except 
+
+this draw method 
+rather in mouse drags, so 
+mouse moved, 
+in draw, that means happening 
+every front 
+thats a useful thing 
+well talk this week in terms 
+animations, rather 
+simply responding to input user, 
+
+proactively animating stuff 
+we need to do, drawing actions 
+animation actions constantly 
+theres user input 
+thats inaudible so whats 
+happening is every frame drawing a 
+point and, moment this doesnt 
+get us much uh, unknown 
+well see there things we 
+draw in todays lecture 
+in particular id like to look 
+copying kind functionality we 
+mouse dragged using this draw 
+method 
+main difference here is that 
+we use mouse dragged would work 
+mouse is down, working 
+the, mouse is 
+
+if we this way, would we go 
+about, drawing point, 
+mouse is pressed 
+so, we need to draw point, if 
+mouse is pressed 
+we need to make that decision, if 
+mouse is pressed, draw a point 
+if not, dont draw 
+way we that is use a method 
+called an if statement 
+so we say, if mouse is pressed 
+draw a point inaudible this 
+if i drag mouse pointer around 
+window, without mouse pressed 
+nothing, minute i press mouse we 
+start drawing 
+so thats really nice 
+now, im going to go back slides to 
+explain that 
+so this is roughly we saw, im using 
+an elipse rather mouse points 
+pretty much is code if 
+something inside if, is 
+mousepressed, a variable 
+this is a variable takes two 
+values, either true, false 
+ill come back to that in detail 
+then, depending whether true 
+false different things 
+so that if is if, thing 
+inside brackets, variable inside 
+brackets, in this case mousepressed 
+is true, we that line that comes 
+
+good 
+we draw the, we draw ellipse to 
+point 
+we carry rest 
+program 
+if this thing inside brackets is 
+false, is true mousepressed is 
+true, so mouse isnt pressed 
+period we dont line 
+statement we carry straight 
+ahead 
+so this if allows us to make a decision 
+based whether something is true 
+false 
+wherever in this case, mouse is 
+pressed not, we different things 
+if mouse is pressed, we draw 
+ellipse 
+if isnt pressed, dont 
+we complicated things 
+so first thing is, well if i 
+want to something special 
+mouse isnt pressed 
+this is another example 
+if mouse is pressed, if mousepressed 
+is true, we draw a white background 
+we whatever else we want 
+in this case, weve also got 
+something different 
+weve got, long if, weve got 
+this thing, else 
+this means happens if 
+bit isnt true 
+so mousepressed is false 
+we this line, background zero, 
+we bit thats attached to else 
+so we an else, if happens 
+true else happens 
+false 
+we draw background we carry 
+rest unknown 
+note that ive indented two bits 
+code that controlled if 
+else 
+thats necessary, a, a 
+crucial part program 
+program wont complain if you dont 
+that 
+makes a lot clearer to 
+understand code if every time you 
+an if, you indent a bit 
+thats telling you 
+o so you better move in a bit 
+that tells you that this bit is 
+controlled if statement 
+so this bit, is part code thats 
+controlled if statement 
+another thing you do, is you 
+multiple commands a single if 
+statement 
+combining in special curly 
+brackets 
+you saw curly brackets before, 
+start end setup draw, 
+mousepressed this is another instance 
+theyre really, curly brackets 
+always used to glue bits code 
+together 
+so that used if 
+a single line code instead context 
+in this context, theyre grouping 
+together, so theyre controlled 
+mousepressed, in this context, 
+your, lines code will 
+happen if mousepressed is true 
+noise so lets look 
+is mousepressed 
+well, ive shown you slide a number 
+times 
+theres lots different types data 
+that could be, you know represents 
+computer 
+mousepressed is a variable that 
+take two values, true false 
+we call a boolean variable 
+named magician george 
+bool, developed a system 
+mathematical logic based values true 
+false 
+we create a boolean variable 
+like variable 
+we give a title, we need to give 
+title to variable 
+that is boolean 
+we set a value, we to set 
+either to false to true 
+so if we want to, a variable 
+says whether the, background is 
+black, we set that to true false 
+we change value that variable 
+like variable this is 
+like a clever trick to that 
+exclamation mark means 
+that means is means opposite 
+so black is opposite black 
+so if black is true, black is false 
+black is false, black is true 
+so inverts 
+setting black equals black, we 
+switch to opposite 
+so like, like a little switch, 
+light switch 
+if we, if black is true we hit 
+black, black equals black 
+becomes false 
+if is false, becomes true 
+this is useful we 
+example we click, we put a 
+line code like this in mouse clicks 
+and, we we turn that varlible, 
+variable off, whenever its, mouse 
+is clicked we switch value one 
+variables 
+maybe we see that an example 
+so, lets first give an exam, a different 
+example using example i gave 
+else, unknown background 
+sound going to swap things round 
+so using an if bit an 
+else bit 
+so that something different will happen 
+in either case if mouse is pressed 
+mouse is, to code in 
+background 
+im holding mouse button 
+
+background is white 
+minute i turns black 
+okay, lets try creating reading 
+variable 
+version mousepressed 
+we make that bo, created 
+boolean variable 
+give, give type boolean 
+set it, call black 
+set initially to false 
+noise we use variable black 
+in this if statement and, and, you 
+run program, going to 
+anything in interesting black is 
+always false, you cant change 
+so lets change we click 
+mouse 
+noise so you put in 
+mousepressed, we did, black equals 
+black, exactly i showed you 
+every time i click mouse 
+value black boolean variable 
+switches, color this, 
+window changes 
+now, we useful things 
+we dont to use boolean 
+variables 
+whats happening here 
+well, this is whats called a boolean 
+expression 
+so we, we use expressions well 
+variables, a boolean expression is a 
+bit maths that is a literal false 
+this boolean expression is checking 
+value a key 
+pressed keyboard 
+saying, if this key expression 
+is equal to character bits so ill 
+press b key 
+you notice im using two equal signs 
+thats a single equal sign we 
+saw last week, means becomes equal to 
+so, setting value 
+variable 
+two equals signs, setting 
+value variable key doesnt become 
+b, checking if is b 
+were, checking value a 
+variable 
+so, we to remember difference 
+between two equals signs, 
+thats an common thing to trip 
+easy to forget theres single 
+equals theres double equals 
+if youre using inside an if statement, 
+you always using a double 
+equals 
+to let you know, just, single 
+quotation marks means im working a 
+single character 
+double quotes means im working 
+words strings characters 
+sound so weve got a bunch specials, 
+weve seen a double equals thats 
+first boolean expression 
+so if we two values, a variable a 
+value, we check if equal to 
+thats true if theyre 
+same, false if otherwise 
+we also test things like we 
+test whether one value is less 
+another value 
+so this little arrow here is true if 
+thing left is less 
+thing right 
+youve got a variant that called less 
+equals 
+straight less is false if 
+two 
+less equals is true if theyre 
+same, if theyre, if thing 
+left is less thing 
+right 
+goes greater than, thing 
+left is thing 
+right, equal to 
+weve already seen not, that means 
+opposite a boolean value, we also 
+equal to, so we check if 
+something is worth checking 
+same, we check if different 
+noise so we think of, look 
+complicated examples 
+example, if we want position 
+mouse to change background 
+color 
+this is a boolean expression 
+checks if mouse position is less 
+half width screen, so 
+mouse position is less middle 
+screen mouse x, so mouse is 
+left screen 
+so if we look here we mouse position 
+there, red circle is 
+well, mouse x is going to less 
+half width 
+thats going to true 
+youre going to draw background in 
+black 
+if mouse pointer is there on, 
+circle is 
+mouse actually is going to 
+width screen 
+so going to hit else part 
+is going to 
+we even combine things 
+so we an if statement inside an 
+if statement 
+so we check if mousex is less 
+width divided inside 
+that, we check even down, 
+divide this screen check this 
+width divided 
+so we create a little line 
+middle screen 
+so, if we look red point there, 
+thats less half width 
+thats true 
+a quarter width 
+so thats true 
+so we draw background in black 
+put a point there 
+still less half, half 
+width a quarter 
+width 
+so less a quarter width 
+so that second if statement is false 
+we engage to this else bit 
+is else bit that e if 
+statement 
+secondary statement 
+unknown in white 
+points way there 
+first if statement is false 
+we never get to second if statement 
+second if statement is inside 
+first one 
+we get to else part if 
+statement draws screen white 
+sound we also combine together 
+boolean expressions in ways 
+so if you two boolean expressions a, 
+a b, we combine together 
+this double ampersand here 
+says if a, a b true, so 
+things true, something 
+we could way around 
+two lines, say if a is 
+true b is true, true, so 
+one to true 
+inaudible 
+together 
+lets a look this example 
+this is a, an easier way writing 
+ive done 
+this line 
+so that doubleedge statement i 
+showed you a couple slides back did, 
+check basically if mousex is 
+left middle screen 
+right is a line thats a quarter 
+way across screen 
+instead if statements, we 
+use an 
+checks, this expression 
+if this point true 
+checks that expression, is also 
+true 
+total expression here 
+to true cause im using 
+that double and, we call and, 
+theyre true we true 
+part if statements 
+if we move here, first part is still 
+true, second part is false 
+theyre true so well move 
+to else part 
+assuming there theyre false, 
+neither true, use else 
+if we change to we a 
+different effect, so looking this 
+time if mousex is width 
+two less width divided 
+four, so kind 
+opposite 
+looking at, you know, side 
+that little bar middle 
+screen 
+so if we look this one here, 
+width divided two, 
+is less width divided four 
+so thats true 
+so one is true, so one 
+needs to true to, whole 
+statement to true, if using 
+
+so we true part if 
+statement 
+if we look there, well, mouse x greater 
+width is still false, still 
+true 
+this time, longer less 
+width divided , so that parts 
+also false 
+theyre false, so we get else 
+if you look here, well, mousex is 
+width, thats true 
+part is true, still 
+false 
+so weve, one is still true, 
+so we go to if path, we use 
+
+so, thats end lecture 
+conditionals, if statements well 
+using examples if statements in 
+main lectures 
+thank you much 

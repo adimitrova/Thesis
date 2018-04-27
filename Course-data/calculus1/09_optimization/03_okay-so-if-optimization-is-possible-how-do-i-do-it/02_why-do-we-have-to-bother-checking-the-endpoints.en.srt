@@ -1,0 +1,298 @@
+1
+00:00:00,012 --> 00:00:06,571
+[music] Really, why do we have to even
+bother checking endpoints?
+
+2
+00:00:06,571 --> 00:00:15,235
+So, let's suppose that I want to find the
+maximum-minimum values of this function f
+
+3
+00:00:15,235 --> 00:00:21,143
+of x equals x minus x cubed.
+That function, f, if I considered on the
+
+4
+00:00:21,143 --> 00:00:26,097
+whole real line, doesn't achieve a maximum
+or minimum value.
+
+5
+00:00:26,097 --> 00:00:30,077
+F of x is really negative if x is really
+positive.
+
+6
+00:00:30,077 --> 00:00:35,423
+And conversely, f of x is really positive
+if x is really negative.
+
+7
+00:00:35,423 --> 00:00:39,968
+True enough.
+So, let's ask a better question.
+
+8
+00:00:39,969 --> 00:00:46,159
+What if I want to maximize and minimize
+this function on the closed interval for
+
+9
+00:00:46,159 --> 00:00:49,975
+minus 3 to 3?
+This is now a continuous function on a
+
+10
+00:00:49,975 --> 00:00:55,162
+closed bounded interval.
+So, the extreme value theorem guarantees
+
+11
+00:00:55,162 --> 00:01:00,300
+that I'll be successful, right?
+It guarantees that there is some input
+
+12
+00:01:00,300 --> 00:01:06,432
+which minimizes this function's value and
+some input which maximizes this function's
+
+13
+00:01:06,432 --> 00:01:10,868
+value on this interval.
+I'll begin by listing off the critical
+
+14
+00:01:10,868 --> 00:01:15,303
+points for this function.
+So, I'll differentiate this function,
+
+15
+00:01:15,303 --> 00:01:18,555
+right?
+And if I differentiate that function, the
+
+16
+00:01:18,555 --> 00:01:23,559
+derivative of x is 1, and the derivative
+of minus x cubed is minus 3 x squared.
+
+17
+00:01:23,559 --> 00:01:27,951
+Alright, so, there's the derivative.
+I'm looking for places where the
+
+18
+00:01:27,951 --> 00:01:31,827
+derivative is equal to 0, or the
+derivative doesn't exist.
+
+19
+00:01:31,827 --> 00:01:35,151
+Well, this function is differentiable
+everywhere.
+
+20
+00:01:35,151 --> 00:01:39,499
+So, there's no critical points where the
+derivative doesn't exist.
+
+21
+00:01:39,499 --> 00:01:43,871
+But there are going to be some places
+where the derivative is equal to 0.
+
+22
+00:01:43,871 --> 00:01:47,316
+Let's find them now.
+So, I'm trying to solve this equation.
+
+23
+00:01:47,316 --> 00:01:51,669
+I'll add 3x squared to both sides, I'm
+really trying to solve the equation, 1
+
+24
+00:01:51,669 --> 00:01:55,674
+equals 3x squared.
+Divide both sides by 3, so now, I'm trying
+
+25
+00:01:55,674 --> 00:01:58,801
+to solve the equation 1 3rd equals x
+squared.
+
+26
+00:01:58,801 --> 00:02:03,581
+Now, I'll take a square root of both sides
+and I'll find that x is equal to the
+
+27
+00:02:03,581 --> 00:02:08,663
+square root of a third or maybe negative
+the square root of a third, so I'll write
+
+28
+00:02:08,663 --> 00:02:11,574
+x is plus or minus the square root of a
+third.
+
+29
+00:02:11,574 --> 00:02:15,012
+These are the two critical points for this
+function.
+
+30
+00:02:15,012 --> 00:02:17,766
+Oh, I'm also going to be careful to list
+the endpoints.
+
+31
+00:02:17,766 --> 00:02:21,037
+And we'll see why we have to.
+So, here are the points that I should
+
+32
+00:02:21,037 --> 00:02:23,832
+check, right?
+I should check the critical points, and I
+
+33
+00:02:23,832 --> 00:02:27,652
+just found those two critical points.
+Negative square root of a third, and
+
+34
+00:02:27,652 --> 00:02:31,254
+positive square root of a third.
+And I also want to check the endpoints,
+
+35
+00:02:31,254 --> 00:02:33,754
+right?
+And my original question is asking me to
+
+36
+00:02:33,754 --> 00:02:38,234
+maximize and minimize this function on
+this interval, which includes the endpoint
+
+37
+00:02:38,234 --> 00:02:41,627
+minus 3 and the endpoint 3.
+So, I'm going to include those on the list
+
+38
+00:02:41,627 --> 00:02:44,888
+of points to check.
+So, where does this continuous function
+
+39
+00:02:44,888 --> 00:02:48,333
+achieve its maximum value?
+And where does this continuous function
+
+40
+00:02:48,333 --> 00:02:50,750
+achieve its minimum value on the given
+domain?
+
+41
+00:02:50,750 --> 00:02:54,348
+So, let's go ahead and just evaluate the
+function at those four points.
+
+42
+00:02:54,348 --> 00:02:58,384
+Here are the endpoints, minus 3 and 3, and
+the critical points plus or minus the
+
+43
+00:02:58,384 --> 00:03:01,676
+square root of a third.
+And when I evaluate the function at these
+
+44
+00:03:01,676 --> 00:03:04,814
+points, what do I find?
+Well, I find that the largest output
+
+45
+00:03:04,814 --> 00:03:08,726
+occurs when x is negative 3.
+And the smallest, the most negative output
+
+46
+00:03:08,726 --> 00:03:12,984
+occurs when x is equal to 3.
+At these critical points, the outputs, you
+
+47
+00:03:12,984 --> 00:03:15,802
+know, in size no bigger than 1, it's about
+0.38.
+
+48
+00:03:15,802 --> 00:03:20,951
+What nightmarish scenario would've ensued
+had I forgotten to include the endpoints?
+
+49
+00:03:20,951 --> 00:03:24,827
+Well, here's the danger, right?
+This is actually what I'm saying.
+
+50
+00:03:24,827 --> 00:03:29,558
+I'm saying that if x is in this closed
+interval, then the largest value of the
+
+51
+00:03:29,558 --> 00:03:34,583
+function occurs when x is equal to minus
+3, and the smallest value occurs when x is
+
+52
+00:03:34,583 --> 00:03:37,899
+equal to 3.
+If I hadn't included the endpoints in my
+
+53
+00:03:37,899 --> 00:03:42,891
+chart, I would have been fooled into
+thinking that the largest output of this
+
+54
+00:03:42,891 --> 00:03:46,931
+function was 0.38.
+But on this interval, on this closed
+
+55
+00:03:46,931 --> 00:03:52,573
+interval between minus 3 and 3, the
+largest output actually occurs at this
+
+56
+00:03:52,573 --> 00:03:56,211
+endpoint.
+The upshot to all of these, is that the
+
+57
+00:03:56,211 --> 00:03:59,836
+endpoints are, in some sense, critical
+points.
+
+58
+00:03:59,836 --> 00:04:06,232
+Standing at an endpoint, you can't wiggle
+freely, so you really can't differentiate
+
+59
+00:04:06,232 --> 00:04:12,294
+when you're standing at an endpoint.
+And a place where you can't differentiate
+
+60
+00:04:12,294 --> 00:04:15,000
+that's one of the critical points.

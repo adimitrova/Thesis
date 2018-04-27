@@ -1,0 +1,173 @@
+we extremely close to end 
+this entire course im actually done, 
+believe not, technical 
+part 
+grand finale really this idea 
+that we could even make complicated 
+systems like cars act like unicycles that 
+we know to control navigate 
+around in complex environments weve 
+seen in theory in simulation, 
+actually in real experiments 
+i want to in this sublecture is 
+basically probe 
+there lots things, believe 
+not, that actually in this 
+course, pretaining to control 
+robots 
+here i a picture a praying mantis 
+reason that is that, we 
+covered praying mantises 
+so im going to let this a proxy 
+things we havent talked 
+well one thing that we havent talked 
+is, happens system 
+is generally nonlinear instead 
+linear 
+so we really, really good 
+dealing linear control system 
+well, if is linear, nonlinear 
+well we dealt some, weve dealt 
+unicycle quite a bit, there 
+we kind lucky that we a lot 
+intuition 
+if this is unicycle if 
+this is massively nonlinear, 
+strange, complicated we 
+actually well, thats called nominal 
+control in this course i 
+encourage you to keep educating 
+probing along lines 
+another thing that we didnt deal is 
+is called optimal control 
+so us, name game 
+stability 
+stability, performance in 
+sense tracking, right, so we want 
+to track reference signals, we 
+robustness, we didnt have, 
+explicitly, things like this 
+so this is a general, type cost, 
+saying, well we want to minimize 
+cost involving x u 
+this could be, you know, fuel 
+consumed, time takes to get 
+there, plus possibly cost 
+final point well 
+this is known optimal control, 
+this also not, in course 
+so this one grasshopper that we 
+didnt see 
+there is another branch decision 
+theory known machine learning that we 
+didnt touch upon 
+reason i putting this a 
+another thing that you might want to 
+probe along is useful in 
+robotics highly related to 
+control in general optimal control in 
+particular 
+so idea is that 
+im going to costs v im 
+going to policy pie says 
+you going to youre 
+certain state 
+cost is going to a cost 
+different, i time k 
+im time k 
+so this is really u sub k, right 
+im going to sum this entire cost 
+if you that you write 
+something known bellmans optimality 
+equation bellmans equation, that 
+basically characterizes is 
+smallest you make this cost while 
+satisfies this kind weird looking 
+expression 
+point here is math, 
+point is that we this equation, 
+machine learning is finding 
+this v exploring 
+if im this position, lets try 
+u if im in another position, lets try 
+u 
+while this, youre building 
+this a, this v cost function 
+youre done building up, you 
+sudden a complete map 
+guide to you 
+if you encounter a certain state, 
+thats in a nutshell machine 
+learning is 
+another thing that we didnt much 
+is perception mapping 
+we infrared ultrasonic range 
+sensors, a lot times 
+we 
+we laser scanners 
+we cameras 
+we deal complicated sensing 
+modalities we also deal with, 
+okay we sensor 
+data 
+we actually produce maps 
+world world was, here is the, 
+robot 
+here is an obstacle 
+a point 
+lets avoid 
+you know 
+this obstacle may a point may 
+part of, i dont know, a corridor, 
+we would like to go in corridor 
+well good to actually describe 
+world looks like 
+this is known mapping 
+again, this is a perfect opportunity 
+you to probe further, trying to build 
+maps world 
+there lots different methods 
+
+finally, thing that we didnt 
+either is really talk 
+high level artificial intelligence 
+so, you actually decide in 
+first place you going 
+we said, given a goal point, we go 
+there goal coin, point 
+come somehow, somewhere, someone is 
+going to to make decisions 
+highlevel robot 
+
+this falls squarely domain 
+artificial intelligence 
+covered in this course, i encourage 
+you to probe 
+so, to conclude, there things that we 
+havent done in this class 
+there lots praying mantises that 
+we didnt cover 
+good things you to 
+probe 
+learn 
+if you know it, you build an 
+awesome robotic system 
+but, beyond that, there also lots 
+things we dont know 
+so here, praying mantises, 
+green creatures 
+we idea look like 
+we dont know if exist, we dont 
+know 
+robotics 
+theres a lot stuff going that we 
+a community dont know to yet 
+so last thing i want to is give 
+you impression that this is a closed 
+complete case 
+we know everything robotics 
+we dont 
+so, in this course there 
+praying mantises, outside 
+course there potential aliens that we 
+still discovered 

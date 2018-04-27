@@ -1,0 +1,136 @@
+music 
+in order to integrate a complicated 
+function, i really want to 
+antidifferentiate complicated functions 
+example, i antidifferentiate x 
+times sin x squared dx 
+if you think back to we 
+differentiation stuff, a 
+big deal chain rule 
+we always using chain rule in 
+order to differentiate things 
+so this problem i might try to think 
+in terms chain rule, right 
+i know function whos derivative is 
+sin, minus cosine differentiates to sin 
+but, i want an x squared in there 
+somehow, so ill put in x squared there, 
+ill see, is that an antiderivative 
+this 
+well, lets try 
+so if i differentiate this, i 
+get 
+well derivative outside 
+function is sin, evaluated inside 
+function times derivative 
+inside function, in this case is 
+x 
+i see whoops, im off, right 
+i didnt quite get an antiderivative 
+im this factor , so i fix 
+that, ill divide this , 
+will effect dividing that 
+, will cancel, 
+i found an antiderivative x 
+times sin x squared 
+yeah, that works, totally 
+adhoc, i mean i know to divide 
+, i guessed fixed guess 
+mathematics really shouldnt seen 
+a series tricks, a big part 
+mathematics is systematizing 
+tricks, finding patterns that unify, 
+trick a tool 
+in this case, we really want to 
+systematize applying chain rule in 
+reverse 
+so this process applying chain 
+rule in reverse, goes name u 
+substitution 
+also called substitution, 
+im going to call u substitution to 
+emphasize conventional name u 
+that im going to use inside 
+function running chain 
+rule backwards 
+this is, how, abstract, lets 
+see this in action 
+so im trying to anti differentiate x 
+times sin x squared dx 
+trick here, is to give a name to 
+inside function in chain rule, 
+im going to call that u 
+i want inside function to x 
+squared, so ill say that u is x squared 
+well then, whats du 
+right, whats differential u 
+well, du dx is derivative, 
+is x, so du is x dx 
+i know you might feel kind bad, 
+well i dont really see a x dx, 
+i see an x dx, this sort 
+method going to, guides us to 
+right thing 
+id like to an x dx so i could put 
+a here, long im willing to put a 
+half outside 
+like nothing 
+ive got a x dx in 
+integrand, thatll become du 
+so this antidifferentiation problem is 
+sin u du, ive got to 
+make sure to include that one half 
+outside, i know an antiderivative 
+sin u, right, negative 
+cosine 
+so ive got one half an 
+antiderivative sin u is negative 
+cosin plus c 
+i dont want answer to in terms 
+u so i rewrite this negative one 
+half cosin u, is x squared plus 
+c 
+theres something to notice here 
+im using differential chain 
+rule so that dx is playing a crucial 
+role 
+you might thought that i 
+writing dx end integration 
+problem habit tradition 
+that dx is legitimately there 
+that dx is managing substitution 
+us 
+lets see this work 
+every differentiation rule a 
+corresponding antidifferentiation rule, 
+right 
+lets say that i want to 
+antidifferentiate f prime g x 
+times g prime x 
+well, secretly i recognize this is 
+derivative f g x 
+respect to x 
+lets suppose that i start writing 
+using this substitution framework 
+so im making a substitution u 
+is g x, in that case du is 
+derivative g dx 
+so this antidifferentiation problem is 
+antidifferentiation problem f prime 
+u, this du 
+i know an antiderivative a 
+derivative is original function 
+in this case, u is g x, so this is 
+f g x 
+i dont know, cuz i mean i really 
+see this working, you know derivative 
+this composition is this, i mean 
+chain rule 
+going to see a ton examples 
+this technique, going to see 
+that hard part boils to 
+determining to set u equal to 
+if youre ever wondering use 
+substitution work, remember, a 
+luren neock, i mean use substition is 
+luren neock, a chain rule in reverse 

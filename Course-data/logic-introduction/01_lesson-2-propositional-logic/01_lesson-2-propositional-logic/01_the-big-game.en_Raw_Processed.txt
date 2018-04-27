@@ -1,0 +1,60 @@
+finally an exercise in using 
+concepts introduced in this section, 
+lets consider following problem 
+stanford people always tell truth berkeley people always lie 
+unfortunately, looking a person you cannot tell whether is stanford berkeley 
+you come to a fork in road want to get to football stadium one fork, you know road to take 
+there is a person standing there 
+single question you ask to help 
+you decide fork to take there a 
+number ways to approach this problem 
+interesting involves a question in 
+a person is asked we would 
+answer if you stanford if you 
+berkley however, we also 
+approach this problem without entertaining 
+metalevel questions lets draw 
+a table set possible 
+states affairs, leave columns 
+question we want to ask 
+response we want to receive we want to ask a 
+question that will list one response 
+lets say true one, if stadium is 
+to left, a different response, 
+example, false zero, if stadium is 
+to right note that response 
+in case may differ actual 
+truth question depending whether 
+informant is stanford 
+berkley now, lets see actual 
+truth value question must to 
+elicited this response if stadium is 
+actually to left, informant is 
+actually stanford, we want a 
+question that value true if 
+stadium is to left, informant is stanford, we want a 
+question truth value false so 
+stands that if a persons going to tell 
+truth value 
+values in response opposite 
+is true berkley case, cases, if 
+stadium is to left 
+informant is berkley, we want a 
+question truth value false 
+since informant lying if 
+stadium is to left 
+informant is berkeley we want a 
+question that truth value true looking 
+operator semantics tables, we see 
+that this is exactly set true 
+values assigned to sentence left, if 
+if su, stanford so we phrase 
+this a question follows is 
+case that left road is way to 
+stadium if if you 
+stanford okay, thats a particularly 
+clever simple question, will 
+ellicit right response importantly 
+example illustrates that possible 
+to solve problems this sort using 
+concepts we seen so far 

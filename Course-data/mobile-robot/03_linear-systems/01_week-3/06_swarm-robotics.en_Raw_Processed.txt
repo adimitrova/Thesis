@@ -1,0 +1,259 @@
+so, in previous lecture, we saw that 
+eigenvalues play a fundamentally important 
+role you want to understand stability 
+properties linear systems we saw that 
+if eigenvalues strictly negative 
+real part, systems asymptotically 
+stable if one eigenvalue is positive, 
+we positive real part then, 
+screwed system blows 
+now, today, im going to use 
+ideas to solve a fundamental problem in 
+swarm robotics this is known 
+rendezvous problem and, in fact, 
+is, is you a collection mobile 
+robots that measure relative 
+displacements neighbors meaning, 
+dont know are, 
+know relative to 
+neighbors so here, here we agent i, 
+measure xi minus xj, is 
+actually this vector so, knows 
+agent j is relative to this is 
+typically you get you an 
+censor skirt, right because, you see 
+agents that within a certain distance 
+od you and, we saw, you know, 
+relative to you if you dont 
+global positioning information, you 
+dont know you so theres way 
+youre going to know, globally, this 
+thing is, you know 
+neighbors locally rendezvous 
+problem is problem 
+agents meet position you 
+dont want to specify in advance 
+going to meet since 
+dont know are, dont know 
+going to meet say, 
+oh, going to meet in, origin 
+i dont know origin is is 
+in, in atlanta, georgia is in 
+belgium, is india i know, 
+right so, point is, going to 
+meet somewhere, we dont know 
+okay 
+so, we actually solved this problem 
+we sold robot case, 
+we robots we could 
+control velocities right away we 
+is we simply agents aim 
+towards so, u x minus 
+x u x minus x this simply 
+means that theyre aiming towards 
+well, if we that, we 
+actually write following 
+following system this is closed loop 
+system now, we picked that 
+controller so, x dot is this matrix times 
+x okay, lets see if this works 
+well, we that well, we check 
+eigenvalues a matrix to see 
+whats going alright here is a 
+matrix, type eig in matlab whatever 
+software youre using, you get that 
+lambda is , lambda is negative 
+okay, this is a little annoying, right 
+we said asymptotic stability means 
+that eigenvalues need negative real 
+part, this doesnt that 
+asymptotically stable, so asymptotic 
+stability also means that state goes 
+to origin and, like we said, we dont 
+know origin is, so we 
+expect that we expect we 
+also know that one positive eigenvalue 
+eigenvalue positive real part makes a 
+system go unstable we dont that 
+either in fact, we is this 
+inbetween case that we called critical 
+stability we one eigenvalue 
+remaining eigenvalues negative 
+real part so, this is critically stable 
+and, in fact, here is a fact that im 
+going to show this is a useful 
+fact so, that if you one eigenvalue 
+zero others negative 
+real part, in, in a certain sense, 
+youre acting like asymptotic stability 
+meaning, you go, in this case, to zero 
+you go a special space called 
+null space a null space a 
+is given set x, so that 
+you multiply a x, you get zero 
+thats going to end 
+so, going to end inside this thing 
+called null space a, in this case, 
+you one eigenvalue 
+others strictly negative real part 
+if you type nulla in matlab, you 
+find that null space this 
+particular a is given x is equal to 
+alpha, alpha alpha is real 
+number is that well, if i take 
+negative , , , negative , this is a 
+matrix, i multiply this alpha, 
+alpha, i get well, ll get minus 
+alpha plus alpha here, i get plus 
+alpha minus alpha there, is clearly 
+equal to so, this is null space 
+okay, this mean well, 
+means that x is, x is going to go to 
+alpha x is going to go to alpha x 
+goes to alpha, x goes to alpha, 
+means that x minus x goes to 
+go to thing means, 
+that we have, tada, achieved rendevous 
+end top in fact, 
+end, end alpha we dont know 
+alpha is we know that end 
+there okay 
+now, if you two agents, we 
+simply thing in this case, we 
+aim towards whats called centroid 
+neighbors and, in fact, if we write 
+this down, we write thing 
+one agent, we get that x dot 
+i, xj minus xi, there 
+agents now, im summing 
+agents is neighbors that is 
+thing if you one 
+agent and, in fact, if you that 
+you stack xs together you 
+write this x is negative lx 
+this is bookkeeping 
+interesting thing here, here is that l it, 
+known laplacian 
+underlying graph meaning, talk to 
+thats so important 
+important thing though is that we know a 
+lot this matrix l and, again, 
+called graph laplacian 
+fact is that if undergrinding, 
+underlying graph is connected, l 
+one eigenvalue, rest 
+eigenvalues positive look here, 
+we negative l here, means that 
+negative l is one eigenvalue 
+rest eigenvalues negative 
+that means that this system here, 
+general multiagent system here is actually 
+critically stable we know that 
+goes int o null space l 
+turns out, this is a fact 
+something called algebraic graph theory 
+we dont need to worry much 
+we know that clever graph 
+theoreticians figured that 
+null space to l, if graph is connected 
+means that there is path with, 
+this network between two 
+agents is given alpha, alpha 
+alpha, alpha, alpha, alpha, alpha, a bunch 
+alphas so, like before, if i 
+this thing and, in fact, doesnt 
+to scalar agents, i is 
+that agents go to alpha 
+in words, difference between 
+agents will actually disappear 
+we this, we design a controller 
+we actually designed this thing here 
+this thing is so useful that actually 
+name known 
+consensus equation makes agents 
+agree in this case, agreeing 
+position this equation actually will 
+solve rendezvous problem 
+fact that corresponding system 
+matrix you get is negative l right 
+eigenvalues means that system is 
+critically stable so we solve 
+rendezvous in multirobot case 
+again, youve seen this video now, you 
+know i running to generate 
+this video in fact, you go beyond 
+rendezvous so, here is actually a course 
+that im teaching georgia tech, 
+you want to a bunch different 
+things again, im is really 
+rendezvous equation a bunch 
+weights top going to 
+learn to this i want to show 
+you this video, i think quite 
+spectacular you robots that to 
+navigate an environment theyre running 
+these, basically conses equation 
+to avoid slamming 
+obstacles, so i point that this 
+final project, project in this 
+course, called network control 
+systems i wanted to show you 
+that you take this simple 
+algorithm that we dev eloped, make 
+minor tweaks to it, going 
+to learn to do, to solve rather 
+complicated, multiagent robotics problems 
+so here, robots to split 
+different subgroups avoid things, 
+to get information, to 
+discover missing agents so forth 
+we will learn to that in 
+this course now, said that, talk 
+is cheap, right simulation is maybe 
+cheap, lets real in 
+this case, going to two khepera 
+mobile robots, going to 
+is going to use pid 
+gotogo controllers going to 
+let consensus equation flop 
+intermediary goal points 
+going to is going to keep track 
+position using odometry, meaning 
+our, real encoders 
+robots going to do, is theyre 
+actually going to tell 
+rather sense 
+we havent talked yet 
+design sensing links so, 
+is faking sensing 
+telling, theyre telling 
+theyre using a pid 
+regulator to go in direction that 
+consensus equation is telling to go 
+in now, lets switch to actual 
+robots running solving rendezvous 
+problem so, that we designed a 
+closed looped controller achieving 
+rendezvous going to deploy 
+old friends, to khepera mobile robots so, 
+we will see two robots 
+actually executing this algorithm we 
+will using go to goal 
+controller we designed earlier to 
+achieve this and, always, i j p 
+de la croix here to conduct affairs 
+practically, going to see two 
+robots crashing is 
+exciting in right 
+intellectually, going to see, 
+is state system asymptotically 
+driving null space new a 
+matrix reason that is, 
+weve seen this matrix , 
+eigenvalue, means that system is 
+critically stable states approach 
+null space so, jp, without 
+ado, lets see a robotic crash so, we see 
+theyre immediately turning towards 
+pretty exciting stuff, if i 
+may say so 

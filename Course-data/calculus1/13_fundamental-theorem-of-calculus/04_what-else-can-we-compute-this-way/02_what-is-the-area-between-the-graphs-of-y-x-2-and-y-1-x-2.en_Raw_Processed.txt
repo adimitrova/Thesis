@@ -1,0 +1,160 @@
+music 
+lets find area between two 
+parabolas 
+i want to find area between graph 
+y equals x squared graph y 
+equals minus x squared 
+usual lets start graphing 
+well heres coordinate plane 
+ill draw a graph y equals x squared 
+curve is y equals minus x 
+squared, so ill draw a downwardfacing 
+parabola 
+theres one side theres 
+side 
+ill draw rectangles to get an idea 
+riemann sum i really want to 
+take limit 
+so really area inside here that 
+i want to calculate 
+draw rectangles 
+riemann sum 
+that would approximate that area 
+right, so theres rectangles 
+riemann sum that would approximate 
+area in there 
+i write heights 
+widths one rectangles 
+lets take a look say this rectangle 
+here 
+well, whats width that rectangle, 
+will real thin, so ill call width 
+dx 
+whats height that rectangle 
+well top that rectangle is 
+curve minus x squared bottom 
+that rectangle curve x 
+squared 
+so if we take top coordinate minus 
+bottom coordinate, that will give 
+height this rectangle 
+top coordinate is minus x squared 
+bottom y coordinate is x 
+squared 
+so this quantity is giving you height 
+this rectangle 
+oh, i write integral 
+so i know height width 
+rectangles so thing i want to 
+add areas little 
+rectangles 
+so i want to integrate height 
+minus, this is x squared, times 
+width, dx 
+im trying to integrate to 
+where, right 
+possible x values in this 
+region 
+well, if we think exactly 
+two curves cross, right 
+whats x coordinate 
+curves cross 
+this coordinate here is minus 
+square root this coordinate 
+is square root 
+so im going to integrating to compute 
+area x equals negative 
+square root to 
+square root 
+this integral thatll calculate 
+area in between two curves 
+i use fundamental theorem 
+calculus to evaluate this integral 
+lets find an antiderivative 
+so whats an antiderivative , well x 
+is an antiderivative 
+whats an antiderivative x squared, 
+well x to rd differentiates 
+to x squared 
+im looking an antiderivative 
+a difference, so itll difference 
+antiderivatives 
+ill evaluate antiderivative 
+right left endpoints 
+right, so i to evaluate 
+antiderivative end points, 
+square root minus 
+square root take 
+difference 
+so i get i plug in 
+square root 
+i get square root minus 
+times square root to 
+third divided 
+so this is i get i plug in x 
+equals square root 
+antiderivative 
+i subtract i get i plug in 
+negative that, is negative 
+square root , minus times 
+negative square root 
+cubed, 
+i simplify this a bit 
+well, first off, ive got a quantity 
+minus negative that quantity 
+thats two copies this 
+quantity 
+i keep calculating this try 
+to simplify this even a little bit 
+
+lets keep going 
+so i here 
+well times square root 
+, minus 
+here ive got square root 
+to rd power 
+so i could write that a half 
+times square root 
+thats really copies square root 
+divided 
+okay 
+but, times , alright, cancels 
+ive got a common factor 
+square root 
+so i could, pull that common factor 
+square root 
+i pull that ive got a one 
+there minus a third is left 
+times square root , 
+thats square root 
+minus a third well thats really rds, 
+so whats left here is 
+square root 
+times rds, this is value 
+integral also then, area between 
+two curves 
+committing to this final 
+answer, i check to see that 
+answers somewhat reasonable 
+well if we numerically approximate this, 
+this is 
+so is a bit less one square unit a 
+reasonable answer 
+well region that interested in 
+fits inside a rectangle height , 
+width square root units 
+area this rectangle is 
+square units 
+area region we 
+calculated to square units, 
+right 
+this region inside here 
+pretty reasonable 
+i mean, you know 
+looks like 
+if this thing is square units 
+unreasonable to think that this 
+is a little bit less square unit 
+in this curved region, here 
+yea, really finding answers that 
+accord geometric intuition 

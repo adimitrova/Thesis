@@ -1,0 +1,142 @@
+[music].
+the mean value theorem has some other
+applications where it connects derivative
+information back to information about the
+original function.
+well, here's a theorem.
+suppose the derivative of some function.
+so i'm assuming it's a differential
+function, is positive, it's greater than
+zero on some open interval.
+then the function is an increasing
+function, meaning that it sends, bigger
+inputs to bigger outputs.
+you probably already believe that
+statement.
+but the mean value theorem let's us verify
+that it's actually true.
+okay, so let's prove, this result.
+i'm going to pick, two points a and b, but
+i want to make sure that i pick them in
+order.
+so i'm going to pick b bigger than a so i
+can talk about the interval a b.
+all right.
+so i'll pick my two points.
+now i'm going to apply the mean value
+theorem to the open interval a,b.
+and that's ok because i'm going to pick a
+and b to be in this open interval and
+that's mean that f being differentiable
+satisfies the conditions of the mean value
+theorem.
+the continuous on the closed interval a, b
+and it will be differnetial on the open
+interval a, b.
+okay.
+so the mean value theorem then tells me to
+look at f of v minus f of a over b minus
+a, and the conclusion is that this is the
+derivative of f at some mystery point in
+between a and b.
+now the good news is i don't know much
+about the derivative but i know the
+derivative is positive.
+so i know that f of b minus f of a over b
+minus a is positive.
+the other thing that i know is that b is
+greater than a and that means the
+denominator here b minus a is also
+positive.
+so i've got mystery number divided by
+positive is positive.
+that means this numerator must also be
+positive.
+so f of b minus f of a is positive.
+now, if i add f of a to both sides, i get
+that f of b is bigger than f of a.
+if f sends bigger inputs to bigger outputs
+then f is increasing.
+increasing means that a bigger input is
+sent to a bigger output.
+so if b is greater than a then f of b is
+bigger than f of a and this argument works
+for any a and b in the open interval on
+which i know the derivative is positive.
+so i'm going to conclude that f is an
+increasing function, which is exactly what
+i wanted to show.
+so if the derivative's positive on a whole
+interval, then the function's increasing
+on that interval.
+but it's important to point out that i
+needed to know the sign, the s i g n of
+the derivative on that entire interval.
+the mean value theorem ends of just
+picking out a single point, that point c,
+where it'll examine the derivative.
+but in order to cover all my bases right
+because i don't know what point c the mean
+value theorem might make me look at .
+i've got to control the sign the s i g n
+on the derivative on the entire interval.
+alright, now i can play the same game when
+the sign of the derivative is negative.
+so, if i know the sign the sig derivative
+is negative on some open interval then i
+include that f is a decreasing function.
+and, again this is just an application of
+the mean value theorem.
+let's see the proof.
+so, i'm going to start out by again
+picking two points a,b in my opening
+interval and i'll again pick them so that
+b is greater than a so i can talk about
+the interval a,b.
+and then applying the mean value theorem,
+i should look at, f of b minus, f of a
+over b minus a.
+and the mean value theorem promises me
+that this is the derivative at some point,
+and i don't know what c is but it's the
+derivative at some point.
+but i know that the derivative at any
+point is negative so this must be
+negative.
+now b minus a is positive because b's
+bigger than a.
+so i've got a number i don't know divided
+by a positive number is negative.
+that means that f of b minus f of a must
+be negative.
+then i add f of a to both sides and i can
+conclude that f of b is less than f of a.
+in other words, f sends bigger inputs to
+smaller output.
+since f sends bigger inputs to smaller
+outputs, f is a decreasing function.
+once again we're seeing that the mean
+value theorem lets me relate information
+about the derivative, in this case the
+fact that the sign of the derivative is
+negative.
+back to information about the original
+function, in this case the function's
+decreasing.
+alright, well lets summarize what we've
+learned thus far.
+so here are some applications of the mean
+value theorem.
+if f is differentiable on some open
+interval and depending as to what happens
+then we know something about f on that
+interval.
+so if the derivative is identically zero,
+if the derivative is equal to zero no
+matter what i plug in, then f is constant
+on that interval.
+if the derivative is positive no matter
+what i plug in, then f is increasing on
+that interval.
+and, if the derivative is negative, then f
+is decreasing on that interval.

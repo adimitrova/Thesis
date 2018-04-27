@@ -1,0 +1,288 @@
+1
+00:00:00,005 --> 00:00:10,126
+[music] Maybe I don't know my position and
+my velocity, but I know my acceleration.
+
+2
+00:00:10,126 --> 00:00:16,990
+Maybe my acceleration at sometime t is
+just a constant 8 units per second
+
+3
+00:00:16,990 --> 00:00:21,838
+squared, right?
+So, I'm going to accelerate at a constant
+
+4
+00:00:21,838 --> 00:00:25,432
+rate.
+Is that enough information to determine my
+
+5
+00:00:25,432 --> 00:00:28,465
+velocity?
+We have to think back to how velocity and
+
+6
+00:00:28,465 --> 00:00:33,036
+acceleration are related.
+My definition and acceleration is the
+
+7
+00:00:33,036 --> 00:00:36,422
+change to the derivative in velocity,
+right.
+
+8
+00:00:36,423 --> 00:00:39,477
+Acceleration is rate of change in
+velocity.
+
+9
+00:00:39,478 --> 00:00:44,680
+Or in other words, right, velocity is an
+anti-derivative of acceleration.
+
+10
+00:00:44,680 --> 00:00:49,336
+So, I know that a of t is 8.
+Let's now solve for v.
+
+11
+00:00:49,336 --> 00:00:56,329
+Okay, so a of t, my acceleration, is just
+constant function 8, and v of t is the
+
+12
+00:00:56,329 --> 00:01:02,359
+anti-derivative of my acceleration, right.
+If I anti-differentiate acceleration, I'm
+
+13
+00:01:02,359 --> 00:01:06,084
+going to get velocity.
+It means I'm anti-differentiating 8.
+
+14
+00:01:06,085 --> 00:01:12,611
+Well what anti-differentiates to 8 or 8t,
+plus some constant C?
+
+15
+00:01:12,611 --> 00:01:15,824
+It's that constant again.
+Right?
+
+16
+00:01:15,824 --> 00:01:20,252
+Knowing my acceleration doesn't determine
+my velocity, it only determines my
+
+17
+00:01:20,252 --> 00:01:24,260
+velocity up to some constant.
+I could be going really fast or really
+
+18
+00:01:24,260 --> 00:01:27,167
+slow, but still accelerating at the same
+rate.
+
+19
+00:01:27,168 --> 00:01:30,834
+Well, in any case, I've at least got a
+formula for my velocity with that
+
+20
+00:01:30,834 --> 00:01:33,661
+constant.
+Now, can I use that formula to determine
+
+21
+00:01:33,661 --> 00:01:35,880
+my position?
+Same kind of game.
+
+22
+00:01:35,880 --> 00:01:39,795
+My velocity is the rate in change in my
+position, right?
+
+23
+00:01:39,795 --> 00:01:44,376
+My velocity is the derivative of position.
+And that means position is an
+
+24
+00:01:44,376 --> 00:01:49,259
+anti-derivative of velocity.
+So, let's anti-differentiate.
+
+25
+00:01:49,259 --> 00:01:54,766
+So, p of t is an anti-derivative of my
+velocity, and I figured out my velocity a
+
+26
+00:01:54,766 --> 00:01:58,644
+minute ago.
+My velocity is 8t plus c.
+
+27
+00:01:58,645 --> 00:02:02,084
+So, I want to anti-differentiate 8t plus
+c.
+
+28
+00:02:02,085 --> 00:02:05,136
+Well, it's an anti-derivative of a sum, so
+it's the sum of the anti-derivatives.
+
+29
+00:02:05,136 --> 00:02:09,082
+And what's an anti-derivative for 8 times
+something?
+
+30
+00:02:09,082 --> 00:02:15,154
+Well, that's a constant multiple, so it's
+8 times the anti-derivative of t, plus an
+
+31
+00:02:15,154 --> 00:02:19,849
+anti-derivative for C.
+Now, 8 times, what's an anti-derivative
+
+32
+00:02:19,849 --> 00:02:22,955
+for t?
+Well one of them is t squared over 2.
+
+33
+00:02:22,956 --> 00:02:28,054
+And what's an anti-derivative for C?
+Well, C times t is an anti-derivative for
+
+34
+00:02:28,054 --> 00:02:30,570
+C.
+Then, I should add some constant here.
+
+35
+00:02:30,570 --> 00:02:33,583
+I'm going to call that constant big D.
+Right.
+
+36
+00:02:33,584 --> 00:02:36,774
+So, here's my position.
+I guess I could write this a little bit
+
+37
+00:02:36,774 --> 00:02:40,870
+more nicely, coz the 8 and the dividing by
+2 simplify that I could write it as 4t
+
+38
+00:02:40,870 --> 00:02:45,162
+squared, plus Ct, plus D.
+Well, that's kind of weird, right?
+
+39
+00:02:45,162 --> 00:02:51,105
+Why are there two constants in my answer?
+Just knowing that my acceleration is 8
+
+40
+00:02:51,105 --> 00:02:56,135
+units per second squared, doesn't tell me
+my initial velocity, right?
+
+41
+00:02:56,136 --> 00:03:01,185
+This quantity C here, is really v of 0.
+Right?
+
+42
+00:03:01,185 --> 00:03:06,914
+It's my initial velocity.
+And I could be accelerating at a rate of 8
+
+43
+00:03:06,914 --> 00:03:11,106
+units per second squared.
+But starting with any of a range of
+
+44
+00:03:11,106 --> 00:03:15,926
+possible initial velocities, right?
+I could be going really fast at first or
+
+45
+00:03:15,926 --> 00:03:19,820
+really slow at first.
+But still, always accelerating at 8 units
+
+46
+00:03:19,820 --> 00:03:24,298
+per second squared.
+So, knowing this doesn't nail down C.
+
+47
+00:03:24,298 --> 00:03:29,183
+Similarly, just knowing my velocity
+doesn't nail down my initial position.
+
+48
+00:03:29,183 --> 00:03:32,741
+Right?
+This D here is really p of 0.
+
+49
+00:03:32,741 --> 00:03:37,037
+Right?
+If I plug in t equals 0, I just get D.
+
+50
+00:03:37,038 --> 00:03:41,911
+And that means that D is really providing
+my initial position.
+
+51
+00:03:41,912 --> 00:03:48,827
+So, if I know my initial position and my
+initial velocity and my acceleration, then
+
+52
+00:03:48,827 --> 00:03:52,550
+I can nail down an exact formula for my
+position.
+
+53
+00:03:52,550 --> 00:03:57,526
+I can get rid of these mystery constants.
+The important lesson to take away here is
+
+54
+00:03:57,526 --> 00:04:00,182
+that anti-differentiating can actually be
+useful.
+
+55
+00:04:00,182 --> 00:04:05,295
+Anti-differentiating let's us take, say,
+velocity information and produce the
+
+56
+00:04:05,295 --> 00:04:10,277
+position data.
+Or even better, in this case, it let us
+
+57
+00:04:10,277 --> 00:04:19,548
+take acceleration information, figure out
+the velocity, and then, take that velocity
+
+58
+00:04:19,548 --> 00:04:23,773
+information to figure out my position.

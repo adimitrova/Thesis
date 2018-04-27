@@ -1,0 +1,409 @@
+continuous system, basically jello, 
+blobs jello, right 
+this is kind 
+starting 
+so we a dynamical system, thats this 
+every selfrespecting dynamics 
+class to 
+amorphous flying potatoes right 
+a general thing we want to 
+compute certain properties 
+newtons law is simply f ma, 
+written in this form 
+you see 
+now, i a continuum, 
+kind hard to full thing, 
+a blob jello, right 
+different things will 
+different forces acting 
+so we want to is track 
+infinitesimal little elements here, 
+thats little box thats 
+dm infinitesimal object 
+like classic calculus that youve 
+seen many many times hopefully 
+so df is force thats acting 
+differential element, dm 
+r is inertial position vector, so 
+big r is inertial position vector 
+little r is position vector relative 
+to systems center mass 
+so whatever this bulb is you 
+an infinity little dms that add 
+to this thing 
+in common this instant 
+thats center mass is so 
+thats a classic location 
+well writing equations 
+that point so thats 
+thats basically f ma times that 
+so f ma important 
+that we an inertia derivative so 
+dots derivatives 
+seen inertial frame, 
+you to write position 
+relative to inertial origin 
+thats you wouldnt little r double 
+dot, you to big r double dot, 
+relative to inertial frame df 
+forces, 
+we categorize generally 
+theres external stuff internal stuff 
+give an example an external 
+force that might acting 
+a spacecraft 
+drag 
+drag, right, atmospheric 
+drag is one definitely 
+gravity could an external 
+force acting 
+you could solar radiation pressure 
+you may thrusters 
+this is a man made object, 
+maybe you way to control 
+you to stuff 
+thats external things, so 
+examples internal forces 
+acting this blob jello 
+torquers 
+actually, good question 
+so magnet torquers actually objects 
+that push external magnetic field 
+i would see external inaudible 
+influences acting elements 
+element might inside craft, 
+still pushing an external field 
+so would an internal 
+force that you might 
+reactions 
+reactions is a good example 
+you 
+fly disks that we put in, 
+sometimes called flywheels 
+reaction wheels 
+control movement gyros that 
+spinning objects inside spacecraft, 
+motors attached that 
+will spin spin 
+that motor is taking wheel 
+pushing space craft 
+so a dynamical system basically 
+means part jello is pushing 
+part jello 
+thats cause spinning 
+this would an internal force 
+system right 
+if you a free body diagram 
+reaction wheel maybe we treat 
+an external one that system 
+here we space craft jello 
+could fuel this stuff 
+fuels another one 
+fuel slash backing back forth 
+internal forces 
+that will key well 
+talking internal forces, 
+external forces, 
+things impact momentum energy 
+there good high level things 
+that really useful a spacecraft 
+analysts 
+so going to break 
+in two ways 
+if i need a total 
+force acting jello, 
+i gazillion dms, 
+i to integrate 
+so if you look chapter we 
+a summation we a gazillion 
+
+if you a continuum you 
+simply replace summation 
+an integral sign 
+thats really, if you go back look 
+calculus you integrals, 
+you kind broke 
+little bitty chunks 
+made chunks 
+infinitesimally small 
+basically this big summation 
+so if youre summing this, 
+claim here is total force 
+acting this blob is sum 
+forces acting individual dms 
+is simply going to 
+sum external forces 
+happens to internal forces 
+blots it, cancels 
+yeah, law is that 
+newtons third law 
+yeah, one newtons laws, right 
+so if you take a wall, push 
+wall, wall is actually going to 
+push back you exactly 
+amount in opposite directions 
+so im torquing a spacecraft, 
+applying forces to wheel, 
+youre getting equal 
+opposite forces applied to spacecraft 
+you sum 
+things to mutually cancel 
+so internal forces never contribute 
+to a net force system, 
+external ones that 
+so im sure youve seen that 
+basic properties jello is 
+continuum, dynamical system is 
+whatever mass distribution is, 
+will a center mass location 
+theres many ways to define 
+im going to show you 
+least two here 
+one is center mass is 
+essentially mass averaged location 
+so rc is center mass this blob 
+if you look r times dm 
+you really, you think you got 
+one kilogram, half a meter 
+two kilograms, a full meter 
+five kilograms, 
+a half a meter to left, right 
+you would add 
+a distances divide a total mass 
+thats going to 
+center mass location, 
+if you this mass 
+distribution a system 
+if continuum, instead 
+summing you integrals mass, 
+you know, 
+mass object times location 
+we divide 
+total mass to get rc 
+so thats a classic 
+definition center mass, 
+this works 
+continuum dynamical system 
+we break this 
+vectors, inertial position vector 
+so we say r here 
+to rc pass r 
+again, this is done in 
+a purely vectorial way 
+im saying r to expressed in 
+body frame in inertial frame 
+thats a book keeping 
+element we keep to later 
+right adding vectors 
+vectors plus vectors that 
+so if you this you see 
+this will actually break 
+lets that one quickly here 
+we that 
+rc r 
+dm thats sum two vectors 
+so im going to this, say okay 
+thats going to rc dm rdm 
+little subscript b that notation 
+is actually a triple integral 
+i to integrate entire body 
+instead writing triple integrals 
+limits, this is a short kind 
+i one integral b that mean 
+understood to integrating 
+an entire, whenever this body is, 
+right 
+so we break things 
+thats nice 
+that a vector 
+theres simplifications 
+that going to happen 
+we knew earlier, definition, 
+this m times rc right 
+this term somebody say 
+this is going to refined 
+right 
+kevin 
+youll get rc interval 
+okay 
+we get big m times r 
+yeah this is nothing sum 
+mass elements is total mass 
+you get there 
+so kevin you explain 
+to okay to take 
+rc varies time everything 
+is okay to take 
+outside integral 
+
+intergrating phase 
+right 
+integrating body 
+so you see b integrals, 
+think that, this body, 
+lets say center mass right 
+here microphone easy right 
+stop im looking this 
+going this instant, 
+whatever mass distribution is, 
+left hand is part system 
+center mass left hand is 
+still here, right, system 
+that rc location 
+right hand is also going to here 
+every element body, 
+a continuum, 
+shares 
+center mass location 
+so far body integral goes, 
+a constant 
+like integral times x 
+you pick outside integral 
+integral x right 
+continue, thats we treat 
+so this is a spatial integral 
+yes rt varies time 
+a spatial integration 
+body volume right 
+that location is a fixed doesnt 
+change depending if youre looking 
+nose spacecraft 
+tail spacecraft 
+one system that system 
+one center mass location 
+so yes thats reason, 
+well use this trick several times today 
+so if didnt quite make sense 
+hopefully will sink in 
+so you this 
+that gives mrc plus 
+little rdm mrc 
+cancel 
+you will little r times dm 
+this is way 
+if you classic sophomore 
+level center mass stuff, 
+you kilograms here, 
+kilograms there, you add 
+if positions taken 
+relative to center mass 
+mass times positions 
+to sum to 
+that means youve balanced perfectly 
+thats looks like 
+generally speaking 
+we little r dms body 
+integrals to equal to 
+thats a complete d version 
+that works jello 
+so good 
+so that, here, 
+a few steps you prove this 
+kind things 
+i would definitely expect you to able 
+to easily quickly in an exam 
+so if you havent done much this, 
+practice 
+now, going to next is 
+going to differentiate this 
+so going to take that 
+definition that we had, 
+center mass location, 
+this is good, 
+im going to take two 
+inertial time derivatives 
+so that means left hand side, 
+mass is constant 
+im losing 
+gaining mass in this dynamical system 
+rc, i to put two 
+dots im done 
+this is kind like homework 
+that you guys that inertial 
+derivatives stuff 
+in vectorial form this is dead simple, 
+two dots youre done 
+right hand side dm i guess 
+doesnt change, losing 
+gaining mass system 
+this is a body integral, 
+kevin saying 
+so thing that varies is r 
+so we get big r 
+two dots 
+you go back look newtons 
+equation that mass times inertial 
+acceleration is force 
+acting that one 
+so 
+this replaced also force 
+integral df force 
+we show that integral df force 
+is nothing net external force 
+you ignore internal forces 
+so you end an equation that 
+look pretty darn familiar 
+mass acceleration equal to force 
+youve used primarily 
+im assuming particles 
+this is particle, heres mass, 
+heres force this is 
+going to go 
+this actually also works a continuum 
+blobs in space 
+anybody seen muppet show 
+there pigs in space, you know, 
+a lot jiggling going 
+thats that kind stuff 
+this works anything, even muppets 
+okay, so this is key thing 
+we call this superparticle theorem 
+this basically says, 
+matter dynamical system is, 
+this complete closed system, 
+you treat center mass that 
+system will act like a particle 
+if i know there is two forces 
+acting a megatometer 
+maybe atmospheric drag force 
+that daniel talking about, thats 
+two forces i 
+to consider acting center mass 
+i will predict 
+translational motion perfectly 
+that blob may pull apart 
+may kinds weird stuff 
+so if external force depends 
+shape, gets complicated 
+so if this blob would pulling apart, 
+gravity gradients parts 
+closer to planets would 
+different force parts top 
+net forces change 
+shape 
+that makes complicated 
+we didnt gravity 
+we net thrusters 
+youve got blobs in space 
+somebody fires a thruster 
+this thing is going to take 
+go 
+looking force 
+knowing mass, i predict whats 
+going to happen to center mass 
+i dont know happens 
+to shape yet, 
+i know happens to 
+center mass that system 
+is a powerful argument 
+so thats whats called 
+super particle theorem 
+blob in space 
+if you concerned 
+center mass, 
+center mass will 
+act like a particular 
+f ma holds 
+f to net external force 
+m is total mass rc double dots 
+to inertial second time derivative 

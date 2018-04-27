@@ -1,0 +1,373 @@
+1
+00:00:00,012 --> 00:00:04,324
+[music] Here's kind of an old timey puzzle
+about numbers.
+
+2
+00:00:04,324 --> 00:00:07,797
+Suppose you've got 2 numbers which add up
+to 24.
+
+3
+00:00:07,797 --> 00:00:12,707
+You've got 2 numbers that sum to 24.
+How large can their product be?
+
+4
+00:00:12,707 --> 00:00:18,231
+When you take those 2 numbers that add up
+to 24, how big of a number can you get
+
+5
+00:00:18,231 --> 00:00:24,233
+when you multiply them together?
+This is an optimization problem so let's
+
+6
+00:00:24,234 --> 00:00:28,769
+draw a picture.
+Okay, maybe I can't draw a picture in this
+
+7
+00:00:28,769 --> 00:00:34,759
+problem but at least I can label things.
+So, instead of just saying two numbers
+
+8
+00:00:34,759 --> 00:00:40,889
+that sum to 24, let's give them the name.
+Two numbers, x and y, which sum to, to 24.
+
+9
+00:00:40,890 --> 00:00:47,174
+And instead of just saying how large can
+their product be, I can say, how large
+
+10
+00:00:47,174 --> 00:00:50,901
+can, you know, x times y be?
+So, what's the goal?
+
+11
+00:00:50,901 --> 00:00:57,243
+Well, my goal here is really just to
+maximize the product, so maximize x times
+
+12
+00:00:57,243 --> 00:00:59,911
+y.
+And there's a constraint.
+
+13
+00:00:59,911 --> 00:01:04,421
+The constraint is that x and y have to add
+up to 24.
+
+14
+00:01:04,421 --> 00:01:08,856
+So, I'll write that as x plus y equals 24.
+Rats.
+
+15
+00:01:08,856 --> 00:01:15,348
+X,y isn't a function of a single variable.
+I need to rewrite it so it's a function of
+
+16
+00:01:15,348 --> 00:01:19,240
+x alone.
+Now, since x plus y is 24, I could rewrite
+
+17
+00:01:19,240 --> 00:01:24,671
+this as y equals 24 minus x.
+And consequently, x times y, which is the
+
+18
+00:01:24,671 --> 00:01:30,431
+thing I'm trying to maximize, I could
+write that as a function of a single
+
+19
+00:01:30,431 --> 00:01:34,113
+variable, x times, and instead of y 24
+minus x.
+
+20
+00:01:34,113 --> 00:01:37,381
+So, this is the quantity now that I want
+to maximize.
+
+21
+00:01:37,381 --> 00:01:41,534
+Now, I can apply Calculus.
+Let's differentiate and then find the
+
+22
+00:01:41,534 --> 00:01:45,036
+critical points.
+So, here's this function of a single
+
+23
+00:01:45,036 --> 00:01:49,947
+variable that I'm trying to maximize.
+My function is x times 24 minus x, that
+
+24
+00:01:49,947 --> 00:01:54,284
+should be y or this is x times y, this
+thing I'm trying to maximize.
+
+25
+00:01:54,284 --> 00:01:57,021
+But if I expand this out, I get 24x minus
+x squared.
+
+26
+00:01:57,021 --> 00:02:01,394
+Then, I can easily differentiate this.
+The derivative of this function is, what's
+
+27
+00:02:01,394 --> 00:02:03,142
+the derivative of 24x?
+It's 24.
+
+28
+00:02:03,142 --> 00:02:06,072
+What's the derivative minus x squared?
+It's minus 2x.
+
+29
+00:02:06,072 --> 00:02:11,017
+I'm trying to find critical points, right?
+Critical points are where the derivative
+
+30
+00:02:11,017 --> 00:02:14,280
+doesn't exist or where the derivative is
+equal to 0.
+
+31
+00:02:14,280 --> 00:02:17,972
+Now, this function's just a polynomial, so
+it's differentiable everywhere.
+
+32
+00:02:17,972 --> 00:02:21,516
+So, I don't have to worry about the
+functions derivative not existing
+
+33
+00:02:21,516 --> 00:02:23,941
+somewhere.
+But I do have to find places where the
+
+34
+00:02:23,941 --> 00:02:27,306
+derivative is equal to zero.
+So, when is this thing equal to zero?
+
+35
+00:02:27,307 --> 00:02:31,171
+Well, that's the same as asking, when 24
+is 2x?
+
+36
+00:02:31,171 --> 00:02:35,751
+That's exactly when x is 12.
+So, here is my critical point.
+
+37
+00:02:35,751 --> 00:02:40,888
+What sort of point is that?
+Well, let's think about the s, i, g, n,
+
+38
+00:02:40,888 --> 00:02:47,272
+the sign of the first derivative.
+The derivative is positive if x is less
+
+39
+00:02:47,272 --> 00:02:52,701
+than 12, and the derivative is negative if
+x is bigger than 12.
+
+40
+00:02:52,701 --> 00:02:57,225
+What does that mean?
+Well, that means the function is
+
+41
+00:02:57,225 --> 00:03:03,439
+increasing for x values less than 12.
+And the function is decreasing for x
+
+42
+00:03:03,439 --> 00:03:08,945
+values bigger than 12.
+So, the function goes up, gets to 12, and
+
+43
+00:03:08,945 --> 00:03:14,009
+starts going down.
+What kind of point does that make 12?
+
+44
+00:03:14,009 --> 00:03:19,555
+Well, that must be a maximum.
+So, I'll write f of 12 is my maximum
+
+45
+00:03:19,555 --> 00:03:22,334
+value.
+So, what do we conclude?
+
+46
+00:03:22,334 --> 00:03:27,727
+So, here's our conclusion.
+A 144 is the maximum product of two
+
+47
+00:03:27,727 --> 00:03:32,752
+numbers which sum to 24.
+Did we really need the awesome power of
+
+48
+00:03:32,752 --> 00:03:35,386
+Calculus to solve this problem?
+No.
+
+49
+00:03:35,386 --> 00:03:39,366
+For example, you could have used a
+technique like this.
+
+50
+00:03:39,366 --> 00:03:43,751
+There's the so-called arithmetic geometric
+mean inequality.
+
+51
+00:03:43,751 --> 00:03:48,156
+The AM-GM inequality.
+And what it tells you is the following.
+
+52
+00:03:48,156 --> 00:03:54,460
+That for numbers a and b, the arithmetic
+mean, just a fancy word for the average of
+
+53
+00:03:54,460 --> 00:04:00,476
+a and b, is bigger than or equal to the
+geometric mean, which is the square root
+
+54
+00:04:00,476 --> 00:04:05,933
+of the product of a and b.
+And this inequality becomes an equality,
+
+55
+00:04:05,933 --> 00:04:11,937
+if and only if a and b are the same.
+Now, how can you use something like this?
+
+56
+00:04:11,937 --> 00:04:15,467
+Well, in our specific case, what do we
+know?
+
+57
+00:04:15,467 --> 00:04:21,647
+I know that x plus y is equal to 24 and if
+these two numbers add to 24, then their
+
+58
+00:04:21,647 --> 00:04:25,044
+average x plus y over 2 must be equal to
+12.
+
+59
+00:04:25,044 --> 00:04:31,122
+But if this is their average by the AM-GM
+inequality, this must be bigger than or
+
+60
+00:04:31,122 --> 00:04:36,178
+equal to the square root of x times y, the
+geometric mean of x and y.
+
+61
+00:04:36,178 --> 00:04:41,469
+Now, how does this help us?
+Well, what if I square both sides, right?
+
+62
+00:04:41,469 --> 00:04:45,280
+Then I know that 144 is bigger than or
+equal to x times y.
+
+63
+00:04:45,280 --> 00:04:48,236
+And that's exactly what I'm trying to
+figure out.
+
+64
+00:04:48,236 --> 00:04:52,904
+I'm trying to figure out how big can the
+product of x and y be, if I know what the
+
+65
+00:04:52,904 --> 00:04:55,732
+sum is.
+And what this is telling me, is that the
+
+66
+00:04:55,732 --> 00:05:00,294
+product can be no bigger than 144, with
+equality when x and y are both equal.
+
+67
+00:05:00,294 --> 00:05:03,274
+And that happens when they are both equal
+to 12.
+
+68
+00:05:03,275 --> 00:05:08,452
+That you don't actually need Calculus to
+solve many of the problems that are
+
+69
+00:05:08,452 --> 00:05:13,892
+assigned in Calculus courses, is perhaps
+one of the best kept secrets of Calculus
+
+70
+00:05:13,892 --> 00:05:17,361
+instructors.
+A result like this AM-GM inequality,
+
+71
+00:05:17,361 --> 00:05:20,631
+actually solves a ton of optimization
+problems.
+
+72
+00:05:20,631 --> 00:05:25,740
+You often don't have to resort to taking
+derivatives, if you can just apply a
+
+73
+00:05:25,740 --> 00:05:32,116
+result like this.
+Calculus is a powerful tool but there are
+
+74
+00:05:32,116 --> 00:05:40,955
+other ways to attack these problems.
+Don't be afraid to make use of other
+
+75
+00:05:40,955 --> 00:05:42,147
+methods.

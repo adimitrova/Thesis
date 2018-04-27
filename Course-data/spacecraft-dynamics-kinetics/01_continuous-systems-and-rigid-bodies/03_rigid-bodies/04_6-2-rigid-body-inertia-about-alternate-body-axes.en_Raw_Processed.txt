@@ -1,0 +1,171 @@
+one is, 
+if we a different body frame 
+theres an infinity frames i attach 
+to a rigid body a body fixed frame 
+in derivation, we assume that 
+derivative seen b zero 
+theres an infinity frames 
+so, 
+you will see in real life a lot frames 
+there might a docking port frame 
+theres a flight frame 
+theres a space craft frame 
+theres a structure frame 
+theres a sensor frame 
+theres a star truck frame 
+theres a gyro frame 
+theres lots frames, right 
+a sudden i need inertia 
+frame 
+i dont want to redo that integrals 
+we translate 
+this is answer in essence 
+you remember we vectors 
+so, a twoletter notation, 
+this becomes dead simple 
+so, if we a vector in nframe 
+i want a vector bframe i 
+to multiply this times dc 
+now, ten serves industry initial 
+times like two dimensional vectors 
+so, ill still use dcm to mark 
+one frame to another, 
+i to use dcm twice 
+thats this formula shows 
+again, im going to derive this 
+in a book, you go to that 
+a simple one 
+two letter notation you 
+see this tensor one frame b 
+im trying to get tensor 
+in different frame f 
+i to pre post multiply 
+sides times right dcm 
+so here fb times fb transpose 
+another way to write would fb this 
+inertia tensor to b frame times bf, right 
+so, left right hand 
+side mapping things to f frame, 
+you know youre right track 
+thats 
+so, we used dcm twice 
+questions this one 
+i assuming many you 
+actually seen this 
+you may not, 
+you catch 
+details notes in book 
+now, an infinity frames 
+we typically like a frame 
+that makes inertia tensor 
+diagonal especially an analysis 
+so, every rigid body 
+expressed body fixed 
+particular body fixed frame 
+that inertia tend to representation 
+becomes diagonal, 
+i to track three inertia 
+terms nine in that whole full thing 
+so, analysis, this is very, 
+handy, we want to able to this 
+in code, we write simulations, 
+going to solve 
+control problems, we use 
+inertia tensor eye in a general way, 
+that way requiring 
+somebody to found that magic place, 
+if you get rid fuel, 
+things shifted 
+we write in 
+a general way 
+in codes 
+analysis, 
+this is a handy thing 
+so, we find this 
+lets see, this is original one 
+this is fb here, 
+ive taken this fb transposed 
+brought to right 
+here right multiplying times fb 
+so, that matrix appears here 
+here 
+you start to carry 
+components equate, 
+this to 
+this basically sums there 
+you go ahead 
+you will quickly find that this dcm again, 
+becomes nothing 
+an eigenvalueeigenvector problem 
+in fact, you is, 
+rows this dcm eigenvectors 
+this three three matrix 
+representation bodys inertia 
+principle inertias, 
+thats we call things we 
+in diagonal form, nothing 
+eigenvalues associated 
+to eigenvectors 
+so again, 
+eigenvectors to form ecm though, 
+we need to normal, 
+probably hats here 
+to unit vectors, right 
+to orthogonal 
+key result is 
+you to righthanded 
+this is a big error source 
+people right here 
+matlab 
+gives you three vectors 
+idea youre trying to 
+so you to check in end is 
+you assemble this matrix is that 
+v cross to v to give you plus v 
+mathlab doesnt check that you 
+right 
+may give you minus v 
+so if you get something thats 
+lefthanded, reverse sign one 
+you a coordinate 
+frame that is righthanded 
+this gives you mapping 
+current e frame a principle frame f 
+whose representation ends 
+three diagonal inertias 
+you have, good 
+so two tricks, 
+power access this one, we now, 
+we never, we inertia tense 
+so we tend to to redo 
+that body interval 
+you simply nice clean analytic 
+mappings to shift origin to shift 
+body fix point a body frame 
+components taken yes sir 
+so f frame is a frame 
+inertia tensor is nice 
+yes 
+if you looked statics mechanics 
+books tends to like symmetry axes 
+you quickly see thats 
+everything bounces 
+diagonal terms, vanish 
+so, if you that, this pen, if one 
+axes lines this symmetry axes 
+two orthogonal that 
+would give you that kind a frame 
+if somebody gives you this weird 
+frame this is stuff 
+youre putting in a skewed way, 
+youre going to this stuff 
+so if you this thats body, 
+youre going okay, i always make 
+a coordinate transformation that this 
+becomes diagonal we go there 
+this is really nice analysis, 
+without loss generality you 
+always assume i write rigid body 
+tumbling motion in a principle cone form 
+in case ill 
+three inertias to worry 

@@ -1,0 +1,198 @@
+1
+00:00:00,012 --> 00:00:04,862
+[music] What's trigonometry?
+Well here's the basic idea.
+
+2
+00:00:04,862 --> 00:00:11,368
+So I've got a bunch of right triangles,
+these are all right triangles, and this
+
+3
+00:00:11,368 --> 00:00:16,848
+angle is the same in all of them, but
+they're all different sizes.
+
+4
+00:00:16,848 --> 00:00:23,741
+So the side lengths are all different but
+the ratios between the corresponding sides
+
+5
+00:00:23,741 --> 00:00:25,767
+are the same.
+What do I mean?
+
+6
+00:00:25,767 --> 00:00:30,777
+Well, take a look at this big triangle.
+It's got some height that I'll label in,
+
+7
+00:00:30,777 --> 00:00:34,559
+in orange, and it's got some width that
+I'll label in blue.
+
+8
+00:00:34,559 --> 00:00:39,126
+Now the width of this triangle isn't the
+same as this triangle, isn't the same as
+
+9
+00:00:39,126 --> 00:00:42,259
+this triangle, isn't the same as this
+small triangle.
+
+10
+00:00:42,259 --> 00:00:46,549
+And the height of this triangle is
+different than the heights of these three
+
+11
+00:00:46,549 --> 00:00:49,434
+triangles.
+But look at the ratio of this height to
+
+12
+00:00:49,434 --> 00:00:52,490
+this width.
+Alright, here's the height, here's the
+
+13
+00:00:52,490 --> 00:00:57,281
+width, and if I double the width, Width.
+It's a little bit more than the height.
+
+14
+00:00:57,281 --> 00:01:02,151
+In other words the height is just a little
+bit less than the twice the width and
+
+15
+00:01:02,151 --> 00:01:07,327
+that's true for all of these triangles.
+The ratio of their heights to their widths
+
+16
+00:01:07,327 --> 00:01:10,841
+are all the same, even though they're
+different sizes.
+
+17
+00:01:10,841 --> 00:01:14,111
+That's the key fact that makes
+trigonometry work.
+
+18
+00:01:14,111 --> 00:01:18,675
+If you just draw some random right
+triangle with given angles, it doesn't
+
+19
+00:01:18,675 --> 00:01:22,836
+really make a lot of sense to ask
+questions about the side lengths, it
+
+20
+00:01:22,836 --> 00:01:25,867
+really depends on how big the triangle you
+drew.
+
+21
+00:01:25,867 --> 00:01:30,683
+But it does make sense to ask questions
+about the ratios of side lengths, those
+
+22
+00:01:30,683 --> 00:01:34,712
+only depend on the angles.
+So we can give names to these ratios.
+
+23
+00:01:34,712 --> 00:01:40,455
+We call the sine of theta as the ratio
+between the height and the hypotenuse.
+
+24
+00:01:40,455 --> 00:01:44,133
+So if you like, the opposite side and
+hypotenuse.
+
+25
+00:01:44,133 --> 00:01:49,069
+So y over r in this diagram.
+The cosine of theta is the ratio between
+
+26
+00:01:49,069 --> 00:01:53,523
+the adjacent side and the hypotenuse of
+the right triangle.
+
+27
+00:01:53,523 --> 00:01:57,616
+It's x over r in this picture.
+And the tangent of theta.
+
+28
+00:01:57,616 --> 00:02:03,254
+That's the opposite side over the adjacent
+side, it's y over x in this picture
+
+29
+00:02:03,254 --> 00:02:07,246
+because the sine, cosine, and tangent of
+this angle theta.
+
+30
+00:02:07,246 --> 00:02:11,811
+And they're all just defined in terms of
+ratios of side lengths.
+
+31
+00:02:11,811 --> 00:02:17,727
+Now that we've got a definition of sine.
+We can, for instance, calculate sine of pi
+
+32
+00:02:17,727 --> 00:02:22,202
+over 5.
+If we build a triangle, any right triangle
+
+33
+00:02:22,202 --> 00:02:27,486
+with an angle of measure pi over 5.
+I built a right triangle.
+
+34
+00:02:27,486 --> 00:02:33,284
+And this angle is pi over 5.
+I can use my little ruler to measure the
+
+35
+00:02:33,284 --> 00:02:37,379
+hypotenuse.
+The hypotenuse here is about 25.2
+
+36
+00:02:37,379 --> 00:02:42,894
+centimeters.
+And I can measure the opposite side, and
+
+37
+00:02:42,894 --> 00:02:47,645
+the opposite side's about 14.8
+centimetres.
+
+38
+00:02:47,645 --> 00:02:55,651
+And sine is the opposite side over the
+hypotenuse, which means sine of pi over
+
+39
+00:02:55,651 --> 00:03:07,366
+five is about 14.8.
+Over 25.2, which is about 0.59.
+
+40
+00:03:07,366 --> 00:03:12,065
+.

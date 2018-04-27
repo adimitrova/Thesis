@@ -1,0 +1,124 @@
+1
+00:00:00,012 --> 00:00:05,482
+, Welcome back to Calculus One. And
+welcome to week six of our time together.
+
+2
+00:00:05,596 --> 00:00:10,579
+Can you believe that we've been at the
+Calculus game for more than a month
+
+3
+00:00:10,591 --> 00:00:15,905
+already? And we've done a ton of stuff so
+far. Way back at the beginning of the
+
+4
+00:00:15,917 --> 00:00:21,566
+course, we first met limits. We explored
+what it meant to evaluate a function near,
+
+5
+00:00:21,680 --> 00:00:26,385
+but not at, a particular import point. And
+once we have limits, we were able to
+
+6
+00:00:26,397 --> 00:00:30,511
+define the derivative. We explore how
+wiggling the input to a function would
+
+7
+00:00:30,523 --> 00:00:34,628
+effect the function in some way. That
+ratio given by the derivative. Then, we
+
+8
+00:00:34,640 --> 00:00:38,897
+spent a lot of time focusing on how to
+actually compute the derivative. Alright?
+
+9
+00:00:38,993 --> 00:00:43,427
+We learned all these derivatives rules of
+the product rule, and quotient rule last
+
+10
+00:00:43,439 --> 00:00:47,907
+with the chain rule for actually computing
+derivative of functions. And this week is
+
+11
+00:00:47,919 --> 00:00:52,683
+no exception. We continue that proud
+tradition of actually differentiating. But
+
+12
+00:00:52,695 --> 00:00:57,061
+in week six, we focus in on the
+transcendental functions. What are
+
+13
+00:00:57,073 --> 00:01:02,579
+transcendental functions? Now, most of the
+functions that we've been looking at thus
+
+14
+00:01:02,591 --> 00:01:07,768
+far are really algebraic functions.
+They're, say, polynomials or rational
+
+15
+00:01:07,780 --> 00:01:12,655
+functions, roots. Transcendental functions
+are functions that transcend algebra, like
+
+16
+00:01:12,667 --> 00:01:16,652
+e to the x, or log. Functions that we
+couldn't have gotten to if all we had at
+
+17
+00:01:16,664 --> 00:01:20,897
+our disposal was algebra. Another great
+example of transcendental functions are
+
+18
+00:01:20,909 --> 00:01:24,520
+sine, cosine, and tangent, the
+trigonometric functions. And if your not
+
+19
+00:01:24,532 --> 00:01:28,373
+feeling super comfortable with trig
+functions, no worries. We're going to
+
+20
+00:01:28,385 --> 00:01:32,802
+review trig functions this week, as well.
+But by the end of this week, we're going
+
+21
+00:01:32,484 --> 00:01:37,081
+to know how to differentiate those trick
+functions, and that sets us up for week
+
+22
+00:01:37,093 --> 00:01:41,421
+seven. And what happens in week seven?
+Applications of the derivative. We're
+
+23
+00:01:41,433 --> 00:01:45,589
+spending a ton of time focusing on
+techniques of differentiation, and next
+
+24
+00:01:45,601 --> 00:01:49,857
+week we'll see some applications. The pay
+off is going to be huge. Just one more
+
+25
+00:01:49,869 --> 00:01:54,272
+week of calculations to get through, and
+then we can see what all of this is used

@@ -1,0 +1,185 @@
+music 
+welcome 
+is good to see you back 
+this lesson 
+in previous module, 
+we explored contiki operating system 
+now, we will take a look 
+contikis kernel architecture 
+explore details 
+characteristics 
+end lesson, 
+you understand benefits 
+challenges faced developing 
+applications in contiki 
+lets start contikis 
+kernel architecture 
+we know previous videos, contiki 
+is based a modular kernel architecture 
+therefore, kernel is minimal 
+due to this reason, 
+kernel comprises a few lines 
+code that perform vital functions 
+example, 
+kernel consists an event scheduler, 
+is light in terms code size 
+in contiki, 
+program execution is triggered 
+either polling mechanism 
+events sent kernel 
+in contiki, kernel supports two types 
+events, synchronous asynchronous 
+asynchronous events 
+delivered to receiving process 
+immediately posted 
+instead, stored 
+in an event queue 
+events in queue delivered 
+to receiving process kernel 
+kernel delivers an event 
+event queue looping 
+receiver an asynchronous event 
+either a specific process 
+running processes 
+receiver is a specific process, 
+kernel invokes this 
+process to deliver event 
+receiver an event is 
+set to processes in system, 
+kernel delivers event 
+to processes sequentially 
+this is one another 
+process post function is used 
+posting an asynchronous event 
+actually this function is simple 
+first, size event queue is 
+evaluated if there is room 
+new event, 
+event is added to queue 
+otherwise, function will return zero 
+synchronous events work differently 
+asynchronous events 
+in sense that 
+a synchronous event is dispatched, 
+is delivered to receiving 
+process immediately 
+another difference 
+between asynchronous 
+synchronous events is 
+type receiver 
+while asynchronous events received 
+either a specific process 
+running processes, a synchronous event 
+received a specific process 
+mechanism invoking a synchronous 
+receiver is similar to calling a function 
+a synchronous receiver is called, 
+so performs task, 
+returns control 
+to posting process 
+besides events, 
+kernel supports a polling mechanism 
+in short, polling mechanism 
+behaves high priority events 
+that scheduled between 
+asynchronous events 
+typically, processes operating close 
+to hardware level use polling 
+evaluating hardware status 
+a poll is scheduled, processes 
+that implement a poll handler 
+called sequentially 
+according to priority 
+in a similar way to 
+event posting functions, 
+contiki also provides a process 
+poll function posting a poll 
+posting a poll a similar 
+effect an interrupt 
+causes receiving process to 
+scheduled soon possible 
+contikis kernel uses a single shared 
+stack process execution 
+use asynchronous 
+events reduce a stacks space 
+requirements stack is rewound 
+between invocation event handlers 
+this point, 
+you may questions regarding 
+events is an event unique 
+we best identify 
+to answer questions, 
+lets talk event identifiers 
+an event identifier is an bit number 
+used a unique identifier an event 
+a process receives an event 
+uses event identifier to 
+determine actions to perform 
+there several event identifiers 
+reserved contiki kernel 
+to handle process control, interprocess 
+communication, peripheral access 
+to get better acquainted 
+available identifiers, 
+i suggest you go 
+suggested materials 
+now, lets take a look way 
+contiki implements scheduling 
+contiki schedules events using 
+a single level hierarchy, 
+events cannot preempted 
+events 
+way to preempt 
+an event is using interrupts 
+is important to notice 
+interrupt must supported 
+an underlying realtime executive 
+correspondingly, interrupt 
+handlers cannot post event 
+reason behind this policy is 
+to avoid possible race conditions 
+in event handler 
+instead, a polling flag is 
+used to request a poll event 
+this flag provides interrupt handlers 
+a way to request immediate polling 
+next, we going to discuss 
+loadable programs in contiki 
+to implement loadable programs, 
+contiki uses a binary format that includes 
+relocation information 
+a runtime relocation function 
+but, a loadable program work 
+a program is loaded, 
+loader uses relocation information 
+provided binary 
+format to allocate memory 
+in case that there is enough memory, 
+loading is aborted 
+in case successful loading, 
+function 
+initialization is called 
+starting replacing processes 
+finally, going to look 
+power saving in contiki 
+in general, power saved 
+putting inactive nodes to sleep 
+in cases, 
+choosing appropriate level protocols 
+may also reduce power consumption 
+contiki also provides a mechanism 
+reducing power consumption even though 
+there is explicit abstraction 
+mechanism works checking 
+size systems event queue 
+if event queue is empty, 
+microcontroller goes a sleep 
+mode until woken an interrupt 
+this is lesson 
+contiki kernel architecture 
+i hope you a better insight 
+contikis kernel is structured 
+works 
+thanks watching 
+see you in next video 
+music 

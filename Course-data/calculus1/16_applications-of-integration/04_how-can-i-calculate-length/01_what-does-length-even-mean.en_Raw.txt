@@ -1,0 +1,107 @@
+[music]. 
+here's a little puzzle about length. 
+i've got an isocoles right triangle. 
+and let's say that both of the legs of 
+this right triangle have the same length 
+and we know the length of the hypotenuse 
+by the pythagroem theorem. 
+well, that tells us that this length is 
+the square root of 2. 
+but let's try to think about this 
+differently. 
+what if, instead of a smooth ramp, i made 
+stairs. 
+i mean, instead of this ramp picture, i 
+have a picture like this, right. 
+a staircase. 
+what's the length of the staircase. 
+the total length of the staircase is 2. 
+to see that, just look at the horizontal 
+sections of the stairs. 
+that's the same as the entire bottom 
+edge. 
+and the vertical sections of the 
+staircase is the same as this whole edge. 
+so 1 plus 1 is 2. 
+what happens if i make those stairs even 
+smaller? 
+the length is still 2. 
+because again, all of the vertical 
+sections of the staircase add up to this 
+length. 
+and all of the horizontal sections of the 
+staircase, and i'm[unknown] pushing them 
+all down, add up to this length. 
+so, the total length of the staircase is 
+still 2. 
+what happens if i make those stairs 
+really small? 
+well, even if the stairs are really, 
+really small, the total length of the 
+staircase is still 2. 
+what is going on here? 
+the length of the ramp is a square root 
+of 2. 
+the length of the staircase is 2. 
+no matter how small i make the stairs, 
+even if i made each stair the size of a 
+proton, the staircase would still have 
+length too. 
+the point is that even something as 
+seemingly obvious as length, is more 
+subtle than i think we give it credit 
+for. 
+what we really need is some sort of 
+definition of length. 
+we'll do it in terms of an integral. 
+so just like with volume or with area, 
+i'm going to take this thing that i'm 
+interested in, say the length here. 
+and try to break it up into little pieces 
+that i'll then add up with an integral. 
+so let's imagine that i cut this up into 
+little tiny pieces and that i just 
+connect these by straight lines. 
+and then i can just add up the length of 
+these little tiny straight lines and call 
+that, in the limit, after i integrate, 
+the length of this curve. 
+i want to write down an integral that 
+captures that intuition. 
+well, let's just look at one little piece 
+of this thing here. 
+let's write a little triangle there so i 
+can call the change in x dx, and the 
+change in y dy and what i'm interested in 
+is how long this little green line 
+segment is. 
+well, you might think then that little 
+green line segment has the length square 
+root dx squared plus dy squared. 
+and then you integrate to get the total 
+arc length, just play around with that a 
+little bit. 
+specifically lets imagine pulling a dx 
+outside of this. 
+so when i get this is the intergral. 
+the square root of 1 plus, and if i 
+factor out a dx here, i have to include a 
+dx in the denominator there. 
+and this has the advantage at least of 
+now looking like the derivative, right, 
+dy over dx, that's how i've been denoting 
+the derivative, and this form is the sort 
+of thing that i can integate. 
+so here's the formula that we're going to 
+use. 
+the arc length from a f of a to b f of b 
+along the graph of f is the integral x 
+goes a to b of the square root of 1 plus 
+the derivative squared and that's exactly 
+what i saw here dx. 
+i hope that you're feeling just a little 
+bit uneasy at this point. 
+i'm really treating dx and dy as if 
+they're legitimate mathematical objects, 
+and you should be a little bit 
+uncomfortable with that at this point. 

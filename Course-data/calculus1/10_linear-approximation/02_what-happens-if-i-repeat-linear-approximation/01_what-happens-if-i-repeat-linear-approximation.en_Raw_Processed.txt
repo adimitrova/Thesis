@@ -1,0 +1,253 @@
+music well here is a linear 
+approximation problem 
+so ive got function f 
+you dont know that function 
+immediately, i know derivative is 
+equal to functions value, say 
+x 
+lets suppose that i know this 
+functions value zero 
+so this functions value is , 
+goal is to find f 
+we secretly know something, right 
+i mean, i secretly know that this function 
+is really e to x 
+so i say find f 
+i really mean that im trying to calculate 
+e to first power, im trying to 
+calculate e 
+point, here, you know, isnt to 
+say that answer is e, right 
+point is going to to try to 
+approximate this quantity without actually 
+knowing value e 
+we already know to this 
+we use linear approximation, 
+right 
+i want to know f is, 
+linear approximation business, well 
+equal to, approximately 
+value 
+plus much i change input times 
+derivative 
+i know functions value 
+functions value is 
+since derivative is equal to 
+value everywhere, that means i also know 
+derivative is 
+so functions value is , 
+derivative is function 
+value , is 
+plus times is so approximately f 
+is 
+since i secretly know that this 
+function is e to x, im saying that e 
+is , is a terrible approximation 
+we better 
+if we approximation once, we 
+a bunch time 
+so instead this jumping way to 
+, lets first approximate f half 
+that will f , plus much i wiggled 
+is half times derivative 
+well, f is still , half is a half 
+derivative is still 
+so this is plus a half, this is 
+halves 
+we use data approximation to 
+approximate f 
+yes, im sort bootstrapping here, 
+i want to know f least 
+approximately 
+instead starting , im going to 
+start half 
+so that will f half, 
+admittedly i dont know i got this 
+approximation 
+plus much i changed to go half 
+to times derivative one half 
+f one half is approximately this 
+three halves, one half derivative 
+one half i dont really know is 
+i still know that derivative is 
+equal to functions value ive got an 
+approximation functions value 
+so i use that approximation here 
+derivative one half is 
+halves 
+ive got halves 
+ive got quarters 
+that ends th, is a 
+slightly better approximation to 
+functions value one 
+i mean, nine fourths is closer to 
+actual value e 
+well if two steps worked better one 
+step, ten steps will work even better 
+so here we go, lets approximate this 
+function 
+well thats approximately function 
+value plus much i change 
+input times derivative 
+function value is plus times 
+derivative is 
+so approximately, e to is 
+i repeat this process, i want to know 
+exactly whats functions value 
+that functions value 
+plus times derivative 
+so approximately function values 
+point is plus times 
+derivative , is about, no, see 
+this in fact function values 
+is 
+so plus times , kind a 
+mouthful 
+that ends 
+to approximate function value 
+right, ill start functions 
+value 
+i go to adding 
+i multiply derivative, 
+functions value is plus 
+times derivative , is 
+also , times plus 
+times , thats 
+you might begin to see a pattern here, 
+right 
+, , , pieces 
+pascals triangle, really 
+i mean that makes sense considering 
+im adding number plus times 
+number 
+lets keep going 
+so lets compute f , thats f 
+plus times derivative 
+well, approximation here f 
+is plus times , is, 
+i this to get an 
+approximation 
+right, im really taking this number 
+adding times i get 
+thing to approximate 
+i get 
+thing to approximate , 
+take this number add this number 
+times , is 
+game, approximate f 
+so i take this number add times 
+this number 
+i get thing 
+a 
+so this number plus times this number 
+i get last 
+i take this number add times this 
+number, i get , 
+approximately e 
+well, so great 
+i mean, its, you know, much closer to 
+previous attempts, i used 
+two steps, you know 
+so using ten steps is better, this 
+technique repeated linear approximation 
+a name 
+so instead calling this you know 
+repeated linear approximation people 
+usually call this euler method 
+lets summarize algorithm 
+so this is a set 
+ive got a formula derivative 
+f, in terms f x 
+so this cloud represents formula that 
+involves f x x thats 
+formula derivative f x 
+lets say i know value f 
+zero 
+number suppose ive picked 
+small number h 
+well euler method tells to do, is 
+i want to know f h, well i already know 
+to that 
+right, thats linear approximation 
+f zero plus h times derivative 
+zero 
+i use this formula, say to calculate 
+derivative f zero 
+i know value f zero 
+so i get an approximation to 
+functions value h 
+neat thing is i an keep playing 
+this game, right 
+if i want to know an approximate value to 
+function times h, well thats 
+functions value h plus h times 
+derivative h 
+i know functions value h 
+approximately 
+i know derivative h, 
+ive got a formula derivative in 
+terms f x, i know to 
+calculate f h, approximately, i 
+know x, right, h in this case 
+that means that i get an 
+approximation to f h ill 
+keep playing this game 
+if i want to know f h, well thats 
+f h plus h times f prime h, 
+so thats that linear approximation 
+formula 
+to go h to h, i add h so f h is 
+approximately functions value h 
+ive already approximated, plus 
+much i change input by, times 
+derivative h 
+this i also approximate, 
+formula derivative 
+involves things i already know least 
+approximately 
+right, i know value f h 
+approximately 
+i keep repeating this to 
+move to 
+right and, you know, approximate values 
+function that tend to get far 
+away zero 
+cool thing here is that im using, you 
+know, linear approximation in stage 
+im using information 
+previous stages to approximate 
+functions value, also to 
+approximate functions derivative 
+i wan you that in really world, 
+people dont really use euler method 
+so often 
+like really great mathematical 
+idea, theres a ton different riffs 
+that you play this basic framework 
+example since this is going to 
+end an approximation 
+derivative anyhow, sometimes better 
+to pick a point is way 
+left hand side interval im 
+approximating 
+so sometimes youll see that say instead 
+using zero here, i might use h 
+instead using h, is really 
+left hand side interval between h 
+h 
+youll see that sometimes people will use, 
+say halves h, is smack in 
+middle h h 
+say instead using h here, people 
+will sometimes use halves h, is 
+right in between h h 
+so you play games, say 
+choosing a different point to approximate 
+derivative at, using midpoint 
+is sometimes better 
+incidentally, if youve got 
+programming experience, id encourage you 
+to try to write a program to euler 
+method 
+really fun to able to see 
+calculations come alive 

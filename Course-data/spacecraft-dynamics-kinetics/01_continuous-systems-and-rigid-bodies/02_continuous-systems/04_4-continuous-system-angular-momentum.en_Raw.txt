@@ -1,0 +1,238 @@
+a little bit more curious,
+angular momentum.
+with angular momentum we have to specify
+about which point we're taking moments.
+we take torques about a certain point and
+we'd measure angular momentum about
+the same point typically in a system.
+so here, i mean people often use
+center of mass, but i'm not that nice.
+i'm giving you a general point p.
+and so sigma is now my position vector
+of dm relative to this moment point.
+>> [cough]
+>> this is the hinge point.
+for some reason i want to know
+momentum about this on my body
+is tumbling out here.
+how does that behave?
+so we'll derive the general formulation
+and then you will see when it sympathize
+down to the down to the classy
+answers many of you are familiar with.
+the momentum here h about
+point p angular momentum.
+it's always position crossed linear
+momentum of that same quantity.
+so sigma, that was my position
+vector relative to p, so
+i have a dot, inertial derivative on that.
+and you plug it in.
+sigma is r.
+rp would be the position vector going
+from here all the way up, right?
+so sigma is nothing but r- rp.
+you should start plugging this in.
+let's see, we do it with differentiation
+so that we get a dot here and
+then we get a double
+dot on the second term.
+>> this first one, trivially, goes to 0,
+a vector crossed itself is always 0,
+that's kind of boring.
+but it's nice because this will vanish and
+we're left with this term.
+so, you're going to see okay.
+now, what happens with this term?
+and we plugged instead of sigma
+double dot, we have r double dot and
+rp double dot.
+and i plugged those in.
+now, you notice r, i cannot take
+outside of the body integral because
+r depends on which element in
+the body am i pointing to.
+so that's going to be different for
+every dm.
+you just can't take it outside.
+rp on the other hand that's
+a general hinge point that i have.
+it's not really connected to the body and
+keeping it very, very general.
+and so that one is just fixed rp.
+might be stationary, it might be moving,
+it might be spinning or
+who knows what it's doing.
+and whatever it's doing,
+if i differentiate it twice,
+i need its inertial acceleration.
+its second order derivative.
+but that one i can take
+outside of my body integral.
+so good, we're left with those term.
+now let's look at this one.
+if we focus just on what's
+the body integral of sigma dm.
+so sigma, again, is r minus rp.
+so i can break that up as the integral
+of rdn minus the integral of rpdn, but
+rp i can take outside
+of the body integral,
+which allows me to just
+get a mass times this.
+and this part, if you recognize it,
+that was the right hand side of
+the center of mass definition.
+right?
+n times rc was equal to body integral
+big rdm.
+so i'm using that definition from
+the other center of mass definition.
+so this just becomes m rc,
+this one here becomes m and then a rp.
+so this term here,
+i can rewrite as given by there.
+okay, where's this going?
+if we look at torques,
+the torques about point b is
+basically the moment arm cross with
+the force acting on that particle.
+so, if there's a magnetic torque
+bar as mentioned earlier,
+it may have a particular torque,
+force acting.
+once the moment of that
+force relative to point p.
+all right, so
+it's sigma crossed r double dot
+dm which is the same thing as
+the force acting on that element.
+if you write this,
+we can rearrange this, and so
+you can see this term
+actually appeared over here.
+here, we've simplified that term to here,
+but
+this first term appears as being nothing
+but the torque around that point p.
+minus this, well that was it,
+that is the talk about p.
+so i can use this,
+the inertial derivative of h about point p
+is equal to the torque about point p,
+plus this other stuff.
+and i'm leaving it as slightly greyed,
+because we typically,
+a lot of dynamics books don't
+talk about this, at least.
+many people just remember the inertial
+derivative on momentum is torque
+which is true at times.
+so what must be true of point p
+to make this second term vanish?
+tosh, how can you make
+this term go to zero?
+>> [inaudible]
+>> no because [inaudible] or
+not this doesn't matter actually.
+this only has rc which is,
+this true for continuum as it is for
+rigid one and rp is just an arbitrary
+point outside of the body that i picked.
+and i could place it anywhere.
+ck.
+>> rp at rc.
+>> yeah, if you set rp,
+it happens to be equal to rc.
+in that case, this one minus itself
+is zero and that will vanish.
+and then probably the most common use
+of h dot equal to l is they've assumed
+implicitly that is about a center of
+mass location, all moments are about rc.
+and for spacecraft staff and
+if you keep spinning things, we will tend
+to use the center of mass as a point,
+a pivot point about which
+we take all of the moments.
+but it doesn't have to be.
+sometimes you have a space craft and
+a cad drawing, and for some reason
+what you got with the mass distribution
+is all the locations are not about that.
+it's like an off-balanced wheel.
+all of the sudden you have to account for
+that difference, and
+this is what you would have to do.
+what's the other way?
+there's a second way we can
+make this term go to zero.
+evan.
+>> you can make
+the difference between rc and
+rp perpendicular to
+the acceleration of rp.
+>> okay, there's a third way
+you can make it go to zero.
+[laugh] that's kind of a hard
+way to retract that but
+you might come up with
+a condition that would do that.
+good point.
+what's the second way?
+what do you guys think?
+roda what is that?
+we have almost exhausted all the terms,
+what's left?
+>> rp is constant.
+a treat of.
+>> okay if rp is constant
+the rp double both is zero.
+but that's true but i would say rp
+being constant is a little bit.
+>> rp dot is constant.
+>> could also be constant right?
+so what do we call emotion that has,
+either it's fixed in space or
+it's only moving inertially
+at a constant rate?
+what do we call such motion?
+no not nonlinear, inertial, exactly.
+the definition for something being
+inertial, an inertial point typically is
+it's a non accelerating point,
+and that's what's required.
+the condition is really just
+rp double dot has to be 0.
+if that point is non-accelerating.
+so if it's moving in a constant line,
+we're fine.
+if something is spinning immediately
+it's centrifugal accelerations and
+stuff, you know,
+it's not going to to be inertial.
+but you could take a point that's not
+center of mass, but it's an inertial point
+about which you take moments and
+then h dot equal to l holds as well.
+so in fact, some of the homeworks we'll
+be getting into you need to use both.
+sometimes you take hs and
+ls about center of mass.
+and sometimes you're finding this inertial
+point, o, and you can do it there.
+and both sets will give you some
+information that you can use to do
+that, all right?
+so we're not going to do much
+about general body fixed points or
+other different formulations of that
+that exists, you can look them up.
+just be aware hr is equal to
+l is not universally true.
+it's only true if you take your
+moments about center of mass or
+inertial points then we're guaranteed
+this is going to go to zero.
+those are two conditions
+we'll use in class.

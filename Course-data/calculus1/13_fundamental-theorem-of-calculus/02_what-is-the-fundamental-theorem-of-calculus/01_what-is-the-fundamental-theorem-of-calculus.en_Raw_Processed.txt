@@ -1,0 +1,144 @@
+music 
+i want to begin a statement 
+fundamental theorem calculus 
+suppose function little f, 
+closed interval a to b, to real 
+numbers, is a continuous function 
+lets define a function big f, to 
+accumulation function 
+right, thats integral 
+a to x function left 
+well function big f turns to 
+continuous in closed interval a to 
+b differentiable open interval a 
+to b this is big point 
+derivative big f is little f 
+weve seen a bit evidence this 
+already 
+suppose i got accumulation 
+function 
+so big f x is integral a to x 
+f tdt 
+i ask, is 
+accumulation function changing 
+well, accumulation function is 
+increasing, meaning derivative is 
+positive if function that im 
+integrating is positive 
+accumulation function is 
+decreasing, meaning derivative is 
+negative 
+if function that im integrating is 
+negative 
+this suggests that derivative 
+accumulation function 
+function that im integrating might 
+related in way 
+heres a graph thats particularly 
+compelling 
+so, ill draw coordinate plane, 
+heres y axis, heres axis in 
+this case ill draw random 
+looking graph 
+thatll graph y equals f 
+ill pick point 
+ill call a point x 
+ill look area 
+graph between a x, rigth 
+thats integral a to x f 
+d 
+right that area is accumulation 
+function evaluated x 
+whats derivative 
+accumulation function 
+got accumulation function, right 
+fx equals interval a to x that 
+ftdt i dont know that changes 
+x changes 
+so lets make a small change in x 
+lets go x 
+to say x plus h ask 
+area in this region compare to area 
+in this much larger region 
+whats big f x plus h minus big f 
+x 
+yeah, so whats f x plus h right 
+thats area 
+a to x plus h, minus f x, big f 
+x 
+thats area a to x, that 
+difference, right 
+that difference is area inside 
+here 
+that little leftover piece is practically 
+a rectangle height, f x, little f 
+x width h 
+i mean, this region is quite a 
+rectangle 
+awfully close to a rectangle of, 
+width h 
+area f x plus h minus f x 
+now, remember, goal to 
+differentiate accumulation function 
+ive got is this rectangle 
+whose width is h, whose height, 
+you think it, f x 
+so whats this rectangle 
+alright 
+i mean ive really got here is a 
+rectangle area is f x 
+plus h minus f x, this accumulation 
+function 
+width is h, height is 
+f x 
+well ive got a rectangle this area 
+this width and, this height 
+alright, i know 
+i know height times width is 
+area, so if i take area divide 
+width, i get height 
+this is approximate, 
+lets write that 
+i area this you know, rectangle is 
+f x plus h minus f x 
+if i divide width, i 
+get, height 
+that mean i take a limit 
+oh course this is approximately 
+true, if i take a limit, right 
+if i take a limit h approaches 
+this gives derivative 
+accumulation function that will in 
+fact equal to functions value 
+that is whole game 
+accumulation function f is an 
+antiderivative f 
+well this, i mean this is really 
+remarkable 
+instance you might wondering 
+whats an antiderivative this 
+function, little f x equals e to 
+negative x squared 
+well if a functions continuous we 
+find an antiderivative 
+antidirivitive is accumulation 
+function 
+so an antiderivative either 
+negative x squared is accumulation 
+function 
+i define a function big f x to 
+intregal a to x, number 
+a, e to negative squared d 
+if i differentiate this accumulation 
+function, i get back e to negative x 
+squared 
+so i found an antiderivative 
+this function 
+well i cant write 
+nicely 
+i cant write an 
+antiderivative e to negative x 
+squared using functions that i 
+hand 
+nevertheless, antiderivative is 
+accumulation function 

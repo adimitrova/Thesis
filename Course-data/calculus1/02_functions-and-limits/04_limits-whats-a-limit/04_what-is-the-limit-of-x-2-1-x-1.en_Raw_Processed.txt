@@ -1,0 +1,240 @@
+music limits probably 
+important concept in this course 
+so we really a definition 
+we mean limit 
+here is we mean limits 
+to say that limit f x x 
+approaches a is equal to l means that f 
+x close to l desired 
+making x close enough to a 
+there is a tons subtlety to this 
+definition so worth to look an 
+example 
+so lets take a look this function 
+this is function that takes an input 
+x spits xsecond minus one 
+divided x minus one 
+so lets try plugging in number three 
+this function 
+so i plug in number three this 
+function i to compute, 
+right 
+three squared minus one three minus 
+one well, thats three squared is nine 
+minus one is eight three minus one is two 
+nine divided two is four sure 
+enough, this function comes 
+number four lets look that example 
+a little bit detail 
+this is actually a pretty complicated 
+function 
+alright 
+i open function 
+alright 
+take a look functions 
+actually calculations 
+you think this function 
+three different steps 
+alright 
+one steps squares input 
+subtracts one, so i calculate 
+numerator 
+another step subtracts one 
+input 
+outputs two steps get 
+plugged division 
+thats i get output this 
+big complicated function 
+now, something like xtwo one, 
+you could also think that 
+some, you know separate steps well 
+this is good right 
+okay 
+lets see happens 
+i take number three i plug 
+function 
+alright 
+im going to calculating 
+numerator denominator separately, 
+so ill take s, here, ill 
+look threetwo one ill get 
+eight 
+here, three one became two 
+eight two get plugged 
+division, eight divided two is 
+four that becomes output 
+function, 
+right 
+inputs three, output is four i 
+look this way, i see 
+steps are, playing 
+okay 
+i evaluate function three, 
+cares 
+well, lets try to evaluate function 
+one instead three 
+so happens we plug in 
+number one this function 
+i got number one here 
+im going to look inside 
+im going to open this function 
+imagine ive got this number one 
+im going to plug function 
+right 
+im going to evaluating 
+numerator denominator separately, so 
+im going to take this one split 
+up, plug numerator 
+denominator 
+numerator sends input to 
+input squared minus one 
+so onetwo minus one is zero 
+thing here, one one is zero 
+ive got im going to 
+plugging in to 
+okay, bad 
+right 
+im dividing zero i 
+proceed, so this function is defined 
+one 
+so i cant plug one function 
+if i wanted to figure 
+functions value that inputs near 
+one, i could that 
+so lets try to plug in one point one 
+instead so lets plug one point one 
+this function 
+i cant plug in one i need to 
+divide zero, lets try 
+plugging in one point one im going to 
+open function take one 
+point one plug function 
+one point one is going to to 
+evaluated in numerator 
+denominator 
+one point onesecond minus one is 
+twentyone 
+one point one minus one became one 
+twentyone one going 
+division 
+twentyone divided one is two point 
+one so i evaluate function 
+one pint one i get two point one 
+instead plugging in one value, 
+lets plug in a whole bunch values 
+well make a table 
+so use that function 
+f x is xsecond minus one divided x 
+minus one now, i cant plug 
+function, if i plug in one, id 
+dividing zero, i cant divide 
+zero 
+one isnt in domain this function 
+i plug in numbers near one, 
+right 
+we saw that one point one if i plug 
+in that, i get two point one 
+right 
+if i plug in one point zero one i get 
+two point zero one if i plug in point 
+zero zero one i get two point zero zero 
+one 
+right 
+so 
+if i plug in i get 
+right 
+well, whats going here 
+i could summarize this situation 
+saying following 
+limit x squared minus one x 
+minus one x approaches one is equal to 
+two 
+is that 
+well, this is 
+i make x x minus one 
+close to two i want 
+if 
+i make x 
+close enough 
+to one 
+lets see 
+heres table alright if you want 
+output this function to within a 
+billionth two you need to is to 
+make sure that input is within a 
+trillionth one alright 
+long input is close enough to 
+one you guarantee that output is 
+close to two you like 
+this is looking a table 
+values 
+you know, maybe a dozen values seeing 
+theyre getting close to 
+would a lot better if there a 
+convincing argument 
+so lets go back to definition 
+limit 
+to say limit f x equals l means 
+that f x made close to l 
+you desire making x close enough to a 
+let emphasize something 
+close enough 
+equal 
+to a 
+something like this matter 
+well, lets go back to example 
+in example function wasnt 
+defined one 
+limit doesnt depend upon 
+functions value one 
+depends functions value 
+near one 
+so x squared minus one x minus one 
+is equal to x plus one long x isnt 
+equal to one right 
+long x isnt one this is a true 
+statement 
+so whats limit x goes to one 
+x squared minus one x one 
+well, this is limit x approaches 
+one x 
+one one 
+limit doesnt depend upon 
+value function one 
+depends upon values 
+function near one 
+a result, two things 
+limit 
+even better limit x plus one, x 
+approaches one, well thats limit 
+a sum 
+limit a sum is sum 
+limits 
+so i rewrite this limit limit 
+x goes to one x plus limit x 
+goes to one one 
+limit x x goes to one 
+well thats asking i make x 
+close to if i make x close enough to one 
+well thats one 
+limit one x goes to one is 
+asking whats one close to x is 
+close to well theres even an x in 
+this right wiggling x doesnt affect this 
+so that limits also one 
+one plus one is two so indeed 
+limit 
+xtwenty two minus one divided x one 
+x approaches one is two 
+limits provide information a 
+functions values approaching, 
+alright 
+a way accessing otherwise 
+forbidden information 
+i might able to plug in value 
+one, that would entailed 
+dividing zero 
+yet i know, that functions output 
+is close to two i like 
+long input is close to 
+equal to one 

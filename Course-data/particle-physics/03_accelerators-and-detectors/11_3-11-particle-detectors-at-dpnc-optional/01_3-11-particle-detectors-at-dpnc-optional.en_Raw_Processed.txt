@@ -1,0 +1,75 @@
+music 
+in this video, i will give you a little insight 
+one uses particle detectors 
+we introduced in module 
+to detect charged particles light 
+end this video you will know one integrates 
+semiconductor sensors socalled particle trackers, 
+reconstruct trajectory particles, one uses 
+light detection techniques to detect particles using scintillators 
+we already introduced principles particle detection 
+semiconductor detectors in video , 
+scintillators in video 
+so, to right, 
+you see two applications semiconductor detectors, 
+top atlas experiment lhc cern, 
+space experiment ams installed international space station 
+let us start top setup 
+you see here a part atlas forward detector 
+particles enter this part 
+detector in roughly this direction 
+localised silicon 
+microstrip detectors, you see left 
+there in fact two superimposed detectors, glued to 
+make a small angle, permits, even a detector 
+single sided read out, to localise particles in three dimensions 
+you see bottom detector a small electronics card, 
+directly connected to detector, shapes signal 
+and, a trigger arrives, transmits it, 
+in this case an optical signal, this slim optical fibre coming 
+you also see this piping behind, 
+is part detector infrastructure, 
+transports a cooling liquid, absorbing heat 
+stabilising temperature detector electronics 
+second line particle detectors, 
+we actively follow here department nuclear 
+particle physics university geneva, 
+scintillation detectors, 
+we already introduced in video 
+so, here 
+you see classical way constructing a scintillation detector 
+you take a scintillating material, you connect 
+via a light guide to a photomultiplier 
+in past, in s, 
+vacuum tubes, bulky heavy 
+here you see direction is followed today 
+produce scintillating fibres, 
+fine ones, connected to a small 
+light detector like this one, 
+allows time to localise 
+particles ant to measure specific energy loss dedx, 
+we explained in video 
+integrated, setup looks roughly like this, 
+you see a fine layer scintillators directly coupled 
+to a semiconductor light detector, localises light emission 
+measures intensity, produced passage particle 
+this one also construct particle tracking detectors, 
+light, deformable adjusted to 
+practically detector shape 
+since whole stays flexible 
+made to made to follow almost desired form 
+this, 
+you seen two specialties in development novel 
+particle detectors 
+we stop here direction we follow 
+semiconductor sensors goes towards pixel detectors, 
+allow, in sensor, 
+to directly localise particles in two directions 
+also present an improvement 
+in resolution, is rather impressive 
+you see here a sensor, localises particles to 
+ten micrometers 
+i remind you that diameter a human hair 
+is micrometers, ie sensor localisation 
+is times precise 
+music 

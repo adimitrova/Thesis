@@ -1,0 +1,170 @@
+music 
+lets compute volume a bead 
+first we to figure 
+going to build bead a solid 
+revolution 
+so start x, y plane im 
+going to draw a circle radius two in 
+plane 
+so, a circle radius if i take 
+this rotate around y axis i 
+got a sphere, i want to bead, so i 
+going to imagine drilling a hole 
+around y axis 
+so to that we draw vertical 
+lines here 
+this is line x equals 
+this is line, x equals minus 
+noise okay, if i take 
+region in here, rotate that region 
+around y axis, that gives a bead 
+thing giving a 
+sphere 
+a hole drilled around y 
+axis 
+weve got a choice 
+we attack this problem shells 
+washers 
+if i want to washers, since 
+im rotating around y axis, id 
+cutting this horizontal strips 
+if i take one horizontal 
+strips rotate around y axis, 
+that gives a washer, that looks 
+like here is heres big washer 
+thats, that works 
+theres nothing wrong that, 
+turns that if you way 
+interval that you get is kind yucky 
+lets try instead shells 
+if i go shells, id cutting 
+vertical strips 
+parallel to axis rotation 
+i take one little 
+vertical strips rotate around 
+well exactly ive got is, is 
+one shell pieces 
+we invoke formula volume a 
+shell in terms dx 
+so formula is pi, radius 
+shell 
+if i think one 
+pieces say x, radius is x, since 
+thats far is axis 
+rotation 
+height shell, i havent 
+figured yet, times thickness 
+shell, is dx 
+i need to determine height 
+shell 
+so that big sphere radius 
+this orange curve is that circle 
+radius 
+so i write that that orange 
+curve is y equals square root 
+squared minus x squared 
+and, thats almost enough information to 
+tell height shell 
+let write height this 
+shell is, then, height shell 
+is well, tall is this thing 
+well here, here to here, is 
+square root squared minus x squared, 
+distance, to 
+side here 
+so, height, is twice this quantity 
+so, i write that pi x times 
+height shell, is times 
+square root squared, is 
+minus x squared 
+thats height shell, 
+thickness shell dx 
+lets think endpoints 
+integration 
+this purple line, right, line x 
+equals 
+orange circle, right, radius 
+so, x take values between , 
+that tells end points 
+integration 
+so, this is volume one 
+shells, im going to integrate 
+that x goes to , to get 
+shells, add 
+finally, we integrate pi times 
+integral to , ill write x, 
+square root minus x squared dx 
+this is really shells shine, i 
+set this now, you see i 
+make a u substitution here 
+so ill set u equal minus x squared, du 
+in that case is minus x dx, put a minus 
+sign there a minus sign there 
+ive got du square root u, so this 
+integral becomes minus pi 
+square u d u i change 
+endpoints, u goes x is , u is 
+x is , u is , this is negative 
+to , so i rewrite this 
+pi integral to square 
+root u du 
+now, thats hard to 
+i rewrite that integrand pi 
+interval u to du to 
+i easily anti differentiate that 
+using power rule 
+so this is pi, u to halves 
+halves evaluated 
+now, i plug in zero i get zero, 
+so answer is whatever i get i 
+plug in three 
+so volume is pi times to 
+halves power halves 
+now, instead writing to halves 
+power, i could write this pi 
+halves times times square root 
+right, thats to 
+halves power 
+look, this this cancel 
+im dividing a half here, so this ends 
+pi times square root 
+this is volume bead 
+we it, is answer reasonable 
+well to think reasonable 
+calculation volume bead 
+
+we could think we build 
+bead, alright we build this thing 
+starting sphere radius two 
+drilling a tube radius 
+one 
+so if i start sphere radius 
+two i subtract even volume 
+right, this cylinder height four 
+extends top this sphere 
+bottom sphere 
+so this is even material i 
+removed to get bead 
+well that means that volume this 
+sphere minus volume cylinders 
+got to even a little bit less 
+volume bead, right 
+this is a little bit more, 
+material material that we 
+removed to get bead 
+well big three things 
+this thing here is a rds pie radius 
+cubed thats volume a sphere minus 
+this thing here is pie r squared times 
+height is volume a cylinder 
+i could simplify this a bit this is a 
+times so thats rd pi minus pi, 
+i simplify that a little bit 
+even, thats rd pi 
+we get to volume 
+big bead we calculated that to pi 
+square root 
+yeah, this quanitiy here is a 
+bit smaller this quantity here 
+so, seems like answers 
+reasonable 

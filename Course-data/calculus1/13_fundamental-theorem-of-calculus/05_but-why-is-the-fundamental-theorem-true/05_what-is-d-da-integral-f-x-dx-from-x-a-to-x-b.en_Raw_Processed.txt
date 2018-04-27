@@ -1,0 +1,126 @@
+weve seen happens we 
+differentiate accumulation function 
+thats fundamental theorem 
+calculus 
+if i take derivative integral 
+a to b f x dx, well i 
+get 
+well, f 
+b, right 
+rate change 
+accumulation function is functions 
+value 
+but, would happen if i to 
+differentiate respect to left 
+hand end point instead respect to 
+right hand end point 
+i mean 
+whats derivative respect to a 
+integral a to b f x dx 
+right 
+happens if instead diferentiating 
+respect to top end point, im 
+diferentiating respect to bottom 
+end point 
+im asking is this function a 
+function a changing 
+lets think graph 
+lets draw coordinate axes 
+ill draw random looking 
+function 
+ill pick points a b 
+integral a to b calculates 
+area in here 
+i want to know that integral 
+change i wiggle a 
+im asking to differentiate integral 
+respect to this 
+lefthand endpoint 
+so lets wiggle lefthand endpoint 
+lets move a little bit to a plus 
+h 
+im imagining h is small 
+alright, i want to know, 
+integral change 
+well quantity that calculates 
+absolute change in integral is this 
+whats this thing here 
+this is integral a plus h to b 
+this thing here is integral 
+a to b, so this difference is telling 
+integral changes i replace a 
+a plus h 
+if you think it, this is 
+really calculating is, you know, related 
+to integral a plus h, 
+right 
+this integral is calculating this area, 
+subtracting this larger area 
+so difference is really this 
+area in here between a ah 
+comes a negative sign im 
+subtracting this smaller area im 
+subtracting this larger area 
+so ive got this negative sign here 
+this region, if h is small enough, is 
+practically a rectangle, 
+practically a rectangle width h 
+height lets say f a 
+so, that means that this difference is 
+least approximately h times 
+functions value a 
+that help 
+remember im trying to calculate 
+i, im trying to differentiate 
+interval a to respect to a 
+that means im trying to take limit 
+this difference quotient 
+numerator here, we saw, is 
+approximately, negative h times f a 
+that means in limit i expect to 
+get an answer negative f a, 
+alright, hs will cancel in 
+limit, thats exactly i hope 
+for, right 
+derivitive integral a to 
+b respect to left hand endpoint 
+a is negative f a 
+so i summarize this 
+so i summarize this 
+derivative respect to a 
+integral a to b f x dx is 
+negative f a 
+this fact coheres a certain 
+convention integration 
+convention that we use is that if we 
+integrate a to b 
+function f x dx thats negative 
+interval b to a f x dx 
+so if you integrate wrong way, so to 
+speak, we want to count that negative 
+area 
+in light this convention, 
+we know 
+so d da integral a to b f 
+x dx is d da this, negative 
+integral b to a f x dx 
+this is derivative top 
+end point is usual 
+fundamental theorem calculus 
+so this is negative f a 
+so upshot here is that 
+differentiating integral a to b, 
+respect to left hand bottom 
+end point, is negative functions 
+value 
+that make sense if you 
+increase left hand endpoint that 
+decreases area 
+alright, so seems reasonable that a 
+negative sign popping there 
+cool thing is that, that fact is 
+cohering a convention 
+integration 
+that compared to integrating usual 
+way, if you integrate wrong way you 
+introduce a negative sign 

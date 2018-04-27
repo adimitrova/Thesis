@@ -1,0 +1,419 @@
+music we already know how to calculate
+limits that are a very small number
+divided by a very small number a zero over
+zero form
+so weve seen unknown patels rule for
+the situation when limit the numerator
+limit of the denominator of both zero, but
+it turns out thatinaudible rule is also
+valid when the limit of the numerator and
+the limit of the denominator are both
+infinity
+i mean you still got all the other
+conditions
+you gotta check that the limit of the
+ratio of the derivative exists, the
+derivative of the denominator is not zero
+for values of x near a
+but given these conditions, you then get
+the same fantastic conclusion
+that the limit of f over g is the limit of
+the derivative of f over the derivative of
+g
+lets take a look at an example
+well, heres an example
+this is an example, you really dont need
+to useunknown a lot, but at least it
+demonstrates what the technique is
+the limit on the numerator is infinity,
+the limit ofthe denominator is also
+infinity, though thats maybe a little bit
+harder to see
+and consequently we could use lopatolg,
+and it would tell us to compute instead
+the derivative the numerator
+which is  x plus , divided by the
+derivative the denominator, which is  x
+minus 
+now can i calculate the limit of this as x
+approaches infinity
+yes, of course i could just do this
+directly too but i could again use
+lowbatal of i really wanted to
+the limit of the numerator is infinity,
+the limit of denominator is infinity
+so lobatall tells me to instead consider
+the ratio of derivatives, the derivative
+of the numerator is , the derivative of
+the denominator is 
+and now im in a situation where im just
+taking the limit of a constant over a
+constant
+that means that limit is  th, which then
+tells me how to compute the original
+limit, but, and this isnt the best way to
+do this problem, but at least it
+demonstrates that you could use lopital in
+a situation where you got infinity over
+infinity
+infinity
+but not every limit is something going to
+zero over something going to zero, or
+something going to infinity over something
+going to infinity
+sometimes you might have a limit where
+its a product, the first term is heading
+towards zero and the second term is
+heading towards infinity
+for example, here im asking what the
+limit as x approaches infinity of sin of
+one over x times x
+this first term, sine of   x, thats
+getting close to  when x is very large
+and the second term, just the x, that is
+getting very big
+so this first term is having a tendency to
+made this quantity smaller but the second
+term is having a tendency to make the
+quantity bigger
+you know, who wins
+well with lobitolg the only thing that we
+can really deal with is sort of a  over 
+situation or an infinity over infinity
+situation and thats neither of these
+but we can transform this problem into one
+of these situations
+so instead of calculating this limit ill
+calculate the equivalent problem, the
+limit as x approaches infinity
+of sine  over x in the numerator divided
+by  over x
+so instead of multiplying by something
+which is going towards infinity, im going
+to divide by its reciprocal
+the reciprocal of something going to
+infinity, is going to 
+so now ive got a situation where the
+numerator is going to , and the
+denominator is going to , and this
+problem, equivalent to the original
+problem
+is now amenable to lhospitals rule
+so by lhospitals rule i would want to
+differentiate the numerator, differentiate
+the denominator and then look at that
+limit to try to understand this original
+limit
+well, whats the derivative of, of sine of
+ over x, its cosine of  over x, because
+the derivative of sine is cosine, times
+the derivative of the inside, which is
+minus  over x squared
+and im going to divide by the
+derivitative of the denominator, which is
+minus  over x squared
+so, now how do i evaluate this limit
+well, the good news is that ive got a
+minus  over x squared in the numerator
+and a minus  over x squared in the
+denominator
+so this limit is the same as the limit as
+x approaches infinity of just cosine of 
+over x
+but now,  over x is getting very close to
+ and whats cosine of a number close to
+its 
+so this original limit, is 
+you might have something near , being
+raised to a very high power
+heres an example
+the limit as x approaches infinity, of 
+plus  over x, raised to the xth power
+so for very large values of x, the base
+here,  plus  over x, thats close to ,
+but the exponent is very large
+if you take a number close to  and raise
+it to a very
+very high power its actually unclear what
+youre going to get
+depending as to how quickly this is moving
+towards  and how quickly this thing is
+growing
+you get wildly different answers
+now this is not  over  or infinity over
+infinity
+so ive got to transform this problem into
+something
+thing that lhopital can handle
+the trick here is to use exponential
+functions
+so im going to rewrite this as e to the
+log of the limit as x approaches infinity
+of  plus  over x to the xth power
+e to the log of something does nothing,
+ritght
+these are inverse functions
+but, log of a limit is the limit of the
+log
+so this is
+e to the limit as x approaches infinity of
+the log of  plus  over x to the xth
+power
+now log as something to a power is that
+power times the log, so this is e
+to the limit as x approaches infinity of x
+times the log of one plus one over x
+now what kind of situation am i in here
+x is very large but log of a number close
+to one is close to zero
+this is big number times number close to
+zero
+thats the infinity times zero
+indeterminate form, so how am i going to
+handle this
+we just saw a minute ago that im going to
+handle this by
+putting the infinity in the denominator
+with the reciprocals to make this  over
+, the sort of thing thatinaudible can
+handle
+so this is e to the limit as x approaches
+infinity of lg  plus  over x divided by
+ over x
+this is the same as this, but now ive got
+something approaching  divided by
+something approaching 
+this is the sort of situation
+thatinaudible can help me with
+this is e to the limit, by lopital
+the derivative of the numerator divided by
+the derivative of the denominator
+the derivative of log is one over the
+inside function, times the derivative of
+the inside, which is minus one over x
+squared
+divided by whats the derivative of  over
+x, well its the same thing here minus 
+over x squared and this is the limit as x
+approaches infinity
+now ive got a minus  over x squared
+which cancels with the minus  over x
+squared in the denominator
+and ive got  over  plus  over x as x
+approaches infinity
+this is getting very close to one
+so this is e to the st power, which is e
+and that means that this original limit,
+the limit of  plus  over x to the x
+power as x approaches infinity, is equal
+to e
+or you might have a very large number,
+being raised to a very small power
+for example, lets say i want to come up
+with the limit as x approaches infinity of
+x to the  over xth power
+so the base here is very large, which have
+a tendency to make this number very big,
+but the exponent is getting close to ,
+which would have a tendency to pull this
+back down closer to 
+so what is this
+well we can try to transform this into the
+sort of limit problem thatunknown can
+handle, and i can again do that with
+exponential functions
+so i can rewrite this as e to the log of
+the limit of x to the  of xth power
+and this is the limit as x approaches
+infinity
+now, this is the log of a limit
+which is the limit of the log of x to the
+ over xth power
+and this is the limit as x approaches
+infinity
+but the log of something to a power is
+that power
+so  over x times
+the log of the base as x approaches
+infinity
+now ive got  over x, which is the number
+close to zero
+times log of x, which is a very large
+number
+this is zero times infinity, so to speak
+so i should try to transform this
+indeterminate form into something that
+labetalol can handle
+well, well write this a e to the limit of
+x approaching infinity, of say log x over
+x
+this is infinity over infinity, so to
+speak
+thats the sort of thing that lhopitals
+okay with, so instead of taking this
+limit
+i could look at the ratio of the
+derivatives
+the derivative of log x is  over x
+the derivative of x is 
+so i should look at the limit of  over x
+over  as x approaches infinity
+well, that limit is  and e to the  is ,
+so the limit of x to the  over x as x
+approaches infinity is equal to 
+or you might have a limit that looks like
+something going to infinity minus
+something going to infinity
+so lets try to compute the limit as x
+approaches infinity of the square root of
+x squared plus x minus x
+so this is a very large number minus a
+very large
+the infinity minus infinity situation
+so we should try to factor this or rewrite
+this to get it into a zero over zero or
+infinity over infinity
+the sort of thing i could apply lopitolg
+to
+so i could try to pull out an x from this,
+because x is going to infinity
+i know x is a large positive number here
+so i could rewrite this as x times, so
+what if i pull out an x from here
+thats the square root of  plus  over x
+minus, when i pull out an extra one here i
+get minus 
+so really, this limit, for large values of
+x, so as x approaches infinity, is the
+same as x times this quantity, the square
+root of  plus  over x minus 
+this is a large number
+what do i know about this number
+well this is the square root of  plus the
+reciprocal of a large number
+this is close to  minus 
+this second term is close to zero
+this is infinity times  in determinate
+form
+so i could rewrite this using our standard
+trick as  plus  over x minus 
+so this is now the numerator
+this things going to  divided by  over
+x
+the reciprocal of this
+but im dividing by it, and thats the
+same as multiplying
+so now ive got  divided by a number
+close to 
+i, its  over  in determinate form
+so lopital tells me i can analyze this by
+looking at the ratio of the, the
+derivatives, so i should look at the limit
+as x approaches infinity of, whats the
+derivative of this
+well, the derivative of the square root is
+one over two square root of the inside
+function, one plus one over x, times the
+derivative of the inside function
+so the derivative of  over x
+and i dont have to worry about the minus
+, because the derivitive of thats 
+and i divide by the derivitave of the
+denominator, so ill just write derivative
+ over x
+so now ive got derivative  over x in the
+numerator, derivative  over x in the
+denominator
+this limit then, should be same as just
+the limit of this
+so i should be looking at the limit as x
+approaches infinity of  over  square
+root
+of one plus one over x
+well, whats one plus on over x as x
+approaches infinity, thats just one
+so this is one over two square root of a
+number close to one, this is one half
+and, indeed, this original limit really is
+one half
+i mean, honestly, we didnt need lhopital
+to calculate that, but we could use
+lhopital if we wanted to
+to evaluate this limit
+okay, okay
+lets summarize all the possibilities
+so heres this summary of everything you
+might see in theinaudible
+if you see zero over zero, or infinity
+over infinity in a limit problem
+you can just apply lhopital, in that
+case
+but here, ive lifted off some of the
+other things that you might see
+and these in equations, theres no
+nonsense equations, right
+but i hope they kind of tell you what you
+should do
+so if you see, say  times infinity in a
+limit, and by that i mean, its a product
+of things, one of which is limit , the
+other of which has limit infinity
+well, you should transform this into one
+of these cases so you can apply lhopital
+so you could do that by moving the  into
+the denominator, and taking its reciprocal
+this is really infinity over infinity
+or, you could move the infinity in the
+denominator, and take its reciprocal
+and now youve got  over 
+if you see  to a very large power, or
+something close to  to a large power,
+right
+you can use either the log to transform
+this
+and e to the log of this is e to the large
+number times log of number close to 
+log of a number close to  is close to
+zero
+this is an infinity times  indeterminate
+form
+but you know how to handle those
+because you can convert them back into
+these cases
+which you can then useinaudible
+if you see infinity to the 
+well, you could use the same e to the log
+trick
+and then the exponent here is  times log
+of a big number
+or a number close to  times log of a big
+number
+but this is the  times infinity
+indeterminate form, which is right here
+we should transform you to these cases,
+which you then use lhopital on
+if you see  to the , by which i mean, a
+number close to  raised to a power close
+to , you can again use the e to the log
+trick and this is e to a number close to
+, times log and a number close to 
+whats log of a very small number
+thats very negative
+so, this exponent is, again, the  times
+infinity in determinate form, which you
+can then convert into this and apply
+lhopital to it
+the last case is this infinity minus
+infinity case, and there, one thing you
+could try to do is put it over some common
+denominator, so im thinking of the common
+denominator here as being  over the
+product of these two terms, and here ive
+got  over the second term minus  over
+the first term
+but the point here is that you can rewrite
+this difference of very large quantities
+as a something getting close to  divided
+by something getting close to 
+which is the sort of thing that you could
+then apply lhopital

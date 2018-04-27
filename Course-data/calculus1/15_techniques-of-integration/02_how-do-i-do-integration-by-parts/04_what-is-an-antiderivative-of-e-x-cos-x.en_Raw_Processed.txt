@@ -1,0 +1,144 @@
+music integrating requires patience 
+sometimes you start attacking 
+monster, might take a little bit 
+time you start to see success 
+prepare to persevere 
+lets attack indefinite integral 
+cosx times e to x dx 
+theres a metaphor here 
+theres really different ways to win 
+battle 
+suppose this is you, this is 
+integral that youre trying to attack 
+one way, is you know, to try 
+hand, right 
+to take shield to take 
+sword, to evaluate that integral 
+directly by, say going back to 
+definition riemann sum 
+we almost never attack integrals in 
+this way 
+instead using, you know, swords 
+shields, really using, you know, 
+magic 
+right 
+putting wizard hat 
+instead trying to kill 
+intregral, right 
+we use something like u substitution to 
+transform that integration problem a 
+friendly integration problem that we 
+actually deal with, right 
+never attacking integrals directly 
+transforming integrals 
+u substitutions parts 
+so lets try to transform integration 
+that attacking here 
+lets tranform e to x cosx to 
+something else 
+so ill use u, ill make u e to 
+x 
+i dont really mind 
+differentiating that 
+ill make dv cosx dx 
+in that case, derivative e to 
+x is e to x 
+whats an antiderivative cosine 
+an antiderivative cosine is sine 
+is integration parts say 
+so antiderivative cosx e to 
+x dx is u times v, so e to x sinx 
+minus intergral v du so, sinx, e 
+to x dx 
+well that didnt really help matters 
+word day is persevere 
+so lets persevere, transform that 
+integral yet another monster 
+so monster in this case is this thing 
+here 
+lets try trick that new 
+integral 
+so u will e to x dv 
+here, will whats left over, sine 
+x dx 
+in that case, if u is e to x, 
+du is e to x dx 
+and, if dv is sin x dx, well, ive got 
+choices antiderivative, 
+ill v minus cosx 
+now, ive put this integration 
+parts formula 
+so antiderivative sinx e to x 
+dx is uv, so minus e to x cosx minus 
+vdu 
+so my, integral vdu, so v is 
+cosx, du is e to x dx 
+whats happened thus far in 
+battle 
+im attacking this integral 
+i used integration parts to transform 
+monster something else 
+didnt help, so i used that magical 
+weapon 
+i used integration parts to 
+transform integration problem 
+yet another integration problem 
+didnt help 
+
+happens if i put two 
+integration facts together 
+well, ive got here, 
+integral cosx, e to x dx, is equal 
+to e to x sin x minus integral 
+sinx, e to x, dx, is here 
+so minus negative e to x cos x plus 
+integral cosine x e to dx 
+lets persevere, lets keep going 
+so this is saying integral cos x e 
+to x dx is e to x sin x plus e to 
+x, cosine x, minus integral 
+cosine x, e to x, dx 
+im going to add integral cos 
+x e to x, dx to sides 
+ill get is times 
+integral cos x e to x, dx is equal 
+to, well whats left righthand 
+side, e to x sin x plus e to x, 
+cos x 
+ill divide sides , 
+if i divide this side this side 
+well cancel, i 
+find that an antiderivative cosine 
+x e to x is e to x sin x plus z 
+to x cos x 
+we here is one favorite 
+applications integration parts 
+we didnt use integration parts to 
+solve, to evaluate integral directly 
+instead, i applied parts twice ended 
+a clone original monster 
+so that go 
+well, here you are, right, youre a 
+wizard, so heres wizard hat, 
+heres integral that we wanted to 
+attack 
+we didnt attack this integral 
+directly 
+we didnt even transform this integral 
+using u substitution 
+instead, we used parts twice 
+seemed like that a terrible idea 
+i applied parts twice, i 
+ended a clone original 
+monster 
+integral ended appearing 
+but, that integral came a 
+minus sign 
+and, consequently that monster ends 
+defeating able to 
+evaluate integral without actually 
+integrating 
+if anything suggests that theres 
+creativity in battles ahead us, i 
+think integration parts is telling us, 
+to prepared to amazed 

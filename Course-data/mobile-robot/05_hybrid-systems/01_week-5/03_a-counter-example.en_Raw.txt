@@ -1,0 +1,195 @@
+what we saw in the previous lecture was 
+how to model switch systems in a rather 
+general way using these things called 
+hybrid automaton. 
+today, i want to show that just because 
+we know how to design good linear time 
+invariant controllers and we know how to 
+draw a hybrid automaton, doesn't mean 
+that we can just say, [sound] we're done, 
+we can do everything we want to be able 
+to do. 
+in fact, what i want to do today is talk 
+to you about a rather famous counter 
+example that makes thinngs hard when 
+you're in the hybrid world. 
+so, i'm going to answer the following 
+question, what can possibly go wrong when 
+you start switching between different 
+controllers. 
+and this tangle of yarn here is supposed 
+to illustrate what can happen when you 
+start switching and messing things up 
+together in, in rather surprising 
+manners. 
+well, lets let's start rather modestly. 
+let's say that i have two modes. 
+i have x dot is equal to a1x and x dot is 
+equal to a2x and this a1 and a2 matrices 
+they look rather 
+innocent, if you ask me. 
+some small negative value on the 
+diagonals, same small diagonal negative 
+values, their epsilons is positive. 
+and then, on the off-diagonals, you have 
+one and negative two here, and two and 
+negative one there. well, well let's 
+check the eigen values, 
+that's the first thing we should always 
+do. 
+well, it turns out that no matter which 
+system you have, both a1 and a2, the 
+eigenvalues are both -epsilon plus 
+-1.41j. 
+well, what does this mean? well, the real 
+part is equal to -epsilon, which is 
+strictly negative, so both systems are 
+asymptotically stable, 
+meaning that x will die down to the 
+origin. 
+and both of them have a nonzero imaginary 
+component, 
+which means that you're going to have 
+oscillations, 
+alright? so, we have asymptotically 
+stable systems with oscillations. 
+and, in fact, let's see what happens when 
+we start combining these different modes. 
+before we do that though, let's actually 
+look at the modes a little bit more 
+carefully by themselves. 
+so, here is mode 1, x dot is a1x and what 
+i've plot that here on this axis is x1 
+and what i've plot that here is x2. 
+what this would look like if i have time 
+here and let's say, x1, is i would gets 
+decaying oscillations. 
+well, we don't have that now because i 
+plotted x1 and x2. 
+and this is where i start, in this case, 
+i guess, i started at 1,1 and the system 
+starts flowing. 
+and because epsilon is small, you're 
+going to get closer and closer to zero 
+but slowly. 
+and you're going to spiral in like this. 
+and, you know, t goes to infinity. 
+you're going to end up at the origin 
+because you have indeed an asymptotically 
+stable system. 
+so, a1 is well-behaved. 
+it spirals a little bit but what do we 
+care? we're not afraid of spirals. 
+here's a2. 
+it also looks like a spiral but instead 
+of a tall and skinny spiral, it's a short 
+and chunky spiral. 
+again, we start at 1,1. 
+and this system starts spiraling and it 
+goes inwards and then, [sound] it goes 
+like this so it's also asymptotically 
+stable as it should but because of the 
+particular eigenvectors of these two 
+systems, we end up spiraling in slightly 
+different ways. 
+but the point is we have two stable 
+systems. 
+now, let's put them together in a hybrid 
+automaton. 
+so, this is hybrid automaton number 1. 
+i'm going to spiral, tall, and skinny, 
+until [0 1]x=0. 
+this means that the second component, so 
+x2=0 is what this guard means, right? 
+and when x2=0, i switch to my short and 
+chunky ellipsoid or inward spiraling 
+system. 
+and then, when x1=0, i switch back. 
+so, this is my first hybrid automaton. 
+well, let's see what that actually looks 
+like if you do it. 
+so, as always. 
+we start at 1,1. i start in mode 1 
+[sound] until this point, right, where 
+x2=0, then i switch to mode 2 which as 
+the short and chunky ellipsoid. 
+here, x1 becomes 0 and now i switch to 
+mode 1 again so we have 1,2,1. 
+now, we switch to mode 2, to mode, 
+mode 1, and so forth. 
+and as we keep doing that, we spiral in, 
+and one thing that you're going to notice 
+then is that we're actually ending up at 
+the origin at a much faster rate. 
+so, this system is not just 
+asymptotically stable, it's 
+asymptotically stabler, which is not a 
+word, by the way than the original 
+systems, because it actually converges at 
+a faster rate. 
+so, by switching, we were able to get to 
+the origin faster, which makes you 
+wonder, why am i calling this a counter 
+example? 
+well, this is not a counter example. 
+but aha, 
+hybrid automaton number 2, 
+maybe that is the counter example. 
+it's the same as hybrid automoton number 
+1, but i switched the guard conditions. 
+so i'm switching from mode 1 to mode 2, 
+when x1=0 and i'm switching from mode 2 
+to mode 1, when x2=0. 
+this seems like a modest enough 
+modification if you ask me, but modesty 
+in all modesty, 
+it turns out that that is a huge deal. 
+now, 1,1 is hiding somewhere here and 
+what's happening is that we're now 
+starting to spiral out. 
+so now, here we have, for instance, that 
+x1 became zero. 
+now, we're switching to the, the fat 
+spiral. 
+here, x1 becomes 0 and we're switching to 
+the skinny spiral. 
+and in this way, we're going to end up 
+getting further and further out. 
+and this is indeed an unstable system and 
+this is a little bothering to us because 
+i took two stable systems and i put them 
+together in a hybrid system, and i got 
+instabilities. 
+so the punchlines here is, first of all, 
+stable modes by themselves, 
+that's not enough to guarantee that the 
+resulting switch to hybrid systems is 
+stable. 
+in fact, you may induce instabilities 
+through switches. 
+and that's a little bit of a downer, to 
+be completely honest. 
+the other thing is that you can actually 
+reverse this and say, you could even 
+design unstable modes, which we're never 
+going to do. 
+but you could and actually get a switch 
+system that is stable. 
+so basically, you could reverse time when 
+we, what just looked at. 
+and we get to unstable modes that renders 
+the switches but here is how we actually 
+will approach this. 
+we will design stable modes because it 
+would be suicidal to design unstable 
+modes and then hopefully, miraculously 
+hope that the switches will, will take 
+care of it. 
+so, we're going to design, design stable 
+modes but we need to be aware of the fact 
+that the new system is not stable. 
+and, in fact, it would be nice if we 
+could check that either analytically or 
+at least in simulation because the hybrid 
+world is a little bit scarier than the 
+nonhybrid world. 

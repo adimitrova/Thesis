@@ -1,0 +1,143 @@
+music 
+primary goal preservation is 
+to safeguard authenticity 
+integrity digital content 
+we want to sure that data 
+we expect to 
+defined society 
+american archivists, authenticity is 
+quality genuine, 
+a counterfeit, free tampering, 
+is typically inferred 
+internal external evidence 
+including physical characteristics, 
+structure, content, 
+context, digital data so 
+vulnerable to change, 
+whether inadvertent not, ensuring 
+authenticity particular 
+data set is especially important 
+this is much related to 
+issue trust, particularly 
+data that will shared purposes 
+replication secondary analysis 
+users data must guarantees 
+that data 
+tampered represent actual 
+data generated data producer 
+if data altered in way 
+documentation detailing alteration 
+maintained 
+made available alongside data 
+establishing authenticity 
+digital data involves processes 
+undertaken researcher 
+data repository 
+uk data archives website provides 
+a useful list best practices to 
+assist researchers in maintaining 
+authenticity data files 
+best practices include maintaining 
+a single master file data 
+assigning responsibility master 
+files to a single project team member 
+regulating write access to master 
+versions data files 
+recording changes to master files 
+maintaining master files in case 
+subsequent versions contain errors 
+archiving copies master 
+files regular intervals 
+developing a formal procedure 
+destruction master files 
+you see, this list focuses 
+lessening potential unwanted 
+unintended changes to a file 
+writeaccess controls 
+this list also points to 
+importance keeping careful 
+documentation in relation to 
+changes made to master data file 
+formal procedures 
+clear roles responsibilities in place 
+will help researchers maintain 
+an authentic final copy data, 
+free unintentional 
+unwanted changes 
+likewise, repositories procedures 
+processes in place to 
+maintain authenticity 
+data house safekeeping 
+establishing authenticity data 
+submissions requires repository 
+to collect preserve descriptive 
+contextual metadata to allow 
+appropriate identification 
+interpretation data 
+repository must also document 
+operations performed data, 
+including automatic 
+manual manipulation data files 
+content 
+validation mechanisms 
+in place to ensure transformed 
+modified data file versions 
+representative original 
+actions necessary 
+to provide users a degree 
+trust in authenticity data 
+data that properly preserved 
+quality authentic, 
+also integrity 
+integrity means that a digital 
+object corrupted time 
+in transit between storage locations 
+systems 
+clifford lynch, director 
+coalition networked information puts 
+it, integrity is knowing certainty 
+that we in hand 
+set sequences bits that came 
+existence object created 
+like authenticity, 
+there best practices 
+that researchers 
+information professionals perform to 
+attend to integrity digital data 
+include backing critical 
+frequently used files using 
+an automated backup process 
+storing master files in 
+open source formats 
+longterm software readability 
+verifying backup copies 
+files original files 
+comparing checksum values, 
+file size, date 
+storing copies files two 
+different types storage media 
+copying migrating files to 
+new storage media every two to five 
+years to avoid effects physical 
+degradation storage media 
+simple tasks assist 
+in avoiding corruption 
+digital files time 
+redundancy migration 
+in addition, verification 
+files checksums is 
+an important mechanism 
+data repositories to use to ensure 
+data files modified 
+in transit to repository 
+we will discuss tasks in 
+detail,while technology 
+increased ability to invent 
+new ways collecting 
+analyzing data, 
+also inherent vulnerabilities 
+authenticity integrity 
+data achieved 
+an active preservation strategy based 
+standards best practices 
+sound 

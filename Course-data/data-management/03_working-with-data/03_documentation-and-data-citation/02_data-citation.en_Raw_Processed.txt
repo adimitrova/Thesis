@@ -1,0 +1,91 @@
+in , 
+a group called force issued joint 
+declaration data citation principles 
+this endorsed 
+a number scientific bodies 
+publishers, well individuals 
+so cite data 
+providing a citation data, 
+you make easier users 
+to identify acknowledge 
+data citation helps promote 
+reproduceability research results, 
+allows us to track usage 
+impact data 
+provides a structure we 
+recognize reward data creators 
+so whats best practice 
+in citing a data set 
+a general rule thumb you want to 
+make sure you include enough information 
+another use to able 
+to locate data set 
+part database 
+that youre referring to 
+datacite, an international 
+standards body founded in , 
+recommends following five 
+minimum citation elements 
+a creator, a year publication, 
+a title, publisher, identifier 
+here, identifier refers to persistent 
+id uniquely identifies object, 
+including a doi even a url, 
+though this may less persistent 
+two additional properties may 
+added version resourcetype 
+resourcetype refers to class 
+object that is citied, 
+a dataset, database, 
+map, sound file website 
+uk data service recommends using 
+a title that indicates subject matter, 
+geography 
+time period that data covers 
+lets take a look an example 
+citing data makes sense to try 
+adopt style 
+order references works 
+bibliographic style guides 
+reference management software may help 
+inevitably, 
+judgment may called 
+if so, err side caution, 
+always provide information 
+less to help users find data 
+in case a dynamic database, 
+that is continually updated, 
+may near impossible to refer back 
+to exact version that you used 
+in circumstances always 
+include a date download 
+in life sciences common 
+to include an accession number 
+database name 
+youre referencing sequence data 
+you see this in 
+examples screen 
+so if youre using 
+an unpublished data source 
+informal data sharing 
+is relatively common 
+even if data unpublished, 
+citation principles still applies 
+if somebody shared data you, 
+example, 
+via an email attachment, you reference 
+this a private communication 
+lets take a look an example 
+last least, good practice in 
+data documentation citation 
+contribute to reaching a better standard 
+reproducibility research 
+reproducibility is a fundamental 
+principle scientific method 
+so youve completed this module 
+if you take a look in reading 
+section youll find additional references 
+to get information 
+documentation citation 
+you also move onto next module, 
+is storage security 

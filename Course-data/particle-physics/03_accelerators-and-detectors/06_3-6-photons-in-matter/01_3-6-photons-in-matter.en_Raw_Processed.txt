@@ -1,0 +1,203 @@
+music 
+in this module we in process discussing 
+basics particle acceleration 
+particle detection 
+in this video, we will demonstrate 
+photons interact matter 
+end this video, you will know 
+mechanisms detected, 
+namely, photoelectric effect, 
+compton scattering pair production 
+in processes, photon is either 
+absorbed scattered a wide angle 
+photons in a beam 
+keep original energy, 
+flux is diminished 
+a photon beam will thus 
+attenuated rather lose energy 
+probability an interaction in 
+a given target thickness is a constant, 
+proportional to cross 
+section process 
+this leads to an exponential decrease 
+intensity a photon beam 
+a function absorber thickness 
+weve already calculated an example 
+this in optional video a 
+photons detected interactions 
+produce charged particles 
+photoelectric effect is absorption 
+a photon an atomic electron, dominant 
+between ionization energy an atom 
+kv photon energy 
+compton scattering is elastic 
+scattering a photon a quasifree 
+atomic electron, dominant around photon 
+energies roughly mev 
+pair production is conversion 
+a photon an electronpositron pair 
+in electromagnetic field 
+typically a nucleus, dominant 
+photon energies much larger 
+mev 
+we will discuss processes 
+one one in follows 
+in photoelectric process, 
+atomic electron is released 
+atom absorbs photon 
+kinetic energy is difference 
+between photon energy 
+ionization energy 
+this latter one depends shell 
+electron 
+is typically between 
+electron volts 
+photoelectric process is 
+feasible a free electron 
+would violate conservation momentum 
+if photon energy 
+is larger k shell energy, 
+cross section is dominated 
+level roughly 
+absorption k shell electrons, 
+since proximity nucleus 
+eases absorption recoil energy 
+sigmath, in this formula, is standard 
+crosssection thompson scattering, 
+sets scale this cross section 
+dependence atomic 
+charge to fifth power 
+photon energy to 
+power 
+favors photoelectric process 
+low energy photons in heavy materials 
+high energies in 
+relativistic limit, 
+energy dependence 
+becomes simply egamma 
+vacancy opened 
+photoelectric effect filled 
+another electron an upper shell, 
+say l shell example 
+this will result in either emission 
+an xray energy el ek 
+emission an auger electron, 
+if available energy is greater 
+ionization energy higher shells 
+in compton scattering, dominant 
+intermediate energies around mev, 
+a photon is scattered a quasifree electron 
+cross section is given 
+kleinnishima formula is obtained 
+quantum electrodynamics that 
+well discuss in module 
+energy scattered electron is 
+maximum scattering angle is 
+degrees a maximum electron 
+energy that is given formula 
+bottom this page 
+compton scattering cross section 
+is typically barn 
+in forward direction 
+backward scattering, 
+varies between barn 
+low energies barn kev 
+high energy, process is thus dominated 
+scattering in forward direction 
+in electromagnetic field a nucleus, 
+photon convert 
+an electronpositron pair 
+energy threshold is essentially 
+twice mass electron 
+a small correction 
+recoil fo nucleus 
+this process cannot take place in vacuum 
+energymomentum conservation, 
+little energy is transmitted to 
+nucleus, mev heavy nuclei 
+low 
+modest energies crosssection per atom 
+is given in terms radiation length 
+this is length one 
+we defined in video , ie, 
+length an electron loses 
+e energy bremsstrahlung 
+in this image, taken a historical 
+bubble chamber, we see tracks 
+left charged particles small 
+bubbles formed in an overheated liquid 
+chamber is immersed in a magnetic 
+field octagonal to projection plane, 
+deflects trajectories 
+this is an atypical process in that 
+a photon enters left 
+converts an electron positron pair 
+in field an atomic electron 
+in field a nucleus 
+this produces is called a trident 
+three 
+charged particle tracks you see 
+attached to left vertex 
+pair particles lose 
+energy in liquid, 
+trajectories spirals 
+that you see left 
+atomic electron takes an appreciable 
+recoil energy 
+small mass 
+stiff track goes to right 
+little curvature 
+halfway, 
+electron emits a bremsstrahlung photon, 
+in turn converts 
+an electronpositron pair 
+you see this pair vshaped 
+tracks right 
+crosssection pair production 
+becomes almost independent 
+photo energy 
+an energy gev 
+depends material, 
+that is to say x 
+conversion probability per unit 
+distance is inversely proportional to 
+radiation length 
+mean free path 
+a photon converts 
+is inverse this probability 
+thus a radiation length 
+busy plot right shows 
+summary contributions 
+processes to photon 
+total cross section in metal 
+among this important ones 
+photoelectric effect low energies 
+pair production high energies 
+in between around mev, 
+minimum cross section, 
+compton scattering dominates 
+processes 
+high energy, we seen 
+energies gev, electrons 
+positrons lose energy almost 
+exclusively bremsstrahlung 
+photons convert to electrons 
+positrons pair production 
+two phenomena 
+characteristic length, 
+radiation length 
+successive combination 
+two effects 
+results in formation is 
+called an electromagnetic shower 
+whenever an electron, 
+positron photon high 
+energy enters a medium, 
+will cause a shower 
+a simulation is shown right 
+again, black dot corresponds 
+to a unit energy loss 
+in next video, 
+we will see ionization detectors 
+measure passage charged particles 
+music 

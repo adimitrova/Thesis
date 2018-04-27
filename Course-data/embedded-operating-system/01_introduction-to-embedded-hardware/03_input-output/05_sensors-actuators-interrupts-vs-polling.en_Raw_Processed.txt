@@ -1,0 +1,213 @@
+music 
+hello welcome back to course 
+in this video we will elaborate 
+sensors actuators 
+you will get an insight 
+used 
+we also will discuss obstacles 
+you might encounter way 
+while working 
+in end, i will talk 
+two ways to read input data, 
+namely polling interrupts 
+embedded systems deal 
+real physical world 
+physical quantities real world 
+either used input 
+embedded system 
+altered systems 
+sensors meant 
+measuring physical quantities 
+in a sense, sensors help to convert 
+a physical quantity, as, example, 
+temperature, pressure, 
+acceleration a number 
+so sensors map a physical 
+value to a number 
+there examples sensors 
+a temperature sensor converts 
+temperature to voltage 
+an accelermator converts acceleration 
+to voltage many others 
+sensors a processing 
+element board 
+so a digital output 
+actuators used to alter 
+physical quantity 
+in contrast to sensors, 
+driven physical quantity, 
+actuators driven a processing 
+element in words, a number 
+electric motors a good 
+example actuators 
+a sensors work range is limited 
+example, a temperature sensor 
+operate in range degrees 
+celsius to degrees celsius 
+obviously, this taken 
+consideration, using sensors 
+if sensor is used range, 
+saturation might occur 
+means that mentioned temperature 
+sensor will show temperature 
+degrees, real temperature is, 
+lets say degrees 
+to used processing elements, 
+measure quantity quantized 
+this mean 
+process quantization, 
+quantity is mapped to a number 
+happens error 
+number values is limited 
+example, there 
+bits to used quantization 
+so in total we numbers 
+this means that initial quantity will 
+mapped to one numbers 
+quantity will mapped 
+to closest number 
+thus quantization is done error, 
+is difference between real 
+value quantized representation 
+applications, may 
+enough to values 
+to represent whole range 
+changes quantity 
+in this case, number bits 
+in words resolution 
+increased to , bits 
+sometimes way to increase 
+resolution is to change hardware 
+this pont, 
+you think cases 
+quantization error will largest 
+another issue that needs to considered 
+dealing sensors is noise 
+measurements always 
+a noise component 
+we say that a measurement is sum 
+real value noise 
+if you think an accelerometer, 
+noise caused 
+random vibration 
+influence noise 
+reduced processing results 
+filtering is one examples 
+noise reduced 
+we talked quantization, 
+however quantization process 
+is done moments time 
+quantization in time 
+is called sampling 
+sampling is done period 
+may obvious that smaller t, 
+higher sampling frequency 
+therefore data 
+we will per second 
+however, is always necessary 
+to increase sampling frequency 
+we will go deep details, 
+although i would like to mention that 
+proven nyquist that sampling 
+frequency least twice 
+highest frequency contained in signal 
+if signal is sampled 
+a lower frequency, 
+we may get wrong information 
+signal 
+however this is relevant if 
+shape signal matters to us 
+in many cases, especially 
+signal changes slowly, 
+example temperature normal 
+conditions change fast 
+might necessary to 
+use a high sampling frequency 
+a processing element read data 
+a sensor in a while 
+lets say we use a timer 
+micro controller 
+marks millisecond intervals 
+thus we obtain data 
+every milliseconds 
+this approach is good enough 
+a slow processes, however there is 
+need to catch a fast event 
+we dont know exactly will occur 
+this method is a good choice 
+we adjust interval 
+between two successive reads, 
+example, we make smaller 
+in this case, probability 
+missing event decreases 
+this approach is called polling 
+so polling, 
+processing element checks if event 
+occurred within time interval 
+interval adjusted 
+so downsides 
+this approach 
+main drawback is that approach 
+doesnt allow to catch fast random events 
+another disadvantage is that a processing 
+element spends time polling 
+smaller interval, 
+time is spent 
+here, this means that 
+computation power is wasted 
+so is there a way to 
+catch fast random events 
+lets consider that we 
+a microcontroller a tool that 
+power interrupts, 
+is possible to catch fast events, 
+is more, to estimate 
+time event occurred 
+an interrupt is a hardware based way 
+to break main flow program, 
+means this method is fast 
+in sense that hardware 
+reacts quickly to event 
+furthermore, gives control to 
+software to process event 
+so sites interrupts 
+first, we use interrupts, 
+processing element 
+spend computation power to actually 
+check if event occurred 
+an interrupt happens almost 
+time physical event occurs 
+microcontrollers one 
+several external interrupt pins, 
+gives a developer possibility 
+to process incoming event 
+a raise fall voltage 
+corresponding pin an event 
+an interrupt might also happen 
+example, adc conversion finished, 
+data come to 
+receive buffer uart register, 
+is convenient 
+is left developer is to 
+take result adc conversion, 
+received uart data, use 
+an interrupt service routine 
+used to process an interrupt 
+written a developer 
+is good practice to make 
+interrupt service routines fast 
+break tha main program flow, 
+might block interrupts, 
+execution tasks 
+in video we talk sensors 
+actuators 
+ways processing element 
+communicate physical world 
+we also discussed ways 
+input data obtained 
+so thanks watching 
+i hope this module 
+interesting you 
+i look forward seeing 
+you in next module 
+music 

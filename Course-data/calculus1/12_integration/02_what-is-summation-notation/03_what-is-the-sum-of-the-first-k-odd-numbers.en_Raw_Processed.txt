@@ -1,0 +1,96 @@
+music since i know triangular 
+numbers i know to sum constants, i 
+combine two facts to 
+complicated expressions 
+example, lets sum n goes 
+to k n minus 
+right 
+this notation mean is that i plug 
+in numbers to k this 
+expression add 
+so, i plug in n equals , i get 
+i plug in n equals , i get 
+i plug in n equals , i get 
+i plug in n equals , i get 
+right 
+im going to keep going until i end 
+k minus 
+in words, right, is this asking to 
+
+well, , , , this is adding odd 
+numbers, right 
+so, i could say in words that this is 
+sum first k odd numbers 
+right 
+im going to add first k odd 
+numbers, plus plus , until i get to 
+k number, is k minus 
+lets first work this algebraically 
+so, algebraically, ive got sum n 
+minus n goes to k 
+this is summing this difference, so i 
+could write this difference two 
+sums 
+so, sums n goes 
+to k, im adding n, im 
+adding 
+now, i pull this factor 
+distributivity 
+so, this is times sum n n goes 
+to k, minus sum 
+n goes to k 
+i a bit a formula sum 
+first k whole numbers, right 
+if you remember back to that formula 
+thats k plus times k 
+whats sum n goes 
+to k 
+well, this is plus plus plus k 
+times 
+thats minus k 
+now, this is times something divided 
+, so this is k plus times k then, 
+minus k 
+well, if i expand this out, ive got k 
+plus times k minus times k 
+this is k squared 
+so, sum first k odd numbers is 
+k squared 
+i also see this fact that sum 
+odd numbers gives perfect squares 
+i see this fact geometrically 
+so, ill draw, say one dot, ill 
+draw three dots 
+right 
+this is plus , squared 
+then, ill draw five dots 
+plus plus , thats squared 
+then, ill draw seven dots 
+right, thats plus plus plus 
+, thats squared 
+then, ill draw nine dots, one, two, 
+three, four, five, six, seven, eight, 
+nine 
+thats five squared 
+plus plus plus plus is 
+squared, 
+ill add dots, one, two, three, 
+four, five, six, seven, eight, nine, ten, 
+plus plus plus plus plus , 
+right 
+sum first , , , , , odd 
+numbers is , , , , , squared, 
+so, upshot here is that if you sum odd 
+numbers, you end getting perfect 
+squares 
+and, thats cool independent 
+everything else right, you see that 
+fact geometrically 
+real take away here is to remember 
+you actually summation problems, 
+right 
+if somebody gives you a complicated sum, 
+using facts like sum n, 
+sum constants, you combine 
+facts to evaluate complicated 
+summation problems 

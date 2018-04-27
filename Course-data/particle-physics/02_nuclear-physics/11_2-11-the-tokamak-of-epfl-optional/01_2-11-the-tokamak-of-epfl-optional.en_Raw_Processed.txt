@@ -1,0 +1,496 @@
+music in this second module 
+introductory course in particle physics, 
+we discussing physics atomic nucleus 
+in this eleventh video, 
+we fortunate to invited to visit 
+experimental tokamak federal 
+institute technology in lausanne, 
+precisely swiss plasma center 
+this is a research tool nuclear fusion, 
+is source, i remind you, 
+energy produced in sun, stars 
+if we ever manage to use fusion energy in 
+commercial power plants, 
+mankind will a virtually inexhaustible 
+source energy, 
+safe environmentally friendly 
+fusion power plants impact environment in fact little 
+produce greenhouse gases 
+one also exclude serious accident 
+large release radioactivity 
+fusion process 
+produce radioactive waste fuel 
+structural components inside 
+reactor become somewhat radioactive 
+nuclear fusion also major advantage using 
+fuels that available earth, 
+in virtually inexhaustible quantities 
+could thus become one pillar 
+energy supply 
+that will provide necessary conditions 
+sustainable development 
+i remind you that fusion reaction 
+between deuterium tritium 
+already introduced in video 
+produces a strongly bound helium nucleus 
+a neutron, releasing a large amount energy, 
+approximately mev per reaction 
+so today we will visit a medium sized reactor, 
+is behind me, called tcv, 
+tokamak variable configuration, 
+swiss plasma center 
+in an instrument issues 
+containment stability 
+plasma studied, 
+necessary realisation a fusion reactor 
+to realise an efficient fusion reaction, to study 
+burning plasma produces energy, 
+will require larger machines 
+like iter, we will discuss 
+end this video 
+noise so we in lobby 
+swiss plasma center, 
+i present to you two 
+colleagues epfl, 
+will guides visit 
+here left is dr yves martin, 
+is administrative director, 
+also person responsible 
+communication swiss plasma center 
+right is dr antoine pochelon, 
+is senior lecturer, 
+admittedly in retirement, lost none 
+enthusiasm plasma physics nuclear fusion 
+subject today is nuclear fusion, 
+to put to use 
+in transformation nuclear 
+energy usable energy 
+so this to plasmas, yves 
+in fact, fusion reaction we seek to produce 
+in a tokamak obtained high 
+temperatures, one must overcome 
+coulomb repulsion 
+to overcome this coulomb repulsion, 
+is necessary to heat 
+to temperatures matter takes 
+form a plasma 
+a plasma is a gas in atoms ionised, 
+in electrons dissociated 
+nucleus atom 
+that point onwards, 
+we a mixture charged particles, 
+globally neutral 
+okay 
+benefit this state 
+matter is that we guide 
+particles using a magnetic field 
+ok 
+so therefore there several steps 
+first one must create a plasma, 
+confine it, magnetically i imagine, 
+heat to relatively high temperatures, 
+indeed, incredible temperatures 
+so you describe a bit steps 
+beginning plasma formation 
+yes 
+well, 
+actually begins a gas 
+in an electric field is applied 
+this electrical field shortcircuits plasma 
+causes in fact a discharge in a rarefied gas 
+then, electric field draws a 
+current, this current heats plasma, 
+heats gas is becoming a plasma 
+reaches a temperature, 
+typically degrees kelvin, 
+corresponding to a kinetic energy 
+typically one ev 
+that is to say, to binding energy 
+between a typical electron a typical nucleus 
+order magnitude, effectively 
+to separate electron 
+nucleus 
+we producing this discharge 
+in a magnetic field, guides 
+particles, forms a magnetic bottle 
+we behind us an example 
+a bottle, called a tokamak 
+yes, is a model onetoone scale 
+a model machine 
+that youll see in a moment, 
+different colours allow us to see 
+many different elements 
+first one starts, inside, 
+vacuum chamber, 
+wherein plasma will installed 
+main magnetic field magnetic 
+bottle is generated blue coils, 
+toroidal coils, create a field 
+around center in a toroidal sense 
+a field that revolves around machines center 
+thats right, here we a 
+transverse section machine 
+then, to generate electric field, 
+we spoke about, 
+we coils, form 
+primary circuit a power transformer, 
+induces an electric field, 
+thus plasma current 
+in addition, is a special feature 
+this machine, 
+that we many additional 
+coils, in yellow here 
+yellow ones, yes 
+powered independent generators 
+powered independent generators 
+this allows controlling 
+plasma shape position 
+also helps to extend plasma, 
+since ultimately 
+currents sign repel other, 
+opposite currents attract 
+to simplify somewhat, blue coils 
+create a field that is confining, 
+yellow coils used to 
+manipulate shape containment 
+so, yves, explain how, then, 
+plasma is heated beyond initial temperature 
+so first all, in tokamak, 
+ohmic heating is used simply, 
+antoine said, there is current flowing in plasma 
+okay 
+so is plasma resistance that will heat plasma 
+absolutely 
+temperature, 
+achieved this heating, is 
+sufficient yet 
+so we must add heating systems, 
+we normally use, 
+notably here in tokamak, 
+is heating microwaves radiofrequency heating 
+will act resonances to found in plasma 
+but, 
+this will heat electrons, right 
+nuclei, 
+primarily 
+indeed, heating system we here 
+primarily heats electrons 
+afterwards, collision ions, 
+electron energy is also transferred to 
+ions, therefore, temperature 
+ions also increases 
+so, to learn one generates radiofrequencies, 
+heat plasma, we will go up, 
+to see gyrotrons 
+producing this radiofrequency 
+noise 
+ill go a gyrotron is 
+you one installed there, 
+well get back to that in a moment 
+gyrotron is essentially a vacuum tube 
+that generates to megawatt 
+power 
+bottom image, you 
+find electron gun 
+producing an electron beam, 
+passes tube 
+electrons arrive in collector, 
+here, bottom right 
+then, electron beam passes 
+a cavity within magnetic 
+field generated a superconductor 
+using a wave converter, 
+microwave power is directed onto a 
+mirror laterally removed tube 
+here we see a gyrotron 
+invisible below, electron gun, 
+in middle cylinder 
+housing superconducting magnet 
+cavity 
+top, yellow lead cover, 
+you electron collector 
+in front, microwave enters optical adapter box 
+various mirrors that elliptically 
+polarise wave, in right way 
+to heat plasma locally in tokamak 
+we use, you see here, a whole battery gyrotrons 
+we six a frequency ghz, 
+a total power mw 
+back here we 
+gyrotrons ghz, 
+long pulse gyrotrons 
+we manufactured in collaboration 
+french colleagues 
+music 
+so here is tcv tokamak 
+first magnetic coils 
+that will create main field, 
+toroidal field, a little bit back 
+coils that will help shape plasma, eight coils 
+so we see outer coils, 
+others hidden inside machine 
+right there behind, 
+one sees vacuum chamber 
+we will inject plasma 
+to heat plasma, we use microwaves to take 
+plasma to very, high temperatures 
+temperatures required fusion 
+order 
+to million degrees, in this tokamak, 
+we obtained temperatures 
+note that in sun, temperatures much lower, 
+around kev, this temperature, in fact, 
+particles found in tail 
+maxwell distribution will merge 
+inside tcv vacuum chamber is 
+covered carbon tiles, in fact, 
+like a space shuttle 
+tile surface is covered boron carbide 
+plasma deposition, almost hard 
+a diamond layer, reduces 
+one hand, plasma abrasion 
+carbon tiles 
+moreover, bc is formed elements 
+low charge z, 
+makes that plasma sees low z 
+this is important a source 
+plasma energy loss is radiation 
+this radiation increases 
+sharply electric charge, 
+typically z to th power 
+music role tcv 
+we behind us is to study 
+properties plasma 
+that is to say example density, 
+temperature, even rotation plasma, 
+plasma rotates in vacuum chamber 
+that, we will able to study confinement, 
+transport heat stability 
+this, we will study a function different characteristics, 
+density, temperature rotation 
+one thing we will particularly examine 
+tcv, this machine 
+you vary shape plasma, 
+is dependence form 
+one also create a divertor 
+a divertor is basically a magnetic 
+structure outside plasma 
+that removes impurities, are, 
+in case fusion, helium, 
+is product reaction 
+so we will eliminate it, also remove 
+impurities high z, 
+we seen, make plasma radiate 
+therefore, around machine, we an amount 
+diagnostics, measurements this neutral injector 
+measuring ion temperature plasma rotation 
+we also tools, 
+ie actuators to vary plasma parameters 
+we already spoken 
+microwave heating 
+primarily heats electrons 
+we also installing 
+megawatt heating 
+neutral injection to heat directly ions 
+so this makes a total megawatts 
+gyrotrons frequencies between 
+ghz, to begin 
+megawatt neutral injection 
+music 
+so this means that tcv 
+is a research tool rather a 
+prototype reactor, right 
+i guess is part a 
+comprehensive program 
+that lead to a fusion reactor, 
+a true one, right 
+absolutely, tokamak here is an 
+experimental tokamak, 
+is used in a vast fusion research program 
+is clear that to meet many 
+challenges fusion, 
+ie to arrive a commercial fusion reactor, 
+is necessary to coordinate efforts 
+european level, 
+international level, 
+switzerland is part since , 
+a bilateral agreement between 
+switzerland euratom, in european programs 
+is role tcv in a program 
+antoine, specifics tcv that 
+contribute to this program 
+important specificity tcv 
+is that allows varying shape plasma 
+this is a program that we heavily exploiting 
+example, large tokamaks today a 
+dshaped plasma, that is to say plasma 
+belly looks towards outside 
+in tcv, one also make plasmas 
+in shape an inverted d, that is to 
+say belly looks inward 
+is, in fact, 
+machine in world to make this type plasmas 
+is point this form plasma 
+we lucky to a bonus 
+a rather surprising result, 
+expected first, 
+is to energy confinement 
+increased a factor two inverted d 
+this is first interesting in 
+then, you a doubled confinement, 
+you put half heat plasma, 
+so you pay less to heat plasma 
+to temperature 
+so thats a first advantage 
+second advantage is 
+that allows plasmas equivalent temperature, 
+completely different shapes 
+says different confinement, 
+also says different turbulence 
+so we compare complex codes, 
+simulate plasma turbulence 
+confinement, 
+we compare in this way experiment 
+numerical models this is really 
+experiment is good 
+so is turbulent plasma 
+instabilities that limit confinement, 
+confinement time in a tokamak 
+actually, plasma edge we observe instabilities 
+that strangely resemble solar 
+prominences, solar flares 
+we see in this video, comes 
+tokamak mast in england, 
+flashes light, resemble solar flares 
+we develop operational modes precisely to reduce 
+impact that solar flares 
+would tokamak material 
+music this tokamak shape control system, 
+electron heating system, 
+soon ion heating system, 
+well set diagnostic tools, 
+measuring devices, is an 
+exceedingly productive machine 
+we obtain large quantities absolutely 
+fantastic results, created 
+this machine that is absolutely 
+unique worldwide 
+moreover, fact that we part an academic environment 
+in context epfl, gives possibility to 
+educate a lot doctoral students 
+in plasmas physics tasks 
+music 
+so next step 
+towards commercial use fusion is called iter 
+a true reactor this time 
+yes, absolutely, is first reactor, 
+is likely first time that we will 
+produce much energy 
+machine requires to function 
+talk a factor ten 
+energy amplification 
+here is a model, 
+a much smaller scale model we saw 
+so scale here is , 
+you see a little man here behind 
+otherwise exactly 
+components that we in tokamak 
+so is an international program, i imagine, 
+is switzerland builds 
+absolutely 
+is a global collaboration japan, 
+south korea, china, 
+india, russia, united states 
+europe, including switzerland 
+so is role switzerland 
+in promoting this project 
+we contribute first scientific 
+aspects operation 
+is prepared this machine, 
+scientific program, 
+to know experiments we 
+will perform 
+we also preparing physical elements, 
+notably microwave mirror systems, allow 
+injecting microwave, 
+we experts here swiss plasma center, 
+knowledge we accumulated years 
+we also participate in magnetic measurements, also 
+in superconductor tests 
+superconductors to used 
+coils machine will 
+pass switzerland, 
+laboratory to tested 
+so, in contrast to tcv, 
+will normal magnets, 
+superconducting magnets that will serve here 
+absolutely 
+so, 
+to a large size increase, this 
+follows somewhat principles, 
+that tokamak, right 
+that there means to store a plasma 
+that undergo fusion 
+in magnetic confinement, 
+there essentially two major strategies 
+we talked tokamak, i will 
+quickly repeat a tokamak is 
+in a tokamak, confining field is made time 
+outside plasma toroidal coils, 
+within plasma, field created 
+current circulating in plasma 
+there is another way making magnetic bottles, 
+stellarator 
+in that concept, field, confines plasma, 
+is generated completely outside, 
+coils rather complex shapes 
+that is there so many 
+stellarators worldwide right now, 
+difficult to build 
+stellarator is promising also 
+there is disruption like in a tokamak, 
+that is to say brutal interruptions plasma current, 
+you get to high densities 
+is therefore extremely promising 
+plasma point view, 
+is difficult to build 
+there is a stellarator, 
+built in germany 
+yes, in greifswald shores 
+baltic sea, 
+stellarator wendelstein x built 
+in recent years and, right now, 
+currently testing shape magnetic field 
+produced complex coils outside machine 
+there you a elegant picture, 
+shows that 
+magnetic field, wanted 
+to achieve, is indeed realised 
+according to you, two strategic 
+directions will result in a reactor 
+that works produces energy soon 
+we explore tokamak, 
+is relatively simple to build, 
+stellarator, 
+is an alternative 
+in fact, fusion is a program 
+that spans many generations 
+long, a program that 
+includes fundamental research 
+also an extremely applied research 
+we must develop 
+materials necessary fusion, 
+we need large superconductors 
+high fields, we must, 
+to name one example, 
+regenerate tritium lithium irradiation 
+thus, a vast program 
+thank you much, yves antoine, 
+this visit this fascinating journey 
+world fusion 
+plasma physics 
+i draw attention to a mooc offered epfl 
+in parallel to this course, 
+entitled plasma physics applications, 
+you will find information web site shown here 
+music 

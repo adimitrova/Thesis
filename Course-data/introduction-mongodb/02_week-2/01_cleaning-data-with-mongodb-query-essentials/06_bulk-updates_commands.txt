@@ -1,1 +1,0 @@
-mongoimport --drop --type csv --headerline --db mflix --collection movies --host "<CLUSTER>/<SEED_LIST>" --authenticationDatabase admin --ssl --username analytics --password analytics-password --file movies_initial.csv

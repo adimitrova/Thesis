@@ -1,0 +1,235 @@
+sound 
+hello 
+so you heard you use a 
+physics engine to control movement 
+collisions a variety objects 
+screen 
+going to is, is look 
+a real example we develop that 
+a game with, nice graphics 
+sound 
+im going to begin that inspection 
+figuring we connect sound 
+events to this collision events that 
+weve seen 
+lets look code the, the, 
+example here 
+blankaudio so modeling this a 
+little droid character that 
+bounced around screen, smashes 
+crates 
+so, we got sound an array crate uh, 
+inaudible crates, is an array 
+physics engine body objects 
+so represent crates that 
+move around screen 
+weve also got another entity is a 
+physics engine circle called droid 
+represents a little character thats 
+going to bounce around screen 
+finally, weve got walls 
+droid might bounce also 
+crates 
+so going to try is hook 
+audio engine so that every time a 
+collision happens, triggers an 
+appropriate sounds 
+first all, in here, you see we 
+create maxim usual 
+then, weve got two audio players, so 
+lets look variables 
+top there 
+so audio variables 
+we need 
+sound weve got maxim, weve got two 
+single audio players, we an 
+array audio players 
+i said earlier, we this array 
+crate body objects 
+so crates, im going to 
+an individual audio player, so that 
+will allow to simultaneously play 
+sounds creates 
+so you hear creates 
+hitting time 
+we need a single sound the, 
+droid, theres one 
+in screen, a sound 
+walls 
+okay 
+blankaudio here, we basically load, 
+load a file, i prepared earlier 
+then, another files 
+ive got droid sound a wall sound 
+droid sound is kind funny vocal 
+sound that i made the, wall sound 
+is a clanging metallic sound 
+youll hear shortly 
+i tell to loop 
+sound one shot sample, 
+inaudible, play way 
+stop when, when, 
+a collision happens 
+next, i create array crate sounds 
+so, theyre, theyre again, theyre 
+audio players, theyre stored 
+an array, so convenient to 
+work 
+we use method we load a 
+unknown file one 
+now, worth noting here that, that 
+actually going to store that copies 
+inaudible file data we need 
+to that, so that we playback 
+easily several time 
+so we load that file got 
+inaudible 
+we tell to mute either 
+next thing is we hook 
+collision function, marco mentioned 
+earlier, cool every time a 
+collision happens between two the, two 
+objects in physics world 
+so collision is called 
+tells us that two objects 
+collided tells us hard 
+hit if you like 
+so lets a look that 
+function here 
+so here 
+sound weve got the, inaudible 
+two bodies coming in, two 
+colliding bodies, weve got 
+strength that collision 
+weve got logic here, 
+basically decides whether there 
+a score 
+micks going to talk a little bit 
+that later 
+then, heres logic that decides 
+to play sounds 
+sound so, first all, first trick 
+is that we know that walls a 
+zero mass 
+walls set a zero mass 
+so in order inaudible to figure 
+whether one bodies thats hit 
+is a wall, we test two bodies 
+so we say bgetmass, that will tell us 
+mass 
+we test if equal to zero 
+so if b is equal to mass, that means 
+it, wall, walls 
+things zero mass 
+if b, we got this double bar 
+side here, means all, so if b 
+b zero mass, means least one 
+things thats collided is a 
+wall 
+that means going to trigger 
+wall sound 
+so you see we cue sound 
+rewind to beginning 
+then, we set speed sound 
+so actually going to make sound 
+dynamic assigning a speed based 
+hard that, that thing hit 
+wall 
+so if hits wall really hard, 
+will play sound faster 
+so will a high pitch sound 
+if hits slower its, its, a 
+low pitched sound, kind makes 
+sense it, this idea that 
+sound plays slowly a slower 
+collision 
+and, finally, we play 
+notice im scaling the, impulse 
+a range zero to one there 
+that, impulse comes in, 
+quite high value 
+so its, i, i, i a lot tests 
+come in range , 
+so im scaling that 
+so we, we, weve got this thing 
+youve got different types data 
+coming your, code you need 
+to know kind range that data is 
+in, you scale a 
+range thats appropriate parametizing 
+audio parametezing graphics 
+so lot tricks to make 
+things work properly is knowing 
+range numbers youre dealing so 
+accleratometer range 
+numbers generate 
+physics engine range 
+number that generate able 
+to correctly scale numbers to map to 
+things okay so next bit 
+logic 
+theres a quick test to see if either 
+things actual drawing object, so 
+if weve unknown droid that means 
+weve triggered droid sound 
+so we queue set speed 
+in way hit play 
+find that logic is 
+crate sounds need to played 
+okay 
+so, this loop here is four loop 
+weve seen a few times 
+loops array crates 
+tests the, bodies that 
+come in 
+so the, b b two bodies that 
+collided 
+we want to check if either is 
+one this, is one crates 
+if is, we cue up, trigger 
+
+ive done a bit fine tuning here 
+ive got , here instead , 
+i found that crates in this 
+game tended to collide slowly 
+things 
+so ive kind scaled the, the, 
+number there a bit to reflect that 
+so again, a bit tweaking 
+always super precise 
+playing around 
+tweaking so works you want 
+okay, so speed is set like that 
+so a slightly different way setting 
+speed 
+finally ill play it, okay, so 
+going to is run this 
+android device 
+and, youll able to see hear 
+thats building 
+so i lift so everybody takes 
+screen, this one works in 
+okay, so theres boyd 
+mick is going to talk to you 
+graphics to make really 
+good 
+moment, im just, worried 
+sound 
+so, if he, if hits walls, sound 
+inaudible thats crates colliding 
+so that metallic sound is, is, is the, 
+wall sound 
+tappy sound is crates 
+colliding 
+so you see if hits wall really 
+fast, if i fling wall, 
+sound 
+inaudible 
+sound 
+okay 
+one wall, to 
+demonstrate that 
+sound 
+sound 
+sounds pretty good 
+music 

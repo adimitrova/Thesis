@@ -1,0 +1,250 @@
+welcome to module course 
+control mobile robots 
+so, in last module weve learned 
+linear systems we saw 
+came end we even 
+managed to control a little bit 
+in fact we felt rather good 
+
+we could design a state feed back 
+controller a point mass that 
+stabilized it, time we 
+a little queasy uneasy 
+this whole thing we to x 
+meaning state to control 
+design in reality, we actually dont 
+x 
+we y, output 
+so this module is devoted to is 
+trying to first all, systematic in 
+we control design and, 
+secondly, we actually overcome 
+this seeming paradox needing x 
+y 
+so going to in first 
+lecture, is stabilize point mass 
+going to return to old friend, 
+in general, if i a linear 
+system, x dot is ax bu, y is cx 
+dilemma, ive already stated is that 
+we seem to need x stability 
+we really is y 
+so here is game play 
+going to ignore fact that we 
+dont y 
+instead going to design 
+controller if we state 
+somehow going to hope that 
+we figure state 
+measurements, meaning y, this is 
+game plan going to pursue 
+throughout this entire module 
+and, first step is, course to 
+design u if we x 
+so step one is to, control design 
+going to use a method called, 
+pole placement 
+and, pole placement is a rather powerful 
+idea 
+so if i point mass system again, 
+x dot is axbu, we old 
+friends a b matrices that weve 
+seen 
+well, state feedback means that, we 
+going to is going to pick u 
+is kx 
+k in this particular situation is a 
+matrix, so components 
+k k 
+are, gains 
+weve already seen in previous 
+module, that k is a gain that looks 
+precision 
+k is a gain that looks velocity 
+tweaking them, somehow, we get 
+system to be, behave well 
+cuz weve already seen that 
+so, one question we need to ask 
+first, is, course, is, we 
+actually pick control gains 
+meaning, k well 
+here is whole idea behind pole 
+placement 
+we plug in u is minus kx we get a 
+closed loop system 
+going to do, is 
+going to pick k that closed loop 
+system right eigenvalues 
+right meaning, we get to pick 
+risk is called pole placement, 
+that eigen values system 
+matrices sometimes referred to 
+poles going to is 
+going to make we want 
+to be, in particular we want to 
+negative real part that is 
+we need asymptotic stability 
+so we that we actually need 
+to figure we computer 
+eigenvalues so in general, if i a 
+matrix m, this doesnt to a 
+, this is general m, 
+every square matrix m a socalled 
+characteristic equation associated 
+
+given this chi m lambda, 
+kind a mouthful 
+determinant lambda times 
+identity matrix m 
+we set this determinant equal to 
+lambdas that solve this 
+eigenvalues, well, lets see this 
+means 
+if i a x system equal to m, 
+m, m m lambda i, meaning 
+lambda times identity minus m 
+well lambda times identity minus 
+m, well, if you plug this in, you get 
+following matrix 
+okay, now, lets take determinant 
+this matrix 
+so determinant, well, is this object 
+you get taking this element times this 
+element 
+you subtract away this element 
+times that element 
+this is you 
+matrices 
+in general become even 
+complicated 
+in this case, i get this times that 
+shows lambda m lambda 
+m 
+i get m, m m, 
+shows like this 
+so this is the, determinant this 
+m matrix okay 
+we need to set this determinant equal to 
+zero, so aa, carrying 
+multiplications we second order 
+equation that we to solve lambda 
+in order to able to find eigenvalues, 
+okay 
+lets try to that, we this 
+equationthe way we solve second order 
+equations, 
+is while there formulas this 
+is possible to 
+in this case turns that lambda is 
+this rather annoying looking expression 
+here, this is eigenvalue, 
+eigenvalue to this x matrix would 
+
+is annoying 
+i really dont want to this 
+so question is there an easier way 
+making eigenvalues we would 
+like to 
+turns that answer is, yes 
+there is something called fundamental 
+theorem algebra 
+this fancy looking, fancy sounding 
+theorem says that, if i a 
+polynomial, roots to that polynomial 
+determined coefficients, 
+means that you know i actually 
+dont to solve this equation 
+here i coefficients in front 
+lambda here i coefficients 
+that arent in front lamda, 
+coefficients alone enough to 
+implicitly completely determined 
+eigen values 
+so going to is 
+actually going to solve this 
+going to stop here say, 
+fine, lets start massaging 
+coefficients direct 
+so if we go back to point mass 
+i pick u kx 
+i get x dot is a bk x weve seen 
+this 
+this is closed loop dynamics 
+in particular if i plug in k is 
+i get a bk this two matrices 
+here 
+and, if i compute that, i get , , k, 
+k 
+i, encourage you to perform 
+this multiplication home, to make 
+sure that you trust that this is indeed 
+lets compute igon values 
+least coefficients in this thing 
+called characteristic equation 
+so, chi a minus bk lambda is 
+determinent this matrix 
+negative that matrix plus lambda times 
+identity 
+so, this is i here course is 
+lambda i a bk 
+and, if you compute this determinant, you 
+get, lambda lambda k k 
+thats so bad 
+neat thing here is that again, 
+we care coefficients 
+things that determine roots 
+without us actually to 
+complete roots 
+that help us well, 
+going to is going to 
+pick favorite eigenvalues in 
+whole world 
+going to pick eigenvalues that 
+we would like system to have, if 
+we somehow magically manage to make 
+closed loop system 
+eigenvalues, characteristic 
+equation would lamda minus lamda 
+characteristic equation 
+to to lamda a root 
+if i plug in lamda , i get here 
+similarly if i plug in lamda i get 
+here, lamda here 
+so i is a product lamda 
+minus desired favorite eigenvalues 
+in whole world 
+so lets that 
+so robot point mass, im 
+going to pick eigenvalues 
+i need, i know that need to 
+negative real part, well, is 
+particularly simple i get 
+this phi lambda is this desired 
+characteristic equation, actual 
+characteristic equation desired 
+one 
+lambda lambda or, if 
+i carry this multiplication, i get 
+lambda lambda 
+now, we need to is simply line 
+coefficients actual 
+coefficients that we 
+so if i that, i see, this is 
+characteristic equation 
+this is i would like to look 
+like 
+well, here coefficients in front 
+lambda 
+here coefficients that 
+hanging 
+we is simply line 
+so k to , k to 
+wahlah, ive actually designed k 
+matrix that i need 
+so i is i plug this in to 
+original system is x dot is ax bu 
+ive closed loop right u 
+kx i successfully 
+stabilized system, placing 
+eigenvalues exactly i would like 
+to 

@@ -1,0 +1,66 @@
+[music]
+the cern accelerator complex
+is a chain of machines,
+which accelerate particles
+to increasing energy.
+each machine increases the energy of
+a particle beam before injecting it into
+the next machine.
+most of the chain's accelerators are
+equipped with their own experimental hall
+in which the beams are used for
+fixed target experiments at lower energy.
+the source of protons is a simple
+bottle of gaseous hydrogen.
+an electric field ionizes
+the hydrogen atoms to obtain protons.
+the linac 2,
+the first link in the chain, accelerates
+the protons up to an energy of 50 mev.
+the beam is then injected into
+the ps injector synchrotron,
+which is called the ps booster.
+it accelerates protons up to 1.4 gev and
+accumulates them.
+they're then injected
+into the proton synchrotron,
+the ps, which carries
+the beam up to 25 gev.
+the protons are then sent to
+the super proton synchrotron,
+the sps where they are in
+turn accelerated to 450 gev energy.
+and finally, the protons
+are sent to the two beam tubes of
+the large hadron collider, the lhc.
+the beam travels clockwise
+in the first tube and
+counter clockwise in the second tube.
+it takes about 4 minutes 20 seconds to
+fill each of the two rings of the lhc
+and 20 minutes for the protons to reach
+their maximum energy of today 6.5 tev.
+under normal operating conditions,
+the beams circulate for
+several hours in the tubes of the lhc.
+they are focused by pairs
+of quadropoles towards
+the interaction point.
+the two beams collide
+inside four detectors.
+alice, atlas, cms and lhcb.
+at the collision point,
+the total energy in the center of
+mass is 13 tev today.
+but the lhc does not only accelerate
+protons, but also heavy ions.
+the lead ions of the lhc are extracted
+from a vaporized lead source and
+passed through a linac 3
+before being collected and
+accelerated into the ring
+of low energy ions.
+then their path is the same as that for
+protons. at the end of this path,
+the ions reach their maximum energy.
+[music]

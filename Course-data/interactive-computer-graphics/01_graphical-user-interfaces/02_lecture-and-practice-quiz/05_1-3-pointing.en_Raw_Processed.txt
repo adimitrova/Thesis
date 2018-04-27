@@ -1,0 +1,168 @@
+okay 
+so, next topic is pointing 
+so, we introduce here is called 
+ninja cursors 
+a problem we address here, is that 
+very, 
+difficult to point to a longdistance 
+object far away 
+so, today, screen resolution is gets 
+higher higher 
+screen gets bigger bigger 
+you even multiple monitors 
+so in, in a situation hard 
+to 
+get a point, a distant target 
+mouse you 
+to you know, move mouse many 
+times to get 
+target, so this is problem 
+going to address 
+we propose a message to address 
+this problem 
+let show you we 
+so, yeah, here we discuss pointing 
+mouse cursor 
+this tedious if some, 
+target is far away like this way 
+so you to clutch marks many times 
+blankaudio 
+so in unknown program, we propose to 
+use multiple cursors covering screen 
+so here, we so, four cursors 
+we, if we multiple cursors 
+screen, 
+you use a mouse cursor near 
+target object 
+so this save time pointing a 
+distance 
+target, thats technique we propose in 
+this paper 
+problem is that, ambiguity, so if 
+you 
+multiple cursors multiple objects 
+in screen 
+possible that, multiple pointers 
+point to different targets a time 
+so this is problematic 
+sound so to address this problem we 
+allow 
+one cursor to point object a 
+time 
+so a mouse cursor is in 
+object 
+another, cursor needs to wait 
+until cursor moves 
+target 
+so here, user moves mouse pointer 
+to right continuously 
+then, this one goes 
+and, this one goes in 
+next one becomes in waiting state 
+so you see pointing 
+inaudible pointers in a queue 
+tries to, trying to point to 
+object 
+so, yeah let describe 
+so basic idea ninja cursors is to 
+cover 
+screen multiple syncronizedly 
+moving cursors, like this way 
+user use nearest cursor 
+to target object 
+this one effectively reduce 
+distance target 
+so reduces average distance 
+nearest cursor 
+comes d 
+to d divided square n 
+so n means number cursors 
+this one, this help you to point a 
+distant, distant target 
+way, this is a little bit 
+background knowledge pointing 
+so pointing is a popular topic in hca 
+field 
+pointing performer this models 
+this 
+kind equation, called fitts 
+law 
+so suppose you mouse cursor here, 
+you try to point a target 
+distance d, suppose that 
+target size is w 
+then, here we consider one 
+dimensional motion 
+in this situation target acquisition, 
+pointing time is model like this 
+time equals a plus b log b inside 
+log is plus d divided w 
+so means, if distance is longer, 
+longer, 
+time gets longer longer 
+logarithmic function 
+however, we, width is, is, get 
+bigger time will reduced 
+so thats equation 
+ninja cursors, technique 
+effectively reduces this d 
+blankaudio 
+we already discussed in 
+video there is a ambiguity problem 
+if multiple cursors point to multiple 
+objects a time, this a problem 
+so to address this problem we allow 
+one cursor point to a target 
+others blocked in waiting 
+queue 
+so here green cursor points to this object 
+this 
+red one in waiting queue, 
+user continuously 
+moves a mouse cursor to down, 
+green one 
+goes out, red one goes 
+object 
+we provide a visual feedback 
+normal cursor, pointing cursor blocked 
+cursor 
+also, we also provide visual feedback 
+waiting 
+time 
+so, yeah, thats heres 
+summary 
+so we discussed problem pointing a 
+distant target a large high 
+resolution displays 
+solution is to show multiple 
+cursors use nearest one 
+we also describe to address 
+ambiguity problems 
+so original paper published ninja 
+cursors, using 
+multiple cursors to assist target 
+acquisition large screens 
+pointing is a very, popular topic 
+in field 
+in many publications 
+here is a couple interesting recent 
+papers 
+one is bubbled cursors 
+this mean, this bubble cursor 
+technique changes 
+mouse size, depending target 
+density 
+so if target is dense, mouse 
+cursor gets smaller 
+target is vast, mouse cursor 
+gets larger 
+so a interesting technique 
+another is called drag pop, pop 
+drag pick 
+so you see here, you start to locate 
+an object, related 
+icons jumps to near cursor position to 
+help you point 
+to help you drag drop efficiently 
+so thats 
+thank you 

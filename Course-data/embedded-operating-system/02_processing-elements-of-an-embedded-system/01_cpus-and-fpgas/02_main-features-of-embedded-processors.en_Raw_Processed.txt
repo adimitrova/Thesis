@@ -1,0 +1,239 @@
+sound hello, 
+good to see you back 
+let make a small recap 
+previous lecture 
+in previous lecture, 
+we went technical, 
+gave a general definition a processor, 
+an fpga 
+we also made a comparison between 
+two types processing elements 
+i hope you remember main difference 
+between them, is sequential nature 
+a processor, 
+versus parallel nature an fpga 
+i hope you basic intuition 
+a processor fpgas 
+in this lecture, details 
+an embedded processor will given 
+we will also discuss main 
+features an embedded processor 
+first all, a processor is an electronic 
+device that executes instructions 
+processor 
+understand anything 
+numbers, work 
+manipulate numbers 
+so instructions an exception 
+numbers 
+however, unfortunately, humans 
+fast numbers processors 
+so instructions described words 
+to make comprehensible people 
+instructions stored in memory 
+fetched memory, 
+one one, to executed 
+obviously, there is a wide range 
+different applications that 
+run a processor 
+is clear that one type processor 
+cannot deal this range 
+applications in an equally efficient way 
+so makes sense to several 
+types embedded processors, 
+dedicated to certain 
+types applications 
+to make an example, lets think 
+signal processing techniques, 
+used image processing 
+signal processing different, basic 
+linear algebra routines in core 
+dsp processors designed 
+specifically signal processing, 
+dedicated units that deal 
+routines efficiently 
+course we will mostly talk 
+microcontrollers, mc use 
+here i want to mention that 
+microcontrollers meant 
+general purpose applications, 
+resource constrained devices, 
+meant 
+computationally intensive tasks 
+there also gpus thousands 
+cores within, meant 
+extremely computationally demanding 
+tasks like graphics rendering 
+course is sometimes challenging 
+to choose in a specific type 
+embedded processor 
+therefore, we several 
+metrics to make choice 
+them, performance, 
+energy consumption, versatility, cost 
+said a bit earlier, 
+is possible to cover types 
+embedded processors in this course 
+however, we going to 
+elaborate microcontrollers 
+i going to shortly explain 
+main characteristics a microcontroller 
+a microcontroller in 
+architecture a cpu, 
+is in charge fetching, 
+decoding, executing instructions 
+arithmetic logic unit is unit 
+that actually performs computations 
+data is loaded cpus 
+registers data memory 
+using special instructions 
+in way, result 
+computations stored in memory 
+program is stored in a program 
+memory a sequence instructions 
+in order to keep track 
+execution is in this sequence, 
+there is a program counter 
+there is also ram memory 
+available in microcontrollers 
+kinds nonvolatile memory, 
+eeprom 
+microcontrollers include different kinds 
+peripherals communication 
+units, timers, adcs, dacs, etcetera 
+if we think instructions 
+execution, question that arises is, 
+is time to actually 
+execute an instruction 
+answer is that 
+execution is clocked, so 
+happens according to a clock frequency 
+instruction takes one 
+several clock cycles to complete 
+this, 
+you conclude that execution 
+time depends clock frequency 
+clock frequency 
+microcontrollers derive 
+several megahertz to several 
+hundreds megahertz 
+theres a special dedicated unit called 
+clock control unit that 
+responsible managing clocking 
+example, this unit scale 
+an input reference frequency 
+multiply to obtain 
+a higher club frequency 
+a microcontroller may several 
+sources clock frequency 
+one is an internal rc oscillator 
+however, stability this kind 
+oscillators is low, thats 
+external clock sources an external 
+quartz resonator, might used 
+is important to introduce 
+notion an interrupt, 
+since is a powerful tool 
+to handle realtime events 
+an interrupt is 
+a hardwaregenerated signal 
+indeed, interrupts meant to break 
+execution flow a program 
+external event happens 
+example, assume we 
+communication unit, 
+we want to check if there is 
+new data in receive buffer 
+one way to would 
+to write a piece code 
+that checks input 
+buffer in a while 
+however, this approach 
+allow to know precisely 
+time data arrive 
+so there is an alternative 
+way to manage this task 
+we adjust microcontroller in 
+a way so execution main 
+program is interrupted precisely 
+data comes buffer 
+moreover, a certain interrupt occurs, 
+program counter jumps 
+to a specific location in a program 
+memory assigned to this interrupt 
+an interrupt service routine, 
+written a programmer, 
+reside in this memory location 
+interrupt service 
+routine is finished, 
+program counter jumps 
+back to main program 
+interrupt a priority 
+if two interrupts happen time, 
+one higher priority 
+will processed first 
+a standalone cpu is useless if 
+is supplied data 
+peripherals exactly this purpose, 
+to give a cpu data to work 
+peripherals classified 
+several groups 
+first, communication units spi, 
+ic, uart, ethernet, others 
+units work based 
+specific protocols 
+next, there analog units 
+deal analog signals 
+there adcs converting 
+a voltage level to a number, 
+dacs 
+converting a number to a voltage level 
+timers constitute another group 
+powerful tools comes to 
+dealing clocking timing issues 
+help timers, 
+pwm generator, 
+used to 
+measure time intervals 
+there units to manage memory 
+one is dma, stands 
+direct memory access 
+this unit transfer data 
+one location memory to another 
+without cpus intervention 
+energy efficiency is 
+an important issue nowadays, 
+microcontrollers offer flexible 
+alternatives to address 
+modern mcus multiple power 
+modes that provide developers 
+fine grain control power 
+consumption applications 
+this way is possible to power 
+cpu, peripherals, 
+microcontrollers different 
+programming debugging interfaces 
+one widely used ones is jtag 
+jtag programmer is a convenient tool, 
+especially comes to debugging 
+however, a debugger is cheap to buy 
+a bootloader a solution to this 
+a bootloader is a program 
+resides inside a microcontroller 
+bootloader receives a program byte 
+byte via communication protocol, 
+writes a program 
+memory a microcontroller 
+even though a bootloader 
+allow to debug code, 
+is a free charge way to 
+program a microcontroller 
+this is i this video 
+i hope you a indepth 
+knowledge embedded processors 
+microcontrollers 
+in next video we will 
+cover mcu platforms, 
+we will also describe real 
+industrial projects, powered mcus 
+sound 

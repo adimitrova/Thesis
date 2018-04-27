@@ -1,0 +1,196 @@
+music 
+today going to talk a bit 
+moving things around in graphics 
+so in first week we talked 
+to draw stuff there we could position 
+objects like rectangles, 
+giving pixel positionsand 
+example white command ellipse 
+command 
+and, thats fine, we that 
+last week we talked 
+animation, animation image 
+sequences playing lots 
+different images in 
+position 
+today im going to talk 
+powerful ways moving objects around 
+beyond you simply putting 
+positions x y coordinates to say 
+say, a rectangle 
+techniques accord transforms, 
+there three 
+first transform is translate, 
+is a basic movement 
+different you could 
+putting an xy position into, 
+position a rectangle, so 
+that is a command translate 
+you pass in an x a y is 
+position youre moving whatever object 
+a separate command to 
+whatever command drawing youre 
+this 
+so you apply single translate to 
+multiple objects 
+group objects together move 
+around ill talk a little bit in 
+detail you that 
+basic premise to translate an x 
+a y gives you position 
+youll translate 
+so similar to weve done 
+
+second one is a scale thats getting 
+things bigger smaller that 
+basically takes a number that is much 
+scaling apply 
+if that numbers one youre scaling 
+
+if less one getting 
+smaller 
+if one getting 
+bigger 
+one quite useful thing scale is you 
+also give two parameters 
+means you scale separately 
+x y 
+so, you make something wider while 
+making sort time, 
+high x scale a small y scale 
+so rotate command is used to spin 
+objects around 
+takes an angle parameter 
+so thats much you want to spin 
+
+normal way we talk angles is in 
+degrees , degrees 
+in computer programming we often work 
+another way dealing angles 
+called radians 
+units we shall explain in a 
+minute you to pass in that value 
+radiance a take command 
+if you dont want to get involved in 
+radians, theres a simple command 
+radians, that takes an angle in degrees 
+converts to radians 
+so i put radians degrees, 
+will 
+if you want to know radians are, 
+this is 
+so radians work in terms a circle 
+we think an angle cutting 
+a chunk a circle 
+so, like a, a, a slice pie 
+now, if we make circle radius one 
+so, two straight edges is 
+linked one 
+we measure angle taking 
+length arc, along way 
+to certain, so thats much 
+edge circle is cut 
+angle 
+that is a perfectly good measure of, 
+of, angles, thats whats called 
+radians 
+a few things you need to know 
+useful to know particular angles in 
+radians, if you ever use 
+the, degrees is entire 
+circumference circle, if you 
+remember school maths 
+circumference a circle is two pi times 
+radius 
+radius is , arc length 
+degrees is two pi 
+degrees is half that, pi 
+degrees is pi divided two 
+so that, thats a useful way 
+thinking about, angles, you use, put 
+values in terms pi directly 
+rotate command 
+if youre not, if you dont want to 
+get involved in that, you also 
+radians command i showed you to 
+convert that to degrees 
+so transforms 
+i said 
+that transforms apply to multiple 
+objects theyre independent 
+objects 
+a transform know to actually 
+move an object, if a separate 
+command do, so, drawing a 
+rectangle an ellipse 
+well a transform is in a way 
+move object, move 
+entire coordinate system 
+sort 
+the, screen 
+that mean 
+well i taught, told you a couple weeks 
+ago we represent point 
+screen an x a y 
+we that is that we need to know 
+direction is x direction 
+is y thats normally horizontal 
+vertical 
+we change that 
+also, we need a starting point, we 
+need to know , x y 
+normally, that is top left screen 
+a translation does, is move 
+that, so that anything 
+translate 
+zerozero point 
+if i translate ,, i move 
+zerozero point to , 
+so, if i draw an ellipse point say, 
+,, if ive done a transform that, 
+thats , , relative to new 
+zero, zero points 
+so if ive transformed s, 
+, relative to , 
+is plus , , plus , 
+, relative 
+to top left screen 
+so im drawing, changing way you draw 
+everything 
+changes meaning numbers 
+youre putting rect command 
+direct command that means is 
+that if you draw an ellipse a 
+rectangle theyre affect 
+way 
+so you draw many shapes you 
+like 
+you draw really complicated drawings, 
+put a translate in front it, 
+theyll move together 
+exactly thing scale, 
+this time, rather changing , 
+point, youre changing much one unit 
+x one unit y means, so if you 
+scale two, one unit you leave 
+in x counts double 
+so time you move one in x, youre 
+moving two in original screen used 
+finally rotation, that 
+is actually takes x y 
+axis 
+so, changes direction x 
+direction y 
+so, theyre pointing in different 
+directions 
+so, if ive done this translation youre 
+seeing on, rotation youre seeing 
+screen i move across an x im 
+longer moving horizontal 
+moving diagonal screen 
+so transforms powerful 
+give you new ways 
+deforming changing shapes 
+also apply 
+universally to multiple shapes music 
+music 

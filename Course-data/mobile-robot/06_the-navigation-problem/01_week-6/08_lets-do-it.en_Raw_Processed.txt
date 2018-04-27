@@ -1,0 +1,120 @@
+so this work that weve gone 
+through, weve seen to design control 
+systems, weve seen to take different 
+controllers put together in a 
+hybrid navigation architecture 
+weve seen to deal practical 
+issues, like fact that obstacles 
+indeed, points, that never 
+going to able to measure exactly 
+we are, so we need to factify guards 
+we tweaked parameters 
+actually ready to real 
+so presentation, slide part 
+this lecture is short 
+this 
+enough talk 
+lets 
+so now, we indeed ready to, see 
+hard work pay deploying these, 
+rather elegant algorithms that weve 
+developed actual robots 
+always, im here with, j 
+p 
+delacroixg, we going to, take 
+old friend, computer, 
+differential drive mobile robot, 
+a series 
+obstacle courses obstacles 
+become become complicated 
+you see, first set is a 
+convexg obstacle 
+we saw in lecture that in theory, 
+robot actually get stuck in one 
+local minimum goal to 
+goal obstacle avoidance behaviors 
+will cancel 
+in practice, an obstacle this 
+size, that aint going to happen 
+world is indeed a noisy place 
+
+noise will always kick robot 
+particular local minima 
+so, going to see first is 
+goaltogoal avoid obstacles 
+together that enough to 
+robot navigate this single convex 
+obstacle 
+so we see robot starts in a 
+gotogoal behavior 
+approaches obstacle, there, 
+infrared sensors picks 
+obstacle, robot successfully 
+navigates around 
+
+safe to go back to gotogoal, 
+we see, robot successfully 
+managed to navigate this particularly 
+simple environment two 
+behaviors 
+so now, lets take two favorite 
+behaviors, gotogoal avoid obstacle, 
+set to fail 
+we saw in lectures, theres really 
+way two behaviors to 
+successfully negotiate a 
+nonconvex, obstacle 
+in this case we a culdesac that we 
+will try to get around using onlt 
+two behaviors, we not, to 
+completely honet, honest, expecting this 
+to go that well 
+so, robot starts in a go togo 
+mode is entering culdesac, 
+going to start avoiding 
+obstacles here, doesnt quite know 
+to go, 
+pulled away, goal to goal is 
+pulling forward poor robot is 
+completely confused really 
+punching way this cul da sac 
+two behaviors 
+we see end result is 
+somewhat disastrous 
+so that rather depressing 
+poor robot stuck in cul de 
+sac without really anywhere to go 
+obstacle avoidance going to go 
+kept pulling in different directions 
+ended a mild disaster 
+we seen in lectures that 
+way around this problem is really to 
+introduce a third behavior, induced mode 
+followwall, will allow robot 
+to purposefully make way 
+culdesac a clear shot to 
+goal, sufficient forward 
+progress made followwall will 
+released gotogoal will 
+take 
+so jp, lets see grand finale here, 
+full blown hybrid navigation 
+architecture in 
+action 
+robot starts out, again, in a 
+gotogoal mode, enters culdesac, 
+whats going to different now, is 
+obstacle avoidance is going to 
+replaced a followwall, robot 
+purposefully makes way 
+culdesac along one obstacle arms 
+and, you see 
+problems we 
+confusion 
+pulled back forth between 
+different behaviors, is longer 
+there 
+robot successfully navigated 
+around obstruction 
+is back goal to goal 
+behavior 

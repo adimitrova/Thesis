@@ -1,0 +1,47 @@
+[music]. 
+hi, and welcome to week 2 of creative 
+programming for digital media and mobile 
+applications. 
+i'm mick. 
+this is matt and marco. 
+say hello. 
+so last week, we learned how to do the 
+basics of graphics and sound. 
+this week, we're going to be a little bit 
+more advanced. 
+we're going to create an application 
+called dj tube. 
+it's really basic, but it does run on all 
+your mobile devices. 
+so, it runs on your iphone and an on your 
+ipad and it runs on your android device 
+as well. 
+but, we're going to make these a bit more 
+advanced. 
+we're going to learn how to play more 
+than one sound at once, and manipulate 
+the sound by changing the pitch and the 
+speed, and also by maybe doing a bit of 
+filtering. 
+we're also going to learn how to create 
+image sequences. 
+so, for example, making editable videos 
+for live vj interaction. 
+and also image sequences for doing basic 
+animations. 
+mark is going to take you through all the 
+graphic stuff as usual. 
+matt's going to take you through the 
+basics of the audio. 
+and then i'm going to pull it together 
+and show you the final thing. 
+and in the final piece, the dj tube app, 
+there's a lot of mouse interaction, and 
+you can start and stop different tracks 
+and synch them up together. 
+so you'll be learning how to synchronize 
+different audio tracks as well, and play 
+them back so they're all tightly 
+synchronized and connected to the vision. 
+so yeah, okay, we'll start with marco 
+[sound] [music]. 

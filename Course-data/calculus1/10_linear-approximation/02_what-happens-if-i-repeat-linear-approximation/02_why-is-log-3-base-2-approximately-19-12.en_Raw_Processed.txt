@@ -1,0 +1,200 @@
+music im going to approximate log 
+natural log starting log 
+of, , i know to moving 
+one quarter time until 
+four steps i arrive 
+so here we go 
+first ill try to approximate log 
+plus a quarter 
+this will approximately log plus a 
+quarter, is much i changed 
+input by, times, i gotta approximate 
+derivative somehow 
+i dont really want to approximate 
+derivative log , i dont really 
+want to approximate derivative log 
+ths 
+that will an estimate 
+derivative whole interval 
+so, im going to approximate 
+derivative evaluating derivative in 
+middle this region plus an 
+th 
+alright derivative log is over, 
+so this is derivative log in 
+middle interval between 
+alright 
+so lets keep calculating here 
+log is zero 
+plus a th times, whats plus an 
+th, plus an th is ths, so thats a 
+th times ths 
+since im taking reciprocal 
+that is ths, so log ths, 
+according to this is ths 
+i keep going right 
+i want to approximate log one plus 
+a quarter plus a quarter 
+well, thatll log plus a 
+quarter, is i calculated, 
+plus a quarter times, i gotta write 
+derivative, and, again, im going 
+to pick derivative middle 
+this interval 
+so, ill evaluate derivative plus 
+ths is right in between plus a 
+quarter plus quarters 
+i approximated log plus a quarter to 
+nineth plus a th times, whats this 
+plus ths 
+well, that turns to ths 
+im taking reciprocal so ill 
+write ths 
+so ive got ths plus ths 
+that works to ths 
+so thats approximately log 
+lets keep going 
+whats log plus quarters 
+well, that log plus 
+quarters plus much input changes to go 
+here to here, is a quarter 
+times derivative 
+now, i want to approximate 
+derivative 
+ill approximate in middle 
+interval 
+so, itll plus ths 
+well whats this 
+a log plus quarters, log , i 
+approximated that to ths plus 
+a quarter times plus ths, thats 
+ths 
+reciprocal is th 
+so this is ths plus ths 
+this is going to a, a huge number 
+turns , 
+and, thats approximately log 
+now, here we go 
+whats log 
+well, that log 
+so, quarters plus quarter, so 
+thats much input change is to go 
+here to here, times derivative 
+im going to approximate 
+plus th, right 
+im going to approximate derivative in 
+middle this interval 
+this turn to 
+well, i approximated this 
+that plus a quarter 
+times plus th 
+thats th 
+so th reciprocal 
+so, thats plus th 
+turns to , is 
+approximately 
+that is really great log is 
+actually closer to is 
+awfully close to 
+really fantastic that, you know, 
+paper, right 
+im able to get a good approximation 
+to log 
+lets use this euler method, 
+precisely, midpoint method, to 
+approximate log 
+i use a little bit bigger step size here 
+to save us time 
+im going to put this gain to, to 
+approximate log 
+lets first log 
+writing log log i move 
+to adding , so ill add times 
+derivative, i gotta pick 
+ill evaluate derivative 
+i dont want to evaluate derivative 
+log , i want to in between, 
+so would plus a half 
+so log is plus plus a half is 
+halves, theres a reciprocal, so 
+thats rd 
+so this is telling that log is 
+rds 
+i trick a 
+step size , so log is log plus 
+, is much i change going 
+to times derivative, 
+approximation derivative somewhere, 
+ill in between so itll 
+one plus a right 
+thats a point in between 
+i approximated log to rds 
+plus a half 
+thats halves, reciprocal, thats 
+ths 
+rds plus ths, common denominator 
+, is th is 
+this actually compare to log , 
+well log is actually , so i 
+mean seriously, is a bad 
+guess, compared to blah, blah, 
+blah, right 
+in here i used steps a 
+whole step size here , right 
+so this is even a coarser approximation 
+a, thing i used to approximate 
+log 
+lets compute log log or, if 
+you like, log base 
+so log log is , 
+keeps going, right 
+you might notice here is that 
+ths is 
+pretty close 
+we rephrase this without using 
+logarithms 
+so im saying here is that log 
+log is ths 
+well if this is true, that means that 
+times log is times log 
+properties logs, times log 
+is log to th log 
+is log to th 
+if logarithms approximately 
+equal, youd think that to th 
+would approximately to th 
+yes, sure enough to th is , 
+to th is 
+numbers arent so different 
+this turns to maybe 
+significant seems first 
+lets play around this 
+numbers , , halves, , theyre 
+significant musically 
+alright 
+two notes that separated a th 
+actually in a ratio to in terms 
+frequencies 
+here, listen to two notes that 
+separated a th 
+two notes a th apart 
+listen to two notes that an octave 
+apart 
+two notes an octave apart 
+frequencys in a ratio two to 
+one 
+deal is that fifths is 
+seven octaves 
+twelve fifths, thats like three halves, 
+thats ratio a fifth to 
+twelfth power is close to two to 
+seventh power, close to seven octaves 
+here, lets, lets listen to th in a 
+row 
+so that is th listen to seven 
+octaves, starting note 
+notice that last note, right 
+theyre close to 
+thats really an audio proof that 
+halves to th power is almost two to 
+seventh power 

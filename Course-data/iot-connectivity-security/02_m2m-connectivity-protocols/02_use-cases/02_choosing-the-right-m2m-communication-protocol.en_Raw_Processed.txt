@@ -1,0 +1,221 @@
+music 
+hello, welcome back 
+in earlier video lectures, 
+we discussed key properties 
+application layer mm 
+communication protocols 
+in this lessons, we will look set 
+popular communication protocols 
+goal to give guidelines to 
+select right protocol system 
+one thing that always 
+needs to considered 
+is that selection between 
+protocols is a matter compromise 
+rare to find a situation 
+a protocol fits perfectly 
+checking check marks 
+in light this is always 
+a good idea to divide criteria 
+least two categories 
+absolutely necessary 
+must features 
+optional good to features 
+absolutely, necessary 
+will features that 
+critical to project 
+operations performed 
+good to features would 
+that facilitate operations 
+in this video lecture, 
+we will describe 
+provide criteria 
+use cases considered protocols 
+criteria deployment scenario 
+deployment scenario is one 
+important factors to look 
+in kind scenario 
+will a protocol deployed 
+would a realtime system, 
+telemetry, security, messaging 
+kind connection will provided 
+is a low power lossy network 
+a high throughput always setup 
+cases require different 
+features communication protocol 
+security 
+you need to determine 
+kind security you need 
+look whether is provided 
+candidate protocols 
+current emergence malware 
+data breaches, 
+important to project 
+data rest, also data in motion 
+this means data that would 
+carried protocol 
+communication paradigm 
+if link layer connectivity 
+product goal is meshbased 
+meaning, there is primary gateway 
+broker 
+make sense to use an application layer, 
+communication protocol 
+that feature 
+a protocol offers direct 
+client to client communication 
+without a central server 
+contrary, if you need to 
+aggregate data multiple sensors, 
+better to use a protocol that 
+a broker central server 
+in this case, there is default, 
+one data point, 
+broker information 
+collected processed 
+payload format 
+cyberphysical system 
+rarely works 
+generally, is part a larger system, 
+a control monitoring system 
+in this case, design time 
+complexity reduced 
+using a protocol that supports payload 
+format rest system 
+web connected system 
+utilize communication 
+protocols that support web 
+related formats, hdml, 
+xml, even json 
+javascript object notation 
+strictly, machine to machine 
+systems utilize protocols 
+that provide support json 
+compatibility existing installation 
+is important to know kind 
+protocols systems in use 
+moment in environment in 
+system will installed 
+this primary guideline 
+decision unless there severe 
+limitations in current systems that 
+going to fixed new one 
+quality service 
+critical systems require 
+strong quality service 
+protocols offer builtin 
+quality service features 
+protocols not, rely 
+low layer protocols to provide 
+communication performance 
+speed, throughput, cashing, complexity 
+quality service 
+factors performance 
+fast connections established 
+much throughput 
+protocol provide 
+a cashing resending 
+is communication complexity 
+is quality service handled 
+provide a measure 
+communication performance protocol 
+first protocol to address is http 
+http offers nonoptimal performance, 
+designed 
+always always reliable 
+connectivity platforms 
+however, offers highest level 
+flexibility ease integration 
+current future cloud systems 
+without gateways translations 
+also offers comprehensive 
+support different payload formats 
+moreover, newer standard 
+https offers solid security features 
+downside http low performance 
+high energy consumption 
+also, is a connection list protocol 
+so new connections to established, 
+frequently 
+consider coap, 
+constrained application protocol to 
+a cyberphysical systems 
+internet things version http 
+offers http 
+plus is lightweight, 
+basic quality service features 
+higher performance in terms 
+processing power memory consumption 
+coap designed in 
+a way that is easy 
+to build a gateway between http coap 
+therefore, coap used, 
+rather seamlessly in webbased scenarios 
+mqtt message queuing telemetry 
+transport protocol is good telemetry 
+applications, course, 
+originally designed this purpose 
+main issue mqtt is security 
+doesnt provide security 
+features although used 
+lowerlevel security solutions, 
+tls, transport layer security 
+mqtt is lightweight 
+doesnt offer specific 
+payload format support 
+transmits everything bias 
+this makes integration 
+current systems, rather difficult 
+quality 
+service features, 
+handle unreliable connections 
+well considered 
+applications remote operations 
+messaging plays key role 
+xmpp extensible messaging 
+presence protocol is messaging, 
+security 
+if devices notes require 
+messaging between 
+this messaging done securely, 
+xmpp used protocol choice 
+xmpp supports one to one 
+group oriented messaging 
+security alarm systems use xmpp 
+to alert users smartphones 
+modern operating 
+systems form 
+xmpp implementation already builtin 
+cities use xmpp to alert users 
+traffic changes due to 
+construction work 
+natural disasters, example 
+xmpp suitable to mashing 
+to mashing messaging 
+relaying that information 
+to humans controllers 
+downside, is heavy 
+realtime 
+dds data distribution service protocol 
+is reliability performance 
+a comprehensive support 
+quality service 
+message will get delivered to 
+recipient even if broker, 
+recipient is 
+connected to goes offline 
+this reliability feature 
+is one key reasons 
+dds is preferred in 
+military applications 
+also a strong focus security 
+scalable easily 
+accommodate growing number nodes 
+in this module previous one, we 
+discussed different communication 
+connectivity protocols underlying 
+architecture web protocols 
+in next module, 
+we will move onto building web 
+connectivity embedded systems 
+music 

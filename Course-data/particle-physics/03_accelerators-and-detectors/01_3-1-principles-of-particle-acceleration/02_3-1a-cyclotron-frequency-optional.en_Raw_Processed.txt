@@ -1,0 +1,30 @@
+music 
+i will first show you effect lorentz force 
+a cathode ray tube 
+filled a rarified gas 
+this gas is fluorescent, thus makes particle passage visible 
+a heated filament emits electrons, 
+accelerated an electric field 
+leave cathode pointing upwards 
+helmholtz coils, 
+in front behind tube, generate a magnetic field points towards you 
+electrons thus deviated towards center tube 
+ambient light, one cannot see faint fluorescence gas 
+we dim light, becomes visible 
+i increase magnetic field strength 
+constant electron momentum, radius curvature becomes smaller 
+electrons circulate around magnetic field direction, 
+cyclotron frequency 
+if i reduce magnetic field strength, 
+radius curvature increases, electrons hit glass tube 
+let us quickly calculate cyclotron frequency 
+electrons circulate in tube 
+lorentz force qv x b gives us centripetal force, makes follow a circle, 
+if v is orthogonal to b absolute value force is simply 
+evb 
+must equal to mvrho, rho is radius circle 
+this gives us v e b rhom, velocity is thus constant 
+frequency circulate is v pi rho, 
+equals eb pi m this is thus also a constant in nonrelativistic case 
+this gives us an angular frequency pi f ebm, cyclotron frequency 
+music 

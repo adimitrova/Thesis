@@ -1,0 +1,103 @@
+[music]. 
+let's think about the fundamental theorem 
+of calculus physically. 
+let's define the function v by the rule 
+that v of t is my velocity at time t. 
+physically, what does the accumulation 
+function of velocity mean? 
+well that accumulation function, 
+remember, is say, the integral from 0 to 
+b, of v of t dt. 
+and this is really the distance, that 
+i've traveled from time 0 to time b. 
+this also makes sense when we think back 
+to riemann sums. 
+but what would the riemann sum say? 
+if i think about how far i traveled over 
+a short time period, say, between time 
+zero and time h for some small number h, 
+right? 
+how far did i travel during that time 
+period? 
+well, i traveled for that small time 
+period h and i was traveling at a speed 
+of, i mean, you know, a velocity at time 
+zero, say, is a good approximation. 
+and i imagine my velocity didn't change 
+very much during this time period. 
+so, that's a pretty good approximation 
+for how much i traveled during the first 
+h moments of my journey. 
+what about between time h and time 2h, 
+right? 
+how far did i travel there? 
+well, the time that elapsed was h units 
+of time. 
+and how fast was i going? 
+well, i could use v of h. 
+my velocity of time h as a good 
+approximation for my velocity over that 
+time period, right? 
+my velocity is not necessarily constant. 
+but this is standing in for a reasonable 
+approximation and my velocity is not 
+changing too rapidly. 
+all right. 
+this is how far i traveled, right? 
+time times velocity is distance. 
+all right? 
+now how far did i travel between, say 
+time 2h and time 3h. 
+well, again, how long was i traveling for 
+h units of time? 
+and how fast was i going? 
+v 2h is a reasonable approximation for my 
+velocity during that time period. 
+and of course this keeps on going, right? 
+but what do i get if i add all of these 
+things up? 
+right? 
+what i'm getting is a riemann sum. 
+and if i keep on adding these things up 
+until i get, you know, all the way to, to 
+b, right? 
+what i'm writing down is the 
+approximation for this interval of a 
+particular riemann sum which approximates 
+this integral and in the limit as h goes 
+to zero, that riemann sum will compute 
+this integral. 
+so, summarizing that, the accumulation 
+function of velocity, is displacement. 
+and what's the derivative of 
+displacement? 
+it's velocity, right? 
+the derivative of my accumulation 
+function in this specific case where the 
+accumulation function is the accumulation 
+function for velocity, right, the 
+derivative of that accumulation function 
+is the thing that i'm integrating, 
+velocity. 
+that's the fundamental theorem of 
+calculus. 
+or in symbols, you know, the accumulation 
+function, which is[inaudible] 
+displacement, is the interval from zero 
+to b of my velocity. 
+and what i'm asking is, how is that 
+changing, right? 
+if that's my displacement when i travel 
+from times 0 to times b, right? 
+what is the derivative with respect to 
+the time that i've been traveling? 
+the derivative of displacement is 
+velocity. 
+so physically, differentiating the 
+accumulation function of velocity is to 
+differentiate displacement. 
+it's to ask for the rate of change in my 
+position, which is velocity, which is the 
+integrand. 
+it's the fundamental theorem of calculus 
+just wrapped up in physical clothing. 

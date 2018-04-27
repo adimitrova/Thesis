@@ -1,0 +1,190 @@
+music 
+hello 
+is good to see you back 
+this lesson 
+in previous videos we explored, 
+a birds eye view, 
+operating systems 
+execute tasks 
+we will take a look 
+linux kernel 
+to discuss characteristics 
+end lesson you 
+understand main linux kernel functions 
+advantages 
+lets begin questions 
+is a linux process 
+a process operate 
+many processes there 
+in order to deal questions, 
+we first define linux processes 
+a process is one fundamental 
+abstractions in linux 
+in short considered 
+a program in execution 
+a process encompasses a set 
+resources processor state, 
+address space, threats data section 
+linux kernel implements a process 
+manager to keep track process 
+so using processes 
+scriptors store information 
+run state process, 
+address space, 
+list open files, process priority, etc 
+a process in one 
+four possible states 
+a running state means process is 
+already running is ready to run 
+waiting state is used 
+processes waiting an event 
+a particular resource 
+there two types waiting, 
+including interruptible waiting 
+uninterruptible waiting 
+a process is in a stopped state 
+eligible running anymore 
+often, a result 
+receiving a system signal 
+however, in cases a process 
+that is debugged 
+in stopped state 
+finally, a zombie state 
+is a process occurs 
+process is terminated 
+kernel removed resources yet 
+next we will focus memory 
+management in linux kernel 
+actually memory management system in 
+kernel is a virtual memory system 
+this means that memory 
+addresses seen user processes 
+physical addresses 
+used hardware 
+to give you a better idea 
+memory management in linux, 
+i will discuss main features 
+first is large address spaces 
+this means kernel allows running 
+programs to allocate virtual memory 
+systems physical memory 
+kernel also provides 
+memory protection 
+this way every process 
+virtual addressed space 
+virtual addresses spaces completely 
+separated unless a result 
+process running concurrently 
+effect one another 
+next is memory mapping, is used 
+mapping image data files 
+to a process addresses space 
+this way, 
+content a file is directly linked 
+to a process virtual addresses space 
+linux also a mechanism 
+fair physical memory allocation 
+ensures that running 
+processes receive a fair share 
+systems physical memory 
+last least, 
+there is a shared virtual memory 
+mentioned before, process 
+a separate virtual address space 
+however, in cases, 
+a shared virtual memory is necessary 
+lets take a look an example 
+many processors run, 
+a vas come in shell instead 
+replicating many copies vas 
+is better to one 
+copy in physical memory 
+processes share 
+now, lets talk 
+scheduling in linux kernel 
+scheduling is important, 
+since defines policy 
+a process run 
+this is process runs first 
+one runs later 
+linux scheduler is 
+a priority scheduler 
+meaning, policy is based 
+priority processes 
+every time scheduler runs, 
+priority processes 
+in wrong cue is analyzed 
+process highest 
+priority is allowed to run next 
+in systems many processors, 
+processor a separate run queue 
+processor selects 
+processes queue 
+however, there may case that 
+a processor along waiting queue 
+compared to processors 
+in this case linux scheduler will 
+move processors long queue 
+to shorter queues 
+getting a balanced 
+workload a result 
+in previous videos we define an interrupt 
+an event generated a hardware 
+component that causes change in 
+sequence executed instructions 
+interrupts classified in 
+two categories, synchronous 
+asynchronous interrupts 
+synchronous interrupts produced 
+cpu control unit 
+while executing instructions 
+called synchronous 
+control unit 
+issues terminating 
+execution an instruction 
+hand, 
+asynchronous interrupts generated 
+hardware devices arbitrary 
+times regarding cpu clock signals 
+linux kernel handles interrupt 
+signals using interrupt handlers, 
+also called interrupt service routines 
+main difference between 
+interrupt handlers 
+functions in kernel 
+is that an interrupt handler 
+is executed in a special context 
+named interrupt context 
+to finalize todays talk, i will list 
+advantages linux kernel 
+linux kernel is open source 
+anyone contribute to code base 
+individuals organizations alike 
+a result this 
+there is a large community that provides 
+support produced large quantities 
+documentation, 
+freely available in internet 
+linux kernel easily customized 
+therefore, there is wide variety 
+computer architectures 
+you use 
+small sized microcontrollers to 
+full fledged minicore processors 
+linux kernel is a 
+complex piece software 
+unfortunately, many details 
+covered in this video 
+due to lack time 
+functions inputoutput 
+device management 
+interprocess communication 
+security protection 
+management describe here 
+however, to get a comprehensive view 
+them, i recommend you to read 
+linux kernel development book 
+third edition written robert love 
+thanks watching 
+see you in coming lectures 
+music 

@@ -1,0 +1,118 @@
+[music]
+at this point, you have a good
+understanding of what is required to
+effectively manage data as you move
+through the research life cycle.
+as you know, data management
+can seem quite the undertaking,
+when you consider all the aspects
+of data management best practice.
+but data management does not
+have to be overwhelming,
+if you have a data management plan.
+a data management plan or a dmp for
+short is a formal document
+that describes the data produced in
+the course of a research project.
+and outlines the data management
+strategies that will be implemented both
+during the active phase of the research
+project and after the project ends.
+if you have been involved in a research
+project supported by a major funding
+agency, you probably have a good idea
+of what should be included in a dmp.
+many funding agencies,
+particularly federal agencies, now require
+grantees to submit a data management
+plan as part of the proposal package.
+if you think you or your clients
+may be applying for a grant from
+the national science foundation,
+the national institutes of health,
+the alfred p sloan foundation, nasa, the
+institute of museum and library services.
+the national endowment for
+the humanities, the gordon and
+betty moore foundation,
+the institute of education sciences and
+the economic and
+social research council, the science and
+technology facilities council,
+the wellcome trust, and
+while the list goes on you will need to
+know how to write a comprehensive dmp.
+even if you won't be
+participating in funded research,
+writing a dmp will encourage you
+to think carefully about the data
+management needs of your research data and
+plan accordingly.
+remember, like planning for
+your taxes, planning for
+data management will save you time and
+headaches in the long run.
+by the end of this lesson, you will
+be able to identify the components
+of a good dmp, understand
+the importance and purpose of dmps, and
+be familiar with the dmp policies
+of several funding agencies.
+also, you will add to tour toolkit
+some great resources and tools for
+data management planning.
+let's go ahead and get started.
+just as i mentioned, many funding
+agencies now require grantees to submit
+a data management plan as part of
+the proposal package submission.
+this gives assurances to
+the funding agency the project data
+will be accessible and
+usable over the long term.
+they want to see that you have
+established a strategy for
+managing your data throughout
+the research lifecycle.
+making plans for how you will collect,
+document, organize,
+and preserve your data are all part
+of the data management strategy.
+this is important for funding agencies,
+for two primary reasons.
+the first reason is transparency and
+openness.
+it is an expectation that publicly
+funded research data will
+be discoverable, accessible,
+and reusable to the public.
+since they underwrite federally
+funded grants, it is a government
+responsibility to ensure citizens can see
+where their tax dollars are spent and
+allow them to capitalize on
+the products of these grants.
+a data management plan that illustrates
+how data will be made discoverable,
+accessible and
+reusable supports this responsibility.
+the second reason is return on investment.
+making data discoverable,
+accessible and reusable,
+maximizes the research
+potential of the data and
+provides greater returns on
+public investments and research.
+well-managed data allows for
+verification or
+refinement of published research results,
+reduces the potential for
+scientific fraud, promotes new research
+through the use of existing data,
+provides resources for
+training new researchers and
+discourages unintentional
+redundancy in research.
+by planning for data management, these
+benefits are more likely to be realized.
+[music]

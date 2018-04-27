@@ -1,0 +1,124 @@
+music 
+weve done a bunch area 
+calculations this point, so 
+lets move a dimension 
+think volume 
+let ask, really loudly, is volume 
+course, is area, right 
+area is thing that 
+integrals calculate 
+so instead trying to give 
+a definition volume, 
+lets focus gonna 
+compute volume, whatever is 
+gonna compute volume 
+integrating volume little, 
+tiny pieces that we cut 
+objects 
+lets work an example 
+heres a cone 
+i want to compute volume this cone 
+concreteness, lets suppose that 
+cone a height two units 
+a radius one unit, 
+i want to compute volume 
+i want to set this thing 
+an integration problem 
+i want to cut this thing 
+slices 
+add volumes little slices 
+so imagine that i take this 
+i slice 
+a bunch really thin pieces 
+whats volume a slice 
+well that slice is practically 
+a little tiny cylinder 
+so whats volume one 
+thin cylinders 
+well lets suppose cylinder 
+radius r 
+im going to call height, 
+height really thin, so 
+ill call height dx 
+in that case volume this 
+cylinder is, whats area top 
+pi r squared times height, 
+is dx 
+so, this here will formula 
+volume one thin cylinders 
+and, again, seeing 
+importance differentials, right 
+using differentials 
+to write an equation 
+volume thin cylinder 
+anyhow, lets put this 
+together in integral 
+to set integral to 
+calculate volume this cone, 
+i first to figure volume 
+one slices that make this cone 
+to that, 
+lets turn this cone side, 
+lets imagine that this is point , 
+so lets make this y axis, so 
+x axis will head in that direction 
+i here 
+well, this line is line 
+y equals x 
+ill use that to figure 
+radius one slices 
+pick value x, 
+lets think one slices 
+one thin cylinders that 
+im using to build big cone 
+i dont know radius 
+that particular cylinder 
+well, this distance here, 
+i know y coordinate there 
+y coordinate is x , so 
+radius is this cylinder is x 
+i write volume that disk 
+volume is pie times radius, 
+is x squared times 
+thickness that disk is dx 
+im integrating 
+this to 
+well x goes way to , 
+so this will integral 
+x equals to this integral 
+will calculate volumn cone 
+we use fundamental 
+theorem calculus 
+i simplify this a bit, i 
+constants here i pull out, right 
+i pull pie 
+i pull squared 
+this is pi times 
+integral to 
+x squared dx 
+now, whats an antiderivative 
+x squared 
+well, x to rd 
+then, im integrating that 
+im evaluating that 
+taking difference 
+so i plug in , i dont get anything, 
+i plug in , i get 
+thats cubed , minus 
+so this is volume cone, 
+i could simplify somewhat 
+i could write this times pi 
+we 
+well, you could looked this 
+formula in back calculus text 
+book, 
+thats beside point here, right 
+point here is that 
+teaching you secrets volume 
+you verify that formulas in 
+back textbook correct 
+thats part fun mathematics, 
+giving you information 
+giving you information 
+tools to verify 
+that that information is correct 

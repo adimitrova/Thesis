@@ -1,0 +1,142 @@
+music 
+going to compute volume a 
+sphere 
+well here i got a clay sphere 
+if i measure if i find that 
+diameter 
+diameter is centimeters 
+so radius, say centimeters 
+now, going to take this sphere 
+crush flat 
+i want to make so that 
+centimeter thick 
+ill estimate volume that 
+blob 
+so we measure this things maybe a bit 
+centimeters a bit 
+centimeters, a centimeter thick 
+so id guess that volume is 
+cubic centimeters 
+that wasnt that precise 
+we calculation precisely 
+taking sphere, slicing 
+discs thin cylinders 
+integrating thin cylinders right 
+thatll give us exact volume 
+sphere 
+so, going to take sphere 
+im going to slice this thing 
+lots lots little tiny cylinders 
+we to figure radius 
+thin cylinders 
+well let draw picture again, 
+alright 
+heres plane, this is y axis 
+x axis, ive got circle in 
+xy plane 
+here is sphere sitting in space 
+in height call that height y 
+i got a thin cylinder, i want to 
+is to figure radius that thin 
+cylinder 
+really that amounts is figuring 
+coordinates this point here 
+right 
+i want to figure that x 
+coordinate is, so that x, y lands that 
+circle 
+well i know equation circle 
+in xy plane 
+thats x squared plus y squared equals r 
+squared, r is radius sphere 
+that im thinking 
+i solve this x 
+x equals square root r squared 
+minus y squared 
+this is radius this little tiny 
+thin blue cylinder here 
+im going to cut sphere a 
+whole bunch little tiny 
+cylinders 
+add volume cylinders 
+to give volume whole 
+sphere 
+i want to figure volume 
+that thin cylinder 
+now, whats volume this slice 
+whats volume that thin cylinder 
+well, pi times radius that 
+cylinider, is given this 
+so radius is square root r 
+squared minus y squared that 
+radius squared 
+right, this is pi radius cylinder 
+squared, times height that 
+cylinder, well height that 
+cylinder is dy 
+so this is giving volume this 
+thin cylinder 
+we to think end points 
+integration 
+well big small y 
+well y goes way here to 
+minus r y goes way here to 
+r 
+so i set integral i want 
+to integrate this, y goes minus r to 
+r 
+we integrate 
+so first ill simplify integrand 
+this is integral y goes minus r 
+to r pi times square root squared, 
+r squared minus y squared dy 
+i simplify this a bit 
+ive got a constant, always pull that 
+constant 
+this is pi times integral minus 
+r to r r squared minus y squared dy 
+ive gotta cook an antiderivative 
+this 
+alright, to use a fundamental term 
+calculus 
+so thisll pi times, so whats an 
+antiderivative r squared, r is 
+a constant here 
+so an antiderivative that will 
+r squared times y minus an 
+antiderivative y squared is y cubed 
+three 
+ill ecaluating that r minus 
+r 
+if you think a bit i get 
+away using to r if i multiply 
+this 
+thatll simplify calculation 
+somewhat 
+alright, i going to plug in r 
+plug in 
+so, i plug in r, i get r squared 
+times r minus r cubed 
+i plug in i get 
+so i dont to subtract that 
+i keep working this 
+i 
+i got pi r cubed minus rd r cubed 
+lets call this rds cubed 
+alright, so this is rd r cubed 
+times pi this ends rds 
+pi r cubed 
+we it, yeah volume a sphere 
+here a radius r 
+we calculated it, rds pi r 
+cubed we could reach even higher 
+dimensions 
+example, you could try to write 
+an integral that calculates volume 
+a hyper sphere 
+whats a hyper sphere 
+well, thats higher dimensional 
+analog regular old sphere, a 
+sphere is sort a stack circles 
+so a hypersphere will a stack 
+spheres in fourth dimension 

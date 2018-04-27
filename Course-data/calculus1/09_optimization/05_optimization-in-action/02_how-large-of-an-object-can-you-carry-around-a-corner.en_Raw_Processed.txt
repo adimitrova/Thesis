@@ -1,0 +1,277 @@
+heres another timeless classic, another 
+optimization problem that comes in 
+calculus textbooks 
+goes like this youve got big object 
+you want to move that big object 
+around a corner 
+question is given corner, 
+big a object you navigate around 
+that corner 
+this is an example so called piano 
+moving problem 
+a piano is way to complicated an object 
+to really understand in this course right, 
+got a way to much geometry going 
+there 
+so going to consider a simpler example 
+so heres diagram a corner i 
+mentioned that i want to move this red 
+stick around this corner without 
+getting stuck 
+maybe doesnt look like this 
+problem set an optimization 
+problem we solve 
+an optimization problem, im 
+asking to know length longest 
+stick, that i navigate around this 
+corner 
+we to think that stick 
+get stuck 
+well stick is going to get stuck 
+in a position like this 
+touching two walls 
+pressed this corner 
+so, i actually to think is 
+whats shortest length stick that 
+simultaneously touches this wall, this 
+wall this corner 
+i think a little bit funny that in 
+order to solve this problem, we end 
+minimizing something 
+we actually want to figure longest 
+length, maximum length a stick that 
+navigated around that corner 
+to answer that problem, we end 
+solving a minimization problem 
+well anyhow, lets proceed in usual 
+way 
+im going to draw a picture label 
+everything 
+so, here i drawn this picture i 
+labelled every thing 
+width this hallway is a, width 
+this hallway is b, length this 
+stick is l, makes this angle theta 
+this bottom wall 
+we gotta figure is that we 
+trying to optimize 
+whats quantity that we trying to 
+minimize 
+whats goal 
+so goal is to minimize length 
+this stick, right 
+i want to know shortest length that 
+touches two walls this corner, 
+thatll constrain largest stick 
+thatll fit around this corner 
+now, hallways fixed lengths, 
+id like to express length this 
+stick in terms this angle theta 
+so i break stick pieces 
+theres a piece that goes this wall 
+to corner a piece this corner 
+to wall 
+so this piece here, well thats really 
+hypotenuse a right triangle, whose 
+opposite side to this angle theta 
+length a 
+that means this hypotenuse length 
+a times cosecant theta 
+similarly here i got a right triangle 
+i got this side length here is b so, 
+hypotenuse length b times secant 
+theta stick is sum 
+two lengths so that gives a 
+formula l in terms theta 
+l is a cosecant theta plus b secant theta 
+whats constraint in this problem 
+yeah i need to think theta 
+between pi in order to 
+touch two walls corner 
+so weve got a function, 
+function a single variable so we 
+apply calculus 
+so, im going to differentiate this 
+function, right, derivative l 
+respect to theta 
+well whats derivative cosecant 
+thats minus cosecant theta cotangent 
+theta 
+whats derivative secant 
+well thats secant theta tangent theta 
+so thats derivative l minus a 
+cosecant theta cotangent theta plus b 
+secant theta tangent theta 
+derivative in hand i try 
+to find critical points this 
+function 
+since this function l is 
+differentiable domain that 
+considering, i dont to worry 
+places l fails to differentiable 
+im looking critical points 
+i need to find points 
+derivative is equal to zero 
+so values theta this 
+thing vanish 
+well, lets write this an equation 
+equal to , lets add a cosecant theta 
+contangent theta to sides 
+so ive got b secant theta tangent 
+theta is equal to a cosecant theta 
+cotangent theta 
+i, i will divide sides cosecant 
+theta, cotangent theta i will divide 
+sides b so that i got secant 
+theta, tangent theta divided cosecant 
+theta, cotangent theta is equal to a 
+b 
+i notice here 
+well dividing cotangent is good 
+multiplying tangent 
+secant cosecant is actually 
+tangent 
+so this is in fact tangent cubed 
+so ive got tangent cubed theta 
+is equal to a b 
+if i take a cubed route now, i get that 
+tangent theta is equal to cube root 
+a b 
+in words, theta is arc tangent 
+cube root a b 
+so i know theta is, i dont 
+care theta 
+i really care is l 
+whats length 
+so lets evaluate l theta 
+critical point 
+now, wheres critical point 
+tangent theta is equal to 
+cube root a b 
+i build a right triangle an angle 
+whose tangent is cube root a 
+b 
+i that follows 
+i make this length 
+this length cube root a b 
+that makes tangent theta 
+is this divided this equal to this 
+right this is in denominator 
+that is right triangle means i 
+compute length hypotenuse 
+right 
+length hypotenuse is a square root 
+sum two lengths squared 
+thats i written 
+here 
+okay, so ive got a right triangle 
+ive got an angle whose tangent is theta 
+im trying to calculate l theta 
+if you remember back l defined in 
+terms cosecant secant 
+i compute cosecant secant 
+this angle theta whose tangent is this 
+quantity reading cosecant 
+secant this triangle 
+so cosecant remember is a one 
+sine means hypotenuse divided 
+opposite side length thats 
+i got here, length hypotenuse 
+divided length opposite side 
+secant, remember is one cosine so 
+that means side length 
+hypotenuse divided this length, 
+is one 
+i know cosecant secant in 
+terms this quantity here, i 
+evaluate l that quantity 
+so here we go, this is i get i 
+plug in quantities coseekit, 
+seekit 
+get 
+this looks terrible, right 
+well, i simplify this a little bit 
+you notice here 
+ive got a dividing cubert b in 
+denominator, is good 
+putting a b to thirds power here 
+here im going to separate this b 
+to b a b to two thirds times b to 
+one third move that inside square 
+root 
+upshot is that this thing is in fact 
+this thing here 
+this begins to a little bit 
+symmetric, right 
+i took a cube root a 
+that gave a to rds 
+putting a b to rds inside here, i 
+made this look a lot, a lot nicer 
+okay 
+ive got a common factor square 
+root b to rds plus a to 
+rds here i collect that 
+so ive got a to rds plus b to 
+rds times square root b to 
+rds plus a to rds 
+this is thing, here 
+this thing times square root that 
+thing 
+another way saying that is 
+this quantity to power, right 
+this is this quantity to first power, 
+times power, that gives 
+power, here 
+so, critical point, l theta is 
+equal to this quantity 
+a bit work, we show that 
+this quantity is in fact minimum value 
+l 
+we summarize answer 
+so given a hallway width a meeting a 
+hallway width b corner, 
+weve shown is that a stick length 
+most, a to two thirds plus b to 
+two thirds, that quantity to three 
+halves power navigated around that 
+corner 
+we see this playing in action 
+i made a model that you download well 
+here is an example 
+ive got a hallway width 
+millimeters, thats a pretty small 
+hallway, right 
+ive got another hallway here, 
+millimeters 
+calculation that weve done tells 
+us that a stick length millimeters 
+will able to turnaround, this 
+hallway 
+so lets see 
+heres stick i start stick 
+moving hallway, right 
+i start trying to rotate around 
+eventually im going to bump 
+corner , ill able to make 
+around corner ill able 
+to move hallway 
+perhaps youre wondering 
+numbers came 
+well heres i got numbers 
+from, right 
+, widths 
+hallways this is formula that 
+tells us largest stick that pass 
+a hallway two widths 
+i chose for, maybe two 
+different reasons 
+one thing is that perfect 
+cubes 
+so, to one third power is 
+to one third power is 
+thing thats nice 
+numbers is that squared plus squared 
+is squared, right 
+pythagorean triple 
+squared to is 
+so cubed is 

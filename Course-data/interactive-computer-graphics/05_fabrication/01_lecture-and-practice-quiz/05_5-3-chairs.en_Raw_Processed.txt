@@ -1,0 +1,205 @@
+next topic is chair design 
+work we introduce 
+here is called sketchchair 
+so problem to address here is that 
+design construction original chair 
+suppose you want to design chair, 
+instead buying 
+something store 
+therere so 
+many issues to consider, you know 
+you know that to work a functional 
+chair you need to physically valid 
+stable 
+break if you sit 
+also easy 
+to manually construct 
+so we present design 
+system specialized chairs 
+so design done 
+easy sketching 
+system automatically checks 
+balance, stability 
+also system automatically 
+generates a construction plan 
+so let show you a demo 
+so, yeah, heres system 
+you design chair 
+example, you a chair 
+like this a long back, 
+we a leg like this 
+so, i draw three strokes, 
+you already a d chair 
+moving like this one, 
+pushing a print button that 
+you will get two dimensional pattern 
+so that, you print this 
+into, send this data to a laser cutter, 
+cutter automatically 
+cuts physical wood material 
+you get a physical chair 
+so this designed, 
+you also learn physical validity 
+so, we also additional features 
+so if you press play button here, system 
+tries to push this guy this chair 
+so here, fine 
+you know, you put 
+a character this chair 
+however, if you, 
+you create unstable chair 
+so let show you 
+intentionally unstable chair 
+example, if you a chair 
+like this if you put 
+leg in appropriate positions, 
+if you press play, you know, 
+this is good, you, 
+you see that this is problematic 
+so this is simplistic, 
+this is a starting point 
+you see that physical validity checking 
+is possible, useful 
+let show you a video 
+so yeah 
+i already showed a simple video, 
+a demonstration already, 
+user draws a sketch, draw a leg, 
+you will get d shape 
+you also additionally 
+edit shape profile 
+dragging to adjust shape 
+we also adjust leg 
+so if you spend time, 
+youre going to get control 
+you also, you know, edit individual 
+layer to get three dimensional shape 
+so you progressively move 
+to a detailed design if you want 
+yeah we see we also provide 
+polygon tool also tool 
+also you change 
+spacing between layers 
+so, yeah, i said simulation, so 
+you take stability chair, 
+also you gain stability chair, 
+rocking chair 
+yeah, we see, 
+you change design while running 
+a physical summation if you want 
+we also implemented a couple 
+features to assist molding 
+so this one is using this 
+kind accessory object 
+so you see this kind object 
+a difference to design, here 
+so use designing a piano chair, 
+so you see size 
+shown here, 
+its, you also change proportion 
+human figure if you want 
+so this feature allows a user 
+to test many variations 
+so designing this one, 
+a previous one hibernated 
+so you temporarily pan the, 
+you test different one, 
+go back 
+forth between different designs 
+okay, finish design, 
+you get this profile 
+you send this to a printer 
+so fast easiest way is to use 
+a cutting program a paper cutter 
+so you send this to a paper cutter, 
+you cut paper 
+you get paper chairs 
+this is cheapest way, so 
+you generate many designs 
+you many designs studies 
+using this paper chair first 
+yeah 
+a paper chair, 
+you actually generate a big 
+one using a laser cutter 
+laser cutter is handy 
+so exactly like a printing machine 
+you send two dimensional data 
+you will get this kind 
+wood material cut according to 
+diagram you get this 
+putting cushions 
+around surface, 
+youll get a realistic chair 
+so here is results 
+so variation 
+paper chairs 
+a rocking chair we saw 
+full sized chairs, like 
+this is a piano chairs 
+yep, so, thats 
+heres a couple examples, 
+so this is big chair 
+yeah so we, this is a big chair, 
+i saw, 
+so 
+i a small chair like this one 
+this is 
+this a good 
+sitting form placer 
+okay so we use physical simulation here 
+we use an open source physics 
+engine rigid body simulation 
+so we, we currently use bullet engine 
+there many possibilities 
+so physics engine is usually 
+used games, you know, d games 
+there objects moving around, 
+bumping other, 
+popular, easy to use 
+so you pick simulation engine 
+code you play along 
+i think this work is a good 
+example a new way design seating 
+we call metadesign 
+so traditionally, 
+designers design final product directly 
+go designers, design chair, so 
+designer physical shape a chair 
+here, in future, 
+i think designers will use 
+physical shape, also designers 
+needs to design, design processes 
+so here in this project, designer 
+us, we actually design a process 
+we de, define a process, 
+inside this process user will 
+sketch system automatically 
+generates us, number d chair 
+depending, taking user input, also 
+according to designers intention 
+i think this kind meta 
+design process 
+important in future 
+so, to learn more, 
+original paper published 
+sketchchair an allinone chair 
+design system endusers 
+rigidbody simulation, 
+if you want to know technique 
+implementation details, 
+if you want to implement yourself, 
+recommended reading is rigidbody 
+simulations, siggraph course 
+if you want to use it, 
+there many you know, packages 
+furniture design, 
+i recommend you, 
+i recommend you to take a look youtube 
+video front sketch furniture 
+so this is interesting artwork 
+so user try to sketch 
+furniture in this d space, 
+you will get physical 
+object using a d printer 
+so, thank you 

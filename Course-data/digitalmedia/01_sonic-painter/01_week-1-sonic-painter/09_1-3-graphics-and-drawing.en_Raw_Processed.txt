@@ -1,0 +1,462 @@
+sound 
+so today im going to introduce 
+basics to write computer programs 
+that draw pictures that you 
+interact 
+first thing you need to you 
+want to write, draw an image a 
+computer program is turn image 
+a set numbers 
+a certain level, numbers 
+computers understand 
+if you think a computer screen, 
+composed millions pixels 
+picture elements 
+tiny little squares, 
+color 
+you think screen a 
+large grid pixels 
+you see slides here 
+first thing you need to know 
+youre drawing something to screen is 
+particular pixel youre drawing to 
+collection pixels, you need to 
+able to express that a number 
+so, we that 
+first thing we is we a number 
+that represents many pixels across 
+you 
+thats horizontal position we 
+call x value 
+we also need to know many pixels 
+you 
+vertical position y value 
+two numbers give us a position a 
+pixel 
+example , gives us this pixel here 
+shown in red 
+so, two numbers we get a single 
+pixel value 
+so lets a look that in practical 
+program 
+so this is program, i showed you 
+earlier 
+weve got size 
+weve got background, we draw 
+a point a certain position 
+say , 
+you probably cant even see point, 
+actually here, if you see mouse 
+position im clicking 
+cant you see 
+pixels tiny, lets 
+something else we proceed make 
+point a little bit bigger 
+we use this command called stroke weight 
+gives you width lines you 
+draw size points 
+set that to six going to 
+get something a little bit bigger 
+there we go we clearly see a 
+single point screen 
+now, creating images individual 
+points is going to hard work 
+so, lets look to make 
+basic shapes 
+okay, so here we pixel 
+position , , another point given 
+another two numbers, say, , 
+we draw a line 
+so, four numbers, x y 
+start position, x y n 
+position, we draw a line 
+similarly another full numbers we 
+go draw a rectangle, 
+difference that first 
+two positions top left position 
+rectangle two 
+numbers a position 
+rectangle, height width 
+so lets another look trying to 
+draw complex 
+if, instead here, point, we use 
+command line, we draw a line to , 
+see that looks like 
+there we a line 
+similarly, rect command gives us a 
+rectangle 
+here instead a, end position 
+line second two points, 
+height width 
+rectangle 
+so im making a square, equal 
+height width 
+so there we 
+lets a quick look ive 
+done 
+so here we are, two commands 
+ive written 
+size commands 
+is size command 
+i showed that in introduction lecture 
+to processing, i didnt really talk 
+
+well, in size, youre passing in 
+numbers 
+first number is x, is width, 
+processing window youre creating 
+second number is height, y 
+value 
+similarly a line first number is 
+x position, horizontal position 
+is start point 
+hot vertical position, y 
+position is, is start point, 
+x y positions end point 
+line 
+so simple, four numbers, you 
+draw a line 
+there, you get many 
+complex shapes 
+next thing you might want to look 
+is colors 
+so to weve drawing black 
+lines 
+we represent color numbers 
+well, if we start black white 
+color coming a computer monitor 
+is really amount light that is 
+emitted pixel 
+screen 
+so we think brightness 
+a particular pixel, a value 
+that we measure 
+we measure that brightness 
+maximum value, is white , 
+is color coming off, is 
+black 
+if you look here, is black 
+we use value 
+
+
+well, that happens to largest 
+value you fit in bits 
+so ones on, in computer memory 
+value in between two will give 
+you gray lighter, darker gray 
+so you shay, shades 
+variations gray value between 
+two values 
+fine, thats brightness, 
+real color 
+well, to talk colors, we need 
+to think primary colors, if 
+you 
+a young age school, you will 
+learned that you make color 
+mixing three colors paint together 
+actually working paint 
+working light, thats 
+slightly different 
+primary colors different, 
+concept is same, primary colors 
+we green, blue red 
+color made 
+three, three basic colors 
+is that 
+a fundamental property light, 
+a fundamental property 
+eye 
+we three types receptor in 
+eye, that sensitive to green, red, 
+blue parts spectrum 
+and, if light comes between 
+colors, will trigger 
+a mixture say, red green 
+components receptors eye 
+therefore we fool eye by, instead 
+a color thats between green 
+red, sending green red 
+time will look like a mix 
+green red, is yellow 
+similarly, green blue is cyan red 
+blue is magenta, color 
+mixed basic primary colors 
+thats great a computer graphics 
+point view, we need three 
+numbers to represent color, a red 
+value, a green value a blue value 
+so we use colors 
+well, theres a number ways in 
+you use colors 
+if we look here weve got a basic 
+rectangle we change 
+that rectangle 
+well, first that we change 
+rectangle is border 
+rectangle we use stroke commands 
+stroke means color line that 
+we use to draw lines screen 
+we also change center 
+rectangle using fill command 
+fill is color that is used to draw 
+center shape, middle 
+shape, that drawing screen 
+weve already seen background 
+command, ill show you that 
+the, changes background 
+color screen 
+last command that ive already shown 
+you that is connected is stroke weight 
+that doesnt specify color, 
+specifies width lines youre 
+drawing screen 
+so lets a look that in code 
+so weve already used background, we 
+see here that weve used backgrounds 
+, so thats red, green, 
+blue 
+we see, that came a bright 
+red 
+if we to change that to zero, 
+, we would mix a little blue in 
+wed get a different colot 
+sort purpley color 
+lets try changing these, colors 
+this rectangle, so if we use stroke, we 
+set color border 
+rectangle, lets set to a bright 
+green 
+sorry, made a mistake there 
+we use fill to set sensor 
+color 
+maybe we use a light blue 
+we mix in light blue quite a 
+lot red green 
+so quite bright 
+theres a lot whiteness in there, 
+blue 
+there we go quite a light blue, we 
+could make bluer turning 
+red green 
+so thats, weve got quite garish 
+colors here 
+i wouldnt actually make an application 
+colors, shows you sort 
+you mix, mix basic 
+colors 
+one last thing i want to show you is 
+that youll called stroke fill, 
+values continue everything else 
+you draw, so if i draw another rectangle 
+eh, will colors 
+so putting in a second fill command, i 
+change color second vector 
+okay, theres one last thing id like to 
+say color, is to talk 
+transparency 
+sometimes youre specifying colors 
+well red, green, blue, youll 
+get a fourth number 
+this is opacity 
+often called alpha 
+opacity controls transparent 
+something is 
+actually opposite 
+transparency 
+so opacity is , means 
+transparent all, , 
+completely transparent 
+so, to get colors partially 
+transparent, you need an alpha value 
+between 
+so, example, , , , is half 
+transparent red 
+we see this in code here, 
+setting alpha this rectangle to 
+, move slightly so that 
+overlaps original, original 
+rectangle 
+we dont want to completely overlap 
+you see is partially 
+transparent 
+color is affecting whats beneath it, 
+completely 
+mick will show you nice examples 
+you use transparency to get 
+really nice visual effects 
+so, ive shown you so far, you 
+make nice drawings 
+computer codes, thats cool 
+far goes 
+really a computer program 
+yet is drawing a 
+picture 
+you think a computer program you 
+want to interact 
+to things independently 
+so if we look program is 
+to 
+pressing play, running 
+code 
+finish, will draw a 
+picture we look 
+thats we, you complete a 
+program , we want to able to interact 
+that code 
+so we this splitting a code 
+news number bit 
+first off, we we stuff that 
+never change 
+example, size screen, 
+background color 
+always stay 
+inaudible thats we call 
+setup part program 
+theres stuff that 
+change, so example, things that 
+drawing, like lines, 
+move around based 
+
+thats drawing part program 
+we put in two different blocks 
+code 
+first one we put in a block code 
+called setup i wont get full 
+details everything means here 
+if youre familiar java, you will 
+understand 
+if not, look additional 
+lectures 
+void setup is whats called a 
+function, that contains code 
+that we beginning 
+program happens 
+important thing to note here 
+curly brackets 
+say tell you start 
+end setup code is 
+similarly, we functions 
+happen times response to certain 
+events 
+so example, i alpha function 
+mousedragged 
+mousedragged is that happens 
+every time you move mouse while 
+mouse button is held hold 
+a useful function interaction 
+so happens is i move mouse, 
+i give input, mouse drag responds 
+i play paints a picture 
+i see that 
+thats fine, if you look code 
+is now, every time i call mouse 
+dragged, drawing line 
+numbers in there arent 
+changing 
+i need to put in different numbers to 
+line in order to change interaction 
+im getting make truly 
+interactive, to make respond to 
+mouse movements 
+this is i 
+rather putting a number in there, 
+im putting in value mouse x mouse y 
+pmouse x pmouse y 
+things 
+well variables names 
+stand numbers if youre familiar 
+term variable 
+if youre you look 
+additional lectures 
+mouse x mouse y automatically 
+set to current position mouse 
+so this is mouse position an x 
+y value 
+pmouse x pmousey useful 
+values 
+give you previous position 
+mouse thats enables us to 
+some, smooth drawing 
+ill show you that in a minute 
+so lets look code that 
+this 
+so this is basic 
+interactive code you get in 
+processing 
+we a setup function that sets 
+size screen background 
+color, a mouse drag function that 
+draws a point that position is 
+mouse 
+so lets see that 
+weve got a nice little drawing 
+thats nice, but, i draw, id like 
+to actually sort draw continuous 
+lines, we that code i 
+showed you, we draw a 
+line previous mouse position to 
+current mouse position 
+noise there we are, nice 
+continuous lines drawn 
+now, weve got a nice bit interaction 
+doesnt look great, theres a lot 
+we this aesthetically to 
+make 
+in a few minutes well talk to you 
+that 
+now, thats want to say, 
+what, im going to say 
+i want to show you one little trick 
+background function 
+so moment 
+every time i draw, drawing top 
+ive already drawn 
+sometimes thats we want 
+sometimes what, thats we dont 
+we want 
+if i move function background 
+mouse dragged well setting 
+background color background is 
+clears screen 
+so if i move mouse dragged its, 
+clearing screen so ive 
+longer accumulated drawings ive 
+ever done 
+i get this tiny little try 
+mouse 
+maybe exactly we want 
+theres lots situations 
+is exactly we want 
+next week well show you that in 
+detail 
+so, so far weve got is ability 
+to draw basic energies to screen 
+basic shapes interact that 
+responding to mouse position 
+theres a lot we, you while 
+youre drawing, i would recommend 
+that you look processing 
+website, processingorg 
+theres a link to 
+call server site, particularly 
+look processing reference look 
+examples shapes 
+a good example is to look ellipse 
+command so far weve looked lines, 
+rectangles 
+ellipse shows you to draw ellipses, 
+circles, and, that, thats 
+already part repertoire, 
+will already, will also start you 
+learning to use reference for, 
+processing, pick up, use new 
+commands that will enable you to 
+complex drawing 
+so ill leave you here matthew will 
+talk a bit to audio 
+processing in processing mick 
+will show you complex examples using 
+basis, basic code that weve learned 
+here 
+music 

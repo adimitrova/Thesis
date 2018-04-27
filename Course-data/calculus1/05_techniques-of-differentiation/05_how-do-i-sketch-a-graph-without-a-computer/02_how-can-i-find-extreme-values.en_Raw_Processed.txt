@@ -1,0 +1,257 @@
+music if we care extreme values, 
+would really help to know to find 
+
+we use a theorem, a theorem 
+fermat 
+heres fermats theorem 
+suppose f is a function defined 
+interval between a b 
+c, is point in this interval, this 
+backwards e, means that c is in this 
+interval 
+okay, so thats set 
+heres fermats theorem 
+if fc is an extreme value 
+function f, function is 
+differentiable point c, 
+derivitive vanishes point c 
+actually easier to show something 
+slightly different 
+so, instead dealing this, im 
+going to deal a different statement 
+setup before, im going 
+to try to show that if f is 
+differentiable point c 
+derivative is nonzero, fc is 
+an extreme value 
+worth thinking a little bit 
+relationship between original 
+statement im starting 
+claim that fc is an extreme value 
+concluding that derivative 
+vanishes 
+here, im beginning, assuming 
+derivative doesnt vanish 
+concluding that fc is an extreme 
+value 
+this is thing that i want to try to 
+prove 
+is that theorem true im going to 
+get intuitive idea to this is 
+true 
+is that if you differentiable a 
+point c nonzero derivative there, 
+fc isnt an extreme value well, 
+to get a sense this, lets take a look 
+this graph 
+here, ive drawn a graph random 
+function 
+ive picked point fc is 
+zero 
+differentiable there, 
+derivatives nonzero 
+negative 
+now, that mean that means if i 
+wiggle input a little bit, i actually 
+affect output 
+if i increase input a bit, output 
+goes 
+if i decrease input a bit, output 
+goes 
+consequently, that cant an extreme 
+value 
+thats biggest smallest 
+value i plug in inputs near c, 
+thats exactly this statement is 
+saying 
+if derivative is zero, that means 
+i control output if 
+i change input a little bit 
+that means this output isnt an extreme 
+value i make output 
+bigger smaller small pervations 
+to input 
+id like to a formal, a 
+rigorous argument this 
+so, lets suppose that f is 
+differentiable c, derivative 
+is equal to l, l nonzero number 
+now, that really means 
+definition derivative is that 
+limit fchfch h approaches 
+zero is equal to l 
+now, this limit say 
+well, limits saying that if h is 
+near enough zero, i make this 
+difference quotient close i like to 
+l 
+in particular, i guarantee that 
+fchfch is between l l 
+notice happened so, i started 
+infinitesimal information 
+im starting a limit h 
+approaches zero 
+ive promoted this infinitesimal 
+information to local information 
+i know that this difference quotient 
+is between two numbers long h 
+is close enough to zero 
+now, we continue proof 
+so, i know that if h is close enough to 
+zero, this difference quotion is between 
+l l, 
+im going to multiply this h 
+i find then, i find 
+that if h is near enough zero, 
+multiplying this h, i find that 
+fchfchh is between hl 
+hl 
+i get here to here 
+multiplying h 
+now, i well, i add fc 
+to this 
+ill find that if h is near 
+enough zero, fch is between 
+hlfc hlfc 
+okay 
+so, this is weve shown weve shown 
+that if h is small enough, fch is 
+between two numbers 
+now, would you care well, think 
+possibilities 
+if l is positive 
+if l is positive h is small 
+positive number, this is telling that 
+fch, between two numbers, 
+fch is in particular bigger fc 
+that means that fc cant a local 
+maximum 
+kind game 
+if l is positive i picked h to 
+negative real close to zero 
+then, fch between two 
+numbers, fch must actually less 
+fc 
+that means that fc cant a local 
+minimum 
+you play game l is 
+negative 
+lets summarize weve shown 
+so, weve shown is this 
+weve shown that if a differentiable 
+function nonzero derivative 
+point c, fc is an extreme 
+value 
+we play this in reverse that 
+means that if fc is a local extrema, 
+right if fc is an extreme value, 
+either derivative doesnt exist to 
+prevent this first case happening, 
+f is differentiable c, 
+derivatives equal to zero, prevents 
+this second thing, fc nonzero 
+so, this is another way to summarize 
+weve done 
+if fc is a local extremum, one 
+two possibilities occurs 
+possibilities occur 
+heres graph absolute value 
+function 
+theres a local a global minimum 
+point zero 
+derivative this function isnt 
+defined that point 
+heres another example 
+heres graph yx 
+this function also a local a 
+global minimum point zero 
+here, derivative is defined 
+derivative is equal to zero this 
+point 
+well often want to talk two 
+cases together, situation 
+derivative doesnt exist 
+situation derivative vanishes 
+lets give a name to this phenomenon 
+here we go if either derivative c 
+doesnt exist, meaning functions 
+differentiable c, derivative is 
+equal to zero, im going to call 
+point c a critical point function 
+f 
+this is a great definition 
+fits so well fermats theorem 
+heres another way to say fermots 
+theorem 
+suppose f is a function defined in 
+this interval c is contained in 
+there, if fc is an extreme value 
+f, 
+well, we know that one two 
+possibilities must occur 
+that point, either functions 
+differentiable, derivatives equal 
+to zero 
+thats exactly we mean i 
+say that c is a critical point f 
+so, giving a name to this phenomena gives 
+us a really nice way stating fermats 
+theorem 
+upshot is that if you want to find 
+extreme values a function, you dont 
+to look everywhere 
+you to look critical 
+points derivative either 
+doesnt exist derivative vanishes 
+you probably also worry 
+end points 
+in words, if youre trying to find 
+rain, you looking 
+clouds 
+you to check cloudy days to 
+see if raining 
+in this way, if youre looking 
+extreme values, you need to look 
+critical points an extreme 
+value gives you a critical point 
+so, this is a super concrete example 
+heres a function, yxx 
+ive graphed this function 
+im going to try to find local 
+extrema, this local maximum this 
+local minimum, using machinery that 
+weve set 
+so, if im looking local extrema, i 
+looking critical points 
+so, heres function, fxxx 
+im looking critical points in 
+this function 
+points whose derivative doesnt 
+exist, function is differentiable, 
+derivative vanishes 
+this function is differentiable 
+everywhere 
+derivative is x 
+so, critical points going to 
+derivative is equal to zero, 
+right 
+im looking solutions to x 
+ill write one to sides, x, so 
+i trying to solve 
+ill divide sides , 
+x 
+so, i trying to solve 
+take square root sides 
+x is plus minus square root a 
+third, is 
+that lets find critical 
+points, 
+right 
+places derivative is 
+equal to zero 
+tangent line is horizontal i 
+know x coordinate two red 
+points 
+here, x coordinates , 
+here x coordinate is , 
+

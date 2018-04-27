@@ -1,0 +1,109 @@
+music 
+a classic problem mean theorem 
+problem thats often asked in calculus 
+courses, well, that classic problem goes 
+like this 
+given a function f points a b, i 
+want to find point c, so that f 
+prime c is equal to f b minus f a 
+b minus a 
+mean value theorem promises us that 
+long f is a nice enough function, nice 
+enough meaning differentiable 
+open interval a b, continuous 
+closed interval a b 
+that long f is a nice enough 
+function, thats possible 
+i find that point c, so that 
+derivative f point c is equal to 
+f b minus f a b minus a 
+let, lets an example i try to 
+find that point c 
+so lets an example 
+ill f x, making 
+example, thatll x cubed will 
+interval a equal b 
+equals 
+so really, im trying to is find 
+point c so that derivative 
+function point c is f b minus f 
+a b minus a 
+now, in this case, f b is cubed, 
+thats 
+f a is cubed, thats 
+b minus a, thats minus 
+this is 
+thats 
+so im looking a point c, 
+derivative is equal to 
+now, i that 
+yeah 
+i gotta differentiate this function 
+so here we go 
+ill differentiate this function, i 
+get that derivative x cube is x 
+squared, im looking value 
+x is that equal to 
+well divide sides 
+im looking a value x, x 
+squared is 
+so divide sides 
+x between a b, right 
+so in that case, x is positive square 
+root 
+ive really accomplished here, if 
+i make a little graph, heres x y 
+plane, ill draw kind a made 
+graph cubed function 
+right, heres point , say 
+heres point 
+here is , 
+heres , 
+right 
+slope line here, right, is 
+right, slope here is 
+ive really managed to here is 
+find that square root , 
+slope tangent line is exactly 
+slope line , 
+, , cubed 
+super important to emphasize that 
+although kinds problems fun, 
+mean value theorem guarantees that 
+nice enough functions we find 
+a c, yeah, fun problems 
+mean value theorem guarantees that 
+possible 
+thats point mean value 
+theorem 
+mean value theorem is a 
+computational result 
+really an existence theorem 
+important to emphasize power 
+existence results 
+something like mean value theorem 
+tells you that something exists without 
+you to actually go 
+world find that thing 
+right 
+you a ton problems 
+you find point c really would 
+undermine that important lesson, right 
+power mean value theorem lies 
+in fact that you actually go 
+compute value c, right 
+power lies in fact, mean value 
+theorem tells you that possible, that 
+you know theres a value c there, 
+without you actually go find 
+
+that, opens door 
+to interesting conceptual 
+applications relating, say, 
+positive derivative an interval to 
+fact functions values increasing 
+thats really power mean 
+value theorem 
+a conceptual result that helps you 
+relate information derivative to 
+information original function 

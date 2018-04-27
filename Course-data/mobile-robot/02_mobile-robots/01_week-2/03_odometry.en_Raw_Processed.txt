@@ -1,0 +1,177 @@
+so that we a model, we need 
+way knowing robot is 
+state robot is xy fine, 
+meaning position xy heading, 
+fine odometry is means we 
+obtain this pose information 
+question is, we actually get 
+state pose robot well, 
+there a number different ways 
+it, end day, we 
+absolutely need sensors well, there 
+two possibilities here one is we use 
+kind external sensors so, an 
+external sensor would a sensor thats 
+measuring something in environment 
+so, instance, you pretend that you 
+see a, a landmark 
+lets say i see eiffel tower 
+i start moving around, if i keep track 
+eiffel tower i able to 
+least know i relative to 
+eiffel tower right 
+that seem to make sense so 
+external sensors ultrasound, infrared, 
+cameras, laser scanners, sensors 
+that tell us something externally 
+we there is another type 
+external sensor that one use, 
+course, would gps 
+external measuring 
+internally, getting information 
+outside, gps immediately would 
+give us things like position so forth 
+however, youre running robots 
+indoors, you certainly dont gps 
+signals, a lot times gps alone is 
+enough to know x, y, phi to 
+high level of, fidelity so you 
+is you typically couple external 
+sensors internal sensors 
+so internal sensors sensors that 
+sitting in robot 
+helping you know you so, 
+instance, you could use a compass to, 
+figure way the, robot is 
+heading so this would orientation 
+course, in every self respecting robot, 
+there accelerometers, gyroscopes 
+finding far youve 
+traveled so forth so position 
+orientation derived 
+accelerometers gyroscopes to certain 
+degree another useful way is wheel 
+encoders so typically you tick 
+counts, you tick count many 
+basically, many revolutions wheels 
+in a certain amount time, 
+that you actually figure 
+things robot is and, i 
+would like to discuss a little bit 
+you wheel encoders reason 
+that is, that if we indeed 
+working referential drive robots 
+awhile, lets see, if we find a 
+little bit we get position 
+information importantly, 
+much can, trusted so, a wheel 
+encoder gives distance moved 
+wheel so, we left right wheels 
+here heres following assumption 
+going to make going to assume 
+that wheel is following an arc, 
+means that turning a constant rate 
+driving a constant velocity, 
+basically so, v ohm r constant 
+this means is, short time scales 
+thats, thats correct 
+if we that, well, lets say that d 
+is distance left wheel turned, 
+dunknown is , distance right 
+wheel turned so in this case, 
+right wheel is turning quicker 
+left wheel turned, turned 
+well, im interested in x, y, 
+phi is wheels are, 
+center robot is this 
+is im interested in so dc is 
+distance center turned thats 
+thing that im interested in 
+luckily, center is simply dl dr 
+i going to particularly picky in 
+showing geometry this comes 
+instead, things that 
+readily available if you want to look 
+things, like wheel encoders work 
+i want to connect a little bit 
+mobile robot model to wheel encoders, 
+to see we reason things, 
+in fact, if we measuring far 
+road wheels moved a time 
+interval so lets say that we start x 
+time interval , well we know 
+dc dc is this thing we 
+actually compute new x primes, new 
+x position robot we similarly 
+compute new y position robot 
+is x update, 
+sine instead a cosine term and, we 
+even compute, the, new orientation so 
+this is a way knowing to go from, 
+far wheels turned 
+new positions robot and, 
+in fact, going to running quite a 
+few experiments, 
+information robot is is, 
+based wheel encoders so 
+we know dr dl, thought this is 
+we need to know in order to find 
+robot is well, assume that wheel 
+n ticks per revolution so pi 
+degrees is n ticks so wheel encoders 
+actually give total tick counts to 
+beginning, so you measure is 
+many ticks since, since you start 
+system so, updates i writing 
+here wheels this is left 
+wheel right wheel, so you could 
+write you know 
+delta tick r r 
+wheels you take old total tick count 
+subtract away new total 
+trick, tick count so this tells me, 
+whats tick count time 
+interval you looked 
+based that, you easily compute 
+distance that wheel has, turned 
+so this d here, this d could either ds 
+l ds r, so simply pi r 
+delta tick n so this actually gives 
+a way mapping ticks to distances 
+traveled, we saw in previous, 
+previous slide distance traveled we 
+map new position orientation 
+, fair enough 
+there is one major disclaimer i must make, 
+though that is, tadaa, drift a 
+system like this, drift 
+imprecise and, if using real 
+encoders source odometry, 
+probably going to run a little bit 
+trouble so, here, i want to show a video 
+this one cou rses i 
+taught recently you two 
+robots competing 
+looks like theyre following lines 
+theyre is following wave points 
+that laid down, theyre using a pda 
+regulator to get wave points 
+you see is that theyre getting a 
+little whack, 
+interesting thing here is one robot gets 
+top robot a 
+consequence wheel is spinning without 
+actually touching ground 
+you see robot a 
+completely confused idea is in 
+world so this would an example 
+drifts rather severe robot is 
+going in way wrong direction 
+fact that real encoders longer 
+correspond to whats happening 
+ground so going to use real 
+encoders a lot theyre used a lot in 
+robotics, we always need to aware 
+fact that themselves, 
+themselves, wheel encoders tell 
+full story a particularly robust 

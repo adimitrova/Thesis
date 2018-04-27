@@ -1,0 +1,170 @@
+next topic is interactive packing 
+so, so far weve discussed design 
+system here design 
+a, assisting laser cutting 
+so title, this word is titled 
+paccam material capture 
+interactive d packing efficient 
+material usage cnc cutting machines 
+so a program we want to address these, 
+to make an efficient layout 
+within a given material 
+so if you a laser cutter 
+cutting process opens a case 
+you cut main materials 
+you get this kind waste 
+you still see many useful regions, 
+so this is a kind waste 
+so we try to address this program, 
+introduce packing system 
+so approach is to develop 
+overlap free layout 
+that fits within given material 
+so you capture material holes 
+we apply overlap free layout 
+youll get 
+efficient usage material 
+so, let show you a video 
+so, first you capture device, 
+captures material in this way 
+system will get this image 
+that, you put, 
+pattern here 
+so this white is holes, hole, 
+red is, pieces 
+user interacts 
+manipulates 
+system automatically 
+applies collision detection, so 
+there will overlap, time 
+that, 
+you send this data back to laser 
+cutter, you will get result 
+there is waste 
+so yeah, this one shows a motivation 
+so this is a capturing process, 
+so we first need to calibrate 
+so to so 
+we put checkerboard patterns 
+system knows correspondence 
+between camera image 
+d d coordinate 
+taking picture, 
+a system applies image 
+processing to detect silhouette 
+in order to develop 
+a packing user interface we 
+first run observational 
+study to ask people to 
+take a look use 
+we design interactive system 
+so, basic structure is like this 
+use a one one moving around 
+layout 
+so, you see here is temporarily 
+turning collision detection so 
+you get flexibility 
+pure collision detection 
+we provided an operation to gather 
+pieces together, push away others 
+so, here, we pull everything upwards 
+here is a couple examples 
+so this is also used for, for, 
+an arrangement of, material 
+consisting many different patterns 
+so we proposed four techniques here 
+single one is pushing 
+so use a moving around 
+collision detection will 
+push materials away 
+second one is compress, so 
+if you select materials 
+select pieces a simple 
+pinch gesture you needed 
+highlighted materials parts comes 
+together to a pucked layout 
+also we also implemented 
+a tilting operation, so 
+gather pieces 
+move to one direction 
+one interesting operation 
+is collision snapping 
+i said, 
+system also temporarily turned 
+collision detection to get freedom 
+example, if you want to pull 
+this blue one to 
+side red one, you cannot this if 
+you always running collision detection 
+so in this case you know if 
+user is putting away in 
+system temporarily time collision 
+detection go to side 
+a little bit detailed 
+explanation work 
+so first user moves to piece 
+follows 
+if theres a collision 
+theres a collision force 
+a reaction 
+starts to rotate 
+rotation you two collisions 
+stops there 
+user continually, 
+continuously dragging farther away, 
+system detects that there is 
+way passing through, however, 
+user still wants to 
+so i, passing threshold 
+system will go this floating mode 
+in this floating mode, 
+system temporarily turn collision 
+detection physics simulation 
+so this floating object 
+follows users dragging 
+and, going back 
+passing almost 
+piece come back to original, 
+collision mode 
+so this is a collision snapping system, 
+so, again, 
+we use an open source 
+inaudible physics engine here 
+here, we need a dimensional 
+simple collision detection so 
+we use a box d physics engine 
+so a lot more, 
+original paper published paccam 
+published in 
+here we label 
+multtouch interaction 
+multitouch interaction 
+is popular recently, 
+many people proposing 
+different techniques 
+early one published in 
+called smart scape 
+i recommend you to take a look 
+also there many interesting, 
+there a lot interesting works 
+introduction razor cutting machines 
+one example is 
+one interesting example is called 
+introduction construction 
+interactive publication 
+functional mechanical devices 
+is, 
+user uses a laser pointer top 
+a razor copter to dial to space 
+we to caught to we 
+arrange target shapes material 
+so, thank you this is end 
+fabrication section 
+so in this week, 
+we introduced plush toy design, 
+beadwork design chair design, 
+design soft folding 
+we finally introduced 
+interactive packing methods to 
+efficiently use material 
+thank you 

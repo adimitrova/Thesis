@@ -1,0 +1,295 @@
+let us fun 
+kinetic energies 
+particles, you guys know that 
+thats mass two times 
+velocity squared essentially, 
+thats youve 
+this is vectorial form that 
+i dm, so 
+instead mass i dm two 
+thats essentially that 
+times inertial speed squared 
+im this in a vectorial way, 
+so r dot is my, you 
+know if r is inertial position vector, 
+i need to inertial velocity 
+thats first inertial time 
+derivative r, thats an r dot 
+im dotting itself, 
+thats going to give inertial 
+velocity magnitude squared 
+a vectorial way to write it, 
+a general way to write this 
+so thats 
+thats one dm, 
+i need whole blob 
+you simply integrate body 
+thats integral comes in 
+summing 
+so good, we kinetic energy 
+thats convenient form 
+we dont typically write this 
+way kind hard 
+we would like to break in terms 
+rc kinetic energy center 
+mass looking kinetic 
+energy center mass 
+that will help us separate rotational 
+stuff, deformational stuff 
+translational stuff 
+thats youll see 
+popping this 
+so lets this 
+r dot 
+r defined rc r, so r dot, 
+you put dots everywhere 
+again, vectorial form, dead simple, right 
+comes back 
+dont part b 
+part a we take time 
+derivatives vectorial parts 
+you plug this in 
+you carry various dot products 
+you guys know to basic 
+dot products in calculus 
+im going to that 
+so we end terms 
+and, kevin saying earlier, in 
+body intervals, anything thats rc 
+rc dot, going to things 
+that fixed body interval 
+every point in that blob 
+center mass 
+therefore, 
+center mass velocity 
+so we always treat quantities 
+constants integration 
+so you carry, you know, 
+this is a step im here, 
+im purposely not, i want you 
+guys to, you this 
+cough run notes, 
+thats going to stick 
+if we that, pulled 
+thing gets pulled here 
+end theres a factor 
+two half that cancels, 
+you also this term 
+one will go to zero 
+medal 
+one is going to zero 
+tom tom 
+is this one going to zero 
+thats always second question 
+first part is 
+might lucky 
+recognizes this part 
+trevor 
+well, we went that body 
+integral radius times 
+thats vector 
+radius 
+let correct quickly 
+thats position vector 
+position vector, yeah, 
+thats inaudible 
+radius would a scalar 
+crosstalk so 
+thats equal to zero 
+yes 
+take 
+derivative that 
+that still zero 
+exactly without dot this is nothing 
+center mass definition 
+we rewrote that instead mass 
+average location also saying that if 
+locations relative to center 
+mass summing ups to give 
+you zero 
+so integral little r times dn is zero 
+so therefore, derivative 
+zero is still going to zero 
+so this one, center mass location 
+this is, basically, 
+using center mass definition 
+that one will go to zero leaving 
+us this term this term 
+this term is nothing 
+total mass 
+so i a big m 
+so mass velocity squared, 
+so you see 
+blob, center mass acts like 
+a particle again, is really nice 
+if youre an orbit problem, 
+this would orbital energy 
+spacecraft basically 
+second part is this integral, 
+body integral r dot, so 
+thats position vector, 
+dm relative to center mass 
+get inertial derivative though 
+thats important 
+this is a dot 
+this is a body frame derivative 
+thats inertial derivative 
+we sum 
+so this is basically kinetic 
+energy center mass 
+in this form contains two parts 
+one part kinetic energy 
+comes rotation 
+if stuff is rotating 
+things could spinning, 
+that gives you that 
+kind kinetic energy 
+part is this is blobs, 
+you might deformational energy, 
+things changing shape 
+well youre redistributing mass 
+im gaining losing mass in this 
+system, im redistributing 
+so if you fuel slosh bouncing around, 
+thats one example you know 
+so you might deformational 
+energy happening here 
+so thats that is, 
+this is kinetic energy a jello, 
+written in form, basic form 
+now, we often want to power, 
+that means time 
+derivative kinetic energy 
+we that expression, broken 
+translational part cm 
+energy cm 
+if you differentiate this, 
+you come here 
+let show you that one trick 
+if you dont see that, 
+to go there 
+if you a vector, x dotted x 
+if i a scalar x squared 
+i take a time derivative scalar 
+i will simply times x times x dot, 
+right 
+simple 
+here, if you this vectorial 
+quantities i mean expressions 
+we see a lot vectors dotted 
+vectors again, especially 
+if you this you take a time 
+derivative here, im going to 
+take an inertial time derivative, so 
+i put dots vectors 
+chain rule, you would x dot, 
+dotted x, 
+plus x dotted x dot, right 
+is this 
+times x dotted x dot 
+i simply add two things 
+inaudible reverse order 
+right 
+answer here, 
+dot part is actually a scalar 
+so if you this in vector form 
+a dotted b is thing b 
+dotted a 
+if youre in matrix form this 
+would written a trans x 
+transpose x 
+right 
+equivalent 
+in that case too, 
+answer is a scalar 
+so scalar you transpose 
+scalar 
+so allows you to reverse matrix 
+order right transposes 
+this is nothing vector form 
+so here, here we end 
+times x times x dot, 
+you couldve rewritten this 
+putting dot first one 
+whatevers convenient in 
+analytical development 
+so practice that if you havent 
+thats i go r dot r dot 
+one half cancels two 
+thing here 
+little r dots theres a one half in front 
+that cancels two that 
+comes differentiation 
+this is you end 
+going to apply stuff 
+we know super particle 
+theorem that mass time initial 
+acceleration center mass 
+is equal to net external force 
+so thats good 
+so we plug in this becomes nothing 
+f 
+here little r dot we 
+to a little math 
+we knew that big r is rc plus little r, 
+so you put two dots everything 
+we inertial derivatives 
+quantities, 
+i plug that one in 
+so that will break this integral 
+rc double dot, dotted r dot 
+and, sorry, theres an r double dot 
+a rc double dot that plugs in 
+you break math, this is 
+form that youre going to 
+so this part is actually pretty much done 
+so power equation gives you 
+force dotted velocity 
+shift makes sense, 
+hopefully high school physics, 
+if you look power stuff 
+thats typically always force 
+times a velocity measure 
+thats instantaneous power 
+produced mechanically 
+parts, 
+going to to look 
+here, anybody see a term 
+thats going to go to zero 
+one end 
+yep, this one again, right 
+due to center mass property 
+things will pop everywhere 
+we love that, zero is great 
+really simplifies stuff 
+so going to see that one go 
+to zero this is nothing 
+mass times initial acceleration an 
+infinitesimal element that nothing 
+df, that little force 
+so body, this is general power 
+expression that you would to 
+you write, if you to 
+energy change between two points, 
+you would integrate 
+equations time 
+this is one form 
+you a substitution variables 
+this is a classic thing youve probably 
+seen you also force times 
+distance gives you energy 
+take put this system 
+so, you replace 
+theres different forms 
+you write this 
+this is general one 
+well use in class will 
+rigid body specific one, 
+i wanted to highlight 
+first general formulation 
+going to write later 
+this one doesnt make much 
+sense practically you right 
+you make rigid, well 
+a turn that would clear 
+this is we compute this 

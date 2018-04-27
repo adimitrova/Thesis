@@ -1,0 +1,222 @@
+[music]
+hello, i hope by now you have
+a general idea about embedded systems,
+the challenges that lie in this field,
+and their main characteristics.
+in this lecture,
+we will go into details of what components
+the embedded systems consist of.
+we are going to start by
+discussing on processing elements.
+in the course,
+we will cover embedded processors and
+field program level gate arrays, fpgas.
+so in the end of the course,
+you are capable of selecting
+a proper processing element
+to implement your own ideas.
+so here, i would like to start
+by giving you some ideas
+on what embedded processors and
+netfpgas are.
+well, we discuss embedded
+processors first.
+so what is a processor?
+it is an electronic device
+that works sequentially.
+this means that a processor makes
+computations in a serial manner,
+one after another.
+any computation,
+no matter how difficult it is,
+can be split into simpler,
+let's say sub-computations.
+those sub-computations might
+be split even further.
+an elementary piece of computation
+that cannot be split anymore
+is called an instruction.
+any piece of computation, given by let's
+say by our programmer, in order to be
+executed on a processor, should be
+split into a sequence of instructions.
+different kinds of processors can
+have different instruction sets.
+they are different for example,
+in the number of instructions or
+let's say in how complex simple
+instructions are in the sets.
+so what is good about this approach?
+and there should be oboisily something
+good in it since nowadays processors
+are widely used.
+the good thing is it's flexibility.
+nearly, any piece of computation can be
+represented as a sequence of instructions
+and therefore executed on a processor.
+that means we change the behavior
+of an embedded system
+just by changing the sequence of
+instructions it's processor executes.
+in other words,
+we only change the software.
+there is no need to change
+the architecture of the processor.
+the generality of such approach is the
+reason why it is used massively nowadays.
+let's just think about the huge number
+of applications that can be run on,
+let's say, cortex processors,
+which are present in smartphones,
+servers and many other devices.
+one metric for processors, as mentioned
+before, is the instruction set,
+which actually defines the inner
+structure of a processor.
+if we compared reduced instruction set
+computers and complex instruction set
+computers, we will notice that
+cisc instruction set is larger.
+and it has more complex instructions, so
+how does it influence
+the complexity of hardware?
+we are not going to go
+deeply into the details, but
+at least we can conclude
+that the piece of hardware
+that the codes instructions
+should be more complex for cisc.
+one of the most prominent representative
+of sisk is intel's x86 processors.
+though in this course,
+we are not targeting this kind
+of big general processors.
+i could not not mention a more kind
+of embeddable processors are for
+example risc micro controllers.
+if we look at atmel's avr family we
+will find a large variety of options for
+embedded applications.
+advanced risc, arm processors,
+as was mentioned before
+are widely spread nowadays.
+they've arrived from cortex m to
+cortex a family which are meant for
+different application domains in
+terms of competition out performance,
+energy efficiency and others.
+in further lectures, we will give more
+details about processors in general and
+microcontrollers in particular.
+so just how instructions are executed,
+what peripherals are used,
+what platforms exist, so stay in.
+now that you have an insight on what
+the nature of an embedded processor
+is we can move to the second
+representative of processing elements.
+field-programmable gate arrays, or fpgas.
+well, it is of course
+an electronic device, but
+unlike a processor it is meant for
+more application specific designs.
+so what does it mean?
+first, let's have a quick
+look at what an fpga is.
+fpga has reconfigured a logic with them.
+to make a simple example,
+let's say we have two input and gates.
+what kind of logic can we implement?
+we can for example use only one gate and
+implement a simple logic and function.
+however, we can implement a more complex
+circuit if we use both and gates and
+connected the output of the first gates
+to one of the inputs of the other gate.
+so, if a certain application demands
+the use of two gates, we can use both.
+this is a simplified way to explain
+what can be done with an fpga.
+an fpga has many logic blocks in sight,
+and
+when needed, these blocks can be connected
+together to build complex circuits.
+these connections, the inner structure
+of the fpga has to be configured
+according to the application's
+requirements before the execution.
+so, when we deal with an fpga,
+we make changes on a hardware level
+and fpgas hardware design is meant for
+certain applications.
+you can see now that there
+is no such flexibility for
+fpgas as there is for processors.
+we need to change the hardware design for
+an fpga every time there
+is a new application.
+there is no flexibility.
+the reasonable question
+is why then use an fpga?
+flexibility comes at the cost of
+performance, and energy consumption.
+indeed, in most cases, the same
+application implemented on an fpga,
+executes faster and consumes less energy
+than if implemented on a processor.
+there is one more thing which one needs
+to consider when working with an fpga.
+an fpga design is parallel in a sense
+that there is no sequence of operations.
+things happen in parallel.
+a good example is a four loop.
+if the loop is executed on a processor, it
+will be run one iteration after another.
+however, if the loop is
+implemented on fpga,
+a separate surrogate for
+each iteration will be generated.
+in a sense, iterations exist in parallel.
+now you can probably conclude
+that a fpga is meant for
+computationally heavy applications.
+such as for example,
+image processing or big data analytics.
+it is also interesting that an embedded
+processor can be implemented on an fpga.
+in this case,
+a processor is the application itself.
+there are several fpga vendors
+available in the market.
+the living one is xilinx,
+which has a wide variety of devices
+with different characteristics.
+we will discuss the main ones as well
+as the inner structure of an fpga in
+the following lectures, so
+there are interesting things ahead.
+well, to sum up the video, i would
+like to emphasize the main differences
+between a processor and an fpga.
+because these differences will impact the
+choice when selecting a proper platform
+to work with.
+a processor has a sequential nature
+at its core and provides flexibility.
+whereas, an fpga is more application
+oriented and provides hydro performance.
+if the main goal is efficiency, then
+an fpga would probably be a good choice.
+on the other hand, if we need
+to build a generic platform, and
+we have either no specific application or
+many applications in mind, then
+a processor would be a suitable solution.
+and also it is worth mentioning
+that sometimes the optimal solution
+lies between two limits.
+so a combination of a processor with
+an fpga may be a powerful tool.
+thank you for watching, and
+see you in the next video.
+[sound]

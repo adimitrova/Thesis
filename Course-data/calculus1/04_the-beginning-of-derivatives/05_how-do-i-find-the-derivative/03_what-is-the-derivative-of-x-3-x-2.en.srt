@@ -1,0 +1,319 @@
+1
+00:00:00,012 --> 00:00:03,446
+[MUSIC]. 
+You've heard of the, ask not what your 
+
+2
+00:00:03,446 --> 00:00:08,139
+country can do for you, but what you can 
+do for your country rule. 
+
+3
+00:00:08,139 --> 00:00:13,187
+These chiastic rules for limits. 
+The limit's the sum of the limits. 
+
+4
+00:00:13,187 --> 00:00:17,400
+Same thing is true for derivatives. 
+Let's go to the board. 
+
+5
+00:00:17,400 --> 00:00:21,772
+Here's the rule for derivatives. 
+The derivative of f + g. 
+
+6
+00:00:21,772 --> 00:00:24,963
+Is the derivative of f + the derivative 
+of g. 
+
+7
+00:00:24,963 --> 00:00:29,712
+In short, the derivative of the sum is 
+the sum of the derivatives. 
+
+8
+00:00:29,712 --> 00:00:35,522
+Why does this make sense? Well, think 
+back to what the derivative is measuring. 
+
+9
+00:00:35,522 --> 00:00:41,162
+The derivative is measuring how changing 
+the input affects the output. 
+
+10
+00:00:41,162 --> 00:00:47,166
+In this case, I want to know how changing 
+x affects the sum of f of x and g of x. 
+
+11
+00:00:47,166 --> 00:00:51,229
+Well, the sum is affected by the sum of 
+the effects. 
+
+12
+00:00:51,229 --> 00:00:55,622
+The sum of the derivative of f and the 
+derivative of g. 
+
+13
+00:00:55,622 --> 00:01:00,860
+Let' see this in a specific case. 
+Here's a specific case. 
+
+14
+00:01:00,860 --> 00:01:06,148
+The function f(x) = x^3 + x^2. 
+Let's differentiate this. 
+
+15
+00:01:06,148 --> 00:01:08,703
+I'm going to calculate d / dx 
+(x^3+3=x^2). 
+
+16
+00:01:09,722 --> 00:01:15,812
+Now this is a derivative of a sum, which 
+is the sum of derivatives. 
+
+17
+00:01:15,812 --> 00:01:21,476
+Now we have to figure out what's the 
+derivative of x ^ 3 and what's the 
+
+18
+00:01:21,476 --> 00:01:25,254
+derivative of x^2. 
+That's the power law. 
+
+19
+00:01:25,254 --> 00:01:30,266
+derivative of x^3 is 3x^2, 
+and the derivative of x^2 is 2x. 
+
+20
+00:01:30,266 --> 00:01:35,736
+And now there's no more d/dx's. 
+We've calculated the derivative. 
+
+21
+00:01:35,736 --> 00:01:41,491
+The derivative of x^3+x^2+2x. 
+Once we know this, we can figure out 
+
+22
+00:01:41,491 --> 00:01:45,318
+where the derivative is positive and 
+where it's negative. 
+
+23
+00:01:45,318 --> 00:01:50,659
+So, the derivative was 3x^3+2x and I want 
+to know where that's positive and 
+
+24
+00:01:50,659 --> 00:01:55,537
+negative, which values of x make that 
+bigger than 0, which values of x make 
+
+25
+00:01:55,537 --> 00:02:00,785
+that less than 0. 
+one approach to thinking about this is to 
+
+26
+00:02:00,785 --> 00:02:05,666
+factor through the x^2+2x. 
+I can write that as x(3x+2). 
+
+27
+00:02:05,666 --> 00:02:12,031
+And once I factor it like this I can 
+figure out the SIGN of this by figuring 
+
+28
+00:02:12,031 --> 00:02:15,872
+out the SIGN of these two terms 
+separately. 
+
+29
+00:02:15,872 --> 00:02:19,673
+visualize this as a direct whole number 
+line. 
+
+30
+00:02:19,673 --> 00:02:24,570
+So x, here's a number line. 
+X is positive when it is bigger than 0 
+
+31
+00:02:24,570 --> 00:02:29,392
+and negative when X is less than 0. 
+That's not too complicated. 
+
+32
+00:02:29,392 --> 00:02:33,909
+Well look 3x+2. 
+Well, 3x+2, I draw a number line for 
+
+33
+00:02:33,909 --> 00:02:37,691
+that. 
+The exciting point is -2/3. 
+
+34
+00:02:37,691 --> 00:02:42,671
+When x is less than -2/3, 3x+2 is 
+negative. 
+
+35
+00:02:42,671 --> 00:02:47,852
+And when x is bigger than -2/3's, then 
+3x+2. 
+
+36
+00:02:47,852 --> 00:02:51,255
+Is positive. 
+Now, I really don't care about x and 3x+2 
+
+37
+00:02:51,255 --> 00:02:54,274
+separately. 
+I want to put them together right. 
+
+38
+00:02:54,274 --> 00:02:57,886
+I want to know when their product is 
+positive or negative. 
+
+39
+00:02:57,886 --> 00:03:02,142
+So, I write down the product x * 3x+2 
+make a new number line here. 
+
+40
+00:03:02,142 --> 00:03:08,027
+I'll record both of these points -2/3 and 
+0 then I can think about what happens. 
+
+41
+00:03:08,027 --> 00:03:12,820
+When x is less than -2/3 then x is 
+negative and 3x+2 is negative. 
+
+42
+00:03:12,820 --> 00:03:17,452
+So the product is a negative * a 
+negative, which is positive. 
+
+43
+00:03:17,452 --> 00:03:23,734
+When x is between -2/3 and 0, then x is 
+negative but 3x+2 is positive and a 
+
+44
+00:03:23,734 --> 00:03:27,756
+negative times a positive number is 
+negative. 
+
+45
+00:03:27,756 --> 00:03:34,357
+And finally, when x is bigger than 0, 
+well then x is positive and also 3x+2 is 
+
+46
+00:03:34,357 --> 00:03:36,841
+positive. 
+So the Is positive. 
+
+47
+00:03:36,841 --> 00:03:42,508
+So, here on this number line, I've 
+recorded the information about when 3x^2 
+
+48
+00:03:42,508 --> 00:03:47,503
++ 2x is positive or negative. 
+Now we can use this information to say 
+
+49
+00:03:47,503 --> 00:03:52,772
+something about the graph. 
+Here's the graph of the function x^3+x^2. 
+
+50
+00:03:52,772 --> 00:03:58,081
+Goes up, down and up, And that's exactly 
+what you'd expect from the derivative, 
+
+51
+00:03:58,081 --> 00:04:03,069
+right? We calculated before that if 
+you're standing to the left of - 2/3's, 
+
+52
+00:04:03,069 --> 00:04:07,732
+then the derivative was positive, and 
+indeed the functions going up. 
+
+53
+00:04:07,732 --> 00:04:11,319
+Up. 
+Now once you get to -2/3, the derivative 
+
+54
+00:04:11,319 --> 00:04:17,816
+is 0 but then over here, between -2/3 and 
+0 the derivative is negative and indeed 
+
+55
+00:04:17,816 --> 00:04:24,405
+the graph is moving down until you get to 
+0 when the derivative of this function is 
+
+56
+00:04:24,405 --> 00:04:30,512
+positive again and the graph is going up. 
+Look, the sign of the derivative 
+
+57
+00:04:30,512 --> 00:04:35,218
+Positive, negative, positive is reflected 
+in the direction that this graph is 
+
+58
+00:04:35,218 --> 00:04:38,058
+moving. 
+Increasing, decreasing, increasing. 
+
+59
+00:04:38,058 --> 00:04:41,303
+Incredible. 
+By being able to differentiate x^2+x^3, 
+
+60
+00:04:41,303 --> 00:04:45,060
+we're able to gain real insight into the 
+graph of the function. 
+
+61
+00:04:45,060 --> 00:04:49,775
+We're not just plotting a whole bunch of 
+points and hoping that we can fill it in 
+
+62
+00:04:49,775 --> 00:04:55,655
+with a straight line. 
+By looking at the derivative, we know 
+
+63
+00:04:55,655 --> 00:05:01,308
+that the function is increasing and 
+decreasing. 
+
+64
+00:05:01,308 --> 00:05:06,733
+We're able to say something, for sure. 
+[MUSIC] 

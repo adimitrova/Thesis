@@ -1,0 +1,430 @@
+okay so, lesson one 
+getting started understanding graphics 
+sound try to make very, 
+basic program manipulating 
+i want to extend that idea so that 
+weve got to firststage application, 
+week application 
+if you a look intro video 
+running an app ios device 
+youve seen a little bit this already 
+so called sonic painter 
+application allows you to draw 
+screen makes a series 
+shapes time you 
+manipulate sounds using very, 
+basic functions 
+so quite a simple application 
+said that, there a number 
+applications that available 
+web that people pay to use, that arent 
+that much complicated this 
+key to making look nice is 
+really, really good sound 
+image integration, so that people really 
+feel that interactive 
+and, also mapping information one 
+domain to other, going to talk 
+a little bit to that 
+so basic idea is that we draw shapes 
+screen, slowly rub 
+around 
+we different brushes well, 
+im going to talk 
+you make a gesture to draw a 
+shape, plays back manipulates a 
+sound 
+thats idea behind sonic painter 
+so we map information 
+mouse to control different aspects 
+graphics 
+well, we need to think graphics 
+parameters specifically 
+whole plan is to make something that 
+looks much better someone 
+wheeling around mouse 
+essentially, someone 
+wheeling around a mouse 
+finger 
+to programmer to try make 
+look interesting that 
+there a couple techniques 
+you use, make that much easier 
+first one is mapping information 
+so we start map command 
+using to adjust color 
+you see, idea is we take 
+mousex position we map between , 
+is x equals , is right 
+leftmost part screen 
+width, so idea that is 
+that user moves finger 
+here to here, we get a number is 
+representative either width 
+we map that to a scale 
+between , marcos already 
+explained, thats range, 
+parameter range a color 
+now, this using this width 
+command, always tells us wide 
+application is currently 
+mapping in 
+so lets a look that in action 
+im going to make this really simple 
+changing brush to simple 
+brush, in fact, going to a 
+line 
+heres a line i need to sure that 
+im actually deleting right line 
+there, okay, yeah 
+let try run this 
+now, youll find is, if i refresh 
+this, will pick changes ive 
+made without to mess 
+much 
+we find, yeah 
+music theres a single line 
+im going to mute a second so 
+you cant hear, you see 
+im drawing a single line 
+youll able to see that desktop 
+version well if i refresh this 
+a single line is drawn 
+so lets go back to code see 
+that works 
+basically setting here, were, 
+going to talk audio in a 
+bit detail later 
+matts already explained we 
+load a sound we play back 
+so playing back sound, 
+getting red channel mousex 
+mapping the, to 
+width to a range to 
+getting blue, 
+mapping mousey, is 
+to width to a range 
+so that gives us red blue 
+weve also got a green 
+now, lets a look green 
+
+so green edges less 
+green in middle 
+we that 
+well, we get distance 
+center 
+dist function in processing allows us 
+to get distance 
+particular point to another 
+point, uses, quite fabulous to 
+this basically just, makes a triangle 
+figures hypotenuse 
+triangle is 
+so hypotenuse is, if you a right 
+angle triangle, bit that is 
+longest item aside 
+thats bit we want to work out, 
+this one point this 
+point 
+now, dist function that us 
+we give an xy coordinate a 
+starting point an xy coordinate an 
+ending point 
+tells us distance is 
+we use that to work 
+green color ought to 
+so dist this us 
+we get mousex mousey, is 
+the, mouse finger 
+is ipod ipad iphone 
+we see far that is 
+center is width divided , 
+height divided 
+so, lets see that works 
+so we this, we is 
+using that to adjust green 
+if we a look app itself, 
+you see greener we get away 
+center, likewise here 
+here 
+right 
+so weve got a nice mixture red, green 
+blue across entire range, across 
+entire screen 
+we also want to know, well, lets see 
+else we 
+we get speed 
+if we get speed, we use 
+distance between previous last 
+position current last position, 
+thats a good measure speed, 
+halfway traveled, right, 
+finger 
+so we get that distance, that tells 
+us fast moving 
+simple that 
+we also change alpha 
+we use speed value that weve got 
+to set bright alpha is, so 
+transparent drawing is 
+so faster we go, 
+transparent, sorry, less transparent 
+is, slower we go, 
+transparent is 
+we also set another variable called 
+line width, we use speed to 
+that 
+you see screen here 
+that if i go slowly, a fat 
+line, if i go fast, a thin line 
+also, i might want to constrain line 
+width so that doesnt go a 
+certain width 
+otherwise, i end a really 
+big, fat lines, i dont want them, 
+simply im going very, 
+slowly 
+so here, is using a 
+function called constrain, 
+saying that we want to constrain line 
+width, is this variable here to 
+between this value this value 
+between , so maximum line 
+width is always going to 
+okay 
+so, using techniques, we map 
+parameters mouse interaction to 
+color 
+we get distances mouse 
+pointer to different different parts 
+screen use that to control 
+aspects drawing 
+we also constrain certain elements 
+certain variables that weve created 
+a speed variable, tells us 
+far weve traveled between two 
+frames 
+we make sure that dont 
+cause massive changes in program 
+so we also different brushes 
+now, ive included brushes you 
+to a look 
+quite complicated 
+to you to spend time looking 
+
+theyre complicated 
+in fact, sometimes, therell over, a 
+little bit edge, theyre 
+right theyre to get you 
+started 
+makes a really good visual app 
+is really, really good brushes 
+youll know that you use photoshop, 
+one thing to drawing a line 
+screen 
+another thing to able to draw a 
+very, pretty pattern 
+so brush even an image 
+you load 
+well, in this case im is im 
+using the, basic shapes, 
+lesson one 
+basic shapes that comes 
+processing, circles rectangles 
+lines 
+to give you an indication 
+cool things you very, 
+limited material, to you to 
+expand that, really 
+weve done color, this is 
+shape 
+so, let show you 
+brushes 
+ill quickly demonstrate a few 
+
+so brush here, i to is make 
+is comment brush, refresh 
+apps 
+so i refresh 
+wait to finish loading 
+you see an ipad an iphone, 
+theres a little icon 
+there you go 
+so this is drawing a circle 
+youll notice that faster i go, 
+if you see that, faster i go, 
+bigger circle 
+thats a simple idea a brush, 
+so now, im going quite slowly ive 
+got small circles lines 
+still quite thick 
+curls less 
+ive also got this one, draws 
+squares instead, so thing, 
+using rectangles 
+loading here, you see 
+theres a little icon spinning around 
+there you go 
+this one produces a, one 
+square, a whole bunch squares 
+i think thats something is really 
+important to understand, 
+youve got one input, doesnt mean 
+you one inputs 
+you 
+so you take one input map to 
+lots others 
+ill show you we that in a minute 
+ill expand that 
+brush is a random selection lines 
+so, i draw ipad screen, we 
+see, we looks like, i guess 
+looks like kind bad tinsel 
+i say examples to get 
+you started 
+get varied thickness 
+depending speed you get 
+color variation 
+theres a few 
+you a look 
+but, this one is a bit interesting 
+this introduces another idea 
+symmetry 
+now, you use symmetry to easily 
+create order something 
+doesnt necessarily look like ordered 
+in this example, im is im 
+getting mouse position drawing 
+line way that i in 
+very, first approach that i showed 
+you 
+im also drawing a line 
+opposite side in xaxis 
+so anything i is mirrored, 
+you that, gives illusion that 
+somehow intentional 
+intentional 
+so if you a look, i this 
+looks like i a symmetrical 
+pattern, i 
+thats single, single 
+interaction is two interactions that 
+mirror other, ive got in sort 
+lateral symmetry 
+this symmetry is one methods 
+that you start to make stuff that 
+looks random, look ordered 
+symmetry is a cheap way getting 
+something beautiful 
+layers symmetry that you 
+add, often, attractive people 
+find things 
+always, depends 
+personal taste, one 
+things you explore if youre 
+interested in making, example, 
+concentric patterns kind 
+abstract patterns flower type shapes 
+arrangements 
+used time in lots 
+different forms art a 
+important aspect to computer graphics 
+a important way taking 
+something simple making 
+complicated 
+so i want to show you a advanced 
+version that symmetry sample 
+perhaps eight order symmetry 
+thats circles, let make 
+sure that right 
+thats, actually next 
+one 
+i known 
+yeah, so this is same, 
+eight borders symmetry 
+youll notice now, we get something 
+that looks, that a kind religious 
+appeal 
+if i turn audio up, we see 
+this is going to work 
+music im randomly drawing, 
+doesnt matter i draw, i get 
+symmetrical patterns 
+im literally, im paying attention to 
+im 
+its, coming 
+interesting stuff 
+thats ive got so many different 
+reflections 
+if im looking mirrors upon 
+mirrors upon mirrors upon mirrors 
+cheap trick, powerful 
+okay 
+last thing i want to talk is 
+sound 
+ill this quick i can, i 
+know you want to get 
+really easy to one 
+sound, you hear, weve got two 
+weve got bells weve also got 
+ambient wash 
+so im loading two sounds in exactly 
+way that matt showing you 
+music let mute this while i quickly 
+show you 
+we is a separate audioplayer, 
+audioplayer 
+player loads following exactly 
+way 
+so we one maxim context, we 
+two players 
+player is loaded here 
+we set new ping to true, 
+also balancing first time im 
+loading, is i must warn is a 
+lot louder bells 
+so im using volume command to turn 
+volume first one 
+then, im playing in this 
+mouse drag method 
+so i, mouse is dragged, 
+starts to play sounds that 
+silent 
+im also a couple cool 
+things, im going to talk in 
+detail in next lesson, 
+thats sound manipulation 
+this is a taste unknown 
+two things im to make 
+interesting is im altering speed, 
+you see here, im also altering 
+filter 
+now, speed is a really simple 
+equation im going to quickly show 
+you 
+player speed here is mousex divided 
+width divided 
+so wherever that i am, x, so 
+to width x divided width times , that 
+is fast i want to go 
+thats we get lovely 
+sounds, lovely sounds 
+music there we go 
+so i slow that right 
+also, ive got a filter ambient 
+wash, means 
+screen i am, brighter ambient 
+wash is 
+music im going to explain that in 
+detail next week 
+so, i think itll a great idea you 
+to take this example pick apart, 
+add sounds, add 
+brushes 
+try make something helps 
+you understand different aspects 
+graphics sound to give you a better 
+indication you might move forward 
+create an application this type 
+uses 
+music 

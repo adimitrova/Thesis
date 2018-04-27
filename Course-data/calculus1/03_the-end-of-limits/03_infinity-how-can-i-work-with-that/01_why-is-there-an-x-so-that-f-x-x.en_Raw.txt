@@ -1,0 +1,129 @@
+[sound] here's an application of the 
+intermediate value theorem i'm very fond 
+of. 
+here's how it goes. 
+suppose you've got a function f. 
+f is continuous in the closed interval 
+between zero and one. 
+and whenever x is between zero and one, f 
+of x is between zero and one. 
+so that's what you've got to suppose when 
+you get out of this. 
+then, there is a point x, x between zero 
+and one, and f of x = x. 
+it's telling you that there exists an 
+input. 
+so that if you apply f to that input 
+value, you get the output which is the 
+same as the thing you plugged in. 
+you call these things fixed points. 
+you imagine that f is moving around the 
+points between zero and one, 
+and you're finding a point x which 
+doesn't move a fixed point. 
+why is something like this true? 
+let's see. 
+let me use the intermediate value theorem 
+but i'm not going to apply the 
+intermediate value theorem to f but i'm 
+going to make up a new function. g(x) = 
+f(x) - x. 
+what do i know about g? 
+g's continuous. 
+f is continuous by assumption. 
+the identity function x is continuous and 
+differences of continuous functions are 
+continuous. 
+so, g is a continuous function and the 
+closed interval 01. 
+i also know some of the values of g. 
+what's g of zero? 
+well, g(0) is by definition f(0) - 0. 
+f(0) is between zero and one. 
+so i've got a number between zero and one 
+minus zero, 
+that number's at least zero. 
+i also know something about g(1). 
+g(1) is by definition f(1) - 1 f(1) is 
+between zero and one, it could be zero, 
+could be one. 
+but, a number between zero and one minus 
+one is less than or equal to zero. 
+what do i know altogether? 
+i've got a continuous function g, its 
+value at zero is bigger than equal to 
+zero. 
+its value at one is less than equal to 
+zero. 
+by the intermediate value theorem, this 
+gives me a point x so that g(x) = 0. 
+why do i care about finding a point x so 
+that g(x) is equal to zero? 
+well, if i take a look at what g(x) is 
+equal to, g(x) is f(x) - x. 
+so, i found a point x so that f(x) - x is 
+equal to zero. 
+i found a point x so that f(x) = x, i 
+found the fixed point. 
+so, we've seen why this is true. 
+let'd try to apply this to a specific 
+example life f(x) equals cosine x. 
+now, here i've got a graph of cosine and 
+that the graph of y equals cosine x. 
+now, what do i know about cosine? 
+i know cosine's continuous and cosine of 
+a number between zero and one is a number 
+between zero and one. 
+so, our statement applies to it. 
+there's a fixed point for cosine. 
+there's some value of x between zero and 
+one so cosine of x equals x. 
+let's see if we can find that on a 
+computer. 
+okay. 
+i've got cosine loaded up on to my 
+computer. 
+cosine of one is about 0.54. 
+let me decrease the input. 
+and i notice that cosine of 0.68 is 0.77. 
+here the input is smaller than the 
+output. 
+let me increase the input. 
+now, notice what happened. 
+now the input is 0.74 but the output is 
+smaller than 0.74. 
+cosine of 0.74 is just 0.73. 
+now, it decreased the input. 
+oh, the opposite thing happened. 
+now the input is smaller than the output. 
+now, i'll increase the input. 
+i'll decrease the input. 
+increase the input. 
+and you can see that i, i can sort of 
+zoom in or narrow in on the correct value 
+of of x so that cosine of x is equal to 
+x. 
+sees in the computer i found that this 
+point here is at about 0.739. 
+so, without a number between zero and 
+one, cosine of that number is itself. 
+it's a fixed point for cosine. 
+these kinds of fixed point theorem 
+statements that assert the existence of 
+fixed points, 
+they pervade mathematics. 
+here's another example. 
+i've got a map of ohio right here. 
+let me apply a continuous function to 
+this map. 
+[sound] i'm going to throw it down to the 
+ground, 
+stomp on it. 
+and now let's take a look at it. 
+[sound] the question is, is there a point 
+on the map which is exactly above its 
+corresponding point in the ground? 
+and indeed there is. 
+i'll use this pin to stab through that 
+point. 
+[sound] 

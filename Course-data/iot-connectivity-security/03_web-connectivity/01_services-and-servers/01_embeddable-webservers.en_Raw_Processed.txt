@@ -1,0 +1,168 @@
+music 
+hello 
+welcome back to course 
+web connectivity 
+security in cyber physical systems 
+this lesson starts a module web 
+solutions embedded systems 
+in this video lecture, 
+we will walk you web servers 
+that inherently designed 
+low power embedded systems 
+we call embeddable web servers 
+first all, is a web server 
+if you following 
+lessons in this course, 
+you might remember that in an earlier 
+lecture we talked key 
+technologies that enable 
+world wide web 
+technologies html, 
+http webservers 
+http discuss in 
+detail in lessons 
+today, we will look web servers 
+protocol http works 
+a client server model 
+a client sends a request to a server 
+server responds 
+therefore, web servers 
+applications that accept, read 
+respond to http requests clients 
+one principles a web server is 
+that always responds to a request 
+response information that 
+user requested an error message 
+server will respond 
+if server is 
+busy to fulfill a request 
+will send an error 
+message a status code 
+indicating that temporarily busy 
+next question you might is, 
+okay, i know that i to request 
+a web server, 
+i identify access one 
+this is urls 
+url stands 
+uniform resource locator 
+name suggests, is used 
+to identify resources web 
+screen is an example url 
+three parts 
+first is protocol, 
+in case, is http 
+second is ip address 
+machine web server is running 
+third is location 
+resource 
+file that we want to 
+access that machine 
+so least, a web server 
+able to understand http urls 
+next, we will look web servers 
+designed lightweight use 
+you computer you want 
+to access web, you open a browser 
+type url web server 
+that you want to access 
+similarly, if you want 
+embedded device 
+sensor to access web, 
+you dont need a web server 
+you need is a small client that 
+send receive http requests 
+simple enough 
+if someone else web wants 
+to access embedded device sensor 
+you will need a web server 
+remember, web servers comes 
+in sizes shapes 
+resource heavy ones 
+like apache to lightweight 
+ones like inaudible 
+nginx 
+we looking web servers that 
+will run devices a few megabytes, 
+even kilobytes, ram 
+limited processing power 
+web servers that small enough that 
+you execute part 
+standard application code 
+we will look two small, 
+lightweight web servers, 
+smews mongoose 
+smews stands smart 
+mobile embedded web server 
+is developed researchers 
+lille university in france 
+run devices 
+low bytes ram 
+kilobytes flash memory 
+supports multiple connections 
+doesnt require operating system 
+to installed in system 
+tcpip stack 
+this web server comes a 
+compact complete package 
+mongoose is another embeddable web server 
+open source 
+free noncommercial use 
+mongoose is advanced 
+also heavier smews 
+list features that mongoose 
+supports is screen 
+constantly developed 
+features added 
+we tested an implementation 
+mongoose in lab able to 
+handle to , clients million 
+request in total test set 
+to show you to use an embeddable 
+web server in application, 
+we will use mongoose 
+lets look an example scenario 
+imagine you a temperature 
+sensor whose value 
+you would like to access via browser 
+we will go much detail 
+well explore basic 
+functions that we need to implement 
+scenario we defined 
+first all, include mongoose 
+header file c program 
+next we will use a function 
+mongoose api 
+application programming interface, that 
+enables us to handle incoming requests 
+in this function, we will specify 
+happens a user access 
+a specific url 
+uniform resource locator 
+if you look line number , 
+we defined that if access uri 
+uniform resource identifier is temp, 
+program take three actions 
+call a function to check temperature, 
+send 
+temperature back 
+close connection 
+last step is to build main 
+function call web server 
+that is done is shown screen 
+thats 
+in three simple functions you 
+make applications 
+devices respond to http requests 
+a last step in this example, 
+if you go to browser type url 
+in form shown screen, 
+you will get temperature text 
+to summarize 
+in this lesson, 
+we learned basics web servers 
+looked an example 
+web server application 
+in next lecture, we will look web 
+services dominant technologies 
+sound 

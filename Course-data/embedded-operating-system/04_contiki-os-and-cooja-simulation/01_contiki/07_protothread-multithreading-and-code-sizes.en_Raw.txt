@@ -1,0 +1,172 @@
+[music]
+welcome.
+in our previous videos, we examine
+the many structure of contiki core and
+other features.
+now, we are going to discuss one of
+the most important features of contiki
+that is contiki protothreads.
+in order to provide sequential flow of
+control, contiki provides protothreads
+instead of using complex state machines or
+full multi-threading.
+protothreads are lightweight and
+stand as stackless threads with only
+two bytes of memory per thread.
+one of the benefits of using
+contiki's protothreads is that
+systems overhead can be small
+compared to other kernels.
+this comes as a result of sharing
+the stack by old protothreads.
+this has the additional benefit that
+context switching can be done easily
+by stack rewinding.
+it is more efficient to implement contiki
+protothreads than applying traditional
+ways of multithreading on wireless
+sensor network applications.
+contiki's protothreads
+are extremely lightweight.
+similar to other modules and
+processes in contiki, protothreads
+are completely written in standard c.
+this avoids any extra requirement for
+using and compiling protothreads.
+now you have some idea of
+the structure of protothreads,
+you may wonder how they really work.
+a protothread basically works
+within a single function and
+cannot span over other functions.
+it is possible for
+a protothread to call another function,
+however it cannot plug the flow
+inside the called function.
+some of the popular applications using
+protothreads are memory constraint
+systems, event driven protocol stacks,
+deeply embedded systems and
+sensor network nodes.
+in order to give you a complete
+view of contiki protothreads,
+we are going to discuss
+how they are implemented.
+protothreads are implemented using
+local continuations, which are used
+to present the current execution state
+of a program at the specific places.
+a local continuation can be implemented
+using one of the following three ways.
+these are machine specific assembler code,
+standard c constructs,
+or compiler extensions.
+the first way can be done by saving and
+restoring the processor state,
+except for the stack pointers.
+as a result, each proto-thread uses
+around 16 to 32 bytes of memory.
+the second way of using a standard c for
+implementation requires only 2 bytes
+of state information per protothread.
+although this approach has slower memory
+overhead it still has some challenges and
+restrictions.
+the last method is to
+use certain c compilers
+which have a specific c extensions for
+implementing protothreads.
+for example,
+a gcc version supporting label pointers
+can be a good candidate to perform this.
+as a result, only four bytes of
+ram per protothread are required.
+now, i will show you an example of sealed
+code of protothreads in this slide.
+please take your time and
+look at the construct in detail.
+we are now going to explore another
+important concept supported in contiki,
+that is preemptive multi-threading.
+instead of implementing multi-threading
+in the core, kontiki implements
+multi-threading as a library on
+the top of the event based kernel.
+this gives the advantage that
+the library is only linked
+with applications built with the need for
+multi-threading support.
+multi-threading is implemented
+by using timer interrupts.
+the implementation is
+divided in two parts.
+a platform specific part and
+a platform independent part.
+unlike a conventional contiki
+processes discussed previously,
+each thread in multi-threading
+requires a separate stack.
+they run in separate threads until they
+yield explicitly or get preempted.
+the multi-threading library provides
+a set of api's for easy interaction.
+some example methods of multi-threading
+api are shown in this slide.
+have you ever heard of
+over-the-air programming?
+over-the-air programming is
+a simple contiki protocol
+to program the entire network of sensors.
+basically, the protocol sends a single
+program binary to a destination node or
+concentrate node via
+point-to-point communication.
+their received binary is stored in first.
+when the whole program
+is completely received,
+the protocol continues to propagate the
+binary program to other neighboring nodes.
+in cases of packet loss,
+negative acknowledgment is
+sent to the concentrate node.
+then the node starts to
+repair data packets.
+it is convenient to use the protocol
+to upgrade the whole network of
+sensors quickly.
+let's start to analyze
+the code size of contiki.
+to see how large it is and to do code
+size comparisons between contiki and
+other embedded oss,
+there are some strict requirements for
+an operating system of embedded
+wireless sensor network devices.
+these requirements arise due
+to resource constraints.
+memory, which is one of the most
+precious resources of embedded devices,
+must be considered when
+choosing a suitable os.
+let's examine the minimum ram and
+rom required to run a simple
+wireless sensor network application.
+note that ram and rom usage vary
+depending on the actual application.
+for instance, a simple wireless
+sensor network application
+takes less than 2 kilobytes and
+30 kilobytes respectively.
+please take your time to see this slide
+which shows detailed compile code size and
+ram usage of a contiki always compile for
+two architectures.
+the texas instruments msp430 and
+the atmel avr.
+so this brings us to the end of the video.
+i hope that you got a good understanding
+of contiki protothreads and
+multi-threading.
+thank you for participating and
+i hope to see you in upcoming videos.
+[sound]

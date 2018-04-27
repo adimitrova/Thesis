@@ -1,0 +1,97 @@
+if you pick vector components, this is 
+written in a corner frame, 
+independent way 
+im taking cross product operator 
+representing in a matrix form 
+to actually numerically compute it, 
+youd to take r, r, r 
+first rule becomes minus 
+r plus r, right, you break 
+that means youve picked 
+a particular body frame 
+so if you that that matrix 
+minus sign, gives you this definition 
+if you replace r, r, r x, 
+y, z this look familiar 
+you would y squared 
+plus z squared, x squared plus z squared, 
+x squared plus y squared 
+different 
+moments inertia definitions 
+we diagonal 
+terms that appear well 
+so generally, to a rigid body 
+inertia tensor, is im showing 
+here, will a three three matrix 
+you numerically evaluate 
+to so, theres two conditions 
+one, weve picked 
+point taking moments 
+rs defined relative 
+to center mass 
+you numerically evaluate it, 
+you pick a particular coordinate frame 
+say, okay, one access point is forward 
+second one is to left 
+third one is 
+if you pick a different coordinate frame, 
+you would different components 
+you get a different inertia matrix 
+representation inertia tensor 
+inertia tensor is really an invariant, 
+thats 
+this space craft one inertia tensor 
+we numerically express 
+theres an infinity answers, 
+i could pick a infinity body frames 
+to break vectors 
+tildes compute this 
+this body integral is fun 
+gets tedious 
+cat programs love this 
+know every nut 
+bolt panel fuel tank is, 
+everything that goes spacecraft 
+so simply to sum up, know 
+location, this math, times dn 
+sum everything up, 
+spits in a heartbeat 
+analytically 
+a little bit tedious, so 
+we will look tricks that we dont 
+to redo this integral every time 
+if i taking moments this 
+point, i putting this end 
+a robot arm 
+i need movement this point 
+i to redo this math 
+so angular momentum expression, 
+we said, hc 
+you already identified that term 
+nothing inertia tensor 
+i writing ic times omega 
+there is 
+notational subtlety here 
+here i picked a particular bonding frame 
+here i specifying body 
+so im really equating matrix math is 
+equivalent to this tensor vector math 
+inertia tensor, think 
+a twodimensional vector, right 
+i write quantities in a general 
+way, i evaluate vector i 
+to a coordinate frame to 
+break components add 
+subtract 
+you write in 
+a coordinate agnostic way 
+thats im here 
+im saying, if this is b frame, 
+this better in b frame 
+otherwise, youre adding apples 
+oranges 
+but, this also in q 
+frame r frame, doesnt matter 
+in vectorial way, we 
+write tensor operator like this 
+so thats inertia tensor 

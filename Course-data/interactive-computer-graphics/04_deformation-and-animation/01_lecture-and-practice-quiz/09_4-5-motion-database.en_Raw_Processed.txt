@@ -1,0 +1,242 @@
+okay 
+so next task, next topic is motion 
+database 
+so work we introduce here is a 
+retrieval 
+visualization human motion data via 
+stick figures 
+motivation here is there is a 
+large capture database, motion capture 
+database available 
+so you loads human motion 
+captured, lots 
+so combining you 
+create interesting animation easily 
+however, problem is that very, 
+difficult to find desired motion 
+two problems, difficult to see 
+whats 
+in database already, so browsing 
+difficult 
+another problem is that 
+difficult to search 
+you may want to search specific 
+motion, specifying desired emotion is 
+easy 
+so thats a problem 
+approach is to use comic visualization 
+stick figure representation 
+stick figures comic visualization 
+search, enabling us to use 
+image motion capture data in this kind 
+comic strip like representation 
+so in this way you get emotion 
+watching 
+a static representation you get 
+idea motion 
+another is a sketch based search 
+so you quickly sketch a desired emotion 
+system automatically delivers 
+
+whats interesting here is that 
+user draws a pose 
+user also specify motion, 
+trajectory, 
+give a joint to find target motion, 
+efficiently 
+so, let show you a video 
+so 
+here is a representation, taken this d 
+motion input 
+system creates this motion 
+representation 
+looking this comic you 
+understand concept motion 
+this is stick figure sketch based 
+search 
+left you draw a query 
+system continuously shows 
+search result given this new input 
+so fast we show generation stick 
+figure comic strip motion 
+so this is input, animation 
+we analyze speed, we 
+get key poses, this way 
+we select effective 
+viewing angle, render 
+results 
+that is 
+you get a inventive presentation 
+here is a couple examples 
+here is in relation to pose itself, 
+system also shows dynamic, 
+projectory 
+to provide information 
+blankaudio 
+so this is an example database 
+browsing 
+so usually in order to browse this kind 
+data base, you 
+to watch you draw motion 
+one one 
+here you quickly see whats going 
+looking go view 
+so next part search 
+so, left side you draw, sketch 
+desired shape stick figure 
+so head, leg, body, you 
+see system continuously provides 
+feedback a matching result 
+blankaudio 
+interesting here is that in addition 
+to pose 
+you control this kind project 
+speed, speed line 
+so this specifies movement direction 
+so here in this way you move the, 
+identify shape that waves hand 
+this way 
+so this filter motion top to 
+
+here is opposite motion 
+so we found that this kind speed 
+runs is useful this 
+unintelligible specific motion 
+blankaudio 
+user retrieve longer sequence 
+sketching 
+multiple sequences like fast kick, next 
+punch 
+something next, you got 
+
+system searches a motion clip that 
+satisfies this request 
+okay, so let briefly describe 
+algorithm 
+so first is visualization, next is 
+search 
+so visualizations, one question to 
+answer is what, pose to use 
+you know, you long sequence, so many 
+poses, 
+to pick couple important 
+key poses 
+so here in this system, weve used a scene 
+
+character changes motion, movement 
+direction motion is stopped 
+here, you uses, here direction 
+suddenly 
+changes, so we pick unknown 
+pose 
+picking unknown poses next 
+question is viewing angle to use 
+there many ways to lend specifically 
+shape 
+in d, so you dont to identify a 
+effective view, we 
+use a perpendicular, a new direction 
+is perpendicular to movement 
+direction 
+so here an example, the, this 
+character 
+is making a kicking motion, we believe 
+that this 
+motion, side view, is better front 
+view 
+you see motion leg 
+so we compute trajectory joint, 
+moving joint, 
+we get a direction 
+perpendicular to prominent motion 
+search 
+so search, one key observation we got 
+is, 
+joint, specific xy coordinator, joint 
+locations accurate 
+in users former sketch, you know, 
+joint 
+unknown changes so much, is so 
+unstable 
+so we cannot rely joint location, so 
+basic positions 
+however, we unknown orientation joint 
+angle, is relatively stable 
+unknown in former user sketch 
+so we, we decided to use a d direction, 
+orientation 
+joint, bone, a key 
+search 
+another important thing is that there 
+multiple matching 
+possibilities, so we consider 
+possibilities in search 
+example, you now, if you a sketch, 
+this kind character 
+user draws one arm one leg 
+so there so many possibilities 
+this represent left leg right leg 
+this represent left arm right 
+arm 
+so we consider possibilities 
+
+we turn watch result 
+priorities 
+okay 
+so here is a summary 
+so we presented a efficient access to 
+large motion capsule database 
+so we presented comic base visualization, 
+sketch base search 
+we discussed iden, identification 
+keyboards is directions 
+we, measurements that we 
+use bone direction search 
+so to learn more, original paper is called 
+retrieval 
+visualization human motion data by, 
+via stick figures 
+comicstrip presentation, we get 
+idea a 
+comic chat system, takes a chat 
+communication sequence 
+inaudible generates comic strips 
+representing chat conversation 
+also theres a paper d shape 
+retrieval, using sketching input, 
+this is 
+called search engine d models 
+this 
+interesting little paper to look 
+
+finally, posing 
+character posing stick figure 
+already explored in 
+a paper called sketching interface 
+articulated figure animation 
+so take d stick figure illustration 
+
+generate smooth d animation 
+multiple, stick figures 
+use motion capture 
+okay, so this is a summary fo this week 
+so in this week we discussed formation 
+animation 
+so instead taking care a rigid d 
+shape 
+we we discussed to control articulated 
+character also form shapes 
+we discussed clothing manipulation, 
+to put clothing that character 
+layer operations, to store 
+layers in stacked clothing ropes 
+we discussed special key frames to 
+make smooth animation articulated 
+characters 
+procedure deformation means to 
+generate 
+animation jelly fishes wild 
+find way we discussed 
+to efficiently access motion 
+calculator database 
+so, thank you 

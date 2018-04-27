@@ -1,0 +1,43 @@
+[music]
+well now, it's time to do some calculus.
+calculus is all about relationships.
+all throughout the world,
+there's these quantities.
+and some of those quantities
+are connected together.
+well how so?
+maybe one of those quantities is
+the input to some sort of machine,
+or some sort of mathematical expression
+that transforms that quantity in
+to a new quantity, an output quantity.
+maybe two of those quantities are forced
+to vary together for some reason.
+maybe you've just got a table
+of numbers that tell you
+how to take certain input values
+to certain output values.
+maybe you've got a graph that
+you're reading that tells you
+how to take an x coordinate and
+output a y coordinate.
+but regardless of how you
+conceptualize this idea,
+there's relationships between different
+quantities in the real world and
+we're often encoding those
+relationships through functions.
+the other big idea i wanna
+think about now are limits.
+sometimes i'm not just interested in
+a function's value at a single point.
+sometimes i wanna know what happens
+if i evaluated that function
+at nearby points as well.
+and try to make sense of that precisely,
+that's what limits are gonna do for us.
+so to begin our quest in calculus,
+we're gonna look at two big ideas.
+we're gonna look at functions and
+we're gonna look at limits.
+[music]

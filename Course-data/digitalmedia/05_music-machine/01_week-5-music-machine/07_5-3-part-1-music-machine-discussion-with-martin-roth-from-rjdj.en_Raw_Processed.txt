@@ -1,0 +1,225 @@
+sound 
+so 
+week six 
+you know 
+audio applications 
+thing music 
+interactive music is much 
+accessible ever 
+really quite good fun making 
+interactive music applications that 
+run iphone, ipad 
+android devices 
+theres so 
+many people want to use 
+i thought well showing 
+you a really easy way 
+making a very,very cool scent, is 
+going to in a moment, 
+incorporating stuff that 
+matts talking i thought itd 
+really good if i got 
+want to friends martin 
+so come talk to you so 
+yeah basically this is martin roth, 
+hes director research 
+a company called rjdj 
+so rjdj specialize in interactive 
+audio applications mobile devices 
+so yeah martin you tell us a little 
+bit applications that 
+you guys made 
+absolutely mick thank you 
+well first app back in 
+we started original rjdj app 
+that really one first times 
+anyone a mass scale able to 
+interact music 
+you able to download 
+we call seen 
+basically an interactive 
+user track onto you iphone 
+interact either 
+microphone tilting phone 
+around accelerometer would 
+influence you listening to 
+perhaps, we use internet 
+to find things what, 
+going around you 
+instance like 
+mmhm 
+so, you imagine that you 
+walking street 
+music that you listening to, 
+would change tempo, 
+according to fast you moving 
+so if you moving slowly 
+music might be, you know might also 
+a relatively low tempo, might 
+a little bit relaxed, little chill 
+if you started running 
+would tempo pick up, 
+you could also change 
+energy in music 
+would become much energetic, 
+much exciting, much thrilling 
+so kind stuff you 
+ive seen 
+earlier apps well 
+yeah 
+youve obviously done 
+quite large scale apps 
+that movie tieins 
+yeah, thats right 
+one first movie tiein apps that 
+we called inception, that 
+came a end , along with, 
+alongside dvd release film 
+inception app worked 
+extremely well film, 
+film is dreams, 
+going to dreams within dreams, 
+losing a bit in this, 
+in dream environment 
+certainly one thing that kinds of, 
+kinds music that we 
+making time, one thing that lent 
+well to, a kind dream, 
+psychedelic experience 
+worked incredibly well 
+people in fact really worried 
+that if went to sleep 
+this thing 
+would never wake 
+laugh a real customer complaint 
+cough 
+yeah, certainly 
+since we also done 
+movie tieins 
+dark knight, there even 
+new ones coming pipe line 
+that is really cool 
+so, so thats main stream that 
+interactive reactive music there 
+yeah, absolutely 
+i think something that will 
+become even mainstream in, 
+in coming years 
+philosophy behind rjdj 
+is always that 
+last year many decades 
+music frozen 
+we record music, 
+we import to medium, whether 
+vinyl, cassette, cd days mp 
+youve made recording 
+that music, done, 
+stays like that forever 
+every time that you go back 
+listen to that piece music, 
+exactly 
+technology that we 
+in palm hands today, 
+we so much 
+we allow the, 
+musician to give fans 
+different variations that 
+in mind a piece music, 
+we allow fans to explore 
+different variations 
+right 
+instance, 
+you imagine video games, 
+you go you driving 
+plot, you driving happens 
+you go explore scene 
+video game developers created 
+we would like to able to give 
+opportunity to musicians 
+yeah right 
+interesting well 
+landscapes changing isnt 
+a little bit a development 
+particularly in terms audio 
+web audio api, so 
+using part this coursera program 
+instead native coding 
+audio the, devices 
+you think it, 
+you think a good step forward 
+oh, 
+absolutely i love web audio api 
+in past weve done 
+everything natively course 
+we needed performance 
+now, that web audio apis coming 
+along standardized to 
+degree, certainly seen support 
+across desk top browsers 
+also mobile browsers 
+mmhm 
+gives gives 
+developer opportunity to 
+develop audio experience 
+truly able to deliver to many 
+platforms without to a lot 
+work in order to adapt code 
+whether experienced to 
+one particular platform 
+yeah, so i think weve found 
+really useful delivering this program 
+mmhm 
+also i think weve gotta kind 
+theres an instinct 
+whats going to happen 
+that web audio api is there 
+you sense this huge 
+amount music interactive music, 
+reactive music 
+music instruments web 
+this huge kind number 
+applications to spill 
+oh sure 
+almost if inaudible yeah 
+i would say right people 
+really experimenting, 
+theyre trying to figure whats 
+possible like this course 
+mm 
+people become 
+comfortable technology, 
+understand, 
+limits 
+start pushing 
+limits, im extremely excited 
+yeah 
+extremely excited 
+well, thats great 
+i really appreciate you coming 
+talking to us 
+i know that youre busy, 
+you got to shoot 
+talk to music types 
+yeah 
+we going to go 
+web audio api kind 
+based synthesis stuff now, and, 
+yeah, i kind of, 
+going to give you 
+a quick burst sounds like 
+kind of, you know 
+yeah, this is one 
+so this is app that 
+going to talking 
+music 
+so you get picture 
+music 
+so thats working today 
+mick, thank you much 
+inviting 
+thats great 
+youre a true musician, 
+gentleman scholar 
+laugh yeah, well, 
+thats say 
+music 

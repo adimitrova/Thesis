@@ -1,0 +1,264 @@
+1
+00:00:00,012 --> 00:00:06,229
+, How do we prove the quotient rule? Well
+first, we should remember what the
+
+2
+00:00:06,241 --> 00:00:12,719
+quotient rule says. So, remember what the
+quotient rule says. It says the derivative
+
+3
+00:00:12,731 --> 00:00:19,042
+of f over g is the derivative of f times g
+minus f times the derivative of g all over
+
+4
+00:00:19,054 --> 00:00:23,747
+the value of g. Not the derivative of g.
+Just g of x squared. But we haven't
+
+5
+00:00:23,759 --> 00:00:28,758
+actually seen a proof of the quotient
+rule. Why should the derivative of a
+
+6
+00:00:28,770 --> 00:00:34,326
+quotient be governed by that crazy looking
+formula? Well, one way to justify this
+
+7
+00:00:34,338 --> 00:00:39,514
+formula is to combine the chain rule and
+the product rule. So, we're trying to
+
+8
+00:00:39,526 --> 00:00:45,127
+build our way up to the quotient rule so
+we can first do the simplest possible case
+
+9
+00:00:45,139 --> 00:00:49,886
+the quotient rule by hand if you like.
+What's the derivative 1 over x? Well, 1
+
+10
+00:00:49,898 --> 00:00:54,416
+over x is just x to the minus first power.
+And if I differentiate this, that's the
+
+11
+00:00:54,428 --> 00:00:58,427
+power rule. We saw how to do that before.
+That's minus 1 times x to the minus second
+
+12
+00:00:58,439 --> 00:01:02,715
+power. Another way to write this is minus
+1 over x squared. Now, if you weren't
+
+13
+00:01:02,727 --> 00:01:07,575
+certain why the power rule held, you could
+also have calculated this derivative by
+
+14
+00:01:07,587 --> 00:01:11,980
+hand by going back to the definition of
+derivative. This is actually how we
+
+15
+00:01:11,992 --> 00:01:16,360
+justified the power rule for negative
+exponents. This limit, you can also
+
+16
+00:01:16,372 --> 00:01:21,696
+calculate, is minus 1 over x squared.
+Knowing how to differentiate 1 over x is
+
+17
+00:01:21,708 --> 00:01:27,772
+enough for us to differentiate 1 over g of
+x by using the chain rule. So, we're going
+
+18
+00:01:27,349 --> 00:01:33,224
+to use the chain rule. So, let me first
+make up a new function that's called f of
+
+19
+00:01:33,236 --> 00:01:37,865
+x at function 1 over x. So then f prime of
+x is minus 1 over x squared. The
+
+20
+00:01:37,877 --> 00:01:44,355
+derivative that we just calculated. Now,
+if I wanted to calculate the derivative of
+
+21
+00:01:44,367 --> 00:01:50,461
+1 over g of x. Well, that's the same as
+the derivative now of f of g of x, since I
+
+22
+00:01:50,473 --> 00:01:56,923
+defined f to be the 1 over function. And
+by the chain rule, the derivative of this
+
+23
+00:01:56,935 --> 00:02:03,211
+composition is the derivative of the
+outside at the inside times the derivative
+
+24
+00:02:03,223 --> 00:02:08,531
+of the inside. The derivative of f is
+minus 1 over its input squared. So, f
+
+25
+00:02:08,543 --> 00:02:13,265
+prime of g of x is minus 1 over g of x
+squared. That's looking good. That's like
+
+26
+00:02:13,265 --> 00:02:19,528
+th e denominator of the quotient rule.
+Alright, times g prime of x. so, the
+
+27
+00:02:19,540 --> 00:02:24,814
+derivative of 1 over g of x is minus 1
+over g of x squared times the derivative
+
+28
+00:02:24,826 --> 00:02:29,785
+of g. Now, I've got the product rule. So,
+if I can differentiate f and I can
+
+29
+00:02:29,797 --> 00:02:34,970
+differentiate 1 over g of x, I can
+differentiate their product which happens
+
+30
+00:02:34,982 --> 00:02:40,188
+to be the quotient, f of x over g of x.
+So, I want to differentiate f of x over g
+
+31
+00:02:40,200 --> 00:02:44,758
+of x, right? I'm trying to head towards
+the quotient rule. But I'm going to
+
+32
+00:02:45,168 --> 00:02:50,713
+rewrite this quotient as a product. It's
+the derivative of f of x times 1 over g of
+
+33
+00:02:50,725 --> 00:02:56,474
+x. Now, this is the derivative of products
+so I can apply the product rule, which I
+
+34
+00:02:56,486 --> 00:03:02,727
+already know. And that's the derivative of
+the first times the second, plus the first
+
+35
+00:03:02,739 --> 00:03:08,898
+times the derivative of the second. But we
+calculated the derivative of the second
+
+36
+00:03:08,910 --> 00:03:14,631
+just a moment ago. The derivative of 1
+over g of x is minus 1 over g of x squared
+
+37
+00:03:14,643 --> 00:03:20,221
+times g prime of x. So, I can put that in
+here as the derivative of 1 over g of x.
+
+38
+00:03:20,502 --> 00:03:27,004
+It's minus 1 over g of x squared times g
+prime of x. By rearranging this, I can
+
+39
+00:03:27,016 --> 00:03:34,186
+make this look like the quotient rule that
+we're used to. Let's aim to put this over
+
+40
+00:03:34,198 --> 00:03:40,725
+a common denominator. So, I could write
+this as f prime of x times g of x over g
+
+41
+00:03:40,737 --> 00:03:48,318
+of x squared plus, what do I have over
+here? Well, negative f of x g prime of x,
+
+42
+00:03:48,471 --> 00:03:54,775
+the negative 1 f of x g prime of x, over g
+of x squared. And I can combine these two
+
+43
+00:03:54,787 --> 00:04:01,985
+fractions, f prime of x g of x minus f of
+x g prime of x all over g of x squared.
+
+44
+00:04:02,136 --> 00:04:10,187
+That's the quotient rule, right? We've got
+to the quotient rule at this point. And
+
+45
+00:04:10,199 --> 00:04:15,710
+how is it we do it? Well, think back to
+what just happened. I, I used the power
+
+46
+00:04:15,722 --> 00:04:20,640
+rule to differentiate 1 over x. Once I
+knew the derivative of that, I could use
+
+47
+00:04:20,652 --> 00:04:25,665
+the chain rule to differentiate 1 over g
+of x. And once I knew the derivative of 1
+
+48
+00:04:25,677 --> 00:04:30,303
+over g of x, I could then use the product
+rule on f of x times 1 over g of x to
+
+49
+00:04:30,315 --> 00:04:35,257
+recover the quotient rule. What's the
+upshot here? Why is it important that the
+
+50
+00:04:35,269 --> 00:04:39,471
+quotient rule can be seen as an
+application of the chain rule and the
+
+51
+00:04:39,483 --> 00:04:44,682
+product rule? One reason is a pedagogical
+one. I think it's important for you to see
+
+52
+00:04:44,694 --> 00:04:49,862
+that all these differentiation rules are
+connected together. I hope that will give
+
+53
+00:04:49,874 --> 00:04:53,543
+you a better sense of the rules and, and
+make them more memorable.

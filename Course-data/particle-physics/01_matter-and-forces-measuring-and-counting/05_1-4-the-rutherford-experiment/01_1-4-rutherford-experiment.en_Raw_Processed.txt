@@ -1,0 +1,169 @@
+music 
+this first model we introducing 
+objects studies in particle physics, so 
+matter, forces spacetime 
+in this forth video we give an example 
+calculating 
+measuring a crosssection 
+rutherford experiment 
+this is scattering process 
+demonstrated existence 
+atomic nucleus we know today 
+goals to apply 
+concept crosssection, 
+in a process that treated 
+in a semiclassical manner 
+to compute an interaction rate 
+characteristics an experiment 
+we will use a seminal 
+experiment to demonstrate, 
+crosssection 
+serves to understand 
+unknow subatomic 
+structure a target 
+geiger marsden measured in 
+angular distribution 
+alpha particles 
+fully ionized 
+scattering thin foils 
+heavy metal like gold 
+preferred model time 
+nucleus 
+atoms due to thomson 
+discovered electron in 
+this model described 
+atom a homogeneous positive 
+substance in electrons embedded 
+thus a modest charge density 
+in this case, alpha particles, 
+much smaller atoms, 
+able to penetrate foil 
+minor perturbation 
+if hand, atom consists 
+a tiny, dense, positively charged 
+nucleus surrounded electrons to 
+fill atomic volume, proposed 
+rutherford, larger scattering 
+angles would possible 
+we seen in previous video, 
+classical calculation a cross 
+section requires to find relation 
+between impact parameter b 
+scattering angle theta 
+we will calculate relation 
+non relativistic velocities 
+incident alpha particle 
+we base this calculation three laws 
+first one is newtons law 
+relates rate momentum 
+changes to coulomb force between 
+projectile target nucleus 
+is quoted here using variables 
+indicated in sketch right 
+second law is conservation 
+kinetic energy, 
+characteristic elastic scattering 
+a heavy target, 
+recoil hit projectile 
+third one is conservation 
+angular momentum introduces 
+angular velocity dgammadt 
+combining three equations we 
+obtain relation between impact 
+parameter b scattering angle theta, 
+we looking 
+if you interested in 
+details calculation, 
+we refer you to video a 
+inserting result general 
+relation classical crosssection, 
+we obtained differential crosssection 
+coulomb interaction 
+a point like heavy target 
+cross section is proportional to 
+square products two charges 
+z z 
+this factor determines order 
+magnitude cross section 
+cross section is strongly peaked in 
+forward direction according to 
+sintheta to fourth power, 
+inversely proportional to square 
+kinetic energy projectile 
+factors due to propagator 
+photon exchanged between two 
+reaction partners 
+basic properties indeed 
+experimentally established geiger marsden 
+counting impact 
+scattered alpha particles 
+a screen covered 
+zink sulfate 
+this molecule emits a small flash 
+light hit a charged particle 
+experimenters counted flashes 
+watching screen a microscope 
+is realistic to count 
+scatters eye in a setup 
+small video b will convince 
+you actually calculating rate 
+so procedure to measure a 
+cross section is thus clear 
+one must count rate 
+interactions per second 
+that we need a detector 
+a distance r 
+covering a surface 
+r domega 
+one must normalize counting 
+rate maximum possible 
+interaction rate to obtain a probability 
+maximum rate is obtained every 
+projectile interacts target 
+is thus product 
+incident rate 
+surface density 
+target particles 
+also expressed 
+flux projectiles 
+multiplied number target 
+particles covered incident beam 
+proportionality factor 
+between counted rated 
+maximum counted rate 
+is cross section 
+proportionality factor 
+between counting rate 
+cross section is called luminosity 
+in laboratory frame 
+target is rest is given 
+rate incoming beam times 
+surface density target particles 
+if you want to use volume density 
+target you multiply target 
+thickness 
+in center mass frame, two 
+beams collide headon like in a collider, 
+luminosity is proportional to 
+population two beams, 
+na nb, to 
+frequency f cross 
+is inversely proportional 
+to common surface two beams 
+counting rate 
+luminosity thus depend details 
+experiment that we conducting 
+ratio, cross section, 
+characterizes physical 
+process independent details 
+until we considered 
+processes using tool 
+kit classical physics 
+we already know that 
+this is sufficient 
+in next video we will show quantum 
+physics approaches scattering processes 
+we will introduce 
+an indispensable tool kit particle 
+physics, feynman diagrams 
+music 

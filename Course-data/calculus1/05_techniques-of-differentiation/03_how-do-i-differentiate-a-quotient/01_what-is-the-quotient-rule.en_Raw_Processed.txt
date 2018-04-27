@@ -1,0 +1,107 @@
+music given weve done so far we 
+differentiate a bunch functions 
+we differentiate sums differences 
+products 
+quotients 
+given a fraction id like to able to 
+differentiate that fraction 
+i like to able to differentiate a 
+really complicated looking function like 
+fxxx, instance 
+stuck immediately we 
+dont anyways to differentiate 
+quotients, until 
+heres quotient rule so to state 
+this really precisely lets suppose i got 
+two functions f g i define a 
+new function that im going to call 
+h 
+hx is this quotient fx gx 
+i also want to make sure that 
+denominator isnt point a so 
+makes sense to evaluate this function 
+point a 
+i want ot assume that f g 
+differential point a 
+im trying to understand h 
+changes so im going to need to know 
+f g change input wiggles a 
+bit 
+alright so given this set up, i 
+tell you derivative 
+quotient is, derivative 
+quotient a is denominator a 
+times derivative numerator 
+a 
+minus numerator a times 
+derivative denominator a, 
+divided denominator a 
+lets use quotient rule to 
+differentiate function that we saw 
+earlier 
+so, function we thinking 
+is fxx x 
+i want to calculate derivative 
+that, respect to x 
+derivative this quotient is 
+given to us quotient rule 
+denominator times 
+derivative numerator minus 
+numerator times derivative 
+denominator 
+thats divided denominator 
+squared 
+now, ive calculated derivative 
+this quotient in terms derivatives 
+numerator denominator 
+so we simplify this further, 
+x times derivative this sum is 
+sum derivatives 
+derivative x 
+derivative x times again, 
+derivative a sum, so derivative 
+x, respect to x plus 
+derivative 
+divided denominator, 
+original denominator squared 
+i keep going, 
+ive got x times whats 
+derivative x 
+whats derivative this constant 
+zero, minus x times, whats 
+derivative x x, 
+whats derivative 
+derivative a constant zero, 
+divided x 
+so, this is derivative 
+original function considering, 
+theres differentiation to 
+done we using quotient 
+rule 
+weve done a ton work 
+differentiation so far, we differentiate 
+sums, differences, products, 
+quotients 
+sorts functions we 
+differentiate using rules 
+well, heres one big collection 
+if youve got a polynomial divided 
+polynomial, things called 
+rational functions 
+sort an analogy rational numbers 
+integers integers 
+a polynomial a polynomial is 
+analogy, called a rational 
+function 
+now, since this is a quotient two 
+things you differentiate, you 
+differentiate rational functions 
+this is a huge class functions that 
+you differentiate 
+music i encourage you to practice 
+quotient rule 
+practice, youll able to 
+differentiate rational function that 
+we throw you 
+music 
+music 

@@ -1,0 +1,107 @@
+music 
+heres a little puzzle length 
+ive got an isocoles right triangle 
+lets say that legs 
+this right triangle length 
+we know length hypotenuse 
+pythagroem theorem 
+well, that tells us that this length is 
+square root 
+lets try to think this 
+differently 
+if, instead a smooth ramp, i made 
+stairs 
+i mean, instead this ramp picture, i 
+a picture like this, right 
+a staircase 
+whats length staircase 
+total length staircase is 
+to see that, look horizontal 
+sections stairs 
+thats entire bottom 
+edge 
+vertical sections 
+staircase is this whole edge 
+so plus is 
+happens if i make stairs even 
+smaller 
+length is still 
+again, vertical 
+sections staircase add to this 
+length 
+horizontal sections 
+staircase, imunknown pushing 
+down, add to this length 
+so, total length staircase is 
+still 
+happens if i make stairs 
+really small 
+well, even if stairs really, 
+really small, total length 
+staircase is still 
+is going here 
+length ramp is a square root 
+
+length staircase is 
+matter small i make stairs, 
+even if i made stair size a 
+proton, staircase would still 
+length 
+point is that even something 
+seemingly obvious length, is 
+subtle i think we give credit 
+
+we really need is sort 
+definition length 
+well in terms an integral 
+so like volume area, 
+im going to take this thing that im 
+interested in, say length here 
+try to break little pieces 
+that ill add an integral 
+so lets imagine that i cut this 
+little tiny pieces that i 
+connect straight lines 
+i add length 
+little tiny straight lines call 
+that, in limit, i integrate, 
+length this curve 
+i want to write an integral that 
+captures that intuition 
+well, lets look one little piece 
+this thing here 
+lets write a little triangle there so i 
+call change in x dx, 
+change in y dy im interested in 
+is long this little green line 
+segment is 
+well, you might think that little 
+green line segment length square 
+root dx squared plus dy squared 
+you integrate to get total 
+arc length, play around that a 
+little bit 
+specifically lets imagine pulling a dx 
+outside this 
+so i get this is intergral 
+square root plus, if i 
+factor a dx here, i to include a 
+dx in denominator there 
+this advantage least 
+looking like derivative, right, 
+dy dx, thats ive denoting 
+derivative, this form is sort 
+thing that i integate 
+so heres formula that going to 
+use 
+arc length a f a to b f b 
+along graph f is integral x 
+goes a to b square root plus 
+derivative squared thats exactly 
+i saw here dx 
+i hope that youre feeling a little 
+bit uneasy this point 
+im really treating dx dy if 
+theyre legitimate mathematical objects, 
+you a little bit 
+uncomfortable that this point 

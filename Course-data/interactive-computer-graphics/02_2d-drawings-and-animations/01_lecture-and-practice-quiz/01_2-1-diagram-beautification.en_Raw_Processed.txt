@@ -1,0 +1,271 @@
+sound 
+blankaudio 
+hello, this is week two interactive 
+computer graphics 
+topic this week is, d drawings 
+animations 
+heres a list topics, we discuss in 
+this week 
+diagram beautification, penandink 
+textures, 
+shape manipulation, dynamic 
+illustrations 
+first one, is diagram beautification 
+work we introduce here, is called 
+pegasus 
+problem we discuss here, is a 
+drawing this kind geometric 
+drawings, tedious to draw 
+this kind diagram, using traditional 
+drawing systems 
+example, if you want to draw, this 
+kind symmetric diagram, you to 
+draw 
+first half draw, draw half 
+duplicate it, flip move 
+
+so, you to combine three, two 
+three commands to a symmetric drawing 
+if you something like, like this, like 
+symmetric, perpendicular, gap 
+connect 
+then, becomes difficult to 
+it, combining appropriate commands 
+so, we propose is to automatically, 
+
+system automatically take care 
+kind constraints 
+here is demonstration 
+so, this is designed pen 
+computing 
+so, you directly draw a line 
+whiteboard, system 
+automatically provides feedback 
+so here, you draw a line, 
+system automatically beautifies 
+if you draw a line, system 
+automatically beautifies 
+so, this point is automatically aligned to 
+this point 
+you draw a line here 
+system automatically beautifies 
+
+if you a line here, this is almost 
+perpendicular to slope 
+system makes perfectly 
+perpendicular 
+so, in this way, you draw freeform 
+lines 
+you will get this kind 
+diagram 
+traditional, in, in traditional systems, 
+you to draw rectangle 
+separately move it, rotate, 
+connect, so 
+so, tedious 
+here, you draw six lines 
+system automatically beautifies 
+you many things 
+example, if you draw, almost symmetric 
+line 
+system makes it, perfect mirror image 
+you draw three strokes 
+youll get this diagram 
+if you draw right here, this is 
+identical, similar to 
+previous one, assistant makes 
+an exact copy, previous stroke 
+so again, you draw three lines 
+youll get, you will get a copy 
+without 
+using copy duplicate command we 
+also provide equal distance between 
+lines, so in this way, you get this 
+wizard specifying 
+grid, hand also, you 
+something like this 
+system automatically makes distance, 
+between two lines identical 
+so traditionally, you to draw two 
+lines duplicate it, 
+rotate trim it, so 
+tedious 
+one important aspect this kind 
+automatic system is that, user input 
+ambiguous 
+so, if you draw a line here, this is 
+ambiguous, right 
+so, user may want to draw a mirror image 
+here you 
+may want to connect points user 
+may want to this 
+so, system automatically infers multiple 
+candidates presents a user 
+you choose one later, this 
+is important to handle ambiguity 
+thats beautification 
+we also implemented a prediction in, 
+in this system 
+so, suppose, you this kind 
+illustration already you draw a line 
+here 
+so, here, system knows that this red 
+segment is identical to this one 
+so, system automatically predicts 
+infers that, that, you draw 
+thing, you probably, want to draw 
+thing around 
+so, heres a prediction 
+if you like one them, click 
+it, next prediction appears 
+so, long prediction is correct, 
+you complete drawing 
+successive clicking, if you 
+prediction is use, 
+useful, you ignore you 
+draw 
+yourself, you again, activate 
+prediction click draw 
+yeah 
+this prediction is useful 
+multiple purposes, like drawing 
+repetitive illustration 
+you click here 
+type, touch, unknown segment, 
+unknown 
+so, this useful repetitive 
+drawing 
+this is also useful symmetric 
+drawing like this one 
+so, you tap, prediction 
+appears 
+tap, tap, tap 
+you will get this kind 
+symmetry doing, drawing 
+prediction 
+so, 
+thats demonstration 
+let briefly describe algorithm 
+behind 
+beautification algorithm 
+prediction onwards 
+so beautification, works this way 
+so far, user input is this red one 
+then, looking this input, system 
+first first, learns constraint 
+inference engine 
+then, getting segment coordinates 
+positions 
+then, infer multiple constraints 
+so, in this case, system infers that 
+this connected, 
+this perpendicular, this 
+be, horizontally aligned so 
+given this possible geometric constraints, 
+constraint solver, 
+tries to combine solve 
+here 
+an interesting point here, is that 
+constraints be, contradictory 
+features 
+so, constraint solver needs to find valid 
+combinations multiple 
+candidate system, evaluate them, in 
+is closer 
+to user input pick more, 
+plausible one 
+a first candidate return to 
+user 
+let me, describe constraint 
+solvability 
+so, constraint solver, i said, takes 
+multiple infer constraints, 
+identified combination, 
+returns result, 
+combination 
+and, details, let describe 
+details using one example 
+suppose you four constraints 
+x equal , y equal , x minus y equal , x 
+plus y equal 
+so, suppose you four 
+constraints 
+tries to find valid combinations 
+one combination, is one two 
+so, if you combine two, you would 
+get one two here 
+if you combine this first third 
+one, x 
+equals , y equals you get this 
+however, you cannot combine three 
+
+contradictory, so thats we try to 
+here 
+in system, algorithm works 
+follows 
+constraint you apply, you make 
+inaudible 
+we a set intermediate valuations 
+like 
+this, so far valuation is given 
+x first constraint, you apply 
+apply 
+so, if you apply thing 
+if you apply it, you get one 
+valuated 
+so, in this way, you kind 
+basically binary tree you sort 
+intermediate valuations grows 
+exponentially 
+however, in cases 
+variations 
+example, this variation combining fast 
+one this one, 
+is identical to combining this one 
+this one 
+so, solutions merged together 
+so, this is a kind thing happening 
+behind consonant solver 
+let briefly describe prediction 
+algorithm 
+prediction works follows, so you 
+kind 
+existing segments you get new 
+input segments 
+first, system searches identical 
+segments, identical to new input 
+segment 
+identifying matched existing 
+segment 
+system collect, aggregate, nearby 
+segment to different 
+stroke copy to new, 
+segment 
+addition to that, we add vertical 
+horizontal flip, predictions 
+so, thats way, prediction work, 
+works 
+so, thats a,a system original 
+paper published interactive 
+beautification, a technique rapid 
+geometric design in 
+constraint based drawing, is a popular 
+topic 
+an original paper published 
+sketchpad this is, 
+a old paper published in , 
+this is still 
+powerful tool 
+i recommend you to take a look 
+video 
+this a fast computer graphics 
+also fast interactive computer 
+graphics 
+if you want to see recent one 
+id recommend you to take a look 
+cinderella system 
+this is this kind constraintbased, 
+geometric drawing system 
+this is useful mathematical 
+education so 
+thank you 

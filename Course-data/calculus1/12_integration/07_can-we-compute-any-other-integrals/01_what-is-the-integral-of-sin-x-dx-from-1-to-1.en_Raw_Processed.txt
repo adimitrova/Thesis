@@ -1,0 +1,76 @@
+music we get if we integrate an 
+odd function 
+instance, happens we 
+integrate function sin x minus 
+to , right, sin x is an odd function 
+consequently, looks like answer is 
+remember integral is, is morally 
+calculating an assigned area 
+so going to calculating this area 
+here a negative sign 
+going to calculating this area 
+here actual area 
+right 
+a positive sign 
+two areas equal, 
+integral is going to count this area 
+negative sign this area a 
+positive sign 
+so integral cancel 
+answer 
+if you dont believe geometry, we 
+work algebraically 
+so algebraically, im trying to integrate 
+minus to sine x dx 
+first thing to think is that well 
+if im integrating minus to , 
+we write that an integral minus to 
+sin x dx, add to that 
+integral to sin x dx right 
+right, if i want to integrate way 
+minus to , good enough if i 
+integrate half way integrate 
+rest way, there is two 
+separate intervals 
+now, i integrate minus to 
+sin x dx 
+if we think a little bit 
+this really means, that would 
+integrating to sin minus x, 
+alright 
+if i want to add numbers minus 
+to , itll good enough if i pick 
+partition to evaluate 
+sin negative, those, value 
+you to worry a little bit 
+this dx changes we going to 
+looking that in future well 
+okay, im going to add to this 
+interval to sine x dx that 
+ive got right there 
+whats sine negative x 
+thats negative sine x, here ive 
+got sine x dx 
+ive got interval to 
+negative sine dx plus interval 
+to sine dx 
+well i pull this minus sign 
+integral 
+if im integrating a constant time 
+something that constant 
+times integral 
+ive got negative something plus 
+thing so that is equal to 
+in future going to see 
+to justify steps that i took 
+algebraically, right 
+steps actually valid 
+in meantime, upshot here, 
+takeaway message is that symmetry 
+exploited to calculate integrals, 
+right 
+you evaluate integral an odd 
+function, long youre integrating 
+symmetrically across , you evaluate 
+that integral to equal to 
+exploiting symmetry 

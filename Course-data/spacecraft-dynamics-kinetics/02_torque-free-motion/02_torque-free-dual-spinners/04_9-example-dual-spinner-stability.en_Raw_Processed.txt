@@ -1,0 +1,297 @@
+so heres a example we 
+want to run 
+here, i principle inertias 
+that , , 
+now, numbers, a little 
+bit unfortunate, intermediate one 
+if beneath max is 
+min, so plus minus 
+this is we look wheels, 
+critical wheel speeds, 
+things go stable unstable, 
+happens to symmetric 
+but, generally inertias 
+arent split evenly like that 
+so generally critical wheel speeds 
+necessarily symmetric, right 
+this example will symmetric 
+wheel inertia is ten kilograms, 
+to make a lot math easy 
+spacecraft is to spin rpm, 
+b, so thats omega e that you 
+so now, trying to figure 
+fast we to spin this wheel 
+least to guarantee linear 
+stability system 
+so you want bracketed terms 
+to either positive negative 
+now, two bracketed terms could 
+positive, thats set 
+thats we i must greater 
+two terms here 
+in that case, left bracket 
+right bracket positive, 
+we a stable system 
+set , actually simply reverses this, 
+greater becomes a less 
+this is condition that makes first 
+second bracket go negative 
+that is also a stable configuration, 
+right 
+so now, we want to look 
+is range spin rates 
+so way i like to think this 
+is look spin axis 
+we zero 
+then, i go positive spin rate 
+negative spin rate 
+going to put in inequality 
+condition to start to go to 
+least to right this mark 
+to least to left 
+this mark, so whats left 
+union 
+intersections different areas, 
+thats i solve this stuff least 
+so if looking this, 
+in this problem 
+if wheel speed is zero, 
+is this system going to stable 
+brian 
+theyd take a look 
+inequalities 
+no, 
+if wheel speed is zero, 
+theres longer a dual spin, 
+theres simply a single rigid body 
+spinning b 
+inertia axis 
+we spinning 
+going to stable 
+right, we 
+so b is an axis intermediate inertia 
+in this particular example, right 
+so we know front, zero cannot 
+included in solution space 
+i to, if this is going to work, 
+i to something positive 
+negative 
+well see that drops 
+so if we this, 
+heres two inequality conditions 
+second one, 
+example here, this is one set 
+you say okay, i minus, 
+you bring this term over, 
+that gives you i minus i, 
+divide this 
+iw, i minus i, 
+gives you minus divided 
+no, gets you minus divided ten, 
+gives you minus five 
+so bringing this over, omega hat 
+to bigger minus five 
+if im going to draw that here, 
+so lets say, 
+heres minus five part, 
+that means, i say, less 
+right, 
+thinking many steps ahead, okay 
+no, greater 
+okay, so that means we would to 
+somewhere greater minus five 
+thats one condition 
+condition, 
+here im going math 
+a little bit steps, right 
+im bringing this condition bringing 
+this part to left hand side 
+i back to right hand side 
+i divide iw, here i minus i 
+you plug in numbers, you 
+something similar in homework, so 
+im going to 
+you know to this algebra 
+omega hat to 
+greater plus five 
+so if we look this say, okay, 
+theres also a plus five, 
+heres point 
+this is domain that makes 
+second bracket go to b positive 
+is actual solution space 
+stability 
+inaudible great 
+so that union between both, right 
+we need 
+to positive 
+thats going to here, right 
+outs greater 
+is that domain, though 
+carlo, you think 
+will less minus five 
+less minus five, talk 
+that also domain correct 
+second set equations 
+doesnt give us that answer 
+yep, first set always 
+greater than, greater 
+youve identified two points 
+bracketed term flips signs 
+youve found those, youve really 
+found, instead greater than, 
+less 
+so instead always 
+to right of, 
+always going to 
+to left 
+and, again, unions 
+so if you that to make brackets 
+negative, if i pick a different color, 
+let make blue negative right 
+you would to here here 
+union that is 
+going to here 
+so you see expected origin 
+is included in solution space 
+brian pointing out, 
+this is a single rigid body spinning 
+axis remediated inertia 
+we know stable, 
+if wheel spins enough 
+point, 
+youll notice this wheel spinning, 
+youre spinning oars is an oblate body, 
+youre spinning axis max inertia 
+that wheel itself, 
+way defined 
+always going to stable, right 
+so if that wheel spins fast enough, 
+one way to think this is stability 
+that wheel is going to overcome 
+instability spacecraft spin 
+thats we stabilize 
+you to get to minimum 
+amount equal 
+you to greater that, 
+hopefully, quite a bit greater that 
+will increase stiffness 
+response time well, right 
+so either you go positive you 
+go negative that will get you there 
+now, so good 
+so in this case, i have, this is one 
+wheels speed, critical speeds, 
+you could use 
+to bigger that really, 
+thats you to write 
+equal, probably bigger that 
+could also less 
+minus in this case 
+theres two sets, brackets positive, 
+brackets negative 
+so if im giving you 
+problem like this though, 
+here i saying, 
+we spinning major axis 
+so in this case, b is axis maximum 
+inertia without a rotor spin, so 
+origin, we would to stable, 
+is i showing 
+if we spinning 
+spacecraft definition, 
+already a positive spin, b 
+that is we derived to this stuff 
+thats picked b 
+now, 
+wheel is also spinning that 
+if spacecraft is max inertia stable, 
+wheel is max inertia stable 
+theyre spinning positive b, 
+always going to stable 
+stable 
+if you start to spin 
+opposite direction though, 
+even though space craft 
+without that wheel will stable, 
+speed momentum 
+that helps stabilize 
+happens wheel, 
+if in opposite direction, 
+going to start to pull total 
+momentum gets reduced, actually 
+if this is spinning rpm positive 
+wheel is rpm negative, 
+youre pulling momentum 
+in fact, momentum perspective, 
+point acts like separatrix, 
+acts like unstable 
+intermediate axis motion 
+you will drive a system unstable 
+good news is matter axis, 
+principle axis, 
+you want to spin nominally, we always 
+find a wheel speed that will stabilize 
+laugh bad news is matter 
+stable spacecraft you 
+touched it, you touch it, you 
+capability to drive unstable 
+so make sure you right 
+real speeds otherwise 
+sponsor will happy 
+point again, 
+if you go fast enough, 
+wheel momentum will dominate 
+very, stable 
+whatever spacecrafts 
+is almost noise 
+so duo spinners to extremes 
+infinity real speeds always stable 
+in between, there is a region, 
+a finite zone, that is unstable 
+so an intermediate axis speed, 
+we looked 
+in problem, we plus 
+minus five, that 
+inertias, doesnt to symmetric 
+if you see something like this 
+that excludes origin, 
+right away i could say, 
+this must spinning an axis 
+intermediate inertia a dualspinner 
+solution space 
+and, if you an axis 
+a least inertia, 
+youre spinning this region that you 
+shouldnt spinning is actually in 
+positive spin direction 
+comes mathematics 
+jordan 
+sorry, 
+i missed stable if youre 
+spinning less negative five 
+bracketed terms 
+two brackets 
+to either positive, 
+that argument 
+black hash lines 
+we found two critical points 
+if we also less 
+critical points, 
+brackets become negative 
+okay 
+thats this is also a possible 
+answer, mathematics 
+thanks 
+yeah, good 
+so anyway, 
+this gives you a quick solution space 
+you easy homework 
+this yourself, to come 
+remember extremums 
+always included 
+origin is included 
+a max min inertia case 
+you kind look pattern 
+if i see pattern, i know right 
+away type spin 

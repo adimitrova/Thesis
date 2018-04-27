@@ -1,0 +1,213 @@
+music 
+this second module, we deal 
+nuclear physics application 
+well discuss radioactivity 
+in this fourth video, well talk 
+nuclear decay in general, 
+alpha decay in particular 
+watching this video, 
+you will able to describe valley 
+stability surroundings 
+to know to locate characterize 
+nuclei respect to this valley, 
+characterize alpha decays 
+properties 
+an unstable nucleus transform 
+in a stable one 
+radioactive decay 
+we distinguish three types, historically 
+labelled alpha, beta, gamma decays 
+alpha decay is spontaneous fission 
+a heavy nucleus a less heavy one 
+nucleus he, 
+also called alpha particle 
+beta decays transformation 
+between a nuclear neutron a proton, 
+vice versa, 
+respectively emitting an electron 
+antineutrino 
+a positron neutrino 
+this way, baryon number 
+lepton number conserved 
+this decay is often leave daughter 
+nucleus in an excited state, 
+a gamma decays allows to return 
+to ground state emitting one 
+photons 
+decays a spontaneous processes 
+happen if tighten 
+binding a nucleus 
+thus heavy nuclei 
+reduce mass 
+increase binding energy emitting 
+a tightlybound nucleus 
+nuclei rich in neutrons gain 
+a symmetric state transforming 
+one a proton 
+via a decay 
+nuclei, rich in protons, 
+correct this asymmetry a decay 
+excited daughter nuclei reach 
+ground state meeting one 
+photons 
+reactions take nucleus 
+closer to valley stability 
+this table shows 
+distribution nuclei 
+stable isotopes 
+periodic system 
+radioactive nuclei 
+naturally present earth, 
+compared to , 
+radioactive isotopes so 
+far produced in laboratory 
+planet formed, 
+we assume that nuclei 
+roughly equally abundant 
+absences certain 
+radioactive nuclei today 
+give us an idea 
+age solar system 
+this estimate give us an age 
+roughly billion years sun 
+nuclei a shorter lifetime 
+completely disappeared 
+naturally present radioactive 
+nuclei a nuclear charge, z, 
+between 
+characterized 
+an excess neutrons 
+since heavy, 
+first undergo an alpha decay, 
+leading to an even larger 
+relative excess neutrons 
+this fixed 
+subsequent beta decay 
+grand daughters often 
+unstable 
+undergo alpha decay so 
+this results in a chain alpha 
+beta decays will continue until 
+valley stability in nz 
+plane is reached 
+this results in four 
+series alpha emitters 
+daughters progressively differ 
+a multiple four nucleons 
+we thorium series 
+a mass number is n, 
+neptunian series mass 
+number a equal to n , 
+uraniumradium series a equal to n , 
+
+uraniumactinium series 
+a equal to n 
+one important applications 
+radioactivity is dating 
+organic materials, 
+work to several thousand years 
+we will see this in 
+detail we speak 
+radioisotope dating in video 
+let us discuss physics 
+alpha decay in detail 
+a parent nucleus, p, decays a daughter 
+nucleus d via emission a nucleus 
+this corresponds to a spontaneous fission 
+daughter nuclei vary asymmetric mass, 
+since nucleus d is much 
+heavier 
+details fission processes, 
+we refer you to video 
+if we consider parent 
+nucleus to rest, 
+energy conservation gives us a relation 
+between masses energies 
+since number electrons 
+is unchanged in reaction, 
+you directly use atomic mass 
+this calculation 
+talpha td kinetic 
+energies alpha particle 
+daughter nucleus 
+gain in binding energy that drives 
+decay is called q value 
+is converted kinetic 
+energy decay products 
+an example calculation 
+talpha td is given in video a 
+asymmetry in 
+masses alpha particle 
+takes kinetic energy 
+spectra alpha particles 
+coming decay 
+isotope reveal 
+intermediate metastable states 
+one observes alpha particles 
+slightly different but, 
+course, quantized energies 
+one also observes gamma ray 
+emission comes decay 
+cascade towards ground state 
+parent nucleus course also 
+directly decay to ground state 
+without passing intermediate states 
+this direct decay results in 
+energetic alpha particle 
+an example is shown here 
+decay chain am, 
+is a radioactive source 
+often used in laboratory 
+kinetic energy an alpha 
+particle nuclear decay is 
+typically order mev 
+a low energy particle 
+approaches a heavy nucleus outside, 
+cannot penetrate coulomb barrier 
+a nucleus mass number , 
+a typical height to mev 
+so process work 
+in opposite direction 
+an alpha particle traverse 
+coulomb barrier inside 
+answer is given 
+quantum process tunneling 
+probability that 
+an alpha particle traverses 
+coulomb barrier is 
+order 
+this is probability 
+traversing a single trial 
+this is a low energy alpha particle 
+outside cannot 
+penetrate barrier 
+velocity an alpha particle, 
+bound to a nucleus kinetic 
+energy mev, is 
+relativistic still impressive 
+a velocity 
+speed light 
+confined to a region a radius 
+centimeters, 
+particle bounces barrier 
+a frequency 
+times per second 
+probability penetration per second is thus 
+per second 
+this quantity is called 
+decay constant lambda, 
+is inverse lifetime tau 
+a typical nucleus we find a 
+lifetime years, 
+is representative 
+nuclei alpha decay 
+number nuclei nt 
+remaining elapsed time 
+an initial sample n nuclei diminishes 
+exponentially according to decay law 
+we will give detail this 
+law in optional video a 
+in next video, we will talk 
+two types radioactivity, 
+namely beta gamma decays 
+music 

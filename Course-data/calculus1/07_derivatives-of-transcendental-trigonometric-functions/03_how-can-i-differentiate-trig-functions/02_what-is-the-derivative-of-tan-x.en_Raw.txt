@@ -1,0 +1,249 @@
+i want to differentiate tangent theta. 
+how am i going to do this? 
+well, hopefully you remember that tangent 
+theta is sine theta over cosine theta. 
+why is this? 
+if you think back to the business about 
+the right triangles, right, sine is this 
+opposite side that i'm calling y over the 
+hypotenuse. 
+and cosine is this adjacent side whose 
+length i'll call x over the hypotenuse. 
+i'll call this angle theta. 
+then sine theta is y over r, and cosine 
+theta is x over r, so this fraction can 
+be simplified to y over x. 
+that's the opposite side over the 
+adjacent side. 
+that's tangent of theta. 
+so good. 
+i can express tangent theta as sin theta 
+over cosine theta, how does that help? 
+well, i know how to differentiate sine 
+and cosine, and by writing tangent this 
+way, tangents now a quotient, so i can 
+use the. 
+quotient rule. 
+all right, so i'll use the quotient rule, 
+and the derivative of tangent theta is 
+the derivative of the numerator, which is 
+cosine, times the der, denominator, which 
+is just cosine, minus the derivative of 
+the denominator, which is minus sine, 
+times the numerator, which is sine. 
+and this whole thing is over the 
+denominator squared, cosine squared 
+theta. 
+now, is this very helpful? 
+well, i've got cosine times cosine, so i 
+can write that as cosine squared theta. 
+and here i've got minus negative sine 
+theta times sine theta, so that ends up 
+being plus sine squared theta. 
+and the whole thing is still being 
+divided by cosine squared theta. 
+can i simplify that at all? 
+well cosine squared plus sine squared, 
+that's the pythagorean identity. 
+that's just one. 
+so i can replace the numerator with just 
+one, still over cosine squared theta. 
+and one over cosine squared theta, well, 
+one over cosine is called secant, so this 
+is really secant squared theta. 
+. 
+so what all this shows is the derivative 
+of tangent theta is second squared theta. 
+a moment ago we did a calculation using 
+the quotient rule to see that the 
+derivative of tangent theta is second 
+squared theta. 
+and now i want to see how this plays out 
+in some concrete example to get a, a real 
+sense as to why a formula like this is 
+true. 
+so here's a couple triangles. 
+they're both right triangles and the 
+length of their hypotenuse is the same. 
+this angle i am calling alpha, let's this 
+be a little bit less than 45 degree. 
+and this angle i am calling beta, and 
+it's more than 45 degrees. 
+now what you can say about the secant of 
+alpha and the secant of beta? 
+you know, the secant of alpha is 
+definitely bigger than one. 
+i mean, what's the secant? 
+it's this hypotenuse length divided by 
+this length here. 
+and that's bigger than one. 
+how does it compare to beta? 
+well, the secant of beta is quite a bit 
+bigger than the secant of alpha, and why 
+is that? 
+well, the secant of beta is this length 
+here, the hypotenuse, divided by this 
+width, but this triangle is quite a bit 
+narrower than this triangle. 
+so the secant has the same numerator, the 
+hypotenuse, the same length, but the 
+denominator here is quite a bit smaller, 
+and if the denominator's a lot smaller, 
+then the ratio, which is the secant, is 
+quite a bit bigger. 
+some of the secan of beta is bigger than 
+the secan of alpha, and the secan of 
+alpha is bigger than one. 
+and that means that secan squared alpha 
+is also bigger than one. 
+and secan squared alpha is less than 
+secan squared beta. 
+and the significance of that is right 
+here, the derivative of tangent theta is 
+secan squared theta. 
+so what does this mean? 
+well, this, this is telling me how 
+wiggling theta affects tangent. 
+it affects it like a factor of secant 
+squared theta. 
+so in this example, where secant squared 
+beta is a lot bigger than secant squared 
+alpha, the effect of wiggling beta on the 
+tangent of beta should be a lot larger 
+than the effect of wiggling alpha on the 
+tangent of alpha. 
+and you can see that. 
+let me draw a triangle, where i've 
+wiggled the angle alpha up a little bit. 
+i've made it a little bit bigger. 
+but i'm going to make the same 
+hypotenuse. 
+all right, so this hypotenuse length is 
+the same as this length, but i've made 
+the angle a little bit bigger. 
+and how is the tangent of the slightly 
+larger alpha compared to the tangent of 
+alpha. 
+well, the tangent of the slightly larger 
+alpha is bigger than tangent alpha, but 
+not by all that much. 
+now compare that to when i wiggle beta up 
+by the same amount. 
+i make beta a little bit bigger. 
+right. 
+so i make beta a little bit bigger by the 
+same amount that i made alpha larger. 
+and i think about how that affects the 
+tangent of beta. 
+the tangent of beta is this height 
+divided by, divided by this width. 
+and you can think about it, i mean this, 
+this height maybe isn't increasing a 
+whole lot. 
+but the width of this triangle is getting 
+quite a bit narrower. 
+and because it's the ratio of that height 
+to that width the tangent of the 
+perturbed value of beta is quite a bit 
+larger than the tangent of beta. 
+and you can, you know it's reflected in 
+the fact the secant squared beta is a lot 
+larger than secant squared alpha. 
+so these, these kind of facts, right? 
+the fact that the derivative of tangent 
+is secant squared theta you, you can 
+really get a sense for why these things 
+might be true by thinking about triangles 
+and how wiggling the angle will affect 
+certain ratios of sides of the triangles. 
+but, if this seems a little too abstract 
+we can kind of pull back a little bit and 
+do do a numeric example next. 
+you know, and maybe the numerical example 
+is sort of another way to see a formula 
+like this in action. 
+let's do a numerical example to get a 
+sense as to what you might do with the 
+fact that the derivative of tangent is 
+secen squared. 
+here's an example, let's try to 
+approximate the value of tangent of 46 
+degrees. 
+why is this an interesting example? 
+well, we know the tangent of 45 degrees 
+exactly, all right. 
+and figure that out by looking at a 
+triangle, here's the angle, 45 degrees, a 
+right triangle, because the an, angles 
+add up to, 180 degrees. 
+so it's 45 plus 90 plus what? 
+well, this must also be 45. 
+it's an isosceles triangle now, so these 
+two sides are the same. 
+a tangent is the ratio of this side to 
+this side because they are equal that 
+ratio was one. 
+so i know the tangent of 45 exactly. 
+it's one. 
+but i am trying to figure out an 
+approximation for the tangent of 46 
+degrees, the derivative tells me how 
+wrigly an input affects the output, so i 
+can use this fact and the fact that i 
+know the derivative to try to approximate 
+the tangent of 46. 
+in particular the tangent of 46 degrees 
+is the tangent of 45 plus one degree. 
+and here you can see how i am perturbing 
+the input a bit. 
+and this is exactly what the derivative 
+would tell me something about. 
+a little bit of bad news, the derivative 
+of tangent is only secant squared if i do 
+the measurement in radians. 
+if i convert this to a problem in 
+radians. 
+with radians, says the tangent of pi/4, 
+which is 45 degrees, plus with one degree 
+in radians, is pi/180 radians, right? 
+this is what i want to compute. 
+i want to compute the tangent of pi/4 
+plus pi/180. 
+and i'll do that with approximation using 
+the derivative. 
+so according to the derivative this is 
+about the tangent of pi over four, which 
+is the tangent of 45 degrees, it's one. 
+plus the derivative of pi over four, 
+which is secant squared pi over four. 
+times how much i wiggled the input by, 
+which is pi over 180. 
+i know the tangent of pi over four. 
+it's one. 
+what's the secant of pi over four 
+squared? 
+well, if i pretend that these sides have 
+length one, by the pythagorean theorem, 
+this side must have length square root of 
+two. 
+the secant is hypotenuse over this width. 
+so the secant of pi over four is square 
+root of two. 
+so secant squared pi over four is square 
+root of two squared, which is two times 
+pi over 180. 
+now if you know an approximation for pi, 
+you can compute two times pi over 180 
+plus one. 
+and this is approximately 1.0349, 
+and it keeps going pi's irrational. 
+and this is not so far off of the actual 
+value. 
+if we actually compute tangent of 46, the 
+actual value is about 1.0355 and it keeps 
+going. 
+andã‚ë‡ã‚â 1 0355. 
+is awfully close to 1.0349. so we've 
+successfully used the derivative to 
+approximate the value of tangent 46 
+degrees. 

@@ -1,0 +1,261 @@
+provided some conditions are satisfied,
+the extreme value therom guarantees the
+existence of maximum and minimum values.
+but how am i supposed to find those
+maximum and minimum values?
+we've actually already done this in some
+examples, but it's worth describing an
+explicit process for finding maxima and
+minima.
+here's a frour-step process.
+first, differentiate your function can
+find all the critical points.
+those are places where the derivative is
+equal to zero or the derivative isn't
+defined.
+and also lists the end points if they're
+included in your domain.
+check those points, right?
+check the end points, check the critical
+points, and potentially you also need to
+check the limiting behavior if you're
+working on an open interval.
+let's work an example.
+okay, let's work an example.
+let's look at the function, given by the
+rule f of x equals 1 over, x squared minus
+this quantity squared.
+but let's only consider this function on a
+restricted domain.
+let's consider, a maximum, minimum values
+of this function on the interval between
+minus 1 and 1.
+this open interval.
+and now i differentiate.
+yeah, the first step is to differentiate
+this function.
+so before i differentiate it, i'm just
+going to rewrite this.
+instead of 1 over x squared minus 1
+squared, i'm going to write this as x
+squared minus 1 to the negative 2nd power.
+it's going to make it a little bit easier
+for me when i think about the derivative.
+so what's the derivative of this function?
+by the power rule and the chain rule this
+is negative 2 times the inside, x squared
+minus 1 to the negative 3rd power times
+the derivative of the inside which is 2x
+or another way to write this is negative 2
+times 2x, that's minus 4x divided by x
+squared minus 1 to the third power.
+with the derivative in hand, i can find
+the critical points.
+yeah, the next step is to list the
+critical points, and also the end points
+if they're included.
+so let's see.
+what are the critical points of this
+function?
+will those be places where the derivative
+doesn't exist, or the derivative is equal
+to zero.
+let's first think about when the
+derivative is equal to zero.
+well, in order for that derivative to be
+equal to zero, it's a fraction.
+when's a fraction equal to zero?
+well, that occurred exactly when the
+numerator is equal to zero.
+so i'm really just asking when is minus 4x
+equal to zero?
+and that's just when x is equal to 0.
+so the only time when the derivative is
+equal to 0 is when x is equal to 0.
+now the derivative doesn't exist when x is
+equal to 1 or when x is equal to minus 1
+but, you know, the functions not even
+defined in that case anyway.
+and i'm only considering numbers between
+minus 1 and 1 anyhow.
+don't have to worry about those.
+and i don't have to worry about end
+points.
+because, again, the interval that i'm
+considering doesn't include the end
+points, it's an open interval.
+so i'm just going to check x equals zero
+to figure out what's going on there.
+so let's think about this point where x is
+equal to zero.
+well the derivative at zero is equal to
+zero.
+if i just plug in zero into this i can see
+that.
+what's the derivative at a number between
+minus 1 and zero?
+well if i plug in a number between minus 1
+and zero, x squared is then between zero
+and 1, so x squared minus 1 is now a
+negative number cubed.
+the denominator is negative, but this is a
+negative number, negative 4 times a
+negative number.
+so we've got negative times negative
+divided by negative, that's negative.
+so the derivative at a number between
+minus 1 and 0 is negative in this case.
+and a similar kind of reasoning will show
+that the derivative is positive if i
+evaluate the derivative between 0 and 1.
+so here is the deal.
+i've got one critical point on this
+interval between minus 1 and 1.
+and the function's decreasing between
+minus 1 and 0, and it's increasing between
+0 and 1.
+so what does that mean about the point 0?
+well it means that the point 0 must be a
+place where the function achieves a local
+minimum value.
+so i can summarize that here, f of 0.
+is by, this is the first derivative test
+is a local minimum value.
+what about the end behavior?
+what happens when x is near negative 1, or
+when x is near 1?
+so that's really step 4 in this checklist,
+is to check the limiting or the end
+behavior of this function.
+what do i mean by that?
+i really mean look at this when x is just
+a little bit bigger than minus y, or x is
+a little bit less than 1.
+alright, that's the end behavior of this
+function.
+these end points are actually included so
+of course i can't evaluate the function
+there but i should still see what happens
+when x is close to these endpoints.
+let's imagine i was trying to draw a graph
+of the function, alright.
+how would i know from the derivative.
+i know the function's decreasing here and
+increasing here.
+and i know the function's got a local
+minimum value here, but linking to the
+first derivative test.
+so the function's going down and then it's
+going up.
+but what happens at these two values, when
+i get close to minus 1 and when i get
+close to 1.
+when i get close to minus 1, the function
+is very, very large, and when i get close
+to 1, on this side, the function's also
+very, very large.
+so if i imagined trying to draw a graph of
+this function?
+right, it would be coming down like this,
+flattening out and then it would be
+getting very, very large again.
+let's summarize the situation.
+this graph will help us summarize the
+situation.
+alright, what do i know.
+i know that f of 0 is the smallest output,
+it's the minimum value that the function
+achieves on the domain, open interval
+minus 1 to 1.
+and there's no maximum value.
+by considering this limiting behavior, as
+x approached to the endpoints which aren't
+included in this domain.
+i can see that this function's output can
+be made as positive as i'd like, right.
+i can choose values of x to make the
+output as big as i want.
+so i can't say this function actually
+achieves some maximum output value.
+it doen'st achieve some maximum output
+value.
+but it does achieve a minimum output value
+right here.
+when x is equal to 0.
+and that output is 1.
+it's important to emphasize that the
+domain truly matters.
+yeah, what if i ask to find the maximum
+and minimum values of the same function f
+of x is equal to one over x squared minus
+one squared, but a different domain?what
+if i looked on the interval from one to
+infinity this open interval?
+again we start by differentiating well of
+course, the derivative's the same.
+the derivative of this function is still
+minus 4 x over x squared minus 1 to the
+third power.
+now, where are the critical points?
+the only place that this derivative is
+equal to 0, is when x is equal to 0.
+and the only place where the derivative
+doesn't exist is just places where the
+function isn't even defined, right?
+so on this interval.
+from one to infinity, there's no place
+where the derivative isn't defined or is
+equal to zero.
+so there's no critical points.
+so what about the behavior near the
+boundaries of this interval?
+what happens if x is just a little bit
+more than one or when x is really, really
+big?
+so, we working on the interval from 1 to
+infinity.
+this open interval.
+so, that means the limits that you'd
+consider are the limits, the function as x
+approaches infinity and the limit of the
+function as x approaches 1 from the right
+hand side.
+and, doing calculation i find that the
+limit of the function as x approaches
+infinity is 0 because, in that case the
+denominator can be made as large as i
+like, which makes this ratio as close to 0
+as i like.
+and, the limit of the function as x
+approaches 1 from the right is equal to
+infinity.
+because in that case if x approaches 1
+from the right this denominator can be
+made as close to 0 and positive as i'd
+like which makes this ratio as large as
+i'd like.
+so in this case this function on this
+domain doesn't take a largest value and
+doesn't take a smallest value.
+the function's output can be made as big
+as i'd like if i'm willing to choose x
+just a little bit bigger than 1 and the
+function's output can be made as close to
+0 as i'd like if i'm willing to choose x
+to be big enough.
+in other words, the domain matters.
+i mean this function, if i'm considering
+the funciton on this domain, from -1 to 1.
+it does have a smallest output value.
+and it should use its local minimum value
+when x is equal to 0.
+but if consider the same function.
+but on a different domain there's no
+critical point on this domain, right?
+and i studied the limiting behavior as x
+approached one, and as x approached
+infinity, and i found that i could make
+the output of this function as large as
+i'd like and as close to zero as i'd like.
+so this function doesn't achieve a maximum
+minimum value on this interval.

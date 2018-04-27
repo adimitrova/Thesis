@@ -1,0 +1,281 @@
+music 
+so thank you much, nico, 
+here us this interview 
+could you tell us a couple 
+words 
+okay 
+thanks, anna 
+thanks inviting 
+so, im nico serra 
+im professor university zurich 
+i work in lhcb experiment 
+lhcb experiment 
+could you tell us detector 
+lhcb experiment differs 
+respect to bigger, 
+general purpose detectors lhc 
+so, lhcb designed 
+optimized in order to measure 
+properties c c hadrons, 
+hadrons containing b c quarks 
+this explains peculiar geometry, 
+is similar to geometry 
+fixed target experiments 
+rather onionlike geometry that you 
+see detectors like atlas cms 
+reason is that partons 
+that compose protons, 
+quarks gluons, a much 
+higher probability to carry a low 
+momentum fraction proton respect to 
+carrying a large fraction momentum 
+therefore, to produce 
+relatively light objects like 
+instance b hadrons, probability is much 
+higher to asymmetric collisions 
+this implies that b hadrons produced 
+predominantly in beam direction, 
+forward backward, 
+a large lorentz boost 
+so this geometry, therefore, 
+allows to collect a really large 
+statistics b hadrons even 
+if covering really small solid angles 
+operating a lower luminosity 
+in addition, advantage, 
+since b hadrons a large 
+lorentz boost, decays really displaced 
+respect to protonproton interaction 
+big 
+handles background 
+in this geometry, we easily 
+accommodate rich detectors 
+particle identification particle identificatiob, 
+momentum resolution vertex 
+resolution key feature in order 
+to select signal background 
+good, so, you said that lhcb 
+detector operates lower luminosities 
+respect to 
+experiments like atlas, 
+in whose cavern we right now, 
+way 
+so that means that there 
+smaller event rates 
+mean that we 
+need a trigger anymore 
+no, we need a trigger 
+starting mhz 
+bunch crossing rate, 
+we a hardware level trigger that 
+reduces rate to mhz 
+that, we run a software highlevel trigger 
+that runs a mixture inclusive 
+exclusive selections to reduce rate 
+recently we a major 
+shift in paradigm triggering in lhcb 
+this is done in preparation 
+lhcb upgrade, 
+we will run directly a 
+fully software trigger 
+so we is to buffer events 
+in disk, to perform online 
+calibration alignment 
+detector that we will run in 
+upgrade event reconstruction 
+offline quality 
+thats interesting, indeed 
+we focus searches 
+type searches you lhcb 
+so, lhcb we searches 
+new physics 
+rather direct search 
+bumps tails new particles, 
+we hunt 
+particles virtual particles 
+so, let explain this an example 
+instance, lets consider 
+decay bs mesons in a dimuon pair 
+this decay is a rare decay in 
+standard model is 
+suppressed gim mechanism 
+also helicity suppressed 
+branching ratio is 
+if you new particles, 
+like, instance, 
+in supersymmetry, 
+enter in mediating this decay 
+change 
+properties this decay 
+instance, enhance this 
+branching ratio orders magnitude 
+therefore, you compare you 
+measure predictions 
+if you actually measure 
+this type decay, 
+you constraint 
+supersymmetry well 
+exactly 
+instance this particular 
+decays, fact that we measure a value 
+branching ratio that is in agreement 
+standard model predictions allows to 
+strongly contains supersymmetry 
+also consider that this is complimentary 
+respect to direct 
+searches in atlas cms 
+since we hunt particles 
+virtual particles, 
+we limited available 
+energy in center mass 
+so we in principle 
+constrain particle that mass 
+higher 
+collision energy lhc 
+i see 
+could you explain to us 
+a search is done 
+so rare decays so 
+important selection 
+you to efficient in rejecting 
+background selecting signal 
+then, we attribute dimuon pair to bs, 
+essentially, we see a mass 
+bump in dimuon invariant mass spectrum 
+difference is that we 
+know is mass bs, 
+so we so called look elsewhere effect 
+you need to know 
+well efficiency 
+detector background 
+you to know many bs 
+produced originally 
+you normally is to normalize 
+respect to another decay that you 
+know well a 
+well known branching ratio 
+you choose this decay, 
+that you somehow 
+cancel systematic 
+uncertainties in ratio 
+okay, you talk uncertainties 
+compromise 
+this type measurements 
+so, first we three 
+types uncertainties in searches 
+statistical uncertainties like 
+everywhere due to limited statistics 
+you systematic 
+uncertainties 
+in this case instance, a 
+source systematic would limited 
+knowledge efficiency limited 
+knowledge background 
+in addition, since we compare 
+measurement predictions, 
+we uncertainties due to 
+accuracy theory predictions 
+this is due to fact that theories 
+to extrapolate feynman 
+diagrams quark level, to 
+happens hadron level 
+this involves uncertainty 
+due to qcd essentially 
+okay 
+so, you see deviations 
+respect to standard model in 
+this channel elsewhere 
+so we dont see deviations in 
+bs 
+we see deviations respect 
+to standard model elsewhere 
+could you tell us that, 
+actually 
+yes, so 
+one things we test lhcb is 
+lepton flavor universality in b decays 
+so, students know, electron, 
+muon 
+tau, behave exactly 
+way apart mass, 
+comes different 
+interactions higgs boson 
+apart that behave 
+exactly in way 
+so if you a branching ratio a b meson 
+decaying to charged leptons 
+you factor effect 
+mass in phase space, 
+branching ratios 
+if you a new particles, 
+new virtual particles i said before, 
+might couple differently 
+to electron, muon tau 
+would spoil lepton 
+universality standard model 
+so, we see is exactly a departure 
+this lepton universality, 
+in b decays now, 
+we need data to 
+certain this deviation 
+certainly looks like 
+an intriguing pattern we seeing 
+okay, well is certainly interesting 
+breadth research program lhcb 
+else you discovered 
+could you tell us a bit that 
+yes, so in addition to search 
+new physics, 
+we is also to 
+spectroscopy, to measure properties 
+particles, hadrons predicted 
+quark model instance, 
+bump searches, 
+you in atlas, lower masses 
+we discover new excited states 
+d mesons b mesons 
+in addition, we also different 
+analysis called amplitude 
+analysis that allows us to measure 
+quantum numbers particles 
+instance, resonance x that 
+long thought to a d meson molecule 
+we could discard this 
+hyphothesis exactly measuring 
+quantum numbers this resonance 
+also relatively recently, 
+we discovered two particles, 
+consistent neither 
+baryons mesons pentaquarks 
+so particles composed four quarks 
+one antiquark 
+this a breaking ground results 
+that sounds really exciting indeed 
+prospects lhcb 
+future 
+so, measurements 
+first dominated 
+statistical errors 
+so means that, in order 
+to exploit fully lhc potential, 
+we need statistics 
+therefore we working 
+to prepare an upgrade lhcb 
+detector to run higher luminosity 
+in addition i said, 
+in measurements 
+we see a striking agreement 
+respect to standard model 
+prediction, 
+we also see deviation 
+so hope is that in future 
+we will reveal a pattern 
+this deviation that lead us 
+to discovery new physics 
+prospects lhcb to really 
+exciting you telling us 
+so, we really hope that you reveal 
+this interesting patterns indeed 
+thank you much 
+this interview, nico 
+thank you anna, bye 

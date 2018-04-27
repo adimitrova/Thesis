@@ -1,0 +1,106 @@
+music people often talk inverse 
+trig functions 
+thats nonsense 
+trig functions arent invertible 
+look y equals sine x 
+sine sends different input values, like , 
+pi, pi, pi, to output value 
+
+so, you going to pick inverse 
+
+to get around this problem, 
+going to talk inverses trig 
+functions we restrict domain 
+here ive got a graph sine 
+you see this function is 
+invertible 
+fails horizontal line test 
+but, if i restrict domain sine to 
+between minus pi , pie 
+, this function is invertible 
+and, heres inverse, arc sine 
+convention, arc sine outputs angles 
+between minus pi pi 
+also convention, arc cosine outputs 
+angles between pi 
+arc tan outputs angles between minus 
+pi pi 
+note that im calling inverse trig 
+functions arc whatever 
+you know, arc cosine, arc sine 
+one reason to call things arc cosine 
+arc whatever, is radian 
+measure 
+if this is a unit circle, length 
+this arc is measure 
+this angle, in radians 
+thats definition radians 
+so, to say that theta is arc cosine 
+half, is to say that theta is 
+length arc whose cosine is half 
+now, happens we compose 
+inverse trig functions trig 
+functions 
+complicating matters thinking 
+trig functions, lets think back to 
+an easier example, square root 
+squaring function 
+like trig functions 
+actually invertible, squaring 
+functions invertible, 
+multiple inputs yield output 
+so we to define square root to 
+pick nonnegative square root x 
+that means that if x is bigger 
+equal to zero, i square root 
+x squared is equal to x 
+if x is negative, this is true 
+sort deal happens trig 
+functions 
+so if theta is between minus pi 
+pi , acrc sine sin theta 
+is equal to theta 
+if thetas outside this range, this 
+is case 
+if thetas ouside this range, yes, arc 
+sine is going to produce me, another 
+angle, whose sine is angle 
+theta 
+theres plenty inputs to sine 
+yield output 
+things even complicated if you 
+mix together different kinds trig 
+functions 
+example, sine arc tan x 
+happens to equal to x divided 
+square root plus x squared 
+would you possibly get a formula 
+like that 
+well trick is to draw a right 
+triangle, correct triangle 
+well here ive drawn a right triangle 
+ive got an angle theta 
+ive drawn this triangle so that 
+thetas tangent is x 
+that means that theta is arc tangent 
+x 
+pythagorean theorem, i know 
+hypotenuse this triangle length 
+square root plus x squared 
+that gives enough information to 
+compute sine theta 
+sine theta is this opposite side x, 
+divided hypotenuse, square root 
+plus x squared 
+this tells that sine arc tan 
+x must x square root plus 
+x squared 
+drawing pictures will get you far in 
+understanding relationships 
+i think basically impossible to 
+memorize possible formulas that 
+relate inverse trig trig functions 
+if youre ever wondering 
+formulas are, you draw 
+appropriate picture, you 
+figure right away 

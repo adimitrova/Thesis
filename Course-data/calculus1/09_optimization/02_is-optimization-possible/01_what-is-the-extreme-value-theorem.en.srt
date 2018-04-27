@@ -1,0 +1,629 @@
+1
+00:00:00,012 --> 00:00:07,877
+[music] Subject to some conditions
+functions are guaranteed to have maximum
+
+2
+00:00:07,877 --> 00:00:15,621
+and minimum values here is the extreme
+value thery it says that if a function F
+
+3
+00:00:15,621 --> 00:00:21,127
+is continuous under closed.
+Interval a, b, then the function attains a
+
+4
+00:00:21,127 --> 00:00:24,548
+maximum value and the function attains a
+minimum value.
+
+5
+00:00:24,548 --> 00:00:28,446
+If you don't like this, you can make it a
+little bit more precise.
+
+6
+00:00:28,446 --> 00:00:32,706
+Here's a slightly more precise statement
+of the extreme value theorem.
+
+7
+00:00:32,706 --> 00:00:37,464
+It says: "If a function f is continuous on
+the closed interval a, b," then this is
+
+8
+00:00:37,464 --> 00:00:42,144
+really just making clear what I mean by,
+"attains a maximum value and attains a
+
+9
+00:00:42,144 --> 00:00:47,005
+minimum value." All right?
+What I really mean is that there's some
+
+10
+00:00:47,005 --> 00:00:53,213
+point, c and d In this interval so that no
+matter what other value I pick in that
+
+11
+00:00:53,213 --> 00:00:59,227
+interval, f of c is less than or equal to
+that other value, and f of d is bigger
+
+12
+00:00:59,227 --> 00:01:03,777
+than that other value.
+So f of c is the minimum value.
+
+13
+00:01:03,777 --> 00:01:10,066
+C is where f achieves that minimum value.
+And f of d is that maximum value.
+
+14
+00:01:10,067 --> 00:01:13,900
+D is where the function achieves that
+maximum value.
+
+15
+00:01:13,900 --> 00:01:20,098
+The extreme value theorem promises us that
+these extreme values exist, but it doesn't
+
+16
+00:01:20,098 --> 00:01:25,642
+tell us how to find those extreme values.
+I mean, you could have a complicated
+
+17
+00:01:25,642 --> 00:01:30,885
+looking but continuous function on the
+closed interval between a and b.
+
+18
+00:01:30,886 --> 00:01:36,626
+And it might be hard to actually determine
+where the maximum value occurs, but the
+
+19
+00:01:36,626 --> 00:01:42,187
+Extreme Value Theorem tells you that the
+maximum value is achieved somewhere on
+
+20
+00:01:42,187 --> 00:01:46,843
+that closed interval.
+Nevertheless, even in that example, there
+
+21
+00:01:46,843 --> 00:01:50,216
+are extreme values, it's just hard to find
+them.
+
+22
+00:01:50,216 --> 00:01:55,109
+Now maybe that all seems obvious.
+One way to understand the extreme value
+
+23
+00:01:55,109 --> 00:01:59,654
+theorem is to try to break it.
+Try to mess with it someone and see if it
+
+24
+00:01:59,654 --> 00:02:03,049
+still works.
+This is sort of the car method to doing
+
+25
+00:02:03,049 --> 00:02:06,704
+science, right?
+If I'm studying cars and I want to know
+
+26
+00:02:06,704 --> 00:02:11,366
+what's important to making a car go.
+Well, I used to just take off the wheels
+
+27
+00:02:11,366 --> 00:02:14,701
+and then see if the car still works.
+Doesn't work so well, right?
+
+28
+00:02:14,701 --> 00:02:18,733
+The fact that the car doesn't work when I
+break the car's wheels off tells me that
+
+29
+00:02:18,733 --> 00:02:21,041
+the wheels are important for the car,
+right?
+
+30
+00:02:21,041 --> 00:02:24,408
+Same game with this theorem.
+I want to figure out what the important
+
+31
+00:02:24,408 --> 00:02:28,373
+parts of this theorem are so I'm going to
+try to break this theorem in various ways
+
+32
+00:02:28,373 --> 00:02:32,460
+and if the theorem doesn't after I break
+it, well that must have been an important
+
+33
+00:02:32,460 --> 00:02:36,300
+part of the theorem.
+What if, for instance, we were studying a
+
+34
+00:02:36,300 --> 00:02:39,927
+function on the domain zero to infinity
+including zero.
+
+35
+00:02:39,927 --> 00:02:44,784
+So, yeah, what if instead of closed
+interval between these two numbers a and
+
+36
+00:02:44,784 --> 00:02:47,773
+b, I'll have infinity be one of those
+numbers.
+
+37
+00:02:47,773 --> 00:02:52,316
+Then of course, then I have to make that
+an open parenthesis there.
+
+38
+00:02:52,316 --> 00:02:57,186
+So if a function's just continuous on the
+interval between zero and infinity
+
+39
+00:02:57,186 --> 00:03:02,126
+including zero, does that mean that it
+actually achieves its maximum minimum
+
+40
+00:03:02,126 --> 00:03:05,092
+values?
+Well no think about this example the
+
+41
+00:03:05,092 --> 00:03:10,372
+function F of X equals X define on that
+interval this function does not achieve a
+
+42
+00:03:10,372 --> 00:03:13,947
+maximum value.
+If you tell me that some number is the
+
+43
+00:03:13,947 --> 00:03:19,131
+maximum output of this vunction I'm just
+going to add one to wahtever you say and
+
+44
+00:03:19,131 --> 00:03:24,572
+that'll be a bigger to this function.
+This function does not acheive it's maxium
+
+45
+00:03:24,572 --> 00:03:28,298
+output at given input.
+What if we were studying a function on a
+
+46
+00:03:28,298 --> 00:03:32,146
+domain that was an open interval?
+Yeah, so what if instead of closed
+
+47
+00:03:32,146 --> 00:03:36,189
+interval, I just said open interval
+between these two numbers a and b?
+
+48
+00:03:36,190 --> 00:03:40,830
+Well then the function would not be
+guaranteed to have a maximum or minimum
+
+49
+00:03:40,830 --> 00:03:44,873
+value, then take a look at this.
+Here is an example of a continuous
+
+50
+00:03:44,873 --> 00:03:49,905
+function defined at an open interval minus
+pi over 2 and pi over 2 and this function
+
+51
+00:03:49,905 --> 00:03:53,691
+does not achieve a maximum or minimum
+value on this interval.
+
+52
+00:03:53,691 --> 00:03:58,285
+I can make tangent as positive or as
+negative as I'd like by choosing x close
+
+53
+00:03:58,285 --> 00:04:02,826
+enough to one of these end points.
+What if I try to mess up the extreme value
+
+54
+00:04:02,826 --> 00:04:07,337
+theorem by eliminating the condition at
+the function being continuous.
+
+55
+00:04:07,337 --> 00:04:11,500
+So yeah, what if I break the statement of
+the extreme value theorem by removing the
+
+56
+00:04:11,500 --> 00:04:15,038
+continuity equation because I'm not
+required the function be continuous
+
+57
+00:04:15,038 --> 00:04:17,472
+anymore.
+So, if it's just some function that's
+
+58
+00:04:17,472 --> 00:04:21,498
+defined on a close interval between a and
+b, does it guarantee the function that
+
+59
+00:04:21,498 --> 00:04:23,929
+choose the maximum and minimum value.
+No.
+
+60
+00:04:23,929 --> 00:04:27,071
+Here's an example.
+Here's a picture of a graph of a
+
+61
+00:04:27,071 --> 00:04:32,391
+discontinuous function and it's defined in
+the closed interval between a and b, but
+
+62
+00:04:32,391 --> 00:04:37,483
+here you can see that it's approaching
+some value but never achieving that value
+
+63
+00:04:37,483 --> 00:04:42,010
+and here it's approaching some value but
+never achieving that value.
+
+64
+00:04:42,010 --> 00:04:47,032
+So this function does not Actually attain
+its maximum and minimum value on this
+
+65
+00:04:47,032 --> 00:04:50,211
+interval.
+To get a better sense of what's going on,
+
+66
+00:04:50,211 --> 00:04:55,213
+here's a much fancier way to talk about
+the possible output values of a function.
+
+67
+00:04:55,213 --> 00:04:57,954
+So let's write I to represent some
+interval.
+
+68
+00:04:57,954 --> 00:05:02,844
+It could be the open interval between a
+and b, the close interval between a and b,
+
+69
+00:05:02,844 --> 00:05:05,750
+whatever, right?
+I is just a set of numbers.
+
+70
+00:05:05,751 --> 00:05:10,266
+What's f of a collection of numbers?
+What does that even mean?
+
+71
+00:05:10,266 --> 00:05:15,411
+Well this is the collection of all the
+output values if the input is in I.
+
+72
+00:05:15,411 --> 00:05:20,846
+So f of I is the set, or collection, of
+all the f of xs whenever x is some point
+
+73
+00:05:20,846 --> 00:05:24,696
+in the set I.
+And people sometimes call this the image
+
+74
+00:05:24,696 --> 00:05:27,572
+of I.
+We can use this terminology to rephrase
+
+75
+00:05:27,572 --> 00:05:31,662
+what we've been talking about.
+For example, the continuous image of a
+
+76
+00:05:31,662 --> 00:05:36,632
+bounded interval, a bounded interval like
+this interval between 2 numbers, need not
+
+77
+00:05:36,632 --> 00:05:39,689
+be bounded.
+Here's an explicit example that we've
+
+78
+00:05:39,689 --> 00:05:44,162
+already seen, take a look at this
+continuous function, Function, tangent of
+
+79
+00:05:44,162 --> 00:05:46,712
+X.
+Then we look at the continuous function.
+
+80
+00:05:46,712 --> 00:05:49,458
+Remember to look at the image of some
+interval.
+
+81
+00:05:49,458 --> 00:05:53,027
+Here is a interval.
+And what's the output of this function if
+
+82
+00:05:53,027 --> 00:05:55,957
+the input is between minus pi over 2, and
+pi over 2.
+
+83
+00:05:55,957 --> 00:05:58,780
+Well, the output can be anything.
+Alright?
+
+84
+00:05:58,780 --> 00:06:03,264
+So f of i is all real numbers.
+So even though I'm starting with things
+
+85
+00:06:03,264 --> 00:06:07,143
+that aren't very big.
+The output is as big or as small as I'd
+
+86
+00:06:07,143 --> 00:06:10,499
+like it to be.
+What it that bounded interval is also
+
+87
+00:06:10,499 --> 00:06:13,732
+closed?
+A much fancier way of stating the extreme
+
+88
+00:06:13,732 --> 00:06:18,716
+value theorem is to state this result.
+That the continuous image of a closed
+
+89
+00:06:18,716 --> 00:06:21,993
+bounded interval is a closed bounded
+interval.
+
+90
+00:06:21,993 --> 00:06:27,128
+You can really try this for yourself.
+You write down some crazy continues
+
+91
+00:06:27,128 --> 00:06:32,879
+function so who knows what this continues
+function might be some continues function
+
+92
+00:06:32,879 --> 00:06:37,507
+and some interval which I'll call I.
+>> Between two numbers A and B.
+
+93
+00:06:37,507 --> 00:06:41,667
+So it's bounded because A and B are
+numbers, right, and it's closed because
+
+94
+00:06:41,667 --> 00:06:45,539
+I'm using the square brackets.
+And then what I want to think is what is
+
+95
+00:06:45,539 --> 00:06:47,951
+all the outputs whenever the input is in
+I.
+
+96
+00:06:47,951 --> 00:06:50,522
+Well this is going to be the closed
+interval.
+
+97
+00:06:50,522 --> 00:06:55,077
+Right, what's the smallest value, what's
+the minimum value that the function
+
+98
+00:06:55,077 --> 00:06:57,936
+achieves?
+And the biggest output is just going to be
+
+99
+00:06:57,936 --> 00:07:01,420
+whatever the maximum value is that this
+function achieves.
+
+100
+00:07:01,420 --> 00:07:06,536
+So this statement that, continuous image
+of a closed, bounded interval is a closed,
+
+101
+00:07:06,536 --> 00:07:09,633
+bounded interval is really getting at the
+same idea.
+
+102
+00:07:09,633 --> 00:07:14,399
+It's the extreme value theorem, saying if
+you start with a continuous function on
+
+103
+00:07:14,399 --> 00:07:18,736
+some closed, bounded interval Then the
+ouptputs are going to be between.
+
+104
+00:07:18,736 --> 00:07:22,900
+Including the minimum and maximum value.
+And the fact that these are square
+
+105
+00:07:22,900 --> 00:07:25,981
+brackets here.
+The fact that these are closed interval
+
+106
+00:07:25,981 --> 00:07:28,947
+are crucial.
+Because I'm telling you that the minimum
+
+107
+00:07:28,947 --> 00:07:32,423
+value is actually achieved.
+And the maximum value is actually
+
+108
+00:07:32,423 --> 00:07:35,078
+achieved.
+This way of talking is also useful for
+
+109
+00:07:35,078 --> 00:07:37,924
+something like the intermediate value
+theorum.
+
+110
+00:07:37,925 --> 00:07:40,468
+So, yeah.
+You could say it's true that the
+
+111
+00:07:40,468 --> 00:07:43,292
+continuous image of an interval is an
+interval.
+
+112
+00:07:43,292 --> 00:07:47,783
+So if you take an interval and you pick
+your favorite continuous function, f of
+
+113
+00:07:47,783 --> 00:07:52,742
+that interval is just some other interval.
+That's the same as saying that over values
+
+114
+00:07:52,742 --> 00:07:57,366
+in-between are achieved and that's really
+what the intermediate value theory is
+
+115
+00:07:57,366 --> 00:08:00,101
+getting at.
+This is just a very succinct way of
+
+116
+00:08:00,101 --> 00:08:04,762
+stating the intermediate value theorem.
+The upshot here is that we're seeing
+
+117
+00:08:04,762 --> 00:08:07,821
+there's something really special about
+continuity.
+
+118
+00:08:07,821 --> 00:08:12,519
+So here again is the extreme value fare I
+mean what we've learned is that continuity
+
+119
+00:08:12,519 --> 00:08:16,052
+is really important.
+If someone just shows you some function
+
+120
+00:08:16,052 --> 00:08:20,132
+that's not continuous don't expect that
+you're going to be able to find any
+
+121
+00:08:20,132 --> 00:08:24,937
+extreme values they might not exist.
+It's also really important that this is
+
+122
+00:08:24,937 --> 00:08:30,112
+about closed interval between two numbers
+alright a closed and bound interval and
+
+123
+00:08:30,112 --> 00:08:35,212
+that's really important and if you're
+being asked to find maximum minimum values
+
+124
+00:08:35,212 --> 00:08:40,285
+not on a closed interval say you shouldn't
+expect that they necessary exist.
+
+125
+00:08:40,286 --> 00:08:47,558
+They might not be there.
+So this theorem's going to help guide you
+
+126
+00:08:47,558 --> 00:08:56,581
+towards the correct answer because it
+tells you what sort of answer to expect.

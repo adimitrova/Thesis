@@ -1,0 +1,209 @@
+, remember back, remember back to 
+power rule well, power rules 
+say that derivative x to 
+n, real number zero, 
+derivative x to n is n times x to 
+n minus one power rule isnt 
+something we made a 
+consequence definition 
+derivative we know 
+actually true well remember, weve 
+already worked this n is a 
+positive whole number then, 
+derivative x to n is limit 
+this difference quotient this is 
+limit that calculates derivative if n 
+is a positive whole number, i expand 
+x plus h to n, i get x to 
+n plus n x to n minus times h plus 
+things lots hs minus x to n 
+h now, x to n 
+minus x to n cancel, h here 
+cancels this h here, im left a 
+bunch hs divided h, theres still a 
+lot hs in this limit this 
+constant, far h is concerned plus a 
+thing h is in it, well, this goes to 
+zero im left n times x to n 
+minus , is derivative x to 
+n this is a completely valid 
+argument long n is a positive, 
+whole number theres plenty 
+numbers arent positive, whole 
+numbers if n equaled negative 
+lets figure derivative x to 
+minus first power actually, 
+derivative x this is a problem 
+that we attack directly using 
+definition derivative here, ive 
+written limit function x 
+plus h minus function h now, to 
+calculate this limit, ill first put this 
+part in numerator a common 
+denominator so, this is limit h 
+goes to zero, whole things h 
+numerator is x minus x plus h, 
+common denominator things in 
+numerator, x plus h times x now, 
+whats x minus x plus h well, in that 
+case, this x this x cancel 
+im left is negative h there 
+so, this is limit h goes to zero 
+negative h x plus h times x 
+h great 
+now, h here h here 
+cancel i left im left 
+limit h goes to zero negative 
+x plus h times x now, i deal 
+this well, h goes to zero, 
+numerators denominator is 
+approaching x squared so, this limit is 
+minus x squared weve 
+calculated here is derivative 
+x, derivative x is 
+negative x squared now, i use 
+this fact fact that derivative 
+x is negative x squared to 
+compute using change rule 
+derivative x to n this is a 
+composition two functions, 
+composition function 
+x to n function derivative 
+is negative thing squared 
+so, derivative outside 
+function inside times 
+derivative inside function 
+derivative x to n, if n says 
+positive, whole number, i already know 
+this, n times x to n minus 
+x to n squared is x to n so, 
+ive got negative x to n times 
+n times x to n minus now, a minor 
+miracle happens x to n x 
+to n minus , theyre interacting, so 
+that im left x to n plus 
+in denominator, minus times integer 
+minus n in numerator now, this movie 
+doesnt look so great remember that 
+x to n is another name 
+x to negative nth power this, 
+if i rewrote this x to a power, i could 
+rewrite this negative n times x to 
+negative n minus power look 
+weve shown is derivative x to 
+negative n is negative n x to 
+negative n minus this is verifying 
+power rule holds even n is a negative 
+number pretty good 
+weve done whole numbers 
+rational numbers so, 
+heres a question derivative 
+x to power is times x 
+to that power minus , 
+implicit di fferentiation to rescue 
+well, heres maybe a simpler case y is 
+derivative x to 
+times x to negative well, lets 
+set y equal x to , that means 
+y to th power is x i apply 
+explicit differentiation to y to 
+equals x so differentiation precisely 
+gets y to dy dx equals a 
+derivative x, is divide 
+sides times y to th power 
+i get that dy dx is times y to 
+th power but, y is x to 
+so, dy dx is times y, is 
+x to seventeenth x to 
+but, that, so i could 
+write this times x to negative 
+so chain rule finishes 
+problem if i want to differentiate x 
+to power, well thats 
+differentiating x to power to 
+st power chain rule so thats 
+times inside, x to 
+to th thats derivative 
+outside function versus st power 
+function inside, times 
+derivative inside function now, 
+good news we calculated derivative 
+outside function this is times x 
+to to th power times 
+derivative x to , is 
+x to negative well, this is 
+times x to times x to 
+negative minus is 
+times x to , 
+x to thats exactly 
+power rule tells you n is 
+we started knowing power rule 
+true positive whole number 
+exponents now, a little 
+bit work, we know that power rule 
+holds rational exponent 
+function f x equals x to 
+square root power whoa 
+that even mean a serious objection 
+i mean a number raised to 
+square root power well, i 
+i take x i raise to 
+power, i mean, i take x 
+multiplied times 
+take tenth root that i take x 
+to power, i mean i take 
+x multiplied times, 
+take hundredth root that i 
+keep going, right 
+if i want to take x to power, 
+id multiply x , times, 
+take thousandth root that if 
+i to take x to power, 
+right 
+i take x multiply , 
+times take ,th root 
+that number i keep this, 
+im getting closer closer to 
+square root thats really 
+this function means really means to 
+take a limit functions i actually 
+understand, functions im taking x 
+to a rational exponent we handle this 
+a logarithm so, lets set y equals x 
+to square root power i want to 
+calculate dy dx so, trick here is 
+log so, im going to take a log 
+sides log y is log x to square 
+root power log something to a 
+power is that power times log base 
+so, ive got log y is square root 
+times log x now, i differentiate 
+sides i find that derivative 
+log y is y dy dx, derivative 
+side is square root 
+times x multiply sides y, 
+ive got dy dx is square root 
+yx i know y is y is x to 
+square root power so, this is 
+square root times x to square 
+root power divided x in 
+words, square root times x 
+to square root minus 
+using logarithms to fill in gaps in 
+quotient rule learning 
+a bunch derivative rules, 
+actually learning rules work 
+take a look square root here 
+plays essential role in this argument 
+i could go back this entire thing 
+replace square root 
+everywhere i see number n 
+id see is that this logarithm 
+argument is justifying power rule 
+derivativ e x to n is n times x to 
+n, n minus so, really 
+building foundations calculus we 
+learning to apply 
+rules to calculations, learning 
+to justify that rules 
+correct rules 

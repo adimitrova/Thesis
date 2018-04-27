@@ -1,0 +1,308 @@
+1
+00:00:00,012 --> 00:00:09,144
+, Sometimes you don't have a function, you
+have a relation between two variables. A
+
+2
+00:00:09,287 --> 00:00:17,120
+classic example is x squared plus y
+squared equals, say, 25. The graph of the
+
+3
+00:00:17,132 --> 00:00:23,024
+points in the plane that satisfy this
+equation as a circle. But that's not the
+
+4
+00:00:23,036 --> 00:00:29,433
+graph of a function, right? This graph
+fails the vertical line test. For a given
+
+5
+00:00:29,445 --> 00:00:35,337
+input value, say 4 in this case, there's
+multiple y values which satisfy this
+
+6
+00:00:35,349 --> 00:00:41,727
+equation. So, I can't simply solve this
+equation for y. Nevertheless, if you pick
+
+7
+00:00:41,739 --> 00:00:48,299
+a specific point like 4, 3, you might be
+able to find a function whose graph traces
+
+8
+00:00:48,311 --> 00:00:54,350
+out that same curve. So yeah, if I pick 4,
+3, there is a function, y equals the
+
+9
+00:00:54,362 --> 00:01:00,800
+square of 25 minus x squared. Which traces
+out a piece of the whole curve, right? I'm
+
+10
+00:01:00,812 --> 00:01:06,222
+just ignoring the rest of this and this
+little tiny piece of the curve can be
+
+11
+00:01:06,234 --> 00:01:11,833
+regarded as a function. If I had picked a
+different point, then I'm going to pick a
+
+12
+00:01:11,845 --> 00:01:16,906
+different function. Instead of the square
+root of 25 minus x squared, if I wanted to
+
+13
+00:01:16,918 --> 00:01:21,870
+stand down here, near the point 4, minus
+3, well then maybe I'd pick the function y
+
+14
+00:01:21,882 --> 00:01:26,794
+equals negative the square root of 25
+minus x squared. If I ignore the rest of
+
+15
+00:01:26,806 --> 00:01:31,899
+this and I'm just looking at this curve
+here, yet this curve by itself is a
+
+16
+00:01:31,911 --> 00:01:37,628
+function. If I ignore this, it satisfies
+the vertical line test. This function is
+
+17
+00:01:37,640 --> 00:01:43,201
+picking out a piece of the curve given by
+this equation which is, yeah, only valid
+
+18
+00:01:43,213 --> 00:01:48,600
+near the point 4, minus 3. But maybe
+that's all I care about for the time
+
+19
+00:01:48,612 --> 00:01:52,850
+being. So, let's say there is a function,
+y equals f of x, that satisfies the
+
+20
+00:01:52,862 --> 00:01:57,520
+original equation. Well then, I can write
+that down. y equald f of x say satisfies
+
+21
+00:01:57,532 --> 00:02:00,925
+the equation just means that x squared
+plus f of x squared equals 25. Now, I'm
+
+22
+00:02:00,937 --> 00:02:05,550
+not saying that this gives me all of the
+solutions, right? The graph x squared plus
+
+23
+00:02:05,562 --> 00:02:09,940
+y squared equals 25 is a circle fails the
+vertical line test. There is no function
+
+24
+00:02:09,952 --> 00:02:14,745
+that gives me all those outputs because
+there's multiple outputs for a given
+
+25
+00:02:14,757 --> 00:02:20,119
+input. All I'm saying is that I've got
+some function which traces out a piece of
+
+26
+00:02:20,131 --> 00:02:24,446
+the whole curve. Then, I can
+differentiate. So, this is true for a
+
+27
+00:02:24,458 --> 00:02:29,457
+bunch of values of x that I can
+differentiate this. The derivative of this
+
+28
+00:02:29,469 --> 00:02:34,796
+sum is the sum of the derivative, so the
+derivative of x squared is 2x plus the
+
+29
+00:02:34,808 --> 00:02:40,058
+derivative of f of x squared. I'm going to
+use a chain rule to do that. It's the
+
+30
+00:02:40,070 --> 00:02:46,731
+derivative of the outside function at the
+inside times the derivative of the inside
+
+31
+00:02:46,743 --> 00:02:52,232
+function equals the derivative of 25,
+which is zero. Now I can solve. So,
+
+32
+00:02:52,363 --> 00:02:57,927
+subtract 2x from both sides and I'm left
+with 2 times f of x times f prime of x
+
+33
+00:02:57,939 --> 00:03:02,745
+equals negative 2x. And then, I'll divide
+both sides by 2 times f of x. And I'll
+
+34
+00:03:02,757 --> 00:03:09,913
+find that f prime of x is minus 2x over 2
+f of x, and I can cancel those 2's and
+
+35
+00:03:09,925 --> 00:03:17,431
+just get minus x over f of x. It seems
+like a funny situation. The derivative
+
+36
+00:03:17,443 --> 00:03:22,863
+depends on more than just x. It also has
+an f of x. in it.
+
+37
+00:03:22,868 --> 00:03:27,804
+Another way to say it is that the slope of
+the tangent line dy, dx, is negative x
+
+38
+00:03:27,816 --> 00:03:32,422
+over y, right? y is f of x. And it does
+really seem a littie bit off putting
+
+39
+00:03:32,434 --> 00:03:37,600
+initially in these kinds of calculations
+the slope of the tangent line depends on
+
+40
+00:03:37,612 --> 00:03:42,736
+more than just x. It's negative x over y
+for this particular case. But think back
+
+41
+00:03:42,748 --> 00:03:47,440
+to the piacture for this case, right?
+The picture's a circle. And what I'm
+
+42
+00:03:47,452 --> 00:03:51,595
+saying is the slope of the tangent line is
+negative x over y. So, if you pick that
+
+43
+00:03:51,607 --> 00:03:56,295
+point, say 4,3, and you ask what's the
+slope of the tangent line to the circle at
+
+44
+00:03:56,307 --> 00:04:00,815
+the point 4,3 this equation is telling you
+the slope is -4 thirds. And yeah, that
+
+45
+00:04:00,827 --> 00:04:07,420
+line is going down, the slope's negative.
+What's the slope of the tangent line to
+
+46
+00:04:07,432 --> 00:04:13,675
+the curve at the point 4, negative 3? Same
+equation tells us that the slope there is
+
+47
+00:04:13,687 --> 00:04:19,110
+4 3rds. And yeah, this line's going up.
+The slope of the tangent line is depending
+
+48
+00:04:19,122 --> 00:04:23,665
+on more than just the x coordinate, right?
+You also need to know the y coordinate in
+
+49
+00:04:23,677 --> 00:04:28,275
+order to know exactly what function you're
+actually looking at near that point. And
+
+50
+00:04:28,287 --> 00:04:32,566
+that totally affects the slope of that
+tangent line. To do all these sorts of
+
+51
+00:04:32,578 --> 00:04:35,100
+calculations, the trick is the cha in
+rule.
+
+52
+00:04:35,107 --> 00:04:39,591
+For instance, if you're given some
+relation like this, x squared plus y cubed
+
+53
+00:04:39,603 --> 00:04:43,867
+equals 1. You just got to make sure to
+think of y as a function of x. So that
+
+54
+00:04:43,879 --> 00:04:48,735
+when you differentiate both sides, the
+derivative of the left hand side is 2x
+
+55
+00:04:48,747 --> 00:04:54,035
+plus the derivative of y cubed equals the
+derivative of 1, which is 0, but what's
+
+56
+00:04:54,047 --> 00:04:59,285
+the derivative of y cubed? If y is a
+function of x, then when you differentiate
+
+57
+00:04:59,297 --> 00:05:04,545
+this, you've got to use the chain rule.
+It's 3 times the inside function squared,
+
+58
+00:05:04,652 --> 00:05:09,515
+that's the derivative of the third power
+function, times the derivative of the
+
+59
+00:05:09,527 --> 00:05:14,655
+inside function. I'll just write y prime.
+And as long as you're careful to use the
+
+60
+00:05:14,667 --> 00:05:19,250
+chain rule, you'll be able to do these
+kinds of implicit differentiation
+
+61
+00:05:19,262 --> 00:05:24,180
+problems. And you'll eventually solve for
+y prime in terms of both x and y. The
+
+62
+00:05:24,192 --> 00:05:25,705
+chain rule is our friend.

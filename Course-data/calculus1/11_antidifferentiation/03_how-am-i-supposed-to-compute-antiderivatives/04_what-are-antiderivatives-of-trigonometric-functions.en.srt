@@ -1,0 +1,399 @@
+1
+00:00:00,000 --> 00:00:05,054
+[music] How do I antidifferentiate trig
+functions?
+
+2
+00:00:05,055 --> 00:00:10,700
+Sine and cosine are easy if we just
+remember their derivatives.
+
+3
+00:00:10,700 --> 00:00:15,800
+The derivative of sine of x, with respect
+to x, is cosine x.
+
+4
+00:00:15,800 --> 00:00:19,980
+And the derivative of negative cosine is
+sine.
+
+5
+00:00:19,980 --> 00:00:24,782
+So what are their anti-derivatives?
+Knowing this, now I know some of the
+
+6
+00:00:24,782 --> 00:00:30,570
+anti-derivatives.
+If the derivative of sine is cosine, then
+
+7
+00:00:30,570 --> 00:00:35,533
+the anti-derivative of cosine is sine plus
+C.
+
+8
+00:00:35,533 --> 00:00:39,766
+And if the derivative of negative cosine
+is sine.
+
+9
+00:00:39,766 --> 00:00:45,044
+That means the anti-derivative of sine is
+negative cosine plus c.
+
+10
+00:00:45,044 --> 00:00:50,472
+Well what about tangent?
+What would I differentiate to get tangent
+
+11
+00:00:50,472 --> 00:00:53,796
+of x?
+Yeah, I'm asking what do I differentiate
+
+12
+00:00:53,796 --> 00:00:57,953
+to get tangent or what's the
+anti-derivative of tangent?
+
+13
+00:00:57,954 --> 00:01:05,014
+I'm claiming, that the antiderivative of
+tangent is log secant x, plus some
+
+14
+00:01:05,014 --> 00:01:08,164
+constant.
+How do I know this?
+
+15
+00:01:08,164 --> 00:01:13,060
+Well, to verify this is true, it's enough
+to do a differentiation problem.
+
+16
+00:01:13,060 --> 00:01:19,343
+I need to check that the derivative of log
+of secant of x Is equal to tan of x.
+
+17
+00:01:19,344 --> 00:01:23,000
+And how do I know this?
+Well I have to differentiate this
+
+18
+00:01:23,000 --> 00:01:26,310
+composition of functions.
+The composition of log and secant,.
+
+19
+00:01:26,310 --> 00:01:31,046
+Which I'll do in the chain rule, right.
+So what's the derivative of log?
+
+20
+00:01:31,046 --> 00:01:34,656
+It's one over.
+So it's 1 over the inside function times
+
+21
+00:01:34,656 --> 00:01:38,519
+the derivative of secant.
+What's the derivative of secant?
+
+22
+00:01:38,520 --> 00:01:44,212
+It's secant tangent.
+Alright, so this is 1 over secant times
+
+23
+00:01:44,212 --> 00:01:49,309
+secant x times tangent x.
+Now good news the secants cancel.
+
+24
+00:01:49,310 --> 00:01:55,512
+And what I'm left with is just tangent x.
+So I've found an antiderivative for
+
+25
+00:01:55,512 --> 00:01:59,435
+tangent.
+But it's totally opaque as to how somebody
+
+26
+00:01:59,435 --> 00:02:03,544
+would ever have gotten that as the
+anti-derivative of tangent.
+
+27
+00:02:03,545 --> 00:02:07,506
+And yet, once that candidate
+anti-derivative was revealed to us, we can
+
+28
+00:02:07,506 --> 00:02:12,126
+verify that it's truly an anti-derivative
+just by differentiating it and checking
+
+29
+00:02:12,126 --> 00:02:15,751
+that it really gives us tangent.
+Ok, let's try another one of these kinds
+
+30
+00:02:15,751 --> 00:02:18,229
+of problems.
+What's an anti-derivative of secant?
+
+31
+00:02:18,230 --> 00:02:21,814
+So I'm asking for a function, whose
+derivative is secant x.
+
+32
+00:02:21,815 --> 00:02:24,124
+Right?
+I'm looking for the antiderivative of
+
+33
+00:02:24,124 --> 00:02:25,887
+secant x.
+What is that?
+
+34
+00:02:25,888 --> 00:02:29,761
+Well it turns out that the antiderivative
+of secant x is this.
+
+35
+00:02:29,761 --> 00:02:33,330
+It's log, the absolute value of secant x
+plus tangent x.
+
+36
+00:02:33,330 --> 00:02:36,770
+Now again, it's totally mysterious, right,
+where this came from.
+
+37
+00:02:36,770 --> 00:02:39,906
+But we can verify that that's truly an
+antiderivative.
+
+38
+00:02:39,906 --> 00:02:44,191
+So to verify that the antiderivative of
+secant x is this, it's enough to
+
+39
+00:02:44,191 --> 00:02:46,817
+differentiate this and end up with secant
+x.
+
+40
+00:02:46,817 --> 00:02:52,405
+So let's try that, alright?
+I'll differentiate log of the absolute
+
+41
+00:02:52,405 --> 00:02:56,303
+value of secant x plus tangent x and what
+do I get?
+
+42
+00:02:56,304 --> 00:03:01,914
+Well, the derivative of log is 1 over the
+inside function, which is secant x plus
+
+43
+00:03:01,914 --> 00:03:06,122
+tangent x.
+Times the derivative of the inside
+
+44
+00:03:06,122 --> 00:03:08,924
+function.
+This is really the chain rule in action.
+
+45
+00:03:08,924 --> 00:03:12,839
+All right.
+Now, what's the derivative of this sum?
+
+46
+00:03:12,839 --> 00:03:16,406
+Well, that's the sum of derivatives,
+right?
+
+47
+00:03:16,406 --> 00:03:20,453
+So the derivative of secant is secant x
+tangent x.
+
+48
+00:03:20,453 --> 00:03:30,041
+And the derivative of, tangent.
+Is secant squared, and this is divided by
+
+49
+00:03:30,041 --> 00:03:37,612
+secant x plus tangent x.
+Now note I can factor out a secant x here,
+
+50
+00:03:37,612 --> 00:03:44,064
+and I've got secant x times the numerator
+is tangent x plus secant x.
+
+51
+00:03:44,065 --> 00:03:48,253
+The denominator's the same thing.
+I mean I wrote it in the opposite order.
+
+52
+00:03:48,253 --> 00:03:53,430
+But now this is great, right?
+This cancels and what I'm left with is
+
+53
+00:03:53,430 --> 00:03:57,478
+secant x.
+So yeah, the derivative of this is secant
+
+54
+00:03:57,478 --> 00:04:02,010
+x and consequently the antiderivative of
+secant x is this.
+
+55
+00:04:02,010 --> 00:04:05,731
+This is really a key in to anti
+multiplying, to factoring.
+
+56
+00:04:05,731 --> 00:04:10,051
+If you remember our experience,
+multiplying and anti-multiplying, or
+
+57
+00:04:10,051 --> 00:04:12,914
+factoring numbers, right.
+Factoring was hard.
+
+58
+00:04:12,914 --> 00:04:16,754
+I had to do a bunch of trial division to
+figure out how to factor a number.
+
+59
+00:04:16,754 --> 00:04:20,979
+But once I had that factorization, or
+purported factorization, in hand, then
+
+60
+00:04:20,979 --> 00:04:24,944
+checking it was easy.
+Multiplying is something that you can do.
+
+61
+00:04:24,945 --> 00:04:28,024
+It's the same story here with derivatives,
+right.
+
+62
+00:04:28,025 --> 00:04:31,675
+Anti differentiating is hard, I mean it
+seems hard to figure out what the anti
+
+63
+00:04:31,675 --> 00:04:35,771
+differentiating derivative is.
+But once you show me a guess, I can verify
+
+64
+00:04:35,771 --> 00:04:40,571
+that your guess is correct by doing the
+easy step of just differentiating and
+
+65
+00:04:40,571 --> 00:04:44,434
+seeing if you're right.
+I hope that these examples are giving you
+
+66
+00:04:44,434 --> 00:04:47,554
+some real respect for the true
+difficulties of anti-differentiation.
+
+67
+00:04:47,554 --> 00:04:52,606
+Differentiating is a mechanical process.
+You just have to apply the rules
+
+68
+00:04:52,606 --> 00:04:54,354
+carefully.
+But we've seen now that
+
+69
+00:04:54,354 --> 00:04:58,842
+anti-differentiation requires flashes of
+insight, just cooking up the correct
+
+70
+00:04:58,842 --> 00:05:01,452
+answer and then verifying that it's
+correct.
+
+71
+00:05:01,452 --> 00:05:04,492
+Well this seems, you know, impossible to
+continue, right?
+
+72
+00:05:04,492 --> 00:05:08,852
+How can we ever find anti-derivatives if
+we just have to keep hoping for insight to
+
+73
+00:05:08,852 --> 00:05:11,510
+appear?
+Well the good news is that most of the
+
+74
+00:05:11,510 --> 00:05:16,190
+rest of this course will be developing
+tools to make this kind of guessing more
+
+75
+00:05:16,190 --> 00:05:19,790
+systematic right?
+Instead of relying on just sheer insight
+
+76
+00:05:19,790 --> 00:05:23,213
+to solve these problems.
+We're going to be providing tools that
+
+77
+00:05:23,213 --> 00:05:26,753
+will aid your insight or aid your
+creativity, or provide a little bit of
+
+78
+00:05:26,753 --> 00:05:30,593
+structure so that you can exploit the
+patterns that we're going to be seeing,
+
+79
+00:05:30,593 --> 00:05:33,320
+and order the finite derivatives much more
+easily.
+
+80
+00:05:33,320 --> 00:05:44,233
+So I think it seems hard right now, but
+it's going to get a lot easier.

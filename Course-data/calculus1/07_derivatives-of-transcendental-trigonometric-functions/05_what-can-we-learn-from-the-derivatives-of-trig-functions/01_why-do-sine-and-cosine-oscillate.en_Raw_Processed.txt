@@ -1,0 +1,115 @@
+music 
+sine is a periodic function 
+you follow graph sine wiggles 
+down, forever ever 
+lets try to get a sense to this is 
+case 
+graph sine look like this 
+is sine moving 
+to get intuition this, lets 
+first imagine a different situation 
+lets suppose that velocity is equal to 
+position 
+and, i gotta imagine im starting here, 
+i start moving, right 
+im going to start moving slowly 
+first, position increases, im 
+going to moving faster faster, 
+right 
+position is larger larger, 
+velocity becomes larger larger, 
+makes position larger larger 
+so if this is way world works, im 
+bouncing around minus to like 
+sine 
+im thrown towards 
+infinity 
+we know that situation looks like 
+if f is position time t, f 
+prime t, derivative f is 
+velocity time 
+so saying that velocity equals position is 
+saying ive got function whose 
+derivative is equal to 
+and, we know an example that 
+f equals e to is one example 
+a function 
+so, to cook a different situation, 
+lets imagine something a little bit 
+different 
+instead, suppose that in 
+situation acceleration is 
+negative position 
+so that means that if im standing 
+here, position is positive, im 
+to right zero, acceleration 
+is negative im pulled back 
+towards zero 
+then, i swing past toward zero, 
+position is negative, so 
+acceleration is positive, so im 
+pulled back in direction 
+thats kind producing this swinging 
+back forth across 
+this situation comes physically in 
+real world 
+if you attach a spring to ceiling, 
+springs acceleration is proportional to 
+negative displacement 
+theres a function also that realizes this 
+model 
+to say that acceleration is negative 
+position is is second derivative 
+position, is acceleration, 
+is negative function 
+yeah, we know an example 
+if f is sine t, derivative 
+sin is cosine 
+derivative cosine, is 
+second derivative sine, is minus sine 
+
+we know another function like 
+this 
+look if, if g is cosine t, g 
+prime is minus sine 
+then, g double prime t, second 
+derivative cosine, is minus cosine 
+t, derivative sine is 
+cosine 
+so cosine is another example a function 
+whose second derivative is negative 
+
+we know even functions like this 
+instance, if f function 
+f equals sine minus cosine 
+well then, derivative f would 
+times derivative sine, is 
+cosine, minus times derivative 
+cosine 
+derivative cosine is minus 
+sine 
+so this is plus sine 
+so thats derivative f 
+second derivative f is 
+derivative derivative 
+thisll times derivative cosine 
+is minus sin, plus derivative 
+sin, is cosine 
+so yeah, this is another example a 
+function whose second derivative is 
+negative 
+if i take this function differentiate 
+twice, i get negative original 
+function 
+so if you like, reason 
+functions bouncing 
+like this, is in every case, 
+functions second derivative is negative 
+value 
+function is positive, second 
+derivative is negative, pulling 
+functions value is negative, 
+second derivative is positive, pushing 
+back 
+so function bounces 
+like this forever 

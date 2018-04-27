@@ -1,0 +1,513 @@
+1
+00:00:00,012 --> 00:00:10,226
+>> [music] Here's a fundamental question.
+How can I multiply numbers really quickly.
+
+2
+00:00:10,226 --> 00:00:16,257
+It's not like this is a particularly new
+problem.
+
+3
+00:00:16,257 --> 00:00:25,038
+You can imagine somebody trying to
+multiply 10, 15, 17 by 10, 20, 30, 35, 36,
+
+4
+00:00:25,038 --> 00:00:32,684
+37 and getting 500, 600 and 29.
+But you know, how would you ever do these
+
+5
+00:00:32,684 --> 00:00:39,901
+kinds of calculations if you were trapped
+in a world filled with Roman numerals?
+
+6
+00:00:39,901 --> 00:00:45,376
+Thankfully, instead of Roman numerals,
+we've got place value.
+
+7
+00:00:45,376 --> 00:00:52,386
+Place value provides an algorithm for
+actually computing these multiplication
+
+8
+00:00:52,386 --> 00:00:56,976
+answers.
+So, here we've got 17, here I've got 37.
+
+9
+00:00:56,976 --> 00:01:04,182
+If I want to do this multiplication
+problem, I just have to do this single
+
+10
+00:01:04,182 --> 00:01:07,668
+digit multiplies.
+7 times 7 is 49.
+
+11
+00:01:07,668 --> 00:01:10,636
+7 plus 4 is 11.
+3 times 7 is 21.
+
+12
+00:01:10,636 --> 00:01:14,159
+3 plus 2 is 5.
+Add these numbers up, 629.
+
+13
+00:01:14,159 --> 00:01:18,400
+And that's exactly what I had here in
+Roman numerals.
+
+14
+00:01:18,400 --> 00:01:23,867
+What if the numbers were much, much bigger
+than just 2 digit numbers?
+
+15
+00:01:23,867 --> 00:01:27,668
+What if the two numbers I wanted to
+multiply each had 10 digits?
+
+16
+00:01:27,668 --> 00:01:31,612
+Well then, I've still gotta do all these
+para-wise multiplications.
+
+17
+00:01:31,612 --> 00:01:34,909
+Right down here, I'm going to end up
+writing 100 digits.
+
+18
+00:01:34,909 --> 00:01:38,466
+At least 100 digits.
+Because for every pair of digits here,
+
+19
+00:01:38,466 --> 00:01:41,515
+I've got to write down at least one digit
+down here.
+
+20
+00:01:41,515 --> 00:01:44,922
+That's terrible.
+You know, and then I've got to add all of
+
+21
+00:01:44,922 --> 00:01:48,814
+these things up before I before I'm able
+to get the answer.
+
+22
+00:01:48,815 --> 00:01:53,696
+I mean that's a ton of work, right?
+You'd really hope that there'd be some way
+
+23
+00:01:53,696 --> 00:01:56,911
+to speed this up.
+And there is a way to speed this up.
+
+24
+00:01:56,911 --> 00:01:59,949
+There's a ton of ways to speed up
+multiplication.
+
+25
+00:01:59,949 --> 00:02:04,765
+Multiplication is such an important
+operation that humans have given it a ton
+
+26
+00:02:04,765 --> 00:02:08,188
+of thought.
+We've really got a lot of different ways
+
+27
+00:02:08,188 --> 00:02:13,561
+to try to make this faster, but maybe the
+easiest way Is that of quarter squares.
+
+28
+00:02:13,561 --> 00:02:17,803
+So here's the trick.
+I'm going to use this table of quarter
+
+29
+00:02:17,803 --> 00:02:21,083
+squares.
+This is n squared over 4, a quarter
+
+30
+00:02:21,083 --> 00:02:26,366
+square, so here's n, here's the output.
+If I plug in 1, I get a quarter.
+
+31
+00:02:26,366 --> 00:02:31,701
+If I plug in 2, 2 squared over 4 is 1.
+3 squared over 4 is 2 and a quarter.
+
+32
+00:02:31,701 --> 00:02:35,968
+4 squared over 4 is 4.
+5 squared over 4 is 6 and a quarter.
+
+33
+00:02:35,969 --> 00:02:41,126
+Okay, you can image I've got a really big
+table of these quarter squares.
+
+34
+00:02:41,126 --> 00:02:47,264
+Now, why does this help you multiply?
+We've also got this little algebraic fact.
+
+35
+00:02:47,264 --> 00:02:52,838
+A times b is a plus b squared over 4, the
+quarter square of a plus b minus a minus b
+
+36
+00:02:52,838 --> 00:02:56,762
+squared over 4.
+So, instead of multiplying a and b, I'll
+
+37
+00:02:56,762 --> 00:03:01,802
+add them together, look it up in the
+table, take their difference, look it up
+
+38
+00:03:01,802 --> 00:03:05,846
+in the table, and take the difference of
+those table values.
+
+39
+00:03:05,846 --> 00:03:09,871
+For instance, let's suppose that I want to
+multiply 3 times 2.
+
+40
+00:03:09,871 --> 00:03:14,761
+I mean, this is a ridiculously easy case.
+But just to show off how it works.
+
+41
+00:03:14,761 --> 00:03:18,362
+Let's multiply 3 times 2.
+I'll add 3 and 2 and I get 5.
+
+42
+00:03:18,363 --> 00:03:24,362
+And I look it up in my table.
+And 5 squared over 4 is 6 and a quarter.
+
+43
+00:03:24,362 --> 00:03:30,379
+I take the difference, 3 minus 2 is 1.
+And if I look up 1 in my table, I get a
+
+44
+00:03:30,379 --> 00:03:34,828
+quarter.
+And 6 and a quarter minus a quarter is 6.
+
+45
+00:03:34,828 --> 00:03:40,215
+Which is a product of 3 and 2.
+Quarter squares convert multiplication
+
+46
+00:03:40,215 --> 00:03:46,048
+into an addition, a subtraction, two table
+lookups and a final subtraction.
+
+47
+00:03:46,048 --> 00:03:49,528
+Let's try doing this on a much bigger
+number.
+
+48
+00:03:49,528 --> 00:03:54,376
+Let's try to multiply 17 by 37 using
+quarter squares.
+
+49
+00:03:54,376 --> 00:04:00,851
+So, the first thing to do is to figure out
+the quarter square of 17 plus 37.
+
+50
+00:04:00,851 --> 00:04:05,667
+17 plus 37 is 54.
+I've got a much bigger table of quarter
+
+51
+00:04:05,667 --> 00:04:08,951
+squares here.
+Here's 54 on my table.
+
+52
+00:04:08,951 --> 00:04:13,507
+54 squared over 4 according to my table is
+729.
+
+53
+00:04:13,507 --> 00:04:20,711
+Now, the next step is to look at the
+difference of 17 and 37, which is 20, and
+
+54
+00:04:20,711 --> 00:04:25,072
+look that up in my table of quarter
+squares.
+
+55
+00:04:25,073 --> 00:04:28,742
+Here's 20.
+And the quarter square of 20 is 100.
+
+56
+00:04:28,742 --> 00:04:32,895
+That's pretty clear.
+20 squared is 400, divided by 4.
+
+57
+00:04:32,895 --> 00:04:36,633
+So 100.
+Now what do I do to figure out the product
+
+58
+00:04:36,633 --> 00:04:40,167
+of 17 and 37?
+Well, I'm going to take 729, I'm going to
+
+59
+00:04:40,167 --> 00:04:45,120
+subtract 100, and I'm going to get 629,
+which is in fact the produce of 17 and 37.
+
+60
+00:04:45,120 --> 00:04:50,486
+But we did it using quarter squares, by
+just adding the numbers together, taking
+
+61
+00:04:50,486 --> 00:04:55,526
+their difference, looking up those numbers
+in the table and then taking the
+
+62
+00:04:55,526 --> 00:05:00,676
+difference of the numbers in the table, I
+got the product of these 2 numbers.
+
+63
+00:05:00,677 --> 00:05:06,571
+Admittedly, people don't talk too much
+about quarter squares nowadays.
+
+64
+00:05:06,571 --> 00:05:11,354
+What you've probably heard a lot more
+about is logarithms.
+
+65
+00:05:11,354 --> 00:05:17,560
+There's this property of exponents that e
+to the x times e to the y is e to the x
+
+66
+00:05:17,560 --> 00:05:21,791
+plus y.
+The corresponding property of logs is that
+
+67
+00:05:21,791 --> 00:05:28,282
+log of a product is the sum of the logs.
+The log of a times b is log of a plus log
+
+68
+00:05:28,282 --> 00:05:31,864
+of b.
+You can use this property of logs to
+
+69
+00:05:31,864 --> 00:05:36,597
+multiply very quickly provided you have a
+log table.
+
+70
+00:05:36,597 --> 00:05:41,198
+And I do have a table of logarithms.
+Here's my table.
+
+71
+00:05:41,198 --> 00:05:46,734
+Let's multiply 17 by 37.
+So, instead of looking up 17, I'm going to
+
+72
+00:05:46,734 --> 00:05:51,947
+look 1.70 in my table and I find the log
+of 1.70 is about 0.23045.
+
+73
+00:05:51,947 --> 00:05:59,753
+Then, instead of looking up 37, I'm going
+to look up 3.70 in my table, and the log
+
+74
+00:05:59,753 --> 00:06:05,663
+of 3.70 is about 0.56820.
+I'm going to add together those two logs
+
+75
+00:06:05,663 --> 00:06:11,343
+and I get 0.79865, and I just got to hunt
+for that number in my table.
+
+76
+00:06:11,343 --> 00:06:22,009
+Mercifully, the numbers are in order and I
+find that 0.79865 is right here in my
+
+77
+00:06:22,009 --> 00:06:30,632
+table that's in the 9th column of the row
+which starts with 6.2.
+
+78
+00:06:30,632 --> 00:06:39,149
+So the product of 17 and 37 must be 629.
+Why this works is that same basic fact
+
+79
+00:06:39,149 --> 00:06:43,700
+about logs again.
+Logs convert multiplication into addition.
+
+80
+00:06:43,700 --> 00:06:47,352
+There's another way that we can exploit
+this fact.
+
+81
+00:06:47,352 --> 00:06:52,776
+If I've just got two plain old rulers, I
+can use the two rulers to add together
+
+82
+00:06:52,776 --> 00:06:56,415
+numbers.
+Let's say, I want to add 3 and 2 together.
+
+83
+00:06:56,415 --> 00:07:02,450
+What I'll do is I'll put the 0 on the top
+above the 2 on the bottom so that this
+
+84
+00:07:02,450 --> 00:07:07,267
+distance is 2 units.
+On the top, the distance between 0 and 3
+
+85
+00:07:07,267 --> 00:07:10,698
+is 3 units.
+So, if I'm going to add 2 units to 3
+
+86
+00:07:10,698 --> 00:07:14,057
+units, I just read down and the answer is
+5.
+
+87
+00:07:14,057 --> 00:07:20,936
+If your 2 rulers, have a logarithmic
+scale, then you've just invented the slide
+
+88
+00:07:20,936 --> 00:07:24,775
+rule.
+This is a logarithmic scale, so this
+
+89
+00:07:24,775 --> 00:07:32,187
+distance, on the scale labeled D, starting
+at 1 and ending at this 7, this distance
+
+90
+00:07:32,187 --> 00:07:36,793
+is log of 1.7.
+Now, next to that distance, I have to
+
+91
+00:07:36,793 --> 00:07:40,781
+place a distance whose length is log of
+3.7.
+
+92
+00:07:40,781 --> 00:07:47,907
+Now I've placed the 1 on the scale labeled
+C, just above the 7 on the D scale.
+
+93
+00:07:47,908 --> 00:07:53,808
+The distance on the C scale from that one
+all the way over here to 3.7 on the C
+
+94
+00:07:53,808 --> 00:07:58,005
+scale, that's a distance which is really
+log of 3.7.
+
+95
+00:07:58,005 --> 00:08:04,171
+Since I've placed these two distances next
+to each other, the total distance is just
+
+96
+00:08:04,171 --> 00:08:07,982
+the sum of the logs, which is the log of
+the product.
+
+97
+00:08:07,983 --> 00:08:13,519
+So, here's the answer.
+Just below 3.7 on the top scale is what
+
+98
+00:08:13,519 --> 00:08:17,941
+looks to be 6.3, just a little bit less
+than 6.3.
+
+99
+00:08:17,941 --> 00:08:22,876
+Now, I know the last digit of 17 times 37
+is going to be a 9.
+
+100
+00:08:22,876 --> 00:08:30,034
+So, the answer must be 6.29.
+For hundreds of years, these slide rules
+
+101
+00:08:30,034 --> 00:08:37,261
+were state of the art for multiplying.
+So that you can join into this proud
+
+102
+00:08:37,261 --> 00:08:44,996
+tradition, I encourage you to print out
+your own slide rule, and try doing some
+
+103
+00:08:44,996 --> 00:08:48,221
+multiplication problems on it.

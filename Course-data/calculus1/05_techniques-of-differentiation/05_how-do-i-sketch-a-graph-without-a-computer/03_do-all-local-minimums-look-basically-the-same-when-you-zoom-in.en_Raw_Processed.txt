@@ -1,0 +1,95 @@
+music people idea that a local 
+minimum means function decreases 
+increases 
+heres a local minimum graph 
+this random function 
+misconception is that 
+look like this 
+that every time you got a local minimum 
+one side, functions decreasing, 
+side functions 
+increasing 
+plenty local minima look exactly 
+like that but, theres also plenty 
+pathological examples 
+instance, consider this a somewhat 
+pathological example 
+im going to define this function f a 
+piecewise function 
+if inputs nonzero, im going to 
+this sinx, makes sense since 
+x isnt zero, time x 
+if input is zero, functions 
+output will also zero 
+in this case, theres a local minimum 
+zero 
+i know well, heres i know 
+lets take a look this function 
+claim is that fx is never negative 
+i know that well, i know 
+sine sine absolutely anything 
+all, matter i take this sine 
+of, is between 
+now, if i add to this, plus sine 
+absolutely anything all, 
+is between zero two 
+now, thats pretty good 
+now, think back to definition this 
+function 
+here, ive got plus sine something, 
+doesnt matter what, 
+alright 
+plus sine anything, 
+this is between zero two 
+now, 
+im multiplying x 
+i know x well, x is 
+negative 
+could zero, could positive 
+matter x is, x is 
+negative 
+now, im multiplying sinx, this 
+number is trapped between zero 
+to, x is never negative 
+that means fx is negative long 
+x isnt equal to zero, 
+alright 
+long x isnt equal to zero i mean, 
+this first case this is a 
+nonnegative number times a nonnegative 
+number, so product is also 
+nonnegative 
+now, possibility, course, is 
+that i plug in zero x 
+then, f is definition 
+zero 
+that means in either case, matter 
+that i plug in x, fx is never a 
+negative 
+if fx is never negative f, 
+i know that this must 
+smallest possible output value 
+function 
+numbers that smaller 
+zero negative numbers, output 
+this function is never negative 
+this isnt usual sort local 
+minimum function decreases 
+increases 
+well, heres graph funciton 
+f 
+and, there is a local minimum zero, 
+if i start zooming in, matter 
+much i zoom in, theres little region 
+graph is decreasing 
+increasing 
+graph is always wiggling 
+upshot here is that decreasing 
+increasing is one way to produce a 
+local minimum, 
+definition a local minimum 
+every local minimum arises in 
+that exact way 
+a local minimum means is that 
+nearby output value is smaller 
+that local minimum value 

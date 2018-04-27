@@ -1,0 +1,260 @@
+music 
+hello, welcome back to course 
+in this video, we going to 
+talk wired communication 
+we will also cover adcs dacs 
+since units convert analogue 
+values that fundamental in 
+world to a digital form 
+vice versa 
+lets start wired communication 
+definition is quite simple 
+you might guess, 
+wired communication is 
+transmission data wires 
+wirebased communication 
+communication, regardless 
+whether is wired 
+wireless, is guided certain rules 
+set rules is called 
+a communication protocol 
+two devices communicate 
+if use protocol 
+analogy that you think is two 
+people try to talk to 
+successfully understand 
+if use language 
+there many communication protocols 
+parallel, 
+enables high data rate communication 
+serial like usb 
+is resource efficient 
+if we think number 
+physical connections needed 
+to enable communication 
+embedded systems we deal 
+resource constrained devices, 
+communication is mostly 
+done via serial protocols 
+usb, spi, uart, others 
+apart serialparallel 
+type classification, 
+communication protocols 
+synchronous asynchronous 
+synchronous communication protocols 
+utilize common clock between 
+receiver transmitter 
+upside is higher throughput since 
+synchronization data is needed 
+asynchronous protocols 
+use a common clock 
+instead, synchronization 
+between receiver 
+transmitter is done 
+using synchronization data 
+example, start stop bits in rs 
+protocol synchronization purposes 
+a good analogy might 
+two speaking people 
+listener starts listening attentively 
+speaker starts speaking 
+in this case, first two words 
+speaker synchronization 
+make listener start 
+receiving verbal information 
+upside asynchronous communication 
+protocols is that there is need 
+an additional wire a common clock 
+however, communication 
+protocols slower 
+part transmitted 
+data is used synchronization 
+full duplex, half duplex 
+you might come across words 
+if you read communication 
+protocols 
+mean 
+full duplex communication is 
+a bidirectional communication 
+that operate in 
+ways time 
+a mobile phone is an example 
+full duplex communication 
+you interlocutor 
+speak time 
+you may understand anything 
+still you will hear partner 
+partner will hear you 
+however, half duplex communication 
+allows one side to talk 
+is either you partner 
+a good example type 
+communications walkietalkies 
+instance, usb versions 
+half duplex prodigals, 
+whereas usb two 
+additional pairs wires 
+this enables full 
+duplex data transfers 
+that we mentioned usb, lets give 
+details this communication protocol 
+usb stands universal serial bus 
+in beginning, 
+usb using four wires 
+protocol evolved, 
+additional wires added 
+example, usb , 
+apart mentioned four wires, 
+uses two additional twisted pairs 
+mentioned before, 
+additional wires introduce 
+full duplex capabilities to usb 
+data rates also vary 
+quite significantly if we 
+compare initial versions 
+protocol 
+later ones, 
+mbits to gbits 
+structure a usb 
+network is a tire star 
+consists one usb devices 
+one hubs host controller 
+one host exists in network 
+hubs nodes to 
+devices hubs connect to 
+host polls hubs 
+changes in network 
+thus, if a new device 
+appears in network, 
+if device is unplugged, 
+hubs will notify host that 
+devices that use usb 
+grouped several categories 
+category represents functionality 
+that device provide to host 
+so is a structure 
+protocol 
+data is sent using transfers 
+transfers consist packets 
+there four main types 
+transfers in usb protocol, control, 
+bulk, isochronous, 
+an interrupt transfer 
+packet consists bytes, 
+byte serves a certain purpose 
+example, sync byte is used 
+synchronization 
+pid byte contains packet id 
+packets also 
+different types, 
+token, data, handshaking, a descriptor 
+spi is another communication protocol 
+widely used in embedded systems 
+spi stands 
+serial peripheral interface 
+uses four wires operation 
+protocol operate one 
+master one several slaves 
+data is shifted bit bit 
+master to slave 
+well slave to master 
+shift registers connected 
+a circle in a way that 
+a bit is shifted in a slave register, 
+a bit 
+end register is shifted 
+shifted masters register 
+there is also a possibility to connect 
+slave devices in a daisy chain manner 
+in this case, shift register of, 
+lets say, slave , 
+will connected 
+shift register slave 
+in order to make a processing element 
+deal outer physical world, 
+physical values represent, 
+example, amount light 
+pressure, temperature, 
+voltage converted to numbers 
+way around, 
+a possibility to convert a number 
+a physical value, 
+lets say a voltage level 
+luckily there special kinds 
+converters solve this problem 
+analog to digital converters 
+digital to analog converters 
+main objective is to convert 
+voltage levels to a number, 
+back a number to a voltage level 
+among large variety parameters 
+describe units, 
+lets emphasize 
+resolution is minimal deviation 
+voltage that detected an adc 
+or, if we reformulate definition 
+a dac, resolution dac 
+is minimal difference 
+an input number that yet 
+leads to a different voltage level 
+resolution is quantity 
+digits in a number 
+is result 
+a conversion an adc 
+initial value a conversion 
+a dac 
+thus, if we bit resolution, adc, 
+that means that result 
+take possible values 
+parameters conversion 
+rate defines number 
+conversions that adc 
+dac make in one second 
+conversion time specifies 
+time needed a single conversion 
+conversion actually happen 
+there several methods 
+one i will elaborate on, 
+is successive approximation 
+an adc exploits this 
+method a dac inside 
+works using binary search 
+initially, we apply an input 
+voltage level to adc 
+we set significant 
+bit resulting number to 
+this number is converted 
+dac to voltage 
+if obtained voltage is 
+higher input voltage, 
+significant bit stays , 
+else set to 
+we shift to next bit, set 
+to , convert number to a voltage, 
+compare resulting 
+voltage to input voltage 
+if resulting voltage is 
+higher input voltage, 
+bit remains 
+otherwise, resets to 
+thus, we go bit 
+until we obtain final number 
+dac, one methods is 
+called pulsewidth modulator 
+input number defines 
+a duty cycleperiod 
+ratio generated pulse signal 
+generated signal is fed 
+to a lowpass filter, 
+output, 
+we a constant voltage level 
+adcs dacs either 
+part bigger divisors, 
+example, microcontrollers, 
+work a stand alone unit 
+particles, we also explain 
+analog to digital conversion 
+digital to analog conversion work 
+thanks watching, 
+ill see you in next video 
+music 

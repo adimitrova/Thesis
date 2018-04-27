@@ -1,0 +1,388 @@
+welcome to week six 
+this week im going to talking 
+following walls 
+we need to follow walls 
+well, last week we solved navi, 
+we somehow seemed to solve navigation 
+problem 
+we robot drive point a to 
+point b without colliding 
+obstacles 
+but, obstacles fairly easy, 
+reason this is that theyre 
+convex 
+we obstacles that 
+concave in shape 
+so, example, 
+take this ushaped obstacle, if a 
+robot starts here 
+goal location is 
+side 
+obstacle, will happen 
+controllers that we 
+designed last week is that robot will 
+drive here 
+obstacle, start avoiding 
+
+obstacle, drive back 
+obstacle 
+always trying to get to this 
+side, also avoiding this obstacle 
+trapped in here 
+shape obstacle is 
+concave 
+so we need is an additional 
+controller, followall 
+controller, that will, so that we 
+make a decision 
+that inside concave obstacle, 
+going to 
+follow contour the, boundary 
+this object, 
+going to follow way 
+around until weve 
+cleared we proceed onto 
+goal location 
+thats, thats objective this 
+week 
+way that well this is 
+going to use infrared sensors to 
+approximate 
+a section wall, alright 
+really an obstacle going to 
+call a wall 
+
+weve, weve estimated a 
+section, basically 
+going to figure a vector thats 
+tangential to wall 
+also one thats perpendicular to 
+wall 
+point is to combine two 
+vectors a single 
+vector that will steer robot 
+into,into one direction along 
+the, the, contour the, 
+boundary wall 
+also a vector that will make sure that 
+robot 
+neither steers into, wall away 
+wall 
+so going to maintain distance 
+wall we follow 
+
+is robot going to estimate 
+wall 
+well, first all, one two inputs 
+
+controller is going, is going to either 
+left right 
+so we either going to follow a wall 
+thats to left to right 
+so we to make that decision we 
+anything else 
+if we decide that we going to use 
+left left direction 
+going to 
+do, is going to use sensors one, 
+two, three robot 
+so going to use three sensors 
+to, to estimate a wall thats left, 
+an obstacle thats to left 
+robot 
+
+well is well pick three 
+
+going to pick two, that 
+shortest infrared sensor readings 
+and, we already know to get a point, 
+in world frame 
+so, we end is we end a 
+point so 
+we have, this point right here im 
+going to denote as, point 
+and, this is going to point 
+so, weve picked two, since 
+weve picked two points 
+in world, we come a vector 
+right 
+so, going to come this green 
+vector right here 
+and, this green vector is going to 
+vector 
+thats tangential to wall 
+so im going to call this u, vector u 
+fw denotes that, this is follow 
+wall, 
+comma denotes that this is tangential to 
+wall 
+really, way that you define is, 
+p minus p 
+thats definition this, this 
+vector 
+now, i also said that we want to maintain 
+spacing wall 
+so going to to calculate 
+a vector thats perpendicular 
+way that going to calculate 
+is, 
+again, we vector 
+previous slide 
+we ufwtp, this time a 
+prime 
+mark, thats im going to 
+normali, normalize it, 
+thus, again, i think last week i 
+talked this is, 
+going to is going to take 
+vector, divide 
+magnitude 
+so thats the, 
+thats normalized version 
+that vector 
+well is well first take a 
+point this vector, is going to 
+ua, 
+this point, im going to pick for, to 
+make easy, im going to pick first 
+im going to pick point detected 
+this first infrared infrared sensor 
+so, this one right here 
+i know this one i could also 
+picked 
+this one right here i picked first 
+one 
+im also going to pick another point 
+is 
+going to location robot in 
+world 
+so thats going to point vector 
+up, u sub p 
+since i i so, i 
+this point so i 
+let indicate that slide 
+i 
+this point right here, this point right 
+here, this vector, i 
+is i compute the, a vector that points 
+robot, so robot 
+to this closest point wall 
+the, equation that describes 
+this vector is follows 
+this, so this vector, this 
+perpendicular 
+vector im denoting u sub fw, p 
+this subtraction points 
+dotted 
+a dot product of, tangential 
+vector 
+multiply 
+tangential vector 
+so this is linear algebra that 
+gives a vector 
+robot to closest point 
+wall, thats, that lies tangential 
+vector 
+and, this is sufficient us to 
+maintain spacing yet 
+we really want to do, is we want to 
+find another vector thats goes in 
+opposite direction, and, 
+
+previous slide i this 
+perpendicular vector, 
+so im going to is im going 
+to normalize multiply 
+distance fw 
+so d sub fw 
+
+this distance right here is distance 
+that 
+we want to maintain between robot 
+walls 
+so we want robot to end in a 
+way that this is equal to dfw 
+so reason that i define this vector 
+like, like so is that we combine 
+two together 
+if we combine two vectors together, 
+
+going to get a vector that either points 
+us 
+toward wall if robot is farther 
+
+d fw obstacle, wall 
+going to get a vector that 
+points us 
+away 
+the, wall if closer d 
+sub fw 
+so, thats the, thats purpose 
+going through, equations 
+really, ends happening is if 
+we div if we 
+somehow linearly combine the, tangential 
+vector to the, to wall 
+perpendicular vector 
+the, to wall, that you know either 
+points us towards away depending 
+distance 
+if we combine in way, 
+going to get a, vector, 
+u sub fw, will 
+point us in direction in 
+wall is going to, that allows 
+us to follow wall, also 
+component that either pushes us towards 
+away wall depending close 
+far we 
+away obstacle, this is 
+exactly we wanted 
+last thing that we to 
+is we to use good 
+old pid controller to steer robot in 
+
+direction this vector, good 
+to go 
+so this work 
+well, you saw in previous slides that 
+i got a really good 
+estimate of, of, the, the, a 
+section wall 
+thats always case 
+so, example here inside corner, 
+i here is 
+this is robots estimate of, the, 
+wall 
+you see that this is an 
+overestimate 
+so, actually okay that, 
+if 
+overestimating wall, thats, you 
+know, thats 
+really problematic 
+going to 
+going to avoid this, this virtual 
+piece 
+wall going to slam 
+
+theres danger of, real danger that 
+that is on, inside corners 
+outside corners we 
+underestimating wall 
+so you see here that robot thinks 
+that this represents 
+is 
+a good representation wall 
+if we cut this corner closely 
+robot collide this 
+part obstacle that doesnt 
+really sense theres a little 
+bit spread between sensors 
+we dont have, you know, , 
+sensors robot that cover every 
+single inch outside robot 
+we five sensors, so we got to 
+make, 
+deal we have, so here we to 
+a little careful, thats 
+design this distance, d 
+sub fw comes play 
+so, you want to make sure that this, this, 
+value is large enough to allow us to 
+cut corners collide wall 
+also large so, so that we 
+dont lose track 
+wall, we dont want to end 
+far away 
+wall robot doesnt 
+sense 
+wall anymore we longer 
+follow 
+so, we want to kind stick to wall 
+
+close possible, close to 
+collide 
+implementation is going to happen 
+in a new controller, followwallm 
+youre going to to implement 
+missing logic and, 
+and, math that covered in 
+previous slides 
+ag, also covered in 
+the, in manual in much greater detail 
+
+i said the, whats, whats 
+really unique 
+this controller going to accept either 
+left right 
+denoting side of, side 
+robot 
+wall is going to in going to 
+follow 
+so going to tell youre going to 
+to 
+follow a wall thats going left 
+going to tell you youre going to 
+to 
+follow an op a wall thats right 
+that going to inputs 
+inaudible, really come play 
+next week we full 
+navigation 
+algorithm state machine going 
+so, lets see this looks like in, in 
+matlab in simulator 
+ill launch simulator hit play 
+here, we robot, following 
+wall left 
+you see here i got really, 
+really close, to this corner 
+so that a little dangerous 
+maybe i picked a better, 
+better distance to maintain from, 
+wall 
+here we overestimating so 
+okay 
+here going to cut fairly 
+close 
+so this is pretty, pretty much a little 
+close comfort 
+but, you know, crashing 
+the, obstacles 
+so were, were, gon, okay 
+that 
+alright 
+great 
+so, robots going to follow this wall 
+until i close this 
+now, again, make sure reread manual 
+weeks, thats updated week 
+six 
+a lot details especially, you 
+know, 
+math and, diagrams that will 
+help you 
+implement logic in math in in 
+the, in controller 
+
+i encourage you to experiment 
+different values 
+distance to maintain wall 
+so youll see different results 
+different distances that you pick 
+also you decide to combine 
+two vectors that 
+tangential and, perpendicular, to 
+the, to wall, and, and, 
+in different ways, so 
+depends you want to put 
+emphasis 
+you might want to put emphasis 
+strictly 
+following law, following 
+law, worry maintaining a 
+distance 
+much, you could converse 
+that, really to you 
+that i wish you good luck 

@@ -1,0 +1,173 @@
+so what we want to do next is actually look at motor torque equations
+if we go and look at this differential equations,
+this is in a vectorial form,
+but really if you think of it in the scalar components,
+how many differential equations does this line,
+this boxed line give me
+three
+three
+how many states does this system have
+three
+well, you have omegas theres attitude,
+but for attitude, we have the differential kinematic equations, right
+so attitude is always covered,
+so lets just ignore the attitude part
+but this differential equation,
+you could solve for omegadot
+great but what is omegadot
+right per wheel, you dont know what that angular acceleration is gonna be
+what is gammadoubledot
+we dont know that either
+so theres two extra degrees of freedom in this system
+each mechanical device provided one additional degree of freedom because we have
+a singleaxis rotation going from body to gimbal, gimbal to wheel
+so this only gives you three differential equations
+we need five, and thats because we have one device
+if we have five of these devices,
+i need way more, but then this kind of becomes repetitive
+so we have lets say we have four vscmgs,
+this is still the equation you would use
+you would need this with summations over all the devices
+and ill show you how to do that
+but then we still need whats called the motor torque equations per device
+because,ultimately, what you would simulate is, hey,
+im putting in one newtonmeter on that spin axis for
+the reaction wheel and half a newtonmeter on the gimbal axis
+whats the dynamic response gonna be all right
+so we need these extra equations which we dont have yet
+so thats what were gonna look at next
+how do we find these motor torque equations
+and essentially, we go back to the board and say, look,
+were looking at hdot equal to l if you think of it
+as a freebody diagram  let me just draw that out
+if we think of this as a  youve got your wheel
+right and heres the spin axis,
+and the wheel is free to rotate about gs
+theres your rotation
+now omega
+so this axis is a motor  i know theres
+a motor torque that makes it accelerate about this axis
+if you have zero voltage with the motor broke,
+it would be a freespinning wheel as,
+you know, it would spin up, spin down
+theres no motor torque applied
+this is very similar to that inaudible problem you did with
+the cylinder and that rotisserie grill architecture
+right and it was the bbprime axis
+that was the axis where it was free to spin
+so if we had no motor torque,
+this would be a freespin axis
+with the motor torque, you get to control what torque is applied all right
+so we know this is where our motor torque acts,
+but this is just one axis
+you will have two other axes that are orthogonal to this
+and as the spacecraft is tumbling and moving  remember,
+this axis has a particular orientation in
+the craft  the structure has to actually produce these other two torques
+so, we can do hdot equal to l,
+about the center of mass of this wheel now,
+which is what we kind of derived earlier already,
+and we can then use that to relate and come up with a scalar equation that we need
+so thats what im showing you here
+so if you do this, hdot equal to l 
+the dynamical system is just the wheel  the only thing that
+interfaces with the wheel is the motor torque in
+one axis and then the structural torques along the other two
+thats what makes sure this wheel doesnt just flip
+sideways relative to the gimbal frame, right
+as you gimbal it, youre specifying two of the three dimensions of the wheel
+its the spin thats actually free
+so we can do this, and youve derived this already,
+we had this result earlier when we derived the full equations of motion,
+so i get to rewrite it again
+and the trick now is we have to recognize here that hdot equal to l,
+that torque thats acting on just the wheel,
+the torque thats along the gs axis must be what i call us
+thats the spinaxis motor torque
+the other two im calling tau
+those are the structural torques that keep this wheel aligned relative to that
+if you needed to know what the structural torques were,
+youre worried about breaking those hinges and bearings and stuff,
+you can actually go back here and then do your simulation and then,
+postprocessing, plug in all these states
+and all these gts and
+ggs are gonna be the structural torques that are acting on the system
+so this approach actually gives you the internal torques, if you want
+now the equations of motion, i dont need them
+so what we do need to do is what is along the gs axis,
+that must be equal
+so here, you can see weve got only this part
+this part must be equal to the motor torque,
+and thats where i find my motor torque equation here
+its essentially the motor torque is the wheel inertia times
+the angular acceleration plus these two other terms
+if we ignore gimbaling,
+how big is your spacecraft acceleration compared to
+wheel acceleration what do you think
+about the same size
+an order of magnitude difference
+two, three orders of magnitude difference
+how fast the spacecraft rotate, you think
+whats a fast speed with before they declare emergencies
+three degrees a second
+two degrees, three degrees,
+just a couple of degrees per second, doesnt take much
+you know, how fast does the wheel go
+maximum speed, , rpm, way faster
+so its accelerations are gonna well exceed what the spacecraft
+so some people actually just go,
+you know what, this is my motor torque equation,
+which really makes your life simpler because it decouples this equation
+completely from the attitude states and the gimbal states but its not the true thing
+momentum wont be preserved if you do that
+this is the full answer that you have
+and in fact, if youre gimbaling at the same time,
+the gimbal rate does crosscouple back into this torque
+theres a gyroscopic torque that you have to account for
+and so this is the full motor torque equation that you have
+right so now we have this extra differential equation we needed
+we had earlier one for omegadot
+with this one, if i throw it in,
+i can solve for this one
+but you can see its also coupled to this one
+so you get linear systems of equations you have to solve simultaneously
+or you could take this  ill show you in a moment 
+we can take this and backsubstitute it in,
+and this will give us
+the reaction where only creations of motion that ill show you  the classic results
+so, different ways you can formulate it
+so thats one extra differential equation
+we also need it for the gammadoubledot
+that needs the motor torque ug
+whats that torque there
+there, the dynamical system im using,
+its not just the gimbal frame,
+but inside the gimbal frame is a wheel
+and the torques im worrying about is outside of the gimbal frame,
+so the gimbal frame to body is where the motor torque is
+attached between gimbal and body
+so, inside of it, the dynamical system is actually both
+the wheel with the gyroscopics and the frame with its gyroscopics
+so we computed these hdots earlier
+if you sum them up, this is what you get
+and now, this stuff about the gimbal axis actually has to be equal to the motor torque
+the other two are the structural torques being produced
+so its the same kind of a process, right
+two structural
+this is the motor torque here thats really spinning
+this combined  as you rotate the frame,
+youre also rotating the wheel
+its a combined system
+and you can come up, you can solve for this in the end
+and then thats what you get
+so if you drop this and ignore other terms,
+you could roughly say that torque is equal to inertia times angular acceleration,
+but its a pretty crude approximation
+this gives you the full coupling
+and you can see, if you have a torque,
+you can get your angular acceleration for the gimbal,
+but also you get the spacecraft angular acceleration coupling into it
+so, either you backsubstitute or you solve it as a linear system of equations
+but now we actually have five differential equations
+and given torques acting on the system,
+we can solve for everything

@@ -1,0 +1,189 @@
+music 
+in this module we touch upon basic 
+properties particle acceleration 
+detection methods 
+in this video in next, 
+we will discuss charged 
+particle detection techniques 
+first we talk ionization 
+detectors in general, gaseous ones, 
+in particular 
+watching this video, you will 
+know gaseous ionization detectors 
+count charge particles 
+measure trajectories, 
+operational modes 
+a detector 
+ionization detectors detect passage 
+a charged particle measuring total 
+charge electrons andor ions 
+produced ionization medium 
+this medium a gas, 
+a liquid, a solid 
+to collect electrons 
+ions recombine atoms, 
+an electric field must present, 
+separates charges 
+makes drift towards electrodes 
+charges induce a small 
+current electrodes, 
+a signal detected 
+an amplifier 
+average number 
+electronion pairs 
+produced passage 
+a charged particle 
+is given bethebloch formula 
+that we presented earlier 
+d thickness 
+detector, w, 
+average energy required 
+to ionize one atoms 
+in a gas, w is typically 
+order ev 
+size detected electrical signal 
+depends several technical factors, 
+mostly applied high voltage 
+so this graph shows 
+important operational regions 
+yaxis you see detected 
+charge in a logarithmic scale, 
+xaxis you see 
+applied high voltage 
+first useful region particle 
+detection is ionization region, 
+voltage is large enough to 
+prevent ionelectron recombination 
+ionization charges 
+drift towards electrodes 
+resulting signal reflects 
+total ionization charge 
+advantage this operational region 
+is that you obtain an excellent energy 
+resolution a good linearity 
+obvious disadvantage is that 
+detected signal is small, 
+since theres internal 
+amplification in detector 
+so special lownoise 
+amplifiers to used 
+in order to render this signal detectable 
+this operational mode is used in 
+ionization chambers filled gases 
+noble liquids 
+also, solid state detectors 
+made silicone 
+germanium, will discussed in 
+next video, work in this region 
+next useful region particle 
+detection is proportional region 
+if field is high enough, 
+order vcm, 
+electrons accelerated electric field 
+gain enough energy to 
+produce secondary ionization 
+total number atoms ionized grows 
+exponentially applied voltage, 
+shown in this graph 
+amplification factor is between 
+
+large amplification factor 
+especially obtained in gases, 
+is detectors operating in 
+this region mostly gasfilled 
+advantage using this region is that 
+theres need to a lownoise 
+electronics, since theres internal 
+amplification in detector 
+disadvantage is that 
+energy resolution is worse, 
+fluctuations in 
+amplification process 
+fluctuations mainly due to 
+instabilities in external parameters, 
+like highvoltage, 
+temperature, pressure, etc 
+detectors operating in 
+proportional region mainly 
+used to measure position particles 
+drift chambers, proportional wire chambers 
+so on, use this operational region 
+in chambers, electric field 
+is implemented using thin wires, 
+to put little material 
+possible in path particle 
+an example, we show here, central 
+drift chamber l detector 
+large electronpositron collider 
+cern 
+particles lose little 
+energy in gas dedx, 
+measurement is destructive 
+wire chambers ideal to measure charged 
+particle tracks in front a colorimeter, 
+will measure 
+particle energy absorption 
+well talk spectrometers 
+colorimeters in video 
+last useful region 
+gazeous ionization detectors 
+is geiger region 
+if field is increased even more, 
+energies secondary 
+electrons increase rapidly 
+excite ionize atoms 
+thus, an avalanche free 
+electrons is produced 
+furthermore, a large number photons 
+is produced atoms fall back 
+ground state 
+photons add to ionization 
+photoelectric effect along 
+wire electric 
+field is strongest 
+avalanche develops quickly 
+an audible discharge is produced 
+this is principle 
+geiger counter 
+due to discharge, 
+current anode is saturated 
+signal amplitude is thus 
+independent primary charge 
+advantage using this region 
+is that low radiation levels 
+measured counting particle rate, 
+even if particles low energy 
+disadvantage is that energy 
+particles cannot measured 
+discharge stops space 
+charge formed positive ions 
+around anode decreases sufficiently 
+electric field so 
+that avalanche process stops 
+detector will 
+insensitive to new ionization 
+until positive ions 
+migrated far enough anode 
+this is origin dead 
+time in a geiger counter 
+a increase in electric 
+field produces a permanent discharge 
+a short circuit between cathode anode, 
+will eventually destroy device 
+heres a picture a geiger counter, 
+makes an audible sound 
+every time a particle is counted 
+in fact, 
+ive brought a geiger counter here 
+geiger tube fixed 
+to electronics 
+counting device in this base 
+so if i switch 
+sound you hear audible 
+sound created device 
+counting rate is mostly due to 
+potassium radioactive 
+isotopes inside body 
+in next video, mercedes will discuss 
+semiconductorbased ionization detectors 
+sound 

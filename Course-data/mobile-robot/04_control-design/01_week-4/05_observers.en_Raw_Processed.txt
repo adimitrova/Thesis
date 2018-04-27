@@ -1,0 +1,245 @@
+so last lecture, we actually 
+declaring success in terms designing 
+controllers 
+useful placement, add 
+controllability, we go 
+big problem, though, is well, we 
+dont x 
+we to, we 
+ukx 
+well, x is there, we dont 
+so, y 
+ultimately, we dont x 
+we y coming system 
+somehow, this y to translate 
+a u 
+enough to say x translates 
+u we actually dont have, y 
+well here is the, cool idea 
+im going to put a little magic block 
+here 
+output that block, somehow 
+become x meaning i would like to 
+able to take y push a magic 
+block 
+get state 
+im going to get x exactly, in 
+fact im going to put a little hat top 
+
+this is estimate a state 
+meaning im taking sensor measurments, 
+y based measurements im 
+going to estimate x is 
+im going to call that x hat, in fact 
+magic block 
+thing that allows to get x y is 
+called an observer 
+so in todays lecture im going to 
+talking observers 
+we actually design 
+well, turns general idea 
+behind observer design 
+summarized in predictorcorrector 
+predictor corrector banner 
+so, lets say that we have, a x is ax 
+forget u now, that doesnt 
+matter 
+y is cx 
+well, here is idea 
+first thing going to do, is 
+going to make a copy this 
+system 
+estimator is going to this 
+copy 
+so im going to x 
+is 
+sorry 
+xhat 
+is to ax hat, so estimate is 
+going to evolve, according to 
+dynamics actual state 
+this is known predictor, 
+allows to predict estimate 
+
+thats enough, im going to 
+is im going to add kind 
+notion a wrong, right estimate 
+is to model 
+one, one thing to note is 
+actually output is y, output i would 
+if state was, exact is 
+cx hat exact 
+so im going to compare y 
+to cx hat 
+and, in fact, i do, is, i add 
+piece to predictor 
+so, x 
+is ax hat, this difference 
+ycx hat 
+tells wrong i 
+i add game matrix here, l 
+this 
+gives a predictor a corrector 
+so, this part here is predictor, 
+this part here is corrector 
+this kind structure is known a 
+luenberger observer named david 
+luenberger, point is that, 
+you this predictor correct repair, 
+you way hopefully figuring 
+state, least a good 
+estimate state, 
+measurements, y, that show here 
+so question 
+well, one question is, work 
+question is, is this l so 
+first thing we ask is, i 
+actually pick a reasonable l well 
+first thing well 
+is, lets define an estimation error, e, 
+actual state estimated state 
+i point that we dont know 
+e 
+beacuse we dont know x we still 
+write e xx hat 
+well, i would like e to go to , right 
+cuz, if i make e go to , x hat 
+goes to x 
+means that x hat is a good estimate 
+x 
+so i would like to is actually 
+stabilize e 
+make e asymptotically stable 
+so, we need to first, is, write 
+dynamics error equation 
+so e dot well thats x dotx hat dot 
+well x dot is ax x hat dot 
+well, we this format ax hath 
+lycxhath we get minus 
+signs in front everything 
+so this is estimation 
+y is equal to cx, right 
+so i actually here is e dot 
+axxhatlcxxhat 
+xxhat is e so e dot is alce 
+this is dynamics estimation 
+error 
+we dont know e we know that this is 
+dynamics 
+so we need to now, course 
+is pick l in a way that 
+eigenvalues to this matrix, alc, 
+negative real parts 
+if weve done that, weve 
+stabilized estimation error 
+i wonder, i wonder we go 
+that 
+actually, i dont wonder, we know to 
+it, poleplacement 
+we know to control design this 
+looks like control design 
+actually observier design 
+well, we wanted to import values 
+alc to 
+negative 
+so, lets pole place away 
+okay 
+so heres an example 
+x dot equal to this, y is equal to that 
+fine 
+now, i want error dynamics to 
+asymptotically stable, so if i write 
+alc 
+i point that in this case 
+c is a x, that means that l to a 
+x things to cancel 
+
+i get a x left so l is actually a 
+x matrix in this case 
+so, if i write alc is, 
+becomes this semiannoying matrix 
+least we know this matrix is 
+we well, we compute 
+characteristic equation to alc 
+if we that, we compute 
+determinant lambda i 
+so this is determinant lambda i 
+minus alc 
+right, if we compute that, we get 
+following expression 
+well, we we always in 
+situations 
+we pick favorite eigenvalues 
+seems like i very, fond 
+lambda equal to negative 
+if i that, i get this desired 
+characteristic equation 
+well, we well, we line 
+coefficients, course 
+coefficients to same, 
+coefficients to 
+
+if you actually solve this, im 
+going to go algebra 
+i encourage you to 
+you get that l 
+l is a third 
+if fact, way this would look 
+observer gain is well, l , there 
+is l 
+l third is there 
+so observer dynamics is x dot 
+well, x hat dot is ax hat plus this is 
+lycl 
+so this is observer dynamics 
+im showing here in plot in 
+blue, this is x, actual x 
+evolving in red you see 
+xhat 
+you see that a while, end 
+top nicely 
+similarly, in right figure, in blue, 
+you x , in red, you x hat 
+we see, state, 
+estimated state, x hat, thus, indeed 
+converge 
+actual set 
+so here is whats going right 
+i x ax, y is cx this thing 
+i suck y right thats 
+im seeing, measurements 
+im is im feeding this y 
+server that a predictor part, 
+is dynamics, plus a corrector 
+part, looks difference 
+between actual output 
+output would if x hat 
+state 
+this comes x hat 
+means that we way 
+figuring state system 
+is 
+now, obvious questions 
+well, well 
+theres question, actually 
+this work answer is, 
+doesnt always work 
+like pole placement doesnt always 
+work youre control design 
+reason pole placement 
+doesnt always work we observer 
+design 
+and, we need is we need something 
+thats related to controllability 
+so, controllability tells us 
+we enough control authority, 
+actuater is good enough 
+well, observer design, concept is 
+known observability, means i 
+a rich enough y, meaning rich enough 
+sensor suite so that im able to figure 
+system is 
+meaning estimate, estimate x y 
+topic next lecture is 
+exactly this observability 
+we indeed figure x y 

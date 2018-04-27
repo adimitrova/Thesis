@@ -1,0 +1,110 @@
+[music]. 
+sometimes you might want to do u 
+substitution more than once. 
+imagine that you've got something just 
+really terrible-looking, like trying to 
+find an anti-derivative of this, negative 
+2 cosine x sin x. 
+cosine, cosine squared x plus 1 dx, 
+right? 
+predefine an anti-derivative of this. 
+we can. 
+you might be thinking ugh, if i could 
+just get rid of that cosine squared term. 
+well to do that, let's say u, equaled a 
+cosine x. 
+let's write that down, so the 
+substitution that i'm proposing, is u 
+equals cosine x. 
+and that'll be good cause i've got a 
+cosine x and a cosine squared x here and 
+i can also see du in this intergrand, 
+right? 
+what's du? 
+well it's the differential of u. 
+what's the derivative of cosine? 
+it's minus sine, so the differential, 
+then includes this dx, right? 
+du is negative sine x dx. 
+well let's make the substitution. 
+let's see how it works out. 
+so this, anti-derivative problem is now, 
+with a minus sin x dx, or become the du 
+but i'm left with a two cos x as u, the 
+minus two and the sin x and the dx is 
+going to be in the du, but i got a cos 
+sign, cos sign squared x is u squared 
+plus one and everything else that's left 
+over is in this du. 
+now i'll make another substitution. 
+i'll make v equal u squared plus 1. 
+well let's write that down. 
+so the substitution that i'm proposing is 
+v equals u squared plus 1. 
+and that's a good choice, because i've 
+got a u squared plus 1 there, and i can 
+see that the derivative of this appears 
+here so this will grab quite a bit of the 
+integrant. 
+okay, let's site then the differential, 
+dv in that case is the derivative to you 
+du so dv is 2u, du and now i can write 
+down what this anti-differentiation 
+problem becomes 2u du ends up being the 
+the dv. 
+and i've got a cosine of just v now. 
+now i can anti-differentiate that no 
+problem. 
+right. 
+the anti-derivative of cosine v dv. 
+is just, sine v. 
+i'll write plus c, right? 
+because the derivative of sine v is 
+cosine v with respect to v, but probably 
+the grader is not going to be too 
+impressed with me if i express my answer 
+in terms of a substitution that i just 
+made up, right? 
+i shouldn't write down the answer in 
+terms of v, i should be writing down the 
+answer in terms of x. 
+remember from before that v is u squared 
+plus 1, so i can subsitute that in here, 
+and instead of writing down sin of v plus 
+c, i'll write down sin of u squared plus 
+1, and then i'll include that plus c. 
+da, my answer is in terms of u, but the 
+original question was in terms of x. 
+let's remember what u was. 
+u was cosine x so i can make that final 
+substitution back in here. 
+so instead of writing sine of u squared 
+plus 1. 
+i'll write down sine of cosine squared x, 
+because u is cosine x. 
+plus 1, plus c. 
+so what am i claiming? 
+the original question was asking for an 
+anti derivative of this crazy expression, 
+and what i'm claiming, then, is that the 
+anti derivative of this is sign of cosign 
+squared x plus 1 plus c. 
+so we did it. 
+and i bet that you can imagine some truly 
+terrible anti differentiation problems 
+that involved substitutions within 
+substitutions within substitutions. 
+part of the problem with this calculus 
+course, i suppose with calculus courses 
+generally, is that the courses are sort 
+of based on this idea of the instructor 
+just providing problems to you. 
+here's the challenge. 
+invent some difficult antiderivative 
+problems for yourself. 
+by cooking up your own 
+antidifferentiation problems, you'll gain 
+some insight into what makes 
+antidifferentiation problems easy, or 
+what makes antidifferentiation problems 
+hard. 

@@ -1,0 +1,249 @@
+we lots really good building 
+blocks we havent yet put together 
+cause we dont fully know fit 
+together, we lots cool 
+things 
+we controllability, that tells us 
+whether possible to control 
+system, if we access to 
+state 
+way we that is using state 
+feedback 
+we this notion observability, 
+tells us whether is 
+possible to, to figure state 
+output, way we that is 
+building observers we this 
+tool that seems remarkably strong 
+is poleplacement basically allows 
+us to place closed loop eigen values 
+ever we want 
+so make equal to desired eigen 
+values big question is 
+we put everything together 
+answer is known separation 
+principle 
+in a nut shell, separation 
+principle, way, is quite 
+wonderful tells us that we actually 
+decouple observer design control 
+design meaning we 
+actually control system if we 
+x, even though we dont 
+we get estimate x 
+using an observer structure 
+so this is topic todays lecture 
+really is reason 
+able to effectively control linear 
+systems 
+so, heres game plan 
+now, i x dot is ax bu 
+y is cx 
+so this is a standard linear time 
+variance system 
+im going to assume that this system 
+is completely controllable 
+completely observable 
+if then, to completely frank, 
+toast 
+that means, we need to go buy 
+new sensors, is fancy speak get 
+a new c matrix 
+we need to buy actuators 
+means get a better b matrix 
+so lets assume that we complete 
+controllability complete 
+observability 
+well, st step in game plan is 
+lets ignore fact that we dont 
+x 
+so im going to design state feedback 
+controller if i x, meaning im 
+going to pick ukx, means that i 
+get closed loop, closed loop 
+dynamics to this 
+now, this is i designed i 
+favorite pole placement tool to 
+this 
+now, in reality, i dont that 
+reality is i u is kx hat, 
+hat is estimated state 
+so thats i actually even 
+though thats i designed 
+step two, course, is im going to 
+estimate x using, using an in order to 
+get this x hat to make 
+pleasant 
+big thing that we note is 
+that previously we didnt a u term 
+in observer dynamics 
+we a u term that we need to 
+take account turns that 
+simple to that 
+i built predicter predicter 
+part 
+contains ax hat a bu term, 
+a predictor is a copy 
+dynamics 
+i corrector part 
+is this error between actual output 
+ouput would if i 
+x hat instead x 
+well, this structure gives 
+aerodynamics here 
+so we is i pick l so that 
+error, estimation error is stabilized 
+thats error is actual 
+state minus estimated state 
+so this is game plan 
+now, lets see if this game plan is 
+good 
+a fact 
+good right 
+otherwise im wasting everyones time 
+slides, lets make sure that 
+indeed is worth while 
+we want, this system to we 
+want to drive x to zero, 
+stabilizing it, we want to drive e to 
+zero, we want estimate to 
+good 
+so, i need to do, is analyze 
+joint dynamics together 
+so x dot, is axbu, u is, if you 
+remember, u k, x, xhat, 
+is i get x dynamics to look like 
+this 
+while e dynamics, thats matrenary 
+dynamics, is always 
+okay, lets simplify this a little bit 
+so, i know that error is x minus x 
+hat 
+so i replace this x hat x minus 
+error 
+so i get dynamics 
+pushups to a minus bkx 
+plus bk 
+e 
+so i something that involves x 
+e here invovles e 
+so i actually write everything in 
+a joint way 
+x dot e dot is this large matrix 
+thats an nxn a nxnx e 
+mow, strategy, joint strategy 
+works if if this new joint 
+system is an asymptotically stable 
+system 
+means that we need to check 
+eigenvalues this new system matrix 
+now, here is separation 
+principle comes play 
+this is dynamics 
+now, this matrix here is a rather special 
+matrix 
+triangular 
+a block there, a block 
+there a block there 
+triangular matrices, block 
+triangular matrices 
+may upper lower triangular 
+a particularly nice structure 
+so this is an upper triangle blockmatrix 
+eigenvalues given 
+diagonal blocks 
+means that eiganvalues to this 
+whole matrix eiganvalues to this 
+matrix eiganvalues to this 
+matrix 
+another way writing is that 
+characteristic equation is 
+characteristic equation to first 
+block here 
+times characteristic equation to 
+second block here 
+that this means is that 
+eigenvalues given values 
+diagonal blocks 
+here is wonderful part 
+if we havent stupid in we 
+design, this thing 
+stabalized, we cold placement 
+to make sure that real part 
+diagonals is strictly negative 
+this part we made sure is also well 
+behaved we designed 
+observer in a way that real part 
+eigenvalue is completely negative 
+means that we havent messed 
+anything 
+everything works 
+that means is 
+control design people, we design 
+controllers if we state 
+we rely clever sensing people 
+to estimate state us 
+thanks to separation principal 
+everything works 
+ones that we keep in mind is that 
+we still this term here, this 
+term that basically tells you something 
+happens to transients 
+awhile 
+this term doesnt really matter 
+everything works, so we ready to 
+state separation principle 
+separation principle tells us that we 
+in fact design controllers if we 
+x 
+then, we design observers 
+independent control actions, 
+is, adding 
+a bu in observer dynamic, so 
+control actions actually 
+canceled 
+in words, control observer 
+designs completely separated 
+so, if you put everything together, in a 
+final glorious block diagram 
+this is world looks like 
+we system 
+this is physics 
+this is a system 
+now, we modeled using a b c 
+matrices, comes this 
+thing is y, meaning measurements 
+we push this system is u, 
+control action 
+now, taking u, sorry, taking 
+y feeding observer 
+so observer is, axhat bu 
+lycxhat and, one thing to note, 
+is that we need both, y u to feed 
+observer 
+now, observer comes xhat, 
+meaning, estimate system 
+is actually 
+now, we use xhat to feed back, to 
+get are, u 
+beautiful thing here is that, 
+two blocks together, 
+constitute controller 
+so two blocks whats done 
+in software this, is physics 
+world 
+so this plant, theres nothing we 
+that controller consists 
+two pieces 
+one piece that, estimates state 
+another piece that computes control 
+actiong 
+so we everything we need to 
+effective control design well 
+in next lecture, is 
+final lecture, lecture this module is 
+that well actually deploy 
+in fact, going to see in 
+action a humanoid robot 
+simultaneous control state 
+estimation 

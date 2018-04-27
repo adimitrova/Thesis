@@ -1,0 +1,87 @@
+in this segment gonna take a look 
+box logic unfortunately, we cannot 
+that here studio so gonna 
+to take a road trip today 
+headed stanford universitys renowned 
+logic laboratory follow here we 
+this is logic laboratory may 
+look like much least 
+superficially this is we 
+investigate latest innovations 
+in logic technology today goal to 
+look box logic language box 
+logic is pretty simple there really 
+three constants there is large box, 
+there is medium box, there is small 
+box oriented one way 
+forming compound sentences 
+consonants is easy if we want to 
+negate a sentence, we invert 
+medium box, medium box if you want this 
+form this junction constants, 
+we stack so here we small 
+box medium box a conjunction is 
+formed simply placing multiple boxes 
+stacks boxes table so 
+effectively colossal okay now, lets 
+try to use logic to solve 
+problems problem case 
+mary patton quincy we call that if 
+monday, mary loves pat quincy 
+quincy, if mary loves pat, mary loves 
+quincy lets see we represent 
+that information using new language 
+so first all, if mary loves pat, mary 
+loves quincy lets, let this medium sized 
+box represent fact that mary loves 
+pat this one represents mary loves quincy 
+large one is going to monday 
+so we wanna say, if mary loves pat, mary 
+loves quincy we that recalling 
+rules converting to colossal form, 
+we know that p implies q equivalent to 
+p q so if you wanted to write 
+that, we would write mary loves pat 
+mary loves quincy so, mary loves pat 
+mary loves quincy if mary loves pat, 
+mary loves quincy 
+sentence if monday, mary loves 
+pat quincy monday, lets see we 
+need to say monday pat quincy 
+so monday mo re quick copies 
+pat quincy so there we if 
+monday, mary loves pat quincy if 
+mary loves pat, mary loves quincy, 
+represented, representing premises 
+problem you may recall that 
+object problem to show that if 
+monday mary loves quincy so 
+could we that we done is 
+representing we also 
+computation, deduction box logic 
+rules pretty simple if we ever 
+one stack a constant literal 
+is complement literal 
+another stack, we resolution 
+so here we one stack 
+medium box down, here one stack 
+medium box we combine two 
+stacks eliminate complementary 
+literals form answers since 
+a duplicate, we throw that one 
+away left conclusion 
+if monday, mary loves quincy, nifty 
+okay, whats point point is that 
+language logic is 
+particular sets symbols active 
+deduction doesnt mean necessarily that 
+operating upon particular 
+symbols logic is an abstraction 
+instantiation symbols is equally 
+good operations is equally 
+good provided that respects that basic 
+abstraction okay thats visit 
+to logic laboratory today well 
+back later in course 
+additional demonstrations well see 
+you 

@@ -1,0 +1,228 @@
+music 
+welcome 
+is good to see you back 
+this lesson 
+previously, we explored 
+contiki a hybrid system 
+we will look 
+details operating system 
+to discover 
+characteristics in depth 
+end this lesson, you will 
+able to understand benefits 
+challenges contiki presents 
+developing iot applications 
+first all, lets discuss 
+main components contiki 
+a contiki system includes kernel, 
+libraries applications 
+services, applications 
+services implemented modules 
+loaded 
+an application requires 
+discussed before, this is one 
+main positive characteristics contiki 
+if you remember details this, 
+i recommend you go back to videos, 
+we let to modular kernel design 
+contiki 
+in contiki, is possible to dynamically 
+replace processes runtime, 
+thus helping to save resources 
+processes in this case either 
+services application programs 
+so far in discussion, 
+we havent addressed applications 
+services differences 
+point view contiki, 
+modules 
+loaded needed 
+however, point view 
+a programmer, a service is implemented to 
+provide a functionality is used work 
+one application processes 
+communication between processes 
+done kernel 
+we mentioned in previous lesson that 
+there is hardware 
+obstruction layer in contiki 
+a result this, device drivers 
+applications communicate 
+directly hardware 
+if you dont know 
+remember contiki provide 
+a hardware abstraction layer, 
+i suggest you to go back to previews 
+lesson titled contiki, a hybrid system 
+processes share address 
+space 
+run in protection domain 
+this enables contiki to run in 
+memory constrained devices 
+in order to give you a deeper 
+understanding this idea, 
+we will a lesson threads 
+multithreading 
+in that lesson, you will get an idea 
+contiki achieves 
+lets examine a process 
+is created treated in contiki 
+a process is a piece program code 
+is executed contikis system 
+a process is started in two ways 
+first is contiki starts, 
+second module loaded 
+a process runs an event 
+related to process occurs, 
+a timer event an external one 
+example, 
+consider an application that prints hello 
+world to terminal every second 
+this application process runs whenever a 
+timer event is triggered every second 
+means that a counter timer 
+will count every second, 
+reaches zero, 
+event is triggered 
+countdown frequency is based 
+particular type timer event used 
+in order to a closer 
+view a timer event, 
+i recommend that you stay 
+upcoming videos 
+in videos, 
+different types time events, 
+types events 
+will deeply discussed 
+there two types 
+execution modes in contiki 
+cooperative 
+preemptive modes 
+cooperative process code runs 
+sequentially in a queue 
+this means that first process 
+right to use cpu, 
+while processors wait 
+right to access cpu 
+process 
+occupied cpu is finished, 
+next waiting process in 
+queue gets right to use cpu 
+in contrast, preemptive mode 
+handles process differently 
+in preemptive context, a running 
+process stopped an interrupt, 
+higher priority test immediately 
+takes right to use cpu 
+finishing job, 
+returns right to access 
+cpu to interrupted process 
+a process is defined 
+an event handler function 
+an optional poll handler function 
+in order to give you a better view 
+a process, is defining contiki, 
+going to look internal 
+structure a contiki process 
+contiki process is a combination 
+two different parts 
+process control block 
+process threat 
+in this lesson, we focus 
+contiki system contiki processes 
+therefore a process thread will 
+discussed in following videos 
+process control blog is composed 
+information process 
+state process, pointer to 
+next process, name process, 
+a pointer to a process thread, state 
+proto thread internal flags 
+slide shows a structure 
+a process in contiki 
+structure is written 
+in a standard c language 
+process, control block, 
+is used kernel 
+therefore, users right 
+to access control block directly 
+this helps system 
+protect process 
+avoid unexpected mistakes 
+bugs caused programmers 
+actually, kernel keeps 
+a pointer to process state 
+is health in 
+process private memory 
+this means that every process 
+state, 
+state cannot accessed 
+processes 
+you see in this slide, process 
+control blocks structure is quite simple, 
+contain 
+complex information 
+therefore, is lightweight, 
+occupies a few bytes memory 
+in contiki, a process control block 
+cannot declared defined directly 
+block is defined 
+via process macro 
+in order to give you 
+a better view this macro, 
+i going to take an example 
+hello world processing 
+you see, 
+process macro two parameters, 
+name process control block 
+textural description 
+variable name process control 
+block is used accessing process, 
+while description text process 
+is used programmers debugging 
+mentioned in previous videos, 
+contiki uses posting events 
+interprocess communication 
+this mechanism is also similar 
+to messaging mechanism in 
+microkernel described 
+contikis system is 
+partitioned in two parts 
+first part is core, 
+second is loaded program section 
+partitioning is made compiled time, 
+
+specific to deployment 
+in contiki is used 
+typically, core consists 
+contiki kernel, program loader, 
+commonly used parts language 
+runtime, support libraries, 
+a communication stack device 
+drivers communication hardware 
+core is compiled 
+a single binary image 
+that is stored in deploy devices 
+is generally 
+modified deployment 
+although is possible to overwrite 
+patch core a special boot loader 
+programs loaded 
+system program loader 
+gets program binaries 
+using directly attached storage, 
+using communications tech 
+typically, programs to 
+loaded system 
+first stored in eeprom 
+moved code memory 
+this is this lesson 
+contiki system contiki processes 
+i hope that you a better 
+understanding contiki systems 
+structure works 
+i hope to see you in next videos, 
+will explain many advanced 
+features contiki, contikis 
+kernel architecture threats 
+sound 

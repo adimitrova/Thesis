@@ -1,0 +1,86 @@
+, the folium of descartes is an algebraic
+curve carved out by a certain equation. by
+which equation? this equation, x cubed
+plus y cubed minus 3axy equals 0. it's the
+points on the plane that satisfy this
+equation.
+so, what's a folium? well, folium is just
+a latin word for leaf, you know, the sorts
+of things that grow on trees. so, where's
+the leaf? well, here's the leaf. i've
+plotted the points on the plane that
+satisfy x cubed plus y cubed minus 9xy
+equals 0. and this is the curve that i
+get, and you can see it looks kind of like
+a leaf. this is not the graph of a
+function, it's really a relation. x cubed
+plus y cubed minus 9xy is a polynomial in
+two variables, in both x and y, in both. i
+can't solve for x in terms of y. look,
+this graph fails the vertical line test.
+for a given value of x, there's
+potentially multiple values of y which
+will satisfy this equation. so, what's the
+point of all these? well, once upon a
+time, descartes challenged fermat to find
+the tangent line to this folium. and
+descartes couldn't do it but fermat could.
+and now, so can you. and you can do it
+with implicit differentiation. so, let's
+use implicit differentiation on this,
+thinking of y secretly as a function of x.
+so, the derivative of x cubed is 3x
+squared. the derivative of y cubed, well,
+that's 3y squared times dy dx, that's
+really the chain rule in action, minus,
+now it's got to differentiate this. it
+will be 9 times the derivative x, which is
+1y minus 9x times the derivative of y,
+which is dy dx, and that's equal to 0.
+alright, now i can rearrange this, the
+things with the dy dx, and the things
+without the dy dx, and you gather it
+together. so, 3x squared minus 9y plus,
+and the things with the dy dx term, 3y
+squared minus 9x dy dx equals 0. now, i'm
+going to subtract this from both sides.
+so, i'll have 3y squared minus 9x times dy
+dx equals minus 3x squared plus 9y. and
+i'm going to divide both sides by this, so
+i'll have dy dx equals minus 3x squared
+plus 9y over 3y squared minus 9x. and note
+that we're calculating dy dx but the
+answer involves both x and y. and you can
+see, it's really working. i can pick a
+point on this curve like a point 4, 2
+satisfies this equation. then, i can ask
+what's the slope of the tangent line to
+the curve through the point 4, 2? when i
+go back to our calculation of the
+derivative and if i plug in 4 for x and 2
+for y, i get that the derivative is 4/5.
+and indeed, i mean, this graph is somewhat
+stretched, but, you know, yeah, i mean
+that doesn't look terribly unreasonable
+for the slope of this line. problems like
+this one, which once stumped the smartest
+people on earth can now be answered by
+you, by me, by lots and lots of people.
+calculus is part of a human tradition of
+making not just impossible things
+possible, but things that were once really
+hard much easier.
+well, in any case, there's plenty more
+questions that you can just ask about
+different kinds of curves besides this
+folium of descartes. you can write down
+some polynomial with x's and y's, like y
+squared minus x cubed minus 3x squared
+equals = 0 and then you can ask about the
+points, the x comma y's that satisfy this
+equation.
+and if you want to know the slope of the
+tangent line, use implicit
+differentiation. the trick is just to use
+the chain rule and to treat y as a
+function of x.

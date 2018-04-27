@@ -1,0 +1,122 @@
+music 
+hello, is good to see you back 
+this lesson 
+previously, we explored 
+an eagles eye linux kernel is 
+is important 
+now, we will look 
+another type kernel 
+to discover detailed 
+characteristics advantages 
+end lesson, you 
+understand differences between 
+three types kernel 
+features 
+a result, you will able to 
+utilize a specific kernel type 
+a particular application requirements 
+lets begin describing 
+modular kernel is 
+a modular kernel a sort hybrid 
+between a monolithic kernel 
+a microkernel 
+aims to get best features 
+types architectures 
+so in concrete, 
+a modular kernel perform tasks good 
+a monolithic kernel while stability 
+is similar a microkernel 
+a result, we obtain a kernel 
+efficient memory utilization 
+good overall performance time 
+a modular kernel comprises 
+a multitude modules, 
+one dedicated to 
+a specific system task 
+a key feature systems 
+is that modules loaded 
+functionality is needed 
+example, 
+a particular device driver is loaded 
+if there is a process that 
+needs access to that device 
+loading a module 
+take a large amount time 
+however, this strategy could 
+generate a severe overhead 
+if multiple modules constantly 
+loaded unloaded 
+system would spent 
+time managing modules 
+instead executing actual work, 
+thus yielding poor performance 
+to address this issue, 
+a module is loaded will remain in 
+kernel until is explicitly removed 
+in cases, a module is required 
+one particular process 
+however, is possible that several 
+processes require module 
+in case, 
+colonel creates multiple copies 
+main reason 
+this is to prevent overhead 
+cost constantly loading 
+unloading modules 
+in kernel architectures 
+new functionality is added, 
+kernel must revealed 
+however, this is case 
+modular kernels, 
+new models easily added 
+without recompiling thus saving time 
+filing fixing bugs in a monolithic 
+kernel is a hard task 
+is time consuming 
+demands a lot effort 
+example, a bug in a device 
+driver is bound to kernel 
+may prevent system booting 
+in this situation, is hard to say 
+part kernel is causing problem 
+this situation easily avoided 
+a device driver is a loadable module 
+since kernel must boot 
+loading module 
+in case system 
+perform correctly kernel 
+is successfully booted, 
+simple to find fault module 
+we discussed before, kernel 
+loads modules necessary 
+therefore, systems memory 
+efficiently managed 
+due to advantages 
+modular kernels, 
+we conclude that 
+modular kernel, 
+overall system performance increases 
+kernel size is large 
+although a modular system provides 
+a multitude advantages, 
+still drawbacks 
+mentioned before, modular kernel 
+inherits stability microkernel 
+however, this stability cannot 
+warranted in cases fragmentation 
+another disadvantage is that 
+security may vulnerable many 
+interspaces passed 
+finally, is easy to 
+maintain a large number modules 
+created 
+several third parties 
+this is end lesson today 
+hopefully now, you a better 
+idea a modular kernel is, 
+makes different 
+kernels advantages 
+in next video, we will discuss 
+a modular kernel is implemented 
+thank you watching see you 
+music 

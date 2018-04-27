@@ -1,0 +1,326 @@
+the next topic is layer operations.
+so this work is titled, apparent layer
+operations for the manipulation of
+deformable objects.
+the problem we discussed discussed here is
+that interaction with deformable objects
+is very difficult.
+and by deformed object we may hear, this
+kind of
+interrelated stacked closed and also lobs,
+and so on.
+now typical approach is to round,
+continuously, physical assimilation.
+and then user moves one vortex and then
+rely on physics.
+this is always physically possibly.
+but this is kind of a little bit
+inflexible.
+you know, you can not penetrate pass an
+object and so on.
+so it's always needs to be physically
+bodied.
+and this can be inflexible in some
+situations for modeling purposes.
+and besides a possibility, it's the
+directory
+control all the vertices one by one.
+in this way you can do what ever you want.
+however, it can be very, very, tedious,
+right?
+and you have too many, many control of
+vertices.
+so what we introduce here is one example
+of semantic-level operations.
+by semantics like, layers and so on.
+so if you look at the physical
+configuration, here's some want to do sum
+operations.
+but these some operations in some meaning
+for operation for
+the user; like changes order or layers of
+this comment.
+however, from computer to, point of view,
+this is just a collection of vortex
+coordinates.
+so many, many, numerical values.
+so additionally we're asked to control
+these numerical valued directory.
+but here we tried to allow the user to
+work on this 3d model with semantic-level.
+now specifically we want to, we introduce
+here is layer a operations
+for 3d modeling, and i think you know the
+three layer operations.
+so in 2d drawing systems you can always
+have a layer ordering.
+so you can say, go to front or go to back
+and so.
+for example in powerpoint you can say you
+can say
+go to back and then you will get this
+result.
+and then, go to front and then you will
+get this result.
+so we want to get this kind of operation
+for the comments,
+for the cloth to go front, or front to
+back and so on.
+so
+so we specifically we introduced two new
+techniques here.
+one is layer swap.
+so you just click here and then the system
+changes the layer ordering.
+and then the other is, you drag one piece,
+and then
+you can go up, and down, depending on the
+user control.
+so let me show you a demonstration.
+so you have a three dimensional cloth
+placed on the floor, like this one.
+and then, you can deform it just by
+pulling, and pushing, and so on.
+and here this is just a standard physics
+based dragging.
+so it's always physically bodied.
+however, for example, if you want to try
+to change the layer
+ordering of this part and this part, it
+can be, it suddenly becomes very tedious.
+you have to move it away.
+and then move it here, and it comes back.
+but this takes a lot of steps and then
+global configuration changes.
+and so if you want to swap this blue and
+this green, now it's almost impossible.
+but here what we propose is just a single
+click operation to do it.
+so if you want to swap this layer just,
+just, click here and the system will
+automatically swaps.
+so it's very subtle but internally the
+system do a lot of things.
+and if you click here, just swap, and
+there you will get this instantly.
+and this operation can be very, very
+tedious, if
+you use standard rigging operation or
+robotics space control.
+let me show you a couple more examples.
+so here's an example, so you have green,
+purple and blue here.
+and for example if you
+try to swap green and purple blue
+if you click here user want the system to
+swap green and blue.
+but if you, the system do it naively, then
+there
+can be a penetration or intersection
+between part one blue.
+so system automatically analyze it the
+same
+and then try to abort invalid
+configurations.
+so if you click here instead of putting
+blue somewhere the
+system decided to bring the green to the
+front to abort intersection.
+again, the same thing, so if you click
+blue,
+if you want to swap blue and purple, if
+you just do it, if the purple is on
+top of green, there'll be a intersection
+here, right?
+so in, in order to prevent an
+intersection, or penetration when the user
+clicks here, the system should push the
+purple one all the way to the bottom.
+and that's what we do here.
+if you click here, the system
+automatically
+pushes the purple one all the way back.
+and here is a folded pocket handkerchief.
+if you click here you still do, you know,
+outward penetration and the
+system will automatically decide to move
+the top layer all the way to the bottom.
+then you will get this shape.
+and if you click here the direction of a
+spiral completely swaps.
+and also if you have this one for example
+you can do something like
+this very quickly, just by a successive
+breaking, and then you will get the same.
+so this way of changing the way of making
+a
+knot can be very difficult due to our
+traditional approaches.
+and
+this is our most complicated case, a
+necktie.
+so we created this shape by many, many
+clicks here.
+and the same operation can be applicable
+for a knot or ropes.
+so if you click here you can swap the
+layers
+and you can quickly change the
+configuration of a knot.
+and then here the same thing you can
+change the whole direction of a
+twist or you can change the configuration
+of a net, like this one.
+[blank_audio]
+okay, so that's how layer's work.
+and next operation i will show is layer
+hardware dragging.
+so, in standard dragging, you know, it's a
+dragged object always on top of existing
+one.
+however, if you press shift key down,
+during
+dragging it will automatically goes below
+the colliding clothing.
+so by combining shift up and shift down,
+you go up and then go down and so on.
+so this is very useful for making a knot
+here, so you go up without shift
+and shift down, and then shift up, and
+then shift down, and shift up.
+so in this way, you can generate a
+three dimensional knot just by two
+dimensional dragging.
+okay.
+so that's a demonstration and let
+me briefly describe the algorithm behind
+this.
+so layer swap.
+so, this is a before the layer swap and
+then the after the layer swap.
+suppose i use a click somewhere here.
+i use to try to swap yellow with blue.
+and in order to do the system will
+actually do a lot of same inside the box.
+so first, the system project, 3d
+configuration onto the screen space.
+and then analyze the configuration, and
+then,
+generate a structure for the list graph.
+list graph is, each subregion represents a
+layered
+structure and then system maintains
+adjacency graph of the, regions.
+and then, depending, starting from this
+current configuration.
+depending on the user input, system swaps
+layers, in this 2.5d representation.
+the layer is a list graph representation.
+and then after that, system takes this two
+dimensional
+input configuration, and then
+automatically synthesize it, a 3d shape.
+and then offer a physical acquisition to
+get the final, solid shape.
+so that's what we do.
+the first step is the project, projection,
+and analysis.
+so projection is from 3d, to 2d vector
+representation
+and the similar technique was presented by
+eisemann is 2009.
+and then after getting to the
+two-dimensional vector,
+2.5d representation, we construct a list
+graph presentation.
+and this technique was inspired by a local
+layering technique proposed in 2009 here.
+so in this one call, represents local
+layering structure and then also adjacency
+graph.
+okay, so given this list graph you know,
+2.5d layer structure, the system updates
+the list graph.
+so this, this is before configuration and
+then gets a new configuration.
+so what it actually do is to change the
+ordering of this local layers.
+however, the important thing is to, to
+avoid invalid configurations.
+so here's an example of invalid
+configuration.
+so type one, invalid configuration is like
+this one.
+so you see the two sub-regions here and
+here.
+and then in the top region about this
+region here, blue is
+on top of purple, and here purple is on
+top of blue.
+so if this kind of configuration happens
+then there
+will be an intersection of penetration
+here which means
+undefinable, so this is type 1 error or
+type
+one invalid configuration, so another
+invalid configuration is like this.
+so this is not so obvious but suppose this
+is folded, you know, this is dark blue
+and the light blue is folded and
+connected, and
+then, and then it's connected layer should
+be adjacent.
+otherwise, you know, there will be a
+penetration, so that's a problem.
+so what we do is to consider all possible
+permutations of layer orders
+in each region and then tries to find
+valid configuration.
+and to do this we actually do kind of
+an exhaustive search of all the
+combinations in this space.
+and then after it gets having the updated
+list graph,
+what we do is reconstruct the 3d geometry
+from it.
+and this is two step operation.
+so first operation is to get geometric
+reconstruction, so there is no gravity,
+there's no
+physics, just reconstruct
+three-dimensional
+layered structure, just tied
+up to the computer depths from 2d layer.
+and then after that, we apply physics you
+know, apply gravity to get the final
+deducted shape.
+so, in summary, we introduced the layer
+operations for cloth and ropes.
+and them specifically we need to do today
+a swap single group and change layer
+ordering and
+then change the layer dragging, you can go
+above and then go down using a shift key.
+then the algorithm for what we do
+is projection 2.5d representation called
+the list graph.
+so project the order and synthesize go
+back to 3d.
+to learn more, the original paper was
+published as apparent layer operations for
+the
+manipulation of deformable objects, and 2d
+layer
+operations was introduced as local
+layering in 2009.
+so our work is inspired by this work.
+and also if you want to more about 3d to
+2d projection, i recommend you
+take a look at this visibility algorithm
+for
+converting 3d meshes into editable 2d
+vector graphics.
+so this one enables to combine from 3d
+graphics to 2d vector installations.
+thank you.

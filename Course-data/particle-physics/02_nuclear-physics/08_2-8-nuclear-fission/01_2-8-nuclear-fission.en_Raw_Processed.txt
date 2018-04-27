@@ -1,0 +1,233 @@
+music 
+second module, 
+we dealing nuclear physics 
+in this eighth video, we will explain 
+to transform a part nuclear 
+binding energy heat 
+nuclear fission 
+viewing this video, you will 
+know nuclear fission mechanism 
+works necessary conditions 
+a important application nuclear 
+physics is transformation nuclear 
+binding energy thermal electrical 
+energy fission mechanism 
+low energy neutrons penetrate inside nucleus 
+since theyre subject to coulomb repulsion 
+this way increase 
+nuclear mass 
+excited nucleus may break 
+two daughter nuclei smaller mass 
+this fragmentation a heavy 
+nucleus two medium mass 
+fragments plus accessory products 
+is called nuclear fission 
+alpha decay we 
+discussed in video is 
+an extreme example a 
+asymmetric spontaneous fission 
+important is fission 
+induced absorption a neutron 
+nuclear fission stay in domain 
+a heavy matter nuclei 
+this is due to shape 
+binding energy per nucleon 
+a function mass number a 
+we shown in video 
+beyond iron group, decreases 
+steadily that binding energy 
+gained splitting a heavy nucleus two 
+nuclei in a less symmetric way 
+thus, a less tightly bound nucleus 
+gain binding energy 
+splitting two lighter, 
+tightly bound ones 
+an example, 
+binding energy per nucleon 
+is mev u 
+mev average 
+two daughter nuclei 
+energy released fission is 
+typically mev per nucleon 
+one gram u contains 
+nuclei 
+complete fission 
+nuclei would release impressive 
+energy joules, 
+one megawatt a day if we 
+ignore efficiencies involved 
+to give you an idea 
+comparison, burning one ton 
+coal yields megawattday, 
+if you ignore efficiencies 
+thus one gram u contains 
+much nuclear 
+energy three tons coal 
+contain in chemical energy 
+we understand nuclear fission 
+qualitatively quantitatively using 
+liquid drop model nucleus 
+we introduced in video 
+lets first look process qualitatively 
+liquid drop model presumes 
+a spherical shape nucleus 
+a heavy nucleus a small external perturbation 
+like instance an incident neutron 
+produce surface waves 
+leading to a change in shape 
+drop may thus extend spherodal shape 
+if this perturbation is small enough, 
+nucleus will left excited 
+return to ground 
+state emitting a photon 
+this process is called 
+radiative neutron capture 
+if contrary perturbation 
+is large, coulomb repulsion 
+along axis this spherod split 
+drop two droplets 
+is called induced fission 
+now, let us calculate 
+condition this may happen 
+a sphere radius r will turn 
+a spherod a constant volume 
+incompressibility nuclear matter 
+we denote halfaxes a 
+b, is equal to c 
+in terms a small deformation epsilon, 
+transform 
+b epsilon a epsilon 
+binding energy, volume 
+term stays constant, surface 
+coulomb energy different 
+deformation increases 
+this surface energy 
+decreases coulomb term 
+so gain 
+loss in binding energy will depend 
+relative importance two terms 
+if difference is greater , 
+spherical nucleus is tightly bound 
+thus stable 
+this small perturbation 
+if contrary, 
+is less zero, 
+spherical nucleus is less tightly 
+bound undergo fission 
+putting in typical values 
+coefficients a a, 
+one obtains stability if ratio 
+za is less 
+there small quantum corrections 
+to this classical approach which, 
+however, change conclusion 
+we expect contrary, that nuclei 
+set z a, 
+highly unstable a small perturbation 
+thus easily induced to fission 
+heavy nuclei z a 
+so conditions 
+that z a is satisfied 
+spherical shape corresponds 
+to maximum binding energy 
+even in that case, 
+a fission energetically favorable, 
+if sum binding energies 
+daughter nuclei is favorable respect 
+to mother nucleus 
+let us calculate this case a 
+symmetric fission assuming spherical 
+daughter nuclei simplicity 
+a z parent nucleus must thus even 
+we ignore quantum 
+terms betheweizscker formula 
+energy difference is denoted 
+typical coefficients, 
+we obtain delta equal to 
+a za 
+thus z a 
+two daughter nuclei tightly 
+bounded mother nucleus 
+we thus see that 
+region z between a 
+a, spherical shape may 
+stable fission 
+remains energetically favorable 
+parent nucleus to split 
+two smaller ones, 
+is sufficiently perturbed 
+beyond that zone, even a minor 
+perturbation a thermal neutron, 
+instance, will suffice to cause fission 
+let us consider uranium 
+isotopes an example 
+u is an even even nucleus 
+thus tightly bound u, 
+is odd even 
+we thus need a smaller perturbation 
+to induce fission in u 
+activation energy 
+is mev 
+u mev u 
+capturing a neutron, 
+u becomes an eveneven nucleus 
+this transformation releases mev 
+binding energy, is 
+sufficient to activate fission 
+u, 
+a neutron capture changes nucleus 
+to a less tightly bound oddeven one 
+this will a less exothermal process 
+releases mev 
+necessary mev 
+so additional mev per neutron 
+must provided to induce fission 
+fragments often rather asymmetric 
+one observes a grouping daughter 
+nuclei around mass number 
+shown in this picture, 
+a reason we yet understood 
+picture here in fact shows mass 
+spectrum daughter nuclei 
+fission u, u, 
+pu, well a mixture 
+mass spectra similar 
+fission process daughter 
+nuclei often in a excited states 
+turn stable isotopes 
+neutron emission 
+neutrons thus abundant 
+among fission products 
+cause a chain reaction 
+nuclear fission processes 
+u produces average 
+neutrons per fission 
+neutrons in turn induce 
+new fission reactions so forth 
+to see if a chain reaction 
+maintained, we consider ratio 
+k number neutrons 
+produced in step n 
+to one produced 
+in step n chain 
+if k is less one, 
+there enough neutrons to sustain 
+a chain reaction, 
+process will stop 
+if k is equal to one around one, 
+there enough neutrons 
+to maintain a chain reaction a 
+constant number fissions step 
+this is ideal situation 
+nuclear fission reactor 
+if k is bigger one, 
+neutrons will produced stage, 
+thus leading to an exponential growth 
+number fission reaction 
+this is situation is searched 
+production nuclear weapons 
+in next video, 
+we will talk to use 
+fission process in 
+nuclear power plants 
+music 

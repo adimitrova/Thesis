@@ -1,0 +1,145 @@
+1
+00:00:00,000 --> 00:00:04,873
+[MUSIC]
+
+2
+00:00:04,873 --> 00:00:09,170
+We've been spending a ton of time on
+derivatives.
+
+3
+00:00:09,170 --> 00:00:12,050
+And at this point, you might be asking
+yourself, is there
+
+4
+00:00:12,050 --> 00:00:16,180
+anything more to do with derivatives, and
+the good news is, yes.
+
+5
+00:00:16,180 --> 00:00:18,810
+There's a lot more to see.
+
+6
+00:00:18,810 --> 00:00:22,010
+Right now I want to look at the chain
+rule.
+
+7
+00:00:22,010 --> 00:00:26,500
+The chain rule tells us how to
+differentiate a composition of two
+
+8
+00:00:26,500 --> 00:00:31,320
+differentiable functions and because lots
+and lots of functions in the real
+
+9
+00:00:31,320 --> 00:00:33,880
+world are written as compositions of
+
+10
+00:00:33,880 --> 00:00:36,870
+differentiable functions, we'll then be
+able
+
+11
+00:00:36,870 --> 00:00:40,199
+to differentiate just a ton more functions
+by using the chain rule.
+
+12
+00:00:41,780 --> 00:00:43,940
+Now, looking ahead a bit further to see
+
+13
+00:00:43,940 --> 00:00:46,236
+what else might be coming up on the
+horizon.
+
+14
+00:00:46,236 --> 00:00:48,923
+Well, after the chain rule we're going to
+learn
+
+15
+00:00:48,923 --> 00:00:52,001
+how to differentiate functions like e to
+the x, natural
+
+16
+00:00:52,001 --> 00:00:54,818
+logarithm and then even further out we're
+going to
+
+17
+00:00:54,818 --> 00:00:58,440
+learn how to differentiate trig functions
+like sine and cosine.
+
+18
+00:00:59,540 --> 00:01:02,490
+And once we have all of that, and once
+we've got the chain rule, we'll
+
+19
+00:01:02,490 --> 00:01:04,800
+be in a position to just differentiate
+anything
+
+20
+00:01:04,800 --> 00:01:08,110
+you could write down by combining those
+functions.
+
+21
+00:01:08,110 --> 00:01:10,290
+And then, even further out, as we look
+even further
+
+22
+00:01:10,290 --> 00:01:14,670
+ahead in the course, we can see some
+applications of differentiation.
+
+23
+00:01:14,670 --> 00:01:17,060
+Once we learn the mechanics of
+differentiating, then
+
+24
+00:01:17,060 --> 00:01:18,800
+we'll be able to get to these
+applications.
+
+25
+00:01:18,800 --> 00:01:20,990
+Things like, solving optimization
+problems.
+
+26
+00:01:22,430 --> 00:01:23,490
+All right, well.
+
+27
+00:01:23,490 --> 00:01:24,340
+Hang in there.
+
+28
+00:01:24,340 --> 00:01:27,114
+We think that the chain rule, but
+computations are going to get harder.
+
+29
+00:01:27,114 --> 00:01:28,528
+But, I know you can do it.
+
+30
+00:01:28,528 --> 00:01:33,982
+Good
+
+31
+00:01:33,982 --> 00:01:42,164
+luck.

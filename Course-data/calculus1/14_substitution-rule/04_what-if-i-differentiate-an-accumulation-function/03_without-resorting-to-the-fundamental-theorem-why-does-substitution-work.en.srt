@@ -1,0 +1,217 @@
+1
+00:00:00,006 --> 00:00:05,029
+[MUSIC]. 
+
+2
+00:00:05,029 --> 00:00:10,401
+I've mostly been selling you on the idea 
+of u-substitution as a method for finding 
+
+3
+00:00:10,401 --> 00:00:15,905
+antiderivatives, for evaluating 
+indefinite integrals. 
+
+4
+00:00:15,905 --> 00:00:20,312
+Let's think about what u-substitution 
+says just for definite integrals. 
+
+5
+00:00:20,312 --> 00:00:25,381
+So here's the setup. 
+I've got the integral x goes from a to b 
+
+6
+00:00:25,381 --> 00:00:35,848
+of some function f, not the derivative of 
+f, just f g of x times g prime of x dx. 
+
+7
+00:00:35,848 --> 00:00:39,490
+Now, how could I approach a problem like 
+this so I can make a substitution? 
+
+8
+00:00:39,490 --> 00:00:46,682
+U equals g of x so that du is g prime of 
+x dx and, in that case, this integration 
+
+9
+00:00:46,682 --> 00:00:57,421
+problem becomes the integral of f of u u 
+is g of x times this is du. 
+
+10
+00:00:57,421 --> 00:01:01,774
+But now I've gotta change the bounds of 
+integration. 
+
+11
+00:01:01,774 --> 00:01:10,760
+When is x is equal to a, u is g of a, and 
+when x is equal to b, u is g of b. 
+
+12
+00:01:10,760 --> 00:01:14,855
+Assuming that those two integrals exist 
+to justify the equalty of those two 
+
+13
+00:01:14,855 --> 00:01:18,324
+integrals. 
+It's just the chain rule and the 
+
+14
+00:01:18,324 --> 00:01:22,324
+fundamental theorem of calculus. 
+And yet, this statement, the equality of 
+
+15
+00:01:22,324 --> 00:01:25,844
+this integral and this integral, that's 
+just a statement about two definite 
+
+16
+00:01:25,844 --> 00:01:29,020
+integrals. 
+I don't need to know the fundamental 
+
+17
+00:01:29,020 --> 00:01:32,290
+theorem of calculus in order to make this 
+assertion. 
+
+18
+00:01:32,290 --> 00:01:36,385
+This raises a fascinating question, u 
+substitution is making a claim about 
+
+19
+00:01:36,385 --> 00:01:40,430
+definite integrals. 
+And yet the naive way to justify that 
+
+20
+00:01:40,430 --> 00:01:44,950
+claim goes through the fundamental 
+theorem of calculus and the chain rule. 
+
+21
+00:01:44,950 --> 00:01:49,464
+Is it possible to see why the statement 
+about u substitution for definite 
+
+22
+00:01:49,464 --> 00:01:55,850
+integral should be true without resorting 
+back to anti-differentiation? 
+
+23
+00:01:55,850 --> 00:02:00,330
+Well, to gain some insight into this, 
+here's a random graph that I made of some 
+
+24
+00:02:00,330 --> 00:02:05,930
+function that's nearly constant. 
+But the function I'm calling f. 
+
+25
+00:02:05,930 --> 00:02:10,730
+And this, area, in here is the interval 
+from 1 to 10 of f of udu. 
+
+26
+00:02:10,730 --> 00:02:14,442
+And that's this area in here. 
+Now I want to imagine what happens when I 
+
+27
+00:02:14,442 --> 00:02:17,102
+do the substitution. 
+What happens when I replace. 
+
+28
+00:02:17,102 --> 00:02:21,880
+U with x squared plus 1, and that changes 
+du, right. 
+
+29
+00:02:21,880 --> 00:02:24,762
+That's that formula that we saw a moment 
+ago. 
+
+30
+00:02:24,762 --> 00:02:29,865
+If I'm integrating f of u du, I could 
+alternatively integrate f of g of x times 
+
+31
+00:02:29,865 --> 00:02:34,968
+du g prime of xdx, and I can imagine that 
+in the graph, transforming from the u 
+
+32
+00:02:34,968 --> 00:02:42,670
+coordinates to these x coordinates. 
+Well the u-coordinates are more stretched 
+
+33
+00:02:42,670 --> 00:02:45,320
+out, right. 
+When x is 0, u is 1. 
+
+34
+00:02:45,320 --> 00:02:48,960
+When x is 1, u is 2. 
+When is x is 2, u is 5. 
+
+35
+00:02:48,960 --> 00:02:54,146
+And when x is 3, u is 10. 
+So if I redraw this picture in the, 
+
+36
+00:02:54,146 --> 00:02:59,774
+x-coordinates, it's as if I've taken this 
+picture and squished it in, right, and 
+
+37
+00:02:59,774 --> 00:03:05,768
+when I squish it in. 
+Then I'm going to get a picture more like 
+
+38
+00:03:05,768 --> 00:03:08,923
+this. 
+And to calculate the area, there, I'd be 
+
+39
+00:03:08,923 --> 00:03:13,426
+calculating this integral. 
+The integral from 0 to 3, this is x, of f 
+
+40
+00:03:13,426 --> 00:03:17,858
+of what u is equal to in terms of x, du, 
+which is 2x dx. 
+
+41
+00:03:17,858 --> 00:03:24,392
+And the whole gimmick here is just that 
+I'm trading the width in this picture for 
+
+42
+00:03:24,392 --> 00:03:30,901
+the height in this picture. 
+And the factor that relates the width 
+
+43
+00:03:30,901 --> 00:03:37,100
+here, the du's and the height here, well 
+that's exactly this factor here, right? 
+
+44
+00:03:37,100 --> 00:03:47,644
+That's du but written in terms of dx. 

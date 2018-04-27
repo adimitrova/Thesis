@@ -1,0 +1,123 @@
+, sometimes you dont a function, you 
+a relation between two variables a 
+classic example is x squared plus y 
+squared equals, say, graph 
+points in plane that satisfy this 
+equation a circle thats 
+graph a function, right this graph 
+fails vertical line test a given 
+input value, say in this case, theres 
+multiple y values satisfy this 
+equation so, i cant simply solve this 
+equation y nevertheless, if you pick 
+a specific point like , , you might 
+able to find a function whose graph traces 
+that curve so yeah, if i pick , 
+, there is a function, y equals 
+square minus x squared traces 
+a piece whole curve, right im 
+ignoring rest this this 
+little tiny piece curve 
+regarded a function if i picked a 
+different point, im going to pick a 
+different function instead square 
+root minus x squared, if i wanted to 
+stand here, near point , minus 
+, well maybe id pick function y 
+equals negative square root 
+minus x squared if i ignore rest 
+this im looking this curve 
+here, yet this curve is a 
+function if i ignore this, satisfies 
+vertical line test this function is 
+picking a piece curve given 
+this equation is, yeah, valid 
+near point , minus maybe 
+thats i care time 
+so, lets say there is a function, 
+y equals f x, that satisfies 
+original equation well then, i write 
+that y equald f x say satisfies 
+equation means that x squared 
+plus f x squared equals now, im 
+saying that this gives 
+solutions, right graph x squared plus 
+y squared equals is a circle fails 
+vertical line test there is function 
+that gives outputs 
+theres multiple outputs a given 
+input im saying is that ive got 
+function traces a piece 
+whole curve then, i 
+differentiate so, this is true a 
+bunch values x that i 
+differentiate this derivative this 
+sum is sum derivative, so 
+derivative x squared is x plus 
+derivative f x squared im going to 
+use a chain rule to that 
+derivative outside function 
+inside times derivative inside 
+function equals derivative , 
+is zero i solve so, 
+subtract x sides im left 
+times f x times f prime x 
+equals negative x then, ill divide 
+sides times f x ill 
+find that f prime x is minus x 
+f x, i cancel 
+get minus x f x seems 
+like a funny situation derivative 
+depends x also 
+an f x in 
+another way to say is that slope 
+tangent line dy, dx, is negative x 
+y, right y is f x 
+really seem a littie bit putting 
+initially in kinds calculations 
+slope tangent line depends 
+x negative x y 
+this particular case think back 
+to piacture this case, right 
+pictures a circle im 
+saying is slope tangent line is 
+negative x y so, if you pick that 
+point, say ,, you ask whats 
+slope tangent line to circle 
+point , this equation is telling you 
+slope is thirds yeah, that 
+line is going down, slopes negative 
+whats slope tangent line to 
+curve point , negative 
+equation tells us that slope there is 
+rds yeah, this lines going 
+slope tangent line is depending 
+x coordinate, right 
+you also need to know y coordinate in 
+order to know exactly function youre 
+actually looking near that point 
+that totally affects slope that 
+tangent line to sorts 
+calculations, trick is cha in 
+rule 
+instance, if youre given 
+relation like this, x squared plus y cubed 
+equals you got to make sure to 
+think y a function x so that 
+you differentiate sides, 
+derivative left hand side is x 
+plus derivative y cubed equals 
+derivative , is , whats 
+derivative y cubed if y is a 
+function x, you differentiate 
+this, youve got to use chain rule 
+times inside function squared, 
+thats derivative third power 
+function, times derivative 
+inside function ill write y prime 
+long youre careful to use 
+chain rule, youll able to 
+kinds implicit differentiation 
+problems youll eventually solve 
+y prime in terms x y 
+chain rule is friend 

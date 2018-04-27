@@ -1,0 +1,197 @@
+next topic is stylebydemonstration 
+so, we this here is 
+called style demonstration, 
+teaching interactive movement, 
+movement style to robots 
+so goal here is to teach 
+interactive behavior to robots 
+robot observes user behavior 
+user something 
+robot something 
+so we try to teach this 
+kind interactive motion 
+you will to this, 
+you know traditional programming 
+is require, you know 
+user to to call, to 
+however, traditional text 
+based programming like c 
+java is difficult designers 
+so, goal is to, this, make 
+possible artists to design behavior 
+then, we take proble, 
+programming demonstration approach 
+so intertwining phase, user interacts 
+robot, operated an operator 
+so, designer actually operates 
+this robot, interacting user 
+then, this demonstration 
+result training data, is a run time, 
+systems automatically 
+synthesizes robot motion, 
+responding to user input in real 
+time defaulting to training data 
+so thats basic idea 
+let show you a video 
+so here this is a user 
+this is a designer operator, 
+heres a robot 
+so, this is a training phase 
+in training phase, 
+operator is operating robot 
+to responding to user 
+that, leaves 
+disappears 
+so i think hes teaching 
+following behavior 
+so, in this case, designer 
+is teaching attacking behavior 
+so, tries to push this user away 
+lesion, so thats a behavior 
+oh, way, everything in tracked 
+using a motion capture system, so 
+if users positions, robot 
+position is continuously tracked, 
+recorded, a training data 
+learning in lab time, 
+robot replays interactive motion 
+adapting to current situation 
+so here is a robot is reprising 
+a burglar attacking behavior 
+so, i think tedious to teach 
+this kind motion using standard program 
+language, taking user robot position 
+input, compute many geometric 
+to code motor motion 
+is hard difficult 
+we also tested this kind tabletop 
+configuration teaching 
+so user is manipulating, 
+controlling robot in this way 
+following character 
+following user 
+i think here user is 
+teaching stalking behavior 
+you know, following a person 
+behind, hiding away 
+so, this is result 
+so system is learning automatic 
+autoresume based training data 
+so this hes following person, 
+like a stalking, a certain distance 
+so this is a replay, 
+preprogrammed, predefined motion 
+is adaptive to current, 
+current configuration 
+okay 
+so, thats, thats video 
+so let briefly describe algorithm 
+to 
+so, heres situation 
+so, we training data 
+user motion data, position data, 
+robot position data, 
+time sensitive data 
+so, in training data you lots 
+time series paired, traditional data, 
+motion data 
+also, we a runtime situation 
+so use is suppose to show hes 
+continuously interact 
+robot motion is continuously interact 
+so, now, this is current time 
+in current time frame you 
+history user position, robot motion, 
+also users current position 
+task is to compute 
+robots next next desired position 
+so thats a 
+tasks, so input is this old data, 
+output is position 
+desire to position lowered 
+in order to it, in order to send 
+similar motion to training data, 
+first task is searches 
+similar situation 
+so, you compute current configuration, 
+we send you suppositions 
+recent user motions 
+recent robot motions, searches 
+similar situation in data set 
+you make faster 
+indexing beforehand, 
+anyway you is search 
+similar situation 
+identifying 
+similar situation 
+system basically copies 
+pastes, takes motion in 
+training data to current data 
+course, this is a very, 
+simplified view, 
+this describes basic idea behind 
+this kind twopair 
+twopair synthesis is inspired this 
+technique so called image analogies 
+this is technique designed, 
+developed image filtering 
+so we, is here, 
+so a, a dash, b is an input 
+b dash is a result 
+so, here user tries 
+to teach image filtering 
+so this is a, a is an input image 
+a dash is output image this one 
+so this one is kind water painting 
+filter, so system takes image 
+converts to a kind a water 
+painted painting input 
+so here user provides 
+an example a 
+a dash, 
+also provides b a source image 
+system learns 
+filtering a 
+a dash, applies to b, 
+you get b an output 
+happens internally is similar 
+to method we described 
+pixel in b dash we searches 
+similar situation in a, 
+a dash, b, applies 
+result in a dash to b dash 
+so thats 
+okay 
+so, in this short video we describe to 
+teach interactive behavior 
+to a robot demonstration 
+so the, designer operates a robot in 
+training time, know behaves 
+based training data 
+internally is 
+lower is searches 
+similar data in demonstration 
+training data, copies 
+previous motion to current motion 
+algorithm is 
+inspired image 
+logistic developed 
+image filtering 
+to allow art, original paper 
+published style demonstration, 
+teaching interactive 
+movement style to robots 
+image analogies is siggraph 
+general concept 
+programming demonstration, 
+programming example, 
+extensively studied in field 
+one represented reading is, 
+recommended reading is 
+titled book is watch i 
+programming demonstration 
+so this book introduce many 
+interesting techniques 
+examples program, 
+programming demonstration 
+thank you 

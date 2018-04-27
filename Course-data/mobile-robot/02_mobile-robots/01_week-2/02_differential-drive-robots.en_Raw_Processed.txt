@@ -1,0 +1,190 @@
+in order to design behaviors 
+controllers for, robots, we inevitably 
+need models robots actually 
+behave going to start one 
+common models there, 
+is model a differential drive 
+mobile robot so, differential drive 
+wheeled mobile robot two wheels 
+wheels turn different rates 
+turning the, wheels different 
+rates, you make robot move around 
+so, this is robot we going to 
+start reason is 
+is extremely common in fact, 
+khepera , is robot that we 
+going to using quiet a lot in this 
+course is a differential drive wheeled 
+mobile robot a lot there 
+are, in fact, differential drive robots 
+typically, two wheels 
+a caster wheel in back 
+way robots work is you 
+right wheel velocity that you control 
+left wheel velocity that you 
+cant control so, instance, if 
+theyre turning rate, 
+robot is moving straight ahead if one 
+wheel is turning slower another, 
+youre going to turning towards 
+direction in slower wheel is 
+so, this a way actually able to, 
+to make robot round so, lets 
+start this kind robot see 
+a robot model actually look like 
+well, heres cartoon robot 
+circle is robot black 
+rectangles supposed to wheels 
+first thing we need to know is 
+dimensions robot i 
+know ive said that a good controller 
+shouldnt to know exactly 
+particular parameters 
+typically dont know friction 
+coeficcient is well, in this case, you 
+going to need to know two parameters 
+one parameter you need to know is 
+wheel base, meaning far away 
+wheels going to 
+call that l so, l is wheel base 
+robot youre also going to need to 
+know radius wheel, m eaning 
+big wheels we call that capital 
+r now, luckily us, 
+parameters that inherently easy to 
+measure you take ruler you 
+measure robot 
+parameters will actually play a little bit 
+a role trying to, to design 
+controllers robots now, thats 
+cartoon robot is 
+robot that we want to able to 
+control well, we want to able to 
+control robot is moving but, 
+end day, control signals 
+that we disposal v sub r, 
+is rate right wheel 
+is turning v sub l, is rate 
+left wheel is turning 
+two inputs to system 
+so, inputs, now, 
+states well, heres robot now, 
+ive drawn a triangle i want 
+to stress fact that things that we 
+care about, typically, a robot is, 
+is it, x y position 
+direction is heading in so, 
+phi is going to heading 
+orientation robot so, things 
+that we care is robot, 
+in direction is going so, 
+robot model needs to connect 
+inputs, is v sub l v sub r, to 
+states, somehow so, we need way 
+this transition well, this is 
+a course kinematics so, instead 
+spending minutes deriving this, 
+voila, here is this is 
+differential drive robot model tells 
+vr vl translates x dot, 
+is, x position 
+robot change to y dot, is is 
+y position, phi dot, meaning is 
+robot turning so, this is a model 
+that gives us we need in terms 
+mapping control inputs onto states 
+problem is, that cumbersome 
+unnatural to think in terms rates 
+various wheels if i asked you, 
+i drive to get to door, you probably 
+going to tell v sub l 
+v sub r are, probably g oing to tell 
+dont drive fast turn in this 
+direction meaning, youre giving 
+instructions that given in terms 
+v sub l v sub r, is this 
+model is that commonly used 
+youre designing controllers however, 
+you implement them, this is model 
+youre going to to use so, instead 
+using differential drive model 
+directly, going to move to something 
+called unicycle model 
+unicycle model overcomes this issue 
+dealing unnatural unintuitive 
+terms, like wheel velocities instead, 
+is saying, you know 
+what, i care position i care 
+heading, dont i control 
+directly in sense that, lets talk 
+speed robot fast is 
+moving quickly is turning, 
+meaning angular velocity so, 
+translational velocity, speed, angular 
+velocity is quickly is robot 
+turnings if i that inputs 
+going to v, is speed, omega, 
+is angular velocity so, 
+two inputs theyre natural in 
+sense that we actually feel 
+theyre which, we typically cant 
+we vr vl so, if we 
+that, we map to actual 
+robot well, unicycle dynamics looks 
+follows, x dot is v cosine phi 
+reason this is right is, if you put phi 
+equal to , cosine phi is in this 
+case, x dot is equal to v, means 
+that moving in a straight line, in 
+xdirection, makes sense 
+similarly y, so y dot is v sine phi 
+phi dot is omega im 
+controlling heading directly the, 
+the, the, rate heading is 
+changing directly so, this model is 
+highly useful, going to using 
+quite a lot is deserves one 
+patented sweethearts okay, there 
+is a little bit problem though 
+this is model going to design 
+controllers for, unicycle model 
+now, this model is differential 
+drive wheele d model, this is so, 
+going to to implement this 
+model now, here we v omega 
+our, the, control inputs 
+going to design here, v sub 
+r v sub l actual control 
+parameters that we so, we somehow 
+need to map together well, trick 
+to that is to find that this x 
+dot, thats this x dot, right 
+theyre thing this y dot is 
+y dot so, if we 
+identify two x dots together, 
+divide cosine , we actually get 
+that velocity v is simply r , v 
+sub r plus v sub l v r is vr plus 
+vl so, this is an equation that connects 
+v, is translational velocity 
+speed, to real velocities 
+we thing omega we get 
+this equation so, l r is vr 
+minus vl now, two linear 
+equations, we actually solve 
+explicitly v sub r v sub l if 
+we that, we get that v sub r is this 
+thing v sub l is this thing 
+point is, this is i designed 
+for, this is i designed so, v 
+omega design parameters l r 
+known measured parameters 
+robot, base robot, meaning 
+far wheels apart, radius 
+wheel parameters, 
+you map designed inputs, v 
+omega, onto actual inputs that 
+indeed running robot so, this is 
+step , meaning we a model now, step 
+is, okay, we know anything 
+world around us 

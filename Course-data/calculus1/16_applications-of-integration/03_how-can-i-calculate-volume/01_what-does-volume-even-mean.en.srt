@@ -1,0 +1,342 @@
+1
+00:00:00,019 --> 00:00:04,979
+[MUSIC]
+
+2
+00:00:04,979 --> 00:00:08,288
+We've done a bunch of area
+calculations at this point, so
+
+3
+00:00:08,288 --> 00:00:11,680
+let's move up a dimension and
+think about volume.
+
+4
+00:00:11,680 --> 00:00:16,520
+Let me ask, really loudly, what is Volume?
+
+5
+00:00:16,520 --> 00:00:18,640
+Of course, what is area, right?
+
+6
+00:00:18,640 --> 00:00:20,960
+Area is the thing that
+integrals calculate.
+
+7
+00:00:20,960 --> 00:00:23,940
+So instead of trying to give
+a definition of volume,
+
+8
+00:00:23,940 --> 00:00:26,750
+let's just focus on how we're gonna
+compute volume, whatever it is.
+
+9
+00:00:26,750 --> 00:00:31,140
+And we're gonna compute volume by
+integrating the volume of little,
+
+10
+00:00:31,140 --> 00:00:34,070
+tiny pieces that we cut
+up our objects into.
+
+11
+00:00:34,070 --> 00:00:35,770
+Let's work through an example.
+
+12
+00:00:35,770 --> 00:00:36,320
+Here's a cone.
+
+13
+00:00:36,320 --> 00:00:38,680
+I want to compute the volume of this cone.
+
+14
+00:00:38,680 --> 00:00:45,650
+Just for concreteness, let's suppose that
+the cone has a height of two units and
+
+15
+00:00:45,650 --> 00:00:50,640
+a radius of one unit, and
+I want to compute its volume.
+
+16
+00:00:50,640 --> 00:00:53,070
+I want to set this thing up
+as an integration problem.
+
+17
+00:00:53,070 --> 00:00:55,500
+I want to cut this thing
+up into slices and
+
+18
+00:00:55,500 --> 00:00:58,068
+add up the volumes of the little slices.
+
+19
+00:00:58,068 --> 00:00:59,800
+So imagine that I take this and
+
+20
+00:00:59,800 --> 00:01:04,940
+I just slice it up into
+a bunch of really thin pieces.
+
+21
+00:01:05,960 --> 00:01:07,710
+Now what's the volume of a slice?
+
+22
+00:01:07,710 --> 00:01:11,580
+Well that slice is practically
+a little tiny cylinder.
+
+23
+00:01:11,580 --> 00:01:16,910
+So what's the volume of one
+of these very thin cylinders.
+
+24
+00:01:16,910 --> 00:01:19,450
+Well let's suppose the cylinder
+has some radius r.
+
+25
+00:01:19,450 --> 00:01:22,850
+And I'm going to call its height,
+its height should be really thin, so
+
+26
+00:01:22,850 --> 00:01:25,130
+I'll call its height dx.
+
+27
+00:01:25,130 --> 00:01:30,260
+And in that case the volume of this
+cylinder is, what's the area of the top?
+
+28
+00:01:30,260 --> 00:01:33,880
+It's pi r squared times its height,
+which is dx.
+
+29
+00:01:33,880 --> 00:01:39,520
+So, this here will be our formula for
+the volume of one of these thin cylinders.
+
+30
+00:01:39,520 --> 00:01:43,390
+And, once again, we're seeing the
+importance of the differentials, right?
+
+31
+00:01:43,390 --> 00:01:46,660
+We're using the differentials
+to write down an equation for
+
+32
+00:01:46,660 --> 00:01:49,390
+the volume of the thin cylinder.
+
+33
+00:01:49,390 --> 00:01:52,300
+Anyhow, let's put this
+together in integral.
+
+34
+00:01:52,300 --> 00:01:55,310
+But to set up the integral to
+calculate the volume of this cone,
+
+35
+00:01:55,310 --> 00:01:59,500
+I first have to figure out the volume of
+one of the slices that make up this cone.
+
+36
+00:01:59,500 --> 00:02:01,960
+To do that,
+let's turn this cone on its side, and
+
+37
+00:02:01,960 --> 00:02:04,740
+let's imagine that this is the point 0, 0.
+
+38
+00:02:04,740 --> 00:02:10,310
+So let's make this the y axis, so
+the x axis will head in that direction.
+
+39
+00:02:10,310 --> 00:02:13,590
+Then what do I have here?
+
+40
+00:02:13,590 --> 00:02:21,830
+Well, this line is the line
+y equals x over 2.
+
+41
+00:02:21,830 --> 00:02:25,430
+Now I'll use that to figure out
+the radius of one of those slices.
+
+42
+00:02:25,430 --> 00:02:31,540
+Pick some value of x, and
+let's think about one of the slices.
+
+43
+00:02:33,400 --> 00:02:37,450
+One of these thin cylinders that
+I'm using to build up the big cone.
+
+44
+00:02:37,450 --> 00:02:41,490
+I don't know the radius of
+that particular cylinder.
+
+45
+00:02:41,490 --> 00:02:46,800
+Well, it's this distance here, and
+I know the Y coordinate up there.
+
+46
+00:02:46,800 --> 00:02:53,790
+The Y coordinate is X over 2, so the
+radius is of this cylinder is X over 2.
+
+47
+00:02:53,790 --> 00:02:55,930
+I can write down the volume of that disk.
+
+48
+00:02:55,930 --> 00:03:00,740
+The volume is pie times the radius,
+
+49
+00:03:00,740 --> 00:03:08,080
+which is x over 2 squared times
+the thickness of that disk which is dx.
+
+50
+00:03:08,080 --> 00:03:11,380
+And now I'm integrating
+this from where to where?
+
+51
+00:03:11,380 --> 00:03:16,640
+Well x goes from 0 all the way down to 2,
+so this will be the integral
+
+52
+00:03:17,640 --> 00:03:23,310
+from x equals 0 to 2 and this integral
+will calculate the volumn of my cone.
+
+53
+00:03:23,310 --> 00:03:26,190
+And now we use the fundamental
+theorem of calculus.
+
+54
+00:03:26,190 --> 00:03:30,520
+I can simplify this a bit, I have some
+constants here I can pull out, right.
+
+55
+00:03:30,520 --> 00:03:34,800
+I can pull out the pie and
+I can pull out 1/2 squared.
+
+56
+00:03:34,800 --> 00:03:39,720
+This is pi over 4 times
+the integral from 0 to 2.
+
+57
+00:03:39,720 --> 00:03:42,200
+Just x squared dx.
+
+58
+00:03:42,200 --> 00:03:44,600
+Now, what's an anti-derivative for
+x squared?
+
+59
+00:03:44,600 --> 00:03:47,020
+Well, x to the 3rd over 3.
+
+60
+00:03:47,020 --> 00:03:50,110
+And then, I'm integrating that.
+
+61
+00:03:50,110 --> 00:03:54,610
+I'm evaluating that at 0 and
+at 2 and taking the difference.
+
+62
+00:03:54,610 --> 00:04:00,550
+So when I plug in 0, I don't get anything,
+but when I plug in 2, I get 8.
+
+63
+00:04:00,550 --> 00:04:03,580
+That's 2 cubed over 3, and then minus 0.
+
+64
+00:04:03,580 --> 00:04:08,910
+So this is the volume of the cone,
+which I could simplify somewhat.
+
+65
+00:04:08,910 --> 00:04:12,580
+I could write this as 2 times pi over 3.
+
+66
+00:04:12,580 --> 00:04:13,840
+We did it.
+
+67
+00:04:14,875 --> 00:04:18,830
+Well, you could have just looked up this
+formula in the back of some calculus text
+
+68
+00:04:18,830 --> 00:04:20,690
+book, but
+that's beside the point here, right.
+
+69
+00:04:20,690 --> 00:04:25,100
+The point here is that we're
+teaching you the secrets of volume.
+
+70
+00:04:25,100 --> 00:04:28,770
+You can now verify that the formulas in
+the back of the textbook are correct.
+
+71
+00:04:28,770 --> 00:04:33,490
+And that's part of the fun of mathematics,
+we're not just giving you information.
+
+72
+00:04:33,490 --> 00:04:35,539
+We're giving you the information and
+
+73
+00:04:35,539 --> 00:04:39,066
+the tools with which to verify
+that that information is correct.

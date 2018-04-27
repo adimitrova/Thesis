@@ -1,0 +1,292 @@
+next topic is digital ink 
+so we introduce here is called 
+flatland 
+research goal here is design 
+computational augmented office whiteboard 
+so, in, work, in many workplaces there is 
+a 
+whiteboard, near desk, near 
+walking meeting space 
+you got people take various 
+notes 
+so we try to provide computational 
+support 
+this kind computational this kind 
+whiteboard 
+this work started an ob, 
+observation that 
+office whiteboards used 
+informer, informal product, preproduction 
+activities 
+so examples note taking while you 
+a phone 
+organizing to list 
+sketching paper outlines, discussion 
+office mate 
+so this kind offi offline informal 
+discussions is we want to support 
+so this was, this 
+users point view 
+system designs point view, 
+we try to 
+is to design a computational system that 
+complements client desktop computers 
+so suppose we desktop computers, 
+whiteboards 
+complementary 
+example tasks desktop 
+computer is goal oriented 
+you a space goal, prepare 
+document, 
+prepare presentation make a email so 
+
+however works, activities a white board 
+is informal preproductive 
+there is space goal in many cases 
+then, operation desktop computers 
+
+tedious complicated you 
+to satisfy 
+many constraints however, white board is 
+easy, 
+pick a pen, write 
+so lightweight, simple easy 
+finally visual representation 
+desktop 
+computers formal typed you 
+see typed text, however visuals 
+disc white boards very, 
+informal 
+so differences we 
+try to support kind activities 
+and, so, system we proposed three 
+features 
+one, is a way to manage space 
+is to applications running 
+this surfaces, also history 
+management 
+so let show you a demo 
+sound so suppose you a whiteboard 
+you 
+pick a pen, inaudible writing 
+here 
+so i use mouse here, please assume 
+that im using a pen a whiteboard 
+you take various notes, 
+like a phone number 
+you may want to take a note a 
+schedule 
+sound you maybe like drawings, 
+you may want to draw a map 
+you see, system starts to cluster 
+nearby unknown automatically 
+you grab a cluster, 
+move around 
+so, this is convenient 
+you need unknown to get that one 
+
+you manually spread 
+to grab clusters away so 
+one important program seen here is 
+that visibility is important 
+if you desktop windows, windows 
+starts to overlap soon 
+however, visibility is important here 
+so, you 
+able to see information, 
+time 
+so, you start dragging if 
+collides 
+segment, starts push 
+segments away 
+so, in this way, system pretty bends, 
+overlapping 
+if space available, starts 
+to shrink 
+so, in this way 
+you still see content 
+inaudible, 
+you use limited screen space 
+efficiently 
+you click start drawing, 
+click start drawing 
+we also support unknown to seats, 
+like this way 
+so this is kind infinite screen 
+connected 
+horizontally infinite screen space 
+so this is screen management 
+next feature is applications 
+so here is a unknown 
+application we support here 
+like we to sleep you may want to 
+eat, you also need to work 
+you change priorities, you 
+delete 
+so here we use visceral interaction 
+using pen gestures 
+another application is map 
+drawings 
+so you a line, you get a 
+map you erase you get a 
+map 
+so you just, draw a single strokes, 
+system automatically makes a map 
+one important feature here is that 
+application removable 
+here becomes to view a simple plain 
+drawing 
+you add operation 
+applications like this one 
+this is a beautification 
+informal handwriting 
+sound look this 
+sound so another example is unknown 
+you draw numbers here you draw lines 
+you look result 
+we also implemented d drawing 
+you draw something, you 
+rotate, 
+you cut, you rotate 
+if you remove this guy, you 
+draw notations so 
+finally last feature is history 
+management 
+so system remains, remembers everything 
+you 
+this whiteboard, you get 
+previous state 
+example, if you draw many many lines, 
+a long 
+time, you erase, system records 
+everything in database 
+if you get slider here 
+you go back to previous state, in 
+history 
+go jump, to a previous state 
+feature is context space 
+search 
+so, i said, system remembers 
+activity whiteboard, later you 
+search them, time used 
+behaviors, size, colors, so 
+heres an example 
+system searches previous 
+drawings activities, this whiteboard 
+you get instantly 
+so thats a demo 
+sound yeah, yeah, heres an example 
+contextbased search 
+so let describe videos here 
+so user input here consists two kinds 
+one is primary input is given standard 
+ink 
+strokes, mouse left button, is 
+always ink strokes 
+secondary input like side 
+pen 
+pen is bottom is always a 
+control strokes 
+input strokes is always inking so 
+always growing 
+screen control stroke is 
+controlling applications 
+so a eraser, 
+dragging existing object 
+splitting segment 
+a pie marking menu 
+a pie marking menu is a laterally 
+arranged menus 
+let briefly describe 
+architecture behind system 
+so this seen a kind pen 
+version 
+standard graphical user interface window 
+system 
+so here a comparison, so we standard 
+graphical user interface flatland 
+so standard graphical user interface use a 
+mouse, here we use a pen, 
+standard gui use widgets pixels 
+here everything in strokes 
+graphical user interface use windows 
+here we use 
+informal segments, graphical 
+user interface applications corresponds 
+behaviors important thing here is 
+that in gui windows 
+applications very, to say consis, 
+persistent object 
+application is tightly connected to 
+windows, 
+here, segments merged split 
+also, behaviors flexibly 
+attached 
+removed compared to windows 
+applications 
+heres a structure in standard 
+graphical user interface windows system 
+you know, data is, handled 
+applications 
+application encapsulates internal data, 
+take 
+mouse input, generates display 
+output 
+using various, rejects 
+in contrast, in case 
+you know, behaviors outside strokes 
+opens 
+strokes board add strokes 
+removes strokes so 
+so, behavior works an attached service 
+to whiteboard 
+sound yeah, here is a little bit 
+details 
+so heres a code example a behavior 
+so this is plaindrawingbehavior 
+so this one takes inputstroke, 
+put in stroke 
+code looks like this 
+so, addinputstroke, handles inputstroke 
+put, painted stroke to 
+segment 
+so plain drawing behavior 
+in case map behavior, takes 
+inaudible 
+stroke two sided street, code 
+looks like this 
+so add input stroke event, input 
+stroke is divided left right 
+stroke 
+individually added to 
+segment 
+so, yeah heres a summary, program we 
+want 
+to address is management multiple 
+informal tasks 
+a electronic whiteboard system we 
+presented kind 
+window system this link very, 
+flexible structures 
+heres reading 
+original work published 
+flatland, new dimensions in office 
+whiteboards 
+if you learn gesture 
+recognition, there a couple pointers 
+here 
+rubine, specifying gestures example 
+is a original 
+work example based gesture recognition, 
+published in 
+reason to is one example 
+reason to is gesture without 
+libraries, toolkits training a 
+recognizer user interface prototypes 
+also i showed pie menu marking 
+menu here 
+this is interesting widget, popular in 
+pen computing 
+you, i also recommend that you take a 
+look this literature 
+thank you 

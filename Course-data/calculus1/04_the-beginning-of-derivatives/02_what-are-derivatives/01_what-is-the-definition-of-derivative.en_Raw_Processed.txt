@@ -1,0 +1,189 @@
+music we want to capture precise 
+information wiggling input 
+effects output 
+heres difinition derivative that 
+will allow us to exactly that 
+derivative f point x is 
+defined to this limit 
+limit fxhfxh h 
+approaches 
+now, this limit exists, im going to 
+say function is differentiable, 
+alright 
+if derivative f exists 
+point x, im going to to say function 
+is differentiable that point x 
+sometimes, youll see different 
+definitions derivative 
+heres an equivalent one 
+derivative f x could 
+equivalently defined this limit, 
+limit w approaches x fwfx 
+wx 
+now, this definition relate to 
+original definition derivative 
+derivative f x is this limit 
+involving h 
+well, look 
+in cases, numerators 
+measuring output is changing 
+here, im plugging in a nearby input 
+im looking much output 
+changed compared to output x 
+h is measuring exactly much that 
+input changed 
+here, im measuring difference 
+two output values 
+here, w is new output value, is 
+close to x 
+alright, here, h is measuring 
+much i wiggled x 
+here, w is actually nearby 
+value x 
+in cases, denominator is 
+measuring much input changed 
+here, h is exactly much input 
+changed 
+here, wx is measuring much input 
+changed thing that makes 
+definitions sometimes a little bit 
+tricky is that people will give you a 
+definition thats point x 
+instance, heres a definition 
+derivative f point a 
+limit fxfaxa x 
+approaches a 
+you compare first third 
+definitions here 
+this first one a w an x w is 
+approaching x to get derivative x 
+this bottom one, im trying to compute 
+derivative a x is approaching 
+a, alright so, roles w x 
+role x a somehow analogous 
+here 
+now, think back to we talking 
+continuity last week 
+we started a definition 
+continuity a single point we 
+expanded that definition to continuity 
+a whole interval 
+we played game 
+derivative here we go 
+if derivative f exists x, 
+whenever x is between a b, 
+a, b, we wont worry that, 
+whenever x is between a b 
+if this happens, then, we say that f 
+is differentiable interval a,b 
+so, a little bit a warning here, 
+this is a point 
+this is an interval 
+numbers between a b, 
+including a, 
+including b 
+now, contrast this continuity, 
+we talked continuity an 
+interval, 
+i also separate definitions 
+continuity closed intervals 
+halfopen intervals 
+that doesnt really make so much 
+sense derivative 
+heres 
+derivative is measuring much 
+wiggling x affects fx 
+if im standing in middle an 
+interval, i wiggle x 
+even if im standing pretty close to b 
+pretty close to a, i always wiggle 
+a little bit to left a 
+little bit to right, matter 
+close im standing to a close im 
+standing to b, unless im standing, say, 
+point b 
+if im standing right b, i wiggle 
+to left 
+i cant wiggle to right 
+without walking right outside 
+interval 
+so, in light this, i dont really want 
+to talk differentiability closed 
+intervals 
+i want to talk 
+differentiablity i honestly talk 
+wiggling input thats 
+true open intervals 
+theres plenty subtleties to 
+this 
+if i differentiate a function is 
+differentiable a whole interval, 
+i get a new function, f specifically, 
+derivative f point x will 
+written like this, f this little 
+tick mark, going to pronounce 
+that prime, fx 
+point here is that i define 
+derivative, right, this limit this 
+quotient 
+you think this way, if 
+this is really a function, right this is 
+a rule that defines new function, so 
+i regard fx a specific 
+values that i get plugging specific 
+values x, honestly a function 
+alright 
+this thing is sort thing i 
+plug value x see i 
+get 
+a function that somehow derived 
+f 
+maybe hence, name derivative 
+theres a whole bunch different 
+notation that youre going to see 
+derivative in wild 
+here 
+alright, derivitive f point 
+x might written fx, like weve 
+seeing 
+might written ddxfx 
+dxfx, a bunch things, 
+right 
+lots different people 
+favorite notation 
+really, this f notation this 
+ddx notation going to 
+using in this course 
+there upsides downsides to 
+various choices notation 
+instance, heres a huge upside to 
+this ddx notation 
+really emphasizing that 
+derivative is a ratio, right looks 
+like df, change in output, dx, 
+change in input, somehow 
+revealing a little bit 
+derivative is actually defined 
+fx notation doesnt emphasize that 
+derivative is a ratio, 
+emphasize derivative is a function 
+we use fx notation, least 
+you tell this thing is a function 
+youve clearly labeled input, x 
+differentiating gives a new function, 
+even name suggests that 
+derivative is somehow derived 
+original function 
+if derivative is a function, 
+you differentiate 
+derivative 
+differentiate that, keep 
+going 
+dig deeper deeper deeper, 
+trying to uncover secrets 
+original function, 
+f 
+that is yet to come 
+point is that theres so 
+much yet to explore 
+music 
