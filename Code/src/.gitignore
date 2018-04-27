@@ -5,3 +5,5 @@
 /countLines.class
 /Logger.class
 /countLinesAndFiles.class
+/NoiseRemover.class
+/SentenceSplitter.class

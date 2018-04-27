@@ -10,14 +10,11 @@ import java.util.Scanner;
 public class countLinesAndFiles {
 
 	public static void main(String[] args) throws IOException {
-		//String directoryPath = "C:\\Users\\ani\\Desktop\\Thesis\\PROCESSED\\";
-		String directoryPath = "C:\\Users\\ani\\Desktop\\Course data Thesis\\PROCESSED\\Coursera Downloads Processed";
+		String directoryPath = "Course data Thesis\\PROCESSED\\Coursera Downloads Processed";
 		File root = new File(directoryPath);
 		File[] filelist = root.listFiles();
 
 		try {
-			/*PrintStream out = new PrintStream(new FileOutputStream("C:\\Users\\ani\\Desktop\\Course data Thesis"));
-			System.setOut(out);*/
 			countLines(filelist);
 			Logger.log("\nTOTAL lines: " + lines + " | TOTAL files: " + files);
 			

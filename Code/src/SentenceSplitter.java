@@ -5,13 +5,14 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * SPLIT FILE INTO SENTENCES, EACH ON A NEW LINE
  * Class to pre-process data: 
  * Data is .txt and .srt files
- * Get all the data and separate it into sentences. Each sentence on a new line
+ * Get all the data and split it into sentences. Each sentence on a new line
  * Keep commas as some specific patterns will be looking for comma separated values
  * Recursive solution to go over all files in a folder and sub-folders
  */
-public class TextPreprocessor extends Thread {
+public class SentenceSplitter extends Thread {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
 		//String directoryPath = "C:\\Users\\ani\\Desktop\\Thesis\\PROCESSED\\";
@@ -46,7 +47,7 @@ public class TextPreprocessor extends Thread {
 	static int lines;
 	
 	// ------ CONSTRUCTOR ----------
-	public TextPreprocessor(String rootPath) {
+	public SentenceSplitter(String rootPath) {
 		directoryPath = rootPath;
 		root = new File(directoryPath);
 		filelist = root.listFiles();
