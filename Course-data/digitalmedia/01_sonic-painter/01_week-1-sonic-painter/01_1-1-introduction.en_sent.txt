@@ -1,0 +1,27 @@
+[sound].
+hi, welcome to lesson 1 of creative  programming for digital media and mobile  apps.
+i'm mick, and this is matt and marco.
+and we're going to take you through six  individual lessons starting with this  week, which is all about the basics of  drawing and the basics of sound.
+so, first of all, we need to know how to  manipulate graphics and draw them to the  screen and we also need to know how  images are represented on the screen.
+marco is going to take you through that,  and he's also going to give you a  introduction on how to use processing for  making desktop applications.
+matt's going to take you through how to  control sound and how to find and play  back sounds from the internet.
+he's also going to talk a little bit  about manipulating sound, and how sound  is represented in the computer.
+in addition, he's going to show you a  little about how to run applications that  we develop on android phones.
+and then, i'm going to take you through  the basics of using apple devices.
+and after that, i'm going to show you how  to make a basic app with simple  interactions, like mouse and touch  interaction.
+that plays back different sounds in  different ways.
+and also changes the way that certain  types of images are drawn.
+so, that's really what this lesson is  about.
+it's kind of easing you in to the whole  idea of making creative applications.
+and if you've got any questions, you can  check the forums.
+we'll be looking out for any of you who  have particular issues.
+it's always a bit difficult getting  started running software for the first  time.
+so, we've got a whole load of examples  that you can download from the coursera  website.
+we're going to be referring to them  throughout the next six weeks starting  this week.
+so, make sure that before you ask  questions, you have a look on the  documentation that we've put on the  website.
+there's a lot there.
+there are also people who are going to be  on the forums, expecting you to ask good,  relevant questions.
+and hopefully, if you are stuck, then  we'll be able to sort that out.
+so i think we're going to start off with  marco.
+i think he's going to do some graphics,  and then move on to matt, and then i'll  be seeing you later on.
+[music].

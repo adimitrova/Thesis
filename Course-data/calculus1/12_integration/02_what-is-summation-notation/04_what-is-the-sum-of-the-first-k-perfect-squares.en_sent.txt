@@ -1,0 +1,78 @@
+[music] what do we get if we add up a bunch of perfect squares?
+say, the first k perfect squares.
+what i'm asking for is a formula for this sum.
+the sum of n squared as n goes from 1 to k, right?
+so 1 squared, plus 2 squared, plus 3 squared, plus dot, dot, dot, right?
+and so on, until i get to k squared.
+what do i get if i add up the first k?
+perfect squares.
+quite shockingly, the resulting formula ends up looking really nice.
+this ends up being equal to k times k plus 1 times 2 k plus 1 all over 6. really?
+well, we can try it for some specific value.
+all right.
+what if i do the sum and go from 1 to 4 of n squared.
+that's 1 squared plus 2 squared plus 3 squared plus 4 squared.
+that's 1 plus 4 plus 9 plus 16.
+4 and 16 make 20.
+1 and 9 make 10.
+20 plus 10 is 30. so the sum of the first four perfect squares is 30. is that really what this formula's giving?
+well let's check it out.
+so i'm going to put in 4 for k, 4 times 4 plus 1. times 2 times 4 plus1 all over 6. what's that?
+well that's 4 times 5 times 2 times 4 plus 1 is 9 divided by 6.
+6 is 2 times 3, so the 2 kills part of the 4 and part of the 9 to give me 2 times 5 times 3. and yeah, i mean, 5 times 3 is 15, twice 15 is 30. it really works, at least for the value 4. of course, this isn't a proof in general.
+so how am i going to verify that, that statement is true?
+well, one argument is a geometric argument, really a proof by picture.
+so here's a geometric or a diagrammatic way of writing down 1 squared plus 2 squared plus 3 squared plus 4 squared.
+now i know there's 30 dots here, right.
+but i'm trying to draw a diagram that suggests a general pattern.
+ok. so let's try to add up.
+these, these four numbers.
+i'm going to use this device here.
+what is this?
+well, what i've done here is i've taken 3 copies of these k squares, alright.
+so here's 1 square plus 2 square plus 3 squares plus 4 squares.
+here's another 1 squared plus 2 squared plus 3 squared plus 4 squared, and in the middle i sort of mixed it up a little bit.
+i've taken the lower lefthand corner dot, which is red, and i've lined them up vertically here.
+i've taken the next, sort of three long l shape which i've drawn in blue here, and i've straightened them out and placed those three here.
+i've taken the two five long orange l's and straightened them out here, and then here at the top i've got one long brown l comprised of seven dots, and i've straightened that out right here at the top.
+so what's happened here?
+right, i have taken three copies of my sums of squares, right so i've got three copies of all these squares.
+one set is down here, one sets down here, and the other set is mixed in the middle.
+and now i can figure out how big a rectangle this is .
+well the bottom here this is a k by k square, k by k square and these are built out of the corners that are just 1 dot.
+so there's a whole bottom side is made up of 2 k plus 1 dots, k plus 1 plus k or 2 k plus 1. what about along the other side?
+well along the other side, i've got one dot plus two dots plus three dots plus four dots and of course, this is just a specific picture.
+so in general, it will be 1 plus 2 plus 3 plus 4 until i get to k. so i have to figure out how tall this rectangle is, but i in fact know a formula for 1 plus 2 plus 3 plus 4 up through k, alright.
+we figured that out already.
+it's k times k plus 1 over 2. so i've taken three copies and built them into a rectangle who's base is 2k plus 1, and which is k times k plus 1 over 2 tall.
+so that means that this sum, which is what i'm trying to compute, must be.
+well its the, the height of this rectangle times the width of this rectangle divided by 3, since i used three copies of, of these squares to build the big rectangle.
+so i ended up dividing by 3. and this is in fact the formula that we had, right?
+the original formula was k times k times 2 k plus 1 times 2 k plus 1 all over 6. but that's just a rearranged version of this formula.
+there are other geometric arguments as well.
+other proofs by picture that you could give.
+and there are other geometric arguments too.
+here's another way to get at this sum of squares formula.
+i could right down my sum of squares as something built out of little tiny cubelets.
+right?
+here i've got one cube.
+underneath i've got 2 squared cubes right, but this is a 2 by 2 by 1 block.
+underneath i've got nine little cubes, right.
+it's a 3 by 3 by 1 block.
+and underneath that i've got 16 cubes, a 4 by 4 by 1 block, right.
+and i can imagine that this thing is k high.
+i take six copies of this pyramid.
+you know, fit them together.
+flip one over and so forth.
+until i end up with a k by k plus 1 by 2k plus 1 box.
+right?
+and that box must be comprise of k times k plus 1 times 2k plus 1 little tiny cubes.
+and since i used six copies of this thing.
+well that means the number of cubes in this thing.
+which is the sum of 1 squared plus 2 squared plus until i get to k squared.
+right?
+that sum must be k times k plus 1 time 2k plus 1 divided by 6. and here, we've given geometric arguments for this particular sum.
+but in the future we're also going to see some algebraic arguments.
+right?
+but we're going to wait on those a little bit.
+for the time being, this particular quality will be very helpful when we start doing some calculations of, riemann sum.

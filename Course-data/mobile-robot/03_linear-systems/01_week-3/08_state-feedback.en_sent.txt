@@ -1,0 +1,87 @@
+so the outcome of last lecture was on one hand a little bit exciting because what we did is we took the measurements that we get and we try to use them as a, for as a way of designing controllers to stabilize the system.
+we actually know how to stabilize systems.
+we need the real parts of the eigen values are all strictly negative.
+on the other hand, the outcome of the last lecture was wildly disappointing because we couldn't actually do it.
+and the reason for that was that we only looked at the output and not at the full state information.
+so today, we're going to look at how do we design controllers when we take all of x into account, and not just y. so if you recall this picture.
+what we're going to do today is simply say, you know what?
+i don't care about y. in fact, forget about measurements.
+what comes out here is x itself.
+and then, what can we actually do?
+now, obviously.
+what we need to which is the topic of the next modal is create a way of actually sucking out x from y but for now lets just pretend for a moment that we do have access to the full state information.
+well if we have that first off we dont have to worry about y what so ever so x dot is ax plus bu, forget about y. then what we do is instead of saying u is negative ky, we're now going to say u is negative kx, where k is the matrix of various gains in it.
+in the previous example, it was just a scalar with a 1 in it, but in general it could be a matrix.
+now, just like last time, we plug this choice of u back into the equation for x., and then we get x., this ax, plus bu, well u is negative kx.
+so then we can put everything together in this matrix, a minus bk.
+and if we call this a hat, we all of a sudden have a new system matrix and our job is to make a hat as pretty as possible.
+well in particular a hat is known as the closed loop dynamics because now we have closed the loop of the system.
+we're feeding back the state information.
+into the system and in that way we are getting rid of the ax's or x dot is ax plus bu and we are getting x dot is a minus bkx and they control the sign task from a stability point of is simply pick if possible k such that the closed-loop system is stabilized and luckily for us we now know.
+exactly what this means.
+it means that the real part of the eigenvalues of the closed-loop dynamics, a minus bk, has to be strictly negative.
+so, let's go back again to our simple robot to see how can we understand this in the context of the simple robot.
+and arguably, the entire next module, module 4, is going to be devoted to this question.
+how do we pick k such that we can stabilize this system, get the eigen values we want?
+and on top of that, how do we get around this rather peculiar conundrum where we only have y but we would like to have x and we're going to pretend that we have x. well, that, we will have wait for.
+but for now, let's go back to the robot.
+let's note, though, first of all, that u is in r, and x is in r squared, or r2.
+and, in fact, if u is negative kx.
+it's always useful to write down this kind of dimensional analysis.
+where x is n by 1. in this case, u is in general, let's say that u is m x 1, in this case it's actually 1 x 1, then, from a dimensional point of view, k has to be m x n, because otherwise it doesn't work out, so we have to be able to cancel these things out, and out comes soemthing that's m x 1. so in general, k is a m x 1 matrix where m is the dimension of the output and the n is the dimension of the state.
+okay, in this case m by 1 means 1 by 2, we pick k1 and k2 here, those are our control gains, we plug it to the a-bk equation here.
+so this is.
+this is a, this is b, and this is k, right?
+so if we do that, we get this system.
+and we perform the matrix multiplication.
+i would encourage you to make sure that i got the matrix multiplication right by doing it yourselves.
+but, for now, let's just accept the fact that the close loop dynamics becomes x dot, is 0, 1 minus k1 minus k2x.
+okay, so now we have this 2 knobs that we can tweak, k1 and k2, and w hen we tweak them, the eigen values of the closed loop dynamics are going to move around.
+so, in the next module we'll be systematic in terms of how we actually pick this case.
+for now.
+let's just put some case pull some case out of a hat.
+oh, and i'm a lazy man, so i'm pull once out of the hat.
+so let's just try k1 equals k2 equals to 1. why not?
+as a first, first attempt, at least.
+well, if i plug this in to my a mius bk equation, i get the following closed-loop system dynamics.
+and let's check the eigenvalues of these things.
+so list write eig in matlab or whatever system you want to use.
+if you do that, you'll find out that the eigenvalues are negative 0.5 - plus minus something, something, something, j. what are the real parts of the eigenvalues?
+well the real parts of the eigenvalues.
+,, .
+there, -0.5, so there strictly negative, which of course is what we needed for stability.
+so we have asymptotic stability, so we have in fact achieved asymptotic stability.
+now, the other thing to note is that the fact that we have a j hanging around there, meaning we have an imaginary component to our eigenvalues, that means that we can expect oscillations in the way the system behaves.
+so we have an asymptotically stable system with some oscillations floating around, and they are in fact damped oscillations because, since the system is stable, the oscillations are going to become smaller and smaller in amplitude, and as t goes to infinity, they are going to in fact go away completely.
+so if i do this, then here is what it looks like.
+as you can see very quickly we get close to the origin we overshot a little bit and this because of these osculations.
+so lets see if we can do something about these osculations.
+well here is another attempt completely arbitrary.
+i am going to make k1 smaller which means k1 tells me how much i react to position and k2 tells me how much i react to volicity you can always think of, almost think of this as a p parameter in a pid regulator, and this is the d parameter i n the pid regulator.
+because p is the position in this case, and d is the derivative of position, which is velocity.
+and that's what k2 is, is affecting.
+okay.
+if i do that, then my new system matrix becomes this beast here.
+well, let's check its eigenvalues.
+in this case, the eigenvalues end up being these 2 numbers.
+and they're real, which means we cannot expect, really, any oscillations.
+and even better yet.
+the real and strictly negatives.
+so this is an asymptotically stable system with no oscillation.
+oscillations.
+so, this seems like a pretty decent design to me.
+let's see what it would actually do to the robot.
+so the robot, eh, well, it's not oscillating but it's unbearably slow.
+so, what we saw here is that we actually got rid of the oscillations but we got assistance that was much more or sluggish in the sense that iti's slow and borderline annoying from a performance point of view.
+but for now asymptotic stability is achieved and what we saw we need to do is to be able to achieve stability while doing other things at the same time.
+but one thing that is absolutely clear is that some eigenvalues are better than others.
+and our design of control gain, somehow, should be reflected by, what are good eigenvalues.
+so, some eigenvalues cause oscillation.
+some eigenvalues cause instability.
+some eigenvalues make the system respond too slowly and so forth.
+so what i want to leave you with now is it seems like state feedback is the way to go.
+even though we don't really know how to get to state yet.
+but we will by the end of the next module.
+and we have to be careful and creative and clever in terms of how we select our eigenvalues.
+and that's another topic for the next module.
+which is how do we actually select the appropriate eigenvalues to get the closed loop system behavior that we want.

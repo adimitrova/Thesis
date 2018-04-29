@@ -1,0 +1,99 @@
+[music] we're going to calculate the  derivative of x squared with respect to  x.  maybe a little bit more prosaically, i  want to know how wiggling x affect x  squared?
+there's a ton of different ways to  approach this.
+let's start by looking at this  numerically.
+so let's start off by just noting that 2  sqyared is 4,  and i'm going to wiggle the 2 and see how  the 4 wiggles.
+instead of plugging in 2, let's plug in  2.01 squared is 4.0401.  and let's just keep on going with some  more examples.
+2.02 squared is 4.0804.
+2.003 squared, say, is 4.012009.  alright, so those are a few examples.
+i've wiggled the inputs, and i've seen  how the outputs are affected.
+and of course the, all the outputs are  close to 4, alright?
+but they're not  exactly 4.  when i wiggled the input from 2 to 2.01,  the output changed by about .04, and a  little bit more, but that'ts a lot  smaller.
+when i wiggled the input from 2 to 2.02,  the output changed by about .08, not  exactly .08, but pretty close to .08.  and when i wiggled from 2 to 2.003, the  output changed by about.
+about .012 and a little bit more, but,  you know, it's close.
+now look at the relationship between the  input change and the output change.
+the input change by .01, the output  change by 4 times as much, about.
+the input change by .02, the output  change by 4 times as much.
+the input change by .003, the output  change by about 4 times as much.
+i'm going to summarize that.
+the output change is the input change  magnified by 4 times.
+right?
+the input change by some factor.
+and the output change by about 4 times  that amount.
+let's see this at a different input  point.
+instead of plugging in 2, let's plug in 3  and see what happens.
+so 3^2 is 9, but what's, say 3.1^2?
+that's 9.61.  or what's 3.01^2?
+well, that's 9.0601.  maybe wiggle down a little bit.
+what's 2.99 squared?
+that's close to 3  but wiggling down by .01.  that's 8.9401.  let's see how much roughly the output  changed by.
+when i went from 3 to 3.1 the output  changed by out point 6.  when i went from 3 to 3.01, the output  changed by about .06, and when i went  from 3 down to 2.99, the output when down  by about .06 again.
+little bit less.
+now what's the relationship between the  input change and the output change?
+well  here the input changed by .1, the output  change by .6, about 6 times as much.
+again, the input change by .01, the  output changed by about six times as  much.
+and when the input went down by .01 the  output went down by about six times as  much.
+so again, we're seeing some sort of  magnification of the output change to the  input change, but now it's magnified not  by four times but by six times.
+so the important lesson here is that the  extent to which wiggling the input  affects the output depends on where  you're wiggling.
+if you're wiggling around 2, the output  is being changed by about four times as  much.
+if you're wiggling the input around 3,  the output is being change by about six  times as much.
+instead of doing just a few numerical  examples, let's generalize this by doing  some algebra.
+so, i'm starting with x^2 and i'm going  to wiggle x and see how x^2 is effected.
+so, instead of plugging in x, i'll plug  in x + something, let's call the change  in x, h.  now i want to know, how is this related  to x ^ 2?
+well i can expand out (x+h)^2,  that's x^2+2xh+h^2.
+so when i wiggle the input from x to x+h,  how is the output being affected?
+well  the output, is the old output value plus  this change in output value 2xh+h^2, h^2  is pretty small.
+when h is small, h^2 is really small so  i'm going to throw that away for now.
+and just summarize this by saying that  the output change is 2xh and the input  change.
+is h.  now the derivative is supposed to measure  the relationship between the output  change and the input change.
+so i'm going to take the ratio of the  output change to the input change, and  2xh/h=2x, as long as h isn't 0.  this is the ratio of output change to  input change and that makes sense, right?
+think back to what just happened here a  minute ago, when we were plugging in some  nearby values and seeing how the outputs  were affected.
+when i was wiggling the input around 2,  the output was changing by about twice 2.  when i was wiggling the input around 3,  the output was changing by about twice 3,  alright?
+2x is the ratio of output change  to input change.
+if the algebra's not really speaking to  you, we can also do this geometrically,  like drawing a picture.
+here's a square of side length x.  the area of this square is not,  coincidentally, x^2.
+now i want to now the derivative of x^2  with respect to x.  i want to know how changing x would  affect the area of this square.
+now to see this here is another square.
+this is a slightly larger square of side  length x+h.
+h is a small but positive number.
+so how does the area of this new square  compare to the area of this old square?
+let me put the old square on top of the  new square, and you can see that when i  change the input from x to x+h, i gained  a bit of extra area.
+the derivative is recording the ratio of  output change to input change.
+so, i want to know what's the ratio of  this new area as compared to just the  change in the input h.  so, let me pull off the extra area.
+there is extra area, is this l shaped  region.
+how big is this l shaped region?
+well,  this short side here, has side length h.  this side length here, is also h.  this is the extra length that i added  when i went from x to x+h.
+this inside has length x, and this inside  edge has length x.  now i want to know the area of this  region.
+to see that, i'm going to get out my  scissors and cut this region up into 3  pieces.
+now here's one of those pieces.
+and, here's another one of those pieces.
+and, here's the third piece.
+so these are the 2 long thin rectangles,  and they've both got height h, and length  x.  i'm also left with this little tiny  corner piece.
+and that little tiny corner piece has  side length h, and the other side is also  length h.  it's a little tiny square.
+well the limit, this little tiny corner  piece, is infinitesimal.
+i'm going to throw this piece away and  most of the area is left in these 2 long,  thin rectangles.
+if i rearrange these long, thin  rectangles a bit, can put them end to  end.
+they've both got height h.  so i can put them next to each other like  this.
+and their base is both length x.  so how much area is in this long thin  rectangle?
+well, it's height h, it's  width is 2x.
+so the area is 2x * h.  now this is the additional area,  excepting for that little tiny square,  which we gained when i changed the size  of the square from x to x + h.  so the change in output is about 2 * x *  h.  the change in input was h, so the ratio  of output change to input change is 2 *  x.  maybe what we're doing here seems a  little bit wishy washy, not really  precise enough.
+but we can also calculate the derivative  of x ^ 2 with respect to x, by just going  back to the definition of derivative in  terms of limits.
+carefully, f of x is x^2.
+and the derivative of f is by definition  the limit as h approaches 0.  f of x plus h minus f of x, the change in  output divided by h, the change in input.
+in this case f of x plus h is just x plus  h squared and f of x is just x squared.
+i'm dividing by h.  i can expand this out.
+this is the limit as h approaches 0 of  ((x+h)^2-x^2)/h.
+now i've got an x^2-x^2, so i can cancel  those, and i'm just left with the limit,  as h approaches 0, of (2xh+h^2)/h.
+more good news, in the limit i'm never  going to be plugging h=0, so i can  replace this with an equivalent function  that agrees with it when h is close to  but not equal to 0.  in other words, maybe a little bit more  simply, i'm canceling an h from the  numerator to the denominator.
+so, 2xh over h is just 2x and h^x over h  is just an h.  now what's the limit of this sum?
+well  that's the sum of the limits.
+it's the limit of 2x as h approaches 0 +  the limit of h as h approaches 0.  now as far as wiggling h is concerned, 2x  is a constant, so the limit of 2x as h  approaches 0 is just 2x.
+and what's the limit of h as h approaches  0?
+well, what's h getting close to when h  is close to 0.  that's just 0.  so, this limit is equal to 2x and that's  the derivative of x^2.
+what that limit is really calculating is  the slope of a tangent line at the point  x and we can see that it's working.
+this is the graph of y=x^2.
+at -4 the slope of the tangent line is -8  at 2, the slope of the tangent line is 4,  and, at 6, the slope of the tangent line  is 12.  there's a ton of different perspectives  here.
+we've been thinking about the derivative  of x ^ 2 with respect to x, numerically,  algebriaically, geometrically, going back  to the definition of derivative in terms  of limits, looking at it in terms of  slopes of tangent lines.
+what makes derivatives so much fun is  that there just so many different  perspectives on this single topic, no  matter how you slice it.
+we've shown that the derivative of x  squared with respect to x is 2 times x.  maybe you like algebra, maybe you like  geometry, maybe you just like to play  with numbers.
+but now matter what your interests are,  derivatives have something to offer you.
+[music]

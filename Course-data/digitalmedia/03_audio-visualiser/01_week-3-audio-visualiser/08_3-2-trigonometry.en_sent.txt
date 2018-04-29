@@ -1,0 +1,53 @@
+the last thing i want to talk about today  is another powerful mathematical function  that we can use a lot enjoying, and, the,  these functions are, trigonometry which  he, probably studied in high school or  the equivalent.
+and they are three functions that relate  to triangles.
+relate angles and triangles.
+so, if we look at the slide here, we've  got a right angled triangle.
+we've got an angle a in that triangle,  and then we can label the sides.
+the adjacent side, which means the side  that's next to the angle.
+the opposite side, ones opposite it.
+and the hypotenuse, which is the long the  long angle, the long side of the  triangle.
+and this trigonometric functions are  defined in terms of these three sides.
+the sine of an angle is the opposite side  to that angle divided by this hypotenuse,  the length of the opposite side divided  by the hypotenuse.
+in the case of the tangent, it's also  defined the same way.
+now, we're not actually going to use  these to work with angles or triangles,  and i'm going to show you something  different.
+i'm actually just interested in working  with sine as a function, because it's a  really instant function.
+and it's really powerful for doing  graphics animation, and i'm going to show  you what it does.
+so, if we're drawing the circle, you can  that the vertical line in the circle is  the opposite of the angle in the middle  of the circle as we rotate around.
+so, we can see we're drawing a circle,  and i'm tracing out the path of the  actual sine function at the same time as  drawing the circle.
+and you can see, is that when the angle  is.
+when it starts again, it's near zero, the  sine function zero.
+it gets increasingly more negative, then  increasingly more positive.
+and then it goes back down to zero again,  and it starts the way around a circle.
+so, it repeated itself exactly, going  negative, going positive again.
+and what's powerful about is that it's  repetitive oscillating function.
+so, it goes up and down, up and down, up  and down all the time.
+it looks a little bit like a wave.
+in fact, it's a very important mechanism  for modeling sound wave.
+sound waves act a lot like sou, sine  waves.
+in fact, we can build up any sound wave  out of a whole load of si, of si, of sine  functions of different sizes and  frequencies.
+so, what do we, what can we do with this?
+well, before we come to that, i'll talk a  little bit more about the function.
+so, this is more detail about the sine,  sine function, this is how we would write  it out.
+we're using the function sine, which is  the calculates the sine of an angle, but  we're putting some other numbers in.
+firstly t, we can think of this as time,  if you're working with animation with  sounds, the sine function is changing  over time.
+then we've got, we multiply the result by  a.  that's called the amplitude, that's how  high it gets and also how low it gets.
+that's how big the sine wave is.
+in audio, that is closely related to the  volume of audio.
+if you take, if you're listening to  sound.
+then we have the frequency, that's how  many of the ups and downs you get in a  second, say, if you're dealing with time.
+and that what i'm showing you in the  diagram here is that the distance from  one point to next identical point is one  divided by the frequency of wave.
+and finally you got the phase, and that,  we can really just think of that wave's  as a starting point to the sine wave, say  how off, far off the zero point your  actual function is starting.
+and you can combine together at different  sine waves at slightly different phases,  and you get an interesting effect.
+say, you're starting one at point, and  you're starting another one a little bit  later, and you combine them together, and  that'll [inaudible] an interesting visual  [inaudible] effect.
+and there's a lot you can with sine  waves.
+so, a sine wave can be used nicely in  graphics.
+it has a nice shape.
+it starts to look a bit like a water  wave.
+you can [inaudible], you could model  water with sine waves.
+and certainly, if you add a bunch of sine  waves together, you can get quite a nice  model of it, or even landscapes.
+and importantly you can use in animation.
+and that's really powerful because the  great thing about sine wave is that it  oscillates.
+it goes up and down repeatedly.
+and that's a really useful thing for  animating moving objects.
+and we'll see make work, work a lot with  sine wave [inaudible].
+the other great thing for sine wave is,  as i said, it's a fantastic tool for  modeling audio functions, and i think  matthew will talk about that in a later  [music] [music]

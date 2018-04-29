@@ -1,0 +1,119 @@
+so now we feel pretty confident abut our ability to design controllers that take a robot to a goal location.
+in fact we've seen it in design, we've seen it in simulation, and we've even seen it in real life.
+but we have not discussed the issue of.
+well what if the robot needs to do something slightly more elaborate than just get to the point for instance you typically don't want to hit things on the way over there so the one behavior that i want to talk a little bit about is obstacle avoidance because goal to goal and obstacle avoidance are really the dynamic duo of mobile robatics.
+,, .
+we're going to do more things, of course.
+but underneath the hood, there will always be a goal to goal, and an obstacle avoidance behavior.
+and let's think a little bit about how one should avoid driving into obstacles.
+because going to goal location was not.
+particularly complicated.
+well, we can clearly use the same idea as we did in go-to-goal by defining a desired heading, and then simply, you know, steer in that direction.
+so, let's say that we have the following.
+the robot, well, it's the blue ball.
+and then we have this little red.
+c, which is the obstacle, located at xo yo.
+and the reason that we know the location of this is because the, the disc obstraction we talked about, when we talked about the sensors.
+okay, if this is a goal, we would steer towards it.
+that much is clear, now, the question is if it is an obstacle which direction should we steer it, when it's not as clear.
+i mean, here is a direction we can go in.
+you know, let's run away from the obstacle.
+but that's a little overly cautious i think.
+at least sometimes, if i'm not even on m way towards the, the red thing.
+why do all of a sudden i have to insist on going the opposite direction?
+so.
+this is one direction which we can go in, but it seems a little, how should i put it.
+it seems a little skittish, or paranoid.
+we should be able to be a little bit more.
+clever, maybe like this.
+so if we're going in this general direction, then we should maybe go perpendicular to the, the direction to the obstacle.
+that's one way in which we could be thinking but there are other choices we could make.
+let's say that we have a goal.
+again, we're not just avoiding obstacles, we're actually trying to go somewhere.
+this obstacle the red obstacle we see here.
+well, it doesn't seem to matter if i'm going towards the goal, what do i care about that obstacle.
+so, hey we could just ignore it.
+that's one direction we could go in.
+or we could somehow combine the direction to the goal with some way of avoiding an obstacle.
+so, we could kind of move away from the obstacle while somewhat getting towards it.
+to goal.
+the point here is that there is no obvious correct answer, going to goal its clear which direction we want to go in.
+when we're avoiding an obstacle its not as clear, its not obvi, obviously have to go in this direction and we have choices and some how some choices are better than others.
+so lets, lets look at some of these choices that we have a little bit.
+okay.
+so we have the robot in blue, we have the obstacle in red.
+and we have the goal in yellow.
+this was choice one.
+pi 1 is, i'm going to call it pi obst plus pi.
+so pi obst is this angle, right?
+so, here is phi obst.
+and in fact, pi obst is we can write it as arc tangent y obst minus y over x obst minus x. so this is some way in which we compute the angle to the obstacle and then we can say well pi 1 suggestion one which is the.
+the super paranoid robot who's avoiding obstacles at all cost, it's adding pi to the mix.
+and by the way why am i adding pi, and not subtracting pi?
+all right, so, here's the, the, the angle i want to go to the, this is phi obst.
+and, what i'm doing no is adding pi.
+right, so, this is , well the point is that it actually doesn't matter if you add pi, or subtract pi, because by now we know that angles are slightly scary objects.
+and, we always take something like r tangents too, to ensure that we stay within minus pi and pi.
+adding pi or subtrac ting pi as long as we take.
+some safety measures, it doesn't matter.
+so, we can do the same thing.
+it doesn't matter which one we choose.
+but, that's one way.
+now, this direction is pure in the sense that i don't care where the goal is.
+i am just going to move away from the obstacle as much as i can.
+so, i'm going to call this pure avoidance.
+no notion of where i'm supposed to be going.
+well, we had another choice, right?
+we said, what if we go perpendicularly to this direction?
+well, so pi 2 is pi obstacle plus minus pi.
+well, what does that mean?
+it means that if i do minus pi over 2, i go in this direction.
+if i do plus pi over 2, i go in that direction.
+and there, here it actually matters if i do plus or minus.
+and the question is, which one should we choose?
+well, typically that depends on where the goal is.
+so we should pick in this case minus pi over 2 because that moves us closer to the goal, while plus pi over 2 moves us further away from the goal.
+and the punchline here is really that this is not a pure strategy, because we need to know where the goal is.
+instead, what we're doing is we're actually, i'm calling it blended in, in, in the sense that we're taking the direction to the goal into account when we are figuring out in which direction we should be going.
+so it's not a pure obstacle avoidance.
+if i just ask you to avoid an obstacle, you say i can't, because it needs to know where the goal is.
+in that sense, it's not pure.
+so, that's one choice.
+well, remember this one?
+we said, you know what?
+this obstacle is no big deal to us, we are just simply going to go in the direction of the goal.
+well, this is pure goal to goal.
+we're just running one behavior.
+goal to goal, we don't care about the obstacle.
+and what's more interesting is this choice, fi 4 which is really a combination of the direction to the goal and the direction to the obstacle.
+and the interesting thing here is that this is clearly a blended mechanism, somehow we combining go to goal, type oyds with obstacl e avoidance of ideas and the punch line here is that there are really two fundamentally different ways of combining, avoiding slimming interstuff and getting to goal points and these ways of combining things is called an arbitration mechanism so we saw typically in this case two fundamentally different arbitration mechanisms one is the winner takes all approach which is a hard switch when we're just going straight away from the obstacle right so here was the obstacle here was the robot with the robot was going there we're doing just avoid obstacles.
+or, if the goal was here, right?
+and we're going straight to the goal, we're doing just go to goal.
+so, these would be two examples of hard switches.
+now, the two other examples we saw were blended behaviors.
+one was, you're combining somehow, the angle to the goal and the angle to the obstacle to produce a new desired angle.
+and the first blended behavior we saw was one where we're kind of moving perpendicularly to the obstacle, but we're doing it in such a way that we're getting closer to the goal.
+and these are two valid ways of designing arbitration mechanisms.
+and in fact, we are going to have to get systematic and careful about how to do it.
+and i should point out that both approaches have merit.
+now the nice thing about the winner takes all is that if go to goal is only going to goal, then i can analyze that.
+if obstacle avoidance is only avoiding obstacles then i can analyze that, which means that from an analysis point of view it's easier to deal with hard switches.
+however, it's not necessarily the case that from a performance point of view hard switches are to be preferred.
+because, it seems like as i'm walking around i'm kind of keeping an eye on where i'm going while not slamming into things.
+so i'm not either going towards something or avoiding slamming into things.
+so it seems like performance wise, blending or smoothing the two behaviors makes a lot of sense.
+however, from an analysis point of view it's harder.
+so, the question is ho w do you design your system in such a way that you can have your cake and eat it meaning you can analyze what's going on and you still have good performance.
+so, we are going to have to bite this bullet head on, and in fact we would be very systematic.
+and what we have done in this module, module two is simply introduce mobile robots.
+we've looked at some basic models.
+we looked at some basic ways in which we're getting information about the world.
+and we designed some basic behaviors, but to be honest, we haven't been particularly careful about what we did.
+module one, we were also not particularly careful, but there the focus was on control theory.
+so mobile, mo, , module three is enough chit chat.
+let actually start this course in a more systematic and formal matter.
+so, we're going to return to module one.
+in module three and then we're going to return to module two.
+and we're going to see, can we do what we just did, did in a rather heuristic and ad hoc manner in a systematic and more formal way.
+and the way to do it is to go to the wonderful abstraction that is linear systems theory.
+so, that is the focus of the next module.

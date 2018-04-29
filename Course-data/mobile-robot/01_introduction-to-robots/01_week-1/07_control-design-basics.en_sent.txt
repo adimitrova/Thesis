@@ -1,0 +1,86 @@
+okay.
+so, so far in the course, we have mainly chit-chatted about things.
+we've seen some models and we have now a model of a, a cruise controller or at least how the controller input affects the velocity of a car.
+we see it here, x dot was c over m times u. where x was the velocity, u was the applied input, and c was some unknown parameter, and m was the mass of the vehicle.
+we also talked a little bit about what we wanted the controller to do.
+so now, let's start designing controllers.
+let's actually do it.
+no more excuses.
+what we want, of course, is that x should approach r. and recall, again, that r was the reference velocity that we wanted the car to get to.
+and x is the actual velocity.
+and typically, in control design, you talk about asymptotic properties, which is fancy speak for when t goes to infinity.
+so, what we want, is, after a while x should approach r. the velocity should approach the reference velocity.
+or another way of saying that is that the error, so the mismatch or imbalance between the 2 two velocities should approach 0. that's what we want.
+so, i am going to give you a controller here.
+this is attempt 1. i have picked some values for, you know, how hard i want to hit the gas pedal.
+and i'm going to say that, if the error is positive, so positive error means that the reference is bigger than the state, which means that we're driving slower than we should.
+then, let's hit the gas.
+and if the error is negative, meaning that the velocity, the actual velocity of the car is greater than the reference velocity, which means we're going too fast, let's brake.
+and if we're perfect, let's do nothing.
+fine.
+so, take a second to stare at this and see what you think.
+is this going to work or not?
+okay, a second is up let's take a look.
+yeah, it works beautifully.
+i put the reference velocity to 70 so it's up here, here is 70. this is the actual velocity of the car and look at what the car is doing.
+it's basically starting down somewhere and then increasing up to 70 and then it's remaining flat around 70. so, that's, that's awesome.
+it's doing what it should be doing.
+now, i'm calling this bang-bang control and that's actually a technical term from doing things like u max and negative u max.
+you're switching between two extremes.
+so this seems to be easy peasy and there's no need to take a course on controls and mobile robots.
+now, let's see what the control signals is actually doing.
+let's see what the control values were that generated this nice and pretty plot.
+well, they look like this.
+this ladies and gentlemen is miserable.
+even though the car was doing the right thing in terms of the velocity, i had u max be a 100, so negative max is minus a 100 and first of all, we are accelerating up for a while, until we hit the right velocity.
+and then, we start switching wildly between plus and minus a 100. well, when the error was 0, the u was supposed to be 0, but the error is never going to be exactly 0. just ain't going to happen, and this is bad, because what's going on?
+well, first of all, we get a really bumpy ride.
+we're going to be tossed around in the car, backwards, forwards, backwards, forwards, because of all these accelerations that are being induced by these, these extreme control signals.
+we're also burning out the actuators.
+we're asking the car to respond extremely aggressive and for no good reason.
+i mean, we're basically doing a lot of work when we're very close to perfect.
+so, this is actually not a particularly good control design.
+and the problem is exactly this of overreaction to small errors.
+even though the error is tiny, as long as it's positive, we're slamming gas as hard as we can.
+so we somehow need to change this design.
+so, how shall we do that?
+well, the easiest thing to do is to say, you know what, when error is small, let's have the control signal be small.
+in fact, here's my second attempt.
+u is k times e, for some positive k, e is the error.
+positive error means we're going too slow, u should be positive.
+negati ve error means we're going to fast, u should be negative.
+so this is a much cleaner design.
+it's what's called it's, it's a smooth feedback law.
+it's actually linear feedback in the error, and this seems to be much more reasonable because small error yields small control signals, which is what we wanted.
+nice and smooth.
+we're not going to wildly fluctuate in our controller.
+and, in fact, this is called a p regulator, where p stands for proportional because the control signal, the input, u, is directly proportional to the error through this k controlled gain.
+so, here is a completely different and possibly better way of doing it.
+this is what the p-regulator in action looks like.
+so, it's nice and smooth, right?
+it seems even stable.
+stable, again, we haven't really defined it, but it's clearly we're not blowing up the course.
+so, nice and smooth and stable.
+now, here is a little problem.
+you see what it says up here?
+it says 60 and i had my reference be 70. so, even though we're nice and smooth, we actually did not hit the target value.
+the reference signal was supposed to be 70, and we got to 58 or so.
+so even though we're stable and smooth, we're not achieving tracking.
+and here is the problem.
+i actually added a term to the model and this is a term that really reflects wind resistance because here is the acceleration of the car, this is our term.
+well, if we're going really, really fast, we're going to encounter wind resistance.
+so, add it a little bit of wind resistance.
+this says that if we're going positive and fast, then we're getting a negative force, we, meaning, we're being slow down a little bit and gamma is some term or some coefficient that again we don't know.
+and this was the model i used when i simulated the controller.
+and somehow, the p-regulator wasn't strong enough to, to deal with this, and in fact, let's see what happens.
+at steady state, so steady state means when nothing changes anymore, and if for your call from the plot, after awhile, x stopped varying.
+at steady state, x is not varying.
+well, another way of saying that, is that the time derivative of x is 0. so, at steady state, x is not varying, which means that this term here has to be equal to 0. and this is the model right?
+well, i know what u is.
+u is equal to k times error, which is r minus x. so, i'm plugging in u there.
+and i'm saying that this thing has to be equal to 0. well, if i write down the corresponding equation now that says that, this term here has to be equal to 0, then i get this.
+well, i can do even better than that.
+what i get is that x, let me get rid of the red stuff there, x is now going to be, ck divided by ck plus m gamma times r, and this, for all these coefficients being positive, is always strictly less than r. which means, that at steady state, the velocity is not going to be, it's not going to make it up to the reference velocity.
+and we can see that if we make k really, really, really big, then these two terms are going to dominate and we're going to get closer and closer to having this complicated thing, go to r. so, as k becomes bigger, we're getting closer to r, which means we're having a stronger gain.
+but we're never, for any finite value of the gain, going to actually make it up to the reference.
+so, something is lacking and next time, we're going to see what it is that is lacking to actually achieve tracking and stability.

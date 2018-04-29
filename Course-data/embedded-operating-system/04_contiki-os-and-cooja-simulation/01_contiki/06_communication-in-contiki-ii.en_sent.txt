@@ -1,0 +1,46 @@
+[music] hello.
+i am glad to see you back for this lesson.
+this time we will explore the details of micro ip communication and stacking contiki.
+by the end of the lesson, you should understand the benefits and challenges of using contiki's micro ip communication stack.
+the micro ip stack is a communication library provided in contiki for supporting tcp/ip protocols on small micro-controllers.
+some of the benefits of using micro ip stack are its small code size and that it requires only a few hundred of bytes of ram.
+although it is lightweight, it is important to notice that the necessary rfc requirements affecting host to host communication are fulfilled.
+however, some complicated communication mechanisms have been removed from micro ip in order to make it suitable for embedded systems.
+for example, the soft error reporting mechanism and the dynamically configurable type of service bids for tcp connections.
+are not present since these mechanisms are not required in most wireless sensor network applications.
+it is important to notice that removing these services does not affect the quality of service.
+the micro ip stack can be executed either as a task in a multitasking system or as the main program in a single task system.
+in multitasking implementations, it is common to implement two tests.
+the first one is constantly checking for incoming packets.
+whereas the second one is verifying the occurrence of a periodic timeout.
+once a packet arrives, the micro ip input function is called.
+then the receiving application may create a message for replying.
+periodic timeouts play important roles in tcp because many activities and functions require this information for performing their task.
+for example, retransmission and round trip time estimation requires periodic timers.
+instead of using explicit dynamic memory, micro ip uses a single global buffer for restoring incoming packets and a fixed table for holding connection state.
+the size of the global buffer is designed to fit the maximum size of a packet.
+when a message reaches to a destination, the message is stored in the global buffer and wait for a tcp/ip stack.
+in cases where the packet contains data, the tcp/ip stack will notify the appropriate application to process the data.
+the application which the incoming packet is targeted to can immediately process the data or copy it to another buffer for future processing.
+the global buffer is used for both incoming and outgoing packets, as well as for headers.
+therefore, this tech can use the part of the buffer that is not reserved for headers as a temporary memory for dealing with applications sending dynamic data.
+the memory footprint for implementing micro ip varies dramatically depending on the application.
+for example, there are less requirements in terms of memory usage for a simple telnet server.
+than for other complex applications which perform very complicated tasks.
+it is possible to implement micro ip with a very low memory overhead.
+as for example, with the memory size of less than 300 bytes.
+however, this implementation will affect other features or reduce service quality.
+to interact with the micro ip stack, an application program interface or api is used.
+the api comprises a set of software and functions to make application development easier.
+currently, the bsd socket api seems to be one of the most popular apis for tcp/ip, since it is used in many unix and linux systems.
+however, the bsd api is not suitable for micro ips tech due to its requirements of support from an underlying multi-tasking operating system and the overhead of memory usage.
+instead of using a bsd api, contiki provides two simple apis that include proto-sockets and a simpler version of bsd with low overhead.
+similar to rhyme stack, the micro ip stack is designed in ledgered fashion, where each functionality will be performed by a particular protocol.
+while interactions between the protocol layers are strictly defined.
+using the layerds structure for designing protocols and stacks is a good approach.
+however, it is not ideal for implementing them.
+in micro ip, the protocol implementations are tightly coupled in order to save code space.
+this is the end of the lesson about contiki's micro ip communication stack.
+i hope by now you have a good idea about the structure of contiki's micro ip stack and how it works.
+thanks for watching.
+[music]

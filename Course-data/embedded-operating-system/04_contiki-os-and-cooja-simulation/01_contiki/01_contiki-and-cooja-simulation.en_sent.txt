@@ -1,0 +1,73 @@
+[music] hello, i am glad to see you back for this lesson.
+in previous modules, we explored different types of embedded iot operating systems.
+now we will look into the details of contiki and discover certain detailed behaviors.
+at the end of the lesson, you will be able to understand some of the challenges in developing iot applications for contiki.
+first of all, let's elaborate the title of today's lesson, contiki, a hybrid operating system.
+remember our discussion in previous module on operating system kernel designs?
+we discussed contiki as an example of a modular kernel design, combining features from monolithic and microkernel.
+this allows it to inherit some advantages of both systems.
+contiki implements a hybrid model through an event driven kernel.
+in contiki, preemptive multi-threading is implemented as an application library.
+this is optionally linked with the program, if the program requires multi-threading features.
+there are two key benefits when building a system like this.
+first, concurrency can be provided without the need of per-thread stacks or locking mechanisms.
+this benefit is evident by looking at why per-thread stacks are not suitable for embedded devices.
+per-thread stack approach allocates a stack for each thread.
+it is hard to specify how much a thread requires.
+in addition, when a thread is created the memory for stack must be assign or allocated.
+this creates a problem, because memory assigned for specific task cannot be use by other concurrent test.
+the second benefit is that event driven model with the state driven programming are difficult for programmers to manage.
+in addition, not all programs can be expressed as state machines.
+let's take an example of a purely event driven operating system.
+in such a system, a task could consume the full cpu time completely.
+when the task is complex and require a long cpu time, the system cannot respond to external events sometime.
+a preemptive multi-threaded system overcomes the problem in such situation.
+hence, a hybrid system can be considered as the most suitable for such kind of problems.
+as i mentioned earlier, contiki inheritance advantages from microperable design, and hence separates from the kernel from processors.
+this helps to reduce the kernel size as small as possible and consequently the probability of bulks can be dramatically reduce.
+similar to microkernel design, contiki also uses messaging mechanism for communication between services and the kernel.
+however, instead of using the peer messages discussed in micro kernel lesson, contiki uses posting events.
+the only difference between pure messages and event posting is formatting.
+there is no hardware abstraction layer or hal in contiki.
+therefore, the bias drivers and applications communicate directly with the hardware.
+in order to give you a better understanding of the pros and cons of removing hardware obstruction layer in contiki, i will first discuss about the hardware obstruction layer.
+the hardware abstraction layer is a layer between application, component code, and hardware.
+in other words, hal allows operating systems to interact with devices at an abstract level rather than a detailed hardware level.
+the main purposes of halt is to help the os access hardware simply and portably via abstract api's regardless of the type of underlying hardware.
+therefore, hal has many advantages.
+for example, first it enables switching hardware.
+it is possible to switch to another hardware, such as a different microcontroller during development.
+as a result, there is less of a risk due to choosing suitable tools.
+second, it allows cross development.
+it is not possible to develop application and components more conveniently.
+as a result, the development speed can be fast.
+in addition, a large-scale simulation environment can be built.
+third, it results in less effort and less bugs.
+this enables a significant reduction in lines of code, which leads to less bugs.
+the final benefit is for automated unit testing.
+it is possible to run embedded software on a computer platform, extending the concept of continuous integration with automated unit tests.
+although hal has many advantages, it also has several drawbacks.
+let's look at some of them.
+first, hal cannot completely cover all available features of a particular hardware, such as a microcontroller.
+as a result, it limits some functionalities of the hardware.
+possible conflict with other frameworks, libraries and components is the second drawback of hal.
+the third problem is that it is hard or even possible to maintain the hold, especially in cleaning hals mess.
+finally, a number of lines of code increase dramatically when integrated into the os.
+currently, hal is deprecated in different linux distributions.
+since contiki is built for wireless sensor networks and embedded iot devices, it is better off without hal.
+because of this, device drivers and applications communicate directly with the hardware.
+based on a modular kernel approach, contiki has the ability to load and unload models at run time.
+this allows contiki to load only the necessary services, consequently allowing it to have a reduced kernel size.
+almost all abstractions are implemented as libraries and services, except for cpu multiplexing, which is the only obstruction provided by the core system.
+the implementation is almost similar to a scheduler of microkernel.
+looking at this implementation, contiki is developed in c language, and it's applications are also written in c. therefore, its is easy to develop application, reprogram, and replace services.
+last but not least, contiki is easily portable.
+this implies that it possible to run it on various microcontroller architectures such as the cc2538, cc2650, sensortek, admilabr, and the msp430, and so on.
+it is easy to add support for new microcontrollers using the built-in libraries and existing contiki platform.
+for example, a programmer can easily port contiki to their own board by creating configuration files for the specific microcontroller and edit existing general configuration files of contiki.
+however, it is rare for a programmer to add a new microcontroller to the contiki platform.
+as contiki supports all popular micro controllers and embedded devices.
+this is all for the lesson about contiki, a hybrid system.
+i hope that you got the important features of contiki's kernel, and the hybrid model.
+we also discussed unique characteristics of contiki, and its kernel.
+i hope to see you in the next video, which will further explain many advanced features of contiki.

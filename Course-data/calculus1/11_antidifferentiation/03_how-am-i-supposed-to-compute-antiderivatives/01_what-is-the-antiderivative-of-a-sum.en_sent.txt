@@ -1,0 +1,21 @@
+[music] a long, long time ago we started writing down rules for differentiating.
+we have rules for antidifferentiating as well.
+suppose big f is an antiderivative of little f, and big g is an antiderivative of little g?
+by which i mean that if i were to differentiate big f i'd get little f. and if i were to differentiate big g i'd get little g. now, can i find an antiderivative for the function f plus g?
+specifically let's define a new function i'll call little h and little h of x will be little f of x plus little g of x, right?
+so the function of little h is the sum of f and g. now the claim, is that this other function that i'll call big h, which is the sum of big f and big g. my claim is that this big h is an antiderivative for little h. by which i mean that if i differentiate big h i get little h and that's true, right?
+because if i differentiate big f, i get little f and if i differentiate big g, i get little g. and the derivative of a sum is the sum of the derivatives so the antiderivative of a sum is the sum of the antiderivatives.
+it's better for me to say that an antiderivative for the sum, is the sum of antiderivatives.
+yeah.
+but i want to write this down as a general principle.
+and before i can really write down that general principle, i'm going to introduce a little bit of notation.
+so suppose big f is an antiderivative of little f, that means any other antiderivative of little f can be written like this, big f of x plus c. now, my notation for writing down the antiderivative of little f is this, is exactly this notation here, this long curvy s. so i'll write this, the antiderivative of f with respect to x is big f of x plus c. with this notation in hand this long s for denoting, the antiderivative.
+now we can actually start to write down the rules for antiderivatives, i in particular, i can write down the general principle for anti differentiating a sum.
+now suppose then that the antiderivative of little f is big f of x plus c and the antiderivative of little g is big g plus c. then what's an antiderivative of little f plus little g?
+well, we already saw this right?
+if i add together big f and big g that's an antiderivative for little f plus little g. so i could write down that the general antiderivative of f plus g, is big f, plus big g, plus c. or, i could write down this same, concept this way, that the antiderivative of f plus g, is the antiderivative of f plus the antiderivative of g. and this is really nice, right.
+these are the some kinds of formulas that we've seen for derivatives right.
+the derivative of the sum is the sum of the derivatives.
+and as a result, the antiderivative of a sum.
+is the sum of antiderivatives.
+so the antiderivative of a sum is the sum of the antiderivatives and this is the first of many antidifferentiation rules that we'll be learning.

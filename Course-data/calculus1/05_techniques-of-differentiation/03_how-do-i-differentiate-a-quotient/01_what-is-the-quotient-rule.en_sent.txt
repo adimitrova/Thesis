@@ -1,0 +1,35 @@
+[music] given what we've done so far we  can differentiate a bunch of functions.
+we can differentiate sums and differences  and products.
+but what about quotients.
+given a fraction i'd like to be able to  differentiate that fraction.
+i like to be able to differentiate a  really complicated looking function like  f(x)=2x+1/x^2+1, for instance.
+but we're stuck immediately because we  don't have anyways to differentiate  quotients, until now.
+here's the the quotient rule so to state  this really precisely let's suppose i got  two functions f and g and then i define a  new function that i'm just going to call  h for now.
+h(x) is this quotient f(x) over g(x).
+now i also want to make sure that the  denominator isn't 0 at the point a so it  makes sense to evaluate this function at  the point a.  and i want ot assume that f and g are  differential at the point a.  and i'm trying to understand how h  changes so i'm going to need to know how  f and g change when the input wiggles a  bit.
+alright so given all this set up, then i  can tell you what the derivative of the  quotient is, the derivative of the  quotient at a is the denominator at a  times the derivative of the numerator at  a.  minus the numerator at a times the  derivative of the denominator at a, all  divided by the denominator at a^2.
+let's use the quotient rule to  differentiate the function that we saw  earlier.
+so, the function we were thinking about  is f(x)=2x+1/ x^2+1.
+i want to calculate the derivative of  that, with respect to x.  now the derivative of this quotient is  given to us by the quotient rule.
+it's just the denominator times the  derivative of the numerator minus the  numerator times the derivative of the  denominator.
+that's all divided by the denominator  squared.
+now, i've calculated the derivative of  this quotient in terms of the derivatives  of the numerator and denominator.
+so we can simplify this further,  x^2+1 times the derivative of this sum is  the sum of the derivatives.
+it's the derivative of 2x + the  derivative of 1-2x+1 times at again, the  derivative of a sum, so the derivative of  x^2, with respect to x plus the  derivative of 1.  and it's all divided by the denominator,  the original denominator squared.
+i can keep going,  i've got x^2+1 times what's the  derivative of 2x?
+it's just 2.  what's the derivative of this constant?
+zero, minus 2x+1 times, what's the  derivative of x^2?
+it's 2x,  and what's the derivative of 1?
+it's the  derivative of a constant zero, all  divided by x^2+1^2.
+so, this is the derivative of the  original function we're considering,  there's no more differentiation to be  done and we did it using the quotient  rule.
+we've done a ton of work on  differentiation so far, we differentiate  sums, differences, products, now  quotients.
+what sorts of functions can we  differentiate using all of these rules?
+well, here's one big collection.
+if you've got a polynomial divided by  polynomial, these things are called  rational functions.
+sort of an analogy with rational numbers  which are integers over integers.
+a polynomial over a polynomial is by  analogy, being called a rational  function.
+now, since this is just a quotient of two  things you can differentiate, you can  differentiate these rational functions.
+this is a huge class of functions that  you can now differentiate.
+[music] i encourage you to practice with  the quotient rule.
+with some practice, you'll be able to  differentiate any rational function that  we can throw at you.
+[music]  [music]

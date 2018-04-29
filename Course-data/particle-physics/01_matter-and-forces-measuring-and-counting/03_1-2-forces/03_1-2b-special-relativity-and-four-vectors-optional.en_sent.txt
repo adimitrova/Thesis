@@ -1,0 +1,47 @@
+[music] in this short video, we will remind you of special relativity and the notation of four-vectors which are essential tools to work with in high energy physics.
+this course will treat phenomena at high energy, so at a velocity which requires a relativistic treatment.
+the fundamental principles of special relativity which have been based on experimental findings are that the speed of light c is constant at the same value in every inertial frame.
+it means that the galilean way of adding velocity is not valid at high speeds.
+this way, the speed of light is a maximum velocity which cannot be exceeded in any frame.
+motion is described in a  four-dimensional space, called space-time.
+an event in space-time is localized by the carthesian coordinates ct, where t is the time, and x, where x is the position.
+and this is described by a four-vector x_âµ.
+the metric of space time is defined by the speed of light c, invariant constant in every inertial frame.
+so suppose that a light ray connects two events.
+(ct_1,x_1) and (ct_2,x2).
+the distance between these two points in space is always proportional to the propagation time of the light.
+since the proportionality constant, the speed of light, is the same in every inertial frame, it follows that the norm s of a four-vector is also constant.
+lorentz transformations describe the rotations and translations in space-time which are compatible with these principles.
+let us specify lorentz transformation by a simple example.
+let s and sâ be two reference frames.
+the first one is at rest in the laboratory.
+the second one moves relative to the first one at a constant velocity v in the direction of the x axis, which are parallel for the two frames.
+which are the coordinates of one point in the moving system, so tâ and xâ, expressed in the coordinates of the laboratory frame, t and x?
+the answer is given by the lorentz transformation which relates tâ and xâ to t and x, by the relative velocity, beta, which is the ratio between the velocity v and the speed of light c, and the relativistic factor gamma.
+the transformation corresponds to a rotation in space-time which leaves the norm of four-vectors like x_âµ invariant.
+the transformation involves only the time coordinate t and the spatial coordinate x along the  direction of motion.
+the coordinates orthogonal to the motion, y and z, are left untouched.
+in the non-relativistic limit that is beta << 1 and gamma, which approaches 1, the lorentz transformation reproduces the galilean transformation where tâ is equal simply to t, and xâ is simply equal to x - vt. four-vector notation unites time and space coordinates in a single vector.
+four-vectors transforming like the four-vector x^âµ of space-time under lorentz transformations are called the contravariant.
+an important example is the contravariant energy-momentum vector p^âµ.
+the norm of a four-vector is defined via the scalar product between the contravariant four-vector and its covariant form.
+the two are related by the metric tensor g_âµnu, as shown here.
+all scalar products between four-vectors are invariant under lorentz transformations.
+more generally, the scalar product is thus defined as the product between a covariant and a contravariant four-vector.
+when the same greek index shows up in the two, implicit summation over this index, which runs from zero to three, is assumed.
+the first example here repeats the norm squared of the space-time four-vector.
+the second example shows the norm of the energy-momentum four-vector, which is the square of the invariant mass.
+the third example  is a scalar product between the  space-time and the energy-momentum four-vectors, which shows up in the wave function of particles.
+the scalar products between four-vectors are all indeed scalars under lorentz transformation so are invariant, when one changes from one inertial frame to another.
+the notation simplifies if we adopt the system of natural units, since the ubiquitous speed of light c disappears.
+two other important examples of four-vectors are the four-vector of electromagnetic current density, j^âµ, which has the charge density  rho as the time-like component, and the vector current density j as the space-like component.
+the four-vector of the electromagnetic potential a^âµ, which has the electric potential v as a time-like component and the magnetic vector-potential a as the space-like component.
+as an example, we calculate here the total available energy in the collision of a 200 gev electron with a proton at rest in the laboratory frame.
+and we confront the results with a collision in the center of mass frame, where a 200 gev electron collides with a 200 gev proton.
+>> as an example we calculate the kinematics of a two body process in the laboratory and the center of mass frame.
+in the laboratory frame a particle of mass m impacts on a particle of mass m at rest.
+we calculate the total energy- momentum vector in this frame as well as the square of its length, s. when one neglects all masses in the system one obtains that the maximum invariant mass which can be produced is equal to square root of 2em.
+in our numerical example this corresponds to 14gev.
+in the center of mass frame on the contrary the two particles impact on each other with equal and opposite momenta.
+the same calculation leads us to an invariant mass which can be produced, which is two times the energy of either particle or 200 gev in our example.
+[music]

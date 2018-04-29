@@ -1,0 +1,17 @@
+[sound] [music] hi, and welcome to week  four, of creative programming for digital  media and mobile applications.
+i'm mick, and this is marco and matt.
+today we're going to be looking at making  a basic game.
+but we're going to focus on a certain  type of game.
+a physics-based game that you can run on  a mobile device.
+these are really, really popular casual  games, and they're, i think for two  reasons.
+firstly because it's nice to be able to  run something which uses physics on your  phone.
+but in addition to that, it's something  which has got us a dynamic game play.
+so, when you use physics in a game, you  can never be quite sure what's going to  happen and it, very, very small changes  in the way that you use the game can have  a big effect on your game world.
+so this is the first time we've done a  game, and it's going to, i think, take a  step up in the intensity.
+in the, complexity of some of the  programming that we're doing.
+mark has got a big chunk of stuff to tell  you about physics.
+he's built his own physics engine, which,  integrates java and javascript in a  really neat way, and works entirely in  processing.
+and then, matt's going to use that to do  some interesting stuff triggering sound  effects and actually generating and  triggering that sound effects entirely  based on collisions that happen in the  game world.
+so there is a lot of interesting stuff  this week, there is also a little demo of  an app that we have built for you called,  angry droids, which i can tell you has  absolutely nothing to do with any other  2d physics based games that you might of  played.
+fine so without further ado, i think  we're going to start with marco.
+[music]

@@ -1,0 +1,48 @@
+[music] there are some properties of the integral that are worth summarizing.
+for example, here's a property of integration that's often useful.
+if i want to integrate from a to b, right?
+that's what this last integral is.
+and it's the area under the graph between a and b. it's this whole region here that i've colored in.
+but i could split that up into two separate integrals, right?
+i could integrate from a to c at this first red integral, and then i could integrate from c to b, that's the second blue interval.
+and if i add together those two areas, i get the total area from a to b, right?
+and that geometric fact is exactly what's written down here, with symbols using our fancy integration notation.
+there's also a constant multiple rule.
+well, here's the constant multiple rule.
+for some constant k, the integral from a to b of that constant times a function is that constant times the integral of that function.
+and this also makes sense geometrically.
+here's two pictures.
+here's the graph of y equals f of x. here's the graph of y equals k times f of x. this thing here calculates this area, the area under the graph of k times f of x. and it's k times just the area under the graph of f of x. and it makes sense.
+because if you take this graph and your stretch it k times, that multiplies the area by a factor of k. what about the intergral of a sum?
+well, the integral of f of x plus g of x from a to b, right?
+that's this total area here.
+it's related to the area under the graph of f and the area under the graph of g, right?
+it's related to these integrals.
+here, in green, i've sort of demonstrated what the area under the graph of f of x looks like with a specific riemann sum.
+and in here, in red, i've drawn some rectangles for the riemann sum of g. but they're, you know, sort of shifted up a bit.
+because this curve here is the graph of y equals f of xx plus g of x. so, the heights of these rectangles are actually what i would get if i were to just integrate g of x, right?
+the distance between f of x plus g of x, and f of x is exactly g of x here in red.
+so, this is kind of a proof by stacking, if you like, that the integral of f plus g is the integral of f plus the integral of g. a lot of these rules have analogs for the sigma notation stuff.
+we had this rule that said i could have pasted together integrals.
+and there's a corresponding rule for sum that says, if i sum f of the numbers between 1 and m, and then f of the numbers between m plus 1 and k, that's the same as applying f to all the numbers between 1 and k and adding that up, right?
+so, this same kinds of rules, i mean, there's an analogy there.
+same kind of game here, right?
+i've got this constant multiple rule for integrals and i've got a corresponding constant multiple rule for sums.
+of course, this constant multiple rule is just called distributivity, right?
+if i add up k times something, that's k times the sum of these things.
+but, it's the same kind of rule, right?
+i had this formula that said the integral of the sum is the sum of the integrals.
+we've got the same kind of formula for a sum, right?
+if i take a sum of f of n plus g of n, that's the same as adding up f of n for all the numbers between a and b. and then, adding to that g of n for all the numbers between a and b. and we're also seeing some similarities to the rules for derivatives.
+i've got the constant multiple rule for integrals.
+i've got a constant multiple rule for sums and i've got a constant multiple rule for derivatives.
+the derivative of a constant times some functions that constant times the derivative of the function.
+same kind of deals for sums, right?
+i've got this sum of the integrals is the integral of the sum.
+i've got this sum of a sum is the sum of the sums.
+and i've got the derivative of a sum is the sum of derivatives.
+fundamentally, mathematics is not just about these rules, right?
+it's about the relationships between all of these rules.
+we're seeing various objects now, integrals, derivatives, the sigma notation.
+and they're all sharing some common rules, right?
+and working out those relationships is really part of the fun.

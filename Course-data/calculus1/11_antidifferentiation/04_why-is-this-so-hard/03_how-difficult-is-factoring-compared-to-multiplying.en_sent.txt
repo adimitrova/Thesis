@@ -1,0 +1,53 @@
+[music] here is an ancient saying, it is easier to destroy than to create.
+through mathematical instances of this too like multiplying as compared to antimultiplying.
+what is antimultiplying?
+normal people wouldn't talk about antimultiplying.
+they'd talk about factoring.
+here's an example.
+suppose somebody gives you a number like 247 to antimultiply that number, which is just my crazy way of saying factoring this number.
+means i want to write this as something times something else.
+and yeah, you can sort of play around with this and try diving this by various numbers, and you'll eventually hit on 247 being 13 times 19. well, that seemed to have come out of nowhere.
+how did i figure that out?
+well, basically i just have to keep trying to divide, right?
+so to figure this out, maybe i'd first see is 247 divisible by 3?
+well, 3 goes into 247 82 times, but there's a remainder of 1. so 82 time three isn't 247, i've got that pesky remainder.
+maybe i'll try five, does five go into 247?
+well clearly not, because the last digit's not a zero or a five, right?
+how many times does five go into this thing?
+i guess 49 times, and i get 245 and that gives me a remainder of 2. does seven go into 247?
+that's a lot harder to see if 7 divides this number.
+7 goes into this thing 35 times but 35 times 7 is 245 so again there's a remainder of 2. does 11 go into this thing?
+does 11 go into 247?
+it goes in there 22 times, but 22 times 11 is 242. which again leaves me with a remainder, in this case a remainder of 5. and finally, i get to 13. does 13 go into 247?
+yes, 13 goes into this thing 19 times, right?
+and that's exactly what i'm looking for.
+but the easy way here to antimultiply, or to factor, is just to try a bunch of stuff.
+and hopefully, you'll land on a product of numbers that multiplies to your given number.
+why is factoring so difficult?
+yeah, so what we just saw is that it was hard to factor 247. it's hard to write this number as a product of two other numbers.
+but if somebody comes up to you and asks you to check that 19 x 13 is equal to 247, well that's super easy, right?
+i can do this multiplication problem, right?
+9 times 3 is 27, 3 times 1 plus 2, 1 times 19, right, and i add.
+and yeah, i mean, i get 247, right?
+so it's easy to verify if i'm told the answer that these numbers multiply to 247. but it took some guessing, really, to figure out that 247 factored in this way.
+well this is an example where undoing an operation is much harder than just performing that operation.
+all right, here's a piece of paper.
+it's very easy for me to rip the piece of paper.
+it's harder for me to unrip the piece of paper.
+and honestly, 247's not even that bad.
+take a look at this number, 311,512,699. it turns out right that this number is the product of two other whole numbers.
+it turns out this is 17,551 times 17,749, but how would you ever have known that?
+it would have been a real pain to do a bunch of tests to see which numbers divide this number.
+and since these two numbers are prime, there's no other smaller numbers that go into this number evenly.
+so it would have been a ton of work.
+and yet, if somebody tells you, do these two numbers multiplied to this, that is easy to verify, because you can just multiply these two numbers and check that they really give you this number.
+but undoing that multiplication, starting with this number and trying to find these two numbers, would really be a pain.
+now, in that situation, a computer could just search for the factorization.
+but what if i gave you a number that was much, much bigger?
+well, here's a 240 digit number that i've cooked up.
+i got this number by taking two prime numbers and multiplying them together.
+probably i'm the only person on earth who knows the factorization of that number.
+i got that number by taking two big prime numbers and multiplying them together, but nobody else but me knows what those prime numbers are.
+for someone else to come along and find those two factors would be really difficult.
+the cool consequence is that if i were to reveal to you the factorization of that large number, well that would be evidence that i'm really who i say i am.
+because who else in the world knows the factorization of that enormous number.

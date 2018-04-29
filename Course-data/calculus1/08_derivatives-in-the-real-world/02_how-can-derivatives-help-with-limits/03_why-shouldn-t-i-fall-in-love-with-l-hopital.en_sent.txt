@@ -1,0 +1,101 @@
+[music] people often have this idea that  l'hopital's rule is really great.
+i'm going to tell you why you shouldn't  fall in love with l'hopital's rule.
+for one thing, l'hopital's rule often  leads to circular reasoning.
+let's go to the blackboard and take a  look.
+for example,  here's a problem that you might be  tempted to use l'hopital on.
+you know, in a limit as x approaches zero  of sine x over x.  now, what do you have to check?
+well, let's take a look at the limit of  the numerator by itself.
+the limit of sine x as x approaches zero,  sine is continuous so that limit is just  sine of zero, which is zero.
+numerator's limit is zero.
+limit of our denominator?
+the limit of x as x approaches zero is  zero.
+so, yeah.
+this is a zero over zero indeterminate  form.
+so, we have tried using l'hopital.
+l'hopital tells us that this limit is  equal to the limit as x approaches zero  of the derivative of the numerator, which  is cosine x over the derivative of the  denominator, which is one.
+now, this limit is quite a bit easier to  do, right?
+this is really just the limit of cosin x  as x approaches zero.
+cosine is continuous so this is just the  value of cosine at zero, which is one.
+and yeah,  i mean, the limit of sine x over x as x  it approaches zero,  it is, in fact, one.
+this looks good,  alright?
+the, the question though is how did you  know that the derivative of sine x was  cosine x?
+you needed to know that in order to apply  l'hopital.
+how did you know the derivative of sine x  was cosine x?
+well, let's think back.
+right.
+so, how did i know that the derivative of  sine x was cosine x?
+well, taking a derivative is the same  thing as a limit of a difference  quotient.
+so, to calculate, say, the derivative of  sine at zero, i take a limit like this.
+the limit if h goes to zero of sine 0 + h  - sine 0 / h.  sine of zero is just zero.
+so, calculating this limit, which is  calculating the derivative of sine at 0,  is really the same as calculating the  limit as h goes to zero,  sine 0 + h, that's just sign h - 0 / h.  now, what just happened?
+i wanted to calculate the derivative of  sine at zero, and to calculate the  derivative of sine at zero, is really the  same as calculating the limit at h goes  to zero of sine h over h.  it's the definition of derivative.
+and i was going to use this to evaluate  the limit of sine x over x using  l'hopital,  right?
+l'hopital doesn't just reduce a  limit problem down to another limit  problem.
+it reduces a limit problem down to a  limit problem and two derivative  problems,  right?
+to, to do l'hopital, you have to be able  to differentiate the numerator and  denominator.
+so, if you're going to use l'hopital to  evaluate sine x over x as x goes to zero,  you're going to have to differentiate  sine x.  but then, to differentiate sin x at zero,  which is what you're trying to do, to, to  use l'hopital, you have to be able to  evaluate this limit, the limit of sine h  over h.  you have to be able to do the limit  you're trying to do already.
+it's just circular reasoning.
+so, what just happened?
+i was trying to calculate the limit of  sine x over x as x approaches zero.
+i used l'hopital.
+l'hopita told me to differentiate sine x.  but then, to differentiate sine x, i  would've needed to be able to evaluate  the limit of sine h over h as h goes to  zero, the exact problem i'm trying to  solve.
+it's an example of circular reasoning.
+there's other things that can go wrong  with l'hopital.
+one of the conditions of l'hopital is  that the limit of the ratio of the  derivatives has to exist.
+let's see an example where that fails to  happen.
+here's an example.
+let's take a look at the limit of x plus  sine x over x as x approaches infinity.
+try to use l'hopital.
+so, i want to look at the limit of the  numerator by itself.
+the limit of x plus sine x as x  approaches infinity is infinity.
+the limit of the denominator by itself,  the limit of x as x approaches infinity,  also infinity.
+this is an infinity over infinity  indeterminate form.
+it seems good.
+now, l'hopital's tells me that to  calculate this, i should look at the  limit as x approaches infinity.
+the derivative of the numerator, which is  one plus cosine x over the derivative of  the denominator, which is one.
+now, what's the limit of one plus cosine  x as x approaches infinity?
+well, the limit of one is just one.
+but what's the limit of cosine x as x  approaches infinity,  right?
+cosine just oscillates between -1 and 1.  this limit doesn't exist.
+this limit doesn't exist.
+now, does that mean that this limit  doesn't exist?
+i, i, i wrote equals here, but remember,  i'm using l'hopital's rule,  alright.
+and what does l'hopital's rule actually  say?
+it says, that this limit is equal to the  limit of the derivative over the  derivative, provided this limit exists.
+and this limit doesn't exist in this  case.
+so, l'hopital is silent as to the value  of this limit.
+let's see if we can actually compute that  limit some other way.
+alright.
+so, let's try to do this limit some other  way.
+we're going to do the limit of x plus  sine over x as x goes to infinity without  using l'hopital.
+this is a limit of fraction, we could  split up the fraction as a limit as x  goes to infinity of x over x plus sine x  over x.  now, that's a limit of a sum, which is  the sum of the limits provided the limits  exist.
+so, this is the limit as x goes to  infinity of x over x plus the limit as x  goes to infinity of sine x over x.  now, what's the limit x over x as x goes  to infinity?
+just one.
+what's the limit of sine x over x as x  goes to infinity?
+well, sine x is always between -1 and 1.  and x here is going to infinity.
+i can make x as big as i like.
+so, question is can i make this as close  to zero as i like?
+yeah.
+by making x large enough, a number  between -1 and 1 / x can be made as close  to zero as i like.
+so, this limit is zero.
+[sound] so, the sum of the limits is one  [sound] and that's the limit of the sum.
+that's the limit of x plus sine x over x.  it's one as x goes to infinity.
+and this is true in spite of the fact  that l'hopital failed us, right?
+when we did l'hopital's in this problem,  i was told to differentiate the  numerator, divided it by the derivative  of the denominator as x goes to infinity,  and that derivative didn't exist.
+it was oscillating between zero and two.
+and in that case, l'hopital is just  silent.
+l'hopital requires that limit of the  ratio of the derivatives to exist, and if  it doesn't exist, l'hopital doesn't say  anything.
+this limit does exist and then to see  that requires some, some algebraic  computation.
+so, we manage to evaluate that limit.
+the limit was one, but no thanks to  l'hopital.
+the limit of the ratio of the derivatives  didn't exist,  it was oscillating.
+we evaluated that limit by algebraic  manipulation.
+and don't get me wrong.
+l'hopital is awfully powerful.
+there's plenty of situations where you  want to use l'hopital.
+but often, you can  get away with just doing some algebraic  manipulation.
+so, i encourage you, when you're doing  those limit problems,  don't forget that you can just  algebraically manipulate things.
+there might be an easier way than  bringing out l'hopital.
+only use l'hopital if you absolutely have  to use l'hopital.
+in other words, don't fall in love with  l'hopital.
+[music]

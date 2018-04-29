@@ -1,0 +1,78 @@
+[sound] hello, welcome back to the online course on web connectivity and security in cyber physical systems.
+this lesson starts a module on a cryptographic solutions for cyber physical systems.
+it is the last module of the course.
+in this video lecture, we will look into basic concepts and techniques of cryptography.
+cryptography is a scientific and engineering field which develops and analyzes mathematical techniques for so many different information, security, and privacy issues such as confidentiality, data integrity, entity authentication and data origin authentication.
+cryptography has a long and fascinating history.
+egyptians used some kind of encryption in their messages about 4,000 years ago.
+in the 20th century, during the world war i and ii, cryptography was used to protect sensitive war related information.
+even though the usage of modern cryptography originally focus on military applications, today it's widely use for protecting our digital information in general, everywhere.
+this development began in 1960's and has been boosted by the proliferation of computers and communication systems during the last decades.
+the main goal of cryptography is to hide and protect sensitive information which is called a plaintext, from the adversaries or attackers.
+you can imagine that you protect your belongings inside a suitcase with a padlock.
+the idea is that one needs the key of the padlock to get the stuff out of the suitcase.
+the cyber system essentially works in the same way.
+the plain text, is encrypted, using a cryptographic algorithm, which corresponds to the padlock.
+the algorithm takes the plain text and encryption key as input, and as a result, a cipher text is generated.
+the cipher text is a new form or combination of the plain text.
+it is not readable by a human or a computer without decrypting it.
+and therefore, the cipher text can be safely sent to another party.
+on the receiver side, if the receiver has the right decryption key, he or she will be able to decrypt the cipher text to discover the original message.
+the secrecy of a cipher system is highly dependent on the secrecy of the key.
+so, the exchange of the decryption key should be done in a very secured way.
+from the attackers perspective, the main challenge is to determine the plain text from a cypher text without knowing the key.
+the decryption key does not have to always be the same as the encryption key.
+there are two types of cipher systems, a symmetric key cipher system and an asymmetric key or public key cipher system.
+in a symmetric key cipher system, the decryption key is identical to the encryption key.
+or can be easily obtained from the encryption key.
+in this case, there is a need for a secure channel for key exchange.
+in an asymmetric key or public key cypher system, the encryption key is not the same as the decryption key.
+it is computation or in principle and practical to obtain the decryption key from the encryption key.
+in this case theirs a pair of different keys, one for encryption and the other for decryption.
+the encryption key is publicly available, so everyone who has the public key can encrypt the message.
+the decryption key is secret and is referred to as the private key.
+so only the one who has the private key can decrypt the message.
+establishing a public key cipher system is computationally more complex and requires more resources than symmetric encryption.
+therefore, it is usually used for shorter messages.
+in practice, a public key system is used for encrypting and transferring the encryption key of a symmetric key system.
+symmetric ciphers are far further divided into stream ciphers and block ciphers.
+in a stream cipher, the plaintext is encrypted bit by bit or byte by byte.
+for simplicity, we call this unit of encryption a digit.
+so instead of one single key, the stream cipher requires a stream of keys to encrypt every digit.
+in this model, the cipher text stream is calculated as an exclusive or a modular to addition of every digit in the plaintext stream with the corresponding digit in the key stream.
+the same key stream is then used for decryption on the receiver side in the similar manner.
+the key streams are generated as random or pseudo-random digits.
+so, the security of a stream cipher is highly dependent on the key stream generation process.
+stream ciphers are small and fast, and that's why they are suitable for embedded resource constrain devices.
+in contrast to a stream cipher, a block cipher uses a single key to encrypt fixed size block of plain text at a time.
+blocks of cipher text are produced as the result.
+block ciphers are mostly used for encrypting large data.
+the most of the well-known and widely used symmetric ciphers are block ciphers.
+these include, for example, the data encryption standard, or des, triple tests and the more recent advanced encryption standard or aes.
+block ciphers are first as components in designing many cryptographic protocols.
+the block ciphers can be implemented in different modes of operation, offering different levels of protection and performance.
+common examples are the cipher feedback mode or cfb, the cipher block chaining mode or cbc, and the electronic code block mode, ecb.
+we are not going to cover this mode in this course.
+however, you can read more about them on the internet if you are interested.
+breaking a cryptographic system involves finding the plain text without the decryption key.
+the attack models of a cyber system depend on the amount of information that is available for the attacker.
+based on this the main attack models are classified four categories.
+it is always assumed that the encryption algorithm is known by the attacker.
+in a ciphertext-only attack, the attacker has access only to the encrypted content.
+in a known-plaintext attack, the attacker has access to some plain text ciphertext pairs which correspond to each other.
+in a chosen plaintext attack, the attacker has access to the encryption process and is able to generate the corresponding cipher text for a chosen plaintext.
+in a chosen ciphertext attack, the attacker has access to the decryption process and is able to generate the corresponding plaintext for a chosen cipher text.
+in all of these attack models, the ultimate goal is to find out the secret key.
+in addition to the mentioned attack models, if there is no such information available, the attacker has to try all possible combinations of keys until the correct one is found.
+this kind of attack is known as an exhaustive key search attack or a brute force attack.
+the cipher system can not be considered perfect if the exhaustive search is the only way to find the key.
+when designing cryptographic algorithms, the time that a message needs to be in the encrypted form should be taken into account.
+this period is called a cover period.
+for example, in a banks transaction a message needs to be in the encrypted form for a few seconds until it reaches the receiver side.
+while in a database, a file needs to be kept in a encrypted form for a longer period of time.
+the design of a cyber system should always ensure that any type of attack to successfully find the key, would take longer time than the given cover period.
+in this lesson we learned about basic concepts of cryptography.
+we also got familiar with different types of encryption algorithms, and more specifically, we learned about symmetric key cipher systems.
+in other video lectures, we will learn more about public key cryptography.
+and its usage for securing digital communication.
+[music]

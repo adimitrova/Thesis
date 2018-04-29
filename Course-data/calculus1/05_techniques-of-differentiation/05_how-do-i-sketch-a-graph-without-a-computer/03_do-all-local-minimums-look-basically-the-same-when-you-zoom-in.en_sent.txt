@@ -1,0 +1,41 @@
+[music] people have the idea that a local  minimum means the function decreases and  then increases.
+here's a local minimum on the graph of  this random function.
+and the misconception is that they all  look like this.
+that every time you got a local minimum  on one side, the function's decreasing,  and on the other side the function's  increasing.
+plenty of local minima do look exactly  like that.
+but, there's also plenty of  pathological examples.
+for instance, consider this a somewhat  pathological example.
+i'm going to define this function f as a  piecewise function.
+if the input's nonzero, i'm going to do  this.
+1+sin(1/x), which makes sense since  x isn't zero, time x^2.
+and if the input is zero, the function's  output will also be zero.
+in this case, there's a local minimum at  zero.
+how do i know?
+well, here's how i know.
+let's take a look at this function the  claim is that f(x) is never negative.
+how do i know that?
+well, what do i know  about sine?
+sine of absolutely anything  at all, no matter what i take this sine  of, is between -1 and 1.  now, if i add 1 to this, 1 plus sine of  absolutely anything at all,  is between zero and two.
+now, that's pretty good.
+now, think back to the definition of this  function.
+here, i've got 1 plus sine of something,  it doesn't matter what,  alright?
+1 plus sine of anything,  this is between zero and two.
+now,  i'm multiplying it by x^2.
+what do i know about x^2?
+well, x^2 is  not negative.
+it could be zero, it could be positive.
+but no matter what x is, x^2 is not  negative.
+now, i'm multiplying 1+sin(1/x), this  number which is trapped between zero and  to, by x^2 which is never negative.
+and  that means f(x) is not negative as long  as x isn't equal to zero,  alright?
+as long as x isn't equal to zero.
+i mean,  this first case and this is a  non-negative number times a non-negative  number, so the product is also  non-negative.
+now, the other possibility, of course, is  that i plug in zero for x.  but then, f(0) is just by definition  zero.
+and that means in either case, no matter  that i plug in for x, f(x) is never a  negative.
+now if f(x) is never negative and f(0)=0,  then i know that this must be the  smallest possible output value for the  function.
+the only numbers that are smaller than  zero are negative numbers, and the output  of this function is never negative.
+but  this isn't the usual sort of local  minimum where the function just decreases  and then increases.
+well, here's the graph for our funciton  f.  and, there is a local minimum at zero,  but if i start zooming in, no matter how  much i zoom in, there's no little region  on which the graph is just decreasing and  then increasing.
+the graph is always wiggling.
+the upshot here is that decreasing and  then increasing is one way to produce a  local minimum, but it's not the  definition of a local minimum.
+and not every local minimum arises in  that exact way.
+what a local minimum means is just that  no nearby output value is smaller than  that local minimum value.

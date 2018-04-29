@@ -1,0 +1,15 @@
+[music] we will calculate with classical arguments  ã  la rutherford the cross section of a small nucleus of charge z scattering of a heavy nucleus of charge z. the basis of this calculation, is the relationship between the differential cross-section and the dependence of the impact parameter b on the scattering angle theta.
+first we use the fact that the kinetic energy is conserved, and that, as there is no recoil of the target, the initial and the final projectile velocities are the same.
+in the same way, the angular momentum will be conserved, which tells us that mvb is a constant.
+this means that dgamma/dt can be expressed in terms of the initial velocity of the projecile, the impact parameter and the distance squared between projectile and target.
+this serves to express the coulomb force, which is just the product of the two charges divided by 4 pi r^2, times the unit vector which connects the projectile and the target, in terms of what we know that is to say, the projectile velocity and the impact parameter.
+when we integrate this relationship between gamma = 0 and gamma = pi-theta, one side is the vector difference between the final and initial velocities.
+the other side is the integral over the relationship we just obtained.
+with a little trigonometry, we get â rather painfully â the value of this integral.
+in particular, we obtain that the integral of the unit vector between the initial and final states, is = 2 cos(theta/2).
+on the other hand, simple trigonometry gives us a relationship between the length of the vector difference between final and initial velocity and the scattering angle, which turns out to be 2 v sin/theta/2).
+the two relationships together finally give us the relationship between impact parameter and the scattering angle we have been looking for.
+we then insert this result into our formula for the differential cross section.
+after some simplification, we finally obtain the rutherford formula for the differential cross section of the process.
+it tells us that there is a very steep angular dependent, inversely proportional to sin^4(theta/2).
+[sound]

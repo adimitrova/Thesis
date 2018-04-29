@@ -1,0 +1,83 @@
+last topic of this week is, fur display.
+and the work we present here is titled, graffiti fur, turning your carpet into computer display.
+so, in special reason here, if you have a carpet or fur, using your finger you trace a line.
+so, this is our inspiration and we take this.
+the phenomenon on the display device.
+so let me show you a video.
+oh yeah, here is the inspiration.
+you can trace a line in a fur with your finger, and you can quickly erase it.
+and then we developed a computational devices to do this.
+so, what is a roller type device?
+so this one consist of lots of servomotors, moving, driving the rod, to raise the fur.
+so, as the roller device roll along the surface, then it rotates.
+on the rotary encoder it takes a rotation, and then moves pins up and down.
+so if these rods or pins are down, it raise [inaudible].
+so as you drag it moves down, up and down and then leaves a pattern and then you can create a pattern using pixel painting or.
+combines them from your photograph and others.
+and so, in order to paint with multiple nodes, then we provide a mark, tick mark here so you can easily align multiple traces using this tick mark.
+and here is an example of drawing a large pattern, on large carpet.
+so, the user prepares a bitmap image before hand, and then it's data to like this handheld device.
+so this is an interesting example of cooperative fabrication, of cooperative action with human and robot system.
+so user is also doing something but also robot also doing something together with the user.
+and another device we developed is the pen type device.
+so, this is a continuously rotating wheel.
+and this wheel, with rubber, the rubber wheel raises the fur.
+and the important thing is that, when you, you are using your finger, you can draw a line in one direction, but you cannot draw a line in the opposite direction.
+so this can be inconvenient, inconvenient if you draw arbitrary illustrations.
+but here, the fan tip is always raising the fur.
+so this we implemented orientation sensor inside of a pen.
+so, regardless of your pen orientation, the system automatically rotates the pen tip so that it can continuously raises the fur.
+so as you see, as the pen is rotating, but the pen tip stays the same orientation, as is.
+so, in whichever direction you move, you can always traces line, leaves a line.
+which is difficult with finger.
+so you can draw arbitrarily pattern using this pen device.
+you can also fix the pattern by spraying this way, and then you get more robust shape.
+so here's couple of examples, carpet drawing.
+playing along, a message.
+yeah, that's easy.
+so let me briefly describe what's going on.
+kind of obvious, but so, in the flattened fur, the lighting comes in and then, reflected by the fur surface.
+however, if the strands are raised, then incoming light does not be reflected a lot.
+so our raised and fattened furs, show different reflectance property, you know?
+and in gra, in graphics, this kind of reflective property is modeled as, the brdf, a bi-directional distribution function.
+so it defines the amount of lighting, depending on the incoming light orient direction, and outgoing light direction.
+so this is actual measurement from our fur, fur material.
+so you see blue dots representing the data from the flattened surface, and the red dots represent the raised surface.
+and if you like, take a look at this example, you know.
+the if light is coming from here, and then if you observe it from this direction, then, if it's a, on the flattened surface, it reflects a lot, so you say this bright.
+but in the raised fur, then light go inside over the fur, so you do not reflection, you do not see much reflection.
+so, i'll, in the result, these are see bright, bright pattern in the flattened si, region, and you see dark texture in the raised region.
+and then if you, light is, come from tro, front, then not so different viewed in this direction.
+but still see a contrast from, viewed from this direction.
+interesting happens here.
+so if the light is from this direction, so light is this direction.
+so if you view from here the same thing, a flattened surface looks bright.
+and a raised surface looks dark.
+up here if you.
+light is coming in from this direction and observed from the similar direction, then actually raised region looks brighter and the flat region looks darker.
+so there is a, a reverse result is observed.
+so, this is a example of a bi-directional distribution function, and this is often used in computer graphics to synthesize realistic images.
+and if you want to know more, this is a good example document describing the idea.
+so to learn more, is original who one is available as graffiti fur, turning your carpet into a computer display at siggraph 2014 e-tech, emerging technologies.
+and so this project is a good example of cooperative fabrication.
+the user does the main action, but the system, robotic system, also works together to take care of the details.
+and we got inspirate, inspiration from these two works.
+the y is positioned correcting tools for 2d digital fabrication.
+the user is moving along the cutting device.
+and then that system or robotic system adjusts the actual position of the blades so that you can get detailed shape using these hand-held cutting machines.
+and they also are otherwise 3d freehand digital sculpting.
+so the system using hand-held.
+a meeting device, and the user moving along.
+but, the position of this device is observed or tracked, and it will automatically turn on and turn off depending on the position.
+so the user just randomly moving the pen tip, but you eventually, you get very precise sculpture.
+so, also this graphic fire walk is also related to physical displays.
+so instead of using electronic standard displays.
+a couple of systems tries to you know, present information using physical materials.
+and there are many works, but interesting ones is a wooden mirror, so there's lots of wooden pieces with rotating devices, and then it reflects your face in front of the mirror.
+and also, we also presented a shader printer, so this one prints a pattern remotely on a closed surface.
+and the pattern stays after the printing.
+so this is kind of re-writable the re-writable display on the clothes material.
+so that's it and this week we discuss real world interaction.
+so user interface for, with computing systems that work in the real world.
+and we introduce command card interfaces, style by demonstration for teaching interactive rote behavior, and actuated puppet device for controlling character postures, and then robotic light system with painting interface.
+and also fur display so that is for this week.

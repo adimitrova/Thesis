@@ -1,0 +1,51 @@
+to start with, i was wondering if you could give me an overview of your project.
+and sort of the aims of the project, just in a couple sentences.
+>> yeah, sure.
+so the comparative agendas project, or cap for short, is actually a bit of a misnomer.
+in reality, the cap is a network of more than two dozen international projects on the national and sub-national level.
+all interested in measuring policy attention through public and governmental agendas.
+>> can you briefly describe how you organize your data, in relation to perhaps file naming conventions, versioning documentation, which obviously features quite heavily.
+metadata, etc.
+>> in terms of the overall project, in terms of bringing everything together and actually making it comparative, documentation plays a very important role.
+these include the sort of master code book that i talked about.
+sort of documents all the of the inter-relations between the projects.
+as in, if these are the things that are included in health care in mexico, for instance.
+what are the things that are included in health care in denmark, in terms of that there are some things, in terms of that's the broad policy area.
+but there are some issue that might only be covered in one country, some issues that might only be covered in another country.
+also includes the complete documentation which i have already mentioned in terms of the adnotated code books for each individual langauge that allows different language users not only to trace the entire process but they understand the data regardless of what language they are approaching things from and the sort of other just broad documents talking about the process of creating the master code book itself.
+and also, the process for any new projects that might be interested in joining the community as we're very sort of open community interested in other researchers that are looking to sort of expand what we're doing and whatever in a particular way.
+just as important as sort of those documentation materials is detailed metadata.
+for so many data sets, so many different languages, it's very important to keep track of what each individual data set measures in a particular way.
+oftentimes including more complete write up than you would traditionally think of with metadata.
+explaining, say, what is a law in the uk?
+what is a law in the united states?
+what is a law in another country?
+>> and one final question, i guess it's in relation to new researches coming onboard.
+do you have any advice in relation to organizing?
+documenting or storing data that will keep the new researcher on track in relation tp managing that content for their own purpose.
+>> yeah, absolutely.
+so as a researcher who, so i deal with quite a lot of different types of data sets, quite a lot of different data sets.
+in general with different data structures, partially because the data structures relate to different tools, different methods that i might use which means that while a data set might all be based off laws.
+there might be many different data structures of laws that i will look at.
+in relation to the particular statistical method that i used.
+in that sort of sense, both because what you might want to do with data and the fact that oftentimes with large data sets, the type of large data sets that a lot people are gathering now, you might envision a particular use for it.
+that particular use might be for example, you want to look at law production on a yearly level.
+i cross many different countries, and you decide to potentially just make a yearly data set, maybe throw away some sort of data, because it just becomes excessive in terms of when that individual law might have been actually put on the books in a particular way.
+i would advise researchers away from doing that, and advise them to keep.
+the sort of raw data, every bit of information that they did or were able to gather whenever they're building their data set, keep that, store that and be able to access that.
+you never know whenever you might want to actually sort of change that to a quarterly analysis or a monthly analysis.
+or you might want to look at there's a particular anomaly in some sort of way and you need to investigate that in more detail.
+so, i find it's generally best when you're working with data to work with the raw dataset and to transform that dataset into what you need for that particular project.
+oftentimes documenting some sort of way, whether that'd be documenting by hand using sort of the documentation for the statistical software that you're using to transform the data.
+such as r, mathlab or stata or other sort of software in whatever particular way.
+using their log files, using their new files or other things to be able to document everything that you did so they can easily go back and change things, but also so that you can easily debug any sort of issues that you might have.
+especially in very large data sets you might not notice that there was something wrong with a calculation or a transposition of the data.
+>> yeah.
+>> without changing into a wide data set format or a long data set format if you're working on panel data for instance.
+so keep all that archived, keeping all that tracked so that you can fix things whenever you see errors.
+so, you can easily change your data set to answer knew or different questions.
+it's very good for you and it's very good for the people who might be interested in using your data for other purposes that you haven't envisioned and while we all sort of want the outputs from our own data in whatever sort of way, we want the research outputs and we want other things.
+we want the impact.
+getting people to use the data is a very big part of that impact, very big part of getting people to cite, to care about the work that you're doing as well.
+>> [inaudible] sean, many thanks.
+>> thank you.

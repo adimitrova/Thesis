@@ -1,0 +1,127 @@
+we're looking at torque free motion.
+and we did plots.
+let me jump to this one.
+so what are the some key things we did with these polar plots?
+nathaniel, can you talk me through here?
+what does this stuff actually show us, how do we get these kind of plots, what are we doing?
+>> we're showing the energy as the, and the stability of the spinning, rigid body.
+>> okay.
+>> so- >> so what's this sphere?
+let's go back to basics, you're jumping into details.
+>> i don't remember the name of it.
+>> okay.
+was it andrew?
+>> no.
+>> sorry, next to nathaniel, yes, ick?
+>> nick.
+>> that was off, completely.
+>> the momentum sphere.
+>> it's a momentum sphere, right?
+so instead of using omega one's, two's, and three's as independent rate coordinates, we use h one's, two's, and three's.
+which is nothing but omega i's times the principal inertia, that's it, right?
+but it's convenient because the momentum magnitude being constant, not the momentum vector.
+we're using a sub result, just a magnitude being constant.
+it gives us a nice geometric answer, it's a sphere, what causes these intersections on this sphere?
+so we're intersecting a sphere with what?
+an ellipsoid, an ellipsoid represents energy.
+so your rotational kinetic energy, using the same h1 2 coordinates, we're able to rewrite and it's a classic ellipsoidal shape.
+so we've got this ellipsoid and we have to intersect, so here i'm showing you lots of different energy levels.
+nathaniel was talking about stability.
+if you hear stability, the first thing you have to think about is stability about what?
+so in these plots we identified some equilibrias, spin equilibrias.
+so if you take an object and you spin it about a certain axis, it's just going to keep on spinning, and that omega stays constant.
+and all the omegas stay constants, right.
+what were the equilibrias we identified for a torque free rigid body?
+matt.
+>> h1 and h3.
+>> well, if you have it only in h1 intersection, that's true.
+this was here, could you have a pure spin, an equilibria here?
+>> pragmatically, yes.
+>> then is it an equilibria or not?
+all right, this is a common source of confusion.
+that's why i'm glad we'll be going over this again especially as we get into control stuff.
+equilibrium just means, x dot is equal to zero, and here, x is my omega right?
+so all my omega rates are zero, it's not mathematical, not mathematical.
+that's an equilibrium of the system all right?
+equilibrium has nothing to do with stability.
+stability is a different argument but sometimes, people confuse equilibrium being as stable as things turning a round.
+so you've got the classical pendulum this is one of the equilibrium.
+and what's the other equilibrium we have over planar pendulum?
+right, upside down.
+those are two equilibrius, now its a must, that's it.
+but if i look at now stability i can talk about neighboring motions, if you just off a little bit on this one.
+gravity will basically help stabilize and it stays closed a little bit that thing it settles.
+if we turned it upside down, if we have to use a little bit of departure, are you going to stay close and of course not.
+we know it's can deviate away, right?
+so, just keep those two mathematical concepts separate, equilibrium just means your x star is equal to 0. if you put it in this condition it would remain there perfectly.
+stability now talks about well if i'm off a little bit and that's kind of where the real world starts because we never have it perfectly, well do i stay close?
+so of these you basically answered the two spins that would be stable if i have a slightly more than my minimum energy condition, i would be one of these wobbles, and you can see you stay reasonably close.
+same thing here this is the maximum energy condition, i'm spinning about the axis of least inertia.
+and if i'm off a little bit you can see wobble lines these intersection lines are staying close.
+this one though is unstable, that's the one where you take your hammer and you flip your tool, it always flips 180 very, very, very quickly, right?
+so what happens, you go from this side and you quickly go over here, all right?
+now, there is a very particular energy case, this is the minimum energy, maximum energy and here is the intermediate access energy.
+for minimum, maximum or its general inertia there's only one point one kind of a spin you're spinning about b1 or b3.
+if you have the intermediate energy level you could be spinning here mathematically, or you could also be on this inner section line which is called the separatrix.
+it's not just a single spin for the intermediate energy level that's the solution, it's actually there's these different arcs.
+now if you're on the let's say, you can see the arrows, they come in.
+what can you say about how you will approach this pure spin condition?
+>> tebow, like if you're exactly on it, it'll take infinite to get there.
+>> right.
+you never actually reach this point in a fine right amount of time.
+right, so you're only asymptotically ever reach it on this energy if you slightly off this one.
+we saw that in the video last time with the astronaut spinning that key.
+right, it kind of span.
+it looked like it was reasonably stable, a little bit of wabble but staying close.
+the next thing you know, it flipped over, wabbled here and then it flipped back again, and it just kept doing that.
+that was one of the lines like here or here.
+so when it's close to the sphere spin about the intermediate axis of inertia, it tens to hand out there a long, long time.
+and then it flips over, but you never remain there.
+whereas this one, you can hang out near a pure spin about axis of maximum inertia.
+and you will stay there forever, whereas this one you will keep flipping back and forth back and forth.
+now why don't we typically fly space craft spinning about the axis of least inertia?
+so that's kind of like having a rocket body spinning this way.
+besides seeing what happened to explorer one, what's the mathematical reason we don't like that stability up there?
+debo.
+>> there's any kind of friction you're going to go down in the energy level and get to the separate.
+>> this is all assuming a perfectly mathematically rigid body and any real body will have some panels that will flex just a little bit, inside there might be just a little bit of give.
+every time you have a little bit of friction you're losing mechanical energy, and you could lose some, these are all internal forces, all right.
+with internal forces i can actually change my energy state, i can lose energy, but can you bring your energy state to 0?
+with enough flapping of the panels, of fuel sloshing going on, will your space craft ever come to rest?
+daniel, what do you think?
+>> no.
+>> why not?
+>> the minimum you can get to is just the.
+the [inaudible] is only tangent to the sphere from the inside.
+>> which one was that?
+that was this one.
+all right, you do [inaudible].
+right, your momentum internal forces and fuel slosh, as complicated as equations are.
+partial differential equations and surface interactions and every stoke equations and who knows what else.
+it only internal forces and we've shown up angular momentum of a system cannot change unless you apply external forces.
+so, that's why when you're loosing energy, you will asymptotically get to this kind of the case which you can never bring the craft to rest.
+all right, so those are all quick answer questions that we've had.
+so good, these little pole hole plots, they are quite common, you see these sometimes with different analysis.
+we'll see after, it's going to do a spin or similar configuration.
+we're not spending too much time on one but [inaudible] classic literature, you'll often find these kind of illustrations.
+and i wanted to make sure you're familiar with that.
+here the thing we did last time was torque-free motion.
+these are the equations where we assume to have a body of frame that's principal, therefore the inertia tensor is diagonal, right.
+we get this nice form.
+now, if we have an axis symmetric body, you can see from here what happens on the right hand side.
+you always have differences of inertia, and if it's axis symmetric that basically means two inertias have to be equal about like this pen, about orthogonal axis are equal.
+therefore one of the terms is going to go to zero and immediately we know that omega dot is zero and that's going to be a constant.
+very, and the trick how to solve this last time was, we want to go from these equations.
+we know omega 3 is constant, and to solve this they're now to couple first order differential equation omega 1 that depends on omega 2, and omega 2 that depends on omega 1. anybody remember the trick how we got to solve these two coupled first order differential equations?
+yeah?
+>> one of the equations?
+>> we differentiate them again, which can seem counterintuitive.
+we're trying to get rid of dots, in fact we add dots first because it makes it easier.
+by differentiating them we get basically omega 1 dot, omega 3's a constant, you get omega 2 dot.
+now we get to plug in the coupled one that depends on omega 1, and you end up with a differential equation that's only omega 1s, but we traded two coupled.
+first order differential equations for two uncoupled second order differential equations right.
+so that was a trade off but this one is a classic spring mass system so you can solve this very easily.
+anybody who has differential equations should know how to solve this all right, which is what we did.
+so this is a classic answer if you have an axisymmetric body and when we do a numerical simulation, just looking at the tumble rates, you can see one of them flat lines.
+that's expected, so the spin about the axis of symmetry is always going to be constant.
+and the other two give you this nice sinusoidal response, but if you look at the attitude, it's not easy to predict.

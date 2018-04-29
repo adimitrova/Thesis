@@ -1,0 +1,30 @@
+in this module, you'll be introduced to the concepts of documentation and data citation.
+by the end of the module, you'll understand why documentation is important, and how and when to use metadata.
+you'll also understand the relevance of data citation, and will learn how to do this.
+so why document your data?
+by documenting your data systematically, you'll first and foremost help yourself.
+you may be very familiar with your data when you're first creating it.
+but the chances that you'll remember what all of the variables and abbreviations mean in several months or years are slim.
+the importance of documenting your data while you're creating and analyzing it, and everything is still fresh in your mind, can't be overestimated.
+others will also need good documentation to understand your work.
+this is particularly important if they're going to review your publications, try and validate your research findings, or even use your data in new studies.
+some examples of data documentation are lab notebooks and experimental protocols, questionnaires, codebooks, data dictionaries, software syntax and output files.
+information about your equipment settings and calibration, database schema, methodology reports, and provenance information.
+laboratory notebooks are crucial documents to be properly managed.
+they can help in asserting intellectual property rights, and can even help you defend against claims of scientific fraud.
+in less extreme circumstances, they can demonstrate adherence with standards of good practice and ethical integrity, and show compliance with any contractual obligations.
+routine documentation of all lab work is an important responsibility of laboratory researchers.
+there are three levels of data documentation.
+let's take a look at them one by one.
+so first up we have project level documentation.
+here you want to document what the study set out to do, what the research questions and hypotheses were, and what methodologies, sampling frames, instruments, or measures were used.
+this information may be included in your theses, your published articles, data papers or technical reports.
+second, we have file or database level documentation.
+a, you should document, how all of the files that make up the dataset relate to one another.
+a readme.txt file is a classic way of doing this.
+and finally, we have variable or item level documentation.
+this isn't just defining the variable names at the top of the spreadsheet file, but including a full label to explain the meaning of that variable.
+in the course of publishing research, it's essential to cite your sources.
+the reference list at the end of the publication shows the credibility of your claims and also the prominence of a particular theory or school of thought.
+so this is no less true for datasets than for publications, but somehow the practice of proper data citation has been slow to take root in academic culture.
+all too often we see very basic labels and charts in publications, such as source: oecd, without any proper information in the references about how you can access the underlying data.

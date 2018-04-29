@@ -1,0 +1,42 @@
+we're going to be talking about momentum exchange devices.
+this still belongs to the category of kinetics in the sense that we're trying to find equations of motion.
+we have found equations of motion and you started that with blobs, let me frozen so we have a nice rigid body.
+then we found them for a single rigid body, studied equilibrium, stability, all the uncontrolled things.
+then we had systems of rigid bodies where we had maybe a dual spinner, so it was a craft in one wheel.
+now we're going to go a little bit crazy here, not just do craft in one wheel but craft in n wheels.
+and not just body fixed wheels but even ones that can spin and twist relative to the body.
+those things are called controlled mono gyroscopes.
+so with all these extra things there's benefits but also challenges.
+the mathematics gets a lot more complex.
+so in your last homework actually you derived these in via cng equations, the path is all in the book.
+we're covering everything in class, so as we go through these i'm going to show you some highlights.
+maybe go through some of these equations.
+show you how you can get from this step to this step.
+but i'm not going to do every single mathematical detail.
+you do that actually at the end when you put it back yourself in the homework.
+but then you see all the sub steps.
+you can see yep this is what i should be getting.
+great i'm on track.
+if you're stuck with a sub step you can use the next sub step and move on, right?
+and then come back to that one later if you have to.
+so everything's there.
+so the way i'm teaching this is more of a overview.
+we want to cover the topics and concepts and how this comes together.
+so we'll talk about momentum control devices.
+there's some pictures and just conceptually why do people like this?
+it's kind of an icing.
+and then we can get into the math equations of motion and we're going to derive it in the most general way.
+there's something called verbal speed control moment gyroscope.
+typically there's just cmg's within a single axis or dual axis, double gamble cng devices.
+but there are also some that have been researched that have been variable speed and you'll see the benefits.
+if we do a variable speed control moment job scope upfront we're doing the most complex version.
+and then at the end we can go well, what if it is just a reaction mill?
+what if it is a cmg?
+so we can free certain modes in the mathematics and certain terms go to zero.
+and you regain the classic reactional solution or cmg solution or the hybrid, right?
+so instead of doing this two, three times, we'll do it once in the most general and then specialize.
+that's the approach that we're doing.
+so we'll go through a single vscmg first, talk about the motor torque calculations.
+clusters often too, that's we have multiple devices.
+basically comes to summation, once you know how to do one doing the others is kind of a ditto.
+it's more of a bookkeeping step so it doesn't take long to do that.

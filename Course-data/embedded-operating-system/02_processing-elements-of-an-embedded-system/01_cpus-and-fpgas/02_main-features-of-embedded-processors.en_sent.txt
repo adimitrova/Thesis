@@ -1,0 +1,90 @@
+[sound] hello, and good to see you back.
+let me make a small recap about the previous lecture.
+in the previous lecture, we went more technical, and gave a general definition of a processor, and an fpga.
+we also made a comparison between these two types of processing elements.
+i hope you remember the main difference between them, which is sequential nature of a processor, versus the parallel nature of an fpga.
+i hope now you have some basic intuition on what a processor and fpgas are.
+in this lecture, more details on an embedded processor will be given.
+and we will also discuss the main features of an embedded processor.
+first of all, a processor is an electronic device that executes instructions.
+the processor does not understand anything but numbers, and can work with and manipulate only numbers.
+so instructions are not an exception.
+they are numbers.
+however, unfortunately, humans are not as fast with numbers as processors.
+so instructions are described with words to make them comprehensible for people.
+all the instructions are stored in memory.
+and they are fetched from the memory, one by one, to be executed.
+obviously, there is a wide range of different applications that can be run on a processor.
+and it is clear that one type of processor cannot deal with this range of applications in an equally efficient way.
+so it makes sense to have several types of embedded processors, which are dedicated to certain types of applications.
+to make an example, let's think about signal processing techniques, which are used for image processing.
+signal processing has different, basic linear algebra routines in it's core.
+dsp processors are designed specifically for signal processing, which have dedicated units that deal with those routines efficiently.
+during our course we will mostly talk about microcontrollers, or mc use.
+and here i want to mention that microcontrollers are meant for general purpose applications, and most of them are resource constrained devices, which are not meant for computationally intensive tasks.
+there are also gpus with thousands of cores within, which are meant for extremely computationally demanding tasks like graphics rendering.
+of course it is sometimes challenging to choose in a specific type of embedded processor.
+therefore, we have several metrics to make such choice.
+some of them, performance, energy consumption, versatility, and cost.
+as it was said a bit earlier, it is not possible to cover all the types of embedded processors in this course.
+however, we are going to elaborate on microcontrollers.
+i am going to shortly explain each of the main characteristics of a microcontroller.
+a microcontroller has in its architecture a cpu, which is in charge of fetching, decoding, and executing instructions.
+the arithmetic logic unit is the unit that actually performs the computations.
+data is loaded into the cpu's registers from the data memory using special instructions.
+in the same way, the result of computations can be stored in memory.
+the program is stored in a program memory as a sequence of instructions.
+in order to keep track of where the execution is in this sequence, there is a program counter.
+there is also ram memory available in microcontrollers and some kinds of non-volatile memory, such as eeprom.
+microcontrollers include different kinds of peripherals such as communication units, timers, adcs, dacs, etcetera.
+if we think about the instruction's execution, the question that arises is, when is it time to actually execute an instruction?
+the answer is that the execution is clocked, so it happens according to a clock frequency.
+each instruction takes on one or several clock cycles to complete.
+from this, you can conclude that the execution time depends on the clock frequency.
+the clock frequency of microcontrollers can derive from several megahertz to several hundreds of megahertz.
+there's a special dedicated unit called clock control unit that it's responsible for managing clocking.
+for example, this unit can scale down an input reference frequency or multiply it to obtain a higher club frequency.
+a microcontroller may have several sources of clock frequency.
+one of them is an internal rc oscillator.
+however, the stability of this kind of oscillators is low, that's why external clock sources such as an external quartz resonator, might be used.
+it is important to introduce the notion of an interrupt, since it is a powerful tool to handle real-time events.
+an interrupt is a hardware-generated signal.
+indeed, interrupts are meant to break the execution flow of a program when some external event happens.
+for example, assume we have some communication unit, and we want to check if there is new data in our receive buffer.
+one way to do it would be to write a piece of code that checks the input buffer once in a while.
+however, this approach does not allow to know precisely the time when the data arrive.
+so there is an alternative way to manage this task.
+we can adjust the microcontroller in a way so the execution of the main program is interrupted precisely when the data comes into the buffer.
+moreover, when a certain interrupt occurs, the program counter jumps to a specific location in a program memory assigned to this interrupt.
+an interrupt service routine, written by a programmer, can reside in this memory location.
+once the interrupt service routine is finished, the program counter jumps back to the main program.
+each interrupt can have a priority.
+if two interrupts happen at the same time, the one with the higher priority will be processed first.
+a standalone cpu is useless if it is not supplied with data.
+peripherals are exactly for this purpose, to give a cpu data to work with.
+peripherals can be classified into several groups.
+first, communication units such as spi, i2c, uart, ethernet, and others.
+all these units work based on specific protocols.
+next, there are analog units which deal with analog signals.
+there are adcs for converting a voltage level to a number, and dacs for converting a number to a voltage level.
+timers constitute another group.
+they are powerful tools when it comes to dealing with clocking and timing issues.
+with the help of timers, pwm can be generator, or they can be used to measure time intervals.
+there are units to manage memory.
+one of them is dma, which it stands for direct memory access.
+this unit can transfer data from one location of memory to another without the cpu's intervention.
+energy efficiency is an important issue nowadays, and microcontrollers offer flexible alternatives to address it.
+modern mcus have multiple power modes that provide developers with fine grain control over the power consumption of their applications.
+this way it is possible to power off the cpu, the peripherals, or both of them.
+microcontrollers have different programming and debugging interfaces.
+one of the most widely used ones is jtag.
+jtag programmer is a convenient tool, especially when it comes to debugging.
+however, a debugger is not cheap to buy.
+a bootloader can be a solution to this.
+a bootloader is a program which resides inside of a microcontroller.
+the bootloader receives a program byte by byte via any communication protocol, and writes it into a program memory of a microcontroller.
+even though a bootloader does not allow to debug code, it is a free of charge way to program a microcontroller.
+this is all i have for this video.
+i hope now you have a more in-depth knowledge about embedded processors and microcontrollers.
+in the next video we will cover mcu platforms, and we will also describe some real industrial projects, powered by mcus.
+[sound]

@@ -1,0 +1,111 @@
+welcome to module three of control of mobile robots.
+what we're going to do in this module is try to be a little more systematic in how we think of our design choices and how we actually model the systems that we're dealing with.
+so, so far in module one we did some basic control theory.
+we developed pid regulators.
+we could do some rather elegant things, but we really didn't know why anything worked.
+and in module 2 we started talking about robots and some of the more standard robot models we're going to use, what abstractions are useful for thinking about sensing modalities, and how do the robots know where they are.
+so what we're going to do in this module is actually take a step back and start to revisit some of the things we did.
+and what we need to do first of all is develop a model class that is rich enough in the sense that it's quiet general and it will catch and capture a lot of different robotic systems that we're interested in.
+but it has to be simple enough so that we can actually say things about it because, you know, very complicated models don't really give us anything because we have no effective ways of interacting with them.
+the model also needs to be expressive enough and relevant enough, and what i mean about with that is, it has to capture the aspect of the systems that we're interested in, in a way that matters and actually translate into the actual systems doing what they're supposed to be doing.
+because one thing to remember is that models are always approximations, adn you want to make suere that you, the things that you don't fully model.
+don't matter so much.
+and what we're going to do is we're going to go into the wonderful world of linear systems.
+so, linear systems are particularly effective and compact, and well behaved system representations of dynamical systems.
+so let's start with what i want to call the world's easiest and simplest robot.
+this is a point mass.
+so what it is, is that it's just a mass.
+on a line and i can immediately control the acceleratio n. so if you start controlling but p is the position of the robot then acceleration which is the second derivative of the position is just p double dot is equal to u. now we won't actually like to write it in this way, we don't want the double dots, we don't want to have.
+p is for positions and then we're controlling something else.
+we have new variables.
+so, we want to come up with a compact/general form that captures what we want but somehow glosses over the, the, the minor details of what separates a point mass robot from a. humanoid robot, say.
+so the way to do this is to introduce some new variables.
+and i'm going to introduce in this case two variables.
+the first one i'm going to call x1 and simply say that that's the position.
+so x1 is the position of the robot.
+and then i'm going to say that x2 is the velocity of the robot.
+and if i do that, i can actually write down the derivatives.
+the dynamic's of these new variables.
+so x1 dot, well, we have x1 dot is equal to p dot but p dot was equal to x2.
+so, x1 dot is simply equal to x2.
+x2 dot is p double dot, right?
+so x2 dot is p double dot, which we have up here, which equal to u. so x2 dot is simply equal to u. so this is a slight reformulation that so far doesn't seem to buy us anything.
+but what we can do is we can actually we put now this system on what's call state's based form.
+and the state of the system is going to be our excess.
+so i'm simply going to lump x1 and x2 into a new variable that i'm going to call x, and now note that this is actually a 2-dimensional object.
+and then what i'm going to do is i'm going to talk about the dynamics of this 2-dimensional object.
+so x dot is x1 dot, x2 dot and we know that x1 dot was x2 and x2 dot was u. so i can simply write x dot is this x2 u vector.
+well it gets even better because if i have a matrix.
+if i have x1 x2 there and i multiply this by 2 by 2 matrix, let's say that i would like to get out x2, well what do i have to multiply x1 and x2 with?
+well, this is zero times x1 so i'm going to write 0 here and 1 times x2.
+is going to give me that, right.
+so what i am going to do is simply write this as a matrix, so x dot is zero times x1 and 1 times x2 and x2 dot is simply u, so its zero times x1 and zero times x2 but we get one u out of it so i am now rewritten my dynamics using these matrices, which may or may not look easier.
+but trust me, it actually will be much easier.
+moreover, the thing we care about in this case would be x1.
+so, i'm going to take the output of the system to be x1.
+and, i can also write this as a matrix.
+in this case it's a it's role vector times x. this simply means that i get one of x1, and zero of x2.
+so, i have now re-writ them, everything in a much more, i'm going to claim compact form, using these matrices.
+so, to summarize, on state space form x dot is this thing, and x and y. sorry.
+the output is this thing.
+now, if i introduce some matrices.
+i'm going to call this thing my a matrix.
+i'm going to call this thing my b matrix.
+and this thing my c matrix.
+then, all of a sudden, i can write everything like this.
+x dot is ax plus bu, y is cx.
+and now we've hidden all the particulars of the model inside this a, b, and c matrices.
+but this is a very.
+general way of writting systems so this in fact clearly deserves one of these sweethearts because what we have done is to take a system that was really particular and written it in a very general form involving these system matrisis and to make sure that we believe this is in fact generally usefull let's consider 2-dimensional point mass now.
+where, what i can do, is i can move in both the x and y directions say.
+so, the position is going to be the x and y position, the input is my acceleration in the x and y direction.
+and then the dynamics of course is p double dot x is ux, which means my acceleration, my accelerating in the x direction with the my ux input, and similarly for my, my y direction.
+well, now we need to do the same thing.
+so i'm going to introduce a bunch of new variabl es.
+so x1 is px.
+x2 is p.x.
+as i said before.
+but now i'm introducing 2 more.
+x3 is py, and x4 is p.y.
+i have two inputs and two outputs.
+so if i do this.
+i can actually write this new system, also using a b and c matrixes.
+so if you take a look at this a matrix, up here in this corner is the old a matrix that we had for a 1d point-mass.
+well this is just the x component of the a matrix.
+and this would be the y component.
+similarly b, this is my old b now i have two copies of it.
+and for c, this is my old c. now i have a copy of it.
+so with this choice of a, b and c matrices, voila.
+i can write the same or that this system on exactly the same form x dot is ax + bu.
+y is cx.
+and one thing that i'm going to encourage you to do is make sure that you go through the matrix multiplications here and convince yourself that this choice of a, b, and c matrixes is actually corresponds to the original dynamics that we had up here.
+but the point that i really want to make with all this is you know what, x dot is ax plus bu, y is cx, is a very general way of writing down, the system dynamics that you have.
+and in fact, this is what's called an lti system.
+linear time invariant system on state space form, and we're going to see this a, b, and c. triple quite a lot in this course, because they will show up over and over again.
+and they will allow us to be general about how we reason about our systems.
+and then we're going to hide the particulars of the dynamics inside the a, b, and c matrices.
+before we move on to the next lecture we're actually going to see a little bit more where these models come from.
+let's say a few words though about the dimensions of what we have here.
+if x is an n dimensional vector so it's a rn for the point mass on the line x is 2-dimensional or a 2d point where we control exploration x was 4-dimensional.
+anyway, x is in rn, then a is an n by n matrix.
+if u is in rm, meaning we have an m dimensional inputs, then v is going to be an n by m matrix.
+and similarly if the output is p dimensional, meaning we're sucking out p different things from our system, then the c matrix is a. p by n matrix.
+and the reason this is right.
+you can see that if you actually write down the equation.
+x dot is ax plus bu.
+well, x dot has to have the same dimension as x. so it has to be n by one.
+now, i know that a is n by n. and x is n by one.
+whenever you have matrix multiplication like that.
+the first thing is that these numbers have to be the same otherwise you cannot do this multiplication.
+so you have to make sure these are the same.
+and when you end up with n at the end, it's an n by one or n pieces here which means that ax actually becomes and n by one factor.
+which is what we need, right?
+because x dot n by one.
+similarly with b, b is n by m and you u is m by one, well these things cancel out that they should and we end up with something that's n by one.
+if you look at y similarly, y is p by one, well is p bt n and x is n by one.
+these guys cancel out, and what we end up with is a p by one vector.
+and, it's important that the dimensions lineup.
+so, as a sanity check, we're always going to be forced to insure that the things that we build, have the right dimensions.
+and, if they don't have these dimensions, then what we write down is actually nonsense, and we can't perform these multiplications.
+okay, that concludes the first lecture on linear systems.
+and in the next lecture, we're going to see a little bit more where these systems actually come from.

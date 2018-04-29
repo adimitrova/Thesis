@@ -1,0 +1,93 @@
+, i often want to differentiate an inverse function.
+say, i've got a function f. the derivative of f encodes how wiggling the input affects the output.
+the derivative of the inverse function would encode how changes to the output affect the input.
+here's a theorem that i can use to handle this situation.
+here is the inverse function theorem.
+i'm going to suppose that f is some differentiable function, f prime is continuous, the derivative is continuous.
+and the derivative, at some point, a, is nonzero.
+in that case, i get the following fantastic conclusion.
+then the inverse function at y is defined for values of y near f of a. so, the function f is invertable near a. the inverse function is differentiable for inputs near f of a. and that derivative is continuous in your inputs near f of a. and i've even got a formula for the derivative.
+the derivative of the inverse function at y is 1 over the original derivative, the derivative of the original function, evaluated at the inverse function of y. how can i justify a result like that?
+why should something like that be true?
+one 1 way to think about this is geometrically.
+here, i've drawn the graph with just some made up function, y equals f of x. what's the graph of the inverse function look like?
+well, one way to think about this is that the inverse function exchanges the roles of the x and y axes, which is the same as just flipping it over, alright?
+what was the y-axis now, the x-axis, what, was the x-axis is now the y-axis?
+and this graph here is y equals f inverse of x. this is how you graph the inverse function.
+alright.
+so, let's go back to the original function and if i put down a tangent line to the curve at some point, let's say that tangent line has slope m. well, what's the tangent line of the inverse function?
+that would be the derivative of the inverse function.
+well, if i flip over the graph again to look at the graph of the inverse function, i can put down a tangent line to the to the inverse function.
+and that has slo pe 1 over m. if m was the original slope for the tangent line to the original function, 1 over m is the new slope to the tangent line of the inverse function.
+why 1 over m?
+well, that makes sense because i got this graph by exchanging the roles of the x and y-axis, by flipping the paper over.
+and that exchange is rise for run, and run for rise.
+so, the slope becomes the reciprocal of the old slope.
+this slope business is reflected in the notation, dy dx.
+som let's suppose that y is f of x, so x is f inverse of y, supposing that this is an invariable function.
+if y is f of x, then f prime of x could be written dy dx.
+and if f is inverse of y, then the derivative of the inverse function at y, well, that's asking how's changing y change x could write that as dx over dy.
+well, if you really take this notation seriously, what it looks like it's saying, is that, dx dy, which is the derivative of the inverse function, should be 1 over dy dx, right?
+the derivative of the inverse function is 1 over the derivative of the original function.
+but you have to think about where these derivatives are being computed.
+so, maybe you believe that dx dy is 1 over dy dx, it makes sense that if you exchange the roles of x and y, that takes the reciprocal of the slope of the line.
+but where is this wiggling happening, right?
+dy dx is measuring how wiggling x affects y. wiggling around where?
+well, let's suppose that i'm wiggling around a. so, i'm really calculating dy dx when x, say, is at a. this is the quantity that records how wiggling x near a. will affect y. well then, where's y wiggling?
+well, if x is wiggling around a, y is wiggling around f of a. so, the derivative on this side is really being calculated at y equals f of a. and it's really necessary to keep track of where this wiggling is happening in order to get a valid formula.
+it's actually easier to think about what's going on if we just phrase all of these in terms of the chain rule.
+so, what do i know about the inverse function?
+well, here's f inve rse.
+f of f inverse of x is just x. alright, what is the inverse function do?
+whatever you plug into the inverse function, it outputs whatever you need to plug into f to get out the thing you plugged into the inverse function.
+alright.
+so, this is true.
+now, if i differentiate both sides, assuming that f and f inverse are differentiable, then by the chain rule, what do i get?
+well, the derivative of this composition is the derivative of the outside at the inside times the derivative of the inside.
+and that's equal to the derivative of the other side, which is the derivative of x is just 1. now, i'll divide both sides by f prime f inverse of x and i get that the derivative of the inverse function of x is 1 over f prime of f inverse of x. is that a proof?
+absolutely not.
+the embarrassing truth is that this argument assumes the differentiability of the inverse function.
+if this function, f inverse, is differentiable, then the chain rule can be applied to it.
+the chain rule requires that the functions be differentiable.
+now, if the function is differentiable, then this chain rule calculation tells me that the derivative inverse function is this quantity.
+but that's all predicated on knowing that the inverse function is differentiable.
+how do we know that?
+well, that's actually the content of this theorem, right?
+the content of the inverse function theorem is not really the calculation of the derivative of the inverse function.
+it's really just the fact that the inverse function is differentiable at all.
+that is a huge deal, and it's not something that we can just get from the chain rule.
+once we know that the inverse function is differentiable, then the chain rule gives us this calculation.
+but actually verifying if the inverse function is differentiable is really quite deep, that's why the inverse function theorem is such a big deal.
+the chain rule requires that the functions i'm applying the change rule to be differentiable.
+in contrast, the inverse function theorem is asserting the differenti ability of the inverse function.
+it's really saying much more, than just a computation of the derivative if the derivative exists.
+it's actually telling me that the derivative exists.
+i'm going to have to punt on saying much more about the proof of the inverse function theorem.
+but nevertheless, we can now apply the inverse function theorem to some concrete examples.
+for example think about the function, f of x equals x squared.
+well, what's the inverse function to this?
+let's suppose the domain is just the nonnegative real numbers.
+then, the functions invertible on the domain, and we know the name of the inverse is the square root of x. what's the derivative of the original function?
+well, we know that it's 2x, and the derivative is continuous and the derivative is not 0 provided that x is a positive.
+this is all the stuff that we need to apply the inverse function theorem.
+then, we know that the derivative of the inverse function at x is 1 over the original derivative at the inverse of x. now, the inverse fuction is the square root of x, so that's 1 over f prime of the square root of x, and what's f prime?
+f prime is the function that doubles its input.
+so, that's 1 over 2 square roots of x. so, the derivative of the inverse function, the derivative of the square root function is 1 over 2 square roots of x, provided x is bigger than 0, right?
+just like before, this is a calculation of the derivative of the square root function.
+we can also see this numerically.
+so, the square root of 10,000 is 100, and you might ask what do you have to take the square root of, to get at about 100.1?
+say, some numeric example.
+well, think now about the functions that are involved here.
+there's the squaring function and the square root function.
+we saw the derivative of the square root function is 1 over 2 square root x and the derivative of x squared, we already know, is 2x.
+where are we evaluating these functions?
+well, i'm evaluating the square root function at 10,000, right?
+this is at x equals 10,000 .
+and if i evaluate that at 10,000, that's 1 over 2 times the square root of 10,000, that's 1 over 200. where am i evaluating the other function, the x squared function?
+well there, i'm really thinking of 100 as the input, so i'll evaluate that derivative at 100 and 2x, when x is a 100 is 200. and it's not too surprising, right, that 1 over 200 and 200 are reciprocals of each other, because i'm calculating derivatives of a function and the inverse function at the appropriate places.
+now, let's try to answer the original question.
+i'm trying to figure out, what do i have to take the square root of to get about 100.1?
+well, the ratio here is about 200 between the input and the output.
+so, if i want the output to be affected by 0.1, i should try to change the input by about 200 times as much, and 200 times 0.1 is 20, so i should try to change the input by about 20 and sure enough, if you take the square root of 10,020, that's awfully close to a 100.1. i hope that you'll play around with these numbers.
+all the conceptual stuff that we're doing, these theorems, i'm not telling you these theorems to make numbers boring, right?
+i'm telling you all these theorems to heighten your appreciation of the numerical examples.

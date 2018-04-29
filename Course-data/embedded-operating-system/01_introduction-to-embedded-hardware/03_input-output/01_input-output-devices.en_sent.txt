@@ -1,0 +1,69 @@
+[sound] hello and welcome back to the course.
+in this video, we're going to talk about how to get data into the processing element as well as how to transfer the data from the processing element.
+a processing element is a digital device, which makes computations.
+the computations are performed on some data, which is stored in memory within the processing element.
+however, initially the memory is empty, so where to get the data from?
+i would like to introduce here two concepts, input and output.
+as you may guess, the input comprises the whole set of devices or units through which the data can be delivered to make computations on.
+on the other hand an output is a device or unit that help to transfer processed data from a processing element to other devices.
+input/output devices share some characteristics.
+however, let's talk about the inputs first.
+input devices are meant for delivering data to the processing element.
+in some cases, the microcontrollers have different peripheral units that play the role of inputs, for example, communication units such as uart or spi.
+an analog to digital converter can also be considered as an input device.
+these peripheral units might be located inside of the microcontroller and exposed to the user through external pins.
+by the way, general purpose input/output pins, as you might guess from their name, can also be used as an input, regardless of any peripheral unit being attached to them.
+there are many ways to classify a microcontroller's inputs.
+however, among all of them, i would like to mention the one which separates inputs into two categories, serial and parallel.
+as an example you can think of serial peripheral interface and gpios.
+inputs can also be classified according to the type of signal they handle.
+this way an input may be digital, for example spi interface, or analog, such as an analog to digital converter.
+the next question i would like to cover is how to actually read the data from those inputs.
+the details of how to do that may be quite different depending on the input unit you want to use.
+let's consider an spi interface and an adc, which are clearly very different kinds of units.
+the first one is meant to communication, whereas the second one converts analog signals into a digital form.
+because of their fundamental differences, we can expect their operation details to differ very much as well as the methods for reading data from them.
+however, from a higher abstraction level, we can distinguish two ways for doing this.
+the first one is to read the input every once in a while, let's say once every 100 milliseconds interval.
+in this case, the read operation is initiated by the software.
+therefore, we need write a piece of code that gets the data from the input unit at the chosen interval.
+in our case, the interval is 100 milliseconds, but it can be adjusted.
+now, let's think about the following case.
+what if we are interested in knowing the time when an event happens?
+for example, we need to know when the voltage level on some pin rises from logic zero to logic one.
+what time interval do we choose in order to catch such event?
+you can make an assumption that the shorter the interval, the more frequently we check the input, and therefore the less the probability that we will miss the event.
+this is of course true.
+however, if we think of the amount of time the processing element will spend on checking if the event has occurred, we will conclude that such approach is not efficient since a lot of computational power will be wasted.
+luckily, there is another way of catching fast events.
+if the first method was software initiated, the second way is hardware initiated.
+it is based on interrupts.
+when an event occurs, it causes an interrupt, which in turn breaks the flow of the main program and reads the input.
+the second method is more reliable in the sense that it is less likely to miss the event.
+to make sense of the received data, the communications unit used as input must be compatible with the sender.
+this compatibility should be at the protocol level.
+this means that signals used follow the same rules.
+for example, if spi communication protocol is used, the sender and the receiver should work according to this protocol.
+it is also important to consider voltage compatibility.
+the signals should be preferably used the same voltage, let's say either 3.3 volts or 5 volts.
+with outputs, the picture is pretty much the same.
+peripheral units can be used as output.
+the interaction with the outer world is done via external pins.
+the classification is also similar, serial, parallel, analog, digital.
+an example of an analog output is a digital to analog converter, which converts a number to a voltage signal.
+communication units, such as uart or spi, are examples of digital outputs.
+sending and receiving data can be software or hardware-initiated.
+let's make an example of hardware-initiated transfer.
+for example, we need to build an analog signal using a microcontroller.
+in this case, we will need a digital-to-analog converter.
+the shape of the required signal should be, for example, sinusoidal.
+for that we will keep samples, which are just numbers, of one of the periods of the sinusoidal in memory.
+what we need to do is to read those samples at the right intervals to send them to the dac.
+the right intervals of time are measured using a timer.
+now, if we want to keep the shape of a signal stable, we need to rely on hardware.
+it can be done in the following way.
+a timer marks the right moment and instructs the direct memory access unit to transfer one sample from the memory to the dac.
+after the dac converts the sample to voltage, everything is set to be done without the influence of software.
+as for inputs, output units should be compatible with the receiver regarding their protocol and voltage level used.
+so in this video we discussed the ways on how an embedded system can exchange the data with outer world, and what are the requirements that should be expected to make such exchange correct.
+[sound]

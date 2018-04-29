@@ -1,0 +1,18 @@
+[music] so, what does it mean to say that  the limit of x^2, as x approaches 2, is  4?
+strictly speaking, it means that you  can make x^2 as close as you want to 4 by  making x sufficiently close to 2,  but talking in that way can be a little  bit confusing.
+so i'm going to sort of format it here  as, as if it were a dialogue.
+alright?
+so  you're going to make some sort of demand.
+you're going to demand that x^2 be close  to 4.  maybe you're going to demand that x^2 be  within 1/10 of 4.  alright?
+so that means you're, you're  asking that x^2 be between 3.9,  3.9 is a 1/10 less than 4,  and 4.1, which is a 1/10 more than 4.  so you're going to make some demand that  the output be close to 4 and i have to  satisfy your demand by making x  sufficiently close to 2.  now, what does that mean?
+i'm going to  satisfy your demand by stipulating that x  be within some small distance of 2.  so, how close is sufficiently close?
+well, in this case, let's make let's make  x be within a 1/100 of 2 and see what  happens.
+so x is within a 1/100 of 2 and that  means that x [sound] is bigger than 1.99  [sound] and smaller [sound] than 2.01.  and if x is bigger than 1.99, then x^2 is  bigger than 3.9601, and if x is smaller  than 2.01, then x squared is smaller than  [sound] 4.0401.  and, and look at these numbers,  3.9601, that is bigger [sound] than 3.9,  and over here, 4.0401, that's smaller  than 4.1.  so notice what happened here.
+if x is within a 1/100 of 2, then x is  between 1.99 and 2.01.  but if x is between 1.99 and 2.01, then  x^2 is between 3.9601 and 4.0401,  and if x^2 is bigger than 3.9601, it's  bigger than 3.9,  and if x^2 is smaller than 4.0401, it's  smaller than 4.1.  so that means demanding that x be within  a 1/100 of 2, in fact, forces x^2 to be  between 3.9 and 4.1.  in other words, it forces x^2 to be  within a 1/10 of 4.  so if your demand is that x squared be  within a 1/10 of 4, i can satisfy that  demand by simply requiring x to be within  a 1/100 of 2.  now, i can do the same thing for other  demands that you might make.
+you might have demanded that x^2 be  within a 1/100 of 4 and i can do that as  well.
+so that would mean that x^2 is between  3.99 and 4.01.  well, if x^2, if you want x^2 to be  between 3.99 and 4.01, i'm going to have  to make some condition on how close x  have to be to 2.  so let's try a 1/1000.
+so if x is within a 1/1000 of 2, that  means that x, it'll be between 1.999 and  and if x is bigger than 1.999, then x^2  is bigger [sound] than 3.996001.  and if x < 2.001, then x^2 < 4.004001.  now, look at these numbers, 3.996001,  that is bigger 3.99,  and 4.004001, that is smaller than 4.01.  so if x is within a 1/1000 of 2, that  means x is between 1.999 and 2.001.  that means that x^2 is between 3.996 and  4.004, a little bit more.
+that makes x^2 be, between 3.99 and 4.01,  which is exactly what you demanded.
+so this is the structure of, of what it  means to say that the limit of x^2 is 4  as x approaches 2. it means no matter  close you demand x ^ 2 to be to 4, even  if this epsilon were replaced by a very  tiny number.
+i'd be able to find some other distance,  some number to put here, so that as long  as x is that close to 2, then x^2 is as  close as you wanted to the number 4.  so the exercise, below asks you to take a  look at another situation like this to  see if you can figure out number to put  here to satisfy some condition that  someone might make on you.
+[music]

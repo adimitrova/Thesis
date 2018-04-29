@@ -1,0 +1,15 @@
+[music] when thinking about and doing data management, it is critical to understand data in terms of their lifecycle and the research projectâs lifecycle.
+for project planning to archiving, proper data management happens throughout the research lifecycle.
+each stage of the lifecycle produces specific data products and requires a variety of considerations, responsibilities, and activities.
+there are numerous lifecycle models from simple to complex.
+let's look at a few.
+here is the research lifecycle model from the uk data archive.
+once data are created, which is represented in the circle at 12 o'clock, the data undergo subsequent stages, processing, analyzing, preserving, providing access to, and re-using the data.
+the university of virginia library created this research data life cycle model, which i think directly aligns to common research practice.
+here is the more complex and comprehensive data lifecycle model developed by the digital curation center.
+with data at the center of the graphic, you can see the various data curation activities as you move to the outer rings.
+this model brings together data, researchers and curators.
+now that you have been introduced to data and understand that data management refers to activities throughout the data lifecycle, please take a moment to introduce yourself on the forums and tell us about your data experiences, or maybe even questions you have about data or the course.
+we have also provided some additional readings for you to explore if you're interested in learning more.
+and make sure you check out the resources for this module.
+[music]

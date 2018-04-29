@@ -1,0 +1,89 @@
+at the last, lecture we designed the  dynamic duo of robotic behaviors, mainly  goal to goal and avoid obstacle.
+and the question i want to talk about in  today's lecture is really how do we  combine these two?
+so let's say that i  actually have, as always, a go to here, a  goal here, and an obstacle here with go  to goal telling me to go in this  direction, and avoid obstacle telling me.
+to go in this direction which is straight  away from, from the obstacle.
+how do i actually combine these two?
+and  the question is really this, right.
+it, is there some blended version of the  two directions we should go in or should  we actually switch between the different  behaviors in a hard way, so that the  winner takes all.
+and, these are really the main two  options at our disposal.
+and what i want to do today is just  discuss almost philosophically.
+what are the pros and cons associated  with these two options?
+and then in subsequent lectures, we will  be a little more technical in terms of  how to actually build these so-called  arbitration mechanisms.
+some mechanisms for transitioning in and  out of different behaviors.
+so the philosophical question is really  this right.
+can robots can chew gum and walk at the  same time meaning can they do two things  or should they do two things or should  they really only be doing, doing one  thing.
+so the same cartoon here over on the left  where the black arrows again are the  directions in which we think that the  robot should go.
+so if we're going with the hard switches  paradox time.
+what's going on is when we're let's say  far away from the obstacle then the  robots should be doing nothing but going  towards the goal which i've illustrated  here with the, a red arrow saying that  right now that's all the robot is trying  to do.
+and then when it gets lets say closer to  the obstacle it switches completely.
+to the other direction which is, in this  case, straight away from the obstacle.
+and the reason one might want to do  something like this is that, we're  actually designing the behaviors, to do  something really well.
+the obstacle avoidance behavior is  designed to, not drive into things.
+and hopefully we design it right, so that  we can actually trust that, if we're only  avoiding driving into things, indeed we  do not drive into things, or if we are  only trying to a goal, than we have  designed our controller to be as  methodically stable, so that we can  actually trust, trust that we end up at  the goal.
+so, the pro the benefit we're doing hard  switches is then that we can actually  trust these systems, that they are doing  what they were designed to do from a  performance guarantee point of view.
+now there is a drawback with this.
+so, if you are a robot and you're just  switching ma, ma, ma, ma, ma, back and  forth between going to the goal and  avoiding an obstacle.
+let's say you're riding this robot.
+it's a really bumpy ride.
+or in general it, it's a, you're going to  get, rather, jerky motions out.
+and as we've already seen, if we're using  odometry, for instance, to knowing where  we are, then, the odometric readings can  get really, a little bit messed off, up  if you start switching quickly.
+so, there is, the, the, the potential for  having a really bumpy ride and  theoretically this bumpy ride can  translate into zeno behaviors where we're  forced to switch very, very, very  quickly, in fact infinitely quickly in  the worst possible scenario between the  two behaviors.
+so on the one hand we can trust that the  system is doing what it supposed to be  doing, but it's doing it in a rather  bumpy and unpleasant way.
+so that's the, the, the deal with, with  the hard switches.
+the other alternative, of course, is to  blend the two behaviors.
+so the answer to the philosophical  question here would be, yes.
+robots can, indeed, chew gum and walk at  the same time.
+they can avoid slamming into things and  going towards goals.
+and, i'm going to argue that all of us,  when we're walking around were trying  both, not to walk into other people and  go to the particular place we're  interested in going to.
+so we do it all the time.
+why shouldn't we let the robots do it?
+so  the pro or the, the benefit we're doing  this would be to get a smoother ride when  we're not switching between behaviors  rapidly.
+we avoid typically that the zeno issue.
+so this would be an argument for  blending.
+an argument against it is that we no  longer can completely trust that we have  guarantees that our system does what it's  supposed to be doing.
+in the sense that now we're not only  avoiding obstacles, we're kind of  avoiding obstacles but we're kind of  doing something else and it's not clear  that we can actually guarantee anymore  that we're staying clear of obstacles or  if we are going to the goal while not  only doing that but something then are  going to indeed hit the landmark.
+so there are potential drawbacks with  with blending the behaviors and that one  of them that is that it's hard to  guarantee what's actually going to, to  happen.
+so, lets first of all build some both of  these solutions and then we're going to  to take some kind of stand here where  we're going to prefer, prefer one over  the other.
+so lets actually start with with the  switched hybred atomatom.
+so, again we have the robot, the goal,  and the obstacle, and what were going to  do is we're going to used the behavior  that we assigned last time.
+so we're saying that we're controlling  the volocity of the robot directly.
+so lets say x dot is equal to u.  this is in r2, because this is a planar  robot, so it's a two-dimensional control  signal.
+and let's say for the sake of simplicity  that the go to goal behavior is simply a  proportional regulator driving x to the  goal.
+and as long as kgtg is positive, we've  seen that this is an asymptotically  stable controller.
+and we're also using the avoid obstacle  controller that's just simply pushing us  away from, from the goal.
+so this is actually an unstable  controller that's driving us away,  straight away from the, from the obstacle  point.
+so let's say that we have these two these  two behaviors.
+then, here would be a hybrid automaton  that switches between these two  behaviors.
+so the robot is going towards the goal,  until the distance to the obstacle, so  this distance here, d do is less than or  equal to some critical safety distance.
+so when we're too close to the obstacle,  we switch and then after we've switched  we're now avoiding the obstacle and we're  going to do that until we're no longer  unsafe and what i've written here is that  d obstacle should be.
+strictly greater than d safe plus some  epsilon.
+and the reason we want this epsilon here  is that we don't want to end up switching  too quickly so if we get rid of the  epsilon, we're immediately in this  situation where we might have zno or very  very rapid switches so this would be a  switched hybrid automaton that switches  between behaviors and its kind of clear  how we would design that.
+blending on the other hand is not as  straight forward, so lets say that we  have the same setup as before and lets  define a blending function as a function  of the distance to the obstacle.
+so this blending function is going to be  for a given distance do its just going to  take on a value between 0 and 1 and the  idea is that if this is 1 say we're only  going to the goal and if its 0 we're only  avoiding obstacles.
+here's an example, where sigma is 0.75  which means that i take you know 75  percent of this.
+vector and i take 25% of this vector.
+that's what the blending is doing and  what i'm doing now is i'm taking this  little snippet, adding it on here and  getting this as my new direction of  travel.
+so if i do that i get the green arrow  here and the green arrow would now be the  blended direction.
+so x dot is going to be 0.75 in this case  of going towards to goal and 1 minus 0.75  which is 0.25 of avoiding obstacles.
+so this is a very natural way in which  you can actually blend blend these two  types of behaviors now you have to design  the, the blending function and the very  standard way to do it is something like  an exponential like this.
+so, what's going on is sigma is basically  one for large do values and when sigma is  1 that means they were only going towards  goal.
+then as we get closer to the goal d  not becomes or do becomes small, then all  were doing is avoiding obstacle.
+and, basically, the parameter here, you  get the tweak, is beta.
+which tells you, how quickly is this  thing going to decay off?
+is it going to  go like this, or is it going to be  slower?
+that's, that's really the, the  design choice we would have to, to make.
+if we're using this kind of exponential  blending function,  which for the record is quite standard.
+so the punch lines behind this lecture is  really that we,we have two choices when  it comes to, switching, or mixing  behaviors.
+one is to  switch hard between avoiding obstacles  and going to goal.
+and the other is to kind of blend them.
+and as we've seen, there are drawbacks  and benefits with both of them.
+so, if you're switching hard, you can  guarantee that your system doesn't do  anything stupid but you get a bumpy ride  potentially out of it.
+if you're blending, you get something  much nicer and smoother out but, the  guarantees are kind of gone.
+so of course, what we want to do is have  our cake and eat it.
+meaning we want to take what's best with  both of them.
+so, we want to get the performance  guarantees that the hard switches give us  but the smooth ride that the blending  gives us.
+and the answer to that is surprisingly  enough going to be this induced sliding  mode that we've already talked about.
+that is going to give us the means by  which we can do.
+we can walk and chew gum at the same  time.
+yet, somehow guaranteeing that we don't  trip over just because we started to chew  gum.
+so in the next lecture, we're going to  start approaching this issue.

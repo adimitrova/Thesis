@@ -1,0 +1,45 @@
+if you pick vector components, this is just written in a very corner frame, independent way.
+i'm just taking the cross product operator and representing it in a matrix form.
+now to actually numerically compute it, you'd have to take r1, r2, r3.
+and then your first rule becomes 0 minus r3 plus r2, right, and you break it down.
+that means you've picked a particular body frame.
+so if you do that and that matrix with the minus sign, it gives you this definition.
+if you replace r1, r2, r3 with just x, y, and z this should look very familiar.
+and now you would have your y squared plus z squared, x squared plus z squared, x squared plus y squared.
+those are your different moments of inertia definitions.
+and then we have our off diagonal terms that appear as well.
+so generally, to have a rigid body your inertia tensor, which is what i'm showing here, will be a three by three matrix when you numerically evaluate it.
+but to do so, there's two conditions.
+one, we've picked about which point we're taking moments.
+these r's are defined relative to the center of mass.
+and then when you numerically evaluate it, you pick a particular coordinate frame and say, okay, my one access point is forward.
+the second one is to the left and then the third one is up.
+if you pick a different coordinate frame, you would have different components.
+and you get a different inertia matrix representation of the inertia tensor.
+the inertia tensor is really an invariant, that's it for this space craft has one inertia tensor.
+but then how we numerically express it.
+there's an infinity of answers, because i could pick a infinity of body frames to break out these vectors and do the tildes and compute this.
+now this body integral is not very fun.
+it gets tedious.
+cat programs love this.
+they know where every nut and bolt and panel and fuel tank is, and everything that goes on the spacecraft.
+so it simply has to sum them up, know the location, do this math, times dn and sum everything up, and it spits it out in a heartbeat.
+doing it analytically a little bit tedious, so we will look at tricks that we don't have to redo this integral every time.
+what if i am not taking moments about this point, but i am putting this at the end of a robot arm and i need movement about this other point.
+do i have to redo all this math?
+so angular momentum expression, as we said, was just hc.
+you already identified that term as being nothing but the inertia tensor.
+i am writing it as ic times omega.
+there is now some notational subtlety here.
+here i picked a particular bonding frame.
+here i am not specifying body.
+so i'm really equating matrix math is equivalent to this tensor vector math.
+the inertia tensor, think of it as a two-dimensional vector, right?
+i can write these quantities in a general way, but then when i evaluate any vector i have to have a coordinate frame to break down the components and add and subtract them.
+but you can write them in a very coordinate agnostic way.
+and that's what i'm having here.
+i'm not saying, if this is the b frame, this better be in the b frame.
+otherwise, you're adding apples and oranges.
+but, this can also both be in the q frame or the r frame, it doesn't matter.
+in the vectorial way, we can just write the tensor operator like this.
+so that's the inertia tensor.

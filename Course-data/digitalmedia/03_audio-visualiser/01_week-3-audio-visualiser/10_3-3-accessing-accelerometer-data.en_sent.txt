@@ -1,0 +1,129 @@
+[sound].
+hello.
+in this lesson i'm going to teach you how  to access accelerometer data from your  mobile device.
+most mobile devices have an accelerometer  in which essentially it allows you to  figure out what angle the device is being  held at.
+and of course, we're going to use this  for creative purposes, to control sound  and visualization.
+the accelerometer will give you three  values which relate to the various angles  from the phone, so it can be twisted like  this or like this, or like this.
+so lets have a look at those.
+so, here's some code which will, will  create an accelerometer and print out  some data from it.
+so, let's run this on the phone, and see  what comes out.
+first of all, i'm going to type it in, so  we need at the top, we create a global  variable.
+and the type of the variable is  accelerometer.
+and this is a built-in class for those of  you who've done a bit more programming.
+which comes with our audio and graphics  api.
+let's call, i'm going to call it xl.
+so in set-up.
+as usually we create teh variable xy  equals new acceleromter.
+okay so that's.
+what we're going to do and now i can  quere that accel to now get some  information.
+so lets just for example print out the x  value.
+okay so i has an x y and z value.
+well we put them all out actually and  we'll do x is y is, and z is.
+okay.
+and i just need to edit this.
+so that is getx, gety, and getz.
+so i've got 3 lines in my draw method  there.
+so every time draw gets called it's going  to ask the accelerometer, what is your  current x position?
+what's your current y position?
+what's your current z position?
+okay, so let's run that on the device,  and we're going to just look at the  console to see the numbers that are  coming out.
+right, there are the numbers coming out  of the device.
+that's telling me the current position of  the device.
+now if i pick it up.
+and start moving it around.
+you can see depending on which angle i'm  changing at different numbers are  produced.
+and basically the range is from minus ten  through to ten.
+so when you're at the most extreme angle  the numbers will go up to ten.
+and, when you're at the opposite extreme  they'll get a minus ten.
+so the values that come out from the  accelerator are in the range minus ten to  ten depending on the different angles  you're holding the phone at.
+so how can we use this creatively?
+well, first of all let's just see if we  can use it to set the color of the  background.
+so we're going to do this.
+so we'll create some variables, which are  going to be our red, green and blue.
+and we can set the red value using the  accelerometer data.
+and then the green, and blue.
+right.
+but remember, these values are in the  range minus 10 to 10.  and the range, the range that we need  for, colors is 0 to 255.  so well done if you've spotted that  already now what can i do here so to get  into the range 0 to 255 so i add 10.  okay that puts it in the range 0 to 20.  and then, i can just.
+do an approximation here and just times  it by 10.  so it goes up to 0 to 200.  okay.
+that's near enough.
+you can calculate that accurately by  dividing 10 by  255 by 10.  sorry, 255 by 20.  so we could do that.
+we could do 255 by 20 to do it really  accurately.
+[sound].
+okay.
+so let's do that with the other ones as  well.
+[sound].
+right.
+and then, now this, remember that these  that come out are things like 0.15 or  -9.3 which are floating point numbers.
+but i've declared my rgb's as integers.
+so what i need to do is then cast it,  convert it to an integer before i can use  it.
+finally, i'm going to set my background  color using these values r, g, b.  okay so, we've used the accelerometer  data to set up some red green and blue  value and then we're going to use that to  set up the background color so lets hit  play.
+and see what happens to the background  color of the screen as we move the device  around.
+[sound].
+okay.
+so we pick up the device.
+and as i move it around, you can see the  background color changes.
+now it, it seems to be changing kind of  slowly, so it kind of jumps from one  color to the next.
+that's because the accelerometer data  updates quite slowly.
+so remember, for example, the audio, what  we did with audio data, that updates very  fast.
+so you know, that's very smooth and very  rapid, but it's, other types of data are  slower.
+so, for example, the frame rate in  processing, which is the number of times  a second it cause a draw function is, is,  the default is 60.  whereas the number of samples a second is  44,100 when you're dealing with audio.
+so there's all these different rates of,  of data flow.
+so what we're dealing with is a flow of  data from a sensor in the phone which is  coming in at certain rate.
+that's not very high rate in this case.
+okay so that, that's dealing with  accelerometer data and sending it to the  background color.
+in the next section, i'm going to talk  about how we can map that accelerometer  data to a playback control.
+so there's a line here which if you're  quick you're going to.
+pause the video and quickly go and type  it in, see what it does.
+so lets just lets just put the extra code  we need to be able to do this line here.
+ok.  so back to here.
+so now i need to create an audio player  and i want to control the speed with the  accelorometer.
+so i can twist the phone around and it  will slow down and speed up the, the  playback of the audio.
+so we do the usual thing, create the  maxim variable, create an audio player  variable, and then initialize it, maxim  equals new, maxim.
+this should be familiar by now.
+oops.
+and audio so player equals  maxim.loadfile, and the name of the file.
+so, i'm going to use the, the beat we've  been using.
+okay, so thats the player.
+so in the draw method, we just make sure  the player is playing.
+in fact we can.
+so we do player play.
+if the player is already playing we would  just ignore that.
+just make sure its playing.
+then, what we're going to do is say,  player, and set the speed.
+now, let's, let's do a calculation here.
+we're going to do this as a float,  because remember speed so if we pass in a  speed of two, then it will playback the  audio twice as fast, so its going to skip  through all those samples twice as  quickly.
+if we, if we set the speed to one it will  play back at the normal speed so it will  sound as it was originally recorded.
+now, so, the kind of, an interesting  range for speed, as we've seen with the  djvj.
+it might be zero through to two.
+so we need to get that accelerometer  data, and scale it to the range, zero to  two.
+just an organizational note, that i've  just placed these variables from the  middle of the code up to the top of the  method.
+now, everyone has their own way of doing  things when it comes to programming.
+there's many ways to, to program and to  organize your code.
+for me, i quite like to put my variables  at the top of the method so that it's  really clear.
+all of the variables i'm going to use in  that method.
+its a, its a neater way to do it in my  mind.
+so, so i've just placed those at the top  there.
+now, the speed.
+remember, i said an interesting range for  the speed was, say, zero to two.
+so what we're going to do is take that  accelerometer data like, this, okay?
+and we're going to scale it to the range,  zero to two.
+so we're going to do add ten.
+so that puts it in the range zero to 20  again.
+and then we can just divide it by 10 and  that will put it in the range 0 to 2.  so then we use that set the speed.
+so lets see how that goes.
+i'm using x so that's me twisting the  phone like this.
+so hopefully what this is going to do is  is if you like replace what we did last  week which is the having to touch the  screen to change the speed now we can  actually just move the phone to change  the speed.
+so it becomes maybe a more embodied  experience.
+more like a real instrument where you  move around and it changes the sound.
+so lets lets run that.
+[music] okay so i pick the phone up and  you can hear the speed's already changing  now if i tip it that way, [sound] you can  see it's.
+>> [music] it's now going really fast.
+and i'll twist it back around.
+i can take it to a stop.
+so let's just try and play with that a  bit.
+[sound] so, you can see it becomes a  really fun thing to do and, and once you,  if you got a few sounds going, you can  start really jerking the phone around and  getting quite creative with the way you  perform with that thing.
+so it becomes like a rather than it  being, if you like.
+an interface that you tap on becomes an  instrument that you can, you can really  try to perform with.
+i would recommend that you try some  different sounds in there.
+try just record tones, try recording  anything really and sticking in there and  see if you can map different properties  of the sound to the tellurometer data  there.
+[music]

@@ -1,0 +1,55 @@
+[music].
+a lot of calculus is about understanding  the qualitative features of functions.
+nobody really cares about f of 17.  but you might care about f of a big  number, qualitatively.
+we're going to try to make this concept  of big number a bit more precise.
+well, here's how we're going to get  around talking about a big number.
+we're going to talk about the limit.
+the limit of f of x as x approaches  infinity equals to l.  means that f of x is as close as you want  it to be to l, provided x is large  enough.
+so instead of talking about just plugging  in a big number, i'm going to say f at  some big number, so to speak, is equal to  l if i can make the output of f close to  l by plugging in big enough numbers.
+at this point we've seen a bunch of  different definitions of limits.
+but they're all united by a common theme.
+what if someone had asked us to cook up a  definition of the limit of f of x equals  infinity as x goes to infinity?
+could we come up with a definition for  this?
+yeah, absolutely we can, here we go.
+the limit of f of x as x approaches  infinity equals infinity means that i can  make f of x as large as you want it to be  provided x is large enough.
+consistently when we're talking about  infinity in limits we're never actually  talking about a specific value.
+we're just talking about a value which is  as big as you want it to be.
+let's go do an example at the blackboard.
+there is a question.
+with the limit, of 2x over x+1 as x  approaches infinity.
+before we dive into this analytically,  lets get some numeric evidence.
+this is my function, again fx)= of 2x  over x+1.1.
+i want to know qualitatively, what  happens when i plug in big numbers in  this function?
+so, lets say f100).
+of 100.  well, that's not too hard to figure out.
+22 times 100 is 200 and 100 plus one is  now, 200 divided by 101 is pretty close  to 2.  and there's nothing too special about  100, right?
+if i'd done this four million i would  have gotten two million over a million in  one, which would be even closer to 2.  numerically, it looks like this limit's  two, but we just figured that out by  plugging in some big numbers.
+i want a more rigorous argument, some  analytic that is limit is actually equal  to two.
+how i'm going to proceed?
+my first guess would be to use the limit  law for quotients.
+this is the limit of a quotient which is  the quotient of limits provided the  limits exist and the limit of the  denominator is none zero.
+bad news here is the limits don't exist.
+the limit of the numerator is infinity  which isn't a number.
+so i can't use my limit law for quotients  here.
+instead i'm going to sneak up on this  limit problem by wearing a disguise.
+i'm going to multiply by a disguised  version of one.
+i'm going to multiply by one over x  divided by one over x.  now this is just one.
+admittedly, i have changed the function.
+the function's not defined anymore at  zero.
+but for large values of x, this doesn't  affect anything.
+and i'm taking the limit as x goes to  infinity.
+so i only care about agreement at large  values of x.  i'll do some algebra.
+this limit has now the limit of 2x times  one over x.  which is two divided by the limit of x  plus one times one over x.  which is one plus one over x.  maybe it doesn't look like i've made a  lot of progress here, but this is a huge  progress.
+the limit of the numerator is now a  number, it's two.
+and the limit of the denominator is also  a number.
+and a non zero number, at that.
+so i can use my limit law for quotients.
+this is the limit of a quotient, which is  the quotient of a limit.
+it's the limit of two, the numerator  divided by the limit of the denominator,  as x approaches infinity.
+the limit of the numerator is just the  limit of a constant, which is 2.  the limit of the denominator is a limit  of a sum, which is the sum of the limits  provided the limits exist, and they do.
+the limit of 1 is just 1.  and what's the limit of 1 over x as x  approaches infinity?
+well that's asking, what is 1 over x  close to when x is very large?
+well i can make 1 over x as close to zero  as i like if i'm willing to make x large  enough.
+so the limit of 1 over x as x approaches  infinity is zero.
+that means my original limit is 2 over 1  plus zero, which is 2.
+[music].

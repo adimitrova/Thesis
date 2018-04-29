@@ -1,0 +1,80 @@
+and next topic is flower modeling.
+this is an example of very domain specific modeling operations.
+and the work we introduce here is called floral diagrams and inflorescences.
+the program we present here, discuss here is flower modeling, and the flower modeling is very difficult.
+it has very complicated geometry.
+with you know, petals and [unknown], and also, at the same time, complicated structure.
+so, again, each element has complicated shape, and also we have a very complicated arrangement of interior elements.
+so that's a program we want to address.
+and our approach is like this, for complicated geometry we use very specialized sketching interfaces for all our elements.
+for hunting a complicated structure we again, provide a very specialized structure editor.
+by combing a very specialized system we can make it very much easier for the user to design various kinds of flowers.
+let me show you a video.
+so here's a program we would try to address.
+you know, this kind of flower diagram, a flower more that it consists of many small elements obligated together.
+and then we have complete skeleton structure like this one, i like this one.
+[blank_audio] and then what we do is use a traditional art of presentation called floral diagrams, and inflorescences as an interface for designing our flowers in the computer.
+[blank_audio] so floral diagram, defines arrangements of elements for individual flower.
+[blank_audio] inflorescences defines an arrangement or group of flowers in this model.
+and you see the user interactivity operates the diagram, and then you continuously see this updated to your directory [blank_audio] and the modeling process start with the defining of a floral diagram.
+so in the flower base you arrange individual elements, and then you can see a 3-d measure preview here.
+[blank_audio] so as you see, this is a very specialized dedicated weathering system for flower arrangements.
+[blank_audio] after our getting a diagram, now, the user defines a geometry.
+as you see, we provide a very, very simple sketching interface for defining a shape.
+but here, system will carry [unknown] off a resolution.
+and for each, for our element, our system provides a various indicated sketching apparatus.
+so this is why in is initiating a pulse.
+[blank_audio] and then this is texture modeling, so you draw three lines.
+and then you get this after you get the 3-d model.
+and from the side view the user draws a line, and you get a different shape.
+so with just only four strokes, you will get a very huge form of flower element.
+and you can continuously add more and more strokes, to get more detailed shape.
+and then after having drawn a diagram and 3d components, you establish correspondences, or associations, and then with some information assistance, start to generate an aggregated composition.
+and then you will get, beautiful shape.
+now we assemble them together into a, structure using infrared tendencies.
+you get this template, and then you change the shape, and then you label the shape.
+and now we define axis, center axis by sketching.
+this is an interesting part, so you draw two dimensional stroke to define axis, and then system generates 3d minimum axis that we see.
+this is the last stroke, and then as the user draw, system would generate 3d dimensional axis.
+and sometimes you finish drawing you can rotate and you will get the reasonable 3d shape.
+[blank_audio] yeah, so here's a little bit more description about 2d input to 3d stalk part.
+so without depth assignment if you project your input onto a flat surface it looks unnatural, a very flat shape.
+however, with our algorithm.
+user draws a stroke, two-dimensional stroke, and the system automatically assigns a natural, naturally looking depth variation, so if you look from, look from a sideway, it looks natural.
+so to do this, what we do is assume that three-dimensional curvature is always constant in 3-d space.
+is this assumption we can look into the computer depths.
+and then her are a couple results.
+i think it is very tedious and time-consuming to generate these types of models using traditional 3d general purpose modeling systems.
+but with our system, it's very, much, much faster.
+of course, it takes certain time, but it's much faster than using creation method.
+and you can easily modify them.
+[blank_audio] yup, that's it.
+and then, here are a couple examples.
+these are 3d shapes and these are the structure editors.
+and then here let me briefly describe the other [unknown] 2d stroke to 3d shape.
+so as i said the basic assumption.
+the main idea is to assume constant curvature in 3-d space.
+which means second derivatives, exposition of second derivative of zed, z positions by y value, is the constant.
+y is a growth direction.
+see here again, this is two-dimensional input on x-y plane.
+y is a growth direction, and x is sideways vectors and then we compute, we try to compute z values in this way.
+so you don't have passed the project stroke onto x y plane and resample.
+so we put the sample points here, and then we suppose that 3d curvature is constant so.
+second derivative of x along y and second derivative zero y equal constant.
+and we know this volume by this shape.
+we also will assume this constant body by maximum of this volume, we summarized here.
+maximum curvature.
+and here.
+the curvature in x-y plane gets smaller here.
+but instead we at, assign large value here, which means large curvature in three directions, and here.
+so this is given value, and this is given value, and you get this value.
+and after get this values secondary letter z, just integrate twice, and then you will get the variable, so that is the algorithm.
+so to learn more, the original paper can be found in siggraph 2005 titled floral diagrams and inflorescences.
+interacting from our modeling using our botanical structure research.
+now, interactive modeling has a long history of research, and one famous book is called the algorithmic beauty of plants, and this one discusses some really interesting techniques using model based systems.
+so here is a, one, example, you draw this kind of synthesis, and you will get this kind of very complicated structure, and this is very beautiful mathematical system.
+however, it is a little bit unintuitive for our artists to design more of them.
+so this, this entry people use this kind of graphical rule editor to generate a 3d shape like this.
+and this, and this paper about the paper titled, modeling methods and user interface for creating plants, was currently available as a modeling system called xfrog.
+this is a very popular tool.
+if you are interested in this modeling i suggest you take a look at these systems

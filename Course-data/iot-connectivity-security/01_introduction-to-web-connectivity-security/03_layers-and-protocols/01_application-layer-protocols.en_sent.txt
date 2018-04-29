@@ -1,0 +1,102 @@
+[music] welcome to the lesson on application layer protocols which is part of the web connectivity segment of the course.
+in the previous video lecture i have explained the basic function of the application layer, which is the top layer in the tcp/ip model.
+in this lesson, we will look into the basics of application layer protocols and go through some of the protocols that enable the world wide web.
+let's start with understanding network applications.
+first and foremost, not all applications that you use have to be networked.
+this was very true previously, but is gradually becoming uncommon.
+applications that don't require data exchange over the network and can work on their own are called stand-alone applications.
+for example, many video and image editors, word processors and cap tools are such applications.
+currently also these applications are becoming connected, as there are, for example, photo editing applications that allow you to share images over the internet.
+soon we will probably have no standalone applications, except in critical security systems and real time systems.
+networked applications, unlike standalone applications, need to connect to other applications over the network.
+there are some applications that are inherently networked, such as e-mail, web browser and ftp tools for file transfer.
+on the other hand, there are applications that we have made connected because of their utility.
+a good example is a word processor which lets you collaborate with other authors around the globe simultaneously on a shared document.
+in order to communicate over the network, these applications need to follow certain rules so that there is consistency.
+the combinations of rules and suggestions are called protocols.
+they can be different aspects of these protocols, but some of the basic aspects that every application layer protocol should provide, include the type of data or payload format.
+that can be exchange by these protocols and the way it should be formatted and packaged.
+the last thing you want in network communications is that the applications don't understand each other's messages.
+there can be different types of messages that are exchanged.
+with a request message, an application asks for some data.
+with a response message, an application provides some data.
+with a control message, an application commands and controls a remote application.
+these are just the three basic types.
+they can be more as we will see later.
+after defining the message type, the protocol should define the fields within the message, including their position and meaning.
+the last important thing is to define control and communication rules and regulations, addressing questions such as when and how can applications send messages, what happens when a response is received or is not received at all, or when an undesired response is received.
+and how to react to different control messages.
+the more such rules are specified, the more compatible two different implementations of the protocol will be.
+but it will also increase the complexity of the protocol.
+to understand the application layer protocols, we will take the technologies that enable our web experience as an example.
+the web is the most dominant way for humans to exchange and consume information and media over the internet.
+the key technologies that enable this exchange of information are the following.
+html or the hypertext markup language that defines how the content or webpages should be formatted.
+a web browser, the application that reads the html files and presents them in a human understandable formats.
+a uri or uniform resource identifier, is a way to address pages and information on the web.
+this is how you and the web browser know where to go to find the next piece of information.
+for example, www.google.com is a uri which tells you want to go for a google search.
+finally, http, the hypertext transfer protocol.
+you have a browser that will access the information and uri, the location from where to access it and html is the format of the information.
+now the question is how will the browser send a request and receive the html pages?
+that is where http comes in.
+it's the protocol via which applications communicate.
+is not the only one, but is the one you encounter the most.
+out of these technologies, the one that concerns us the most is http.
+so let's look at it in the light of the characteristics we defined for application layer protocols previously, namely payload formats, message types, message syntax and rules.
+http is the protocol via which your browser sends a request to remote server over the internet.
+it is inherently a stateless protocol, meaning that it keeps no information about the state of the connection.
+each subsequent request is sent via a new tcp connection.
+there is an http property called keep alive, which tells the server to keep the connection open for subsequent requests.
+as we are dealing with embedded systems that have limited memory and might not need to communicate that frequently, it is recommended to disable keep-alive to save up memory.
+a simple http request has three sections.
+first, method, which defines what type of message you are sending, or for the sake of simplicity what type of command you want the server to execute.
+second, uri at rest of the remote server, and third the protocol version.
+there can be another section called headers, which gives extra information about the command.
+here's an example request for accessing google.com.
+let's go through the response message.
+200 is a status code meaning okay, or that the command executed properly.
+the content type header shows the type of data and the format in which the server will send the data.
+in our case, it's a text file formatted using html and utf-8 is the text encoding.
+there is also information about the type of the server that was running and the date, time and so on.
+let's look at another example.
+this time we send another command to the google server, a post command.
+post means that you want the server to accept the data you are sending to it.
+we see that the response code is now 405. meaning that you are not allowed to execute that specific command on the server.
+the server sends you the list of allowed commands as a response.
+these examples demonstrated the characteristics an application protocol should have.
+different message types, formatting options and control mechanisms that determine what happens when a desired or undesired request or action happens.
+http is a very mature protocol and has response and control messages for a wide variety of situations.
+the web is not composed of just text files.
+there are other types of content as well.
+for example, images.
+http supports transporting a different types of medium such as text, images, audio and video.
+the receiving end or the client side should be able to display and process this data.
+the content type header tells the client what type of data was sent to it.
+depending upon your browser and target system, you are either able or unable to play the received contents.
+here are some of the common audio and video format supported across systems and browsers.
+for audio, mp3 and aac license dependent and therefore not supported by browsers like opera and firefox.
+but if your operating system has the proper codex installed, opera and firefox will play these formats.
+ogg vorbis on the other hand is an open standard format and is supported by firefox and opera but not by internet explorer.
+the wav format is supported by all modern browsers.
+for video, h.264 is supported by all major browsers.
+and there are hardware decoders available for it too.
+it also offers good compression, but it might not be royalty free and requires a license.
+among free video codecs, vp8 and theora are the formats supported by the major browsers except for internet explorer.
+there are different protocols that allow you to stream media instead of merely downloading them in chunks.
+progressive downloads, meaning downloading files in small chunks and streaming technically work the same way.
+a large file is cut into small pieces and then transferred.
+however, when progressively downloading a video file, you might have to wait for the whole file to download before you can play it.
+or you can play it right away but you can move forward past the portion that has been already downloaded.
+you need streaming protocols to achieve fast forward, rewind, and play, pause features.
+the benefit of streaming media via http is that the traffic goes through a port which is rarely blocked.
+it is also an affordable solution as the infrastructure is already available.
+and http streaming solutions can scale according to the user's network.
+that is, the bit rate can be increased or decreased based on the user's network conditions.
+a few examples of http video streaming protocols are hls by apple, mpeg-dash developed under mpeg.
+it has been an international standard since 2012. and then there is microsoft smooth streaming, supported by iis, microsoft's web server.
+so as a short review, in this lecture we looked at some specifics of application layer protocols and used http as an example.
+then we discussed briefly the types of the web and streaming media.
+in later lectures we will look into the protocols that make the web and video audio stream possible.
+more specifically, we will look at transport protocols like tcp and udp.
+[music]

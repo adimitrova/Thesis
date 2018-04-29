@@ -1,0 +1,89 @@
+[sound] so, who knows what a function is,  right?
+but i know what it does.
+it takes an input value, and produces an  output value.
+and we've got a whole bunch of functions,  right?
+and we can take these functions and start  asking questions about them.
+what happens when you plug in a really  big number, or a really small number?
+or, or what happens when you plug in two  numbers that are nearby each other?
+how are the outputs related, right?
+those are the kinds of questions that are  going to occupy us for the rest of the  term.
+but even before we start thinking about  questions like that, right?
+there are  some things that we can still ask about  functions.
+like, how do you know when two functions  are the same function?
+for instance, here's two functions.
+f(x) = (1+x)^2, g(x) = x^2 + 2x + 1.  are these the same function?
+now, let's try.
+look at the value like f(2).
+f(2) = (1+2)^2, start replacing the x by  two,  1 + 2 = 3.
+3^2 = 9.  well, what's what's g(2)?
+well, g(2) would be 2^2 + 2 * 2 + 1.
+2^2 = 4, 2 * 2 = 4 + 1,  4 + 4 = 8 + 1 = 9.  look, f and g, when i plug in x = 2 give  me the same output value of nine.
+and that should be a little bit  surprising, right?
+because the way that f and g are telling  me to compute their output is totally  different.
+f takes the input two, adds one to it and  squares it to get nine.
+g takes two, squares it, doubles it, adds  those two numbers to one, to get nine.
+so, the method by which f and g are doing  the calculations is totally different,  right?
+this sequence of operations is not the  same as this sequence of operations.
+the, the rules are different.
+and yet, look at this.
+f(x), for any value of x, right?
+is 1 + x  * 1 + x,  right?
+that's 1 + x^2.
+well, i could expand this out, right?
+1 * 1 + x, and then x * 1 + x.  i could combine some of these terms,  right?
+1 + x + x = 2x.
+x * x = x^2.
+look, 1 + 2x + x^2, that's g(x).
+this is really quite surprising.
+f and g don't compute their output in the  same way, right?
+this one is doing something different  than this function, and yet, for any  input value, f's output value is this,  which is the same by expanding out as  g(x).
+now, how we're going to deal with this?
+we're going to say that f and g are at  the same function,  right?
+not because they have the same rule,  right?
+but because for every input value, they  have the same output value.
+here's a much more subtle example.
+again, i got two functions.
+f is defined like this.
+f(x) = x^2 / x,  and g is defined like this,  g(x) is just x, the identity function.
+same question, is f the same as g?
+are these the same function?
+now, they're not the same rule, right?
+this is not the same as this.
+so, you know, it's a little more subtle,  you know?
+but that's okay, right?
+two functions are the same if they have  the same output for each input.
+so, let's see if that happens here.
+let's just pick some value to get a first  test.
+let's take a look at f(5), right?
+f(5) would be 5^2 / 5,  that's 25.
+5^2 / 5, that's 5.  well, that's the same as g(5), right?
+if  i plug anything into g, i just get the  same thing out.
+so, plug in five, you get five.
+so, at least at the value five, f and g  agree.
+you might think this always works,  right?
+because of something like this.
+you might want to say, well, f(x) that's  x^2 / x,  no matter what x is.
+you might rewrite this x^22 as x * x / x.  and then, you'd be tempted to say, cancel  one of these xes with the x in the  denominator.
+and then, you'd write equals x.  and x, well that's, that's g(x).
+so, this looks like a pretty convincing  argument, right?
+over here, i've got f of x,  i've got a bunch of equal signs.
+and over here, i've got g(x).
+so maybe that means f and g are the same  function.
+ha, but not so fast.
+what happens if you plug in zero?
+what's f(0)?
+well, i know what g(0) is.
+g(0) is zero, right?
+zero is in the domain of g because zero  makes sense for this rule.
+but, what's f(0)?
+well, that would be zero squared over  zero,  whoa.
+okay.
+you see this is terrible,  right?
+i cannot divide by zero.
+this rule, x^2 / x doesn't make sense  when x is equal to zero.
+so, zero is not in the domain of f,  but it is in the domain of g.  so, i'm going to say that these are not  the same function.
+they don't have the same domain,  right?
+f isn't defined at zero,  and g is defined at zero.
+in that sense, these are really different  functions.
+this example suggests that there's a real  richness to this theory of functions,  right?
+and we're going to be studying it a lot  more this term.

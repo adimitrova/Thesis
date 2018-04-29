@@ -1,0 +1,29 @@
+[music] i must now unveil a secret which is rarely revealed when people are first learning about antiderivatives.
+consider for example the function f of x equals 1 over x. what is the general antiderivative for this function, right?
+what's the most general thing that differentiates to 1 over x?
+well, i know what anti derivative log of the absolute value of x. and that's right.
+because the derivative of log absolute value x is equal to 1 over x. so, an anti derivative of 1 over x is log of the absolute value of x. in fact i know some other anti derivatives as well.
+for example, the derivative of log of the absolute value of x plus 17 is also equal to 1 over x, right, because the derivative of 17 is 0. more generally the derivative of log of absolute value of x plus some fixed constant is equal to 1 over x. so this is a very general anti-derivative for 1 over x. but there are many, many more anti derivatives where those came from.
+for example, here's another one that doesn't fit into the pattern that we've seen thus far.
+with the final function big f. and i'll define it using this, piece wise notation, right?
+so if x is positive the function big f will be defined to be log x plus 17, and if x is negative, the function will be defined to be log of negative x plus 20. and in fact, the derivative of this function is 1 over x, so this is an antiderivative for 1 over x. the upshot here is that the constant could be different to the left and to the right of zero.
+so the most general anti derivative of 1 over x is a function of this form, right?
+big f, log of x plus c if x is positive.
+and log of negative x plus d if x is negative, just for some constants c and d. we can see this in a graph.
+well here i've got a graph of y equals log x. and here i've got a graph of log negative x. and the point, is that i can move these two graphs up and down, independently, without affecting the derivative.
+no matter how i move these graphs up and down the derivative is always 1 over x. i mean, if i just move this thing up and down, it doesn't affect the slopes of the tangent lines at all.
+if i move this piece up and down, it doesn't affect the slopes of the tangent lines at all.
+and i can move them up and down independently.
+'because i don't really have to line up at all, right?
+i mean, since the function's not defined at zero, i don't have to worry about making them agree anywhere.
+i just slide them up and down fully independently and nevertheless the derivative is always 1 over x. one way to summarize this is as follows.
+so suppose that f is a function with an antiderivative big f. then any other antiderivative for little f has the form big f of x plus c of x. right?
+c's not a single constant anymore.
+c is some locally constant function.
+the point is that this so called constant could be different on different pieces of the domain.
+just like in this example with 1 over x. the constant can change on the right and the left hand side of zero.
+here's the sad, sad truth.
+in spite of all of this, some textbooks nevertheless write that the most general antiderivative of 1 over x is log of the absolute value of x plus some constant c. all of these provides a sneaky way out.
+this is perfectly fine, right?
+so this is fine provided what?
+provided that c isn't a constant but c is a locally constant function of x.

@@ -1,0 +1,43 @@
+[music] really, why do we have to even bother checking endpoints?
+so, let's suppose that i want to find the maximum-minimum values of this function f of x equals x minus x cubed.
+that function, f, if i considered on the whole real line, doesn't achieve a maximum or minimum value.
+f of x is really negative if x is really positive.
+and conversely, f of x is really positive if x is really negative.
+true enough.
+so, let's ask a better question.
+what if i want to maximize and minimize this function on the closed interval for minus 3 to 3?
+this is now a continuous function on a closed bounded interval.
+so, the extreme value theorem guarantees that i'll be successful, right?
+it guarantees that there is some input which minimizes this function's value and some input which maximizes this function's value on this interval.
+i'll begin by listing off the critical points for this function.
+so, i'll differentiate this function, right?
+and if i differentiate that function, the derivative of x is 1, and the derivative of minus x cubed is minus 3 x squared.
+alright, so, there's the derivative.
+i'm looking for places where the derivative is equal to 0, or the derivative doesn't exist.
+well, this function is differentiable everywhere.
+so, there's no critical points where the derivative doesn't exist.
+but there are going to be some places where the derivative is equal to 0. let's find them now.
+so, i'm trying to solve this equation.
+i'll add 3x squared to both sides, i'm really trying to solve the equation, 1 equals 3x squared.
+divide both sides by 3, so now, i'm trying to solve the equation 1 3rd equals x squared.
+now, i'll take a square root of both sides and i'll find that x is equal to the square root of a third or maybe negative the square root of a third, so i'll write x is plus or minus the square root of a third.
+these are the two critical points for this function.
+oh, i'm also going to be careful to list the endpoints.
+and we'll see why we have to.
+so, here are the points that i should check, right?
+i should check the critical points, and i just found those two critical points.
+negative square root of a third, and positive square root of a third.
+and i also want to check the endpoints, right?
+and my original question is asking me to maximize and minimize this function on this interval, which includes the endpoint minus 3 and the endpoint 3. so, i'm going to include those on the list of points to check.
+so, where does this continuous function achieve its maximum value?
+and where does this continuous function achieve its minimum value on the given domain?
+so, let's go ahead and just evaluate the function at those four points.
+here are the endpoints, minus 3 and 3, and the critical points plus or minus the square root of a third.
+and when i evaluate the function at these points, what do i find?
+well, i find that the largest output occurs when x is negative 3. and the smallest, the most negative output occurs when x is equal to 3. at these critical points, the outputs, you know, in size no bigger than 1, it's about what nightmarish scenario would've ensued had i forgotten to include the endpoints?
+well, here's the danger, right?
+this is actually what i'm saying.
+i'm saying that if x is in this closed interval, then the largest value of the function occurs when x is equal to minus 3, and the smallest value occurs when x is equal to 3. if i hadn't included the endpoints in my chart, i would have been fooled into thinking that the largest output of this function was 0.38. but on this interval, on this closed interval between minus 3 and 3, the largest output actually occurs at this endpoint.
+the upshot to all of these, is that the endpoints are, in some sense, critical points.
+standing at an endpoint, you can't wiggle freely, so you really can't differentiate when you're standing at an endpoint.
+and a place where you can't differentiate that's one of the critical points.

@@ -1,0 +1,73 @@
+[sound] >> hello, welcome back.
+in this lesson, we will learn about the common attack models for cyber physical systems and the mechanisms to mitigate these attacks.
+attacks on cyber physical systems are divided into passive and active attacks.
+in an active attack, the attacker manipulates the system resources and affects the operation of the system.
+active attacks are carried out within a short period of time.
+in a passive attack, the attackers makes use of the information in the system without interrupting it's operation.
+the passive attacks are done over a longer period of time and are more difficult to detect.
+let's explore different attacks models in more detail.
+eavesdropping, or sniffing is a passive attack in which the attacker captures information transmitted in a system.
+the attacker aims to obtain sensitive information, such as, passwords, session tokens, or any kind of confidential information.
+eavesdropping, therefore, violates the privacy of users, but it does not effect the operation of the system.
+let's have a closer look at potential eavesdropping attacks against cyber physical systems.
+in a wireless communication, an attacker can capture network packets with the receiver.
+if the communication is encrypted, the attacker then try to break the encryption to gain the information.
+in physical or wired links, eavesdropping could be done by analyzing the electromagnetic fields of the wires.
+in addition to wires, other devices such as displays also have electromagnetic emissions.
+that could be analyzed to get some information.
+power analysis is some other way of eavesdropping, in which the attacker attempts to capture some information by analyzing the electrical power usage of a system now, that we got familiar with different types of eavesdropping.
+let's see how we can mitigate this attack.
+eavesdropping can be prevented by using strong encryption.
+this is very important, especially in wireless communications.
+using smart antennas to limit the coverage area of wireless access points and using minimal power for wireless transmissions are other ways of mitigating this attack in wireless network.
+physical protection of cyber physical systems is also very important to mitigate eavesdropping attacks.
+for example, using shielded wires for physical links and using special racks or rooms for critical devices are some methods of physical protection.
+denial of service, or (dos), is another common attack model.
+a dos attack is an active attack in which the attacker targets the availability of the service or system.
+temporarily or indefinitely.
+a dos attack can have a devastating effect on the system.
+dos attacks are carried out by exhausting the systems resources with a lot of valid processes.
+in other words, dos attacks take advantage of valid actions in a system by repeating those actions a huge number of times in a row.
+for example, in icmp or internet control message protocol flood attack.
+the attacker floods the server with several icmp echo requests or ping packets.
+in this case, the server will be busy to respond to ping requests and this will result in a significant decrease in its ability to process and respond to its main services.
+the main objectives of denial-of service-attacks are, congesting network resources, draining cpu memory, reducing computing power, exploiting tcp timers or poisoning domain name translations.
+to make a dos attack even more efficient, multiple computers can attack on a single device or server simultaneously.
+this mechanism is called a distributed denial of service attack or ddos.
+ddos is a multi person, multi device attack that is launched from multiple sources that are distributed over the network.
+ddos attacks, the most dangerous attacks, and are difficult to track and prevent.
+syn flood attack is an example of a ddos attack.
+in a syn flood attack, a device or servers attacked with a flat of tcpc synchronization packets from multiple sources.
+in most cases, to make it difficult to detect the source of attack, the attackers use full source acronises in the scene pockets.
+low-rate tcp targeted attack is another mechanism for dos.
+it exploits the properties of tcp timers and results in degrading the throughput of a system close to zero.
+in order to make a denial-of service attack more difficult to trace, an intermediate host can be used for launching the attack.
+this approach is called reflective dos attack.
+a botnet attack is an example of a reflective dos attack.
+a compromised-key attack is another attack model for cyber physical systems.
+a compromised-key refers to a secret code obtained by an attacker to interpret secure information.
+the key could be a password for logging into a system or a session key for communication between two devices.
+if a key is obtained by an attacker, it is considered a compromised-key.
+in this attack, the sender and receiver usually are not aware of the attack.
+hence, it is considered a passive attack.
+so why are cyber physical systems vulnerable to compromised-key attacks?
+the vulnerability of cyber physical systems to compromise-key attacks is based on the special characteristics of these systems.
+cyber physical systems are physically accessible, and therefore easier to compromise.
+for example, an attacker could physically access a device and obtain a password or a secret key.
+another reason is that due to the resource constrained devices used in a cyber physical system, weaker security measures are implemented.
+for devices and communication.
+weak measures are easier to compromise.
+a compromised-key attack can be mitigated in several ways.
+first, the system should be protected from physical attacks, unauthorized access to the devices, and physical links should be limited.
+tamper proof hardware can be use in critical devices to prevent an attacker from compromising them in case he gains physical access to them.
+also, encryption of the keys and key life cycle management are necessary to protect the keys.
+man-in-the-middle is another common attack model cyber physical systems.
+in this type of attack, an adversary intercepts communication between two parties, captures original messages, and passes altered messages between the parties.
+the attacker impersonates both parties and controls communication.
+he can, for example, get an original message, change some parameters, and then send the manipulated message to the receiver.
+this is an active attack type because it affects the behavior of the system.
+to mitigate the man-in-the-middle attacks, secure communication protocols should be used to prevent the attacker from tampering the messages.
+we will look into subscript of graphic solutions in later video lectures.
+in this lesson, we learned about different attack models for cyber physical systems and also discussed how to mitigate these attacks.
+in the next video lecture, we will look into security issues for real world cyber physical system.
+[music]

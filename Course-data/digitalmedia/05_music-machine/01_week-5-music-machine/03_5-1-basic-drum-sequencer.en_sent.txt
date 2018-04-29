@@ -1,0 +1,111 @@
+[sound].
+wow, what's this?
+it's a drum machine.
+so what, what, how does a drum machine  work?
+well, let's figure it out.
+so, a drum machine has a pattern, pattern  which specifies what rhythm it's going to  play.
+and the way that you, you, you input that  pattern is using these colored buttons at  the bottom, okay, so this is, this is a  tra2a, it's the classic drum machine.
+and you can see, you've got 16 buttons on  the bottom there.
+so if you, if you press a button, and a  light comes on, and that means that on  that beat you're going to trigger a  sound.
+and then, a clock will step it through  the beats, and if it sees that the button  is on, it will play a sound.
+so, what we're going to try and do is  emulate that kind of behavior.
+what we call step sequencing inside  processing.
+so, we're going to have to figure out how  we're going to represent that sequence  int he memory, we're going to have to  figure out how to do the clock and  various other things.
+but it's really nice because if you do it  at this low level you have complete  control over how the sequencer works.
+and that means you have a much wider  range of possibilities to get creative.
+so, let's get into some code.
+so, i've got a basic starter code here.
+and you can see i've got the usual maxim  object.
+and i've got an audio player, which i'm  calling snare.
+which will be obvious why shortly.
+and then, so i create my maxim.
+and i create my snare.
+so, i'm loading in wav files.
+so, this is i believe it's a sample from  the roland tr-909 drum machine.
+but you can obviously use any samples  you'd like.
+but certainly for a drum machine you  probably want to be using short samples.
+so, that's my snare sample.
+and then, my frame rate, i'm setting to  that could be, that could be set to  anything.
+but i'm just setting it to 30, so it's  really explicit how the timing is  working.
+okay.
+then, i've got this variable called  playhead, which i'm setting to 0.  and playhead is, is how i'm going to  figure out when, when to trigger events.
+okay?
+so, when draw gets called, which happens  repeatedly.
+remember, draw is just being called all  the time.
+the playhead is going to go up by one.
+and then, i'm going to check if the  playhead, how far the playhead has gone,  and if it's gone up to 30, in other words  if i, if i take the remainder of the  playhead in 30 then, and it's 0, that  means that it must have got through three  calls to draw, sorry, 30 calls to draw.
+so, that means because it's 30 frames a  second that means one second has passed.
+so, this little if statement here, checks  if a second has passed, okay.
+and so, when one second passes, i queue  up the snare drum sound and i play it.
+so, the, the sound we expect to hear from  this is a snare drum being triggered once  a second.
+[sound].
+okay, there you have it.
+now, that's not really the best rhythm  i've ever heard.
+so, i think quite a few songs aren't that  far from that rhythmically, but we can,  we can do better.
+so, what we need to do now is, is address  that problem i mentioned earlier which is  how to represent a sequence in the  memory.
+so, the way i'm going to do it is i'm  going to take a boolean array and call it  snare, snseq, like that, so i'm giving it  a kind of short variable name so i don't  have to keep typing it in, okay.
+so, snare sequence.
+now yes just to reiterate it's a boolean,  so that's going to contain trues and  false values.
+because the idea is that it, remember  with the buttons on that drum machine we  saw at the beginning they're either on or  off.
+so, boolean is fine.
+and it's an array so that means you can  install several booleans in one place,  which makes it more convenient.
+so, let's initialize it.
+snare sequence equals new boolean.
+and i'm going to put four slots in it,  and then i'm going to put a rhythm in.
+equals true.
+so, it's going to play a snare on the  first beat, let's put four beats in, one,  two, three, and this, they're going to  miss it on the second beat and it's  going to trigger it on the and then two,  it's going to do two.
+so, the idea with this rhythm, it's true  false true true.
+so, it's going to be like this.
+[sound].
+okay?
+so, we get three in a row, and then a,  and then a gap.
+right, so let's, so the problem is i now,  i now need to look into that array as my,  as my, my ticking clock, you know, my  playhead.
+every time playhead gets to zero, i need  to figure out where i am in the array.
+so, i'm going to need another variable  which is it's going to be called  snseqpos, okay?
+so, snseqpos is going to start off at 0,  okay?
+now i'm going to, want to do is every  time the the playhead tells me it's time  to, to, to play a sound, i'm going to  increase my, my sequence of position by  one.
+right, and then, i'm going to check if  its gone too fast, snseqpos.
+so, i'll do a check.
+if, snseqpos is equivalent to  snseq.length, so in other words, if i've  got up to four which is a remember from  marco's lectures about arrays that arrays  are zero index.
+so, we don't want our index to go up over  four and this is our index.
+so, so we check if it's gone that far.
+if it's gone that far then we reset it.
+okay, so that, that code there is, if you  like, a simple thing which steps through  from zero to three then goes back to zero  again.
+so, we can just check that code by, by  testing, so let's print line position.
+and let's print it out, snseqpos.
+okay, so we should see it going zero,  one, two, three, zero, one, two, three.
+so, let's run that.
+save and run.
+[sound].
+okay, so you can see that's going, that's  counting zero, one, two, three, and back  to zero again.
+okay.
+so, we've got our in, so we can now use  that to index into the array.
+so, we go snseq.
+and so, what we're going to do is  basically if there's a true value in the  in out sequence there, then we trigger  the sound.
+so, snare sequence, seq snseqpos.
+this is equivalent to true, but we can  actually, we don't need the equivalent  true because we can just put it directly.
+because remember in an if statement you  can put a boolean directly in there.
+but let's make it really explicit.
+and there's different styles of coding,  some more explicit than others, so let's  be really explicit.
+and just check if it's true, then we're  going to play the snare.
+so, remember that beat i mentioned  earlier?
+so, it was one, two, three, gap, one,  two, three, gap.
+okay.
+so let's see if we can get that -- that  going now.
+so, i'm going to run it.
+[sound].
+so, you can hear it's got that gap, but  it's too slow so i'm going to speed it  right up.
+so, i'm actually going to just double my  frame rate and that should speed it up.
+okay, let's save.
+[sound].
+okay, so the, the rhythm's a little bit  irregular.
+that's because i'm doing a screen capture  at the same time.
+so, if you're just running this in a  normal browser it should be fine.
+and okay, so, so we defined a basic  sequencer which we can we can use to  trigger different sounds.
+so sounds at different times.
+now so the programmer can edit the  sequence and make it longer and so on and  you can make a really elaborate rhythm  sequence.
+and it's obvious that you can also add  another boolean array.
+and then you need another another  position counter, and then you an add  more and more tracks.
+so, that will allow you to build a full  multitrack drum machine.
+and i'll leave you to go and have a go at  doing that, and, and we'll show you a  kind of fully worked example later.
+[music].

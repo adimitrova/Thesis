@@ -1,0 +1,149 @@
+here we are at a lecture hall at the ohio  state university.
+i'm bart snap.
+today, we're going to see how we can use  calculus to study the path of an object  through space, in particular this orange  ball.
+when the ball leaves my hand, it's going  pretty fast.
+but as it approaches the ground, it's  going faster and faster, and faster until  it hits the ground, bounces up at nearly  the same speed.
+and then it's going quickly, but slower,  slower, slower, until, it reaches its  pinnacle and then it stopped.
+and then it starts falling back down  again, slowly at first, but then quicker,  quicker and quicker, and then i, grab the  ball.
+so how fast was the ball moving well lets  see.
+the total distance the ball traveled was  about, 3.14 meters and the total time the  ball traveled for, was about 1.1 seconds.
+dividing this, we find this is equal to  2.85 meters per second.
+this is the average speed of the ball.
+now, of course, i took the ball and i  threw it down with some force and then it  came back up and hovered here and then  came back down if you recall.
+so, what i'm trying to say is the speed  of the ball was changing the entire time  and this is the average speed and so  sometimes the speed was faster and  sometimes it was slower.
+here.
+so, think about when i just threw the  ball down.
+from leaving my hand to touching the  ground, that was about 2. seconds.
+and the distance it traveled was about  one meter.
+one meter divided by 2. seconds is 5  meters per second.
+so we found the average speed to be 2.85  meters per second.
+but that's not really the instantaneous  speed of the ball.
+because when i threw down the ball, the  ball was traveling much faster.
+and then the ball bounced up.
+and then it started slowing down.
+and then it slowed down to almost no  speed at all.
+and then it came back into my hand going  a little faster.
+so how do we figure out how fast the  balls going at say one of those other  time intervals.
+we found the average speed over the  course of the entire trajectory the full  1.1 seconds to be 2.85 meters per second.
+however if we only consider the first 2.  seconds we find the average speed to be  five meters per second, this makes sense  because if you watch the video you see  the ball is moving rather quickly in the  first 2. seconds of its trajectory.
+you probably asking yourself, how does  bart know that the ball traveled one  meter during the first 2. seconds of its  journey and 3.14 meters during the whole  of 1.1 second journey down up and down?
+well, we know this because we got the  video.
+alright, here bart is just about to  release the ball from his hand.
+and 1, 2, 3, 4, 5, 6 frames later, the  ball hits the ground.
+there's 30 frames being shot in every  second so that means that it took 6 / 30  or 2. seconds for the ball to hit the  ground.
+making a bunch more measurements, i can  combine all this information in a graph.
+this is a graph of a function the input  to this function is time so along the x  axis i'm plotting time and seconds.
+the output to the function is the height  the height of the ball at that particular  moment in time.
+now, on this graph, i can go back now and  try to figure out how fast the ball is  moving at say 4. seconds after bart  releases it and at 8. seconds after bart  releases it.
+so let's try to figure out how fast the  ball is moving at 4. seconds.
+here i've marked the position of the  ball, .4 seconds after bart releases the  ball.
+now we don't really have any way of  figuring how fast the ball is moving at  that particular moment.
+what i can do is figure out the average  speed of the ball during some time  interval.
+so as sort of a first guess to how fast  this thing is moving at 4. seconds, i'm  going to figure out the average speed of  the ball between 4. seconds and 6.  seconds.
+alright, so i've got this handy table  here, of function values at 4. seconds.
+the the ball was 101.1 centimeters above  the ground and 6. seconds after bart  released the ball, the ball was 16.8  centimeters above the ground.
+so i can put that information together to  figure out the speed of the ball between  4. and 6. seconds.
+alright.
+so  4. seconds to say 6. seconds at 4.  seconds on my chart the ball was a 101.1  centimeters above the ground.
+at 6. seconds the ball was a 161.8  centimeters above the ground.
+now this time interval has a length of 2.  seconds.
+and how far did the ball move during that  time interval?
+well 161.8 - 101.1 is 60.7 centimeters.
+so during the 2. seconds that elapsed  from 4. seconds to 6. seconds after bart  released the ball, the ball traveled a  distance of 60.7 centimeters, which means  the speed, which is the distance traveled  over time is 60.7 over 2. centimeters per  second, which is 303.5 centimeters per  second or 3.035 meters per second.
+which is about seven miles per hour.
+now i could do a little bit better,  alright?
+here i'm calculating the average speed of  the ball between 4. and 6. seconds, but  i'm trying to figure out how fast the  ball is moving at this particular moment.
+so instead of just calculating the  average speed during this time interval  to be about seven miles per hour, i could  do it over a shorter time interval, all  right?
+instead of 6. to 4,. i could go from 4.  to say 5..  here's half a second after bart released  the ball.
+and i could figure out the average speed  of the ball during this part of its  trajectory.
+let's see how we calculate that.
+well, it's the same kind of game.
+all right?.4 seconds after bart released  the ball, the ball was 101.1 centimeters  above the ground.
+5. seconds after barb released the ball,  looking back at my table i find that the  ball was 136.5 centimeters above the  ground.
+136.5 centimeters.
+this time interval was 1. seconds long.
+and how far did the ball move during that  time interval?
+well, that's 35.4 centimeters.
+136.5 minus 101.1 is 35.4.  so, the ball moved 35.4 centimeters.
+during the point one seconds that elapsed  point four seconds to 5. seconds after  bart released the ball.
+speed is how far you've traveled over how  long it took you so if i divide these  this is the speed of the ball the average  speed of the ball between point four and  point five seconds and this works out to  be 354 centimeters per second i mean i'm  dividing by this very nice number point  one.
+which is the same as 3.45 meters per  second which is about eight miles per  hour.
+and indeed, if you look back at this,  this chart, between 4. and 6. seconds,  yeah.
+maybe the average speed was u, about  seven miles per hour.
+between 4. and 5. seconds the average  speed was a little bit higher.
+you know, the average speed here worked  out to be eight miles per hour instead of  seven miles per hour.
+the average speed of the ball during this  time interval is higher than during this  whole time interval.
+we're still not there.
+we are trying to figure out how fast the  ball is moving at this particular moment  right not the average speed between 4.  and 5. seconds.
+to get closer, right, we should take an  even smaller time interval.
+instead of 4. to 5. well, why not look  back on our handy chart here and see  well, here is where the ball is at 4.  seconds.
+here's where the ball is at 42. seconds.
+we could use this information to figure  out the speed of the ball just during the  very tiny time interval between 4. and  42. seconds after bart releases the ball.
+well, let's do that.
+all right.
+so again, .4 seconds after bart releases  the ball, the ball is 101.1 centimeters  above the ground.
+.42 seconds after bart releases the ball,  the ball is 109 centimeters above the  ground, that's what this chart is telling  me .42 seconds after bart releases the  ball, 109 centimeters above the ground.
+so that means during the very tiny time  interval 02. seconds that elapsed between  4. seconds and 42. seconds after bart  releases the ball, the ball has traveled  how far well 109 - 101.1 centimeters is  just 7.9 centimeters.
+so in two hundredths of a second the ball  has traveled 7.9 centimeters.
+to figure out the speed i again divide  7.9 / 02. is 395 centimeters per second.
+which is 3.95 meters per second.
+which is about 9 miles per hour.
+this is a much better approximation to  the instantaneous speed of the ball at 4.  seconds.
+look, here's the graph again.
+between point four and point six seconds,  the ball is travelling maybe seven miles  per hour on average.
+between point four and point five  seconds, the ball is travelling maybe.
+eight miles per hour between 4. and 42.  seconds we just calculated that the speed  of the ball is about nine miles per hour.
+and that makes a whole lot of sense.
+right?
+the speed of the ball from here to here  is slower than the average speed from  here to here.
+which is slower than average speed from  0.4 to 0.42 seconds.
+the ball's slowing down in its  trajectory, so the average speed over  these shorter time intervals is  decreasing.
+so, let's figure out how fast the ball  was moving at 8. seconds.
+that's when the ball was at the top of  its trajectory.
+we can't really do that.
+all i can really do is figure out the  average speed of the ball over some time  interval but i've got a table of values  of the function.
+and i know how high the ball was at 8.  seconds after release.
+it was 182 centimeters, and i can compute  its average speed over a very short time  interval, like the time interval between  8. and 81. seconds after release, all  right?
+and the ball didn't move very far during  that time interval but of course that  time interval also isn't very long, so  it's not super clear how fast the ball  might be moving on average during that  time interval.
+we can do the calculation though.
+let's do it now, so.
+0.8 seconds after the ball was released,  the ball was 182 centimeters above the  ground.
+0.81 seconds after the ball was released,  the ball was 181.9 centimeters above the  ground.
+now this time interval between 8. and 81.  seconds has the duration of just one  hundredth of a second.
+81.
+- 8. is 01..  that's a very short amount of time and  during that short amount of time, how far  do the ball move?
+well, 181.9 - 182 centimeters, that's  just.1 centimeters.
+and if we're being pedantic, it's  negative 1. centimeters.
+all right?
+the ball fell between 8. and 81. seconds,  so this number is recording not only how  far it moved but also the direction that  it moved in.
+it's really displacement instead of a  distance.
+anyhow, .01 centimeters divided by 01.  seconds, that will give me the velocity,  right?
+displacement over time.
+so if i divide these, this ratio here is  10 centimeters per second or -10 if i am  keeping track of the direction its moving  in.
+it's falling down at a speed on average  of ten centimeters per second during this  time interval.
+that's -.1 meters per second.
+which is about.2 miles per hour or -.2  miles hour if i'm keeping track of the  direction it's going.
+anyway, .2 miles per hour is a really  slow speed,  right?
+the ball is not moving very much on  average between 8. and 81. seconds.
+in light of this, it might make sense to  say that the instantaneous speed of the  ball at.4 seconds is nine miles per hour.
+now, why?
+well, the average speed between 4. and 6.  seconds is maybe 7 miles per hour.
+the average speed from 4. and 5. is about  eight miles per hour.
+the average speed between 4. and 42.  seconds is about 9 miles per hour.
+you know and based on this,  it seems like if we took a really short  time interval, just after 4. seconds and  tried to calculate how fast the ball was  going on average during that very small  time interval, you might conclude that  the average speed during a very small  time interval is about 9 miles per hour.
+it's in that sense that we're going to  say that the instantaneous speed of the  ball at point four seconds is 9 miles per  hour.
+when you play the same game 8. seconds  into the balls journey, alright.
+when it's just to the top of its  trajectory.
+so the average speed of the ball, between  8. and 81. seconds is exceedingly slow,  and you can see that in the video,  alright.
+the ball is barely moving, at the top of  its trajectory.
+what's the instantaneous speed of the  ball at the top of its trajectory?
+it's zero, right?
+i mean yes.
+the average speed over a time interval  between 8. and 8000001. seconds isn't  zero.
+but if you look at an average speed over  an exceedingly small time interval, those  average speeds over shorter and shorter  time intervals are as close to zero as  you like.
+that's the sense in which the  instantaneous velocity at the top of the  trajectory, the limit of the average  velocities over small time intervals, is  zero.
+isn't calculus amazing?
+we're using the idea of limits to compute  instantaneous speed.
+using a little bit of math, we can  understand the world around us.
+that's the power of calculus.
+[music]

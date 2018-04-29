@@ -1,0 +1,13 @@
+[music] we calculate the attenuation of a photon beam of energy 1 mev by a one centimeter thick lead plate.
+the attenuation of the beam intensity i is exponential with three factors in the exponent: the cross section sigma between photons and lead nuclei, the density rho of target nuclei and the thickness âx of the target.
+let us first consider lead properties.
+it's mass density is about 10,000 kilograms per cubic meter.
+the molecular weight is 0.20 kilogram per mole and the number of nuclei per mole is given by avogadro's number.
+the second major ingredient is the cross section between 1 mev photons and lead nuclei.
+we get it from the data collected by the particle data group.
+and 1 mev we find a huge cross section of about 10 barns.
+with this we can calculate the attenuation of the beam.
+first, the number density of lead nuclei is approximately 3 times 10^28 per cubic meter.
+the exponent of the attenuation law is thus of the order of 0.33. that is to say that the beam is attenuated by only about 28%.
+there is no less than 72% of the beam which passes this one centimeter thick lead plate, despite the enormous cross section.
+[music].

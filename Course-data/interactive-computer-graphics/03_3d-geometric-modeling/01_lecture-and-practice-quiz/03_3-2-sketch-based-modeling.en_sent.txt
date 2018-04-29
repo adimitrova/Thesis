@@ -1,0 +1,160 @@
+okay, our next topic is sketch-based modeling.
+and the work we introduce here is called teddy.
+and the problem we want to address here is that 3d modeling is difficult, especially modeling of motion 3d organic shape is difficult.
+so a typical user interface is like this.
+so typically, you have three views.
+and then you have above view, front view, left view and then you put many body sees and you put many edges and create many faces.
+and then you have to combine many, many commands.
+and nest with many and those are many parameters.
+and this can be very useful an idea for a professional production for movies or t.v shows, cars and products.
+however, if you want to use this kind of system for communication this is way too difficult to to.
+however on the other hand, if you have a pen and a paper you can quickly draw something, something meaningful and more importantly if you look at this kind of image you can infer some geometric information for example.
+probably, this face is, you know, kind of lozenge-shaped, then also hands should not be a bit larger head or something like that.
+you can get general idea.
+so our idea is to implement this kind of visual intelligence into a computer to make a useful 3d modeling tool.
+so that's the idea.
+and let me show you a demo.
+so again you get the brown canvas and you pick up a pen, and you try and draw a line on this canvas.
+and then here you draw something here.
+and then as soon as you finished drawing.
+system mathematical inflated, and then you get this 3d shape, so now, this is already 3d, so you can see it from front or top, or you can also rotate through it, so you get a full 3d shape here, and you can also cut this object.
+you can also paint it and cut it and you can also add a bump, so in this way you can generate reasonable 3d object just by drawing outline of the intended shape and internally this is standard 3d object presentation.
+so if you use traditional tools, you have to combine many commands and also you have to manipulate many visual elements, can be very tedious.
+and let me describe some, little bit individual operations.
+first operation is creations.
+from the blank canvas, you draw closed region.
+and this is the inflated.
+so if you draw circle and you get a sphere.
+and if you get long bar or you get bar or it's you can generate this kind of snake shape.
+and so, in other words, it is basically like this.
+so if you have a large region system increase a lot and if you get a narrower region, to sustain for it a little.
+in this way, you get always get a cross section.
+looks almost half, half of a cross section.
+so that's the idea, and let me turn off the sound.
+and so this is very powerful.
+so, for example, you can gt this kind of shape or you can also get this kind of shape.
+so again, input is just simple two be strong.
+in this image there is some reasonable shape from two d sketch.
+and after having 3d geometry, you can interact with it.
+first, you can paint on it.
+your stroke is projected onto the 3d surface.
+and you can also erase the past scribbling.
+and then, if your input is inside of the object it will be projected and painted.
+however, if you sort of comes outside on the inside on the side, it will cut the object by, you know, projecting the line.
+and then this useful for our intersection that i did in this shape or you can make a mouth like this way.
+so that's a cut operation.
+and the next operation is extrusion or bump operation.
+so if you want to add a bump.
+and you do a closed region, and rotate, and then do a second stroke.
+so this is two, two stroke operations.
+first stroke defines a domain, and the second operation stroke defines a silhouette.
+so, this is basically a sweep or extrude operation.
+so this the imput it's first throw, second throw, and you will get this.
+and this is very flexible.
+example, if you draw this kind of shape you get a snowman kind of shape and you can also make a mushroom kind of shape this way.
+and if you draw outside, it will generate a bump.
+but you can also draw inside, and you will get cavity and you can get a structure this way.
+another example is a same plate like shape.
+so, if you draw this domain, and if you draw this shape you get a in a wing shape.
+and again, you will draw this shape, and then this shape and you'll get the wing.
+see?
+this way, you can generate, kind of a bird.
+and after having some objects, you may want to deform or edit it.
+in order to do so, we also provide sketch-based operations.
+so it's called this bend button.
+so this take two strokes.
+first one is a left hand stroke.
+the second one is target stroke.
+so let's do a left hand stroke, and then do a target stroke.
+so what system tries to do to form a shape so that lead deforms into groove.
+and you will get this result.
+so, in this way you can get reasonable solid shape by sketching, and this deformation to a loose form.
+so again press bending and left is input, defines and then moves target.
+and then you will get this, this kind of shape.
+and you can also refine some of the output [unknown].
+so by combining these operation you can get a shape something like this.
+[blank_audio] let me show you a couple of 3d models' painted results.
+[blank_audio] so, all these models are created using this technique and they're painted using traditional, painting interfaces.
+and you can see one can generate a reasonable 3d object using this technique.
+[blank_audio] so let me describe its algorithm a little bit.
+so here's a overview of its algorithm or [unknown].
+so this is two-dimensional user input.
+and then last thing the computer do is fast.
+identify an axis of skeleton that discloses the domain.
+so, center line.
+on the after computing, this center line, your axis, we lift it, we raise them, in this way.
+an important point here is that the amount of lifting.
+depends on proportional, to the distance to the silhouette.
+for example, here, the distance is very large, so it gets higher.
+however, here, the distance is very short, so it's not to get higher.
+so, in this way, you get visible shape and after that, the remaining task is just simple.
+we just put an overall shape along the axis and the silhouette to get final result.
+so this is overview.
+now let me describe step-by-step.
+so input is two-dimensional, polygon or polyline.
+and then, after that, we apply, constrained delaunay triangulation.
+this is very simple computation or general to the operations, just triangulate them.
+and then after that we compute an axis by connecting mid-points.
+well this is, again, very simple operation, but very powerful tool for analyzing the shape.
+and this one, this technique is published could use by a person in 97. and after connecting the mid-points, you get, three kinds of triangles.
+one is this, conjunction triangles, with no external edges.
+and another is sleeve triangles, with one external edges.
+and also, terminal triangles, with two external edges.
+and having this, the next topic is trimming.
+so before trimming and after trimming.
+so in order to in flight or lift central axis we have to remove 3dl edges like this one.
+now, let me describe how to do this trimming operations.
+so trimming starts from the end of the axis and remove it one by one.
+so it works like this, so if you get this situation starting from each terminal, we pick terminal edge and draw a circle, half circle.
+and if all edges, all peaks are inside of the hemicircle, you go inwards, like this.
+and again, do a hemicircle, half circle, and check everything is inside.
+if everything is inside, go farther.
+and now, if vertices are, some vertices outside of circle, then we stop the trimming operation, and then you will get, this terminal triangles.
+so that's a trimming operation.
+and after our previous operation, you get this idea or shape.
+and this is where we stand.
+after you get the center shape.
+you just lift up the center axis proportional to the distance here.
+so, if you look up here, you have serrated line and center line.
+and you lift it up in this way, and this length is a bridge of the surrounding edges.
+and after that, you just put quarter of a circle in this way and in this way and then just stitch them together.
+and the application of this system is for enhancing communications.
+you know this technique is not good for production of movies or tv shows and so on.
+or car design.
+but this technique is very used for face to face communication with somebody in front of white board.
+let me show you a couple of examples.
+so one possible application is education.
+for example, in a biology class, the teacher may say this is a bacteria.
+and then internal select shows it like this.
+and the students can understand the kind of three-dimensional concept.
+and then there's the possible application in medical applications.
+for example, doctor may want to say, this is your stomach.
+and there you have a serious problem here.
+and then doctor can say, you know, let's fix it, and so on.
+and or a dentist may say this your tooth, and that there you have a serious problem here and there, and that you need to remove them, and so on.
+and one particular interesting application we want to show is teaching of geography.
+you know, geography is the concept of mountains and valleys and rivers or lot of three dimensional ideas, which can be very difficult to understand sometimes using two dimensional whiteboard, but here if you have a 3d sketching it can be very useful.
+as an example we want to use a teaching of contour lines.
+as in you may know it's contour lines, you know, in the two dimensional map, you see lots of lines indicating heights.
+but it can be difficult to understand what that means.
+well here, the teacher can say, now, you have some mountain here, some mountain side view, front view, and top view.
+so you have one mountain here.
+and now, let me draw lines indicating equal height, say this is ten meter high, 20 meters, 30 meters, 40 meters.
+so these lines indicate equal height.
+and then this is side view and the front view.
+and if you look, then, from the top, now you see that this is a contour line.
+and there you can allow many things, like sparse contour lines indicates, you know, gentle slope, and dense contour lines indicate sharp slope, and so.
+so, yeah.
+so this is a main application we are thinking of this kind of sketch-based modeling.
+okay, so to learn more, first i recommend you to look at the original paper.
+it describes the detail of the algorithm.
+not only creation but also extrusion and cutting.
+and the technique we use is a chordal axis.
+and it was called morphological analysis of shapes.
+and this is very useful to for shapes.
+and we introduced polygons mesh based information, another possible approach is using implicit surfaces.
+so it masters and generates smooth shapes like this one so it generates smooth connection.
+on these, i can also change the configuration later.
+and this one is called shapeshop and published in 2005. and i think application is also available.
+so i recommend you to try them, too.
+thank you.

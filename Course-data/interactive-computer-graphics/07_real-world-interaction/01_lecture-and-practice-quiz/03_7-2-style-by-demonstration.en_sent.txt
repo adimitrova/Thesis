@@ -1,0 +1,84 @@
+our next topic is style-by-demonstration.
+so, the what we do this here is called style by demonstration, teaching interactive movement, movement style to robots.
+so the goal here is to teach interactive behavior to robots.
+the robot observes user behavior.
+and the user do something and the robot do something.
+so we try to teach this kind of interactive motion.
+and you will have to do this, you know traditional programming is require, you know?
+user have to how to call, how to do it.
+however, traditional text based programming like c or java is too difficult for designers.
+so, our goal is to, do this, make it possible for artists to design behavior.
+and then, we take proble, programming by demonstration approach.
+so the intertwining phase, user interacts with the robot, operated by an operator.
+so, the designer actually operates this robot, interacting with the user.
+and then, from this demonstration result training data, is a run time, systems automatically synthesizes robot motion, responding to the user input in the real time and defaulting to the training data.
+so that's the basic idea.
+let me show you a video.
+so here this is a user and this is a designer operator, and then here's a robot.
+so, and this is a training phase.
+in the training phase, operator is operating the robot to responding to the user.
+after that, he leaves.
+he disappears.
+so i think he's teaching following behavior.
+so, in this case, the designer is teaching attacking behavior.
+so, tries to push this user away from the lesion, so that's a behavior.
+oh, by the way, everything in tracked using a motion capture system, so if the users positions, and robot position is continuously tracked, and recorded, as a training data.
+after the learning in the lab time, robot replays interactive motion adapting to the current situation.
+so here is a robot who is reprising a burglar attacking behavior.
+so, i think it's very tedious to teach this kind of motion using standard program language, taking user and robot position as input, and then compute many geometric.
+how to code motor motion is hard very difficult.
+we also tested this kind of tabletop configuration for teaching.
+so the user is manipulating, controlling the robot in this way following the character following the user.
+i think here the user is teaching stalking behavior.
+you know, following a person from the behind, hiding away.
+so, this is the result.
+so the system is learning automatic auto-resume based on the training data.
+so this why he's following the person, like a stalking, with a certain distance.
+so this is not just a replay, or pre-programmed, predefined motion.
+it is adaptive to the current, current configuration.
+okay.
+so, that's, that's video.
+so let me briefly describe the algorithm.
+how to do it.
+so, here's situation.
+so, we have training data.
+user motion data, position data, robot position data, and these are time sensitive data.
+so, in the training data you have lots of time series paired, traditional data, motion data.
+and also, we have a runtime situation.
+so use is suppose to show he's continuously interact and the robot motion is continuously interact.
+so, now, this is the current time.
+in the current time frame you have the history of user position, robot motion, and also user's current position.
+and the task is how to compute the robot's next next desired position.
+so that's a. tasks, so input is this old data, and the output is position.
+desire to position was lowered.
+in order to do it, in order to send similar motion to the training data, first task is searches for the similar situation.
+so, you compute the current configuration, we send you suppositions.
+recent user motions and recent robot motions, and it searches for the similar situation in the data set.
+you can make it faster by indexing it beforehand, but anyway what you do is search for the similar situation.
+and after identifying the most similar situation.
+and the system basically just copies and pastes, takes the motion in the training data to the current data.
+of course, this is a very, very simplified view, but this describes the basic idea behind it.
+and this kind of two-pair and two-pair synthesis is inspired by this technique so called image analogies.
+this is the technique designed, developed for image filtering.
+so what we, what they do is here, so a, a dash, and b is an input.
+and the b dash is a result.
+so, here the user tries to teach image filtering.
+so this is a, a is an input image.
+and a dash is output image of this one.
+so this one is kind of water painting filter, so system takes image and then converts it to a kind of a water painted painting from the input.
+so here the user provides an example as a and a dash, and it also provides b as a source image.
+after the system learns filtering from a and a dash, and applies to b, and you get b as an output.
+what happens internally is similar to the method we had just described.
+for each pixel in b dash we searches for the similar situation in a, a dash, and b, and then applies the result in a dash to b dash.
+so that's what they do.
+okay.
+so, in this short video we describe how to teach interactive behavior to a robot by demonstration.
+so the, the designer operates a robot in training time, and then know what behaves.
+the based on the training data.
+and internally what they do is what the lower do is searches for the similar data in the demonstration or training data, and then copies the previous motion to the current motion.
+and then the algorithm is inspired by the image and the logistic developed the image filtering.
+to allow more art, original paper was published as style by demonstration, teaching interactive movement style to robots.
+and image analogies is at siggraph 2001. and the general concept of programming by demonstration, or programming by example, has been extensively studied in field.
+and one represented reading is, recommended reading is titled book is watch what i do: programming by demonstration.
+so this book introduce many interesting techniques and examples of program, programming by demonstration.
+thank you.

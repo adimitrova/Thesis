@@ -1,0 +1,55 @@
+[music] in this module, we will discuss searches for new phenomenon beyond the known ones described by the standard model.
+in this video, we will talk about bump hunting.
+after watching this video, you will know how we look for new resonances in hadron collider data.
+how such signal choice led in the past to important discoveries.
+and the impact of statistics for searches.
+we use the data we collect in hadron colliders for measurements of processes predicted by the standard model and for searches for new physics.
+we typically measure the cross-section of a process, the mass of a particle, or other properties.
+the searches are typically split in bump searches or tail searches.
+measurements always precede searches.
+it is the confidence that we know well the standard model and what it predicts that enables us to look beyond.
+one of the things we measure in our data is the rate of production of a specific process which allows us to determine its cross section.
+it is given by the formula you have already seen in previous videos.
+the cross section of the process, for example production of a z boson, times the branching ratio for a specific decay, for example to a di-muon pair, is equal to the number of events corresponding to the exact same process divided by three numbers that remove biases related to the way the measurement is performed.
+the acceptance, indicating the fraction of signal events passing selection requirements we're applying to the data.
+the reconstruction efficiency of the relevant objects, muons in our example, and the integrated luminosity indicating the amount of incoming particles we have used.
+in the numerator we have to subtract from the total number of events the expected number of background events.
+these are the events producing the same signature, a di-muon pair in our example, but resulting from other processes, different to our process of interest.
+the z boson was discovered in proton-antiproton collisions at cern in 1994 as a small bump around its mass value as shown in the left plot.
+what constituted a major discovery back at the time, is a well established process now, for which we can make precise measurements and measure properties, such as the cross-section.
+the plot on the right shows how a mass peak for z bosons decaying to two muons looks like in early atlas data back in 2010. despite the small amount of data available at that time, it is remarkable how this compares to the same topology when the z was discovered.
+this established the lepton pair signature as one with which many particles have been discovered over time.
+it is one of the key signatures we use in hadron colliders to search for new peaks.
+primarily, in the high mass region now.
+this is how the muon pair mass spectrum looks like in atlas.
+starting from just below the z mass peak and extending up to the highest values we have data for.
+the blue area indicates the contribution to this distribution from a z boson decaying to two muons.
+this is the dominant process in the whole spectrum, and especially in the peak at the z mass.
+other colored areas indicate other standard model contributions to the spectrum.
+the black points correspond to data.
+expected contributions from the standard model have been scaled by the same integrated luminosity as for the data we have used.
+one can see from this plot, that the data match very well the distribution expected from the standard model alone.
+presence of a heavy zâ boson would manifest itself as a bump in the tail of the distribution, shown here with simulated rates for three different possible masses.
+in the absence of any bump, limits are set on the masses and production cross sections of the heavy z bosons.
+to increase the number of events in the tails, we try to use as many final states as possible.
+a natural one in this case, is the electron final state.
+here is the invariant spectrum of electron-positron pairs from atlas.
+despite some differences, the picture is very similar.
+everything we measure carries uncertainties.
+these originate from both systematic effects associated with our methods and the limited available statistics.
+searches are also affected by uncertainties, though statistical uncertainties are more important in this case.
+our searches typically improve when using more data.
+this is demonstrated in this slide, where compare the lepton pair spectra with luminosities differing by a factor of roughly 100. the heavy z boson search has not given any hints for new physics yet at hadron colliders.
+other bump searches have been more successful in the past.
+a very well known one is the higgs search, which was effectively a bump search.
+atlas and cms scientists looked for a bump in the photon pair innvariant mass spectrum.
+we have already seen this example in video 6.12. it is interesting to see in this demonstration how more and more statistics make a difference in the picture of the spectrum, and lead to a discovery.
+beyond the higgs mass, the photon pair mass spectrum is continuously scanned for new bumps that could indicate the presence of new phenomena.
+a potential bump was hinted in the 2015 data at the mass of about 750 gev.
+the significance of the excess was low, so the search was not conclusive at that point.
+the spectrum was scanned again when more date became available in 2016. the excess had not increased proportionally to the increasing luminosity.
+it was thus concluded that the bump had been due to a statistical fluctuation.
+you see that a firm discovery is difficult to make, and strict requirements on the significance of a convincing signal must be respected before concluding.
+this concludes this video.
+in the next video, we will discuss another type of searches, tail searches.
+[music]

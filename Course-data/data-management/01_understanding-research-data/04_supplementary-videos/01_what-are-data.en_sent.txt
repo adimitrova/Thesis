@@ -1,0 +1,18 @@
+[music] i define data very broadly.
+i think it's from a digital preservation perspective, data can mean digital information of any kind, including very specific outcomes of research.
+so structured data, research experiments, and things like that.
+>> data are those observable bits of information that help us understand a political process, a social process, an economic behavior, whatever it is that people are doing.
+the data is that observable bit of information that we can record and later analyze to help understand those processes.
+>> data is evidence used for research and scholarly academic research of any kind.
+so when you make a statement about the world or about anything in it, you're relying on some evidence for that statement.
+if you say proust has a wonderful passage, you're probably referring to a particular piece of text somewhere.
+if you say 95% of the people in the united states like vanilla ice cream, then there's probably some evidence underlying that.
+they're both, they both can be data if they're used as evidence.
+[music] >> typically, there are multiple types of data that are being collected.
+the data are almost entirely numeric that i deal with.
+i don't really deal with images or maps or text.
+and it's all strange, collected for the purpose primarily of research, not collected, say for health claims or for other secondary purposes.
+>> my data in my research, some of it is simulated data, some of it is survey data, some of it is data produced by government agencies.
+it's really all kinds, sometimes experimental data, most of it is observational data, data that comes from the world as it occurs rather than in a controlled laboratory.
+but really, all different types of data are part of what i look at.
+i'm more interested in the question that i'm trying to answer, then i go find the data that i need.

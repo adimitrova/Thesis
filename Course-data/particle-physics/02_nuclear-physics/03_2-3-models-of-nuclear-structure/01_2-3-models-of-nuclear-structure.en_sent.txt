@@ -1,0 +1,88 @@
+[music] during the second module, we are discussing nuclear physics and its application.
+and in this third video we will introduce simple models which allow to better understand the structure of nuclei and their properties.
+after watching this video you should be able to describe these models of nuclear structure.
+distinguish which features each model describes and where it's limits are and in particular know the so-called magic nuclei and their special properties.
+for reasons discussed in the previous videos we know quite well the strong force acting between quarks inside the protons and neutrons, thanks to quantum chromodynamics.
+a complete theory of the nuclear force between these based on first principles of qcd however does not exist.
+since we do not know how to calculate the properties of the nuclear force ab initio it is difficult to apprehend nuclear structure theoretically.
+consequently the models of nuclear structure are rather qualitative.
+most precede qcd itself, the models of nuclear structure are rather qualitative.
+however, one can of course base model building on experimental facts and on physical intuition.
+each of these models presented in the following will concentrate on a particular aspect of nuclear structure and nuclear properties.
+so let us start with the most simple one which is called the liquid drop model.
+in this model, which has been the first phenomenological model to describe the binding energy and size of nuclei, the quantum properties of nucleons are largely ignored or taken into account in an ad hoc way.
+the model describes the nucleus as a compact packing of incompressible nucleons.
+this gives a total nuclear volume proportional to the number of nuclei, as we have observed.
+the mass density of nuclei is approximately independent of a. this considerations lead to imagine the nucleus like an incompressible drop of liquid.
+the molecules of the liquid are the nuclei.
+the van der waals force is replaced by nuclear force.
+the binding energy âm or be on this slide is equal to the mass difference between the nucleus and the sum of it's nucleons.
+it is the energy won by the bound system and thus negative for stable nuclear states.
+it is principally proportional to a, i.e.
+to the number of nuclei or the nuclear volume.
+this is due to the fact that each nucleon mostly interacts with it's nearest neighbors.
+but the nucleons on the outer boundary have less neighbors and are less tightly bound.
+this is taken into account by a term proportional to the nuclear surface a to power two-thirds.
+it's always analogous to the surface tension of a liquid drop.
+it reduce the binding energy, per nucleon, and it makes the binding energy somewhat less negative.
+hence it has a positive sign.
+this surface term is more important for heavy than for light nuclei, which explains their less tight binding.
+the third term takes into account the energy of coulomb repulsion between protons.
+this term also decreases the absolute value of the binding energy and thus has are positive side.
+up to now the considerations are purely classical but corrections inspired by quantum effects are important.
+like nuclei with a equal number of protons and neutrons, that is to say z=n, are particularly stable.
+they have a more negative binding energy.
+also there are more stable even-even nuclei and few stable odd-odd nuclei.
+odd and even refers to the number of protons and neutrons.
+one thus adds two empirical terms to obtain what is called the bethe-weizsacker formula.
+the asymmetry terms reduces the binding energy for n not equal to z and the pairing term has a positive sign for odd-odd nuclei which are less stable.
+for even-even nuclei the sign is negative and the nuclei more stable.
+for all other combinations, i.e.
+for odd a, the last term is zero.
+once the coefficients of the terms a_1 through a_4 are adjusted to match nuclear masses, the formula describes rather accurately the binding of sufficiently heavy nuclei.
+it is less accurate for light nuclei, and it fails especially to match the exceptionally large binding energy of the very stable he-4 nucleus.
+however, we will use it extensively to qualitatively understand the phenomena of fusion and fission.
+an approach more compatible with the quantum nature of subatomic particles is the fermi gas model.
+in this model, the nucleus is described as a gas of free protons and neutrons, confined to the nuclear volume by a potential of unspecified origin.
+the nuclei then occupy quantized energy levels, the potential is modelled as a spherical well.
+it's size represents the size of the nucleus.
+it's depth is adjusted to obtain the right binding energy.
+the difference between the ground states of protons and neutrons is due to the coulomb potential which is only present for protons and decreases the depth of a potential well.
+since n and p are fermions there can be only two per energy level with opposite spin.
+the last filled energy level defines the energy which refers to the least tightly bound nucleons.
+so how many nucleons can we store in a given volume?
+it's the schrã¶dinger equation that gives us the answer.
+we consider the nucleons to be confined to a square box with side a. the solution can then be factorized with n_x, n_y, and n_z positive integer numbers and a normalization factor a. the phase space is thus quantified.
+setting e equal to p^2/2m one sees that k_i are the wave numbers equal to the momentum along each axis in natural units.
+so now we can count states, let us consider momentum space.
+due to the boundary conditions, for each elementary cube of side pi/a there is a single point which is compatible with the schrã¶dinger equation.
+the number of viable solutions with the wave number between k and k + dk is thus the ratio of the corresponding spherical shell and the volume element, (pi/a)^3rd.
+the volume of the box is a cube but we only consider 1/8, since all k_i must be positive.
+in the grand state all levels up to the maximum momentum are filled.
+integrating up to the fermi mo,entum one does obtains the number of states which can fill the volume.
+one must of course take into account the factor of two for the two spin orientations, as well as the nuclear volume, which is 4 (pi/3) r_0^3 a. the energy corresponding to the maximum momentum is, what is called a fermi energy, e_f.
+it is approximately 33 mev independent of a. the result is in fact also independent of the shape of the confinement volume.
+the value of the fermi energy means that the nucleons are non relativistic inside the nucleus but still move at a considerable velocity, ã equal to roughly 0.4. the nucleus is thus a very dynamic environment indeed.
+the model also explains in a rather natural way the asymmetry term of the bethe-weizsã¤cker equation.
+given e_f the fermi energy and the binding energy of the last nucleon of roughly 8 mev we obtain a potential depth v_0 of about 40 mev.
+in analogy with the atomic shell model, a shell model for the nucleus can be constructed.
+the orbital quantum number n describes the energy level of the nuclei.
+for each n, there are n levels of orbital angular momentum l and 2l+1 subshells of the projection of l on an arbitrary axis.
+these subshells are degenerate in energy because of the rotational symmetry of the coulomb potential.
+there are two spin states per subshell with m_s equal to â±1/2.
+a state can thus be described by four quantum numbers, n, l, m_l, and m_s.
+the nuclei with completely filled shells are particularly stable, which explains the notion of magic numbers, which are z or n equal to 2, 8, 20, 28, 50, 82, 126, and so forth.
+isotopes with shells of both protons and neutrons completely filled, i.e.
+with z and n equal to a magic number are even more stable.
+example of these doubly magic nuclei are he-4, o-16, ca-40, ca-48, ni-48, ni-56 and pb-208.
+one of the strong points of the shell model is its prediction of nuclear spins.
+according to the model p and n fill up the levels independently, two in each subshell due to the pauli principle.
+in this way, the last or valence nucleon, which does not have a pair, will determine the nuclei spin.
+the immediate consequence is that even-even nuclei should have spin 0 in agreement with observation.
+however the share model fails to predict the spin of odd-odd nuclei since it does not include interactions between protons and neutrons.
+when the correct spin is predicted, the model also gets the nuclear magnetic moments right, which is important for nuclear magnetic resonance phenomena for example.
+we will talk about that when we treat applications of nuclear physics.
+it is obvious that more sophisticated nuclear models than those we have treated here can be constructed.
+but that goes beyond the scope of this introductory course.
+in the next video, we will rather go over the properties of unstable nuclei and their radioactive decays.
+[music]

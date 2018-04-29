@@ -1,0 +1,37 @@
+so after all this work that we've gone  through, we've seen how to design control  systems, we've seen how to take different  controllers and put them together in a  hybrid navigation architecture.
+we've seen how to deal with practical  issues, like the fact that obstacles are  indeed, not points, and that we're never  going to be able to measure exactly where  we are, so we need to factify the guards.
+we have tweaked our parameters.
+we're actually ready to do it for real.
+so the presentation, or slide part of  this lecture is very short.
+it's this.
+enough talk.
+let's do it.
+so now, we are indeed ready to, see all  our hard work pay off by deploying these,  rather elegant algorithms that we've  developed on the actual robots.
+and as always, i'm here with, j.  p.  delacroix/g, and we are going to, take  our old friend, the computer,  differential drive mobile robot, through  a series of.
+obstacle courses where the obstacles  become become more and more complicated  and as you can see, the first set up is a  convex/g obstacle.
+we saw in the lecture that in theory, the  robot can actually get stuck in one of  these local minimum where the goal to  goal and obstacle avoidance behaviors  will cancel each other out.
+in practice, for an obstacle of this  size, that ain't going to happen.
+because the world is indeed a noisy place  and.
+the noise will always kick the robot out  of these particular local minima.
+so, what we're going to see first is  goal-to-goal and avoid obstacles and  together that should be enough to have  the robot navigate this single convex  obstacle.
+so as we can see the robot starts in a  go-to-goal behavior.
+it approaches the obstacle, and there,  the infrared sensors picks up the  obstacle, and the robot successfully  navigates around it.
+now.
+it's safe to go back to go-to-goal, and  as we can see, the robot successfully  managed to navigate this particularly  simple environment with only two  behaviors.
+so now, let's take our two favorite  behaviors, go-to-goal and avoid obstacle,  and set them up to fail.
+as we saw in the lectures, there's really  no way for these two behaviors to  successfully negotiate a.  non-convex, obstacle.
+in this case we have a cul-de-sac that we  will try to get around using onlt these  two behaviors, but we are not, to be  completely honet, honest, expecting this  to go all that well.
+so, the robot starts out in a go to-go  mode and it is entering the cul-de-sac,  and it's going to start avoiding the  obstacles here, but it doesn't quite know  where to go, because.
+it's pulled away, but the goal to goal is  pulling it forward and the poor robot is  completely confused and really has no of  punching its way out of this cul da sac  with only two behaviors.
+and as we can see the end result is  somewhat disastrous.
+so that was rather depressing.
+the poor robot was stuck in the cul de  sac without really anywhere to go and  obstacle avoidance and going to go and  kept pulling it in different directions  and it ended with a mild disaster.
+we have now seen in the lectures that the  way around this problem is really to  introduce a third behavior, induced mode  follow-wall, which will allow the robot  to purposefully make its way out of the  culdesac and once it has a clear shot to  the goal, and sufficient for forward  progress has been made follow-wall will  be released and go-to-goal will again  take over.
+so jp, let's see the grand finale here,  with the full blown hybrid navigation  architecture in.
+action.
+the robot starts out, again, in a  go-to-goal mode, and enters the culdesac,  and what's going to be different now, is  the obstacle avoidance is going to be  replaced by a follow-wall, and the robot  purposefully makes its way out of the  culdesac along one of the obstacle arms.
+and, as you can see.
+the problems we had before with the  confusion.
+and being pulled back and forth between  the 2 different behaviors, is no longer  there.
+now the robot has successfully navigated  around the obstruction.
+and is back into the goal to goal  behavior.

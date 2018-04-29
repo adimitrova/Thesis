@@ -1,0 +1,47 @@
+[music].
+let's figure out the volume of a certain  solid of revolution.
+for example, let's think about this  region inside here, the region that's  below the graph of y equals the square  root of x.  and above the graph of y equals x  squared, just this little wing shaped  region inside here and let's take that  region and rotate it around the x axis.
+when i take a region in the plane, and  rotate it around an axis, i get a solid  of revolution.
+and the question is what's the volume of  that solid?
+well let's cut this region up into little  tiny thin rectangles, and then, instead  of rotating the whole region, at once  around the x axis.
+let's just imagine rotating each one of  these little rectangular pieces around  the x axis, and then adding up the  volumes of pieces.
+what do those little rectangles become  when i rotate them around the x axis?
+i'm going to take one of these little  thin rectangles, and rotate them around  the x axis.
+well, to just get a picture here let me  just isolate a single rectangle, and  imagine just taking this.
+thin rectangle, and rotating it around  the x axis.
+well what would happen when i do that,  alright, is that i'll end up getting a  shape that looks a bit like that,  alright?
+that shape we're going to call a washer.
+what's the volume of a washer?
+let me make this picture a little bit  bigger, alright?
+here's a big picture of a washer.
+and what are the parts of a washer?
+well, the washer is got a thickness which  allows it to be thin.
+so, i'm going to call it dx.
+it's got a small radius which i'll call  little r and then it's got a big radius  which i'll call big r.  now, if i were jsut thinking about whole  scylinder of radius big r.  i know the volume of that.
+the area of a circle of radius big r is  pi big r squared.
+so if i thicken that up, the volume of a  cylinder of radius big r is pi, big r  squared and the thickness here is dx.
+but then i'm drilling out this middle  part here to make the washer.
+so i'm going to subtract from this the  volume of this inside cylinder which is  pi little r squared dx.
+so this is the volume of just the washer  and the part that remains and i can write  this may be a little bit more reasonably  as pi.
+times big r squared minus little r  squared times the thickness, dx.
+now i'll use that formula, the volume  formula for washer to write down the  integral that calculates the volume of  solid of revolution.
+i'm going back to this picture here.
+i want to figure out the volume of say,  the washer at x.  so, first think about what's the big  radius.
+well the big radius here is on the red  curve, right that's the outside of the  washer.
+so big r is the square root of x.  and then the inside radius is on the  orange curve and that's given by x  squared.
+so little r is x squared.
+and that's the outside radius and the  inside radius in my in my washer picture  here.
+okay, now i just gotta use the formula  for the volume of that washer, right.
+and the formula for the volume of the  washer there is pi times big r squared  minus little r squared times the  thickness of the washer, which is dx.
+what about the endpoints of integration?
+well in my picture, x could be as small  as zero, or as big as one.
+alright, i want to add up the volumes of  washers for x between 0 and 1.  so my integral is going to go from x  equals 0 to 1.  now all that remains is to evaluate that  integral.
+so to begin, i'll simplify the integral a  bit, this is the integral from 0 to 1, äâ  times square root of x square, that's  just x, minus x squared squared, that's x  to the 4th.
+i've got a constant pi.
+i'll pull that constant out.
+this is pi times the interval from zero  to one of x minus x to the fourth, and  i've just gotta write down an anti  derivative for that.
+so that's pi times anti derivative of x  is x squared over 2.  minus anti-derivative x to the 4th, x to  the 5th over 5.  i'm evaluating this at 1, and at 0, and  taking the difference.
+when i plug in 0 i don't get anything, so  the answer is just whatever happens when  i plug in 1, which is pi times one half,  minus one 5th.
+and, if i like, i could write this as a  single fraction, this is pi times 5  10ths, minus 2 10ths.
+or, all together, pi times 3 10ths, so  that's the volume of the solid of  revolution.
+and we did it.

@@ -1,0 +1,91 @@
+after all that math and linearization and everything, it really boils down to a pretty simple.
+this is how you fly an equilibrium which we've identified all three axis line up, all three orbit axis have to be principle axis of the body so you line that dictates particular orientations.
+and then, to be stable, you have to make sure this condition is satisfied.
+and it's not just one, if this is stable, flying sideways, you know?
+and so is this one, right?
+you could fly nose up and nose down.
+do you care if you're flying nose up or nose down?
+>> but it depends on the application.
+if the shuttle does not want to use fuel, it doesn't care.
+this spacecraft did care.
+this is a famous one, the polar bear mission, it has, you can see these gravity grating stabilized, all need.
+[laugh] they need the three axis to be the skinnier one, so they put the small mass and to save weight on a very thin boom all the way out.
+and so now the inertias about any other axis are going to be big, because of the big moment arm between this mass and this honking mass.
+but along the axis, that's the least inertia.
+that's what we needed for stability, right?
+and they go through this stuff, and i2, bigger than i1, bigger than i3.
+life is good, what could go wrong?
+this craft does care that this point is looking at the earth.
+why?
+that's why they put all the sensors.
+it didn't put them on this side.
+so this was launched to gravity gradiants stabilize the satellite, reasonable mass, not huge but, reasonable mass.
+and it was supposed to point this way, and what actually happened after the first period in full sunlight, the attitude degraded significantly.
+which basically means shit happened, bad stuff happened.
+attitude degraded significantly, essentially, means it inverted itself.
+instead of being here and a little bit stable, this whole actually tumbled, banded off to go there.
+and then you go back through the shadow, and everything is good.
+and now we said, this is stable.
+but so is this.
+and in this case, we do care.
+but the satellite doesn't, it's just following physics.
+and it goes, hey, i'm perfectly happy.
+you can bump me all you want.
+i'm stable, i'm going to stay here.
+so it's like, great.
+what on earth does happened?
+and it wasn't supposed to happen.
+so, several attempts were made to reinvent this thing and finally they were able to get it.
+they basically have to give it a kick.
+and the way they can give it a kick without using fuel is, despin or spin off your wheel to crazy amounts is going to apply this huge torque.
+they needed something to move it pass this linear local state stable regime.
+and once the bigger motion happened just basically give it a kick and it tumbled and then recovered and this other one.
+and then use the wheel to clean up the mess and get it close and hopefully stay stable again.
+so, good news is they were able to recover, bad news is why does it even happen?
+jordan, you got a question.
+>> [inaudible] >> what did we miss here then?
+what assumption do you think was violated with the space craft?
+and there's a clue.
+after the first period of fully sunlit orbit.
+what happens with sunlight put in a space craft?
+>> a radiation pressure.
+>> could be radiation pressure, they don't think that was the cause but definitely something i would look at, is the [inaudible] do you have a craft which this huge solar sails basically attached that would cause significant.
+they don't think that was the cause here, but definitely related.
+spencer?
+>> outgassing?
+>> i think outgassing you've always have, or what causes more outgassing in the sunlight condition do you think?
+>> i figured in the first fully sunlit orbit that it would have out-gassed most of what it was going to out-gassed initially.
+>> you think because it's a first orbit, not because it's sunlit.
+>> yeah.
+>> maybe.
+again, i don't have the details of this, but these are all good ideas.
+right now, you start to wonder, what did we miss?
+what's going on here?
+what happens with sunlight, though?
+>> heating up.
+>> you heat up.
+this is a very lightweight structure.
+what heats up, is one side of it.
+what happens to the other side?
+or what happens to the heated breath?
+i can see some- >> that side will expand [inaudible] so [inaudible].
+>> and if we're curving, what do we violate?
+rigid?
+it's not rigid, this was a really, really lightweight structure, they had to get this tucker way out there.
+there's not much stiffness to this and they didn't really model well the thermal deformations that can happen on these kinds of an orbit.
+so there was flexing going on.
+now flexing doesn't necessarily immediately make it go crazy.
+but this was just an unlucky mission that flexing happened to be happening in such a way.
+that it was able to give it the right kick at the right time, to get out of one equilibrium and in the end once it all settled, it settle into the other equilibrium.
+perfectly stable, that's the trickiness.
+gravity gradiants do stabilize.
+but it really doesn't care if it's positive or negative.
+every one of those equilibriums has a flip that's still like an equilibrium.
+and if you do care, then you have to have a mean to put it into the right equilibrium, right?
+and then locally it's there.
+and so here's a case a lesson's learned, where the thermal deformations really did matter.
+and so flex endure, that's what i heard was the primary culprit.
+all these other ideas are fantastic ideas, and i'm sure they tested every one of those as well, just make notice another bounding case assumption.
+with these even cause this effect right?
+to model and simulate that.
+so, it gets tricky.

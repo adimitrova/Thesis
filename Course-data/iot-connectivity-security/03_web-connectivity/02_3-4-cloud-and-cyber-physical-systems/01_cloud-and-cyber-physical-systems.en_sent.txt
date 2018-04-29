@@ -1,0 +1,49 @@
+[music] welcome to the lesson on cloud computing and cyber physical systems.
+in this video lecture, we will look into the relationship between cloud computing and the future of cyber physical systems or embedded systems in general.
+let's talk about cloud computing.
+in the simplest form, cloud computing is about utilizing computational power as a utility like electricity or gas.
+instead of building your own in-house computational capabilities, you rent them out from people who have already designed them.
+this model of renting out resources based on one's needs has several benefits.
+first, flexibility.
+the resources you utilize like storage, computing capacity or network can scale up or scale down based on your needs.
+second, low maintenance.
+as the servers are managed by your provider, you don't have to worry about maintenance or software updates.
+third, paper use, you only pay for the resources you use.
+fourth, security, cloud services can maintain better security and hire better professionals compared to a small business or startup in the words of a researcher in the field of security, cloud is using somebody else's computer.
+in another lesson, we talked about different protocols like gsm, bluetooth, and zigby that enable us to connect our cyber physical systems.
+we also pointed out the one's that support gcpip to enable ip based communication.
+when you take a small embedded device and assign it an ip address, you can uniquely identify it, remotely access and control it and share its data across the internet.
+what you have done is that you have built an internet of things device or iot device.
+you had a device, a thing, and you made it a part of the internet.
+irrespective of all the hype and well justified interest in the internet of things, at its very basic level, it is a very large number of embedded systems talking to each other via ip networks.
+if you look at it from this perspective, to an embedded systems engineer, iot is more of an evolution of the technologies that were already available to him.
+the reason we are talking about the internet of things is that it shares a lot of similarities with cyber physical systems.
+iot is about monitoring or sensing the real world with interconnected sensors.
+cyber physical systems are the same.
+any platform that bills itself as an iot platform can also be cyber physical systems platform.
+from now on, in this lesson, we will use the term iot instead of cyber physical systems as most of the cloud platforms like to associate themselves with the internet of things.
+cloud computing and iot compliment each other very well.
+in the vision of internet of things, you have hundreds of thousands of sensors generating data.
+cloud computing helps you store and process that data.
+you can see an example of tracking people's fitness on the screen.
+if you are an iot device and network provider, you can focus on your core competence, building and connecting sensors.
+you don't have to worry about building your own it infrastructure.
+another problem is making sense of all that data.
+there are cloud computing tools available that will help you analyze and generate actionable intelligence from your data.
+if you are monitoring traffic flow or power consumption in a large housing society, or monitoring the air quality of a large city, you need a strong it infrastructure.
+cloud computing offers you that.
+this growing interest in combining cloud computing and internet of things has created on new field called cloud iot.
+cloud iot is providing on demand computational infrastructure designed specifically for the internet of things.
+cloud iot providers can offer different services.
+here are some basic considerations to look into when choosing one.
+do they offer support for the communication hardware and software you will be using?
+do they support the communication protocols you are using in your solution?
+do they offer you remote node management like controlling your device remotely, issuing commands or upgrading its firmware?
+do they offer any data analytics?
+if yes, is it according to your needs?
+what kind of pricing model do they have?
+are they charging by the number of nodes or sensors you have or by the number of resources you use?
+here is a short list of different cloud iot platforms and service providers.
+in this lesson, we looked at the merging of cloud computing and the internet of things phenomenon.
+the next video lecture, we will look at a phenomenon that is opposite to cloud computing.
+[sound]

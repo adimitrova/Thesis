@@ -1,0 +1,118 @@
+welcome back.
+this is week five.
+in week three we wrote a controller to take our robot from point a to point b. this was called the go-to-goal controller.
+and in week four we designed a controller that avoids obstacles.
+so, what we want to do this week is combine those two.
+so that our robot can drive from some point in the world to some other point in the world without colliding with any of the obstacles.
+and the way that we're going to do that is to arbitrate between the go-to-goal and avoid-obstacle controller.
+and that really means, think about how should we combine these two so that we make the right decision.
+should we be, should we be avoiding obstacles?
+or should we be going to goal?
+so the two techniques that we're going to be using is blending and hard switching.
+and in blending what we're going to do is we're going to create a new controller which combines both the go-to-goal controller and the avoid-obstacle controller.
+then what we're also going to test is switching between the go-to-goal and the avoid-obstacle controller.
+so we'll either run the go-to-goal controller or we'll run the avoid-obstacle controller, and we'll switch back and forth depending on whether the robot is close to an obstacle or not.
+and then we're going to do a third experiment, which is to use the blended controller as an intermediary between the two.
+so we're going to go to goal when we're away from any obstacles, if we're getting close to obstacles, we'll switch to the blended controller.
+and if we're within a dangerous distance of the obstacle, we'll switch over to the intermed, into the avoid-obstacles controller.
+so, what do we do when we, when we, when we blend?
+what we're going to do is create one single controller that does both.
+and what we'll do is first compute our go-to-goal vector which is u gtg, and then we're going to compute the obstacle avoidance vector, u ao.
+and we will know how to compute both of those from the previous weeks.
+and what we want to do is we want to combine these two in some way.
+and, one way to combine these two is to do this in a linear fashion.
+so, what i'm going to do is take a fraction of the obstacle-avoidance vector and take another fraction of the go-to-goal vector and just add them together.
+and then what i should get is this vector u ao go-to-goal.
+so so this is a combination of these two vectors.
+and this vector will point us in some direction that is both somewhat in the direction of the goal, and somewhat in the direction away from the obstacle.
+and what i really want to point out here too, is that i'm using u ao,n, and that just denotes that fact that i'm using the normalized version of the vector, and that's nothing but, taking the vector itself and dividing it by the magnitude of the vector.
+and that way you get, a vector that's a, a unit length rather than some arbitrary length.
+and that just allows us to if we take the normalized version of the obstacle avoidance vector and add it to the normalized versions of the go-to-goal vector.
+then we get an equal balancing of the two vectors rather than having to worry about what their respective magnitude is.
+hard-switching is going to work in a little bit different way.
+what we're going to do is, we're going to just use one controller at a time.
+so, for example, is like i said, if we're close to the obstacle, we're going to want to do obstacle avoidance.
+but, if we're clear of the obstacle, we're going to want to just do go-to-goal.
+so, if we're away from the obstacle, use the go-to-goal vector.
+if we're close to an obstacle, use the obstacle avoidance vector.
+and the way we're going to do this is we're just going to make a decision about how close the robot is to the, to, to an obstacle.
+so for example, if one of your infrared sensors on the robot senses a distance less than say, 15 centimeters, we might want to switch over to avoid obstacles.
+but whereas if we're greater, at a distance greater than 15 away from, 15 centimeters away from the obstacle we can go, we are safe and we can go ahead and do, just go to goal.
+and then the last one is to, is to use the go-to-goal if we're some distance away from the obstacle, if we're getting closer we're going to switch over to the combined blended version of the vector or of the controller.
+and, then, if we're too close to the obstacle, if it's unsafe for the robot to do, be worrying about where to go to, worrying about going to the goal.
+we're going to switch over to avoid obstacles.
+and that way we're going to ensure that we're definitely not going to slam into any obstacles.
+now, the logic for deciding which controller to use is going to end up in the supervisor.
+and the supervisor really considers each controller to be its own state.
+and the supervisor can switch between these states.
+which means we're switching between the different controllers.
+so, we're going to have three different controllers.
+and, kind of going back to week three, an example of this is if you look at, at the ex, execute function of the supervisor and qb supervisor dot m, you may, might have seen that i had a statement that says switch to state stop.
+and this means that i'm switching from the go, go-to-goal controller that we were using at that time and switching to the stop controller.
+and the stop controller is nothing but a controller that sets the linear angular velocity of the robot to 0. now, we, we also had a condition when we wanted to switch over to the start, to the stop controller from the go-to-goal controller.
+and that condition was that the robot was at its goal.
+so, and the, and the check_event function, what it did, is it looked at, well, is this condition, at_goal, true, and it was true whenever the goal or whenever the robot was within a distance of d_goal of the goal location.
+so that, that statement then becomes true, which means that we have switched over into the stop controller from the from the go-to-goal controller.
+and that was a very, very simple state machine.
+because all it said was, that we start off in the go-to-goal state, or we're using that controller.
+and then when we're close enough to the, to the goal location, we switch to the other state.
+which is the stop state which corresponds to the stop controller.
+it's very, very simple.
+what we're going to have to do this week is going to be a little bit more complicated.
+and here's one example of a state machine that you could implement using all three controllers.
+or actually, four controllers.
+we're going to start off on the go-to-goal.
+because we're going to assume that the robot starts somewhere.
+it's not going to be near an obstacle.
+it wants to go to the goal.
+then, if, we are at the obstacle, so meaning that we're at some distance close to the obstacle, we're going to switch into the blended controller with is the ao and go-to-goal controller.
+and if we leave the obstacle, meaning we're some distance farther away from the obstacle, we're going to, the condition obstacle_cleared will become true, and we're going to go back to goal.
+and so, we could, you know?
+you can imagine that we can switch between these, whenever either one of these conditions is true.
+and, but this gets a little bit more complicated than that.
+if we are in the state ao_and_gtg, so if we are in this state right here, and the robot is some distance less than, dsafe.
+so what i want, we want, we're going to be less than dsafe away from the obstacle, then this will become true.
+and in that case, what happens is that we switch from this state into this state right here, which is avoid_obstacles.
+because this is kind of like a last resort of, avoiding any collision with any obstacles in the world.
+now again, if, if we, if we're, end up in a, if we avoid the obstacle and we end up in a, at a distance that is safely away from the obstacle, we can switch back to the blended controller in the middle.
+so you can kind of think about your, you, the robot is always in some state so, in some state, and it takes a transition if one of these is true.
+and then it switches to this other controller.
+so then it ends up here.
+so if, if this one becomes true, it switches back to this one.
+so you can just follow the, these conditions from state to state to state to figure out where the robot, what the robot is going to do.
+and i said that we're going to have four states and four controllers.
+it's because i also have one for stopping.
+so, if we are, if we are in this case in the go_to_goal state, in the, in the, in, in this controller, end state.
+then, [cough] if at_goal becomes true, then we go ahead and stop.
+and, what you will probably notice here, is that i don't have a connection from any of the other states to the stop state.
+so, in this state machine, the only way that the robot will stop at the goal location is if it's in the go_to_goal state.
+if it's executing the go-to-goal controller.
+so maybe a better design would be to also have some paths down here, that's at, at_goal.
+and the same thing for here.
+so maybe this was a better one.
+but you're free to design the state machine whichever way you want, so long as you make sure your robot doesn't collide with the obstacle and ends up at the goal and stops there.
+now, as far as implementation is concerned, the files that you'll be interested in are first of all, the execute function and the supervisor, so qbsupervisor.m.
+that's where we're going to implement the logic for the state machine, where we're actual, well, i should say we're implementing the state machine in the execute function.
+and the other file of interest is going to be this new controller which is aoandgtg.m.
+so that's where you implement the blended controller.
+and, of course, we'll also take advantage of gotogoal.m and avoidobstacles.m.
+not only in the design of the blended controller, but also, we're going to switch it back and forth between these controllers that we've already written in the previous weeks.
+so, let's see the blended controller in action in matlab.
+see here, i'm going to go ahead and launch it, and of course i've already implemented it, and we're going to run this.
+so, this is the blended controller.
+i'm going to click on the robot and follow it.
+and, as you can see, the robot is avoiding the obstacles.
+but it's also going to go to the skull location, which is -1, 1 up here.
+and also has a condition for stopping.
+so what i've done here is i'm running the, the, the blended controller.
+and if i am at the goal, then i stop.
+and so, this is a success.
+now, my tips for this week are, as usual, make sure you read the section corresponding to this week's or week five in the manual for more details.
+i also encourage you to really experiment with different ways of blending the go-to-goal and avoid-obstacles.
+so i showed you in an earlier slide one way of combining the two vectors together.
+but i'm sure you can think of, of even better ways of combining those.
+and also experiment with different state machines.
+so there's different, definitely different ways of combining the different controllers or the different states and conditions.
+to construct a state machine.
+and just explore and see what works the best for you and good luck.
+[blank_audio]

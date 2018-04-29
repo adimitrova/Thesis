@@ -1,0 +1,189 @@
+[sound].
+so today i'm going to introduce the  basics of how to write computer programs  that draw pictures and that you can  interact with.
+the first thing you need to do when you  want to write, draw an image with a  computer program is turn your image into  a set of numbers.
+because at a certain level, numbers are  what computers understand.
+if you think about a computer screen,  it's composed of millions of pixels.
+these are picture elements.
+these are tiny little squares, each of  which has their own color.
+and you can think of the screen as a  large grid of pixels.
+as you can see on my slides here.
+the first thing you need to know when  you're drawing something to screen is  which particular pixel you're drawing to  or collection of pixels, and you need to  be able to express that as a number.
+so, how do we do that?
+the first thing we do is we have a number  that represents how many pixels across  you are.
+that's the horizontal position or what we  call the x value.
+we also need to know how many pixels down  you are.
+the vertical position or y value.
+these two numbers give us a position of a  pixel.
+for example 8, 6 gives us this pixel here  shown in red.
+so, with two numbers we can get a single  pixel value.
+so let's have a look at that in practical  program.
+so this is the program, i showed you  earlier.
+we've got the size.
+we've got the background, and we can draw  a point at a certain position.
+say 100, 100.  now you probably cant even see the point,  it's actually here, if you see my mouse  position where i'm clicking.
+why cant you see it?
+because pixels are tiny, let's do  something else before we proceed and make  the point a little bit bigger.
+we use this command called stroke weight.
+which gives you the width of lines you  draw or the size of the points.
+now set that to six and we're going to  get something a little bit bigger.
+and there we go we can clearly see a  single point on the screen.
+now, creating images out of individual  points is going to be hard work.
+so, let's look at how to make some more  basic shapes.
+okay, so here we have our pixel of  position 8, 6, with another point given  by another two numbers, say, 4, 3.  we can draw a line.
+so, with four numbers, x and y at the  start position, and the x and y of the n  position, we can draw a line.
+similarly with another full numbers we  can go further and draw a rectangle, and  the only difference being that the first  two positions are the top left position  of the rectangle and the other two  numbers are not a position on the  rectangle, they are the height and width.
+so let's have another look at trying to  draw more complex...  if, instead here, of point, we use the  command line, we can draw a line to 200,  300 and see what that looks like.
+there we have a line.
+similarly, the rect command gives us a  rectangle.
+and here instead of a, the end position  of the line for the second two points,  it's the height and width of the  rectangle.
+so i'm making a square, which has equal  height and width.
+so there we are.
+let's have a quick look at what i've just  done.
+so here we are, these are two commands  i've written.
+size commands.
+what is the size command?
+i showed that in my introduction lecture  to processing, but i didn't really talk  about it.
+well, in size, you're passing in 2  numbers.
+the first number is the x, is the width,  of the processing window you're creating.
+the second number is the height, the y  value.
+similarly with a line the first number is  the x position, the horizontal position  is the start point.
+then the hot vertical position, the y  position is, is the start point, and then  the x and y positions of the end point of  the line.
+so very simple, with four numbers, you  can draw a line.
+and from there, you can get many more  complex shapes.
+the next thing you might want to look at  is colors.
+so up to now we've been drawing black  lines.
+how do we represent color as numbers?
+well, if we start with black and white.
+the color coming off a computer monitor  is really the amount of light that is  being emitted by each pixel on the  screen.
+so we can think of the brightness of the  of a particular pixel, as being a value  that we can measure.
+and we can measure that brightness at  some maximum value, which is white and 0,  which is no color coming off, which is  black.
+and if you look here, 0 is black.
+and then we can use the value 255 as  why?.
+why 255?
+well, that happens to be the largest  value you can fit in 8 bits.
+so 8 ones and 0s on, in computer memory.
+any value in between those two will give  you gray lighter, or darker gray.
+so you can have shay, any shades or  variations of gray value between those  two values.
+fine, that's brightness, but what about  real color?
+well, when to talk about colors, we need  to think about primary colors, and if  you.
+at a very young age at school, you will  have learned that you can make any color  by mixing three colors of paint together.
+we're not actually working with paint.
+we're working with light, and that's  slightly different.
+the primary colors are different, but the  concept is same, and the primary colors  we have are green, blue and red.
+and any color can be made up with these  three, three basic colors.
+why is that?
+it's not a fundamental property of light,  but it's a fundamental property of our  eye.
+we have three types of receptor in our  eye, that are sensitive to green, red,  and blue parts of the spectrum.
+and, if the light comes between those  colors, it will trigger.
+a mixture of say, the red and green  components receptors on our eye.
+therefore we can fool our eye by, instead  of having a color that's between green  and red, sending both green and red at  the same time will look like a mix of  green and red, which is yellow.
+similarly, green and blue is cyan red and  blue is magenta, and any other color can  be mixed from those basic primary colors.
+that's great from a computer graphics  point of view, because we only need three  numbers to represent any color, a red  value, a green value and a blue value.
+so how do we use colors?
+well, there's a number of ways in which  you can use colors.
+if we look here we've got a basic  rectangle and what can we change about  that rectangle?
+well, the first that we can change about  the rectangle is the border of the  rectangle and we use the stroke commands.
+stroke means the color of the line that  we use to draw lines on screen.
+we can also change the center of the  rectangle using the fill command.
+fill is the color that is used to draw  the center of any shape, the middle of  any shape, that we're drawing on screen.
+we've already seen the background  command, and i'll show you that again  which has the, changes the background  color of the screen.
+the last command that i've already shown  you that is connected is stroke weight  that doesn't specify color, but it  specifies the width of any lines you're  drawing on the screen.
+so let's have a look at that in code.
+so we've already used background, and we  can see here that we've used backgrounds  25500, so that's 255 red, 0 green, 0  blue.
+and as we see, that came out as a bright  red.
+if we were to change that to 255 zero,  150, we would mix a little blue in and  we'd get a different colot.
+sort of more purpley color.
+let's try changing these, the colors of  this rectangle, so if we use stroke, we  can set the color of the border of the  rectangle, let's set it to a bright  green.
+sorry, just made a mistake there.
+and we can use fill to set the sensor  color.
+maybe we can use a light blue.
+we mix in light blue by having quite a  lot of red and green.
+so it's quite bright.
+there's a lot of whiteness in there, but  more blue.
+and there we go quite a light blue, we  could make it bluer by turning down the  red and green.
+so that's, we've got some quite garish  colors here.
+i wouldn't actually make an application  with these colors, but it shows you sort  of how you can mix, mix some basic  colors.
+the one last thing i want to show you is  that once you'll called stroke and fill,  those values continue for everything else  you draw, so if i draw another rectangle  eh, then they will be the same colors.
+so by putting in a second fill command, i  can change the color of my second vector.
+okay, there's one last thing i'd like to  say about color, which is to talk about  transparency.
+sometimes when you're specifying colors  as well as red, green, and blue, you'll  get a fourth number.
+this is the opacity.
+often called alpha.
+opacity controls how transparent  something is.
+it's actually the opposite of  transparency.
+so when the opacity is 255, it means it's  not transparent at all, and when it's 0,  it's completely transparent.
+so, to get colors which are partially  transparent, you need an alpha value  between 0 and 255.  so, for example, 255, 0, 0, 128 is half  transparent red.
+and we can see this in code here, by  setting the alpha of this rectangle to  128, and move it slightly so that it  overlaps the original, the original  rectangle.
+we don't want it to completely overlap.
+and you can see it is partially  transparent.
+its color is affecting what's beneath it,  but not completely.
+and mick will show you some nice examples  of how you can use transparency to get  some really nice visual effects.
+so, with what i've shown you so far, you  can make some nice drawings.
+with computer codes, and that's cool as  far as it goes.
+but it's not really a computer program  yet because all it's doing is drawing a  picture.
+when you think of a computer program you  want to interact with it.
+it has to do things independently.
+so if we look at what our program is  doing up to now.
+we're pressing play, it's running its  code.
+and when it finish, it will draw a  picture and we can look at it.
+but that's not how we, you complete a  program 1, we want to be able to interact  with that code.
+so we can do this by splitting a code  into news and number bit.
+first off, we we have some stuff that  should never change.
+for example, the size of the screen, the  background color.
+they should always stay.
+[inaudible] and that's what we call the  setup part of our program.
+and then there's stuff that should  change, so for example, the things that  we're drawing, like the lines, they  should move around based on what we're  doing.
+that's the drawing part of our program.
+and we put them in two different blocks  of code.
+the first one we put in a block of code  called setup i won't get into full  details of what everything means here.
+if you're familiar with java, you will  understand it.
+if not, look at some of my additional  lectures.
+but void setup is what's called a  function, and that contains all the code  that we do at the beginning of the  program and it happens only once.
+the important thing to note here are  these curly brackets.
+they say they tell you where the start  and end of the setup code is.
+similarly, we can have functions which  happen times the response to certain  events.
+so for example, i can have alpha function  mousedragged.
+what mousedragged does is that it happens  every time you move the mouse while the  mouse button is held hold down.
+a very useful function for interaction.
+so what happens now is i move the mouse,  i give some input, mouse drag responds  and i play and then it paints a picture  and i can see that.
+that's fine, but if you look at the code  as it is now, every time i call mouse  dragged, it's drawing the same line  because the numbers in there aren't  changing.
+i need to put in different numbers to my  line in order to change the interaction  i'm getting and make it truly  interactive, to make it respond to my  mouse movements.
+and this is how i can do it.
+rather than putting a number in there,  i'm putting in the value mouse x mouse y  pmouse x pmouse y.  now what are these things.
+well these are variables their names  stand for numbers if you're not familiar  with the term variable.
+but if you're not then you should look at  my additional lectures.
+and mouse x and mouse y are automatically  set to the current position of the mouse.
+so this is your mouse position as an x  and y value.
+pmouse and x and pmousey are useful  values.
+they give you the previous position of  the mouse and that's what enables us to  do some, some smooth drawing.
+i'll show you that in a minute.
+so let's look at some code that does  this.
+so this is about the most basic  interactive code you can get in  processing.
+we have a setup function that sets the  size of the screen and the background  color, and a mouse drag function that  draws a point that the position is the  mouse.
+so let's see what that does.
+we've got a nice little drawing.
+that's nice, but, when i draw, i'd like  to actually sort of draw continuous  lines, and we can do that with the code i  just showed you, because we can draw a  line from the previous mouse position to  the current mouse position.
+[noise] and there we are, some nice  continuous lines drawn.
+now, we've got a nice bit of interaction  but it doesn't look great, there's a lot  we can do with this aesthetically to  make.
+in a few minutes we'll talk to you about  that.
+but for now, that's most of want to say,  what, what i'm going to say.
+i just want to show you one little trick.
+about the background function.
+so at the moment it's not.
+every time i draw, it's drawing on top of  what i've already drawn.
+and sometimes that's what we want.
+sometimes what, that's what we don't.
+not what we want.
+if i move the function background into  mouse dragged as well as setting the  background color what background does is  it clears the screen.
+so if i move it into mouse dragged it's,  it's clearing the screen so i've no  longer accumulated all the drawings i've  ever done.
+and i just get this tiny little try off  the mouse.
+maybe not exactly what we want now.
+but there's lots of situations where it  is exactly what we want.
+and next week we'll show you that in  detail.
+so, so far what we've got is the ability  to draw some basic energies to screen.
+some basic shapes and interact with that  by responding to mouse position.
+there's a lot more we, you can do while  you're drawing, and i would recommend  that you look at the the processing  website, processing.org.
+there's a link to it from the from our  our call server site, and particularly  look at the processing reference and look  at some of the examples for shapes.
+a good example is to look at the ellipse  command so far we've looked at lines, and  rectangles.
+ellipse shows you how to draw ellipses,  and circles, and, and with that, that's  already part of your repertoire, but it  will already, it will also start you  learning how to use the reference for,  for processing, and pick up, and use new  commands that will enable you to do more  complex drawing.
+so i'll leave you here and matthew will  talk a bit about how to do audio  processing in processing and then mick  will show you more complex examples using  the basis, basic code that we've learned  here...  [music]

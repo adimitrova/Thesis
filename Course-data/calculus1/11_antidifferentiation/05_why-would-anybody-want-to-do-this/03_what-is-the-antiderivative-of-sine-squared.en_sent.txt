@@ -1,0 +1,30 @@
+[music] with all that we've learned so far, it's super easy to differentiate sine squared x, so i'm going to differentiate sine squared.
+well, it's the chain rule, right?
+it's the derivative of the outside function, which is the squaring function.
+so, it's 2 times the inside function, which is sine x, times the derivative of the inside, which is cosine x. so there, that's the derivative of sine squared x. what if i wanted to go backwards?
+what if i wanted to anti-differentiate sine squared x?
+i want to anti-differentiate sine squared x. i'm looking for a function whose derivative is sine squared x. well, me and my first guess for central function might be sine cubed over 3. because if i differentiate this while i'm differentiating the outside function, which is cubing, so it's 3 times the inside function squared divided by 3, and that's looking good.
+there, i've got a sine squared x. the problem is that, now i've got to multiply this by the derivative of the inside function, which is sine, and the derivative of sine is cosine.
+so, the derivative of this is not sine squared x, it's sine squared x times this extra cosine.
+oh, it seems really hard.
+well, there's a so-called half angle identity.
+this is the trick.
+that sine squared x is, according to half angle identity, 1 minus cosine of 2x all over 2. well, that's true.
+but how does that identity help?
+well, since sine squared x is 1 minus cosine 2x all over 2, that means the anti-derivative for sine squared x is equal to the anti-derivative of 1 minus cosine 2x over 2. now to do this, this is the anti-derivative of 1 half times something.
+so, i can pull out that factor of 1 half and just figure out how to anti-differentiate 1 minus cosine of 2x.
+now, this is an anti-derivative of a difference, which is the difference of anti-derivatives.
+so, i want to anti-differentiate 1 and i want to anti-differentiate cosine 2x.
+now, what's an anti-derivative of 1?
+well, it's just x. and what's an anti-derivative of cosine 2x?
+well, one such anti-derivative is sine of 2x.
+but then, i've got to divide by 2 to compensate for the chain rule here.
+it'll add plus c. so, there we go.
+i could simplify this a little bit.
+i could write this as x over 2 minus sine 2x over 4 plus c, and there is my general anti-derivative for sine x. maybe you really like this sort of thing.
+well, if you are really having fun with this kind of thing, here's a little challenge that you can play with.
+you can try to find an anti-derivative say, for sine to the 4th, right?
+and if you don't like the number 4, you can make the 4 some other number, right?
+but it's pretty fun.
+then, you can try to apply some of the trig identities to replace sine to some power with things that you can currently anti-differentiate.
+it's honestly pretty cool that these anti-differentiation problems are actually doable, that we can write down the anti-derivatives.

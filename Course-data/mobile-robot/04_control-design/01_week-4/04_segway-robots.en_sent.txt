@@ -1,0 +1,122 @@
+so, we now have a general procedure for  designing controllers which is pole  placement.
+and the whole idea there is, we pick our  k such that the desired eigenvalues line  up.
+we also, in the last lecture, learned  when it works and when it doesn't and the  key characteristic there was  controlability or complete  controlability.
+we can do pole placement when we have  complete controlability.
+if we don't, we can't.
+simple as that.
+and in fact, it's not just pole  placement.
+if we don't have complete controlability,  we can't make the system do what we want  meaning, we have to buy a new one, bigger  b matrix.
+there's nothing else we can do.
+today, in this lecture, i would like to  unleash these awesome powers that we have  on a complicated robotic system, namely a  segway robot.
+and in fact, this is a robot that's  balancing on these two wheels, and in  fact, here at georgia tech,  we have a segway robot, known as the  golem crane in professor mike stillman's  lab.
+and basically, the way a segway robot  works is that it's a unicycle, roughly a  unicycle, on top of which there is an  inverted pendulum.
+and luckily for us, we know how to model  unicycles and inverted pendulas.
+now, i'm writing +...  there because there's a little bit more  going on, but basically we're going to be  moving while balancing this thing.
+so, let's start with the base.
+the base is a unicycle,  x1 and x2,  that's the x and y position of the base.
+and it's v cosine psi, where psi is the  heading.
+and psi dot is still omega.
+we've seen this repeatedly.
+so, this is the dynamics of the base,  almost.
+and then, on top of that, we have this  inverted pendulum.
+and as we've seen, we need phi, which is  the angle by which the pendulum is  deviating from upright position and we  also need the angular velocity to  describe what is going on here.
+now, the inputs to a segway robot are  torques, wheel torques.
+so, the left wheel torque and the right  wheel torque.
+and torques translates into forces, or  torques and forces translate into  accelerations, but here in the unicycle,  these are, are old control inputs.
+the velocities now, since we have inputs  that acts as torques, we need to actually  add v dot and omega dot into the  equation.
+so, v and omega are going to be extra  states, that's where the +...  comes from because, what i have done is i  have added v and omega as states to my,  my model.
+so, what i really have in terms of the  state of the system, well, it's the  position of the unicycle, the  translational velocity, its orientation,  the angular velocity, and then phi and  phi dot associated with the upright face.
+and my inputs are these wheel torques,  left and right wheel torques.
+and in fact, if i write down the dynamics  of this thing.
+well here, i just have the unicycle  dynamics.
+that's all that i'm saying here, this is  unicycle dynamics.
+and then, i have all these other  derivatives that i need to solve and  compute.
+and if you sit down and do the math very  carefully or you look in a book or  something, you got this mess here.
+wooh, this looks kind of horrible.
+well, the first thing we do, of course,  when we have something like this is we  linearize it.
+this looks absolutely miserable.
+but if we linearize it, what we end up  with is a, an lti system and, in fact,  it's x dot is ax+bu, and i should point  out that what i've done, is i've  linearized this around (x,u)=(0,0), which  means that i have zero torques and the  position of the robot is at zero.
+it's looking at the x direction and the  pendulum is looking straight up.
+so, i'm linearizing it around 0,0.  and if you do that, you get the following  a and b matrices.
+obviously, i'm not going to ask anyone to  [laugh] memorize this.
+i'm just showing you.
+this is where the a and b matrices came  from.
+now, before we even attempt pole  placement, let's make sure that we can  indeed do it.
+so, the first thing we have to check now  for this system is controllability.
+and this is too big, right?
+so, i'm going  to go to matlab right away and write,  here's the controllability matrix of my a  and b, here's the rank, and out comes 6.  does anyone remember what n was in this  case?
+well, i do.
+n was equal to 7, which means that the  rank of the controlability matrix was not  equal to 7.  so, this is not a completely controllable  system.
+and the problem here is the unicycle.
+we've already seen that when we linearize  the unicycle, the dynamics gets messed  up, we can't move in the y direction.
+i don't know if you remember that but if  you say an x and y is the position of the  unicycle, then we had y dot equal to 0.  what that means is we have no way of  moving sideways basically.
+so, the unicycle is what's making life  hard for us here, so what i'm going to do  is i'm just going to ignore the unicycle.
+say, that the position and orientation of  the base, i don't care about that, but  what i care about is, the velocities, how  quickly it's moving and how quickly it's  turning.
+so, i'm going to shave off x, y, or x1,  y, x1, x2 and psi from the state space  and get a smaller system that has s  states, the velocity, translational  velocity, angular velocity and these phi  and phi dot associated with the pendulum.
+if i do that, i get a 4 by 4 system with  the following a and b matrices, again,  the actual numbers aren't that, that  important.
+well, i go to matlab, i write rank  controllability matrix, i get the answer  being 4.  in this case, n was equal to 4.  so, if i shave off the unicycle base from  my system, i get the completely  controllable system.
+now, i can start controlling it.
+the last twist though before i do that  is, i want my system to actually move.
+so, i'm not going to stabilize it to v  and omega equal to zero, because that's  not what i want.
+instead, i'm going to say, i would like  it to go to v desired and omega desired.
+so, let's just subtract away v desired  and omega desired,  and then i have a 0 here because you want  to stabilize it to phi and phi dot being  zero,  meaning, the pendulum being upright.
+i'm going to find a new state,  x tilde, which is my old state minus this  delta which is the thing i would like to  stabilize it to.
+so, this is my delta.
+so, i have a new state.
+well, what's the dynamics of the new  state?
+well, delta x tilde dot is x minus  delta dot, delta is constant so this is 0  so this is just x dot.
+so, it's ax+bu.
+well, i can write, i can add a minus  delta and add in an a delta at the end  because then i have x tilde again here.
+so, if i do that, i get a new system and  here is the lucky part for us.
+a times delta turns out to be equal to  zero because of the structure of a so i  get this thing going away.
+i have x tilde here so my new system  dynamics is the same as my old system  dynamics.
+x tilde dot is ax tilde plus bu.
+and now, i want to stabilize this system  down to the origin,  which means that the velocities are  actually going to end up being equal to  the desired velocities.
+so, we have completely control of the  system.
+we wish to stabilize it.
+we do pole placement.
+and again, like we talked about last  time,  it isn't entirely clear how to pick the  eigenvalues.
+so, i played around with the eigenvalues  and this seemed to give a good response.
+i didn't want oscillations, so there are  no imaginary parts, and i picked lambda 1  minus 19, lambda 2 minus 7.5, and so  forth.
+this is the smallest eigenvalue, it's  going to tell me how quickly, in general,  the system responds.
+so, with this, i'm going to pick u as -k  not x but x tilde, which is the, the new  system i'm interested in.
+i get my close look dynamics like this.
+and, in fact, the way i compute k is to  use the, the place command in matlab.
+so, i type in my p and k is place a, b,  and p.  so, this stabilizes the segway robot.
+so now, the last thing we have to do is  to actually do it.
+and the reason why i'm okay with  neglecting the unicycle base and only  controlling v and omega is that the  curvature of the path that's being traced  by the segway robot, actually is omega  over v.  so, what i'm really controlling now is  the curvature of the path rather than  where the actual robot is.
+and what i can do in the simulation that  i'm about to show you is basically, with  buttons, make v bigger or v smaller or  omega bigger or omega smaller.
+and in essence, what i'm doing when i'm  changing v and omega is i'm changing v  desired and omega desired.
+so, that's the way i'm going to be giving  reference signals or commands to the, the  unicycle robot.
+so, with that, let's move to the actual,  actually the simulation of an actual  segway robot.
+so now, we're ready to see our developed  segway robot controller in action.
+and i'm here with greg droge who is a  graduate student at georgia tech who will  be showing us a simulation of the, the  segway robot, so, greg, what do you have  to show us?
+okay.
+here, we have a simulation of the segway  robot.
+on the left, we have a 3d implementation  of the graphics.
+so, you can see that now, i'm able to  drive it around changing the velocities.
+just as, just as dr.  egerstedt mentioned with the keypad.
+and you notice a few interesting things.
+right here in the top right corner you  see the plot of the translational  velocity.
+the red line is the desired velocity and  the blue line is the, the actual  velocity.
+and you see that it converts this very  quickly to the inputs that i give it.
+and on the middle, you see the rotational  velocity and you see because of the  eigenvalues that we've chosen, that it  actually converges really slowly but it  still converges.
+and on the bottom you see that they're,  the tilt angle will always keep the, the  robot stable.
+so, i have a question.
+are you simulating this on the  linearization or on the full nonlinear  model?
+so, the simulation is on the full  nonlinear model.
+aha, so i actually have a question.
+so, linearizations are only valid  locally.
+do you have any sense for when this  breaks?
+meaning, can we make the robot  fall over, for instance?
+yeah, so if you  give it a really big huge step input of  the translational velocity you'll see  that in the 3d simulation, it goes in a  full circle and it actually hit the  ground.
+do, do that again.
+that was exciting.
+okay.
+aha, so there, we actually get a feeling  for how good or reasonable the  linearizations are.
+and in this case, it's fairly reasonable,  you can drive it around, but if you give  it really large desired velocities, it  actually falls over.
+correct.
+alright.
+thank you very much,  greg.
+yup.
+you're welcome.

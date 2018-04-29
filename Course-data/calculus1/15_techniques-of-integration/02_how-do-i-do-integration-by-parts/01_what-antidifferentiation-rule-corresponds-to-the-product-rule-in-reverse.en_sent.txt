@@ -1,0 +1,49 @@
+[music] we've already learned about the  chain rule in reverse.
+that technique was u substitution.
+i want to anti-differentiate a function  evaluated at g times the derivative of g.  i can make a substitution and reduce that  just down to anti-differenting f of this  new variable u.  now we're going to run the product rule  in reverse.
+what is the product rule?
+well the product rule tells us how to  differentiate the product of two  functions.
+so here's two functions, f and g, and if  i want to differentiate their product,  using the product rule, right.
+the derivative of the product is the  derivative of the first, times the second  plus the first, times the derivative of  the second.
+now, integrate both sides.
+so then i get that anti derivative of the  derivative of f times g, is anti  derivative of, what's this by the product  rule?
+alright, it's derivative of the first,  times the second, plus the first, times  the derivative of the second.
+but the antiderivative of the derivative  is just the original function.
+so let's write that down.
+that tells me that an antiderivative of  the derivative of f times g plus f times  the derivative of g is this.
+which is just f of x times g of x, and  i'll include a constant.
+that's the integral of a sum, so its the  sum of the intergrates.
+so integrate f prime of x g of x dx plus  integral of f of x, g prime of x dx and  we get f of x times g of x plus a  constant.
+and that's one very symmetric way of  writing down the product rule in reverse.
+but we can rearrange it a bit more.
+i'll subtract this integral from both  sides, so the left hand side is just this  integral.
+so the integral of f of x, g prime of x  dx is equal to, well heres what we got on  the righthand side f of x times g of x.  but i'm going to subtract this.
+subtracting f prime of x g of x dx.
+now look at what this is saying.
+it's saying that i can do this  integration problem if i can do this  integration problem.
+and how do these two integration problems  differ?
+well here i've got a function times a  derivative and here i've got the  derivative of f and an antiderivative of  this.
+right?
+g is an antiderivative of g prime.
+so i can replace this integration problem  with another integration problem.
+where i've differentiated part of the  integrand, and anti-differentiated  another piece of the integrand.
+it'll be a bit easier to see what's going  on if i make some substitutions.
+let's set u equal to f of x, and dv equal  to g prime xdx.
+and in that case d u is f prime x d x.  and what's an anti-derivative of this.
+well one of them is just g of x.  so i can use these substitutions to  rewrite what i've got up here.
+this integral is u times dv.
+and it's equal to u times v, minus the  integral of g is v.  and f prime dx is du.
+so now i've got the integral of udv is uv  minus the integral of vdu.
+this is maybe why it makes sense to call  this integration by parts.
+so i can integrate udv provided i can  integrated vdu.
+it's this trading game.
+i'm trading this integration problem for  this integration problem.
+but now one part is differentiated and  another part of the inner grand is  antidifferentiated.
+maybe that'll make things better.
+with u substitution, we had to come up  with a single u.  in contrast, when you're doing  integration by parts, when using this  formula.
+you not only have to pick a u, but you've  got to pick a dv so that you can write  your integrand as udv.
+this makes parts a bit harder to apply  the u substitution.
+i've gotta find both a u and a dv.
+but any time you're willing to  differentiate part of the integrand at  the price of antidifferentiating the  other part of the integrand.
+well if that's something you're willing  to do, parts will do that for you.
+[blank_audio]

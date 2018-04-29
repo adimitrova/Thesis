@@ -1,0 +1,20 @@
+[music] now, we've seen how to antidifferentiate some trig functions and polynomials.
+can we antidifferentiate, say, e to the x?
+so, the most general antiderivative of e to the x, is just e to the x plus some constant c. how do i know that?
+the derivative of e to the x is itself and consequently the antiderivative of e to the x must also be itself and it's just plus some single constant c. since this is a function as to find in a whole real line, well, great, we've found an antiderivative for e to the x. what about an antiderivative for log?
+so, in symbols, right, what i'm looking for is an antiderivative of the natural log of x, right, some function that differentiates the natural log of x. but have we ever differentiated anything and got log as the answer?
+who knows?
+but it turns out that the derivative of x log x is not so far off, right?
+this is a derivative product, so by the product rule, it's the first thing times the derivative of the second plus the derivative of the first thing times the second thing, right?
+so, the derivative of x times log x is 1 plus log x, so not too far off.
+now, you can kind of tweak this a little bit, right?
+what's the derivative of x log x minus x?
+well, that's the derivative of x log x minus the derivative of x which is 1. but i've just calculated the derivative of x log x. it's 1 plus log x and then minus 1, what i'm left with then is just log x, right?
+so, the derivative of x log x minus x is just log x. so, in light of that, we can summarize the situation as follows.
+so, yes, i mean, in, in light of this, i can say that the antiderivative of the natural log is x times natural log of x minus x plus some constant c. all of this is just so awful.
+it's just so depressing.
+you know, the answers are coming, but they're coming out of the void.
+i mean, they're just answers without any meaning or structure.
+we're finding these antiderivatives just by really clever guessing, you know, and it doesn't seem obvious how anyone would ever cook up these answers.
+i mean, if, if you're not feeling really depressed right now, you probably should be.
+you know, this is really bad.

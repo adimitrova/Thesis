@@ -1,0 +1,61 @@
+[music] there are subtleties even to  things that appear as simple as addition.
+here, i've got some addition problems.
+4279 + 1202,  4279 + 1190,  4269 + 1207,  + 1191,  and 4270 + 1100 you'll notice that  they're all close to this problem.
+the numbers that i've been listing off  are all hovering around this problem.
+anyway, i'm going to give out these  problems to some people and have them try  to do them.
+[music] hi, i'm [unknown] and i'm math  junior undergraduate at ohio state.
+[music] yeah.
+my name is jacob turner.
+i'm a graduate ta here at osu.
+[music] alright.
+people are finished doing the arithmetic  problems.
+let's record the answers.
+so  here, 4270 + 1200 was 5470.
+4279 + 1202 was 5481.  the next one is 5476, i've got 5467,  and the last one was 5464.  what do all these numbers have in common?
+they're all really close together.
+is that just an accident?
+of course, it's not an accident, right?
+here's the fact.
+near the sum of two numbers is the sum of  two nearby numbers.
+these arithmetic problems are not just  random arithmetic problems.
+look at the numbers i'm asking them to  add.
+4277 and 1190,  those those numbers are really close to  4273 and 1191.  which is really close to 4270 and 1200.  which is really close to 4269 and 1207,  alright?
+near the sum of two numbers is the sum of  two nearby numbers,  all of the answers are nearby as well.
+how does this relate to limits?
+let's take a look.
+here's how it relates to limits.
+the limit of f of x plus g of x as x  approaches a, is the limit of f of x as x  approaches a plus the limit of g of x, as  x approaches a.  how is this related to those arithmetic  problems?
+well, remember what this limit is saying.
+this is saying, what can i make f of x  plus g of x close to, if i'm willing to  make x sufficiently close to a.  well, it's going to be close to whatever  i can make f of x close to added to  whatever i can make g of x close to,  right?
+it's the same kind of setup, right?
+near the sum of two values is the sum of  the nearby values.
+for the limit of a sum is the sum of the  limits.
+we can use this fact to do some  calculations.
+let's see how.
+so, here's a limit problem.
+the limit of x squared plus x as x  approaches two.
+i really want you to resist the  temptation to just plug in two.
+we're going to be using our limit laws to  try to evaluate this limit.
+now, this is the limit of a sum, and the  limit of the sum is the sum of the limits  provided the limits exist.
+so, this limit of x squared plus x is  equal to the limit of x squared as x  approaches 2 plus the limit of x as x  approaches 2.  now, what's the limit of x squared?
+because the limit of the products is also  the product of the limits provided the  limits exist, this is the limit of a  product.
+this is the limit of x times x.  that's what x squared means, it's x times  x.  so, i could rewrite this as the limit of  x times x, as x approaches 2+.
+now what's the limit of x as x approaches  2?
+this is asking, what does x get close to  when x gets close to 2?
+or, some more precisely, what can i  guarantee that x is close to if i'm  willing to make x sufficiently close to  2?
+the limit of x as x approaches 2 is 2,  alright?
+so, this limit is just two.
+now, this a limit of a product, and the  limit of a product is the product of the  limits provided the limits exist.
+so, this limit is the limit of x as x  approaches 2 times the limit of x as x  approaches to +2.
+now again, the limit of x as x approaches  two, right?
+what can i guarantee that x is close to  if x is close to 2?
+well, two.
+so, this is just 2.  this limit is the same thing, it's again  just 2.  and here, i have +2.
+2 * 2 + 2 is 6, which is the value of the  limit of x squared plus x as x approaches  the takeaway message here is ask not what  your country can do for you but what you  can do for your country.
+or in other words, that the limit of a  sum is the sum of the limits provided the  limits exist.
+it's the same rhetorical device right,  x-y, y-x.
+alright, the limit of a sum is the sum of  the limits provided the limits exist.
+i hope this is very memorable because  these kinds of chiastic rules are going  to be used throughout our time together  in order to evaluate limits.
+soon, we're going to see that the same  sort of pattern holds not just for sums,  but for differences, for products and  almost for quotients.
+good luck.
+[music]

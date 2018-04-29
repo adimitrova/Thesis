@@ -1,0 +1,25 @@
+[music] generally speaking,  anti-differentiating things with radicals  is difficult.
+for example, let's try to find an  anti-derivative of, x over the cube root  of x plus 1 dx right?
+let's try to anti-differentiate this.
+can i make a substitution to improve the  integrand?
+so what substitution do i want to make?
+well, i really have some choices, i mean,  one thing i could do is i could make ux  plus 1 and in that case, du is just dx.
+and if u is x plus 1, then x is u minus  1, and i can then rewrite this  anti-differentiation problem.
+instead this becomes the anti-derivative  of that x, but u minus 1 still cube root,  but instead of x plus 1, it's now of u  and the dx becomes du.
+and i, i could actually do this, but i'm  not going to head down that path.
+instead, i want to show you a trick by  which you can get rid of the radical all  together.
+so instead let's set u, just to grab the  whole denominator.
+so u will be the cube root of x plus 1  and in that case, u cubed is x plus 1.  or, in other words, x is u cubed minus 1.  and that tells me what dx is.
+in that case, dx is 3u squared du.
+now i could make this substitution.
+this transforms this integration problem  to, the anti-derivative of x now becomes  u-cubed minus 1.  the whole denominator just becomes u.  and then the dx here is now a 3u squared  du, so i'll write 3u squared du.
+and that's just a polynomial.
+so i'll simplify this a bit, this is the  anti-derivative of, what is this here, u  cubed over u times 3u squared, that's 3u  to the 4th minus 1 over u times 3u  squared that's minus 3u, du.
+and this, this is just a polynomial, so i  can anti-differentiate this very quickly.
+this anti-derivative is 3 5ths u to the  5th, minus 3 halves u squared plus c.  now, we'll just replace u with what it  equals in terms of x.  so u, remember, is the cube root of x  plus 1, so putting that in here, i get 3  5ths, instead of u it's x plus 1 to the 1  3rd to the 5th.
+so to the 5 3rds power, minus 3 halves x  plus 1 to the 1 3rd squared, which is to  the 2 3rds power plus c.  to make it easy to talk about this  particular technique, it has a name.
+the rationalizing substitution.
+the original problem had a cube root in  it, but i made a substitution to get rid  of the radical, a rationalizing.
+a challenge when doing u substitutions is  that there really are multiple paths that  you can take to the correct answer.
+it's not even apparent how successful a  particular substitution might be until  after you've started applying it, right?
+you have to take that first bite before  you realize whether or not you're eating  food.

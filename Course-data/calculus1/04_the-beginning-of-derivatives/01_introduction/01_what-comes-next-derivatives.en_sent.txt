@@ -1,0 +1,12 @@
+[music] a major theme in calculus is change.
+you've got one thing affecting something else, you want to know, how does changing this one thing affect this other thing.
+often the relationship between these two things is given by a function, right?
+you've got some kind of function that has inputs and outputs.
+and you're wiggling that input point, and you want to know how the output value view changes.
+very concretely.
+you might ask for the ratio of change in the output valve view to change in the input point and that ratio, that's the derivative.
+alright.
+derivatives measure how change in the import affects the out port.
+at least infinitesimally.
+and studying derivatives is exactly what we're going to do now.
+[music] [blank_audio]

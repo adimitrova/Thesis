@@ -1,0 +1,51 @@
+[music] in all of these three data management policies, dmp should describe in detail all major aspects of data management throughout the research life cycle.
+here is a checklist for a data management plan from the digital curation center that list questions that should be addressed in the dmp.
+what data will you collect or create?
+to answer this question, you should provide a description of the data, including the type, format, and volume, with a justification of the format choice.
+if there are any storage implications due to the format or volume of the data.
+you should include these as well.
+how will the data be collected or created?
+describe the data collection methods to be used, including the standards that dictate these methods.
+you should also discuss your plans for organizing data files and applying version control, as well as how quality assurance protocols will be implemented during and after data collection.
+what documentation of metadata will accompany the data?
+it is important to determine what information will be required to ensure that the data be understandable to secondary users of the data, or for you and your team in the future.
+in other words, you should describe the type of documentation that will be needed to accompany the data in order to interpret and use them.
+these documents might include a description of the methodologies, a codebook that provides variable and value definitions, questionnaires or instruments, or analysis procedures.
+how will you manage any ethical issues?
+the dmp should demonstrate that you have considered critical issues related to laws and guidelines.
+regarding the protection of human subjects.
+if your project will conduct research involving human participants, you need to describe provisions for protecting their confidentiality.
+this should include strategies for handling and storing sensitive data, restricting access to sensitive data, and preparing de-indentified datasets for sharing.
+how will you manage copyright and intellectual property rights issues?
+this is where legal issues of data ownership need to be addressed.
+you need to identify the owner of the data and their conditions for using the data.
+if you are reusing third-party data particularly property data.
+you should discuss permissions with the data producer.
+how will the data be stored and backed up during research?
+to answer this question, you should describe provisions for storage.
+and the degree to which they are adequate for the type and size of your data.
+provisions for storage should include plans for systematic back ups of the data files.
+how will you manage access and security.
+if the data are sensitive or should otherwise be restricted.
+to authorize project personnel.
+you should describe in detail security measures that will be in place to protect the data.
+you also need to describe the standards with which those security measures comply.
+which data should be retained, shared, and/or preserved?
+in thinking about how the data will be used by others or by your team in the future, you should make note of the potential value of the data and the effort that will be required to prepare the datasets for preservation and access.
+what is the long-term preservation plan for the dataset?
+answering this question requires you to identify the repository you will use to archive the data and your plans to prepare and document the data to ensure that they will be preserved and usable into the foreseeable future.
+how will you share the data?
+here you should identify the mechanism you will use to share your data.
+describe how others might find your data and how data files will be delivered.
+you should also specify how you would like others to acknowledge or sight your data.
+are any restrictions on data sharing required?
+again, if privacy concerns affect your ability to share project data, you will need to discuss them and how you will overcome these concerns to enable data sharing whether by providing anonymized versions of the data.
+requiring a data use agreement or other mechanisms.
+you may also choose to place an embargo on the data, to ensure you have exclusive use of the data for a period of time.
+if this is the case, you should explain why this is necessary.
+who will be responsible for data management?
+quite simply, you need to identify, by name if possible, who will oversee the implementation of the data management plan.
+what resources will you require to implement your plan?
+for some projects with complex data, whether due to type, size, or the fact that project activities are geographically distributed among different institutions, data management might require specialized expertise or special equipment.
+you may also consider costs associated with performing ongoing data management tasks, as well as the resources required for long-term preservation of the data in a repository.
+[music]

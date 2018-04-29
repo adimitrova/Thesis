@@ -1,0 +1,235 @@
+last time, we derived the equations of motion of a rigid body.
+i got little cube with me here, it's somewhat rigid right now.
+how do we find the equations of motion of a rigid body, spencer?
+before you read too much.
+>> you use super particle theorem on this center of mass because it's rigid, so the center of mass shouldn't be changing position.
+>> true, if you worry about the translational part.
+at this stage of the class, really as we're talking about rigid bodies, we're going to start just dropping the translational, for most of it.
+if not i will make it very explicit.
+so if i'm talking about the equations of motion, i'm really just talking about the rotational side of it.
+so how do we find the rotational side of the equation?
+what are we actually looking for?
+what's the variable?
+yeah, we're actually looking for omega dot, right?
+that's the, omega is already a rate information so omega dot is the acceleration.
+that's your angular acceleration.
+once we have it we can integrate it.
+so whereas translation have f equals ma, you go straight from forces to acceleration of your position description, in attitude we have this kinetics and kinematics always broken up.
+we have somehow added to coordinate rates related to omega, and then an omega dot relates to forces and torques and everything acting on it, right.
+so you have this clear split that you have to do.
+so here we're looking for the second part, the kinetics.
+what's the fundamental property, robert, that we use to drive this?
+>> [cough] >> [inaudible] >> which principle did we apply?
+>> conservation of angular momentum.
+>> why is it conserved?
+why is the rotational motion of a rigid body, why does it have a conserved angular momentum?
+>> because- >> ansel, can you help him?
+>> it's torque-free?
+>> if it's torque-free, but i didn't mention torque-free motion.
+so let's assume it has torque, what do we need then?
+how do we get to an omega dot?
+mariel, which principles do we use to get equations of motion?
+>> like h equals the derivative of h time, or plus, omega cross.
+>> okay, you've taken the derivative of it already, but what is the inertial derivative of the angular momentum of the system?
+>> the right hand side of- >> yeah, l. >> l, there we go, right.
+so like f equals ma, this is good for a continuum if we have center of mass, or, and here implied if i don't write a sub c, it's always implied to be center of mass in this notation, right?
+so we can use h=l, the key features is, this dot has to be an inertial derivative, like f equals ma, those a's have to be the inertial acceleration.
+and this l is the net sum of all the external ports acting on the system, which right now we're just writing as l. later on, that could be gravity gradient torques, it could be drag torques, it could be control torques with thrusters, or something like that.
+many ways to break it up, good.
+so let's review quickly, this is going to be a good, what is h of a rigid body?
+all right, once we said this thing wasn't blob and jello and flexing, it's solid, what did h become?
+was it, brett?
+>> not sure.
+>> what is angular momentum?
+go back to your sophomore level class, fixed axis rotation.
+what is angular momentum?
+>> is it the inertia times- >> yes, inertia times what?
+>> the regular rate?
+>> yes, and this is the 3d version of that.
+i omega, right?
+review this stuff, otherwise, hour and 15 minutes you're not going to have time to remember such things, okay?
+we're getting up to that exam point.
+so if h is this, this is the inertia tensor, right, we talked about that.
+this is written as is in a coordinate frame independent way, you just have to make sure if this is in the b frame, this needs to be also in the same b frame.
+and this gives you the answer in a rotating frame and the b frame but you could pick any frame you wish.
+good, now we need to do h dot.
+so mariel actually already got us on this track.
+we need an inertial derivative and we choose to take a body frame derivative of h. i won't go all the details, we did that last time.
+this is just a review.
+why do we choose to do a body frame derivative?
+kevin?
+why is that going to make our life easier dealing with this term?
+let's break it up, you're going to have chain rule.
+you're going to have the body frame derivative of this tensor times omega plus the inertial tensor times [cough] the anglular velocity.
+and that's not h dot, let me just, scratch that.
+we're just doing, we're choosing to do the body frame derivative of h. so kevin, why do the body frame derivative of i omega easier?
+>> because then the derivative of the inertia matrix is going to be zero.
+>> exactly, and see by the body, every point to here, if you just lock your arms out and you start rotating, as you're rotating that arm is always to your left.
+the mass distribution, all those moments you computed, and you got the inertia tenser, they're fixed, as seen by the body.
+as seen by you guys as i tumble an object, the mass distribution is clearly changing.
+so if you did the inertial derivative directly on this, you'd have lots of extra terms.
+you'd have to map it to the inertial frame, dcn, dcn dots, dcn dots r minus omega til dcs.
+and it all looks much more complicated, but it's the same simple answer.
+this ends up being, as seen by the body observer, it's 0. so that's why we do this, what happens to this derivative?
+anybody remember?
+what happens to that, yes?
+>> it's just omega dot, because it's the same inertial frame.
+>> because this is really, if i write omega, it's short for omega b relative to n. we're typically dealing with b and n for the next several weeks so this becomes much easier.
+the b and the n frame derivative are the same, the cross product always drops out.
+good, so if you do all this stuff, then h dot as mariel was pointing out, really ends up giving you i omega dot plus i have to do the transport theorem so i have an omega crossed h and h is i omega, and that's equal to l. there we go.
+is this only true for particular coordinate frames, or is this true for any frame?
+daniel, what do you think?
+>> an inertial frame?
+that's two frames.
+>> yeah, this is really written in a very frame agnostic way again.
+we haven't picked anything, we just solved it, like we did earlier with positions and angular velocities.
+they're just vectors, we can start adding, subtracting them without ever specifying where does el really point.
+once you want to get a numerical answer, well you have to resolve the geometry and have all the right stuff.
+and so this is kind of the same way, this is a very, like a vector.
+we have vectors and tensors but they're written in a frame agnostic way.
+and when you do the math, just make sure everything's in the same frame.
+especially when we get to the control side, we'll be doing this a lot.
+this is how we'll be deriving our controls, but when you code it, you have to go, wait a minute.
+this will make a r, that's coming in, that's in the r frame and this stuff is in the b frame.
+well then implied, you're going to have to do some translations.
+matt?
+>> i was writing when you wrote it, [cough] and i don't remember from last time.
+where does the second term in that l equation come from?
+>> this one?
+>> yeah.
+>> i need h dot equal to l. and basically what we do is, we take the body frame derivative of h, but i need the inertial derivative, so you need omega crossed h as well.
+and omega cross, h is i omega, and omega cross h is the same thing as omega tilde i omega.
+that's the form we typically see it.
+>> cool, thank you.
+>> and then that's l. so you can see, in exam this is something that shouldn't take you more than three minutes if you know what you're doing.
+but there's lots of subtleties, if you just jump to the answer, the answer's in the equation sheet you guys have.
+just giving me the answer will give you zero points in the exam.
+it's all about the path and the details.
+so make sure every time we go through this, hopefully more and more will sink in.
+make sure you get this stuff.
+so, good, now we have very specific frames that make your inertia tensor diagonal.
+trevor, what do we call such frames?
+>> principle frames.
+>> was principle coordinate frames, are there an infinity of principle coordinate frames?
+you say no.
+and you slow down?
+[laugh] >> well, for a particular application, for a particular rigid body, it'll be the same.
+>> so, here's a nice rigid body, are there infinity of principal coordinate frames?
+>> mandara, you think so?
+why?
+>> because we have one axis as they symmetry axis, we can have the other two in the plane orthogonal too.
+>> okay but if it's a cube.
+>> then all of them are- >> see, all of a sudden, ooh, wait a minute.
+>> [laugh] >> if it's a cube what happens to my principle inertias?
+>> they're all the same?
+>> yeah, they're repeated.
+hm, right, all these easy questions at 8:00 in the morning.
+>> [laugh] >> i need more coffee.
+okay, so if they're all the same, why does it make you hesitate all of the sudden?
+>> because the vectors, the uniqueness.
+>> yeah, then you have to kind of, the eigenvectors form different ways that you can map to there.
+you have to take a closer look at it.
+if it's a body, let's go to a simpler body.
+this one has three distinct inertias.
+it's definitely rigid, right?
+are you going to have more than one principle coordinate frame?
+bryan, you don't think so?
+>> i think you probably, yeah, i think you probably could.
+it depends on the symmetry of the object.
+>> this is it, i'm showing you the object, there's no more depends, it is.
+>> right, but if you take the moment of inertia around one of those principal axis, negative moment of inertia on the other one.
+>> right, for every body, it doesn't actually depend on the shape, every body has at least some principal axis that will diagonalize it.
+and maybe an infinity, if it's a cylinder, that's kind of what you guys are thinking of, if it's a cylinder, there's definitely an infinity of ways that you have it.
+but if you have even three discrete ones like this, or it's something very amorphous it will still have three principal inertias, principal axis.
+but when you pick those eigenvectors, you remember wait a minute, i can have a positive direction but who says this isn't your principle axis?
+maybe you want a frame the points towards the tail because that's where your docking porter is or you want to port towards, find the points towards the nose because this is a flight frame and you kind of worry about where you're flying.
+there's immediately, well there's two options and then there's another one and so there's a kind of permutation you can go through, there's an infinity of principle frames that a general body would have.
+but there's definitely a finite set because you can always rearrange what's your first, what's your second, what's your third.
+and plus or minus, just always keep it right-handed, right?
+so yeah, there are several that we can pick and so if we look at that, we went through that actually.
+if this is diagonal, these simplify down to those three scalar equations we saw, and then we can do that.
+now, the last question we had we covered was integration.
+if you want to integrate the complete motion we have something and we give it a spin and it tumbles.
+how do we now numerically solve this?
+tosh, help us out, how do we now write an integrator for a complete 3d attitude dynamics?
+>> so you'd look at your omega dot and [inaudible].
+>> but besides omega dot, what else do you need?
+what describes the full attitude state of a rigid body?
+>> i guess, [inaudible] general forces.
+>> nope, i'm asking for what describes, what coordinates do you need to fully describe the orientation of a rigid body?
+>> there's no other answer but mrps, i would say.
+>> not mrps, it was a good answer, definitely.
+>> [laugh] >> thanks for sucking up, i appreciate it.
+>> [laugh] >> so you need an attitude measure, right?
+just like if you have f equals ma, spring mass to amperes system, think back to that form.
+okay, we've got x double dots, that's nice.
+but i have, every integrator writes these things back into first order form.
+so you define that x1 is equal to x, and x2 is equal to x dot.
+and then x1 dot is equal, and you just do that classic stuff.
+we have to do the same thing for attitude, it's just we have different equations.
+so we still need the attitude measure, that was the integrator you wrote earlier in these classes, right?
+so you had something for mrps or quaternion or whatever you wish to, some attitude measure.
+so that means you have a state vector that is going to be now a, if it's an mrp it's six by one.
+if it's a quaternion it's a seven by one, right, this is what we have to propagate forward.
+otherwise this is very much what you did before, you have your current states.
+then you compute k1 is equal to the derivative.
+so if x dot is equal to an f function, depending on these, all right.
+then the first order one would just give me what's the derivative of these states.
+and then xn + 1 is xn + k1 times delta t. or you can do a fourth order on the cut out or whatever you wish to integrate, right?
+it's the same integration that you're doing in those problems, you're just expanding now, now we have to keep track of attitude and rates.
+now there was some discussion that we had regarding, could we integrate attitude separately from our kinetics equation, from our omega dot equation?
+so, nick, do you remember the arguments?
+how does attitude actually couple into this differential equation?
+>> [cough] i guess you could single out the omega dot term.
+>> no, omega is the state.
+it's not, >> i guess i don't understand the question.
+>> how does attitude couple into this equation?
+does this differential equation depend on my instantaneous attitude?
+>> no, well, i was confident.
+>> it was very confident, i give you kudos for that.
+it was completely wrong, but it was very confident, absolutely.
+why does attitude couple into this, where, right?
+because omega that's just another state, that's not the coupling itself.
+it's a derivative of some stuff.
+the interia tensor, well, that doesn't really, i don't have different mass because i point differently.
+it's a rigid body, it doesn't matter on the orientation.
+the only thing left is l, how does attitude couple into l?
+what are some physical examples of torques?
+daniel?
+>> some torques are added to it independently.
+>> yes.
+>> drag, srp.
+>> drag, srp, gravity, gradience, or even our feedback control, you will see very much, that's where it couples.
+so while there's instances where you could just solve for omega first and then solve for the attitude as you did kind of.
+i just gave you the omegas essentially in earlier homeworks, right?
+when you code it, i highly encourage just to avoid that, just give the general answer, it's simple enough to do.
+and you want to solve your attitude and your omegas all simultaneously.
+later on in class we can even add other stuff like reaction wheels or, that quickly moves to 6010, the follow on class.
+matt?
+>> [cough] excuse me, i have a question about that equation on the last page.
+so when you were just asking that question i was thinking that you were pointing towards the i's because this is an inertial derivative and the inertial frame i will change.
+but are these is constant because we derived it in the body frame?
+>> these are just tensors.
+i mean if you say constant i have to ask constant as seen by what frame?
+the inertia is not a matrix like a dcm, where it's just a three by three grouping of cosines that we picked, right?
+we could have picked something else.
+this is really fundamentally a tensor.
+which means just like a vector it, when you numerically evaluate it you have to pick a coordinate frame.
+so i just said look this been a completely vectorial thing i can take the body frames derivative of this and what happens then is, well the body frame derivative of h, and h is i omega.
+you break it up into two parts, right?
+here, i can immediately say this part is going to go to zero, which simplifies it.
+and this derivative body frame is the same thing as the inertial derivative, as we discussed.
+so this h b frame derivative becomes nothing but i omega dot, that's this part.
+could then, to get the inertial derivative, i have to add omega cross h, which is equivalent to here.
+so this gives me the answer but i've never actually picked a particular courting frame.
+remember when we're using transport theorem and we say we're taking the derivative of vector as seen by this frame.
+it doesn't mean you have to write that vector in that frame.
+often we have, that's why we've chosen that frame.
+here, we haven't chosen the b frame derivative because we have a particular coordinate frame, we've chosen a b frame derivative because as seen by the b frame, the mass distribution for a rigid body is constant and that derivative goes to zero.
+>> i think this was my confusion, no matter was i is, it's constant.
+>> it's constant, exactly.
+for any shape with asymmetries and whatever's going on, this is always true, right?
+the only thing is, it's rigid.
+that's the single rigid body and now we have this in a very general way.
+you can see this looks suspiciously simple in undergraduate stuff we go through this very, very quickly.
+but then all this, there's all these layers of details that are on top of this that take a little bit more time to sink in, so, work with this.

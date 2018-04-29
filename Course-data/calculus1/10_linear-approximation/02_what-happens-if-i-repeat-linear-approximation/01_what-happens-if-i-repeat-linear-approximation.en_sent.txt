@@ -1,0 +1,61 @@
+[music] well here is a linear approximation problem.
+so i've got some function f. and you don't know that function immediately, but i know it's derivative is equal to the function's value, say at all x. and let's suppose that i know this function's value at zero.
+so this function's value at 0 is 1, and then my goal is to find f of 1. now we secretly know something, right?
+i mean, i secretly know that this function is really e to the x. so when i say find f of 1. i really mean that i'm trying to calculate e to the first power, i'm trying to calculate e. the point, here, you know, isn't to the say that answer is e, right?
+the point is going to be to try to approximate this quantity without actually knowing the value of e. we already know how to do this.
+we can use linear approximation, all right.
+i want to know what f of 1 is, and by the linear approximation business, well it's not equal to, but it's approximately the value at 0. plus how much i change the input by times the derivative at 0. now i know the function's value at 0. the function's value at 0 is 1. and since the derivative is equal to the value everywhere, that means i also know the derivative is 0. so the function's value is 1, the derivative at 0 is the same as function value at 0, which is 1.
+1 plus 1 times 1 is 2 so approximately f of 1 is 2. and since i secretly know that this function is e to the x, i'm saying that e is about 2, 2 is a terrible approximation but we can do better.
+if we can do any approximation once, we can do it a bunch of time.
+so instead of this jumping all the way to 1, let's first approximate f of 1 half and that will f of 0, plus how much i wiggled by which is 1 half times the derivative at well, f of 0 is still 1, 1 half is a half and the derivative at 0 is still 1. so this is 1 plus a half, this is 3 halves.
+now we use data approximation to approximate f of 1. yes, i'm sort of bootstrapping up here, now i want to know f of 1 at least approximately.
+but instead of starting at 0, i'm going to start at 1 half.
+so that will be about f of 1 half, which admittedly i don't know but i got this approximation for it.
+plus how much i changed to go from 1 half to 1 times the derivative at one half.
+now f of one half is approximately this three halves, one half and the derivative of one half i don't really know what it is but i still know that the derivative is equal to function's value and i've got an approximation of the function's value.
+so i can use that approximation here at the derivative at one half is about 3 halves.
+and i've got 3 halves.
+and i've got 3 quarters.
+that ends up being 9 4th, which is a slightly better approximation to the function's value of one.
+i mean, nine fourths is closer to the actual value of e. well if two steps worked better than one step, ten steps will work even better.
+so here we go, let's approximate this function at 0.1. well that's approximately the function value at 0 plus how much i change the input by times the derivative at 0 and the function value at 0 is 1 plus 0.1 times derivative of 0 is 1. so approximately, e to the 0.1 is about now i repeat this process, i want to know exactly what's the function's value at that should be about the function's value at 0.1 plus 0.1 times the derivative at so approximately the function values at point 0.1 is about 1.1 plus 0.1 times derivative at 0.1, which is about, no, see this in fact the function values at 0.1 which is about 1.1. so 1.1 plus 0.1 times 1.1, it's kind of a mouthful.
+but that ends up being 1.21. now to approximate the function value at all right, i'll start with the function's value at 0.2. i go from 0.2 to 0.3 by adding 0.1. and then i multiply by the derivative, at the function's value at 0.2 is 1.21 plus 0.1 times the derivative of 0.2, which is also about 1.21, and 1.21 times 1.21 plus 0.1 times 1.21, that's 1.331. now you might begin to see a pattern here, right?
+1.1, 1.21, 1.331, these are pieces of pascal's triangle, really.
+i mean that makes sense considering how.
+how i'm adding the number plus 0.1 times the number.
+lets just keep going.
+so let's compute f of 0.4, that's f of 0.3 plus 0.1 times the derivative of 0.3. well, the approximation here for f of 0.3 is 1.331 plus 0.1 times 1.331, which is, now i can do this again to get an approximation for 0.5. right, i'm really just taking this number and adding 0.1 times it and i get 1.61051. can do the same thing to approximate 0.6 and i get 1.771561. can do the same thing to approximate 0.7, and take this number and add this number times 0.1, which is 1.9487171. do the same game, do approximate f of 0.8?
+so i take this number and add 0.1 times this number.
+and i get 2.14358881 can do the same thing now a 0.9. so this number plus 0.1 times this number and i get 2.357947691 and last.
+i take this number and add 0.1 times this number, and i get 2.5937424601, approximately e. well, not so great.
+but i mean, it's, you know, much closer to my previous attempts, where i just used two steps, you know.
+so using ten steps is better, this technique of repeated linear approximation has a name.
+so instead of calling this you know repeated linear approximation people usually call this the euler method.
+lets summarize the algorithm.
+so this is a set up.
+i've got a formula for the derivative of f, just in terms of f and x. so this cloud represents some formula that involves f of x and x and that's my formula for the derivative of f at x. and let's say i know the value of f at zero.
+just some number and suppose i've picked some small number h. well what euler method tells me to do, is i want to know f of h, well i already know how to do that.
+right, that's just linear approximation.
+it's f of zero plus h times the derivative at zero.
+i can use this formula, say to calculate the derivative of f at zero.
+and i know the value of f at zero.
+so i can get an approximation to the function's value h. now the neat thing is i an keep playing this game, right?
+if i want to know an approximate value to the function at 2 times h, well that's about the function's value h plus h times the derivative at h. and now i know the function's value at h approximately.
+and i know the derivative at h, because i've got a formula for the derivative in terms of f and x, and i know how to calculate f of h, approximately, and i know x, all right, it's h in this case.
+and that means that i can get an approximation to f of 2h and i'll just keep playing this game.
+if i want to know f of 3h, well that's about f of 2h plus h times f prime of 2h, so that's that linear approximation formula again.
+to go from 2h to 3h, i add h so f of 3h is approximately my function's value with 2h which i've already approximated, plus how much i change the input by, times the derivative of 2h.
+and this i can also approximate, because my formula for the derivative just involves things i already know at least approximately.
+right, i know the value of f at 2h approximately.
+and i can just keep on repeating this to move myself further and further to the right and, you know, approximate values of the function that tend to get very far away from zero.
+the cool thing here is that i'm using, you know, linear approximation in each stage.
+and then i'm using the information from previous stages not only to approximate the function's value, but also to approximate the function's derivative.
+i should wan you that in the really world, people don't really use the euler method so often.
+but like any really great mathematical idea, there's a ton of different riffs that you can play on this basic framework.
+for example since this is just going to end up being an approximation of the derivative anyhow, it's sometimes better not to pick a point which is all the way on the left hand side of the interval i'm approximating over.
+so sometimes you'll see that say instead of using zero here, i might use h over 2. instead of using h, which is really on the left hand side of the interval between h and 2h.
+you'll see that sometimes people will use, say 3 halves h, which is smack in the middle of h and 2h.
+and say instead of using 2h here, people will sometimes use 5 halves h, which is right in between 2h and 3h.
+so you can play some games, say by choosing a different point to approximate the derivative at, and using the midpoint is sometimes better.
+incidentally, if you've got some programming experience, i'd encourage you to try to write a program to do the euler method.
+it's really fun to be able to see these calculations come alive.

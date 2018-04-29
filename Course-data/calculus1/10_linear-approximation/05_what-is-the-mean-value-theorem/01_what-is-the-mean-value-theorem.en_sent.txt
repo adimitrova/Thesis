@@ -1,0 +1,53 @@
+[music] how does information about the derivative connect back to information about the original function.
+there is a technical tool that connects this differential information just to the value of the function and that tool is the mean value theorum.
+well here's a statement of the mean value theorem.
+suppose that f is continuous on the closed interval between a and b, and it's differentiable on the open interval a b. so that's the setup.
+f is a pretty nice function.
+then there exist some point in between a and b, so a point in the interval a b. so that the derivative of the function at the point c, is equal to this.
+which is really calculating the slope between the point a f of a. and b f of b. that statement seems really complicated.
+let's try to boil that down to a statement we can really believe in.
+well, here's one interpretation.
+if that function is giving you position and the input to that function is time, so that the derivative of that function is your velocity, then that formula is saying that your average velocity is achieved, at some point instantaneously.
+right?
+that fraction, that difference ratio, is calculating the average velocity.
+and instantaneous velocity is the derivative.
+and the mean value theorem is saying that those are equal at some point in between.
+let's go back now to the official statement of the mean value theorem.
+so here again, is the statement of the mean value theorem, right, a nice enough function that there's some point in the middle so that the derivative, your instantaneous velocity is equal to this.
+which is, you know, if you like calculating your average velocity.
+we can take a look at this from a graph as well and might help even more.
+all right here's the graph of just some function that i've made up.
+and i've picked points a and b and it's certainly a nice enough function.
+i mean it's a continuous function a differentiable function, and i've picked points a and b. and here's f of a and f of b and then i've drawn this red line that connects the point a f of a and b f of b. and the slope of that line is exactly what this quantity calculates.
+all right, so i'll label this as the slope of that secant line.
+now, if asserting the existence of some point in between, where the derivative has the same value as the slope of this secant line you know, it just sort of looks like, from this picture, maybe that point is here.
+and, yeah, it looks like if i draw a tangent line to the curve at that point, the slope of that tangent line, which is the derivative at the point c, is the same as the slope of that red secant line.
+right?
+so, in the statement of the mean value theorem, this f prime of c, that's the slope of the tangent line.
+to the graph of the function at the point c, and this statement is asserting that the slope of tangent line at some point in between is equal to the slope of the secent line between a f of a, and b f of b. the mean-value theorem is often told as a story about somebody driving a car.
+well here's the story.
+at noon, you're in some city a, and at 1 p.m. you're driving your car and you've arrived in a city b, which is 100 miles away from city a. you're driving your car and you've arrived in a city b, which is 100 miles away from city a. now what does the mean-value theorem say?
+well, the mean value theorem tells you that at some point in between, the derivative is equal to the slope of the secant line.
+which in this story means, that at some point during your journey, your speedometer.
+said 100 miles per hour.
+your speedometer's reporting your instantaneous speed, right?
+that's this, the derivative of your position with respect to time, at some point in between.
+and i'm claiming that at some point it said 100 miles per hour, and that's because your average speed was 100 miles per hour, right?
+in one hour you traveled 100 miles and that's exactly what this difference quotient is calculating.
+so at some point along your journey, you must have exceeded the speed limit.
+alright, so all this is very interesting, the mean value theorem, really great but what is this used for, how does the mean value theorem actually help us understand anything about a function once we know something about its derivative.
+well, here's one very important application; it's a theorem.
+you've got some function f and it's differentiable on some open interval and on that interval the derivative is identically zero, so the derivative is just zero no matter what i plug in.
+then that function is constant on that interval.
+so it's a really exciting result, because it's relating information about the derivative back to information about the value of the function.
+it's saying that if the derivative is equal to 0, that function only outputs one value.
+it's a constant function.
+so let's prove this statement using the most valuable theorem, the mvt, or the mean value theorem.
+well here we go.
+so i want to prove this and what i'm going to do is i'm going to pick two points, i'll call them a and b, in the interval.
+and since f is differentiable on the whole interval and i've picked a and b inside that interval, this is actually enough to guarantee that the hypotheses, the mean value theorem, applied.
+the function's continuous on the closed interval and differentiable on the open interval a b. okay, now that means value theorem applies.
+so f of b minus f of a over b minus a is equal to the derivative of f at some mystery point c in between a and b. but no matter where i evaluate the derivative the assumption here is that the derivative is identically 0. so that is equal to 0. this means that no matter which a and b i pick f of b minus f of a over b minus a is equal to 0. now how can a fraction be equal to 0?
+the only way the fraction is equal to 0 is if the numerator's equal to 0. so that means that f of b minus f of a is equal to 0. and now, if i just add f of a to both sides, i conclude that f of b is equal to f of a. what i'm really saying here, is that no matter which a and which b i pick, f of a is equal to f of b. so, f, is a constant function, right?
+any two output values are the same so there must only be one output value.
+which is exactly what it means to say the function is constant.

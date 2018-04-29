@@ -1,0 +1,45 @@
+[music] in our calculus class so far, some of the applications have involved sheep trapped inside fences and ladders leaning up against buildings.
+well, here's a scene that combines all these things.
+i've got a sheep, i've got a fence, i've got a ladder.
+here's a really tall barn.
+here's the sun shining down on the ground.
+let's suppose that you're the sheep, stuck behind the fence, but eager to get to the barn.
+the really good news is that you're not just a regular sheep, you're some sort of ninja sheep.
+and you've got a supply of a bunch of different ladders.
+the question is, what's the shortest ladder that you can use?
+you want to pick the shortest ladder that you can get away with, which goes over the fence and touches the barn.
+i mean, if the ladder is too short, it won't even go over the fence.
+but, even this longer ladder, i mean, it will get you over the fence, but this ladder is not long enough yet to get you all the way to the barn.
+at this point, you're probably feeling really bad.
+you now recognize that this is an optimization problem, but you're thinking, oh no, not again.
+not another optimization problem.
+well, let me say a little more about exactly how tall the fence is, and how far it is from the barn.
+let's say that, that fence is 6.4 meters tall.
+and let's say that the fence is 2.7 meters from the barn.
+is something sounding familiar here?
+yeah, we've seen numbers like 64 and 27 come up before.
+we saw them in that hallway problem, right?
+what did i want to do in the hallway problem?
+i wanted to take some stick and figure out what the, in this case, longest stick was that i could navigate through this hallway.
+but as, remember, the issue was finding the shortest stick which simultaneously touched this bottom wall, this wall here in the corner.
+that's really the exact same problem.
+we just have to think about this problem in, in different terms.
+instead of thinking of this as a wall, i think of this as the ground.
+instead of thinking of this is a wall, i think of this as the side of the barn.
+and i want to pass through this point.
+i want to touch this corner, which really just means i want to clear the fence, you know?
+and because this problem happened to be solved by a stick of length 125 millimeters, this problem is going to be solved by a ladder of length 12.5 meters.
+and here, and this drawing is actually to scale so i can, i can really demonstrate it, you know?
+here, i position the ladder and yeah, this, this ladder is in fact long enough to touch the ground, the barn, and just clear the fence.
+we've done a ton of stuff this week, but this is perhaps the most important lesson of all.
+at it's core, mathematics is not about just solving problems.
+what we've done here is realize an analogy between two seemingly different problems, alright?
+the problem of a stick turning a corner and a ladder clearing a fence.
+more than about solving problems, mathematics is really about these kinds of analogies, about being able to recognize that things that look different are really the same.
+people have been doing mathematics for thousands of years, and there's been a ton of new mathematics developed in that time.
+so, you might think that with all the new mathematics, that mathematics would be constantly splintering off and fracturing into different subjects.
+but that's not what's happened at all.
+this desire to analogize, to unify.
+to see different parts of the elephant as the same elephant, right?
+this tendency has really kept mathematics together.
+it means that mathematics doesn't appear as a bunch of separate subjects, it really appears as a unified whole.

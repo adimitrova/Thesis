@@ -1,0 +1,25 @@
+[music] up to now, we've been thinking a  lot about limits.
+we've been considering f(x) when x is  close to but not equal to a.  let's refine that a bit now.
+instead of thinking about x close to a.  i'm going to think about x close to the  right side of a or x close to the left  side of a.  super-sized definition.
+so we say the limit of f(x) as x  approaches a from the right, i'm going to  use this little + sign to mean from the  right.
+so if this is equal to l, it means that  f(x) is as close as you want to l, this  is just like before, provided x is near  enough a on the right-hand side.
+so we're going to use a little + sign to  denote approaching from the right-hand  side.
+now we're going to play a same game for  approaching from the left-hand side.
+so let's say the limit of f(x) as x  approaches a from the left-hand side is  equal to l means that f(x) is as close as  you want to l just like usual, provided x  is near enough a on the left-hand side.
+let's go see some picture of this at the  blackboard.
+really helps to see a graph.
+here's a graph of a made up function that  i'm called f(x).
+you'll note that f(x) has some issues at  the input 3.  there's an empty circle here and a  filled-in circle here so if i plug in 3,  my output valley is 2.  and indeed if i plug in numbers that are  just a little bit above 3, i get out  numbers that are close to 2.  on the other hand, if i plug numbers that  are a little bit less than 3, i get out  numbers that are close to 1.  we can summarize our observations with  these two statements.
+the first is that the limit of f(x) as x  approaches three from the right-hand side  is equal to 2.  and that makes sense because i can get  the output of the function to be as close  to 2 as i'd like if i'm willing to  evaluate the function of inputs that are  close to but just a little bit bigger  than 3.  similarly, the limit of f(x) as x  approaches two from the left-hand side is  equal to 1.  we think back in the graph, i was getting  outputs that are close to one if i  evaluated the function inputs which are  close to, but just a little bit less,  than 3.  so in this case, the two sided limit  doesn't exist.
+i can't say that f(x) is getting close to  anything if all i know is that x is close  to 3 but the left and the right hand  limits do exist.
+i can say that f(x) is  getting close to 1. if x approaches 3  from the left-hand side, and i can say  that f(x) is getting close to 2 if x  approaches 3 from the right-hand side.
+this situation comes up quite a bit where  you compute and you find that the right  and the left hand limits exist but they  disagree and consequently, the two side  of limit doesn't exist.
+i can summarize it like this.
+if the limit of f(x) as x approaches a  from the right, is different than the  limit of f(x) as x approaches a from the  left, then the two sided limit the limit  of f(x) as x approaches a does not exist.
+it works the other way as well.
+if the limit from the right-hand side is  equal to the limit from the left-hand  side, let's call our common value l, then  the two sided limit, the limit of f(x) as  x approaches a, no + or -.
+so this is just the usual old limit.
+then this limit exists and it's equal to  that same common value, l.  the homework will challenge you with many  more situations of one sided limits.
+if you get stuck, contact us.
+we are here to help you succeed.
+[music]

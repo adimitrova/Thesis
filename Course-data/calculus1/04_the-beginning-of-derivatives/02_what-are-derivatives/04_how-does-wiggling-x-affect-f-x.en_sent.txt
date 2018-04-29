@@ -1,0 +1,27 @@
+[music] remember, f prime of x is  encoding how wiggling x affects f of x.  we can see this by thinking about slopes  of tangent lines as well.
+here, i've drawn in orange the graph of  some random function y=f(x).
+and this point, a f(a) i've drawn in red  the tangent line to the graph.
+i want to know how is the output f  affected when input moves from a to a+h.
+i want to know what happens when i wiggle  the input over by adding h.  let me zoom in on this picture a little  bit.
+here, i've got this tangent line, and the  slope of that tangent line is the  derivative of the function at the point  a.  that means that this triangle can be  understood, right?
+this slope being  f'(a), this base being h means this  height is h*f'(a).
+in order to get this slope as f'(a), rise  over run better be equal to f'(a), this  divided by this is f'(a).
+this is giving me some information about  how wiggling the input will affect the  output.
+if i move from a to a+h, well, on the  tangent line m' moving up to this point  which isn't so far off of the real value  of the function up here.
+now, if i made h really, really small,  i'd be doing an even better job of  staying close to the graph of the  function when i follow the tangent line.
+instead of starting with the function and  trying to figure out the derivative, we  can imagine that we know a little bit of  information about the derivative and try  to figure out something about the  function.
+let's make up a concrete example.
+suppose that i've got some function f,  and all i know is that its derivative is  3x, and its value at 2, is 4.  just knowing this information without a  rule for the function at this point, can  i say anything about the function's value  at, say 2.01?
+yes, i can.
+right?
+f(2.01), well that's f(2) plus how  much the output changes when i go from 2  to 2.01.  well, the output change is approximately  something that i can compute from the  derivative,  right?
+the derivative is infinitesimally the  ratio between output change and input  change.
+so if i multiply by how much i change the  input by the ratio of input change to  output change,  this should be approximately the true  output change.
+now, in this case, i know what these  numbers are.
+0.01 times the derivative of f(2) is 6.  which means that this is about 4+0.06  which is 4.06.  and that's about what this function at  2.01 is equal to.
+one more cat moves into the neighborhood.
+what happens to the mouse population?
+right?
+a small change to one thing will  affect something else.
+that's what the derivative is encoding.
+[music]

@@ -1,0 +1,75 @@
+[music] up until now, we've been  considering the functions that you can  get by starting with variables and  numbers, and combining them using sums,  products, quotients, and differences.
+so we can write down, you know, functions  like f(x)=x2+x/(x+1^)^10+x, all of this,  -1/x.
+but there's more things in heaven and  earth that are dreamt of in your rational  functions.
+for instance, can you imagine a function  f, which is its own derivative?
+i'm  looking for a functions, that if i  differentiate it, i get back itself.
+now, if you're thinking cleverly, you  might be able to cook up such a function  very quickly.
+what if f is just the zero function?
+or  if i differentiate the zero function,  differentiate a constant function, that's  zero.
+so this would be an example of function  in its own deriviative.
+but, that's not a very exciting example.
+[sound] so let's try to think of a  nonzero function, which is its own  derivative.
+how might we try to find such a function?
+so to make this concrete, i'm looking for  a function f, so if i differentiate it, i  get itself and just make sure that it's  not the zero function.
+let's have this  function output one if i plug in zero.
+now, how could i rig this function to  have the correct derivative at zero?
+if the derivative of this function  itself, the derivative of this function  at zero should also be one.
+can you think of a function whose value  at zero is one and whose derivative at  zero is one?
+yes.
+here is a function, f(x)=1+x.
+this function's value with zero is one,  and this function's derivative at zero is  also one.
+but if the derivative of f is f, then the  derivative of the derivative of f is also  the derivative of f, which is also f.  so, the second derivative must be f as  well.
+so, if this function is its own  derivative, the second derivative of f  would also be equal to f.  now, specifically, at the point zero,  that means the second derivative of the  function at the point zero would be the  function's value with zero which should  be equal to one.
+is this function's second derivative at  zero equal to one?
+no.
+if i differentiate this function twice, i  just get the zero function,  but i can fix this at least to the point  zero.
+if i add on x^/2,  now, this function's derivative at zero  is one and this function's second  derivative at zero is one.
+since f is its own derivative, the third  derivative of f must also be f.  no worries.
+if the thid derivative of f is also equal  to f, which is a consequence of the  derivative of f being equal to f.  that means the third derivative of f at  zero is equal to one, but this thing's  third derivative is just zero.
+but if i add on x^3/6, now, if i take the  third derivative of this function and  plug in zero, i get out one.
+the fourth derivative of f must also be  f.  okay, yeah.
+i gotta deal with the fourth  derivative.
+i'm out of space here, but no worries,  i'll just get more paper.
+here, i've written down a function whose  value at zero is one, whose derivative at  zero is one, whose second derivative at  zero is one, whose third derivative at  zero is one, whose fourth derivative at  zero is one.
+and you can see, this is sort of building  me closer and closer to a function which  is its own derivative.
+if i try to differentiate this function,  what do i get?
+well, the derivative of  one is zero, but the derivative of x is  one, and the derivative of x^2/2 is x,  and the derivative of x^3/6, well, that's  x^2/2, and the derivative of x^4/24,  well, that's x^3/6.
+and yeah,  i mean, this function isn't its own  derivative,  but things are looking better and better.
+but the fifth derivative of f must also  be equal to f.  okay, yeah.
+the fifth derivative.
+i'll just add on another term,  x^5/120.
+and if you check, take the fifth  derivative now of this function,  its value at zero is one.
+i've written down a function,  so that if i take its fifth derivative at  zero,  i get one.
+the sixth derivative of f must be equal  to f.  the sixth derivative i am out of room,  but here we, go.
+here is a polynomial whose value first,  second, third, fourth, fifth and sixth  derivative at the point zero are all one.
+and you can see how this is edging us a  little bit closer still to a function  which is its own derivative,  because if i differentiate this function,  yeah, the one goes away, but the x gives  me the one back, and the x^2/2, when i  differentiate that, gives me the x.  x^3/6, when i differentiate that, gives  me x^2/2.
+x^4/24, when i differentiate that gives  me x^3/6.
+x^5/120, when i differentiate that, gives  me x^4/24.
+x^6/720, when i differentiate  that, i've got x^5/120.
+and now, of  course, these aren't the same, but i'm  doing better.
+the seventh derivative must be equal to  f.  to get the seventh derivative at zero to  be correct, i'll add on x^7/5040.
+the eighth derivative, i'll add on  x^8/40,320.
+the ninth derivative, i'll add on  x^9/362,880.
+okay, okay.
+this is, isn't working out.
+we're not really succeeding in writing  down a function which is its own  derivative.
+let's introduce a new friend, the number  e to help us.
+here is how we're going to get to the  number e.  this limit,  the limit of 2^h-1/h as h approaches zero  is about 0.69, a little bit more.
+on the other hand, this limit,  the limit of three to the h minus one  over h as h approaches zero is a little  bit more than one,  it's about 1.099.  if you think of this as a function that  depends not on two or three, you could  define a function g(x), right?
+the limit as h approaches zero of x to  the h minus one over h. in that case,  this first statement, the statement about  the limit of two to the h minus one over  h, that's really saying that g(2) is a  bit less than one.
+and, this statement over here, and if you  think of this as a function g, this  statement is really saying that g(3) is a  bit more than 1.  now, if you're also willing to concede  that this function g is continuous, which  is a huge assumption to make,  but let's suppose that's the case.
+if that's the case, i've got a continuous  function, let's say, and if i plug in  two, i get a value that's a little bit  less than one,  and if i plug in three, i get a value  that's a little bit more than one.
+well, by the intermediate value theorem,  that would tell me there must be some  input so that the output is exactly one.
+i'm going to call that input e.  in other words, e is the number, so that  the limit of e^h-1/h as h approaches zero  is equal to one,  and this number is about 2.7183 blah,  blah, blah.
+now lets consider the function f(x)=e^x.
+so let's think about this function  f(x)=e^x.
+now, what's the derivative of this  function?
+well, from the definition,  that's the limit as h approaches zero of  f of x plus h minus f of x over h.  now, in this case f is just e^x,  so this is the limit as h approaches zero  of e to the x plus h minus e to the x  over h.  and this is e to the x plus h minus e to  the x over h,  so i can write this as e to the x times e  to the h.  this is the limit then as h goes to zero  of e to the x, e to the h minus e to the  x over h,  now i've got a common factor of e to the  x.  so i'll pull out that common factor and  i've got the limit as h approaches zero  of e to the x times e to the h minus one  over h.  now, as far as h is concerned, e to the x  is a constant,  and this is the limit of a constant times  something,  so i can pull that constant out.
+this is e to the x time the limit as h  goes to zero of e to the h minus one over  h.  but i picked the number e precisely, so  that this limit was eqal to one.
+and consequently, this is e to the x  times one, this is just e to the x.  look,  i've got a function whose derivative is  the same function.
+we've done it.
+we've found a function which is its own  derivative.
+the derivative of e^x is e^x.
+e^x is honestly different from this  polynomials and rational functions.
+we couldn't have produced that number e  without using a limit.
+e^x is the function that only calculus  could provide us with.

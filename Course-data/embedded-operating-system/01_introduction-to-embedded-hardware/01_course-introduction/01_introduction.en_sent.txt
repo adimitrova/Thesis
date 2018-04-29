@@ -1,0 +1,21 @@
+[music] hello and welcome to this course on embedded hardware and operating systems.
+my name is marco ramirez and i will be your lecturer during the course.
+welcome to the university of turku.
+well, let's get started.
+[sound] [music] cyber physical systems operate at the edge between the cyber and the real world and compromise of computational networking and physical components.
+the importance of such systems is difficult to overestimate.
+they are literally everywhere from the smartphone to space station.
+hardware is an integral component of a cyber physical system.
+this is figuratively speaking, a foundation of the system.
+therefore, it is important to choose the hardware correctly.
+this choice should be system oriented.
+meaning that the hardware should fulfill the requirements of the cyber physical system.
+at the same time, the resources provided by the chosen hardware should not be excessive for the system.
+unlike hardware design for a specific purpose, embedded systems require software to function and accomplish their work goal.
+however, writing this software from the ground up for every type of hardware is not practical.
+the most common approach is to use operating systems to handle the basic task of managing the hardware resources and provide great services for user applications.
+in this course, we will talk about two components of a cyber physical system namely, hardware and operating systems.
+we will give you hints on how to make a proper choice of those components.
+i hope this knowledge will boost your interest in cyber physical systems and help you to implement your ideas more quickly.
+good luck.
+[music]

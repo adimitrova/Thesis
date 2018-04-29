@@ -1,0 +1,15 @@
+hi and welcome to the third segment of spacecraft kinetics.
+here, we're going to be studying in detail the gravity gradient, torque and forces that happen on a rigid spacecraft.
+so with the spacecraft, every part of the mass distribution is a different distance away from the center of the earth.
+that means it's experiencing a different gravitational force.
+now, we have to sum it up over a whole body.
+so in particular of interest to us is if you have the gravity gradient that you've computed, which orientations of a craft caused the gravity gradient to be zero.
+and when we're moving in a rotating frame, which one of these are now relative equilibrious will be developing all of those and then there's some interesting examples.
+you can look at which one of those is stable.
+look at a tall slender object, the lower object weighs more has a stronger gravity force than the top part.
+so if you disturb the attitude, this would help stabilize it.
+we'll begin to study such configuration for full 3d.
+this is a very useful topic.
+there's many satellites of gravity being stabilized or there are big things like the space station.
+gravity gradients definitely impact the attitude motion.
+so, this section gives you a good handle on how to predict that torque.

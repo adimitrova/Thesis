@@ -1,0 +1,11 @@
+[music].
+we will quickly calculate the kinematics for the decay of a heavy parent nucleus p, to an alpha particle, and a daughter nucleus d. the conservation of energy requires that energy gained in the form of missing mass will be transformed into the kinetic energy of the daughter nucleus and the alpha particle.
+the masses of the two nuclei are both large, compared to the binding energy.
+we can thus do a non-relativistic calculation with t = 1/2 mv^2.
+for heavy nuclei, which have a much larger mass than the alpha particle, the velocity of the daughter nucleus will be negligible compared to that of the alpha particle.
+it is in fact reduced by the ratio of m_alpha and m_d.
+therefore, most of the q value is converted into kinetic energy for the alpha particle, and the reaction of course, only takes place when the q value is greater than zero.
+the kinetic energy of the daughter nucleus will be much smaller than that of the alpha particle.
+when neglecting the differences in binding energy between nuclei, we have an m_alpha/m_d roughly equal to 4/(a-4).
+this allows us to approximately calculate the kinetic energy of the alpha particle and the daughter nucleus.
+[music]

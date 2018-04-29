@@ -1,0 +1,30 @@
+[music] at the foundation of many archival standards is iso 14721, reference model for an open archival information system, or oais.
+this reference model presents a high-level framework for understanding archival concepts, defines elements & processes within digital repositories, and establishes a set of responsibilities for the long-term preservation of digital information.
+repositories that consider themselves to be oais archives are presumed to have mechanisms and workflows in place to properly safeguard digital materials.
+these mechanisms and workflows serve the specific archiving needs of the designated community, which oais defines as an identified group of potential consumers who should be able to understand a particular set of information.
+while the definition of designated community might change over time, the archive accepts responsibility for the long-term preservation and availability of information for that designated community.
+the oais model has six functional entities.
+ingest, archival storage, data management, administration, preservation and access, and illustrate the data curation and archiving workflows that takes place from the time a researcher submits his or her data to when a third-party user accesses the data.
+when a repository receives data files, also known as the submission information package or sip, from the data producer, the ingest function performs several tasks to establish evidence of authenticity and to ensure that files are in proper formats and include necessary documentation.
+standard ingest procedures include normalization of files to formats that are optimal for long-term preservation.
+optimal formats are determined based on careful consideration of sustainability and use factors that can affect the feasibility and cost of long-term file preservation.
+for instance, if a researcher submits an spss.sav data file to a repository, the repository may normalize the data file into a tab-delimited preservation format.
+spss is a proprietary statistical analysis software program owned by ibm, a private company.
+spss has had its share of new versions over the years, leaving old files unable to be rendered properly by the latest versions.
+such old files are externally dependent on a computer running certain versions of the software, and only if the computer's operating system supports that software.
+even for those skilled enough to hack software code, many proprietary formats are not transparent, making it impossible to access, much less modify or update the code.
+during ingest, the repository will convert the spss file into a tab delimited format, which is widely adopted, non-proprietary or open source, and free from external dependencies.
+preservation optimization also presumes that the stamp includes supplementary documentation that enables appropriate interpretation and use of the data.
+the ingest functional entity ensures that sips have all the necessary components that make data preservation, access, and reuse possible.
+during ingest, the repository also performs the initial checksum or hashsum on sip files.
+a checksum is produced using an algorithm that generates a unique string combination that is specific to the arrangement of bits contained in the data files.
+this unique string combination can be used to detect any changes to files resulting from corruption that may occur inadvertently over time, which is essential to demonstrating a file's integrity.
+because data are digital objects with specific attributes, data repositories may perform additional tasks during ingest, including checks for confidential information and data quality reviews.
+once ingest tasks have been completed, the sip is considered to be an archival information package, or aip.
+the archival storage function oversees storage, maintenance and retrieval of the aip.
+once the aip is moved into permanent storage, the archival storage function manages storage hierarchy, performs routine error checking, refreshes storage media, and recovers files in the event of a disaster.
+meanwhile, the data management function provides functionality for generating, maintaining, and accessing descriptive information, ie metadata, to document the files housed in archival storage.
+it also administers archival database functions to include database management, updates, and queries.
+once the aip files are placed in permanent storage, the customer can request access and retrieve data files.
+this service and functionality is provided by the access function, which coordinates these requests and assembles and delivers the final dissemination information package or dip to users.
+[music]

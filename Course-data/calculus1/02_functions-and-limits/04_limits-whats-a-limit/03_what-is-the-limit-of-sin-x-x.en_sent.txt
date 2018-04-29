@@ -1,0 +1,48 @@
+[music] so here's a great function to  look at.
+the function is going to be defined by  f(x) = sine x / x.  my question is what's the limit of this  function, as x approaches zero.
+let's try to guess the limit by looking  at a table of function values.
+so here's a bunch of input values that  are getting closer and closer to zero,  right.1, .01, .001.  it's getting closer and closer to zero.
+then looking at my output values from my  function,  right?
+so f(1) is sine of 1 / 1.  it's the sine of 1.  f(.1), that's sign of 1. over 1,. it's  a little bit more.
+f(.01) is 9999. a little bit more.
+and you keep looking down here and these  numbers seem to be getting close to  something, alright.
+999999. this is  really, really close to one.
+so based on this table of values your  tempted to guess that the limit of f(x)  as x approaches 0 is 1.  another way to gain some insight about  this limit will be to look at the graph.
+here's the graph.
+this is the graph of sign x over x.  and you can see that when x equals zero,  functions not defined there because i  can't divide by zero, so i got this  little hole in the graph.
+nevertheless, i'm claiming that the limit  as x approaches 0 is equal to 1 which  actually means that i can make the output  as close to 1 as you like, if you're  willing to have the input be close enough  to 0.  instead of talking about closeness, push  this red button and turn on this red  interval.
+so when i say close to one, what i really  mean is the output is inside this, this  red interval.
+and that red interval might be really big  or it might be really small.
+but to be close to one is going to mean  inside the red interval.
+the point is that, can turn on this blue  interval.
+and as close as you want the output to be  the one, i can promise you that the  output is within the red interval if the  input is within this blue interval.
+when the red interval is really big, well  that's not much of a challenge.
+i can have a really wide blue interval  and anything inside the blue interval has  output landing inside the red interval.
+but even when the red interval is very,  very small there's still some tiny blue  interval so that whenever x is within the  blue interval, the output is within the  tiny red interval.
+in other words, even if you want the  output to be really close to one.
+i can promise you that the output is that  close to one, if you're willing to have  the input be close enough to zero.
+so, we've looked at the function values,  we've looked at the graph.
+we've got this idea that the limit of  sine x over x as x approaches zero is  equal to one.
+but it's just that, it's just an idea.
+we don't yet have a rigorous argument  that this limit is equal to one.
+here's a sketch of a more rigorous  argument that the limit of sine x / x, as  x approaches 0 is equal to one.
+it turns out that for values of x which  are close to but not equal to zero, this  is true.
+cosine of x is less than sine x over x,  and sine x over x is less than one.
+now why would you care about this?
+note, the limit of cosine x as x  approaches zero is one and the limit of 1  is 1 because the limit of a constant  function is just that constant.
+so i know that the limit of this side is  one and the limit of this side is one and  what i'm trying to conclude is that the  limit of the thing in between is also  one.
+and it turns out there's a way to do  this.
+let's take a look.
+here's what we're going to use, the  squeeze theorum.
+suppose you've got three functions, i'm  calling them gf and h.  g(x) is less than equal to f(x) and f(x)  is less than equal to h(x).
+for values of x that are near a, but  maybe these inner qualities don't hold at  the point a.  also, suppose that the limit of g(x) as x  approaches a, is equal to the limit of  h(x) as x approach a, is equal to sum l.  so the limit of g(x), the limit of h of x  are the same value, l.  the, you get to conclude the limit of f  as x approaches a exists and it equals l.  why is this thing called the squeeze  theorem or some people call it the  sandwich theorem or the pinching theorem?
+let's take a look.
+just pictorially, why is this called the  squeeze theorem?
+i've got an example here.
+three functions.
+g, f, and h.  and again, g(x) is less than f(x), f(x)  less than h(x).
+now, note, the limit of g(x) as x  approaches a is l.  and the limit of h(x) as x approaches a  is l.  f is squeezed, or sandwiched, between h  and g.  and consequently, the limit of f as x  approaches a is also equal to l.  now, we're going to use the squeeze  theorem to try to understand the limit of  sin x over x.  so we've got the squeeze theorem.
+and what do i know?
+i know that cosine x is less than sine x  / x is less than 1 for values of x that  are close to but not equal to 0.  and the limit of cosine x as x approaches  0 is equal to 1.  if you like, because cosines continuous  and cosine of 0 is 1.  also the limit of 1 as x approaches 0 is  equal to 1 because the limit of a  constant function is that constant.
+so the limit of this function is one, the  limit of this function is one as x  approaches zero.
+and that means by the squeeze theorem,  the limit of sine x / x is also equal to  1 [music]

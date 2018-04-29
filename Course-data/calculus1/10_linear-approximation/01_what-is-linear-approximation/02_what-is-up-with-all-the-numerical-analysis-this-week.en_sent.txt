@@ -1,0 +1,20 @@
+welcome back to calculus i and welcome to week nine of our time together.
+can you believe that we've been at this for more than two months already?
+it's crazy.
+the last two weeks, we've really been focusing on applications of the derivative in a particular word problem.
+right?
+those related rates problems or those optimization problems.
+they're word problems, stories from real life.
+this week, in week nine, we're still doing applications of the derivative, but it's not so much word problems anymore.
+it's sort of numerical applications.
+in particular, we're going to look at newton's method, which is a way of approximating a 0 of a function.
+and we did that a while back.
+by using this bisection method and an intermediate value theorem but newton's method is, at least when it works, much faster.
+and the other thing that we're going to look at is how knowing information about the derivative lets you recover some numerical information about the original function.
+so if you knew for instance the derivative and you wanted to approximate a value of a function, we'll see how you can do that.
+well i hope you enjoyed these numerical examples.
+when, when i first took calculus i got to say that i didn't always enjoy all the numbers that were coming up, you know?
+i really just wanted to do all of the theorems, you know?
+but i think the numbers really make this subject come alive.
+so i encourage you, if you're skeptical about all the numerical stuff this week, just take a look.
+i think it's going to be a lot of fun.

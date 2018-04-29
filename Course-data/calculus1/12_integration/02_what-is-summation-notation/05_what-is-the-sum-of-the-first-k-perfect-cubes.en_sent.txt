@@ -1,0 +1,58 @@
+[music] what do i get if i take one cubed plus two cubed plus three cubed plus so on plus k cubed?
+this is a truly remarkable fact it's called nicomachus' theorem, and it says that the sum of the first k perfect cubes is the square of just the sum of the first k whole numbers, and it's literally a remarkable fact that these two things are, are equal, right?
+i mean, you know, it just doesn't look like this should be true at all, but it is.
+now, once you believe something like this you could rewrite this sum of cubes formula in maybe a slightly easier way.
+right, once you've got the sum of cubes is the square of just the sum of the first k whole numbers, while we already know a formula for some of the first k whole numbers.
+it's k times k plus 1 over 2, and i'm just squaring that.
+so now here is a formula for the sum of the first k perfect cubes.
+it's k squared times k plus 1 squared over right?
+i just took this formula and squared it.
+again there's a slick geometric proof of this fact.
+so let's add 1 cubed plus 2 cubed plus 3 cubed plus 4 cubed pictorially, of course the same arguments going to work in general, if i add up the first k perfect cubes.
+alright, well here's 1 cubed.
+alright.
+here's 2 cubed.
+it's 8 dots, but i've arranged them in a, in a cube.
+here's 3 cubed, all right?
+it's 3 times 3 times 3, 27 dots, but i've arranged them again in, in a cube shape.
+and then 4 cubed would be 64 dots, but i haven't drawn all the dots in, right?
+so i want to count all of these dots, and the trick is to rearrange these dots.
+so that's how most of these sort of pictorial arguments end up going.
+so i'm going to rearrange these dots like, like this.
+so here i've made a square, and here's the 1 cube, i added just, just 1 dot.
+here's the 2 cube, but i've rearranged it where 1 of the layers of the 2 by 2 by 2 cube is right here, and i've split the other layer in half.
+so if i take this vertical 2 by 1 piece and this horizontal 1 by 2 piece, i can rearrange them to make it 2 by 2 square that i stack on top of that one, which then gives me this again.
+here's the 3 by 3 by 3 cube, it's 3, 3 by 3 squares.
+here's the 4 by 4 by 4 cube.
+it's 4 squares, but that top square is been cut in half.
+right, so this piece here, and this piece here, would combine to give me another 4 by 4 square, which i can stack on top of these three to recover the 4 by 4 by 4 cube.
+now i could put five 5 by 5 squares around, and then around that i could put six 6 by 6 squares, but i'd cut one of those squares in half just like this.
+so the even layers i use square that's been cut in half, and the odd layers, i can just stack them down.
+the, the point here is that i end up producing a square whose side length is 1 plus 2 plus 3 plus 4. you know, and of course this is being general.
+alright, it would be plus k. so this is 1 plus 2 plus 3 plus 4. i've rearranged the sum of cubes into a square, and that side length of that square is the sum of the first k whole numbers.
+good news now is that i've got a formula for the sum of the first k whole numbers.
+it's k times k plus 1 over 2. so the resulting square has side length k times k plus 1 over 2, which then means that if i take the sum of the first k cubes it's that number squared.
+these kinds of formulas enable us to perform calculations that would be extraordinarily painful without access to these formulas.
+for instance, what if i wanted to add up the first 100 perfect cubes, right.
+that's the same thing as computing the sum, n goes from 1 to 100, of n cubed.
+now, because i've got a formula for this, because this is, the same as, just the sum of the first hundred whole numbers squared, right?
+i know how to compute this, right?
+what's the sum of the first hundred whole numbers, well that's 100 times 101 over 2, and i just have to square that.
+what's a 100 times 101 over 2?
+what's the sum of the first hundred numbers?
+it's 5,050 and i just have to square this.
+and if i square this i get 2, 5, 5, 0, 2, all right?
+so i get about 25 million, and this makes possible, you know, this calculation that would have been horrible tedious, right?
+but because i've got access to this formula, i can perform really amazing numeric feats, right?
+this would be horrible to calculate, but with this formula, i can just write down the answer.
+if you like these kinds of formulas, here's a challenge.
+here's the challenge.
+what's the sum of fourth powers.
+the answer's going to be some polynomial in k, right, but you've gotta figure out which polynomial that is.
+one trick would be to plug in values.
+say k equals one, k equals two, k equals three.
+and then try to find the polynomial that passes through those points.
+now that's your challenge.
+and there's a long tradition here.
+bernoulli for instance computed the sum of the first thousand tenths powers, and he did it 300 years ago.
+people have been thinking about these kinds of formulas for a really long time.

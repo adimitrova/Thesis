@@ -1,0 +1,54 @@
+[sound].
+so transforms are great because.
+and in fact everything if we do a  transloate it will move everything we  draw after but what if we do one  translate after another like this.
+well the most obvious thing that happens  is that we move and move again.
+but what exactly is happening there.
+when we call the translate command.
+everything after the call back command is  affected by the translate including any  other translates we do.
+so, if we look at the second the second  translate that's a movement of any object  that have.
+but that is also affected by the first  translate, the first translate and its,  and its mean to the first translate will  happen to the second translate and the  starting point is 0 by 0 point of the  second translate will be affected that of  the first translate.
+so.
+what happens is that you, the effect of  the fir, of the first translator is  applied to the second translator.
+which, kind of feels more naturally like  saying that well the second translate is  actually happening first.
+instead of happening to the object, and  then it's going to be translated by the,  by the [unknown] first translate.
+we often think of translates, transforms  happening in the opposite order.
+so what happens if we do a translate  followed by a rotate?
+well, the rotate spins around, that's  fine.
+but if we've got a translate happening  before that rotates.
+then we're going to have a movement  applies to the 0, o point of our rotate.
+so the 0-0 point of the rotate is  going to be moved.
+in much the same way as we just saw with  the 2 translates.
+they're applying one after the other.
+and it's kind of like they're playing  backwards.
+but what if we do it the other way  around?
+well, we put a translate and movement.
+and then put a rotate applies to the zero  zero point of that translate.
+what happens is that the zero zero of the  translate.
+is rotated relatively to the 0 0 point of  the screen.
+so actually we're it's like, i'm taking  an object arms length and translate it  and then i spin it around.
+so it's spinning from the starting point  of the translate.
+not through the center of the object.
+so doing those two transforms in  different orders has a radically  different effect.
+if i or for example this bottle of water,  if i apply the translate first rotate  second which basically means the other  way around.
+i would take and i would translate well,  i would take something and then i  translate.
+i move out.
+but if i do it the other way around, then  i translate first and then i rotate.
+and i'm making, the rotate isn't just a  simply spinning around the center of the  object.
+it's actually a big movement in space.
+so the first thing to remember is that  you kind of think of them in the opposite  order if you have to think about  transforms it makes more sense to think  they're happening backwards but the other  thing to think about is is well, what if  i want to move 2 objects.
+well, if you want to move them together,  that's easy, we can translate.
+but what if you got to move them  separately.
+very often you'll have two objects, the  same two cars, two crates, whatever and  you just want, want to move one [unknown]  to move the other.
+if i'm applying a translate.
+then, everything that happens after that  translation is going to be affected by  it.
+so i translate the first object the  circle here then the square is also going  to get affect but if i want to move it  independeantly.
+well we use a command a called push  matrix and pop matrix  i won't go into the mathematical details,  but transforms are implemented using a  bit of maths called a matrix and when it  call upon the pushmatrix, we're basically  creating a new matrix that we're adding  all our new transforms to.
+when we call popmatrix, any transforms  that we've added since we added push,  pushmatrix.
+[inaudible] will get canceled, because  we're removing that matrix.
+so push matrix and pop matrix are a way  of limiting the effect of transforms.
+any, in fact, transforms that happen  after push matrix will automatically be  removed, once you call pop matrix.
+that [inaudible] gives you a nice way.
+of independently moving objects.
+you pushmatrix, you do whatever  transforms you like, you draw the object  and then you pop matrix.
+then the next object, you do exactly the  same thing, pushmatrix, transform it,  draw it and then pop matrix.
+[music]  [music]

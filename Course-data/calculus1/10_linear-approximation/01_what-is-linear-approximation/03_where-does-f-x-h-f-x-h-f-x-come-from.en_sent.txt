@@ -1,0 +1,49 @@
+[music].
+we've seen a little bit of this linear approximation business already.
+a long time ago, we saw this.
+that, f of x plus h is approximately f of x. well, that much at least is really just because f is say continuous, right?
+nearby inputs should be sent to nearby outputs, but let's suppose that f is differential, then we can say more, all right?
+i'm going to add to this h times the derivative of f at x. what is the derivative measure, right?
+it's the ratio of how much the output changes to an input change infinitesimally.
+but for an actual input change of h, if i take this, which is the ratio of output change to input change and i multiply it by how much the input change is.
+this quantity should tell me how much i expect the output to change when i go from x to x plus h. where does this formula actually come from?
+well, let's think back to the definition of derivative.
+right?
+what's the definition of derivative?
+the derivative of f at x is the limit as h approaches 0 of f of x plus h minus f of x, all over h. alright, that's the definition of derivative.
+now how does that help us here?
+well, if i just pick some value of h, an actual value of h, that's not 0 but close to 0, then i get that f prime of x should be approximately f of x plus h for that small but p-, you know, non, non zero value of h, minus f of x over h. so this is approximately equal, as long as h is small.
+now i multiply both sides of this approximate quantity by h and i'll find that h times f prime of x should be approximately f of x plus h minus f of x. and then i'll add f of x to both sides, and what i'll get is that h times f prime of x plus f of x should be approximately f of x plus h, and that's the statement that we had before, right?
+that the value of function x plus h is approximately the value of the function of x plus something i'm getting from the derivative.
+the derivative of f at x times how much i wiggled the input by.
+so i've got this formula, but why do i care about this formula at all?
+well, i care because this is really what i wanted in the first place, right?
+i really wanted to understand how wiggling the input would effect the output, and fundamentally, you know, the derivative isn't just some random limit that i cooked up for you to evaluate.
+it's supposed to say something meaningful about the function, and this is what's telling us what the derivative means, right?
+the derivative really means something about how wiggling the input affects the output.
+there's another reason to care about this formula.
+we can use this formula, in fact we've already used this formula to numerically approximate a function that might be hard to compute otherwise.
+um,, let's look at a function f of x will be say, the cube root of x, and let's look at the input 125 and f at 125, right?
+what's the cube of 125?
+that's 5, because 5 times 5 times 5, that's 125. so the cube of 125 is 5. now let's try to wiggle the input and see what happens.
+let's wiggle by h, which will be three.
+three's not all that small, but compared to 125, three's pretty small.
+and i'd like to know what f of a plus h is, right?
+i want to know what the cube root of 125 plus 3, 128 is.
+and you know that's going to be hard to know, right?
+so i'm only going to know approximately.
+but i can use the derivative here, right?
+because the derivative tells me how wiggling the input affects the output.
+so as you can get the derivative of this function at the input a. so let's differentiate this function.
+and this is x to the one third, so the derivative is one third times x to the minus two thirds, right?
+this minus 2 3rd as 1 3rd minus 1. it's a power rule.
+let's compute the derivative at the input so that means i look at 1 3rd times 125 to the negative 2 3rd power.
+well, 125 to the negative 3rd, the negative 2 3rds power.
+that's 1 25th, and 1 3rd times 1 25th, that is 1 75th.
+so this tells me what the derivative is at a 125, now how does that help?
+remember the other formula for this linear approximation game, that f of a plus h, which is what i'm trying to compute, should be approximately f of a plus h times f prime of a, and i know what all of these quantities are now.
+f of a is 5, h is 3. and f prime at a is 1 75 and 5 plus 3 times 1 75 that's 5.04. now, how close is that to the actual retail value of the cube root of 128. well, it turns out that the cube root of 128 is actually about 5.0396841 and it keeps on going, which is awfully close to so our layer approximation game is working really quite well.
+this idea that the complicated function like the cube root function, with its curved graph can be approximated very well, at least for short intervals by straight lines, right?
+this idea of replacing curved object with perfectly straight lines, that's a key idea of calculus.
+in short, curves are way too complicated for us to understand.
+lines, on the other hand, just straight lines, are much easier for us to think about.

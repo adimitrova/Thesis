@@ -1,0 +1,37 @@
+[music].
+we defined arc length using an integral.
+the integral that we'll be using is this  one.
+i'm going to be integrating from a to b  the square root of 1 plus the derivative  squared dx.
+let's apply this to a specific problem.
+let's compute the arc length of a little  piece of a graph.
+so let's look at the graph of y squared  equals x cubed and figure out the length  of this arc from 0,0 to 1,1.  now i could rewrite this equation.
+instead of writing y squared equals x  cubed, i could write y equals x to the 3  halves power.
+we'll start by differentiating.
+so because of this, i can write dy, dx is  3 halves x to the 1 half power.
+we'll put that derivative into the  formula for arc length so i'm going to be  integrating.
+x goes from 0 to 1, the square root of 1  plus this derivative squared.
+so, i'll write 3 halves, x to the 1 half  squared dx.
+now, i just want to compute that  integral.
+but how?
+well, i can rewrite the integrand.
+this is the integral from 0 to 1 of the  square root of 1 plus 3 halves squared is  9 4ths.
+and x to the one half squared, i'll write  x, dx.
+just have no fear, keep going.
+well, i could use substitution.
+u equals 1 plus 9 4ths x so that du is 9  4ths x or alternatively, dx is 4 9ths du.
+and that means this integral, it's the  same as the integral of square root of u  times 4 9ths du and remind you bounce of  integration.
+well an x is 0, u is 1 and when x is 1 u  is 14 4ths.
+alright, now i just have to write down an  anti derivative here, well i could write  this as 4 9th, u to the 3 halves over 3  halves that's an anti-derivative for  square root 2, evaluated at 1 and 13 4th.
+so i'm just going to plug in 13 4th plug  in 1, take the difference.
+okay, so this is 4 9th, i write, times 2  3rd, instead of dividing by 3 halves.
+times 13 4th.
+to the 3 halves power minus 4 9th times 2  3rd times 1 to the 3 halves power and i  got to simplify this little bit more even  lets see here.
+4 times 2 is 8, okay that's also 4 to the  3 halves power.
+so i can cancel all of these things.
+and then i can simplify gotta do some  arithmetic here.
+so i've got what, 13 to the 3 halves  power divided by 9 times 3 is 27, minus,  this is 8 27ths just times 1.  and, if you don't like the 3 halves here,  i could write this as 13 times the square  root of 13 over 27 minus 8 over 27.  this, is the length of that arc.
+we did it, but it worked out almost too  well.
+alright that's the sad thing about arc  length calculations.
+because the arc length formula involves  that square root of 1 plus a derivative  squared, it's extraordinarily unlikely.
+and if you just give me some random  function, i'm going to succeed in being  able to evaluate that integral.
+the sorts of things we can calculate the  arc length of are pretty special sorts of  things.

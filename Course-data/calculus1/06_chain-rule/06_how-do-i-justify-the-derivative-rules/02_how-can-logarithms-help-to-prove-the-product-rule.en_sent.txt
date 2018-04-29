@@ -1,0 +1,25 @@
+, remember back before, when we talked about the product rule?
+you know, it goes like the derivative of f times g is the derivative of f times g plus f times the derivative of g. it's a little bit mysterious considering that the product rule has a plus in it.
+but we proved this previously, just by going back to the definition of derivative in terms of limit.
+and, calculating the necessary limit to show that, this product rule was in fact valid.
+we've already seen a proof for the products rule.
+originally we justified the product rule by going back to the limit definition of derivative and manipulating that limit.
+but maybe that proof didn't speak to you, so now there's another trick that we can use.
+we can use logarithms to replace the product with a sum.
+let's see how.
+so let's suppose that f of x is bigger than 0, and g of x is bigger than 0, say for all x. i just want to do this for positive functions.
+okay.
+now i'm going to use logs, so let's take the log of f of x times g of x. and what do i know about logs?
+logs turn products into sums.
+so the log of f of x times g of x is the log of f of x plus the log of g of x. i'm going to differentiate both sides of this equation.
+so the derivative log is 1 over, and by the chain rule, that's 1 over the inside function times the derivative of the inside function, which in this case is the derivative of f of x times g of x. that's what i'd like to compute.
+what's the driv of the other side?
+well the derivative of the log is 1 over, so 1 over the inside function times the derivative of the inside function, plus log of g of x is 1 over the inside function times the derivative of the inside function.
+now if i multiply both sides by f of x times g of x, what happens?
+well if i multiply this side by f of x times g of x, i've then isolated the derivative of the product.
+so this is just the derivative of f of x times g of x. if i multiply this side by f of x times g of x, f of x times 1 over f of x is just 1, but i'm left with a factor of g of x times f prime of x plus, and if i multiply this term by f of x times g of x, g of x times 1 over g of x is just one, but i'm left with an f of x, so f of x times g prime of x. and look, this is the product rule.
+the derivative of the product is the, in this case, g of x times f prime of x plus f of x times g prime of x. so, i mean, the order's a little bit different, but it is the product rule.
+so we've justified the product rule another way using logarithms, but that raises a question, what's the point of having multiple proofs of a single mathematical fact?
+it's not as if having 2 different proofs of the product rule makes the product rule any more true.
+what this argument has is in its favor is that it's showing off a nice trick that you can do with logarithms.
+there's a theme that products and quotients are much more complicated than sums and differences armed with logarithms, we can convert difficult products and quotients into much easier sums and differences, and that's a huge win for us.

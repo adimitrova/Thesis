@@ -1,0 +1,106 @@
+[sound].
+[blank_audio] hello, this is week two of interactive computer graphics.
+and the topic of this week is, 2d drawings and animations.
+and here's a list of topics, we discuss in this week.
+the diagram beautification, pen-and-ink textures, shape manipulation, and then dynamic illustrations.
+the first one, is diagram beautification.
+the work we introduce here, is called pegasus.
+and the problem we discuss here, is a drawing of this kind of geometric drawings, and it's very tedious to draw this kind of diagram, using traditional drawing systems.
+for example, if you want to draw, this kind of symmetric diagram, you have to draw first half draw, draw half of it and duplicate it, and then flip it and move it.
+so, you have to combine three, two or three commands to do a symmetric drawing.
+if you do something like, like this, like symmetric, perpendicular, and the same gap and connect it.
+and then, it becomes too difficult to do it, with combining appropriate commands.
+so, what we propose is to automatically, have the system automatically take care of these kind of constraints.
+here is our demonstration.
+so, this is again designed for pen computing.
+so, you directly draw a line on the whiteboard, and the system automatically provides feedback.
+so here, you draw a line, and then the system automatically beautifies it.
+and if you draw a line, system automatically beautifies it.
+so, this point is automatically aligned to this point.
+and then you draw a line here.
+and the system automatically beautifies it.
+and if you do a line here, this is almost perpendicular to the slope.
+the system makes it perfectly perpendicular.
+so, in this way, you just draw freeform lines.
+and then you will get this kind of diagram.
+traditional, in, in traditional systems, you have to draw rectangle separately and then move it, rotate, connect, and so on.
+so, it can be very tedious.
+but here, you just draw six lines and the system automatically beautifies it.
+and you can do many more things.
+for example, if you draw, almost symmetric line.
+system makes it, perfect mirror image.
+and you just draw three more strokes and then you'll get this diagram.
+and if you draw right here, this is identical, very similar to the previous one, and the assistant makes it an exact copy, of the previous stroke.
+so again, you draw three lines.
+and you'll get, you will get a copy without using copy or duplicate command and we also provide equal distance between lines, so in this way, you can get this wizard specifying grid, before hand and also, you can do something like this.
+system automatically makes the distance, between two lines are identical.
+so traditionally, you have to draw two lines duplicate it, rotate it and trim it, so it can be very tedious.
+and one important aspect of this kind of automatic system is that, user input can be ambiguous.
+so, if you draw a line here, this is ambiguous, right?
+so, user may want to draw a mirror image here or you may want to connect these points or user may want to do this.
+so, system automatically infers multiple candidates and then presents a user and you can choose one of them later, and this is very important to handle ambiguity.
+and that's beautification.
+and we also implemented a prediction in, in this system.
+so, suppose, you have this kind of illustration already and you draw a line here.
+so, here, system knows that this red segment is identical to this one.
+so, system automatically predicts or infers that, now that, you draw the same thing, you probably, want to draw the same thing around it.
+so, here's a prediction.
+and if you like one of them, just click it, and the next prediction appears.
+so, as long as the prediction is correct, you complete drawing just by successive clicking, and if you prediction is not use, useful, you can just ignore them and you draw it by yourself, and you again, activate prediction and then click and draw.
+yeah.
+and this prediction is very useful for multiple purposes, like drawing repetitive illustration.
+then you can again click here and then type, touch, [unknown] segment, and [unknown].
+so, this very useful for repetitive drawing.
+and this is also useful for symmetric drawing like this one.
+so, you can tap, and then prediction appears.
+and then tap, tap, tap.
+and then you will get this kind of symmetry doing, just by drawing and prediction.
+so, that's the demonstration.
+let me briefly describe the algorithm behind it.
+the beautification algorithm and prediction onwards.
+so beautification, works this way.
+so far, user input is this red one.
+and then, looking at this input, system first the first, learns constraint inference engine.
+and then, getting segment coordinates positions.
+and then, infer multiple constraints.
+so, in this case, the system infers that this should be connected, this should be perpendicular, this should be, horizontally aligned and so on.
+given this possible geometric constraints, then constraint solver, tries to combine them and then solve it here.
+an interesting point here, is that these constraints can be, contradictory features.
+so, constraint solver needs to find valid combinations and after having multiple candidate system, evaluate them, in which is most closer to the user input and then pick some more, plausible one as a first candidate and then return it to the user.
+and let me, more describe constraint solvability more.
+so, constraint solver, as i said, takes multiple infer for the constraints, and then identified by the combination, and then returns the result, for each combination.
+and, the details, let me describe the details using one example.
+suppose you have these four constraints.
+x equal 1, y equal 2, x minus y equal 0, x plus y equal 2. so, suppose you have these four constraints and then tries to find valid combinations.
+one combination, is one and two.
+so, if you combine these two, you would get one and two and it's here.
+and if you combine this first and third one, x equals 1, and y equals 1 and you get this.
+however, you cannot combine these three because it's contradictory, so that's what we try to do here.
+and in the system, the algorithm works as follows.
+for each constraint you apply, you make up [inaudible] we have a set of intermediate valuations like this, so far as no valuation is given.
+and then for x first constraint, you apply it or not apply it.
+so, if you do not apply it same thing.
+if you apply it, you get one and not valuated.
+so, in this way, you just kind of basically binary tree and you can sort of.
+intermediate valuations grows exponentially.
+however, in some cases.
+variations can be the same.
+for example, this variation combining fast one and this other one, is identical to combining this one and this one.
+so, some solutions are merged together.
+so, this is a kind of thing happening behind the consonant solver.
+and let me briefly describe the prediction algorithm.
+prediction works as follows, so you have these kind of existing segments and you get the new input segments.
+at first, system searches for identical segments, identical to the new input segment.
+and after identifying the matched existing segment.
+then system collect, aggregate, nearby segment to the different stroke and they copy them to the new, segment.
+and the addition to that, we add vertical and horizontal flip, over the predictions.
+so, that's the way, the prediction work, works.
+so, that's a,a system and its original paper was published as interactive beautification, a technique for rapid geometric design in 97. constraint based drawing, is a popular topic.
+an original paper was published as sketchpad and this is, a very old paper published in 1963, but this is still.
+very powerful tool.
+and i recommend you to take a look at the video.
+this was a very fast computer graphics and also very fast interactive computer graphics.
+and if you want to see the recent one i'd recommend you to take a look the cinderella system.
+this is this kind of constraint-based, geometric drawing system.
+and this is very useful for mathematical education and so on.
+thank you.

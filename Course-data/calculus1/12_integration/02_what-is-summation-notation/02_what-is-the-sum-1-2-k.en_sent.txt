@@ -1,0 +1,72 @@
+let's do another summation problem.
+the summation problem that i want to do, is the sum as n goes from 1 to a some number k of just n. alright?
+in other words, i want to add up 1 plus 2 plus 3 dot, dot, dot plus k, right.
+i want to add up the first k whole numbers.
+these are called triangular numbers.
+the reason is because performing this sum is really counting the dots in a triangle.
+let me draw a picture.
+so, 1 dot, 2 dots three dots, four dots, five dots.
+all right?
+and then i'll keep on going until i get to k dots.
+you know, and this picture here is a triangle.
+right?
+so this sum is counting the number of dots in a triangle.
+having that k there makes this a very general problem, and anytime that you're confronted with a general problem, it helps to specialize to a specific case.
+in order to gain some insight.
+so let's set k equal to 10. so i'm just going to do the sum n goes from 1 to k which is now 10 of n. which means i'm going to add 1 plus 2 plus 3 plus 4 plus 5 plus 6 plus 7 plus 8 plus 9 plus 10. i could actually draw this as a triangle.
+put down 1 dot, 2 dots, 3 dots, 4 dots, 5 dots, 6 dots, 7 dots, 8 dots, 9 dots, 10 dots.
+[laugh] so i've got this triangle, and this sum is just the number of dots in this triangle.
+now i just count those dots.
+i just add those numbers up.
+1 plus 2 is 3, 3 plus 3 is 6, 6 plus 4 is 10, 10 plus 5 is 15, 15 plus 6 is 21, 21 plus 7 is 28, 28 plus 8 is 36, 36 plus 9 is 45, and 45 plus 10. is 55. so the sum of the first 10 whole numbers is 55, and i drew 55 dots to make this triangle.
+but there's another approach.
+instead of just adding 1 plus 2 plus 3 plus 4 plus 5 plus 6 plus 7 plus 8 plus 9 plus 10, i could add these in a different order.
+i could add 1 and 10 together to make 11.
+2 and 9 together to make 11.
+3 and 8 together to make 11.
+4 and 7 together to make 11 , and i'm left with 5 and 6 and those two together make 11, right?
+so i've got five groups of 11, which means if i add up all these numbers i get 55. armed with this trick i can do the same thing to attack the problem in general.
+so in general, i'm trying to do the sum, n goes from 1 to k of just n. trying to add up the first k whole numbers.
+and if i write this in a different order, and let's say k is even, just to make this a little bit easier to think about.
+alright i'll take the first number and the last number, and add those together.
+the second number and the second-to-last number and add those together.
+the third number and the third-to-last number, and add those together.
+and i'm going to keep on going, right?
+and the first number and the last number is, you know, i'm writing it as 1 plus k, that's fine.
+the second number and the second-to-last number, well that's also 1 plus k. all right, the third number and the third-to-last that's also 1 plus k. right?
+all of these things add up to 1 plus k. and the key question is just how many things i've got.
+all right?
+and i'm pairing them off in twos.
+so, let's say this is an even number.
+k is an even number.
+and i've got k over 2 pairs.
+all of which add up to k plus 1. and that's just a multiplication problem.
+right?
+that means that this sum is 1 plus k times k over 2. so that's the sum of the first k whole numbers.
+if all this algebra doesn't really speak to you.
+we can redo this geometrically.
+so what i want to calculate, right, is this sum.
+the sum as n goes from 1 to k of n. and geometrically, right, i can draw this pattern of dots, right?
+1 plus 2 plus 3 plus 4 plus 5 plus 6 in this case.
+but i could imagine that, you know, this is a specific picture that represents the general case, right?
+i've got this triangle, a k by k triangle of dots.
+and this sum is just counting the number of dots.
+right?
+1 plus 2 plus 3, that's exactly what the sum does.
+now i'm going to count these dots.
+so i'll make two copies of this picture.
+so now i've got two copies of this sum.
+right?
+there's another k by k triangle of dots.
+and to count these dots i'm going to take this triangle, rotate it, and slide it over here.
+so as to make not a k by k square, but this is a k plus 1 by k rectangle, alright?
+as the bottom of this one just fits in, but it's a little bit wider.
+i got this k plus 1 by k rectangle of dots.
+so i know there's k plus 1 times k dots and this is two copies of the sum that i'm interested in.
+so 2 times the sum i'm interested in is k plus 1 times k, the number of dots in this rectangle.
+and consequently if i just divide by 2 i get the formula that i'm interested in.
+the sum of n, n goes from 1 to k is k plus 1 times k over 2, right.
+it's half of the number of dots in this k plus 1 by k rectangle.
+a big part of the joy of mathematics is that the same ideas can be presented with very different clothing.
+in this case, we're seeing really the same argument.
+but presented both algebraically and geometrically.

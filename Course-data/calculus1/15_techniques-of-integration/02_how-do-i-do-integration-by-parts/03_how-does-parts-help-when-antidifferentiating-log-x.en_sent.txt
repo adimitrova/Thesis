@@ -1,0 +1,19 @@
+[music] we could figure out our anti  derivative for log x, by just guessing  and then checking our answer.
+but we can also get that anti derivative  by using integration by parts.
+so i want to know an anti derivative of ,  log x dx.
+and just to remind you, this is natural  log.
+at first, it looks like there's nothing  helpful here.
+what would my u and my dv be?
+the trick is to sit u log x that's the  part of the anagram i'm going to  differentiate as dv.
+to be dx and it gets quite surprising,  and that helps.
+let's see, so if u is log x then du is 1  over x dx.
+and if dv is dx then an anti-derivative,  just be x.  now, what does parts tell us?
+so by parts the integral of u dv, so log  x dx, that's what i'm interested in.
+is u v so x log x minus the integral of  vdu, which is x times du.
+and i've got x log x minus x times 1 over  x, that's just 1.  so i'm just anti-differentiating dx.
+then i've got x log x, what's an  anti-derviative of 1, just x, and i'll  add a constant.
+so i'm claiming that the antiderivative  of log x is x log x minus x plus some  constant.
+i think it's really surprising that, at  least in this case, dv equals dx is a  great choice.
+well here's a similar integration problem  that you can try the same kind of  technique on.
+for example, here's a challenge.
+can you find an anti derivative of log of  x squared?

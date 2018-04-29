@@ -1,0 +1,17 @@
+[music] calculus is rich enough that there's a ton of different ways to think about the concepts in calculus.
+think about the derivative.
+one way to think about the derivative is as the ratio of output change to some small, infinitesimal input change.
+but another way to think about the derivative, is in terms of linear approximation.
+and that's the idea that we want to exploit right now.
+this is really the story of, of all of calculus.
+you know, you want to understand curved objects.
+i want to understand some graph of a function that's very curved.
+and that's hard to do.
+but, if i zoom in close enough on the functions graph right, if the function's differentiable, then when i zoom in, that graph looks like a straight line.
+that's the idea of linear approximation.
+we can study these complicated curved graphs by zooming in and imagining that, at least approximately, they're straight lines.
+and there's a couple of huge benefits to doing this.
+one thing that we can use this for, is to approximate values of the function.
+and the other thing that we're going to be able to use this for, is newton's method.
+we'll be able to do things like, at least approximately, find roots of very complicated looking polynomials.
+[blank_audio] [music] [blank_audio]

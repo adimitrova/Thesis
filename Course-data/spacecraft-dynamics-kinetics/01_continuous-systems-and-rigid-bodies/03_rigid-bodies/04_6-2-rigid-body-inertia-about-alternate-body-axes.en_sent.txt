@@ -1,0 +1,75 @@
+the other one is, what if we have a different body frame.
+there's an infinity of frames i can attach to a rigid body and be a body fixed frame.
+in our derivation, all we assume was that the derivative as seen by b was zero.
+but there's an infinity of such frames.
+so, and you will see in real life a lot of frames.
+there might be a docking port frame.
+there's a flight frame.
+there's a space craft frame.
+there's a structure frame.
+there's a sensor frame.
+there's a star truck of frame.
+there's a gyro frame.
+there's lots of frames, right.
+and all of a sudden i need the inertia now about some other frame.
+i don't want to redo that integrals again.
+how do we translate it?
+and this is the answer in essence.
+you remember how we did vectors?
+so, with a two-letter notation, this becomes dead simple.
+so, if we have a vector in the n-frame and i want a vector into the b-frame i have to multiply this times the dc once.
+now, ten serves our industry initial times like two dimensional vectors.
+so, i'll still use the dcm to mark from one frame to another, but i have to use the dcm twice.
+and that's what this formula shows.
+again, i'm not going to derive this in a book, but you can go to that.
+it's a very simple one.
+with these two letter notation you can see this the tensor having one frame b. i'm trying to get the tensor in different frame f. and now i have to pre and post multiply it on both sides times the right dcm.
+so here it's fb times fb transpose.
+another way to write it would be fb this inertia tensor to b frame times bf, right.
+so, then from the left and right hand side your mapping things to the f frame, then you know you're on the right track.
+but that's it.
+so, we used the dcm twice.
+any questions on this one?
+i assuming many of you actually seen this before.
+some of you may not, but you can catch up then with the details with the notes in the book.
+now, does an infinity frames we typically like a frame that makes our inertia tensor diagonal especially for an analysis.
+so, every rigid body can be expressed with the body fixed with the particular body fixed frame such that the inertia tend to representation.
+becomes diagonal, then i only have to track three inertia terms not nine in that whole full thing.
+so, for analysis, this is very, very handy, and we want to be able to do this.
+in the code, when we write simulations, we're going to solve for control problems, where we just use the inertia tensor eye in a very general way, because that way we're not requiring somebody to have found that magic place, and then what if you get rid of some fuel, now things have shifted.
+we can write it in a very very general way.
+in the codes.
+but for analysis, this is a very handy thing.
+so, how do we find this?
+let's see, this is the original one.
+this is my fb over here, i've taken this fb transposed and brought it over to the right.
+over here by right multiplying times fb.
+so, that same matrix appears here and here.
+and then when you start to carry out those components and equate, what does this have to be?
+this basically sums it up there.
+you can go ahead and you will quickly find that this dcm again, becomes nothing but an eigenvalue-eigenvector problem.
+in fact, what you have is, the rows of this dcm are the eigenvectors of this three by three matrix representation of the body's inertia.
+and the principle inertias, that's what we call these things when we do it in diagonal form, are nothing but the eigenvalues associated to these eigenvectors.
+so again, for eigenvectors to form at the ecm though, we need them to be normal, probably should have had hats on here.
+these have to be unit vectors, all right?
+and they have to be orthogonal.
+and the other key result is you have to be right-handed.
+this is a big error source people have right here because matlab just gives you three vectors.
+it has no idea what you're trying to do.
+so what you have to check in the end is when you assemble this matrix is that the v1 cross to v2 has to give you plus v3 and mathlab doesn't check that for you.
+all right?
+it may give you minus v3.
+so if you get something that's left-handed, just reverse the sign of one of them and now you have a coordinate frame that is right-handed.
+but this gives you the mapping from the current e frame into a principle frame f whose representation ends up being just the three diagonal inertias.
+which you have, good.
+so with these two tricks, power access and this one, we can now, we never, once we have the inertia tense.
+so we tend to not have to redo that body interval again.
+you simply have some nice clean analytic mappings to shift origin or to shift the body fix point of a body frame all the components are taken yes sir.
+>> so the f frame is just a frame where the inertia tensor is nice?
+>> yes.
+and if you looked at statics mechanics books it tends to be like symmetry axes.
+you can quickly see that's where everything bounces out and these off diagonal terms, they all vanish.
+so, if you had that, this pen, if one axes lines up with this symmetry axes and the other two are orthogonal that would give you that kind of a frame.
+but if somebody gives you this weird frame where this is your stuff and you're putting it in a skewed way, you're going to have all this stuff.
+so if you have this and that's your body, and you're going okay, i can always make a coordinate transformation such that this becomes diagonal and then we can go there.
+and this is really nice for analysis, because without loss of generality you can always assume i can write my rigid body tumbling motion in a principle cone form in which case i'll only have three inertias to worry about.
