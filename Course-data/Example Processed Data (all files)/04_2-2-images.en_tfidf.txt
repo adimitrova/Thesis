@@ -1,0 +1,15 @@
+images,0.34724
+draws,0.10393
+animations,0.06845
+playing,0.06599
+width,0.0408
+loading,0.03827
+margin,0.03585
+position,0.03469
+mouse,0.03082
+screen,0.02861
+height,0.02838
+dividing,0.02681
+array,0.02632
+sequence,0.02563
+display,0.02536
