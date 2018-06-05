@@ -23,7 +23,7 @@ import org.apache.commons.io.FileUtils;
 public class NoiseRemover {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		String oneFile = "C:\\Users\\ani\\Desktop\\Course data Thesis\\PROCESSED\\Coursera Downloads Processed";
+		String oneFile = "C:\\Users\\ani\\Desktop\\Course data Thesis\\PROCESSED\\Coursera Downloads Extracted raw";
 		File root = new File(oneFile);
 		File[] filelist = root.listFiles();
 
