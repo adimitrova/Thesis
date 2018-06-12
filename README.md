@@ -1,13 +1,13 @@
 ### TU Delft Master Thesis research project
 
-The thesis aims to assist people to fill in metadata elements in the most efficient way based on their own budget, quality requirements etc. by providing them with a thorough research of the metadata standards in the educational field. The work also studies state-of-the-art techniques to automate or semi-automate metadata collection for the educational domain. Having proper metadata for learning objects(learning content) will increase learning content description and thereafter will also make the content more easily findable and re-usable. We provide **metadata generation patterns / workflows** by first splitting metadata into types based on commion features. Finally, we prove the provided patterns work by conducting experiment to fill in semantic metadata element (semantic = data extracted by analyzing the learning object's content). We call our element **Depth** / **Purpose** and attempt to segment a video and classify it into one of the following categories:
+The thesis' ultimate goal is to allow for Educational Resources (ERs), to be easily findable and re-usable by supporting researchers and ER creators to describe their resources with the appropriate metadata. To do this, we provide **design patterns** or **metadata generation patterns / workflows** covering ways to collect specific types of metadata in the most efficient and easy for the user way. We focus our experimental work on proving the efficiency of the proposed patterns by extracting semantic metadata. This happens by splitting video scrips via Intent Mining algorithms and Text Classification algorithms. 
 
-- *MainConceptDescription*:  Explanation of the Main concept(s) of the LO
-- *SubConceptDescription*:  Explanation of Subconcept related to the main concept
+We call our semantic metadata element **Deductive Intent** and attempt to segment a video's script sentence by sentence into one of the following categories:
+
+- *ConceptDescription*:  Explanation of the Main concept(s) of the LO
 - *ConceptMention*:  Concept or other related to the LO term mentioned but not over-viewed in depth right after
-- *Methodology*:   To achieve something, what should one do (related to the main concept in the LO)
 - *Summary*:   It refers to a short restatement of the main points of an argument, paper, lecture, etc.
 - *Application*:  Practical advise for the concept
 - *Example*:   Concept example. Could be of the main or sub-concept
 
-In the end this category will fill in the element mentioned above and this way proving the pattern we suggest for Semantic metadata extraction works and also enriches the learning content.
+In the end this category will fill in the element mentioned above and this way proving that one of the suggested patterns for Semantic metadata extraction works efficienly.
