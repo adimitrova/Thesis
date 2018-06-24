@@ -2395,7 +2395,7 @@ CD|this will decrease the likelihood of duplicate or out-of-sync versions of the
 AP|you will also make locating specific documents and files at the end of the project much easier and decrease the risk of losing content 
 CD|backup and storage strategies will be implemented through the data collection process 
 CM|as we know,technology is not always a NUMBER reliable 
-AD|if a researcher has appropriate backup and storage strategies in place,this will help protect against data loss from the beginning of the project 
+AP|if a researcher has appropriate backup and storage strategies in place,this will help protect against data loss from the beginning of the project 
 AP|it is best to discuss options for secure backup and storage with the institution's it department 
 CD|quality assurance protocols outline and document the steps and processes necessary for checking and reviewing the data during and after it is collected 
 CD|these protocols vary across disciplines and it is the responsibility of the primary researcher and the project team to implement these protocols based on disciplinary standards 
@@ -5332,7 +5332,7 @@ SM|what you will need to do is assess whether you really need web connectivity o
 SM|once you decide on the former,you'll need a proper implementation 
 SM|that is where this course will help you 
 SM|by the end,you'll be more informed about the protocols and solutions available to you 
-CSM|and you will be able to make informed decisions when it comes to adding connectivity to your embedded solutions 
+SM|and you will be able to make informed decisions when it comes to adding connectivity to your embedded solutions 
 NL|music 
 SM|sound hello,welcome back to the course on web connectivity and security in cyber-physical systems 
 SM|this lesson starts a module on link layer connectivity protocols and application layer communication protocols 
