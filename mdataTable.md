@@ -12,16 +12,16 @@
 | End (course)                                                            | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |         :x:        |
 | Price                                                                   | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |
 | Status                                                                  |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |         :x:        |
-| TargetAudience                                                          |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |         :x:        |
+| TargetAudience     |         :x:        | :heavy_check_mark: |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |
 | ID / Key / URI     | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    ||                    |                    |                    |
 | Description (resource)                                                  | :heavy_check_mark: |                    |                    |                    |                    |                    |
-| Resource Type* exercise,video,topic,image                         | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |
+| Resource Type* audio,video,image                         | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Format*                                                                 | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |
 | Size*                                                                   |                    |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Duration (resource)* |                  | :heavy_check_mark: |          | :heavy_check_mark: |                    | :heavy_check_mark: |
-| Views              |                    |                    |          |                    |                    | :heavy_check_mark: |
+| Views              |                    |                    |          | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Downloadable_size                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | Downloadable_urls                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | Date_added         |                    |                    |          | :heavy_check_mark: |                    | :heavy_check_mark: |
@@ -31,7 +31,7 @@
 |                         **Educational Metadata**                        |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Difficulty*                                                             | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
 | TypicalLearningTime /  ExpectedDuration*                                | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
-| Covers (topics)                                                         | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
+| Topics             | :heavy_check_mark: |                    |          | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Category                                                                |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Subcategory                                                             |                    | :heavy_check_mark: |                    |                    |                    |                    |
 | Specialization / Track                                                  |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
