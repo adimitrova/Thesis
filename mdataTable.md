@@ -1,37 +1,37 @@
 |              Elements :arrow_down: \ Platform :arrow_right:             |          edX       |        Udemy       |       Udacity      |        Lynda       |       Coursera     |     KhanAcademy    |     TUDelft Library    | 
 |:-----------------------------------------------------------------------:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
 |                        **Descriptional Metadata**                       |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
-| Title*             | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
-| Subtitle           |         :x:        |                    | :heavy_check_mark: |                    |                    |         :x:        |                    |
-| Description (LO)*  Summary  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
+| Title*             													  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
+| Subtitle          													  |         :x:        |                    | :heavy_check_mark: |                    |                    |         :x:        |                    |
+| Description (LO)*  Summary  											  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
 | Organization / Affiliates (University / Company)                        | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |         :x:        |                    |
 | Language*                                                               | :heavy_check_mark: | :heavy_check_mark: |         :x:        |                    | :heavy_check_mark: |         :x:        |                    |
-| Keywords*          |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
-| URL*               |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
-| Start (course)     | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |         :x:        |                    |
-| End (course)       | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |         :x:        |                    |
-| Price              | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |                    |
-| Status             |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |         :x:        |                    |
-| TargetAudience     |         :x:        | :heavy_check_mark: |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |                    |
+| Keywords*          													  |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
+| URL*               													  |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
+| Start (course)     													  | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |         :x:        |                    |
+| End (course)       													  | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |         :x:        |                    |
+| Price              													  | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |                    |
+| Status             													  |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |         :x:        |                    |
+| TargetAudience     												      |         :x:        | :heavy_check_mark: |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |                    |
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |      _________     |
-| ID / Key / URI     | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    ||                    |                    |                    |                    |
+| ID / Key / URI     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |					 |
 | Description (resource)                                                  | :heavy_check_mark: |                    |                    |                    |                    |                    |                    |
-| Resource Type* audio,video,image                         | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
+| Resource Type* audio,video,image                        				  | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 | Format*                                                                 | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | Size*                                                                   |                    |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
-| Duration (resource)* |                  | :heavy_check_mark: |          | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
-| Views              |                    |                    |          | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
+| Duration (resource)*                  								  | :heavy_check_mark: |          			| :heavy_check_mark: |                    | :heavy_check_mark: |                    |					 |
+| Views              													  |                    |                    |          			 | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 | Downloadable_size                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | Downloadable_urls                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
-| Date_added         |                    |                    |          | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
+| Date_added         													  |                    |                    |        		     | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 | YoutubeID                                                               |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | SubtitleLanguage                                                        | :heavy_check_mark: | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |                    |
 | TextBooks                                                               |                    |                    |                    |                    | :heavy_check_mark: |                    |                    |
 |                         **Educational Metadata**                        |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Difficulty*                                                             | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
 | TypicalLearningTime /  ExpectedDuration*                                | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
-| Topics             | :heavy_check_mark: |                    |          | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |
+| Topics             									  			      | :heavy_check_mark: |                    |          			 | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 | Category                                                                |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | Subcategory                                                             |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | Specialization / Track                                                  |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |
@@ -41,7 +41,7 @@
 | NumberOfLectures                                                        |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | NumberOfQuizzes                                                         |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |                    |
 | NumberOfReadings                                                        |                    |                    |                    |                    | :heavy_check_mark: |                    |                    |
-|                  **User & User Interactivity Metadata**                 |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |                    |
+|                  **User & User Interactivity Metadata**                 |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Kind /userData, UserExercise/                                           |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | IsCoachRecommended                                                      |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | Progress                                                                | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |                    |
