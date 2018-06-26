@@ -1,4 +1,4 @@
-|              Elements :arrow_down: \ Platform :arrow_right:             |          edX       |        Udemy       |       Udacity      |        Lynda       |       Coursera     |     KhanAcademy    |
+|              Elements :arrow_down: \ Platform :arrow_right:             |          edX       |        Udemy       |       Udacity      |        Lynda       |       Coursera     |     KhanAcademy    |     TUDelft Library    
 |:-----------------------------------------------------------------------:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
 |                        **Descriptional Metadata**                       |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Title*                                                                  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
