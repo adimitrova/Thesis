@@ -19,7 +19,7 @@
 | Author																  |                    |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
 | Publisher																  |                    |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
-| Access rights (license, free)                                           |                    |                    |                    |                    |                    |                    | :heavy_check_mark: |
+| Access rights (license, free)                                           | :heavy_check_mark: | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |      _________     |
 | ID / Key / URI     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Canonical_name     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
@@ -35,7 +35,7 @@
 | SubtitleLanguage                                                        | :heavy_check_mark: | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |                    |
 |                         **Educational Metadata**                        |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Difficulty*                                                             | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
-| TypicalLearningTime /  ExpectedDuration*                                | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
+| TypicalLearningTime /  ExpectedDuration*                                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
 | Topics             									  			      | :heavy_check_mark: |                    |          			 | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 | Category                                                                |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | Subcategory                                                             |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
@@ -43,13 +43,14 @@
 | Prerequisite_Knowledge                                                  |                    | :heavy_check_mark: | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |
 | Prerequisite_Category                                                   |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | Similar / related resources	                                          |                    |                    |                    | :heavy_check_mark: |                    |                    |                    |
-| Slug  (like a URL or id)                                                |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |
 | NumberOfLectures                                                        |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | NumberOfQuizzes                                                         |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |                    |
 | NumberOfReadings                                                        |                    |                    |                    |                    | :heavy_check_mark: |                    |                    |
 |                  **User & User Interactivity Metadata**                 |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Kind /userData, UserExercise/                                           |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
+| Role	(student, teacher, staff)                                         |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | Progress                                                                | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |                    |
 | ExerciseProgress                                                        | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |                    |
+| ______________________________________________________________________  |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
+| STANDARD			                                                      |                    |                    |                    |     Open Graph     |                    |                    |         DC         |
 | * LOM schema elements                                                   |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
-| STANDARD			                                                      |                    |                    |                    |     Open Graph     |                    |                    |                    |
