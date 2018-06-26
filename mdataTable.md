@@ -21,12 +21,12 @@
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | Access rights              	                                          | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |      _________     |
-| ID / Key / URI     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
+| ID / Key / URI     													  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Canonical_name     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Description (resource)                                                  | :heavy_check_mark: |                    |                    |                    |                    |                    |                    |
 | Resource Type* audio,video,image                        				  | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |
-| Format*                                                                 | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |
-| Size*                                                                   |                    |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
+| Format*                                                                 | :heavy_check_mark: | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |
+| Size*                                                                   |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 | Duration (resource)*                  								  | :heavy_check_mark: |          			| :heavy_check_mark: |                    | :heavy_check_mark: |                    |					 |
 | Views              													  |                    |                    |          			 | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 | Downloadable_size                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
