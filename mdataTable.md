@@ -16,10 +16,10 @@
 |                  **Administrative Metadata** 					          |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Date_added         													  |                    |                    |        		     | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |
 | Date_updated         													  |                    |                    |        		     | :heavy_check_mark: |                    |                    |                    |
-| Author																  |                    |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
+| Author																  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Publisher																  |                    |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
-| Access rights (license, free)                                           | :heavy_check_mark: | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |
+| Access rights              	                                          | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |      _________     |
 | ID / Key / URI     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Canonical_name     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
@@ -51,6 +51,6 @@
 | Role	(student, teacher, staff)                                         |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | Progress                                                                | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |                    |
 | ExerciseProgress                                                        | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |                    |
-| __________________________  |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
+| __________________________ 											  |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | STANDARD			                                                      |                    |                    |                    |     Open Graph     |                    |                    |         DC         |
 | * LOM schema elements                                                   |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
