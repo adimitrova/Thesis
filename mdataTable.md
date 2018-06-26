@@ -13,16 +13,16 @@
 | Price              													  | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |                    |
 | Status             													  |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |         :x:        |                    |
 | TargetAudience     												      |         :x:        | :heavy_check_mark: |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |                    |
-|                  **Administrative**          					          |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
+|                  **Administrative Metadata** 					          |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Date_added         													  |                    |                    |        		     | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |
-| Author																  |                    |                    |                    |                    |                    |                    |                    |
-| Publisher																  |                    |                    |                    |                    |                    |                    |                    |
+| Author																  |                    |                    |                    |                    |                    |                    | :heavy_check_mark: |
+| Publisher																  |                    |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
-| Access rights (license, free)                                           |                    |                    |                    |                    |                    |                    |                    |
+| Access rights (license, free)                                           |                    |                    |                    |                    |                    |                    | :heavy_check_mark: |
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |      _________     |
 | ID / Key / URI     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Description (resource)                                                  | :heavy_check_mark: |                    |                    |                    |                    |                    |                    |
-| Resource Type* audio,video,image                        				  | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
+| Resource Type* audio,video,image                        				  | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |
 | Format*                                                                 | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |
 | Size*                                                                   |                    |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 | Duration (resource)*                  								  | :heavy_check_mark: |          			| :heavy_check_mark: |                    | :heavy_check_mark: |                    |					 |
@@ -31,7 +31,6 @@
 | Downloadable_urls                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | YoutubeID                                                               |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | SubtitleLanguage                                                        | :heavy_check_mark: | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |                    |
-| TextBooks                                                               |                    |                    |                    |                    | :heavy_check_mark: |                    |                    |
 |                         **Educational Metadata**                        |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Difficulty*                                                             | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
 | TypicalLearningTime /  ExpectedDuration*                                | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
@@ -47,8 +46,6 @@
 | NumberOfReadings                                                        |                    |                    |                    |                    | :heavy_check_mark: |                    |                    |
 |                  **User & User Interactivity Metadata**                 |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Kind /userData, UserExercise/                                           |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
-| IsCoachRecommended                                                      |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | Progress                                                                | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |                    |
 | ExerciseProgress                                                        | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |                    |
-| ExerciseProgress --->  practiced / mastered / level True / False values |                    |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | * LOM schema elements                                                   |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
