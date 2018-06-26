@@ -16,7 +16,7 @@
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |
 | ID / Key / URI     | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    ||                    |                    |                    |
 | Description (resource)                                                  | :heavy_check_mark: |                    |                    |                    |                    |                    |
-| Kind/Type (resource) exercise,video,topic,image                         | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |
+| Resource Type* exercise,video,topic,image                         | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Format*                                                                 | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |
 | Size*                                                                   |                    |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |
