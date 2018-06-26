@@ -15,12 +15,14 @@
 | TargetAudience     												      |         :x:        | :heavy_check_mark: |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |                    |
 |                  **Administrative Metadata** 					          |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
 | Date_added         													  |                    |                    |        		     | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |
-| Author																  |                    |                    |                    |                    |                    |                    | :heavy_check_mark: |
+| Date_updated         													  |                    |                    |        		     | :heavy_check_mark: |                    |                    |                    |
+| Author																  |                    |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |
 | Publisher																  |                    |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | Access rights (license, free)                                           |                    |                    |                    |                    |                    |                    | :heavy_check_mark: |
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |      _________     |
 | ID / Key / URI     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
+| Canonical_name     													  | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Description (resource)                                                  | :heavy_check_mark: |                    |                    |                    |                    |                    |                    |
 | Resource Type* audio,video,image                        				  | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |
 | Format*                                                                 | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |
@@ -40,6 +42,7 @@
 | Specialization / Track                                                  |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |
 | Prerequisite_Knowledge                                                  |                    | :heavy_check_mark: | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |
 | Prerequisite_Category                                                   |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
+| Similar / related resources	                                          |                    |                    |                    | :heavy_check_mark: |                    |                    |                    |
 | Slug  (like a URL or id)                                                |                    |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |
 | NumberOfLectures                                                        |                    | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | NumberOfQuizzes                                                         |                    | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |                    |
@@ -49,3 +52,4 @@
 | Progress                                                                | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |                    |
 | ExerciseProgress                                                        | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |                    |
 | * LOM schema elements                                                   |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |      _________     |
+| STANDARD			                                                      |                    |                    |                    |     Open Graph     |                    |                    |                    |
