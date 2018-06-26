@@ -14,18 +14,17 @@
 | Status                                                                  |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |         :x:        |
 | TargetAudience                                                          |         :x:        | :heavy_check_mark: |         :x:        |         :x:        |         :x:        |         :x:        |
 |                          **Technical Metadata**                         |      _________     |      _________     |      _________     |      _________     |      _________     |    ____________    |
-| ID / Key                                                                | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
-| URI                                                                     | :heavy_check_mark: |                    |                    |                    |                    |                    |
+| ID / Key / URI     | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    ||                    |                    |                    |
 | Description (resource)                                                  | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | Kind/Type (resource) exercise,video,topic,image                         | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Format*                                                                 | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |
 | Size*                                                                   |                    |                    |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
 | Access type (private, public)                                           |                    | :heavy_check_mark: |                    |                    |                    |                    |
-| Duration (resource)*                                                    |                    | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |
-| Views                                                                   |                    |                    |                    |                    |                    | :heavy_check_mark: |
+| Duration (resource)* |                  | :heavy_check_mark: |          | :heavy_check_mark: |                    | :heavy_check_mark: |
+| Views              |                    |                    |          |                    |                    | :heavy_check_mark: |
 | Downloadable_size                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | Downloadable_urls                                                       |                    |                    |                    |                    |                    | :heavy_check_mark: |
-| Data_added                                                              |                    |                    |                    |                    |                    | :heavy_check_mark: |
+| Date_added         |                    |                    |          | :heavy_check_mark: |                    | :heavy_check_mark: |
 | YoutubeID                                                               |                    |                    |                    |                    |                    | :heavy_check_mark: |
 | SubtitleLanguage                                                        | :heavy_check_mark: | :heavy_check_mark: |                    |                    | :heavy_check_mark: |                    |
 | TextBooks                                                               |                    |                    |                    |                    | :heavy_check_mark: |                    |
