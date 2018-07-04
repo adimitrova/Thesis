@@ -1,5 +1,5 @@
 ### ------------------ Metadata types ---------------------
-!["MD types"](MetadataTypes.png)
+!["MD types"](MetadataTypes.jpg)
 
 ### ------------------ Decision tree for pattern to use ---------------------
 !["MD types"](decTree.jpg)
