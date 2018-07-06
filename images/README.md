@@ -1,8 +1,8 @@
 ### ------------------ Metadata types ---------------------
-!["MD types"](MetadataTypes.jpg)
+!["MD types"](MetadataTypes.png)
 
 ### ------------------ Decision tree for pattern to use ---------------------
-!["MD types"](decTree.jpg)
+!["MD types"](decTree.png)
 
 ### ------------------ PATTERN 1+3 (Routine Gateway) ---------------------
 !["Routine Gateway"](pat1pat3comb.jpg)
