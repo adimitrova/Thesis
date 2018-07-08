@@ -23,4 +23,4 @@
 
 
 ## ------------------ Metadata coverage stats: ---------------------
-!["platformStats"](platformCoverage.jpg)
+!["platformStats"](platformCoverage.png)
