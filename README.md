@@ -1,6 +1,6 @@
 ### TU Delft Master Thesis research project
 
-The thesis' ultimate goal is to allow for Educational Resources (ERs), to be easily findable and re-usable by supporting researchers and ER creators to describe their resources with the appropriate metadata. To do this, we provide **design patterns** or **metadata generation patterns / workflows** covering ways to collect specific types of metadata in the most efficient and easy for the user way. We focus our experimental work on proving the efficiency of the proposed patterns by extracting semantic metadata. This happens by splitting video scrips via Intent Mining algorithms and Text Classification algorithms. 
+The thesis' ultimate goal is to allow for Educational Resources (ERs), to be easy to find and re-use by supporting researchers and ER creators to describe their resources with the appropriate metadata. To do this, we provide **design patterns** or **metadata generation patterns / workflows** covering ways to collect specific types of metadata in the most efficient and easy for the user way. We focus our experimental work on proving the efficiency of the proposed patterns by extracting semantic metadata. This happens by splitting video scrips via Intent Mining algorithms and Text Classification algorithms. 
 
 We call our semantic metadata element **Deductive Intent** and attempt to segment a video's script sentence by sentence into one of the following categories:
 
